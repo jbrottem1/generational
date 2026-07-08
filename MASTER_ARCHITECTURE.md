@@ -29,7 +29,17 @@ This document is the canonical architecture reference for Generational. It descr
 
 ## 1. System Overview
 
-Generational is an autonomous AI content operating system designed to manage multiple social media brands at scale. It is **not** a collection of scripts — it is a modular platform with:
+### Mission
+
+Generational is **not a content generator**. It is an **autonomous AI Media Operating System**: software that builds, operates, optimizes, and scales a portfolio of profitable digital media brands with minimal human intervention.
+
+The system as a whole must be capable of: discovering profitable opportunities, understanding human psychology and SEO, researching topics, writing scripts, creating images, animation, video, narration, and music, rendering professional short-form content, publishing automatically, monitoring analytics, learning from results, improving future content, and managing many brands simultaneously.
+
+The goal is not to automate one YouTube channel. The goal is software that operates an entire portfolio of AI media companies.
+
+### What exists today
+
+Generational v6.0 is a modular platform with:
 
 - A **Knowledge Engine** with live Wikipedia, PubMed, arXiv, and Crossref connectors
 - A **Citation Engine** that maps scripts to sources and flags unsupported claims
@@ -42,13 +52,28 @@ Generational is an autonomous AI content operating system designed to manage mul
 
 | Principle | Meaning |
 |---|---|
-| Modularity | Each capability is an isolated engine or service |
+| **Modular** | Everything is replaceable — providers, models, APIs, platforms, voice/video engines all sit behind interfaces. Never hardcode a vendor. |
+| **Scalable** | Architecture must serve 1, 10, 100, or 1000 channels. No decision may cap future growth. |
+| **Autonomous** | The system trends toward zero-touch operation; humans provide approvals and strategic decisions only. |
+| **Self-improving** | Every completed video is training data. CTR, retention, watch time, comments, shares, revenue, SEO rank, thumbnail/hook performance, narration quality, visual style, music, publish timing, and trend timing all feed the Learning Engine. |
+| **Safe** | Nothing publishes without passing Quality Gates (SEO, psychology, research confidence, fact confidence, visual/audio/narration quality, overall publish score). Below threshold → reject, revise, retry. |
 | Provider-agnostic | Business logic never imports OpenAI, ElevenLabs, etc. directly |
 | Composition over inheritance | Small modules, shared context dict, no god classes |
 | UI separation | Streamlit is a thin shell; logic lives in `services/` and `engines/` |
 | Fail-safe | Demo/heuristic fallbacks when AI or providers fail — never crash |
 | Strong typing at boundaries | `core/models.py`, `core/production_models.py`, `services/research/models.py` |
 | Testability | Every service has unit tests; tests never touch real `data/` |
+
+### Target end-state pipeline
+
+```
+Research Engine → Trend Discovery → SEO Analysis → Psychology Analysis
+    → Opportunity Ranking → Script Engine → Voice Engine → Image Engine
+    → Animation Engine → Video Engine → Quality Review → Publishing
+    → Analytics → Learning Engine → Knowledge Base → Continuous Improvement
+```
+
+Every stage in this chain already has a registered engine key (live or planned stub), so lighting up a stage never requires orchestration changes.
 
 ---
 
@@ -469,21 +494,38 @@ The Streamlit UI is intentionally stable across versions. Major releases add **c
 
 | Version | Focus | Dependencies |
 |---|---|---|
-| **v7.0** | Trend API integrations | Google Trends, YouTube, Reddit, TikTok live APIs |
-| **v8.0** | Render engine | Consume `RenderPackage`; ffmpeg or cloud renderer |
-| **v8.0** | Publishing automation | YouTube/TikTok/Instagram providers; publishing queue → live posts |
-| **v9.0** | Analytics + Learning | Performance ingestion; Learning engine mines Knowledge Base |
-| **v10.0** | Multi-channel autonomy | Channel manager UI; scheduled autonomous content for dozens of brands |
+| **v7.0** | Trend Discovery + live trend APIs | Google Trends, YouTube, Reddit, TikTok connectors behind existing interface |
+| **v8.0** | Render engine (Image → Animation → Video) | Consume `RenderPackage`; ffmpeg or cloud renderer; image/video providers |
+| **v9.0** | Publishing automation | YouTube/TikTok/Instagram providers; publishing queue → live posts; per-channel credentials |
+| **v10.0** | Analytics + Learning Engine | Performance ingestion; Learning engine mines Knowledge Base; feedback into ranking/prompts |
+| **v11.0** | Multi-brand autonomy | Business entity model; per-brand pipelines, scheduling, and learning history |
 
 ### Long-Term Vision
 
-Generational becomes a fully autonomous content operating system:
+Generational becomes the operating system for a portfolio of AI-powered media companies — researching, creating, publishing, analyzing, and improving high-quality content at scale:
 
-- Dozens of independent social media channels
-- Continuous learning from analytics
-- Self-improving prompts and strategy
+- Many independent brands, each with its own channels, voice, visual identity, audience, posting schedule, SEO profile, psychology profile, revenue, analytics, and learning history
+- Continuous learning from analytics feeding back into every pipeline stage
+- Self-improving prompts, ranking weights, and channel strategy
 - High-quality video across science, finance, psychology, history, tech, and current events
 - Zero vendor lock-in at every layer
+- Human involvement limited to approvals and strategic decisions
+
+### Multi-brand data model (target)
+
+Each **Business** aggregates: brand identity, channels, voice profiles, visual identity, audience definition, posting schedule, SEO profile, psychology profile, revenue tracking, analytics, and learning history. `services/channels.py` is the seed of this model; it grows into a full business entity without breaking existing channel data.
+
+### Future feature classes (design for now, build later)
+
+Architecture must absorb these without major refactoring:
+
+- AI voice clone (owner's voice, with authorization) — `providers/voice/clone.py` stub already exists
+- AI-assisted reaction video workflows using owner recordings
+- Podcast generation, long-form YouTube, blog and newsletter generation
+- Social media repurposing, translation, multi-language publishing
+- Affiliate automation, sponsorship management, merchandise, course creation, community management
+
+Each maps to either a new engine (registered stub first), a new provider interface, or a new workflow definition — never a rewrite of orchestration.
 
 ---
 
