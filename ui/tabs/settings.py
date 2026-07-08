@@ -121,7 +121,7 @@ def render() -> None:
     )
 
     st.divider()
-    st.markdown("### 🎯 Quality Gate"))
+    st.markdown("### 🎯 Quality Gate")
     st.slider(
         "Minimum publish score",
         min_value=0,
