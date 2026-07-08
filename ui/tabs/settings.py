@@ -1,5 +1,7 @@
 """Settings tab — API key, model selection, and app info."""
 
+from __future__ import annotations
+
 import os
 
 import streamlit as st

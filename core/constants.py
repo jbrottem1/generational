@@ -1,9 +1,11 @@
 """Shared constants for Generational."""
 
-APP_VERSION = "1.0.0"
+APP_VERSION = "1.0.1"
 
 MODEL_OPTIONS = ["gpt-4o-mini", "gpt-4o", "gpt-3.5-turbo"]
 DEFAULT_MODEL = "gpt-4o-mini"
+
+IDEAS_PER_BATCH = 10
 
 NICHE_KEYWORDS = {
     "Psychology": ["psychology", "psychological", "mindset", "mind", "behavior"],
@@ -27,16 +29,6 @@ WORD_NUMBERS = {
     "nine": 9,
     "ten": 10,
 }
-
-PIPELINE_STEPS = [
-    ("🔍", "Research"),
-    ("🔑", "SEO"),
-    ("📝", "Script"),
-    ("🎙️", "Voice"),
-    ("🎨", "Visuals"),
-    ("✂️", "Edit"),
-    ("📤", "Publish"),
-]
 
 EXAMPLE_COMMANDS = [
     "Create 10 psychology shorts about procrastination",

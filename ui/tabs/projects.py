@@ -1,9 +1,15 @@
-"""Projects tab — Create, Save, Open, and Delete projects (stored as local JSON)."""
+"""Projects tab — Create, Save, Open, and Delete projects via the storage facade."""
+
+from __future__ import annotations
 
 import streamlit as st
 
 from core import storage
+from core.log import get_logger
+from core.models import project_from_result, result_from_project
 from ui import notify
+
+logger = get_logger(__name__)
 
 
 def render() -> None:
@@ -26,19 +32,6 @@ def _render_create_save_panel() -> None:
             _save_project(name)
 
 
-def _project_payload(name: str, result: dict) -> dict:
-    return {
-        "name": name.strip(),
-        "command": result["command"],
-        "niche": result["niche"],
-        "video_count": result["video_count"],
-        "goal": result["goal"],
-        "ideas": result["ideas"],
-        "demo_mode": result["demo_mode"],
-        "model": result["model"],
-    }
-
-
 def _create_project(name: str) -> None:
     result = st.session_state.current_result
     if not name.strip():
@@ -51,7 +44,12 @@ def _create_project(name: str) -> None:
         st.warning("A project with that name already exists. Choose a different name or use Save Project.")
         return
 
-    storage.save_project(_project_payload(name, result))
+    try:
+        storage.save_project(project_from_result(name, result))
+    except OSError as exc:
+        logger.error("Failed to create project '%s': %s", name, exc)
+        notify.error(f"Could not create project: {exc}")
+        return
     st.session_state.current_project_name = name.strip()
     notify.success(f"Project '{name}' created!")
     st.rerun()
@@ -70,10 +68,15 @@ def _save_project(name: str) -> None:
 
     project = existing or {"name": name.strip()}
     if result:
-        project.update(_project_payload(name, result))
+        project.update(project_from_result(name, result))
     project["name"] = name.strip()
 
-    storage.save_project(project)
+    try:
+        storage.save_project(project)
+    except OSError as exc:
+        logger.error("Failed to save project '%s': %s", name, exc)
+        notify.error(f"Could not save project: {exc}")
+        return
     st.session_state.current_project_name = name.strip()
     notify.success(f"Project '{name}' saved!")
     st.rerun()
@@ -101,15 +104,7 @@ def _render_project_list() -> None:
 
 
 def _open_project(project: dict) -> None:
-    st.session_state.current_result = {
-        "command": project.get("command", ""),
-        "niche": project.get("niche", "General Content"),
-        "video_count": project.get("video_count", len(project.get("ideas", []))),
-        "goal": project.get("goal", ""),
-        "ideas": project.get("ideas", []),
-        "demo_mode": project.get("demo_mode", True),
-        "model": project.get("model", "—"),
-    }
+    st.session_state.current_result = result_from_project(project)
     st.session_state.current_project_name = project["name"]
     st.session_state.project_name_input = project["name"]
     notify.success(f"Opened '{project['name']}'")

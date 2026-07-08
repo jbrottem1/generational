@@ -80,33 +80,71 @@ streamlit run app.py
 - [OpenAI](https://openai.com/) — real AI content generation
 - [python-dotenv](https://pypi.org/project/python-dotenv/) — environment variable management
 
+## Architecture
+
+Generational is built in three layers so it can grow into a multi-account
+autonomous content operating system without rewrites:
+
+- **`core/`** — foundations: config, data models, logging, and swappable
+  abstractions for AI providers and storage backends.
+- **`services/`** — pipeline stages. Ideation is live today; research, SEO,
+  voice, video, publishing, analytics, and self-improvement each get their
+  own service module here and register in the pipeline stage registry.
+- **`ui/`** — Streamlit presentation only. Tabs render state and call
+  services; reusable pieces live in `ui/components.py`.
+
+Key extension points:
+
+- **New AI provider** (e.g. Anthropic, local models): implement
+  `core/ai/base.py`'s `AIProvider` and register it in `core/ai/__init__.py`.
+- **New storage backend** (e.g. SQLite, Postgres): implement
+  `core/storage/base.py`'s `ProjectStore` and swap it in
+  `core/storage/__init__.py`.
+- **New pipeline stage**: add a module under `services/` and flip the stage
+  to available in `services/pipeline.py`.
+
 ## Project Structure
 
 ```
 generational/
-├── app.py                  # Main entry point — wires sidebar + tabs together
-├── requirements.txt        # Python dependencies
-├── .env.example            # Template for your OpenAI API key
+├── app.py                    # Main entry point — wires sidebar + tabs together
+├── requirements.txt          # Python dependencies
+├── .env.example              # Template for your OpenAI API key
 ├── .streamlit/
-│   └── config.toml         # Dark theme configuration
-├── core/                   # Business logic (no UI code)
-│   ├── constants.py        # Niches, models, pipeline steps, example commands
-│   ├── parsing.py          # Command parsing (niche/count/subject detection)
-│   ├── ai.py                # OpenAI generation + Demo Mode fallback
-│   ├── storage.py          # Local JSON project persistence
-│   └── state.py            # Streamlit session state helpers
-├── ui/                      # Presentation layer
-│   ├── styles.py            # CSS injection (dark theme, cards, animations)
-│   ├── notify.py            # Success/error toast helpers
-│   ├── sidebar.py           # AI Command Center sidebar
-│   ├── tab_ideas.py         # Ideas tab (command center)
-│   ├── tab_scripts.py       # Scripts tab
-│   ├── tab_projects.py      # Projects tab (create/save/open/delete)
-│   ├── tab_publishing.py    # Publishing tab
-│   ├── tab_analytics.py     # Analytics tab
-│   └── tab_settings.py      # Settings tab
+│   └── config.toml           # Dark theme configuration
+├── core/                     # Foundations (no UI code)
+│   ├── constants.py          # App config: niches, models, example commands
+│   ├── models.py             # Canonical result/project data shapes
+│   ├── parsing.py            # Command parsing (niche/count/subject detection)
+│   ├── state.py              # Streamlit session state helpers
+│   ├── log.py                # Central logging (console + data/logs/)
+│   ├── ai/                   # AI provider abstraction
+│   │   ├── base.py           # AIProvider interface
+│   │   ├── openai_provider.py# OpenAI backend (falls back gracefully)
+│   │   ├── demo_provider.py  # Placeholder content, no API needed
+│   │   └── __init__.py       # Provider selection (get_provider)
+│   └── storage/              # Storage abstraction
+│       ├── base.py           # ProjectStore interface
+│       ├── json_store.py     # Local JSON backend
+│       └── __init__.py       # Storage facade (get_store + helpers)
+├── services/                 # Pipeline stages (business orchestration)
+│   ├── ideation.py           # Command → parsed intent → generated content
+│   └── pipeline.py           # Stage registry (research, SEO, voice, video, ...)
+├── ui/                       # Presentation layer (Streamlit only)
+│   ├── styles.py             # CSS injection (dark theme, cards, animations)
+│   ├── notify.py             # Success/error toast helpers
+│   ├── components.py         # Reusable components (idea card, pipeline flow, ...)
+│   ├── sidebar.py            # AI Command Center sidebar
+│   └── tabs/                 # One module per workspace tab
+│       ├── ideas.py          # Ideas tab (command center)
+│       ├── scripts.py        # Scripts tab
+│       ├── projects.py       # Projects tab (create/save/open/delete)
+│       ├── publishing.py     # Publishing tab
+│       ├── analytics.py      # Analytics tab
+│       └── settings.py       # Settings tab
 └── data/
-    └── projects/             # Saved projects (JSON, gitignored)
+    ├── projects/             # Saved projects (JSON, gitignored)
+    └── logs/                 # Runtime logs (gitignored)
 ```
 
 ## Roadmap

@@ -1,6 +1,10 @@
 """Scripts tab — a focused, copy-friendly view of the current batch of scripts."""
 
+from __future__ import annotations
+
 import streamlit as st
+
+from ui import components
 
 
 def render() -> None:
@@ -25,7 +29,4 @@ def render() -> None:
             )
             meta_cols = st.columns(2)
             meta_cols[0].markdown(f"**📣 CTA:** {idea.get('cta', '—')}")
-            hashtags = idea.get("hashtags", [])
-            if isinstance(hashtags, list):
-                hashtags = " ".join(hashtags)
-            meta_cols[1].markdown(f"**#️⃣ Hashtags:** {hashtags}")
+            meta_cols[1].markdown(f"**#️⃣ Hashtags:** {components.hashtags_text(idea.get('hashtags'))}")

@@ -1,9 +1,12 @@
 """Analytics tab — session-level placeholder stats until Publishing is live."""
 
+from __future__ import annotations
+
 import streamlit as st
 
 from core import storage
 from core.constants import ANALYTICS_COMING_SOON
+from ui import components
 
 
 def render() -> None:
@@ -28,6 +31,4 @@ def render() -> None:
 
     st.divider()
     st.markdown("### 🔮 Coming Soon")
-    coming_cols = st.columns(len(ANALYTICS_COMING_SOON))
-    for col, (icon, feature) in zip(coming_cols, ANALYTICS_COMING_SOON):
-        col.info(f"{icon}  **{feature}**")
+    components.coming_soon_grid(ANALYTICS_COMING_SOON)
