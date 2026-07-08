@@ -5,7 +5,7 @@ from __future__ import annotations
 import streamlit as st
 
 from core import state
-from core.constants import EXAMPLE_COMMANDS, IDEAS_PER_BATCH
+from core.constants import CANDIDATE_IDEAS, EXAMPLE_COMMANDS, IDEAS_PER_BATCH
 from services import ideation, pipeline
 from ui import components, notify
 
@@ -45,6 +45,12 @@ def render() -> None:
         _render_breakdown(result)
 
         st.subheader("💡 Generated Ideas")
+        if result.get("pipeline_steps"):
+            st.caption(
+                f"Top {len(result['ideas'])} of {CANDIDATE_IDEAS} candidates — "
+                "selected by psychology scoring and weighted ranking, scripted, critiqued, "
+                "auto-revised, and SEO-packaged."
+            )
         for index, idea in enumerate(result["ideas"], start=1):
             components.idea_card(index, idea)
 
@@ -60,8 +66,13 @@ def _handle_run(command: str) -> None:
         st.warning("Please enter a command before running it.")
         return
 
-    with st.spinner("✨ Generational is thinking... generating your content..."):
-        result = ideation.run_command(command, count=IDEAS_PER_BATCH, model=st.session_state.selected_model)
+    with st.spinner("🧠 Running the intelligence pipeline: research → ideas → scoring → scripts → critique → SEO..."):
+        result = ideation.run_command(
+            command,
+            count=IDEAS_PER_BATCH,
+            model=st.session_state.selected_model,
+            threshold=st.session_state.publish_threshold,
+        )
 
     error = result.pop("error", None)
     tokens_used = result.pop("tokens_used", 0)
@@ -74,15 +85,12 @@ def _handle_run(command: str) -> None:
         st.session_state.project_name_input = result["niche"]
 
     idea_count = len(result["ideas"])
+    publishable = result.get("quality_summary", {}).get("publishable", idea_count)
     if result["demo_mode"]:
-        if error:
-            st.warning(f"⚠️ Demo Mode fallback — AI generation failed: {error}")
-            notify.error("AI generation failed, showing demo ideas.")
-        else:
-            st.info("🟡 Demo Mode — add an OpenAI API key in **Settings** to generate real AI content.")
-            notify.success(f"Generated {idea_count} demo ideas!")
-    else:
-        notify.success(f"Generated {idea_count} AI-powered ideas!")
+        st.info("🟡 Demo Mode — add an OpenAI API key in **Settings** to power the pipeline with real AI.")
+    if error:
+        st.warning(f"⚠️ One or more AI calls failed and used heuristic fallbacks: {error}")
+    notify.success(f"Pipeline complete — {idea_count} scripts, {publishable} publish-ready.")
 
 
 def _render_breakdown(result: dict) -> None:
@@ -91,4 +99,30 @@ def _render_breakdown(result: dict) -> None:
     cols[0].metric("Detected Niche", result["niche"])
     cols[1].metric("Videos Requested", result["video_count"])
     cols[2].metric("Mode", "Demo" if result["demo_mode"] else "Live AI")
+
+    research = result.get("research")
+    if research:
+        cols = st.columns(3)
+        cols[0].metric("Audience", research.get("audience", "—"))
+        cols[1].metric("Search Intent", research.get("search_intent", "—"))
+        cols[2].metric("Trend Strength", f"{research.get('trend_strength', '—')}/100")
+        if research.get("summary"):
+            st.info(f"**🔍 Research Summary:** {research['summary']}")
+
     st.info(f"**Content Goal:** {result['goal']}")
+
+    steps = result.get("pipeline_steps")
+    if steps:
+        marks = {"succeeded": "✓", "skipped": "·", "failed": "✗"}
+        flow = " → ".join(f"{step['engine']} {marks.get(step['status'], '?')}" for step in steps)
+        st.caption(f"🧠 Intelligence pipeline: {flow}")
+
+    summary = result.get("quality_summary")
+    if summary:
+        held = summary.get("held", 0)
+        message = (
+            f"**Quality gate (threshold {summary.get('threshold')}):** "
+            f"{summary.get('publishable', 0)} publish-ready"
+        )
+        message += f" · {held} held back" if held else " · none held back"
+        st.markdown(message)

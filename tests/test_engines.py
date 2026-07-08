@@ -2,33 +2,37 @@ import engines  # noqa: F401 - importing registers all engines
 from engines import registry
 from engines.base import PlannedEngine
 
-EXPECTED_KEYS = {
-    "ideation",
+LIVE_KEYS = {
     "research",
-    "seo",
+    "ideation",
+    "psychology",
+    "ranking",
     "script",
-    "voice",
-    "image",
-    "video",
-    "publishing",
-    "analytics",
-    "learning",
+    "critic",
+    "revision",
+    "seo",
+    "quality",
 }
+
+PLANNED_KEYS = {"voice", "image", "video", "publishing", "analytics", "learning"}
+
+EXPECTED_KEYS = LIVE_KEYS | PLANNED_KEYS
 
 
 def test_all_engines_registered():
     assert EXPECTED_KEYS.issubset(set(registry.engine_keys()))
 
 
-def test_ideation_is_ready_and_planned_engines_are_not():
-    assert registry.get_engine("ideation").is_ready() is True
-    for key in EXPECTED_KEYS - {"ideation"}:
-        assert registry.get_engine(key).is_ready() is False
+def test_intelligence_engines_ready_and_planned_engines_not():
+    for key in LIVE_KEYS:
+        assert registry.get_engine(key).is_ready() is True, key
+    for key in PLANNED_KEYS:
+        assert registry.get_engine(key).is_ready() is False, key
 
 
 def test_planned_engines_return_not_implemented():
-    result = registry.get_engine("research").run({})
-    assert result == {"research_status": "not_implemented"}
+    result = registry.get_engine("voice").run({})
+    assert result == {"voice_status": "not_implemented"}
 
 
 def test_new_engine_can_register_and_replace():

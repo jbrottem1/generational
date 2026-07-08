@@ -14,13 +14,42 @@ def hashtags_text(hashtags) -> str:
 def idea_card(index: int, idea: dict) -> None:
     """Expandable card showing the full content package for one idea."""
     title = idea.get("title", f"Idea #{index}")
-    with st.expander(f"{index}. {title}"):
+    scores = idea.get("scores")
+    header = f"{index}. {title}"
+    if scores:
+        gate = "🟢" if idea.get("publishable") else "🔒"
+        header = f"{gate} {header} · {scores['publish']}"
+
+    with st.expander(header):
+        if scores:
+            score_cols = st.columns(6)
+            score_cols[0].metric("Publish", scores["publish"])
+            score_cols[1].metric("Opportunity", scores["opportunity"])
+            score_cols[2].metric("Psychology", scores["psychology"])
+            score_cols[3].metric("SEO", scores["seo"])
+            score_cols[4].metric("Retention", f"{scores['retention']}%")
+            score_cols[5].metric("CTR", f"{scores['ctr']}%")
+            if not idea.get("publishable"):
+                st.warning("🔒 Below the publish threshold — held back from publishing.")
+
         st.markdown(f"**🎣 Hook:** {idea.get('hook', '—')}")
         st.markdown("**📝 Script (15-30s):**")
         st.write(idea.get("script", "—"))
         st.markdown(f"**📣 CTA:** {idea.get('cta', '—')}")
         st.markdown(f"**#️⃣ Hashtags:** {hashtags_text(idea.get('hashtags'))}")
+        if idea.get("keywords"):
+            st.markdown(f"**🔑 Keywords:** {', '.join(idea['keywords'])}")
+        if idea.get("description"):
+            st.markdown(f"**📄 Description:** {idea['description']}")
         st.markdown(f"**🖼️ Thumbnail Concept:** {idea.get('thumbnail_concept', '—')}")
+
+        critique = idea.get("critique")
+        if critique is not None:
+            if idea.get("revised"):
+                fixes = "; ".join(idea.get("revisions", [])) or "minor polish"
+                st.caption(f"🔧 Auto-revised after critic review ({fixes}) · Critic score: {critique['score']}")
+            else:
+                st.caption(f"🧐 Passed critic review clean · Critic score: {critique['score']}")
 
 
 def pipeline_flow(stages) -> None:

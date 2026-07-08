@@ -35,6 +35,17 @@ def render() -> None:
     st.selectbox("OpenAI model", MODEL_OPTIONS, key="selected_model")
 
     st.divider()
+    st.markdown("### 🎯 Quality Gate")
+    st.slider(
+        "Minimum publish score",
+        min_value=0,
+        max_value=100,
+        step=5,
+        key="publish_threshold",
+        help="Content scoring below this threshold is held back and will never be auto-published.",
+    )
+
+    st.divider()
     st.markdown("### ℹ️ App Info")
     st.write(f"**Version:** v{APP_VERSION}")
     st.write(f"**Projects saved:** {storage.project_count()}")

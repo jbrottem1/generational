@@ -2,7 +2,7 @@
 
 import streamlit as st
 
-from core.constants import DEFAULT_MODEL
+from core.constants import DEFAULT_MODEL, DEFAULT_PUBLISH_THRESHOLD
 
 DEFAULTS = {
     "command_text": "",
@@ -13,6 +13,7 @@ DEFAULTS = {
     "token_usage_total": 0,
     "openai_api_key_override": "",
     "selected_model": DEFAULT_MODEL,
+    "publish_threshold": DEFAULT_PUBLISH_THRESHOLD,
 }
 
 

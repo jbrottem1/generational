@@ -4,6 +4,28 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 2.0 — Intelligence Pipeline
+
+v2.0 replaces single-shot generation with a 9-stage AI reasoning pipeline.
+Every command now flows through:
+
+1. **Research** — topic context, audience, search intent, trend strength, research summary
+2. **Ideation** — 20 candidate concepts (title + hook + angle)
+3. **Psychology** — every candidate scored for curiosity, emotional impact, surprise, authority, retention potential, and shareability
+4. **Ranking** — weighted scoring; only the top concepts advance
+5. **Script** — scripts written only for the winners
+6. **Internal Critic** — flags weak hooks, repetition, low retention, boring phrasing, unsupported claims, poor pacing
+7. **Revision** — automatically rewrites the flagged sections and re-scores
+8. **SEO** — optimized title, hashtags, keywords, description, thumbnail concept
+9. **Final Quality** — per-video Opportunity, SEO, Psychology, Retention, CTR, and overall Publish scores
+
+A configurable quality gate (Settings → Quality Gate) holds back anything
+scoring below the publish threshold — it will never be auto-published.
+With an OpenAI key, the generative stages (research, ideation, scripts, SEO)
+use the model; without one, deterministic heuristics keep the full pipeline
+running in Demo Mode. Scoring stages are deterministic in every mode, so
+results are reproducible and testable.
+
 ## Version 1.1 — Autonomous OS Foundation
 
 v1.1 keeps the interface identical but rebuilds the internals for scale: a
@@ -27,10 +49,11 @@ v1.0 upgrades the original idea generator into a full AI Command Center workspac
 ## Features
 
 ### 💡 Ideas
-Type a natural language command (e.g. *"Create 10 psychology shorts about procrastination"*), or click an example to auto-fill the command box. Running the command shows:
-- Detected niche, videos requested, and content goal
-- 10 generated ideas (hook, script, CTA, hashtags, thumbnail concept)
-- The next pipeline steps: Research → SEO → Script → Voice → Visuals → Edit → Publish
+Type a natural language command (e.g. *"Create 10 psychology shorts about procrastination"* or *"Create 5 science shorts about black holes"*), or click an example to auto-fill the command box. Running the command executes the full intelligence pipeline and shows:
+- Detected niche, videos requested, audience, search intent, and trend strength
+- The research summary and content goal
+- The top-ranked ideas (of 20 candidates), each with hook, script, CTA, hashtags, keywords, description, thumbnail concept, critic notes, and all six quality scores
+- The publish gate verdict per video, and the remaining production steps: Voice → Image → Video → Publish
 
 ### 📝 Scripts
 A focused, copy-friendly view of the full scripts for the current batch of ideas.
@@ -114,12 +137,15 @@ Running a command in the Ideas tab already flows through the queue.
 
 ### Engine plugins (`engines/`)
 Each pipeline capability is an Engine plugin registered in
-`engines/registry.py`: **Ideation** (live) plus **Research, SEO, Script,
-Voice, Image, Video, Publishing, Analytics, and Learning** (registered as
-planned stubs). An engine receives the shared workflow context and returns
-updates to it. Implementing a stage = overriding `run()` and `is_ready()`
-in its module; workflows, diagnostics, and the pipeline UI pick it up
-automatically.
+`engines/registry.py`. Nine are live — **Research, Ideation, Psychology,
+Ranking, Script, Critic, Revision, SEO, and Quality** — with **Voice,
+Image, Video, Publishing, Analytics, and Learning** registered as planned
+stubs. An engine receives the shared workflow context and returns updates
+to it. Implementing a stage = overriding `run()` and `is_ready()` in its
+module; workflows, diagnostics, and the pipeline UI pick it up
+automatically. Generative engines call the AI provider through a single
+`generate_json` interface and fall back to deterministic heuristics, so
+providers/models swap without touching engine code.
 
 ### Workflow Engine (`core/workflows.py`)
 Pipelines are data, not code: a workflow is an ordered list of engine keys
@@ -197,8 +223,17 @@ generational/
 ├── engines/                  # Engine plugins (one per pipeline capability)
 │   ├── base.py               # Engine / PlannedEngine interfaces
 │   ├── registry.py           # Engine registry (register / get / ready)
-│   ├── ideation.py           # LIVE: command → content batch → knowledge base
-│   └── research|seo|script|voice|image|video|publishing|analytics|learning.py
+│   ├── heuristics.py         # Deterministic text-analysis helpers (demo + scoring)
+│   ├── research.py           # LIVE: context, audience, intent, trend strength
+│   ├── ideation.py           # LIVE: 20 candidate concepts
+│   ├── psychology.py         # LIVE: 6-dimension virality scoring
+│   ├── ranking.py            # LIVE: weighted ranking + selection
+│   ├── script.py             # LIVE: scripts for top concepts only
+│   ├── critic.py             # LIVE: adversarial script review
+│   ├── revision.py           # LIVE: auto-rewrite of flagged sections
+│   ├── seo.py                # LIVE: titles, hashtags, keywords, descriptions
+│   ├── quality.py            # LIVE: final scores + publish-threshold gate
+│   └── voice|image|video|publishing|analytics|learning.py  # planned stubs
 ├── services/                 # Business services
 │   ├── ideation.py           # Public ideation API (job queue → workflow → engine)
 │   ├── pipeline.py           # Pipeline stage views for the UI (from registry)

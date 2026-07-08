@@ -10,11 +10,16 @@ from __future__ import annotations
 from engines import registry
 from engines.analytics import AnalyticsEngine
 from engines.base import Engine, PlannedEngine
+from engines.critic import CriticEngine
 from engines.ideation import IdeationEngine
 from engines.image import ImageEngine
 from engines.learning import LearningEngine
+from engines.psychology import PsychologyEngine
 from engines.publishing import PublishingEngine
+from engines.quality import QualityEngine
+from engines.ranking import RankingEngine
 from engines.research import ResearchEngine
+from engines.revision import RevisionEngine
 from engines.script import ScriptEngine
 from engines.seo import SeoEngine
 from engines.video import VideoEngine
@@ -23,10 +28,15 @@ from engines.voice import VoiceEngine
 __all__ = ["Engine", "PlannedEngine", "registry"]
 
 for _engine_class in (
-    IdeationEngine,
     ResearchEngine,
-    SeoEngine,
+    IdeationEngine,
+    PsychologyEngine,
+    RankingEngine,
     ScriptEngine,
+    CriticEngine,
+    RevisionEngine,
+    SeoEngine,
+    QualityEngine,
     VoiceEngine,
     ImageEngine,
     VideoEngine,

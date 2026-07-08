@@ -28,11 +28,30 @@ class StepStatus:
 # directly to execute() as a list of engine keys).
 WORKFLOWS = {
     "ideation": ["ideation"],
-    "full_content": [
-        "ideation",
+    # The v2.0 intelligence pipeline: research → 20 candidates → psychology
+    # scoring → weighted ranking → scripts for the best only → critic →
+    # revision → SEO packaging → final quality scores + publish gate.
+    "intelligence": [
         "research",
-        "seo",
+        "ideation",
+        "psychology",
+        "ranking",
         "script",
+        "critic",
+        "revision",
+        "seo",
+        "quality",
+    ],
+    "full_content": [
+        "research",
+        "ideation",
+        "psychology",
+        "ranking",
+        "script",
+        "critic",
+        "revision",
+        "seo",
+        "quality",
         "voice",
         "image",
         "video",

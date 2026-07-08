@@ -1,11 +1,13 @@
 """Shared constants for Generational."""
 
-APP_VERSION = "1.1.0"
+APP_VERSION = "2.0.0"
 
 MODEL_OPTIONS = ["gpt-4o-mini", "gpt-4o", "gpt-3.5-turbo"]
 DEFAULT_MODEL = "gpt-4o-mini"
 
 IDEAS_PER_BATCH = 10
+CANDIDATE_IDEAS = 20  # candidates generated before ranking selects the best
+DEFAULT_PUBLISH_THRESHOLD = 70
 
 NICHE_KEYWORDS = {
     "Psychology": ["psychology", "psychological", "mindset", "mind", "behavior"],
@@ -14,6 +16,7 @@ NICHE_KEYWORDS = {
     "Space": ["space", "nasa", "universe", "astronomy", "galaxy", "planet"],
     "Finance": ["finance", "money", "invest", "wealth", "budget", "stocks"],
     "Health": ["health", "fitness", "wellness", "nutrition", "diet"],
+    "Science": ["science", "physics", "biology", "chemistry", "experiment", "quantum", "scientific"],
 }
 
 WORD_NUMBERS = {

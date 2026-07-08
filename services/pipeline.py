@@ -9,10 +9,10 @@ from __future__ import annotations
 
 from engines import registry
 
-# The stages shown after ideation, in production order. Analytics and
-# learning run continuously rather than per-video, so they're not shown
-# as "next steps".
-NEXT_STEP_KEYS = ["research", "seo", "script", "voice", "image", "video", "publishing"]
+# The stages that come after the intelligence pipeline, in production
+# order. Analytics and learning run continuously rather than per-video,
+# so they're not shown as "next steps".
+NEXT_STEP_KEYS = ["voice", "image", "video", "publishing"]
 
 
 def next_stages() -> list:

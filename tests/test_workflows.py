@@ -35,7 +35,7 @@ def test_custom_workflow_merges_context():
 
 
 def test_unready_engines_are_skipped():
-    run = WorkflowEngine().execute(["research", "seo"], {})
+    run = WorkflowEngine().execute(["voice", "image"], {})
     assert run.succeeded
     assert [step.status for step in run.steps] == ["skipped", "skipped"]
 

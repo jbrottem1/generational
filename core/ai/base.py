@@ -42,3 +42,14 @@ class AIProvider(ABC):
     @abstractmethod
     def generate_ideas(self, request: GenerationRequest) -> GenerationResult:
         """Generate content ideas. Must not raise — return a fallback result instead."""
+
+    def generate_json(self, system_prompt: str, user_prompt: str, model: str) -> "tuple[dict | None, int]":
+        """General-purpose structured reasoning call: returns (data, tokens_used).
+
+        Returns (None, 0) when the provider cannot serve the call (not
+        available, call failed, bad JSON) — callers fall back to their
+        deterministic heuristics. This is the extension point the whole
+        intelligence pipeline uses, so swapping providers/models never
+        touches engine code.
+        """
+        return None, 0

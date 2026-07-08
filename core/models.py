@@ -33,7 +33,7 @@ def build_result(
 
 def project_from_result(name: str, result: dict) -> dict:
     """A persistable project payload derived from a session result."""
-    return {
+    project = {
         "name": name.strip(),
         "command": result["command"],
         "niche": result["niche"],
@@ -43,12 +43,17 @@ def project_from_result(name: str, result: dict) -> dict:
         "demo_mode": result["demo_mode"],
         "model": result["model"],
     }
+    if result.get("research"):
+        project["research"] = result["research"]
+    if result.get("quality_summary"):
+        project["quality_summary"] = result["quality_summary"]
+    return project
 
 
 def result_from_project(project: dict) -> dict:
     """Rehydrate a session result from a stored project (tolerates old formats)."""
     ideas = project.get("ideas", [])
-    return build_result(
+    result = build_result(
         command=project.get("command", ""),
         niche=project.get("niche", "General Content"),
         video_count=project.get("video_count", len(ideas)),
@@ -57,3 +62,8 @@ def result_from_project(project: dict) -> dict:
         demo_mode=project.get("demo_mode", True),
         model=project.get("model", "—"),
     )
+    if project.get("research"):
+        result["research"] = project["research"]
+    if project.get("quality_summary"):
+        result["quality_summary"] = project["quality_summary"]
+    return result
