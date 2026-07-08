@@ -1,4 +1,4 @@
-"""Reddit research provider."""
+"""Reddit research provider — placeholder until Reddit API integration."""
 
 from __future__ import annotations
 

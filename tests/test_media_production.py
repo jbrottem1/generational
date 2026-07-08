@@ -67,7 +67,7 @@ def test_run_media_production_from_intelligence_context():
     production = run_media_production(ctx)
     assert not production.get("production_skipped")
     assert production["production_packages"]
-    assert len(production["production_dashboard"]) == 17
+    assert len(production["production_dashboard"]) == 18
     completed = [s for s in production["production_dashboard"] if s["state"] == "completed"]
     assert len(completed) >= 15
 

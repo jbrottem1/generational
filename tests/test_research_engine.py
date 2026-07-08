@@ -28,10 +28,11 @@ def research_manager(research_cache):
 
 def test_provider_loading():
     providers = get_research_source_providers()
-    assert len(providers) == 8
+    assert len(providers) == 9
     keys = {p.key for p in providers}
     assert "wikipedia" in keys
     assert "pubmed" in keys
+    assert "tiktok" in keys
     assert all(p.is_available() for p in providers)
 
 
@@ -53,7 +54,8 @@ def test_research_normalization():
     assert restored.provider == "wikipedia"
     for field in (
         "title", "summary", "source", "url", "publish_date", "provider",
-        "confidence", "relevance", "category", "evidence_strength", "popularity", "keywords",
+        "confidence", "relevance", "credibility_score", "category",
+        "evidence_strength", "popularity", "keywords", "topic_tags",
     ):
         assert field in data
 

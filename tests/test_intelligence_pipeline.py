@@ -67,11 +67,12 @@ def test_scripts_generated_only_for_selected():
     assert all("script" not in c for c in unselected)
 
 
-def test_scripts_have_research_references():
+def test_scripts_have_citations():
     context = _run_pipeline()
     for idea in context["selected_ideas"]:
+        assert idea.get("citations")
+        assert "citation_list" in idea["citations"]
         assert idea.get("references")
-        assert idea["references"].get("sources") is not None
 
 
 def test_critic_flags_known_weaknesses():
@@ -125,8 +126,9 @@ def test_quality_scores_and_threshold_gate():
     assert context["ideas"] == context["selected_ideas"]
     for idea in context["ideas"]:
         scores = idea["scores"]
-        assert set(scores) == {"opportunity", "seo", "psychology", "retention", "ctr", "publish"}
-        assert idea["publishable"] == (scores["publish"] >= 70)
+        assert set(scores) >= {"opportunity", "seo", "psychology", "retention", "ctr", "publish"}
+        assert "claim_confidence" in scores
+        assert idea["publishable"] == (scores["publish"] >= 70 and not idea.get("gate_failures"))
 
     summary = context["quality_summary"]
     assert summary["publishable"] + summary["held"] == len(context["ideas"])

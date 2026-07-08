@@ -20,6 +20,12 @@ DEFAULTS = {
     "research_cache_hours": DEFAULT_RESEARCH_SETTINGS["cache_ttl_hours"],
     "research_max_sources": DEFAULT_RESEARCH_SETTINGS["max_sources"],
     "research_min_confidence": DEFAULT_RESEARCH_SETTINGS["min_confidence"],
+    "research_depth": DEFAULT_RESEARCH_SETTINGS["research_depth"],
+    "science_medical_strict": DEFAULT_RESEARCH_SETTINGS["science_medical_strict"],
+    "citation_required": DEFAULT_RESEARCH_SETTINGS["citation_required"],
+    "research_confidence_threshold": DEFAULT_RESEARCH_SETTINGS["research_confidence_threshold"],
+    "max_unsupported_claims": DEFAULT_RESEARCH_SETTINGS["max_unsupported_claims"],
+    "min_claim_confidence": DEFAULT_RESEARCH_SETTINGS["min_claim_confidence"],
 }
 
 

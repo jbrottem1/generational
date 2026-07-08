@@ -61,15 +61,23 @@ def idea_card(index: int, idea: dict) -> None:
             pcols[3].metric("Queue", production.get("queue_status", "—"))
 
         refs = idea.get("references")
-        if refs:
-            with st.expander("📎 Research References"):
-                for src in refs.get("sources", []):
-                    st.markdown(f"- **{src.get('title', 'Source')}** ({src.get('provider', '')}) — {src.get('url', '')}")
-                facts = refs.get("facts_used", [])
-                if facts:
-                    st.caption("Facts used:")
-                    for fact in facts:
-                        st.markdown(f"  · {fact}")
+        citations = idea.get("citations")
+        if citations or refs:
+            with st.expander("📎 Citations & Fact-Check"):
+                if citations:
+                    st.metric("Claim Confidence", f"{citations.get('claim_confidence', 0)}%")
+                    for note in citations.get("fact_check_notes", []):
+                        st.caption(f"· {note}")
+                    unsupported = citations.get("unsupported_claims", [])
+                    if unsupported:
+                        st.warning("Unsupported claims:")
+                        for claim in unsupported:
+                            st.markdown(f"- {claim}")
+                    for cite in citations.get("citation_list", []):
+                        st.markdown(f"- **{cite.get('title', 'Source')}** ({cite.get('source_name', '')}) — {cite.get('url', '')}")
+                elif refs:
+                    for src in refs.get("sources", []):
+                        st.markdown(f"- **{src.get('title', 'Source')}** ({src.get('provider', '')}) — {src.get('url', '')}")
 
 
 def production_dashboard(stages: list) -> None:

@@ -11,6 +11,7 @@ from engines import registry
 from engines.analytics import AnalyticsEngine
 from engines.asset_manager import AssetManagerEngine
 from engines.base import Engine, PlannedEngine
+from engines.citation import CitationEngine
 from engines.critic import CriticEngine
 from engines.ideation import IdeationEngine
 from engines.image import ImageEngine
@@ -43,6 +44,7 @@ for _engine_class in (
     ScriptEngine,
     CriticEngine,
     RevisionEngine,
+    CitationEngine,
     SeoEngine,
     QualityEngine,
     ScenePlanningEngine,

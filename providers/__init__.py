@@ -37,6 +37,7 @@ def _load_research_sources() -> list[ResearchSourceProvider]:
     from providers.news import NewsProvider
     from providers.pubmed import PubMedProvider
     from providers.reddit import RedditProvider
+    from providers.tiktok import TikTokProvider
     from providers.trends import TrendsProvider
     from providers.wikipedia import WikipediaProvider
     from providers.youtube import YouTubeProvider
@@ -50,6 +51,7 @@ def _load_research_sources() -> list[ResearchSourceProvider]:
         TrendsProvider(),
         YouTubeProvider(),
         RedditProvider(),
+        TikTokProvider(),
     ]
 
 

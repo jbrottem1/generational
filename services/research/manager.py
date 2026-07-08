@@ -83,8 +83,11 @@ class ResearchManager:
             return bundle
 
         documents, providers_used, fallback = self._collect_documents(intent, settings)
+        min_confidence = settings.min_confidence
+        if settings.science_medical_strict and intent.niche in {"Science", "Health"}:
+            min_confidence = min(0.95, min_confidence + 0.15)
         scored = [score_document(doc, intent) for doc in documents]
-        filtered = filter_documents(scored, settings.min_confidence, settings.max_sources)
+        filtered = filter_documents(scored, min_confidence, settings.max_sources)
 
         if not filtered and not fallback:
             log_event(logger, "research.all_filtered", topic=intent.topic)
@@ -158,7 +161,7 @@ class ResearchManager:
             log_event(logger, "research.no_providers", level=30)
             return [], [], True
 
-        per_provider = max(1, settings.max_sources // max(len(providers), 1))
+        per_provider = settings.per_provider_limit(len(providers))
         all_docs = []
         used = []
         failures = 0
@@ -217,6 +220,7 @@ def _build_provider_registry() -> dict:
     from providers.news import NewsProvider
     from providers.pubmed import PubMedProvider
     from providers.reddit import RedditProvider
+    from providers.tiktok import TikTokProvider
     from providers.trends import TrendsProvider
     from providers.wikipedia import WikipediaProvider
     from providers.youtube import YouTubeProvider
@@ -230,6 +234,7 @@ def _build_provider_registry() -> dict:
         TrendsProvider(),
         YouTubeProvider(),
         RedditProvider(),
+        TikTokProvider(),
     ]
     return {p.key: p for p in instances}
 

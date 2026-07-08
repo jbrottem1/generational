@@ -1,4 +1,4 @@
-"""News research provider."""
+"""News research provider — placeholder until news API integration."""
 
 from __future__ import annotations
 

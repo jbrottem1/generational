@@ -1,6 +1,6 @@
 """Shared constants for Generational."""
 
-APP_VERSION = "5.0.0"
+APP_VERSION = "6.0.0"
 
 MODEL_OPTIONS = ["gpt-4o-mini", "gpt-4o", "gpt-3.5-turbo"]
 DEFAULT_MODEL = "gpt-4o-mini"
@@ -18,24 +18,34 @@ RESEARCH_PROVIDERS = [
     "trends",
     "youtube",
     "reddit",
+    "tiktok",
 ]
 
 RESEARCH_PROVIDER_LABELS = {
-    "wikipedia": "Wikipedia",
-    "pubmed": "PubMed",
-    "arxiv": "arXiv",
-    "crossref": "Crossref",
-    "news": "News",
-    "trends": "Trends",
-    "youtube": "YouTube",
-    "reddit": "Reddit",
+    "wikipedia": "Wikipedia (live)",
+    "pubmed": "PubMed (live)",
+    "arxiv": "arXiv (live)",
+    "crossref": "Crossref (live)",
+    "news": "News (placeholder)",
+    "trends": "Google Trends (placeholder)",
+    "youtube": "YouTube Trends (placeholder)",
+    "reddit": "Reddit (placeholder)",
+    "tiktok": "TikTok Trends (placeholder)",
 }
+
+RESEARCH_DEPTH_OPTIONS = ["shallow", "moderate", "deep"]
 
 DEFAULT_RESEARCH_SETTINGS = {
     "enabled_providers": list(RESEARCH_PROVIDERS),
     "cache_ttl_hours": 24,
     "max_sources": 20,
     "min_confidence": 0.4,
+    "research_depth": "moderate",
+    "science_medical_strict": False,
+    "citation_required": True,
+    "research_confidence_threshold": 0.45,
+    "max_unsupported_claims": 2,
+    "min_claim_confidence": 0.5,
 }
 
 NICHE_KEYWORDS = {

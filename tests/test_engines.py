@@ -4,7 +4,7 @@ from engines.base import PlannedEngine
 
 INTELLIGENCE_LIVE = {
     "research", "ideation", "psychology", "ranking", "script",
-    "critic", "revision", "seo", "quality",
+    "critic", "revision", "citation", "seo", "quality",
 }
 
 PRODUCTION_LIVE = {

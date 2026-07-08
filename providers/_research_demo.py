@@ -50,5 +50,6 @@ def make_document(
         evidence_strength=0.0,
         popularity=popularity or round(0.4 + (seed % 60) / 100, 2),
         keywords=[topic.lower(), category, provider],
+        topic_tags=[topic.lower(), category],
         citation_count=citation_count or seed % 500,
     )

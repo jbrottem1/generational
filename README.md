@@ -4,6 +4,52 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 6.0 — Real Research + Citation Engine
+
+v6.0 turns Generational into a **source-backed research system** for autonomous
+faceless short-form content. Every idea and script is grounded in a structured
+**Research Brief** with full citation traceability.
+
+### Live research connectors
+
+| Provider | Status |
+|---|---|
+| Wikipedia | Live (MediaWiki API) |
+| PubMed | Live (NCBI E-utilities) |
+| arXiv | Live (Atom API) |
+| Crossref | Live (REST API) |
+| Google Trends, YouTube Trends, Reddit, News, TikTok | Placeholders (demo data) |
+
+All live connectors fall back to demo data if APIs fail — the app never crashes.
+
+### Research Brief
+
+Every result stores: title, source name, URL, date, summary, credibility score,
+relevance score, confidence score, and topic tags.
+
+### Citation Engine (new pipeline stage)
+
+After revision, every script receives:
+- Supporting sources
+- Claim confidence score
+- Unsupported claim warnings
+- Fact-check notes
+- Citation list
+
+### Multi-factor Quality Gate
+
+Content is **not publishable** unless ALL pass:
+- Publish score ≥ threshold
+- Research confidence ≥ threshold
+- Unsupported claims ≤ max allowed
+- Claim confidence ≥ minimum (when citations required)
+
+### Settings → Research (v6)
+
+Research depth · Source confidence threshold · Science/medical strict mode ·
+Maximum sources · Citation requirement · Research confidence gate ·
+Unsupported claims limit · Claim confidence minimum · Quality gate threshold
+
 ## Version 5.0 — Knowledge Engine & Research Platform
 
 v5.0 transforms Generational from an AI content generator into a **research-first
@@ -78,7 +124,7 @@ Intelligence Pipeline completes. Every script that passes the quality gate
 becomes a complete, production-ready media package — without touching the
 intelligence workflow or redesigning the UI.
 
-**Intelligence Pipeline** (unchanged): Research → Ideas → Psychology → Ranking → Scripts → Critic → Revision → SEO → Quality Gate
+**Intelligence Pipeline** (unchanged structure, +Citation): Research → Ideas → Psychology → Ranking → Scripts → Critic → Revision → **Citation** → SEO → Quality Gate
 
 **Media Production Pipeline** (new): Scene Planning → Narration → Visual Planning → Asset Management → Subtitles → Timeline → Render Package → Publishing Queue
 
@@ -92,7 +138,7 @@ Each approved script automatically receives:
 - **Render Package** — every asset bundled for a future renderer (no rendering yet)
 - **Publishing queue entry** — ready for auto-posting when connected
 
-The **Production Dashboard** (compact panel in the Ideas tab) shows all 17
+The **Production Dashboard** (compact panel in the Ideas tab) shows all 18
 pipeline stages with status: Waiting, Running, Completed, Retrying, Failed.
 
 ### Voice architecture
@@ -231,7 +277,7 @@ is a thin shell over five layers:
                     │
         services/  (research, ideation, production, assets, voice profiles, channels, knowledge)
                     │
-   Job Queue ──► Workflow Manager ──► Engine Registry (17 live plugins)
+   Job Queue ──► Workflow Manager ──► Engine Registry (18 live plugins)
                     │
         providers/ (research sources, LLM, Voice, Image, Video, Music, Publishing, Analytics, Trend)
                     │
@@ -275,8 +321,8 @@ Create profiles, attach to projects, store recording metadata. Recordings
 live under `data/voice_recordings/`. Clone mode is wired but not implemented.
 
 ### Engine plugins (`engines/`)
-**17 live engines** across two pipelines. Intelligence (9): Research, Ideation,
-Psychology, Ranking, Script, Critic, Revision, SEO, Quality. Production (8):
+**18 live engines** across two pipelines. Intelligence (10): Research, Ideation,
+Psychology, Ranking, Script, Critic, Revision, Citation, SEO, Quality. Production (8):
 Scene Planning, Narration, Visual Planning, Asset Manager, Subtitle, Timeline,
 Render Package, Publishing Queue. Future render engines (Voice/Image/Video
 generation) remain as planned stubs.

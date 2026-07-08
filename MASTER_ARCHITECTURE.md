@@ -1,7 +1,7 @@
 # Generational — Master Architecture
 
-**Current version:** v5.0.0  
-**Status:** AI Content Operating System — research-first, pipeline-driven, provider-agnostic  
+**Current version:** v6.0.0  
+**Status:** Source-backed research platform with citation engine and multi-factor quality gate  
 **Entry point:** `app.py` (Streamlit shell only — no business logic)
 
 This document is the canonical architecture reference for Generational. It describes how the system is built today, how to extend it safely, and how the team develops using ChatGPT, Claude, and Cursor.
@@ -31,8 +31,9 @@ This document is the canonical architecture reference for Generational. It descr
 
 Generational is an autonomous AI content operating system designed to manage multiple social media brands at scale. It is **not** a collection of scripts — it is a modular platform with:
 
-- A **Knowledge Engine** that gathers and scores research before any content is generated
-- An **Intelligence Pipeline** that reasons through ideas, psychology, scripts, critique, SEO, and quality
+- A **Knowledge Engine** with live Wikipedia, PubMed, arXiv, and Crossref connectors
+- A **Citation Engine** that maps scripts to sources and flags unsupported claims
+- An **Intelligence Pipeline** (10 stages) through ideas, psychology, scripts, critique, citation, SEO, and quality
 - A **Media Production Pipeline** that turns approved scripts into render-ready packages
 - A **Provider System** that keeps all vendor integrations swappable
 - A **Job Queue + Workflow Engine** that coordinates every stage without tight coupling
@@ -77,7 +78,7 @@ Generational is an autonomous AI content operating system designed to manage mul
                                │
 ┌──────────────────────────────▼──────────────────────────────┐
 │  Engine Registry (engines/registry.py)                      │
-│  17 live engines · 6 planned stubs                           │
+│  18 live engines · 6 planned stubs                           │
 └──────────────────────────────┬──────────────────────────────┘
                                │
 ┌──────────────────────────────▼──────────────────────────────┐
@@ -131,9 +132,9 @@ services/ideation.run_command()
     │       → cache by topic (data/research_cache/)
     │       │
     │       ▼
-    │   Stages 2–9: Intelligence Pipeline
+    │   Stages 2–10: Intelligence Pipeline
     │       ideation → psychology → ranking → script →
-    │       critic → revision → seo → quality
+    │       critic → revision → citation → seo → quality
     │       │
     │       ▼
     │   context["ideas"] with scores, SEO, references
@@ -256,19 +257,20 @@ class Engine(ABC):
     def run(self, context: dict) -> dict: ...  # returns merge updates
 ```
 
-### Intelligence Pipeline (9 live engines)
+### Intelligence Pipeline (10 live engines)
 
 | Key | Module | Responsibility |
 |---|---|---|
-| `research` | `engines/research.py` | Delegates to Knowledge Engine; produces research brief + references |
-| `ideation` | `engines/ideation.py` | Generates 20 candidate concepts grounded in research summary |
+| `research` | `engines/research.py` | Knowledge Engine — live APIs + demo fallback; produces Research Brief |
+| `ideation` | `engines/ideation.py` | Generates 20 candidate concepts grounded in research brief |
 | `psychology` | `engines/psychology.py` | Scores candidates on 6 virality dimensions (deterministic) |
 | `ranking` | `engines/ranking.py` | Weighted ranking; selects top N for scripting |
-| `script` | `engines/script.py` | Writes 15–30s voiceover scripts; attaches research references |
+| `script` | `engines/script.py` | Writes 15–30s voiceover scripts from research facts |
 | `critic` | `engines/critic.py` | Adversarial review — flags weak hooks, repetition, pacing |
 | `revision` | `engines/revision.py` | Auto-rewrites flagged sections |
+| `citation` | `engines/citation.py` | Maps scripts to sources; claim confidence; unsupported claim warnings |
 | `seo` | `engines/seo.py` | Titles, hashtags, keywords, description, thumbnail concept |
-| `quality` | `engines/quality.py` | Final scores + publish-threshold gate |
+| `quality` | `engines/quality.py` | Multi-factor publish gate (score + research + citations) |
 
 **Workflow:** `WORKFLOWS["intelligence"]`
 
@@ -319,7 +321,7 @@ Providers live in `providers/` and implement abstract interfaces in `providers/b
 | Category | Interface | Factory | Implementations |
 |---|---|---|---|
 | LLM | `providers/llm.py` | `get_llm_provider()` | `core/ai/openai_provider.py`, `core/ai/demo_provider.py` |
-| Research sources | `providers/research_source.py` | `get_research_source_providers()` | wikipedia, pubmed, arxiv, crossref, news, trends, youtube, reddit |
+| Research sources | `providers/research_source.py` | `get_research_source_providers()` | wikipedia, pubmed, arxiv, crossref (live); news, trends, youtube, reddit, tiktok (placeholder) |
 | Voice | `providers/voice/base.py` | `get_voice_provider(mode)` | demo_ai, recorded, clone (stub) |
 | Image | `providers/image_provider.py` | *(stub)* | — |
 | Video | `providers/video_provider.py` | *(stub)* | — |
@@ -393,6 +395,7 @@ Services are the public API between UI and infrastructure.
 | `cache.py` | Topic-level cache with TTL (`data/research_cache/`) |
 | `scorer.py` | Authority, freshness, popularity, scientific reliability, citations, relevance |
 | `summarizer.py` | Executive summary, facts, stats, myths, contrarian ideas, Q&A, trends |
+| `citation.py` | Script-to-source mapping, claim confidence, fact-check notes |
 
 ---
 
@@ -458,6 +461,7 @@ The Streamlit UI is intentionally stable across versions. Major releases add **c
 | **v2.0** | Intelligence Pipeline | 9-stage reasoning: research → ideation → psychology → ranking → script → critic → revision → SEO → quality |
 | **v4.0** | Media Production Engine | 8-stage production pipeline, voice architecture, render packages, production dashboard |
 | **v5.0** | Knowledge Engine | Multi-source research, source scoring, cache, traceability, research settings |
+| **v6.0** | Real Research + Citation | Live Wikipedia/PubMed/arXiv/Crossref APIs, Citation Engine, multi-factor quality gate |
 
 *(v3.0 was skipped in release numbering.)*
 
@@ -465,8 +469,8 @@ The Streamlit UI is intentionally stable across versions. Major releases add **c
 
 | Version | Focus | Dependencies |
 |---|---|---|
-| **v6.0** | Live research APIs | Real Wikipedia, PubMed, arXiv integrations behind existing provider interface |
-| **v7.0** | Render engine | Consume `RenderPackage`; ffmpeg or cloud renderer |
+| **v7.0** | Trend API integrations | Google Trends, YouTube, Reddit, TikTok live APIs |
+| **v8.0** | Render engine | Consume `RenderPackage`; ffmpeg or cloud renderer |
 | **v8.0** | Publishing automation | YouTube/TikTok/Instagram providers; publishing queue → live posts |
 | **v9.0** | Analytics + Learning | Performance ingestion; Learning engine mines Knowledge Base |
 | **v10.0** | Multi-channel autonomy | Channel manager UI; scheduled autonomous content for dozens of brands |
@@ -500,7 +504,7 @@ python -m pytest
 | `tests/test_engines.py` | Registry completeness, live vs planned engines |
 | `tests/test_workflows.py` | Context merging, skip/fail behavior, job queue |
 | `tests/test_intelligence_pipeline.py` | End-to-end intelligence pipeline |
-| `tests/test_research_engine.py` | Knowledge Engine: providers, cache, scoring, summarization |
+| `tests/test_citation_engine.py` | Citation engine + multi-factor quality gate |
 | `tests/test_media_production.py` | Production pipeline and dashboard |
 | `tests/test_providers.py` | Voice provider factory |
 | `tests/test_knowledge.py` | Knowledge Base CRUD |
@@ -526,7 +530,7 @@ python -m pytest
 
 ### Current Baseline
 
-**72 tests passing** (as of v5.0.0).
+**77 tests passing** (as of v6.0.0).
 
 ---
 
@@ -672,7 +676,7 @@ generational/
 │   ├── research/                   # Knowledge Engine
 │   ├── assets.py · voice_profiles.py
 │   ├── knowledge.py · channels.py · pipeline.py
-├── engines/                        # 17 live + 6 planned pipeline plugins
+├── engines/                        # 18 live + 6 planned pipeline plugins
 ├── providers/                      # Swappable external backends
 ├── ui/                             # Streamlit presentation
 ├── tests/                          # 72+ unit/integration tests
@@ -681,4 +685,4 @@ generational/
 
 ---
 
-*Last updated: v5.0.0 — Knowledge Engine & Research Platform*
+*Last updated: v6.0.0 — Real Research + Citation Engine*

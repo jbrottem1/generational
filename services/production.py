@@ -22,6 +22,7 @@ INTELLIGENCE_STAGE_DEFS = [
     ("script", "Scripts"),
     ("critic", "Critic"),
     ("revision", "Revision"),
+    ("citation", "Citation"),
     ("seo", "SEO"),
     ("quality", "Quality Gate"),
 ]

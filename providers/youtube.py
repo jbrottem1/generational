@@ -1,4 +1,4 @@
-"""YouTube research provider."""
+"""YouTube research provider — YouTube Trends placeholder."""
 
 from __future__ import annotations
 
@@ -8,7 +8,7 @@ from providers.research_source import ResearchSourceProvider
 
 class YouTubeProvider(ResearchSourceProvider):
     key = "youtube"
-    label = "YouTube"
+    label = "YouTube Trends"
 
     def is_available(self) -> bool:
         return True

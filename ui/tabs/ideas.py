@@ -78,6 +78,12 @@ def _handle_run(command: str) -> None:
                 "cache_ttl_hours": st.session_state.research_cache_hours,
                 "max_sources": st.session_state.research_max_sources,
                 "min_confidence": st.session_state.research_min_confidence,
+                "research_depth": st.session_state.research_depth,
+                "science_medical_strict": st.session_state.science_medical_strict,
+                "citation_required": st.session_state.citation_required,
+                "research_confidence_threshold": st.session_state.research_confidence_threshold,
+                "max_unsupported_claims": st.session_state.max_unsupported_claims,
+                "min_claim_confidence": st.session_state.min_claim_confidence,
             },
             project_name=st.session_state.current_project_name,
         )
@@ -125,8 +131,10 @@ def _render_breakdown(result: dict) -> None:
         source_count = research.get("source_count", 0)
         if source_count:
             providers = research.get("providers_used", [])
+            conf = research.get("research_confidence")
             st.caption(
                 f"📚 {source_count} vetted source(s)"
+                + (f" · confidence {conf:.0%}" if conf else "")
                 + (f" · cached" if research.get("cached") else "")
                 + (f" · {len(providers)} provider(s)" if providers else "")
             )

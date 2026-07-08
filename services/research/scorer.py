@@ -119,6 +119,7 @@ def score_document(doc: ResearchDocument, intent: ResearchIntent) -> ResearchDoc
     doc.relevance = round(relevance, 3)
     doc.evidence_strength = round(evidence, 3)
     doc.confidence = round(confidence, 3)
+    doc.credibility_score = round(0.5 * authority + 0.5 * scientific, 3)
     return doc
 
 
