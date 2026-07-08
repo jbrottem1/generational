@@ -1,6 +1,6 @@
 # Generational — Master Architecture
 
-**Current version:** v6.0.0  
+**Current version:** v7.0.0  
 **Status:** Source-backed research platform with citation engine and multi-factor quality gate  
 **Entry point:** `app.py` (Streamlit shell only — no business logic)
 
@@ -39,11 +39,12 @@ The goal is not to automate one YouTube channel. The goal is software that opera
 
 ### What exists today
 
-Generational v6.0 is a modular platform with:
+Generational v7.0 is a modular platform with:
 
+- A **Trend Discovery Engine** — the front door: auto-discovered trend providers, a universal Trend model, and 0-100 Opportunity Scoring that gates what enters the pipeline
 - A **Knowledge Engine** with live Wikipedia, PubMed, arXiv, and Crossref connectors
 - A **Citation Engine** that maps scripts to sources and flags unsupported claims
-- An **Intelligence Pipeline** (10 stages) through ideas, psychology, scripts, critique, citation, SEO, and quality
+- An **Intelligence Pipeline** (12 stages) from trend discovery and opportunity ranking through ideas, psychology, scripts, critique, citation, SEO, and quality
 - A **Media Production Pipeline** that turns approved scripts into render-ready packages
 - A **Provider System** that keeps all vendor integrations swappable
 - A **Job Queue + Workflow Engine** that coordinates every stage without tight coupling
@@ -103,7 +104,7 @@ Every stage in this chain already has a registered engine key (live or planned s
                                │
 ┌──────────────────────────────▼──────────────────────────────┐
 │  Engine Registry (engines/registry.py)                      │
-│  18 live engines · 6 planned stubs                           │
+│  20 live engines · 6 planned stubs                           │
 └──────────────────────────────┬──────────────────────────────┘
                                │
 ┌──────────────────────────────▼──────────────────────────────┐
@@ -147,7 +148,20 @@ services/ideation.run_command()
     ├─► Job Queue: workflow = "intelligence"
     │       │
     │       ▼
-    │   Stage 1: Research (Knowledge Engine)
+    │   Stage 0: Trend Discovery (front door)
+    │       engines/trend_discovery.py → services/trends/manager.py
+    │       → query all auto-discovered trend providers
+    │       → normalize into universal Trend model
+    │       │
+    │       ▼
+    │   Stage 1: Opportunity Ranking
+    │       engines/opportunity_ranking.py → services/trends/scorer.py
+    │       → score every trend 0-100 (11 factors)
+    │       → only top 5 opportunities move forward
+    │       → trend keywords feed ideation
+    │       │
+    │       ▼
+    │   Stage 2: Research (Knowledge Engine)
     │       services/research/manager.py
     │       → parse intent
     │       → query enabled research providers
@@ -157,7 +171,7 @@ services/ideation.run_command()
     │       → cache by topic (data/research_cache/)
     │       │
     │       ▼
-    │   Stages 2–10: Intelligence Pipeline
+    │   Stages 3–12: Intelligence Pipeline
     │       ideation → psychology → ranking → script →
     │       critic → revision → citation → seo → quality
     │       │
@@ -187,6 +201,9 @@ Every engine receives and returns updates to a shared `context: dict`. Key field
 | Field | Set by | Consumed by |
 |---|---|---|
 | `command`, `niche`, `subject`, `goal` | Research | All downstream engines |
+| `trends` | Trend Discovery | Opportunity Ranking |
+| `trend_opportunities`, `top_opportunity`, `trend_dashboard` | Opportunity Ranking | UI (Trend Dashboard) |
+| `trend_keywords` | Opportunity Ranking | Ideation prompt |
 | `research` | Research | Ideation, Script, Quality, UI |
 | `research_references` | Research | Script (traceability) |
 | `candidates` | Ideation | Psychology, Ranking |
@@ -282,10 +299,12 @@ class Engine(ABC):
     def run(self, context: dict) -> dict: ...  # returns merge updates
 ```
 
-### Intelligence Pipeline (10 live engines)
+### Intelligence Pipeline (12 live engines)
 
 | Key | Module | Responsibility |
 |---|---|---|
+| `trend_discovery` | `engines/trend_discovery.py` | Front door — queries all trend providers; normalizes into universal Trend model |
+| `opportunity_ranking` | `engines/opportunity_ranking.py` | Scores trends 0-100 (11 factors); only top opportunities move forward |
 | `research` | `engines/research.py` | Knowledge Engine — live APIs + demo fallback; produces Research Brief |
 | `ideation` | `engines/ideation.py` | Generates 20 candidate concepts grounded in research brief |
 | `psychology` | `engines/psychology.py` | Scores candidates on 6 virality dimensions (deterministic) |
@@ -347,6 +366,7 @@ Providers live in `providers/` and implement abstract interfaces in `providers/b
 |---|---|---|---|
 | LLM | `providers/llm.py` | `get_llm_provider()` | `core/ai/openai_provider.py`, `core/ai/demo_provider.py` |
 | Research sources | `providers/research_source.py` | `get_research_source_providers()` | wikipedia, pubmed, arxiv, crossref (live); news, trends, youtube, reddit, tiktok (placeholder) |
+| Trend sources | `providers/trend_sources/base.py` | `get_trend_providers()` — **auto-discovered** | google_trends, youtube_trending, tiktok_trends, reddit_trends, rss_feeds, news_api, keyword_api (placeholders) |
 | Voice | `providers/voice/base.py` | `get_voice_provider(mode)` | demo_ai, recorded, clone (stub) |
 | Image | `providers/image_provider.py` | *(stub)* | — |
 | Video | `providers/video_provider.py` | *(stub)* | — |
@@ -371,6 +391,26 @@ class ResearchSourceProvider(Provider):
 
 Returns normalized `ResearchDocument` objects regardless of upstream API shape. The UI **never** displays which provider supplied data.
 
+### Trend Source Provider Contract (v7.0)
+
+```python
+class TrendSourceProvider(ABC):
+    key: str        # registry key
+    label: str      # human-readable name
+    platform: str   # where the signal comes from
+
+    def is_available(self) -> bool: ...
+    def discover(self, topic, category="general", country="US",
+                 language="en", limit=3) -> list[Trend]: ...
+```
+
+Returns universal `Trend` objects (topic, keywords, growth %, search volume,
+velocity, competition, freshness, category, country, language, platform,
+source, timestamp, confidence). The registry in
+`providers/trend_sources/__init__.py` **scans the package automatically** —
+adding a provider is dropping one module into the folder. No registration
+code, no imports to edit.
+
 ### Voice Provider Contract
 
 Three modes via `VoiceMode`:
@@ -389,6 +429,10 @@ Three modes via `VoiceMode`:
 3. Add key to `RESEARCH_PROVIDERS` in `core/constants.py`
 4. Add tests in `tests/test_research_engine.py`
 
+**Trend source:**
+1. Create `providers/trend_sources/my_source.py` implementing `TrendSourceProvider`
+2. Done — the registry auto-discovers it. Add a test in `tests/test_trend_discovery.py`
+
 **Other capability:**
 1. Implement the ABC in `providers/`
 2. Add factory function in `providers/__init__.py`
@@ -405,6 +449,7 @@ Services are the public API between UI and infrastructure.
 | Ideation | `services/ideation.py` | Runs intelligence pipeline + production; records to Knowledge Base |
 | Production | `services/production.py` | Runs media_production workflow; builds production dashboard |
 | Research | `services/research/` | Knowledge Engine — manager, cache, scorer, summarizer, models |
+| Trends | `services/trends/` | Trend Discovery — universal Trend model, 11-factor opportunity scorer, discovery manager |
 | Assets | `services/assets.py` | Asset registry + publishing queue persistence |
 | Voice Profiles | `services/voice_profiles.py` | Profile CRUD, recording metadata, style presets |
 | Knowledge | `services/knowledge.py` | Append-only JSON memory (hooks, titles, scripts, research briefs) |
@@ -487,6 +532,7 @@ The Streamlit UI is intentionally stable across versions. Major releases add **c
 | **v4.0** | Media Production Engine | 8-stage production pipeline, voice architecture, render packages, production dashboard |
 | **v5.0** | Knowledge Engine | Multi-source research, source scoring, cache, traceability, research settings |
 | **v6.0** | Real Research + Citation | Live Wikipedia/PubMed/arXiv/Crossref APIs, Citation Engine, multi-factor quality gate |
+| **v7.0** | Trend Discovery Engine | Auto-discovered trend provider registry, universal Trend model, 11-factor Opportunity Scoring, pipeline front door, Trend Dashboard |
 
 *(v3.0 was skipped in release numbering.)*
 
@@ -494,7 +540,7 @@ The Streamlit UI is intentionally stable across versions. Major releases add **c
 
 | Version | Focus | Dependencies |
 |---|---|---|
-| **v7.0** | Trend Discovery + live trend APIs | Google Trends, YouTube, Reddit, TikTok connectors behind existing interface |
+| **v7.x** | Live trend APIs | Google Trends, YouTube Data, TikTok, Reddit HTTP clients behind the existing `TrendSourceProvider` interface — per-file swaps, no pipeline changes |
 | **v8.0** | Render engine (Image → Animation → Video) | Consume `RenderPackage`; ffmpeg or cloud renderer; image/video providers |
 | **v9.0** | Publishing automation | YouTube/TikTok/Instagram providers; publishing queue → live posts; per-channel credentials |
 | **v10.0** | Analytics + Learning Engine | Performance ingestion; Learning engine mines Knowledge Base; feedback into ranking/prompts |
@@ -547,6 +593,7 @@ python -m pytest
 | `tests/test_workflows.py` | Context merging, skip/fail behavior, job queue |
 | `tests/test_intelligence_pipeline.py` | End-to-end intelligence pipeline |
 | `tests/test_citation_engine.py` | Citation engine + multi-factor quality gate |
+| `tests/test_trend_discovery.py` | Trend provider auto-discovery, universal model, opportunity scoring, pipeline integration |
 | `tests/test_media_production.py` | Production pipeline and dashboard |
 | `tests/test_providers.py` | Voice provider factory |
 | `tests/test_knowledge.py` | Knowledge Base CRUD |
@@ -572,7 +619,7 @@ python -m pytest
 
 ### Current Baseline
 
-**77 tests passing** (as of v6.0.0).
+**90 tests passing** (as of v7.0.0).
 
 ---
 
@@ -633,7 +680,12 @@ gh pr create --title "..." --body "..."
 
 These modules are architecturally anticipated but not yet implemented.
 
-### Render Engine (v7.0)
+### Live Trend APIs (v7.x)
+
+- **Change:** Replace demo data in `providers/trend_sources/*.py` with real HTTP clients
+- **No pipeline changes** — same `discover()` interface, same universal `Trend` output
+
+### Render Engine (v8.0)
 
 - **Input:** `RenderPackage` from `data/publishing_queue/`
 - **Output:** Final MP4/WebM file
@@ -683,6 +735,7 @@ Quick reference for common extensions:
 | Goal | Action |
 |---|---|
 | Add research provider | New file in `providers/` + register in `_load_research_sources()` + add to `RESEARCH_PROVIDERS` |
+| Add trend provider | Drop a `TrendSourceProvider` module into `providers/trend_sources/` — auto-discovered |
 | Add pipeline stage | New engine module + register in `engines/__init__.py` + append to `WORKFLOWS` |
 | Add voice backend | Implement `VoiceProvider` + register in `get_voice_provider()` |
 | Add storage backend | Implement `core/storage/base.py` `ProjectStore` |
@@ -716,15 +769,17 @@ generational/
 │   ├── ideation.py                 # Intelligence + production orchestrator
 │   ├── production.py               # Media production orchestrator
 │   ├── research/                   # Knowledge Engine
+│   ├── trends/                     # Trend Discovery (models, scorer, manager)
 │   ├── assets.py · voice_profiles.py
 │   ├── knowledge.py · channels.py · pipeline.py
-├── engines/                        # 18 live + 6 planned pipeline plugins
+├── engines/                        # 20 live + 6 planned pipeline plugins
 ├── providers/                      # Swappable external backends
+│   └── trend_sources/              # Auto-discovered trend providers
 ├── ui/                             # Streamlit presentation
-├── tests/                          # 72+ unit/integration tests
+├── tests/                          # 90 unit/integration tests
 └── data/                           # Runtime persistence (gitignored)
 ```
 
 ---
 
-*Last updated: v6.0.0 — Real Research + Citation Engine*
+*Last updated: v7.0.0 — Trend Discovery Engine*

@@ -1,8 +1,9 @@
-"""Ideation service — runs the v2.0 intelligence pipeline for the UI.
+"""Ideation service — runs the intelligence pipeline for the UI.
 
 Submits the command as a job to the central JobQueue, which executes the
-"intelligence" workflow (research → candidates → psychology → ranking →
-scripts → critic → revision → SEO → quality gate) through the WorkflowEngine.
+"intelligence" workflow (trend discovery → opportunity ranking → research →
+candidates → psychology → ranking → scripts → critic → revision → citation →
+SEO → quality gate) through the WorkflowEngine.
 Final assets are recorded into the Knowledge Base.
 """
 
@@ -71,6 +72,9 @@ def run_command(
     result["research"] = context.get("research", {})
     if context.get("research_bundle"):
         result["research_bundle"] = context["research_bundle"]
+    result["trend_opportunities"] = context.get("trend_opportunities", [])
+    result["trend_dashboard"] = context.get("trend_dashboard", {})
+    result["top_opportunity"] = context.get("top_opportunity", {})
     result["quality_summary"] = context.get("quality_summary", {})
     result["pipeline_steps"] = job.result["run"]["steps"]
     result["tokens_used"] = context.get("tokens_used", 0)

@@ -15,6 +15,8 @@ from core.workflows import WORKFLOW_JOB_TYPE, ensure_workflow_handler
 logger = get_logger(__name__)
 
 INTELLIGENCE_STAGE_DEFS = [
+    ("trend_discovery", "Trends"),
+    ("opportunity_ranking", "Opportunities"),
     ("research", "Research"),
     ("ideation", "Ideas"),
     ("psychology", "Psychology"),

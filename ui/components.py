@@ -80,6 +80,39 @@ def idea_card(index: int, idea: dict) -> None:
                         st.markdown(f"- **{src.get('title', 'Source')}** ({src.get('provider', '')}) — {src.get('url', '')}")
 
 
+def trend_dashboard(dashboard: dict, opportunities: list) -> None:
+    """Compact Trend Discovery panel — top opportunities and aggregate signals."""
+    if not opportunities:
+        return
+
+    cols = st.columns(4)
+    cols[0].metric("Top Opportunity Score", f"{dashboard.get('top_score', 0)}/100")
+    cols[1].metric("Avg Growth", f"{dashboard.get('average_growth_pct', 0)}%")
+    cols[2].metric("Velocity", f"{dashboard.get('average_velocity', 0):.2f}")
+    cols[3].metric("Platforms", len(dashboard.get("platforms", [])))
+
+    meta = []
+    if dashboard.get("countries"):
+        meta.append("🌍 " + ", ".join(dashboard["countries"]))
+    if dashboard.get("platforms"):
+        meta.append("📱 " + ", ".join(dashboard["platforms"]))
+    if dashboard.get("languages"):
+        meta.append("🗣 " + ", ".join(dashboard["languages"]))
+    if dashboard.get("discovered_at"):
+        meta.append(f"🕒 discovered {dashboard['discovered_at'][:16].replace('T', ' ')} UTC")
+    if meta:
+        st.caption(" · ".join(meta))
+
+    with st.expander(f"📡 Top {len(opportunities)} Opportunities"):
+        for rank, opp in enumerate(opportunities, start=1):
+            trend = opp.get("trend", {})
+            st.markdown(
+                f"**{rank}. {trend.get('topic', '—')}** — score {opp.get('opportunity_score', 0)}/100 · "
+                f"{trend.get('platform', '?')} · {trend.get('country', '?')} · "
+                f"growth {trend.get('growth_pct', 0)}% · via {trend.get('source', '?')}"
+            )
+
+
 def production_dashboard(stages: list) -> None:
     """Compact production progress panel — intelligence + media stages."""
     if not stages:

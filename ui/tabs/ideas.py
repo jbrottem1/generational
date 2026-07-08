@@ -120,6 +120,11 @@ def _render_breakdown(result: dict) -> None:
     cols[1].metric("Videos Requested", result["video_count"])
     cols[2].metric("Mode", "Demo" if result["demo_mode"] else "Live AI")
 
+    opportunities = result.get("trend_opportunities")
+    if opportunities:
+        st.markdown("**📡 Trend Discovery**")
+        components.trend_dashboard(result.get("trend_dashboard", {}), opportunities)
+
     research = result.get("research")
     if research:
         cols = st.columns(3)

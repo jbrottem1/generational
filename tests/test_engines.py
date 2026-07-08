@@ -3,6 +3,7 @@ from engines import registry
 from engines.base import PlannedEngine
 
 INTELLIGENCE_LIVE = {
+    "trend_discovery", "opportunity_ranking",
     "research", "ideation", "psychology", "ranking", "script",
     "critic", "revision", "citation", "seo", "quality",
 }

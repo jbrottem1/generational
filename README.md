@@ -4,6 +4,54 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 7.0 — Trend Discovery Engine
+
+v7.0 makes Trend Discovery the **front door** of the operating system. Instead
+of the user guessing what content to make, the system discovers opportunities
+automatically before any research or generation begins.
+
+### Trend provider layer (`providers/trend_sources/`)
+
+Plug-and-play providers behind one interface (`TrendSourceProvider`):
+Google Trends, YouTube Trending, TikTok Trends, Reddit Rising, RSS Feeds,
+News APIs, and Keyword APIs (all deterministic placeholders today, live API
+wiring is a per-file swap). The registry **auto-discovers** providers — adding
+a source means dropping a single module into the package. No registration code.
+
+### Universal Trend Model (`services/trends/models.py`)
+
+Every provider normalizes into one `Trend` dataclass: topic, keywords,
+growth %, search volume, velocity, competition, freshness, category, country,
+language, platform, source, timestamp, and confidence. Downstream systems
+consume only this model.
+
+### Opportunity Scoring (`services/trends/scorer.py`)
+
+Every trend receives a 0-100 **Opportunity Score** blended from eleven factors:
+search demand, growth velocity, competition, historical performance, content
+difficulty, monetization potential, virality potential, evergreen potential,
+freshness, audience size, and international potential. Factor weights are data,
+ready for the future Learning Engine to tune.
+
+### Pipeline integration
+
+Two new stages open the intelligence pipeline — `trend_discovery` and
+`opportunity_ranking` — so the flow is now:
+
+```
+Trend Discovery → Opportunity Ranking → Research → Ideation → Psychology
+    → Ranking → Script → Critic → Revision → Citation → SEO → Quality Gate
+```
+
+Only the top 5 opportunities move forward; their keywords feed the ideation
+prompt so generated concepts ride real trend signals.
+
+### Trend Dashboard
+
+The Ideas tab now shows a compact Trend Discovery panel (no redesign): top
+opportunity score, average growth, velocity, trending countries / platforms /
+languages, discovery timestamp, and a ranked list of the top opportunities.
+
 ## Version 6.0 — Real Research + Citation Engine
 
 v6.0 turns Generational into a **source-backed research system** for autonomous
@@ -398,14 +446,17 @@ generational/
 │   ├── wikipedia.py, pubmed.py, arxiv.py, crossref.py  # Research sources
 │   ├── news.py, trends.py, youtube.py, reddit.py
 │   ├── research_source.py    # Unified search() interface
+│   ├── trend_sources/        # Trend providers (auto-discovered registry)
 │   ├── llm.py, voice/, image_provider.py, video_provider.py, music_provider.py
 │   └── publishing_provider.py, analytics_provider.py, trend_provider.py
 ├── engines/                  # Engine plugins (intelligence + production)
-│   ├── research … quality.py # Intelligence pipeline (9 live)
+│   ├── trend_discovery.py, opportunity_ranking.py  # v7.0 front door
+│   ├── research … quality.py # Intelligence pipeline (12 live)
 │   ├── scene_planning … publishing_queue.py  # Media production (8 live)
 │   └── voice|image|video|publishing|analytics|learning.py  # future render stubs
 ├── services/
 │   ├── research/             # Knowledge Engine (manager, cache, scorer, summarizer)
+│   ├── trends/               # Trend Discovery (models, scorer, manager)
 │   ├── ideation.py           # Intelligence pipeline orchestrator
 │   ├── production.py         # Media production orchestrator
 │   ├── assets.py             # Asset Manager + Publishing Queue
@@ -425,7 +476,7 @@ generational/
 
 ## Roadmap
 
-- 🌐 Live API integrations for research providers (Wikipedia, PubMed, arXiv APIs)
+- 📡 Live trend APIs (Google Trends, YouTube Data, TikTok, Reddit) behind the trend provider interface
 - 🎬 Video/image generation from visual prompts (providers wired, engines stubbed)
 - 🎙️ Real TTS providers (ElevenLabs, OpenAI) behind VoiceProvider
 - 🧬 Voice cloning provider

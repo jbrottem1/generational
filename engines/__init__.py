@@ -17,6 +17,7 @@ from engines.ideation import IdeationEngine
 from engines.image import ImageEngine
 from engines.learning import LearningEngine
 from engines.narration import NarrationEngine
+from engines.opportunity_ranking import OpportunityRankingEngine
 from engines.psychology import PsychologyEngine
 from engines.publishing import PublishingEngine
 from engines.publishing_queue import PublishingQueueEngine
@@ -30,6 +31,7 @@ from engines.script import ScriptEngine
 from engines.seo import SeoEngine
 from engines.subtitle import SubtitleEngine
 from engines.timeline import TimelineEngine
+from engines.trend_discovery import TrendDiscoveryEngine
 from engines.video import VideoEngine
 from engines.visual_planning import VisualPlanningEngine
 from engines.voice import VoiceEngine
@@ -37,6 +39,8 @@ from engines.voice import VoiceEngine
 __all__ = ["Engine", "PlannedEngine", "registry"]
 
 for _engine_class in (
+    TrendDiscoveryEngine,
+    OpportunityRankingEngine,
     ResearchEngine,
     IdeationEngine,
     PsychologyEngine,

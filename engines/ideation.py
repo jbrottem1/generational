@@ -74,7 +74,8 @@ class IdeationEngine(Engine):
             f'Command: "{command}"\nNiche: "{niche}"\nSubject: "{subject}"\n'
             f"Research summary: {context.get('research', {}).get('summary', 'n/a')}\n"
             f"Research brief facts: {context.get('research', {}).get('important_facts', [])}\n"
-            f"Key statistics: {context.get('research', {}).get('statistics', [])}\n\n"
+            f"Key statistics: {context.get('research', {}).get('statistics', [])}\n"
+            f"Trending keywords (from trend discovery): {context.get('trend_keywords', [])}\n\n"
             f"Generate exactly {count} distinct candidate video concepts grounded in the research brief above. "
             f"Respond with JSON:\n"
             '{"candidates": [{"title": "catchy title", "hook": "1-2 sentence opening hook",'
