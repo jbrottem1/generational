@@ -60,6 +60,17 @@ def idea_card(index: int, idea: dict) -> None:
             pcols[2].metric("Assets", production.get("assets", 0))
             pcols[3].metric("Queue", production.get("queue_status", "—"))
 
+        refs = idea.get("references")
+        if refs:
+            with st.expander("📎 Research References"):
+                for src in refs.get("sources", []):
+                    st.markdown(f"- **{src.get('title', 'Source')}** ({src.get('provider', '')}) — {src.get('url', '')}")
+                facts = refs.get("facts_used", [])
+                if facts:
+                    st.caption("Facts used:")
+                    for fact in facts:
+                        st.markdown(f"  · {fact}")
+
 
 def production_dashboard(stages: list) -> None:
     """Compact production progress panel — intelligence + media stages."""

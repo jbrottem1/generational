@@ -2,7 +2,7 @@
 
 import streamlit as st
 
-from core.constants import DEFAULT_MODEL, DEFAULT_PUBLISH_THRESHOLD
+from core.constants import DEFAULT_MODEL, DEFAULT_PUBLISH_THRESHOLD, DEFAULT_RESEARCH_SETTINGS
 
 DEFAULTS = {
     "command_text": "",
@@ -16,6 +16,10 @@ DEFAULTS = {
     "publish_threshold": DEFAULT_PUBLISH_THRESHOLD,
     "voice_mode": "ai",
     "voice_style": "documentary",
+    "research_enabled_providers": list(DEFAULT_RESEARCH_SETTINGS["enabled_providers"]),
+    "research_cache_hours": DEFAULT_RESEARCH_SETTINGS["cache_ttl_hours"],
+    "research_max_sources": DEFAULT_RESEARCH_SETTINGS["max_sources"],
+    "research_min_confidence": DEFAULT_RESEARCH_SETTINGS["min_confidence"],
 }
 
 

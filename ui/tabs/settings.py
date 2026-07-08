@@ -50,6 +50,42 @@ def render() -> None:
     st.caption(f"{len(profiles)} custom voice profile(s) saved · recordings stored under data/voice_recordings/")
 
     st.divider()
+    st.markdown("### 🔬 Research")
+    from core.constants import RESEARCH_PROVIDER_LABELS, RESEARCH_PROVIDERS
+
+    st.multiselect(
+        "Enabled research providers",
+        options=RESEARCH_PROVIDERS,
+        format_func=lambda key: RESEARCH_PROVIDER_LABELS.get(key, key),
+        key="research_enabled_providers",
+        help="Query every enabled provider when Run Command is pressed. UI never shows which provider supplied data.",
+    )
+    st.slider(
+        "Cache expiration (hours)",
+        min_value=1,
+        max_value=168,
+        step=1,
+        key="research_cache_hours",
+        help="Reuse cached research for the same topic within this window.",
+    )
+    st.slider(
+        "Maximum sources",
+        min_value=5,
+        max_value=50,
+        step=5,
+        key="research_max_sources",
+        help="Cap the number of research documents after scoring.",
+    )
+    st.slider(
+        "Minimum confidence threshold",
+        min_value=0.0,
+        max_value=0.9,
+        step=0.05,
+        key="research_min_confidence",
+        help="Sources below this score are removed automatically.",
+    )
+
+    st.divider()
     st.markdown("### 🎯 Quality Gate")
     st.slider(
         "Minimum publish score",

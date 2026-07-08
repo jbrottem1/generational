@@ -24,6 +24,8 @@ def run_command(
     threshold: int = DEFAULT_PUBLISH_THRESHOLD,
     voice_mode: str = "ai",
     voice_profile_id: str = "",
+    research_settings: "dict | None" = None,
+    project_name: str | None = None,
 ) -> dict:
     """Run the intelligence pipeline for a command.
 
@@ -38,7 +40,14 @@ def run_command(
         WORKFLOW_JOB_TYPE,
         {
             "workflow": "intelligence",
-            "context": {"command": command, "count": count, "model": model, "threshold": threshold},
+            "context": {
+                "command": command,
+                "count": count,
+                "model": model,
+                "threshold": threshold,
+                "research_settings": research_settings,
+                "project_name": project_name,
+            },
         },
     )
     job = queue.run(job.id)
@@ -60,6 +69,8 @@ def run_command(
         model=model,
     )
     result["research"] = context.get("research", {})
+    if context.get("research_bundle"):
+        result["research_bundle"] = context["research_bundle"]
     result["quality_summary"] = context.get("quality_summary", {})
     result["pipeline_steps"] = job.result["run"]["steps"]
     result["tokens_used"] = context.get("tokens_used", 0)
@@ -84,12 +95,26 @@ def run_command(
 
 
 def _record_knowledge(result: dict, context: dict) -> None:
-    """Feed final assets into the Knowledge Base for the future learning engine."""
+    """Feed final assets and research into the Knowledge Base."""
     from services.knowledge import CATEGORY, get_knowledge_base
 
     kb = get_knowledge_base()
     source = "demo" if result["demo_mode"] else "openai"
     try:
+        research = result.get("research", {})
+        if research:
+            kb.add_entry(
+                CATEGORY.RESEARCH,
+                {
+                    "command": result["command"],
+                    "subject": context.get("subject", ""),
+                    "summary": research.get("executive_summary") or research.get("summary", ""),
+                    "source_count": research.get("source_count", 0),
+                    "providers_used": research.get("providers_used", []),
+                    "important_facts": research.get("important_facts", []),
+                },
+                {"niche": result["niche"], "source": source},
+            )
         for idea in result["ideas"]:
             metadata = {
                 "niche": result["niche"],

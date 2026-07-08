@@ -27,6 +27,9 @@ def test_research_builds_full_brief():
     for field in ("topic_context", "audience", "search_intent", "trend_strength", "summary", "opportunity_score"):
         assert research.get(field) not in (None, "")
     assert 0 <= research["trend_strength"] <= 100
+    assert research.get("source_count", 0) >= 0
+    assert "important_facts" in research
+    assert updates.get("research_references")
 
 
 def test_ideation_produces_20_candidates():
@@ -62,6 +65,13 @@ def test_scripts_generated_only_for_selected():
     assert all(idea.get("script") for idea in context["selected_ideas"])
     unselected = [c for c in context["ranked_candidates"] if c not in context["selected_ideas"]]
     assert all("script" not in c for c in unselected)
+
+
+def test_scripts_have_research_references():
+    context = _run_pipeline()
+    for idea in context["selected_ideas"]:
+        assert idea.get("references")
+        assert idea["references"].get("sources") is not None
 
 
 def test_critic_flags_known_weaknesses():

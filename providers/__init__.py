@@ -15,6 +15,7 @@ from providers.music_provider import MusicProvider
 from providers.publishing_provider import PublishingProvider
 from providers.research_provider import ResearchProvider
 from providers.seo_provider import SEOProvider
+from providers.research_source import ResearchSourceProvider
 from providers.trend_provider import TrendProvider
 from providers.video_provider import VideoProvider
 from providers.voice.base import VoiceMode, VoiceProvider
@@ -27,6 +28,39 @@ _DEFAULT_RECORDINGS = os.path.join(
 
 _ai_voice = DemoAIVoiceProvider()
 _recorded_voice = RecordedVoiceProvider(_DEFAULT_RECORDINGS)
+_research_sources: "list[ResearchSourceProvider] | None" = None
+
+
+def _load_research_sources() -> list[ResearchSourceProvider]:
+    from providers.arxiv import ArxivProvider
+    from providers.crossref import CrossrefProvider
+    from providers.news import NewsProvider
+    from providers.pubmed import PubMedProvider
+    from providers.reddit import RedditProvider
+    from providers.trends import TrendsProvider
+    from providers.wikipedia import WikipediaProvider
+    from providers.youtube import YouTubeProvider
+
+    return [
+        WikipediaProvider(),
+        PubMedProvider(),
+        ArxivProvider(),
+        CrossrefProvider(),
+        NewsProvider(),
+        TrendsProvider(),
+        YouTubeProvider(),
+        RedditProvider(),
+    ]
+
+
+def get_research_source_providers(enabled: "list[str] | None" = None) -> list[ResearchSourceProvider]:
+    """Return enabled research source providers. Drop a file in providers/ and register here."""
+    global _research_sources
+    if _research_sources is None:
+        _research_sources = _load_research_sources()
+    if enabled is None:
+        return [p for p in _research_sources if p.is_available()]
+    return [p for p in _research_sources if p.key in enabled and p.is_available()]
 
 
 def get_llm_provider() -> LLMProvider:
@@ -56,6 +90,8 @@ __all__ = [
     "PublishingProvider",
     "AnalyticsProvider",
     "TrendProvider",
+    "ResearchSourceProvider",
     "get_llm_provider",
     "get_voice_provider",
+    "get_research_source_providers",
 ]

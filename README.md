@@ -4,6 +4,73 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 5.0 — Knowledge Engine & Research Platform
+
+v5.0 transforms Generational from an AI content generator into a **research-first
+content platform**. Every video now begins with multi-source research — ideas are
+grounded in vetted documents, not model imagination alone.
+
+### Research flow
+
+```
+Run Command
+    │
+    ▼
+Parse Intent (topic, niche, audience, intent, educational vs entertainment)
+    │
+    ▼
+Query Enabled Providers (Wikipedia, PubMed, arXiv, Crossref, News, Trends, YouTube, Reddit)
+    │
+    ▼
+Normalize → Score → Filter weak sources
+    │
+    ▼
+Generate Research Summary (facts, stats, myths, trends, takeaways)
+    │
+    ▼
+Intelligence Pipeline (ideas grounded in research)
+    │
+    ▼
+Media Production Pipeline (for publish-ready scripts)
+```
+
+### Knowledge Engine (`services/research/`)
+
+| Module | Role |
+|---|---|
+| `manager.py` | Orchestrates the full research flow |
+| `models.py` | `ResearchDocument`, `ResearchIntent`, `ResearchSummary`, `ResearchSettings` |
+| `cache.py` | Topic-level cache with TTL — reuse research, refresh stale sources |
+| `scorer.py` | Authority, freshness, popularity, scientific reliability, citations, relevance |
+| `summarizer.py` | Executive summary, facts, stats, contrarian ideas, myths, Q&A, trends |
+
+### Research source providers (`providers/`)
+
+Every provider exposes the same interface: `search(topic) → list[ResearchDocument]`.
+
+The UI never knows which provider supplied the data. Adding a provider = drop a
+new file in `providers/` and register it in the factory.
+
+Demo providers return deterministic synthetic data today; swap internals for real
+API calls without changing pipeline logic.
+
+### Traceability
+
+Every generated script stores `references`: sources used, facts cited, and URLs
+for future publishing attribution.
+
+### Settings → Research
+
+- Enable/disable individual providers
+- Cache expiration (hours)
+- Maximum sources
+- Minimum confidence threshold
+
+### Fail-safe
+
+If every provider fails, the system falls back to the heuristic demo pipeline —
+never crashes.
+
 ## Version 4.0 — Autonomous Media Production Engine
 
 v4.0 adds a **Media Production Pipeline** that runs automatically after the
@@ -45,7 +112,7 @@ LLM, Research, SEO, Voice, Image, Video, Music, Publishing, Analytics, Trend.
 v2.0 replaces single-shot generation with a 9-stage AI reasoning pipeline.
 Every command now flows through:
 
-1. **Research** — topic context, audience, search intent, trend strength, research summary
+1. **Research** — Knowledge Engine gathers multi-source documents, scores them, and produces a structured research summary
 2. **Ideation** — 20 candidate concepts (title + hook + angle)
 3. **Psychology** — every candidate scored for curiosity, emotional impact, surprise, authority, retention potential, and shareability
 4. **Ranking** — weighted scoring; only the top concepts advance
@@ -109,6 +176,7 @@ Session-level placeholder metrics and a roadmap for the full Analytics Dashboard
 - Choose the OpenAI model (`gpt-4o-mini`, `gpt-4o`, `gpt-3.5-turbo`)
 - **Quality Gate** — minimum publish score threshold
 - **Voice** — narration mode (AI / Recorded / Clone) and default voice style
+- **Research** — enable/disable providers, cache TTL, max sources, confidence threshold
 - System diagnostics across all services
 - Reset session stats
 
@@ -155,20 +223,36 @@ streamlit run app.py
 
 ## Architecture
 
-Generational v4.0 is an autonomous content operating system. The Streamlit UI
+Generational v5.0 is an autonomous content operating system. The Streamlit UI
 is a thin shell over five layers:
 
 ```
         UI (Streamlit tabs + sidebar)
                     │
-        services/  (ideation, production, assets, voice profiles, channels, knowledge)
+        services/  (research, ideation, production, assets, voice profiles, channels, knowledge)
                     │
    Job Queue ──► Workflow Manager ──► Engine Registry (17 live plugins)
                     │
-        providers/ (LLM, Voice, Image, Video, Music, Publishing, Analytics, Trend)
+        providers/ (research sources, LLM, Voice, Image, Video, Music, Publishing, Analytics, Trend)
                     │
         core/  (models, storage, logging, diagnostics, production_models)
 ```
+
+### Knowledge Engine (`services/research/`)
+Runs as stage 1 of every command. Parses intent, queries all enabled research
+providers, normalizes results into `ResearchDocument` objects, scores and
+filters weak sources, generates a structured summary, caches by topic, and
+stores research in project Knowledge folders. Downstream ideation uses facts
+from the summary — not raw model imagination.
+
+### How to add a research provider
+
+1. Create `providers/my_source.py` implementing `ResearchSourceProvider.search(topic)`
+2. Return `list[ResearchDocument]` with normalized fields
+3. Register in `providers/__init__.py` → `_load_research_sources()`
+4. Add the key to `RESEARCH_PROVIDERS` in `core/constants.py`
+
+No pipeline or UI changes required.
 
 ### Media Production Pipeline (`services/production.py`)
 Runs **after** intelligence completes. Only `publishable` scripts enter the
@@ -265,15 +349,17 @@ generational/
 │   ├── ai/                   # LLM provider (implements providers/llm interface)
 │   └── storage/              # Storage abstraction
 ├── providers/                # Swappable provider interfaces
-│   ├── llm.py, research_provider.py, seo_provider.py
-│   ├── voice/                # AI, recorded, clone voice providers
-│   ├── image_provider.py, video_provider.py, music_provider.py
+│   ├── wikipedia.py, pubmed.py, arxiv.py, crossref.py  # Research sources
+│   ├── news.py, trends.py, youtube.py, reddit.py
+│   ├── research_source.py    # Unified search() interface
+│   ├── llm.py, voice/, image_provider.py, video_provider.py, music_provider.py
 │   └── publishing_provider.py, analytics_provider.py, trend_provider.py
 ├── engines/                  # Engine plugins (intelligence + production)
 │   ├── research … quality.py # Intelligence pipeline (9 live)
 │   ├── scene_planning … publishing_queue.py  # Media production (8 live)
 │   └── voice|image|video|publishing|analytics|learning.py  # future render stubs
 ├── services/
+│   ├── research/             # Knowledge Engine (manager, cache, scorer, summarizer)
 │   ├── ideation.py           # Intelligence pipeline orchestrator
 │   ├── production.py         # Media production orchestrator
 │   ├── assets.py             # Asset Manager + Publishing Queue
@@ -287,13 +373,15 @@ generational/
     ├── projects/, channels/, knowledge/, logs/
     ├── assets/               # Asset registry index
     ├── voice_profiles/, voice_recordings/
+    ├── research_cache/       # Topic-level research cache
     └── publishing_queue/     # Queued render packages
 ```
 
 ## Roadmap
 
+- 🌐 Live API integrations for research providers (Wikipedia, PubMed, arXiv APIs)
 - 🎬 Video/image generation from visual prompts (providers wired, engines stubbed)
 - 🎙️ Real TTS providers (ElevenLabs, OpenAI) behind VoiceProvider
 - 🧬 Voice cloning provider
 - 📤 Auto Posting from publishing queue
-- 📊 Full Analytics Dashboard + Learning loop
+- 📊 Full Analytics Dashboard + Learning loop (mines Knowledge Base + research)

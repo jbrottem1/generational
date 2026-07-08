@@ -72,8 +72,10 @@ class IdeationEngine(Engine):
         )
         user = (
             f'Command: "{command}"\nNiche: "{niche}"\nSubject: "{subject}"\n'
-            f"Research summary: {context.get('research', {}).get('summary', 'n/a')}\n\n"
-            f"Generate exactly {count} distinct candidate video concepts. Respond with JSON:\n"
+            f"Research summary: {context.get('research', {}).get('summary', 'n/a')}\n"
+            f"Key facts: {context.get('research', {}).get('important_facts', [])}\n\n"
+            f"Generate exactly {count} distinct candidate video concepts grounded in the research above. "
+            f"Respond with JSON:\n"
             '{"candidates": [{"title": "catchy title", "hook": "1-2 sentence opening hook",'
             ' "angle": "the angle archetype in 2-4 words"}]}'
         )

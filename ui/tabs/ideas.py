@@ -66,13 +66,20 @@ def _handle_run(command: str) -> None:
         st.warning("Please enter a command before running it.")
         return
 
-    with st.spinner("🧠 Intelligence pipeline → 🎬 Media production for approved scripts..."):
+    with st.spinner("🔬 Knowledge Engine → 🧠 Intelligence pipeline → 🎬 Media production..."):
         result = ideation.run_command(
             command,
             count=IDEAS_PER_BATCH,
             model=st.session_state.selected_model,
             threshold=st.session_state.publish_threshold,
             voice_mode=st.session_state.voice_mode,
+            research_settings={
+                "enabled_providers": st.session_state.research_enabled_providers,
+                "cache_ttl_hours": st.session_state.research_cache_hours,
+                "max_sources": st.session_state.research_max_sources,
+                "min_confidence": st.session_state.research_min_confidence,
+            },
+            project_name=st.session_state.current_project_name,
         )
 
     error = result.pop("error", None)
@@ -115,6 +122,19 @@ def _render_breakdown(result: dict) -> None:
         cols[2].metric("Trend Strength", f"{research.get('trend_strength', '—')}/100")
         if research.get("summary"):
             st.info(f"**🔍 Research Summary:** {research['summary']}")
+        source_count = research.get("source_count", 0)
+        if source_count:
+            providers = research.get("providers_used", [])
+            st.caption(
+                f"📚 {source_count} vetted source(s)"
+                + (f" · cached" if research.get("cached") else "")
+                + (f" · {len(providers)} provider(s)" if providers else "")
+            )
+        facts = research.get("important_facts", [])
+        if facts:
+            with st.expander("📊 Key Research Facts"):
+                for fact in facts[:5]:
+                    st.markdown(f"- {fact}")
 
     st.info(f"**Content Goal:** {result['goal']}")
 

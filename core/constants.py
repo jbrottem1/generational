@@ -1,6 +1,6 @@
 """Shared constants for Generational."""
 
-APP_VERSION = "4.0.0"
+APP_VERSION = "5.0.0"
 
 MODEL_OPTIONS = ["gpt-4o-mini", "gpt-4o", "gpt-3.5-turbo"]
 DEFAULT_MODEL = "gpt-4o-mini"
@@ -8,6 +8,35 @@ DEFAULT_MODEL = "gpt-4o-mini"
 IDEAS_PER_BATCH = 10
 CANDIDATE_IDEAS = 20  # candidates generated before ranking selects the best
 DEFAULT_PUBLISH_THRESHOLD = 70
+
+RESEARCH_PROVIDERS = [
+    "wikipedia",
+    "pubmed",
+    "arxiv",
+    "crossref",
+    "news",
+    "trends",
+    "youtube",
+    "reddit",
+]
+
+RESEARCH_PROVIDER_LABELS = {
+    "wikipedia": "Wikipedia",
+    "pubmed": "PubMed",
+    "arxiv": "arXiv",
+    "crossref": "Crossref",
+    "news": "News",
+    "trends": "Trends",
+    "youtube": "YouTube",
+    "reddit": "Reddit",
+}
+
+DEFAULT_RESEARCH_SETTINGS = {
+    "enabled_providers": list(RESEARCH_PROVIDERS),
+    "cache_ttl_hours": 24,
+    "max_sources": 20,
+    "min_confidence": 0.4,
+}
 
 NICHE_KEYWORDS = {
     "Psychology": ["psychology", "psychological", "mindset", "mind", "behavior"],

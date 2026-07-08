@@ -30,6 +30,9 @@ class ScriptEngine(Engine):
         for idea, script_data in zip(selected, scripts):
             idea["script"] = script_data["script"]
             idea["cta"] = script_data.get("cta", "Follow for more like this!")
+            refs = context.get("research_references")
+            if refs:
+                idea["references"] = refs
 
         log_event(logger, "script.generated", scripts=len(selected))
         return {"selected_ideas": selected}
@@ -64,13 +67,19 @@ class ScriptEngine(Engine):
     def _heuristic_script(self, context: dict, idea: dict) -> dict:
         subject = context.get("subject", "this topic")
         niche = context.get("niche", "this niche")
-        return {
+        facts = context.get("research", {}).get("important_facts", [])
+        fact_line = facts[0] if facts else f"Research in {niche.lower()} points to one specific driver."
+        script = {
             "script": (
                 f"{idea['hook']} "
                 f"Here's what most people miss: {subject} isn't what it looks like on the surface. "
-                f"Research in {niche.lower()} points to one specific driver — and once you see it, "
-                f"you can't unsee it. The practical takeaway for you: change one small input and "
+                f"{fact_line} "
+                f"The practical takeaway for you: change one small input and "
                 f"the whole pattern shifts. Watch what happens when you apply this for just one week."
             ),
             "cta": "Follow for more — tomorrow's video goes deeper.",
         }
+        refs = context.get("research_references")
+        if refs:
+            idea["references"] = refs
+        return script
