@@ -4,6 +4,16 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 1.1 — Autonomous OS Foundation
+
+v1.1 keeps the interface identical but rebuilds the internals for scale: a
+central **job queue**, a **plugin engine registry** (9 pipeline engines
+registered, ideation live), a **workflow engine** that executes configurable
+pipelines, a **channel manager** for multiple brands/accounts, a
+**knowledge base** that remembers every hook/title/script generated,
+**structured logging + diagnostics**, and a **unit-test suite** covering
+every core service. See [Architecture](#architecture).
+
 ## Version 1.0 — AI Command Center
 
 v1.0 upgrades the original idea generator into a full AI Command Center workspace:
@@ -82,33 +92,86 @@ streamlit run app.py
 
 ## Architecture
 
-Generational is built in three layers so it can grow into a multi-account
-autonomous content operating system without rewrites:
+Generational v1.1 is the foundation of an autonomous, multi-account content
+operating system. The Streamlit UI is a thin shell over four layers:
 
-- **`core/`** — foundations: config, data models, logging, and swappable
-  abstractions for AI providers and storage backends.
-- **`services/`** — pipeline stages. Ideation is live today; research, SEO,
-  voice, video, publishing, analytics, and self-improvement each get their
-  own service module here and register in the pipeline stage registry.
-- **`ui/`** — Streamlit presentation only. Tabs render state and call
-  services; reusable pieces live in `ui/components.py`.
+```
+        UI (Streamlit tabs + sidebar)
+                    │
+        services/  (ideation, channels, knowledge, pipeline views)
+                    │
+   Job Queue ──► Workflow Engine ──► Engine Registry (plugins)
+                    │
+        core/  (AI providers, storage, models, logging, diagnostics)
+```
 
-Key extension points:
+### Job Queue (`core/jobs.py`)
+Every unit of work is a Job with a type, payload, status, and timing.
+Handlers are registered per job type. Execution is synchronous today
+(Streamlit's model), but callers only depend on submit/run semantics — a
+background worker can drain the queue later with zero caller changes.
+Running a command in the Ideas tab already flows through the queue.
 
+### Engine plugins (`engines/`)
+Each pipeline capability is an Engine plugin registered in
+`engines/registry.py`: **Ideation** (live) plus **Research, SEO, Script,
+Voice, Image, Video, Publishing, Analytics, and Learning** (registered as
+planned stubs). An engine receives the shared workflow context and returns
+updates to it. Implementing a stage = overriding `run()` and `is_ready()`
+in its module; workflows, diagnostics, and the pipeline UI pick it up
+automatically.
+
+### Workflow Engine (`core/workflows.py`)
+Pipelines are data, not code: a workflow is an ordered list of engine keys
+(see `WORKFLOWS`, e.g. `full_content`). The engine executes each step,
+merges outputs into the context, skips engines that aren't ready, and
+records per-step status/duration. Workflows run as jobs via the queue.
+
+### Channel Manager (`services/channels.py`)
+Multi-brand/account support: each channel stores its name, niche, brand
+voice, platform targets, posting schedule, API credentials, status
+(active/paused/archived), and performance metrics. Persisted under
+`data/channels/`. Backend-only for now — a Channels UI comes later.
+
+### Knowledge Base (`services/knowledge.py`)
+The system's memory: winning hooks, titles, scripts, thumbnail concepts,
+SEO keywords, publishing history, and performance data, stored per category
+under `data/knowledge/`. The ideation engine writes every generation into
+it (tagged with its source); the future Learning engine will mine it to
+improve prompts and strategy.
+
+### Logging & diagnostics
+All services log structured `event | key=value` lines (console +
+`data/logs/generational.log`) via `core/log.py`. `core/diagnostics.py` runs
+health checks across the AI provider, storage, engines, job queue, channels,
+and knowledge base — visible in **Settings → System Diagnostics**.
+
+### Other extension points
 - **New AI provider** (e.g. Anthropic, local models): implement
   `core/ai/base.py`'s `AIProvider` and register it in `core/ai/__init__.py`.
 - **New storage backend** (e.g. SQLite, Postgres): implement
-  `core/storage/base.py`'s `ProjectStore` and swap it in
-  `core/storage/__init__.py`.
-- **New pipeline stage**: add a module under `services/` and flip the stage
-  to available in `services/pipeline.py`.
+  `core/storage/base.py`'s `ProjectStore` (projects) or mirror
+  `core/storage/json_collection.py` (named records) and swap it in.
+
+## Testing
+
+Every core service has unit tests under `tests/`:
+
+```bash
+pip install -r requirements-dev.txt
+python -m pytest
+```
+
+Tests run against isolated temp directories and never touch your `data/`
+folder.
 
 ## Project Structure
 
 ```
 generational/
 ├── app.py                    # Main entry point — wires sidebar + tabs together
-├── requirements.txt          # Python dependencies
+├── requirements.txt          # Runtime dependencies
+├── requirements-dev.txt      # Dev dependencies (pytest)
 ├── .env.example              # Template for your OpenAI API key
 ├── .streamlit/
 │   └── config.toml           # Dark theme configuration
@@ -117,7 +180,10 @@ generational/
 │   ├── models.py             # Canonical result/project data shapes
 │   ├── parsing.py            # Command parsing (niche/count/subject detection)
 │   ├── state.py              # Streamlit session state helpers
-│   ├── log.py                # Central logging (console + data/logs/)
+│   ├── log.py                # Structured logging (console + data/logs/)
+│   ├── diagnostics.py        # Health checks across all services
+│   ├── jobs.py               # Central job queue (async task management)
+│   ├── workflows.py          # Workflow engine (configurable pipelines)
 │   ├── ai/                   # AI provider abstraction
 │   │   ├── base.py           # AIProvider interface
 │   │   ├── openai_provider.py# OpenAI backend (falls back gracefully)
@@ -125,26 +191,33 @@ generational/
 │   │   └── __init__.py       # Provider selection (get_provider)
 │   └── storage/              # Storage abstraction
 │       ├── base.py           # ProjectStore interface
-│       ├── json_store.py     # Local JSON backend
+│       ├── json_store.py     # Local JSON project backend
+│       ├── json_collection.py# Generic named-record JSON store
 │       └── __init__.py       # Storage facade (get_store + helpers)
-├── services/                 # Pipeline stages (business orchestration)
-│   ├── ideation.py           # Command → parsed intent → generated content
-│   └── pipeline.py           # Stage registry (research, SEO, voice, video, ...)
+├── engines/                  # Engine plugins (one per pipeline capability)
+│   ├── base.py               # Engine / PlannedEngine interfaces
+│   ├── registry.py           # Engine registry (register / get / ready)
+│   ├── ideation.py           # LIVE: command → content batch → knowledge base
+│   └── research|seo|script|voice|image|video|publishing|analytics|learning.py
+├── services/                 # Business services
+│   ├── ideation.py           # Public ideation API (job queue → workflow → engine)
+│   ├── pipeline.py           # Pipeline stage views for the UI (from registry)
+│   ├── channels.py           # Channel Manager (multi-brand/account)
+│   └── knowledge.py          # Knowledge Base (hooks, titles, scripts, SEO, ...)
 ├── ui/                       # Presentation layer (Streamlit only)
 │   ├── styles.py             # CSS injection (dark theme, cards, animations)
 │   ├── notify.py             # Success/error toast helpers
 │   ├── components.py         # Reusable components (idea card, pipeline flow, ...)
 │   ├── sidebar.py            # AI Command Center sidebar
 │   └── tabs/                 # One module per workspace tab
-│       ├── ideas.py          # Ideas tab (command center)
-│       ├── scripts.py        # Scripts tab
-│       ├── projects.py       # Projects tab (create/save/open/delete)
-│       ├── publishing.py     # Publishing tab
-│       ├── analytics.py      # Analytics tab
-│       └── settings.py       # Settings tab
-└── data/
-    ├── projects/             # Saved projects (JSON, gitignored)
-    └── logs/                 # Runtime logs (gitignored)
+│       ├── ideas.py, scripts.py, projects.py
+│       └── publishing.py, analytics.py, settings.py
+├── tests/                    # Unit tests for every core service
+└── data/                     # Local persistence (gitignored)
+    ├── projects/             # Saved projects
+    ├── channels/             # Channel configurations
+    ├── knowledge/            # Knowledge base categories
+    └── logs/                 # Runtime logs
 ```
 
 ## Roadmap

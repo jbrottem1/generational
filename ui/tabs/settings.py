@@ -8,6 +8,7 @@ import streamlit as st
 
 from core import state, storage
 from core.constants import APP_VERSION, MODEL_OPTIONS
+from core.diagnostics import run_diagnostics
 
 
 def render() -> None:
@@ -37,6 +38,13 @@ def render() -> None:
     st.markdown("### ℹ️ App Info")
     st.write(f"**Version:** v{APP_VERSION}")
     st.write(f"**Projects saved:** {storage.project_count()}")
+
+    st.divider()
+    st.markdown("### 🩺 System Diagnostics")
+    with st.expander("Run health checks across all services"):
+        icons = {"ok": "🟢", "warn": "🟡", "error": "🔴"}
+        for check in run_diagnostics():
+            st.markdown(f"{icons[check['status']]} **{check['name']}** — {check['detail']}")
 
     st.divider()
     if st.button("🔄 Reset Session Stats"):

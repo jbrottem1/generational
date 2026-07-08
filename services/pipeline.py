@@ -1,37 +1,20 @@
-"""Content pipeline stage registry.
+"""Pipeline stage views derived from the engine registry.
 
-Single source of truth for the stages a piece of content moves through on
-its way from idea to published video. Each future stage (research, SEO,
-voice, video, publishing, analytics, self-improvement) gets implemented as
-its own service module and flipped to available here — the UI and any
-orchestration code read from this registry rather than hardcoding stages.
+The UI's "next steps" flow reads live engine metadata (icon, label,
+readiness) from the registry, so it stays accurate as engines are
+implemented — no hardcoded stage lists.
 """
 
 from __future__ import annotations
 
+from engines import registry
 
-class Stage:
-    def __init__(self, key: str, icon: str, label: str, available: bool = False) -> None:
-        self.key = key
-        self.icon = icon
-        self.label = label
-        self.available = available
-
-
-STAGES = [
-    Stage("ideation", "💡", "Ideation", available=True),
-    Stage("research", "🔍", "Research"),
-    Stage("seo", "🔑", "SEO"),
-    Stage("script", "📝", "Script"),
-    Stage("voice", "🎙️", "Voice"),
-    Stage("visuals", "🎨", "Visuals"),
-    Stage("edit", "✂️", "Edit"),
-    Stage("publish", "📤", "Publish"),
-    Stage("analytics", "📊", "Analytics"),
-    Stage("self_improvement", "🧠", "Self-Improve"),
-]
+# The stages shown after ideation, in production order. Analytics and
+# learning run continuously rather than per-video, so they're not shown
+# as "next steps".
+NEXT_STEP_KEYS = ["research", "seo", "script", "voice", "image", "video", "publishing"]
 
 
 def next_stages() -> list:
-    """The stages shown as 'next steps' after ideation, in order."""
-    return [stage for stage in STAGES if stage.key not in ("ideation", "analytics", "self_improvement")]
+    """Engine objects (with .icon/.label) for the post-ideation flow."""
+    return [engine for engine in (registry.get_engine(key) for key in NEXT_STEP_KEYS) if engine]
