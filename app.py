@@ -1,66 +1,58 @@
 """
-Generational - The AI Content Operating System
+Generational — AI Content Operating System (v1.0)
 
-MVP Streamlit application. Lets a user pick a content category and a topic,
-then generates placeholder content ideas. Real AI-powered generation and the
-features listed under "Coming Soon" will be wired up in future iterations.
+Main Streamlit entry point. Wires together the sidebar (AI Command Center
+status) and the six workspace tabs: Ideas, Scripts, Projects, Publishing,
+Analytics, and Settings. All actual logic lives in the modular `core/` and
+`ui/` packages — this file only orchestrates them.
 """
 
-import os
-
-import streamlit as st
 from dotenv import load_dotenv
 
 load_dotenv()
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-CATEGORIES = [
-    "Psychology",
-    "AI & Future Tech",
-    "History",
-    "Space",
-    "Finance",
-    "Health",
-]
+import streamlit as st
 
-COMING_SOON_FEATURES = [
-    ("✍️", "AI Script Writer"),
-    ("🎙️", "AI Voice Generation"),
-    ("🎬", "AI Video Creation"),
-    ("🔍", "SEO Optimizer"),
-    ("📤", "Auto Posting"),
-    ("📊", "Analytics Dashboard"),
-]
+from core.constants import APP_VERSION
+from core.state import init_session_state
+from ui import sidebar, styles
+from ui import tab_analytics, tab_ideas, tab_projects, tab_publishing, tab_scripts, tab_settings
 
 st.set_page_config(
     page_title="Generational | AI Content Operating System",
     page_icon="🚀",
-    layout="centered",
+    layout="wide",
 )
 
+init_session_state()
+styles.inject()
+
 st.title("🚀 Generational")
-st.subheader("The AI Content Operating System")
+st.subheader("AI Content Operating System")
+st.caption(f"v{APP_VERSION} · Build faceless content at scale")
 
-st.divider()
+tab_labels = ["💡 Ideas", "📝 Scripts", "📁 Projects", "📤 Publishing", "📊 Analytics", "⚙️ Settings"]
+ideas_tab, scripts_tab, projects_tab, publishing_tab, analytics_tab, settings_tab = st.tabs(tab_labels)
 
-category = st.selectbox("Choose a content category", CATEGORIES)
-topic = st.text_input("Enter a topic")
+with ideas_tab:
+    tab_ideas.render()
 
-generate_clicked = st.button("Generate Ideas", type="primary")
+with scripts_tab:
+    tab_scripts.render()
 
-if generate_clicked:
-    if not topic.strip():
-        st.warning("Please enter a topic before generating ideas.")
-    else:
-        st.subheader(f"💡 10 Content Ideas: {category} — {topic}")
-        for i in range(1, 11):
-            st.write(f"{i}. [Placeholder idea #{i} about {topic} in {category}]")
+with projects_tab:
+    tab_projects.render()
 
-st.divider()
+with publishing_tab:
+    tab_publishing.render()
 
-st.subheader("🔮 Coming Soon")
+with analytics_tab:
+    tab_analytics.render()
 
-cols = st.columns(3)
-for index, (icon, feature) in enumerate(COMING_SOON_FEATURES):
-    with cols[index % 3]:
-        st.info(f"{icon}  **{feature}**")
+with settings_tab:
+    tab_settings.render()
+
+# Rendered last (but still appears in the sidebar) so stats reflect any
+# updates made by the tab logic above during this same script run.
+with st.sidebar:
+    sidebar.render()
