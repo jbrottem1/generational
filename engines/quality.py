@@ -17,11 +17,12 @@ from engines.heuristics import clamp
 logger = get_logger(__name__)
 
 PUBLISH_WEIGHTS = {
-    "opportunity": 0.20,
-    "seo": 0.20,
-    "psychology": 0.25,
-    "retention": 0.20,
-    "ctr": 0.15,
+    "opportunity": 0.18,
+    "seo": 0.17,
+    "psychology": 0.22,
+    "retention": 0.18,
+    "ctr": 0.13,
+    "virality": 0.12,
 }
 
 
@@ -62,11 +63,28 @@ class QualityEngine(Engine):
             critic = idea.get("critique", {}).get("score", 70)
             citations = idea.get("citations", {})
 
-            retention = clamp(0.55 * psychology.get("retention_potential", 50) + 0.45 * critic)
+            retention = clamp(
+                0.40 * psychology.get("retention_potential", 50)
+                + 0.20 * psychology.get("dopamine_curve", 50)
+                + 0.15 * psychology.get("replay_value", 50)
+                + 0.25 * critic
+            )
             ctr = clamp(
-                0.5 * psychology.get("curiosity", 50)
-                + 0.3 * psychology.get("surprise", 50)
-                + 0.2 * seo
+                0.35 * psychology.get("curiosity_gap", 50)
+                + 0.25 * psychology.get("first_3_second_hook", 50)
+                + 0.20 * psychology.get("surprise", 50)
+                + 0.20 * seo
+            )
+            # "Virality" isolates the pure spread/engagement signal (sharing,
+            # commenting, identity, community, bounded controversy) from
+            # click-through and watch-through, so the publish gate rewards
+            # concepts built to spread — not just to be watched once.
+            virality = clamp(
+                0.30 * psychology.get("share_likelihood", 50)
+                + 0.25 * psychology.get("comment_likelihood", 50)
+                + 0.20 * psychology.get("audience_identity", 50)
+                + 0.15 * psychology.get("community_appeal", 50)
+                + 0.10 * psychology.get("controversy", 50)
             )
             publish = clamp(
                 PUBLISH_WEIGHTS["opportunity"] * opportunity
@@ -74,6 +92,7 @@ class QualityEngine(Engine):
                 + PUBLISH_WEIGHTS["psychology"] * psychology_score
                 + PUBLISH_WEIGHTS["retention"] * retention
                 + PUBLISH_WEIGHTS["ctr"] * ctr
+                + PUBLISH_WEIGHTS["virality"] * virality
             )
 
             unsupported = citations.get("unsupported_claims", [])
@@ -109,6 +128,7 @@ class QualityEngine(Engine):
                 "psychology": psychology_score,
                 "retention": retention,
                 "ctr": ctr,
+                "virality": virality,
                 "publish": publish,
                 "research_confidence": int(research_confidence * 100),
                 "claim_confidence": citations.get("claim_confidence", 0),

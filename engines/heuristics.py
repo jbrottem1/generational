@@ -28,6 +28,49 @@ SURPRISE_WORDS = [
 
 AUTHORITY_WORDS = ["study", "science", "research", "expert", "proven", "data", "psychologist"]
 
+# Word/phrase banks for the Psychology & Virality Engine (engines/psychology.py).
+# Each list backs one attention-science dimension of the ViralScore.
+NOVELTY_WORDS = [
+    "never seen", "brand new", "first time", "unprecedented", "breakthrough",
+    "just discovered", "nobody has", "unique", "revolutionary", "new study",
+    "just found", "for the first time",
+]
+
+FEAR_WORDS = [
+    "danger", "warning", "deadly", "risk", "threat", "kill", "destroy",
+    "before it's too late", "scared", "terrifying", "avoid", "toxic", "dying",
+]
+
+HUMOR_WORDS = [
+    "funny", "hilarious", "lol", "joke", "ridiculous", "awkward", "cringe",
+    "meme", "comedy", "prank", "roast",
+]
+
+SATISFACTION_WORDS = [
+    "finally", "satisfying", "perfect", "oddly satisfying", "relief",
+    "solved", "complete", "the answer", "closure", "clicked", "makes sense now",
+]
+
+CONTROVERSY_WORDS = [
+    "controversial", "unpopular opinion", "debate", "everyone is wrong",
+    "banned", "argument", "disagree", "hot take", "wrong about", "not what you think",
+]
+
+VISUAL_WORDS = [
+    "watch", "see", "look", "picture", "imagine", "visual", "shows",
+    "reveal", "footage", "before and after",
+]
+
+COMMUNITY_WORDS = [
+    "we", "us", "together", "community", "our", "join", "tribe",
+    "you're not alone", "people like you",
+]
+
+IDENTITY_WORDS = [
+    "if you're", "if you are", "you're the type", "for people who",
+    "as a", "you know you", "type of person", "kind of person",
+]
+
 STOPWORDS = {
     "the", "a", "an", "and", "or", "but", "about", "your", "you", "this",
     "that", "with", "for", "from", "into", "what", "when", "how", "why",

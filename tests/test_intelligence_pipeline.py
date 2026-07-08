@@ -39,7 +39,7 @@ def test_ideation_produces_20_candidates():
         assert candidate["title"] and candidate["hook"] and candidate["angle"]
 
 
-def test_psychology_scores_all_six_dimensions():
+def test_psychology_scores_all_dimensions():
     scores = score_text("The secret truth about black holes — a study proves you were wrong")
     assert set(scores) == set(DIMENSION_WEIGHTS)
     for value in scores.values():

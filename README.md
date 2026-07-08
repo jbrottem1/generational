@@ -4,6 +4,57 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 7.1 — Psychology & Virality Engine
+
+v7.1 turns the psychology stage into a full **attention-engineering system**.
+Every candidate idea is no longer just "scored" — it is measured against 18
+behavioral-science dimensions of what makes short-form content get watched,
+rewatched, commented on, and shared, and it receives a plain-English report
+explaining exactly why.
+
+### 18 psychology dimensions (`engines/psychology.py`)
+
+Curiosity Gap · Emotional Intensity · Surprise · Novelty · Fear · Humor ·
+Satisfaction · Retention Potential · Replay Value · Comment Likelihood ·
+Share Likelihood · Controversy (bounded by platform safety) · Visual Hook
+Strength · First 3-Second Hook · Dopamine Curve · Information Density ·
+Audience Identity · Community Appeal.
+
+Each dimension is scored 0-100 with deterministic text-feature analysis
+(word-bank hits, punctuation, structure, digits, hook length) — fast, free,
+reproducible with or without an API key, and fully unit-tested.
+
+### ViralScore (0-100)
+
+The 18 dimensions blend into one weighted **ViralScore** (`VIRAL_SCORE_WEIGHTS`
+in `engines/psychology.py`) — data, not code, ready for the future Learning
+Engine to tune from real performance results.
+
+### Psychology Report
+
+Every candidate gets a `psychology_report`: a viral tier (e.g. *Strong Viral
+Potential*), its top 3 strengths, its 3 weakest levers, a per-dimension note
+explaining why it scored that way, and a one-line plain-English summary. The
+Ideas tab shows it as a compact expander on every idea card — no new pages.
+
+### Pipeline integration
+
+The Psychology engine runs immediately after Ideation (which itself runs
+after Trend Discovery) and before Ranking and Script Generation, so nothing
+is scripted, produced, or published without first passing through the
+attention model:
+
+```
+Trend Discovery → Opportunity Ranking → Research → Ideation
+    → Psychology & Virality (18 dimensions → ViralScore + report)
+    → Ranking → Script → Critic → Revision → Citation → SEO → Quality Gate
+```
+
+The Quality Gate now also computes a dedicated **virality** score (share,
+comment, identity, community, bounded controversy) alongside publish, SEO,
+psychology, retention, and CTR — so the publish gate rewards concepts built
+to spread, not just to be watched once.
+
 ## Version 7.0 — Trend Discovery Engine
 
 v7.0 makes Trend Discovery the **front door** of the operating system. Instead

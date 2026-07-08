@@ -25,7 +25,7 @@ def idea_card(index: int, idea: dict) -> None:
             score_cols = st.columns(6)
             score_cols[0].metric("Publish", scores["publish"])
             score_cols[1].metric("Opportunity", scores["opportunity"])
-            score_cols[2].metric("Psychology", scores["psychology"])
+            score_cols[2].metric("Viral Score", scores["psychology"])
             score_cols[3].metric("SEO", scores["seo"])
             score_cols[4].metric("Retention", f"{scores['retention']}%")
             score_cols[5].metric("CTR", f"{scores['ctr']}%")
@@ -42,6 +42,20 @@ def idea_card(index: int, idea: dict) -> None:
         if idea.get("description"):
             st.markdown(f"**📄 Description:** {idea['description']}")
         st.markdown(f"**🖼️ Thumbnail Concept:** {idea.get('thumbnail_concept', '—')}")
+
+        report = idea.get("psychology_report")
+        if report:
+            with st.expander(f"🧠 Psychology & Virality Report · {report.get('viral_score', 0)}/100 ({report.get('tier', '—')})"):
+                st.write(report.get("summary", ""))
+                strength_col, weak_col = st.columns(2)
+                with strength_col:
+                    st.markdown("**💪 Top Strengths**")
+                    for item in report.get("strengths", []):
+                        st.caption(f"· {item['dimension']} ({item['score']}) — {item['note']}")
+                with weak_col:
+                    st.markdown("**⚠️ Weakest Levers**")
+                    for item in report.get("weaknesses", []):
+                        st.caption(f"· {item['dimension']} ({item['score']}) — {item['note']}")
 
         critique = idea.get("critique")
         if critique is not None:

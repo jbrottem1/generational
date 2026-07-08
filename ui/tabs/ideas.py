@@ -48,8 +48,8 @@ def render() -> None:
         if result.get("pipeline_steps"):
             st.caption(
                 f"Top {len(result['ideas'])} of {CANDIDATE_IDEAS} candidates — "
-                "selected by psychology scoring and weighted ranking, scripted, critiqued, "
-                "auto-revised, and SEO-packaged."
+                "selected by the Psychology & Virality Engine (18-dimension ViralScore) and weighted "
+                "ranking, scripted, critiqued, auto-revised, and SEO-packaged."
             )
         for index, idea in enumerate(result["ideas"], start=1):
             components.idea_card(index, idea)

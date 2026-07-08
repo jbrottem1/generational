@@ -1,7 +1,7 @@
 # Generational — Master Architecture
 
-**Current version:** v7.0.0  
-**Status:** Source-backed research platform with citation engine and multi-factor quality gate  
+**Current version:** v7.1.0  
+**Status:** Source-backed research platform with a 18-dimension Psychology & Virality Engine, citation engine, and multi-factor quality gate  
 **Entry point:** `app.py` (Streamlit shell only — no business logic)
 
 This document is the canonical architecture reference for Generational. It describes how the system is built today, how to extend it safely, and how the team develops using ChatGPT, Claude, and Cursor.
@@ -39,9 +39,10 @@ The goal is not to automate one YouTube channel. The goal is software that opera
 
 ### What exists today
 
-Generational v7.0 is a modular platform with:
+Generational v7.1 is a modular platform with:
 
 - A **Trend Discovery Engine** — the front door: auto-discovered trend providers, a universal Trend model, and 0-100 Opportunity Scoring that gates what enters the pipeline
+- A **Psychology & Virality Engine** — scores every candidate idea across 18 attention-science dimensions, blends them into a weighted 0-100 ViralScore, and produces a plain-English psychology report explaining why
 - A **Knowledge Engine** with live Wikipedia, PubMed, arXiv, and Crossref connectors
 - A **Citation Engine** that maps scripts to sources and flags unsupported claims
 - An **Intelligence Pipeline** (12 stages) from trend discovery and opportunity ranking through ideas, psychology, scripts, critique, citation, SEO, and quality
@@ -207,6 +208,8 @@ Every engine receives and returns updates to a shared `context: dict`. Key field
 | `research` | Research | Ideation, Script, Quality, UI |
 | `research_references` | Research | Script (traceability) |
 | `candidates` | Ideation | Psychology, Ranking |
+| `candidates[].psychology`, `.psychology_score`, `.viral_score`, `.psychology_report` | Psychology | Ranking, Quality, UI (idea card report expander) |
+| `psychology_summary` | Psychology | UI, diagnostics |
 | `ranked_candidates`, `selected_ideas` | Ranking | Script, SEO, Quality |
 | `ideas` | Quality | Production, UI, Knowledge Base |
 | `quality_summary` | Quality | UI, Production filter |
@@ -307,7 +310,7 @@ class Engine(ABC):
 | `opportunity_ranking` | `engines/opportunity_ranking.py` | Scores trends 0-100 (11 factors); only top opportunities move forward |
 | `research` | `engines/research.py` | Knowledge Engine — live APIs + demo fallback; produces Research Brief |
 | `ideation` | `engines/ideation.py` | Generates 20 candidate concepts grounded in research brief |
-| `psychology` | `engines/psychology.py` | Scores candidates on 6 virality dimensions (deterministic) |
+| `psychology` | `engines/psychology.py` | Psychology & Virality Engine — scores candidates on 18 attention dimensions, blends a weighted ViralScore (0-100), and produces a psychology report (deterministic) |
 | `ranking` | `engines/ranking.py` | Weighted ranking; selects top N for scripting |
 | `script` | `engines/script.py` | Writes 15–30s voiceover scripts from research facts |
 | `critic` | `engines/critic.py` | Adversarial review — flags weak hooks, repetition, pacing |
@@ -317,6 +320,40 @@ class Engine(ABC):
 | `quality` | `engines/quality.py` | Multi-factor publish gate (score + research + citations) |
 
 **Workflow:** `WORKFLOWS["intelligence"]`
+
+### Psychology & Virality Engine (deep dive)
+
+`engines/psychology.py` is the attention-engineering core of the pipeline. It
+runs immediately after Ideation (itself downstream of Trend Discovery) and
+before Ranking/Script, so no concept is scripted, produced, or published
+without first passing through a measurable model of human attention.
+
+- **18 dimensions** (`score_dimensions()`): curiosity gap, emotional
+  intensity, surprise, novelty, fear, humor, satisfaction, retention
+  potential, replay value, comment likelihood, share likelihood, controversy
+  (bounded by platform safety — capped ceiling regardless of trigger-word
+  density), visual hook strength, first-3-second hook, dopamine curve,
+  information density, audience identity, community appeal. Each is scored
+  0-100 by deterministic text-feature analysis (word banks in
+  `engines/heuristics.py`, punctuation, structure, digits, hook length) —
+  free, fast, reproducible in every mode, no API key required.
+- **ViralScore** (`viral_score()`): the 18 dimensions blend into one weighted
+  0-100 score via `VIRAL_SCORE_WEIGHTS` — data, not code, so the future
+  Learning Engine can retune weights from real performance results without
+  touching scoring logic.
+- **Psychology report** (`build_report()`): every candidate gets a tier
+  (e.g. *Strong Viral Potential*), its top 3 strengths, its 3 weakest
+  levers, a per-dimension explanation, and a one-line summary — attached to
+  the idea as `psychology_report` and surfaced in the Ideas tab as a compact
+  expander (no new UI pages).
+- **Backward compatibility:** `psychology_score` (alias of the ViralScore)
+  and the `psychology` dimension dict remain on every candidate so
+  `ranking.py` and `quality.py` need no structural changes to consume it.
+- **Quality Gate integration:** `engines/quality.py` derives `retention`,
+  `ctr`, and a dedicated `virality` score (share/comment likelihood,
+  audience identity, community appeal, bounded controversy) from the 18
+  dimensions, so the publish gate rewards concepts built to spread — not
+  just to be watched once.
 
 ### Media Production Pipeline (8 live engines)
 
@@ -533,6 +570,7 @@ The Streamlit UI is intentionally stable across versions. Major releases add **c
 | **v5.0** | Knowledge Engine | Multi-source research, source scoring, cache, traceability, research settings |
 | **v6.0** | Real Research + Citation | Live Wikipedia/PubMed/arXiv/Crossref APIs, Citation Engine, multi-factor quality gate |
 | **v7.0** | Trend Discovery Engine | Auto-discovered trend provider registry, universal Trend model, 11-factor Opportunity Scoring, pipeline front door, Trend Dashboard |
+| **v7.1** | Psychology & Virality Engine | 18-dimension attention scoring, weighted ViralScore, per-idea psychology report, virality-aware Quality Gate |
 
 *(v3.0 was skipped in release numbering.)*
 
@@ -592,6 +630,7 @@ python -m pytest
 | `tests/test_engines.py` | Registry completeness, live vs planned engines |
 | `tests/test_workflows.py` | Context merging, skip/fail behavior, job queue |
 | `tests/test_intelligence_pipeline.py` | End-to-end intelligence pipeline |
+| `tests/test_psychology_engine.py` | Psychology & Virality Engine — 18 dimensions, ViralScore weights, determinism, report shape, pipeline integration |
 | `tests/test_citation_engine.py` | Citation engine + multi-factor quality gate |
 | `tests/test_trend_discovery.py` | Trend provider auto-discovery, universal model, opportunity scoring, pipeline integration |
 | `tests/test_media_production.py` | Production pipeline and dashboard |
@@ -619,7 +658,7 @@ python -m pytest
 
 ### Current Baseline
 
-**90 tests passing** (as of v7.0.0).
+**103 tests passing** (as of v7.1.0).
 
 ---
 
@@ -782,4 +821,4 @@ generational/
 
 ---
 
-*Last updated: v7.0.0 — Trend Discovery Engine*
+*Last updated: v7.1.0 — Psychology & Virality Engine*
