@@ -4,6 +4,42 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 4.0 — Autonomous Media Production Engine
+
+v4.0 adds a **Media Production Pipeline** that runs automatically after the
+Intelligence Pipeline completes. Every script that passes the quality gate
+becomes a complete, production-ready media package — without touching the
+intelligence workflow or redesigning the UI.
+
+**Intelligence Pipeline** (unchanged): Research → Ideas → Psychology → Ranking → Scripts → Critic → Revision → SEO → Quality Gate
+
+**Media Production Pipeline** (new): Scene Planning → Narration → Visual Planning → Asset Management → Subtitles → Timeline → Render Package → Publishing Queue
+
+Each approved script automatically receives:
+- **Structured scenes** (duration, narration, visual description, emotion, camera, transitions, on-screen text, keywords, timing)
+- **Narration tracks** via the Voice Provider abstraction (AI, recorded, or clone-ready)
+- **Visual prompts** for future image/video providers (subject, environment, mood, lighting, cinematic direction)
+- **Registered assets** (narration, visuals, thumbnails, music) in the Asset Manager
+- **Subtitle tracks** with sentence + word-level timing and SRT output
+- **Production timeline** (narration, visual, subtitle, music, transitions)
+- **Render Package** — every asset bundled for a future renderer (no rendering yet)
+- **Publishing queue entry** — ready for auto-posting when connected
+
+The **Production Dashboard** (compact panel in the Ideas tab) shows all 17
+pipeline stages with status: Waiting, Running, Completed, Retrying, Failed.
+
+### Voice architecture
+Three narration modes via `providers/voice/`:
+1. **AI Voice** — Demo provider today; swap for ElevenLabs/OpenAI TTS without engine changes
+2. **User Recorded Voice** — profiles + recordings stored under `data/voice_recordings/`
+3. **Voice Clone** — architecture stub only; plug in a clone provider later
+
+Voice profiles support styles (Documentary, Educational, Storytelling, Science, Finance, High Energy, Calm) and settings (speed, energy, emotion, pitch, pause style, pronunciation overrides). Configure mode in **Settings → Voice**.
+
+### Provider system (`providers/`)
+Swappable interfaces — no business logic depends on a single vendor:
+LLM, Research, SEO, Voice, Image, Video, Music, Publishing, Analytics, Trend.
+
 ## Version 2.0 — Intelligence Pipeline
 
 v2.0 replaces single-shot generation with a 9-stage AI reasoning pipeline.
@@ -52,8 +88,9 @@ v1.0 upgrades the original idea generator into a full AI Command Center workspac
 Type a natural language command (e.g. *"Create 10 psychology shorts about procrastination"* or *"Create 5 science shorts about black holes"*), or click an example to auto-fill the command box. Running the command executes the full intelligence pipeline and shows:
 - Detected niche, videos requested, audience, search intent, and trend strength
 - The research summary and content goal
-- The top-ranked ideas (of 20 candidates), each with hook, script, CTA, hashtags, keywords, description, thumbnail concept, critic notes, and all six quality scores
-- The publish gate verdict per video, and the remaining production steps: Voice → Image → Video → Publish
+- The top-ranked ideas (of 20 candidates), each with hook, script, CTA, hashtags, keywords, description, thumbnail concept, critic notes, all six quality scores, and a **production package** (scenes, duration, assets, queue status) for publish-ready scripts
+- The **Production Dashboard** showing all intelligence + media stages
+- The publish gate verdict per video, and the remaining render steps: Voice → Image → Video → Publish
 
 ### 📝 Scripts
 A focused, copy-friendly view of the full scripts for the current batch of ideas.
@@ -70,6 +107,9 @@ Session-level placeholder metrics and a roadmap for the full Analytics Dashboard
 ### ⚙️ Settings
 - View API key status, or paste a session-only key override (never written to disk)
 - Choose the OpenAI model (`gpt-4o-mini`, `gpt-4o`, `gpt-3.5-turbo`)
+- **Quality Gate** — minimum publish score threshold
+- **Voice** — narration mode (AI / Recorded / Clone) and default voice style
+- System diagnostics across all services
 - Reset session stats
 
 ## Getting Started
@@ -115,37 +155,47 @@ streamlit run app.py
 
 ## Architecture
 
-Generational v1.1 is the foundation of an autonomous, multi-account content
-operating system. The Streamlit UI is a thin shell over four layers:
+Generational v4.0 is an autonomous content operating system. The Streamlit UI
+is a thin shell over five layers:
 
 ```
         UI (Streamlit tabs + sidebar)
                     │
-        services/  (ideation, channels, knowledge, pipeline views)
+        services/  (ideation, production, assets, voice profiles, channels, knowledge)
                     │
-   Job Queue ──► Workflow Engine ──► Engine Registry (plugins)
+   Job Queue ──► Workflow Manager ──► Engine Registry (17 live plugins)
                     │
-        core/  (AI providers, storage, models, logging, diagnostics)
+        providers/ (LLM, Voice, Image, Video, Music, Publishing, Analytics, Trend)
+                    │
+        core/  (models, storage, logging, diagnostics, production_models)
 ```
 
-### Job Queue (`core/jobs.py`)
-Every unit of work is a Job with a type, payload, status, and timing.
-Handlers are registered per job type. Execution is synchronous today
-(Streamlit's model), but callers only depend on submit/run semantics — a
-background worker can drain the queue later with zero caller changes.
-Running a command in the Ideas tab already flows through the queue.
+### Media Production Pipeline (`services/production.py`)
+Runs **after** intelligence completes. Only `publishable` scripts enter the
+`media_production` workflow. Each engine accepts structured input and returns
+structured output — no engine calls another directly. Results attach to idea
+cards and persist in projects.
+
+### Production data models (`core/production_models.py`)
+Strongly typed structures: **Scene**, **VisualPrompt**, **NarrationTrack**,
+**Asset**, **SubtitleTrack**, **Timeline**, **RenderPackage**,
+**ProductionPackage**, **VoiceProfile**, **StageStatus**.
+
+### Asset Manager (`services/assets.py`)
+Tracks generated images, videos, uploaded/stock footage, narration, music,
+sound effects, subtitles, and thumbnails. Assets register during production
+and are reusable across projects under `data/assets/`.
+
+### Voice profiles (`services/voice_profiles.py`)
+Create profiles, attach to projects, store recording metadata. Recordings
+live under `data/voice_recordings/`. Clone mode is wired but not implemented.
 
 ### Engine plugins (`engines/`)
-Each pipeline capability is an Engine plugin registered in
-`engines/registry.py`. Nine are live — **Research, Ideation, Psychology,
-Ranking, Script, Critic, Revision, SEO, and Quality** — with **Voice,
-Image, Video, Publishing, Analytics, and Learning** registered as planned
-stubs. An engine receives the shared workflow context and returns updates
-to it. Implementing a stage = overriding `run()` and `is_ready()` in its
-module; workflows, diagnostics, and the pipeline UI pick it up
-automatically. Generative engines call the AI provider through a single
-`generate_json` interface and fall back to deterministic heuristics, so
-providers/models swap without touching engine code.
+**17 live engines** across two pipelines. Intelligence (9): Research, Ideation,
+Psychology, Ranking, Script, Critic, Revision, SEO, Quality. Production (8):
+Scene Planning, Narration, Visual Planning, Asset Manager, Subtitle, Timeline,
+Render Package, Publishing Queue. Future render engines (Voice/Image/Video
+generation) remain as planned stubs.
 
 ### Workflow Engine (`core/workflows.py`)
 Pipelines are data, not code: a workflow is an ordered list of engine keys
@@ -173,11 +223,12 @@ health checks across the AI provider, storage, engines, job queue, channels,
 and knowledge base — visible in **Settings → System Diagnostics**.
 
 ### Other extension points
-- **New AI provider** (e.g. Anthropic, local models): implement
-  `core/ai/base.py`'s `AIProvider` and register it in `core/ai/__init__.py`.
-- **New storage backend** (e.g. SQLite, Postgres): implement
-  `core/storage/base.py`'s `ProjectStore` (projects) or mirror
-  `core/storage/json_collection.py` (named records) and swap it in.
+- **New LLM / Voice / Image provider**: implement the interface in
+  `providers/` and register in the matching factory.
+- **New production stage**: add an engine module, register in `engines/__init__.py`,
+  append its key to `WORKFLOWS["media_production"]`.
+- **New storage backend**: implement `core/storage/base.py`'s `ProjectStore`.
+- **Renderer**: consume `RenderPackage` objects from `data/publishing_queue/`.
 
 ## Testing
 
@@ -210,55 +261,39 @@ generational/
 │   ├── diagnostics.py        # Health checks across all services
 │   ├── jobs.py               # Central job queue (async task management)
 │   ├── workflows.py          # Workflow engine (configurable pipelines)
-│   ├── ai/                   # AI provider abstraction
-│   │   ├── base.py           # AIProvider interface
-│   │   ├── openai_provider.py# OpenAI backend (falls back gracefully)
-│   │   ├── demo_provider.py  # Placeholder content, no API needed
-│   │   └── __init__.py       # Provider selection (get_provider)
+│   ├── production_models.py  # Scene, Timeline, RenderPackage, VoiceProfile, ...
+│   ├── ai/                   # LLM provider (implements providers/llm interface)
 │   └── storage/              # Storage abstraction
-│       ├── base.py           # ProjectStore interface
-│       ├── json_store.py     # Local JSON project backend
-│       ├── json_collection.py# Generic named-record JSON store
-│       └── __init__.py       # Storage facade (get_store + helpers)
-├── engines/                  # Engine plugins (one per pipeline capability)
-│   ├── base.py               # Engine / PlannedEngine interfaces
-│   ├── registry.py           # Engine registry (register / get / ready)
-│   ├── heuristics.py         # Deterministic text-analysis helpers (demo + scoring)
-│   ├── research.py           # LIVE: context, audience, intent, trend strength
-│   ├── ideation.py           # LIVE: 20 candidate concepts
-│   ├── psychology.py         # LIVE: 6-dimension virality scoring
-│   ├── ranking.py            # LIVE: weighted ranking + selection
-│   ├── script.py             # LIVE: scripts for top concepts only
-│   ├── critic.py             # LIVE: adversarial script review
-│   ├── revision.py           # LIVE: auto-rewrite of flagged sections
-│   ├── seo.py                # LIVE: titles, hashtags, keywords, descriptions
-│   ├── quality.py            # LIVE: final scores + publish-threshold gate
-│   └── voice|image|video|publishing|analytics|learning.py  # planned stubs
-├── services/                 # Business services
-│   ├── ideation.py           # Public ideation API (job queue → workflow → engine)
-│   ├── pipeline.py           # Pipeline stage views for the UI (from registry)
-│   ├── channels.py           # Channel Manager (multi-brand/account)
-│   └── knowledge.py          # Knowledge Base (hooks, titles, scripts, SEO, ...)
+├── providers/                # Swappable provider interfaces
+│   ├── llm.py, research_provider.py, seo_provider.py
+│   ├── voice/                # AI, recorded, clone voice providers
+│   ├── image_provider.py, video_provider.py, music_provider.py
+│   └── publishing_provider.py, analytics_provider.py, trend_provider.py
+├── engines/                  # Engine plugins (intelligence + production)
+│   ├── research … quality.py # Intelligence pipeline (9 live)
+│   ├── scene_planning … publishing_queue.py  # Media production (8 live)
+│   └── voice|image|video|publishing|analytics|learning.py  # future render stubs
+├── services/
+│   ├── ideation.py           # Intelligence pipeline orchestrator
+│   ├── production.py         # Media production orchestrator
+│   ├── assets.py             # Asset Manager + Publishing Queue
+│   ├── voice_profiles.py     # Voice profile + recording metadata
+│   ├── channels.py, knowledge.py, pipeline.py
 ├── ui/                       # Presentation layer (Streamlit only)
-│   ├── styles.py             # CSS injection (dark theme, cards, animations)
-│   ├── notify.py             # Success/error toast helpers
-│   ├── components.py         # Reusable components (idea card, pipeline flow, ...)
-│   ├── sidebar.py            # AI Command Center sidebar
-│   └── tabs/                 # One module per workspace tab
-│       ├── ideas.py, scripts.py, projects.py
-│       └── publishing.py, analytics.py, settings.py
-├── tests/                    # Unit tests for every core service
-└── data/                     # Local persistence (gitignored)
-    ├── projects/             # Saved projects
-    ├── channels/             # Channel configurations
-    ├── knowledge/            # Knowledge base categories
-    └── logs/                 # Runtime logs
+│   ├── styles.py, notify.py, components.py, sidebar.py
+│   └── tabs/                 # ideas, scripts, projects, publishing, analytics, settings
+├── tests/                    # Unit tests (intelligence + production + providers)
+└── data/
+    ├── projects/, channels/, knowledge/, logs/
+    ├── assets/               # Asset registry index
+    ├── voice_profiles/, voice_recordings/
+    └── publishing_queue/     # Queued render packages
 ```
 
 ## Roadmap
 
-- 🎙️ AI Voice Generation
-- 🎬 AI Video Creation
-- 🔍 SEO Optimizer
-- 📤 Auto Posting
-- 📊 Full Analytics Dashboard
+- 🎬 Video/image generation from visual prompts (providers wired, engines stubbed)
+- 🎙️ Real TTS providers (ElevenLabs, OpenAI) behind VoiceProvider
+- 🧬 Voice cloning provider
+- 📤 Auto Posting from publishing queue
+- 📊 Full Analytics Dashboard + Learning loop

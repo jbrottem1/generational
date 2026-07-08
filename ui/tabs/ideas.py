@@ -66,12 +66,13 @@ def _handle_run(command: str) -> None:
         st.warning("Please enter a command before running it.")
         return
 
-    with st.spinner("🧠 Running the intelligence pipeline: research → ideas → scoring → scripts → critique → SEO..."):
+    with st.spinner("🧠 Intelligence pipeline → 🎬 Media production for approved scripts..."):
         result = ideation.run_command(
             command,
             count=IDEAS_PER_BATCH,
             model=st.session_state.selected_model,
             threshold=st.session_state.publish_threshold,
+            voice_mode=st.session_state.voice_mode,
         )
 
     error = result.pop("error", None)
@@ -86,11 +87,17 @@ def _handle_run(command: str) -> None:
 
     idea_count = len(result["ideas"])
     publishable = result.get("quality_summary", {}).get("publishable", idea_count)
+    produced = len(result.get("production_packages", []))
     if result["demo_mode"]:
         st.info("🟡 Demo Mode — add an OpenAI API key in **Settings** to power the pipeline with real AI.")
     if error:
         st.warning(f"⚠️ One or more AI calls failed and used heuristic fallbacks: {error}")
-    notify.success(f"Pipeline complete — {idea_count} scripts, {publishable} publish-ready.")
+    if result.get("production_error"):
+        st.warning(f"⚠️ Media production issue: {result['production_error']}")
+    msg = f"Pipeline complete — {idea_count} scripts, {publishable} publish-ready"
+    if produced:
+        msg += f", {produced} production package(s) built"
+    notify.success(msg)
 
 
 def _render_breakdown(result: dict) -> None:
@@ -126,3 +133,11 @@ def _render_breakdown(result: dict) -> None:
         )
         message += f" · {held} held back" if held else " · none held back"
         st.markdown(message)
+
+    dashboard = result.get("production_dashboard")
+    if dashboard:
+        st.markdown("**🎬 Production Pipeline**")
+        components.production_dashboard(dashboard)
+        queued = result.get("queued_count", 0)
+        if queued:
+            st.caption(f"📤 {queued} render package(s) queued for publishing.")

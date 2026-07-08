@@ -14,6 +14,8 @@ DEFAULTS = {
     "openai_api_key_override": "",
     "selected_model": DEFAULT_MODEL,
     "publish_threshold": DEFAULT_PUBLISH_THRESHOLD,
+    "voice_mode": "ai",
+    "voice_style": "documentary",
 }
 
 

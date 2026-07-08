@@ -22,6 +22,8 @@ def run_command(
     count: int,
     model: str,
     threshold: int = DEFAULT_PUBLISH_THRESHOLD,
+    voice_mode: str = "ai",
+    voice_profile_id: str = "",
 ) -> dict:
     """Run the intelligence pipeline for a command.
 
@@ -46,6 +48,8 @@ def run_command(
         return _fallback_result(command, count, model, job.error)
 
     context = job.result["context"]
+    context["voice_mode"] = voice_mode
+    context["voice_profile_id"] = voice_profile_id
     result = build_result(
         command=command,
         niche=context["niche"],
@@ -63,6 +67,19 @@ def run_command(
         result["error"] = context["error"]
 
     _record_knowledge(result, context)
+
+    from services.production import run_media_production
+
+    production = run_media_production(context)
+    result["production_packages"] = production.get("production_packages", [])
+    result["production_steps"] = production.get("production_steps", [])
+    result["production_dashboard"] = production.get("production_dashboard", [])
+    result["queued_count"] = production.get("queued_count", 0)
+    if production.get("production_error"):
+        result["production_error"] = production["production_error"]
+    if production.get("production_skipped"):
+        result["production_skipped"] = True
+
     return result
 
 

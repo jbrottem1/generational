@@ -57,6 +57,18 @@ WORKFLOWS = {
         "video",
         "publishing",
     ],
+    # v4.0 media production pipeline — runs on approved scripts only,
+    # coordinated separately so the intelligence workflow stays untouched.
+    "media_production": [
+        "scene_planning",
+        "narration",
+        "visual_planning",
+        "asset_manager",
+        "subtitle",
+        "timeline",
+        "render_package",
+        "publishing_queue",
+    ],
 }
 
 

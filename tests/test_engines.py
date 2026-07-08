@@ -2,17 +2,17 @@ import engines  # noqa: F401 - importing registers all engines
 from engines import registry
 from engines.base import PlannedEngine
 
-LIVE_KEYS = {
-    "research",
-    "ideation",
-    "psychology",
-    "ranking",
-    "script",
-    "critic",
-    "revision",
-    "seo",
-    "quality",
+INTELLIGENCE_LIVE = {
+    "research", "ideation", "psychology", "ranking", "script",
+    "critic", "revision", "seo", "quality",
 }
+
+PRODUCTION_LIVE = {
+    "scene_planning", "narration", "visual_planning", "asset_manager",
+    "subtitle", "timeline", "render_package", "publishing_queue",
+}
+
+LIVE_KEYS = INTELLIGENCE_LIVE | PRODUCTION_LIVE
 
 PLANNED_KEYS = {"voice", "image", "video", "publishing", "analytics", "learning"}
 

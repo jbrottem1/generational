@@ -47,6 +47,10 @@ def project_from_result(name: str, result: dict) -> dict:
         project["research"] = result["research"]
     if result.get("quality_summary"):
         project["quality_summary"] = result["quality_summary"]
+    if result.get("production_dashboard"):
+        project["production_dashboard"] = result["production_dashboard"]
+    if result.get("production_packages"):
+        project["production_packages"] = result["production_packages"]
     return project
 
 
@@ -66,4 +70,8 @@ def result_from_project(project: dict) -> dict:
         result["research"] = project["research"]
     if project.get("quality_summary"):
         result["quality_summary"] = project["quality_summary"]
+    if project.get("production_dashboard"):
+        result["production_dashboard"] = project["production_dashboard"]
+    if project.get("production_packages"):
+        result["production_packages"] = project["production_packages"]
     return result

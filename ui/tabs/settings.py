@@ -8,7 +8,9 @@ import streamlit as st
 
 from core import state, storage
 from core.constants import APP_VERSION, MODEL_OPTIONS
+from core.production_models import VOICE_MODES, VOICE_PROFILES
 from core.diagnostics import run_diagnostics
+from services.voice_profiles import get_voice_profile_manager
 
 
 def render() -> None:
@@ -33,6 +35,19 @@ def render() -> None:
     st.divider()
     st.markdown("### 🤖 Model")
     st.selectbox("OpenAI model", MODEL_OPTIONS, key="selected_model")
+
+    st.divider()
+    st.markdown("### 🎙️ Voice")
+    st.selectbox(
+        "Narration mode",
+        options=list(VOICE_MODES),
+        format_func=lambda m: {"ai": "AI Voice", "recorded": "User Recorded", "clone": "Voice Clone (coming soon)"}[m],
+        key="voice_mode",
+        help="How narration is generated during media production. Clone mode is architecture-only for now.",
+    )
+    st.selectbox("Default voice style", VOICE_PROFILES, key="voice_style")
+    profiles = get_voice_profile_manager().list_profiles()
+    st.caption(f"{len(profiles)} custom voice profile(s) saved · recordings stored under data/voice_recordings/")
 
     st.divider()
     st.markdown("### 🎯 Quality Gate")

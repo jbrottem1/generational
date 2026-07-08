@@ -51,6 +51,33 @@ def idea_card(index: int, idea: dict) -> None:
             else:
                 st.caption(f"🧐 Passed critic review clean · Critic score: {critique['score']}")
 
+        production = idea.get("production")
+        if production:
+            st.markdown("**🎬 Production Package**")
+            pcols = st.columns(4)
+            pcols[0].metric("Scenes", production.get("scenes", 0))
+            pcols[1].metric("Duration", f"{production.get('duration_sec', 0)}s")
+            pcols[2].metric("Assets", production.get("assets", 0))
+            pcols[3].metric("Queue", production.get("queue_status", "—"))
+
+
+def production_dashboard(stages: list) -> None:
+    """Compact production progress panel — intelligence + media stages."""
+    if not stages:
+        return
+
+    state_icons = {
+        "completed": "✔",
+        "running": "⏳",
+        "waiting": "○",
+        "retrying": "↻",
+        "failed": "✗",
+    }
+    cols = st.columns(min(len(stages), 6))
+    for index, stage in enumerate(stages):
+        icon = state_icons.get(stage.get("state", "waiting"), "○")
+        cols[index % len(cols)].caption(f"{icon} **{stage.get('label', stage.get('key', ''))}**")
+
 
 def pipeline_flow(stages) -> None:
     """Horizontal stage flow (icon boxes joined by arrows)."""
