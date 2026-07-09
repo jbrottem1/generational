@@ -192,6 +192,55 @@ def test_script_fallback_engine_preserves_generated_variants():
     assert idea["script"] == original_script  # fallback never overwrites
 
 
+def test_script_output_satisfies_visual_intelligence_contract():
+    """Guard the Script Generation → Visual Intelligence (Agent 4) seam.
+
+    Visual Intelligence reads script_variants[0] as the winning variant and
+    consumes these fields to build scenes, narration, emotional beats,
+    timestamps, and visual notes. If either side changes shape, this fails.
+    """
+    from services.visual import build_visual_package
+
+    context = _engine_context()
+    registry.get_engine("script_generation").run(context)
+
+    consumed_fields = (
+        "hook", "pattern_interrupt", "curiosity_loop", "core_story",
+        "call_to_action", "emotional_progression", "broll_suggestions",
+        "sound_effects", "music_style", "estimated_runtime_sec",
+    )
+    for candidate in context["candidates"]:
+        variants = candidate["script_variants"]
+        # Best-first ordering — visual planning trusts variants[0].
+        scores = [v["score"] for v in variants]
+        assert scores == sorted(scores, reverse=True)
+        for field in consumed_fields:
+            assert variants[0].get(field), field
+
+        package = build_visual_package(
+            candidate, niche=context["niche"], subject=context["subject"],
+        )
+        scenes = package["scenes"]
+        # hook
+        assert scenes[0]["purpose"] == "hook"
+        assert scenes[0]["narration"] == variants[0]["hook"]
+        # scenes + narration
+        assert len(scenes) >= 4
+        assert all(s["narration"].strip() for s in scenes)
+        # emotional beats
+        assert all(s["emotion"] for s in scenes)
+        assert set(s["emotion"] for s in scenes) <= set(variants[0]["emotional_progression"])
+        # timestamps — contiguous captions matching the script's runtime
+        for prev, cur in zip(scenes, scenes[1:]):
+            assert cur["caption_timing"]["start_sec"] == prev["caption_timing"]["end_sec"]
+        total = sum(s["length_sec"] for s in scenes)
+        assert abs(total - candidate["estimated_runtime_sec"]) <= 8
+        assert all("time_sec" in cp for cp in candidate["retention_checkpoints"])
+        # visual notes
+        assert all(s["visual_description"] for s in scenes)
+        assert package["image_prompts"] and package["video_prompts"]
+
+
 def test_full_pipeline_still_succeeds_end_to_end():
     context = {
         "command": "Create 3 science shorts about black holes",
