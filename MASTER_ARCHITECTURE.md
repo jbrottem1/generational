@@ -3,7 +3,7 @@
 **Document status:** Canonical architecture reference. Every agent (human or AI) working on this codebase reads this first.
 **Entry point:** `app.py` (Streamlit shell only — no business logic).
 
-**Companion documents:** [`ARCHITECTURE_DIRECTIVES.md`](ARCHITECTURE_DIRECTIVES.md) (mandatory rules — read Directive #1 first) · [`OPERATING_SYSTEM.md`](OPERATING_SYSTEM.md) (how the pieces form one OS) · [`PIPELINE_SPEC.md`](PIPELINE_SPEC.md) (complete stage flow, live + future) · [`DATA_CONTRACTS.md`](DATA_CONTRACTS.md) (ContentPackage, context keys, engine contracts) · [`ENGINE_REGISTRY.md`](ENGINE_REGISTRY.md) (registered + reserved engine keys) · [`ORCHESTRATOR.md`](ORCHESTRATOR.md) (kernel API) · [`AGENT_WORKFLOW.md`](AGENT_WORKFLOW.md) (ownership + merge safety).
+**Companion documents:** [`ARCHITECTURE_DIRECTIVES.md`](ARCHITECTURE_DIRECTIVES.md) (mandatory rules — read Directive #1 first) · [`OPERATING_SYSTEM.md`](OPERATING_SYSTEM.md) (how the pieces form one OS) · [`AGENT_REGISTRY.md`](AGENT_REGISTRY.md) (agent roster, departments, future expansion) · [`SYSTEM_DEPENDENCY_MAP.md`](SYSTEM_DEPENDENCY_MAP.md) (layer diagram, data flow, dependency graph) · [`CAPABILITY_MATRIX.md`](CAPABILITY_MATRIX.md) · [`ENGINE_CAPABILITY_INDEX.md`](ENGINE_CAPABILITY_INDEX.md) · [`PIPELINE_SPEC.md`](PIPELINE_SPEC.md) (complete stage flow, live + future) · [`DATA_CONTRACTS.md`](DATA_CONTRACTS.md) (ContentPackage, context keys, engine contracts) · [`ENGINE_REGISTRY.md`](ENGINE_REGISTRY.md) (registered + reserved engine keys) · [`ORCHESTRATOR.md`](ORCHESTRATOR.md) (kernel API) · [`AGENT_WORKFLOW.md`](AGENT_WORKFLOW.md) (ownership + merge safety) · [`ARCHITECTURE_REVIEW.md`](ARCHITECTURE_REVIEW.md) (latest architecture audit + scores).
 
 ---
 

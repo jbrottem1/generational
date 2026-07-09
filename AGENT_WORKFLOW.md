@@ -52,6 +52,9 @@ Agent 1 also acts as the reviewer for changes to shared files (see §2.3).
 | **Agent 8** | **SEO-optimization files only:** `engines/seo/` (NOT the live `engines/seo.py`) · `services/seo/` · SEO providers · `tests/test_seo_optimization.py` |
 | **Agent 9** | **Analytics/learning files only:** `engines/analytics/` · `engines/analytics.py` · `engines/learning.py` · `services/analytics/` · `services/learning/` · analytics providers · analytics/learning tests |
 | **Agent 10** | **Brand/account/channel files only:** `engines/brands/` · `services/brands/` · `tests/test_brand_management.py` (extends `services/channels.py` with caution) |
+| **Agent 11** | **Market/trend intelligence only:** `engines/trend_forecasting.py` · `engines/market_intelligence.py` · `services/trend_intelligence/` · `services/market_intelligence/` · `TREND_INTELLIGENCE.md` · `MARKET_INTELLIGENCE.md` · their tests |
+| **Agent 12** | **Creative studio only:** `engines/creative_studio.py` · `services/creative_studio/` · `providers/creative/` · `providers/creative_provider.py` · `CREATIVE_STUDIO.md` · creative tests |
+| **Agents 13-20** | Planned — claim ownership rows here **before** writing code; reserved engine keys and integration seams are listed in `AGENT_REGISTRY.md` |
 | **Agent 11** | **Trend/market-intelligence files only:** `engines/trend_forecasting.py` · `engines/market_intelligence.py` · `services/trend_intelligence/` · `services/market_intelligence/` · `tests/test_trend_forecasting.py` · `tests/test_market_intelligence.py` · `TREND_INTELLIGENCE.md` · `MARKET_INTELLIGENCE.md` · new drop-in provider modules under `providers/trend_sources/` (never `base.py` / `_demo.py` / Agent 1's existing providers) |
 
 Every landing-zone README (`engines/render/README.md`, `engines/publishing/README.md`,

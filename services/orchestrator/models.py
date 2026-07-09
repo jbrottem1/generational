@@ -97,6 +97,7 @@ PRODUCTION_PACKAGE_FIELDS = [
     "publishing_package",   # Agent 7 (Publishing & Scheduler) writes here
     "analytics_package",    # Agent 9 (Analytics & Learning) writes here
     "learning_metadata",    # Agent 9 (Learning feedback) writes here
+    "creative_package",     # Agent 12 (Creative Studio) writes here
     "status",
     "diagnostics",
 ]
@@ -147,6 +148,7 @@ class ProductionPackage:
     publishing_package: dict = field(default_factory=dict)
     analytics_package: dict = field(default_factory=dict)
     learning_metadata: dict = field(default_factory=dict)
+    creative_package: dict = field(default_factory=dict)
     status: str = "planned"      # planned | approved | held | rendered | scheduled | published
     diagnostics: dict = field(default_factory=dict)
     created_at: str = field(default_factory=_now_iso)

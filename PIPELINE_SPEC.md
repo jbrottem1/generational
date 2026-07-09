@@ -1,4 +1,4 @@
-# Generational — Pipeline Specification (v9.0)
+# Generational — Pipeline Specification (v9.6)
 
 The complete flow of the AI Content Operating System. As of v9.0 every live
 stage — through Render, Global Content Optimization, and Publishing — runs
@@ -46,6 +46,11 @@ Quality Gate               LIVE      engines: quality
 Media Production           LIVE      scene planning → narration → visual
    ↓                                 planning → assets → subtitles →
    ↓                                 timeline → render package → queue
+Creative Studio            LIVE      Agent 12 — engines: creative_studio
+   ↓                                 (storyboards, shot lists, style
+   ↓                                  libraries, character consistency,
+   ↓                                  environments — fills creative_package;
+   ↓                                  see CREATIVE_STUDIO.md)
 Render Engine              LIVE      Agent 6 — engines: image, video, render
    ↓                                 (mock render: full plan + simulated
    ↓                                  output; real providers swap in later)
@@ -158,9 +163,17 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
 | refinement | ranking…threat_detection | live | shared |
 | quality | quality | live | shared (gate) |
 | production | scene_planning…publishing_queue | live | Agent 1 |
+| creative | creative_studio | live (mock asset providers) | **Agent 12** |
 | render | image, video (+ `render` façade) | live (mock render) | **Agent 6** |
 | seo | seo_optimization | live | **Agent 8** |
 | publish | scheduler, publishing | live (mock providers) | **Agent 7** |
 | analytics | analytics | live (mock metrics providers) | **Agent 9** |
 | learning | learning | live | **Agent 9** |
-| brand_management | brand_management | future | **Agent 10** |
+| brand_management | brand_management | future | Multi-Brand OS agent |
+
+Reserved future stages (names only — see `AGENT_REGISTRY.md`):
+`optimization_lab` (Agent 13), `asset_generation` (Agent 14),
+`ip_management` (Agent 15), `animation` (Agent 16), `post_production`
+(Agent 17), `ai_director` (Agent 18), `business_intelligence` (Agent 19),
+`autonomous_executive` (Agent 20). Each plugs in via `register_stage()` +
+a ContentPackage slot — no orchestrator changes.

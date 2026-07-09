@@ -30,6 +30,7 @@ list is `CONTENT_PACKAGE_FIELDS`.
 | `publishing_package` | dict | **Agent 7** |
 | `analytics_placeholder` / `analytics_package` | dict | **Agent 9** |
 | `learning_metadata` | dict | **Agent 9** |
+| `creative_package` | dict | **Agent 12** (storyboards, shot lists, style, characters, environments) |
 | `status` | str | pipeline (`planned → approved/held → rendered → scheduled → published`) |
 | `diagnostics` | dict | any stage (append keys) |
 | `created_at` / `extras` | str / dict | packager / forward-compat overflow |

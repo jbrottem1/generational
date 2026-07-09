@@ -210,3 +210,47 @@ def test_contract_diagnostics_still_work():
     diag = engine.diagnostics()
     assert diag["engine_id"] == "brand_management"
     assert engine.health_check()["healthy"] is True
+
+
+# --------------------------------------------- system-wide consistency (v9.6)
+
+
+def test_capability_index_covers_every_contract_engine():
+    index = registry.capability_index()
+    assert index, "capability index must not be empty"
+    keys = set(registry.engine_keys())
+    for capability, engine_keys in index.items():
+        assert engine_keys == sorted(engine_keys), capability
+        for key in engine_keys:
+            assert key in keys, f"{capability} lists unregistered engine {key}"
+
+
+def test_dependency_graph_targets_are_registered_engines():
+    keys = set(registry.engine_keys())
+    for engine_key, dependencies in registry.dependency_graph().items():
+        for dependency in dependencies:
+            assert dependency in keys, (
+                f"{engine_key} declares dependency on unregistered engine "
+                f"{dependency!r} — fix the dependencies list or register the engine."
+            )
+
+
+def test_every_staged_engine_key_is_registered():
+    from core.workflows import WORKFLOWS
+
+    keys = set(registry.engine_keys())
+    for stage, engine_keys in STAGE_GROUPS.items():
+        for key in engine_keys:
+            assert key in keys, f"stage {stage!r} references unregistered engine {key!r}"
+    for workflow, engine_keys in WORKFLOWS.items():
+        for key in engine_keys:
+            assert key in keys, f"workflow {workflow!r} references unregistered engine {key!r}"
+
+
+def test_describe_all_is_complete_and_uniform():
+    infos = registry.describe_all()
+    assert len(infos) == len(registry.engine_keys())
+    for info in infos:
+        for field in ("engine_id", "name", "version", "ready", "input_contract",
+                      "output_contract", "dependencies", "capabilities", "description"):
+            assert field in info, (info.get("engine_id"), field)

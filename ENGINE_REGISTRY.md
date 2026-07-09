@@ -1,8 +1,9 @@
-# Generational — Engine Registry (v8.1)
+# Generational — Engine Registry (v9.6)
 
 How engines register, what exists today, and which keys are reserved for
-Agents 6-10. The registry (`engines/registry.py`) is the single source of
-truth at runtime; this document is its map.
+future agents. The registry (`engines/registry.py`) is the single source of
+truth at runtime; this document is its map. Agent roster: `AGENT_REGISTRY.md`;
+dependency view: `SYSTEM_DEPENDENCY_MAP.md`.
 
 ## Registration model
 
@@ -99,18 +100,51 @@ contract); the `publishing` planned stub graduated from the former
 `DATA_CONTRACTS.md` §7 and `engines/publishing/README.md`). Real platform
 APIs swap in via `register_publishing_provider()` — one adapter per file.
 
-## Reserved keys (planned / contract stubs — do NOT reuse)
+## Live engines (analytics + learning — Agent 10)
 
-| Key | Stub type | Future owner | Stage |
-|---|---|---|---|
-| `voice` | planned | Voice Pipeline agent | audio (real TTS) |
-| `analytics` | planned | **Agent 9** | analytics |
-| `learning` | planned | **Agent 9** | learning |
-| `brand_management` | contract stub | **Agent 10** | brand_management |
+`analytics` (post-publish performance ingestion, retention curves,
+attribution) · `learning` (pattern mining, weight recommendations,
+long-term memory). Logic in `services/analytics/` and `services/learning/`;
+see `ANALYTICS_LEARNING.md`.
+
+## Live engine (creative — Agent 12, pending merge)
+
+`creative_studio` — reserved on `feature/creative-studio`. After merge:
+register in `engines/__init__.py`, add `creative` to `STAGE_GROUPS` and
+`DISTRIBUTION_STAGES` (packaging → **creative** → render → seo → publish),
+fill `creative_package`. See `INTEGRATION_CHECKLIST.md` and
+`CAPABILITY_MATRIX.md`.
+
+## Reserved keys (planned / contract stubs / names — do NOT reuse)
+
+| Key | Status | Future owner |
+|---|---|---|
+| `voice` | planned stub | Voice Pipeline agent (real TTS / voice clone) |
+| `brand_management` | contract stub | Multi-Brand OS agent |
+| `optimization_lab` | name reserved | Agent 13 — Optimization Laboratory |
+| `asset_generation` | name reserved | Agent 14 — Universal Asset Generation |
+| `ip_management` | name reserved | Agent 15 — Character, Universe & IP |
+| `animation` | name reserved | Agent 16 — Animation & Cinematics |
+| `post_production` | name reserved | Agent 17 — Video Editing & Post Production |
+| `ai_director` | name reserved | Agent 18 — AI Director |
+| `business_intelligence` | name reserved | Agent 19 — BI & Monetization |
+| `autonomous_executive` | name reserved | Agent 20 — Autonomous Executive |
 
 Contract stubs live in `engines/future_stubs.py` and already declare their
-input/output contracts — inspect them with
+input/output contracts — inspect any engine with
 `registry.get_engine(key).diagnostics()`.
+
+## Capability index & dependency graph (machine-readable)
+
+- `registry.describe_all()` — uniform self-description of every registered
+  engine (id, name, version, ready, contracts, dependencies, capabilities).
+- `registry.capability_index()` — capability tag → engine keys
+  (~60 tags across 38 engines today).
+- `registry.dependency_graph()` — declared upstream dependencies per engine.
+
+`tests/test_architecture.py` keeps the index and graph consistent with the
+registry (no unregistered keys, no dangling dependencies). Human-readable
+view: `SYSTEM_DEPENDENCY_MAP.md`.
 
 ## Adding an engine (checklist)
 

@@ -4,6 +4,41 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.6 — Architecture Review & Platform Governance (Agent 1)
+
+A comprehensive architecture audit covering Agents 1-11 (shipped) and
+preparing the platform for Agents 12-30. Full report:
+[`ARCHITECTURE_REVIEW.md`](ARCHITECTURE_REVIEW.md) (Architecture Score
+**88/100**, Future Readiness **90/100**).
+
+### Machine-readable architecture registries
+
+`engines/registry.py` gained read-only introspection: `describe_all()`
+(uniform engine self-descriptions), `capability_index()` (49 capability
+tags → engine keys), and `dependency_graph()` (declared upstream
+dependencies). Four new consistency tests keep stages, workflows,
+dependencies, and the index aligned with the registry — dangling keys now
+fail the build.
+
+### New governance documents
+
+[`AGENT_REGISTRY.md`](AGENT_REGISTRY.md) (Agents 1-20, departments, future
+expansion registry) · [`SYSTEM_DEPENDENCY_MAP.md`](SYSTEM_DEPENDENCY_MAP.md)
+(layer diagram, pipeline data flow, live dependency graph, module boundary
+rules) · [`CAPABILITY_MATRIX.md`](CAPABILITY_MATRIX.md) ·
+[`ENGINE_CAPABILITY_INDEX.md`](ENGINE_CAPABILITY_INDEX.md) ·
+[`ARCHITECTURE_REVIEW.md`](ARCHITECTURE_REVIEW.md) (audit, debt, risks,
+refactor plan, Agents 16-30 recommendations) · rewritten
+[`INTEGRATION_CHECKLIST.md`](INTEGRATION_CHECKLIST.md) (the 14-step
+checklist every new engine follows).
+
+### Creative Studio integration (pending)
+
+Agent 12's Creative Studio engine is built on `feature/creative-studio` but
+not yet merged here. The `creative` stage slot and `creative_package`
+ContentPackage field are reserved; merge Agent 12's branch then follow
+`INTEGRATION_CHECKLIST.md` steps 8-9 to register and stage it.
+
 ## Version 9.5 — Market Intelligence Department (Agent 11)
 
 The company's strategic planning engine is live. Everything Generational
