@@ -103,19 +103,24 @@ def _confidence(candidate: dict) -> int:
 
 
 def _recommendations(values: dict, candidate: dict) -> list:
-    """Actionable fixes: weakest scored fields first, then threat fixes."""
+    """Actionable fixes: flagged threats reserve their slots first (they are
+    production risks, not just growth opportunities), then the weakest
+    scored fields fill whatever room is left, up to `_MAX_RECOMMENDATIONS`."""
+    threat_report = candidate.get("threat_report") or {}
+    threat_fixes = []
+    for item in threat_report.get("flagged_threats", [])[:_MAX_THREAT_FIXES]:
+        fix = item.get("fix")
+        if fix and fix not in threat_fixes:
+            threat_fixes.append(fix)
+
+    remaining_slots = max(_MAX_RECOMMENDATIONS - len(threat_fixes), 0)
     weak_fields = sorted(
         (key for key in FIELD_TIPS if values[key] < _WEAK_THRESHOLD),
         key=lambda key: values[key],
     )
-    tips = [FIELD_TIPS[key] for key in weak_fields[:_MAX_RECOMMENDATIONS]]
+    growth_tips = [FIELD_TIPS[key] for key in weak_fields[:remaining_slots]]
 
-    threat_report = candidate.get("threat_report") or {}
-    for item in threat_report.get("flagged_threats", [])[:_MAX_THREAT_FIXES]:
-        fix = item.get("fix")
-        if fix and fix not in tips:
-            tips.append(fix)
-
+    tips = threat_fixes + growth_tips
     if not tips:
         tips.append("No major gaps detected — maintain the current hook/pacing/payoff balance.")
 
