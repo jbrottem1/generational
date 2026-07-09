@@ -24,10 +24,12 @@ Capability tags are declared on `ContractEngine` subclasses via the
 | **Production** | SEO & localization | `seo`, `multi-language`, `localization` | `seo_optimization` |
 | **Production** | Publishing | `publishing`, `scheduling`, `multi-platform` | `scheduler`, `publishing` |
 | **Intelligence** | Analytics & learning | `analytics`, `learning`, `attribution` | `analytics`, `learning` |
-| **Intelligence** | Creative design | `creative`, `storyboard`, `style` | `creative_studio` *(pending `feature/creative-studio` merge)* |
-| **Intelligence** | Optimization lab | `experimentation`, `ab-testing` | `optimization_lab` *(planned, Agent 13)* |
-| **Media Gen** | Asset generation | `asset-generation`, `image-gen`, `video-gen` | `asset_generation` *(live, Agent 14)* |
-| **Media Gen** | IP & universes | `ip`, `character`, `universe` | `ip_management` *(planned, Agent 15)* |
+| **Intelligence** | Creative design | `creative`, `storyboard`, `style` | `creative_studio` **LIVE** |
+| **Intelligence** | Optimization lab | `experimentation`, `ab-testing` | `optimization_lab` *(stub — Agent 13)* |
+| **Media Gen** | Asset generation | `asset-generation`, `image-gen`, `video-gen` | `asset_generation` **LIVE** |
+| **Media Gen** | IP & universes | `characters`, `universes`, `continuity` | `character_universe` *(stub — Agent 15)* |
+| **Media Gen** | Animation | `animation-planning`, `cinematics`, `lip-sync` | `animation` *(stub — Agent 16)* |
+| **Media Gen** | Post-production | `editing`, `color`, `captions`, `exports` | `post_production` **LIVE** |
 
 ---
 

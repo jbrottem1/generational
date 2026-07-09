@@ -4,6 +4,57 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.9 — Architecture Review after Agents 12–17 (Agent 1)
+
+Post-integration architecture audit. Full report:
+[`ARCHITECTURE_REVIEW.md`](ARCHITECTURE_REVIEW.md) (Architecture Score
+**90/100**, Future Readiness **91/100**).
+
+### Preferred distribution pipeline wired
+
+```
+packaging → creative → character_universe → asset_generation → animation
+         → render → post_production → seo → optimization → publish
+```
+
+Creative Studio (12), Asset Generation (14), and Post-Production (17) are
+**LIVE**. Optimization Lab (13), Character/Universe (15), and Animation (16)
+are registered as `FutureEngine` stubs so their stages exist and skip
+cleanly until their feature worktrees merge. Package slots reserved:
+`character_universe_package`, `animation_package`, `optimization_package`.
+
+### Governance updates
+
+[`PIPELINE_SPEC.md`](PIPELINE_SPEC.md) · [`AGENT_REGISTRY.md`](AGENT_REGISTRY.md)
+· [`SYSTEM_DEPENDENCY_MAP.md`](SYSTEM_DEPENDENCY_MAP.md) ·
+[`ENGINE_REGISTRY.md`](ENGINE_REGISTRY.md) · [`ORCHESTRATOR.md`](ORCHESTRATOR.md)
+· [`CAPABILITY_MATRIX.md`](CAPABILITY_MATRIX.md) · [`DATA_CONTRACTS.md`](DATA_CONTRACTS.md)
+reconciled. Roadmap for Agents 18–30 prioritized in the architecture review.
+
+## Version 9.9 — AI Director (Agent 18)
+
+Every packaged content item now receives executive creative direction before
+production begins. The `ai_director` engine consumes upstream intelligence
+(psychology, script, visual, audio, trend, market, analytics) and produces
+a structured `director_package` — production strategy, platform targets,
+creative/visual/animation style, camera plan, pacing, shot plan, character
+plan, music/narration/editing direction, optimization hints, asset
+requirements, quality targets, and per-agent orchestration notes for Agents
+12–17.
+
+```python
+from services.orchestrator import Orchestrator
+
+orch = Orchestrator()
+report = orch.run_ai_director_stage(context)
+# context["ai_director_packages"] — one per item
+# context["unified_packages"][i]["director_package"]
+```
+
+Pipeline order: `ai_director → creative → asset_generation → render → post_production → seo → publish`
+
+See `AI_DIRECTOR.md`.
+
 ## Version 9.8 — Post-Production & Intelligent Editing Engine (Agent 17)
 
 Completed render packages now flow through intelligent post-production

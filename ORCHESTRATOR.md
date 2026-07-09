@@ -61,19 +61,24 @@ orch.run_script_stage(context)
 orch.run_visual_stage(context)
 orch.run_audio_stage(context)
 orch.run_quality_stage(context)
-orch.run_render_stage(context)     # Agent 6 — Render & Video Production
-orch.run_seo_stage(context)        # Agent 8 — Global Content Optimization
-orch.run_publish_stage(context)    # Agent 7 — Publishing & Scheduler
-orch.run_analytics_stage(context)  # Agent 9 — Analytics collection (live)
-orch.run_learning_stage(context)   # Agent 9 — Learning feedback (live)
 
-# Future stages — wired now, light up when their engines report ready;
-# until then they skip with diagnostics, never crash:
-orch.run_brand_stage(context)      # Agent 10 — Multi-Brand OS
+# Distribution stages (v9.7 preferred order) — stubs skip with WARNING:
+orch.run_creative_stage(context)            # Agent 12 — LIVE
+orch.run_character_universe_stage(context)  # Agent 15 — stub
+orch.run_asset_generation_stage(context)    # Agent 14 — LIVE
+orch.run_animation_stage(context)           # Agent 16 — stub
+orch.run_render_stage(context)              # Agent 6 — LIVE
+orch.run_post_production_stage(context)     # Agent 17 — LIVE
+orch.run_seo_stage(context)                 # Agent 8 — LIVE
+orch.run_optimization_stage(context)        # Agent 13 — stub
+orch.run_publish_stage(context)             # Agent 7 — LIVE
+orch.run_analytics_stage(context)           # Agent 10
+orch.run_learning_stage(context)            # Agent 10
+orch.run_brand_stage(context)               # brand stub
 ```
 
-Agent 9's stages run post-publish: on demand via the runners above, or
-automatically after every full run once
+Agent 10's analytics/learning stages run post-publish: on demand via the
+runners above, or automatically after every full run once
 `services.analytics.integration.enable_continuous_learning()` has attached
 its `analytics` / `learning` hooks (see §5) — the closed loop where every
 published video makes the next one more intelligent.

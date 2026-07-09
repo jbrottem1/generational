@@ -107,13 +107,15 @@ attribution) · `learning` (pattern mining, weight recommendations,
 long-term memory). Logic in `services/analytics/` and `services/learning/`;
 see `ANALYTICS_LEARNING.md`.
 
-## Live engine (creative — Agent 12, pending merge)
+## Live engine (creative — Agent 12)
 
-`creative_studio` — reserved on `feature/creative-studio`. After merge:
-register in `engines/__init__.py`, add `creative` to `STAGE_GROUPS` and
-`DISTRIBUTION_STAGES` (packaging → **creative** → render → seo → publish),
-fill `creative_package`. See `INTEGRATION_CHECKLIST.md` and
-`CAPABILITY_MATRIX.md`.
+`creative_studio` — the Creative Studio (`engines/creative_studio.py`,
+logic in `services/creative_studio/`). Subclasses `ContractEngine`, runs
+as the first distribution stage after packaging, and fills
+`creative_package` (storyboards, shot lists, style libraries, character
+consistency, environments). Asset backends swap in via
+`register_creative_provider()` (`providers/creative/`). See
+`CREATIVE_STUDIO.md`.
 
 ## Live engine (asset generation — Agent 14)
 
@@ -123,10 +125,23 @@ providers in `providers/asset_generation/`). Transforms structured creative
 requests into production-ready visual assets through swappable AI provider
 adapters. Writes `asset_package` on each ContentPackage; context keys
 `asset_generation_summary` + `asset_packages`. Runs in the distribution
-pipeline after packaging, before render. Phase 2 (v1.1): provider catalog,
-latency-aware selection, batch generation, job-queue interfaces, usage
-tracking, asset metadata, and prepared media classes for animation /
-audio / motion graphics. See `ASSET_GENERATION_ENGINE.md`.
+pipeline after Creative / Character Universe, before Animation / Render.
+Phase 2 (v1.1): provider catalog, latency-aware selection, batch
+generation, job-queue interfaces, usage tracking, asset metadata, and
+prepared media classes for animation / audio / motion graphics. See
+`ASSET_GENERATION_ENGINE.md`.
+
+## Live engine (ai director — Agent 18)
+
+`ai_director` — the AI Director & Executive Creative Decision Engine
+(`engines/ai_director.py`, logic in `services/ai_director/`). Consumes
+intelligence from Psychology, Script, Visual, Voice, Trend, Market, and
+Analytics packages and determines the optimal production strategy before
+assets are generated. Writes `director_package` on each ContentPackage;
+context keys `ai_director_summary` + `ai_director_packages`. Runs in the
+distribution pipeline after packaging, before Creative Studio. Configurable
+decision policies with a reinforcement-learning feedback hook. See
+`AI_DIRECTOR.md`.
 
 ## Live engine (post-production — Agent 17)
 
@@ -141,18 +156,20 @@ Writes `post_production_package` on each ContentPackage; context keys
 distribution pipeline after render, before seo. See
 `POST_PRODUCTION_ENGINE.md`.
 
-## Reserved keys (planned / contract stubs / names — do NOT reuse)
+## Reserved keys (planned / contract stubs — do NOT reuse)
 
 | Key | Status | Future owner |
 |---|---|---|
-| `voice` | planned stub | Voice Pipeline agent (real TTS / voice clone) |
-| `brand_management` | contract stub | Multi-Brand OS agent |
-| `optimization_lab` | name reserved | Agent 13 — Optimization Laboratory |
-| `ip_management` | name reserved | Agent 15 — Character, Universe & IP |
-| `animation` | name reserved | Agent 16 — Animation & Cinematics |
-| `ai_director` | name reserved | Agent 18 — AI Director |
+| `voice` | planned stub | Voice Pipeline (real TTS / voice clone) |
+| `brand_management` | contract stub | Multi-Brand OS |
+| `optimization_lab` | contract stub (wired in `optimization` stage) | **Agent 13** — merge worktree |
+| `character_universe` | contract stub (wired in `character_universe` stage) | **Agent 15** — merge worktree |
+| `animation` | contract stub (wired in `animation` stage) | **Agent 16** — merge worktree |
 | `business_intelligence` | name reserved | Agent 19 — BI & Monetization |
 | `autonomous_executive` | name reserved | Agent 20 — Autonomous Executive |
+
+> Note: the earlier reserved name `ip_management` is **retired** in favor
+> of `character_universe` (Agent 15's actual engine key).
 
 Contract stubs live in `engines/future_stubs.py` and already declare their
 input/output contracts — inspect any engine with
@@ -162,8 +179,7 @@ input/output contracts — inspect any engine with
 
 - `registry.describe_all()` — uniform self-description of every registered
   engine (id, name, version, ready, contracts, dependencies, capabilities).
-- `registry.capability_index()` — capability tag → engine keys
-  (~60 tags across 38 engines today).
+- `registry.capability_index()` — capability tag → engine keys.
 - `registry.dependency_graph()` — declared upstream dependencies per engine.
 
 `tests/test_architecture.py` keeps the index and graph consistent with the
@@ -176,5 +192,5 @@ view: `SYSTEM_DEPENDENCY_MAP.md`.
 2. Subclass `ContractEngine` in your landing zone; declare contracts.
 3. Append the registration in `engines/__init__.py` (Agent 1 review).
 4. Map the key to a stage in `services/orchestrator/stages.py`
-   (`STAGE_OF_ENGINE` / `STAGE_GROUPS`) if it is a new stage — Agent 1 review.
+   (`STAGE_OF_ENGINE` / `STAGE_GROUPS` / `DISTRIBUTION_STAGES`) — Agent 1 review.
 5. Add a dedicated test file proving registration, contracts, and behavior.

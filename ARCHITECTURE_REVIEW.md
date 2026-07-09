@@ -1,128 +1,165 @@
-# Generational — Architecture Review (v9.6, 2026-07-09)
+# Generational — Architecture Review (v9.7, 2026-07-09)
 
-Comprehensive audit by Agent 1 covering Agents 1-11 (shipped on this
-branch) and readiness for Agents 12-30. Verified against the live registry
-(**37 engines**, **36 ready**, **49 capability tags**) and the full test
-suite on `feature/market-intelligence` (excluding unmerged Agent 12
-creative-studio files present only locally).
+Post-Agents-12–17 integration audit by Agent 1 (Chief Systems Architect).
+Scope: validate modularity, orchestrator-driven communication, contracts,
+pipeline ordering, and readiness for Agents 18–30. **No engine redesigns.**
+
+Verified against the live registry on `feature/post-production-engine`
+(**43 engines**, **38 ready**, **5 FutureEngine stubs**) and the full test
+suite.
 
 ---
 
-## 1. Current Architecture Score: 88 / 100
+## 1. Current Architecture Score: **90 / 100**
 
 | Dimension | Score | Evidence |
 |---|---|---|
-| Loose coupling | 95 | Directive #1 statically enforced; zero engine-to-engine imports; orchestrator engine-agnostic (tested) |
-| Clear ownership | 90 | Every engine key has one owner; landing zones + ownership rows; one gap found and fixed this review (see §2) |
-| Provider abstraction | 85 | 10+ provider interfaces, per-file adapter swap; not yet machine-enforced (Directive #2 candidate) |
-| Pipeline consistency | 90 | One plan source (`WORKFLOWS` + stage registry); stage/registry/dependency consistency now tested |
-| Backward compatibility | 90 | Additive-only package fields; unknown fields survive via `extras`; re-export shims preserved every refactor |
-| Graceful degradation | 95 | Every stage: empty input → no-items summary; failure → WARNING with diagnostics; missing engine → skip |
-| Scalability to 100+ engines | 80 | Registration is O(1) per engine but `engines/__init__.py` is a single append-point contention file; execution is sequential in-process |
-| Version compatibility | 75 | Engines declare `version` but nothing checks contract-version compatibility between producers and consumers |
+| Loose coupling | 95 | Directive #1 statically enforced; zero engine-to-engine imports |
+| Clear ownership | 92 | Agents 12/14/17 live with exclusive package slots; 13/15/16 reserved as stubs |
+| Provider abstraction | 85 | Provider interfaces for creative/asset/post-production; Directive #2 still pending |
+| Pipeline consistency | 93 | Preferred media-generation order wired in `DISTRIBUTION_STAGES`; consistency tests green |
+| Backward compatibility | 92 | Additive package fields (`animation_package`, `optimization_package`, `character_universe_package`) |
+| Graceful degradation | 95 | Stubs skip with WARNING; live engines degrade to no-items summaries |
+| Scalability to 100+ engines | 82 | Registration still append-only in `engines/__init__.py`; auto-discovery still recommended |
+| Version compatibility | 78 | Engines declare `version`; no producer/consumer contract negotiation yet |
 
-## 2. Findings from this review
+## 2. Integration status — Agents 12–17
 
-1. **Creative Studio integration gap (Agent 12, pending merge):** the engine
-   is built on `feature/creative-studio` but not yet merged into
-   `feature/market-intelligence`. Locally it can be wired (register +
-   `creative` stage in `DISTRIBUTION_STAGES`) — that wiring is documented in
-   `INTEGRATION_CHECKLIST.md` step 9 and blocked until Agent 12's branch
-   merges. *Do not register `creative_studio` without its module on the
-   branch — `engines/__init__.py` import will fail.*
-2. **Machine-readable capability/dependency views** — added
-   `registry.describe_all()`, `registry.capability_index()`,
-   `registry.dependency_graph()` + 4 consistency tests (staged keys must be
-   registered; declared dependencies must exist; index complete/uniform).
-3. **Registry docs drifted** — `ENGINE_REGISTRY.md`, `PIPELINE_SPEC.md`,
-   `DATA_CONTRACTS.md`, `AGENT_WORKFLOW.md` reconciled with the code.
-4. **New governance artifacts** — `AGENT_REGISTRY.md`,
-   `SYSTEM_DEPENDENCY_MAP.md`, `CAPABILITY_MATRIX.md`,
-   `ENGINE_CAPABILITY_INDEX.md`, rewritten `INTEGRATION_CHECKLIST.md`.
+| Agent | Key | Status on this branch | Package slot | Distribution stage |
+|---|---|---|---|---|
+| **12** Creative Studio | `creative_studio` | **LIVE** | `creative_package` | `creative` (first) |
+| **13** Optimization Lab | `optimization_lab` | **stub** (worktree ready) | `optimization_package` | `optimization` (pre-publish) |
+| **14** Asset Generation | `asset_generation` | **LIVE** | `asset_package` | `asset_generation` |
+| **15** Character / Universe / IP | `character_universe` | **stub** (worktree ready) | `character_universe_package` | `character_universe` |
+| **16** Animation & Cinematics | `animation` | **stub** (worktree ready) | `animation_package` | `animation` |
+| **17** Post-Production | `post_production` | **LIVE** | `post_production_package` | `post_production` |
 
-## 3. Technical debt
+### Finding fixed this review
+
+**Creative Studio was registered but missing from `DISTRIBUTION_STAGES`.**
+A full pipeline never ran Agent 12. Fixed: preferred order now includes
+`creative` first among distribution stages. Agents 13/15/16 are reserved
+as `FutureEngine` stubs so their stages exist and skip cleanly until merge.
+
+## 3. Confirmed pipeline (v9.7)
+
+```
+User Command
+  → Trend Discovery → Opportunity Ranking → Trend Forecasting → Market Intelligence
+  → Research + Ideation
+  → Psychology → Script → Attention → Visual → Voice/Audio
+  → Refinement → Quality Gate
+  → Media Production → Packaging
+  → Creative Studio          (Agent 12)   LIVE
+  → Character / Universe     (Agent 15)   stub → skip
+  → Asset Generation         (Agent 14)   LIVE
+  → Animation                (Agent 16)   stub → skip
+  → Render                   (Agent 6)    LIVE
+  → Post-Production          (Agent 17)   LIVE
+  → SEO Optimization         (Agent 8)    LIVE
+  → Optimization Laboratory  (Agent 13)   stub → skip
+  → Publishing               (Agent 7)    LIVE
+  → Analytics → Learning → Brand (stub)
+  → feedback into Trend / Market Intelligence
+```
+
+**Ordering rationale vs the requested ideal:**
+
+| Requested | Decision |
+|---|---|
+| Voice after Animation | Voice *planning* (`voice_audio`) stays in the intelligence pipeline (before Quality). Real TTS (`voice` stub) remains a future audio-stage upgrade — not a distribution stage. |
+| Optimization Lab after SEO | Confirmed — experiments need SEO metadata; recommendations inform publish windows. |
+| Market Intelligence at the end | Market Intelligence already runs at the *front* (opportunity selection). The learning feedback loop closes the circle; a second MI pass is unnecessary. |
+| Character before Asset Generation | Confirmed — IP context should shape asset requests. |
+
+## 4. Technical debt
 
 | Item | Severity | Owner |
 |---|---|---|
-| `render` façade engine registered but unstaged (stage runs `image`+`video` adapters over the same code) — consolidate to one entry point | medium | Agent 6 + Agent 1 |
-| Dual naming: `platforms`/`target_platforms`, `language`/`target_language`, `analytics_placeholder`/`analytics_package` (additive-rule artifacts) | low | documented, permanent |
-| `services/ideation.py` UI adapter reshapes PipelineResult → legacy dict; UI should eventually consume PipelineResult directly | low | Agent 1 |
-| Classic engines (pre-contract) don't declare input/output contracts — only ContractEngine subclasses do | medium | migrate opportunistically |
-| Simulated data behind mocks (render, publishing, analytics metrics) — fine by design, but learning loops train on synthetic signals until real providers land | medium | Agents 6/7/10 |
-| `.worktrees/` appearing untracked in the repo — should be gitignored | low | Agent 1 |
+| Agents 13/15/16 live only in `.worktrees/` — merge + replace stubs | high | Agents 13/15/16 + Agent 1 |
+| `engines/__init__.py` append-point contention at 40+ engines | medium | Agent 1 (auto-discovery) |
+| `render` façade registered but stage runs `image`+`video` | medium | Agent 6 + Agent 1 |
+| Classic engines lack declared contracts | medium | migrate opportunistically |
+| Provider abstraction not machine-enforced | medium | Directive #2 |
+| Learning-loop weight authority unbounded | medium | Directive #3 before Agent 20 |
+| Simulated metrics / mock render / mock publish | expected | real providers over time |
 
-## 4. Architecture risks
+## 5. Architecture risks
 
-1. **Single append-point contention:** every agent edits
-   `engines/__init__.py` and `STAGE_GROUPS`. At 100+ engines this becomes a
-   merge hotspot → move to auto-discovery (scan `engines/` for
-   ContractEngine subclasses) in a future version.
-2. **Sequential in-process execution:** one slow engine stalls the run; no
-   per-stage timeout/retry policy yet. The orchestrator's interface already
-   permits a distributed backend — implement behind it, not around it.
-3. **No contract-version negotiation:** if Agent 8 changes what
-   `seo_package` contains, Agent 7 finds out at runtime. Consider declared
-   contract versions checked at registration.
-4. **Learning-loop feedback authority:** `learning_recommendations` adjust
-   upstream weights; there is no bounded-authority rule yet (how much a
-   recommendation may move a weight without human sign-off).
-5. **Provider abstraction is convention, not law** (see Directive #2).
+1. **Parallel worktrees diverge** — Agents 13/15/16 each forked `stages.py` /
+   `models.py`. Merge order matters; Agent 1 must reconcile `DISTRIBUTION_STAGES`
+   (this review is the target order).
+2. **Character Universe key naming** — worktree uses `character_universe`
+   (not the earlier reserved `ip_management`). This review adopts
+   `character_universe` as canonical; `ip_management` is retired as a name.
+3. **Optimization Lab position debate** — worktree docs place it after Quality
+   *before* media production; this review places it after SEO / before Publish
+   (closer to the requested ideal and to live A/B of titles/thumbnails/windows).
+   Agent 13 should align on merge.
+4. **No auto-discovery** — every new engine still requires an
+   `engines/__init__.py` edit (merge hotspot).
+5. **Sequential in-process execution** — heavy media stages (asset gen,
+   animation, render) will need timeouts / worker pools before scale.
 
-## 5. Duplicate responsibilities audit
+## 6. Duplicate responsibilities audit
 
-- `seo` (refinement metadata packaging) vs `seo_optimization` (global
-  optimization) — **intentional separation**, documented; not duplication.
-- `render_package` (media-production planning) vs `render` stage (Agent 6
-  execution) — planning vs execution; acceptable, names are confusable —
-  documented in the dependency map.
-- `image`/`video`/`render` triple-entry into one render subsystem — flagged
-  as debt (§3), not a correctness issue.
-- No other overlaps found across 38 engines / 58 capability tags.
-
-## 6. Missing contracts & interfaces
-
-| Missing | Recommendation |
+| Pair | Verdict |
 |---|---|
-| Provider-interface directive (vendor imports outside `providers/` are possible today) | **Architecture Directive #2** — statically enforce like Directive #1 |
-| Contract versioning between producer/consumer engines | add `contract_version` to ContractEngine; registry warns on mismatch |
-| Bounded learning authority | Directive #3 candidate: weight-change caps + audit log |
-| Persistence contract (project store, analytics store, memory store each roll their own) | one `StorageProvider` interface before Agent 20 |
-| Scheduler/executor interface for autonomous runs | exists as job queue + hooks; formalize before Agent 20 |
+| `visual_intelligence` vs `creative_studio` | Distinct: VI plans shots from script; Creative designs production blueprints post-quality. |
+| `asset_manager` (media-production) vs `asset_generation` | Distinct: tracking vs generation. |
+| `render_package` vs `render` vs `animation` | Planning seed vs execution vs motion plan — acceptable, names documented. |
+| `seo` vs `seo_optimization` vs `optimization_lab` | Metadata packaging vs global SEO vs experimentation — intentional. |
+| `voice_audio` vs planned `voice` | Planning vs real TTS — intentional. |
 
-## 7. Suggested refactors (priority order)
+No prohibited overlaps found.
 
-1. Engine auto-discovery to retire the `engines/__init__.py` append point.
-2. Consolidate the render stage to a single engine entry (`render`) with
-   `image`/`video` as internal capabilities.
-3. Migrate high-traffic classic engines (psychology, script_generation,
-   visual_intelligence, voice_audio, quality) to ContractEngine so the
-   dependency graph covers the intelligence pipeline too.
-4. UI consumes `PipelineResult` directly; retire the ideation reshaping.
+## 7. Missing contracts & interfaces
 
-## 8. Future Readiness Score: 90 / 100
+| Gap | Recommendation |
+|---|---|
+| Provider-only external I/O | **Architecture Directive #2** |
+| Contract version negotiation | `contract_version` on ContractEngine |
+| Bounded learning authority | **Directive #3** before Agent 20 |
+| Unified `StorageProvider` | before multi-brand scale (Agent 10/20) |
+| Engine auto-discovery | retire `engines/__init__.py` append list |
+| Compute / job isolation for heavy stages | before Agents 16–17 at production volume |
 
-Agents 13-20 each have: a reserved engine key, a defined integration seam
-(package slot or hook), a checklist, and enforcement tests. The three
-deductions: no auto-discovery yet (registration contention), no contract
-versioning, and no compute/distribution layer for heavy media generation.
+## 8. Future Readiness Score: **91 / 100**
 
-## 9. Recommendations for Agents 16-30
+Agents 18–30 have reserved keys or clear seams. Deductions: three media
+engines still in worktrees, no auto-discovery, no Directive #2/#3 yet.
 
-- **16 (Animation) / 17 (Post-Production):** extend `creative_package` and
-  `render_package` additively; register as stages between `creative` and
-  `publish`; all asset generation behind `providers/creative/`.
-- **18 (AI Director):** consumes every package, writes direction notes only
-  (own slot); must not mutate other engines' outputs — enforce via tests.
-- **19 (BI & Monetization):** builds on `analytics_package`; add revenue
-  fields additively; no new pipeline stage needed initially.
-- **20 (Autonomous Executive):** integrate ONLY via `OrchestratorHook` +
-  the job queue (`ORCHESTRATOR_JOB_TYPE`); ship Directive #3 (bounded
-  authority + human-approval gates) BEFORE it can initiate runs.
-- **21-30 (divisions):** follow `AGENT_REGISTRY.md` §4 — every division
-  maps onto existing seams; if a division seems to need a new seam, that's
-  an Agent 1 review, not a workaround.
+## 9. Roadmap — Agents 18–30 (priority by architectural importance)
+
+| Priority | Agent | Why now |
+|---|---|---|
+| P0 | **Merge 13 / 15 / 16** | Close the stub gap; unlock the preferred pipeline end-to-end |
+| P0 | **Directive #2** (Provider-Only I/O) | Lock vendor boundaries before more media providers land |
+| P1 | **18 — AI Director** | Cross-stage direction notes; must not mutate other slots |
+| P1 | **Auto-discovery + contract versioning** | Scale past 50 engines without merge pain |
+| P1 | **10 — Brand Management** (graduate stub) | Multi-brand isolation before portfolio scale |
+| P2 | **19 — BI & Monetization** | Revenue fields on `analytics_package` |
+| P2 | **Real TTS / Voice Clone** (graduate `voice`) | Completes audio path |
+| P2 | **Directive #3** (bounded learning authority) | Prerequisite for autonomy |
+| P3 | **20 — Autonomous Executive** | Hooks + job queue only; after Directive #3 |
+| P3 | **21–25** — Translation, Localization, Community, Marketing, Knowledge Graph | Map onto existing seams |
+| P4 | **26–30** — Infrastructure, Security, Compute Scheduling, Provider Marketplace, API Platform | Platform layer |
+
+## 10. Scalability checklist
+
+| Requirement | Status |
+|---|---|
+| Unlimited future engines | ✅ via registry + `register_stage()`; ⚠️ append-list friction |
+| Unlimited content types | ✅ ContentPackage additive fields + `extras` |
+| Unlimited providers | ✅ provider registries; ⚠️ not statically enforced |
+| Unlimited brands | ⚠️ `brand_management` stub; channels exist |
+| Unlimited creators | ✅ no hardcoded creator count |
+| Unlimited AI models | ✅ LLM/provider interfaces |
+| Unlimited languages | ✅ `target_language` + SEO localization |
+| Unlimited platforms | ✅ publishing provider registry |
+| No fixed engine count assumptions | ✅ orchestrator derives plan dynamically |
 
 ---
 
-*Next review due when Agent 13 or 14 lands, or before Agent 20 begins —
+*Next review: after Agents 13/15/16 merge, or before Agent 18 begins —
 whichever comes first.*

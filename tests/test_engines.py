@@ -34,19 +34,26 @@ ASSET_GENERATION_LIVE = {"asset_generation"}
 # Agent 12 — the Creative Studio Engine is live.
 CREATIVE_STUDIO_LIVE = {"creative_studio"}
 
+# Agent 18 — the AI Director Engine is live.
+AI_DIRECTOR_LIVE = {"ai_director"}
+
 # Agent 17 — the Post-Production & Intelligent Editing Engine is live.
 POST_PRODUCTION_LIVE = {"post_production"}
 
 LIVE_KEYS = (
     INTELLIGENCE_LIVE | PRODUCTION_LIVE | RENDER_LIVE
     | OPTIMIZATION_LIVE | PUBLISHING_LIVE | ANALYTICS_LIVE
-    | ASSET_GENERATION_LIVE | CREATIVE_STUDIO_LIVE | POST_PRODUCTION_LIVE
+    | ASSET_GENERATION_LIVE | CREATIVE_STUDIO_LIVE
+    | AI_DIRECTOR_LIVE | POST_PRODUCTION_LIVE
 )
 
 PLANNED_KEYS = {
     "voice",
-    # Agent 10 contract stub
+    # Contract stubs — light up when feature branches merge
     "brand_management",
+    "optimization_lab",      # Agent 13
+    "character_universe",    # Agent 15
+    "animation",             # Agent 16
 }
 
 EXPECTED_KEYS = LIVE_KEYS | PLANNED_KEYS

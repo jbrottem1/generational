@@ -97,9 +97,13 @@ PRODUCTION_PACKAGE_FIELDS = [
     "publishing_package",   # Agent 7 (Publishing & Scheduler) writes here
     "analytics_package",    # Agent 9 (Analytics & Learning) writes here
     "learning_metadata",    # Agent 9 (Learning feedback) writes here
+    "director_package",     # Agent 18 (AI Director) writes here
     "creative_package",     # Agent 12 (Creative Studio) writes here
+    "character_universe_package",  # Agent 15 (Character, Universe & IP) writes here
     "asset_package",        # Agent 14 (Universal Asset Generation) writes here
+    "animation_package",    # Agent 16 (Animation & Cinematics) writes here
     "post_production_package",  # Agent 17 (Post-Production & Intelligent Editing) writes here
+    "optimization_package", # Agent 13 (Optimization Laboratory) writes here
     "status",
     "diagnostics",
 ]
@@ -150,9 +154,13 @@ class ProductionPackage:
     publishing_package: dict = field(default_factory=dict)
     analytics_package: dict = field(default_factory=dict)
     learning_metadata: dict = field(default_factory=dict)
+    director_package: dict = field(default_factory=dict)
     creative_package: dict = field(default_factory=dict)
+    character_universe_package: dict = field(default_factory=dict)
     asset_package: dict = field(default_factory=dict)
+    animation_package: dict = field(default_factory=dict)
     post_production_package: dict = field(default_factory=dict)
+    optimization_package: dict = field(default_factory=dict)
     status: str = "planned"      # planned | approved | held | rendered | scheduled | published
     diagnostics: dict = field(default_factory=dict)
     created_at: str = field(default_factory=_now_iso)

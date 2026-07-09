@@ -167,12 +167,22 @@ class Orchestrator:
     def run_quality_stage(self, context: dict) -> StageReport:
         return self.run_stage("quality", context)
 
-    # Future stages (Agents 6-10) — wired now, light up when their engines
-    # become ready (until then their engines are skipped and the report is
-    # a WARNING with diagnostics — never a crash).
+    # Media-generation & distribution stages (Agents 6-17). Live engines
+    # run; FutureEngine stubs (character_universe, animation, optimization_lab)
+    # skip with WARNING diagnostics until their feature branches merge.
+    # Agent 18 adds run_ai_director_stage when its engine merges.
 
     def run_creative_stage(self, context: dict) -> StageReport:
         return self.run_stage("creative", context)
+
+    def run_character_universe_stage(self, context: dict) -> StageReport:
+        return self.run_stage("character_universe", context)
+
+    def run_asset_generation_stage(self, context: dict) -> StageReport:
+        return self.run_stage("asset_generation", context)
+
+    def run_animation_stage(self, context: dict) -> StageReport:
+        return self.run_stage("animation", context)
 
     def run_render_stage(self, context: dict) -> StageReport:
         return self.run_stage("render", context)
@@ -180,11 +190,11 @@ class Orchestrator:
     def run_post_production_stage(self, context: dict) -> StageReport:
         return self.run_stage("post_production", context)
 
-    def run_asset_generation_stage(self, context: dict) -> StageReport:
-        return self.run_stage("asset_generation", context)
-
     def run_seo_stage(self, context: dict) -> StageReport:
         return self.run_stage("seo", context)
+
+    def run_optimization_stage(self, context: dict) -> StageReport:
+        return self.run_stage("optimization", context)
 
     def run_publish_stage(self, context: dict) -> StageReport:
         return self.run_stage("publish", context)

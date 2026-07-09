@@ -30,9 +30,14 @@ list is `CONTENT_PACKAGE_FIELDS`.
 | `publishing_package` | dict | **Agent 7** |
 | `analytics_placeholder` / `analytics_package` | dict | **Agent 9** |
 | `learning_metadata` | dict | **Agent 9** |
+| `director_package` | dict | **Agent 18** (executive creative strategy, orchestration notes) |
+| `director_package` | dict | **Agent 18** (AI Director notes — reserved; engine not yet merged) |
 | `creative_package` | dict | **Agent 12** (storyboards, shot lists, style, characters, environments) |
+| `character_universe_package` | dict | **Agent 15** (cast, universes, continuity, story bible — stub until merge) |
 | `asset_package` | dict | **Agent 14** (generated assets, jobs, cache report, readiness) |
+| `animation_package` | dict | **Agent 16** (timeline, camera, motion, lip sync, VFX — stub until merge) |
 | `post_production_package` | dict | **Agent 17** (edit timeline, scene cuts, audio mix, captions, color, exports, QC) |
+| `optimization_package` | dict | **Agent 13** (variants, scores, recommendations — stub until merge) |
 | `status` | str | pipeline (`planned → approved/held → rendered → scheduled → published`) |
 | `diagnostics` | dict | any stage (append keys) |
 | `created_at` / `extras` | str / dict | packager / forward-compat overflow |
@@ -307,6 +312,32 @@ its own context keys; render/seo/publishing slots are read, never mutated.
 Feedback reaches upstream engines through `OrchestratorHook` (kinds
 `analytics` / `learning`) and the guidance adapters — never engine-to-engine
 calls.
+
+---
+
+## 8.0 director_package (Agent 18) — `services/ai_director/`
+
+The AI Director (`ai_director` engine, `ai_director` stage) determines the
+optimal production strategy before assets are generated. Field tuples in
+`services/ai_director/models.py` are the testable contract; all output is
+JSON-safe dicts, additive-only from 1.0.
+
+**ContentPackage `director_package` slot** (`DIRECTOR_PACKAGE_FIELDS`, v1.0):
+`director_package_version`, `engine_version`, `project_id`,
+`production_strategy`, `target_platforms`, `creative_style`, `visual_style`,
+`animation_style`, `camera_plan`, `pacing`, `shot_plan`, `character_plan`,
+`music_plan`, `narration_plan`, `editing_plan`, `optimization_hints`,
+`asset_requirements`, `expected_runtime`, `quality_targets`,
+`production_priority`, `orchestration_notes`, `upstream_alignment`,
+`validation`, `director_diagnostics`, `generated_at`.
+
+**Context keys** (additive): `ai_director_summary` + `ai_director_packages`
+(aggregate run output).
+
+Agent 18 writes ONLY the `director_package` slot and its context keys;
+script, visual, audio, creative, asset, render, and all other slots are
+read, never mutated. Downstream Agents 12–17 consume orchestration notes.
+See `AI_DIRECTOR.md`.
 
 ---
 

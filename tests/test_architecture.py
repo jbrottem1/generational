@@ -165,8 +165,21 @@ def test_orchestrator_controls_execution_and_package_flow(tmp_path, monkeypatch)
     assert executed[0] == "trend"
     assert "quality" in executed
     # The integrated production pipeline ends with the distribution stages:
-    # packaging → asset generation → render → post_production → seo → publish.
-    assert executed[-6:] == ["packaging", "asset_generation", "render", "post_production", "seo", "publish"]
+    # packaging → creative → character_universe → asset_generation →
+    # animation → render → post_production → seo → optimization → publish.
+    # Stubs (character_universe, animation, optimization) skip with WARNING.
+    assert executed[-10:] == [
+        "packaging",
+        "creative",
+        "character_universe",
+        "asset_generation",
+        "animation",
+        "render",
+        "post_production",
+        "seo",
+        "optimization",
+        "publish",
+    ]
 
     assert result.packages, "pipeline must emit ContentPackages"
     for package in result.packages:
@@ -199,7 +212,11 @@ def test_missing_engine_degrades_gracefully_not_fatally():
 
 
 def test_future_stages_remain_wired_and_safe():
-    for stage in ("render", "seo", "publish", "analytics", "learning", "brand_management"):
+    for stage in (
+        "creative", "character_universe", "asset_generation", "animation",
+        "render", "post_production", "seo", "optimization", "publish",
+        "analytics", "learning", "brand_management",
+    ):
         assert stage in STAGE_GROUPS, stage
         report = get_orchestrator().run_stage(stage, {"command": "probe"})
         assert report.status != StageStatus.FAILED, (stage, report.errors)

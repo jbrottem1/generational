@@ -46,31 +46,43 @@ STAGE_GROUPS: "dict[str, list[str]]" = {
     "visual": ["visual_intelligence"],
     "audio": ["voice_audio"],
     "quality": ["quality"],
-    # Engines are planned/contract stubs today; these stages light up when
-    # their engines report ready — nothing else changes. Ownership:
-    # render → Agent 6 · publish → Agent 7 · seo → Agent 8 ·
-    # analytics/learning → Agent 9 · brand_management → Agent 10.
+    # Post-quality media generation & distribution (Agents 6-17).
+    # Ownership: creative → Agent 12 · character_universe → Agent 15 ·
+    # asset_generation → Agent 14 · animation → Agent 16 · render → Agent 6 ·
+    # post_production → Agent 17 · seo → Agent 8 · optimization → Agent 13 ·
+    # publish → Agent 7 · analytics/learning → Agent 10 · brand → Agent 10.
+    # Agent 18 (ai_director) inserts before creative when its branch merges.
+    "creative": ["creative_studio"],
+    "character_universe": ["character_universe"],
+    "asset_generation": ["asset_generation"],
+    "animation": ["animation"],
     "render": ["image", "video"],
+    "post_production": ["post_production"],
     "seo": ["seo_optimization"],
+    "optimization": ["optimization_lab"],
     "publish": ["scheduler", "publishing"],
     "analytics": ["analytics"],
     "learning": ["learning"],
     "brand_management": ["brand_management"],
-    # Universal Asset Generation (Agent 14): generates production-ready
-    # visual assets from creative requirements before rendering.
-    "asset_generation": ["asset_generation"],
-    # Post-Production (Agent 17): intelligent editing after render.
-    "post_production": ["post_production"],
-    # Creative Studio (Agent 12): visual production design on demand.
-    "creative": ["creative_studio"],
 }
 
 # Post-packaging distribution stages executed by the full production
-# pipeline, in contract order (PIPELINE_SPEC.md): Asset Generation →
-# Render Engine → Global Content Optimization → Publishing. Each runs
-# against the packaged context; unavailable engines skip with warnings —
-# never a crash.
-DISTRIBUTION_STAGES: "tuple[str, ...]" = ("asset_generation", "render", "post_production", "seo", "publish")
+# pipeline. Preferred media-generation order (v9.7 architecture review):
+# Creative → Character/Universe → Asset Generation → Animation → Render →
+# Post-Production → SEO → Optimization Lab → Publishing.
+# Unavailable engines skip with warnings — never a crash. Agents 13/15/16
+# are FutureEngine stubs until their feature branches merge.
+DISTRIBUTION_STAGES: "tuple[str, ...]" = (
+    "creative",
+    "character_universe",
+    "asset_generation",
+    "animation",
+    "render",
+    "post_production",
+    "seo",
+    "optimization",
+    "publish",
+)
 
 
 def distribution_stage_names() -> list:

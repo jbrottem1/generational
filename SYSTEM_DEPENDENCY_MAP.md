@@ -1,4 +1,4 @@
-# Generational — System Dependency Map (v9.6)
+# Generational — System Dependency Map (v9.7)
 
 Who may depend on whom, the full pipeline data flow, and the live engine
 dependency graph. The machine-readable version of this document is
@@ -15,10 +15,10 @@ Dependencies point downward only. A layer never imports anything above it.
 graph TD
     UI["ui/ — Streamlit views (display only)"]
     ORCH["services/orchestrator/ — the kernel:<br/>stages, packager, hooks, ContentPackage"]
-    SVC["services/* — domain services<br/>(trends, scripts, visual, audio, seo, publishing,<br/>analytics, learning, market_intelligence, creative_studio...)"]
+    SVC["services/* — domain services<br/>(trends, scripts, visual, audio, seo, publishing,<br/>analytics, learning, market_intelligence, creative_studio,<br/>asset_generation, post_production...)"]
     ENG["engines/ — registered plugins<br/>(one key each; never import each other)"]
     LIB["Shared foundation:<br/>engines/base·contracts·heuristics·analysis, core/*"]
-    PROV["providers/ — vendor adapters<br/>(research, trends, creative, publishing...)"]
+    PROV["providers/ — vendor adapters<br/>(research, trends, creative, asset_generation,<br/>post_production, publishing...)"]
 
     UI --> ORCH
     ORCH --> ENG
@@ -29,61 +29,64 @@ graph TD
     ORCH --> LIB
 ```
 
-- The **orchestrator** discovers engines through the registry only
-  (`tests/test_architecture.py::test_orchestrator_does_not_import_engine_modules`).
-- **Engines** never import engines (Architecture Directive #1, statically
-  enforced). The two sanctioned exceptions are the `image`/`video` stage
-  adapters fronting Agent 6's own `engines/render/` subsystem.
-- **Providers** are imported by services/engines through interfaces only —
-  vendor SDKs never appear above the provider layer.
+- The **orchestrator** discovers engines through the registry only.
+- **Engines** never import engines (Architecture Directive #1). Sanctioned
+  exception: `image`/`video` adapters fronting Agent 6's `engines/render/`.
+- **Providers** are imported through interfaces only.
 
 ## 2. Pipeline data flow (stage → stage via ContentPackage/context)
 
 ```mermaid
 graph LR
-    CMD([User Command]) --> T[trend<br/>discovery+ranking+<br/>forecasting+market intel]
+    CMD([User Command]) --> T[trend]
     T --> R[research+ideation]
     R --> P[psychology]
     P --> S[script]
     S --> A[attention]
     A --> V[visual]
     V --> AU[audio]
-    AU --> REF[refinement<br/>ranking·critic·revision·<br/>citation·seo·threats]
+    AU --> REF[refinement]
     REF --> Q[quality gate]
     Q --> PROD[media production]
-    PROD -->     PKG[packaging →<br/>ContentPackage]
-    PKG --> REN[render]
-    REN --> SEO[seo optimization]
-    SEO --> PUB[publish<br/>scheduler+publishing]
+    PROD --> PKG[packaging]
+    PKG --> C[creative]
+    C --> CU[character_universe<br/>stub]
+    CU --> AG[asset_generation]
+    AG --> ANI[animation<br/>stub]
+    ANI --> REN[render]
+    REN --> PP[post_production]
+    PP --> SEO[seo]
+    SEO --> OPT[optimization<br/>stub]
+    OPT --> PUB[publish]
     PUB --> AN[analytics]
     AN --> L[learning]
     L --> BM[brand mgmt<br/>stub]
-    L -.feedback loop.-> T
+    L -.feedback.-> T
 ```
 
-Every arrow is the orchestrator handing the shared context / ContentPackage
-to the next stage — never a direct call.
+Every arrow is the orchestrator handing context / ContentPackage to the
+next stage — never a direct call. See `PIPELINE_SPEC.md` for the full
+contract.
 
 ## 3. Live engine dependency graph (declared contracts)
-
-Generated from `registry.dependency_graph()` — contract engines declare the
-engine keys that must run earlier. Verified against the registry by tests.
 
 | Engine | Declares dependencies on |
 |---|---|
 | `trend_forecasting` | `trend_discovery`, `opportunity_ranking` |
 | `market_intelligence` | `trend_discovery`, `opportunity_ranking`, `trend_forecasting` |
 | `creative_studio` | `quality` |
+| `asset_generation` | (via package inputs — creative / quality) |
+| `post_production` | (via package inputs — render) |
+| `optimization_lab` (stub) | `quality` |
+| `animation` (stub) | `quality` |
+| `character_universe` (stub) | — (persistent registry) |
 | `render` / `image` / `video` | `visual_intelligence`, `voice_audio`, `quality` |
 | `seo_optimization` | `seo`, `quality` |
 | `scheduler` | `publishing_queue` |
-| `publishing` | `render`, `seo_optimization` (via package inputs) |
+| `publishing` | `render`, `seo_optimization` (via packages) |
 | `analytics` | `publishing` |
 | `learning` | `analytics` |
 | `brand_management` (stub) | `learning` |
-
-Classic (pre-contract) engines order themselves via `WORKFLOWS["intelligence"]`
-— the single source of truth the orchestrator derives its plan from.
 
 ## 4. Module boundary rules (summary)
 

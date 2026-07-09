@@ -1,12 +1,11 @@
-# Generational — Agent Registry (v9.6)
+# Generational — Agent Registry (v9.7)
 
-The canonical roster of development agents, the department each belongs to,
-what they own, and the expansion slots reserved for the future. Maintained
-by Agent 1; a new agent starts by adding its row here **before** writing
-code (see `INTEGRATION_CHECKLIST.md`).
+Canonical roster of development agents, departments, and expansion slots.
+Maintained by Agent 1. New agents add a row here **before** writing code
+(`INTEGRATION_CHECKLIST.md`).
 
-Companion views: `ENGINE_REGISTRY.md` (engine keys), `SYSTEM_DEPENDENCY_MAP.md`
-(who depends on whom), `AGENT_WORKFLOW.md` (merge safety + file ownership).
+Companions: `ENGINE_REGISTRY.md` · `SYSTEM_DEPENDENCY_MAP.md` ·
+`AGENT_WORKFLOW.md` · `ARCHITECTURE_REVIEW.md`.
 
 ---
 
@@ -16,91 +15,82 @@ Companion views: `ENGINE_REGISTRY.md` (engine keys), `SYSTEM_DEPENDENCY_MAP.md`
 
 | Agent | Subsystem | Engine keys | Status |
 |---|---|---|---|
-| **1** | Master Architecture & Orchestrator | — (owns `services/orchestrator/`, registry, contracts, `trend_discovery`, `opportunity_ranking`) | active, permanent |
-| **2** | Psychology & Behavioral Intelligence | `psychology`, `attention_graph`, `threat_detection` | shipped |
-| **3** | Script Generation | `script_generation`, `script`, `critic`, `revision` | shipped |
-| **4** | Visual Intelligence | `visual_intelligence` | shipped |
-| **5** | Voice & Audio | `voice_audio` (+ planned `voice` TTS) | shipped (planning) |
+| **1** | Master Architecture & Orchestrator | orchestrator, registry, contracts, trend_discovery, opportunity_ranking | active, permanent |
+| **2** | Psychology & Behavioral Intelligence | psychology, attention_graph, threat_detection | shipped |
+| **3** | Script Generation | script_generation, script, critic, revision | shipped |
+| **4** | Visual Intelligence | visual_intelligence | shipped |
+| **5** | Voice & Audio | voice_audio (+ planned `voice` TTS) | shipped (planning) |
 
 ### Production Department
 
 | Agent | Subsystem | Engine keys | Status |
 |---|---|---|---|
-| **6** | Render Engine | `render`, `image`, `video` | shipped (mock renderer, provider-swappable) |
-| **7** | Publishing & Distribution | `publishing`, `scheduler`, `publishing_queue` | shipped (mock platforms) |
-| **8** | Global Content Optimization | `seo_optimization` | shipped |
-| **9** | Production Pipeline | media-production chain (`scene_planning` … `render_package`) + `services/pipeline.py` | shipped |
+| **6** | Render Engine | render, image, video | shipped (mock renderer) |
+| **7** | Publishing & Distribution | publishing, scheduler, publishing_queue | shipped (mock platforms) |
+| **8** | Global Content Optimization | seo_optimization | shipped |
+| **9** | Production Pipeline | scene_planning … render_package + services/pipeline.py | shipped |
 
 ### Intelligence Department
 
 | Agent | Subsystem | Engine keys | Status |
 |---|---|---|---|
-| **10** | Analytics & Continuous Learning | `analytics`, `learning` | shipped (simulated metrics) |
-| **11** | Market Intelligence & Forecasting | `market_intelligence`, `trend_forecasting` | shipped |
-| **12** | Creative Studio | `creative_studio` | built on `feature/creative-studio` — merge + register pending |
-| **13** | Optimization Laboratory | reserved key: `optimization_lab` | planned |
+| **10** | Analytics & Continuous Learning | analytics, learning | shipped (simulated metrics) |
+| **11** | Market Intelligence & Forecasting | market_intelligence, trend_forecasting | shipped |
+| **12** | Creative Studio | creative_studio | **LIVE** |
+| **13** | Optimization Laboratory | optimization_lab | stub (worktree ready — merge pending) |
 
 ### Media Generation Department
 
 | Agent | Subsystem | Engine keys | Status |
 |---|---|---|---|
-| **14** | Universal Asset Generation | key: `asset_generation` (`services/asset_generation/` + `providers/asset_generation/`) | **live** |
-| **15** | Character, Universe & IP | reserved key: `ip_management` | planned |
+| **14** | Universal Asset Generation | asset_generation | **LIVE** |
+| **15** | Character, Universe & IP | character_universe | stub (worktree ready — merge pending) |
+| **16** | Animation & Cinematics | animation | stub (worktree ready — merge pending) |
+| **17** | Post-Production & Intelligent Editing | post_production | **LIVE** |
 
 ---
 
-## 2. Planned Agents (16-20)
+## 2. Planned Agents (19–20)
 
-| Agent | Subsystem | Reserved engine key | Integrates via |
+| Agent | Subsystem | Reserved key | Integrates via |
 |---|---|---|---|
-| **16** | Animation & Cinematics | `animation` | `creative_package` → animated assets in `render_package` |
-| **17** | Video Editing & Post Production | `post_production` | **live** — `post_production_package` after `render` stage |
-| **18** | AI Director | `ai_director` | cross-stage creative direction notes in `creative_package` / diagnostics |
-| **19** | Business Intelligence & Monetization | `business_intelligence` | `analytics_package` → revenue/ROI fields (additive) |
-| **20** | Autonomous Executive | `autonomous_executive` | `OrchestratorHook` + job queue (`ORCHESTRATOR_JOB_TYPE`) — the first agent that *initiates* runs |
+| **19** | BI & Monetization | `business_intelligence` | additive revenue fields on `analytics_package` |
+| **20** | Autonomous Executive | `autonomous_executive` | `OrchestratorHook` + job queue only |
 
-Reserved keys are names only — do not register stubs until the agent is
-scheduled (Agent 1 adds the `FutureEngine` stub in `engines/future_stubs.py`
-when work begins).
+### Agent 18 — AI Director (LIVE)
+
+| Agent | Subsystem | Key | Integrates via |
+|---|---|---|---|
+| **18** | AI Director | `ai_director` | `director_package` slot + orchestration notes for Agents 12–17 |
 
 ---
 
 ## 3. Department Registry
 
-Departments are organizational, not architectural: every department's
-engines integrate identically (ContractEngine → registry → orchestrator
-stage → ContentPackage slot). Adding a department requires **zero**
-platform changes.
-
-| Department | Charter | Active agents |
+| Department | Charter | Agents |
 |---|---|---|
-| Foundation | Contracts, orchestration, core intelligence pipeline | 1-5 |
-| Production | Plans → finished, published media | 6-9 |
-| Intelligence | Measure, forecast, learn, decide | 10-13 |
-| Media Generation | Assets, characters, universes, IP | 14-15 |
-| Direction (planned) | Animation, editing, AI direction | 16-18 |
-| Executive (planned) | Monetization, autonomous operation | 19-20 |
+| Foundation | Contracts, orchestration, core intelligence | 1–5 |
+| Production | Plans → finished, published media | 6–9 |
+| Intelligence | Measure, forecast, learn, experiment | 10–13 |
+| Media Generation | Assets, characters, universes, motion, edit | 14–17 |
+| Direction | AI direction, executive creative strategy | **18** |
+| Executive (planned) | Monetization, autonomous operation | 19–20 |
 
 ---
 
-## 4. Future Expansion Registry
-
-Divisions under consideration — each maps onto the same integration
-pattern. Column three is the architectural seam it will plug into; none
-require redesign.
+## 4. Future Expansion Registry (21–30+)
 
 | Future division | Plugs into |
 |---|---|
-| Brand Management | `brand_management` stage (stub already wired) + `services/channels.py` |
-| Community Management | new engine key + `analytics_package` (comments/engagement) |
-| Marketing / Sales / Customer Support | new stages after `publish`; `publishing_package` + hooks |
+| Brand Management | `brand_management` stage (stub wired) + channels |
+| Community / Marketing / Sales / Support | stages after `publish`; hooks |
 | Research / Knowledge Graph | `services/knowledge.py` + research providers |
-| Mobile Apps / SaaS / API Platform | consume `Orchestrator` + `PipelineResult.to_dict()` (already serializable) |
-| Game Development / Interactive Media | new package slots (additive fields on ContentPackage) |
-| Education / Translation / Localization | extend `seo_optimization` localization + new engine keys |
-| Infrastructure / Security / Compute Scheduling | job queue + future distributed orchestrator backends |
-| Provider Marketplace / Plugin Ecosystem | `providers/` interfaces + `register_stage()` / registry replacement |
+| Translation / Localization / Education | SEO localization + new keys |
+| Mobile / SaaS / API Platform | `Orchestrator` + serializable `PipelineResult` |
+| Game / Interactive Media | additive ContentPackage slots |
+| Infrastructure / Security / Compute | job queue + distributed backends |
+| Provider Marketplace / Plugin Ecosystem | `providers/` + `register_stage()` |
 
-**Rule:** a new division claims (1) an agent number here, (2) engine keys in
-`ENGINE_REGISTRY.md`, (3) an ownership row in `AGENT_WORKFLOW.md`, and
-(4) any new ContentPackage slots in `DATA_CONTRACTS.md` — all four before code.
+**Rule:** claim (1) agent number here, (2) engine keys in `ENGINE_REGISTRY.md`,
+(3) ownership in `AGENT_WORKFLOW.md`, (4) package slots in `DATA_CONTRACTS.md`
+— all four before code.
