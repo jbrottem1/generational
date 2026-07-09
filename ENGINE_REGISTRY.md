@@ -84,6 +84,22 @@ contract); the `publishing` planned stub graduated from the former
 `DATA_CONTRACTS.md` §7 and `engines/publishing/README.md`). Real platform
 APIs swap in via `register_publishing_provider()` — one adapter per file.
 
+## Live engine (optimization — Agent 13)
+
+`optimization_lab` — the Experimentation & Optimization Laboratory
+(`engines/optimization_lab.py`, logic in `services/optimization/`).
+Subclasses `ContractEngine`, runs deterministically in Demo Mode, and for
+every content item generates competing variants across 19 experiment
+types, scores them on fourteen configurable weighted inputs, ranks them
+against historical winners, concludes statistical experiments, and returns
+structured recommendations — the ContentPackage `optimization_package`
+slot plus `optimization_report` / `optimization_recommendations` (see
+`DATA_CONTRACTS.md` §8.2 and `OPTIMIZATION_LAB.md`). The `optimization`
+stage is runnable on demand; `enable_optimization_stage()` schedules it
+after quality inside the full pipeline. Platform A/B backends swap in via
+`register_experiment_provider()`, prediction models via
+`register_prediction_model()` — zero engine changes.
+
 ## Reserved keys (planned / contract stubs — do NOT reuse)
 
 | Key | Stub type | Future owner | Stage |

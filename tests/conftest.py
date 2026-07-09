@@ -50,6 +50,19 @@ def isolated_analytics_data(tmp_path_factory):
     knowledge._kb = original_kb
 
 
+@pytest.fixture(scope="session", autouse=True)
+def isolated_optimization_data(tmp_path_factory):
+    """Agent 13's Optimization Laboratory persists experiment history
+    (data/optimization) — point the default directory at a temp dir for
+    the whole session so tests never write to the real data/ store."""
+    import services.optimization.experiments as optimization_experiments
+
+    original = optimization_experiments._DEFAULT_DIR
+    optimization_experiments._DEFAULT_DIR = str(tmp_path_factory.mktemp("optimization"))
+    yield
+    optimization_experiments._DEFAULT_DIR = original
+
+
 @pytest.fixture
 def project_store(tmp_path):
     return JsonProjectStore(directory=str(tmp_path / "projects"))

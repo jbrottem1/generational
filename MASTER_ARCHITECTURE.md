@@ -142,6 +142,34 @@ Closes the loop. Collects post-publish performance (views, retention curves, wat
 - **Owns:** performance ingestion, attribution, learning signals, weight updates
 - **Modules:** `engines/analytics.py`, `engines/learning.py`
 
+### Agent 13: Experimentation & Optimization Laboratory — LANDED
+
+The optimization and experimentation department — it generates no content
+of its own: it maximizes the quality and predicted performance of every
+piece of content before (and, via observed results, after) publishing.
+For every item the laboratory generates competing variants across 19
+experiment types (hooks, titles, descriptions, thumbnails, captions,
+narration/animation styles, visual pacing, scene ordering, music, sound
+design, CTA placement, publishing time/schedule, localization, language,
+brand/character styles, platform formatting — future types are one config
+entry), scores them on fourteen configurable weighted inputs (psychology,
+virality, SEO, trend, historical performance, brand fit, audience match,
+retention/CTR/engagement/revenue predictions, confidence, platform and
+localization suitability), ranks them with historical winner priors,
+concludes statistical experiments (Welch's z-test), and returns structured
+recommendations — the strongest version of every decision. The A/B
+framework prepares ab/multivariate/sequential/platform/regional/brand/
+lifecycle modes behind the `ExperimentProvider` interface (mock
+placeholder until platform APIs land). Winning experiments grow Agent 9's
+long-term memory and influence future rankings. Output: the ContentPackage
+`optimization_package` slot + `optimization_report` /
+`optimization_recommendations` context keys. It consumes other engines'
+outputs and NEVER rewrites them — orchestrator-only communication. See
+`OPTIMIZATION_LAB.md`.
+
+- **Owns:** variant generation, weighted scoring, ranking, experiments, A/B provider interfaces, prediction models, optimization recommendations and reports
+- **Modules:** `engines/optimization_lab.py`, `services/optimization/`
+
 ### Development-agent landing zones (v8.1)
 
 The stage owners above describe *pipeline responsibilities*. The parallel
@@ -156,6 +184,7 @@ zones, contract stubs, and orchestrator stages already wired (see
 | Agent 8 | Global Content Optimization (SEO) — **LANDED** (live stage) | `engines/seo/` + `engines/seo_optimization.py` + `services/seo/` | `seo` |
 | Agent 9 | Analytics & Learning | `engines/analytics/` | `analytics` · `learning` |
 | Agent 10 | Multi-Brand Operating System | `engines/brands/` | `brand_management` |
+| Agent 13 | Experimentation & Optimization Laboratory — **LANDED** (live stage) | `engines/optimization_lab.py` + `services/optimization/` | `optimization` |
 
 Future engines subclass `ContractEngine` (`engines/contracts.py`) and fill
 their slot in the canonical `ContentPackage` (`DATA_CONTRACTS.md`). Their

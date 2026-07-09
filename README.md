@@ -4,6 +4,87 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.3 — Experimentation & Optimization Laboratory (Agent 13)
+
+The company's optimization department is live. Before anything is
+published, the Optimization Laboratory generates competing alternatives
+for every content decision, predicts their performance, ranks competing
+strategies against historical winners, and recommends the strongest
+version to the Production Pipeline — evolving Generational from
+"generating content" to "selecting the strongest version of every piece
+of content before it is published."
+
+```python
+from services.orchestrator import get_orchestrator
+from services.optimization import get_optimization_lab
+from services.optimization.integration import enable_optimization_stage
+
+enable_optimization_stage()      # schedule the stage after the quality gate
+result = get_orchestrator().run_full_pipeline("Create 3 science shorts...")
+result.context["optimization_report"]            # winners, losers, lift
+result.context["optimization_recommendations"]   # per-decision winners
+
+lab = get_optimization_lab()     # on-demand pipeline queries
+lab.best_hook()                  # strongest hook from concluded experiments
+lab.best_title(); lab.best_thumbnail(); lab.best_publishing_window()
+lab.best_content_package()       # the strongest overall package
+```
+
+### What's new
+
+- **Variant generation** (`services/optimization/variants.py`) — 19
+  experiment types (hooks, titles, descriptions, thumbnails, captions,
+  narration/animation styles, visual pacing, scene ordering, music, sound
+  design, CTA placement, publishing time/schedule, localization, language,
+  brand/character styles, platform formatting; future types are one
+  config entry). Configurable counts (20 hooks, 15 titles, 25 thumbnail
+  concepts, ...), every variant with a unique id, version, metadata,
+  generation source, and confidence; upstream variants (script variants,
+  SEO titles, thumbnail concepts) join the pool instead of being redone.
+- **Scoring engine** (`services/optimization/scoring.py`) — fourteen
+  weighted inputs: psychology, virality, SEO, trend, historical
+  performance, brand fit, audience match, retention/CTR/engagement
+  predictions, revenue prediction (placeholder), confidence, platform and
+  localization suitability. Weights are configuration, not code.
+- **Experiment framework** (`services/optimization/experiments.py`) —
+  Experiment / ExperimentRun / VariantGroup / ExperimentScheduler /
+  ExperimentHistory / ExperimentResult; concurrent experiments under
+  configurable limits; statistical winners via Welch's z-test; A/B,
+  multivariate, sequential, platform, regional, brand, and lifecycle
+  modes prepared behind the `ExperimentProvider` interface (deterministic
+  mock until platform APIs land).
+- **Learning loop** (`services/optimization/learning_bridge.py`) —
+  historical analytics insights and concluded experiment winners become
+  priors that lift matching future variants; completed experiments grow
+  Agent 9's append-only long-term memory (EXPERIMENT_OUTCOMES).
+- **Recommendation engine** (`services/optimization/recommendations.py`)
+  — structured recommendations only (winning content, target slot,
+  ranked alternatives, confidence, expected lift, explicit low-confidence
+  and conflict warnings), plus the pipeline query surface: `best_hook()`,
+  `best_title()`, `best_thumbnail()`, `best_caption()`,
+  `best_narration_style()`, `best_cta()`, `best_publishing_window()`,
+  `best_content_package()`.
+- **Optimization Report** (`services/optimization/report.py`) — winning
+  and losing variants, confidence scores, expected performance lift,
+  per-type experiment summary, historical trends, and every
+  recommendation issued — machine-readable plus `render_report_text()`.
+- **Configuration** (`services/optimization/config.py`) — scoring
+  weights, thresholds, ranking logic, prediction models
+  (`PredictionModel` registry), variant counts, experiment limits, and
+  provider enablement via `configure(**overrides)` or
+  `data/optimization/config.json`.
+- **Integration** — the `optimization` stage runs on demand
+  (`run_stage("optimization", ctx)`) and schedules after the quality gate
+  with one `enable_optimization_stage()` call; each ContentPackage gains
+  an `optimization_package` slot. Recommendations flow orchestrator-only —
+  no other engine was modified and no engine calls another engine.
+- **44 tests** in `tests/test_optimization_lab.py`; full suite passes
+  (548).
+
+Docs: [`OPTIMIZATION_LAB.md`](OPTIMIZATION_LAB.md), plus updates to
+`DATA_CONTRACTS.md` §8.2, `PIPELINE_SPEC.md`, `ENGINE_REGISTRY.md`, and
+`MASTER_ARCHITECTURE.md`.
+
 ## Version 9.2 — Analytics & Continuous Learning Engine (Agent 9)
 
 The system now observes its own performance and gets smarter with every

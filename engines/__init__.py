@@ -21,6 +21,7 @@ from engines.image import ImageEngine
 from engines.learning import LearningEngine
 from engines.narration import NarrationEngine
 from engines.opportunity_ranking import OpportunityRankingEngine
+from engines.optimization_lab import OptimizationLabEngine
 from engines.psychology import PsychologyEngine
 from engines.publishing import PublishingEngine, SchedulerEngine
 from engines.publishing_queue import PublishingQueueEngine
@@ -85,6 +86,7 @@ for _engine_class in (
     SeoOptimizationEngine,
     SchedulerEngine,
     BrandManagementEngine,
+    OptimizationLabEngine,
 ):
     if registry.get_engine(_engine_class.key) is None:
         registry.register(_engine_class())

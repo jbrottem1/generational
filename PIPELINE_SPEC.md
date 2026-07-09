@@ -62,6 +62,14 @@ Learning Feedback          LIVE      Agent 9 — engines: learning
    ↓                                  recommendations per engine, cumulative
    ↓                                  memory, experiments, reports)
 
+Optimization Laboratory    LIVE      Agent 13 — engines: optimization_lab
+   (after Quality Gate when          (variant generation across 19
+    enabled; always on demand)        experiment types, weighted scoring,
+                                      history-aware ranking, statistical
+                                      experiments, structured
+                                      recommendations only;
+                                      see OPTIMIZATION_LAB.md)
+
 Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
    ↓
 (loops back into Trend Discovery weights for the next run)
@@ -132,7 +140,20 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
     `learning_metadata` slot, and grows the append-only long-term memory.
     Historical knowledge is never overwritten. With no history it reports
     `insufficient_data` — never a failure.
-12. **One Production Report.** Every full run attaches one unified report
+12. **Optimization stage.** Live (`run_stage("optimization", context)` on
+    demand; `services/optimization/integration.enable_optimization_stage()`
+    schedules it inside `run_full_pipeline()` immediately after the
+    quality gate). The Optimization Laboratory (Agent 13) generates
+    competing variants for every active experiment type, scores them on
+    fourteen configurable weighted inputs, ranks them with historical
+    winner priors, concludes statistical experiments, writes each
+    ContentPackage `optimization_package` slot, and emits
+    `optimization_report` + `optimization_recommendations` — structured
+    recommendations only; no other engine's fields are ever rewritten.
+    Duplicate variants, invalid experiments, low confidence, missing
+    history, and provider failures all degrade to warnings. With nothing
+    to optimize it reports `no_items` — never a failure.
+13. **One Production Report.** Every full run attaches one unified report
     (`services/orchestrator/report.py`) to
     `PipelineResult.production_report` /
     `context["production_report"]`: the eight production areas resolved
@@ -159,3 +180,4 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
 | analytics | analytics | live (mock metrics providers) | **Agent 9** |
 | learning | learning | live | **Agent 9** |
 | brand_management | brand_management | future | **Agent 10** |
+| optimization | optimization_lab | live (opt-in scheduled after quality; always on demand) | **Agent 13** |

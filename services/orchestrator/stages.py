@@ -55,6 +55,10 @@ STAGE_GROUPS: "dict[str, list[str]]" = {
     "analytics": ["analytics"],
     "learning": ["learning"],
     "brand_management": ["brand_management"],
+    # Agent 13 — Experimentation & Optimization Laboratory. Runnable on
+    # demand here; scheduled inside the full pipeline (after quality) via
+    # services/optimization/integration.enable_optimization_stage().
+    "optimization": ["optimization_lab"],
 }
 
 # Post-packaging distribution stages executed by the full production

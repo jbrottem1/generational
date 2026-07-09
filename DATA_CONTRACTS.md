@@ -30,6 +30,7 @@ list is `CONTENT_PACKAGE_FIELDS`.
 | `publishing_package` | dict | **Agent 7** |
 | `analytics_placeholder` / `analytics_package` | dict | **Agent 9** |
 | `learning_metadata` | dict | **Agent 9** |
+| `optimization_package` | dict | **Agent 13** |
 | `status` | str | pipeline (`planned → approved/held → rendered → scheduled → published`) |
 | `diagnostics` | dict | any stage (append keys) |
 | `created_at` / `extras` | str / dict | packager / forward-compat overflow |
@@ -278,6 +279,62 @@ its own context keys; render/seo/publishing slots are read, never mutated.
 Feedback reaches upstream engines through `OrchestratorHook` (kinds
 `analytics` / `learning`) and the guidance adapters — never engine-to-engine
 calls.
+
+---
+
+## 8.2 optimization_package + Optimization Report (Agent 13) — `services/optimization/`
+
+The Experimentation & Optimization Laboratory (`optimization_lab` engine,
+`optimization` stage) generates, scores, ranks, and statistically compares
+competing variants for every content decision, and returns STRUCTURED
+RECOMMENDATIONS ONLY — it never rewrites another engine's fields. Field
+tuples in `services/optimization/models.py` are the testable contract; all
+output is JSON-safe dicts, additive-only from 1.0. Full specification:
+`OPTIMIZATION_LAB.md`.
+
+**Variant** (`VARIANT_FIELDS`, v1.0) — one competing alternative:
+`variant_id`, `experiment_type` (19 built-in types: hook, title,
+description, thumbnail, caption, narration_style, animation_style,
+visual_pacing, scene_ordering, music_style, sound_design, cta_placement,
+publishing_time, publishing_schedule, localization, language, brand_style,
+character_style, platform_formatting — future types register through
+config), `version`, `content`, `label`, `metadata`, `generation_source`
+(control | heuristic | upstream | provider | manual), `confidence`,
+`score`, `score_breakdown` (the fourteen `SCORING_INPUTS`), `rank`,
+`created_at`.
+
+**Experiment** (`LAB_EXPERIMENT_FIELDS`) — one variant group
+(`VARIANT_GROUP_FIELDS`) competing in one mode (`EXPERIMENT_MODES`: ab,
+multivariate, sequential, platform, regional, brand, lifecycle), with
+accumulated runs (`EXPERIMENT_RUN_FIELDS`) and a concluded result
+(`EXPERIMENT_RESULT_FIELDS`: winner, losers, ranked, confidence,
+expected_lift, method predicted|observed). Persisted append-friendly to
+`data/optimization/experiments.json` (`ExperimentHistory`).
+
+**ContentPackage `optimization_package` slot**
+(`OPTIMIZATION_PACKAGE_FIELDS`): `engine_version`, `status`
+(optimized | partial | skipped), `recommendations`
+(`OPTIMIZATION_RECOMMENDATION_FIELDS`: winning content, target_slot,
+alternatives, confidence, expected_lift, warnings), `best`
+(experiment_type → recommended content), `experiments`, `confidence`,
+`generated_at`.
+
+**Context keys** (additive): `optimization_report`
+(`OPTIMIZATION_REPORT_FIELDS`: winning/losing variants, confidence,
+expected lift, per-type experiment summary, historical trends, warnings)
++ `optimization_recommendations` (experiment_type → recommendation).
+
+Scoring weights, thresholds, ranking logic, prediction models, variant
+counts, experiment limits, and provider enablement are all configuration
+(`services/optimization/config.py`, overrides via `configure(**kw)` or
+`data/optimization/config.json`). Platform A/B backends implement
+`ExperimentProvider` (`services/optimization/providers.py`; deterministic
+mock placeholder today); prediction backends implement `PredictionModel`
+(`services/optimization/predictions.py`). Agent 13 writes ONLY the
+`optimization_package` slot and its own context keys; every other slot is
+read, never mutated. Winning experiments land in Agent 9's append-only
+memory (EXPERIMENT_OUTCOMES) and historical winners feed future rankings —
+through stores, never engine-to-engine calls.
 
 ---
 
