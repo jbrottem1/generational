@@ -43,6 +43,7 @@ from engines.heuristics import (
     content_words,
     count_hits,
     most_repeated_word,
+    weighted_blend,
 )
 
 logger = get_logger(__name__)
@@ -286,7 +287,7 @@ def score_threats(idea: dict, batch: "list | None" = None) -> dict:
 
 def overall_threat_score(threats: dict) -> int:
     """Single weighted 0-100 threat score from the 10 dimensions."""
-    return clamp(sum(threats[key] * weight for key, weight in THREAT_WEIGHTS.items()), low=0, high=100)
+    return weighted_blend(threats, THREAT_WEIGHTS, low=0, high=100)
 
 
 def _confidence(idea: dict) -> int:

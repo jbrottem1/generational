@@ -45,6 +45,7 @@ from engines.heuristics import (
     has_digit,
     sentences,
     stable_jitter,
+    weighted_blend,
 )
 
 logger = get_logger(__name__)
@@ -280,7 +281,7 @@ score_text = score_dimensions
 
 def viral_score(dimensions: dict) -> int:
     """Weighted 0-100 ViralScore from the 18 psychology dimensions."""
-    return clamp(sum(dimensions[key] * weight for key, weight in VIRAL_SCORE_WEIGHTS.items()))
+    return weighted_blend(dimensions, VIRAL_SCORE_WEIGHTS)
 
 
 # Backward-compatible alias — earlier versions called this overall_score.

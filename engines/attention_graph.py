@@ -36,6 +36,7 @@ from engines.heuristics import (
     has_digit,
     sentences,
     stable_jitter,
+    weighted_blend,
 )
 from engines.psychology import score_dimensions as _psychology_dimensions
 
@@ -229,7 +230,7 @@ def score_attention_dimensions(text: str) -> dict:
 
 def attention_score(dimensions: dict) -> int:
     """Single weighted 0-100 Attention Score from the 12 dimensions."""
-    return clamp(sum(dimensions[key] * weight for key, weight in ATTENTION_GRAPH_WEIGHTS.items()))
+    return weighted_blend(dimensions, ATTENTION_GRAPH_WEIGHTS)
 
 
 def build_radar_chart(dimensions: dict) -> dict:
