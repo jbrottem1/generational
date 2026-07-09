@@ -412,8 +412,10 @@ def ensure_orchestrator_handler(queue) -> None:
 
 
 def ensure_runtime_handlers(queue) -> None:
-    """Register orchestrator + long-form runtime handlers (idempotent)."""
+    """Register orchestrator + long-form + workflow executor handlers (idempotent)."""
     ensure_orchestrator_handler(queue)
     from services.provider_runtime.longform import ensure_longform_handler
+    from services.workflow_executor import ensure_workflow_handler
 
     ensure_longform_handler(queue)
+    ensure_workflow_handler(queue)

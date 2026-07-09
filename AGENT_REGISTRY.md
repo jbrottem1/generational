@@ -57,6 +57,7 @@ Companions: `ENGINE_REGISTRY.md` · `SYSTEM_DEPENDENCY_MAP.md` ·
 | Agent | Subsystem | Engine keys | Status |
 |---|---|---|---|
 | **19** | Provider Integration & Runtime | `services/provider_runtime/` | **LIVE** |
+| **21** | End-to-End Workflow Executor | `services/workflow_executor/` | **LIVE** |
 
 ---
 
@@ -65,6 +66,16 @@ Companions: `ENGINE_REGISTRY.md` · `SYSTEM_DEPENDENCY_MAP.md` ·
 | Agent | Subsystem | Reserved key | Integrates via |
 |---|---|---|---|
 | **20** | Autonomous Executive | `autonomous_executive` | `OrchestratorHook` + job queue only |
+
+### Agent 21 — End-to-End Workflow Executor (LIVE)
+
+| Agent | Subsystem | Key | Integrates via |
+|---|---|---|---|
+| **21** | End-to-End Workflow Executor | `workflow_executor` (service) | `ProjectRun` + Orchestrator stages + job queue `workflow_run` |
+
+Durable run controller: one prompt → `ProjectRun` with checkpoints, retries,
+resume, and Studio UI status. Does not replace the Orchestrator or call
+provider APIs directly. See `WORKFLOW_EXECUTOR.md`.
 
 ### Agent 19 — Provider Integration & Runtime (LIVE)
 
@@ -91,12 +102,12 @@ Reserved for future BI: `business_intelligence` engine key.
 | Intelligence | Measure, forecast, learn, experiment | 10–13 |
 | Media Generation | Assets, characters, universes, motion, edit | 14–17 |
 | Direction | AI direction, executive creative strategy | **18** |
-| Infrastructure | Provider integration, runtime execution | **19** |
+| Infrastructure | Provider integration, runtime, workflow execution | **19**, **21** |
 | Executive (planned) | Autonomous operation | 20 |
 
 ---
 
-## 4. Future Expansion Registry (21–30+)
+## 4. Future Expansion Registry (22–30+)
 
 | Future division | Plugs into |
 |---|---|

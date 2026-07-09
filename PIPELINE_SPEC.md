@@ -125,3 +125,13 @@ All stages that call external AI services route through
 selects providers by capability, handles fallback/retries, and logs usage.
 Long-form productions use `RuntimeExecutionEngine` with checkpoint resume.
 See `PROVIDER_INTEGRATION.md`.
+
+## Workflow Executor Layer (Agent 21)
+
+One-prompt production runs are managed by
+`services/workflow_executor/` (`WorkflowExecutor.execute()`). The executor
+creates a durable `ProjectRun`, resolves production type/template, drives
+Orchestrator stages in order, checkpoints after each stage, retries/degrades
+failures, and exposes Studio UI status (`get_status`). It does not redefine
+stage order — it filters/annotates the canonical plan above. See
+`WORKFLOW_EXECUTOR.md`.

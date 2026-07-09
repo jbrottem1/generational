@@ -445,6 +445,31 @@ Long-form checkpoints (`ProductionCheckpoint`) persist to
 
 ---
 
+## 9.1 Workflow Executor contracts (Agent 21)
+
+Durable production-run state in `services/workflow_executor/models.py`.
+See `WORKFLOW_EXECUTOR.md`.
+
+| Object | Notes |
+|---|---|
+| `ProjectRun` | Top-level run: command, production_type, config, workflow, context, result, log, checkpoint |
+| `WorkflowRun` | Step plan + `progress_pct` + status |
+| `WorkflowStep` | Stage, engine_keys, required/optional, attempt, status |
+| `WorkflowStatus` | `pending` · `running` · `completed` · `failed` · `skipped` · `waiting` · `retrying` · `cancelled` |
+| `Checkpoint` | Resume point under `data/workflow_runs/checkpoints/` |
+| `RetryPolicy` | max_retries, backoff, skip_optional_on_fail, degrade_distribution_failures |
+| `ExecutionLog` | Append-only `{at, event, ...}` entries |
+| `FailureReport` | stage, errors, attempt, recoverable, partial_outputs |
+| `WorkflowResult` | packages + package slots + provider_usage + costs |
+| `WorkflowConfig` | template, stage_order, timeouts, budget, longform_mode, provider_preferences |
+
+Studio UI projection: `studio_status(run)` / `get_status(run_id)`.
+Job type: `workflow_run`.
+
+Additive only — append fields; never rename/remove.
+
+---
+
 ## 10. Change protocol
 
 1. Appending a ContentPackage field: add to the dataclass **and**

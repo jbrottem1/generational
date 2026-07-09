@@ -4,6 +4,22 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.11 — End-to-End Workflow Executor (Agent 21)
+
+One user prompt becomes a managed production run — durable `ProjectRun` state,
+stage-by-stage Orchestrator execution, checkpoints, retries, resume, and
+Studio UI status.
+
+```python
+from services.workflow_executor import get_workflow_executor
+
+executor = get_workflow_executor()
+run = executor.execute("Create a 45-second YouTube Short about black holes.")
+status = executor.get_status(run.run_id)
+```
+
+See [`WORKFLOW_EXECUTOR.md`](WORKFLOW_EXECUTOR.md).
+
 ## Version 9.10 — Provider Integration & Runtime Engine (Agent 19)
 
 Unified provider abstraction layer — every engine can call real AI services
