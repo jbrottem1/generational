@@ -80,7 +80,30 @@ PRODUCTION_PACKAGE_FIELDS = [
     "quality_score",
     "publish_ready",
     "analytics_placeholder",
+    # --- v8.1 canonical ContentPackage extension (Agents 6-10 landing zones).
+    # Additive only: never remove or rename anything above or below.
+    "brand_id",
+    "channel_id",
+    "target_platforms",
+    "target_language",
+    "topic",
+    "keywords",
+    "opportunity_score",
+    "virality_score",
+    "script_package",
+    "visual_package",
+    "audio_package",
+    "render_package",       # Agent 6 (Render & Video Production) writes here
+    "publishing_package",   # Agent 7 (Publishing & Scheduler) writes here
+    "analytics_package",    # Agent 9 (Analytics & Learning) writes here
+    "learning_metadata",    # Agent 9 (Learning feedback) writes here
+    "status",
+    "diagnostics",
 ]
+
+# Canonical alias — docs and future agents refer to the shared model as the
+# ContentPackage; ProductionPackage remains the implementation name.
+CONTENT_PACKAGE_FIELDS = PRODUCTION_PACKAGE_FIELDS
 
 
 @dataclass
@@ -108,6 +131,24 @@ class ProductionPackage:
     quality_score: int = 0
     publish_ready: bool = False
     analytics_placeholder: dict = field(default_factory=dict)
+    # --- v8.1 canonical ContentPackage extension (additive only).
+    brand_id: str = ""
+    channel_id: str = ""
+    target_platforms: list = field(default_factory=list)
+    target_language: str = "en"
+    topic: str = ""
+    keywords: list = field(default_factory=list)
+    opportunity_score: int = 0
+    virality_score: int = 0
+    script_package: dict = field(default_factory=dict)
+    visual_package: dict = field(default_factory=dict)
+    audio_package: dict = field(default_factory=dict)
+    render_package: dict = field(default_factory=dict)
+    publishing_package: dict = field(default_factory=dict)
+    analytics_package: dict = field(default_factory=dict)
+    learning_metadata: dict = field(default_factory=dict)
+    status: str = "planned"      # planned | approved | held | rendered | scheduled | published
+    diagnostics: dict = field(default_factory=dict)
     created_at: str = field(default_factory=_now_iso)
     extras: dict = field(default_factory=dict)   # additive fields land here
 
@@ -126,6 +167,10 @@ class ProductionPackage:
             if key not in PRODUCTION_PACKAGE_FIELDS and key != "created_at"
         }
         return cls(created_at=data.get("created_at", _now_iso()), extras=extras, **known)
+
+
+# Canonical alias: the shared model's OS-level name.
+ContentPackage = ProductionPackage
 
 
 @dataclass

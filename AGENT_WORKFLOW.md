@@ -19,6 +19,11 @@ and the Workflow Engine — and through this document.
 | **Agent 2** | Psychology & Virality Engine | Psychology scoring, virality dimensions, ranking weights |
 | **Agent 3** | Script Generation Engine | Script writing, critique, revision loop |
 | **Agent 4** | Visual Intelligence Engine (Cinematic AI Director) | Storyboards, shot lists, style presets, visual psychology + retention prediction, AI prompts, asset source adapters, thumbnails, render preparation |
+| **Agent 6** | Render & Video Production | `engines/render/` landing zone — see its README |
+| **Agent 7** | Publishing & Scheduler | `engines/publishing/` landing zone — see its README |
+| **Agent 8** | SEO & Global Trend Optimization | `engines/seo/` landing zone — see its README |
+| **Agent 9** | Analytics & Learning | `engines/analytics/` landing zone — see its README |
+| **Agent 10** | Multi-Brand Operating System | `engines/brands/` landing zone — see its README |
 
 Agent 1 also acts as the reviewer for changes to shared files (see §2.3).
 
@@ -34,6 +39,15 @@ Agent 1 also acts as the reviewer for changes to shared files (see §2.3).
 | **Agent 2** | `engines/psychology.py` · `engines/ranking.py` · `tests/test_psychology_engine.py` |
 | **Agent 3** | `engines/script.py` · `engines/critic.py` · `engines/revision.py` · script-related tests |
 | **Agent 4** | `engines/visual_intelligence.py` · `services/visual/` · `tests/test_visual_intelligence.py` · `VISUAL_PRODUCTION_PACKAGE.md` |
+| **Agent 6** | **Render files only:** `engines/render/` · `engines/image.py` · `engines/video.py` · `services/rendering/` · render/video providers · `tests/test_render_engine.py` |
+| **Agent 7** | **Publishing files only:** `engines/publishing/` · `engines/publishing.py` · scheduler module · `services/publishing/` · publishing providers · `tests/test_publishing_engine.py` |
+| **Agent 8** | **SEO-optimization files only:** `engines/seo/` (NOT the live `engines/seo.py`) · `services/seo/` · SEO providers · `tests/test_seo_optimization.py` |
+| **Agent 9** | **Analytics/learning files only:** `engines/analytics/` · `engines/analytics.py` · `engines/learning.py` · `services/analytics/` · `services/learning/` · analytics providers · analytics/learning tests |
+| **Agent 10** | **Brand/account/channel files only:** `engines/brands/` · `services/brands/` · `tests/test_brand_management.py` (extends `services/channels.py` with caution) |
+
+Every landing-zone README (`engines/render/README.md`, `engines/publishing/README.md`,
+`engines/seo/README.md`, `engines/analytics/README.md`, `engines/brands/README.md`)
+is the authoritative per-agent scope definition. Read it before writing code.
 
 ### 2.2 Shared — edit with caution, keep diffs minimal, mention in commit body
 
@@ -55,8 +69,10 @@ breaks parallel work:
 
 - `core/workflows.py` — `WORKFLOWS` stage order is the system's spine
 - `engines/base.py` · `engines/registry.py` — the Engine contract
+- `engines/contracts.py` · `engines/future_stubs.py` — the ContractEngine interface and Agents 6-10 stage stubs
 - `engines/__init__.py` — registration list (append-only, coordinate to avoid merge conflicts)
 - `core/models.py` · `core/production_models.py` — canonical data shapes
+- `services/orchestrator/models.py` — the canonical ContentPackage / ProductionPackage (fields are additive-only; see `DATA_CONTRACTS.md`)
 - `core/jobs.py` — job queue semantics
 - `providers/research_source.py` · `providers/trend_sources/base.py` — provider interfaces
 - `app.py` — Streamlit shell
@@ -72,6 +88,13 @@ fields are additive-only; new stages plug in via `register_stage()` or
 `WORKFLOWS["intelligence"]`; autonomy attaches via `OrchestratorHook`.
 See `ORCHESTRATOR.md`.
 
+**ContentPackage contract (v8.1):** the shared data model in
+`services/orchestrator/models.py` is the single package every stage reads
+and writes. Agents may **append** fields (coordinate with Agent 1) and fill
+their own package slot (`render_package`, `publishing_package`,
+`seo_package`, `analytics_package`, `learning_metadata`, brand fields) —
+never remove, rename, or repurpose existing fields. See `DATA_CONTRACTS.md`.
+
 ---
 
 ## 3. Merge Safety Rules
@@ -81,8 +104,10 @@ See `ORCHESTRATOR.md`.
 3. **Commit small logical changes** — one concern per commit; never batch a feature with unrelated cleanup.
 4. **Do not edit unrelated files** — if a file outside your ownership area appears in `git status`, exclude it from the commit (`.DS_Store` is never committed).
 5. **Do not redesign UI during backend work** — UI additions are compact panels within existing tabs, matching current patterns.
-6. **Never commit another agent's in-progress work** — stage files by explicit path, not `git add .` / `git add -A`.
-7. **Keep modules small** — largest file today is 360 lines (`engines/psychology.py`); treat ~400 lines as the signal to split.
+6. **Never commit another agent's in-progress work** — stage files by explicit path, not `git add .` / `git add -A`. **Commit only files you own.**
+7. **Keep modules small** — treat ~400 lines as the signal to split.
+8. **Shared contracts require caution** — `ContentPackage` fields, `context` keys, and engine `input_contract`/`output_contract` declarations are additive-only. `app.py`, `core/workflows.py`, the engine registry, and the data contracts require explicit Agent 1 review before editing (§2.3).
+9. **Use feature branches wherever possible** (§4); direct `main` commits only for small fully-tested isolated changes.
 
 ---
 
@@ -94,8 +119,12 @@ See `ORCHESTRATOR.md`.
 ```
 feature/psychology-engine
 feature/script-engine
-feature/render-package-engine
 feature/trend-live-apis
+feature/render-engine          (Agent 6)
+feature/publishing-scheduler   (Agent 7)
+feature/seo-optimization       (Agent 8)
+feature/analytics-learning     (Agent 9)
+feature/multi-brand-os         (Agent 10)
 ```
 
 - Rebase or merge `main` into the feature branch before opening a PR so conflicts are resolved by the branch owner, not the reviewer.
@@ -117,15 +146,22 @@ feature/trend-live-apis
 
 ---
 
-## 6. Next Planned Agents
+## 6. Next Planned Agents (landing zones prepared, v8.1)
 
-| Agent | Subsystem | Landing zone (already stubbed) |
-|---|---|---|
-| **Render Package Engine** | Turn `RenderPackage` objects into finished video | `engines/render_package.py` (live) → `engines/video.py` + `providers/video_provider.py` |
-| **Voice Pipeline** | Real TTS + voice clone providers | `providers/voice/` · `engines/narration.py` |
-| **Thumbnail Engine** | Thumbnail generation from concepts | new `engines/thumbnail.py` + `providers/image_provider.py` |
-| **Analytics & Learning** | Performance ingestion + self-improvement loop | `engines/analytics.py` · `engines/learning.py` (planned stubs) |
-| **Publishing Scheduler** | Queue → scheduled live posts | `engines/publishing.py` · `services/assets.py` publishing queue |
+| Agent | Subsystem | Landing zone | Engine keys | Orchestrator stage |
+|---|---|---|---|---|
+| **Agent 6** | Render & Video Production | `engines/render/` | `image` · `video` | `render` |
+| **Agent 7** | Publishing & Scheduler | `engines/publishing/` | `publishing` · `scheduler` | `publish` |
+| **Agent 8** | SEO & Global Trend Optimization | `engines/seo/` | `seo_optimization` | `seo` |
+| **Agent 9** | Analytics & Learning | `engines/analytics/` | `analytics` · `learning` | `analytics` · `learning` |
+| **Agent 10** | Multi-Brand Operating System | `engines/brands/` | `brand_management` | `brand_management` |
+
+All five stages are already wired into the orchestrator and skip cleanly
+(WARNING with diagnostics, never a crash) until their engines report ready.
+Contract stubs for the missing keys live in `engines/future_stubs.py`.
+Each agent's landing-zone README defines exact ownership, contracts, and
+forbidden files. Also planned: Voice Pipeline (real TTS/clone providers) and
+Thumbnail Engine — coordinate with Agent 1 before starting.
 
 Each new agent gets: an ownership row in §2.1, a feature branch, and a
 dedicated test file — before writing feature code.

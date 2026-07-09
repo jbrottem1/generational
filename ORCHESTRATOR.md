@@ -50,9 +50,14 @@ orch.run_visual_stage(context)
 orch.run_audio_stage(context)
 orch.run_quality_stage(context)
 
-# Future stages — wired now, light up when their engines report ready:
-orch.run_render_stage(context)     # WARNING (skipped) until Render Engine lands
-orch.run_publish_stage(context)    # WARNING (skipped) until Publishing lands
+# Future stages (Agents 6-10) — wired now, light up when their engines
+# report ready; until then they skip with diagnostics, never crash:
+orch.run_render_stage(context)     # Agent 6 — Render & Video Production
+orch.run_seo_stage(context)        # Agent 8 — SEO & Global Trend Optimization
+orch.run_publish_stage(context)    # Agent 7 — Publishing & Scheduler
+orch.run_analytics_stage(context)  # Agent 9 — Analytics
+orch.run_learning_stage(context)   # Agent 9 — Learning feedback
+orch.run_brand_stage(context)      # Agent 10 — Multi-Brand OS
 ```
 
 The Streamlit UI reaches the orchestrator through `services/ideation.py`

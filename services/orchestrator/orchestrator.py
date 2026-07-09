@@ -135,14 +135,27 @@ class Orchestrator:
     def run_quality_stage(self, context: dict) -> StageReport:
         return self.run_stage("quality", context)
 
-    # Future stages — wired now, light up when their engines become ready
-    # (until then their engines are skipped and the report is a WARNING).
+    # Future stages (Agents 6-10) — wired now, light up when their engines
+    # become ready (until then their engines are skipped and the report is
+    # a WARNING with diagnostics — never a crash).
 
     def run_render_stage(self, context: dict) -> StageReport:
         return self.run_stage("render", context)
 
+    def run_seo_stage(self, context: dict) -> StageReport:
+        return self.run_stage("seo", context)
+
     def run_publish_stage(self, context: dict) -> StageReport:
         return self.run_stage("publish", context)
+
+    def run_analytics_stage(self, context: dict) -> StageReport:
+        return self.run_stage("analytics", context)
+
+    def run_learning_stage(self, context: dict) -> StageReport:
+        return self.run_stage("learning", context)
+
+    def run_brand_stage(self, context: dict) -> StageReport:
+        return self.run_stage("brand_management", context)
 
     # ------------------------------------------------------- full pipeline
 

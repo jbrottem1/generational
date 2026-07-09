@@ -44,12 +44,16 @@ STAGE_GROUPS: "dict[str, list[str]]" = {
     "visual": ["visual_intelligence"],
     "audio": ["voice_audio"],
     "quality": ["quality"],
-    # Engines are planned stubs today; these stages light up when their
-    # engines report ready — nothing else changes.
+    # Engines are planned/contract stubs today; these stages light up when
+    # their engines report ready — nothing else changes. Ownership:
+    # render → Agent 6 · publish → Agent 7 · seo → Agent 8 ·
+    # analytics/learning → Agent 9 · brand_management → Agent 10.
     "render": ["image", "video"],
-    "publish": ["publishing"],
+    "seo": ["seo_optimization"],
+    "publish": ["scheduler", "publishing"],
     "analytics": ["analytics"],
     "learning": ["learning"],
+    "brand_management": ["brand_management"],
 }
 
 # Stages registered by future plugins for the full pipeline: (name, keys, after).

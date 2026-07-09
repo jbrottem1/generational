@@ -13,6 +13,8 @@ from engines.asset_manager import AssetManagerEngine
 from engines.attention_graph import AttentionGraphEngine
 from engines.base import Engine, PlannedEngine
 from engines.citation import CitationEngine
+from engines.contracts import ContractEngine, FutureEngine
+from engines.future_stubs import BrandManagementEngine, SchedulerEngine, SeoOptimizationEngine
 from engines.critic import CriticEngine
 from engines.ideation import IdeationEngine
 from engines.image import ImageEngine
@@ -41,7 +43,7 @@ from engines.visual_planning import VisualPlanningEngine
 from engines.voice import VoiceEngine
 from engines.voice_audio import VoiceAudioEngine
 
-__all__ = ["Engine", "PlannedEngine", "registry"]
+__all__ = ["Engine", "PlannedEngine", "ContractEngine", "FutureEngine", "registry"]
 
 for _engine_class in (
     TrendDiscoveryEngine,
@@ -75,6 +77,9 @@ for _engine_class in (
     PublishingEngine,
     AnalyticsEngine,
     LearningEngine,
+    SeoOptimizationEngine,
+    SchedulerEngine,
+    BrandManagementEngine,
 ):
     if registry.get_engine(_engine_class.key) is None:
         registry.register(_engine_class())

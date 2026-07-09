@@ -17,7 +17,11 @@ PRODUCTION_LIVE = {
 
 LIVE_KEYS = INTELLIGENCE_LIVE | PRODUCTION_LIVE
 
-PLANNED_KEYS = {"voice", "image", "video", "publishing", "analytics", "learning"}
+PLANNED_KEYS = {
+    "voice", "image", "video", "publishing", "analytics", "learning",
+    # Agents 6-10 contract stubs
+    "seo_optimization", "scheduler", "brand_management",
+}
 
 EXPECTED_KEYS = LIVE_KEYS | PLANNED_KEYS
 

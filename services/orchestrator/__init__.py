@@ -8,7 +8,9 @@ Public surface:
 
 from services.orchestrator.hooks import HOOK_KINDS, OrchestratorHook, attach_hook, detach_hook
 from services.orchestrator.models import (
+    CONTENT_PACKAGE_FIELDS,
     PRODUCTION_PACKAGE_FIELDS,
+    ContentPackage,
     PipelineResult,
     ProductionPackage,
     StageReport,
@@ -35,10 +37,12 @@ __all__ = [
     "get_orchestrator",
     "run_full_pipeline",
     "ProductionPackage",
+    "ContentPackage",
     "PipelineResult",
     "StageReport",
     "StageStatus",
     "PRODUCTION_PACKAGE_FIELDS",
+    "CONTENT_PACKAGE_FIELDS",
     "STAGE_GROUPS",
     "build_pipeline_plan",
     "pipeline_stage_names",

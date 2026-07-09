@@ -4,6 +4,50 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 8.1 — Shared Contracts for Agents 6-10
+
+The integration foundation for the next five subsystems — Render & Video
+Production (Agent 6), Publishing & Scheduler (Agent 7), SEO & Global Trend
+Optimization (Agent 8), Analytics & Learning (Agent 9), and the Multi-Brand
+Operating System (Agent 10) — is now in place. No future behavior is built
+yet; the contracts, folders, stages, and rules are.
+
+### Engine contracts
+
+`engines/contracts.py` introduces `ContractEngine`: every future engine
+declares `engine_id`, `name`, `version`, `input_contract`,
+`output_contract`, `dependencies`, and `capabilities`, and gets
+`validate_input()` / `validate_output()` (problem lists, never crashes),
+`health_check()`, and `diagnostics()` for free. `FutureEngine` stubs for
+`seo_optimization`, `scheduler`, and `brand_management` are registered now
+(`engines/future_stubs.py`) and return `NOT_IMPLEMENTED` until their owners
+arrive.
+
+### Canonical ContentPackage
+
+The `ProductionPackage` is now also exported as **`ContentPackage`** and
+gained the Agents 6-10 fields (additive only): `brand_id`, `channel_id`,
+`target_platforms`, `target_language`, `topic`, `keywords`,
+`opportunity_score`, `virality_score`, `script_package`, `visual_package`,
+`audio_package`, `render_package`, `publishing_package`,
+`analytics_package`, `learning_metadata`, `status`, `diagnostics`.
+
+### Landing zones + future stages
+
+Ownership READMEs live in `engines/render/`, `engines/publishing/`,
+`engines/seo/`, `engines/analytics/`, `engines/brands/`. The orchestrator
+now knows six future stages — `render`, `seo`, `publish`, `analytics`,
+`learning`, `brand_management` — each with a named runner; all skip cleanly
+with diagnostics until their engines report ready.
+
+### New documentation
+
+[`OPERATING_SYSTEM.md`](OPERATING_SYSTEM.md) ·
+[`PIPELINE_SPEC.md`](PIPELINE_SPEC.md) ·
+[`DATA_CONTRACTS.md`](DATA_CONTRACTS.md) ·
+[`ENGINE_REGISTRY.md`](ENGINE_REGISTRY.md) — plus updated merge-safety and
+ownership rules in [`AGENT_WORKFLOW.md`](AGENT_WORKFLOW.md).
+
 ## Version 8.0 — Unified Orchestration Layer
 
 Generational's engines are now coordinated by **one orchestration layer**

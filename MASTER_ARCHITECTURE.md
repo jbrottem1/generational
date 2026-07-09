@@ -3,6 +3,8 @@
 **Document status:** Canonical architecture reference. Every agent (human or AI) working on this codebase reads this first.
 **Entry point:** `app.py` (Streamlit shell only — no business logic).
 
+**Companion documents:** [`OPERATING_SYSTEM.md`](OPERATING_SYSTEM.md) (how the pieces form one OS) · [`PIPELINE_SPEC.md`](PIPELINE_SPEC.md) (complete stage flow, live + future) · [`DATA_CONTRACTS.md`](DATA_CONTRACTS.md) (ContentPackage, context keys, engine contracts) · [`ENGINE_REGISTRY.md`](ENGINE_REGISTRY.md) (registered + reserved engine keys) · [`ORCHESTRATOR.md`](ORCHESTRATOR.md) (kernel API) · [`AGENT_WORKFLOW.md`](AGENT_WORKFLOW.md) (ownership + merge safety).
+
 ---
 
 ## Table of Contents
@@ -132,6 +134,25 @@ Closes the loop. Collects post-publish performance (views, retention curves, wat
 
 - **Owns:** performance ingestion, attribution, learning signals, weight updates
 - **Modules:** `engines/analytics.py`, `engines/learning.py`
+
+### Development-agent landing zones (v8.1)
+
+The stage owners above describe *pipeline responsibilities*. The parallel
+*development agents* scheduled next map onto them with prepared landing
+zones, contract stubs, and orchestrator stages already wired (see
+`AGENT_WORKFLOW.md` §6 and each landing zone's README):
+
+| Dev agent | Subsystem | Landing zone | Orchestrator stage |
+|---|---|---|---|
+| Agent 6 | Render & Video Production | `engines/render/` | `render` |
+| Agent 7 | Publishing & Scheduler | `engines/publishing/` | `publish` |
+| Agent 8 | SEO & Global Trend Optimization | `engines/seo/` | `seo` |
+| Agent 9 | Analytics & Learning | `engines/analytics/` | `analytics` · `learning` |
+| Agent 10 | Multi-Brand Operating System | `engines/brands/` | `brand_management` |
+
+Future engines subclass `ContractEngine` (`engines/contracts.py`) and fill
+their slot in the canonical `ContentPackage` (`DATA_CONTRACTS.md`). Their
+stages skip cleanly until the engines report ready.
 
 ---
 

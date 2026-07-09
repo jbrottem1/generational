@@ -82,6 +82,27 @@ def build_package(idea: dict, context: dict) -> ProductionPackage:
         quality_score=int(idea.get("scores", {}).get("publish", 0)),
         publish_ready=bool(idea.get("publishable")),
         analytics_placeholder={"status": "awaiting_publish", "metrics": {}},
+        # v8.1 canonical ContentPackage fields (Agents 6-10 read/write zones).
+        target_platforms=[context.get("target_platform", "youtube_shorts")],
+        target_language=trend.get("language", "en"),
+        topic=context.get("subject", ""),
+        keywords=list(idea.get("keywords", [])),
+        opportunity_score=int(top.get("opportunity_score", 0)),
+        virality_score=int(idea.get("scores", {}).get("virality", 0)),
+        script_package={
+            "script": idea.get("script", ""),
+            "structured_script": idea.get("structured_script", {}),
+            "variants": idea.get("script_variants", []),
+            "script_score": idea.get("script_score", 0),
+        },
+        visual_package=visual,
+        audio_package=audio,
+        render_package=dict(production),          # Agent 6 replaces with real render output
+        publishing_package={},                    # Agent 7 fills (schedule, accounts, metadata)
+        analytics_package={},                     # Agent 9 fills (post-publish performance)
+        learning_metadata={},                     # Agent 9 fills (learning signals)
+        status="approved" if idea.get("publishable") else "held",
+        diagnostics={"gate_failures": idea.get("gate_failures", [])},
     )
 
     # Additive traceability fields (extras are first-class in to_dict()).
