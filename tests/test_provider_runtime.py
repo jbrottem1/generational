@@ -30,6 +30,8 @@ from services.provider_runtime.fallback import ProviderFallbackManager
 from services.provider_runtime.health import ProviderHealthMonitor
 from services.provider_runtime.models import ProviderProfile
 from services.provider_runtime.registry import reset_registry
+from services.provider_runtime.reliability import ProviderReliabilityManager
+from services.provider_runtime.selection import set_reliability_manager
 from services.provider_runtime.selection import ProviderSelectionEngine
 
 
@@ -71,8 +73,10 @@ class _MockFailAdapter(BaseAdapter):
 def _isolate_registry():
     """Tests that mutate registry get a clean slate."""
     reset_registry()
+    set_reliability_manager(ProviderReliabilityManager())
     yield
     reset_registry()
+    set_reliability_manager(None)
 
 
 # ---------------------------------------------------- registration

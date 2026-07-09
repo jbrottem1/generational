@@ -90,10 +90,11 @@ See `PROVIDER_CONNECTORS.md` for the full catalog, auth, and remaining work.
 | Stability AI | `stability_ai` | Image, upscaling | `STABILITY_API_KEY` | Production |
 | YouTube / TikTok / IG / FB / X | `youtube`… | Publish | platform tokens | Production |
 | Future Music | `music_future` | Music | `MUSIC_PROVIDER_*` | Partial |
-| Replicate | `replicate` | Image, video, upscaling | `REPLICATE_API_TOKEN` | Stub |
-| Fal.ai | `fal_ai` | Image, video, lip sync | `FAL_KEY` | Stub |
-| ComfyUI | `comfyui` | Local image/video | `COMFYUI_ENDPOINT` | Stub |
-| Ollama | `ollama` | Local LLM | `OLLAMA_HOST` | Stub |
+| Replicate | `replicate` | Image, video, upscaling | `REPLICATE_API_TOKEN` | Production |
+| Fal.ai | `fal_ai` | Image, video, lip sync | `FAL_KEY` | Production |
+| ComfyUI | `comfyui` | Local image/video | `COMFYUI_ENDPOINT` | Production |
+| Ollama | `ollama` | Local LLM | `OLLAMA_HOST` | Production |
+| xAI | `xai` | LLM, reasoning | `XAI_API_KEY` | Production |
 | Local LLM | `local_llm` | Local LLM | `LOCAL_LLM_ENDPOINT` | Stub |
 | Demo | `demo` | All (deterministic fallback) | — | Always |
 

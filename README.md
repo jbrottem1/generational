@@ -4,30 +4,27 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
-## Version 9.15 — Production Readiness (Agent 1)
+## Version 9.15 — Provider Production Hardening (Agent 22)
 
-Engines route all LLM calls through ProviderRuntime (`engine_api`). Studio
-production runs via Workflow Executor with pause/resume/cancel. See
-[`PRODUCTION_READINESS.md`](PRODUCTION_READINESS.md) (overall **84/100**).
+ProviderRuntime is the **only** AI gateway. Engines use `engine_api` (no
+`core.ai`). Adds xAI, Fal, Replicate, ComfyUI, Ollama, LinkedIn; OAuth
+refresh; chunked uploads; streaming; reliability; security audit; analytics
+metrics. See [`PROVIDER_CONNECTORS.md`](PROVIDER_CONNECTORS.md) and
+[`PRODUCTION_READINESS.md`](PRODUCTION_READINESS.md) (**96/100**).
 `APP_VERSION = 9.15.0`.
-
-## Version 9.14 — Real Provider Connectors (Agent 22)
-
-Production HTTP connectors for text, image, video, voice, music abstraction,
-and publishing — all routed through `ProviderRuntime` (never bypassing the
-Orchestrator). Includes auth, retries, rate limits, fallback, caching, cost
-tracking, encrypted secrets, version pins, and registry health/priority.
 
 ```python
 from services.provider_runtime import get_provider_runtime
 
 runtime = get_provider_runtime()
-runtime.generate_image({"prompt": "sunset over mountains"})
-runtime.generate_voice({"text": "Hello from Generational"})
-runtime.publish({"package": {"title": "My Short"}})
+runtime.metrics_summary()
+runtime.validate_credentials()
 ```
 
-See [`PROVIDER_CONNECTORS.md`](PROVIDER_CONNECTORS.md). `APP_VERSION = 9.14.0`.
+## Version 9.14 — Real Provider Connectors (Agent 22)
+
+Production HTTP connectors for text, image, video, voice, music abstraction,
+and publishing — all routed through `ProviderRuntime`.
 
 ## Version 9.13 — Agents 20/21 Integration (Agent 1)
 

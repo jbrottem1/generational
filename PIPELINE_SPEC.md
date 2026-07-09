@@ -120,13 +120,13 @@ stub) graduates later as an audio-stage upgrade — not a distribution stage.
 
 ## Provider Runtime Layer (Agent 19) + Connectors (Agent 22)
 
-`services/provider_runtime/` is the **single gateway** for external AI and
-platform publishing. Agent 22 production connectors implement real HTTP
-`execute()` paths for OpenAI, Anthropic, Gemini, OpenAI Images, Flux,
-Ideogram, Stability, Veo, Runway, Kling, Pika, Luma, ElevenLabs, OpenAI TTS,
-and YouTube/TikTok/Instagram/Facebook/X. Selection, fallback, retries, rate
-limits, caching, cost, and health stay inside ProviderRuntime. See
-`PROVIDER_INTEGRATION.md` and `PROVIDER_CONNECTORS.md`.
+`services/provider_runtime/` is the **only gateway** for external AI and
+platform publishing. Engines use `engine_api` — they do not import `core.ai`
+or vendor SDKs. Production connectors cover OpenAI, Anthropic, Gemini, xAI,
+Flux, Ideogram, Stability, Veo, Runway, Kling, Pika, Luma, ElevenLabs,
+OpenAI TTS, Fal, Replicate, ComfyUI, Ollama, and YouTube/TikTok/Instagram/
+Facebook/X/LinkedIn. See `PROVIDER_INTEGRATION.md`, `PROVIDER_CONNECTORS.md`,
+`PRODUCTION_READINESS.md`.
 
 ---
 

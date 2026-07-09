@@ -177,14 +177,17 @@ execution, and checkpointed long-form production jobs.
 - **Engine gateway:** `services/provider_runtime/engine_api.py` (`runtime_generate_json` / image / video / voice)
 - **See:** `PROVIDER_INTEGRATION.md` · `PRODUCTION_READINESS.md`
 
-### Agent 22: Real Provider Connectors — LANDED
+### Agent 22: Real Provider Connectors — LANDED (v9.15)
 
-Production connectors for text, image, video, voice, music abstraction, and
-publishing platforms. Replaces stub `execute()` implementations with real HTTP
-integrations while preserving ProviderRuntime selection/fallback/security.
+Production connectors + engine migration onto `engine_api`. Covers OpenAI,
+Anthropic, Gemini, xAI, Flux, Fal, Replicate, ComfyUI, Ollama, ElevenLabs,
+video vendors, and YouTube/TikTok/IG/FB/X/LinkedIn with OAuth refresh,
+chunked uploads, streaming, reliability, security audit, and analytics metrics.
 
-- **Modules:** `services/provider_runtime/connectors/`, registry/cache/secrets/versioning enhancements
-- **See:** `PROVIDER_CONNECTORS.md`
+- **Modules:** `services/provider_runtime/connectors/`, `engine_api.py`,
+  `reliability.py`, `security.py`, `observability.py`, `uploads.py`, `streaming.py`
+- **See:** `PROVIDER_CONNECTORS.md`, `PRODUCTION_READINESS.md`
+
 
 ### Agent 20: Studio UI & Creative Workspace — LANDED
 

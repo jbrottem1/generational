@@ -31,13 +31,15 @@ from services.provider_runtime.fallback import ProviderFallbackManager
 from services.provider_runtime.http_client import HttpRequest, HttpResponse, set_default_transport
 from services.provider_runtime.models import ProviderProfile
 from services.provider_runtime.registry import health_score, record_health_score, reset_registry
+from services.provider_runtime.reliability import ProviderReliabilityManager
 from services.provider_runtime.secrets import decrypt_secrets, encrypt_secrets
-from services.provider_runtime.selection import ProviderSelectionEngine
+from services.provider_runtime.selection import ProviderSelectionEngine, set_reliability_manager
 
 
 @pytest.fixture(autouse=True)
 def _isolate(monkeypatch):
     reset_registry()
+    set_reliability_manager(ProviderReliabilityManager())
     set_default_transport(None)
     # Avoid accidental live calls
     for key in (
@@ -51,6 +53,7 @@ def _isolate(monkeypatch):
     yield
     set_default_transport(None)
     reset_registry()
+    set_reliability_manager(None)
 
 
 def _mock_transport(handler):

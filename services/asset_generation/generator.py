@@ -95,18 +95,20 @@ def generate_asset(
     last_error = "no provider available for this request"
 
     for provider_name in chain:
-        provider = get_provider(provider_name)
-        if provider is None or not provider.is_available():
-            # Fall back to legacy generation registry name if still registered there.
-            try:
-                from providers.asset_generation import get_generation_provider
+        # Prefer legacy generation registry for asset-gen selection chains,
+        # then ProviderRuntime adapters of the same name.
+        provider = None
+        try:
+            from providers.asset_generation import get_generation_provider
 
-                legacy = get_generation_provider(provider_name)
-            except Exception:  # noqa: BLE001
-                legacy = None
-            if legacy is None or not legacy.is_available():
+            provider = get_generation_provider(provider_name)
+        except Exception:  # noqa: BLE001
+            provider = None
+        if provider is None or not provider.is_available():
+            runtime_provider = get_provider(provider_name)
+            if runtime_provider is None or not runtime_provider.is_available():
                 continue
-            provider = legacy
+            provider = runtime_provider
         optimized = optimize_for_provider(spec, provider)
         for _attempt in range(max(1, int(config.max_retries))):
             job["attempts"] += 1
@@ -171,8 +173,25 @@ def generate_asset(
 
 
 def _generate_via_runtime(provider_name: str, optimized: dict, request: dict, provider) -> dict:
-    """Route asset generation through ProviderRuntime when possible."""
-    # Prefer ProviderRuntime preferred_provider path.
+    """Route asset generation through ProviderRuntime when the named adapter is live.
+
+    Legacy GenerationProvider adapters (mock / test doubles) keep calling
+    ``provider.generate()`` directly so selection/fallback chains stay intact.
+    """
+    runtime_adapter = get_provider(provider_name)
+    use_runtime = (
+        runtime_adapter is not None
+        and runtime_adapter is provider
+        and runtime_adapter.is_available()
+        and hasattr(runtime_adapter, "execute")
+        and not hasattr(provider, "generate")
+    )
+    if not use_runtime and hasattr(provider, "execute") and not hasattr(provider, "generate"):
+        use_runtime = True
+
+    if hasattr(provider, "generate") and not use_runtime:
+        return provider.generate(optimized, request)
+
     asset_class = str(request.get("asset_class", "image") or "image")
     op_map = {
         "image": "generate_image",
@@ -197,7 +216,7 @@ def _generate_via_runtime(provider_name: str, optimized: dict, request: dict, pr
     method = getattr(runtime, operation, None)
     if callable(method):
         response = method(payload, preferred_provider=provider_name, allow_fallback=False)
-        if response.success:
+        if response.success and response.provider == provider_name:
             data = dict(response.data or {})
             data.setdefault("provider", response.provider or provider_name)
             data.setdefault("placeholder", bool(response.demo_mode))
@@ -206,7 +225,6 @@ def _generate_via_runtime(provider_name: str, optimized: dict, request: dict, pr
                 data.get("image_url") or data.get("video_url") or data.get("uri") or data.get("path") or "",
             )
             return data
-        # If preferred provider failed, try legacy generate() when available.
         if hasattr(provider, "generate"):
             return provider.generate(optimized, request)
         return {"error": response.error or "runtime generation failed", "provider": provider_name}
