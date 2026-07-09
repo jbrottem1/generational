@@ -5,9 +5,9 @@ from engines.base import PlannedEngine
 INTELLIGENCE_LIVE = {
     "trend_discovery", "opportunity_ranking",
     "research", "ideation", "psychology", "script_generation",
-    "attention_graph",
+    "visual_intelligence", "voice_audio", "attention_graph",
     "ranking", "script",
-    "critic", "revision", "citation", "seo", "quality",
+    "critic", "revision", "citation", "seo", "threat_detection", "quality",
 }
 
 PRODUCTION_LIVE = {
@@ -15,9 +15,22 @@ PRODUCTION_LIVE = {
     "subtitle", "timeline", "render_package", "publishing_queue",
 }
 
-LIVE_KEYS = INTELLIGENCE_LIVE | PRODUCTION_LIVE
+# Agent 6 — the render stage engines are live (mock providers, real plans).
+RENDER_LIVE = {"image", "video", "render"}
 
-PLANNED_KEYS = {"voice", "image", "video", "publishing", "analytics", "learning"}
+# Agent 8 — the Global Content Optimization Engine is live.
+OPTIMIZATION_LIVE = {"seo_optimization"}
+
+# Agent 7 — the Publishing & Distribution Engine (+ scheduler) is live.
+PUBLISHING_LIVE = {"publishing", "scheduler"}
+
+LIVE_KEYS = INTELLIGENCE_LIVE | PRODUCTION_LIVE | RENDER_LIVE | OPTIMIZATION_LIVE | PUBLISHING_LIVE
+
+PLANNED_KEYS = {
+    "voice", "analytics", "learning",
+    # Agents 9-10 contract stubs
+    "brand_management",
+}
 
 EXPECTED_KEYS = LIVE_KEYS | PLANNED_KEYS
 

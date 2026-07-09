@@ -1,874 +1,388 @@
 # Generational — Master Architecture
 
-**Current version:** v7.3.0  
-**Status:** Source-backed research platform with an 18-dimension Psychology & Virality Engine, a multi-variant multi-platform Script Generation Engine, a 12-dimension Attention Graph, citation engine, and multi-factor quality gate  
-**Entry point:** `app.py` (Streamlit shell only — no business logic)
+**Document status:** Canonical architecture reference. Every agent (human or AI) working on this codebase reads this first.
+**Entry point:** `app.py` (Streamlit shell only — no business logic).
 
-This document is the canonical architecture reference for Generational. It describes how the system is built today, how to extend it safely, and how the team develops using ChatGPT, Claude, and Cursor.
+**Companion documents:** [`ARCHITECTURE_DIRECTIVES.md`](ARCHITECTURE_DIRECTIVES.md) (mandatory rules — read Directive #1 first) · [`OPERATING_SYSTEM.md`](OPERATING_SYSTEM.md) (how the pieces form one OS) · [`PIPELINE_SPEC.md`](PIPELINE_SPEC.md) (complete stage flow, live + future) · [`DATA_CONTRACTS.md`](DATA_CONTRACTS.md) (ContentPackage, context keys, engine contracts) · [`ENGINE_REGISTRY.md`](ENGINE_REGISTRY.md) (registered + reserved engine keys) · [`ORCHESTRATOR.md`](ORCHESTRATOR.md) (kernel API) · [`AGENT_WORKFLOW.md`](AGENT_WORKFLOW.md) (ownership + merge safety).
 
 ---
 
 ## Table of Contents
 
-1. [System Overview](#1-system-overview)
-2. [Layered Architecture](#2-layered-architecture)
-3. [End-to-End Flow](#3-end-to-end-flow)
-4. [Development Workflow (ChatGPT + Claude + Cursor)](#4-development-workflow-chatgpt--claude--cursor)
-5. [Engine Responsibilities](#5-engine-responsibilities)
-6. [Provider System](#6-provider-system)
-7. [Services Layer](#7-services-layer)
-8. [Data & Persistence](#8-data--persistence)
-9. [UI Contract](#9-ui-contract)
-10. [Version Roadmap](#10-version-roadmap)
-11. [Testing Rules](#11-testing-rules)
-12. [Git Workflow](#12-git-workflow)
-13. [Future Modules](#13-future-modules)
-14. [Extension Points](#14-extension-points)
+1. [Mission](#1-mission)
+2. [Current Pipeline](#2-current-pipeline)
+3. [Agent Responsibilities](#3-agent-responsibilities)
+4. [Data Flow](#4-data-flow)
+5. [Core Data Objects](#5-core-data-objects)
+6. [Folder Structure](#6-folder-structure)
+7. [MVP Goal](#7-mvp-goal)
+8. [Roadmap](#8-roadmap)
+9. [Non-Negotiable Rules](#9-non-negotiable-rules)
+10. [Next Immediate Step](#10-next-immediate-step)
 
 ---
 
-## 1. System Overview
+## 1. Mission
 
-### Mission
+Generational is an **autonomous AI media operating system**.
 
-Generational is **not a content generator**. It is an **autonomous AI Media Operating System**: software that builds, operates, optimizes, and scales a portfolio of profitable digital media brands with minimal human intervention.
+It is not a content generator, a script writer, or a single-channel automation tool. It is software for **building and operating multiple faceless short-form content brands** across TikTok, YouTube Shorts, Instagram Reels, and future platforms — with minimal human intervention.
 
-The system as a whole must be capable of: discovering profitable opportunities, understanding human psychology and SEO, researching topics, writing scripts, creating images, animation, video, narration, and music, rendering professional short-form content, publishing automatically, monitoring analytics, learning from results, improving future content, and managing many brands simultaneously.
+The system as a whole must be able to:
 
-The goal is not to automate one YouTube channel. The goal is software that operates an entire portfolio of AI media companies.
+- Discover profitable content opportunities before they saturate
+- Understand human psychology, attention, and virality mechanics
+- Write scripts, plan visuals, plan audio, and render professional short-form video
+- Publish automatically to the right platform, at the right time, in the right format
+- Measure performance, learn from it, and make every future piece of content better
+- Run many brands (channels) in parallel, each with its own niche, voice, and strategy
 
-### What exists today
-
-Generational v7.3 is a modular platform with:
-
-- A **Trend Discovery Engine** — the front door: auto-discovered trend providers, a universal Trend model, and 0-100 Opportunity Scoring that gates what enters the pipeline
-- A **Psychology & Virality Engine** — scores every candidate idea across 18 attention-science dimensions, blends them into a weighted 0-100 ViralScore, and produces a plain-English psychology report explaining why
-- A **Script Generation Engine** — runs immediately after Psychology: every candidate gets multiple stylistically distinct, platform-aware script variants (13 storytelling components each: hook, pattern interrupt, curiosity loop, core story, emotional progression, retention checkpoints, CTA, SEO keywords, B-roll, AI visual prompts, sound effects, music style, estimated runtime), scored 0-100 across six weighted factors, best variant wins
-- An **Attention Graph Engine** — scores every candidate across 12 attention dimensions into a radar-chart-ready profile plus a weighted 0-100 Attention Score, with a concrete recommendation for raising every dimension
-- A **Knowledge Engine** with live Wikipedia, PubMed, arXiv, and Crossref connectors
-- A **Citation Engine** that maps scripts to sources and flags unsupported claims
-- An **Intelligence Pipeline** (14 stages) from trend discovery and opportunity ranking through ideas, psychology, script generation, attention graph, ranking, critique, citation, SEO, and quality
-- A **Media Production Pipeline** that turns approved scripts into render-ready packages
-- A **Provider System** that keeps all vendor integrations swappable
-- A **Job Queue + Workflow Engine** that coordinates every stage without tight coupling
-
-### Design Principles
-
-| Principle | Meaning |
-|---|---|
-| **Modular** | Everything is replaceable — providers, models, APIs, platforms, voice/video engines all sit behind interfaces. Never hardcode a vendor. |
-| **Scalable** | Architecture must serve 1, 10, 100, or 1000 channels. No decision may cap future growth. |
-| **Autonomous** | The system trends toward zero-touch operation; humans provide approvals and strategic decisions only. |
-| **Self-improving** | Every completed video is training data. CTR, retention, watch time, comments, shares, revenue, SEO rank, thumbnail/hook performance, narration quality, visual style, music, publish timing, and trend timing all feed the Learning Engine. |
-| **Safe** | Nothing publishes without passing Quality Gates (SEO, psychology, research confidence, fact confidence, visual/audio/narration quality, overall publish score). Below threshold → reject, revise, retry. |
-| Provider-agnostic | Business logic never imports OpenAI, ElevenLabs, etc. directly |
-| Composition over inheritance | Small modules, shared context dict, no god classes |
-| UI separation | Streamlit is a thin shell; logic lives in `services/` and `engines/` |
-| Fail-safe | Demo/heuristic fallbacks when AI or providers fail — never crash |
-| Strong typing at boundaries | `core/models.py`, `core/production_models.py`, `services/research/models.py` |
-| Testability | Every service has unit tests; tests never touch real `data/` |
-
-### Target end-state pipeline
-
-```
-Research Engine → Trend Discovery → SEO Analysis → Psychology Analysis
-    → Opportunity Ranking → Script Engine → Voice Engine → Image Engine
-    → Animation Engine → Video Engine → Quality Review → Publishing
-    → Analytics → Learning Engine → Knowledge Base → Continuous Improvement
-```
-
-Every stage in this chain already has a registered engine key (live or planned stub), so lighting up a stage never requires orchestration changes.
+The end state is a **portfolio operator**: one system, many self-improving media brands.
 
 ---
 
-## 2. Layered Architecture
+## 2. Current Pipeline
+
+Content flows through eleven stages. Each stage is owned by exactly one agent (Section 3) and communicates only through structured data objects (Section 5).
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│  UI (Streamlit)                                             │
-│  app.py · ui/tabs/* · ui/components.py · ui/sidebar.py      │
-└──────────────────────────────┬──────────────────────────────┘
-                               │
-┌──────────────────────────────▼──────────────────────────────┐
-│  Services (orchestration)                                     │
-│  ideation · production · research · assets · knowledge ·      │
-│  channels · voice_profiles · pipeline                         │
-└──────────────────────────────┬──────────────────────────────┘
-                               │
-┌──────────────────────────────▼──────────────────────────────┐
-│  Job Queue (core/jobs.py)                                   │
-│  submit → run → status · synchronous today, async-ready      │
-└──────────────────────────────┬──────────────────────────────┘
-                               │
-┌──────────────────────────────▼──────────────────────────────┐
-│  Workflow Engine (core/workflows.py)                        │
-│  WORKFLOWS["intelligence"] · WORKFLOWS["media_production"]   │
-└──────────────────────────────┬──────────────────────────────┘
-                               │
-┌──────────────────────────────▼──────────────────────────────┐
-│  Engine Registry (engines/registry.py)                      │
-│  22 live engines · 6 planned stubs                           │
-└──────────────────────────────┬──────────────────────────────┘
-                               │
-┌──────────────────────────────▼──────────────────────────────┐
-│  Providers (providers/)                                     │
-│  Research sources · LLM · Voice · Image · Video · Music ·     │
-│  Publishing · Analytics · Trend · SEO                         │
-└──────────────────────────────┬──────────────────────────────┘
-                               │
-┌──────────────────────────────▼──────────────────────────────┐
-│  Core (core/)                                               │
-│  models · constants · parsing · state · storage · log ·       │
-│  diagnostics · production_models · ai/                      │
-└─────────────────────────────────────────────────────────────┘
+Trend Discovery
+    → Psychology & Virality
+    → Ranking
+    → Script Generation
+    → Visual Intelligence
+    → Voice & Audio
+    → Video Rendering
+    → Quality Control
+    → Publishing
+    → Analytics
+    → Learning Engine
 ```
 
-### Package Responsibilities
+Rules of the pipeline:
 
-| Package | Role |
-|---|---|
-| `app.py` | Page config, tab wiring, sidebar — **no business logic** |
-| `ui/` | Streamlit presentation only |
-| `services/` | Public APIs the UI calls; orchestrates jobs and workflows |
-| `engines/` | Pipeline stage plugins — one module per capability |
-| `providers/` | Swappable external backends (APIs, TTS, research sources) |
-| `core/` | Shared infrastructure — no UI, no vendor SDKs |
-| `tests/` | Unit and integration tests |
-| `data/` | Local persistence (gitignored runtime data) |
+- **Stages are sequential and gated.** A candidate that fails a stage's quality threshold does not advance.
+- **Stages never call each other directly.** This is **Architecture Directive #1 — Orchestrator-Only Communication** (see [`ARCHITECTURE_DIRECTIVES.md`](ARCHITECTURE_DIRECTIVES.md)), enforced by `tests/test_architecture.py`. Engines consume the previous stage's output object and emit their own; shared analysis logic lives in `engines/analysis.py` / `engines/heuristics.py`, never in engine-to-engine imports. Orchestration lives in `services/orchestrator/` (see [`ORCHESTRATOR.md`](ORCHESTRATOR.md)) — the single interface every consumer (UI, future scheduler, automation) uses; nothing invokes engines directly.
+- **Every stage is independently runnable and testable** with a fixture input, without running the stages before it.
+- **The Learning Engine closes the loop.** Its outputs feed back into Trend Discovery, Psychology scoring, Script Generation, and scheduling decisions.
 
 ---
 
-## 3. End-to-End Flow
+## 3. Agent Responsibilities
 
-When the user clicks **Run Command** in the Ideas tab:
+Each agent owns one pipeline stage end to end: its logic, its output contract, and its tests. Current module homes in this repo are noted so future agents know where to work.
 
-```
-User Command
-    │
-    ▼
-services/ideation.run_command()
-    │
-    ├─► Job Queue: workflow = "intelligence"
-    │       │
-    │       ▼
-    │   Stage 0: Trend Discovery (front door)
-    │       engines/trend_discovery.py → services/trends/manager.py
-    │       → query all auto-discovered trend providers
-    │       → normalize into universal Trend model
-    │       │
-    │       ▼
-    │   Stage 1: Opportunity Ranking
-    │       engines/opportunity_ranking.py → services/trends/scorer.py
-    │       → score every trend 0-100 (11 factors)
-    │       → only top 5 opportunities move forward
-    │       → trend keywords feed ideation
-    │       │
-    │       ▼
-    │   Stage 2: Research (Knowledge Engine)
-    │       services/research/manager.py
-    │       → parse intent
-    │       → query enabled research providers
-    │       → normalize ResearchDocument objects
-    │       → score + filter weak sources
-    │       → generate structured ResearchSummary
-    │       → cache by topic (data/research_cache/)
-    │       │
-    │       ▼
-    │   Stages 3–14: Intelligence Pipeline
-    │       ideation → psychology → script_generation →
-    │       attention_graph → ranking → script (fallback) →
-    │       critic → revision → citation → seo → quality
-    │       │
-    │       ▼
-    │   context["ideas"] with scores, SEO, references
-    │
-    ├─► services/knowledge.py — record hooks, scripts, research briefs
-    │
-    └─► services/production.run_media_production()
-            │
-            ▼
-        Job Queue: workflow = "media_production"
-        (publishable scripts only)
-            │
-            scene_planning → narration → visual_planning →
-            asset_manager → subtitle → timeline →
-            render_package → publishing_queue
-            │
-            ▼
-        ProductionPackage attached to each approved idea
-```
+### Agent 1: Trend Discovery & Opportunity Engine
 
-### Shared Context Contract
+Finds what to make before anyone asks. Pulls signals from trend providers, normalizes them into a universal trend model, and scores each opportunity 0–100 for timing, saturation, monetization potential, and niche fit. Only opportunities above the gate enter the pipeline.
 
-Every engine receives and returns updates to a shared `context: dict`. Key fields:
+- **Owns:** trend ingestion, opportunity scoring, idea candidate creation
+- **Modules:** `engines/trend_discovery.py`, `engines/opportunity_ranking.py`, `services/trends/`
 
-| Field | Set by | Consumed by |
-|---|---|---|
-| `command`, `niche`, `subject`, `goal` | Research | All downstream engines |
-| `trends` | Trend Discovery | Opportunity Ranking |
-| `trend_opportunities`, `top_opportunity`, `trend_dashboard` | Opportunity Ranking | UI (Trend Dashboard) |
-| `trend_keywords` | Opportunity Ranking | Ideation prompt |
-| `research` | Research | Ideation, Script, Quality, UI |
-| `research_references` | Research | Script (traceability) |
-| `candidates` | Ideation | Psychology, Script Generation, Ranking |
-| `candidates[].psychology`, `.psychology_score`, `.viral_score`, `.psychology_report` | Psychology | Script Generation, Ranking, Quality, UI (idea card report expander) |
-| `psychology_summary` | Psychology | UI, diagnostics |
-| `candidates[].script_variants`, `.script`, `.cta`, `.script_score`, `.script_style`, `.estimated_runtime_sec`, `.retention_checkpoints`, `.broll_suggestions`, `.visual_prompts`, `.sound_effects`, `.music_style` | Script Generation | Ranking, Critic, Citation, Quality, Production, UI |
-| `script_generation_summary` | Script Generation | UI, diagnostics |
-| `target_platform`, `script_variant_count` | Caller (optional) | Script Generation |
-| `candidates[].attention_graph` (`.scores`, `.attention_score`, `.radar_chart`, `.recommendations`) | Attention Graph | Ranking, UI (radar chart expander) |
-| `attention_graph_summary` | Attention Graph | UI, diagnostics |
-| `ranked_candidates`, `selected_ideas` | Ranking | Script (fallback), SEO, Quality |
-| `ideas` | Quality | Production, UI, Knowledge Base |
-| `quality_summary` | Quality | UI, Production filter |
-| `approved_content` | Production service | Media production engines |
-| `production_packages` | Production service | UI, project persistence |
+### Agent 2: Psychology & Virality Engine
 
-**Rule:** Never break backward-compatible keys in `context["research"]` (`topic_context`, `audience`, `search_intent`, `trend_strength`, `summary`, `opportunity_score`).
+The attention scientist. Scores every candidate idea across psychological dimensions (curiosity, emotional charge, identity relevance, novelty, controversy, and more), blends them into a weighted ViralScore, and explains the score in plain English. Also screens for psychological failure modes (clickbait without payoff, weak hooks, policy risk). Exposes its three scoring modules through one standardized **Behavioral Intelligence API** (Section 5.1) so any other agent's engine can consume a single typed report instead of three separately-shaped dicts.
 
----
+- **Owns:** psychology scoring, attention profiling, threat detection, the Behavioral Intelligence report contract
+- **Modules:** `engines/psychology.py`, `engines/attention_graph.py`, `engines/threat_detection.py`, `services/behavioral_intelligence/`
 
-## 4. Development Workflow (ChatGPT + Claude + Cursor)
+### Agent 3: Script Generation & Storytelling Engine
 
-Generational is developed using a three-tool workflow. Each tool has a distinct role; overlap is intentional but bounded.
+Turns a scored idea into a production-ready cinematic script. Every variant is built section-first — Primary Hook, Pattern Interrupt, Curiosity Hook, Context, Escalation, Evidence, Emotional Peak, Resolution, CTA — with per-section narration, duration, emotional intensity, attention score, visual intent, B-roll type, and caption emphasis. A Hook Engine writes ten styled hook candidates (curiosity, shock, question, FOMO, statistics, contrarian, story, mystery, authority, urgency) and ranks them with the idea's psychology dimensions; a retention model estimates drop-off risk, engagement, retention, rewatch probability, curiosity strength, and emotional pacing per variant. The winning variant ships as a `structured_script`: director-ready scene breakdown (camera, motion, captions, sound cues, transitions), emotion/attention timelines, voice instructions, caption plan, alternate hooks, retention model, and locale (language/region/dialect — translation-ready).
 
-> **Multiple agents now work on this codebase in parallel.** Ownership rules, merge safety rules, branch strategy, and the pre-merge review checklist live in [`AGENT_WORKFLOW.md`](AGENT_WORKFLOW.md). Read it before editing shared files.
+- **Owns:** script sections, hook engine, retention model, script variants, storytelling structure, script scoring, structured script contract
+- **Modules:** `engines/script_generation.py`, `engines/script.py`, `services/scripts/`
 
-### Role Split
+### Agent 4: Visual Intelligence Engine (Cinematic AI Director)
 
-| Tool | Primary Role | When to Use |
-|---|---|---|
-| **ChatGPT** | Product vision, feature specs, prompt design, niche strategy | Define *what* to build before coding |
-| **Claude** | Architecture review, large refactors, documentation, test design | Design *how* to build safely at scale |
-| **Cursor** | Implementation, debugging, test runs, commits | Write and ship code in the repo |
+The Cinematic AI Director. Consumes structured output from Trend Discovery, the Psychology Engine, the Script Engine (`structured_script`), and the Attention Graph, then directs every second of visual attention: a professional shot list (14 shot types with lens/depth-of-field metadata), 15 runtime-extensible style presets, per-scene 12-trigger visual psychology scores with predicted viewer retention, provider-agnostic asset requests through source adapters (AI image/video, licensed stock, user uploads, brand assets, future avatars), model-ready AI prompts, scored thumbnail concepts with eye direction and click probability, a hook-frame sequence, and a versioned machine-consumable Render Package (see `VISUAL_PRODUCTION_PACKAGE.md`).
 
-### Recommended Cycle
+- **Owns:** storyboards, shot lists, style presets, visual psychology + retention prediction, visual prompts, asset sourcing, thumbnails, pacing/camera/motion plans, render preparation
+- **Modules:** `engines/visual_intelligence.py`, `engines/visual_planning.py`, `engines/scene_planning.py`, `services/visual/`
 
-```
-1. SPEC (ChatGPT)
-   Write a version brief: goals, constraints, success criteria.
-   Example: "v5.0 — do not redesign UI, add Knowledge Engine."
+### Agent 5: Voice & Audio Engine
 
-2. ARCHITECTURE (Claude)
-   Review spec against MASTER_ARCHITECTURE.md.
-   Identify: new engines, services, providers, context fields, tests.
-   Output: file list + integration points + risks.
+The sound brain. Converts the script and visual package into a complete audio plan: niche-matched voice style, per-scene narration plan (pace, pauses, emphasis), layered sound effects, background music direction (BPM, key, energy curve), and a scene-by-scene audio cue sheet.
 
-3. IMPLEMENT (Cursor Agent)
-   Follow spec + architecture notes.
-   Rules:
-   - Minimize diff scope
-   - Match existing conventions
-   - No UI redesign unless explicitly requested
-   - Run pytest before commit
+- **Owns:** narration plans, voice styles, SFX, music direction, audio cue sheets
+- **Modules:** `engines/voice_audio.py`, `engines/voice.py`, `engines/narration.py`, `services/audio/`
 
-4. REVIEW (Claude or Cursor Bugbot)
-   Check: provider isolation, context contract, fail-safes, tests.
+### Agent 6: Video Rendering Engine — LANDED (mock render)
 
-5. DOCUMENT + COMMIT
-   Update README.md for user-facing changes.
-   Update MASTER_ARCHITECTURE.md for structural changes.
-   Commit with version tag message: "vX.Y.Z Short description"
-```
+Turns plans into pixels. Consumes the full ProductionPackage (structured script, scene breakdown, visual package, audio package, captions, quality score) and produces the render-ready 9:16 vertical package: a contiguous master timeline, per-scene render instructions (asset type, prompts, footage slots, camera/motion effects), word-by-word caption plans with safe-area layouts, a four-track audio mix plan with ducking and loudness placeholder, validation with a production readiness score, and a **mock render** simulating the full pass. Real backends (AI image/video generation, stock, avatars, ffmpeg/cloud encoding) swap in behind provider interfaces without contract changes.
 
-### Cursor-Specific Rules
+- **Owns:** asset resolution, timeline construction, scene render plans, caption render plans, audio mixing plans, transitions/motion instructions, render validation, (mock) rendering
+- **Modules:** `engines/render/` (engine, models, timeline, scene_plans, assets, captions, audio_mix, transitions, motion, packaging, validator, renderer), `engines/image.py`, `engines/video.py`; legacy media-production helpers: `engines/render_package.py`, `engines/timeline.py`, `engines/subtitle.py`, `engines/asset_manager.py`
 
-- **Agent mode** for multi-file features (new engines, services, providers)
-- **Ask mode** for architecture questions without code changes
-- Never commit unless explicitly requested
-- Never force-push `main`
-- Tests must pass before declaring a version complete
-- Use isolated `tmp_path` fixtures — never write to real `data/`
+### Agent 7: Quality Assurance Engine
 
-### Version Upgrade Checklist
+The last gate before the outside world. Checks rendered output against the plan: hook lands in the first seconds, audio/visual sync, subtitle accuracy, platform policy compliance, citation integrity, and overall craft. Rejects with actionable revision notes rather than a bare pass/fail.
 
-When shipping a new version:
+- **Owns:** quality gates, critique, revision routing
+- **Modules:** `engines/quality.py`, `engines/critic.py`, `engines/revision.py`, `engines/citation.py`
 
-- [ ] Bump `APP_VERSION` in `core/constants.py`
-- [ ] Add/update engines in `engines/__init__.py` if new stages
-- [ ] Add workflow steps in `core/workflows.py` if new pipeline
-- [ ] Extend tests in `tests/`
-- [ ] Update `README.md` (user-facing)
-- [ ] Update `MASTER_ARCHITECTURE.md` (developer-facing)
-- [ ] Run `python -m pytest`
-- [ ] Commit: `vX.Y.Z Description`
+### Agent 8: Publishing & Platform Engine — LANDED (mock providers)
 
----
+Gets content live. Manages platform accounts per channel (placeholder accounts — no real credentials), formats metadata (title, description, hashtags, thumbnail) per platform through provider adapters (YouTube Shorts, Instagram Reels, Facebook Reels, TikTok, X, LinkedIn, Pinterest — all mock today), schedules into optimal posting windows with timezone awareness, and runs the publish queue with exponential-backoff retries, full attempt history, and status tracking. Real platform APIs swap in one adapter at a time behind `PublishingProvider`.
 
-## 5. Engine Responsibilities
+- **Owns:** platform accounts (placeholders), metadata formatting, scheduling, publish queue, retries, publish history
+- **Modules:** `engines/publishing/` (engine, scheduler_engine), `services/publishing/` (manager, queue, scheduler, retry, package, accounts, extensions), `providers/publishing/` + `providers/publishing_provider.py`; legacy pre-render queue: `engines/publishing_queue.py`
 
-Engines are plugins registered in `engines/registry.py`. They **never call each other** — only the Workflow Engine coordinates them.
+### Agent 9: Analytics & Learning Engine
 
-### Engine Contract
+Closes the loop. Collects post-publish performance (views, retention curves, watch time, engagement, follows), attributes outcomes back to the decisions that produced them, and emits learning signals that adjust future trend selection, psychology weights, script styles, and posting strategy.
 
-```python
-class Engine(ABC):
-    key: str           # registry key, used in WORKFLOWS
-    label: str         # human-readable name
-    icon: str          # UI display
-    description: str
+- **Owns:** performance ingestion, attribution, learning signals, weight updates
+- **Modules:** `engines/analytics.py`, `engines/learning.py`
 
-    def is_ready(self) -> bool: ...   # False = skipped by workflow
-    def run(self, context: dict) -> dict: ...  # returns merge updates
-```
+### Development-agent landing zones (v8.1)
 
-### Intelligence Pipeline (14 live engines)
+The stage owners above describe *pipeline responsibilities*. The parallel
+*development agents* scheduled next map onto them with prepared landing
+zones, contract stubs, and orchestrator stages already wired (see
+`AGENT_WORKFLOW.md` §6 and each landing zone's README):
 
-| Key | Module | Responsibility |
-|---|---|---|
-| `trend_discovery` | `engines/trend_discovery.py` | Front door — queries all trend providers; normalizes into universal Trend model |
-| `opportunity_ranking` | `engines/opportunity_ranking.py` | Scores trends 0-100 (11 factors); only top opportunities move forward |
-| `research` | `engines/research.py` | Knowledge Engine — live APIs + demo fallback; produces Research Brief |
-| `ideation` | `engines/ideation.py` | Generates 20 candidate concepts grounded in research brief |
-| `psychology` | `engines/psychology.py` | Psychology & Virality Engine — scores candidates on 18 attention dimensions, blends a weighted ViralScore (0-100), and produces a psychology report (deterministic) |
-| `script_generation` | `engines/script_generation.py` | Script Generation Engine — runs immediately after Psychology; multi-style, platform-aware script variants per candidate (13 storytelling components), scored 0-100, best variant attached; delegates to `services/scripts/` |
-| `attention_graph` | `engines/attention_graph.py` | Attention Graph Engine — scores candidates on 12 attention dimensions, blends a weighted Attention Score (0-100), and returns a radar-chart payload plus per-dimension recommendations (deterministic) |
-| `ranking` | `engines/ranking.py` | Weighted ranking (psychology 50% + opportunity 30% + script quality 20%); selects top N |
-| `script` | `engines/script.py` | Fallback scriptwriter — covers ideas that reach ranking unscripted; never overwrites generated variants |
-| `critic` | `engines/critic.py` | Adversarial review — flags weak hooks, repetition, pacing |
-| `revision` | `engines/revision.py` | Auto-rewrites flagged sections |
-| `citation` | `engines/citation.py` | Maps scripts to sources; claim confidence; unsupported claim warnings |
-| `seo` | `engines/seo.py` | Titles, hashtags, keywords, description, thumbnail concept |
-| `quality` | `engines/quality.py` | Multi-factor publish gate (score + research + citations) |
-
-**Workflow:** `WORKFLOWS["intelligence"]`
-
-### Psychology & Virality Engine (deep dive)
-
-`engines/psychology.py` is the attention-engineering core of the pipeline. It
-runs immediately after Ideation (itself downstream of Trend Discovery) and
-before Ranking/Script, so no concept is scripted, produced, or published
-without first passing through a measurable model of human attention.
-
-- **18 dimensions** (`score_dimensions()`): curiosity gap, emotional
-  intensity, surprise, novelty, fear, humor, satisfaction, retention
-  potential, replay value, comment likelihood, share likelihood, controversy
-  (bounded by platform safety — capped ceiling regardless of trigger-word
-  density), visual hook strength, first-3-second hook, dopamine curve,
-  information density, audience identity, community appeal. Each is scored
-  0-100 by deterministic text-feature analysis (word banks in
-  `engines/heuristics.py`, punctuation, structure, digits, hook length) —
-  free, fast, reproducible in every mode, no API key required.
-- **ViralScore** (`viral_score()`): the 18 dimensions blend into one weighted
-  0-100 score via `VIRAL_SCORE_WEIGHTS` — data, not code, so the future
-  Learning Engine can retune weights from real performance results without
-  touching scoring logic.
-- **Psychology report** (`build_report()`): every candidate gets a tier
-  (e.g. *Strong Viral Potential*), its top 3 strengths, its 3 weakest
-  levers, a per-dimension explanation, and a one-line summary — attached to
-  the idea as `psychology_report` and surfaced in the Ideas tab as a compact
-  expander (no new UI pages).
-- **Backward compatibility:** `psychology_score` (alias of the ViralScore)
-  and the `psychology` dimension dict remain on every candidate so
-  `ranking.py` and `quality.py` need no structural changes to consume it.
-- **Quality Gate integration:** `engines/quality.py` derives `retention`,
-  `ctr`, and a dedicated `virality` score (share/comment likelihood,
-  audience identity, community appeal, bounded controversy) from the 18
-  dimensions, so the publish gate rewards concepts built to spread — not
-  just to be watched once.
-
-### Attention Graph (deep dive)
-
-`engines/attention_graph.py` is Phase 2 of the attention-engineering stack. It
-runs after Script Generation and before Ranking, giving every candidate a
-radar-chart-ready profile of the moment-to-moment attention mechanics a
-finished video would need to execute.
-
-- **12 dimensions** (`score_dimensions()`): first-3-second hook, curiosity
-  gap, dopenness, emotional intensity, story tension, surprise, visual
-  novelty, shareability, rewatch probability, comment likelihood, identity
-  signaling, tribal engagement. Nine dimensions reuse the already-tested
-  Phase 1 psychology scorer so the two phases stay consistent; three are new
-  to this phase — **dopenness** (how quickly and openly the concept opens an
-  anticipatory reward loop for a broad, low-jargon audience), **story
-  tension** (turning-point language and setup/twist structure), and
-  **visual novelty** (concrete, filmable transformation/reveal cues) — all
-  backed by new word banks in `engines/heuristics.py`.
-- **Attention Score** (`attention_score()`): the 12 dimensions blend into one
-  weighted 0-100 score via `ATTENTION_GRAPH_WEIGHTS` — data, not code, so the
-  future Learning Engine can retune weights from real performance results.
-- **Radar chart payload** (`radar_chart()`): labels + scores arrays consumed
-  by `ui/components.attention_radar_chart()`, which renders a Plotly
-  Scatterpolar chart (falls back to a plain score list if `plotly` isn't
-  installed) inside a compact "🕸️ Attention Graph" expander on the idea card
-  — no new UI pages.
-- **Recommendations** (`build_recommendations()`): a concrete, dimension-
-  specific suggestion for raising every one of the 12 scores, surfaced
-  weakest-first in the same expander.
-- Attached to every candidate as `attention_graph` (`scores`, `attention_score`,
-  `radar_chart`, `recommendations`); a batch `attention_graph_summary` is
-  attached to the pipeline context for diagnostics.
-
-### Media Production Pipeline (8 live engines)
-
-| Key | Module | Responsibility |
-|---|---|---|
-| `scene_planning` | `engines/scene_planning.py` | Splits script into structured scenes |
-| `narration` | `engines/narration.py` | Voice track via VoiceProvider (AI / recorded / clone-ready) |
-| `visual_planning` | `engines/visual_planning.py` | Visual prompts per scene for future image/video providers |
-| `asset_manager` | `engines/asset_manager.py` | Registers narration, visuals, thumbnails in Asset Manager |
-| `subtitle` | `engines/subtitle.py` | Sentence + word-level subtitle timing, SRT output |
-| `timeline` | `engines/timeline.py` | Assembles narration, visual, subtitle, music timing |
-| `render_package` | `engines/render_package.py` | Bundles all assets for a future renderer |
-| `publishing_queue` | `engines/publishing_queue.py` | Queues render packages for auto-posting |
-
-**Workflow:** `WORKFLOWS["media_production"]` — runs only on `publishable` ideas via `services/production.py`
-
-### Planned Engines (registered, not implemented)
-
-| Key | Module | Future Role |
-|---|---|---|
-| `voice` | `engines/voice.py` | Standalone TTS generation engine (superseded in part by `narration`) |
-| `image` | `engines/image.py` | AI image generation from visual prompts |
-| `video` | `engines/video.py` | AI video generation / assembly |
-| `publishing` | `engines/publishing.py` | Auto-post to YouTube, TikTok, Instagram, X |
-| `analytics` | `engines/analytics.py` | Performance tracking and reporting |
-| `learning` | `engines/learning.py` | Mines Knowledge Base to improve prompts and strategy |
-
-Planned engines return `{"{key}_status": "not_implemented"}` and are skipped when `is_ready() == False`.
-
-### Adding a New Engine
-
-1. Create `engines/my_engine.py` with an `Engine` subclass
-2. Register in `engines/__init__.py`
-3. Append key to the appropriate `WORKFLOWS[...]` list in `core/workflows.py`
-4. Add tests in `tests/test_engines.py` or a dedicated test file
-5. Update production dashboard stage defs in `services/production.py` if user-visible
-
----
-
-## 6. Provider System
-
-Providers live in `providers/` and implement abstract interfaces in `providers/base.py`. **Engines and services call factories — never vendor SDKs.**
-
-### Provider Categories
-
-| Category | Interface | Factory | Implementations |
+| Dev agent | Subsystem | Landing zone | Orchestrator stage |
 |---|---|---|---|
-| LLM | `providers/llm.py` | `get_llm_provider()` | `core/ai/openai_provider.py`, `core/ai/demo_provider.py` |
-| Research sources | `providers/research_source.py` | `get_research_source_providers()` | wikipedia, pubmed, arxiv, crossref (live); news, trends, youtube, reddit, tiktok (placeholder) |
-| Trend sources | `providers/trend_sources/base.py` | `get_trend_providers()` — **auto-discovered** | google_trends, youtube_trending, tiktok_trends, reddit_trends, rss_feeds, news_api, keyword_api (placeholders) |
-| Voice | `providers/voice/base.py` | `get_voice_provider(mode)` | demo_ai, recorded, clone (stub) |
-| Image | `providers/image_provider.py` | *(stub)* | — |
-| Video | `providers/video_provider.py` | *(stub)* | — |
-| Music | `providers/music_provider.py` | *(stub)* | — |
-| SEO | `providers/seo_provider.py` | *(stub)* | engines use LLM directly today |
-| Publishing | `providers/publishing_provider.py` | *(stub)* | — |
-| Analytics | `providers/analytics_provider.py` | *(stub)* | — |
-| Trend | `providers/trend_provider.py` | *(stub)* | — |
+| Agent 6 | Render & Video Production — **LANDED** (mock render, live stage) | `engines/render/` | `render` |
+| Agent 7 | Publishing & Scheduler — **LANDED** (mock providers, live stage) | `engines/publishing/` + `services/publishing/` + `providers/publishing/` | `publish` |
+| Agent 8 | Global Content Optimization (SEO) — **LANDED** (live stage) | `engines/seo/` + `engines/seo_optimization.py` + `services/seo/` | `seo` |
+| Agent 9 | Analytics & Learning | `engines/analytics/` | `analytics` · `learning` |
+| Agent 10 | Multi-Brand Operating System | `engines/brands/` | `brand_management` |
 
-### Research Source Provider Contract
+Future engines subclass `ContractEngine` (`engines/contracts.py`) and fill
+their slot in the canonical `ContentPackage` (`DATA_CONTRACTS.md`). Their
+stages skip cleanly until the engines report ready.
 
-Every research provider implements:
+---
 
-```python
-class ResearchSourceProvider(Provider):
-    key: str
-    label: str
+## 4. Data Flow
 
-    def is_available(self) -> bool: ...
-    def search(self, topic: str, niche: str = "", limit: int = 3) -> list[ResearchDocument]: ...
-```
+Each stage receives exactly one structured input and produces exactly one structured output. No stage reads another stage's internals.
 
-Returns normalized `ResearchDocument` objects regardless of upstream API shape. The UI **never** displays which provider supplied data.
-
-### Trend Source Provider Contract (v7.0)
-
-```python
-class TrendSourceProvider(ABC):
-    key: str        # registry key
-    label: str      # human-readable name
-    platform: str   # where the signal comes from
-
-    def is_available(self) -> bool: ...
-    def discover(self, topic, category="general", country="US",
-                 language="en", limit=3) -> list[Trend]: ...
-```
-
-Returns universal `Trend` objects (topic, keywords, growth %, search volume,
-velocity, competition, freshness, category, country, language, platform,
-source, timestamp, confidence). The registry in
-`providers/trend_sources/__init__.py` **scans the package automatically** —
-adding a provider is dropping one module into the folder. No registration
-code, no imports to edit.
-
-### Voice Provider Contract
-
-Three modes via `VoiceMode`:
-
-| Mode | Provider | Status |
+| Stage | Receives | Outputs |
 |---|---|---|
-| `ai` | `DemoAIVoiceProvider` | Live (demo) |
-| `recorded` | `RecordedVoiceProvider` | Live (metadata + file paths) |
-| `clone` | `CloneVoiceProvider` | Architecture stub only |
+| Trend Discovery | Raw platform/trend signals | `ContentIdea` (scored opportunity candidates) |
+| Psychology & Virality | `ContentIdea` | `PsychologyReport` (ViralScore + explanation + threats) |
+| Ranking | `ContentIdea` + `PsychologyReport` | `RankedIdea` (prioritized, gated shortlist) |
+| Script Generation | `RankedIdea` | `ScriptPackage` (winning variant + alternates + scores) |
+| Visual Intelligence | `ScriptPackage` + `PsychologyReport` + Attention Graph scores | `VisualPackage` (directed storyboard + shot list + prompts + asset requests + thumbnails + retention curve + Render Package) |
+| Voice & Audio | `ScriptPackage` + `VisualPackage` | `AudioPackage` (narration plan + SFX + music + cue sheet) |
+| Video Rendering | `VisualPackage` + `AudioPackage` + `ScriptPackage` + captions | `render_package` v2.0 (timeline, scene/caption/audio-mix plans, validation, mock render manifest — becomes `RenderedVideo` when real backends land) |
+| Quality Control | `RenderedVideo` + upstream packages | Approved `RenderedVideo` or revision notes routed back |
+| Content Optimization (SEO) | `ContentPackage` (render + script + psychology + trend context) | Enriched `seo_package` + `PublishingPackage` v1.0 (ranked titles/hashtags/thumbnails/windows, keyword + localization packages, Optimization Report) |
+| Publishing | Approved `RenderedVideo` + `PublishingPackage` + `Channel` config | `PublishingResult` + per-item `publishing_package` (queued/scheduled/published jobs with post IDs, URLs, timings — mock posts today; becomes `PublishedPost` when real APIs land) |
+| Analytics | `PublishedPost` + platform APIs | `AnalyticsRecord` (performance over time) |
+| Learning Engine | `AnalyticsRecord` + full decision history | `LearningSignal` (weight/strategy adjustments fed upstream) |
 
-### Adding a New Provider
-
-**Research source:**
-1. Create `providers/my_source.py` implementing `ResearchSourceProvider`
-2. Register in `providers/__init__.py` → `_load_research_sources()`
-3. Add key to `RESEARCH_PROVIDERS` in `core/constants.py`
-4. Add tests in `tests/test_research_engine.py`
-
-**Trend source:**
-1. Create `providers/trend_sources/my_source.py` implementing `TrendSourceProvider`
-2. Done — the registry auto-discovers it. Add a test in `tests/test_trend_discovery.py`
-
-**Other capability:**
-1. Implement the ABC in `providers/`
-2. Add factory function in `providers/__init__.py`
-3. Wire engine to call factory — never import vendor SDK in engine code
+In plain terms: the Trend Engine outputs content ideas. The Psychology Engine scores those ideas. The Ranking stage decides which ideas deserve production. The Script Engine creates structured scripts. The Visual Engine creates storyboards and prompts. The Audio Engine creates narration and sound plans. The Renderer creates the final video. The QA Engine approves it. The Publishing Engine posts it. The Analytics Engine records how it performs. The Learning Engine uses that performance to improve every future decision.
 
 ---
 
-## 7. Services Layer
+## 5. Core Data Objects
 
-Services are the public API between UI and infrastructure.
+These are the contracts between stages. They live in the models layer (`core/models.py`, `core/production_models.py`) and are the **only** way stages communicate. Every object is serializable, versioned, and carries the IDs needed to trace a published post back to the trend that spawned it.
 
-| Service | Module | Role |
+| Object | Purpose | Key fields (indicative) |
 |---|---|---|
-| Ideation | `services/ideation.py` | Runs intelligence pipeline + production; records to Knowledge Base |
-| Production | `services/production.py` | Runs media_production workflow; builds production dashboard |
-| Research | `services/research/` | Knowledge Engine — manager, cache, scorer, summarizer, models |
-| Trends | `services/trends/` | Trend Discovery — universal Trend model, 11-factor opportunity scorer, discovery manager |
-| Scripts | `services/scripts/` | Script Generation — `PlatformSpec` for 6 platforms, `ScriptVariant` model (13 components), deterministic multi-style generator, 6-factor variant scorer, `generate_script_package()` standalone API |
-| Assets | `services/assets.py` | Asset registry + publishing queue persistence |
-| Voice Profiles | `services/voice_profiles.py` | Profile CRUD, recording metadata, style presets |
-| Knowledge | `services/knowledge.py` | Append-only JSON memory (hooks, titles, scripts, research briefs) |
-| Channels | `services/channels.py` | Multi-brand/account configuration |
-| Pipeline | `services/pipeline.py` | Stage views for UI from engine registry |
+| **ContentIdea** | A single candidate concept discovered from trends | id, channel_id, topic, angle, source signals, opportunity score, discovered_at |
+| **PsychologyReport** | Psychological evaluation of one idea. Concretely implemented as `BehavioralIntelligenceReport` (Section 5.1) | idea_id, dimension scores, ViralScore (0–100), explanation, detected threats |
+| **RankedIdea** | An idea that survived ranking | idea_id, rank, composite score, gate decisions, selected platform targets |
+| **ScriptPackage** | Complete script output for one idea (concrete shape: `structured_script`, `services/scripts/structure.py`) | idea_id, winning variant, alternate hooks, annotated sections, scene breakdown, emotion/attention timelines, voice instructions, caption plan, retention model, retention checkpoints, CTA, locale, per-variant scores |
+| **VisualPackage** | Complete directed visual plan for one script (contract: `VISUAL_PRODUCTION_PACKAGE.md`) | script_id, directed scenes (shot/lens/DOF, style, attention level, predicted retention), shot list, asset requests, image/video prompts per model, thumbnail concepts + click probability, hook frames, retention curve, Render Package, overall visual score |
+| **AudioPackage** | Complete audio plan for one script | script_id, voice style, per-scene narration plan (wpm, pauses, emphasis), SFX layers, music direction (BPM/key/energy), cue sheet, overall audio score |
+| **RenderedVideo** | The final produced asset | package_ids, file path/URI, duration, resolution, aspect ratio, render manifest, QA status |
+| **PublishedPost** | One live post on one platform | video_id, platform_account_id, platform post ID, URL, publish time, metadata used |
+| **AnalyticsRecord** | Performance snapshot(s) for one post | post_id, views, retention curve, watch time, likes/comments/shares, follows attributed, captured_at |
+| **LearningSignal** | A concrete adjustment derived from outcomes | source records, target (weights/strategy/style), adjustment, confidence, applied_at |
+| **Channel** | One faceless brand the system operates | id, name, niche, voice/style profile, target platforms, cadence, strategy state |
+| **PlatformAccount** | Credentials and state for one platform login | channel_id, platform, auth/token refs, posting limits, health status |
 
-### Knowledge Engine Internals (`services/research/`)
+Object rules:
 
-| Module | Role |
-|---|---|
-| `manager.py` | Orchestrates full research flow; entry point for Research engine |
-| `models.py` | `ResearchDocument`, `ResearchIntent`, `ResearchSummary`, `ResearchSettings`, `ResearchBundle` |
-| `cache.py` | Topic-level cache with TTL (`data/research_cache/`) |
-| `scorer.py` | Authority, freshness, popularity, scientific reliability, citations, relevance |
-| `summarizer.py` | Executive summary, facts, stats, myths, contrarian ideas, Q&A, trends |
-| `citation.py` | Script-to-source mapping, claim confidence, fact-check notes |
+- New fields are additive; removing or renaming a field is a breaking change and requires updating every consumer plus its tests.
+- Every object carries the upstream IDs it derived from, so the Learning Engine can attribute outcomes end to end.
+- If a stage needs data another stage doesn't emit, extend the object contract — never reach into another engine.
 
----
+### 5.1 Behavioral Intelligence Report (concrete implementation)
 
-## 8. Data & Persistence
+`PsychologyReport` above is the abstract contract; `BehavioralIntelligenceReport`
+(`services/behavioral_intelligence/models.py`) is the concrete, versioned
+dataclass every engine actually imports. It exists so Script Generation,
+Visual Intelligence, Voice & Audio, and any future consumer never parse
+`psychology` / `attention_graph` / `threat_report` dicts by hand — they read
+one typed object.
 
-All runtime data lives under `data/` (gitignored except `.gitkeep` files).
+**How reports are generated.** `services/behavioral_intelligence/builder.py::build_report(candidate)`
+reads whatever the candidate currently carries and maps each field to its
+best available source, preferring the richer/later engine's data and
+falling back to an earlier engine (or a heuristic proxy) when it isn't
+there yet:
 
-| Path | Contents |
-|---|---|
-| `data/projects/` | Saved project JSON files |
-| `data/projects/{slug}/knowledge/` | Per-project research artifacts |
-| `data/knowledge/` | Global Knowledge Base (hooks, titles, scripts, research briefs) |
-| `data/research_cache/` | Topic-level research cache |
-| `data/assets/` | Asset registry index |
-| `data/voice_profiles/` | Voice profile metadata |
-| `data/voice_recordings/` | User narration recordings |
-| `data/publishing_queue/` | Queued render packages |
-| `data/channels/` | Channel configurations |
-| `data/logs/` | Structured runtime logs |
-
-### Key Data Models
-
-| Model | Location | Purpose |
+| Report field | Preferred source | Fallback |
 |---|---|---|
-| Result / Project dict | `core/models.py` | Session and persisted project shape |
-| Production models | `core/production_models.py` | Scene, Timeline, RenderPackage, VoiceProfile, Asset |
-| Research models | `services/research/models.py` | ResearchDocument, ResearchSummary, ResearchBundle |
+| `viral_score` | Psychology `viral_score` | — (always present once Psychology runs) |
+| `attention_score` | Attention Graph `attention_score` | `viral_score` |
+| `curiosity_score` | Psychology `curiosity_gap` | — |
+| `emotional_intensity` | Psychology `emotional_intensity` | — |
+| `novelty_score` | Psychology `novelty` | — |
+| `shareability_score` | Attention Graph `shareability` | Psychology `share_likelihood` |
+| `replay_probability` | Attention Graph `rewatch_probability` | Psychology `replay_value` |
+| `comment_probability` | Attention Graph `comment_likelihood` | Psychology `comment_likelihood` |
+| `retention_prediction` | Psychology `retention_potential` | — |
+| `hook_strength` | Attention Graph `first_3_second_hook` | Psychology `first_3_second_hook` |
+| `identity_resonance` | Attention Graph `identity_signaling` | Psychology `audience_identity` |
+| `visual_interest_score` | Average of Psychology `visual_hook_strength` + Attention Graph `visual_novelty` | Whichever one exists |
+| `narrative_tension` | Attention Graph `story_tension` | Average of Psychology `surprise` + `dopamine_curve` |
+| `confidence` | Rule-based signal count (see below) | — |
+| `recommendations` | Flagged Threat Report fixes + weakest-field growth tips | Generic "no major gaps" message |
+
+**Who attaches it, and when.** `engines/psychology.py` calls
+`attach_report()` at the end of its `run()` — the earliest point a report
+can exist — so it's already on `candidate["behavioral_intelligence"]` by the
+time Script Generation, Visual Intelligence, and Voice & Audio run (they all
+execute before the Attention Graph in `core/workflows.py`). `engines/attention_graph.py`
+and `engines/threat_detection.py` each call `attach_report()` again at the
+end of their own `run()`, so later stages see a progressively richer report
+without any stage needing to know about the others.
+
+**Score meanings.** Every field's plain-English meaning and exact source
+mapping lives in `FIELD_DESCRIPTIONS` (`services/behavioral_intelligence/models.py`)
+— read there rather than duplicating it here, so the doc can never drift
+from the code.
+
+**Confidence.** Not a behavioral score — it's how much upstream signal
+backed the report. `_confidence()` starts at 55 and adds a fixed amount per
+signal present (Psychology +10, Attention Graph +15, Threat Report +10,
+script text +5), clamped to 50–98. Today this is a hand-tuned rule; see
+below for how it's meant to evolve.
+
+**Recommendations.** Up to 5 strings: flagged Threat Report fixes reserve
+their slots first (production risk beats growth opportunity), then the
+weakest-scoring fields fill whatever room is left, using the single-tip-per-
+field map in `builder.py::FIELD_TIPS`.
+
+**Extension points for future ML models.** Every function in
+`builder.py` is a pure function over plain dicts/dataclasses with a fixed
+signature, so a learned model can replace any one of them without touching
+callers:
+
+- Replace `build_report()`'s per-field mapping with a model that predicts
+  all 13 scores jointly from raw text + upstream dimensions — the dataclass
+  contract (`BehavioralIntelligenceReport`) doesn't change.
+- Replace `_confidence()` with a learned calibration (e.g. predicted-vs-
+  actual error conditioned on which signals were present) — must keep
+  returning an int 0–100.
+- Replace `_recommendations()`'s static `FIELD_TIPS` lookup with a generator
+  conditioned on the actual script/visual/audio package, once those exist —
+  must keep returning `list[str]`.
+- The real target to eventually train against is the Analytics/Learning
+  Engine's `AnalyticsRecord` → `LearningSignal` loop (Section 3, Agent 9):
+  once published posts report real retention/share/comment outcomes, this
+  module is where predicted scores get reconciled against them.
 
 ---
 
-## 9. UI Contract
+## 6. Folder Structure
 
-The Streamlit UI is intentionally stable across versions. Major releases add **compact panels and settings** — not new pages or layout redesigns.
+Target structure for the codebase. New code should conform to this layout; existing top-level modules (`engines/`, `services/`, `core/`, `providers/`, `ui/`, `tests/`) map onto it directly and can be migrated under `src/` incrementally — never as a big-bang rewrite.
 
-### Tabs (fixed since v1.0)
+```
+src/
+  engines/              # One folder per pipeline stage — pure logic, no I/O side effects
+    trends/             # Agent 1: discovery + opportunity scoring
+    psychology/         # Agent 2: virality scoring, attention graph, threat detection
+    ranking/            # Gate: composite ranking of scored ideas
+    scripts/            # Agent 3: script variants + storytelling structure
+    visuals/            # Agent 4: storyboards, prompts, thumbnails
+    audio/              # Agent 5: narration, SFX, music planning
+    rendering/          # Agent 6: timeline, assembly, subtitles, render (today: engines/render/)
+    quality/            # Agent 7: quality gates, critique, revision
+    publishing/         # Agent 8: accounts, metadata, scheduling, queue
+    analytics/          # Agent 9a: performance ingestion + attribution
+    learning/           # Agent 9b: learning signals + weight updates
+  models/               # Core data objects (Section 5) — the stage contracts
+  services/             # Orchestration (services/orchestrator/ — see ORCHESTRATOR.md), pipelines, job queue, provider wiring, storage
+  ui/                   # Streamlit views — display only, zero business logic
+  tests/                # Mirrors src/ — one test module per engine minimum
+docs/                   # Architecture docs, decisions, session summaries
+```
 
-| Tab | Module | Purpose |
-|---|---|---|
-| Ideas | `ui/tabs/ideas.py` | Command input, pipeline run, breakdown, idea cards |
-| Scripts | `ui/tabs/scripts.py` | Copy-friendly script view |
-| Projects | `ui/tabs/projects.py` | Save / open / delete projects |
-| Publishing | `ui/tabs/publishing.py` | Platform placeholders + roadmap |
-| Analytics | `ui/tabs/analytics.py` | Session metrics + roadmap |
-| Settings | `ui/tabs/settings.py` | API key, model, voice, research, quality gate, diagnostics |
+Layering rules:
 
-### UI Rules for Future Versions
-
-- Do not add new top-level tabs without explicit product decision
-- Do not move business logic into `ui/` — call `services/` only
-- Settings additions go as new sections within the existing Settings tab
-- Pipeline progress uses `components.production_dashboard()` — extend, don't replace
+- **engines** depend on **models** only. Never on services, UI, or each other.
+- **services** orchestrate engines and own all external I/O (APIs, storage, queues, provider SDKs).
+- **ui** calls services and renders their structured outputs. If the UI computes anything beyond formatting, that logic is in the wrong layer.
+- **models** depend on nothing.
 
 ---
 
-## 10. Version Roadmap
+## 7. MVP Goal
 
-### Shipped
+The first true MVP is the **one-button planning pipeline**:
 
-| Version | Commit theme | Key deliverable |
-|---|---|---|
-| **v1.0** | AI Command Center | Streamlit workspace, OpenAI integration, demo mode, project saving |
-| **v1.1** | Autonomous OS foundation | Job queue, engine registry, workflows, channels, knowledge base, tests |
-| **v2.0** | Intelligence Pipeline | 9-stage reasoning: research → ideation → psychology → ranking → script → critic → revision → SEO → quality |
-| **v4.0** | Media Production Engine | 8-stage production pipeline, voice architecture, render packages, production dashboard |
-| **v5.0** | Knowledge Engine | Multi-source research, source scoring, cache, traceability, research settings |
-| **v6.0** | Real Research + Citation | Live Wikipedia/PubMed/arXiv/Crossref APIs, Citation Engine, multi-factor quality gate |
-| **v7.0** | Trend Discovery Engine | Auto-discovered trend provider registry, universal Trend model, 11-factor Opportunity Scoring, pipeline front door, Trend Dashboard |
-| **v7.1** | Psychology & Virality Engine | 18-dimension attention scoring, weighted ViralScore, per-idea psychology report, virality-aware Quality Gate |
-| **v7.2** | Script Generation Engine | Multi-variant multi-style scripts for 6 platforms, 13 storytelling components per script, 6-factor variant scoring, runs immediately after Psychology, script quality feeds ranking |
-| **v7.3** | Attention Graph (Attention Intelligence) | 12-dimension attention scoring, weighted Attention Score, radar-chart payload + Plotly visualization, per-dimension recommendations, runs after Script Generation and before Ranking |
+> The user clicks one button, and the system produces a complete content production package:
+> **idea + psychology score + script + storyboard + visual prompts + audio plan.**
 
-*(v3.0 was skipped in release numbering.)*
+Concretely, one click runs Trend Discovery → Psychology → Ranking → Script Generation → Visual Intelligence → Voice & Audio, and presents a single unified package the user could hand to any human or AI production team.
 
-### Planned
+Explicitly **out of scope** for the MVP:
 
-| Version | Focus | Dependencies |
-|---|---|---|
-| **v7.x** | Live trend APIs | Google Trends, YouTube Data, TikTok, Reddit HTTP clients behind the existing `TrendSourceProvider` interface — per-file swaps, no pipeline changes |
-| **v8.0** | Render engine (Image → Animation → Video) | Consume `RenderPackage`; ffmpeg or cloud renderer; image/video providers |
-| **v9.0** | Publishing automation | YouTube/TikTok/Instagram providers; publishing queue → live posts; per-channel credentials |
-| **v10.0** | Analytics + Learning Engine | Performance ingestion; Learning engine mines Knowledge Base; feedback into ranking/prompts |
-| **v11.0** | Multi-brand autonomy | Business entity model; per-brand pipelines, scheduling, and learning history |
+- Automatic publishing (no platform posting yet)
+- Automatic video rendering (plans, not pixels)
+- Analytics and learning loops
 
-### Long-Term Vision
-
-Generational becomes the operating system for a portfolio of AI-powered media companies — researching, creating, publishing, analyzing, and improving high-quality content at scale:
-
-- Many independent brands, each with its own channels, voice, visual identity, audience, posting schedule, SEO profile, psychology profile, revenue, analytics, and learning history
-- Continuous learning from analytics feeding back into every pipeline stage
-- Self-improving prompts, ranking weights, and channel strategy
-- High-quality video across science, finance, psychology, history, tech, and current events
-- Zero vendor lock-in at every layer
-- Human involvement limited to approvals and strategic decisions
-
-### Multi-brand data model (target)
-
-Each **Business** aggregates: brand identity, channels, voice profiles, visual identity, audience definition, posting schedule, SEO profile, psychology profile, revenue tracking, analytics, and learning history. `services/channels.py` is the seed of this model; it grows into a full business entity without breaking existing channel data.
-
-### Future feature classes (design for now, build later)
-
-Architecture must absorb these without major refactoring:
-
-- AI voice clone (owner's voice, with authorization) — `providers/voice/clone.py` stub already exists
-- AI-assisted reaction video workflows using owner recordings
-- Podcast generation, long-form YouTube, blog and newsletter generation
-- Social media repurposing, translation, multi-language publishing
-- Affiliate automation, sponsorship management, merchandise, course creation, community management
-
-Each maps to either a new engine (registered stub first), a new provider interface, or a new workflow definition — never a rewrite of orchestration.
+The MVP is done when the full package generates reliably end to end, every stage's output validates against its data object contract, and the run is covered by an integration test.
 
 ---
 
-## 11. Testing Rules
+## 8. Roadmap
 
-### Running Tests
+Each phase must be fully integrated and tested before the next begins. "Integrate before expanding" (Section 9) applies at the phase level.
 
-```bash
-pip install -r requirements-dev.txt
-python -m pytest
-```
+### Phase 1: Planning Pipeline *(current)*
+One click produces the complete production package: idea, psychology score, script, storyboard, visual prompts, audio plan. This is the MVP in Section 7.
 
-### Test Structure
+### Phase 2: Render-Ready Pipeline *(architecture landed — mock render)*
+The planning package becomes a finished video: generated visuals, synthesized narration, music and SFX assembled per the cue sheet, subtitles burned in, QA-gated final render. Agent 6 shipped the complete render architecture (timeline, scene/caption/audio-mix plans, validation, provider seams) with a simulated renderer; the remaining work is wiring real generation/encoding providers behind the existing interfaces.
 
-| File | Covers |
-|---|---|
-| `tests/conftest.py` | Isolated tmp fixtures — never touches real `data/` |
-| `tests/test_engines.py` | Registry completeness, live vs planned engines |
-| `tests/test_workflows.py` | Context merging, skip/fail behavior, job queue |
-| `tests/test_intelligence_pipeline.py` | End-to-end intelligence pipeline |
-| `tests/test_psychology_engine.py` | Psychology & Virality Engine — 18 dimensions, ViralScore weights, determinism, report shape, pipeline integration |
-| `tests/test_citation_engine.py` | Citation engine + multi-factor quality gate |
-| `tests/test_script_generation.py` | Script Engine — platform specs, 13-component variants, deterministic scoring, pipeline position, ranking blend, fallback behavior |
-| `tests/test_attention_graph.py` | Attention Graph Engine — 12 dimensions, weight normalization, determinism, radar chart shape, recommendations, pipeline integration |
-| `tests/test_trend_discovery.py` | Trend provider auto-discovery, universal model, opportunity scoring, pipeline integration |
-| `tests/test_media_production.py` | Production pipeline and dashboard |
-| `tests/test_providers.py` | Voice provider factory |
-| `tests/test_knowledge.py` | Knowledge Base CRUD |
-| `tests/test_models.py` | Result/project round-trip |
-| `tests/test_parsing.py` | Command parsing |
-| `tests/test_jobs.py` | Job queue |
-| `tests/test_storage.py` | Project store |
-| `tests/test_channels.py` | Channel manager |
-| `tests/test_diagnostics.py` | Health checks |
-| `tests/test_ai_providers.py` | LLM provider selection |
+### Phase 3: Automated Publishing *(architecture landed — mock providers)*
+Approved videos post themselves: multi-account platform management, per-platform metadata formatting, optimal-window scheduling, publish queue with retries. Agent 7 shipped the complete publishing architecture (provider adapters, timezone-aware scheduler, retry-capable queue, publish history, account/approval/analytics extension seams) with mock adapters; the remaining work is wiring real platform APIs behind the existing `PublishingProvider` interface.
 
-### Testing Rules
+### Phase 4: Analytics Feedback
+Published posts report back: performance ingestion from platform APIs, retention-curve analysis, attribution of outcomes to upstream decisions, dashboards per channel.
 
-1. **No real `data/`** — always use `tmp_path` fixtures from `conftest.py`
-2. **Demo mode by default** — tests run without `OPENAI_API_KEY`
-3. **Deterministic scoring** — psychology, ranking, quality must be reproducible
-4. **Provider failures** — test graceful fallback when all providers fail
-5. **Context contract** — assert backward-compatible `research` fields after engine changes
-6. **New engines** — add to `LIVE_KEYS` or `PLANNED_KEYS` in `test_engines.py`
-7. **New providers** — add factory test + at least one search/normalization test
-8. **No trivial tests** — don't assert the obvious; test real behavior and edge cases
-9. **Run full suite before version commit** — all tests must pass
-
-### Current Baseline
-
-**132 tests passing** (as of v7.3.0).
+### Phase 5: Self-Improving Autonomous Media System
+The loop closes: learning signals automatically retune trend selection, psychology weights, script styles, visual/audio choices, and posting strategy. The system operates multiple channels with the human as portfolio manager, not operator.
 
 ---
 
-## 12. Git Workflow
+## 9. Non-Negotiable Rules
 
-### Branch Strategy
+These apply to every agent — human or AI — in every session:
 
-| Branch | Purpose |
-|---|---|
-| `main` | Stable, version-tagged releases |
-| `feature/*` | Optional feature branches for large changes |
-
-### Commit Message Format
-
-```
-vX.Y.Z Short description of why this release exists
-
-Optional longer body explaining architectural impact.
-```
-
-Examples from history:
-
-```
-v5.0.0 Knowledge Engine: multi-source research platform grounds every video in vetted data
-v4.0.0 Autonomous Media Production Engine: auto-build render packages from approved scripts
-v2.0.0 Intelligence Pipeline: 9-stage AI reasoning replaces single-shot generation
-```
-
-### Commit Rules
-
-- Only commit when explicitly requested
-- Never `--force` push to `main`
-- Never skip hooks (`--no-verify`)
-- Never amend pushed commits unless explicitly requested
-- Never commit secrets (`.env`, API keys)
-- Run tests before committing a version release
-
-### Push
-
-```bash
-git push origin main
-```
-
-Requires GitHub authentication on the developer machine (HTTPS keychain or SSH).
-
-### Pull Requests
-
-For multi-commit features:
-
-```bash
-git push -u origin HEAD
-gh pr create --title "..." --body "..."
-```
+1. **Do not break working pipeline stages.** If a stage works, changes to it must keep its existing tests green. Regressions are never an acceptable cost of new features.
+2. **Every engine must have tests.** No engine ships or changes without unit tests, and pipeline changes without integration coverage don't merge.
+3. **Every output must be structured.** Engines emit the data objects in Section 5 — never free-form text blobs that downstream stages have to parse.
+4. **No decorative UI without function.** Every UI element displays real pipeline data or triggers a real pipeline action. Nothing exists for looks alone.
+5. **Prefer a polished MVP over huge broken features.** A small thing that works end to end beats a big thing that almost works.
+6. **Integrate before expanding.** A new engine is not "done" when its module works in isolation — it is done when it runs inside the full pipeline with real upstream input.
+7. **Agents must summarize changes after each work session.** Every session ends with a summary of what changed, why, what was tested, and what the next agent should do — so no context is lost between sessions.
 
 ---
 
-## 13. Future Modules
+## 10. Next Immediate Step
 
-These modules are architecturally anticipated but not yet implemented.
+**Complete Agent 5 (Voice & Audio Engine), then run a full integration test of the planning pipeline: Trend Discovery → Psychology & Virality → Ranking → Script Generation → Visual Intelligence → Voice & Audio Planning.**
 
-### Live Trend APIs (v7.x)
+Definition of done for this step:
 
-- **Change:** Replace demo data in `providers/trend_sources/*.py` with real HTTP clients
-- **No pipeline changes** — same `discover()` interface, same universal `Trend` output
+1. Agent 5 produces a complete, contract-valid `AudioPackage` for every scripted candidate.
+2. A single integration test drives the entire chain from raw trend input to finished audio plan with no manual intervention.
+3. The combined output constitutes the full MVP production package from Section 7.
 
-### Render Engine (v8.0)
-
-- **Input:** `RenderPackage` from `data/publishing_queue/`
-- **Output:** Final MP4/WebM file
-- **Location:** `engines/video.py` (upgrade from PlannedEngine) + `providers/video_provider.py`
-- **Integration:** New workflow step or post-production job type
-
-### Publishing Automation (v8.0)
-
-- **Input:** Render package + platform credentials from `services/channels.py`
-- **Output:** Published post URLs, publishing history in Knowledge Base
-- **Providers:** YouTube, TikTok, Instagram, X implementations of `PublishingProvider`
-
-### Analytics Ingestion (v9.0)
-
-- **Input:** Platform analytics APIs
-- **Output:** Performance rows in `CATEGORY.PERformance` Knowledge Base
-- **Consumer:** Learning engine improves prompts, ranking weights, niche strategy
-
-### Learning Engine (v9.0)
-
-- **Input:** Knowledge Base (hooks, titles, scripts, performance, research briefs)
-- **Output:** Prompt improvements, winning pattern extraction, channel recommendations
-- **Location:** `engines/learning.py` (upgrade from PlannedEngine)
-
-### Multi-Channel UI (v10.0)
-
-- **Input:** `services/channels.py` data
-- **Output:** Channel switcher, per-channel pipelines, autonomous scheduling
-- **Constraint:** Add to sidebar or Settings — no new top-level tab without product decision
-
-### Live Research APIs (v6.0)
-
-- **Change:** Replace demo data in `providers/wikipedia.py`, `pubmed.py`, etc. with real HTTP clients
-- **No pipeline changes** — same `search()` interface, same `ResearchDocument` output
-
-### Real TTS Providers
-
-- **Change:** Implement `OpenAIVoiceProvider`, `ElevenLabsVoiceProvider` behind `VoiceProvider`
-- **No engine changes** — `engines/narration.py` already calls `get_voice_provider()`
+When this passes, Phase 1 is complete and work on Phase 2 (Video Rendering) may begin.
 
 ---
 
-## 14. Extension Points
-
-Quick reference for common extensions:
-
-| Goal | Action |
-|---|---|
-| Add research provider | New file in `providers/` + register in `_load_research_sources()` + add to `RESEARCH_PROVIDERS` |
-| Add trend provider | Drop a `TrendSourceProvider` module into `providers/trend_sources/` — auto-discovered |
-| Add pipeline stage | New engine module + register in `engines/__init__.py` + append to `WORKFLOWS` |
-| Add voice backend | Implement `VoiceProvider` + register in `get_voice_provider()` |
-| Add storage backend | Implement `core/storage/base.py` `ProjectStore` |
-| Add workflow | New key in `WORKFLOWS` dict in `core/workflows.py` |
-| Add knowledge category | New constant in `services/knowledge.py` `CATEGORY` |
-| Add UI setting | New key in `core/state.py` `DEFAULTS` + control in `ui/tabs/settings.py` |
-| Build renderer | Read `RenderPackage` objects from publishing queue |
-| Build auto-poster | Implement `PublishingProvider` + wire `engines/publishing.py` |
-
----
-
-## Appendix: File Map
-
-```
-generational/
-├── app.py                          # Streamlit entry (orchestration only)
-├── MASTER_ARCHITECTURE.md          # This document
-├── README.md                       # User-facing documentation
-├── core/
-│   ├── constants.py                # APP_VERSION, research settings, niches
-│   ├── models.py                   # Result/project dict shapes
-│   ├── production_models.py        # Scene, Timeline, RenderPackage, VoiceProfile
-│   ├── workflows.py                # WORKFLOWS definitions + WorkflowEngine
-│   ├── jobs.py                     # Job queue
-│   ├── state.py                    # Streamlit session defaults
-│   ├── parsing.py                  # Command parsing
-│   ├── log.py · diagnostics.py
-│   ├── ai/                         # LLM providers (OpenAI + demo)
-│   └── storage/                    # JSON project store
-├── services/
-│   ├── ideation.py                 # Intelligence + production orchestrator
-│   ├── production.py               # Media production orchestrator
-│   ├── research/                   # Knowledge Engine
-│   ├── trends/                     # Trend Discovery (models, scorer, manager)
-│   ├── scripts/                    # Script Generation (models, platforms, generator, scorer)
-│   ├── assets.py · voice_profiles.py
-│   ├── knowledge.py · channels.py · pipeline.py
-├── engines/                        # 22 live + 6 planned pipeline plugins
-├── providers/                      # Swappable external backends
-│   └── trend_sources/              # Auto-discovered trend providers
-├── ui/                             # Streamlit presentation
-├── tests/                          # 132 unit/integration tests
-└── data/                           # Runtime persistence (gitignored)
-```
-
----
-
-*Last updated: v7.3.0 — Attention Graph (Attention Intelligence)*
+*This document is the source of truth for Generational's architecture. If code and this document disagree, fix one of them in the same session — never leave them divergent.*
