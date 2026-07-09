@@ -109,7 +109,38 @@ never mutate render fields.
 
 ---
 
-## 6. Change protocol
+## 6. seo_package enrichment + PublishingPackage (Agent 8) — `services/seo/`
+
+The Global Content Optimization Engine (`seo_optimization`) ENRICHES
+`ContentPackage.seo_package` additively. The base refinement-stage fields
+(`title`, `description`, `hashtags`, `keywords`, `seo_score`) are never
+overwritten; these fields are added on top (field tuples in
+`services/seo/models.py` are the testable contract):
+
+| Field | Type | Meaning |
+|---|---|---|
+| `optimized_titles` | list | ten archetype titles + the base title, each with `TITLE_CANDIDATE_FIELDS` (ctr_prediction, seo_score, psychology_score, confidence, overall, rank) |
+| `recommended_title` | str | the top-ranked candidate |
+| `description_package` | dict | long/short/platform descriptions, CTA, first + pinned comment (`DESCRIPTION_PACKAGE_FIELDS`) |
+| `keyword_package` | dict | primary/secondary/semantic/long_tail/entity/question classes + `search_intent` classification (`KEYWORD_CLASSES`, `SEARCH_INTENTS`) |
+| `hashtag_package` | dict | per-platform ranked hashtags with estimated usefulness (`HASHTAG_PLATFORMS`) |
+| `thumbnail_recommendations` | list | Visual Intelligence concepts re-evaluated on the six click dimensions (`THUMBNAIL_EVAL_KEYS`), ranked with click probability |
+| `localization` | dict | per-locale plans (`LOCALIZATION_TARGET_FIELDS`): keyword-replacement slots, regional hashtags/posting, readiness — translation intentionally pending (`LocalizationAdapter` fills later) |
+| `publish_windows` | list | ranked posting windows (`PUBLISH_WINDOW_FIELDS`) per platform/country with confidence |
+| `optimization_report` | dict | the ten metrics (`OPTIMIZATION_REPORT_FIELDS`), incl. `overall_optimization_score` |
+
+**PublishingPackage v1.0** (`PUBLISHING_PACKAGE_FIELDS`) is the
+standardized handover to the Publishing Engine, emitted on the
+`publishing_packages` context key (one per optimized item) alongside the
+aggregate `seo_optimization_report`. Additive-only from v1.0 on. Agent 8
+never writes the ContentPackage `publishing_package` slot — that stays
+Agent 7's. SEO signal providers implement `SeoSourceProvider`
+(`providers/seo_sources/base.py`, normalized `KEYWORD_SIGNAL_FIELDS`
+dicts) and auto-discover from `providers/seo_sources/`.
+
+---
+
+## 7. Change protocol
 
 1. Appending a ContentPackage field: add to the dataclass **and**
    `PRODUCTION_PACKAGE_FIELDS`, with a default; get Agent 1 review.

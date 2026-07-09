@@ -18,12 +18,15 @@ PRODUCTION_LIVE = {
 # Agent 6 — the render stage engines are live (mock providers, real plans).
 RENDER_LIVE = {"image", "video", "render"}
 
-LIVE_KEYS = INTELLIGENCE_LIVE | PRODUCTION_LIVE | RENDER_LIVE
+# Agent 8 — the Global Content Optimization Engine is live.
+OPTIMIZATION_LIVE = {"seo_optimization"}
+
+LIVE_KEYS = INTELLIGENCE_LIVE | PRODUCTION_LIVE | RENDER_LIVE | OPTIMIZATION_LIVE
 
 PLANNED_KEYS = {
     "voice", "publishing", "analytics", "learning",
     # Agents 7-10 contract stubs
-    "seo_optimization", "scheduler", "brand_management",
+    "scheduler", "brand_management",
 }
 
 EXPECTED_KEYS = LIVE_KEYS | PLANNED_KEYS

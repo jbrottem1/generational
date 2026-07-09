@@ -37,8 +37,11 @@ Media Production           LIVE      scene planning → narration → visual
 Render Engine              LIVE      Agent 6 — engines: image, video, render
    ↓                                 (mock render: full plan + simulated
    ↓                                  output; real providers swap in later)
-SEO Engine                 FUTURE    Agent 8 — engines: seo_optimization
-   ↓
+SEO Engine                 LIVE      Agent 8 — engines: seo_optimization
+   ↓                                 (Global Content Optimization: titles,
+   ↓                                  keywords, hashtags, descriptions,
+   ↓                                  thumbnails, localization, windows,
+   ↓                                  Optimization Report, PublishingPackage)
 Publishing Scheduler       FUTURE    Agent 7 — engines: scheduler, publishing
    ↓
 Analytics Collection       FUTURE    Agent 9 — engines: analytics
@@ -74,6 +77,15 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
    today), writes each `render_package`, and mirrors the results into
    `context["unified_packages"]` (status → `rendered`). With nothing to
    render it returns a safe SKIPPED summary — never a failure.
+7. **SEO stage invocation.** The seo stage is live and runs on demand:
+   `get_orchestrator().run_seo_stage(context)` after render. It optimizes
+   every publish-ready item (preferring `unified_packages`, falling back
+   to `ideas`), enriches each `seo_package` additively (base refinement
+   metadata is never overwritten), and emits `seo_optimization_report` +
+   `publishing_packages` (standardized PublishingPackage v1.0 per item —
+   the handover to Agent 7; the ContentPackage `publishing_package` slot
+   stays Agent 7's to write). With nothing to optimize it reports zero
+   items — never a failure.
 
 ## Stage → engine key → owner map
 
@@ -90,7 +102,7 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
 | quality | quality | live | shared (gate) |
 | production | scene_planning…publishing_queue | live | Agent 1 |
 | render | image, video (+ `render` façade) | live (mock render) | **Agent 6** |
-| seo | seo_optimization | future | **Agent 8** |
+| seo | seo_optimization | live | **Agent 8** |
 | publish | scheduler, publishing | future | **Agent 7** |
 | analytics | analytics | future | **Agent 9** |
 | learning | learning | future | **Agent 9** |

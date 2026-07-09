@@ -23,7 +23,9 @@ from services.orchestrator.stages import STAGE_GROUPS
 
 
 def test_future_stage_stubs_registered_with_contracts():
-    for key in ("seo_optimization", "scheduler", "brand_management"):
+    # seo_optimization graduated to a live engine (Agent 8) — covered in
+    # tests/test_seo_optimization.py.
+    for key in ("scheduler", "brand_management"):
         engine = registry.get_engine(key)
         assert isinstance(engine, ContractEngine), key
         assert engine.is_ready() is False, key
@@ -133,7 +135,6 @@ def test_unimplemented_future_stages_skip_cleanly():
     orch = Orchestrator()
     context = {"command": "test", "provider": "demo"}
     for runner in (
-        orch.run_seo_stage,
         orch.run_publish_stage,
         orch.run_analytics_stage,
         orch.run_learning_stage,
@@ -153,6 +154,17 @@ def test_render_stage_is_implemented_and_safe_without_input():
     assert report.status == StageStatus.SUCCESS
     assert not report.errors
     assert report.diagnostics
+
+
+def test_seo_stage_is_implemented_and_safe_without_input():
+    # Agent 8 landed: the seo stage runs (SUCCESS) and reports zero items
+    # instead of warning when there is nothing to optimize.
+    context = {"command": "test", "provider": "demo"}
+    report = Orchestrator().run_seo_stage(context)
+    assert report.status == StageStatus.SUCCESS
+    assert not report.errors
+    assert context["seo_optimization_report"]["items"] == 0
+    assert context["publishing_packages"] == []
 
 
 def test_missing_engine_key_does_not_crash_stage():

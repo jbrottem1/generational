@@ -152,14 +152,18 @@ feature/multi-brand-os         (Agent 10)
 |---|---|---|---|---|
 | **Agent 6** | Render & Video Production — **LANDED (mock render)** | `engines/render/` | `image` · `video` · `render` | `render` (live) |
 | **Agent 7** | Publishing & Scheduler | `engines/publishing/` | `publishing` · `scheduler` | `publish` |
-| **Agent 8** | SEO & Global Trend Optimization | `engines/seo/` | `seo_optimization` | `seo` |
+| **Agent 8** | Global Content Optimization (SEO) — **LANDED** | `engines/seo/` (docs) + `engines/seo_optimization.py` + `services/seo/` | `seo_optimization` | `seo` (live) |
 | **Agent 9** | Analytics & Learning | `engines/analytics/` | `analytics` · `learning` | `analytics` · `learning` |
 | **Agent 10** | Multi-Brand Operating System | `engines/brands/` | `brand_management` | `brand_management` |
 
 Agent 6 has landed: the render stage is live end-to-end with mock providers
 (full render plan + simulated render; real backends swap in behind
 `providers/` and `engines.render.assets.register_fulfiller()` — see
-`engines/render/README.md`). The remaining four stages are wired into the
+`engines/render/README.md`). Agent 8 has landed: the seo stage is live —
+the Global Content Optimization Engine enriches `seo_package` additively
+and emits standardized PublishingPackages for Agent 7 (see
+`engines/seo/README.md`; SEO signal providers auto-discover from
+`providers/seo_sources/`). The remaining three stages are wired into the
 orchestrator and skip cleanly (WARNING with diagnostics, never a crash)
 until their engines report ready. Contract stubs for the missing keys live
 in `engines/future_stubs.py`.

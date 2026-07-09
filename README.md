@@ -4,6 +4,76 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 8.3 — Global Content Optimization Engine (Agent 8)
+
+The seo stage is live. `engines/seo_optimization.py` + `services/seo/`
+transform completed production content into fully optimized, publish-ready
+packages — maximizing discoverability, search performance, click-through
+rate, localization readiness, and long-term audience growth. It runs
+between the Render Engine and the Publishing Engine and never generates
+scripts or video.
+
+### What every content item receives
+
+- **Title Optimization** — ten archetype titles (curiosity, authority,
+  educational, question, shock, list, contrarian, story, breaking news,
+  scientific), each ranked with a CTR prediction, SEO score, psychology
+  score, and confidence. The refinement-stage title is scored alongside —
+  never overwritten.
+- **Description Engine** — long + short descriptions, per-platform
+  variants (YouTube, TikTok, Instagram, Facebook, X, LinkedIn, Pinterest),
+  call-to-action, first-comment and pinned-comment suggestions.
+- **Keyword Engine** — primary, secondary, semantic, long-tail, entity,
+  and question keywords with four-way search-intent classification
+  (informational / navigational / commercial / transactional), fed by the
+  auto-discovered SEO signal provider registry.
+- **Hashtag Engine** — platform-specific ranked hashtags with estimated
+  usefulness (reach × specificity, weighted per platform's discovery model)
+  and per-platform tag limits.
+- **Thumbnail Optimization** — consumes Visual Intelligence thumbnail
+  concepts and re-evaluates each on curiosity, contrast, text density,
+  facial emotion, object emphasis, and color psychology, returning ranked
+  recommendations with click probability.
+- **Global Localization (architecture)** — per-locale plans for 10
+  country/language targets with keyword-replacement slots, regional
+  hashtags, regional posting strategy, and readiness scores. Translation is
+  intentionally NOT performed yet; the `LocalizationAdapter` interface lets
+  human/MT/provider backends fill the slots later with zero contract
+  changes.
+- **Posting Strategy** — ranked publish windows per platform and country,
+  scored from platform engagement tables, audience strength, competition,
+  and trend velocity, each with a confidence score.
+- **Optimization Report** — ten headline metrics: SEO score, CTR
+  prediction, retention prediction, competition score, trend strength,
+  evergreen score, localization readiness, publishing readiness,
+  confidence, and the overall optimization score.
+
+### Standardized PublishingPackage
+
+Each optimized item yields a versioned **PublishingPackage v1.0**
+(`PUBLISHING_PACKAGE_FIELDS` in `services/seo/models.py`) handed to the
+Publishing Engine via the `publishing_packages` context key — the
+ContentPackage `publishing_package` slot stays Agent 7's to write.
+
+### Future providers (`providers/seo_sources/`)
+
+Nothing is hardcoded: Google Search, Google Trends, YouTube Search, TikTok
+Search, Reddit, News APIs, and Keyword APIs ship as deterministic
+placeholder providers behind one `SeoSourceProvider` interface with an
+auto-discovered registry (mirrors `providers/trend_sources/`). Live API
+wiring is a per-file swap; proprietary providers drop in as new modules.
+
+### Orchestrator integration
+
+The `seo_optimization` engine graduated from its contract stub to a live
+`ContractEngine`. `run_seo_stage(context)` optimizes every publish-ready
+item (canonical `unified_packages` preferred, pipeline `ideas` fallback),
+enriches each `seo_package` additively, and emits `seo_optimization_report`
++ `publishing_packages` — with zero items it still reports cleanly, never
+crashing the pipeline. Docs: [`engines/seo/README.md`](engines/seo/README.md)
+and [`DATA_CONTRACTS.md`](DATA_CONTRACTS.md) §6. Tests: 19 new in
+`tests/test_seo_optimization.py` (371 total, all passing).
+
 ## Version 8.2 — Render & Video Production Engine (Agent 6)
 
 The render stage is live. `engines/render/` converts a complete
@@ -1126,6 +1196,7 @@ generational/
 │   ├── news.py, trends.py, youtube.py, reddit.py
 │   ├── research_source.py    # Unified search() interface
 │   ├── trend_sources/        # Trend providers (auto-discovered registry)
+│   ├── seo_sources/          # v8.3 SEO signal providers (auto-discovered registry)
 │   ├── llm.py, voice/, image_provider.py, video_provider.py, music_provider.py
 │   └── publishing_provider.py, analytics_provider.py, trend_provider.py
 ├── engines/                  # Engine plugins (intelligence + production)
@@ -1139,6 +1210,7 @@ generational/
 │   ├── scene_planning … publishing_queue.py  # Media production (8 live)
 │   ├── render/               # v8.2 Render & Video Production Engine (Agent 6)
 │   ├── image.py, video.py    # v8.2 live render stage engines (assets + assembly)
+│   ├── seo_optimization.py   # v8.3 Global Content Optimization Engine (Agent 8)
 │   └── voice|publishing|analytics|learning.py  # future stubs
 ├── services/
 │   ├── research/             # Knowledge Engine (manager, cache, scorer, summarizer)
@@ -1146,6 +1218,7 @@ generational/
 │   ├── scripts/              # Script Generation (models, sections, hooks, retention, platforms, generator, scorer, structure)
 │   ├── visual/               # Visual Intelligence (models, psychology, scenes, prompts, thumbnails, hooks, package)
 │   ├── audio/                # Voice & Audio (models, voice, narration, sfx, music, retention, package)
+│   ├── seo/                  # v8.3 Global Content Optimization (titles, keywords, hashtags, descriptions, thumbnails, localization, windows, report, package)
 │   ├── behavioral_intelligence/ # v7.7 unified report API (models, builder, adapters)
 │   ├── ideation.py           # Intelligence pipeline orchestrator
 │   ├── production.py         # Media production orchestrator

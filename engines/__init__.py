@@ -14,7 +14,7 @@ from engines.attention_graph import AttentionGraphEngine
 from engines.base import Engine, PlannedEngine
 from engines.citation import CitationEngine
 from engines.contracts import ContractEngine, FutureEngine
-from engines.future_stubs import BrandManagementEngine, SchedulerEngine, SeoOptimizationEngine
+from engines.future_stubs import BrandManagementEngine, SchedulerEngine
 from engines.critic import CriticEngine
 from engines.ideation import IdeationEngine
 from engines.image import ImageEngine
@@ -34,6 +34,7 @@ from engines.scene_planning import ScenePlanningEngine
 from engines.script import ScriptEngine
 from engines.script_generation import ScriptGenerationEngine
 from engines.seo import SeoEngine
+from engines.seo_optimization import SeoOptimizationEngine
 from engines.subtitle import SubtitleEngine
 from engines.threat_detection import ThreatDetectionEngine
 from engines.timeline import TimelineEngine

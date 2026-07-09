@@ -146,7 +146,7 @@ zones, contract stubs, and orchestrator stages already wired (see
 |---|---|---|---|
 | Agent 6 | Render & Video Production — **LANDED** (mock render, live stage) | `engines/render/` | `render` |
 | Agent 7 | Publishing & Scheduler | `engines/publishing/` | `publish` |
-| Agent 8 | SEO & Global Trend Optimization | `engines/seo/` | `seo` |
+| Agent 8 | Global Content Optimization (SEO) — **LANDED** (live stage) | `engines/seo/` + `engines/seo_optimization.py` + `services/seo/` | `seo` |
 | Agent 9 | Analytics & Learning | `engines/analytics/` | `analytics` · `learning` |
 | Agent 10 | Multi-Brand Operating System | `engines/brands/` | `brand_management` |
 
@@ -170,7 +170,8 @@ Each stage receives exactly one structured input and produces exactly one struct
 | Voice & Audio | `ScriptPackage` + `VisualPackage` | `AudioPackage` (narration plan + SFX + music + cue sheet) |
 | Video Rendering | `VisualPackage` + `AudioPackage` + `ScriptPackage` + captions | `render_package` v2.0 (timeline, scene/caption/audio-mix plans, validation, mock render manifest — becomes `RenderedVideo` when real backends land) |
 | Quality Control | `RenderedVideo` + upstream packages | Approved `RenderedVideo` or revision notes routed back |
-| Publishing | Approved `RenderedVideo` + `Channel` config | `PublishedPost` (live URL + platform metadata) |
+| Content Optimization (SEO) | `ContentPackage` (render + script + psychology + trend context) | Enriched `seo_package` + `PublishingPackage` v1.0 (ranked titles/hashtags/thumbnails/windows, keyword + localization packages, Optimization Report) |
+| Publishing | Approved `RenderedVideo` + `PublishingPackage` + `Channel` config | `PublishedPost` (live URL + platform metadata) |
 | Analytics | `PublishedPost` + platform APIs | `AnalyticsRecord` (performance over time) |
 | Learning Engine | `AnalyticsRecord` + full decision history | `LearningSignal` (weight/strategy adjustments fed upstream) |
 

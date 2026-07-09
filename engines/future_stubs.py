@@ -6,29 +6,14 @@ know every future stage — implementing one later is overriding `run()` and
 changes. See engines/render/README.md etc. for ownership.
 
 Stages whose engine keys already exist as planned stubs (image, video,
-publishing, analytics, learning) are NOT duplicated here.
+publishing, analytics, learning) are NOT duplicated here. The
+`seo_optimization` stub graduated to a live engine in
+`engines/seo_optimization.py` (Agent 8).
 """
 
 from __future__ import annotations
 
 from engines.contracts import FutureEngine
-
-
-class SeoOptimizationEngine(FutureEngine):
-    """Agent 8 — global SEO & trend optimization (post-quality, pre-publish).
-
-    Distinct from the live `seo` metadata-packaging engine in the refinement
-    stage: this one optimizes across platforms, countries, and languages.
-    """
-
-    key = "seo_optimization"
-    label = "SEO Optimization"
-    icon = "🌍"
-    description = "Global SEO & trend optimization across platforms, countries, languages."
-    input_contract = ["ideas", "seo_keywords"]
-    output_contract = ["seo_optimization_report"]
-    dependencies = ["seo", "quality"]
-    capabilities = ["seo", "multi-language", "multi-platform"]
 
 
 class SchedulerEngine(FutureEngine):

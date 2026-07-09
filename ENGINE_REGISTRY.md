@@ -40,12 +40,22 @@ Agent 6 render package (see `DATA_CONTRACTS.md` §render_package and
 (`set_image_provider` / `set_video_provider` / `set_music_provider`) and
 `engines.render.assets.register_fulfiller()`.
 
+## Live engine (seo — Agent 8)
+
+`seo_optimization` — the Global Content Optimization Engine
+(`engines/seo_optimization.py`, logic in `services/seo/`). Subclasses
+`ContractEngine`, runs deterministically in Demo Mode, and produces
+ranked titles, keyword/hashtag/description packages, thumbnail
+recommendations, localization plans, publish windows, the ten-metric
+Optimization Report, and standardized PublishingPackages (see
+`DATA_CONTRACTS.md` §6 and `engines/seo/README.md`). SEO signal providers
+auto-discover from `providers/seo_sources/` — live APIs swap in per file.
+
 ## Reserved keys (planned / contract stubs — do NOT reuse)
 
 | Key | Stub type | Future owner | Stage |
 |---|---|---|---|
 | `voice` | planned | Voice Pipeline agent | audio (real TTS) |
-| `seo_optimization` | contract stub | **Agent 8** | seo |
 | `scheduler` | contract stub | **Agent 7** | publish |
 | `publishing` | planned | **Agent 7** | publish |
 | `analytics` | planned | **Agent 9** | analytics |
