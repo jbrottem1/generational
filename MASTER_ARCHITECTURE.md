@@ -1,7 +1,7 @@
 # Generational — Master Architecture
 
 **Current version:** v7.5.0  
-**Status:** Source-backed research platform with an 18-dimension Psychology & Virality Engine, a multi-variant multi-platform Script Generation Engine, a Visual Intelligence Engine (storyboards, AI image/video prompts, scored thumbnails, hook sequences), a 12-dimension Attention Graph, a 10-threat Psychology Threat Detection layer, citation engine, and multi-factor quality gate  
+**Status:** Source-backed research platform with an 18-dimension Psychology & Virality Engine, a multi-variant multi-platform Script Generation Engine, a Visual Intelligence Engine (storyboards, AI image/video prompts, scored thumbnails, hook sequences), a Voice & Audio Engine (narration plans, voice styles, SFX, music direction, audio cue sheets, retention pacing notes), a 12-dimension Attention Graph, a 10-threat Psychology Threat Detection layer, citation engine, and multi-factor quality gate  
 **Entry point:** `app.py` (Streamlit shell only — no business logic)
 
 This document is the canonical architecture reference for Generational. It describes how the system is built today, how to extend it safely, and how the team develops using ChatGPT, Claude, and Cursor.
@@ -39,17 +39,18 @@ The goal is not to automate one YouTube channel. The goal is software that opera
 
 ### What exists today
 
-Generational v7.5 is a modular platform with:
+Generational v7.6 is a modular platform with:
 
 - A **Trend Discovery Engine** — the front door: auto-discovered trend providers, a universal Trend model, and 0-100 Opportunity Scoring that gates what enters the pipeline
 - A **Psychology & Virality Engine** — scores every candidate idea across 18 attention-science dimensions, blends them into a weighted 0-100 ViralScore, and produces a plain-English psychology report explaining why
 - A **Script Generation Engine** — runs immediately after Psychology: every candidate gets multiple stylistically distinct, platform-aware script variants (13 storytelling components each: hook, pattern interrupt, curiosity loop, core story, emotional progression, retention checkpoints, CTA, SEO keywords, B-roll, AI visual prompts, sound effects, music style, estimated runtime), scored 0-100 across six weighted factors, best variant wins
 - A **Visual Intelligence Engine** — the visual brain: every scripted candidate receives a complete Visual Production Package (scene-by-scene storyboard with full visual grammar, 12-dimension visual psychology scores per scene, model-ready AI image prompts for 5 image models and AI video prompts for 6 video models, 5 scored thumbnail concepts with expected CTR, a five-frame hook sequence, caption plan, and pacing/camera/motion reports) blended into one weighted Overall Visual Score (0-100)
+- A **Voice & Audio Engine** — the sound brain: every scripted candidate's visual package becomes a complete Audio Production Package (niche-matched voice style, per-scene narration plan with target words-per-minute / scripted pauses / emphasis words, layered sound effect recommendations, background music direction with BPM range / key / energy curve / sections, audio mood progression, a scene-by-scene audio cue sheet, and retention pacing notes) blended into one weighted Overall Audio Score (0-100) — planning only, no audio files generated
 - An **Attention Graph Engine** — scores every candidate across 12 attention dimensions into a radar-chart-ready profile plus a weighted 0-100 Attention Score, with a concrete recommendation for raising every dimension
 - A **Psychology Threat Detection Engine** — screens every packaged idea for 10 production failure modes (clickbait without payoff, weak hooks, platform policy risk, manipulative language, and more), producing a Threat Level (Low/Medium/High), a confidence %, and a fix recommendation for every flagged threat
 - A **Knowledge Engine** with live Wikipedia, PubMed, arXiv, and Crossref connectors
 - A **Citation Engine** that maps scripts to sources and flags unsupported claims
-- An **Intelligence Pipeline** (16 stages) from trend discovery and opportunity ranking through ideas, psychology, script generation, visual intelligence, attention graph, ranking, critique, citation, SEO, threat detection, and quality
+- An **Intelligence Pipeline** (17 stages) from trend discovery and opportunity ranking through ideas, psychology, script generation, visual intelligence, voice & audio, attention graph, ranking, critique, citation, SEO, threat detection, and quality
 - A **Media Production Pipeline** that turns approved scripts into render-ready packages
 - A **Provider System** that keeps all vendor integrations swappable
 - A **Job Queue + Workflow Engine** that coordinates every stage without tight coupling
@@ -176,9 +177,9 @@ services/ideation.run_command()
     │       → cache by topic (data/research_cache/)
     │       │
     │       ▼
-    │   Stages 3–16: Intelligence Pipeline
+    │   Stages 3–17: Intelligence Pipeline
     │       ideation → psychology → script_generation →
-    │       visual_intelligence → attention_graph → ranking →
+    │       visual_intelligence → voice_audio → attention_graph → ranking →
     │       script (fallback) → critic → revision → citation →
     │       seo → threat_detection → quality
     │       │
@@ -222,6 +223,8 @@ Every engine receives and returns updates to a shared `context: dict`. Key field
 | `target_platform`, `script_variant_count` | Caller (optional) | Script Generation, Visual Intelligence |
 | `candidates[].visual_package` (`.scenes`, `.storyboard`, `.image_prompts`, `.video_prompts`, `.thumbnails`, `.hook_sequence`, `.caption_plan`, `.pacing_report`, `.camera_plan`, `.motion_report`, `.visual_score`), `.visual_score`, `.thumbnail_concepts` | Visual Intelligence | Future renderers (image/video/thumbnail/caption), UI (visual package expander) |
 | `visual_intelligence_summary` | Visual Intelligence | UI, diagnostics |
+| `candidates[].audio_package` (`.voice_style`, `.narration_plan`, `.pacing`, `.pause_map`, `.emphasis_map`, `.sfx_plan`, `.music_direction`, `.audio_mood`, `.scene_cues`, `.retention_notes`, `.audio_score`), `.audio_score` | Voice & Audio | Future renderers (voice/music/video), UI |
+| `voice_audio_summary` | Voice & Audio | UI, diagnostics |
 | `candidates[].attention_graph` (`.scores`, `.attention_score`, `.radar_chart`, `.recommendations`) | Attention Graph | Ranking, UI (radar chart expander) |
 | `attention_graph_summary` | Attention Graph | UI, diagnostics |
 | `ranked_candidates`, `selected_ideas` | Ranking | Script (fallback), SEO, Threat Detection, Quality |
@@ -320,7 +323,7 @@ class Engine(ABC):
     def run(self, context: dict) -> dict: ...  # returns merge updates
 ```
 
-### Intelligence Pipeline (16 live engines)
+### Intelligence Pipeline (17 live engines)
 
 | Key | Module | Responsibility |
 |---|---|---|
@@ -331,6 +334,7 @@ class Engine(ABC):
 | `psychology` | `engines/psychology.py` | Psychology & Virality Engine — scores candidates on 18 attention dimensions, blends a weighted ViralScore (0-100), and produces a psychology report (deterministic) |
 | `script_generation` | `engines/script_generation.py` | Script Generation Engine — runs immediately after Psychology; multi-style, platform-aware script variants per candidate (13 storytelling components), scored 0-100, best variant attached; delegates to `services/scripts/` |
 | `visual_intelligence` | `engines/visual_intelligence.py` | Visual Intelligence Engine — runs immediately after Script Generation; every scripted candidate receives a Visual Production Package (storyboard, per-scene visual psychology scores, AI image/video prompts, scored thumbnails, hook sequence, pacing/camera/motion reports) and an Overall Visual Score (0-100); delegates to `services/visual/` |
+| `voice_audio` | `engines/voice_audio.py` | Voice & Audio Engine — runs immediately after Visual Intelligence; every scripted candidate receives an Audio Production Package (voice style, narration plan with pacing/pauses/emphasis, SFX recommendations, music direction, audio mood, scene-by-scene audio cues, retention pacing notes) and an Overall Audio Score (0-100); planning only, no audio files; delegates to `services/audio/` |
 | `attention_graph` | `engines/attention_graph.py` | Attention Graph Engine — scores candidates on 12 attention dimensions, blends a weighted Attention Score (0-100), and returns a radar-chart payload plus per-dimension recommendations (deterministic) |
 | `ranking` | `engines/ranking.py` | Weighted ranking (psychology 50% + opportunity 30% + script quality 20%); selects top N |
 | `script` | `engines/script.py` | Fallback scriptwriter — covers ideas that reach ranking unscripted; never overwrites generated variants |
@@ -435,6 +439,57 @@ the modular `services/visual/` package (usable standalone via
   attached to the pipeline context for diagnostics. Fully deterministic —
   Demo Mode carries the entire engine, and the idea card surfaces a compact
   "🎥 Visual Production Package" expander (no new UI pages).
+
+### Voice & Audio (deep dive)
+
+`engines/voice_audio.py` is the sound brain of the pipeline. It runs
+immediately after Visual Intelligence — consuming the storyboard's caption
+timings, motion intensities, emotional arc, and per-scene SFX/music hints —
+and before every rendering stage (voice synthesis, image, video), so all
+renderers execute one canonical sound plan. No audio files are generated —
+this is the brief the future TTS/music providers execute. Planning is
+delegated to the modular `services/audio/` package (usable standalone via
+`build_audio_package(idea, niche=..., subject=..., platform=...)`; ideas
+without a `visual_package` get a standalone storyboard planned on the fly).
+
+- **Voice style** (`services/audio/voice.py`): a narrator persona per niche
+  (tone, pitch, character in `NICHE_VOICE_STYLES` — data, not code), a vocal
+  energy level derived from the storyboard's average motion intensity, and
+  delivery notes tied to the emotional arc and the platform's narration tone.
+- **Narration plan** (`services/audio/narration.py`): per-scene delivery
+  directions from `PURPOSE_DELIVERY` (urgent hook open, conspiratorial
+  curiosity tease, slow-breathing payoff, warm CTA), target words-per-minute
+  per scene (platform base × purpose factor — hooks read faster, payoffs
+  slower), scripted pauses (purpose pause plus beats after questions and
+  ellipses, the payoff's 0.7s dramatic silence longest of all), and emphasis
+  words (numbers first, then curiosity/surprise/emotion trigger words), with
+  a global pacing verdict and fitness comparing actual vs. target wpm.
+- **SFX planner** (`services/audio/sfx.py`): keeps each scene's primary
+  effect from the visual storyboard and layers purpose-specific support cues
+  (transition whooshes, tension drones, UI pops) with timing, intensity, and
+  a mix note; reports scene coverage diagnostics.
+- **Music direction + mood** (`services/audio/music.py`): style (from the
+  script's music style), BPM range from average motion intensity, major/minor
+  key from the emotional arc's tension density, a per-scene energy curve,
+  named sections per purpose (cold-open sting → low pulse build → driving
+  groove → full swell → stripped-back outro), sidechain ducking guidance, and
+  a seamless-loop note; plus the overall audio mood and its scene-by-scene
+  progression via `EMOTION_AUDIO_MOODS` (the sonic complement of the visual
+  `EMOTION_LOOKS`).
+- **Retention pacing notes** (`services/audio/retention.py`): audits planned
+  audio events (SFX cues + music section changes + pauses) against the
+  short-form ideal of 1.5-4 events per 10 seconds and emits scene-anchored
+  fixes — sound inside the first 0.5s, silence before the payoff reveal, a
+  mid-video texture reset, a thinned mix under the CTA — with a fitness score.
+- **Package assembly** (`services/audio/package.py`): merges everything into
+  a scene-by-scene audio cue sheet (`AudioSceneCue` — narration delivery,
+  wpm, pauses, emphasis, SFX, music section/energy/ducking, mood, retention
+  reminder) and blends components into one weighted **Overall Audio Score
+  (0-100)** via `AUDIO_SCORE_WEIGHTS` (narration fitness 0.30, retention
+  audio 0.20, SFX coverage 0.20, music dynamics 0.20, mood variety 0.10).
+- Attached to every candidate as `audio_package` (plus `audio_score`); a
+  batch `voice_audio_summary` is attached to the pipeline context for
+  diagnostics. Fully deterministic — Demo Mode carries the entire engine.
 
 ### Attention Graph (deep dive)
 
@@ -640,6 +695,7 @@ Services are the public API between UI and infrastructure.
 | Trends | `services/trends/` | Trend Discovery — universal Trend model, 11-factor opportunity scorer, discovery manager |
 | Scripts | `services/scripts/` | Script Generation — `PlatformSpec` for 6 platforms, `ScriptVariant` model (13 components), deterministic multi-style generator, 6-factor variant scorer, `generate_script_package()` standalone API |
 | Visual | `services/visual/` | Visual Intelligence — `ScenePlan` + `ThumbnailConcept` models, 12-dimension visual psychology scorer, deterministic scene planner, per-model AI image/video prompt builders, thumbnail engine, hook visualizer, `build_visual_package()` standalone API |
+| Audio | `services/audio/` | Voice & Audio — `AudioSceneCue` model, niche voice styles, narration planner (pacing/pauses/emphasis), SFX planner, music direction + audio mood, retention pacing audit, `build_audio_package()` standalone API |
 | Assets | `services/assets.py` | Asset registry + publishing queue persistence |
 | Voice Profiles | `services/voice_profiles.py` | Profile CRUD, recording metadata, style presets |
 | Knowledge | `services/knowledge.py` | Append-only JSON memory (hooks, titles, scripts, research briefs) |
@@ -728,6 +784,7 @@ The Streamlit UI is intentionally stable across versions. Major releases add **c
 | **v7.3** | Attention Graph (Attention Intelligence) | 12-dimension attention scoring, weighted Attention Score, radar-chart payload + Plotly visualization, per-dimension recommendations, runs after Script Generation and before Ranking |
 | **v7.4** | Psychology Threat Detection (Threat Intelligence) | 10-threat production risk screening, weighted Threat Score, Threat Level (Low/Medium/High), confidence %, fix recommendations, runs after SEO and before the Quality Gate |
 | **v7.5** | Visual Intelligence Engine | Visual Production Package per scripted candidate — storyboard with full visual grammar, 12-dimension visual psychology per scene, AI image prompts (5 models) + video prompts (6 models), 5 scored thumbnail concepts with expected CTR, five-frame hook sequence, pacing/camera/motion reports, Overall Visual Score (0-100); runs after Script Generation and before the Attention Graph |
+| **v7.6** | Voice & Audio Engine | Audio Production Package per scripted candidate — niche-matched voice style, narration plan with per-scene pacing/pauses/emphasis, layered SFX recommendations, music direction (BPM/key/energy curve/sections/ducking), audio mood progression, scene-by-scene audio cue sheet, retention pacing notes, Overall Audio Score (0-100); runs after Visual Intelligence and before every rendering stage — planning only, no audio files |
 
 *(v3.0 was skipped in release numbering.)*
 
@@ -792,6 +849,7 @@ python -m pytest
 | `tests/test_script_generation.py` | Script Engine — platform specs, 13-component variants, deterministic scoring, pipeline position, ranking blend, fallback behavior |
 | `tests/test_attention_graph.py` | Attention Graph Engine — 12 dimensions, weight normalization, determinism, radar chart shape, recommendations, pipeline integration |
 | `tests/test_visual_intelligence.py` | Visual Intelligence Engine — 12 visual dimensions, weight normalization, scene planner components/ordering/timing, image+video prompt coverage, thumbnail scoring + CTR, hook sequence, package shape, determinism, pipeline position, pipeline integration |
+| `tests/test_voice_audio.py` | Voice & Audio Engine — voice styles, narration plan (wpm modulation, pauses, emphasis), SFX layering + coverage, music direction (tempo/key/sections/energy), audio mood, retention pacing audit, package shape, determinism, no-audio-generated guarantee, pipeline position, pipeline integration |
 | `tests/test_threat_detection.py` | Psychology Threat Detection Engine — 10 threats, weight normalization, determinism, threat-level/confidence bounds, flagged-threat sorting, fix recommendations, pipeline position, pipeline integration |
 | `tests/test_trend_discovery.py` | Trend provider auto-discovery, universal model, opportunity scoring, pipeline integration |
 | `tests/test_media_production.py` | Production pipeline and dashboard |
@@ -972,16 +1030,17 @@ generational/
 │   ├── trends/                     # Trend Discovery (models, scorer, manager)
 │   ├── scripts/                    # Script Generation (models, platforms, generator, scorer)
 │   ├── visual/                     # Visual Intelligence (models, psychology, scenes, prompts, thumbnails, hooks, package)
+│   ├── audio/                      # Voice & Audio (models, voice, narration, sfx, music, retention, package)
 │   ├── assets.py · voice_profiles.py
 │   ├── knowledge.py · channels.py · pipeline.py
-├── engines/                        # 24 live + 6 planned pipeline plugins
+├── engines/                        # 25 live + 6 planned pipeline plugins
 ├── providers/                      # Swappable external backends
 │   └── trend_sources/              # Auto-discovered trend providers
 ├── ui/                             # Streamlit presentation
-├── tests/                          # 190 unit/integration tests
+├── tests/                          # 220+ unit/integration tests
 └── data/                           # Runtime persistence (gitignored)
 ```
 
 ---
 
-*Last updated: v7.5.0 — Visual Intelligence Engine (Visual Production Packages)*
+*Last updated: v7.6.0 — Voice & Audio Engine (Audio Production Packages)*

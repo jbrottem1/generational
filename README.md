@@ -4,6 +4,71 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 7.6 — Voice & Audio Engine
+
+The sound brain of the pipeline. Every scripted candidate now receives a
+complete **Audio Production Package** — the canonical sound plan that the
+future audio renderers (TTS, music, sound design) and the video renderer
+will consume. No audio files are generated yet; this is the planning
+system that makes generation possible, exactly as the Visual Production
+Package is for images and video.
+
+### Audio Production Package (`services/audio/` + `engines/voice_audio.py`)
+
+Each package contains:
+
+- **Voice style** — a niche-matched narrator persona (tone, pitch,
+  character) with an energy level derived from the storyboard's motion
+  intensity and delivery notes tied to the emotional arc and the target
+  platform's narration tone.
+- **Narration plan** — per-scene delivery direction (urgent hook open,
+  conspiratorial curiosity tease, slow-breathing payoff, warm CTA…), a
+  target words-per-minute per scene (platform base modulated by scene
+  purpose), scripted **pauses** (dramatic silence before the reveal,
+  beats after questions and ellipses), and the **emphasis** words to
+  stress (numbers first, then curiosity/surprise/emotion trigger words),
+  plus a global pacing verdict and fitness score.
+- **Sound effect recommendations** per scene — the storyboard's primary
+  effect plus purpose-specific support layers (transition whooshes,
+  tension drones, UI pops) with timing, intensity, and a mix note.
+- **Background music direction** — style, BPM range (from average motion
+  intensity), major/minor key from the emotional arc, a per-scene energy
+  curve, named sections mapped to scene purposes (cold-open sting →
+  driving groove → full swell → stripped-back outro), sidechain ducking
+  guidance, and a seamless-loop note.
+- **Audio mood** — the overall mood plus a scene-by-scene mood
+  progression (the sonic complement of the visual `EMOTION_LOOKS`).
+- **Scene-by-scene audio cues** — one merged cue per scene combining
+  narration delivery, pauses, emphasis, SFX, music section/energy, mood,
+  and a retention reminder, timed to the visual package's caption plan.
+- **Retention pacing notes** — an audit of planned audio events (SFX +
+  music changes + pauses) against the short-form ideal of a sonic change
+  every 3-6 seconds, with concrete scene-anchored fixes: sound inside the
+  first 0.5s, silence before the payoff, a mid-video texture reset, and a
+  thinned mix under the CTA.
+- One weighted **Overall Audio Score (0-100)** via `AUDIO_SCORE_WEIGHTS`
+  (narration 30%, retention audio 20%, SFX coverage 20%, music dynamics
+  20%, mood variety 10%).
+
+### Pipeline integration
+
+Runs immediately after Visual Intelligence — consuming its storyboard,
+caption timings, motion intensities, and per-scene SFX/music hints — and
+before every rendering stage (voice synthesis, image, video), so all
+renderers execute one canonical sound plan:
+
+```
+... → Script Generation → Visual Intelligence
+    → Voice & Audio (narration plan + voice style + SFX + music + cues + retention notes)
+    → Attention Graph → Ranking → ... → Quality Gate → [voice → image → video]
+```
+
+Everything is deterministic — the full engine runs in Demo Mode with no
+API key, and it degrades gracefully: ideas without a visual package get a
+standalone storyboard planned on the fly. The `voice` render stub stays
+planned; when real TTS lands, it will execute this package rather than
+invent its own direction.
+
 ## Version 7.5 — Visual Intelligence Engine
 
 The visual brain of the pipeline. Every scripted candidate now receives a
@@ -619,10 +684,11 @@ Create profiles, attach to projects, store recording metadata. Recordings
 live under `data/voice_recordings/`. Clone mode is wired but not implemented.
 
 ### Engine plugins (`engines/`)
-**24 live engines** across two pipelines. Intelligence (16): Trend Discovery,
+**25 live engines** across two pipelines. Intelligence (17): Trend Discovery,
 Opportunity Ranking, Research, Ideation, Psychology, Script Generation,
-Visual Intelligence, Attention Graph, Ranking, Script (fallback), Critic,
-Revision, Citation, SEO, Threat Detection, Quality. Production (8): Scene
+Visual Intelligence, Voice & Audio, Attention Graph, Ranking, Script
+(fallback), Critic, Revision, Citation, SEO, Threat Detection, Quality.
+Production (8): Scene
 Planning, Narration, Visual Planning, Asset Manager, Subtitle, Timeline,
 Render Package, Publishing Queue. Future render engines (Voice/Image/Video
 generation) remain as planned stubs.
@@ -707,7 +773,8 @@ generational/
 │   ├── attention_graph.py    # v7.3 12-dimension Attention Graph
 │   ├── threat_detection.py   # v7.4 10-threat Psychology Threat Detection
 │   ├── visual_intelligence.py # v7.5 Visual Production Package planner
-│   ├── research … quality.py # Intelligence pipeline (16 live)
+│   ├── voice_audio.py        # v7.6 Audio Production Package planner
+│   ├── research … quality.py # Intelligence pipeline (17 live)
 │   ├── scene_planning … publishing_queue.py  # Media production (8 live)
 │   └── voice|image|video|publishing|analytics|learning.py  # future render stubs
 ├── services/
@@ -715,6 +782,7 @@ generational/
 │   ├── trends/               # Trend Discovery (models, scorer, manager)
 │   ├── scripts/              # Script Generation (models, platforms, generator, scorer)
 │   ├── visual/               # Visual Intelligence (models, psychology, scenes, prompts, thumbnails, hooks, package)
+│   ├── audio/                # Voice & Audio (models, voice, narration, sfx, music, retention, package)
 │   ├── ideation.py           # Intelligence pipeline orchestrator
 │   ├── production.py         # Media production orchestrator
 │   ├── assets.py             # Asset Manager + Publishing Queue

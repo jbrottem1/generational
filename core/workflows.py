@@ -32,7 +32,10 @@ WORKFLOWS = {
     # research → 20 candidates → psychology scoring → script generation
     # (multiple scored variants per candidate, immediately after psychology)
     # → visual intelligence (storyboard + AI prompts + thumbnails + Visual
-    # Score per scripted candidate) → attention graph (12-dimension radar +
+    # Score per scripted candidate) → voice & audio (Audio Production Package:
+    # narration plan, voice style, pacing/pauses/emphasis, SFX, music
+    # direction, mood, scene cues, retention notes — planning only, before
+    # any rendering) → attention graph (12-dimension radar +
     # recommendations, Phase 2) → weighted ranking (psychology + opportunity
     # + script quality) → script fallback for anything unscripted → critic →
     # revision → citation → SEO packaging → threat detection (10 failure
@@ -45,6 +48,7 @@ WORKFLOWS = {
         "psychology",
         "script_generation",
         "visual_intelligence",
+        "voice_audio",
         "attention_graph",
         "ranking",
         "script",
@@ -63,6 +67,7 @@ WORKFLOWS = {
         "psychology",
         "script_generation",
         "visual_intelligence",
+        "voice_audio",
         "attention_graph",
         "ranking",
         "script",

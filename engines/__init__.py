@@ -39,6 +39,7 @@ from engines.video import VideoEngine
 from engines.visual_intelligence import VisualIntelligenceEngine
 from engines.visual_planning import VisualPlanningEngine
 from engines.voice import VoiceEngine
+from engines.voice_audio import VoiceAudioEngine
 
 __all__ = ["Engine", "PlannedEngine", "registry"]
 
@@ -50,6 +51,7 @@ for _engine_class in (
     PsychologyEngine,
     ScriptGenerationEngine,
     VisualIntelligenceEngine,
+    VoiceAudioEngine,
     AttentionGraphEngine,
     RankingEngine,
     ScriptEngine,
