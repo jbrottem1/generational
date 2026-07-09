@@ -32,11 +32,14 @@ from engines.script import ScriptEngine
 from engines.script_generation import ScriptGenerationEngine
 from engines.seo import SeoEngine
 from engines.subtitle import SubtitleEngine
+from engines.threat_detection import ThreatDetectionEngine
 from engines.timeline import TimelineEngine
 from engines.trend_discovery import TrendDiscoveryEngine
 from engines.video import VideoEngine
+from engines.visual_intelligence import VisualIntelligenceEngine
 from engines.visual_planning import VisualPlanningEngine
 from engines.voice import VoiceEngine
+from engines.voice_audio import VoiceAudioEngine
 
 __all__ = ["Engine", "PlannedEngine", "registry"]
 
@@ -47,6 +50,8 @@ for _engine_class in (
     IdeationEngine,
     PsychologyEngine,
     ScriptGenerationEngine,
+    VisualIntelligenceEngine,
+    VoiceAudioEngine,
     AttentionGraphEngine,
     RankingEngine,
     ScriptEngine,
@@ -54,6 +59,7 @@ for _engine_class in (
     RevisionEngine,
     CitationEngine,
     SeoEngine,
+    ThreatDetectionEngine,
     QualityEngine,
     ScenePlanningEngine,
     NarrationEngine,

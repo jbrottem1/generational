@@ -45,7 +45,9 @@ from engines.heuristics import (
     has_digit,
     sentences,
     stable_jitter,
+    weighted_blend,
 )
+from services.behavioral_intelligence import attach_report
 
 logger = get_logger(__name__)
 
@@ -280,7 +282,7 @@ score_text = score_dimensions
 
 def viral_score(dimensions: dict) -> int:
     """Weighted 0-100 ViralScore from the 18 psychology dimensions."""
-    return clamp(sum(dimensions[key] * weight for key, weight in VIRAL_SCORE_WEIGHTS.items()))
+    return weighted_blend(dimensions, VIRAL_SCORE_WEIGHTS)
 
 
 # Backward-compatible alias — earlier versions called this overall_score.
@@ -351,6 +353,12 @@ class PsychologyEngine(Engine):
             candidate["psychology_score"] = score
             candidate["viral_score"] = score
             candidate["psychology_report"] = report
+            # Behavioral Intelligence API (Phase 4): a standardized report any
+            # engine can consume by attribute access. Available from this point
+            # on for every downstream stage — Script Generation, Visual
+            # Intelligence, and Voice & Audio all run before the Attention Graph
+            # and Threat Detection refresh it with richer data below.
+            attach_report(candidate)
 
         avg_score = round(sum(c["viral_score"] for c in candidates) / len(candidates), 1) if candidates else 0
         log_event(logger, "psychology.scored", candidates=len(candidates), avg_viral_score=avg_score)

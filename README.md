@@ -4,6 +4,424 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 8.0 — Unified Orchestration Layer
+
+Generational's engines are now coordinated by **one orchestration layer**
+(`services/orchestrator/`) — the single interface that turns the collection
+of engines into an autonomous AI Content Operating System. Full reference:
+[`ORCHESTRATOR.md`](ORCHESTRATOR.md).
+
+### One interface
+
+`get_orchestrator().run_full_pipeline(command)` drives every subsystem —
+trend discovery → opportunity ranking → research → psychology → script
+generation → attention graph → visual intelligence → voice & audio →
+refinement (ranking/critic/revision/citation/SEO/threats) → quality gate →
+media production → packaging — and returns a `PipelineResult`. Per-stage
+runners (`run_trend_stage`, `run_script_stage`, `run_visual_stage`,
+`run_audio_stage`, `run_quality_stage`, plus future `run_render_stage` /
+`run_publish_stage`) execute any stage on its own.
+
+### Standardized ProductionPackage
+
+Every run emits one `ProductionPackage` per idea: project_id, brand,
+language, target_country, platforms, trend/competition/psychology/attention
+scores, hook, script, scene breakdown, visual/voice/music assets, captions,
+thumbnail plan, SEO package, quality score, publish_ready, and an analytics
+placeholder. **Future engines only add fields** — unknown fields survive
+round-trips via `extras`.
+
+### Stage status + centralized logging
+
+Every stage returns `SUCCESS` / `WARNING` / `FAILED` with start/finish
+times, duration, confidence, and diagnostics; failures stop the pipeline
+gracefully with partial results preserved. All lifecycle events flow
+through the structured logger.
+
+### Plugin architecture + autonomy prep
+
+Stage order derives from `WORKFLOWS["intelligence"]` (one source of truth);
+new engines plug in via `register_stage()` with zero orchestrator changes.
+Future autonomous agents (Scheduler, Publisher, Analytics, Learning) attach
+through `OrchestratorHook` — interfaces only, no scheduling built yet.
+
+## Version 7.9 — Structured Cinematic Storytelling (Script Engine 2.0)
+
+The Script Generation Engine is upgraded from a text generator into a
+professional content writing system for high-retention short-form video.
+
+### Section architecture (`services/scripts/sections.py`)
+
+Every script is now built section-first. Each variant carries an ordered
+list of annotated narrative sections — **Primary Hook (0–3s), Pattern
+Interrupt, Curiosity Hook, Context, Escalation, Evidence / Explanation,
+Emotional Peak, Resolution, Call To Action** — and every section includes
+narration, estimated duration, emotional intensity, attention score,
+visual intent, recommended B-roll type, and caption emphasis. The legacy
+flat fields (`hook`, `curiosity_loop`, `core_story`, ...) are derived
+views, so every downstream engine keeps working unchanged.
+
+### Hook Engine (`services/scripts/hooks.py`)
+
+Ten hook styles — Curiosity, Shock, Question, FOMO, Statistics,
+Contrarian, Story, Mystery, Authority, Urgency — each write a candidate
+opening line per idea. Candidates are scored 0–100 (with a psychology
+bonus mapped from the idea's ViralScore dimensions, so a controversial
+concept favors contrarian hooks while an emotional one favors story
+hooks) and ranked. The best hook becomes the variant's Primary Hook; the
+runners-up travel with the script as `alternate_hooks`.
+
+### Retention model (`services/scripts/retention.py`)
+
+Every variant estimates **viewer drop-off risk, engagement score,
+retention score, rewatch probability, curiosity strength, and emotional
+pacing** (label + intensity curve) from its section-level attention and
+intensity curves, its text, and the idea's psychology. Predicted
+retention feeds back into variant scoring.
+
+### Director-ready scene breakdown
+
+Every script converts into scenes: scene number, start/end time,
+narration, visual description, camera style, motion recommendation,
+caption text, sound cue, and transition recommendation — one scene per
+section, timed contiguously to the estimated runtime.
+
+### Structured output 2.0 (`services/scripts/structure.py`)
+
+`structured_script` now returns the full production brief: title, hook,
+alternate hooks, annotated sections, scene list, full narration,
+estimated runtime, **emotion timeline**, **attention timeline**, visual
+prompts, **voice instructions** (pace, tone, per-section delivery
+direction), **caption plan**, retention model, CTA, platform format, and
+locale.
+
+### Multi-language ready
+
+Every variant and structured script carries a `Locale`
+(language / region / dialect, default `en-US`). A future Translation
+Engine can rewrite narration per market without touching any engine
+contract.
+
+### Psychology integration
+
+Generation consumes the candidate's ViralScore dimensions end to end:
+hook ranking adapts to the idea's psychological strengths, section
+intensity/attention curves shift with its emotional profile, and the
+retention model blends first-3-second hook, curiosity gap, and
+share/comment likelihood signals.
+
+Platform coverage is unchanged (YouTube Shorts, TikTok, Instagram Reels,
+Facebook Reels, X video, long-form YouTube), with per-platform pacing and
+CTA styles.
+
+## Version 7.8 — Cinematic AI Director (Visual Intelligence 2.0)
+
+The Visual Intelligence Engine is upgraded from a visual planner into a
+professional **AI Film Director**. It no longer just selects imagery — it
+directs every second of visual attention, consuming structured output from
+Trend Discovery, the Psychology Engine, the Script Engine (canonical
+`structured_script`), and the Attention Graph (which now runs *before* it
+in the pipeline).
+
+### What every directed scene now carries
+
+Scene number · duration · purpose · emotion · **attention level** ·
+**visual style** · camera movement · **lens recommendation** · composition ·
+lighting · color palette · **depth of field** · **motion recommendation** ·
+transition · **recommended asset type** · **AI image prompt** ·
+**AI video prompt** · **stock footage query** · overlay recommendations ·
+**caption placement** · **sound effect timing** · B-roll suggestions ·
+**thumbnail candidate flag** · 12-trigger visual psychology scores ·
+**predicted viewer retention**.
+
+### New visual psychology model (`services/visual/psychology.py`)
+
+Twelve perceptual attention triggers: Curiosity, Pattern Interrupts,
+Contrast, Novelty, Human Faces, Eye Contact, Motion, Scale, Speed,
+Emotional Color Theory, Negative Space, Visual Hierarchy — plus
+`predict_scene_retention()`, which blends visual pull, scene position,
+length, and Attention Graph hook/rewatch signals into a per-scene
+retention prediction and a package-level retention curve.
+
+### Style presets (`services/visual/styles.py`)
+
+15 built-in art directions — Documentary, Luxury, Minimal, Dark History,
+Cyberpunk, Corporate, Nature, Science, Psychology, Finance, Horror,
+Conspiracy, Modern Tech, Motivational, Cinematic. Each preset carries
+palette, lighting bias, art style, grade, overlay/caption treatment, and
+mood. Future engines register new styles via `register_style()` without
+touching the engine; the operator can override per run via
+`context["visual_style"]`.
+
+### Professional shot list (`services/visual/shots.py`)
+
+14 shot types with real cinematography metadata (lens, depth of field,
+motion): Wide, Medium, Close-up, Extreme Close-up, Drone, POV, Tracking,
+Orbit, Push-in, Pull-out, Static, Macro, Slow Motion, Hyperlapse. Every
+script becomes a professional shot list; story beats rotate setups so no
+two consecutive beats repeat a shot.
+
+### Multi-source asset adapters (`services/visual/sources.py`)
+
+No provider is ever hardcoded. Six registered adapters produce
+provider-agnostic asset requests per scene: AI Image Generation, AI Video
+Generation, Licensed Stock Footage, User Uploaded Assets, Brand Assets, and
+a reserved (future) AI Avatar adapter. New sources register at runtime via
+`register_source()`.
+
+### Thumbnail system upgrade
+
+Each of the five concepts now carries title overlay, emotion, color
+strategy, focal subject, **eye direction**, contrast score, and **click
+probability** (calibrated 1.5–14%).
+
+### Render Package (`services/visual/render_prep.py`)
+
+The Director does not render. Every Visual Production Package now includes
+a versioned, machine-consumable **Render Package**: a contiguous clip
+timeline with asset requests, transitions, overlays, captions, SFX cues,
+and the retention curve — ready for the future Render Engine to execute
+directly. Full contract documented in `VISUAL_PRODUCTION_PACKAGE.md`.
+
+### Pipeline change
+
+`script_generation → attention_graph → visual_intelligence → voice_audio`
+— the Attention Graph moved ahead of Visual Intelligence so the Director
+consumes its hook/retention scores when predicting per-scene retention.
+
+## Version 7.7 — Behavioral Intelligence API
+
+The Psychology & Virality Engine evolves from three separate scoring outputs
+into one reusable **Behavioral Intelligence API**. Instead of every
+downstream engine reaching into `candidate["psychology"]["curiosity_gap"]`,
+`candidate["attention_graph"]["scores"]["shareability"]`, and
+`candidate["threat_report"]["flagged_threats"]` separately, they can consume
+one typed, documented report.
+
+### `BehavioralIntelligenceReport` (`services/behavioral_intelligence/`)
+
+A single dataclass with 13 behavioral scores plus a confidence score and a
+capped list of recommendations:
+
+`viral_score` · `attention_score` · `curiosity_score` · `emotional_intensity`
+· `novelty_score` · `shareability_score` · `replay_probability` ·
+`comment_probability` · `retention_prediction` · `hook_strength` ·
+`identity_resonance` · `visual_interest_score` · `narrative_tension` ·
+`confidence` · `recommendations`
+
+```python
+from services.behavioral_intelligence import build_report
+
+report = build_report(candidate)
+if report.hook_strength < 60:
+    ...  # typed attribute access — no dict parsing required
+```
+
+Every field's meaning, source dimension(s), and fallback rule is documented
+in `FIELD_DESCRIPTIONS` (`services/behavioral_intelligence/models.py`), and
+`to_dict()` / `from_dict()` round-trip the report through the JSON-safe
+workflow context.
+
+### Graceful degradation, not a new pipeline stage
+
+`build_report()` reads whatever of `psychology`, `attention_graph`, and
+`threat_report` a candidate currently carries — it never requires all three.
+`engines/psychology.py` attaches the report immediately after scoring
+(the earliest point in the pipeline it can exist), and
+`engines/attention_graph.py` / `engines/threat_detection.py` each refresh it
+with richer data as their own scores land. This means Script Generation,
+Visual Intelligence, and Voice & Audio — all three of which run *before* the
+Attention Graph and Threat Detection — already see a fully-populated,
+correctly-typed report the moment Psychology finishes; `confidence` simply
+starts lower and climbs as more signal arrives later in the pipeline.
+
+### Reference adapters (`services/behavioral_intelligence/adapters.py`)
+
+Three small, tested functions show each named consumer reading the report
+purely through typed attributes: `script_generation_guidance()`,
+`visual_guidance()`, `audio_guidance()`. They are not wired into the live
+engines (retrofitting calls into actively-developed modules was out of scope
+for this API) — they are the documented, integration-tested seam those
+engines call into when ready.
+
+### Shared refactor
+
+The weighted-blend formula (`clamp(sum(dimensions[k] * weight))`) that
+`viral_score()`, `attention_score()`, and `overall_threat_score()` each
+duplicated now lives once as `weighted_blend()` in `engines/heuristics.py`.
+
+## Version 7.6 — Voice & Audio Engine
+
+The sound brain of the pipeline. Every scripted candidate now receives a
+complete **Audio Production Package** — the canonical sound plan that the
+future audio renderers (TTS, music, sound design) and the video renderer
+will consume. No audio files are generated yet; this is the planning
+system that makes generation possible, exactly as the Visual Production
+Package is for images and video.
+
+### Audio Production Package (`services/audio/` + `engines/voice_audio.py`)
+
+Each package contains:
+
+- **Voice style** — a niche-matched narrator persona (tone, pitch,
+  character) with an energy level derived from the storyboard's motion
+  intensity and delivery notes tied to the emotional arc and the target
+  platform's narration tone.
+- **Narration plan** — per-scene delivery direction (urgent hook open,
+  conspiratorial curiosity tease, slow-breathing payoff, warm CTA…), a
+  target words-per-minute per scene (platform base modulated by scene
+  purpose), scripted **pauses** (dramatic silence before the reveal,
+  beats after questions and ellipses), and the **emphasis** words to
+  stress (numbers first, then curiosity/surprise/emotion trigger words),
+  plus a global pacing verdict and fitness score.
+- **Sound effect recommendations** per scene — the storyboard's primary
+  effect plus purpose-specific support layers (transition whooshes,
+  tension drones, UI pops) with timing, intensity, and a mix note.
+- **Background music direction** — style, BPM range (from average motion
+  intensity), major/minor key from the emotional arc, a per-scene energy
+  curve, named sections mapped to scene purposes (cold-open sting →
+  driving groove → full swell → stripped-back outro), sidechain ducking
+  guidance, and a seamless-loop note.
+- **Audio mood** — the overall mood plus a scene-by-scene mood
+  progression (the sonic complement of the visual `EMOTION_LOOKS`).
+- **Scene-by-scene audio cues** — one merged cue per scene combining
+  narration delivery, pauses, emphasis, SFX, music section/energy, mood,
+  and a retention reminder, timed to the visual package's caption plan.
+- **Retention pacing notes** — an audit of planned audio events (SFX +
+  music changes + pauses) against the short-form ideal of a sonic change
+  every 3-6 seconds, with concrete scene-anchored fixes: sound inside the
+  first 0.5s, silence before the payoff, a mid-video texture reset, and a
+  thinned mix under the CTA.
+- One weighted **Overall Audio Score (0-100)** via `AUDIO_SCORE_WEIGHTS`
+  (narration 30%, retention audio 20%, SFX coverage 20%, music dynamics
+  20%, mood variety 10%).
+
+### Pipeline integration
+
+Runs immediately after Visual Intelligence — consuming its storyboard,
+caption timings, motion intensities, and per-scene SFX/music hints — and
+before every rendering stage (voice synthesis, image, video), so all
+renderers execute one canonical sound plan:
+
+```
+... → Script Generation → Visual Intelligence
+    → Voice & Audio (narration plan + voice style + SFX + music + cues + retention notes)
+    → Attention Graph → Ranking → ... → Quality Gate → [voice → image → video]
+```
+
+Everything is deterministic — the full engine runs in Demo Mode with no
+API key, and it degrades gracefully: ideas without a visual package get a
+standalone storyboard planned on the fly. The `voice` render stub stays
+planned; when real TTS lands, it will execute this package rather than
+invent its own direction.
+
+## Version 7.5 — Visual Intelligence Engine
+
+The visual brain of the pipeline. Every scripted candidate now receives a
+complete **Visual Production Package** — the canonical visual plan that
+every downstream renderer (voice, audio, image, video) will consume. No
+final videos are generated yet; this is the planning system that makes
+generation possible.
+
+### Visual Production Package (`services/visual/` + `engines/visual_intelligence.py`)
+
+Each package contains:
+
+- **Scene-by-scene storyboard** — hook, pattern interrupt, curiosity loop,
+  story beats sized to runtime (~one visual change every 7s), payoff, CTA.
+  Every scene carries the full visual grammar: purpose, emotion, length,
+  camera angle + motion, shot composition, subject placement, lighting,
+  environment, color palette, transitions in/out, motion intensity, zoom,
+  background, overlay, text overlay, caption timing, sound effect, music
+  style, and B-roll.
+- **12-dimension visual psychology scores per scene** — Curiosity ·
+  Mystery · Wonder · Fear · Beauty · Novelty · Scale · Contrast · Motion ·
+  Satisfaction · Humor · Identity — blended into a per-scene Visual Score
+  via `VISUAL_SCORE_WEIGHTS` (deterministic word-bank + structure analysis,
+  same approach as the psychology/threat engines).
+- **AI image prompts** for Midjourney, Flux, Stable Diffusion, DALL-E, and
+  OpenAI Images — each carrying lighting, composition, lens, mood, art
+  style, color palette, quality tags, and aspect ratio, formatted in each
+  model's dialect (e.g. `--ar 9:16 --style raw --v 6` for Midjourney,
+  negative prompts for Stable Diffusion).
+- **AI video prompts** for Runway, Veo, Pika, Luma, Kling, and Sora
+  (future-ready) — each describing the scene, camera movement, character
+  actions, lighting, physics, mood, and duration.
+- **5 scored thumbnail concepts** — Shock Face Close-Up, Mystery Object
+  Macro, Before/After Split, Extreme Scale Contrast, Bold Text Tease —
+  each scored on curiosity, readability, contrast, facial focus, object
+  focus, color, and emotion, with an **expected CTR %**.
+- **Hook Visualizer** — the strongest five-frame first-3-second sequence
+  (abrupt motion → novel detail → curiosity gap → direct address → open
+  loop) plus a plain-English scroll-stop rationale.
+- **Caption plan, visual pacing report, camera plan, transitions, and
+  motion report** — cut rhythm vs. the 3-8s retention ideal, camera
+  variety score, and a per-scene motion intensity curve.
+- One weighted **Overall Visual Score (0-100)** via
+  `PACKAGE_SCORE_WEIGHTS` (scene craft 35%, hook 25%, thumbnail 20%,
+  pacing 12%, camera variety 8%).
+
+### Pipeline integration
+
+Runs immediately after Script Generation and before the Attention Graph,
+so ranking can weigh visual craft and every asset planner downstream shares
+one visual source of truth:
+
+```
+... → Psychology → Script Generation
+    → Visual Intelligence (storyboard + prompts + thumbnails + Visual Score)
+    → Attention Graph → Ranking → ... → Quality Gate
+```
+
+Everything is deterministic — the full engine runs in Demo Mode with no API
+key, and adding a new AI image/video model is one formatter function in
+`services/visual/prompts.py`. Every idea card gets a compact "🎥 Visual
+Production Package" expander with the storyboard, thumbnail scores, and
+hook sequence.
+
+## Version 7.4 — Threat Intelligence (Psychology Threat Detection)
+
+Phase 3 of the attention-engineering stack. Every fully-packaged idea now
+gets screened for **10 production failure modes** — the things that quietly
+kill watch time, trust, or platform standing even when the underlying
+psychology looks strong.
+
+### 10 threats detected (`engines/threat_detection.py`)
+
+Clickbait Without Payoff · Low Dopamine Pacing · Weak Hooks · Viewer
+Fatigue · Thumbnail Mismatch · Predictable Scripting · Retention Cliff
+Risk · Platform Policy Risk · Manipulative Language · Repetitive Content.
+
+Each is scored 0-100 (higher = riskier) from the same deterministic
+text-feature analysis used throughout the pipeline, reusing the already-
+computed Psychology dimensions, script/thumbnail package, and retention
+checkpoints — plus new dedicated word banks in `engines/heuristics.py` for
+policy-risk and manipulative-pressure language. **Repetitive Content**
+additionally compares an idea against every other idea in the same batch
+to catch near-duplicate hooks/topics.
+
+### Threat Level, Confidence, and fixes
+
+The 10 scores blend into one weighted **Threat Score** (0-100) via
+`THREAT_WEIGHTS`, mapped to a **Threat Level** (`Low` / `Medium` / `High`)
+plus a **Confidence %** reflecting how much of the packaged idea (script,
+thumbnail concept, retention checkpoints, CTA) was available to analyze.
+Every idea card gets a compact "🚨 Threat Report" expander listing any
+flagged threats with a concrete, dimension-specific fix — recommendations
+are always available for all 10 dimensions, not just the flagged ones.
+
+### Pipeline integration
+
+Runs after SEO packaging (so the thumbnail concept and full script exist)
+and before the final Quality Gate — a purely additive diagnostic layer that
+doesn't change the publish-gate math:
+
+```
+... → Ranking → Script → Critic → Revision → Citation → SEO
+    → Threat Detection (10 failure modes → Threat Level + Confidence + fixes)
+    → Quality Gate
+```
+
 ## Version 7.3 — Attention Intelligence (Attention Graph)
 
 Phase 2 of the attention-engineering stack. Every idea now gets an
@@ -466,9 +884,9 @@ is a thin shell over five layers:
 ```
         UI (Streamlit tabs + sidebar)
                     │
-        services/  (research, ideation, production, assets, voice profiles, channels, knowledge)
+        services/  (research, ideation, production, assets, voice profiles, channels, knowledge, behavioral intelligence)
                     │
-   Job Queue ──► Workflow Manager ──► Engine Registry (18 live plugins)
+   Job Queue ──► Workflow Manager ──► Engine Registry (23 live plugins)
                     │
         providers/ (research sources, LLM, Voice, Image, Video, Music, Publishing, Analytics, Trend)
                     │
@@ -512,12 +930,19 @@ Create profiles, attach to projects, store recording metadata. Recordings
 live under `data/voice_recordings/`. Clone mode is wired but not implemented.
 
 ### Engine plugins (`engines/`)
-**21 live engines** across two pipelines. Intelligence (13): Trend Discovery,
+**25 live engines** across two pipelines. Intelligence (17): Trend Discovery,
 Opportunity Ranking, Research, Ideation, Psychology, Script Generation,
-Ranking, Script (fallback), Critic, Revision, Citation, SEO, Quality.
-Production (8): Scene Planning, Narration, Visual Planning, Asset Manager,
-Subtitle, Timeline, Render Package, Publishing Queue. Future render engines
-(Voice/Image/Video generation) remain as planned stubs.
+Attention Graph, Visual Intelligence, Voice & Audio, Ranking, Script
+(fallback), Critic, Revision, Citation, SEO, Threat Detection, Quality.
+Production (8): Scene
+Planning, Narration, Visual Planning, Asset Manager, Subtitle, Timeline,
+Render Package, Publishing Queue. Future render engines (Voice/Image/Video
+generation) remain as planned stubs.
+
+The **Behavioral Intelligence API** (`services/behavioral_intelligence/`,
+v7.7) is not a 26th pipeline stage — it's a reusable service Psychology,
+the Attention Graph, and Threat Detection each call into, so it has no
+`WORKFLOWS` entry of its own.
 
 ### Workflow Engine (`core/workflows.py`)
 Pipelines are data, not code: a workflow is an ordered list of engine keys
@@ -596,13 +1021,20 @@ generational/
 ├── engines/                  # Engine plugins (intelligence + production)
 │   ├── trend_discovery.py, opportunity_ranking.py  # v7.0 front door
 │   ├── script_generation.py  # v7.2 multi-variant Script Generation Engine
-│   ├── research … quality.py # Intelligence pipeline (13 live)
+│   ├── attention_graph.py    # v7.3 12-dimension Attention Graph
+│   ├── threat_detection.py   # v7.4 10-threat Psychology Threat Detection
+│   ├── visual_intelligence.py # v7.5 Visual Production Package planner
+│   ├── voice_audio.py        # v7.6 Audio Production Package planner
+│   ├── research … quality.py # Intelligence pipeline (17 live)
 │   ├── scene_planning … publishing_queue.py  # Media production (8 live)
 │   └── voice|image|video|publishing|analytics|learning.py  # future render stubs
 ├── services/
 │   ├── research/             # Knowledge Engine (manager, cache, scorer, summarizer)
 │   ├── trends/               # Trend Discovery (models, scorer, manager)
-│   ├── scripts/              # Script Generation (models, platforms, generator, scorer)
+│   ├── scripts/              # Script Generation (models, sections, hooks, retention, platforms, generator, scorer, structure)
+│   ├── visual/               # Visual Intelligence (models, psychology, scenes, prompts, thumbnails, hooks, package)
+│   ├── audio/                # Voice & Audio (models, voice, narration, sfx, music, retention, package)
+│   ├── behavioral_intelligence/ # v7.7 unified report API (models, builder, adapters)
 │   ├── ideation.py           # Intelligence pipeline orchestrator
 │   ├── production.py         # Media production orchestrator
 │   ├── assets.py             # Asset Manager + Publishing Queue

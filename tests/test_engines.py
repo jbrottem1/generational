@@ -5,9 +5,9 @@ from engines.base import PlannedEngine
 INTELLIGENCE_LIVE = {
     "trend_discovery", "opportunity_ranking",
     "research", "ideation", "psychology", "script_generation",
-    "attention_graph",
+    "visual_intelligence", "voice_audio", "attention_graph",
     "ranking", "script",
-    "critic", "revision", "citation", "seo", "quality",
+    "critic", "revision", "citation", "seo", "threat_detection", "quality",
 }
 
 PRODUCTION_LIVE = {

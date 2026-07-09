@@ -49,7 +49,8 @@ def render() -> None:
             st.caption(
                 f"Top {len(result['ideas'])} of {CANDIDATE_IDEAS} candidates — "
                 "selected by the Psychology & Virality Engine (18-dimension ViralScore) and weighted "
-                "ranking, scripted, critiqued, auto-revised, and SEO-packaged."
+                "ranking, scripted, critiqued, auto-revised, SEO-packaged, and screened for "
+                "production risk (Threat Detection)."
             )
         for index, idea in enumerate(result["ideas"], start=1):
             components.idea_card(index, idea)

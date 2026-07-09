@@ -1,19 +1,16 @@
-"""Ideation service — runs the intelligence pipeline for the UI.
+"""Ideation service — the UI adapter over the Orchestrator.
 
-Submits the command as a job to the central JobQueue, which executes the
-"intelligence" workflow (trend discovery → opportunity ranking → research →
-candidates → psychology → script generation → ranking → script fallback →
-critic → revision → citation → SEO → quality gate) through the
-WorkflowEngine. Final assets are recorded into the Knowledge Base.
+Delegates to services/orchestrator (the single coordination layer for the
+whole OS), then reshapes the PipelineResult into the result dict the
+Streamlit UI has always consumed. Final assets are recorded into the
+Knowledge Base.
 """
 
 from __future__ import annotations
 
 from core.constants import DEFAULT_PUBLISH_THRESHOLD
-from core.jobs import get_queue
 from core.log import get_logger, log_event
 from core.models import build_result
-from core.workflows import WORKFLOW_JOB_TYPE, ensure_workflow_handler
 
 logger = get_logger(__name__)
 
@@ -28,38 +25,29 @@ def run_command(
     research_settings: "dict | None" = None,
     project_name: str | None = None,
 ) -> dict:
-    """Run the intelligence pipeline for a command.
+    """Run the full pipeline for a command via the Orchestrator.
 
     Returns a result dict (see core.models.build_result) enriched with
     "research", "quality_summary", "pipeline_steps", and transient
     "tokens_used"/"error" keys.
     """
-    queue = get_queue()
-    ensure_workflow_handler(queue)
+    from services.orchestrator import get_orchestrator
 
-    job = queue.submit(
-        WORKFLOW_JOB_TYPE,
-        {
-            "workflow": "intelligence",
-            "context": {
-                "command": command,
-                "count": count,
-                "model": model,
-                "threshold": threshold,
-                "research_settings": research_settings,
-                "project_name": project_name,
-            },
-        },
+    pipeline = get_orchestrator().run_full_pipeline(
+        command,
+        count=count,
+        model=model,
+        threshold=threshold,
+        research_settings=research_settings,
+        project_name=project_name,
+        context_extra={"voice_mode": voice_mode, "voice_profile_id": voice_profile_id},
     )
-    job = queue.run(job.id)
-    log_event(logger, "ideation.job_finished", job_id=job.id, status=job.status)
+    log_event(logger, "ideation.pipeline_finished", status=pipeline.status)
 
-    if job.status != "succeeded":
-        return _fallback_result(command, count, model, job.error)
+    if not pipeline.succeeded:
+        return _fallback_result(command, count, model, pipeline.error)
 
-    context = job.result["context"]
-    context["voice_mode"] = voice_mode
-    context["voice_profile_id"] = voice_profile_id
+    context = pipeline.context
     result = build_result(
         command=command,
         niche=context["niche"],
@@ -76,23 +64,23 @@ def run_command(
     result["trend_dashboard"] = context.get("trend_dashboard", {})
     result["top_opportunity"] = context.get("top_opportunity", {})
     result["quality_summary"] = context.get("quality_summary", {})
-    result["pipeline_steps"] = job.result["run"]["steps"]
+    result["pipeline_steps"] = context.get("pipeline_steps", [])
     result["tokens_used"] = context.get("tokens_used", 0)
     if context.get("error"):
         result["error"] = context["error"]
 
     _record_knowledge(result, context)
 
-    from services.production import run_media_production
-
-    production = run_media_production(context)
-    result["production_packages"] = production.get("production_packages", [])
-    result["production_steps"] = production.get("production_steps", [])
-    result["production_dashboard"] = production.get("production_dashboard", [])
-    result["queued_count"] = production.get("queued_count", 0)
-    if production.get("production_error"):
-        result["production_error"] = production["production_error"]
-    if production.get("production_skipped"):
+    # Media production + packaging already ran inside the orchestrator.
+    result["production_packages"] = context.get("production_packages", [])
+    result["production_steps"] = context.get("production_steps", [])
+    result["production_dashboard"] = context.get("production_dashboard", [])
+    result["queued_count"] = context.get("queued_count", 0)
+    result["unified_packages"] = context.get("unified_packages", [])
+    result["stage_reports"] = [report.to_dict() for report in pipeline.stage_reports]
+    if context.get("production_error"):
+        result["production_error"] = context["production_error"]
+    if context.get("production_skipped"):
         result["production_skipped"] = True
 
     return result
