@@ -32,6 +32,7 @@ from engines.script import ScriptEngine
 from engines.script_generation import ScriptGenerationEngine
 from engines.seo import SeoEngine
 from engines.subtitle import SubtitleEngine
+from engines.threat_detection import ThreatDetectionEngine
 from engines.timeline import TimelineEngine
 from engines.trend_discovery import TrendDiscoveryEngine
 from engines.video import VideoEngine
@@ -54,6 +55,7 @@ for _engine_class in (
     RevisionEngine,
     CitationEngine,
     SeoEngine,
+    ThreatDetectionEngine,
     QualityEngine,
     ScenePlanningEngine,
     NarrationEngine,

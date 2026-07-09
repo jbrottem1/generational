@@ -34,7 +34,8 @@ WORKFLOWS = {
     # → attention graph (12-dimension radar + recommendations, Phase 2) →
     # weighted ranking (psychology + opportunity + script quality) →
     # script fallback for anything unscripted → critic → revision →
-    # citation → SEO packaging → final quality scores + publish gate.
+    # citation → SEO packaging → threat detection (10 failure modes, Phase 3)
+    # → final quality scores + publish gate.
     "intelligence": [
         "trend_discovery",
         "opportunity_ranking",
@@ -49,6 +50,7 @@ WORKFLOWS = {
         "revision",
         "citation",
         "seo",
+        "threat_detection",
         "quality",
     ],
     "full_content": [
@@ -65,6 +67,7 @@ WORKFLOWS = {
         "revision",
         "citation",
         "seo",
+        "threat_detection",
         "quality",
         "voice",
         "image",

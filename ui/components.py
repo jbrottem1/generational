@@ -105,6 +105,23 @@ def idea_card(index: int, idea: dict) -> None:
                     label = labels.get(key, key.replace("_", " ").title())
                     st.caption(f"· **{label}** ({scores[key]}) — {recommendations.get(key, '')}")
 
+        threat_report = idea.get("threat_report")
+        if threat_report:
+            level = threat_report.get("threat_level", "Low")
+            level_icon = {"Low": "🟢", "Medium": "🟡", "High": "🔴"}.get(level, "🟢")
+            with st.expander(
+                f"🚨 Threat Report · {level_icon} {level} "
+                f"({threat_report.get('threat_score', 0)}/100 · {threat_report.get('confidence', 0)}% confidence)"
+            ):
+                st.write(threat_report.get("summary", ""))
+                flagged = threat_report.get("flagged_threats", [])
+                if flagged:
+                    st.markdown("**⚠️ Flagged Threats & Fixes**")
+                    for item in flagged:
+                        st.caption(f"· **{item['label']}** ({item['score']}) — {item['fix']}")
+                else:
+                    st.caption("No threats crossed the flagging threshold.")
+
         critique = idea.get("critique")
         if critique is not None:
             if idea.get("revised"):

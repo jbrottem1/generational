@@ -4,6 +4,49 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 7.4 — Threat Intelligence (Psychology Threat Detection)
+
+Phase 3 of the attention-engineering stack. Every fully-packaged idea now
+gets screened for **10 production failure modes** — the things that quietly
+kill watch time, trust, or platform standing even when the underlying
+psychology looks strong.
+
+### 10 threats detected (`engines/threat_detection.py`)
+
+Clickbait Without Payoff · Low Dopamine Pacing · Weak Hooks · Viewer
+Fatigue · Thumbnail Mismatch · Predictable Scripting · Retention Cliff
+Risk · Platform Policy Risk · Manipulative Language · Repetitive Content.
+
+Each is scored 0-100 (higher = riskier) from the same deterministic
+text-feature analysis used throughout the pipeline, reusing the already-
+computed Psychology dimensions, script/thumbnail package, and retention
+checkpoints — plus new dedicated word banks in `engines/heuristics.py` for
+policy-risk and manipulative-pressure language. **Repetitive Content**
+additionally compares an idea against every other idea in the same batch
+to catch near-duplicate hooks/topics.
+
+### Threat Level, Confidence, and fixes
+
+The 10 scores blend into one weighted **Threat Score** (0-100) via
+`THREAT_WEIGHTS`, mapped to a **Threat Level** (`Low` / `Medium` / `High`)
+plus a **Confidence %** reflecting how much of the packaged idea (script,
+thumbnail concept, retention checkpoints, CTA) was available to analyze.
+Every idea card gets a compact "🚨 Threat Report" expander listing any
+flagged threats with a concrete, dimension-specific fix — recommendations
+are always available for all 10 dimensions, not just the flagged ones.
+
+### Pipeline integration
+
+Runs after SEO packaging (so the thumbnail concept and full script exist)
+and before the final Quality Gate — a purely additive diagnostic layer that
+doesn't change the publish-gate math:
+
+```
+... → Ranking → Script → Critic → Revision → Citation → SEO
+    → Threat Detection (10 failure modes → Threat Level + Confidence + fixes)
+    → Quality Gate
+```
+
 ## Version 7.3 — Attention Intelligence (Attention Graph)
 
 Phase 2 of the attention-engineering stack. Every idea now gets an
@@ -468,7 +511,7 @@ is a thin shell over five layers:
                     │
         services/  (research, ideation, production, assets, voice profiles, channels, knowledge)
                     │
-   Job Queue ──► Workflow Manager ──► Engine Registry (18 live plugins)
+   Job Queue ──► Workflow Manager ──► Engine Registry (23 live plugins)
                     │
         providers/ (research sources, LLM, Voice, Image, Video, Music, Publishing, Analytics, Trend)
                     │
@@ -512,12 +555,13 @@ Create profiles, attach to projects, store recording metadata. Recordings
 live under `data/voice_recordings/`. Clone mode is wired but not implemented.
 
 ### Engine plugins (`engines/`)
-**21 live engines** across two pipelines. Intelligence (13): Trend Discovery,
+**23 live engines** across two pipelines. Intelligence (15): Trend Discovery,
 Opportunity Ranking, Research, Ideation, Psychology, Script Generation,
-Ranking, Script (fallback), Critic, Revision, Citation, SEO, Quality.
-Production (8): Scene Planning, Narration, Visual Planning, Asset Manager,
-Subtitle, Timeline, Render Package, Publishing Queue. Future render engines
-(Voice/Image/Video generation) remain as planned stubs.
+Attention Graph, Ranking, Script (fallback), Critic, Revision, Citation,
+SEO, Threat Detection, Quality. Production (8): Scene Planning, Narration,
+Visual Planning, Asset Manager, Subtitle, Timeline, Render Package,
+Publishing Queue. Future render engines (Voice/Image/Video generation)
+remain as planned stubs.
 
 ### Workflow Engine (`core/workflows.py`)
 Pipelines are data, not code: a workflow is an ordered list of engine keys
@@ -596,7 +640,9 @@ generational/
 ├── engines/                  # Engine plugins (intelligence + production)
 │   ├── trend_discovery.py, opportunity_ranking.py  # v7.0 front door
 │   ├── script_generation.py  # v7.2 multi-variant Script Generation Engine
-│   ├── research … quality.py # Intelligence pipeline (13 live)
+│   ├── attention_graph.py    # v7.3 12-dimension Attention Graph
+│   ├── threat_detection.py   # v7.4 10-threat Psychology Threat Detection
+│   ├── research … quality.py # Intelligence pipeline (15 live)
 │   ├── scene_planning … publishing_queue.py  # Media production (8 live)
 │   └── voice|image|video|publishing|analytics|learning.py  # future render stubs
 ├── services/

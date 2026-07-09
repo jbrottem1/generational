@@ -92,6 +92,32 @@ VISUAL_NOVELTY_WORDS = [
     "visual proof", "side by side",
 ]
 
+# Word/phrase banks for Psychology Threat Detection (engines/threat_detection.py,
+# Phase 3). These flag production/attention failure modes rather than reward
+# viral potential — the inverse framing of the banks above.
+PAYOFF_WORDS = [
+    "here's why", "here's how", "the reason", "turns out", "the answer",
+    "because", "revealed", "here's what happened", "the truth is",
+    "explains why", "so here's", "which means",
+]
+
+GENERIC_OPENER_PHRASES = [
+    "in this video", "today we're going to", "let's talk about",
+    "so basically", "as we all know", "welcome back", "hey guys",
+    "without further ado", "let's get into it", "today i want to talk about",
+]
+
+POLICY_RISK_WORDS = [
+    "kill", "suicide", "self harm", "self-harm", "drugs", "weapon", "gun",
+    "violence", "hate", "nudity", "illegal", "explicit", "abuse", "terrorist",
+]
+
+MANIPULATIVE_WORDS = [
+    "you'll regret", "everyone is doing it", "don't miss out", "act now",
+    "only you", "before it's too late", "you need to", "you must",
+    "last chance", "or else", "you have to", "trust me",
+]
+
 STOPWORDS = {
     "the", "a", "an", "and", "or", "but", "about", "your", "you", "this",
     "that", "with", "for", "from", "into", "what", "when", "how", "why",

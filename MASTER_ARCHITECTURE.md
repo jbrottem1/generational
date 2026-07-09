@@ -1,7 +1,7 @@
 # Generational — Master Architecture
 
-**Current version:** v7.3.0  
-**Status:** Source-backed research platform with an 18-dimension Psychology & Virality Engine, a multi-variant multi-platform Script Generation Engine, a 12-dimension Attention Graph, citation engine, and multi-factor quality gate  
+**Current version:** v7.4.0  
+**Status:** Source-backed research platform with an 18-dimension Psychology & Virality Engine, a multi-variant multi-platform Script Generation Engine, a 12-dimension Attention Graph, a 10-threat Psychology Threat Detection layer, citation engine, and multi-factor quality gate  
 **Entry point:** `app.py` (Streamlit shell only — no business logic)
 
 This document is the canonical architecture reference for Generational. It describes how the system is built today, how to extend it safely, and how the team develops using ChatGPT, Claude, and Cursor.
@@ -39,15 +39,16 @@ The goal is not to automate one YouTube channel. The goal is software that opera
 
 ### What exists today
 
-Generational v7.3 is a modular platform with:
+Generational v7.4 is a modular platform with:
 
 - A **Trend Discovery Engine** — the front door: auto-discovered trend providers, a universal Trend model, and 0-100 Opportunity Scoring that gates what enters the pipeline
 - A **Psychology & Virality Engine** — scores every candidate idea across 18 attention-science dimensions, blends them into a weighted 0-100 ViralScore, and produces a plain-English psychology report explaining why
 - A **Script Generation Engine** — runs immediately after Psychology: every candidate gets multiple stylistically distinct, platform-aware script variants (13 storytelling components each: hook, pattern interrupt, curiosity loop, core story, emotional progression, retention checkpoints, CTA, SEO keywords, B-roll, AI visual prompts, sound effects, music style, estimated runtime), scored 0-100 across six weighted factors, best variant wins
 - An **Attention Graph Engine** — scores every candidate across 12 attention dimensions into a radar-chart-ready profile plus a weighted 0-100 Attention Score, with a concrete recommendation for raising every dimension
+- A **Psychology Threat Detection Engine** — screens every packaged idea for 10 production failure modes (clickbait without payoff, weak hooks, platform policy risk, manipulative language, and more), producing a Threat Level (Low/Medium/High), a confidence %, and a fix recommendation for every flagged threat
 - A **Knowledge Engine** with live Wikipedia, PubMed, arXiv, and Crossref connectors
 - A **Citation Engine** that maps scripts to sources and flags unsupported claims
-- An **Intelligence Pipeline** (14 stages) from trend discovery and opportunity ranking through ideas, psychology, script generation, attention graph, ranking, critique, citation, SEO, and quality
+- An **Intelligence Pipeline** (15 stages) from trend discovery and opportunity ranking through ideas, psychology, script generation, attention graph, ranking, critique, citation, SEO, threat detection, and quality
 - A **Media Production Pipeline** that turns approved scripts into render-ready packages
 - A **Provider System** that keeps all vendor integrations swappable
 - A **Job Queue + Workflow Engine** that coordinates every stage without tight coupling
@@ -107,7 +108,7 @@ Every stage in this chain already has a registered engine key (live or planned s
                                │
 ┌──────────────────────────────▼──────────────────────────────┐
 │  Engine Registry (engines/registry.py)                      │
-│  22 live engines · 6 planned stubs                           │
+│  23 live engines · 6 planned stubs                           │
 └──────────────────────────────┬──────────────────────────────┘
                                │
 ┌──────────────────────────────▼──────────────────────────────┐
@@ -174,10 +175,11 @@ services/ideation.run_command()
     │       → cache by topic (data/research_cache/)
     │       │
     │       ▼
-    │   Stages 3–14: Intelligence Pipeline
+    │   Stages 3–15: Intelligence Pipeline
     │       ideation → psychology → script_generation →
     │       attention_graph → ranking → script (fallback) →
-    │       critic → revision → citation → seo → quality
+    │       critic → revision → citation → seo →
+    │       threat_detection → quality
     │       │
     │       ▼
     │   context["ideas"] with scores, SEO, references
@@ -218,7 +220,9 @@ Every engine receives and returns updates to a shared `context: dict`. Key field
 | `target_platform`, `script_variant_count` | Caller (optional) | Script Generation |
 | `candidates[].attention_graph` (`.scores`, `.attention_score`, `.radar_chart`, `.recommendations`) | Attention Graph | Ranking, UI (radar chart expander) |
 | `attention_graph_summary` | Attention Graph | UI, diagnostics |
-| `ranked_candidates`, `selected_ideas` | Ranking | Script (fallback), SEO, Quality |
+| `ranked_candidates`, `selected_ideas` | Ranking | Script (fallback), SEO, Threat Detection, Quality |
+| `selected_ideas[].threat_report` (`.threats`, `.threat_score`, `.threat_level`, `.confidence`, `.flagged_threats`, `.recommendations`) | Threat Detection | UI (threat report expander), diagnostics |
+| `threat_detection_summary` | Threat Detection | UI, diagnostics |
 | `ideas` | Quality | Production, UI, Knowledge Base |
 | `quality_summary` | Quality | UI, Production filter |
 | `approved_content` | Production service | Media production engines |
@@ -312,7 +316,7 @@ class Engine(ABC):
     def run(self, context: dict) -> dict: ...  # returns merge updates
 ```
 
-### Intelligence Pipeline (14 live engines)
+### Intelligence Pipeline (15 live engines)
 
 | Key | Module | Responsibility |
 |---|---|---|
@@ -329,6 +333,7 @@ class Engine(ABC):
 | `revision` | `engines/revision.py` | Auto-rewrites flagged sections |
 | `citation` | `engines/citation.py` | Maps scripts to sources; claim confidence; unsupported claim warnings |
 | `seo` | `engines/seo.py` | Titles, hashtags, keywords, description, thumbnail concept |
+| `threat_detection` | `engines/threat_detection.py` | Psychology Threat Detection Engine — screens the packaged idea for 10 failure modes, blends a weighted Threat Score (0-100), and returns a Threat Level (Low/Medium/High), a confidence %, and fix recommendations (deterministic) |
 | `quality` | `engines/quality.py` | Multi-factor publish gate (score + research + citations) |
 
 **Workflow:** `WORKFLOWS["intelligence"]`
@@ -398,6 +403,44 @@ finished video would need to execute.
 - Attached to every candidate as `attention_graph` (`scores`, `attention_score`,
   `radar_chart`, `recommendations`); a batch `attention_graph_summary` is
   attached to the pipeline context for diagnostics.
+
+### Psychology Threat Detection (deep dive)
+
+`engines/threat_detection.py` is Phase 3 of the attention-engineering stack.
+It runs after SEO packaging (so the thumbnail concept and full script
+already exist) and before the final Quality Gate, screening the *finished*
+package for the failure modes that erode watch time, trust, or platform
+standing even when the underlying psychology scored well.
+
+- **10 threat detectors** (`score_threats()`): clickbait without payoff,
+  low dopamine pacing, weak hooks, viewer fatigue, thumbnail mismatch,
+  predictable scripting, retention cliff risk, platform policy risk,
+  manipulative language, and repetitive content. Each is scored 0-100
+  (higher = riskier) by deterministic text-feature analysis that reuses the
+  already-computed Psychology dimensions, script/thumbnail package, and
+  retention checkpoints, plus new word banks in `engines/heuristics.py`
+  (`PAYOFF_WORDS`, `GENERIC_OPENER_PHRASES`, `POLICY_RISK_WORDS`,
+  `MANIPULATIVE_WORDS`). **Repetitive Content** is the one dimension that
+  looks across the batch — it compares an idea's title/hook against every
+  other selected idea in the same run to catch near-duplicates.
+- **Threat Score** (`overall_threat_score()`): the 10 dimensions blend into
+  one weighted 0-100 score via `THREAT_WEIGHTS` — data, not code, so the
+  future Learning Engine can retune weights from real moderation/performance
+  outcomes without touching detection logic.
+- **Threat Level**: `overall_threat_score` maps to `Low` / `Medium` / `High`
+  via fixed thresholds (`LEVEL_THRESHOLDS`).
+- **Confidence** (`_confidence()`): 50-97%, reflecting how much of the
+  packaged idea (script, psychology dimensions, retention checkpoints,
+  thumbnail concept, CTA) was available to analyze — more signal present
+  means a more confident assessment, independent of the risk score itself.
+- **Fix recommendations** (`build_threat_report()`): every dimension always
+  has a concrete fix (`THREAT_FIXES`); dimensions scoring at/above the flag
+  threshold (55) are surfaced worst-first in `flagged_threats`, each paired
+  with its fix, plus a one-line plain-English `summary`.
+- Attached to every selected idea as `threat_report`; a batch
+  `threat_detection_summary` (scored count, average threat score, level
+  counts) is attached to the pipeline context for diagnostics. Purely
+  additive — it does not alter `quality.py`'s publish-gate math.
 
 ### Media Production Pipeline (8 live engines)
 
@@ -618,6 +661,7 @@ The Streamlit UI is intentionally stable across versions. Major releases add **c
 | **v7.1** | Psychology & Virality Engine | 18-dimension attention scoring, weighted ViralScore, per-idea psychology report, virality-aware Quality Gate |
 | **v7.2** | Script Generation Engine | Multi-variant multi-style scripts for 6 platforms, 13 storytelling components per script, 6-factor variant scoring, runs immediately after Psychology, script quality feeds ranking |
 | **v7.3** | Attention Graph (Attention Intelligence) | 12-dimension attention scoring, weighted Attention Score, radar-chart payload + Plotly visualization, per-dimension recommendations, runs after Script Generation and before Ranking |
+| **v7.4** | Psychology Threat Detection (Threat Intelligence) | 10-threat production risk screening, weighted Threat Score, Threat Level (Low/Medium/High), confidence %, fix recommendations, runs after SEO and before the Quality Gate |
 
 *(v3.0 was skipped in release numbering.)*
 
@@ -681,6 +725,7 @@ python -m pytest
 | `tests/test_citation_engine.py` | Citation engine + multi-factor quality gate |
 | `tests/test_script_generation.py` | Script Engine — platform specs, 13-component variants, deterministic scoring, pipeline position, ranking blend, fallback behavior |
 | `tests/test_attention_graph.py` | Attention Graph Engine — 12 dimensions, weight normalization, determinism, radar chart shape, recommendations, pipeline integration |
+| `tests/test_threat_detection.py` | Psychology Threat Detection Engine — 10 threats, weight normalization, determinism, threat-level/confidence bounds, flagged-threat sorting, fix recommendations, pipeline position, pipeline integration |
 | `tests/test_trend_discovery.py` | Trend provider auto-discovery, universal model, opportunity scoring, pipeline integration |
 | `tests/test_media_production.py` | Production pipeline and dashboard |
 | `tests/test_providers.py` | Voice provider factory |
@@ -707,7 +752,7 @@ python -m pytest
 
 ### Current Baseline
 
-**132 tests passing** (as of v7.3.0).
+**159 tests passing** (as of v7.4.0).
 
 ---
 
@@ -861,14 +906,14 @@ generational/
 │   ├── scripts/                    # Script Generation (models, platforms, generator, scorer)
 │   ├── assets.py · voice_profiles.py
 │   ├── knowledge.py · channels.py · pipeline.py
-├── engines/                        # 22 live + 6 planned pipeline plugins
+├── engines/                        # 23 live + 6 planned pipeline plugins
 ├── providers/                      # Swappable external backends
 │   └── trend_sources/              # Auto-discovered trend providers
 ├── ui/                             # Streamlit presentation
-├── tests/                          # 132 unit/integration tests
+├── tests/                          # 159 unit/integration tests
 └── data/                           # Runtime persistence (gitignored)
 ```
 
 ---
 
-*Last updated: v7.3.0 — Attention Graph (Attention Intelligence)*
+*Last updated: v7.4.0 — Psychology Threat Detection (Threat Intelligence)*

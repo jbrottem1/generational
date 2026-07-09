@@ -7,7 +7,7 @@ INTELLIGENCE_LIVE = {
     "research", "ideation", "psychology", "script_generation",
     "attention_graph",
     "ranking", "script",
-    "critic", "revision", "citation", "seo", "quality",
+    "critic", "revision", "citation", "seo", "threat_detection", "quality",
 }
 
 PRODUCTION_LIVE = {
