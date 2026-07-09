@@ -470,6 +470,29 @@ Additive only — append fields; never rename/remove.
 
 ---
 
+## 9.2 Studio project metadata (Agent 20)
+
+Studio projects extend the base project dict in `data/projects/{slug}.json`:
+
+| Field | Type | Notes |
+|---|---|---|
+| `folder` | str | Workspace folder (default `"General"`) |
+| `tags` | list[str] | User tags for filtering |
+| `platform` | str | Studio platform id (e.g. `youtube_shorts`) |
+| `archived` | bool | Archive flag |
+| `studio_settings` | dict | Production settings (voice, style, pacing, etc.) |
+| `pipeline_state` | dict | Last pipeline visualization snapshot |
+| `longform_job_id` | str | Active long-form checkpoint job id |
+
+Settings preview (`build_settings_preview`): `command`, `platform`,
+`video_length_sec`, `voice`, `narrator`, `visual_style`, `camera_style`,
+`music_style`, `pacing`, `target_audience`, `language`, `brand`,
+`quality_level`, `budget_usd`, `preferred_providers`, `longform`.
+
+See `STUDIO_UI.md`.
+
+---
+
 ## 10. Change protocol
 
 1. Appending a ContentPackage field: add to the dataclass **and**

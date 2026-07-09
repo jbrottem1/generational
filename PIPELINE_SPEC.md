@@ -126,6 +126,20 @@ selects providers by capability, handles fallback/retries, and logs usage.
 Long-form productions use `RuntimeExecutionEngine` with checkpoint resume.
 See `PROVIDER_INTEGRATION.md`.
 
+---
+
+## Studio UI Layer (Agent 20)
+
+The Creative Studio (`ui/tabs/studio.py`, `services/studio/`) is the primary
+user interface. It does not run pipeline stages directly — it calls:
+
+- `services/studio/run_studio_production()` → `ideation.run_command()` → Orchestrator
+- `services/studio/get_provider_dashboard()` → `ProviderRuntime`
+- `services/studio/submit_longform_job()` → job queue + `RuntimeExecutionEngine`
+
+Pipeline visualization maps orchestrator `StageReport` objects to the 12-stage
+Studio view. See `STUDIO_UI.md`.
+
 ## Workflow Executor Layer (Agent 21)
 
 One-prompt production runs are managed by

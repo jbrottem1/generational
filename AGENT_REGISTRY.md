@@ -61,11 +61,21 @@ Companions: `ENGINE_REGISTRY.md` · `SYSTEM_DEPENDENCY_MAP.md` ·
 
 ---
 
-## 3. Planned Agents (20)
+## 3. Planned Agents (22+)
 
 | Agent | Subsystem | Reserved key | Integrates via |
 |---|---|---|---|
-| **20** | Autonomous Executive | `autonomous_executive` | `OrchestratorHook` + job queue only |
+| **22** | Autonomous Executive | `autonomous_executive` | `OrchestratorHook` + job queue only |
+
+### Agent 20 — Studio UI & Creative Workspace (LIVE)
+
+| Agent | Subsystem | Key | Integrates via |
+|---|---|---|---|
+| **20** | Studio UI & Creative Workspace | `studio` (service + UI) | `services/studio/` + `ui/tabs/studio.py` → Orchestrator + ProviderRuntime |
+
+Primary user interface: project workspace, creative prompt panel, pipeline
+visualization, live previews, settings, provider status, output library,
+executive dashboard. See `STUDIO_UI.md`.
 
 ### Agent 21 — End-to-End Workflow Executor (LIVE)
 
@@ -102,8 +112,9 @@ Reserved for future BI: `business_intelligence` engine key.
 | Intelligence | Measure, forecast, learn, experiment | 10–13 |
 | Media Generation | Assets, characters, universes, motion, edit | 14–17 |
 | Direction | AI direction, executive creative strategy | **18** |
+| Interface | Studio UI, creative workspace | **20** |
 | Infrastructure | Provider integration, runtime, workflow execution | **19**, **21** |
-| Executive (planned) | Autonomous operation | 20 |
+| Executive (planned) | Autonomous operation | 22 |
 
 ---
 

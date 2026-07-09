@@ -1,6 +1,6 @@
 """Shared constants for Generational."""
 
-APP_VERSION = "9.9.0"
+APP_VERSION = "9.12.0"
 
 MODEL_OPTIONS = ["gpt-4o-mini", "gpt-4o", "gpt-3.5-turbo"]
 DEFAULT_MODEL = "gpt-4o-mini"

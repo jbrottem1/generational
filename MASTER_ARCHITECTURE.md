@@ -381,6 +381,10 @@ src/
   models/               # Core data objects (Section 5) — the stage contracts
   services/             # Orchestration (services/orchestrator/ — see ORCHESTRATOR.md), provider runtime (services/provider_runtime/), pipelines, job queue, storage
   ui/                   # Streamlit views — display only, zero business logic
+    tabs/studio.py      # Agent 20 — Creative Studio (primary workspace)
+    studio/             # Studio UI components (pipeline, previews, dashboard)
+  services/
+    studio/             # Agent 20 — Studio service adapter (Orchestrator + ProviderRuntime)
   tests/                # Mirrors src/ — one test module per engine minimum
 docs/                   # Architecture docs, decisions, session summaries
 ```

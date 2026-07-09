@@ -168,7 +168,13 @@ distribution pipeline after render, before seo. See
 | `business_intelligence` | name reserved | Future BI & Monetization |
 | `provider_runtime` | service (Agent 19) | Provider Integration & Runtime — see `PROVIDER_INTEGRATION.md` |
 | `workflow_executor` | service (Agent 21) | End-to-End Workflow Executor — see `WORKFLOW_EXECUTOR.md` |
-| `autonomous_executive` | name reserved | Agent 20 — Autonomous Executive |
+| `autonomous_executive` | name reserved | Agent 22 — Autonomous Executive |
+
+## Studio service (Agent 20 — LIVE)
+
+Not an engine — a **service + UI layer** (`services/studio/`, `ui/tabs/studio.py`).
+Integrates via `ideation.run_command()` (Orchestrator) and `ProviderRuntime`.
+No engine key; listed here for discoverability. See `STUDIO_UI.md`.
 
 > Note: the earlier reserved name `ip_management` is **retired** in favor
 > of `character_universe` (Agent 15's actual engine key).

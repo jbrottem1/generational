@@ -4,6 +4,22 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.12 — Creative Studio UI (Agent 20)
+
+Primary interface for the Generational platform — project workspace, creative
+prompt panel, pipeline visualization, live previews, provider status, output
+library, and executive dashboard.
+
+```bash
+streamlit run app.py
+# Open the 🎬 Studio tab
+```
+
+Service layer: `services/studio/` (UI adapter over Orchestrator + ProviderRuntime).
+UI: `ui/tabs/studio.py`, `ui/studio/components.py`.
+
+See [`STUDIO_UI.md`](STUDIO_UI.md).
+
 ## Version 9.11 — End-to-End Workflow Executor (Agent 21)
 
 One user prompt becomes a managed production run — durable `ProjectRun` state,
