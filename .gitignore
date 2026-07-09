@@ -19,3 +19,6 @@ data/projects/*/knowledge/
 .pytest_cache/
 .DS_Store
 .worktrees/
+
+# ProviderRuntime response cache (local)
+data/provider_runtime/cache/
