@@ -53,7 +53,10 @@ orchestrator at the end of every full run; see
 `trend_forecasts`, `trend_classifications`, `opportunity_recommendations`,
 `trend_intelligence_report` (v9.1 — **Agent 11**, written by the
 `trend_forecasting` engine after opportunity ranking; see §2.2 and
-`TREND_INTELLIGENCE.md`).
+`TREND_INTELLIGENCE.md`),
+`market_opportunities`, `market_roadmap`, `market_intelligence_report`
+(v9.5 — **Agent 11**, written by the `market_intelligence` engine after
+trend forecasting; see §2.3 and `MARKET_INTELLIGENCE.md`).
 
 Future engines declare which keys they consume/produce via
 `input_contract` / `output_contract` on `ContractEngine`.
@@ -90,6 +93,29 @@ enriched shapes are served on demand by the `OpportunityFeed`
 (`services/trend_intelligence/feed.py`): `top_opportunity` / `top(n)` /
 `emerging` / `evergreen` / `for_platform` / `highest_roi` /
 `highest_confidence`. See `TREND_INTELLIGENCE.md`.
+
+---
+
+## 2.3 Market intelligence contracts (Agent 11) — `services/market_intelligence/models.py`
+
+The `market_intelligence` engine (runs inside the trend stage, after
+`trend_forecasting`) emits three additive context keys; the field tuples
+in `services/market_intelligence/models.py` are the testable contract:
+
+| Context key | Shape | Contract |
+|---|---|---|
+| `market_opportunities` | list of MarketOpportunity dicts, sorted by priority | `MARKET_OPPORTUNITY_FIELDS`: opportunity_id, platform, topic, category, audience, language, region, difficulty, confidence, roi_estimate, competition_score, trend_score, forecast_score, priority, recommended_publish_window, recommended_content_length, recommended_content_type, content_nature, strategic_actions, forecast (`MARKET_FORECAST_FIELDS`), competition (`COMPETITION_PROFILE_FIELDS`), signals |
+| `market_roadmap` | dict | `ROADMAP_FIELDS`: daily, weekly, monthly, quarterly_strategy, queues (evergreen/trending/high_roi/low_competition), calendar (`CALENDAR_ENTRY_FIELDS`) |
+| `market_intelligence_report` | dict | `MARKET_REPORT_FIELDS`: executive_summary, opportunity_report, trend_forecast_report, competition_report, roi_report, platform_opportunity_report, quality, learning |
+
+`strategic_actions` values come from `STRATEGIC_ACTION.ALL`
+(publish_immediately, monitor, delay, expand_into_series,
+repurpose_existing_content, translate, localize, create_long_form_version,
+create_short_form_version, create_multiple_variants). MarketOpportunity
+objects are strategy only — never scripts or creative assets. The same
+answers are served on demand by the department singleton
+(`services/market_intelligence/department.py`). See
+`MARKET_INTELLIGENCE.md`.
 
 ---
 

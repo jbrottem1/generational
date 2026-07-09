@@ -31,7 +31,7 @@ engine-to-engine dependency fails the test suite.
 | **Agent 8** | SEO & Global Trend Optimization | `engines/seo/` landing zone — see its README |
 | **Agent 9** | Analytics & Learning | `engines/analytics/` landing zone — see its README |
 | **Agent 10** | Multi-Brand Operating System | `engines/brands/` landing zone — see its README |
-| **Agent 11** | Trend Discovery & Forecasting | Forecasting, classification, recommendations, trend QC, opportunity feed — see `TREND_INTELLIGENCE.md` |
+| **Agent 11** | Market Intelligence & Forecasting | Forecasting, classification, recommendations, trend QC, opportunity feed, competition analysis, ROI, strategy, roadmap, reports — see `TREND_INTELLIGENCE.md` and `MARKET_INTELLIGENCE.md` |
 
 Agent 1 also acts as the reviewer for changes to shared files (see §2.3).
 
@@ -52,7 +52,7 @@ Agent 1 also acts as the reviewer for changes to shared files (see §2.3).
 | **Agent 8** | **SEO-optimization files only:** `engines/seo/` (NOT the live `engines/seo.py`) · `services/seo/` · SEO providers · `tests/test_seo_optimization.py` |
 | **Agent 9** | **Analytics/learning files only:** `engines/analytics/` · `engines/analytics.py` · `engines/learning.py` · `services/analytics/` · `services/learning/` · analytics providers · analytics/learning tests |
 | **Agent 10** | **Brand/account/channel files only:** `engines/brands/` · `services/brands/` · `tests/test_brand_management.py` (extends `services/channels.py` with caution) |
-| **Agent 11** | **Trend-intelligence files only:** `engines/trend_forecasting.py` · `services/trend_intelligence/` · `tests/test_trend_forecasting.py` · `TREND_INTELLIGENCE.md` · new drop-in provider modules under `providers/trend_sources/` (never `base.py` / `_demo.py` / Agent 1's existing providers) |
+| **Agent 11** | **Trend/market-intelligence files only:** `engines/trend_forecasting.py` · `engines/market_intelligence.py` · `services/trend_intelligence/` · `services/market_intelligence/` · `tests/test_trend_forecasting.py` · `tests/test_market_intelligence.py` · `TREND_INTELLIGENCE.md` · `MARKET_INTELLIGENCE.md` · new drop-in provider modules under `providers/trend_sources/` (never `base.py` / `_demo.py` / Agent 1's existing providers) |
 
 Every landing-zone README (`engines/render/README.md`, `engines/publishing/README.md`,
 `engines/seo/README.md`, `engines/analytics/README.md`, `engines/brands/README.md`)
@@ -136,6 +136,7 @@ feature/seo-optimization       (Agent 8)
 feature/analytics-learning     (Agent 9)
 feature/multi-brand-os         (Agent 10)
 feature/trend-forecasting      (Agent 11)
+feature/market-intelligence    (Agent 11)
 ```
 
 - Rebase or merge `main` into the feature branch before opening a PR so conflicts are resolved by the branch owner, not the reviewer.

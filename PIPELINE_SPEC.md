@@ -22,6 +22,11 @@ Trend Forecasting          LIVE      Agent 11 — engines: trend_forecasting
    ↓                                  classifications, structured
    ↓                                  recommendations — see
    ↓                                  TREND_INTELLIGENCE.md)
+Market Intelligence        LIVE      Agent 11 — engines: market_intelligence
+   ↓                                 (competition analysis, market
+   ↓                                  forecasts, ROI, strategic actions,
+   ↓                                  content roadmap + reports — see
+   ↓                                  MARKET_INTELLIGENCE.md)
 Research + Ideation        LIVE      engines: research, ideation
    ↓
 Psychology & Virality      LIVE      engines: psychology
@@ -143,7 +148,7 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
 
 | Stage | Engine keys | Status | Owner |
 |---|---|---|---|
-| trend | trend_discovery, opportunity_ranking, trend_forecasting | live | Agent 1 · **Agent 11** (trend_forecasting) |
+| trend | trend_discovery, opportunity_ranking, trend_forecasting, market_intelligence | live | Agent 1 · **Agent 11** (trend_forecasting, market_intelligence) |
 | research | research, ideation | live | Agent 1 |
 | psychology | psychology | live | Agent 2 |
 | script | script_generation | live | Agent 3 |

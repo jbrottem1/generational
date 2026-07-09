@@ -4,6 +4,37 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.5 — Market Intelligence Department (Agent 11)
+
+The company's strategic planning engine is live. Everything Generational
+creates now begins with the Market Intelligence Department: 18 signal
+providers (7 new: academic publications, product launches, AI research,
+GitHub, developer communities, podcast rankings, search volume) feed a
+full market-analysis chain — competition analysis, pluggable market
+forecast models, ROI estimation, an evergreen engine, and strategic
+actions — producing priority-ranked `MarketOpportunity` objects, a
+content roadmap (daily/weekly/monthly, quarterly strategy, four queues,
+a dated publishing calendar), and an executive report suite. Analytics
+history calibrates every prediction through a learning bridge, so the
+department gets smarter with every published item. Structured
+opportunities only — never scripts, never creative assets.
+
+```python
+from services.market_intelligence import get_market_intelligence
+
+department = get_market_intelligence()
+department.highest_priority_opportunity("sleep science")   # what to create next
+department.top_opportunities("sleep science", n=10)
+department.evergreen_opportunities("sleep science")
+department.publishing_calendar("sleep science")
+department.market_report("sleep science")                  # executive summary
+```
+
+In the pipeline, the `market_intelligence` engine runs inside the trend
+stage after `trend_forecasting` and writes `market_opportunities`,
+`market_roadmap`, and `market_intelligence_report` to the shared context
+(additive only). See `MARKET_INTELLIGENCE.md`.
+
 ## Version 9.2 — Analytics & Continuous Learning Engine (Agent 9)
 
 The system now observes its own performance and gets smarter with every

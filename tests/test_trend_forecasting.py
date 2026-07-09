@@ -482,6 +482,6 @@ def test_orchestrated_trend_stage_includes_forecasting():
     report = get_orchestrator().run_trend_stage(context)
     assert report.status == StageStatus.SUCCESS
     engines_run = [step["engine"] for step in report.diagnostics["steps"]]
-    assert engines_run == ["trend_discovery", "opportunity_ranking", "trend_forecasting"]
+    assert engines_run[:3] == ["trend_discovery", "opportunity_ranking", "trend_forecasting"]
     assert context["trend_forecasts"]
     assert context["trend_intelligence_report"]

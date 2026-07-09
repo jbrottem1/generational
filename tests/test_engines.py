@@ -4,6 +4,7 @@ from engines.base import PlannedEngine
 
 INTELLIGENCE_LIVE = {
     "trend_discovery", "opportunity_ranking", "trend_forecasting",
+    "market_intelligence",
     "research", "ideation", "psychology", "script_generation",
     "visual_intelligence", "voice_audio", "attention_graph",
     "ranking", "script",

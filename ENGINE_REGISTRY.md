@@ -26,7 +26,7 @@ truth at runtime; this document is its map.
 ## Live engines (intelligence)
 
 `trend_discovery` · `opportunity_ranking` · `trend_forecasting` ·
-`research` · `ideation` ·
+`market_intelligence` · `research` · `ideation` ·
 `psychology` · `script_generation` · `visual_intelligence` · `voice_audio` ·
 `attention_graph` · `ranking` · `script` · `critic` · `revision` ·
 `citation` · `seo` · `threat_detection` · `quality`
@@ -42,6 +42,21 @@ and `trend_intelligence_report` (see `DATA_CONTRACTS.md` §2.2 and
 `TREND_INTELLIGENCE.md`). New trend sources auto-discover from
 `providers/trend_sources/`; the on-demand query surface is the
 `OpportunityFeed` (`services/trend_intelligence/feed.py`).
+
+## Live engine (market intelligence — Agent 11)
+
+`market_intelligence` — the Market Intelligence Department
+(`engines/market_intelligence.py`, logic in
+`services/market_intelligence/`). Subclasses `ContractEngine`, runs
+deterministically inside the trend stage right after `trend_forecasting`,
+and produces `market_opportunities`, `market_roadmap`, and
+`market_intelligence_report` (see `DATA_CONTRACTS.md` §2.3 and
+`MARKET_INTELLIGENCE.md`). It layers competition analysis, pluggable
+market forecast models, ROI estimation, an evergreen engine, strategic
+actions, roadmap/queue/calendar generation, and executive reporting on
+top of the ranked opportunities — calibrated by Agent 9's analytics
+history via the learning bridge. The on-demand query surface is
+`get_market_intelligence()` (`services/market_intelligence/department.py`).
 
 ## Live engines (media production)
 
