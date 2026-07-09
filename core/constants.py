@@ -1,12 +1,13 @@
 """Shared constants for Generational."""
 
-APP_VERSION = "7.1.0"
+APP_VERSION = "7.3.0"
 
 MODEL_OPTIONS = ["gpt-4o-mini", "gpt-4o", "gpt-3.5-turbo"]
 DEFAULT_MODEL = "gpt-4o-mini"
 
 IDEAS_PER_BATCH = 10
 CANDIDATE_IDEAS = 20  # candidates generated before ranking selects the best
+SCRIPT_VARIANTS_PER_IDEA = 3  # stylistic script variants generated per candidate
 DEFAULT_PUBLISH_THRESHOLD = 70
 
 RESEARCH_PROVIDERS = [
@@ -83,7 +84,9 @@ PUBLISHING_PLATFORMS = [
     ("▶️", "YouTube Shorts"),
     ("🎵", "TikTok"),
     ("📸", "Instagram Reels"),
+    ("📘", "Facebook Reels"),
     ("🐦", "X (Twitter)"),
+    ("🎬", "YouTube Long-form"),
 ]
 
 PUBLISHING_COMING_SOON = [

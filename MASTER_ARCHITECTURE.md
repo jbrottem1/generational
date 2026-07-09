@@ -1,7 +1,7 @@
 # Generational — Master Architecture
 
-**Current version:** v7.1.0  
-**Status:** Source-backed research platform with a 18-dimension Psychology & Virality Engine, citation engine, and multi-factor quality gate  
+**Current version:** v7.3.0  
+**Status:** Source-backed research platform with an 18-dimension Psychology & Virality Engine, a multi-variant multi-platform Script Generation Engine, a 12-dimension Attention Graph, citation engine, and multi-factor quality gate  
 **Entry point:** `app.py` (Streamlit shell only — no business logic)
 
 This document is the canonical architecture reference for Generational. It describes how the system is built today, how to extend it safely, and how the team develops using ChatGPT, Claude, and Cursor.
@@ -39,13 +39,15 @@ The goal is not to automate one YouTube channel. The goal is software that opera
 
 ### What exists today
 
-Generational v7.1 is a modular platform with:
+Generational v7.3 is a modular platform with:
 
 - A **Trend Discovery Engine** — the front door: auto-discovered trend providers, a universal Trend model, and 0-100 Opportunity Scoring that gates what enters the pipeline
 - A **Psychology & Virality Engine** — scores every candidate idea across 18 attention-science dimensions, blends them into a weighted 0-100 ViralScore, and produces a plain-English psychology report explaining why
+- A **Script Generation Engine** — runs immediately after Psychology: every candidate gets multiple stylistically distinct, platform-aware script variants (13 storytelling components each: hook, pattern interrupt, curiosity loop, core story, emotional progression, retention checkpoints, CTA, SEO keywords, B-roll, AI visual prompts, sound effects, music style, estimated runtime), scored 0-100 across six weighted factors, best variant wins
+- An **Attention Graph Engine** — scores every candidate across 12 attention dimensions into a radar-chart-ready profile plus a weighted 0-100 Attention Score, with a concrete recommendation for raising every dimension
 - A **Knowledge Engine** with live Wikipedia, PubMed, arXiv, and Crossref connectors
 - A **Citation Engine** that maps scripts to sources and flags unsupported claims
-- An **Intelligence Pipeline** (12 stages) from trend discovery and opportunity ranking through ideas, psychology, scripts, critique, citation, SEO, and quality
+- An **Intelligence Pipeline** (14 stages) from trend discovery and opportunity ranking through ideas, psychology, script generation, attention graph, ranking, critique, citation, SEO, and quality
 - A **Media Production Pipeline** that turns approved scripts into render-ready packages
 - A **Provider System** that keeps all vendor integrations swappable
 - A **Job Queue + Workflow Engine** that coordinates every stage without tight coupling
@@ -105,7 +107,7 @@ Every stage in this chain already has a registered engine key (live or planned s
                                │
 ┌──────────────────────────────▼──────────────────────────────┐
 │  Engine Registry (engines/registry.py)                      │
-│  20 live engines · 6 planned stubs                           │
+│  22 live engines · 6 planned stubs                           │
 └──────────────────────────────┬──────────────────────────────┘
                                │
 ┌──────────────────────────────▼──────────────────────────────┐
@@ -172,8 +174,9 @@ services/ideation.run_command()
     │       → cache by topic (data/research_cache/)
     │       │
     │       ▼
-    │   Stages 3–12: Intelligence Pipeline
-    │       ideation → psychology → ranking → script →
+    │   Stages 3–14: Intelligence Pipeline
+    │       ideation → psychology → script_generation →
+    │       attention_graph → ranking → script (fallback) →
     │       critic → revision → citation → seo → quality
     │       │
     │       ▼
@@ -207,10 +210,15 @@ Every engine receives and returns updates to a shared `context: dict`. Key field
 | `trend_keywords` | Opportunity Ranking | Ideation prompt |
 | `research` | Research | Ideation, Script, Quality, UI |
 | `research_references` | Research | Script (traceability) |
-| `candidates` | Ideation | Psychology, Ranking |
-| `candidates[].psychology`, `.psychology_score`, `.viral_score`, `.psychology_report` | Psychology | Ranking, Quality, UI (idea card report expander) |
+| `candidates` | Ideation | Psychology, Script Generation, Ranking |
+| `candidates[].psychology`, `.psychology_score`, `.viral_score`, `.psychology_report` | Psychology | Script Generation, Ranking, Quality, UI (idea card report expander) |
 | `psychology_summary` | Psychology | UI, diagnostics |
-| `ranked_candidates`, `selected_ideas` | Ranking | Script, SEO, Quality |
+| `candidates[].script_variants`, `.script`, `.cta`, `.script_score`, `.script_style`, `.estimated_runtime_sec`, `.retention_checkpoints`, `.broll_suggestions`, `.visual_prompts`, `.sound_effects`, `.music_style` | Script Generation | Ranking, Critic, Citation, Quality, Production, UI |
+| `script_generation_summary` | Script Generation | UI, diagnostics |
+| `target_platform`, `script_variant_count` | Caller (optional) | Script Generation |
+| `candidates[].attention_graph` (`.scores`, `.attention_score`, `.radar_chart`, `.recommendations`) | Attention Graph | Ranking, UI (radar chart expander) |
+| `attention_graph_summary` | Attention Graph | UI, diagnostics |
+| `ranked_candidates`, `selected_ideas` | Ranking | Script (fallback), SEO, Quality |
 | `ideas` | Quality | Production, UI, Knowledge Base |
 | `quality_summary` | Quality | UI, Production filter |
 | `approved_content` | Production service | Media production engines |
@@ -304,7 +312,7 @@ class Engine(ABC):
     def run(self, context: dict) -> dict: ...  # returns merge updates
 ```
 
-### Intelligence Pipeline (12 live engines)
+### Intelligence Pipeline (14 live engines)
 
 | Key | Module | Responsibility |
 |---|---|---|
@@ -313,8 +321,10 @@ class Engine(ABC):
 | `research` | `engines/research.py` | Knowledge Engine — live APIs + demo fallback; produces Research Brief |
 | `ideation` | `engines/ideation.py` | Generates 20 candidate concepts grounded in research brief |
 | `psychology` | `engines/psychology.py` | Psychology & Virality Engine — scores candidates on 18 attention dimensions, blends a weighted ViralScore (0-100), and produces a psychology report (deterministic) |
-| `ranking` | `engines/ranking.py` | Weighted ranking; selects top N for scripting |
-| `script` | `engines/script.py` | Writes 15–30s voiceover scripts from research facts |
+| `script_generation` | `engines/script_generation.py` | Script Generation Engine — runs immediately after Psychology; multi-style, platform-aware script variants per candidate (13 storytelling components), scored 0-100, best variant attached; delegates to `services/scripts/` |
+| `attention_graph` | `engines/attention_graph.py` | Attention Graph Engine — scores candidates on 12 attention dimensions, blends a weighted Attention Score (0-100), and returns a radar-chart payload plus per-dimension recommendations (deterministic) |
+| `ranking` | `engines/ranking.py` | Weighted ranking (psychology 50% + opportunity 30% + script quality 20%); selects top N |
+| `script` | `engines/script.py` | Fallback scriptwriter — covers ideas that reach ranking unscripted; never overwrites generated variants |
 | `critic` | `engines/critic.py` | Adversarial review — flags weak hooks, repetition, pacing |
 | `revision` | `engines/revision.py` | Auto-rewrites flagged sections |
 | `citation` | `engines/citation.py` | Maps scripts to sources; claim confidence; unsupported claim warnings |
@@ -356,6 +366,38 @@ without first passing through a measurable model of human attention.
   audience identity, community appeal, bounded controversy) from the 18
   dimensions, so the publish gate rewards concepts built to spread — not
   just to be watched once.
+
+### Attention Graph (deep dive)
+
+`engines/attention_graph.py` is Phase 2 of the attention-engineering stack. It
+runs after Script Generation and before Ranking, giving every candidate a
+radar-chart-ready profile of the moment-to-moment attention mechanics a
+finished video would need to execute.
+
+- **12 dimensions** (`score_dimensions()`): first-3-second hook, curiosity
+  gap, dopenness, emotional intensity, story tension, surprise, visual
+  novelty, shareability, rewatch probability, comment likelihood, identity
+  signaling, tribal engagement. Nine dimensions reuse the already-tested
+  Phase 1 psychology scorer so the two phases stay consistent; three are new
+  to this phase — **dopenness** (how quickly and openly the concept opens an
+  anticipatory reward loop for a broad, low-jargon audience), **story
+  tension** (turning-point language and setup/twist structure), and
+  **visual novelty** (concrete, filmable transformation/reveal cues) — all
+  backed by new word banks in `engines/heuristics.py`.
+- **Attention Score** (`attention_score()`): the 12 dimensions blend into one
+  weighted 0-100 score via `ATTENTION_GRAPH_WEIGHTS` — data, not code, so the
+  future Learning Engine can retune weights from real performance results.
+- **Radar chart payload** (`radar_chart()`): labels + scores arrays consumed
+  by `ui/components.attention_radar_chart()`, which renders a Plotly
+  Scatterpolar chart (falls back to a plain score list if `plotly` isn't
+  installed) inside a compact "🕸️ Attention Graph" expander on the idea card
+  — no new UI pages.
+- **Recommendations** (`build_recommendations()`): a concrete, dimension-
+  specific suggestion for raising every one of the 12 scores, surfaced
+  weakest-first in the same expander.
+- Attached to every candidate as `attention_graph` (`scores`, `attention_score`,
+  `radar_chart`, `recommendations`); a batch `attention_graph_summary` is
+  attached to the pipeline context for diagnostics.
 
 ### Media Production Pipeline (8 live engines)
 
@@ -489,6 +531,7 @@ Services are the public API between UI and infrastructure.
 | Production | `services/production.py` | Runs media_production workflow; builds production dashboard |
 | Research | `services/research/` | Knowledge Engine — manager, cache, scorer, summarizer, models |
 | Trends | `services/trends/` | Trend Discovery — universal Trend model, 11-factor opportunity scorer, discovery manager |
+| Scripts | `services/scripts/` | Script Generation — `PlatformSpec` for 6 platforms, `ScriptVariant` model (13 components), deterministic multi-style generator, 6-factor variant scorer, `generate_script_package()` standalone API |
 | Assets | `services/assets.py` | Asset registry + publishing queue persistence |
 | Voice Profiles | `services/voice_profiles.py` | Profile CRUD, recording metadata, style presets |
 | Knowledge | `services/knowledge.py` | Append-only JSON memory (hooks, titles, scripts, research briefs) |
@@ -573,6 +616,7 @@ The Streamlit UI is intentionally stable across versions. Major releases add **c
 | **v6.0** | Real Research + Citation | Live Wikipedia/PubMed/arXiv/Crossref APIs, Citation Engine, multi-factor quality gate |
 | **v7.0** | Trend Discovery Engine | Auto-discovered trend provider registry, universal Trend model, 11-factor Opportunity Scoring, pipeline front door, Trend Dashboard |
 | **v7.1** | Psychology & Virality Engine | 18-dimension attention scoring, weighted ViralScore, per-idea psychology report, virality-aware Quality Gate |
+| **v7.2** | Script Generation Engine | Multi-variant multi-style scripts for 6 platforms, 13 storytelling components per script, 6-factor variant scoring, runs immediately after Psychology, script quality feeds ranking |
 
 *(v3.0 was skipped in release numbering.)*
 
@@ -634,6 +678,7 @@ python -m pytest
 | `tests/test_intelligence_pipeline.py` | End-to-end intelligence pipeline |
 | `tests/test_psychology_engine.py` | Psychology & Virality Engine — 18 dimensions, ViralScore weights, determinism, report shape, pipeline integration |
 | `tests/test_citation_engine.py` | Citation engine + multi-factor quality gate |
+| `tests/test_script_generation.py` | Script Engine — platform specs, 13-component variants, deterministic scoring, pipeline position, ranking blend, fallback behavior |
 | `tests/test_trend_discovery.py` | Trend provider auto-discovery, universal model, opportunity scoring, pipeline integration |
 | `tests/test_media_production.py` | Production pipeline and dashboard |
 | `tests/test_providers.py` | Voice provider factory |
@@ -660,7 +705,7 @@ python -m pytest
 
 ### Current Baseline
 
-**103 tests passing** (as of v7.1.0).
+**117 tests passing** (as of v7.2.0).
 
 ---
 
@@ -811,16 +856,17 @@ generational/
 │   ├── production.py               # Media production orchestrator
 │   ├── research/                   # Knowledge Engine
 │   ├── trends/                     # Trend Discovery (models, scorer, manager)
+│   ├── scripts/                    # Script Generation (models, platforms, generator, scorer)
 │   ├── assets.py · voice_profiles.py
 │   ├── knowledge.py · channels.py · pipeline.py
-├── engines/                        # 20 live + 6 planned pipeline plugins
+├── engines/                        # 21 live + 6 planned pipeline plugins
 ├── providers/                      # Swappable external backends
 │   └── trend_sources/              # Auto-discovered trend providers
 ├── ui/                             # Streamlit presentation
-├── tests/                          # 90 unit/integration tests
+├── tests/                          # 117 unit/integration tests
 └── data/                           # Runtime persistence (gitignored)
 ```
 
 ---
 
-*Last updated: v7.1.0 — Psychology & Virality Engine*
+*Last updated: v7.2.0 — Script Generation Engine*

@@ -29,15 +29,20 @@ class StepStatus:
 WORKFLOWS = {
     "ideation": ["ideation"],
     # The intelligence pipeline: trend discovery → opportunity ranking →
-    # research → 20 candidates → psychology scoring → weighted ranking →
-    # scripts for the best only → critic → revision → citation → SEO
-    # packaging → final quality scores + publish gate.
+    # research → 20 candidates → psychology scoring → script generation
+    # (multiple scored variants per candidate, immediately after psychology)
+    # → attention graph (12-dimension radar + recommendations, Phase 2) →
+    # weighted ranking (psychology + opportunity + script quality) →
+    # script fallback for anything unscripted → critic → revision →
+    # citation → SEO packaging → final quality scores + publish gate.
     "intelligence": [
         "trend_discovery",
         "opportunity_ranking",
         "research",
         "ideation",
         "psychology",
+        "script_generation",
+        "attention_graph",
         "ranking",
         "script",
         "critic",
@@ -52,6 +57,8 @@ WORKFLOWS = {
         "research",
         "ideation",
         "psychology",
+        "script_generation",
+        "attention_graph",
         "ranking",
         "script",
         "critic",

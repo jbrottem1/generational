@@ -2,9 +2,9 @@
 
 This is the attention-engineering core of the Intelligence Pipeline. It runs
 immediately after Ideation (which itself runs after Trend Discovery) and
-before every candidate is ranked and handed to Script Generation, so nothing
-gets scripted, produced, or published without first passing through a
-measurable model of human attention.
+immediately before Script Generation and Ranking, so nothing gets scripted,
+produced, or published without first passing through a measurable model of
+human attention.
 
 Every candidate is scored across 18 behavioral-psychology / attention
 dimensions (curiosity gap, emotional intensity, surprise, novelty, fear,

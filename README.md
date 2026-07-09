@@ -4,6 +4,97 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 7.3 — Attention Intelligence (Attention Graph)
+
+Phase 2 of the attention-engineering stack. Every idea now gets an
+**Attention Graph** — a 12-dimension radar-chart-ready score, a single
+weighted 0-100 Attention Score, and a concrete recommendation for raising
+every dimension (not just the weak ones).
+
+### 12 dimensions (`engines/attention_graph.py`)
+
+First 3-Second Hook · Curiosity Gap · Dopenness · Emotional Intensity ·
+Story Tension · Surprise · Visual Novelty · Shareability · Rewatch
+Probability · Comment Likelihood · Identity Signaling · Tribal Engagement.
+
+Nine of the twelve reuse the already-tested Phase 1 psychology dimension
+scorer so the two phases stay consistent. Three are new to this phase:
+
+- **Dopenness** — how quickly and openly the concept opens an anticipatory
+  dopamine/reward loop for a broad, low-jargon audience
+- **Story Tension** — turning-point language and setup/twist structure
+- **Visual Novelty** — concrete, filmable transformation and reveal cues
+
+### Attention Score + radar chart
+
+The 12 dimensions blend into one weighted **Attention Score** (0-100) via
+`ATTENTION_GRAPH_WEIGHTS`. Every idea card in the Ideas tab gets a compact
+"🕸️ Attention Graph" expander with a Plotly radar chart of all 12
+dimensions (falls back to a plain score list if `plotly` isn't installed)
+plus a recommendation for increasing every score, sorted weakest-first.
+
+### Pipeline integration
+
+```
+Trend Discovery → Opportunity Ranking → Research → Ideation
+    → Psychology & Virality (18 dimensions → ViralScore)
+    → Script Generation (multi-variant, multi-style, scored)
+    → Attention Graph (12 dimensions → radar chart + recommendations)
+    → Ranking → Critic → Revision → Citation → SEO → Quality Gate
+```
+
+## Version 7.2 — Script Generation Engine
+
+v7.2 rebuilds scriptwriting into a modular **Script Generation Engine** that
+runs immediately after the Psychology & Virality Engine. Instead of one
+script per winning idea, every psychology-scored candidate receives multiple
+stylistically distinct, platform-aware script variants — each scored 0-100 —
+and the best telling wins before ranking even happens.
+
+### Supported platforms (`services/scripts/platforms.py`)
+
+YouTube Shorts · TikTok · Instagram Reels · Facebook Reels · X (Twitter)
+video · Long-form YouTube. Each platform is a data-driven `PlatformSpec`
+(runtime window, narration pacing, tone, hook window, CTA style) — adding or
+tuning a platform never touches generation or scoring logic.
+
+### Every script is a complete storytelling package
+
+Each variant carries all thirteen components:
+
+Hook · Pattern Interrupt · Curiosity Loop · Core Story · Emotional
+Progression · Retention Checkpoints (re-hooks at the 25/50/75% drop-off
+points) · Call To Action · SEO Keywords · Suggested B-roll · Suggested AI
+Visual Prompts · Suggested Sound Effects · Suggested Background Music Style ·
+Estimated Runtime.
+
+### Multiple variants, scored and ranked
+
+Four narrative archetypes compete per idea — **Authority Reveal**, **Story
+First**, **Myth Bust**, **Countdown Payoff** — plus an **AI Enhanced**
+variant for the strongest candidates when an OpenAI key is present. Every
+variant is scored deterministically across six weighted factors (hook power,
+retention engineering, emotional arc, story substance, platform fit, CTA
+strength — `VARIANT_SCORE_WEIGHTS` in `services/scripts/scorer.py`), and the
+winner becomes the candidate's script.
+
+### Pipeline integration
+
+The new `script_generation` stage runs **immediately after Psychology**, so
+the Ranking engine now weighs script quality (20%) alongside psychology
+(50%) and trend opportunity (30%) when selecting what gets produced:
+
+```
+Trend Discovery → Opportunity Ranking → Research → Ideation
+    → Psychology & Virality (18 dimensions → ViralScore)
+    → Script Generation (multi-variant, multi-style, scored)
+    → Ranking → Critic → Revision → Citation → SEO → Quality Gate
+```
+
+The previous `script` stage remains as a safety-net fallback for custom
+workflows — it never overwrites generated variants. As with every stage,
+Demo Mode runs the entire engine deterministically without an API key.
+
 ## Version 7.1 — Psychology & Virality Engine
 
 v7.1 turns the psychology stage into a full **attention-engineering system**.
@@ -311,7 +402,7 @@ A focused, copy-friendly view of the full scripts for the current batch of ideas
 Create, save, open, and delete projects. Everything is stored as local JSON — no database required for this MVP.
 
 ### 📤 Publishing
-Placeholder platform connection cards (YouTube Shorts, TikTok, Instagram Reels, X) plus a roadmap for Auto Posting, AI Voice Generation, and AI Video Creation.
+Placeholder platform connection cards (YouTube Shorts, TikTok, Instagram Reels, Facebook Reels, X, YouTube Long-form) plus a roadmap for Auto Posting, AI Voice Generation, and AI Video Creation.
 
 ### 📊 Analytics
 Session-level placeholder metrics and a roadmap for the full Analytics Dashboard and SEO Optimizer.
@@ -365,6 +456,7 @@ streamlit run app.py
 - [Streamlit](https://streamlit.io/) — UI framework
 - [OpenAI](https://openai.com/) — real AI content generation
 - [python-dotenv](https://pypi.org/project/python-dotenv/) — environment variable management
+- [Plotly](https://plotly.com/python/) — Attention Graph radar chart (optional; falls back to a plain score list if absent)
 
 ## Architecture
 
@@ -420,11 +512,12 @@ Create profiles, attach to projects, store recording metadata. Recordings
 live under `data/voice_recordings/`. Clone mode is wired but not implemented.
 
 ### Engine plugins (`engines/`)
-**18 live engines** across two pipelines. Intelligence (10): Research, Ideation,
-Psychology, Ranking, Script, Critic, Revision, Citation, SEO, Quality. Production (8):
-Scene Planning, Narration, Visual Planning, Asset Manager, Subtitle, Timeline,
-Render Package, Publishing Queue. Future render engines (Voice/Image/Video
-generation) remain as planned stubs.
+**21 live engines** across two pipelines. Intelligence (13): Trend Discovery,
+Opportunity Ranking, Research, Ideation, Psychology, Script Generation,
+Ranking, Script (fallback), Critic, Revision, Citation, SEO, Quality.
+Production (8): Scene Planning, Narration, Visual Planning, Asset Manager,
+Subtitle, Timeline, Render Package, Publishing Queue. Future render engines
+(Voice/Image/Video generation) remain as planned stubs.
 
 ### Workflow Engine (`core/workflows.py`)
 Pipelines are data, not code: a workflow is an ordered list of engine keys
@@ -502,12 +595,14 @@ generational/
 │   └── publishing_provider.py, analytics_provider.py, trend_provider.py
 ├── engines/                  # Engine plugins (intelligence + production)
 │   ├── trend_discovery.py, opportunity_ranking.py  # v7.0 front door
-│   ├── research … quality.py # Intelligence pipeline (12 live)
+│   ├── script_generation.py  # v7.2 multi-variant Script Generation Engine
+│   ├── research … quality.py # Intelligence pipeline (13 live)
 │   ├── scene_planning … publishing_queue.py  # Media production (8 live)
 │   └── voice|image|video|publishing|analytics|learning.py  # future render stubs
 ├── services/
 │   ├── research/             # Knowledge Engine (manager, cache, scorer, summarizer)
 │   ├── trends/               # Trend Discovery (models, scorer, manager)
+│   ├── scripts/              # Script Generation (models, platforms, generator, scorer)
 │   ├── ideation.py           # Intelligence pipeline orchestrator
 │   ├── production.py         # Media production orchestrator
 │   ├── assets.py             # Asset Manager + Publishing Queue

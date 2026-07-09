@@ -1,4 +1,11 @@
-"""Script engine — stage 5: write scripts only for the top-ranked concepts."""
+"""Script fallback engine — write scripts for concepts that reach ranking unscripted.
+
+Since v7.2 the Script Generation Engine (engines/script_generation.py) runs
+immediately after Psychology and attaches multi-variant scripts to every
+candidate, so in the standard intelligence pipeline this stage is a no-op
+safety net. It still fully scripts `selected_ideas` in custom workflows
+that skip script generation — nothing downstream breaks either way.
+"""
 
 from __future__ import annotations
 
@@ -13,28 +20,31 @@ class ScriptEngine(Engine):
     key = "script"
     label = "Script"
     icon = "📝"
-    description = "Generate 15-30s voiceover scripts for the selected concepts."
+    description = "Fallback scriptwriter for concepts the Script Generation Engine didn't cover."
 
     def is_ready(self) -> bool:
         return True
 
     def run(self, context: dict) -> dict:
         selected = context.get("selected_ideas", [])
-        if not selected:
-            return {}
+        # Ideas already scripted by the Script Generation Engine keep their
+        # scored best variant — this stage only covers the gaps.
+        unscripted = [idea for idea in selected if not idea.get("script")]
+        if not unscripted:
+            return {"selected_ideas": selected} if selected else {}
 
-        scripts = self._provider_scripts(context, selected)
+        scripts = self._provider_scripts(context, unscripted)
         if scripts is None:
-            scripts = [self._heuristic_script(context, idea) for idea in selected]
+            scripts = [self._heuristic_script(context, idea) for idea in unscripted]
 
-        for idea, script_data in zip(selected, scripts):
+        for idea, script_data in zip(unscripted, scripts):
             idea["script"] = script_data["script"]
             idea["cta"] = script_data.get("cta", "Follow for more like this!")
             refs = context.get("research_references")
             if refs:
                 idea["references"] = refs
 
-        log_event(logger, "script.generated", scripts=len(selected))
+        log_event(logger, "script.generated", scripts=len(unscripted))
         return {"selected_ideas": selected}
 
     def _provider_scripts(self, context: dict, selected: list) -> "list | None":

@@ -2,9 +2,9 @@
 
 Submits the command as a job to the central JobQueue, which executes the
 "intelligence" workflow (trend discovery → opportunity ranking → research →
-candidates → psychology → ranking → scripts → critic → revision → citation →
-SEO → quality gate) through the WorkflowEngine.
-Final assets are recorded into the Knowledge Base.
+candidates → psychology → script generation → ranking → script fallback →
+critic → revision → citation → SEO → quality gate) through the
+WorkflowEngine. Final assets are recorded into the Knowledge Base.
 """
 
 from __future__ import annotations

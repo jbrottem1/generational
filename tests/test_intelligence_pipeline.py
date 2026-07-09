@@ -60,11 +60,16 @@ def test_ranking_sorts_and_selects_requested_count():
     assert len(context["selected_ideas"]) == 5
 
 
-def test_scripts_generated_only_for_selected():
+def test_every_candidate_scripted_before_ranking():
+    # v7.2: the Script Generation Engine runs after Psychology and before
+    # Ranking, so every candidate carries scored script variants and ranking
+    # can weigh script quality when selecting winners.
     context = _run_pipeline()
+    for candidate in context["ranked_candidates"]:
+        assert candidate.get("script")
+        assert candidate.get("script_variants")
+        assert 0 <= candidate.get("script_score", -1) <= 100
     assert all(idea.get("script") for idea in context["selected_ideas"])
-    unselected = [c for c in context["ranked_candidates"] if c not in context["selected_ideas"]]
-    assert all("script" not in c for c in unselected)
 
 
 def test_scripts_have_citations():

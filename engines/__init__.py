@@ -10,6 +10,7 @@ from __future__ import annotations
 from engines import registry
 from engines.analytics import AnalyticsEngine
 from engines.asset_manager import AssetManagerEngine
+from engines.attention_graph import AttentionGraphEngine
 from engines.base import Engine, PlannedEngine
 from engines.citation import CitationEngine
 from engines.critic import CriticEngine
@@ -28,6 +29,7 @@ from engines.research import ResearchEngine
 from engines.revision import RevisionEngine
 from engines.scene_planning import ScenePlanningEngine
 from engines.script import ScriptEngine
+from engines.script_generation import ScriptGenerationEngine
 from engines.seo import SeoEngine
 from engines.subtitle import SubtitleEngine
 from engines.timeline import TimelineEngine
@@ -44,6 +46,8 @@ for _engine_class in (
     ResearchEngine,
     IdeationEngine,
     PsychologyEngine,
+    ScriptGenerationEngine,
+    AttentionGraphEngine,
     RankingEngine,
     ScriptEngine,
     CriticEngine,
