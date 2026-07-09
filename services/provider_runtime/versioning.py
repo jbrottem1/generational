@@ -32,6 +32,7 @@ DEFAULT_VERSIONS: dict[str, ProviderVersion] = {
     "openai_tts": ProviderVersion("openai_tts", "v1", "tts-1"),
     "anthropic": ProviderVersion("anthropic", "2023-06-01", "claude-3-5-sonnet-20241022"),
     "google_gemini": ProviderVersion("google_gemini", "v1beta", "gemini-1.5-flash"),
+    "xai": ProviderVersion("xai", "v1", "grok-2-latest"),
     "google_veo": ProviderVersion("google_veo", "v1beta", "veo-2.0-generate-001"),
     "flux": ProviderVersion("flux", "v1", "flux-pro-1.1"),
     "ideogram": ProviderVersion("ideogram", "v1", "V_2"),
@@ -41,6 +42,10 @@ DEFAULT_VERSIONS: dict[str, ProviderVersion] = {
     "kling": ProviderVersion("kling", "v1", "kling-v1"),
     "luma": ProviderVersion("luma", "v1", "ray-2"),
     "elevenlabs": ProviderVersion("elevenlabs", "v1", "eleven_multilingual_v2"),
+    "fal_ai": ProviderVersion("fal_ai", "v1", "fal-ai/flux/dev"),
+    "replicate": ProviderVersion("replicate", "v1", "black-forest-labs/flux-schnell"),
+    "comfyui": ProviderVersion("comfyui", "v1", "local-workflow"),
+    "ollama": ProviderVersion("ollama", "v1", "llama3.2"),
     "music_future": ProviderVersion("music_future", "v0", "placeholder"),
 }
 

@@ -21,9 +21,17 @@ from services.provider_runtime.connectors.video import (
 )
 from services.provider_runtime.connectors.voice import ElevenLabsConnector, OpenAITTSConnector
 from services.provider_runtime.connectors.music import FutureMusicConnector
+from services.provider_runtime.connectors.platforms import (
+    ComfyUIConnector,
+    FalConnector,
+    OllamaConnector,
+    ReplicateConnector,
+    XAIConnector,
+)
 from services.provider_runtime.connectors.publishing import (
     FacebookPublishingConnector,
     InstagramPublishingConnector,
+    LinkedInPublishingConnector,
     TikTokPublishingConnector,
     XPublishingConnector,
     YouTubePublishingConnector,
@@ -33,6 +41,7 @@ PRODUCTION_CONNECTOR_CLASSES = (
     OpenAIConnector,
     AnthropicConnector,
     GoogleGeminiConnector,
+    XAIConnector,
     OpenAIImagesConnector,
     FluxConnector,
     IdeogramConnector,
@@ -45,11 +54,16 @@ PRODUCTION_CONNECTOR_CLASSES = (
     ElevenLabsConnector,
     OpenAITTSConnector,
     FutureMusicConnector,
+    FalConnector,
+    ReplicateConnector,
+    ComfyUIConnector,
+    OllamaConnector,
     YouTubePublishingConnector,
     TikTokPublishingConnector,
     InstagramPublishingConnector,
     FacebookPublishingConnector,
     XPublishingConnector,
+    LinkedInPublishingConnector,
 )
 
 __all__ = [
@@ -58,6 +72,7 @@ __all__ = [
     "OpenAIConnector",
     "AnthropicConnector",
     "GoogleGeminiConnector",
+    "XAIConnector",
     "OpenAIImagesConnector",
     "FluxConnector",
     "IdeogramConnector",
@@ -70,9 +85,14 @@ __all__ = [
     "ElevenLabsConnector",
     "OpenAITTSConnector",
     "FutureMusicConnector",
+    "FalConnector",
+    "ReplicateConnector",
+    "ComfyUIConnector",
+    "OllamaConnector",
     "YouTubePublishingConnector",
     "TikTokPublishingConnector",
     "InstagramPublishingConnector",
     "FacebookPublishingConnector",
     "XPublishingConnector",
+    "LinkedInPublishingConnector",
 ]

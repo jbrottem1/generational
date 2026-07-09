@@ -23,8 +23,7 @@ from __future__ import annotations
 import uuid
 from abc import ABC, abstractmethod
 
-from providers.image_provider import get_image_provider
-from providers.video_provider import get_video_provider
+from services.provider_runtime.engine_api import runtime_generate_image, runtime_generate_video
 
 
 class AssetFulfiller(ABC):
@@ -59,7 +58,7 @@ class AIImageFulfiller(AssetFulfiller):
 
     def fulfil(self, request: dict) -> dict:
         asset = self._base_asset(request)
-        generated = get_image_provider().generate(
+        generated = runtime_generate_image(
             request.get("prompt", ""), {"width": 1080, "height": 1920}
         ) or {}
         asset.update(generated)
@@ -73,7 +72,7 @@ class AIVideoFulfiller(AssetFulfiller):
 
     def fulfil(self, request: dict) -> dict:
         asset = self._base_asset(request)
-        generated = get_video_provider().generate(
+        generated = runtime_generate_video(
             request.get("prompt", ""),
             float(request.get("duration_sec", 0) or 0),
             {"width": 1080, "height": 1920},

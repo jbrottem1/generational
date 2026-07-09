@@ -272,3 +272,72 @@ def test_describe_all_is_complete_and_uniform():
         for field in ("engine_id", "name", "version", "ready", "input_contract",
                       "output_contract", "dependencies", "capabilities", "description"):
             assert field in info, (info.get("engine_id"), field)
+
+
+# -------------------------------- ProviderRuntime enforcement (v9.15)
+
+
+def test_engines_do_not_import_core_ai():
+    """Engines must not call core.ai — all LLM traffic goes through ProviderRuntime."""
+    violations = []
+    for module, _package, file in _iter_engine_sources():
+        source = file.read_text(encoding="utf-8")
+        if "from core.ai" in source or "import core.ai" in source:
+            violations.append(module)
+    assert not violations, (
+        "Engines must not import core.ai (use services.provider_runtime.engine_api):\n  "
+        + "\n  ".join(violations)
+    )
+
+
+def test_engines_do_not_import_vendor_sdks():
+    """Engines must not import vendor SDKs directly."""
+    banned = (
+        "import openai",
+        "from openai",
+        "import anthropic",
+        "from anthropic",
+        "import elevenlabs",
+        "from elevenlabs",
+        "import runwayml",
+        "from runwayml",
+        "import replicate",
+        "from replicate",
+    )
+    violations = []
+    for module, _package, file in _iter_engine_sources():
+        source = file.read_text(encoding="utf-8")
+        for pattern in banned:
+            if pattern in source:
+                violations.append(f"{module}: {pattern}")
+    assert not violations, (
+        "Engines must not import vendor SDKs:\n  " + "\n  ".join(violations)
+    )
+
+
+def test_studio_production_routes_through_workflow_executor():
+    """Canonical Studio path is Workflow Executor → Orchestrator."""
+    source = (ENGINES_DIR.parent / "services" / "studio" / "production.py").read_text(
+        encoding="utf-8"
+    )
+    assert "get_workflow_executor" in source
+    assert "ideation.run_command" not in source
+    assert "run_full_pipeline" not in source
+
+
+def test_workflow_executor_supports_pause_resume_cancel():
+    from services.workflow_executor.executor import WorkflowExecutor
+    from services.workflow_executor.models import WorkflowStatus
+
+    assert hasattr(WorkflowExecutor, "pause")
+    assert hasattr(WorkflowExecutor, "resume")
+    assert hasattr(WorkflowExecutor, "cancel")
+    assert WorkflowStatus.PAUSED == "paused"
+
+
+def test_longform_supports_pause_cancel():
+    from services.provider_runtime.longform import RuntimeExecutionEngine
+
+    assert hasattr(RuntimeExecutionEngine, "pause_production")
+    assert hasattr(RuntimeExecutionEngine, "cancel_production")
+    assert hasattr(RuntimeExecutionEngine, "resume_production")

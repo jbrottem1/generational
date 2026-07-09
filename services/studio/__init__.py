@@ -1,8 +1,8 @@
 """Creative Studio service layer (Agent 20).
 
-The UI adapter over the Orchestrator, ProviderRuntime, and project storage.
-All generation flows through documented contracts — never direct engine or
-provider calls from the UI layer.
+The UI adapter over Workflow Executor, ProviderRuntime, and project storage.
+Production runs: Studio → Workflow Executor → Orchestrator → engines.
+Never call engines or vendor SDKs from the UI layer.
 """
 
 from services.studio.dashboard import get_executive_dashboard
@@ -19,6 +19,7 @@ from services.studio.previews import extract_previews
 from services.studio.production import (
     build_settings_preview,
     is_longform_command,
+    result_from_project_run,
     run_studio_production,
     submit_longform_job,
 )
@@ -50,6 +51,7 @@ __all__ = [
     "is_longform_command",
     "list_studio_projects",
     "map_stage_status",
+    "result_from_project_run",
     "run_studio_production",
     "submit_longform_job",
     "unarchive_project",

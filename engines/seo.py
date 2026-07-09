@@ -7,10 +7,10 @@ available, deterministic heuristics otherwise.
 
 from __future__ import annotations
 
-from core.ai import get_provider
 from core.log import get_logger, log_event
 from engines.base import Engine
 from engines.heuristics import CURIOSITY_WORDS, clamp, content_words, count_hits, stable_jitter
+from services.provider_runtime.engine_api import runtime_generate_json
 
 logger = get_logger(__name__)
 
@@ -60,7 +60,6 @@ class SeoEngine(Engine):
         return {"selected_ideas": selected, "seo_keywords": sorted(set(all_keywords))}
 
     def _provider_seo(self, context: dict, selected: list) -> "list | None":
-        provider = get_provider()
         items = "\n".join(f'{i}. "{idea["title"]}" — {idea["hook"]}' for i, idea in enumerate(selected, 1))
         system = "You are a short-form SEO and packaging expert. Respond with valid minified JSON only."
         user = (
@@ -71,12 +70,15 @@ class SeoEngine(Engine):
             '"description": "1-2 sentence description", '
             '"thumbnail_concept": "one sentence thumbnail concept"}]}'
         )
-        data, tokens = provider.generate_json(system, user, context.get("model", ""))
+        data, tokens, provider_name = runtime_generate_json(
+            system, user, model=context.get("model", ""), operation="generate_metadata",
+        )
         if data is None:
-            if provider.name != "demo":
+            if provider_name and provider_name != "demo":
                 context["error"] = "AI SEO call failed; used heuristic fallback."
             return None
         context["tokens_used"] = context.get("tokens_used", 0) + tokens
+        context["provider_used"] = provider_name
         items_out = data.get("items", [])
         if len(items_out) < len(selected):
             return None

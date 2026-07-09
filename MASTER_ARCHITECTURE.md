@@ -174,7 +174,8 @@ automatic selection, fallback, circuit breakers, cost tracking, parallel
 execution, and checkpointed long-form production jobs.
 
 - **Modules:** `services/provider_runtime/`, bridges to `providers/` and `core/ai/`
-- **See:** `PROVIDER_INTEGRATION.md`
+- **Engine gateway:** `services/provider_runtime/engine_api.py` (`runtime_generate_json` / image / video / voice)
+- **See:** `PROVIDER_INTEGRATION.md` · `PRODUCTION_READINESS.md`
 
 ### Agent 22: Real Provider Connectors — LANDED
 

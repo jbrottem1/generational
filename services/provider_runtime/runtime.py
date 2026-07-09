@@ -18,8 +18,10 @@ from services.provider_runtime.registry import (
     provider_catalog,
     record_health_score,
 )
+from services.provider_runtime.observability import emit_provider_metrics
+from services.provider_runtime.reliability import ProviderReliabilityManager
 from services.provider_runtime.secrets import SecretManager
-from services.provider_runtime.selection import ProviderSelectionEngine
+from services.provider_runtime.selection import ProviderSelectionEngine, get_reliability_manager, set_reliability_manager
 from services.provider_runtime.versioning import VersionManager
 
 
@@ -40,7 +42,10 @@ class ProviderRuntime:
         self._credential_overrides = credential_overrides or {}
         self._secrets = SecretManager(overrides=self._credential_overrides)
         # Sync secret-manager values into overrides so adapters see them.
-        for key in ("OPENAI_API_KEY", "ANTHROPIC_API_KEY", "GOOGLE_API_KEY"):
+        for key in (
+            "OPENAI_API_KEY", "ANTHROPIC_API_KEY", "GOOGLE_API_KEY", "XAI_API_KEY",
+            "ELEVENLABS_API_KEY", "FAL_KEY", "REPLICATE_API_TOKEN",
+        ):
             val = self._secrets.get(key)
             if val and key not in self._credential_overrides:
                 self._credential_overrides[key] = val
@@ -49,7 +54,11 @@ class ProviderRuntime:
             ttl_sec=float(self._config.get("cache_ttl_sec", 3600)),
             enabled=bool(self._config.get("cache_enabled", True)),
         )
-        self._selector = ProviderSelectionEngine()
+        self._reliability = get_reliability_manager()
+        # Apply configured weights
+        for name, weight in (self._config.get("provider_weights") or {}).items():
+            self._reliability.set_weight(str(name), float(weight))
+        self._selector = ProviderSelectionEngine(self._reliability)
         self._fallback = ProviderFallbackManager(self._selector)
         self._health = ProviderHealthMonitor(
             failure_threshold=int(self._config.get("failure_threshold", 5)),
@@ -58,6 +67,7 @@ class ProviderRuntime:
         self._cost = ProviderCostEstimator()
         self._parallel = ParallelExecutor(self._selector)
         self._rate_limiter = RateLimiter(default_rpm=int(self._config.get("rate_limit_rpm", 60)))
+        self._emit_analytics = bool(self._config.get("emit_analytics", True))
         ensure_registered()
         self._apply_credential_overrides()
 
@@ -166,6 +176,42 @@ class ProviderRuntime:
     def fallback_provider(self, capability: str, exclude: str = "") -> "ProviderAdapter | None":
         return self._selector.fallback_provider(capability, exclude=exclude)
 
+    def reliability_report(self) -> dict:
+        return self._reliability.report()
+
+    def recover_provider(self, provider: str = "") -> int:
+        recovered = self._reliability.recover(provider)
+        if provider:
+            self._health.reset()
+        return recovered
+
+    def blacklist_provider(self, provider: str, ttl_sec: float = 300.0) -> None:
+        self._reliability.blacklist(provider, ttl_sec=ttl_sec)
+
+    def set_provider_weight(self, provider: str, weight: float) -> None:
+        self._reliability.set_weight(provider, weight)
+
+    def validate_credentials(self) -> list[dict]:
+        from services.provider_runtime.security import credential_inventory, validate_credential
+
+        inventory = credential_inventory(self._credential_overrides)
+        return [validate_credential(item["provider"], self._credential_overrides) for item in inventory]
+
+    def audit_events(self, action: str = "") -> list[dict]:
+        from services.provider_runtime.security import get_audit_log
+
+        return get_audit_log().events(action)
+
+    def metrics_summary(self) -> dict:
+        usage = self.usage_summary()
+        reliability = self.reliability_report()
+        return {
+            "usage": usage,
+            "reliability": reliability,
+            "latency": self._reliability.latency_report(),
+            "cache": self.cache_stats(),
+        }
+
     # ------------------------------------------------------- internals
 
     def _execute(
@@ -185,6 +231,8 @@ class ProviderRuntime:
         cached = self._cache.get(request)
         if cached is not None:
             self._cost.log_usage(cached)
+            if self._emit_analytics:
+                emit_provider_metrics(cached, cache_hit=True)
             return cached
 
         if request.parallel_candidates > 1:
@@ -208,6 +256,8 @@ class ProviderRuntime:
         if response.success:
             self._cache.put(request, response)
         self._cost.log_usage(response)
+        if self._emit_analytics:
+            emit_provider_metrics(response)
         return response
 
     def _invoke_with_retry(
@@ -215,6 +265,13 @@ class ProviderRuntime:
         provider: ProviderAdapter,
         request: ProviderRequest,
     ) -> ProviderResponse:
+        if self._reliability.is_blacklisted(provider.name):
+            return ProviderResponse(
+                success=False,
+                operation=request.operation,
+                provider=provider.name,
+                error=f"Provider {provider.name} is blacklisted",
+            )
         if not self._health.is_healthy(provider):
             return ProviderResponse(
                 success=False,
@@ -225,9 +282,11 @@ class ProviderRuntime:
         response = execute_with_retry(provider, request, self._invoke_provider, self._rate_limiter)
         if response.success:
             self._health.record_success(provider.name)
+            self._reliability.record_success(provider.name, response.latency_ms)
             record_health_score(provider.name, min(100.0, health_score_bump(provider.name, +10)))
         else:
             self._health.record_failure(provider.name, response.error)
+            self._reliability.record_failure(provider.name, response.error, response.latency_ms)
             record_health_score(provider.name, max(0.0, health_score_bump(provider.name, -20)))
         return response
 

@@ -56,6 +56,12 @@ class YouTubePublishingConnector(PublishingConnector):
     base_url = "https://www.googleapis.com/upload/youtube/v3"
     profile = ProviderProfile(quality=88, cost_per_unit=0.0, speed=55, consistency=92, latency_ms=15000)
 
+    def api_key(self) -> str:
+        from services.provider_runtime.uploads import OAuthTokenManager
+
+        token = OAuthTokenManager(self._credential_overrides()).get_access_token("youtube")
+        return token or super().api_key()
+
     def auth_headers(self) -> dict[str, str]:
         return {
             "Authorization": f"Bearer {self.api_key()}",
@@ -67,6 +73,8 @@ class YouTubePublishingConnector(PublishingConnector):
         if not package.get("title"):
             return self.fail(request, "YouTube publish requires title")
         video_uri = (package.get("video") or {}).get("uri") or package.get("video_uri") or ""
+        video_path = (package.get("video") or {}).get("path") or package.get("video_path") or ""
+        schedule_at = package.get("scheduled_at") or request.payload.get("scheduled_at")
         body = {
             "snippet": {
                 "title": package.get("title"),
@@ -79,8 +87,10 @@ class YouTubePublishingConnector(PublishingConnector):
                 "selfDeclaredMadeForKids": False,
             },
         }
-        # Metadata-only init when binary upload is handled out-of-band.
-        if not video_uri:
+        if schedule_at:
+            body["status"]["privacyStatus"] = "private"
+            body["status"]["publishAt"] = schedule_at
+        if not video_uri and not video_path:
             body["status"]["privacyStatus"] = "private"
         resp = self.http(
             "POST",
@@ -91,8 +101,42 @@ class YouTubePublishingConnector(PublishingConnector):
         if not resp.ok:
             return self.fail(request, f"YouTube error: {resp.status} {resp.body}")
         data = resp.body if isinstance(resp.body, dict) else {}
-        data.setdefault("url", f"https://youtube.com/watch?v={data.get('id', '')}")
-        return self._success_payload(request, data)
+        upload_url = resp.headers.get("Location") or resp.headers.get("location") or ""
+        upload_meta = {}
+        if video_path and upload_url:
+            from pathlib import Path
+
+            from services.provider_runtime.uploads import ChunkedUploader
+
+            if Path(video_path).exists():
+                session = ChunkedUploader().upload_file(
+                    video_path,
+                    upload_url,
+                    headers={"Authorization": f"Bearer {self.api_key()}"},
+                    upload_id=str(request.payload.get("upload_id") or ""),
+                    start_at=int(request.payload.get("resume_bytes") or 0),
+                )
+                upload_meta = session.to_dict()
+                if session.status == "failed":
+                    return self.fail(request, upload_meta.get("error") or "chunked upload failed", upload=upload_meta)
+        # Thumbnail upload
+        thumb = package.get("thumbnail_uri") or package.get("thumbnail_path") or ""
+        video_id = data.get("id") or ""
+        if thumb and video_id:
+            self.http(
+                "POST",
+                f"/thumbnails/set?videoId={video_id}",
+                json_body={"uri": thumb},
+                timeout_sec=30.0,
+            )
+        data.setdefault("url", f"https://youtube.com/watch?v={video_id}")
+        result = self._success_payload(request, data)
+        if upload_meta:
+            result.data["upload"] = upload_meta
+        if schedule_at:
+            result.data["scheduled_at"] = schedule_at
+            result.data["status"] = "scheduled"
+        return result
 
 
 class TikTokPublishingConnector(PublishingConnector):
@@ -102,6 +146,11 @@ class TikTokPublishingConnector(PublishingConnector):
     api_key_env = "TIKTOK_ACCESS_TOKEN"
     base_url = "https://open.tiktokapis.com/v2"
     profile = ProviderProfile(quality=85, cost_per_unit=0.0, speed=60, consistency=88, latency_ms=12000)
+
+    def api_key(self) -> str:
+        from services.provider_runtime.uploads import OAuthTokenManager
+
+        return OAuthTokenManager(self._credential_overrides()).get_access_token("tiktok") or super().api_key()
 
     def _execute_impl(self, request: ProviderRequest) -> ProviderResponse:
         package = self._package(request)
@@ -118,6 +167,8 @@ class TikTokPublishingConnector(PublishingConnector):
                 "video_url": (package.get("video") or {}).get("uri") or package.get("video_uri") or "",
             },
         }
+        if package.get("scheduled_at"):
+            body["post_info"]["schedule_time"] = package["scheduled_at"]
         resp = self.http(
             "POST",
             "/post/publish/video/init/",
@@ -128,6 +179,17 @@ class TikTokPublishingConnector(PublishingConnector):
             return self.fail(request, f"TikTok error: {resp.status} {resp.body}")
         data = (resp.body or {}).get("data") if isinstance(resp.body, dict) else {}
         data = data or (resp.body if isinstance(resp.body, dict) else {})
+        # Status polling hook
+        publish_id = data.get("publish_id") or data.get("id") or ""
+        if publish_id and request.payload.get("poll_status"):
+            status = self.http(
+                "POST",
+                "/post/publish/status/fetch/",
+                json_body={"publish_id": publish_id},
+                timeout_sec=30.0,
+            )
+            if status.ok and isinstance(status.body, dict):
+                data["poll"] = status.body
         return self._success_payload(request, data)
 
 
@@ -244,4 +306,50 @@ class XPublishingConnector(PublishingConnector):
         data = data or (resp.body if isinstance(resp.body, dict) else {})
         tweet_id = data.get("id") or ""
         data["url"] = f"https://x.com/i/web/status/{tweet_id}" if tweet_id else ""
+        return self._success_payload(request, data)
+
+
+class LinkedInPublishingConnector(PublishingConnector):
+    name = "linkedin"
+    label = "LinkedIn"
+    platform = "linkedin"
+    api_key_env = "LINKEDIN_ACCESS_TOKEN"
+    base_url = "https://api.linkedin.com/v2"
+    profile = ProviderProfile(quality=83, cost_per_unit=0.0, speed=62, consistency=88, latency_ms=10000)
+
+    def api_key(self) -> str:
+        from services.provider_runtime.uploads import OAuthTokenManager
+
+        return OAuthTokenManager(self._credential_overrides()).get_access_token("linkedin") or super().api_key()
+
+    def _execute_impl(self, request: ProviderRequest) -> ProviderResponse:
+        package = self._package(request)
+        from services.provider_runtime.config import get_credential
+
+        author = get_credential("LINKEDIN_AUTHOR_URN", self._credential_overrides())
+        if not author:
+            return self.fail(request, "LINKEDIN_AUTHOR_URN required")
+        text = str(package.get("description") or package.get("title") or "")
+        body = {
+            "author": author,
+            "lifecycleState": "PUBLISHED",
+            "specificContent": {
+                "com.linkedin.ugc.ShareContent": {
+                    "shareCommentary": {"text": text},
+                    "shareMediaCategory": "NONE",
+                }
+            },
+            "visibility": {"com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"},
+        }
+        video_urn = package.get("media_urn") or package.get("media_id")
+        if video_urn:
+            body["specificContent"]["com.linkedin.ugc.ShareContent"]["shareMediaCategory"] = "VIDEO"
+            body["specificContent"]["com.linkedin.ugc.ShareContent"]["media"] = [
+                {"status": "READY", "media": video_urn, "title": {"text": package.get("title") or ""}}
+            ]
+        resp = self.http("POST", "/ugcPosts", json_body=body, timeout_sec=request.timeout_sec)
+        if not resp.ok:
+            return self.fail(request, f"LinkedIn error: {resp.status} {resp.body}")
+        data = resp.body if isinstance(resp.body, dict) else {}
+        data.setdefault("id", data.get("id") or "")
         return self._success_payload(request, data)

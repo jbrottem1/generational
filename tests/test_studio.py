@@ -185,32 +185,113 @@ def test_collect_output_library(studio_store):
     assert len(library["scripts"]) >= 1
 
 
-def test_run_studio_production_demo_mode(monkeypatch):
-    """Integration test — runs pipeline via orchestrator in demo mode."""
+def test_run_studio_production_demo_mode(monkeypatch, tmp_path):
+    """Integration — Studio routes through Workflow Executor → Orchestrator."""
+    from services.workflow_executor import reset_workflow_executor, reset_workflow_store
+    from services.workflow_executor.store import WorkflowRunStore
+
+    store = WorkflowRunStore(tmp_path / "workflow_runs")
+    reset_workflow_store()
+    reset_workflow_executor()
+    monkeypatch.setattr(
+        "services.workflow_executor.executor.get_workflow_store",
+        lambda: store,
+    )
+
     result = studio.run_studio_production(
         "Create 2 psychology shorts",
         studio.build_default_settings("youtube_shorts"),
-        model="gpt-4o-mini",
+        model="demo",
         threshold=0,
     )
     assert result.get("ideas")
     assert result.get("settings_preview")
     assert result.get("studio_settings")
+    assert result.get("workflow_run_id")
+    assert result.get("workflow_status") in ("completed", "failed")
+    assert result.get("stage_reports")
+    stages = [r["stage"] for r in result["stage_reports"]]
+    assert "publish" in stages
+    assert "analytics" in stages
+    assert "learning" in stages
 
 
-def test_submit_longform_job(tmp_path):
-    from services.provider_runtime.longform import RuntimeExecutionEngine
+def test_run_studio_production_uses_workflow_executor(monkeypatch):
+    """Studio must not bypass Agent 21 — production goes through WorkflowExecutor."""
+    calls = {}
 
-    engine = RuntimeExecutionEngine(checkpoint_dir=tmp_path / "checkpoints")
+    class FakeStep:
+        stage = "research"
+        status = "completed"
+        duration_ms = 10
+        errors = []
+        warnings = []
+        confidence = 80
+        diagnostics = {}
+        attempt = 1
+        required = True
+        optional = False
+
+    class FakeRun:
+        run_id = "run_test123"
+        command = "Create a short about focus"
+        status = "completed"
+        production_type = "youtube_short"
+        created_at = ""
+        updated_at = ""
+        started_at = ""
+        finished_at = ""
+        estimated_completion_at = ""
+        provider_usage = {}
+        estimated_cost_usd = 0.0
+        context = {
+            "command": "Create a short about focus",
+            "niche": "Tech",
+            "video_count": 1,
+            "goal": "test",
+            "ideas": [{"title": "T", "script": "s", "hook": "h"}],
+            "demo_mode": True,
+            "count": 1,
+            "model": "demo",
+        }
+        config = type("C", (), {"model": "demo", "count": 1, "longform_mode": False, "budget_usd": 0.0, "template": "youtube_short"})()
+        workflow = type("W", (), {"steps": [FakeStep()], "progress_pct": 100.0})()
+        result = type("R", (), {"packages": [], "production_report": {}, "error": "", "partial": False, "provider_usage": {}, "estimated_cost_usd": 0.0, "failure_reports": [], "production_package": {}, "asset_package": {}, "animation_package": {}, "post_production_package": {}, "render_package": {}, "publishing_package": {}, "analytics_package": {}, "learning_context": {}})()
+        log = type("L", (), {"entries": []})()
+
+    class FakeExecutor:
+        def execute(self, command, config=None, context_extra=None, **kwargs):
+            calls["command"] = command
+            calls["config"] = config
+            calls["context_extra"] = context_extra
+            return FakeRun()
+
+    monkeypatch.setattr("services.workflow_executor.get_workflow_executor", lambda *a, **k: FakeExecutor())
+    result = production.run_studio_production("Create a short about focus", studio.build_default_settings("youtube_shorts"), model="demo")
+    assert calls["command"] == "Create a short about focus"
+    assert calls["context_extra"]["studio_settings"]["platform"] == "youtube_shorts"
+    assert result["workflow_run_id"] == "run_test123"
+    assert result["ideas"]
+
+
+def test_submit_longform_job(tmp_path, monkeypatch):
+    """Long-form Studio jobs use Workflow Executor + workflow_run queue."""
+    from core.jobs import JobQueue
+    from services.workflow_executor import WORKFLOW_JOB_TYPE, reset_workflow_executor
+    from services.workflow_executor.store import WorkflowRunStore
+
+    store = WorkflowRunStore(tmp_path / "workflow_runs")
+    reset_workflow_executor()
+    monkeypatch.setattr("services.workflow_executor.executor.get_workflow_store", lambda: store)
+    queue = JobQueue()
+    monkeypatch.setattr("core.jobs.get_queue", lambda: queue)
     settings = studio.build_default_settings("documentary")
-
-    checkpoint = engine.start_production(
-        "Create a 90 minute documentary",
-        production_type="documentary",
-        options={"model": "gpt-4o-mini", "context_extra": {"studio_settings": settings}},
-    )
-    assert checkpoint.job_id
-    assert checkpoint.context_snapshot.get("longform") is True
+    job = studio.submit_longform_job("Create a 90 minute documentary", settings, model="demo", project_name="Doc")
+    assert job["run_id"]
+    assert job["job_id"]
+    assert job["longform"] is True
+    assert job["workflow_job_type"] == WORKFLOW_JOB_TYPE
+    assert queue.has_handler(WORKFLOW_JOB_TYPE)
 
 
 def test_studio_example_prompts():

@@ -24,6 +24,7 @@ _RUNTIME_PROVIDER_MAP = {
     "facebook": "facebook",
     "x": "x",
     "twitter": "x",
+    "linkedin": "linkedin",
 }
 
 
@@ -200,6 +201,8 @@ class XProvider(MockPublishingProvider):
 class LinkedInProvider(MockPublishingProvider):
     key = "linkedin"
     label = "LinkedIn"
+    runtime_provider = "linkedin"
+    credential_env = "LINKEDIN_ACCESS_TOKEN"
 
     def constraints(self) -> dict:
         return {

@@ -20,7 +20,6 @@ import uuid
 from datetime import datetime, timezone
 
 from core.log import get_logger, log_event
-from providers.asset_generation import get_generation_provider
 from services.asset_generation.cache import cached_copy, compute_fingerprint, lookup_cached_asset
 from services.asset_generation.config import AssetGenerationConfig, get_asset_generation_config
 from services.asset_generation.metadata import build_asset_metadata
@@ -30,6 +29,8 @@ from services.asset_generation.quality import check_safety, validate_asset
 from services.asset_generation.registry import AssetRegistry, get_asset_registry
 from services.asset_generation.selection import select_providers
 from services.asset_generation.usage import get_usage_tracker
+from services.provider_runtime import get_provider, get_provider_runtime
+from services.provider_runtime import capabilities as cap
 
 logger = get_logger(__name__)
 
@@ -94,9 +95,18 @@ def generate_asset(
     last_error = "no provider available for this request"
 
     for provider_name in chain:
-        provider = get_generation_provider(provider_name)
+        provider = get_provider(provider_name)
         if provider is None or not provider.is_available():
-            continue
+            # Fall back to legacy generation registry name if still registered there.
+            try:
+                from providers.asset_generation import get_generation_provider
+
+                legacy = get_generation_provider(provider_name)
+            except Exception:  # noqa: BLE001
+                legacy = None
+            if legacy is None or not legacy.is_available():
+                continue
+            provider = legacy
         optimized = optimize_for_provider(spec, provider)
         for _attempt in range(max(1, int(config.max_retries))):
             job["attempts"] += 1
@@ -104,7 +114,7 @@ def generate_asset(
                 job["providers_tried"].append(provider_name)
             started = time.time()
             try:
-                result = provider.generate(optimized, request)
+                result = _generate_via_runtime(provider_name, optimized, request, provider)
             except Exception as exc:  # noqa: BLE001 - adapters must not kill the pipeline
                 result = {"error": str(exc)[:200], "provider": provider_name}
             elapsed_ms = int((time.time() - started) * 1000)
@@ -112,7 +122,7 @@ def generate_asset(
                 asset = _base_asset(request, optimized, status=AssetStatus.GENERATED)
                 asset.update(
                     {
-                        "uri": str(result.get("uri", "")),
+                        "uri": str(result.get("uri", "") or result.get("image_url", "") or result.get("video_url", "")),
                         "provider": str(result.get("provider", provider_name)),
                         "model": str(result.get("model", "")),
                         "format": str(result.get("format", "")),
@@ -158,6 +168,52 @@ def generate_asset(
         asset_id=asset["asset_id"], error=last_error[:120],
     )
     return asset, job
+
+
+def _generate_via_runtime(provider_name: str, optimized: dict, request: dict, provider) -> dict:
+    """Route asset generation through ProviderRuntime when possible."""
+    # Prefer ProviderRuntime preferred_provider path.
+    asset_class = str(request.get("asset_class", "image") or "image")
+    op_map = {
+        "image": "generate_image",
+        "video": "generate_video",
+        "animation": "generate_animation",
+        "audio": "generate_voice",
+        "thumbnail": "generate_thumbnail",
+        "music": "generate_music",
+        "sfx": "generate_sound_effects",
+    }
+    operation = op_map.get(asset_class, "generate_image")
+    runtime = get_provider_runtime()
+    payload = {
+        "prompt": optimized.get("prompt") or request.get("prompt") or "",
+        "prompt_spec": optimized,
+        "request": request,
+        "width": request.get("width") or optimized.get("width") or 1080,
+        "height": request.get("height") or optimized.get("height") or 1920,
+        "duration_sec": request.get("duration_sec") or 0,
+        "negative_prompt": optimized.get("negative_prompt") or "",
+    }
+    method = getattr(runtime, operation, None)
+    if callable(method):
+        response = method(payload, preferred_provider=provider_name, allow_fallback=False)
+        if response.success:
+            data = dict(response.data or {})
+            data.setdefault("provider", response.provider or provider_name)
+            data.setdefault("placeholder", bool(response.demo_mode))
+            data.setdefault(
+                "uri",
+                data.get("image_url") or data.get("video_url") or data.get("uri") or data.get("path") or "",
+            )
+            return data
+        # If preferred provider failed, try legacy generate() when available.
+        if hasattr(provider, "generate"):
+            return provider.generate(optimized, request)
+        return {"error": response.error or "runtime generation failed", "provider": provider_name}
+
+    if hasattr(provider, "generate"):
+        return provider.generate(optimized, request)
+    return {"error": f"no generate path for {provider_name}", "provider": provider_name}
 
 
 def _finalize(

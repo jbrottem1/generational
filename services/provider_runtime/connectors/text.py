@@ -54,6 +54,28 @@ class OpenAIConnector(ProductionConnector):
         if not user:
             return self.fail(request, "Missing prompt/text in payload")
         model = self.resolved_model(request, "gpt-4o-mini")
+        if request.payload.get("stream"):
+            from services.provider_runtime.streaming import stream_chat_completions, streaming_response
+
+            body = {
+                "model": model,
+                "messages": [
+                    {"role": "system", "content": system},
+                    {"role": "user", "content": user},
+                ],
+                "temperature": float(request.payload.get("temperature", 0.7)),
+            }
+            text, usage = stream_chat_completions(
+                f"{self.base_url}/chat/completions",
+                headers=self.auth_headers(),
+                body=body,
+                timeout_sec=request.timeout_sec,
+            )
+            return streaming_response(
+                request, self.name, text,
+                tokens_used=int(usage.get("total_tokens") or 0),
+                model=model,
+            )
         body = {
             "model": model,
             "messages": [

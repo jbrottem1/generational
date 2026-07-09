@@ -139,20 +139,41 @@ def _record_knowledge(result: dict, context: dict) -> None:
 def _fallback_result(command: str, count: int, model: str, error: str) -> dict:
     """Guards against infrastructure bugs so the UI still gets a usable result."""
     from core import parsing
-    from core.ai import GenerationRequest
-    from core.ai.demo_provider import DemoProvider
+    from services.provider_runtime.engine_api import runtime_generate_json
 
     niche = parsing.detect_niche(command)
     subject = parsing.detect_subject(command, fallback=niche.lower())
-    generation = DemoProvider().generate_ideas(
-        GenerationRequest(command=command, niche=niche, subject=subject, count=count, model=model)
+    system = (
+        "You are Generational, an expert short-form content strategist. "
+        "Respond with valid minified JSON only."
     )
+    user = (
+        f'Command: "{command}"\nNiche: "{niche}"\nSubject: "{subject}"\n'
+        f"Generate exactly {count} unique short-form video ideas as JSON: "
+        '{"ideas": [{"title": "...", "hook": "...", "script": "...", "cta": "...", '
+        '"hashtags": ["#a"], "thumbnail_concept": "..."}]}'
+    )
+    data, _tokens, _provider = runtime_generate_json(system, user, model=model)
+    ideas = (data or {}).get("ideas") or []
+    if not ideas:
+        # Deterministic offline ideas when runtime also fails.
+        ideas = [
+            {
+                "title": f"{subject.title()} insight #{i + 1}",
+                "hook": f"Nobody talks about this side of {subject}.",
+                "script": f"Here's what matters about {subject} in {niche}.",
+                "cta": "Follow for more.",
+                "hashtags": [f"#{niche.replace(' ', '')}", "#shorts"],
+                "thumbnail_concept": f"Bold text about {subject}",
+            }
+            for i in range(count)
+        ]
     result = build_result(
         command=command,
         niche=niche,
         video_count=parsing.detect_video_count(command),
         goal=parsing.build_goal(subject),
-        ideas=generation.ideas,
+        ideas=ideas[:count],
         demo_mode=True,
         model=model,
     )

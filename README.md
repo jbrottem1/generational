@@ -4,6 +4,13 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.15 — Production Readiness (Agent 1)
+
+Engines route all LLM calls through ProviderRuntime (`engine_api`). Studio
+production runs via Workflow Executor with pause/resume/cancel. See
+[`PRODUCTION_READINESS.md`](PRODUCTION_READINESS.md) (overall **84/100**).
+`APP_VERSION = 9.15.0`.
+
 ## Version 9.14 — Real Provider Connectors (Agent 22)
 
 Production HTTP connectors for text, image, video, voice, music abstraction,

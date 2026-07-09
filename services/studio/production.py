@@ -1,11 +1,11 @@
-"""Studio production execution — delegates to Orchestrator via ideation adapter."""
+"""Studio production execution — routes through Workflow Executor → Orchestrator."""
 
 from __future__ import annotations
 
 import re
 
 from core.constants import DEFAULT_PUBLISH_THRESHOLD
-from services.studio.models import STUDIO_PLATFORMS, platform_label
+from services.studio.models import platform_label
 
 _LONGFORM_PATTERNS = (
     r"\b\d+\s*(hour|hr|minute|min)\b",
@@ -19,6 +19,35 @@ _LONGFORM_PATTERNS = (
     r"\bfeature\b",
     r"\blong[\s-]?form\b",
 )
+
+_PLATFORM_PRODUCTION_TYPE = {
+    "youtube_shorts": "youtube_short",
+    "youtube_long": "longform",
+    "tiktok": "youtube_short",
+    "instagram_reels": "youtube_short",
+    "facebook": "youtube_short",
+    "x": "youtube_short",
+    "linkedin": "youtube_short",
+    "podcast": "podcast",
+    "audiobook": "podcast",
+    "course": "course",
+    "presentation": "course",
+    "documentary": "documentary",
+    "animated_series": "animated_episode",
+    "marketing_campaign": "campaign",
+    "multi_platform": "campaign",
+}
+
+_STEP_STATUS_TO_ORCH = {
+    "completed": "SUCCESS",
+    "failed": "FAILED",
+    "skipped": "SKIPPED",
+    "cancelled": "SKIPPED",
+    "running": "RUNNING",
+    "retrying": "RUNNING",
+    "pending": "PENDING",
+    "waiting": "PENDING",
+}
 
 
 def is_longform_command(command: str) -> bool:
@@ -69,24 +98,37 @@ def _detect_count(command: str) -> int:
     return parsing.detect_video_count(command)
 
 
-def run_studio_production(
-    command: str,
-    settings: dict,
-    *,
-    model: str = "gpt-4o-mini",
-    threshold: int = DEFAULT_PUBLISH_THRESHOLD,
-    research_settings: "dict | None" = None,
-    project_name: "str | None" = None,
-) -> dict:
-    """Run the full pipeline via the Orchestrator (ideation adapter)."""
-    from services import ideation
+def _production_type_for_platform(platform: str) -> str:
+    return _PLATFORM_PRODUCTION_TYPE.get(platform, "full_production")
+
+
+def _build_workflow_config(command: str, settings: dict, *, model: str, longform: bool = False):
+    from services.workflow_executor import WorkflowConfig
 
     platform = settings.get("platform", "youtube_shorts")
     count = _detect_count(command)
     if count < 1:
         count = 1
+    prefs = {}
+    preferred = settings.get("preferred_providers") or []
+    if preferred:
+        prefs["preferred_providers"] = list(preferred)
+    return WorkflowConfig(
+        production_type=_production_type_for_platform(platform),
+        target_platform=platform,
+        platform_targets=[platform],
+        count=count,
+        model=model,
+        quality_level=settings.get("quality_level", "standard"),
+        budget_usd=float(settings.get("budget_usd") or 0.0),
+        provider_preferences=prefs,
+        longform_mode=longform or is_longform_command(command),
+    )
 
-    context_extra = {
+
+def _studio_context_extra(settings: dict, *, research_settings=None, project_name=None, threshold=DEFAULT_PUBLISH_THRESHOLD) -> dict:
+    platform = settings.get("platform", "youtube_shorts")
+    extra = {
         "voice_mode": settings.get("voice", "ai"),
         "voice_profile_id": settings.get("narrator", ""),
         "studio_settings": settings,
@@ -100,64 +142,165 @@ def run_studio_production(
         "brand": settings.get("brand", ""),
         "quality_level": settings.get("quality_level", "standard"),
         "preferred_providers": settings.get("preferred_providers", []),
+        "threshold": threshold,
+        "publish_threshold": threshold,
     }
+    if research_settings:
+        extra["research_settings"] = research_settings
+    if project_name:
+        extra["project_name"] = project_name
+    return extra
 
-    result = ideation.run_command(
-        command,
-        count=count,
-        model=model,
-        threshold=threshold,
-        voice_mode=settings.get("voice", "ai"),
-        voice_profile_id=settings.get("narrator", ""),
-        research_settings=research_settings,
-        project_name=project_name,
-        context_extra=context_extra,
-    )
+
+def _stage_reports_from_run(run) -> list:
+    reports = []
+    for step in run.workflow.steps:
+        reports.append({
+            "stage": step.stage,
+            "status": _STEP_STATUS_TO_ORCH.get(step.status, "PENDING"),
+            "duration_ms": step.duration_ms,
+            "errors": list(step.errors),
+            "warnings": list(step.warnings),
+            "confidence": step.confidence,
+            "diagnostics": dict(step.diagnostics or {}),
+        })
+    return reports
+
+
+def _record_knowledge(result: dict, context: dict) -> None:
+    from services.knowledge import CATEGORY, get_knowledge_base
+    kb = get_knowledge_base()
+    source = "demo" if result.get("demo_mode", True) else "openai"
+    try:
+        research = result.get("research", {})
+        if research:
+            kb.add_entry(CATEGORY.RESEARCH, {
+                "command": result.get("command", ""),
+                "subject": context.get("subject", ""),
+                "summary": research.get("executive_summary") or research.get("summary", ""),
+                "source_count": research.get("source_count", 0),
+                "providers_used": research.get("providers_used", []),
+                "important_facts": research.get("important_facts", []),
+            }, {"niche": result.get("niche", ""), "source": source})
+        for idea in result.get("ideas", []):
+            metadata = {"niche": result.get("niche", ""), "source": source, "publish_score": idea.get("scores", {}).get("publish")}
+            if idea.get("hook"):
+                kb.add_entry(CATEGORY.HOOKS, idea["hook"], metadata)
+            if idea.get("title"):
+                kb.add_entry(CATEGORY.TITLES, idea["title"], metadata)
+            if idea.get("script"):
+                kb.add_entry(CATEGORY.SCRIPTS, idea["script"], metadata)
+            if idea.get("thumbnail_concept"):
+                kb.add_entry(CATEGORY.THUMBNAILS, idea["thumbnail_concept"], metadata)
+    except Exception:
+        pass
+
+
+def result_from_project_run(run, settings: dict) -> dict:
+    from core.models import build_result
+    from services.workflow_executor import WorkflowStatus, studio_status
+
+    context = dict(run.context or {})
+    command = run.command or context.get("command", "")
+    model = run.config.model if run.config else context.get("model", "demo")
+    ideas = list(context.get("ideas") or [])
+    count = int(context.get("count") or (run.config.count if run.config else 1))
+
+    if ideas or run.status == WorkflowStatus.COMPLETED:
+        result = build_result(
+            command=command, niche=context.get("niche", ""),
+            video_count=context.get("video_count", count), goal=context.get("goal", ""),
+            ideas=ideas, demo_mode=context.get("demo_mode", True), model=model,
+        )
+    else:
+        result = {
+            "command": command, "niche": context.get("niche", ""), "video_count": count,
+            "goal": context.get("goal", ""), "ideas": ideas,
+            "demo_mode": context.get("demo_mode", True), "model": model,
+        }
+
+    result["research"] = context.get("research", {})
+    if context.get("research_bundle"):
+        result["research_bundle"] = context["research_bundle"]
+    result["trend_opportunities"] = context.get("trend_opportunities", [])
+    result["trend_dashboard"] = context.get("trend_dashboard", {})
+    result["top_opportunity"] = context.get("top_opportunity", {})
+    result["quality_summary"] = context.get("quality_summary", {})
+    result["pipeline_steps"] = context.get("pipeline_steps", [])
+    result["tokens_used"] = context.get("tokens_used", 0)
+    result["production_packages"] = context.get("production_packages", [])
+    result["production_steps"] = context.get("production_steps", [])
+    result["production_dashboard"] = context.get("production_dashboard", [])
+    result["queued_count"] = context.get("queued_count", 0)
+    result["unified_packages"] = context.get("unified_packages") or list(run.result.packages or [])
+    result["stage_reports"] = _stage_reports_from_run(run)
+    result["production_report"] = dict(run.result.production_report or context.get("production_report") or {})
+    result["render_summary"] = context.get("render_summary", {})
+    result["seo_optimization_report"] = context.get("seo_optimization_report", {})
+    result["publishing_result"] = context.get("publishing_result", {})
+    if context.get("production_error"):
+        result["production_error"] = context["production_error"]
+    if context.get("production_skipped"):
+        result["production_skipped"] = True
+
+    platform = settings.get("platform", "youtube_shorts")
     result["studio_settings"] = settings
     result["platform"] = platform
     result["settings_preview"] = build_settings_preview(command, settings)
+    result["workflow_run_id"] = run.run_id
+    result["workflow_status"] = run.status
+    result["workflow_studio_status"] = studio_status(run)
+    result["provider_usage"] = dict(run.provider_usage or run.result.provider_usage or {})
+    result["estimated_cost_usd"] = run.estimated_cost_usd or run.result.estimated_cost_usd
+
+    if run.status == WorkflowStatus.FAILED:
+        result["error"] = run.result.error or "Workflow failed"
+    elif run.result.partial:
+        result["error"] = run.result.error or "Workflow completed with partial outputs"
+    elif context.get("error"):
+        result["error"] = context["error"]
+
+    _record_knowledge(result, context)
     return result
 
 
-def submit_longform_job(
-    command: str,
-    settings: dict,
-    *,
-    model: str = "gpt-4o-mini",
-    project_name: str = "",
-) -> dict:
-    """Submit a checkpointed long-form job via ProviderRuntime execution engine."""
+def run_studio_production(command: str, settings: dict, *, model: str = "gpt-4o-mini", threshold: int = DEFAULT_PUBLISH_THRESHOLD, research_settings=None, project_name=None) -> dict:
+    """Run full production via Workflow Executor → Orchestrator.
+
+    Canonical Studio path (Agents 20→21→Orchestrator). Does not call engines
+    or provider APIs directly.
+    """
+    from services.workflow_executor import get_workflow_executor
+
+    config = _build_workflow_config(command, settings, model=model)
+    context_extra = _studio_context_extra(settings, research_settings=research_settings, project_name=project_name, threshold=threshold)
+    run = get_workflow_executor().execute(command, config=config, context_extra=context_extra)
+    return result_from_project_run(run, settings)
+
+
+def submit_longform_job(command: str, settings: dict, *, model: str = "gpt-4o-mini", project_name: str = "", threshold: int = DEFAULT_PUBLISH_THRESHOLD, research_settings=None) -> dict:
+    """Submit a durable long-form job via Workflow Executor (`workflow_run`)."""
     from core.jobs import get_queue
-    from services.provider_runtime.longform import LONGFORM_JOB_TYPE, RuntimeExecutionEngine
+    from services.workflow_executor import WORKFLOW_JOB_TYPE, ensure_workflow_handler, get_workflow_executor
 
-    engine = RuntimeExecutionEngine()
-    production_type = settings.get("platform", "documentary")
-    checkpoint = engine.start_production(
-        command,
-        production_type=production_type,
-        options={
-            "model": model,
-            "project_name": project_name,
-            "context_extra": {
-                "studio_settings": settings,
-                "platform": settings.get("platform", "youtube_shorts"),
-            },
-        },
-    )
-
+    config = _build_workflow_config(command, settings, model=model, longform=True)
+    context_extra = _studio_context_extra(settings, research_settings=research_settings, project_name=project_name or None, threshold=threshold)
+    executor = get_workflow_executor()
+    run = executor.create_run(command, config, context_extra=context_extra)
     queue = get_queue()
-    job = queue.submit(LONGFORM_JOB_TYPE, {
-        "job_id": checkpoint.job_id,
+    ensure_workflow_handler(queue)
+    job = queue.submit(WORKFLOW_JOB_TYPE, {
+        "resume_run_id": run.run_id,
         "command": command,
-        "model": model,
-        "project_name": project_name,
-        "studio_settings": settings,
+        "config": config.to_dict(),
+        "context_extra": context_extra,
     })
-
     return {
         "job_id": job.id,
-        "checkpoint_id": checkpoint.job_id,
-        "status": checkpoint.status,
+        "run_id": run.run_id,
+        "checkpoint_id": run.run_id,
+        "status": run.status,
         "command": command,
         "longform": True,
+        "workflow_job_type": WORKFLOW_JOB_TYPE,
     }

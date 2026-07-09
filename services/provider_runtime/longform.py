@@ -103,6 +103,41 @@ class RuntimeExecutionEngine:
             return None
         return ProductionCheckpoint.from_dict(json.loads(path.read_text(encoding="utf-8")))
 
+    def pause_production(self, job_id: str) -> "ProductionCheckpoint | None":
+        """Request pause — honored between stages on the next loop check."""
+        checkpoint = self.resume_production(job_id)
+        if checkpoint is None:
+            return None
+        if checkpoint.status in ("completed", "failed", "cancelled", "paused"):
+            return checkpoint
+        snapshot = dict(checkpoint.context_snapshot or {})
+        snapshot["_pause_requested"] = True
+        checkpoint.context_snapshot = snapshot
+        if checkpoint.status != "running":
+            checkpoint.status = "paused"
+        checkpoint.updated_at = _now()
+        self._save(checkpoint)
+        log_event(logger, "runtime.longform_pause_requested", job_id=job_id)
+        return checkpoint
+
+    def cancel_production(self, job_id: str) -> "ProductionCheckpoint | None":
+        """Cancel a long-form job and persist terminal cancelled status."""
+        checkpoint = self.resume_production(job_id)
+        if checkpoint is None:
+            return None
+        if checkpoint.status in ("completed", "cancelled"):
+            return checkpoint
+        snapshot = dict(checkpoint.context_snapshot or {})
+        snapshot.pop("_pause_requested", None)
+        snapshot["_cancel_requested"] = True
+        checkpoint.context_snapshot = snapshot
+        checkpoint.status = "cancelled"
+        checkpoint.updated_at = _now()
+        checkpoint.error = checkpoint.error or "Cancelled"
+        self._save(checkpoint)
+        log_event(logger, "runtime.longform_cancelled", job_id=job_id)
+        return checkpoint
+
     def run(
         self,
         command: str,
@@ -119,6 +154,20 @@ class RuntimeExecutionEngine:
             checkpoint = self.resume_production(resume_job_id)
             if not checkpoint:
                 return {"error": f"Checkpoint {resume_job_id!r} not found", "status": "failed"}
+            if checkpoint.status == "cancelled":
+                return {
+                    "job_id": checkpoint.job_id,
+                    "status": "cancelled",
+                    "checkpoint": checkpoint.to_dict(),
+                }
+            # Clear control flags so resume can proceed.
+            snap = dict(checkpoint.context_snapshot or {})
+            snap.pop("_pause_requested", None)
+            snap.pop("_cancel_requested", None)
+            checkpoint.context_snapshot = snap
+            checkpoint.status = "running"
+            checkpoint.error = ""
+            self._save(checkpoint)
         else:
             checkpoint = self.start_production(command, production_type, options)
 
@@ -140,6 +189,37 @@ class RuntimeExecutionEngine:
         all_stages += [(stage, None) for stage in distribution_stage_names()]
 
         for stage, engine_keys in all_stages:
+            # Reload control flags from disk so pause/cancel from another
+            # process is honored between stages.
+            latest = self.resume_production(checkpoint.job_id)
+            if latest is not None:
+                flags = latest.context_snapshot or {}
+                if flags.get("_cancel_requested") or latest.status == "cancelled":
+                    checkpoint.status = "cancelled"
+                    checkpoint.updated_at = _now()
+                    checkpoint.context_snapshot = self._snapshot_context(context)
+                    checkpoint.error = checkpoint.error or "Cancelled"
+                    self._save(checkpoint)
+                    return {
+                        "job_id": checkpoint.job_id,
+                        "status": "cancelled",
+                        "paused_before_stage": stage,
+                        "checkpoint": checkpoint.to_dict(),
+                    }
+                if flags.get("_pause_requested"):
+                    snap = dict(flags)
+                    snap.pop("_pause_requested", None)
+                    checkpoint.context_snapshot = {**self._snapshot_context(context), **snap}
+                    checkpoint.status = "paused"
+                    checkpoint.updated_at = _now()
+                    self._save(checkpoint)
+                    return {
+                        "job_id": checkpoint.job_id,
+                        "status": "paused",
+                        "paused_before_stage": stage,
+                        "checkpoint": checkpoint.to_dict(),
+                    }
+
             if stage in completed:
                 continue
             if stage == "production":

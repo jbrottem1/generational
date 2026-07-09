@@ -11,10 +11,28 @@ from services.provider_runtime.registry import (
     health_score,
     providers_for_capability,
 )
+from services.provider_runtime.reliability import ProviderReliabilityManager
+
+_shared_reliability: "ProviderReliabilityManager | None" = None
+
+
+def get_reliability_manager() -> ProviderReliabilityManager:
+    global _shared_reliability
+    if _shared_reliability is None:
+        _shared_reliability = ProviderReliabilityManager()
+    return _shared_reliability
+
+
+def set_reliability_manager(manager: "ProviderReliabilityManager | None") -> None:
+    global _shared_reliability
+    _shared_reliability = manager
 
 
 class ProviderSelectionEngine:
     """Selects the best provider for a given operation and optimization goal."""
+
+    def __init__(self, reliability: "ProviderReliabilityManager | None" = None) -> None:
+        self._reliability = reliability or get_reliability_manager()
 
     def select(
         self,
@@ -24,13 +42,22 @@ class ProviderSelectionEngine:
         cap = capability or request.capability
         if request.preferred_provider:
             preferred = get_provider(request.preferred_provider)
-            if preferred and preferred.is_available() and (not cap or preferred.supports(cap)):
+            if (
+                preferred
+                and preferred.is_available()
+                and (not cap or preferred.supports(cap))
+                and not self._reliability.is_blacklisted(preferred.name)
+            ):
                 return preferred
 
         candidates = available_providers(cap) if cap else available_providers()
+        candidates = [c for c in candidates if not self._reliability.is_blacklisted(c.name)]
         if not candidates:
             # Fall back to registered but unavailable stubs for demo routing
-            candidates = providers_for_capability(cap) if cap else []
+            candidates = [
+                p for p in (providers_for_capability(cap) if cap else [])
+                if not self._reliability.is_blacklisted(p.name)
+            ]
         if not candidates:
             return None
 
@@ -41,7 +68,10 @@ class ProviderSelectionEngine:
         capability: str,
         optimize_for: str = "quality",
     ) -> list[ProviderAdapter]:
-        candidates = providers_for_capability(capability)
+        candidates = [
+            p for p in providers_for_capability(capability)
+            if not self._reliability.is_blacklisted(p.name)
+        ]
         return sorted(
             candidates,
             key=lambda p: self._score(p, optimize_for),
@@ -81,6 +111,8 @@ class ProviderSelectionEngine:
         profile = provider.profile
         priority_boost = get_priority(provider.name) * 10.0
         health_boost = health_score(provider.name) * 0.05
+        weight_boost = (self._reliability.get_weight(provider.name) - 1.0) * 15.0
+        latency_penalty = self._reliability._latency[provider.name].avg_ms / 1000.0
         # Prefer real production connectors over demo when both available.
         impl = getattr(provider, "implementation_status", "")
         production_boost = 5.0 if impl == "production" and provider.is_available() else 0.0
@@ -95,8 +127,10 @@ class ProviderSelectionEngine:
                 - cost_penalty
                 + priority_boost
                 + health_boost
+                + weight_boost
                 + production_boost
                 - demo_penalty
+                - latency_penalty
             )
         if optimize_for == "speed":
             return (
@@ -105,8 +139,10 @@ class ProviderSelectionEngine:
                 - profile.cost_per_unit * 10
                 + priority_boost
                 + health_boost
+                + weight_boost
                 + production_boost
                 - demo_penalty
+                - latency_penalty * 2
             )
         return (
             profile.quality
@@ -114,6 +150,8 @@ class ProviderSelectionEngine:
             - profile.cost_per_unit * 5
             + priority_boost
             + health_boost
+            + weight_boost
             + production_boost
             - demo_penalty
+            - latency_penalty
         )

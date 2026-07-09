@@ -135,7 +135,7 @@ limits, caching, cost, and health stay inside ProviderRuntime. See
 The Creative Studio (`ui/tabs/studio.py`, `services/studio/`) is the primary
 user interface. It does not run pipeline stages directly — it calls:
 
-- `services/studio/run_studio_production()` → `ideation.run_command()` → Orchestrator
+- `services/studio/run_studio_production()` → **Workflow Executor** → Orchestrator
 - `services/studio/get_provider_dashboard()` → `ProviderRuntime`
 - `services/studio/submit_longform_job()` → job queue + `RuntimeExecutionEngine`
 

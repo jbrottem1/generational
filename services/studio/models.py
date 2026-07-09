@@ -71,6 +71,7 @@ STUDIO_PROJECT_METADATA_FIELDS = (
     "studio_settings",
     "pipeline_state",
     "longform_job_id",
+    "workflow_run_id",
 )
 
 

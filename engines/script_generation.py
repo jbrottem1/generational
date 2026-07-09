@@ -27,10 +27,10 @@ Reels, X video, long-form YouTube).
 
 from __future__ import annotations
 
-from core.ai import get_provider
 from core.constants import SCRIPT_VARIANTS_PER_IDEA
 from core.log import get_logger, log_event
 from engines.base import Engine
+from services.provider_runtime.engine_api import runtime_generate_json
 from services.scripts import (
     DEFAULT_PLATFORM,
     ScriptVariant,
@@ -143,7 +143,6 @@ class ScriptGenerationEngine(Engine):
 
     def _add_ai_variants(self, context, candidates, variants_by_candidate, spec) -> int:
         """One batched LLM call writes an extra variant for the top candidates."""
-        provider = get_provider()
         order = sorted(
             range(len(candidates)),
             key=lambda i: candidates[i].get("psychology_score", 0),
@@ -175,12 +174,15 @@ class ScriptGenerationEngine(Engine):
             'Respond with JSON: {"scripts": [{"hook": "...", "pattern_interrupt": "...", '
             '"curiosity_loop": "...", "core_story": "...", "call_to_action": "..."}]}'
         )
-        data, tokens = provider.generate_json(system, user, context.get("model", ""))
+        data, tokens, provider_name = runtime_generate_json(
+            system, user, model=context.get("model", ""), operation="generate_script",
+        )
         if data is None:
-            if provider.name != "demo":
+            if provider_name and provider_name != "demo":
                 context["error"] = "AI script generation call failed; used heuristic variants."
             return 0
         context["tokens_used"] = context.get("tokens_used", 0) + tokens
+        context["provider_used"] = provider_name
 
         scripts = data.get("scripts", [])
         if len(scripts) < len(top):
