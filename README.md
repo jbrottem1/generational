@@ -4,6 +4,85 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.3 — Creative Studio & Visual Production Division (Agent 12)
+
+The creative department is live. The system now designs every visual
+production before rendering: a Creative Director interprets each script
+and generates a production blueprint, a Storyboard Engine boards it scene
+by scene, and every ContentPackage gains a `creative_package` — a complete
+CreativeProductionPackage the Render Engine can execute with
+interchangeable providers.
+
+```python
+from services.orchestrator import get_orchestrator
+
+context = {"unified_packages": [...]}            # ProductionPackages in
+get_orchestrator().run_creative_stage(context)   # design every item
+context["creative_summary"]                      # aggregate design report
+context["unified_packages"][0]["creative_package"]["storyboard"]
+```
+
+### What's new
+
+- **Creative Director** (`services/creative_studio/director.py`) —
+  interprets the script (premise, arc, key moments, emotional curve),
+  selects the production type and visual style, determines pacing,
+  cinematic language, and production complexity (high-scoring
+  opportunities are promoted to flagship treatment), chooses the
+  storytelling style, and recommends production techniques — one
+  deterministic `creative_blueprint` per item.
+- **24 modular production types** (`production_types.py`) — AI cinematic
+  video, 2D/3D animation, cartoons, anime-inspired, motion graphics,
+  whiteboard, educational explainers, science visualization, medical
+  animation, historical reconstruction, infographics, corporate
+  presentations, commercials, luxury branding, product demos,
+  documentaries, nature, children's educational, AI presenter, reaction,
+  gaming, podcast visualization, comic style — and any future medium is
+  one `register_production_type()` call, never a redesign.
+- **Storyboard Engine** (`storyboard.py`) — one professional scene per
+  narration beat: purpose, emotion, narration, visual description, camera
+  angle/movement, lighting, palette, animation style, motion instructions,
+  transitions, background, props, characters, overlays, duration, asset
+  requirements, and production notes — plus a derived shot list and
+  provider-ready asset requirements.
+- **Character System** (`characters.py`) — reusable characters (narrators,
+  mascots, AI avatars, digital humans, cartoon/branded/educational/
+  historical) whose stable `visual_signature` + `color_anchor` embed
+  verbatim into every prompt, keeping designs identical across scenes and
+  productions; on-screen characters get reusable reference-sheet assets.
+- **Style Library + Environment System** (`styles.py`, `environments.py`)
+  — 16 styles (minimal, luxury, corporate, scientific, medical, space,
+  cyberpunk, finance, history, nature, kids, anime-inspired, comic,
+  psychology, motivational, documentary) and 12 reusable environments
+  (office, laboratory, hospital, nature, space, city, classroom, factory,
+  historical, fantasy, studio) — both runtime registries with unlimited
+  expansion.
+- **Visual continuity + quality control** (`continuity.py`, `quality.py`)
+  — characters, lighting, environment, color, camera language, animation
+  style, and brand consistency tracked between scenes; QC validates
+  missing assets, broken continuity, scene completeness, timing, and
+  provider compatibility, reporting warnings gracefully and a 0-100
+  `production_readiness` score — never a crash.
+- **Provider-driven asset orchestration** (`providers/creative_provider.py`
+  + `providers/creative/`) — typed asset requirements (`ai_image`,
+  `ai_video`, `animation`, `asset_3d`, `vector_graphic`, `stock_footage`,
+  `user_asset`, `brand_asset`) resolved per type through the
+  `CreativeAssetProvider` registry; a deterministic mock serves everything
+  until real backends swap in with `register_creative_provider()` — zero
+  studio changes.
+- **Integration** — `creative_studio` engine (ContractEngine, key
+  `creative_studio`), the `creative` orchestrator stage +
+  `run_creative_stage()`, and the additive ContentPackage
+  `creative_package` slot. Only Agent 12's slot is written; script,
+  visual, audio, render, seo, publishing, and analytics slots are read,
+  never mutated.
+- **34 tests** in `tests/test_creative_studio.py` +
+  `tests/test_creative_studio_engine.py`; full suite passes (538).
+
+Docs: [`CREATIVE_STUDIO.md`](CREATIVE_STUDIO.md), plus updates to
+`DATA_CONTRACTS.md`, `PIPELINE_SPEC.md`, `ENGINE_REGISTRY.md`, and
+`MASTER_ARCHITECTURE.md`.
+
 ## Version 9.2 — Analytics & Continuous Learning Engine (Agent 9)
 
 The system now observes its own performance and gets smarter with every

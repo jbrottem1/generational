@@ -14,6 +14,7 @@ from engines.attention_graph import AttentionGraphEngine
 from engines.base import Engine, PlannedEngine
 from engines.citation import CitationEngine
 from engines.contracts import ContractEngine, FutureEngine
+from engines.creative_studio import CreativeStudioEngine
 from engines.future_stubs import BrandManagementEngine
 from engines.critic import CriticEngine
 from engines.ideation import IdeationEngine
@@ -85,6 +86,7 @@ for _engine_class in (
     SeoOptimizationEngine,
     SchedulerEngine,
     BrandManagementEngine,
+    CreativeStudioEngine,
 ):
     if registry.get_engine(_engine_class.key) is None:
         registry.register(_engine_class())

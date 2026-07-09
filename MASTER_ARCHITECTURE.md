@@ -142,6 +142,31 @@ Closes the loop. Collects post-publish performance (views, retention curves, wat
 - **Owns:** performance ingestion, attribution, learning signals, weight updates
 - **Modules:** `engines/analytics.py`, `engines/learning.py`
 
+### Agent 12: Creative Studio & Visual Production Division — LANDED
+
+The creative department — not an animation engine, not a rendering engine:
+the design layer that transforms every script into a complete visual
+production blueprint *before* rendering. A Creative Director interprets
+the script (premise, arc, key moments, emotional curve), selects the
+production type from a modular registry of 24 media (AI cinematic video,
+2D/3D animation, cartoons, anime-inspired, motion graphics, whiteboard,
+explainers, science/medical/historical visualization, infographics,
+corporate, commercials, luxury branding, product demos, documentaries,
+nature, kids, AI presenter, reaction, gaming, podcast, comic — future
+formats are one registration call), chooses the visual style (16-style
+runtime-extensible Style Library), and sets pacing, cinematic language,
+complexity, storytelling style, and techniques. A Storyboard Engine boards
+every narration beat into a fully specified professional scene; reusable
+characters keep visual consistency through stable visual signatures;
+reusable environments stage every production; continuity tracking and
+creative QC produce a production readiness score the Render Engine gates
+on. Asset sourcing is provider-driven (`CreativeAssetProvider`) — no
+vendor is ever hardcoded. Output: the ContentPackage `creative_package`
+slot (CreativeProductionPackage v1.0). See `CREATIVE_STUDIO.md`.
+
+- **Owns:** creative direction, production types, storyboards, shot lists, the character/style/environment systems, visual continuity, creative QC, creative asset requirements
+- **Modules:** `engines/creative_studio.py`, `services/creative_studio/`, `providers/creative_provider.py` + `providers/creative/`
+
 ### Development-agent landing zones (v8.1)
 
 The stage owners above describe *pipeline responsibilities*. The parallel
@@ -156,6 +181,7 @@ zones, contract stubs, and orchestrator stages already wired (see
 | Agent 8 | Global Content Optimization (SEO) — **LANDED** (live stage) | `engines/seo/` + `engines/seo_optimization.py` + `services/seo/` | `seo` |
 | Agent 9 | Analytics & Learning | `engines/analytics/` | `analytics` · `learning` |
 | Agent 10 | Multi-Brand Operating System | `engines/brands/` | `brand_management` |
+| Agent 12 | Creative Studio & Visual Production — **LANDED** (live stage) | `engines/creative_studio.py` + `services/creative_studio/` + `providers/creative/` | `creative` |
 
 Future engines subclass `ContractEngine` (`engines/contracts.py`) and fill
 their slot in the canonical `ContentPackage` (`DATA_CONTRACTS.md`). Their

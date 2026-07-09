@@ -84,6 +84,20 @@ contract); the `publishing` planned stub graduated from the former
 `DATA_CONTRACTS.md` §7 and `engines/publishing/README.md`). Real platform
 APIs swap in via `register_publishing_provider()` — one adapter per file.
 
+## Live engine (creative — Agent 12)
+
+`creative_studio` — the Creative Studio & Visual Production Division
+(`engines/creative_studio.py`, logic in `services/creative_studio/`).
+Subclasses `ContractEngine`, runs deterministically in Demo Mode, and
+designs every packaged item into a CreativeProductionPackage — Director
+blueprint, professional storyboard, shot list, animation/character/
+environment/motion/camera plans, asset requirements, thumbnail concepts,
+continuity report, and a production readiness score — written to the
+ContentPackage `creative_package` slot (see `DATA_CONTRACTS.md` §8.1 and
+`CREATIVE_STUDIO.md`). Production types, styles, environments, and
+characters are runtime registries; creative asset backends swap in per
+asset type via `register_creative_provider()` (`providers/creative/`).
+
 ## Reserved keys (planned / contract stubs — do NOT reuse)
 
 | Key | Stub type | Future owner | Stage |

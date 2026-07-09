@@ -73,6 +73,8 @@ def _stage_confidence(stage: str, context: dict) -> int:
     if stage == "quality":
         ideas = context.get("ideas", [])
         return _average([idea.get("scores", {}).get("publish", 0) for idea in ideas])
+    if stage == "creative":
+        return int(context.get("creative_summary", {}).get("average_readiness", 0))
     if stage == "render":
         return int(context.get("render_summary", {}).get("average_readiness", 0))
     if stage == "seo":
@@ -166,6 +168,9 @@ class Orchestrator:
     # Future stages (Agents 6-10) — wired now, light up when their engines
     # become ready (until then their engines are skipped and the report is
     # a WARNING with diagnostics — never a crash).
+
+    def run_creative_stage(self, context: dict) -> StageReport:
+        return self.run_stage("creative", context)
 
     def run_render_stage(self, context: dict) -> StageReport:
         return self.run_stage("render", context)

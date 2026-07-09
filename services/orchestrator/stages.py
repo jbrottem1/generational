@@ -55,6 +55,11 @@ STAGE_GROUPS: "dict[str, list[str]]" = {
     "analytics": ["analytics"],
     "learning": ["learning"],
     "brand_management": ["brand_management"],
+    # Creative Studio (Agent 12): designs packaged content into complete
+    # visual production blueprints before rendering. Runnable on demand via
+    # run_creative_stage(); scheduling it inside run_full_pipeline (between
+    # packaging and render) is an Agent 1 decision.
+    "creative": ["creative_studio"],
 }
 
 # Post-packaging distribution stages executed by the full production

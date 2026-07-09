@@ -30,6 +30,7 @@ list is `CONTENT_PACKAGE_FIELDS`.
 | `publishing_package` | dict | **Agent 7** |
 | `analytics_placeholder` / `analytics_package` | dict | **Agent 9** |
 | `learning_metadata` | dict | **Agent 9** |
+| `creative_package` | dict | **Agent 12** |
 | `status` | str | pipeline (`planned → approved/held → rendered → scheduled → published`) |
 | `diagnostics` | dict | any stage (append keys) |
 | `created_at` / `extras` | str / dict | packager / forward-compat overflow |
@@ -278,6 +279,46 @@ its own context keys; render/seo/publishing slots are read, never mutated.
 Feedback reaches upstream engines through `OrchestratorHook` (kinds
 `analytics` / `learning`) and the guidance adapters — never engine-to-engine
 calls.
+
+---
+
+## 8.1 creative_package (Agent 12) — `services/creative_studio/`
+
+The Creative Studio (`creative_studio` engine, `creative` stage) designs
+packaged content into complete visual production blueprints BEFORE
+rendering, writing the ContentPackage `creative_package` slot. Field
+tuples in `services/creative_studio/models.py` are the testable contract;
+all output is JSON-safe dicts, additive-only from 1.0. Full specification:
+`CREATIVE_STUDIO.md`.
+
+**CreativeProductionPackage** (`CREATIVE_PACKAGE_FIELDS`, v1.0):
+
+| Field | Type | Meaning |
+|---|---|---|
+| `production_type` | dict | the selected medium (`PRODUCTION_TYPE_FIELDS`) — 24 built-ins, registry-extensible |
+| `creative_blueprint` | dict | the Director's decisions (`CREATIVE_BLUEPRINT_FIELDS`): style, pacing, cinematic language, complexity, storytelling style, techniques, script interpretation |
+| `storyboard` | list | professional scenes (`STORYBOARD_SCENE_FIELDS`): purpose, emotion, narration, visuals, camera, lighting, palette, animation style, motion, transitions, background, props, characters, overlays, duration, assets, notes |
+| `shot_list` | list | flat numbered shots (`SHOT_LIST_ENTRY_FIELDS`) |
+| `animation_plan` / `motion_plan` / `camera_plan` | dict | per-scene animation techniques, motion instructions, camera work |
+| `character_plan` | dict | cast (`CHARACTER_FIELDS`) + consistency rules + scene appearances |
+| `environment_plan` | dict | environments used (`ENVIRONMENT_FIELDS`) + continuity rules + scene map |
+| `asset_requirements` | list | provider-ready requirements (`ASSET_REQUIREMENT_FIELDS`), typed by `CREATIVE_ASSET_TYPES` |
+| `thumbnail_concepts` | list | production-side thumbnail directions (Visual Intelligence's scored `thumbnail_plan` is never touched) |
+| `continuity_report` | dict | tracked characters/lighting/environment/color/camera/animation/brand + breaks + 0-100 score (`CONTINUITY_REPORT_FIELDS`) |
+| `provider_plan` | dict | asset type → provider name routing |
+| `validation` | dict | creative QC findings (warnings/blockers — never raises) |
+| `production_readiness` | dict | 0-100 score + status (`ready` / `needs_review` / `incomplete`) + blockers — the number Render can gate on |
+| `creative_diagnostics` | dict | scenes, duration, asset counts, environments, style/type/complexity |
+
+**Context keys** (additive): `creative_summary`
+(`CREATIVE_SUMMARY_FIELDS`) + `creative_packages` (creative stage output).
+
+Creative asset backends implement `CreativeAssetProvider`
+(`providers/creative_provider.py`) and register per asset type in
+`providers/creative/` (deterministic mock serves every type today).
+Agent 12 writes ONLY the `creative_package` slot and its own context keys;
+script, visual, audio, render, seo, publishing, analytics, and learning
+slots are read, never mutated.
 
 ---
 

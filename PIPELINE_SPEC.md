@@ -62,6 +62,13 @@ Learning Feedback          LIVE      Agent 9 — engines: learning
    ↓                                  recommendations per engine, cumulative
    ↓                                  memory, experiments, reports)
 
+Creative Studio            LIVE      Agent 12 — engines: creative_studio
+   (on-demand stage)                 (creative direction, storyboards,
+                                      characters, styles, environments,
+                                      continuity, readiness — designs
+                                      packaged content before rendering;
+                                      see CREATIVE_STUDIO.md)
+
 Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
    ↓
 (loops back into Trend Discovery weights for the next run)
@@ -132,7 +139,18 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
     `learning_metadata` slot, and grows the append-only long-term memory.
     Historical knowledge is never overwritten. With no history it reports
     `insufficient_data` — never a failure.
-12. **One Production Report.** Every full run attaches one unified report
+12. **Creative stage.** Live (`run_creative_stage(context)`). The Creative
+    Studio (Agent 12) designs every packaged item — Director blueprint,
+    professional storyboard, shot list, animation/character/environment/
+    motion/camera plans, asset requirements, thumbnail concepts,
+    continuity report, and a 0-100 production readiness score — into the
+    ContentPackage `creative_package` slot
+    (CreativeProductionPackage v1.0, see `CREATIVE_STUDIO.md`). It prefers
+    `unified_packages`, falls back to `ideas`, and with nothing to design
+    reports zero items — never a failure. Scheduling it automatically
+    inside `run_full_pipeline()` (between packaging and render) is an
+    Agent 1 decision via `register_stage()`.
+13. **One Production Report.** Every full run attaches one unified report
     (`services/orchestrator/report.py`) to
     `PipelineResult.production_report` /
     `context["production_report"]`: the eight production areas resolved
@@ -159,3 +177,4 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
 | analytics | analytics | live (mock metrics providers) | **Agent 9** |
 | learning | learning | live | **Agent 9** |
 | brand_management | brand_management | future | **Agent 10** |
+| creative | creative_studio | live (on-demand stage) | **Agent 12** |
