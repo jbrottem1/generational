@@ -58,6 +58,7 @@ Companions: `ENGINE_REGISTRY.md` · `SYSTEM_DEPENDENCY_MAP.md` ·
 |---|---|---|---|
 | **19** | Provider Integration & Runtime | `services/provider_runtime/` | **LIVE** |
 | **21** | End-to-End Workflow Executor | `services/workflow_executor/` | **LIVE** |
+| **24** | Executive Intelligence | `autonomous_executive` | **LIVE** |
 
 ---
 
@@ -65,7 +66,7 @@ Companions: `ENGINE_REGISTRY.md` · `SYSTEM_DEPENDENCY_MAP.md` ·
 
 | Agent | Subsystem | Reserved key | Integrates via |
 |---|---|---|---|
-| **22** | Autonomous Executive | `autonomous_executive` | `OrchestratorHook` + job queue only |
+| **22** | Real Provider Connectors | `provider_runtime/connectors/` | ProviderRuntime HTTP connectors |
 
 ### Agent 20 — Studio UI & Creative Workspace (LIVE)
 
@@ -115,6 +116,7 @@ Reserved for future BI: `business_intelligence` engine key.
 | Interface | Studio UI, creative workspace | **20** |
 | Infrastructure | Provider integration, runtime, workflow execution | **19**, **21** |
 | Executive (planned) | Autonomous operation | 22 |
+| Executive Intelligence | Company OS, strategy, delegation | **24** |
 
 ---
 

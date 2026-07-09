@@ -209,6 +209,9 @@ class Orchestrator:
     def run_learning_stage(self, context: dict) -> StageReport:
         return self.run_stage("learning", context)
 
+    def run_executive_stage(self, context: dict) -> StageReport:
+        return self.run_stage("executive", context)
+
     def run_brand_stage(self, context: dict) -> StageReport:
         return self.run_stage("brand_management", context)
 

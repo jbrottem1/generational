@@ -45,6 +45,9 @@ Regenerated during the v9.7/v9.9 architecture review.
 | `engagement` | `analytics` |
 | `environments` | `creative_studio` |
 | `executive-direction` | `ai_director` |
+| `executive-intelligence` | `autonomous_executive` |
+| `company-os` | `autonomous_executive` |
+| `engine-discovery` | `autonomous_executive` |
 | `experimentation` | `learning`, `optimization_lab` |
 | `export-preparation` | `post_production` |
 | `facial-animation` | `animation` |

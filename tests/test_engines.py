@@ -37,10 +37,14 @@ CREATIVE_STUDIO_LIVE = {"creative_studio"}
 # Agent 17 — the Post-Production & Intelligent Editing Engine is live.
 POST_PRODUCTION_LIVE = {"post_production"}
 
+# Agent 24 — the Executive Intelligence Engine is live.
+EXECUTIVE_LIVE = {"autonomous_executive"}
+
 LIVE_KEYS = (
     INTELLIGENCE_LIVE | PRODUCTION_LIVE | RENDER_LIVE
     | OPTIMIZATION_LIVE | PUBLISHING_LIVE | ANALYTICS_LIVE
     | ASSET_GENERATION_LIVE | CREATIVE_STUDIO_LIVE | POST_PRODUCTION_LIVE
+    | EXECUTIVE_LIVE
 )
 
 PLANNED_KEYS = {

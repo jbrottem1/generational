@@ -216,7 +216,7 @@ def test_future_stages_remain_wired_and_safe():
     for stage in (
         "ai_director", "creative", "character_universe", "asset_generation", "animation",
         "render", "post_production", "seo", "optimization", "publish",
-        "analytics", "learning", "brand_management",
+        "analytics", "learning", "brand_management", "executive",
     ):
         assert stage in STAGE_GROUPS, stage
         report = get_orchestrator().run_stage(stage, {"command": "probe"})

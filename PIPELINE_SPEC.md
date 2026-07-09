@@ -115,6 +115,7 @@ stub) graduates later as an audio-stage upgrade — not a distribution stage.
 | analytics | analytics | live | **Agent 10** |
 | learning | learning | live | **Agent 10** |
 | brand_management | brand_management | stub | Brand OS |
+| executive | autonomous_executive | live | **Agent 24** — manual/hook only |
 
 ---
 

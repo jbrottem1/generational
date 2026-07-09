@@ -37,6 +37,7 @@ list is `CONTENT_PACKAGE_FIELDS`.
 | `animation_package` | dict | **Agent 16** (timeline, camera, motion, lip sync, VFX — stub until merge) |
 | `post_production_package` | dict | **Agent 17** (edit timeline, scene cuts, audio mix, captions, color, exports, QC) |
 | `optimization_package` | dict | **Agent 13** (variants, scores, recommendations — stub until merge) |
+| `executive_package` | dict | **Agent 24** (decisions, goals, strategy, risk, roadmap slice, health) |
 | `status` | str | pipeline (`planned → approved/held → rendered → scheduled → published`) |
 | `diagnostics` | dict | any stage (append keys) |
 | `created_at` / `extras` | str / dict | packager / forward-compat overflow |
@@ -337,6 +338,28 @@ Agent 18 writes ONLY the `director_package` slot and its context keys;
 script, visual, audio, creative, asset, render, and all other slots are
 read, never mutated. Downstream Agents 12–17 consume orchestration notes.
 See `AI_DIRECTOR.md`.
+
+---
+
+## 8.0.1 executive_package (Agent 24) — `services/executive/`
+
+The Executive Intelligence Engine (`autonomous_executive` engine,
+`executive` stage — manual/hook only, NOT in distribution) is the company
+OS layer. Field tuples in `services/executive/models.py` are the testable
+contract; all output is JSON-safe dicts, additive-only from 1.0.
+
+**ContentPackage `executive_package` slot** (`EXECUTIVE_PACKAGE_FIELDS`, v1.0):
+`executive_package_version`, `engine_version`, `project_id`, `decisions`,
+`goals`, `strategy_snapshot`, `risk_summary`, `resource_allocation`,
+`roadmap_slice`, `health_snapshot`, `validation`, `generated_at`.
+
+**Context keys** (additive): `executive_summary`, `executive_plan`,
+`executive_dashboard`, `executive_reports`, `executive_loop`,
+`executive_packages`.
+
+Agent 24 writes ONLY the `executive_package` slot and its context keys;
+all other slots are read, never mutated. Execution delegates to the
+orchestrator only — never peer engines. See `EXECUTIVE_ENGINE.md`.
 
 ---
 

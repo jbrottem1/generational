@@ -169,7 +169,7 @@ distribution pipeline after render, before seo. See
 | `provider_runtime` | service (Agent 19 + 22) | Provider Integration & Runtime + production connectors — see `PROVIDER_INTEGRATION.md`, `PROVIDER_CONNECTORS.md` |
 | `workflow_executor` | service (Agent 21) | End-to-End Workflow Executor — see `WORKFLOW_EXECUTOR.md` |
 | `autonomous_production` | service (Agent 23) | Autonomous Production Executor — see `AUTONOMOUS_PRODUCTION_EXECUTOR.md` |
-| `autonomous_executive` | name reserved | Future Autonomous Executive |
+| `autonomous_executive` | **LIVE** Agent 24 | Executive Intelligence & Company OS — see `EXECUTIVE_ENGINE.md` |
 
 ## Studio service (Agent 20 — LIVE)
 

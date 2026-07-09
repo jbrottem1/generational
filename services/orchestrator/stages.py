@@ -65,6 +65,8 @@ STAGE_GROUPS: "dict[str, list[str]]" = {
     "analytics": ["analytics"],
     "learning": ["learning"],
     "brand_management": ["brand_management"],
+    # Agent 24 — Executive Intelligence (manual / hook; NOT distribution).
+    "executive": ["autonomous_executive"],
 }
 
 # Post-packaging distribution stages executed by the full production

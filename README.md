@@ -4,6 +4,22 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.16 — Executive Intelligence Engine (Agent 24)
+
+Company OS layer: strategic planning, decision prioritization (ROI/views/
+retention/cost/revenue/risk/confidence), resource allocation via engine
+discovery, health monitoring, executive reports, and orchestrator delegation.
+Engine key `autonomous_executive`; ContentPackage slot `executive_package`.
+Manual/hook stage — not in distribution pipeline. `APP_VERSION = 9.16.0`.
+
+```python
+from services.orchestrator import Orchestrator
+report = Orchestrator().run_executive_stage({"market_opportunities": [...]})
+```
+
+See [`EXECUTIVE_ENGINE.md`](EXECUTIVE_ENGINE.md) and
+[`EXECUTIVE_OPERATING_MODEL.md`](EXECUTIVE_OPERATING_MODEL.md).
+
 ## Version 9.15 — Production Readiness (Agent 1)
 
 Engines route all LLM calls through ProviderRuntime (`engine_api`). Studio

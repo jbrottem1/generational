@@ -47,6 +47,7 @@ from engines.timeline import TimelineEngine
 from engines.market_intelligence import MarketIntelligenceEngine
 from engines.asset_generation import AssetGenerationEngine
 from engines.creative_studio import CreativeStudioEngine
+from engines.executive import ExecutiveEngine
 from engines.post_production import PostProductionEngine
 from engines.trend_discovery import TrendDiscoveryEngine
 from engines.trend_forecasting import TrendForecastingEngine
@@ -97,6 +98,7 @@ for _engine_class in (
     PublishingEngine,
     AnalyticsEngine,
     LearningEngine,
+    ExecutiveEngine,
     SeoOptimizationEngine,
     SchedulerEngine,
     BrandManagementEngine,

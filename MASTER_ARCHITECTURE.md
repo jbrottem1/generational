@@ -266,6 +266,7 @@ zones, contract stubs, and orchestrator stages already wired (see
 | Agent 20 | Studio UI & Creative Workspace — **LANDED** | `services/studio/` + `ui/tabs/studio.py` | service + UI (not a stage) |
 | Agent 21 | End-to-End Workflow Executor — **LANDED** | `services/workflow_executor/` | service layer (not a stage) |
 | Agent 23 | Autonomous Production Executor — **LANDED** | `services/autonomous_production/` | service layer (not a stage) |
+| Agent 24 | Executive Intelligence — **LANDED** | `engines/executive.py` + `services/executive/` | `executive` (manual/hook; not distribution) |
 
 Future engines subclass `ContractEngine` (`engines/contracts.py`) and fill
 their slot in the canonical `ContentPackage` (`DATA_CONTRACTS.md`). Their

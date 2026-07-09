@@ -104,6 +104,7 @@ PRODUCTION_PACKAGE_FIELDS = [
     "animation_package",    # Agent 16 (Animation & Cinematics) writes here
     "post_production_package",  # Agent 17 (Post-Production & Intelligent Editing) writes here
     "optimization_package", # Agent 13 (Optimization Laboratory) writes here
+    "executive_package",    # Agent 24 (Executive Intelligence) writes here
     "status",
     "diagnostics",
 ]
@@ -161,6 +162,7 @@ class ProductionPackage:
     animation_package: dict = field(default_factory=dict)
     post_production_package: dict = field(default_factory=dict)
     optimization_package: dict = field(default_factory=dict)
+    executive_package: dict = field(default_factory=dict)
     status: str = "planned"      # planned | approved | held | rendered | scheduled | published
     diagnostics: dict = field(default_factory=dict)
     created_at: str = field(default_factory=_now_iso)
