@@ -2,10 +2,14 @@
 
 Every psychology-scored candidate gets multiple stylistically distinct,
 platform-aware script variants (Authority Reveal, Story First, Myth Bust,
-Countdown Payoff), each carrying the full storytelling package: hook,
-pattern interrupt, curiosity loop, core story, emotional progression,
-retention checkpoints, CTA, SEO keywords, B-roll suggestions, AI visual
-prompts, sound effects, background music style, and estimated runtime.
+Countdown Payoff). Each variant is built section-first — primary hook,
+pattern interrupt, curiosity hook, context, escalation, evidence, emotional
+peak, resolution, call to action — with per-section duration, emotional
+intensity, attention score, visual intent, B-roll type, and caption
+emphasis. The Hook Engine writes ten styled hook candidates per idea and
+ranks them using the candidate's ViralScore psychology dimensions; the
+retention model estimates drop-off risk, engagement, retention, rewatch
+probability, curiosity strength, and emotional pacing for every variant.
 
 Variants are scored 0-100 (`services/scripts/scorer.py`) and the winner is
 attached as the candidate's script, so the downstream Ranking engine can
@@ -67,6 +71,7 @@ class ScriptGenerationEngine(Engine):
         subject = context.get("subject", "")
         niche = context.get("niche", "")
         research = context.get("research", {})
+        locale = context.get("script_locale")  # language/region/dialect target
 
         variants_by_candidate = []
         for candidate in candidates:
@@ -77,6 +82,7 @@ class ScriptGenerationEngine(Engine):
                 niche=niche,
                 research=research,
                 variant_count=variant_count,
+                locale=locale,
             )
             variants_by_candidate.append(variants)
 
@@ -114,9 +120,14 @@ class ScriptGenerationEngine(Engine):
         candidate["script_score"] = best.score
         candidate["script_style"] = best.style_label
         candidate["script_platform"] = spec.key
+        candidate["script_sections"] = best.sections
+        candidate["alternate_hooks"] = best.alternate_hooks
+        candidate["hook_style"] = best.hook_style
+        candidate["script_retention"] = best.retention_model
         # The canonical handoff for Visual Intelligence and other consumers:
-        # title, hook, narration, scene breakdown, timestamps, emotional
-        # beats, visual notes, CTA, and platform format in one dict.
+        # title, ranked hooks, annotated sections, scene breakdown, emotion
+        # and attention timelines, voice/caption direction, retention model,
+        # CTA, platform format, and locale in one dict.
         candidate["structured_script"] = build_structured_script(candidate, best, spec)
         candidate["estimated_runtime_sec"] = best.estimated_runtime_sec
         candidate["retention_checkpoints"] = best.retention_checkpoints
@@ -187,6 +198,8 @@ class ScriptGenerationEngine(Engine):
                 style_label="AI Enhanced",
                 platform=spec.key,
                 hook=script_data.get("hook", candidates[i].get("hook", "")),
+                hook_style="ai",
+                alternate_hooks=base.alternate_hooks,
                 pattern_interrupt=script_data.get("pattern_interrupt", ""),
                 curiosity_loop=script_data.get("curiosity_loop", ""),
                 core_story=script_data["core_story"],
@@ -197,9 +210,12 @@ class ScriptGenerationEngine(Engine):
                 visual_prompts=base.visual_prompts,
                 sound_effects=base.sound_effects,
                 music_style=base.music_style,
+                locale=base.locale,
                 source="ai",
             )
-            finalize_variant(variant, spec.words_per_minute)
+            # finalize rebuilds the section architecture from the flat AI
+            # fields, so AI variants carry the same structure as heuristic ones.
+            finalize_variant(variant, spec.words_per_minute, candidates[i].get("psychology"))
             variants_by_candidate[i].append(variant)
             enhanced += 1
         return enhanced

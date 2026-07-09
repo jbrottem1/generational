@@ -4,6 +4,75 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 7.9 — Structured Cinematic Storytelling (Script Engine 2.0)
+
+The Script Generation Engine is upgraded from a text generator into a
+professional content writing system for high-retention short-form video.
+
+### Section architecture (`services/scripts/sections.py`)
+
+Every script is now built section-first. Each variant carries an ordered
+list of annotated narrative sections — **Primary Hook (0–3s), Pattern
+Interrupt, Curiosity Hook, Context, Escalation, Evidence / Explanation,
+Emotional Peak, Resolution, Call To Action** — and every section includes
+narration, estimated duration, emotional intensity, attention score,
+visual intent, recommended B-roll type, and caption emphasis. The legacy
+flat fields (`hook`, `curiosity_loop`, `core_story`, ...) are derived
+views, so every downstream engine keeps working unchanged.
+
+### Hook Engine (`services/scripts/hooks.py`)
+
+Ten hook styles — Curiosity, Shock, Question, FOMO, Statistics,
+Contrarian, Story, Mystery, Authority, Urgency — each write a candidate
+opening line per idea. Candidates are scored 0–100 (with a psychology
+bonus mapped from the idea's ViralScore dimensions, so a controversial
+concept favors contrarian hooks while an emotional one favors story
+hooks) and ranked. The best hook becomes the variant's Primary Hook; the
+runners-up travel with the script as `alternate_hooks`.
+
+### Retention model (`services/scripts/retention.py`)
+
+Every variant estimates **viewer drop-off risk, engagement score,
+retention score, rewatch probability, curiosity strength, and emotional
+pacing** (label + intensity curve) from its section-level attention and
+intensity curves, its text, and the idea's psychology. Predicted
+retention feeds back into variant scoring.
+
+### Director-ready scene breakdown
+
+Every script converts into scenes: scene number, start/end time,
+narration, visual description, camera style, motion recommendation,
+caption text, sound cue, and transition recommendation — one scene per
+section, timed contiguously to the estimated runtime.
+
+### Structured output 2.0 (`services/scripts/structure.py`)
+
+`structured_script` now returns the full production brief: title, hook,
+alternate hooks, annotated sections, scene list, full narration,
+estimated runtime, **emotion timeline**, **attention timeline**, visual
+prompts, **voice instructions** (pace, tone, per-section delivery
+direction), **caption plan**, retention model, CTA, platform format, and
+locale.
+
+### Multi-language ready
+
+Every variant and structured script carries a `Locale`
+(language / region / dialect, default `en-US`). A future Translation
+Engine can rewrite narration per market without touching any engine
+contract.
+
+### Psychology integration
+
+Generation consumes the candidate's ViralScore dimensions end to end:
+hook ranking adapts to the idea's psychological strengths, section
+intensity/attention curves shift with its emotional profile, and the
+retention model blends first-3-second hook, curiosity gap, and
+share/comment likelihood signals.
+
+Platform coverage is unchanged (YouTube Shorts, TikTok, Instagram Reels,
+Facebook Reels, X video, long-form YouTube), with per-platform pacing and
+CTA styles.
+
 ## Version 7.8 — Cinematic AI Director (Visual Intelligence 2.0)
 
 The Visual Intelligence Engine is upgraded from a visual planner into a
@@ -921,7 +990,7 @@ generational/
 ├── services/
 │   ├── research/             # Knowledge Engine (manager, cache, scorer, summarizer)
 │   ├── trends/               # Trend Discovery (models, scorer, manager)
-│   ├── scripts/              # Script Generation (models, platforms, generator, scorer)
+│   ├── scripts/              # Script Generation (models, sections, hooks, retention, platforms, generator, scorer, structure)
 │   ├── visual/               # Visual Intelligence (models, psychology, scenes, prompts, thumbnails, hooks, package)
 │   ├── audio/                # Voice & Audio (models, voice, narration, sfx, music, retention, package)
 │   ├── behavioral_intelligence/ # v7.7 unified report API (models, builder, adapters)
