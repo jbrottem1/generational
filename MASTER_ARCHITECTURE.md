@@ -224,6 +224,8 @@ Every engine receives and returns updates to a shared `context: dict`. Key field
 
 Generational is developed using a three-tool workflow. Each tool has a distinct role; overlap is intentional but bounded.
 
+> **Multiple agents now work on this codebase in parallel.** Ownership rules, merge safety rules, branch strategy, and the pre-merge review checklist live in [`AGENT_WORKFLOW.md`](AGENT_WORKFLOW.md). Read it before editing shared files.
+
 ### Role Split
 
 | Tool | Primary Role | When to Use |
