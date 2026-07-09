@@ -13,6 +13,7 @@ from engines.ranking import RANKING_WEIGHTS_WITH_SCRIPT
 from services.scripts import (
     PLATFORM_SPECS,
     SCRIPT_PLATFORMS,
+    STRUCTURED_SCRIPT_FIELDS,
     VARIANT_SCORE_WEIGHTS,
     generate_script_package,
     generate_variants,
@@ -192,6 +193,63 @@ def test_script_fallback_engine_preserves_generated_variants():
     assert idea["script"] == original_script  # fallback never overwrites
 
 
+def test_structured_script_contains_all_required_fields():
+    expected = {
+        "title", "hook", "narration", "scene_breakdown", "timestamps",
+        "emotional_beats", "visual_notes", "cta", "platform_format",
+    }
+    assert set(STRUCTURED_SCRIPT_FIELDS) == expected
+
+    context = _engine_context()
+    registry.get_engine("script_generation").run(context)
+    for candidate in context["candidates"]:
+        structured = candidate["structured_script"]
+        assert set(structured) == expected
+        for field in expected:
+            assert structured[field], field
+        assert structured["title"] == candidate["title"]
+        assert structured["hook"] == candidate["script_variants"][0]["hook"]
+        assert structured["narration"] == candidate["script"]
+        assert structured["cta"] == candidate["cta"]
+        assert structured["platform_format"]["key"] == "youtube_shorts"
+        assert structured["platform_format"]["aspect_ratio"]
+
+
+def test_structured_scene_breakdown_is_contiguous_and_annotated():
+    context = _engine_context()
+    registry.get_engine("script_generation").run(context)
+    for candidate in context["candidates"]:
+        structured = candidate["structured_script"]
+        scenes = structured["scene_breakdown"]
+        runtime = structured["timestamps"]["estimated_runtime_sec"]
+        assert len(scenes) >= 4  # hook, interrupt/loop, core story, cta
+        assert scenes[0]["section"] == "hook"
+        assert scenes[-1]["section"] == "cta"
+        assert scenes[0]["start_sec"] == 0.0
+        assert scenes[-1]["end_sec"] == runtime
+        for prev, cur in zip(scenes, scenes[1:]):
+            assert cur["start_sec"] == prev["end_sec"]
+        for scene in scenes:
+            assert scene["narration"].strip()
+            assert scene["duration_sec"] > 0
+            assert scene["emotion"] in structured["emotional_beats"]
+            assert scene["visual_note"]
+        boundaries = structured["timestamps"]["scene_boundaries_sec"]
+        assert boundaries == [s["start_sec"] for s in scenes] + [float(runtime)]
+        assert all("time_sec" in cp for cp in structured["timestamps"]["retention_checkpoints"])
+
+
+def test_standalone_package_includes_structured_script():
+    for platform in SCRIPT_PLATFORMS:
+        package = generate_script_package(
+            IDEA, platform=platform, subject="black holes", niche="Science", research=RESEARCH,
+        )
+        structured = package["structured_script"]
+        assert set(structured) == set(STRUCTURED_SCRIPT_FIELDS)
+        assert structured["platform_format"]["key"] == platform
+        assert structured["narration"] == package["best_variant"]["full_script"]
+
+
 def test_script_output_satisfies_visual_intelligence_contract():
     """Guard the Script Generation → Visual Intelligence (Agent 4) seam.
 
@@ -239,6 +297,11 @@ def test_script_output_satisfies_visual_intelligence_contract():
         # visual notes
         assert all(s["visual_description"] for s in scenes)
         assert package["image_prompts"] and package["video_prompts"]
+        # structured output stays consistent with the visual plan's inputs
+        structured = candidate["structured_script"]
+        assert structured["hook"] == scenes[0]["narration"]
+        assert structured["emotional_beats"] == variants[0]["emotional_progression"]
+        assert structured["timestamps"]["estimated_runtime_sec"] == candidate["estimated_runtime_sec"]
 
 
 def test_full_pipeline_still_succeeds_end_to_end():

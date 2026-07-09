@@ -217,6 +217,7 @@ Every engine receives and returns updates to a shared `context: dict`. Key field
 | `candidates[].psychology`, `.psychology_score`, `.viral_score`, `.psychology_report` | Psychology | Script Generation, Ranking, Quality, UI (idea card report expander) |
 | `psychology_summary` | Psychology | UI, diagnostics |
 | `candidates[].script_variants`, `.script`, `.cta`, `.script_score`, `.script_style`, `.estimated_runtime_sec`, `.retention_checkpoints`, `.broll_suggestions`, `.visual_prompts`, `.sound_effects`, `.music_style` | Script Generation | Ranking, Critic, Citation, Quality, Production, UI |
+| `candidates[].structured_script` (title, hook, narration, scene_breakdown, timestamps, emotional_beats, visual_notes, cta, platform_format) | Script Generation | Visual Intelligence, future renderers |
 | `script_generation_summary` | Script Generation | UI, diagnostics |
 | `target_platform`, `script_variant_count` | Caller (optional) | Script Generation, Visual Intelligence |
 | `candidates[].visual_package` (`.scenes`, `.storyboard`, `.image_prompts`, `.video_prompts`, `.thumbnails`, `.hook_sequence`, `.caption_plan`, `.pacing_report`, `.camera_plan`, `.motion_report`, `.visual_score`), `.visual_score`, `.thumbnail_concepts` | Visual Intelligence | Future renderers (image/video/thumbnail/caption), UI (visual package expander) |

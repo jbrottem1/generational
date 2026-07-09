@@ -32,6 +32,7 @@ from services.scripts.platforms import (
     get_platform_spec,
 )
 from services.scripts.scorer import VARIANT_SCORE_WEIGHTS, rank_variants, score_variant
+from services.scripts.structure import STRUCTURED_SCRIPT_FIELDS, build_structured_script
 
 __all__ = [
     "DEFAULT_PLATFORM",
@@ -40,9 +41,11 @@ __all__ = [
     "PlatformSpec",
     "REQUIRED_VARIANT_COMPONENTS",
     "SCRIPT_PLATFORMS",
+    "STRUCTURED_SCRIPT_FIELDS",
     "ScriptVariant",
     "VARIANT_SCORE_WEIGHTS",
     "VARIANT_STYLES",
+    "build_structured_script",
     "estimate_runtime_sec",
     "finalize_variant",
     "generate_script_package",
@@ -73,10 +76,12 @@ def generate_script_package(
     )
     ranked = rank_variants(variants)
     best = ranked[0]
+    spec = get_platform_spec(platform)
     return {
-        "platform": get_platform_spec(platform).key,
+        "platform": spec.key,
         "variant_count": len(ranked),
         "variants": [variant.to_dict() for variant in ranked],
         "best_variant": best.to_dict(),
         "best_score": best.score,
+        "structured_script": build_structured_script(idea, best, spec),
     }

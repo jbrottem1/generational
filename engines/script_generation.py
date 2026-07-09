@@ -30,6 +30,7 @@ from engines.base import Engine
 from services.scripts import (
     DEFAULT_PLATFORM,
     ScriptVariant,
+    build_structured_script,
     finalize_variant,
     generate_variants,
     get_platform_spec,
@@ -83,7 +84,7 @@ class ScriptGenerationEngine(Engine):
 
         for candidate, variants in zip(candidates, variants_by_candidate):
             ranked = rank_variants(variants)
-            self._attach(context, candidate, ranked, spec.key)
+            self._attach(context, candidate, ranked, spec)
 
         best_scores = [c["script_score"] for c in candidates]
         summary = {
@@ -104,7 +105,7 @@ class ScriptGenerationEngine(Engine):
         )
         return {"candidates": candidates, "script_generation_summary": summary}
 
-    def _attach(self, context: dict, candidate: dict, ranked: list, platform: str) -> None:
+    def _attach(self, context: dict, candidate: dict, ranked: list, spec) -> None:
         """Attach the ranked variants and promote the winner to the script slot."""
         best = ranked[0]
         candidate["script_variants"] = [variant.to_dict() for variant in ranked]
@@ -112,7 +113,11 @@ class ScriptGenerationEngine(Engine):
         candidate["cta"] = best.call_to_action
         candidate["script_score"] = best.score
         candidate["script_style"] = best.style_label
-        candidate["script_platform"] = platform
+        candidate["script_platform"] = spec.key
+        # The canonical handoff for Visual Intelligence and other consumers:
+        # title, hook, narration, scene breakdown, timestamps, emotional
+        # beats, visual notes, CTA, and platform format in one dict.
+        candidate["structured_script"] = build_structured_script(candidate, best, spec)
         candidate["estimated_runtime_sec"] = best.estimated_runtime_sec
         candidate["retention_checkpoints"] = best.retention_checkpoints
         candidate["emotional_progression"] = best.emotional_progression
