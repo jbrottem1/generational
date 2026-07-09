@@ -53,6 +53,17 @@ Future engines declare which keys they consume/produce via
 
 ---
 
+## 2.1 Shared analysis library — `engines/analysis.py`
+
+Pure deterministic functions needed by more than one engine (the
+18-dimension psychology scorer, the script critique). Per Architecture
+Directive #1, shared logic moves here instead of creating engine-to-engine
+imports. Any engine may import it freely; it imports no engines, touches no
+context, and has no side effects. The Psychology and Critic engines
+re-export its functions for backward compatibility.
+
+---
+
 ## 3. Engine contract — `engines/contracts.py`
 
 Future engines subclass `ContractEngine` (which extends `Engine`) and

@@ -9,6 +9,13 @@ describes *who may change what, and how*.
 other's modules. All coordination happens through the shared `context` dict
 and the Workflow Engine — and through this document.
 
+This is now formalized as **Architecture Directive #1 — Orchestrator-Only
+Communication** (`ARCHITECTURE_DIRECTIVES.md`), enforced by
+`tests/test_architecture.py`: no engine imports another engine; shared
+logic lives in `engines/analysis.py` / `engines/heuristics.py`; the
+orchestrator alone coordinates execution. A PR that introduces an
+engine-to-engine dependency fails the test suite.
+
 ---
 
 ## 1. Current Active Agents
@@ -54,6 +61,7 @@ is the authoritative per-agent scope definition. Read it before writing code.
 | Path | Why it is shared |
 |---|---|
 | `engines/heuristics.py` | Imported by **seven** modules (psychology, critic, revision, seo, quality, research citation, summarizer). Only **add** helpers; never change existing signatures or constants without checking all importers. |
+| `engines/analysis.py` | Shared analysis library (Directive #1): the psychology dimension scorer and script critique live here so engines never import each other. Only **add** functions; changing existing behavior changes multiple engines' scores at once. |
 | `engines/quality.py` | Final gate — consumes scores produced by psychology, citation, and research. Threshold logic changes affect every agent's output. |
 | `core/constants.py` | App-wide config. Add keys; don't rename or remove. `APP_VERSION` bumps belong to the agent shipping the release. |
 | `core/state.py` | Session defaults. Add keys only. |

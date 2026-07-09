@@ -4,6 +4,36 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 8.5 — Architecture Directive #1: Orchestrator-Only Communication
+
+Engine-to-engine communication is now formally prohibited and automatically
+enforced. Full directive: [`ARCHITECTURE_DIRECTIVES.md`](ARCHITECTURE_DIRECTIVES.md).
+
+### The rule
+
+No engine calls another engine — ever. All coordination flows
+Orchestrator → ContentPackage/shared context → next engine. Every engine
+knows only its declared `input_contract` and `output_contract`.
+
+### Shared analysis library
+
+The two remaining engine-to-engine imports were refactored away into
+`engines/analysis.py`, the new shared pure-function library beside
+`engines/heuristics.py`: the 18-dimension psychology scorer (previously
+imported by the Attention Graph from the Psychology engine) and the script
+critique (previously imported by the Revision engine and citation service
+from the Critic engine). The Psychology and Critic engines re-export both,
+so every existing import path still works.
+
+### Automated enforcement
+
+`tests/test_architecture.py` statically scans every engine module's imports
+and fails the suite on any prohibited dependency, verifies engines don't
+drive each other through the registry, verifies the orchestrator itself
+stays engine-agnostic, and proves at runtime that one command flows through
+every stage into `ContentPackage` objects with missing engines degrading
+gracefully.
+
 ## Version 8.4 — Publishing & Distribution Engine (Agent 7)
 
 The publish stage is live. `engines/publishing/` + `services/publishing/`

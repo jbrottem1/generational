@@ -61,7 +61,9 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
    `ContentPackage` / `ProductionPackage` (see `DATA_CONTRACTS.md`). During
    intelligence stages the shared `context` dict carries state; the packager
    folds it into packages at the end. Future stages receive packages.
-2. **No stage calls another stage.** The orchestrator
+2. **No stage calls another stage.** This is Architecture Directive #1 —
+   Orchestrator-Only Communication (`ARCHITECTURE_DIRECTIVES.md`), enforced
+   by `tests/test_architecture.py`. The orchestrator
    (`services/orchestrator/`) sequences everything; engines communicate only
    through context/package fields declared in their contracts.
 3. **Statuses.** Every stage returns SUCCESS, WARNING, FAILED, or SKIPPED

@@ -38,7 +38,7 @@ from engines.heuristics import (
     stable_jitter,
     weighted_blend,
 )
-from engines.psychology import score_dimensions as _psychology_dimensions
+from engines.analysis import score_dimensions as _psychology_dimensions
 from services.behavioral_intelligence import attach_report
 
 logger = get_logger(__name__)

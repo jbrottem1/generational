@@ -17,6 +17,11 @@ truth at runtime; this document is its map.
   diagnostics`.
 - `is_ready()` gates execution: not-ready engines are skipped by the
   workflow with diagnostics — never a crash.
+- **Directive #1:** the registry exists for registration and orchestrator
+  discovery. Engines never call `get_engine()` to fetch and run another
+  engine — shared logic belongs in `engines/analysis.py` /
+  `engines/heuristics.py`, and coordination belongs to the orchestrator.
+  Enforced by `tests/test_architecture.py`.
 
 ## Live engines (intelligence)
 

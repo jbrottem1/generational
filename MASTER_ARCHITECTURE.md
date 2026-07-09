@@ -3,7 +3,7 @@
 **Document status:** Canonical architecture reference. Every agent (human or AI) working on this codebase reads this first.
 **Entry point:** `app.py` (Streamlit shell only — no business logic).
 
-**Companion documents:** [`OPERATING_SYSTEM.md`](OPERATING_SYSTEM.md) (how the pieces form one OS) · [`PIPELINE_SPEC.md`](PIPELINE_SPEC.md) (complete stage flow, live + future) · [`DATA_CONTRACTS.md`](DATA_CONTRACTS.md) (ContentPackage, context keys, engine contracts) · [`ENGINE_REGISTRY.md`](ENGINE_REGISTRY.md) (registered + reserved engine keys) · [`ORCHESTRATOR.md`](ORCHESTRATOR.md) (kernel API) · [`AGENT_WORKFLOW.md`](AGENT_WORKFLOW.md) (ownership + merge safety).
+**Companion documents:** [`ARCHITECTURE_DIRECTIVES.md`](ARCHITECTURE_DIRECTIVES.md) (mandatory rules — read Directive #1 first) · [`OPERATING_SYSTEM.md`](OPERATING_SYSTEM.md) (how the pieces form one OS) · [`PIPELINE_SPEC.md`](PIPELINE_SPEC.md) (complete stage flow, live + future) · [`DATA_CONTRACTS.md`](DATA_CONTRACTS.md) (ContentPackage, context keys, engine contracts) · [`ENGINE_REGISTRY.md`](ENGINE_REGISTRY.md) (registered + reserved engine keys) · [`ORCHESTRATOR.md`](ORCHESTRATOR.md) (kernel API) · [`AGENT_WORKFLOW.md`](AGENT_WORKFLOW.md) (ownership + merge safety).
 
 ---
 
@@ -62,7 +62,7 @@ Trend Discovery
 Rules of the pipeline:
 
 - **Stages are sequential and gated.** A candidate that fails a stage's quality threshold does not advance.
-- **Stages never call each other directly.** They consume the previous stage's output object and emit their own. Orchestration lives in `services/orchestrator/` (see [`ORCHESTRATOR.md`](ORCHESTRATOR.md)) — the single interface every consumer (UI, future scheduler, automation) uses; nothing invokes engines directly.
+- **Stages never call each other directly.** This is **Architecture Directive #1 — Orchestrator-Only Communication** (see [`ARCHITECTURE_DIRECTIVES.md`](ARCHITECTURE_DIRECTIVES.md)), enforced by `tests/test_architecture.py`. Engines consume the previous stage's output object and emit their own; shared analysis logic lives in `engines/analysis.py` / `engines/heuristics.py`, never in engine-to-engine imports. Orchestration lives in `services/orchestrator/` (see [`ORCHESTRATOR.md`](ORCHESTRATOR.md)) — the single interface every consumer (UI, future scheduler, automation) uses; nothing invokes engines directly.
 - **Every stage is independently runnable and testable** with a fixture input, without running the stages before it.
 - **The Learning Engine closes the loop.** Its outputs feed back into Trend Discovery, Psychology scoring, Script Generation, and scheduling decisions.
 

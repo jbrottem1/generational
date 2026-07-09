@@ -60,3 +60,10 @@ Every future subsystem plugs in the same way:
 - A failing stage stops the run gracefully; a missing engine skips with
   diagnostics — the OS never crashes because a subsystem is absent.
 - All contracts evolve additively; old packages always deserialize.
+- **Architecture Directive #1 — Orchestrator-Only Communication** (see
+  `ARCHITECTURE_DIRECTIVES.md`): no engine ever calls another engine. All
+  coordination is Orchestrator → ContentPackage/context → next engine, and
+  `tests/test_architecture.py` fails the build on any prohibited
+  engine-to-engine import. Shared logic lives in the foundation libraries
+  (`engines/analysis.py`, `engines/heuristics.py`), never in cross-engine
+  calls.
