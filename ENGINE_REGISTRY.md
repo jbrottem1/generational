@@ -25,10 +25,23 @@ truth at runtime; this document is its map.
 
 ## Live engines (intelligence)
 
-`trend_discovery` · `opportunity_ranking` · `research` · `ideation` ·
+`trend_discovery` · `opportunity_ranking` · `trend_forecasting` ·
+`research` · `ideation` ·
 `psychology` · `script_generation` · `visual_intelligence` · `voice_audio` ·
 `attention_graph` · `ranking` · `script` · `critic` · `revision` ·
 `citation` · `seo` · `threat_detection` · `quality`
+
+## Live engine (trend intelligence — Agent 11)
+
+`trend_forecasting` — the Trend Discovery & Forecasting Engine
+(`engines/trend_forecasting.py`, logic in `services/trend_intelligence/`).
+Subclasses `ContractEngine`, runs deterministically in Demo Mode inside
+the trend stage right after `opportunity_ranking`, and produces
+`trend_forecasts`, `trend_classifications`, `opportunity_recommendations`,
+and `trend_intelligence_report` (see `DATA_CONTRACTS.md` §2.2 and
+`TREND_INTELLIGENCE.md`). New trend sources auto-discover from
+`providers/trend_sources/`; the on-demand query surface is the
+`OpportunityFeed` (`services/trend_intelligence/feed.py`).
 
 ## Live engines (media production)
 

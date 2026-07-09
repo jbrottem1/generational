@@ -29,6 +29,8 @@ class StepStatus:
 WORKFLOWS = {
     "ideation": ["ideation"],
     # The intelligence pipeline: trend discovery → opportunity ranking →
+    # trend forecasting (Agent 11: forecasts, classifications, structured
+    # recommendations, and quality control over the ranked opportunities) →
     # research → 20 candidates → psychology scoring → script generation
     # (multiple scored variants per candidate, immediately after psychology)
     # → attention graph (12-dimension radar + recommendations, Phase 2) →
@@ -46,6 +48,7 @@ WORKFLOWS = {
     "intelligence": [
         "trend_discovery",
         "opportunity_ranking",
+        "trend_forecasting",
         "research",
         "ideation",
         "psychology",
@@ -65,6 +68,7 @@ WORKFLOWS = {
     "full_content": [
         "trend_discovery",
         "opportunity_ranking",
+        "trend_forecasting",
         "research",
         "ideation",
         "psychology",

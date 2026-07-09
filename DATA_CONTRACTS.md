@@ -49,7 +49,11 @@ Never rename or remove these keys; add new ones instead:
 `production_packages`, `pipeline_steps`, `publish_mode`,
 `production_report` (v9.0 — the unified Production Report written by the
 orchestrator at the end of every full run; see
-`services/orchestrator/report.py`).
+`services/orchestrator/report.py`),
+`trend_forecasts`, `trend_classifications`, `opportunity_recommendations`,
+`trend_intelligence_report` (v9.1 — **Agent 11**, written by the
+`trend_forecasting` engine after opportunity ranking; see §2.2 and
+`TREND_INTELLIGENCE.md`).
 
 Future engines declare which keys they consume/produce via
 `input_contract` / `output_contract` on `ContractEngine`.
@@ -64,6 +68,28 @@ Directive #1, shared logic moves here instead of creating engine-to-engine
 imports. Any engine may import it freely; it imports no engines, touches no
 context, and has no side effects. The Psychology and Critic engines
 re-export its functions for backward compatibility.
+
+---
+
+## 2.2 Trend intelligence contracts (Agent 11) — `services/trend_intelligence/models.py`
+
+The `trend_forecasting` engine (runs inside the trend stage, after
+`opportunity_ranking`) emits three list keys plus one report, all
+additive; the field tuples in `services/trend_intelligence/models.py`
+are the testable contract:
+
+| Context key | Shape | Contract |
+|---|---|---|
+| `trend_forecasts` | list of TrendForecast dicts | `FORECAST_FIELDS`: days_to_peak, expected_lifespan_days, trajectory, saturation_risk, publishing_window, recommended_posts_per_week, future_opportunity_score, forecast_confidence |
+| `trend_classifications` | list of classification dicts | `CLASSIFICATION_FIELDS`: lifecycle (breaking/exploding/emerging/growing/peak/declining), content_type (evergreen/seasonal/recurring/topical), market_reach (niche/mid_market/mass_market), labels |
+| `opportunity_recommendations` | list of OpportunityRecommendation dicts, sorted by priority | `RECOMMENDATION_FIELDS`: recommended_platform, hook_direction, psychology_strategy, recommended_duration_sec, recommended_format, thumbnail_direction, title_direction, seo_recommendations, publishing_window, estimated_roi, confidence_score, risk_score, priority_score |
+| `trend_intelligence_report` | dict | QC results (kept/dropped/conflicts), classification histograms, historical_performance factor, top_recommendation, average_priority |
+
+Recommendations are strategy only — never scripts or content. The same
+enriched shapes are served on demand by the `OpportunityFeed`
+(`services/trend_intelligence/feed.py`): `top_opportunity` / `top(n)` /
+`emerging` / `evergreen` / `for_platform` / `highest_roi` /
+`highest_confidence`. See `TREND_INTELLIGENCE.md`.
 
 ---
 

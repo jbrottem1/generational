@@ -79,6 +79,13 @@ Finds what to make before anyone asks. Pulls signals from trend providers, norma
 - **Owns:** trend ingestion, opportunity scoring, idea candidate creation
 - **Modules:** `engines/trend_discovery.py`, `engines/opportunity_ranking.py`, `services/trends/`
 
+### Agent 11: Trend Forecasting & Intelligence Engine — LANDED
+
+The prediction layer on top of Agent 1's discovery. Quality-controls the raw signal batch (duplicates, near-duplicates, expired/stale signals, spam, low-confidence and conflicting sources), forecasts each ranked opportunity (time to peak, expected lifespan, growth trajectory, saturation risk, publishing window and cadence, projected future score, forecast confidence), classifies it on three axes (lifecycle: breaking→declining; content type: evergreen/seasonal/recurring/topical; market reach: niche→mass market), and emits one structured recommendation per opportunity — platform, hook direction, psychology strategy, duration, format, thumbnail/title direction, SEO guidance, ROI, risk, and priority. The `OpportunityFeed` answers the pipeline's queries on demand (top / top-10 / emerging / evergreen / per-platform / highest-ROI / highest-confidence), and Knowledge-Base performance history feeds every ranking (learning loop). Recommendations are strategy only — this agent never generates content. Six additional provider adapters (Instagram, Facebook, X, blogs, industry publications, internal historical analytics) extend discovery coverage. See `TREND_INTELLIGENCE.md`.
+
+- **Owns:** trend quality control, forecasting, opportunity classification, structured recommendations, the opportunity feed, trend-intelligence configuration
+- **Modules:** `engines/trend_forecasting.py`, `services/trend_intelligence/`, new drop-in providers under `providers/trend_sources/`
+
 ### Agent 2: Psychology & Virality Engine
 
 The attention scientist. Scores every candidate idea across psychological dimensions (curiosity, emotional charge, identity relevance, novelty, controversy, and more), blends them into a weighted ViralScore, and explains the score in plain English. Also screens for psychological failure modes (clickbait without payoff, weak hooks, policy risk). Exposes its three scoring modules through one standardized **Behavioral Intelligence API** (Section 5.1) so any other agent's engine can consume a single typed report instead of three separately-shaped dicts.

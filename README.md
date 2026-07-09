@@ -4,6 +4,76 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.1 — Trend Discovery & Forecasting Engine (Agent 11)
+
+The intelligence division: the system now predicts **what to create next**
+before any content is generated. A new `trend_forecasting` engine runs
+inside the trend stage right after Opportunity Ranking, and a query-able
+`OpportunityFeed` serves the same intelligence on demand.
+
+```python
+from services.trend_intelligence import get_opportunity_feed
+
+feed = get_opportunity_feed()
+feed.top_opportunity("sleep science", category="science")  # the single best bet
+feed.top("sleep science", n=10)                            # top 10
+feed.emerging("sleep science")                             # breaking / emerging / exploding
+feed.evergreen("sleep science")                            # long-tail earners
+feed.for_platform("sleep science", "tiktok")               # platform-specific
+feed.highest_roi("sleep science")                          # ranked by estimated ROI
+feed.highest_confidence("sleep science")                   # ranked by confidence
+```
+
+Every result is a structured opportunity — the scored trend plus its
+forecast, classification, and recommendation. Never a script.
+
+### What's new
+
+- **Forecast Engine** (`services/trend_intelligence/forecaster.py`) —
+  deterministic predictions per opportunity: days to peak, expected
+  lifespan, growth trajectory (explosive → declining), saturation risk,
+  recommended publishing window and weekly cadence, projected future
+  opportunity score, and forecast confidence.
+- **Opportunity classification** (`classifier.py`) — three axes:
+  lifecycle (breaking · exploding · emerging · growing · peak ·
+  declining), content type (evergreen · seasonal · recurring · topical),
+  market reach (niche · mid_market · mass_market).
+- **Recommendation Engine** (`recommender.py`) — one structured
+  recommendation per opportunity: platform, hook direction, psychology
+  strategy, duration, format, thumbnail/title direction, SEO guidance,
+  publishing window, estimated ROI, confidence, risk, and a single
+  priority score. Strategy only; generation stays with the Script,
+  Visual, and SEO engines.
+- **Quality control** (`quality.py`) — duplicates collapse to the
+  strongest copy, near-duplicates drop on token similarity, expired /
+  stale / spam / low-confidence signals are filtered, and conflicting
+  sources are flagged with confidence discounted. Fully reported in
+  `trend_intelligence_report`.
+- **Learning integration** (`history.py`) — Knowledge-Base performance
+  history becomes the `historical_performance` ranking factor on every
+  run, and the new `internal_analytics` provider re-enters proven
+  winners as high-confidence signals. Weights retune via
+  `configure(...)` — data, not code.
+- **Six new provider adapters** (drop-in, auto-discovered):
+  `instagram_trends`, `facebook_trends`, `x_trends`, `blog_feeds`,
+  `industry_publications`, `internal_analytics` — thirteen sources total,
+  all behind the same `TrendSourceProvider` contract.
+- **Configuration** (`config.py`) — one dataclass for regions, languages,
+  platforms, provider enablement, polling interval, forecast horizons,
+  classification thresholds, QC gates, and ROI/priority weights;
+  overridable via `data/trend_intelligence/config.json` or
+  `configure(**overrides)`.
+- **Pipeline integration** — new additive context keys
+  (`trend_forecasts`, `trend_classifications`,
+  `opportunity_recommendations`, `trend_intelligence_report`); existing
+  trend keys untouched. The engine is a `ContractEngine` with declared
+  contracts, validated on every run.
+- **41 tests** in `tests/test_trend_forecasting.py`; full suite passes.
+
+Docs: `TREND_INTELLIGENCE.md` (architecture, contracts, extension guide),
+plus updates to `DATA_CONTRACTS.md` §2.2, `PIPELINE_SPEC.md`,
+`ENGINE_REGISTRY.md`, `MASTER_ARCHITECTURE.md`, `AGENT_WORKFLOW.md`.
+
 ## Version 9.0 — Complete Integrated Production Pipeline (Agent 9)
 
 Every completed engine now runs inside **one unified production workflow**

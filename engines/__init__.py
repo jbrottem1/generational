@@ -39,6 +39,7 @@ from engines.subtitle import SubtitleEngine
 from engines.threat_detection import ThreatDetectionEngine
 from engines.timeline import TimelineEngine
 from engines.trend_discovery import TrendDiscoveryEngine
+from engines.trend_forecasting import TrendForecastingEngine
 from engines.video import VideoEngine
 from engines.visual_intelligence import VisualIntelligenceEngine
 from engines.visual_planning import VisualPlanningEngine
@@ -50,6 +51,7 @@ __all__ = ["Engine", "PlannedEngine", "ContractEngine", "FutureEngine", "registr
 for _engine_class in (
     TrendDiscoveryEngine,
     OpportunityRankingEngine,
+    TrendForecastingEngine,
     ResearchEngine,
     IdeationEngine,
     PsychologyEngine,

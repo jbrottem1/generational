@@ -22,6 +22,7 @@ logger = get_logger(__name__)
 STAGE_OF_ENGINE = {
     "trend_discovery": "trend",
     "opportunity_ranking": "trend",
+    "trend_forecasting": "trend",
     "research": "research",
     "ideation": "research",
     "psychology": "psychology",
@@ -36,7 +37,7 @@ STAGE_OF_ENGINE = {
 # stages). Future engines ADD entries — render, publish, learning, avatar,
 # voice clone, brand manager, ...
 STAGE_GROUPS: "dict[str, list[str]]" = {
-    "trend": ["trend_discovery", "opportunity_ranking"],
+    "trend": ["trend_discovery", "opportunity_ranking", "trend_forecasting"],
     "research": ["research", "ideation"],
     "psychology": ["psychology"],
     "script": ["script_generation"],
