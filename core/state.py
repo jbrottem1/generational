@@ -26,6 +26,10 @@ DEFAULTS = {
     "research_confidence_threshold": DEFAULT_RESEARCH_SETTINGS["research_confidence_threshold"],
     "max_unsupported_claims": DEFAULT_RESEARCH_SETTINGS["max_unsupported_claims"],
     "min_claim_confidence": DEFAULT_RESEARCH_SETTINGS["min_claim_confidence"],
+    "studio_settings": None,
+    "studio_pipeline": [],
+    "studio_command": "",
+    "_studio_action": None,
 }
 
 
@@ -33,6 +37,9 @@ def init_session_state() -> None:
     for key, value in DEFAULTS.items():
         if key not in st.session_state:
             st.session_state[key] = value
+    if st.session_state.studio_settings is None:
+        from services.studio import build_default_settings
+        st.session_state.studio_settings = build_default_settings()
 
 
 def record_ideas_generated(count: int) -> None:

@@ -10,8 +10,8 @@ from __future__ import annotations
 import re
 
 from core.log import get_logger, log_event
+from engines.analysis import analyze_script, critic_score
 from engines.base import Engine
-from engines.critic import analyze_script, critic_score
 from engines.heuristics import ABSOLUTE_CLAIMS, BORING_REPLACEMENTS, sentences
 
 logger = get_logger(__name__)

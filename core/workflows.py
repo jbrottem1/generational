@@ -29,42 +29,62 @@ class StepStatus:
 WORKFLOWS = {
     "ideation": ["ideation"],
     # The intelligence pipeline: trend discovery → opportunity ranking →
+    # trend forecasting (Agent 11: forecasts, classifications, structured
+    # recommendations, and quality control over the ranked opportunities) →
     # research → 20 candidates → psychology scoring → script generation
     # (multiple scored variants per candidate, immediately after psychology)
     # → attention graph (12-dimension radar + recommendations, Phase 2) →
-    # weighted ranking (psychology + opportunity + script quality) →
-    # script fallback for anything unscripted → critic → revision →
-    # citation → SEO packaging → final quality scores + publish gate.
+    # visual intelligence (the Cinematic AI Director: directed storyboard,
+    # shot list, style presets, retention prediction, AI prompts, asset
+    # requests, thumbnails, render package — consumes trend, psychology,
+    # structured script, and attention graph signals) → voice & audio (Audio
+    # Production Package: narration plan, voice style, pacing/pauses/emphasis,
+    # SFX, music direction, mood, scene cues, retention notes — planning
+    # only, before any rendering) → weighted ranking (psychology +
+    # opportunity + script quality) → script fallback for anything
+    # unscripted → critic → revision → citation → SEO packaging → threat
+    # detection (10 failure modes, Phase 3) → final quality scores +
+    # publish gate.
     "intelligence": [
         "trend_discovery",
         "opportunity_ranking",
+        "trend_forecasting",
+        "market_intelligence",
         "research",
         "ideation",
         "psychology",
         "script_generation",
         "attention_graph",
+        "visual_intelligence",
+        "voice_audio",
         "ranking",
         "script",
         "critic",
         "revision",
         "citation",
         "seo",
+        "threat_detection",
         "quality",
     ],
     "full_content": [
         "trend_discovery",
         "opportunity_ranking",
+        "trend_forecasting",
+        "market_intelligence",
         "research",
         "ideation",
         "psychology",
         "script_generation",
         "attention_graph",
+        "visual_intelligence",
+        "voice_audio",
         "ranking",
         "script",
         "critic",
         "revision",
         "citation",
         "seo",
+        "threat_detection",
         "quality",
         "voice",
         "image",
@@ -92,6 +112,7 @@ class StepResult:
     status: str
     error: str = ""
     duration_ms: int = 0
+    problems: list = field(default_factory=list)   # contract-validation findings
 
 
 @dataclass
@@ -114,10 +135,27 @@ class WorkflowRun:
                     "status": step.status,
                     "error": step.error,
                     "duration_ms": step.duration_ms,
+                    "problems": list(step.problems),
                 }
                 for step in self.steps
             ],
         }
+
+
+def _validate_contract(engine, method: str, payload: dict) -> list:
+    """Contract validation findings for one engine — never raises.
+
+    Classic engines have no contracts (no findings); ContractEngine
+    subclasses declare input/output keys and report what is missing. The
+    orchestrator surfaces findings as stage diagnostics, never failures.
+    """
+    validator = getattr(engine, method, None)
+    if validator is None:
+        return []
+    try:
+        return [f"{engine.key}: {problem}" for problem in (validator(payload) or [])]
+    except Exception as exc:  # noqa: BLE001 - validation must never break a run
+        return [f"{engine.key}: {method} raised {exc}"]
 
 
 class WorkflowEngine:
@@ -143,17 +181,21 @@ class WorkflowEngine:
                 log_event(logger, "workflow.step_skipped", workflow=name, engine=key)
                 continue
 
+            problems = _validate_contract(engine, "validate_input", context)
             started = time.time()
             try:
                 updates = engine.run(context) or {}
                 context.update(updates)
+                problems += _validate_contract(engine, "validate_output", updates)
                 duration = int((time.time() - started) * 1000)
-                run.steps.append(StepResult(engine_key=key, status=StepStatus.SUCCEEDED, duration_ms=duration))
+                run.steps.append(
+                    StepResult(engine_key=key, status=StepStatus.SUCCEEDED, duration_ms=duration, problems=problems)
+                )
                 log_event(logger, "workflow.step_succeeded", workflow=name, engine=key, duration_ms=duration)
             except Exception as exc:  # noqa: BLE001 - one bad step must not crash the app
                 duration = int((time.time() - started) * 1000)
                 run.steps.append(
-                    StepResult(engine_key=key, status=StepStatus.FAILED, error=str(exc), duration_ms=duration)
+                    StepResult(engine_key=key, status=StepStatus.FAILED, error=str(exc), duration_ms=duration, problems=problems)
                 )
                 log_event(logger, "workflow.step_failed", workflow=name, engine=key, error=str(exc))
                 break

@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from engines.critic import analyze_script
+from engines.analysis import analyze_script
 from engines.heuristics import ABSOLUTE_CLAIMS, AUTHORITY_WORDS, clamp, count_hits, has_digit
 from services.research.models import ResearchDocument
 

@@ -1,28 +1,58 @@
-# Integration Checklist — Psychology + Script Generation
+# Engine Integration Checklist (v9.6)
 
-Run this checklist top-to-bottom when the Psychology and Script Generation
-agents have both landed, before declaring the combined pipeline stable.
-Ownership and merge rules: see `AGENT_WORKFLOW.md`.
+Run this checklist top-to-bottom for **every new engine or agent** before
+its work merges to `main`. It replaces the one-off v7.1 checklist; the
+Creative Studio integration gap (engine built but never registered — nine
+failing tests) is exactly the class of failure this list prevents.
 
-**State at time of writing (2026-07-08):** Psychology v7.1.0 is merged and
-pushed (`239593e`). Script Generation is in progress and uncommitted — it is
-touching shared files (`core/workflows.py`, `engines/__init__.py`,
-`requirements.txt`, `services/ideation.py`), so steps 7–8 deserve extra care.
+## Before writing code
 
-## Checklist
+- [ ] **1. Claim your identity** — agent row in `AGENT_REGISTRY.md`, engine
+  key(s) in `ENGINE_REGISTRY.md`, ownership row in `AGENT_WORKFLOW.md` §2.1.
+- [ ] **2. Read the directives** — `ARCHITECTURE_DIRECTIVES.md` (Directive
+  #1: never import another engine), `DATA_CONTRACTS.md`, your landing-zone
+  README if one exists.
+- [ ] **3. Reserve your package slot** — if you need a new ContentPackage
+  field, add it (additive-only) to `services/orchestrator/models.py` AND
+  `PRODUCTION_PACKAGE_FIELDS` AND `DATA_CONTRACTS.md` §1 — with Agent 1 review.
+- [ ] **4. Branch** — `feature/<subsystem-name>` off latest `main`.
 
-- [ ] **1. Pull latest main** — `git pull origin main`; working tree clean before starting (`git status`).
-- [ ] **2. Confirm Psychology commit is present** — `git log --oneline | grep v7.1.0` shows `239593e v7.1.0 Psychology & Virality Engine`.
-- [ ] **3. Confirm Script Generation commit is present** — a `v7.2.0`-series commit exists containing `engines/script_generation.py` (or its final module name) and its tests; no leftover uncommitted script work in the tree.
-- [ ] **4. Run full tests** — `python -m pytest` passes with zero failures (baseline was 103 before Script Generation; expect more).
-- [ ] **5. Launch Streamlit** — `streamlit run app.py` starts with no import errors or tracebacks in the terminal.
-- [ ] **6. Test one full command end-to-end** — in the Ideas tab, run e.g. "Create 3 science shorts about black holes" and verify the flow Trend Discovery → Opportunity Ranking → Research → Psychology → Script: trend panel renders, psychology/viral scores appear per idea, scripts are generated, quality gate reports publishable counts.
-- [ ] **7. Check for duplicate engines** — one module per engine `key`; verify `engines/script.py` vs new `engines/script_generation.py` don't both register a scripting stage, and `WORKFLOWS["intelligence"]` references each stage exactly once.
-- [ ] **8. Check shared files for conflicts** — review the merged state of `core/workflows.py`, `engines/__init__.py`, `engines/heuristics.py`, `core/constants.py`, `services/ideation.py`, `services/production.py` (stage defs match workflow), `requirements.txt`, and `ui/components.py`; no clobbered registrations, no renamed/removed context keys.
-- [ ] **9. Confirm docs are updated** — `README.md` has version sections for both releases; `MASTER_ARCHITECTURE.md` engine tables, pipeline diagram, version roadmap, and test count reflect the merged state.
-- [ ] **10. Confirm next safe agent is Production Engine** — with the intelligence pipeline stable through Quality, the Render/Production Package agent starts next on `feature/render-package-engine`; add its ownership row to `AGENT_WORKFLOW.md` §2.1 before it writes code.
+## While building
+
+- [ ] **5. Subclass `ContractEngine`** — declare `version`,
+  `input_contract`, `output_contract`, `dependencies` (registered keys
+  only), `capabilities`.
+- [ ] **6. Vendor code behind providers** — SDKs/APIs live in `providers/`,
+  swappable per file; engines/services import interfaces only.
+- [ ] **7. Degrade, never crash** — empty input → a "no items" summary;
+  broken item → per-item diagnostics; missing provider → mock/demo mode.
+
+## Before committing
+
+- [ ] **8. Register the engine** — import + registration loop entry in
+  `engines/__init__.py` (append-only). *An unregistered engine is invisible
+  to the orchestrator and every test that resolves it by key.*
+- [ ] **9. Wire the stage** — `STAGE_GROUPS` (and `STAGE_OF_ENGINE` /
+  `DISTRIBUTION_STAGES` / `WORKFLOWS` if the full pipeline should run it) —
+  Agent 1 review.
+- [ ] **10. Run the FULL suite** — `python3 -m pytest tests/` — all green,
+  including `tests/test_architecture.py` (import rules, registry/stage
+  consistency, dependency-graph validity).
+- [ ] **11. Update docs** — `README.md` version section,
+  `PIPELINE_SPEC.md` flow + stage table, `ENGINE_REGISTRY.md`,
+  `DATA_CONTRACTS.md` for new context keys, your subsystem doc.
+- [ ] **12. Commit only owned files** — stage by explicit path; check
+  `git status` before and after.
+
+## After merging
+
+- [ ] **13. Streamlit smoke test** — `streamlit run app.py` launches; one
+  full command runs end to end.
+- [ ] **14. Verify the machine registries** — your engine appears in
+  `registry.describe_all()`, `registry.capability_index()`, and (if it
+  declares dependencies) `registry.dependency_graph()`.
 
 ## If anything fails
 
-Stop the next agent from starting. Fix on a feature branch, re-run the full
+Stop the next agent from starting. Fix on the feature branch, re-run the
 checklist, and only then hand off. `main` must remain releasable at all times.

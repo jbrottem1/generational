@@ -3,11 +3,12 @@ from engines import registry
 from engines.base import PlannedEngine
 
 INTELLIGENCE_LIVE = {
-    "trend_discovery", "opportunity_ranking",
+    "trend_discovery", "opportunity_ranking", "trend_forecasting",
+    "market_intelligence",
     "research", "ideation", "psychology", "script_generation",
-    "attention_graph",
+    "visual_intelligence", "voice_audio", "attention_graph",
     "ranking", "script",
-    "critic", "revision", "citation", "seo", "quality",
+    "critic", "revision", "citation", "seo", "threat_detection", "quality",
 }
 
 PRODUCTION_LIVE = {
@@ -15,9 +16,41 @@ PRODUCTION_LIVE = {
     "subtitle", "timeline", "render_package", "publishing_queue",
 }
 
-LIVE_KEYS = INTELLIGENCE_LIVE | PRODUCTION_LIVE
+# Agent 6 — the render stage engines are live (mock providers, real plans).
+RENDER_LIVE = {"image", "video", "render"}
 
-PLANNED_KEYS = {"voice", "image", "video", "publishing", "analytics", "learning"}
+# Agent 8 — the Global Content Optimization Engine is live.
+OPTIMIZATION_LIVE = {"seo_optimization"}
+
+# Agent 7 — the Publishing & Distribution Engine (+ scheduler) is live.
+PUBLISHING_LIVE = {"publishing", "scheduler"}
+
+# Agent 9 — the Analytics & Continuous Learning Engine is live.
+ANALYTICS_LIVE = {"analytics", "learning"}
+
+# Agent 14 — the Universal Asset Generation Engine is live.
+ASSET_GENERATION_LIVE = {"asset_generation"}
+
+# Agent 12 — the Creative Studio Engine is live.
+CREATIVE_STUDIO_LIVE = {"creative_studio"}
+
+# Agent 17 — the Post-Production & Intelligent Editing Engine is live.
+POST_PRODUCTION_LIVE = {"post_production"}
+
+LIVE_KEYS = (
+    INTELLIGENCE_LIVE | PRODUCTION_LIVE | RENDER_LIVE
+    | OPTIMIZATION_LIVE | PUBLISHING_LIVE | ANALYTICS_LIVE
+    | ASSET_GENERATION_LIVE | CREATIVE_STUDIO_LIVE | POST_PRODUCTION_LIVE
+)
+
+PLANNED_KEYS = {
+    "voice",
+    # Contract stubs — light up when feature branches merge
+    "brand_management",
+    "optimization_lab",      # Agent 13
+    "character_universe",    # Agent 15
+    "animation",             # Agent 16
+}
 
 EXPECTED_KEYS = LIVE_KEYS | PLANNED_KEYS
 

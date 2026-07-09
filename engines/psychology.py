@@ -26,26 +26,10 @@ context keys, and the report shape all stay the same.
 from __future__ import annotations
 
 from core.log import get_logger, log_event
+from engines.analysis import score_dimensions
 from engines.base import Engine
-from engines.heuristics import (
-    COMMUNITY_WORDS,
-    CONTROVERSY_WORDS,
-    CURIOSITY_WORDS,
-    EMOTION_WORDS,
-    FEAR_WORDS,
-    HUMOR_WORDS,
-    IDENTITY_WORDS,
-    NOVELTY_WORDS,
-    SATISFACTION_WORDS,
-    SURPRISE_WORDS,
-    VISUAL_WORDS,
-    clamp,
-    content_words,
-    count_hits,
-    has_digit,
-    sentences,
-    stable_jitter,
-)
+from engines.heuristics import weighted_blend
+from services.behavioral_intelligence import attach_report
 
 logger = get_logger(__name__)
 
@@ -189,98 +173,17 @@ def _tier_for(score: int) -> str:
     return TIER_THRESHOLDS[-1][1]
 
 
-def _density_score(text: str, word_count: int, jitter: int) -> int:
-    """Reward a healthy content-word ratio; penalize both fluff and jargon walls."""
-    if word_count == 0:
-        return clamp(40 + jitter)
-    ratio = len(content_words(text)) / word_count
-    deviation = abs(ratio - 0.42)
-    return clamp(90 - deviation * 160 + jitter)
-
-
-def score_dimensions(text: str) -> dict:
-    """Score a title+hook text across all 18 ViralScore dimensions (0-100)."""
-    lower = text.lower()
-    words = text.split()
-    word_count = len(words) or 1
-    jitter = stable_jitter(text)
-
-    hook_sentences = sentences(text)
-    hook_sentence = hook_sentences[0] if hook_sentences else text
-    hook_words = hook_sentence.split()
-    hook_punch_words = count_hits(hook_sentence, CURIOSITY_WORDS + SURPRISE_WORDS + EMOTION_WORDS)
-
-    raw = {
-        "curiosity_gap": 42 + 13 * min(count_hits(text, CURIOSITY_WORDS), 3) + (8 if "?" in text else 0),
-        "emotional_intensity": 40 + 15 * min(count_hits(text, EMOTION_WORDS), 3) + (5 if "!" in text else 0),
-        "surprise": 38 + 16 * min(count_hits(text, SURPRISE_WORDS), 3),
-        "novelty": 40 + 15 * min(count_hits(text, NOVELTY_WORDS), 3) + (6 if has_digit(text) else 0),
-        "fear": 32 + 17 * min(count_hits(text, FEAR_WORDS), 3),
-        "humor": 32 + 18 * min(count_hits(text, HUMOR_WORDS), 3),
-        "satisfaction": 38 + 15 * min(count_hits(text, SATISFACTION_WORDS), 3),
-        "retention_potential": (
-            44
-            + (10 if "you" in lower else 0)
-            + (10 if 8 <= word_count <= 28 else 0)
-            + (6 if count_hits(text, CURIOSITY_WORDS) else 0)
-        ),
-        "replay_value": (
-            36
-            + (14 if has_digit(text) else 0)
-            + 10 * min(count_hits(text, CURIOSITY_WORDS) + count_hits(text, SURPRISE_WORDS), 3)
-        ),
-        "comment_likelihood": (
-            34
-            + (14 if "?" in text else 0)
-            + 12 * min(count_hits(text, CONTROVERSY_WORDS), 3)
-            + (6 if count_hits(text, IDENTITY_WORDS) else 0)
-        ),
-        "share_likelihood": (
-            38
-            + 9
-            * min(
-                count_hits(text, CURIOSITY_WORDS)
-                + count_hits(text, EMOTION_WORDS)
-                + count_hits(text, SURPRISE_WORDS),
-                4,
-            )
-            + (6 if count_hits(text, IDENTITY_WORDS) else 0)
-        ),
-        "controversy": 28 + 16 * min(count_hits(text, CONTROVERSY_WORDS), 3),
-        "visual_hook_strength": (
-            36 + 15 * min(count_hits(text, VISUAL_WORDS), 3) + (6 if has_digit(text) else 0)
-        ),
-        "first_3_second_hook": (
-            40
-            + (14 if len(hook_words) <= 12 else 0)
-            + (10 if hook_sentence.strip().endswith("?") else 0)
-            + (8 if hook_punch_words else 0)
-        ),
-        "dopamine_curve": (
-            34
-            + (12 if has_digit(text) else 0)
-            + 10 * min(count_hits(text, CURIOSITY_WORDS) + count_hits(text, SATISFACTION_WORDS), 3)
-        ),
-        "audience_identity": 34 + 16 * min(count_hits(text, IDENTITY_WORDS), 3),
-        "community_appeal": 34 + 15 * min(count_hits(text, COMMUNITY_WORDS), 3),
-    }
-
-    dimensions = {key: clamp(value + jitter) for key, value in raw.items()}
-    # Controversy is intentionally bounded — platform safety caps how much a
-    # divisive angle can move the score, even with heavy trigger-word usage.
-    dimensions["controversy"] = clamp(raw["controversy"] + jitter, high=75)
-    dimensions["information_density"] = _density_score(text, word_count, jitter)
-
-    return dimensions
-
-
+# The 18-dimension scorer now lives in the shared analysis library
+# (`engines/analysis.py`) per Architecture Directive #1, so the Attention
+# Graph can consume it without an engine-to-engine import. Re-exported here
+# because this module remains its public psychology-facing home.
 # Backward-compatible alias for the pre-v7.1 six-dimension API name.
 score_text = score_dimensions
 
 
 def viral_score(dimensions: dict) -> int:
     """Weighted 0-100 ViralScore from the 18 psychology dimensions."""
-    return clamp(sum(dimensions[key] * weight for key, weight in VIRAL_SCORE_WEIGHTS.items()))
+    return weighted_blend(dimensions, VIRAL_SCORE_WEIGHTS)
 
 
 # Backward-compatible alias — earlier versions called this overall_score.
@@ -351,6 +254,12 @@ class PsychologyEngine(Engine):
             candidate["psychology_score"] = score
             candidate["viral_score"] = score
             candidate["psychology_report"] = report
+            # Behavioral Intelligence API (Phase 4): a standardized report any
+            # engine can consume by attribute access. Available from this point
+            # on for every downstream stage — Script Generation, Visual
+            # Intelligence, and Voice & Audio all run before the Attention Graph
+            # and Threat Detection refresh it with richer data below.
+            attach_report(candidate)
 
         avg_score = round(sum(c["viral_score"] for c in candidates) / len(candidates), 1) if candidates else 0
         log_event(logger, "psychology.scored", candidates=len(candidates), avg_viral_score=avg_score)

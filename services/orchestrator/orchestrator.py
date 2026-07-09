@@ -1,0 +1,421 @@
+"""The Orchestrator — the single entry point of the AI Content Operating System.
+
+Coordinates every subsystem (trend discovery → opportunity ranking →
+psychology → script → visual → audio → refinement → quality gate → media
+production → packaging → render → global content optimization → publishing)
+into ONE production pipeline behind ONE interface:
+
+    result = get_orchestrator().run_full_pipeline("Create 3 science shorts...")
+    result.production_report   # one unified Production Report per run
+
+Design rules:
+- The orchestrator never contains engine logic. It executes stage groups
+  (see stages.py) through the existing WorkflowEngine and folds the final
+  context into ProductionPackage objects (see packager.py).
+- Every stage returns SUCCESS / WARNING / FAILED plus diagnostics. A failed
+  intelligence stage stops the run gracefully (partial results preserved);
+  a failed distribution stage (render / seo / publish) degrades the run to
+  WARNING and the remaining stages still execute — never a crash.
+- Future subsystems plug in via `register_stage()` and autonomy agents via
+  `hooks.attach_hook()` — never by editing this module.
+"""
+
+from __future__ import annotations
+
+import time
+from datetime import datetime, timezone
+
+from core.constants import DEFAULT_MODEL, DEFAULT_PUBLISH_THRESHOLD, IDEAS_PER_BATCH
+from core.log import get_logger, log_event
+from core.workflows import WorkflowEngine
+from services.orchestrator.hooks import notify_hooks
+from services.orchestrator.models import (
+    PipelineResult,
+    ProductionPackage,
+    StageReport,
+    StageStatus,
+)
+from services.orchestrator.packager import build_packages
+from services.orchestrator.report import build_production_report
+from services.orchestrator.stages import build_pipeline_plan, distribution_stage_names, get_stage
+
+logger = get_logger(__name__)
+
+
+def _now_iso() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
+def _average(values: list) -> int:
+    return int(round(sum(values) / len(values))) if values else 0
+
+
+def _stage_confidence(stage: str, context: dict) -> int:
+    """0-100 confidence signal per stage, read from what the stage produced."""
+    candidates = context.get("candidates", [])
+    if stage == "trend":
+        return int(context.get("top_opportunity", {}).get("opportunity_score", 0))
+    if stage == "research":
+        return int(context.get("research", {}).get("research_confidence", 0) * 100)
+    if stage == "psychology":
+        return _average([c.get("psychology_score", 0) for c in candidates])
+    if stage == "script":
+        return _average([c.get("script_score", 0) for c in candidates])
+    if stage == "visual":
+        return int(context.get("visual_intelligence_summary", {}).get("average_visual_score", 0))
+    if stage == "audio":
+        return int(context.get("voice_audio_summary", {}).get("average_audio_score", 0))
+    if stage == "attention":
+        return int(context.get("attention_graph_summary", {}).get("average_attention_score", 0))
+    if stage == "refinement":
+        selected = context.get("selected_ideas", [])
+        return _average([idea.get("seo_score", 0) for idea in selected])
+    if stage == "quality":
+        ideas = context.get("ideas", [])
+        return _average([idea.get("scores", {}).get("publish", 0) for idea in ideas])
+    if stage == "render":
+        return int(context.get("render_summary", {}).get("average_readiness", 0))
+    if stage == "creative":
+        return int(context.get("creative_summary", {}).get("average_readiness", 0))
+    if stage == "ai_director":
+        return int(context.get("ai_director_summary", {}).get("average_confidence", 0))
+    if stage == "post_production":
+        return int(context.get("post_production_summary", {}).get("average_readiness", 0))
+    if stage == "seo":
+        return int(context.get("seo_optimization_report", {}).get("overall_optimization_score", 0))
+    if stage == "publish":
+        publishing = context.get("publishing_result", {})
+        jobs = int(publishing.get("jobs_created", 0))
+        if not jobs:
+            return 0
+        landed = int(publishing.get("published", 0)) + int(publishing.get("scheduled", 0))
+        return int(round(landed * 100 / jobs))
+    return 0
+
+
+class Orchestrator:
+    """One clean interface over the whole pipeline; engines plug in underneath."""
+
+    def __init__(self, workflow_engine: "WorkflowEngine | None" = None) -> None:
+        self._workflows = workflow_engine or WorkflowEngine()
+
+    # ------------------------------------------------------------- stages
+
+    def run_stage(self, stage: str, context: dict, engine_keys: "list | None" = None) -> StageReport:
+        """Execute one named stage group against a shared context."""
+        engine_keys = engine_keys if engine_keys is not None else get_stage(stage)
+        report = StageReport(stage=stage, started_at=_now_iso())
+        started = time.time()
+        log_event(logger, "orchestrator.stage_started", stage=stage, engines=len(engine_keys))
+
+        if not engine_keys:
+            report.status = StageStatus.FAILED
+            report.errors.append(f"Unknown stage: {stage!r}")
+        else:
+            run = self._workflows.execute(engine_keys, context)
+            steps = run.summary()["steps"]
+            report.diagnostics["steps"] = steps
+            skipped = [s["engine"] for s in steps if s["status"] == "skipped"]
+            failed = [s for s in steps if s["status"] == "failed"]
+
+            # Contract validation findings (ContractEngine input/output
+            # declarations) are diagnostics + warnings — never failures.
+            validation = [problem for s in steps for problem in s.get("problems", [])]
+            if validation:
+                report.diagnostics["contract_validation"] = validation
+                report.warnings.extend(validation)
+
+            if failed:
+                report.status = StageStatus.FAILED
+                report.errors = [f"{s['engine']}: {s['error']}" for s in failed]
+            elif skipped:
+                report.status = StageStatus.WARNING
+                report.warnings.append(f"Engines not ready, skipped: {', '.join(skipped)}")
+            if context.get("error"):
+                report.warnings.append(str(context["error"]))
+                if report.status == StageStatus.SUCCESS:
+                    report.status = StageStatus.WARNING
+
+        report.finished_at = _now_iso()
+        report.duration_ms = int((time.time() - started) * 1000)
+        report.confidence = _stage_confidence(stage, context)
+        log_event(
+            logger,
+            "orchestrator.stage_finished",
+            stage=stage,
+            status=report.status,
+            duration_ms=report.duration_ms,
+            confidence=report.confidence,
+            warnings=len(report.warnings),
+            errors=len(report.errors),
+        )
+        return report
+
+    # Named stage runners — the stable public surface. Each runs its group
+    # against the provided context (from a prior stage or a fixture).
+
+    def run_trend_stage(self, context: dict) -> StageReport:
+        return self.run_stage("trend", context)
+
+    def run_script_stage(self, context: dict) -> StageReport:
+        return self.run_stage("script", context)
+
+    def run_visual_stage(self, context: dict) -> StageReport:
+        return self.run_stage("visual", context)
+
+    def run_audio_stage(self, context: dict) -> StageReport:
+        return self.run_stage("audio", context)
+
+    def run_quality_stage(self, context: dict) -> StageReport:
+        return self.run_stage("quality", context)
+
+    # Media-generation & distribution stages (Agents 6-18). Live engines
+    # run; FutureEngine stubs (character_universe, animation, optimization_lab)
+    # skip with WARNING diagnostics until their feature branches merge.
+
+    def run_ai_director_stage(self, context: dict) -> StageReport:
+        return self.run_stage("ai_director", context)
+
+    def run_creative_stage(self, context: dict) -> StageReport:
+        return self.run_stage("creative", context)
+
+    def run_character_universe_stage(self, context: dict) -> StageReport:
+        return self.run_stage("character_universe", context)
+
+    def run_asset_generation_stage(self, context: dict) -> StageReport:
+        return self.run_stage("asset_generation", context)
+
+    def run_animation_stage(self, context: dict) -> StageReport:
+        return self.run_stage("animation", context)
+
+    def run_render_stage(self, context: dict) -> StageReport:
+        return self.run_stage("render", context)
+
+    def run_post_production_stage(self, context: dict) -> StageReport:
+        return self.run_stage("post_production", context)
+
+    def run_seo_stage(self, context: dict) -> StageReport:
+        return self.run_stage("seo", context)
+
+    def run_optimization_stage(self, context: dict) -> StageReport:
+        return self.run_stage("optimization", context)
+
+    def run_publish_stage(self, context: dict) -> StageReport:
+        return self.run_stage("publish", context)
+
+    def run_analytics_stage(self, context: dict) -> StageReport:
+        return self.run_stage("analytics", context)
+
+    def run_learning_stage(self, context: dict) -> StageReport:
+        return self.run_stage("learning", context)
+
+    def run_brand_stage(self, context: dict) -> StageReport:
+        return self.run_stage("brand_management", context)
+
+    # ------------------------------------------------------- full pipeline
+
+    def run_full_pipeline(
+        self,
+        command: str,
+        count: int = IDEAS_PER_BATCH,
+        model: str = DEFAULT_MODEL,
+        threshold: int = DEFAULT_PUBLISH_THRESHOLD,
+        research_settings: "dict | None" = None,
+        project_name: "str | None" = None,
+        target_platform: str = "youtube_shorts",
+        publish_mode: str = "scheduled",
+        context_extra: "dict | None" = None,
+    ) -> PipelineResult:
+        """User command → ProductionPackage list + one Production Report.
+
+        Runs the complete integrated workflow: intelligence stages (trend →
+        psychology → script → visual → audio → refinement → quality), media
+        production, packaging, then the distribution stages (render → global
+        content optimization → publishing). `publish_mode` defaults to
+        "scheduled" so nothing is posted immediately without an explicit
+        "immediate" request.
+        """
+        context = {
+            "command": command,
+            "count": count,
+            "model": model,
+            "threshold": threshold,
+            "research_settings": research_settings,
+            "project_name": project_name,
+            "target_platform": target_platform,
+            "publish_mode": publish_mode,
+        }
+        context.update(context_extra or {})
+        result = PipelineResult(status=StageStatus.SUCCESS, context=context)
+        plan = build_pipeline_plan()
+        log_event(logger, "orchestrator.pipeline_started", command=command[:80], stages=len(plan))
+
+        for stage, engine_keys in plan:
+            report = self.run_stage(stage, context, engine_keys=engine_keys)
+            result.stage_reports.append(report)
+            if report.status == StageStatus.FAILED:
+                result.status = StageStatus.FAILED
+                result.error = "; ".join(report.errors) or f"Stage '{stage}' failed."
+                log_event(logger, "orchestrator.pipeline_stopped", stage=stage, error=result.error)
+                result.production_report = build_production_report(result)
+                notify_hooks(result)
+                return result
+
+        # Engine-level step results (same shape the UI dashboard has always
+        # consumed) — set before production so its dashboard is accurate.
+        context["pipeline_steps"] = [
+            step
+            for report in result.stage_reports
+            for step in report.diagnostics.get("steps", [])
+        ]
+
+        result.stage_reports.append(self._run_production(context))
+        result.stage_reports.append(self._run_packaging(context, result))
+
+        # Distribution: asset generation → render → global content
+        # optimization → publishing. These operate on the packaged output; a failure here degrades the
+        # run to WARNING (errors preserved in the report) instead of
+        # discarding the finished content — the pipeline never crashes.
+        for stage in distribution_stage_names():
+            report = self.run_stage(stage, context)
+            result.stage_reports.append(report)
+            if report.status == StageStatus.FAILED:
+                log_event(logger, "orchestrator.stage_degraded", stage=stage, errors=len(report.errors))
+
+        self._refresh_packages(context, result)
+        context["pipeline_steps"] = [
+            step
+            for report in result.stage_reports
+            for step in report.diagnostics.get("steps", [])
+        ]
+
+        if any(r.status in (StageStatus.WARNING, StageStatus.FAILED) for r in result.stage_reports):
+            result.status = StageStatus.WARNING
+
+        result.production_report = build_production_report(result)
+        context["production_report"] = result.production_report
+        log_event(
+            logger,
+            "orchestrator.pipeline_finished",
+            status=result.status,
+            packages=len(result.packages),
+            publish_ready=sum(1 for p in result.packages if p.publish_ready),
+        )
+        notify_hooks(result)
+        return result
+
+    def _refresh_packages(self, context: dict, result: PipelineResult) -> None:
+        """Re-fold `unified_packages` (enriched in place by the distribution
+        stages: render/seo/publishing package slots, status advances) back
+        into the ProductionPackage objects the caller receives."""
+        unified = context.get("unified_packages")
+        if not unified:
+            return
+        try:
+            result.packages = [ProductionPackage.from_dict(pkg) for pkg in unified]
+        except Exception as exc:  # noqa: BLE001 - keep packaging output on any mismatch
+            log_event(logger, "orchestrator.package_refresh_failed", level=30, error=str(exc))
+
+    # ------------------------------------------------ internal final steps
+
+    def _run_production(self, context: dict) -> StageReport:
+        """Media production + publishing queue for quality-approved ideas.
+
+        Reuses services/production.py wholesale — the orchestrator adds
+        status/diagnostics, not a second production path.
+        """
+        from services.production import run_media_production
+
+        report = StageReport(stage="production", started_at=_now_iso())
+        started = time.time()
+        log_event(logger, "orchestrator.stage_started", stage="production")
+
+        try:
+            production = run_media_production(context)
+            context.update(production)
+            report.diagnostics["packages"] = len(production.get("production_packages", []))
+            report.diagnostics["queued"] = production.get("queued_count", 0)
+            if production.get("production_error"):
+                report.status = StageStatus.FAILED
+                report.errors.append(str(production["production_error"]))
+            elif production.get("production_skipped"):
+                report.status = StageStatus.WARNING
+                report.warnings.append("No publishable ideas — media production skipped.")
+            report.confidence = 100 if production.get("production_packages") else 0
+        except Exception as exc:  # noqa: BLE001 - graceful stop, never crash
+            report.status = StageStatus.FAILED
+            report.errors.append(str(exc))
+
+        report.finished_at = _now_iso()
+        report.duration_ms = int((time.time() - started) * 1000)
+        log_event(
+            logger, "orchestrator.stage_finished", stage="production",
+            status=report.status, duration_ms=report.duration_ms,
+        )
+        return report
+
+    def _run_packaging(self, context: dict, result: PipelineResult) -> StageReport:
+        """Fold the final context into standardized ProductionPackage objects."""
+        report = StageReport(stage="packaging", started_at=_now_iso())
+        started = time.time()
+        try:
+            result.packages = build_packages(context)
+            context["unified_packages"] = [pkg.to_dict() for pkg in result.packages]
+            report.diagnostics["packages"] = len(result.packages)
+            report.confidence = _average([pkg.quality_score for pkg in result.packages])
+            if not result.packages:
+                report.status = StageStatus.WARNING
+                report.warnings.append("Pipeline produced no ideas to package.")
+        except Exception as exc:  # noqa: BLE001 - graceful stop, never crash
+            report.status = StageStatus.FAILED
+            report.errors.append(str(exc))
+        report.finished_at = _now_iso()
+        report.duration_ms = int((time.time() - started) * 1000)
+        log_event(
+            logger, "orchestrator.stage_finished", stage="packaging",
+            status=report.status, duration_ms=report.duration_ms, confidence=report.confidence,
+        )
+        return report
+
+
+# ------------------------------------------------------- module interface
+
+_orchestrator: "Orchestrator | None" = None
+
+
+def get_orchestrator() -> Orchestrator:
+    global _orchestrator
+    if _orchestrator is None:
+        _orchestrator = Orchestrator()
+    return _orchestrator
+
+
+def run_full_pipeline(command: str, **kwargs) -> PipelineResult:
+    """Convenience module-level entry point (see Orchestrator.run_full_pipeline)."""
+    return get_orchestrator().run_full_pipeline(command, **kwargs)
+
+
+# Job-queue integration — autonomy preparation. A future Scheduler agent
+# submits ORCHESTRATOR_JOB_TYPE jobs instead of calling engines directly.
+ORCHESTRATOR_JOB_TYPE = "run_pipeline"
+
+
+def _run_pipeline_job(payload: dict) -> dict:
+    result = get_orchestrator().run_full_pipeline(payload["command"], **payload.get("options", {}))
+    return result.to_dict()
+
+
+def ensure_orchestrator_handler(queue) -> None:
+    """Register the orchestrator job handler on a queue (idempotent)."""
+    if not queue.has_handler(ORCHESTRATOR_JOB_TYPE):
+        queue.register_handler(ORCHESTRATOR_JOB_TYPE, _run_pipeline_job)
+
+
+def ensure_runtime_handlers(queue) -> None:
+    """Register orchestrator + long-form + workflow executor handlers (idempotent)."""
+    ensure_orchestrator_handler(queue)
+    from services.provider_runtime.longform import ensure_longform_handler
+    from services.workflow_executor import ensure_workflow_handler
+
+    ensure_longform_handler(queue)
+    ensure_workflow_handler(queue)
