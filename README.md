@@ -4,6 +4,81 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 7.8 — Cinematic AI Director (Visual Intelligence 2.0)
+
+The Visual Intelligence Engine is upgraded from a visual planner into a
+professional **AI Film Director**. It no longer just selects imagery — it
+directs every second of visual attention, consuming structured output from
+Trend Discovery, the Psychology Engine, the Script Engine (canonical
+`structured_script`), and the Attention Graph (which now runs *before* it
+in the pipeline).
+
+### What every directed scene now carries
+
+Scene number · duration · purpose · emotion · **attention level** ·
+**visual style** · camera movement · **lens recommendation** · composition ·
+lighting · color palette · **depth of field** · **motion recommendation** ·
+transition · **recommended asset type** · **AI image prompt** ·
+**AI video prompt** · **stock footage query** · overlay recommendations ·
+**caption placement** · **sound effect timing** · B-roll suggestions ·
+**thumbnail candidate flag** · 12-trigger visual psychology scores ·
+**predicted viewer retention**.
+
+### New visual psychology model (`services/visual/psychology.py`)
+
+Twelve perceptual attention triggers: Curiosity, Pattern Interrupts,
+Contrast, Novelty, Human Faces, Eye Contact, Motion, Scale, Speed,
+Emotional Color Theory, Negative Space, Visual Hierarchy — plus
+`predict_scene_retention()`, which blends visual pull, scene position,
+length, and Attention Graph hook/rewatch signals into a per-scene
+retention prediction and a package-level retention curve.
+
+### Style presets (`services/visual/styles.py`)
+
+15 built-in art directions — Documentary, Luxury, Minimal, Dark History,
+Cyberpunk, Corporate, Nature, Science, Psychology, Finance, Horror,
+Conspiracy, Modern Tech, Motivational, Cinematic. Each preset carries
+palette, lighting bias, art style, grade, overlay/caption treatment, and
+mood. Future engines register new styles via `register_style()` without
+touching the engine; the operator can override per run via
+`context["visual_style"]`.
+
+### Professional shot list (`services/visual/shots.py`)
+
+14 shot types with real cinematography metadata (lens, depth of field,
+motion): Wide, Medium, Close-up, Extreme Close-up, Drone, POV, Tracking,
+Orbit, Push-in, Pull-out, Static, Macro, Slow Motion, Hyperlapse. Every
+script becomes a professional shot list; story beats rotate setups so no
+two consecutive beats repeat a shot.
+
+### Multi-source asset adapters (`services/visual/sources.py`)
+
+No provider is ever hardcoded. Six registered adapters produce
+provider-agnostic asset requests per scene: AI Image Generation, AI Video
+Generation, Licensed Stock Footage, User Uploaded Assets, Brand Assets, and
+a reserved (future) AI Avatar adapter. New sources register at runtime via
+`register_source()`.
+
+### Thumbnail system upgrade
+
+Each of the five concepts now carries title overlay, emotion, color
+strategy, focal subject, **eye direction**, contrast score, and **click
+probability** (calibrated 1.5–14%).
+
+### Render Package (`services/visual/render_prep.py`)
+
+The Director does not render. Every Visual Production Package now includes
+a versioned, machine-consumable **Render Package**: a contiguous clip
+timeline with asset requests, transitions, overlays, captions, SFX cues,
+and the retention curve — ready for the future Render Engine to execute
+directly. Full contract documented in `VISUAL_PRODUCTION_PACKAGE.md`.
+
+### Pipeline change
+
+`script_generation → attention_graph → visual_intelligence → voice_audio`
+— the Attention Graph moved ahead of Visual Intelligence so the Director
+consumes its hook/retention scores when predicting per-scene retention.
+
 ## Version 7.7 — Behavioral Intelligence API
 
 The Psychology & Virality Engine evolves from three separate scoring outputs
@@ -747,7 +822,7 @@ live under `data/voice_recordings/`. Clone mode is wired but not implemented.
 ### Engine plugins (`engines/`)
 **25 live engines** across two pipelines. Intelligence (17): Trend Discovery,
 Opportunity Ranking, Research, Ideation, Psychology, Script Generation,
-Visual Intelligence, Voice & Audio, Attention Graph, Ranking, Script
+Attention Graph, Visual Intelligence, Voice & Audio, Ranking, Script
 (fallback), Critic, Revision, Citation, SEO, Threat Detection, Quality.
 Production (8): Scene
 Planning, Narration, Visual Planning, Asset Manager, Subtitle, Timeline,

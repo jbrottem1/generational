@@ -18,6 +18,7 @@ and the Workflow Engine — and through this document.
 | **Agent 1** | Architecture / Trend Discovery owner | Trend Discovery subsystem, architecture docs, cross-cutting reviews |
 | **Agent 2** | Psychology & Virality Engine | Psychology scoring, virality dimensions, ranking weights |
 | **Agent 3** | Script Generation Engine | Script writing, critique, revision loop |
+| **Agent 4** | Visual Intelligence Engine (Cinematic AI Director) | Storyboards, shot lists, style presets, visual psychology + retention prediction, AI prompts, asset source adapters, thumbnails, render preparation |
 
 Agent 1 also acts as the reviewer for changes to shared files (see §2.3).
 
@@ -32,6 +33,7 @@ Agent 1 also acts as the reviewer for changes to shared files (see §2.3).
 | **Agent 1** | `services/trends/` · `providers/trend_sources/` · `engines/trend_discovery.py` · `engines/opportunity_ranking.py` · `tests/test_trend_discovery.py` · `MASTER_ARCHITECTURE.md` · `AGENT_WORKFLOW.md` |
 | **Agent 2** | `engines/psychology.py` · `engines/ranking.py` · `tests/test_psychology_engine.py` |
 | **Agent 3** | `engines/script.py` · `engines/critic.py` · `engines/revision.py` · script-related tests |
+| **Agent 4** | `engines/visual_intelligence.py` · `services/visual/` · `tests/test_visual_intelligence.py` · `VISUAL_PRODUCTION_PACKAGE.md` |
 
 ### 2.2 Shared — edit with caution, keep diffs minimal, mention in commit body
 

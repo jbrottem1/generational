@@ -31,15 +31,18 @@ WORKFLOWS = {
     # The intelligence pipeline: trend discovery → opportunity ranking →
     # research → 20 candidates → psychology scoring → script generation
     # (multiple scored variants per candidate, immediately after psychology)
-    # → visual intelligence (storyboard + AI prompts + thumbnails + Visual
-    # Score per scripted candidate) → voice & audio (Audio Production Package:
-    # narration plan, voice style, pacing/pauses/emphasis, SFX, music
-    # direction, mood, scene cues, retention notes — planning only, before
-    # any rendering) → attention graph (12-dimension radar +
-    # recommendations, Phase 2) → weighted ranking (psychology + opportunity
-    # + script quality) → script fallback for anything unscripted → critic →
-    # revision → citation → SEO packaging → threat detection (10 failure
-    # modes, Phase 3) → final quality scores + publish gate.
+    # → attention graph (12-dimension radar + recommendations, Phase 2) →
+    # visual intelligence (the Cinematic AI Director: directed storyboard,
+    # shot list, style presets, retention prediction, AI prompts, asset
+    # requests, thumbnails, render package — consumes trend, psychology,
+    # structured script, and attention graph signals) → voice & audio (Audio
+    # Production Package: narration plan, voice style, pacing/pauses/emphasis,
+    # SFX, music direction, mood, scene cues, retention notes — planning
+    # only, before any rendering) → weighted ranking (psychology +
+    # opportunity + script quality) → script fallback for anything
+    # unscripted → critic → revision → citation → SEO packaging → threat
+    # detection (10 failure modes, Phase 3) → final quality scores +
+    # publish gate.
     "intelligence": [
         "trend_discovery",
         "opportunity_ranking",
@@ -47,9 +50,9 @@ WORKFLOWS = {
         "ideation",
         "psychology",
         "script_generation",
+        "attention_graph",
         "visual_intelligence",
         "voice_audio",
-        "attention_graph",
         "ranking",
         "script",
         "critic",
@@ -66,9 +69,9 @@ WORKFLOWS = {
         "ideation",
         "psychology",
         "script_generation",
+        "attention_graph",
         "visual_intelligence",
         "voice_audio",
-        "attention_graph",
         "ranking",
         "script",
         "critic",

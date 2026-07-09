@@ -1,9 +1,11 @@
 """Visual Production Package — the complete visual plan for one idea.
 
 Assembles everything the downstream renderers (voice → audio → video) will
-consume: storyboard, full scene list, per-model AI image and video prompts,
+consume: directed storyboard, full scene list, professional shot list,
+per-model AI image and video prompts, provider-agnostic asset requests,
 five scored thumbnail concepts, a timed caption plan, pacing / camera /
-transition / motion reports, the five-frame hook sequence, and one weighted
+transition / motion reports, the five-frame hook sequence, a predicted
+retention curve, the machine-consumable Render Package, and one weighted
 Overall Visual Score (0-100) with a plain-English summary.
 """
 
@@ -12,17 +14,22 @@ from __future__ import annotations
 from engines.heuristics import clamp
 from services.visual.hooks import build_hook_sequence
 from services.visual.prompts import build_image_prompts, build_video_prompts
-from services.visual.scenes import palette_for, plan_scenes
+from services.visual.render_prep import build_render_package
+from services.visual.scenes import plan_scenes
+from services.visual.shots import build_shot_list
+from services.visual.sources import build_asset_requests
+from services.visual.styles import resolve_style
 from services.visual.thumbnails import build_thumbnail_concepts
 
 # How much each component contributes to the package's Overall Visual Score.
-# Scene craft and the hook window dominate because they decide retention;
-# thumbnails decide the impression. Sum == 1.0.
+# Scene craft, retention prediction, and the hook window dominate because
+# they decide watch time; thumbnails decide the impression. Sum == 1.0.
 PACKAGE_SCORE_WEIGHTS = {
-    "scene_visuals": 0.35,
-    "hook_strength": 0.25,
-    "thumbnail_power": 0.20,
-    "pacing_fitness": 0.12,
+    "scene_visuals": 0.28,
+    "hook_strength": 0.22,
+    "predicted_retention": 0.15,
+    "thumbnail_power": 0.17,
+    "pacing_fitness": 0.10,
     "camera_variety": 0.08,
 }
 
@@ -64,7 +71,8 @@ def build_caption_plan(scenes: list) -> list:
             "end_sec": scene["caption_timing"]["end_sec"],
             "text": scene["narration"],
             "overlay": scene["text_overlay"],
-            "style": "bold word-by-word pop, high-contrast stroke, safe-zone bottom third",
+            "placement": scene.get("caption_placement", "bottom third, safe zone"),
+            "style": "bold word-by-word pop, high-contrast stroke",
         }
         for scene in scenes
     ]
@@ -156,16 +164,39 @@ def overall_visual_score(components: dict) -> int:
     )
 
 
+def build_retention_curve(scenes: list) -> dict:
+    """Predicted audience retention at the end of every scene."""
+    points = [
+        {
+            "scene_number": scene["scene_number"],
+            "predicted_retention": scene["predicted_retention"],
+            "attention_level": scene["attention_level"],
+        }
+        for scene in scenes
+    ]
+    retentions = [point["predicted_retention"] for point in points] or [0]
+    weakest = min(scenes, key=lambda scene: scene["predicted_retention"]) if scenes else {}
+    return {
+        "points": points,
+        "average_retention": round(sum(retentions) / len(retentions), 1),
+        "final_retention": retentions[-1],
+        "weakest_scene_number": weakest.get("scene_number", 0),
+    }
+
+
 def build_visual_package(
     idea: dict,
     *,
     niche: str = "",
     subject: str = "",
     aspect_ratio: str = "9:16",
+    style_key: str = "",
+    attention: "dict | None" = None,
 ) -> dict:
     """Full Visual Production Package for one scripted idea (JSON-safe dict)."""
-    palette = palette_for(niche)
-    scene_plans = plan_scenes(idea, niche=niche, subject=subject)
+    style_name, style = resolve_style(style_key=style_key, niche=niche)
+    palette = style["palette"]
+    scene_plans = plan_scenes(idea, niche=niche, subject=subject, style_key=style_name, attention=attention)
     scenes = [scene.to_dict() for scene in scene_plans]
 
     thumbnails = [concept.to_dict() for concept in build_thumbnail_concepts(idea, palette=palette)]
@@ -173,12 +204,14 @@ def build_visual_package(
     pacing = build_pacing_report(scenes)
     camera_plan = build_camera_plan(scenes)
     motion_report = build_motion_report(scenes)
+    retention_curve = build_retention_curve(scenes)
 
     scene_scores = [scene["visual_score"] for scene in scenes] or [0]
     hook_scene = next((scene for scene in scenes if scene["purpose"] == "hook"), None)
     components = {
         "scene_visuals": round(sum(scene_scores) / len(scene_scores), 1),
         "hook_strength": hook_scene["visual_score"] if hook_scene else 40,
+        "predicted_retention": retention_curve["average_retention"],
         "thumbnail_power": thumbnails[0]["overall"] if thumbnails else 40,
         "pacing_fitness": pacing["pacing_fitness"],
         "camera_variety": camera_plan["variety_score"],
@@ -187,9 +220,11 @@ def build_visual_package(
 
     label = idea.get("title") or idea.get("hook") or "This idea"
     summary = (
-        f"\"{label}\" — Visual Score {score}/100 across {len(scenes)} scenes. "
+        f"\"{label}\" — Visual Score {score}/100 across {len(scenes)} scenes, "
+        f"directed in the {style['label']} style. "
         f"Pacing: {pacing['verdict']}. Motion: {motion_report['level']}. "
-        f"Best thumbnail: {thumbnails[0]['label']} ({thumbnails[0]['expected_ctr_pct']}% expected CTR)."
+        f"Predicted final retention: {retention_curve['final_retention']}%. "
+        f"Best thumbnail: {thumbnails[0]['label']} ({thumbnails[0]['click_probability_pct']}% click probability)."
         if thumbnails
         else f"\"{label}\" — Visual Score {score}/100 across {len(scenes)} scenes."
     )
@@ -199,11 +234,19 @@ def build_visual_package(
         "score_components": components,
         "summary": summary,
         "aspect_ratio": aspect_ratio,
+        "visual_style": style_name,
+        "style_preset": {"key": style_name, **style},
         "color_palette": palette,
         "storyboard": build_storyboard(scenes),
         "scenes": scenes,
-        "image_prompts": build_image_prompts(scenes, niche=niche, aspect_ratio=aspect_ratio),
-        "video_prompts": build_video_prompts(scenes, niche=niche, aspect_ratio=aspect_ratio),
+        "shot_list": build_shot_list(scenes),
+        "asset_requests": build_asset_requests(scenes),
+        "image_prompts": build_image_prompts(
+            scenes, niche=niche, aspect_ratio=aspect_ratio, art_style=style["art_style"]
+        ),
+        "video_prompts": build_video_prompts(
+            scenes, niche=niche, aspect_ratio=aspect_ratio, art_style=style["art_style"]
+        ),
         "thumbnails": thumbnails,
         "hook_sequence": hook_sequence,
         "caption_plan": build_caption_plan(scenes),
@@ -211,4 +254,12 @@ def build_visual_package(
         "camera_plan": camera_plan,
         "transitions": build_transitions(scenes),
         "motion_report": motion_report,
+        "retention_curve": retention_curve,
+        "render_package": build_render_package(
+            scenes,
+            idea=idea,
+            style_key=style_name,
+            aspect_ratio=aspect_ratio,
+            thumbnails=thumbnails,
+        ),
     }

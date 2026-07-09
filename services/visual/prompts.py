@@ -17,8 +17,8 @@ IMAGE_MODELS = ["midjourney", "flux", "stable_diffusion", "dalle", "openai_image
 # available — the formatter contract is identical to the live models.
 VIDEO_MODELS = ["runway", "veo", "pika", "luma", "kling", "sora"]
 
-# Lens selection follows the shot: tight shots get long fast glass, wide
-# establishing shots get short focal lengths.
+# Lens fallback when a scene carries no shot-driven lens recommendation
+# (the shot table in services/visual/shots.py is the primary source).
 ANGLE_LENSES = {
     "extreme close-up": "100mm macro, f/2.8",
     "slow-motion close-up": "85mm prime, f/1.4",
@@ -70,7 +70,7 @@ def build_prompt_spec(scene: dict, *, art_style: str, aspect_ratio: str) -> dict
         "subject": scene.get("visual_description", ""),
         "lighting": scene.get("lighting", ""),
         "composition": scene.get("shot_composition", ""),
-        "lens": ANGLE_LENSES.get(scene.get("camera_angle", ""), DEFAULT_LENS),
+        "lens": scene.get("lens_recommendation") or ANGLE_LENSES.get(scene.get("camera_angle", ""), DEFAULT_LENS),
         "mood": scene.get("emotion", ""),
         "art_style": art_style,
         "color_palette": scene.get("color_palette", ""),
@@ -188,9 +188,9 @@ VIDEO_FORMATTERS = {
 
 # --- Public API ---------------------------------------------------------------
 
-def build_image_prompts(scenes: list, *, niche: str = "", aspect_ratio: str = "9:16") -> list:
+def build_image_prompts(scenes: list, *, niche: str = "", aspect_ratio: str = "9:16", art_style: str = "") -> list:
     """One prompt set per scene — every image model gets a dialect-correct prompt."""
-    art_style = NICHE_ART_STYLES.get(niche, DEFAULT_ART_STYLE)
+    art_style = art_style or NICHE_ART_STYLES.get(niche, DEFAULT_ART_STYLE)
     prompt_sets = []
     for scene in scenes:
         spec = build_prompt_spec(scene, art_style=art_style, aspect_ratio=aspect_ratio)
@@ -204,9 +204,9 @@ def build_image_prompts(scenes: list, *, niche: str = "", aspect_ratio: str = "9
     return prompt_sets
 
 
-def build_video_prompts(scenes: list, *, niche: str = "", aspect_ratio: str = "9:16") -> list:
+def build_video_prompts(scenes: list, *, niche: str = "", aspect_ratio: str = "9:16", art_style: str = "") -> list:
     """One prompt set per scene — every video model gets a dialect-correct prompt."""
-    art_style = NICHE_ART_STYLES.get(niche, DEFAULT_ART_STYLE)
+    art_style = art_style or NICHE_ART_STYLES.get(niche, DEFAULT_ART_STYLE)
     prompt_sets = []
     for scene in scenes:
         spec = build_prompt_spec(scene, art_style=art_style, aspect_ratio=aspect_ratio)

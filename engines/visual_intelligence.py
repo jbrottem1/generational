@@ -1,33 +1,45 @@
-"""Visual Intelligence Engine — the visual brain of the pipeline.
+"""Visual Intelligence Engine — the Cinematic AI Director of the pipeline.
 
-Runs immediately after Script Generation and before the Attention Graph:
-every scripted candidate receives a complete **Visual Production Package**
-before ranking happens, so downstream stages weigh visual craft — not just
-concept psychology and script quality — and every future renderer (voice,
-audio, image, video) consumes one canonical visual plan.
+Runs after Script Generation and the Attention Graph: every scripted
+candidate receives a complete **Visual Production Package** before ranking,
+so downstream stages weigh visual craft — not just concept psychology and
+script quality — and every future renderer (voice, audio, image, video)
+consumes one canonical, directed visual plan.
+
+Inputs consumed per candidate (all structured, none re-derived):
+
+- **Trend Discovery / Research** — niche + subject context
+- **Psychology Engine** — concept-level psychology signals
+- **Script Engine** — the canonical `structured_script` handoff
+- **Attention Graph** — hook/retention scores feeding retention prediction
 
 Each package contains:
 
-- Scene-by-scene storyboard with full visual grammar per scene (purpose,
-  emotion, length, camera angle + motion, shot composition, subject
-  placement, lighting, environment, palette, transitions, motion intensity,
-  zoom, background, overlays, caption timing, SFX, music style, B-roll)
-- 12-dimension visual psychology scores per scene (curiosity, mystery,
-  wonder, fear, beauty, novelty, scale, contrast, motion, satisfaction,
-  humor, identity) blended into a Scene Visual Score
+- Directed scene list — purpose, emotion, attention level, professional
+  shot type with lens + depth of field, composition, subject placement,
+  lighting, style-preset palette, transitions, motion recommendation,
+  recommended asset source, base AI image/video prompts, stock footage
+  query, overlays, caption placement + timing, SFX timing, B-roll, and a
+  thumbnail-candidate flag
+- 12-trigger visual psychology scores per scene (curiosity, pattern
+  interrupt, contrast, novelty, human faces, eye contact, motion, scale,
+  speed, emotional color, negative space, visual hierarchy) plus a
+  **predicted retention** per scene and a retention curve
+- Professional shot list and provider-agnostic asset requests (adapters —
+  never a hardcoded provider)
 - Model-ready AI image prompts (Midjourney, Flux, Stable Diffusion, DALL-E,
   OpenAI Images) and AI video prompts (Runway, Veo, Pika, Luma, Kling, Sora)
-- Five scored thumbnail concepts with expected CTR
-- The strongest five-frame first-3-second hook sequence with a scroll-stop
-  rationale
-- Caption plan, visual pacing report, camera plan, transitions, and motion
-  report
+- Five thumbnail concepts with title overlay, emotion, color strategy,
+  focal subject, eye direction, contrast score, and click probability
+- The five-frame first-3-second hook sequence with a scroll-stop rationale
+- Caption plan, pacing / camera / transition / motion reports
+- A machine-consumable **Render Package** for the future Render Engine
 - One weighted **Overall Visual Score (0-100)**
 
-Planning is delegated to the modular `services/visual` package, which is
-equally usable standalone to re-plan visuals for any approved idea. All
-planning is deterministic — Demo Mode carries the full engine, and swapping
-in vision-model scoring later never changes the package contract.
+Style presets (`register_style`) and asset sources (`register_source`) are
+runtime-extensible — future engines add both without changing this engine.
+All planning is deterministic — Demo Mode carries the full Director, and
+swapping in vision-model scoring later never changes the package contract.
 """
 
 from __future__ import annotations
@@ -45,9 +57,9 @@ class VisualIntelligenceEngine(Engine):
     label = "Visual Intelligence"
     icon = "🎥"
     description = (
-        "Transform every scripted candidate into a complete Visual Production "
-        "Package — storyboard, per-scene visual psychology scores, AI image/video "
-        "prompts, scored thumbnails, hook sequence, and an Overall Visual Score (0-100)."
+        "Direct every scripted candidate like an AI film director — directed "
+        "shot list, style presets, per-scene retention prediction, AI image/video "
+        "prompts, asset sourcing, scored thumbnails, and a render-ready package."
     )
 
     def is_ready(self) -> bool:
@@ -61,6 +73,7 @@ class VisualIntelligenceEngine(Engine):
         spec = get_platform_spec(context.get("target_platform", DEFAULT_PLATFORM))
         niche = context.get("niche", "")
         subject = context.get("subject", "")
+        style_key = context.get("visual_style", "")  # optional operator/brand override
 
         for candidate in candidates:
             package = build_visual_package(
@@ -68,6 +81,8 @@ class VisualIntelligenceEngine(Engine):
                 niche=niche,
                 subject=subject,
                 aspect_ratio=spec.aspect_ratio,
+                style_key=style_key,
+                attention=candidate.get("attention_graph"),
             )
             candidate["visual_package"] = package
             candidate["visual_score"] = package["visual_score"]
@@ -78,6 +93,11 @@ class VisualIntelligenceEngine(Engine):
         scores = [candidate["visual_score"] for candidate in candidates]
         avg_score = round(sum(scores) / len(scores), 1)
         total_scenes = sum(len(c["visual_package"]["scenes"]) for c in candidates)
+        avg_retention = round(
+            sum(c["visual_package"]["retention_curve"]["average_retention"] for c in candidates)
+            / len(candidates),
+            1,
+        )
 
         log_event(
             logger,
@@ -85,6 +105,7 @@ class VisualIntelligenceEngine(Engine):
             candidates=len(candidates),
             scenes=total_scenes,
             avg_visual_score=avg_score,
+            avg_predicted_retention=avg_retention,
         )
         return {
             "candidates": candidates,
@@ -92,6 +113,8 @@ class VisualIntelligenceEngine(Engine):
                 "planned": len(candidates),
                 "total_scenes": total_scenes,
                 "average_visual_score": avg_score,
+                "average_predicted_retention": avg_retention,
+                "style": candidates[0]["visual_package"]["visual_style"],
                 "aspect_ratio": spec.aspect_ratio,
                 "platform": spec.key,
             },

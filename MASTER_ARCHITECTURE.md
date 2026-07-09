@@ -86,16 +86,16 @@ The attention scientist. Scores every candidate idea across psychological dimens
 
 ### Agent 3: Script Generation & Storytelling Engine
 
-Turns a scored idea into a production-ready script. Generates multiple stylistically distinct, platform-aware variants — each with hook, pattern interrupt, curiosity loops, emotional progression, retention checkpoints, and CTA — scores them, and promotes the best variant.
+Turns a scored idea into a production-ready cinematic script. Every variant is built section-first — Primary Hook, Pattern Interrupt, Curiosity Hook, Context, Escalation, Evidence, Emotional Peak, Resolution, CTA — with per-section narration, duration, emotional intensity, attention score, visual intent, B-roll type, and caption emphasis. A Hook Engine writes ten styled hook candidates (curiosity, shock, question, FOMO, statistics, contrarian, story, mystery, authority, urgency) and ranks them with the idea's psychology dimensions; a retention model estimates drop-off risk, engagement, retention, rewatch probability, curiosity strength, and emotional pacing per variant. The winning variant ships as a `structured_script`: director-ready scene breakdown (camera, motion, captions, sound cues, transitions), emotion/attention timelines, voice instructions, caption plan, alternate hooks, retention model, and locale (language/region/dialect — translation-ready).
 
-- **Owns:** script variants, storytelling structure, script scoring
+- **Owns:** script sections, hook engine, retention model, script variants, storytelling structure, script scoring, structured script contract
 - **Modules:** `engines/script_generation.py`, `engines/script.py`, `services/scripts/`
 
-### Agent 4: Visual Intelligence Engine
+### Agent 4: Visual Intelligence Engine (Cinematic AI Director)
 
-The visual brain. Converts the winning script into a scene-by-scene storyboard with full visual grammar, per-scene visual psychology scores, model-ready AI image and video prompts, scored thumbnail concepts, and a hook-frame sequence.
+The Cinematic AI Director. Consumes structured output from Trend Discovery, the Psychology Engine, the Script Engine (`structured_script`), and the Attention Graph, then directs every second of visual attention: a professional shot list (14 shot types with lens/depth-of-field metadata), 15 runtime-extensible style presets, per-scene 12-trigger visual psychology scores with predicted viewer retention, provider-agnostic asset requests through source adapters (AI image/video, licensed stock, user uploads, brand assets, future avatars), model-ready AI prompts, scored thumbnail concepts with eye direction and click probability, a hook-frame sequence, and a versioned machine-consumable Render Package (see `VISUAL_PRODUCTION_PACKAGE.md`).
 
-- **Owns:** storyboards, visual prompts, thumbnails, pacing/camera/motion plans
+- **Owns:** storyboards, shot lists, style presets, visual psychology + retention prediction, visual prompts, asset sourcing, thumbnails, pacing/camera/motion plans, render preparation
 - **Modules:** `engines/visual_intelligence.py`, `engines/visual_planning.py`, `engines/scene_planning.py`, `services/visual/`
 
 ### Agent 5: Voice & Audio Engine
@@ -145,7 +145,7 @@ Each stage receives exactly one structured input and produces exactly one struct
 | Psychology & Virality | `ContentIdea` | `PsychologyReport` (ViralScore + explanation + threats) |
 | Ranking | `ContentIdea` + `PsychologyReport` | `RankedIdea` (prioritized, gated shortlist) |
 | Script Generation | `RankedIdea` | `ScriptPackage` (winning variant + alternates + scores) |
-| Visual Intelligence | `ScriptPackage` | `VisualPackage` (storyboard + prompts + thumbnails) |
+| Visual Intelligence | `ScriptPackage` + `PsychologyReport` + Attention Graph scores | `VisualPackage` (directed storyboard + shot list + prompts + asset requests + thumbnails + retention curve + Render Package) |
 | Voice & Audio | `ScriptPackage` + `VisualPackage` | `AudioPackage` (narration plan + SFX + music + cue sheet) |
 | Video Rendering | `VisualPackage` + `AudioPackage` | `RenderedVideo` (final file + manifest) |
 | Quality Control | `RenderedVideo` + upstream packages | Approved `RenderedVideo` or revision notes routed back |
@@ -166,8 +166,8 @@ These are the contracts between stages. They live in the models layer (`core/mod
 | **ContentIdea** | A single candidate concept discovered from trends | id, channel_id, topic, angle, source signals, opportunity score, discovered_at |
 | **PsychologyReport** | Psychological evaluation of one idea. Concretely implemented as `BehavioralIntelligenceReport` (Section 5.1) | idea_id, dimension scores, ViralScore (0–100), explanation, detected threats |
 | **RankedIdea** | An idea that survived ranking | idea_id, rank, composite score, gate decisions, selected platform targets |
-| **ScriptPackage** | Complete script output for one idea | idea_id, winning variant, alternates, hook, beats, retention checkpoints, CTA, per-variant scores |
-| **VisualPackage** | Complete visual plan for one script | script_id, storyboard scenes, image/video prompts per model, thumbnail concepts + CTR estimates, hook frames, overall visual score |
+| **ScriptPackage** | Complete script output for one idea (concrete shape: `structured_script`, `services/scripts/structure.py`) | idea_id, winning variant, alternate hooks, annotated sections, scene breakdown, emotion/attention timelines, voice instructions, caption plan, retention model, retention checkpoints, CTA, locale, per-variant scores |
+| **VisualPackage** | Complete directed visual plan for one script (contract: `VISUAL_PRODUCTION_PACKAGE.md`) | script_id, directed scenes (shot/lens/DOF, style, attention level, predicted retention), shot list, asset requests, image/video prompts per model, thumbnail concepts + click probability, hook frames, retention curve, Render Package, overall visual score |
 | **AudioPackage** | Complete audio plan for one script | script_id, voice style, per-scene narration plan (wpm, pauses, emphasis), SFX layers, music direction (BPM/key/energy), cue sheet, overall audio score |
 | **RenderedVideo** | The final produced asset | package_ids, file path/URI, duration, resolution, aspect ratio, render manifest, QA status |
 | **PublishedPost** | One live post on one platform | video_id, platform_account_id, platform post ID, URL, publish time, metadata used |
