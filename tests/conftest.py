@@ -32,6 +32,24 @@ def isolated_publishing_queue(tmp_path_factory):
     publishing_queue._DEFAULT_DIR = original
 
 
+@pytest.fixture(scope="session", autouse=True)
+def isolated_analytics_data(tmp_path_factory):
+    """Agent 9's analytics/learning stages persist records, memory, and
+    experiments (data/analytics) and mirror performance rows into the
+    Knowledge Base — point both at temp dirs for the whole session so
+    tests never write to the real data/ stores."""
+    import services.analytics.store as analytics_store
+    import services.knowledge as knowledge
+
+    original_dir = analytics_store._DEFAULT_DIR
+    original_kb = knowledge._kb
+    analytics_store._DEFAULT_DIR = str(tmp_path_factory.mktemp("analytics"))
+    knowledge._kb = knowledge.KnowledgeBase(str(tmp_path_factory.mktemp("knowledge")))
+    yield
+    analytics_store._DEFAULT_DIR = original_dir
+    knowledge._kb = original_kb
+
+
 @pytest.fixture
 def project_store(tmp_path):
     return JsonProjectStore(directory=str(tmp_path / "projects"))

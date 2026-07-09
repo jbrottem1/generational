@@ -64,13 +64,19 @@ orch.run_quality_stage(context)
 orch.run_render_stage(context)     # Agent 6 — Render & Video Production
 orch.run_seo_stage(context)        # Agent 8 — Global Content Optimization
 orch.run_publish_stage(context)    # Agent 7 — Publishing & Scheduler
+orch.run_analytics_stage(context)  # Agent 9 — Analytics collection (live)
+orch.run_learning_stage(context)   # Agent 9 — Learning feedback (live)
 
 # Future stages — wired now, light up when their engines report ready;
 # until then they skip with diagnostics, never crash:
-orch.run_analytics_stage(context)  # Agent 9 — Analytics
-orch.run_learning_stage(context)   # Agent 9 — Learning feedback
 orch.run_brand_stage(context)      # Agent 10 — Multi-Brand OS
 ```
+
+Agent 9's stages run post-publish: on demand via the runners above, or
+automatically after every full run once
+`services.analytics.integration.enable_continuous_learning()` has attached
+its `analytics` / `learning` hooks (see §5) — the closed loop where every
+published video makes the next one more intelligent.
 
 The Streamlit UI reaches the orchestrator through `services/ideation.py`
 (a thin adapter that reshapes `PipelineResult` into the result dict the UI
@@ -161,7 +167,11 @@ Stages whose engines report `is_ready() == False` are skipped with a
 
 ## 5. Autonomy preparation — hooks
 
-Scheduling is **not built** (by design). The attachment points are:
+Scheduling is **not built** (by design). The `analytics` and `learning`
+hook kinds are LIVE: `enable_continuous_learning()`
+(`services/analytics/integration.py`) attaches `AnalyticsHook` +
+`LearningHook`, which drive `run_analytics_stage()` /
+`run_learning_stage()` after every completed run. The attachment points:
 
 ```python
 from services.orchestrator import OrchestratorHook, attach_hook

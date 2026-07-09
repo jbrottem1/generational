@@ -228,7 +228,60 @@ no real credentials are stored.
 
 ---
 
-## 8. Change protocol
+## 8. analytics_package + learning_metadata (Agent 9) — `services/analytics/`, `services/learning/`
+
+The Analytics & Continuous Learning Engine (`analytics` + `learning`)
+closes the loop after publishing. Field tuples in
+`services/analytics/models.py` and `services/learning/models.py` are the
+testable contract; all output is JSON-safe dicts, additive-only from 1.0.
+
+**AnalyticsRecord** (`ANALYTICS_RECORD_FIELDS`, v1.0) — one structured
+record per published item × platform, persisted append-only in
+`data/analytics/records.json`, deduplicated on the `analytics_ref` issued
+by Agent 7's PublishingJob:
+
+| Field group | Fields |
+|---|---|
+| identity | `record_id`, `record_version`, `analytics_ref`, `project_id`, `brand_id`, `channel_id`, `platform`, `post_id`, `post_url` |
+| attribution | `topic`, `niche`, `title`, `hook`, `keywords`, `psychology_strategy`, `psychology_score`, `virality_score`, `attention_score`, `quality_score`, `script_version`, `thumbnail_version`, `voice_version`, `render_version`, `video_length_sec`, `posting_time`, `published_at` |
+| experimentation | `experiment_id`, `variant_id` |
+| outcome | `metrics` (`ANALYTICS_METRIC_FIELDS`: views, watch_time_sec, average_view_duration_sec, audience_retention, ctr, likes, comments, shares, saves, subscriber_growth, followers_gained, rpm/cpm placeholders), `metrics_status`, `metrics_source`, `collected_at` |
+
+**ContentPackage `analytics_package` slot** (`ANALYTICS_PACKAGE_FIELDS`):
+`engine_version`, `status` (collected | pending | skipped), `records`,
+aggregate `metrics`, `performance_score` (0-100 composite), `collected_at`.
+
+**ContentPackage `learning_metadata` slot** (`LEARNING_METADATA_FIELDS`):
+`engine_version`, `status`, `signals` (insights touching this item),
+`recommendations`, `knowledge_size`, `confidence`, `generated_at`.
+
+**Context keys** (additive): `analytics_summary` + `analytics_records`
+(analytics stage output), `learning_report` + `learning_recommendations`
+(learning stage output — recommendations routed per `TARGET_ENGINES`:
+psychology, script_generation, visual_intelligence, voice_audio,
+seo_optimization, publishing, trend_discovery).
+
+**Insights & recommendations** (`INSIGHT_FIELDS` /
+`RECOMMENDATION_FIELDS`) each carry `confidence` (0-100 from sample size ×
+consistency) and `evidence` (samples, average vs baseline score, lift).
+Long-term memory entries (`MEMORY_ENTRY_FIELDS`,
+`data/analytics/memory.json`) and experiments (`EXPERIMENT_FIELDS`,
+`data/analytics/experiments.json`) are append-only — historical knowledge
+is never overwritten. Performance reports use
+`PERFORMANCE_REPORT_FIELDS` (daily | weekly | monthly).
+
+Platform metric backends implement `AnalyticsProvider`
+(`providers/analytics_provider.py`) and register per platform in
+`providers/analytics/` (deterministic mock serves every platform today).
+Agent 9 writes ONLY the `analytics_package` / `learning_metadata` slots and
+its own context keys; render/seo/publishing slots are read, never mutated.
+Feedback reaches upstream engines through `OrchestratorHook` (kinds
+`analytics` / `learning`) and the guidance adapters — never engine-to-engine
+calls.
+
+---
+
+## 9. Change protocol
 
 1. Appending a ContentPackage field: add to the dataclass **and**
    `PRODUCTION_PACKAGE_FIELDS`, with a default; get Agent 1 review.

@@ -4,6 +4,78 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.2 — Analytics & Continuous Learning Engine (Agent 9)
+
+The system now observes its own performance and gets smarter with every
+published video. The `analytics` and `learning` stages are live: post-publish
+metrics collection, pattern mining, confidence-scored recommendations back to
+every upstream engine, an experimentation framework, cumulative long-term
+memory, and daily/weekly/monthly performance reports.
+
+```python
+from services.orchestrator import get_orchestrator
+from services.analytics.integration import enable_continuous_learning
+
+enable_continuous_learning()   # one call arms the closed loop
+
+result = get_orchestrator().run_full_pipeline("Create 3 science shorts...")
+result.context["analytics_summary"]        # what was measured
+result.context["learning_report"]          # what was learned
+result.context["learning_recommendations"] # per-engine feedback for the next run
+```
+
+### What's new
+
+- **Analytics Engine** (`engines/analytics.py` + `services/analytics/`) —
+  one structured analytics record per published item × platform: views,
+  watch time, retention, CTR, average view duration, likes/comments/
+  shares/saves, subscriber growth, followers gained, RPM/CPM placeholders —
+  plus full attribution (posting time, platform, topic, hook, psychology
+  strategy, and script/thumbnail/voice/render version fingerprints).
+  Records persist to the append-only store (`data/analytics/records.json`),
+  deduplicated on the `analytics_ref` Agent 7 issues, and proven winners
+  mirror into the Knowledge Base `performance` category — which the
+  `internal_analytics` trend source already mines.
+- **Metrics providers** (`providers/analytics/`) — per-platform
+  `AnalyticsProvider` registry; a deterministic mock serves every platform
+  until real APIs (YouTube Analytics, TikTok Business, Meta Insights) swap
+  in with `register_analytics_provider()` — zero engine changes.
+- **Learning Engine** (`engines/learning.py` + `services/learning/`) —
+  mines the cumulative store across eleven attribution dimensions
+  (highest-retention hooks, best psychological triggers, thumbnail styles,
+  narration/voice styles, posting times, categories, video lengths,
+  titles, keywords, platform-specific performance), each insight carrying
+  a confidence score from sample size × consistency.
+- **Recommendation Engine + feedback loop** — insights become
+  recommendations routed to the engine that owns each decision
+  (psychology, script, visual, voice, SEO, publishing, trend discovery)
+  via the `learning_recommendations` context key and per-engine guidance
+  adapters (`psychology_guidance()`, `script_guidance()`, ...). Every
+  ContentPackage gets its `learning_metadata` slot filled.
+- **Experimentation framework** (`services/learning/experiments.py`) —
+  A/B, thumbnail, hook, script, posting-time, caption, and voice
+  experiments with deterministic variant assignment, tracked experiment
+  IDs on analytics records, and statistical winners via Welch's z-test.
+- **Long-term memory** (`services/learning/memory.py`) — append-only
+  cumulative knowledge: successful/failed strategies, platform trends,
+  evergreen and seasonal content, audience preferences, experiment
+  outcomes. Historical knowledge is never overwritten.
+- **Reporting Engine** (`services/learning/reports.py`) — daily / weekly /
+  monthly reports: totals, top and worst content, engine recommendations,
+  trending opportunities, optimization priorities, confidence — machine-
+  readable dicts plus `render_report_text()` for humans.
+- **Integration** — the orchestrator's `run_analytics_stage()` /
+  `run_learning_stage()` are live; `enable_continuous_learning()` attaches
+  `OrchestratorHook`s (kinds `analytics` / `learning`) so every full run
+  measures and learns automatically, plus a `PublishListener` that measures
+  scheduled-queue publishes outside pipeline runs. No other engine and no
+  orchestrator code was modified.
+- **35 tests** in `tests/test_analytics_engine.py` +
+  `tests/test_learning_engine.py`; full suite passes (504).
+
+Docs: [`ANALYTICS_LEARNING.md`](ANALYTICS_LEARNING.md), plus updates to
+`DATA_CONTRACTS.md` §8, `PIPELINE_SPEC.md`, and `ORCHESTRATOR.md`.
+
 ## Version 9.1 — Trend Discovery & Forecasting Engine (Agent 11)
 
 The intelligence division: the system now predicts **what to create next**
@@ -1453,7 +1525,8 @@ generational/
 │   ├── render/               # v8.2 Render & Video Production Engine (Agent 6)
 │   ├── image.py, video.py    # v8.2 live render stage engines (assets + assembly)
 │   ├── seo_optimization.py   # v8.3 Global Content Optimization Engine (Agent 8)
-│   └── voice|publishing|analytics|learning.py  # future stubs
+│   ├── analytics.py, learning.py  # v9.2 Analytics & Continuous Learning (Agent 9)
+│   └── voice.py              # future stub
 ├── services/
 │   ├── research/             # Knowledge Engine (manager, cache, scorer, summarizer)
 │   ├── trends/               # Trend Discovery (models, scorer, manager)
@@ -1461,6 +1534,8 @@ generational/
 │   ├── visual/               # Visual Intelligence (models, psychology, scenes, prompts, thumbnails, hooks, package)
 │   ├── audio/                # Voice & Audio (models, voice, narration, sfx, music, retention, package)
 │   ├── seo/                  # v8.3 Global Content Optimization (titles, keywords, hashtags, descriptions, thumbnails, localization, windows, report, package)
+│   ├── analytics/            # v9.2 performance collection (models, store, collector, integration)
+│   ├── learning/             # v9.2 continuous learning (patterns, recommendations, experiments, memory, reports, loop)
 │   ├── behavioral_intelligence/ # v7.7 unified report API (models, builder, adapters)
 │   ├── ideation.py           # Intelligence pipeline orchestrator
 │   ├── production.py         # Media production orchestrator
@@ -1476,7 +1551,8 @@ generational/
     ├── assets/               # Asset registry index
     ├── voice_profiles/, voice_recordings/
     ├── research_cache/       # Topic-level research cache
-    └── publishing_queue/     # Queued render packages
+    ├── publishing_queue/     # Queued render packages
+    └── analytics/            # v9.2 analytics records, memory, experiments, reports
 ```
 
 ## Roadmap
@@ -1486,4 +1562,4 @@ generational/
 - 🎙️ Real TTS providers (ElevenLabs, OpenAI) behind VoiceProvider
 - 🧬 Voice cloning provider
 - 📤 Auto Posting from publishing queue
-- 📊 Full Analytics Dashboard + Learning loop (mines Knowledge Base + research)
+- 📊 Live platform analytics APIs (YouTube Analytics, TikTok Business, Meta Insights) behind the `AnalyticsProvider` interface (architecture + learning loop shipped in v9.2)

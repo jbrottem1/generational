@@ -53,10 +53,15 @@ Publishing & Distribution  LIVE      Agent 7 — engines: scheduler, publishing
    ↓                                 (mock providers: platform packages,
    ↓                                  timezone-aware scheduling, retry queue;
    ↓                                  real platform APIs swap in later)
-Analytics Collection       FUTURE    Agent 9 — engines: analytics
-   ↓
-Learning Feedback          FUTURE    Agent 9 — engines: learning
-   ↓
+Analytics Collection       LIVE      Agent 9 — engines: analytics
+   ↓                                 (structured analytics record per
+   ↓                                  published item × platform; mock
+   ↓                                  metrics provider; append-only store)
+Learning Feedback          LIVE      Agent 9 — engines: learning
+   ↓                                 (pattern mining, confidence-scored
+   ↓                                  recommendations per engine, cumulative
+   ↓                                  memory, experiments, reports)
+
 Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
    ↓
 (loops back into Trend Discovery weights for the next run)
@@ -112,7 +117,22 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
 9. **Distribution degradation.** A FAILED render/seo/publish stage
    degrades the run to WARNING (errors preserved in the report) instead of
    discarding finished content; unavailable engines skip with warnings.
-10. **One Production Report.** Every full run attaches one unified report
+10. **Analytics stage.** Live (`run_analytics_stage(context)`). Runs after
+    publishing — either on demand, or automatically after every full run
+    once `enable_continuous_learning()` has attached the analytics
+    `OrchestratorHook`. One structured analytics record per published item
+    × platform (metrics via `AnalyticsProvider`, deterministic mock today),
+    each ContentPackage `analytics_package` slot filled, records appended
+    (deduplicated on `analytics_ref`) to the cumulative store. With nothing
+    to measure it reports zero items — never a failure.
+11. **Learning stage.** Live (`run_learning_stage(context)`). Mines the
+    cumulative store for winners/losers across eleven attribution
+    dimensions, emits `learning_report` + `learning_recommendations`
+    (confidence-scored, routed per target engine), fills each
+    `learning_metadata` slot, and grows the append-only long-term memory.
+    Historical knowledge is never overwritten. With no history it reports
+    `insufficient_data` — never a failure.
+12. **One Production Report.** Every full run attaches one unified report
     (`services/orchestrator/report.py`) to
     `PipelineResult.production_report` /
     `context["production_report"]`: the eight production areas resolved
@@ -136,6 +156,6 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
 | render | image, video (+ `render` façade) | live (mock render) | **Agent 6** |
 | seo | seo_optimization | live | **Agent 8** |
 | publish | scheduler, publishing | live (mock providers) | **Agent 7** |
-| analytics | analytics | future | **Agent 9** |
-| learning | learning | future | **Agent 9** |
+| analytics | analytics | live (mock metrics providers) | **Agent 9** |
+| learning | learning | live | **Agent 9** |
 | brand_management | brand_management | future | **Agent 10** |

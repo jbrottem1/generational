@@ -133,13 +133,11 @@ def test_orchestrator_knows_all_future_stages():
 
 
 def test_unimplemented_future_stages_skip_cleanly():
+    # analytics/learning graduated to live engines (Agent 9) — covered in
+    # tests/test_analytics_engine.py and tests/test_learning_engine.py.
     orch = Orchestrator()
     context = {"command": "test", "provider": "demo"}
-    for runner in (
-        orch.run_analytics_stage,
-        orch.run_learning_stage,
-        orch.run_brand_stage,
-    ):
+    for runner in (orch.run_brand_stage,):
         report = runner(dict(context))
         assert report.status in (StageStatus.WARNING, StageStatus.SKIPPED), report.stage
         assert report.status != StageStatus.FAILED
@@ -176,6 +174,28 @@ def test_publish_stage_is_implemented_and_safe_without_input():
     assert not report.errors
     assert context["publishing_result"]["status"] == "SKIPPED"
     assert context["publish_schedule"] == []
+
+
+def test_analytics_stage_is_implemented_and_safe_without_input():
+    # Agent 9 landed: the analytics stage runs (SUCCESS) and reports zero
+    # items instead of warning when there is nothing to measure.
+    context = {"command": "test", "provider": "demo"}
+    report = Orchestrator().run_analytics_stage(context)
+    assert report.status == StageStatus.SUCCESS
+    assert not report.errors
+    assert context["analytics_summary"]["items"] == 0
+    assert context["analytics_records"] == []
+
+
+def test_learning_stage_is_implemented_and_safe_without_input():
+    # Agent 9 landed: the learning stage runs (SUCCESS) even with nothing
+    # new in context — it learns from the cumulative store instead.
+    context = {"command": "test", "provider": "demo"}
+    report = Orchestrator().run_learning_stage(context)
+    assert report.status == StageStatus.SUCCESS
+    assert not report.errors
+    assert "learning_report" in context
+    assert "learning_recommendations" in context
 
 
 def test_missing_engine_key_does_not_crash_stage():

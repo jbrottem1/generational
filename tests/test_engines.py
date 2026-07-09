@@ -24,11 +24,17 @@ OPTIMIZATION_LIVE = {"seo_optimization"}
 # Agent 7 — the Publishing & Distribution Engine (+ scheduler) is live.
 PUBLISHING_LIVE = {"publishing", "scheduler"}
 
-LIVE_KEYS = INTELLIGENCE_LIVE | PRODUCTION_LIVE | RENDER_LIVE | OPTIMIZATION_LIVE | PUBLISHING_LIVE
+# Agent 9 — the Analytics & Continuous Learning Engine is live.
+ANALYTICS_LIVE = {"analytics", "learning"}
+
+LIVE_KEYS = (
+    INTELLIGENCE_LIVE | PRODUCTION_LIVE | RENDER_LIVE
+    | OPTIMIZATION_LIVE | PUBLISHING_LIVE | ANALYTICS_LIVE
+)
 
 PLANNED_KEYS = {
-    "voice", "analytics", "learning",
-    # Agents 9-10 contract stubs
+    "voice",
+    # Agent 10 contract stub
     "brand_management",
 }
 

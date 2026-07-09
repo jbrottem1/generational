@@ -1,5 +1,10 @@
 # Landing Zone — Agent 9: Analytics & Learning
 
+**Status: LANDED (v9.2).** The `analytics` and `learning` engines are live
+`ContractEngine`s. Implementation lives in `services/analytics/`,
+`services/learning/`, and `providers/analytics/`; full documentation in
+`ANALYTICS_LEARNING.md` and `DATA_CONTRACTS.md` §8.
+
 ## What this engine owns
 Closing the loop: post-publish performance ingestion (views, retention
 curves, watch time, engagement, follows), attribution of outcomes back to
