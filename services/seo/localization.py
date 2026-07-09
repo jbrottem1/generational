@@ -13,22 +13,11 @@ from __future__ import annotations
 
 from abc import ABC, abstractmethod
 
-from engines.heuristics import clamp
 
-# Default rollout targets: (country, language, UTC offset of the main
-# audience timezone, peak local posting hours).
-LOCALIZATION_TARGETS = (
-    ("US", "en", -5, (17, 21)),
-    ("GB", "en", 0, (17, 20)),
-    ("ES", "es", 1, (18, 22)),
-    ("MX", "es", -6, (18, 22)),
-    ("BR", "pt", -3, (18, 22)),
-    ("DE", "de", 1, (17, 20)),
-    ("FR", "fr", 1, (18, 21)),
-    ("IN", "hi", 5, (19, 22)),
-    ("JP", "ja", 9, (19, 22)),
-    ("ID", "id", 7, (18, 21)),
-)
+def _clamp(value: float, low: int = 5, high: int = 98) -> int:
+    return int(max(low, min(high, value)))
+
+from services.publishing.targets import LOCALIZATION_TARGETS
 
 
 class LocalizationAdapter(ABC):
@@ -115,7 +104,7 @@ def build_localization_package(
         translation_pending = (not is_base) and any(
             item["status"] == "pending_translation" for item in replacements
         )
-        readiness = 100 if is_base else clamp(
+        readiness = 100 if is_base else _clamp(
             40 + (10 if replacements else 0) + (10 if hashtags else 0), low=0, high=70
         )
         plans.append({

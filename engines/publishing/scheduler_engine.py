@@ -13,9 +13,13 @@ from __future__ import annotations
 from core.log import get_logger, log_event
 from engines.contracts import ContractEngine
 from services.publishing.models import PUBLISHING_ENGINE_VERSION
-from services.publishing.scheduler import PublishingScheduler
 
 logger = get_logger(__name__)
+
+
+def _scheduler():
+    from services.publishing.scheduler import PublishingScheduler
+    return PublishingScheduler
 
 
 def collect_publish_items(context: dict) -> "tuple[list, str]":
@@ -88,7 +92,7 @@ class SchedulerEngine(ContractEngine):
     def run(self, context: dict) -> dict:
         items, source_key = collect_publish_items(context)
         mode = context.get("publish_mode", "scheduled")
-        scheduler = PublishingScheduler()
+        scheduler = _scheduler()()
 
         schedule = []
         for item, optimization in pair_with_optimization(items, context):

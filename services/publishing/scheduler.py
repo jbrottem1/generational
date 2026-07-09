@@ -16,7 +16,7 @@ from __future__ import annotations
 from datetime import datetime, timedelta, timezone
 
 from services.publishing.models import PUBLISH_SCHEDULE_ENTRY_FIELDS  # noqa: F401 - contract re-export
-from services.seo.localization import LOCALIZATION_TARGETS
+from services.publishing.targets import LOCALIZATION_TARGETS
 
 _WEEKDAYS = ("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday")
 

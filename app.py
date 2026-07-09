@@ -17,7 +17,7 @@ import streamlit as st
 from core.constants import APP_VERSION
 from core.state import init_session_state
 from ui import sidebar, styles
-from ui.tabs import analytics, ideas, projects, publishing, scripts, settings
+from ui.tabs import analytics, ideas, projects, publishing, scripts, settings, studio
 
 st.set_page_config(
     page_title="Generational | AI Content Operating System",
@@ -32,8 +32,11 @@ st.title("🚀 Generational")
 st.subheader("AI Content Operating System")
 st.caption(f"v{APP_VERSION} · Build faceless content at scale")
 
-tab_labels = ["💡 Ideas", "📝 Scripts", "📁 Projects", "📤 Publishing", "📊 Analytics", "⚙️ Settings"]
-ideas_tab, scripts_tab, projects_tab, publishing_tab, analytics_tab, settings_tab = st.tabs(tab_labels)
+tab_labels = ["🎬 Studio", "💡 Ideas", "📝 Scripts", "📁 Projects", "📤 Publishing", "📊 Analytics", "⚙️ Settings"]
+studio_tab, ideas_tab, scripts_tab, projects_tab, publishing_tab, analytics_tab, settings_tab = st.tabs(tab_labels)
+
+with studio_tab:
+    studio.render()
 
 with ideas_tab:
     ideas.render()

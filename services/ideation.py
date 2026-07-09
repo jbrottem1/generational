@@ -24,6 +24,7 @@ def run_command(
     voice_profile_id: str = "",
     research_settings: "dict | None" = None,
     project_name: str | None = None,
+    context_extra: "dict | None" = None,
 ) -> dict:
     """Run the full pipeline for a command via the Orchestrator.
 
@@ -33,6 +34,10 @@ def run_command(
     """
     from services.orchestrator import get_orchestrator
 
+    extra = {"voice_mode": voice_mode, "voice_profile_id": voice_profile_id}
+    if context_extra:
+        extra.update(context_extra)
+
     pipeline = get_orchestrator().run_full_pipeline(
         command,
         count=count,
@@ -40,7 +45,7 @@ def run_command(
         threshold=threshold,
         research_settings=research_settings,
         project_name=project_name,
-        context_extra={"voice_mode": voice_mode, "voice_profile_id": voice_profile_id},
+        context_extra=extra,
     )
     log_event(logger, "ideation.pipeline_finished", status=pipeline.status)
 

@@ -24,10 +24,14 @@ from __future__ import annotations
 from core.log import get_logger, log_event
 from engines.contracts import ContractEngine
 from engines.publishing.scheduler_engine import collect_publish_items, pair_with_optimization
-from services.publishing.manager import PublishingManager
 from services.publishing.models import JobStatus, PUBLISHING_ENGINE_VERSION
 
 logger = get_logger(__name__)
+
+
+def _manager():
+    from services.publishing.manager import PublishingManager
+    return PublishingManager
 
 
 def _publishing_package_of(jobs: list) -> dict:
@@ -64,9 +68,9 @@ def _publishing_package_of(jobs: list) -> dict:
     }
 
 
-def publish_content(context: dict, manager: "PublishingManager | None" = None) -> dict:
+def publish_content(context: dict, manager=None) -> dict:
     """Prepare, queue, and (for immediate mode) execute every publish job."""
-    manager = manager or PublishingManager()
+    manager = manager or _manager()()
     items, source_key = collect_publish_items(context)
     mode = context.get("publish_mode", "immediate")
 

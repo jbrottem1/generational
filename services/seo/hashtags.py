@@ -8,8 +8,22 @@ Usefulness blends reach and specificity per the platform's discovery model
 
 from __future__ import annotations
 
-from engines.heuristics import clamp, stable_jitter, weighted_blend
+import hashlib
+
 from services.seo.models import HASHTAG_PLATFORMS
+
+
+def _clamp(value: float, low: int = 5, high: int = 98) -> int:
+    return int(max(low, min(high, value)))
+
+
+def _weighted_blend(values: dict, weights: dict, low: int = 5, high: int = 98) -> int:
+    return _clamp(sum(values[key] * weight for key, weight in weights.items()), low=low, high=high)
+
+
+def _stable_jitter(text: str, span: int = 8) -> int:
+    digest = hashlib.md5(text.encode("utf-8")).hexdigest()
+    return int(digest[:8], 16) % max(span, 1)
 
 # Platform → (discovery tags, max tags, reach weight). The reach weight is
 # how much raw reach matters vs. specificity on that platform's algorithm.
@@ -31,7 +45,7 @@ def _tagify(text: str) -> str:
 
 def _score_tag(tag: str, platform: str, specificity: int, reach: int) -> dict:
     reach_weight = _PLATFORM_PROFILES[platform][2]
-    usefulness = weighted_blend(
+    usefulness = _weighted_blend(
         {"reach": reach, "specificity": specificity},
         {"reach": reach_weight, "specificity": 1 - reach_weight},
     )
@@ -39,7 +53,7 @@ def _score_tag(tag: str, platform: str, specificity: int, reach: int) -> dict:
         "tag": tag,
         "reach": reach,
         "specificity": specificity,
-        "usefulness": clamp(usefulness + stable_jitter(tag + platform, span=6)),
+        "usefulness": _clamp(usefulness + _stable_jitter(tag + platform, span=6)),
         "rank": 0,
     }
 
