@@ -118,13 +118,14 @@ stub) graduates later as an audio-stage upgrade — not a distribution stage.
 
 ---
 
-## Provider Runtime Layer (Agent 19)
+## Provider Runtime Layer (Agent 19) — Agent 22 readiness
 
-All stages that call external AI services route through
-`services/provider_runtime/` (`ProviderRuntime.generate_*()`). The runtime
-selects providers by capability, handles fallback/retries, and logs usage.
-Long-form productions use `RuntimeExecutionEngine` with checkpoint resume.
-See `PROVIDER_INTEGRATION.md`.
+`services/provider_runtime/` is the **target** single gateway for external AI.
+Vendor adapters are registered (OpenAI, Anthropic, Gemini, Veo, Runway,
+ElevenLabs, Flux, Stability, Ideogram, Kling, Pika, Luma, Replicate, Fal.ai)
+with stub `execute()` implementations. Some engines still use `core.ai` for
+LLM text; Agent 22 migrates those calls to `ProviderRuntime.generate_*()`
+without changing Orchestrator or Studio contracts. See `PROVIDER_INTEGRATION.md`.
 
 ---
 
@@ -133,19 +134,30 @@ See `PROVIDER_INTEGRATION.md`.
 The Creative Studio (`ui/tabs/studio.py`, `services/studio/`) is the primary
 user interface. It does not run pipeline stages directly — it calls:
 
-- `services/studio/run_studio_production()` → `ideation.run_command()` → Orchestrator
+- `services/studio/run_studio_production()` → **Workflow Executor** → Orchestrator
 - `services/studio/get_provider_dashboard()` → `ProviderRuntime`
-- `services/studio/submit_longform_job()` → job queue + `RuntimeExecutionEngine`
+- `services/studio/submit_longform_job()` → job queue `workflow_run` → Workflow Executor
 
-Pipeline visualization maps orchestrator `StageReport` objects to the 12-stage
-Studio view. See `STUDIO_UI.md`.
+Pipeline visualization maps Workflow Executor / orchestrator stage reports to
+the 12-stage Studio view. See `STUDIO_UI.md`.
 
 ## Workflow Executor Layer (Agent 21)
 
 One-prompt production runs are managed by
 `services/workflow_executor/` (`WorkflowExecutor.execute()`). The executor
 creates a durable `ProjectRun`, resolves production type/template, drives
-Orchestrator stages in order, checkpoints after each stage, retries/degrades
-failures, and exposes Studio UI status (`get_status`). It does not redefine
-stage order — it filters/annotates the canonical plan above. See
-`WORKFLOW_EXECUTOR.md`.
+Orchestrator stages in order (including analytics + learning after publish),
+checkpoints after each stage, retries/degrades failures, and exposes Studio UI
+status (`get_status`). It does not redefine stage order — it filters/annotates
+the canonical plan above. See `WORKFLOW_EXECUTOR.md`.
+
+**Canonical user flow:**
+
+```
+User Prompt → Studio UI → Workflow Executor → Orchestrator
+  → ProviderRuntime / Engines → packages → post_production → render
+  → publishing → analytics → learning
+```
+
+(`DISTRIBUTION_STAGES` order is render → post_production; Studio's 12-stage
+UI collapses intelligence stages and may show post before render for clarity.)

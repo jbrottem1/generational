@@ -176,6 +176,16 @@ execution, and checkpointed long-form production jobs.
 - **Modules:** `services/provider_runtime/`, bridges to `providers/` and `core/ai/`
 - **See:** `PROVIDER_INTEGRATION.md`
 
+### Agent 20: Studio UI & Creative Workspace — LANDED
+
+Primary user interface for Generational. Display-only Streamlit surface over
+`services/studio/`. Production runs route **Studio → Workflow Executor →
+Orchestrator** (never engines or vendor SDKs directly). Provider health/cost
+via ProviderRuntime.
+
+- **Modules:** `ui/tabs/studio.py`, `ui/studio/`, `services/studio/`
+- **See:** `STUDIO_UI.md`
+
 ### Agent 21: End-to-End Workflow Executor — LANDED
 
 Durable production-run controller — one user prompt becomes a managed
@@ -225,6 +235,7 @@ zones, contract stubs, and orchestrator stages already wired (see
 | Agent 18 | AI Director — **LANDED** (live stage) | `engines/ai_director.py` + `services/ai_director/` | `ai_director` |
 | Agent 17 | Post-Production & Intelligent Editing — **LANDED** (mock providers, live stage) | `engines/post_production.py` + `services/post_production/` + `providers/post_production/` | `post_production` |
 | Agent 19 | Provider Integration & Runtime — **LANDED** | `services/provider_runtime/` | service layer (not a stage) |
+| Agent 20 | Studio UI & Creative Workspace — **LANDED** | `services/studio/` + `ui/tabs/studio.py` | service + UI (not a stage) |
 | Agent 21 | End-to-End Workflow Executor — **LANDED** | `services/workflow_executor/` | service layer (not a stage) |
 
 Future engines subclass `ContractEngine` (`engines/contracts.py`) and fill

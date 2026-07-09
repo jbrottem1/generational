@@ -272,3 +272,42 @@ def test_describe_all_is_complete_and_uniform():
         for field in ("engine_id", "name", "version", "ready", "input_contract",
                       "output_contract", "dependencies", "capabilities", "description"):
             assert field in info, (info.get("engine_id"), field)
+
+
+# -------------------------------- Studio / Workflow Executor integration (v9.13)
+
+
+def test_studio_service_does_not_import_engines():
+    """Agent 20 must stay above engines — only Workflow Executor / storage / runtime."""
+    studio_dir = ENGINES_DIR.parent / "services" / "studio"
+    violations = []
+    for file in sorted(studio_dir.glob("*.py")):
+        for imported in _engine_imports(file):
+            violations.append(f"services/studio/{file.name} imports {imported}")
+    assert not violations, (
+        "Studio UI service layer must not import engines:\n  "
+        + "\n  ".join(violations)
+    )
+
+
+def test_studio_production_routes_through_workflow_executor():
+    """Canonical Studio path is Workflow Executor, not ideation/Orchestrator direct."""
+    source = (ENGINES_DIR.parent / "services" / "studio" / "production.py").read_text(
+        encoding="utf-8"
+    )
+    assert "get_workflow_executor" in source
+    assert "ideation.run_command" not in source
+    assert "run_full_pipeline" not in source
+    assert "RuntimeExecutionEngine" not in source
+
+
+def test_workflow_executor_does_not_import_engines():
+    """Agent 21 drives stages via Orchestrator only — no engine imports."""
+    we_dir = ENGINES_DIR.parent / "services" / "workflow_executor"
+    violations = []
+    for file in sorted(we_dir.rglob("*.py")):
+        for imported in _engine_imports(file):
+            violations.append(f"{file.relative_to(ENGINES_DIR.parent)} imports {imported}")
+    assert not violations, (
+        "Workflow Executor must not import engines:\n  " + "\n  ".join(violations)
+    )

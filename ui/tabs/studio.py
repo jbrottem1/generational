@@ -210,7 +210,7 @@ def _execute_production(command: str, *, longform: bool = False) -> None:
         notify.success(f"Long-form job submitted: {job['job_id']}")
         return
 
-    with st.spinner("Running full production pipeline via Orchestrator..."):
+    with st.spinner("Running production via Workflow Executor → Orchestrator..."):
         result = studio.run_studio_production(
             command,
             settings,
@@ -240,6 +240,8 @@ def _execute_production(command: str, *, longform: bool = False) -> None:
         project.update(project_from_result(st.session_state.current_project_name, result))
         project["studio_settings"] = settings
         project["pipeline_state"] = {"stages": st.session_state.studio_pipeline}
+        if result.get("workflow_run_id"):
+            project["workflow_run_id"] = result["workflow_run_id"]
         storage.save_project(project)
 
     if error:

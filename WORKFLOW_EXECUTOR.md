@@ -104,8 +104,12 @@ ETA hints are more conservative for Studio UI.
 
 ## UI integration (Agent 20 Studio)
 
+Studio production **routes through this executor**:
+
 ```python
-executor.get_status(run_id)
+# services/studio/production.py
+run = get_workflow_executor().execute(command, config=config, context_extra=...)
+status = executor.get_status(run.run_id)
 # or studio_status(run)
 ```
 
@@ -114,6 +118,9 @@ Returns: `current_stage`, `progress`, `errors`, `outputs`,
 
 Job queue type: `workflow_run` via `ensure_workflow_handler(queue)`.
 Also registered by `ensure_runtime_handlers(queue)`.
+
+Long-form Studio submits create a `ProjectRun` then enqueue
+`workflow_run` with `resume_run_id` for durable execution.
 
 ---
 
@@ -161,7 +168,8 @@ Templates live in `services/workflow_executor/templates.py`.
    orchestrator stages — filter/annotate only).
 2. New durable fields: append to dataclasses in `models.py` + `DATA_CONTRACTS.md`.
 3. Do **not** call engines or vendor SDKs from this package.
-4. Wire Studio polling to `get_status()`; Agent 20 schedules via job queue.
+4. Studio already polls via `get_status()` / `studio_status()` and schedules
+   long-form via the `workflow_run` job queue.
 
 ---
 

@@ -483,6 +483,7 @@ Studio projects extend the base project dict in `data/projects/{slug}.json`:
 | `studio_settings` | dict | Production settings (voice, style, pacing, etc.) |
 | `pipeline_state` | dict | Last pipeline visualization snapshot |
 | `longform_job_id` | str | Active long-form checkpoint job id |
+| `workflow_run_id` | str | Durable Workflow Executor `ProjectRun` id |
 
 Settings preview (`build_settings_preview`): `command`, `platform`,
 `video_length_sec`, `voice`, `narrator`, `visual_style`, `camera_style`,

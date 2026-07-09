@@ -52,11 +52,12 @@ Companions: `ENGINE_REGISTRY.md` · `SYSTEM_DEPENDENCY_MAP.md` ·
 
 ## 2. Active & Completed Agents (continued)
 
-### Infrastructure Department
+### Infrastructure & Interface Department
 
 | Agent | Subsystem | Engine keys | Status |
 |---|---|---|---|
 | **19** | Provider Integration & Runtime | `services/provider_runtime/` | **LIVE** |
+| **20** | Studio UI & Creative Workspace | `services/studio/` + `ui/tabs/studio.py` | **LIVE** |
 | **21** | End-to-End Workflow Executor | `services/workflow_executor/` | **LIVE** |
 
 ---
@@ -65,13 +66,13 @@ Companions: `ENGINE_REGISTRY.md` · `SYSTEM_DEPENDENCY_MAP.md` ·
 
 | Agent | Subsystem | Reserved key | Integrates via |
 |---|---|---|---|
-| **22** | Autonomous Executive | `autonomous_executive` | `OrchestratorHook` + job queue only |
+| **22** | Real Provider Integrations / Autonomous Executive prep | vendor `execute()` on ProviderRuntime adapters | `ProviderRuntime` only — no Orchestrator/Studio changes |
 
 ### Agent 20 — Studio UI & Creative Workspace (LIVE)
 
 | Agent | Subsystem | Key | Integrates via |
 |---|---|---|---|
-| **20** | Studio UI & Creative Workspace | `studio` (service + UI) | `services/studio/` + `ui/tabs/studio.py` → Orchestrator + ProviderRuntime |
+| **20** | Studio UI & Creative Workspace | `studio` (service + UI) | `services/studio/` → **Workflow Executor** → Orchestrator; ProviderRuntime for health/cost |
 
 Primary user interface: project workspace, creative prompt panel, pipeline
 visualization, live previews, settings, provider status, output library,
@@ -114,7 +115,7 @@ Reserved for future BI: `business_intelligence` engine key.
 | Direction | AI direction, executive creative strategy | **18** |
 | Interface | Studio UI, creative workspace | **20** |
 | Infrastructure | Provider integration, runtime, workflow execution | **19**, **21** |
-| Executive (planned) | Autonomous operation | 22 |
+| Providers / Executive (planned) | Real vendor APIs + autonomous operation | **22** |
 
 ---
 

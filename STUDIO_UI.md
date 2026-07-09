@@ -7,14 +7,17 @@ documented service contracts, never direct engine or provider calls.
 ## Architecture
 
 ```
-ui/tabs/studio.py          Streamlit views (display only)
+User Prompt
     ↓
-services/studio/           UI adapter layer
+ui/tabs/studio.py                 Streamlit views (display only)
     ↓
-services/ideation.py       Orchestrator adapter (run_full_pipeline)
-services/provider_runtime/ Provider health + long-form jobs
-services/workflow_executor/ Durable run status (Agent 21)
-core/storage/              Project persistence
+services/studio/                  UI adapter layer
+    ↓
+services/workflow_executor/       Durable ProjectRun (Agent 21)
+    ↓
+services/orchestrator/            Stage coordination
+    ↓
+engines / ProviderRuntime         Generation + external AI gateway
 ```
 
 ## Workspace features
@@ -26,11 +29,12 @@ core/storage/              Project persistence
 ## Creative prompt panel
 
 Users enter natural-language commands; the Studio displays full production
-settings before execution and routes through the Orchestrator.
+settings before execution and routes through the **Workflow Executor**
+(which drives the Orchestrator stage-by-stage).
 
 ## Pipeline visualization
 
-12-stage view mapped from orchestrator `StageReport` diagnostics:
+12-stage view mapped from Workflow Executor / orchestrator stage reports:
 
 Research → Script → Creative Studio → Asset Generation → Animation →
 Voice → Music → Post Production → Rendering → Publishing → Analytics → Learning
@@ -45,21 +49,23 @@ descriptions, captions, subtitles — extracted from `ContentPackage` slots.
 
 ## Long-form support
 
-Commands matching long-form patterns (documentaries, courses, podcasts) can
-be submitted as checkpointed jobs via `ProviderRuntime` long-form execution
-or the Workflow Executor (`workflow_run` job type).
+Commands matching long-form patterns (documentaries, courses, podcasts) are
+submitted as durable `workflow_run` jobs via the Workflow Executor
+(checkpoints under `data/workflow_runs/`). Legacy `RuntimeExecutionEngine`
+(`longform_pipeline`) remains available for Agent 19 tooling but is **not**
+the Studio default path.
 
 ## Integration points
 
 | Need | Contract |
 |---|---|
-| Run production | `services.studio.run_studio_production()` → `ideation.run_command()` → Orchestrator |
+| Run production | `services.studio.run_studio_production()` → Workflow Executor → Orchestrator |
 | Provider status | `services.studio.get_provider_dashboard()` → `ProviderRuntime` |
 | Project CRUD | `services.studio.projects` → `core.storage` |
 | Pipeline view | `services.studio.build_pipeline_view()` from `stage_reports` |
-| Long-form jobs | `services.studio.submit_longform_job()` → job queue + checkpoints |
-| Durable runs | `services.workflow_executor` → `ProjectRun` + checkpoints |
+| Long-form jobs | `services.studio.submit_longform_job()` → `workflow_run` queue |
+| Run status | `services.workflow_executor.get_status(run_id)` / `studio_status(run)` |
 
 ## Tests
 
-`tests/test_studio.py` — 21 tests covering service layer and orchestrator integration.
+`tests/test_studio.py` — service layer, Workflow Executor routing, long-form jobs.

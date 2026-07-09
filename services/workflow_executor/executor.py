@@ -103,6 +103,8 @@ class WorkflowExecutor:
         self,
         command: str,
         config: "WorkflowConfig | dict | None" = None,
+        *,
+        context_extra: "dict | None" = None,
     ) -> ProjectRun:
         """Accept a production request and create a durable ProjectRun."""
         if isinstance(config, dict):
@@ -133,6 +135,8 @@ class WorkflowExecutor:
             "production_type": cfg.production_type,
             "workflow_template": cfg.template,
         }
+        if context_extra:
+            context.update(context_extra)
         run = ProjectRun(
             command=command,
             production_type=cfg.production_type,
@@ -167,6 +171,7 @@ class WorkflowExecutor:
         *,
         run_id: str = "",
         resume: bool = False,
+        context_extra: "dict | None" = None,
     ) -> ProjectRun:
         """Create (or load) a run and execute until complete / failed / cancelled."""
         if resume or run_id:
@@ -177,7 +182,7 @@ class WorkflowExecutor:
 
         if not command:
             raise ValueError("command is required to start a new workflow run")
-        run = self.create_run(command, config)
+        run = self.create_run(command, config, context_extra=context_extra)
         return self._execute_run(run)
 
     def resume(self, run_id: str) -> ProjectRun:
@@ -621,7 +626,10 @@ def reset_workflow_executor() -> None:
 def execute_workflow(command: str, **kwargs) -> ProjectRun:
     """Module-level convenience: create + execute a production workflow."""
     config = kwargs.pop("config", None)
-    return get_workflow_executor().execute(command, config=config, **kwargs)
+    context_extra = kwargs.pop("context_extra", None)
+    return get_workflow_executor().execute(
+        command, config=config, context_extra=context_extra, **kwargs
+    )
 
 
 def _workflow_job_handler(payload: dict) -> dict:
@@ -632,6 +640,7 @@ def _workflow_job_handler(payload: dict) -> dict:
         run = executor.execute(
             payload.get("command", ""),
             config=payload.get("config"),
+            context_extra=payload.get("context_extra"),
         )
     return {
         "run_id": run.run_id,

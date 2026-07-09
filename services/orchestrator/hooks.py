@@ -1,9 +1,11 @@
-"""Autonomy hooks — the attachment points for future autonomous agents.
+"""Autonomy hooks — attachment points for continuous / autonomous agents.
 
-Scheduling, publishing, analytics ingestion, and the learning loop are NOT
-built yet. These interfaces exist so future agents attach to the orchestrator
-without modifying it: implement `OrchestratorHook`, call `attach_hook()`,
-and the orchestrator notifies you after every pipeline run.
+Analytics and learning engines are LIVE as orchestrator stages (and are
+driven by the Workflow Executor after publish). These hooks remain for
+post-run reactions (scheduler, publisher side-effects, continuous learning
+ingestion) without modifying the orchestrator core: implement
+`OrchestratorHook`, call `attach_hook()`, and the orchestrator notifies
+you after every pipeline run. Agent 22 attaches here for executive autonomy.
 """
 
 from __future__ import annotations
