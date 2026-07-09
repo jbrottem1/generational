@@ -56,6 +56,11 @@ STAGE_GROUPS: "dict[str, list[str]]" = {
     "analytics": ["analytics"],
     "learning": ["learning"],
     "brand_management": ["brand_management"],
+    # Character, Universe & IP (Agent 15) — persistent cast/world context,
+    # continuity, canon, and the Story Bible. Runnable standalone today;
+    # scheduled into the full pipeline via register_stage() when Agent 1
+    # wires it ahead of script generation.
+    "character_universe": ["character_universe"],
 }
 
 # Post-packaging distribution stages executed by the full production

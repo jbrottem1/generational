@@ -28,9 +28,13 @@ PUBLISHING_LIVE = {"publishing", "scheduler"}
 # Agent 9 — the Analytics & Continuous Learning Engine is live.
 ANALYTICS_LIVE = {"analytics", "learning"}
 
+# Agent 15 — the Character, Universe & IP Engine is live.
+CHARACTER_UNIVERSE_LIVE = {"character_universe"}
+
 LIVE_KEYS = (
     INTELLIGENCE_LIVE | PRODUCTION_LIVE | RENDER_LIVE
     | OPTIMIZATION_LIVE | PUBLISHING_LIVE | ANALYTICS_LIVE
+    | CHARACTER_UNIVERSE_LIVE
 )
 
 PLANNED_KEYS = {

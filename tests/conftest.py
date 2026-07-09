@@ -50,6 +50,21 @@ def isolated_analytics_data(tmp_path_factory):
     knowledge._kb = original_kb
 
 
+@pytest.fixture(scope="session", autouse=True)
+def isolated_character_universe_data(tmp_path_factory):
+    """Agent 15's character/universe registry persists IP entities under
+    data/character_universe — point the default store at a temp dir for
+    the whole session so tests never write to the real data/ folder."""
+    import services.character_universe.store as cu_store
+
+    original = cu_store._DEFAULT_DIR
+    cu_store._DEFAULT_DIR = str(tmp_path_factory.mktemp("character_universe"))
+    cu_store.reset_store()
+    yield
+    cu_store._DEFAULT_DIR = original
+    cu_store.reset_store()
+
+
 @pytest.fixture
 def project_store(tmp_path):
     return JsonProjectStore(directory=str(tmp_path / "projects"))

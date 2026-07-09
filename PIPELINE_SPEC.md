@@ -67,6 +67,12 @@ Learning Feedback          LIVE      Agent 9 — engines: learning
    ↓                                  recommendations per engine, cumulative
    ↓                                  memory, experiments, reports)
 
+Character & Universe       LIVE      Agent 15 — engine: character_universe
+   ↓                                 (persistent characters, universes,
+   ↓                                  relationships, canon, continuity,
+   ↓                                  Story Bible; integration payloads for
+   ↓                                  script, creative, asset, optimization)
+
 Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
    ↓
 (loops back into Trend Discovery weights for the next run)
@@ -163,4 +169,5 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
 | publish | scheduler, publishing | live (mock providers) | **Agent 7** |
 | analytics | analytics | live (mock metrics providers) | **Agent 9** |
 | learning | learning | live | **Agent 9** |
+| character_universe | character_universe | live | **Agent 15** |
 | brand_management | brand_management | future | **Agent 10** |

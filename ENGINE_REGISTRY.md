@@ -99,6 +99,29 @@ contract); the `publishing` planned stub graduated from the former
 `DATA_CONTRACTS.md` §7 and `engines/publishing/README.md`). Real platform
 APIs swap in via `register_publishing_provider()` — one adapter per file.
 
+## Live engine (analytics — Agent 9)
+
+`analytics` · `learning` — the Analytics & Continuous Learning Engine
+(`engines/analytics.py`, `engines/learning.py`, logic in
+`services/analytics/` and `services/learning/`). See `DATA_CONTRACTS.md` §8
+and `ANALYTICS_LEARNING.md`.
+
+## Live engine (character universe — Agent 15)
+
+`character_universe` — the Character, Universe & Intellectual Property
+Engine (`engines/character_universe.py`, logic in
+`services/character_universe/`). Subclasses `ContractEngine`, runs
+deterministically from its persistent JSON registry, and produces
+`character_universe_summary`, `character_script_contexts`,
+`character_creative_context`, `character_asset_requests`,
+`character_continuity_report`, `story_bible`, and
+`character_performance_payload` (see `DATA_CONTRACTS.md` §10 and
+`CHARACTER_UNIVERSE_ENGINE.md`). Never generates media — hands structured
+definitions and reference prompts to Script Generation, Creative Studio,
+Universal Asset Generation (Agent 14), and Optimization Laboratory. The
+on-demand query surface is `get_character_universe_registry()`
+(`services/character_universe/registry.py`).
+
 ## Reserved keys (planned / contract stubs — do NOT reuse)
 
 | Key | Stub type | Future owner | Stage |

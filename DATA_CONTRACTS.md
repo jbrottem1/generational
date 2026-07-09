@@ -56,7 +56,12 @@ orchestrator at the end of every full run; see
 `TREND_INTELLIGENCE.md`),
 `market_opportunities`, `market_roadmap`, `market_intelligence_report`
 (v9.5 — **Agent 11**, written by the `market_intelligence` engine after
-trend forecasting; see §2.3 and `MARKET_INTELLIGENCE.md`).
+trend forecasting; see §2.3 and `MARKET_INTELLIGENCE.md`),
+`character_universe_summary`, `character_script_contexts`,
+`character_creative_context`, `character_asset_requests`,
+`character_continuity_report`, `story_bible`, `character_performance_payload`
+(v10.0 — **Agent 15**, written by the `character_universe` engine; see §10
+and `CHARACTER_UNIVERSE_ENGINE.md`).
 
 Future engines declare which keys they consume/produce via
 `input_contract` / `output_contract` on `ContractEngine`.
@@ -307,7 +312,55 @@ calls.
 
 ---
 
-## 9. Change protocol
+Feedback reaches upstream engines through `OrchestratorHook` (kinds
+`analytics` / `learning`) and the guidance adapters — never engine-to-engine
+calls.
+
+---
+
+## 10. Character & Universe contracts (Agent 15) — `services/character_universe/`
+
+The Character, Universe & Intellectual Property Engine (`character_universe`)
+maintains persistent IP and publishes structured context for downstream
+engines. Field tuples in `services/character_universe/models.py` and
+`services/character_universe/world_models.py` are the testable contract;
+all output is JSON-safe dicts, additive-only from 1.0.
+
+**Character** (`CHARACTER_FIELDS`, v1.0) — persistent cast member with
+visual profile (`VISUAL_PROFILE_FIELDS`), voice profile (`VOICE_PROFILE_FIELDS`),
+memory (`CHARACTER_MEMORY_FIELDS`), and story arc (`CHARACTER_ARC_FIELDS`).
+
+**Universe** (`UNIVERSE_FIELDS`) · **Location** (`LOCATION_FIELDS`) ·
+**Organization** (`ORGANIZATION_FIELDS`) · **BrandIdentity**
+(`BRAND_IDENTITY_FIELDS`) · **Franchise** (`FRANCHISE_FIELDS`) ·
+**StylePack** (`STYLE_PACK_FIELDS`) · **Relationship** (`RELATIONSHIP_FIELDS`)
+· **CanonEvent** (`CANON_EVENT_FIELDS`) · **ContinuityIssue**
+(`CONTINUITY_ISSUE_FIELDS`) · **AssetReference** (`ASSET_REFERENCE_FIELDS`)
+· **StoryBible** (`STORY_BIBLE_FIELDS`).
+
+**Context keys** (additive, written by `character_universe` engine):
+
+| Key | Type | Purpose |
+|---|---|---|
+| `character_universe_summary` | dict | Cast size, universes, continuity health |
+| `character_script_contexts` | list | Per-character speaking style, dialogue rules, personality, motivation, relationships, canon history — for Script Generation |
+| `character_creative_context` | dict | Scene participants, world rules, visual references, creative constraints — for Creative Studio |
+| `character_asset_requests` | list | Character/environment definitions, reference prompts, style packs, consistency rules — REQUESTS for Agent 14 (never generated assets) |
+| `character_continuity_report` | dict | Contradictions, drift, lore violations |
+| `story_bible` | dict | Canonical Story Bible snapshot |
+| `character_performance_payload` | dict | Popularity/franchise signals for Optimization Laboratory |
+
+**Optional context inputs** (additive): `character_ids` (explicit cast),
+`universe_id` (scope), `character_appearances` (appearance records to log),
+`franchise_metrics` (performance written back from analytics).
+
+Persistence: `data/character_universe/` (one JSON collection per entity
+kind). Agent 15 writes ONLY its own context keys and persistent store;
+render/seo/publishing slots are never mutated.
+
+---
+
+## 11. Change protocol
 
 1. Appending a ContentPackage field: add to the dataclass **and**
    `PRODUCTION_PACKAGE_FIELDS`, with a default; get Agent 1 review.

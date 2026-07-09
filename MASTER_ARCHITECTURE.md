@@ -142,12 +142,19 @@ Gets content live. Manages platform accounts per channel (placeholder accounts �
 - **Owns:** platform accounts (placeholders), metadata formatting, scheduling, publish queue, retries, publish history
 - **Modules:** `engines/publishing/` (engine, scheduler_engine), `services/publishing/` (manager, queue, scheduler, retry, package, accounts, extensions), `providers/publishing/` + `providers/publishing_provider.py`; legacy pre-render queue: `engines/publishing_queue.py`
 
-### Agent 9: Analytics & Learning Engine
+### Agent 9: Analytics & Learning Engine — LANDED
 
 Closes the loop. Collects post-publish performance (views, retention curves, watch time, engagement, follows), attributes outcomes back to the decisions that produced them, and emits learning signals that adjust future trend selection, psychology weights, script styles, and posting strategy.
 
 - **Owns:** performance ingestion, attribution, learning signals, weight updates
-- **Modules:** `engines/analytics.py`, `engines/learning.py`
+- **Modules:** `engines/analytics.py`, `engines/learning.py`, `services/analytics/`, `services/learning/`
+
+### Agent 15: Character, Universe & IP Engine — LANDED
+
+The permanent creative memory of the company. Creates, maintains, evolves, and protects every persistent character, universe, world, brand identity, and intellectual property. Never generates media — publishes structured context (speaking style, visual references, asset requests, continuity reports, Story Bible) for Script Generation, Creative Studio, Universal Asset Generation (Agent 14), and Optimization Laboratory.
+
+- **Owns:** characters, universes, locations, organizations, relationships, canon, continuity, franchises, brand identities, style packs, Story Bible
+- **Modules:** `engines/character_universe.py`, `services/character_universe/` (models, registry, continuity, memory, relationships, franchise, bible, integrations, store)
 
 ### Development-agent landing zones (v8.1)
 
@@ -161,8 +168,9 @@ zones, contract stubs, and orchestrator stages already wired (see
 | Agent 6 | Render & Video Production — **LANDED** (mock render, live stage) | `engines/render/` | `render` |
 | Agent 7 | Publishing & Scheduler — **LANDED** (mock providers, live stage) | `engines/publishing/` + `services/publishing/` + `providers/publishing/` | `publish` |
 | Agent 8 | Global Content Optimization (SEO) — **LANDED** (live stage) | `engines/seo/` + `engines/seo_optimization.py` + `services/seo/` | `seo` |
-| Agent 9 | Analytics & Learning | `engines/analytics/` | `analytics` · `learning` |
+| Agent 9 | Analytics & Learning — **LANDED** | `engines/analytics.py` · `engines/learning.py` + `services/analytics/` · `services/learning/` | `analytics` · `learning` |
 | Agent 10 | Multi-Brand Operating System | `engines/brands/` | `brand_management` |
+| Agent 15 | Character, Universe & IP — **LANDED** | `engines/character_universe.py` + `services/character_universe/` | `character_universe` |
 
 Future engines subclass `ContractEngine` (`engines/contracts.py`) and fill
 their slot in the canonical `ContentPackage` (`DATA_CONTRACTS.md`). Their

@@ -4,6 +4,29 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 10.0 — Character, Universe & IP Engine (Agent 15)
+
+The company's permanent creative memory is live. Every recurring character,
+fictional world, mascot, AI presenter, location, organization, timeline, and
+franchise now originates in the Character & Universe Engine — persistent
+IP that stays consistent across every future piece of content.
+
+```python
+from services.character_universe import get_character_universe_registry
+from services.character_universe.integrations import script_context_for
+
+registry = get_character_universe_registry()
+nova = registry.get("characters", "char_presenter_nova")
+context = script_context_for("char_presenter_nova", registry)  # for Script Generation
+```
+
+In the pipeline, the `character_universe` engine publishes
+`character_script_contexts`, `character_creative_context`,
+`character_asset_requests` (requests for Agent 14 — never generated media),
+`character_continuity_report`, `story_bible`, and
+`character_performance_payload` to the shared context (additive only).
+See `CHARACTER_UNIVERSE_ENGINE.md`.
+
 ## Version 9.5 — Market Intelligence Department (Agent 11)
 
 The company's strategic planning engine is live. Everything Generational

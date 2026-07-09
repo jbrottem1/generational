@@ -12,6 +12,7 @@ from engines.analytics import AnalyticsEngine
 from engines.asset_manager import AssetManagerEngine
 from engines.attention_graph import AttentionGraphEngine
 from engines.base import Engine, PlannedEngine
+from engines.character_universe import CharacterUniverseEngine
 from engines.citation import CitationEngine
 from engines.contracts import ContractEngine, FutureEngine
 from engines.future_stubs import BrandManagementEngine
@@ -87,6 +88,7 @@ for _engine_class in (
     SeoOptimizationEngine,
     SchedulerEngine,
     BrandManagementEngine,
+    CharacterUniverseEngine,
 ):
     if registry.get_engine(_engine_class.key) is None:
         registry.register(_engine_class())
