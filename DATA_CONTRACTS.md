@@ -75,7 +75,41 @@ A full run yields a `PipelineResult`: `status`, `packages`,
 
 ---
 
-## 5. Change protocol
+## 5. render_package (Agent 6) — `engines/render/`
+
+Written into `ContentPackage.render_package` by the Render Engine.
+Contract version `render_package_version: "2.0"` (the planning-layer
+package inside `visual_package["render_package"]` remains `"1.0"`).
+Additive over the media-production seed — `render_package_id`,
+`queue_status`, etc. survive.
+
+| Field | Type | Meaning |
+|---|---|---|
+| `output_format` | dict | 9:16 · 1080x1920 · MP4 · h264/aac · 30fps |
+| `platforms` | list | youtube_shorts, tiktok, instagram_reels, facebook_reels |
+| `resolution` / `aspect_ratio` / `duration_sec` | str/str/float | final output spec |
+| `timeline` | dict | contiguous segments (`TIMELINE_SEGMENT_FIELDS`): scene_id, start/end/duration, narration/visual/caption/audio references, transitions, motion_effect, overlay_text, render_status |
+| `scene_render_plan` | list | per scene (`SCENE_RENDER_PLAN_FIELDS`): asset type, image/video prompts, stock query, user/avatar/reaction footage slots, camera movement, zoom/pan/ken-burns effect, text overlays, caption placement, sound cues |
+| `caption_render_plan` | dict | word-by-word or sentence mode, per-word timing map, emphasis words, safe area, platform layouts, style presets |
+| `audio_mix_plan` | dict | narration/music/sfx/transition tracks, ducking, silence drops, volume levels, platform-safe loudness placeholder (-14 LUFS) |
+| `transition_plan` / `motion_plan` | dict/list | normalized transition + motion instructions |
+| `asset_requirements` / `missing_assets` | list | what the render needs / what only has placeholders |
+| `render_warnings` | list | everything a human should know before real rendering |
+| `estimated_render_duration_sec` | float | predicted wall-clock render time |
+| `production_readiness_score` | int | 0-100 — the number Publishing gates on |
+| `validation` | dict | SUCCESS/WARNING/FAILED/SKIPPED + per-check diagnostics |
+| `render_status` / `mock` | str/bool | mock render outcome (`mock: true` until real backends land) |
+| `mock_output_path` / `file_uri` | str | reserved output URI (no file written yet) |
+| `render_log` / `render_job` | list/dict | simulated render log + job lifecycle |
+| `render_manifest` | dict | counts + `ready_for_publishing` — Agent 7's gate |
+
+Consumption (Agent 7): read `render_manifest.ready_for_publishing`,
+`file_uri`, `duration_sec`, `platforms`, and `production_readiness_score`;
+never mutate render fields.
+
+---
+
+## 6. Change protocol
 
 1. Appending a ContentPackage field: add to the dataclass **and**
    `PRODUCTION_PACKAGE_FIELDS`, with a default; get Agent 1 review.

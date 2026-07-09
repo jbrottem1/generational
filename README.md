@@ -4,6 +4,70 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 8.2 — Render & Video Production Engine (Agent 6)
+
+The render stage is live. `engines/render/` converts a complete
+ProductionPackage — structured script, scene breakdown, visual package,
+audio package, captions, thumbnail plan, quality score — into a
+render-ready **9:16 vertical short-form video package** (1080x1920 MP4 for
+YouTube Shorts, TikTok, Instagram Reels, and Facebook Reels). No real MP4
+is produced yet: this release ships the complete render architecture with
+a **mock renderer**, ready for real providers to swap in.
+
+### The render package (`render_package` v2.0)
+
+Each idea gets a complete, JSON-safe render plan written to
+`ContentPackage.render_package` (additive over the media-production seed):
+
+- **Timeline** (`TimelineBuilder`) — contiguous, gap-free segments carrying
+  scene_id, start/end/duration, narration/visual/caption/audio references,
+  normalized transitions, motion effect, overlay text, and render status.
+- **Scene render plans** (`SceneRenderer`) — per scene: visual asset type,
+  image/video prompts, stock footage query, reserved user/avatar/reaction
+  footage slots, camera movement, zoom/pan/ken-burns effect parameters,
+  text overlays, caption placement, and sound cue timing.
+- **Caption render plan** (`CaptionRenderer`) — word-by-word or sentence
+  mode with a per-word timing map, bold emphasis words, safe-area
+  positioning that clears every platform's UI chrome, per-platform vertical
+  layouts, and four style presets.
+- **Audio mix plan** (`AudioMixer`) — narration, music, SFX, and transition
+  tracks with per-track levels, music ducking under narration, silence
+  drops before payoff beats, and a platform-safe loudness placeholder
+  (-14 LUFS / -1 dBTP).
+- **Transitions + motion** (`TransitionPlanner` / `MotionPlanner`) — the
+  Director's free-form language normalized to a closed vocabulary (cut,
+  fade, push, zoom, whip pan, glitch, flash, documentary slow zoom,
+  cinematic push-in, quick cut) as structured render instructions.
+- **Validation** (`RenderValidator`) — pre-flight checks (visuals,
+  narration, captions, audio, runtime, format, missing assets) returning
+  SUCCESS / WARNING / FAILED / SKIPPED with diagnostics and a 0-100
+  **production readiness score** — the number Publishing gates on.
+- **Mock render** (`MockRenderer` + `RenderJob`) — simulates the full pass
+  and returns render status, a reserved mock output path, duration,
+  warnings, missing assets, and a step-by-step render log.
+
+### Swappable providers (no paid APIs required)
+
+Asset requests resolve through `AssetResolver` fulfillers — AI image, AI
+video, stock footage, brand assets today (mock placeholders via
+`providers/image_provider.py` / `video_provider.py` / `music_provider.py`);
+user uploads, AI avatars, and AI reaction footage are reserved interfaces
+that degrade to placeholders reported in `missing_assets`. Real backends
+plug in via `set_image_provider()` / `set_video_provider()` /
+`set_music_provider()` and `register_fulfiller()` — zero contract changes.
+
+### Orchestrator integration
+
+The `image` (asset resolution) and `video` (assembly) engines graduated
+from planned stubs to live `ContractEngine`s, joined by the unified
+`render` façade engine. `run_render_stage(context)` now renders every idea
+in the context, mirrors results into `unified_packages` (status →
+`rendered`), and returns a safe SKIPPED summary when there is nothing to
+render — the render stage never crashes the pipeline. Docs:
+[`engines/render/README.md`](engines/render/README.md) and
+[`DATA_CONTRACTS.md`](DATA_CONTRACTS.md) §5. Tests: 34 new in
+`tests/test_render_engine.py` (351 total, all passing).
+
 ## Version 8.1 — Shared Contracts for Agents 6-10
 
 The integration foundation for the next five subsystems — Render & Video
@@ -1019,7 +1083,9 @@ and knowledge base — visible in **Settings → System Diagnostics**.
 - **New production stage**: add an engine module, register in `engines/__init__.py`,
   append its key to `WORKFLOWS["media_production"]`.
 - **New storage backend**: implement `core/storage/base.py`'s `ProjectStore`.
-- **Renderer**: consume `RenderPackage` objects from `data/publishing_queue/`.
+- **Real renderer**: implement `MockRenderer.render()`'s signature (ffmpeg /
+  cloud) and register asset fulfillers via
+  `engines.render.assets.register_fulfiller()` — see `engines/render/README.md`.
 
 ## Testing
 
@@ -1071,7 +1137,9 @@ generational/
 │   ├── voice_audio.py        # v7.6 Audio Production Package planner
 │   ├── research … quality.py # Intelligence pipeline (17 live)
 │   ├── scene_planning … publishing_queue.py  # Media production (8 live)
-│   └── voice|image|video|publishing|analytics|learning.py  # future render stubs
+│   ├── render/               # v8.2 Render & Video Production Engine (Agent 6)
+│   ├── image.py, video.py    # v8.2 live render stage engines (assets + assembly)
+│   └── voice|publishing|analytics|learning.py  # future stubs
 ├── services/
 │   ├── research/             # Knowledge Engine (manager, cache, scorer, summarizer)
 │   ├── trends/               # Trend Discovery (models, scorer, manager)
@@ -1099,7 +1167,7 @@ generational/
 ## Roadmap
 
 - 📡 Live trend APIs (Google Trends, YouTube Data, TikTok, Reddit) behind the trend provider interface
-- 🎬 Video/image generation from visual prompts (providers wired, engines stubbed)
+- 🎬 Real video/image generation + encoding behind the Render Engine's provider seams (architecture + mock render shipped in v8.2)
 - 🎙️ Real TTS providers (ElevenLabs, OpenAI) behind VoiceProvider
 - 🧬 Voice cloning provider
 - 📤 Auto Posting from publishing queue

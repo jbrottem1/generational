@@ -107,12 +107,12 @@ The sound brain. Converts the script and visual package into a complete audio pl
 - **Owns:** narration plans, voice styles, SFX, music direction, audio cue sheets
 - **Modules:** `engines/voice_audio.py`, `engines/voice.py`, `engines/narration.py`, `services/audio/`
 
-### Agent 6: Video Rendering Engine
+### Agent 6: Video Rendering Engine — LANDED (mock render)
 
-Turns plans into pixels. Assembles generated visuals, narration audio, music, SFX, and subtitles into a final rendered video that matches the storyboard and cue sheet, in the correct aspect ratio and duration for each target platform.
+Turns plans into pixels. Consumes the full ProductionPackage (structured script, scene breakdown, visual package, audio package, captions, quality score) and produces the render-ready 9:16 vertical package: a contiguous master timeline, per-scene render instructions (asset type, prompts, footage slots, camera/motion effects), word-by-word caption plans with safe-area layouts, a four-track audio mix plan with ducking and loudness placeholder, validation with a production readiness score, and a **mock render** simulating the full pass. Real backends (AI image/video generation, stock, avatars, ffmpeg/cloud encoding) swap in behind provider interfaces without contract changes.
 
-- **Owns:** asset assembly, timeline construction, subtitle burn-in, final render
-- **Modules:** `engines/video.py`, `engines/render_package.py`, `engines/timeline.py`, `engines/subtitle.py`, `engines/asset_manager.py`
+- **Owns:** asset resolution, timeline construction, scene render plans, caption render plans, audio mixing plans, transitions/motion instructions, render validation, (mock) rendering
+- **Modules:** `engines/render/` (engine, models, timeline, scene_plans, assets, captions, audio_mix, transitions, motion, packaging, validator, renderer), `engines/image.py`, `engines/video.py`; legacy media-production helpers: `engines/render_package.py`, `engines/timeline.py`, `engines/subtitle.py`, `engines/asset_manager.py`
 
 ### Agent 7: Quality Assurance Engine
 
@@ -144,7 +144,7 @@ zones, contract stubs, and orchestrator stages already wired (see
 
 | Dev agent | Subsystem | Landing zone | Orchestrator stage |
 |---|---|---|---|
-| Agent 6 | Render & Video Production | `engines/render/` | `render` |
+| Agent 6 | Render & Video Production — **LANDED** (mock render, live stage) | `engines/render/` | `render` |
 | Agent 7 | Publishing & Scheduler | `engines/publishing/` | `publish` |
 | Agent 8 | SEO & Global Trend Optimization | `engines/seo/` | `seo` |
 | Agent 9 | Analytics & Learning | `engines/analytics/` | `analytics` · `learning` |
@@ -168,7 +168,7 @@ Each stage receives exactly one structured input and produces exactly one struct
 | Script Generation | `RankedIdea` | `ScriptPackage` (winning variant + alternates + scores) |
 | Visual Intelligence | `ScriptPackage` + `PsychologyReport` + Attention Graph scores | `VisualPackage` (directed storyboard + shot list + prompts + asset requests + thumbnails + retention curve + Render Package) |
 | Voice & Audio | `ScriptPackage` + `VisualPackage` | `AudioPackage` (narration plan + SFX + music + cue sheet) |
-| Video Rendering | `VisualPackage` + `AudioPackage` | `RenderedVideo` (final file + manifest) |
+| Video Rendering | `VisualPackage` + `AudioPackage` + `ScriptPackage` + captions | `render_package` v2.0 (timeline, scene/caption/audio-mix plans, validation, mock render manifest — becomes `RenderedVideo` when real backends land) |
 | Quality Control | `RenderedVideo` + upstream packages | Approved `RenderedVideo` or revision notes routed back |
 | Publishing | Approved `RenderedVideo` + `Channel` config | `PublishedPost` (live URL + platform metadata) |
 | Analytics | `PublishedPost` + platform APIs | `AnalyticsRecord` (performance over time) |
@@ -295,7 +295,7 @@ src/
     scripts/            # Agent 3: script variants + storytelling structure
     visuals/            # Agent 4: storyboards, prompts, thumbnails
     audio/              # Agent 5: narration, SFX, music planning
-    rendering/          # Agent 6: timeline, assembly, subtitles, render
+    rendering/          # Agent 6: timeline, assembly, subtitles, render (today: engines/render/)
     quality/            # Agent 7: quality gates, critique, revision
     publishing/         # Agent 8: accounts, metadata, scheduling, queue
     analytics/          # Agent 9a: performance ingestion + attribution
@@ -342,8 +342,8 @@ Each phase must be fully integrated and tested before the next begins. "Integrat
 ### Phase 1: Planning Pipeline *(current)*
 One click produces the complete production package: idea, psychology score, script, storyboard, visual prompts, audio plan. This is the MVP in Section 7.
 
-### Phase 2: Render-Ready Pipeline
-The planning package becomes a finished video: generated visuals, synthesized narration, music and SFX assembled per the cue sheet, subtitles burned in, QA-gated final render.
+### Phase 2: Render-Ready Pipeline *(architecture landed — mock render)*
+The planning package becomes a finished video: generated visuals, synthesized narration, music and SFX assembled per the cue sheet, subtitles burned in, QA-gated final render. Agent 6 shipped the complete render architecture (timeline, scene/caption/audio-mix plans, validation, provider seams) with a simulated renderer; the remaining work is wiring real generation/encoding providers behind the existing interfaces.
 
 ### Phase 3: Automated Publishing
 Approved videos post themselves: multi-account platform management, per-platform metadata formatting, optimal-window scheduling, publish queue with retries.

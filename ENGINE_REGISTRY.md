@@ -30,13 +30,21 @@ truth at runtime; this document is its map.
 `scene_planning` · `narration` · `visual_planning` · `asset_manager` ·
 `subtitle` · `timeline` · `render_package` · `publishing_queue`
 
+## Live engines (render — Agent 6)
+
+`image` (asset resolution) · `video` (package assembly) · `render`
+(the unified Render & Video Production façade). All three subclass
+`ContractEngine`, run in Demo Mode via mock providers, and produce the
+Agent 6 render package (see `DATA_CONTRACTS.md` §render_package and
+`engines/render/README.md`). Real backends swap in behind `providers/`
+(`set_image_provider` / `set_video_provider` / `set_music_provider`) and
+`engines.render.assets.register_fulfiller()`.
+
 ## Reserved keys (planned / contract stubs — do NOT reuse)
 
 | Key | Stub type | Future owner | Stage |
 |---|---|---|---|
 | `voice` | planned | Voice Pipeline agent | audio (real TTS) |
-| `image` | planned | **Agent 6** | render |
-| `video` | planned | **Agent 6** | render |
 | `seo_optimization` | contract stub | **Agent 8** | seo |
 | `scheduler` | contract stub | **Agent 7** | publish |
 | `publishing` | planned | **Agent 7** | publish |

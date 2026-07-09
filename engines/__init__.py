@@ -26,6 +26,7 @@ from engines.publishing import PublishingEngine
 from engines.publishing_queue import PublishingQueueEngine
 from engines.quality import QualityEngine
 from engines.ranking import RankingEngine
+from engines.render import RenderEngine
 from engines.render_package import RenderPackageEngine
 from engines.research import ResearchEngine
 from engines.revision import RevisionEngine
@@ -74,6 +75,7 @@ for _engine_class in (
     VoiceEngine,
     ImageEngine,
     VideoEngine,
+    RenderEngine,
     PublishingEngine,
     AnalyticsEngine,
     LearningEngine,

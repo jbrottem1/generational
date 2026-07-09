@@ -34,8 +34,9 @@ Quality Gate               LIVE      engines: quality
 Media Production           LIVE      scene planning → narration → visual
    ↓                                 planning → assets → subtitles →
    ↓                                 timeline → render package → queue
-Render Engine              FUTURE    Agent 6 — engines: image, video
-   ↓
+Render Engine              LIVE      Agent 6 — engines: image, video, render
+   ↓                                 (mock render: full plan + simulated
+   ↓                                  output; real providers swap in later)
 SEO Engine                 FUTURE    Agent 8 — engines: seo_optimization
    ↓
 Publishing Scheduler       FUTURE    Agent 7 — engines: scheduler, publishing
@@ -67,6 +68,12 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
 5. **Additive evolution.** New stages are added via
    `register_stage()` / `WORKFLOWS`; new fields are appended to the
    ContentPackage; nothing existing is removed or renamed.
+6. **Render stage invocation.** The render stage is live but runs on
+   demand: `get_orchestrator().run_render_stage(result.context)` after a
+   full pipeline run. It renders every idea in the context (mock render
+   today), writes each `render_package`, and mirrors the results into
+   `context["unified_packages"]` (status → `rendered`). With nothing to
+   render it returns a safe SKIPPED summary — never a failure.
 
 ## Stage → engine key → owner map
 
@@ -82,7 +89,7 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
 | refinement | ranking…threat_detection | live | shared |
 | quality | quality | live | shared (gate) |
 | production | scene_planning…publishing_queue | live | Agent 1 |
-| render | image, video | future | **Agent 6** |
+| render | image, video (+ `render` façade) | live (mock render) | **Agent 6** |
 | seo | seo_optimization | future | **Agent 8** |
 | publish | scheduler, publishing | future | **Agent 7** |
 | analytics | analytics | future | **Agent 9** |

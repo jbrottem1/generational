@@ -133,7 +133,6 @@ def test_unimplemented_future_stages_skip_cleanly():
     orch = Orchestrator()
     context = {"command": "test", "provider": "demo"}
     for runner in (
-        orch.run_render_stage,
         orch.run_seo_stage,
         orch.run_publish_stage,
         orch.run_analytics_stage,
@@ -145,6 +144,15 @@ def test_unimplemented_future_stages_skip_cleanly():
         assert report.status != StageStatus.FAILED
         assert not report.errors
         assert report.diagnostics  # explains why the stage did no work
+
+
+def test_render_stage_is_implemented_and_safe_without_input():
+    # Agent 6 landed: the render stage runs (SUCCESS) and degrades to a
+    # SKIPPED summary instead of a warning when there is nothing to render.
+    report = Orchestrator().run_render_stage({"command": "test", "provider": "demo"})
+    assert report.status == StageStatus.SUCCESS
+    assert not report.errors
+    assert report.diagnostics
 
 
 def test_missing_engine_key_does_not_crash_stage():

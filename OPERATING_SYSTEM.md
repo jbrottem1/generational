@@ -40,8 +40,10 @@ Every future subsystem plugs in the same way:
    `engines/publishing/`, `engines/seo/`, `engines/analytics/`,
    `engines/brands/` — each has an ownership README).
 2. Keep the engine key already reserved in `engines/future_stubs.py` or the
-   planned stubs (`image`, `video`, `publishing`, `scheduler`,
-   `seo_optimization`, `analytics`, `learning`, `brand_management`).
+   planned stubs (`publishing`, `scheduler`, `seo_optimization`,
+   `analytics`, `learning`, `brand_management`). Agent 6 graduated `image`
+   and `video` this way and added the `render` façade — the render stage
+   is live with mock providers (see `engines/render/README.md`).
 3. Register in `engines/__init__.py` (append-only, Agent 1 review).
 4. Fill your slot in the ContentPackage; never touch other slots.
 5. Your stage is already wired in the orchestrator — when your engine

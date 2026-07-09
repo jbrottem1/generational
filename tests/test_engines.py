@@ -15,11 +15,14 @@ PRODUCTION_LIVE = {
     "subtitle", "timeline", "render_package", "publishing_queue",
 }
 
-LIVE_KEYS = INTELLIGENCE_LIVE | PRODUCTION_LIVE
+# Agent 6 — the render stage engines are live (mock providers, real plans).
+RENDER_LIVE = {"image", "video", "render"}
+
+LIVE_KEYS = INTELLIGENCE_LIVE | PRODUCTION_LIVE | RENDER_LIVE
 
 PLANNED_KEYS = {
-    "voice", "image", "video", "publishing", "analytics", "learning",
-    # Agents 6-10 contract stubs
+    "voice", "publishing", "analytics", "learning",
+    # Agents 7-10 contract stubs
     "seo_optimization", "scheduler", "brand_management",
 }
 

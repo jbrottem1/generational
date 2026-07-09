@@ -150,15 +150,19 @@ feature/multi-brand-os         (Agent 10)
 
 | Agent | Subsystem | Landing zone | Engine keys | Orchestrator stage |
 |---|---|---|---|---|
-| **Agent 6** | Render & Video Production | `engines/render/` | `image` · `video` | `render` |
+| **Agent 6** | Render & Video Production — **LANDED (mock render)** | `engines/render/` | `image` · `video` · `render` | `render` (live) |
 | **Agent 7** | Publishing & Scheduler | `engines/publishing/` | `publishing` · `scheduler` | `publish` |
 | **Agent 8** | SEO & Global Trend Optimization | `engines/seo/` | `seo_optimization` | `seo` |
 | **Agent 9** | Analytics & Learning | `engines/analytics/` | `analytics` · `learning` | `analytics` · `learning` |
 | **Agent 10** | Multi-Brand Operating System | `engines/brands/` | `brand_management` | `brand_management` |
 
-All five stages are already wired into the orchestrator and skip cleanly
-(WARNING with diagnostics, never a crash) until their engines report ready.
-Contract stubs for the missing keys live in `engines/future_stubs.py`.
+Agent 6 has landed: the render stage is live end-to-end with mock providers
+(full render plan + simulated render; real backends swap in behind
+`providers/` and `engines.render.assets.register_fulfiller()` — see
+`engines/render/README.md`). The remaining four stages are wired into the
+orchestrator and skip cleanly (WARNING with diagnostics, never a crash)
+until their engines report ready. Contract stubs for the missing keys live
+in `engines/future_stubs.py`.
 Each agent's landing-zone README defines exact ownership, contracts, and
 forbidden files. Also planned: Voice Pipeline (real TTS/clone providers) and
 Thumbnail Engine — coordinate with Agent 1 before starting.
