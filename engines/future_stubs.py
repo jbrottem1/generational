@@ -6,27 +6,15 @@ know every future stage — implementing one later is overriding `run()` and
 changes. See engines/render/README.md etc. for ownership.
 
 Stages whose engine keys already exist as planned stubs (image, video,
-publishing, analytics, learning) are NOT duplicated here. The
-`seo_optimization` stub graduated to a live engine in
-`engines/seo_optimization.py` (Agent 8).
+analytics, learning) are NOT duplicated here. The `seo_optimization` stub
+graduated to a live engine in `engines/seo_optimization.py` (Agent 8);
+the `scheduler` stub graduated to a live engine in
+`engines/publishing/scheduler_engine.py` (Agent 7).
 """
 
 from __future__ import annotations
 
 from engines.contracts import FutureEngine
-
-
-class SchedulerEngine(FutureEngine):
-    """Agent 7 — optimal-window publish scheduling for the publishing queue."""
-
-    key = "scheduler"
-    label = "Scheduler"
-    icon = "🗓️"
-    description = "Schedule queued content into optimal posting windows per platform."
-    input_contract = ["production_packages"]
-    output_contract = ["publish_schedule"]
-    dependencies = ["publishing_queue"]
-    capabilities = ["scheduling", "publishing"]
 
 
 class BrandManagementEngine(FutureEngine):

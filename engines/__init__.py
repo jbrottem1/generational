@@ -14,7 +14,7 @@ from engines.attention_graph import AttentionGraphEngine
 from engines.base import Engine, PlannedEngine
 from engines.citation import CitationEngine
 from engines.contracts import ContractEngine, FutureEngine
-from engines.future_stubs import BrandManagementEngine, SchedulerEngine
+from engines.future_stubs import BrandManagementEngine
 from engines.critic import CriticEngine
 from engines.ideation import IdeationEngine
 from engines.image import ImageEngine
@@ -22,7 +22,7 @@ from engines.learning import LearningEngine
 from engines.narration import NarrationEngine
 from engines.opportunity_ranking import OpportunityRankingEngine
 from engines.psychology import PsychologyEngine
-from engines.publishing import PublishingEngine
+from engines.publishing import PublishingEngine, SchedulerEngine
 from engines.publishing_queue import PublishingQueueEngine
 from engines.quality import QualityEngine
 from engines.ranking import RankingEngine

@@ -140,7 +140,55 @@ dicts) and auto-discover from `providers/seo_sources/`.
 
 ---
 
-## 7. Change protocol
+## 7. publishing_package + PublishingResult (Agent 7) — `services/publishing/`
+
+The Publishing & Distribution Engine (`publishing` + `scheduler`) consumes
+the RenderPackage (§5), the optimization PublishingPackage (§6), and
+channel/brand configuration, and writes the ContentPackage
+`publishing_package` slot (status → `scheduled` / `published`). Field
+tuples in `services/publishing/models.py` are the testable contract; all
+output is JSON-safe dicts.
+
+**Platform publish package** (`PLATFORM_PUBLISH_PACKAGE_FIELDS`, v1.0) —
+one per item × platform, fitted to the platform's constraints by its
+provider adapter:
+
+| Field | Type | Meaning |
+|---|---|---|
+| `video` | dict | file_uri, duration_sec, resolution, aspect_ratio, mock flag (from the render package) |
+| `thumbnail` / `title` / `description` / `hashtags` / `keywords` | dict/str/list | optimization metadata, truncated to platform limits with warnings |
+| `captions` | dict | the render caption plan |
+| `language` / `country` / `platform` / `provider` | str | routing |
+| `account` | dict | placeholder PublishingAccount reference (no credentials) |
+| `publish_time` / `timezone` | str | ISO-8601 UTC + audience UTC offset |
+| `visibility` | str | public / unlisted / private |
+| `playlist` / `category` | dict | explicit placeholders for future routing |
+| `status` / `diagnostics` | str/dict | prepared / blocked / published + format warnings, provider problems, readiness gates |
+
+**PublishingJob** (`PUBLISHING_JOB_FIELDS`) — the queued unit
+(`data/publishing_queue/jobs.json`): package, provider, `JobStatus`
+(queued / scheduled / publishing / published / failed / cancelled),
+attempts, retry schedule, full attempt history (`PUBLISH_ATTEMPT_FIELDS`),
+and an `analytics_ref` the Analytics Engine (Agent 9) correlates against
+(history log: `data/publishing_queue/history.json`).
+
+**PublishingResult** (`PUBLISHING_RESULT_FIELDS`) — the standardized
+object returned to the orchestrator on the `publishing_result` context
+key: status, item/job counts by outcome, platforms, queue size, warnings,
+errors, per-job summaries. The `scheduler` engine separately emits
+`publish_schedule` (`PUBLISH_SCHEDULE_ENTRY_FIELDS`, timezone-aware).
+
+Platform adapters implement `PublishingProvider`
+(`providers/publishing_provider.py`) and register in
+`providers/publishing/` — constraints, metadata formatting, validation,
+provider-specific retry rules, publish. Agent 7 never mutates
+`render_package` (Agent 6) or the `publishing_packages` handover key
+(Agent 8). Accounts are placeholder-only (`PUBLISHING_ACCOUNT_FIELDS`) —
+no real credentials are stored.
+
+---
+
+## 8. Change protocol
 
 1. Appending a ContentPackage field: add to the dataclass **and**
    `PRODUCTION_PACKAGE_FIELDS`, with a default; get Agent 1 review.

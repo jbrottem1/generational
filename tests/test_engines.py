@@ -21,12 +21,15 @@ RENDER_LIVE = {"image", "video", "render"}
 # Agent 8 — the Global Content Optimization Engine is live.
 OPTIMIZATION_LIVE = {"seo_optimization"}
 
-LIVE_KEYS = INTELLIGENCE_LIVE | PRODUCTION_LIVE | RENDER_LIVE | OPTIMIZATION_LIVE
+# Agent 7 — the Publishing & Distribution Engine (+ scheduler) is live.
+PUBLISHING_LIVE = {"publishing", "scheduler"}
+
+LIVE_KEYS = INTELLIGENCE_LIVE | PRODUCTION_LIVE | RENDER_LIVE | OPTIMIZATION_LIVE | PUBLISHING_LIVE
 
 PLANNED_KEYS = {
-    "voice", "publishing", "analytics", "learning",
-    # Agents 7-10 contract stubs
-    "scheduler", "brand_management",
+    "voice", "analytics", "learning",
+    # Agents 9-10 contract stubs
+    "brand_management",
 }
 
 EXPECTED_KEYS = LIVE_KEYS | PLANNED_KEYS

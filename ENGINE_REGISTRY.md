@@ -51,13 +51,26 @@ Optimization Report, and standardized PublishingPackages (see
 `DATA_CONTRACTS.md` §6 and `engines/seo/README.md`). SEO signal providers
 auto-discover from `providers/seo_sources/` — live APIs swap in per file.
 
+## Live engines (publish — Agent 7)
+
+`scheduler` (timezone-aware publish-time planning) · `publishing` (the
+Publishing & Distribution Engine façade). Both live in
+`engines/publishing/` (logic in `services/publishing/`), subclass
+`ContractEngine`, and run deterministically in Demo Mode via mock provider
+adapters — YouTube Shorts, Instagram Reels, Facebook Reels, TikTok, X,
+LinkedIn, Pinterest (`providers/publishing/`). The `scheduler` contract
+stub graduated from `engines/future_stubs.py` (same key, same input
+contract); the `publishing` planned stub graduated from the former
+`engines/publishing.py`. Output: `publish_schedule` +
+`publishing_result` / per-item `publishing_package` slots (see
+`DATA_CONTRACTS.md` §7 and `engines/publishing/README.md`). Real platform
+APIs swap in via `register_publishing_provider()` — one adapter per file.
+
 ## Reserved keys (planned / contract stubs — do NOT reuse)
 
 | Key | Stub type | Future owner | Stage |
 |---|---|---|---|
 | `voice` | planned | Voice Pipeline agent | audio (real TTS) |
-| `scheduler` | contract stub | **Agent 7** | publish |
-| `publishing` | planned | **Agent 7** | publish |
 | `analytics` | planned | **Agent 9** | analytics |
 | `learning` | planned | **Agent 9** | learning |
 | `brand_management` | contract stub | **Agent 10** | brand_management |

@@ -24,8 +24,9 @@ from services.orchestrator.stages import STAGE_GROUPS
 
 def test_future_stage_stubs_registered_with_contracts():
     # seo_optimization graduated to a live engine (Agent 8) — covered in
-    # tests/test_seo_optimization.py.
-    for key in ("scheduler", "brand_management"):
+    # tests/test_seo_optimization.py; scheduler graduated with Agent 7 —
+    # covered in tests/test_publishing_engine.py.
+    for key in ("brand_management",):
         engine = registry.get_engine(key)
         assert isinstance(engine, ContractEngine), key
         assert engine.is_ready() is False, key
@@ -135,7 +136,6 @@ def test_unimplemented_future_stages_skip_cleanly():
     orch = Orchestrator()
     context = {"command": "test", "provider": "demo"}
     for runner in (
-        orch.run_publish_stage,
         orch.run_analytics_stage,
         orch.run_learning_stage,
         orch.run_brand_stage,
@@ -165,6 +165,17 @@ def test_seo_stage_is_implemented_and_safe_without_input():
     assert not report.errors
     assert context["seo_optimization_report"]["items"] == 0
     assert context["publishing_packages"] == []
+
+
+def test_publish_stage_is_implemented_and_safe_without_input():
+    # Agent 7 landed: the publish stage runs (SUCCESS) and reports a
+    # SKIPPED result instead of warning when there is nothing to publish.
+    context = {"command": "test", "provider": "demo"}
+    report = Orchestrator().run_publish_stage(context)
+    assert report.status == StageStatus.SUCCESS
+    assert not report.errors
+    assert context["publishing_result"]["status"] == "SKIPPED"
+    assert context["publish_schedule"] == []
 
 
 def test_missing_engine_key_does_not_crash_stage():

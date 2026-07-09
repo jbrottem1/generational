@@ -105,15 +105,18 @@ def test_named_stage_runner_runs_trend_stage():
     assert context["trend_opportunities"]
 
 
-def test_render_stage_is_live_and_publish_stage_skips_gracefully():
+def test_render_and_publish_stages_are_live_and_safe_without_input():
     orch = Orchestrator()
     context = {"command": COMMAND}
     render = orch.run_render_stage(context)
-    publish = orch.run_publish_stage({"command": COMMAND})
+    publish_context = {"command": COMMAND}
+    publish = orch.run_publish_stage(publish_context)
     # Render (Agent 6) is live: no ideas in context → safe SKIPPED summary.
     assert render.status == StageStatus.SUCCESS
     assert context["render_summary"]["status"] == "SKIPPED"
-    assert publish.status == StageStatus.WARNING  # planned engines skipped
+    # Publishing (Agent 7) is live: nothing to publish → safe SKIPPED result.
+    assert publish.status == StageStatus.SUCCESS
+    assert publish_context["publishing_result"]["status"] == "SKIPPED"
     assert not render.errors and not publish.errors
 
 

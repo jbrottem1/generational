@@ -42,8 +42,10 @@ SEO Engine                 LIVE      Agent 8 — engines: seo_optimization
    ↓                                  keywords, hashtags, descriptions,
    ↓                                  thumbnails, localization, windows,
    ↓                                  Optimization Report, PublishingPackage)
-Publishing Scheduler       FUTURE    Agent 7 — engines: scheduler, publishing
-   ↓
+Publishing & Distribution  LIVE      Agent 7 — engines: scheduler, publishing
+   ↓                                 (mock providers: platform packages,
+   ↓                                  timezone-aware scheduling, retry queue;
+   ↓                                  real platform APIs swap in later)
 Analytics Collection       FUTURE    Agent 9 — engines: analytics
    ↓
 Learning Feedback          FUTURE    Agent 9 — engines: learning
@@ -86,6 +88,16 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
    the handover to Agent 7; the ContentPackage `publishing_package` slot
    stays Agent 7's to write). With nothing to optimize it reports zero
    items — never a failure.
+8. **Publish stage invocation.** The publish stage is live and runs on
+   demand: `get_orchestrator().run_publish_stage(context)` after seo. The
+   `scheduler` engine emits `publish_schedule` (timezone-aware slots from
+   the Optimization Engine's ranked windows); the `publishing` engine
+   builds one platform publish package per item × platform through the
+   provider adapters, queues retry-capable PublishingJobs, executes due
+   jobs (mock publish today), writes each ContentPackage
+   `publishing_package` slot (status → `scheduled` / `published`), and
+   returns a standardized PublishingResult on `publishing_result`. With
+   nothing to publish it reports SKIPPED — never a failure.
 
 ## Stage → engine key → owner map
 
@@ -103,7 +115,7 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
 | production | scene_planning…publishing_queue | live | Agent 1 |
 | render | image, video (+ `render` façade) | live (mock render) | **Agent 6** |
 | seo | seo_optimization | live | **Agent 8** |
-| publish | scheduler, publishing | future | **Agent 7** |
+| publish | scheduler, publishing | live (mock providers) | **Agent 7** |
 | analytics | analytics | future | **Agent 9** |
 | learning | learning | future | **Agent 9** |
 | brand_management | brand_management | future | **Agent 10** |

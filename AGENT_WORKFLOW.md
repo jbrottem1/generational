@@ -40,7 +40,7 @@ Agent 1 also acts as the reviewer for changes to shared files (see §2.3).
 | **Agent 3** | `engines/script.py` · `engines/critic.py` · `engines/revision.py` · script-related tests |
 | **Agent 4** | `engines/visual_intelligence.py` · `services/visual/` · `tests/test_visual_intelligence.py` · `VISUAL_PRODUCTION_PACKAGE.md` |
 | **Agent 6** | **Render files only:** `engines/render/` · `engines/image.py` · `engines/video.py` · `services/rendering/` · render/video providers · `tests/test_render_engine.py` |
-| **Agent 7** | **Publishing files only:** `engines/publishing/` · `engines/publishing.py` · scheduler module · `services/publishing/` · publishing providers · `tests/test_publishing_engine.py` |
+| **Agent 7** | **Publishing files only:** `engines/publishing/` (engine + scheduler modules; superseded the old `engines/publishing.py` stub) · `services/publishing/` · `providers/publishing/` + `providers/publishing_provider.py` · `tests/test_publishing_engine.py` |
 | **Agent 8** | **SEO-optimization files only:** `engines/seo/` (NOT the live `engines/seo.py`) · `services/seo/` · SEO providers · `tests/test_seo_optimization.py` |
 | **Agent 9** | **Analytics/learning files only:** `engines/analytics/` · `engines/analytics.py` · `engines/learning.py` · `services/analytics/` · `services/learning/` · analytics providers · analytics/learning tests |
 | **Agent 10** | **Brand/account/channel files only:** `engines/brands/` · `services/brands/` · `tests/test_brand_management.py` (extends `services/channels.py` with caution) |
@@ -151,7 +151,7 @@ feature/multi-brand-os         (Agent 10)
 | Agent | Subsystem | Landing zone | Engine keys | Orchestrator stage |
 |---|---|---|---|---|
 | **Agent 6** | Render & Video Production — **LANDED (mock render)** | `engines/render/` | `image` · `video` · `render` | `render` (live) |
-| **Agent 7** | Publishing & Scheduler | `engines/publishing/` | `publishing` · `scheduler` | `publish` |
+| **Agent 7** | Publishing & Distribution — **LANDED (mock providers)** | `engines/publishing/` + `services/publishing/` + `providers/publishing/` | `publishing` · `scheduler` | `publish` (live) |
 | **Agent 8** | Global Content Optimization (SEO) — **LANDED** | `engines/seo/` (docs) + `engines/seo_optimization.py` + `services/seo/` | `seo_optimization` | `seo` (live) |
 | **Agent 9** | Analytics & Learning | `engines/analytics/` | `analytics` · `learning` | `analytics` · `learning` |
 | **Agent 10** | Multi-Brand Operating System | `engines/brands/` | `brand_management` | `brand_management` |
@@ -163,10 +163,14 @@ Agent 6 has landed: the render stage is live end-to-end with mock providers
 the Global Content Optimization Engine enriches `seo_package` additively
 and emits standardized PublishingPackages for Agent 7 (see
 `engines/seo/README.md`; SEO signal providers auto-discover from
-`providers/seo_sources/`). The remaining three stages are wired into the
-orchestrator and skip cleanly (WARNING with diagnostics, never a crash)
-until their engines report ready. Contract stubs for the missing keys live
-in `engines/future_stubs.py`.
+`providers/seo_sources/`). Agent 7 has landed: the publish stage is live —
+the Publishing & Distribution Engine schedules timezone-aware publish
+slots and runs a retry-capable job queue through mock platform adapters
+(real APIs swap in behind `providers/publishing/` — see
+`engines/publishing/README.md`). The remaining two stages are wired into
+the orchestrator and skip cleanly (WARNING with diagnostics, never a
+crash) until their engines report ready. Contract stubs for the missing
+keys live in `engines/future_stubs.py`.
 Each agent's landing-zone README defines exact ownership, contracts, and
 forbidden files. Also planned: Voice Pipeline (real TTS/clone providers) and
 Thumbnail Engine — coordinate with Agent 1 before starting.

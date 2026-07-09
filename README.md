@@ -4,6 +4,84 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 8.4 — Publishing & Distribution Engine (Agent 7)
+
+The publish stage is live. `engines/publishing/` + `services/publishing/`
+prepare completed content — RenderPackage (Agent 6) plus optimization
+PublishingPackage (Agent 8) — for every supported publishing provider. No
+real platform APIs are called yet: this release ships the complete
+publishing architecture with **mock provider adapters**, ready for real
+integrations to swap in one file at a time.
+
+### Provider-based, never hardcoded
+
+Seven platform adapters — YouTube Shorts, Instagram Reels, Facebook Reels,
+TikTok, X, LinkedIn, Pinterest — implement one `PublishingProvider`
+interface (`providers/publishing_provider.py`): per-platform metadata
+constraints (title/description/hashtag/duration limits), metadata fitting
+with truncation warnings, package validation, provider-specific retry
+rules, and a mock `publish()`. Adapters resolve through a registry
+(`providers/publishing/`) with platform aliases (`youtube` →
+`youtube_shorts`); a future platform is one
+`register_publishing_provider()` call — zero engine changes.
+
+### Queue, jobs, retries, history
+
+- **PublishingQueue** — durable JSON-persisted job queue
+  (`data/publishing_queue/jobs.json`) with due-job selection.
+- **PublishingJob** — one item × one platform, carrying the platform-ready
+  publish package, schedule, attempts, and full attempt history
+  (`JobStatus`: queued → scheduled → publishing → published / failed /
+  cancelled).
+- **RetryManager** — configurable policies (retry count, exponential
+  backoff, max delay) with provider-specific overrides (TikTok backs off
+  harder); exhausted jobs fail safely with their error history intact.
+- **PublishingHistory** — append-only attempt log
+  (`data/publishing_queue/history.json`), every record carrying an
+  `analytics_ref` for the future Analytics Engine.
+- **PublishingManager** — coordinates packages, scheduling, queueing,
+  provider execution, gates, and listeners behind one interface.
+
+### Timezone-aware scheduling
+
+The `scheduler` engine graduated from its contract stub into
+`engines/publishing/scheduler_engine.py`. `PublishingScheduler` supports
+immediate publish, explicit publish times, and optimal-window scheduling
+from the Optimization Engine's ranked `publish_windows`, resolving each
+country's local window hours to concrete UTC timestamps — multiple brands,
+channels, and countries schedule independently. Decisions land in the
+`publish_schedule` context key (the stub's promised contract).
+
+### The platform publish package
+
+Each job's package (`PLATFORM_PUBLISH_PACKAGE_FIELDS`, v1.0) carries:
+video, thumbnail, title, description, hashtags, keywords, captions,
+language, country, platform, provider, account reference, publish_time,
+timezone, visibility, playlist placeholder, category placeholder, status,
+and diagnostics.
+
+### Accounts + future roadmap (interfaces only)
+
+`services/publishing/accounts.py` defines placeholder PublishingAccounts
+(multi-brand, multi-channel; credentials/permissions/token slots are
+explicit placeholders — **no real credentials are ever stored**) and the
+`CredentialProvider` contract. `services/publishing/extensions.py` ships
+the extension seams the manager already calls: `PrePublishGate` (approval
+workflows / human review), `PublishListener` (analytics callbacks),
+`RollbackHandler`, and `RegionalScheduleRule`.
+
+### Orchestrator integration
+
+The `publishing` and `scheduler` engines graduated to live
+`ContractEngine`s. `run_publish_stage(context)` schedules then publishes
+every publish-eligible item, writes each ContentPackage
+`publishing_package` slot (status → `scheduled` / `published`), and
+returns a standardized **PublishingResult** (`PUBLISHING_RESULT_FIELDS`)
+— with zero items it reports SKIPPED, never crashing the pipeline. Docs:
+[`engines/publishing/README.md`](engines/publishing/README.md) and
+[`DATA_CONTRACTS.md`](DATA_CONTRACTS.md) §7. Tests: 30 new in
+`tests/test_publishing_engine.py` (402 total, all passing).
+
 ## Version 8.3 — Global Content Optimization Engine (Agent 8)
 
 The seo stage is live. `engines/seo_optimization.py` + `services/seo/`

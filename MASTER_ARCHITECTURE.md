@@ -121,12 +121,12 @@ The last gate before the outside world. Checks rendered output against the plan:
 - **Owns:** quality gates, critique, revision routing
 - **Modules:** `engines/quality.py`, `engines/critic.py`, `engines/revision.py`, `engines/citation.py`
 
-### Agent 8: Publishing & Platform Engine
+### Agent 8: Publishing & Platform Engine — LANDED (mock providers)
 
-Gets content live. Manages platform accounts per channel, formats metadata (title, description, hashtags, cover) per platform, schedules for optimal posting windows, and handles the publish queue with retries and status tracking.
+Gets content live. Manages platform accounts per channel (placeholder accounts — no real credentials), formats metadata (title, description, hashtags, thumbnail) per platform through provider adapters (YouTube Shorts, Instagram Reels, Facebook Reels, TikTok, X, LinkedIn, Pinterest — all mock today), schedules into optimal posting windows with timezone awareness, and runs the publish queue with exponential-backoff retries, full attempt history, and status tracking. Real platform APIs swap in one adapter at a time behind `PublishingProvider`.
 
-- **Owns:** platform accounts, metadata formatting, scheduling, publish queue
-- **Modules:** `engines/publishing.py`, `engines/publishing_queue.py`, `engines/seo.py`
+- **Owns:** platform accounts (placeholders), metadata formatting, scheduling, publish queue, retries, publish history
+- **Modules:** `engines/publishing/` (engine, scheduler_engine), `services/publishing/` (manager, queue, scheduler, retry, package, accounts, extensions), `providers/publishing/` + `providers/publishing_provider.py`; legacy pre-render queue: `engines/publishing_queue.py`
 
 ### Agent 9: Analytics & Learning Engine
 
@@ -145,7 +145,7 @@ zones, contract stubs, and orchestrator stages already wired (see
 | Dev agent | Subsystem | Landing zone | Orchestrator stage |
 |---|---|---|---|
 | Agent 6 | Render & Video Production — **LANDED** (mock render, live stage) | `engines/render/` | `render` |
-| Agent 7 | Publishing & Scheduler | `engines/publishing/` | `publish` |
+| Agent 7 | Publishing & Scheduler — **LANDED** (mock providers, live stage) | `engines/publishing/` + `services/publishing/` + `providers/publishing/` | `publish` |
 | Agent 8 | Global Content Optimization (SEO) — **LANDED** (live stage) | `engines/seo/` + `engines/seo_optimization.py` + `services/seo/` | `seo` |
 | Agent 9 | Analytics & Learning | `engines/analytics/` | `analytics` · `learning` |
 | Agent 10 | Multi-Brand Operating System | `engines/brands/` | `brand_management` |
@@ -171,7 +171,7 @@ Each stage receives exactly one structured input and produces exactly one struct
 | Video Rendering | `VisualPackage` + `AudioPackage` + `ScriptPackage` + captions | `render_package` v2.0 (timeline, scene/caption/audio-mix plans, validation, mock render manifest — becomes `RenderedVideo` when real backends land) |
 | Quality Control | `RenderedVideo` + upstream packages | Approved `RenderedVideo` or revision notes routed back |
 | Content Optimization (SEO) | `ContentPackage` (render + script + psychology + trend context) | Enriched `seo_package` + `PublishingPackage` v1.0 (ranked titles/hashtags/thumbnails/windows, keyword + localization packages, Optimization Report) |
-| Publishing | Approved `RenderedVideo` + `PublishingPackage` + `Channel` config | `PublishedPost` (live URL + platform metadata) |
+| Publishing | Approved `RenderedVideo` + `PublishingPackage` + `Channel` config | `PublishingResult` + per-item `publishing_package` (queued/scheduled/published jobs with post IDs, URLs, timings — mock posts today; becomes `PublishedPost` when real APIs land) |
 | Analytics | `PublishedPost` + platform APIs | `AnalyticsRecord` (performance over time) |
 | Learning Engine | `AnalyticsRecord` + full decision history | `LearningSignal` (weight/strategy adjustments fed upstream) |
 
@@ -346,8 +346,8 @@ One click produces the complete production package: idea, psychology score, scri
 ### Phase 2: Render-Ready Pipeline *(architecture landed — mock render)*
 The planning package becomes a finished video: generated visuals, synthesized narration, music and SFX assembled per the cue sheet, subtitles burned in, QA-gated final render. Agent 6 shipped the complete render architecture (timeline, scene/caption/audio-mix plans, validation, provider seams) with a simulated renderer; the remaining work is wiring real generation/encoding providers behind the existing interfaces.
 
-### Phase 3: Automated Publishing
-Approved videos post themselves: multi-account platform management, per-platform metadata formatting, optimal-window scheduling, publish queue with retries.
+### Phase 3: Automated Publishing *(architecture landed — mock providers)*
+Approved videos post themselves: multi-account platform management, per-platform metadata formatting, optimal-window scheduling, publish queue with retries. Agent 7 shipped the complete publishing architecture (provider adapters, timezone-aware scheduler, retry-capable queue, publish history, account/approval/analytics extension seams) with mock adapters; the remaining work is wiring real platform APIs behind the existing `PublishingProvider` interface.
 
 ### Phase 4: Analytics Feedback
 Published posts report back: performance ingestion from platform APIs, retention-curve analysis, attribution of outcomes to upstream decisions, dashboards per channel.
