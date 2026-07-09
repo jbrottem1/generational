@@ -31,11 +31,12 @@ WORKFLOWS = {
     # The intelligence pipeline: trend discovery → opportunity ranking →
     # research → 20 candidates → psychology scoring → script generation
     # (multiple scored variants per candidate, immediately after psychology)
-    # → attention graph (12-dimension radar + recommendations, Phase 2) →
-    # weighted ranking (psychology + opportunity + script quality) →
-    # script fallback for anything unscripted → critic → revision →
-    # citation → SEO packaging → threat detection (10 failure modes, Phase 3)
-    # → final quality scores + publish gate.
+    # → visual intelligence (storyboard + AI prompts + thumbnails + Visual
+    # Score per scripted candidate) → attention graph (12-dimension radar +
+    # recommendations, Phase 2) → weighted ranking (psychology + opportunity
+    # + script quality) → script fallback for anything unscripted → critic →
+    # revision → citation → SEO packaging → threat detection (10 failure
+    # modes, Phase 3) → final quality scores + publish gate.
     "intelligence": [
         "trend_discovery",
         "opportunity_ranking",
@@ -43,6 +44,7 @@ WORKFLOWS = {
         "ideation",
         "psychology",
         "script_generation",
+        "visual_intelligence",
         "attention_graph",
         "ranking",
         "script",
@@ -60,6 +62,7 @@ WORKFLOWS = {
         "ideation",
         "psychology",
         "script_generation",
+        "visual_intelligence",
         "attention_graph",
         "ranking",
         "script",

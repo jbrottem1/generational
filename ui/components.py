@@ -105,6 +105,41 @@ def idea_card(index: int, idea: dict) -> None:
                     label = labels.get(key, key.replace("_", " ").title())
                     st.caption(f"· **{label}** ({scores[key]}) — {recommendations.get(key, '')}")
 
+        visual_package = idea.get("visual_package")
+        if visual_package:
+            with st.expander(f"🎥 Visual Production Package · {visual_package.get('visual_score', 0)}/100"):
+                st.write(visual_package.get("summary", ""))
+                pacing = visual_package.get("pacing_report", {})
+                motion = visual_package.get("motion_report", {})
+                vcols = st.columns(4)
+                vcols[0].metric("Scenes", pacing.get("scene_count", 0))
+                vcols[1].metric("Runtime", f"{pacing.get('total_runtime_sec', 0)}s")
+                vcols[2].metric("Cuts / 10s", pacing.get("cuts_per_10s", 0))
+                vcols[3].metric("Motion", motion.get("level", "—").title())
+
+                st.markdown("**🎬 Storyboard**")
+                for panel in visual_package.get("storyboard", []):
+                    st.caption(
+                        f"· **{panel['panel']}. {panel['purpose'].replace('_', ' ').title()}** "
+                        f"({panel['length_sec']}s, {panel['camera']}) — {panel['description']}"
+                    )
+
+                thumbnails = visual_package.get("thumbnails", [])
+                if thumbnails:
+                    st.markdown("**🖼️ Thumbnail Concepts (best first)**")
+                    for concept in thumbnails:
+                        st.caption(
+                            f"· **{concept['label']}** ({concept['overall']}/100 · "
+                            f"{concept['expected_ctr_pct']}% expected CTR) — {concept['description']}"
+                        )
+
+                hook_sequence = visual_package.get("hook_sequence", {})
+                if hook_sequence:
+                    st.markdown("**⚡ First 3 Seconds (hook sequence)**")
+                    for frame in hook_sequence.get("frames", []):
+                        st.caption(f"· **Frame {frame['frame']}** ({frame['time_sec']}s) — {frame['visual']}")
+                    st.caption(f"_{hook_sequence.get('scroll_stop_rationale', '')}_")
+
         threat_report = idea.get("threat_report")
         if threat_report:
             level = threat_report.get("threat_level", "Low")

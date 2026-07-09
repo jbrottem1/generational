@@ -36,6 +36,7 @@ from engines.threat_detection import ThreatDetectionEngine
 from engines.timeline import TimelineEngine
 from engines.trend_discovery import TrendDiscoveryEngine
 from engines.video import VideoEngine
+from engines.visual_intelligence import VisualIntelligenceEngine
 from engines.visual_planning import VisualPlanningEngine
 from engines.voice import VoiceEngine
 
@@ -48,6 +49,7 @@ for _engine_class in (
     IdeationEngine,
     PsychologyEngine,
     ScriptGenerationEngine,
+    VisualIntelligenceEngine,
     AttentionGraphEngine,
     RankingEngine,
     ScriptEngine,

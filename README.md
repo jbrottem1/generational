@@ -4,6 +4,70 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 7.5 — Visual Intelligence Engine
+
+The visual brain of the pipeline. Every scripted candidate now receives a
+complete **Visual Production Package** — the canonical visual plan that
+every downstream renderer (voice, audio, image, video) will consume. No
+final videos are generated yet; this is the planning system that makes
+generation possible.
+
+### Visual Production Package (`services/visual/` + `engines/visual_intelligence.py`)
+
+Each package contains:
+
+- **Scene-by-scene storyboard** — hook, pattern interrupt, curiosity loop,
+  story beats sized to runtime (~one visual change every 7s), payoff, CTA.
+  Every scene carries the full visual grammar: purpose, emotion, length,
+  camera angle + motion, shot composition, subject placement, lighting,
+  environment, color palette, transitions in/out, motion intensity, zoom,
+  background, overlay, text overlay, caption timing, sound effect, music
+  style, and B-roll.
+- **12-dimension visual psychology scores per scene** — Curiosity ·
+  Mystery · Wonder · Fear · Beauty · Novelty · Scale · Contrast · Motion ·
+  Satisfaction · Humor · Identity — blended into a per-scene Visual Score
+  via `VISUAL_SCORE_WEIGHTS` (deterministic word-bank + structure analysis,
+  same approach as the psychology/threat engines).
+- **AI image prompts** for Midjourney, Flux, Stable Diffusion, DALL-E, and
+  OpenAI Images — each carrying lighting, composition, lens, mood, art
+  style, color palette, quality tags, and aspect ratio, formatted in each
+  model's dialect (e.g. `--ar 9:16 --style raw --v 6` for Midjourney,
+  negative prompts for Stable Diffusion).
+- **AI video prompts** for Runway, Veo, Pika, Luma, Kling, and Sora
+  (future-ready) — each describing the scene, camera movement, character
+  actions, lighting, physics, mood, and duration.
+- **5 scored thumbnail concepts** — Shock Face Close-Up, Mystery Object
+  Macro, Before/After Split, Extreme Scale Contrast, Bold Text Tease —
+  each scored on curiosity, readability, contrast, facial focus, object
+  focus, color, and emotion, with an **expected CTR %**.
+- **Hook Visualizer** — the strongest five-frame first-3-second sequence
+  (abrupt motion → novel detail → curiosity gap → direct address → open
+  loop) plus a plain-English scroll-stop rationale.
+- **Caption plan, visual pacing report, camera plan, transitions, and
+  motion report** — cut rhythm vs. the 3-8s retention ideal, camera
+  variety score, and a per-scene motion intensity curve.
+- One weighted **Overall Visual Score (0-100)** via
+  `PACKAGE_SCORE_WEIGHTS` (scene craft 35%, hook 25%, thumbnail 20%,
+  pacing 12%, camera variety 8%).
+
+### Pipeline integration
+
+Runs immediately after Script Generation and before the Attention Graph,
+so ranking can weigh visual craft and every asset planner downstream shares
+one visual source of truth:
+
+```
+... → Psychology → Script Generation
+    → Visual Intelligence (storyboard + prompts + thumbnails + Visual Score)
+    → Attention Graph → Ranking → ... → Quality Gate
+```
+
+Everything is deterministic — the full engine runs in Demo Mode with no API
+key, and adding a new AI image/video model is one formatter function in
+`services/visual/prompts.py`. Every idea card gets a compact "🎥 Visual
+Production Package" expander with the storyboard, thumbnail scores, and
+hook sequence.
+
 ## Version 7.4 — Threat Intelligence (Psychology Threat Detection)
 
 Phase 3 of the attention-engineering stack. Every fully-packaged idea now
@@ -555,13 +619,13 @@ Create profiles, attach to projects, store recording metadata. Recordings
 live under `data/voice_recordings/`. Clone mode is wired but not implemented.
 
 ### Engine plugins (`engines/`)
-**23 live engines** across two pipelines. Intelligence (15): Trend Discovery,
+**24 live engines** across two pipelines. Intelligence (16): Trend Discovery,
 Opportunity Ranking, Research, Ideation, Psychology, Script Generation,
-Attention Graph, Ranking, Script (fallback), Critic, Revision, Citation,
-SEO, Threat Detection, Quality. Production (8): Scene Planning, Narration,
-Visual Planning, Asset Manager, Subtitle, Timeline, Render Package,
-Publishing Queue. Future render engines (Voice/Image/Video generation)
-remain as planned stubs.
+Visual Intelligence, Attention Graph, Ranking, Script (fallback), Critic,
+Revision, Citation, SEO, Threat Detection, Quality. Production (8): Scene
+Planning, Narration, Visual Planning, Asset Manager, Subtitle, Timeline,
+Render Package, Publishing Queue. Future render engines (Voice/Image/Video
+generation) remain as planned stubs.
 
 ### Workflow Engine (`core/workflows.py`)
 Pipelines are data, not code: a workflow is an ordered list of engine keys
@@ -642,13 +706,15 @@ generational/
 │   ├── script_generation.py  # v7.2 multi-variant Script Generation Engine
 │   ├── attention_graph.py    # v7.3 12-dimension Attention Graph
 │   ├── threat_detection.py   # v7.4 10-threat Psychology Threat Detection
-│   ├── research … quality.py # Intelligence pipeline (15 live)
+│   ├── visual_intelligence.py # v7.5 Visual Production Package planner
+│   ├── research … quality.py # Intelligence pipeline (16 live)
 │   ├── scene_planning … publishing_queue.py  # Media production (8 live)
 │   └── voice|image|video|publishing|analytics|learning.py  # future render stubs
 ├── services/
 │   ├── research/             # Knowledge Engine (manager, cache, scorer, summarizer)
 │   ├── trends/               # Trend Discovery (models, scorer, manager)
 │   ├── scripts/              # Script Generation (models, platforms, generator, scorer)
+│   ├── visual/               # Visual Intelligence (models, psychology, scenes, prompts, thumbnails, hooks, package)
 │   ├── ideation.py           # Intelligence pipeline orchestrator
 │   ├── production.py         # Media production orchestrator
 │   ├── assets.py             # Asset Manager + Publishing Queue

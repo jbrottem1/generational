@@ -1,7 +1,7 @@
 # Generational — Master Architecture
 
-**Current version:** v7.4.0  
-**Status:** Source-backed research platform with an 18-dimension Psychology & Virality Engine, a multi-variant multi-platform Script Generation Engine, a 12-dimension Attention Graph, a 10-threat Psychology Threat Detection layer, citation engine, and multi-factor quality gate  
+**Current version:** v7.5.0  
+**Status:** Source-backed research platform with an 18-dimension Psychology & Virality Engine, a multi-variant multi-platform Script Generation Engine, a Visual Intelligence Engine (storyboards, AI image/video prompts, scored thumbnails, hook sequences), a 12-dimension Attention Graph, a 10-threat Psychology Threat Detection layer, citation engine, and multi-factor quality gate  
 **Entry point:** `app.py` (Streamlit shell only — no business logic)
 
 This document is the canonical architecture reference for Generational. It describes how the system is built today, how to extend it safely, and how the team develops using ChatGPT, Claude, and Cursor.
@@ -39,16 +39,17 @@ The goal is not to automate one YouTube channel. The goal is software that opera
 
 ### What exists today
 
-Generational v7.4 is a modular platform with:
+Generational v7.5 is a modular platform with:
 
 - A **Trend Discovery Engine** — the front door: auto-discovered trend providers, a universal Trend model, and 0-100 Opportunity Scoring that gates what enters the pipeline
 - A **Psychology & Virality Engine** — scores every candidate idea across 18 attention-science dimensions, blends them into a weighted 0-100 ViralScore, and produces a plain-English psychology report explaining why
 - A **Script Generation Engine** — runs immediately after Psychology: every candidate gets multiple stylistically distinct, platform-aware script variants (13 storytelling components each: hook, pattern interrupt, curiosity loop, core story, emotional progression, retention checkpoints, CTA, SEO keywords, B-roll, AI visual prompts, sound effects, music style, estimated runtime), scored 0-100 across six weighted factors, best variant wins
+- A **Visual Intelligence Engine** — the visual brain: every scripted candidate receives a complete Visual Production Package (scene-by-scene storyboard with full visual grammar, 12-dimension visual psychology scores per scene, model-ready AI image prompts for 5 image models and AI video prompts for 6 video models, 5 scored thumbnail concepts with expected CTR, a five-frame hook sequence, caption plan, and pacing/camera/motion reports) blended into one weighted Overall Visual Score (0-100)
 - An **Attention Graph Engine** — scores every candidate across 12 attention dimensions into a radar-chart-ready profile plus a weighted 0-100 Attention Score, with a concrete recommendation for raising every dimension
 - A **Psychology Threat Detection Engine** — screens every packaged idea for 10 production failure modes (clickbait without payoff, weak hooks, platform policy risk, manipulative language, and more), producing a Threat Level (Low/Medium/High), a confidence %, and a fix recommendation for every flagged threat
 - A **Knowledge Engine** with live Wikipedia, PubMed, arXiv, and Crossref connectors
 - A **Citation Engine** that maps scripts to sources and flags unsupported claims
-- An **Intelligence Pipeline** (15 stages) from trend discovery and opportunity ranking through ideas, psychology, script generation, attention graph, ranking, critique, citation, SEO, threat detection, and quality
+- An **Intelligence Pipeline** (16 stages) from trend discovery and opportunity ranking through ideas, psychology, script generation, visual intelligence, attention graph, ranking, critique, citation, SEO, threat detection, and quality
 - A **Media Production Pipeline** that turns approved scripts into render-ready packages
 - A **Provider System** that keeps all vendor integrations swappable
 - A **Job Queue + Workflow Engine** that coordinates every stage without tight coupling
@@ -108,7 +109,7 @@ Every stage in this chain already has a registered engine key (live or planned s
                                │
 ┌──────────────────────────────▼──────────────────────────────┐
 │  Engine Registry (engines/registry.py)                      │
-│  23 live engines · 6 planned stubs                           │
+│  24 live engines · 6 planned stubs                           │
 └──────────────────────────────┬──────────────────────────────┘
                                │
 ┌──────────────────────────────▼──────────────────────────────┐
@@ -175,11 +176,11 @@ services/ideation.run_command()
     │       → cache by topic (data/research_cache/)
     │       │
     │       ▼
-    │   Stages 3–15: Intelligence Pipeline
+    │   Stages 3–16: Intelligence Pipeline
     │       ideation → psychology → script_generation →
-    │       attention_graph → ranking → script (fallback) →
-    │       critic → revision → citation → seo →
-    │       threat_detection → quality
+    │       visual_intelligence → attention_graph → ranking →
+    │       script (fallback) → critic → revision → citation →
+    │       seo → threat_detection → quality
     │       │
     │       ▼
     │   context["ideas"] with scores, SEO, references
@@ -217,7 +218,9 @@ Every engine receives and returns updates to a shared `context: dict`. Key field
 | `psychology_summary` | Psychology | UI, diagnostics |
 | `candidates[].script_variants`, `.script`, `.cta`, `.script_score`, `.script_style`, `.estimated_runtime_sec`, `.retention_checkpoints`, `.broll_suggestions`, `.visual_prompts`, `.sound_effects`, `.music_style` | Script Generation | Ranking, Critic, Citation, Quality, Production, UI |
 | `script_generation_summary` | Script Generation | UI, diagnostics |
-| `target_platform`, `script_variant_count` | Caller (optional) | Script Generation |
+| `target_platform`, `script_variant_count` | Caller (optional) | Script Generation, Visual Intelligence |
+| `candidates[].visual_package` (`.scenes`, `.storyboard`, `.image_prompts`, `.video_prompts`, `.thumbnails`, `.hook_sequence`, `.caption_plan`, `.pacing_report`, `.camera_plan`, `.motion_report`, `.visual_score`), `.visual_score`, `.thumbnail_concepts` | Visual Intelligence | Future renderers (image/video/thumbnail/caption), UI (visual package expander) |
+| `visual_intelligence_summary` | Visual Intelligence | UI, diagnostics |
 | `candidates[].attention_graph` (`.scores`, `.attention_score`, `.radar_chart`, `.recommendations`) | Attention Graph | Ranking, UI (radar chart expander) |
 | `attention_graph_summary` | Attention Graph | UI, diagnostics |
 | `ranked_candidates`, `selected_ideas` | Ranking | Script (fallback), SEO, Threat Detection, Quality |
@@ -316,7 +319,7 @@ class Engine(ABC):
     def run(self, context: dict) -> dict: ...  # returns merge updates
 ```
 
-### Intelligence Pipeline (15 live engines)
+### Intelligence Pipeline (16 live engines)
 
 | Key | Module | Responsibility |
 |---|---|---|
@@ -326,6 +329,7 @@ class Engine(ABC):
 | `ideation` | `engines/ideation.py` | Generates 20 candidate concepts grounded in research brief |
 | `psychology` | `engines/psychology.py` | Psychology & Virality Engine — scores candidates on 18 attention dimensions, blends a weighted ViralScore (0-100), and produces a psychology report (deterministic) |
 | `script_generation` | `engines/script_generation.py` | Script Generation Engine — runs immediately after Psychology; multi-style, platform-aware script variants per candidate (13 storytelling components), scored 0-100, best variant attached; delegates to `services/scripts/` |
+| `visual_intelligence` | `engines/visual_intelligence.py` | Visual Intelligence Engine — runs immediately after Script Generation; every scripted candidate receives a Visual Production Package (storyboard, per-scene visual psychology scores, AI image/video prompts, scored thumbnails, hook sequence, pacing/camera/motion reports) and an Overall Visual Score (0-100); delegates to `services/visual/` |
 | `attention_graph` | `engines/attention_graph.py` | Attention Graph Engine — scores candidates on 12 attention dimensions, blends a weighted Attention Score (0-100), and returns a radar-chart payload plus per-dimension recommendations (deterministic) |
 | `ranking` | `engines/ranking.py` | Weighted ranking (psychology 50% + opportunity 30% + script quality 20%); selects top N |
 | `script` | `engines/script.py` | Fallback scriptwriter — covers ideas that reach ranking unscripted; never overwrites generated variants |
@@ -371,6 +375,65 @@ without first passing through a measurable model of human attention.
   audience identity, community appeal, bounded controversy) from the 18
   dimensions, so the publish gate rewards concepts built to spread — not
   just to be watched once.
+
+### Visual Intelligence (deep dive)
+
+`engines/visual_intelligence.py` is the visual brain of the pipeline. It runs
+immediately after Script Generation and before the Attention Graph, so every
+scripted candidate carries a complete visual plan before ranking happens, and
+every downstream renderer (voice → audio → image → video) consumes one
+canonical Visual Production Package. No videos are generated yet — this is
+the planning layer future render engines execute. Planning is delegated to
+the modular `services/visual/` package (usable standalone via
+`build_visual_package(idea, niche=..., subject=..., aspect_ratio=...)`).
+
+- **Scene planner** (`services/visual/scenes.py`): breaks the winning script
+  variant into hook → pattern interrupt → curiosity loop → story beats
+  (~one visual change every 7 seconds, max 6 beats) → payoff → CTA. Each
+  scene carries the full visual grammar: purpose, emotion (from the
+  variant's emotional progression), length, narration, visual description,
+  camera angle + motion, shot composition, subject placement, lighting +
+  environment (per-emotion looks), niche color palette, transitions in/out
+  (chained so every scene's `transition_in` matches the previous scene's
+  `transition_out`), motion intensity, zoom, background, overlay, text
+  overlay, caption timing, sound effect, music style, and B-roll. All
+  grammar lives in data tables (`PURPOSE_GRAMMAR`, `EMOTION_LOOKS`,
+  `NICHE_VISUAL_PALETTES`) — art-direction changes never touch planner code.
+- **Visual psychology** (`services/visual/psychology.py`): every scene is
+  scored 0-100 on 12 perceptual triggers — curiosity, mystery, wonder, fear,
+  beauty, novelty, scale, contrast, motion, satisfaction, humor, identity —
+  using deterministic word-bank + structure analysis (new visual banks plus
+  shared banks from `engines/heuristics.py`), blended into a per-scene
+  Visual Score via `VISUAL_SCORE_WEIGHTS` (data, not code).
+- **AI prompt builders** (`services/visual/prompts.py`): one shared
+  model-agnostic spec per scene (lighting, composition, lens, mood, art
+  style, palette, quality, aspect ratio, camera movement, character action,
+  physics, duration) formatted into each model's dialect — image prompts for
+  Midjourney, Flux, Stable Diffusion, DALL-E, and OpenAI Images; video
+  prompts for Runway, Veo, Pika, Luma, Kling, and Sora (future-ready).
+  Adding a model is one formatter function.
+- **Thumbnail engine** (`services/visual/thumbnails.py`): five archetypes
+  (shock face close-up, mystery object macro, before/after split, extreme
+  scale contrast, bold text tease) scored on 7 dimensions — curiosity,
+  readability, contrast, facial focus, object focus, color, emotion — via
+  `THUMBNAIL_SCORE_WEIGHTS`, each mapped to an expected CTR % (1.5-14%).
+- **Hook visualizer** (`services/visual/hooks.py`): the strongest five-frame
+  first-3-second sequence (abrupt motion → novel detail anchor → curiosity
+  gap → direct address → open loop) with a plain-English scroll-stop
+  rationale.
+- **Package assembly** (`services/visual/package.py`): storyboard, caption
+  plan, visual pacing report (cut rhythm vs. the 3-8s retention ideal),
+  camera plan with a variety score, transition list, and motion report
+  (per-scene intensity curve). Components blend into one weighted **Overall
+  Visual Score (0-100)** via `PACKAGE_SCORE_WEIGHTS` (scene craft 0.35,
+  hook strength 0.25, thumbnail power 0.20, pacing fitness 0.12, camera
+  variety 0.08).
+- Attached to every candidate as `visual_package` (plus `visual_score` and
+  `thumbnail_concepts`); a batch `visual_intelligence_summary` (planned
+  count, total scenes, average visual score, platform/aspect ratio) is
+  attached to the pipeline context for diagnostics. Fully deterministic —
+  Demo Mode carries the entire engine, and the idea card surfaces a compact
+  "🎥 Visual Production Package" expander (no new UI pages).
 
 ### Attention Graph (deep dive)
 
@@ -575,6 +638,7 @@ Services are the public API between UI and infrastructure.
 | Research | `services/research/` | Knowledge Engine — manager, cache, scorer, summarizer, models |
 | Trends | `services/trends/` | Trend Discovery — universal Trend model, 11-factor opportunity scorer, discovery manager |
 | Scripts | `services/scripts/` | Script Generation — `PlatformSpec` for 6 platforms, `ScriptVariant` model (13 components), deterministic multi-style generator, 6-factor variant scorer, `generate_script_package()` standalone API |
+| Visual | `services/visual/` | Visual Intelligence — `ScenePlan` + `ThumbnailConcept` models, 12-dimension visual psychology scorer, deterministic scene planner, per-model AI image/video prompt builders, thumbnail engine, hook visualizer, `build_visual_package()` standalone API |
 | Assets | `services/assets.py` | Asset registry + publishing queue persistence |
 | Voice Profiles | `services/voice_profiles.py` | Profile CRUD, recording metadata, style presets |
 | Knowledge | `services/knowledge.py` | Append-only JSON memory (hooks, titles, scripts, research briefs) |
@@ -662,6 +726,7 @@ The Streamlit UI is intentionally stable across versions. Major releases add **c
 | **v7.2** | Script Generation Engine | Multi-variant multi-style scripts for 6 platforms, 13 storytelling components per script, 6-factor variant scoring, runs immediately after Psychology, script quality feeds ranking |
 | **v7.3** | Attention Graph (Attention Intelligence) | 12-dimension attention scoring, weighted Attention Score, radar-chart payload + Plotly visualization, per-dimension recommendations, runs after Script Generation and before Ranking |
 | **v7.4** | Psychology Threat Detection (Threat Intelligence) | 10-threat production risk screening, weighted Threat Score, Threat Level (Low/Medium/High), confidence %, fix recommendations, runs after SEO and before the Quality Gate |
+| **v7.5** | Visual Intelligence Engine | Visual Production Package per scripted candidate — storyboard with full visual grammar, 12-dimension visual psychology per scene, AI image prompts (5 models) + video prompts (6 models), 5 scored thumbnail concepts with expected CTR, five-frame hook sequence, pacing/camera/motion reports, Overall Visual Score (0-100); runs after Script Generation and before the Attention Graph |
 
 *(v3.0 was skipped in release numbering.)*
 
@@ -725,6 +790,7 @@ python -m pytest
 | `tests/test_citation_engine.py` | Citation engine + multi-factor quality gate |
 | `tests/test_script_generation.py` | Script Engine — platform specs, 13-component variants, deterministic scoring, pipeline position, ranking blend, fallback behavior |
 | `tests/test_attention_graph.py` | Attention Graph Engine — 12 dimensions, weight normalization, determinism, radar chart shape, recommendations, pipeline integration |
+| `tests/test_visual_intelligence.py` | Visual Intelligence Engine — 12 visual dimensions, weight normalization, scene planner components/ordering/timing, image+video prompt coverage, thumbnail scoring + CTR, hook sequence, package shape, determinism, pipeline position, pipeline integration |
 | `tests/test_threat_detection.py` | Psychology Threat Detection Engine — 10 threats, weight normalization, determinism, threat-level/confidence bounds, flagged-threat sorting, fix recommendations, pipeline position, pipeline integration |
 | `tests/test_trend_discovery.py` | Trend provider auto-discovery, universal model, opportunity scoring, pipeline integration |
 | `tests/test_media_production.py` | Production pipeline and dashboard |
@@ -752,7 +818,7 @@ python -m pytest
 
 ### Current Baseline
 
-**159 tests passing** (as of v7.4.0).
+**190 tests passing** (as of v7.5.0).
 
 ---
 
@@ -904,16 +970,17 @@ generational/
 │   ├── research/                   # Knowledge Engine
 │   ├── trends/                     # Trend Discovery (models, scorer, manager)
 │   ├── scripts/                    # Script Generation (models, platforms, generator, scorer)
+│   ├── visual/                     # Visual Intelligence (models, psychology, scenes, prompts, thumbnails, hooks, package)
 │   ├── assets.py · voice_profiles.py
 │   ├── knowledge.py · channels.py · pipeline.py
-├── engines/                        # 23 live + 6 planned pipeline plugins
+├── engines/                        # 24 live + 6 planned pipeline plugins
 ├── providers/                      # Swappable external backends
 │   └── trend_sources/              # Auto-discovered trend providers
 ├── ui/                             # Streamlit presentation
-├── tests/                          # 159 unit/integration tests
+├── tests/                          # 190 unit/integration tests
 └── data/                           # Runtime persistence (gitignored)
 ```
 
 ---
 
-*Last updated: v7.4.0 — Psychology Threat Detection (Threat Intelligence)*
+*Last updated: v7.5.0 — Visual Intelligence Engine (Visual Production Packages)*
