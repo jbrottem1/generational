@@ -103,6 +103,8 @@ class WorkflowExecutor:
         self,
         command: str,
         config: "WorkflowConfig | dict | None" = None,
+        *,
+        context_extra: "dict | None" = None,
     ) -> ProjectRun:
         """Accept a production request and create a durable ProjectRun."""
         if isinstance(config, dict):
@@ -133,6 +135,8 @@ class WorkflowExecutor:
             "production_type": cfg.production_type,
             "workflow_template": cfg.template,
         }
+        if context_extra:
+            context.update(context_extra)
         run = ProjectRun(
             command=command,
             production_type=cfg.production_type,
@@ -167,6 +171,7 @@ class WorkflowExecutor:
         *,
         run_id: str = "",
         resume: bool = False,
+        context_extra: "dict | None" = None,
     ) -> ProjectRun:
         """Create (or load) a run and execute until complete / failed / cancelled."""
         if resume or run_id:
@@ -177,11 +182,11 @@ class WorkflowExecutor:
 
         if not command:
             raise ValueError("command is required to start a new workflow run")
-        run = self.create_run(command, config)
+        run = self.create_run(command, config, context_extra=context_extra)
         return self._execute_run(run)
 
     def resume(self, run_id: str) -> ProjectRun:
-        """Resume a failed or interrupted run from its last checkpoint."""
+        """Resume a failed, paused, or interrupted run from its last checkpoint."""
         run = self.load_run(run_id)
         if run is None:
             raise ValueError(f"Workflow run {run_id!r} not found")
@@ -192,14 +197,17 @@ class WorkflowExecutor:
         if run.status == WorkflowStatus.COMPLETED:
             return run
 
+        run.context.pop("_pause_requested", None)
         checkpoint = self._store.load_checkpoint(run_id) or run.checkpoint
         if checkpoint:
             run.context.update(checkpoint.context_snapshot or {})
+            run.context.pop("_pause_requested", None)
             completed = set(checkpoint.completed_stages or [])
             for step in run.workflow.steps:
                 if step.stage in completed and step.status not in (
                     WorkflowStatus.FAILED,
                     WorkflowStatus.RETRYING,
+                    WorkflowStatus.PAUSED,
                 ):
                     if step.status == WorkflowStatus.PENDING:
                         step.status = WorkflowStatus.COMPLETED
@@ -207,6 +215,7 @@ class WorkflowExecutor:
                     WorkflowStatus.RUNNING,
                     WorkflowStatus.FAILED,
                     WorkflowStatus.RETRYING,
+                    WorkflowStatus.PAUSED,
                 ):
                     # Reset so resume can re-attempt from this stage.
                     step.status = WorkflowStatus.PENDING
@@ -219,6 +228,29 @@ class WorkflowExecutor:
         run.log.append("run.resumed", from_stage=self._next_pending_stage(run))
         self._persist(run)
         return self._execute_run(run, resuming=True)
+
+    def pause(self, run_id: str) -> ProjectRun:
+        """Request pause — takes effect between stages on the next loop check."""
+        run = self.load_run(run_id)
+        if run is None:
+            raise ValueError(f"Workflow run {run_id!r} not found")
+        if run.status in (
+            WorkflowStatus.COMPLETED,
+            WorkflowStatus.CANCELLED,
+            WorkflowStatus.FAILED,
+            WorkflowStatus.PAUSED,
+        ):
+            return run
+        run.context["_pause_requested"] = True
+        if run.status != WorkflowStatus.RUNNING:
+            run.status = WorkflowStatus.PAUSED
+            run.workflow.status = WorkflowStatus.PAUSED
+            run.log.append("run.paused")
+            self._checkpoint(run, status=WorkflowStatus.PAUSED)
+        else:
+            run.log.append("run.pause_requested")
+        self._persist(run)
+        return run
 
     def cancel(self, run_id: str) -> ProjectRun:
         run = self.load_run(run_id)
@@ -278,6 +310,16 @@ class WorkflowExecutor:
             run.workflow.current_step_index = index
             if run.status == WorkflowStatus.CANCELLED:
                 break
+            # Honor pause requests between stages (Agent 23 / Studio).
+            if run.context.get("_pause_requested"):
+                run.context.pop("_pause_requested", None)
+                run.status = WorkflowStatus.PAUSED
+                run.workflow.status = WorkflowStatus.PAUSED
+                step.status = WorkflowStatus.PAUSED
+                run.log.append("run.paused", stage=step.stage)
+                self._checkpoint(run, status=WorkflowStatus.PAUSED)
+                self._persist(run)
+                break
             if step.status in (
                 WorkflowStatus.COMPLETED,
                 WorkflowStatus.SKIPPED,
@@ -324,6 +366,22 @@ class WorkflowExecutor:
         else:
             # Completed all steps without break.
             self._finalize_success(run, pipeline_result)
+
+        if run.status == WorkflowStatus.PAUSED:
+            run.updated_at = _now_iso()
+            run.workflow.progress_pct = progress_percent(run.workflow.steps)
+            run.workflow.status = WorkflowStatus.PAUSED
+            self._attach_outputs(run, pipeline_result)
+            self._attach_provider_usage(run)
+            self._checkpoint(run, status=WorkflowStatus.PAUSED)
+            self._persist(run)
+            log_event(
+                logger,
+                "workflow.run_paused",
+                run_id=run.run_id,
+                progress=run.workflow.progress_pct,
+            )
+            return run
 
         if run.status == WorkflowStatus.RUNNING:
             # Loop exited via break on failure/timeout/cancel already set status,
@@ -621,7 +679,10 @@ def reset_workflow_executor() -> None:
 def execute_workflow(command: str, **kwargs) -> ProjectRun:
     """Module-level convenience: create + execute a production workflow."""
     config = kwargs.pop("config", None)
-    return get_workflow_executor().execute(command, config=config, **kwargs)
+    context_extra = kwargs.pop("context_extra", None)
+    return get_workflow_executor().execute(
+        command, config=config, context_extra=context_extra, **kwargs
+    )
 
 
 def _workflow_job_handler(payload: dict) -> dict:
@@ -632,6 +693,7 @@ def _workflow_job_handler(payload: dict) -> dict:
         run = executor.execute(
             payload.get("command", ""),
             config=payload.get("config"),
+            context_extra=payload.get("context_extra"),
         )
     return {
         "run_id": run.run_id,

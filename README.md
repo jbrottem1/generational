@@ -4,6 +4,26 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.13 — Autonomous Production Executor (Agent 23)
+
+One user request becomes a complete production package — `ProductionJob` with
+scheduling, checkpoints, pause/resume, parallel units, cost/runtime estimates,
+quality scoring, and detailed execution logs. Coordinates WorkflowExecutor →
+Orchestrator (never bypasses the kernel).
+
+```python
+from services.autonomous_production import get_production_executor
+
+executor = get_production_executor()
+job = executor.execute("Create a 45-second YouTube Short about black holes.")
+status = executor.get_status(job.job_id)
+```
+
+Modes: single video, series, podcast, course, campaign, documentary, animated
+story, audiobook, educational program. See
+[`AUTONOMOUS_PRODUCTION_EXECUTOR.md`](AUTONOMOUS_PRODUCTION_EXECUTOR.md).
+`APP_VERSION = 9.13.0`.
+
 ## Version 9.12 — Creative Studio UI (Agent 20)
 
 Primary interface for the Generational platform — project workspace, creative

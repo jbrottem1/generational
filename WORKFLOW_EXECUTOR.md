@@ -102,6 +102,19 @@ ETA hints are more conservative for Studio UI.
 
 ---
 
+## Pause / Resume
+
+```python
+executor.pause(run_id)   # takes effect between stages
+executor.resume(run_id)  # continues from checkpoint
+```
+
+`WorkflowStatus.PAUSED` is a first-class lifecycle state. Upstream callers
+(Agent 23 Autonomous Production Executor) may also pass `context_extra` into
+`execute()` / `create_run()`.
+
+---
+
 ## UI integration (Agent 20 Studio)
 
 ```python

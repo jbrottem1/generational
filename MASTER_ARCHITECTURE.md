@@ -186,6 +186,17 @@ Orchestrator or call provider APIs directly.
 - **Modules:** `services/workflow_executor/`
 - **See:** `WORKFLOW_EXECUTOR.md`
 
+### Agent 23: Autonomous Production Executor — LANDED
+
+Project manager for complete media productions — one user request becomes a
+`ProductionJob` with production modes, scheduling, checkpoints, pause/resume,
+long-form chapters, parallel units, cost/runtime estimates, and quality
+scoring. Drives WorkflowExecutor → Orchestrator; never calls engines or
+providers directly.
+
+- **Modules:** `services/autonomous_production/`
+- **See:** `AUTONOMOUS_PRODUCTION_EXECUTOR.md`
+
 ### Agent 7: Quality Assurance Engine
 
 The last gate before the outside world. Checks rendered output against the plan: hook lands in the first seconds, audio/visual sync, subtitle accuracy, platform policy compliance, citation integrity, and overall craft. Rejects with actionable revision notes rather than a bare pass/fail.
@@ -226,6 +237,7 @@ zones, contract stubs, and orchestrator stages already wired (see
 | Agent 17 | Post-Production & Intelligent Editing — **LANDED** (mock providers, live stage) | `engines/post_production.py` + `services/post_production/` + `providers/post_production/` | `post_production` |
 | Agent 19 | Provider Integration & Runtime — **LANDED** | `services/provider_runtime/` | service layer (not a stage) |
 | Agent 21 | End-to-End Workflow Executor — **LANDED** | `services/workflow_executor/` | service layer (not a stage) |
+| Agent 23 | Autonomous Production Executor — **LANDED** | `services/autonomous_production/` | service layer (not a stage) |
 
 Future engines subclass `ContractEngine` (`engines/contracts.py`) and fill
 their slot in the canonical `ContentPackage` (`DATA_CONTRACTS.md`). Their

@@ -24,6 +24,7 @@ class WorkflowStatus:
 
     PENDING = "pending"
     RUNNING = "running"
+    PAUSED = "paused"
     COMPLETED = "completed"
     FAILED = "failed"
     SKIPPED = "skipped"

@@ -272,3 +272,29 @@ def test_describe_all_is_complete_and_uniform():
         for field in ("engine_id", "name", "version", "ready", "input_contract",
                       "output_contract", "dependencies", "capabilities", "description"):
             assert field in info, (info.get("engine_id"), field)
+
+
+# -------------------------------- Autonomous Production Executor (Agent 23)
+
+
+def test_autonomous_production_does_not_import_engines():
+    """Agent 23 coordinates via WorkflowExecutor / Orchestrator only."""
+    ap_dir = ENGINES_DIR.parent / "services" / "autonomous_production"
+    violations = []
+    for file in sorted(ap_dir.rglob("*.py")):
+        for imported in _engine_imports(file):
+            violations.append(f"{file.relative_to(ENGINES_DIR.parent)} imports {imported}")
+    assert not violations, (
+        "Autonomous Production Executor must not import engines:\n  "
+        + "\n  ".join(violations)
+    )
+
+
+def test_autonomous_production_routes_through_workflow_executor():
+    """Agent 23 must drive WorkflowExecutor — never engines or vendor SDKs."""
+    source = (
+        ENGINES_DIR.parent / "services" / "autonomous_production" / "executor.py"
+    ).read_text(encoding="utf-8")
+    assert "get_workflow_executor" in source or "WorkflowExecutor" in source
+    assert "run_full_pipeline" not in source
+    assert "from engines" not in source

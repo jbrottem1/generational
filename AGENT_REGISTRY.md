@@ -58,6 +58,7 @@ Companions: `ENGINE_REGISTRY.md` · `SYSTEM_DEPENDENCY_MAP.md` ·
 |---|---|---|---|
 | **19** | Provider Integration & Runtime | `services/provider_runtime/` | **LIVE** |
 | **21** | End-to-End Workflow Executor | `services/workflow_executor/` | **LIVE** |
+| **23** | Autonomous Production Executor | `services/autonomous_production/` | **LIVE** |
 
 ---
 
@@ -87,6 +88,18 @@ Durable run controller: one prompt → `ProjectRun` with checkpoints, retries,
 resume, and Studio UI status. Does not replace the Orchestrator or call
 provider APIs directly. See `WORKFLOW_EXECUTOR.md`.
 
+
+### Agent 23 — Autonomous Production Executor (LIVE)
+
+| Agent | Subsystem | Key | Integrates via |
+|---|---|---|---|
+| **23** | Autonomous Production Executor | `autonomous_production` (service) | `ProductionJob` → WorkflowExecutor → Orchestrator + job queue `autonomous_production` |
+
+Project manager for complete productions: modes, scheduling, pause/resume,
+long-form chapters, parallel units, cost/runtime estimates, quality scoring.
+Does not call engines or providers directly. See
+`AUTONOMOUS_PRODUCTION_EXECUTOR.md`.
+
 ### Agent 19 — Provider Integration & Runtime (LIVE)
 
 | Agent | Subsystem | Key | Integrates via |
@@ -114,6 +127,7 @@ Reserved for future BI: `business_intelligence` engine key.
 | Direction | AI direction, executive creative strategy | **18** |
 | Interface | Studio UI, creative workspace | **20** |
 | Infrastructure | Provider integration, runtime, workflow execution | **19**, **21** |
+| Production Execution | Autonomous complete-production coordination | **23** |
 | Executive (planned) | Autonomous operation | 22 |
 
 ---

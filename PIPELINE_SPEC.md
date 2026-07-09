@@ -147,5 +147,22 @@ One-prompt production runs are managed by
 creates a durable `ProjectRun`, resolves production type/template, drives
 Orchestrator stages in order, checkpoints after each stage, retries/degrades
 failures, and exposes Studio UI status (`get_status`). It does not redefine
-stage order — it filters/annotates the canonical plan above. See
-`WORKFLOW_EXECUTOR.md`.
+stage order — it filters/annotates the canonical plan above. Supports `pause()` / `resume()` between stages and
+`context_extra` for upstream callers. See `WORKFLOW_EXECUTOR.md`.
+
+## Autonomous Production Executor Layer (Agent 23)
+
+Complete productions from a single request are managed by
+`services/autonomous_production/` (`AutonomousProductionExecutor.execute()`).
+Creates a durable `ProductionJob`, resolves production mode, estimates
+cost/runtime, optionally schedules via job queue `autonomous_production`,
+drives WorkflowExecutor (with parallel child jobs for courses/series),
+checkpoints with chapter indexes, pause/resume/cancel, and quality scoring.
+Does not bypass the Orchestrator. See `AUTONOMOUS_PRODUCTION_EXECUTOR.md`.
+
+**Canonical autonomous flow:**
+
+```
+User Request → Autonomous Production Executor → Workflow Executor → Orchestrator
+  → ProviderRuntime / Engines → packages → publish → analytics → learning
+```
