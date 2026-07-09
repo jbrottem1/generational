@@ -4,6 +4,67 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 7.7 — Behavioral Intelligence API
+
+The Psychology & Virality Engine evolves from three separate scoring outputs
+into one reusable **Behavioral Intelligence API**. Instead of every
+downstream engine reaching into `candidate["psychology"]["curiosity_gap"]`,
+`candidate["attention_graph"]["scores"]["shareability"]`, and
+`candidate["threat_report"]["flagged_threats"]` separately, they can consume
+one typed, documented report.
+
+### `BehavioralIntelligenceReport` (`services/behavioral_intelligence/`)
+
+A single dataclass with 13 behavioral scores plus a confidence score and a
+capped list of recommendations:
+
+`viral_score` · `attention_score` · `curiosity_score` · `emotional_intensity`
+· `novelty_score` · `shareability_score` · `replay_probability` ·
+`comment_probability` · `retention_prediction` · `hook_strength` ·
+`identity_resonance` · `visual_interest_score` · `narrative_tension` ·
+`confidence` · `recommendations`
+
+```python
+from services.behavioral_intelligence import build_report
+
+report = build_report(candidate)
+if report.hook_strength < 60:
+    ...  # typed attribute access — no dict parsing required
+```
+
+Every field's meaning, source dimension(s), and fallback rule is documented
+in `FIELD_DESCRIPTIONS` (`services/behavioral_intelligence/models.py`), and
+`to_dict()` / `from_dict()` round-trip the report through the JSON-safe
+workflow context.
+
+### Graceful degradation, not a new pipeline stage
+
+`build_report()` reads whatever of `psychology`, `attention_graph`, and
+`threat_report` a candidate currently carries — it never requires all three.
+`engines/psychology.py` attaches the report immediately after scoring
+(the earliest point in the pipeline it can exist), and
+`engines/attention_graph.py` / `engines/threat_detection.py` each refresh it
+with richer data as their own scores land. This means Script Generation,
+Visual Intelligence, and Voice & Audio — all three of which run *before* the
+Attention Graph and Threat Detection — already see a fully-populated,
+correctly-typed report the moment Psychology finishes; `confidence` simply
+starts lower and climbs as more signal arrives later in the pipeline.
+
+### Reference adapters (`services/behavioral_intelligence/adapters.py`)
+
+Three small, tested functions show each named consumer reading the report
+purely through typed attributes: `script_generation_guidance()`,
+`visual_guidance()`, `audio_guidance()`. They are not wired into the live
+engines (retrofitting calls into actively-developed modules was out of scope
+for this API) — they are the documented, integration-tested seam those
+engines call into when ready.
+
+### Shared refactor
+
+The weighted-blend formula (`clamp(sum(dimensions[k] * weight))`) that
+`viral_score()`, `attention_score()`, and `overall_threat_score()` each
+duplicated now lives once as `weighted_blend()` in `engines/heuristics.py`.
+
 ## Version 7.6 — Voice & Audio Engine
 
 The sound brain of the pipeline. Every scripted candidate now receives a
@@ -638,7 +699,7 @@ is a thin shell over five layers:
 ```
         UI (Streamlit tabs + sidebar)
                     │
-        services/  (research, ideation, production, assets, voice profiles, channels, knowledge)
+        services/  (research, ideation, production, assets, voice profiles, channels, knowledge, behavioral intelligence)
                     │
    Job Queue ──► Workflow Manager ──► Engine Registry (23 live plugins)
                     │
@@ -692,6 +753,11 @@ Production (8): Scene
 Planning, Narration, Visual Planning, Asset Manager, Subtitle, Timeline,
 Render Package, Publishing Queue. Future render engines (Voice/Image/Video
 generation) remain as planned stubs.
+
+The **Behavioral Intelligence API** (`services/behavioral_intelligence/`,
+v7.7) is not a 26th pipeline stage — it's a reusable service Psychology,
+the Attention Graph, and Threat Detection each call into, so it has no
+`WORKFLOWS` entry of its own.
 
 ### Workflow Engine (`core/workflows.py`)
 Pipelines are data, not code: a workflow is an ordered list of engine keys
@@ -783,6 +849,7 @@ generational/
 │   ├── scripts/              # Script Generation (models, platforms, generator, scorer)
 │   ├── visual/               # Visual Intelligence (models, psychology, scenes, prompts, thumbnails, hooks, package)
 │   ├── audio/                # Voice & Audio (models, voice, narration, sfx, music, retention, package)
+│   ├── behavioral_intelligence/ # v7.7 unified report API (models, builder, adapters)
 │   ├── ideation.py           # Intelligence pipeline orchestrator
 │   ├── production.py         # Media production orchestrator
 │   ├── assets.py             # Asset Manager + Publishing Queue

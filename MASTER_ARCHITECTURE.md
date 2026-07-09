@@ -79,10 +79,10 @@ Finds what to make before anyone asks. Pulls signals from trend providers, norma
 
 ### Agent 2: Psychology & Virality Engine
 
-The attention scientist. Scores every candidate idea across psychological dimensions (curiosity, emotional charge, identity relevance, novelty, controversy, and more), blends them into a weighted ViralScore, and explains the score in plain English. Also screens for psychological failure modes (clickbait without payoff, weak hooks, policy risk).
+The attention scientist. Scores every candidate idea across psychological dimensions (curiosity, emotional charge, identity relevance, novelty, controversy, and more), blends them into a weighted ViralScore, and explains the score in plain English. Also screens for psychological failure modes (clickbait without payoff, weak hooks, policy risk). Exposes its three scoring modules through one standardized **Behavioral Intelligence API** (Section 5.1) so any other agent's engine can consume a single typed report instead of three separately-shaped dicts.
 
-- **Owns:** psychology scoring, attention profiling, threat detection
-- **Modules:** `engines/psychology.py`, `engines/attention_graph.py`, `engines/threat_detection.py`
+- **Owns:** psychology scoring, attention profiling, threat detection, the Behavioral Intelligence report contract
+- **Modules:** `engines/psychology.py`, `engines/attention_graph.py`, `engines/threat_detection.py`, `services/behavioral_intelligence/`
 
 ### Agent 3: Script Generation & Storytelling Engine
 
@@ -164,7 +164,7 @@ These are the contracts between stages. They live in the models layer (`core/mod
 | Object | Purpose | Key fields (indicative) |
 |---|---|---|
 | **ContentIdea** | A single candidate concept discovered from trends | id, channel_id, topic, angle, source signals, opportunity score, discovered_at |
-| **PsychologyReport** | Psychological evaluation of one idea | idea_id, dimension scores, ViralScore (0–100), explanation, detected threats |
+| **PsychologyReport** | Psychological evaluation of one idea. Concretely implemented as `BehavioralIntelligenceReport` (Section 5.1) | idea_id, dimension scores, ViralScore (0–100), explanation, detected threats |
 | **RankedIdea** | An idea that survived ranking | idea_id, rank, composite score, gate decisions, selected platform targets |
 | **ScriptPackage** | Complete script output for one idea | idea_id, winning variant, alternates, hook, beats, retention checkpoints, CTA, per-variant scores |
 | **VisualPackage** | Complete visual plan for one script | script_id, storyboard scenes, image/video prompts per model, thumbnail concepts + CTR estimates, hook frames, overall visual score |
@@ -181,6 +181,83 @@ Object rules:
 - New fields are additive; removing or renaming a field is a breaking change and requires updating every consumer plus its tests.
 - Every object carries the upstream IDs it derived from, so the Learning Engine can attribute outcomes end to end.
 - If a stage needs data another stage doesn't emit, extend the object contract — never reach into another engine.
+
+### 5.1 Behavioral Intelligence Report (concrete implementation)
+
+`PsychologyReport` above is the abstract contract; `BehavioralIntelligenceReport`
+(`services/behavioral_intelligence/models.py`) is the concrete, versioned
+dataclass every engine actually imports. It exists so Script Generation,
+Visual Intelligence, Voice & Audio, and any future consumer never parse
+`psychology` / `attention_graph` / `threat_report` dicts by hand — they read
+one typed object.
+
+**How reports are generated.** `services/behavioral_intelligence/builder.py::build_report(candidate)`
+reads whatever the candidate currently carries and maps each field to its
+best available source, preferring the richer/later engine's data and
+falling back to an earlier engine (or a heuristic proxy) when it isn't
+there yet:
+
+| Report field | Preferred source | Fallback |
+|---|---|---|
+| `viral_score` | Psychology `viral_score` | — (always present once Psychology runs) |
+| `attention_score` | Attention Graph `attention_score` | `viral_score` |
+| `curiosity_score` | Psychology `curiosity_gap` | — |
+| `emotional_intensity` | Psychology `emotional_intensity` | — |
+| `novelty_score` | Psychology `novelty` | — |
+| `shareability_score` | Attention Graph `shareability` | Psychology `share_likelihood` |
+| `replay_probability` | Attention Graph `rewatch_probability` | Psychology `replay_value` |
+| `comment_probability` | Attention Graph `comment_likelihood` | Psychology `comment_likelihood` |
+| `retention_prediction` | Psychology `retention_potential` | — |
+| `hook_strength` | Attention Graph `first_3_second_hook` | Psychology `first_3_second_hook` |
+| `identity_resonance` | Attention Graph `identity_signaling` | Psychology `audience_identity` |
+| `visual_interest_score` | Average of Psychology `visual_hook_strength` + Attention Graph `visual_novelty` | Whichever one exists |
+| `narrative_tension` | Attention Graph `story_tension` | Average of Psychology `surprise` + `dopamine_curve` |
+| `confidence` | Rule-based signal count (see below) | — |
+| `recommendations` | Flagged Threat Report fixes + weakest-field growth tips | Generic "no major gaps" message |
+
+**Who attaches it, and when.** `engines/psychology.py` calls
+`attach_report()` at the end of its `run()` — the earliest point a report
+can exist — so it's already on `candidate["behavioral_intelligence"]` by the
+time Script Generation, Visual Intelligence, and Voice & Audio run (they all
+execute before the Attention Graph in `core/workflows.py`). `engines/attention_graph.py`
+and `engines/threat_detection.py` each call `attach_report()` again at the
+end of their own `run()`, so later stages see a progressively richer report
+without any stage needing to know about the others.
+
+**Score meanings.** Every field's plain-English meaning and exact source
+mapping lives in `FIELD_DESCRIPTIONS` (`services/behavioral_intelligence/models.py`)
+— read there rather than duplicating it here, so the doc can never drift
+from the code.
+
+**Confidence.** Not a behavioral score — it's how much upstream signal
+backed the report. `_confidence()` starts at 55 and adds a fixed amount per
+signal present (Psychology +10, Attention Graph +15, Threat Report +10,
+script text +5), clamped to 50–98. Today this is a hand-tuned rule; see
+below for how it's meant to evolve.
+
+**Recommendations.** Up to 5 strings: flagged Threat Report fixes reserve
+their slots first (production risk beats growth opportunity), then the
+weakest-scoring fields fill whatever room is left, using the single-tip-per-
+field map in `builder.py::FIELD_TIPS`.
+
+**Extension points for future ML models.** Every function in
+`builder.py` is a pure function over plain dicts/dataclasses with a fixed
+signature, so a learned model can replace any one of them without touching
+callers:
+
+- Replace `build_report()`'s per-field mapping with a model that predicts
+  all 13 scores jointly from raw text + upstream dimensions — the dataclass
+  contract (`BehavioralIntelligenceReport`) doesn't change.
+- Replace `_confidence()` with a learned calibration (e.g. predicted-vs-
+  actual error conditioned on which signals were present) — must keep
+  returning an int 0–100.
+- Replace `_recommendations()`'s static `FIELD_TIPS` lookup with a generator
+  conditioned on the actual script/visual/audio package, once those exist —
+  must keep returning `list[str]`.
+- The real target to eventually train against is the Analytics/Learning
+  Engine's `AnalyticsRecord` → `LearningSignal` loop (Section 3, Agent 9):
+  once published posts report real retention/share/comment outcomes, this
+  module is where predicted scores get reconciled against them.
 
 ---
 
