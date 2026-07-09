@@ -166,9 +166,10 @@ distribution pipeline after render, before seo. See
 | `character_universe` | contract stub (wired in `character_universe` stage) | **Agent 15** — merge worktree |
 | `animation` | contract stub (wired in `animation` stage) | **Agent 16** — merge worktree |
 | `business_intelligence` | name reserved | Future BI & Monetization |
-| `provider_runtime` | service (Agent 19) | Provider Integration & Runtime — see `PROVIDER_INTEGRATION.md` |
+| `provider_runtime` | service (Agent 19 + 22) | Provider Integration & Runtime + production connectors — see `PROVIDER_INTEGRATION.md`, `PROVIDER_CONNECTORS.md` |
 | `workflow_executor` | service (Agent 21) | End-to-End Workflow Executor — see `WORKFLOW_EXECUTOR.md` |
-| `autonomous_executive` | name reserved | Agent 22 — Autonomous Executive |
+| `autonomous_production` | service (Agent 23) | Autonomous Production Executor — see `AUTONOMOUS_PRODUCTION_EXECUTOR.md` |
+| `autonomous_executive` | name reserved | Future Autonomous Executive |
 
 ## Studio service (Agent 20 — LIVE)
 

@@ -439,9 +439,23 @@ unified API for all external AI operations. See `PROVIDER_INTEGRATION.md`.
 | `latency_ms` | int | End-to-end latency |
 | `fallbacks_used` | list | Providers tried before success |
 
+### Agent 22 connector extensions
+
+| Addition | Notes |
+|---|---|
+| `publish` operation | Capability `publish` — YouTube/TikTok/Instagram/Facebook/X |
+| `openai_images` / `openai_tts` | Dedicated OpenAI image + speech connectors |
+| `music_future` | Future music provider abstraction |
+| Cache metadata | `ProviderResponse.metadata.cache_hit` when served from disk cache |
+| Implementation flag | Adapter `implementation_status`: `production` / `partial` / stub |
+| Encrypted secrets | `SecretManager` + `data/provider_runtime/secrets.enc.json` |
+| Version pins | `VersionManager` / `runtime.versions()` |
+
 Long-form checkpoints (`ProductionCheckpoint`) persist to
 `data/provider_runtime/checkpoints/` with `job_id`, `completed_stages`,
 `context_snapshot`, and `status`.
+
+See `PROVIDER_CONNECTORS.md` for the full connector catalog.
 
 ---
 
@@ -455,7 +469,7 @@ See `WORKFLOW_EXECUTOR.md`.
 | `ProjectRun` | Top-level run: command, production_type, config, workflow, context, result, log, checkpoint |
 | `WorkflowRun` | Step plan + `progress_pct` + status |
 | `WorkflowStep` | Stage, engine_keys, required/optional, attempt, status |
-| `WorkflowStatus` | `pending` · `running` · `completed` · `failed` · `skipped` · `waiting` · `retrying` · `cancelled` |
+| `WorkflowStatus` | `pending` · `running` · `paused` · `completed` · `failed` · `skipped` · `waiting` · `retrying` · `cancelled` |
 | `Checkpoint` | Resume point under `data/workflow_runs/checkpoints/` |
 | `RetryPolicy` | max_retries, backoff, skip_optional_on_fail, degrade_distribution_failures |
 | `ExecutionLog` | Append-only `{at, event, ...}` entries |
@@ -464,13 +478,34 @@ See `WORKFLOW_EXECUTOR.md`.
 | `WorkflowConfig` | template, stage_order, timeouts, budget, longform_mode, provider_preferences |
 
 Studio UI projection: `studio_status(run)` / `get_status(run_id)`.
-Job type: `workflow_run`.
+Job type: `workflow_run`. Pause: `pause(run_id)` (between stages).
 
 Additive only — append fields; never rename/remove.
 
 ---
 
-## 9.2 Studio project metadata (Agent 20)
+## 9.2 Autonomous Production Executor contracts (Agent 23)
+
+Project-management state in `services/autonomous_production/models.py`.
+See `AUTONOMOUS_PRODUCTION_EXECUTOR.md`.
+
+| Object | Notes |
+|---|---|
+| `ProductionJob` | Top-level job: command, mode, context, manifest, summary, checkpoint, child jobs |
+| `ExecutionContext` | Prompt, mode, options, chapters, budget, cost/runtime estimates |
+| `ExecutionState` | `pending` · `scheduled` · `running` · `paused` · `completed` · `failed` · `cancelled` · `partial` |
+| `Checkpoint` | Resume point under `data/production_jobs/checkpoints/` (+ chapter/scene indexes) |
+| `StageResult` | Per-stage outcome projection from WorkflowStep |
+| `ProductionManifest` | Declared plan: stages, units, estimates, dependencies |
+| `ProductionSummary` | packages, QC score, costs, failures, chapter/unit summaries |
+
+Job type: `autonomous_production`. Modes in `PRODUCTION_MODES`.
+
+Additive only — append fields; never rename/remove.
+
+---
+
+## 9.3 Studio project metadata (Agent 20)
 
 Studio projects extend the base project dict in `data/projects/{slug}.json`:
 

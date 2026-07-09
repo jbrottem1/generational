@@ -28,6 +28,7 @@ SUBTITLE = "subtitle"
 METADATA = "metadata"
 THUMBNAIL = "thumbnail"
 SCRIPT = "script"
+PUBLISH = "publish"
 
 ALL_CAPABILITIES = (
     IMAGE_GENERATION,
@@ -51,6 +52,7 @@ ALL_CAPABILITIES = (
     METADATA,
     THUMBNAIL,
     SCRIPT,
+    PUBLISH,
 )
 
 # Maps high-level runtime operations to required capabilities.
@@ -66,4 +68,5 @@ OPERATION_CAPABILITIES = {
     "generate_caption": (CAPTION, LLM),
     "generate_subtitles": (SUBTITLE, LLM),
     "generate_metadata": (METADATA, LLM),
+    "publish": (PUBLISH,),
 }

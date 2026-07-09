@@ -176,6 +176,25 @@ execution, and checkpointed long-form production jobs.
 - **Modules:** `services/provider_runtime/`, bridges to `providers/` and `core/ai/`
 - **See:** `PROVIDER_INTEGRATION.md`
 
+### Agent 22: Real Provider Connectors — LANDED
+
+Production connectors for text, image, video, voice, music abstraction, and
+publishing platforms. Replaces stub `execute()` implementations with real HTTP
+integrations while preserving ProviderRuntime selection/fallback/security.
+
+- **Modules:** `services/provider_runtime/connectors/`, registry/cache/secrets/versioning enhancements
+- **See:** `PROVIDER_CONNECTORS.md`
+
+### Agent 20: Studio UI & Creative Workspace — LANDED
+
+Primary user interface for Generational. Display-only Streamlit surface over
+`services/studio/`. Production runs route **Studio → Workflow Executor →
+Orchestrator** (never engines or vendor SDKs directly). Provider health/cost
+via ProviderRuntime.
+
+- **Modules:** `ui/tabs/studio.py`, `ui/studio/`, `services/studio/`
+- **See:** `STUDIO_UI.md`
+
 ### Agent 21: End-to-End Workflow Executor — LANDED
 
 Durable production-run controller — one user prompt becomes a managed
@@ -186,6 +205,17 @@ Orchestrator or call provider APIs directly.
 - **Modules:** `services/workflow_executor/`
 - **See:** `WORKFLOW_EXECUTOR.md`
 
+### Agent 23: Autonomous Production Executor — LANDED
+
+Project manager for complete media productions — one user request becomes a
+`ProductionJob` with production modes, scheduling, checkpoints, pause/resume,
+long-form chapters, parallel units, cost/runtime estimates, and quality
+scoring. Drives WorkflowExecutor → Orchestrator; never calls engines or
+providers directly.
+
+- **Modules:** `services/autonomous_production/`
+- **See:** `AUTONOMOUS_PRODUCTION_EXECUTOR.md`
+
 ### Agent 7: Quality Assurance Engine
 
 The last gate before the outside world. Checks rendered output against the plan: hook lands in the first seconds, audio/visual sync, subtitle accuracy, platform policy compliance, citation integrity, and overall craft. Rejects with actionable revision notes rather than a bare pass/fail.
@@ -193,12 +223,18 @@ The last gate before the outside world. Checks rendered output against the plan:
 - **Owns:** quality gates, critique, revision routing
 - **Modules:** `engines/quality.py`, `engines/critic.py`, `engines/revision.py`, `engines/citation.py`
 
-### Agent 8: Publishing & Platform Engine — LANDED (mock providers)
+### Agent 8: Publishing & Platform Engine — LANDED (real connectors + mock fallback)
 
-Gets content live. Manages platform accounts per channel (placeholder accounts — no real credentials), formats metadata (title, description, hashtags, thumbnail) per platform through provider adapters (YouTube Shorts, Instagram Reels, Facebook Reels, TikTok, X, LinkedIn, Pinterest — all mock today), schedules into optimal posting windows with timezone awareness, and runs the publish queue with exponential-backoff retries, full attempt history, and status tracking. Real platform APIs swap in one adapter at a time behind `PublishingProvider`.
+Gets content live. Manages platform accounts per channel, formats metadata per
+platform through provider adapters (YouTube Shorts, Instagram Reels, Facebook
+Reels, TikTok, X, LinkedIn, Pinterest). When OAuth/access tokens are set,
+adapters route publish attempts through ProviderRuntime connectors; otherwise
+the deterministic mock path remains. Schedules into optimal posting windows
+with timezone awareness, and runs the publish queue with exponential-backoff
+retries, full attempt history, and status tracking.
 
-- **Owns:** platform accounts (placeholders), metadata formatting, scheduling, publish queue, retries, publish history
-- **Modules:** `engines/publishing/` (engine, scheduler_engine), `services/publishing/` (manager, queue, scheduler, retry, package, accounts, extensions), `providers/publishing/` + `providers/publishing_provider.py`; legacy pre-render queue: `engines/publishing_queue.py`
+- **Owns:** platform accounts, metadata formatting, scheduling, publish queue, retries, publish history
+- **Modules:** `engines/publishing/` (engine, scheduler_engine), `services/publishing/` (manager, queue, scheduler, retry, package, accounts, extensions), `providers/publishing/` + `providers/publishing_provider.py` + ProviderRuntime publishing connectors; legacy pre-render queue: `engines/publishing_queue.py`
 
 ### Agent 9: Analytics & Learning Engine
 
@@ -225,7 +261,10 @@ zones, contract stubs, and orchestrator stages already wired (see
 | Agent 18 | AI Director — **LANDED** (live stage) | `engines/ai_director.py` + `services/ai_director/` | `ai_director` |
 | Agent 17 | Post-Production & Intelligent Editing — **LANDED** (mock providers, live stage) | `engines/post_production.py` + `services/post_production/` + `providers/post_production/` | `post_production` |
 | Agent 19 | Provider Integration & Runtime — **LANDED** | `services/provider_runtime/` | service layer (not a stage) |
+| Agent 22 | Real Provider Connectors — **LANDED** | `services/provider_runtime/connectors/` | service layer (not a stage) |
+| Agent 20 | Studio UI & Creative Workspace — **LANDED** | `services/studio/` + `ui/tabs/studio.py` | service + UI (not a stage) |
 | Agent 21 | End-to-End Workflow Executor — **LANDED** | `services/workflow_executor/` | service layer (not a stage) |
+| Agent 23 | Autonomous Production Executor — **LANDED** | `services/autonomous_production/` | service layer (not a stage) |
 
 Future engines subclass `ContractEngine` (`engines/contracts.py`) and fill
 their slot in the canonical `ContentPackage` (`DATA_CONTRACTS.md`). Their

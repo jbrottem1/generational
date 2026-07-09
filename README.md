@@ -4,6 +4,32 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.14 — Real Provider Connectors (Agent 22)
+
+Production HTTP connectors for text, image, video, voice, music abstraction,
+and publishing — all routed through `ProviderRuntime` (never bypassing the
+Orchestrator). Includes auth, retries, rate limits, fallback, caching, cost
+tracking, encrypted secrets, version pins, and registry health/priority.
+
+```python
+from services.provider_runtime import get_provider_runtime
+
+runtime = get_provider_runtime()
+runtime.generate_image({"prompt": "sunset over mountains"})
+runtime.generate_voice({"text": "Hello from Generational"})
+runtime.publish({"package": {"title": "My Short"}})
+```
+
+See [`PROVIDER_CONNECTORS.md`](PROVIDER_CONNECTORS.md). `APP_VERSION = 9.14.0`.
+
+## Version 9.13 — Agents 20/21 Integration (Agent 1)
+
+Studio production now routes through the Workflow Executor (Agent 21) into the
+Orchestrator. Canonical flow: User Prompt → Studio → Workflow Executor →
+Orchestrator → ProviderRuntime/Engines → packages → post_production → render →
+publishing → analytics → learning. Architecture tests enforce the seam.
+`APP_VERSION = 9.13.0`.
+
 ## Version 9.12 — Creative Studio UI (Agent 20)
 
 Primary interface for the Generational platform — project workspace, creative

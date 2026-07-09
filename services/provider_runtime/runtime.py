@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from services.provider_runtime import capabilities as cap
 from services.provider_runtime.adapter import ProviderAdapter
+from services.provider_runtime.cache import ProviderCache
 from services.provider_runtime.config import load_dotenv_if_available, load_runtime_config
 from services.provider_runtime.cost import ProviderCostEstimator
 from services.provider_runtime.execution import RateLimiter, execute_with_retry
@@ -11,8 +12,15 @@ from services.provider_runtime.fallback import ProviderFallbackManager
 from services.provider_runtime.health import ProviderHealthMonitor
 from services.provider_runtime.models import ProviderRequest, ProviderResponse
 from services.provider_runtime.parallel import ParallelExecutor
-from services.provider_runtime.registry import ensure_registered, provider_catalog
+from services.provider_runtime.registry import (
+    capability_lookup,
+    ensure_registered,
+    provider_catalog,
+    record_health_score,
+)
+from services.provider_runtime.secrets import SecretManager
 from services.provider_runtime.selection import ProviderSelectionEngine
+from services.provider_runtime.versioning import VersionManager
 
 
 class ProviderRuntime:
@@ -30,6 +38,17 @@ class ProviderRuntime:
         load_dotenv_if_available()
         self._config = config or load_runtime_config()
         self._credential_overrides = credential_overrides or {}
+        self._secrets = SecretManager(overrides=self._credential_overrides)
+        # Sync secret-manager values into overrides so adapters see them.
+        for key in ("OPENAI_API_KEY", "ANTHROPIC_API_KEY", "GOOGLE_API_KEY"):
+            val = self._secrets.get(key)
+            if val and key not in self._credential_overrides:
+                self._credential_overrides[key] = val
+        self._versions = VersionManager(self._config.get("versions"))
+        self._cache = ProviderCache(
+            ttl_sec=float(self._config.get("cache_ttl_sec", 3600)),
+            enabled=bool(self._config.get("cache_enabled", True)),
+        )
         self._selector = ProviderSelectionEngine()
         self._fallback = ProviderFallbackManager(self._selector)
         self._health = ProviderHealthMonitor(
@@ -48,6 +67,8 @@ class ProviderRuntime:
         for provider in all_providers():
             if hasattr(provider, "set_credential_overrides"):
                 provider.set_credential_overrides(self._credential_overrides)
+            if hasattr(provider, "_version_manager"):
+                provider._version_manager = self._versions
 
     # ------------------------------------------------------- public API
 
@@ -84,6 +105,9 @@ class ProviderRuntime:
     def generate_metadata(self, payload: dict, **kwargs) -> ProviderResponse:
         return self._execute("generate_metadata", cap.METADATA, payload, **kwargs)
 
+    def publish(self, payload: dict, **kwargs) -> ProviderResponse:
+        return self._execute("publish", cap.PUBLISH, payload, **kwargs)
+
     def execute(self, request: ProviderRequest) -> ProviderResponse:
         """Low-level entry for custom operations."""
         capability = request.capability or cap.OPERATION_CAPABILITIES.get(request.operation, (cap.LLM,))[0]
@@ -93,10 +117,54 @@ class ProviderRuntime:
         return provider_catalog()
 
     def health_report(self) -> dict:
-        return self._health.health_report()
+        report = self._health.health_report()
+        # Enrich with live adapter health checks / scores.
+        from services.provider_runtime.registry import all_providers
+
+        for provider in all_providers():
+            entry = report.setdefault(provider.name, {})
+            try:
+                probe = provider.health_check()
+                entry["probe"] = probe
+                score = 100.0 if probe.get("healthy") else 0.0
+                if entry.get("circuit_open"):
+                    score = 0.0
+                record_health_score(provider.name, score)
+                entry["health_score"] = score
+            except Exception as exc:  # noqa: BLE001
+                entry["probe_error"] = str(exc)
+                record_health_score(provider.name, 0.0)
+        return report
 
     def usage_summary(self) -> dict:
         return self._cost.usage_summary()
+
+    def cache_stats(self) -> dict:
+        return self._cache.stats()
+
+    def versions(self) -> list[dict]:
+        return self._versions.catalog()
+
+    def secrets_status(self) -> dict:
+        return self._secrets.describe()
+
+    def capability_lookup(self, capability: str) -> list[dict]:
+        return capability_lookup(capability)
+
+    def best_provider(self, capability: str) -> "ProviderAdapter | None":
+        return self._selector.best(capability)
+
+    def cheapest_provider(self, capability: str) -> "ProviderAdapter | None":
+        return self._selector.cheapest(capability)
+
+    def fastest_provider(self, capability: str) -> "ProviderAdapter | None":
+        return self._selector.fastest(capability)
+
+    def highest_quality_provider(self, capability: str) -> "ProviderAdapter | None":
+        return self._selector.highest_quality(capability)
+
+    def fallback_provider(self, capability: str, exclude: str = "") -> "ProviderAdapter | None":
+        return self._selector.fallback_provider(capability, exclude=exclude)
 
     # ------------------------------------------------------- internals
 
@@ -113,6 +181,11 @@ class ProviderRuntime:
             payload=payload,
             **kwargs,
         )
+
+        cached = self._cache.get(request)
+        if cached is not None:
+            self._cost.log_usage(cached)
+            return cached
 
         if request.parallel_candidates > 1:
             response = self._parallel.execute_parallel(
@@ -132,6 +205,8 @@ class ProviderRuntime:
             else:
                 response = self._invoke_with_retry(provider, request)
 
+        if response.success:
+            self._cache.put(request, response)
         self._cost.log_usage(response)
         return response
 
@@ -150,8 +225,10 @@ class ProviderRuntime:
         response = execute_with_retry(provider, request, self._invoke_provider, self._rate_limiter)
         if response.success:
             self._health.record_success(provider.name)
+            record_health_score(provider.name, min(100.0, health_score_bump(provider.name, +10)))
         else:
             self._health.record_failure(provider.name, response.error)
+            record_health_score(provider.name, max(0.0, health_score_bump(provider.name, -20)))
         return response
 
     @staticmethod
@@ -168,6 +245,12 @@ class ProviderRuntime:
             "allow_fallback": request.allow_fallback,
             "parallel_candidates": request.parallel_candidates,
         }
+
+
+def health_score_bump(name: str, delta: float) -> float:
+    from services.provider_runtime.registry import health_score
+
+    return health_score(name) + delta
 
 
 _runtime: "ProviderRuntime | None" = None

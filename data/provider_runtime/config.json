@@ -1,0 +1,17 @@
+{
+  "rate_limit_rpm": 60,
+  "failure_threshold": 5,
+  "recovery_timeout_sec": 60,
+  "cache_enabled": true,
+  "cache_ttl_sec": 3600,
+  "versions": {
+    "openai": {"model": "gpt-4o-mini", "api_version": "v1"},
+    "anthropic": {"model": "claude-3-5-sonnet-20241022", "api_version": "2023-06-01"},
+    "google_gemini": {"model": "gemini-1.5-flash", "api_version": "v1beta"}
+  },
+  "providers": {
+    "openai": {"priority": 10},
+    "anthropic": {"priority": 9},
+    "demo": {"priority": 0}
+  }
+}

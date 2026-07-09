@@ -67,28 +67,35 @@ runtime.usage_summary()    # cost + call counts
 
 ---
 
-## Supported providers (adapter stubs)
+## Supported providers
 
-| Provider | Key | Capabilities | Env var |
-|---|---|---|---|
-| OpenAI | `openai` | LLM, script, image | `OPENAI_API_KEY` |
-| Anthropic | `anthropic` | LLM, reasoning | `ANTHROPIC_API_KEY` |
-| Google Gemini | `google_gemini` | LLM, image | `GOOGLE_API_KEY` |
-| Google Veo | `google_veo` | Video, animation | `GOOGLE_API_KEY` |
-| Runway | `runway` | Video, animation, lip sync | `RUNWAY_API_KEY` |
-| ElevenLabs | `elevenlabs` | Speech, voice clone, SFX, music | `ELEVENLABS_API_KEY` |
-| Flux | `flux` | Image generation | `BFL_API_KEY` |
-| Ideogram | `ideogram` | Image, thumbnail | `IDEOGRAM_API_KEY` |
-| Pika | `pika` | Video, animation | `PIKA_API_KEY` |
-| Kling | `kling` | Video, animation | `KLING_API_KEY` |
-| Luma | `luma` | Video, 3D | `LUMA_API_KEY` |
-| Stability AI | `stability_ai` | Image, upscaling | `STABILITY_API_KEY` |
-| Replicate | `replicate` | Image, video, upscaling | `REPLICATE_API_TOKEN` |
-| Fal.ai | `fal_ai` | Image, video, lip sync | `FAL_KEY` |
-| ComfyUI | `comfyui` | Local image/video | `COMFYUI_ENDPOINT` |
-| Ollama | `ollama` | Local LLM | `OLLAMA_HOST` |
-| Local LLM | `local_llm` | Local LLM | `LOCAL_LLM_ENDPOINT` |
-| Demo | `demo` | All (deterministic fallback) | — |
+Production connectors (Agent 22) implement real HTTP `execute()` paths.
+See `PROVIDER_CONNECTORS.md` for the full catalog, auth, and remaining work.
+
+| Provider | Key | Capabilities | Env var | Status |
+|---|---|---|---|---|
+| OpenAI | `openai` | LLM, script, image | `OPENAI_API_KEY` | Production |
+| OpenAI Images | `openai_images` | Image, thumbnail | `OPENAI_API_KEY` | Production |
+| OpenAI TTS | `openai_tts` | Speech | `OPENAI_API_KEY` | Production |
+| Anthropic | `anthropic` | LLM, reasoning | `ANTHROPIC_API_KEY` | Production |
+| Google Gemini | `google_gemini` | LLM, image | `GOOGLE_API_KEY` | Production |
+| Google Veo | `google_veo` | Video, animation | `GOOGLE_API_KEY` | Production |
+| Runway | `runway` | Video, animation, lip sync | `RUNWAY_API_KEY` | Production |
+| ElevenLabs | `elevenlabs` | Speech, voice clone, SFX, music | `ELEVENLABS_API_KEY` | Production |
+| Flux | `flux` | Image generation | `BFL_API_KEY` | Production |
+| Ideogram | `ideogram` | Image, thumbnail | `IDEOGRAM_API_KEY` | Production |
+| Pika | `pika` | Video, animation | `PIKA_API_KEY` | Production |
+| Kling | `kling` | Video, animation | `KLING_API_KEY` | Production |
+| Luma | `luma` | Video, 3D | `LUMA_API_KEY` | Production |
+| Stability AI | `stability_ai` | Image, upscaling | `STABILITY_API_KEY` | Production |
+| YouTube / TikTok / IG / FB / X | `youtube`… | Publish | platform tokens | Production |
+| Future Music | `music_future` | Music | `MUSIC_PROVIDER_*` | Partial |
+| Replicate | `replicate` | Image, video, upscaling | `REPLICATE_API_TOKEN` | Stub |
+| Fal.ai | `fal_ai` | Image, video, lip sync | `FAL_KEY` | Stub |
+| ComfyUI | `comfyui` | Local image/video | `COMFYUI_ENDPOINT` | Stub |
+| Ollama | `ollama` | Local LLM | `OLLAMA_HOST` | Stub |
+| Local LLM | `local_llm` | Local LLM | `LOCAL_LLM_ENDPOINT` | Stub |
+| Demo | `demo` | All (deterministic fallback) | — | Always |
 
 Legacy adapters from `providers/asset_generation/` are bridged automatically.
 
@@ -101,9 +108,10 @@ Priority order:
 1. Runtime credential overrides (`ProviderRuntime(credential_overrides={...})`)
 2. Environment variables
 3. `.env` file (via `python-dotenv` at startup)
-4. Optional JSON config (`PROVIDER_CONFIG_PATH` or `data/provider_runtime/config.json`)
+4. Encrypted secrets (`PROVIDER_SECRETS_PATH` + `PROVIDER_SECRETS_PASSPHRASE`)
+5. Optional JSON config (`PROVIDER_CONFIG_PATH` or `data/provider_runtime/config.json`)
 
-**Never hardcode API keys.**
+**Never hardcode API keys.** See `PROVIDER_CONNECTORS.md` for rotation helpers.
 
 ---
 
