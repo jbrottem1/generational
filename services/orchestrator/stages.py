@@ -46,12 +46,13 @@ STAGE_GROUPS: "dict[str, list[str]]" = {
     "visual": ["visual_intelligence"],
     "audio": ["voice_audio"],
     "quality": ["quality"],
-    # Post-quality media generation & distribution (Agents 6-17).
-    # Ownership: creative → Agent 12 · character_universe → Agent 15 ·
-    # asset_generation → Agent 14 · animation → Agent 16 · render → Agent 6 ·
-    # post_production → Agent 17 · seo → Agent 8 · optimization → Agent 13 ·
-    # publish → Agent 7 · analytics/learning → Agent 10 · brand → Agent 10.
-    # Agent 18 (ai_director) inserts before creative when its branch merges.
+    # Post-quality media generation & distribution (Agents 6-18).
+    # Ownership: ai_director → Agent 18 · creative → Agent 12 ·
+    # character_universe → Agent 15 · asset_generation → Agent 14 ·
+    # animation → Agent 16 · render → Agent 6 · post_production → Agent 17 ·
+    # seo → Agent 8 · optimization → Agent 13 · publish → Agent 7 ·
+    # analytics/learning → Agent 10 · brand → Agent 10.
+    "ai_director": ["ai_director"],
     "creative": ["creative_studio"],
     "character_universe": ["character_universe"],
     "asset_generation": ["asset_generation"],
@@ -67,12 +68,13 @@ STAGE_GROUPS: "dict[str, list[str]]" = {
 }
 
 # Post-packaging distribution stages executed by the full production
-# pipeline. Preferred media-generation order (v9.7 architecture review):
-# Creative → Character/Universe → Asset Generation → Animation → Render →
-# Post-Production → SEO → Optimization Lab → Publishing.
+# pipeline. Preferred media-generation order (v9.9 architecture review):
+# AI Director → Creative → Character/Universe → Asset Generation →
+# Animation → Render → Post-Production → SEO → Optimization Lab → Publishing.
 # Unavailable engines skip with warnings — never a crash. Agents 13/15/16
 # are FutureEngine stubs until their feature branches merge.
 DISTRIBUTION_STAGES: "tuple[str, ...]" = (
+    "ai_director",
     "creative",
     "character_universe",
     "asset_generation",

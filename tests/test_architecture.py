@@ -165,11 +165,12 @@ def test_orchestrator_controls_execution_and_package_flow(tmp_path, monkeypatch)
     assert executed[0] == "trend"
     assert "quality" in executed
     # The integrated production pipeline ends with the distribution stages:
-    # packaging → creative → character_universe → asset_generation →
+    # packaging → ai_director → creative → character_universe → asset_generation →
     # animation → render → post_production → seo → optimization → publish.
     # Stubs (character_universe, animation, optimization) skip with WARNING.
-    assert executed[-10:] == [
+    assert executed[-11:] == [
         "packaging",
+        "ai_director",
         "creative",
         "character_universe",
         "asset_generation",
@@ -213,7 +214,7 @@ def test_missing_engine_degrades_gracefully_not_fatally():
 
 def test_future_stages_remain_wired_and_safe():
     for stage in (
-        "creative", "character_universe", "asset_generation", "animation",
+        "ai_director", "creative", "character_universe", "asset_generation", "animation",
         "render", "post_production", "seo", "optimization", "publish",
         "analytics", "learning", "brand_management",
     ):

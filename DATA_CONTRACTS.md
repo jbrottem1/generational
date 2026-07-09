@@ -31,7 +31,6 @@ list is `CONTENT_PACKAGE_FIELDS`.
 | `analytics_placeholder` / `analytics_package` | dict | **Agent 9** |
 | `learning_metadata` | dict | **Agent 9** |
 | `director_package` | dict | **Agent 18** (executive creative strategy, orchestration notes) |
-| `director_package` | dict | **Agent 18** (AI Director notes — reserved; engine not yet merged) |
 | `creative_package` | dict | **Agent 12** (storyboards, shot lists, style, characters, environments) |
 | `character_universe_package` | dict | **Agent 15** (cast, universes, continuity, story bible — stub until merge) |
 | `asset_package` | dict | **Agent 14** (generated assets, jobs, cache report, readiness) |

@@ -8,6 +8,7 @@ subclass and register an instance below.
 from __future__ import annotations
 
 from engines import registry
+from engines.ai_director import AiDirectorEngine
 from engines.analytics import AnalyticsEngine
 from engines.asset_manager import AssetManagerEngine
 from engines.attention_graph import AttentionGraphEngine
@@ -62,6 +63,7 @@ for _engine_class in (
     OpportunityRankingEngine,
     TrendForecastingEngine,
     MarketIntelligenceEngine,
+    AiDirectorEngine,
     AssetGenerationEngine,
     CreativeStudioEngine,
     PostProductionEngine,

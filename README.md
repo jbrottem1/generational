@@ -13,11 +13,11 @@ Post-integration architecture audit. Full report:
 ### Preferred distribution pipeline wired
 
 ```
-packaging → creative → character_universe → asset_generation → animation
+packaging → ai_director → creative → character_universe → asset_generation → animation
          → render → post_production → seo → optimization → publish
 ```
 
-Creative Studio (12), Asset Generation (14), and Post-Production (17) are
+AI Director (18), Creative Studio (12), Asset Generation (14), and Post-Production (17) are
 **LIVE**. Optimization Lab (13), Character/Universe (15), and Animation (16)
 are registered as `FutureEngine` stubs so their stages exist and skip
 cleanly until their feature worktrees merge. Package slots reserved:

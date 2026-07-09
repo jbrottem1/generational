@@ -136,6 +136,22 @@ The generation department. Consumes Creative Studio asset requirements (or fallb
 - **Modules:** `engines/asset_generation.py`, `services/asset_generation/`, `providers/generation_provider.py` + `providers/asset_generation/`
 - **See:** `ASSET_GENERATION_ENGINE.md`
 
+### Agent 18: AI Director & Executive Creative Decision Engine — LANDED
+
+The executive creative department. Consumes intelligence from Psychology,
+Script, Visual Intelligence, Voice, Trend, Market, and Analytics and
+determines the optimal production strategy before assets are generated.
+Produces structured `director_package` briefs with production strategy,
+platform targets, creative/visual/animation style, camera plan, pacing,
+shot plan, character/music/narration/editing direction, optimization hints,
+asset requirements, quality targets, and orchestration notes for Agents
+12–17. Configurable decision policies with a reinforcement-learning
+feedback hook. Never generates media or mutates other agents' slots.
+
+- **Owns:** executive creative direction, production strategy, platform/format selection, conflict detection, graceful degradation, orchestration notes
+- **Modules:** `engines/ai_director.py`, `services/ai_director/`
+- **See:** `AI_DIRECTOR.md`
+
 ### Agent 17: Post-Production & Intelligent Editing Engine — LANDED (mock providers)
 
 The editing department. Consumes completed render packages (timeline, caption
@@ -186,6 +202,7 @@ zones, contract stubs, and orchestrator stages already wired (see
 | Agent 9 | Analytics & Learning | `engines/analytics/` | `analytics` · `learning` |
 | Agent 10 | Multi-Brand Operating System | `engines/brands/` | `brand_management` |
 | Agent 14 | Universal Asset Generation — **LANDED** (mock providers, live stage) | `engines/asset_generation.py` + `services/asset_generation/` + `providers/asset_generation/` | `asset_generation` |
+| Agent 18 | AI Director — **LANDED** (live stage) | `engines/ai_director.py` + `services/ai_director/` | `ai_director` |
 | Agent 17 | Post-Production & Intelligent Editing — **LANDED** (mock providers, live stage) | `engines/post_production.py` + `services/post_production/` + `providers/post_production/` | `post_production` |
 
 Future engines subclass `ContractEngine` (`engines/contracts.py`) and fill
