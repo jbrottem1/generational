@@ -11,6 +11,42 @@ def hashtags_text(hashtags) -> str:
     return str(hashtags or "—")
 
 
+def attention_radar_chart(attention: dict) -> None:
+    """Render the 12-dimension Attention Graph as a radar/spider chart.
+
+    Falls back to a plain score list if plotly isn't installed, so the
+    Ideas tab never breaks over an optional charting dependency.
+    """
+    radar = attention.get("radar_chart", {})
+    labels = radar.get("labels", [])
+    scores = radar.get("scores", [])
+    if not labels or not scores:
+        return
+
+    try:
+        import plotly.graph_objects as go
+    except ImportError:
+        for label, score in zip(labels, scores):
+            st.caption(f"· {label}: {score}")
+        return
+
+    fig = go.Figure(
+        data=go.Scatterpolar(
+            r=scores + scores[:1],
+            theta=labels + labels[:1],
+            fill="toself",
+            name="Attention Graph",
+        )
+    )
+    fig.update_layout(
+        polar=dict(radialaxis=dict(visible=True, range=[0, 100])),
+        showlegend=False,
+        margin=dict(l=30, r=30, t=20, b=20),
+        height=360,
+    )
+    st.plotly_chart(fig, use_container_width=True)
+
+
 def idea_card(index: int, idea: dict) -> None:
     """Expandable card showing the full content package for one idea."""
     title = idea.get("title", f"Idea #{index}")
@@ -56,6 +92,18 @@ def idea_card(index: int, idea: dict) -> None:
                     st.markdown("**⚠️ Weakest Levers**")
                     for item in report.get("weaknesses", []):
                         st.caption(f"· {item['dimension']} ({item['score']}) — {item['note']}")
+
+        attention = idea.get("attention_graph")
+        if attention:
+            with st.expander(f"🕸️ Attention Graph · {attention.get('attention_score', 0)}/100"):
+                attention_radar_chart(attention)
+                st.markdown("**🎯 Recommendations to raise each score**")
+                scores = attention.get("scores", {})
+                recommendations = attention.get("recommendations", {})
+                labels = dict(zip(scores.keys(), attention.get("radar_chart", {}).get("labels", [])))
+                for key in sorted(scores, key=lambda k: scores[k]):
+                    label = labels.get(key, key.replace("_", " ").title())
+                    st.caption(f"· **{label}** ({scores[key]}) — {recommendations.get(key, '')}")
 
         critique = idea.get("critique")
         if critique is not None:

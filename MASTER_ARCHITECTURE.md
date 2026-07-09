@@ -617,6 +617,7 @@ The Streamlit UI is intentionally stable across versions. Major releases add **c
 | **v7.0** | Trend Discovery Engine | Auto-discovered trend provider registry, universal Trend model, 11-factor Opportunity Scoring, pipeline front door, Trend Dashboard |
 | **v7.1** | Psychology & Virality Engine | 18-dimension attention scoring, weighted ViralScore, per-idea psychology report, virality-aware Quality Gate |
 | **v7.2** | Script Generation Engine | Multi-variant multi-style scripts for 6 platforms, 13 storytelling components per script, 6-factor variant scoring, runs immediately after Psychology, script quality feeds ranking |
+| **v7.3** | Attention Graph (Attention Intelligence) | 12-dimension attention scoring, weighted Attention Score, radar-chart payload + Plotly visualization, per-dimension recommendations, runs after Script Generation and before Ranking |
 
 *(v3.0 was skipped in release numbering.)*
 
@@ -679,6 +680,7 @@ python -m pytest
 | `tests/test_psychology_engine.py` | Psychology & Virality Engine — 18 dimensions, ViralScore weights, determinism, report shape, pipeline integration |
 | `tests/test_citation_engine.py` | Citation engine + multi-factor quality gate |
 | `tests/test_script_generation.py` | Script Engine — platform specs, 13-component variants, deterministic scoring, pipeline position, ranking blend, fallback behavior |
+| `tests/test_attention_graph.py` | Attention Graph Engine — 12 dimensions, weight normalization, determinism, radar chart shape, recommendations, pipeline integration |
 | `tests/test_trend_discovery.py` | Trend provider auto-discovery, universal model, opportunity scoring, pipeline integration |
 | `tests/test_media_production.py` | Production pipeline and dashboard |
 | `tests/test_providers.py` | Voice provider factory |
@@ -705,7 +707,7 @@ python -m pytest
 
 ### Current Baseline
 
-**117 tests passing** (as of v7.2.0).
+**132 tests passing** (as of v7.3.0).
 
 ---
 
@@ -859,14 +861,14 @@ generational/
 │   ├── scripts/                    # Script Generation (models, platforms, generator, scorer)
 │   ├── assets.py · voice_profiles.py
 │   ├── knowledge.py · channels.py · pipeline.py
-├── engines/                        # 21 live + 6 planned pipeline plugins
+├── engines/                        # 22 live + 6 planned pipeline plugins
 ├── providers/                      # Swappable external backends
 │   └── trend_sources/              # Auto-discovered trend providers
 ├── ui/                             # Streamlit presentation
-├── tests/                          # 117 unit/integration tests
+├── tests/                          # 132 unit/integration tests
 └── data/                           # Runtime persistence (gitignored)
 ```
 
 ---
 
-*Last updated: v7.2.0 — Script Generation Engine*
+*Last updated: v7.3.0 — Attention Graph (Attention Intelligence)*

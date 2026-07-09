@@ -71,6 +71,27 @@ IDENTITY_WORDS = [
     "as a", "you know you", "type of person", "kind of person",
 ]
 
+# Word/phrase banks for the Attention Graph (engines/attention_graph.py, Phase 2).
+STORY_TENSION_WORDS = [
+    "but then", "until", "suddenly", "everything changed", "right before",
+    "at the last moment", "just when", "then it all", "the moment",
+    "unravels", "unfolds", "turns into", "spiraled",
+]
+
+# "Dopenness" = how quickly and openly the concept opens an anticipatory
+# reward loop for a broad audience — an easy, low-jargon promise of payoff.
+DOPENNESS_WORDS = [
+    "what if", "here's what happens", "let's see", "watch what happens",
+    "here's the twist", "guess what", "wait for it", "keep watching",
+    "you'll want to see this", "here's why",
+]
+
+VISUAL_NOVELTY_WORDS = [
+    "transform", "before and after", "time-lapse", "close-up", "zoom in",
+    "slow motion", "unbelievable footage", "watch this happen",
+    "visual proof", "side by side",
+]
+
 STOPWORDS = {
     "the", "a", "an", "and", "or", "but", "about", "your", "you", "this",
     "that", "with", "for", "from", "into", "what", "when", "how", "why",
