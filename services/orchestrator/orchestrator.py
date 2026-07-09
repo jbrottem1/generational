@@ -409,3 +409,11 @@ def ensure_orchestrator_handler(queue) -> None:
     """Register the orchestrator job handler on a queue (idempotent)."""
     if not queue.has_handler(ORCHESTRATOR_JOB_TYPE):
         queue.register_handler(ORCHESTRATOR_JOB_TYPE, _run_pipeline_job)
+
+
+def ensure_runtime_handlers(queue) -> None:
+    """Register orchestrator + long-form runtime handlers (idempotent)."""
+    ensure_orchestrator_handler(queue)
+    from services.provider_runtime.longform import ensure_longform_handler
+
+    ensure_longform_handler(queue)

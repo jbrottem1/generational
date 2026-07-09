@@ -115,3 +115,13 @@ stub) graduates later as an audio-stage upgrade — not a distribution stage.
 | analytics | analytics | live | **Agent 10** |
 | learning | learning | live | **Agent 10** |
 | brand_management | brand_management | stub | Brand OS |
+
+---
+
+## Provider Runtime Layer (Agent 19)
+
+All stages that call external AI services route through
+`services/provider_runtime/` (`ProviderRuntime.generate_*()`). The runtime
+selects providers by capability, handles fallback/retries, and logs usage.
+Long-form productions use `RuntimeExecutionEngine` with checkpoint resume.
+See `PROVIDER_INTEGRATION.md`.

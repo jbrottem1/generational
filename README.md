@@ -4,6 +4,21 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.10 — Provider Integration & Runtime Engine (Agent 19)
+
+Unified provider abstraction layer — every engine can call real AI services
+without knowing which vendor serves the request.
+
+```python
+from services.provider_runtime import get_provider_runtime
+
+runtime = get_provider_runtime()
+result = runtime.generate_image({"prompt": "cinematic sunset"})
+result = runtime.generate_script({"prompt": "Write a 60-second psychology short"})
+```
+
+See [`PROVIDER_INTEGRATION.md`](PROVIDER_INTEGRATION.md).
+
 ## Version 9.9 — Architecture Review after Agents 12–17 (Agent 1)
 
 Post-integration architecture audit. Full report:

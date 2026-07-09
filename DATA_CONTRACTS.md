@@ -407,7 +407,45 @@ mutated. See `POST_PRODUCTION_ENGINE.md`.
 
 ---
 
-## 9. Change protocol
+## 9. Provider Runtime contracts (Agent 19)
+
+The Provider Integration Layer (`services/provider_runtime/`) exposes a
+unified API for all external AI operations. See `PROVIDER_INTEGRATION.md`.
+
+### ProviderRequest fields
+
+| Field | Type | Notes |
+|---|---|---|
+| `operation` | str | e.g. `generate_image`, `generate_script` |
+| `payload` | dict | Operation-specific inputs |
+| `capability` | str | Override auto-detected capability |
+| `preferred_provider` | str | Force a specific provider key |
+| `optimize_for` | str | `quality` / `speed` / `cost` |
+| `timeout_sec` | float | Request timeout |
+| `max_retries` | int | Automatic retry count |
+| `allow_fallback` | bool | Try alternate providers on failure |
+| `parallel_candidates` | int | Run N providers in parallel (0 = single) |
+
+### ProviderResponse fields
+
+| Field | Type | Notes |
+|---|---|---|
+| `success` | bool | Whether operation succeeded |
+| `data` | dict | Provider output (uri, text, metadata) |
+| `provider` | str | Provider key that served the request |
+| `error` | str | Error message when failed |
+| `demo_mode` | bool | True when demo/fallback provider used |
+| `cost_usd` | float | Estimated cost |
+| `latency_ms` | int | End-to-end latency |
+| `fallbacks_used` | list | Providers tried before success |
+
+Long-form checkpoints (`ProductionCheckpoint`) persist to
+`data/provider_runtime/checkpoints/` with `job_id`, `completed_stages`,
+`context_snapshot`, and `status`.
+
+---
+
+## 10. Change protocol
 
 1. Appending a ContentPackage field: add to the dataclass **and**
    `PRODUCTION_PACKAGE_FIELDS`, with a default; get Agent 1 review.

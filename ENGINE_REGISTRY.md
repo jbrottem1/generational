@@ -165,7 +165,8 @@ distribution pipeline after render, before seo. See
 | `optimization_lab` | contract stub (wired in `optimization` stage) | **Agent 13** — merge worktree |
 | `character_universe` | contract stub (wired in `character_universe` stage) | **Agent 15** — merge worktree |
 | `animation` | contract stub (wired in `animation` stage) | **Agent 16** — merge worktree |
-| `business_intelligence` | name reserved | Agent 19 — BI & Monetization |
+| `business_intelligence` | name reserved | Future BI & Monetization |
+| `provider_runtime` | service (Agent 19) | Provider Integration & Runtime — see `PROVIDER_INTEGRATION.md` |
 | `autonomous_executive` | name reserved | Agent 20 — Autonomous Executive |
 
 > Note: the earlier reserved name `ip_management` is **retired** in favor

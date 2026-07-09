@@ -166,6 +166,16 @@ DaVinci, CapCut, Runway) swap in via provider adapters.
 - **Modules:** `engines/post_production.py`, `services/post_production/`, `providers/post_production/`
 - **See:** `POST_PRODUCTION_ENGINE.md`
 
+### Agent 19: Provider Integration & Runtime Engine — LANDED
+
+Unified provider abstraction — every engine calls external AI services through
+`ProviderRuntime` without knowing which vendor serves the request. Includes
+automatic selection, fallback, circuit breakers, cost tracking, parallel
+execution, and checkpointed long-form production jobs.
+
+- **Modules:** `services/provider_runtime/`, bridges to `providers/` and `core/ai/`
+- **See:** `PROVIDER_INTEGRATION.md`
+
 ### Agent 7: Quality Assurance Engine
 
 The last gate before the outside world. Checks rendered output against the plan: hook lands in the first seconds, audio/visual sync, subtitle accuracy, platform policy compliance, citation integrity, and overall craft. Rejects with actionable revision notes rather than a bare pass/fail.
@@ -204,6 +214,7 @@ zones, contract stubs, and orchestrator stages already wired (see
 | Agent 14 | Universal Asset Generation — **LANDED** (mock providers, live stage) | `engines/asset_generation.py` + `services/asset_generation/` + `providers/asset_generation/` | `asset_generation` |
 | Agent 18 | AI Director — **LANDED** (live stage) | `engines/ai_director.py` + `services/ai_director/` | `ai_director` |
 | Agent 17 | Post-Production & Intelligent Editing — **LANDED** (mock providers, live stage) | `engines/post_production.py` + `services/post_production/` + `providers/post_production/` | `post_production` |
+| Agent 19 | Provider Integration & Runtime — **LANDED** | `services/provider_runtime/` | service layer (not a stage) |
 
 Future engines subclass `ContractEngine` (`engines/contracts.py`) and fill
 their slot in the canonical `ContentPackage` (`DATA_CONTRACTS.md`). Their
@@ -357,7 +368,7 @@ src/
     analytics/          # Agent 9a: performance ingestion + attribution
     learning/           # Agent 9b: learning signals + weight updates
   models/               # Core data objects (Section 5) — the stage contracts
-  services/             # Orchestration (services/orchestrator/ — see ORCHESTRATOR.md), pipelines, job queue, provider wiring, storage
+  services/             # Orchestration (services/orchestrator/ — see ORCHESTRATOR.md), provider runtime (services/provider_runtime/), pipelines, job queue, storage
   ui/                   # Streamlit views — display only, zero business logic
   tests/                # Mirrors src/ — one test module per engine minimum
 docs/                   # Architecture docs, decisions, session summaries

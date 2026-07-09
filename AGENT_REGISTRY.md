@@ -50,12 +50,29 @@ Companions: `ENGINE_REGISTRY.md` · `SYSTEM_DEPENDENCY_MAP.md` ·
 
 ---
 
-## 2. Planned Agents (19–20)
+## 2. Active & Completed Agents (continued)
+
+### Infrastructure Department
+
+| Agent | Subsystem | Engine keys | Status |
+|---|---|---|---|
+| **19** | Provider Integration & Runtime | `services/provider_runtime/` | **LIVE** |
+
+---
+
+## 3. Planned Agents (20)
 
 | Agent | Subsystem | Reserved key | Integrates via |
 |---|---|---|---|
-| **19** | BI & Monetization | `business_intelligence` | additive revenue fields on `analytics_package` |
 | **20** | Autonomous Executive | `autonomous_executive` | `OrchestratorHook` + job queue only |
+
+### Agent 19 — Provider Integration & Runtime (LIVE)
+
+| Agent | Subsystem | Key | Integrates via |
+|---|---|---|---|
+| **19** | Provider Integration & Runtime | `provider_runtime` (service) | `ProviderRuntime.generate_*()` + job queue `longform_pipeline` |
+
+Reserved for future BI: `business_intelligence` engine key.
 
 ### Agent 18 — AI Director (LIVE)
 
@@ -74,7 +91,8 @@ Companions: `ENGINE_REGISTRY.md` · `SYSTEM_DEPENDENCY_MAP.md` ·
 | Intelligence | Measure, forecast, learn, experiment | 10–13 |
 | Media Generation | Assets, characters, universes, motion, edit | 14–17 |
 | Direction | AI direction, executive creative strategy | **18** |
-| Executive (planned) | Monetization, autonomous operation | 19–20 |
+| Infrastructure | Provider integration, runtime execution | **19** |
+| Executive (planned) | Autonomous operation | 20 |
 
 ---
 
