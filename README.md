@@ -4,6 +4,27 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.7.1 — Asset Generation Production Hardening (Agent 14 Phase 2)
+
+Production-ready extensions on the Universal Asset Generation Engine —
+no redesign. Provider registry catalog, latency-aware selection, batch
+generation, job-queue interfaces, usage tracking, and structured asset
+metadata. Media classes prepared for animation, audio (SFX / music /
+voice), and motion graphics. Fourteen adapter stubs (OpenAI Images,
+Runway, Flux, Kling, Pika, Luma, Veo, Stable Diffusion, Midjourney
+placeholder, …) — still no live API calls.
+
+```python
+from services.asset_generation import batch_generate, run_generate
+from providers.asset_generation import provider_catalog
+
+batch_generate([request_a, request_b])   # coordinated multi-asset run
+run_generate(request)                    # job-queue submit + sync run
+provider_catalog()                       # [{name, available, latency_ms, ...}]
+```
+
+See `ASSET_GENERATION_ENGINE.md` § Phase 2.
+
 ## Version 9.7 — Universal Asset Generation Engine (Agent 14)
 
 Every visual asset the platform uses now flows through one generation

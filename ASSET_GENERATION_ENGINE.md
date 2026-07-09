@@ -7,7 +7,8 @@ future media asset the platform uses originates here.
 
 **Engine key:** `asset_generation`  
 **Pipeline stage:** `asset_generation` (distribution — runs after packaging, before render)  
-**ContentPackage slot:** `asset_package`
+**ContentPackage slot:** `asset_package`  
+**Engine version:** `1.1.0` (Phase 2 production hardening)
 
 ---
 
@@ -17,6 +18,24 @@ Transform structured creative requests into production-ready assets using
 the best available AI providers. The engine does **not** plan content,
 write scripts, or apply psychology — it consumes upstream outputs and
 generates assets.
+
+---
+
+## Phase 2 — Production Hardening
+
+Phase 2 extends Phase 1 without redesigning the engine:
+
+| Capability | Module | Notes |
+|---|---|---|
+| Provider catalog | `providers/asset_generation/` | `provider_catalog()`, `providers_for_class()`, `providers_by_capability()` |
+| Latency-aware selection | `selection.py` | `latency_ms` in profiles; new `latency` strategy |
+| Retry + fallback | `generator.py` | Per-provider retries; ordered fallback ending in mock |
+| Asset caching | `cache.py` | Content-address fingerprints (unchanged, hardened) |
+| Job queue | `queue.py` | `asset_generate` / `asset_batch` / `asset_package` on `core.jobs` |
+| Batch generation | `batch.py` | `batch_generate()` with optional concurrency |
+| Usage tracking | `usage.py` | Append-only `data/asset_generation/usage.json` |
+| Asset metadata | `metadata.py` | `ASSET_METADATA_FIELDS` on every asset |
+| Extended media | catalog + adapters | `animation`, `audio`, `motion_graphics` prepared |
 
 ---
 
@@ -31,12 +50,13 @@ creative_package                 asset_package                      render_packa
   character_plan                   character_assets
   thumbnail_concepts               thumbnail_assets
                                    video_assets
+                                   audio_assets / animation_assets
 ```
 
 | Layer | Location | Role |
 |---|---|---|
 | Engine | `engines/asset_generation.py` | Thin pipeline adapter (`run(context) → dict`) |
-| Service | `services/asset_generation/` | Prompt compilation, selection, generation, QC, registry |
+| Service | `services/asset_generation/` | Prompt compilation, selection, generation, QC, registry, batch, queue, usage |
 | Providers | `providers/generation_provider.py` + `providers/asset_generation/` | Swappable AI backends |
 
 ---
@@ -47,23 +67,38 @@ Every backend implements `GenerationProvider` (`providers/generation_provider.py
 
 - `supports(asset_class, asset_type)` — coverage declaration
 - `generate(prompt_spec, request)` — returns `{uri, provider, format, width, height, ...}` or `{error}`
-- `profile` — selection signals: quality, cost_per_asset, speed, consistency
+- `profile` — quality, cost_per_asset, speed, consistency, **latency_ms**
+- `describe()` — uniform self-description for the registry catalog
 - `prompt_style` — dialect hints for the Prompt Compiler
 - `offline` / `local` — routing for offline and local-model support
+- `capabilities` — discovery tags (image-gen, video-gen, sfx, …)
 
-**Shipped adapters** (stubs until API keys are configured):
+**Media classes** (additive): `image` · `video` · `three_d` · `animation` · `audio` · `motion_graphics`
 
-OpenAI Images · Google Imagen · Google Veo · Runway · Kling · Luma · Pika ·
-Flux · Stable Diffusion · Midjourney · Adobe Firefly · Local Diffusion
+**Shipped adapters** (stubs until API keys are configured — no live calls):
 
-**Demo Mode:** `MockGenerationProvider` serves every asset class deterministically
-with zero network access — the guaranteed fallback of last resort.
-
-Register or replace backends:
+| Adapter | Classes | Notes |
+|---|---|---|
+| `openai_images` | image | OpenAI gpt-image |
+| `google_imagen` | image | Google Imagen |
+| `flux` | image | Black Forest Labs |
+| `stable_diffusion` | image | Stability API |
+| `midjourney` | image | **Placeholder** — no public API |
+| `adobe_firefly` | image | Adobe Firefly |
+| `google_veo` | video, animation | Google Veo |
+| `runway` | video, animation, motion_graphics | Runway |
+| `kling` | video, animation | Kling |
+| `luma` | video, three_d, animation | Luma Dream Machine |
+| `pika` | video, animation, motion_graphics | Pika |
+| `elevenlabs_audio` | audio | Prepared for SFX / music / voice |
+| `motion_graphics_stub` | motion_graphics | Prepared kinetic-typography backend |
+| `local_diffusion` | image | Offline / local endpoint |
+| `mock_generation` | all | Deterministic Demo Mode fallback |
 
 ```python
-from providers.asset_generation import register_generation_provider
+from providers.asset_generation import register_generation_provider, provider_catalog
 register_generation_provider(MyCustomProvider())
+provider_catalog()   # [{name, available, profile, latency_ms, ...}, ...]
 ```
 
 No engine code changes when a backend swaps in.
@@ -72,24 +107,25 @@ No engine code changes when a backend swaps in.
 
 ## Provider Selection Engine
 
-`services/asset_generation/selection.py` scores candidates deterministically:
+`services/asset_generation/selection.py` scores candidates deterministically
+on **asset type/class**, **quality**, **cost**, **speed**, **consistency**,
+**latency**, and **availability**:
 
 | Strategy | Optimizes for |
 |---|---|
-| `balanced` | Quality + cost + speed + consistency (default) |
+| `balanced` | Quality + cost + speed + consistency + latency (default) |
 | `quality` | Highest output quality |
 | `cost` | Lowest cost per asset |
 | `speed` | Fastest generation |
 | `consistency` | Character/style reproducibility |
+| `latency` | Lowest end-to-end latency |
 
 Output: `{primary, fallbacks, strategy, candidates}` — the fallback chain
 always ends in the offline mock so generation never dead-ends.
 
-Configure via `data/asset_generation/config.json` or runtime:
-
 ```python
 from services.asset_generation import configure
-configure(selection_strategy="quality", max_cost_per_package=10.0)
+configure(selection_strategy="latency", max_cost_per_package=10.0, batch_concurrency=4)
 ```
 
 ---
@@ -99,14 +135,9 @@ configure(selection_strategy="quality", max_cost_per_package=10.0)
 Two-pass, deterministic compilation (`services/asset_generation/prompts.py`):
 
 1. **`compile_prompt(request, item)`** — canonical, provider-agnostic
-   `PROMPT_SPEC_FIELDS` dict: subject, style pack, lighting, camera, mood,
-   emotion, palette, aspect ratio, resolution, character references (verbatim
-   from Creative Studio cast), environment references, brand style, negative prompt.
-
+   `PROMPT_SPEC_FIELDS` dict.
 2. **`optimize_for_provider(spec, provider)`** — rewrites for the target
-   backend's dialect (natural language, tagged, cinematic ordering,
-   parameter suffixes). Provider dialects come from adapters only — never
-   from engine code.
+   backend's dialect. Provider dialects come from adapters only.
 
 ---
 
@@ -115,87 +146,50 @@ Two-pass, deterministic compilation (`services/asset_generation/prompts.py`):
 ```
 Request collection → Safety gate → Cache lookup → Provider selection
   → Prompt compilation → Generation (retries + fallback chain)
-  → Quality analysis → Registry write → AssetPackage assembly
+  → Quality analysis → Metadata → Registry write → Usage event
+  → AssetPackage assembly
 ```
-
-### Request sources
-
-1. **Creative Studio** — `creative_package.asset_requirements` + thumbnail concepts
-2. **Fallback** — `scene_breakdown` + title/hook when no creative package exists
-
-### Asset Registry
-
-`services/asset_generation/registry.py` — JSON store at `data/asset_generation/`:
-
-- **Assets** — one entry per `asset_id` with append-only version history
-- **Generation jobs** — auditable record of every attempt
-- **Collections** — named groups (brand libraries, character packs)
-- **Fingerprint index** — content-address → asset_id for cache and duplicate detection
 
 ### Cache
 
-`services/asset_generation/cache.py` — provider-agnostic content addressing.
-Identical requests never generate twice; cache hits return `AssetStatus.CACHED`
-with zero generation cost.
+Content-address fingerprints — identical requests never generate twice.
+
+### Metadata
+
+Every asset carries `ASSET_METADATA_FIELDS`: title, description, tags,
+brand_id, style, character_ids, source, license, mime_type, file_size_bytes, extra.
+
+### Usage tracking
+
+Append-only events in `data/asset_generation/usage.json`. Packages include
+a `usage_report` summary.
+
+---
+
+## Batch Generation & Job Queue
+
+```python
+from services.asset_generation import batch_generate, submit_generate, run_generate
+
+batch_generate([req_a, req_b, req_c])
+run_generate(request)          # submit + sync execute
+submit_generate(request)       # enqueue only
+submit_batch(requests)
+submit_package(item)
+```
+
+Job types: `asset_generate` · `asset_batch` · `asset_package`.
 
 ---
 
 ## Supported Asset Types
 
-40+ catalog types in `services/asset_generation/catalog.py`:
-
-**Images:** illustration, photorealistic, concept art, character sheets,
-expressions, poses, environment art, props, vehicles, architecture, icons,
-logos, infographics, charts, maps, backgrounds, textures, thumbnails,
-storyboard frames, scene images, marketing graphics, branding assets.
-
-**Video:** clips, cinematic shots, animation, looping clips, camera moves,
-transitions, motion backgrounds, green screen, B-roll.
-
-**3D preparation:** objects, meshes, materials, rigs, character models.
-
-Expand at runtime: `register_asset_type({...})`.
-
----
-
-## Style System
-
-15 built-in style packs in `services/asset_generation/styles.py` aligned
-with Creative Studio style ids: Pixar, Anime, Comic, Disney, Ghibli,
-Cyberpunk, Photorealistic, Oil Painting, Watercolor, Pencil, Minimal,
-Corporate, Educational, Luxury, Cinematic.
-
----
-
-## Character Consistency
-
-`services/asset_generation/characters.py` embeds Creative Studio
-`visual_signature`, wardrobe, and color anchors verbatim into every
-prompt featuring a persistent character — consistency from data, not
-model memory.
-
----
-
-## Quality Analysis
-
-Every asset validated (`services/asset_generation/quality.py`):
-
-- Resolution vs quality tier
-- Aspect ratio match
-- Brand/style compliance
-- Prompt completeness
-- Provider errors
-- Safety flags
-- Duplicate detection
-- Generation confidence (0-100)
-
-Package readiness `{score, status, blockers}` gates downstream render.
+40+ catalog types plus Phase 2: character animation, motion graphic, title
+card, sound effect, music bed, voice clip. Expand via `register_asset_type()`.
 
 ---
 
 ## Configuration
-
-`data/asset_generation/config.json` (optional):
 
 | Key | Default | Purpose |
 |---|---|---|
@@ -203,101 +197,40 @@ Package readiness `{score, status, blockers}` gates downstream render.
 | `provider_priority` | `{}` | Per-class provider ordering override |
 | `max_cost_per_asset` | `2.0` | USD limit per asset |
 | `max_cost_per_package` | `25.0` | USD limit per ContentPackage |
-| `quality_tier` | `standard` | Minimum resolution tier |
 | `max_retries` | `2` | Attempts per provider |
 | `cache_enabled` | `true` | Content-address cache |
-| `allow_placeholders` | `true` | Demo Mode mock output |
-| `safety_rules` | `[...]` | Blocked content terms |
-| `max_assets_per_item` | `80` | Generation cap per item |
-
----
-
-## Integration Points
-
-### Consumes
-
-| Source | Fields |
-|---|---|
-| `creative_package` | `asset_requirements`, `storyboard`, `character_plan`, `thumbnail_concepts`, `creative_blueprint` |
-| Fallback | `scene_breakdown`, `title`, `hook`, `visual_style` |
-
-### Produces
-
-| Output | Location |
-|---|---|
-| `asset_package` | ContentPackage slot (Agent 14 write zone) |
-| `asset_generation_summary` | Context key — aggregate run summary |
-| `asset_packages` | Context key — list of AssetPackage dicts |
-
-### Downstream
-
-Render Engine (Agent 6) consumes `asset_package.assets` for timeline assembly.
+| `batch_concurrency` | `4` | Parallel workers for batch_generate |
+| `usage_tracking_enabled` | `true` | Persist usage events |
 
 ---
 
 ## Extension Guide
 
-### Add a new provider
-
-1. Subclass `GenerationProvider` in `providers/asset_generation/adapters.py`
-   (or a new module).
-2. Declare `asset_classes`, `profile`, `prompt_style`, `api_key_env`.
+1. Subclass `GenerationProvider` / `_StubAdapter` in adapters.
+2. Declare `asset_classes`, `profile` (include `latency_ms`), `prompt_style`.
 3. Implement `generate()` — return errors in the dict, never raise.
-4. Register via `register_generation_provider()` or append to `ADAPTER_CLASSES`.
-
-### Add a new asset type
-
-```python
-from services.asset_generation import register_asset_type
-register_asset_type({
-    "type_id": "spatial_scene",
-    "label": "Spatial Scene",
-    "asset_class": "three_d",
-    "default_aspect_ratio": "1:1",
-    "default_resolution": "2048x2048",
-})
-```
-
-### Add a new style pack
-
-```python
-from services.asset_generation import register_style_pack
-register_style_pack({
-    "style_id": "retro_futurism",
-    "prompt_fragment": "retro-futurist, chrome surfaces, warm tungsten glow",
-    "negative_fragment": "modern flat design",
-})
-```
+4. Append to `ADAPTER_CLASSES` or call `register_generation_provider()`.
 
 ---
 
 ## Tests
 
-`tests/test_asset_generation.py` — 20+ tests covering:
+`tests/test_asset_generation.py` — 30+ tests. Run:
 
-- Engine contract and registration
-- Asset type catalog
-- Prompt compilation and provider dialect optimization
-- Provider selection strategies
-- Full AssetPackage generation
-- Cache reuse and fingerprint determinism
-- Safety blocking
-- Provider fallback chain
-- Slot ownership (no mutation of other agents' fields)
-- Orchestrator stage integration
-- Asset registry versioning
-
-Run: `python3 -m pytest tests/test_asset_generation.py -v`
+```bash
+python3 -m pytest tests/test_asset_generation.py -v
+```
 
 ---
 
 ## Remaining Roadmap
 
-1. **Real provider implementations** — wire API calls in adapter stubs (OpenAI, Runway, Flux, etc.)
-2. **Creative Studio stage integration** — schedule `creative` before `asset_generation` in full pipeline
-3. **Render Engine handoff** — teach Render to prefer `asset_package.assets` over placeholder resolution
-4. **Batch generation** — parallel job queue for large campaigns
-5. **Asset collections UI** — browse brand libraries and reusable assets
-6. **Video frame consistency** — temporal consistency across clip sequences
-7. **3D pipeline** — mesh export, material baking, rig validation
-8. **Autonomous campaigns** — generate entire marketing libraries from one brief
+1. Wire real API calls in adapter stubs (OpenAI, Runway, Flux, etc.)
+2. Schedule Creative Studio before asset generation in the full pipeline
+3. Teach Render to prefer `asset_package.assets` URIs
+4. Background workers draining `core.jobs` asynchronously
+5. Asset collections UI
+6. Temporal video consistency
+7. 3D export / material / rig validation
+8. Live audio provider implementations
+9. Autonomous campaign generation from one brief

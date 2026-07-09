@@ -1,7 +1,7 @@
 """Provider Selection Engine — the best backend for every request.
 
 Deterministic scoring over each candidate's declared profile
-(quality / cost / speed / consistency), shaped by the configured
+(quality / cost / speed / consistency / latency), shaped by the configured
 strategy, cost limits, explicit priority overrides, and offline
 requirements. Output is a full selection plan: one primary provider plus
 an ordered fallback chain that always ends in the offline deterministic
@@ -17,17 +17,40 @@ from __future__ import annotations
 from providers.asset_generation import all_generation_providers
 from services.asset_generation.config import AssetGenerationConfig, get_asset_generation_config
 
-# strategy → profile weights (quality, cost, speed, consistency).
+# strategy → profile weights (quality, cost, speed, consistency, latency).
+# Latency weight is additive in Phase 2; strategies that omit it keep
+# Phase 1 behaviour (weights still sum to ~1.0 when latency is 0).
 STRATEGY_WEIGHTS = {
-    "balanced": {"quality": 0.35, "cost": 0.25, "speed": 0.15, "consistency": 0.25},
-    "quality": {"quality": 0.70, "cost": 0.05, "speed": 0.05, "consistency": 0.20},
-    "cost": {"quality": 0.15, "cost": 0.65, "speed": 0.10, "consistency": 0.10},
-    "speed": {"quality": 0.15, "cost": 0.10, "speed": 0.65, "consistency": 0.10},
-    "consistency": {"quality": 0.20, "cost": 0.05, "speed": 0.05, "consistency": 0.70},
+    "balanced": {
+        "quality": 0.30, "cost": 0.20, "speed": 0.10,
+        "consistency": 0.20, "latency": 0.20,
+    },
+    "quality": {
+        "quality": 0.65, "cost": 0.05, "speed": 0.05,
+        "consistency": 0.15, "latency": 0.10,
+    },
+    "cost": {
+        "quality": 0.15, "cost": 0.60, "speed": 0.05,
+        "consistency": 0.10, "latency": 0.10,
+    },
+    "speed": {
+        "quality": 0.10, "cost": 0.10, "speed": 0.50,
+        "consistency": 0.10, "latency": 0.20,
+    },
+    "consistency": {
+        "quality": 0.20, "cost": 0.05, "speed": 0.05,
+        "consistency": 0.60, "latency": 0.10,
+    },
+    "latency": {
+        "quality": 0.15, "cost": 0.10, "speed": 0.15,
+        "consistency": 0.10, "latency": 0.50,
+    },
 }
 
 # Cost above this is scored 0 on the cost axis (linear falloff below it).
 _COST_CEILING_USD = 2.0
+# Latency above this is scored 0 on the latency axis.
+_LATENCY_CEILING_MS = 60_000
 
 
 def score_provider(provider, strategy: str) -> float:
@@ -36,11 +59,23 @@ def score_provider(provider, strategy: str) -> float:
     profile = getattr(provider, "profile", {}) or {}
     cost = float(profile.get("cost_per_asset", 0.0))
     cost_score = max(0.0, 100.0 * (1.0 - min(cost, _COST_CEILING_USD) / _COST_CEILING_USD))
+
+    latency_ms = 0
+    if hasattr(provider, "estimate_latency_ms"):
+        latency_ms = int(provider.estimate_latency_ms())
+    else:
+        latency_ms = int(profile.get("latency_ms", 0) or 0)
+    latency_score = max(
+        0.0,
+        100.0 * (1.0 - min(latency_ms, _LATENCY_CEILING_MS) / _LATENCY_CEILING_MS),
+    )
+
     total = (
-        weights["quality"] * float(profile.get("quality", 0))
-        + weights["cost"] * cost_score
-        + weights["speed"] * float(profile.get("speed", 0))
-        + weights["consistency"] * float(profile.get("consistency", 0))
+        weights.get("quality", 0) * float(profile.get("quality", 0))
+        + weights.get("cost", 0) * cost_score
+        + weights.get("speed", 0) * float(profile.get("speed", 0))
+        + weights.get("consistency", 0) * float(profile.get("consistency", 0))
+        + weights.get("latency", 0) * latency_score
     )
     return round(total, 2)
 
@@ -68,10 +103,10 @@ def select_providers(request: dict, config: "AssetGenerationConfig | None" = Non
     """The full selection plan for one request.
 
     Returns {primary, fallbacks, strategy, candidates} where `candidates`
-    is the scored ranking [{provider, score, cost_estimate, offline,
-    local}, ...]. Explicit `provider_priority` entries for the request's
-    asset class outrank scoring; the deterministic offline mock is always
-    the final fallback.
+    is the scored ranking [{provider, score, cost_estimate, latency_ms,
+    offline, local, available}, ...]. Explicit `provider_priority` entries
+    for the request's asset class outrank scoring; the deterministic
+    offline mock is always the final fallback.
     """
     config = config or get_asset_generation_config()
     strategy = config.selection_strategy if config.selection_strategy in STRATEGY_WEIGHTS else "balanced"
@@ -83,12 +118,18 @@ def select_providers(request: dict, config: "AssetGenerationConfig | None" = Non
                 "provider": provider.name,
                 "score": score_provider(provider, strategy),
                 "cost_estimate": provider.estimate_cost(request),
+                "latency_ms": (
+                    provider.estimate_latency_ms(request)
+                    if hasattr(provider, "estimate_latency_ms")
+                    else int((provider.profile or {}).get("latency_ms", 0) or 0)
+                ),
                 "offline": bool(getattr(provider, "offline", False)),
                 "local": bool(getattr(provider, "local", False)),
+                "available": True,
             }
             for provider in candidates
         ),
-        key=lambda entry: (-entry["score"], entry["cost_estimate"], entry["provider"]),
+        key=lambda entry: (-entry["score"], entry["cost_estimate"], entry["latency_ms"], entry["provider"]),
     )
 
     ordered = [entry["provider"] for entry in scored]

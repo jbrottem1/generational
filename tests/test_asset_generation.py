@@ -124,7 +124,7 @@ def test_asset_generation_is_a_live_contract_engine():
     assert engine.is_ready() is True
     diag = engine.diagnostics()
     assert diag["engine_id"] == "asset_generation"
-    assert diag["version"] == "1.0.0"
+    assert diag["version"] == "1.1.0"
     assert "unified_packages" in diag["input_contract"]
     assert "asset_generation_summary" in diag["output_contract"]
     assert "asset_packages" in diag["output_contract"]
@@ -355,11 +355,11 @@ def test_asset_generation_stage_runs_through_orchestrator():
 
 
 def test_content_package_carries_asset_slot_through_roundtrips():
-    package = ContentPackage(asset_package={"asset_package_version": "1.0"})
+    package = ContentPackage(asset_package={"asset_package_version": "1.1"})
     data = package.to_dict()
-    assert data["asset_package"] == {"asset_package_version": "1.0"}
+    assert data["asset_package"] == {"asset_package_version": "1.1"}
     restored = ContentPackage.from_dict(data)
-    assert restored.asset_package == {"asset_package_version": "1.0"}
+    assert restored.asset_package == {"asset_package_version": "1.1"}
 
 
 def test_fallback_requests_when_no_creative_package():
@@ -372,3 +372,207 @@ def test_fallback_requests_when_no_creative_package():
     package = build_asset_package(item)
     assert package["assets"]
     assert package["assets"][0]["status"] in (AssetStatus.GENERATED, AssetStatus.PLACEHOLDER, AssetStatus.CACHED)
+
+
+# ============================================================ Phase 2
+
+
+def test_provider_catalog_lists_all_adapters():
+    from providers.asset_generation import ensure_providers_registered, provider_catalog
+    from providers.generation_provider import GENERATION_ASSET_CLASSES
+
+    ensure_providers_registered()
+    catalog = provider_catalog()
+    names = {entry["name"] for entry in catalog}
+    for required in (
+        "mock_generation", "openai_images", "runway", "flux", "kling",
+        "pika", "luma", "google_veo", "stable_diffusion", "midjourney",
+    ):
+        assert required in names, required
+    for entry in catalog:
+        assert "latency_ms" in entry
+        assert "available" in entry
+    for media_class in ("animation", "audio", "motion_graphics"):
+        assert media_class in GENERATION_ASSET_CLASSES
+
+
+def test_selection_includes_latency_signal():
+    plan = select_providers({"asset_class": "image", "asset_type": "scene_image"})
+    assert plan["candidates"]
+    assert "latency_ms" in plan["candidates"][0]
+
+
+def test_latency_strategy_is_registered():
+    from services.asset_generation.config import SELECTION_STRATEGIES
+
+    assert "latency" in SELECTION_STRATEGIES
+    configure(selection_strategy="latency")
+    try:
+        plan = select_providers({"asset_class": "image"})
+        assert plan["strategy"] == "latency"
+        assert plan["primary"]
+    finally:
+        reset_asset_generation_config()
+
+
+def test_asset_metadata_attached_to_generated_assets():
+    from services.asset_generation.models import ASSET_METADATA_FIELDS
+
+    package = build_asset_package(make_item("meta1"))
+    for asset in package["assets"]:
+        assert "metadata" in asset
+        for field in ASSET_METADATA_FIELDS:
+            assert field in asset["metadata"], field
+
+
+def test_package_includes_usage_report_and_new_asset_buckets():
+    package = build_asset_package(make_item("usage1"))
+    assert "usage_report" in package
+    assert "events" in package["usage_report"]
+    assert "audio_assets" in package
+    assert "animation_assets" in package
+
+
+def test_batch_generate_produces_batch_result():
+    from services.asset_generation import BATCH_RESULT_FIELDS, batch_generate
+
+    requests = [
+        {
+            "asset_id": f"batch_{i}",
+            "project_id": "batch_proj",
+            "asset_type": "scene_image",
+            "asset_class": "image",
+            "prompt": f"scene {i}",
+            "style": "cinematic",
+            "priority": "required",
+            "aspect_ratio": "9:16",
+            "resolution": "1080x1920",
+        }
+        for i in range(3)
+    ]
+    result = batch_generate(requests, {"project_id": "batch_proj"})
+    for field in BATCH_RESULT_FIELDS:
+        assert field in result, field
+    assert result["requested"] == 3
+    assert result["status"] in ("completed", "partial")
+    assert len(result["assets"]) == 3
+
+
+def test_batch_generate_empty_is_safe():
+    from services.asset_generation import batch_generate
+
+    result = batch_generate([])
+    assert result["status"] == "empty"
+    assert result["requested"] == 0
+
+
+def test_job_queue_submit_and_run_generate():
+    from services.asset_generation import run_generate
+
+    request = {
+        "asset_id": "queue_asset_1",
+        "project_id": "queue_proj",
+        "asset_type": "thumbnail",
+        "asset_class": "image",
+        "prompt": "bold thumbnail of a glowing rift",
+        "style": "cinematic",
+        "priority": "required",
+        "aspect_ratio": "16:9",
+        "resolution": "1280x720",
+    }
+    result = run_generate(request, {"project_id": "queue_proj"})
+    assert result["asset"].get("uri")
+    assert result["job"].get("status") in (
+        JobStatus.SUCCEEDED, JobStatus.CACHE_HIT, "succeeded", "cache_hit",
+    )
+
+
+def test_usage_tracker_records_events(tmp_path):
+    from services.asset_generation.usage import UsageTracker
+
+    tracker = UsageTracker(directory=str(tmp_path))
+    job = {
+        "job_id": "j1",
+        "asset_id": "a1",
+        "asset_type": "scene_image",
+        "asset_class": "image",
+        "provider": "mock_generation",
+        "status": "succeeded",
+        "cache_hit": False,
+        "cost_estimate": 0.0,
+        "latency_ms": 12,
+        "created_at": "2026-01-01T00:00:00+00:00",
+    }
+    event = tracker.record(job, project_id="p1")
+    assert event["event_id"]
+    summary = tracker.summary(project_id="p1")
+    assert summary["events"] == 1
+    assert summary["by_provider"]["mock_generation"] == 1
+
+
+def test_catalog_covers_phase2_media_types():
+    ids = asset_type_ids()
+    assert "sound_effect" in ids
+    assert "music_bed" in ids
+    assert "voice_clip" in ids
+    assert "motion_graphic" in ids
+    assert "character_animation" in ids
+    assert resolve_asset_type("sound_effect")["asset_class"] == "audio"
+
+
+def test_retry_increments_attempts_on_provider_failure():
+    class FlakyThenOk(GenerationProvider):
+        name = "flaky_then_ok"
+        label = "Flaky"
+        asset_classes = ("image",)
+        profile = {
+            "quality": 99, "cost_per_asset": 0.01, "speed": 99,
+            "consistency": 99, "latency_ms": 100,
+        }
+        calls = 0
+
+        def is_available(self):
+            return True
+
+        def generate(self, prompt_spec, request):
+            FlakyThenOk.calls += 1
+            if FlakyThenOk.calls < 2:
+                return {"error": "transient", "provider": self.name}
+            return {
+                "uri": "mock://flaky/ok.png",
+                "provider": self.name,
+                "model": "flaky-v1",
+                "format": "png",
+                "width": 1080,
+                "height": 1920,
+                "placeholder": False,
+            }
+
+    FlakyThenOk.calls = 0
+    register_generation_provider(FlakyThenOk())
+    configure(
+        provider_priority={"image": ["flaky_then_ok"]},
+        max_retries=3,
+        allow_placeholders=False,
+    )
+    try:
+        from services.asset_generation.generator import generate_asset
+
+        request = {
+            "asset_id": "retry_1",
+            "project_id": "retry_proj",
+            "asset_type": "scene_image",
+            "asset_class": "image",
+            "prompt": "unique retry prompt xyz",
+            "style": "minimal",
+            "priority": "required",
+            "aspect_ratio": "9:16",
+            "resolution": "1080x1920",
+        }
+        asset, job = generate_asset(request, {})
+        assert asset["provider"] == "flaky_then_ok"
+        assert job["attempts"] >= 2
+        assert job["status"] == JobStatus.SUCCEEDED
+    finally:
+        unregister_generation_provider("flaky_then_ok")
+        reset_asset_generation_config()

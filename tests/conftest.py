@@ -52,15 +52,22 @@ def isolated_analytics_data(tmp_path_factory):
 
 @pytest.fixture(scope="session", autouse=True)
 def isolated_asset_generation_data(tmp_path_factory):
-    """Agent 14's asset registry persists generated assets (data/
-    asset_generation) — point the default directory at a temp dir for the
-    whole session so tests never write to the real store."""
+    """Agent 14's asset registry + usage store persist under data/
+    asset_generation — point both at a temp dir for the whole session so
+    tests never write to the real store."""
     import services.asset_generation.registry as asset_registry
+    import services.asset_generation.usage as asset_usage
 
-    original = asset_registry._DEFAULT_DIR
-    asset_registry._DEFAULT_DIR = str(tmp_path_factory.mktemp("asset_generation"))
+    original_registry = asset_registry._DEFAULT_DIR
+    original_usage = asset_usage._DEFAULT_DIR
+    temp_dir = str(tmp_path_factory.mktemp("asset_generation"))
+    asset_registry._DEFAULT_DIR = temp_dir
+    asset_usage._DEFAULT_DIR = temp_dir
+    asset_usage.reset_usage_tracker()
     yield
-    asset_registry._DEFAULT_DIR = original
+    asset_registry._DEFAULT_DIR = original_registry
+    asset_usage._DEFAULT_DIR = original_usage
+    asset_usage.reset_usage_tracker()
 
 
 @pytest.fixture

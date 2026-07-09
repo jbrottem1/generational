@@ -11,11 +11,11 @@ fields freely, never remove, rename, or repurpose existing ones.
 
 from __future__ import annotations
 
-ASSET_GENERATION_ENGINE_VERSION = "1.0.0"
+ASSET_GENERATION_ENGINE_VERSION = "1.1.0"
 
 # Version of the AssetPackage written into each ContentPackage
 # `asset_package` slot.
-ASSET_PACKAGE_VERSION = "1.0"
+ASSET_PACKAGE_VERSION = "1.1"
 
 
 class AssetStatus:
@@ -60,7 +60,7 @@ GENERATION_REQUEST_FIELDS = (
     "project_id",
     "scene_id",
     "asset_type",              # catalog type id (catalog.py)
-    "asset_class",             # image | video | three_d
+    "asset_class",             # image | video | three_d | animation | audio | motion_graphics
     "category",                # scene_visual | character | background | ...
     "description",
     "prompt",                  # the raw creative prompt (pre-compilation)
@@ -69,7 +69,7 @@ GENERATION_REQUEST_FIELDS = (
     "reusable",                # True → shareable across scenes/productions
     "aspect_ratio",
     "resolution",
-    "duration_sec",            # video/animation targets ("" / 0 for stills)
+    "duration_sec",            # video/animation/audio targets ("" / 0 for stills)
     "character_ids",           # persistent characters that must appear
     "lighting",
     "color_palette",
@@ -78,6 +78,8 @@ GENERATION_REQUEST_FIELDS = (
     "camera",
     "brand_id",
     "source",                  # creative_studio | thumbnail | fallback
+    "tags",                    # free-form tags for metadata / collections
+    "metadata",                # caller-supplied ASSET_METADATA_FIELDS overrides
 )
 
 # One compiled prompt specification — the Prompt Compiler's output, in
@@ -127,7 +129,23 @@ ASSET_FIELDS = (
     "reusable",
     "priority",
     "category",
+    "metadata",                # ASSET_METADATA_FIELDS dict (Phase 2)
     "created_at",
+)
+
+# Structured metadata attached to every generated asset (additive).
+ASSET_METADATA_FIELDS = (
+    "title",
+    "description",
+    "tags",
+    "brand_id",
+    "style",
+    "character_ids",
+    "source",
+    "license",                 # original | licensed | public_domain | placeholder
+    "mime_type",
+    "file_size_bytes",         # 0 when unknown / placeholder
+    "extra",                   # free-form dict for future fields
 )
 
 # One registry version entry — every regeneration of an asset_id is kept.
@@ -152,7 +170,39 @@ GENERATION_JOB_FIELDS = (
     "status",                  # JobStatus value
     "cache_hit",
     "cost_estimate",
+    "latency_ms",              # wall-clock ms for the successful attempt (0 if n/a)
     "error",
+    "created_at",
+)
+
+# One usage-tracking event (persisted append-only for cost/ops reporting).
+USAGE_EVENT_FIELDS = (
+    "event_id",
+    "job_id",
+    "asset_id",
+    "asset_type",
+    "asset_class",
+    "provider",
+    "status",
+    "cache_hit",
+    "cost_estimate",
+    "latency_ms",
+    "project_id",
+    "created_at",
+)
+
+# Batch generation result contract.
+BATCH_RESULT_FIELDS = (
+    "batch_id",
+    "status",                  # completed | partial | failed | empty
+    "requested",
+    "succeeded",
+    "failed",
+    "cache_hits",
+    "assets",
+    "jobs",
+    "usage",                   # aggregate usage summary for the batch
+    "duration_ms",
     "created_at",
 )
 
@@ -179,12 +229,15 @@ ASSET_PACKAGE_FIELDS = (
     "thumbnail_assets",        # thumbnail asset ids
     "marketing_assets",        # logos, branding, marketing graphic ids
     "video_assets",            # video-class asset ids
+    "audio_assets",            # audio-class asset ids (Phase 2)
+    "animation_assets",        # animation / motion_graphics asset ids (Phase 2)
     "generation_jobs",         # list of GENERATION_JOB_FIELDS dicts
     "provider_usage",          # provider name → assets served
     "selection_strategy",      # the strategy the run used
     "cache_report",            # {hits, misses, reuse_ratio}
     "cost_report",             # {estimated_total, limit, within_budget, rerouted}
     "quality_report",          # aggregate QC over all assets
+    "usage_report",            # aggregate USAGE summary for this package (Phase 2)
     "validation",              # package-level findings (never raises)
     "readiness",               # {score, status, blockers}
     "asset_diagnostics",       # counts by type/class/status

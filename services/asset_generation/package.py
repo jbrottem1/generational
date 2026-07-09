@@ -31,8 +31,10 @@ from services.asset_generation.models import (
 from services.asset_generation.quality import package_readiness, validate_asset_package
 from services.asset_generation.registry import AssetRegistry, get_asset_registry
 from services.asset_generation.requests import collect_generation_requests
+from services.asset_generation.usage import summarize_jobs
 
 _MARKETING_CATEGORIES = ("logo", "marketing", "branding")
+_ANIMATION_CLASSES = ("animation", "motion_graphics")
 
 
 def collect_generation_items(context: dict) -> "tuple[list, str]":
@@ -93,6 +95,10 @@ def build_asset_package(
             a["asset_id"] for a in assets if a.get("category") in _MARKETING_CATEGORIES
         ],
         "video_assets": [a["asset_id"] for a in assets if a.get("asset_class") == "video"],
+        "audio_assets": [a["asset_id"] for a in assets if a.get("asset_class") == "audio"],
+        "animation_assets": [
+            a["asset_id"] for a in assets if a.get("asset_class") in _ANIMATION_CLASSES
+        ],
         "generation_jobs": jobs,
         "provider_usage": _provider_usage(assets),
         "selection_strategy": config.selection_strategy,
@@ -104,6 +110,7 @@ def build_asset_package(
             "rerouted_to_offline": rerouted,
         },
         "quality_report": _quality_report(assets),
+        "usage_report": summarize_jobs(jobs),
         "generated_at": _now_iso(),
     }
 

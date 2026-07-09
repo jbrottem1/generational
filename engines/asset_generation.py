@@ -58,7 +58,8 @@ class AssetGenerationEngine(ContractEngine):
         "asset-generation", "image-gen", "video-gen", "prompt-compilation",
         "provider-selection", "character-consistency", "style-packs",
         "asset-registry", "asset-caching", "quality-validation",
-        "provider-driven",
+        "provider-driven", "batch-generation", "usage-tracking",
+        "job-queue", "animation-gen", "audio-gen", "motion-graphics",
     ]
 
     def is_ready(self) -> bool:

@@ -22,7 +22,7 @@ _DEFAULT_DIR = os.path.join(
 _CONFIG_FILE = "config.json"
 
 # Provider selection strategies the Selection Engine understands.
-SELECTION_STRATEGIES = ("balanced", "quality", "cost", "speed", "consistency")
+SELECTION_STRATEGIES = ("balanced", "quality", "cost", "speed", "consistency", "latency")
 
 # Quality tier → minimum acceptable output pixel count (width × height).
 QUALITY_TIER_MIN_PIXELS = {"draft": 0, "standard": 250_000, "premium": 1_000_000}
@@ -44,7 +44,14 @@ class AssetGenerationConfig:
     # Output defaults (used when a request doesn't specify its own).
     default_aspect_ratio: str = "9:16"
     default_resolutions: dict = field(
-        default_factory=lambda: {"image": "1080x1920", "video": "1080x1920", "three_d": "1024x1024"}
+        default_factory=lambda: {
+            "image": "1080x1920",
+            "video": "1080x1920",
+            "three_d": "1024x1024",
+            "animation": "1080x1920",
+            "audio": "0x0",
+            "motion_graphics": "1080x1920",
+        }
     )
     quality_tier: str = "standard"              # draft | standard | premium
 
@@ -66,6 +73,10 @@ class AssetGenerationConfig:
 
     # Safety valve — never let one item explode into unlimited generation.
     max_assets_per_item: int = 80
+
+    # Batch / queue (Phase 2).
+    batch_concurrency: int = 4                  # max parallel workers for batch_generate
+    usage_tracking_enabled: bool = True         # persist usage events to usage.json
 
     def to_dict(self) -> dict:
         return asdict(self)

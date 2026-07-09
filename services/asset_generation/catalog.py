@@ -67,7 +67,14 @@ _ALIASES = {
     "particle_system": "particle_texture",
 }
 
-_GENERIC_BY_CLASS = {"image": "image", "video": "video_clip", "three_d": "object_3d"}
+_GENERIC_BY_CLASS = {
+    "image": "image",
+    "video": "video_clip",
+    "three_d": "object_3d",
+    "animation": "character_animation",
+    "audio": "sound_effect",
+    "motion_graphics": "motion_graphic",
+}
 
 
 def resolve_asset_type(asset_type: str, asset_class_hint: str = "") -> dict:
@@ -154,6 +161,14 @@ _BUILTINS = (
     _entry("material_3d", "3D Material", "three_d", "PBR material/shader set.", "1:1", "1024x1024"),
     _entry("rig", "Rig", "three_d", "Skeleton/rig for a 3D model.", "1:1", "1024x1024"),
     _entry("character_model", "Character Model", "three_d", "Rigged 3D character model.", "1:1", "1024x1024"),
+    # ------------------------------------------- animation / motion (Phase 2)
+    _entry("character_animation", "Character Animation", "animation", "Animated character performance.", "9:16", "1080x1920", ("animation",)),
+    _entry("motion_graphic", "Motion Graphic", "motion_graphics", "Kinetic typography / motion graphic.", "9:16", "1080x1920", ("motion",)),
+    _entry("title_card", "Title Card", "motion_graphics", "Animated title / lower-third.", "16:9", "1920x1080", ("titles",)),
+    # ------------------------------------------------------------- audio (Phase 2)
+    _entry("sound_effect", "Sound Effect", "audio", "One generated sound effect.", "1:1", "0x0", ("sfx",)),
+    _entry("music_bed", "Music Bed", "audio", "Background music bed / underscore.", "1:1", "0x0", ("music",)),
+    _entry("voice_clip", "Voice Clip", "audio", "Generated voice / narration clip.", "1:1", "0x0", ("voice",)),
 )
 
 for _builtin in _BUILTINS:

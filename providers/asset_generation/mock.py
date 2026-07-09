@@ -13,7 +13,14 @@ import hashlib
 
 from providers.generation_provider import GENERATION_ASSET_CLASSES, GenerationProvider
 
-_EXTENSIONS = {"image": "png", "video": "mp4", "three_d": "glb"}
+_EXTENSIONS = {
+    "image": "png",
+    "video": "mp4",
+    "three_d": "glb",
+    "animation": "mp4",
+    "audio": "wav",
+    "motion_graphics": "mp4",
+}
 
 
 class MockGenerationProvider(GenerationProvider):
@@ -23,11 +30,13 @@ class MockGenerationProvider(GenerationProvider):
     asset_types = ()          # every type
     offline = True
     local = True
+    capabilities = ("image-gen", "video-gen", "three-d", "animation", "audio", "motion-graphics", "offline")
     profile = {
         "quality": 40,        # placeholders — real backends always outscore it
         "cost_per_asset": 0.0,
         "speed": 100,
         "consistency": 100,   # deterministic: identical input, identical output
+        "latency_ms": 50,
     }
     prompt_style = {"dialect": "plain", "supports_negative_prompt": True}
 
@@ -52,17 +61,22 @@ class MockGenerationProvider(GenerationProvider):
             ).encode("utf-8")
         ).hexdigest()[:16]
         width, height = _dimensions(prompt_spec)
+        extension = _EXTENSIONS.get(asset_class, "bin")
         result = {
-            "uri": f"mock://assets/generated/{asset_type}/{digest}.{_EXTENSIONS.get(asset_class, 'bin')}",
+            "uri": f"mock://assets/generated/{asset_type}/{digest}.{extension}",
             "provider": self.name,
             "model": "mock-deterministic-v1",
-            "format": _EXTENSIONS.get(asset_class, "bin"),
+            "format": extension,
             "width": width,
             "height": height,
             "placeholder": True,
         }
-        if asset_class == "video":
+        if asset_class in ("video", "animation", "motion_graphics", "audio"):
             result["duration_sec"] = float(request.get("duration_sec", 5.0) or 5.0)
+        if asset_class == "audio":
+            result["sample_rate"] = 44100
+            result["width"] = 0
+            result["height"] = 0
         return result
 
 

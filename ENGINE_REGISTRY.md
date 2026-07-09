@@ -123,7 +123,10 @@ providers in `providers/asset_generation/`). Transforms structured creative
 requests into production-ready visual assets through swappable AI provider
 adapters. Writes `asset_package` on each ContentPackage; context keys
 `asset_generation_summary` + `asset_packages`. Runs in the distribution
-pipeline after packaging, before render. See `ASSET_GENERATION_ENGINE.md`.
+pipeline after packaging, before render. Phase 2 (v1.1): provider catalog,
+latency-aware selection, batch generation, job-queue interfaces, usage
+tracking, asset metadata, and prepared media classes for animation /
+audio / motion graphics. See `ASSET_GENERATION_ENGINE.md`.
 
 ## Reserved keys (planned / contract stubs / names — do NOT reuse)
 
