@@ -53,6 +53,12 @@ def project_from_result(name: str, result: dict) -> dict:
         project["production_dashboard"] = result["production_dashboard"]
     if result.get("production_packages"):
         project["production_packages"] = result["production_packages"]
+    if result.get("stage_reports"):
+        project["stage_reports"] = result["stage_reports"]
+    if result.get("studio_settings"):
+        project["studio_settings"] = result["studio_settings"]
+    if result.get("platform"):
+        project["platform"] = result["platform"]
     return project
 
 
@@ -78,4 +84,10 @@ def result_from_project(project: dict) -> dict:
         result["production_dashboard"] = project["production_dashboard"]
     if project.get("production_packages"):
         result["production_packages"] = project["production_packages"]
+    if project.get("stage_reports"):
+        result["stage_reports"] = project["stage_reports"]
+    if project.get("studio_settings"):
+        result["studio_settings"] = project["studio_settings"]
+    if project.get("platform"):
+        result["platform"] = project["platform"]
     return result
