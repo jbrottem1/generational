@@ -282,6 +282,13 @@ class Orchestrator:
             if report.status == StageStatus.FAILED:
                 log_event(logger, "orchestrator.stage_degraded", stage=stage, errors=len(report.errors))
 
+        # Closed loop: analytics → learning (aligned with Workflow Executor).
+        for stage in ("analytics", "learning"):
+            report = self.run_stage(stage, context)
+            result.stage_reports.append(report)
+            if report.status == StageStatus.FAILED:
+                log_event(logger, "orchestrator.stage_degraded", stage=stage, errors=len(report.errors))
+
         self._refresh_packages(context, result)
         context["pipeline_steps"] = [
             step

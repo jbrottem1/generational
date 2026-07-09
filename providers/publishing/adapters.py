@@ -88,7 +88,49 @@ class MockPublishingProvider(PublishingProvider):
                 "mock": False,
             }
 
+    def dry_run(self, package: dict) -> dict:
+        """Validate credentials/constraints without uploading (production smoke)."""
+        problems = []
+        try:
+            constraints = self.constraints() if hasattr(self, "constraints") else {}
+            title = str((package.get("title") or package.get("metadata", {}).get("title") or ""))
+            max_title = int(constraints.get("max_title_chars") or 0)
+            if max_title and len(title) > max_title:
+                problems.append(f"title exceeds {max_title} chars")
+        except Exception as exc:  # noqa: BLE001
+            problems.append(str(exc))
+
+        runtime_name = self.runtime_provider or _RUNTIME_PROVIDER_MAP.get(self.key, "")
+        credentials_present = False
+        if runtime_name or self.credential_env:
+            try:
+                from services.provider_runtime import get_provider
+                from services.provider_runtime.config import has_credential
+
+                adapter = get_provider(runtime_name) if runtime_name else None
+                env = self.credential_env or (adapter.api_key_env if adapter else "")
+                credentials_present = bool(env and has_credential(env))
+            except Exception:  # noqa: BLE001
+                credentials_present = False
+
+        post_id = f"dryrun_{uuid.uuid4().hex[:10]}"
+        return {
+            "status": "failed" if problems else "published",
+            "provider": self.key,
+            "platform": self.key,
+            "post_id": post_id,
+            "post_url": "",
+            "published_at": datetime.now(timezone.utc).isoformat(),
+            "error": "; ".join(problems),
+            "mock": True,
+            "dry_run": True,
+            "credentials_present": credentials_present,
+            "validated": not problems,
+        }
+
     def publish(self, package: dict) -> dict:
+        if package.get("dry_run") or package.get("publish_mode") == "dry_run":
+            return self.dry_run(package)
         real = self._runtime_publish(package)
         if real is not None:
             return real

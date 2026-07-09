@@ -20,7 +20,7 @@ from services.publishing.targets import LOCALIZATION_TARGETS
 
 _WEEKDAYS = ("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday")
 
-PUBLISH_MODES = ("immediate", "scheduled")
+PUBLISH_MODES = ("immediate", "scheduled", "dry_run")
 
 
 def region_offset_hours(country: str) -> int:
@@ -77,6 +77,7 @@ class PublishingScheduler:
         """One schedule entry (see PUBLISH_SCHEDULE_ENTRY_FIELDS).
 
         - `mode="immediate"` → publish now.
+        - `mode="dry_run"` → validate now without uploading (production smoke).
         - explicit `publish_time` (ISO-8601) → publish at that instant.
         - otherwise → the best ranked optimization window for the platform,
           falling back to the country's default peak hour, then to now.
@@ -86,19 +87,22 @@ class PublishingScheduler:
         language = package.get("language", "en")
         offset = region_offset_hours(country)
         window: dict = {}
+        resolved_mode = mode if mode in PUBLISH_MODES else "scheduled"
 
-        if mode == "immediate":
+        if resolved_mode in ("immediate", "dry_run"):
             slot = now
         elif publish_time:
             slot = datetime.fromisoformat(publish_time)
             if slot.tzinfo is None:
                 slot = slot.replace(tzinfo=timezone.utc)
+            resolved_mode = "scheduled"
         else:
             window = self._best_window(package, platform)
             if window:
                 slot = next_window_occurrence(window, now=now)
             else:
                 slot = self._default_peak_slot(country, now)
+            resolved_mode = "scheduled"
 
         local_tz = timezone(timedelta(hours=offset))
         return {
@@ -106,7 +110,7 @@ class PublishingScheduler:
             "platform": platform,
             "country": country,
             "language": language,
-            "mode": "immediate" if mode == "immediate" else "scheduled",
+            "mode": resolved_mode,
             "publish_time": slot.astimezone(timezone.utc).isoformat(),
             "timezone": format_utc_offset(offset),
             "local_time": slot.astimezone(local_tz).isoformat(),

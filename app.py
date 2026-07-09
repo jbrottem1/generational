@@ -28,6 +28,14 @@ st.set_page_config(
 init_session_state()
 styles.inject()
 
+# Arm analytics → learning closed loop for Studio and CLI (idempotent).
+try:
+    from services.analytics.integration import enable_continuous_learning
+
+    enable_continuous_learning()
+except Exception:  # noqa: BLE001 — boot must never fail on optional hooks
+    pass
+
 st.title("🚀 Generational")
 st.subheader("AI Content Operating System")
 st.caption(f"v{APP_VERSION} · Build faceless content at scale")

@@ -35,6 +35,10 @@ class AnalyticsHook(OrchestratorHook):
     name = "agent9-analytics"
 
     def on_pipeline_complete(self, result) -> None:
+        # Orchestrator already runs analytics in-pipeline; skip if populated.
+        if result.context.get("analytics_summary"):
+            log_event(logger, "analytics.hook_skipped", reason="already_ran")
+            return
         from services.orchestrator import get_orchestrator
 
         report = get_orchestrator().run_analytics_stage(result.context)
@@ -52,6 +56,9 @@ class LearningHook(OrchestratorHook):
     name = "agent9-learning"
 
     def on_pipeline_complete(self, result) -> None:
+        if result.context.get("learning_report"):
+            log_event(logger, "learning.hook_skipped", reason="already_ran")
+            return
         from services.orchestrator import get_orchestrator
 
         report = get_orchestrator().run_learning_stage(result.context)

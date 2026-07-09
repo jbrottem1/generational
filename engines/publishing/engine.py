@@ -95,7 +95,7 @@ def publish_content(context: dict, manager=None) -> dict:
         )
         warnings.extend(item_warnings)
 
-        if mode == "immediate":
+        if mode in ("immediate", "dry_run"):
             jobs = [manager.execute_job(job) for job in jobs]
 
         item["publishing_package"] = _publishing_package_of(jobs) if jobs else {

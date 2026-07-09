@@ -168,7 +168,9 @@ def test_orchestrator_controls_execution_and_package_flow(tmp_path, monkeypatch)
     # packaging → ai_director → creative → character_universe → asset_generation →
     # animation → render → post_production → seo → optimization → publish.
     # Stubs (character_universe, animation, optimization) skip with WARNING.
-    assert executed[-11:] == [
+    # Ends with packaging → distribution → publish → analytics → learning.
+    # Stubs (character_universe, animation, optimization) skip with WARNING.
+    assert executed[-13:] == [
         "packaging",
         "ai_director",
         "creative",
@@ -180,6 +182,8 @@ def test_orchestrator_controls_execution_and_package_flow(tmp_path, monkeypatch)
         "seo",
         "optimization",
         "publish",
+        "analytics",
+        "learning",
     ]
 
     assert result.packages, "pipeline must emit ContentPackages"

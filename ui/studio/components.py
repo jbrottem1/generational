@@ -192,6 +192,55 @@ def executive_dashboard_view(dashboard: dict) -> None:
         acols[1].metric("Avg Engagement", f"{analytics.get('avg_engagement', 0)}%")
 
 
+def production_readiness_view(report: dict) -> None:
+    """Production Readiness Dashboard — overall + area scores + blockers."""
+    overall = int(report.get("overall") or 0)
+    st.metric("Overall readiness", f"{overall} / 100")
+    st.caption(f"v{report.get('version', '')} · {report.get('generated_at', '')}")
+
+    scorecard = report.get("scorecard") or {}
+    labels = [
+        ("architecture", "Architecture"),
+        ("execution", "Engines"),
+        ("provider_runtime", "Provider health"),
+        ("api", "API"),
+        ("publishing", "Publishing"),
+        ("longform", "Long-form"),
+        ("learning", "Learning"),
+        ("analytics", "Analytics"),
+        ("security", "Security"),
+        ("workflow_executor", "Workflow"),
+    ]
+    cols = st.columns(5)
+    for i, (key, label) in enumerate(labels):
+        cols[i % 5].metric(label, scorecard.get(key, "—"))
+
+    engines = report.get("engines") or {}
+    st.markdown(
+        f"**Engines** — {engines.get('ready', 0)}/{engines.get('total', 0)} ready"
+        + (f" · stubs: {', '.join(engines.get('stubs') or [])}" if engines.get("stubs") else "")
+    )
+
+    publishing = report.get("publishing") or {}
+    analytics = report.get("analytics") or {}
+    learning = report.get("learning") or {}
+    api = report.get("api") or {}
+    st.markdown(
+        f"**Publishing** dry-run={publishing.get('dry_run_supported')} · "
+        f"YouTube keyed={publishing.get('youtube_credentials')}  \n"
+        f"**Analytics** YouTube registered={analytics.get('youtube_provider_registered')} · "
+        f"live={analytics.get('youtube_live')}  \n"
+        f"**Learning** armed={learning.get('continuous_learning_armed')}  \n"
+        f"**API** internal HTTP={api.get('internal_http')}"
+    )
+
+    blockers = report.get("blockers") or []
+    if blockers:
+        st.warning("Remaining blockers:\n\n" + "\n".join(f"- {b}" for b in blockers))
+    else:
+        st.success("No structural readiness blockers.")
+
+
 def project_card(project: dict, *, on_open_key: str, on_dup_key: str, on_archive_key: str) -> None:
     """Render one project card in the workspace browser."""
     with st.container(border=True):

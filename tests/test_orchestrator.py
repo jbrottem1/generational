@@ -58,11 +58,11 @@ def test_full_pipeline_produces_production_packages(pipeline_result):
 
 def test_every_stage_reports_diagnostics(pipeline_result):
     reported = [report.stage for report in pipeline_result.stage_reports]
-    assert reported == pipeline_stage_names() + ["production", "packaging"] + distribution_stage_names()
+    assert reported == pipeline_stage_names() + ["production", "packaging"] + distribution_stage_names() + ["analytics", "learning"]
     # The named stages the OS contract promises are all present.
     for stage in (
         "trend", "research", "psychology", "script", "visual", "audio",
-        "quality", "render", "seo", "publish",
+        "quality", "render", "seo", "publish", "analytics", "learning",
     ):
         assert stage in reported
     for report in pipeline_result.stage_reports:

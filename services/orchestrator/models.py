@@ -209,4 +209,27 @@ class PipelineResult:
             "packages": [pkg.to_dict() for pkg in self.packages],
             "stage_reports": [report.to_dict() for report in self.stage_reports],
             "production_report": dict(self.production_report),
+            "context_summary": self._context_summary(),
+        }
+
+    def _context_summary(self) -> dict:
+        """Compact, API-safe slice of run context (no full package payloads)."""
+        ctx = self.context or {}
+        learning = ctx.get("learning_report") if isinstance(ctx.get("learning_report"), dict) else {}
+        publishing = ctx.get("publishing_result") if isinstance(ctx.get("publishing_result"), dict) else {}
+        return {
+            "command": str(ctx.get("command", ""))[:200],
+            "count": ctx.get("count"),
+            "model": ctx.get("model"),
+            "target_platform": ctx.get("target_platform"),
+            "publish_mode": ctx.get("publish_mode"),
+            "analytics_summary": dict(ctx.get("analytics_summary") or {}),
+            "learning_report": {
+                k: learning.get(k)
+                for k in ("status", "records_analyzed", "recommendations")
+            },
+            "publishing_result": {
+                k: publishing.get(k)
+                for k in ("status", "jobs_created", "published", "scheduled", "failed", "publish_mode")
+            },
         }

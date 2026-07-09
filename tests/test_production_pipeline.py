@@ -51,12 +51,18 @@ def pipeline_result():
 def test_single_entry_point_runs_every_stage_in_order(pipeline_result):
     assert pipeline_result.succeeded, pipeline_result.error
     reported = [report.stage for report in pipeline_result.stage_reports]
-    expected = pipeline_stage_names() + ["production", "packaging"] + distribution_stage_names()
+    expected = (
+        pipeline_stage_names()
+        + ["production", "packaging"]
+        + distribution_stage_names()
+        + ["analytics", "learning"]
+    )
     assert reported == expected
-    # Preferred distribution tail (v9.7): … → render → post_production →
-    # seo → optimization → publish. Stubs in the middle may skip with WARNING.
-    assert reported[-5:] == [
+    # Preferred closed-loop tail: … → publish → analytics → learning.
+    # Stubs in the middle may skip with WARNING.
+    assert reported[-7:] == [
         "render", "post_production", "seo", "optimization", "publish",
+        "analytics", "learning",
     ]
 
 

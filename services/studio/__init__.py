@@ -32,6 +32,7 @@ from services.studio.projects import (
     update_project_metadata,
 )
 from services.studio.providers import get_provider_dashboard
+from services.studio.readiness import get_production_readiness
 
 __all__ = [
     "DEFAULT_STUDIO_SETTINGS",
@@ -47,6 +48,7 @@ __all__ = [
     "duplicate_project",
     "extract_previews",
     "get_executive_dashboard",
+    "get_production_readiness",
     "get_provider_dashboard",
     "is_longform_command",
     "list_studio_projects",

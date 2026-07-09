@@ -95,7 +95,13 @@ class PublishingManager:
                 visibility=visibility,
             )
             policy = self.retry_manager.policy_for(provider)
-            status = JobStatus.QUEUED if schedule["mode"] == "immediate" else JobStatus.SCHEDULED
+            schedule_mode = schedule.get("mode", mode)
+            if schedule_mode in ("immediate", "dry_run"):
+                status = JobStatus.QUEUED
+            else:
+                status = JobStatus.SCHEDULED
+            if schedule_mode == "dry_run":
+                package = {**package, "dry_run": True, "publish_mode": "dry_run"}
             job = build_publishing_job(
                 package,
                 platform=canonical,
@@ -107,6 +113,8 @@ class PublishingManager:
                 max_retries=policy["max_retries"],
                 status=status,
             )
+            job["mode"] = schedule_mode
+            job["publish_mode"] = schedule_mode
             warnings.extend(package["diagnostics"]["format_warnings"])
             jobs.append(self.queue.enqueue(job))
         return jobs, warnings
@@ -143,8 +151,26 @@ class PublishingManager:
         job["status"] = JobStatus.PUBLISHING
         started = time.time()
         started_at = _now_iso()
+        dry_run = (
+            job.get("publish_mode") == "dry_run"
+            or job.get("mode") == "dry_run"
+            or bool((job.get("package") or {}).get("dry_run"))
+        )
         try:
-            result = provider.publish(job["package"])
+            if dry_run and hasattr(provider, "dry_run"):
+                result = provider.dry_run(job["package"])
+            elif dry_run:
+                result = {
+                    "status": "published",
+                    "post_id": f"dryrun_{job.get('job_id', 'job')[:12]}",
+                    "post_url": "",
+                    "published_at": _now_iso(),
+                    "error": "",
+                    "mock": True,
+                    "dry_run": True,
+                }
+            else:
+                result = provider.publish(job["package"])
         except Exception as exc:  # noqa: BLE001 - publish failures degrade, never crash
             result = {"status": "failed", "error": str(exc), "post_id": "", "post_url": "", "published_at": ""}
 
@@ -162,6 +188,7 @@ class PublishingManager:
             "warnings": job["package"]["diagnostics"].get("format_warnings", []),
             "error": result.get("error", ""),
             "analytics_ref": job.get("analytics_ref", ""),
+            "dry_run": bool(result.get("dry_run") or dry_run),
         }
         job.setdefault("history", []).append(attempt)
         self.history.record(job, attempt)
@@ -177,6 +204,7 @@ class PublishingManager:
                 provider=job["provider"], post_id=attempt["post_id"],
                 duration_ms=attempt["duration_ms"],
                 scheduled=job.get("scheduled_time", ""), actual=attempt["published_at"],
+                dry_run=attempt["dry_run"],
             )
         else:
             self.retry_manager.record_failure(job, result.get("error", "publish failed"), provider)

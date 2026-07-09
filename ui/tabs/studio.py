@@ -18,7 +18,7 @@ def render() -> None:
 
     _handle_pending_actions()
 
-    workspace, create, pipeline, preview, settings, providers, library, dashboard = st.tabs([
+    workspace, create, pipeline, preview, settings, providers, library, dashboard, readiness = st.tabs([
         "🏠 Workspace",
         "✨ Create",
         "⚡ Pipeline",
@@ -27,6 +27,7 @@ def render() -> None:
         "🔌 Providers",
         "📚 Library",
         "📊 Dashboard",
+        "🛡 Readiness",
     ])
 
     with workspace:
@@ -45,6 +46,8 @@ def render() -> None:
         _render_library()
     with dashboard:
         _render_dashboard()
+    with readiness:
+        _render_readiness()
 
 
 def _handle_pending_actions() -> None:
@@ -363,3 +366,9 @@ def _render_dashboard() -> None:
     st.markdown("### Executive Dashboard")
     dashboard = studio.get_executive_dashboard()
     components.executive_dashboard_view(dashboard)
+
+
+def _render_readiness() -> None:
+    st.markdown("### Production Readiness")
+    report = studio.get_production_readiness()
+    components.production_readiness_view(report)
