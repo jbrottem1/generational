@@ -56,7 +56,7 @@ def test_creative_studio_is_a_live_contract_engine():
     assert engine.is_ready() is True
     diag = engine.diagnostics()
     assert diag["engine_id"] == "creative_studio"
-    assert diag["version"] == "1.0.0"
+    assert diag["version"] == "1.1.0"
     assert "unified_packages" in diag["input_contract"]
     assert "creative_summary" in diag["output_contract"]
     assert "creative_packages" in diag["output_contract"]

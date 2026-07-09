@@ -162,9 +162,22 @@ reusable environments stage every production; continuity tracking and
 creative QC produce a production readiness score the Render Engine gates
 on. Asset sourcing is provider-driven (`CreativeAssetProvider`) — no
 vendor is ever hardcoded. Output: the ContentPackage `creative_package`
-slot (CreativeProductionPackage v1.0). See `CREATIVE_STUDIO.md`.
+slot (CreativeProductionPackage v1.1). See `CREATIVE_STUDIO.md`.
 
-- **Owns:** creative direction, production types, storyboards, shot lists, the character/style/environment systems, visual continuity, creative QC, creative asset requirements
+v1.1 (Creative Intelligence & Storytelling) extends the studio
+additively: persistent worlds (World Engine), lens-level camera direction
+(Camera Director), color & lighting design with accessibility guidance,
+full animation planning (facial animation, lip-sync windows, physics
+notes), categorized asset planning (vehicles, icons, logos, textures,
+VFX, particle systems), per-platform creative adaptation, an append-only
+Creative Memory (`data/creative_studio/`), and a Learning Loop that folds
+analytics/trend/optimization/behavioral recommendations into future
+blueprints. Storyboard scenes gained psychological objectives, music
+moods, SFX cues, visual emphasis, and expected-retention scores; the
+style library grew to 24 presets; QC now also validates duplicate
+characters, story flow, brand violations, and accessibility.
+
+- **Owns:** creative direction, production types, storyboards, shot lists, the character/style/environment/world systems, camera direction, color & lighting, animation planning, platform adaptation, creative memory, visual continuity, creative QC, creative asset requirements
 - **Modules:** `engines/creative_studio.py`, `services/creative_studio/`, `providers/creative_provider.py` + `providers/creative/`
 
 ### Development-agent landing zones (v8.1)

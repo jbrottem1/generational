@@ -145,7 +145,10 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
     motion/camera plans, asset requirements, thumbnail concepts,
     continuity report, and a 0-100 production readiness score — into the
     ContentPackage `creative_package` slot
-    (CreativeProductionPackage v1.0, see `CREATIVE_STUDIO.md`). It prefers
+    (CreativeProductionPackage v1.1 — v1.1 adds world plan, lens-level
+    camera direction, color & lighting, full animation planning, platform
+    adaptations, creative memory, and learning adaptations; see
+    `CREATIVE_STUDIO.md`). It prefers
     `unified_packages`, falls back to `ideas`, and with nothing to design
     reports zero items — never a failure. Scheduling it automatically
     inside `run_full_pipeline()` (between packaging and render) is an

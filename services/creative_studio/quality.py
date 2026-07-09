@@ -1,7 +1,8 @@
 """Creative Quality Control — is this blueprint actually producible?
 
 Validates missing assets, broken continuity, scene completeness, timing,
-provider compatibility, and overall production readiness. Findings are
+provider compatibility, duplicate characters, story flow, brand
+violations, accessibility, and overall production readiness. Findings are
 warnings/blockers in a validation dict — QC never raises and never crashes
 the pipeline (same failure policy as every distribution engine).
 """
@@ -100,6 +101,61 @@ def validate_package(package: dict) -> dict:
     checks["provider_compatibility"] = {"unsupported_asset_types": unsupported}
     if unsupported:
         warnings.append(f"no provider supports asset types: {unsupported}")
+
+    # Duplicate characters — the same identity cast twice corrupts
+    # continuity and doubles asset generation.
+    cast = package.get("character_plan", {}).get("cast", [])
+    seen_ids: "set[str]" = set()
+    seen_signatures: "set[str]" = set()
+    duplicates = []
+    for character in cast:
+        character_id = character.get("character_id", "")
+        signature = character.get("visual_signature", "")
+        if character_id in seen_ids:
+            duplicates.append(f"character {character_id} cast more than once")
+        elif signature and signature in seen_signatures:
+            duplicates.append(
+                f"character {character_id} duplicates another cast member's visual signature"
+            )
+        seen_ids.add(character_id)
+        if signature:
+            seen_signatures.add(signature)
+    checks["duplicate_characters"] = {"cast": len(cast), "duplicates": len(duplicates)}
+    warnings.extend(duplicates)
+
+    # Story flow — the arc must open on a hook, close on a payoff, and
+    # never regress (e.g. a payoff before an escalation).
+    flow_issues = []
+    if storyboard:
+        order = {"hook": 0, "setup": 1, "development": 2, "escalation": 3, "revelation": 4, "payoff": 5}
+        purposes = [scene.get("purpose", "") for scene in storyboard]
+        if purposes[0] != "hook":
+            flow_issues.append(f"story opens on '{purposes[0]}' instead of a hook")
+        if len(purposes) > 1 and purposes[-1] != "payoff":
+            flow_issues.append(f"story ends on '{purposes[-1]}' instead of a payoff")
+        ranks = [order.get(purpose) for purpose in purposes if purpose in order]
+        if any(later < earlier for earlier, later in zip(ranks, ranks[1:])):
+            flow_issues.append("story beats regress — a later scene rewinds the arc")
+    checks["story_flow"] = {"issues": len(flow_issues)}
+    warnings.extend(f"story flow: {issue}" for issue in flow_issues)
+
+    # Brand violations — branded characters must belong to this brand.
+    brand_id = str(package.get("creative_blueprint", {}).get("brand_id", "") or "")
+    brand_issues = [
+        f"character {character.get('character_id', '?')} belongs to brand "
+        f"'{character.get('brand_id')}' but this production is '{brand_id or 'unbranded'}'"
+        for character in cast
+        if character.get("brand_id") and character.get("brand_id") != brand_id
+    ]
+    checks["brand"] = {"brand_id": brand_id, "violations": len(brand_issues)}
+    warnings.extend(f"brand: {issue}" for issue in brand_issues)
+
+    # Accessibility — the package must carry accessibility guidance and
+    # keep hook overlays inside caption-safe design.
+    accessibility = package.get("color_lighting_plan", {}).get("accessibility", {})
+    checks["accessibility"] = {"guidance_present": bool(accessibility)}
+    if not accessibility:
+        warnings.append("accessibility: no accessibility guidance in the color & lighting plan")
 
     status = "FAILED" if blockers else ("WARNING" if warnings else "SUCCESS")
     return {"status": status, "warnings": warnings, "blockers": blockers, "checks": checks}

@@ -291,7 +291,7 @@ tuples in `services/creative_studio/models.py` are the testable contract;
 all output is JSON-safe dicts, additive-only from 1.0. Full specification:
 `CREATIVE_STUDIO.md`.
 
-**CreativeProductionPackage** (`CREATIVE_PACKAGE_FIELDS`, v1.0):
+**CreativeProductionPackage** (`CREATIVE_PACKAGE_FIELDS`, v1.1):
 
 | Field | Type | Meaning |
 |---|---|---|
@@ -310,8 +310,34 @@ all output is JSON-safe dicts, additive-only from 1.0. Full specification:
 | `production_readiness` | dict | 0-100 score + status (`ready` / `needs_review` / `incomplete`) + blockers — the number Render can gate on |
 | `creative_diagnostics` | dict | scenes, duration, asset counts, environments, style/type/complexity |
 
+**v1.1 fields (additive — Creative Intelligence & Storytelling):**
+
+| Field | Type | Meaning |
+|---|---|---|
+| `world_plan` | dict | the persistent world (`WORLD_FIELDS`) staging this production + per-scene staging |
+| `color_lighting_plan` | dict | palette, per-scene lighting, contrast strategy, hierarchy, brand colors, accessibility, emotional color map (`COLOR_LIGHTING_FIELDS`) |
+| `platform_adaptations` | list | per-platform creative variations (`PLATFORM_ADAPTATION_FIELDS`): aspect ratio, safe zones, pacing, opening seconds, CTA placement |
+| `creative_memory` | dict | memory entries recorded for this production (`MEMORY_ENTRY_FIELDS` refs) |
+| `learning_adaptations` | dict | the upstream guidance that shaped this package (`CREATIVE_GUIDANCE_FIELDS`) |
+
+v1.1 also extends (additively): `STORYBOARD_SCENE_FIELDS` with
+`psychological_objective`, `narration_alignment`, `music_mood`,
+`sound_effects`, `visual_emphasis`, `expected_retention`;
+`CHARACTER_FIELDS` with `kind`, `expressions`, `movement_style`,
+`emotion_profile`, `outfits`, `accessories`, `memory_hooks`;
+`CREATIVE_BLUEPRINT_FIELDS` with `brand_id`, `world_id`; the
+`camera_plan` shots with lens-level direction (`CAMERA_SHOT_FIELDS`);
+the `animation_plan` with `character_movement`, `facial_animation`,
+`camera_animation`, `motion_graphics`, `timing`, `lip_sync`,
+`physics_notes`; and `CREATIVE_ASSET_TYPES` with `character`,
+`background`, `object`, `vehicle`, `icon`, `logo`, `texture`, `vfx`,
+`particle_system`.
+
 **Context keys** (additive): `creative_summary`
 (`CREATIVE_SUMMARY_FIELDS`) + `creative_packages` (creative stage output).
+The Learning Loop READS (never writes): `learning_recommendations`,
+`opportunity_recommendations`, `optimization_report`,
+`psychology_report`, `attention_report`.
 
 Creative asset backends implement `CreativeAssetProvider`
 (`providers/creative_provider.py`) and register per asset type in

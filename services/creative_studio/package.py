@@ -1,9 +1,10 @@
 """CreativeProductionPackage assembly — the studio's single deliverable.
 
 `build_creative_package()` turns one ContentPackage-style item into one
-complete visual production blueprint (CREATIVE_PACKAGE_FIELDS): Director
-blueprint → storyboard → shot list → animation/character/environment/
-motion/camera plans → asset requirements → thumbnail concepts → continuity
+complete visual production blueprint (CREATIVE_PACKAGE_FIELDS): learning
+guidance → Director blueprint → storyboard → shot list → world/animation/
+character/environment/motion plans → Camera Director → color & lighting →
+asset planning → platform adaptations → thumbnail concepts → continuity
 report → quality control → production readiness. `design_items()` runs it
 across everything in the context and writes each item's
 `creative_package` slot (Agent 12's write zone — no other slot is mutated).
@@ -14,15 +15,21 @@ from __future__ import annotations
 from datetime import datetime, timezone
 
 from providers.creative import provider_plan
+from services.creative_studio.animation import build_animation_plan
+from services.creative_studio.assets import build_asset_plan
+from services.creative_studio.camera import build_camera_plan
 from services.creative_studio.characters import cast_characters
+from services.creative_studio.color_lighting import build_color_lighting_plan
 from services.creative_studio.continuity import track_continuity
 from services.creative_studio.director import build_blueprint
 from services.creative_studio.environments import get_environment
+from services.creative_studio.guidance import apply_guidance_to_item, derive_creative_guidance
 from services.creative_studio.models import (
     CREATIVE_ENGINE_VERSION,
     CREATIVE_PACKAGE_VERSION,
 )
-from services.creative_studio.production_types import get_production_type, select_production_type
+from services.creative_studio.platforms import build_platform_adaptations
+from services.creative_studio.production_types import select_production_type
 from services.creative_studio.quality import production_readiness, validate_package
 from services.creative_studio.storyboard import (
     build_asset_requirements,
@@ -30,23 +37,29 @@ from services.creative_studio.storyboard import (
     build_storyboard,
 )
 from services.creative_studio.styles import get_style
+from services.creative_studio.worlds import get_world
 
 
 def _now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
-def _animation_plan(blueprint: dict, storyboard: "list[dict]") -> dict:
-    production_type = get_production_type(blueprint["production_type"]) or {}
+def _world_plan(blueprint: dict, storyboard: "list[dict]") -> dict:
+    """The persistent world staging this production and how scenes live in it."""
+    world = get_world(blueprint.get("world_id", "")) or {}
     return {
-        "animation_style": blueprint["production_type"],
-        "techniques": list(production_type.get("techniques", [])),
-        "complexity": blueprint["production_complexity"],
-        "scenes": [
+        "world": world,
+        "staging_rules": [
+            "every scene inherits the world's lighting, mood, and camera language",
+            "environments used must belong to the world (or be registered into it)",
+            "the world persists across productions — do not redesign it per video",
+        ],
+        "scene_staging": [
             {
                 "scene_id": scene["scene_id"],
-                "motion_instructions": scene["motion_instructions"],
-                "transitions": scene["transitions"],
+                "environment": scene.get("background", ""),
+                "weather": world.get("weather", ""),
+                "mood": world.get("mood", ""),
             }
             for scene in storyboard
         ],
@@ -100,23 +113,6 @@ def _motion_plan(blueprint: dict, storyboard: "list[dict]") -> dict:
                 "duration_sec": scene["estimated_duration_sec"],
             }
             for scene in storyboard
-        ],
-    }
-
-
-def _camera_plan(blueprint: dict, shot_list: "list[dict]") -> dict:
-    return {
-        "cinematic_language": blueprint["cinematic_language"],
-        "aspect_ratio": blueprint["aspect_ratio"],
-        "shots": [
-            {
-                "shot_id": shot["shot_id"],
-                "scene_id": shot["scene_id"],
-                "angle": shot["camera_angle"],
-                "movement": shot["camera_movement"],
-                "duration_sec": shot["duration_sec"],
-            }
-            for shot in shot_list
         ],
     }
 
@@ -177,12 +173,17 @@ def _diagnostics(blueprint: dict, storyboard: "list[dict]", requirements: "list[
 
 def build_creative_package(item: dict, context: "dict | None" = None) -> dict:
     """One CreativeProductionPackage for one content item. Never raises."""
-    blueprint = build_blueprint(item)
-    production_type = select_production_type(item)
-    characters = cast_characters(item, production_type)
-    storyboard = build_storyboard(item, blueprint, characters)
+    guidance = derive_creative_guidance(context or {})
+    guided_item = apply_guidance_to_item(item, guidance)
+
+    blueprint = build_blueprint(guided_item)
+    production_type = select_production_type(guided_item)
+    characters = cast_characters(guided_item, production_type)
+    storyboard = build_storyboard(guided_item, blueprint, characters)
     shot_list = build_shot_list(storyboard)
-    requirements = build_asset_requirements(storyboard, blueprint, characters)
+    base_requirements = build_asset_requirements(storyboard, blueprint, characters)
+    requirements = build_asset_plan(storyboard, blueprint, characters, base_requirements, guided_item)
+    style = get_style(blueprint["visual_style"]) or {}
 
     package = {
         "creative_package_version": CREATIVE_PACKAGE_VERSION,
@@ -192,16 +193,21 @@ def build_creative_package(item: dict, context: "dict | None" = None) -> dict:
         "creative_blueprint": blueprint,
         "storyboard": storyboard,
         "shot_list": shot_list,
-        "animation_plan": _animation_plan(blueprint, storyboard),
+        "animation_plan": build_animation_plan(storyboard, blueprint, characters),
         "character_plan": _character_plan(characters, storyboard),
         "environment_plan": _environment_plan(storyboard),
         "motion_plan": _motion_plan(blueprint, storyboard),
-        "camera_plan": _camera_plan(blueprint, shot_list),
+        "camera_plan": build_camera_plan(storyboard, blueprint),
         "asset_requirements": requirements,
         "thumbnail_concepts": _thumbnail_concepts(item, blueprint, storyboard),
         "continuity_report": track_continuity(storyboard, blueprint, characters),
         "provider_plan": provider_plan(sorted({req["asset_type"] for req in requirements})),
         "generated_at": _now_iso(),
+        "world_plan": _world_plan(blueprint, storyboard),
+        "color_lighting_plan": build_color_lighting_plan(storyboard, blueprint, style, guided_item),
+        "platform_adaptations": build_platform_adaptations(guided_item, storyboard),
+        "creative_memory": {"entries": [], "recorded": False},
+        "learning_adaptations": guidance,
     }
 
     validation = validate_package(package)
@@ -211,13 +217,29 @@ def build_creative_package(item: dict, context: "dict | None" = None) -> dict:
     return package
 
 
-def design_items(items: "list[dict]", context: "dict | None" = None) -> "list[dict]":
+def design_items(
+    items: "list[dict]", context: "dict | None" = None, record_memory: bool = False
+) -> "list[dict]":
     """Design every item: writes each item's `creative_package` slot and
     returns the packages. Only Agent 12's slot is mutated — script, visual,
-    audio, render, seo, publishing, analytics slots are read, never written."""
+    audio, render, seo, publishing, analytics slots are read, never written.
+
+    With `record_memory=True` (the engine's mode) each production is also
+    remembered in the persistent creative memory."""
+    from services.creative_studio.memory import record_production
+
     packages = []
     for item in items:
         package = build_creative_package(item, context)
+        if record_memory:
+            entries = record_production(package, item)
+            package["creative_memory"] = {
+                "entries": [
+                    {"entry_id": entry["entry_id"], "kind": entry["kind"], "key": entry["key"]}
+                    for entry in entries
+                ],
+                "recorded": bool(entries),
+            }
         item["creative_package"] = package
         packages.append(package)
     return packages

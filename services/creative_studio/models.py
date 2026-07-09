@@ -13,11 +13,13 @@ from __future__ import annotations
 
 from dataclasses import asdict, dataclass, field
 
-CREATIVE_ENGINE_VERSION = "1.0.0"
+CREATIVE_ENGINE_VERSION = "1.1.0"
 
 # Version of the CreativeProductionPackage written into each
-# ContentPackage `creative_package` slot.
-CREATIVE_PACKAGE_VERSION = "1.0"
+# ContentPackage `creative_package` slot. 1.1 adds (additively): world
+# plan, camera direction, color & lighting, richer animation planning,
+# platform adaptations, creative memory, and learning adaptations.
+CREATIVE_PACKAGE_VERSION = "1.1"
 
 
 class ReadinessStatus:
@@ -53,6 +55,12 @@ CREATIVE_PACKAGE_FIELDS = (
     "validation",                # quality-control findings (warnings, never raises)
     "provider_plan",             # asset type → provider routing
     "generated_at",
+    # --- v1.1 Creative Intelligence extension (additive only).
+    "world_plan",                # WORLD_FIELDS world + scene staging (worlds.py)
+    "color_lighting_plan",       # COLOR_LIGHTING_FIELDS dict (color_lighting.py)
+    "platform_adaptations",      # per-platform creative variations (platforms.py)
+    "creative_memory",           # memory references recorded for this production
+    "learning_adaptations",      # CREATIVE_GUIDANCE_FIELDS dict (guidance.py)
 )
 
 # The Creative Director's production blueprint — every creative decision
@@ -70,6 +78,9 @@ CREATIVE_BLUEPRINT_FIELDS = (
     "tone",
     "audience",
     "script_interpretation",     # {"premise", "arc", "key_moments", "emotional_curve"}
+    # --- v1.1 Creative Intelligence extension (additive only).
+    "brand_id",                  # the brand this production belongs to ("" = house)
+    "world_id",                  # the persistent world staging this production
 )
 
 # One storyboard scene — the atom of the visual production blueprint.
@@ -93,6 +104,13 @@ STORYBOARD_SCENE_FIELDS = (
     "estimated_duration_sec",
     "asset_requirements",        # asset_ids this scene needs
     "production_notes",
+    # --- v1.1 Creative Intelligence extension (additive only).
+    "psychological_objective",   # what the viewer's mind must do in this beat
+    "narration_alignment",       # how visuals sync to the spoken words
+    "music_mood",
+    "sound_effects",             # list of SFX cues
+    "visual_emphasis",           # the one thing the eye must land on
+    "expected_retention",        # 0-100 predicted % of viewers still watching
 )
 
 # One entry of the flat shot list derived from the storyboard.
@@ -137,6 +155,14 @@ CHARACTER_FIELDS = (
     "personality",
     "usage_rights",              # original | licensed | historical_public_domain
     "brand_id",
+    # --- v1.1 Creative Intelligence extension (additive only).
+    "kind",                      # CharacterKind value (human, animal, mascot, ...)
+    "expressions",               # named facial expressions the character performs
+    "movement_style",            # how the character moves
+    "emotion_profile",           # emotion → performance note
+    "outfits",                   # named outfit variants (wardrobe stays the default)
+    "accessories",
+    "memory_hooks",              # stable keys future productions recall this character by
 )
 
 
@@ -157,6 +183,26 @@ class CharacterRole:
     ALL = (
         ORIGINAL, NARRATOR, MASCOT, AI_AVATAR, DIGITAL_HUMAN,
         CARTOON, BRANDED, EDUCATIONAL, HISTORICAL, PRESENTER,
+    )
+
+
+class CharacterKind:
+    """What a character IS (its role says what it does). Additive-only."""
+
+    HUMAN = "human"
+    ANIMAL = "animal"
+    MASCOT = "mascot"
+    CARTOON = "cartoon"
+    ANIME = "anime"
+    CHARACTER_3D = "3d"
+    BRAND_MASCOT = "brand_mascot"
+    HISTORICAL = "historical"
+    FANTASY = "fantasy"
+    CUSTOM = "custom"
+
+    ALL = (
+        HUMAN, ANIMAL, MASCOT, CARTOON, ANIME,
+        CHARACTER_3D, BRAND_MASCOT, HISTORICAL, FANTASY, CUSTOM,
     )
 
 
@@ -202,6 +248,88 @@ PRODUCTION_TYPE_FIELDS = (
     "asset_types",               # creative asset types this medium consumes
     "camera_language",
     "keywords",                  # selection signals matched against topic/script
+)
+
+# One persistent world (worlds.py) — a story-level setting that stages
+# productions and carries between them.
+WORLD_FIELDS = (
+    "world_id",
+    "label",
+    "description",
+    "lighting",
+    "architecture",
+    "textures",
+    "mood",
+    "weather",
+    "camera_language",
+    "environmental_storytelling",  # what the world itself tells the viewer
+    "environments",                # environment_ids staged inside this world
+    "keywords",                    # selection signals
+    "brand_id",
+)
+
+# One directed camera shot (camera.py) — the Camera Director's per-scene spec.
+CAMERA_SHOT_FIELDS = (
+    "shot_id",
+    "scene_id",
+    "angle",
+    "lens",                      # lens selection (focal length + character)
+    "movement",
+    "zoom",
+    "tracking",
+    "depth_of_field",
+    "focus_pull",
+    "motion_pacing",
+    "duration_sec",
+    "composition",
+)
+
+# The production's color & lighting design (color_lighting.py).
+COLOR_LIGHTING_FIELDS = (
+    "color_palette",
+    "lighting_setups",           # per-scene lighting design
+    "contrast_strategy",
+    "visual_hierarchy",
+    "brand_colors",
+    "accessibility",             # contrast/caption/flash guidance
+    "emotional_color_map",       # emotion → color treatment per scene
+)
+
+# One platform creative adaptation (platforms.py).
+PLATFORM_ADAPTATION_FIELDS = (
+    "platform",
+    "aspect_ratio",
+    "resolution",
+    "safe_zones",
+    "visual_pacing",
+    "opening_seconds",           # how the first seconds are treated on this platform
+    "cta_placement",
+    "max_duration_sec",
+    "notes",
+)
+
+# One creative memory entry (memory.py) — append-only, JSON-safe.
+MEMORY_ENTRY_FIELDS = (
+    "entry_id",
+    "kind",                      # character | world | brand | style | motif |
+                                 # scene_structure | transition | theme | asset
+    "key",                       # stable recall key (e.g. character_id, style_id)
+    "content",
+    "project_id",
+    "brand_id",
+    "created_at",
+)
+
+# The creative guidance derived from upstream intelligence (guidance.py) —
+# how analytics / trend / optimization / behavioral recommendations shaped
+# this package.
+CREATIVE_GUIDANCE_FIELDS = (
+    "sources",                   # which context keys contributed
+    "pacing_hint",
+    "style_hint",
+    "hook_emphasis",
+    "retention_focus",
+    "notes",
 )
 
 # The continuity report — what the studio tracked between scenes.
@@ -257,6 +385,13 @@ class StoryboardScene:
     estimated_duration_sec: float = 0.0
     asset_requirements: list = field(default_factory=list)
     production_notes: str = ""
+    # --- v1.1 Creative Intelligence extension (additive only).
+    psychological_objective: str = ""
+    narration_alignment: str = ""
+    music_mood: str = ""
+    sound_effects: list = field(default_factory=list)
+    visual_emphasis: str = ""
+    expected_retention: int = 0
 
     def to_dict(self) -> dict:
         return asdict(self)

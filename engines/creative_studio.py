@@ -27,6 +27,7 @@ from datetime import datetime, timezone
 
 from core.log import get_logger, log_event
 from engines.contracts import ContractEngine
+from services.creative_studio.memory import record_production
 from services.creative_studio.models import CREATIVE_ENGINE_VERSION, ReadinessStatus
 from services.creative_studio.package import build_creative_package
 
@@ -70,6 +71,10 @@ class CreativeStudioEngine(ContractEngine):
         "creative-direction", "storyboarding", "shot-listing",
         "character-consistency", "style-library", "environments",
         "continuity", "multi-format", "provider-driven",
+        # v1.1 Creative Intelligence.
+        "world-engine", "camera-direction", "color-lighting",
+        "animation-planning", "asset-planning", "platform-adaptation",
+        "creative-memory", "learning-loop",
     ]
 
     def is_ready(self) -> bool:
@@ -87,6 +92,14 @@ class CreativeStudioEngine(ContractEngine):
         for item in items:
             try:
                 package = build_creative_package(item, context)
+                entries = record_production(package, item)
+                package["creative_memory"] = {
+                    "entries": [
+                        {"entry_id": entry["entry_id"], "kind": entry["kind"], "key": entry["key"]}
+                        for entry in entries
+                    ],
+                    "recorded": bool(entries),
+                }
                 item["creative_package"] = package
             except Exception as exc:  # noqa: BLE001 - one bad item never stops the studio
                 package = {

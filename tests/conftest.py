@@ -50,6 +50,19 @@ def isolated_analytics_data(tmp_path_factory):
     knowledge._kb = original_kb
 
 
+@pytest.fixture(scope="session", autouse=True)
+def isolated_creative_memory(tmp_path_factory):
+    """Agent 12's Creative Studio engine persists creative memory
+    (data/creative_studio) — point the default directory at a temp dir for
+    the whole session so tests never write to the real store."""
+    import services.creative_studio.memory as creative_memory
+
+    original = creative_memory._DEFAULT_DIR
+    creative_memory._DEFAULT_DIR = str(tmp_path_factory.mktemp("creative_memory"))
+    yield
+    creative_memory._DEFAULT_DIR = original
+
+
 @pytest.fixture
 def project_store(tmp_path):
     return JsonProjectStore(directory=str(tmp_path / "projects"))

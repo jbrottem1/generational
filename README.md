@@ -4,6 +4,51 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.4 — Creative Intelligence & Storytelling (Agent 12)
+
+The Creative Studio grows into the full creative intelligence division
+(v1.1, all additive). Every storyboard scene now carries a psychological
+objective, narration alignment, music mood, sound-effect cues, a visual
+emphasis target, and a deterministic expected-retention score. New
+systems:
+
+- **World Engine** (`services/creative_studio/worlds.py`) — nine
+  persistent worlds (city, nature, sci-fi, historical, minimalist,
+  corporate, fantasy, educational, neutral studio) with lighting,
+  architecture, textures, mood, weather, camera language, and
+  environmental storytelling; `register_world()` adds more at runtime.
+- **Camera Director** (`camera.py`) — lens selection, movement, zoom,
+  tracking, depth of field, focus pulls, motion pacing, and composition
+  for every shot, plus the production's lens kit.
+- **Color & Lighting** (`color_lighting.py`) — master palette, per-scene
+  lighting setups, contrast strategy, visual hierarchy, brand colors,
+  accessibility guidance, and an emotional color map.
+- **Animation Planning** (`animation.py`) — character movement, facial
+  animation, camera easing, motion-graphics timing, lip-sync word
+  windows, and physics notes. Plans only — nothing renders here.
+- **Asset Planning** (`assets.py`) — categorized structured requests:
+  characters, backgrounds, objects, vehicles, icons, logos, textures,
+  VFX, and particle systems (`CREATIVE_ASSET_TYPES` extended additively).
+- **Platform Adaptation** (`platforms.py`) — per-platform aspect ratio,
+  safe zones, pacing, opening-seconds treatment, and CTA placement for
+  YouTube, TikTok, Instagram, Facebook, X, and LinkedIn.
+- **Creative Memory** (`memory.py`) — append-only persistent store
+  remembering characters, worlds, styles, motifs, scene structures,
+  transitions, and themes across productions.
+- **Learning Loop** (`guidance.py`) — analytics, trend, optimization, and
+  behavioral recommendations shape future blueprints automatically;
+  explicit item choices always win.
+- **8 new style presets** — pixar-inspired, photorealistic, watercolor,
+  oil painting, paper animation, motion design, infographic, educational
+  (24 total).
+- **Extended QC** — duplicate characters, broken story flow, brand
+  violations, and accessibility now validated (gracefully, as warnings).
+- **Richer characters** — kind, expressions, movement style, emotion
+  profiles, outfits, accessories, and memory hooks.
+
+38 new tests in `tests/test_creative_intelligence.py`. Docs:
+`CREATIVE_STUDIO.md`.
+
 ## Version 9.3 — Creative Studio & Visual Production Division (Agent 12)
 
 The creative department is live. The system now designs every visual

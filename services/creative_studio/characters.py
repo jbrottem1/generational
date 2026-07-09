@@ -17,9 +17,12 @@ from __future__ import annotations
 
 import uuid
 
-from services.creative_studio.models import CharacterRole
+from services.creative_studio.models import CharacterKind, CharacterRole
 
-CHARACTER_SYSTEM_VERSION = "1.0"
+CHARACTER_SYSTEM_VERSION = "1.1"
+
+# Default expressions every character can perform unless a spec narrows them.
+_DEFAULT_EXPRESSIONS = ["neutral", "curious", "delighted", "concerned", "surprised", "resolute"]
 
 _CHARACTERS: "dict[str, dict]" = {}
 
@@ -46,6 +49,14 @@ def create_character(spec: dict) -> dict:
         "personality": spec.get("personality", ""),
         "usage_rights": spec.get("usage_rights", "original"),
         "brand_id": spec.get("brand_id", ""),
+        # --- v1.1 Creative Intelligence extension (additive only).
+        "kind": spec.get("kind", CharacterKind.HUMAN),
+        "expressions": list(spec.get("expressions", _DEFAULT_EXPRESSIONS)),
+        "movement_style": spec.get("movement_style", ""),
+        "emotion_profile": dict(spec.get("emotion_profile", {})),
+        "outfits": list(spec.get("outfits", ([spec["wardrobe"]] if spec.get("wardrobe") else []))),
+        "accessories": list(spec.get("accessories", [])),
+        "memory_hooks": list(spec.get("memory_hooks", [character_id])),
     }
     _CHARACTERS[character_id] = stored
     return stored
@@ -136,6 +147,15 @@ _BUILTINS = (
         "voice_profile": "energetic, conversational",
         "personality": "sharp, friendly, direct-to-camera confidence",
         "usage_rights": "original",
+        "kind": CharacterKind.HUMAN,
+        "movement_style": "grounded presenter energy — open gestures, direct address",
+        "emotion_profile": {
+            "curiosity": "leans toward camera, eyebrow lift",
+            "surprise": "half-step back, open palms",
+            "satisfaction": "settled smile, slow nod",
+        },
+        "accessories": ["lapel mic"],
+        "memory_hooks": ["char_presenter_nova", "house_presenter"],
     },
     {
         "character_id": "char_mascot_gen",
@@ -151,6 +171,14 @@ _BUILTINS = (
         "voice_profile": "bright, playful",
         "personality": "encouraging, endlessly curious",
         "usage_rights": "original",
+        "kind": CharacterKind.BRAND_MASCOT,
+        "movement_style": "bouncy squash-and-stretch, hovers when excited",
+        "emotion_profile": {
+            "curiosity": "glow brightens, tilts whole body",
+            "tension": "glow dims, shrinks slightly",
+            "satisfaction": "spin and sparkle burst",
+        },
+        "memory_hooks": ["char_mascot_gen", "house_mascot"],
     },
     {
         "character_id": "char_prof_atlas",
@@ -167,6 +195,15 @@ _BUILTINS = (
         "voice_profile": "gentle, patient, precise",
         "personality": "patient explainer who loves questions",
         "usage_rights": "original",
+        "kind": CharacterKind.ANIMAL,
+        "movement_style": "deliberate head turns, wing gestures like a lecturer",
+        "emotion_profile": {
+            "curiosity": "head tilt, glasses adjust",
+            "surprise": "feathers puff, eyes widen",
+            "satisfaction": "slow satisfied blink",
+        },
+        "accessories": ["pointer stick", "pocket watch"],
+        "memory_hooks": ["char_prof_atlas", "house_teacher"],
     },
 )
 

@@ -14,6 +14,7 @@ from __future__ import annotations
 
 from services.creative_studio.production_types import select_production_type
 from services.creative_studio.styles import select_style
+from services.creative_studio.worlds import select_world
 
 # Pacing presets the Director chooses from — tempo drives scene length and
 # cut frequency downstream (storyboard, motion plan, render timeline).
@@ -163,4 +164,6 @@ def build_blueprint(item: dict) -> dict:
         "tone": style.get("mood", ""),
         "audience": str(item.get("audience", item.get("niche", "general"))),
         "script_interpretation": interpretation,
+        "brand_id": str(item.get("brand_id", "")),
+        "world_id": select_world(item)["world_id"],
     }

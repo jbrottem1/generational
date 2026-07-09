@@ -25,6 +25,16 @@ CREATIVE_ASSET_TYPES = (
     "stock_footage",
     "user_asset",
     "brand_asset",
+    # --- v1.1 Creative Intelligence extension (additive only).
+    "character",
+    "background",
+    "object",
+    "vehicle",
+    "icon",
+    "logo",
+    "texture",
+    "vfx",
+    "particle_system",
 )
 
 

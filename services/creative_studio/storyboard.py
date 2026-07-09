@@ -66,6 +66,55 @@ def _scene_emotion(purpose: str, curve: "list[str]") -> str:
     return emotion if emotion else (curve[0] if curve else "curiosity")
 
 
+# What the viewer's mind must do in each beat — the psychological objective.
+_PSYCH_OBJECTIVES = {
+    "hook": "seize attention and open a curiosity gap that demands closure",
+    "setup": "orient the viewer — establish stakes worth caring about",
+    "development": "deepen investment — each fact must raise a new question",
+    "escalation": "raise tension — the viewer must feel the outcome is uncertain",
+    "revelation": "deliver the aha — close the curiosity gap with surprise",
+    "payoff": "reward the watch and convert satisfaction into action",
+}
+
+# Music mood by scene emotion.
+_MUSIC_BY_EMOTION = {
+    "curiosity": "sparse pulsing curiosity bed, unresolved harmony",
+    "interest": "light rhythmic underscore, forward motion",
+    "engagement": "building mid-energy groove",
+    "tension": "low drone, tightening ostinato, rising filter",
+    "surprise": "hard drop-out then swell — silence sells the reveal",
+    "satisfaction": "warm resolving theme, full harmony",
+}
+
+# Sound-effect cues by scene purpose.
+_SFX_BY_PURPOSE = {
+    "hook": ["opening whoosh", "impact hit on the first frame"],
+    "setup": ["soft transition swish"],
+    "development": ["ambient environment bed"],
+    "escalation": ["riser building under narration"],
+    "revelation": ["reveal sting", "sub drop"],
+    "payoff": ["resolving chime", "brand endcard tone"],
+}
+
+
+def scene_retention(index: int, total: int, purpose: str, duration_sec: float, target_sec: float) -> int:
+    """Deterministic 0-100 expected retention at the END of one scene.
+
+    Models the known short-form curve: steep early drop, mid-video sag,
+    strong beats (escalation/revelation) holding viewers, and over-long
+    scenes bleeding them.
+    """
+    position = index / max(total - 1, 1)
+    base = 96 - int(position * 38)          # 96 → 58 across the runtime
+    if purpose in ("escalation", "revelation"):
+        base += 6                            # strong beats hold the audience
+    if purpose == "payoff":
+        base += 3                            # arrivals are watched through
+    if target_sec and duration_sec > target_sec * 1.5:
+        base -= 8                            # over-long scenes bleed viewers
+    return max(5, min(98, base))
+
+
 def _camera_for(index: int, total: int) -> dict:
     if index == 0:
         return dict(_HOOK_CAMERA)
@@ -108,12 +157,15 @@ def build_storyboard(item: dict, blueprint: dict, characters: "list[dict]") -> "
     ]
 
     total = len(beats)
+    target_sec = float(pacing.get("scene_target_sec", 4.0))
     scenes = []
     for index, narration in enumerate(beats):
         purpose = _scene_purpose(index, total)
+        emotion = _scene_emotion(purpose, curve)
         camera = _camera_for(index, total)
         environment = environments[index % len(environments)]
         cast_fragments = [character_prompt_fragment(cid) for cid in on_screen]
+        duration = _estimated_duration(narration, pacing)
 
         visual_description = " — ".join(
             part
@@ -128,7 +180,7 @@ def build_storyboard(item: dict, blueprint: dict, characters: "list[dict]") -> "
         scene = StoryboardScene(
             scene_id=f"cs_{project_id}_{index + 1:03d}",
             purpose=purpose,
-            emotion=_scene_emotion(purpose, curve),
+            emotion=emotion,
             narration=narration,
             visual_description=visual_description,
             camera_angle=camera["angle"],
@@ -149,12 +201,24 @@ def build_storyboard(item: dict, blueprint: dict, characters: "list[dict]") -> "
                 else ["cta endcard"] if purpose == "payoff"
                 else []
             ),
-            estimated_duration_sec=_estimated_duration(narration, pacing),
+            estimated_duration_sec=duration,
             asset_requirements=[f"asset_{project_id}_{index + 1:03d}"],
             production_notes=(
                 f"{purpose} beat — {blueprint.get('storytelling_style', '')}; "
                 f"hold brand consistency ({style.get('style_id', blueprint['visual_style'])})"
             ),
+            psychological_objective=_PSYCH_OBJECTIVES.get(purpose, _PSYCH_OBJECTIVES["development"]),
+            narration_alignment=(
+                f"visual beat lands with the first stressed word of: \"{narration[:60]}\""
+            ),
+            music_mood=_MUSIC_BY_EMOTION.get(emotion, "neutral underscore"),
+            sound_effects=list(_SFX_BY_PURPOSE.get(purpose, [])),
+            visual_emphasis=(
+                f"the {environment['label'].lower()} subject named in the narration"
+                if not on_screen
+                else f"character {on_screen[0]} — face and gesture carry the beat"
+            ),
+            expected_retention=scene_retention(index, total, purpose, duration, target_sec),
         )
         scenes.append(scene.to_dict())
     return scenes

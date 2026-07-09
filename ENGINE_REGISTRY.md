@@ -98,6 +98,16 @@ ContentPackage `creative_package` slot (see `DATA_CONTRACTS.md` §8.1 and
 characters are runtime registries; creative asset backends swap in per
 asset type via `register_creative_provider()` (`providers/creative/`).
 
+v1.1 (Creative Intelligence & Storytelling, additive) adds the World
+Engine (persistent worlds), lens-level Camera Director, Color & Lighting
+design with accessibility guidance, full Animation Planning (facial,
+lip-sync, physics), categorized Asset Planning (vehicles, icons, logos,
+textures, VFX, particles), Platform Adaptation, persistent Creative
+Memory (`data/creative_studio/memory.json`), a Learning Loop consuming
+`learning_recommendations` / `opportunity_recommendations` /
+`optimization_report` / behavioral context keys, and extended QC
+(duplicate characters, story flow, brand violations, accessibility).
+
 ## Reserved keys (planned / contract stubs — do NOT reuse)
 
 | Key | Stub type | Future owner | Stage |
