@@ -40,6 +40,7 @@ from engines.threat_detection import ThreatDetectionEngine
 from engines.timeline import TimelineEngine
 from engines.market_intelligence import MarketIntelligenceEngine
 from engines.asset_generation import AssetGenerationEngine
+from engines.creative_studio import CreativeStudioEngine
 from engines.post_production import PostProductionEngine
 from engines.trend_discovery import TrendDiscoveryEngine
 from engines.trend_forecasting import TrendForecastingEngine
@@ -57,6 +58,7 @@ for _engine_class in (
     TrendForecastingEngine,
     MarketIntelligenceEngine,
     AssetGenerationEngine,
+    CreativeStudioEngine,
     PostProductionEngine,
     ResearchEngine,
     IdeationEngine,

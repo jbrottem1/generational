@@ -31,13 +31,16 @@ ANALYTICS_LIVE = {"analytics", "learning"}
 # Agent 14 — the Universal Asset Generation Engine is live.
 ASSET_GENERATION_LIVE = {"asset_generation"}
 
+# Agent 12 — the Creative Studio Engine is live.
+CREATIVE_STUDIO_LIVE = {"creative_studio"}
+
 # Agent 17 — the Post-Production & Intelligent Editing Engine is live.
 POST_PRODUCTION_LIVE = {"post_production"}
 
 LIVE_KEYS = (
     INTELLIGENCE_LIVE | PRODUCTION_LIVE | RENDER_LIVE
     | OPTIMIZATION_LIVE | PUBLISHING_LIVE | ANALYTICS_LIVE
-    | ASSET_GENERATION_LIVE | POST_PRODUCTION_LIVE
+    | ASSET_GENERATION_LIVE | CREATIVE_STUDIO_LIVE | POST_PRODUCTION_LIVE
 )
 
 PLANNED_KEYS = {

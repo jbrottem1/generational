@@ -61,6 +61,8 @@ STAGE_GROUPS: "dict[str, list[str]]" = {
     "asset_generation": ["asset_generation"],
     # Post-Production (Agent 17): intelligent editing after render.
     "post_production": ["post_production"],
+    # Creative Studio (Agent 12): visual production design on demand.
+    "creative": ["creative_studio"],
 }
 
 # Post-packaging distribution stages executed by the full production
