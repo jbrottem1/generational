@@ -163,7 +163,8 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
 | refinement | ranking…threat_detection | live | shared |
 | quality | quality | live | shared (gate) |
 | production | scene_planning…publishing_queue | live | Agent 1 |
-| creative | creative_studio | live (mock asset providers) | **Agent 12** |
+| creative | creative_studio | live (on-demand stage) | **Agent 12** |
+| asset_generation | asset_generation | live (mock providers) | **Agent 14** |
 | render | image, video (+ `render` façade) | live (mock render) | **Agent 6** |
 | seo | seo_optimization | live | **Agent 8** |
 | publish | scheduler, publishing | live (mock providers) | **Agent 7** |
@@ -172,7 +173,7 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
 | brand_management | brand_management | future | Multi-Brand OS agent |
 
 Reserved future stages (names only — see `AGENT_REGISTRY.md`):
-`optimization_lab` (Agent 13), `asset_generation` (Agent 14),
+`optimization_lab` (Agent 13),
 `ip_management` (Agent 15), `animation` (Agent 16), `post_production`
 (Agent 17), `ai_director` (Agent 18), `business_intelligence` (Agent 19),
 `autonomous_executive` (Agent 20). Each plugs in via `register_stage()` +

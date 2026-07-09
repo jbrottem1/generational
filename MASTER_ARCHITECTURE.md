@@ -128,6 +128,14 @@ Turns plans into pixels. Consumes the full ProductionPackage (structured script,
 - **Owns:** asset resolution, timeline construction, scene render plans, caption render plans, audio mixing plans, transitions/motion instructions, render validation, (mock) rendering
 - **Modules:** `engines/render/` (engine, models, timeline, scene_plans, assets, captions, audio_mix, transitions, motion, packaging, validator, renderer), `engines/image.py`, `engines/video.py`; legacy media-production helpers: `engines/render_package.py`, `engines/timeline.py`, `engines/subtitle.py`, `engines/asset_manager.py`
 
+### Agent 14: Universal Asset Generation Engine — LANDED (mock providers)
+
+The generation department. Consumes Creative Studio asset requirements (or fallback scene plans) and produces production-ready visual assets through swappable AI provider adapters — images, illustrations, thumbnails, textures, video clips, icons, 3D prep assets, and more. Provider Selection Engine picks the best backend; Prompt Compiler optimizes per dialect; content-address cache avoids duplicate generation; quality analysis gates readiness for render.
+
+- **Owns:** asset generation, prompt compilation, provider selection, asset registry, caching, quality validation
+- **Modules:** `engines/asset_generation.py`, `services/asset_generation/`, `providers/generation_provider.py` + `providers/asset_generation/`
+- **See:** `ASSET_GENERATION_ENGINE.md`
+
 ### Agent 7: Quality Assurance Engine
 
 The last gate before the outside world. Checks rendered output against the plan: hook lands in the first seconds, audio/visual sync, subtitle accuracy, platform policy compliance, citation integrity, and overall craft. Rejects with actionable revision notes rather than a bare pass/fail.
@@ -163,6 +171,7 @@ zones, contract stubs, and orchestrator stages already wired (see
 | Agent 8 | Global Content Optimization (SEO) — **LANDED** (live stage) | `engines/seo/` + `engines/seo_optimization.py` + `services/seo/` | `seo` |
 | Agent 9 | Analytics & Learning | `engines/analytics/` | `analytics` · `learning` |
 | Agent 10 | Multi-Brand Operating System | `engines/brands/` | `brand_management` |
+| Agent 14 | Universal Asset Generation — **LANDED** (mock providers, live stage) | `engines/asset_generation.py` + `services/asset_generation/` + `providers/asset_generation/` | `asset_generation` |
 
 Future engines subclass `ContractEngine` (`engines/contracts.py`) and fill
 their slot in the canonical `ContentPackage` (`DATA_CONTRACTS.md`). Their

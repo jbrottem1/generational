@@ -28,9 +28,13 @@ PUBLISHING_LIVE = {"publishing", "scheduler"}
 # Agent 9 — the Analytics & Continuous Learning Engine is live.
 ANALYTICS_LIVE = {"analytics", "learning"}
 
+# Agent 14 — the Universal Asset Generation Engine is live.
+ASSET_GENERATION_LIVE = {"asset_generation"}
+
 LIVE_KEYS = (
     INTELLIGENCE_LIVE | PRODUCTION_LIVE | RENDER_LIVE
     | OPTIMIZATION_LIVE | PUBLISHING_LIVE | ANALYTICS_LIVE
+    | ASSET_GENERATION_LIVE
 )
 
 PLANNED_KEYS = {

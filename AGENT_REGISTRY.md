@@ -44,7 +44,7 @@ Companion views: `ENGINE_REGISTRY.md` (engine keys), `SYSTEM_DEPENDENCY_MAP.md`
 
 | Agent | Subsystem | Engine keys | Status |
 |---|---|---|---|
-| **14** | Universal Asset Generation | reserved key: `asset_generation` (extends `providers/creative/`) | planned |
+| **14** | Universal Asset Generation | key: `asset_generation` (`services/asset_generation/` + `providers/asset_generation/`) | **live** |
 | **15** | Character, Universe & IP | reserved key: `ip_management` | planned |
 
 ---

@@ -50,6 +50,19 @@ def isolated_analytics_data(tmp_path_factory):
     knowledge._kb = original_kb
 
 
+@pytest.fixture(scope="session", autouse=True)
+def isolated_asset_generation_data(tmp_path_factory):
+    """Agent 14's asset registry persists generated assets (data/
+    asset_generation) — point the default directory at a temp dir for the
+    whole session so tests never write to the real store."""
+    import services.asset_generation.registry as asset_registry
+
+    original = asset_registry._DEFAULT_DIR
+    asset_registry._DEFAULT_DIR = str(tmp_path_factory.mktemp("asset_generation"))
+    yield
+    asset_registry._DEFAULT_DIR = original
+
+
 @pytest.fixture
 def project_store(tmp_path):
     return JsonProjectStore(directory=str(tmp_path / "projects"))

@@ -31,6 +31,7 @@ list is `CONTENT_PACKAGE_FIELDS`.
 | `analytics_placeholder` / `analytics_package` | dict | **Agent 9** |
 | `learning_metadata` | dict | **Agent 9** |
 | `creative_package` | dict | **Agent 12** (storyboards, shot lists, style, characters, environments) |
+| `asset_package` | dict | **Agent 14** (generated assets, jobs, cache report, readiness) |
 | `status` | str | pipeline (`planned → approved/held → rendered → scheduled → published`) |
 | `diagnostics` | dict | any stage (append keys) |
 | `created_at` / `extras` | str / dict | packager / forward-compat overflow |
@@ -305,6 +306,38 @@ its own context keys; render/seo/publishing slots are read, never mutated.
 Feedback reaches upstream engines through `OrchestratorHook` (kinds
 `analytics` / `learning`) and the guidance adapters — never engine-to-engine
 calls.
+
+---
+
+## 8.1 asset_package (Agent 14) — `services/asset_generation/`
+
+The Universal Asset Generation Engine (`asset_generation` engine,
+`asset_generation` stage) transforms structured creative requests into
+production-ready visual assets. Field tuples in
+`services/asset_generation/models.py` are the testable contract;
+all output is JSON-safe dicts, additive-only from 1.0.
+
+**ContentPackage `asset_package` slot** (`ASSET_PACKAGE_FIELDS`):
+`asset_package_version`, `engine_version`, `project_id`, `assets`
+(list of `ASSET_FIELDS` dicts), `scene_assets`, `character_assets`,
+`thumbnail_assets`, `marketing_assets`, `video_assets`, `generation_jobs`,
+`provider_usage`, `selection_strategy`, `cache_report`, `cost_report`,
+`quality_report`, `validation`, `readiness`, `asset_diagnostics`,
+`generated_at`.
+
+**Context keys** (additive): `asset_generation_summary` +
+`asset_packages` (aggregate run output).
+
+Each **Asset** (`ASSET_FIELDS`) carries: `asset_id`, `asset_type`,
+`asset_class`, `uri`, `provider`, `prompt_spec`, `fingerprint`, `version`,
+`status`, `quality`, and metadata.
+
+Generation backends implement `GenerationProvider`
+(`providers/generation_provider.py`) and register in
+`providers/asset_generation/` (deterministic mock serves every class today).
+Agent 14 writes ONLY the `asset_package` slot and its context keys;
+script, visual, audio, creative, render, seo, publishing, and analytics
+slots are read, never mutated. See `ASSET_GENERATION_ENGINE.md`.
 
 ---
 

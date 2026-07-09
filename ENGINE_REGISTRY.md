@@ -115,6 +115,16 @@ register in `engines/__init__.py`, add `creative` to `STAGE_GROUPS` and
 fill `creative_package`. See `INTEGRATION_CHECKLIST.md` and
 `CAPABILITY_MATRIX.md`.
 
+## Live engine (asset generation — Agent 14)
+
+`asset_generation` — the Universal Asset Generation Engine
+(`engines/asset_generation.py`, logic in `services/asset_generation/`,
+providers in `providers/asset_generation/`). Transforms structured creative
+requests into production-ready visual assets through swappable AI provider
+adapters. Writes `asset_package` on each ContentPackage; context keys
+`asset_generation_summary` + `asset_packages`. Runs in the distribution
+pipeline after packaging, before render. See `ASSET_GENERATION_ENGINE.md`.
+
 ## Reserved keys (planned / contract stubs / names — do NOT reuse)
 
 | Key | Status | Future owner |
@@ -122,7 +132,6 @@ fill `creative_package`. See `INTEGRATION_CHECKLIST.md` and
 | `voice` | planned stub | Voice Pipeline agent (real TTS / voice clone) |
 | `brand_management` | contract stub | Multi-Brand OS agent |
 | `optimization_lab` | name reserved | Agent 13 — Optimization Laboratory |
-| `asset_generation` | name reserved | Agent 14 — Universal Asset Generation |
 | `ip_management` | name reserved | Agent 15 — Character, Universe & IP |
 | `animation` | name reserved | Agent 16 — Animation & Cinematics |
 | `post_production` | name reserved | Agent 17 — Video Editing & Post Production |

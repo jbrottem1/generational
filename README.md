@@ -4,6 +4,30 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.7 — Universal Asset Generation Engine (Agent 14)
+
+Every visual asset the platform uses now flows through one generation
+department. The `asset_generation` engine consumes Creative Studio asset
+requirements (or fallback scene plans), compiles provider-optimized prompts,
+selects the best AI backend, generates with retries and fallback, caches
+identical requests, validates quality, and writes production-ready
+`asset_package` deliverables — images, thumbnails, video clips, textures,
+icons, 3D prep assets, and more.
+
+```python
+from services.orchestrator import Orchestrator
+
+context = {"unified_packages": [item_with_creative_package]}
+Orchestrator().run_asset_generation_stage(context)
+# context["unified_packages"][0]["asset_package"]["assets"]
+```
+
+40+ asset types · 12 provider adapters (OpenAI, Google, Runway, Flux, …) ·
+deterministic mock fallback · content-address cache · character consistency ·
+15 style packs. See `ASSET_GENERATION_ENGINE.md`.
+
+Distribution pipeline: **packaging → asset generation → render → seo → publish**.
+
 ## Version 9.6 — Architecture Review & Platform Governance (Agent 1)
 
 A comprehensive architecture audit covering Agents 1-11 (shipped) and

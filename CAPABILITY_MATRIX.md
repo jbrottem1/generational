@@ -26,7 +26,7 @@ Capability tags are declared on `ContractEngine` subclasses via the
 | **Intelligence** | Analytics & learning | `analytics`, `learning`, `attribution` | `analytics`, `learning` |
 | **Intelligence** | Creative design | `creative`, `storyboard`, `style` | `creative_studio` *(pending `feature/creative-studio` merge)* |
 | **Intelligence** | Optimization lab | `experimentation`, `ab-testing` | `optimization_lab` *(planned, Agent 13)* |
-| **Media Gen** | Asset generation | `asset-generation`, `image-gen`, `video-gen` | `asset_generation` *(planned, Agent 14)* |
+| **Media Gen** | Asset generation | `asset-generation`, `image-gen`, `video-gen` | `asset_generation` *(live, Agent 14)* |
 | **Media Gen** | IP & universes | `ip`, `character`, `universe` | `ip_management` *(planned, Agent 15)* |
 
 ---

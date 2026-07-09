@@ -170,6 +170,9 @@ class Orchestrator:
     def run_render_stage(self, context: dict) -> StageReport:
         return self.run_stage("render", context)
 
+    def run_asset_generation_stage(self, context: dict) -> StageReport:
+        return self.run_stage("asset_generation", context)
+
     def run_seo_stage(self, context: dict) -> StageReport:
         return self.run_stage("seo", context)
 
@@ -245,8 +248,8 @@ class Orchestrator:
         result.stage_reports.append(self._run_production(context))
         result.stage_reports.append(self._run_packaging(context, result))
 
-        # Distribution: render → global content optimization → publishing.
-        # These operate on the packaged output; a failure here degrades the
+        # Distribution: asset generation → render → global content
+        # optimization → publishing. These operate on the packaged output; a failure here degrades the
         # run to WARNING (errors preserved in the report) instead of
         # discarding the finished content — the pipeline never crashes.
         for stage in distribution_stage_names():
