@@ -4,6 +4,70 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.0 — Complete Integrated Production Pipeline (Agent 9)
+
+Every completed engine now runs inside **one unified production workflow**
+behind **one public entry point**. No stage is invoked "on demand" anymore —
+one command executes the whole system:
+
+```python
+from services.orchestrator import run_full_pipeline
+
+result = run_full_pipeline("Create 3 science shorts about black holes")
+
+result.packages           # list[ProductionPackage] — render + seo + publishing slots filled
+result.production_report  # ONE unified Production Report for the entire run
+```
+
+### The integrated flow
+
+```
+Trend Discovery → Psychology → Script → Visual Intelligence → Voice & Audio
+   → refinement + quality gate → media production → packaging
+   → Render Engine → Global Content Optimization (SEO) → Publishing
+```
+
+The distribution stages (render → seo → publish) execute automatically after
+packaging, in the contract order from `PIPELINE_SPEC.md`. Their output is
+folded back into the final `ProductionPackage` objects: `render_package`
+(Agent 6), enriched `seo_package` + `publishing_packages` handover (Agent 8),
+and the `publishing_package` slot with status advanced to
+`rendered` / `scheduled` / `published` (Agent 7).
+
+### One Production Report
+
+`build_production_report()` (`services/orchestrator/report.py`) produces a
+single JSON-safe report per run, attached to
+`PipelineResult.production_report` and `context["production_report"]`:
+
+- **workflow** — the eight production areas (trend discovery, psychology,
+  script, visual, voice/audio, render, seo, publishing) each resolved to a
+  SUCCESS / WARNING / FAILED outcome with confidence and diagnostics.
+- **stages** — every stage report: status, timing, confidence, warnings,
+  errors, per-engine steps.
+- **engines** — availability/readiness inventory of every engine the run
+  touched, with declared input/output contracts.
+- **content** — packages produced, publish-ready count, render readiness,
+  optimization scores, publishing jobs and platforms.
+- **warnings / errors** — the full rollup, one place.
+
+### Validation and graceful degradation
+
+- The workflow engine now runs each `ContractEngine`'s `validate_input` /
+  `validate_output` around every step; findings surface as stage warnings
+  and `contract_validation` diagnostics — never failures.
+- An **unavailable engine** (not registered or `is_ready() == False`) skips
+  with a meaningful warning; the pipeline continues.
+- A **crashing distribution engine** degrades the run to WARNING with the
+  error preserved in the report — finished content is never discarded and
+  the pipeline never crashes.
+- `publish_mode` defaults to `"scheduled"`, so a full run queues
+  timezone-optimized publish jobs without posting anything immediately;
+  pass `publish_mode="immediate"` to execute (mock) publishes.
+
+Integration proof: `tests/test_production_pipeline.py` (16 tests) plus the
+updated `tests/test_orchestrator.py` / `tests/test_architecture.py`.
+
 ## Version 8.5 — Architecture Directive #1: Orchestrator-Only Communication
 
 Engine-to-engine communication is now formally prohibited and automatically

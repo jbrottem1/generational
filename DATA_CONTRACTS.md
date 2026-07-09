@@ -46,7 +46,10 @@ Never rename or remove these keys; add new ones instead:
 `trend_keywords`, `research`, `research_references`, `candidates`,
 `selected_ideas`, `ideas`, `psychology_report`, `attention_report`,
 `visual_intelligence_package`, `voice_audio_package`, `quality_summary`,
-`production_packages`, `pipeline_steps`.
+`production_packages`, `pipeline_steps`, `publish_mode`,
+`production_report` (v9.0 — the unified Production Report written by the
+orchestrator at the end of every full run; see
+`services/orchestrator/report.py`).
 
 Future engines declare which keys they consume/produce via
 `input_contract` / `output_contract` on `ContractEngine`.

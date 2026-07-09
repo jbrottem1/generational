@@ -19,6 +19,19 @@ from services.channels import ChannelManager  # noqa: E402
 from services.knowledge import KnowledgeBase  # noqa: E402
 
 
+@pytest.fixture(scope="session", autouse=True)
+def isolated_publishing_queue(tmp_path_factory):
+    """The full pipeline now runs the publish stage, which persists jobs —
+    point the default queue directory at a temp dir for the whole session
+    so tests never write to the real data/publishing_queue store."""
+    import services.publishing.queue as publishing_queue
+
+    original = publishing_queue._DEFAULT_DIR
+    publishing_queue._DEFAULT_DIR = str(tmp_path_factory.mktemp("publishing_queue"))
+    yield
+    publishing_queue._DEFAULT_DIR = original
+
+
 @pytest.fixture
 def project_store(tmp_path):
     return JsonProjectStore(directory=str(tmp_path / "projects"))

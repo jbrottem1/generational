@@ -182,6 +182,7 @@ class PipelineResult:
     stage_reports: "list[StageReport]" = field(default_factory=list)
     context: dict = field(default_factory=dict)
     error: str = ""
+    production_report: dict = field(default_factory=dict)   # unified run report
 
     @property
     def succeeded(self) -> bool:
@@ -193,4 +194,5 @@ class PipelineResult:
             "error": self.error,
             "packages": [pkg.to_dict() for pkg in self.packages],
             "stage_reports": [report.to_dict() for report in self.stage_reports],
+            "production_report": dict(self.production_report),
         }

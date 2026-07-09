@@ -164,7 +164,9 @@ def test_orchestrator_controls_execution_and_package_flow(tmp_path, monkeypatch)
     executed = [report.stage for report in result.stage_reports]
     assert executed[0] == "trend"
     assert "quality" in executed
-    assert executed[-1] == "packaging"
+    # The integrated production pipeline ends with the distribution stages:
+    # packaging → render → seo (global content optimization) → publish.
+    assert executed[-4:] == ["packaging", "render", "seo", "publish"]
 
     assert result.packages, "pipeline must emit ContentPackages"
     for package in result.packages:

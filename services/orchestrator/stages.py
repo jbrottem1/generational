@@ -56,6 +56,17 @@ STAGE_GROUPS: "dict[str, list[str]]" = {
     "brand_management": ["brand_management"],
 }
 
+# Post-packaging distribution stages executed by the full production
+# pipeline, in contract order (PIPELINE_SPEC.md): Render Engine → Global
+# Content Optimization → Publishing. Each runs against the packaged
+# context; unavailable engines skip with warnings — never a crash.
+DISTRIBUTION_STAGES: "tuple[str, ...]" = ("render", "seo", "publish")
+
+
+def distribution_stage_names() -> list:
+    return list(DISTRIBUTION_STAGES)
+
+
 # Stages registered by future plugins for the full pipeline: (name, keys, after).
 _EXTRA_STAGES: "list[tuple[str, list[str], str]]" = []
 

@@ -1,9 +1,11 @@
-# Generational — Pipeline Specification (v8.1)
+# Generational — Pipeline Specification (v9.0)
 
-The complete future flow of the AI Content Operating System. Live stages run
-today; future stages are wired into the orchestrator and skip cleanly until
-their engines report ready. **This ordering is the contract** — changing it
-requires Agent 1 review of `core/workflows.py` and
+The complete flow of the AI Content Operating System. As of v9.0 every live
+stage — through Render, Global Content Optimization, and Publishing — runs
+inside **one integrated `run_full_pipeline()` call** which returns one
+Production Report; future stages are wired into the orchestrator and skip
+cleanly until their engines report ready. **This ordering is the contract**
+— changing it requires Agent 1 review of `core/workflows.py` and
 `services/orchestrator/stages.py`.
 
 ## Complete Flow
@@ -75,31 +77,42 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
 5. **Additive evolution.** New stages are added via
    `register_stage()` / `WORKFLOWS`; new fields are appended to the
    ContentPackage; nothing existing is removed or renamed.
-6. **Render stage invocation.** The render stage is live but runs on
-   demand: `get_orchestrator().run_render_stage(result.context)` after a
-   full pipeline run. It renders every idea in the context (mock render
-   today), writes each `render_package`, and mirrors the results into
-   `context["unified_packages"]` (status → `rendered`). With nothing to
-   render it returns a safe SKIPPED summary — never a failure.
-7. **SEO stage invocation.** The seo stage is live and runs on demand:
-   `get_orchestrator().run_seo_stage(context)` after render. It optimizes
-   every publish-ready item (preferring `unified_packages`, falling back
-   to `ideas`), enriches each `seo_package` additively (base refinement
-   metadata is never overwritten), and emits `seo_optimization_report` +
-   `publishing_packages` (standardized PublishingPackage v1.0 per item —
-   the handover to Agent 7; the ContentPackage `publishing_package` slot
-   stays Agent 7's to write). With nothing to optimize it reports zero
-   items — never a failure.
-8. **Publish stage invocation.** The publish stage is live and runs on
-   demand: `get_orchestrator().run_publish_stage(context)` after seo. The
-   `scheduler` engine emits `publish_schedule` (timezone-aware slots from
-   the Optimization Engine's ranked windows); the `publishing` engine
+6. **Render stage.** Runs automatically after packaging inside
+   `run_full_pipeline()` (and remains runnable on demand via
+   `run_render_stage(context)`). It renders every idea in the context
+   (mock render today), writes each `render_package`, and mirrors the
+   results into `context["unified_packages"]` (status → `rendered`). With
+   nothing to render it returns a safe SKIPPED summary — never a failure.
+7. **SEO stage.** Runs automatically after render inside
+   `run_full_pipeline()` (and on demand via `run_seo_stage(context)`). It
+   optimizes every publish-ready item (preferring `unified_packages`,
+   falling back to `ideas`), enriches each `seo_package` additively (base
+   refinement metadata is never overwritten), and emits
+   `seo_optimization_report` + `publishing_packages` (standardized
+   PublishingPackage v1.0 per item — the handover to Agent 7; the
+   ContentPackage `publishing_package` slot stays Agent 7's to write).
+   With nothing to optimize it reports zero items — never a failure.
+8. **Publish stage.** Runs automatically after seo inside
+   `run_full_pipeline()` (and on demand via `run_publish_stage(context)`).
+   The `scheduler` engine emits `publish_schedule` (timezone-aware slots
+   from the Optimization Engine's ranked windows); the `publishing` engine
    builds one platform publish package per item × platform through the
    provider adapters, queues retry-capable PublishingJobs, executes due
-   jobs (mock publish today), writes each ContentPackage
-   `publishing_package` slot (status → `scheduled` / `published`), and
-   returns a standardized PublishingResult on `publishing_result`. With
-   nothing to publish it reports SKIPPED — never a failure.
+   jobs when `publish_mode="immediate"` (the full pipeline defaults to
+   `"scheduled"` — nothing posts without an explicit immediate request),
+   writes each ContentPackage `publishing_package` slot (status →
+   `scheduled` / `published`), and returns a standardized PublishingResult
+   on `publishing_result`. With nothing to publish it reports SKIPPED —
+   never a failure.
+9. **Distribution degradation.** A FAILED render/seo/publish stage
+   degrades the run to WARNING (errors preserved in the report) instead of
+   discarding finished content; unavailable engines skip with warnings.
+10. **One Production Report.** Every full run attaches one unified report
+    (`services/orchestrator/report.py`) to
+    `PipelineResult.production_report` /
+    `context["production_report"]`: the eight production areas resolved
+    to outcomes, per-stage diagnostics, an engine availability inventory,
+    content/publishing summaries, and the full warning/error rollup.
 
 ## Stage → engine key → owner map
 

@@ -78,6 +78,10 @@ def run_command(
     result["queued_count"] = context.get("queued_count", 0)
     result["unified_packages"] = context.get("unified_packages", [])
     result["stage_reports"] = [report.to_dict() for report in pipeline.stage_reports]
+    result["production_report"] = pipeline.production_report
+    result["render_summary"] = context.get("render_summary", {})
+    result["seo_optimization_report"] = context.get("seo_optimization_report", {})
+    result["publishing_result"] = context.get("publishing_result", {})
     if context.get("production_error"):
         result["production_error"] = context["production_error"]
     if context.get("production_skipped"):

@@ -23,9 +23,12 @@ from services.orchestrator.orchestrator import (
     get_orchestrator,
     run_full_pipeline,
 )
+from services.orchestrator.report import PRODUCTION_REPORT_VERSION, build_production_report
 from services.orchestrator.stages import (
+    DISTRIBUTION_STAGES,
     STAGE_GROUPS,
     build_pipeline_plan,
+    distribution_stage_names,
     get_stage,
     pipeline_stage_names,
     register_stage,
@@ -44,8 +47,12 @@ __all__ = [
     "PRODUCTION_PACKAGE_FIELDS",
     "CONTENT_PACKAGE_FIELDS",
     "STAGE_GROUPS",
+    "DISTRIBUTION_STAGES",
     "build_pipeline_plan",
     "pipeline_stage_names",
+    "distribution_stage_names",
+    "build_production_report",
+    "PRODUCTION_REPORT_VERSION",
     "register_stage",
     "unregister_stage",
     "get_stage",

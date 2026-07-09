@@ -21,7 +21,11 @@ Orchestrator.run_full_pipeline()
     ├─ refinement   ranking → script → critic → revision → citation → seo → threat_detection
     ├─ quality      quality (multi-factor publish gate)
     ├─ production   media production + publishing queue (approved ideas only)
-    └─ packaging    → list[ProductionPackage]
+    ├─ packaging    → list[ProductionPackage]
+    ├─ render       image → video (Agent 6: render packages, mock render)
+    ├─ seo          seo_optimization (Agent 8: Global Content Optimization)
+    └─ publish      scheduler → publishing (Agent 7: jobs queued/published)
+                    → one Production Report for the whole run
 ```
 
 ---
@@ -33,11 +37,19 @@ from services.orchestrator import get_orchestrator
 
 result = get_orchestrator().run_full_pipeline("Create 3 science shorts about black holes")
 
-result.status          # SUCCESS | WARNING | FAILED
-result.packages        # list[ProductionPackage]
-result.stage_reports   # list[StageReport] — full diagnostics per stage
-result.context         # the shared pipeline context (advanced use)
+result.status             # SUCCESS | WARNING | FAILED
+result.packages           # list[ProductionPackage] — render/seo/publishing slots filled
+result.stage_reports      # list[StageReport] — full diagnostics per stage
+result.production_report  # ONE unified Production Report (see §3a)
+result.context            # the shared pipeline context (advanced use)
 ```
+
+`run_full_pipeline()` executes the **complete integrated workflow**: every
+intelligence stage, media production, packaging, and then the distribution
+stages — render → global content optimization → publishing — automatically.
+`publish_mode` defaults to `"scheduled"` (jobs are queued into optimal
+posting windows, nothing posts immediately); pass
+`publish_mode="immediate"` to execute publishes (mock providers today).
 
 Per-stage execution (fixture input, debugging, partial runs):
 
@@ -49,12 +61,12 @@ orch.run_script_stage(context)
 orch.run_visual_stage(context)
 orch.run_audio_stage(context)
 orch.run_quality_stage(context)
-
-# Future stages (Agents 6-10) — wired now, light up when their engines
-# report ready; until then they skip with diagnostics, never crash:
 orch.run_render_stage(context)     # Agent 6 — Render & Video Production
-orch.run_seo_stage(context)        # Agent 8 — SEO & Global Trend Optimization
+orch.run_seo_stage(context)        # Agent 8 — Global Content Optimization
 orch.run_publish_stage(context)    # Agent 7 — Publishing & Scheduler
+
+# Future stages — wired now, light up when their engines report ready;
+# until then they skip with diagnostics, never crash:
 orch.run_analytics_stage(context)  # Agent 9 — Analytics
 orch.run_learning_stage(context)   # Agent 9 — Learning feedback
 orch.run_brand_stage(context)      # Agent 10 — Multi-Brand OS
@@ -96,9 +108,33 @@ Every stage returns a `StageReport`:
 | `warnings` / `errors` | Human-readable diagnostics |
 | `diagnostics` | Engine-level step results and stage metrics |
 
-A `FAILED` stage **stops the pipeline gracefully** — the run returns with
-partial context, everything before the failure preserved, and hooks are
-still notified. Nothing crashes.
+A `FAILED` **intelligence** stage stops the pipeline gracefully — the run
+returns with partial context, everything before the failure preserved, and
+hooks are still notified. A `FAILED` **distribution** stage (render / seo /
+publish) degrades the run to `WARNING` and the remaining stages still
+execute — finished content is never discarded. Nothing crashes.
+
+Contract validation runs around every engine step: `ContractEngine`
+subclasses declare `input_contract` / `output_contract` keys, and any
+missing key is recorded as a stage warning plus a `contract_validation`
+diagnostics entry — validation never fails a run.
+
+## 3a. The Production Report
+
+Every `run_full_pipeline()` call returns **one Production Report**
+(`services/orchestrator/report.py`, attached to
+`result.production_report` and `context["production_report"]`):
+
+| Section | Contents |
+|---|---|
+| `workflow` | The eight production areas (trend discovery → publishing), each resolved to SUCCESS/WARNING/FAILED with confidence + diagnostics |
+| `stages` | Every StageReport as a dict (status, timing, confidence, warnings, errors, engine steps) |
+| `engines` | Availability/readiness inventory of every engine the run touched, with declared contracts |
+| `content` | Packages produced, publish-ready count, render readiness, optimization scores, publishing jobs/platforms |
+| `warnings` / `errors` | Full rollup across every stage, prefixed by stage name |
+
+The report is diagnostics only — building it never mutates the context and
+never raises (a malformed result yields a safe fallback report).
 
 All stage lifecycle events flow through the central structured logger
 (`core/log.py`): `orchestrator.stage_started`, `orchestrator.stage_finished`
@@ -154,8 +190,10 @@ services/orchestrator/
 ├── models.py          # ProductionPackage, StageReport, PipelineResult, StageStatus
 ├── stages.py          # stage registry derived from WORKFLOWS — plugin surface
 ├── packager.py        # final context → ProductionPackage mapping
+├── report.py          # build_production_report — one report per run
 └── hooks.py           # scheduler/publisher/analytics/learning attachment points
-tests/test_orchestrator.py   # integration proof: command → ProductionPackage
+tests/test_orchestrator.py          # integration proof: command → ProductionPackage
+tests/test_production_pipeline.py   # integration proof: full workflow + Production Report
 ```
 
 ## 7. Rules for future agents

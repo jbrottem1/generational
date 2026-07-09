@@ -2,16 +2,20 @@
 
 Coordinates every subsystem (trend discovery → opportunity ranking →
 psychology → script → visual → audio → refinement → quality gate → media
-production → packaging) into one production pipeline behind ONE interface:
+production → packaging → render → global content optimization → publishing)
+into ONE production pipeline behind ONE interface:
 
     result = get_orchestrator().run_full_pipeline("Create 3 science shorts...")
+    result.production_report   # one unified Production Report per run
 
 Design rules:
 - The orchestrator never contains engine logic. It executes stage groups
   (see stages.py) through the existing WorkflowEngine and folds the final
   context into ProductionPackage objects (see packager.py).
-- Every stage returns SUCCESS / WARNING / FAILED plus diagnostics, and a
-  failure stops the run gracefully — partial results are preserved.
+- Every stage returns SUCCESS / WARNING / FAILED plus diagnostics. A failed
+  intelligence stage stops the run gracefully (partial results preserved);
+  a failed distribution stage (render / seo / publish) degrades the run to
+  WARNING and the remaining stages still execute — never a crash.
 - Future subsystems plug in via `register_stage()` and autonomy agents via
   `hooks.attach_hook()` — never by editing this module.
 """
@@ -25,9 +29,15 @@ from core.constants import DEFAULT_MODEL, DEFAULT_PUBLISH_THRESHOLD, IDEAS_PER_B
 from core.log import get_logger, log_event
 from core.workflows import WorkflowEngine
 from services.orchestrator.hooks import notify_hooks
-from services.orchestrator.models import PipelineResult, StageReport, StageStatus
+from services.orchestrator.models import (
+    PipelineResult,
+    ProductionPackage,
+    StageReport,
+    StageStatus,
+)
 from services.orchestrator.packager import build_packages
-from services.orchestrator.stages import build_pipeline_plan, get_stage
+from services.orchestrator.report import build_production_report
+from services.orchestrator.stages import build_pipeline_plan, distribution_stage_names, get_stage
 
 logger = get_logger(__name__)
 
@@ -63,6 +73,17 @@ def _stage_confidence(stage: str, context: dict) -> int:
     if stage == "quality":
         ideas = context.get("ideas", [])
         return _average([idea.get("scores", {}).get("publish", 0) for idea in ideas])
+    if stage == "render":
+        return int(context.get("render_summary", {}).get("average_readiness", 0))
+    if stage == "seo":
+        return int(context.get("seo_optimization_report", {}).get("overall_optimization_score", 0))
+    if stage == "publish":
+        publishing = context.get("publishing_result", {})
+        jobs = int(publishing.get("jobs_created", 0))
+        if not jobs:
+            return 0
+        landed = int(publishing.get("published", 0)) + int(publishing.get("scheduled", 0))
+        return int(round(landed * 100 / jobs))
     return 0
 
 
@@ -90,6 +111,13 @@ class Orchestrator:
             report.diagnostics["steps"] = steps
             skipped = [s["engine"] for s in steps if s["status"] == "skipped"]
             failed = [s for s in steps if s["status"] == "failed"]
+
+            # Contract validation findings (ContractEngine input/output
+            # declarations) are diagnostics + warnings — never failures.
+            validation = [problem for s in steps for problem in s.get("problems", [])]
+            if validation:
+                report.diagnostics["contract_validation"] = validation
+                report.warnings.extend(validation)
 
             if failed:
                 report.status = StageStatus.FAILED
@@ -168,9 +196,18 @@ class Orchestrator:
         research_settings: "dict | None" = None,
         project_name: "str | None" = None,
         target_platform: str = "youtube_shorts",
+        publish_mode: str = "scheduled",
         context_extra: "dict | None" = None,
     ) -> PipelineResult:
-        """User command → ProductionPackage list, through every subsystem."""
+        """User command → ProductionPackage list + one Production Report.
+
+        Runs the complete integrated workflow: intelligence stages (trend →
+        psychology → script → visual → audio → refinement → quality), media
+        production, packaging, then the distribution stages (render → global
+        content optimization → publishing). `publish_mode` defaults to
+        "scheduled" so nothing is posted immediately without an explicit
+        "immediate" request.
+        """
         context = {
             "command": command,
             "count": count,
@@ -179,6 +216,7 @@ class Orchestrator:
             "research_settings": research_settings,
             "project_name": project_name,
             "target_platform": target_platform,
+            "publish_mode": publish_mode,
         }
         context.update(context_extra or {})
         result = PipelineResult(status=StageStatus.SUCCESS, context=context)
@@ -192,6 +230,7 @@ class Orchestrator:
                 result.status = StageStatus.FAILED
                 result.error = "; ".join(report.errors) or f"Stage '{stage}' failed."
                 log_event(logger, "orchestrator.pipeline_stopped", stage=stage, error=result.error)
+                result.production_report = build_production_report(result)
                 notify_hooks(result)
                 return result
 
@@ -206,9 +245,28 @@ class Orchestrator:
         result.stage_reports.append(self._run_production(context))
         result.stage_reports.append(self._run_packaging(context, result))
 
-        if any(r.status == StageStatus.WARNING for r in result.stage_reports):
+        # Distribution: render → global content optimization → publishing.
+        # These operate on the packaged output; a failure here degrades the
+        # run to WARNING (errors preserved in the report) instead of
+        # discarding the finished content — the pipeline never crashes.
+        for stage in distribution_stage_names():
+            report = self.run_stage(stage, context)
+            result.stage_reports.append(report)
+            if report.status == StageStatus.FAILED:
+                log_event(logger, "orchestrator.stage_degraded", stage=stage, errors=len(report.errors))
+
+        self._refresh_packages(context, result)
+        context["pipeline_steps"] = [
+            step
+            for report in result.stage_reports
+            for step in report.diagnostics.get("steps", [])
+        ]
+
+        if any(r.status in (StageStatus.WARNING, StageStatus.FAILED) for r in result.stage_reports):
             result.status = StageStatus.WARNING
 
+        result.production_report = build_production_report(result)
+        context["production_report"] = result.production_report
         log_event(
             logger,
             "orchestrator.pipeline_finished",
@@ -218,6 +276,18 @@ class Orchestrator:
         )
         notify_hooks(result)
         return result
+
+    def _refresh_packages(self, context: dict, result: PipelineResult) -> None:
+        """Re-fold `unified_packages` (enriched in place by the distribution
+        stages: render/seo/publishing package slots, status advances) back
+        into the ProductionPackage objects the caller receives."""
+        unified = context.get("unified_packages")
+        if not unified:
+            return
+        try:
+            result.packages = [ProductionPackage.from_dict(pkg) for pkg in unified]
+        except Exception as exc:  # noqa: BLE001 - keep packaging output on any mismatch
+            log_event(logger, "orchestrator.package_refresh_failed", level=30, error=str(exc))
 
     # ------------------------------------------------ internal final steps
 

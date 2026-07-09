@@ -15,6 +15,7 @@ from services.orchestrator import (
     StageStatus,
     attach_hook,
     detach_hook,
+    distribution_stage_names,
     get_orchestrator,
     pipeline_stage_names,
     register_stage,
@@ -57,9 +58,12 @@ def test_full_pipeline_produces_production_packages(pipeline_result):
 
 def test_every_stage_reports_diagnostics(pipeline_result):
     reported = [report.stage for report in pipeline_result.stage_reports]
-    assert reported == pipeline_stage_names() + ["production", "packaging"]
+    assert reported == pipeline_stage_names() + ["production", "packaging"] + distribution_stage_names()
     # The named stages the OS contract promises are all present.
-    for stage in ("trend", "research", "psychology", "script", "visual", "audio", "quality"):
+    for stage in (
+        "trend", "research", "psychology", "script", "visual", "audio",
+        "quality", "render", "seo", "publish",
+    ):
         assert stage in reported
     for report in pipeline_result.stage_reports:
         assert report.status in (StageStatus.SUCCESS, StageStatus.WARNING)
