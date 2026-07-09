@@ -103,7 +103,13 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
    (mock render today), writes each `render_package`, and mirrors the
    results into `context["unified_packages"]` (status → `rendered`). With
    nothing to render it returns a safe SKIPPED summary — never a failure.
-7. **SEO stage.** Runs automatically after render inside
+7. **Post-Production stage.** Runs automatically after render inside
+   `run_full_pipeline()` (and on demand via
+   `run_post_production_stage(context)`). It post-produces every item in
+   the context (mock provider today), writes each `post_production_package`,
+   and mirrors results into `context["unified_packages"]`. With nothing to
+   post-produce it returns a safe SKIPPED summary — never a failure.
+8. **SEO stage.** Runs automatically after post-production inside
    `run_full_pipeline()` (and on demand via `run_seo_stage(context)`). It
    optimizes every publish-ready item (preferring `unified_packages`,
    falling back to `ideas`), enriches each `seo_package` additively (base
@@ -124,7 +130,7 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
    `scheduled` / `published`), and returns a standardized PublishingResult
    on `publishing_result`. With nothing to publish it reports SKIPPED —
    never a failure.
-9. **Distribution degradation.** A FAILED render/seo/publish stage
+9. **Distribution degradation.** A FAILED render/post_production/seo/publish stage
    degrades the run to WARNING (errors preserved in the report) instead of
    discarding finished content; unavailable engines skip with warnings.
 10. **Analytics stage.** Live (`run_analytics_stage(context)`). Runs after
@@ -166,6 +172,7 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
 | creative | creative_studio | live (on-demand stage) | **Agent 12** |
 | asset_generation | asset_generation | live (mock providers) | **Agent 14** |
 | render | image, video (+ `render` façade) | live (mock render) | **Agent 6** |
+| post_production | post_production | live (mock providers) | **Agent 17** |
 | seo | seo_optimization | live | **Agent 8** |
 | publish | scheduler, publishing | live (mock providers) | **Agent 7** |
 | analytics | analytics | live (mock metrics providers) | **Agent 9** |

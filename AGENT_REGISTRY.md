@@ -54,7 +54,7 @@ Companion views: `ENGINE_REGISTRY.md` (engine keys), `SYSTEM_DEPENDENCY_MAP.md`
 | Agent | Subsystem | Reserved engine key | Integrates via |
 |---|---|---|---|
 | **16** | Animation & Cinematics | `animation` | `creative_package` → animated assets in `render_package` |
-| **17** | Video Editing & Post Production | `post_production` | `render_package` enrichment after `render` stage |
+| **17** | Video Editing & Post Production | `post_production` | **live** — `post_production_package` after `render` stage |
 | **18** | AI Director | `ai_director` | cross-stage creative direction notes in `creative_package` / diagnostics |
 | **19** | Business Intelligence & Monetization | `business_intelligence` | `analytics_package` → revenue/ROI fields (additive) |
 | **20** | Autonomous Executive | `autonomous_executive` | `OrchestratorHook` + job queue (`ORCHESTRATOR_JOB_TYPE`) — the first agent that *initiates* runs |

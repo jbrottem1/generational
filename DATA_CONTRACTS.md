@@ -32,6 +32,7 @@ list is `CONTENT_PACKAGE_FIELDS`.
 | `learning_metadata` | dict | **Agent 9** |
 | `creative_package` | dict | **Agent 12** (storyboards, shot lists, style, characters, environments) |
 | `asset_package` | dict | **Agent 14** (generated assets, jobs, cache report, readiness) |
+| `post_production_package` | dict | **Agent 17** (edit timeline, scene cuts, audio mix, captions, color, exports, QC) |
 | `status` | str | pipeline (`planned → approved/held → rendered → scheduled → published`) |
 | `diagnostics` | dict | any stage (append keys) |
 | `created_at` / `extras` | str / dict | packager / forward-compat overflow |
@@ -344,6 +345,35 @@ Media classes: `image` · `video` · `three_d` · `animation` · `audio` ·
 `motion_graphics`. Agent 14 writes ONLY the `asset_package` slot and its
 context keys; script, visual, audio, creative, render, seo, publishing, and
 analytics slots are read, never mutated. See `ASSET_GENERATION_ENGINE.md`.
+
+---
+
+## 8.2 post_production_package (Agent 17) — `services/post_production/`
+
+The Post-Production & Intelligent Editing Engine (`post_production` engine,
+`post_production` stage) transforms completed render packages into polished,
+publication-ready productions. Field tuples in
+`services/post_production/models.py` are the testable contract;
+all output is JSON-safe dicts, additive-only from 1.0.
+
+**ContentPackage `post_production_package` slot** (`POST_PRODUCTION_PACKAGE_FIELDS`, v1.0):
+`post_production_package_version`, `engine_version`, `project_id`, `title`,
+`edit_timeline` (tracks, layers, clips, markers), `scene_cuts`,
+`audio_mix` (finalized from render `audio_mix_plan`), `caption_timeline`,
+`subtitle_styling`, `motion_graphics`, `transitions`, `effects`,
+`color_grading`, `quality_report`, `publishing_metadata`,
+`provider_instructions`, `platform_exports`, `export_presets`,
+`production_readiness`, `validation`, `generated_at`.
+
+**Context keys** (additive): `post_production_summary` +
+`post_production_packages` (aggregate run output).
+
+Editing backends implement `PostProductionProvider`
+(`providers/post_production_provider.py`) and register in
+`providers/post_production/` (deterministic mock today). Agent 17 writes
+ONLY the `post_production_package` slot and its context keys; render, audio,
+creative, asset, seo, publishing, and analytics slots are read, never
+mutated. See `POST_PRODUCTION_ENGINE.md`.
 
 ---
 

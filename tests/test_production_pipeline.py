@@ -53,8 +53,8 @@ def test_single_entry_point_runs_every_stage_in_order(pipeline_result):
     reported = [report.stage for report in pipeline_result.stage_reports]
     expected = pipeline_stage_names() + ["production", "packaging"] + distribution_stage_names()
     assert reported == expected
-    # Render → SEO → Publishing run last, in contract order.
-    assert reported[-3:] == ["render", "seo", "publish"]
+    # Render → Post-Production → SEO → Publishing run last, in contract order.
+    assert reported[-4:] == ["render", "post_production", "seo", "publish"]
 
 
 def test_module_level_entry_point_matches_orchestrator():

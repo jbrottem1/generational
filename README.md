@@ -4,6 +4,28 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.8 — Post-Production & Intelligent Editing Engine (Agent 17)
+
+Completed render packages now flow through intelligent post-production
+before SEO and publishing. The `post_production` engine consumes render,
+audio, creative, and asset packages and produces publication-ready
+`post_production_package` deliverables — master edit timelines, scene cuts,
+finalized audio mix, styled captions, color grading, motion graphics,
+platform-optimized exports, and QC validation.
+
+```python
+from services.orchestrator import Orchestrator
+
+orch = Orchestrator()
+report = orch.run_post_production_stage(context)
+# context["post_production_packages"] — one per item
+# context["unified_packages"][i]["post_production_package"]
+```
+
+Pipeline order: `asset_generation → render → post_production → seo → publish`
+
+See `POST_PRODUCTION_ENGINE.md`.
+
 ## Version 9.7.1 — Asset Generation Production Hardening (Agent 14 Phase 2)
 
 Production-ready extensions on the Universal Asset Generation Engine —

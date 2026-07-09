@@ -136,6 +136,20 @@ The generation department. Consumes Creative Studio asset requirements (or fallb
 - **Modules:** `engines/asset_generation.py`, `services/asset_generation/`, `providers/generation_provider.py` + `providers/asset_generation/`
 - **See:** `ASSET_GENERATION_ENGINE.md`
 
+### Agent 17: Post-Production & Intelligent Editing Engine — LANDED (mock providers)
+
+The editing department. Consumes completed render packages (timeline, caption
+render plan, audio mix plan, transitions, motion) plus creative and audio
+context, and produces polished publication-ready `post_production_package`
+deliverables: master edit timeline, intelligent scene cuts, finalized audio
+mix, styled captions, color grading, motion graphics, platform-optimized
+exports, and QC validation. Real editing backends (FFmpeg, Premiere,
+DaVinci, CapCut, Runway) swap in via provider adapters.
+
+- **Owns:** intelligent editing, edit timeline, audio finalization, caption styling, color grading, VFX/motion graphics planning, platform optimization, export preparation, QC
+- **Modules:** `engines/post_production.py`, `services/post_production/`, `providers/post_production/`
+- **See:** `POST_PRODUCTION_ENGINE.md`
+
 ### Agent 7: Quality Assurance Engine
 
 The last gate before the outside world. Checks rendered output against the plan: hook lands in the first seconds, audio/visual sync, subtitle accuracy, platform policy compliance, citation integrity, and overall craft. Rejects with actionable revision notes rather than a bare pass/fail.
@@ -172,6 +186,7 @@ zones, contract stubs, and orchestrator stages already wired (see
 | Agent 9 | Analytics & Learning | `engines/analytics/` | `analytics` · `learning` |
 | Agent 10 | Multi-Brand Operating System | `engines/brands/` | `brand_management` |
 | Agent 14 | Universal Asset Generation — **LANDED** (mock providers, live stage) | `engines/asset_generation.py` + `services/asset_generation/` + `providers/asset_generation/` | `asset_generation` |
+| Agent 17 | Post-Production & Intelligent Editing — **LANDED** (mock providers, live stage) | `engines/post_production.py` + `services/post_production/` + `providers/post_production/` | `post_production` |
 
 Future engines subclass `ContractEngine` (`engines/contracts.py`) and fill
 their slot in the canonical `ContentPackage` (`DATA_CONTRACTS.md`). Their

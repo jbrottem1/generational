@@ -75,6 +75,8 @@ def _stage_confidence(stage: str, context: dict) -> int:
         return _average([idea.get("scores", {}).get("publish", 0) for idea in ideas])
     if stage == "render":
         return int(context.get("render_summary", {}).get("average_readiness", 0))
+    if stage == "post_production":
+        return int(context.get("post_production_summary", {}).get("average_readiness", 0))
     if stage == "seo":
         return int(context.get("seo_optimization_report", {}).get("overall_optimization_score", 0))
     if stage == "publish":
@@ -169,6 +171,9 @@ class Orchestrator:
 
     def run_render_stage(self, context: dict) -> StageReport:
         return self.run_stage("render", context)
+
+    def run_post_production_stage(self, context: dict) -> StageReport:
+        return self.run_stage("post_production", context)
 
     def run_asset_generation_stage(self, context: dict) -> StageReport:
         return self.run_stage("asset_generation", context)

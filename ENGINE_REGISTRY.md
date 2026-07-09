@@ -128,6 +128,19 @@ latency-aware selection, batch generation, job-queue interfaces, usage
 tracking, asset metadata, and prepared media classes for animation /
 audio / motion graphics. See `ASSET_GENERATION_ENGINE.md`.
 
+## Live engine (post-production — Agent 17)
+
+`post_production` — the Post-Production & Intelligent Editing Engine
+(`engines/post_production.py`, logic in `services/post_production/`,
+providers in `providers/post_production/`). Consumes completed render
+packages and produces polished publication-ready productions: master edit
+timeline, intelligent scene cuts, finalized audio mix, styled captions,
+color grading, motion graphics, platform exports, and QC validation.
+Writes `post_production_package` on each ContentPackage; context keys
+`post_production_summary` + `post_production_packages`. Runs in the
+distribution pipeline after render, before seo. See
+`POST_PRODUCTION_ENGINE.md`.
+
 ## Reserved keys (planned / contract stubs / names — do NOT reuse)
 
 | Key | Status | Future owner |
@@ -137,7 +150,6 @@ audio / motion graphics. See `ASSET_GENERATION_ENGINE.md`.
 | `optimization_lab` | name reserved | Agent 13 — Optimization Laboratory |
 | `ip_management` | name reserved | Agent 15 — Character, Universe & IP |
 | `animation` | name reserved | Agent 16 — Animation & Cinematics |
-| `post_production` | name reserved | Agent 17 — Video Editing & Post Production |
 | `ai_director` | name reserved | Agent 18 — AI Director |
 | `business_intelligence` | name reserved | Agent 19 — BI & Monetization |
 | `autonomous_executive` | name reserved | Agent 20 — Autonomous Executive |
