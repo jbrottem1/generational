@@ -28,6 +28,7 @@ Capability tags are declared on `ContractEngine` subclasses via the
 | **Intelligence** | Optimization lab | `experimentation`, `ab-testing` | `optimization_lab` *(planned, Agent 13)* |
 | **Media Gen** | Asset generation | `asset-generation`, `image-gen`, `video-gen` | `asset_generation` *(live, Agent 14)* |
 | **Media Gen** | IP & universes | `ip`, `character`, `universe` | `ip_management` *(planned, Agent 15)* |
+| **Direction** | Animation & cinematics | `animation-planning`, `cinematics`, `camera-planning`, `lip-sync` | `animation` *(live, Agent 16)* |
 
 ---
 

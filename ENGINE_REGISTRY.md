@@ -125,6 +125,17 @@ adapters. Writes `asset_package` on each ContentPackage; context keys
 `asset_generation_summary` + `asset_packages`. Runs in the distribution
 pipeline after packaging, before render. See `ASSET_GENERATION_ENGINE.md`.
 
+## Live engine (animation — Agent 16)
+
+`animation` — the Animation & Cinematic Production Engine
+(`engines/animation.py`, logic in `services/animation/`, providers in
+`providers/animation/`). Transforms creative / asset / visual / voice
+outputs into a complete `animation_package` (timeline, camera, character
+motion, facial, lip sync, VFX, transitions, provider instructions). Does
+**not** render final video. Context keys: `animation_summary` +
+`animation_packages`. Runs in the distribution pipeline after asset
+generation, before render. See `ANIMATION_ENGINE.md`.
+
 ## Reserved keys (planned / contract stubs / names — do NOT reuse)
 
 | Key | Status | Future owner |
@@ -133,7 +144,6 @@ pipeline after packaging, before render. See `ASSET_GENERATION_ENGINE.md`.
 | `brand_management` | contract stub | Multi-Brand OS agent |
 | `optimization_lab` | name reserved | Agent 13 — Optimization Laboratory |
 | `ip_management` | name reserved | Agent 15 — Character, Universe & IP |
-| `animation` | name reserved | Agent 16 — Animation & Cinematics |
 | `post_production` | name reserved | Agent 17 — Video Editing & Post Production |
 | `ai_director` | name reserved | Agent 18 — AI Director |
 | `business_intelligence` | name reserved | Agent 19 — BI & Monetization |

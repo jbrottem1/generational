@@ -165,8 +165,10 @@ def test_orchestrator_controls_execution_and_package_flow(tmp_path, monkeypatch)
     assert executed[0] == "trend"
     assert "quality" in executed
     # The integrated production pipeline ends with the distribution stages:
-    # packaging → asset generation → render → seo → publish.
-    assert executed[-5:] == ["packaging", "asset_generation", "render", "seo", "publish"]
+    # packaging → asset generation → animation → render → seo → publish.
+    assert executed[-6:] == [
+        "packaging", "asset_generation", "animation", "render", "seo", "publish",
+    ]
 
     assert result.packages, "pipeline must emit ContentPackages"
     for package in result.packages:

@@ -59,14 +59,19 @@ STAGE_GROUPS: "dict[str, list[str]]" = {
     # Universal Asset Generation (Agent 14): generates production-ready
     # visual assets from creative requirements before rendering.
     "asset_generation": ["asset_generation"],
+    # Animation & Cinematics (Agent 16): plans motion / camera / lip sync
+    # from creative + asset packages before rendering.
+    "animation": ["animation"],
 }
 
 # Post-packaging distribution stages executed by the full production
 # pipeline, in contract order (PIPELINE_SPEC.md): Asset Generation →
-# Render Engine → Global Content Optimization → Publishing. Each runs
-# against the packaged context; unavailable engines skip with warnings —
-# never a crash.
-DISTRIBUTION_STAGES: "tuple[str, ...]" = ("asset_generation", "render", "seo", "publish")
+# Animation → Render Engine → Global Content Optimization → Publishing.
+# Each runs against the packaged context; unavailable engines skip with
+# warnings — never a crash.
+DISTRIBUTION_STAGES: "tuple[str, ...]" = (
+    "asset_generation", "animation", "render", "seo", "publish",
+)
 
 
 def distribution_stage_names() -> list:

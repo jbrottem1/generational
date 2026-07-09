@@ -99,6 +99,7 @@ PRODUCTION_PACKAGE_FIELDS = [
     "learning_metadata",    # Agent 9 (Learning feedback) writes here
     "creative_package",     # Agent 12 (Creative Studio) writes here
     "asset_package",        # Agent 14 (Universal Asset Generation) writes here
+    "animation_package",    # Agent 16 (Animation & Cinematics) writes here
     "status",
     "diagnostics",
 ]
@@ -151,6 +152,7 @@ class ProductionPackage:
     learning_metadata: dict = field(default_factory=dict)
     creative_package: dict = field(default_factory=dict)
     asset_package: dict = field(default_factory=dict)
+    animation_package: dict = field(default_factory=dict)
     status: str = "planned"      # planned | approved | held | rendered | scheduled | published
     diagnostics: dict = field(default_factory=dict)
     created_at: str = field(default_factory=_now_iso)

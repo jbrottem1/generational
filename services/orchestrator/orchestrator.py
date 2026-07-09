@@ -173,6 +173,9 @@ class Orchestrator:
     def run_asset_generation_stage(self, context: dict) -> StageReport:
         return self.run_stage("asset_generation", context)
 
+    def run_animation_stage(self, context: dict) -> StageReport:
+        return self.run_stage("animation", context)
+
     def run_seo_stage(self, context: dict) -> StageReport:
         return self.run_stage("seo", context)
 

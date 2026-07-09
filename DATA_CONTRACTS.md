@@ -32,6 +32,7 @@ list is `CONTENT_PACKAGE_FIELDS`.
 | `learning_metadata` | dict | **Agent 9** |
 | `creative_package` | dict | **Agent 12** (storyboards, shot lists, style, characters, environments) |
 | `asset_package` | dict | **Agent 14** (generated assets, jobs, cache report, readiness) |
+| `animation_package` | dict | **Agent 16** (timeline, camera, motion, lip sync, VFX, provider instructions) |
 | `status` | str | pipeline (`planned → approved/held → rendered → scheduled → published`) |
 | `diagnostics` | dict | any stage (append keys) |
 | `created_at` / `extras` | str / dict | packager / forward-compat overflow |
@@ -338,6 +339,34 @@ Generation backends implement `GenerationProvider`
 Agent 14 writes ONLY the `asset_package` slot and its context keys;
 script, visual, audio, creative, render, seo, publishing, and analytics
 slots are read, never mutated. See `ASSET_GENERATION_ENGINE.md`.
+
+---
+
+## 8.2 animation_package (Agent 16) — `services/animation/`
+
+The Animation & Cinematic Production Engine (`animation` engine,
+`animation` stage) plans how every scene moves — it does **not** render
+final video. Field tuples in `services/animation/models.py` are the
+testable contract; all output is JSON-safe dicts, additive-only from 1.0.
+
+**ContentPackage `animation_package` slot** (`ANIMATION_PACKAGE_FIELDS`):
+`animation_package_version`, `engine_version`, `project_id`, `config`,
+`timeline`, `scene_timing`, `camera_plan`, `character_motion`,
+`facial_animation`, `lip_sync_plan`, `body_animation`, `lighting_cues`,
+`transitions`, `visual_effects`, `particle_effects`, `motion_graphics`,
+`audio_synchronization`, `subtitle_timing`, `export_metadata`,
+`provider_instructions`, `quality_report`, `choreography`,
+`animation_diagnostics`, `validation`, `production_readiness`,
+`generated_at`.
+
+**Context keys** (additive): `animation_summary` + `animation_packages`.
+
+Animation backends implement `AnimationProvider`
+(`providers/animation_provider.py`) and register in `providers/animation/`
+(deterministic mock serves every capability today; OpenAI / Runway / Veo /
+Kling / Pika / Luma / PixVerse / Stable Video stubs are reserved).
+Agent 16 writes ONLY the `animation_package` slot and its context keys;
+upstream slots are read, never mutated. See `ANIMATION_ENGINE.md`.
 
 ---
 

@@ -4,6 +4,30 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.8 — Animation & Cinematic Production Engine (Agent 16)
+
+Static creative assets become complete cinematic production plans. The
+`animation` engine consumes Creative Studio / Asset Generation / Visual /
+Voice / Script / Psychology outputs and plans **how every scene moves** —
+master timeline, camera paths with bezier keyframes, character motion,
+facial animation, lip sync, lighting, VFX, transitions, motion graphics,
+audio sync, and provider instructions — without rendering final video.
+
+```python
+from services.orchestrator import Orchestrator
+
+context = {"unified_packages": [item_with_creative_or_script]}
+Orchestrator().run_animation_stage(context)
+# context["unified_packages"][0]["animation_package"]["timeline"]
+```
+
+Camera framings & movements · character / facial / lip-sync plans · VFX &
+transitions · batch / series planning · OpenAI / Runway / Veo / Kling /
+Pika / Luma / PixVerse / Stable Video adapter stubs · quality validation.
+See `ANIMATION_ENGINE.md`.
+
+Distribution pipeline: **packaging → asset generation → animation → render → seo → publish**.
+
 ## Version 9.7 — Universal Asset Generation Engine (Agent 14)
 
 Every visual asset the platform uses now flows through one generation

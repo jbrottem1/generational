@@ -136,6 +136,14 @@ The generation department. Consumes Creative Studio asset requirements (or fallb
 - **Modules:** `engines/asset_generation.py`, `services/asset_generation/`, `providers/generation_provider.py` + `providers/asset_generation/`
 - **See:** `ASSET_GENERATION_ENGINE.md`
 
+### Agent 16: Animation & Cinematic Production Engine — LANDED (planning)
+
+The motion department. Consumes Creative Studio / Asset Generation / Visual / Voice / Script / Psychology outputs and produces a complete `animation_package` — master timeline, camera plan with bezier keyframes, character motion, facial animation, lip sync, lighting, VFX, transitions, motion graphics, audio sync, and provider instructions. Does **not** render final video; Render / Post-Production execute the plan.
+
+- **Owns:** animation planning, cinematic orchestration, camera / motion / lip-sync contracts, animation QC, provider instruction briefs
+- **Modules:** `engines/animation.py`, `services/animation/`, `providers/animation_provider.py` + `providers/animation/`
+- **See:** `ANIMATION_ENGINE.md`
+
 ### Agent 7: Quality Assurance Engine
 
 The last gate before the outside world. Checks rendered output against the plan: hook lands in the first seconds, audio/visual sync, subtitle accuracy, platform policy compliance, citation integrity, and overall craft. Rejects with actionable revision notes rather than a bare pass/fail.
@@ -172,6 +180,7 @@ zones, contract stubs, and orchestrator stages already wired (see
 | Agent 9 | Analytics & Learning | `engines/analytics/` | `analytics` · `learning` |
 | Agent 10 | Multi-Brand Operating System | `engines/brands/` | `brand_management` |
 | Agent 14 | Universal Asset Generation — **LANDED** (mock providers, live stage) | `engines/asset_generation.py` + `services/asset_generation/` + `providers/asset_generation/` | `asset_generation` |
+| Agent 16 | Animation & Cinematics — **LANDED** (planning only, live stage) | `engines/animation.py` + `services/animation/` + `providers/animation/` | `animation` |
 
 Future engines subclass `ContractEngine` (`engines/contracts.py`) and fill
 their slot in the canonical `ContentPackage` (`DATA_CONTRACTS.md`). Their

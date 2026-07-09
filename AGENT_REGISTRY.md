@@ -49,11 +49,18 @@ Companion views: `ENGINE_REGISTRY.md` (engine keys), `SYSTEM_DEPENDENCY_MAP.md`
 
 ---
 
-## 2. Planned Agents (16-20)
+### Direction Department
+
+| Agent | Subsystem | Engine keys | Status |
+|---|---|---|---|
+| **16** | Animation & Cinematics | key: `animation` (`services/animation/` + `providers/animation/`) | **live** (planning; does not render final video) |
+
+---
+
+## 2. Planned Agents (17-20)
 
 | Agent | Subsystem | Reserved engine key | Integrates via |
 |---|---|---|---|
-| **16** | Animation & Cinematics | `animation` | `creative_package` → animated assets in `render_package` |
 | **17** | Video Editing & Post Production | `post_production` | `render_package` enrichment after `render` stage |
 | **18** | AI Director | `ai_director` | cross-stage creative direction notes in `creative_package` / diagnostics |
 | **19** | Business Intelligence & Monetization | `business_intelligence` | `analytics_package` → revenue/ROI fields (additive) |
@@ -78,7 +85,7 @@ platform changes.
 | Production | Plans → finished, published media | 6-9 |
 | Intelligence | Measure, forecast, learn, decide | 10-13 |
 | Media Generation | Assets, characters, universes, IP | 14-15 |
-| Direction (planned) | Animation, editing, AI direction | 16-18 |
+| Direction | Animation, editing, AI direction | 16 (live) · 17-18 (planned) |
 | Executive (planned) | Monetization, autonomous operation | 19-20 |
 
 ---

@@ -51,6 +51,16 @@ Creative Studio            LIVE      Agent 12 — engines: creative_studio
    ↓                                  libraries, character consistency,
    ↓                                  environments — fills creative_package;
    ↓                                  see CREATIVE_STUDIO.md)
+Asset Generation           LIVE      Agent 14 — engines: asset_generation
+   ↓                                 (production-ready visual assets via
+   ↓                                  swappable providers — fills asset_package;
+   ↓                                  see ASSET_GENERATION_ENGINE.md)
+Animation & Cinematics     LIVE      Agent 16 — engines: animation
+   ↓                                 (timeline, camera, character motion,
+   ↓                                  facial, lip sync, VFX, transitions,
+   ↓                                  provider instructions — fills
+   ↓                                  animation_package; does NOT render
+   ↓                                  final video; see ANIMATION_ENGINE.md)
 Render Engine              LIVE      Agent 6 — engines: image, video, render
    ↓                                 (mock render: full plan + simulated
    ↓                                  output; real providers swap in later)
@@ -165,6 +175,7 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
 | production | scene_planning…publishing_queue | live | Agent 1 |
 | creative | creative_studio | live (on-demand stage) | **Agent 12** |
 | asset_generation | asset_generation | live (mock providers) | **Agent 14** |
+| animation | animation | live (planning only) | **Agent 16** |
 | render | image, video (+ `render` façade) | live (mock render) | **Agent 6** |
 | seo | seo_optimization | live | **Agent 8** |
 | publish | scheduler, publishing | live (mock providers) | **Agent 7** |
@@ -174,7 +185,7 @@ Brand Strategy Update      FUTURE    Agent 10 — engines: brand_management
 
 Reserved future stages (names only — see `AGENT_REGISTRY.md`):
 `optimization_lab` (Agent 13),
-`ip_management` (Agent 15), `animation` (Agent 16), `post_production`
+`ip_management` (Agent 15), `post_production`
 (Agent 17), `ai_director` (Agent 18), `business_intelligence` (Agent 19),
 `autonomous_executive` (Agent 20). Each plugs in via `register_stage()` +
 a ContentPackage slot — no orchestrator changes.

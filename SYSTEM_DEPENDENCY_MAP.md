@@ -15,10 +15,10 @@ Dependencies point downward only. A layer never imports anything above it.
 graph TD
     UI["ui/ — Streamlit views (display only)"]
     ORCH["services/orchestrator/ — the kernel:<br/>stages, packager, hooks, ContentPackage"]
-    SVC["services/* — domain services<br/>(trends, scripts, visual, audio, seo, publishing,<br/>analytics, learning, market_intelligence, creative_studio...)"]
+    SVC["services/* — domain services<br/>(trends, scripts, visual, audio, seo, publishing,<br/>analytics, learning, market_intelligence, creative_studio, animation...)"]
     ENG["engines/ — registered plugins<br/>(one key each; never import each other)"]
     LIB["Shared foundation:<br/>engines/base·contracts·heuristics·analysis, core/*"]
-    PROV["providers/ — vendor adapters<br/>(research, trends, creative, publishing...)"]
+    PROV["providers/ — vendor adapters<br/>(research, trends, creative, publishing, animation...)"]
 
     UI --> ORCH
     ORCH --> ENG
