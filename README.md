@@ -4,6 +4,47 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 8.0 — Unified Orchestration Layer
+
+Generational's engines are now coordinated by **one orchestration layer**
+(`services/orchestrator/`) — the single interface that turns the collection
+of engines into an autonomous AI Content Operating System. Full reference:
+[`ORCHESTRATOR.md`](ORCHESTRATOR.md).
+
+### One interface
+
+`get_orchestrator().run_full_pipeline(command)` drives every subsystem —
+trend discovery → opportunity ranking → research → psychology → script
+generation → attention graph → visual intelligence → voice & audio →
+refinement (ranking/critic/revision/citation/SEO/threats) → quality gate →
+media production → packaging — and returns a `PipelineResult`. Per-stage
+runners (`run_trend_stage`, `run_script_stage`, `run_visual_stage`,
+`run_audio_stage`, `run_quality_stage`, plus future `run_render_stage` /
+`run_publish_stage`) execute any stage on its own.
+
+### Standardized ProductionPackage
+
+Every run emits one `ProductionPackage` per idea: project_id, brand,
+language, target_country, platforms, trend/competition/psychology/attention
+scores, hook, script, scene breakdown, visual/voice/music assets, captions,
+thumbnail plan, SEO package, quality score, publish_ready, and an analytics
+placeholder. **Future engines only add fields** — unknown fields survive
+round-trips via `extras`.
+
+### Stage status + centralized logging
+
+Every stage returns `SUCCESS` / `WARNING` / `FAILED` with start/finish
+times, duration, confidence, and diagnostics; failures stop the pipeline
+gracefully with partial results preserved. All lifecycle events flow
+through the structured logger.
+
+### Plugin architecture + autonomy prep
+
+Stage order derives from `WORKFLOWS["intelligence"]` (one source of truth);
+new engines plug in via `register_stage()` with zero orchestrator changes.
+Future autonomous agents (Scheduler, Publisher, Analytics, Learning) attach
+through `OrchestratorHook` — interfaces only, no scheduling built yet.
+
 ## Version 7.9 — Structured Cinematic Storytelling (Script Engine 2.0)
 
 The Script Generation Engine is upgraded from a text generator into a

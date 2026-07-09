@@ -60,7 +60,7 @@ Trend Discovery
 Rules of the pipeline:
 
 - **Stages are sequential and gated.** A candidate that fails a stage's quality threshold does not advance.
-- **Stages never call each other directly.** They consume the previous stage's output object and emit their own. Orchestration lives in the pipeline/workflow layer, not inside engines.
+- **Stages never call each other directly.** They consume the previous stage's output object and emit their own. Orchestration lives in `services/orchestrator/` (see [`ORCHESTRATOR.md`](ORCHESTRATOR.md)) — the single interface every consumer (UI, future scheduler, automation) uses; nothing invokes engines directly.
 - **Every stage is independently runnable and testable** with a fixture input, without running the stages before it.
 - **The Learning Engine closes the loop.** Its outputs feed back into Trend Discovery, Psychology scoring, Script Generation, and scheduling decisions.
 
@@ -280,7 +280,7 @@ src/
     analytics/          # Agent 9a: performance ingestion + attribution
     learning/           # Agent 9b: learning signals + weight updates
   models/               # Core data objects (Section 5) — the stage contracts
-  services/             # Orchestration, pipelines, job queue, provider wiring, storage
+  services/             # Orchestration (services/orchestrator/ — see ORCHESTRATOR.md), pipelines, job queue, provider wiring, storage
   ui/                   # Streamlit views — display only, zero business logic
   tests/                # Mirrors src/ — one test module per engine minimum
 docs/                   # Architecture docs, decisions, session summaries
