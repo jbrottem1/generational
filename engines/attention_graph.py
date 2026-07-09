@@ -39,6 +39,7 @@ from engines.heuristics import (
     weighted_blend,
 )
 from engines.psychology import score_dimensions as _psychology_dimensions
+from services.behavioral_intelligence import attach_report
 
 logger = get_logger(__name__)
 
@@ -277,6 +278,10 @@ class AttentionGraphEngine(Engine):
             candidate["attention_graph"] = build_attention_graph(
                 candidate.get("title", ""), candidate.get("hook", "")
             )
+            # Refresh the Behavioral Intelligence report now that richer
+            # Attention Graph data (shareability, rewatch, story tension, ...)
+            # is available for this candidate.
+            attach_report(candidate)
 
         avg_score = (
             round(sum(c["attention_graph"]["attention_score"] for c in candidates) / len(candidates), 1)

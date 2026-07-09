@@ -45,6 +45,7 @@ from engines.heuristics import (
     most_repeated_word,
     weighted_blend,
 )
+from services.behavioral_intelligence import attach_report
 
 logger = get_logger(__name__)
 
@@ -367,6 +368,9 @@ class ThreatDetectionEngine(Engine):
 
         for idea in ideas:
             idea["threat_report"] = build_threat_report(idea, ideas)
+            # Final refresh: the richest version of the Behavioral
+            # Intelligence report, now informed by flagged threats/fixes too.
+            attach_report(idea)
 
         avg_score = round(sum(idea["threat_report"]["threat_score"] for idea in ideas) / len(ideas), 1)
         level_counts = {"Low": 0, "Medium": 0, "High": 0}
