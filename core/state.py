@@ -8,6 +8,7 @@ DEFAULTS = {
     "command_text": "",
     "current_result": None,
     "current_project_name": None,
+    "selected_project_id": None,
     "project_name_input": "",
     "ideas_generated_total": 0,
     "token_usage_total": 0,

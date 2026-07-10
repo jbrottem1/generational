@@ -14,9 +14,11 @@ load_dotenv()
 
 import streamlit as st
 
+from core import storage
 from core.constants import APP_VERSION
 from core.state import init_session_state
 from ui import sidebar, styles
+from ui.project_state import apply_pending_streamlit_state
 from ui.tabs import analytics, ideas, projects, publishing, scripts, settings, studio
 
 st.set_page_config(
@@ -26,6 +28,7 @@ st.set_page_config(
 )
 
 init_session_state()
+apply_pending_streamlit_state(storage=storage)
 styles.inject()
 
 # Arm analytics → learning closed loop for Studio and CLI (idempotent).

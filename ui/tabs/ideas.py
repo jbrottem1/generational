@@ -8,6 +8,7 @@ from core import state
 from core.constants import CANDIDATE_IDEAS, EXAMPLE_COMMANDS, IDEAS_PER_BATCH
 from services import ideation, pipeline
 from ui import components, notify
+from ui.project_state import queue_project_name_update
 
 
 def _fill_example(example: str) -> None:
@@ -97,7 +98,7 @@ def _handle_run(command: str) -> None:
     state.add_token_usage(tokens_used)
 
     if not st.session_state.current_project_name:
-        st.session_state.project_name_input = result["niche"]
+        queue_project_name_update(result["niche"])
 
     idea_count = len(result["ideas"])
     publishable = result.get("quality_summary", {}).get("publishable", idea_count)

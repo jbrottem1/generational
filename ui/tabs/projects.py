@@ -6,13 +6,18 @@ import streamlit as st
 
 from core import storage
 from core.log import get_logger
-from core.models import project_from_result, project_widget_key, result_from_project
+from core.models import project_from_result, project_widget_key
 from ui import notify
+from ui.project_state import queue_project_clear, queue_project_open
 
 logger = get_logger(__name__)
 
 
 def render() -> None:
+    notice = st.session_state.pop("_projects_open_notice", None)
+    if notice:
+        notify.success(f"Opened '{notice}'")
+
     st.subheader("📁 Projects")
 
     _render_create_save_panel()
@@ -112,10 +117,7 @@ def _render_project_list() -> None:
 
 
 def _open_project(project: dict) -> None:
-    st.session_state.current_result = result_from_project(project)
-    st.session_state.current_project_name = project["name"]
-    st.session_state.project_name_input = project["name"]
-    notify.success(f"Opened '{project['name']}'")
+    queue_project_open(project)
     st.rerun()
 
 
@@ -125,7 +127,8 @@ def _delete_project(project: dict) -> None:
     if not deleted:
         notify.error(f"Could not delete '{project['name']}'")
         return
-    if st.session_state.current_project_name == project["name"]:
-        st.session_state.current_project_name = None
+    selected_id = st.session_state.get("selected_project_id")
+    if selected_id == project_id or st.session_state.current_project_name == project["name"]:
+        queue_project_clear(clear_result=True)
     notify.success(f"Deleted '{project['name']}'")
     st.rerun()
