@@ -241,8 +241,16 @@ def production_readiness_view(report: dict) -> None:
         st.success("No structural readiness blockers.")
 
 
-def project_card(project: dict, *, on_open_key: str, on_dup_key: str, on_archive_key: str) -> None:
+def project_card(
+    project: dict,
+    *,
+    index: int,
+    on_open_key: str,
+    on_dup_key: str,
+    on_archive_key: str,
+) -> None:
     """Render one project card in the workspace browser."""
+    project_id = project.get("project_id", "")
     with st.container(border=True):
         cols = st.columns([4, 1, 1, 1])
         platform = project.get("platform", "").replace("_", " ").title()
@@ -254,11 +262,11 @@ def project_card(project: dict, *, on_open_key: str, on_dup_key: str, on_archive
             f"🏷️ {tags} · {len(project.get('ideas', []))} ideas · updated {updated or '—'}"
         )
         if cols[1].button("Open", key=on_open_key, use_container_width=True):
-            st.session_state._studio_action = ("open", project["name"])
+            st.session_state._studio_action = ("open", project_id)
         if cols[2].button("Duplicate", key=on_dup_key, use_container_width=True):
-            st.session_state._studio_action = ("duplicate", project["name"])
+            st.session_state._studio_action = ("duplicate", project_id)
         if cols[3].button("Archive", key=on_archive_key, use_container_width=True):
-            st.session_state._studio_action = ("archive", project["name"])
+            st.session_state._studio_action = ("archive", project_id)
 
 
 def _render_scripts(scripts: list) -> None:

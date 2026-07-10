@@ -9,6 +9,8 @@ Idea dict keys: title, hook, script, cta, hashtags, thumbnail_concept.
 
 from __future__ import annotations
 
+import uuid
+
 # Fields persisted on projects so Successful runs leave inspectable artifacts
 # after reload (RC1 output-visibility requirement).
 _PROJECT_OPTIONAL_FIELDS = (
@@ -42,7 +44,31 @@ _PROJECT_OPTIONAL_FIELDS = (
     "top_opportunity",
     "settings_preview",
     "longform_job_id",
+    "project_id",
 )
+
+
+def ensure_project_id(project: dict, *, file_stem: str = "") -> str:
+    """Assign a stable project_id if missing (never derived from display name alone)."""
+    pid = (
+        project.get("project_id")
+        or project.get("id")
+        or project.get("workflow_run_id")
+    )
+    if not pid and file_stem:
+        pid = f"legacy_{file_stem}"
+    if not pid:
+        pid = uuid.uuid4().hex[:12]
+    project["project_id"] = pid
+    return pid
+
+
+def project_widget_key(project: dict, action: str, index: int) -> str:
+    """Globally unique Streamlit widget key for one project row."""
+    pid = project.get("project_id") or ensure_project_id(
+        project, file_stem=project.get("_storage_stem", "")
+    )
+    return f"{action}_project_{pid}_{index}"
 
 
 def build_result(
@@ -81,6 +107,7 @@ def project_from_result(name: str, result: dict) -> dict:
     for key in _PROJECT_OPTIONAL_FIELDS:
         if result.get(key) not in (None, "", [], {}):
             project[key] = result[key]
+    ensure_project_id(project)
     return project
 
 

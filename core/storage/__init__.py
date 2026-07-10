@@ -15,8 +15,10 @@ __all__ = [
     "get_store",
     "list_projects",
     "load_project",
+    "load_project_by_id",
     "save_project",
     "delete_project",
+    "delete_project_by_id",
     "project_count",
 ]
 
@@ -35,12 +37,26 @@ def load_project(name: str) -> "dict | None":
     return _store.load_project(name)
 
 
+def load_project_by_id(project_id: str) -> "dict | None":
+    loader = getattr(_store, "load_project_by_id", None)
+    if loader is None:
+        return None
+    return loader(project_id)
+
+
 def save_project(project: dict) -> str:
     return _store.save_project(project)
 
 
 def delete_project(name: str) -> bool:
     return _store.delete_project(name)
+
+
+def delete_project_by_id(project_id: str) -> bool:
+    deleter = getattr(_store, "delete_project_by_id", None)
+    if deleter is None:
+        return False
+    return deleter(project_id)
 
 
 def project_count() -> int:

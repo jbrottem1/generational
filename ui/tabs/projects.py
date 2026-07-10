@@ -6,7 +6,7 @@ import streamlit as st
 
 from core import storage
 from core.log import get_logger
-from core.models import project_from_result, result_from_project
+from core.models import project_from_result, project_widget_key, result_from_project
 from ui import notify
 
 logger = get_logger(__name__)
@@ -89,7 +89,7 @@ def _render_project_list() -> None:
         return
 
     st.markdown("### 🗂️ Saved Projects")
-    for project in projects:
+    for index, project in enumerate(projects):
         with st.container(border=True):
             cols = st.columns([3, 1, 1])
             updated = (project.get("updated_at") or "")[:19].replace("T", " ")
@@ -97,10 +97,18 @@ def _render_project_list() -> None:
                 f"**{project['name']}**  \n"
                 f"{project.get('niche', '—')} · {len(project.get('ideas', []))} ideas · updated {updated or '—'}"
             )
-            if cols[1].button("📂 Open", key=f"open_{project['name']}", use_container_width=True):
+            if cols[1].button(
+                "📂 Open",
+                key=project_widget_key(project, "open", index),
+                use_container_width=True,
+            ):
                 _open_project(project)
-            if cols[2].button("🗑️ Delete", key=f"delete_{project['name']}", use_container_width=True):
-                _delete_project(project["name"])
+            if cols[2].button(
+                "🗑️ Delete",
+                key=project_widget_key(project, "delete", index),
+                use_container_width=True,
+            ):
+                _delete_project(project)
 
 
 def _open_project(project: dict) -> None:
@@ -111,9 +119,13 @@ def _open_project(project: dict) -> None:
     st.rerun()
 
 
-def _delete_project(name: str) -> None:
-    storage.delete_project(name)
-    if st.session_state.current_project_name == name:
+def _delete_project(project: dict) -> None:
+    project_id = project.get("project_id", "")
+    deleted = storage.delete_project_by_id(project_id) if project_id else storage.delete_project(project["name"])
+    if not deleted:
+        notify.error(f"Could not delete '{project['name']}'")
+        return
+    if st.session_state.current_project_name == project["name"]:
         st.session_state.current_project_name = None
-    notify.success(f"Deleted '{name}'")
+    notify.success(f"Deleted '{project['name']}'")
     st.rerun()

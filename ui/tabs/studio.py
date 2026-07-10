@@ -5,7 +5,7 @@ from __future__ import annotations
 import streamlit as st
 
 from core import storage
-from core.models import project_from_result
+from core.models import project_from_result, project_widget_key
 from services import studio
 from services.studio.projects import list_folders, list_tags, open_project_result
 from ui import notify
@@ -54,24 +54,34 @@ def _handle_pending_actions() -> None:
     action = st.session_state.pop("_studio_action", None)
     if not action:
         return
-    kind, name = action
+    kind, target = action
     try:
         if kind == "open":
-            result = open_project_result(name)
-            if result:
-                st.session_state.current_result = result
-                st.session_state.current_project_name = name
-                st.session_state.studio_settings = storage.load_project(name).get(
-                    "studio_settings", st.session_state.studio_settings
-                )
-                notify.success(f"Opened '{name}'")
+            project = storage.load_project_by_id(target) if target else None
+            if project is None and target:
+                project = storage.load_project(target)
+            if project:
+                result = open_project_result(project["name"])
+                if result:
+                    st.session_state.current_result = result
+                    st.session_state.current_project_name = project["name"]
+                    st.session_state.studio_settings = project.get(
+                        "studio_settings", st.session_state.studio_settings
+                    )
+                    notify.success(f"Opened '{project['name']}'")
         elif kind == "duplicate":
-            new_name = f"{name} (copy)"
-            studio.duplicate_project(name, new_name)
+            source = storage.load_project_by_id(target) or storage.load_project(target)
+            if not source:
+                raise ValueError(f"Project '{target}' not found.")
+            new_name = f"{source['name']} (copy)"
+            studio.duplicate_project(source["name"], new_name)
             notify.success(f"Duplicated as '{new_name}'")
         elif kind == "archive":
-            studio.archive_project(name)
-            notify.success(f"Archived '{name}'")
+            source = storage.load_project_by_id(target) or storage.load_project(target)
+            if not source:
+                raise ValueError(f"Project '{target}' not found.")
+            studio.archive_project(source["name"])
+            notify.success(f"Archived '{source['name']}'")
     except ValueError as exc:
         notify.error(str(exc))
     st.rerun()
@@ -121,12 +131,13 @@ def _render_workspace() -> None:
         st.caption("No projects match your filters.")
         return
 
-    for project in projects:
+    for index, project in enumerate(projects):
         components.project_card(
             project,
-            on_open_key=f"open_{project['name']}",
-            on_dup_key=f"dup_{project['name']}",
-            on_archive_key=f"arch_{project['name']}",
+            index=index,
+            on_open_key=project_widget_key(project, "studio_open", index),
+            on_dup_key=project_widget_key(project, "studio_dup", index),
+            on_archive_key=project_widget_key(project, "studio_arch", index),
         )
 
 

@@ -8,6 +8,7 @@ import re
 from datetime import datetime, timezone
 
 from core.log import get_logger
+from core.models import ensure_project_id
 from core.storage.base import ProjectStore
 
 logger = get_logger(__name__)
@@ -41,7 +42,11 @@ class JsonProjectStore(ProjectStore):
             path = os.path.join(self.directory, filename)
             try:
                 with open(path, "r", encoding="utf-8") as file:
-                    projects.append(json.load(file))
+                    project = json.load(file)
+                stem = filename[:-5]
+                ensure_project_id(project, file_stem=stem)
+                project["_storage_stem"] = stem
+                projects.append(project)
             except (json.JSONDecodeError, OSError) as exc:
                 logger.warning("Skipping unreadable project file %s: %s", filename, exc)
                 continue
@@ -54,7 +59,9 @@ class JsonProjectStore(ProjectStore):
             return None
         try:
             with open(path, "r", encoding="utf-8") as file:
-                return json.load(file)
+                project = json.load(file)
+            ensure_project_id(project, file_stem=_slugify(name))
+            return project
         except (json.JSONDecodeError, OSError) as exc:
             logger.error("Failed to load project '%s': %s", name, exc)
             return None
@@ -64,6 +71,7 @@ class JsonProjectStore(ProjectStore):
         now = datetime.now(timezone.utc).isoformat()
         project["updated_at"] = now
         project.setdefault("created_at", now)
+        ensure_project_id(project, file_stem=_slugify(project["name"]))
         path = self._path_for(project["name"])
         with open(path, "w", encoding="utf-8") as file:
             json.dump(project, file, indent=2)
@@ -76,6 +84,32 @@ class JsonProjectStore(ProjectStore):
             os.remove(path)
             logger.info("Deleted project '%s'", name)
             return True
+        return False
+
+    def load_project_by_id(self, project_id: str) -> "dict | None":
+        for project in self.list_projects():
+            if project.get("project_id") == project_id:
+                return project
+        return None
+
+    def delete_project_by_id(self, project_id: str) -> bool:
+        self._ensure_dir()
+        for filename in sorted(os.listdir(self.directory)):
+            if not filename.endswith(".json"):
+                continue
+            path = os.path.join(self.directory, filename)
+            try:
+                with open(path, "r", encoding="utf-8") as file:
+                    project = json.load(file)
+            except (json.JSONDecodeError, OSError) as exc:
+                logger.warning("Skipping unreadable project file %s: %s", filename, exc)
+                continue
+            stem = filename[:-5]
+            ensure_project_id(project, file_stem=stem)
+            if project.get("project_id") == project_id:
+                os.remove(path)
+                logger.info("Deleted project '%s' (id=%s)", project.get("name", ""), project_id)
+                return True
         return False
 
     def project_count(self) -> int:
