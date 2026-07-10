@@ -17,9 +17,12 @@ def test_project_round_trip_preserves_fields():
     result = _sample_result()
     project = project_from_result("  My Project ", result)
     assert project["name"] == "My Project"
+    assert project.get("project_id")  # stable id assigned on persist
 
     rehydrated = result_from_project(project)
-    assert rehydrated == result
+    for key, value in result.items():
+        assert rehydrated[key] == value
+    assert rehydrated.get("project_id") == project["project_id"]
 
 
 def test_result_from_project_tolerates_missing_fields():

@@ -31,10 +31,19 @@ def load_dotenv_if_available() -> None:
 
 
 def get_credential(env_var: str, overrides: "dict[str, str] | None" = None) -> str:
-    """Resolve one credential from overrides, then environment."""
+    """Resolve one credential from overrides, environment, then encrypted secrets."""
     if overrides and env_var in overrides:
         return overrides[env_var]
-    return os.environ.get(env_var, "")
+    value = os.environ.get(env_var, "")
+    if value:
+        return value
+    # Encrypted SecretManager file (never hardcode; passphrase-gated).
+    try:
+        from services.provider_runtime.secrets import SecretManager
+
+        return SecretManager().get(env_var) or ""
+    except Exception:  # noqa: BLE001 — credential resolution must never crash callers
+        return ""
 
 
 def has_credential(env_var: str, overrides: "dict[str, str] | None" = None) -> bool:
@@ -61,3 +70,20 @@ def provider_config_for(name: str, runtime_config: "dict | None" = None) -> dict
     cfg = runtime_config or load_runtime_config()
     providers = cfg.get("providers", {})
     return dict(providers.get(name, {}))
+
+
+def save_runtime_config(data: dict[str, Any], path: "str | Path | None" = None) -> Path:
+    """Persist runtime preferences (never write secrets into this file)."""
+    config_path = Path(path) if path else Path(
+        os.environ.get(
+            "PROVIDER_CONFIG_PATH",
+            str(_PROJECT_ROOT / "data" / "provider_runtime" / "config.json"),
+        )
+    )
+    config_path.parent.mkdir(parents=True, exist_ok=True)
+    # Strip accidental secret-looking keys
+    safe = dict(data or {})
+    for banned in ("api_key", "access_token", "client_secret", "refresh_token", "password"):
+        safe.pop(banned, None)
+    config_path.write_text(json.dumps(safe, indent=2, sort_keys=True), encoding="utf-8")
+    return config_path

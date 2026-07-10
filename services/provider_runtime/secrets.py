@@ -17,6 +17,16 @@ from typing import Any
 
 from services.provider_runtime.config import get_credential, load_dotenv_if_available
 
+
+def mask_secret(value: str) -> str:
+    """Mask a secret for UI display — never return the raw value."""
+    if not value:
+        return ""
+    if len(value) <= 8:
+        return "••••••••"
+    return f"{value[:4]}…{value[-4:]}"
+
+
 _PROJECT_ROOT = Path(__file__).resolve().parents[2]
 _DEFAULT_SECRETS_PATH = _PROJECT_ROOT / "data" / "provider_runtime" / "secrets.enc.json"
 
@@ -97,7 +107,8 @@ class SecretManager:
     def get(self, env_var: str) -> str:
         if env_var in self._overrides:
             return self._overrides[env_var]
-        env_val = get_credential(env_var)
+        # Read env directly — do not call get_credential (would recurse into SecretManager).
+        env_val = os.environ.get(env_var, "")
         if env_val:
             return env_val
         return self._file_secrets.get(env_var, "")
@@ -135,6 +146,62 @@ class SecretManager:
 
     def rotation_history(self) -> list[dict[str, Any]]:
         return list(self._rotation_log)
+
+
+    def delete(self, env_var: str, *, persist: bool = True) -> bool:
+        """Remove a credential from overrides and encrypted file (never logs value)."""
+        removed = False
+        if env_var in self._overrides:
+            del self._overrides[env_var]
+            removed = True
+        if env_var in self._file_secrets:
+            del self._file_secrets[env_var]
+            removed = True
+        if removed and persist:
+            passphrase = os.environ.get(self._passphrase_env, "")
+            if passphrase:
+                self.persist(passphrase)
+        return removed
+
+    def list_masked(self) -> list[dict[str, Any]]:
+        """Inventory of known secrets without exposing values."""
+        keys = sorted(set(self._overrides) | set(self._file_secrets))
+        rows = []
+        for env_var in keys:
+            value = self.get(env_var)
+            rows.append(
+                {
+                    "env_var": env_var,
+                    "present": bool(value),
+                    "masked": mask_secret(value),
+                    "source": (
+                        "override" if env_var in self._overrides
+                        else "encrypted_file" if env_var in self._file_secrets
+                        else "env"
+                    ),
+                    "length": len(value),
+                }
+            )
+        return rows
+
+    def import_secrets(self, secrets: dict[str, str], *, persist: bool = True) -> int:
+        """Import multiple secrets (values never logged). Returns count imported."""
+        count = 0
+        for env_var, value in (secrets or {}).items():
+            if not env_var or not value:
+                continue
+            self._overrides[str(env_var)] = str(value)
+            self._file_secrets[str(env_var)] = str(value)
+            count += 1
+        if count and persist:
+            passphrase = os.environ.get(self._passphrase_env, "")
+            if passphrase:
+                self.persist(passphrase)
+        return count
+
+    def export_encrypted(self, passphrase: str) -> str:
+        """Export encrypted blob of file secrets (for backup / transfer)."""
+        return encrypt_secrets(dict(self._file_secrets), passphrase)
 
     def describe(self) -> dict[str, Any]:
         return {
