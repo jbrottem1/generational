@@ -55,6 +55,10 @@ def test_apply_pending_opens_saved_project():
     assert state["selected_project_id"] == "proj_alpha"
     assert state["current_result"]["ideas"][0]["title"] == "Idea 1"
     assert state["studio_settings"]["platform"] == "youtube_shorts"
+    assert state["projects_view"] == "workspace"
+    assert state["opened_project_data"]["name"] == "RC1 E2E Validation"
+    assert state["asset_detail_visible"] is True
+    assert state["selected_asset"]["title"] == "Idea 1"
     assert "pending_project_name" not in state
 
 
@@ -174,6 +178,7 @@ def test_queue_project_open_does_not_touch_widget_key(monkeypatch):
     assert fake["pending_project_id"] == "proj_alpha"
     assert fake["pending_project_name"] == "RC1 E2E Validation"
     assert fake["pending_project_data"] == project
+    assert fake["projects_view"] == "workspace"
     assert "project_name_input" not in fake
 
 

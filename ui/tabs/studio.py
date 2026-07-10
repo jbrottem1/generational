@@ -7,7 +7,7 @@ import streamlit as st
 from core import storage
 from core.models import project_from_result, project_widget_key
 from services import studio
-from services.studio.projects import list_folders, list_tags, open_project_result
+from services.studio.projects import list_folders, list_tags
 from ui import notify
 from ui.studio import components
 
@@ -61,14 +61,12 @@ def _handle_pending_actions() -> None:
             if project is None and target:
                 project = storage.load_project(target)
             if project:
-                result = open_project_result(project["name"])
-                if result:
-                    st.session_state.current_result = result
-                    st.session_state.current_project_name = project["name"]
-                    st.session_state.studio_settings = project.get(
-                        "studio_settings", st.session_state.studio_settings
-                    )
-                    notify.success(f"Opened '{project['name']}'")
+                from ui.project_state import queue_project_open
+
+                queue_project_open(project)
+                notify.success(f"Opened '{project['name']}' — switch to the Projects tab for the workspace.")
+            else:
+                raise ValueError(f"Project '{target}' not found.")
         elif kind == "duplicate":
             source = storage.load_project_by_id(target) or storage.load_project(target)
             if not source:

@@ -31,6 +31,14 @@ DEFAULTS = {
     "studio_pipeline": [],
     "studio_command": "",
     "_studio_action": None,
+    "projects_view": "list",
+    "project_asset_index": 0,
+    "opened_project_data": None,
+    "asset_detail_visible": True,
+    "active_asset_id": "",
+    "selected_asset": None,
+    "asset_workspace_open": True,
+    "show_build_video_checklist": False,
 }
 
 
