@@ -99,7 +99,27 @@ def normalize_scenes(idea: dict) -> "tuple[list, list]":
 
 
 def _audio_package_of(idea: dict) -> dict:
-    return idea.get("audio_package") or idea.get("voice_assets") or {}
+    return idea.get("audio_package") or idea.get("voice_assets") or idea.get("voice_package") or {}
+
+
+def _output_format_for(idea: dict, context: "dict | None") -> dict:
+    """Resolve aspect/resolution from idea or studio settings; default 9:16."""
+    ctx = context or {}
+    settings = ctx.get("studio_settings") or ctx.get("settings") or {}
+    aspect = (
+        idea.get("aspect_ratio")
+        or settings.get("aspect_ratio")
+        or settings.get("orientation")
+        or ""
+    )
+    width = int(settings.get("width") or idea.get("width") or 0)
+    height = int(settings.get("height") or idea.get("height") or 0)
+    try:
+        from services.media_production.formats import resolve_output_format
+
+        return resolve_output_format(aspect=str(aspect), width=width, height=height)
+    except Exception:  # noqa: BLE001
+        return dict(OUTPUT_FORMAT)
 
 
 # ------------------------------------------------------------ asset resolution
@@ -223,6 +243,7 @@ def build_render_output(idea: dict, context: "dict | None" = None) -> dict:
             audio_mix_plan=audio_mix_plan,
             missing_assets=assets.get("missing_assets", []),
             warnings=warnings,
+            output_format=_output_format_for(idea, context),
         )
 
         return OutputPackager().package(

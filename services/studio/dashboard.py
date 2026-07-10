@@ -22,6 +22,7 @@ def get_executive_dashboard() -> dict:
     publishing = _publishing_queue_summary()
     analytics = _analytics_summary()
     rendering = _rendering_queue_summary(projects)
+    production = _production_dashboard(projects, provider_dashboard, publishing, rendering)
 
     return {
         "projects_total": len(projects),
@@ -36,6 +37,67 @@ def get_executive_dashboard() -> dict:
         "analytics_summary": analytics,
         "jobs_running": len(running_jobs),
         "jobs_pending": len(pending_jobs),
+        "production_dashboard": production,
+    }
+
+
+def _production_dashboard(projects: list, provider_dashboard: dict, publishing: dict, rendering: dict) -> dict:
+    """Studio Production Dashboard — progress, providers, costs, outputs."""
+    try:
+        from services.media_production import ffmpeg_available, media_production_readiness
+        from services.media_production.voice import VoiceProviderStatus
+
+        media = media_production_readiness()
+        voice = VoiceProviderStatus.snapshot()
+    except Exception:  # noqa: BLE001
+        media = {}
+        voice = []
+
+    latest_outputs = []
+    for project in projects[:20]:
+        for idea in (project.get("ideas") or [])[:5]:
+            render = (idea or {}).get("render_package") or {}
+            path = render.get("mp4_path") or render.get("file_uri") or render.get("mock_output_path") or ""
+            if path:
+                latest_outputs.append(
+                    {
+                        "project": project.get("name") or project.get("title") or "",
+                        "title": idea.get("title") or "",
+                        "path": path,
+                        "mock": bool(render.get("mock", True)),
+                        "status": render.get("render_status") or "",
+                    }
+                )
+
+    return {
+        "pipeline_progress": {
+            "jobs_running": rendering.get("count", 0),
+            "publish_queued": publishing.get("queued_count", 0),
+            "publish_failed": publishing.get("failed_count", 0),
+        },
+        "provider_status": {
+            "voice": voice,
+            "ffmpeg_available": bool(media.get("ffmpeg_available")),
+            "readiness_score": media.get("score"),
+            "band": media.get("band"),
+        },
+        "api_usage": {
+            "total_cost_usd": provider_dashboard.get("total_cost_usd", 0.0),
+            "providers": provider_dashboard.get("providers") or [],
+        },
+        "estimated_cost_usd": provider_dashboard.get("total_cost_usd", 0.0),
+        "asset_counts": {
+            "projects": len(projects),
+            "outputs": len(latest_outputs),
+        },
+        "final_outputs": latest_outputs[:15],
+        "publishing_status": {
+            "published": publishing.get("published_count", 0),
+            "queued": publishing.get("queued_count", 0),
+            "failed": publishing.get("failed_count", 0),
+        },
+        "blockers": media.get("blockers") or [],
+        "checklist": media.get("first_autonomous_checklist") or [],
     }
 
 

@@ -45,25 +45,71 @@ class ElevenLabsConnector(ProductionConnector):
                 "similarity_boost": float(request.payload.get("similarity_boost") or 0.75),
             },
         }
+        # Prefer timestamped endpoint when requested (word-level alignment).
+        with_ts = bool(request.payload.get("with_timestamps"))
+        path = f"/text-to-speech/{voice_id}/with-timestamps" if with_ts else f"/text-to-speech/{voice_id}"
         resp = self.http(
             "POST",
-            f"/text-to-speech/{voice_id}",
+            path,
             json_body=body,
             timeout_sec=request.timeout_sec,
             headers={"Accept": "application/json"},
         )
         # Some ElevenLabs responses are binary audio; JSON accept may still return audio bytes.
         if not resp.ok and resp.status != 0:
-            return self.fail(request, f"ElevenLabs TTS error: {resp.status} {resp.body}")
+            # Fall back to non-timestamped endpoint once.
+            if with_ts:
+                resp = self.http(
+                    "POST",
+                    f"/text-to-speech/{voice_id}",
+                    json_body=body,
+                    timeout_sec=request.timeout_sec,
+                    headers={"Accept": "application/json"},
+                )
+            if not resp.ok and resp.status != 0:
+                return self.fail(request, f"ElevenLabs TTS error: {resp.status} {resp.body}")
         audio_b64 = ""
         audio_url = ""
+        word_timestamps: list = []
         if isinstance(resp.body, dict):
             audio_b64 = str(resp.body.get("audio_base64") or "")
             audio_url = str(resp.body.get("url") or "")
+            alignment = resp.body.get("alignment") or resp.body.get("normalized_alignment") or {}
+            chars = alignment.get("characters") or []
+            starts = alignment.get("character_start_times_seconds") or []
+            ends = alignment.get("character_end_times_seconds") or []
+            if chars and starts and ends:
+                # Collapse character alignment into rough word spans.
+                buf = ""
+                w_start = None
+                for ch, s, e in zip(chars, starts, ends):
+                    if str(ch).isspace():
+                        if buf:
+                            word_timestamps.append(
+                                {"word": buf, "start": float(w_start or 0), "end": float(e), "index": len(word_timestamps)}
+                            )
+                            buf = ""
+                            w_start = None
+                    else:
+                        if w_start is None:
+                            w_start = s
+                        buf += str(ch)
+                if buf:
+                    word_timestamps.append(
+                        {
+                            "word": buf,
+                            "start": float(w_start or 0),
+                            "end": float(ends[-1] if ends else 0),
+                            "index": len(word_timestamps),
+                        }
+                    )
         elif isinstance(resp.raw, (bytes, bytearray)) and resp.raw:
             audio_b64 = base64.b64encode(bytes(resp.raw)).decode("ascii")
         elif isinstance(resp.body, (bytes, bytearray)):
             audio_b64 = base64.b64encode(bytes(resp.body)).decode("ascii")
+        duration = 0.0
+        if word_timestamps:
+            duration = float(word_timestamps[-1].get("end") or 0)
         return self.ok(
             request,
             {
@@ -73,6 +119,9 @@ class ElevenLabsConnector(ProductionConnector):
                 "text": text,
                 "model": model,
                 "format": "mp3",
+                "word_timestamps": word_timestamps,
+                "duration_sec": duration,
+                "ssml": "<speak" in text.lower(),
             },
             model=model,
         )
@@ -180,3 +229,26 @@ class OpenAITTSConnector(ProductionConnector):
 
     def _health_probe(self):
         return self.http("GET", "/models", timeout_sec=15.0, retries=0)
+
+
+class LocalVoiceCloneConnector(ProductionConnector):
+    """Future local voice-clone seam — same interface, unavailable until wired."""
+
+    name = "local_voice_clone"
+    label = "Local Voice Clone"
+    api_key_env = "LOCAL_VOICE_CLONE_ENDPOINT"
+    base_url = "http://127.0.0.1:7860"
+    capabilities = (cap.SPEECH, cap.VOICE_CLONING)
+    profile = ProviderProfile(quality=70, cost_per_unit=0.0, speed=50, consistency=70, latency_ms=8000)
+
+    def is_configured(self) -> bool:
+        return bool(self.api_key())
+
+    def _execute_impl(self, request: ProviderRequest) -> ProviderResponse:
+        return self.fail(
+            request,
+            "Local voice clone is reserved for a future on-device backend — use ElevenLabs or OpenAI TTS today.",
+        )
+
+    def _health_probe(self):
+        return self.http("GET", "/health", timeout_sec=5.0, retries=0)

@@ -1,12 +1,12 @@
-"""Narration engine — voice synthesis via ProviderRuntime."""
+"""Narration engine — voice synthesis via production voice service / ProviderRuntime."""
 
 from __future__ import annotations
 
 from core.log import get_logger, log_event
-from core.production_models import VOICE_PROFILES, VoiceSettings
+from core.production_models import VoiceSettings
 from engines.base import Engine
 from providers.voice.base import NarrationResult, VoiceMode
-from services.provider_runtime.engine_api import runtime_synthesize_voice
+from services.media_production.voice import synthesize_voice
 from services.voice_profiles import get_default_profile, get_voice_profile_manager
 
 logger = get_logger(__name__)
@@ -38,8 +38,11 @@ class NarrationEngine(Engine):
         for pkg in packages:
             tracks = []
             for scene in pkg.get("scenes", []):
-                raw = runtime_synthesize_voice(
-                    scene.get("narration", ""), profile, settings, mode=voice_mode,
+                raw = synthesize_voice(
+                    scene.get("narration", ""),
+                    profile=profile,
+                    settings=settings,
+                    mode=str(voice_mode),
                 )
                 result = NarrationResult(
                     asset_id=str(raw.get("asset_id") or ""),
@@ -59,10 +62,19 @@ class NarrationEngine(Engine):
                         "asset_id": result.asset_id,
                         "placeholder": result.placeholder,
                         "path": result.path,
+                        "audio_b64": raw.get("audio_b64") or "",
                         "provider": raw.get("provider", ""),
+                        "timing": (raw.get("voice_package") or {}).get("timing") or {},
                     }
                 )
             pkg["narration_tracks"] = tracks
+            if tracks and not any(t.get("placeholder") for t in tracks):
+                pkg["voice_package"] = {
+                    "package_version": "1.0",
+                    "tracks": tracks,
+                    "placeholder": False,
+                    "provider": tracks[0].get("provider", ""),
+                }
 
         log_event(logger, "narration.completed", packages=len(packages), mode=voice_mode)
         return {"production_packages": packages, "voice_profile": profile}

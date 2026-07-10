@@ -99,7 +99,7 @@ def runtime_generate_image(prompt: str, metadata: "dict | None" = None) -> dict:
         allow_fallback=True,
     )
     data = dict(response.data or {})
-    return {
+    asset = {
         "path": data.get("image_url") or data.get("uri") or data.get("path") or f"runtime://image/{response.provider}",
         "uri": data.get("image_url") or data.get("uri") or "",
         "image_url": data.get("image_url") or "",
@@ -112,6 +112,13 @@ def runtime_generate_image(prompt: str, metadata: "dict | None" = None) -> dict:
         "height": meta.get("height", 1920),
         "error": response.error,
     }
+    try:
+        from services.media_production.persistence import persist_image_payload
+
+        asset = persist_image_payload(asset, name="scene")
+    except Exception:  # noqa: BLE001 — persistence must never break engines
+        pass
+    return asset
 
 
 def runtime_generate_video(prompt: str, duration_sec: float = 0, metadata: "dict | None" = None) -> dict:
@@ -128,7 +135,7 @@ def runtime_generate_video(prompt: str, duration_sec: float = 0, metadata: "dict
         allow_fallback=True,
     )
     data = dict(response.data or {})
-    return {
+    asset = {
         "path": data.get("video_url") or data.get("uri") or data.get("path") or f"runtime://video/{response.provider}",
         "uri": data.get("video_url") or data.get("uri") or "",
         "video_url": data.get("video_url") or "",
@@ -143,11 +150,22 @@ def runtime_generate_video(prompt: str, duration_sec: float = 0, metadata: "dict
         "error": response.error,
         "async": bool(data.get("async")),
     }
+    try:
+        from services.media_production.persistence import persist_video_payload
+
+        asset = persist_video_payload(asset, name="clip")
+    except Exception:  # noqa: BLE001
+        pass
+    return asset
 
 
 def runtime_synthesize_voice(text: str, profile: dict, settings: dict, mode: str = "ai") -> dict:
     """Voice synthesis via ProviderRuntime — returns narration-compatible dict."""
     runtime = get_provider_runtime()
+    preferred = str((settings or {}).get("preferred_provider") or "")
+    kwargs = {"allow_fallback": True}
+    if preferred:
+        kwargs["preferred_provider"] = preferred
     response = runtime.generate_voice(
         {
             "text": text,
@@ -156,23 +174,52 @@ def runtime_synthesize_voice(text: str, profile: dict, settings: dict, mode: str
             "mode": mode,
             "voice_id": profile.get("provider_voice_id") or profile.get("voice_id") or "",
             "voice": settings.get("voice") or profile.get("voice") or "alloy",
+            "with_timestamps": True,
+            "ssml": bool((settings or {}).get("ssml")),
         },
-        allow_fallback=True,
+        **kwargs,
     )
     data = dict(response.data or {})
     words = max(1, len(text.split()))
     duration = float(data.get("duration_sec") or round(words / 2.5, 2))
-    return {
+    result = {
         "asset_id": data.get("asset_id") or f"voice_{response.provider}_{abs(hash(text)) % 10**10}",
         "duration_sec": duration,
         "path": data.get("audio_url") or data.get("path") or "",
         "audio_b64": data.get("audio_b64") or "",
+        "audio_url": data.get("audio_url") or "",
+        "format": data.get("format") or "mp3",
         "mode": mode,
         "placeholder": bool(response.demo_mode or not (data.get("audio_b64") or data.get("audio_url"))),
         "provider": response.provider,
         "error": response.error,
-        "metadata": {"provider": response.provider, "demo_mode": response.demo_mode},
+        "word_timestamps": data.get("word_timestamps") or [],
+        "sentence_timestamps": data.get("sentence_timestamps") or [],
+        "metadata": {
+            "provider": response.provider,
+            "demo_mode": response.demo_mode,
+            "word_timestamps": data.get("word_timestamps") or [],
+            "sentence_timestamps": data.get("sentence_timestamps") or [],
+        },
     }
+    try:
+        from services.media_production.persistence import persist_audio_payload
+        from services.media_production.timestamps import attach_timing_metadata
+
+        result = persist_audio_payload(result, name="narration")
+        timing = attach_timing_metadata(
+            text,
+            float(result.get("duration_sec") or duration),
+            word_timestamps=result.get("word_timestamps") or None,
+            sentence_timestamps=result.get("sentence_timestamps") or None,
+        )
+        result["metadata"]["timing"] = timing
+        result["word_timestamps"] = timing["word_timestamps"]
+        result["sentence_timestamps"] = timing["sentence_timestamps"]
+        result["duration_sec"] = timing["duration_sec"]
+    except Exception:  # noqa: BLE001
+        pass
+    return result
 
 
 def runtime_generate_asset(operation: str, payload: dict) -> ProviderResponse:

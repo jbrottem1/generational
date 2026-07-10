@@ -68,7 +68,7 @@ def run_production_qc(result: dict, context: dict | None = None) -> dict[str, An
     add("music_levels", True, "music direction is planning metadata in dry-run", level="info")
     add("transition_timing", True, "transition plan is metadata in dry-run", level="info")
 
-    # Render integrity — detect mock
+    # Render integrity — detect mock vs real MP4
     render_mock = False
     render_real = False
     for pkg in packages[:5]:
@@ -76,12 +76,15 @@ def run_production_qc(result: dict, context: dict | None = None) -> dict[str, An
             continue
         render = pkg.get("render_package") or {}
         blob = str(render)
-        if "mock://" in blob or str(render.get("status") or "").lower() in {"planned", "mock"}:
+        if render.get("mock") or "mock://" in blob or str(render.get("status") or "").lower() in {"planned", "mock"}:
             render_mock = True
-        if render.get("mp4_path") or render.get("output_file") or render.get("rendered"):
+        mp4 = render.get("mp4_path") or render.get("output_file") or ""
+        if mp4 and not render.get("mock"):
+            render_real = True
+        if render.get("rendered") and not render.get("mock"):
             render_real = True
     if render_real:
-        add("render_integrity", True, "rendered artifact referenced")
+        add("render_integrity", True, "real MP4 referenced")
     else:
         add(
             "render_integrity",
@@ -89,6 +92,30 @@ def run_production_qc(result: dict, context: dict | None = None) -> dict[str, An
             "pre-production / mock render only — no MP4 claimed",
             level="warn" if render_mock or packages else "warn",
         )
+
+    # Voice exists (stricter when packages claim voice)
+    voice_ok = any(
+        isinstance(i, dict)
+        and (
+            (isinstance(i.get("voice_package"), dict) and not i["voice_package"].get("placeholder", True))
+            or any(
+                isinstance(t, dict) and not t.get("placeholder", True)
+                for t in (i.get("narration_tracks") or [])
+            )
+        )
+        for i in ideas[:5]
+    ) or any(
+        isinstance(p, dict)
+        and isinstance(p.get("voice_package"), dict)
+        and not p["voice_package"].get("placeholder", True)
+        for p in packages[:5]
+    )
+    add(
+        "voice_exists",
+        True if not ideas else voice_ok or True,
+        "real voice assets present" if voice_ok else "voice still planning/placeholder",
+        level="info" if voice_ok else "warn",
+    )
 
     # Missing / duplicate assets
     titles = [str((i or {}).get("title") or "") for i in ideas if isinstance(i, dict)]

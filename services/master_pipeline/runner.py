@@ -121,6 +121,26 @@ def run_master_production(
     audits = [contract_audit(p if isinstance(p, dict) else {}) for p in packages[:5]]
     qc = run_production_qc(result, normalized)
 
+    report_paths: dict = {}
+    try:
+        from services.media_production.reports import write_full_report_bundle
+
+        render_packages = [
+            (p.get("render_package") if isinstance(p, dict) else {}) or {}
+            for p in packages
+            if isinstance(p, dict)
+        ]
+        report_paths = write_full_report_bundle(
+            {**result, "qc": qc},
+            render_packages=render_packages[:5],
+            metrics={
+                "tokens_used": result.get("token_usage") or result.get("tokens_used"),
+                "notes": [f"production_type={ptype}", f"publish_mode={publish_mode}"],
+            },
+        )
+    except Exception as exc:  # noqa: BLE001
+        logger.warning("master_pipeline.reports_failed | error=%s", exc)
+
     output = {
         **result,
         "master_pipeline": {
@@ -131,12 +151,15 @@ def run_master_production(
             "stages": master_pipeline_map(),
             "contract_audits": audits,
             "qc": qc,
+            "reports": report_paths,
             "registry": {
                 "engines_ready": registry_summary().get("engines_ready"),
                 "engine_count": registry_summary().get("engine_count"),
             },
         },
         "unified_packages": packages,
+        "qc": qc,
+        "reports": report_paths,
     }
     logger.info(
         "master_pipeline.complete | ok=%s qc_score=%s packages=%s",

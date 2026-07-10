@@ -402,6 +402,35 @@ def _render_dashboard() -> None:
     dashboard = studio.get_executive_dashboard()
     components.executive_dashboard_view(dashboard)
 
+    prod = dashboard.get("production_dashboard") or {}
+    if prod:
+        st.markdown("#### Production Dashboard")
+        c1, c2, c3, c4 = st.columns(4)
+        c1.metric("Readiness", prod.get("provider_status", {}).get("readiness_score", "—"))
+        c2.metric("FFmpeg", "ready" if prod.get("provider_status", {}).get("ffmpeg_available") else "missing")
+        c3.metric("Outputs", prod.get("asset_counts", {}).get("outputs", 0))
+        c4.metric("Est. cost USD", f"{float(prod.get('estimated_cost_usd') or 0):.2f}")
+        if prod.get("blockers"):
+            st.warning("Production blockers:")
+            for item in prod["blockers"]:
+                st.markdown(f"- {item}")
+        outputs = prod.get("final_outputs") or []
+        if outputs:
+            st.markdown("##### Final outputs")
+            for row in outputs[:10]:
+                label = f"{row.get('project')}: {row.get('title')} — `{row.get('path')}`"
+                if row.get("mock"):
+                    st.caption(f"mock · {label}")
+                else:
+                    st.markdown(f"- {label}")
+                    if st.button(f"Open {row.get('title') or 'output'}", key=f"open_out_{row.get('path')}"):
+                        st.session_state.current_project_name = row.get("project")
+                        notify.info(f"Opened project '{row.get('project')}'")
+        if prod.get("checklist"):
+            with st.expander("First autonomous production checklist"):
+                for item in prod["checklist"]:
+                    st.markdown(f"- [ ] {item}")
+
 
 def _render_readiness() -> None:
     st.markdown("### Production Readiness")
@@ -418,12 +447,18 @@ def _render_readiness() -> None:
         c1.metric("Engines ready", f"{reg.get('engines_ready', 0)}/{reg.get('engine_count', 0)}")
         c2.metric("Agents ready", reg.get("agents_ready", 0))
         c3.metric("Providers configured", master.get("providers_configured", 0))
+        if master.get("ffmpeg_available") is not None:
+            st.caption(f"FFmpeg assembly: {'available' if master.get('ffmpeg_available') else 'not installed'}")
         if master.get("blockers"):
             st.warning("Blockers for finished MP4 / live publish:")
             for item in master["blockers"]:
                 st.markdown(f"- {item}")
         st.caption(f"First production: {master.get('estimated_time_to_first_production')}")
         st.caption(f"First publish: {master.get('estimated_time_to_first_publish')}")
+        if master.get("first_autonomous_checklist"):
+            with st.expander("First autonomous checklist"):
+                for item in master["first_autonomous_checklist"]:
+                    st.markdown(f"- [ ] {item}")
         if master.get("next_priorities"):
             with st.expander("Recommended next priorities"):
                 for item in master["next_priorities"]:

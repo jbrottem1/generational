@@ -70,10 +70,15 @@ class OutputPackager:
                 "validation": validation,
                 "render_status": render_result.get("render_status", ""),
                 "mock_output_path": render_result.get("mock_output_path", ""),
-                "file_uri": render_result.get("mock_output_path", ""),
+                "output_path": render_result.get("output_path") or render_result.get("mock_output_path", ""),
+                "mp4_path": render_result.get("mp4_path", ""),
+                "file_uri": render_result.get("file_uri")
+                or render_result.get("mp4_path")
+                or render_result.get("mock_output_path", ""),
                 "render_log": render_result.get("render_log", []),
                 "render_job": render_result.get("job", {}),
                 "mock": bool(render_result.get("mock", True)),
+                "assembly": render_result.get("assembly") or {},
                 "render_manifest": {
                     "scenes": len(scene_render_plan),
                     "timeline_segments": timeline.get("segment_count", 0),
@@ -84,7 +89,9 @@ class OutputPackager:
                     "assets_missing": len(missing_assets),
                     "warnings": len(render_warnings),
                     "readiness": validation.get("production_readiness_score", 0),
-                    "ready_for_publishing": validation.get("status") in ("SUCCESS", "WARNING"),
+                    "ready_for_publishing": validation.get("status") in ("SUCCESS", "WARNING")
+                    and not bool(render_result.get("mock", True)),
+                    "real_mp4": not bool(render_result.get("mock", True)),
                 },
             }
         )

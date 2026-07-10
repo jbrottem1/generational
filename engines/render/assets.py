@@ -63,6 +63,9 @@ class AIImageFulfiller(AssetFulfiller):
         ) or {}
         asset.update(generated)
         asset["source"] = self.source
+        if generated.get("path") and not str(generated.get("path")).startswith(("mock://", "runtime://")):
+            asset["placeholder"] = bool(generated.get("placeholder", False))
+            asset["status"] = generated.get("status") or "generated"
         return asset
 
 
@@ -79,6 +82,9 @@ class AIVideoFulfiller(AssetFulfiller):
         ) or {}
         asset.update(generated)
         asset["source"] = self.source
+        if generated.get("path") and not str(generated.get("path")).startswith(("mock://", "runtime://")):
+            asset["placeholder"] = bool(generated.get("placeholder", False))
+            asset["status"] = generated.get("status") or "generated"
         return asset
 
 

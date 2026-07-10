@@ -41,6 +41,14 @@ from services.publishing.queue import PublishingHistory, PublishingQueue, build_
 from services.publishing.retry import RetryManager
 from services.publishing.scheduler import PUBLISH_MODES, PublishingScheduler, next_window_occurrence
 
+# Register production integrity gate (blocks live publish of mock MP4s).
+try:
+    from services.media_production.bootstrap import bootstrap_media_production
+
+    bootstrap_media_production()
+except Exception:  # noqa: BLE001 — publishing must load even if media module fails
+    pass
+
 __all__ = [
     "AccountRegistry",
     "CredentialProvider",

@@ -89,6 +89,10 @@ class AudioMixer:
                     "target_wpm": cue.get("target_wpm", 0),
                     "pauses": cue.get("pauses", []),
                     "emphasis": cue.get("emphasis", []),
+                    "path": cue.get("path")
+                    or audio_package.get("path")
+                    or (audio_package.get("timing") and audio_package.get("path"))
+                    or "",
                 }
             )
 

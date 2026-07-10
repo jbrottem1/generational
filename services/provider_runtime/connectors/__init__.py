@@ -19,7 +19,11 @@ from services.provider_runtime.connectors.video import (
     PikaConnector,
     RunwayConnector,
 )
-from services.provider_runtime.connectors.voice import ElevenLabsConnector, OpenAITTSConnector
+from services.provider_runtime.connectors.voice import (
+    ElevenLabsConnector,
+    LocalVoiceCloneConnector,
+    OpenAITTSConnector,
+)
 from services.provider_runtime.connectors.music import FutureMusicConnector
 from services.provider_runtime.connectors.platforms import (
     ComfyUIConnector,
@@ -53,6 +57,7 @@ PRODUCTION_CONNECTOR_CLASSES = (
     LumaConnector,
     ElevenLabsConnector,
     OpenAITTSConnector,
+    LocalVoiceCloneConnector,
     FutureMusicConnector,
     FalConnector,
     ReplicateConnector,
