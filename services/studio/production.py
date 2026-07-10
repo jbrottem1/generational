@@ -238,6 +238,11 @@ def result_from_project_run(run, settings: dict) -> dict:
     result["render_summary"] = context.get("render_summary", {})
     result["seo_optimization_report"] = context.get("seo_optimization_report", {})
     result["publishing_result"] = context.get("publishing_result", {})
+    result["publish_schedule"] = context.get("publish_schedule", [])
+    result["analytics_summary"] = context.get("analytics_summary", {})
+    result["learning_report"] = context.get("learning_report", {})
+    result["learning_recommendations"] = context.get("learning_recommendations", {})
+    result["learning_metadata"] = context.get("learning_metadata", {})
     if context.get("production_error"):
         result["production_error"] = context["production_error"]
     if context.get("production_skipped"):

@@ -183,6 +183,21 @@ def _render_create() -> None:
         _execute_production(command, longform=run_longform)
 
 
+def _ensure_autosave_project(command: str) -> str:
+    """Create a named project when production succeeds without one selected."""
+    from datetime import datetime, timezone
+
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
+    snippet = " ".join((command or "production").strip().split())[:40] or "production"
+    name = f"RC1 {snippet} ({stamp})"
+    try:
+        studio.create_studio_project(name, folder="Studio Autosave", tags=["autosave", "rc1"])
+    except ValueError:
+        # Name collision — fold into the existing project.
+        pass
+    return name
+
+
 def _execute_production(command: str, *, longform: bool = False) -> None:
     if not command.strip():
         st.warning("Enter a production command.")
@@ -210,7 +225,19 @@ def _execute_production(command: str, *, longform: bool = False) -> None:
                 model=st.session_state.selected_model,
                 project_name=st.session_state.current_project_name or "",
             )
-        notify.success(f"Long-form job submitted: {job['job_id']}")
+        project_name = st.session_state.current_project_name or _ensure_autosave_project(command)
+        project = storage.load_project(project_name) or {"name": project_name}
+        project["command"] = command
+        project["studio_settings"] = settings
+        project["longform_job_id"] = job.get("job_id", "")
+        if job.get("run_id"):
+            project["workflow_run_id"] = job["run_id"]
+        storage.save_project(project)
+        st.session_state.current_project_name = project_name
+        notify.success(
+            f"Long-form job submitted: {job.get('job_id')} · saved on project '{project_name}'. "
+            "Open Projects to track workflow_run_id / resume from Workflow Executor."
+        )
         return
 
     with st.spinner("Running production via Workflow Executor → Orchestrator..."):
@@ -236,16 +263,15 @@ def _execute_production(command: str, *, longform: bool = False) -> None:
     state.record_ideas_generated(len(result.get("ideas", [])))
     state.add_token_usage(tokens)
 
-    if st.session_state.current_project_name:
-        project = storage.load_project(st.session_state.current_project_name) or {
-            "name": st.session_state.current_project_name,
-        }
-        project.update(project_from_result(st.session_state.current_project_name, result))
-        project["studio_settings"] = settings
-        project["pipeline_state"] = {"stages": st.session_state.studio_pipeline}
-        if result.get("workflow_run_id"):
-            project["workflow_run_id"] = result["workflow_run_id"]
-        storage.save_project(project)
+    project_name = st.session_state.current_project_name or _ensure_autosave_project(command)
+    project = storage.load_project(project_name) or {"name": project_name}
+    project.update(project_from_result(project_name, result))
+    project["studio_settings"] = settings
+    project["pipeline_state"] = {"stages": st.session_state.studio_pipeline}
+    if result.get("workflow_run_id"):
+        project["workflow_run_id"] = result["workflow_run_id"]
+    storage.save_project(project)
+    st.session_state.current_project_name = project_name
 
     if error:
         st.warning(f"Pipeline completed with warnings: {error}")

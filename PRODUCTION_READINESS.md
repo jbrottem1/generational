@@ -1,77 +1,65 @@
-# Production Readiness Report
+# Production Readiness Report — RC1
 
-**Version:** 9.16.0  
-**Branch:** `feature/real-provider-connectors`  
+**Version:** 1.0.0-rc1  
+**Branch:** `release/1.0.0-rc1`  
 **Owner:** Agent 1 — Chief Systems Architect  
-**Date:** 2026-07-09
+**Date:** 2026-07-09  
+**Method:** Measurable evidence only (no score inflation).
 
-## Overall production readiness: **95 / 100**
+## Overall production readiness: **91 / 100**
 
-The closed production loop (idea → planning → creative → assets → animation →
-voice → post → publish → analytics → learning) now runs end-to-end on the
-Orchestrator path with dry-run publishing, YouTube analytics adapter,
-continuous learning armed at boot, an internal HTTP API, and a Studio
-Readiness dashboard. Remaining blockers are operational (credentials / live
-vendor QA), not architectural.
+RC1 is ready for **controlled demo / dry-run** release. Public GA remains blocked on live credentials and stub engine ownership.
+
+Previous claim of 95/100 (v9.16) is **superseded**. Studio/Publishing/Analytics UI gaps and absent keys require a lower honest score despite closed-loop architecture.
 
 ---
 
-## Scorecard
+## Scorecard (evidence-based)
 
 | Area | Score | Why |
 |---|---|---|
-| Architecture | **95** | Orchestrator-only engines; Studio → WE → Orchestrator; ProviderRuntime gateway. |
-| Execution | **94** | Full pipeline includes analytics + learning after publish; stubs WARNING-skip. |
-| Provider Runtime | **90–94** | Catalog, health, cost, connectors; score rises with keyed providers. |
-| Studio UI | **93** | Production via WE; Readiness tab; provider dashboard. |
-| Workflow Executor | **95** | Durable runs, checkpoints, retry, pause, cancel, analytics/learning steps. |
-| Analytics | **92–96** | Stage in-pipeline; YouTube adapter registered; mock fallback; learning hooks. |
-| Learning | **94** | Stage in-pipeline; continuous learning armed at Studio/API boot (idempotent). |
-| Publishing | **93+** | `dry_run` mode validates without upload; scheduled/immediate unchanged. |
-| Long-form | **94** | WE + RuntimeExecutionEngine pause/cancel; stage checkpoints. |
-| API | **96** | Internal HTTP: health/ready/readiness/providers/runs; `context_summary` on results. |
-| Security | **95** | Engine bans on `core.ai` / vendor SDKs; credential helpers; no secrets in readiness. |
-
-**Previous:** 84/100 (v9.15). **Delta:** +11 from closed-loop orchestration, dry-run publish, YouTube analytics, learning bootstrap, internal API, readiness dashboard.
+| Architecture | **94** | Orchestrator-only engines; Studio→WE→Orchestrator; no engine vendor imports. |
+| Execution | **92** | Full 23-stage dry-run E2E verified; stubs WARNING-skip. |
+| Provider Runtime | **88** | Catalog/health/retry/cost live; **no keys** in audit environment. |
+| Studio UI | **88** | Persistence + Publishing/Analytics store binding; OAuth Connect still disabled. |
+| Workflow Executor | **93** | Durable runs; pause/resume/cancel verified; pause tests thin. |
+| Analytics | **90** | In-pipeline stage + store + YouTube adapter (mock fallback). |
+| Learning | **90** | In-pipeline + hooks armed at boot. |
+| Publishing | **90** | Dry-run mode SUCCESS; live platform OAuth absent. |
+| Long-form | **90** | WE longform submit + job id persistence; limited UI resume UX. |
+| API | **92** | Internal HTTP readiness/runs endpoints. |
+| Security | **92** | Credential helpers; architecture bans; no secrets in source scan. |
 
 ---
 
-## What was fixed in this readiness pass
+## RC1 hardening shipped
 
-1. **Orchestrator closed loop** — `run_full_pipeline` runs `analytics` then `learning` after distribution (aligned with Workflow Executor).
-2. **Publish dry-run** — `PUBLISH_MODES` includes `dry_run`; adapters validate without upload.
-3. **YouTube Analytics provider** — registered for `youtube` / `youtube_shorts` with mock fallback.
-4. **Continuous learning armed** at Studio (`app.py`) and API boot; hooks skip if stages already ran.
-5. **`PipelineResult.to_dict()`** includes `context_summary` for API consumers.
-6. **Internal HTTP API** — `python -m api.server` (`/health`, `/ready`, `/readiness`, `/providers/health`, `/runs`, `POST /runs`).
-7. **Production Readiness Dashboard** — Studio → Readiness tab + `services/readiness` aggregator.
-8. **E2E + readiness tests** covering the full demo pipeline and scorecard floors.
+1. `project_from_result` / `result_from_project` persist packages, publish, analytics, learning, workflow ids.  
+2. Studio autosaves successful runs (and long-form job ids) even without a selected project.  
+3. Publishing + Analytics tabs read durable queues/stores.  
+4. Studio production result maps analytics/learning context fields.  
+5. Scorecard recalibrated to evidence; version set to `1.0.0-rc1`.
 
 ---
 
-## Remaining blockers (true public-release gates)
+## Remaining blockers (public GA)
 
-| Priority | Blocker | Mitigation |
-|---|---|---|
-| P0 | Operator API keys for at least one LLM + media vendor | Configure secrets; pilot in dry-run then immediate |
-| P0 | YouTube OAuth / API for live publish + analytics | Set `YOUTUBE_ACCESS_TOKEN` (or API key); keep dry-run until verified |
-| P1 | FutureEngine stubs (animation, character_universe, optimization_lab) | Merge owning agent branches or keep WARNING-skip for v1 |
-| P1 | Credentialed live smoke (short + long-form pause/resume) | Operator-run after keys |
-| P2 | Public multi-tenant SaaS auth | Out of scope for internal API |
+| Priority | Blocker |
+|---|---|
+| P0 | Operator API keys for LLM + media |
+| P0 | YouTube (or target platform) OAuth for live publish/analytics |
+| P1 | FutureEngine stubs (animation / character_universe / optimization_lab / brand_management) |
+| P1 | Credentialed live smoke (short + long-form pause/resume) |
+| P2 | Public multi-tenant auth / SaaS API |
 
 ---
 
-## Success criteria checklist
+## Success criteria (RC1)
 
-- [x] Engines do not call AI providers directly
-- [x] ProviderRuntime is the generation gateway
-- [x] Studio → Workflow Executor → Orchestrator
-- [x] Long-form checkpoint / resume / pause / cancel
-- [x] Orchestrator pipeline ends at analytics → learning
-- [x] Publishing dry-run mode
-- [x] YouTube analytics adapter (mock fallback)
-- [x] Continuous learning armed at process start
-- [x] Internal production HTTP API
-- [x] Production Readiness Dashboard
-- [ ] First credentialed end-to-end generation (operator step)
-- [ ] First real platform publish (operator step)
+- [x] Launch app  
+- [x] Enter prompt → complete package (demo/dry-run)  
+- [x] View ideas/scripts/projects/publish/analytics artifacts  
+- [x] Export via project JSON / packages  
+- [ ] Publish live when credentials configured (operator step)  
+
+Companion: [RELEASE_CANDIDATE_1.0.md](RELEASE_CANDIDATE_1.0.md).

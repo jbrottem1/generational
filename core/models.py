@@ -9,6 +9,41 @@ Idea dict keys: title, hook, script, cta, hashtags, thumbnail_concept.
 
 from __future__ import annotations
 
+# Fields persisted on projects so Successful runs leave inspectable artifacts
+# after reload (RC1 output-visibility requirement).
+_PROJECT_OPTIONAL_FIELDS = (
+    "research",
+    "research_bundle",
+    "quality_summary",
+    "production_dashboard",
+    "production_packages",
+    "unified_packages",
+    "stage_reports",
+    "studio_settings",
+    "platform",
+    "production_report",
+    "render_summary",
+    "seo_optimization_report",
+    "publishing_result",
+    "publish_schedule",
+    "analytics_summary",
+    "analytics_package",
+    "learning_report",
+    "learning_metadata",
+    "learning_recommendations",
+    "provider_usage",
+    "estimated_cost_usd",
+    "workflow_run_id",
+    "workflow_status",
+    "pipeline_steps",
+    "pipeline_state",
+    "trend_opportunities",
+    "trend_dashboard",
+    "top_opportunity",
+    "settings_preview",
+    "longform_job_id",
+)
+
 
 def build_result(
     command: str,
@@ -43,22 +78,9 @@ def project_from_result(name: str, result: dict) -> dict:
         "demo_mode": result["demo_mode"],
         "model": result["model"],
     }
-    if result.get("research"):
-        project["research"] = result["research"]
-    if result.get("research_bundle"):
-        project["research_bundle"] = result["research_bundle"]
-    if result.get("quality_summary"):
-        project["quality_summary"] = result["quality_summary"]
-    if result.get("production_dashboard"):
-        project["production_dashboard"] = result["production_dashboard"]
-    if result.get("production_packages"):
-        project["production_packages"] = result["production_packages"]
-    if result.get("stage_reports"):
-        project["stage_reports"] = result["stage_reports"]
-    if result.get("studio_settings"):
-        project["studio_settings"] = result["studio_settings"]
-    if result.get("platform"):
-        project["platform"] = result["platform"]
+    for key in _PROJECT_OPTIONAL_FIELDS:
+        if result.get(key) not in (None, "", [], {}):
+            project[key] = result[key]
     return project
 
 
@@ -74,20 +96,7 @@ def result_from_project(project: dict) -> dict:
         demo_mode=project.get("demo_mode", True),
         model=project.get("model", "—"),
     )
-    if project.get("research"):
-        result["research"] = project["research"]
-    if project.get("research_bundle"):
-        result["research_bundle"] = project["research_bundle"]
-    if project.get("quality_summary"):
-        result["quality_summary"] = project["quality_summary"]
-    if project.get("production_dashboard"):
-        result["production_dashboard"] = project["production_dashboard"]
-    if project.get("production_packages"):
-        result["production_packages"] = project["production_packages"]
-    if project.get("stage_reports"):
-        result["stage_reports"] = project["stage_reports"]
-    if project.get("studio_settings"):
-        result["studio_settings"] = project["studio_settings"]
-    if project.get("platform"):
-        result["platform"] = project["platform"]
+    for key in _PROJECT_OPTIONAL_FIELDS:
+        if key in project and project.get(key) not in (None,):
+            result[key] = project[key]
     return result

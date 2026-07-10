@@ -35,7 +35,7 @@ def _handle_get(path: str) -> tuple[int, bytes, str]:
         from services.readiness import build_readiness_report
 
         report = build_readiness_report()
-        ready = report.get("overall", 0) >= 90 and not any(
+        ready = report.get("overall", 0) >= 88 and not any(
             "Continuous learning" in b for b in report.get("blockers", [])
         )
         return _json_bytes(

@@ -27,3 +27,20 @@ def test_result_from_project_tolerates_missing_fields():
     assert result["niche"] == "General Content"
     assert result["video_count"] == 2
     assert result["demo_mode"] is True
+
+
+def test_project_round_trip_preserves_production_artifacts():
+    """RC1: Successful runs must leave unified packages / publish / analytics visible after reload."""
+    result = _sample_result()
+    result["unified_packages"] = [{"project_id": "p1", "status": "published"}]
+    result["publishing_result"] = {"status": "SUCCESS", "jobs_created": 1, "publish_mode": "dry_run"}
+    result["analytics_summary"] = {"collected": 1}
+    result["learning_report"] = {"status": "SUCCESS", "records_analyzed": 1}
+    result["workflow_run_id"] = "run_abc"
+    project = project_from_result("Persist Me", result)
+    rehydrated = result_from_project(project)
+    assert rehydrated["unified_packages"][0]["project_id"] == "p1"
+    assert rehydrated["publishing_result"]["publish_mode"] == "dry_run"
+    assert rehydrated["analytics_summary"]["collected"] == 1
+    assert rehydrated["learning_report"]["records_analyzed"] == 1
+    assert rehydrated["workflow_run_id"] == "run_abc"

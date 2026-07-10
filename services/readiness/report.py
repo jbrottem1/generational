@@ -164,21 +164,23 @@ def readiness_scorecard(
 ) -> dict:
     """Compute area scores and remaining true blockers."""
     security = security or {}
-    architecture = 95
-    execution = 95 if engine_ready_pct >= 70 else 82
-    provider_runtime = 95 if providers_keyed >= 1 else 93
-    studio = 94
-    workflow = 95 if longform.get("workflow_executor_pause") else 88
-    analytics_score = 92 if analytics.get("youtube_provider_registered") else 78
+    # Evidence-based scores for RC1 (do not inflate). Keyed credentials and
+    # live platform OAuth still gate public GA.
+    architecture = 94
+    execution = 92 if engine_ready_pct >= 70 else 80
+    provider_runtime = 92 if providers_keyed >= 1 else 88
+    studio = 88  # Publishing/Analytics tabs bound; OAuth Connect still pending
+    workflow = 93 if longform.get("workflow_executor_pause") else 86
+    analytics_score = 88 if analytics.get("youtube_provider_registered") else 72
     if analytics.get("continuous_learning_armed"):
-        analytics_score = min(96, analytics_score + 3)
-    learning_score = 94 if analytics.get("continuous_learning_armed") else 88
-    publishing_score = 94 if publishing.get("dry_run_supported") else 80
+        analytics_score = min(91, analytics_score + 2)
+    learning_score = 90 if analytics.get("continuous_learning_armed") else 82
+    publishing_score = 90 if publishing.get("dry_run_supported") else 75
     if publishing.get("youtube_credentials"):
-        publishing_score = min(97, publishing_score + 3)
-    longform_score = 94 if longform.get("runtime_longform_pause") else 87
-    api_score = 96 if api.get("internal_http") and api.get("pipeline_result_context_summary") else 72
-    security_score = 95 if security.get("engines_banned_from_core_ai") else 80
+        publishing_score = min(94, publishing_score + 3)
+    longform_score = 90 if longform.get("runtime_longform_pause") else 84
+    api_score = 92 if api.get("internal_http") and api.get("pipeline_result_context_summary") else 72
+    security_score = 92 if security.get("engines_banned_from_core_ai") else 78
 
     areas = {
         "architecture": architecture,
