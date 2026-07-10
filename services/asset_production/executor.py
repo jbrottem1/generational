@@ -260,13 +260,24 @@ def run_asset_production(
     on_progress: ProgressFn | None = None,
     skip_publish_if_no_oauth: bool = True,
     max_images: int = 8,
+    resume_from: str = "",
 ) -> dict[str, Any]:
-    """Execute the full production chain for one asset. Mutates and returns asset."""
+    """Execute the full production chain for one asset. Mutates and returns asset.
+
+    ``resume_from`` skips stages before the named key (inclusive start), so a
+    failed run can continue without regenerating earlier artifacts.
+    """
     asset = dict(asset)
     asset_id = str(asset.get("asset_id") or f"asset_{abs(hash(asset.get('title') or 'x')) % 10**8}")
     asset["asset_id"] = asset_id
     _ensure_pipeline(asset)
     artifact_index: dict[str, Any] = dict(asset.get("production_artifacts") or {})
+
+    stage_order = list(PIPELINE_STAGE_KEYS)
+    resume_idx = stage_order.index(resume_from) if resume_from in stage_order else 0
+
+    def _should_run(key: str) -> bool:
+        return stage_order.index(key) >= resume_idx
 
     # ---- idea ----
     def stage_idea():
@@ -279,8 +290,11 @@ def run_asset_production(
         })
         return {}, [path]
 
-    if not _run_stage(asset, "idea", stage_idea, on_progress=on_progress):
-        return _finalize(asset, project, ok=False, error="idea stage failed")
+    if _should_run("idea"):
+        if not _run_stage(asset, "idea", stage_idea, on_progress=on_progress):
+            return _finalize(asset, project, ok=False, error="idea stage failed")
+    else:
+        _emit(on_progress, asset, "idea", "Idea skipped (resume)")
 
     # ---- script ----
     def stage_script():
@@ -302,8 +316,16 @@ def run_asset_production(
         path = art.write_json(asset_id, "script.json", asset.get("video_script"))
         return {"video_script": asset.get("video_script"), "script": asset.get("script")}, [path]
 
-    if not _run_stage(asset, "script", stage_script, on_progress=on_progress, max_retries=1):
-        return _finalize(asset, project, ok=False, error="script stage failed")
+    if _should_run("script"):
+        if not _run_stage(asset, "script", stage_script, on_progress=on_progress, max_retries=1):
+            return _finalize(asset, project, ok=False, error="script stage failed")
+    else:
+        script_path = art.production_dir(asset_id) / "script.json"
+        if script_path.exists() and not asset_has_video_script(asset):
+            import json as _json
+
+            asset["video_script"] = _json.loads(script_path.read_text(encoding="utf-8"))
+            asset["script"] = (asset.get("video_script") or {}).get("full_voiceover") or asset.get("script")
 
     # ---- scenes ----
     def stage_scenes():
@@ -329,10 +351,23 @@ def run_asset_production(
             "visual_package": visual_package,
         }, [path]
 
-    if not _run_stage(asset, "scenes", stage_scenes, on_progress=on_progress):
-        return _finalize(asset, project, ok=False, error="scenes stage failed")
+    if _should_run("scenes"):
+        if not _run_stage(asset, "scenes", stage_scenes, on_progress=on_progress):
+            return _finalize(asset, project, ok=False, error="scenes stage failed")
+    else:
+        scenes_path = art.production_dir(asset_id) / "scenes.json"
+        if scenes_path.exists() and not asset.get("scene_breakdown"):
+            import json as _json
+
+            loaded = _json.loads(scenes_path.read_text(encoding="utf-8"))
+            asset["scene_breakdown"] = loaded
+            visual_package = dict(asset.get("visual_package") or {})
+            visual_package["scenes"] = loaded
+            asset["visual_package"] = visual_package
 
     scenes = list(asset.get("scene_breakdown") or (asset.get("visual_package") or {}).get("scenes") or [])
+    if not scenes:
+        scenes = _scenes_from_script(asset)
 
     # ---- visual prompts ----
     def stage_visual_prompts():
@@ -365,8 +400,9 @@ def run_asset_production(
             "visual_package": visual_package,
         }, [path]
 
-    if not _run_stage(asset, "visual_prompts", stage_visual_prompts, on_progress=on_progress):
-        return _finalize(asset, project, ok=False, error="visual_prompts stage failed")
+    if _should_run("visual_prompts"):
+        if not _run_stage(asset, "visual_prompts", stage_visual_prompts, on_progress=on_progress):
+            return _finalize(asset, project, ok=False, error="visual_prompts stage failed")
 
     # ---- images ----
     def stage_images():
@@ -407,8 +443,15 @@ def run_asset_production(
             "scene_breakdown": scenes,
         }, [path] + [g["path"] for g in generated if g.get("path") and not str(g["path"]).startswith(("mock://", "runtime://"))]
 
-    if not _run_stage(asset, "images", stage_images, on_progress=on_progress, max_retries=1):
-        return _finalize(asset, project, ok=False, error="images stage failed")
+    if _should_run("images"):
+        if not _run_stage(asset, "images", stage_images, on_progress=on_progress, max_retries=1):
+            return _finalize(asset, project, ok=False, error="images stage failed")
+    else:
+        images_path = art.production_dir(asset_id) / "images.json"
+        if images_path.exists() and not asset.get("generated_images"):
+            import json as _json
+
+            asset["generated_images"] = _json.loads(images_path.read_text(encoding="utf-8"))
 
     # ---- video clips (optional failover to stills) ----
     def stage_video_clips():
@@ -433,10 +476,11 @@ def run_asset_production(
         path = art.write_json(asset_id, "video_clips.json", clips)
         return {"generated_videos": clips}, [path]
 
-    if not _run_stage(asset, "video_clips", stage_video_clips, on_progress=on_progress, max_retries=1):
-        # Soft-fail: continue with stills
-        _set_stage(asset, "video_clips", status="skipped", error="video clips unavailable — continuing with stills")
-        _emit(on_progress, asset, "video_clips", "Video clips skipped — continuing with stills")
+    if _should_run("video_clips"):
+        if not _run_stage(asset, "video_clips", stage_video_clips, on_progress=on_progress, max_retries=1):
+            # Soft-fail: continue with stills
+            _set_stage(asset, "video_clips", status="skipped", error="video clips unavailable — continuing with stills")
+            _emit(on_progress, asset, "video_clips", "Video clips skipped — continuing with stills")
 
     # ---- voice ----
     def stage_voice():
@@ -461,8 +505,9 @@ def run_asset_production(
             raise RuntimeError(voice_pkg.get("error") or "Voice synthesis returned placeholder — check TTS credentials")
         return {"voice_package": voice_pkg, "audio_package": {**(asset.get("audio_package") or {}), "path": local, "voice_package": voice_pkg}}, arts
 
-    if not _run_stage(asset, "voice", stage_voice, on_progress=on_progress, max_retries=2):
-        return _finalize(asset, project, ok=False, error="voice stage failed")
+    if _should_run("voice"):
+        if not _run_stage(asset, "voice", stage_voice, on_progress=on_progress, max_retries=2):
+            return _finalize(asset, project, ok=False, error="voice stage failed")
 
     # ---- music ----
     def stage_music():
@@ -494,7 +539,8 @@ def run_asset_production(
             },
         }, [path]
 
-    _run_stage(asset, "music", stage_music, on_progress=on_progress, max_retries=1)
+    if _should_run("music"):
+        _run_stage(asset, "music", stage_music, on_progress=on_progress, max_retries=1)
 
     # ---- sfx ----
     def stage_sfx():
@@ -517,7 +563,8 @@ def run_asset_production(
         path = art.write_json(asset_id, "sfx.json", {"cues": cues, "planned": True})
         return {"_stage_skipped": True, "sfx_cues": cues}, [path]
 
-    _run_stage(asset, "sfx", stage_sfx, on_progress=on_progress, max_retries=1)
+    if _should_run("sfx"):
+        _run_stage(asset, "sfx", stage_sfx, on_progress=on_progress, max_retries=1)
 
     # ---- captions ----
     def stage_captions():
@@ -527,8 +574,9 @@ def run_asset_production(
         meta_path = art.write_json(asset_id, "captions.json", {"srt": srt_path, "scene_count": len(scenes)})
         return {"captions_srt": srt, "caption_file": srt_path}, [srt_path, meta_path]
 
-    if not _run_stage(asset, "captions", stage_captions, on_progress=on_progress):
-        return _finalize(asset, project, ok=False, error="captions stage failed")
+    if _should_run("captions"):
+        if not _run_stage(asset, "captions", stage_captions, on_progress=on_progress):
+            return _finalize(asset, project, ok=False, error="captions stage failed")
 
     # ---- timeline + render (FFmpeg) ----
     def stage_timeline():
@@ -538,8 +586,15 @@ def run_asset_production(
         path = art.write_json(asset_id, "timeline.json", timeline)
         return {"_timeline": timeline}, [path]
 
-    if not _run_stage(asset, "timeline", stage_timeline, on_progress=on_progress):
-        return _finalize(asset, project, ok=False, error="timeline stage failed")
+    if _should_run("timeline"):
+        if not _run_stage(asset, "timeline", stage_timeline, on_progress=on_progress):
+            return _finalize(asset, project, ok=False, error="timeline stage failed")
+    else:
+        timeline_path = art.production_dir(asset_id) / "timeline.json"
+        if timeline_path.exists() and not asset.get("_timeline"):
+            import json as _json
+
+            asset["_timeline"] = _json.loads(timeline_path.read_text(encoding="utf-8"))
 
     def stage_render():
         from engines.render.audio_mix import AudioMixer
@@ -648,8 +703,9 @@ def run_asset_production(
         arts = [art.write_json(asset_id, "render_package.json", render_package), mp4_path]
         return {"render_package": render_package, "mp4_path": mp4_path}, arts
 
-    if not _run_stage(asset, "render", stage_render, on_progress=on_progress, max_retries=1):
-        return _finalize(asset, project, ok=False, error="render stage failed")
+    if _should_run("render"):
+        if not _run_stage(asset, "render", stage_render, on_progress=on_progress, max_retries=1):
+            return _finalize(asset, project, ok=False, error="render stage failed")
 
     # ---- quality ----
     def stage_quality():
@@ -684,8 +740,9 @@ def run_asset_production(
             raise RuntimeError("Quality control failed: " + "; ".join(qc.get("errors") or ["see production_report.json"]))
         return {"production_qc": qc}, [path]
 
-    if not _run_stage(asset, "quality", stage_quality, on_progress=on_progress):
-        return _finalize(asset, project, ok=False, error="quality stage failed")
+    if _should_run("quality"):
+        if not _run_stage(asset, "quality", stage_quality, on_progress=on_progress):
+            return _finalize(asset, project, ok=False, error="quality stage failed")
 
     # ---- export ----
     def stage_export():
@@ -720,8 +777,9 @@ def run_asset_production(
             "workspace_status": "rendered",
         }, arts
 
-    if not _run_stage(asset, "export", stage_export, on_progress=on_progress):
-        return _finalize(asset, project, ok=False, error="export stage failed")
+    if _should_run("export"):
+        if not _run_stage(asset, "export", stage_export, on_progress=on_progress):
+            return _finalize(asset, project, ok=False, error="export stage failed")
 
     # ---- publish prep (stop if no OAuth) ----
     def stage_publish():
@@ -754,7 +812,8 @@ def run_asset_production(
             return {"_stage_skipped": True, "publish_package": package}, [path]
         return {"publish_package": package}, [path]
 
-    _run_stage(asset, "publish", stage_publish, on_progress=on_progress)
+    if _should_run("publish"):
+        _run_stage(asset, "publish", stage_publish, on_progress=on_progress)
 
     artifact_index = {
         "root": str(art.rel(art.production_dir(asset_id))),

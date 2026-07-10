@@ -1,0 +1,593 @@
+{
+  "topic": "Secrets of Bioluminescence Revealed",
+  "mode": "resume_from_voice",
+  "asset_id": "val_bioluminescence_001",
+  "validated_at": "2026-07-10T16:01:42.265538+00:00",
+  "resume_runtime_sec": 5.6,
+  "production_ok": true,
+  "production_error": "",
+  "preflight": {
+    "ffmpeg": true,
+    "openai": true,
+    "elevenlabs": false,
+    "youtube_oauth": false
+  },
+  "stages": [
+    {
+      "stage": "idea",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "artifacts": [],
+      "error": ""
+    },
+    {
+      "stage": "script",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "artifacts": [],
+      "error": ""
+    },
+    {
+      "stage": "scenes",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "artifacts": [],
+      "error": ""
+    },
+    {
+      "stage": "visual_prompts",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "artifacts": [],
+      "error": ""
+    },
+    {
+      "stage": "images",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "artifacts": [],
+      "error": ""
+    },
+    {
+      "stage": "video_clips",
+      "status": "skipped",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "artifacts": [],
+      "error": ""
+    },
+    {
+      "stage": "voice",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 4.169,
+      "artifacts": [
+        "data/productions/val_bioluminescence_001/voice.json",
+        "data/productions/val_bioluminescence_001/voice.mp3"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "music",
+      "status": "skipped",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "artifacts": [
+        "data/productions/val_bioluminescence_001/music.json"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "sfx",
+      "status": "skipped",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "artifacts": [
+        "data/productions/val_bioluminescence_001/sfx.json"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "captions",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "artifacts": [
+        "data/productions/val_bioluminescence_001/captions.srt",
+        "data/productions/val_bioluminescence_001/captions.json"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "timeline",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 0.054,
+      "artifacts": [
+        "data/productions/val_bioluminescence_001/timeline.json"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "render",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 1.366,
+      "artifacts": [
+        "data/productions/val_bioluminescence_001/render_package.json",
+        "data/productions/val_bioluminescence_001/render.mp4"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "quality",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 0.007,
+      "artifacts": [
+        "data/productions/val_bioluminescence_001/production_report.json"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "export",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "artifacts": [
+        "data/productions/val_bioluminescence_001/metadata.json",
+        "data/productions/val_bioluminescence_001/render.mp4",
+        "data/productions/val_bioluminescence_001/export_manifest.json"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "publish",
+      "status": "skipped",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "artifacts": [
+        "data/productions/val_bioluminescence_001/publish_package.json"
+      ],
+      "error": ""
+    }
+  ],
+  "failed_stages": [],
+  "working_stages": [
+    "idea",
+    "script",
+    "scenes",
+    "visual_prompts",
+    "images",
+    "video_clips",
+    "voice",
+    "music",
+    "sfx",
+    "captions",
+    "timeline",
+    "render",
+    "quality",
+    "export",
+    "publish"
+  ],
+  "qc_score": 100,
+  "qc_passed": true,
+  "qc_checks": [
+    {
+      "name": "stage_integrity",
+      "ok": true,
+      "detail": "no stage reports",
+      "level": "warn"
+    },
+    {
+      "name": "ideas_present",
+      "ok": true,
+      "detail": "1 ideas",
+      "level": "error"
+    },
+    {
+      "name": "packages_present",
+      "ok": true,
+      "detail": "1 packages",
+      "level": "warn"
+    },
+    {
+      "name": "script_timing",
+      "ok": true,
+      "detail": "script content present",
+      "level": "warn"
+    },
+    {
+      "name": "scene_timing",
+      "ok": true,
+      "detail": "visual/scene plan present",
+      "level": "warn"
+    },
+    {
+      "name": "voice_synchronization",
+      "ok": true,
+      "detail": "audio plan metadata only \u2014 real TTS not required for dry-run",
+      "level": "info"
+    },
+    {
+      "name": "subtitle_synchronization",
+      "ok": true,
+      "detail": "caption plan optional in dry-run",
+      "level": "warn"
+    },
+    {
+      "name": "music_levels",
+      "ok": true,
+      "detail": "music direction is planning metadata in dry-run",
+      "level": "info"
+    },
+    {
+      "name": "transition_timing",
+      "ok": true,
+      "detail": "transition plan is metadata in dry-run",
+      "level": "info"
+    },
+    {
+      "name": "render_integrity",
+      "ok": true,
+      "detail": "real MP4 referenced",
+      "level": "error"
+    },
+    {
+      "name": "voice_exists",
+      "ok": true,
+      "detail": "real voice assets present",
+      "level": "info"
+    },
+    {
+      "name": "duplicate_assets",
+      "ok": true,
+      "detail": "no duplicate titles",
+      "level": "warn"
+    },
+    {
+      "name": "missing_assets",
+      "ok": true,
+      "detail": "ideas present",
+      "level": "error"
+    },
+    {
+      "name": "provider_failures",
+      "ok": true,
+      "detail": "no provider error recorded",
+      "level": "warn"
+    },
+    {
+      "name": "real_mp4",
+      "ok": true,
+      "detail": "data/productions/val_bioluminescence_001/render.mp4",
+      "level": "info"
+    },
+    {
+      "name": "voice_file",
+      "ok": true,
+      "detail": "data/productions/val_bioluminescence_001/voice.mp3",
+      "level": "info"
+    }
+  ],
+  "final_mp4": "data/productions/val_bioluminescence_001/render.mp4",
+  "mp4_bytes": 398188,
+  "mock_render": false,
+  "thumbnail": "",
+  "captions": "data/productions/val_bioluminescence_001/captions.srt",
+  "metadata": {
+    "title": "Secrets of Bioluminescence Revealed",
+    "description": "A short educational video revealing how and why animals glow in the dark.",
+    "hashtags": [
+      "#bioluminescence",
+      "#ocean",
+      "#science",
+      "#shorts"
+    ],
+    "cta": "Follow for more nature secrets",
+    "duration_sec": 60.0,
+    "mp4_path": "data/productions/val_bioluminescence_001/render.mp4",
+    "platform": "youtube_shorts",
+    "generated_at": "2026-07-10T16:01:42.263893+00:00"
+  },
+  "voice_path": "data/productions/val_bioluminescence_001/voice.mp3",
+  "files_created": [
+    "data/productions/val_bioluminescence_001/captions.json",
+    "data/productions/val_bioluminescence_001/captions.srt",
+    "data/productions/val_bioluminescence_001/export_manifest.json",
+    "data/productions/val_bioluminescence_001/idea.json",
+    "data/productions/val_bioluminescence_001/images.json",
+    "data/productions/val_bioluminescence_001/metadata.json",
+    "data/productions/val_bioluminescence_001/music.json",
+    "data/productions/val_bioluminescence_001/production_report.json",
+    "data/productions/val_bioluminescence_001/publish_package.json",
+    "data/productions/val_bioluminescence_001/render.assembly.json",
+    "data/productions/val_bioluminescence_001/render.mp4",
+    "data/productions/val_bioluminescence_001/render_package.json",
+    "data/productions/val_bioluminescence_001/scenes.json",
+    "data/productions/val_bioluminescence_001/script.json",
+    "data/productions/val_bioluminescence_001/sfx.json",
+    "data/productions/val_bioluminescence_001/timeline.json",
+    "data/productions/val_bioluminescence_001/video_clips.json",
+    "data/productions/val_bioluminescence_001/visual_prompts.json",
+    "data/productions/val_bioluminescence_001/voice.json",
+    "data/productions/val_bioluminescence_001/voice.mp3"
+  ],
+  "progress_events": [
+    {
+      "stage": "idea",
+      "label": "Idea",
+      "status": "completed",
+      "message": "Idea skipped (resume)",
+      "retry_count": 0,
+      "execution_time_sec": 0,
+      "progress_percent": 0
+    },
+    {
+      "stage": "voice",
+      "label": "Voice",
+      "status": "started",
+      "message": "Voice started",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 40
+    },
+    {
+      "stage": "voice",
+      "label": "Voice",
+      "status": "running",
+      "message": "Voice running",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 40
+    },
+    {
+      "stage": "voice",
+      "label": "Voice",
+      "status": "completed",
+      "message": "Voice completed",
+      "retry_count": 0,
+      "execution_time_sec": 4.169,
+      "progress_percent": 47
+    },
+    {
+      "stage": "music",
+      "label": "Music",
+      "status": "started",
+      "message": "Music started",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 47
+    },
+    {
+      "stage": "music",
+      "label": "Music",
+      "status": "running",
+      "message": "Music running",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 47
+    },
+    {
+      "stage": "music",
+      "label": "Music",
+      "status": "skipped",
+      "message": "Music skipped",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 53
+    },
+    {
+      "stage": "sfx",
+      "label": "SFX",
+      "status": "started",
+      "message": "SFX started",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 53
+    },
+    {
+      "stage": "sfx",
+      "label": "SFX",
+      "status": "running",
+      "message": "SFX running",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 53
+    },
+    {
+      "stage": "sfx",
+      "label": "SFX",
+      "status": "skipped",
+      "message": "SFX skipped",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 60
+    },
+    {
+      "stage": "captions",
+      "label": "Captions",
+      "status": "started",
+      "message": "Captions started",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 60
+    },
+    {
+      "stage": "captions",
+      "label": "Captions",
+      "status": "running",
+      "message": "Captions running",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 60
+    },
+    {
+      "stage": "captions",
+      "label": "Captions",
+      "status": "completed",
+      "message": "Captions completed",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 67
+    },
+    {
+      "stage": "timeline",
+      "label": "Timeline",
+      "status": "started",
+      "message": "Timeline started",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 67
+    },
+    {
+      "stage": "timeline",
+      "label": "Timeline",
+      "status": "running",
+      "message": "Timeline running",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 67
+    },
+    {
+      "stage": "timeline",
+      "label": "Timeline",
+      "status": "completed",
+      "message": "Timeline completed",
+      "retry_count": 0,
+      "execution_time_sec": 0.054,
+      "progress_percent": 73
+    },
+    {
+      "stage": "render",
+      "label": "FFmpeg Render",
+      "status": "started",
+      "message": "FFmpeg Render started",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 73
+    },
+    {
+      "stage": "render",
+      "label": "FFmpeg Render",
+      "status": "running",
+      "message": "FFmpeg Render running",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 73
+    },
+    {
+      "stage": "render",
+      "label": "FFmpeg Render",
+      "status": "completed",
+      "message": "FFmpeg Render completed",
+      "retry_count": 0,
+      "execution_time_sec": 1.366,
+      "progress_percent": 80
+    },
+    {
+      "stage": "quality",
+      "label": "Quality",
+      "status": "started",
+      "message": "Quality started",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 80
+    },
+    {
+      "stage": "quality",
+      "label": "Quality",
+      "status": "running",
+      "message": "Quality running",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 80
+    },
+    {
+      "stage": "quality",
+      "label": "Quality",
+      "status": "completed",
+      "message": "Quality completed",
+      "retry_count": 0,
+      "execution_time_sec": 0.007,
+      "progress_percent": 87
+    },
+    {
+      "stage": "export",
+      "label": "Export MP4",
+      "status": "started",
+      "message": "Export MP4 started",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 87
+    },
+    {
+      "stage": "export",
+      "label": "Export MP4",
+      "status": "running",
+      "message": "Export MP4 running",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 87
+    },
+    {
+      "stage": "export",
+      "label": "Export MP4",
+      "status": "completed",
+      "message": "Export MP4 completed",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 93
+    },
+    {
+      "stage": "publish",
+      "label": "Publish Prep",
+      "status": "started",
+      "message": "Publish Prep started",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 93
+    },
+    {
+      "stage": "publish",
+      "label": "Publish Prep",
+      "status": "running",
+      "message": "Publish Prep running",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 93
+    },
+    {
+      "stage": "publish",
+      "label": "Publish Prep",
+      "status": "skipped",
+      "message": "Publish Prep skipped",
+      "retry_count": 0,
+      "execution_time_sec": 0.0,
+      "progress_percent": 100
+    }
+  ],
+  "publish_package": {
+    "title": "Secrets of Bioluminescence Revealed",
+    "description": "A short educational video revealing how and why animals glow in the dark.",
+    "hashtags": [
+      "#bioluminescence",
+      "#ocean",
+      "#science",
+      "#shorts"
+    ],
+    "mp4_path": "data/productions/val_bioluminescence_001/render.mp4",
+    "thumbnail": "",
+    "platform": "youtube_shorts",
+    "ready": false,
+    "status": "awaiting_oauth",
+    "note": "Publishing credentials unavailable \u2014 stopped after MP4 export"
+  },
+  "estimated_readiness_percent": 100,
+  "voice_repair": "OpenAITTSConnector now fails on empty audio / status 0 instead of returning placeholder success"
+}

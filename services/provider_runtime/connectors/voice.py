@@ -208,13 +208,15 @@ class OpenAITTSConnector(ProductionConnector):
             timeout_sec=request.timeout_sec,
             headers={"Accept": "audio/mpeg"},
         )
-        if not resp.ok and resp.status != 0:
+        if not resp.ok:
             return self.fail(request, f"OpenAI TTS error: {resp.status} {resp.body}")
         audio_b64 = ""
         if isinstance(resp.raw, (bytes, bytearray)) and resp.raw:
             audio_b64 = base64.b64encode(bytes(resp.raw)).decode("ascii")
-        elif isinstance(resp.body, (bytes, bytearray)):
+        elif isinstance(resp.body, (bytes, bytearray)) and resp.body:
             audio_b64 = base64.b64encode(bytes(resp.body)).decode("ascii")
+        if not audio_b64:
+            return self.fail(request, "OpenAI TTS returned empty audio payload")
         return self.ok(
             request,
             {
