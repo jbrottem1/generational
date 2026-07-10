@@ -16,24 +16,37 @@ from pathlib import Path
 from typing import Any
 
 _PROJECT_ROOT = Path(__file__).resolve().parents[2]
+_DOTENV_LOADED = False
 
 
 def load_dotenv_if_available() -> None:
-    """Load .env from project root when python-dotenv is installed."""
+    """Load project-root `.env` when python-dotenv is installed.
+
+    Always targets the repository root (not the process cwd) so Streamlit /
+    IDE launches from any working directory still see credentials.
+    """
+    global _DOTENV_LOADED
+    if _DOTENV_LOADED:
+        return
     try:
         from dotenv import load_dotenv
 
         env_path = _PROJECT_ROOT / ".env"
         if env_path.exists():
-            load_dotenv(env_path)
+            load_dotenv(dotenv_path=env_path, override=False)
+        else:
+            # Fall back to default search so shell-exported vars still work.
+            load_dotenv(override=False)
+        _DOTENV_LOADED = True
     except ImportError:
-        pass
+        _DOTENV_LOADED = True
 
 
 def get_credential(env_var: str, overrides: "dict[str, str] | None" = None) -> str:
     """Resolve one credential from overrides, environment, then encrypted secrets."""
     if overrides and env_var in overrides:
         return overrides[env_var]
+    load_dotenv_if_available()
     value = os.environ.get(env_var, "")
     if value:
         return value

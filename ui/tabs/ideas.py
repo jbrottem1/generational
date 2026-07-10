@@ -104,7 +104,10 @@ def _handle_run(command: str) -> None:
     publishable = result.get("quality_summary", {}).get("publishable", idea_count)
     produced = len(result.get("production_packages", []))
     if result["demo_mode"]:
-        st.info("🟡 Demo Mode — add an OpenAI API key in **Settings** to power the pipeline with real AI.")
+        st.info(
+            "🟡 Demo Mode — set `OPENAI_API_KEY` in the project `.env` "
+            "(or **Settings → API Keys**), then restart Streamlit."
+        )
     if error:
         st.warning(f"⚠️ One or more AI calls failed and used heuristic fallbacks: {error}")
     if result.get("production_error"):

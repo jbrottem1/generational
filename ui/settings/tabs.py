@@ -186,6 +186,7 @@ def render_analytics_settings() -> None:
 
 
 def render_api_keys() -> None:
+    from core.env import CORE_ENV_KEYS, env_file_path, startup_credential_report
     from services.provider_integration import (
         delete_api_key,
         import_api_keys,
@@ -195,44 +196,86 @@ def render_api_keys() -> None:
     )
 
     st.markdown("### API Keys")
+    st.info(
+        f"**Primary configuration:** edit the project `.env` file at `{env_file_path()}` "
+        "then restart Streamlit. This page shows load status and can also write keys into "
+        "`.env` + the running process (so Demo Mode can clear without a restart for this session)."
+    )
+
+    report = startup_credential_report()
+    st.markdown("#### Load status")
+    for line in report.get("lines") or []:
+        st.text(line)
+    if report.get("demo_mode"):
+        st.error("✗ OPENAI_API_KEY missing — app stays in Demo Mode until this key is set.")
+    else:
+        st.success("✓ OPENAI_API_KEY loaded — Demo Mode disabled for idea generation.")
+
     st.caption(
-        "Keys are stored via SecretManager (encrypted when `PROVIDER_SECRETS_PASSPHRASE` is set) "
-        "or environment variables. Values are never shown after save."
+        "Resolution order: process env → project `.env` → encrypted SecretManager "
+        "(when `PROVIDER_SECRETS_PASSPHRASE` is set). Secret values are never displayed."
     )
 
     if not os.getenv("PROVIDER_SECRETS_PASSPHRASE"):
-        st.warning(
-            "Set `PROVIDER_SECRETS_PASSPHRASE` in `.env` to encrypt keys at rest. "
-            "Without it, keys remain session overrides / env only."
+        st.caption(
+            "Optional: set `PROVIDER_SECRETS_PASSPHRASE` in `.env` to also encrypt keys at rest "
+            "under `data/provider_runtime/`."
         )
 
+    st.markdown("#### Provider inventory")
     rows = list_api_keys()
+    # Ensure core keys always appear even if inventory is sparse
+    seen = {r.get("env_var") for r in rows}
+    for key in CORE_ENV_KEYS:
+        if key not in seen:
+            rows.append(
+                {
+                    "provider": "",
+                    "env_var": key,
+                    "present": False,
+                    "masked": "",
+                    "source": "missing",
+                }
+            )
     if rows:
+        header = st.columns([2, 3, 2, 2, 1])
+        header[0].markdown("**Provider**")
+        header[1].markdown("**Env var**")
+        header[2].markdown("**Status**")
+        header[3].markdown("**Source**")
+        header[4].markdown("**Clear**")
         for row in rows:
-            cols = st.columns([2, 2, 2, 1])
+            cols = st.columns([2, 3, 2, 2, 1])
             cols[0].write(row.get("provider") or "—")
             cols[1].code(row.get("env_var") or "")
-            cols[2].write(row.get("masked") or ("missing" if not row.get("present") else "••••"))
-            if cols[3].button("Delete", key=f"del_key_{row.get('env_var')}"):
+            present = bool(row.get("present"))
+            cols[2].write("✓ loaded" if present else "✗ missing")
+            cols[3].write(row.get("source") or ("env_or_secrets" if present else "missing"))
+            if present and cols[4].button("Clear", key=f"del_key_{row.get('env_var')}"):
                 delete_api_key(row.get("env_var") or "")
                 st.rerun()
     else:
         st.info("No credentials detected yet.")
 
-    st.markdown("#### Add / update key")
+    st.markdown("#### Save a key (writes `.env` + process env)")
     env_var = st.text_input("Environment variable name", placeholder="OPENAI_API_KEY", key="new_key_env")
     value = st.text_input("Secret value", type="password", key="new_key_value", placeholder="••••••••")
     c1, c2 = st.columns(2)
     if c1.button("Save key", type="primary", key="save_api_key"):
         result = set_api_key(env_var, value)
         if result.get("ok"):
-            st.success(f"Saved {result['env_var']} as {result['masked']}")
+            msg = f"Saved {result['env_var']} as {result['masked']}"
+            if result.get("wrote_dotenv"):
+                msg += f" → wrote `{result.get('dotenv_path')}`"
+            st.success(msg)
+            st.info("Key is active in this process now. Restart Streamlit so a cold start also loads it from `.env`.")
+            st.rerun()
         else:
             st.error(result.get("error") or "failed")
     provider = st.text_input("Validate provider id", placeholder="openai", key="validate_provider_id")
     if c2.button("Validate", key="validate_api_key_btn"):
-        report = validate_api_key(provider)
-        st.json({k: v for k, v in report.items() if k != "secret"})
+        report_v = validate_api_key(provider)
+        st.json({k: v for k, v in report_v.items() if k != "secret"})
 
     st.markdown("#### Import JSON map")
     blob = st.text_area("JSON object of env_var → secret", height=120, key="import_keys_json")
@@ -242,7 +285,11 @@ def render_api_keys() -> None:
             if not isinstance(payload, dict):
                 raise ValueError("expected object")
             result = import_api_keys({str(k): str(v) for k, v in payload.items()})
-            st.success(f"Imported {result.get('imported', 0)} keys")
+            st.success(
+                f"Imported {result.get('imported', 0)} keys "
+                f"(`.env` writes: {result.get('wrote_dotenv', 0)})"
+            )
+            st.rerun()
         except Exception as exc:  # noqa: BLE001
             st.error(str(exc))
 

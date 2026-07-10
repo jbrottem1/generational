@@ -40,9 +40,17 @@ from services.provider_runtime.secrets import SecretManager, mask_secret
 def isolated_provider_config(tmp_path, monkeypatch):
     cfg = tmp_path / "config.json"
     secrets = tmp_path / "secrets.enc.json"
+    env_file = tmp_path / ".env"
+    env_file.write_text("OPENAI_API_KEY=\n", encoding="utf-8")
     monkeypatch.setenv("PROVIDER_CONFIG_PATH", str(cfg))
     monkeypatch.setenv("PROVIDER_SECRETS_PATH", str(secrets))
     monkeypatch.setenv("PROVIDER_SECRETS_PASSPHRASE", "rc-test-passphrase")
+    # Keep credential tests from writing into the real project .env
+    from core import env as env_mod
+
+    monkeypatch.setattr(env_mod, "_PROJECT_ROOT", tmp_path)
+    monkeypatch.setattr(env_mod, "_ENV_PATH", env_file)
+    monkeypatch.setattr(env_mod, "_ENV_EXAMPLE_PATH", tmp_path / ".env.example")
     save_runtime_config({"disabled_providers": [], "model_defaults": {}, "oauth": {}})
     return tmp_path
 

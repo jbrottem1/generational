@@ -52,19 +52,42 @@ def list_api_keys() -> list[dict[str, Any]]:
     return rows
 
 
-def set_api_key(env_var: str, value: str, *, persist: bool = True) -> dict:
-    """Store a key (encrypted when PROVIDER_SECRETS_PASSPHRASE is set)."""
+def set_api_key(env_var: str, value: str, *, persist: bool = True, write_dotenv: bool = True) -> dict:
+    """Store a key in process env, optional .env file, and SecretManager."""
+    import os
+
     env_var = str(env_var or "").strip()
     value = str(value or "").strip()
     if not env_var or not value:
         return {"ok": False, "error": "env_var and value required"}
+
+    # Immediate process visibility for Demo Mode / providers.
+    os.environ[env_var] = value
+
+    env_write = {"ok": False}
+    if persist and write_dotenv:
+        try:
+            from core.env import write_env_value
+
+            env_write = write_env_value(env_var, value)
+        except Exception as exc:  # noqa: BLE001
+            env_write = {"ok": False, "error": str(exc)}
+
     mgr = _manager()
-    mgr.rotate(env_var, value) if persist else mgr.set_override(env_var, value)
-    if persist and not mgr.get(env_var):
-        # rotate may skip persist without passphrase — keep override
-        mgr.set_override(env_var, value)
+    mgr.set_override(env_var, value)
+    if persist:
+        mgr.rotate(env_var, value)
+        if not mgr.get(env_var):
+            mgr.set_override(env_var, value)
+
     get_audit_log().record("api_key_set", env_var=env_var, length=len(value))
-    return {"ok": True, "env_var": env_var, "masked": mask_secret(value)}
+    return {
+        "ok": True,
+        "env_var": env_var,
+        "masked": mask_secret(value),
+        "wrote_dotenv": bool(env_write.get("ok")),
+        "dotenv_path": env_write.get("path", ""),
+    }
 
 
 def rotate_api_key(env_var: str, new_value: str) -> dict:
@@ -80,10 +103,28 @@ def delete_api_key(env_var: str) -> dict:
     return {"ok": removed, "env_var": env_var}
 
 
-def import_api_keys(secrets: dict[str, str]) -> dict:
+def import_api_keys(secrets: dict[str, str], *, write_dotenv: bool = True) -> dict:
+    import os
+
     count = _manager().import_secrets(secrets or {})
+    wrote = 0
+    if write_dotenv:
+        try:
+            from core.env import write_env_value
+
+            for key, value in (secrets or {}).items():
+                if key and value:
+                    os.environ[str(key)] = str(value)
+                    if write_env_value(str(key), str(value)).get("ok"):
+                        wrote += 1
+        except Exception:  # noqa: BLE001
+            pass
+    else:
+        for key, value in (secrets or {}).items():
+            if key and value:
+                os.environ[str(key)] = str(value)
     get_audit_log().record("api_keys_imported", count=count)
-    return {"ok": True, "imported": count}
+    return {"ok": True, "imported": count, "wrote_dotenv": wrote}
 
 
 def validate_api_key(provider: str) -> dict:
