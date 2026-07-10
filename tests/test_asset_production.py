@@ -147,6 +147,35 @@ def test_run_asset_production_offline_pipeline(monkeypatch, tmp_path):
     monkeypatch.setattr("services.media_production.ffmpeg_assembler.find_ffmpeg", lambda: "/usr/bin/ffmpeg")
     monkeypatch.setattr("services.media_production.ffmpeg_assembler.write_assembly_sidecar", lambda *a, **k: "")
 
+    # Desktop ready-to-post export (avoid real ffmpeg probe on stub bytes)
+    dest_dir = tmp_path / "desktop_export"
+    dest_dir.mkdir(parents=True, exist_ok=True)
+
+    def fake_final_export(source_mp4, *, title, qc_passed, render_package=None, when=None):
+        from pathlib import Path as P
+        import shutil
+
+        assert qc_passed
+        src = P(source_mp4)
+        out = dest_dir / f"test_{title.replace(' ', '_')}.mp4"
+        if src.exists():
+            shutil.copy2(src, out)
+        else:
+            out.write_bytes(b"\x00\x00\x00\x18ftypmp42" + b"\x00" * 200)
+        return {
+            "ok": True,
+            "final_export_path": str(out),
+            "final_export_dir": str(dest_dir),
+            "bytes": out.stat().st_size,
+            "verification": {"ok": True, "duration_sec": 8.0, "has_video": True, "has_audio": True},
+            "message": "Ready-to-post video saved successfully.",
+        }
+
+    monkeypatch.setattr(
+        "services.asset_production.final_export.export_ready_to_post_mp4",
+        fake_final_export,
+    )
+
     asset = apply_script_to_asset(
         {"title": "Glow Facts", "hook": "Living light", "asset_id": "glow1", "hashtags": ["#nature"]},
         VideoScript.from_dict(VALID_SCRIPT),
@@ -167,6 +196,7 @@ def test_run_asset_production_offline_pipeline(monkeypatch, tmp_path):
     # No OAuth → publish skipped
     assert stages["publish"]["status"] in {"skipped", "completed"}
     assert (result.get("render_package") or {}).get("mp4_path")
+    assert result.get("final_export_path")
     assert (tmp_path / "productions" / "glow1" / "scenes.json").exists()
     assert (tmp_path / "productions" / "glow1" / "captions.srt").exists()
     assert (tmp_path / "productions" / "glow1" / "metadata.json").exists()

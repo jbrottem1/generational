@@ -9,7 +9,9 @@ from __future__ import annotations
 
 import time
 from datetime import datetime, timezone
+from pathlib import Path
 from typing import Any, Callable
+
 
 from core.log import get_logger, log_event
 from core.script_models import (
@@ -746,17 +748,47 @@ def run_asset_production(
 
     # ---- export ----
     def stage_export():
+        from services.asset_production.final_export import export_ready_to_post_mp4
+
         render = asset.get("render_package") or {}
         mp4 = render.get("mp4_path") or ""
+        qc = asset.get("production_qc") or {}
+        # Resolve absolute path for verification / Desktop copy
+        mp4_abs = ""
+        if mp4:
+            candidate = Path(mp4) if Path(mp4).is_absolute() else (art.ROOT / mp4)
+            if not candidate.exists():
+                prod_candidate = art.production_dir(asset_id) / "render.mp4"
+                if prod_candidate.exists():
+                    candidate = prod_candidate
+            mp4_abs = str(candidate) if candidate.exists() else ""
+
+        final_export = export_ready_to_post_mp4(
+            mp4_abs or mp4,
+            title=str(asset.get("title") or project.get("name") or "Untitled"),
+            qc_passed=bool(qc.get("passed")),
+            render_package=render,
+        )
+        if not final_export.get("ok"):
+            raise RuntimeError(
+                "Ready-to-post export failed: "
+                + (final_export.get("error") or "unverified MP4")
+            )
+
         metadata = {
             "title": asset.get("title"),
             "description": asset.get("description") or asset.get("hook"),
             "hashtags": asset.get("hashtags") or [],
             "cta": asset.get("cta"),
-            "duration_sec": render.get("duration_sec") or asset.get("estimated_runtime_sec"),
+            "duration_sec": render.get("duration_sec")
+            or (final_export.get("verification") or {}).get("duration_sec")
+            or asset.get("estimated_runtime_sec"),
             "mp4_path": mp4,
+            "final_export_path": final_export.get("final_export_path") or "",
+            "final_export_dir": final_export.get("final_export_dir") or "",
             "platform": project.get("platform") or "youtube_shorts",
             "generated_at": _now(),
+            "ready_to_post": True,
         }
         # Thumbnail: first generated image or concept
         thumb_path = ""
@@ -769,12 +801,29 @@ def run_asset_production(
             arts.append(thumb_path)
         if mp4:
             arts.append(mp4)
-        manifest = art.write_json(asset_id, "export_manifest.json", {"artifacts": art.list_artifacts(asset_id), "metadata": metadata})
+
+        # Persist final path on the production QC report
+        report = dict(qc)
+        report["final_export_path"] = final_export.get("final_export_path") or ""
+        report["final_export_dir"] = final_export.get("final_export_dir") or ""
+        report["ready_to_post_message"] = final_export.get("message") or ""
+        report_path = art.write_json(asset_id, "production_report.json", report)
+        arts.append(report_path)
+
+        manifest = art.write_json(
+            asset_id,
+            "export_manifest.json",
+            {"artifacts": art.list_artifacts(asset_id), "metadata": metadata},
+        )
         arts.append(manifest)
         return {
             "export_package": metadata,
             "thumbnail_path": thumb_path,
             "workspace_status": "rendered",
+            "final_export_path": final_export.get("final_export_path") or "",
+            "final_export_dir": final_export.get("final_export_dir") or "",
+            "production_qc": report,
+            "ready_to_post_message": final_export.get("message") or "",
         }, arts
 
     if _should_run("export"):
@@ -823,6 +872,7 @@ def run_asset_production(
         "sfx": asset.get("sfx_cues"),
         "captions": asset.get("caption_file"),
         "render": (asset.get("render_package") or {}).get("mp4_path"),
+        "final_export_path": asset.get("final_export_path") or "",
     }
     asset["production_artifacts"] = artifact_index
     asset["production_pipeline"] = build_pipeline_snapshot(asset)

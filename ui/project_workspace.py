@@ -19,6 +19,11 @@ from core.log import get_logger
 from core.models import normalize_idea_asset, normalize_project_for_workspace
 from core.script_models import apply_script_to_asset, asset_has_video_script
 from services.asset_production import run_asset_production
+from services.asset_production.final_export import (
+    FINAL_EXPORT_DIR,
+    open_export_folder,
+    reveal_in_finder,
+)
 from services.script_generator import generate_video_script
 from ui import notify
 from ui.production_pipeline import render_production_pipeline
@@ -160,19 +165,25 @@ def _run_full_asset_production(project: dict, asset: dict, index: int) -> bool:
 
             if result_asset.get("production_ok"):
                 mp4 = (result_asset.get("render_package") or {}).get("mp4_path") or ""
+                final_path = result_asset.get("final_export_path") or ""
                 status.update(label="Production complete", state="complete")
-                notify.success(
-                    f"Video package ready{f' — {mp4}' if mp4 else ''}. "
-                    + (
-                        "Publish prep awaiting OAuth."
-                        if (result_asset.get("publish_package") or {}).get("status") == "awaiting_oauth"
-                        else "Ready for publishing."
+                if final_path:
+                    notify.success("Ready-to-post video saved successfully.")
+                    st.session_state[f"ws_final_export_flash_{asset_id}"] = final_path
+                else:
+                    notify.success(
+                        f"Video package ready{f' — {mp4}' if mp4 else ''}. "
+                        + (
+                            "Publish prep awaiting OAuth."
+                            if (result_asset.get("publish_package") or {}).get("status") == "awaiting_oauth"
+                            else "Ready for publishing."
+                        )
                     )
-                )
                 logger.info(
-                    "workspace.production_complete | asset_id=%s mp4=%s",
+                    "workspace.production_complete | asset_id=%s mp4=%s final_export=%s",
                     asset_id,
                     mp4,
+                    final_path,
                 )
                 return True
 
@@ -557,6 +568,8 @@ def _render_asset_workspace(project: dict, asset: dict, index: int, total: int) 
     elif (asset.get("render_package") or {}).get("mp4_path") and not (asset.get("render_package") or {}).get("mock"):
         st.success(f"Finished MP4: `{(asset.get('render_package') or {}).get('mp4_path')}`")
 
+    _render_ready_to_post_panel(asset)
+
     overview, script_tab, scenes_tab, visuals_tab, audio_tab, render_tab, export_tab = st.tabs(
         ["Overview", "Script", "Scenes", "Visuals", "Audio", "Render", "Export"]
     )
@@ -595,6 +608,13 @@ def _render_asset_workspace(project: dict, asset: dict, index: int, total: int) 
         _tab_render(project, asset, video_ready)
 
     with export_tab:
+        final_path = asset.get("final_export_path") or (asset.get("export_package") or {}).get("final_export_path")
+        if final_path:
+            st.markdown("#### Ready-to-post MP4")
+            st.success("Ready-to-post video saved successfully.")
+            st.code(final_path, language=None)
+            st.caption("Use the Play / Reveal / Open Export Folder controls above the tabs.")
+            st.divider()
         st.markdown("#### Export this pre-production package")
         st.caption("Exports JSON metadata + script package. This is not an MP4 download.")
         st.download_button(
@@ -609,7 +629,6 @@ def _render_asset_workspace(project: dict, asset: dict, index: int, total: int) 
         if isinstance(asset.get("video_script"), dict):
             export_script = asset["video_script"].get("full_voiceover") or export_script
         st.code(export_script, language=None)
-
 
 def _tab_overview(project: dict, asset: dict, platform: str, created: str) -> None:
     st.markdown("#### Title")
@@ -703,6 +722,43 @@ def _tab_audio(asset: dict) -> None:
         st.write(audio.get("narration_plan"))
 
 
+def _render_ready_to_post_panel(asset: dict) -> None:
+    """Show Desktop export path + Play / Reveal / Open folder actions."""
+    from pathlib import Path
+
+    asset_id = str(asset.get("asset_id") or "")
+    final_path = (
+        asset.get("final_export_path")
+        or (asset.get("export_package") or {}).get("final_export_path")
+        or (asset.get("production_qc") or {}).get("final_export_path")
+        or st.session_state.get(f"ws_final_export_flash_{asset_id}")
+        or ""
+    )
+    if not final_path:
+        return
+
+    path = Path(final_path)
+    st.success("Ready-to-post video saved successfully.")
+    st.markdown(f"**Saved file:** `{final_path}`")
+    st.caption(f"Export folder: `{FINAL_EXPORT_DIR}`")
+
+    cols = st.columns(3)
+    if cols[0].button("▶ Play Final Video", key=f"ws_play_final_{asset_id}", use_container_width=True):
+        st.session_state[f"ws_play_final_open_{asset_id}"] = True
+    if cols[1].button("Reveal in Finder", key=f"ws_reveal_final_{asset_id}", use_container_width=True):
+        if path.exists():
+            reveal_in_finder(path)
+            notify.success(f"Revealed in Finder: {path.name}")
+        else:
+            notify.error("Final video file not found on disk.")
+    if cols[2].button("Open Export Folder", key=f"ws_open_export_dir_{asset_id}", use_container_width=True):
+        open_export_folder()
+        notify.success(f"Opened: {FINAL_EXPORT_DIR}")
+
+    if st.session_state.get(f"ws_play_final_open_{asset_id}") and path.exists():
+        st.video(str(path))
+
+
 def _tab_render(project: dict, asset: dict, video_ready: bool) -> None:
     st.markdown("#### Render status")
     if video_ready:
@@ -710,6 +766,10 @@ def _tab_render(project: dict, asset: dict, video_ready: bool) -> None:
         mp4 = (asset.get("render_package") or {}).get("mp4_path") or asset.get("mp4_path")
         if mp4:
             st.code(mp4, language=None)
+        final_path = asset.get("final_export_path") or (asset.get("export_package") or {}).get("final_export_path")
+        if final_path:
+            st.markdown("#### Ready-to-post export")
+            st.code(final_path, language=None)
     else:
         st.warning("**Not rendered yet.** Press **Build Video From This Asset** to run the automatic pipeline.")
     render = asset.get("render_package") if isinstance(asset.get("render_package"), dict) else {}
