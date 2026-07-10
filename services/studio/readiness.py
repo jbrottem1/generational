@@ -4,7 +4,21 @@ from __future__ import annotations
 
 
 def get_production_readiness() -> dict:
-    """Studio-facing wrapper around the readiness aggregator."""
+    """Studio-facing wrapper around the readiness aggregator + master pipeline."""
     from services.readiness import build_readiness_report
+    from services.master_pipeline import production_readiness_report, registry_summary
 
-    return build_readiness_report()
+    base = build_readiness_report()
+    master = production_readiness_report()
+    summary = registry_summary()
+    base["master_pipeline"] = {
+        "score": master.get("score"),
+        "band": master.get("band"),
+        "blockers": master.get("blockers"),
+        "next_priorities": master.get("next_priorities"),
+        "estimated_time_to_first_production": master.get("estimated_time_to_first_production"),
+        "estimated_time_to_first_publish": master.get("estimated_time_to_first_publish"),
+        "providers_configured": master.get("providers_configured"),
+        "registry": summary,
+    }
+    return base

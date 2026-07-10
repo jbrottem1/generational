@@ -153,7 +153,12 @@ class AnthropicConnector(ProductionConnector):
         system, user = _text_prompt(request.payload)
         if not user:
             return self.fail(request, "Missing prompt/text in payload")
-        model = self.resolved_model(request, "claude-haiku-4-5-20251001")
+        # Ignore cross-vendor model ids (e.g. gpt-4o-mini) from shared Studio settings.
+        payload_model = str(request.payload.get("model") or "")
+        if payload_model.startswith(("gpt-", "o1", "o3", "gemini-", "grok-")):
+            model = "claude-haiku-4-5-20251001"
+        else:
+            model = self.resolved_model(request, "claude-haiku-4-5-20251001")
         body = {
             "model": model,
             "max_tokens": int(request.payload.get("max_tokens") or 2048),

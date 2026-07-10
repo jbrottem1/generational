@@ -407,3 +407,24 @@ def _render_readiness() -> None:
     st.markdown("### Production Readiness")
     report = studio.get_production_readiness()
     components.production_readiness_view(report)
+
+    master = report.get("master_pipeline") or {}
+    if master:
+        st.markdown("#### Master Pipeline (Agent 1)")
+        st.metric("E2E readiness score", master.get("score", "—"))
+        st.caption(f"Band: `{master.get('band')}`")
+        reg = master.get("registry") or {}
+        c1, c2, c3 = st.columns(3)
+        c1.metric("Engines ready", f"{reg.get('engines_ready', 0)}/{reg.get('engine_count', 0)}")
+        c2.metric("Agents ready", reg.get("agents_ready", 0))
+        c3.metric("Providers configured", master.get("providers_configured", 0))
+        if master.get("blockers"):
+            st.warning("Blockers for finished MP4 / live publish:")
+            for item in master["blockers"]:
+                st.markdown(f"- {item}")
+        st.caption(f"First production: {master.get('estimated_time_to_first_production')}")
+        st.caption(f"First publish: {master.get('estimated_time_to_first_publish')}")
+        if master.get("next_priorities"):
+            with st.expander("Recommended next priorities"):
+                for item in master["next_priorities"]:
+                    st.markdown(f"1. {item}")

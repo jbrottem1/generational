@@ -98,7 +98,11 @@ def _detect_count(command: str) -> int:
     return parsing.detect_video_count(command)
 
 
-def _production_type_for_platform(platform: str) -> str:
+def _production_type_for_platform(platform: str, settings: dict | None = None) -> str:
+    settings = settings or {}
+    explicit = str(settings.get("production_type") or "").strip()
+    if explicit:
+        return explicit
     return _PLATFORM_PRODUCTION_TYPE.get(platform, "full_production")
 
 
@@ -113,8 +117,9 @@ def _build_workflow_config(command: str, settings: dict, *, model: str, longform
     preferred = settings.get("preferred_providers") or []
     if preferred:
         prefs["preferred_providers"] = list(preferred)
+    ptype = _production_type_for_platform(platform, settings)
     return WorkflowConfig(
-        production_type=_production_type_for_platform(platform),
+        production_type=ptype,
         target_platform=platform,
         platform_targets=[platform],
         count=count,
@@ -122,7 +127,9 @@ def _build_workflow_config(command: str, settings: dict, *, model: str, longform
         quality_level=settings.get("quality_level", "standard"),
         budget_usd=float(settings.get("budget_usd") or 0.0),
         provider_preferences=prefs,
-        longform_mode=longform or is_longform_command(command),
+        longform_mode=longform or is_longform_command(command) or ptype in {
+            "longform", "documentary", "podcast", "course", "animated_episode",
+        },
     )
 
 
