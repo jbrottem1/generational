@@ -119,6 +119,9 @@ def normalize_idea_asset(idea: dict | None, *, index: int = 0) -> dict:
     """
     raw = dict(idea or {})
     script = raw.get("script") or ""
+    video_script = raw.get("video_script") if isinstance(raw.get("video_script"), dict) else {}
+    if isinstance(video_script, dict) and video_script.get("full_voiceover"):
+        script = str(video_script.get("full_voiceover") or script)
     if not script and isinstance(raw.get("structured_script"), dict):
         script = (
             raw["structured_script"].get("full_script")

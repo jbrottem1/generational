@@ -17,7 +17,11 @@ import streamlit.components.v1 as components
 from core import storage
 from core.log import get_logger
 from core.models import normalize_idea_asset, normalize_project_for_workspace
+from core.script_models import apply_script_to_asset, asset_has_video_script
+from services.script_generator import generate_video_script
 from ui import notify
+from ui.production_pipeline import render_production_pipeline
+from ui.script_tab import render_script_tab
 
 logger = get_logger(__name__)
 
@@ -43,6 +47,71 @@ def _active_project() -> dict | None:
     normalized = normalize_project_for_workspace(loaded)
     st.session_state.opened_project_data = normalized
     return normalized
+
+
+def _pending_script_key(asset_id: str) -> str:
+    return f"script_gen_pending_{asset_id}"
+
+
+def _script_generating_key(asset_id: str) -> str:
+    return f"script_gen_active_{asset_id}"
+
+
+def _run_script_generation(project: dict, asset: dict, index: int) -> bool:
+    """Generate a structured video script with visible progress. Returns success."""
+    asset_id = str(asset.get("asset_id") or f"asset_{index}")
+    st.session_state[_script_generating_key(asset_id)] = True
+    progress_messages: list[str] = []
+
+    def on_progress(message: str) -> None:
+        progress_messages.append(message)
+        logger.info("workspace.script_progress | asset_id=%s step=%s", asset_id, message)
+
+    try:
+        with st.status("Script generation in progress", expanded=True) as status:
+            result = generate_video_script(
+                asset,
+                project,
+                model=str(project.get("model") or ""),
+                on_progress=lambda msg: (on_progress(msg), status.update(label=msg)),
+            )
+            if result.ok and result.script:
+                status.update(label="Saving project", state="running")
+                updated = apply_script_to_asset(asset, result.script)
+                ideas = list(project.get("ideas") or [])
+                ideas[index] = updated
+                project["ideas"] = ideas
+                if result.tokens_used:
+                    project["token_usage"] = int(project.get("token_usage") or 0) + result.tokens_used
+                _persist_project(project)
+                status.update(label="Script saved", state="complete")
+                if result.error:
+                    notify.warning(result.error)
+                else:
+                    notify.success("Structured video script generated and saved.")
+                logger.info(
+                    "workspace.script_generated | asset_id=%s segments=%s demo=%s",
+                    asset_id,
+                    len(result.script.segments),
+                    result.demo_mode,
+                )
+                return True
+
+            status.update(label="Script generation failed", state="error")
+            notify.error(result.error or "Script generation failed. Please try again.")
+            logger.error("workspace.script_failed | asset_id=%s error=%s", asset_id, result.error)
+            return False
+    finally:
+        st.session_state[_script_generating_key(asset_id)] = False
+        st.session_state[_pending_script_key(asset_id)] = False
+
+
+def _persist_asset_at_index(project: dict, updated_asset: dict, index: int) -> None:
+    ideas = list(project.get("ideas") or [])
+    ideas[index] = updated_asset
+    project["ideas"] = ideas
+    _persist_project(project)
+    st.session_state.selected_asset = updated_asset
 
 
 def _persist_project(project: dict) -> None:
@@ -117,6 +186,8 @@ def _export_asset(asset: dict, project: dict) -> str:
         "title": asset.get("title"),
         "hook": asset.get("hook"),
         "script": asset.get("script"),
+        "video_script": asset.get("video_script"),
+        "production_pipeline": asset.get("production_pipeline"),
         "description": asset.get("description"),
         "cta": asset.get("cta"),
         "keywords": asset.get("keywords") or asset.get("suggested_seo_keywords"),
@@ -139,6 +210,26 @@ def _export_asset(asset: dict, project: dict) -> str:
 def _scene_plan(asset: dict) -> list[dict[str, Any]]:
     """Build a readable scene list from structured script / visual package (read-only)."""
     scenes: list[dict[str, Any]] = []
+    video_script = asset.get("video_script") if isinstance(asset.get("video_script"), dict) else {}
+    vs_segments = video_script.get("segments") if isinstance(video_script, dict) else None
+    if isinstance(vs_segments, list) and vs_segments:
+        for i, segment in enumerate(vs_segments):
+            if not isinstance(segment, dict):
+                continue
+            start = segment.get("start_time", 0)
+            end = segment.get("end_time", "")
+            scenes.append(
+                {
+                    "index": i + 1,
+                    "title": segment.get("segment_type") or f"Segment {i + 1}",
+                    "narration": segment.get("voiceover") or "",
+                    "visual": segment.get("delivery") or segment.get("retention_device") or "",
+                    "duration": round(float(end) - float(start), 1) if end != "" else "",
+                }
+            )
+        if scenes:
+            return scenes
+
     structured = asset.get("structured_script") if isinstance(asset.get("structured_script"), dict) else {}
     breakdown = structured.get("scene_breakdown") if isinstance(structured, dict) else None
     if isinstance(breakdown, list) and breakdown:
@@ -323,6 +414,16 @@ def _render_asset_workspace(project: dict, asset: dict, index: int, total: int) 
     meta[4].metric("Asset", f"{index + 1}/{total}")
     st.caption(f"Platform: {platform} · Created: {created} · id: `{asset.get('asset_id')}`")
 
+    asset_id = str(asset.get("asset_id") or f"asset_{index}")
+    script_generating = bool(st.session_state.get(_script_generating_key(asset_id)))
+
+    render_production_pipeline(asset, script_generating=script_generating)
+
+    # Process a queued generation request (set by Regenerate or cross-tab trigger).
+    if st.session_state.pop(_pending_script_key(asset_id), False) and not script_generating:
+        _run_script_generation(project, asset, index)
+        st.rerun()
+
     build_cols = st.columns([2, 1, 1])
     if build_cols[0].button(
         "🎬 Build Video From This Asset",
@@ -330,9 +431,10 @@ def _render_asset_workspace(project: dict, asset: dict, index: int, total: int) 
         type="primary",
         use_container_width=True,
     ):
-        st.session_state.show_build_video_checklist = True
+        st.session_state.show_build_video_checklist = False
         st.session_state._scroll_asset_workspace = True
         logger.info("workspace.build_video_clicked | asset_id=%s", asset.get("asset_id"))
+        _run_script_generation(project, asset, index)
         st.rerun()
     if build_cols[1].button("◀ Previous Asset", key="ws_prev_inline", disabled=index <= 0, use_container_width=True):
         _open_asset(index - 1, list(project.get("ideas") or []), source="inline_prev")
@@ -344,16 +446,36 @@ def _render_asset_workspace(project: dict, asset: dict, index: int, total: int) 
     if st.session_state.get("show_build_video_checklist"):
         _render_build_video_checklist(project, asset)
 
+    if asset_has_video_script(asset):
+        st.caption("Structured script ready — continue in the **Script** tab or expand the pre-render checklist below.")
+        if st.button("Show pre-render provider checklist", key="ws_show_checklist"):
+            st.session_state.show_build_video_checklist = True
+            st.rerun()
+
     overview, script_tab, scenes_tab, visuals_tab, audio_tab, render_tab, export_tab = st.tabs(
         ["Overview", "Script", "Scenes", "Visuals", "Audio", "Render", "Export"]
     )
+
+    def _request_script_generation(force: bool = True) -> None:
+        st.session_state[_pending_script_key(asset_id)] = True
+        if force:
+            logger.info("workspace.script_regenerate_requested | asset_id=%s", asset_id)
+        st.rerun()
 
     with overview:
         _tab_overview(project, asset, platform, created)
         _render_asset_actions(project, asset, index, total)
 
     with script_tab:
-        _tab_script(asset)
+        render_script_tab(
+            project,
+            asset,
+            index,
+            generating=script_generating,
+            on_persist=lambda updated, idx: _persist_asset_at_index(project, updated, idx),
+            on_generate=_request_script_generation,
+            on_overview=lambda: st.info("Select the **Overview** tab above to return."),
+        )
 
     with scenes_tab:
         _tab_scenes(asset)
@@ -378,7 +500,10 @@ def _render_asset_workspace(project: dict, asset: dict, index: int, total: int) 
             key=f"ws_export_tab_{index}",
             use_container_width=True,
         )
-        st.code(asset.get("script") or "", language=None)
+        export_script = asset.get("script") or ""
+        if isinstance(asset.get("video_script"), dict):
+            export_script = asset["video_script"].get("full_voiceover") or export_script
+        st.code(export_script, language=None)
 
 
 def _tab_overview(project: dict, asset: dict, platform: str, created: str) -> None:
@@ -409,27 +534,6 @@ def _tab_overview(project: dict, asset: dict, platform: str, created: str) -> No
             "created": created,
         }
     )
-
-
-def _tab_script(asset: dict) -> None:
-    st.markdown("#### Complete voiceover script")
-    script = asset.get("script") or ""
-    if script:
-        st.text_area(
-            "Voiceover script",
-            value=script,
-            height=320,
-            key=f"ws_full_script_{asset.get('asset_id')}",
-            label_visibility="collapsed",
-            disabled=True,
-        )
-    else:
-        st.warning("No voiceover script stored on this asset.")
-    structured = asset.get("structured_script") if isinstance(asset.get("structured_script"), dict) else {}
-    narration = structured.get("narration")
-    if narration and narration != script:
-        st.markdown("#### Structured narration")
-        st.write(narration)
 
 
 def _tab_scenes(asset: dict) -> None:
