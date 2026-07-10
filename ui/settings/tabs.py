@@ -437,14 +437,69 @@ def render_health() -> None:
 
 
 def render_diagnostics() -> None:
+    from services.ai_provider_diagnostics import run_ai_provider_diagnostics
     from services.provider_integration import get_integration_dashboard
     from services.provider_runtime import get_provider_runtime
     from services.provider_runtime.security import credential_inventory
+    from services.anthropic_client import anthropic_sdk_version
 
     st.markdown("### Diagnostics")
     icons = {"ok": "🟢", "warn": "🟡", "error": "🔴"}
     for check in run_diagnostics():
         st.markdown(f"{icons[check['status']]} **{check['name']}** — {check['detail']}")
+
+    st.markdown("### AI Provider Diagnostics")
+    st.caption("Keys stay in environment / `.env`. Values are masked; full secrets are never shown.")
+
+    # Key presence (no live network)
+    snapshot = run_ai_provider_diagnostics(live=False)
+    oai = snapshot["openai"]
+    ant = snapshot["anthropic"]
+
+    c1, c2 = st.columns(2)
+    with c1:
+        st.markdown("**OpenAI**")
+        st.write(oai.get("key_status") or "—")
+        if oai.get("key_masked"):
+            st.caption(f"Masked: `{oai['key_masked']}`")
+        live_o = st.session_state.get("_diag_openai_live")
+        if live_o is None:
+            st.caption("Connection: not tested yet")
+        elif live_o.get("ok"):
+            st.success("✓ Connected")
+        else:
+            st.error("✗ Failed")
+            if live_o.get("error_type"):
+                st.caption(f"{live_o.get('error_type')}: {live_o.get('error_message', '')[:240]}")
+    with c2:
+        st.markdown("**Anthropic**")
+        st.write(ant.get("key_status") or "—")
+        if ant.get("key_masked"):
+            st.caption(f"Masked: `{ant['key_masked']}`")
+        sdk_ver = anthropic_sdk_version()
+        if sdk_ver:
+            st.caption(f"SDK: anthropic=={sdk_ver}")
+        else:
+            st.caption("SDK: not installed (HTTP fallback available)")
+            st.caption("Optional: `pip install 'anthropic>=0.40.0'`")
+        live_a = st.session_state.get("_diag_anthropic_live")
+        if live_a is None:
+            st.caption("Connection: not tested yet")
+        elif live_a.get("ok"):
+            st.success("✓ Connected")
+            if live_a.get("reply"):
+                st.caption(f"Reply: {live_a.get('reply')[:120]}")
+        else:
+            st.error("✗ Failed")
+            if live_a.get("error_type"):
+                st.caption(f"{live_a.get('error_type')}: {live_a.get('error_message', '')[:240]}")
+
+    if st.button("Run Connection Test", key="run_ai_provider_connection_test", type="primary"):
+        with st.spinner("Testing OpenAI and Anthropic…"):
+            live = run_ai_provider_diagnostics(live=True)
+        st.session_state._diag_openai_live = live["openai"]
+        st.session_state._diag_anthropic_live = live["anthropic"]
+        st.rerun()
 
     st.markdown("#### ProviderRuntime")
     runtime = get_provider_runtime()

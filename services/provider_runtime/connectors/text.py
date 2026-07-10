@@ -153,7 +153,7 @@ class AnthropicConnector(ProductionConnector):
         system, user = _text_prompt(request.payload)
         if not user:
             return self.fail(request, "Missing prompt/text in payload")
-        model = self.resolved_model(request, "claude-3-5-sonnet-20241022")
+        model = self.resolved_model(request, "claude-haiku-4-5-20251001")
         body = {
             "model": model,
             "max_tokens": int(request.payload.get("max_tokens") or 2048),

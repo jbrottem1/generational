@@ -30,7 +30,7 @@ DEFAULT_VERSIONS: dict[str, ProviderVersion] = {
     "openai": ProviderVersion("openai", "v1", "gpt-4o-mini"),
     "openai_images": ProviderVersion("openai_images", "v1", "dall-e-3"),
     "openai_tts": ProviderVersion("openai_tts", "v1", "tts-1"),
-    "anthropic": ProviderVersion("anthropic", "2023-06-01", "claude-3-5-sonnet-20241022"),
+    "anthropic": ProviderVersion("anthropic", "2023-06-01", "claude-haiku-4-5-20251001"),
     "google_gemini": ProviderVersion("google_gemini", "v1beta", "gemini-1.5-flash"),
     "xai": ProviderVersion("xai", "v1", "grok-2-latest"),
     "google_veo": ProviderVersion("google_veo", "v1beta", "veo-2.0-generate-001"),
