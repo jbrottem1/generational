@@ -183,7 +183,7 @@ def test_pipeline_status_marks_idea_and_script_correctly():
     asset = dict(SAMPLE_ASSET)
     stages = build_pipeline_stages(asset)
     by_key = {stage["key"]: stage["status"] for stage in stages}
-    assert by_key["idea"] == "complete"
+    assert by_key["idea"] == "completed"
     assert by_key["script"] == "not_started"
     assert by_key["scenes"] == "not_started"
     assert by_key["render"] == "not_started"
@@ -191,16 +191,17 @@ def test_pipeline_status_marks_idea_and_script_correctly():
     updated = apply_script_to_asset(asset, VideoScript.from_dict(VALID_SCRIPT))
     stages = build_pipeline_stages(updated)
     by_key = {stage["key"]: stage["status"] for stage in stages}
-    assert by_key["idea"] == "complete"
-    assert by_key["script"] == "complete"
-    assert by_key["visuals"] == "not_started"
-    assert pipeline_progress_percent(stages) == 20
+    assert by_key["idea"] == "completed"
+    assert by_key["script"] == "completed"
+    assert by_key["visual_prompts"] == "not_started"
+    # idea + script complete out of 15 stages
+    assert pipeline_progress_percent(stages) == int(round(2 / len(stages) * 100))
 
 
 def test_pipeline_in_progress_during_generation():
     asset = dict(SAMPLE_ASSET)
     stages = build_pipeline_stages(asset, script_generating=True)
-    assert next(s for s in stages if s["key"] == "script")["status"] == "in_progress"
+    assert next(s for s in stages if s["key"] == "script")["status"] == "running"
 
 
 def test_legacy_asset_without_script_data():
@@ -241,7 +242,9 @@ def test_save_and_reload_generated_script(tmp_path):
     idea = reloaded["ideas"][0]
     assert asset_has_video_script(idea)
     assert idea["script"]
-    assert idea["production_pipeline"]["progress_percent"] == 20
+    assert idea["production_pipeline"]["progress_percent"] == int(
+        round(2 / len(idea["production_pipeline"]["stages"]) * 100)
+    )
     script = load_video_script(idea)
     assert script is not None
     assert len(script.segments) >= 6

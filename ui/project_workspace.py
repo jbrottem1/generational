@@ -18,6 +18,7 @@ from core import storage
 from core.log import get_logger
 from core.models import normalize_idea_asset, normalize_project_for_workspace
 from core.script_models import apply_script_to_asset, asset_has_video_script
+from services.asset_production import run_asset_production
 from services.script_generator import generate_video_script
 from ui import notify
 from ui.production_pipeline import render_production_pipeline
@@ -55,6 +56,14 @@ def _pending_script_key(asset_id: str) -> str:
 
 def _script_generating_key(asset_id: str) -> str:
     return f"script_gen_active_{asset_id}"
+
+
+def _production_running_key(asset_id: str) -> str:
+    return f"asset_production_active_{asset_id}"
+
+
+def _pending_production_key(asset_id: str) -> str:
+    return f"asset_production_pending_{asset_id}"
 
 
 def _run_script_generation(project: dict, asset: dict, index: int) -> bool:
@@ -104,6 +113,80 @@ def _run_script_generation(project: dict, asset: dict, index: int) -> bool:
     finally:
         st.session_state[_script_generating_key(asset_id)] = False
         st.session_state[_pending_script_key(asset_id)] = False
+
+
+def _run_full_asset_production(project: dict, asset: dict, index: int) -> bool:
+    """Run Idea→…→Export MP4 automatically with live pipeline progress."""
+    asset_id = str(asset.get("asset_id") or f"asset_{index}")
+    st.session_state[_production_running_key(asset_id)] = True
+    live_placeholder = st.empty()
+
+    def on_progress(event: dict) -> None:
+        updated = event.get("asset") or asset
+        ideas = list(project.get("ideas") or [])
+        ideas[index] = updated
+        project["ideas"] = ideas
+        st.session_state.selected_asset = updated
+        st.session_state.opened_project_data = project
+        with live_placeholder.container():
+            render_production_pipeline(updated, script_generating=False)
+            st.caption(
+                f"{event.get('label')}: {event.get('status')} — {event.get('message')} "
+                f"(retries={event.get('retry_count', 0)}, {event.get('execution_time_sec', 0)}s)"
+            )
+        logger.info(
+            "workspace.production_progress | asset_id=%s stage=%s status=%s",
+            asset_id,
+            event.get("stage"),
+            event.get("status"),
+        )
+
+    try:
+        with st.status("Building video from this asset…", expanded=True) as status:
+            status.update(label="Starting production pipeline", state="running")
+            result_asset = run_asset_production(
+                asset,
+                project,
+                on_progress=lambda event: (
+                    on_progress(event),
+                    status.update(label=f"{event.get('label')}: {event.get('message')}", state="running"),
+                ),
+            )
+            ideas = list(project.get("ideas") or [])
+            ideas[index] = result_asset
+            project["ideas"] = ideas
+            _persist_project(project)
+            st.session_state.selected_asset = result_asset
+
+            if result_asset.get("production_ok"):
+                mp4 = (result_asset.get("render_package") or {}).get("mp4_path") or ""
+                status.update(label="Production complete", state="complete")
+                notify.success(
+                    f"Video package ready{f' — {mp4}' if mp4 else ''}. "
+                    + (
+                        "Publish prep awaiting OAuth."
+                        if (result_asset.get("publish_package") or {}).get("status") == "awaiting_oauth"
+                        else "Ready for publishing."
+                    )
+                )
+                logger.info(
+                    "workspace.production_complete | asset_id=%s mp4=%s",
+                    asset_id,
+                    mp4,
+                )
+                return True
+
+            status.update(label="Production failed", state="error")
+            notify.error(result_asset.get("production_error") or "Production failed")
+            logger.error(
+                "workspace.production_failed | asset_id=%s error=%s",
+                asset_id,
+                result_asset.get("production_error"),
+            )
+            return False
+    finally:
+        st.session_state[_production_running_key(asset_id)] = False
+        st.session_state[_pending_production_key(asset_id)] = False
 
 
 def _persist_asset_at_index(project: dict, updated_asset: dict, index: int) -> None:
@@ -283,15 +366,26 @@ def _scene_plan(asset: dict) -> list[dict[str, Any]]:
 
 
 def _has_rendered_video(asset: dict, project: dict) -> bool:
-    """Honest check — script packages are not finished videos."""
+    """Honest check — only true when a real (non-mock) MP4 path exists."""
+    from pathlib import Path
+
+    root = Path(__file__).resolve().parents[1]
+
+    def _exists(path: str) -> bool:
+        if not path or str(path).startswith(("mock://", "runtime://")):
+            return False
+        candidate = Path(path)
+        if not candidate.is_absolute():
+            candidate = root / path
+        return candidate.exists() and candidate.stat().st_size > 100
+
     for key in ("mp4_path", "video_path", "output_mp4", "rendered_video_path"):
-        if asset.get(key) or project.get(key):
+        if _exists(str(asset.get(key) or project.get(key) or "")):
             return True
     render = asset.get("render_package") if isinstance(asset.get("render_package"), dict) else {}
-    if render.get("output_file") or render.get("mp4_path") or render.get("rendered"):
-        return True
-    status = str(render.get("status") or "").lower()
-    if status in {"completed", "rendered", "done"} and render.get("artifacts"):
+    if render.get("mock"):
+        return False
+    if _exists(str(render.get("mp4_path") or render.get("output_file") or render.get("file_uri") or "")):
         return True
     return False
 
@@ -400,11 +494,14 @@ def _render_asset_workspace(project: dict, asset: dict, index: int, total: int) 
     video_ready = _has_rendered_video(asset, project)
 
     st.markdown(f"# Now Viewing: {title}")
-    st.info("**Pre-production content package — video has not been rendered yet.**")
-    if not video_ready:
-        st.caption("This package contains script, scenes, and prompts only. No MP4 / finished video file is available.")
+    if video_ready:
+        st.success("Finished production package — MP4 exported.")
     else:
-        st.success("A rendered video artifact was detected for this asset.")
+        st.info("Pre-production content package — press **Build Video From This Asset** to produce the MP4 automatically.")
+    if not video_ready:
+        st.caption("Script, scenes, and prompts may already exist. The full pipeline generates voice, visuals, captions, and the final render.")
+    else:
+        st.caption(f"Output: `{(asset.get('render_package') or {}).get('mp4_path') or '—'}`")
 
     meta = st.columns(5)
     meta[0].metric("Status", str(asset.get("workspace_status") or "draft"))
@@ -416,12 +513,17 @@ def _render_asset_workspace(project: dict, asset: dict, index: int, total: int) 
 
     asset_id = str(asset.get("asset_id") or f"asset_{index}")
     script_generating = bool(st.session_state.get(_script_generating_key(asset_id)))
+    production_running = bool(st.session_state.get(_production_running_key(asset_id)))
 
-    render_production_pipeline(asset, script_generating=script_generating)
+    render_production_pipeline(asset, script_generating=script_generating or production_running)
 
     # Process a queued generation request (set by Regenerate or cross-tab trigger).
-    if st.session_state.pop(_pending_script_key(asset_id), False) and not script_generating:
+    if st.session_state.pop(_pending_script_key(asset_id), False) and not script_generating and not production_running:
         _run_script_generation(project, asset, index)
+        st.rerun()
+
+    if st.session_state.pop(_pending_production_key(asset_id), False) and not production_running:
+        _run_full_asset_production(project, asset, index)
         st.rerun()
 
     build_cols = st.columns([2, 1, 1])
@@ -430,11 +532,12 @@ def _render_asset_workspace(project: dict, asset: dict, index: int, total: int) 
         key="ws_build_video",
         type="primary",
         use_container_width=True,
+        disabled=production_running or script_generating,
     ):
         st.session_state.show_build_video_checklist = False
         st.session_state._scroll_asset_workspace = True
+        st.session_state[_pending_production_key(asset_id)] = True
         logger.info("workspace.build_video_clicked | asset_id=%s", asset.get("asset_id"))
-        _run_script_generation(project, asset, index)
         st.rerun()
     if build_cols[1].button("◀ Previous Asset", key="ws_prev_inline", disabled=index <= 0, use_container_width=True):
         _open_asset(index - 1, list(project.get("ideas") or []), source="inline_prev")
@@ -446,11 +549,13 @@ def _render_asset_workspace(project: dict, asset: dict, index: int, total: int) 
     if st.session_state.get("show_build_video_checklist"):
         _render_build_video_checklist(project, asset)
 
-    if asset_has_video_script(asset):
-        st.caption("Structured script ready — continue in the **Script** tab or expand the pre-render checklist below.")
+    if asset_has_video_script(asset) and not (asset.get("render_package") or {}).get("mp4_path"):
+        st.caption("Structured script ready — press **Build Video From This Asset** to run the full automatic pipeline.")
         if st.button("Show pre-render provider checklist", key="ws_show_checklist"):
             st.session_state.show_build_video_checklist = True
             st.rerun()
+    elif (asset.get("render_package") or {}).get("mp4_path") and not (asset.get("render_package") or {}).get("mock"):
+        st.success(f"Finished MP4: `{(asset.get('render_package') or {}).get('mp4_path')}`")
 
     overview, script_tab, scenes_tab, visuals_tab, audio_tab, render_tab, export_tab = st.tabs(
         ["Overview", "Script", "Scenes", "Visuals", "Audio", "Render", "Export"]
@@ -602,20 +707,29 @@ def _tab_render(project: dict, asset: dict, video_ready: bool) -> None:
     st.markdown("#### Render status")
     if video_ready:
         st.success("Rendered video artifact detected.")
+        mp4 = (asset.get("render_package") or {}).get("mp4_path") or asset.get("mp4_path")
+        if mp4:
+            st.code(mp4, language=None)
     else:
-        st.warning("**Not rendered.** This is a pre-production package only — no MP4 has been produced.")
+        st.warning("**Not rendered yet.** Press **Build Video From This Asset** to run the automatic pipeline.")
     render = asset.get("render_package") if isinstance(asset.get("render_package"), dict) else {}
     if render:
-        st.markdown("#### Render plan metadata (not a finished file)")
+        st.markdown("#### Render package")
         st.write(
             {
+                "mock": render.get("mock"),
+                "mp4_path": render.get("mp4_path"),
                 "aspect_ratio": render.get("aspect_ratio"),
                 "duration_sec": render.get("duration_sec") or asset.get("estimated_runtime_sec"),
                 "resolution": render.get("resolution"),
-                "output_format": render.get("output_format"),
-                "platforms": render.get("platforms"),
+                "render_status": render.get("render_status"),
             }
         )
+    arts = (asset.get("production_artifacts") or {}).get("files") or []
+    if arts:
+        st.markdown("#### Production artifacts")
+        for path in arts[:30]:
+            st.markdown(f"- `{path}`")
     else:
         st.caption(f"Estimated runtime: {asset.get('estimated_runtime_sec') or '—'} sec")
 

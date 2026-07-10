@@ -1,0 +1,173 @@
+"""Tests for the automatic asset production executor."""
+
+from __future__ import annotations
+
+from core.script_models import PIPELINE_STAGE_KEYS, VideoScript, apply_script_to_asset
+from services.asset_production.executor import run_asset_production, _scenes_from_script
+
+
+VALID_SCRIPT = {
+    "title": "Glow Facts",
+    "target_duration_seconds": 30,
+    "tone": "curious",
+    "primary_emotion": "wonder",
+    "script_summary": "Bioluminescence short",
+    "full_voiceover": "Animals glow for a reason. Deep oceans hide living light. Watch closely.",
+    "call_to_action": "Follow for more",
+    "estimated_word_count": 20,
+    "segments": [
+        {
+            "segment_number": 1,
+            "start_time": 0,
+            "end_time": 5,
+            "segment_type": "hook",
+            "voiceover": "Animals glow for a reason.",
+            "emotion": "curiosity",
+            "delivery": "urgent",
+            "retention_device": "open loop",
+        },
+        {
+            "segment_number": 2,
+            "start_time": 5,
+            "end_time": 15,
+            "segment_type": "context",
+            "voiceover": "Deep oceans hide living light.",
+            "emotion": "wonder",
+            "delivery": "steady",
+            "retention_device": "visual reveal",
+        },
+        {
+            "segment_number": 3,
+            "start_time": 15,
+            "end_time": 25,
+            "segment_type": "payoff",
+            "voiceover": "Watch closely as chemistry becomes cinema.",
+            "emotion": "awe",
+            "delivery": "building",
+            "retention_device": "payoff",
+        },
+        {
+            "segment_number": 4,
+            "start_time": 25,
+            "end_time": 30,
+            "segment_type": "cta",
+            "voiceover": "Follow for more nature secrets.",
+            "emotion": "warm",
+            "delivery": "friendly",
+            "retention_device": "cta",
+        },
+    ],
+}
+
+
+def test_scenes_from_script():
+    asset = apply_script_to_asset({"title": "Glow Facts", "asset_id": "a1"}, VideoScript.from_dict(VALID_SCRIPT))
+    scenes = _scenes_from_script(asset)
+    assert len(scenes) == 4
+    assert scenes[0]["purpose"] == "hook"
+    assert scenes[0]["narration"]
+
+
+def test_run_asset_production_offline_pipeline(monkeypatch, tmp_path):
+    """Full chain with stubbed providers — still produces artifacts and stage reports."""
+    monkeypatch.setattr("services.asset_production.artifacts.PRODUCTIONS_ROOT", tmp_path / "productions")
+    monkeypatch.setattr("services.asset_production.artifacts.ROOT", tmp_path)
+
+    # Stub image gen
+    monkeypatch.setattr(
+        "services.provider_runtime.engine_api.runtime_generate_image",
+        lambda prompt, meta=None: {
+            "path": "mock://skip.png",
+            "placeholder": True,
+            "status": "mock",
+            "prompt": prompt,
+        },
+    )
+    monkeypatch.setattr(
+        "services.provider_runtime.engine_api.runtime_generate_video",
+        lambda *a, **k: {"path": "", "placeholder": True, "async": True},
+    )
+
+    # Stub voice to write a real tiny file
+    voice_file = tmp_path / "voice.mp3"
+    voice_file.write_bytes(b"ID3fake")
+
+    def fake_voice(text, profile=None, settings=None, mode="ai"):
+        return {
+            "ok": True,
+            "placeholder": False,
+            "path": str(voice_file),
+            "duration_sec": 8.0,
+            "voice_package": {
+                "path": str(voice_file),
+                "placeholder": False,
+                "duration_sec": 8.0,
+                "timing": {
+                    "sentence_timestamps": [
+                        {"text": "Animals glow for a reason.", "start": 0, "end": 3},
+                        {"text": "Deep oceans hide living light.", "start": 3, "end": 6},
+                    ]
+                },
+                "provider": "test",
+            },
+            "metadata": {},
+            "asset_id": "v1",
+            "mode": mode,
+        }
+
+    monkeypatch.setattr("services.media_production.voice.synthesize_voice", fake_voice)
+    monkeypatch.setattr(
+        "services.provider_runtime.config.has_credential",
+        lambda env: env == "OPENAI_API_KEY",
+    )
+
+    # Stub ffmpeg assembly to write a real mp4-ish file
+    def fake_assemble(**kwargs):
+        from pathlib import Path as P
+
+        out = P(kwargs.get("output_path") or (tmp_path / "out.mp4"))
+        if not out.is_absolute():
+            out = tmp_path / out
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_bytes(b"\x00\x00\x00\x18ftypmp42" + b"\x00" * 200)
+        try:
+            rel = str(out.relative_to(tmp_path))
+        except ValueError:
+            rel = str(out)
+        return {
+            "ok": True,
+            "mock": False,
+            "output_path": rel,
+            "absolute_path": str(out),
+            "bytes": out.stat().st_size,
+            "log": ["test"],
+        }
+
+    monkeypatch.setattr("services.media_production.ffmpeg_assembler.assemble_mp4", fake_assemble)
+    monkeypatch.setattr("services.media_production.ffmpeg_assembler.find_ffmpeg", lambda: "/usr/bin/ffmpeg")
+    monkeypatch.setattr("services.media_production.ffmpeg_assembler.write_assembly_sidecar", lambda *a, **k: "")
+
+    asset = apply_script_to_asset(
+        {"title": "Glow Facts", "hook": "Living light", "asset_id": "glow1", "hashtags": ["#nature"]},
+        VideoScript.from_dict(VALID_SCRIPT),
+    )
+    project = {"name": "Test", "model": "gpt-4o-mini", "niche": "science", "platform": "youtube_shorts"}
+
+    events = []
+    result = run_asset_production(asset, project, on_progress=events.append, max_images=2)
+
+    assert result.get("production_ok") is True
+    stages = (result.get("production_pipeline") or {}).get("stages") or {}
+    assert set(PIPELINE_STAGE_KEYS).issubset(set(stages.keys()))
+    assert stages["script"]["status"] == "completed"
+    assert stages["scenes"]["status"] == "completed"
+    assert stages["captions"]["status"] == "completed"
+    assert stages["render"]["status"] == "completed"
+    assert stages["export"]["status"] == "completed"
+    # No OAuth → publish skipped
+    assert stages["publish"]["status"] in {"skipped", "completed"}
+    assert (result.get("render_package") or {}).get("mp4_path")
+    assert (tmp_path / "productions" / "glow1" / "scenes.json").exists()
+    assert (tmp_path / "productions" / "glow1" / "captions.srt").exists()
+    assert (tmp_path / "productions" / "glow1" / "metadata.json").exists()
+    assert events  # live progress fired

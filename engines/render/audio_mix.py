@@ -132,12 +132,16 @@ class AudioMixer:
             )
 
         music_direction = audio_package.get("music_direction", {})
+        if isinstance(music_direction, str):
+            music_direction = {"style": music_direction}
+        if not isinstance(music_direction, dict):
+            music_direction = {}
         return {
             "duration_sec": total_duration,
             "tracks": {
                 "narration": {
                     "level_db": TRACK_LEVELS_DB["narration"],
-                    "voice_style": audio_package.get("voice_style", {}),
+                    "voice_style": audio_package.get("voice_style", {}) if isinstance(audio_package.get("voice_style"), dict) else {},
                     "segments": narration_segments,
                 },
                 "music": {

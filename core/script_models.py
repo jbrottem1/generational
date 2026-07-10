@@ -16,9 +16,14 @@ PIPELINE_STAGE_KEYS = (
     "idea",
     "script",
     "scenes",
-    "visuals",
+    "visual_prompts",
+    "images",
+    "video_clips",
     "voice",
-    "music_sfx",
+    "music",
+    "sfx",
+    "captions",
+    "timeline",
     "render",
     "quality",
     "export",
@@ -29,34 +34,62 @@ PIPELINE_STAGE_LABELS = {
     "idea": "Idea",
     "script": "Script",
     "scenes": "Scenes",
-    "visuals": "Visuals",
+    "visual_prompts": "Visual Prompts",
+    "images": "Images",
+    "video_clips": "Video Clips",
     "voice": "Voice",
-    "music_sfx": "Music and SFX",
-    "render": "Render",
-    "quality": "Quality Check",
-    "export": "Export",
-    "publish": "Publish",
+    "music": "Music",
+    "sfx": "SFX",
+    "captions": "Captions",
+    "timeline": "Timeline",
+    "render": "FFmpeg Render",
+    "quality": "Quality",
+    "export": "Export MP4",
+    "publish": "Publish Prep",
 }
 
+# Canonical execution statuses for live production runs
 PIPELINE_STATUSES = frozenset(
-    {"not_started", "in_progress", "complete", "failed", "needs_review"}
+    {
+        "not_started",
+        "started",
+        "running",
+        "in_progress",  # alias used by script generation UI
+        "completed",
+        "complete",  # alias for completed
+        "failed",
+        "skipped",
+        "needs_review",
+    }
 )
 
 STATUS_ICONS = {
     "not_started": "○",
+    "started": "◔",
+    "running": "◐",
     "in_progress": "◐",
+    "completed": "●",
     "complete": "●",
     "failed": "✕",
+    "skipped": "◌",
     "needs_review": "◑",
 }
 
 STATUS_LABELS = {
     "not_started": "Not started",
-    "in_progress": "In progress",
-    "complete": "Complete",
+    "started": "Started",
+    "running": "Running",
+    "in_progress": "Running",
+    "completed": "Completed",
+    "complete": "Completed",
     "failed": "Failed",
+    "skipped": "Skipped",
     "needs_review": "Needs review",
 }
+
+_COMPLETE_STATUSES = frozenset({"complete", "completed", "skipped"})
+_RUNNING_STATUSES = frozenset({"started", "running", "in_progress"})
+
 
 # --- Script schema -----------------------------------------------------------
 
@@ -316,56 +349,163 @@ def load_video_script(asset: dict[str, Any] | None) -> VideoScript | None:
 
 # --- Pipeline status ---------------------------------------------------------
 
+def _normalize_status(status: str) -> str:
+    value = str(status or "not_started").lower()
+    if value == "complete":
+        return "completed"
+    if value == "in_progress":
+        return "running"
+    return value if value in PIPELINE_STATUSES else "not_started"
+
+
 def _stage_status(asset: dict[str, Any], stage_key: str, *, script_generating: bool = False) -> str:
     stored = asset.get("production_pipeline") or {}
     stages = stored.get("stages") if isinstance(stored, dict) else None
     if isinstance(stages, dict) and stage_key in stages:
-        status = str(stages[stage_key]).lower()
+        raw = stages[stage_key]
+        if isinstance(raw, dict):
+            status = _normalize_status(raw.get("status") or "not_started")
+        else:
+            status = _normalize_status(raw)
         if status in PIPELINE_STATUSES:
             return status
 
     if stage_key == "idea":
-        return "complete" if asset.get("title") or asset.get("hook") else "not_started"
+        return "completed" if asset.get("title") or asset.get("hook") else "not_started"
 
     if stage_key == "script":
         if script_generating:
-            return "in_progress"
-        return "complete" if asset_has_video_script(asset) else "not_started"
+            return "running"
+        return "completed" if asset_has_video_script(asset) else "not_started"
 
     if stage_key == "scenes":
-        if asset.get("structured_script") or asset.get("visual_package"):
-            return "needs_review" if asset_has_video_script(asset) else "not_started"
+        scenes = (asset.get("scene_breakdown") or (asset.get("visual_package") or {}).get("scenes") or [])
+        return "completed" if scenes else "not_started"
+
+    if stage_key == "visual_prompts":
+        return "completed" if asset.get("visual_prompts") or (asset.get("visual_package") or {}).get("image_prompts") else "not_started"
+
+    if stage_key == "images":
+        arts = (asset.get("production_artifacts") or {}).get("images") or asset.get("generated_images") or []
+        return "completed" if arts else "not_started"
+
+    if stage_key == "video_clips":
+        arts = (asset.get("production_artifacts") or {}).get("video_clips") or asset.get("generated_videos") or []
+        if arts:
+            return "completed"
+        if (asset.get("production_pipeline") or {}).get("stages", {}).get("video_clips"):
+            return _normalize_status(
+                ((asset.get("production_pipeline") or {}).get("stages") or {}).get("video_clips")
+            )
         return "not_started"
 
-    if stage_key == "visuals" and asset.get("visual_prompts"):
-        return "needs_review"
+    if stage_key == "voice":
+        voice = asset.get("voice_package") or {}
+        return "completed" if isinstance(voice, dict) and (voice.get("path") or not voice.get("placeholder", True)) else "not_started"
+
+    if stage_key == "music":
+        return "completed" if (asset.get("production_artifacts") or {}).get("music") or (asset.get("audio_package") or {}).get("music_path") else "not_started"
+
+    if stage_key == "sfx":
+        return "completed" if (asset.get("production_artifacts") or {}).get("sfx") else "not_started"
+
+    if stage_key == "captions":
+        return "completed" if (asset.get("production_artifacts") or {}).get("captions") or asset.get("captions_srt") else "not_started"
+
+    if stage_key == "timeline":
+        render = asset.get("render_package") or {}
+        return "completed" if (render.get("timeline") or {}).get("segments") else "not_started"
+
+    if stage_key == "render":
+        render = asset.get("render_package") or {}
+        if render.get("mp4_path") and not render.get("mock"):
+            return "completed"
+        if render.get("mock_output_path") or render.get("file_uri"):
+            return "completed" if not render.get("mock") else "needs_review"
+        return "not_started"
+
+    if stage_key == "quality":
+        qc = asset.get("production_qc") or {}
+        if qc.get("passed") is True:
+            return "completed"
+        if qc.get("passed") is False:
+            return "failed"
+        return "not_started"
+
+    if stage_key == "export":
+        return "completed" if (asset.get("production_artifacts") or {}).get("render") or (
+            (asset.get("render_package") or {}).get("mp4_path") and not (asset.get("render_package") or {}).get("mock")
+        ) else "not_started"
+
+    if stage_key == "publish":
+        prep = asset.get("publish_package") or {}
+        if prep.get("ready") or prep.get("status") == "prepared":
+            return "completed"
+        if prep.get("status") == "awaiting_oauth":
+            return "skipped"
+        return "not_started"
 
     return "not_started"
 
 
-def build_pipeline_stages(asset: dict[str, Any] | None, *, script_generating: bool = False) -> list[dict[str, str]]:
+def build_pipeline_stages(asset: dict[str, Any] | None, *, script_generating: bool = False) -> list[dict[str, Any]]:
     asset = asset or {}
-    return [
-        {
-            "key": key,
-            "label": PIPELINE_STAGE_LABELS[key],
-            "status": _stage_status(asset, key, script_generating=script_generating),
-        }
-        for key in PIPELINE_STAGE_KEYS
-    ]
+    stored = (asset.get("production_pipeline") or {}).get("stages") or {}
+    rows = []
+    for key in PIPELINE_STAGE_KEYS:
+        detail = stored.get(key) if isinstance(stored, dict) else None
+        if isinstance(detail, dict):
+            status = _normalize_status(detail.get("status") or _stage_status(asset, key, script_generating=script_generating))
+            row = {
+                "key": key,
+                "label": PIPELINE_STAGE_LABELS[key],
+                "status": status,
+                "retry_count": int(detail.get("retry_count") or 0),
+                "execution_time_sec": float(detail.get("execution_time_sec") or 0),
+                "error": str(detail.get("error") or ""),
+                "artifacts": list(detail.get("artifacts") or []),
+                "started_at": str(detail.get("started_at") or ""),
+                "completed_at": str(detail.get("completed_at") or ""),
+            }
+        else:
+            status = _stage_status(asset, key, script_generating=script_generating)
+            row = {
+                "key": key,
+                "label": PIPELINE_STAGE_LABELS[key],
+                "status": status,
+                "retry_count": 0,
+                "execution_time_sec": 0.0,
+                "error": "",
+                "artifacts": [],
+                "started_at": "",
+                "completed_at": "",
+            }
+        rows.append(row)
+    return rows
 
 
-def pipeline_progress_percent(stages: list[dict[str, str]]) -> int:
+def pipeline_progress_percent(stages: list[dict[str, Any]]) -> int:
     if not stages:
         return 0
-    complete = sum(1 for stage in stages if stage.get("status") == "complete")
+    complete = sum(1 for stage in stages if stage.get("status") in _COMPLETE_STATUSES)
     return int(round(complete / len(stages) * 100))
 
 
 def build_pipeline_snapshot(asset: dict[str, Any], *, script_generating: bool = False) -> dict[str, Any]:
     stages = build_pipeline_stages(asset, script_generating=script_generating)
     return {
-        "stages": {stage["key"]: stage["status"] for stage in stages},
+        "stages": {
+            stage["key"]: {
+                "status": stage["status"],
+                "retry_count": stage.get("retry_count", 0),
+                "execution_time_sec": stage.get("execution_time_sec", 0),
+                "error": stage.get("error", ""),
+                "artifacts": stage.get("artifacts") or [],
+                "started_at": stage.get("started_at", ""),
+                "completed_at": stage.get("completed_at", ""),
+            }
+            for stage in stages
+        },
         "progress_percent": pipeline_progress_percent(stages),
         "updated_at": datetime.now(timezone.utc).isoformat(),
     }
