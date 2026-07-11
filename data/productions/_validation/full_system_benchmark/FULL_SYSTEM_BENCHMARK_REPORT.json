@@ -1,0 +1,104 @@
+{
+  "project": "Full System Benchmark",
+  "generated_at": "2026-07-11T04:19:26.045847+00:00",
+  "topic": "Why mitochondria are called the powerhouse of the cell",
+  "seo": {
+    "method": "build_keyword_package",
+    "keywords": [
+      "why mitochondria are called the powerhouse of the cell",
+      "microscopic",
+      "power",
+      "plants",
+      "biology",
+      "why mitochondria are called the powerhouse of the cell explained",
+      "why mitochondria are called the powerhouse of the cell meaning",
+      "understanding why mitochondria are called the powerhouse of the cell"
+    ],
+    "package_id": null
+  },
+  "educational_review": {
+    "passed": true,
+    "score": 84.8,
+    "accuracy_score": 75.0,
+    "clarity_score": 95.0,
+    "sequencing_score": 84.0,
+    "demonstration_score": 85.0,
+    "misconception_risks": [],
+    "audience_level": "general",
+    "learning_payoff": "Every move you make is fueled by thousands of tiny mitochondria.",
+    "notes": [],
+    "hard_fails": []
+  },
+  "render": {
+    "ok": true,
+    "duration_sec": 25.442,
+    "render_time_sec": 14.42,
+    "cache_prior": false,
+    "fingerprint": "d1591d97d2f79c1855680ec7d97b8c8a1947977cb841327e11cd35f0d84d44b4"
+  },
+  "qc": {
+    "mouth_varies": true,
+    "has_silence_closed": true,
+    "has_speech_open": true,
+    "speaking_ratio": 0.692,
+    "idle_motion": true,
+    "blink_programmed": true,
+    "educator_mode": true,
+    "demo_id": "fluid_cells",
+    "duration_sec": 25.442,
+    "frame_count": 610,
+    "grounded": true,
+    "interactive_teaching": true,
+    "gesture_counts": {
+      "idle": 316,
+      "think": 37,
+      "point": 208,
+      "present": 49
+    },
+    "idle_ratio": 0.518,
+    "walk_ratio": 0.08,
+    "purposeful_gestures": true,
+    "passed": true
+  },
+  "quality": {
+    "scores": {
+      "animation_quality": 85.0,
+      "lip_synchronization": 83.84,
+      "character_consistency": 75.0,
+      "technical_validity": 85.0,
+      "hook_quality": 75.0,
+      "ending_quality": 70.0,
+      "story_structure": 68.0,
+      "educational_clarity": 84.8,
+      "factual_accuracy": 75.0,
+      "visual_clarity": 70.0,
+      "audio_quality": 72.0,
+      "pacing": 68.0,
+      "emotional_delivery": 70.0,
+      "brand_consistency": 75.0,
+      "platform_readiness": 70.0
+    },
+    "overall": 75.1,
+    "passed": true,
+    "hard_fails": [],
+    "warnings": [],
+    "thresholds": {
+      "technical_validity": 70.0,
+      "educational_clarity": 65.0,
+      "factual_accuracy": 70.0,
+      "animation_quality": 60.0,
+      "lip_synchronization": 55.0,
+      "hook_quality": 50.0,
+      "ending_quality": 50.0
+    }
+  },
+  "verification": {
+    "ok": true,
+    "has_video": true,
+    "has_audio": true,
+    "duration_sec": 25.42,
+    "bytes": 699176
+  },
+  "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Full_System_Benchmark_Mitochondria_Powerhouse.mp4",
+  "success": true
+}

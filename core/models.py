@@ -205,8 +205,14 @@ def normalize_project_for_workspace(project: dict | None) -> dict:
 
 
 def result_from_project(project: dict) -> dict:
-    """Rehydrate a session result from a stored project (tolerates old formats)."""
-    project = normalize_project_for_workspace(project)
+    """Rehydrate a session result from a stored project (tolerates old formats).
+
+    Preserves stored idea payloads verbatim for round-trip fidelity. UI layers
+    should call ``normalize_project_for_workspace`` when display normalization
+    is required.
+    """
+    project = dict(project or {})
+    ensure_project_id(project)
     ideas = project.get("ideas", [])
     result = build_result(
         command=project.get("command", ""),

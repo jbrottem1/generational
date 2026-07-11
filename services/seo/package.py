@@ -17,7 +17,6 @@ from datetime import datetime, timezone
 
 from services.seo.descriptions import build_description_package
 from services.seo.hashtags import build_hashtag_package, flat_hashtags
-from services.seo.keywords import build_keyword_package, collect_keyword_signals, flatten_keywords
 from services.seo.localization import build_localization_package
 from services.seo.models import PUBLISHING_PACKAGE_VERSION
 from services.seo.report import build_optimization_report
@@ -91,6 +90,8 @@ def _snapshot(item: dict, context: dict) -> dict:
 
 def optimize_content(item: dict, context: "dict | None" = None) -> dict:
     """Run the full optimization pass; returns seo_package/publishing_package/report."""
+    from services.seo.keywords import build_keyword_package, collect_keyword_signals, flatten_keywords
+
     context = context or {}
     snap = _snapshot(item, context)
 
@@ -171,6 +172,8 @@ def build_publishing_package(snap: dict, seo_package: dict, report: dict) -> dic
 
     See PUBLISHING_PACKAGE_FIELDS — additive-only from version 1.0 on.
     """
+    from services.seo.keywords import flatten_keywords
+
     titles = seo_package.get("optimized_titles", [])
     descriptions = seo_package.get("description_package", {})
     thumbnails = seo_package.get("thumbnail_recommendations", [])

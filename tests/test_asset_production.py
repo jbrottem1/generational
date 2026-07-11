@@ -73,15 +73,40 @@ def test_run_asset_production_offline_pipeline(monkeypatch, tmp_path):
     monkeypatch.setattr("services.asset_production.artifacts.PRODUCTIONS_ROOT", tmp_path / "productions")
     monkeypatch.setattr("services.asset_production.artifacts.ROOT", tmp_path)
 
-    # Stub image gen
+    # Stub image gen to real local files (cinematic path rejects placeholders)
+    def fake_image(prompt, meta=None):
+        img = tmp_path / f"gen_{abs(hash(prompt)) % 10**6}.png"
+        img.write_bytes(b"\x89PNG\r\n\x1a\n" + b"\x00" * 600)
+        return {
+            "path": str(img),
+            "local_path": str(img),
+            "placeholder": False,
+            "status": "generated",
+            "prompt": prompt,
+        }
+
     monkeypatch.setattr(
         "services.provider_runtime.engine_api.runtime_generate_image",
-        lambda prompt, meta=None: {
-            "path": "mock://skip.png",
-            "placeholder": True,
-            "status": "mock",
-            "prompt": prompt,
-        },
+        fake_image,
+    )
+
+    def fake_cinematic_fallback(**kwargs):
+        out = Path(kwargs.get("output_path") or tmp_path / "fallback.png")
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_bytes(b"\x89PNG\r\n\x1a\n" + b"\x00" * 600)
+        return {
+            "path": str(out),
+            "local_path": str(out),
+            "placeholder": False,
+            "status": "fallback_still",
+            "provider": "cinematic_fallback",
+        }
+
+    from pathlib import Path
+
+    monkeypatch.setattr(
+        "services.asset_production.cinematic_fallback.generate_cinematic_fallback_still",
+        fake_cinematic_fallback,
     )
     monkeypatch.setattr(
         "services.provider_runtime.engine_api.runtime_generate_video",
@@ -140,7 +165,11 @@ def test_run_asset_production_offline_pipeline(monkeypatch, tmp_path):
             "output_path": rel,
             "absolute_path": str(out),
             "bytes": out.stat().st_size,
-            "log": ["test"],
+            "log": ["multi_scene→mp4 scenes=2 effect=character_performance"],
+            "visual_count": 2,
+            "color_bed": False,
+            "has_audio": True,
+            "true_motion": {"motion_class": "true_layered_animation"},
         }
 
     monkeypatch.setattr("services.media_production.ffmpeg_assembler.assemble_mp4", fake_assemble)
