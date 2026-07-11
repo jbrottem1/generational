@@ -59,6 +59,7 @@ Companions: `ENGINE_REGISTRY.md` · `SYSTEM_DEPENDENCY_MAP.md` ·
 | **19** | Provider Integration & Runtime | `services/provider_runtime/` | **LIVE** |
 | **21** | End-to-End Workflow Executor | `services/workflow_executor/` | **LIVE** |
 | **24** | Executive Intelligence | `autonomous_executive` | **LIVE** |
+| **25** | Retention & Episode Design | `episode_design` | **LIVE** |
 
 ---
 
@@ -113,6 +114,7 @@ Reserved for future BI: `business_intelligence` engine key.
 | Intelligence | Measure, forecast, learn, experiment | 10–13 |
 | Media Generation | Assets, characters, universes, motion, edit | 14–17 |
 | Direction | AI direction, executive creative strategy | **18** |
+| Retention Design | Educational episode rhythm, retention, playbook | **25** |
 | Interface | Studio UI, creative workspace | **20** |
 | Infrastructure | Provider integration, runtime, workflow execution | **19**, **21** |
 | Executive (planned) | Autonomous operation | 22 |

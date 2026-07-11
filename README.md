@@ -4,6 +4,23 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 9.17 — Retention & Episode Design (Agent 25)
+
+Educational episode rhythm layer: reviews scripts before production, emits
+7-beat lesson blueprints, 7-dimension retention scores, series design, and
+the Generational Episode Playbook. Engine key `episode_design`; ContentPackage
+slot `episode_design_package`. First distribution stage (before AI Director).
+**Numbering note:** mission brief said Agent 24; registry assigns 25 because
+24 is Executive Intelligence. `APP_VERSION = 9.17.0`.
+
+```python
+from services.orchestrator import Orchestrator
+report = Orchestrator().run_episode_design_stage({"unified_packages": [...]})
+```
+
+See [`EPISODE_DESIGN_ENGINE.md`](EPISODE_DESIGN_ENGINE.md) and
+[`EPISODE_PLAYBOOK.md`](EPISODE_PLAYBOOK.md).
+
 ## Version 9.16 — Executive Intelligence Engine (Agent 24)
 
 Company OS layer: strategic planning, decision prioritization (ROI/views/

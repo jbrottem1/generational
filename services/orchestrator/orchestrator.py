@@ -77,6 +77,8 @@ def _stage_confidence(stage: str, context: dict) -> int:
         return int(context.get("render_summary", {}).get("average_readiness", 0))
     if stage == "creative":
         return int(context.get("creative_summary", {}).get("average_readiness", 0))
+    if stage == "episode_design":
+        return int(context.get("episode_design_summary", {}).get("average_retention_score", 0))
     if stage == "ai_director":
         return int(context.get("ai_director_summary", {}).get("average_confidence", 0))
     if stage == "post_production":
@@ -172,6 +174,9 @@ class Orchestrator:
     # Media-generation & distribution stages (Agents 6-18). Live engines
     # run; FutureEngine stubs (character_universe, animation, optimization_lab)
     # skip with WARNING diagnostics until their feature branches merge.
+
+    def run_episode_design_stage(self, context: dict) -> StageReport:
+        return self.run_stage("episode_design", context)
 
     def run_ai_director_stage(self, context: dict) -> StageReport:
         return self.run_stage("ai_director", context)

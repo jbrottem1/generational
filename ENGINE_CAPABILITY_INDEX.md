@@ -34,20 +34,24 @@ Regenerated during the v9.7/v9.9 architecture review.
 | `classification` | `trend_forecasting` |
 | `color-grading` | `post_production` |
 | `competition-analysis` | `market_intelligence` |
+| `company-os` | `autonomous_executive` |
 | `configurable-policies` | `ai_director` |
 | `conflict-detection` | `ai_director` |
 | `continuity` | `character_universe`, `creative_studio` |
 | `creative-direction` | `creative_studio` |
 | `creative-style` | `ai_director` |
 | `ctr-optimization` | `seo_optimization` |
+| `curiosity-design` | `episode_design` |
 | `distribution` | `publishing` |
 | `editing-direction` | `ai_director` |
+| `educational-pacing` | `episode_design` |
+| `ending-design` | `episode_design` |
 | `engagement` | `analytics` |
+| `engine-discovery` | `autonomous_executive` |
 | `environments` | `creative_studio` |
+| `episode-design` | `episode_design` |
 | `executive-direction` | `ai_director` |
 | `executive-intelligence` | `autonomous_executive` |
-| `company-os` | `autonomous_executive` |
-| `engine-discovery` | `autonomous_executive` |
 | `experimentation` | `learning`, `optimization_lab` |
 | `export-preparation` | `post_production` |
 | `facial-animation` | `animation` |
@@ -62,6 +66,7 @@ Regenerated during the v9.7/v9.9 architecture review.
 | `ip-protection` | `character_universe` |
 | `job-queue` | `asset_generation` |
 | `learning` | `learning` |
+| `lesson-blueprint` | `episode_design` |
 | `learning-feedback` | `ai_director` |
 | `learning-integration` | `market_intelligence`, `trend_forecasting` |
 | `learning-loop` | `optimization_lab` |
@@ -89,6 +94,7 @@ Regenerated during the v9.7/v9.9 architecture review.
 | `platform-optimization` | `post_production` |
 | `platform-selection` | `ai_director` |
 | `posting-strategy` | `seo_optimization` |
+| `playbook` | `episode_design` |
 | `prediction` | `optimization_lab` |
 | `production-strategy` | `ai_director` |
 | `prompt-compilation` | `asset_generation` |
@@ -105,14 +111,17 @@ Regenerated during the v9.7/v9.9 architecture review.
 | `relationships` | `character_universe` |
 | `render` | `image`, `render`, `video` |
 | `reporting` | `learning`, `market_intelligence` |
-| `retention` | `analytics` |
+| `retention` | `analytics`, `episode_design` |
+| `reveal-timing` | `episode_design` |
 | `retry` | `publishing` |
 | `roadmap-generation` | `market_intelligence` |
 | `roi-estimation` | `market_intelligence` |
 | `scene-cuts` | `post_production` |
 | `scheduling` | `publishing`, `scheduler` |
 | `scoring` | `optimization_lab` |
+| `script-review` | `episode_design` |
 | `seo` | `seo_optimization` |
+| `series-planning` | `episode_design` |
 | `shot-listing` | `creative_studio` |
 | `story-bible` | `character_universe` |
 | `storyboarding` | `creative_studio` |

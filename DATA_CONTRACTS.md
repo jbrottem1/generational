@@ -38,6 +38,7 @@ list is `CONTENT_PACKAGE_FIELDS`.
 | `post_production_package` | dict | **Agent 17** (edit timeline, scene cuts, audio mix, captions, color, exports, QC) |
 | `optimization_package` | dict | **Agent 13** (variants, scores, recommendations — stub until merge) |
 | `executive_package` | dict | **Agent 24** (decisions, goals, strategy, risk, roadmap slice, health) |
+| `episode_design_package` | dict | **Agent 25** (lesson blueprint, retention review, series design, playbook notes) |
 | `status` | str | pipeline (`planned → approved/held → rendered → scheduled → published`) |
 | `diagnostics` | dict | any stage (append keys) |
 | `created_at` / `extras` | str / dict | packager / forward-compat overflow |

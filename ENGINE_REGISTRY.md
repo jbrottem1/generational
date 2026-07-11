@@ -107,11 +107,26 @@ attribution) · `learning` (pattern mining, weight recommendations,
 long-term memory). Logic in `services/analytics/` and `services/learning/`;
 see `ANALYTICS_LEARNING.md`.
 
+## Live engine (episode design — Agent 25)
+
+`episode_design` — Retention & Episode Design
+(`engines/episode_design.py`, logic in `services/episode_design/`).
+Reviews completed scripts before production and designs educational episode
+rhythm: 7-beat lesson blueprints, 7-dimension retention scores, series
+planning, and the Generational Episode Playbook. Writes
+`episode_design_package` on each ContentPackage; context keys
+`episode_design_summary` + `episode_design_packages`. Runs as the **first**
+distribution stage after packaging, before AI Director. See
+`EPISODE_DESIGN_ENGINE.md` and `EPISODE_PLAYBOOK.md`.
+
+NOTE: Mission brief requested Agent 24; registry assigns Agent 25 because
+Agent 24 is Executive Intelligence (`autonomous_executive`).
+
 ## Live engine (creative — Agent 12)
 
 `creative_studio` — the Creative Studio (`engines/creative_studio.py`,
 logic in `services/creative_studio/`). Subclasses `ContractEngine`, runs
-as the first distribution stage after packaging, and fills
+in the distribution pipeline after Episode Design / AI Director, and fills
 `creative_package` (storyboards, shot lists, style libraries, character
 consistency, environments). Asset backends swap in via
 `register_creative_provider()` (`providers/creative/`). See
@@ -139,7 +154,7 @@ intelligence from Psychology, Script, Visual, Voice, Trend, Market, and
 Analytics packages and determines the optimal production strategy before
 assets are generated. Writes `director_package` on each ContentPackage;
 context keys `ai_director_summary` + `ai_director_packages`. Runs in the
-distribution pipeline after packaging, before Creative Studio. Configurable
+distribution pipeline after Episode Design, before Creative Studio. Configurable
 decision policies with a reinforcement-learning feedback hook. See
 `AI_DIRECTOR.md`.
 

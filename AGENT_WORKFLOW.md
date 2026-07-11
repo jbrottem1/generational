@@ -57,6 +57,7 @@ Agent 1 also acts as the reviewer for changes to shared files (see §2.3).
 | **Agent 19** | **Provider runtime only:** `services/provider_runtime/` · `PROVIDER_INTEGRATION.md` · `tests/test_provider_runtime.py` |
 | **Agent 21** | **Workflow executor only:** `services/workflow_executor/` · `WORKFLOW_EXECUTOR.md` · `tests/test_workflow_executor.py` |
 | **Agent 24** | **Executive intelligence only:** `engines/executive.py` · `services/executive/` · `EXECUTIVE_ENGINE.md` · `EXECUTIVE_OPERATING_MODEL.md` · `tests/test_executive_engine.py` |
+| **Agent 25** | **Retention & episode design only:** `engines/episode_design.py` · `services/episode_design/` · `EPISODE_DESIGN_ENGINE.md` · `EPISODE_PLAYBOOK.md` · `tests/test_episode_design_engine.py` |
 | **Agents 13-18, 20** | Planned / landed elsewhere — claim ownership rows here **before** writing code; reserved engine keys and integration seams are listed in `AGENT_REGISTRY.md` |
 | **Agent 11** | **Trend/market-intelligence files only:** `engines/trend_forecasting.py` · `engines/market_intelligence.py` · `services/trend_intelligence/` · `services/market_intelligence/` · `tests/test_trend_forecasting.py` · `tests/test_market_intelligence.py` · `TREND_INTELLIGENCE.md` · `MARKET_INTELLIGENCE.md` · new drop-in provider modules under `providers/trend_sources/` (never `base.py` / `_demo.py` / Agent 1's existing providers) |
 

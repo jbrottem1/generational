@@ -152,6 +152,20 @@ feedback hook. Never generates media or mutates other agents' slots.
 - **Modules:** `engines/ai_director.py`, `services/ai_director/`
 - **See:** `AI_DIRECTOR.md`
 
+### Agent 25: Retention & Episode Design — LANDED
+
+Director of educational episode rhythm. Reviews completed scripts before
+production and designs how lessons engage, retain, and teach: 7-beat lesson
+blueprints, 7-dimension retention reviews, series continuity, and the
+Generational Episode Playbook. Does not animate or render. Writes only
+`episode_design_package`. Runs as the first distribution stage before AI
+Director. **Numbering note:** mission brief requested Agent 24; registry
+assigns 25 because Agent 24 is Executive Intelligence.
+
+- **Owns:** lesson blueprints, retention scoring, series design, episode playbook, educational pacing
+- **Modules:** `engines/episode_design.py`, `services/episode_design/`
+- **See:** `EPISODE_DESIGN_ENGINE.md`, `EPISODE_PLAYBOOK.md`
+
 ### Agent 17: Post-Production & Intelligent Editing Engine — LANDED (mock providers)
 
 The editing department. Consumes completed render packages (timeline, caption
@@ -267,6 +281,7 @@ zones, contract stubs, and orchestrator stages already wired (see
 | Agent 21 | End-to-End Workflow Executor — **LANDED** | `services/workflow_executor/` | service layer (not a stage) |
 | Agent 23 | Autonomous Production Executor — **LANDED** | `services/autonomous_production/` | service layer (not a stage) |
 | Agent 24 | Executive Intelligence — **LANDED** | `engines/executive.py` + `services/executive/` | `executive` (manual/hook; not distribution) |
+| Agent 25 | Retention & Episode Design — **LANDED** | `engines/episode_design.py` + `services/episode_design/` | `episode_design` |
 
 Future engines subclass `ContractEngine` (`engines/contracts.py`) and fill
 their slot in the canonical `ContentPackage` (`DATA_CONTRACTS.md`). Their

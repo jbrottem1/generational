@@ -40,11 +40,15 @@ POST_PRODUCTION_LIVE = {"post_production"}
 # Agent 24 — the Executive Intelligence Engine is live.
 EXECUTIVE_LIVE = {"autonomous_executive"}
 
+# Agent 25 — the Retention & Episode Design Engine is live.
+# NOTE: Mission brief said Agent 24; registry assigns 25 because 24 is Executive Intelligence.
+EPISODE_DESIGN_LIVE = {"episode_design"}
+
 LIVE_KEYS = (
     INTELLIGENCE_LIVE | PRODUCTION_LIVE | RENDER_LIVE
     | OPTIMIZATION_LIVE | PUBLISHING_LIVE | ANALYTICS_LIVE
     | ASSET_GENERATION_LIVE | CREATIVE_STUDIO_LIVE | POST_PRODUCTION_LIVE
-    | EXECUTIVE_LIVE
+    | EXECUTIVE_LIVE | EPISODE_DESIGN_LIVE
 )
 
 PLANNED_KEYS = {

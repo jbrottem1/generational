@@ -46,12 +46,13 @@ STAGE_GROUPS: "dict[str, list[str]]" = {
     "visual": ["visual_intelligence"],
     "audio": ["voice_audio"],
     "quality": ["quality"],
-    # Post-quality media generation & distribution (Agents 6-18).
-    # Ownership: ai_director → Agent 18 · creative → Agent 12 ·
-    # character_universe → Agent 15 · asset_generation → Agent 14 ·
-    # animation → Agent 16 · render → Agent 6 · post_production → Agent 17 ·
-    # seo → Agent 8 · optimization → Agent 13 · publish → Agent 7 ·
-    # analytics/learning → Agent 10 · brand → Agent 10.
+    # Post-quality media generation & distribution (Agents 6-18, 25).
+    # Ownership: episode_design → Agent 25 · ai_director → Agent 18 ·
+    # creative → Agent 12 · character_universe → Agent 15 ·
+    # asset_generation → Agent 14 · animation → Agent 16 · render → Agent 6 ·
+    # post_production → Agent 17 · seo → Agent 8 · optimization → Agent 13 ·
+    # publish → Agent 7 · analytics/learning → Agent 10 · brand → Agent 10.
+    "episode_design": ["episode_design"],
     "ai_director": ["ai_director"],
     "creative": ["creative_studio"],
     "character_universe": ["character_universe"],
@@ -76,6 +77,7 @@ STAGE_GROUPS: "dict[str, list[str]]" = {
 # Unavailable engines skip with warnings — never a crash. Agents 13/15/16
 # are FutureEngine stubs until their feature branches merge.
 DISTRIBUTION_STAGES: "tuple[str, ...]" = (
+    "episode_design",
     "ai_director",
     "creative",
     "character_universe",

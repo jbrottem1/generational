@@ -43,6 +43,8 @@ Packaging                  LIVE      ContentPackage assembly
   DISTRIBUTION STAGES (services/orchestrator/stages.py)
 ────────────────────────────────────────────────────────────
    ↓
+Episode Design             LIVE      Agent 25 — episode_design
+   ↓                                 → episode_design_package
 AI Director                LIVE      Agent 18 — ai_director
    ↓                                 → director_package
 Creative Studio            LIVE      Agent 12 — creative_studio
@@ -102,6 +104,7 @@ stub) graduates later as an audio-stage upgrade — not a distribution stage.
 | refinement | ranking…threat_detection | live | shared |
 | quality | quality | live | shared (gate) |
 | production | scene_planning…publishing_queue | live | Agent 9 |
+| episode_design | episode_design | live | **Agent 25** |
 | ai_director | ai_director | live | **Agent 18** |
 | creative | creative_studio | live | **Agent 12** |
 | character_universe | character_universe | stub | **Agent 15** |
