@@ -3,8 +3,9 @@
 **Status:** ACTIVE foundation  
 **Series:** Dash Science (`SERIES-DASH-SCIENCE`)  
 **Mascot:** Dash (`CHAR-DASH`) v1.0.0 LOCKED  
-**Parent:** PROJECT GENERATIONAL VISUAL UNIVERSE  
+**Parent:** PROJECT GENERATIONAL VISUAL UNIVERSE · **Motion home:** PROJECT GENERATIONAL ANIMATION STUDIO  
 **Established:** 2026-07-10  
+**Animation Director:** Agent 16  
 
 This is the beginning of an expandable faceless animation brand — not a one-off video.
 

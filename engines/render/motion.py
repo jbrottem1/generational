@@ -26,13 +26,19 @@ MOTION_EFFECTS = (
 )
 
 # Free-form camera/zoom planning language → motion effect (substring match,
-# most specific first).
+# most specific first). Prefer cinematic verbs over ken_burns.
 _LANGUAGE_MAP = (
     ("whip", "whip_pan"),
     ("push-in", "cinematic_push_in"),
     ("push in", "cinematic_push_in"),
+    ("push_in", "cinematic_push_in"),
     ("punch", "quick_punch_in"),
     ("handheld", "handheld_drift"),
+    ("orbit", "handheld_drift"),
+    ("parallax", "pan_right"),
+    ("tracking", "pan_right"),
+    ("reveal", "cinematic_push_in"),
+    ("crane", "slow_zoom_out"),
     ("drift", "handheld_drift"),
     ("pan left", "pan_left"),
     ("pan right", "pan_right"),
@@ -49,13 +55,16 @@ _LANGUAGE_MAP = (
 
 def _effect_for(scene: dict) -> str:
     text = " ".join(
-        str(scene.get(key, "")) for key in ("camera_motion", "zoom", "motion_recommendation")
+        str(scene.get(key, ""))
+        for key in ("camera_motion", "camera_preset", "zoom", "motion_recommendation", "camera")
     ).lower()
     for fragment, effect in _LANGUAGE_MAP:
         if fragment in text:
             return effect
-    # Still images always get at least a ken burns move; video can hold.
-    return "ken_burns" if scene.get("asset_type", "ai_image") == "ai_image" else "static"
+    # Prefer push-in over ken_burns for stills — ken_burns is legacy slideshow default
+    if scene.get("asset_type", "ai_image") == "ai_image":
+        return "cinematic_push_in"
+    return "static"
 
 
 def _zoom_range_for(effect: str, intensity: int) -> "tuple[float, float]":

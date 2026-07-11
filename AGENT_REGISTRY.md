@@ -45,7 +45,7 @@ Companions: `ENGINE_REGISTRY.md` · `SYSTEM_DEPENDENCY_MAP.md` ·
 |---|---|---|---|
 | **14** | Universal Asset Generation | asset_generation | **LIVE** |
 | **15** | Character, Universe & IP | character_universe | **Visual Universe active** (worktree → merge plan GVU-005) |
-| **16** | Animation & Cinematics | animation | **Visual Universe active** (worktree → merge plan GVU-006) |
+| **16** | Animation & Cinematics → **Animation Director** | animation | **Animation Studio OWNER** (see `GENERATIONAL_ANIMATION_STUDIO.md`) |
 | **17** | Post-Production & Intelligent Editing | post_production | **LIVE** |
 
 ---
@@ -66,6 +66,7 @@ Companions: `ENGINE_REGISTRY.md` · `SYSTEM_DEPENDENCY_MAP.md` ·
 | Agent | Subsystem | Reserved key | Integrates via |
 |---|---|---|---|
 | **22** | Autonomous Executive | `autonomous_executive` | `OrchestratorHook` + job queue only |
+| **24** | Audience Engagement & Learning Science Director (AELS) | `engagement` | `AGENT_AELS.md` · Echoer reviews each cycle |
 
 ### Agent 20 — Studio UI & Creative Workspace (LIVE)
 
@@ -111,13 +112,14 @@ Reserved for future BI: `business_intelligence` engine key.
 | Production | Plans → finished, published media | 6–9 |
 | Intelligence | Measure, forecast, learn, experiment | 10–13 |
 | Media Generation | Assets, render, post | 14, 17 |
-| **Creative Department (Visual Universe)** | Visual identity, world building, characters, animation language, brand consistency — see `GENERATIONAL_VISUAL_UNIVERSE.md` | **4, 12, 14, 15, 16, 18** (+ 3, 17 for script/QC) |
+| **Creative Department (Visual Universe)** | Visual identity, world building, characters, brand consistency — see `GENERATIONAL_VISUAL_UNIVERSE.md` | **4, 12, 14, 15, 18** (+ 3, 17) |
+| **Animation Studio** | Motion direction, storyboard, camera, env animation, motion library, animation QC — see `GENERATIONAL_ANIMATION_STUDIO.md` | **16** (Director), 15, 4, 3, 6, 14, 17 |
 | Direction | AI direction / Creative Director | **18** |
 | Interface | Studio UI, creative workspace | **20** |
 | Infrastructure | Provider integration, runtime, workflow execution | **19**, **21** |
 | Executive (PMO) | Agent 0 coordination; Agent 22 planned | 0, 22 |
 
-**Program note (2026-07-10):** Agents **15** and **16** are promoted from “parked stub” to **Visual Universe active track** under Agent 1 merge review. Equal priority with production throughput.
+**Program note (2026-07-10):** Agent **16** elevated to **Animation Director** (Animation Studio department). Agent **15** remains Visual Universe / character continuity with dual-report to Animation Studio. Equal priority with production throughput.
 
 ---
 

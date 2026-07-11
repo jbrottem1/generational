@@ -105,28 +105,56 @@ class OpenAIConnector(ProductionConnector):
         prompt = str(request.payload.get("prompt") or request.payload.get("text") or "")
         if not prompt:
             return self.fail(request, "Missing image prompt")
-        model = str(request.payload.get("model") or "dall-e-3")
-        body = {
-            "model": model,
-            "prompt": prompt,
-            "n": 1,
-            "size": str(request.payload.get("size") or "1024x1024"),
-        }
-        resp = self.http("POST", "/images/generations", json_body=body, timeout_sec=request.timeout_sec)
-        if not resp.ok:
-            return self.fail(request, f"OpenAI image error: {resp.status} {resp.body}")
-        items = (resp.body or {}).get("data") or []
-        first = items[0] if items else {}
-        return self.ok(
-            request,
-            {
-                "image_url": first.get("url") or "",
-                "b64_json": first.get("b64_json") or "",
-                "prompt": prompt,
+        width = int(request.payload.get("width") or 1024)
+        height = int(request.payload.get("height") or 1024)
+        preferred = str(request.payload.get("model") or "gpt-image-1")
+        # Ignore chat/LLM model ids leaked from Studio project settings
+        if not preferred.startswith(("gpt-image", "dall-e", "chatgpt-image")):
+            preferred = "gpt-image-1"
+        models = [preferred] + [m for m in ("gpt-image-1", "dall-e-3", "dall-e-2") if m != preferred]
+        last_error = ""
+        for model in models:
+            if model.startswith("gpt-image"):
+                size = "1024x1536" if height >= width else "1536x1024"
+            elif model == "dall-e-3":
+                size = "1024x1792" if height >= width else "1792x1024"
+            else:
+                size = "1024x1024"
+            explicit = str(request.payload.get("size") or "")
+            if explicit in {"1024x1024", "1024x1536", "1536x1024", "1024x1792", "1792x1024", "256x256", "512x512"}:
+                # Only apply explicit size when compatible; vertical dall-e-3 needs 1024x1792
+                if model == "dall-e-3" and height >= width:
+                    size = "1024x1792"
+                elif model.startswith("gpt-image") and height >= width:
+                    size = "1024x1536"
+                else:
+                    size = explicit
+            body = {
                 "model": model,
-            },
-            model=model,
-        )
+                "prompt": prompt[:3900],
+                "n": 1,
+                "size": size,
+            }
+            resp = self.http("POST", "/images/generations", json_body=body, timeout_sec=request.timeout_sec)
+            if not resp.ok:
+                last_error = f"OpenAI image error ({model}/{size}): {resp.status} {resp.body}"
+                body_text = str(resp.body or "").lower()
+                if "does not exist" in body_text or "invalid" in body_text or resp.status in {400, 404}:
+                    continue
+                return self.fail(request, last_error)
+            items = (resp.body or {}).get("data") or []
+            first = items[0] if items else {}
+            return self.ok(
+                request,
+                {
+                    "image_url": first.get("url") or "",
+                    "b64_json": first.get("b64_json") or "",
+                    "prompt": prompt,
+                    "model": model,
+                },
+                model=model,
+            )
+        return self.fail(request, last_error or "OpenAI image failed for all models")
 
     def _health_probe(self):
         return self.http("GET", "/models", timeout_sec=15.0, retries=0)

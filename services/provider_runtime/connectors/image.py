@@ -15,32 +15,67 @@ class OpenAIImagesConnector(ProductionConnector):
     capabilities = (cap.IMAGE_GENERATION, cap.THUMBNAIL)
     profile = ProviderProfile(quality=90, cost_per_unit=0.04, speed=70, consistency=88, latency_ms=8000)
 
+    _MODEL_CHAIN = ("gpt-image-1", "dall-e-3", "dall-e-2")
+
+    @staticmethod
+    def _is_image_model(model: str) -> bool:
+        m = (model or "").lower()
+        return m.startswith(("gpt-image", "dall-e", "chatgpt-image"))
+
+    @staticmethod
+    def _size_for(model: str, width: int, height: int, explicit: str = "") -> str:
+        vertical = height >= width
+        if model.startswith("gpt-image"):
+            return "1024x1536" if vertical else "1536x1024"
+        if model == "dall-e-3":
+            return "1024x1792" if vertical else "1792x1024"
+        # dall-e-2 and unknowns
+        if explicit in {"256x256", "512x512", "1024x1024"}:
+            return explicit
+        return "1024x1024"
+
     def _execute_impl(self, request: ProviderRequest) -> ProviderResponse:
         prompt = str(request.payload.get("prompt") or request.payload.get("title") or "")
         if not prompt:
             return self.fail(request, "Missing image prompt")
-        model = self.resolved_model(request, "dall-e-3")
-        body = {
-            "model": model,
-            "prompt": prompt,
-            "n": 1,
-            "size": str(request.payload.get("size") or "1024x1024"),
-        }
-        resp = self.http("POST", "/images/generations", json_body=body, timeout_sec=request.timeout_sec)
-        if not resp.ok:
-            return self.fail(request, f"OpenAI Images error: {resp.status} {resp.body}")
-        items = (resp.body or {}).get("data") or []
-        first = items[0] if items else {}
-        return self.ok(
-            request,
-            {
-                "image_url": first.get("url") or "",
-                "b64_json": first.get("b64_json") or "",
-                "prompt": prompt,
+        width = int(request.payload.get("width") or 1024)
+        height = int(request.payload.get("height") or 1024)
+        explicit_size = str(request.payload.get("size") or "")
+        preferred = self.resolved_model(request, "gpt-image-1")
+        if not self._is_image_model(preferred):
+            preferred = "gpt-image-1"
+        models = [preferred] + [m for m in self._MODEL_CHAIN if m != preferred]
+        last_error = ""
+        for model in models:
+            size = self._size_for(model, width, height, explicit_size)
+            body = {
                 "model": model,
-            },
-            model=model,
-        )
+                "prompt": prompt[:3900],
+                "n": 1,
+                "size": size,
+            }
+            # gpt-image models may require response_format differently; keep minimal body
+            resp = self.http("POST", "/images/generations", json_body=body, timeout_sec=request.timeout_sec)
+            if not resp.ok:
+                last_error = f"OpenAI Images error ({model}/{size}): {resp.status} {resp.body}"
+                body_text = str(resp.body or "").lower()
+                if "does not exist" in body_text or "invalid" in body_text or resp.status in {400, 404}:
+                    continue
+                return self.fail(request, last_error)
+            items = (resp.body or {}).get("data") or []
+            first = items[0] if items else {}
+            return self.ok(
+                request,
+                {
+                    "image_url": first.get("url") or "",
+                    "b64_json": first.get("b64_json") or "",
+                    "prompt": prompt,
+                    "model": model,
+                    "size": size,
+                },
+                model=model,
+            )
+        return self.fail(request, last_error or "OpenAI Images failed for all models")
 
     def _health_probe(self):
         return self.http("GET", "/models", timeout_sec=15.0, retries=0)

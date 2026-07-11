@@ -169,50 +169,20 @@ def _run_stage(
 
 
 def _scenes_from_script(asset: dict) -> list[dict]:
-    """Build Director-compatible scenes from video_script segments."""
-    vs = asset.get("video_script") if isinstance(asset.get("video_script"), dict) else {}
-    segments = vs.get("segments") or []
-    scenes = []
-    for index, seg in enumerate(segments):
-        if not isinstance(seg, dict):
-            continue
-        start = float(seg.get("start_time") or 0)
-        end = float(seg.get("end_time") or start)
-        duration = max(0.5, end - start)
-        purpose = str(seg.get("segment_type") or "story_beat")
-        narration = str(seg.get("voiceover") or "")
-        visual = (
-            f"{purpose.replace('_', ' ').title()} visual: {narration[:120]}"
-            if narration
-            else f"Scene {index + 1} visual for {asset.get('title') or 'video'}"
-        )
-        scenes.append(
-            {
-                "scene_number": index + 1,
-                "purpose": purpose if purpose != "cta" else "cta",
-                "emotion": seg.get("emotion") or "",
-                "length_sec": duration,
-                "narration": narration,
-                "visual_description": visual,
-                "camera_motion": "subtle push" if index == 0 else "static",
-                "zoom": "punch-in" if index == 0 else "",
-                "motion_intensity": 70 if index == 0 else 45,
-                "transition_in": "none" if index == 0 else "cut",
-                "transition_out": "hard cut",
-                "asset_type": "ai_image",
-                "ai_image_prompt": visual,
-                "ai_video_prompt": f"Cinematic motion: {visual}",
-                "stock_footage_query": "",
-                "text_overlay": narration.split()[:4] and " ".join(narration.split()[:4]) or "",
-                "overlay": "",
-                "caption_placement": "bottom third, safe zone",
-                "caption_timing": {"start_sec": start, "end_sec": end},
-                "caption_emphasis": [],
-                "sound_effect": "whoosh" if index > 0 else "bass hit",
-                "sfx_timing": {"cue": "whoosh" if index > 0 else "bass hit", "at_sec": start},
-            }
-        )
-    return scenes
+    """Build cinematic Visual Story Plans from the asset script.
+
+    Delegates to ``services.visual.story_plan`` so every beat gets media type,
+    camera motion, overlays, and production-ready AI prompts — not narration
+    truncation.
+    """
+    niche = str(
+        asset.get("niche")
+        or (asset.get("project") or {}).get("niche")
+        or "science"
+    )
+    from services.asset_production.visual_story import build_visual_story_plans
+
+    return build_visual_story_plans(asset, niche=niche)
 
 
 def _build_srt(scenes: list, voice_timing: dict | None = None) -> str:
@@ -331,27 +301,36 @@ def run_asset_production(
 
     # ---- scenes ----
     def stage_scenes():
-        scenes = _scenes_from_script(asset)
-        if not scenes:
-            # Fall back to visual planner
-            from services.visual.scenes import plan_scenes
+        niche = str(project.get("niche") or asset.get("niche") or "science")
+        from services.asset_production.storyboard import (
+            attach_storyboard_to_scenes,
+            build_storyboard_package,
+        )
+        from services.asset_production.visual_story import build_visual_story_plans
 
-            planned = plan_scenes(asset) or []
-            scenes = []
-            for item in planned:
-                if hasattr(item, "to_dict"):
-                    scenes.append(item.to_dict())
-                elif isinstance(item, dict):
-                    scenes.append(item)
+        scenes = build_visual_story_plans(asset, niche=niche)
         if not scenes:
             raise RuntimeError("No scenes could be built from script")
+        # Animation Studio: storyboard before treating frames as final (additive)
+        storyboard = build_storyboard_package(
+            scenes,
+            title=str(asset.get("title") or project.get("name") or ""),
+            character_id=str(asset.get("character_id") or "CHAR-DASH"),
+            series_id=str(asset.get("series_id") or "SERIES-DASH-SCIENCE"),
+        )
+        scenes = attach_storyboard_to_scenes(scenes, storyboard)
         visual_package = dict(asset.get("visual_package") or {})
         visual_package["scenes"] = scenes
+        visual_package["visual_story_plans"] = [s.get("visual_story_plan") for s in scenes]
+        visual_package["storyboard_package"] = storyboard
         path = art.write_json(asset_id, "scenes.json", scenes)
+        story_path = art.write_json(asset_id, "visual_story_plans.json", visual_package["visual_story_plans"])
+        board_path = art.write_json(asset_id, "storyboard_package.json", storyboard)
         return {
             "scene_breakdown": scenes,
             "visual_package": visual_package,
-        }, [path]
+            "storyboard_package": storyboard,
+        }, [path, story_path, board_path]
 
     if _should_run("scenes"):
         if not _run_stage(asset, "scenes", stage_scenes, on_progress=on_progress):
@@ -376,30 +355,73 @@ def run_asset_production(
         image_prompts = []
         video_prompts = []
         for scene in scenes:
-            prompt = str(scene.get("ai_image_prompt") or scene.get("visual_description") or asset.get("title") or "cinematic still")
+            prompt = str(
+                scene.get("ai_image_prompt")
+                or scene.get("visual_description")
+                or asset.get("title")
+                or "cinematic still"
+            )
+            # Optionally enrich with dialect formatters when import graph allows
+            try:
+                from services.visual.prompts import build_image_prompts, build_video_prompts
+
+                niche = str(project.get("niche") or asset.get("niche") or "science")
+                image_sets = build_image_prompts(
+                    [scene],
+                    niche="Science" if niche.lower() == "science" else niche,
+                    aspect_ratio="9:16",
+                )
+                if image_sets:
+                    dialects = (image_sets[0].get("prompts") or {})
+                    dialect_prompt = str(
+                        dialects.get("openai_images")
+                        or dialects.get("dalle")
+                        or dialects.get("flux")
+                        or ""
+                    )
+                    if dialect_prompt and len(prompt) < 200:
+                        prompt = f"{dialect_prompt}. {prompt}"
+                video_sets = build_video_prompts(
+                    [scene],
+                    niche="Science" if niche.lower() == "science" else niche,
+                    aspect_ratio="9:16",
+                )
+                vprompt = str(scene.get("ai_video_prompt") or f"Cinematic motion: {prompt}")
+                if video_sets:
+                    vdialects = (video_sets[0].get("prompts") or {})
+                    vprompt = str(vdialects.get("runway") or vdialects.get("luma") or vprompt)
+            except Exception:  # noqa: BLE001
+                vprompt = str(scene.get("ai_video_prompt") or f"Cinematic motion: {prompt}")
             image_prompts.append(
                 {
                     "scene_number": scene.get("scene_number"),
                     "prompt": prompt,
                     "aspect_ratio": "9:16",
+                    "media_type": scene.get("media_type"),
+                    "camera_motion": scene.get("camera_motion"),
+                    "on_screen_text": scene.get("on_screen_text") or scene.get("text_overlay"),
                 }
             )
             video_prompts.append(
                 {
                     "scene_number": scene.get("scene_number"),
-                    "prompt": str(scene.get("ai_video_prompt") or f"Cinematic motion: {prompt}"),
+                    "prompt": vprompt,
                     "duration_sec": scene.get("length_sec"),
                 }
             )
+            scene["ai_image_prompt"] = prompt
+            scene["ai_video_prompt"] = vprompt
         flat = [item["prompt"] for item in image_prompts]
         payload = {"image_prompts": image_prompts, "video_prompts": video_prompts}
         path = art.write_json(asset_id, "visual_prompts.json", payload)
         visual_package = dict(asset.get("visual_package") or {})
         visual_package["image_prompts"] = image_prompts
         visual_package["video_prompts"] = video_prompts
+        visual_package["scenes"] = scenes
         return {
             "visual_prompts": flat,
             "visual_package": visual_package,
+            "scene_breakdown": scenes,
         }, [path]
 
     if _should_run("visual_prompts"):
@@ -409,33 +431,85 @@ def run_asset_production(
     # ---- images ----
     def stage_images():
         from services.provider_runtime.engine_api import runtime_generate_image
+        from services.asset_production.cinematic_fallback import generate_cinematic_fallback_still
 
         generated = []
         prompts = (asset.get("visual_package") or {}).get("image_prompts") or []
-        targets = scenes[:max_images]
+        # Generate one still per scene (cap by max_images but prefer full coverage)
+        targets = scenes[: max(max_images, len(scenes))]
         for index, scene in enumerate(targets):
             prompt = ""
             if index < len(prompts):
                 item = prompts[index]
                 prompt = item.get("prompt") if isinstance(item, dict) else str(item)
             prompt = prompt or scene.get("ai_image_prompt") or scene.get("visual_description") or asset.get("title") or "cinematic still"
-            result = runtime_generate_image(prompt, {"width": 1080, "height": 1920})
-            if result.get("path") and not str(result.get("path")).startswith(("mock://", "runtime://")):
+            result = None
+            for attempt in range(2):
+                result = runtime_generate_image(
+                    prompt,
+                    {
+                        "width": 1080,
+                        "height": 1920,
+                        "model": "gpt-image-1",
+                    },
+                )
+                if result.get("path") and not result.get("placeholder") and not str(result.get("path")).startswith(("mock://", "runtime://")):
+                    break
+                if attempt == 0:
+                    _emit(on_progress, asset, "images", f"Retrying image for scene {index + 1}")
+            # Persist / copy real files
+            if result and result.get("path") and not str(result.get("path")).startswith(("mock://", "runtime://")):
                 copied = art.copy_into(asset_id, str(result["path"]), f"image_{index + 1:02d}.png")
                 if copied:
-                    result = {**result, "path": copied, "local_path": copied}
-            generated.append({**result, "scene_number": scene.get("scene_number", index + 1), "prompt": prompt})
+                    result = {**result, "path": copied, "local_path": copied, "placeholder": False}
+            # Hierarchy fallback: cinematic still (real PNG) — never leave empty
+            path_ok = bool(
+                result
+                and result.get("path")
+                and not result.get("placeholder")
+                and not str(result.get("path")).startswith(("mock://", "runtime://"))
+                and Path(str(result["path"])).exists()
+            )
+            if not path_ok:
+                fallback_path = art.production_dir(asset_id) / f"image_{index + 1:02d}_fallback.png"
+                fallback = generate_cinematic_fallback_still(
+                    output_path=fallback_path,
+                    title=str(asset.get("title") or "Science"),
+                    overlay=str(scene.get("on_screen_text") or scene.get("text_overlay") or asset.get("title") or f"Scene {index + 1}"),
+                    scene_number=int(scene.get("scene_number") or index + 1),
+                    seed=f"{asset_id}-{index}-{prompt[:40]}",
+                )
+                if fallback.get("path") and not fallback.get("placeholder"):
+                    result = {
+                        **(result or {}),
+                        **fallback,
+                        "prompt": prompt,
+                        "fallback_from": (result or {}).get("error") or "ai_image_unavailable",
+                    }
+                    _emit(on_progress, asset, "images", f"Cinematic fallback still for scene {index + 1}")
+                else:
+                    raise RuntimeError(
+                        f"Image generation failed for scene {index + 1} and cinematic fallback unavailable: "
+                        f"{(result or {}).get('error') or (fallback or {}).get('error') or 'unknown'}"
+                    )
+            generated.append({**(result or {}), "scene_number": scene.get("scene_number", index + 1), "prompt": prompt})
             scene["resolved_asset"] = generated[-1]
-        # Attach resolved assets onto visual package scenes
         for scene in scenes:
             for g in generated:
                 if g.get("scene_number") == scene.get("scene_number"):
                     scene["resolved_asset"] = g
         path = art.write_json(asset_id, "images.json", generated)
-        real = [g for g in generated if g.get("path") and not g.get("placeholder")]
-        if not real and generated:
-            # Still mark completed with placeholders — FFmpeg can use color bed
-            pass
+        real = [
+            g
+            for g in generated
+            if g.get("path")
+            and not g.get("placeholder")
+            and not str(g.get("path")).startswith(("mock://", "runtime://"))
+        ]
+        if len(real) < max(1, len(targets) // 2):
+            raise RuntimeError(
+                f"Insufficient real visuals: {len(real)}/{len(targets)} scenes have files — refusing empty production"
+            )
         visual_package = dict(asset.get("visual_package") or {})
         visual_package["scenes"] = scenes
         return {
@@ -443,7 +517,7 @@ def run_asset_production(
             "render_assets": {"assets": generated, "missing_assets": [], "warnings": [], "requests": []},
             "visual_package": visual_package,
             "scene_breakdown": scenes,
-        }, [path] + [g["path"] for g in generated if g.get("path") and not str(g["path"]).startswith(("mock://", "runtime://"))]
+        }, [path] + [g["path"] for g in real]
 
     if _should_run("images"):
         if not _run_stage(asset, "images", stage_images, on_progress=on_progress, max_retries=1):
@@ -638,6 +712,9 @@ def run_asset_production(
 
         generated = [g for g in (asset.get("generated_images") or []) if isinstance(g, dict)]
         scene_render_plan = SceneRenderer().build(scenes, generated, audio_package.get("scene_cues", []) if isinstance(audio_package.get("scene_cues"), list) else [])
+        motion_by_scene = {
+            int(m.get("scene_id") or 0): m for m in motion_plan if isinstance(m, dict)
+        }
         for plan in scene_render_plan:
             if not isinstance(plan, dict):
                 continue
@@ -646,6 +723,18 @@ def run_asset_production(
                     continue
                 if scene.get("scene_number") == plan.get("scene_id") and isinstance(scene.get("resolved_asset"), dict):
                     plan["resolved_asset"] = scene["resolved_asset"]
+                    plan["duration_sec"] = float(scene.get("length_sec") or plan.get("duration_sec") or 3)
+                    plan["length_sec"] = plan["duration_sec"]
+            sid = int(plan.get("scene_id") or 0)
+            if sid in motion_by_scene:
+                plan["effect"] = motion_by_scene[sid]
+            elif not plan.get("effect"):
+                plan["effect"] = {
+                    "effect": "ken_burns",
+                    "zoom": {"start_scale": 1.0, "end_scale": 1.08},
+                    "pan": {"direction": "none", "amount_pct": 0},
+                    "duration_sec": float(plan.get("duration_sec") or 3),
+                }
 
         validation = RenderValidator().validate(
             scenes=scenes,
@@ -666,9 +755,14 @@ def run_asset_production(
             scene_render_plan=scene_render_plan,
             audio_mix_plan=audio_mix_plan,
             output_format=fmt,
+            allow_color_bed=False,
         )
         if not assembly.get("ok"):
             raise RuntimeError(assembly.get("error") or "FFmpeg assembly failed")
+        if int(assembly.get("visual_count") or 0) < 1:
+            raise RuntimeError("Assembly produced no visuals — refusing empty render")
+        if assembly.get("color_bed") or any("color_bed" in str(x) for x in (assembly.get("log") or [])):
+            raise RuntimeError("Color-bed render rejected — cinematic visuals required")
 
         mp4_path = assembly.get("output_path") or out_rel
         write_assembly_sidecar(assembly, mp4_path)
@@ -687,6 +781,7 @@ def run_asset_production(
             "mock": False,
             "assembly": assembly,
             "output_format": fmt,
+            "visual_count": int(assembly.get("visual_count") or 0),
         }
         render_package = OutputPackager().package(
             title=str(asset.get("title") or "Untitled"),
@@ -718,6 +813,7 @@ def run_asset_production(
             {"unified_packages": [asset]},
         )
         render = asset.get("render_package") or {}
+        assembly = (render.get("assembly") if isinstance(render.get("assembly"), dict) else {}) or {}
         checks = list(qc.get("checks") or [])
         if render.get("mock"):
             checks.append({"name": "real_mp4", "ok": False, "detail": "mock render", "level": "error"})
@@ -734,13 +830,85 @@ def run_asset_production(
             "detail": voice.get("path") or "missing",
             "level": "error" if voice.get("placeholder") else "info",
         })
+        images = [g for g in (asset.get("generated_images") or []) if isinstance(g, dict)]
+        real_images = [
+            g
+            for g in images
+            if g.get("path")
+            and not g.get("placeholder")
+            and not str(g.get("path")).startswith(("mock://", "runtime://"))
+        ]
+        visual_count = int(assembly.get("visual_count") or render.get("visual_count") or len(real_images) or 0)
+        color_bed = bool(assembly.get("color_bed")) or any(
+            "color_bed" in str(x) for x in (assembly.get("log") or render.get("render_log") or [])
+        )
+        checks.append({
+            "name": "cinematic_visuals",
+            "ok": visual_count >= 1 and not color_bed and len(real_images) >= 1,
+            "detail": f"visual_count={visual_count} real_images={len(real_images)} color_bed={color_bed}",
+            "level": "error",
+        })
+        checks.append({
+            "name": "no_placeholder_images",
+            "ok": all(not g.get("placeholder") for g in images) if images else False,
+            "detail": f"placeholders={sum(1 for g in images if g.get('placeholder'))}",
+            "level": "error",
+        })
+        # Narration without supporting visuals
+        scenes_local = list(asset.get("scene_breakdown") or [])
+        unsupported = [
+            s.get("scene_number")
+            for s in scenes_local
+            if isinstance(s, dict)
+            and str(s.get("narration") or "").strip()
+            and not (
+                isinstance(s.get("resolved_asset"), dict)
+                and s["resolved_asset"].get("path")
+                and not s["resolved_asset"].get("placeholder")
+            )
+        ]
+        checks.append({
+            "name": "narration_supported_by_visuals",
+            "ok": not unsupported,
+            "detail": f"unsupported_scenes={unsupported}" if unsupported else "all scenes supported",
+            "level": "error",
+        })
+        # Animation Studio QC gate (additive — rejects slideshow / lifeless motion)
+        from services.asset_production.animation_qc import run_animation_qc
+        from services.asset_production.storyboard import (
+            attach_storyboard_to_scenes,
+            build_storyboard_package,
+        )
+
+        if not asset.get("storyboard_package") and scenes_local:
+            storyboard = build_storyboard_package(
+                scenes_local,
+                title=str(asset.get("title") or ""),
+                character_id=str(asset.get("character_id") or "CHAR-DASH"),
+            )
+            asset["storyboard_package"] = storyboard
+            asset["scene_breakdown"] = attach_storyboard_to_scenes(scenes_local, storyboard)
+            art.write_json(asset_id, "storyboard_package.json", storyboard)
+
+        anim_qc = run_animation_qc(asset)
+        for c in anim_qc.get("checks") or []:
+            checks.append({**c, "gate": "animation_qc"})
+        qc["animation_qc"] = anim_qc
         qc["checks"] = checks
         if any(c.get("level") == "error" and not c.get("ok") for c in checks):
             qc["passed"] = False
+            qc["errors"] = [
+                f"{c['name']}: {c.get('detail')}"
+                for c in checks
+                if c.get("level") == "error" and not c.get("ok")
+            ]
+        if not anim_qc.get("passed"):
+            qc["passed"] = False
+            qc["errors"] = list(qc.get("errors") or []) + list(anim_qc.get("errors") or [])
         path = art.write_json(asset_id, "production_report.json", qc)
         if not qc.get("passed"):
             raise RuntimeError("Quality control failed: " + "; ".join(qc.get("errors") or ["see production_report.json"]))
-        return {"production_qc": qc}, [path]
+        return {"production_qc": qc, "animation_qc": anim_qc}, [path]
 
     if _should_run("quality"):
         if not _run_stage(asset, "quality", stage_quality, on_progress=on_progress):

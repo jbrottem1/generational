@@ -7,7 +7,9 @@
 **Creative Director (accountable):** Agent 18 — AI Director  
 **Charter owner:** Executive Office  
 
-Companions: `EXECUTIVE_OS.md` · `AGENT_REGISTRY.md` · `CREATIVE_STUDIO.md` · cinematic visual upgrades in `services/asset_production/`
+Companions: `EXECUTIVE_OS.md` · `AGENT_REGISTRY.md` · `CREATIVE_STUDIO.md` · `GENERATIONAL_ANIMATION_STUDIO.md` · cinematic visual upgrades in `services/asset_production/`
+
+**Motion ownership:** Animation Studio (Agent 16) directs motion; this charter owns visual identity / worlds / IP continuity.
 
 ---
 
