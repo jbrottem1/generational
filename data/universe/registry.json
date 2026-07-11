@@ -1,0 +1,69 @@
+{
+  "version": 2,
+  "universe_name": "Generational Visual Universe",
+  "style_bible": "STYLE_BIBLE.md",
+  "style_tokens": "style_tokens.json",
+  "flagship_series": "SERIES-DASH-SCIENCE",
+  "flagship_character": "CHAR-DASH",
+  "charter_dash": "DASH_STICK_FIGURE_UNIVERSE.md",
+  "characters": [
+    {
+      "id": "CHAR-DASH",
+      "name": "Dash",
+      "version": "1.0.0",
+      "status": "locked",
+      "path": "characters/CHAR-DASH/",
+      "series": ["SERIES-DASH-SCIENCE"],
+      "role": "flagship_stick_figure_host"
+    }
+  ],
+  "environments": [
+    {"id": "ENV-DASH-OCEAN-FLOOR", "name": "Ocean Floor Glow Field", "palette": "ocean", "used_in": ["dash_ocean_glow_001"]},
+    {"id": "ENV-DASH-BODY-LAB", "name": "Body Diagram Lab Space", "palette": "lab", "used_in": ["dash_body_replace_001"]},
+    {"id": "ENV-DASH-NIGHT-MEADOW", "name": "Night Meadow Firefly Field", "palette": "science_core", "used_in": ["dash_fireflies_001"]}
+  ],
+  "props": [
+    {"id": "PROP-MAGNIFIER", "name": "Magnifying Glass"},
+    {"id": "PROP-FLASHLIGHT", "name": "Flashlight"},
+    {"id": "PROP-MICROSCOPE", "name": "Microscope"},
+    {"id": "PROP-FACT-CARD", "name": "Throwable Fact Card"},
+    {"id": "PROP-SIGNAL-FLAG", "name": "Signal Flag"},
+    {"id": "PROP-CLOCK", "name": "Teach Clock"}
+  ],
+  "effects": [
+    {"id": "FX-BIO-SPARKS", "name": "Bioluminescent Sparks"},
+    {"id": "FX-CELL-FLAKES", "name": "Cell Shed Particles"},
+    {"id": "FX-FIREFLY-TRAILS", "name": "Firefly Light Trails"},
+    {"id": "FX-DOOR-GLOW", "name": "Glow Door Transition"}
+  ],
+  "animations": [
+    {"id": "ANIM-DASH-V1", "path": "animation/", "component_count": 23, "status": "v1_locked"}
+  ],
+  "series": [
+    {
+      "id": "SERIES-DASH-SCIENCE",
+      "name": "Dash Science",
+      "path": "series/dash_science/",
+      "host": "CHAR-DASH",
+      "mock_episodes": [
+        "productions/mock_dash_ocean_glow/",
+        "productions/mock_dash_body_replace/",
+        "productions/mock_dash_fireflies/"
+      ]
+    }
+  ],
+  "scientific_objects": [
+    {"id": "SCI-PLANKTON-GLOW", "name": "Glowing Plankton Field"},
+    {"id": "SCI-BODY-MAP", "name": "Simplified Body Map"},
+    {"id": "SCI-RBC-FLOW", "name": "Red Blood Cell River"},
+    {"id": "SCI-FIREFLY", "name": "Firefly Signal Unit"}
+  ],
+  "vehicles": [],
+  "planets": [],
+  "creatures": [
+    {"id": "CRT-GLOW-JELLY", "name": "Simplified Glow Jelly Silhouette"},
+    {"id": "CRT-FIREFLY", "name": "Firefly"}
+  ],
+  "architecture": [],
+  "notes": "Dash Science is the flagship faceless stick-figure brand. Character redesign requires version bump + Creative Director approval."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "point_right",
+  "loop": false,
+  "duration_sec": 0.45,
+  "hold_max_sec": 1.2,
+  "keyframes": [
+    {
+      "t": 0.0,
+      "arm": "down"
+    },
+    {
+      "t": 0.2,
+      "arm": "extend_overshoot"
+    },
+    {
+      "t": 0.45,
+      "arm": "point_settle"
+    }
+  ],
+  "notes": "Finger mitt clearly aimed; eyes look along point vector."
+}

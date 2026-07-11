@@ -1,0 +1,16 @@
+{
+  "id": "point_up",
+  "loop": false,
+  "duration_sec": 0.4,
+  "keyframes": [
+    {
+      "t": 0.0,
+      "arm": "down"
+    },
+    {
+      "t": 0.4,
+      "arm": "up_point"
+    }
+  ],
+  "notes": "Sky, labels above, floating facts."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "celebrate_jump",
+  "loop": false,
+  "duration_sec": 0.9,
+  "expression": "celebrate",
+  "keyframes": [
+    {
+      "t": 0.0,
+      "y": 0,
+      "squash": 1
+    },
+    {
+      "t": 0.25,
+      "y": 0.25,
+      "stretch": 1.08
+    },
+    {
+      "t": 0.55,
+      "y": 0,
+      "squash": 1.1
+    },
+    {
+      "t": 0.9,
+      "y": 0,
+      "squash": 1
+    }
+  ],
+  "notes": "Arms up; soft particle burst optional."
+}

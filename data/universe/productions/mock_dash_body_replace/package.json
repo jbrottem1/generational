@@ -1,0 +1,184 @@
+{
+  "episode_id": "dash_body_replace_001",
+  "series_id": "SERIES-DASH-SCIENCE",
+  "character_id": "CHAR-DASH",
+  "status": "mock_complete",
+  "duration_target_sec": 42,
+  "duration_planned_sec": 42,
+  "seo_title": "Your Body Is Constantly Replacing Itself",
+  "description": "Dash points through a simplified body map as cells and organs refresh over time. A fast educational Short on renewal — skin, blood, and why you're not the same atoms you were years ago.",
+  "hashtags": ["#DashScience", "#HumanBody", "#Biology", "#ScienceShorts", "#Cells", "#Educational", "#Shorts"],
+  "thumbnail_concept": "Dash standing beside a simplified translucent body diagram; one organ glowing as it 'swaps'; bold text: 'YOUR BODY REPLACES ITSELF'; clean lab-teal palette, 9:16.",
+  "voice_direction": "Bright classroom energy, playful disbelief on big numbers, precise on science words; humorous when Dash panics at 'you are under construction'.",
+  "music_direction": "Clean ticking pulse (metronome-like renewal), soft mallet melody; hit accents when organs swap; warm resolve at end.",
+  "scientific_notes": [
+    "Many tissues renew on different timescales (e.g., skin epidermis days–weeks; red blood cells ~120 days).",
+    "Avoid overprecise viral claims like 'new body every 7 years' as absolute — frame as continuous replacement of many parts at different rates.",
+    "Use simplified organ icons, not medical gore."
+  ],
+  "script": {
+    "hook": "Right now, your body is quietly replacing itself.",
+    "body": [
+      "Not all at once — piece by piece.",
+      "Your skin cells renew on a short cycle, shedding the old and building the new.",
+      "Red blood cells last about four months… then fresh ones take the job.",
+      "Different organs refresh on different clocks.",
+      "You're less a fixed object — and more a living construction site."
+    ],
+    "payoff": "So the 'you' watching this is already becoming the next you.",
+    "full_text": "Right now, your body is quietly replacing itself. Not all at once — piece by piece. Your skin cells renew on a short cycle, shedding the old and building the new. Red blood cells last about four months… then fresh ones take the job. Different organs refresh on different clocks. You're less a fixed object — and more a living construction site. So the 'you' watching this is already becoming the next you."
+  },
+  "scenes": [
+    {
+      "scene_id": "S1_hook",
+      "t_start": 0.0,
+      "t_end": 3.0,
+      "narration": "Right now, your body is quietly replacing itself.",
+      "background": {
+        "palette": "lab",
+        "design": "Soft teal-gray gradient, faint geometric grid, floating cell icons drifting — not flat solid."
+      },
+      "camera": "punch_in_eyes",
+      "dash_animation": ["face_audience", "shock_recoil", "talk_bob"],
+      "expression": "shock",
+      "character_movement": "Dash faces camera, recoils as a translucent body outline pops behind him.",
+      "visuals": ["body silhouette outline", "subtle swap shimmer"],
+      "image_prompt": "Dash stick figure shocked in front of simplified translucent human body outline, soft lab teal gradient, educational 2D animation, 9:16",
+      "sfx": ["pop whoosh", "soft tick"]
+    },
+    {
+      "scene_id": "S2_piecewise",
+      "t_start": 3.0,
+      "t_end": 7.0,
+      "narration": "Not all at once — piece by piece.",
+      "background": {
+        "palette": "lab",
+        "design": "Body map splits into labeled tiles that pulse out of sync."
+      },
+      "camera": "parallax_pan across tiles",
+      "dash_animation": ["walk_cycle", "point_right"],
+      "expression": "curious",
+      "character_movement": "Dash walks along the body map pointing at tiles lighting one-by-one.",
+      "visuals": ["asynchronous tile pulses", "arrows"],
+      "image_prompt": "Dash walking beside segmented simplified body diagram tiles pulsing, stick figure pointing, clean educational motion graphics background",
+      "sfx": ["tile clicks staggered"]
+    },
+    {
+      "scene_id": "S3_skin",
+      "t_start": 7.0,
+      "t_end": 14.0,
+      "narration": "Your skin cells renew on a short cycle, shedding the old and building the new.",
+      "background": {
+        "palette": "lab",
+        "design": "Cross-section skin layers as friendly geometric strata; old cells flake as particles."
+      },
+      "camera": "follow_walk + slow_push_in",
+      "dash_animation": ["climb_up", "magnify_look", "talk_bob"],
+      "expression": "excited",
+      "character_movement": "Dash climbs skin-layer diagram, uses magnifier; flakes drift past.",
+      "visuals": ["skin cross-section", "magnifier inset", "shed particles"],
+      "image_prompt": "Dash climbing simplified skin cross-section diagram with magnifying glass, cells shedding as particles, stick figure mascot educational",
+      "sfx": ["climb taps", "magnifier ting", "soft flake rustle"]
+    },
+    {
+      "scene_id": "S4_blood",
+      "t_start": 14.0,
+      "t_end": 22.0,
+      "narration": "Red blood cells last about four months… then fresh ones take the job.",
+      "background": {
+        "palette": "lab",
+        "design": "River of simplified disc cells; calendar mograph shows ~120 days."
+      },
+      "camera": "chase_handheld_energy along cell flow",
+      "dash_animation": ["run_cycle", "hold_object", "throw_fact"],
+      "expression": "panic",
+      "character_movement": "Dash runs beside blood-cell river holding a clock prop; throws fact card '~120 DAYS'.",
+      "visuals": ["RBC discs", "clock", "fact card", "handoff to new cells"],
+      "image_prompt": "Dash running beside simplified red blood cell river holding clock, fact card 120 days, playful educational stick figure animation",
+      "sfx": ["whoosh flow", "clock ticks", "card throw"]
+    },
+    {
+      "scene_id": "S5_organs",
+      "t_start": 22.0,
+      "t_end": 30.0,
+      "narration": "Different organs refresh on different clocks.",
+      "background": {
+        "palette": "lab",
+        "design": "Friendly organ icons on a vertical timeline; each swaps with a glow when Dash points."
+      },
+      "camera": "orbit_hint around organ column",
+      "dash_animation": ["point_up", "point_right", "door_open_transition"],
+      "expression": "neutral",
+      "character_movement": "Dash points organ-to-organ; opens mini-doors revealing refreshed icon versions.",
+      "visuals": ["liver/gut/skin icons simplified", "swap dissolves", "timeline ticks"],
+      "image_prompt": "Dash pointing at simplified animated organ icons replacing themselves on a timeline, clean lab gradient, stick figure host",
+      "sfx": ["swap chimes different pitches"]
+    },
+    {
+      "scene_id": "S6_construction",
+      "t_start": 30.0,
+      "t_end": 36.0,
+      "narration": "You're less a fixed object — and more a living construction site.",
+      "background": {
+        "palette": "lab",
+        "design": "Scaffolding lines over body silhouette; soft animated lighting; floating tools as metaphors (not literal surgery)."
+      },
+      "camera": "reveal_pull_back",
+      "dash_animation": ["panic_flail", "think_scratch", "talk_bob"],
+      "expression": "confused",
+      "character_movement": "Dash panics briefly at scaffolding, then thinks, then nods.",
+      "visuals": ["construction metaphor overlay", "hard-hat optional as prop NOT worn as clothing redesign — held object only"],
+      "image_prompt": "Dash beside body silhouette with friendly scaffolding metaphor overlay, holding tiny hard hat prop, stick figure educational comedy beat",
+      "sfx": ["cartoon scaffold rattle", "thinking boop"]
+    },
+    {
+      "scene_id": "S7_payoff",
+      "t_start": 36.0,
+      "t_end": 42.0,
+      "narration": "So the 'you' watching this is already becoming the next you.",
+      "background": {
+        "palette": "lab",
+        "design": "Two Dash silhouettes cross-dissolve in soft light; particle renewal field."
+      },
+      "camera": "slow_push_in",
+      "dash_animation": ["face_audience", "celebrate_jump"],
+      "expression": "celebrate",
+      "character_movement": "Dash faces audience, celebrate jump; soft CTA.",
+      "visuals": ["cross-dissolve self", "Follow Dash Science"],
+      "image_prompt": "Dash celebrating facing camera with soft renewal particle field and faint second silhouette dissolve, educational stick figure finale 9:16",
+      "sfx": ["warm resolve chime", "jump land"]
+    }
+  ],
+  "transition_plan": [
+    {"from": "S1", "to": "S2", "type": "body_outline_expand", "sec": 0.3},
+    {"from": "S2", "to": "S3", "type": "magnifier_portal", "sec": 0.4},
+    {"from": "S3", "to": "S4", "type": "whip_into_cell_flow", "sec": 0.35},
+    {"from": "S4", "to": "S5", "type": "door_open_transition", "sec": 0.5},
+    {"from": "S5", "to": "S6", "type": "scaffold_draw_on", "sec": 0.4},
+    {"from": "S6", "to": "S7", "type": "soft_dissolve", "sec": 0.45}
+  ],
+  "caption_cues": [
+    {"t": 0.0, "text": "Your body is replacing itself"},
+    {"t": 3.0, "text": "Piece by piece"},
+    {"t": 7.0, "text": "Skin renews on a short cycle"},
+    {"t": 14.0, "text": "RBCs ~ four months"},
+    {"t": 22.0, "text": "Organs run different clocks"},
+    {"t": 30.0, "text": "A living construction site"},
+    {"t": 36.0, "text": "You're already becoming next you"}
+  ],
+  "sfx_plan": [
+    "metronome tick bed",
+    "tile clicks",
+    "magnifier ting",
+    "blood-flow whoosh",
+    "organ swap chimes",
+    "scaffold rattle",
+    "resolve chime"
+  ],
+  "music_cues": [
+    {"t": 0.0, "action": "ticking pulse in"},
+    {"t": 14.0, "action": "raise energy for chase"},
+    {"t": 30.0, "action": "comic sting then soft"},
+    {"t": 36.0, "action": "warm resolve"}
+  ]
+}

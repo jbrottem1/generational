@@ -1,0 +1,37 @@
+{
+  "project": "GENERATIONAL_VISUAL_UNIVERSE",
+  "updated_at": "2026-07-11T00:05:00Z",
+  "status": "active",
+  "priority": "equal_to_production_pipeline",
+  "flagship": {
+    "series": "SERIES-DASH-SCIENCE",
+    "character": "CHAR-DASH",
+    "charter": "DASH_STICK_FIGURE_UNIVERSE.md",
+    "mock_episodes_complete": 3
+  },
+  "creative_department": {
+    "executive_owner": "agent_18",
+    "pmo": "agent_0",
+    "agents": [18, 12, 4, 14, 15, 16, 17, 3, 6]
+  },
+  "dashboards": {
+    "creative_department_progress": "dash_foundation_shipped",
+    "visual_asset_count": 23,
+    "character_library": 1,
+    "environment_library": 3,
+    "animation_library": "ANIM-DASH-V1_23_components",
+    "brand_consistency": "dash_locked",
+    "visual_quality_score": null,
+    "production_readiness": 88,
+    "asset_reuse_rate_pct": 0,
+    "mock_packages": 3
+  },
+  "milestones": {
+    "A_foundation": "complete_dash_v1",
+    "B_first_universe_pack": "in_progress_mocks_packaged",
+    "C_operating_studio": "planned",
+    "D_recognizable_brand": "long_term"
+  },
+  "active_tasks": ["DASH-RENDER-MOCKS", "GVU-001", "GVU-002", "GVU-003", "GVU-004", "GVU-005", "GVU-006"],
+  "charter": "GENERATIONAL_VISUAL_UNIVERSE.md"
+}

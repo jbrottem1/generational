@@ -1,0 +1,22 @@
+{
+  "id": "shock_recoil",
+  "loop": false,
+  "duration_sec": 0.5,
+  "expression": "shock",
+  "keyframes": [
+    {
+      "t": 0.0,
+      "lean": 0
+    },
+    {
+      "t": 0.15,
+      "lean": -0.18,
+      "eyes": "pop"
+    },
+    {
+      "t": 0.5,
+      "lean": -0.08
+    }
+  ],
+  "notes": "Pair with whoosh SFX."
+}

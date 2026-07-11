@@ -1,0 +1,23 @@
+{
+  "id": "run_cycle",
+  "loop": true,
+  "cycle_sec": 0.4,
+  "keyframes": [
+    {
+      "t": 0.0,
+      "pose": "flight",
+      "lean": 0.15
+    },
+    {
+      "t": 0.2,
+      "pose": "push",
+      "lean": 0.2
+    },
+    {
+      "t": 0.4,
+      "pose": "flight",
+      "lean": 0.15
+    }
+  ],
+  "notes": "Shorter stride, bigger arm pump; use for chase beats."
+}

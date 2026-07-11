@@ -44,8 +44,8 @@ Companions: `ENGINE_REGISTRY.md` · `SYSTEM_DEPENDENCY_MAP.md` ·
 | Agent | Subsystem | Engine keys | Status |
 |---|---|---|---|
 | **14** | Universal Asset Generation | asset_generation | **LIVE** |
-| **15** | Character, Universe & IP | character_universe | stub (worktree ready — merge pending) |
-| **16** | Animation & Cinematics | animation | stub (worktree ready — merge pending) |
+| **15** | Character, Universe & IP | character_universe | **Visual Universe active** (worktree → merge plan GVU-005) |
+| **16** | Animation & Cinematics | animation | **Visual Universe active** (worktree → merge plan GVU-006) |
 | **17** | Post-Production & Intelligent Editing | post_production | **LIVE** |
 
 ---
@@ -110,11 +110,14 @@ Reserved for future BI: `business_intelligence` engine key.
 | Foundation | Contracts, orchestration, core intelligence | 1–5 |
 | Production | Plans → finished, published media | 6–9 |
 | Intelligence | Measure, forecast, learn, experiment | 10–13 |
-| Media Generation | Assets, characters, universes, motion, edit | 14–17 |
-| Direction | AI direction, executive creative strategy | **18** |
+| Media Generation | Assets, render, post | 14, 17 |
+| **Creative Department (Visual Universe)** | Visual identity, world building, characters, animation language, brand consistency — see `GENERATIONAL_VISUAL_UNIVERSE.md` | **4, 12, 14, 15, 16, 18** (+ 3, 17 for script/QC) |
+| Direction | AI direction / Creative Director | **18** |
 | Interface | Studio UI, creative workspace | **20** |
 | Infrastructure | Provider integration, runtime, workflow execution | **19**, **21** |
-| Executive (planned) | Autonomous operation | 22 |
+| Executive (PMO) | Agent 0 coordination; Agent 22 planned | 0, 22 |
+
+**Program note (2026-07-10):** Agents **15** and **16** are promoted from “parked stub” to **Visual Universe active track** under Agent 1 merge review. Equal priority with production throughput.
 
 ---
 
