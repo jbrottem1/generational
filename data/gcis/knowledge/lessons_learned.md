@@ -220,6 +220,21 @@ Append-only. Newest first. Every entry must name the source sprint/production.
 
 ---
 
+## 2026-07-12 — Agent 28 Integration & Release Department
+
+**Source:** Executive Integration Sprint
+
+### Shipped
+- Agent 28 charter + `services/integration_release/` audit/readiness API
+- Seven deliverables: integration report, release checklist, dependency map, tech debt, performance baseline, regression plan, executive dashboard
+- Regression baseline: 933/946 tests pass; 13 known failures tracked
+
+### Standard
+- No release without Agent 28 gate review
+- Regression budget: zero new failures beyond baseline list
+
+---
+
 ## Standing anti-patterns (do not repeat)
 
 1. Motion for motion’s sake  

@@ -69,8 +69,9 @@ Companions: `ENGINE_REGISTRY.md` · `SYSTEM_DEPENDENCY_MAP.md` ·
 | **24** | Audience Engagement & Learning Science Director (AELS) | `engagement` | `AGENT_AELS.md` · Echoer reviews each cycle |
 | **26** | **Character Systems Director** | `character_systems` | `AGENT_26.md` · Character Bible · Professor Gen (`CHAR-PROFESSOR-001`) |
 | **27** | **Knowledge & Standards Director** | `knowledge_standards` | `AGENT_27.md` · `data/knowledge_standards/` · institutional memory |
+| **28** | **Integration & Release Director** | `integration_release` | `AGENT_28.md` · release gates · regression · executive dashboard |
 
-**Active programs:** **PROJECT FOUNDATION** · **Agent 26 Character Systems** · **Agent 27 Knowledge & Standards**.
+**Active programs:** **PROJECT FOUNDATION** · **Agent 26 Character Systems** · **Agent 27 Knowledge & Standards** · **Agent 28 Integration & Release** · **Project Reality** · **Knowledge Atlas**.
 
 ### Agent 20 — Studio UI & Creative Workspace (LIVE)
 

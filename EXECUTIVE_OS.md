@@ -50,6 +50,7 @@ Executive Owner = accountable for department outcomes; specialists execute.
 | **Analytics** | Agent 10 | 10, 13* | Performance measurement, learning loop, optlab* |
 | **Infrastructure** | Agent 19 | 19, 21 | Providers, runtime, jobs, scale path |
 | **Quality Assurance** | Agent 17 | 17 (+ Agent 1 architecture tests) | QC gates, integrity, production readiness evidence |
+| **Integration & Release** | **Agent 28** | **28** | System integration, merge/release gates, regression, executive dashboard |
 | **Security** | *Unstaffed* | Reserved | Secrets, OAuth hardening, threat model |
 | **Finance** | *Unstaffed* | Reserved | Cost/token budgets, unit economics |
 | **Legal** | *Unstaffed* | Reserved | IP, platform ToS, disclosure, rights |
