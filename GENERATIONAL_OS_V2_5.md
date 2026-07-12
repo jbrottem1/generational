@@ -51,19 +51,26 @@ Database index: `data/generational_os/productions/index.json`
 
 ---
 
-## Export standard (V2.5)
+## Export standard (Media Library — V2.6)
 
 **Canonical path:**
 
 ```
-~/Desktop/AI Start-up/Generational/Videos/{Domain}/{filename}.mp4
+~/Desktop/AI Start-Up/Videos/{Category}/{Category}_{Series}_{Episode}_{Topic}.mp4
 ```
 
-**Domain folders:** Biology, Physics, Chemistry, Mathematics, Earth Science, Astronomy, Medicine, Technology, Engineering, Psychology, History, Business, Artificial Intelligence, Miscellaneous
+**Standard categories:** 45+ topic folders (Biology, Physics, Paleontology, Artificial Intelligence, …). New categories auto-created when needed.
 
-Classifier: `services/generational_os/export_classifier.py`
+**Library index:** `data/generational_os/VIDEO_LIBRARY.json` (+ mirror at library root on Mac)
 
-Legacy path (`videos/Test run 2 generational/`) remains referenced for migration — new exports use classified Generational tree.
+**Companion folder:** `{filename_stem}/` with script, sources, captions, thumbnail, metadata, production report, render manifest.
+
+Classifier + index: `services/generational_os/media_library.py`  
+Export pipeline: `services/generational_os/export.py`
+
+Full spec: [MEDIA_LIBRARY.md](./MEDIA_LIBRARY.md)
+
+Legacy path (`videos/Test run 2 generational/`) remains for archived productions — new exports use the Media Library tree.
 
 ---
 

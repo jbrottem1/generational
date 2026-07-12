@@ -58,6 +58,7 @@ def prepare_production(
         domain=domain,
         subject=subject,
         series=series,
+        episode=episode,
         sources=sources,
     )
     package_out = write_render_package(package, package_path)

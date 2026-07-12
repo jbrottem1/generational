@@ -31,8 +31,15 @@ class ProductionManifest:
     character_version: str = "CHAR-PROFESSOR-V2-001"
     asset_registry: list[str] = field(default_factory=list)
     audio_version: str = ""
+    title: str = ""
+    topic: str = ""
     export_path: str = ""
     export_domain_folder: str = ""
+    library_filename: str = ""
+    secondary_categories: list[str] = field(default_factory=list)
+    keywords: list[str] = field(default_factory=list)
+    file_hash: str = ""
+    companion_path: str = ""
     qc_score: float | None = None
     render_duration_sec: float | None = None
     publishing_status: str = "draft"
@@ -86,11 +93,25 @@ def update_manifest_from_export(
     verification: dict[str, Any],
     qc_score: float | None = None,
     render_duration_sec: float | None = None,
+    title: str = "",
+    topic: str = "",
+    secondary_categories: list[str] | None = None,
+    keywords: list[str] | None = None,
+    file_hash: str = "",
+    companion_path: str = "",
+    library_filename: str = "",
 ) -> ProductionManifest:
     manifest = load_manifest(project_id) or ProductionManifest(project_id=project_id)
     manifest.touch(
+        title=title or manifest.title or manifest.subject,
+        topic=topic or manifest.topic or manifest.subject,
         export_path=str(export_path),
         export_domain_folder=domain_folder,
+        library_filename=library_filename,
+        secondary_categories=list(secondary_categories or []),
+        keywords=list(keywords or manifest.keywords or []),
+        file_hash=file_hash,
+        companion_path=companion_path,
         verification=verification,
         qc_score=qc_score,
         render_duration_sec=render_duration_sec,

@@ -117,7 +117,13 @@ def execute_job(job_path: Path, *, smoke: bool = False) -> dict:
         filename=filename,
         domain=str(job.get("domain") or export.get("domain_folder") or ""),
         subject=str(job.get("title") or ""),
+        title=str(job.get("title") or ""),
+        series=str(job.get("series") or export.get("series") or ""),
+        episode=str(job.get("episode") or export.get("episode") or ""),
+        topic=str(script.get("main_concept") or job.get("title") or ""),
         demo_id=demo_id,
+        sources=list(script.get("sources") or []),
+        script_md="\n".join(f"- {b.get('text', '')}" for b in beats),
         render_duration_sec=result.get("duration_sec"),
     )
     if not export_result.get("ok"):

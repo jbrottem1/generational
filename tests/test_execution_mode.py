@@ -38,8 +38,8 @@ def test_local_detection_forced():
 
 def test_canonical_export_path():
     path = em.canonical_export_dir()
-    assert path.name == "Test run 2 generational"
-    assert "AI Start-up" in str(path)
+    assert path.name == "Videos"
+    assert "AI Start-Up" in str(path)
 
 
 def test_cloud_status_message():

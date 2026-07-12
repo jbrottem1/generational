@@ -1,69 +1,33 @@
-"""Domain-classified Desktop export — Generational/Videos/{Category}/."""
+"""Domain-classified Desktop export — delegates to permanent media library."""
 
 from __future__ import annotations
 
-import re
 from pathlib import Path
 
-# V2.5 canonical export root
-EXPORT_ROOT_PARTS = (
-    "Desktop",
-    "AI Start-up",
-    "Generational",
-    "Videos",
+from services.generational_os.media_library import (
+    LIBRARY_ROOT_PARTS,
+    STANDARD_CATEGORIES,
+    build_library_filename,
+    category_dir,
+    classify_production,
+    library_root,
+    versioned_export_path,
 )
 
-DOMAIN_FOLDERS: tuple[str, ...] = (
-    "Biology",
-    "Physics",
-    "Chemistry",
-    "Mathematics",
-    "Earth Science",
-    "Astronomy",
-    "Medicine",
-    "Technology",
-    "Engineering",
-    "Psychology",
-    "History",
-    "Business",
-    "Artificial Intelligence",
-    "Miscellaneous",
-)
-
-# Map keywords / prefixes → folder
-_DOMAIN_RULES: list[tuple[str, str]] = [
-    (r"^biology[_\s]", "Biology"),
-    (r"^bio[_\s]", "Biology"),
-    (r"turtle|mimicry|evolution|cell|immune|dna|ecology", "Biology"),
-    (r"^physics[_\s]|newton|force|gravity|momentum", "Physics"),
-    (r"^chemistry[_\s]|molecule|atom|reaction", "Chemistry"),
-    (r"^math[_\s]|equation|algebra|calculus", "Mathematics"),
-    (r"earth|geology|climate|weather|plate", "Earth Science"),
-    (r"astro|planet|star|galaxy|cosmos|jwst", "Astronomy"),
-    (r"medicine|health|brain|neuro|immune", "Medicine"),
-    (r"tech|software|computer|robot|ai[_\s]", "Technology"),
-    (r"engineer|mechanical|electrical", "Engineering"),
-    (r"psych|bias|cognitive|behavior", "Psychology"),
-    (r"history|ancient|war|empire", "History"),
-    (r"business|econom|market|startup", "Business"),
-    (r"artificial.intelligence|machine.learning|llm|gpt|neural", "Artificial Intelligence"),
-]
+# Backward-compatible aliases (V2.5 → Media Library)
+EXPORT_ROOT_PARTS = LIBRARY_ROOT_PARTS
+DOMAIN_FOLDERS = STANDARD_CATEGORIES
 
 _LEGACY_EXPORT_PARTS = (
     "Desktop",
-    "AI Start-up",
+    "AI Start-Up",
     "videos",
     "Test run 2 generational",
 )
 
 
 def export_root(*, create: bool = False) -> Path:
-    path = Path.home().joinpath(*EXPORT_ROOT_PARTS)
-    if create:
-        path.mkdir(parents=True, exist_ok=True)
-        for domain in DOMAIN_FOLDERS:
-            (path / domain).mkdir(exist_ok=True)
-    return path
+    return library_root(create=create)
 
 
 def legacy_export_root() -> Path:
@@ -77,20 +41,20 @@ def classify_domain(
     filename: str = "",
     domain: str = "",
     demo_id: str = "",
+    title: str = "",
+    keywords: list[str] | None = None,
 ) -> str:
-    """Return one of DOMAIN_FOLDERS for automatic filing."""
-    if domain:
-        for folder in DOMAIN_FOLDERS:
-            if folder.lower() == domain.strip().lower():
-                return folder
-        if domain.strip().lower() in ("ai", "ml"):
-            return "Artificial Intelligence"
-
-    blob = " ".join([subject, series, filename, demo_id]).lower()
-    for pattern, folder in _DOMAIN_RULES:
-        if re.search(pattern, blob, re.I):
-            return folder
-    return "Miscellaneous"
+    """Return primary category folder for automatic filing."""
+    result = classify_production(
+        subject=subject,
+        title=title,
+        series=series,
+        filename=filename,
+        domain=domain,
+        demo_id=demo_id,
+        keywords=keywords,
+    )
+    return result["primary"]
 
 
 def classified_export_dir(
@@ -100,6 +64,7 @@ def classified_export_dir(
     filename: str = "",
     domain: str = "",
     demo_id: str = "",
+    title: str = "",
     create: bool = True,
 ) -> Path:
     folder = classify_domain(
@@ -108,22 +73,23 @@ def classified_export_dir(
         filename=filename,
         domain=domain,
         demo_id=demo_id,
+        title=title,
     )
-    root = export_root(create=create)
-    dest = root / folder
-    if create:
-        dest.mkdir(parents=True, exist_ok=True)
-    return dest
+    return category_dir(folder, create=create)
 
 
-def unique_path(directory: Path, filename: str) -> Path:
-    candidate = directory / filename
-    if not candidate.exists():
-        return candidate
-    stem, ext = Path(filename).stem, Path(filename).suffix
-    version = 2
-    while True:
-        candidate = directory / f"{stem}_v{version}{ext}"
-        if not candidate.exists():
-            return candidate
-        version += 1
+def unique_path(directory: Path, filename: str, *, file_hash: str = "") -> Path:
+    path, _ = versioned_export_path(directory, filename, file_hash=file_hash)
+    return path
+
+
+__all__ = [
+    "EXPORT_ROOT_PARTS",
+    "DOMAIN_FOLDERS",
+    "export_root",
+    "legacy_export_root",
+    "classify_domain",
+    "classified_export_dir",
+    "unique_path",
+    "build_library_filename",
+]

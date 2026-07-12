@@ -33,11 +33,11 @@ from services.provider_runtime.config import has_credential
 from services.reality.qc import collect_demo_image_ids, evaluate_reality_export
 from services.reality.smoke_narration import build_smoke_narration
 from services.generational_os.export import export_verified_production
+from services.generational_os.media_library import build_library_filename
 from services.media_production.execution_mode import get_execution_context
 from services.media_production.local_first import gate_production
 
 REPORT_DIR = ROOT / "data" / "productions" / "_validation" / "foundation_v2"
-EXPORT_DIR = Path.home() / "Desktop" / "AI Start-up" / "videos" / "Test run 2 generational"
 FALLBACK_EXPORT_DIR = REPORT_DIR / "exports"
 
 SOURCES = [
@@ -48,7 +48,14 @@ SOURCES = [
 
 EPISODE = {
     "id": "turtle_202",
-    "filename": "Biology_202_Origin_of_Turtles.mp4",
+    "series": "001",
+    "episode": "202",
+    "filename": build_library_filename(
+        category="Biology",
+        series="001",
+        episode="202",
+        topic="Origin of Turtles",
+    ),
     "title": "The Origin of Turtles",
     "demo_id": "foundation_v2_turtle_202",
     "hook": "Have you ever wondered where turtles came from?",
@@ -224,8 +231,8 @@ def produce(*, smoke: bool = False, allow_cloud_smoke: bool = False) -> dict:
         allow_cloud_smoke=allow_cloud_smoke,
         domain="Biology",
         subject=ep["title"],
-        series="Foundation V2 Biology",
-        episode=ep["id"],
+        series=ep["series"],
+        episode=ep["episode"],
     )
     if not gate.get("proceed"):
         return {
@@ -311,7 +318,14 @@ def produce(*, smoke: bool = False, allow_cloud_smoke: bool = False) -> dict:
         filename=ep["filename"],
         domain="Biology",
         subject=ep["title"],
+        title=ep["title"],
+        series=ep["series"],
+        episode=ep["episode"],
+        topic="Origin of Turtles",
         demo_id=ep["demo_id"],
+        sources=SOURCES,
+        script_md="\n".join(f"- {b['text']}" for b in ep["beats"]),
+        keywords=["turtles", "evolution", "paleontology", "shell"],
         qc_score=scores.get("overall"),
         render_duration_sec=result.get("duration_sec"),
     )
@@ -338,7 +352,7 @@ def produce(*, smoke: bool = False, allow_cloud_smoke: bool = False) -> dict:
         "status": "export_verified" if ok else "verification_failed",
         "message": "Video exported and verified on local Desktop." if ok else "Render completed but verification failed.",
         "execution_mode": ctx.mode.value,
-        "os_version": "2.5",
+        "os_version": "2.6",
         "domain_folder": export_result.get("domain_folder"),
         "export_path": str(export_path),
         "duration_sec": result.get("duration_sec"),

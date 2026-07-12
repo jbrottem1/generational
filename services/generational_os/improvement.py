@@ -23,7 +23,7 @@ def analyze_improvements(productions: list[dict[str, Any]] | None = None) -> lis
 
     recs.extend(
         [
-            "Unify legacy export paths into Generational/Videos/{Domain} — migrate Test run 2 generational archive.",
+            "Legacy export paths migrated to ~/Desktop/AI Start-Up/Videos/{Category}/ — archive Test run 2 generational separately.",
             "Add phoneme lip-sync driver to reduce re-render cycles on local workstation.",
             "Batch Intelligence layer: SEO + scientific verification in single PRODUCTION_BRIEF pass.",
             "Expand asset_registry seed entries for characters, motion templates, and whiteboard strokes.",

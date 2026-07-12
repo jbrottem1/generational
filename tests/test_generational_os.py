@@ -14,13 +14,13 @@ from services.generational_os.brief import build_production_brief
 
 
 def test_classify_biology_turtle():
-    assert classify_domain(filename="Biology_202_Origin_of_Turtles.mp4", demo_id="foundation_v2_turtle_202") == "Biology"
+    assert classify_domain(filename="Biology_001_202_Origin_of_Turtles.mp4", demo_id="foundation_v2_turtle_202") == "Biology"
 
 
 def test_export_root_structure():
     path = export_root()
     assert path.name == "Videos"
-    assert "Generational" in path.parts
+    assert "AI Start-Up" in path.parts
 
 
 def test_pipeline_order():

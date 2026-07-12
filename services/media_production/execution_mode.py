@@ -17,12 +17,11 @@ from typing import Any
 from core.env import project_root
 
 
-# Canonical Generational export folder (user Mac Desktop)
+# Permanent Generational Media Library (user Mac Desktop)
 CANONICAL_EXPORT_PARTS = (
     "Desktop",
-    "AI Start-up",
-    "videos",
-    "Test run 2 generational",
+    "AI Start-Up",
+    "Videos",
 )
 
 
@@ -48,7 +47,7 @@ class ExecutionContext:
 
 
 def canonical_export_dir(*, create: bool = False) -> Path:
-    """Resolved ~/Desktop/AI Start-up/videos/Test run 2 generational."""
+    """Resolved ~/Desktop/AI Start-Up/Videos/."""
     path = Path.home().joinpath(*CANONICAL_EXPORT_PARTS)
     if create:
         path.mkdir(parents=True, exist_ok=True)
@@ -84,8 +83,9 @@ def detect_execution_mode() -> ExecutionMode:
     system = platform.system()
     if system == "Darwin":
         # macOS workstation — local production when Desktop tree is reachable
-        startup = Path.home() / "Desktop" / "AI Start-up"
-        if startup.exists() or _env_truthy("GENERATIONAL_LOCAL_MAC"):
+        startup = Path.home() / "Desktop" / "AI Start-Up"
+        legacy_startup = Path.home() / "Desktop" / "AI Start-up"
+        if startup.exists() or legacy_startup.exists() or _env_truthy("GENERATIONAL_LOCAL_MAC"):
             return ExecutionMode.LOCAL
 
     if system == "Linux":
@@ -116,7 +116,10 @@ def get_execution_context() -> ExecutionContext:
             "GITHUB_ACTIONS": bool(os.environ.get("GITHUB_ACTIONS")),
             "GENERATIONAL_EXECUTION_MODE": os.environ.get("GENERATIONAL_EXECUTION_MODE"),
             "GENERATIONAL_FORCE_LOCAL": _env_truthy("GENERATIONAL_FORCE_LOCAL"),
-            "desktop_startup_exists": (Path.home() / "Desktop" / "AI Start-up").exists(),
+            "desktop_startup_exists": (
+                (Path.home() / "Desktop" / "AI Start-Up").exists()
+                or (Path.home() / "Desktop" / "AI Start-up").exists()
+            ),
         },
     )
 

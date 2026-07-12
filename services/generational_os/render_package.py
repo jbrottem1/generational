@@ -8,7 +8,8 @@ from pathlib import Path
 from typing import Any
 
 from core.env import project_root
-from services.generational_os.export_classifier import classified_export_dir, classify_domain
+from services.generational_os.export_classifier import classified_export_dir
+from services.generational_os.media_library import build_library_filename, classify_production
 from services.generational_os.layers import ExecutionLayer
 from services.generational_os.manifest import load_manifest, save_manifest
 from services.media_production.execution_mode import cloud_status_message, get_execution_context
@@ -43,6 +44,7 @@ def build_render_package(
     domain: str = "",
     subject: str = "",
     series: str = "",
+    episode: str = "",
     sources: list[str] | None = None,
     narration: dict[str, Any] | None = None,
     render: dict[str, Any] | None = None,
@@ -51,7 +53,22 @@ def build_render_package(
     image_ids: list[str] | None = None,
 ) -> dict[str, Any]:
     ctx = get_execution_context()
-    folder = classify_domain(subject=subject, series=series, domain=domain, filename=filename, demo_id=demo_id)
+    classification = classify_production(
+        subject=subject or title,
+        title=title,
+        series=series,
+        domain=domain,
+        filename=filename,
+        demo_id=demo_id,
+    )
+    folder = classification["primary"]
+    secondary = classification["secondary"]
+    library_filename = filename or build_library_filename(
+        category=folder,
+        series=series or "001",
+        episode=episode or project_id,
+        topic=title,
+    )
     export_dir = classified_export_dir(domain=folder, create=False)
 
     ids = list(image_ids or [])
@@ -61,16 +78,18 @@ def build_render_package(
 
     return {
         "schema_version": 3,
-        "os_version": "2.5",
+        "os_version": "2.6",
         "layer": ExecutionLayer.PRE_PRODUCTION.value,
         "project_id": project_id,
         "job_id": project_id,
         "title": title,
+        "episode": episode,
         "status": "awaiting_local_render",
         "message": cloud_status_message(),
         "execution_mode": ctx.mode.value,
         "prepared_at": datetime.now(timezone.utc).isoformat(),
         "domain": folder,
+        "secondary_categories": secondary,
         "script": {
             "hook": hook,
             "takeaway": takeaway,
@@ -106,11 +125,23 @@ def build_render_package(
         "choreography": choreography or {"plan_id": demo_id},
         "transitions": [],
         "export": {
-            "filename": filename,
+            "filename": library_filename,
+            "library_filename": library_filename,
             "domain_folder": folder,
+            "secondary_categories": secondary,
             "directory": str(export_dir),
             "directory_expanded": str(export_dir.expanduser()),
-            "legacy_directory": str(Path.home() / "Desktop" / "AI Start-up" / "videos" / "Test run 2 generational"),
+            "library_root": str(export_dir.parent),
+            "legacy_directory": str(Path.home() / "Desktop" / "AI Start-Up" / "videos" / "Test run 2 generational"),
+            "companion_files": [
+                "script.md",
+                "sources.json",
+                "captions.srt",
+                "thumbnail.png",
+                "metadata.json",
+                "production_report.md",
+                "render_manifest.json",
+            ],
             "verify": [
                 "file_exists",
                 "size_gt_zero",
@@ -119,6 +150,9 @@ def build_render_package(
                 "playable",
                 "duration",
                 "resolution",
+                "correct_category_folder",
+                "companion_files",
+                "library_index_updated",
                 "manifest_updated",
                 "production_db_updated",
             ],
