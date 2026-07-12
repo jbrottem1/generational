@@ -1,0 +1,84 @@
+{
+  "title": "How CRISPR Actually Edits DNA",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A concise explanation of CRISPR-Cas9 gene editing and its implications.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Scientists can now cut DNA like text \u2014 and this is how CRISPR works.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Meet CRISPR-Cas9, a revolutionary tool that can edit genes with precision.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "It uses a guide RNA to find the exact spot in the DNA sequence.",
+      "emotion": "curiosity",
+      "delivery": "clear and intriguing",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Then, Cas9 acts like molecular scissors, cutting the DNA.",
+      "emotion": "curiosity",
+      "delivery": "dynamic and exciting",
+      "retention_device": "visual imagery"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "This allows cells to repair the DNA, potentially eliminating diseases.",
+      "emotion": "hope",
+      "delivery": "optimistic and uplifting",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 50.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "But remember, clinical use is tightly regulated.",
+      "emotion": "caution",
+      "delivery": "serious and thoughtful",
+      "retention_device": "warning"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Intrigued by CRISPR? Hit like and follow for more science insights!",
+      "emotion": "curiosity",
+      "delivery": "encouraging and inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Scientists can now cut DNA like text \u2014 and this is how CRISPR works. Meet CRISPR-Cas9, a revolutionary tool that can edit genes with precision. It uses a guide RNA to find the exact spot in the DNA sequence. Then, Cas9 acts like molecular scissors, cutting the DNA. This allows cells to repair the DNA, potentially eliminating diseases. But remember, clinical use is tightly regulated. Intrigued by CRISPR? Hit like and follow for more science insights!",
+  "call_to_action": "Hit like and follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:39:56.314055+00:00",
+  "source": "ai"
+}

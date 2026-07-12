@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if I told you corals have hidden allies?",
+    "visual_description": "Hook visual: What if I told you corals have hidden allies?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you corals have hidden allies?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you corals have hidden allies?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Meet the coral microbiome, a complex community of bacteria, fungi, and viruses living on corals.",
+    "visual_description": "Context visual: Meet the coral microbiome, a complex community of bacteria, fungi, and viruses living on corals.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Meet the coral microbiome, a complex community of bacteria, fungi, and viruses living on corals.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Meet the coral microbiome, a complex community of bacteria, fungi, and viruses living on corals.",
+    "stock_footage_query": "",
+    "text_overlay": "Meet the coral microbiome,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "These microorganisms are crucial for coral health, helping them fight diseases and adapt to stress.",
+    "visual_description": "Escalation visual: These microorganisms are crucial for coral health, helping them fight diseases and adapt to stress.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: These microorganisms are crucial for coral health, helping them fight diseases and adapt to stress.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: These microorganisms are crucial for coral health, helping them fight diseases and adapt to stress.",
+    "stock_footage_query": "",
+    "text_overlay": "These microorganisms are crucial",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show that a healthy microbiome can even enhance coral resilience against climate change.",
+    "visual_description": "Evidence visual: Studies show that a healthy microbiome can even enhance coral resilience against climate change.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show that a healthy microbiome can even enhance coral resilience against climate change.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show that a healthy microbiome can even enhance coral resilience against climate change.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show that a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "But here's the catch: our understanding of these interactions is still evolving, filled with uncertainties.",
+    "visual_description": "Payoff visual: But here's the catch: our understanding of these interactions is still evolving, filled with uncertainties.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: But here's the catch: our understanding of these interactions is still evolving, filled with uncertainties.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: But here's the catch: our understanding of these interactions is still evolving, filled with uncertainties.",
+    "stock_footage_query": "",
+    "text_overlay": "But here's the catch:",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Want to dive deeper into coral ecosystems? Hit that follow button!",
+    "visual_description": "Cta visual: Want to dive deeper into coral ecosystems? Hit that follow button!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into coral ecosystems? Hit that follow button!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into coral ecosystems? Hit that follow button!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

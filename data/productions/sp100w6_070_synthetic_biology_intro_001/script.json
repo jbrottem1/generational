@@ -1,0 +1,74 @@
+{
+  "title": "Synthetic biology intro",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "An engaging yet accurate introduction to synthetic biology that flags uncertainties without sensationalism.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if we could redesign life itself?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Synthetic biology merges engineering and biology, aiming to create new, living systems.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Imagine bacteria designed to produce medicine or biofuels.",
+      "emotion": "wonder",
+      "delivery": "enthusiastic",
+      "retention_device": "visualizing possibilities"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "But we face ethical concerns and unexpected outcomes.",
+      "emotion": "concern",
+      "delivery": "serious",
+      "retention_device": "contrast"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "The potential is huge, but so is the responsibility.",
+      "emotion": "reflective",
+      "delivery": "thoughtful",
+      "retention_device": "impactful realization"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about the future of synthetic biology? Like and follow for more insights!",
+      "emotion": "motivational",
+      "delivery": "energetic",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "What if we could redesign life itself? Synthetic biology merges engineering and biology, aiming to create new, living systems. Imagine bacteria designed to produce medicine or biofuels. But we face ethical concerns and unexpected outcomes. The potential is huge, but so is the responsibility. Curious about the future of synthetic biology? Like and follow for more insights!",
+  "call_to_action": "Like and follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:05:22.465669+00:00",
+  "source": "ai"
+}

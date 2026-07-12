@@ -1,0 +1,74 @@
+{
+  "title": "P Waves vs S Waves",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring how P waves and S waves differ in earthquake detection.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Did you know earthquake waves can unlock secrets about our planet?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Two main types of seismic waves exist: P waves and S waves.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "P waves compress and travel faster. They\u2019re the first to arrive.",
+      "emotion": "curiosity",
+      "delivery": "building intensity",
+      "retention_device": "visual contrast"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "S waves shear and arrive later, revealing more about the quake's intensity.",
+      "emotion": "curiosity",
+      "delivery": "informative and clear",
+      "retention_device": "shocking fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 36.0,
+      "segment_type": "payoff",
+      "voiceover": "Detecting these waves helps scientists locate quakes and assess damage.",
+      "emotion": "curiosity",
+      "delivery": "satisfying conclusion",
+      "retention_device": "resolution"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 36.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more about our planet's mysteries? Hit subscribe!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic and inviting",
+      "retention_device": "final engagement"
+    }
+  ],
+  "full_voiceover": "Did you know earthquake waves can unlock secrets about our planet? Two main types of seismic waves exist: P waves and S waves. P waves compress and travel faster. They\u2019re the first to arrive. S waves shear and arrive later, revealing more about the quake's intensity. Detecting these waves helps scientists locate quakes and assess damage. Want to learn more about our planet's mysteries? Hit subscribe!",
+  "call_to_action": "Want to learn more about our planet's mysteries? Hit subscribe!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:14:55.500568+00:00",
+  "source": "ai"
+}

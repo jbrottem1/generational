@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science has a clearer story about hurricane formation than social media does.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Hurricanes form over warm ocean waters, fueled by heat and moisture.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: As warm air rises, it creates low pressure, pulling in more air.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: This cycle continues, causing winds to spiral and intensify.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: The result? A powerful storm that can devastate coastlines.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to learn more about nature's wonders? Hit like and follow for more!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science has a clearer story about hurricane formation than social media does.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Hurricanes form over warm ocean waters, fueled by heat and moisture.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: As warm air rises, it creates low pressure, pulling in more air.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: This cycle continues, causing winds to spiral and intensify.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: The result? A powerful storm that can devastate coastlines.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to learn more about nature's wonders? Hit like and follow for more!",
+      "duration_sec": 26.0
+    }
+  ]
+}

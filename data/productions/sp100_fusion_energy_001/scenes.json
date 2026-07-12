@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Fusion powers the Sun\u2014so why can\u2019t we capture it here?",
+    "visual_description": "Hook visual: Fusion powers the Sun\u2014so why can\u2019t we capture it here?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Fusion powers the Sun\u2014so why can\u2019t we capture it here?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Fusion powers the Sun\u2014so why can\u2019t we capture it here?",
+    "stock_footage_query": "",
+    "text_overlay": "Fusion powers the Sun\u2014so",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "The secret? It\u2019s all about creating the right conditions: extreme temperature and pressure.",
+    "visual_description": "Context visual: The secret? It\u2019s all about creating the right conditions: extreme temperature and pressure.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: The secret? It\u2019s all about creating the right conditions: extreme temperature and pressure.",
+    "ai_video_prompt": "Cinematic motion: Context visual: The secret? It\u2019s all about creating the right conditions: extreme temperature and pressure.",
+    "stock_footage_query": "",
+    "text_overlay": "The secret? It\u2019s all",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "awe",
+    "length_sec": 9.0,
+    "narration": "Fusion needs over 150 million degrees Celsius\u2014hotter than the core of the Sun! Can you imagine that?",
+    "visual_description": "Escalation visual: Fusion needs over 150 million degrees Celsius\u2014hotter than the core of the Sun! Can you imagine that?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Fusion needs over 150 million degrees Celsius\u2014hotter than the core of the Sun! Can you imagine that?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Fusion needs over 150 million degrees Celsius\u2014hotter than the core of the Sun! Can you imagine that?",
+    "stock_footage_query": "",
+    "text_overlay": "Fusion needs over 150",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 19.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "anticipation",
+    "length_sec": 8.0,
+    "narration": "Recent experiments have achieved net energy gain\u2014big milestones\u2014but commercial fusion is still years away.",
+    "visual_description": "Evidence visual: Recent experiments have achieved net energy gain\u2014big milestones\u2014but commercial fusion is still years away.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Recent experiments have achieved net energy gain\u2014big milestones\u2014but commercial fusion is still years away.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Recent experiments have achieved net energy gain\u2014big milestones\u2014but commercial fusion is still years away.",
+    "stock_footage_query": "",
+    "text_overlay": "Recent experiments have achieved",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 19.0,
+      "end_sec": 27.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 19.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "hope",
+    "length_sec": 11.0,
+    "narration": "The DOE and ITER work tirelessly to conquer these challenges. Imagine a world powered by clean fusion energy!",
+    "visual_description": "Payoff visual: The DOE and ITER work tirelessly to conquer these challenges. Imagine a world powered by clean fusion energy!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: The DOE and ITER work tirelessly to conquer these challenges. Imagine a world powered by clean fusion energy!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: The DOE and ITER work tirelessly to conquer these challenges. Imagine a world powered by clean fusion energy!",
+    "stock_footage_query": "",
+    "text_overlay": "The DOE and ITER",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 27.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 27.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "engagement",
+    "length_sec": 22.0,
+    "narration": "Curious about the future of energy? Hit like and follow for more science insights!",
+    "visual_description": "Cta visual: Curious about the future of energy? Hit like and follow for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about the future of energy? Hit like and follow for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about the future of energy? Hit like and follow for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about the future",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

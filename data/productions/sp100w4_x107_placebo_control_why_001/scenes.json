@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about placebo control.",
+    "visual_description": "Hook visual: Here's what science actually says about placebo control.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about placebo control.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about placebo control.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Placebo controls aren't just tricks; they're essential for testing new treatments.",
+    "visual_description": "Context visual: Placebo controls aren't just tricks; they're essential for testing new treatments.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Placebo controls aren't just tricks; they're essential for testing new treatments.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Placebo controls aren't just tricks; they're essential for testing new treatments.",
+    "stock_footage_query": "",
+    "text_overlay": "Placebo controls aren't just",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "In clinical trials, they tell us if a drug works better than a sugar pill.",
+    "visual_description": "Escalation visual: In clinical trials, they tell us if a drug works better than a sugar pill.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: In clinical trials, they tell us if a drug works better than a sugar pill.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: In clinical trials, they tell us if a drug works better than a sugar pill.",
+    "stock_footage_query": "",
+    "text_overlay": "In clinical trials, they",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "surprise",
+    "length_sec": 8.0,
+    "narration": "Studies show up to 30% of patients can experience real relief with placebos.",
+    "visual_description": "Evidence visual: Studies show up to 30% of patients can experience real relief with placebos.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show up to 30% of patients can experience real relief with placebos.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show up to 30% of patients can experience real relief with placebos.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show up to",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "But why does this happen? The brain responds to belief, influencing our health.",
+    "visual_description": "Payoff visual: But why does this happen? The brain responds to belief, influencing our health.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: But why does this happen? The brain responds to belief, influencing our health.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: But why does this happen? The brain responds to belief, influencing our health.",
+    "stock_footage_query": "",
+    "text_overlay": "But why does this",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Yet, it's not fully understood. Ongoing research is uncovering more.",
+    "visual_description": "Pattern Interrupt visual: Yet, it's not fully understood. Ongoing research is uncovering more.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: Yet, it's not fully understood. Ongoing research is uncovering more.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: Yet, it's not fully understood. Ongoing research is uncovering more.",
+    "stock_footage_query": "",
+    "text_overlay": "Yet, it's not fully",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "inviting",
+    "length_sec": 10.0,
+    "narration": "Want to dive deeper into the science of the mind? Like and follow for more!",
+    "visual_description": "Cta visual: Want to dive deeper into the science of the mind? Like and follow for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into the science of the mind? Like and follow for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into the science of the mind? Like and follow for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

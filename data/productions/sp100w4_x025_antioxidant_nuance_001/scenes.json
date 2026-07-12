@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about antioxidant nuance.",
+    "visual_description": "Hook visual: Here's what science actually says about antioxidant nuance.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about antioxidant nuance.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about antioxidant nuance.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Antioxidants fight free radicals, but not all are created equal.",
+    "visual_description": "Context visual: Antioxidants fight free radicals, but not all are created equal.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Antioxidants fight free radicals, but not all are created equal.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Antioxidants fight free radicals, but not all are created equal.",
+    "stock_footage_query": "",
+    "text_overlay": "Antioxidants fight free radicals,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Some can heal, while others may disrupt processes in the body.",
+    "visual_description": "Escalation visual: Some can heal, while others may disrupt processes in the body.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Some can heal, while others may disrupt processes in the body.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Some can heal, while others may disrupt processes in the body.",
+    "stock_footage_query": "",
+    "text_overlay": "Some can heal, while",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Preliminary research shows the effects vary by source and dosage.",
+    "visual_description": "Evidence visual: Preliminary research shows the effects vary by source and dosage.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Preliminary research shows the effects vary by source and dosage.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Preliminary research shows the effects vary by source and dosage.",
+    "stock_footage_query": "",
+    "text_overlay": "Preliminary research shows the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Balanced diets with fruits and vegetables offer the best benefits.",
+    "visual_description": "Payoff visual: Balanced diets with fruits and vegetables offer the best benefits.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Balanced diets with fruits and vegetables offer the best benefits.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Balanced diets with fruits and vegetables offer the best benefits.",
+    "stock_footage_query": "",
+    "text_overlay": "Balanced diets with fruits",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Curious about more science truths? Like, share, and follow for more!",
+    "visual_description": "Cta visual: Curious about more science truths? Like, share, and follow for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more science truths? Like, share, and follow for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more science truths? Like, share, and follow for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more science",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

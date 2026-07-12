@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: What if I told you that plants have a hidden superpower?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Root nodules are tiny structures on plant roots, home to bacteria that transform nitrogen from the air into a form plant",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Without these nodules, plants would struggle to grow, especially in nutrient-poor soils.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Studies reveal that legumes, like peas and beans, host these nodules, making them vital for agriculture.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: So, the next time you eat legumes, remember, you\u2019re tapping into nature\u2019s nitrogen factory!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want more science secrets? Hit that follow button and explore the wonders of nature!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: What if I told you that plants have a hidden superpower?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Root nodules are tiny structures on plant roots, home to bacteria that transform nitrogen from the air into a form plant",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Without these nodules, plants would struggle to grow, especially in nutrient-poor soils.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Studies reveal that legumes, like peas and beans, host these nodules, making them vital for agriculture.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: So, the next time you eat legumes, remember, you\u2019re tapping into nature\u2019s nitrogen factory!",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want more science secrets? Hit that follow button and explore the wonders of nature!",
+      "duration_sec": 22.0
+    }
+  ]
+}

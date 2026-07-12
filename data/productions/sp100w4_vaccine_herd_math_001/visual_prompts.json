@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: What if your sneeze could start a pandemic?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: It's all about R0, the reproduction number. If each case infects more than one other person...",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: ...outbreaks can spiral out of control. Imagine a single infection leading to dozens.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Research shows that accurate tracking of R0 is crucial. Misleading data can cause panic.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: So, understanding R0 helps us prepare, not sensationalize. Knowledge is power.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Stay informed, stay safe, and don't forget to follow for more science insights!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: What if your sneeze could start a pandemic?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: It's all about R0, the reproduction number. If each case infects more than one other person...",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: ...outbreaks can spiral out of control. Imagine a single infection leading to dozens.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Research shows that accurate tracking of R0 is crucial. Misleading data can cause panic.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: So, understanding R0 helps us prepare, not sensationalize. Knowledge is power.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Stay informed, stay safe, and don't forget to follow for more science insights!",
+      "duration_sec": 26.0
+    }
+  ]
+}

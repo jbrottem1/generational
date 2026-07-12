@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: What if I told you that confusion could be a lifesaver?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Sepsis is a critical condition, yet its early signs often go unnoticed.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Fever, rapid heart rate, and confusion are key indicators. But there's more.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Research shows sepsis can progress rapidly. Recognizing symptoms early is crucial.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: If you spot confusion, high fever, or extreme pain, act fast. It could save a life.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Stay informed. Share this knowledge to help others recognize sepsis early.",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: What if I told you that confusion could be a lifesaver?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Sepsis is a critical condition, yet its early signs often go unnoticed.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Fever, rapid heart rate, and confusion are key indicators. But there's more.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Research shows sepsis can progress rapidly. Recognizing symptoms early is crucial.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: If you spot confusion, high fever, or extreme pain, act fast. It could save a life.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Stay informed. Share this knowledge to help others recognize sepsis early.",
+      "duration_sec": 26.0
+    }
+  ]
+}

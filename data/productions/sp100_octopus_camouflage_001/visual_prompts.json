@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: An octopus can vanish into a reef in under a second.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: How do they do it? Meet chromatophores.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: These tiny pigment cells expand and contract, transforming color in an instant.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: But that's not all. Iridophores add shimmering effects, reflecting light differently.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: And with papillae, they can change texture too, mimicking their surroundings flawlessly.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to dive deeper into the ocean's wonders? Hit that follow!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: An octopus can vanish into a reef in under a second.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: How do they do it? Meet chromatophores.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: These tiny pigment cells expand and contract, transforming color in an instant.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: But that's not all. Iridophores add shimmering effects, reflecting light differently.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: And with papillae, they can change texture too, mimicking their surroundings flawlessly.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to dive deeper into the ocean's wonders? Hit that follow!",
+      "duration_sec": 8.0
+    }
+  ]
+}

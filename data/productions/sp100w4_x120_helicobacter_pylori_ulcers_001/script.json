@@ -1,0 +1,74 @@
+{
+  "title": "Helicobacter pylori ulcers",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the surprising role of Helicobacter pylori in stomach ulcers.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about Helicobacter pylori ulcers.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Most believe ulcers are caused by stress or spicy foods, but surprise! It's often a bacterial infection.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Helicobacter pylori, a sneaky bacterium, can live in your stomach lining, causing inflammation.",
+      "emotion": "curiosity",
+      "delivery": "dramatic",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows that up to 80% of gastric ulcers are linked to this bacterium. How wild is that?",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 44.0,
+      "segment_type": "payoff",
+      "voiceover": "Antibiotics can eliminate it, but not everyone with H. pylori has ulcers. It's a complex dance of factors.",
+      "emotion": "curiosity",
+      "delivery": "thought-provoking",
+      "retention_device": "suspense"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 44.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more science secrets? Like and follow for your next mind-bending fact!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "natural CTA"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about Helicobacter pylori ulcers. Most believe ulcers are caused by stress or spicy foods, but surprise! It's often a bacterial infection. Helicobacter pylori, a sneaky bacterium, can live in your stomach lining, causing inflammation. Research shows that up to 80% of gastric ulcers are linked to this bacterium. How wild is that? Antibiotics can eliminate it, but not everyone with H. pylori has ulcers. It's a complex dance of factors. Curious about more science secrets? Like and follow for your next mind-bending fact!",
+  "call_to_action": "Curious about more science secrets? Like and follow for your next mind-bending fact!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:29:06.983252+00:00",
+  "source": "ai"
+}

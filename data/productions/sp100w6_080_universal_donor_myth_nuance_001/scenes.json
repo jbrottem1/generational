@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "The universal donor myth\u2014what if it's more complex than you think?",
+    "visual_description": "Hook visual: The universal donor myth\u2014what if it's more complex than you think?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: The universal donor myth\u2014what if it's more complex than you think?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: The universal donor myth\u2014what if it's more complex than you think?",
+    "stock_footage_query": "",
+    "text_overlay": "The universal donor myth\u2014what",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "It's widely believed that type O blood is the ultimate lifesaver.",
+    "visual_description": "Context visual: It's widely believed that type O blood is the ultimate lifesaver.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: It's widely believed that type O blood is the ultimate lifesaver.",
+    "ai_video_prompt": "Cinematic motion: Context visual: It's widely believed that type O blood is the ultimate lifesaver.",
+    "stock_footage_query": "",
+    "text_overlay": "It's widely believed that",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "surprise",
+    "length_sec": 8.0,
+    "narration": "But hold on! Not all type O blood is the same.",
+    "visual_description": "Escalation visual: But hold on! Not all type O blood is the same.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But hold on! Not all type O blood is the same.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But hold on! Not all type O blood is the same.",
+    "stock_footage_query": "",
+    "text_overlay": "But hold on! Not",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "There's O positive and O negative, and they react differently in transfusions.",
+    "visual_description": "Evidence visual: There's O positive and O negative, and they react differently in transfusions.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: There's O positive and O negative, and they react differently in transfusions.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: There's O positive and O negative, and they react differently in transfusions.",
+    "stock_footage_query": "",
+    "text_overlay": "There's O positive and",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "insight",
+    "length_sec": 15.0,
+    "narration": "While O negative is the universal donor, its rarity complicates things.",
+    "visual_description": "Payoff visual: While O negative is the universal donor, its rarity complicates things.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: While O negative is the universal donor, its rarity complicates things.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: While O negative is the universal donor, its rarity complicates things.",
+    "stock_footage_query": "",
+    "text_overlay": "While O negative is",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "encouraging",
+    "length_sec": 15.0,
+    "narration": "Stay curious, and hit follow for more science insights!",
+    "visual_description": "Cta visual: Stay curious, and hit follow for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Stay curious, and hit follow for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Stay curious, and hit follow for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Stay curious, and hit",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

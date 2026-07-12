@@ -1,0 +1,84 @@
+{
+  "title": "System 1 System 2",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A concise explanation of System 1 and System 2 thinking, highlighting their differences and implications.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about System 1 and System 2 than you might think.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "System 1 is your brain's fast, automatic thinking. Think instinctive reactions.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "But here\u2019s the twist: System 2 is slower, more deliberate. It's where analysis happens.",
+      "emotion": "curiosity",
+      "delivery": "pacing up",
+      "retention_device": "unexpected contrast"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "escalation",
+      "voiceover": "Imagine making a snap judgment versus solving a complex problem. That's the difference.",
+      "emotion": "curiosity",
+      "delivery": "intense",
+      "retention_device": "visual imagery"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show we rely on System 1 most of the time, but when stakes are high, System 2 kicks in.",
+      "emotion": "curiosity",
+      "delivery": "inquisitive",
+      "retention_device": "data point"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 48.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding this can transform how you approach decisions, from everyday choices to life-changing ones.",
+      "emotion": "curiosity",
+      "delivery": "inspirational",
+      "retention_device": "reveal"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 48.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to unlock the power of your mind? Like and follow for more insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about System 1 and System 2 than you might think. System 1 is your brain's fast, automatic thinking. Think instinctive reactions. But here\u2019s the twist: System 2 is slower, more deliberate. It's where analysis happens. Imagine making a snap judgment versus solving a complex problem. That's the difference. Studies show we rely on System 1 most of the time, but when stakes are high, System 2 kicks in. Understanding this can transform how you approach decisions, from everyday choices to life-changing ones. Want to unlock the power of your mind? Like and follow for more insights!",
+  "call_to_action": "Like and follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:50:33.727731+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about metastasis basics.",
+    "visual_description": "Hook visual: Here's what science actually says about metastasis basics.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about metastasis basics.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about metastasis basics.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Metastasis is how cancer spreads from one part of the body to another. But how does that happen?",
+    "visual_description": "Context visual: Metastasis is how cancer spreads from one part of the body to another. But how does that happen?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Metastasis is how cancer spreads from one part of the body to another. But how does that happen?",
+    "ai_video_prompt": "Cinematic motion: Context visual: Metastasis is how cancer spreads from one part of the body to another. But how does that happen?",
+    "stock_footage_query": "",
+    "text_overlay": "Metastasis is how cancer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "It starts when cancer cells break away from a tumor. They then enter the bloodstream or lymphatic system!",
+    "visual_description": "Escalation visual: It starts when cancer cells break away from a tumor. They then enter the bloodstream or lymphatic system!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: It starts when cancer cells break away from a tumor. They then enter the bloodstream or lymphatic system!",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: It starts when cancer cells break away from a tumor. They then enter the bloodstream or lymphatic system!",
+    "stock_footage_query": "",
+    "text_overlay": "It starts when cancer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Once circulating, these cells can find new locations, creating secondary tumors. This process is complex and still not fully understood.",
+    "visual_description": "Evidence visual: Once circulating, these cells can find new locations, creating secondary tumors. This process is complex and still not f",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Once circulating, these cells can find new locations, creating secondary tumors. This process is complex and still not f",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Once circulating, these cells can find new locations, creating secondary tumors. This process is complex and still not f",
+    "stock_footage_query": "",
+    "text_overlay": "Once circulating, these cells",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Understanding metastasis is crucial for developing effective cancer treatments. Scientists are making strides, but much remains to be discovered!",
+    "visual_description": "Payoff visual: Understanding metastasis is crucial for developing effective cancer treatments. Scientists are making strides, but much ",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding metastasis is crucial for developing effective cancer treatments. Scientists are making strides, but much ",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding metastasis is crucial for developing effective cancer treatments. Scientists are making strides, but much ",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding metastasis is crucial",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 22.0,
+    "narration": "Want to learn more about cancer research? Hit the follow button now!",
+    "visual_description": "Cta visual: Want to learn more about cancer research? Hit the follow button now!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to learn more about cancer research? Hit the follow button now!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to learn more about cancer research? Hit the follow button now!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

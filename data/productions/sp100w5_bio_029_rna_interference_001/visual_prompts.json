@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science has a clearer story about RNA interference than social media does.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: RNA interference, or RNAi, is a process that regulates gene expression. But how does it work?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: It uses small RNA molecules to silence specific genes, preventing the production of certain proteins.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Scientists have harnessed RNAi for therapies, targeting diseases like cancer and viral infections.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: The potential is huge, but research is ongoing, and we still have questions to answer.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to learn more about how RNAi could change medicine? Hit that follow button!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science has a clearer story about RNA interference than social media does.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: RNA interference, or RNAi, is a process that regulates gene expression. But how does it work?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: It uses small RNA molecules to silence specific genes, preventing the production of certain proteins.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Scientists have harnessed RNAi for therapies, targeting diseases like cancer and viral infections.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: The potential is huge, but research is ongoing, and we still have questions to answer.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to learn more about how RNAi could change medicine? Hit that follow button!",
+      "duration_sec": 26.0
+    }
+  ]
+}

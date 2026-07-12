@@ -1,0 +1,74 @@
+{
+  "title": "Why Coral Reefs Turn White",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explores the symbiotic relationship between corals and zooxanthellae and the impact of ocean warming.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "When oceans get too warm, corals evict their partners \u2014 and turn ghostly white.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Corals rely on tiny algae called zooxanthellae, which live inside them. This relationship is crucial for their survival.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But when temperatures rise, corals stress out and kick out these vital partners, leading to bleaching.",
+      "emotion": "concern",
+      "delivery": "urgent",
+      "retention_device": "visual pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "According to NOAA, while some corals can recover, repeated heat stress increases mortality.",
+      "emotion": "concern",
+      "delivery": "matter-of-fact",
+      "retention_device": "surprising statistic"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "payoff",
+      "voiceover": "The fate of coral reefs rests on our actions. Protecting our oceans is essential for their survival.",
+      "emotion": "hope",
+      "delivery": "inspiring",
+      "retention_device": "emotional uplift"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more about ocean health? Follow for more insights on climate change!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "engaging question"
+    }
+  ],
+  "full_voiceover": "When oceans get too warm, corals evict their partners \u2014 and turn ghostly white. Corals rely on tiny algae called zooxanthellae, which live inside them. This relationship is crucial for their survival. But when temperatures rise, corals stress out and kick out these vital partners, leading to bleaching. According to NOAA, while some corals can recover, repeated heat stress increases mortality. The fate of coral reefs rests on our actions. Protecting our oceans is essential for their survival. Want to learn more about ocean health? Follow for more insights on climate change!",
+  "call_to_action": "Want to learn more about ocean health? Follow for more insights on climate change!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:43:36.366745+00:00",
+  "source": "ai"
+}

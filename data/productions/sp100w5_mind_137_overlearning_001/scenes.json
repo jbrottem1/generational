@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about overlearning than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about overlearning than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about overlearning than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about overlearning than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Overlearning means practicing beyond just the point of mastery.",
+    "visual_description": "Context visual: Overlearning means practicing beyond just the point of mastery.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Overlearning means practicing beyond just the point of mastery.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Overlearning means practicing beyond just the point of mastery.",
+    "stock_footage_query": "",
+    "text_overlay": "Overlearning means practicing beyond",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Imagine memorizing a song perfectly, but repeating it over and over embeds it deeper in your mind.",
+    "visual_description": "Escalation visual: Imagine memorizing a song perfectly, but repeating it over and over embeds it deeper in your mind.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Imagine memorizing a song perfectly, but repeating it over and over embeds it deeper in your mind.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Imagine memorizing a song perfectly, but repeating it over and over embeds it deeper in your mind.",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine memorizing a song",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show overlearning boosts retention by up to 50%!",
+    "visual_description": "Evidence visual: Studies show overlearning boosts retention by up to 50%!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show overlearning boosts retention by up to 50%!",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show overlearning boosts retention by up to 50%!",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show overlearning boosts",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But here's the catch: overlearning isn\u2019t always effective for every skill.",
+    "visual_description": "Pattern Interrupt visual: But here's the catch: overlearning isn\u2019t always effective for every skill.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: But here's the catch: overlearning isn\u2019t always effective for every skill.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: But here's the catch: overlearning isn\u2019t always effective for every skill.",
+    "stock_footage_query": "",
+    "text_overlay": "But here's the catch:",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 16.0,
+    "narration": "It\u2019s great for memorization, yet might not improve creative thinking or problem-solving.",
+    "visual_description": "Payoff visual: It\u2019s great for memorization, yet might not improve creative thinking or problem-solving.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: It\u2019s great for memorization, yet might not improve creative thinking or problem-solving.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: It\u2019s great for memorization, yet might not improve creative thinking or problem-solving.",
+    "stock_footage_query": "",
+    "text_overlay": "It\u2019s great for memorization,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Curious about how to use overlearning effectively? Hit follow for more insights!",
+    "visual_description": "Cta visual: Curious about how to use overlearning effectively? Hit follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about how to use overlearning effectively? Hit follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about how to use overlearning effectively? Hit follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about how to",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

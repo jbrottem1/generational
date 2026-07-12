@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Did you know short-wavelength light can trick your body into thinking it's daytime?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: This is blue light, a powerful signal for our circadian rhythms.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Excessive exposure at night disrupts sleep, leading to a cascade of health issues.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Studies show that late-night screens confuse our internal clocks.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Limiting blue light before bed can restore your sleep cycle and improve overall health.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want better sleep? Start managing your screen time wisely. Like and follow for more science insights!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Did you know short-wavelength light can trick your body into thinking it's daytime?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: This is blue light, a powerful signal for our circadian rhythms.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Excessive exposure at night disrupts sleep, leading to a cascade of health issues.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Studies show that late-night screens confuse our internal clocks.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Limiting blue light before bed can restore your sleep cycle and improve overall health.",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want better sleep? Start managing your screen time wisely. Like and follow for more science insights!",
+      "duration_sec": 22.0
+    }
+  ]
+}

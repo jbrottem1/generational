@@ -1,0 +1,74 @@
+{
+  "title": "Ex situ conservation",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A dive into the science and uncertainty of ex situ conservation.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if saving species means taking them away from their homes?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Ex situ conservation involves protecting species by moving them to controlled environments.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "This method raises questions: Is it really effective? What are the risks?",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show mixed results; some species thrive, others struggle in captivity.",
+      "emotion": "curiosity",
+      "delivery": "fact-driven",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 36.0,
+      "segment_type": "payoff",
+      "voiceover": "Ultimately, ex situ conservation can be a lifeline, but it\u2019s not a guaranteed fix.",
+      "emotion": "curiosity",
+      "delivery": "conclusive",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 36.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how we can better protect our species? Hit that follow button for more!",
+      "emotion": "encouragement",
+      "delivery": "inviting",
+      "retention_device": "none"
+    }
+  ],
+  "full_voiceover": "What if saving species means taking them away from their homes? Ex situ conservation involves protecting species by moving them to controlled environments. This method raises questions: Is it really effective? What are the risks? Studies show mixed results; some species thrive, others struggle in captivity. Ultimately, ex situ conservation can be a lifeline, but it\u2019s not a guaranteed fix. Curious about how we can better protect our species? Hit that follow button for more!",
+  "call_to_action": "Hit that follow button for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:05:00.269567+00:00",
+  "source": "ai"
+}

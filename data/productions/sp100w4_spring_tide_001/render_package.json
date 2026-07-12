@@ -1,0 +1,1634 @@
+{
+  "render_package_version": "2.0",
+  "render_engine_version": "1.0.0",
+  "title": "Spring Tides vs Neap Tides",
+  "created_at": "2026-07-10T17:14:04.340082+00:00",
+  "output_format": {
+    "aspect_ratio": "9:16",
+    "resolution": {
+      "width": 1080,
+      "height": 1920
+    },
+    "container": "mp4",
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "fps": 30,
+    "orientation": "vertical",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels"
+    ]
+  },
+  "platforms": [
+    "youtube_shorts",
+    "tiktok",
+    "instagram_reels",
+    "facebook_reels"
+  ],
+  "resolution": "1080x1920",
+  "aspect_ratio": "9:16",
+  "duration_sec": 60.0,
+  "timeline": {
+    "fps": 30,
+    "total_duration_sec": 60.0,
+    "segment_count": 6,
+    "segments": [
+      {
+        "scene_id": 1,
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "duration": 2.0,
+        "narration_reference": "narration/scene_1",
+        "visual_reference": "visual/scene_1",
+        "caption_reference": "captions/scene_1",
+        "audio_reference": "audio/scene_1",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "quick_punch_in",
+        "overlay_text": "When the Sun and",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 2,
+        "start_time": 2.0,
+        "end_time": 10.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_2",
+        "visual_reference": "visual/scene_2",
+        "caption_reference": "captions/scene_2",
+        "audio_reference": "audio/scene_2",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "But when they pull",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 3,
+        "start_time": 10.0,
+        "end_time": 20.0,
+        "duration": 10.0,
+        "narration_reference": "narration/scene_3",
+        "visual_reference": "visual/scene_3",
+        "caption_reference": "captions/scene_3",
+        "audio_reference": "audio/scene_3",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Spring tides\u2014higher and stronger\u2014occur",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 4,
+        "start_time": 20.0,
+        "end_time": 30.0,
+        "duration": 10.0,
+        "narration_reference": "narration/scene_4",
+        "visual_reference": "visual/scene_4",
+        "caption_reference": "captions/scene_4",
+        "audio_reference": "audio/scene_4",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Neap tides, on the",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 5,
+        "start_time": 30.0,
+        "end_time": 50.0,
+        "duration": 20.0,
+        "narration_reference": "narration/scene_5",
+        "visual_reference": "visual/scene_5",
+        "caption_reference": "captions/scene_5",
+        "audio_reference": "audio/scene_5",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Understanding these cycles helps",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 6,
+        "start_time": 50.0,
+        "end_time": 60.0,
+        "duration": 10.0,
+        "narration_reference": "narration/scene_6",
+        "visual_reference": "visual/scene_6",
+        "caption_reference": "captions/scene_6",
+        "audio_reference": "audio/scene_6",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Want to dive deeper",
+        "render_status": "planned"
+      }
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "scene_render_plan": [
+    {
+      "scene_id": 1,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Hook visual: When the Sun and Moon align, tides soar to new heights.",
+      "video_prompt": "Cinematic motion: Hook visual: When the Sun and Moon align, tides soar to new heights.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "subtle push",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "quick_punch_in",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.188
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 70
+      },
+      "text_overlays": [
+        {
+          "text": "When the Sun and",
+          "treatment": "",
+          "start_sec": 0.0,
+          "end_sec": 2.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "bass hit",
+          "at_sec": 0.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "When the Sun and Moon align, tides soar to new heights.",
+      "duration_sec": 2.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Hook visual: When the Sun and Moon align, tides soar to new heights.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 1
+      }
+    },
+    {
+      "scene_id": 2,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Context visual: But when they pull at right angles? Tides calm down. Welcome to the world of tides!",
+      "video_prompt": "Cinematic motion: Context visual: But when they pull at right angles? Tides calm down. Welcome to the world of tides!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "But when they pull",
+          "treatment": "",
+          "start_sec": 2.0,
+          "end_sec": 10.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 2.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "But when they pull at right angles? Tides calm down. Welcome to the world of tides!",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Context visual: But when they pull at right angles? Tides calm down. Welcome to the world of tides!",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 2
+      }
+    },
+    {
+      "scene_id": 3,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Escalation visual: Spring tides\u2014higher and stronger\u2014occur during full and new moons.",
+      "video_prompt": "Cinematic motion: Escalation visual: Spring tides\u2014higher and stronger\u2014occur during full and new moons.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Spring tides\u2014higher and stronger\u2014occur",
+          "treatment": "",
+          "start_sec": 10.0,
+          "end_sec": 20.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 10.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Spring tides\u2014higher and stronger\u2014occur during full and new moons.",
+      "duration_sec": 10.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Escalation visual: Spring tides\u2014higher and stronger\u2014occur during full and new moons.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 3
+      }
+    },
+    {
+      "scene_id": 4,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Evidence visual: Neap tides, on the other hand, show up during the first and last quarters. They keep things moderate.",
+      "video_prompt": "Cinematic motion: Evidence visual: Neap tides, on the other hand, show up during the first and last quarters. They keep things moderate.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Neap tides, on the",
+          "treatment": "",
+          "start_sec": 20.0,
+          "end_sec": 30.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 20.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Neap tides, on the other hand, show up during the first and last quarters. They keep things moderate.",
+      "duration_sec": 10.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Evidence visual: Neap tides, on the other hand, show up during the first and last quarters. They keep things moderate.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 4
+      }
+    },
+    {
+      "scene_id": 5,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Payoff visual: Understanding these cycles helps us predict coastal behaviors and marine life patterns. Fascinating, right?",
+      "video_prompt": "Cinematic motion: Payoff visual: Understanding these cycles helps us predict coastal behaviors and marine life patterns. Fascinating, right?",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Understanding these cycles helps",
+          "treatment": "",
+          "start_sec": 30.0,
+          "end_sec": 50.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 30.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Understanding these cycles helps us predict coastal behaviors and marine life patterns. Fascinating, right?",
+      "duration_sec": 20.0,
+      "resolved_asset": {}
+    },
+    {
+      "scene_id": 6,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Cta visual: Want to dive deeper into science? Hit that follow! See you next time!",
+      "video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into science? Hit that follow! See you next time!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Want to dive deeper",
+          "treatment": "",
+          "start_sec": 50.0,
+          "end_sec": 60.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 50.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Want to dive deeper into science? Hit that follow! See you next time!",
+      "duration_sec": 10.0,
+      "resolved_asset": {}
+    }
+  ],
+  "caption_render_plan": {
+    "mode": "word_by_word",
+    "style_preset": "bold_pop",
+    "style": {
+      "font": "Montserrat ExtraBold",
+      "size_pct": 4.8,
+      "fill": "#FFFFFF",
+      "stroke": "#000000",
+      "stroke_width_px": 6,
+      "emphasis_fill": "#FFD400",
+      "animation": "word pop 1.08x on entry",
+      "case": "upper"
+    },
+    "available_presets": [
+      "bold_pop",
+      "clean_minimal",
+      "karaoke_highlight",
+      "documentary_lower_third"
+    ],
+    "safe_area": {
+      "top_pct": 12.0,
+      "bottom_pct": 20.0,
+      "left_pct": 6.0,
+      "right_pct": 12.0
+    },
+    "platform_layouts": {
+      "youtube_shorts": {
+        "anchor_y_pct": 68.0,
+        "notes": "clear the title/channel block at the bottom"
+      },
+      "tiktok": {
+        "anchor_y_pct": 64.0,
+        "notes": "clear caption + music marquee, keep off the right rail"
+      },
+      "instagram_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "clear the audio attribution row"
+      },
+      "facebook_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "mirror the Reels layout"
+      }
+    },
+    "segments": [
+      {
+        "scene_id": 1,
+        "mode": "word_by_word",
+        "start_sec": 0.0,
+        "end_sec": 2.0,
+        "sentence": "When the Sun and Moon align, tides soar to new heights.",
+        "words": [
+          {
+            "word": "When",
+            "start_sec": 0.0,
+            "end_sec": 0.18,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 0.18,
+            "end_sec": 0.34,
+            "emphasis": false
+          },
+          {
+            "word": "Sun",
+            "start_sec": 0.34,
+            "end_sec": 0.49,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 0.49,
+            "end_sec": 0.65,
+            "emphasis": false
+          },
+          {
+            "word": "Moon",
+            "start_sec": 0.65,
+            "end_sec": 0.83,
+            "emphasis": false
+          },
+          {
+            "word": "align",
+            "start_sec": 0.83,
+            "end_sec": 1.05,
+            "emphasis": false
+          },
+          {
+            "word": "tides",
+            "start_sec": 1.05,
+            "end_sec": 1.26,
+            "emphasis": false
+          },
+          {
+            "word": "soar",
+            "start_sec": 1.26,
+            "end_sec": 1.45,
+            "emphasis": false
+          },
+          {
+            "word": "to",
+            "start_sec": 1.45,
+            "end_sec": 1.57,
+            "emphasis": false
+          },
+          {
+            "word": "new",
+            "start_sec": 1.57,
+            "end_sec": 1.72,
+            "emphasis": false
+          },
+          {
+            "word": "heights",
+            "start_sec": 1.72,
+            "end_sec": 2.0,
+            "emphasis": true
+          }
+        ],
+        "emphasis_words": [
+          "heights"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 2,
+        "mode": "word_by_word",
+        "start_sec": 2.0,
+        "end_sec": 10.0,
+        "sentence": "But when they pull at right angles? Tides calm down. Welcome to the world of tides!",
+        "words": [
+          {
+            "word": "But",
+            "start_sec": 2.0,
+            "end_sec": 2.41,
+            "emphasis": false
+          },
+          {
+            "word": "when",
+            "start_sec": 2.41,
+            "end_sec": 2.91,
+            "emphasis": false
+          },
+          {
+            "word": "they",
+            "start_sec": 2.91,
+            "end_sec": 3.4,
+            "emphasis": false
+          },
+          {
+            "word": "pull",
+            "start_sec": 3.4,
+            "end_sec": 3.9,
+            "emphasis": false
+          },
+          {
+            "word": "at",
+            "start_sec": 3.9,
+            "end_sec": 4.23,
+            "emphasis": false
+          },
+          {
+            "word": "right",
+            "start_sec": 4.23,
+            "end_sec": 4.8,
+            "emphasis": false
+          },
+          {
+            "word": "angles",
+            "start_sec": 4.8,
+            "end_sec": 5.46,
+            "emphasis": true
+          },
+          {
+            "word": "Tides",
+            "start_sec": 5.46,
+            "end_sec": 6.04,
+            "emphasis": false
+          },
+          {
+            "word": "calm",
+            "start_sec": 6.04,
+            "end_sec": 6.54,
+            "emphasis": false
+          },
+          {
+            "word": "down",
+            "start_sec": 6.54,
+            "end_sec": 7.03,
+            "emphasis": false
+          },
+          {
+            "word": "Welcome",
+            "start_sec": 7.03,
+            "end_sec": 7.77,
+            "emphasis": true
+          },
+          {
+            "word": "to",
+            "start_sec": 7.77,
+            "end_sec": 8.1,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 8.1,
+            "end_sec": 8.52,
+            "emphasis": false
+          },
+          {
+            "word": "world",
+            "start_sec": 8.52,
+            "end_sec": 9.09,
+            "emphasis": false
+          },
+          {
+            "word": "of",
+            "start_sec": 9.09,
+            "end_sec": 9.42,
+            "emphasis": false
+          },
+          {
+            "word": "tides",
+            "start_sec": 9.42,
+            "end_sec": 10.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "Welcome",
+          "angles"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 3,
+        "mode": "word_by_word",
+        "start_sec": 10.0,
+        "end_sec": 20.0,
+        "sentence": "Spring tides\u2014higher and stronger\u2014occur during full and new moons.",
+        "words": [
+          {
+            "word": "Spring",
+            "start_sec": 10.0,
+            "end_sec": 11.05,
+            "emphasis": false
+          },
+          {
+            "word": "tides",
+            "start_sec": 11.05,
+            "end_sec": 11.97,
+            "emphasis": false
+          },
+          {
+            "word": "higher",
+            "start_sec": 11.97,
+            "end_sec": 13.03,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 13.03,
+            "end_sec": 13.68,
+            "emphasis": false
+          },
+          {
+            "word": "stronger",
+            "start_sec": 13.68,
+            "end_sec": 15.0,
+            "emphasis": true
+          },
+          {
+            "word": "occur",
+            "start_sec": 15.0,
+            "end_sec": 15.92,
+            "emphasis": false
+          },
+          {
+            "word": "during",
+            "start_sec": 15.92,
+            "end_sec": 16.97,
+            "emphasis": false
+          },
+          {
+            "word": "full",
+            "start_sec": 16.97,
+            "end_sec": 17.76,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 17.76,
+            "end_sec": 18.42,
+            "emphasis": false
+          },
+          {
+            "word": "new",
+            "start_sec": 18.42,
+            "end_sec": 19.08,
+            "emphasis": false
+          },
+          {
+            "word": "moons",
+            "start_sec": 19.08,
+            "end_sec": 20.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "stronger"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 4,
+        "mode": "word_by_word",
+        "start_sec": 20.0,
+        "end_sec": 30.0,
+        "sentence": "Neap tides, on the other hand, show up during the first and last quarters. They keep things moderate.",
+        "words": [
+          {
+            "word": "Neap",
+            "start_sec": 20.0,
+            "end_sec": 20.52,
+            "emphasis": false
+          },
+          {
+            "word": "tides",
+            "start_sec": 20.52,
+            "end_sec": 21.12,
+            "emphasis": false
+          },
+          {
+            "word": "on",
+            "start_sec": 21.12,
+            "end_sec": 21.47,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 21.47,
+            "end_sec": 21.9,
+            "emphasis": false
+          },
+          {
+            "word": "other",
+            "start_sec": 21.9,
+            "end_sec": 22.5,
+            "emphasis": false
+          },
+          {
+            "word": "hand",
+            "start_sec": 22.5,
+            "end_sec": 23.02,
+            "emphasis": false
+          },
+          {
+            "word": "show",
+            "start_sec": 23.02,
+            "end_sec": 23.53,
+            "emphasis": false
+          },
+          {
+            "word": "up",
+            "start_sec": 23.53,
+            "end_sec": 23.88,
+            "emphasis": false
+          },
+          {
+            "word": "during",
+            "start_sec": 23.88,
+            "end_sec": 24.57,
+            "emphasis": true
+          },
+          {
+            "word": "the",
+            "start_sec": 24.57,
+            "end_sec": 25.0,
+            "emphasis": false
+          },
+          {
+            "word": "first",
+            "start_sec": 25.0,
+            "end_sec": 25.6,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 25.6,
+            "end_sec": 26.03,
+            "emphasis": false
+          },
+          {
+            "word": "last",
+            "start_sec": 26.03,
+            "end_sec": 26.55,
+            "emphasis": false
+          },
+          {
+            "word": "quarters",
+            "start_sec": 26.55,
+            "end_sec": 27.41,
+            "emphasis": true
+          },
+          {
+            "word": "They",
+            "start_sec": 27.41,
+            "end_sec": 27.93,
+            "emphasis": false
+          },
+          {
+            "word": "keep",
+            "start_sec": 27.93,
+            "end_sec": 28.45,
+            "emphasis": false
+          },
+          {
+            "word": "things",
+            "start_sec": 28.45,
+            "end_sec": 29.14,
+            "emphasis": false
+          },
+          {
+            "word": "moderate",
+            "start_sec": 29.14,
+            "end_sec": 30.0,
+            "emphasis": true
+          }
+        ],
+        "emphasis_words": [
+          "during",
+          "moderate",
+          "quarters"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 5,
+        "mode": "word_by_word",
+        "start_sec": 30.0,
+        "end_sec": 50.0,
+        "sentence": "Understanding these cycles helps us predict coastal behaviors and marine life patterns. Fascinating, right?",
+        "words": [
+          {
+            "word": "Understanding",
+            "start_sec": 30.0,
+            "end_sec": 32.52,
+            "emphasis": true
+          },
+          {
+            "word": "these",
+            "start_sec": 32.52,
+            "end_sec": 33.7,
+            "emphasis": false
+          },
+          {
+            "word": "cycles",
+            "start_sec": 33.7,
+            "end_sec": 35.04,
+            "emphasis": false
+          },
+          {
+            "word": "helps",
+            "start_sec": 35.04,
+            "end_sec": 36.22,
+            "emphasis": false
+          },
+          {
+            "word": "us",
+            "start_sec": 36.22,
+            "end_sec": 36.89,
+            "emphasis": false
+          },
+          {
+            "word": "predict",
+            "start_sec": 36.89,
+            "end_sec": 38.4,
+            "emphasis": false
+          },
+          {
+            "word": "coastal",
+            "start_sec": 38.4,
+            "end_sec": 39.92,
+            "emphasis": false
+          },
+          {
+            "word": "behaviors",
+            "start_sec": 39.92,
+            "end_sec": 41.76,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 41.76,
+            "end_sec": 42.61,
+            "emphasis": false
+          },
+          {
+            "word": "marine",
+            "start_sec": 42.61,
+            "end_sec": 43.95,
+            "emphasis": false
+          },
+          {
+            "word": "life",
+            "start_sec": 43.95,
+            "end_sec": 44.96,
+            "emphasis": false
+          },
+          {
+            "word": "patterns",
+            "start_sec": 44.96,
+            "end_sec": 46.64,
+            "emphasis": false
+          },
+          {
+            "word": "Fascinating",
+            "start_sec": 46.64,
+            "end_sec": 48.82,
+            "emphasis": true
+          },
+          {
+            "word": "right",
+            "start_sec": 48.82,
+            "end_sec": 50.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "Fascinating",
+          "Understanding"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 6,
+        "mode": "word_by_word",
+        "start_sec": 50.0,
+        "end_sec": 60.0,
+        "sentence": "Want to dive deeper into science? Hit that follow! See you next time!",
+        "words": [
+          {
+            "word": "Want",
+            "start_sec": 50.0,
+            "end_sec": 50.75,
+            "emphasis": false
+          },
+          {
+            "word": "to",
+            "start_sec": 50.75,
+            "end_sec": 51.25,
+            "emphasis": false
+          },
+          {
+            "word": "dive",
+            "start_sec": 51.25,
+            "end_sec": 52.0,
+            "emphasis": false
+          },
+          {
+            "word": "deeper",
+            "start_sec": 52.0,
+            "end_sec": 53.0,
+            "emphasis": true
+          },
+          {
+            "word": "into",
+            "start_sec": 53.0,
+            "end_sec": 53.75,
+            "emphasis": false
+          },
+          {
+            "word": "science",
+            "start_sec": 53.75,
+            "end_sec": 54.88,
+            "emphasis": true
+          },
+          {
+            "word": "Hit",
+            "start_sec": 54.88,
+            "end_sec": 55.5,
+            "emphasis": false
+          },
+          {
+            "word": "that",
+            "start_sec": 55.5,
+            "end_sec": 56.25,
+            "emphasis": false
+          },
+          {
+            "word": "follow",
+            "start_sec": 56.25,
+            "end_sec": 57.25,
+            "emphasis": false
+          },
+          {
+            "word": "See",
+            "start_sec": 57.25,
+            "end_sec": 57.88,
+            "emphasis": false
+          },
+          {
+            "word": "you",
+            "start_sec": 57.88,
+            "end_sec": 58.5,
+            "emphasis": false
+          },
+          {
+            "word": "next",
+            "start_sec": 58.5,
+            "end_sec": 59.25,
+            "emphasis": false
+          },
+          {
+            "word": "time",
+            "start_sec": 59.25,
+            "end_sec": 60.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "deeper",
+          "science"
+        ],
+        "placement": "bottom third, safe zone"
+      }
+    ]
+  },
+  "audio_mix_plan": {
+    "duration_sec": 60.0,
+    "tracks": {
+      "narration": {
+        "level_db": -3.0,
+        "voice_style": {},
+        "segments": [
+          {
+            "scene_id": 1,
+            "start_sec": 0.0,
+            "end_sec": 2.0,
+            "text": "When the Sun and Moon align, tides soar to new heights.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_spring_tide_001/voice.mp3"
+          },
+          {
+            "scene_id": 2,
+            "start_sec": 2.0,
+            "end_sec": 10.0,
+            "text": "But when they pull at right angles? Tides calm down. Welcome to the world of tides!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_spring_tide_001/voice.mp3"
+          },
+          {
+            "scene_id": 3,
+            "start_sec": 10.0,
+            "end_sec": 20.0,
+            "text": "Spring tides\u2014higher and stronger\u2014occur during full and new moons.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_spring_tide_001/voice.mp3"
+          },
+          {
+            "scene_id": 4,
+            "start_sec": 20.0,
+            "end_sec": 30.0,
+            "text": "Neap tides, on the other hand, show up during the first and last quarters. They keep things moderate.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_spring_tide_001/voice.mp3"
+          },
+          {
+            "scene_id": 5,
+            "start_sec": 30.0,
+            "end_sec": 50.0,
+            "text": "Understanding these cycles helps us predict coastal behaviors and marine life patterns. Fascinating, right?",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_spring_tide_001/voice.mp3"
+          },
+          {
+            "scene_id": 6,
+            "start_sec": 50.0,
+            "end_sec": 60.0,
+            "text": "Want to dive deeper into science? Hit that follow! See you next time!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_spring_tide_001/voice.mp3"
+          }
+        ]
+      },
+      "music": {
+        "level_db": -18.0,
+        "style": "educational ambient",
+        "bpm_range": [
+          90,
+          120
+        ],
+        "energy_curve": [
+          "rise",
+          "sustain",
+          "resolve"
+        ],
+        "ducking": {
+          "enabled": true,
+          "trigger": "narration",
+          "duck_to_db": -26.0,
+          "attack_ms": 150,
+          "release_ms": 400
+        }
+      },
+      "sfx": {
+        "level_db": -10.0,
+        "cues": [
+          {
+            "scene_id": 1,
+            "cue": "bass hit",
+            "at_sec": 0.0
+          },
+          {
+            "scene_id": 2,
+            "cue": "whoosh",
+            "at_sec": 2.0
+          },
+          {
+            "scene_id": 3,
+            "cue": "whoosh",
+            "at_sec": 10.0
+          },
+          {
+            "scene_id": 4,
+            "cue": "whoosh",
+            "at_sec": 20.0
+          },
+          {
+            "scene_id": 5,
+            "cue": "whoosh",
+            "at_sec": 30.0
+          },
+          {
+            "scene_id": 6,
+            "cue": "whoosh",
+            "at_sec": 50.0
+          }
+        ]
+      },
+      "transitions": {
+        "level_db": -12.0,
+        "cues": []
+      }
+    },
+    "silence_drops": [
+      {
+        "scene_id": 5,
+        "at_sec": 29.6,
+        "duration_sec": 0.4,
+        "reason": "drop the full mix before the payoff beat"
+      }
+    ],
+    "loudness_target": {
+      "standard": "platform_safe_placeholder",
+      "integrated_lufs": -14.0,
+      "true_peak_db": -1.0,
+      "notes": "Verify with a real loudness pass when actual audio is rendered."
+    }
+  },
+  "transition_plan": {
+    "supported_types": [
+      "cut",
+      "fade",
+      "push",
+      "zoom",
+      "whip_pan",
+      "glitch",
+      "flash",
+      "documentary_slow_zoom",
+      "cinematic_push_in",
+      "quick_cut"
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "motion_plan": [
+    {
+      "scene_id": 1,
+      "effect": "quick_punch_in",
+      "intensity": 70,
+      "duration_sec": 2.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.188
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_out"
+    },
+    {
+      "scene_id": 2,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 3,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 10.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 4,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 10.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 5,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 20.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 6,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 10.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    }
+  ],
+  "asset_requirements": [],
+  "missing_assets": [],
+  "render_warnings": [],
+  "estimated_render_duration_sec": 60.0,
+  "production_readiness_score": 100,
+  "validation": {
+    "status": "SUCCESS",
+    "checks": [
+      {
+        "check": "scenes_present",
+        "passed": true,
+        "detail": "6 scenes in the plan."
+      },
+      {
+        "check": "scenes_have_visuals",
+        "passed": true,
+        "detail": "Every scene has a visual asset or prompt."
+      },
+      {
+        "check": "scenes_have_narration",
+        "passed": true,
+        "detail": "Every scene has narration."
+      },
+      {
+        "check": "captions_exist",
+        "passed": true,
+        "detail": "6 caption segments planned."
+      },
+      {
+        "check": "audio_plan_exists",
+        "passed": true,
+        "detail": "Audio mix plan covers narration/music/SFX tracks."
+      },
+      {
+        "check": "runtime_reasonable",
+        "passed": true,
+        "detail": "Total runtime 60.0s is inside the 5.0-180.0s short-form window."
+      },
+      {
+        "check": "output_format_supported",
+        "passed": true,
+        "detail": "9:16 1080x1920 MP4 \u2014 supported."
+      },
+      {
+        "check": "assets_resolved",
+        "passed": true,
+        "detail": "All asset requests were fulfilled."
+      }
+    ],
+    "problems": [],
+    "production_readiness_score": 100
+  },
+  "render_status": "SUCCESS",
+  "mock_output_path": "data/productions/sp100w4_spring_tide_001/render.mp4",
+  "output_path": "data/productions/sp100w4_spring_tide_001/render.mp4",
+  "mp4_path": "data/productions/sp100w4_spring_tide_001/render.mp4",
+  "file_uri": "data/productions/sp100w4_spring_tide_001/render.mp4",
+  "render_log": [
+    "color_bed\u2192mp4 (no visual assets resolved)",
+    "ffmpeg_exit=0"
+  ],
+  "render_job": {},
+  "mock": false,
+  "assembly": {
+    "ok": true,
+    "mock": false,
+    "error": "",
+    "output_path": "data/productions/sp100w4_spring_tide_001/render.mp4",
+    "absolute_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w4_spring_tide_001/render.mp4",
+    "bytes": 374795,
+    "duration_sec": 60.0,
+    "resolution": "1080x1920",
+    "ffmpeg": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/venv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "log": [
+      "color_bed\u2192mp4 (no visual assets resolved)",
+      "ffmpeg_exit=0"
+    ],
+    "visual_count": 0,
+    "has_audio": true,
+    "manifest": {
+      "title": "Spring Tides vs Neap Tides",
+      "format": {
+        "aspect_ratio": "9:16",
+        "resolution": {
+          "width": 1080,
+          "height": 1920
+        },
+        "container": "mp4",
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "fps": 30,
+        "orientation": "vertical",
+        "platforms": [
+          "youtube_shorts",
+          "tiktok",
+          "instagram_reels",
+          "facebook_reels"
+        ]
+      },
+      "visuals": [],
+      "audio": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w4_spring_tide_001/voice.mp3"
+    }
+  },
+  "render_manifest": {
+    "scenes": 6,
+    "timeline_segments": 6,
+    "caption_segments": 6,
+    "audio_tracks": [
+      "narration",
+      "music",
+      "sfx",
+      "transitions"
+    ],
+    "transitions": 5,
+    "assets_requested": 0,
+    "assets_missing": 0,
+    "warnings": 0,
+    "readiness": 100,
+    "ready_for_publishing": true,
+    "real_mp4": true
+  }
+}

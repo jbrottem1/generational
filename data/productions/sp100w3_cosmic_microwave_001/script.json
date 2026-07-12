@@ -1,0 +1,84 @@
+{
+  "title": "The Universe's Baby Picture",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the cosmic microwave background, the universe's faint glow from its infancy.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 3.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you the universe has a baby picture?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 3.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "It\u2019s called the cosmic microwave background, or CMB.",
+      "emotion": "curiosity",
+      "delivery": "engaging and clear",
+      "retention_device": "intriguing fact"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "This light is leftover energy from when the universe became transparent.",
+      "emotion": "curiosity",
+      "delivery": "slightly more intense",
+      "retention_device": "visualization prompt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Imagine, just 380,000 years after the Big Bang, it was released into space.",
+      "emotion": "curiosity",
+      "delivery": "thoughtful and reflective",
+      "retention_device": "time travel analogy"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "And now, it's all around us, a faint glow we can detect.",
+      "emotion": "curiosity",
+      "delivery": "excited and informative",
+      "retention_device": "unexpected connection"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "This cosmic snapshot helps us understand the universe\u2019s infancy and evolution.",
+      "emotion": "curiosity",
+      "delivery": "inspirational",
+      "retention_device": "knowledge gain"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more cosmic secrets? Hit that follow button!",
+      "emotion": "curiosity",
+      "delivery": "inviting and enthusiastic",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "What if I told you the universe has a baby picture? It\u2019s called the cosmic microwave background, or CMB. This light is leftover energy from when the universe became transparent. Imagine, just 380,000 years after the Big Bang, it was released into space. And now, it's all around us, a faint glow we can detect. This cosmic snapshot helps us understand the universe\u2019s infancy and evolution. Want to learn more cosmic secrets? Hit that follow button!",
+  "call_to_action": "Want to learn more cosmic secrets? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:01:36.060784+00:00",
+  "source": "ai"
+}

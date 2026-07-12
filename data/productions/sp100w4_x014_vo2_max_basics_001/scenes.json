@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about VO2 max basics.",
+    "visual_description": "Hook visual: Here's what science actually says about VO2 max basics.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about VO2 max basics.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about VO2 max basics.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "VO2 max measures your body\u2019s ability to utilize oxygen during intense exercise. But why does that matter?",
+    "visual_description": "Context visual: VO2 max measures your body\u2019s ability to utilize oxygen during intense exercise. But why does that matter?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: VO2 max measures your body\u2019s ability to utilize oxygen during intense exercise. But why does that matter?",
+    "ai_video_prompt": "Cinematic motion: Context visual: VO2 max measures your body\u2019s ability to utilize oxygen during intense exercise. But why does that matter?",
+    "stock_footage_query": "",
+    "text_overlay": "VO2 max measures your",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Higher VO2 max means better endurance and performance. Think of elite athletes versus casual runners.",
+    "visual_description": "Escalation visual: Higher VO2 max means better endurance and performance. Think of elite athletes versus casual runners.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Higher VO2 max means better endurance and performance. Think of elite athletes versus casual runners.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Higher VO2 max means better endurance and performance. Think of elite athletes versus casual runners.",
+    "stock_footage_query": "",
+    "text_overlay": "Higher VO2 max means",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Research shows that VO2 max can predict longevity. The fitter you are, the longer you may live.",
+    "visual_description": "Evidence visual: Research shows that VO2 max can predict longevity. The fitter you are, the longer you may live.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows that VO2 max can predict longevity. The fitter you are, the longer you may live.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows that VO2 max can predict longevity. The fitter you are, the longer you may live.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows that VO2",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "So, improving your VO2 max isn\u2019t just about better workouts\u2014it\u2019s about a healthier life.",
+    "visual_description": "Payoff visual: So, improving your VO2 max isn\u2019t just about better workouts\u2014it\u2019s about a healthier life.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, improving your VO2 max isn\u2019t just about better workouts\u2014it\u2019s about a healthier life.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, improving your VO2 max isn\u2019t just about better workouts\u2014it\u2019s about a healthier life.",
+    "stock_footage_query": "",
+    "text_overlay": "So, improving your VO2",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Want to learn more about boosting your fitness? Follow for tips and strategies!",
+    "visual_description": "Cta visual: Want to learn more about boosting your fitness? Follow for tips and strategies!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to learn more about boosting your fitness? Follow for tips and strategies!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to learn more about boosting your fitness? Follow for tips and strategies!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

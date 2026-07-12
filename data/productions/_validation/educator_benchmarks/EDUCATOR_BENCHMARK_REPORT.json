@@ -1,0 +1,121 @@
+{
+  "project": "Generational Method Educator Benchmarks",
+  "doctrine": "GENERATIONAL_METHOD.md",
+  "generated_at": "2026-07-11T02:44:56.686281+00:00",
+  "character": "CHAR-STICK-001",
+  "teaching_style": "generational_method",
+  "requested": 2,
+  "completed": 2,
+  "success": true,
+  "export_directory": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational",
+  "review_categories": [
+    "teaching_clarity",
+    "animation_quality",
+    "gesture_quality",
+    "synchronization",
+    "viewer_engagement",
+    "scientific_accuracy",
+    "visual_storytelling",
+    "retention_potential"
+  ],
+  "episodes": [
+    {
+      "title": "Why Does a Heavy Bowling Ball and a Light Basketball Feel So Different?",
+      "filename": "Physics_Benchmark_001_Bowling_Ball_v2.mp4",
+      "success": true,
+      "status": "READY",
+      "demo_id": "bowling_momentum",
+      "duration_sec": 22.08,
+      "qc": {
+        "mouth_varies": true,
+        "has_silence_closed": true,
+        "has_speech_open": true,
+        "speaking_ratio": 0.791,
+        "idle_motion": true,
+        "blink_programmed": true,
+        "educator_mode": true,
+        "demo_id": "bowling_momentum",
+        "duration_sec": 22.08,
+        "frame_count": 441,
+        "grounded": true,
+        "interactive_teaching": true,
+        "gesture_counts": {
+          "idle": 149,
+          "think": 14,
+          "point": 124,
+          "push": 154
+        },
+        "idle_ratio": 0.338,
+        "walk_ratio": 0.05,
+        "purposeful_gestures": true,
+        "passed": true
+      },
+      "review": {
+        "teaching_clarity": 9,
+        "animation_quality": 8,
+        "gesture_quality": 9,
+        "synchronization": 9,
+        "viewer_engagement": 9,
+        "scientific_accuracy": 10,
+        "visual_storytelling": 9,
+        "retention_potential": 9
+      },
+      "review_passed": true,
+      "teaching_method": "generational_method",
+      "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Physics_Benchmark_001_Bowling_Ball_v2.mp4",
+      "export_bytes": 588348,
+      "render_time_sec": 9.54,
+      "character_id": "CHAR-STICK-001",
+      "role": "animated_educator"
+    },
+    {
+      "title": "Why Doesn't Gravity Pull Us Sideways?",
+      "filename": "Physics_Benchmark_002_Gravity_v2.mp4",
+      "success": true,
+      "status": "READY",
+      "demo_id": "gravity_direction",
+      "duration_sec": 17.856,
+      "qc": {
+        "mouth_varies": true,
+        "has_silence_closed": true,
+        "has_speech_open": true,
+        "speaking_ratio": 0.751,
+        "idle_motion": true,
+        "blink_programmed": true,
+        "educator_mode": true,
+        "demo_id": "gravity_direction",
+        "duration_sec": 17.856,
+        "frame_count": 357,
+        "grounded": true,
+        "interactive_teaching": true,
+        "gesture_counts": {
+          "idle": 154,
+          "think": 11,
+          "point": 174,
+          "react": 18
+        },
+        "idle_ratio": 0.431,
+        "walk_ratio": 0.05,
+        "purposeful_gestures": true,
+        "passed": true
+      },
+      "review": {
+        "teaching_clarity": 9,
+        "animation_quality": 8,
+        "gesture_quality": 9,
+        "synchronization": 9,
+        "viewer_engagement": 9,
+        "scientific_accuracy": 10,
+        "visual_storytelling": 9,
+        "retention_potential": 9
+      },
+      "review_passed": true,
+      "teaching_method": "generational_method",
+      "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Physics_Benchmark_002_Gravity_v2.mp4",
+      "export_bytes": 474593,
+      "render_time_sec": 8.59,
+      "character_id": "CHAR-STICK-001",
+      "role": "animated_educator"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Spaced Repetition",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the science behind spaced repetition and its effectiveness in learning.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about spaced repetition.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Spaced repetition leverages the brain's natural ability to remember information more effectively over time.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But here's the twist: most don\u2019t use it correctly! It\u2019s not just about reviewing material...",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 28.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that spacing out your reviews boosts retention by 50% or more!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 28.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "So, are you ready to learn smarter? Implementing spaced repetition could change your study game for good!",
+      "emotion": "anticipation",
+      "delivery": "motivational",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Try it out and let me know your results! Follow for more science tips!",
+      "emotion": "encouragement",
+      "delivery": "friendly",
+      "retention_device": "natural CTA"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about spaced repetition. Spaced repetition leverages the brain's natural ability to remember information more effectively over time. But here's the twist: most don\u2019t use it correctly! It\u2019s not just about reviewing material... Studies show that spacing out your reviews boosts retention by 50% or more! So, are you ready to learn smarter? Implementing spaced repetition could change your study game for good! Try it out and let me know your results! Follow for more science tips!",
+  "call_to_action": "Try it out and let me know your results! Follow for more science tips!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:22:29.401897+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: What if I told you your cells have a ticking clock?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Meet telomeres \u2014 the protective caps at the ends of your chromosomes.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Every time a cell divides, these caps wear down, shortening your lifespan.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Telomerase is an enzyme that can rebuild these caps, but it\u2019s not a cure-all.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Understanding telomeres gives us a glimpse into the biology of aging.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about how this affects you? Like and follow for more insights!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: What if I told you your cells have a ticking clock?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Meet telomeres \u2014 the protective caps at the ends of your chromosomes.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Every time a cell divides, these caps wear down, shortening your lifespan.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Telomerase is an enzyme that can rebuild these caps, but it\u2019s not a cure-all.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Understanding telomeres gives us a glimpse into the biology of aging.",
+      "duration_sec": 14.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about how this affects you? Like and follow for more insights!",
+      "duration_sec": 10.0
+    }
+  ]
+}

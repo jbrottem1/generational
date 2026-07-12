@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about vaccine efficacy vs effectiveness.",
+    "visual_description": "Hook visual: Here's what science actually says about vaccine efficacy vs effectiveness.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about vaccine efficacy vs effectiveness.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about vaccine efficacy vs effectiveness.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "informative",
+    "length_sec": 8.0,
+    "narration": "Efficacy measures how well a vaccine works in controlled trials. Effectiveness? That's real-world performance.",
+    "visual_description": "Context visual: Efficacy measures how well a vaccine works in controlled trials. Effectiveness? That's real-world performance.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Efficacy measures how well a vaccine works in controlled trials. Effectiveness? That's real-world performance.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Efficacy measures how well a vaccine works in controlled trials. Effectiveness? That's real-world performance.",
+    "stock_footage_query": "",
+    "text_overlay": "Efficacy measures how well",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "inquisitive",
+    "length_sec": 8.0,
+    "narration": "Imagine a vaccine showing 95% efficacy in trials. But what about in everyday life? It may drop due to factors like behavior or virus variants.",
+    "visual_description": "Escalation visual: Imagine a vaccine showing 95% efficacy in trials. But what about in everyday life? It may drop due to factors like behav",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Imagine a vaccine showing 95% efficacy in trials. But what about in everyday life? It may drop due to factors like behav",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Imagine a vaccine showing 95% efficacy in trials. But what about in everyday life? It may drop due to factors like behav",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine a vaccine showing",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "concerned",
+    "length_sec": 10.0,
+    "narration": "Studies show that effectiveness can vary widely. For example, flu vaccines might be only 40% effective in a bad year.",
+    "visual_description": "Evidence visual: Studies show that effectiveness can vary widely. For example, flu vaccines might be only 40% effective in a bad year.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show that effectiveness can vary widely. For example, flu vaccines might be only 40% effective in a bad year.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show that effectiveness can vary widely. For example, flu vaccines might be only 40% effective in a bad year.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show that effectiveness",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 28.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "satisfied",
+    "length_sec": 12.0,
+    "narration": "Understanding this difference helps us make informed choices about vaccinations and public health.",
+    "visual_description": "Payoff visual: Understanding this difference helps us make informed choices about vaccinations and public health.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding this difference helps us make informed choices about vaccinations and public health.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding this difference helps us make informed choices about vaccinations and public health.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding this difference helps",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 28.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 28.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "inviting",
+    "length_sec": 20.0,
+    "narration": "Want to dive deeper into science? Hit that follow button!",
+    "visual_description": "Cta visual: Want to dive deeper into science? Hit that follow button!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into science? Hit that follow button!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into science? Hit that follow button!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about cognitive behavioral ideas.",
+    "visual_description": "Hook visual: Here's what science actually says about cognitive behavioral ideas.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about cognitive behavioral ideas.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about cognitive behavioral ideas.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Cognitive behavioral ideas, or CBT, focus on changing negative thought patterns.",
+    "visual_description": "Context visual: Cognitive behavioral ideas, or CBT, focus on changing negative thought patterns.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Cognitive behavioral ideas, or CBT, focus on changing negative thought patterns.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Cognitive behavioral ideas, or CBT, focus on changing negative thought patterns.",
+    "stock_footage_query": "",
+    "text_overlay": "Cognitive behavioral ideas, or",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But did you know these ideas are rooted in neuroscience?",
+    "visual_description": "Escalation visual: But did you know these ideas are rooted in neuroscience?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But did you know these ideas are rooted in neuroscience?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But did you know these ideas are rooted in neuroscience?",
+    "stock_footage_query": "",
+    "text_overlay": "But did you know",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Research shows that CBT can restructure neural pathways, boosting mental health.",
+    "visual_description": "Evidence visual: Research shows that CBT can restructure neural pathways, boosting mental health.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows that CBT can restructure neural pathways, boosting mental health.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows that CBT can restructure neural pathways, boosting mental health.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows that CBT",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But here's the twist: some studies indicate preliminary results can vary.",
+    "visual_description": "Pattern Interrupt visual: But here's the twist: some studies indicate preliminary results can vary.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: But here's the twist: some studies indicate preliminary results can vary.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: But here's the twist: some studies indicate preliminary results can vary.",
+    "stock_footage_query": "",
+    "text_overlay": "But here's the twist:",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "payoff",
+    "emotion": "hopeful",
+    "length_sec": 12.0,
+    "narration": "Understanding this can empower you to change your mindset and improve your life.",
+    "visual_description": "Payoff visual: Understanding this can empower you to change your mindset and improve your life.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding this can empower you to change your mindset and improve your life.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding this can empower you to change your mindset and improve your life.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding this can empower",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 46.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "Curious about how to apply these ideas? Like and follow for more insights.",
+    "visual_description": "Cta visual: Curious about how to apply these ideas? Like and follow for more insights.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about how to apply these ideas? Like and follow for more insights.",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about how to apply these ideas? Like and follow for more insights.",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about how to",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 46.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 46.0
+    }
+  }
+]

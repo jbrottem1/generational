@@ -1,0 +1,74 @@
+{
+  "title": "The Ozone Hole Is Healing",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the healing of the ozone layer after humanity's intervention.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "We broke the ozone layer, but guess what? It's healing.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "CFCs, used in everything from fridges to aerosols, were the culprits behind the damage.",
+      "emotion": "curiosity",
+      "delivery": "informative and engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But then came the Montreal Protocol, uniting countries to phase out these harmful chemicals.",
+      "emotion": "optimism",
+      "delivery": "uplifting",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "NOAA and NASA now report that the ozone layer is on the mend, recovering at a surprising rate.",
+      "emotion": "hopefulness",
+      "delivery": "confident and clear",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "In fact, we could see a fully healed ozone layer by 2060. Imagine that!",
+      "emotion": "hopefulness",
+      "delivery": "excited",
+      "retention_device": "visual imagery"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about our planet's recovery? Hit like and follow for more science insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "We broke the ozone layer, but guess what? It's healing. CFCs, used in everything from fridges to aerosols, were the culprits behind the damage. But then came the Montreal Protocol, uniting countries to phase out these harmful chemicals. NOAA and NASA now report that the ozone layer is on the mend, recovering at a surprising rate. In fact, we could see a fully healed ozone layer by 2060. Imagine that! Curious about our planet's recovery? Hit like and follow for more science insights!",
+  "call_to_action": "Hit like and follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:44:41.602710+00:00",
+  "source": "ai"
+}

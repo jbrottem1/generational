@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 3.0,
+    "narration": "What if I told you the universe has a baby picture?",
+    "visual_description": "Hook visual: What if I told you the universe has a baby picture?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you the universe has a baby picture?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you the universe has a baby picture?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 3.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 7.0,
+    "narration": "It\u2019s called the cosmic microwave background, or CMB.",
+    "visual_description": "Context visual: It\u2019s called the cosmic microwave background, or CMB.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: It\u2019s called the cosmic microwave background, or CMB.",
+    "ai_video_prompt": "Cinematic motion: Context visual: It\u2019s called the cosmic microwave background, or CMB.",
+    "stock_footage_query": "",
+    "text_overlay": "It\u2019s called the cosmic",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 3.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 3.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This light is leftover energy from when the universe became transparent.",
+    "visual_description": "Escalation visual: This light is leftover energy from when the universe became transparent.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: This light is leftover energy from when the universe became transparent.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: This light is leftover energy from when the universe became transparent.",
+    "stock_footage_query": "",
+    "text_overlay": "This light is leftover",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Imagine, just 380,000 years after the Big Bang, it was released into space.",
+    "visual_description": "Evidence visual: Imagine, just 380,000 years after the Big Bang, it was released into space.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Imagine, just 380,000 years after the Big Bang, it was released into space.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Imagine, just 380,000 years after the Big Bang, it was released into space.",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine, just 380,000 years",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "And now, it's all around us, a faint glow we can detect.",
+    "visual_description": "Pattern Interrupt visual: And now, it's all around us, a faint glow we can detect.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: And now, it's all around us, a faint glow we can detect.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: And now, it's all around us, a faint glow we can detect.",
+    "stock_footage_query": "",
+    "text_overlay": "And now, it's all",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "This cosmic snapshot helps us understand the universe\u2019s infancy and evolution.",
+    "visual_description": "Payoff visual: This cosmic snapshot helps us understand the universe\u2019s infancy and evolution.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This cosmic snapshot helps us understand the universe\u2019s infancy and evolution.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This cosmic snapshot helps us understand the universe\u2019s infancy and evolution.",
+    "stock_footage_query": "",
+    "text_overlay": "This cosmic snapshot helps",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Want to learn more cosmic secrets? Hit that follow button!",
+    "visual_description": "Cta visual: Want to learn more cosmic secrets? Hit that follow button!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to learn more cosmic secrets? Hit that follow button!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to learn more cosmic secrets? Hit that follow button!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

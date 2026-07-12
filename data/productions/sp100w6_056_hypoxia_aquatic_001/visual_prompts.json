@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: What if the ocean is holding its breath?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Hypoxia aquatic refers to low oxygen levels in water, affecting marine life drastically.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: This condition can lead to fish kills and the collapse of ecosystems.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Research shows areas like the Gulf of Mexico face severe hypoxia due to nutrient runoff.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Understanding hypoxia can help us protect our oceans for future generations.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about how you can help? Follow for more ways to save our seas!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: What if the ocean is holding its breath?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Hypoxia aquatic refers to low oxygen levels in water, affecting marine life drastically.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: This condition can lead to fish kills and the collapse of ecosystems.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Research shows areas like the Gulf of Mexico face severe hypoxia due to nutrient runoff.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Understanding hypoxia can help us protect our oceans for future generations.",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about how you can help? Follow for more ways to save our seas!",
+      "duration_sec": 22.0
+    }
+  ]
+}

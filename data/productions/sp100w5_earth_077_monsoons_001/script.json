@@ -1,0 +1,74 @@
+{
+  "title": "Monsoons",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Monsoons are complex weather systems driven by temperature differences and ocean currents.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about monsoons than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Monsoons occur when land heats up faster than oceans. This creates pressure differences.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "unexpected fact"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "As warm air rises, it pulls in moisture-laden winds, leading to heavy rains.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "visual imagery"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "These rains are crucial for agriculture in many regions, but they can also cause devastating floods.",
+      "emotion": "curiosity",
+      "delivery": "serious",
+      "retention_device": "contrast"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "So, next time you hear about monsoons, remember, there\u2019s science behind the storms.",
+      "emotion": "curiosity",
+      "delivery": "revelatory",
+      "retention_device": "summation"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more weather wonders? Hit like and follow for more!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about monsoons than social media does. Monsoons occur when land heats up faster than oceans. This creates pressure differences. As warm air rises, it pulls in moisture-laden winds, leading to heavy rains. These rains are crucial for agriculture in many regions, but they can also cause devastating floods. So, next time you hear about monsoons, remember, there\u2019s science behind the storms. Curious about more weather wonders? Hit like and follow for more!",
+  "call_to_action": "Hit like and follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:44:57.510577+00:00",
+  "source": "ai"
+}

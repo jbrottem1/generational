@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Here's what science actually says about angiogenesis cancer.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Angiogenesis is the process where new blood vessels form. It's crucial for tumors.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: As tumors grow, they need more nutrients. This is where angiogenesis comes into play.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Research shows that targeting angiogenesis can slow cancer progression. But results are still being explored.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Understanding this process opens doors to new treatments, potentially saving lives. Exciting, right?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to learn more about cancer research? Hit that follow button!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Here's what science actually says about angiogenesis cancer.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Angiogenesis is the process where new blood vessels form. It's crucial for tumors.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: As tumors grow, they need more nutrients. This is where angiogenesis comes into play.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Research shows that targeting angiogenesis can slow cancer progression. But results are still being explored.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Understanding this process opens doors to new treatments, potentially saving lives. Exciting, right?",
+      "duration_sec": 16.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to learn more about cancer research? Hit that follow button!",
+      "duration_sec": 18.0
+    }
+  ]
+}

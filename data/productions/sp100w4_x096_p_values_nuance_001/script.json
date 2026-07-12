@@ -1,0 +1,74 @@
+{
+  "title": "P values nuance",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Unpacking the complex truth about p values in research.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about p values nuance.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "P values determine if results are statistically significant, but the story doesn\u2019t end there.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "A p value below 0.05 often gets all the attention, but it\u2019s not a magic threshold.",
+      "emotion": "curiosity",
+      "delivery": "urgent",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "It can\u2019t tell us how important or relevant a finding is\u2014only if it\u2019s unlikely to occur by chance.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "surprise"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "So, when you hear p values, remember: context matters, and results can always vary.",
+      "emotion": "curiosity",
+      "delivery": "reflective",
+      "retention_device": "strong conclusion"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into statistics? Hit subscribe for more insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about p values nuance. P values determine if results are statistically significant, but the story doesn\u2019t end there. A p value below 0.05 often gets all the attention, but it\u2019s not a magic threshold. It can\u2019t tell us how important or relevant a finding is\u2014only if it\u2019s unlikely to occur by chance. So, when you hear p values, remember: context matters, and results can always vary. Want to dive deeper into statistics? Hit subscribe for more insights!",
+  "call_to_action": "Hit subscribe for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:26:16.726223+00:00",
+  "source": "ai"
+}

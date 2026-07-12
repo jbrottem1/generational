@@ -1,0 +1,74 @@
+{
+  "title": "Slow twitch muscle",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the fascinating world of slow twitch muscles and their unique capabilities.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about slow twitch muscle.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Slow twitch muscles, known for endurance, are crucial for activities like long-distance running.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "retention_hook"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "They contain more mitochondria, meaning they generate energy more efficiently.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research indicates that slow twitch fibers are less prone to fatigue, making them vital for lasting performance.",
+      "emotion": "curiosity",
+      "delivery": "authoritative",
+      "retention_device": "retention_hook"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "While preliminary studies show potential benefits in various sports, more research is needed to fully understand their impact.",
+      "emotion": "curiosity",
+      "delivery": "thought-provoking",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how to train your slow twitch muscles? Hit follow for more science insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "retention_hook"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about slow twitch muscle. Slow twitch muscles, known for endurance, are crucial for activities like long-distance running. They contain more mitochondria, meaning they generate energy more efficiently. Research indicates that slow twitch fibers are less prone to fatigue, making them vital for lasting performance. While preliminary studies show potential benefits in various sports, more research is needed to fully understand their impact. Curious about how to train your slow twitch muscles? Hit follow for more science insights!",
+  "call_to_action": "Hit follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:16:35.270122+00:00",
+  "source": "ai"
+}

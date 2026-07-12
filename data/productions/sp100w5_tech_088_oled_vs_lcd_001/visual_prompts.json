@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science has a clearer story about OLED vs LCD than social media does.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: OLEDs emit their own light, while LCDs rely on backlighting. But why does that matter?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: OLEDs provide deeper blacks and vibrant colors, but they can be pricier and suffer from burn-in.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: In contrast, LCDs are more durable and affordable, but they struggle with color accuracy in dark scenes.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Ultimately, choose OLED for stunning visuals and LCD for reliability. The choice depends on your budget and use case.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want more tech insights? Follow for the latest updates!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science has a clearer story about OLED vs LCD than social media does.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: OLEDs emit their own light, while LCDs rely on backlighting. But why does that matter?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: OLEDs provide deeper blacks and vibrant colors, but they can be pricier and suffer from burn-in.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: In contrast, LCDs are more durable and affordable, but they struggle with color accuracy in dark scenes.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Ultimately, choose OLED for stunning visuals and LCD for reliability. The choice depends on your budget and use case.",
+      "duration_sec": 24.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want more tech insights? Follow for the latest updates!",
+      "duration_sec": 10.0
+    }
+  ]
+}

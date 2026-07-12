@@ -1,0 +1,166 @@
+{
+  "version": 1,
+  "department": "character_systems",
+  "owner_agent": 26,
+  "flagship_character": "CHAR-PROFESSOR-001",
+  "updated": "2026-07-11",
+  "notes": "Reusable animation asset registry. locked = code-backed GESTURE_POSES. planned = reserved library slots. Do not invent alternate keys in production scripts.",
+  "characters": [
+    {
+      "id": "CHAR-PROFESSOR-001",
+      "name": "Professor Gen",
+      "short_name": "Gen",
+      "status": "locked",
+      "role": "foundation_flagship_host",
+      "path": "data/universe/characters/CHAR-PROFESSOR-001/",
+      "voice": {"voice": "nova", "model": "tts-1-hd"},
+      "stick_figure_defaults": {
+        "outline": [0, 0, 0, 255],
+        "face_fill": [255, 255, 255, 255],
+        "stroke": 7,
+        "head_ratio": 0.34
+      },
+      "relationship": {
+        "predecessor_plate": "CHAR-STICK-001",
+        "separate_brand_mascot": "CHAR-DASH"
+      }
+    },
+    {
+      "id": "CHAR-STICK-001",
+      "name": "Stick",
+      "status": "locked",
+      "role": "predecessor_performer_plate",
+      "note": "Do not unlock or break. Technical ancestor of Gen plate."
+    },
+    {
+      "id": "CHAR-DASH",
+      "name": "Dash",
+      "status": "locked",
+      "role": "dash_science_mascot",
+      "note": "Do not redesign. Separate brand world."
+    }
+  ],
+  "gestures": [
+    {
+      "id": "GESTURE-IDLE",
+      "gesture_key": "idle",
+      "status": "locked",
+      "code_source": "services.animation.fluid_motion.GESTURE_POSES",
+      "professor_allowed": true
+    },
+    {
+      "id": "GESTURE-WAVE",
+      "gesture_key": "wave",
+      "status": "locked",
+      "code_source": "services.animation.fluid_motion.GESTURE_POSES",
+      "professor_allowed": false,
+      "forbidden_reason": "wave_spam_professor_mode"
+    },
+    {
+      "id": "GESTURE-POINT",
+      "gesture_key": "point",
+      "status": "locked",
+      "code_source": "services.animation.fluid_motion.GESTURE_POSES",
+      "professor_allowed": true
+    },
+    {
+      "id": "GESTURE-THINK",
+      "gesture_key": "think",
+      "status": "locked",
+      "code_source": "services.animation.fluid_motion.GESTURE_POSES",
+      "professor_allowed": true
+    },
+    {
+      "id": "GESTURE-PRESENT",
+      "gesture_key": "present",
+      "status": "locked",
+      "code_source": "services.animation.fluid_motion.GESTURE_POSES",
+      "professor_allowed": true
+    },
+    {
+      "id": "GESTURE-PUSH",
+      "gesture_key": "push",
+      "status": "locked",
+      "code_source": "services.animation.fluid_motion.GESTURE_POSES",
+      "professor_allowed": true,
+      "note": "Rare — force demos only"
+    },
+    {
+      "id": "GESTURE-REACT",
+      "gesture_key": "react",
+      "status": "locked",
+      "code_source": "services.animation.fluid_motion.GESTURE_POSES",
+      "professor_allowed": false,
+      "forbidden_reason": "slapstick_out_of_range_for_gen"
+    },
+    {
+      "id": "GESTURE-WRITE",
+      "gesture_key": "write",
+      "status": "locked",
+      "code_source": "services.animation.fluid_motion.GESTURE_POSES",
+      "professor_allowed": true,
+      "note": "Foundation board stroke-reveal"
+    },
+    {
+      "id": "GESTURE-GREETING",
+      "gesture_key": "greeting",
+      "status": "planned",
+      "fallback": "idle",
+      "professor_allowed": true
+    },
+    {
+      "id": "GESTURE-LISTENING",
+      "gesture_key": "listening",
+      "status": "planned",
+      "fallback": "idle",
+      "professor_allowed": true
+    },
+    {
+      "id": "GESTURE-CELEBRATING",
+      "gesture_key": "celebrating",
+      "status": "planned",
+      "fallback": "present",
+      "professor_allowed": true
+    },
+    {
+      "id": "GESTURE-NOD",
+      "gesture_key": "nod",
+      "status": "planned",
+      "fallback": "idle",
+      "professor_allowed": true
+    },
+    {
+      "id": "GESTURE-SHRUG",
+      "gesture_key": "shrug",
+      "status": "planned",
+      "fallback": "think",
+      "professor_allowed": true
+    },
+    {
+      "id": "GESTURE-BOARD-CIRCLE",
+      "gesture_key": "board_circle",
+      "status": "planned",
+      "fallback": "point",
+      "professor_allowed": true
+    },
+    {
+      "id": "GESTURE-BOARD-UNDERLINE",
+      "gesture_key": "board_underline",
+      "status": "planned",
+      "fallback": "point",
+      "professor_allowed": true
+    }
+  ],
+  "expressions": [
+    {"id": "EXPR-NEUTRAL", "key": "neutral", "status": "locked"},
+    {"id": "EXPR-CURIOUS", "key": "curious", "status": "locked"},
+    {"id": "EXPR-THINKING", "key": "thinking", "status": "locked"},
+    {"id": "EXPR-CLARITY", "key": "clarity", "status": "locked"},
+    {"id": "EXPR-WARM-CLOSE", "key": "warm_close", "status": "locked"}
+  ],
+  "idles": [
+    {"id": "IDLE-PROFESSOR", "status": "locked", "gesture_key": "idle"},
+    {"id": "IDLE-FACE-AUDIENCE", "status": "locked", "gesture_key": "idle"},
+    {"id": "IDLE-BOARD-READY", "status": "planned", "gesture_key": "idle"}
+  ]
+}

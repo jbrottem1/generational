@@ -1,0 +1,74 @@
+{
+  "title": "What Causes the Northern Lights",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the science behind the breathtaking Northern Lights.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "The aurora is solar wind slamming into Earth's magnetic shield \u2014 and making the sky glow.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "But what is solar wind? It's a stream of charged particles from the sun, racing through space.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "When solar wind hits our magnetosphere, it creates a stunning light show \u2014 the Northern Lights.",
+      "emotion": "wonder",
+      "delivery": "exciting and dynamic",
+      "retention_device": "visual imagery"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "NASA explains that these particles excite gases in our atmosphere, causing vibrant colors.",
+      "emotion": "curiosity",
+      "delivery": "authoritative and clear",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "So, next time you see the auroras, you'll know: it's the sun's energy lighting up our sky!",
+      "emotion": "satisfaction",
+      "delivery": "enthusiastic and uplifting",
+      "retention_device": "conclusive statement"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Like and follow for more mind-blowing science discoveries!",
+      "emotion": "encouragement",
+      "delivery": "friendly and inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "The aurora is solar wind slamming into Earth's magnetic shield \u2014 and making the sky glow. But what is solar wind? It's a stream of charged particles from the sun, racing through space. When solar wind hits our magnetosphere, it creates a stunning light show \u2014 the Northern Lights. NASA explains that these particles excite gases in our atmosphere, causing vibrant colors. So, next time you see the auroras, you'll know: it's the sun's energy lighting up our sky! Like and follow for more mind-blowing science discoveries!",
+  "call_to_action": "Like and follow for more mind-blowing science discoveries!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:47:14.499305+00:00",
+  "source": "ai"
+}

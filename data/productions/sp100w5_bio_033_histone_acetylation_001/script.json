@@ -1,0 +1,74 @@
+{
+  "title": "Histone Acetylation",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A brief exploration of histone acetylation and its significance in gene regulation.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about histone acetylation than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Histone acetylation is a process that modifies proteins called histones, influencing how our genes express.",
+      "emotion": "curiosity",
+      "delivery": "explanatory",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "When histones are acetylated, DNA becomes more accessible, turning genes on.",
+      "emotion": "curiosity",
+      "delivery": "building excitement",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that this process plays a critical role in development and diseases like cancer.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding histone acetylation could unlock new treatments and therapies.",
+      "emotion": "curiosity",
+      "delivery": "reveal",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious to learn more about how this impacts you? Like and follow for more science insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "natural CTA"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about histone acetylation than social media does. Histone acetylation is a process that modifies proteins called histones, influencing how our genes express. When histones are acetylated, DNA becomes more accessible, turning genes on. Studies show that this process plays a critical role in development and diseases like cancer. Understanding histone acetylation could unlock new treatments and therapies. Curious to learn more about how this impacts you? Like and follow for more science insights!",
+  "call_to_action": "Curious to learn more about how this impacts you? Like and follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:38:03.155144+00:00",
+  "source": "ai"
+}

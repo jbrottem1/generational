@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Ever wonder how a tiny fish can hold toxins more than a shark?",
+    "visual_description": "Hook visual: Ever wonder how a tiny fish can hold toxins more than a shark?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever wonder how a tiny fish can hold toxins more than a shark?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever wonder how a tiny fish can hold toxins more than a shark?",
+    "stock_footage_query": "",
+    "text_overlay": "Ever wonder how a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This is biomagnification\u2014when toxins increase in concentration as they move up the food chain.",
+    "visual_description": "Context visual: This is biomagnification\u2014when toxins increase in concentration as they move up the food chain.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This is biomagnification\u2014when toxins increase in concentration as they move up the food chain.",
+    "ai_video_prompt": "Cinematic motion: Context visual: This is biomagnification\u2014when toxins increase in concentration as they move up the food chain.",
+    "stock_footage_query": "",
+    "text_overlay": "This is biomagnification\u2014when toxins",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Small organisms absorb pollutants. Then, larger predators eat them, amplifying the toxin levels.",
+    "visual_description": "Escalation visual: Small organisms absorb pollutants. Then, larger predators eat them, amplifying the toxin levels.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Small organisms absorb pollutants. Then, larger predators eat them, amplifying the toxin levels.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Small organisms absorb pollutants. Then, larger predators eat them, amplifying the toxin levels.",
+    "stock_footage_query": "",
+    "text_overlay": "Small organisms absorb pollutants.",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "surprise",
+    "length_sec": 8.0,
+    "narration": "Studies show that top predators can have toxin levels a thousand times higher than their prey.",
+    "visual_description": "Evidence visual: Studies show that top predators can have toxin levels a thousand times higher than their prey.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show that top predators can have toxin levels a thousand times higher than their prey.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show that top predators can have toxin levels a thousand times higher than their prey.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show that top",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "This affects not just wildlife, but also human health through our seafood.",
+    "visual_description": "Payoff visual: This affects not just wildlife, but also human health through our seafood.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This affects not just wildlife, but also human health through our seafood.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This affects not just wildlife, but also human health through our seafood.",
+    "stock_footage_query": "",
+    "text_overlay": "This affects not just",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "empowerment",
+    "length_sec": 8.0,
+    "narration": "Stay informed about what\u2019s on your plate. Knowledge is power!",
+    "visual_description": "Cta visual: Stay informed about what\u2019s on your plate. Knowledge is power!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Stay informed about what\u2019s on your plate. Knowledge is power!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Stay informed about what\u2019s on your plate. Knowledge is power!",
+    "stock_footage_query": "",
+    "text_overlay": "Stay informed about what\u2019s",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 42.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

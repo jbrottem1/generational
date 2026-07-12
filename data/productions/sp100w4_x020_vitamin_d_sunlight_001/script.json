@@ -1,0 +1,84 @@
+{
+  "title": "Vitamin D Sunlight",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the science behind vitamin D synthesis from sunlight reveals surprising truths.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if sunlight could unlock your brain's potential?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Vitamin D, often called the sunshine vitamin, is crucial for brain health.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Yet, many of us are deficient, especially in winter. Why?",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows sunlight exposure boosts serotonin, enhancing mood and cognition.",
+      "emotion": "curiosity",
+      "delivery": "confident",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 36.0,
+      "segment_type": "retention_hook",
+      "voiceover": "But wait! Too much sun can lead to skin damage. Balance is key.",
+      "emotion": "curiosity",
+      "delivery": "warning",
+      "retention_device": "contrast"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 36.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "So, soak in the sun wisely to fuel your brain and mood.",
+      "emotion": "curiosity",
+      "delivery": "inspirational",
+      "retention_device": "solution"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how sunlight affects you? Hit that follow button for more!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "What if sunlight could unlock your brain's potential? Vitamin D, often called the sunshine vitamin, is crucial for brain health. Yet, many of us are deficient, especially in winter. Why? Research shows sunlight exposure boosts serotonin, enhancing mood and cognition. But wait! Too much sun can lead to skin damage. Balance is key. So, soak in the sun wisely to fuel your brain and mood. Curious about how sunlight affects you? Hit that follow button for more!",
+  "call_to_action": "Hit that follow button for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:17:21.480944+00:00",
+  "source": "ai"
+}

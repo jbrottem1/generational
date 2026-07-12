@@ -1,0 +1,74 @@
+{
+  "title": "Histamine allergies",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the science behind histamine allergies and their effects.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about histamine allergies.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Histamine, a chemical in your body, plays a role in allergic reactions.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But did you know not everyone allergic to histamine is intolerant? It's not that simple.",
+      "emotion": "curiosity",
+      "delivery": "inquisitive tone",
+      "retention_device": "surprise"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows histamine allergies can trigger symptoms like headaches and skin reactions.",
+      "emotion": "curiosity",
+      "delivery": "fact-based and serious",
+      "retention_device": "statistic"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Emerging studies suggest it might not just be diet causing issues.",
+      "emotion": "curiosity",
+      "delivery": "thought-provoking",
+      "retention_device": "cliffhanger"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 50.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into the science of allergies? Follow for more!",
+      "emotion": "curiosity",
+      "delivery": "inviting and engaging",
+      "retention_device": "motivation"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about histamine allergies. Histamine, a chemical in your body, plays a role in allergic reactions. But did you know not everyone allergic to histamine is intolerant? It's not that simple. Research shows histamine allergies can trigger symptoms like headaches and skin reactions. Emerging studies suggest it might not just be diet causing issues. Want to dive deeper into the science of allergies? Follow for more!",
+  "call_to_action": "Follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:18:20.805481+00:00",
+  "source": "ai"
+}

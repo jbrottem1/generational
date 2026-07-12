@@ -1,0 +1,74 @@
+{
+  "title": "Sample Return Missions",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Unravel the truth behind sample return missions and their significance in space exploration.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about sample return missions than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Sample return missions capture materials from other planets or moons, bringing them back for Earth-based analysis.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Why is this important? Because they reveal secrets about our solar system's history.",
+      "emotion": "curiosity",
+      "delivery": "building excitement",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Take the OSIRIS-REx mission, which collected asteroid samples. Scientists are eagerly awaiting the results!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "These missions help us understand the building blocks of life and the potential for future colonization.",
+      "emotion": "curiosity",
+      "delivery": "reflective",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about future missions? Hit like and follow for more space science!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about sample return missions than social media does. Sample return missions capture materials from other planets or moons, bringing them back for Earth-based analysis. Why is this important? Because they reveal secrets about our solar system's history. Take the OSIRIS-REx mission, which collected asteroid samples. Scientists are eagerly awaiting the results! These missions help us understand the building blocks of life and the potential for future colonization. Curious about future missions? Hit like and follow for more space science!",
+  "call_to_action": "Curious about future missions? Hit like and follow for more space science!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:35:29.413409+00:00",
+  "source": "ai"
+}

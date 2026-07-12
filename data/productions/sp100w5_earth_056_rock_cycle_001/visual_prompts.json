@@ -1,0 +1,76 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science tells a clearer story about the rock cycle than social media ever could.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: The rock cycle is nature's recycling system, transforming rocks from one type to another, endlessly.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: It starts with igneous rocks, created by cooling magma. But wait, how do they change?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Weathering and erosion break them down, turning them into sediment. Fascinating, right?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: These sediments can finally compact and cement into sedimentary rocks, continuing the cycle.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Pattern Interrupt visual: But here's the twist: Metamorphic rocks can melt back into magma, starting all over!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cta visual: Curious about more rock secrets? Follow for more science wonders!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science tells a clearer story about the rock cycle than social media ever could.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: The rock cycle is nature's recycling system, transforming rocks from one type to another, endlessly.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: It starts with igneous rocks, created by cooling magma. But wait, how do they change?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Weathering and erosion break them down, turning them into sediment. Fascinating, right?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: These sediments can finally compact and cement into sedimentary rocks, continuing the cycle.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Pattern Interrupt visual: But here's the twist: Metamorphic rocks can melt back into magma, starting all over!",
+      "duration_sec": 10.0
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cinematic motion: Cta visual: Curious about more rock secrets? Follow for more science wonders!",
+      "duration_sec": 16.0
+    }
+  ]
+}

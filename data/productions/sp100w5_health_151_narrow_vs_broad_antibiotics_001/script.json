@@ -1,0 +1,74 @@
+{
+  "title": "Narrow vs Broad Antibiotics",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the critical differences between narrow and broad-spectrum antibiotics and their implications in medicine.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about narrow vs broad antibiotics than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Narrow antibiotics target specific bacteria, while broad antibiotics attack a wide range.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Using broad antibiotics can kill good bacteria too, leading to issues like superbugs.",
+      "emotion": "concern",
+      "delivery": "urgent and clear",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that narrow antibiotics can effectively treat infections with fewer side effects.",
+      "emotion": "informative",
+      "delivery": "confident and factual",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "In healthcare, the right choice can mean the difference between recovery and complications.",
+      "emotion": "importance",
+      "delivery": "serious and impactful",
+      "retention_device": "high stakes"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay informed about antibiotics. Follow for more science insights!",
+      "emotion": "encouraging",
+      "delivery": "inviting and friendly",
+      "retention_device": "clear next step"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about narrow vs broad antibiotics than social media does. Narrow antibiotics target specific bacteria, while broad antibiotics attack a wide range. Using broad antibiotics can kill good bacteria too, leading to issues like superbugs. Studies show that narrow antibiotics can effectively treat infections with fewer side effects. In healthcare, the right choice can mean the difference between recovery and complications. Stay informed about antibiotics. Follow for more science insights!",
+  "call_to_action": "Stay informed about antibiotics. Follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:54:52.620199+00:00",
+  "source": "ai"
+}

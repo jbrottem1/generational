@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "mock": false,
+  "error": "",
+  "output_path": "data/productions/benchmark_v1_immortal_jellyfish/render.mp4",
+  "absolute_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/benchmark_v1_immortal_jellyfish/render.mp4",
+  "bytes": 9007742,
+  "duration_sec": 58.0,
+  "resolution": "1080x1920",
+  "ffmpeg": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/venv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+  "log": [
+    "scene\u2192clip image_01.png effect=quick_punch_in d=4.00s",
+    "scene\u2192clip image_02.png effect=handheld_drift d=6.00s",
+    "scene\u2192clip image_03.png effect=slow_zoom_out d=6.00s",
+    "scene\u2192clip image_04.png effect=pan_left d=8.00s",
+    "scene\u2192clip image_05.png effect=documentary_slow_zoom d=8.00s",
+    "scene\u2192clip image_06.png effect=ken_burns d=6.00s",
+    "scene\u2192clip image_07.png effect=quick_punch_in d=6.00s",
+    "scene\u2192clip image_08.png effect=cinematic_push_in d=6.00s",
+    "scene\u2192clip image_09.png effect=handheld_drift d=4.00s",
+    "scene\u2192clip image_10.png effect=cinematic_push_in d=4.00s",
+    "concat_exit=0 scenes=10",
+    "multi_scene\u2192mp4 scenes=10 visuals=10",
+    "ffmpeg_exit=0"
+  ],
+  "visual_count": 10,
+  "has_audio": true,
+  "color_bed": false,
+  "manifest": {
+    "title": "",
+    "format": {
+      "fps": 30,
+      "resolution": {
+        "width": 1080,
+        "height": 1920
+      }
+    },
+    "visuals": [
+      "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/benchmark_v1_immortal_jellyfish/image_01.png",
+      "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/benchmark_v1_immortal_jellyfish/image_02.png",
+      "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/benchmark_v1_immortal_jellyfish/image_03.png",
+      "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/benchmark_v1_immortal_jellyfish/image_04.png",
+      "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/benchmark_v1_immortal_jellyfish/image_05.png",
+      "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/benchmark_v1_immortal_jellyfish/image_06.png",
+      "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/benchmark_v1_immortal_jellyfish/image_07.png",
+      "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/benchmark_v1_immortal_jellyfish/image_08.png",
+      "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/benchmark_v1_immortal_jellyfish/image_09.png",
+      "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/benchmark_v1_immortal_jellyfish/image_10.png"
+    ],
+    "audio": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/benchmark_v1_immortal_jellyfish/voice.mp3",
+    "scene_count": 10
+  }
+}

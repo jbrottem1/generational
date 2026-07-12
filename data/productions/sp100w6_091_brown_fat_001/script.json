@@ -1,0 +1,84 @@
+{
+  "title": "Brown fat",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explores the fascinating role of brown fat in our bodies and its potential benefits.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you some fat is actually good for you?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Brown fat is a special type of fat that burns calories instead of storing them.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "surprise fact"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Unlike white fat, which can lead to health issues, brown fat can help keep you warm and maintain body weight.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "comparison"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that people with more brown fat tend to have improved metabolic health.",
+      "emotion": "curiosity",
+      "delivery": "confident",
+      "retention_device": "statistic"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "But don\u2019t get too excited; not everyone has enough brown fat to reap the benefits.",
+      "emotion": "curiosity",
+      "delivery": "suspenseful",
+      "retention_device": "warning"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "The science is still unfolding, and while brown fat may aid weight loss, it\u2019s not a magic solution.",
+      "emotion": "curiosity",
+      "delivery": "thoughtful",
+      "retention_device": "nuanced truth"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious to learn more? Hit like and follow for the latest in science!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "What if I told you some fat is actually good for you? Brown fat is a special type of fat that burns calories instead of storing them. Unlike white fat, which can lead to health issues, brown fat can help keep you warm and maintain body weight. Studies show that people with more brown fat tend to have improved metabolic health. But don\u2019t get too excited; not everyone has enough brown fat to reap the benefits. The science is still unfolding, and while brown fat may aid weight loss, it\u2019s not a magic solution. Curious to learn more? Hit like and follow for the latest in science!",
+  "call_to_action": "Curious to learn more? Hit like and follow for the latest in science!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:07:47.760776+00:00",
+  "source": "ai"
+}

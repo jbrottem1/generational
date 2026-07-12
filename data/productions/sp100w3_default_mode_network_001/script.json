@@ -1,0 +1,74 @@
+{
+  "title": "Your Brain's Default Mode Network",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the fascinating workings of your brain's default mode network during daydreaming.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Ever wonder what happens in your brain when you daydream?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "It's called the default mode network, a web of regions that light up when your mind wanders.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "This network plays a role in self-reflection, creativity, and problem-solving.",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic and intriguing",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies suggest this network is active during mind-wandering, but research is still emerging.",
+      "emotion": "curiosity",
+      "delivery": "calm and factual",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "So, next time you drift off, know your brain is working hard in the background.",
+      "emotion": "satisfaction",
+      "delivery": "uplifting and conclusive",
+      "retention_device": "satisfying closure"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more brain mysteries? Hit that like button and follow for more!",
+      "emotion": "curiosity",
+      "delivery": "inviting and friendly",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Ever wonder what happens in your brain when you daydream? It's called the default mode network, a web of regions that light up when your mind wanders. This network plays a role in self-reflection, creativity, and problem-solving. Studies suggest this network is active during mind-wandering, but research is still emerging. So, next time you drift off, know your brain is working hard in the background. Curious about more brain mysteries? Hit that like button and follow for more!",
+  "call_to_action": "Curious about more brain mysteries? Hit that like button and follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:05:24.176509+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Ever heard of conservation triage? It\u2019s not what you think.",
+    "visual_description": "Hook visual: Ever heard of conservation triage? It\u2019s not what you think.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever heard of conservation triage? It\u2019s not what you think.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever heard of conservation triage? It\u2019s not what you think.",
+    "stock_footage_query": "",
+    "text_overlay": "Ever heard of conservation",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Conservation triage prioritizes efforts where they matter most. But it\u2019s messy. Why? Because uncertainty reigns.",
+    "visual_description": "Context visual: Conservation triage prioritizes efforts where they matter most. But it\u2019s messy. Why? Because uncertainty reigns.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Conservation triage prioritizes efforts where they matter most. But it\u2019s messy. Why? Because uncertainty reigns.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Conservation triage prioritizes efforts where they matter most. But it\u2019s messy. Why? Because uncertainty reigns.",
+    "stock_footage_query": "",
+    "text_overlay": "Conservation triage prioritizes efforts",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Imagine saving a species but losing another. How do we choose? Scientists weigh extinction risks and ecological impact.",
+    "visual_description": "Escalation visual: Imagine saving a species but losing another. How do we choose? Scientists weigh extinction risks and ecological impact.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Imagine saving a species but losing another. How do we choose? Scientists weigh extinction risks and ecological impact.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Imagine saving a species but losing another. How do we choose? Scientists weigh extinction risks and ecological impact.",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine saving a species",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Research shows that investing in certain habitats can save more species in the long run. But the right data is crucial.",
+    "visual_description": "Evidence visual: Research shows that investing in certain habitats can save more species in the long run. But the right data is crucial.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows that investing in certain habitats can save more species in the long run. But the right data is crucial.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows that investing in certain habitats can save more species in the long run. But the right data is crucial.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows that investing",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "Conservation triage isn\u2019t just a buzzword. It\u2019s a science guiding hard choices for our planet\u2019s future.",
+    "visual_description": "Payoff visual: Conservation triage isn\u2019t just a buzzword. It\u2019s a science guiding hard choices for our planet\u2019s future.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Conservation triage isn\u2019t just a buzzword. It\u2019s a science guiding hard choices for our planet\u2019s future.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Conservation triage isn\u2019t just a buzzword. It\u2019s a science guiding hard choices for our planet\u2019s future.",
+    "stock_footage_query": "",
+    "text_overlay": "Conservation triage isn\u2019t just",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "Want to dive deeper into conservation? Hit that follow button!",
+    "visual_description": "Cta visual: Want to dive deeper into conservation? Hit that follow button!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into conservation? Hit that follow button!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into conservation? Hit that follow button!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

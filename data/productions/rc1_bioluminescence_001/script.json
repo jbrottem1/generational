@@ -1,0 +1,74 @@
+{
+  "title": "Secrets of Bioluminescence",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the enchanting world of bioluminescence and its secrets.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "The ocean sparkles with living light\u2014what\u2019s the secret?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Bioluminescence is nature\u2019s glow-in-the-dark magic, found in creatures from jellyfish to deep-sea fish.",
+      "emotion": "wonder",
+      "delivery": "engaging and informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But why do they glow? Is it for defense, attracting prey, or something even more surprising?",
+      "emotion": "intrigue",
+      "delivery": "building excitement",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Scientists discovered these creatures use chemical reactions that produce light without heat\u2014a phenomenon called chemiluminescence.",
+      "emotion": "fascination",
+      "delivery": "informative and captivating",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "From dazzling displays to stealthy hunters, bioluminescence is a powerful survival tool in the dark depths of the ocean.",
+      "emotion": "awe",
+      "delivery": "dramatic and engaging",
+      "retention_device": "reveal"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want more ocean mysteries? Hit that like button and subscribe for more astonishing science!",
+      "emotion": "encouragement",
+      "delivery": "upbeat and inviting",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "The ocean sparkles with living light\u2014what\u2019s the secret? Bioluminescence is nature\u2019s glow-in-the-dark magic, found in creatures from jellyfish to deep-sea fish. But why do they glow? Is it for defense, attracting prey, or something even more surprising? Scientists discovered these creatures use chemical reactions that produce light without heat\u2014a phenomenon called chemiluminescence. From dazzling displays to stealthy hunters, bioluminescence is a powerful survival tool in the dark depths of the ocean. Want more ocean mysteries? Hit that like button and subscribe for more astonishing science!",
+  "call_to_action": "Hit that like button and subscribe for more astonishing science!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:04:38.274734+00:00",
+  "source": "ai"
+}

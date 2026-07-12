@@ -1,0 +1,74 @@
+{
+  "title": "Affinity Maturation",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the fascinating science behind affinity maturation and its role in immune response.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about affinity maturation.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Affinity maturation is a key process in our immune system, enhancing our body\u2019s ability to fight infections.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "It involves the fine-tuning of antibodies, making them better at recognizing pathogens.",
+      "emotion": "curiosity",
+      "delivery": "building excitement",
+      "retention_device": "statistic"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 25.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows that this process occurs in germinal centers, where B cells rapidly mutate to improve their efficiency.",
+      "emotion": "curiosity",
+      "delivery": "informational",
+      "retention_device": "scientific fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 25.0,
+      "end_time": 35.0,
+      "segment_type": "payoff",
+      "voiceover": "The result? A stronger immune response, capable of tackling diverse infections.",
+      "emotion": "curiosity",
+      "delivery": "satisfying conclusion",
+      "retention_device": "reveal"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 35.0,
+      "end_time": 45.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into science? Hit that follow button!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about affinity maturation. Affinity maturation is a key process in our immune system, enhancing our body\u2019s ability to fight infections. It involves the fine-tuning of antibodies, making them better at recognizing pathogens. Research shows that this process occurs in germinal centers, where B cells rapidly mutate to improve their efficiency. The result? A stronger immune response, capable of tackling diverse infections. Want to dive deeper into science? Hit that follow button!",
+  "call_to_action": "Want to dive deeper into science? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:19:21.058011+00:00",
+  "source": "ai"
+}

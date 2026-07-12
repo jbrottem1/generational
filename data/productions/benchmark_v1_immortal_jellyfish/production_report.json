@@ -1,0 +1,240 @@
+{
+  "passed": true,
+  "score": 100,
+  "checks": [
+    {
+      "name": "stage_integrity",
+      "ok": true,
+      "detail": "no stage reports",
+      "level": "warn"
+    },
+    {
+      "name": "ideas_present",
+      "ok": true,
+      "detail": "1 ideas",
+      "level": "error"
+    },
+    {
+      "name": "packages_present",
+      "ok": true,
+      "detail": "1 packages",
+      "level": "warn"
+    },
+    {
+      "name": "script_timing",
+      "ok": true,
+      "detail": "script content present",
+      "level": "warn"
+    },
+    {
+      "name": "scene_timing",
+      "ok": true,
+      "detail": "visual/scene plan present",
+      "level": "warn"
+    },
+    {
+      "name": "voice_synchronization",
+      "ok": true,
+      "detail": "audio plan metadata only \u2014 real TTS not required for dry-run",
+      "level": "info"
+    },
+    {
+      "name": "subtitle_synchronization",
+      "ok": true,
+      "detail": "caption plan optional in dry-run",
+      "level": "warn"
+    },
+    {
+      "name": "music_levels",
+      "ok": true,
+      "detail": "music direction is planning metadata in dry-run",
+      "level": "info"
+    },
+    {
+      "name": "transition_timing",
+      "ok": true,
+      "detail": "transition plan is metadata in dry-run",
+      "level": "info"
+    },
+    {
+      "name": "render_integrity",
+      "ok": true,
+      "detail": "real MP4 referenced",
+      "level": "error"
+    },
+    {
+      "name": "voice_exists",
+      "ok": true,
+      "detail": "real voice assets present",
+      "level": "info"
+    },
+    {
+      "name": "duplicate_assets",
+      "ok": true,
+      "detail": "no duplicate titles",
+      "level": "warn"
+    },
+    {
+      "name": "missing_assets",
+      "ok": true,
+      "detail": "ideas present",
+      "level": "error"
+    },
+    {
+      "name": "provider_failures",
+      "ok": true,
+      "detail": "no provider error recorded",
+      "level": "warn"
+    },
+    {
+      "name": "real_mp4",
+      "ok": true,
+      "detail": "data/productions/benchmark_v1_immortal_jellyfish/render.mp4",
+      "level": "info"
+    },
+    {
+      "name": "voice_file",
+      "ok": true,
+      "detail": "data/productions/benchmark_v1_immortal_jellyfish/voice.mp3",
+      "level": "info"
+    },
+    {
+      "name": "cinematic_visuals",
+      "ok": true,
+      "detail": "visual_count=10 real_images=10 color_bed=False",
+      "level": "error"
+    },
+    {
+      "name": "no_placeholder_images",
+      "ok": true,
+      "detail": "placeholders=0",
+      "level": "error"
+    },
+    {
+      "name": "narration_supported_by_visuals",
+      "ok": true,
+      "detail": "all scenes supported",
+      "level": "error"
+    },
+    {
+      "name": "no_color_bed",
+      "ok": true,
+      "detail": "color_bed=False",
+      "level": "error",
+      "gate": "animation_qc"
+    },
+    {
+      "name": "has_visuals",
+      "ok": true,
+      "detail": "visual_count=10",
+      "level": "error",
+      "gate": "animation_qc"
+    },
+    {
+      "name": "no_placeholder_visuals",
+      "ok": true,
+      "detail": "placeholders=0 images=10",
+      "level": "error",
+      "gate": "animation_qc"
+    },
+    {
+      "name": "motion_density",
+      "ok": true,
+      "detail": "all scenes have motion intent or duration<=3.0s",
+      "level": "error",
+      "gate": "animation_qc"
+    },
+    {
+      "name": "storyboard_present",
+      "ok": true,
+      "detail": "beats=10 scenes=10",
+      "level": "error",
+      "gate": "animation_qc"
+    },
+    {
+      "name": "camera_intent",
+      "ok": true,
+      "detail": "beats_with_camera=10/10",
+      "level": "error",
+      "gate": "animation_qc"
+    },
+    {
+      "name": "env_life",
+      "ok": true,
+      "detail": "environment_fx_count=20",
+      "level": "info",
+      "gate": "animation_qc"
+    },
+    {
+      "name": "character_consistency",
+      "ok": true,
+      "detail": "character_id=CHAR-DASH",
+      "level": "info",
+      "gate": "animation_qc"
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "mock_render": false,
+  "animation_qc": {
+    "gate": "animation_qc",
+    "department": "Animation Studio",
+    "passed": true,
+    "checks": [
+      {
+        "name": "no_color_bed",
+        "ok": true,
+        "detail": "color_bed=False",
+        "level": "error"
+      },
+      {
+        "name": "has_visuals",
+        "ok": true,
+        "detail": "visual_count=10",
+        "level": "error"
+      },
+      {
+        "name": "no_placeholder_visuals",
+        "ok": true,
+        "detail": "placeholders=0 images=10",
+        "level": "error"
+      },
+      {
+        "name": "motion_density",
+        "ok": true,
+        "detail": "all scenes have motion intent or duration<=3.0s",
+        "level": "error"
+      },
+      {
+        "name": "storyboard_present",
+        "ok": true,
+        "detail": "beats=10 scenes=10",
+        "level": "error"
+      },
+      {
+        "name": "camera_intent",
+        "ok": true,
+        "detail": "beats_with_camera=10/10",
+        "level": "error"
+      },
+      {
+        "name": "env_life",
+        "ok": true,
+        "detail": "environment_fx_count=20",
+        "level": "info"
+      },
+      {
+        "name": "character_consistency",
+        "ok": true,
+        "detail": "character_id=CHAR-DASH",
+        "level": "info"
+      }
+    ],
+    "errors": [],
+    "warnings": [],
+    "max_static_sec": 3.0
+  },
+  "final_export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Generational_Benchmark_V1_The_Immortal_Jellyfish.mp4",
+  "final_export_dir": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational",
+  "ready_to_post_message": "Ready-to-post video saved successfully."
+}

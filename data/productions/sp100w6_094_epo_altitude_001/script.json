@@ -1,0 +1,74 @@
+{
+  "title": "EPO altitude",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the science behind EPO altitude and its uncertainties.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you EPO altitude might not be what you think?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "EPO, or erythropoietin, is a hormone that boosts red blood cells. But how does altitude tie into this?",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "At high altitudes, less oxygen triggers EPO production. More red blood cells, right? But it\u2019s more complex than that.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "mystery"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show mixed results on performance. Some athletes benefit, others don\u2019t.",
+      "emotion": "curiosity",
+      "delivery": "assertive",
+      "retention_device": "data point"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "So the science isn\u2019t black and white. It\u2019s a blend of biology and individual response.",
+      "emotion": "curiosity",
+      "delivery": "revelatory",
+      "retention_device": "summary"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more science mysteries? Hit like and follow for more revelations!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "What if I told you EPO altitude might not be what you think? EPO, or erythropoietin, is a hormone that boosts red blood cells. But how does altitude tie into this? At high altitudes, less oxygen triggers EPO production. More red blood cells, right? But it\u2019s more complex than that. Studies show mixed results on performance. Some athletes benefit, others don\u2019t. So the science isn\u2019t black and white. It\u2019s a blend of biology and individual response. Curious about more science mysteries? Hit like and follow for more revelations!",
+  "call_to_action": "Hit like and follow for more revelations!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:08:07.458102+00:00",
+  "source": "ai"
+}

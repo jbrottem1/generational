@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about chaperone proteins than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about chaperone proteins than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about chaperone proteins than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about chaperone proteins than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Chaperone proteins help other proteins fold correctly.",
+    "visual_description": "Context visual: Chaperone proteins help other proteins fold correctly.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Chaperone proteins help other proteins fold correctly.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Chaperone proteins help other proteins fold correctly.",
+    "stock_footage_query": "",
+    "text_overlay": "Chaperone proteins help other",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "Without them, misfolded proteins can cause diseases like Alzheimer\u2019s.",
+    "visual_description": "Escalation visual: Without them, misfolded proteins can cause diseases like Alzheimer\u2019s.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Without them, misfolded proteins can cause diseases like Alzheimer\u2019s.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Without them, misfolded proteins can cause diseases like Alzheimer\u2019s.",
+    "stock_footage_query": "",
+    "text_overlay": "Without them, misfolded proteins",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "hope",
+    "length_sec": 12.0,
+    "narration": "Research shows these proteins can even prevent cancer by aiding correct protein folding.",
+    "visual_description": "Evidence visual: Research shows these proteins can even prevent cancer by aiding correct protein folding.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows these proteins can even prevent cancer by aiding correct protein folding.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows these proteins can even prevent cancer by aiding correct protein folding.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows these proteins",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "satisfaction",
+    "length_sec": 15.0,
+    "narration": "So, the next time you hear about proteins, remember the quiet heroes: chaperones.",
+    "visual_description": "Payoff visual: So, the next time you hear about proteins, remember the quiet heroes: chaperones.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, the next time you hear about proteins, remember the quiet heroes: chaperones.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, the next time you hear about proteins, remember the quiet heroes: chaperones.",
+    "stock_footage_query": "",
+    "text_overlay": "So, the next time",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "enthusiasm",
+    "length_sec": 15.0,
+    "narration": "Curious for more science truths? Like and follow for more insights!",
+    "visual_description": "Cta visual: Curious for more science truths? Like and follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious for more science truths? Like and follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious for more science truths? Like and follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious for more science",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

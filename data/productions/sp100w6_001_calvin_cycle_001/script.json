@@ -1,0 +1,74 @@
+{
+  "title": "Calvin cycle",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the intricate steps of the Calvin cycle and its role in photosynthesis.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you that plants have a hidden power?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "This is the Calvin cycle, a crucial process in photosynthesis. It transforms carbon dioxide into energy.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "retention_hook"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "First up, carbon fixation. Carbon dioxide combines with a five-carbon molecule. Sounds simple, right?",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Then, energy molecules from the light reactions help convert that into sugars. This is where plants make their food!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "retention_hook"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 35.0,
+      "segment_type": "payoff",
+      "voiceover": "But here\u2019s the twist: this process can be influenced by temperature and light. It\u2019s not always perfect.",
+      "emotion": "curiosity",
+      "delivery": "thoughtful",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 35.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into the secrets of plants? Hit that subscribe button for more science!",
+      "emotion": "enthusiasm",
+      "delivery": "inviting",
+      "retention_device": "open loop"
+    }
+  ],
+  "full_voiceover": "What if I told you that plants have a hidden power? This is the Calvin cycle, a crucial process in photosynthesis. It transforms carbon dioxide into energy. First up, carbon fixation. Carbon dioxide combines with a five-carbon molecule. Sounds simple, right? Then, energy molecules from the light reactions help convert that into sugars. This is where plants make their food! But here\u2019s the twist: this process can be influenced by temperature and light. It\u2019s not always perfect. Want to dive deeper into the secrets of plants? Hit that subscribe button for more science!",
+  "call_to_action": "Hit that subscribe button for more science!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:57:28.449409+00:00",
+  "source": "ai"
+}

@@ -137,6 +137,57 @@ Append-only. Newest first. Every entry must name the source sprint/production.
 
 ---
 
+## 2026-07-11 — PROJECT FOUNDATION (Perfect the Teacher)
+
+**Source:** White-studio Newton series · Physics_001–003
+
+### What worked
+- Pure white studio + whiteboard stroke-reveal focuses attention on the lesson.
+- Consistent opening (“Welcome back to Generational.”) and “In the next lesson…” closer.
+- `write` gesture + walk-to-board choreography reads as intentional teaching.
+- Nova + tts-1-hd with intentional pauses; tighter lip-sync envelope.
+
+### Standard
+- No scenery / MacroCenter / decorative FX until professor + board + lip sync are premium.
+- One question per Short: Hook → Question → Board → Example → Summary → Next.
+
+### Benchmarks shipped
+- `Physics_001_F_Equals_MA.mp4` (~29s)
+- `Physics_002_Force_and_Mass.mp4` (~33s)
+- `Physics_003_Newtons_Second_Law.mp4` (~31s)
+
+---
+
+## 2026-07-11 — Agent 27 Knowledge & Standards Founded
+
+**Source:** Executive Delegation · Institutional Memory
+
+### What worked
+- Index-and-elevate pattern: named company docs under `data/knowledge_standards/` without forking GCIS lesson bodies.
+- Experiment registry (6 historical experiments) prevents duplicate Fluid Motion / Foundation-style runs without consulting Agent 27.
+- BEST_PRACTICES encode fail-closed lessons (coat drift, AELS-not-in-script, unique_export).
+
+### Standard
+- After every production: append GCIS lessons + register experiment when applicable via `services.knowledge_standards`.
+- COMPANY_WIKI is the onboarding entry point for new agents.
+
+---
+
+## 2026-07-11 — Batesian Mimicry Biology Benchmark + Curiosity Framework
+
+**Source:** Biology Department benchmark · 3 Shorts
+
+### What worked
+- **Curiosity Framework** LOCKED: no Welcome-back openings; question-first hooks.
+- Scientific caveats retained: color-rhyme regional limits; monarch–viceroy complexity; never handle unknown snakes.
+- White-studio diagrams (wasp/hoverfly, banded snakes) reinforce Batesian model vs mimic.
+
+### Standard
+- All educational Shorts open with an unanswered curiosity question (`GENERATIONAL_CURIOSITY_FRAMEWORK.md`).
+- Foundation idle_ratio must stay ≥0.22 — add calm holds when teaching denser biology scripts.
+
+---
+
 ## Standing anti-patterns (do not repeat)
 
 1. Motion for motion’s sake  

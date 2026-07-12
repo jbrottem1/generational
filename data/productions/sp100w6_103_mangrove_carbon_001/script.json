@@ -1,0 +1,84 @@
+{
+  "title": "Mangrove Carbon",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "An insightful look into the science of mangrove carbon and its uncertain impact on climate change.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you mangroves hold secrets to our climate fate?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Mangroves are unique coastal forests that capture carbon dioxide from the atmosphere.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But how much carbon do they really store? The science isn't as clear as you think.",
+      "emotion": "curiosity",
+      "delivery": "urgent",
+      "retention_device": "provocative statement"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show mangroves can sequester up to five times more carbon than tropical forests.",
+      "emotion": "curiosity",
+      "delivery": "factual",
+      "retention_device": "statistic reveal"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Yet, climate variability makes their long-term impact uncertain.",
+      "emotion": "curiosity",
+      "delivery": "reflective",
+      "retention_device": "surprise detail"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 42.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "So, should we plant more? Or are we risking too much?",
+      "emotion": "curiosity",
+      "delivery": "intriguing",
+      "retention_device": "rhetorical question"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 42.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Dive deeper into mangrove science! Follow for more insights.",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "What if I told you mangroves hold secrets to our climate fate? Mangroves are unique coastal forests that capture carbon dioxide from the atmosphere. But how much carbon do they really store? The science isn't as clear as you think. Studies show mangroves can sequester up to five times more carbon than tropical forests. Yet, climate variability makes their long-term impact uncertain. So, should we plant more? Or are we risking too much? Dive deeper into mangrove science! Follow for more insights.",
+  "call_to_action": "Dive deeper into mangrove science! Follow for more insights.",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:15:29.670210+00:00",
+  "source": "ai"
+}

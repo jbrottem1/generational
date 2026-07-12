@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Birds navigate using sunlight, stars, and even Earth's magnetic field.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Imagine flying thousands of miles with no map, just instincts guiding your way.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: They rely on the sun during the day and stars at night. But how do they know where to go?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Research shows many species also use Earth's magnetic field for orientation. It\u2019s called magnetoreception.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Ongoing studies are exploring how birds actually sense these magnetic signals. Amazing, right?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to learn more about birds? Hit that follow button for more incredible insights!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Birds navigate using sunlight, stars, and even Earth's magnetic field.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Imagine flying thousands of miles with no map, just instincts guiding your way.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: They rely on the sun during the day and stars at night. But how do they know where to go?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Research shows many species also use Earth's magnetic field for orientation. It\u2019s called magnetoreception.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Ongoing studies are exploring how birds actually sense these magnetic signals. Amazing, right?",
+      "duration_sec": 10.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to learn more about birds? Hit that follow button for more incredible insights!",
+      "duration_sec": 9.0
+    }
+  ]
+}

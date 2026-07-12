@@ -1,0 +1,68 @@
+[
+  {
+    "see": "center-punched single subject, negative space above for text; subject: Ever seen a foam explosion that looks like giant toothpaste? It\u2019s all chemistry!; emotion: curiosity; educational documentary lighting",
+    "media_type": "ai_cinematic_artwork",
+    "camera_movement": "quick punch-in on key detail",
+    "motion_effects": "fast punch-in from 120% to 100% in the first 0.5s",
+    "transition": "hard cut",
+    "on_screen_text": "Ever seen a foam explosion",
+    "captions": "upper third \u2014 clear of the punch-in subject",
+    "supporting_graphics": "",
+    "density_target_sec": 3.5
+  },
+  {
+    "see": "rule of thirds, subject leading the eye toward the next cut; subject: This is called elephant toothpaste. It uses hydrogen peroxide, a catalyst, and dish soap to create a foamy eruption.; emotion: curiosity; educational documentary lighting",
+    "media_type": "scientific_illustration",
+    "camera_movement": "ken burns drift right",
+    "motion_effects": "subtle 3% push on the key sentence",
+    "transition": "hard cut",
+    "on_screen_text": "This is called elephant toothpaste.",
+    "captions": "bottom third, safe zone",
+    "supporting_graphics": "scientific_illustration",
+    "density_target_sec": 3.5
+  },
+  {
+    "see": "layered foreground obscuring a partially visible subject; subject: When hydrogen peroxide decomposes, it releases oxygen. That\u2019s what inflates the soap foam!; emotion: excitement; educational documentary lighting",
+    "media_type": "ai_cinematic_artwork",
+    "camera_movement": "slow zoom out reveal",
+    "motion_effects": "creeping 100% to 108% push across the scene",
+    "transition": "match cut",
+    "on_screen_text": "When hydrogen peroxide decomposes, it",
+    "captions": "lower third \u2014 under the concealed reveal",
+    "supporting_graphics": "",
+    "density_target_sec": 3.5
+  },
+  {
+    "see": "rule of thirds, subject leading the eye toward the next cut; subject: Look at this tower! It\u2019s a fun demonstration seen in science museums worldwide.; emotion: wonder; educational documentary lighting",
+    "media_type": "real_world_photograph",
+    "camera_movement": "pan left across subject",
+    "motion_effects": "subtle 3% push on the key sentence",
+    "transition": "hard cut",
+    "on_screen_text": "Look at this tower! It\u2019s",
+    "captions": "bottom third, safe zone",
+    "supporting_graphics": "",
+    "density_target_sec": 3.5
+  },
+  {
+    "see": "hero framing, shallow depth of field, clean background; subject: But remember, safety first! Always have adult supervision when using concentrated peroxide.; emotion: seriousness; educational documentary lighting",
+    "media_type": "infographic",
+    "camera_movement": "documentary slow zoom",
+    "motion_effects": "slow-motion settle from 105% to 100%",
+    "transition": "dissolve",
+    "on_screen_text": "But remember, safety first! Always",
+    "captions": "center \u2014 the takeaway IS the frame",
+    "supporting_graphics": "infographic",
+    "density_target_sec": 3.5
+  },
+  {
+    "see": "centered, eye-level, symmetrical, direct eye contact with lens; subject: Want more amazing science? Follow for more experiments like this!; emotion: inviting; educational documentary lighting",
+    "media_type": "ai_cinematic_artwork",
+    "camera_movement": "slow cinematic push-in",
+    "motion_effects": "none \u2014 stability signals sincerity",
+    "transition": "fade out",
+    "on_screen_text": "Want more amazing science? Follow",
+    "captions": "lower third \u2014 beside the follow button mimic",
+    "supporting_graphics": "",
+    "density_target_sec": 3.5
+  }
+]

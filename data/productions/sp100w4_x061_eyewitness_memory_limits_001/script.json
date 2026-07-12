@@ -1,0 +1,74 @@
+{
+  "title": "Eyewitness Memory Limits",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "This script explores the surprising limits of eyewitness memory backed by scientific research.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if your memories are not as reliable as you think?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Eyewitness accounts have shaped justice, but science reveals shocking limits.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Studies show memories can be altered, with confidence often misleading the truth.",
+      "emotion": "curiosity",
+      "delivery": "intensifying",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "In tests, participants recalled details differently after just a few days.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact reveal"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "This means eyewitness testimony isn\u2019t foolproof; it can mislead investigations.",
+      "emotion": "curiosity",
+      "delivery": "clarifying",
+      "retention_device": "conclusion"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "So next time you hear an eyewitness account, remember\u2014what we think we saw may not always be true! Like and follow for more intriguing insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "natural CTA"
+    }
+  ],
+  "full_voiceover": "What if your memories are not as reliable as you think? Eyewitness accounts have shaped justice, but science reveals shocking limits. Studies show memories can be altered, with confidence often misleading the truth. In tests, participants recalled details differently after just a few days. This means eyewitness testimony isn\u2019t foolproof; it can mislead investigations. So next time you hear an eyewitness account, remember\u2014what we think we saw may not always be true! Like and follow for more intriguing insights!",
+  "call_to_action": "Like and follow for more intriguing insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:22:30.778076+00:00",
+  "source": "ai"
+}

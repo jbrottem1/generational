@@ -1,0 +1,74 @@
+{
+  "title": "Fomite Transmission Nuance",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the complexities of fomite transmission with a focus on scientific clarity.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about fomite transmission nuance than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Fomites are surfaces that can carry viruses. Think doorknobs, keyboards, even your phone.",
+      "emotion": "curiosity",
+      "delivery": "informative and engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But how contagious are these surfaces? It's not as simple as you might think.",
+      "emotion": "intrigue",
+      "delivery": "suspenseful",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that the virus can survive on surfaces for hours or even days, but the risk of transmission decreases over time.",
+      "emotion": "curiosity",
+      "delivery": "clear and authoritative",
+      "retention_device": "fact revelation"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "payoff",
+      "voiceover": "So, touching a surface doesn\u2019t guarantee infection. It\u2019s a complex interplay of factors.",
+      "emotion": "relief",
+      "delivery": "satisfying and conclusive",
+      "retention_device": "clarity payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to stay informed? Follow for more science insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting and engaging",
+      "retention_device": "closing hook"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about fomite transmission nuance than social media does. Fomites are surfaces that can carry viruses. Think doorknobs, keyboards, even your phone. But how contagious are these surfaces? It's not as simple as you might think. Studies show that the virus can survive on surfaces for hours or even days, but the risk of transmission decreases over time. So, touching a surface doesn\u2019t guarantee infection. It\u2019s a complex interplay of factors. Want to stay informed? Follow for more science insights!",
+  "call_to_action": "Want to stay informed? Follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:54:08.693826+00:00",
+  "source": "ai"
+}

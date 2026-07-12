@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if I told you mangroves hold secrets to our climate fate?",
+    "visual_description": "Hook visual: What if I told you mangroves hold secrets to our climate fate?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you mangroves hold secrets to our climate fate?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you mangroves hold secrets to our climate fate?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Mangroves are unique coastal forests that capture carbon dioxide from the atmosphere.",
+    "visual_description": "Context visual: Mangroves are unique coastal forests that capture carbon dioxide from the atmosphere.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Mangroves are unique coastal forests that capture carbon dioxide from the atmosphere.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Mangroves are unique coastal forests that capture carbon dioxide from the atmosphere.",
+    "stock_footage_query": "",
+    "text_overlay": "Mangroves are unique coastal",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But how much carbon do they really store? The science isn't as clear as you think.",
+    "visual_description": "Escalation visual: But how much carbon do they really store? The science isn't as clear as you think.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But how much carbon do they really store? The science isn't as clear as you think.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But how much carbon do they really store? The science isn't as clear as you think.",
+    "stock_footage_query": "",
+    "text_overlay": "But how much carbon",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show mangroves can sequester up to five times more carbon than tropical forests.",
+    "visual_description": "Evidence visual: Studies show mangroves can sequester up to five times more carbon than tropical forests.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show mangroves can sequester up to five times more carbon than tropical forests.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show mangroves can sequester up to five times more carbon than tropical forests.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show mangroves can",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Yet, climate variability makes their long-term impact uncertain.",
+    "visual_description": "Payoff visual: Yet, climate variability makes their long-term impact uncertain.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Yet, climate variability makes their long-term impact uncertain.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Yet, climate variability makes their long-term impact uncertain.",
+    "stock_footage_query": "",
+    "text_overlay": "Yet, climate variability makes",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "So, should we plant more? Or are we risking too much?",
+    "visual_description": "Pattern Interrupt visual: So, should we plant more? Or are we risking too much?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: So, should we plant more? Or are we risking too much?",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: So, should we plant more? Or are we risking too much?",
+    "stock_footage_query": "",
+    "text_overlay": "So, should we plant",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 42.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 18.0,
+    "narration": "Dive deeper into mangrove science! Follow for more insights.",
+    "visual_description": "Cta visual: Dive deeper into mangrove science! Follow for more insights.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Dive deeper into mangrove science! Follow for more insights.",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Dive deeper into mangrove science! Follow for more insights.",
+    "stock_footage_query": "",
+    "text_overlay": "Dive deeper into mangrove",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 42.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 42.0
+    }
+  }
+]

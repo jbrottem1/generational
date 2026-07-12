@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about carbon sinks oceans than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about carbon sinks oceans than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about carbon sinks oceans than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about carbon sinks oceans than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Let\u2019s simplify: carbon sinks are natural systems that absorb carbon dioxide.",
+    "visual_description": "Context visual: Let\u2019s simplify: carbon sinks are natural systems that absorb carbon dioxide.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Let\u2019s simplify: carbon sinks are natural systems that absorb carbon dioxide.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Let\u2019s simplify: carbon sinks are natural systems that absorb carbon dioxide.",
+    "stock_footage_query": "",
+    "text_overlay": "Let\u2019s simplify: carbon sinks",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Oceans are the largest carbon sinks on Earth, capturing about a quarter of our CO2 emissions.",
+    "visual_description": "Escalation visual: Oceans are the largest carbon sinks on Earth, capturing about a quarter of our CO2 emissions.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Oceans are the largest carbon sinks on Earth, capturing about a quarter of our CO2 emissions.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Oceans are the largest carbon sinks on Earth, capturing about a quarter of our CO2 emissions.",
+    "stock_footage_query": "",
+    "text_overlay": "Oceans are the largest",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Through photosynthesis, marine plants and phytoplankton play a vital role in this process.",
+    "visual_description": "Evidence visual: Through photosynthesis, marine plants and phytoplankton play a vital role in this process.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Through photosynthesis, marine plants and phytoplankton play a vital role in this process.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Through photosynthesis, marine plants and phytoplankton play a vital role in this process.",
+    "stock_footage_query": "",
+    "text_overlay": "Through photosynthesis, marine plants",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "concern",
+    "length_sec": 12.0,
+    "narration": "But, rising temperatures and pollution threaten these essential ecosystems.",
+    "visual_description": "Payoff visual: But, rising temperatures and pollution threaten these essential ecosystems.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: But, rising temperatures and pollution threaten these essential ecosystems.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: But, rising temperatures and pollution threaten these essential ecosystems.",
+    "stock_footage_query": "",
+    "text_overlay": "But, rising temperatures and",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 7.0,
+    "narration": "What if I told you that protecting oceans is key to fighting climate change?",
+    "visual_description": "Pattern Interrupt visual: What if I told you that protecting oceans is key to fighting climate change?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: What if I told you that protecting oceans is key to fighting climate change?",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: What if I told you that protecting oceans is key to fighting climate change?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "inspiration",
+    "length_sec": 15.0,
+    "narration": "Learn more about how you can help preserve these carbon sinks. Follow for more insights!",
+    "visual_description": "Cta visual: Learn more about how you can help preserve these carbon sinks. Follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Learn more about how you can help preserve these carbon sinks. Follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Learn more about how you can help preserve these carbon sinks. Follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Learn more about how",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

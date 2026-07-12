@@ -1,0 +1,84 @@
+{
+  "title": "Galaxy collisions",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "An exploration of how and why galaxies collide, grounded in established science.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about galaxy collisions than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Over billions of years, galaxies drift through space, and sometimes, they collide.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But what happens during a collision? Stars rarely smash into each other!",
+      "emotion": "surprise",
+      "delivery": "engaging",
+      "retention_device": "statistic"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Instead, they interact gravitationally, merging and forming new structures.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "visual contrast"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 36.0,
+      "segment_type": "payoff",
+      "voiceover": "These colossal events can create stunning spiral galaxies or even trigger new star formation!",
+      "emotion": "wonder",
+      "delivery": "excited",
+      "retention_device": "imagination"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 36.0,
+      "end_time": 46.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "And while we understand a lot, there's still much we don\u2019t know about these cosmic dances.",
+      "emotion": "intrigue",
+      "delivery": "thoughtful",
+      "retention_device": "open question"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 46.0,
+      "end_time": 56.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into the universe? Hit that follow for more cosmic wonders!",
+      "emotion": "encouragement",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about galaxy collisions than social media does. Over billions of years, galaxies drift through space, and sometimes, they collide. But what happens during a collision? Stars rarely smash into each other! Instead, they interact gravitationally, merging and forming new structures. These colossal events can create stunning spiral galaxies or even trigger new star formation! And while we understand a lot, there's still much we don\u2019t know about these cosmic dances. Want to dive deeper into the universe? Hit that follow for more cosmic wonders!",
+  "call_to_action": "Want to dive deeper into the universe? Hit that follow for more cosmic wonders!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:35:58.241904+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about feedback loops than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about feedback loops than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about feedback loops than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about feedback loops than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Feedback loops are systems where output influences input, creating a cycle.",
+    "visual_description": "Context visual: Feedback loops are systems where output influences input, creating a cycle.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Feedback loops are systems where output influences input, creating a cycle.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Feedback loops are systems where output influences input, creating a cycle.",
+    "stock_footage_query": "",
+    "text_overlay": "Feedback loops are systems",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Think about climate change. Positive feedback loops amplify effects, like melting ice leading to more heat absorption.",
+    "visual_description": "Escalation visual: Think about climate change. Positive feedback loops amplify effects, like melting ice leading to more heat absorption.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Think about climate change. Positive feedback loops amplify effects, like melting ice leading to more heat absorption.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Think about climate change. Positive feedback loops amplify effects, like melting ice leading to more heat absorption.",
+    "stock_footage_query": "",
+    "text_overlay": "Think about climate change.",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Research shows feedback loops can stabilize systems too, like ecosystems maintaining balance.",
+    "visual_description": "Evidence visual: Research shows feedback loops can stabilize systems too, like ecosystems maintaining balance.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows feedback loops can stabilize systems too, like ecosystems maintaining balance.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows feedback loops can stabilize systems too, like ecosystems maintaining balance.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows feedback loops",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "Understanding these loops helps us predict outcomes and make informed decisions, both in nature and technology.",
+    "visual_description": "Payoff visual: Understanding these loops helps us predict outcomes and make informed decisions, both in nature and technology.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding these loops helps us predict outcomes and make informed decisions, both in nature and technology.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding these loops helps us predict outcomes and make informed decisions, both in nature and technology.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding these loops helps",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Curious about more science insights? Like and follow for more deep dives!",
+    "visual_description": "Cta visual: Curious about more science insights? Like and follow for more deep dives!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more science insights? Like and follow for more deep dives!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more science insights? Like and follow for more deep dives!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more science",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

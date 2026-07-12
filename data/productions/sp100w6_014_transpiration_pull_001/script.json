@@ -1,0 +1,74 @@
+{
+  "title": "Transpiration Pull",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Understanding the science behind transpiration pull reveals its crucial role in plant life.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Ever wonder how trees drink water from the ground?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "This process is called transpiration pull, and it\u2019s more fascinating than you think.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "When water evaporates from leaves, it creates a vacuum.",
+      "emotion": "intrigue",
+      "delivery": "enthusiastic",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 27.0,
+      "segment_type": "evidence",
+      "voiceover": "This vacuum helps pull more water from roots to leaves, sustaining the plant.",
+      "emotion": "fascination",
+      "delivery": "informative",
+      "retention_device": "visualize it"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 27.0,
+      "end_time": 36.0,
+      "segment_type": "payoff",
+      "voiceover": "So next time you see a tree, remember, it\u2019s using science to stay alive.",
+      "emotion": "satisfaction",
+      "delivery": "uplifting",
+      "retention_device": "reveal"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 36.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious for more? Hit like and follow for more science insights!",
+      "emotion": "encouragement",
+      "delivery": "inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Ever wonder how trees drink water from the ground? This process is called transpiration pull, and it\u2019s more fascinating than you think. When water evaporates from leaves, it creates a vacuum. This vacuum helps pull more water from roots to leaves, sustaining the plant. So next time you see a tree, remember, it\u2019s using science to stay alive. Curious for more? Hit like and follow for more science insights!",
+  "call_to_action": "Hit like and follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:58:47.521658+00:00",
+  "source": "ai"
+}

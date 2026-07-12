@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 3.0,
+    "narration": "Did you know a robot on Mars just made oxygen?",
+    "visual_description": "Hook visual: Did you know a robot on Mars just made oxygen?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Did you know a robot on Mars just made oxygen?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Did you know a robot on Mars just made oxygen?",
+    "stock_footage_query": "",
+    "text_overlay": "Did you know a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 3.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 7.0,
+    "narration": "Meet MOXIE. It\u2019s NASA's experiment that turned carbon dioxide into oxygen.",
+    "visual_description": "Context visual: Meet MOXIE. It\u2019s NASA's experiment that turned carbon dioxide into oxygen.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Meet MOXIE. It\u2019s NASA's experiment that turned carbon dioxide into oxygen.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Meet MOXIE. It\u2019s NASA's experiment that turned carbon dioxide into oxygen.",
+    "stock_footage_query": "",
+    "text_overlay": "Meet MOXIE. It\u2019s NASA's",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 3.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 3.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 7.0,
+    "narration": "This is a major step for future Mars missions. Imagine astronauts breathing on the Red Planet!",
+    "visual_description": "Escalation visual: This is a major step for future Mars missions. Imagine astronauts breathing on the Red Planet!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: This is a major step for future Mars missions. Imagine astronauts breathing on the Red Planet!",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: This is a major step for future Mars missions. Imagine astronauts breathing on the Red Planet!",
+    "stock_footage_query": "",
+    "text_overlay": "This is a major",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 17.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Using solid oxide electrolysis, MOXIE produces oxygen from the air, proving in-situ resource utilization is possible.",
+    "visual_description": "Evidence visual: Using solid oxide electrolysis, MOXIE produces oxygen from the air, proving in-situ resource utilization is possible.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Using solid oxide electrolysis, MOXIE produces oxygen from the air, proving in-situ resource utilization is possible.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Using solid oxide electrolysis, MOXIE produces oxygen from the air, proving in-situ resource utilization is possible.",
+    "stock_footage_query": "",
+    "text_overlay": "Using solid oxide electrolysis,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 17.0,
+      "end_sec": 25.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 17.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "But remember, it's just a demo and not a full life-support system... yet!",
+    "visual_description": "Payoff visual: But remember, it's just a demo and not a full life-support system... yet!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: But remember, it's just a demo and not a full life-support system... yet!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: But remember, it's just a demo and not a full life-support system... yet!",
+    "stock_footage_query": "",
+    "text_overlay": "But remember, it's just",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 25.0,
+      "end_sec": 35.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 25.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 25.0,
+    "narration": "Curious about Mars? Hit like and follow for more mind-blowing science!",
+    "visual_description": "Cta visual: Curious about Mars? Hit like and follow for more mind-blowing science!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about Mars? Hit like and follow for more mind-blowing science!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about Mars? Hit like and follow for more mind-blowing science!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about Mars? Hit",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 35.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 35.0
+    }
+  }
+]

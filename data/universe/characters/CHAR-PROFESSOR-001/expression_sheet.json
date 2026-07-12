@@ -1,0 +1,39 @@
+{
+  "character_id": "CHAR-PROFESSOR-001",
+  "version": "1.0.0",
+  "expressions": {
+    "neutral": {
+      "brows": "soft_arch",
+      "eyes": "forward",
+      "mouth": "slight_smile",
+      "energy": 0.35
+    },
+    "curious": {
+      "brows": "raised",
+      "eyes": "wider",
+      "mouth": "small_o",
+      "energy": 0.5
+    },
+    "thinking": {
+      "brows": "one_up",
+      "eyes": "up_left",
+      "mouth": "flat",
+      "energy": 0.3
+    },
+    "clarity": {
+      "brows": "soft",
+      "eyes": "forward_bright",
+      "mouth": "warm_smile",
+      "energy": 0.45
+    },
+    "warm_close": {
+      "brows": "soft",
+      "eyes": "to_camera",
+      "mouth": "smile",
+      "energy": 0.4
+    }
+  },
+  "out_of_range": ["panic", "shock", "chaos"],
+  "blend_rule": "Soft crossfade; keep calm tutor energy. Never hold a frantic face.",
+  "note": "Facial blend execution is Agent 16 scope. No phoneme system invented here."
+}

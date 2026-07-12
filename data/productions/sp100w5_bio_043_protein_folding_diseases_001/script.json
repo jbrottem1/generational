@@ -1,0 +1,74 @@
+{
+  "title": "Protein folding diseases",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the science behind protein folding diseases reveals important insights about their impact.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about protein folding diseases than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Proteins are like intricate puzzles. If they fold incorrectly, the consequences can be dire.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Diseases like Alzheimer's and Parkinson's stem from these misfolded proteins.",
+      "emotion": "curiosity",
+      "delivery": "concerned",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows that even slight changes in the protein structure can lead to severe brain damage.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "shocking fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding these diseases helps scientists develop better treatments and possibly even cures.",
+      "emotion": "hopeful",
+      "delivery": "inspiring",
+      "retention_device": "satisfying resolution"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into the mysteries of science? Like and follow for more!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about protein folding diseases than social media does. Proteins are like intricate puzzles. If they fold incorrectly, the consequences can be dire. Diseases like Alzheimer's and Parkinson's stem from these misfolded proteins. Research shows that even slight changes in the protein structure can lead to severe brain damage. Understanding these diseases helps scientists develop better treatments and possibly even cures. Want to dive deeper into the mysteries of science? Like and follow for more!",
+  "call_to_action": "Like and follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:39:34.356535+00:00",
+  "source": "ai"
+}

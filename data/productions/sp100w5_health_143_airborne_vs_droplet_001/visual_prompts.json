@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science has a clearer story about airborne vs droplet than social media does.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Airborne transmission involves tiny particles lingering in the air for hours. Think of aerosols.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Droplet transmission, on the other hand, is larger, heavier droplets that fall quickly\u2014think sneezes and coughs.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Studies show airborne viruses can travel distances over 6 feet, while droplets typically travel less.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Understanding this helps us make better choices about masks and ventilation.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Stay informed! Like and follow for more science insights.",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science has a clearer story about airborne vs droplet than social media does.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Airborne transmission involves tiny particles lingering in the air for hours. Think of aerosols.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Droplet transmission, on the other hand, is larger, heavier droplets that fall quickly\u2014think sneezes and coughs.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Studies show airborne viruses can travel distances over 6 feet, while droplets typically travel less.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Understanding this helps us make better choices about masks and ventilation.",
+      "duration_sec": 14.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Stay informed! Like and follow for more science insights.",
+      "duration_sec": 20.0
+    }
+  ]
+}

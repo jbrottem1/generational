@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Your attention is a limited battery.",
+    "visual_description": "Hook visual: Your attention is a limited battery.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Your attention is a limited battery.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Your attention is a limited battery.",
+    "stock_footage_query": "",
+    "text_overlay": "Your attention is a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Just like your phone, your brain has a finite amount of focus.",
+    "visual_description": "Context visual: Just like your phone, your brain has a finite amount of focus.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Just like your phone, your brain has a finite amount of focus.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Just like your phone, your brain has a finite amount of focus.",
+    "stock_footage_query": "",
+    "text_overlay": "Just like your phone,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This concept is called selective attention. It\u2019s how you prioritize information.",
+    "visual_description": "Escalation visual: This concept is called selective attention. It\u2019s how you prioritize information.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: This concept is called selective attention. It\u2019s how you prioritize information.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: This concept is called selective attention. It\u2019s how you prioritize information.",
+    "stock_footage_query": "",
+    "text_overlay": "This concept is called",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Cognitive load affects how much you can focus. More distractions? More mental drain.",
+    "visual_description": "Evidence visual: Cognitive load affects how much you can focus. More distractions? More mental drain.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Cognitive load affects how much you can focus. More distractions? More mental drain.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Cognitive load affects how much you can focus. More distractions? More mental drain.",
+    "stock_footage_query": "",
+    "text_overlay": "Cognitive load affects how",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "relief",
+    "length_sec": 12.0,
+    "narration": "So, if you feel drained, it\u2019s not your fault. You\u2019re just managing your brain\u2019s battery.",
+    "visual_description": "Payoff visual: So, if you feel drained, it\u2019s not your fault. You\u2019re just managing your brain\u2019s battery.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, if you feel drained, it\u2019s not your fault. You\u2019re just managing your brain\u2019s battery.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, if you feel drained, it\u2019s not your fault. You\u2019re just managing your brain\u2019s battery.",
+    "stock_footage_query": "",
+    "text_overlay": "So, if you feel",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 22.0,
+    "narration": "Want to save your brain's battery? Follow for more tips!",
+    "visual_description": "Cta visual: Want to save your brain's battery? Follow for more tips!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to save your brain's battery? Follow for more tips!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to save your brain's battery? Follow for more tips!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to save your",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

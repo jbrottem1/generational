@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Here's what science actually says about p values nuance.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: P values determine if results are statistically significant, but the story doesn\u2019t end there.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: A p value below 0.05 often gets all the attention, but it\u2019s not a magic threshold.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: It can\u2019t tell us how important or relevant a finding is\u2014only if it\u2019s unlikely to occur by chance.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: So, when you hear p values, remember: context matters, and results can always vary.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to dive deeper into statistics? Hit subscribe for more insights!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Here's what science actually says about p values nuance.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: P values determine if results are statistically significant, but the story doesn\u2019t end there.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: A p value below 0.05 often gets all the attention, but it\u2019s not a magic threshold.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: It can\u2019t tell us how important or relevant a finding is\u2014only if it\u2019s unlikely to occur by chance.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: So, when you hear p values, remember: context matters, and results can always vary.",
+      "duration_sec": 14.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to dive deeper into statistics? Hit subscribe for more insights!",
+      "duration_sec": 20.0
+    }
+  ]
+}

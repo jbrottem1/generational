@@ -1,0 +1,74 @@
+{
+  "title": "Moraines",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "This video unravels the science behind moraines, revealing their fascinating story in nature.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about moraines than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Moraines are glacial deposits, formed as glaciers move and reshape the landscape.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But did you know they can tell us about past climates?",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Different types of moraines, like terminal and lateral, show us how glaciers advanced and retreated.",
+      "emotion": "curiosity",
+      "delivery": "insightful",
+      "retention_device": "visual imagery"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 48.0,
+      "segment_type": "payoff",
+      "voiceover": "So, next time you see a ridge or mound, think about the history it holds\u2014layers of ice and time.",
+      "emotion": "wonder",
+      "delivery": "reflective",
+      "retention_device": "strong imagery"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 48.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more wonders of our planet? Like and follow for more science stories!",
+      "emotion": "enthusiasm",
+      "delivery": "inviting",
+      "retention_device": "actionable prompt"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about moraines than social media does. Moraines are glacial deposits, formed as glaciers move and reshape the landscape. But did you know they can tell us about past climates? Different types of moraines, like terminal and lateral, show us how glaciers advanced and retreated. So, next time you see a ridge or mound, think about the history it holds\u2014layers of ice and time. Curious about more wonders of our planet? Like and follow for more science stories!",
+  "call_to_action": "Like and follow for more science stories!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:42:54.484597+00:00",
+  "source": "ai"
+}

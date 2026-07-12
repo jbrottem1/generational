@@ -1,0 +1,74 @@
+{
+  "title": "Calcium Muscle Contraction",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the pivotal role of calcium in muscle contraction.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about calcium muscle contraction.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Calcium isn't just a nutrient; it's the key to muscle movement.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "When a nerve signals your muscle, calcium floods in like a wave.",
+      "emotion": "curiosity",
+      "delivery": "animated",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "This triggers actin and myosin to interact, causing contraction. It's a dance of proteins!",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "payoff",
+      "voiceover": "Without calcium, muscles stay relaxed. So, every lift, every sprint relies on this mineral.",
+      "emotion": "curiosity",
+      "delivery": "emphatic",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into science? Hit that follow for more fascinating facts!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "clear CTA"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about calcium muscle contraction. Calcium isn't just a nutrient; it's the key to muscle movement. When a nerve signals your muscle, calcium floods in like a wave. This triggers actin and myosin to interact, causing contraction. It's a dance of proteins! Without calcium, muscles stay relaxed. So, every lift, every sprint relies on this mineral. Want to dive deeper into science? Hit that follow for more fascinating facts!",
+  "call_to_action": "Hit that follow for more fascinating facts!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:17:19.616611+00:00",
+  "source": "ai"
+}

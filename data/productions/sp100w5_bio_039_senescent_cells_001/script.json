@@ -1,0 +1,74 @@
+{
+  "title": "Senescent Cells Explained",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "An insightful exploration into the role of senescent cells in our bodies.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about senescent cells than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 12.0,
+      "segment_type": "context",
+      "voiceover": "Senescent cells are damaged cells that stop dividing but refuse to die.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 12.0,
+      "end_time": 20.0,
+      "segment_type": "escalation",
+      "voiceover": "They accumulate with age and contribute to aging and disease.",
+      "emotion": "concern",
+      "delivery": "serious",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 20.0,
+      "end_time": 28.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that targeting these cells may improve health and longevity.",
+      "emotion": "hope",
+      "delivery": "optimistic",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 28.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "But the science is still evolving. More research is needed.",
+      "emotion": "curiosity",
+      "delivery": "thoughtful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Follow for more insights into the science of our bodies.",
+      "emotion": "encouragement",
+      "delivery": "energetic",
+      "retention_device": "natural CTA"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about senescent cells than social media does. Senescent cells are damaged cells that stop dividing but refuse to die. They accumulate with age and contribute to aging and disease. Studies show that targeting these cells may improve health and longevity. But the science is still evolving. More research is needed. Follow for more insights into the science of our bodies.",
+  "call_to_action": "Follow for more insights into the science of our bodies.",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:39:22.335550+00:00",
+  "source": "ai"
+}

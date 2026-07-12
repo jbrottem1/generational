@@ -20,9 +20,22 @@ class StickFigureSpec:
     face_fill: tuple[int, int, int, int] = (255, 255, 255, 255)
     stroke: int = 7
     head_ratio: float = 0.34
+    # Gen Foundation lock: attire="none". Opt-in MacroCenter coat via "lab_coat" + version bump.
+    attire: str = "none"
 
     def to_registry(self) -> dict[str, Any]:
         return asdict(self)
+
+
+def _resolve_draw_coat(*, coat: bool, attire: str | None, spec: StickFigureSpec) -> bool:
+    """Lab coat is gated — professor=True alone never draws a coat.
+
+    Opt in with coat=True or attire=\"lab_coat\" (draw arg or StickFigureSpec).
+    """
+    resolved = (attire if attire is not None else spec.attire or "none").strip().lower()
+    if coat or resolved in ("lab_coat", "coat"):
+        return True
+    return False
 
 
 def draw_stick_figure(
@@ -38,6 +51,8 @@ def draw_stick_figure(
     walk_stride: float = 0.0,
     confident: bool = False,
     professor: bool = False,
+    coat: bool = False,
+    attire: str | None = None,
     windy: bool = False,
     pose: dict[str, float] | None = None,
     eye_drift: float = 0.0,
@@ -46,10 +61,14 @@ def draw_stick_figure(
 ) -> Image.Image:
     """Draw one performance frame. mouth_open in [0,1]; blink in [0,1].
 
-    Gestures: idle, wave, point, think, present, push, react.
+    Gestures: idle, wave, point, think, present, push, react, write.
     Optional ``pose`` (from fluid_motion) enables blended arm keypoints — no snaps.
+
+    Attire: Gen Foundation defaults to clean stick (coat=False, attire=\"none\").
+    MacroCenter may opt in later with coat=True or attire=\"lab_coat\".
     """
     spec = spec or StickFigureSpec()
+    draw_coat = _resolve_draw_coat(coat=coat, attire=attire, spec=spec)
     mouth_open = max(0.0, min(1.0, float(mouth_open)))
     blink = max(0.0, min(1.0, float(blink)))
     img = Image.new("RGBA", (size, size), (0, 0, 0, 0))
@@ -131,11 +150,11 @@ def draw_stick_figure(
                 fill=(40, 40, 40, 255),
             )
 
-    # Torso
+    # Torso — lab coat is opt-in only (coat=True / attire=lab_coat); Gen stays clean stick
     body_top = cy + head_r
     body_bot = int(size * 0.68)
-    if professor:
-        coat = (245, 248, 252, 230)
+    if draw_coat:
+        coat_fill = (245, 248, 252, 230)
         flutter = int(18 * math.sin(arm_phase * 4)) if windy else 0
         d.polygon(
             [
@@ -144,7 +163,7 @@ def draw_stick_figure(
                 (cx + 85 + flutter, body_bot + 10),
                 (cx - 85 - flutter, body_bot + 10),
             ],
-            fill=coat,
+            fill=coat_fill,
             outline=spec.outline,
         )
         d.line((cx - 25, body_top + 28, cx - 35, body_bot), fill=(64, 196, 180, 255), width=4)
@@ -205,6 +224,13 @@ def draw_stick_figure(
             d.line((cx, shoulder, cx + 100, shoulder - 20), fill=spec.outline, width=stroke)
             d.ellipse((cx - 115, shoulder - 35, cx - 85, shoulder - 5), outline=spec.outline, width=stroke - 1)
             d.ellipse((cx + 85, shoulder - 35, cx + 115, shoulder - 5), outline=spec.outline, width=stroke - 1)
+        elif g == "write":
+            # Left arm idle; right arm raised to board with chalk micro-motion
+            chalk = int(8 * math.sin(arm_phase * 6))
+            d.line((cx, shoulder, cx - 80, shoulder + 95), fill=spec.outline, width=stroke)
+            d.line((cx, shoulder, cx + 95, shoulder - 55 + chalk // 2), fill=spec.outline, width=stroke)
+            d.line((cx + 95, shoulder - 55 + chalk // 2, cx + 130, shoulder - 70 + chalk), fill=spec.outline, width=max(3, stroke - 1))
+            d.ellipse((cx + 122, shoulder - 82 + chalk, cx + 146, shoulder - 58 + chalk), outline=spec.outline, width=stroke - 1)
         else:
             d.line((cx, shoulder, cx - 80 + sway // 2, shoulder + 95), fill=spec.outline, width=stroke)
             d.line((cx, shoulder, cx + 85 - sway // 2, shoulder + 88 + sway // 2), fill=spec.outline, width=stroke)
@@ -223,9 +249,22 @@ def draw_stick_figure(
     return img
 
 
-def save_turnaround_sheet(path: Path, *, size: int = 512) -> Path:
-    """Save a simple front plate as the v1 reusable asset."""
+def save_turnaround_sheet(
+    path: Path,
+    *,
+    size: int = 512,
+    professor: bool = False,
+    coat: bool = False,
+    spec: StickFigureSpec | None = None,
+) -> Path:
+    """Save a simple front plate as the v1 reusable asset (Gen: professor, no coat)."""
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    draw_stick_figure(size=size, mouth_open=0.0).save(path)
+    draw_stick_figure(
+        size=size,
+        mouth_open=0.0,
+        professor=professor,
+        coat=coat,
+        spec=spec,
+    ).save(path)
     return path

@@ -1,0 +1,74 @@
+{
+  "title": "Water table",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the fascinating and often misunderstood concept of the water table.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about the water table than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "The water table is where groundwater fills the spaces in soil and rock.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But did you know it fluctuates? It can rise and fall based on rainfall.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show it can also be impacted by human activity, like over-extraction.",
+      "emotion": "curiosity",
+      "delivery": "serious",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding the water table is crucial for sustainable water management.",
+      "emotion": "curiosity",
+      "delivery": "confident",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 45.0,
+      "segment_type": "cta",
+      "voiceover": "Curious to learn more? Hit like and follow for more science insights!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "none"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about the water table than social media does. The water table is where groundwater fills the spaces in soil and rock. But did you know it fluctuates? It can rise and fall based on rainfall. Studies show it can also be impacted by human activity, like over-extraction. Understanding the water table is crucial for sustainable water management. Curious to learn more? Hit like and follow for more science insights!",
+  "call_to_action": "Hit like and follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:42:30.247051+00:00",
+  "source": "ai"
+}

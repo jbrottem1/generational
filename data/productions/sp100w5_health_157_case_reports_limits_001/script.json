@@ -1,0 +1,74 @@
+{
+  "title": "Case Reports Limits",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the limitations of case reports in science versus social media.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about case reports limits than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Case reports are anecdotal. They tell a single story.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But can we generalize from one patient? What if it misleads us?",
+      "emotion": "curiosity",
+      "delivery": "intriguing",
+      "retention_device": "hypothetical scenario"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows case reports lack rigorous testing. They can exaggerate outcomes.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 36.0,
+      "segment_type": "payoff",
+      "voiceover": "Relying solely on them can lead to dangerous decisions.",
+      "emotion": "curiosity",
+      "delivery": "serious",
+      "retention_device": "dramatic pause"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 36.0,
+      "end_time": 50.0,
+      "segment_type": "cta",
+      "voiceover": "Stay informed, trust science, and think critically. Follow for more insights!",
+      "emotion": "curiosity",
+      "delivery": "encouraging",
+      "retention_device": "actionable step"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about case reports limits than social media does. Case reports are anecdotal. They tell a single story. But can we generalize from one patient? What if it misleads us? Research shows case reports lack rigorous testing. They can exaggerate outcomes. Relying solely on them can lead to dangerous decisions. Stay informed, trust science, and think critically. Follow for more insights!",
+  "call_to_action": "Follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:55:38.919052+00:00",
+  "source": "ai"
+}

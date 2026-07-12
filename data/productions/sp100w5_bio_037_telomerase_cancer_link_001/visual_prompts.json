@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: What if I told you a tiny enzyme could change everything about cancer?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Meet telomerase, a crucial enzyme that protects our DNA. But here's the catch: it's often overactive in cancer cells.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: While telomerase helps cells divide, uncontrolled growth can lead to tumors. So, is it friend or foe?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Studies show that inhibiting telomerase could slow cancer progression. But results are mixed, and scientists are still u",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Understanding telomerase may lead to breakthroughs in treatments. So, while it's linked to cancer, there's still hope.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about more science mysteries? Hit that follow button!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: What if I told you a tiny enzyme could change everything about cancer?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Meet telomerase, a crucial enzyme that protects our DNA. But here's the catch: it's often overactive in cancer cells.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: While telomerase helps cells divide, uncontrolled growth can lead to tumors. So, is it friend or foe?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Studies show that inhibiting telomerase could slow cancer progression. But results are mixed, and scientists are still u",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Understanding telomerase may lead to breakthroughs in treatments. So, while it's linked to cancer, there's still hope.",
+      "duration_sec": 20.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about more science mysteries? Hit that follow button!",
+      "duration_sec": 10.0
+    }
+  ]
+}

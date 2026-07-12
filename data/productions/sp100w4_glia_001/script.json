@@ -1,0 +1,74 @@
+{
+  "title": "Glia Are Not Just Glue",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore how glial cells actively shape brain function beyond their misunderstood role.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Think glial cells are just glue? Think again.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Once dismissed as passive support, they actually fuel brain function.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Glial cells insulate neurons, regulate blood flow, and even influence learning.",
+      "emotion": "fascination",
+      "delivery": "building excitement",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Recent studies show they communicate with neurons, shaping how we think.",
+      "emotion": "intrigue",
+      "delivery": "informative",
+      "retention_device": "statistic reveal"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "So, they're not just glue; they're the architects of our minds.",
+      "emotion": "surprise",
+      "delivery": "assertive",
+      "retention_device": "final reveal"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more brain mysteries? Like, share, and follow for more insights!",
+      "emotion": "encouragement",
+      "delivery": "inviting",
+      "retention_device": "natural CTA"
+    }
+  ],
+  "full_voiceover": "Think glial cells are just glue? Think again. Once dismissed as passive support, they actually fuel brain function. Glial cells insulate neurons, regulate blood flow, and even influence learning. Recent studies show they communicate with neurons, shaping how we think. So, they're not just glue; they're the architects of our minds. Curious about more brain mysteries? Like, share, and follow for more insights!",
+  "call_to_action": "Curious about more brain mysteries? Like, share, and follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:32:06.158091+00:00",
+  "source": "ai"
+}

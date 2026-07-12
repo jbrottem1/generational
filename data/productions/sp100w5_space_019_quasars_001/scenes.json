@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about quasars than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about quasars than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about quasars than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about quasars than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Quasars are incredibly bright objects powered by supermassive black holes at the centers of distant galaxies.",
+    "visual_description": "Context visual: Quasars are incredibly bright objects powered by supermassive black holes at the centers of distant galaxies.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Quasars are incredibly bright objects powered by supermassive black holes at the centers of distant galaxies.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Quasars are incredibly bright objects powered by supermassive black holes at the centers of distant galaxies.",
+    "stock_footage_query": "",
+    "text_overlay": "Quasars are incredibly bright",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "wonder",
+    "length_sec": 8.0,
+    "narration": "They can outshine entire galaxies, emitting more energy than a trillion suns combined!",
+    "visual_description": "Escalation visual: They can outshine entire galaxies, emitting more energy than a trillion suns combined!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: They can outshine entire galaxies, emitting more energy than a trillion suns combined!",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: They can outshine entire galaxies, emitting more energy than a trillion suns combined!",
+    "stock_footage_query": "",
+    "text_overlay": "They can outshine entire",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But here's the twist: we\u2019re not entirely sure how they form or evolve over time.",
+    "visual_description": "Evidence visual: But here's the twist: we\u2019re not entirely sure how they form or evolve over time.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: But here's the twist: we\u2019re not entirely sure how they form or evolve over time.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: But here's the twist: we\u2019re not entirely sure how they form or evolve over time.",
+    "stock_footage_query": "",
+    "text_overlay": "But here's the twist:",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "awe",
+    "length_sec": 16.0,
+    "narration": "Their light takes billions of years to reach us, meaning we\u2019re seeing them as they were in the early universe.",
+    "visual_description": "Payoff visual: Their light takes billions of years to reach us, meaning we\u2019re seeing them as they were in the early universe.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Their light takes billions of years to reach us, meaning we\u2019re seeing them as they were in the early universe.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Their light takes billions of years to reach us, meaning we\u2019re seeing them as they were in the early universe.",
+    "stock_footage_query": "",
+    "text_overlay": "Their light takes billions",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 42.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "engagement",
+    "length_sec": 14.0,
+    "narration": "Want to dive deeper into the mysteries of space? Hit that follow button for more!",
+    "visual_description": "Cta visual: Want to dive deeper into the mysteries of space? Hit that follow button for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into the mysteries of space? Hit that follow button for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into the mysteries of space? Hit that follow button for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 42.0,
+      "end_sec": 56.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 42.0
+    }
+  }
+]

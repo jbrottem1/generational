@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: What if I told you your body has hidden sensors that control your blood pressure?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: These are baroreceptors, tiny receptors found in your arteries. They sense changes in blood pressure.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: When blood pressure rises, they send signals to your brain to lower it. Amazing, right?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: But here's the twist: not all baroreceptors work the same way. Some are more sensitive than others.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: This means your body has a complex way of managing pressure, which is crucial for your health.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to learn more fascinating biology secrets? Hit that follow button!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: What if I told you your body has hidden sensors that control your blood pressure?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: These are baroreceptors, tiny receptors found in your arteries. They sense changes in blood pressure.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: When blood pressure rises, they send signals to your brain to lower it. Amazing, right?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: But here's the twist: not all baroreceptors work the same way. Some are more sensitive than others.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: This means your body has a complex way of managing pressure, which is crucial for your health.",
+      "duration_sec": 16.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to learn more fascinating biology secrets? Hit that follow button!",
+      "duration_sec": 18.0
+    }
+  ]
+}

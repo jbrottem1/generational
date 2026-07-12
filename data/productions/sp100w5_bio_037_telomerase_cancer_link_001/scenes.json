@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if I told you a tiny enzyme could change everything about cancer?",
+    "visual_description": "Hook visual: What if I told you a tiny enzyme could change everything about cancer?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you a tiny enzyme could change everything about cancer?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you a tiny enzyme could change everything about cancer?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Meet telomerase, a crucial enzyme that protects our DNA. But here's the catch: it's often overactive in cancer cells.",
+    "visual_description": "Context visual: Meet telomerase, a crucial enzyme that protects our DNA. But here's the catch: it's often overactive in cancer cells.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Meet telomerase, a crucial enzyme that protects our DNA. But here's the catch: it's often overactive in cancer cells.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Meet telomerase, a crucial enzyme that protects our DNA. But here's the catch: it's often overactive in cancer cells.",
+    "stock_footage_query": "",
+    "text_overlay": "Meet telomerase, a crucial",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "While telomerase helps cells divide, uncontrolled growth can lead to tumors. So, is it friend or foe?",
+    "visual_description": "Escalation visual: While telomerase helps cells divide, uncontrolled growth can lead to tumors. So, is it friend or foe?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: While telomerase helps cells divide, uncontrolled growth can lead to tumors. So, is it friend or foe?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: While telomerase helps cells divide, uncontrolled growth can lead to tumors. So, is it friend or foe?",
+    "stock_footage_query": "",
+    "text_overlay": "While telomerase helps cells",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Studies show that inhibiting telomerase could slow cancer progression. But results are mixed, and scientists are still uncertain.",
+    "visual_description": "Evidence visual: Studies show that inhibiting telomerase could slow cancer progression. But results are mixed, and scientists are still u",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show that inhibiting telomerase could slow cancer progression. But results are mixed, and scientists are still u",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show that inhibiting telomerase could slow cancer progression. But results are mixed, and scientists are still u",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show that inhibiting",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "hope",
+    "length_sec": 20.0,
+    "narration": "Understanding telomerase may lead to breakthroughs in treatments. So, while it's linked to cancer, there's still hope.",
+    "visual_description": "Payoff visual: Understanding telomerase may lead to breakthroughs in treatments. So, while it's linked to cancer, there's still hope.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding telomerase may lead to breakthroughs in treatments. So, while it's linked to cancer, there's still hope.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding telomerase may lead to breakthroughs in treatments. So, while it's linked to cancer, there's still hope.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding telomerase may lead",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Curious about more science mysteries? Hit that follow button!",
+    "visual_description": "Cta visual: Curious about more science mysteries? Hit that follow button!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more science mysteries? Hit that follow button!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more science mysteries? Hit that follow button!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more science",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

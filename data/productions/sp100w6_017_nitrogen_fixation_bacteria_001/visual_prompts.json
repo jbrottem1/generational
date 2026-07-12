@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: What if I told you that tiny bacteria are the unsung heroes of our planet's food supply?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Nitrogen fixation bacteria convert atmospheric nitrogen into a form usable by plants. But how do they do it?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: They live in symbiosis with plants, especially legumes. But not all nitrogen-fixing bacteria are the same!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Some like Rhizobium form nodules on roots, while others, like Azotobacter, float freely in the soil!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Understanding these bacteria is crucial as they affect agriculture and ecosystems. Yet, many mysteries remain.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to dive deeper into science? Hit that follow button for more fascinating discoveries!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: What if I told you that tiny bacteria are the unsung heroes of our planet's food supply?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Nitrogen fixation bacteria convert atmospheric nitrogen into a form usable by plants. But how do they do it?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: They live in symbiosis with plants, especially legumes. But not all nitrogen-fixing bacteria are the same!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Some like Rhizobium form nodules on roots, while others, like Azotobacter, float freely in the soil!",
+      "duration_sec": 10.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Understanding these bacteria is crucial as they affect agriculture and ecosystems. Yet, many mysteries remain.",
+      "duration_sec": 10.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to dive deeper into science? Hit that follow button for more fascinating discoveries!",
+      "duration_sec": 22.0
+    }
+  ]
+}

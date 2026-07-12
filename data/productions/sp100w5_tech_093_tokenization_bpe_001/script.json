@@ -1,0 +1,74 @@
+{
+  "title": "Tokenization BPE",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the science behind tokenization BPE reveals surprising insights.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about tokenization BPE than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Tokenization BPE, or Byte Pair Encoding, reduces text into smaller, manageable pieces.",
+      "emotion": "curiosity",
+      "delivery": "engaging and clear",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But why does this matter? It enhances language models' understanding of context.",
+      "emotion": "curiosity",
+      "delivery": "building anticipation",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show models using BPE perform better with less data, but results can vary.",
+      "emotion": "curiosity",
+      "delivery": "informative and direct",
+      "retention_device": "unexpected detail"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding tokenization BPE is key to grasping AI advancements in language processing.",
+      "emotion": "curiosity",
+      "delivery": "satisfying and enlightening",
+      "retention_device": "strong conclusion"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into tech? Hit that follow button for more!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic and inviting",
+      "retention_device": "encouragement"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about tokenization BPE than social media does. Tokenization BPE, or Byte Pair Encoding, reduces text into smaller, manageable pieces. But why does this matter? It enhances language models' understanding of context. Studies show models using BPE perform better with less data, but results can vary. Understanding tokenization BPE is key to grasping AI advancements in language processing. Want to dive deeper into tech? Hit that follow button for more!",
+  "call_to_action": "Want to dive deeper into tech? Hit that follow button for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:48:11.311230+00:00",
+  "source": "ai"
+}

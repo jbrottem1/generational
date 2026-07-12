@@ -1,0 +1,74 @@
+{
+  "title": "What Lymph Nodes Are Doing",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the crucial role of lymph nodes in immune responses.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Lymph nodes are immune checkpoints where cells meet antigens.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "These tiny structures might seem small, but they\u2019re essential in our defense.",
+      "emotion": "curiosity",
+      "delivery": "engaging and clear",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "When pathogens invade, lymph nodes spring into action, gathering immune cells.",
+      "emotion": "curiosity",
+      "delivery": "building excitement",
+      "retention_device": "surprise"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows they can influence how effectively our immune system responds.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "statistic"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "So, next time you feel under the weather, remember the unseen battle within.",
+      "emotion": "curiosity",
+      "delivery": "inspiring",
+      "retention_device": "visual imagery"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more science insights? Hit that follow button!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "direct invitation"
+    }
+  ],
+  "full_voiceover": "Lymph nodes are immune checkpoints where cells meet antigens. These tiny structures might seem small, but they\u2019re essential in our defense. When pathogens invade, lymph nodes spring into action, gathering immune cells. Research shows they can influence how effectively our immune system responds. So, next time you feel under the weather, remember the unseen battle within. Curious about more science insights? Hit that follow button!",
+  "call_to_action": "Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:05:40.582323+00:00",
+  "source": "ai"
+}

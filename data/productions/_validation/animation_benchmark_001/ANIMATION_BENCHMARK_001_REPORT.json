@@ -1,0 +1,33 @@
+{
+  "benchmark": "Animation_Benchmark_001_LipSync_Test",
+  "status": "PASSED",
+  "generated_at": "2026-07-11T02:16:39.682226+00:00",
+  "character_id": "CHAR-STICK-001",
+  "narration": "Hello! I'm the first character in the Generational Universe. Right now we're testing our animation system. Soon I'll be taking you on incredible scientific adventures.",
+  "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Animation_Benchmark_001_LipSync_Test.mp4",
+  "export_confirmed": true,
+  "export_bytes": 466072,
+  "render_time_sec": 7.24,
+  "duration_sec": 10.056,
+  "mouth_driver": "AmplitudeMouthDriver",
+  "upgrade_path": "Replace AmplitudeMouthDriver with PhonemeMouthDriver \u2014 same openness_at() API",
+  "qc": {
+    "mouth_varies": true,
+    "has_silence_closed": true,
+    "has_speech_open": true,
+    "speaking_ratio": 0.797,
+    "idle_motion": true,
+    "blink_programmed": true,
+    "duration_sec": 10.056,
+    "frame_count": 241,
+    "passed": true
+  },
+  "motion_class": "lip_sync_character_performance",
+  "success_criteria": {
+    "alive_not_frozen": true,
+    "mouth_sync_amplitude": true,
+    "idle_motion": true,
+    "blinks": true,
+    "audio_muxed": true
+  }
+}

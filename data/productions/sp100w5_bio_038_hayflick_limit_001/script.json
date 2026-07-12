@@ -1,0 +1,74 @@
+{
+  "title": "Hayflick Limit: The Science of Aging",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A concise explanation of the Hayflick limit and its implications on cellular aging.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you cells have a built-in lifespan?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "This is the Hayflick limit\u2014where cells can only divide about 50 times.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Every time they divide, they're inching closer to aging.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "This limit stems from telomere shortening. When telomeres are too short, cells stop dividing.",
+      "emotion": "curiosity",
+      "delivery": "explaining",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding this can unlock secrets to aging and health. But, we\u2019re still learning.",
+      "emotion": "curiosity",
+      "delivery": "hopeful",
+      "retention_device": "thought-provoking"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how science can extend our lives? Hit that follow button!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "What if I told you cells have a built-in lifespan? This is the Hayflick limit\u2014where cells can only divide about 50 times. Every time they divide, they're inching closer to aging. This limit stems from telomere shortening. When telomeres are too short, cells stop dividing. Understanding this can unlock secrets to aging and health. But, we\u2019re still learning. Curious about how science can extend our lives? Hit that follow button!",
+  "call_to_action": "Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:38:46.110675+00:00",
+  "source": "ai"
+}

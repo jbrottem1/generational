@@ -1,0 +1,84 @@
+{
+  "title": "DNA to RNA: Transcription",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the crucial process of transcription that converts DNA into messenger RNA.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Genes are read into messenger RNA before proteins are built.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "This process, called transcription, is the first step in protein synthesis.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "open question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "But how does the DNA know what to say? It\u2019s all in the sequence!",
+      "emotion": "surprise",
+      "delivery": "animated and lively",
+      "retention_device": "unexpected twist"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "escalation",
+      "voiceover": "RNA polymerase reads the DNA strand and builds a complementary RNA strand.",
+      "emotion": "curiosity",
+      "delivery": "steady and engaging",
+      "retention_device": "visual progression"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "evidence",
+      "voiceover": "This RNA strand carries the genetic instructions from the nucleus to the ribosomes.",
+      "emotion": "interest",
+      "delivery": "informative and confident",
+      "retention_device": "additional information"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "And that's how your body reads its blueprints to create proteins!",
+      "emotion": "satisfaction",
+      "delivery": "bright and uplifting",
+      "retention_device": "reveal of significance"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into genetics? Hit that follow button!",
+      "emotion": "encouragement",
+      "delivery": "enthusiastic and inviting",
+      "retention_device": "clear call to action"
+    }
+  ],
+  "full_voiceover": "Genes are read into messenger RNA before proteins are built. This process, called transcription, is the first step in protein synthesis. But how does the DNA know what to say? It\u2019s all in the sequence! RNA polymerase reads the DNA strand and builds a complementary RNA strand. This RNA strand carries the genetic instructions from the nucleus to the ribosomes. And that's how your body reads its blueprints to create proteins! Want to dive deeper into genetics? Hit that follow button!",
+  "call_to_action": "Want to dive deeper into genetics? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:08:13.929311+00:00",
+  "source": "ai"
+}

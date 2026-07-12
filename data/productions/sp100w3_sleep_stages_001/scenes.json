@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Did you know sleep isn\u2019t just resting? It\u2019s a dynamic process!",
+    "visual_description": "Hook visual: Did you know sleep isn\u2019t just resting? It\u2019s a dynamic process!",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Did you know sleep isn\u2019t just resting? It\u2019s a dynamic process!",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Did you know sleep isn\u2019t just resting? It\u2019s a dynamic process!",
+    "stock_footage_query": "",
+    "text_overlay": "Did you know sleep",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Your sleep cycles through light, deep, and REM stages. Each plays a crucial role.",
+    "visual_description": "Context visual: Your sleep cycles through light, deep, and REM stages. Each plays a crucial role.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Your sleep cycles through light, deep, and REM stages. Each plays a crucial role.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Your sleep cycles through light, deep, and REM stages. Each plays a crucial role.",
+    "stock_footage_query": "",
+    "text_overlay": "Your sleep cycles through",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Light sleep? It helps you transition into deeper stages. But that\u2019s just the beginning.",
+    "visual_description": "Escalation visual: Light sleep? It helps you transition into deeper stages. But that\u2019s just the beginning.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Light sleep? It helps you transition into deeper stages. But that\u2019s just the beginning.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Light sleep? It helps you transition into deeper stages. But that\u2019s just the beginning.",
+    "stock_footage_query": "",
+    "text_overlay": "Light sleep? It helps",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Deep sleep is when your body repairs itself, boosting immune function and growth.",
+    "visual_description": "Evidence visual: Deep sleep is when your body repairs itself, boosting immune function and growth.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Deep sleep is when your body repairs itself, boosting immune function and growth.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Deep sleep is when your body repairs itself, boosting immune function and growth.",
+    "stock_footage_query": "",
+    "text_overlay": "Deep sleep is when",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "And then there\u2019s REM sleep\u2014where dreams happen and memory consolidation kicks in.",
+    "visual_description": "Payoff visual: And then there\u2019s REM sleep\u2014where dreams happen and memory consolidation kicks in.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: And then there\u2019s REM sleep\u2014where dreams happen and memory consolidation kicks in.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: And then there\u2019s REM sleep\u2014where dreams happen and memory consolidation kicks in.",
+    "stock_footage_query": "",
+    "text_overlay": "And then there\u2019s REM",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Want to unlock better sleep? Follow for more insights on health and biology!",
+    "visual_description": "Cta visual: Want to unlock better sleep? Follow for more insights on health and biology!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to unlock better sleep? Follow for more insights on health and biology!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to unlock better sleep? Follow for more insights on health and biology!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to unlock better",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

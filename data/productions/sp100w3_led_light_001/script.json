@@ -1,0 +1,74 @@
+{
+  "title": "How LEDs Make Light",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Discover the science behind how LEDs emit light through photon generation.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Did you know that LEDs emit light when electrons leap across a semiconductor?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Inside an LED, a semiconductor creates a band gap. When electrons move down, they release energy as photons.",
+      "emotion": "intrigue",
+      "delivery": "smooth and engaging",
+      "retention_device": "visual transition"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But why does that matter? The color of light depends on the energy of those photons!",
+      "emotion": "curiosity",
+      "delivery": "excited and quick",
+      "retention_device": "questioning tone"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Different materials in the LED produce different colors. Blue LEDs, for instance, require a larger energy drop than red ones.",
+      "emotion": "awe",
+      "delivery": "informative and clear",
+      "retention_device": "fact reveal"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "This technology allows for energy-efficient lighting that lasts longer than traditional bulbs.",
+      "emotion": "satisfaction",
+      "delivery": "confident and resonant",
+      "retention_device": "benefit highlight"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more cool science facts? Hit that follow button!",
+      "emotion": "encouragement",
+      "delivery": "enthusiastic and inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Did you know that LEDs emit light when electrons leap across a semiconductor? Inside an LED, a semiconductor creates a band gap. When electrons move down, they release energy as photons. But why does that matter? The color of light depends on the energy of those photons! Different materials in the LED produce different colors. Blue LEDs, for instance, require a larger energy drop than red ones. This technology allows for energy-efficient lighting that lasts longer than traditional bulbs. Curious about more cool science facts? Hit that follow button!",
+  "call_to_action": "Curious about more cool science facts? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:05:44.219292+00:00",
+  "source": "ai"
+}

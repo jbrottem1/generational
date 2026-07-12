@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about vaccine cold chain than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about vaccine cold chain than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about vaccine cold chain than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about vaccine cold chain than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "The vaccine cold chain is the journey of vaccines from the manufacturer to your arm.",
+    "visual_description": "Context visual: The vaccine cold chain is the journey of vaccines from the manufacturer to your arm.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: The vaccine cold chain is the journey of vaccines from the manufacturer to your arm.",
+    "ai_video_prompt": "Cinematic motion: Context visual: The vaccine cold chain is the journey of vaccines from the manufacturer to your arm.",
+    "stock_footage_query": "",
+    "text_overlay": "The vaccine cold chain",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Every step, from storage to transportation, must maintain specific temperatures to ensure effectiveness.",
+    "visual_description": "Escalation visual: Every step, from storage to transportation, must maintain specific temperatures to ensure effectiveness.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Every step, from storage to transportation, must maintain specific temperatures to ensure effectiveness.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Every step, from storage to transportation, must maintain specific temperatures to ensure effectiveness.",
+    "stock_footage_query": "",
+    "text_overlay": "Every step, from storage",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "Studies show that even a slight temperature change can reduce a vaccine's potency.",
+    "visual_description": "Evidence visual: Studies show that even a slight temperature change can reduce a vaccine's potency.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show that even a slight temperature change can reduce a vaccine's potency.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show that even a slight temperature change can reduce a vaccine's potency.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show that even",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "urgency",
+    "length_sec": 8.0,
+    "narration": "That\u2019s why the cold chain is critical\u2014without it, we risk lives.",
+    "visual_description": "Payoff visual: That\u2019s why the cold chain is critical\u2014without it, we risk lives.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: That\u2019s why the cold chain is critical\u2014without it, we risk lives.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: That\u2019s why the cold chain is critical\u2014without it, we risk lives.",
+    "stock_footage_query": "",
+    "text_overlay": "That\u2019s why the cold",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "encouraging",
+    "length_sec": 26.0,
+    "narration": "Stay informed about vaccine logistics. Like and follow for more science insights.",
+    "visual_description": "Cta visual: Stay informed about vaccine logistics. Like and follow for more science insights.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Stay informed about vaccine logistics. Like and follow for more science insights.",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Stay informed about vaccine logistics. Like and follow for more science insights.",
+    "stock_footage_query": "",
+    "text_overlay": "Stay informed about vaccine",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

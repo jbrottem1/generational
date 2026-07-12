@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about retrieval practice.",
+    "visual_description": "Hook visual: Here's what science actually says about retrieval practice.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about retrieval practice.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about retrieval practice.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "It's more than just recalling facts. It shapes how we learn and remember.",
+    "visual_description": "Context visual: It's more than just recalling facts. It shapes how we learn and remember.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: It's more than just recalling facts. It shapes how we learn and remember.",
+    "ai_video_prompt": "Cinematic motion: Context visual: It's more than just recalling facts. It shapes how we learn and remember.",
+    "stock_footage_query": "",
+    "text_overlay": "It's more than just",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show that actively retrieving information strengthens memory connections.",
+    "visual_description": "Escalation visual: Studies show that actively retrieving information strengthens memory connections.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Studies show that actively retrieving information strengthens memory connections.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Studies show that actively retrieving information strengthens memory connections.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show that actively",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "One recent study found a 30% boost in recall after retrieval practice sessions.",
+    "visual_description": "Evidence visual: One recent study found a 30% boost in recall after retrieval practice sessions.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: One recent study found a 30% boost in recall after retrieval practice sessions.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: One recent study found a 30% boost in recall after retrieval practice sessions.",
+    "stock_footage_query": "",
+    "text_overlay": "One recent study found",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But not all retrieval is equal. Quality matters!",
+    "visual_description": "Pattern Interrupt visual: But not all retrieval is equal. Quality matters!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: But not all retrieval is equal. Quality matters!",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: But not all retrieval is equal. Quality matters!",
+    "stock_footage_query": "",
+    "text_overlay": "But not all retrieval",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Engaging with material over time, like spaced repetition, maximizes the benefits.",
+    "visual_description": "Payoff visual: Engaging with material over time, like spaced repetition, maximizes the benefits.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Engaging with material over time, like spaced repetition, maximizes the benefits.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Engaging with material over time, like spaced repetition, maximizes the benefits.",
+    "stock_footage_query": "",
+    "text_overlay": "Engaging with material over",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 46.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "Want to improve your memory? Try retrieval practice today!",
+    "visual_description": "Cta visual: Want to improve your memory? Try retrieval practice today!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to improve your memory? Try retrieval practice today!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to improve your memory? Try retrieval practice today!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to improve your",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 46.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 46.0
+    }
+  }
+]

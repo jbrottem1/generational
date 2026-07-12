@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Forces come in pairs \u2014 rockets push exhaust, exhaust pushes rockets.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: This is Newton's third law of motion. Every action has an equal and opposite reaction.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Imagine a rocket in space. It expels gas downward and, boom, it shoots up!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: This principle explains not just rockets but swimming, walking, and even flying.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: So, every time you push off the ground, remember: you\u2019re not just moving forward, you\u2019re pushing against the Earth!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to explore more science concepts? Hit follow for more amazing insights!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Forces come in pairs \u2014 rockets push exhaust, exhaust pushes rockets.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: This is Newton's third law of motion. Every action has an equal and opposite reaction.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Imagine a rocket in space. It expels gas downward and, boom, it shoots up!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: This principle explains not just rockets but swimming, walking, and even flying.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: So, every time you push off the ground, remember: you\u2019re not just moving forward, you\u2019re pushing against the Earth!",
+      "duration_sec": 20.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to explore more science concepts? Hit follow for more amazing insights!",
+      "duration_sec": 14.0
+    }
+  ]
+}

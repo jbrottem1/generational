@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Here's what science actually says about CAR T cells.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: CAR T cells are engineered immune cells designed to fight cancer by targeting specific tumor markers.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Imagine turning your own immune system into a cancer-fighting machine! Sounds revolutionary, right?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Clinical trials show promising results, but it's still early days. Some patients see remarkable remissions.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: However, not everyone responds, and risks exist, like severe side effects.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: So, could CAR T cells be the future of cancer treatment? Follow to stay updated on this groundbreaking science!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Here's what science actually says about CAR T cells.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: CAR T cells are engineered immune cells designed to fight cancer by targeting specific tumor markers.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Imagine turning your own immune system into a cancer-fighting machine! Sounds revolutionary, right?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Clinical trials show promising results, but it's still early days. Some patients see remarkable remissions.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: However, not everyone responds, and risks exist, like severe side effects.",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: So, could CAR T cells be the future of cancer treatment? Follow to stay updated on this groundbreaking science!",
+      "duration_sec": 12.0
+    }
+  ]
+}

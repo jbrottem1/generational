@@ -1,0 +1,129 @@
+{
+  "id": "f_equals_ma",
+  "title": "What Does F = ma Actually Mean?",
+  "demo_id": "foundation_f_equals_ma",
+  "ok": true,
+  "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Physics_001_F_Equals_MA_ES001b.mp4",
+  "duration_sec": 29.796,
+  "render_sec": 34.45,
+  "qc": {
+    "mouth_varies": true,
+    "has_silence_closed": true,
+    "has_speech_open": true,
+    "speaking_ratio": 0.683,
+    "idle_motion": true,
+    "blink_programmed": true,
+    "educator_mode": true,
+    "demo_id": "foundation_f_equals_ma",
+    "duration_sec": 29.796,
+    "frame_count": 715,
+    "grounded": true,
+    "interactive_teaching": true,
+    "gesture_counts": {
+      "idle": 243,
+      "think": 43,
+      "write": 143,
+      "point": 186,
+      "present": 100
+    },
+    "idle_ratio": 0.34,
+    "walk_ratio": 0.08,
+    "purposeful_gestures": true,
+    "passed": true
+  },
+  "verify": {
+    "exists": true,
+    "bytes": 802681,
+    "has_video": true,
+    "has_audio": true,
+    "ok": true
+  },
+  "foundation_gate": {
+    "passed": true,
+    "hard_fails": [],
+    "warnings": [],
+    "quality": {
+      "scores": {
+        "animation_quality": 93.0,
+        "lip_synchronization": 88.66,
+        "character_consistency": 78.0,
+        "technical_validity": 88.0,
+        "hook_quality": 75.0,
+        "ending_quality": 70.0,
+        "story_structure": 76.0,
+        "educational_clarity": 79.5,
+        "factual_accuracy": 75.0,
+        "visual_clarity": 80.0,
+        "audio_quality": 78.0,
+        "pacing": 76.0,
+        "emotional_delivery": 78.0,
+        "brand_consistency": 80.0,
+        "platform_readiness": 74.0
+      },
+      "overall": 79.3,
+      "passed": true,
+      "hard_fails": [],
+      "warnings": [],
+      "thresholds": {
+        "technical_validity": 75.0,
+        "educational_clarity": 70.0,
+        "factual_accuracy": 70.0,
+        "animation_quality": 70.0,
+        "lip_synchronization": 70.0,
+        "hook_quality": 55.0,
+        "ending_quality": 55.0
+      }
+    },
+    "qc_checks": {
+      "idle_ratio": 0.34,
+      "walk_ratio": 0.08,
+      "lipsync": 88.66,
+      "overall": 79.3,
+      "animation_qc_passed": true
+    }
+  },
+  "quality": {
+    "scores": {
+      "animation_quality": 93.0,
+      "lip_synchronization": 88.66,
+      "character_consistency": 78.0,
+      "technical_validity": 88.0,
+      "hook_quality": 75.0,
+      "ending_quality": 70.0,
+      "story_structure": 76.0,
+      "educational_clarity": 79.5,
+      "factual_accuracy": 75.0,
+      "visual_clarity": 80.0,
+      "audio_quality": 78.0,
+      "pacing": 76.0,
+      "emotional_delivery": 78.0,
+      "brand_consistency": 80.0,
+      "platform_readiness": 74.0
+    },
+    "overall": 79.3,
+    "passed": true,
+    "hard_fails": [],
+    "warnings": [],
+    "thresholds": {
+      "technical_validity": 75.0,
+      "educational_clarity": 70.0,
+      "factual_accuracy": 70.0,
+      "animation_quality": 70.0,
+      "lip_synchronization": 70.0,
+      "hook_quality": 55.0,
+      "ending_quality": 55.0
+    }
+  },
+  "structure": [
+    "opening",
+    "question",
+    "whiteboard",
+    "real_world",
+    "summary",
+    "next_lesson"
+  ],
+  "next_tease": "In the next lesson, why a heavy object needs more force.",
+  "error": null,
+  "gate_hard_fails": [],
+  "gate_warnings": []
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about fiber and microbes.",
+    "visual_description": "Hook visual: Here's what science actually says about fiber and microbes.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about fiber and microbes.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about fiber and microbes.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Fiber isn\u2019t just a filler in our diets. It feeds the good microbes in our gut.",
+    "visual_description": "Context visual: Fiber isn\u2019t just a filler in our diets. It feeds the good microbes in our gut.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Fiber isn\u2019t just a filler in our diets. It feeds the good microbes in our gut.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Fiber isn\u2019t just a filler in our diets. It feeds the good microbes in our gut.",
+    "stock_footage_query": "",
+    "text_overlay": "Fiber isn\u2019t just a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But did you know that not all fibers impact our microbes equally?",
+    "visual_description": "Escalation visual: But did you know that not all fibers impact our microbes equally?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But did you know that not all fibers impact our microbes equally?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But did you know that not all fibers impact our microbes equally?",
+    "stock_footage_query": "",
+    "text_overlay": "But did you know",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "informative",
+    "length_sec": 8.0,
+    "narration": "Research shows soluble fiber promotes beneficial bacteria, improving gut health.",
+    "visual_description": "Evidence visual: Research shows soluble fiber promotes beneficial bacteria, improving gut health.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows soluble fiber promotes beneficial bacteria, improving gut health.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows soluble fiber promotes beneficial bacteria, improving gut health.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows soluble fiber",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "exciting",
+    "length_sec": 8.0,
+    "narration": "This balance supports digestion and can even impact our mood!",
+    "visual_description": "Payoff visual: This balance supports digestion and can even impact our mood!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This balance supports digestion and can even impact our mood!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This balance supports digestion and can even impact our mood!",
+    "stock_footage_query": "",
+    "text_overlay": "This balance supports digestion",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "encouraging",
+    "length_sec": 26.0,
+    "narration": "Curious about your gut health? Check your fiber intake and follow for more insights!",
+    "visual_description": "Cta visual: Curious about your gut health? Check your fiber intake and follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about your gut health? Check your fiber intake and follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about your gut health? Check your fiber intake and follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about your gut",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

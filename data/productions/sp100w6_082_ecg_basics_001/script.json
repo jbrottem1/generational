@@ -1,0 +1,74 @@
+{
+  "title": "ECG Basics Explained",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Unlock the secrets of ECG with clear and accurate insights.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if your heartbeat is telling you more than you think?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "An ECG, or electrocardiogram, captures the electrical activity of your heart.",
+      "emotion": "informative",
+      "delivery": "steady",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But why is this important? Your heart's rhythm can reveal hidden issues.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "For instance, irregularities can indicate arrhythmias or even heart attacks.",
+      "emotion": "serious",
+      "delivery": "direct",
+      "retention_device": "dramatic pause"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding ECGs empowers you to take charge of your health.",
+      "emotion": "empowerment",
+      "delivery": "inspiring",
+      "retention_device": "reveal"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about your heart\u2019s health? Explore ECGs further and stay informed!",
+      "emotion": "curiosity",
+      "delivery": "encouraging",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "What if your heartbeat is telling you more than you think? An ECG, or electrocardiogram, captures the electrical activity of your heart. But why is this important? Your heart's rhythm can reveal hidden issues. For instance, irregularities can indicate arrhythmias or even heart attacks. Understanding ECGs empowers you to take charge of your health. Curious about your heart\u2019s health? Explore ECGs further and stay informed!",
+  "call_to_action": "Explore ECGs further and stay informed!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:06:46.382601+00:00",
+  "source": "ai"
+}

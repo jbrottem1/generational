@@ -1,0 +1,74 @@
+{
+  "title": "Quantum dots displays",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the science behind quantum dots displays reveals their potential for clearer, more vibrant screens.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if your screen could be more vibrant than ever? Enter quantum dots.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Quantum dots are tiny semiconductor particles that can emit specific colors when light hits them.",
+      "emotion": "neutral",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 20.0,
+      "segment_type": "escalation",
+      "voiceover": "This technology is revolutionizing displays, enhancing color accuracy and brightness. Imagine movies that pop!",
+      "emotion": "enthusiasm",
+      "delivery": "exciting",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 20.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show quantum dot displays can be up to 50% more efficient than traditional LEDs.",
+      "emotion": "surprise",
+      "delivery": "assertive",
+      "retention_device": "retention hook"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "payoff",
+      "voiceover": "The clarity is stunning, but there are still challenges in production and longevity. Keep an eye on this tech.",
+      "emotion": "anticipation",
+      "delivery": "thoughtful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more tech breakthroughs? Hit that subscribe button!",
+      "emotion": "encouragement",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "What if your screen could be more vibrant than ever? Enter quantum dots. Quantum dots are tiny semiconductor particles that can emit specific colors when light hits them. This technology is revolutionizing displays, enhancing color accuracy and brightness. Imagine movies that pop! Studies show quantum dot displays can be up to 50% more efficient than traditional LEDs. The clarity is stunning, but there are still challenges in production and longevity. Keep an eye on this tech. Curious about more tech breakthroughs? Hit that subscribe button!",
+  "call_to_action": "Curious about more tech breakthroughs? Hit that subscribe button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:47:33.118720+00:00",
+  "source": "ai"
+}

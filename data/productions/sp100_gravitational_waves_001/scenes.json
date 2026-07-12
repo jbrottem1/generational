@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "In 2015, Earth felt spacetime ripple \u2014 and LIGO heard it.",
+    "visual_description": "Hook visual: In 2015, Earth felt spacetime ripple \u2014 and LIGO heard it.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: In 2015, Earth felt spacetime ripple \u2014 and LIGO heard it.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: In 2015, Earth felt spacetime ripple \u2014 and LIGO heard it.",
+    "stock_footage_query": "",
+    "text_overlay": "In 2015, Earth felt",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "These ripples are called gravitational waves, caused by massive cosmic collisions.",
+    "visual_description": "Context visual: These ripples are called gravitational waves, caused by massive cosmic collisions.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: These ripples are called gravitational waves, caused by massive cosmic collisions.",
+    "ai_video_prompt": "Cinematic motion: Context visual: These ripples are called gravitational waves, caused by massive cosmic collisions.",
+    "stock_footage_query": "",
+    "text_overlay": "These ripples are called",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "LIGO uses laser interferometry to detect them \u2014 a method that measures tiny changes in distance.",
+    "visual_description": "Escalation visual: LIGO uses laser interferometry to detect them \u2014 a method that measures tiny changes in distance.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: LIGO uses laser interferometry to detect them \u2014 a method that measures tiny changes in distance.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: LIGO uses laser interferometry to detect them \u2014 a method that measures tiny changes in distance.",
+    "stock_footage_query": "",
+    "text_overlay": "LIGO uses laser interferometry",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 9.0,
+    "narration": "The first detection was GW150914, a collision of black holes over a billion light-years away.",
+    "visual_description": "Evidence visual: The first detection was GW150914, a collision of black holes over a billion light-years away.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: The first detection was GW150914, a collision of black holes over a billion light-years away.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: The first detection was GW150914, a collision of black holes over a billion light-years away.",
+    "stock_footage_query": "",
+    "text_overlay": "The first detection was",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 27.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "wonder",
+    "length_sec": 10.0,
+    "narration": "This incredible technology lets us hear the universe's violent symphonies.",
+    "visual_description": "Payoff visual: This incredible technology lets us hear the universe's violent symphonies.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This incredible technology lets us hear the universe's violent symphonies.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This incredible technology lets us hear the universe's violent symphonies.",
+    "stock_footage_query": "",
+    "text_overlay": "This incredible technology lets",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 27.0,
+      "end_sec": 37.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 27.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 23.0,
+    "narration": "Want to dive deeper into the cosmos? Like and follow for more!",
+    "visual_description": "Cta visual: Want to dive deeper into the cosmos? Like and follow for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into the cosmos? Like and follow for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into the cosmos? Like and follow for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 37.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 37.0
+    }
+  }
+]

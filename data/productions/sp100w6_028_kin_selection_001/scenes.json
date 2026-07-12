@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Ever wondered why we sometimes put family first? It's deeper than you think.",
+    "visual_description": "Hook visual: Ever wondered why we sometimes put family first? It's deeper than you think.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever wondered why we sometimes put family first? It's deeper than you think.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever wondered why we sometimes put family first? It's deeper than you think.",
+    "stock_footage_query": "",
+    "text_overlay": "Ever wondered why we",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Kin selection explains that we\u2019re wired to help our relatives, boosting shared genes' survival.",
+    "visual_description": "Context visual: Kin selection explains that we\u2019re wired to help our relatives, boosting shared genes' survival.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Kin selection explains that we\u2019re wired to help our relatives, boosting shared genes' survival.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Kin selection explains that we\u2019re wired to help our relatives, boosting shared genes' survival.",
+    "stock_footage_query": "",
+    "text_overlay": "Kin selection explains that",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But it\u2019s not that simple. What about those who sacrifice for strangers? What drives that?",
+    "visual_description": "Escalation visual: But it\u2019s not that simple. What about those who sacrifice for strangers? What drives that?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But it\u2019s not that simple. What about those who sacrifice for strangers? What drives that?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But it\u2019s not that simple. What about those who sacrifice for strangers? What drives that?",
+    "stock_footage_query": "",
+    "text_overlay": "But it\u2019s not that",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Studies show that altruistic behavior can extend beyond family to friends and community members. It\u2019s a complex web.",
+    "visual_description": "Evidence visual: Studies show that altruistic behavior can extend beyond family to friends and community members. It\u2019s a complex web.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show that altruistic behavior can extend beyond family to friends and community members. It\u2019s a complex web.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show that altruistic behavior can extend beyond family to friends and community members. It\u2019s a complex web.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show that altruistic",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "Understanding kin selection helps explain social bonds and how we navigate relationships. It's not just survival; it's connection.",
+    "visual_description": "Payoff visual: Understanding kin selection helps explain social bonds and how we navigate relationships. It's not just survival; it's c",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding kin selection helps explain social bonds and how we navigate relationships. It's not just survival; it's c",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding kin selection helps explain social bonds and how we navigate relationships. It's not just survival; it's c",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding kin selection helps",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "Curious about more science insights? Hit subscribe and unravel the mysteries with me!",
+    "visual_description": "Cta visual: Curious about more science insights? Hit subscribe and unravel the mysteries with me!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more science insights? Hit subscribe and unravel the mysteries with me!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more science insights? Hit subscribe and unravel the mysteries with me!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more science",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

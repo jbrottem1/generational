@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "How does your brain recycle messages? The answer lies in reuptake.",
+    "visual_description": "Hook visual: How does your brain recycle messages? The answer lies in reuptake.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: How does your brain recycle messages? The answer lies in reuptake.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: How does your brain recycle messages? The answer lies in reuptake.",
+    "stock_footage_query": "",
+    "text_overlay": "How does your brain",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Neurons communicate through chemical signals called neurotransmitters.",
+    "visual_description": "Context visual: Neurons communicate through chemical signals called neurotransmitters.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Neurons communicate through chemical signals called neurotransmitters.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Neurons communicate through chemical signals called neurotransmitters.",
+    "stock_footage_query": "",
+    "text_overlay": "Neurons communicate through chemical",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But once that message is delivered, what happens next? Enter reuptake.",
+    "visual_description": "Escalation visual: But once that message is delivered, what happens next? Enter reuptake.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But once that message is delivered, what happens next? Enter reuptake.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But once that message is delivered, what happens next? Enter reuptake.",
+    "stock_footage_query": "",
+    "text_overlay": "But once that message",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Reuptake is the process where neurotransmitters are sucked back into the neuron.",
+    "visual_description": "Evidence visual: Reuptake is the process where neurotransmitters are sucked back into the neuron.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Reuptake is the process where neurotransmitters are sucked back into the neuron.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Reuptake is the process where neurotransmitters are sucked back into the neuron.",
+    "stock_footage_query": "",
+    "text_overlay": "Reuptake is the process",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This recycling keeps messages flowing smoothly, preventing chaos in your brain.",
+    "visual_description": "Payoff visual: This recycling keeps messages flowing smoothly, preventing chaos in your brain.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This recycling keeps messages flowing smoothly, preventing chaos in your brain.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This recycling keeps messages flowing smoothly, preventing chaos in your brain.",
+    "stock_footage_query": "",
+    "text_overlay": "This recycling keeps messages",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Want to dive deeper into your brain's mysteries? Hit that follow!",
+    "visual_description": "Cta visual: Want to dive deeper into your brain's mysteries? Hit that follow!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into your brain's mysteries? Hit that follow!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into your brain's mysteries? Hit that follow!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 42.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

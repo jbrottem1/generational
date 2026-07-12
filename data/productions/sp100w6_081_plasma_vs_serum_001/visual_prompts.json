@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: What\u2019s the difference between plasma and serum? It\u2019s more fascinating than you think.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Both are derived from blood, but they serve different purposes.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Plasma is the liquid component, rich in proteins and nutrients, keeping your blood flowing.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Serum? It\u2019s what\u2019s left when you remove the clotting factors from plasma. Surprised?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: So, while plasma supports circulation, serum is key for testing and treatments. Both vital, yet different.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to dive deeper into science? Hit that follow for more fascinating insights!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: What\u2019s the difference between plasma and serum? It\u2019s more fascinating than you think.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Both are derived from blood, but they serve different purposes.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Plasma is the liquid component, rich in proteins and nutrients, keeping your blood flowing.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Serum? It\u2019s what\u2019s left when you remove the clotting factors from plasma. Surprised?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: So, while plasma supports circulation, serum is key for testing and treatments. Both vital, yet different.",
+      "duration_sec": 14.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to dive deeper into science? Hit that follow for more fascinating insights!",
+      "duration_sec": 20.0
+    }
+  ]
+}

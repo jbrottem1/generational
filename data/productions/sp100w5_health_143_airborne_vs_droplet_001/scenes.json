@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about airborne vs droplet than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about airborne vs droplet than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about airborne vs droplet than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about airborne vs droplet than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Airborne transmission involves tiny particles lingering in the air for hours. Think of aerosols.",
+    "visual_description": "Context visual: Airborne transmission involves tiny particles lingering in the air for hours. Think of aerosols.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Airborne transmission involves tiny particles lingering in the air for hours. Think of aerosols.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Airborne transmission involves tiny particles lingering in the air for hours. Think of aerosols.",
+    "stock_footage_query": "",
+    "text_overlay": "Airborne transmission involves tiny",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Droplet transmission, on the other hand, is larger, heavier droplets that fall quickly\u2014think sneezes and coughs.",
+    "visual_description": "Escalation visual: Droplet transmission, on the other hand, is larger, heavier droplets that fall quickly\u2014think sneezes and coughs.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Droplet transmission, on the other hand, is larger, heavier droplets that fall quickly\u2014think sneezes and coughs.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Droplet transmission, on the other hand, is larger, heavier droplets that fall quickly\u2014think sneezes and coughs.",
+    "stock_footage_query": "",
+    "text_overlay": "Droplet transmission, on the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show airborne viruses can travel distances over 6 feet, while droplets typically travel less.",
+    "visual_description": "Evidence visual: Studies show airborne viruses can travel distances over 6 feet, while droplets typically travel less.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show airborne viruses can travel distances over 6 feet, while droplets typically travel less.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show airborne viruses can travel distances over 6 feet, while droplets typically travel less.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show airborne viruses",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "Understanding this helps us make better choices about masks and ventilation.",
+    "visual_description": "Payoff visual: Understanding this helps us make better choices about masks and ventilation.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding this helps us make better choices about masks and ventilation.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding this helps us make better choices about masks and ventilation.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding this helps us",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Stay informed! Like and follow for more science insights.",
+    "visual_description": "Cta visual: Stay informed! Like and follow for more science insights.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Stay informed! Like and follow for more science insights.",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Stay informed! Like and follow for more science insights.",
+    "stock_footage_query": "",
+    "text_overlay": "Stay informed! Like and",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

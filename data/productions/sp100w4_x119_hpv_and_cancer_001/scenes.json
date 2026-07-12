@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about HPV and cancer.",
+    "visual_description": "Hook visual: Here's what science actually says about HPV and cancer.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about HPV and cancer.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about HPV and cancer.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Human Papillomavirus, or HPV, is a virus affecting millions, but its connection to cancer is crucial.",
+    "visual_description": "Context visual: Human Papillomavirus, or HPV, is a virus affecting millions, but its connection to cancer is crucial.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Human Papillomavirus, or HPV, is a virus affecting millions, but its connection to cancer is crucial.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Human Papillomavirus, or HPV, is a virus affecting millions, but its connection to cancer is crucial.",
+    "stock_footage_query": "",
+    "text_overlay": "Human Papillomavirus, or HPV,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Certain HPV types can lead to cancers, notably cervical cancer, but that\u2019s not the whole story.",
+    "visual_description": "Escalation visual: Certain HPV types can lead to cancers, notably cervical cancer, but that\u2019s not the whole story.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Certain HPV types can lead to cancers, notably cervical cancer, but that\u2019s not the whole story.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Certain HPV types can lead to cancers, notably cervical cancer, but that\u2019s not the whole story.",
+    "stock_footage_query": "",
+    "text_overlay": "Certain HPV types can",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Research shows that most HPV infections clear on their own, but persistent infections can be dangerous.",
+    "visual_description": "Evidence visual: Research shows that most HPV infections clear on their own, but persistent infections can be dangerous.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows that most HPV infections clear on their own, but persistent infections can be dangerous.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows that most HPV infections clear on their own, but persistent infections can be dangerous.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows that most",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "hopeful",
+    "length_sec": 12.0,
+    "narration": "Vaccination is key in preventing HPV-related cancers, and early screening saves lives.",
+    "visual_description": "Payoff visual: Vaccination is key in preventing HPV-related cancers, and early screening saves lives.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Vaccination is key in preventing HPV-related cancers, and early screening saves lives.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Vaccination is key in preventing HPV-related cancers, and early screening saves lives.",
+    "stock_footage_query": "",
+    "text_overlay": "Vaccination is key in",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 22.0,
+    "narration": "Stay informed, get vaccinated, and don't forget to check out more facts about HPV and cancer!",
+    "visual_description": "Cta visual: Stay informed, get vaccinated, and don't forget to check out more facts about HPV and cancer!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Stay informed, get vaccinated, and don't forget to check out more facts about HPV and cancer!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Stay informed, get vaccinated, and don't forget to check out more facts about HPV and cancer!",
+    "stock_footage_query": "",
+    "text_overlay": "Stay informed, get vaccinated,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

@@ -35,24 +35,65 @@ class MouthDriver(ABC):
 
 
 class AmplitudeMouthDriver(MouthDriver):
-    """Open/closed mouth from audio energy. Closed in silence."""
+    """Open/closed mouth from audio energy. Closed in silence.
+
+    Educator / foundation presets tighten follow (lower silence floor, less
+    envelope smoothing). Reversible via ``profile=\"default\"`` or explicit kwargs.
+    """
+
+    PROFILES: dict[str, dict[str, float]] = {
+        "default": {
+            "silence_threshold": 0.018,
+            "attack": 0.03,
+            "release": 0.07,
+            "smooth": 0.28,
+            "curve": 0.65,
+            "floor": 0.12,
+        },
+        # Snappier syllable edges for white-studio professor narration
+        "educator": {
+            "silence_threshold": 0.014,
+            "attack": 0.02,
+            "release": 0.055,
+            "smooth": 0.18,
+            "curve": 0.58,
+            "floor": 0.10,
+        },
+        "foundation": {
+            "silence_threshold": 0.012,
+            "attack": 0.018,
+            "release": 0.05,
+            "smooth": 0.15,
+            "curve": 0.55,
+            "floor": 0.10,
+        },
+    }
 
     def __init__(
         self,
         samples: np.ndarray,
         sample_rate: int,
         *,
-        silence_threshold: float = 0.02,
-        attack: float = 0.04,
-        release: float = 0.08,
-        smooth: float = 0.35,
+        silence_threshold: float | None = None,
+        attack: float | None = None,
+        release: float | None = None,
+        smooth: float | None = None,
+        profile: str = "default",
+        curve: float | None = None,
+        floor: float | None = None,
     ) -> None:
+        preset = dict(self.PROFILES.get(profile) or self.PROFILES["default"])
         self.samples = samples.astype(np.float64)
         self.sr = int(sample_rate)
-        self.silence_threshold = silence_threshold
-        self.attack = attack
-        self.release = release
-        self.smooth = smooth
+        self.silence_threshold = float(
+            silence_threshold if silence_threshold is not None else preset["silence_threshold"]
+        )
+        self.attack = float(attack if attack is not None else preset["attack"])
+        self.release = float(release if release is not None else preset["release"])
+        self.smooth = float(smooth if smooth is not None else preset["smooth"])
+        self.curve = float(curve if curve is not None else preset["curve"])
+        self.floor = float(floor if floor is not None else preset["floor"])
+        self.profile = profile
         self._env = self._build_envelope()
 
     @classmethod
@@ -87,11 +128,11 @@ class AmplitudeMouthDriver(MouthDriver):
         e = float(self._env[idx])
         if e < self.silence_threshold:
             return 0.0
-        # Map energy to mouth aperture with gentle curve
+        # Map energy to mouth aperture with profile curve
         open_amt = (e - self.silence_threshold) / max(1e-6, 1.0 - self.silence_threshold)
         open_amt = max(0.0, min(1.0, open_amt))
         # Prefer mid openings for natural speech rhythm
-        return float(0.15 + 0.85 * (open_amt ** 0.7))
+        return float(self.floor + (1.0 - self.floor) * (open_amt ** self.curve))
 
 
 class PhonemeMouthDriver(MouthDriver):
@@ -147,9 +188,10 @@ def build_mouth_timeline(
     duration_sec: float | None = None,
     fps: float = 24.0,
     driver: MouthDriver | None = None,
+    profile: str = "default",
 ) -> dict[str, Any]:
     """Build a mouth timeline package (amplitude now; phoneme-swappable)."""
-    driver = driver or AmplitudeMouthDriver.from_audio_file(audio_path)
+    driver = driver or AmplitudeMouthDriver.from_audio_file(audio_path, profile=profile)
     if duration_sec is None:
         samples, sr = load_mono_wav(audio_path)
         duration_sec = len(samples) / float(sr)

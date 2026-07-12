@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "department": "knowledge_standards",
+  "owner_agent": 27,
+  "updated": "2026-07-11",
+  "assets": [
+    {
+      "id": "KS-WIKI",
+      "name": "COMPANY_WIKI.md",
+      "path": "data/knowledge_standards/COMPANY_WIKI.md",
+      "owner": 27,
+      "role": "operating_manual_hub"
+    },
+    {
+      "id": "KS-PROD-STD",
+      "name": "PRODUCTION_STANDARDS.md",
+      "path": "data/knowledge_standards/PRODUCTION_STANDARDS.md",
+      "owner": 27,
+      "role": "living_standards"
+    },
+    {
+      "id": "KS-PROMPTS",
+      "name": "PROMPT_LIBRARY.md",
+      "path": "data/knowledge_standards/PROMPT_LIBRARY.md",
+      "owner": 27,
+      "role": "prompt_library"
+    },
+    {
+      "id": "KS-LESSONS-INDEX",
+      "name": "LESSONS_LEARNED.md",
+      "path": "data/knowledge_standards/LESSONS_LEARNED.md",
+      "owner": 27,
+      "role": "lessons_index",
+      "canonical_full_log": "data/gcis/knowledge/lessons_learned.md"
+    },
+    {
+      "id": "KS-EXPERIMENTS-MD",
+      "name": "EXPERIMENT_REGISTRY.md",
+      "path": "data/knowledge_standards/EXPERIMENT_REGISTRY.md",
+      "owner": 27,
+      "role": "experiment_registry_doc"
+    },
+    {
+      "id": "KS-EXPERIMENTS-JSON",
+      "name": "experiments.json",
+      "path": "data/knowledge_standards/experiments.json",
+      "owner": 27,
+      "role": "experiment_registry_data"
+    },
+    {
+      "id": "KS-BEST",
+      "name": "BEST_PRACTICES.md",
+      "path": "data/knowledge_standards/BEST_PRACTICES.md",
+      "owner": 27,
+      "role": "best_practices"
+    },
+    {
+      "id": "KS-STYLE",
+      "name": "STYLE_GUIDES.md",
+      "path": "data/knowledge_standards/STYLE_GUIDES.md",
+      "owner": 27,
+      "role": "style_index"
+    },
+    {
+      "id": "KS-REGISTRY",
+      "name": "registry.json",
+      "path": "data/knowledge_standards/registry.json",
+      "owner": 27,
+      "role": "manifest"
+    },
+    {
+      "id": "KS-FOUNDING",
+      "name": "AGENT27_FOUNDING_REPORT.md",
+      "path": "data/knowledge_standards/AGENT27_FOUNDING_REPORT.md",
+      "owner": 27,
+      "role": "founding_report"
+    },
+    {
+      "id": "GCIS-INDEX",
+      "name": "GCIS Knowledge INDEX",
+      "path": "data/gcis/knowledge/INDEX.md",
+      "owner": "gcis",
+      "role": "operational_knowledge_index"
+    },
+    {
+      "id": "GCIS-LESSONS",
+      "name": "lessons_learned.md",
+      "path": "data/gcis/knowledge/lessons_learned.md",
+      "owner": "gcis",
+      "role": "canonical_lessons_log"
+    },
+    {
+      "id": "GCIS-STANDARDS",
+      "name": "standards.md",
+      "path": "data/gcis/knowledge/standards.md",
+      "owner": "gcis",
+      "role": "locked_std_table"
+    },
+    {
+      "id": "GCIS-PROMPTS-OK",
+      "name": "prompts/successful.md",
+      "path": "data/gcis/knowledge/prompts/successful.md",
+      "owner": "gcis",
+      "role": "prompt_archive_success"
+    },
+    {
+      "id": "GCIS-PROMPTS-FAIL",
+      "name": "prompts/failed.md",
+      "path": "data/gcis/knowledge/prompts/failed.md",
+      "owner": "gcis",
+      "role": "prompt_archive_failed"
+    },
+    {
+      "id": "CS-BIBLE",
+      "name": "CHARACTER_BIBLE.md",
+      "path": "data/character_systems/CHARACTER_BIBLE.md",
+      "owner": 26,
+      "role": "character_source_of_truth"
+    },
+    {
+      "id": "CS-ANIM-STYLE",
+      "name": "ANIMATION_STYLE_GUIDE.md",
+      "path": "data/character_systems/ANIMATION_STYLE_GUIDE.md",
+      "owner": 26,
+      "role": "character_motion_constraints"
+    },
+    {
+      "id": "UNIVERSE-STYLE",
+      "name": "STYLE_BIBLE.md",
+      "path": "data/universe/STYLE_BIBLE.md",
+      "owner": 15,
+      "role": "universe_style"
+    },
+    {
+      "id": "ANIM-STYLE-LANG",
+      "name": "STYLE_LANGUAGE.md",
+      "path": "data/animation_studio/STYLE_LANGUAGE.md",
+      "owner": 16,
+      "role": "animation_studio_style"
+    },
+    {
+      "id": "DOC-FOUNDATION",
+      "name": "PROJECT_FOUNDATION.md",
+      "path": "PROJECT_FOUNDATION.md",
+      "owner": 0,
+      "role": "foundation_doctrine"
+    },
+    {
+      "id": "DOC-METHOD",
+      "name": "GENERATIONAL_METHOD.md",
+      "path": "GENERATIONAL_METHOD.md",
+      "owner": 0,
+      "role": "teaching_doctrine"
+    },
+    {
+      "id": "DOC-ECHOER",
+      "name": "ECHOER_PROTOCOL.md",
+      "path": "ECHOER_PROTOCOL.md",
+      "owner": 0,
+      "role": "agent_communication"
+    },
+    {
+      "id": "DOC-ES001",
+      "name": "EXECUTIVE_SPRINT_001_REPORT.md",
+      "path": "EXECUTIVE_SPRINT_001_REPORT.md",
+      "owner": 0,
+      "role": "sprint_report"
+    },
+    {
+      "id": "SVC-KS",
+      "name": "services/knowledge_standards",
+      "path": "services/knowledge_standards/",
+      "owner": 27,
+      "role": "capture_validation_api"
+    }
+  ]
+}

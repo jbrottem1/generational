@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Imagine continents drifting apart like puzzle pieces...",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Alfred Wegener proposed this theory in the early 20th century, linking landmasses by their shapes.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: But why did it take decades for scientists to accept it? The answer lies beneath our feet.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Plate tectonics introduced the concept of massive tectonic plates and their movements driven by Earth's heat.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: This theory explains earthquakes, volcanic activity, and the formation of mountains!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about more geological wonders? Hit follow to explore the mysteries of our planet!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Imagine continents drifting apart like puzzle pieces...",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Alfred Wegener proposed this theory in the early 20th century, linking landmasses by their shapes.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: But why did it take decades for scientists to accept it? The answer lies beneath our feet.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Plate tectonics introduced the concept of massive tectonic plates and their movements driven by Earth's heat.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: This theory explains earthquakes, volcanic activity, and the formation of mountains!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about more geological wonders? Hit follow to explore the mysteries of our planet!",
+      "duration_sec": 26.0
+    }
+  ]
+}

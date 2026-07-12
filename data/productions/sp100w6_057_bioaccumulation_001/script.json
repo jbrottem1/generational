@@ -1,0 +1,74 @@
+{
+  "title": "Bioaccumulation",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explains the complex concept of bioaccumulation in an engaging way that sparks curiosity.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you some toxins are building up inside you right now?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "This is bioaccumulation\u2014a process where substances like pesticides and heavy metals accumulate in living organisms.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "These toxins can move up the food chain, impacting not just individual species, but entire ecosystems.",
+      "emotion": "concern",
+      "delivery": "urgent",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "In fish, for example, mercury can bioaccumulate at alarming rates, leading to serious health issues for predators, including humans.",
+      "emotion": "concern",
+      "delivery": "serious",
+      "retention_device": "statistic reveal"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding bioaccumulation helps us push for policy changes to protect our health and environment.",
+      "emotion": "hope",
+      "delivery": "motivational",
+      "retention_device": "call to action"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay informed about toxins in your food. Follow for more science insights!",
+      "emotion": "encouragement",
+      "delivery": "upbeat",
+      "retention_device": "future engagement"
+    }
+  ],
+  "full_voiceover": "What if I told you some toxins are building up inside you right now? This is bioaccumulation\u2014a process where substances like pesticides and heavy metals accumulate in living organisms. These toxins can move up the food chain, impacting not just individual species, but entire ecosystems. In fish, for example, mercury can bioaccumulate at alarming rates, leading to serious health issues for predators, including humans. Understanding bioaccumulation helps us push for policy changes to protect our health and environment. Stay informed about toxins in your food. Follow for more science insights!",
+  "call_to_action": "Stay informed about toxins in your food. Follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:03:55.374829+00:00",
+  "source": "ai"
+}

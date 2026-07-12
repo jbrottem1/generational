@@ -1,0 +1,74 @@
+{
+  "title": "Weathering Erosion",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploration of how weathering erosion shapes our world through established science.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about weathering erosion than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Weathering erosion is nature's slow art, sculpting landscapes over millennia.",
+      "emotion": "curiosity",
+      "delivery": "calm and engaging",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But how does it work? It starts with weathering, breaking down rocks into smaller pieces.",
+      "emotion": "curiosity",
+      "delivery": "inquisitive",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Factors like temperature changes, water, and biological activity all play a role.",
+      "emotion": "intrigue",
+      "delivery": "informative",
+      "retention_device": "statistic"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "These tiny particles are then transported by wind, water, or ice, reshaping our world.",
+      "emotion": "awe",
+      "delivery": "enthusiastic",
+      "retention_device": "visual imagery"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 48.0,
+      "segment_type": "cta",
+      "voiceover": "Curious to learn more about Earth's secrets? Hit that follow button!",
+      "emotion": "encouragement",
+      "delivery": "inviting",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about weathering erosion than social media does. Weathering erosion is nature's slow art, sculpting landscapes over millennia. But how does it work? It starts with weathering, breaking down rocks into smaller pieces. Factors like temperature changes, water, and biological activity all play a role. These tiny particles are then transported by wind, water, or ice, reshaping our world. Curious to learn more about Earth's secrets? Hit that follow button!",
+  "call_to_action": "Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:42:12.615906+00:00",
+  "source": "ai"
+}

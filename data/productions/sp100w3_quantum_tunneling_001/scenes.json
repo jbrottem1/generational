@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 3.0,
+    "narration": "Imagine particles slipping through barriers they shouldn't be able to cross.",
+    "visual_description": "Hook visual: Imagine particles slipping through barriers they shouldn't be able to cross.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Imagine particles slipping through barriers they shouldn't be able to cross.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Imagine particles slipping through barriers they shouldn't be able to cross.",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine particles slipping through",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 3.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This phenomenon is called quantum tunneling, and it\u2019s essential for understanding the Sun's fusion process.",
+    "visual_description": "Context visual: This phenomenon is called quantum tunneling, and it\u2019s essential for understanding the Sun's fusion process.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This phenomenon is called quantum tunneling, and it\u2019s essential for understanding the Sun's fusion process.",
+    "ai_video_prompt": "Cinematic motion: Context visual: This phenomenon is called quantum tunneling, and it\u2019s essential for understanding the Sun's fusion process.",
+    "stock_footage_query": "",
+    "text_overlay": "This phenomenon is called",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 3.0,
+      "end_sec": 11.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 3.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "In classical physics, particles need energy to overcome barriers. But in the quantum world, they can simply tunnel through.",
+    "visual_description": "Escalation visual: In classical physics, particles need energy to overcome barriers. But in the quantum world, they can simply tunnel throu",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: In classical physics, particles need energy to overcome barriers. But in the quantum world, they can simply tunnel throu",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: In classical physics, particles need energy to overcome barriers. But in the quantum world, they can simply tunnel throu",
+    "stock_footage_query": "",
+    "text_overlay": "In classical physics, particles",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 11.0,
+      "end_sec": 19.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 11.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This is crucial for the Sun. Without tunneling, hydrogen atoms wouldn't fuse into helium, and we wouldn't have light.",
+    "visual_description": "Evidence visual: This is crucial for the Sun. Without tunneling, hydrogen atoms wouldn't fuse into helium, and we wouldn't have light.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: This is crucial for the Sun. Without tunneling, hydrogen atoms wouldn't fuse into helium, and we wouldn't have light.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: This is crucial for the Sun. Without tunneling, hydrogen atoms wouldn't fuse into helium, and we wouldn't have light.",
+    "stock_footage_query": "",
+    "text_overlay": "This is crucial for",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 19.0,
+      "end_sec": 27.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 19.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 16.0,
+    "narration": "So next time you feel overwhelmed by challenges, remember: sometimes, you just need to tunnel through!",
+    "visual_description": "Payoff visual: So next time you feel overwhelmed by challenges, remember: sometimes, you just need to tunnel through!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So next time you feel overwhelmed by challenges, remember: sometimes, you just need to tunnel through!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So next time you feel overwhelmed by challenges, remember: sometimes, you just need to tunnel through!",
+    "stock_footage_query": "",
+    "text_overlay": "So next time you",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 27.0,
+      "end_sec": 43.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 27.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 17.0,
+    "narration": "Curious to learn more about quantum physics? Like and follow for more science insights!",
+    "visual_description": "Cta visual: Curious to learn more about quantum physics? Like and follow for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious to learn more about quantum physics? Like and follow for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious to learn more about quantum physics? Like and follow for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 43.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 43.0
+    }
+  }
+]

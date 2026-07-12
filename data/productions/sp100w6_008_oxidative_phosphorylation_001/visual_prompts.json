@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: What if I told you most of your energy comes from a hidden process?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: This is oxidative phosphorylation, the final step of cellular respiration where energy is produced.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: It happens in the mitochondria, often called the powerhouse of the cell. But how?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Electrons move through proteins, creating a proton gradient. This gradient powers ATP synthase, making ATP.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: ATP fuels everything from muscle contractions to brain functions. It's life energy in action.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to dive deeper into how your body works? Hit subscribe for more!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: What if I told you most of your energy comes from a hidden process?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: This is oxidative phosphorylation, the final step of cellular respiration where energy is produced.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: It happens in the mitochondria, often called the powerhouse of the cell. But how?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Electrons move through proteins, creating a proton gradient. This gradient powers ATP synthase, making ATP.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: ATP fuels everything from muscle contractions to brain functions. It's life energy in action.",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to dive deeper into how your body works? Hit subscribe for more!",
+      "duration_sec": 10.0
+    }
+  ]
+}

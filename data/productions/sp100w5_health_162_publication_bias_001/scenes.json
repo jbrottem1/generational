@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about publication bias than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about publication bias than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about publication bias than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about publication bias than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Publication bias occurs when studies with positive results are more likely to be published, skewing our understanding.",
+    "visual_description": "Context visual: Publication bias occurs when studies with positive results are more likely to be published, skewing our understanding.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Publication bias occurs when studies with positive results are more likely to be published, skewing our understanding.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Publication bias occurs when studies with positive results are more likely to be published, skewing our understanding.",
+    "stock_footage_query": "",
+    "text_overlay": "Publication bias occurs when",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "Imagine relying on incomplete data to make health decisions. Frightening, right?",
+    "visual_description": "Escalation visual: Imagine relying on incomplete data to make health decisions. Frightening, right?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Imagine relying on incomplete data to make health decisions. Frightening, right?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Imagine relying on incomplete data to make health decisions. Frightening, right?",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine relying on incomplete",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "shock",
+    "length_sec": 8.0,
+    "narration": "Studies show that more than 50% of negative results never see the light of day.",
+    "visual_description": "Evidence visual: Studies show that more than 50% of negative results never see the light of day.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show that more than 50% of negative results never see the light of day.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show that more than 50% of negative results never see the light of day.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show that more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "alarm",
+    "length_sec": 8.0,
+    "narration": "This means your health decisions could be based on a distorted view of reality.",
+    "visual_description": "Payoff visual: This means your health decisions could be based on a distorted view of reality.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This means your health decisions could be based on a distorted view of reality.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This means your health decisions could be based on a distorted view of reality.",
+    "stock_footage_query": "",
+    "text_overlay": "This means your health",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "inspirational",
+    "length_sec": 26.0,
+    "narration": "Stay informed. Question the sources. Like and follow for more insights on science.",
+    "visual_description": "Cta visual: Stay informed. Question the sources. Like and follow for more insights on science.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Stay informed. Question the sources. Like and follow for more insights on science.",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Stay informed. Question the sources. Like and follow for more insights on science.",
+    "stock_footage_query": "",
+    "text_overlay": "Stay informed. Question the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

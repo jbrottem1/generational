@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if your sauna session isn\u2019t as safe as you think?",
+    "visual_description": "Hook visual: What if your sauna session isn\u2019t as safe as you think?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if your sauna session isn\u2019t as safe as you think?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if your sauna session isn\u2019t as safe as you think?",
+    "stock_footage_query": "",
+    "text_overlay": "What if your sauna",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Recent studies hint at benefits, but they also warn us.",
+    "visual_description": "Context visual: Recent studies hint at benefits, but they also warn us.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Recent studies hint at benefits, but they also warn us.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Recent studies hint at benefits, but they also warn us.",
+    "stock_footage_query": "",
+    "text_overlay": "Recent studies hint at",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Some research is preliminary, raising red flags for certain users.",
+    "visual_description": "Escalation visual: Some research is preliminary, raising red flags for certain users.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Some research is preliminary, raising red flags for certain users.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Some research is preliminary, raising red flags for certain users.",
+    "stock_footage_query": "",
+    "text_overlay": "Some research is preliminary,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Experts caution against overuse, especially for those with heart conditions.",
+    "visual_description": "Evidence visual: Experts caution against overuse, especially for those with heart conditions.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Experts caution against overuse, especially for those with heart conditions.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Experts caution against overuse, especially for those with heart conditions.",
+    "stock_footage_query": "",
+    "text_overlay": "Experts caution against overuse,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 28.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "So, while saunas can be relaxing, approach with awareness and consult your doctor.",
+    "visual_description": "Payoff visual: So, while saunas can be relaxing, approach with awareness and consult your doctor.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, while saunas can be relaxing, approach with awareness and consult your doctor.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, while saunas can be relaxing, approach with awareness and consult your doctor.",
+    "stock_footage_query": "",
+    "text_overlay": "So, while saunas can",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 28.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 28.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Curious about more health insights? Follow for the latest updates!",
+    "visual_description": "Cta visual: Curious about more health insights? Follow for the latest updates!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more health insights? Follow for the latest updates!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more health insights? Follow for the latest updates!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more health",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

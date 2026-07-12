@@ -1,0 +1,1548 @@
+{
+  "render_package_version": "2.0",
+  "render_engine_version": "1.0.0",
+  "title": "Antibiotic stewardship",
+  "created_at": "2026-07-10T17:30:40.165469+00:00",
+  "output_format": {
+    "aspect_ratio": "9:16",
+    "resolution": {
+      "width": 1080,
+      "height": 1920
+    },
+    "container": "mp4",
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "fps": 30,
+    "orientation": "vertical",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels"
+    ]
+  },
+  "platforms": [
+    "youtube_shorts",
+    "tiktok",
+    "instagram_reels",
+    "facebook_reels"
+  ],
+  "resolution": "1080x1920",
+  "aspect_ratio": "9:16",
+  "duration_sec": 60.0,
+  "timeline": {
+    "fps": 30,
+    "total_duration_sec": 60.0,
+    "segment_count": 6,
+    "segments": [
+      {
+        "scene_id": 1,
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "duration": 2.0,
+        "narration_reference": "narration/scene_1",
+        "visual_reference": "visual/scene_1",
+        "caption_reference": "captions/scene_1",
+        "audio_reference": "audio/scene_1",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "quick_punch_in",
+        "overlay_text": "Here's what science actually",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 2,
+        "start_time": 2.0,
+        "end_time": 10.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_2",
+        "visual_reference": "visual/scene_2",
+        "caption_reference": "captions/scene_2",
+        "audio_reference": "audio/scene_2",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Antibiotics save lives, but",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 3,
+        "start_time": 10.0,
+        "end_time": 18.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_3",
+        "visual_reference": "visual/scene_3",
+        "caption_reference": "captions/scene_3",
+        "audio_reference": "audio/scene_3",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Every year, millions face",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 4,
+        "start_time": 18.0,
+        "end_time": 26.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_4",
+        "visual_reference": "visual/scene_4",
+        "caption_reference": "captions/scene_4",
+        "audio_reference": "audio/scene_4",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Studies show that responsible",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 5,
+        "start_time": 26.0,
+        "end_time": 34.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_5",
+        "visual_reference": "visual/scene_5",
+        "caption_reference": "captions/scene_5",
+        "audio_reference": "audio/scene_5",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "By choosing wisely, we",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 6,
+        "start_time": 34.0,
+        "end_time": 60.0,
+        "duration": 26.0,
+        "narration_reference": "narration/scene_6",
+        "visual_reference": "visual/scene_6",
+        "caption_reference": "captions/scene_6",
+        "audio_reference": "audio/scene_6",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Learn more about antibiotic",
+        "render_status": "planned"
+      }
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "scene_render_plan": [
+    {
+      "scene_id": 1,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Hook visual: Here's what science actually says about antibiotic stewardship.",
+      "video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about antibiotic stewardship.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "subtle push",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "quick_punch_in",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.188
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 70
+      },
+      "text_overlays": [
+        {
+          "text": "Here's what science actually",
+          "treatment": "",
+          "start_sec": 0.0,
+          "end_sec": 2.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "bass hit",
+          "at_sec": 0.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Here's what science actually says about antibiotic stewardship.",
+      "duration_sec": 2.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Hook visual: Here's what science actually says about antibiotic stewardship.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 1
+      }
+    },
+    {
+      "scene_id": 2,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Context visual: Antibiotics save lives, but misuse can lead to resistance. What does that mean?",
+      "video_prompt": "Cinematic motion: Context visual: Antibiotics save lives, but misuse can lead to resistance. What does that mean?",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Antibiotics save lives, but",
+          "treatment": "",
+          "start_sec": 2.0,
+          "end_sec": 10.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 2.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Antibiotics save lives, but misuse can lead to resistance. What does that mean?",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Context visual: Antibiotics save lives, but misuse can lead to resistance. What does that mean?",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 2
+      }
+    },
+    {
+      "scene_id": 3,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Escalation visual: Every year, millions face infections that are harder to treat. Why?",
+      "video_prompt": "Cinematic motion: Escalation visual: Every year, millions face infections that are harder to treat. Why?",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Every year, millions face",
+          "treatment": "",
+          "start_sec": 10.0,
+          "end_sec": 18.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 10.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Every year, millions face infections that are harder to treat. Why?",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Escalation visual: Every year, millions face infections that are harder to treat. Why?",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 3
+      }
+    },
+    {
+      "scene_id": 4,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Evidence visual: Studies show that responsible prescribing can reverse this trend. It\u2019s crucial!",
+      "video_prompt": "Cinematic motion: Evidence visual: Studies show that responsible prescribing can reverse this trend. It\u2019s crucial!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Studies show that responsible",
+          "treatment": "",
+          "start_sec": 18.0,
+          "end_sec": 26.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 18.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Studies show that responsible prescribing can reverse this trend. It\u2019s crucial!",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Evidence visual: Studies show that responsible prescribing can reverse this trend. It\u2019s crucial!",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 4
+      }
+    },
+    {
+      "scene_id": 5,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Payoff visual: By choosing wisely, we safeguard future treatments. Simple actions, powerful outcomes.",
+      "video_prompt": "Cinematic motion: Payoff visual: By choosing wisely, we safeguard future treatments. Simple actions, powerful outcomes.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "By choosing wisely, we",
+          "treatment": "",
+          "start_sec": 26.0,
+          "end_sec": 34.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 26.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "By choosing wisely, we safeguard future treatments. Simple actions, powerful outcomes.",
+      "duration_sec": 8.0,
+      "resolved_asset": {}
+    },
+    {
+      "scene_id": 6,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Cta visual: Learn more about antibiotic stewardship and be part of the solution. Follow for more!",
+      "video_prompt": "Cinematic motion: Cta visual: Learn more about antibiotic stewardship and be part of the solution. Follow for more!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Learn more about antibiotic",
+          "treatment": "",
+          "start_sec": 34.0,
+          "end_sec": 60.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 34.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Learn more about antibiotic stewardship and be part of the solution. Follow for more!",
+      "duration_sec": 26.0,
+      "resolved_asset": {}
+    }
+  ],
+  "caption_render_plan": {
+    "mode": "word_by_word",
+    "style_preset": "bold_pop",
+    "style": {
+      "font": "Montserrat ExtraBold",
+      "size_pct": 4.8,
+      "fill": "#FFFFFF",
+      "stroke": "#000000",
+      "stroke_width_px": 6,
+      "emphasis_fill": "#FFD400",
+      "animation": "word pop 1.08x on entry",
+      "case": "upper"
+    },
+    "available_presets": [
+      "bold_pop",
+      "clean_minimal",
+      "karaoke_highlight",
+      "documentary_lower_third"
+    ],
+    "safe_area": {
+      "top_pct": 12.0,
+      "bottom_pct": 20.0,
+      "left_pct": 6.0,
+      "right_pct": 12.0
+    },
+    "platform_layouts": {
+      "youtube_shorts": {
+        "anchor_y_pct": 68.0,
+        "notes": "clear the title/channel block at the bottom"
+      },
+      "tiktok": {
+        "anchor_y_pct": 64.0,
+        "notes": "clear caption + music marquee, keep off the right rail"
+      },
+      "instagram_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "clear the audio attribution row"
+      },
+      "facebook_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "mirror the Reels layout"
+      }
+    },
+    "segments": [
+      {
+        "scene_id": 1,
+        "mode": "word_by_word",
+        "start_sec": 0.0,
+        "end_sec": 2.0,
+        "sentence": "Here's what science actually says about antibiotic stewardship.",
+        "words": [
+          {
+            "word": "Here's",
+            "start_sec": 0.0,
+            "end_sec": 0.23,
+            "emphasis": false
+          },
+          {
+            "word": "what",
+            "start_sec": 0.23,
+            "end_sec": 0.39,
+            "emphasis": false
+          },
+          {
+            "word": "science",
+            "start_sec": 0.39,
+            "end_sec": 0.65,
+            "emphasis": false
+          },
+          {
+            "word": "actually",
+            "start_sec": 0.65,
+            "end_sec": 0.93,
+            "emphasis": false
+          },
+          {
+            "word": "says",
+            "start_sec": 0.93,
+            "end_sec": 1.1,
+            "emphasis": false
+          },
+          {
+            "word": "about",
+            "start_sec": 1.1,
+            "end_sec": 1.3,
+            "emphasis": false
+          },
+          {
+            "word": "antibiotic",
+            "start_sec": 1.3,
+            "end_sec": 1.63,
+            "emphasis": false
+          },
+          {
+            "word": "stewardship",
+            "start_sec": 1.63,
+            "end_sec": 2.0,
+            "emphasis": true
+          }
+        ],
+        "emphasis_words": [
+          "stewardship"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 2,
+        "mode": "word_by_word",
+        "start_sec": 2.0,
+        "end_sec": 10.0,
+        "sentence": "Antibiotics save lives, but misuse can lead to resistance. What does that mean?",
+        "words": [
+          {
+            "word": "Antibiotics",
+            "start_sec": 2.0,
+            "end_sec": 3.16,
+            "emphasis": true
+          },
+          {
+            "word": "save",
+            "start_sec": 3.16,
+            "end_sec": 3.69,
+            "emphasis": false
+          },
+          {
+            "word": "lives",
+            "start_sec": 3.69,
+            "end_sec": 4.31,
+            "emphasis": false
+          },
+          {
+            "word": "but",
+            "start_sec": 4.31,
+            "end_sec": 4.76,
+            "emphasis": false
+          },
+          {
+            "word": "misuse",
+            "start_sec": 4.76,
+            "end_sec": 5.47,
+            "emphasis": false
+          },
+          {
+            "word": "can",
+            "start_sec": 5.47,
+            "end_sec": 5.91,
+            "emphasis": false
+          },
+          {
+            "word": "lead",
+            "start_sec": 5.91,
+            "end_sec": 6.44,
+            "emphasis": false
+          },
+          {
+            "word": "to",
+            "start_sec": 6.44,
+            "end_sec": 6.8,
+            "emphasis": false
+          },
+          {
+            "word": "resistance",
+            "start_sec": 6.8,
+            "end_sec": 7.87,
+            "emphasis": true
+          },
+          {
+            "word": "What",
+            "start_sec": 7.87,
+            "end_sec": 8.4,
+            "emphasis": false
+          },
+          {
+            "word": "does",
+            "start_sec": 8.4,
+            "end_sec": 8.93,
+            "emphasis": false
+          },
+          {
+            "word": "that",
+            "start_sec": 8.93,
+            "end_sec": 9.47,
+            "emphasis": false
+          },
+          {
+            "word": "mean",
+            "start_sec": 9.47,
+            "end_sec": 10.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "Antibiotics",
+          "resistance"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 3,
+        "mode": "word_by_word",
+        "start_sec": 10.0,
+        "end_sec": 18.0,
+        "sentence": "Every year, millions face infections that are harder to treat. Why?",
+        "words": [
+          {
+            "word": "Every",
+            "start_sec": 10.0,
+            "end_sec": 10.74,
+            "emphasis": false
+          },
+          {
+            "word": "year",
+            "start_sec": 10.74,
+            "end_sec": 11.37,
+            "emphasis": false
+          },
+          {
+            "word": "millions",
+            "start_sec": 11.37,
+            "end_sec": 12.42,
+            "emphasis": false
+          },
+          {
+            "word": "face",
+            "start_sec": 12.42,
+            "end_sec": 13.05,
+            "emphasis": false
+          },
+          {
+            "word": "infections",
+            "start_sec": 13.05,
+            "end_sec": 14.32,
+            "emphasis": true
+          },
+          {
+            "word": "that",
+            "start_sec": 14.32,
+            "end_sec": 14.95,
+            "emphasis": false
+          },
+          {
+            "word": "are",
+            "start_sec": 14.95,
+            "end_sec": 15.47,
+            "emphasis": false
+          },
+          {
+            "word": "harder",
+            "start_sec": 15.47,
+            "end_sec": 16.32,
+            "emphasis": false
+          },
+          {
+            "word": "to",
+            "start_sec": 16.32,
+            "end_sec": 16.74,
+            "emphasis": false
+          },
+          {
+            "word": "treat",
+            "start_sec": 16.74,
+            "end_sec": 17.47,
+            "emphasis": false
+          },
+          {
+            "word": "Why",
+            "start_sec": 17.47,
+            "end_sec": 18.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "infections"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 4,
+        "mode": "word_by_word",
+        "start_sec": 18.0,
+        "end_sec": 26.0,
+        "sentence": "Studies show that responsible prescribing can reverse this trend. It\u2019s crucial!",
+        "words": [
+          {
+            "word": "Studies",
+            "start_sec": 18.0,
+            "end_sec": 18.8,
+            "emphasis": false
+          },
+          {
+            "word": "show",
+            "start_sec": 18.8,
+            "end_sec": 19.33,
+            "emphasis": false
+          },
+          {
+            "word": "that",
+            "start_sec": 19.33,
+            "end_sec": 19.87,
+            "emphasis": false
+          },
+          {
+            "word": "responsible",
+            "start_sec": 19.87,
+            "end_sec": 21.02,
+            "emphasis": true
+          },
+          {
+            "word": "prescribing",
+            "start_sec": 21.02,
+            "end_sec": 22.18,
+            "emphasis": true
+          },
+          {
+            "word": "can",
+            "start_sec": 22.18,
+            "end_sec": 22.62,
+            "emphasis": false
+          },
+          {
+            "word": "reverse",
+            "start_sec": 22.62,
+            "end_sec": 23.42,
+            "emphasis": false
+          },
+          {
+            "word": "this",
+            "start_sec": 23.42,
+            "end_sec": 23.96,
+            "emphasis": false
+          },
+          {
+            "word": "trend",
+            "start_sec": 23.96,
+            "end_sec": 24.58,
+            "emphasis": false
+          },
+          {
+            "word": "It",
+            "start_sec": 24.58,
+            "end_sec": 24.93,
+            "emphasis": false
+          },
+          {
+            "word": "s",
+            "start_sec": 24.93,
+            "end_sec": 25.2,
+            "emphasis": false
+          },
+          {
+            "word": "crucial",
+            "start_sec": 25.2,
+            "end_sec": 26.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "prescribing",
+          "responsible"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 5,
+        "mode": "word_by_word",
+        "start_sec": 26.0,
+        "end_sec": 34.0,
+        "sentence": "By choosing wisely, we safeguard future treatments. Simple actions, powerful outcomes.",
+        "words": [
+          {
+            "word": "By",
+            "start_sec": 26.0,
+            "end_sec": 26.34,
+            "emphasis": false
+          },
+          {
+            "word": "choosing",
+            "start_sec": 26.34,
+            "end_sec": 27.19,
+            "emphasis": false
+          },
+          {
+            "word": "wisely",
+            "start_sec": 27.19,
+            "end_sec": 27.87,
+            "emphasis": false
+          },
+          {
+            "word": "we",
+            "start_sec": 27.87,
+            "end_sec": 28.21,
+            "emphasis": false
+          },
+          {
+            "word": "safeguard",
+            "start_sec": 28.21,
+            "end_sec": 29.15,
+            "emphasis": false
+          },
+          {
+            "word": "future",
+            "start_sec": 29.15,
+            "end_sec": 29.83,
+            "emphasis": false
+          },
+          {
+            "word": "treatments",
+            "start_sec": 29.83,
+            "end_sec": 30.85,
+            "emphasis": true
+          },
+          {
+            "word": "Simple",
+            "start_sec": 30.85,
+            "end_sec": 31.53,
+            "emphasis": false
+          },
+          {
+            "word": "actions",
+            "start_sec": 31.53,
+            "end_sec": 32.3,
+            "emphasis": false
+          },
+          {
+            "word": "powerful",
+            "start_sec": 32.3,
+            "end_sec": 33.15,
+            "emphasis": false
+          },
+          {
+            "word": "outcomes",
+            "start_sec": 33.15,
+            "end_sec": 34.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "treatments"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 6,
+        "mode": "word_by_word",
+        "start_sec": 34.0,
+        "end_sec": 60.0,
+        "sentence": "Learn more about antibiotic stewardship and be part of the solution. Follow for more!",
+        "words": [
+          {
+            "word": "Learn",
+            "start_sec": 34.0,
+            "end_sec": 35.86,
+            "emphasis": false
+          },
+          {
+            "word": "more",
+            "start_sec": 35.86,
+            "end_sec": 37.45,
+            "emphasis": false
+          },
+          {
+            "word": "about",
+            "start_sec": 37.45,
+            "end_sec": 39.31,
+            "emphasis": false
+          },
+          {
+            "word": "antibiotic",
+            "start_sec": 39.31,
+            "end_sec": 42.49,
+            "emphasis": true
+          },
+          {
+            "word": "stewardship",
+            "start_sec": 42.49,
+            "end_sec": 45.94,
+            "emphasis": true
+          },
+          {
+            "word": "and",
+            "start_sec": 45.94,
+            "end_sec": 47.27,
+            "emphasis": false
+          },
+          {
+            "word": "be",
+            "start_sec": 47.27,
+            "end_sec": 48.33,
+            "emphasis": false
+          },
+          {
+            "word": "part",
+            "start_sec": 48.33,
+            "end_sec": 49.92,
+            "emphasis": false
+          },
+          {
+            "word": "of",
+            "start_sec": 49.92,
+            "end_sec": 50.98,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 50.98,
+            "end_sec": 52.31,
+            "emphasis": false
+          },
+          {
+            "word": "solution",
+            "start_sec": 52.31,
+            "end_sec": 54.96,
+            "emphasis": false
+          },
+          {
+            "word": "Follow",
+            "start_sec": 54.96,
+            "end_sec": 57.08,
+            "emphasis": false
+          },
+          {
+            "word": "for",
+            "start_sec": 57.08,
+            "end_sec": 58.41,
+            "emphasis": false
+          },
+          {
+            "word": "more",
+            "start_sec": 58.41,
+            "end_sec": 60.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "antibiotic",
+          "stewardship"
+        ],
+        "placement": "bottom third, safe zone"
+      }
+    ]
+  },
+  "audio_mix_plan": {
+    "duration_sec": 60.0,
+    "tracks": {
+      "narration": {
+        "level_db": -3.0,
+        "voice_style": {},
+        "segments": [
+          {
+            "scene_id": 1,
+            "start_sec": 0.0,
+            "end_sec": 2.0,
+            "text": "Here's what science actually says about antibiotic stewardship.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_x127_antibiotic_stewardship_001/voice.mp3"
+          },
+          {
+            "scene_id": 2,
+            "start_sec": 2.0,
+            "end_sec": 10.0,
+            "text": "Antibiotics save lives, but misuse can lead to resistance. What does that mean?",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_x127_antibiotic_stewardship_001/voice.mp3"
+          },
+          {
+            "scene_id": 3,
+            "start_sec": 10.0,
+            "end_sec": 18.0,
+            "text": "Every year, millions face infections that are harder to treat. Why?",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_x127_antibiotic_stewardship_001/voice.mp3"
+          },
+          {
+            "scene_id": 4,
+            "start_sec": 18.0,
+            "end_sec": 26.0,
+            "text": "Studies show that responsible prescribing can reverse this trend. It\u2019s crucial!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_x127_antibiotic_stewardship_001/voice.mp3"
+          },
+          {
+            "scene_id": 5,
+            "start_sec": 26.0,
+            "end_sec": 34.0,
+            "text": "By choosing wisely, we safeguard future treatments. Simple actions, powerful outcomes.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_x127_antibiotic_stewardship_001/voice.mp3"
+          },
+          {
+            "scene_id": 6,
+            "start_sec": 34.0,
+            "end_sec": 60.0,
+            "text": "Learn more about antibiotic stewardship and be part of the solution. Follow for more!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_x127_antibiotic_stewardship_001/voice.mp3"
+          }
+        ]
+      },
+      "music": {
+        "level_db": -18.0,
+        "style": "educational ambient",
+        "bpm_range": [
+          90,
+          120
+        ],
+        "energy_curve": [
+          "rise",
+          "sustain",
+          "resolve"
+        ],
+        "ducking": {
+          "enabled": true,
+          "trigger": "narration",
+          "duck_to_db": -26.0,
+          "attack_ms": 150,
+          "release_ms": 400
+        }
+      },
+      "sfx": {
+        "level_db": -10.0,
+        "cues": [
+          {
+            "scene_id": 1,
+            "cue": "bass hit",
+            "at_sec": 0.0
+          },
+          {
+            "scene_id": 2,
+            "cue": "whoosh",
+            "at_sec": 2.0
+          },
+          {
+            "scene_id": 3,
+            "cue": "whoosh",
+            "at_sec": 10.0
+          },
+          {
+            "scene_id": 4,
+            "cue": "whoosh",
+            "at_sec": 18.0
+          },
+          {
+            "scene_id": 5,
+            "cue": "whoosh",
+            "at_sec": 26.0
+          },
+          {
+            "scene_id": 6,
+            "cue": "whoosh",
+            "at_sec": 34.0
+          }
+        ]
+      },
+      "transitions": {
+        "level_db": -12.0,
+        "cues": []
+      }
+    },
+    "silence_drops": [
+      {
+        "scene_id": 5,
+        "at_sec": 25.6,
+        "duration_sec": 0.4,
+        "reason": "drop the full mix before the payoff beat"
+      }
+    ],
+    "loudness_target": {
+      "standard": "platform_safe_placeholder",
+      "integrated_lufs": -14.0,
+      "true_peak_db": -1.0,
+      "notes": "Verify with a real loudness pass when actual audio is rendered."
+    }
+  },
+  "transition_plan": {
+    "supported_types": [
+      "cut",
+      "fade",
+      "push",
+      "zoom",
+      "whip_pan",
+      "glitch",
+      "flash",
+      "documentary_slow_zoom",
+      "cinematic_push_in",
+      "quick_cut"
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "motion_plan": [
+    {
+      "scene_id": 1,
+      "effect": "quick_punch_in",
+      "intensity": 70,
+      "duration_sec": 2.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.188
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_out"
+    },
+    {
+      "scene_id": 2,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 3,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 4,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 5,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 6,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 26.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    }
+  ],
+  "asset_requirements": [],
+  "missing_assets": [],
+  "render_warnings": [],
+  "estimated_render_duration_sec": 60.0,
+  "production_readiness_score": 100,
+  "validation": {
+    "status": "SUCCESS",
+    "checks": [
+      {
+        "check": "scenes_present",
+        "passed": true,
+        "detail": "6 scenes in the plan."
+      },
+      {
+        "check": "scenes_have_visuals",
+        "passed": true,
+        "detail": "Every scene has a visual asset or prompt."
+      },
+      {
+        "check": "scenes_have_narration",
+        "passed": true,
+        "detail": "Every scene has narration."
+      },
+      {
+        "check": "captions_exist",
+        "passed": true,
+        "detail": "6 caption segments planned."
+      },
+      {
+        "check": "audio_plan_exists",
+        "passed": true,
+        "detail": "Audio mix plan covers narration/music/SFX tracks."
+      },
+      {
+        "check": "runtime_reasonable",
+        "passed": true,
+        "detail": "Total runtime 60.0s is inside the 5.0-180.0s short-form window."
+      },
+      {
+        "check": "output_format_supported",
+        "passed": true,
+        "detail": "9:16 1080x1920 MP4 \u2014 supported."
+      },
+      {
+        "check": "assets_resolved",
+        "passed": true,
+        "detail": "All asset requests were fulfilled."
+      }
+    ],
+    "problems": [],
+    "production_readiness_score": 100
+  },
+  "render_status": "SUCCESS",
+  "mock_output_path": "data/productions/sp100w4_x127_antibiotic_stewardship_001/render.mp4",
+  "output_path": "data/productions/sp100w4_x127_antibiotic_stewardship_001/render.mp4",
+  "mp4_path": "data/productions/sp100w4_x127_antibiotic_stewardship_001/render.mp4",
+  "file_uri": "data/productions/sp100w4_x127_antibiotic_stewardship_001/render.mp4",
+  "render_log": [
+    "color_bed\u2192mp4 (no visual assets resolved)",
+    "ffmpeg_exit=0"
+  ],
+  "render_job": {},
+  "mock": false,
+  "assembly": {
+    "ok": true,
+    "mock": false,
+    "error": "",
+    "output_path": "data/productions/sp100w4_x127_antibiotic_stewardship_001/render.mp4",
+    "absolute_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w4_x127_antibiotic_stewardship_001/render.mp4",
+    "bytes": 360872,
+    "duration_sec": 60.0,
+    "resolution": "1080x1920",
+    "ffmpeg": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/venv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "log": [
+      "color_bed\u2192mp4 (no visual assets resolved)",
+      "ffmpeg_exit=0"
+    ],
+    "visual_count": 0,
+    "has_audio": true,
+    "manifest": {
+      "title": "Antibiotic stewardship",
+      "format": {
+        "aspect_ratio": "9:16",
+        "resolution": {
+          "width": 1080,
+          "height": 1920
+        },
+        "container": "mp4",
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "fps": 30,
+        "orientation": "vertical",
+        "platforms": [
+          "youtube_shorts",
+          "tiktok",
+          "instagram_reels",
+          "facebook_reels"
+        ]
+      },
+      "visuals": [],
+      "audio": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w4_x127_antibiotic_stewardship_001/voice.mp3"
+    }
+  },
+  "render_manifest": {
+    "scenes": 6,
+    "timeline_segments": 6,
+    "caption_segments": 6,
+    "audio_tracks": [
+      "narration",
+      "music",
+      "sfx",
+      "transitions"
+    ],
+    "transitions": 5,
+    "assets_requested": 0,
+    "assets_missing": 0,
+    "warnings": 0,
+    "readiness": 100,
+    "ready_for_publishing": true,
+    "real_mp4": true
+  }
+}

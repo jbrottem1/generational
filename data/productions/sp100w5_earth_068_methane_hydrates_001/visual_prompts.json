@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science has a clearer story about methane hydrates than social media does.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Methane hydrates are icy structures where methane gas is trapped in water, found deep under the ocean and in permafrost.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: As climate change warms our planet, these hydrates may destabilize. What happens then?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Scientists warn that releasing methane could accelerate global warming\u2014it's 25 times more potent than CO2.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: But we still need research. Uncertainty remains about how much methane could be released and its effects.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to know more about our planet? Hit like and follow for more science insights!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science has a clearer story about methane hydrates than social media does.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Methane hydrates are icy structures where methane gas is trapped in water, found deep under the ocean and in permafrost.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: As climate change warms our planet, these hydrates may destabilize. What happens then?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Scientists warn that releasing methane could accelerate global warming\u2014it's 25 times more potent than CO2.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: But we still need research. Uncertainty remains about how much methane could be released and its effects.",
+      "duration_sec": 20.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to know more about our planet? Hit like and follow for more science insights!",
+      "duration_sec": 14.0
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about antigen presentation.",
+    "visual_description": "Hook visual: Here's what science actually says about antigen presentation.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about antigen presentation.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about antigen presentation.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Antigen presentation is how our immune system identifies threats.",
+    "visual_description": "Context visual: Antigen presentation is how our immune system identifies threats.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Antigen presentation is how our immune system identifies threats.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Antigen presentation is how our immune system identifies threats.",
+    "stock_footage_query": "",
+    "text_overlay": "Antigen presentation is how",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Cells capture antigens, then display them on their surfaces.",
+    "visual_description": "Escalation visual: Cells capture antigens, then display them on their surfaces.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Cells capture antigens, then display them on their surfaces.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Cells capture antigens, then display them on their surfaces.",
+    "stock_footage_query": "",
+    "text_overlay": "Cells capture antigens, then",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This interaction triggers T-cells, activating our immune response.",
+    "visual_description": "Evidence visual: This interaction triggers T-cells, activating our immune response.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: This interaction triggers T-cells, activating our immune response.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: This interaction triggers T-cells, activating our immune response.",
+    "stock_footage_query": "",
+    "text_overlay": "This interaction triggers T-cells,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "Without this process, our bodies would struggle to recognize infections!",
+    "visual_description": "Payoff visual: Without this process, our bodies would struggle to recognize infections!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Without this process, our bodies would struggle to recognize infections!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Without this process, our bodies would struggle to recognize infections!",
+    "stock_footage_query": "",
+    "text_overlay": "Without this process, our",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Curious about how this impacts vaccines? Hit like and follow for more!",
+    "visual_description": "Cta visual: Curious about how this impacts vaccines? Hit like and follow for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about how this impacts vaccines? Hit like and follow for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about how this impacts vaccines? Hit like and follow for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about how this",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Ever wondered how CRISPR crops differ from 90s GMOs?",
+    "visual_description": "Hook visual: Ever wondered how CRISPR crops differ from 90s GMOs?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever wondered how CRISPR crops differ from 90s GMOs?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever wondered how CRISPR crops differ from 90s GMOs?",
+    "stock_footage_query": "",
+    "text_overlay": "Ever wondered how CRISPR",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "CRISPR technology allows for precise DNA edits, unlike the broad changes of older GMOs.",
+    "visual_description": "Context visual: CRISPR technology allows for precise DNA edits, unlike the broad changes of older GMOs.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: CRISPR technology allows for precise DNA edits, unlike the broad changes of older GMOs.",
+    "ai_video_prompt": "Cinematic motion: Context visual: CRISPR technology allows for precise DNA edits, unlike the broad changes of older GMOs.",
+    "stock_footage_query": "",
+    "text_overlay": "CRISPR technology allows for",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This precision means improved crops with less risk. But regulation? That\u2019s a different story.",
+    "visual_description": "Escalation visual: This precision means improved crops with less risk. But regulation? That\u2019s a different story.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: This precision means improved crops with less risk. But regulation? That\u2019s a different story.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: This precision means improved crops with less risk. But regulation? That\u2019s a different story.",
+    "stock_footage_query": "",
+    "text_overlay": "This precision means improved",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "In the U.S., CRISPR crops often face fewer regulations than traditional GMOs, while Europe has stricter rules.",
+    "visual_description": "Evidence visual: In the U.S., CRISPR crops often face fewer regulations than traditional GMOs, while Europe has stricter rules.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: In the U.S., CRISPR crops often face fewer regulations than traditional GMOs, while Europe has stricter rules.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: In the U.S., CRISPR crops often face fewer regulations than traditional GMOs, while Europe has stricter rules.",
+    "stock_footage_query": "",
+    "text_overlay": "In the U.S., CRISPR",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "So, while CRISPR offers solutions, the regulations are still catching up to the science.",
+    "visual_description": "Payoff visual: So, while CRISPR offers solutions, the regulations are still catching up to the science.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, while CRISPR offers solutions, the regulations are still catching up to the science.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, while CRISPR offers solutions, the regulations are still catching up to the science.",
+    "stock_footage_query": "",
+    "text_overlay": "So, while CRISPR offers",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "Curious about the future of food? Hit like and follow for more insights!",
+    "visual_description": "Cta visual: Curious about the future of food? Hit like and follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about the future of food? Hit like and follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about the future of food? Hit like and follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about the future",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

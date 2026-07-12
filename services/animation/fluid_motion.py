@@ -80,6 +80,12 @@ GESTURE_POSES: dict[str, dict[str, float]] = {
         "rx": 100, "ry": -20, "rhx": 115, "rhy": -30,
         "brow": 0.45, "lean": -0.08,
     },
+    # write — right hand raised to whiteboard, left relaxed
+    "write": {
+        "lx": -75, "ly": 95, "lhx": -88, "lhy": 105,
+        "rx": 95, "ry": -55, "rhx": 130, "rhy": -70,
+        "brow": 0.12, "lean": 0.10,
+    },
 }
 
 
@@ -127,15 +133,24 @@ class GestureBlender:
 
 
 class MouthSmoother:
-    """EMA mouth openness — reduces jitter, keeps speech tightly aligned."""
+    """EMA mouth openness — reduces jitter, keeps speech tightly aligned.
 
-    def __init__(self, alpha: float = 0.55):
+    Higher ``alpha`` = snappier follow (foundation / educator). Lower = softer.
+    Reversible: pass alpha explicitly; defaults unchanged for non-educator.
+    """
+
+    def __init__(self, alpha: float = 0.55, *, close_bias: float = 0.0):
         self.alpha = alpha
+        self.close_bias = close_bias  # extra weight toward closed when signal drops
         self.value = 0.0
 
     def update(self, openness: float) -> float:
         o = max(0.0, min(1.0, float(openness)))
-        self.value = self.alpha * o + (1.0 - self.alpha) * self.value
+        alpha = self.alpha
+        # Close slightly faster than open — reduces sticky-open between syllables
+        if self.close_bias > 0 and o < self.value:
+            alpha = min(0.95, self.alpha + self.close_bias)
+        self.value = alpha * o + (1.0 - alpha) * self.value
         return self.value
 
 

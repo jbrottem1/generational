@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science tells a clearer story about the cosmos than social media ever will.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: The cosmic distance ladder measures distances in space, using a series of methods, each building on the previous one.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: First, we use parallax to gauge nearby stars. But what about those millions of light-years away?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Next, we rely on standard candles, like Cepheid variables, to measure further distances. They light the way!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Each rung of the ladder leads us to understanding galaxies, dark energy, and the universe\u2019s expansion. But uncertainty l",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to dive deeper into the mysteries of the universe? Like and follow for more cosmic insights!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science tells a clearer story about the cosmos than social media ever will.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: The cosmic distance ladder measures distances in space, using a series of methods, each building on the previous one.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: First, we use parallax to gauge nearby stars. But what about those millions of light-years away?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Next, we rely on standard candles, like Cepheid variables, to measure further distances. They light the way!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Each rung of the ladder leads us to understanding galaxies, dark energy, and the universe\u2019s expansion. But uncertainty l",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to dive deeper into the mysteries of the universe? Like and follow for more cosmic insights!",
+      "duration_sec": 22.0
+    }
+  ]
+}

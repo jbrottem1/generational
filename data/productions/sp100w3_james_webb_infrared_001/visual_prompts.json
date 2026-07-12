@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Infrared wavelengths slip through dust clouds that block visible light.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: In space, dust is everywhere. It hides stars, galaxies, and even entire star-forming regions.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Visible light gets absorbed or scattered, but infrared? It just passes through.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Telescopes like the JWST use infrared to unveil the cosmos, revealing what we can\u2019t see with our eyes.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: From ancient stellar nurseries to distant galaxies, infrared light expands our view of the universe.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to unlock more cosmic secrets? Follow us for more amazing astronomy insights!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Infrared wavelengths slip through dust clouds that block visible light.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: In space, dust is everywhere. It hides stars, galaxies, and even entire star-forming regions.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Visible light gets absorbed or scattered, but infrared? It just passes through.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Telescopes like the JWST use infrared to unveil the cosmos, revealing what we can\u2019t see with our eyes.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: From ancient stellar nurseries to distant galaxies, infrared light expands our view of the universe.",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to unlock more cosmic secrets? Follow us for more amazing astronomy insights!",
+      "duration_sec": 12.0
+    }
+  ]
+}

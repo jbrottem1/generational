@@ -1,0 +1,74 @@
+{
+  "title": "Telomerase Cancer Link Explained",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explores the scientific connection between telomerase and cancer.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you a tiny enzyme could change everything about cancer?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Meet telomerase, a crucial enzyme that protects our DNA. But here's the catch: it's often overactive in cancer cells.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "While telomerase helps cells divide, uncontrolled growth can lead to tumors. So, is it friend or foe?",
+      "emotion": "curiosity",
+      "delivery": "inquisitive",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that inhibiting telomerase could slow cancer progression. But results are mixed, and scientists are still uncertain.",
+      "emotion": "curiosity",
+      "delivery": "analytical",
+      "retention_device": "retention hook"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding telomerase may lead to breakthroughs in treatments. So, while it's linked to cancer, there's still hope.",
+      "emotion": "hope",
+      "delivery": "optimistic",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more science mysteries? Hit that follow button!",
+      "emotion": "curiosity",
+      "delivery": "encouraging",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "What if I told you a tiny enzyme could change everything about cancer? Meet telomerase, a crucial enzyme that protects our DNA. But here's the catch: it's often overactive in cancer cells. While telomerase helps cells divide, uncontrolled growth can lead to tumors. So, is it friend or foe? Studies show that inhibiting telomerase could slow cancer progression. But results are mixed, and scientists are still uncertain. Understanding telomerase may lead to breakthroughs in treatments. So, while it's linked to cancer, there's still hope. Curious about more science mysteries? Hit that follow button!",
+  "call_to_action": "Curious about more science mysteries? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:38:47.431675+00:00",
+  "source": "ai"
+}

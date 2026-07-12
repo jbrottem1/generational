@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Did you know how the way you produce information changes your memory?",
+    "visual_description": "Hook visual: Did you know how the way you produce information changes your memory?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Did you know how the way you produce information changes your memory?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Did you know how the way you produce information changes your memory?",
+    "stock_footage_query": "",
+    "text_overlay": "Did you know how",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "It's called the production effect, and it's more powerful than you think.",
+    "visual_description": "Context visual: It's called the production effect, and it's more powerful than you think.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: It's called the production effect, and it's more powerful than you think.",
+    "ai_video_prompt": "Cinematic motion: Context visual: It's called the production effect, and it's more powerful than you think.",
+    "stock_footage_query": "",
+    "text_overlay": "It's called the production",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "When you read, write, or say information aloud, your brain locks it in better.",
+    "visual_description": "Escalation visual: When you read, write, or say information aloud, your brain locks it in better.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: When you read, write, or say information aloud, your brain locks it in better.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: When you read, write, or say information aloud, your brain locks it in better.",
+    "stock_footage_query": "",
+    "text_overlay": "When you read, write,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Research shows that producing information enhances recall, especially in learning environments.",
+    "visual_description": "Evidence visual: Research shows that producing information enhances recall, especially in learning environments.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows that producing information enhances recall, especially in learning environments.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows that producing information enhances recall, especially in learning environments.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows that producing",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "So next time you study, try saying it out loud. It could make all the difference.",
+    "visual_description": "Payoff visual: So next time you study, try saying it out loud. It could make all the difference.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So next time you study, try saying it out loud. It could make all the difference.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So next time you study, try saying it out loud. It could make all the difference.",
+    "stock_footage_query": "",
+    "text_overlay": "So next time you",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 22.0,
+    "narration": "Want to learn more about memory tricks? Follow for tips!",
+    "visual_description": "Cta visual: Want to learn more about memory tricks? Follow for tips!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to learn more about memory tricks? Follow for tips!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to learn more about memory tricks? Follow for tips!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

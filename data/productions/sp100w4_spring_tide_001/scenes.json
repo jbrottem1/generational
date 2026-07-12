@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "When the Sun and Moon align, tides soar to new heights.",
+    "visual_description": "Hook visual: When the Sun and Moon align, tides soar to new heights.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: When the Sun and Moon align, tides soar to new heights.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: When the Sun and Moon align, tides soar to new heights.",
+    "stock_footage_query": "",
+    "text_overlay": "When the Sun and",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But when they pull at right angles? Tides calm down. Welcome to the world of tides!",
+    "visual_description": "Context visual: But when they pull at right angles? Tides calm down. Welcome to the world of tides!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: But when they pull at right angles? Tides calm down. Welcome to the world of tides!",
+    "ai_video_prompt": "Cinematic motion: Context visual: But when they pull at right angles? Tides calm down. Welcome to the world of tides!",
+    "stock_footage_query": "",
+    "text_overlay": "But when they pull",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Spring tides\u2014higher and stronger\u2014occur during full and new moons.",
+    "visual_description": "Escalation visual: Spring tides\u2014higher and stronger\u2014occur during full and new moons.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Spring tides\u2014higher and stronger\u2014occur during full and new moons.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Spring tides\u2014higher and stronger\u2014occur during full and new moons.",
+    "stock_footage_query": "",
+    "text_overlay": "Spring tides\u2014higher and stronger\u2014occur",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 20.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Neap tides, on the other hand, show up during the first and last quarters. They keep things moderate.",
+    "visual_description": "Evidence visual: Neap tides, on the other hand, show up during the first and last quarters. They keep things moderate.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Neap tides, on the other hand, show up during the first and last quarters. They keep things moderate.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Neap tides, on the other hand, show up during the first and last quarters. They keep things moderate.",
+    "stock_footage_query": "",
+    "text_overlay": "Neap tides, on the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 20.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 20.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Understanding these cycles helps us predict coastal behaviors and marine life patterns. Fascinating, right?",
+    "visual_description": "Payoff visual: Understanding these cycles helps us predict coastal behaviors and marine life patterns. Fascinating, right?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding these cycles helps us predict coastal behaviors and marine life patterns. Fascinating, right?",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding these cycles helps us predict coastal behaviors and marine life patterns. Fascinating, right?",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding these cycles helps",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Want to dive deeper into science? Hit that follow! See you next time!",
+    "visual_description": "Cta visual: Want to dive deeper into science? Hit that follow! See you next time!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into science? Hit that follow! See you next time!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into science? Hit that follow! See you next time!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

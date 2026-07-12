@@ -1,0 +1,40 @@
+{
+  "project": "Project MacroCenter",
+  "episode": "Why Every Cell Needs a Cell Membrane",
+  "generated_at": "2026-07-11T03:07:43.410905+00:00",
+  "success": true,
+  "duration_sec": 58.152,
+  "render_time_sec": 32.59,
+  "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/MacroCenter_Biology_001_Cell_Membrane.mp4",
+  "export_bytes": 2804048,
+  "qc": {
+    "mouth_varies": true,
+    "has_silence_closed": true,
+    "has_speech_open": true,
+    "speaking_ratio": 0.684,
+    "idle_motion": true,
+    "blink_programmed": true,
+    "educator_mode": true,
+    "demo_id": "macro_cell_membrane",
+    "duration_sec": 58.152,
+    "frame_count": 1163,
+    "grounded": true,
+    "interactive_teaching": true,
+    "gesture_counts": {
+      "idle": 420,
+      "present": 139,
+      "think": 47,
+      "point": 418,
+      "push": 139
+    },
+    "idle_ratio": 0.361,
+    "walk_ratio": 0.06,
+    "purposeful_gestures": true,
+    "passed": true
+  },
+  "character": "CHAR-STICK-001",
+  "role": "generational_professor",
+  "demo_id": "macro_cell_membrane",
+  "teaching_method": "generational_method",
+  "environment": "macrocenter"
+}

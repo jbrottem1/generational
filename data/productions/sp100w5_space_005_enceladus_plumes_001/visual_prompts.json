@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science has a clearer story about Enceladus plumes than social media does.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Enceladus, a moon of Saturn, shoots out icy plumes into space. But why?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Scientists believe these plumes come from a subsurface ocean, hinting at possible life.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Data from the Cassini mission showed organic molecules in the plumes. Fascinating, right?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: So, Enceladus isn't just a frozen moon. It holds clues about our universe's potential for life!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about other space mysteries? Like and follow for more discoveries!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science has a clearer story about Enceladus plumes than social media does.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Enceladus, a moon of Saturn, shoots out icy plumes into space. But why?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Scientists believe these plumes come from a subsurface ocean, hinting at possible life.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Data from the Cassini mission showed organic molecules in the plumes. Fascinating, right?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: So, Enceladus isn't just a frozen moon. It holds clues about our universe's potential for life!",
+      "duration_sec": 14.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about other space mysteries? Like and follow for more discoveries!",
+      "duration_sec": 20.0
+    }
+  ]
+}

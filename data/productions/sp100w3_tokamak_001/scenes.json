@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Ever seen a doughnut that could change the world?",
+    "visual_description": "Hook visual: Ever seen a doughnut that could change the world?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever seen a doughnut that could change the world?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever seen a doughnut that could change the world?",
+    "stock_footage_query": "",
+    "text_overlay": "Ever seen a doughnut",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Introducing the tokamak\u2014a magnetic bottle designed to contain fusion plasma.",
+    "visual_description": "Context visual: Introducing the tokamak\u2014a magnetic bottle designed to contain fusion plasma.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Introducing the tokamak\u2014a magnetic bottle designed to contain fusion plasma.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Introducing the tokamak\u2014a magnetic bottle designed to contain fusion plasma.",
+    "stock_footage_query": "",
+    "text_overlay": "Introducing the tokamak\u2014a magnetic",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Fusion is the process that powers the sun, but harnessing it is incredibly challenging.",
+    "visual_description": "Escalation visual: Fusion is the process that powers the sun, but harnessing it is incredibly challenging.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Fusion is the process that powers the sun, but harnessing it is incredibly challenging.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Fusion is the process that powers the sun, but harnessing it is incredibly challenging.",
+    "stock_footage_query": "",
+    "text_overlay": "Fusion is the process",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Tokamaks use powerful magnetic fields to keep plasma stable at extreme temperatures\u2014millions of degrees!",
+    "visual_description": "Evidence visual: Tokamaks use powerful magnetic fields to keep plasma stable at extreme temperatures\u2014millions of degrees!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Tokamaks use powerful magnetic fields to keep plasma stable at extreme temperatures\u2014millions of degrees!",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Tokamaks use powerful magnetic fields to keep plasma stable at extreme temperatures\u2014millions of degrees!",
+    "stock_footage_query": "",
+    "text_overlay": "Tokamaks use powerful magnetic",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "hope",
+    "length_sec": 10.0,
+    "narration": "If successful, tokamaks could lead to nearly limitless clean energy.",
+    "visual_description": "Payoff visual: If successful, tokamaks could lead to nearly limitless clean energy.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: If successful, tokamaks could lead to nearly limitless clean energy.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: If successful, tokamaks could lead to nearly limitless clean energy.",
+    "stock_footage_query": "",
+    "text_overlay": "If successful, tokamaks could",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 36.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 24.0,
+    "narration": "Curious about how fusion energy could power our future? Follow for more insights!",
+    "visual_description": "Cta visual: Curious about how fusion energy could power our future? Follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about how fusion energy could power our future? Follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about how fusion energy could power our future? Follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about how fusion",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 36.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 36.0
+    }
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "title": "Natural killer cells",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the fascinating role of natural killer cells in our immune system.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about natural killer cells.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "They're not your regular immune cells. These warriors patrol your body, ready to attack.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Natural killer cells recognize and destroy infected or cancerous cells without prior exposure.",
+      "emotion": "curiosity",
+      "delivery": "building tension",
+      "retention_device": "surprise"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Recent studies suggest they play a vital role in immunotherapy, helping us fight cancer more effectively.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "But, preliminary research shows we still have much to learn about how to enhance their power.",
+      "emotion": "curiosity",
+      "delivery": "thought-provoking",
+      "retention_device": "open-ended statement"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how your immune system works? Follow for more insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about natural killer cells. They're not your regular immune cells. These warriors patrol your body, ready to attack. Natural killer cells recognize and destroy infected or cancerous cells without prior exposure. Recent studies suggest they play a vital role in immunotherapy, helping us fight cancer more effectively. But, preliminary research shows we still have much to learn about how to enhance their power. Curious about how your immune system works? Follow for more insights!",
+  "call_to_action": "Follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:19:03.718237+00:00",
+  "source": "ai"
+}

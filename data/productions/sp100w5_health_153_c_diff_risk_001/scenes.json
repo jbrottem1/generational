@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about C diff risk than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about C diff risk than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about C diff risk than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about C diff risk than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "serious",
+    "length_sec": 8.0,
+    "narration": "C diff is a dangerous bacteria that can cause severe diarrhea and more.",
+    "visual_description": "Context visual: C diff is a dangerous bacteria that can cause severe diarrhea and more.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: C diff is a dangerous bacteria that can cause severe diarrhea and more.",
+    "ai_video_prompt": "Cinematic motion: Context visual: C diff is a dangerous bacteria that can cause severe diarrhea and more.",
+    "stock_footage_query": "",
+    "text_overlay": "C diff is a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "But what really increases your risk? Antibiotics play a huge role.",
+    "visual_description": "Escalation visual: But what really increases your risk? Antibiotics play a huge role.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But what really increases your risk? Antibiotics play a huge role.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But what really increases your risk? Antibiotics play a huge role.",
+    "stock_footage_query": "",
+    "text_overlay": "But what really increases",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "informative",
+    "length_sec": 8.0,
+    "narration": "Studies show that taking antibiotics disrupts gut health, allowing C diff to thrive.",
+    "visual_description": "Evidence visual: Studies show that taking antibiotics disrupts gut health, allowing C diff to thrive.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show that taking antibiotics disrupts gut health, allowing C diff to thrive.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show that taking antibiotics disrupts gut health, allowing C diff to thrive.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show that taking",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "relief",
+    "length_sec": 8.0,
+    "narration": "Not everyone is at equal risk; age and underlying health matters too.",
+    "visual_description": "Payoff visual: Not everyone is at equal risk; age and underlying health matters too.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Not everyone is at equal risk; age and underlying health matters too.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Not everyone is at equal risk; age and underlying health matters too.",
+    "stock_footage_query": "",
+    "text_overlay": "Not everyone is at",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "encouraging",
+    "length_sec": 26.0,
+    "narration": "Stay informed. Follow for more science-based health insights.",
+    "visual_description": "Cta visual: Stay informed. Follow for more science-based health insights.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Stay informed. Follow for more science-based health insights.",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Stay informed. Follow for more science-based health insights.",
+    "stock_footage_query": "",
+    "text_overlay": "Stay informed. Follow for",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

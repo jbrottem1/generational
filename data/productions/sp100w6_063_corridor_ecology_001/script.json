@@ -1,0 +1,74 @@
+{
+  "title": "Corridor Ecology",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the vital role of ecological corridors in nature.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if the secret to biodiversity lies in hidden paths?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Corridor ecology connects habitats, enabling wildlife to thrive. But how?",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "These corridors reduce isolation, allowing species to roam and reproduce.",
+      "emotion": "curiosity",
+      "delivery": "more intense",
+      "retention_device": "visual example"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that connected landscapes enhance genetic diversity. But results can vary.",
+      "emotion": "curiosity",
+      "delivery": "thoughtful tone",
+      "retention_device": "data point"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "The future of our ecosystems may depend on maintaining these corridors.",
+      "emotion": "curiosity",
+      "delivery": "inspiring",
+      "retention_device": "consequence"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious to learn more about biodiversity? Like and follow for more science insights!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "invitation"
+    }
+  ],
+  "full_voiceover": "What if the secret to biodiversity lies in hidden paths? Corridor ecology connects habitats, enabling wildlife to thrive. But how? These corridors reduce isolation, allowing species to roam and reproduce. Studies show that connected landscapes enhance genetic diversity. But results can vary. The future of our ecosystems may depend on maintaining these corridors. Curious to learn more about biodiversity? Like and follow for more science insights!",
+  "call_to_action": "Like and follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:04:38.893191+00:00",
+  "source": "ai"
+}

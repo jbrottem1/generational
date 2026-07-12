@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about p hacking than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about p hacking than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about p hacking than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about p hacking than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "P hacking is manipulating data to achieve statistically significant results.",
+    "visual_description": "Context visual: P hacking is manipulating data to achieve statistically significant results.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: P hacking is manipulating data to achieve statistically significant results.",
+    "ai_video_prompt": "Cinematic motion: Context visual: P hacking is manipulating data to achieve statistically significant results.",
+    "stock_footage_query": "",
+    "text_overlay": "P hacking is manipulating",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Researchers might change data points or test conditions to find that magical p-value.",
+    "visual_description": "Escalation visual: Researchers might change data points or test conditions to find that magical p-value.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Researchers might change data points or test conditions to find that magical p-value.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Researchers might change data points or test conditions to find that magical p-value.",
+    "stock_footage_query": "",
+    "text_overlay": "Researchers might change data",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "Studies suggest that nearly 30% of research may have p hacking.",
+    "visual_description": "Evidence visual: Studies suggest that nearly 30% of research may have p hacking.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies suggest that nearly 30% of research may have p hacking.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies suggest that nearly 30% of research may have p hacking.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies suggest that nearly",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "urgency",
+    "length_sec": 14.0,
+    "narration": "This compromises trust in science. Accurate reporting matters.",
+    "visual_description": "Payoff visual: This compromises trust in science. Accurate reporting matters.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This compromises trust in science. Accurate reporting matters.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This compromises trust in science. Accurate reporting matters.",
+    "stock_footage_query": "",
+    "text_overlay": "This compromises trust in",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "inspiration",
+    "length_sec": 20.0,
+    "narration": "Stay informed. Follow for more insights on science.",
+    "visual_description": "Cta visual: Stay informed. Follow for more insights on science.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Stay informed. Follow for more insights on science.",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Stay informed. Follow for more insights on science.",
+    "stock_footage_query": "",
+    "text_overlay": "Stay informed. Follow for",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

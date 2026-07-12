@@ -1,0 +1,71 @@
+{
+  "character_id": "CHAR-PROFESSOR-001",
+  "version": "1.0.0",
+  "code_source": "services.animation.fluid_motion.GESTURE_POSES",
+  "policy": "Gestures only when teaching. No decorative loops. No wave spam.",
+  "gestures": {
+    "idle": {
+      "status": "locked",
+      "professor_allowed": true,
+      "use": "default_between_beats"
+    },
+    "wave": {
+      "status": "locked",
+      "professor_allowed": false,
+      "forbidden_reason": "wave_spam_professor_mode"
+    },
+    "point": {
+      "status": "locked",
+      "professor_allowed": true,
+      "use": "board_and_concept_emphasis"
+    },
+    "think": {
+      "status": "locked",
+      "professor_allowed": true,
+      "use": "question_framing"
+    },
+    "present": {
+      "status": "locked",
+      "professor_allowed": true,
+      "use": "summary_reveal"
+    },
+    "push": {
+      "status": "locked",
+      "professor_allowed": true,
+      "use": "force_demo_rare"
+    },
+    "react": {
+      "status": "locked",
+      "professor_allowed": false,
+      "forbidden_reason": "slapstick_out_of_range"
+    },
+    "write": {
+      "status": "locked",
+      "professor_allowed": true,
+      "use": "whiteboard_stroke_reveal"
+    },
+    "greeting": {
+      "status": "planned",
+      "professor_allowed": true,
+      "fallback": "idle"
+    },
+    "listening": {
+      "status": "planned",
+      "professor_allowed": true,
+      "fallback": "idle"
+    },
+    "celebrating": {
+      "status": "planned",
+      "professor_allowed": true,
+      "fallback": "present"
+    }
+  },
+  "teaching_rhythm_map": {
+    "welcome": ["idle", "greeting"],
+    "question": ["think", "present"],
+    "board": ["write", "point"],
+    "example": ["point", "present"],
+    "summary": ["present"],
+    "next_tease": ["idle"]
+  }
+}

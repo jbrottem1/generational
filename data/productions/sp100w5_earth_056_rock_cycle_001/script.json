@@ -1,0 +1,84 @@
+{
+  "title": "Rock cycle",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Uncover the science behind the rock cycle and its fascinating processes.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science tells a clearer story about the rock cycle than social media ever could.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "The rock cycle is nature's recycling system, transforming rocks from one type to another, endlessly.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "It starts with igneous rocks, created by cooling magma. But wait, how do they change?",
+      "emotion": "anticipation",
+      "delivery": "intriguing",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Weathering and erosion break them down, turning them into sediment. Fascinating, right?",
+      "emotion": "engagement",
+      "delivery": "enthusiastic",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "These sediments can finally compact and cement into sedimentary rocks, continuing the cycle.",
+      "emotion": "satisfaction",
+      "delivery": "confident",
+      "retention_device": "resolution"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 44.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "But here's the twist: Metamorphic rocks can melt back into magma, starting all over!",
+      "emotion": "surprise",
+      "delivery": "excited",
+      "retention_device": "unexpected turn"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 44.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more rock secrets? Follow for more science wonders!",
+      "emotion": "invitation",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Science tells a clearer story about the rock cycle than social media ever could. The rock cycle is nature's recycling system, transforming rocks from one type to another, endlessly. It starts with igneous rocks, created by cooling magma. But wait, how do they change? Weathering and erosion break them down, turning them into sediment. Fascinating, right? These sediments can finally compact and cement into sedimentary rocks, continuing the cycle. But here's the twist: Metamorphic rocks can melt back into magma, starting all over! Curious about more rock secrets? Follow for more science wonders!",
+  "call_to_action": "Follow for more science wonders!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:41:30.195047+00:00",
+  "source": "ai"
+}

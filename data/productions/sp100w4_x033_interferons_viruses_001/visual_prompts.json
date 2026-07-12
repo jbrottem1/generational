@@ -1,0 +1,76 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Here's what science actually says about interferons versus viruses.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Interferons are proteins produced by cells in response to viral infections.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: They signal neighboring cells to boost their defenses, creating a viral shield.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Studies show interferons can limit virus replication and enhance immune responses.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Pattern Interrupt visual: But did you know? Some viruses have evolved to evade this defense!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Payoff visual: Research is ongoing, revealing interferons' potential in treatments for diseases like COVID-19.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cta visual: Curious for more? Hit that follow button for the latest in science!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Here's what science actually says about interferons versus viruses.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Interferons are proteins produced by cells in response to viral infections.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: They signal neighboring cells to boost their defenses, creating a viral shield.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Studies show interferons can limit virus replication and enhance immune responses.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Pattern Interrupt visual: But did you know? Some viruses have evolved to evade this defense!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Payoff visual: Research is ongoing, revealing interferons' potential in treatments for diseases like COVID-19.",
+      "duration_sec": 10.0
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cinematic motion: Cta visual: Curious for more? Hit that follow button for the latest in science!",
+      "duration_sec": 16.0
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "How Nerves Fire",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the fascinating mechanism of how action potentials signal through neurons.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you nerves communicate through a traveling spike of electricity?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "This electric spike, known as the action potential, is essential for sending signals in your body.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Imagine billions of these spikes racing down neurons, orchestrating everything from a twitch to a thought.",
+      "emotion": "curiosity",
+      "delivery": "excited",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "When a neuron fires, it opens ion channels, allowing sodium to rush in, creating that spike. Then, potassium flows out to reset the neuron.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "visual cue"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "This rapid ion exchange travels down the neuron at lightning speed, relaying vital information throughout your body \u2014 all without you even knowing it.",
+      "emotion": "curiosity",
+      "delivery": "reveal",
+      "retention_device": "surprise fact"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more brain mysteries? Hit that follow for more science secrets!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "What if I told you nerves communicate through a traveling spike of electricity? This electric spike, known as the action potential, is essential for sending signals in your body. Imagine billions of these spikes racing down neurons, orchestrating everything from a twitch to a thought. When a neuron fires, it opens ion channels, allowing sodium to rush in, creating that spike. Then, potassium flows out to reset the neuron. This rapid ion exchange travels down the neuron at lightning speed, relaying vital information throughout your body \u2014 all without you even knowing it. Curious about more brain mysteries? Hit that follow for more science secrets!",
+  "call_to_action": "Hit that follow for more science secrets!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:31:01.820691+00:00",
+  "source": "ai"
+}

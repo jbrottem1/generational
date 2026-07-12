@@ -1,0 +1,1680 @@
+{
+  "render_package_version": "2.0",
+  "render_engine_version": "1.0.0",
+  "title": "Complete Metamorphosis Explained",
+  "created_at": "2026-07-10T17:12:58.201266+00:00",
+  "output_format": {
+    "aspect_ratio": "9:16",
+    "resolution": {
+      "width": 1080,
+      "height": 1920
+    },
+    "container": "mp4",
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "fps": 30,
+    "orientation": "vertical",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels"
+    ]
+  },
+  "platforms": [
+    "youtube_shorts",
+    "tiktok",
+    "instagram_reels",
+    "facebook_reels"
+  ],
+  "resolution": "1080x1920",
+  "aspect_ratio": "9:16",
+  "duration_sec": 60.0,
+  "timeline": {
+    "fps": 30,
+    "total_duration_sec": 60.0,
+    "segment_count": 7,
+    "segments": [
+      {
+        "scene_id": 1,
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "duration": 2.0,
+        "narration_reference": "narration/scene_1",
+        "visual_reference": "visual/scene_1",
+        "caption_reference": "captions/scene_1",
+        "audio_reference": "audio/scene_1",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "quick_punch_in",
+        "overlay_text": "Did you know butterflies",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 2,
+        "start_time": 2.0,
+        "end_time": 10.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_2",
+        "visual_reference": "visual/scene_2",
+        "caption_reference": "captions/scene_2",
+        "audio_reference": "audio/scene_2",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "From larva to adult,",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 3,
+        "start_time": 10.0,
+        "end_time": 18.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_3",
+        "visual_reference": "visual/scene_3",
+        "caption_reference": "captions/scene_3",
+        "audio_reference": "audio/scene_3",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "First, the caterpillar munches",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 4,
+        "start_time": 18.0,
+        "end_time": 26.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_4",
+        "visual_reference": "visual/scene_4",
+        "caption_reference": "captions/scene_4",
+        "audio_reference": "audio/scene_4",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Then, it forms a",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 5,
+        "start_time": 26.0,
+        "end_time": 40.0,
+        "duration": 14.0,
+        "narration_reference": "narration/scene_5",
+        "visual_reference": "visual/scene_5",
+        "caption_reference": "captions/scene_5",
+        "audio_reference": "audio/scene_5",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Inside, its body dissolves,",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 6,
+        "start_time": 40.0,
+        "end_time": 54.0,
+        "duration": 14.0,
+        "narration_reference": "narration/scene_6",
+        "visual_reference": "visual/scene_6",
+        "caption_reference": "captions/scene_6",
+        "audio_reference": "audio/scene_6",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "This process can take",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 7,
+        "start_time": 54.0,
+        "end_time": 60.0,
+        "duration": 6.0,
+        "narration_reference": "narration/scene_7",
+        "visual_reference": "visual/scene_7",
+        "caption_reference": "captions/scene_7",
+        "audio_reference": "audio/scene_7",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Curious about more science",
+        "render_status": "planned"
+      }
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 6,
+        "to_scene": 7,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "scene_render_plan": [
+    {
+      "scene_id": 1,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Hook visual: Did you know butterflies undergo a dramatic reboot?",
+      "video_prompt": "Cinematic motion: Hook visual: Did you know butterflies undergo a dramatic reboot?",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "subtle push",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "quick_punch_in",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.188
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 70
+      },
+      "text_overlays": [
+        {
+          "text": "Did you know butterflies",
+          "treatment": "",
+          "start_sec": 0.0,
+          "end_sec": 2.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "bass hit",
+          "at_sec": 0.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Did you know butterflies undergo a dramatic reboot?",
+      "duration_sec": 2.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Hook visual: Did you know butterflies undergo a dramatic reboot?",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 1
+      }
+    },
+    {
+      "scene_id": 2,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Context visual: From larva to adult, their transformation is nothing short of miraculous.",
+      "video_prompt": "Cinematic motion: Context visual: From larva to adult, their transformation is nothing short of miraculous.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "From larva to adult,",
+          "treatment": "",
+          "start_sec": 2.0,
+          "end_sec": 10.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 2.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "From larva to adult, their transformation is nothing short of miraculous.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Context visual: From larva to adult, their transformation is nothing short of miraculous.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 2
+      }
+    },
+    {
+      "scene_id": 3,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Escalation visual: First, the caterpillar munches leaves, storing energy for the next phase.",
+      "video_prompt": "Cinematic motion: Escalation visual: First, the caterpillar munches leaves, storing energy for the next phase.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "First, the caterpillar munches",
+          "treatment": "",
+          "start_sec": 10.0,
+          "end_sec": 18.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 10.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "First, the caterpillar munches leaves, storing energy for the next phase.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Escalation visual: First, the caterpillar munches leaves, storing energy for the next phase.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 3
+      }
+    },
+    {
+      "scene_id": 4,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Evidence visual: Then, it forms a chrysalis, entering a state of transformation.",
+      "video_prompt": "Cinematic motion: Evidence visual: Then, it forms a chrysalis, entering a state of transformation.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Then, it forms a",
+          "treatment": "",
+          "start_sec": 18.0,
+          "end_sec": 26.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 18.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Then, it forms a chrysalis, entering a state of transformation.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Evidence visual: Then, it forms a chrysalis, entering a state of transformation.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 4
+      }
+    },
+    {
+      "scene_id": 5,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Payoff visual: Inside, its body dissolves, cells reconfiguring into a butterfly.",
+      "video_prompt": "Cinematic motion: Payoff visual: Inside, its body dissolves, cells reconfiguring into a butterfly.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Inside, its body dissolves,",
+          "treatment": "",
+          "start_sec": 26.0,
+          "end_sec": 40.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 26.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Inside, its body dissolves, cells reconfiguring into a butterfly.",
+      "duration_sec": 14.0,
+      "resolved_asset": {}
+    },
+    {
+      "scene_id": 6,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Pattern Interrupt visual: This process can take weeks, but the result? Stunning.",
+      "video_prompt": "Cinematic motion: Pattern Interrupt visual: This process can take weeks, but the result? Stunning.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "This process can take",
+          "treatment": "",
+          "start_sec": 40.0,
+          "end_sec": 54.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 40.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "This process can take weeks, but the result? Stunning.",
+      "duration_sec": 14.0,
+      "resolved_asset": {}
+    },
+    {
+      "scene_id": 7,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Cta visual: Curious about more science wonders? Like and follow for more!",
+      "video_prompt": "Cinematic motion: Cta visual: Curious about more science wonders? Like and follow for more!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Curious about more science",
+          "treatment": "",
+          "start_sec": 54.0,
+          "end_sec": 60.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 54.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Curious about more science wonders? Like and follow for more!",
+      "duration_sec": 6.0,
+      "resolved_asset": {}
+    }
+  ],
+  "caption_render_plan": {
+    "mode": "word_by_word",
+    "style_preset": "bold_pop",
+    "style": {
+      "font": "Montserrat ExtraBold",
+      "size_pct": 4.8,
+      "fill": "#FFFFFF",
+      "stroke": "#000000",
+      "stroke_width_px": 6,
+      "emphasis_fill": "#FFD400",
+      "animation": "word pop 1.08x on entry",
+      "case": "upper"
+    },
+    "available_presets": [
+      "bold_pop",
+      "clean_minimal",
+      "karaoke_highlight",
+      "documentary_lower_third"
+    ],
+    "safe_area": {
+      "top_pct": 12.0,
+      "bottom_pct": 20.0,
+      "left_pct": 6.0,
+      "right_pct": 12.0
+    },
+    "platform_layouts": {
+      "youtube_shorts": {
+        "anchor_y_pct": 68.0,
+        "notes": "clear the title/channel block at the bottom"
+      },
+      "tiktok": {
+        "anchor_y_pct": 64.0,
+        "notes": "clear caption + music marquee, keep off the right rail"
+      },
+      "instagram_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "clear the audio attribution row"
+      },
+      "facebook_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "mirror the Reels layout"
+      }
+    },
+    "segments": [
+      {
+        "scene_id": 1,
+        "mode": "word_by_word",
+        "start_sec": 0.0,
+        "end_sec": 2.0,
+        "sentence": "Did you know butterflies undergo a dramatic reboot?",
+        "words": [
+          {
+            "word": "Did",
+            "start_sec": 0.0,
+            "end_sec": 0.17,
+            "emphasis": false
+          },
+          {
+            "word": "you",
+            "start_sec": 0.17,
+            "end_sec": 0.34,
+            "emphasis": false
+          },
+          {
+            "word": "know",
+            "start_sec": 0.34,
+            "end_sec": 0.54,
+            "emphasis": false
+          },
+          {
+            "word": "butterflies",
+            "start_sec": 0.54,
+            "end_sec": 0.98,
+            "emphasis": true
+          },
+          {
+            "word": "undergo",
+            "start_sec": 0.98,
+            "end_sec": 1.29,
+            "emphasis": false
+          },
+          {
+            "word": "a",
+            "start_sec": 1.29,
+            "end_sec": 1.39,
+            "emphasis": false
+          },
+          {
+            "word": "dramatic",
+            "start_sec": 1.39,
+            "end_sec": 1.73,
+            "emphasis": false
+          },
+          {
+            "word": "reboot",
+            "start_sec": 1.73,
+            "end_sec": 2.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "butterflies"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 2,
+        "mode": "word_by_word",
+        "start_sec": 2.0,
+        "end_sec": 10.0,
+        "sentence": "From larva to adult, their transformation is nothing short of miraculous.",
+        "words": [
+          {
+            "word": "From",
+            "start_sec": 2.0,
+            "end_sec": 2.58,
+            "emphasis": false
+          },
+          {
+            "word": "larva",
+            "start_sec": 2.58,
+            "end_sec": 3.25,
+            "emphasis": false
+          },
+          {
+            "word": "to",
+            "start_sec": 3.25,
+            "end_sec": 3.64,
+            "emphasis": false
+          },
+          {
+            "word": "adult",
+            "start_sec": 3.64,
+            "end_sec": 4.31,
+            "emphasis": false
+          },
+          {
+            "word": "their",
+            "start_sec": 4.31,
+            "end_sec": 4.99,
+            "emphasis": false
+          },
+          {
+            "word": "transformation",
+            "start_sec": 4.99,
+            "end_sec": 6.53,
+            "emphasis": true
+          },
+          {
+            "word": "is",
+            "start_sec": 6.53,
+            "end_sec": 6.92,
+            "emphasis": false
+          },
+          {
+            "word": "nothing",
+            "start_sec": 6.92,
+            "end_sec": 7.78,
+            "emphasis": false
+          },
+          {
+            "word": "short",
+            "start_sec": 7.78,
+            "end_sec": 8.46,
+            "emphasis": false
+          },
+          {
+            "word": "of",
+            "start_sec": 8.46,
+            "end_sec": 8.84,
+            "emphasis": false
+          },
+          {
+            "word": "miraculous",
+            "start_sec": 8.84,
+            "end_sec": 10.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "transformation"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 3,
+        "mode": "word_by_word",
+        "start_sec": 10.0,
+        "end_sec": 18.0,
+        "sentence": "First, the caterpillar munches leaves, storing energy for the next phase.",
+        "words": [
+          {
+            "word": "First",
+            "start_sec": 10.0,
+            "end_sec": 10.68,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 10.68,
+            "end_sec": 11.17,
+            "emphasis": false
+          },
+          {
+            "word": "caterpillar",
+            "start_sec": 11.17,
+            "end_sec": 12.44,
+            "emphasis": true
+          },
+          {
+            "word": "munches",
+            "start_sec": 12.44,
+            "end_sec": 13.32,
+            "emphasis": false
+          },
+          {
+            "word": "leaves",
+            "start_sec": 13.32,
+            "end_sec": 14.1,
+            "emphasis": false
+          },
+          {
+            "word": "storing",
+            "start_sec": 14.1,
+            "end_sec": 14.98,
+            "emphasis": false
+          },
+          {
+            "word": "energy",
+            "start_sec": 14.98,
+            "end_sec": 15.76,
+            "emphasis": false
+          },
+          {
+            "word": "for",
+            "start_sec": 15.76,
+            "end_sec": 16.24,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 16.24,
+            "end_sec": 16.73,
+            "emphasis": false
+          },
+          {
+            "word": "next",
+            "start_sec": 16.73,
+            "end_sec": 17.32,
+            "emphasis": false
+          },
+          {
+            "word": "phase",
+            "start_sec": 17.32,
+            "end_sec": 18.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "caterpillar"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 4,
+        "mode": "word_by_word",
+        "start_sec": 18.0,
+        "end_sec": 26.0,
+        "sentence": "Then, it forms a chrysalis, entering a state of transformation.",
+        "words": [
+          {
+            "word": "Then",
+            "start_sec": 18.0,
+            "end_sec": 18.68,
+            "emphasis": false
+          },
+          {
+            "word": "it",
+            "start_sec": 18.68,
+            "end_sec": 19.13,
+            "emphasis": false
+          },
+          {
+            "word": "forms",
+            "start_sec": 19.13,
+            "end_sec": 19.92,
+            "emphasis": false
+          },
+          {
+            "word": "a",
+            "start_sec": 19.92,
+            "end_sec": 20.25,
+            "emphasis": false
+          },
+          {
+            "word": "chrysalis",
+            "start_sec": 20.25,
+            "end_sec": 21.49,
+            "emphasis": false
+          },
+          {
+            "word": "entering",
+            "start_sec": 21.49,
+            "end_sec": 22.62,
+            "emphasis": false
+          },
+          {
+            "word": "a",
+            "start_sec": 22.62,
+            "end_sec": 22.96,
+            "emphasis": false
+          },
+          {
+            "word": "state",
+            "start_sec": 22.96,
+            "end_sec": 23.75,
+            "emphasis": false
+          },
+          {
+            "word": "of",
+            "start_sec": 23.75,
+            "end_sec": 24.2,
+            "emphasis": false
+          },
+          {
+            "word": "transformation",
+            "start_sec": 24.2,
+            "end_sec": 26.0,
+            "emphasis": true
+          }
+        ],
+        "emphasis_words": [
+          "transformation"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 5,
+        "mode": "word_by_word",
+        "start_sec": 26.0,
+        "end_sec": 40.0,
+        "sentence": "Inside, its body dissolves, cells reconfiguring into a butterfly.",
+        "words": [
+          {
+            "word": "Inside",
+            "start_sec": 26.0,
+            "end_sec": 27.56,
+            "emphasis": false
+          },
+          {
+            "word": "its",
+            "start_sec": 27.56,
+            "end_sec": 28.53,
+            "emphasis": false
+          },
+          {
+            "word": "body",
+            "start_sec": 28.53,
+            "end_sec": 29.69,
+            "emphasis": false
+          },
+          {
+            "word": "dissolves",
+            "start_sec": 29.69,
+            "end_sec": 31.83,
+            "emphasis": false
+          },
+          {
+            "word": "cells",
+            "start_sec": 31.83,
+            "end_sec": 33.19,
+            "emphasis": false
+          },
+          {
+            "word": "reconfiguring",
+            "start_sec": 33.19,
+            "end_sec": 36.11,
+            "emphasis": true
+          },
+          {
+            "word": "into",
+            "start_sec": 36.11,
+            "end_sec": 37.28,
+            "emphasis": false
+          },
+          {
+            "word": "a",
+            "start_sec": 37.28,
+            "end_sec": 37.86,
+            "emphasis": false
+          },
+          {
+            "word": "butterfly",
+            "start_sec": 37.86,
+            "end_sec": 40.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "reconfiguring"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 6,
+        "mode": "word_by_word",
+        "start_sec": 40.0,
+        "end_sec": 54.0,
+        "sentence": "This process can take weeks, but the result? Stunning.",
+        "words": [
+          {
+            "word": "This",
+            "start_sec": 40.0,
+            "end_sec": 41.38,
+            "emphasis": false
+          },
+          {
+            "word": "process",
+            "start_sec": 41.38,
+            "end_sec": 43.44,
+            "emphasis": false
+          },
+          {
+            "word": "can",
+            "start_sec": 43.44,
+            "end_sec": 44.59,
+            "emphasis": false
+          },
+          {
+            "word": "take",
+            "start_sec": 44.59,
+            "end_sec": 45.97,
+            "emphasis": false
+          },
+          {
+            "word": "weeks",
+            "start_sec": 45.97,
+            "end_sec": 47.57,
+            "emphasis": false
+          },
+          {
+            "word": "but",
+            "start_sec": 47.57,
+            "end_sec": 48.72,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 48.72,
+            "end_sec": 49.87,
+            "emphasis": false
+          },
+          {
+            "word": "result",
+            "start_sec": 49.87,
+            "end_sec": 51.7,
+            "emphasis": false
+          },
+          {
+            "word": "Stunning",
+            "start_sec": 51.7,
+            "end_sec": 54.0,
+            "emphasis": true
+          }
+        ],
+        "emphasis_words": [
+          "Stunning"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 7,
+        "mode": "word_by_word",
+        "start_sec": 54.0,
+        "end_sec": 60.0,
+        "sentence": "Curious about more science wonders? Like and follow for more!",
+        "words": [
+          {
+            "word": "Curious",
+            "start_sec": 54.0,
+            "end_sec": 54.77,
+            "emphasis": true
+          },
+          {
+            "word": "about",
+            "start_sec": 54.77,
+            "end_sec": 55.37,
+            "emphasis": false
+          },
+          {
+            "word": "more",
+            "start_sec": 55.37,
+            "end_sec": 55.89,
+            "emphasis": false
+          },
+          {
+            "word": "science",
+            "start_sec": 55.89,
+            "end_sec": 56.66,
+            "emphasis": false
+          },
+          {
+            "word": "wonders",
+            "start_sec": 56.66,
+            "end_sec": 57.43,
+            "emphasis": false
+          },
+          {
+            "word": "Like",
+            "start_sec": 57.43,
+            "end_sec": 57.94,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 57.94,
+            "end_sec": 58.37,
+            "emphasis": false
+          },
+          {
+            "word": "follow",
+            "start_sec": 58.37,
+            "end_sec": 59.06,
+            "emphasis": false
+          },
+          {
+            "word": "for",
+            "start_sec": 59.06,
+            "end_sec": 59.49,
+            "emphasis": false
+          },
+          {
+            "word": "more",
+            "start_sec": 59.49,
+            "end_sec": 60.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "Curious"
+        ],
+        "placement": "bottom third, safe zone"
+      }
+    ]
+  },
+  "audio_mix_plan": {
+    "duration_sec": 60.0,
+    "tracks": {
+      "narration": {
+        "level_db": -3.0,
+        "voice_style": {},
+        "segments": [
+          {
+            "scene_id": 1,
+            "start_sec": 0.0,
+            "end_sec": 2.0,
+            "text": "Did you know butterflies undergo a dramatic reboot?",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_metamorphosis_001/voice.mp3"
+          },
+          {
+            "scene_id": 2,
+            "start_sec": 2.0,
+            "end_sec": 10.0,
+            "text": "From larva to adult, their transformation is nothing short of miraculous.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_metamorphosis_001/voice.mp3"
+          },
+          {
+            "scene_id": 3,
+            "start_sec": 10.0,
+            "end_sec": 18.0,
+            "text": "First, the caterpillar munches leaves, storing energy for the next phase.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_metamorphosis_001/voice.mp3"
+          },
+          {
+            "scene_id": 4,
+            "start_sec": 18.0,
+            "end_sec": 26.0,
+            "text": "Then, it forms a chrysalis, entering a state of transformation.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_metamorphosis_001/voice.mp3"
+          },
+          {
+            "scene_id": 5,
+            "start_sec": 26.0,
+            "end_sec": 40.0,
+            "text": "Inside, its body dissolves, cells reconfiguring into a butterfly.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_metamorphosis_001/voice.mp3"
+          },
+          {
+            "scene_id": 6,
+            "start_sec": 40.0,
+            "end_sec": 54.0,
+            "text": "This process can take weeks, but the result? Stunning.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_metamorphosis_001/voice.mp3"
+          },
+          {
+            "scene_id": 7,
+            "start_sec": 54.0,
+            "end_sec": 60.0,
+            "text": "Curious about more science wonders? Like and follow for more!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_metamorphosis_001/voice.mp3"
+          }
+        ]
+      },
+      "music": {
+        "level_db": -18.0,
+        "style": "educational ambient",
+        "bpm_range": [
+          90,
+          120
+        ],
+        "energy_curve": [
+          "rise",
+          "sustain",
+          "resolve"
+        ],
+        "ducking": {
+          "enabled": true,
+          "trigger": "narration",
+          "duck_to_db": -26.0,
+          "attack_ms": 150,
+          "release_ms": 400
+        }
+      },
+      "sfx": {
+        "level_db": -10.0,
+        "cues": [
+          {
+            "scene_id": 1,
+            "cue": "bass hit",
+            "at_sec": 0.0
+          },
+          {
+            "scene_id": 2,
+            "cue": "whoosh",
+            "at_sec": 2.0
+          },
+          {
+            "scene_id": 3,
+            "cue": "whoosh",
+            "at_sec": 10.0
+          },
+          {
+            "scene_id": 4,
+            "cue": "whoosh",
+            "at_sec": 18.0
+          },
+          {
+            "scene_id": 5,
+            "cue": "whoosh",
+            "at_sec": 26.0
+          },
+          {
+            "scene_id": 6,
+            "cue": "whoosh",
+            "at_sec": 40.0
+          },
+          {
+            "scene_id": 7,
+            "cue": "whoosh",
+            "at_sec": 54.0
+          }
+        ]
+      },
+      "transitions": {
+        "level_db": -12.0,
+        "cues": []
+      }
+    },
+    "silence_drops": [
+      {
+        "scene_id": 5,
+        "at_sec": 25.6,
+        "duration_sec": 0.4,
+        "reason": "drop the full mix before the payoff beat"
+      },
+      {
+        "scene_id": 6,
+        "at_sec": 39.6,
+        "duration_sec": 0.4,
+        "reason": "drop the full mix before the pattern_interrupt beat"
+      }
+    ],
+    "loudness_target": {
+      "standard": "platform_safe_placeholder",
+      "integrated_lufs": -14.0,
+      "true_peak_db": -1.0,
+      "notes": "Verify with a real loudness pass when actual audio is rendered."
+    }
+  },
+  "transition_plan": {
+    "supported_types": [
+      "cut",
+      "fade",
+      "push",
+      "zoom",
+      "whip_pan",
+      "glitch",
+      "flash",
+      "documentary_slow_zoom",
+      "cinematic_push_in",
+      "quick_cut"
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 6,
+        "to_scene": 7,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "motion_plan": [
+    {
+      "scene_id": 1,
+      "effect": "quick_punch_in",
+      "intensity": 70,
+      "duration_sec": 2.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.188
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_out"
+    },
+    {
+      "scene_id": 2,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 3,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 4,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 5,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 14.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 6,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 14.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 7,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 6.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    }
+  ],
+  "asset_requirements": [],
+  "missing_assets": [],
+  "render_warnings": [],
+  "estimated_render_duration_sec": 60.0,
+  "production_readiness_score": 100,
+  "validation": {
+    "status": "SUCCESS",
+    "checks": [
+      {
+        "check": "scenes_present",
+        "passed": true,
+        "detail": "7 scenes in the plan."
+      },
+      {
+        "check": "scenes_have_visuals",
+        "passed": true,
+        "detail": "Every scene has a visual asset or prompt."
+      },
+      {
+        "check": "scenes_have_narration",
+        "passed": true,
+        "detail": "Every scene has narration."
+      },
+      {
+        "check": "captions_exist",
+        "passed": true,
+        "detail": "7 caption segments planned."
+      },
+      {
+        "check": "audio_plan_exists",
+        "passed": true,
+        "detail": "Audio mix plan covers narration/music/SFX tracks."
+      },
+      {
+        "check": "runtime_reasonable",
+        "passed": true,
+        "detail": "Total runtime 60.0s is inside the 5.0-180.0s short-form window."
+      },
+      {
+        "check": "output_format_supported",
+        "passed": true,
+        "detail": "9:16 1080x1920 MP4 \u2014 supported."
+      },
+      {
+        "check": "assets_resolved",
+        "passed": true,
+        "detail": "All asset requests were fulfilled."
+      }
+    ],
+    "problems": [],
+    "production_readiness_score": 100
+  },
+  "render_status": "SUCCESS",
+  "mock_output_path": "data/productions/sp100w4_metamorphosis_001/render.mp4",
+  "output_path": "data/productions/sp100w4_metamorphosis_001/render.mp4",
+  "mp4_path": "data/productions/sp100w4_metamorphosis_001/render.mp4",
+  "file_uri": "data/productions/sp100w4_metamorphosis_001/render.mp4",
+  "render_log": [
+    "color_bed\u2192mp4 (no visual assets resolved)",
+    "ffmpeg_exit=0"
+  ],
+  "render_job": {},
+  "mock": false,
+  "assembly": {
+    "ok": true,
+    "mock": false,
+    "error": "",
+    "output_path": "data/productions/sp100w4_metamorphosis_001/render.mp4",
+    "absolute_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w4_metamorphosis_001/render.mp4",
+    "bytes": 348598,
+    "duration_sec": 60.0,
+    "resolution": "1080x1920",
+    "ffmpeg": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/venv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "log": [
+      "color_bed\u2192mp4 (no visual assets resolved)",
+      "ffmpeg_exit=0"
+    ],
+    "visual_count": 0,
+    "has_audio": true,
+    "manifest": {
+      "title": "Complete Metamorphosis Explained",
+      "format": {
+        "aspect_ratio": "9:16",
+        "resolution": {
+          "width": 1080,
+          "height": 1920
+        },
+        "container": "mp4",
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "fps": 30,
+        "orientation": "vertical",
+        "platforms": [
+          "youtube_shorts",
+          "tiktok",
+          "instagram_reels",
+          "facebook_reels"
+        ]
+      },
+      "visuals": [],
+      "audio": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w4_metamorphosis_001/voice.mp3"
+    }
+  },
+  "render_manifest": {
+    "scenes": 7,
+    "timeline_segments": 7,
+    "caption_segments": 7,
+    "audio_tracks": [
+      "narration",
+      "music",
+      "sfx",
+      "transitions"
+    ],
+    "transitions": 6,
+    "assets_requested": 0,
+    "assets_missing": 0,
+    "warnings": 0,
+    "readiness": 100,
+    "ready_for_publishing": true,
+    "real_mp4": true
+  }
+}

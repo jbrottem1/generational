@@ -16,7 +16,8 @@
       "series": [
         "SERIES-DASH-SCIENCE"
       ],
-      "role": "flagship_stick_figure_host"
+      "role": "flagship_stick_figure_host",
+      "note": "Dash Science mascot — separate brand world from Professor Gen. Do not redesign."
     },
     {
       "id": "CHAR-STICK-001",
@@ -24,7 +25,27 @@
       "version": "1.0.0",
       "status": "locked",
       "path": "characters/CHAR-STICK-001/",
-      "role": "first_lip_sync_performer"
+      "role": "first_lip_sync_performer",
+      "note": "Predecessor performer plate for Gen. Do not unlock or break."
+    },
+    {
+      "id": "CHAR-PROFESSOR-001",
+      "name": "Professor Gen",
+      "short_name": "Gen",
+      "version": "1.0.0",
+      "status": "locked",
+      "path": "characters/CHAR-PROFESSOR-001/",
+      "role": "foundation_flagship_host",
+      "voice_profile": {
+        "voice": "nova",
+        "model": "tts-1-hd"
+      },
+      "relationship": {
+        "predecessor_plate": "CHAR-STICK-001",
+        "separate_brand_mascot": "CHAR-DASH",
+        "summary": "STICK is predecessor performer plate; Gen is Foundation flagship host; Dash remains Dash Science mascot"
+      },
+      "character_systems": "data/character_systems/"
     }
   ],
   "environments": [
@@ -149,5 +170,6 @@
     }
   ],
   "architecture": [],
-  "notes": "Dash Science is the flagship faceless stick-figure brand. Character redesign requires version bump + Creative Director approval."
+  "foundation_flagship_character": "CHAR-PROFESSOR-001",
+  "notes": "Dash Science remains the Dash brand flagship. CHAR-PROFESSOR-001 (Professor Gen) is the Foundation educational host. CHAR-STICK-001 is the predecessor lip-sync plate. Character redesign requires version bump + Creative Director / Agent 26 + Agent 0 approval."
 }

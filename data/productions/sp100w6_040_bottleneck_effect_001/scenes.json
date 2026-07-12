@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if a tiny change could reshape an entire species?",
+    "visual_description": "Hook visual: What if a tiny change could reshape an entire species?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if a tiny change could reshape an entire species?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if a tiny change could reshape an entire species?",
+    "stock_footage_query": "",
+    "text_overlay": "What if a tiny",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This is the bottleneck effect, a crucial concept in evolution.",
+    "visual_description": "Context visual: This is the bottleneck effect, a crucial concept in evolution.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This is the bottleneck effect, a crucial concept in evolution.",
+    "ai_video_prompt": "Cinematic motion: Context visual: This is the bottleneck effect, a crucial concept in evolution.",
+    "stock_footage_query": "",
+    "text_overlay": "This is the bottleneck",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "When a population's size drastically reduces, genetic diversity plummets.",
+    "visual_description": "Escalation visual: When a population's size drastically reduces, genetic diversity plummets.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: When a population's size drastically reduces, genetic diversity plummets.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: When a population's size drastically reduces, genetic diversity plummets.",
+    "stock_footage_query": "",
+    "text_overlay": "When a population's size",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Imagine a forest fire wiping out most of a species. Surviving members have fewer genes.",
+    "visual_description": "Evidence visual: Imagine a forest fire wiping out most of a species. Surviving members have fewer genes.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Imagine a forest fire wiping out most of a species. Surviving members have fewer genes.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Imagine a forest fire wiping out most of a species. Surviving members have fewer genes.",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine a forest fire",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "This can lead to inbreeding and reduced resilience against diseases. It's a genetic gamble.",
+    "visual_description": "Payoff visual: This can lead to inbreeding and reduced resilience against diseases. It's a genetic gamble.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This can lead to inbreeding and reduced resilience against diseases. It's a genetic gamble.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This can lead to inbreeding and reduced resilience against diseases. It's a genetic gamble.",
+    "stock_footage_query": "",
+    "text_overlay": "This can lead to",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Want to dive deeper into evolutionary science? Hit subscribe for more!",
+    "visual_description": "Cta visual: Want to dive deeper into evolutionary science? Hit subscribe for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into evolutionary science? Hit subscribe for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into evolutionary science? Hit subscribe for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

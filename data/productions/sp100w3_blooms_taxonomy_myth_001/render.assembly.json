@@ -1,0 +1,40 @@
+{
+  "ok": true,
+  "mock": false,
+  "error": "",
+  "output_path": "data/productions/sp100w3_blooms_taxonomy_myth_001/render.mp4",
+  "absolute_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w3_blooms_taxonomy_myth_001/render.mp4",
+  "bytes": 313485,
+  "duration_sec": 60.0,
+  "resolution": "1080x1920",
+  "ffmpeg": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/venv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+  "log": [
+    "color_bed\u2192mp4 (no visual assets resolved)",
+    "ffmpeg_exit=0"
+  ],
+  "visual_count": 0,
+  "has_audio": true,
+  "manifest": {
+    "title": "Learning Isn't a Strict Pyramid",
+    "format": {
+      "aspect_ratio": "9:16",
+      "resolution": {
+        "width": 1080,
+        "height": 1920
+      },
+      "container": "mp4",
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "fps": 30,
+      "orientation": "vertical",
+      "platforms": [
+        "youtube_shorts",
+        "tiktok",
+        "instagram_reels",
+        "facebook_reels"
+      ]
+    },
+    "visuals": [],
+    "audio": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w3_blooms_taxonomy_myth_001/voice.mp3"
+  }
+}

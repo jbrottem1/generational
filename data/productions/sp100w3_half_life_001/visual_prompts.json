@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: What if I told you that time can decay?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Half-life is the time it takes for half the nuclei in a radioactive sample to decay.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Imagine a clock that counts down, but instead of seconds, it counts down atoms!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: For example, Carbon-14 has a half-life of about 5,730 years. After this time, half of the original amount has decayed.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: This decay helps scientists date ancient artifacts and understand the age of our planet.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to learn more about the mysteries of science? Hit follow for more fascinating facts!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: What if I told you that time can decay?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Half-life is the time it takes for half the nuclei in a radioactive sample to decay.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Imagine a clock that counts down, but instead of seconds, it counts down atoms!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: For example, Carbon-14 has a half-life of about 5,730 years. After this time, half of the original amount has decayed.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: This decay helps scientists date ancient artifacts and understand the age of our planet.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to learn more about the mysteries of science? Hit follow for more fascinating facts!",
+      "duration_sec": 26.0
+    }
+  ]
+}

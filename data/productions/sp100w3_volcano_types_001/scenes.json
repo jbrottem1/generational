@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 3.0,
+    "narration": "Not all volcanoes erupt the same way\u2014what's the secret?",
+    "visual_description": "Hook visual: Not all volcanoes erupt the same way\u2014what's the secret?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Not all volcanoes erupt the same way\u2014what's the secret?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Not all volcanoes erupt the same way\u2014what's the secret?",
+    "stock_footage_query": "",
+    "text_overlay": "Not all volcanoes erupt",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 3.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Shield volcanoes have gentle slopes, formed by low-viscosity lava that flows easily. Think Mauna Loa in Hawaii.",
+    "visual_description": "Context visual: Shield volcanoes have gentle slopes, formed by low-viscosity lava that flows easily. Think Mauna Loa in Hawaii.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Shield volcanoes have gentle slopes, formed by low-viscosity lava that flows easily. Think Mauna Loa in Hawaii.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Shield volcanoes have gentle slopes, formed by low-viscosity lava that flows easily. Think Mauna Loa in Hawaii.",
+    "stock_footage_query": "",
+    "text_overlay": "Shield volcanoes have gentle",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 3.0,
+      "end_sec": 15.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 3.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Stratovolcanoes, like Mount St. Helens, are steeper and more explosive, due to thicker, more viscous lava.",
+    "visual_description": "Escalation visual: Stratovolcanoes, like Mount St. Helens, are steeper and more explosive, due to thicker, more viscous lava.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Stratovolcanoes, like Mount St. Helens, are steeper and more explosive, due to thicker, more viscous lava.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Stratovolcanoes, like Mount St. Helens, are steeper and more explosive, due to thicker, more viscous lava.",
+    "stock_footage_query": "",
+    "text_overlay": "Stratovolcanoes, like Mount St.",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 15.0,
+      "end_sec": 25.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 15.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "This viscosity affects eruption style: shield volcanoes erupt gently, while stratovolcanoes can have catastrophic explosions.",
+    "visual_description": "Evidence visual: This viscosity affects eruption style: shield volcanoes erupt gently, while stratovolcanoes can have catastrophic explos",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: This viscosity affects eruption style: shield volcanoes erupt gently, while stratovolcanoes can have catastrophic explos",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: This viscosity affects eruption style: shield volcanoes erupt gently, while stratovolcanoes can have catastrophic explos",
+    "stock_footage_query": "",
+    "text_overlay": "This viscosity affects eruption",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 25.0,
+      "end_sec": 35.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 25.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "So, shape follows lava chemistry! Understanding this can unlock the mysteries of our planet's forces.",
+    "visual_description": "Payoff visual: So, shape follows lava chemistry! Understanding this can unlock the mysteries of our planet's forces.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, shape follows lava chemistry! Understanding this can unlock the mysteries of our planet's forces.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, shape follows lava chemistry! Understanding this can unlock the mysteries of our planet's forces.",
+    "stock_footage_query": "",
+    "text_overlay": "So, shape follows lava",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 35.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 35.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Curious about more geological wonders? Hit that follow button!",
+    "visual_description": "Cta visual: Curious about more geological wonders? Hit that follow button!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more geological wonders? Hit that follow button!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more geological wonders? Hit that follow button!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more geological",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

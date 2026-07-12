@@ -1,0 +1,101 @@
+{
+  "id": "bluffing_103",
+  "title": "Nature's Masters of Bluffing",
+  "ok": true,
+  "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Biology_103_Masters_of_Bluffing_v3.mp4",
+  "duration_sec": 49.382,
+  "render_sec": 36.16,
+  "qc": {
+    "mouth_varies": true,
+    "has_silence_closed": true,
+    "has_speech_open": true,
+    "speaking_ratio": 0.7,
+    "idle_motion": true,
+    "blink_programmed": true,
+    "educator_mode": true,
+    "demo_id": "foundation_bluffing_103",
+    "duration_sec": 49.382,
+    "frame_count": 1185,
+    "grounded": true,
+    "interactive_teaching": true,
+    "gesture_counts": {
+      "think": 143,
+      "idle": 450,
+      "point": 284,
+      "present": 166,
+      "write": 142
+    },
+    "idle_ratio": 0.38,
+    "walk_ratio": 0.06,
+    "purposeful_gestures": true,
+    "passed": true
+  },
+  "verify": {
+    "ok": true,
+    "bytes": 1246527,
+    "has_video": true,
+    "has_audio": true
+  },
+  "foundation_gate": {
+    "passed": true,
+    "hard_fails": [],
+    "warnings": [
+      "whiteboard_sync_metadata_missing",
+      "overall_below_target:77.5<78.0"
+    ],
+    "quality": {
+      "scores": {
+        "animation_quality": 93.0,
+        "lip_synchronization": 89.0,
+        "character_consistency": 78.0,
+        "technical_validity": 88.0,
+        "hook_quality": 75.0,
+        "ending_quality": 70.0,
+        "story_structure": 68.0,
+        "educational_clarity": 86.2,
+        "factual_accuracy": 75.0,
+        "visual_clarity": 78.0,
+        "audio_quality": 72.0,
+        "pacing": 72.0,
+        "emotional_delivery": 74.0,
+        "brand_consistency": 75.0,
+        "platform_readiness": 70.0
+      },
+      "overall": 77.5,
+      "passed": true,
+      "hard_fails": [],
+      "warnings": [],
+      "thresholds": {
+        "technical_validity": 75.0,
+        "educational_clarity": 70.0,
+        "factual_accuracy": 70.0,
+        "animation_quality": 70.0,
+        "lip_synchronization": 70.0,
+        "hook_quality": 55.0,
+        "ending_quality": 55.0
+      }
+    },
+    "qc_checks": {
+      "idle_ratio": 0.38,
+      "walk_ratio": 0.06,
+      "lipsync": 89.0,
+      "overall": 77.5,
+      "animation_qc_passed": true
+    }
+  },
+  "educational": {
+    "passed": true,
+    "score": 86.2,
+    "accuracy_score": 75.0,
+    "clarity_score": 95.0,
+    "sequencing_score": 90.0,
+    "demonstration_score": 85.0,
+    "misconception_risks": [],
+    "audience_level": "general",
+    "learning_payoff": "Sometimes survival belongs to the best deceiver.",
+    "notes": [],
+    "hard_fails": []
+  },
+  "quality_overall": 77.5,
+  "error": null
+}

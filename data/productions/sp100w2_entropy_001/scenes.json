@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Ever wonder why things fall apart? It\u2019s called entropy.",
+    "visual_description": "Hook visual: Ever wonder why things fall apart? It\u2019s called entropy.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever wonder why things fall apart? It\u2019s called entropy.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever wonder why things fall apart? It\u2019s called entropy.",
+    "stock_footage_query": "",
+    "text_overlay": "Ever wonder why things",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "In physics, entropy measures disorder. The universe naturally favors chaos over neatness.",
+    "visual_description": "Context visual: In physics, entropy measures disorder. The universe naturally favors chaos over neatness.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: In physics, entropy measures disorder. The universe naturally favors chaos over neatness.",
+    "ai_video_prompt": "Cinematic motion: Context visual: In physics, entropy measures disorder. The universe naturally favors chaos over neatness.",
+    "stock_footage_query": "",
+    "text_overlay": "In physics, entropy measures",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Imagine a tidy room. Over time, it becomes a chaotic mess. That\u2019s entropy in action.",
+    "visual_description": "Escalation visual: Imagine a tidy room. Over time, it becomes a chaotic mess. That\u2019s entropy in action.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Imagine a tidy room. Over time, it becomes a chaotic mess. That\u2019s entropy in action.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Imagine a tidy room. Over time, it becomes a chaotic mess. That\u2019s entropy in action.",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine a tidy room.",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "The second law of thermodynamics states that total entropy can never decrease. It\u2019s a one-way street.",
+    "visual_description": "Evidence visual: The second law of thermodynamics states that total entropy can never decrease. It\u2019s a one-way street.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: The second law of thermodynamics states that total entropy can never decrease. It\u2019s a one-way street.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: The second law of thermodynamics states that total entropy can never decrease. It\u2019s a one-way street.",
+    "stock_footage_query": "",
+    "text_overlay": "The second law of",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 16.0,
+    "narration": "This principle isn\u2019t just theory. It drives engines, powers reactions, and defines the flow of time itself.",
+    "visual_description": "Payoff visual: This principle isn\u2019t just theory. It drives engines, powers reactions, and defines the flow of time itself.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This principle isn\u2019t just theory. It drives engines, powers reactions, and defines the flow of time itself.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This principle isn\u2019t just theory. It drives engines, powers reactions, and defines the flow of time itself.",
+    "stock_footage_query": "",
+    "text_overlay": "This principle isn\u2019t just",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 42.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Want to dive deeper into the universe\u2019s secrets? Hit subscribe and explore with me.",
+    "visual_description": "Cta visual: Want to dive deeper into the universe\u2019s secrets? Hit subscribe and explore with me.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into the universe\u2019s secrets? Hit subscribe and explore with me.",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into the universe\u2019s secrets? Hit subscribe and explore with me.",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 42.0,
+      "end_sec": 54.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 42.0
+    }
+  }
+]

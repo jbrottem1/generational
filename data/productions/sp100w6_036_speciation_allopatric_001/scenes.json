@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 3.0,
+    "narration": "Ever wondered how new species are born? Let\u2019s dive into allopatric speciation.",
+    "visual_description": "Hook visual: Ever wondered how new species are born? Let\u2019s dive into allopatric speciation.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever wondered how new species are born? Let\u2019s dive into allopatric speciation.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever wondered how new species are born? Let\u2019s dive into allopatric speciation.",
+    "stock_footage_query": "",
+    "text_overlay": "Ever wondered how new",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 3.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Allopatric speciation happens when populations are separated by physical barriers, like mountains or rivers.",
+    "visual_description": "Context visual: Allopatric speciation happens when populations are separated by physical barriers, like mountains or rivers.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Allopatric speciation happens when populations are separated by physical barriers, like mountains or rivers.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Allopatric speciation happens when populations are separated by physical barriers, like mountains or rivers.",
+    "stock_footage_query": "",
+    "text_overlay": "Allopatric speciation happens when",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 3.0,
+      "end_sec": 11.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 3.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But here's the twist... over time, those isolated groups adapt to their unique environments.",
+    "visual_description": "Pattern Interrupt visual: But here's the twist... over time, those isolated groups adapt to their unique environments.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: But here's the twist... over time, those isolated groups adapt to their unique environments.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: But here's the twist... over time, those isolated groups adapt to their unique environments.",
+    "stock_footage_query": "",
+    "text_overlay": "But here's the twist...",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 11.0,
+      "end_sec": 19.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 11.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "These adaptations can lead to genetic changes, and eventually, they become distinct species!",
+    "visual_description": "Escalation visual: These adaptations can lead to genetic changes, and eventually, they become distinct species!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: These adaptations can lead to genetic changes, and eventually, they become distinct species!",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: These adaptations can lead to genetic changes, and eventually, they become distinct species!",
+    "stock_footage_query": "",
+    "text_overlay": "These adaptations can lead",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 19.0,
+      "end_sec": 27.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 19.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "So, speciation is nature\u2019s incredible way of creating diversity, but it\u2019s not always clear-cut.",
+    "visual_description": "Payoff visual: So, speciation is nature\u2019s incredible way of creating diversity, but it\u2019s not always clear-cut.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, speciation is nature\u2019s incredible way of creating diversity, but it\u2019s not always clear-cut.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, speciation is nature\u2019s incredible way of creating diversity, but it\u2019s not always clear-cut.",
+    "stock_footage_query": "",
+    "text_overlay": "So, speciation is nature\u2019s",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 27.0,
+      "end_sec": 35.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 27.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 25.0,
+    "narration": "Curious for more? Hit that follow button and explore the wonders of biology with us!",
+    "visual_description": "Cta visual: Curious for more? Hit that follow button and explore the wonders of biology with us!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious for more? Hit that follow button and explore the wonders of biology with us!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious for more? Hit that follow button and explore the wonders of biology with us!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious for more? Hit",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 35.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 35.0
+    }
+  }
+]

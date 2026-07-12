@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "An octopus has nine brains \u2014 and that's just the beginning.",
+    "visual_description": "Hook visual: An octopus has nine brains \u2014 and that's just the beginning.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: An octopus has nine brains \u2014 and that's just the beginning.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: An octopus has nine brains \u2014 and that's just the beginning.",
+    "stock_footage_query": "",
+    "text_overlay": "An octopus has nine",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "These incredible creatures can solve puzzles that stump even the smartest animals.",
+    "visual_description": "Context visual: These incredible creatures can solve puzzles that stump even the smartest animals.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: These incredible creatures can solve puzzles that stump even the smartest animals.",
+    "ai_video_prompt": "Cinematic motion: Context visual: These incredible creatures can solve puzzles that stump even the smartest animals.",
+    "stock_footage_query": "",
+    "text_overlay": "These incredible creatures can",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "They use tools, like coconut shells, to protect themselves or create hiding spots.",
+    "visual_description": "Escalation visual: They use tools, like coconut shells, to protect themselves or create hiding spots.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: They use tools, like coconut shells, to protect themselves or create hiding spots.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: They use tools, like coconut shells, to protect themselves or create hiding spots.",
+    "stock_footage_query": "",
+    "text_overlay": "They use tools, like",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show octopuses can learn through observation, mimicking others to survive.",
+    "visual_description": "Evidence visual: Studies show octopuses can learn through observation, mimicking others to survive.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show octopuses can learn through observation, mimicking others to survive.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show octopuses can learn through observation, mimicking others to survive.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show octopuses can",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "With nine brains working together, their intelligence is unlike anything we know.",
+    "visual_description": "Payoff visual: With nine brains working together, their intelligence is unlike anything we know.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: With nine brains working together, their intelligence is unlike anything we know.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: With nine brains working together, their intelligence is unlike anything we know.",
+    "stock_footage_query": "",
+    "text_overlay": "With nine brains working",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Want to dive deeper into the mysteries of the sea? Hit that follow button for more!",
+    "visual_description": "Cta visual: Want to dive deeper into the mysteries of the sea? Hit that follow button for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into the mysteries of the sea? Hit that follow button for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into the mysteries of the sea? Hit that follow button for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

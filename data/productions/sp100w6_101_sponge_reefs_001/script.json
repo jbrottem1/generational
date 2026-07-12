@@ -1,0 +1,74 @@
+{
+  "title": "Sponge Reefs",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A deep dive into the world of sponge reefs, revealing their ecological importance and the mysteries surrounding them.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you sponge reefs hold secrets of the ocean?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "These incredible structures are formed by living sponges, and they play a vital role in marine ecosystems.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But as climate change accelerates, these reefs face serious threats, leaving scientists worried.",
+      "emotion": "concern",
+      "delivery": "urgent",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows sponge reefs filter water, provide habitat, and even support fisheries. They're more than just sponges.",
+      "emotion": "awe",
+      "delivery": "enthusiastic",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "If sponge reefs collapse, it could unravel entire marine ecosystems. What happens next? We still don\u2019t know.",
+      "emotion": "intrigue",
+      "delivery": "serious",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about marine mysteries? Like and follow for more deep dives into science!",
+      "emotion": "engagement",
+      "delivery": "inviting",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "What if I told you sponge reefs hold secrets of the ocean? These incredible structures are formed by living sponges, and they play a vital role in marine ecosystems. But as climate change accelerates, these reefs face serious threats, leaving scientists worried. Research shows sponge reefs filter water, provide habitat, and even support fisheries. They're more than just sponges. If sponge reefs collapse, it could unravel entire marine ecosystems. What happens next? We still don\u2019t know. Curious about marine mysteries? Like and follow for more deep dives into science!",
+  "call_to_action": "Curious about marine mysteries? Like and follow for more deep dives into science!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:14:46.552745+00:00",
+  "source": "ai"
+}

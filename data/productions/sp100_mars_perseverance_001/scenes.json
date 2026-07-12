@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "NASA's Perseverance isn't joyriding \u2014 it's hunting ancient signs of life.",
+    "visual_description": "Hook visual: NASA's Perseverance isn't joyriding \u2014 it's hunting ancient signs of life.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: NASA's Perseverance isn't joyriding \u2014 it's hunting ancient signs of life.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: NASA's Perseverance isn't joyriding \u2014 it's hunting ancient signs of life.",
+    "stock_footage_query": "",
+    "text_overlay": "NASA's Perseverance isn't joyriding",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Situated in Jezero Crater, this rover is on a mission to unveil the secrets of Mars' watery past.",
+    "visual_description": "Context visual: Situated in Jezero Crater, this rover is on a mission to unveil the secrets of Mars' watery past.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Situated in Jezero Crater, this rover is on a mission to unveil the secrets of Mars' watery past.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Situated in Jezero Crater, this rover is on a mission to unveil the secrets of Mars' watery past.",
+    "stock_footage_query": "",
+    "text_overlay": "Situated in Jezero Crater,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Jezero was once a lake, and scientists believe it may hold clues to ancient microbial life.",
+    "visual_description": "Escalation visual: Jezero was once a lake, and scientists believe it may hold clues to ancient microbial life.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Jezero was once a lake, and scientists believe it may hold clues to ancient microbial life.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Jezero was once a lake, and scientists believe it may hold clues to ancient microbial life.",
+    "stock_footage_query": "",
+    "text_overlay": "Jezero was once a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Perseverance collects rock samples, caching them for future return missions to Earth.",
+    "visual_description": "Evidence visual: Perseverance collects rock samples, caching them for future return missions to Earth.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Perseverance collects rock samples, caching them for future return missions to Earth.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Perseverance collects rock samples, caching them for future return missions to Earth.",
+    "stock_footage_query": "",
+    "text_overlay": "Perseverance collects rock samples,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "What will these samples reveal? The answers could change everything we know about life beyond Earth.",
+    "visual_description": "Pattern Interrupt visual: What will these samples reveal? The answers could change everything we know about life beyond Earth.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: What will these samples reveal? The answers could change everything we know about life beyond Earth.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: What will these samples reveal? The answers could change everything we know about life beyond Earth.",
+    "stock_footage_query": "",
+    "text_overlay": "What will these samples",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 16.0,
+    "narration": "While no life has been found yet, Perseverance is paving the way for discovery.",
+    "visual_description": "Payoff visual: While no life has been found yet, Perseverance is paving the way for discovery.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: While no life has been found yet, Perseverance is paving the way for discovery.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: While no life has been found yet, Perseverance is paving the way for discovery.",
+    "stock_footage_query": "",
+    "text_overlay": "While no life has",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "engaged",
+    "length_sec": 10.0,
+    "narration": "Follow along for more updates on this incredible journey to Mars!",
+    "visual_description": "Cta visual: Follow along for more updates on this incredible journey to Mars!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Follow along for more updates on this incredible journey to Mars!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Follow along for more updates on this incredible journey to Mars!",
+    "stock_footage_query": "",
+    "text_overlay": "Follow along for more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

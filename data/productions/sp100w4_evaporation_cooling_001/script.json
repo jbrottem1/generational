@@ -1,0 +1,74 @@
+{
+  "title": "Why Sweating Cools You",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring how sweating acts as your body's natural cooling system through evaporation.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Ever wonder why you sweat? It's your body's secret weapon against heat.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 9.0,
+      "segment_type": "context",
+      "voiceover": "When your body heats up, it triggers sweat glands to release moisture onto your skin.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 9.0,
+      "end_time": 16.0,
+      "segment_type": "escalation",
+      "voiceover": "But here's the twist: that sweat doesn't cool you directly.",
+      "emotion": "curiosity",
+      "delivery": "exciting",
+      "retention_device": "open question"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 16.0,
+      "end_time": 23.0,
+      "segment_type": "evidence",
+      "voiceover": "It's all about evaporation. As sweat evaporates, it takes heat away from your skin.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "visual cue"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 23.0,
+      "end_time": 30.0,
+      "segment_type": "payoff",
+      "voiceover": "This process is called evaporative cooling, and it keeps your body temperature just right.",
+      "emotion": "satisfaction",
+      "delivery": "confident",
+      "retention_device": "fact reveal"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 30.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Next time you sweat, remember: it's your body\u2019s way of keeping cool. Tap to learn more about your amazing biology!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Ever wonder why you sweat? It's your body's secret weapon against heat. When your body heats up, it triggers sweat glands to release moisture onto your skin. But here's the twist: that sweat doesn't cool you directly. It's all about evaporation. As sweat evaporates, it takes heat away from your skin. This process is called evaporative cooling, and it keeps your body temperature just right. Next time you sweat, remember: it's your body\u2019s way of keeping cool. Tap to learn more about your amazing biology!",
+  "call_to_action": "Tap to learn more about your amazing biology!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:14:36.806400+00:00",
+  "source": "ai"
+}

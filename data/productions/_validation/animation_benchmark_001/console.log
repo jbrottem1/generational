@@ -1,0 +1,21 @@
+2026-07-10 21:16:28.021 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-07-10 21:16:28.021 WARNING streamlit.runtime.state.session_state_proxy: Session state does not function when running a script without `streamlit run`
+2026-07-10 21:16:28,043 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=youtube_shorts label="YouTube Shorts"
+2026-07-10 21:16:28,043 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=instagram_reels label="Instagram Reels"
+2026-07-10 21:16:28,043 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=facebook_reels label="Facebook Reels"
+2026-07-10 21:16:28,043 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=tiktok label=TikTok
+2026-07-10 21:16:28,043 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=x label=X
+2026-07-10 21:16:28,043 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=linkedin label=LinkedIn
+2026-07-10 21:16:28,043 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=pinterest label=Pinterest
+2026-07-10 21:16:28,045 INFO generational.services.publishing.extensions: publishing.gate_registered | key=production_integrity
+=== ANIMATION BENCHMARK 001 — LIP SYNC ===
+synthesizing voice…
+2026-07-10 21:16:28,083 INFO generational.provider_runtime: provider.request_start | provider=openai_tts operation=generate_voice
+2026-07-10 21:16:32,430 INFO generational.provider_runtime: provider.request_end | provider=openai_tts operation=generate_voice success=True latency_ms=4346 cost_usd=0.015 error=
+2026-07-10 21:16:32,438 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_tts status=
+voice /Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/_validation/animation_benchmark_001/lipsync_narration.mp3 201120
+render True None t= 7.24
+
+=== BENCHMARK 001 PASSED ===
+export /Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Animation_Benchmark_001_LipSync_Test.mp4
+qc {'mouth_varies': True, 'has_silence_closed': True, 'has_speech_open': True, 'speaking_ratio': 0.797, 'idle_motion': True, 'blink_programmed': True, 'duration_sec': 10.056, 'frame_count': 241, 'passed': True}

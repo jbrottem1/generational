@@ -1,0 +1,74 @@
+{
+  "title": "Anchoring bias",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring how anchoring bias subtly shapes our decisions.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science reveals how anchoring bias controls your choices more than you think.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Anchoring bias happens when we rely too heavily on the first piece of information we receive.",
+      "emotion": "curiosity",
+      "delivery": "steady and engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Imagine seeing a $1,000 TV, then a $500 one. That $500 looks like a steal, right?",
+      "emotion": "curiosity",
+      "delivery": "dynamic and intriguing",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show people are more likely to buy when they're anchored to higher prices.",
+      "emotion": "curiosity",
+      "delivery": "informative and clear",
+      "retention_device": "retention hook"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "Being aware of this bias can help you make smarter choices, not just in shopping, but in life.",
+      "emotion": "curiosity",
+      "delivery": "optimistic and encouraging",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more about your mind? Hit that follow button!",
+      "emotion": "curiosity",
+      "delivery": "energetic and inviting",
+      "retention_device": "natural CTA"
+    }
+  ],
+  "full_voiceover": "Science reveals how anchoring bias controls your choices more than you think. Anchoring bias happens when we rely too heavily on the first piece of information we receive. Imagine seeing a $1,000 TV, then a $500 one. That $500 looks like a steal, right? Studies show people are more likely to buy when they're anchored to higher prices. Being aware of this bias can help you make smarter choices, not just in shopping, but in life. Want to learn more about your mind? Hit that follow button!",
+  "call_to_action": "Want to learn more about your mind? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:50:54.716804+00:00",
+  "source": "ai"
+}

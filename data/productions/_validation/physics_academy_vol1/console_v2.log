@@ -1,0 +1,54 @@
+2026-07-10 21:25:59.345 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-07-10 21:25:59.345 WARNING streamlit.runtime.state.session_state_proxy: Session state does not function when running a script without `streamlit run`
+2026-07-10 21:25:59,386 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=youtube_shorts label="YouTube Shorts"
+2026-07-10 21:25:59,386 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=instagram_reels label="Instagram Reels"
+2026-07-10 21:25:59,386 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=facebook_reels label="Facebook Reels"
+2026-07-10 21:25:59,386 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=tiktok label=TikTok
+2026-07-10 21:25:59,386 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=x label=X
+2026-07-10 21:25:59,386 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=linkedin label=LinkedIn
+2026-07-10 21:25:59,386 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=pinterest label=Pinterest
+2026-07-10 21:25:59,389 INFO generational.services.publishing.extensions: publishing.gate_registered | key=production_integrity
+=== GENERATIONAL PHYSICS ACADEMY — VOLUME 1 ===
+
+=== PHYSICS 1/5: What is Force? ===
+2026-07-10 21:25:59,408 INFO generational.provider_runtime: provider.request_start | provider=openai_tts operation=generate_voice
+2026-07-10 21:26:09,276 INFO generational.provider_runtime: provider.request_end | provider=openai_tts operation=generate_voice success=True latency_ms=9868 cost_usd=0.015 error=
+2026-07-10 21:26:09,293 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_tts status=
+  voice 689280 bytes
+  render ok=True qc=True dur=34.464 t=19.3s
+
+=== PHYSICS 2/5: Why Gravity Pulls Everything Down ===
+2026-07-10 21:26:28,599 INFO generational.provider_runtime: provider.request_start | provider=openai_tts operation=generate_voice
+2026-07-10 21:26:37,708 INFO generational.provider_runtime: provider.request_end | provider=openai_tts operation=generate_voice success=True latency_ms=9108 cost_usd=0.015 error=
+2026-07-10 21:26:37,716 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_tts status=
+  voice 676800 bytes
+  render ok=True qc=True dur=33.84 t=18.91s
+
+=== PHYSICS 3/5: What is Velocity? ===
+2026-07-10 21:26:56,633 INFO generational.provider_runtime: provider.request_start | provider=openai_tts operation=generate_voice
+2026-07-10 21:27:05,759 INFO generational.provider_runtime: provider.request_end | provider=openai_tts operation=generate_voice success=True latency_ms=9124 cost_usd=0.015 error=
+2026-07-10 21:27:05,764 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_tts status=
+  voice 711360 bytes
+  render ok=True qc=True dur=35.568 t=20.74s
+
+=== PHYSICS 4/5: Why Momentum Matters ===
+2026-07-10 21:27:26,509 INFO generational.provider_runtime: provider.request_start | provider=openai_tts operation=generate_voice
+2026-07-10 21:27:37,448 INFO generational.provider_runtime: provider.request_end | provider=openai_tts operation=generate_voice success=True latency_ms=10938 cost_usd=0.015 error=
+2026-07-10 21:27:37,464 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_tts status=
+  voice 582240 bytes
+  render ok=True qc=True dur=29.112 t=17.72s
+
+=== PHYSICS 5/5: Potential Energy Explained ===
+2026-07-10 21:27:55,193 INFO generational.provider_runtime: provider.request_start | provider=openai_tts operation=generate_voice
+2026-07-10 21:28:04,702 INFO generational.provider_runtime: provider.request_end | provider=openai_tts operation=generate_voice success=True latency_ms=9508 cost_usd=0.015 error=
+2026-07-10 21:28:04,708 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_tts status=
+  voice 691680 bytes
+  render ok=True qc=True dur=34.584 t=20.16s
+
+=== PHYSICS ACADEMY VOL1 COMPLETE ===
+completed 5 /5
+  1: READY → /Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Physics_001_What_is_Force_v2.mp4
+  2: READY → /Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Physics_002_Gravity_v2.mp4
+  3: READY → /Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Physics_003_Velocity_v2.mp4
+  4: READY → /Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Physics_004_Momentum_v2.mp4
+  5: READY → /Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Physics_005_Potential_Energy_v2.mp4

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 3.0,
+    "narration": "Your brain is constantly rewiring itself \u2014 but how?",
+    "visual_description": "Hook visual: Your brain is constantly rewiring itself \u2014 but how?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Your brain is constantly rewiring itself \u2014 but how?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Your brain is constantly rewiring itself \u2014 but how?",
+    "stock_footage_query": "",
+    "text_overlay": "Your brain is constantly",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 3.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This phenomenon is called neuroplasticity. Each skill you practice strengthens your brain\u2019s connections.",
+    "visual_description": "Context visual: This phenomenon is called neuroplasticity. Each skill you practice strengthens your brain\u2019s connections.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This phenomenon is called neuroplasticity. Each skill you practice strengthens your brain\u2019s connections.",
+    "ai_video_prompt": "Cinematic motion: Context visual: This phenomenon is called neuroplasticity. Each skill you practice strengthens your brain\u2019s connections.",
+    "stock_footage_query": "",
+    "text_overlay": "This phenomenon is called",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 3.0,
+      "end_sec": 11.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 3.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 9.0,
+    "narration": "Imagine playing the piano or mastering a new language. Each repetition reshapes your neural pathways.",
+    "visual_description": "Escalation visual: Imagine playing the piano or mastering a new language. Each repetition reshapes your neural pathways.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Imagine playing the piano or mastering a new language. Each repetition reshapes your neural pathways.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Imagine playing the piano or mastering a new language. Each repetition reshapes your neural pathways.",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine playing the piano",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 11.0,
+      "end_sec": 20.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 11.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Studies in cognitive neuroscience reveal this process is rooted in Hebbian learning: 'cells that fire together, wire together.'",
+    "visual_description": "Evidence visual: Studies in cognitive neuroscience reveal this process is rooted in Hebbian learning: 'cells that fire together, wire tog",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies in cognitive neuroscience reveal this process is rooted in Hebbian learning: 'cells that fire together, wire tog",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies in cognitive neuroscience reveal this process is rooted in Hebbian learning: 'cells that fire together, wire tog",
+    "stock_footage_query": "",
+    "text_overlay": "Studies in cognitive neuroscience",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 20.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 20.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "But, there are limits to this plasticity in adults. While the brain can change, it takes time and practice.",
+    "visual_description": "Payoff visual: But, there are limits to this plasticity in adults. While the brain can change, it takes time and practice.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: But, there are limits to this plasticity in adults. While the brain can change, it takes time and practice.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: But, there are limits to this plasticity in adults. While the brain can change, it takes time and practice.",
+    "stock_footage_query": "",
+    "text_overlay": "But, there are limits",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "So, what skill will you practice today? Hit like if you're ready to rewire your brain!",
+    "visual_description": "Cta visual: So, what skill will you practice today? Hit like if you're ready to rewire your brain!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: So, what skill will you practice today? Hit like if you're ready to rewire your brain!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: So, what skill will you practice today? Hit like if you're ready to rewire your brain!",
+    "stock_footage_query": "",
+    "text_overlay": "So, what skill will",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

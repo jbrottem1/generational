@@ -67,6 +67,10 @@ Companions: `ENGINE_REGISTRY.md` · `SYSTEM_DEPENDENCY_MAP.md` ·
 |---|---|---|---|
 | **22** | Autonomous Executive | `autonomous_executive` | `OrchestratorHook` + job queue only |
 | **24** | Audience Engagement & Learning Science Director (AELS) | `engagement` | `AGENT_AELS.md` · Echoer reviews each cycle |
+| **26** | **Character Systems Director** | `character_systems` | `AGENT_26.md` · Character Bible · Professor Gen (`CHAR-PROFESSOR-001`) |
+| **27** | **Knowledge & Standards Director** | `knowledge_standards` | `AGENT_27.md` · `data/knowledge_standards/` · institutional memory |
+
+**Active programs:** **PROJECT FOUNDATION** · **Agent 26 Character Systems** · **Agent 27 Knowledge & Standards**.
 
 ### Agent 20 — Studio UI & Creative Workspace (LIVE)
 
@@ -112,12 +116,18 @@ Reserved for future BI: `business_intelligence` engine key.
 | Production | Plans → finished, published media | 6–9 |
 | Intelligence | Measure, forecast, learn, experiment | 10–13 |
 | Media Generation | Assets, render, post | 14, 17 |
-| **Creative Department (Visual Universe)** | Visual identity, world building, characters, brand consistency — see `GENERATIONAL_VISUAL_UNIVERSE.md` | **4, 12, 14, 15, 18** (+ 3, 17) |
-| **Animation Studio** | Motion direction, storyboard, camera, env animation, motion library, animation QC — see `GENERATIONAL_ANIMATION_STUDIO.md` | **16** (Director), 15, 4, 3, 6, 14, 17 |
+| **Creative Department (Visual Universe)** | Visual identity, world building, brand consistency — see `GENERATIONAL_VISUAL_UNIVERSE.md` | **4, 12, 14, 15, 18** (+ 3, 17) |
+| **Character Systems** | Recurring digital actors, Character Bible, consistency QC — see `AGENT_26.md` | **26** (Director), 15, 16, 5, 24 |
+| **Knowledge & Standards** | Institutional memory, standards, prompts, experiments — see `AGENT_27.md` | **27** (Director), 0, 10, 24, 26, 16 |
+| **Animation Studio** | Motion direction, storyboard, camera, env animation, motion library, animation QC — see `GENERATIONAL_ANIMATION_STUDIO.md` | **16** (Director), 26, 15, 4, 3, 6, 14, 17 |
 | Direction | AI direction / Creative Director | **18** |
 | Interface | Studio UI, creative workspace | **20** |
 | Infrastructure | Provider integration, runtime, workflow execution | **19**, **21** |
 | Executive (PMO) | Agent 0 coordination; Agent 22 planned | 0, 22 |
+
+**Program note (2026-07-11):** Agent **27** established as **Knowledge & Standards Director** — institutional memory; indexes GCIS; owns named standards package under `data/knowledge_standards/`.
+
+**Program note (2026-07-11):** Agent **26** established as **Character Systems Director** — owns recurring character identity (Professor Gen). Agent **16** executes motion; Agent **15** owns universe IP. Coat forbidden for Gen v1 (clean stick only).
 
 **Program note (2026-07-10):** Agent **16** elevated to **Animation Director** (Animation Studio department). Agent **15** remains Visual Universe / character continuity with dual-report to Animation Studio. Equal priority with production throughput.
 

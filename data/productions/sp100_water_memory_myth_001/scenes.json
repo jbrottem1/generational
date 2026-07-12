@@ -1,0 +1,242 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Can water really remember? Science says no.",
+    "visual_description": "Hook visual: Can water really remember? Science says no.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Can water really remember? Science says no.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Can water really remember? Science says no.",
+    "stock_footage_query": "",
+    "text_overlay": "Can water really remember?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "In homeopathy, some claim water holds memory of substances.",
+    "visual_description": "Context visual: In homeopathy, some claim water holds memory of substances.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: In homeopathy, some claim water holds memory of substances.",
+    "ai_video_prompt": "Cinematic motion: Context visual: In homeopathy, some claim water holds memory of substances.",
+    "stock_footage_query": "",
+    "text_overlay": "In homeopathy, some claim",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But chemistry tells a different story.",
+    "visual_description": "Escalation visual: But chemistry tells a different story.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But chemistry tells a different story.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But chemistry tells a different story.",
+    "stock_footage_query": "",
+    "text_overlay": "But chemistry tells a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "fascination",
+    "length_sec": 8.0,
+    "narration": "Hydrogen bonds in water are fleeting, lasting only microseconds.",
+    "visual_description": "Evidence visual: Hydrogen bonds in water are fleeting, lasting only microseconds.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Hydrogen bonds in water are fleeting, lasting only microseconds.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Hydrogen bonds in water are fleeting, lasting only microseconds.",
+    "stock_footage_query": "",
+    "text_overlay": "Hydrogen bonds in water",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "And when diluted beyond Avogadro's number?",
+    "visual_description": "Pattern Interrupt visual: And when diluted beyond Avogadro's number?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: And when diluted beyond Avogadro's number?",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: And when diluted beyond Avogadro's number?",
+    "stock_footage_query": "",
+    "text_overlay": "And when diluted beyond",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "evidence",
+    "emotion": "clarity",
+    "length_sec": 8.0,
+    "narration": "There\u2019s virtually no solute left. Just pure water.",
+    "visual_description": "Evidence visual: There\u2019s virtually no solute left. Just pure water.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: There\u2019s virtually no solute left. Just pure water.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: There\u2019s virtually no solute left. Just pure water.",
+    "stock_footage_query": "",
+    "text_overlay": "There\u2019s virtually no solute",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 42.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "payoff",
+    "emotion": "satisfaction",
+    "length_sec": 8.0,
+    "narration": "So, water\u2019s memory? It\u2019s a myth, not science.",
+    "visual_description": "Payoff visual: So, water\u2019s memory? It\u2019s a myth, not science.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, water\u2019s memory? It\u2019s a myth, not science.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, water\u2019s memory? It\u2019s a myth, not science.",
+    "stock_footage_query": "",
+    "text_overlay": "So, water\u2019s memory? It\u2019s",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 42.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 42.0
+    }
+  },
+  {
+    "scene_number": 8,
+    "purpose": "cta",
+    "emotion": "enthusiasm",
+    "length_sec": 10.0,
+    "narration": "Like and follow for more science debunking!",
+    "visual_description": "Cta visual: Like and follow for more science debunking!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Like and follow for more science debunking!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Like and follow for more science debunking!",
+    "stock_footage_query": "",
+    "text_overlay": "Like and follow for",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if I told you EPO altitude might not be what you think?",
+    "visual_description": "Hook visual: What if I told you EPO altitude might not be what you think?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you EPO altitude might not be what you think?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you EPO altitude might not be what you think?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "EPO, or erythropoietin, is a hormone that boosts red blood cells. But how does altitude tie into this?",
+    "visual_description": "Context visual: EPO, or erythropoietin, is a hormone that boosts red blood cells. But how does altitude tie into this?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: EPO, or erythropoietin, is a hormone that boosts red blood cells. But how does altitude tie into this?",
+    "ai_video_prompt": "Cinematic motion: Context visual: EPO, or erythropoietin, is a hormone that boosts red blood cells. But how does altitude tie into this?",
+    "stock_footage_query": "",
+    "text_overlay": "EPO, or erythropoietin, is",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "At high altitudes, less oxygen triggers EPO production. More red blood cells, right? But it\u2019s more complex than that.",
+    "visual_description": "Escalation visual: At high altitudes, less oxygen triggers EPO production. More red blood cells, right? But it\u2019s more complex than that.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: At high altitudes, less oxygen triggers EPO production. More red blood cells, right? But it\u2019s more complex than that.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: At high altitudes, less oxygen triggers EPO production. More red blood cells, right? But it\u2019s more complex than that.",
+    "stock_footage_query": "",
+    "text_overlay": "At high altitudes, less",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show mixed results on performance. Some athletes benefit, others don\u2019t.",
+    "visual_description": "Evidence visual: Studies show mixed results on performance. Some athletes benefit, others don\u2019t.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show mixed results on performance. Some athletes benefit, others don\u2019t.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show mixed results on performance. Some athletes benefit, others don\u2019t.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show mixed results",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "So the science isn\u2019t black and white. It\u2019s a blend of biology and individual response.",
+    "visual_description": "Payoff visual: So the science isn\u2019t black and white. It\u2019s a blend of biology and individual response.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So the science isn\u2019t black and white. It\u2019s a blend of biology and individual response.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So the science isn\u2019t black and white. It\u2019s a blend of biology and individual response.",
+    "stock_footage_query": "",
+    "text_overlay": "So the science isn\u2019t",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Curious about more science mysteries? Hit like and follow for more revelations!",
+    "visual_description": "Cta visual: Curious about more science mysteries? Hit like and follow for more revelations!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more science mysteries? Hit like and follow for more revelations!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more science mysteries? Hit like and follow for more revelations!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more science",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

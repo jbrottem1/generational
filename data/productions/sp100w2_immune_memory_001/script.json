@@ -1,0 +1,84 @@
+{
+  "title": "How Your Immune System Remembers",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore how memory B and T cells protect you after infections and vaccines.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if your body had a memory that could save your life?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "After an infection or vaccine, your immune system creates memory cells.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "These cells, like vigilant guards, remember past invaders.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Memory B cells churn out antibodies, while memory T cells seek and destroy.",
+      "emotion": "curiosity",
+      "delivery": "assertive",
+      "retention_device": "visualization"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "Together, they create a powerful defense, ready for the next attack.",
+      "emotion": "curiosity",
+      "delivery": "excited",
+      "retention_device": "suspense"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 50.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "Wondering how long this memory lasts? Months, years, even a lifetime!",
+      "emotion": "curiosity",
+      "delivery": "intriguing",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about your immune system? Like and follow for more science secrets!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "direct appeal"
+    }
+  ],
+  "full_voiceover": "What if your body had a memory that could save your life? After an infection or vaccine, your immune system creates memory cells. These cells, like vigilant guards, remember past invaders. Memory B cells churn out antibodies, while memory T cells seek and destroy. Together, they create a powerful defense, ready for the next attack. Wondering how long this memory lasts? Months, years, even a lifetime! Curious about your immune system? Like and follow for more science secrets!",
+  "call_to_action": "Like and follow for more science secrets!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:48:15.032357+00:00",
+  "source": "ai"
+}

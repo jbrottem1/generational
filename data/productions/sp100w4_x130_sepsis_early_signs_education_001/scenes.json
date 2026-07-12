@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if I told you that confusion could be a lifesaver?",
+    "visual_description": "Hook visual: What if I told you that confusion could be a lifesaver?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you that confusion could be a lifesaver?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you that confusion could be a lifesaver?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Sepsis is a critical condition, yet its early signs often go unnoticed.",
+    "visual_description": "Context visual: Sepsis is a critical condition, yet its early signs often go unnoticed.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Sepsis is a critical condition, yet its early signs often go unnoticed.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Sepsis is a critical condition, yet its early signs often go unnoticed.",
+    "stock_footage_query": "",
+    "text_overlay": "Sepsis is a critical",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Fever, rapid heart rate, and confusion are key indicators. But there's more.",
+    "visual_description": "Escalation visual: Fever, rapid heart rate, and confusion are key indicators. But there's more.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Fever, rapid heart rate, and confusion are key indicators. But there's more.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Fever, rapid heart rate, and confusion are key indicators. But there's more.",
+    "stock_footage_query": "",
+    "text_overlay": "Fever, rapid heart rate,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "Research shows sepsis can progress rapidly. Recognizing symptoms early is crucial.",
+    "visual_description": "Evidence visual: Research shows sepsis can progress rapidly. Recognizing symptoms early is crucial.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows sepsis can progress rapidly. Recognizing symptoms early is crucial.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows sepsis can progress rapidly. Recognizing symptoms early is crucial.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows sepsis can",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "urgency",
+    "length_sec": 8.0,
+    "narration": "If you spot confusion, high fever, or extreme pain, act fast. It could save a life.",
+    "visual_description": "Payoff visual: If you spot confusion, high fever, or extreme pain, act fast. It could save a life.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: If you spot confusion, high fever, or extreme pain, act fast. It could save a life.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: If you spot confusion, high fever, or extreme pain, act fast. It could save a life.",
+    "stock_footage_query": "",
+    "text_overlay": "If you spot confusion,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "empowerment",
+    "length_sec": 26.0,
+    "narration": "Stay informed. Share this knowledge to help others recognize sepsis early.",
+    "visual_description": "Cta visual: Stay informed. Share this knowledge to help others recognize sepsis early.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Stay informed. Share this knowledge to help others recognize sepsis early.",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Stay informed. Share this knowledge to help others recognize sepsis early.",
+    "stock_footage_query": "",
+    "text_overlay": "Stay informed. Share this",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

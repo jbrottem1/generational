@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science has a clearer story about radio astronomy than social media does.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Radio astronomy studies celestial objects through the radio waves they emit, revealing secrets light cannot.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Imagine detecting a star's heartbeat from millions of light-years away, just by tuning into its radio signals.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: This technology has unlocked the mysteries of black holes, pulsars, and even the cosmic microwave background.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Yet, each discovery raises new questions, reminding us how much we have yet to learn.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about the universe? Follow for more mind-blowing space facts!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science has a clearer story about radio astronomy than social media does.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Radio astronomy studies celestial objects through the radio waves they emit, revealing secrets light cannot.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Imagine detecting a star's heartbeat from millions of light-years away, just by tuning into its radio signals.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: This technology has unlocked the mysteries of black holes, pulsars, and even the cosmic microwave background.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Yet, each discovery raises new questions, reminding us how much we have yet to learn.",
+      "duration_sec": 10.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about the universe? Follow for more mind-blowing space facts!",
+      "duration_sec": 24.0
+    }
+  ]
+}

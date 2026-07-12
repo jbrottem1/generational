@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Adolescence isn\u2019t just about hormones; it\u2019s a brain makeover.",
+    "visual_description": "Hook visual: Adolescence isn\u2019t just about hormones; it\u2019s a brain makeover.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Adolescence isn\u2019t just about hormones; it\u2019s a brain makeover.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Adolescence isn\u2019t just about hormones; it\u2019s a brain makeover.",
+    "stock_footage_query": "",
+    "text_overlay": "Adolescence isn\u2019t just about",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "During these years, your brain is pruning away extra connections, like trimming a tree.",
+    "visual_description": "Context visual: During these years, your brain is pruning away extra connections, like trimming a tree.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: During these years, your brain is pruning away extra connections, like trimming a tree.",
+    "ai_video_prompt": "Cinematic motion: Context visual: During these years, your brain is pruning away extra connections, like trimming a tree.",
+    "stock_footage_query": "",
+    "text_overlay": "During these years, your",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This process, known as synaptic pruning, boosts efficiency and speeds up thinking.",
+    "visual_description": "Escalation visual: This process, known as synaptic pruning, boosts efficiency and speeds up thinking.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: This process, known as synaptic pruning, boosts efficiency and speeds up thinking.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: This process, known as synaptic pruning, boosts efficiency and speeds up thinking.",
+    "stock_footage_query": "",
+    "text_overlay": "This process, known as",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show that by late adolescence, the brain has cut away up to 50% of its connections.",
+    "visual_description": "Evidence visual: Studies show that by late adolescence, the brain has cut away up to 50% of its connections.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show that by late adolescence, the brain has cut away up to 50% of its connections.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show that by late adolescence, the brain has cut away up to 50% of its connections.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show that by",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "It\u2019s not just chaos; it\u2019s a strategic upgrade for adulthood.",
+    "visual_description": "Payoff visual: It\u2019s not just chaos; it\u2019s a strategic upgrade for adulthood.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: It\u2019s not just chaos; it\u2019s a strategic upgrade for adulthood.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: It\u2019s not just chaos; it\u2019s a strategic upgrade for adulthood.",
+    "stock_footage_query": "",
+    "text_overlay": "It\u2019s not just chaos;",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 22.0,
+    "narration": "Want to understand more about your brain? Like and follow for deeper dives into neuroscience!",
+    "visual_description": "Cta visual: Want to understand more about your brain? Like and follow for deeper dives into neuroscience!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to understand more about your brain? Like and follow for deeper dives into neuroscience!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to understand more about your brain? Like and follow for deeper dives into neuroscience!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to understand more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

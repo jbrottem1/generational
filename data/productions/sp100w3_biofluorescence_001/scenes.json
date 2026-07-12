@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "One absorbs light, the other creates its own. Can you guess which is which?",
+    "visual_description": "Hook visual: One absorbs light, the other creates its own. Can you guess which is which?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: One absorbs light, the other creates its own. Can you guess which is which?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: One absorbs light, the other creates its own. Can you guess which is which?",
+    "stock_footage_query": "",
+    "text_overlay": "One absorbs light, the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Biofluorescence allows organisms to absorb light and re-emit it, often in vibrant colors.",
+    "visual_description": "Context visual: Biofluorescence allows organisms to absorb light and re-emit it, often in vibrant colors.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Biofluorescence allows organisms to absorb light and re-emit it, often in vibrant colors.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Biofluorescence allows organisms to absorb light and re-emit it, often in vibrant colors.",
+    "stock_footage_query": "",
+    "text_overlay": "Biofluorescence allows organisms to",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "On the flip side, bioluminescence is a chemical reaction producing light without needing external sources.",
+    "visual_description": "Escalation visual: On the flip side, bioluminescence is a chemical reaction producing light without needing external sources.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: On the flip side, bioluminescence is a chemical reaction producing light without needing external sources.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: On the flip side, bioluminescence is a chemical reaction producing light without needing external sources.",
+    "stock_footage_query": "",
+    "text_overlay": "On the flip side,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Think jellyfish and fireflies\u2014bioluminescent marvels that light up the dark.",
+    "visual_description": "Evidence visual: Think jellyfish and fireflies\u2014bioluminescent marvels that light up the dark.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Think jellyfish and fireflies\u2014bioluminescent marvels that light up the dark.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Think jellyfish and fireflies\u2014bioluminescent marvels that light up the dark.",
+    "stock_footage_query": "",
+    "text_overlay": "Think jellyfish and fireflies\u2014bioluminescent",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Both adaptations are vital for survival, attracting mates or evading predators.",
+    "visual_description": "Payoff visual: Both adaptations are vital for survival, attracting mates or evading predators.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Both adaptations are vital for survival, attracting mates or evading predators.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Both adaptations are vital for survival, attracting mates or evading predators.",
+    "stock_footage_query": "",
+    "text_overlay": "Both adaptations are vital",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Now you know the difference! Want to learn more about the ocean's secrets? Like and follow!",
+    "visual_description": "Cta visual: Now you know the difference! Want to learn more about the ocean's secrets? Like and follow!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Now you know the difference! Want to learn more about the ocean's secrets? Like and follow!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Now you know the difference! Want to learn more about the ocean's secrets? Like and follow!",
+    "stock_footage_query": "",
+    "text_overlay": "Now you know the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

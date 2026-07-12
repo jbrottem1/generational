@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Enzymes are nature's speedsters, speeding up reactions crucial for life.",
+    "visual_description": "Hook visual: Enzymes are nature's speedsters, speeding up reactions crucial for life.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Enzymes are nature's speedsters, speeding up reactions crucial for life.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Enzymes are nature's speedsters, speeding up reactions crucial for life.",
+    "stock_footage_query": "",
+    "text_overlay": "Enzymes are nature's speedsters,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "They lower the activation energy needed for chemical reactions, acting like keys to unlock processes.",
+    "visual_description": "Context visual: They lower the activation energy needed for chemical reactions, acting like keys to unlock processes.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: They lower the activation energy needed for chemical reactions, acting like keys to unlock processes.",
+    "ai_video_prompt": "Cinematic motion: Context visual: They lower the activation energy needed for chemical reactions, acting like keys to unlock processes.",
+    "stock_footage_query": "",
+    "text_overlay": "They lower the activation",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "Imagine a world without enzymes. Metabolism would grind to a halt, and life as we know it would cease.",
+    "visual_description": "Escalation visual: Imagine a world without enzymes. Metabolism would grind to a halt, and life as we know it would cease.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Imagine a world without enzymes. Metabolism would grind to a halt, and life as we know it would cease.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Imagine a world without enzymes. Metabolism would grind to a halt, and life as we know it would cease.",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine a world without",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "wonder",
+    "length_sec": 8.0,
+    "narration": "From digestion to DNA replication, enzymes power every reaction in your body.",
+    "visual_description": "Evidence visual: From digestion to DNA replication, enzymes power every reaction in your body.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: From digestion to DNA replication, enzymes power every reaction in your body.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: From digestion to DNA replication, enzymes power every reaction in your body.",
+    "stock_footage_query": "",
+    "text_overlay": "From digestion to DNA",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "fascination",
+    "length_sec": 14.0,
+    "narration": "These molecular machines are incredibly specific, ensuring the right reactions happen at the right time.",
+    "visual_description": "Payoff visual: These molecular machines are incredibly specific, ensuring the right reactions happen at the right time.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: These molecular machines are incredibly specific, ensuring the right reactions happen at the right time.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: These molecular machines are incredibly specific, ensuring the right reactions happen at the right time.",
+    "stock_footage_query": "",
+    "text_overlay": "These molecular machines are",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "anticipation",
+    "length_sec": 15.0,
+    "narration": "Curious about how enzymes shape our world? Hit that follow for more science insights!",
+    "visual_description": "Cta visual: Curious about how enzymes shape our world? Hit that follow for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about how enzymes shape our world? Hit that follow for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about how enzymes shape our world? Hit that follow for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about how enzymes",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 55.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if I told you seagrass meadows are vital yet often overlooked?",
+    "visual_description": "Hook visual: What if I told you seagrass meadows are vital yet often overlooked?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you seagrass meadows are vital yet often overlooked?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you seagrass meadows are vital yet often overlooked?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "These underwater gardens cover vast areas, providing homes for countless marine species.",
+    "visual_description": "Context visual: These underwater gardens cover vast areas, providing homes for countless marine species.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: These underwater gardens cover vast areas, providing homes for countless marine species.",
+    "ai_video_prompt": "Cinematic motion: Context visual: These underwater gardens cover vast areas, providing homes for countless marine species.",
+    "stock_footage_query": "",
+    "text_overlay": "These underwater gardens cover",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "But they do more than house fish. They capture carbon\u2014helping fight climate change.",
+    "visual_description": "Escalation visual: But they do more than house fish. They capture carbon\u2014helping fight climate change.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But they do more than house fish. They capture carbon\u2014helping fight climate change.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But they do more than house fish. They capture carbon\u2014helping fight climate change.",
+    "stock_footage_query": "",
+    "text_overlay": "But they do more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 20.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Studies show they can store up to 83 million tons of carbon yearly, but...",
+    "visual_description": "Evidence visual: Studies show they can store up to 83 million tons of carbon yearly, but...",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show they can store up to 83 million tons of carbon yearly, but...",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show they can store up to 83 million tons of carbon yearly, but...",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show they can",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 20.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 20.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "concern",
+    "length_sec": 15.0,
+    "narration": "They\u2019re declining rapidly due to pollution and coastal development. What can we do?",
+    "visual_description": "Payoff visual: They\u2019re declining rapidly due to pollution and coastal development. What can we do?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: They\u2019re declining rapidly due to pollution and coastal development. What can we do?",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: They\u2019re declining rapidly due to pollution and coastal development. What can we do?",
+    "stock_footage_query": "",
+    "text_overlay": "They\u2019re declining rapidly due",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "determination",
+    "length_sec": 15.0,
+    "narration": "Join the fight! Support seagrass conservation. Your actions matter.",
+    "visual_description": "Cta visual: Join the fight! Support seagrass conservation. Your actions matter.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Join the fight! Support seagrass conservation. Your actions matter.",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Join the fight! Support seagrass conservation. Your actions matter.",
+    "stock_footage_query": "",
+    "text_overlay": "Join the fight! Support",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

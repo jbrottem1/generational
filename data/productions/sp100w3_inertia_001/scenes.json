@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Objects resist changes in motion \u2014 that's why seatbelts matter.",
+    "visual_description": "Hook visual: Objects resist changes in motion \u2014 that's why seatbelts matter.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Objects resist changes in motion \u2014 that's why seatbelts matter.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Objects resist changes in motion \u2014 that's why seatbelts matter.",
+    "stock_footage_query": "",
+    "text_overlay": "Objects resist changes in",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This resistance is known as inertia, the tendency of objects to keep doing what they're doing.",
+    "visual_description": "Context visual: This resistance is known as inertia, the tendency of objects to keep doing what they're doing.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This resistance is known as inertia, the tendency of objects to keep doing what they're doing.",
+    "ai_video_prompt": "Cinematic motion: Context visual: This resistance is known as inertia, the tendency of objects to keep doing what they're doing.",
+    "stock_footage_query": "",
+    "text_overlay": "This resistance is known",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "When you're in a car and it suddenly stops, your body wants to keep moving. That's why seatbelts save lives.",
+    "visual_description": "Escalation visual: When you're in a car and it suddenly stops, your body wants to keep moving. That's why seatbelts save lives.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: When you're in a car and it suddenly stops, your body wants to keep moving. That's why seatbelts save lives.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: When you're in a car and it suddenly stops, your body wants to keep moving. That's why seatbelts save lives.",
+    "stock_footage_query": "",
+    "text_overlay": "When you're in a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Inertia is everywhere \u2014 from riding a bike to playing sports. Don't underestimate its power!",
+    "visual_description": "Evidence visual: Inertia is everywhere \u2014 from riding a bike to playing sports. Don't underestimate its power!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Inertia is everywhere \u2014 from riding a bike to playing sports. Don't underestimate its power!",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Inertia is everywhere \u2014 from riding a bike to playing sports. Don't underestimate its power!",
+    "stock_footage_query": "",
+    "text_overlay": "Inertia is everywhere \u2014",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Understanding inertia helps you make safe choices every day, especially on the road.",
+    "visual_description": "Payoff visual: Understanding inertia helps you make safe choices every day, especially on the road.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding inertia helps you make safe choices every day, especially on the road.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding inertia helps you make safe choices every day, especially on the road.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding inertia helps you",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Want to learn more surprising science? Hit that follow button!",
+    "visual_description": "Cta visual: Want to learn more surprising science? Hit that follow button!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to learn more surprising science? Hit that follow button!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to learn more surprising science? Hit that follow button!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

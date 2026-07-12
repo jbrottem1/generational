@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Planets don't orbit in perfect circles \u2014 they dance in ellipses.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: In the early 1600s, Johannes Kepler cracked the code of planetary movement.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: He discovered that planets sweep out equal areas in equal times.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Imagine a line from the sun to a planet. It covers the same area in a given time, whether it\u2019s close or far.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: This means planets move faster when they're nearer to the sun \u2014 gravity really is a game changer!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about more cosmic mysteries? Like and follow for more!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Planets don't orbit in perfect circles \u2014 they dance in ellipses.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: In the early 1600s, Johannes Kepler cracked the code of planetary movement.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: He discovered that planets sweep out equal areas in equal times.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Imagine a line from the sun to a planet. It covers the same area in a given time, whether it\u2019s close or far.",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: This means planets move faster when they're nearer to the sun \u2014 gravity really is a game changer!",
+      "duration_sec": 15.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about more cosmic mysteries? Like and follow for more!",
+      "duration_sec": 15.0
+    }
+  ]
+}

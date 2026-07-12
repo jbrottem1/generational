@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: You can't see a black hole \u2014 so how did scientists capture its shadow?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Meet the Event Horizon Telescope\u2014an array of global telescopes acting as one gigantic eye.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: In 2019, they unveiled the first ever image of a black hole: M87*, showcasing its photon ring.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: This shadow isn\u2019t the black hole itself, but the light bending around it\u2014a cosmic illusion.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: The EHT Collaboration's groundbreaking work pushed the boundaries of our understanding of the universe.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about what else we can find in space? Hit that follow button for more!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: You can't see a black hole \u2014 so how did scientists capture its shadow?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Meet the Event Horizon Telescope\u2014an array of global telescopes acting as one gigantic eye.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: In 2019, they unveiled the first ever image of a black hole: M87*, showcasing its photon ring.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: This shadow isn\u2019t the black hole itself, but the light bending around it\u2014a cosmic illusion.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: The EHT Collaboration's groundbreaking work pushed the boundaries of our understanding of the universe.",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about what else we can find in space? Hit that follow button for more!",
+      "duration_sec": 12.0
+    }
+  ]
+}

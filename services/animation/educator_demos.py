@@ -189,8 +189,17 @@ def get_educator_demo(demo_id: str):
     demo = EDUCATOR_DEMOS.get(demo_id)
     if demo is not None:
         return demo
+    from services.animation.foundation_studio import get_foundation_demo
+    from services.animation.batesian_demos import get_batesian_demo
     from services.animation.biology_demos import get_biology_demo
     from services.animation.macrocenter import get_macrocenter_demo
     from services.animation.skydive_demos import get_skydive_demo
 
-    return get_skydive_demo(demo_id) or get_macrocenter_demo(demo_id) or get_biology_demo(demo_id)
+    # Foundation white-studio demos take priority over MacroCenter / labs
+    return (
+        get_foundation_demo(demo_id)
+        or get_batesian_demo(demo_id)
+        or get_skydive_demo(demo_id)
+        or get_macrocenter_demo(demo_id)
+        or get_biology_demo(demo_id)
+    )

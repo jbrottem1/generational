@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What happens to your body at high altitudes? It\u2019s not what you think.",
+    "visual_description": "Hook visual: What happens to your body at high altitudes? It\u2019s not what you think.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What happens to your body at high altitudes? It\u2019s not what you think.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What happens to your body at high altitudes? It\u2019s not what you think.",
+    "stock_footage_query": "",
+    "text_overlay": "What happens to your",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Acclimatization altitude is where your body struggles to adapt to lower oxygen levels.",
+    "visual_description": "Context visual: Acclimatization altitude is where your body struggles to adapt to lower oxygen levels.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Acclimatization altitude is where your body struggles to adapt to lower oxygen levels.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Acclimatization altitude is where your body struggles to adapt to lower oxygen levels.",
+    "stock_footage_query": "",
+    "text_overlay": "Acclimatization altitude is where",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "At 8,000 feet, many feel dizzy and fatigued. But why? Let\u2019s break it down.",
+    "visual_description": "Escalation visual: At 8,000 feet, many feel dizzy and fatigued. But why? Let\u2019s break it down.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: At 8,000 feet, many feel dizzy and fatigued. But why? Let\u2019s break it down.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: At 8,000 feet, many feel dizzy and fatigued. But why? Let\u2019s break it down.",
+    "stock_footage_query": "",
+    "text_overlay": "At 8,000 feet, many",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Your body increases red blood cells, but this takes time. Some adapt, some don\u2019t.",
+    "visual_description": "Evidence visual: Your body increases red blood cells, but this takes time. Some adapt, some don\u2019t.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Your body increases red blood cells, but this takes time. Some adapt, some don\u2019t.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Your body increases red blood cells, but this takes time. Some adapt, some don\u2019t.",
+    "stock_footage_query": "",
+    "text_overlay": "Your body increases red",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Inconsistent outcomes create uncertainty. It\u2019s a complex process influenced by genetics and duration.",
+    "visual_description": "Payoff visual: Inconsistent outcomes create uncertainty. It\u2019s a complex process influenced by genetics and duration.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Inconsistent outcomes create uncertainty. It\u2019s a complex process influenced by genetics and duration.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Inconsistent outcomes create uncertainty. It\u2019s a complex process influenced by genetics and duration.",
+    "stock_footage_query": "",
+    "text_overlay": "Inconsistent outcomes create uncertainty.",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 46.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "Curious about your limits? Like and follow for more science insights!",
+    "visual_description": "Cta visual: Curious about your limits? Like and follow for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about your limits? Like and follow for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about your limits? Like and follow for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about your limits?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 46.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 46.0
+    }
+  }
+]

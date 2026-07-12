@@ -1,0 +1,74 @@
+{
+  "title": "Battery energy density",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A deep dive into the science of battery energy density and its implications.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about battery energy density than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Battery energy density refers to how much energy a battery can store in a given volume or weight.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "concept explanation"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Higher energy density means longer-lasting devices, but there's a catch: achieving it safely is tricky.",
+      "emotion": "curiosity",
+      "delivery": "building tension",
+      "retention_device": "safety concern"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Consider lithium-ion batteries\u2014they strike a balance, but innovations like solid-state batteries could change the game.",
+      "emotion": "curiosity",
+      "delivery": "insightful",
+      "retention_device": "innovation lead-in"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "In the end, understanding battery energy density helps us make informed choices about future tech\u2014from phones to electric cars.",
+      "emotion": "curiosity",
+      "delivery": "conclusive",
+      "retention_device": "future implications"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about tech innovations? Hit like and follow for more science insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about battery energy density than social media does. Battery energy density refers to how much energy a battery can store in a given volume or weight. Higher energy density means longer-lasting devices, but there's a catch: achieving it safely is tricky. Consider lithium-ion batteries\u2014they strike a balance, but innovations like solid-state batteries could change the game. In the end, understanding battery energy density helps us make informed choices about future tech\u2014from phones to electric cars. Curious about tech innovations? Hit like and follow for more science insights!",
+  "call_to_action": "Curious about tech innovations? Hit like and follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:49:02.699546+00:00",
+  "source": "ai"
+}

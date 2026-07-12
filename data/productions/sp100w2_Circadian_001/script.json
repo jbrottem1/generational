@@ -1,0 +1,74 @@
+{
+  "title": "Your Body Clock Runs on Light",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore how light influences your body's internal clock and rhythms.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 3.0,
+      "segment_type": "hook",
+      "voiceover": "Did you know a cluster of neurons controls your sleep by tracking daylight?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 3.0,
+      "end_time": 12.0,
+      "segment_type": "context",
+      "voiceover": "Meet the SCN, your body's master clock, syncing with sunlight to regulate melatonin and alertness.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 12.0,
+      "end_time": 20.0,
+      "segment_type": "escalation",
+      "voiceover": "When the sun rises, your SCN kicks in, reducing melatonin, waking you up!",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 20.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that disrupted light exposure can throw off your rhythm, leading to sleepless nights.",
+      "emotion": "concern",
+      "delivery": "serious",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "payoff",
+      "voiceover": "Natural light is your ally. Embrace it in the morning to enhance your sleep at night.",
+      "emotion": "relief",
+      "delivery": "uplifting",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want more insights into your body's secrets? Hit that follow button!",
+      "emotion": "enthusiasm",
+      "delivery": "inviting",
+      "retention_device": "clear call to action"
+    }
+  ],
+  "full_voiceover": "Did you know a cluster of neurons controls your sleep by tracking daylight? Meet the SCN, your body's master clock, syncing with sunlight to regulate melatonin and alertness. When the sun rises, your SCN kicks in, reducing melatonin, waking you up! Studies show that disrupted light exposure can throw off your rhythm, leading to sleepless nights. Natural light is your ally. Embrace it in the morning to enhance your sleep at night. Want more insights into your body's secrets? Hit that follow button!",
+  "call_to_action": "Want more insights into your body's secrets? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:46:32.942932+00:00",
+  "source": "ai"
+}

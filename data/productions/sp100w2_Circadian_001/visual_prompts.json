@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Did you know a cluster of neurons controls your sleep by tracking daylight?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Meet the SCN, your body's master clock, syncing with sunlight to regulate melatonin and alertness.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: When the sun rises, your SCN kicks in, reducing melatonin, waking you up!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Studies show that disrupted light exposure can throw off your rhythm, leading to sleepless nights.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Natural light is your ally. Embrace it in the morning to enhance your sleep at night.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want more insights into your body's secrets? Hit that follow button!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Did you know a cluster of neurons controls your sleep by tracking daylight?",
+      "duration_sec": 3.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Meet the SCN, your body's master clock, syncing with sunlight to regulate melatonin and alertness.",
+      "duration_sec": 9.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: When the sun rises, your SCN kicks in, reducing melatonin, waking you up!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Studies show that disrupted light exposure can throw off your rhythm, leading to sleepless nights.",
+      "duration_sec": 10.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Natural light is your ally. Embrace it in the morning to enhance your sleep at night.",
+      "duration_sec": 15.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want more insights into your body's secrets? Hit that follow button!",
+      "duration_sec": 15.0
+    }
+  ]
+}

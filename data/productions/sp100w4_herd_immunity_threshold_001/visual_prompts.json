@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Did you know that more contagious diseases need higher immunity coverage?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Herd immunity thresholds aren't one-size-fits-all. They vary based on the disease.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: For example, measles needs about 95% immunity to halt outbreaks. Why so high?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: More transmissible viruses like COVID-19 require similar thresholds. The data is clear.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Understanding these thresholds helps us prepare and protect ourselves better.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Stay informed about vaccines and herd immunity. Follow for more insights.",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Did you know that more contagious diseases need higher immunity coverage?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Herd immunity thresholds aren't one-size-fits-all. They vary based on the disease.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: For example, measles needs about 95% immunity to halt outbreaks. Why so high?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: More transmissible viruses like COVID-19 require similar thresholds. The data is clear.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Understanding these thresholds helps us prepare and protect ourselves better.",
+      "duration_sec": 14.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Stay informed about vaccines and herd immunity. Follow for more insights.",
+      "duration_sec": 20.0
+    }
+  ]
+}

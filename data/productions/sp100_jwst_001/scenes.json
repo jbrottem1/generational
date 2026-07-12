@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "The James Webb Space Telescope sees a universe Hubble never could.",
+    "visual_description": "Hook visual: The James Webb Space Telescope sees a universe Hubble never could.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: The James Webb Space Telescope sees a universe Hubble never could.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: The James Webb Space Telescope sees a universe Hubble never could.",
+    "stock_footage_query": "",
+    "text_overlay": "The James Webb Space",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "While Hubble captures stunning optical images, JWST dives into infrared, revealing hidden cosmic secrets.",
+    "visual_description": "Context visual: While Hubble captures stunning optical images, JWST dives into infrared, revealing hidden cosmic secrets.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: While Hubble captures stunning optical images, JWST dives into infrared, revealing hidden cosmic secrets.",
+    "ai_video_prompt": "Cinematic motion: Context visual: While Hubble captures stunning optical images, JWST dives into infrared, revealing hidden cosmic secrets.",
+    "stock_footage_query": "",
+    "text_overlay": "While Hubble captures stunning",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Infrared light penetrates cosmic dust, unveiling stars and galaxies forming over 13 billion years ago.",
+    "visual_description": "Escalation visual: Infrared light penetrates cosmic dust, unveiling stars and galaxies forming over 13 billion years ago.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Infrared light penetrates cosmic dust, unveiling stars and galaxies forming over 13 billion years ago.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Infrared light penetrates cosmic dust, unveiling stars and galaxies forming over 13 billion years ago.",
+    "stock_footage_query": "",
+    "text_overlay": "Infrared light penetrates cosmic",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "NASA reports JWST's ability to peer further back in time surpasses anything Hubble could achieve.",
+    "visual_description": "Evidence visual: NASA reports JWST's ability to peer further back in time surpasses anything Hubble could achieve.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: NASA reports JWST's ability to peer further back in time surpasses anything Hubble could achieve.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: NASA reports JWST's ability to peer further back in time surpasses anything Hubble could achieve.",
+    "stock_footage_query": "",
+    "text_overlay": "NASA reports JWST's ability",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "wonder",
+    "length_sec": 8.0,
+    "narration": "This means we can witness the birth of galaxies, not just their present form.",
+    "visual_description": "Payoff visual: This means we can witness the birth of galaxies, not just their present form.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This means we can witness the birth of galaxies, not just their present form.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This means we can witness the birth of galaxies, not just their present form.",
+    "stock_footage_query": "",
+    "text_overlay": "This means we can",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Dive deeper into the mysteries of the universe\u2014follow for more amazing space discoveries!",
+    "visual_description": "Cta visual: Dive deeper into the mysteries of the universe\u2014follow for more amazing space discoveries!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Dive deeper into the mysteries of the universe\u2014follow for more amazing space discoveries!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Dive deeper into the mysteries of the universe\u2014follow for more amazing space discoveries!",
+    "stock_footage_query": "",
+    "text_overlay": "Dive deeper into the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

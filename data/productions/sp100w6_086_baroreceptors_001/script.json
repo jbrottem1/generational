@@ -1,0 +1,74 @@
+{
+  "title": "Baroreceptors",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A concise explanation of baroreceptors and their role in the human body.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you your body has hidden sensors that control your blood pressure?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "These are baroreceptors, tiny receptors found in your arteries. They sense changes in blood pressure.",
+      "emotion": "informative",
+      "delivery": "clear and engaging",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "When blood pressure rises, they send signals to your brain to lower it. Amazing, right?",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "But here's the twist: not all baroreceptors work the same way. Some are more sensitive than others.",
+      "emotion": "intriguing",
+      "delivery": "thoughtful",
+      "retention_device": "open question"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 42.0,
+      "segment_type": "payoff",
+      "voiceover": "This means your body has a complex way of managing pressure, which is crucial for your health.",
+      "emotion": "satisfied",
+      "delivery": "conclusive",
+      "retention_device": "summary"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 42.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more fascinating biology secrets? Hit that follow button!",
+      "emotion": "motivational",
+      "delivery": "encouraging",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "What if I told you your body has hidden sensors that control your blood pressure? These are baroreceptors, tiny receptors found in your arteries. They sense changes in blood pressure. When blood pressure rises, they send signals to your brain to lower it. Amazing, right? But here's the twist: not all baroreceptors work the same way. Some are more sensitive than others. This means your body has a complex way of managing pressure, which is crucial for your health. Want to learn more fascinating biology secrets? Hit that follow button!",
+  "call_to_action": "Want to learn more fascinating biology secrets? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:07:06.470957+00:00",
+  "source": "ai"
+}

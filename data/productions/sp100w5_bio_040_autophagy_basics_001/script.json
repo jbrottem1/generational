@@ -1,0 +1,74 @@
+{
+  "title": "Autophagy Basics",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A brief exploration of autophagy and its significance in cellular health.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about autophagy than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Autophagy is your body's way of cleaning out damaged cells, recycling components for energy.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Without it, cells accumulate junk, leading to diseases like cancer and neurodegeneration.",
+      "emotion": "concern",
+      "delivery": "serious",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show fasting and exercise boost autophagy, enhancing longevity and health.",
+      "emotion": "hope",
+      "delivery": "optimistic",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "But remember, balance is key\u2014excessive autophagy can be harmful too.",
+      "emotion": "caution",
+      "delivery": "thoughtful",
+      "retention_device": "unexpected twist"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how to optimize your health? Like and follow for more insights.",
+      "emotion": "inviting",
+      "delivery": "friendly",
+      "retention_device": "clear call-to-action"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about autophagy than social media does. Autophagy is your body's way of cleaning out damaged cells, recycling components for energy. Without it, cells accumulate junk, leading to diseases like cancer and neurodegeneration. Studies show fasting and exercise boost autophagy, enhancing longevity and health. But remember, balance is key\u2014excessive autophagy can be harmful too. Curious about how to optimize your health? Like and follow for more insights.",
+  "call_to_action": "Like and follow for more insights.",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:39:13.239109+00:00",
+  "source": "ai"
+}

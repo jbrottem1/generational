@@ -1,0 +1,74 @@
+{
+  "title": "Shield vs Stratovolcano",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the fascinating differences between shield and stratovolcanoes, driven by lava chemistry and viscosity.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 3.0,
+      "segment_type": "hook",
+      "voiceover": "Not all volcanoes erupt the same way\u2014what's the secret?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 3.0,
+      "end_time": 15.0,
+      "segment_type": "context",
+      "voiceover": "Shield volcanoes have gentle slopes, formed by low-viscosity lava that flows easily. Think Mauna Loa in Hawaii.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 15.0,
+      "end_time": 25.0,
+      "segment_type": "escalation",
+      "voiceover": "Stratovolcanoes, like Mount St. Helens, are steeper and more explosive, due to thicker, more viscous lava.",
+      "emotion": "curiosity",
+      "delivery": "urgent",
+      "retention_device": "visual contrast"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 25.0,
+      "end_time": 35.0,
+      "segment_type": "evidence",
+      "voiceover": "This viscosity affects eruption style: shield volcanoes erupt gently, while stratovolcanoes can have catastrophic explosions.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "fact reveal"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 35.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "So, shape follows lava chemistry! Understanding this can unlock the mysteries of our planet's forces.",
+      "emotion": "curiosity",
+      "delivery": "insightful",
+      "retention_device": "satisfying conclusion"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more geological wonders? Hit that follow button!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Not all volcanoes erupt the same way\u2014what's the secret? Shield volcanoes have gentle slopes, formed by low-viscosity lava that flows easily. Think Mauna Loa in Hawaii. Stratovolcanoes, like Mount St. Helens, are steeper and more explosive, due to thicker, more viscous lava. This viscosity affects eruption style: shield volcanoes erupt gently, while stratovolcanoes can have catastrophic explosions. So, shape follows lava chemistry! Understanding this can unlock the mysteries of our planet's forces. Curious about more geological wonders? Hit that follow button!",
+  "call_to_action": "Curious about more geological wonders? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:00:40.973429+00:00",
+  "source": "ai"
+}

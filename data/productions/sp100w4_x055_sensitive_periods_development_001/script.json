@@ -1,0 +1,74 @@
+{
+  "title": "Sensitive periods development",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explores the critical phases of development when certain skills or knowledge are best acquired.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about sensitive periods development.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Sensitive periods are times when our brains are primed to learn specific skills.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Imagine learning a language or musical instrument effortlessly during these phases.",
+      "emotion": "curiosity",
+      "delivery": "excited",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows these windows can vary by age but are crucial for optimal development.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "Missed windows might make learning harder, but it\u2019s not the end.",
+      "emotion": "relief",
+      "delivery": "encouraging",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Explore these phases and unlock your learning potential\u2014hit follow for more!",
+      "emotion": "curiosity",
+      "delivery": "motivational",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about sensitive periods development. Sensitive periods are times when our brains are primed to learn specific skills. Imagine learning a language or musical instrument effortlessly during these phases. Research shows these windows can vary by age but are crucial for optimal development. Missed windows might make learning harder, but it\u2019s not the end. Explore these phases and unlock your learning potential\u2014hit follow for more!",
+  "call_to_action": "Hit follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:21:39.755364+00:00",
+  "source": "ai"
+}

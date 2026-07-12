@@ -1,0 +1,74 @@
+{
+  "title": "Fusion vs Fission",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the fascinating differences between nuclear fusion and fission and their energy release.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Fission splits heavy nuclei; fusion joins light ones. But how do they both unleash energy?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "In fission, a heavy nucleus like uranium is bombarded, splitting apart and releasing energy.",
+      "emotion": "intrigue",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Fusion, on the other hand, combines light nuclei, like hydrogen, under immense pressure. Imagine stars forming!",
+      "emotion": "wonder",
+      "delivery": "dramatic",
+      "retention_device": "visualization"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "While fission powers nuclear reactors today, fusion holds the potential for limitless clean energy.",
+      "emotion": "hope",
+      "delivery": "optimistic",
+      "retention_device": "comparison"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "So, whether splitting or joining, both reactions reveal the universe's hidden power.",
+      "emotion": "excitement",
+      "delivery": "enthusiastic",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious for more mind-bending science? Hit that follow button!",
+      "emotion": "encouragement",
+      "delivery": "energetic",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "Fission splits heavy nuclei; fusion joins light ones. But how do they both unleash energy? In fission, a heavy nucleus like uranium is bombarded, splitting apart and releasing energy. Fusion, on the other hand, combines light nuclei, like hydrogen, under immense pressure. Imagine stars forming! While fission powers nuclear reactors today, fusion holds the potential for limitless clean energy. So, whether splitting or joining, both reactions reveal the universe's hidden power. Curious for more mind-bending science? Hit that follow button!",
+  "call_to_action": "Curious for more mind-bending science? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:56:03.052810+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,76 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science has a clearer story about RLHF than social media does.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: RLHF stands for Reinforcement Learning from Human Feedback.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: It\u2019s how AI learns from our preferences, improving its responses over time.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Scientists are using RLHF to enhance algorithms, making them more aligned with human values.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: But there\u2019s uncertainty too\u2014how do we measure 'human values' accurately?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Pattern Interrupt visual: Imagine an AI that understands you better than your best friend!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cta visual: Curious about the future of AI? Hit like and follow for more insights!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science has a clearer story about RLHF than social media does.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: RLHF stands for Reinforcement Learning from Human Feedback.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: It\u2019s how AI learns from our preferences, improving its responses over time.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Scientists are using RLHF to enhance algorithms, making them more aligned with human values.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: But there\u2019s uncertainty too\u2014how do we measure 'human values' accurately?",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Pattern Interrupt visual: Imagine an AI that understands you better than your best friend!",
+      "duration_sec": 7.0
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cinematic motion: Cta visual: Curious about the future of AI? Hit like and follow for more insights!",
+      "duration_sec": 15.0
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Thunder distance estimate",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Learn how to estimate the distance of thunder using a simple method.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Ever wondered how far away that thunder really is?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "When you hear thunder, you can actually estimate its distance using sound.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "For every five seconds between the flash and the bang, that\u2019s about one mile away.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "This is based on the speed of sound, roughly one mile per five seconds.",
+      "emotion": "curiosity",
+      "delivery": "clear and factual",
+      "retention_device": "fact reveal"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "So next time you hear that rumble, count and know how far it is!",
+      "emotion": "satisfaction",
+      "delivery": "uplifting",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more natural phenomena? Like and follow for more science insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Ever wondered how far away that thunder really is? When you hear thunder, you can actually estimate its distance using sound. For every five seconds between the flash and the bang, that\u2019s about one mile away. This is based on the speed of sound, roughly one mile per five seconds. So next time you hear that rumble, count and know how far it is! Curious about more natural phenomena? Like and follow for more science insights!",
+  "call_to_action": "Like and follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:46:29.176046+00:00",
+  "source": "ai"
+}

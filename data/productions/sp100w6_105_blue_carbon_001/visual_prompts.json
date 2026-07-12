@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: What if the ocean could save our planet?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Enter blue carbon: the carbon captured by coastal ecosystems like mangroves and seagrasses.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: These habitats can store up to 10 times more carbon than forests, but they\u2019re disappearing.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Studies show we\u2019ve lost 50% of our mangroves, releasing massive carbon back into the atmosphere.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Protecting blue carbon can not only combat climate change but also support biodiversity.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to learn more about blue carbon? Hit that like button and follow for more!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: What if the ocean could save our planet?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Enter blue carbon: the carbon captured by coastal ecosystems like mangroves and seagrasses.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: These habitats can store up to 10 times more carbon than forests, but they\u2019re disappearing.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Studies show we\u2019ve lost 50% of our mangroves, releasing massive carbon back into the atmosphere.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Protecting blue carbon can not only combat climate change but also support biodiversity.",
+      "duration_sec": 14.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to learn more about blue carbon? Hit that like button and follow for more!",
+      "duration_sec": 20.0
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Ever wondered why one space rock has a tail?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Comets and asteroids are remnants from the solar system's birth, but they\u2019re very different.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Comets are icy, with frozen gases. When they near the sun? They develop a glowing tail!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Asteroids, on the other hand, are rocky and metallic. No ice, no tail.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: So, next time you gaze at the sky, remember: one\u2019s a frosty wanderer, the other, a rugged remnant.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about more space mysteries? Hit that follow button!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Ever wondered why one space rock has a tail?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Comets and asteroids are remnants from the solar system's birth, but they\u2019re very different.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Comets are icy, with frozen gases. When they near the sun? They develop a glowing tail!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Asteroids, on the other hand, are rocky and metallic. No ice, no tail.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: So, next time you gaze at the sky, remember: one\u2019s a frosty wanderer, the other, a rugged remnant.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about more space mysteries? Hit that follow button!",
+      "duration_sec": 26.0
+    }
+  ]
+}

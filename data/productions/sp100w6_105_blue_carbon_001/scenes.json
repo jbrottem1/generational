@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if the ocean could save our planet?",
+    "visual_description": "Hook visual: What if the ocean could save our planet?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if the ocean could save our planet?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if the ocean could save our planet?",
+    "stock_footage_query": "",
+    "text_overlay": "What if the ocean",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Enter blue carbon: the carbon captured by coastal ecosystems like mangroves and seagrasses.",
+    "visual_description": "Context visual: Enter blue carbon: the carbon captured by coastal ecosystems like mangroves and seagrasses.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Enter blue carbon: the carbon captured by coastal ecosystems like mangroves and seagrasses.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Enter blue carbon: the carbon captured by coastal ecosystems like mangroves and seagrasses.",
+    "stock_footage_query": "",
+    "text_overlay": "Enter blue carbon: the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "These habitats can store up to 10 times more carbon than forests, but they\u2019re disappearing.",
+    "visual_description": "Escalation visual: These habitats can store up to 10 times more carbon than forests, but they\u2019re disappearing.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: These habitats can store up to 10 times more carbon than forests, but they\u2019re disappearing.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: These habitats can store up to 10 times more carbon than forests, but they\u2019re disappearing.",
+    "stock_footage_query": "",
+    "text_overlay": "These habitats can store",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "alarm",
+    "length_sec": 8.0,
+    "narration": "Studies show we\u2019ve lost 50% of our mangroves, releasing massive carbon back into the atmosphere.",
+    "visual_description": "Evidence visual: Studies show we\u2019ve lost 50% of our mangroves, releasing massive carbon back into the atmosphere.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show we\u2019ve lost 50% of our mangroves, releasing massive carbon back into the atmosphere.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show we\u2019ve lost 50% of our mangroves, releasing massive carbon back into the atmosphere.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show we\u2019ve lost",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "hopeful",
+    "length_sec": 14.0,
+    "narration": "Protecting blue carbon can not only combat climate change but also support biodiversity.",
+    "visual_description": "Payoff visual: Protecting blue carbon can not only combat climate change but also support biodiversity.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Protecting blue carbon can not only combat climate change but also support biodiversity.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Protecting blue carbon can not only combat climate change but also support biodiversity.",
+    "stock_footage_query": "",
+    "text_overlay": "Protecting blue carbon can",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "encouraging",
+    "length_sec": 20.0,
+    "narration": "Want to learn more about blue carbon? Hit that like button and follow for more!",
+    "visual_description": "Cta visual: Want to learn more about blue carbon? Hit that like button and follow for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to learn more about blue carbon? Hit that like button and follow for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to learn more about blue carbon? Hit that like button and follow for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

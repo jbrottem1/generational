@@ -1,0 +1,40 @@
+{
+  "ok": true,
+  "elapsed_sec": 307.22,
+  "scenes": 6,
+  "real_images": 6,
+  "visual_count": 6,
+  "color_bed": false,
+  "assembly_log": [
+    "scene\u2192clip image_01.png effect=quick_punch_in d=2.00s",
+    "scene\u2192clip image_02.png effect=handheld_drift d=8.00s",
+    "scene\u2192clip image_03.png effect=slow_zoom_out d=8.00s",
+    "scene\u2192clip image_04.png effect=pan_left d=8.00s",
+    "scene\u2192clip image_05.png effect=documentary_slow_zoom d=10.00s",
+    "scene\u2192clip image_06.png effect=cinematic_push_in d=24.00s",
+    "concat_exit=0 scenes=6",
+    "multi_scene\u2192mp4 scenes=6 visuals=6",
+    "ffmpeg_exit=0"
+  ],
+  "qc_passed": true,
+  "qc_score": 100,
+  "mp4": "data/productions/viz_crispr_cinematic_001/render.mp4",
+  "final_export": "/Users/jaredbrottem/Desktop/AI Start-up/videos/test run generational/2026-07-10_15-12-32_How_CRISPR_Edits_DNA.mp4",
+  "error": null,
+  "media_types": [
+    "scientific_illustration",
+    "scientific_illustration",
+    "scientific_illustration",
+    "scientific_illustration",
+    "ai_cinematic_artwork",
+    "scientific_illustration"
+  ],
+  "motions": [
+    "quick punch-in on key detail",
+    "ken burns drift right",
+    "slow zoom out reveal",
+    "pan left across subject",
+    "documentary slow zoom",
+    "slow cinematic push-in"
+  ]
+}

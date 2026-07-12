@@ -1,0 +1,74 @@
+{
+  "title": "Sepsis Early Signs Education",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "An insightful dive into the early signs of sepsis based on scientific understanding.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you that confusion could be a lifesaver?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Sepsis is a critical condition, yet its early signs often go unnoticed.",
+      "emotion": "curiosity",
+      "delivery": "inquisitive",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Fever, rapid heart rate, and confusion are key indicators. But there's more.",
+      "emotion": "curiosity",
+      "delivery": "increasing urgency",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows sepsis can progress rapidly. Recognizing symptoms early is crucial.",
+      "emotion": "concern",
+      "delivery": "serious",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "If you spot confusion, high fever, or extreme pain, act fast. It could save a life.",
+      "emotion": "urgency",
+      "delivery": "commanding",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay informed. Share this knowledge to help others recognize sepsis early.",
+      "emotion": "empowerment",
+      "delivery": "encouraging",
+      "retention_device": "none"
+    }
+  ],
+  "full_voiceover": "What if I told you that confusion could be a lifesaver? Sepsis is a critical condition, yet its early signs often go unnoticed. Fever, rapid heart rate, and confusion are key indicators. But there's more. Research shows sepsis can progress rapidly. Recognizing symptoms early is crucial. If you spot confusion, high fever, or extreme pain, act fast. It could save a life. Stay informed. Share this knowledge to help others recognize sepsis early.",
+  "call_to_action": "Stay informed. Share this knowledge to help others recognize sepsis early.",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:30:57.877089+00:00",
+  "source": "ai"
+}

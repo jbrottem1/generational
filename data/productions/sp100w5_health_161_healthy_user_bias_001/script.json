@@ -1,0 +1,84 @@
+{
+  "title": "Healthy User Bias",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the science behind healthy user bias and its implications.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about healthy user bias than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Healthy user bias suggests that people who engage in health behaviors often report better health outcomes.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "But hold on! Not all studies agree.",
+      "emotion": "surprise",
+      "delivery": "sudden and intriguing",
+      "retention_device": "intrigue"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "escalation",
+      "voiceover": "Some research shows that this bias could inflate the perceived benefits of healthy habits.",
+      "emotion": "curiosity",
+      "delivery": "thoughtful",
+      "retention_device": "escalation"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "evidence",
+      "voiceover": "In fact, individuals who are already healthy are more likely to seek out health information.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 55.0,
+      "segment_type": "payoff",
+      "voiceover": "So, while healthy user bias exists, the story is complex and requires careful interpretation.",
+      "emotion": "satisfaction",
+      "delivery": "conclusive",
+      "retention_device": "wrap-up"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 55.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more science insights? Hit that follow button!",
+      "emotion": "encouragement",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about healthy user bias than social media does. Healthy user bias suggests that people who engage in health behaviors often report better health outcomes. But hold on! Not all studies agree. Some research shows that this bias could inflate the perceived benefits of healthy habits. In fact, individuals who are already healthy are more likely to seek out health information. So, while healthy user bias exists, the story is complex and requires careful interpretation. Curious about more science insights? Hit that follow button!",
+  "call_to_action": "Curious about more science insights? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:56:00.210834+00:00",
+  "source": "ai"
+}

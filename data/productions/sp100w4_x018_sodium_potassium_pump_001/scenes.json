@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about the sodium potassium pump.",
+    "visual_description": "Hook visual: Here's what science actually says about the sodium potassium pump.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about the sodium potassium pump.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about the sodium potassium pump.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This tiny protein moves sodium and potassium ions across the cell membrane.",
+    "visual_description": "Context visual: This tiny protein moves sodium and potassium ions across the cell membrane.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This tiny protein moves sodium and potassium ions across the cell membrane.",
+    "ai_video_prompt": "Cinematic motion: Context visual: This tiny protein moves sodium and potassium ions across the cell membrane.",
+    "stock_footage_query": "",
+    "text_overlay": "This tiny protein moves",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But why is this so crucial for our cells?",
+    "visual_description": "Escalation visual: But why is this so crucial for our cells?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But why is this so crucial for our cells?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But why is this so crucial for our cells?",
+    "stock_footage_query": "",
+    "text_overlay": "But why is this",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "It helps maintain the electrochemical gradient, essential for nerve impulses and muscle contractions.",
+    "visual_description": "Evidence visual: It helps maintain the electrochemical gradient, essential for nerve impulses and muscle contractions.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: It helps maintain the electrochemical gradient, essential for nerve impulses and muscle contractions.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: It helps maintain the electrochemical gradient, essential for nerve impulses and muscle contractions.",
+    "stock_footage_query": "",
+    "text_overlay": "It helps maintain the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Without it, our bodies would struggle to function.",
+    "visual_description": "Payoff visual: Without it, our bodies would struggle to function.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Without it, our bodies would struggle to function.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Without it, our bodies would struggle to function.",
+    "stock_footage_query": "",
+    "text_overlay": "Without it, our bodies",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 11.0,
+    "narration": "And here\u2019s the kicker: recent studies suggest we barely understand all its potential!",
+    "visual_description": "Pattern Interrupt visual: And here\u2019s the kicker: recent studies suggest we barely understand all its potential!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: And here\u2019s the kicker: recent studies suggest we barely understand all its potential!",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: And here\u2019s the kicker: recent studies suggest we barely understand all its potential!",
+    "stock_footage_query": "",
+    "text_overlay": "And here\u2019s the kicker:",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "Want to dive deeper into cellular science? Hit that like button and follow for more!",
+    "visual_description": "Cta visual: Want to dive deeper into cellular science? Hit that like button and follow for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into cellular science? Hit that like button and follow for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into cellular science? Hit that like button and follow for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

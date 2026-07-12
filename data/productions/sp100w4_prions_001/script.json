@@ -1,0 +1,74 @@
+{
+  "title": "What Prions Are",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the enigmatic world of prions and their potential dangers.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Misfolded proteins that can make more misfolded proteins.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "These proteins, called prions, are rare but can lead to serious diseases.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "They cause neurodegeneration, impacting the brain\u2019s function.",
+      "emotion": "concern",
+      "delivery": "serious",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Infections can occur through contaminated food or surgical instruments.",
+      "emotion": "concern",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "But don\u2019t panic\u2014research is ongoing, and many cases are preventable.",
+      "emotion": "reassurance",
+      "delivery": "calming",
+      "retention_device": "closure"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay informed about prions and share this video to spread awareness!",
+      "emotion": "encouragement",
+      "delivery": "enthusiastic",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Misfolded proteins that can make more misfolded proteins. These proteins, called prions, are rare but can lead to serious diseases. They cause neurodegeneration, impacting the brain\u2019s function. Infections can occur through contaminated food or surgical instruments. But don\u2019t panic\u2014research is ongoing, and many cases are preventable. Stay informed about prions and share this video to spread awareness!",
+  "call_to_action": "Like and follow for more surprising science facts!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:14:36.658900+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Ever wonder why we only see one side of the Moon?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: It's not hiding. The Moon is tidally locked, spinning in perfect sync with its orbit around Earth.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Evidence visual: This means it takes the same time to rotate once as it does to orbit Earth \u2014 about 27.3 days.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Escalation visual: So, while it may seem like the Moon's playing coy, it's just how physics works!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: This tidal locking creates phases, making our Moon's appearance change over time.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to learn more cool science facts? Hit that follow button!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Ever wonder why we only see one side of the Moon?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: It's not hiding. The Moon is tidally locked, spinning in perfect sync with its orbit around Earth.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Evidence visual: This means it takes the same time to rotate once as it does to orbit Earth \u2014 about 27.3 days.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Escalation visual: So, while it may seem like the Moon's playing coy, it's just how physics works!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: This tidal locking creates phases, making our Moon's appearance change over time.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to learn more cool science facts? Hit that follow button!",
+      "duration_sec": 26.0
+    }
+  ]
+}

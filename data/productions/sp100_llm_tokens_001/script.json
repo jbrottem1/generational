@@ -1,0 +1,74 @@
+{
+  "title": "How AI Models Predict the Next Word",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore how AI predicts words and understand its limitations.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you AI doesn\u2019t think, it predicts?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Large language models, like transformers, work with tokens\u2014think of them as puzzle pieces.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "unexpected analogy"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "They use attention mechanisms to focus on relevant pieces, predicting the next token based on context.",
+      "emotion": "curiosity",
+      "delivery": "building intensity",
+      "retention_device": "visualize the process"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "But here's the catch: they can hallucinate, generating false information.",
+      "emotion": "concern",
+      "delivery": "urgent",
+      "retention_device": "shocking fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "So while they're powerful, they don\u2019t 'understand'\u2014they just predict.",
+      "emotion": "clarity",
+      "delivery": "confident",
+      "retention_device": "summarizing the lesson"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more about AI? Hit that follow button and stay curious!",
+      "emotion": "enthusiasm",
+      "delivery": "inviting",
+      "retention_device": "encouraging engagement"
+    }
+  ],
+  "full_voiceover": "What if I told you AI doesn\u2019t think, it predicts? Large language models, like transformers, work with tokens\u2014think of them as puzzle pieces. They use attention mechanisms to focus on relevant pieces, predicting the next token based on context. But here's the catch: they can hallucinate, generating false information. So while they're powerful, they don\u2019t 'understand'\u2014they just predict. Want to learn more about AI? Hit that follow button and stay curious!",
+  "call_to_action": "Hit that follow button and stay curious!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:42:41.149220+00:00",
+  "source": "ai"
+}

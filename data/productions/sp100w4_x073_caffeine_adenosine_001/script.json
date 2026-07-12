@@ -1,0 +1,74 @@
+{
+  "title": "Caffeine Adenosine Explained",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A brief exploration of how caffeine interacts with adenosine in our brains.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about caffeine and adenosine.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Caffeine blocks adenosine, a neurotransmitter that makes you feel tired. But why is that important?",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "When we drink coffee, it competes with adenosine. This boosts alertness, but what else happens?",
+      "emotion": "curiosity",
+      "delivery": "increasing intensity",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows chronic caffeine use can lead to tolerance. You might need more to achieve the same effect!",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "But here\u2019s the catch\u2014too much caffeine can disrupt sleep. Balance is key.",
+      "emotion": "curiosity",
+      "delivery": "revelatory",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 50.0,
+      "segment_type": "cta",
+      "voiceover": "Want more insights on caffeine? Like and follow for more science facts!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "none"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about caffeine and adenosine. Caffeine blocks adenosine, a neurotransmitter that makes you feel tired. But why is that important? When we drink coffee, it competes with adenosine. This boosts alertness, but what else happens? Research shows chronic caffeine use can lead to tolerance. You might need more to achieve the same effect! But here\u2019s the catch\u2014too much caffeine can disrupt sleep. Balance is key. Want more insights on caffeine? Like and follow for more science facts!",
+  "call_to_action": "Like and follow for more science facts!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:23:51.738384+00:00",
+  "source": "ai"
+}

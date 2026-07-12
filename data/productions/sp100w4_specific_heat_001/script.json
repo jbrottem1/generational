@@ -1,0 +1,74 @@
+{
+  "title": "Why Water Resists Temperature Change",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore how water's unique properties help regulate temperature in our environment and bodies.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Water absorbs heat without a big temperature jump.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Ever wondered why lakes don\u2019t freeze instantly or why your body stays warm? It\u2019s all about water's high specific heat.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "This means water can absorb a lot of heat before changing temperature, stabilizing climates and our bodies.",
+      "emotion": "curiosity",
+      "delivery": "building excitement",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "For instance, oceans regulate weather patterns. They absorb heat from the sun, releasing it slowly, keeping temperatures moderate.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "visualize the impact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 36.0,
+      "segment_type": "payoff",
+      "voiceover": "And in your body, it cools you down through perspiration, maintaining a stable temperature for life.",
+      "emotion": "curiosity",
+      "delivery": "conclusive",
+      "retention_device": "reveal the significance"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 36.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay curious! Like and subscribe for more science secrets.",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "encouragement"
+    }
+  ],
+  "full_voiceover": "Water absorbs heat without a big temperature jump. Ever wondered why lakes don\u2019t freeze instantly or why your body stays warm? It\u2019s all about water's high specific heat. This means water can absorb a lot of heat before changing temperature, stabilizing climates and our bodies. For instance, oceans regulate weather patterns. They absorb heat from the sun, releasing it slowly, keeping temperatures moderate. And in your body, it cools you down through perspiration, maintaining a stable temperature for life. Stay curious! Like and subscribe for more science secrets.",
+  "call_to_action": "Like and subscribe for more science secrets.",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:13:59.579251+00:00",
+  "source": "ai"
+}

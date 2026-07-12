@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if I told you most of your energy comes from a hidden process?",
+    "visual_description": "Hook visual: What if I told you most of your energy comes from a hidden process?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you most of your energy comes from a hidden process?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you most of your energy comes from a hidden process?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This is oxidative phosphorylation, the final step of cellular respiration where energy is produced.",
+    "visual_description": "Context visual: This is oxidative phosphorylation, the final step of cellular respiration where energy is produced.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This is oxidative phosphorylation, the final step of cellular respiration where energy is produced.",
+    "ai_video_prompt": "Cinematic motion: Context visual: This is oxidative phosphorylation, the final step of cellular respiration where energy is produced.",
+    "stock_footage_query": "",
+    "text_overlay": "This is oxidative phosphorylation,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "It happens in the mitochondria, often called the powerhouse of the cell. But how?",
+    "visual_description": "Escalation visual: It happens in the mitochondria, often called the powerhouse of the cell. But how?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: It happens in the mitochondria, often called the powerhouse of the cell. But how?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: It happens in the mitochondria, often called the powerhouse of the cell. But how?",
+    "stock_footage_query": "",
+    "text_overlay": "It happens in the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "intrigue",
+    "length_sec": 8.0,
+    "narration": "Electrons move through proteins, creating a proton gradient. This gradient powers ATP synthase, making ATP.",
+    "visual_description": "Evidence visual: Electrons move through proteins, creating a proton gradient. This gradient powers ATP synthase, making ATP.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Electrons move through proteins, creating a proton gradient. This gradient powers ATP synthase, making ATP.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Electrons move through proteins, creating a proton gradient. This gradient powers ATP synthase, making ATP.",
+    "stock_footage_query": "",
+    "text_overlay": "Electrons move through proteins,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "awe",
+    "length_sec": 12.0,
+    "narration": "ATP fuels everything from muscle contractions to brain functions. It's life energy in action.",
+    "visual_description": "Payoff visual: ATP fuels everything from muscle contractions to brain functions. It's life energy in action.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: ATP fuels everything from muscle contractions to brain functions. It's life energy in action.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: ATP fuels everything from muscle contractions to brain functions. It's life energy in action.",
+    "stock_footage_query": "",
+    "text_overlay": "ATP fuels everything from",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "inviting",
+    "length_sec": 10.0,
+    "narration": "Want to dive deeper into how your body works? Hit subscribe for more!",
+    "visual_description": "Cta visual: Want to dive deeper into how your body works? Hit subscribe for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into how your body works? Hit subscribe for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into how your body works? Hit subscribe for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 48.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

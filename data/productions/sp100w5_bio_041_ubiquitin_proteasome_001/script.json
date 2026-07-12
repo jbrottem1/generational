@@ -1,0 +1,74 @@
+{
+  "title": "Ubiquitin Proteasome",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the fascinating role of the ubiquitin proteasome system in cellular health.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about ubiquitin proteasome than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "This tiny protein is a master regulator in our cells.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "It tags unwanted proteins for destruction, ensuring balance and health.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Disruption in this system can lead to diseases like cancer and neurodegeneration.",
+      "emotion": "curiosity",
+      "delivery": "serious",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "So, next time you hear about proteins, remember the unseen hero: ubiquitin.",
+      "emotion": "curiosity",
+      "delivery": "inspiring",
+      "retention_device": "strong conclusion"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more science secrets? Hit that follow button!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about ubiquitin proteasome than social media does. This tiny protein is a master regulator in our cells. It tags unwanted proteins for destruction, ensuring balance and health. Disruption in this system can lead to diseases like cancer and neurodegeneration. So, next time you hear about proteins, remember the unseen hero: ubiquitin. Curious about more science secrets? Hit that follow button!",
+  "call_to_action": "Curious about more science secrets? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:39:10.134717+00:00",
+  "source": "ai"
+}

@@ -133,7 +133,20 @@ def render_lip_sync_performance(
     duration = len(samples) / float(sr)
     duration = max(3.0, min(float(max_duration_sec), duration))
 
-    timeline = build_mouth_timeline(audio_path, duration_sec=duration, fps=float(fps), driver=mouth_driver)
+    is_foundation = str(demo_id or "").startswith("foundation_")
+    mouth_profile = "foundation" if is_foundation else ("educator" if educator_mode else "default")
+    if mouth_driver is None:
+        from services.animation.lip_sync import AmplitudeMouthDriver
+
+        mouth_driver = AmplitudeMouthDriver.from_audio_file(audio_path, profile=mouth_profile)
+
+    timeline = build_mouth_timeline(
+        audio_path,
+        duration_sec=duration,
+        fps=float(fps),
+        driver=mouth_driver,
+        profile=mouth_profile,
+    )
     frames_meta = timeline["frames"]
     n_frames = len(frames_meta)
     spec = spec or StickFigureSpec()
@@ -152,7 +165,13 @@ def render_lip_sync_performance(
     from services.animation.fluid_motion import GestureBlender, MouthSmoother, breath_scale
 
     blender = GestureBlender(blend_sec=0.38, anticipate_sec=0.08)
-    mouth_smooth = MouthSmoother(alpha=0.55)
+    # Tighter mouth follow for foundation / educator (reversible via alpha)
+    if is_foundation:
+        mouth_smooth = MouthSmoother(alpha=0.72, close_bias=0.12)
+    elif educator_mode:
+        mouth_smooth = MouthSmoother(alpha=0.65, close_bias=0.08)
+    else:
+        mouth_smooth = MouthSmoother(alpha=0.55)
 
     with tempfile.TemporaryDirectory(prefix="perf_") as tmp:
         tmp_path = Path(tmp)
@@ -166,6 +185,8 @@ def render_lip_sync_performance(
             or str(demo_id or "").startswith("skydive_")
         ):
             scale = 0.38
+        elif educator_mode and str(demo_id or "").startswith("foundation_"):
+            scale = 0.46  # slightly larger — white studio, focus on professor
         elif educator_mode:
             scale = 0.42
         else:
@@ -201,6 +222,8 @@ def render_lip_sync_performance(
             is_professor = bool(educator_mode)
             use_pose = educator_mode
             is_windy = bool(str(demo_id or "").startswith("skydive_") and educator_mode)
+            # Gen Foundation lock: clean black stick — coat gated off unless MacroCenter opts in
+            draw_coat = False
             arm_for_draw = float(params["arm_phase"])
             if is_windy:
                 arm_for_draw = math.sin(2 * math.pi * t * 1.8) * 0.85
@@ -217,6 +240,8 @@ def render_lip_sync_performance(
                 gesture=g,
                 confident=educator_mode,
                 professor=is_professor,
+                coat=draw_coat,
+                attire="none",
                 windy=is_windy,
                 pose=pose if use_pose else None,
                 eye_drift=float(params.get("eye_drift") or 0.0),
@@ -226,8 +251,11 @@ def render_lip_sync_performance(
             canvas = Image.new("RGB", (width, height), bg_color)
 
             floor_y = int(height * 0.78)
+            is_foundation = str(demo_id or "").startswith("foundation_")
             if demo_drawer is not None:
                 demo_drawer(canvas, t, duration)
+                if is_foundation or educator_mode:
+                    floor_y = int(height * 0.82)
             elif educator_mode:
                 # Minimal grounded classroom if no demo
                 from services.animation.educator_demos import draw_classroom_floor

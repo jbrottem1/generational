@@ -1,0 +1,74 @@
+{
+  "title": "De-extinction Limits",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the scientific boundaries of de-extinction.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Ever wondered if we can bring back extinct species? Think again.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "De-extinction sounds like science fiction, but it's rooted in real biology.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But what if the DNA is too degraded? Or if the ecosystem can\u2019t support them?",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "contradiction"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Scientists have limits for de-extinction, citing genetic and environmental factors.",
+      "emotion": "curiosity",
+      "delivery": "authoritative",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Reviving species could disrupt current ecosystems, creating unforeseen challenges.",
+      "emotion": "curiosity",
+      "delivery": "serious",
+      "retention_device": "outcome reveal"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about the future of de-extinction? Follow for more insights on science!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Ever wondered if we can bring back extinct species? Think again. De-extinction sounds like science fiction, but it's rooted in real biology. But what if the DNA is too degraded? Or if the ecosystem can\u2019t support them? Scientists have limits for de-extinction, citing genetic and environmental factors. Reviving species could disrupt current ecosystems, creating unforeseen challenges. Curious about the future of de-extinction? Follow for more insights on science!",
+  "call_to_action": "Follow for more insights on science!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:05:22.901352+00:00",
+  "source": "ai"
+}

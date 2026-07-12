@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "fMRI doesn't watch thoughts \u2014 it tracks blood-oxygen changes linked to brain activity.",
+    "visual_description": "Hook visual: fMRI doesn't watch thoughts \u2014 it tracks blood-oxygen changes linked to brain activity.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: fMRI doesn't watch thoughts \u2014 it tracks blood-oxygen changes linked to brain activity.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: fMRI doesn't watch thoughts \u2014 it tracks blood-oxygen changes linked to brain activity.",
+    "stock_footage_query": "",
+    "text_overlay": "fMRI doesn't watch thoughts",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This is called the BOLD signal. But what does BOLD really mean?",
+    "visual_description": "Context visual: This is called the BOLD signal. But what does BOLD really mean?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This is called the BOLD signal. But what does BOLD really mean?",
+    "ai_video_prompt": "Cinematic motion: Context visual: This is called the BOLD signal. But what does BOLD really mean?",
+    "stock_footage_query": "",
+    "text_overlay": "This is called the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "intrigue",
+    "length_sec": 8.0,
+    "narration": "When neurons fire, they need more oxygen... and that\u2019s where the blood comes in.",
+    "visual_description": "Escalation visual: When neurons fire, they need more oxygen... and that\u2019s where the blood comes in.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: When neurons fire, they need more oxygen... and that\u2019s where the blood comes in.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: When neurons fire, they need more oxygen... and that\u2019s where the blood comes in.",
+    "stock_footage_query": "",
+    "text_overlay": "When neurons fire, they",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "caution",
+    "length_sec": 8.0,
+    "narration": "Researchers measure these changes, but interpreting them isn\u2019t straightforward.",
+    "visual_description": "Evidence visual: Researchers measure these changes, but interpreting them isn\u2019t straightforward.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Researchers measure these changes, but interpreting them isn\u2019t straightforward.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Researchers measure these changes, but interpreting them isn\u2019t straightforward.",
+    "stock_footage_query": "",
+    "text_overlay": "Researchers measure these changes,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "realization",
+    "length_sec": 10.0,
+    "narration": "That\u2019s why reverse inference can be misleading; it\u2019s not always what it seems.",
+    "visual_description": "Payoff visual: That\u2019s why reverse inference can be misleading; it\u2019s not always what it seems.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: That\u2019s why reverse inference can be misleading; it\u2019s not always what it seems.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: That\u2019s why reverse inference can be misleading; it\u2019s not always what it seems.",
+    "stock_footage_query": "",
+    "text_overlay": "That\u2019s why reverse inference",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 36.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "pattern_interrupt",
+    "emotion": "surprise",
+    "length_sec": 9.0,
+    "narration": "Imagine thinking you know what someone is feeling just by their scan... but it\u2019s far more complex.",
+    "visual_description": "Pattern Interrupt visual: Imagine thinking you know what someone is feeling just by their scan... but it\u2019s far more complex.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: Imagine thinking you know what someone is feeling just by their scan... but it\u2019s far more complex.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: Imagine thinking you know what someone is feeling just by their scan... but it\u2019s far more complex.",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine thinking you know",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 36.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 36.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "enthusiasm",
+    "length_sec": 15.0,
+    "narration": "Want to dive deeper into neuroscience? Hit that subscribe button for more!",
+    "visual_description": "Cta visual: Want to dive deeper into neuroscience? Hit that subscribe button for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into neuroscience? Hit that subscribe button for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into neuroscience? Hit that subscribe button for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

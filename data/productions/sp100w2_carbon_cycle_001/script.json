@@ -1,0 +1,74 @@
+{
+  "title": "The Carbon Cycle in 60 Seconds",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore how carbon flows through Earth's systems and the impact of human emissions.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you carbon is a shape-shifter?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Carbon moves between the air, oceans, rocks, and life, creating a delicate balance.",
+      "emotion": "curiosity",
+      "delivery": "informative and engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But what happens when we overload one of these reservoirs with CO2?",
+      "emotion": "curiosity",
+      "delivery": "intriguing and urgent",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Human fossil fuel emissions are pushing carbon into the atmosphere faster than it can cycle back.",
+      "emotion": "curiosity",
+      "delivery": "fact-driven and compelling",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "This overload disrupts ecosystems, weather patterns, and our future.",
+      "emotion": "curiosity",
+      "delivery": "serious and direct",
+      "retention_device": "emotional appeal"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay curious and learn how you can help balance the carbon cycle. Follow for more!",
+      "emotion": "curiosity",
+      "delivery": "inviting and motivating",
+      "retention_device": "clear action"
+    }
+  ],
+  "full_voiceover": "What if I told you carbon is a shape-shifter? Carbon moves between the air, oceans, rocks, and life, creating a delicate balance. But what happens when we overload one of these reservoirs with CO2? Human fossil fuel emissions are pushing carbon into the atmosphere faster than it can cycle back. This overload disrupts ecosystems, weather patterns, and our future. Stay curious and learn how you can help balance the carbon cycle. Follow for more!",
+  "call_to_action": "Follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:48:33.401639+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if I told you nerves communicate through a traveling spike of electricity?",
+    "visual_description": "Hook visual: What if I told you nerves communicate through a traveling spike of electricity?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you nerves communicate through a traveling spike of electricity?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you nerves communicate through a traveling spike of electricity?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This electric spike, known as the action potential, is essential for sending signals in your body.",
+    "visual_description": "Context visual: This electric spike, known as the action potential, is essential for sending signals in your body.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This electric spike, known as the action potential, is essential for sending signals in your body.",
+    "ai_video_prompt": "Cinematic motion: Context visual: This electric spike, known as the action potential, is essential for sending signals in your body.",
+    "stock_footage_query": "",
+    "text_overlay": "This electric spike, known",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Imagine billions of these spikes racing down neurons, orchestrating everything from a twitch to a thought.",
+    "visual_description": "Escalation visual: Imagine billions of these spikes racing down neurons, orchestrating everything from a twitch to a thought.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Imagine billions of these spikes racing down neurons, orchestrating everything from a twitch to a thought.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Imagine billions of these spikes racing down neurons, orchestrating everything from a twitch to a thought.",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine billions of these",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "When a neuron fires, it opens ion channels, allowing sodium to rush in, creating that spike. Then, potassium flows out to reset the neuron.",
+    "visual_description": "Evidence visual: When a neuron fires, it opens ion channels, allowing sodium to rush in, creating that spike. Then, potassium flows out t",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: When a neuron fires, it opens ion channels, allowing sodium to rush in, creating that spike. Then, potassium flows out t",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: When a neuron fires, it opens ion channels, allowing sodium to rush in, creating that spike. Then, potassium flows out t",
+    "stock_footage_query": "",
+    "text_overlay": "When a neuron fires,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "This rapid ion exchange travels down the neuron at lightning speed, relaying vital information throughout your body \u2014 all without you even knowing it.",
+    "visual_description": "Payoff visual: This rapid ion exchange travels down the neuron at lightning speed, relaying vital information throughout your body \u2014 al",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This rapid ion exchange travels down the neuron at lightning speed, relaying vital information throughout your body \u2014 al",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This rapid ion exchange travels down the neuron at lightning speed, relaying vital information throughout your body \u2014 al",
+    "stock_footage_query": "",
+    "text_overlay": "This rapid ion exchange",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Curious about more brain mysteries? Hit that follow for more science secrets!",
+    "visual_description": "Cta visual: Curious about more brain mysteries? Hit that follow for more science secrets!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more brain mysteries? Hit that follow for more science secrets!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more brain mysteries? Hit that follow for more science secrets!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more brain",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]
