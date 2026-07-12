@@ -21,9 +21,15 @@ def _image_asset_entry(image_id: str) -> dict[str, Any]:
     entry = get_image(image_id)
     if entry is None:
         return {"image_id": image_id, "missing": True}
+    root = project_root()
+    path = entry.path
+    try:
+        path_str = str(path.relative_to(root))
+    except ValueError:
+        path_str = str(path)
     return {
         "image_id": image_id,
-        "path": str(entry.path),
+        "path": path_str,
         "license": entry.license,
         "source_url": entry.source_url,
         "credit": entry.credit,
@@ -104,8 +110,8 @@ def build_render_package(
         },
         "assets": {
             "images": [_image_asset_entry(i) for i in ids],
-            "catalog_root": str(project_root() / "data" / "reality"),
-            "cache_root": str(project_root() / "data" / "local_cache"),
+            "catalog_root": "data/reality",
+            "cache_root": "data/local_cache",
             "asset_registry_ids": ids,
         },
         "narration": narration

@@ -1,15 +1,17 @@
 {
   "schema_version": 3,
-  "os_version": "2.5",
+  "os_version": "2.6",
   "layer": "pre_production",
   "project_id": "turtle_202",
   "job_id": "turtle_202",
   "title": "The Origin of Turtles",
+  "episode": "202",
   "status": "awaiting_local_render",
   "message": "Production package prepared. Awaiting local render.",
   "execution_mode": "cloud",
-  "prepared_at": "2026-07-12T20:15:23.414959+00:00",
+  "prepared_at": "2026-07-12T20:58:52.085494+00:00",
   "domain": "Biology",
+  "secondary_categories": [],
   "script": {
     "hook": "Have you ever wondered where turtles came from?",
     "takeaway": "The turtle's shell evolved step by step over millions of years.",
@@ -75,7 +77,7 @@
     "images": [
       {
         "image_id": "green_sea_turtle",
-        "path": "/workspace/data/reality/images/green_sea_turtle.jpg",
+        "path": "data/reality/images/green_sea_turtle.jpg",
         "license": "CC-BY-SA",
         "source_url": "https://commons.wikimedia.org/wiki/File:Chelonia_mydas_is_going_for_the_air_edit.jpg",
         "credit": "Wikimedia Commons",
@@ -83,15 +85,15 @@
       },
       {
         "image_id": "turtle_fossil",
-        "path": "/workspace/data/reality/images/turtle_fossil.jpg",
+        "path": "data/reality/images/turtle_fossil.jpg",
         "license": "CC-BY-SA",
         "source_url": "https://commons.wikimedia.org/wiki/File:Eunotosaurus_africanus.jpg",
         "credit": "Wikimedia Commons",
         "organism": "Eunotosaurus (fossil reptile)"
       }
     ],
-    "catalog_root": "/workspace/data/reality",
-    "cache_root": "/workspace/data/local_cache",
+    "catalog_root": "data/reality",
+    "cache_root": "data/local_cache",
     "asset_registry_ids": [
       "green_sea_turtle",
       "turtle_fossil"
@@ -114,11 +116,23 @@
   },
   "transitions": [],
   "export": {
-    "filename": "Biology_202_Origin_of_Turtles.mp4",
+    "filename": "Biology_001_202_Origin_of_Turtles.mp4",
+    "library_filename": "Biology_001_202_Origin_of_Turtles.mp4",
     "domain_folder": "Biology",
-    "directory": "/home/ubuntu/Desktop/AI Start-up/Generational/Videos/Biology",
-    "directory_expanded": "/home/ubuntu/Desktop/AI Start-up/Generational/Videos/Biology",
-    "legacy_directory": "/home/ubuntu/Desktop/AI Start-up/videos/Test run 2 generational",
+    "secondary_categories": [],
+    "directory": "/home/ubuntu/Desktop/AI Start-Up/Videos/Biology",
+    "directory_expanded": "/home/ubuntu/Desktop/AI Start-Up/Videos/Biology",
+    "library_root": "/home/ubuntu/Desktop/AI Start-Up/Videos",
+    "legacy_directory": "/home/ubuntu/Desktop/AI Start-Up/videos/Test run 2 generational",
+    "companion_files": [
+      "script.md",
+      "sources.json",
+      "captions.srt",
+      "thumbnail.png",
+      "metadata.json",
+      "production_report.md",
+      "render_manifest.json"
+    ],
     "verify": [
       "file_exists",
       "size_gt_zero",
@@ -127,6 +141,9 @@
       "playable",
       "duration",
       "resolution",
+      "correct_category_folder",
+      "companion_files",
+      "library_index_updated",
       "manifest_updated",
       "production_db_updated"
     ]
