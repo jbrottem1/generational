@@ -31,9 +31,10 @@ from services.education.director_review import review_lesson
 from services.media_production.ffmpeg_assembler import find_ffmpeg
 from services.provider_runtime.config import has_credential
 from services.reality.qc import collect_demo_image_ids, evaluate_reality_export
+from services.reality.smoke_narration import build_smoke_narration
+from services.generational_os.export import export_verified_production
 from services.media_production.execution_mode import get_execution_context
 from services.media_production.local_first import gate_production
-from services.media_production.verified_export import export_verified_mp4, reveal_export_in_finder
 
 REPORT_DIR = ROOT / "data" / "productions" / "_validation" / "foundation_v2"
 EXPORT_DIR = Path.home() / "Desktop" / "AI Start-up" / "videos" / "Test run 2 generational"
@@ -219,8 +220,12 @@ def produce(*, smoke: bool = False, allow_cloud_smoke: bool = False) -> dict:
         beats=ep["beats"],
         sources=SOURCES,
         render={"fps": 24, "smoke": smoke},
-        job_output=job_path,
+        job_output=ROOT / "RENDER_PACKAGE.json",
         allow_cloud_smoke=allow_cloud_smoke,
+        domain="Biology",
+        subject=ep["title"],
+        series="Foundation V2 Biology",
+        episode=ep["id"],
     )
     if not gate.get("proceed"):
         return {
@@ -264,17 +269,6 @@ def produce(*, smoke: bool = False, allow_cloud_smoke: bool = False) -> dict:
         spec=spec,
     )
     qc = result.get("qc") or {}
-    export_result = export_verified_mp4(episode, filename=ep["filename"])
-    if not export_result.get("ok"):
-        return {
-            "ok": False,
-            "status": export_result.get("status"),
-            "error": export_result.get("error") or "export verification failed",
-            "verification": export_result.get("verification"),
-        }
-    export_path = Path(str(export_result["export_path"]))
-    verify = export_result.get("verification") or {}
-    reveal_export_in_finder(export_path)
 
     edu = review_lesson(
         hook=ep["hook"],
@@ -285,6 +279,8 @@ def produce(*, smoke: bool = False, allow_cloud_smoke: bool = False) -> dict:
         has_visual_demo=True,
         sources=SOURCES,
     )
+    image_ids = collect_demo_image_ids(ep["demo_id"])
+    reality_qc = evaluate_reality_export(image_ids=image_ids, demo_id=ep["demo_id"])
     production = {
         "title": ep["title"],
         "demo_id": ep["demo_id"],
@@ -294,24 +290,42 @@ def produce(*, smoke: bool = False, allow_cloud_smoke: bool = False) -> dict:
         "duration_sec": result.get("duration_sec"),
         "character_id": spec.character_id,
         "qc": qc,
-        "export_path": str(export_path),
-        "path": str(export_path),
         "educational_review": edu.to_dict(),
-        "framework": "foundation_visual_system_v2 + project_reality",
+        "framework": "generational_os_v2.5 + foundation_v2 + project_reality",
     }
-    gate = evaluate_foundation_export(
+    foundation_gate = evaluate_foundation_export(
         production,
         script=production["script"],
         educational=production["educational_review"],
     )
-    image_ids = collect_demo_image_ids(ep["demo_id"])
-    reality_qc = evaluate_reality_export(image_ids=image_ids, demo_id=ep["demo_id"])
     scores = score_foundation_v2(
         production=production,
         duration_sec=result.get("duration_sec"),
         qc=qc,
         image_ids=image_ids,
     )
+
+    export_result = export_verified_production(
+        episode,
+        project_id=ep["id"],
+        filename=ep["filename"],
+        domain="Biology",
+        subject=ep["title"],
+        demo_id=ep["demo_id"],
+        qc_score=scores.get("overall"),
+        render_duration_sec=result.get("duration_sec"),
+    )
+    if not export_result.get("ok"):
+        return {
+            "ok": False,
+            "status": export_result.get("status"),
+            "error": export_result.get("error") or "export verification failed",
+            "verification": export_result.get("verification"),
+        }
+    export_path = Path(str(export_result["export_path"]))
+    verify = export_result.get("verification") or {}
+    production["export_path"] = str(export_path)
+    production["path"] = str(export_path)
     ok = (
         bool(result.get("ok"))
         and bool(qc.get("passed"))
@@ -324,12 +338,14 @@ def produce(*, smoke: bool = False, allow_cloud_smoke: bool = False) -> dict:
         "status": "export_verified" if ok else "verification_failed",
         "message": "Video exported and verified on local Desktop." if ok else "Render completed but verification failed.",
         "execution_mode": ctx.mode.value,
+        "os_version": "2.5",
+        "domain_folder": export_result.get("domain_folder"),
         "export_path": str(export_path),
         "duration_sec": result.get("duration_sec"),
         "render_sec": round(time.time() - t0, 2),
         "qc": qc,
         "verify": verify,
-        "foundation_gate": gate.to_dict(),
+        "foundation_gate": foundation_gate.to_dict(),
         "reality_qc": reality_qc.to_dict(),
         "scores": scores,
         "recommendations": RECOMMENDATIONS,

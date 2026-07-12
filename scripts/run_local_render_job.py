@@ -24,8 +24,7 @@ from services.animation.stick_figure import StickFigureSpec
 from services.education.director_review import review_lesson
 from services.media_production.execution_mode import get_execution_context
 from services.media_production.local_cache import copy_catalog_image_to_cache
-from services.media_production.local_render_job import load_render_job
-from services.media_production.verified_export import export_verified_mp4, reveal_export_in_finder
+from services.generational_os.export import export_verified_production
 from services.media_production.ffmpeg_assembler import find_ffmpeg
 from services.provider_runtime.config import has_credential
 from services.reality.qc import collect_demo_image_ids, evaluate_reality_export
@@ -41,6 +40,13 @@ def _warm_image_cache(image_ids: list[str]) -> list[str]:
     return warmed
 
 
+def _load_job(path: Path) -> dict:
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if int(data.get("schema_version") or 0) >= 3:
+        return data
+    return load_render_job(path)
+
+
 def execute_job(job_path: Path, *, smoke: bool = False) -> dict:
     ctx = get_execution_context()
     if not ctx.can_render_media:
@@ -51,14 +57,15 @@ def execute_job(job_path: Path, *, smoke: bool = False) -> dict:
             "mode": ctx.mode.value,
         }
 
-    job = load_render_job(job_path)
+    job = _load_job(job_path)
+    project_id = str(job.get("project_id") or job.get("job_id") or "job")
     script = job.get("script") or {}
     beats = script.get("beats") or job.get("timing", {}).get("beats") or []
     demo_id = (job.get("animations") or {}).get("demo_id") or ""
     export = job.get("export") or {}
     filename = str(export.get("filename") or "output.mp4")
 
-    work = ROOT / "data" / "productions" / "_validation" / "local_jobs" / str(job.get("job_id") or "job")
+    work = ROOT / "data" / "productions" / "_validation" / "local_jobs" / project_id
     work.mkdir(parents=True, exist_ok=True)
     voice = work / "narration.mp3"
     episode = work / "episode.mp4"
@@ -104,12 +111,19 @@ def execute_job(job_path: Path, *, smoke: bool = False) -> dict:
     if not result.get("ok") or not episode.is_file():
         return {"ok": False, "error": "render failed", "result": result}
 
-    export_result = export_verified_mp4(episode, filename=filename)
+    export_result = export_verified_production(
+        episode,
+        project_id=project_id,
+        filename=filename,
+        domain=str(job.get("domain") or export.get("domain_folder") or ""),
+        subject=str(job.get("title") or ""),
+        demo_id=demo_id,
+        render_duration_sec=result.get("duration_sec"),
+    )
     if not export_result.get("ok"):
         return {"ok": False, **export_result, "render": result}
 
     export_path = Path(str(export_result["export_path"]))
-    reveal_export_in_finder(export_path)
 
     edu = review_lesson(
         hook=str(script.get("hook") or ""),
@@ -141,6 +155,8 @@ def execute_job(job_path: Path, *, smoke: bool = False) -> dict:
         "foundation_gate": gate.to_dict(),
         "reality_qc": reality_qc.to_dict(),
         "mode": ctx.mode.value,
+        "os_version": job.get("os_version") or "2.5",
+        "domain_folder": export_result.get("domain_folder"),
     }
 
 

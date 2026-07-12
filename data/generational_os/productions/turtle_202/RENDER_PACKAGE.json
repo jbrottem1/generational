@@ -1,15 +1,15 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
+  "os_version": "2.5",
+  "layer": "pre_production",
+  "project_id": "turtle_202",
   "job_id": "turtle_202",
   "title": "The Origin of Turtles",
   "status": "awaiting_local_render",
   "message": "Production package prepared. Awaiting local render.",
   "execution_mode": "cloud",
-  "prepared_at": "2026-07-12T20:15:23.416471+00:00",
-  "prepared_on": {
-    "platform": "Linux",
-    "home": "/home/ubuntu"
-  },
+  "prepared_at": "2026-07-12T20:15:23.414959+00:00",
+  "domain": "Biology",
   "script": {
     "hook": "Have you ever wondered where turtles came from?",
     "takeaway": "The turtle's shell evolved step by step over millions of years.",
@@ -79,8 +79,7 @@
         "license": "CC-BY-SA",
         "source_url": "https://commons.wikimedia.org/wiki/File:Chelonia_mydas_is_going_for_the_air_edit.jpg",
         "credit": "Wikimedia Commons",
-        "organism": "Green sea turtle",
-        "fetch_url": "https://commons.wikimedia.org/wiki/Special:FilePath/green_sea_turtle.jpg?width=900"
+        "organism": "Green sea turtle"
       },
       {
         "image_id": "turtle_fossil",
@@ -88,12 +87,15 @@
         "license": "CC-BY-SA",
         "source_url": "https://commons.wikimedia.org/wiki/File:Eunotosaurus_africanus.jpg",
         "credit": "Wikimedia Commons",
-        "organism": "Eunotosaurus (fossil reptile)",
-        "fetch_url": "https://commons.wikimedia.org/wiki/Special:FilePath/turtle_fossil.jpg?width=900"
+        "organism": "Eunotosaurus (fossil reptile)"
       }
     ],
     "catalog_root": "/workspace/data/reality",
-    "cache_root": "/workspace/data/local_cache"
+    "cache_root": "/workspace/data/local_cache",
+    "asset_registry_ids": [
+      "green_sea_turtle",
+      "turtle_fossil"
+    ]
   },
   "narration": {
     "provider": "openai",
@@ -107,11 +109,16 @@
     "educator_mode": true,
     "renderer": "services.animation.performer.render_lip_sync_performance"
   },
+  "choreography": {
+    "plan_id": "foundation_v2_turtle_202"
+  },
   "transitions": [],
   "export": {
     "filename": "Biology_202_Origin_of_Turtles.mp4",
-    "directory": "/home/ubuntu/Desktop/AI Start-up/videos/Test run 2 generational",
-    "directory_expanded": "/home/ubuntu/Desktop/AI Start-up/videos/Test run 2 generational",
+    "domain_folder": "Biology",
+    "directory": "/home/ubuntu/Desktop/AI Start-up/Generational/Videos/Biology",
+    "directory_expanded": "/home/ubuntu/Desktop/AI Start-up/Generational/Videos/Biology",
+    "legacy_directory": "/home/ubuntu/Desktop/AI Start-up/videos/Test run 2 generational",
     "verify": [
       "file_exists",
       "size_gt_zero",
@@ -119,8 +126,15 @@
       "audio_stream",
       "playable",
       "duration",
-      "resolution"
+      "resolution",
+      "manifest_updated",
+      "production_db_updated"
     ]
   },
-  "local_command": "python3 scripts/run_local_render_job.py --job LOCAL_RENDER_JOB.json"
+  "local_command": "python3 scripts/run_render_package.py --package RENDER_PACKAGE.json",
+  "handoff": {
+    "from_layer": "pre_production",
+    "to_layer": "local_production",
+    "owner": "Local Workstation"
+  }
 }

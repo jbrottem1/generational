@@ -62,7 +62,17 @@ if not gate.get("proceed"):
 
 ---
 
-## Canonical export path
+## Export standard (V2.5 update)
+
+**Primary path (classified):**
+
+```
+~/Desktop/AI Start-up/Generational/Videos/{Domain}/{filename}.mp4
+```
+
+See [GENERATIONAL_OS_V2_5.md](./GENERATIONAL_OS_V2_5.md) for domain folders and manifest requirements.
+
+**Legacy path** (migration in progress):
 
 ```
 ~/Desktop/AI Start-up/videos/Test run 2 generational/

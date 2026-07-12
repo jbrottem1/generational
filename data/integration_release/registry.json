@@ -35,6 +35,12 @@
       "target": "cloud plan-only; local verified Desktop export"
     },
     {
+      "id": "GATE-OS",
+      "name": "Generational OS V2.5 pipeline",
+      "path": "services/generational_os/orchestrator.py",
+      "target": "brief + render package + manifest + classified export"
+    },
+    {
       "id": "GATE-ARCH",
       "name": "Architecture consistency",
       "path": "tests/test_architecture.py",

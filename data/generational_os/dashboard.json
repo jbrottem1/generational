@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "os_version": "2.5",
+  "generated_at": "2026-07-12T20:15:38.556914+00:00",
+  "execution_context": {
+    "mode": "cloud",
+    "platform": "Linux",
+    "home": "/home/ubuntu",
+    "canonical_export_dir": "/home/ubuntu/Desktop/AI Start-up/videos/Test run 2 generational",
+    "can_render_media": false,
+    "can_claim_export_success": false,
+    "signals": {
+      "CURSOR_CLOUD_AGENT": false,
+      "CI": false,
+      "GITHUB_ACTIONS": false,
+      "GENERATIONAL_EXECUTION_MODE": null,
+      "GENERATIONAL_FORCE_LOCAL": false,
+      "desktop_startup_exists": false
+    }
+  },
+  "queues": {
+    "active_productions": 0,
+    "research_queue": [],
+    "script_queue": [],
+    "render_queue": [],
+    "local_render_status": {
+      "awaiting": 0,
+      "verified": 0,
+      "failed": 0
+    },
+    "qc_status": [],
+    "ready_for_review": [],
+    "ready_to_publish": [],
+    "published": [],
+    "failed_productions": [],
+    "experimental": []
+  },
+  "metrics": {
+    "average_qc_score": null,
+    "average_render_sec": null,
+    "production_success_rate": 0.0,
+    "total_productions": 0
+  },
+  "system_health": {
+    "asset_cache": {
+      "cached_assets": 0,
+      "registry_libraries": {}
+    },
+    "execution_mode": "cloud",
+    "can_render_locally": false
+  },
+  "improvements": [
+    "Unify legacy export paths into Generational/Videos/{Domain} \u2014 migrate Test run 2 generational archive.",
+    "Add phoneme lip-sync driver to reduce re-render cycles on local workstation.",
+    "Batch Intelligence layer: SEO + scientific verification in single PRODUCTION_BRIEF pass.",
+    "Expand asset_registry seed entries for characters, motion templates, and whiteboard strokes.",
+    "Automate post-production READY_TO_PUBLISH packaging after verified export (metadata + captions)."
+  ],
+  "productions": []
+}
