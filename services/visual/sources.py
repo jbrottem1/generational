@@ -126,6 +126,22 @@ class AvatarSource(AssetSourceAdapter):
         return request
 
 
+class AtlasImageSource(AssetSourceAdapter):
+    """Knowledge Atlas — licensed authentic visual evidence."""
+
+    key = "atlas_image"
+    label = "Knowledge Atlas Evidence"
+    asset_kind = "image"
+
+    def build_request(self, scene: dict) -> dict:
+        request = self._base_request(scene)
+        request["asset_ids"] = scene.get("atlas_asset_ids") or scene.get("reality_image_ids") or []
+        request["concepts"] = scene.get("concepts") or []
+        request["layout"] = scene.get("atlas_layout", "evidence_tray")
+        request["license"] = "atlas_curated"
+        return request
+
+
 _SOURCES: "dict[str, AssetSourceAdapter]" = {}
 
 
@@ -150,6 +166,7 @@ for _adapter_class in (
     UserAssetSource,
     BrandAssetSource,
     AvatarSource,
+    AtlasImageSource,
 ):
     if _adapter_class.key not in _SOURCES:
         register_source(_adapter_class())

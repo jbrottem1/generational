@@ -153,6 +153,34 @@
       "role": "reality_image_doctrine"
     },
     {
+      "id": "DOC-VISUAL-INTEL",
+      "name": "PROJECT_VISUAL_INTELLIGENCE.md",
+      "path": "PROJECT_VISUAL_INTELLIGENCE.md",
+      "owner": 0,
+      "role": "knowledge_atlas_doctrine"
+    },
+    {
+      "id": "KA-CATALOG",
+      "name": "catalog.json",
+      "path": "data/knowledge_atlas/catalog.json",
+      "owner": 0,
+      "role": "visual_evidence_registry"
+    },
+    {
+      "id": "KA-INDEX",
+      "name": "INDEX.md",
+      "path": "data/knowledge_atlas/INDEX.md",
+      "owner": 0,
+      "role": "atlas_index"
+    },
+    {
+      "id": "SVC-KA",
+      "name": "services/knowledge_atlas",
+      "path": "services/knowledge_atlas/",
+      "owner": 0,
+      "role": "atlas_search_api"
+    },
+    {
       "id": "DOC-METHOD",
       "name": "GENERATIONAL_METHOD.md",
       "path": "GENERATIONAL_METHOD.md",

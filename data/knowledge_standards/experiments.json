@@ -179,6 +179,38 @@
         "data/character_systems/AGENT26_FOUNDING_REPORT.md",
         "data/character_systems/EXECUTIVE_ACCEPTANCE.md"
       ]
+    },
+    {
+      "id": "EXP-KNOWLEDGE-ATLAS",
+      "title": "Generational Knowledge Atlas",
+      "objective": "Permanent visual evidence library — search, plan, ingest, and reuse authentic educational visuals instead of defaulting to generated graphics.",
+      "method": "Ship services/knowledge_atlas (catalog, search, planner, ingest, QC, feedback); sync Project Reality seed assets; wire Batesian production script; register atlas_image visual source adapter.",
+      "variables": [
+        "concept_search",
+        "fingerprint_dedup",
+        "quality_score",
+        "panel_planning",
+        "reuse_history"
+      ],
+      "outcome": "Atlas live with 6 seed assets across biology/evolution/ecology collections; plan_visual_evidence integrated into Batesian producer; tests pass.",
+      "metrics": {
+        "seed_assets": 6,
+        "collections": 3,
+        "search_works": true,
+        "planner_panels_batesian_101": 2
+      },
+      "decision": "keep",
+      "lessons": [
+        "Atlas extends Reality — do not fork catalogs; sync and enrich metadata.",
+        "Every lesson should call plan_visual_evidence before render and record_lesson_visuals after."
+      ],
+      "date": "2026-07-12",
+      "evidence": [
+        "PROJECT_VISUAL_INTELLIGENCE.md",
+        "data/knowledge_atlas/catalog.json",
+        "services/knowledge_atlas/",
+        "tests/test_knowledge_atlas.py"
+      ]
     }
   ]
 }

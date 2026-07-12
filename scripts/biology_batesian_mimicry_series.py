@@ -29,6 +29,10 @@ from services.media_production.ffmpeg_assembler import find_ffmpeg
 from services.provider_runtime.config import has_credential
 from services.reality.qc import collect_demo_image_ids, evaluate_reality_export
 from services.reality.smoke_narration import build_smoke_narration
+from services.knowledge_atlas.feedback import record_lesson_visuals
+from services.knowledge_atlas.planner import plan_visual_evidence
+from services.knowledge_atlas.qc import validate_asset as validate_atlas_asset
+from services.knowledge_atlas.catalog import get_asset
 
 REPORT_DIR = ROOT / "data" / "productions" / "_validation" / "biology_batesian"
 EXPORT_DIR = Path.home() / "Desktop" / "AI Start-up" / "videos" / "Test run 2 generational"
@@ -235,6 +239,21 @@ def produce(ep: dict, *, smoke: bool = False) -> dict:
         if first.startswith(banned) or banned in first[:40]:
             return {"ok": False, "error": f"curiosity_framework_violation:{banned}", "id": ep["id"]}
 
+    # Knowledge Atlas — plan visual evidence before render
+    atlas_plan = plan_visual_evidence(
+        main_concept=ep["main_concept"],
+        beats=ep["beats"],
+        demo_id=ep["demo_id"],
+        domain="biology",
+    )
+    for aid in atlas_plan.get("recommended_asset_ids") or []:
+        asset = get_asset(aid)
+        if asset is None:
+            continue
+        aq = validate_atlas_asset(asset)
+        if not aq.passed:
+            return {"ok": False, "error": f"atlas_qc_failed:{aid}:{aq.hard_fails}", "id": ep["id"]}
+
     t0 = time.time()
     if smoke:
         build_smoke_narration(ep["beats"], voice, ffmpeg=ffmpeg)
@@ -299,8 +318,13 @@ def produce(ep: dict, *, smoke: bool = False) -> dict:
     )
     image_ids = collect_demo_image_ids(ep["demo_id"])
     reality_qc = evaluate_reality_export(image_ids=image_ids, demo_id=ep["demo_id"])
+    record_lesson_visuals(
+        lesson_id=ep["id"],
+        asset_ids=atlas_plan.get("recommended_asset_ids") or image_ids,
+        effective=bool(result.get("ok")),
+        notes=f"Reality series export Q={gate.quality.overall if gate.quality else None}",
+    )
     hard = gate.hard_fails or []
-    reality_hard = reality_qc.hard_fails or []
     ok = (
         bool(result.get("ok"))
         and bool(qc.get("passed"))
@@ -321,6 +345,7 @@ def produce(ep: dict, *, smoke: bool = False) -> dict:
         "verify": verify,
         "foundation_gate": gate.to_dict(),
         "reality_qc": reality_qc.to_dict(),
+        "atlas_plan": atlas_plan,
         "images_used": image_ids,
         "educational": edu.to_dict(),
         "quality_overall": gate.quality.overall if gate.quality else None,

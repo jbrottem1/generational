@@ -47,7 +47,7 @@ Companions: `EXECUTIVE_OS.md` · `AGENT_REGISTRY.md` · `CREATIVE_STUDIO.md` · 
 | Motion Graphics / VFX language | **16** + **17** | Partial | Post LIVE; animation stub |
 | Brand Consistency Gate | **18** + **17** | To build | QC extension |
 | Cinematic Storytelling | **18** + **4** | LIVE | Visual Story Plans shipped |
-| Scientific Visualization | **4** + **14** | LIVE | Prompts + asset gen |
+| Scientific Visualization | **4** + **14** + **Atlas** | LIVE | Prompts + asset gen + Knowledge Atlas evidence |
 | Real-world media blend | **14** + **17** | **LIVE** (Foundation Shorts) | Licensed/PD overlays via `services/reality/` |
 
 ### Specialist roster (Creative Department)

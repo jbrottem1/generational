@@ -204,6 +204,22 @@ Append-only. Newest first. Every entry must name the source sprint/production.
 
 ---
 
+## 2026-07-12 — Generational Knowledge Atlas (Visual Intelligence)
+
+**Source:** Project Visual Intelligence · permanent visual library
+
+### What worked
+- **Knowledge Atlas** (`services/knowledge_atlas/`) — search, plan, ingest, QC, post-lesson feedback.
+- Project Reality assets synced as seed collection (6 biology/evolution photographs).
+- `plan_visual_evidence()` runs before Batesian renders; `record_lesson_visuals()` grows reuse history.
+- Visual Intelligence `atlas_image` source adapter registered.
+
+### Standard
+- Before lessons: ask *what visual evidence teaches best*; prefer Atlas over generated graphics when authentic assets exist.
+- After lessons: record effectiveness; avoid duplicate fingerprints on ingest.
+
+---
+
 ## Standing anti-patterns (do not repeat)
 
 1. Motion for motion’s sake  
