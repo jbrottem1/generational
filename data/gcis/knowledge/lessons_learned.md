@@ -188,6 +188,22 @@ Append-only. Newest first. Every entry must name the source sprint/production.
 
 ---
 
+## 2026-07-12 — Project Reality (Real Image Integration)
+
+**Source:** Biology Department · Batesian Mimicry re-export with licensed photos
+
+### What worked
+- **Curated catalog** (`data/reality/catalog.json`) — Wikimedia CC-BY / CC-BY-SA hoverfly, wasp, coral/kingsnake, monarch/viceroy.
+- **Evidence panels** in board tray (`services/reality/panel.py`) — split-compare beside Professor Gen.
+- **Reality QC** — license + resolution gates before ship.
+- Professor **points at photos** via updated choreography beats (`show_hoverfly`, `compare_wasp`, `show_snakes`).
+
+### Standard
+- When a real photo improves understanding, use PROJECT REALITY — never unlicensed or watermarked assets.
+- Keep Foundation white studio; photos live in the evidence panel, not full-screen scenery.
+
+---
+
 ## Standing anti-patterns (do not repeat)
 
 1. Motion for motion’s sake  

@@ -18,26 +18,27 @@ These are **must-follow** unless Agent 0 issues an explicit exception.
 6. **One concept per Short** — Generational Method; one question; no multi-topic cram.
 7. **Show before name** — Demo / board reveal precedes the jargon label when introducing terms.
 8. **Curiosity Framework opening** — Start with an unanswered curiosity question (0–3s). **Forbidden:** "Welcome back…", "Today we're going to learn…", "In this video…". See `GENERATIONAL_CURIOSITY_FRAMEWORK.md`.
+9. **Project Reality** — When a real photo improves understanding, show it in the board evidence panel (`services/reality/`). Curate licenses in `data/reality/catalog.json`; never use unlicensed or watermarked images.
 
 ## Character
 
-9. **Gen attire `none`** — `CHAR-PROFESSOR-001` ships without lab coat; `coat=True` / `attire=lab_coat` only with version bump.
-10. **Character Bible first** — No silent redesigns; validate via `services.character_systems` before ship.
-11. **No wave spam** — Forbidden professor gestures include `wave` and `react` in Foundation mode.
+10. **Gen attire `none`** — `CHAR-PROFESSOR-001` ships without lab coat; `coat=True` / `attire=lab_coat` only with version bump.
+11. **Character Bible first** — No silent redesigns; validate via `services.character_systems` before ship.
+12. **No wave spam** — Forbidden professor gestures include `wave` and `react` in Foundation mode.
 
 ## Coordination & memory
 
-12. **Echoer ECP** — All multi-agent handoffs use ECP v1 (`ECHOER_PROTOCOL.md` / `services.echoer.protocol`).
-13. **AELS before next cycle** — Agent 24 reviews teaching/engagement; apply pause_boost / hook fixes before the next production when flagged.
-14. **Wire AELS into the script** — JSON recommendations that never reach the production script are a reject condition (ES001 lesson).
-15. **GCIS post-production review** — After every series/sprint batch, write review under `data/gcis/`.
-16. **Capture lessons** — Append to `data/gcis/knowledge/lessons_learned.md`; register experiments in Agent 27 registry — do not fork conflicting lesson bodies.
+13. **Echoer ECP** — All multi-agent handoffs use ECP v1 (`ECHOER_PROTOCOL.md` / `services.echoer.protocol`).
+14. **AELS before next cycle** — Agent 24 reviews teaching/engagement; apply pause_boost / hook fixes before the next production when flagged.
+15. **Wire AELS into the script** — JSON recommendations that never reach the production script are a reject condition (ES001 lesson).
+16. **GCIS post-production review** — After every series/sprint batch, write review under `data/gcis/`.
+17. **Capture lessons** — Append to `data/gcis/knowledge/lessons_learned.md`; register experiments in Agent 27 registry — do not fork conflicting lesson bodies.
 
 ## Architecture
 
-17. **Additive Orchestrator changes** — Do not redesign Orchestrator; expand additively.
-18. **No blind 15/16 merges** — Agent 1 merge plan required.
+18. **Additive Orchestrator changes** — Do not redesign Orchestrator; expand additively.
+19. **No blind 15/16 merges** — Agent 1 merge plan required.
 
 ## Voice (series locks)
 
-19. **Match Character Bible** — Gen Foundation: `nova` + `tts-1-hd` unless a documented series lock says otherwise.
+20. **Match Character Bible** — Gen Foundation: `nova` + `tts-1-hd` unless a documented series lock says otherwise.

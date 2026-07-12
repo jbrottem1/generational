@@ -2,37 +2,37 @@
   "id": "batesian_101",
   "title": "Masters of Deception: Batesian Mimicry",
   "ok": true,
-  "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Biology_101_Batesian_Mimicry.mp4",
-  "duration_sec": 41.236,
-  "render_sec": 51.03,
+  "export_path": "/home/ubuntu/Desktop/AI Start-up/videos/Test run 2 generational/Biology_101_Batesian_Mimicry_reality.mp4",
+  "duration_sec": 50.34,
+  "render_sec": 120.95,
   "qc": {
     "mouth_varies": true,
     "has_silence_closed": true,
     "has_speech_open": true,
-    "speaking_ratio": 0.668,
+    "speaking_ratio": 0.893,
     "idle_motion": true,
     "blink_programmed": true,
     "educator_mode": true,
     "demo_id": "foundation_batesian_101",
-    "duration_sec": 41.236,
-    "frame_count": 989,
+    "duration_sec": 50.34,
+    "frame_count": 1208,
     "grounded": true,
     "interactive_teaching": true,
     "gesture_counts": {
-      "think": 99,
-      "idle": 257,
-      "write": 198,
-      "point": 287,
-      "present": 148
+      "think": 121,
+      "idle": 362,
+      "point": 399,
+      "write": 205,
+      "present": 121
     },
-    "idle_ratio": 0.26,
-    "walk_ratio": 0.081,
+    "idle_ratio": 0.3,
+    "walk_ratio": 0.08,
     "purposeful_gestures": true,
     "passed": true
   },
   "verify": {
     "ok": true,
-    "bytes": 1045316,
+    "bytes": 1581165,
     "has_video": true,
     "has_audio": true
   },
@@ -41,12 +41,12 @@
     "hard_fails": [],
     "warnings": [
       "whiteboard_sync_metadata_missing",
-      "overall_below_target:77.5<78.0"
+      "overall_below_target:77.6<78.0"
     ],
     "quality": {
       "scores": {
         "animation_quality": 93.0,
-        "lip_synchronization": 88.36,
+        "lip_synchronization": 90.0,
         "character_consistency": 78.0,
         "technical_validity": 88.0,
         "hook_quality": 75.0,
@@ -61,7 +61,7 @@
         "brand_consistency": 75.0,
         "platform_readiness": 70.0
       },
-      "overall": 77.5,
+      "overall": 77.6,
       "passed": true,
       "hard_fails": [],
       "warnings": [],
@@ -76,13 +76,28 @@
       }
     },
     "qc_checks": {
-      "idle_ratio": 0.26,
-      "walk_ratio": 0.081,
-      "lipsync": 88.36,
-      "overall": 77.5,
+      "idle_ratio": 0.3,
+      "walk_ratio": 0.08,
+      "lipsync": 90.0,
+      "overall": 77.6,
       "animation_qc_passed": true
     }
   },
+  "reality_qc": {
+    "passed": true,
+    "images_used": [
+      "hoverfly_lateral",
+      "wasp_lateral"
+    ],
+    "licenses_ok": true,
+    "panel_readable": true,
+    "hard_fails": [],
+    "warnings": []
+  },
+  "images_used": [
+    "hoverfly_lateral",
+    "wasp_lateral"
+  ],
   "educational": {
     "passed": true,
     "score": 86.2,
@@ -96,6 +111,8 @@
     "notes": [],
     "hard_fails": []
   },
-  "quality_overall": 77.5,
-  "error": null
+  "quality_overall": 77.6,
+  "error": null,
+  "framework": "project_reality",
+  "smoke": true
 }

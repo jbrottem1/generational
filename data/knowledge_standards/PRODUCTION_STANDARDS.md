@@ -32,6 +32,7 @@ Do not invent conflicting rules. When GCIS and this doc differ, open a revision 
 | LOCKED | One core concept / one question per Short (STD-TEACH-002) |
 | LOCKED | **Curiosity Framework** (`GENERATIONAL_CURIOSITY_FRAMEWORK.md`): open with unanswered question; forbid "Welcome back / Today we'll learn / In this video" |
 | LOCKED | Show before name; demo overlays synced to choreography beats |
+| LOCKED | **Project Reality** (`PROJECT_REALITY.md`): licensed real scientific images in evidence panels; professor points and annotates |
 | LOCKED | Educational simplification OK; never invent false mechanisms (STD-SCI-001) |
 | LOCKED | State evolving science clearly (e.g. monarch–viceroy complexity) — never oversell tentative ideas |
 

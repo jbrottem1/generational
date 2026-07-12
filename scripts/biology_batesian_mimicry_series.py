@@ -27,9 +27,12 @@ from services.animation.stick_figure import StickFigureSpec
 from services.education.director_review import review_lesson
 from services.media_production.ffmpeg_assembler import find_ffmpeg
 from services.provider_runtime.config import has_credential
+from services.reality.qc import collect_demo_image_ids, evaluate_reality_export
+from services.reality.smoke_narration import build_smoke_narration
 
 REPORT_DIR = ROOT / "data" / "productions" / "_validation" / "biology_batesian"
 EXPORT_DIR = Path.home() / "Desktop" / "AI Start-up" / "videos" / "Test run 2 generational"
+FALLBACK_EXPORT_DIR = ROOT / "data" / "productions" / "_validation" / "biology_batesian" / "exports"
 
 # Sources (teaching notes — not on-screen citations)
 SOURCES = [
@@ -41,7 +44,7 @@ SOURCES = [
 EPISODES = [
     {
         "id": "batesian_101",
-        "filename": "Biology_101_Batesian_Mimicry.mp4",
+        "filename": "Biology_101_Batesian_Mimicry_reality.mp4",
         "title": "Masters of Deception: Batesian Mimicry",
         "demo_id": "foundation_batesian_101",
         "hook": "What if pretending to be dangerous could save your life?",
@@ -60,13 +63,21 @@ EPISODES = [
                 "text": "By the end of this, you'll understand Batesian mimicry — and why it works.",
                 "pause_after_sec": 0.45,
             },
-            {"text": "Watch the board.", "pause_after_sec": 0.40},
+            {"text": "Have you ever seen one of these?", "pause_after_sec": 0.45},
             {
-                "text": "A harmful model — like a stinging wasp — teaches predators: bright pattern means avoid.",
+                "text": "This is a real hoverfly. Most people think it's a wasp.",
                 "pause_after_sec": 0.55,
             },
             {
-                "text": "A harmless mimic — like some hoverflies — copies that look, without the sting.",
+                "text": "Notice the stripes on the abdomen — but watch this.",
+                "pause_after_sec": 0.50,
+            },
+            {
+                "text": "A harmful model — like this stinging wasp — teaches predators: bright pattern means avoid.",
+                "pause_after_sec": 0.55,
+            },
+            {
+                "text": "A harmless mimic copies that look, without the sting. Completely harmless.",
                 "pause_after_sec": 0.55,
             },
             {
@@ -74,11 +85,7 @@ EPISODES = [
                 "pause_after_sec": 0.50,
             },
             {
-                "text": "You'll see the same idea in scarlet kingsnakes that resemble coral snakes.",
-                "pause_after_sec": 0.50,
-            },
-            {
-                "text": "Safety by resemblance. That's Batesian mimicry.",
+                "text": "This trick is called Batesian mimicry. Safety by resemblance.",
                 "pause_after_sec": 0.55,
             },
             {
@@ -89,7 +96,7 @@ EPISODES = [
     },
     {
         "id": "coral_102",
-        "filename": "Biology_102_Coral_Snake_Imposters.mp4",
+        "filename": "Biology_102_Coral_Snake_Imposters_reality.mp4",
         "title": "Can You Spot the Imposter?",
         "demo_id": "foundation_coral_102",
         "hook": "Could you tell which of these snakes is actually dangerous?",
@@ -108,7 +115,7 @@ EPISODES = [
                 "text": "You'll see why warning colors work — and why a popular rhyme can mislead you.",
                 "pause_after_sec": 0.45,
             },
-            {"text": "Watch.", "pause_after_sec": 0.35},
+            {"text": "Look at these real snakes side by side.", "pause_after_sec": 0.40},
             {
                 "text": "Bright bands advertise risk. Predators that learn from painful encounters learn to avoid the pattern.",
                 "pause_after_sec": 0.55,
@@ -133,7 +140,7 @@ EPISODES = [
     },
     {
         "id": "bluffing_103",
-        "filename": "Biology_103_Masters_of_Bluffing.mp4",
+        "filename": "Biology_103_Masters_of_Bluffing_reality.mp4",
         "title": "Nature's Masters of Bluffing",
         "demo_id": "foundation_bluffing_103",
         "hook": "What if survival depended on convincing everyone you were something you're not?",
@@ -152,7 +159,7 @@ EPISODES = [
                 "text": "You'll meet more mimics — and a famous case science has revised.",
                 "pause_after_sec": 0.45,
             },
-            {"text": "Watch the board.", "pause_after_sec": 0.35},
+            {"text": "Look at these real mimics beside their models.", "pause_after_sec": 0.40},
             {
                 "text": "Hoverflies and other bee mimics wear false warning colors — looking armed when they aren't.",
                 "pause_after_sec": 0.55,
@@ -211,7 +218,7 @@ def verify_mp4(path: Path, ffmpeg: str) -> dict:
     }
 
 
-def produce(ep: dict) -> dict:
+def produce(ep: dict, *, smoke: bool = False) -> dict:
     work = REPORT_DIR / ep["id"]
     work.mkdir(parents=True, exist_ok=True)
     voice = work / "narration.mp3"
@@ -219,8 +226,8 @@ def produce(ep: dict) -> dict:
     ffmpeg = find_ffmpeg()
     if not ffmpeg:
         return {"ok": False, "error": "ffmpeg missing", "id": ep["id"]}
-    if not has_credential("OPENAI_API_KEY"):
-        return {"ok": False, "error": "openai credentials missing", "id": ep["id"]}
+    if not smoke and not has_credential("OPENAI_API_KEY"):
+        return {"ok": False, "error": "openai credentials missing (use --smoke for offline render)", "id": ep["id"]}
 
     # Curiosity Framework guard
     first = str(ep["beats"][0]["text"]).lower()
@@ -229,7 +236,10 @@ def produce(ep: dict) -> dict:
             return {"ok": False, "error": f"curiosity_framework_violation:{banned}", "id": ep["id"]}
 
     t0 = time.time()
-    build_paused_narration(ep["beats"], voice, ffmpeg=ffmpeg, voice="nova", model="tts-1-hd")
+    if smoke:
+        build_smoke_narration(ep["beats"], voice, ffmpeg=ffmpeg)
+    else:
+        build_paused_narration(ep["beats"], voice, ffmpeg=ffmpeg, voice="nova", model="tts-1-hd")
     result = render_lip_sync_performance(
         audio_path=voice,
         output_path=episode,
@@ -246,7 +256,9 @@ def produce(ep: dict) -> dict:
     )
     qc = result.get("qc") or {}
     EXPORT_DIR.mkdir(parents=True, exist_ok=True)
-    export_path = unique_path(EXPORT_DIR, ep["filename"])
+    export_root = EXPORT_DIR if EXPORT_DIR.parent.exists() else FALLBACK_EXPORT_DIR
+    export_root.mkdir(parents=True, exist_ok=True)
+    export_path = unique_path(export_root, ep["filename"])
     if episode.exists():
         shutil.copy2(episode, export_path)
     verify = verify_mp4(export_path, ffmpeg)
@@ -277,7 +289,7 @@ def produce(ep: dict) -> dict:
         "path": str(export_path),
         "bytes": export_path.stat().st_size if export_path.exists() else 0,
         "educational_review": edu.to_dict(),
-        "framework": "generational_curiosity_framework",
+        "framework": "generational_curiosity_framework + project_reality",
         "sources": SOURCES,
     }
     gate = evaluate_foundation_export(
@@ -285,11 +297,15 @@ def produce(ep: dict) -> dict:
         script=production["script"],
         educational=production["educational_review"],
     )
+    image_ids = collect_demo_image_ids(ep["demo_id"])
+    reality_qc = evaluate_reality_export(image_ids=image_ids, demo_id=ep["demo_id"])
     hard = gate.hard_fails or []
+    reality_hard = reality_qc.hard_fails or []
     ok = (
         bool(result.get("ok"))
         and bool(qc.get("passed"))
         and bool(verify.get("ok"))
+        and bool(reality_qc.passed)
         and "missing_export_path" not in hard
         and "animation_qc_failed" not in hard
         and not any(str(f).startswith("lipsync_below") for f in hard)
@@ -304,9 +320,13 @@ def produce(ep: dict) -> dict:
         "qc": qc,
         "verify": verify,
         "foundation_gate": gate.to_dict(),
+        "reality_qc": reality_qc.to_dict(),
+        "images_used": image_ids,
         "educational": edu.to_dict(),
         "quality_overall": gate.quality.overall if gate.quality else None,
         "error": result.get("error"),
+        "framework": "project_reality",
+        "smoke": smoke,
     }
     (work / "REPORT.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
     return report
@@ -317,15 +337,16 @@ def main(argv: list[str] | None = None) -> int:
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--only", default=None, help="Episode id to render")
+    parser.add_argument("--smoke", action="store_true", help="Offline smoke render (no OpenAI TTS)")
     args = parser.parse_args(argv)
 
-    print("=== Biology Benchmark — Batesian Mimicry (Curiosity Framework) ===", flush=True)
+    print("=== Biology Benchmark — Batesian Mimicry (Project Reality) ===", flush=True)
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
     selected = [e for e in EPISODES if args.only is None or e["id"] == args.only]
     results = []
     for ep in selected:
         print(f"\n--- {ep['title']} ---", flush=True)
-        r = produce(ep)
+        r = produce(ep, smoke=args.smoke)
         results.append(r)
         status = "✓" if r.get("ok") else "✗"
         print(
@@ -335,30 +356,35 @@ def main(argv: list[str] | None = None) -> int:
         )
     summary = {
         "series": "batesian_mimicry_biology_benchmark",
-        "framework": "generational_curiosity_framework",
+        "framework": "generational_curiosity_framework + project_reality",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "success_count": sum(1 for r in results if r.get("ok")),
         "total": len(results),
         "episodes": results,
         "sources": SOURCES,
     }
-    out = REPORT_DIR / "BATESIAN_SERIES_REPORT.json"
+    out = REPORT_DIR / "REALITY_SERIES_REPORT.json"
     out.write_text(json.dumps(summary, indent=2), encoding="utf-8")
-    md = REPORT_DIR / "BATESIAN_SERIES_REPORT.md"
+    md = REPORT_DIR / "REALITY_SERIES_REPORT.md"
     lines = [
-        "# Batesian Mimicry Biology Benchmark",
+        "# Batesian Mimicry — Project Reality Series",
         "",
         f"**Generated:** {summary['generated_at']}",
         f"**Success:** {summary['success_count']}/{summary['total']}",
-        f"**Framework:** Generational Curiosity Framework",
+        f"**Framework:** Curiosity Framework + Project Reality",
         "",
     ]
     for r in results:
         lines.append(
             f"- **{r.get('title')}** — `{r.get('export_path')}` "
-            f"(ok={r.get('ok')}, Q={r.get('quality_overall')}, {r.get('duration_sec')}s)"
+            f"(ok={r.get('ok')}, Q={r.get('quality_overall')}, "
+            f"images={r.get('images_used')}, {r.get('duration_sec')}s)"
         )
     md.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    # Legacy report path for continuity
+    (REPORT_DIR / "BATESIAN_SERIES_REPORT.json").write_text(
+        json.dumps(summary, indent=2), encoding="utf-8"
+    )
     print(f"\n=== DONE {summary['success_count']}/{summary['total']} → {out} ===", flush=True)
     return 0 if summary["success_count"] == summary["total"] else 1
 

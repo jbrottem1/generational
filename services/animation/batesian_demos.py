@@ -1,6 +1,6 @@
 """Biology Foundation demos — Batesian mimicry benchmark series.
 
-White studio + whiteboard diagrams. Scientific labels only — no scenery.
+White studio + whiteboard + PROJECT REALITY evidence panels.
 """
 
 from __future__ import annotations
@@ -9,10 +9,17 @@ from PIL import Image, ImageDraw, ImageFont
 
 from services.animation.foundation_studio import draw_white_studio
 from services.animation.whiteboard import BoardAction, board_rect, render_board_actions
+from services.reality.panel import draw_panels
+from services.reality.planner import (
+    BATESIAN_101_PANELS,
+    BLUFFING_103_PANELS,
+    CORAL_102_PANELS,
+)
 
 
 def _font(size: int = 28):
     for path in (
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
         "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
         "/System/Library/Fonts/Supplemental/Arial.ttf",
         "/System/Library/Fonts/Helvetica.ttc",
@@ -24,34 +31,6 @@ def _font(size: int = 28):
     return ImageFont.load_default()
 
 
-def _snake(d: ImageDraw.ImageDraw, x: int, y: int, bands: list[tuple[int, int, int]], label: str, danger: bool):
-    """Simple horizontal banded snake silhouette."""
-    w, h = 160, 28
-    d.rounded_rectangle((x, y, x + w, y + h), radius=10, outline=(30, 35, 45), width=2)
-    bw = w // max(1, len(bands))
-    for i, color in enumerate(bands):
-        d.rectangle((x + i * bw + 2, y + 2, x + (i + 1) * bw - 1, y + h - 2), fill=color)
-    tag = "DANGEROUS" if danger else "HARMLESS"
-    tag_c = (180, 40, 40) if danger else (40, 100, 60)
-    d.text((x, y - 22), label, fill=(20, 28, 40), font=_font(20))
-    d.text((x, y + h + 4), tag, fill=tag_c, font=_font(18))
-
-
-def _insect(d: ImageDraw.ImageDraw, x: int, y: int, *, wasp: bool, label: str):
-    """Simple insect body — wasp (danger) vs hoverfly (mimic)."""
-    body = (240, 200, 40) if wasp else (230, 190, 50)
-    stripe = (30, 30, 30)
-    d.ellipse((x, y, x + 70, y + 36), fill=body, outline=(30, 35, 45), width=2)
-    for i in range(3):
-        sx = x + 12 + i * 16
-        d.line((sx, y + 4, sx, y + 32), fill=stripe, width=3)
-    # Wings
-    d.ellipse((x + 50, y - 8, x + 95, y + 18), outline=(100, 140, 180), width=2)
-    d.text((x, y + 42), label, fill=(20, 28, 40), font=_font(18))
-    tag = "MODEL (sting)" if wasp else "MIMIC (harmless)"
-    d.text((x, y + 62), tag, fill=(180, 40, 40) if wasp else (40, 100, 60), font=_font(16))
-
-
 # --- Video 1: Batesian Mimicry definition ---
 BATESIAN_101_ACTIONS: list[BoardAction] = [
     BoardAction("write", "What if pretending saves your life?", start=0.00, end=0.08, row=0, size=30, color=(20, 40, 90)),
@@ -59,7 +38,7 @@ BATESIAN_101_ACTIONS: list[BoardAction] = [
     BoardAction("underline", "Batesian Mimicry", start=0.32, end=0.38, row=1, size=46, color=(200, 50, 40)),
     BoardAction("write", "Harmless mimic  ← looks like →  Harmful model", start=0.40, end=0.55, row=2, size=26),
     BoardAction("write", "Predators learn: bright = avoid", start=0.55, end=0.68, row=3, size=28, color=(40, 90, 60)),
-    BoardAction("write", "Hoverfly · Scarlet kingsnake", start=0.68, end=0.80, row=4, size=28),
+    BoardAction("write", "Real hoverfly · Real kingsnake mimic", start=0.68, end=0.80, row=4, size=26),
     BoardAction("circle", "Batesian Mimicry", start=0.80, end=0.88, row=1, size=46),
     BoardAction("write", "Safety by resemblance.", start=0.88, end=0.96, row=5, size=30, color=(20, 40, 80)),
 ]
@@ -69,12 +48,22 @@ def draw_batesian_101(canvas: Image.Image, t: float, duration: float) -> None:
     draw_white_studio(canvas)
     p = t / max(duration, 0.1)
     render_board_actions(canvas, BATESIAN_101_ACTIONS, p)
-    if 0.45 < p < 0.85:
+    draw_panels(canvas, BATESIAN_101_PANELS, p)
+    # Stripe highlight during compare beat
+    if 0.42 < p < 0.72:
         d = ImageDraw.Draw(canvas)
-        x0, _y0, _x1, y1 = board_rect(*canvas.size)
-        _insect(d, x0 + 40, y1 - 130, wasp=True, label="Wasp")
-        _insect(d, x0 + 200, y1 - 130, wasp=False, label="Hoverfly")
-        d.text((x0 + 130, y1 - 145), "≈", fill=(20, 40, 90), font=_font(36))
+        w, h = canvas.size
+        x0, _y0, x1, y1 = board_rect(w, h)
+        tray_y0 = y1 + 24
+        mid = x0 + (x1 - x0) // 2
+        # Highlight mimic stripes region (right panel)
+        d.rounded_rectangle(
+            (mid + 20, tray_y0 + 80, x1 - 40, tray_y0 + 140),
+            radius=6,
+            outline=(220, 50, 40),
+            width=3,
+        )
+        d.text((mid + 24, tray_y0 + 52), "Notice the stripes…", fill=(220, 50, 40), font=_font(18))
 
 
 # --- Video 2: Coral vs kingsnake ---
@@ -93,17 +82,11 @@ def draw_coral_102(canvas: Image.Image, t: float, duration: float) -> None:
     draw_white_studio(canvas)
     p = t / max(duration, 0.1)
     render_board_actions(canvas, CORAL_102_ACTIONS, p)
-    if 0.20 < p < 0.78:
+    draw_panels(canvas, CORAL_102_PANELS, p)
+    if p > 0.50:
         d = ImageDraw.Draw(canvas)
         x0, y0, _x1, _y1 = board_rect(*canvas.size)
-        # Coral: red-yellow-black pattern (simplified warning)
-        coral = [(200, 40, 40), (240, 200, 40), (30, 30, 35), (200, 40, 40), (240, 200, 40)]
-        # Kingsnake mimic: red-black-yellow-ish bands (simplified)
-        king = [(200, 40, 40), (30, 30, 35), (240, 180, 50), (30, 30, 35), (200, 40, 40)]
-        _snake(d, x0 + 36, y0 + 200, coral, "Coral snake", danger=True)
-        _snake(d, x0 + 36, y0 + 280, king, "Scarlet kingsnake", danger=False)
-        if p > 0.50:
-            d.text((x0 + 36, y0 + 340), "Rhyme ≠ reliable ID tool", fill=(160, 40, 40), font=_font(22))
+        d.text((x0 + 36, y0 + 340), "Rhyme ≠ reliable ID tool", fill=(160, 40, 40), font=_font(22))
 
 
 # --- Video 3: Masters of bluffing + arms race ---
@@ -122,15 +105,10 @@ def draw_bluffing_103(canvas: Image.Image, t: float, duration: float) -> None:
     draw_white_studio(canvas)
     p = t / max(duration, 0.1)
     render_board_actions(canvas, BLUFFING_103_ACTIONS, p)
-    if 0.18 < p < 0.55:
-        d = ImageDraw.Draw(canvas)
-        x0, _y0, _x1, y1 = board_rect(*canvas.size)
-        _insect(d, x0 + 50, y1 - 120, wasp=True, label="Bee / wasp")
-        _insect(d, x0 + 220, y1 - 120, wasp=False, label="Mimic fly")
+    draw_panels(canvas, BLUFFING_103_PANELS, p)
     if 0.64 < p < 0.90:
         d = ImageDraw.Draw(canvas)
         x0, y0, _x1, _y1 = board_rect(*canvas.size)
-        # Simple arrows: predator ←→ prey
         d.text((x0 + 40, y0 + 300), "Predator learning  ⇄  Prey deception", fill=(20, 40, 90), font=_font(24))
 
 
