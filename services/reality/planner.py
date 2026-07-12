@@ -63,10 +63,39 @@ BLUFFING_103_PANELS: list[RealityPanel] = [
     ),
 ]
 
+TURTLE_202_PANELS: list[RealityPanel] = [
+    RealityPanel(
+        layout="board_inset",
+        start=0.10,
+        end=0.28,
+        image_ids=["green_sea_turtle"],
+        labels=["Modern sea turtle"],
+        title="Living turtle",
+    ),
+    RealityPanel(
+        layout="split_compare",
+        start=0.28,
+        end=0.52,
+        image_ids=["turtle_fossil", "green_sea_turtle"],
+        labels=["Ancient fossil", "Today"],
+        tags=["200+ Ma", "Evolved shell"],
+        title="Deep time",
+    ),
+    RealityPanel(
+        layout="board_inset",
+        start=0.55,
+        end=0.78,
+        image_ids=["turtle_fossil"],
+        labels=["Intermediate fossil form"],
+        title="Fossil evidence",
+    ),
+]
+
 PLANS: dict[str, list[RealityPanel]] = {
     "foundation_batesian_101": BATESIAN_101_PANELS,
     "foundation_coral_102": CORAL_102_PANELS,
     "foundation_bluffing_103": BLUFFING_103_PANELS,
+    "foundation_v2_turtle_202": TURTLE_202_PANELS,
 }
 
 
@@ -83,6 +112,9 @@ def plan_reality_for_concepts(concepts: list[str]) -> list[dict[str, Any]]:
         "kingsnake": "scarlet_kingsnake",
         "monarch": "monarch_adult",
         "viceroy": "viceroy_adult",
+        "turtle": "green_sea_turtle",
+        "fossil": "turtle_fossil",
+        "shell_evolution": "turtle_fossil",
     }
     out = []
     for c in concepts:

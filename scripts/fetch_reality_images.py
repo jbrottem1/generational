@@ -80,6 +80,28 @@ ENTRIES = [
         "scientific_name": "Limenitis archippus",
         "concepts": ["viceroy", "mimic", "butterfly"],
     },
+    {
+        "image_id": "green_sea_turtle",
+        "filename": "green_sea_turtle.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Green_Sea_Turtle_grazing_inhabit.jpg",
+        "fetch_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Green_Sea_Turtle_grazing_inhabit.jpg?width=900",
+        "license": "CC-BY",
+        "credit": "Brocken Inaglory / Wikimedia Commons",
+        "organism": "Green sea turtle",
+        "scientific_name": "Chelonia mydas",
+        "concepts": ["turtle", "reptile", "shell", "evolution"],
+    },
+    {
+        "image_id": "turtle_fossil",
+        "filename": "turtle_fossil.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Eunotosaurus_africanus.jpg",
+        "fetch_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eunotosaurus_africanus.jpg?width=900",
+        "license": "CC-BY-SA",
+        "credit": "Wikimedia Commons",
+        "organism": "Eunotosaurus (fossil reptile)",
+        "scientific_name": "Eunotosaurus africanus",
+        "concepts": ["turtle", "fossil", "shell_evolution", "paleontology"],
+    },
 ]
 
 

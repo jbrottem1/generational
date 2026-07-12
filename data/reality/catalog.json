@@ -101,6 +101,40 @@
       ],
       "width": 960,
       "height": 743
+    },
+    {
+      "image_id": "green_sea_turtle",
+      "path": "images/green_sea_turtle.jpg",
+      "license": "CC-BY-SA",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chelonia_mydas_is_going_for_the_air_edit.jpg",
+      "credit": "Wikimedia Commons",
+      "organism": "Green sea turtle",
+      "scientific_name": "Chelonia mydas",
+      "concepts": [
+        "turtle",
+        "reptile",
+        "shell",
+        "evolution"
+      ],
+      "width": 960,
+      "height": 720
+    },
+    {
+      "image_id": "turtle_fossil",
+      "path": "images/turtle_fossil.jpg",
+      "license": "CC-BY-SA",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Eunotosaurus_africanus.jpg",
+      "credit": "Wikimedia Commons",
+      "organism": "Eunotosaurus (fossil reptile)",
+      "scientific_name": "Eunotosaurus africanus",
+      "concepts": [
+        "turtle",
+        "fossil",
+        "shell_evolution",
+        "intermediate"
+      ],
+      "width": 960,
+      "height": 747
     }
   ]
 }

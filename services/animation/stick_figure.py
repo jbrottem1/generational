@@ -54,6 +54,7 @@ def draw_stick_figure(
     coat: bool = False,
     attire: str | None = None,
     windy: bool = False,
+    foundation_v2: bool = False,
     pose: dict[str, float] | None = None,
     eye_drift: float = 0.0,
     brow_raise: float = 0.0,
@@ -82,7 +83,7 @@ def draw_stick_figure(
     cy = int(size * 0.32) + int(head_bob_y * size * bob_scale) + int(head_tilt * 3)
     if windy:
         cy += int(6 * abs(math.sin(arm_phase * 3)))
-    head_r = int(size * spec.head_ratio * 0.46)
+    head_r = int(size * spec.head_ratio * (0.48 if foundation_v2 else 0.46))
     stroke = spec.stroke + (1 if professor else 0)
 
     # Head
@@ -168,6 +169,17 @@ def draw_stick_figure(
         )
         d.line((cx - 25, body_top + 28, cx - 35, body_bot), fill=(64, 196, 180, 255), width=4)
         d.line((cx + 25, body_top + 28, cx + 35, body_bot), fill=(64, 196, 180, 255), width=4)
+        # Simple tie (Foundation V2)
+        if foundation_v2:
+            d.polygon(
+                [(cx - 8, body_top + 32), (cx + 8, body_top + 32), (cx, body_top + 58)],
+                fill=(30, 50, 120, 255),
+                outline=spec.outline,
+            )
+            d.polygon(
+                [(cx - 10, body_top + 58), (cx + 10, body_top + 58), (cx, body_top + 78)],
+                fill=(30, 50, 120, 255),
+            )
     d.line((cx, body_top, cx, body_bot), fill=spec.outline, width=stroke + 1)
 
     shoulder = body_top + 34
@@ -236,6 +248,51 @@ def draw_stick_figure(
             d.line((cx, shoulder, cx + 85 - sway // 2, shoulder + 88 + sway // 2), fill=spec.outline, width=stroke)
             d.ellipse((cx - 95, shoulder + 85, cx - 65, shoulder + 115), outline=spec.outline, width=stroke - 1)
             d.ellipse((cx + 70, shoulder + 78, cx + 100, shoulder + 108), outline=spec.outline, width=stroke - 1)
+
+    # Foundation V2 — clipboard + teaching pointer (professional, purposeful)
+    if foundation_v2 and pose is not None:
+        def _pt(key_x: str, key_y: str):
+            return (
+                sx + int(float(pose[key_x]) * scale),
+                sy + int(float(pose[key_y]) * scale),
+            )
+
+        lhx, lhy = _pt("lhx", "lhy")
+        rhx, rhy = _pt("rhx", "rhy")
+        g = (gesture or "idle").lower()
+        if g != "write":
+            # Clipboard in left hand
+            cb_w, cb_h = 36, 48
+            d.rounded_rectangle(
+                (lhx - cb_w // 2, lhy - cb_h, lhx + cb_w // 2, lhy + 4),
+                radius=4,
+                fill=(248, 250, 252, 255),
+                outline=spec.outline,
+                width=3,
+            )
+            d.line(
+                (lhx - cb_w // 2 + 6, lhy - cb_h + 14, lhx + cb_w // 2 - 6, lhy - cb_h + 14),
+                fill=(180, 185, 195),
+                width=2,
+            )
+            d.line(
+                (lhx - cb_w // 2 + 6, lhy - cb_h + 24, lhx + cb_w // 2 - 6, lhy - cb_h + 24),
+                fill=(180, 185, 195),
+                width=2,
+            )
+        if g in ("point", "write", "present"):
+            # Teaching pointer — extends from right hand
+            tip_x = rhx + int(55 * scale)
+            tip_y = rhy - int(8 * scale)
+            d.line((rhx, rhy, tip_x, tip_y), fill=(50, 50, 55), width=max(3, stroke - 2))
+            d.polygon(
+                [
+                    (tip_x + int(12 * scale), tip_y),
+                    (tip_x - int(6 * scale), tip_y - int(8 * scale)),
+                    (tip_x - int(6 * scale), tip_y + int(8 * scale)),
+                ],
+                fill=(210, 45, 35, 255),
+            )
 
     # Legs — grounded; soft stride
     foot_y = int(size * 0.92)

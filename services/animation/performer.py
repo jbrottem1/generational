@@ -29,7 +29,27 @@ def _blink_at(t: float) -> float:
 def _educator_stage_x(width: int, t: float, duration: float, plan_id: str | None) -> int:
     """Planted stance; advance only during purposeful walk beats (eased)."""
     from services.animation.fluid_motion import smootherstep
+    from services.animation.foundation_v2 import is_foundation_v2_demo
     from services.animation.teaching_choreography import PLANS
+
+    if is_foundation_v2_demo(plan_id):
+        # V2: professor stays in left teaching zone
+        plan = PLANS.get(plan_id or "default") or PLANS["default"]
+        p = t / max(duration, 0.1)
+        total = 0.0
+        done = 0.0
+        for beat in plan:
+            w = float(beat.get("walk") or 0.0)
+            s, e = float(beat["start"]), float(beat["end"])
+            span = max(1e-6, e - s)
+            total += w * span
+            if p >= e:
+                done += w * span
+            elif p > s:
+                local = (p - s) / span
+                done += w * span * smootherstep(local)
+        progress = (done / total) if total > 1e-6 else 0.0
+        return int(width * (0.02 + 0.06 * min(1.0, progress)))
 
     plan = PLANS.get(plan_id or "default") or PLANS["default"]
     p = t / max(duration, 0.1)
@@ -133,7 +153,8 @@ def render_lip_sync_performance(
     duration = len(samples) / float(sr)
     duration = max(3.0, min(float(max_duration_sec), duration))
 
-    is_foundation = str(demo_id or "").startswith("foundation_")
+    is_foundation_v2 = str(demo_id or "").startswith("foundation_v2_")
+    is_foundation = is_foundation_v2 or str(demo_id or "").startswith("foundation_")
     mouth_profile = "foundation" if is_foundation else ("educator" if educator_mode else "default")
     if mouth_driver is None:
         from services.animation.lip_sync import AmplitudeMouthDriver
@@ -185,6 +206,10 @@ def render_lip_sync_performance(
             or str(demo_id or "").startswith("skydive_")
         ):
             scale = 0.38
+        elif educator_mode and is_foundation_v2:
+            from services.animation.foundation_v2 import V2_CHARACTER_SCALE
+
+            scale = V2_CHARACTER_SCALE
         elif educator_mode and str(demo_id or "").startswith("foundation_"):
             scale = 0.46  # slightly larger — white studio, focus on professor
         elif educator_mode:
@@ -209,8 +234,8 @@ def render_lip_sync_performance(
 
             blend = blender.update(t, g)
             pose = dict(blend["pose"])
-            # Breath settles into the arms — life without fidget
-            arm_breath = math.sin(2 * math.pi * t / 3.8) * 2.2
+            # Breath settles into the arms — life without fidget (minimal for V2)
+            arm_breath = 0.0 if is_foundation_v2 else math.sin(2 * math.pi * t / 3.8) * 2.2
             pose["ly"] = float(pose.get("ly", 0)) + arm_breath
             pose["ry"] = float(pose.get("ry", 0)) + arm_breath * 0.85
             pose["lhy"] = float(pose.get("lhy", 0)) + arm_breath * 0.6
@@ -222,8 +247,8 @@ def render_lip_sync_performance(
             is_professor = bool(educator_mode)
             use_pose = educator_mode
             is_windy = bool(str(demo_id or "").startswith("skydive_") and educator_mode)
-            # Gen Foundation lock: clean black stick — coat gated off unless MacroCenter opts in
-            draw_coat = False
+            draw_coat = is_foundation_v2
+            use_foundation_v2 = is_foundation_v2
             arm_for_draw = float(params["arm_phase"])
             if is_windy:
                 arm_for_draw = math.sin(2 * math.pi * t * 1.8) * 0.85
@@ -241,8 +266,9 @@ def render_lip_sync_performance(
                 confident=educator_mode,
                 professor=is_professor,
                 coat=draw_coat,
-                attire="none",
+                attire="lab_coat" if is_foundation_v2 else "none",
                 windy=is_windy,
+                foundation_v2=use_foundation_v2,
                 pose=pose if use_pose else None,
                 eye_drift=float(params.get("eye_drift") or 0.0),
                 brow_raise=brow,
@@ -251,10 +277,9 @@ def render_lip_sync_performance(
             canvas = Image.new("RGB", (width, height), bg_color)
 
             floor_y = int(height * 0.78)
-            is_foundation = str(demo_id or "").startswith("foundation_")
             if demo_drawer is not None:
                 demo_drawer(canvas, t, duration)
-                if is_foundation or educator_mode:
+                if is_foundation_v2 or is_foundation or educator_mode:
                     floor_y = int(height * 0.82)
             elif educator_mode:
                 # Minimal grounded classroom if no demo

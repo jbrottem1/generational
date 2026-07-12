@@ -102,6 +102,8 @@ def draw_reality_panel(
     canvas: Image.Image,
     panel: RealityPanel,
     p: float,
+    *,
+    layout_rect_fn=None,
 ) -> None:
     """Draw a timed reality panel onto the canvas."""
     frac = _ease(_reveal_fraction(p, panel.start, panel.end))
@@ -110,9 +112,10 @@ def draw_reality_panel(
 
     w, h = canvas.size
     d = ImageDraw.Draw(canvas)
+    tray_fn = layout_rect_fn or evidence_tray_rect
 
     if panel.layout == "board_inset":
-        rect = evidence_tray_rect(w, h)
+        rect = tray_fn(w, h)
         _panel_frame(d, rect, title=panel.title)
         if panel.image_ids:
             img = _load_rgb(get_image(panel.image_ids[0]).path)  # type: ignore[union-attr]
@@ -125,7 +128,7 @@ def draw_reality_panel(
         apply_annotations(d, panel.annotations, reveal=frac)
 
     elif panel.layout == "split_compare":
-        rect = evidence_tray_rect(w, h)
+        rect = tray_fn(w, h)
         _panel_frame(d, rect, title=panel.title or "Compare")
         left, right = split_panels((rect[0] + 8, rect[1] + 36, rect[2] - 8, rect[3] - 8))
         for idx, slot in enumerate((left, right)):
@@ -162,6 +165,12 @@ def draw_reality_panel(
         )
 
 
-def draw_panels(canvas: Image.Image, panels: list[RealityPanel], p: float) -> None:
+def draw_panels(
+    canvas: Image.Image,
+    panels: list[RealityPanel],
+    p: float,
+    *,
+    layout_rect_fn=None,
+) -> None:
     for panel in panels:
-        draw_reality_panel(canvas, panel, p)
+        draw_reality_panel(canvas, panel, p, layout_rect_fn=layout_rect_fn)

@@ -257,6 +257,21 @@ PLANS: dict[str, list[dict[str, Any]]] = {
         {"start": 0.78, "end": 0.88, "gesture": "point", "walk": 0.0, "label": "explain"},
         {"start": 0.88, "end": 1.00, "gesture": "idle", "walk": 0.0, "label": "takeaway"},
     ],
+    # Foundation V2 — Origin of Turtles (15–30s, pointer-driven)
+    "foundation_v2_turtle_202": [
+        {"start": 0.00, "end": 0.08, "gesture": "think", "walk": 0.0, "label": "hook"},
+        {"start": 0.08, "end": 0.14, "gesture": "idle", "walk": 0.45, "label": "walk_to_board"},
+        {"start": 0.14, "end": 0.22, "gesture": "point", "walk": 0.0, "label": "show_turtle"},
+        {"start": 0.22, "end": 0.30, "gesture": "point", "walk": 0.0, "label": "timeline"},
+        {"start": 0.30, "end": 0.38, "gesture": "present", "walk": 0.0, "label": "early_reptiles"},
+        {"start": 0.38, "end": 0.42, "gesture": "idle", "walk": 0.0, "label": "pause"},
+        {"start": 0.42, "end": 0.52, "gesture": "write", "walk": 0.0, "label": "shell_sketch"},
+        {"start": 0.52, "end": 0.58, "gesture": "point", "walk": 0.0, "label": "gradual"},
+        {"start": 0.58, "end": 0.68, "gesture": "point", "walk": 0.0, "label": "fossils"},
+        {"start": 0.68, "end": 0.78, "gesture": "idle", "walk": 0.0, "label": "hold_fossil"},
+        {"start": 0.78, "end": 0.88, "gesture": "present", "walk": 0.0, "label": "connect"},
+        {"start": 0.88, "end": 1.00, "gesture": "idle", "walk": 0.0, "label": "takeaway"},
+    ],
 }
 
 
