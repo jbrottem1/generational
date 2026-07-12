@@ -31,7 +31,9 @@ from services.education.director_review import review_lesson
 from services.media_production.ffmpeg_assembler import find_ffmpeg
 from services.provider_runtime.config import has_credential
 from services.reality.qc import collect_demo_image_ids, evaluate_reality_export
-from services.reality.smoke_narration import build_smoke_narration
+from services.media_production.execution_mode import get_execution_context
+from services.media_production.local_first import gate_production
+from services.media_production.verified_export import export_verified_mp4, reveal_export_in_finder
 
 REPORT_DIR = ROOT / "data" / "productions" / "_validation" / "foundation_v2"
 EXPORT_DIR = Path.home() / "Desktop" / "AI Start-up" / "videos" / "Test run 2 generational"
@@ -202,8 +204,32 @@ RECOMMENDATIONS = [
 ]
 
 
-def produce(*, smoke: bool = False) -> dict:
+def produce(*, smoke: bool = False, allow_cloud_smoke: bool = False) -> dict:
     ep = EPISODE
+    job_path = ROOT / "LOCAL_RENDER_JOB.json"
+
+    gate = gate_production(
+        job_id=ep["id"],
+        title=ep["title"],
+        demo_id=ep["demo_id"],
+        filename=ep["filename"],
+        hook=ep["hook"],
+        takeaway=ep["takeaway"],
+        main_concept=ep["main_concept"],
+        beats=ep["beats"],
+        sources=SOURCES,
+        render={"fps": 24, "smoke": smoke},
+        job_output=job_path,
+        allow_cloud_smoke=allow_cloud_smoke,
+    )
+    if not gate.get("proceed"):
+        return {
+            **gate,
+            "ok": True,
+            "title": ep["title"],
+            "demo_id": ep["demo_id"],
+        }
+
     work = REPORT_DIR / ep["id"]
     work.mkdir(parents=True, exist_ok=True)
     voice = work / "narration.mp3"
@@ -238,13 +264,17 @@ def produce(*, smoke: bool = False) -> dict:
         spec=spec,
     )
     qc = result.get("qc") or {}
-    EXPORT_DIR.mkdir(parents=True, exist_ok=True)
-    export_root = EXPORT_DIR if EXPORT_DIR.parent.exists() else FALLBACK_EXPORT_DIR
-    export_root.mkdir(parents=True, exist_ok=True)
-    export_path = unique_path(export_root, ep["filename"])
-    if episode.exists():
-        shutil.copy2(episode, export_path)
-    verify = verify_mp4(export_path, ffmpeg)
+    export_result = export_verified_mp4(episode, filename=ep["filename"])
+    if not export_result.get("ok"):
+        return {
+            "ok": False,
+            "status": export_result.get("status"),
+            "error": export_result.get("error") or "export verification failed",
+            "verification": export_result.get("verification"),
+        }
+    export_path = Path(str(export_result["export_path"]))
+    verify = export_result.get("verification") or {}
+    reveal_export_in_finder(export_path)
 
     edu = review_lesson(
         hook=ep["hook"],
@@ -288,8 +318,12 @@ def produce(*, smoke: bool = False) -> dict:
         and bool(verify.get("ok"))
         and bool(reality_qc.passed)
     )
+    ctx = get_execution_context()
     payload = {
         "ok": ok,
+        "status": "export_verified" if ok else "verification_failed",
+        "message": "Video exported and verified on local Desktop." if ok else "Render completed but verification failed.",
+        "execution_mode": ctx.mode.value,
         "export_path": str(export_path),
         "duration_sec": result.get("duration_sec"),
         "render_sec": round(time.time() - t0, 2),
@@ -309,8 +343,11 @@ def produce(*, smoke: bool = False) -> dict:
 
 def main() -> int:
     smoke = "--smoke" in sys.argv
-    payload = produce(smoke=smoke)
+    allow_cloud_smoke = "--allow-cloud-smoke" in sys.argv
+    payload = produce(smoke=smoke, allow_cloud_smoke=allow_cloud_smoke)
     print(json.dumps(payload, indent=2))
+    if payload.get("status") == "awaiting_local_render":
+        return 0
     return 0 if payload.get("ok") else 1
 
 

@@ -36,6 +36,8 @@ from services.animation.whiteboard import write_window_from_plan
 from services.education.director_review import review_lesson
 from services.media_production.ffmpeg_assembler import find_ffmpeg
 from services.provider_runtime.config import has_credential
+from services.media_production.local_first import gate_production
+from services.media_production.verified_export import export_verified_mp4
 
 REPORT_DIR = ROOT / "data" / "productions" / "_validation" / "project_foundation"
 REPORT_DIR.mkdir(parents=True, exist_ok=True)
@@ -180,7 +182,23 @@ def _board_meta(ep: dict) -> tuple[list[dict], dict[str, float]]:
     return actions, write_win
 
 
-def produce_episode(ep: dict, *, force: bool = False) -> dict:
+def produce_episode(ep: dict, *, force: bool = False, allow_cloud_smoke: bool = False) -> dict:
+    job_path = ROOT / "data" / "productions" / "local_jobs" / f"{ep['id']}_LOCAL_RENDER_JOB.json"
+    gate = gate_production(
+        job_id=ep["id"],
+        title=ep["title"],
+        demo_id=ep["demo_id"],
+        filename=ep["filename"],
+        hook=ep.get("hook") or ep["beats"][0]["text"],
+        takeaway=ep.get("takeaway") or "",
+        main_concept=ep.get("main_concept") or ep["title"],
+        beats=ep["beats"],
+        job_output=job_path,
+        allow_cloud_smoke=allow_cloud_smoke,
+    )
+    if not gate.get("proceed"):
+        return {**gate, "ok": True, "id": ep["id"], "title": ep["title"]}
+
     work = REPORT_DIR / ep["id"]
     work.mkdir(parents=True, exist_ok=True)
     voice = work / "narration.mp3"
@@ -220,10 +238,16 @@ def produce_episode(ep: dict, *, force: bool = False) -> dict:
     )
     render_sec = round(time.time() - t0, 2)
     qc = result.get("qc") or {}
-    export_path = unique_path(EXPORT_DIR, ep["filename"])
-    if episode.exists():
-        shutil.copy2(episode, export_path)
-    verify = verify_mp4(export_path, ffmpeg)
+    export_result = export_verified_mp4(episode, filename=ep["filename"])
+    if not export_result.get("ok"):
+        return {
+            "ok": False,
+            "id": ep["id"],
+            "status": export_result.get("status"),
+            "error": export_result.get("error") or "export verification failed",
+        }
+    export_path = Path(str(export_result["export_path"]))
+    verify = export_result.get("verification") or {}
 
     script_text = " ".join(b["text"] for b in ep["beats"])
     edu = review_lesson(

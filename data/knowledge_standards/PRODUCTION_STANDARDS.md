@@ -74,6 +74,9 @@ Do not invent conflicting rules. When GCIS and this doc differ, open a revision 
 
 | Status | Standard |
 |--------|----------|
+| LOCKED | **Local-first execution** (`EXECUTION_MODE.md`): cloud prepares `LOCAL_RENDER_JOB.json`; local Mac renders and verifies Desktop MP4 |
+| LOCKED | Cloud agents never report `"Video exported."` — use `"Production package prepared. Awaiting local render."` |
+| LOCKED | SUCCESS only after verified MP4 at `~/Desktop/AI Start-up/videos/Test run 2 generational/` |
 | LOCKED | Foundation exports pass `foundation_gate` (idle/walk/wave/mouth/lipsync floors; overall target ≥78) |
 | LOCKED | `unique_path` / `_vN` — never overwrite finished exports (STD-EXPORT-001) |
 | LOCKED | Educator QC includes `purposeful_gestures` + interactive teaching (STD-QC-001) |

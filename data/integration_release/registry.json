@@ -29,6 +29,12 @@
       "target": "asset validation"
     },
     {
+      "id": "GATE-EXECUTION",
+      "name": "Local-first execution gate",
+      "path": "services/media_production/execution_mode.py",
+      "target": "cloud plan-only; local verified Desktop export"
+    },
+    {
       "id": "GATE-ARCH",
       "name": "Architecture consistency",
       "path": "tests/test_architecture.py",

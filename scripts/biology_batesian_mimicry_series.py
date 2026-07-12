@@ -33,6 +33,8 @@ from services.knowledge_atlas.feedback import record_lesson_visuals
 from services.knowledge_atlas.planner import plan_visual_evidence
 from services.knowledge_atlas.qc import validate_asset as validate_atlas_asset
 from services.knowledge_atlas.catalog import get_asset
+from services.media_production.local_first import gate_production
+from services.media_production.verified_export import export_verified_mp4, reveal_export_in_finder
 
 REPORT_DIR = ROOT / "data" / "productions" / "_validation" / "biology_batesian"
 EXPORT_DIR = Path.home() / "Desktop" / "AI Start-up" / "videos" / "Test run 2 generational"
@@ -222,7 +224,24 @@ def verify_mp4(path: Path, ffmpeg: str) -> dict:
     }
 
 
-def produce(ep: dict, *, smoke: bool = False) -> dict:
+def produce(ep: dict, *, smoke: bool = False, allow_cloud_smoke: bool = False) -> dict:
+    job_path = ROOT / "data" / "productions" / "local_jobs" / f"{ep['id']}_LOCAL_RENDER_JOB.json"
+    gate = gate_production(
+        job_id=ep["id"],
+        title=ep["title"],
+        demo_id=ep["demo_id"],
+        filename=ep["filename"],
+        hook=ep["hook"],
+        takeaway=ep["takeaway"],
+        main_concept=ep["main_concept"],
+        beats=ep["beats"],
+        sources=SOURCES,
+        job_output=job_path,
+        allow_cloud_smoke=allow_cloud_smoke,
+    )
+    if not gate.get("proceed"):
+        return {**gate, "ok": True, "id": ep["id"], "title": ep["title"]}
+
     work = REPORT_DIR / ep["id"]
     work.mkdir(parents=True, exist_ok=True)
     voice = work / "narration.mp3"
@@ -274,13 +293,17 @@ def produce(ep: dict, *, smoke: bool = False) -> dict:
         ),
     )
     qc = result.get("qc") or {}
-    EXPORT_DIR.mkdir(parents=True, exist_ok=True)
-    export_root = EXPORT_DIR if EXPORT_DIR.parent.exists() else FALLBACK_EXPORT_DIR
-    export_root.mkdir(parents=True, exist_ok=True)
-    export_path = unique_path(export_root, ep["filename"])
-    if episode.exists():
-        shutil.copy2(episode, export_path)
-    verify = verify_mp4(export_path, ffmpeg)
+    export_result = export_verified_mp4(episode, filename=ep["filename"])
+    if not export_result.get("ok"):
+        return {
+            "ok": False,
+            "id": ep["id"],
+            "status": export_result.get("status"),
+            "error": export_result.get("error") or "export verification failed",
+        }
+    export_path = Path(str(export_result["export_path"]))
+    verify = export_result.get("verification") or {}
+    reveal_export_in_finder(export_path)
 
     edu = review_lesson(
         hook=ep["hook"],
@@ -374,11 +397,14 @@ def main(argv: list[str] | None = None) -> int:
         r = produce(ep, smoke=args.smoke)
         results.append(r)
         status = "✓" if r.get("ok") else "✗"
-        print(
-            f"  {status} {r.get('export_path')} "
-            f"Q={r.get('quality_overall')} dur={r.get('duration_sec')}s",
-            flush=True,
-        )
+        if r.get("status") == "awaiting_local_render":
+            print(f"  📦 {r.get('message')} → {r.get('job_path')}", flush=True)
+        else:
+            print(
+                f"  {status} {r.get('export_path')} "
+                f"Q={r.get('quality_overall')} dur={r.get('duration_sec')}s",
+                flush=True,
+            )
     summary = {
         "series": "batesian_mimicry_biology_benchmark",
         "framework": "generational_curiosity_framework + project_reality",

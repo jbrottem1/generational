@@ -70,7 +70,8 @@ Before any production release:
 3. No broken dependencies in `SYSTEM_DEPENDENCY_MAP.md`  
 4. Documentation + prompt library synchronized (Agent 27 sign-off)  
 5. Character consistency validated (Agent 26)  
-6. Desktop export smoke verified locally  
+6. **GATE-EXECUTION** — cloud prepares `LOCAL_RENDER_JOB.json`; local Mac renders verified Desktop MP4 (`EXECUTION_MODE.md`)  
+7. Desktop export smoke verified locally  
 
 ---
 
