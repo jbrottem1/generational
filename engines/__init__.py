@@ -14,6 +14,7 @@ from engines.asset_manager import AssetManagerEngine
 from engines.attention_graph import AttentionGraphEngine
 from engines.base import Engine, PlannedEngine
 from engines.citation import CitationEngine
+from engines.cinematography import CinematographyEngine
 from engines.contracts import ContractEngine, FutureEngine
 from engines.future_stubs import (
     AnimationEngine,
@@ -72,6 +73,7 @@ for _engine_class in (
     PsychologyEngine,
     ScriptGenerationEngine,
     VisualIntelligenceEngine,
+    CinematographyEngine,
     VoiceAudioEngine,
     AttentionGraphEngine,
     RankingEngine,
