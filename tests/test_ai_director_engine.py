@@ -47,12 +47,13 @@ def test_ai_director_is_a_live_contract_engine():
     assert engine.is_ready() is True
     diag = engine.diagnostics()
     assert diag["engine_id"] == "ai_director"
-    assert diag["version"] == "1.0.0"
+    assert diag["version"] == "5.0.0"
     assert "unified_packages" in diag["input_contract"]
     assert "ai_director_summary" in diag["output_contract"]
     assert "ai_director_packages" in diag["output_contract"]
-    assert "quality" in diag["dependencies"]
+    assert "audience_intelligence" in diag["dependencies"]
     assert "executive-direction" in diag["capabilities"]
+    assert "production-blueprint" in diag["capabilities"]
     assert engine.health_check()["healthy"] is True
 
 

@@ -28,35 +28,34 @@ class StepStatus:
 # directly to execute() as a list of engine keys).
 WORKFLOWS = {
     "ideation": ["ideation"],
+    # One-command studio entry (Executive Orchestrator coordinates subsystems;
+    # revision loops live in the service — this workflow is the thin adapter).
+    "executive": ["executive_orchestrator"],
     # The intelligence pipeline: trend discovery → opportunity ranking →
-    # trend forecasting (Agent 11: forecasts, classifications, structured
-    # recommendations, and quality control over the ranked opportunities) →
-    # research → 20 candidates → psychology scoring → script generation
-    # (multiple scored variants per candidate, immediately after psychology)
-    # → attention graph (12-dimension radar + recommendations, Phase 2) →
-    # visual intelligence (the Cinematic AI Director: directed storyboard,
-    # shot list, style presets, retention prediction, AI prompts, asset
-    # requests, thumbnails, render package — consumes trend, psychology,
-    # structured script, and attention graph signals) → voice & audio (Audio
-    # Production Package: narration plan, voice style, pacing/pauses/emphasis,
-    # SFX, music direction, mood, scene cues, retention notes — planning
-    # only, before any rendering) → weighted ranking (psychology +
-    # opportunity + script quality) → script fallback for anything
-    # unscripted → critic → revision → citation → SEO packaging → threat
-    # detection (10 failure modes, Phase 3) → final quality scores +
-    # publish gate.
+    # trend forecasting → research → ideation → psychology → audience →
+    # AI Studio Director V5 (Production Blueprint + style library before
+    # any production engine) → script generation → attention graph →
+    # evidence → visual intelligence → cinematography → viewer retention →
+    # voice & audio → ranking → critic → revision → citation → SEO →
+    # threat detection → quality → studio render → optimization lab →
+    # Production QA.
     "intelligence": [
         "trend_discovery",
         "opportunity_ranking",
         "trend_forecasting",
         "market_intelligence",
         "research",
+        "continuous_learning",
         "ideation",
         "psychology",
+        "audience_intelligence",
+        "ai_director",
         "script_generation",
         "attention_graph",
+        "evidence_intelligence",
         "visual_intelligence",
         "cinematography",
+        "viewer_retention",
         "voice_audio",
         "ranking",
         "script",
@@ -66,6 +65,9 @@ WORKFLOWS = {
         "seo",
         "threat_detection",
         "quality",
+        "studio_render",
+        "optimization_lab",
+        "production_qa",
     ],
     "full_content": [
         "trend_discovery",
@@ -73,12 +75,17 @@ WORKFLOWS = {
         "trend_forecasting",
         "market_intelligence",
         "research",
+        "continuous_learning",
         "ideation",
         "psychology",
+        "audience_intelligence",
+        "ai_director",
         "script_generation",
         "attention_graph",
+        "evidence_intelligence",
         "visual_intelligence",
         "cinematography",
+        "viewer_retention",
         "voice_audio",
         "ranking",
         "script",
@@ -91,11 +98,15 @@ WORKFLOWS = {
         "voice",
         "image",
         "video",
+        "studio_render",
+        "optimization_lab",
+        "production_qa",
         "publishing",
     ],
     # v4.0 media production pipeline — runs on approved scripts only,
     # coordinated separately so the intelligence workflow stays untouched.
     "media_production": [
+        "ai_director",
         "scene_planning",
         "narration",
         "visual_planning",
@@ -103,6 +114,9 @@ WORKFLOWS = {
         "subtitle",
         "timeline",
         "render_package",
+        "studio_render",
+        "optimization_lab",
+        "production_qa",
         "publishing_queue",
     ],
 }

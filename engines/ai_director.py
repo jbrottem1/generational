@@ -1,20 +1,21 @@
-"""AI Director Engine — Agent 18 (key: ai_director).
+"""AI Director Engine — Agent 18 (key: ai_director) — Studio Director V5.0.
 
-The executive creative decision engine of the OS: consumes intelligence from
-Psychology, Script, Visual Intelligence, Voice, Trend, Market, Analytics,
-and Creative Studio packages, and determines the optimal production strategy
-before assets are generated.
+The creative brain of the Generational AI Media OS. Before any video is
+produced, the Director builds a Production Blueprint from topic, audience,
+platform, goals, and historical performance — then applies that unified
+vision onto candidates so every downstream engine follows the same direction.
 
-Pipeline position (PIPELINE_SPEC.md):
+Pipeline position (V5):
 
-    Packaging → AI Director → Creative Studio → Asset Generation → …
+    Psychology → Audience Intelligence → AI Director (blueprint) →
+    Script → Visuals → … → Studio Render → Optimization Lab → QA
 
 Failure policy: the Director NEVER crashes the pipeline. Empty context →
 "no_items" summary; per-item direction failures degrade to diagnostics.
-Ownership rules honored: only the `director_package` slot and the
-`ai_director_summary` / `ai_director_packages` context keys are written —
-script, visual, audio, creative, asset, render, and all other slots are
-read, never mutated.
+
+Ownership: writes `director_package` (incl. production_blueprint) and
+additive direction fields on items; does not overwrite script/visual/audio
+package bodies.
 """
 
 from __future__ import annotations
@@ -23,6 +24,7 @@ from datetime import datetime, timezone
 
 from core.log import get_logger, log_event
 from engines.contracts import ContractEngine
+from services.ai_director.consumers import apply_blueprint_to_candidate
 from services.ai_director.models import (
     AI_DIRECTOR_ENGINE_VERSION,
     DirectorStatus,
@@ -37,27 +39,30 @@ def _now_iso() -> str:
 
 
 class AiDirectorEngine(ContractEngine):
-    """Agent 18 — AI Director & Executive Creative Decision Engine."""
+    """Agent 18 — AI Studio Director V5 (Executive Producer + Creative Director)."""
 
     key = "ai_director"
-    label = "AI Director"
+    label = "AI Studio Director"
     icon = "🎭"
     description = (
-        "Executive creative direction for every production — format, platform, "
-        "style, pacing, camera, characters, music, narration, editing, and "
-        "orchestration notes for Agents 12–17 before assets are generated."
+        "Studio Director V5 — Production Blueprint before any engine produces: "
+        "style library, visual/narration/music/editing direction, platform "
+        "strategy, competitor analysis, and a unified production plan for "
+        "all downstream engines."
     )
     version = AI_DIRECTOR_ENGINE_VERSION
     input_contract = ["unified_packages"]
     output_contract = ["ai_director_summary", "ai_director_packages"]
-    dependencies = ["quality"]
+    dependencies = ["audience_intelligence"]
     capabilities = [
-        "executive-direction", "production-strategy", "platform-selection",
-        "format-selection", "creative-style", "pacing", "camera-planning",
+        "executive-direction", "production-blueprint", "style-library",
+        "production-strategy", "platform-selection", "format-selection",
+        "creative-style", "visual-direction", "pacing", "camera-planning",
         "character-direction", "music-direction", "narration-direction",
-        "editing-direction", "optimization-hints", "conflict-detection",
-        "graceful-degradation", "configurable-policies", "learning-feedback",
-        "orchestration", "provider-agnostic",
+        "editing-direction", "competitor-analysis", "optimization-hints",
+        "conflict-detection", "graceful-degradation", "configurable-policies",
+        "learning-feedback", "orchestration", "provider-agnostic",
+        "retention-targets", "emotion-curves", "seo-strategy",
     ]
 
     def is_ready(self) -> bool:
@@ -75,7 +80,10 @@ class AiDirectorEngine(ContractEngine):
         for item in items:
             try:
                 package = build_director_package(item, context)
-                item["director_package"] = package
+                blueprint = package.get("production_blueprint") or {}
+                # Apply additive direction so script/visual/render engines follow the plan.
+                directed = apply_blueprint_to_candidate(item, blueprint, package)
+                item.update(directed)
             except Exception as exc:  # noqa: BLE001 - one bad item never stops the director
                 package = {
                     "engine_version": AI_DIRECTOR_ENGINE_VERSION,
@@ -86,6 +94,7 @@ class AiDirectorEngine(ContractEngine):
                         "blockers": [f"direction failed: {exc}"],
                     },
                 }
+                item["director_package"] = package
                 log_event(
                     logger, "ai_director.item_failed", level=30,
                     project_id=str(item.get("project_id", "")), error=str(exc)[:120],
@@ -97,6 +106,7 @@ class AiDirectorEngine(ContractEngine):
             logger, "ai_director.completed",
             items=len(items), packages=len(packages),
             ready=summary["ready"], source=source_key or "none",
+            blueprints=summary.get("blueprints", 0),
         )
 
         updates = {
@@ -112,6 +122,14 @@ class AiDirectorEngine(ContractEngine):
         statuses = [v.get("status", DirectorStatus.INCOMPLETE) for v in validations]
         confidences = [int(v.get("confidence", 0)) for v in validations]
         degraded = sum(1 for v in validations if v.get("degraded"))
+        blueprints = sum(1 for pkg in packages if pkg.get("production_blueprint"))
+        styles = sorted(
+            {
+                (pkg.get("production_blueprint") or {}).get("production_style_id", "")
+                for pkg in packages
+                if (pkg.get("production_blueprint") or {}).get("production_style_id")
+            }
+        )
 
         overall = "directed"
         if not packages:
@@ -124,6 +142,8 @@ class AiDirectorEngine(ContractEngine):
             "status": overall,
             "items": items,
             "packages": len(packages),
+            "blueprints": blueprints,
+            "production_styles": styles,
             "ready": statuses.count(DirectorStatus.READY),
             "needs_review": statuses.count(DirectorStatus.NEEDS_REVIEW),
             "degraded": statuses.count(DirectorStatus.DEGRADED) + degraded,

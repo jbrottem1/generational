@@ -316,27 +316,34 @@ calls.
 
 ## 8.0 director_package (Agent 18) — `services/ai_director/`
 
-The AI Director (`ai_director` engine, `ai_director` stage) determines the
-optimal production strategy before assets are generated. Field tuples in
-`services/ai_director/models.py` are the testable contract; all output is
-JSON-safe dicts, additive-only from 1.0.
+The AI Studio Director (`ai_director` engine, executive stage `direction`,
+version **5.0.0**) determines the optimal production strategy **before any
+production engine runs**. Field tuples in `services/ai_director/models.py`
+are the testable contract; all output is JSON-safe dicts, additive-only
+from 1.0 (V5 adds `production_blueprint`).
 
-**ContentPackage `director_package` slot** (`DIRECTOR_PACKAGE_FIELDS`, v1.0):
+**ContentPackage `director_package` slot** (`DIRECTOR_PACKAGE_FIELDS`, v5.0):
 `director_package_version`, `engine_version`, `project_id`,
 `production_strategy`, `target_platforms`, `creative_style`, `visual_style`,
 `animation_style`, `camera_plan`, `pacing`, `shot_plan`, `character_plan`,
 `music_plan`, `narration_plan`, `editing_plan`, `optimization_hints`,
 `asset_requirements`, `expected_runtime`, `quality_targets`,
 `production_priority`, `orchestration_notes`, `upstream_alignment`,
-`validation`, `director_diagnostics`, `generated_at`.
+`validation`, `director_diagnostics`, `production_blueprint`, `generated_at`.
+
+**Production Blueprint** (`PRODUCTION_BLUEPRINT_FIELDS`): topic, audience,
+platform, length, goals, emotion/curiosity curves, retention targets,
+visual/animation/color/narration/music/camera/editing direction,
+thumbnail/SEO/publishing strategy, expected competition/difficulty/CTR/
+watch time/completion, competitor analysis, style library entry, production plan.
 
 **Context keys** (additive): `ai_director_summary` + `ai_director_packages`
-(aggregate run output).
+(aggregate run output). Candidate items also receive additive direction
+fields (`production_blueprint`, `visual_style`, `narration_style`, etc.)
+so downstream engines follow the unified vision. Upstream package bodies
+(`script_package`, `visual_package`, …) are not overwritten.
 
-Agent 18 writes ONLY the `director_package` slot and its context keys;
-script, visual, audio, creative, asset, render, and all other slots are
-read, never mutated. Downstream Agents 12–17 consume orchestration notes.
-See `AI_DIRECTOR.md`.
+See `AI_STUDIO_DIRECTOR.md` and `AI_DIRECTOR.md`.
 
 ---
 

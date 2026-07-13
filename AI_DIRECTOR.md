@@ -1,5 +1,9 @@
 # AI Director — Agent 18 (Executive Creative Decision Engine)
 
+> **V5.0 Studio Director:** see [`AI_STUDIO_DIRECTOR.md`](AI_STUDIO_DIRECTOR.md)
+> for the Production Blueprint, style library, competitor analysis, and
+> early-pipeline wiring. This document covers the `DirectorPackage` contract.
+
 The AI Director is Generational's executive creative department. It receives
 ideas and intelligence from every upstream engine and determines the optimal
 production strategy **before assets are generated**. It orchestrates Agents
@@ -9,14 +13,20 @@ media or duplicates downstream logic.
 ## Pipeline position
 
 ```
+Audience Intelligence → AI Studio Director (Production Blueprint)
+  → Script → Visuals → … → Studio Render → Optimization Lab → QA
+
+Legacy distribution path:
 Packaging → AI Director → Creative Studio → Character Universe →
 Asset Generation → Animation → Render → Post-Production → …
 ```
 
 Engine key: `ai_director`  
-Stage name: `ai_director`  
-Slot written: `director_package`  
+Executive stage: `direction`  
+Orchestrator stage: `ai_director`  
+Slot written: `director_package` (includes `production_blueprint` in v5)  
 Context keys: `ai_director_summary`, `ai_director_packages`
+Version: `5.0.0`
 
 ```python
 from services.orchestrator import Orchestrator

@@ -9,8 +9,8 @@ Contract rules (DATA_CONTRACTS.md): additive-only from 1.0 on.
 
 from __future__ import annotations
 
-AI_DIRECTOR_ENGINE_VERSION = "1.0.0"
-DIRECTOR_PACKAGE_VERSION = "1.0"
+AI_DIRECTOR_ENGINE_VERSION = "5.0.0"
+DIRECTOR_PACKAGE_VERSION = "5.0"
 
 
 class DirectorStatus:
@@ -62,7 +62,48 @@ DIRECTOR_PACKAGE_FIELDS = (
     "upstream_alignment",        # how Director reconciled upstream packages
     "validation",                # quality-control findings
     "director_diagnostics",      # decision trace, policy version, signals used
+    "production_blueprint",      # V5 Production Blueprint (full creative vision)
     "generated_at",
+)
+
+# V5 Production Blueprint — required before any production engine runs.
+PRODUCTION_BLUEPRINT_FIELDS = (
+    "blueprint_version",
+    "topic",
+    "primary_audience",
+    "target_age",
+    "knowledge_level",
+    "platform",
+    "video_length_sec",
+    "educational_goal",
+    "entertainment_goal",
+    "emotion_curve",
+    "curiosity_curve",
+    "retention_targets",
+    "visual_style",
+    "production_style_id",
+    "animation_style",
+    "color_palette",
+    "narration_style",
+    "music_style",
+    "camera_style",
+    "editing_style",
+    "thumbnail_strategy",
+    "seo_strategy",
+    "publishing_time",
+    "expected_competition",
+    "expected_difficulty",
+    "expected_ctr",
+    "expected_watch_time_sec",
+    "expected_completion_rate",
+    "visual_direction",
+    "narration_direction",
+    "music_direction",
+    "platform_strategy",
+    "competitor_analysis",
+    "style_library_entry",
+    "production_plan",
+    "rationale",
 )
 
 PRODUCTION_STRATEGY_FIELDS = (
@@ -206,6 +247,8 @@ DIRECTOR_SUMMARY_FIELDS = (
     "status",                    # directed | no_items | degraded
     "items",
     "packages",
+    "blueprints",
+    "production_styles",
     "ready",
     "needs_review",
     "degraded",
