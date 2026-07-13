@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "project": "project_reality",
+  "images": [
+    {
+      "image_id": "hoverfly_lateral",
+      "path": "images/hoverfly_lateral.jpg",
+      "license": "CC-BY-SA",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Episyrphus_balteatus_2.jpg",
+      "credit": "Alvesgaspar / Wikimedia Commons",
+      "organism": "Hoverfly",
+      "scientific_name": "Episyrphus balteatus",
+      "concepts": [
+        "batesian_mimicry",
+        "hoverfly",
+        "mimic",
+        "insect"
+      ],
+      "width": 960,
+      "height": 720
+    },
+    {
+      "image_id": "wasp_lateral",
+      "path": "images/wasp_lateral.jpg",
+      "license": "CC-BY-SA",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Vespula_germanica.jpg",
+      "credit": "Richard Bartz / Wikimedia Commons",
+      "organism": "German wasp",
+      "scientific_name": "Vespula germanica",
+      "concepts": [
+        "batesian_mimicry",
+        "wasp",
+        "model",
+        "warning_coloration"
+      ],
+      "width": 569,
+      "height": 569
+    },
+    {
+      "image_id": "coral_snake",
+      "path": "images/coral_snake.jpg",
+      "license": "CC-BY",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Coral_009.jpg",
+      "credit": "Dawson / Wikimedia Commons",
+      "organism": "Eastern coral snake",
+      "scientific_name": "Micrurus fulvius",
+      "concepts": [
+        "coral_snake",
+        "warning_coloration",
+        "venomous",
+        "model"
+      ],
+      "width": 960,
+      "height": 854
+    },
+    {
+      "image_id": "scarlet_kingsnake",
+      "path": "images/scarlet_kingsnake.jpg",
+      "license": "CC-BY-SA",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lampropeltis_triangulum_elapsoides.jpg",
+      "credit": "Patrick Coin / Wikimedia Commons",
+      "organism": "Scarlet kingsnake",
+      "scientific_name": "Lampropeltis elapsoides",
+      "concepts": [
+        "kingsnake",
+        "mimic",
+        "harmless",
+        "batesian_mimicry"
+      ],
+      "width": 600,
+      "height": 466
+    },
+    {
+      "image_id": "monarch_adult",
+      "path": "images/monarch_adult.jpg",
+      "license": "CC-BY-SA",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg",
+      "credit": "D. Gordon E. Robertson / Wikimedia Commons",
+      "organism": "Monarch butterfly",
+      "scientific_name": "Danaus plexippus",
+      "concepts": [
+        "monarch",
+        "warning_coloration",
+        "butterfly"
+      ],
+      "width": 960,
+      "height": 720
+    },
+    {
+      "image_id": "viceroy_adult",
+      "path": "images/viceroy_adult.jpg",
+      "license": "CC-BY-SA",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Viceroy_Butterfly.jpg",
+      "credit": "Cephas / Wikimedia Commons",
+      "organism": "Viceroy butterfly",
+      "scientific_name": "Limenitis archippus",
+      "concepts": [
+        "viceroy",
+        "mimic",
+        "butterfly"
+      ],
+      "width": 960,
+      "height": 743
+    },
+    {
+      "image_id": "green_sea_turtle",
+      "path": "images/green_sea_turtle.jpg",
+      "license": "CC-BY-SA",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chelonia_mydas_is_going_for_the_air_edit.jpg",
+      "credit": "Wikimedia Commons",
+      "organism": "Green sea turtle",
+      "scientific_name": "Chelonia mydas",
+      "concepts": [
+        "turtle",
+        "reptile",
+        "shell",
+        "evolution"
+      ],
+      "width": 960,
+      "height": 720
+    },
+    {
+      "image_id": "turtle_fossil",
+      "path": "images/turtle_fossil.jpg",
+      "license": "CC-BY-SA",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Eunotosaurus_africanus.jpg",
+      "credit": "Wikimedia Commons",
+      "organism": "Eunotosaurus (fossil reptile)",
+      "scientific_name": "Eunotosaurus africanus",
+      "concepts": [
+        "turtle",
+        "fossil",
+        "shell_evolution",
+        "intermediate"
+      ],
+      "width": 960,
+      "height": 747
+    }
+  ]
+}

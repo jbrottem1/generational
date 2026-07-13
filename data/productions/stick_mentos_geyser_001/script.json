@@ -1,0 +1,74 @@
+{
+  "title": "The Mentos Geyser Experiment",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Dash reveals the explosive science behind the Mentos geyser experiment.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Drop a Mentos in soda and watch the magic unfold!",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "What happens? A geyser shoots sky-high! It's a classic science experiment.",
+      "emotion": "excitement",
+      "delivery": "enthusiastic",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But why? Let's dive into the science behind this explosion.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 28.0,
+      "segment_type": "evidence",
+      "voiceover": "Mentos have a rough surface. When dropped in soda, they cause rapid bubble growth from dissolved CO2.",
+      "emotion": "informative",
+      "delivery": "clear and concise",
+      "retention_device": "visual explanation"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 28.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "The result? An epic fountain! Perfect for outdoor fun\u2014just be prepared!",
+      "emotion": "joy",
+      "delivery": "excited",
+      "retention_device": "visual climax"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Try it yourself, but remember to do it outside! Like for more fun experiments!",
+      "emotion": "inviting",
+      "delivery": "encouraging",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Drop a Mentos in soda and watch the magic unfold! What happens? A geyser shoots sky-high! It's a classic science experiment. But why? Let's dive into the science behind this explosion. Mentos have a rough surface. When dropped in soda, they cause rapid bubble growth from dissolved CO2. The result? An epic fountain! Perfect for outdoor fun\u2014just be prepared! Try it yourself, but remember to do it outside! Like for more fun experiments!",
+  "call_to_action": "Try it yourself, but remember to do it outside! Like for more fun experiments!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-11T00:11:45.094592+00:00",
+  "source": "ai"
+}

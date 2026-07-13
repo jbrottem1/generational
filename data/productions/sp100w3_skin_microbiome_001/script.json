@@ -1,0 +1,74 @@
+{
+  "title": "Your Skin Has an Ecosystem",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the hidden world of microbes living on your skin and their impact on your health.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Billions of microbes call your skin home. Are they friends or foes?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Your skin is a vibrant ecosystem. Most microbes are beneficial, but some can cause trouble.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "These microbes help protect you, but they can also react to harsh products.",
+      "emotion": "curiosity",
+      "delivery": "warning tone",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies suggest a balanced microbiome can improve skin health. But remember, research is ongoing.",
+      "emotion": "curiosity",
+      "delivery": "fact-based",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 42.0,
+      "segment_type": "payoff",
+      "voiceover": "So, less is often more. Choose products wisely to support your skin's ecosystem.",
+      "emotion": "curiosity",
+      "delivery": "encouraging",
+      "retention_device": "strong takeaway"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 42.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about your skin's health? Follow for more science-based insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Billions of microbes call your skin home. Are they friends or foes? Your skin is a vibrant ecosystem. Most microbes are beneficial, but some can cause trouble. These microbes help protect you, but they can also react to harsh products. Studies suggest a balanced microbiome can improve skin health. But remember, research is ongoing. So, less is often more. Choose products wisely to support your skin's ecosystem. Curious about your skin's health? Follow for more science-based insights!",
+  "call_to_action": "Curious about your skin's health? Follow for more science-based insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:06:03.462801+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if I told you your heart has secret gates?",
+    "visual_description": "Hook visual: What if I told you your heart has secret gates?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you your heart has secret gates?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you your heart has secret gates?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Heart valves control blood flow, ensuring it moves in the right direction. But how do they do this?",
+    "visual_description": "Context visual: Heart valves control blood flow, ensuring it moves in the right direction. But how do they do this?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Heart valves control blood flow, ensuring it moves in the right direction. But how do they do this?",
+    "ai_video_prompt": "Cinematic motion: Context visual: Heart valves control blood flow, ensuring it moves in the right direction. But how do they do this?",
+    "stock_footage_query": "",
+    "text_overlay": "Heart valves control blood",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "There are four main valves: tricuspid, pulmonary, mitral, and aortic. Each plays a critical role.",
+    "visual_description": "Escalation visual: There are four main valves: tricuspid, pulmonary, mitral, and aortic. Each plays a critical role.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: There are four main valves: tricuspid, pulmonary, mitral, and aortic. Each plays a critical role.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: There are four main valves: tricuspid, pulmonary, mitral, and aortic. Each plays a critical role.",
+    "stock_footage_query": "",
+    "text_overlay": "There are four main",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "They open and close with each heartbeat, preventing backflow. But what happens when they malfunction?",
+    "visual_description": "Evidence visual: They open and close with each heartbeat, preventing backflow. But what happens when they malfunction?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: They open and close with each heartbeat, preventing backflow. But what happens when they malfunction?",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: They open and close with each heartbeat, preventing backflow. But what happens when they malfunction?",
+    "stock_footage_query": "",
+    "text_overlay": "They open and close",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "Valve diseases can lead to serious health issues. Monitoring your heart health is essential!",
+    "visual_description": "Payoff visual: Valve diseases can lead to serious health issues. Monitoring your heart health is essential!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Valve diseases can lead to serious health issues. Monitoring your heart health is essential!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Valve diseases can lead to serious health issues. Monitoring your heart health is essential!",
+    "stock_footage_query": "",
+    "text_overlay": "Valve diseases can lead",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Curious about how to keep your heart healthy? Follow for more insights!",
+    "visual_description": "Cta visual: Curious about how to keep your heart healthy? Follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about how to keep your heart healthy? Follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about how to keep your heart healthy? Follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about how to",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

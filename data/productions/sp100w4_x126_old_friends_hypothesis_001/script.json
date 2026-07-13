@@ -1,0 +1,74 @@
+{
+  "title": "Old friends hypothesis",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the science behind the old friends hypothesis and its implications.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about old friends hypothesis.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "The old friends hypothesis suggests that familiar microbes help our immune system develop better.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Without exposure to these microbes, our immune system might struggle, leading to allergies and autoimmune diseases.",
+      "emotion": "concern",
+      "delivery": "building suspense",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows that kids in rural areas have fewer allergies, possibly from greater microbial diversity.",
+      "emotion": "intrigue",
+      "delivery": "factual",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "So, reconnecting with old friends might not just feel good, it could also be vital for our health.",
+      "emotion": "revelation",
+      "delivery": "insightful",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how your environment shapes your health? Follow for more insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "natural CTA"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about old friends hypothesis. The old friends hypothesis suggests that familiar microbes help our immune system develop better. Without exposure to these microbes, our immune system might struggle, leading to allergies and autoimmune diseases. Research shows that kids in rural areas have fewer allergies, possibly from greater microbial diversity. So, reconnecting with old friends might not just feel good, it could also be vital for our health. Curious about how your environment shapes your health? Follow for more insights!",
+  "call_to_action": "Curious about how your environment shapes your health? Follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:30:06.847074+00:00",
+  "source": "ai"
+}

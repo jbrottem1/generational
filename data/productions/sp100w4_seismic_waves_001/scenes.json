@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Did you know earthquake waves can unlock secrets about our planet?",
+    "visual_description": "Hook visual: Did you know earthquake waves can unlock secrets about our planet?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Did you know earthquake waves can unlock secrets about our planet?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Did you know earthquake waves can unlock secrets about our planet?",
+    "stock_footage_query": "",
+    "text_overlay": "Did you know earthquake",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Two main types of seismic waves exist: P waves and S waves.",
+    "visual_description": "Context visual: Two main types of seismic waves exist: P waves and S waves.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Two main types of seismic waves exist: P waves and S waves.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Two main types of seismic waves exist: P waves and S waves.",
+    "stock_footage_query": "",
+    "text_overlay": "Two main types of",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "P waves compress and travel faster. They\u2019re the first to arrive.",
+    "visual_description": "Escalation visual: P waves compress and travel faster. They\u2019re the first to arrive.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: P waves compress and travel faster. They\u2019re the first to arrive.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: P waves compress and travel faster. They\u2019re the first to arrive.",
+    "stock_footage_query": "",
+    "text_overlay": "P waves compress and",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "S waves shear and arrive later, revealing more about the quake's intensity.",
+    "visual_description": "Evidence visual: S waves shear and arrive later, revealing more about the quake's intensity.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: S waves shear and arrive later, revealing more about the quake's intensity.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: S waves shear and arrive later, revealing more about the quake's intensity.",
+    "stock_footage_query": "",
+    "text_overlay": "S waves shear and",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Detecting these waves helps scientists locate quakes and assess damage.",
+    "visual_description": "Payoff visual: Detecting these waves helps scientists locate quakes and assess damage.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Detecting these waves helps scientists locate quakes and assess damage.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Detecting these waves helps scientists locate quakes and assess damage.",
+    "stock_footage_query": "",
+    "text_overlay": "Detecting these waves helps",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 36.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 24.0,
+    "narration": "Want to learn more about our planet's mysteries? Hit subscribe!",
+    "visual_description": "Cta visual: Want to learn more about our planet's mysteries? Hit subscribe!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to learn more about our planet's mysteries? Hit subscribe!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to learn more about our planet's mysteries? Hit subscribe!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 36.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 36.0
+    }
+  }
+]

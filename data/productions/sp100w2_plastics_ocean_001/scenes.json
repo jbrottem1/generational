@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Plastic doesn\u2019t disappear; it just breaks down.",
+    "visual_description": "Hook visual: Plastic doesn\u2019t disappear; it just breaks down.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Plastic doesn\u2019t disappear; it just breaks down.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Plastic doesn\u2019t disappear; it just breaks down.",
+    "stock_footage_query": "",
+    "text_overlay": "Plastic doesn\u2019t disappear; it",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Microplastics are tiny plastic fragments invading our oceans, lurking in every corner.",
+    "visual_description": "Context visual: Microplastics are tiny plastic fragments invading our oceans, lurking in every corner.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Microplastics are tiny plastic fragments invading our oceans, lurking in every corner.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Microplastics are tiny plastic fragments invading our oceans, lurking in every corner.",
+    "stock_footage_query": "",
+    "text_overlay": "Microplastics are tiny plastic",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "They travel up the food web, from plankton to fish\u2026 and even into our plates.",
+    "visual_description": "Escalation visual: They travel up the food web, from plankton to fish\u2026 and even into our plates.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: They travel up the food web, from plankton to fish\u2026 and even into our plates.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: They travel up the food web, from plankton to fish\u2026 and even into our plates.",
+    "stock_footage_query": "",
+    "text_overlay": "They travel up the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "seriousness",
+    "length_sec": 12.0,
+    "narration": "Research from NOAA shows microplastics can disrupt marine life and ecosystems.",
+    "visual_description": "Evidence visual: Research from NOAA shows microplastics can disrupt marine life and ecosystems.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research from NOAA shows microplastics can disrupt marine life and ecosystems.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research from NOAA shows microplastics can disrupt marine life and ecosystems.",
+    "stock_footage_query": "",
+    "text_overlay": "Research from NOAA shows",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "reassurance",
+    "length_sec": 15.0,
+    "narration": "But don\u2019t panic! Scientists are working to understand and tackle this issue.",
+    "visual_description": "Payoff visual: But don\u2019t panic! Scientists are working to understand and tackle this issue.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: But don\u2019t panic! Scientists are working to understand and tackle this issue.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: But don\u2019t panic! Scientists are working to understand and tackle this issue.",
+    "stock_footage_query": "",
+    "text_overlay": "But don\u2019t panic! Scientists",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "encouragement",
+    "length_sec": 15.0,
+    "narration": "Stay informed and protect our oceans. Hit like and follow for more science insights!",
+    "visual_description": "Cta visual: Stay informed and protect our oceans. Hit like and follow for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Stay informed and protect our oceans. Hit like and follow for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Stay informed and protect our oceans. Hit like and follow for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Stay informed and protect",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "title": "Water Can Boil and Freeze at the Same Time",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the triple point of water where ice, liquid, and vapor coexist.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Imagine water boiling and freezing at the same time!",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "This happens at the triple point, a unique state where ice, liquid, and vapor coexist perfectly.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact reveal"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "At about 273.16 Kelvin and 611.657 Pascals, this equilibrium occurs. Sounds wild, right?",
+      "emotion": "curiosity",
+      "delivery": "excited",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "This isn\u2019t just a kitchen trick. It\u2019s grounded in standard thermodynamics and backed by science.",
+      "emotion": "curiosity",
+      "delivery": "assertive",
+      "retention_device": "scientific credibility"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "This fascinating phenomenon showcases nature\u2019s complexity and the beauty of phase transitions.",
+      "emotion": "wonder",
+      "delivery": "inspirational",
+      "retention_device": "insight reveal"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more amazing science secrets? Hit that like button and follow for more!",
+      "emotion": "encouragement",
+      "delivery": "enthusiastic",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Imagine water boiling and freezing at the same time! This happens at the triple point, a unique state where ice, liquid, and vapor coexist perfectly. At about 273.16 Kelvin and 611.657 Pascals, this equilibrium occurs. Sounds wild, right? This isn\u2019t just a kitchen trick. It\u2019s grounded in standard thermodynamics and backed by science. This fascinating phenomenon showcases nature\u2019s complexity and the beauty of phase transitions. Curious about more amazing science secrets? Hit that like button and follow for more!",
+  "call_to_action": "Hit that like button and follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T20:43:30.671586+00:00",
+  "source": "ai"
+}

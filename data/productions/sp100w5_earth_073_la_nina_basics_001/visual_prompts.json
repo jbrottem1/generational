@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science has a clearer story about La Nina than social media does.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: La Nina is a climate pattern that cools ocean temperatures in the Pacific. But how does it affect us?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: While it can bring heavy rains to some areas, others may experience drought. It\u2019s a mixed bag!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Scientists predict patterns, but there\u2019s always uncertainty. Predictions can shift as new data comes in.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Understanding La Nina helps us prepare for extreme weather, whether you're in the storm's path or not.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about more weather science? Hit that follow button and stay informed!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science has a clearer story about La Nina than social media does.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: La Nina is a climate pattern that cools ocean temperatures in the Pacific. But how does it affect us?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: While it can bring heavy rains to some areas, others may experience drought. It\u2019s a mixed bag!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Scientists predict patterns, but there\u2019s always uncertainty. Predictions can shift as new data comes in.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Understanding La Nina helps us prepare for extreme weather, whether you're in the storm's path or not.",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about more weather science? Hit that follow button and stay informed!",
+      "duration_sec": 22.0
+    }
+  ]
+}

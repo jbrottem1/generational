@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about neuroinflammation than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about neuroinflammation than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about neuroinflammation than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about neuroinflammation than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Neuroinflammation is the brain's response to injury or disease.",
+    "visual_description": "Context visual: Neuroinflammation is the brain's response to injury or disease.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Neuroinflammation is the brain's response to injury or disease.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Neuroinflammation is the brain's response to injury or disease.",
+    "stock_footage_query": "",
+    "text_overlay": "Neuroinflammation is the brain's",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "But excessive inflammation can lead to serious problems, like neurodegenerative diseases.",
+    "visual_description": "Escalation visual: But excessive inflammation can lead to serious problems, like neurodegenerative diseases.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But excessive inflammation can lead to serious problems, like neurodegenerative diseases.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But excessive inflammation can lead to serious problems, like neurodegenerative diseases.",
+    "stock_footage_query": "",
+    "text_overlay": "But excessive inflammation can",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "informative",
+    "length_sec": 12.0,
+    "narration": "Studies show that conditions like Alzheimer\u2019s and multiple sclerosis involve neuroinflammation.",
+    "visual_description": "Evidence visual: Studies show that conditions like Alzheimer\u2019s and multiple sclerosis involve neuroinflammation.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show that conditions like Alzheimer\u2019s and multiple sclerosis involve neuroinflammation.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show that conditions like Alzheimer\u2019s and multiple sclerosis involve neuroinflammation.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show that conditions",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "hope",
+    "length_sec": 15.0,
+    "narration": "Understanding this process helps researchers develop better treatments and preventative measures.",
+    "visual_description": "Payoff visual: Understanding this process helps researchers develop better treatments and preventative measures.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding this process helps researchers develop better treatments and preventative measures.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding this process helps researchers develop better treatments and preventative measures.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding this process helps",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "engagement",
+    "length_sec": 15.0,
+    "narration": "Curious about how to protect your brain? Follow for more insights!",
+    "visual_description": "Cta visual: Curious about how to protect your brain? Follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about how to protect your brain? Follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about how to protect your brain? Follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about how to",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

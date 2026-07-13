@@ -1,0 +1,68 @@
+{
+  "$schema_name": "dash_science_episode_package",
+  "version": "1.0.0",
+  "series_id": "SERIES-DASH-SCIENCE",
+  "character_id": "CHAR-DASH",
+  "animation_library": "ANIM-DASH-V1",
+  "format": {
+    "aspect": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_sec_range": [30, 60]
+  },
+  "required_fields": [
+    "episode_id",
+    "seo_title",
+    "description",
+    "hashtags",
+    "thumbnail_concept",
+    "script",
+    "voice_direction",
+    "music_direction",
+    "scenes",
+    "transition_plan",
+    "caption_cues",
+    "sfx_plan"
+  ],
+  "scene_required_fields": [
+    "scene_id",
+    "t_start",
+    "t_end",
+    "narration",
+    "background",
+    "camera",
+    "dash_animation",
+    "expression",
+    "visuals",
+    "image_prompt",
+    "sfx"
+  ],
+  "automation_hooks": {
+    "script_gen": "Fill script.full_text + scenes[].narration from topic brief using SERIES_BIBLE voice.",
+    "storyboard_gen": "Map each scene to ANIM-DASH-V1 component IDs; enforce beat_change every 2-4s.",
+    "asset_gen": "Use CHAR-DASH prompt_lock + scene image_prompt; never redesign Dash.",
+    "caption_gen": "Derive caption_cues from narration word timings.",
+    "qc_gates": [
+      "dash_on_screen_ratio >= 0.7",
+      "max_static_frame_sec <= 3.0",
+      "no_flat_solid_full_background",
+      "character_id == CHAR-DASH",
+      "all dash_animation ids in ANIM-DASH-V1"
+    ]
+  },
+  "episode_template": {
+    "episode_id": "dash_XXXX",
+    "seo_title": "",
+    "description": "",
+    "hashtags": [],
+    "thumbnail_concept": "",
+    "voice_direction": "Energetic curious fast-paced intelligent occasional humor; never robotic.",
+    "music_direction": "",
+    "script": {"hook": "", "body": [], "payoff": "", "full_text": ""},
+    "scenes": [],
+    "transition_plan": [],
+    "caption_cues": [],
+    "sfx_plan": []
+  }
+}

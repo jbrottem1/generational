@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Galaxies spin too fast for visible matter alone \u2014 something unseen is holding them.",
+    "visual_description": "Hook visual: Galaxies spin too fast for visible matter alone \u2014 something unseen is holding them.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Galaxies spin too fast for visible matter alone \u2014 something unseen is holding them.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Galaxies spin too fast for visible matter alone \u2014 something unseen is holding them.",
+    "stock_footage_query": "",
+    "text_overlay": "Galaxies spin too fast",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Ever wondered why galaxies don't fly apart? It's all about rotation curves.",
+    "visual_description": "Context visual: Ever wondered why galaxies don't fly apart? It's all about rotation curves.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Ever wondered why galaxies don't fly apart? It's all about rotation curves.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Ever wondered why galaxies don't fly apart? It's all about rotation curves.",
+    "stock_footage_query": "",
+    "text_overlay": "Ever wondered why galaxies",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "As we measure their speeds, we find they\u2019re moving way too fast \u2014 implying more mass is hiding out there.",
+    "visual_description": "Escalation visual: As we measure their speeds, we find they\u2019re moving way too fast \u2014 implying more mass is hiding out there.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: As we measure their speeds, we find they\u2019re moving way too fast \u2014 implying more mass is hiding out there.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: As we measure their speeds, we find they\u2019re moving way too fast \u2014 implying more mass is hiding out there.",
+    "stock_footage_query": "",
+    "text_overlay": "As we measure their",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "This unseen mass? That's dark matter \u2014 inferred, not directly detected. And yes, alternatives exist.",
+    "visual_description": "Evidence visual: This unseen mass? That's dark matter \u2014 inferred, not directly detected. And yes, alternatives exist.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: This unseen mass? That's dark matter \u2014 inferred, not directly detected. And yes, alternatives exist.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: This unseen mass? That's dark matter \u2014 inferred, not directly detected. And yes, alternatives exist.",
+    "stock_footage_query": "",
+    "text_overlay": "This unseen mass? That's",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "But dark matter is still the leading model, explaining the universe's structure better than anything else.",
+    "visual_description": "Payoff visual: But dark matter is still the leading model, explaining the universe's structure better than anything else.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: But dark matter is still the leading model, explaining the universe's structure better than anything else.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: But dark matter is still the leading model, explaining the universe's structure better than anything else.",
+    "stock_footage_query": "",
+    "text_overlay": "But dark matter is",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "Curious about the universe? Hit like and follow for more mysteries!",
+    "visual_description": "Cta visual: Curious about the universe? Hit like and follow for more mysteries!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about the universe? Hit like and follow for more mysteries!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about the universe? Hit like and follow for more mysteries!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about the universe?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

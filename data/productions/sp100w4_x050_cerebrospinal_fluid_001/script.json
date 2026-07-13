@@ -1,0 +1,74 @@
+{
+  "title": "Cerebrospinal Fluid",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the vital role of cerebrospinal fluid in brain health and function.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about cerebrospinal fluid.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Cerebrospinal fluid, or CSF, surrounds and cushions the brain.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But did you know it also removes waste and provides nutrients?",
+      "emotion": "surprise",
+      "delivery": "intriguing",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Recent studies link CSF flow to neurodegenerative diseases.",
+      "emotion": "concern",
+      "delivery": "informative",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding CSF could unlock new treatments for brain disorders.",
+      "emotion": "hope",
+      "delivery": "uplifting",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into neuroscience? Hit that follow button!",
+      "emotion": "motivational",
+      "delivery": "enthusiastic",
+      "retention_device": "clear CTA"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about cerebrospinal fluid. Cerebrospinal fluid, or CSF, surrounds and cushions the brain. But did you know it also removes waste and provides nutrients? Recent studies link CSF flow to neurodegenerative diseases. Understanding CSF could unlock new treatments for brain disorders. Want to dive deeper into neuroscience? Hit that follow button!",
+  "call_to_action": "Want to dive deeper into neuroscience? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:20:49.446348+00:00",
+  "source": "ai"
+}

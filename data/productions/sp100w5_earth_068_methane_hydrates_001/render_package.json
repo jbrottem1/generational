@@ -1,0 +1,1698 @@
+{
+  "render_package_version": "2.0",
+  "render_engine_version": "1.0.0",
+  "title": "Methane hydrates",
+  "created_at": "2026-07-10T17:43:04.902297+00:00",
+  "output_format": {
+    "aspect_ratio": "9:16",
+    "resolution": {
+      "width": 1080,
+      "height": 1920
+    },
+    "container": "mp4",
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "fps": 30,
+    "orientation": "vertical",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels"
+    ]
+  },
+  "platforms": [
+    "youtube_shorts",
+    "tiktok",
+    "instagram_reels",
+    "facebook_reels"
+  ],
+  "resolution": "1080x1920",
+  "aspect_ratio": "9:16",
+  "duration_sec": 60.0,
+  "timeline": {
+    "fps": 30,
+    "total_duration_sec": 60.0,
+    "segment_count": 6,
+    "segments": [
+      {
+        "scene_id": 1,
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "duration": 2.0,
+        "narration_reference": "narration/scene_1",
+        "visual_reference": "visual/scene_1",
+        "caption_reference": "captions/scene_1",
+        "audio_reference": "audio/scene_1",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "quick_punch_in",
+        "overlay_text": "Science has a clearer",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 2,
+        "start_time": 2.0,
+        "end_time": 10.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_2",
+        "visual_reference": "visual/scene_2",
+        "caption_reference": "captions/scene_2",
+        "audio_reference": "audio/scene_2",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Methane hydrates are icy",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 3,
+        "start_time": 10.0,
+        "end_time": 18.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_3",
+        "visual_reference": "visual/scene_3",
+        "caption_reference": "captions/scene_3",
+        "audio_reference": "audio/scene_3",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "As climate change warms",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 4,
+        "start_time": 18.0,
+        "end_time": 26.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_4",
+        "visual_reference": "visual/scene_4",
+        "caption_reference": "captions/scene_4",
+        "audio_reference": "audio/scene_4",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Scientists warn that releasing",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 5,
+        "start_time": 26.0,
+        "end_time": 46.0,
+        "duration": 20.0,
+        "narration_reference": "narration/scene_5",
+        "visual_reference": "visual/scene_5",
+        "caption_reference": "captions/scene_5",
+        "audio_reference": "audio/scene_5",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "But we still need",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 6,
+        "start_time": 46.0,
+        "end_time": 60.0,
+        "duration": 14.0,
+        "narration_reference": "narration/scene_6",
+        "visual_reference": "visual/scene_6",
+        "caption_reference": "captions/scene_6",
+        "audio_reference": "audio/scene_6",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Want to know more",
+        "render_status": "planned"
+      }
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "scene_render_plan": [
+    {
+      "scene_id": 1,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Hook visual: Science has a clearer story about methane hydrates than social media does.",
+      "video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about methane hydrates than social media does.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "subtle push",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "quick_punch_in",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.188
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 70
+      },
+      "text_overlays": [
+        {
+          "text": "Science has a clearer",
+          "treatment": "",
+          "start_sec": 0.0,
+          "end_sec": 2.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "bass hit",
+          "at_sec": 0.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Science has a clearer story about methane hydrates than social media does.",
+      "duration_sec": 2.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Hook visual: Science has a clearer story about methane hydrates than social media does.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 1
+      }
+    },
+    {
+      "scene_id": 2,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Context visual: Methane hydrates are icy structures where methane gas is trapped in water, found deep under the ocean and in permafrost.",
+      "video_prompt": "Cinematic motion: Context visual: Methane hydrates are icy structures where methane gas is trapped in water, found deep under the ocean and in permafrost.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Methane hydrates are icy",
+          "treatment": "",
+          "start_sec": 2.0,
+          "end_sec": 10.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 2.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Methane hydrates are icy structures where methane gas is trapped in water, found deep under the ocean and in permafrost.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Context visual: Methane hydrates are icy structures where methane gas is trapped in water, found deep under the ocean and in permafrost.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 2
+      }
+    },
+    {
+      "scene_id": 3,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Escalation visual: As climate change warms our planet, these hydrates may destabilize. What happens then?",
+      "video_prompt": "Cinematic motion: Escalation visual: As climate change warms our planet, these hydrates may destabilize. What happens then?",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "As climate change warms",
+          "treatment": "",
+          "start_sec": 10.0,
+          "end_sec": 18.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 10.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "As climate change warms our planet, these hydrates may destabilize. What happens then?",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Escalation visual: As climate change warms our planet, these hydrates may destabilize. What happens then?",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 3
+      }
+    },
+    {
+      "scene_id": 4,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Evidence visual: Scientists warn that releasing methane could accelerate global warming\u2014it's 25 times more potent than CO2.",
+      "video_prompt": "Cinematic motion: Evidence visual: Scientists warn that releasing methane could accelerate global warming\u2014it's 25 times more potent than CO2.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Scientists warn that releasing",
+          "treatment": "",
+          "start_sec": 18.0,
+          "end_sec": 26.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 18.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Scientists warn that releasing methane could accelerate global warming\u2014it's 25 times more potent than CO2.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Evidence visual: Scientists warn that releasing methane could accelerate global warming\u2014it's 25 times more potent than CO2.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 4
+      }
+    },
+    {
+      "scene_id": 5,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Payoff visual: But we still need research. Uncertainty remains about how much methane could be released and its effects.",
+      "video_prompt": "Cinematic motion: Payoff visual: But we still need research. Uncertainty remains about how much methane could be released and its effects.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "But we still need",
+          "treatment": "",
+          "start_sec": 26.0,
+          "end_sec": 46.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 26.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "But we still need research. Uncertainty remains about how much methane could be released and its effects.",
+      "duration_sec": 20.0,
+      "resolved_asset": {}
+    },
+    {
+      "scene_id": 6,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Cta visual: Want to know more about our planet? Hit like and follow for more science insights!",
+      "video_prompt": "Cinematic motion: Cta visual: Want to know more about our planet? Hit like and follow for more science insights!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Want to know more",
+          "treatment": "",
+          "start_sec": 46.0,
+          "end_sec": 60.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 46.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Want to know more about our planet? Hit like and follow for more science insights!",
+      "duration_sec": 14.0,
+      "resolved_asset": {}
+    }
+  ],
+  "caption_render_plan": {
+    "mode": "word_by_word",
+    "style_preset": "bold_pop",
+    "style": {
+      "font": "Montserrat ExtraBold",
+      "size_pct": 4.8,
+      "fill": "#FFFFFF",
+      "stroke": "#000000",
+      "stroke_width_px": 6,
+      "emphasis_fill": "#FFD400",
+      "animation": "word pop 1.08x on entry",
+      "case": "upper"
+    },
+    "available_presets": [
+      "bold_pop",
+      "clean_minimal",
+      "karaoke_highlight",
+      "documentary_lower_third"
+    ],
+    "safe_area": {
+      "top_pct": 12.0,
+      "bottom_pct": 20.0,
+      "left_pct": 6.0,
+      "right_pct": 12.0
+    },
+    "platform_layouts": {
+      "youtube_shorts": {
+        "anchor_y_pct": 68.0,
+        "notes": "clear the title/channel block at the bottom"
+      },
+      "tiktok": {
+        "anchor_y_pct": 64.0,
+        "notes": "clear caption + music marquee, keep off the right rail"
+      },
+      "instagram_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "clear the audio attribution row"
+      },
+      "facebook_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "mirror the Reels layout"
+      }
+    },
+    "segments": [
+      {
+        "scene_id": 1,
+        "mode": "word_by_word",
+        "start_sec": 0.0,
+        "end_sec": 2.0,
+        "sentence": "Science has a clearer story about methane hydrates than social media does.",
+        "words": [
+          {
+            "word": "Science",
+            "start_sec": 0.0,
+            "end_sec": 0.21,
+            "emphasis": true
+          },
+          {
+            "word": "has",
+            "start_sec": 0.21,
+            "end_sec": 0.33,
+            "emphasis": false
+          },
+          {
+            "word": "a",
+            "start_sec": 0.33,
+            "end_sec": 0.4,
+            "emphasis": false
+          },
+          {
+            "word": "clearer",
+            "start_sec": 0.4,
+            "end_sec": 0.6,
+            "emphasis": false
+          },
+          {
+            "word": "story",
+            "start_sec": 0.6,
+            "end_sec": 0.77,
+            "emphasis": false
+          },
+          {
+            "word": "about",
+            "start_sec": 0.77,
+            "end_sec": 0.93,
+            "emphasis": false
+          },
+          {
+            "word": "methane",
+            "start_sec": 0.93,
+            "end_sec": 1.14,
+            "emphasis": false
+          },
+          {
+            "word": "hydrates",
+            "start_sec": 1.14,
+            "end_sec": 1.37,
+            "emphasis": true
+          },
+          {
+            "word": "than",
+            "start_sec": 1.37,
+            "end_sec": 1.51,
+            "emphasis": false
+          },
+          {
+            "word": "social",
+            "start_sec": 1.51,
+            "end_sec": 1.7,
+            "emphasis": false
+          },
+          {
+            "word": "media",
+            "start_sec": 1.7,
+            "end_sec": 1.86,
+            "emphasis": false
+          },
+          {
+            "word": "does",
+            "start_sec": 1.86,
+            "end_sec": 2.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "Science",
+          "hydrates"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 2,
+        "mode": "word_by_word",
+        "start_sec": 2.0,
+        "end_sec": 10.0,
+        "sentence": "Methane hydrates are icy structures where methane gas is trapped in water, found deep under the ocean and in permafrost.",
+        "words": [
+          {
+            "word": "Methane",
+            "start_sec": 2.0,
+            "end_sec": 2.52,
+            "emphasis": false
+          },
+          {
+            "word": "hydrates",
+            "start_sec": 2.52,
+            "end_sec": 3.09,
+            "emphasis": true
+          },
+          {
+            "word": "are",
+            "start_sec": 3.09,
+            "end_sec": 3.38,
+            "emphasis": false
+          },
+          {
+            "word": "icy",
+            "start_sec": 3.38,
+            "end_sec": 3.67,
+            "emphasis": false
+          },
+          {
+            "word": "structures",
+            "start_sec": 3.67,
+            "end_sec": 4.36,
+            "emphasis": true
+          },
+          {
+            "word": "where",
+            "start_sec": 4.36,
+            "end_sec": 4.76,
+            "emphasis": false
+          },
+          {
+            "word": "methane",
+            "start_sec": 4.76,
+            "end_sec": 5.28,
+            "emphasis": false
+          },
+          {
+            "word": "gas",
+            "start_sec": 5.28,
+            "end_sec": 5.57,
+            "emphasis": false
+          },
+          {
+            "word": "is",
+            "start_sec": 5.57,
+            "end_sec": 5.8,
+            "emphasis": false
+          },
+          {
+            "word": "trapped",
+            "start_sec": 5.8,
+            "end_sec": 6.32,
+            "emphasis": false
+          },
+          {
+            "word": "in",
+            "start_sec": 6.32,
+            "end_sec": 6.55,
+            "emphasis": false
+          },
+          {
+            "word": "water",
+            "start_sec": 6.55,
+            "end_sec": 6.95,
+            "emphasis": false
+          },
+          {
+            "word": "found",
+            "start_sec": 6.95,
+            "end_sec": 7.35,
+            "emphasis": false
+          },
+          {
+            "word": "deep",
+            "start_sec": 7.35,
+            "end_sec": 7.7,
+            "emphasis": false
+          },
+          {
+            "word": "under",
+            "start_sec": 7.7,
+            "end_sec": 8.1,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 8.1,
+            "end_sec": 8.39,
+            "emphasis": false
+          },
+          {
+            "word": "ocean",
+            "start_sec": 8.39,
+            "end_sec": 8.79,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 8.79,
+            "end_sec": 9.08,
+            "emphasis": false
+          },
+          {
+            "word": "in",
+            "start_sec": 9.08,
+            "end_sec": 9.31,
+            "emphasis": false
+          },
+          {
+            "word": "permafrost",
+            "start_sec": 9.31,
+            "end_sec": 10.0,
+            "emphasis": true
+          }
+        ],
+        "emphasis_words": [
+          "hydrates",
+          "permafrost",
+          "structures"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 3,
+        "mode": "word_by_word",
+        "start_sec": 10.0,
+        "end_sec": 18.0,
+        "sentence": "As climate change warms our planet, these hydrates may destabilize. What happens then?",
+        "words": [
+          {
+            "word": "As",
+            "start_sec": 10.0,
+            "end_sec": 10.33,
+            "emphasis": false
+          },
+          {
+            "word": "climate",
+            "start_sec": 10.33,
+            "end_sec": 11.07,
+            "emphasis": false
+          },
+          {
+            "word": "change",
+            "start_sec": 11.07,
+            "end_sec": 11.73,
+            "emphasis": false
+          },
+          {
+            "word": "warms",
+            "start_sec": 11.73,
+            "end_sec": 12.31,
+            "emphasis": false
+          },
+          {
+            "word": "our",
+            "start_sec": 12.31,
+            "end_sec": 12.72,
+            "emphasis": false
+          },
+          {
+            "word": "planet",
+            "start_sec": 12.72,
+            "end_sec": 13.38,
+            "emphasis": false
+          },
+          {
+            "word": "these",
+            "start_sec": 13.38,
+            "end_sec": 13.96,
+            "emphasis": false
+          },
+          {
+            "word": "hydrates",
+            "start_sec": 13.96,
+            "end_sec": 14.78,
+            "emphasis": true
+          },
+          {
+            "word": "may",
+            "start_sec": 14.78,
+            "end_sec": 15.2,
+            "emphasis": false
+          },
+          {
+            "word": "destabilize",
+            "start_sec": 15.2,
+            "end_sec": 16.27,
+            "emphasis": true
+          },
+          {
+            "word": "What",
+            "start_sec": 16.27,
+            "end_sec": 16.76,
+            "emphasis": false
+          },
+          {
+            "word": "happens",
+            "start_sec": 16.76,
+            "end_sec": 17.51,
+            "emphasis": false
+          },
+          {
+            "word": "then",
+            "start_sec": 17.51,
+            "end_sec": 18.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "destabilize",
+          "hydrates"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 4,
+        "mode": "word_by_word",
+        "start_sec": 18.0,
+        "end_sec": 26.0,
+        "sentence": "Scientists warn that releasing methane could accelerate global warming\u2014it's 25 times more potent than CO2.",
+        "words": [
+          {
+            "word": "Scientists",
+            "start_sec": 18.0,
+            "end_sec": 18.79,
+            "emphasis": true
+          },
+          {
+            "word": "warn",
+            "start_sec": 18.79,
+            "end_sec": 19.18,
+            "emphasis": false
+          },
+          {
+            "word": "that",
+            "start_sec": 19.18,
+            "end_sec": 19.57,
+            "emphasis": false
+          },
+          {
+            "word": "releasing",
+            "start_sec": 19.57,
+            "end_sec": 20.3,
+            "emphasis": false
+          },
+          {
+            "word": "methane",
+            "start_sec": 20.3,
+            "end_sec": 20.89,
+            "emphasis": false
+          },
+          {
+            "word": "could",
+            "start_sec": 20.89,
+            "end_sec": 21.34,
+            "emphasis": false
+          },
+          {
+            "word": "accelerate",
+            "start_sec": 21.34,
+            "end_sec": 22.13,
+            "emphasis": true
+          },
+          {
+            "word": "global",
+            "start_sec": 22.13,
+            "end_sec": 22.66,
+            "emphasis": false
+          },
+          {
+            "word": "warming",
+            "start_sec": 22.66,
+            "end_sec": 23.25,
+            "emphasis": false
+          },
+          {
+            "word": "it's",
+            "start_sec": 23.25,
+            "end_sec": 23.64,
+            "emphasis": false
+          },
+          {
+            "word": "25",
+            "start_sec": 23.64,
+            "end_sec": 23.9,
+            "emphasis": true
+          },
+          {
+            "word": "times",
+            "start_sec": 23.9,
+            "end_sec": 24.36,
+            "emphasis": false
+          },
+          {
+            "word": "more",
+            "start_sec": 24.36,
+            "end_sec": 24.75,
+            "emphasis": false
+          },
+          {
+            "word": "potent",
+            "start_sec": 24.75,
+            "end_sec": 25.28,
+            "emphasis": false
+          },
+          {
+            "word": "than",
+            "start_sec": 25.28,
+            "end_sec": 25.67,
+            "emphasis": false
+          },
+          {
+            "word": "CO2",
+            "start_sec": 25.67,
+            "end_sec": 26.0,
+            "emphasis": true
+          }
+        ],
+        "emphasis_words": [
+          "25",
+          "CO2",
+          "Scientists",
+          "accelerate"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 5,
+        "mode": "word_by_word",
+        "start_sec": 26.0,
+        "end_sec": 46.0,
+        "sentence": "But we still need research. Uncertainty remains about how much methane could be released and its effects.",
+        "words": [
+          {
+            "word": "But",
+            "start_sec": 26.0,
+            "end_sec": 26.83,
+            "emphasis": false
+          },
+          {
+            "word": "we",
+            "start_sec": 26.83,
+            "end_sec": 27.49,
+            "emphasis": false
+          },
+          {
+            "word": "still",
+            "start_sec": 27.49,
+            "end_sec": 28.64,
+            "emphasis": false
+          },
+          {
+            "word": "need",
+            "start_sec": 28.64,
+            "end_sec": 29.64,
+            "emphasis": false
+          },
+          {
+            "word": "research",
+            "start_sec": 29.64,
+            "end_sec": 31.29,
+            "emphasis": true
+          },
+          {
+            "word": "Uncertainty",
+            "start_sec": 31.29,
+            "end_sec": 33.44,
+            "emphasis": true
+          },
+          {
+            "word": "remains",
+            "start_sec": 33.44,
+            "end_sec": 34.93,
+            "emphasis": false
+          },
+          {
+            "word": "about",
+            "start_sec": 34.93,
+            "end_sec": 36.08,
+            "emphasis": false
+          },
+          {
+            "word": "how",
+            "start_sec": 36.08,
+            "end_sec": 36.91,
+            "emphasis": false
+          },
+          {
+            "word": "much",
+            "start_sec": 36.91,
+            "end_sec": 37.9,
+            "emphasis": false
+          },
+          {
+            "word": "methane",
+            "start_sec": 37.9,
+            "end_sec": 39.39,
+            "emphasis": false
+          },
+          {
+            "word": "could",
+            "start_sec": 39.39,
+            "end_sec": 40.55,
+            "emphasis": false
+          },
+          {
+            "word": "be",
+            "start_sec": 40.55,
+            "end_sec": 41.21,
+            "emphasis": false
+          },
+          {
+            "word": "released",
+            "start_sec": 41.21,
+            "end_sec": 42.86,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 42.86,
+            "end_sec": 43.69,
+            "emphasis": false
+          },
+          {
+            "word": "its",
+            "start_sec": 43.69,
+            "end_sec": 44.51,
+            "emphasis": false
+          },
+          {
+            "word": "effects",
+            "start_sec": 44.51,
+            "end_sec": 46.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "Uncertainty",
+          "research"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 6,
+        "mode": "word_by_word",
+        "start_sec": 46.0,
+        "end_sec": 60.0,
+        "sentence": "Want to know more about our planet? Hit like and follow for more science insights!",
+        "words": [
+          {
+            "word": "Want",
+            "start_sec": 46.0,
+            "end_sec": 46.88,
+            "emphasis": false
+          },
+          {
+            "word": "to",
+            "start_sec": 46.88,
+            "end_sec": 47.46,
+            "emphasis": false
+          },
+          {
+            "word": "know",
+            "start_sec": 47.46,
+            "end_sec": 48.33,
+            "emphasis": false
+          },
+          {
+            "word": "more",
+            "start_sec": 48.33,
+            "end_sec": 49.21,
+            "emphasis": false
+          },
+          {
+            "word": "about",
+            "start_sec": 49.21,
+            "end_sec": 50.23,
+            "emphasis": false
+          },
+          {
+            "word": "our",
+            "start_sec": 50.23,
+            "end_sec": 50.96,
+            "emphasis": false
+          },
+          {
+            "word": "planet",
+            "start_sec": 50.96,
+            "end_sec": 52.12,
+            "emphasis": false
+          },
+          {
+            "word": "Hit",
+            "start_sec": 52.12,
+            "end_sec": 52.85,
+            "emphasis": false
+          },
+          {
+            "word": "like",
+            "start_sec": 52.85,
+            "end_sec": 53.73,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 53.73,
+            "end_sec": 54.46,
+            "emphasis": false
+          },
+          {
+            "word": "follow",
+            "start_sec": 54.46,
+            "end_sec": 55.62,
+            "emphasis": false
+          },
+          {
+            "word": "for",
+            "start_sec": 55.62,
+            "end_sec": 56.35,
+            "emphasis": false
+          },
+          {
+            "word": "more",
+            "start_sec": 56.35,
+            "end_sec": 57.23,
+            "emphasis": false
+          },
+          {
+            "word": "science",
+            "start_sec": 57.23,
+            "end_sec": 58.54,
+            "emphasis": true
+          },
+          {
+            "word": "insights",
+            "start_sec": 58.54,
+            "end_sec": 60.0,
+            "emphasis": true
+          }
+        ],
+        "emphasis_words": [
+          "insights",
+          "science"
+        ],
+        "placement": "bottom third, safe zone"
+      }
+    ]
+  },
+  "audio_mix_plan": {
+    "duration_sec": 60.0,
+    "tracks": {
+      "narration": {
+        "level_db": -3.0,
+        "voice_style": {},
+        "segments": [
+          {
+            "scene_id": 1,
+            "start_sec": 0.0,
+            "end_sec": 2.0,
+            "text": "Science has a clearer story about methane hydrates than social media does.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w5_earth_068_methane_hydrates_001/voice.mp3"
+          },
+          {
+            "scene_id": 2,
+            "start_sec": 2.0,
+            "end_sec": 10.0,
+            "text": "Methane hydrates are icy structures where methane gas is trapped in water, found deep under the ocean and in permafrost.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w5_earth_068_methane_hydrates_001/voice.mp3"
+          },
+          {
+            "scene_id": 3,
+            "start_sec": 10.0,
+            "end_sec": 18.0,
+            "text": "As climate change warms our planet, these hydrates may destabilize. What happens then?",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w5_earth_068_methane_hydrates_001/voice.mp3"
+          },
+          {
+            "scene_id": 4,
+            "start_sec": 18.0,
+            "end_sec": 26.0,
+            "text": "Scientists warn that releasing methane could accelerate global warming\u2014it's 25 times more potent than CO2.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w5_earth_068_methane_hydrates_001/voice.mp3"
+          },
+          {
+            "scene_id": 5,
+            "start_sec": 26.0,
+            "end_sec": 46.0,
+            "text": "But we still need research. Uncertainty remains about how much methane could be released and its effects.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w5_earth_068_methane_hydrates_001/voice.mp3"
+          },
+          {
+            "scene_id": 6,
+            "start_sec": 46.0,
+            "end_sec": 60.0,
+            "text": "Want to know more about our planet? Hit like and follow for more science insights!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w5_earth_068_methane_hydrates_001/voice.mp3"
+          }
+        ]
+      },
+      "music": {
+        "level_db": -18.0,
+        "style": "educational ambient",
+        "bpm_range": [
+          90,
+          120
+        ],
+        "energy_curve": [
+          "rise",
+          "sustain",
+          "resolve"
+        ],
+        "ducking": {
+          "enabled": true,
+          "trigger": "narration",
+          "duck_to_db": -26.0,
+          "attack_ms": 150,
+          "release_ms": 400
+        }
+      },
+      "sfx": {
+        "level_db": -10.0,
+        "cues": [
+          {
+            "scene_id": 1,
+            "cue": "bass hit",
+            "at_sec": 0.0
+          },
+          {
+            "scene_id": 2,
+            "cue": "whoosh",
+            "at_sec": 2.0
+          },
+          {
+            "scene_id": 3,
+            "cue": "whoosh",
+            "at_sec": 10.0
+          },
+          {
+            "scene_id": 4,
+            "cue": "whoosh",
+            "at_sec": 18.0
+          },
+          {
+            "scene_id": 5,
+            "cue": "whoosh",
+            "at_sec": 26.0
+          },
+          {
+            "scene_id": 6,
+            "cue": "whoosh",
+            "at_sec": 46.0
+          }
+        ]
+      },
+      "transitions": {
+        "level_db": -12.0,
+        "cues": []
+      }
+    },
+    "silence_drops": [
+      {
+        "scene_id": 5,
+        "at_sec": 25.6,
+        "duration_sec": 0.4,
+        "reason": "drop the full mix before the payoff beat"
+      }
+    ],
+    "loudness_target": {
+      "standard": "platform_safe_placeholder",
+      "integrated_lufs": -14.0,
+      "true_peak_db": -1.0,
+      "notes": "Verify with a real loudness pass when actual audio is rendered."
+    }
+  },
+  "transition_plan": {
+    "supported_types": [
+      "cut",
+      "fade",
+      "push",
+      "zoom",
+      "whip_pan",
+      "glitch",
+      "flash",
+      "documentary_slow_zoom",
+      "cinematic_push_in",
+      "quick_cut"
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "motion_plan": [
+    {
+      "scene_id": 1,
+      "effect": "quick_punch_in",
+      "intensity": 70,
+      "duration_sec": 2.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.188
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_out"
+    },
+    {
+      "scene_id": 2,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 3,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 4,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 5,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 20.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 6,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 14.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    }
+  ],
+  "asset_requirements": [],
+  "missing_assets": [],
+  "render_warnings": [],
+  "estimated_render_duration_sec": 60.0,
+  "production_readiness_score": 100,
+  "validation": {
+    "status": "SUCCESS",
+    "checks": [
+      {
+        "check": "scenes_present",
+        "passed": true,
+        "detail": "6 scenes in the plan."
+      },
+      {
+        "check": "scenes_have_visuals",
+        "passed": true,
+        "detail": "Every scene has a visual asset or prompt."
+      },
+      {
+        "check": "scenes_have_narration",
+        "passed": true,
+        "detail": "Every scene has narration."
+      },
+      {
+        "check": "captions_exist",
+        "passed": true,
+        "detail": "6 caption segments planned."
+      },
+      {
+        "check": "audio_plan_exists",
+        "passed": true,
+        "detail": "Audio mix plan covers narration/music/SFX tracks."
+      },
+      {
+        "check": "runtime_reasonable",
+        "passed": true,
+        "detail": "Total runtime 60.0s is inside the 5.0-180.0s short-form window."
+      },
+      {
+        "check": "output_format_supported",
+        "passed": true,
+        "detail": "9:16 1080x1920 MP4 \u2014 supported."
+      },
+      {
+        "check": "assets_resolved",
+        "passed": true,
+        "detail": "All asset requests were fulfilled."
+      }
+    ],
+    "problems": [],
+    "production_readiness_score": 100
+  },
+  "render_status": "SUCCESS",
+  "mock_output_path": "data/productions/sp100w5_earth_068_methane_hydrates_001/render.mp4",
+  "output_path": "data/productions/sp100w5_earth_068_methane_hydrates_001/render.mp4",
+  "mp4_path": "data/productions/sp100w5_earth_068_methane_hydrates_001/render.mp4",
+  "file_uri": "data/productions/sp100w5_earth_068_methane_hydrates_001/render.mp4",
+  "render_log": [
+    "color_bed\u2192mp4 (no visual assets resolved)",
+    "ffmpeg_exit=0"
+  ],
+  "render_job": {},
+  "mock": false,
+  "assembly": {
+    "ok": true,
+    "mock": false,
+    "error": "",
+    "output_path": "data/productions/sp100w5_earth_068_methane_hydrates_001/render.mp4",
+    "absolute_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w5_earth_068_methane_hydrates_001/render.mp4",
+    "bytes": 452920,
+    "duration_sec": 60.0,
+    "resolution": "1080x1920",
+    "ffmpeg": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/venv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "log": [
+      "color_bed\u2192mp4 (no visual assets resolved)",
+      "ffmpeg_exit=0"
+    ],
+    "visual_count": 0,
+    "has_audio": true,
+    "manifest": {
+      "title": "Methane hydrates",
+      "format": {
+        "aspect_ratio": "9:16",
+        "resolution": {
+          "width": 1080,
+          "height": 1920
+        },
+        "container": "mp4",
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "fps": 30,
+        "orientation": "vertical",
+        "platforms": [
+          "youtube_shorts",
+          "tiktok",
+          "instagram_reels",
+          "facebook_reels"
+        ]
+      },
+      "visuals": [],
+      "audio": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w5_earth_068_methane_hydrates_001/voice.mp3"
+    }
+  },
+  "render_manifest": {
+    "scenes": 6,
+    "timeline_segments": 6,
+    "caption_segments": 6,
+    "audio_tracks": [
+      "narration",
+      "music",
+      "sfx",
+      "transitions"
+    ],
+    "transitions": 5,
+    "assets_requested": 0,
+    "assets_missing": 0,
+    "warnings": 0,
+    "readiness": 100,
+    "ready_for_publishing": true,
+    "real_mp4": true
+  }
+}

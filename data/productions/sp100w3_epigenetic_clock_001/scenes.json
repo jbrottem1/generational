@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if your DNA could reveal your true age?",
+    "visual_description": "Hook visual: What if your DNA could reveal your true age?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if your DNA could reveal your true age?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if your DNA could reveal your true age?",
+    "stock_footage_query": "",
+    "text_overlay": "What if your DNA",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Scientists are uncovering the secrets of aging through epigenetic clocks.",
+    "visual_description": "Context visual: Scientists are uncovering the secrets of aging through epigenetic clocks.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Scientists are uncovering the secrets of aging through epigenetic clocks.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Scientists are uncovering the secrets of aging through epigenetic clocks.",
+    "stock_footage_query": "",
+    "text_overlay": "Scientists are uncovering the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "These clocks measure DNA methylation patterns, helping estimate biological age.",
+    "visual_description": "Escalation visual: These clocks measure DNA methylation patterns, helping estimate biological age.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: These clocks measure DNA methylation patterns, helping estimate biological age.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: These clocks measure DNA methylation patterns, helping estimate biological age.",
+    "stock_footage_query": "",
+    "text_overlay": "These clocks measure DNA",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Research shows they can indicate how well your body is aging, but it\u2019s not your fate.",
+    "visual_description": "Evidence visual: Research shows they can indicate how well your body is aging, but it\u2019s not your fate.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows they can indicate how well your body is aging, but it\u2019s not your fate.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows they can indicate how well your body is aging, but it\u2019s not your fate.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows they can",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Instead, it opens doors to understanding and maybe, altering our aging process.",
+    "visual_description": "Payoff visual: Instead, it opens doors to understanding and maybe, altering our aging process.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Instead, it opens doors to understanding and maybe, altering our aging process.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Instead, it opens doors to understanding and maybe, altering our aging process.",
+    "stock_footage_query": "",
+    "text_overlay": "Instead, it opens doors",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Curious about how you can influence your biological age? Follow for more insights!",
+    "visual_description": "Cta visual: Curious about how you can influence your biological age? Follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about how you can influence your biological age? Follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about how you can influence your biological age? Follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about how you",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

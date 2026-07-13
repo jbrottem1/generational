@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if bricks could grow like plants?",
+    "visual_description": "Hook visual: What if bricks could grow like plants?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if bricks could grow like plants?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if bricks could grow like plants?",
+    "stock_footage_query": "",
+    "text_overlay": "What if bricks could",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Meet biobricks\u2014a sustainable alternative made from living organisms.",
+    "visual_description": "Context visual: Meet biobricks\u2014a sustainable alternative made from living organisms.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Meet biobricks\u2014a sustainable alternative made from living organisms.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Meet biobricks\u2014a sustainable alternative made from living organisms.",
+    "stock_footage_query": "",
+    "text_overlay": "Meet biobricks\u2014a sustainable alternative",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "These bricks can self-repair, reducing waste and energy costs!",
+    "visual_description": "Escalation visual: These bricks can self-repair, reducing waste and energy costs!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: These bricks can self-repair, reducing waste and energy costs!",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: These bricks can self-repair, reducing waste and energy costs!",
+    "stock_footage_query": "",
+    "text_overlay": "These bricks can self-repair,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Scientists are experimenting, but results vary. Success is not guaranteed.",
+    "visual_description": "Evidence visual: Scientists are experimenting, but results vary. Success is not guaranteed.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Scientists are experimenting, but results vary. Success is not guaranteed.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Scientists are experimenting, but results vary. Success is not guaranteed.",
+    "stock_footage_query": "",
+    "text_overlay": "Scientists are experimenting, but",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "hope",
+    "length_sec": 16.0,
+    "narration": "If perfected, biobricks could revolutionize construction and combat climate change.",
+    "visual_description": "Payoff visual: If perfected, biobricks could revolutionize construction and combat climate change.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: If perfected, biobricks could revolutionize construction and combat climate change.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: If perfected, biobricks could revolutionize construction and combat climate change.",
+    "stock_footage_query": "",
+    "text_overlay": "If perfected, biobricks could",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 42.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "inviting",
+    "length_sec": 16.0,
+    "narration": "Interested in the future of building? Like and follow for more science insights!",
+    "visual_description": "Cta visual: Interested in the future of building? Like and follow for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Interested in the future of building? Like and follow for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Interested in the future of building? Like and follow for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Interested in the future",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 42.0,
+      "end_sec": 58.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 42.0
+    }
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "When oceans get too warm, corals evict their partners \u2014 and turn ghostly white.",
+    "visual_description": "Hook visual: When oceans get too warm, corals evict their partners \u2014 and turn ghostly white.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: When oceans get too warm, corals evict their partners \u2014 and turn ghostly white.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: When oceans get too warm, corals evict their partners \u2014 and turn ghostly white.",
+    "stock_footage_query": "",
+    "text_overlay": "When oceans get too",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Corals rely on tiny algae called zooxanthellae, which live inside them. This relationship is crucial for their survival.",
+    "visual_description": "Context visual: Corals rely on tiny algae called zooxanthellae, which live inside them. This relationship is crucial for their survival.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Corals rely on tiny algae called zooxanthellae, which live inside them. This relationship is crucial for their survival.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Corals rely on tiny algae called zooxanthellae, which live inside them. This relationship is crucial for their survival.",
+    "stock_footage_query": "",
+    "text_overlay": "Corals rely on tiny",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "But when temperatures rise, corals stress out and kick out these vital partners, leading to bleaching.",
+    "visual_description": "Escalation visual: But when temperatures rise, corals stress out and kick out these vital partners, leading to bleaching.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But when temperatures rise, corals stress out and kick out these vital partners, leading to bleaching.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But when temperatures rise, corals stress out and kick out these vital partners, leading to bleaching.",
+    "stock_footage_query": "",
+    "text_overlay": "But when temperatures rise,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "concern",
+    "length_sec": 12.0,
+    "narration": "According to NOAA, while some corals can recover, repeated heat stress increases mortality.",
+    "visual_description": "Evidence visual: According to NOAA, while some corals can recover, repeated heat stress increases mortality.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: According to NOAA, while some corals can recover, repeated heat stress increases mortality.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: According to NOAA, while some corals can recover, repeated heat stress increases mortality.",
+    "stock_footage_query": "",
+    "text_overlay": "According to NOAA, while",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "hope",
+    "length_sec": 15.0,
+    "narration": "The fate of coral reefs rests on our actions. Protecting our oceans is essential for their survival.",
+    "visual_description": "Payoff visual: The fate of coral reefs rests on our actions. Protecting our oceans is essential for their survival.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: The fate of coral reefs rests on our actions. Protecting our oceans is essential for their survival.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: The fate of coral reefs rests on our actions. Protecting our oceans is essential for their survival.",
+    "stock_footage_query": "",
+    "text_overlay": "The fate of coral",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "Want to learn more about ocean health? Follow for more insights on climate change!",
+    "visual_description": "Cta visual: Want to learn more about ocean health? Follow for more insights on climate change!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to learn more about ocean health? Follow for more insights on climate change!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to learn more about ocean health? Follow for more insights on climate change!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

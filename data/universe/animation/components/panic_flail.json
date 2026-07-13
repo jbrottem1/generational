@@ -1,0 +1,21 @@
+{
+  "id": "panic_flail",
+  "loop": true,
+  "cycle_sec": 0.7,
+  "expression": "panic",
+  "keyframes": [
+    {
+      "t": 0.0,
+      "arms": "up_L"
+    },
+    {
+      "t": 0.35,
+      "arms": "up_R"
+    },
+    {
+      "t": 0.7,
+      "arms": "up_L"
+    }
+  ],
+  "notes": "Comedy only; keep educational clarity."
+}

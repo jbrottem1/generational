@@ -1,0 +1,1935 @@
+{
+  "render_package_version": "2.0",
+  "render_engine_version": "1.0.0",
+  "title": "Brown fat",
+  "created_at": "2026-07-10T18:07:58.912399+00:00",
+  "output_format": {
+    "aspect_ratio": "9:16",
+    "resolution": {
+      "width": 1080,
+      "height": 1920
+    },
+    "container": "mp4",
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "fps": 30,
+    "orientation": "vertical",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels"
+    ]
+  },
+  "platforms": [
+    "youtube_shorts",
+    "tiktok",
+    "instagram_reels",
+    "facebook_reels"
+  ],
+  "resolution": "1080x1920",
+  "aspect_ratio": "9:16",
+  "duration_sec": 60.0,
+  "timeline": {
+    "fps": 30,
+    "total_duration_sec": 60.0,
+    "segment_count": 7,
+    "segments": [
+      {
+        "scene_id": 1,
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "duration": 2.0,
+        "narration_reference": "narration/scene_1",
+        "visual_reference": "visual/scene_1",
+        "caption_reference": "captions/scene_1",
+        "audio_reference": "audio/scene_1",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "quick_punch_in",
+        "overlay_text": "What if I told",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 2,
+        "start_time": 2.0,
+        "end_time": 10.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_2",
+        "visual_reference": "visual/scene_2",
+        "caption_reference": "captions/scene_2",
+        "audio_reference": "audio/scene_2",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Brown fat is a",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 3,
+        "start_time": 10.0,
+        "end_time": 18.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_3",
+        "visual_reference": "visual/scene_3",
+        "caption_reference": "captions/scene_3",
+        "audio_reference": "audio/scene_3",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Unlike white fat, which",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 4,
+        "start_time": 18.0,
+        "end_time": 26.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_4",
+        "visual_reference": "visual/scene_4",
+        "caption_reference": "captions/scene_4",
+        "audio_reference": "audio/scene_4",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Studies show that people",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 5,
+        "start_time": 26.0,
+        "end_time": 38.0,
+        "duration": 12.0,
+        "narration_reference": "narration/scene_5",
+        "visual_reference": "visual/scene_5",
+        "caption_reference": "captions/scene_5",
+        "audio_reference": "audio/scene_5",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "But don\u2019t get too",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 6,
+        "start_time": 38.0,
+        "end_time": 50.0,
+        "duration": 12.0,
+        "narration_reference": "narration/scene_6",
+        "visual_reference": "visual/scene_6",
+        "caption_reference": "captions/scene_6",
+        "audio_reference": "audio/scene_6",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "The science is still",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 7,
+        "start_time": 50.0,
+        "end_time": 60.0,
+        "duration": 10.0,
+        "narration_reference": "narration/scene_7",
+        "visual_reference": "visual/scene_7",
+        "caption_reference": "captions/scene_7",
+        "audio_reference": "audio/scene_7",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Curious to learn more?",
+        "render_status": "planned"
+      }
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 6,
+        "to_scene": 7,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "scene_render_plan": [
+    {
+      "scene_id": 1,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Hook visual: What if I told you some fat is actually good for you?",
+      "video_prompt": "Cinematic motion: Hook visual: What if I told you some fat is actually good for you?",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "subtle push",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "quick_punch_in",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.188
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 70
+      },
+      "text_overlays": [
+        {
+          "text": "What if I told",
+          "treatment": "",
+          "start_sec": 0.0,
+          "end_sec": 2.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "bass hit",
+          "at_sec": 0.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "What if I told you some fat is actually good for you?",
+      "duration_sec": 2.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Hook visual: What if I told you some fat is actually good for you?",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 1
+      }
+    },
+    {
+      "scene_id": 2,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Context visual: Brown fat is a special type of fat that burns calories instead of storing them.",
+      "video_prompt": "Cinematic motion: Context visual: Brown fat is a special type of fat that burns calories instead of storing them.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Brown fat is a",
+          "treatment": "",
+          "start_sec": 2.0,
+          "end_sec": 10.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 2.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Brown fat is a special type of fat that burns calories instead of storing them.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Context visual: Brown fat is a special type of fat that burns calories instead of storing them.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 2
+      }
+    },
+    {
+      "scene_id": 3,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Escalation visual: Unlike white fat, which can lead to health issues, brown fat can help keep you warm and maintain body weight.",
+      "video_prompt": "Cinematic motion: Escalation visual: Unlike white fat, which can lead to health issues, brown fat can help keep you warm and maintain body weight.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Unlike white fat, which",
+          "treatment": "",
+          "start_sec": 10.0,
+          "end_sec": 18.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 10.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Unlike white fat, which can lead to health issues, brown fat can help keep you warm and maintain body weight.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Escalation visual: Unlike white fat, which can lead to health issues, brown fat can help keep you warm and maintain body weight.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 3
+      }
+    },
+    {
+      "scene_id": 4,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Evidence visual: Studies show that people with more brown fat tend to have improved metabolic health.",
+      "video_prompt": "Cinematic motion: Evidence visual: Studies show that people with more brown fat tend to have improved metabolic health.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Studies show that people",
+          "treatment": "",
+          "start_sec": 18.0,
+          "end_sec": 26.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 18.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Studies show that people with more brown fat tend to have improved metabolic health.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Evidence visual: Studies show that people with more brown fat tend to have improved metabolic health.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 4
+      }
+    },
+    {
+      "scene_id": 5,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Pattern Interrupt visual: But don\u2019t get too excited; not everyone has enough brown fat to reap the benefits.",
+      "video_prompt": "Cinematic motion: Pattern Interrupt visual: But don\u2019t get too excited; not everyone has enough brown fat to reap the benefits.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "But don\u2019t get too",
+          "treatment": "",
+          "start_sec": 26.0,
+          "end_sec": 38.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 26.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "But don\u2019t get too excited; not everyone has enough brown fat to reap the benefits.",
+      "duration_sec": 12.0,
+      "resolved_asset": {}
+    },
+    {
+      "scene_id": 6,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Payoff visual: The science is still unfolding, and while brown fat may aid weight loss, it\u2019s not a magic solution.",
+      "video_prompt": "Cinematic motion: Payoff visual: The science is still unfolding, and while brown fat may aid weight loss, it\u2019s not a magic solution.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "The science is still",
+          "treatment": "",
+          "start_sec": 38.0,
+          "end_sec": 50.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 38.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "The science is still unfolding, and while brown fat may aid weight loss, it\u2019s not a magic solution.",
+      "duration_sec": 12.0,
+      "resolved_asset": {}
+    },
+    {
+      "scene_id": 7,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Cta visual: Curious to learn more? Hit like and follow for the latest in science!",
+      "video_prompt": "Cinematic motion: Cta visual: Curious to learn more? Hit like and follow for the latest in science!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Curious to learn more?",
+          "treatment": "",
+          "start_sec": 50.0,
+          "end_sec": 60.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 50.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Curious to learn more? Hit like and follow for the latest in science!",
+      "duration_sec": 10.0,
+      "resolved_asset": {}
+    }
+  ],
+  "caption_render_plan": {
+    "mode": "word_by_word",
+    "style_preset": "bold_pop",
+    "style": {
+      "font": "Montserrat ExtraBold",
+      "size_pct": 4.8,
+      "fill": "#FFFFFF",
+      "stroke": "#000000",
+      "stroke_width_px": 6,
+      "emphasis_fill": "#FFD400",
+      "animation": "word pop 1.08x on entry",
+      "case": "upper"
+    },
+    "available_presets": [
+      "bold_pop",
+      "clean_minimal",
+      "karaoke_highlight",
+      "documentary_lower_third"
+    ],
+    "safe_area": {
+      "top_pct": 12.0,
+      "bottom_pct": 20.0,
+      "left_pct": 6.0,
+      "right_pct": 12.0
+    },
+    "platform_layouts": {
+      "youtube_shorts": {
+        "anchor_y_pct": 68.0,
+        "notes": "clear the title/channel block at the bottom"
+      },
+      "tiktok": {
+        "anchor_y_pct": 64.0,
+        "notes": "clear caption + music marquee, keep off the right rail"
+      },
+      "instagram_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "clear the audio attribution row"
+      },
+      "facebook_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "mirror the Reels layout"
+      }
+    },
+    "segments": [
+      {
+        "scene_id": 1,
+        "mode": "word_by_word",
+        "start_sec": 0.0,
+        "end_sec": 2.0,
+        "sentence": "What if I told you some fat is actually good for you?",
+        "words": [
+          {
+            "word": "What",
+            "start_sec": 0.0,
+            "end_sec": 0.18,
+            "emphasis": true
+          },
+          {
+            "word": "if",
+            "start_sec": 0.18,
+            "end_sec": 0.31,
+            "emphasis": false
+          },
+          {
+            "word": "I",
+            "start_sec": 0.31,
+            "end_sec": 0.4,
+            "emphasis": false
+          },
+          {
+            "word": "told",
+            "start_sec": 0.4,
+            "end_sec": 0.58,
+            "emphasis": false
+          },
+          {
+            "word": "you",
+            "start_sec": 0.58,
+            "end_sec": 0.74,
+            "emphasis": false
+          },
+          {
+            "word": "some",
+            "start_sec": 0.74,
+            "end_sec": 0.92,
+            "emphasis": false
+          },
+          {
+            "word": "fat",
+            "start_sec": 0.92,
+            "end_sec": 1.08,
+            "emphasis": false
+          },
+          {
+            "word": "is",
+            "start_sec": 1.08,
+            "end_sec": 1.2,
+            "emphasis": false
+          },
+          {
+            "word": "actually",
+            "start_sec": 1.2,
+            "end_sec": 1.51,
+            "emphasis": true
+          },
+          {
+            "word": "good",
+            "start_sec": 1.51,
+            "end_sec": 1.69,
+            "emphasis": false
+          },
+          {
+            "word": "for",
+            "start_sec": 1.69,
+            "end_sec": 1.85,
+            "emphasis": false
+          },
+          {
+            "word": "you",
+            "start_sec": 1.85,
+            "end_sec": 2.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "What",
+          "actually"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 2,
+        "mode": "word_by_word",
+        "start_sec": 2.0,
+        "end_sec": 10.0,
+        "sentence": "Brown fat is a special type of fat that burns calories instead of storing them.",
+        "words": [
+          {
+            "word": "Brown",
+            "start_sec": 2.0,
+            "end_sec": 2.6,
+            "emphasis": false
+          },
+          {
+            "word": "fat",
+            "start_sec": 2.6,
+            "end_sec": 3.02,
+            "emphasis": false
+          },
+          {
+            "word": "is",
+            "start_sec": 3.02,
+            "end_sec": 3.36,
+            "emphasis": false
+          },
+          {
+            "word": "a",
+            "start_sec": 3.36,
+            "end_sec": 3.62,
+            "emphasis": false
+          },
+          {
+            "word": "special",
+            "start_sec": 3.62,
+            "end_sec": 4.38,
+            "emphasis": true
+          },
+          {
+            "word": "type",
+            "start_sec": 4.38,
+            "end_sec": 4.89,
+            "emphasis": false
+          },
+          {
+            "word": "of",
+            "start_sec": 4.89,
+            "end_sec": 5.23,
+            "emphasis": false
+          },
+          {
+            "word": "fat",
+            "start_sec": 5.23,
+            "end_sec": 5.66,
+            "emphasis": false
+          },
+          {
+            "word": "that",
+            "start_sec": 5.66,
+            "end_sec": 6.17,
+            "emphasis": false
+          },
+          {
+            "word": "burns",
+            "start_sec": 6.17,
+            "end_sec": 6.77,
+            "emphasis": false
+          },
+          {
+            "word": "calories",
+            "start_sec": 6.77,
+            "end_sec": 7.62,
+            "emphasis": true
+          },
+          {
+            "word": "instead",
+            "start_sec": 7.62,
+            "end_sec": 8.38,
+            "emphasis": false
+          },
+          {
+            "word": "of",
+            "start_sec": 8.38,
+            "end_sec": 8.72,
+            "emphasis": false
+          },
+          {
+            "word": "storing",
+            "start_sec": 8.72,
+            "end_sec": 9.49,
+            "emphasis": false
+          },
+          {
+            "word": "them",
+            "start_sec": 9.49,
+            "end_sec": 10.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "calories",
+          "special"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 3,
+        "mode": "word_by_word",
+        "start_sec": 10.0,
+        "end_sec": 18.0,
+        "sentence": "Unlike white fat, which can lead to health issues, brown fat can help keep you warm and maintain body weight.",
+        "words": [
+          {
+            "word": "Unlike",
+            "start_sec": 10.0,
+            "end_sec": 10.5,
+            "emphasis": true
+          },
+          {
+            "word": "white",
+            "start_sec": 10.5,
+            "end_sec": 10.94,
+            "emphasis": false
+          },
+          {
+            "word": "fat",
+            "start_sec": 10.94,
+            "end_sec": 11.26,
+            "emphasis": false
+          },
+          {
+            "word": "which",
+            "start_sec": 11.26,
+            "end_sec": 11.7,
+            "emphasis": false
+          },
+          {
+            "word": "can",
+            "start_sec": 11.7,
+            "end_sec": 12.02,
+            "emphasis": false
+          },
+          {
+            "word": "lead",
+            "start_sec": 12.02,
+            "end_sec": 12.39,
+            "emphasis": false
+          },
+          {
+            "word": "to",
+            "start_sec": 12.39,
+            "end_sec": 12.65,
+            "emphasis": false
+          },
+          {
+            "word": "health",
+            "start_sec": 12.65,
+            "end_sec": 13.15,
+            "emphasis": true
+          },
+          {
+            "word": "issues",
+            "start_sec": 13.15,
+            "end_sec": 13.65,
+            "emphasis": false
+          },
+          {
+            "word": "brown",
+            "start_sec": 13.65,
+            "end_sec": 14.09,
+            "emphasis": false
+          },
+          {
+            "word": "fat",
+            "start_sec": 14.09,
+            "end_sec": 14.41,
+            "emphasis": false
+          },
+          {
+            "word": "can",
+            "start_sec": 14.41,
+            "end_sec": 14.72,
+            "emphasis": false
+          },
+          {
+            "word": "help",
+            "start_sec": 14.72,
+            "end_sec": 15.1,
+            "emphasis": false
+          },
+          {
+            "word": "keep",
+            "start_sec": 15.1,
+            "end_sec": 15.48,
+            "emphasis": false
+          },
+          {
+            "word": "you",
+            "start_sec": 15.48,
+            "end_sec": 15.8,
+            "emphasis": false
+          },
+          {
+            "word": "warm",
+            "start_sec": 15.8,
+            "end_sec": 16.17,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 16.17,
+            "end_sec": 16.49,
+            "emphasis": false
+          },
+          {
+            "word": "maintain",
+            "start_sec": 16.49,
+            "end_sec": 17.12,
+            "emphasis": true
+          },
+          {
+            "word": "body",
+            "start_sec": 17.12,
+            "end_sec": 17.5,
+            "emphasis": false
+          },
+          {
+            "word": "weight",
+            "start_sec": 17.5,
+            "end_sec": 18.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "Unlike",
+          "health",
+          "maintain"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 4,
+        "mode": "word_by_word",
+        "start_sec": 18.0,
+        "end_sec": 26.0,
+        "sentence": "Studies show that people with more brown fat tend to have improved metabolic health.",
+        "words": [
+          {
+            "word": "Studies",
+            "start_sec": 18.0,
+            "end_sec": 18.73,
+            "emphasis": false
+          },
+          {
+            "word": "show",
+            "start_sec": 18.73,
+            "end_sec": 19.22,
+            "emphasis": false
+          },
+          {
+            "word": "that",
+            "start_sec": 19.22,
+            "end_sec": 19.71,
+            "emphasis": false
+          },
+          {
+            "word": "people",
+            "start_sec": 19.71,
+            "end_sec": 20.37,
+            "emphasis": false
+          },
+          {
+            "word": "with",
+            "start_sec": 20.37,
+            "end_sec": 20.86,
+            "emphasis": false
+          },
+          {
+            "word": "more",
+            "start_sec": 20.86,
+            "end_sec": 21.35,
+            "emphasis": false
+          },
+          {
+            "word": "brown",
+            "start_sec": 21.35,
+            "end_sec": 21.92,
+            "emphasis": false
+          },
+          {
+            "word": "fat",
+            "start_sec": 21.92,
+            "end_sec": 22.33,
+            "emphasis": false
+          },
+          {
+            "word": "tend",
+            "start_sec": 22.33,
+            "end_sec": 22.82,
+            "emphasis": false
+          },
+          {
+            "word": "to",
+            "start_sec": 22.82,
+            "end_sec": 23.14,
+            "emphasis": false
+          },
+          {
+            "word": "have",
+            "start_sec": 23.14,
+            "end_sec": 23.63,
+            "emphasis": false
+          },
+          {
+            "word": "improved",
+            "start_sec": 23.63,
+            "end_sec": 24.45,
+            "emphasis": true
+          },
+          {
+            "word": "metabolic",
+            "start_sec": 24.45,
+            "end_sec": 25.35,
+            "emphasis": true
+          },
+          {
+            "word": "health",
+            "start_sec": 25.35,
+            "end_sec": 26.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "improved",
+          "metabolic"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 5,
+        "mode": "word_by_word",
+        "start_sec": 26.0,
+        "end_sec": 38.0,
+        "sentence": "But don\u2019t get too excited; not everyone has enough brown fat to reap the benefits.",
+        "words": [
+          {
+            "word": "But",
+            "start_sec": 26.0,
+            "end_sec": 26.62,
+            "emphasis": false
+          },
+          {
+            "word": "don",
+            "start_sec": 26.62,
+            "end_sec": 27.24,
+            "emphasis": false
+          },
+          {
+            "word": "t",
+            "start_sec": 27.24,
+            "end_sec": 27.61,
+            "emphasis": false
+          },
+          {
+            "word": "get",
+            "start_sec": 27.61,
+            "end_sec": 28.23,
+            "emphasis": false
+          },
+          {
+            "word": "too",
+            "start_sec": 28.23,
+            "end_sec": 28.85,
+            "emphasis": false
+          },
+          {
+            "word": "excited",
+            "start_sec": 28.85,
+            "end_sec": 29.96,
+            "emphasis": false
+          },
+          {
+            "word": "not",
+            "start_sec": 29.96,
+            "end_sec": 30.58,
+            "emphasis": false
+          },
+          {
+            "word": "everyone",
+            "start_sec": 30.58,
+            "end_sec": 31.81,
+            "emphasis": true
+          },
+          {
+            "word": "has",
+            "start_sec": 31.81,
+            "end_sec": 32.43,
+            "emphasis": false
+          },
+          {
+            "word": "enough",
+            "start_sec": 32.43,
+            "end_sec": 33.42,
+            "emphasis": false
+          },
+          {
+            "word": "brown",
+            "start_sec": 33.42,
+            "end_sec": 34.29,
+            "emphasis": false
+          },
+          {
+            "word": "fat",
+            "start_sec": 34.29,
+            "end_sec": 34.91,
+            "emphasis": false
+          },
+          {
+            "word": "to",
+            "start_sec": 34.91,
+            "end_sec": 35.4,
+            "emphasis": false
+          },
+          {
+            "word": "reap",
+            "start_sec": 35.4,
+            "end_sec": 36.14,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 36.14,
+            "end_sec": 36.76,
+            "emphasis": false
+          },
+          {
+            "word": "benefits",
+            "start_sec": 36.76,
+            "end_sec": 38.0,
+            "emphasis": true
+          }
+        ],
+        "emphasis_words": [
+          "benefits",
+          "everyone"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 6,
+        "mode": "word_by_word",
+        "start_sec": 38.0,
+        "end_sec": 50.0,
+        "sentence": "The science is still unfolding, and while brown fat may aid weight loss, it\u2019s not a magic solution.",
+        "words": [
+          {
+            "word": "The",
+            "start_sec": 38.0,
+            "end_sec": 38.52,
+            "emphasis": false
+          },
+          {
+            "word": "science",
+            "start_sec": 38.52,
+            "end_sec": 39.45,
+            "emphasis": true
+          },
+          {
+            "word": "is",
+            "start_sec": 39.45,
+            "end_sec": 39.86,
+            "emphasis": false
+          },
+          {
+            "word": "still",
+            "start_sec": 39.86,
+            "end_sec": 40.59,
+            "emphasis": false
+          },
+          {
+            "word": "unfolding",
+            "start_sec": 40.59,
+            "end_sec": 41.72,
+            "emphasis": true
+          },
+          {
+            "word": "and",
+            "start_sec": 41.72,
+            "end_sec": 42.24,
+            "emphasis": false
+          },
+          {
+            "word": "while",
+            "start_sec": 42.24,
+            "end_sec": 42.97,
+            "emphasis": false
+          },
+          {
+            "word": "brown",
+            "start_sec": 42.97,
+            "end_sec": 43.69,
+            "emphasis": false
+          },
+          {
+            "word": "fat",
+            "start_sec": 43.69,
+            "end_sec": 44.21,
+            "emphasis": false
+          },
+          {
+            "word": "may",
+            "start_sec": 44.21,
+            "end_sec": 44.72,
+            "emphasis": false
+          },
+          {
+            "word": "aid",
+            "start_sec": 44.72,
+            "end_sec": 45.24,
+            "emphasis": false
+          },
+          {
+            "word": "weight",
+            "start_sec": 45.24,
+            "end_sec": 46.07,
+            "emphasis": false
+          },
+          {
+            "word": "loss",
+            "start_sec": 46.07,
+            "end_sec": 46.69,
+            "emphasis": false
+          },
+          {
+            "word": "it",
+            "start_sec": 46.69,
+            "end_sec": 47.1,
+            "emphasis": false
+          },
+          {
+            "word": "s",
+            "start_sec": 47.1,
+            "end_sec": 47.41,
+            "emphasis": false
+          },
+          {
+            "word": "not",
+            "start_sec": 47.41,
+            "end_sec": 47.93,
+            "emphasis": false
+          },
+          {
+            "word": "a",
+            "start_sec": 47.93,
+            "end_sec": 48.24,
+            "emphasis": false
+          },
+          {
+            "word": "magic",
+            "start_sec": 48.24,
+            "end_sec": 48.97,
+            "emphasis": false
+          },
+          {
+            "word": "solution",
+            "start_sec": 48.97,
+            "end_sec": 50.0,
+            "emphasis": true
+          }
+        ],
+        "emphasis_words": [
+          "science",
+          "solution",
+          "unfolding"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 7,
+        "mode": "word_by_word",
+        "start_sec": 50.0,
+        "end_sec": 60.0,
+        "sentence": "Curious to learn more? Hit like and follow for the latest in science!",
+        "words": [
+          {
+            "word": "Curious",
+            "start_sec": 50.0,
+            "end_sec": 51.11,
+            "emphasis": true
+          },
+          {
+            "word": "to",
+            "start_sec": 51.11,
+            "end_sec": 51.6,
+            "emphasis": false
+          },
+          {
+            "word": "learn",
+            "start_sec": 51.6,
+            "end_sec": 52.47,
+            "emphasis": false
+          },
+          {
+            "word": "more",
+            "start_sec": 52.47,
+            "end_sec": 53.21,
+            "emphasis": false
+          },
+          {
+            "word": "Hit",
+            "start_sec": 53.21,
+            "end_sec": 53.83,
+            "emphasis": false
+          },
+          {
+            "word": "like",
+            "start_sec": 53.83,
+            "end_sec": 54.57,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 54.57,
+            "end_sec": 55.19,
+            "emphasis": false
+          },
+          {
+            "word": "follow",
+            "start_sec": 55.19,
+            "end_sec": 56.17,
+            "emphasis": false
+          },
+          {
+            "word": "for",
+            "start_sec": 56.17,
+            "end_sec": 56.79,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 56.79,
+            "end_sec": 57.41,
+            "emphasis": false
+          },
+          {
+            "word": "latest",
+            "start_sec": 57.41,
+            "end_sec": 58.4,
+            "emphasis": false
+          },
+          {
+            "word": "in",
+            "start_sec": 58.4,
+            "end_sec": 58.89,
+            "emphasis": false
+          },
+          {
+            "word": "science",
+            "start_sec": 58.89,
+            "end_sec": 60.0,
+            "emphasis": true
+          }
+        ],
+        "emphasis_words": [
+          "Curious",
+          "science"
+        ],
+        "placement": "bottom third, safe zone"
+      }
+    ]
+  },
+  "audio_mix_plan": {
+    "duration_sec": 60.0,
+    "tracks": {
+      "narration": {
+        "level_db": -3.0,
+        "voice_style": {},
+        "segments": [
+          {
+            "scene_id": 1,
+            "start_sec": 0.0,
+            "end_sec": 2.0,
+            "text": "What if I told you some fat is actually good for you?",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w6_091_brown_fat_001/voice.mp3"
+          },
+          {
+            "scene_id": 2,
+            "start_sec": 2.0,
+            "end_sec": 10.0,
+            "text": "Brown fat is a special type of fat that burns calories instead of storing them.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w6_091_brown_fat_001/voice.mp3"
+          },
+          {
+            "scene_id": 3,
+            "start_sec": 10.0,
+            "end_sec": 18.0,
+            "text": "Unlike white fat, which can lead to health issues, brown fat can help keep you warm and maintain body weight.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w6_091_brown_fat_001/voice.mp3"
+          },
+          {
+            "scene_id": 4,
+            "start_sec": 18.0,
+            "end_sec": 26.0,
+            "text": "Studies show that people with more brown fat tend to have improved metabolic health.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w6_091_brown_fat_001/voice.mp3"
+          },
+          {
+            "scene_id": 5,
+            "start_sec": 26.0,
+            "end_sec": 38.0,
+            "text": "But don\u2019t get too excited; not everyone has enough brown fat to reap the benefits.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w6_091_brown_fat_001/voice.mp3"
+          },
+          {
+            "scene_id": 6,
+            "start_sec": 38.0,
+            "end_sec": 50.0,
+            "text": "The science is still unfolding, and while brown fat may aid weight loss, it\u2019s not a magic solution.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w6_091_brown_fat_001/voice.mp3"
+          },
+          {
+            "scene_id": 7,
+            "start_sec": 50.0,
+            "end_sec": 60.0,
+            "text": "Curious to learn more? Hit like and follow for the latest in science!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w6_091_brown_fat_001/voice.mp3"
+          }
+        ]
+      },
+      "music": {
+        "level_db": -18.0,
+        "style": "educational ambient",
+        "bpm_range": [
+          90,
+          120
+        ],
+        "energy_curve": [
+          "rise",
+          "sustain",
+          "resolve"
+        ],
+        "ducking": {
+          "enabled": true,
+          "trigger": "narration",
+          "duck_to_db": -26.0,
+          "attack_ms": 150,
+          "release_ms": 400
+        }
+      },
+      "sfx": {
+        "level_db": -10.0,
+        "cues": [
+          {
+            "scene_id": 1,
+            "cue": "bass hit",
+            "at_sec": 0.0
+          },
+          {
+            "scene_id": 2,
+            "cue": "whoosh",
+            "at_sec": 2.0
+          },
+          {
+            "scene_id": 3,
+            "cue": "whoosh",
+            "at_sec": 10.0
+          },
+          {
+            "scene_id": 4,
+            "cue": "whoosh",
+            "at_sec": 18.0
+          },
+          {
+            "scene_id": 5,
+            "cue": "whoosh",
+            "at_sec": 26.0
+          },
+          {
+            "scene_id": 6,
+            "cue": "whoosh",
+            "at_sec": 38.0
+          },
+          {
+            "scene_id": 7,
+            "cue": "whoosh",
+            "at_sec": 50.0
+          }
+        ]
+      },
+      "transitions": {
+        "level_db": -12.0,
+        "cues": []
+      }
+    },
+    "silence_drops": [
+      {
+        "scene_id": 5,
+        "at_sec": 25.6,
+        "duration_sec": 0.4,
+        "reason": "drop the full mix before the pattern_interrupt beat"
+      },
+      {
+        "scene_id": 6,
+        "at_sec": 37.6,
+        "duration_sec": 0.4,
+        "reason": "drop the full mix before the payoff beat"
+      }
+    ],
+    "loudness_target": {
+      "standard": "platform_safe_placeholder",
+      "integrated_lufs": -14.0,
+      "true_peak_db": -1.0,
+      "notes": "Verify with a real loudness pass when actual audio is rendered."
+    }
+  },
+  "transition_plan": {
+    "supported_types": [
+      "cut",
+      "fade",
+      "push",
+      "zoom",
+      "whip_pan",
+      "glitch",
+      "flash",
+      "documentary_slow_zoom",
+      "cinematic_push_in",
+      "quick_cut"
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 6,
+        "to_scene": 7,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "motion_plan": [
+    {
+      "scene_id": 1,
+      "effect": "quick_punch_in",
+      "intensity": 70,
+      "duration_sec": 2.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.188
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_out"
+    },
+    {
+      "scene_id": 2,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 3,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 4,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 5,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 12.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 6,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 12.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 7,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 10.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    }
+  ],
+  "asset_requirements": [],
+  "missing_assets": [],
+  "render_warnings": [],
+  "estimated_render_duration_sec": 60.0,
+  "production_readiness_score": 100,
+  "validation": {
+    "status": "SUCCESS",
+    "checks": [
+      {
+        "check": "scenes_present",
+        "passed": true,
+        "detail": "7 scenes in the plan."
+      },
+      {
+        "check": "scenes_have_visuals",
+        "passed": true,
+        "detail": "Every scene has a visual asset or prompt."
+      },
+      {
+        "check": "scenes_have_narration",
+        "passed": true,
+        "detail": "Every scene has narration."
+      },
+      {
+        "check": "captions_exist",
+        "passed": true,
+        "detail": "7 caption segments planned."
+      },
+      {
+        "check": "audio_plan_exists",
+        "passed": true,
+        "detail": "Audio mix plan covers narration/music/SFX tracks."
+      },
+      {
+        "check": "runtime_reasonable",
+        "passed": true,
+        "detail": "Total runtime 60.0s is inside the 5.0-180.0s short-form window."
+      },
+      {
+        "check": "output_format_supported",
+        "passed": true,
+        "detail": "9:16 1080x1920 MP4 \u2014 supported."
+      },
+      {
+        "check": "assets_resolved",
+        "passed": true,
+        "detail": "All asset requests were fulfilled."
+      }
+    ],
+    "problems": [],
+    "production_readiness_score": 100
+  },
+  "render_status": "SUCCESS",
+  "mock_output_path": "data/productions/sp100w6_091_brown_fat_001/render.mp4",
+  "output_path": "data/productions/sp100w6_091_brown_fat_001/render.mp4",
+  "mp4_path": "data/productions/sp100w6_091_brown_fat_001/render.mp4",
+  "file_uri": "data/productions/sp100w6_091_brown_fat_001/render.mp4",
+  "render_log": [
+    "color_bed\u2192mp4 (no visual assets resolved)",
+    "ffmpeg_exit=0"
+  ],
+  "render_job": {},
+  "mock": false,
+  "assembly": {
+    "ok": true,
+    "mock": false,
+    "error": "",
+    "output_path": "data/productions/sp100w6_091_brown_fat_001/render.mp4",
+    "absolute_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w6_091_brown_fat_001/render.mp4",
+    "bytes": 449320,
+    "duration_sec": 60.0,
+    "resolution": "1080x1920",
+    "ffmpeg": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/venv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "log": [
+      "color_bed\u2192mp4 (no visual assets resolved)",
+      "ffmpeg_exit=0"
+    ],
+    "visual_count": 0,
+    "has_audio": true,
+    "manifest": {
+      "title": "Brown fat",
+      "format": {
+        "aspect_ratio": "9:16",
+        "resolution": {
+          "width": 1080,
+          "height": 1920
+        },
+        "container": "mp4",
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "fps": 30,
+        "orientation": "vertical",
+        "platforms": [
+          "youtube_shorts",
+          "tiktok",
+          "instagram_reels",
+          "facebook_reels"
+        ]
+      },
+      "visuals": [],
+      "audio": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w6_091_brown_fat_001/voice.mp3"
+    }
+  },
+  "render_manifest": {
+    "scenes": 7,
+    "timeline_segments": 7,
+    "caption_segments": 7,
+    "audio_tracks": [
+      "narration",
+      "music",
+      "sfx",
+      "transitions"
+    ],
+    "transitions": 6,
+    "assets_requested": 0,
+    "assets_missing": 0,
+    "warnings": 0,
+    "readiness": 100,
+    "ready_for_publishing": true,
+    "real_mp4": true
+  }
+}

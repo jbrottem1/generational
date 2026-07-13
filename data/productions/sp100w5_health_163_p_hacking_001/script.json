@@ -1,0 +1,74 @@
+{
+  "title": "P hacking",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explains p hacking and its implications in scientific research.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about p hacking than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "P hacking is manipulating data to achieve statistically significant results.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Researchers might change data points or test conditions to find that magical p-value.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "statistic"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies suggest that nearly 30% of research may have p hacking.",
+      "emotion": "concern",
+      "delivery": "serious",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "This compromises trust in science. Accurate reporting matters.",
+      "emotion": "urgency",
+      "delivery": "assertive",
+      "retention_device": "call to reflect"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay informed. Follow for more insights on science.",
+      "emotion": "inspiration",
+      "delivery": "encouraging",
+      "retention_device": "prompt engagement"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about p hacking than social media does. P hacking is manipulating data to achieve statistically significant results. Researchers might change data points or test conditions to find that magical p-value. Studies suggest that nearly 30% of research may have p hacking. This compromises trust in science. Accurate reporting matters. Stay informed. Follow for more insights on science.",
+  "call_to_action": "Stay informed. Follow for more insights on science.",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:56:17.808683+00:00",
+  "source": "ai"
+}

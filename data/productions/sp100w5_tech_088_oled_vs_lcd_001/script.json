@@ -1,0 +1,74 @@
+{
+  "title": "OLED vs LCD",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A concise comparison of OLED and LCD technologies based on scientific principles.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about OLED vs LCD than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "OLEDs emit their own light, while LCDs rely on backlighting. But why does that matter?",
+      "emotion": "curiosity",
+      "delivery": "conversational",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "OLEDs provide deeper blacks and vibrant colors, but they can be pricier and suffer from burn-in.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "contrast"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "In contrast, LCDs are more durable and affordable, but they struggle with color accuracy in dark scenes.",
+      "emotion": "curiosity",
+      "delivery": "fact-driven",
+      "retention_device": "comparison"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "Ultimately, choose OLED for stunning visuals and LCD for reliability. The choice depends on your budget and use case.",
+      "emotion": "curiosity",
+      "delivery": "insightful",
+      "retention_device": "decision-making"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want more tech insights? Follow for the latest updates!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "invitation"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about OLED vs LCD than social media does. OLEDs emit their own light, while LCDs rely on backlighting. But why does that matter? OLEDs provide deeper blacks and vibrant colors, but they can be pricier and suffer from burn-in. In contrast, LCDs are more durable and affordable, but they struggle with color accuracy in dark scenes. Ultimately, choose OLED for stunning visuals and LCD for reliability. The choice depends on your budget and use case. Want more tech insights? Follow for the latest updates!",
+  "call_to_action": "Want more tech insights? Follow for the latest updates!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:47:32.590345+00:00",
+  "source": "ai"
+}

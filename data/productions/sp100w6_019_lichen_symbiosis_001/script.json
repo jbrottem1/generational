@@ -1,0 +1,74 @@
+{
+  "title": "Lichen Symbiosis",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the complex relationship between fungi and algae in lichen symbiosis.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you two different organisms can become one?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Meet lichen, a remarkable partnership between fungi and algae.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "The fungi provide structure and protection, while algae produce food through photosynthesis.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Together, they can survive in extreme environments\u2014rocky surfaces, deserts, even the Arctic!",
+      "emotion": "awe",
+      "delivery": "excited",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 54.0,
+      "segment_type": "payoff",
+      "voiceover": "But here\u2019s the catch\u2014scientists are still unraveling the full extent of this collaboration.",
+      "emotion": "intrigue",
+      "delivery": "thought-provoking",
+      "retention_device": "unanswered question"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 54.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more science mysteries? Follow for more!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "What if I told you two different organisms can become one? Meet lichen, a remarkable partnership between fungi and algae. The fungi provide structure and protection, while algae produce food through photosynthesis. Together, they can survive in extreme environments\u2014rocky surfaces, deserts, even the Arctic! But here\u2019s the catch\u2014scientists are still unraveling the full extent of this collaboration. Curious about more science mysteries? Follow for more!",
+  "call_to_action": "Curious about more science mysteries? Follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:59:33.220394+00:00",
+  "source": "ai"
+}

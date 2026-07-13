@@ -1,0 +1,74 @@
+{
+  "title": "How the Sun Makes Energy",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Uncover the fascinating process of stellar fusion in the Sun.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "The Sun fuses hydrogen into helium, releasing energy that becomes sunlight.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "But how does this fusion actually occur? It all starts deep within its core.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Intense pressure and temperature force hydrogen atoms to collide, overcoming repulsion.",
+      "emotion": "curiosity",
+      "delivery": "building excitement",
+      "retention_device": "suspense"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "This collision creates helium and releases enormous energy in the form of light and heat.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "visual imagery"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "This energy travels 93 million miles to reach us, illuminating our days.",
+      "emotion": "wonder",
+      "delivery": "inspiring",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more cosmic wonders? Like and follow for more stellar insights!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "The Sun fuses hydrogen into helium, releasing energy that becomes sunlight. But how does this fusion actually occur? It all starts deep within its core. Intense pressure and temperature force hydrogen atoms to collide, overcoming repulsion. This collision creates helium and releases enormous energy in the form of light and heat. This energy travels 93 million miles to reach us, illuminating our days. Curious about more cosmic wonders? Like and follow for more stellar insights!",
+  "call_to_action": "Like and follow for more stellar insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:12:03.036687+00:00",
+  "source": "ai"
+}

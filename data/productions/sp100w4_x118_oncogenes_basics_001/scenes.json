@@ -1,0 +1,242 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about oncogenes.",
+    "visual_description": "Hook visual: Here's what science actually says about oncogenes.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about oncogenes.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about oncogenes.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Oncogenes are mutated versions of normal genes that can lead to cancer.",
+    "visual_description": "Context visual: Oncogenes are mutated versions of normal genes that can lead to cancer.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Oncogenes are mutated versions of normal genes that can lead to cancer.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Oncogenes are mutated versions of normal genes that can lead to cancer.",
+    "stock_footage_query": "",
+    "text_overlay": "Oncogenes are mutated versions",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "retention_hook",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But how do they actually cause cells to go rogue?",
+    "visual_description": "Retention Hook visual: But how do they actually cause cells to go rogue?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Retention Hook visual: But how do they actually cause cells to go rogue?",
+    "ai_video_prompt": "Cinematic motion: Retention Hook visual: But how do they actually cause cells to go rogue?",
+    "stock_footage_query": "",
+    "text_overlay": "But how do they",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "They can promote uncontrolled cell division and inhibit normal cell death.",
+    "visual_description": "Escalation visual: They can promote uncontrolled cell division and inhibit normal cell death.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: They can promote uncontrolled cell division and inhibit normal cell death.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: They can promote uncontrolled cell division and inhibit normal cell death.",
+    "stock_footage_query": "",
+    "text_overlay": "They can promote uncontrolled",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Research shows that targeting oncogenes can slow cancer progression.",
+    "visual_description": "Evidence visual: Research shows that targeting oncogenes can slow cancer progression.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows that targeting oncogenes can slow cancer progression.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows that targeting oncogenes can slow cancer progression.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows that targeting",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "And here's the twist: not all oncogenes are equal.",
+    "visual_description": "Pattern Interrupt visual: And here's the twist: not all oncogenes are equal.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: And here's the twist: not all oncogenes are equal.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: And here's the twist: not all oncogenes are equal.",
+    "stock_footage_query": "",
+    "text_overlay": "And here's the twist:",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 42.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Some might even protect against cancer in specific contexts.",
+    "visual_description": "Payoff visual: Some might even protect against cancer in specific contexts.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Some might even protect against cancer in specific contexts.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Some might even protect against cancer in specific contexts.",
+    "stock_footage_query": "",
+    "text_overlay": "Some might even protect",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 42.0,
+      "end_sec": 54.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 42.0
+    }
+  },
+  {
+    "scene_number": 8,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 6.0,
+    "narration": "Curious about more genetic mysteries? Hit that follow!",
+    "visual_description": "Cta visual: Curious about more genetic mysteries? Hit that follow!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more genetic mysteries? Hit that follow!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more genetic mysteries? Hit that follow!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more genetic",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 54.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 54.0
+    }
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "department": "integration_release",
+  "owner_agent": 28,
+  "updated": "2026-07-12",
+  "gates": [
+    {
+      "id": "GATE-TEST",
+      "name": "Full pytest suite",
+      "command": "python3 -m pytest tests/",
+      "target": "≥930 pass, 0 new failures vs baseline"
+    },
+    {
+      "id": "GATE-FOUNDATION",
+      "name": "Foundation export gate",
+      "path": "services/animation/foundation_gate.py",
+      "target": "idle_ratio, lipsync, wave forbidden"
+    },
+    {
+      "id": "GATE-REALITY",
+      "name": "Project Reality QC",
+      "path": "services/reality/qc.py",
+      "target": "license + resolution"
+    },
+    {
+      "id": "GATE-ATLAS",
+      "name": "Knowledge Atlas QC",
+      "path": "services/knowledge_atlas/qc.py",
+      "target": "asset validation"
+    },
+    {
+      "id": "GATE-EXECUTION",
+      "name": "Local-first execution gate",
+      "path": "services/media_production/execution_mode.py",
+      "target": "cloud plan-only; local verified Desktop export"
+    },
+    {
+      "id": "GATE-OS",
+      "name": "Generational OS V2.5 pipeline",
+      "path": "services/generational_os/orchestrator.py",
+      "target": "brief + render package + manifest + classified export"
+    },
+    {
+      "id": "GATE-ARCH",
+      "name": "Architecture consistency",
+      "path": "tests/test_architecture.py",
+      "target": "engine import rules"
+    }
+  ],
+  "deliverables": [
+    "SYSTEM_INTEGRATION_REPORT.md",
+    "RELEASE_READINESS_CHECKLIST.md",
+    "DEPENDENCY_MAP.md",
+    "TECHNICAL_DEBT_REPORT.md",
+    "PERFORMANCE_BASELINE.md",
+    "REGRESSION_TEST_PLAN.md",
+    "EXECUTIVE_RELEASE_DASHBOARD.md"
+  ]
+}

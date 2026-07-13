@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "owner": "agent_27",
+  "updated": "2026-07-11",
+  "experiments": [
+    {
+      "id": "EXP-FLUID-MOTION",
+      "title": "Project Fluid Motion",
+      "objective": "Improve educator animation quality via better movement (ease, anticipation, pose blend), not more motion.",
+      "method": "Implement fluid_motion.py easing/pose blend; wire through performer; render 20–30s Cells benchmark with existing bio demo alias fluid_cells.",
+      "variables": [
+        "easing_curves",
+        "pose_blend",
+        "anticipation_follow_through",
+        "mouth_EMA",
+        "idle_vs_walk_ratio"
+      ],
+      "outcome": "Benchmark exported successfully; QC purposeful_gestures true; motion engine fluid_motion accepted into educator path.",
+      "metrics": {
+        "duration_sec": 20.546,
+        "idle_ratio": 0.521,
+        "walk_ratio": 0.079,
+        "qc_passed": true,
+        "export_bytes": 537415
+      },
+      "decision": "keep",
+      "lessons": [
+        "Stillness with life beats fidget spam.",
+        "Judge animation/flow/performance/teaching/sync separately from scenery."
+      ],
+      "date": "2026-07-10",
+      "evidence": [
+        "PROJECT_FLUID_MOTION.md",
+        "data/productions/_validation/fluid_motion/FLUID_MOTION_REPORT.json",
+        "data/gcis/reviews/2026-07-10_fluid_motion.json"
+      ]
+    },
+    {
+      "id": "EXP-SPRINT-6H30",
+      "title": "Sprint 6h30 continuous improvement",
+      "objective": "Cycle educator Shorts with Echoer handoffs, AELS review, and pause_boost so engagement improves cycle-over-cycle.",
+      "method": "Each cycle: ECP task → TTS → Fluid Motion render → Educational + AELS + Quality gates → GCIS review → apply pause_boost → next.",
+      "variables": [
+        "pause_boost",
+        "hook_pattern",
+        "AELS_recommendations",
+        "topic_beats"
+      ],
+      "outcome": "Operational educator path; Cycle 3 measured hook and engagement gains; quality overall ~75 plateau. Report cycle-count drift noted (some docs 3 vs 5).",
+      "metrics": {
+        "cycle3_engagement": {"from": 79.1, "to": 83.8},
+        "cycle3_hook": {"from": 65, "to": 77},
+        "quality_overall_approx": 75.0,
+        "avg_education_reported": 85.5
+      },
+      "decision": "iterate",
+      "lessons": [
+        "ECP + AELS each cycle is required infrastructure.",
+        "Hook ≥72 before ship when AELS reviews.",
+        "Analytics loop still blocked without YouTube OAuth."
+      ],
+      "date": "2026-07-11",
+      "evidence": [
+        "SPRINT_6H30.md",
+        "data/productions/_validation/sprint_6h30/SPRINT_6H30_FINAL_REPORT.md",
+        "data/gcis/knowledge/lessons_learned.md"
+      ]
+    },
+    {
+      "id": "EXP-FOUNDATION",
+      "title": "PROJECT FOUNDATION — Perfect the Teacher",
+      "objective": "Simplify pipeline to white studio + whiteboard + Gen; perfect fundamentals before scenery.",
+      "method": "foundation_studio + whiteboard stroke-reveal; attire none; Newton Second Law trilogy scripts; unique export.",
+      "variables": [
+        "white_background",
+        "whiteboard_write_gesture",
+        "opening_closing_lines",
+        "scenery_suppressed"
+      ],
+      "outcome": "Physics_001–003 shipped; teaching clarity prioritized; MacroCenter/environments deferred.",
+      "metrics": {
+        "benchmarks_shipped": 3,
+        "approx_durations_sec": [29, 33, 31]
+      },
+      "decision": "keep",
+      "lessons": [
+        "White studio focuses attention on the lesson.",
+        "Welcome back / In the next lesson framing is franchise-safe.",
+        "One question per Short."
+      ],
+      "date": "2026-07-11",
+      "evidence": [
+        "PROJECT_FOUNDATION.md",
+        "data/gcis/knowledge/lessons_learned.md"
+      ]
+    },
+    {
+      "id": "EXP-ES001",
+      "title": "Executive Sprint 001 — Foundation Quality Lock",
+      "objective": "Raise Foundation educator quality floor and fail-closed ship gate; wire AELS beats into production script.",
+      "method": "foundation_gate.py; lipsync floor 70; whiteboard timing sync; AELS-upgraded F=ma beats; ES001 then ES001b re-render after revision.",
+      "variables": [
+        "foundation_gate_thresholds",
+        "lipsync_floor",
+        "AELS_beat_wiring",
+        "mouth_amplitude"
+      ],
+      "outcome": "Quality ~75 → 79.3; gate passed; weak coordination (AELS not in script) rejected until revision. Canonical: Physics_001_F_Equals_MA_ES001b.mp4.",
+      "metrics": {
+        "quality_before_approx": 75.0,
+        "quality_after": 79.3,
+        "delta": 4.3,
+        "hook_score": 97,
+        "lipsync": 88.7,
+        "idle_ratio": 0.34,
+        "walk_ratio": 0.08,
+        "foundation_gate": true
+      },
+      "decision": "keep",
+      "lessons": [
+        "Advisory gates are insufficient — fail-closed on ship path.",
+        "AELS JSON must sync into the production script before ACCEPT."
+      ],
+      "date": "2026-07-11",
+      "evidence": [
+        "EXECUTIVE_SPRINT_001_REPORT.md",
+        "data/productions/_validation/project_foundation/ES001_REVISION_REPORT.md"
+      ]
+    },
+    {
+      "id": "EXP-STICK-3",
+      "title": "Stick figure science experiments (batch of 3)",
+      "objective": "Produce three stick-science Shorts (Mentos, elephant toothpaste, oobleck) via asset pipeline with Dash.",
+      "method": "Orchestrator / asset production path; CHAR-DASH; batch render to stick test export directory.",
+      "variables": [
+        "character_dash",
+        "asset_pipeline",
+        "topic_experiments"
+      ],
+      "outcome": "3/3 READY_TO_POST with QC score 100 each; ~55–60s durations. Parallel to educator Fluid Motion path — different production mode.",
+      "metrics": {
+        "completed": 3,
+        "qc_scores": [100, 100, 100],
+        "batch_runtime_sec": 1009.36
+      },
+      "decision": "iterate",
+      "lessons": [
+        "Asset/Ken Burns path remains separate from educator_mode performer path.",
+        "Batch QC can pass while franchise teaching standards still need Method + Foundation for Academy Shorts."
+      ],
+      "date": "2026-07-10",
+      "evidence": [
+        "data/productions/_validation/stick_experiments_3/STICK_EXPERIMENTS_3_REPORT.json",
+        "data/gcis/dashboard.json"
+      ]
+    },
+    {
+      "id": "EXP-COAT-REV",
+      "title": "Agent 26 — Gen lab coat gate",
+      "objective": "Stop implied lab coat on professor=True; lock Gen Foundation attire to clean stick.",
+      "method": "coat=False / attire=none defaults; validation rejects lab_coat for CHAR-PROFESSOR-001; regenerate turnarounds; Character Bible update.",
+      "variables": [
+        "coat_flag",
+        "attire",
+        "professor_true_implication"
+      ],
+      "outcome": "Coat opt-in only; Foundation consistency pass; tests green including coat-off pixel check.",
+      "metrics": {
+        "attire_locked": "none",
+        "lab_coat_forbidden_for_gen": true
+      },
+      "decision": "keep",
+      "lessons": [
+        "Identity locks need code + bible + tests.",
+        "MacroCenter coat requires explicit version bump later."
+      ],
+      "date": "2026-07-11",
+      "evidence": [
+        "data/character_systems/AGENT26_FOUNDING_REPORT.md",
+        "data/character_systems/EXECUTIVE_ACCEPTANCE.md"
+      ]
+    },
+    {
+      "id": "EXP-KNOWLEDGE-ATLAS",
+      "title": "Generational Knowledge Atlas",
+      "objective": "Permanent visual evidence library — search, plan, ingest, and reuse authentic educational visuals instead of defaulting to generated graphics.",
+      "method": "Ship services/knowledge_atlas (catalog, search, planner, ingest, QC, feedback); sync Project Reality seed assets; wire Batesian production script; register atlas_image visual source adapter.",
+      "variables": [
+        "concept_search",
+        "fingerprint_dedup",
+        "quality_score",
+        "panel_planning",
+        "reuse_history"
+      ],
+      "outcome": "Atlas live with 6 seed assets across biology/evolution/ecology collections; plan_visual_evidence integrated into Batesian producer; tests pass.",
+      "metrics": {
+        "seed_assets": 6,
+        "collections": 3,
+        "search_works": true,
+        "planner_panels_batesian_101": 2
+      },
+      "decision": "keep",
+      "lessons": [
+        "Atlas extends Reality — do not fork catalogs; sync and enrich metadata.",
+        "Every lesson should call plan_visual_evidence before render and record_lesson_visuals after."
+      ],
+      "date": "2026-07-12",
+      "evidence": [
+        "PROJECT_VISUAL_INTELLIGENCE.md",
+        "data/knowledge_atlas/catalog.json",
+        "services/knowledge_atlas/",
+        "tests/test_knowledge_atlas.py"
+      ]
+    }
+  ]
+}

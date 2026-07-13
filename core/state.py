@@ -8,6 +8,7 @@ DEFAULTS = {
     "command_text": "",
     "current_result": None,
     "current_project_name": None,
+    "selected_project_id": None,
     "project_name_input": "",
     "ideas_generated_total": 0,
     "token_usage_total": 0,
@@ -26,6 +27,18 @@ DEFAULTS = {
     "research_confidence_threshold": DEFAULT_RESEARCH_SETTINGS["research_confidence_threshold"],
     "max_unsupported_claims": DEFAULT_RESEARCH_SETTINGS["max_unsupported_claims"],
     "min_claim_confidence": DEFAULT_RESEARCH_SETTINGS["min_claim_confidence"],
+    "studio_settings": None,
+    "studio_pipeline": [],
+    "studio_command": "",
+    "_studio_action": None,
+    "projects_view": "list",
+    "project_asset_index": 0,
+    "opened_project_data": None,
+    "asset_detail_visible": True,
+    "active_asset_id": "",
+    "selected_asset": None,
+    "asset_workspace_open": True,
+    "show_build_video_checklist": False,
 }
 
 
@@ -33,6 +46,9 @@ def init_session_state() -> None:
     for key, value in DEFAULTS.items():
         if key not in st.session_state:
             st.session_state[key] = value
+    if st.session_state.studio_settings is None:
+        from services.studio import build_default_settings
+        st.session_state.studio_settings = build_default_settings()
 
 
 def record_ideas_generated(count: int) -> None:

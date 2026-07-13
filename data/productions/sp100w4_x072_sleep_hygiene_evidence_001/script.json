@@ -1,0 +1,74 @@
+{
+  "title": "Sleep Hygiene Evidence",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the science behind sleep hygiene evidence and its implications.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about sleep hygiene evidence.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Sleep hygiene isn\u2019t just buzzwords; it\u2019s backed by research. But what exactly does it entail?",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Studies show simple practices like consistent sleep schedules and screen-free time can enhance sleep quality.",
+      "emotion": "curiosity",
+      "delivery": "upbeat",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "However, some findings are preliminary. More long-term research is needed to solidify these claims.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "information tease"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "payoff",
+      "voiceover": "So while we know practices like a dark room and a cool temperature help, the science is still evolving.",
+      "emotion": "curiosity",
+      "delivery": "calm",
+      "retention_device": "surprise insight"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want more insights on science? Hit that follow button for more!",
+      "emotion": "curiosity",
+      "delivery": "encouraging",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about sleep hygiene evidence. Sleep hygiene isn\u2019t just buzzwords; it\u2019s backed by research. But what exactly does it entail? Studies show simple practices like consistent sleep schedules and screen-free time can enhance sleep quality. However, some findings are preliminary. More long-term research is needed to solidify these claims. So while we know practices like a dark room and a cool temperature help, the science is still evolving. Want more insights on science? Hit that follow button for more!",
+  "call_to_action": "Want more insights on science? Hit that follow button for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:23:31.927742+00:00",
+  "source": "ai"
+}

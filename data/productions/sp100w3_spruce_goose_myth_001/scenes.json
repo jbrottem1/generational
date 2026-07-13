@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if bigger wings could actually hinder flight?",
+    "visual_description": "Hook visual: What if bigger wings could actually hinder flight?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if bigger wings could actually hinder flight?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if bigger wings could actually hinder flight?",
+    "stock_footage_query": "",
+    "text_overlay": "What if bigger wings",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Aircraft design is a delicate balance of lift, drag, weight, and power.",
+    "visual_description": "Context visual: Aircraft design is a delicate balance of lift, drag, weight, and power.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Aircraft design is a delicate balance of lift, drag, weight, and power.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Aircraft design is a delicate balance of lift, drag, weight, and power.",
+    "stock_footage_query": "",
+    "text_overlay": "Aircraft design is a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "As wings get bigger, drag increases. It\u2019s not just about size!",
+    "visual_description": "Escalation visual: As wings get bigger, drag increases. It\u2019s not just about size!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: As wings get bigger, drag increases. It\u2019s not just about size!",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: As wings get bigger, drag increases. It\u2019s not just about size!",
+    "stock_footage_query": "",
+    "text_overlay": "As wings get bigger,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Engineers find optimal wing sizes that minimize drag while maximizing lift.",
+    "visual_description": "Evidence visual: Engineers find optimal wing sizes that minimize drag while maximizing lift.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Engineers find optimal wing sizes that minimize drag while maximizing lift.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Engineers find optimal wing sizes that minimize drag while maximizing lift.",
+    "stock_footage_query": "",
+    "text_overlay": "Engineers find optimal wing",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "satisfaction",
+    "length_sec": 12.0,
+    "narration": "So, next time you think bigger is better, remember: efficiency is key in aircraft design.",
+    "visual_description": "Payoff visual: So, next time you think bigger is better, remember: efficiency is key in aircraft design.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, next time you think bigger is better, remember: efficiency is key in aircraft design.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, next time you think bigger is better, remember: efficiency is key in aircraft design.",
+    "stock_footage_query": "",
+    "text_overlay": "So, next time you",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "encouragement",
+    "length_sec": 22.0,
+    "narration": "Curious about more aviation insights? Hit that follow for more science discoveries!",
+    "visual_description": "Cta visual: Curious about more aviation insights? Hit that follow for more science discoveries!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more aviation insights? Hit that follow for more science discoveries!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more aviation insights? Hit that follow for more science discoveries!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more aviation",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

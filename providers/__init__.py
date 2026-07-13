@@ -65,13 +65,25 @@ def get_research_source_providers(enabled: "list[str] | None" = None) -> list[Re
     return [p for p in _research_sources if p.key in enabled and p.is_available()]
 
 
-def get_llm_provider() -> LLMProvider:
-    from core.ai import get_provider
+class _RuntimeLLMProvider(LLMProvider):
+    """LLMProvider adapter over ProviderRuntime (no direct core.ai calls)."""
 
-    provider = get_provider()
-    if hasattr(provider, "generate_json"):
-        return provider  # type: ignore[return-value]
-    return provider  # type: ignore[return-value]
+    name = "provider_runtime"
+    label = "Provider Runtime LLM"
+
+    def is_available(self) -> bool:
+        return True
+
+    def generate_json(self, system_prompt: str, user_prompt: str, model: str) -> "tuple[dict | None, int]":
+        from services.provider_runtime.engine_api import runtime_generate_json
+
+        data, tokens, _provider = runtime_generate_json(system_prompt, user_prompt, model=model)
+        return data, tokens
+
+
+def get_llm_provider() -> LLMProvider:
+    """Return the ProviderRuntime-backed LLM provider (never a vendor SDK)."""
+    return _RuntimeLLMProvider()
 
 
 def get_voice_provider(mode: str = VoiceMode.AI) -> VoiceProvider:

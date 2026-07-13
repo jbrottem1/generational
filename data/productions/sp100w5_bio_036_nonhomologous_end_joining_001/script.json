@@ -1,0 +1,74 @@
+{
+  "title": "Nonhomologous End Joining",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "An intriguing explanation of nonhomologous end joining and its implications.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about nonhomologous end joining than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Nonhomologous end joining is a crucial DNA repair process that fixes breaks without needing a template.",
+      "emotion": "curiosity",
+      "delivery": "clear and informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Imagine your DNA is like a book. Sometimes, pages tear. Nonhomologous end joining just glues them back, but not always perfectly.",
+      "emotion": "curiosity",
+      "delivery": "engaging and relatable",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "This method is fast but can lead to mutations. It's like rushing to fix that page without reading what was lost.",
+      "emotion": "curiosity",
+      "delivery": "serious and reflective",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding this process helps scientists grasp cancer development and genetic disorders, revealing how our cells adapt under pressure.",
+      "emotion": "curiosity",
+      "delivery": "exciting and hopeful",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how your body repairs itself? Hit subscribe for more science insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting and energizing",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about nonhomologous end joining than social media does. Nonhomologous end joining is a crucial DNA repair process that fixes breaks without needing a template. Imagine your DNA is like a book. Sometimes, pages tear. Nonhomologous end joining just glues them back, but not always perfectly. This method is fast but can lead to mutations. It's like rushing to fix that page without reading what was lost. Understanding this process helps scientists grasp cancer development and genetic disorders, revealing how our cells adapt under pressure. Curious about how your body repairs itself? Hit subscribe for more science insights!",
+  "call_to_action": "Hit subscribe for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:38:47.845131+00:00",
+  "source": "ai"
+}

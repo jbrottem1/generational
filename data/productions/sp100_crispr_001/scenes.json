@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Scientists can now cut DNA like text \u2014 and this is how CRISPR works.",
+    "visual_description": "Hook visual: Scientists can now cut DNA like text \u2014 and this is how CRISPR works.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Scientists can now cut DNA like text \u2014 and this is how CRISPR works.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Scientists can now cut DNA like text \u2014 and this is how CRISPR works.",
+    "stock_footage_query": "",
+    "text_overlay": "Scientists can now cut",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Meet CRISPR-Cas9, a revolutionary tool that can edit genes with precision.",
+    "visual_description": "Context visual: Meet CRISPR-Cas9, a revolutionary tool that can edit genes with precision.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Meet CRISPR-Cas9, a revolutionary tool that can edit genes with precision.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Meet CRISPR-Cas9, a revolutionary tool that can edit genes with precision.",
+    "stock_footage_query": "",
+    "text_overlay": "Meet CRISPR-Cas9, a revolutionary",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "It uses a guide RNA to find the exact spot in the DNA sequence.",
+    "visual_description": "Escalation visual: It uses a guide RNA to find the exact spot in the DNA sequence.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: It uses a guide RNA to find the exact spot in the DNA sequence.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: It uses a guide RNA to find the exact spot in the DNA sequence.",
+    "stock_footage_query": "",
+    "text_overlay": "It uses a guide",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Then, Cas9 acts like molecular scissors, cutting the DNA.",
+    "visual_description": "Evidence visual: Then, Cas9 acts like molecular scissors, cutting the DNA.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Then, Cas9 acts like molecular scissors, cutting the DNA.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Then, Cas9 acts like molecular scissors, cutting the DNA.",
+    "stock_footage_query": "",
+    "text_overlay": "Then, Cas9 acts like",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "hope",
+    "length_sec": 12.0,
+    "narration": "This allows cells to repair the DNA, potentially eliminating diseases.",
+    "visual_description": "Payoff visual: This allows cells to repair the DNA, potentially eliminating diseases.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This allows cells to repair the DNA, potentially eliminating diseases.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This allows cells to repair the DNA, potentially eliminating diseases.",
+    "stock_footage_query": "",
+    "text_overlay": "This allows cells to",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "pattern_interrupt",
+    "emotion": "caution",
+    "length_sec": 12.0,
+    "narration": "But remember, clinical use is tightly regulated.",
+    "visual_description": "Pattern Interrupt visual: But remember, clinical use is tightly regulated.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: But remember, clinical use is tightly regulated.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: But remember, clinical use is tightly regulated.",
+    "stock_footage_query": "",
+    "text_overlay": "But remember, clinical use",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Intrigued by CRISPR? Hit like and follow for more science insights!",
+    "visual_description": "Cta visual: Intrigued by CRISPR? Hit like and follow for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Intrigued by CRISPR? Hit like and follow for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Intrigued by CRISPR? Hit like and follow for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Intrigued by CRISPR? Hit",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

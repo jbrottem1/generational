@@ -1,0 +1,74 @@
+{
+  "title": "Chaperone Proteins",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "This script reveals the essential role of chaperone proteins in cellular biology.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about chaperone proteins than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Chaperone proteins help other proteins fold correctly.",
+      "emotion": "curiosity",
+      "delivery": "informative and engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Without them, misfolded proteins can cause diseases like Alzheimer\u2019s.",
+      "emotion": "concern",
+      "delivery": "serious and urgent",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows these proteins can even prevent cancer by aiding correct protein folding.",
+      "emotion": "hope",
+      "delivery": "optimistic",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "payoff",
+      "voiceover": "So, the next time you hear about proteins, remember the quiet heroes: chaperones.",
+      "emotion": "satisfaction",
+      "delivery": "confident and reassuring",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious for more science truths? Like and follow for more insights!",
+      "emotion": "enthusiasm",
+      "delivery": "inviting and engaging",
+      "retention_device": "natural CTA"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about chaperone proteins than social media does. Chaperone proteins help other proteins fold correctly. Without them, misfolded proteins can cause diseases like Alzheimer\u2019s. Research shows these proteins can even prevent cancer by aiding correct protein folding. So, the next time you hear about proteins, remember the quiet heroes: chaperones. Curious for more science truths? Like and follow for more insights!",
+  "call_to_action": "Curious for more science truths? Like and follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:39:36.575466+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Forces come in pairs \u2014 rockets push exhaust, exhaust pushes rockets.",
+    "visual_description": "Hook visual: Forces come in pairs \u2014 rockets push exhaust, exhaust pushes rockets.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Forces come in pairs \u2014 rockets push exhaust, exhaust pushes rockets.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Forces come in pairs \u2014 rockets push exhaust, exhaust pushes rockets.",
+    "stock_footage_query": "",
+    "text_overlay": "Forces come in pairs",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This is Newton's third law of motion. Every action has an equal and opposite reaction.",
+    "visual_description": "Context visual: This is Newton's third law of motion. Every action has an equal and opposite reaction.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This is Newton's third law of motion. Every action has an equal and opposite reaction.",
+    "ai_video_prompt": "Cinematic motion: Context visual: This is Newton's third law of motion. Every action has an equal and opposite reaction.",
+    "stock_footage_query": "",
+    "text_overlay": "This is Newton's third",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "excitement",
+    "length_sec": 8.0,
+    "narration": "Imagine a rocket in space. It expels gas downward and, boom, it shoots up!",
+    "visual_description": "Escalation visual: Imagine a rocket in space. It expels gas downward and, boom, it shoots up!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Imagine a rocket in space. It expels gas downward and, boom, it shoots up!",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Imagine a rocket in space. It expels gas downward and, boom, it shoots up!",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine a rocket in",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "intrigue",
+    "length_sec": 8.0,
+    "narration": "This principle explains not just rockets but swimming, walking, and even flying.",
+    "visual_description": "Evidence visual: This principle explains not just rockets but swimming, walking, and even flying.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: This principle explains not just rockets but swimming, walking, and even flying.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: This principle explains not just rockets but swimming, walking, and even flying.",
+    "stock_footage_query": "",
+    "text_overlay": "This principle explains not",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "satisfaction",
+    "length_sec": 20.0,
+    "narration": "So, every time you push off the ground, remember: you\u2019re not just moving forward, you\u2019re pushing against the Earth!",
+    "visual_description": "Payoff visual: So, every time you push off the ground, remember: you\u2019re not just moving forward, you\u2019re pushing against the Earth!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, every time you push off the ground, remember: you\u2019re not just moving forward, you\u2019re pushing against the Earth!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, every time you push off the ground, remember: you\u2019re not just moving forward, you\u2019re pushing against the Earth!",
+    "stock_footage_query": "",
+    "text_overlay": "So, every time you",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 46.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "encouragement",
+    "length_sec": 14.0,
+    "narration": "Want to explore more science concepts? Hit follow for more amazing insights!",
+    "visual_description": "Cta visual: Want to explore more science concepts? Hit follow for more amazing insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to explore more science concepts? Hit follow for more amazing insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to explore more science concepts? Hit follow for more amazing insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to explore more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 46.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 46.0
+    }
+  }
+]

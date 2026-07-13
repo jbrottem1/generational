@@ -1,0 +1,74 @@
+{
+  "title": "R0 and Outbreak Math",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring how the R0 value impacts outbreak growth and the importance of accurate epidemiology.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if your sneeze could start a pandemic?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "It's all about R0, the reproduction number. If each case infects more than one other person...",
+      "emotion": "curiosity",
+      "delivery": "conversational",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "...outbreaks can spiral out of control. Imagine a single infection leading to dozens.",
+      "emotion": "urgency",
+      "delivery": "engaging",
+      "retention_device": "visual imagery"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows that accurate tracking of R0 is crucial. Misleading data can cause panic.",
+      "emotion": "seriousness",
+      "delivery": "clear and informative",
+      "retention_device": "statistics"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "So, understanding R0 helps us prepare, not sensationalize. Knowledge is power.",
+      "emotion": "empowerment",
+      "delivery": "inspiring",
+      "retention_device": "emotional connection"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay informed, stay safe, and don't forget to follow for more science insights!",
+      "emotion": "encouragement",
+      "delivery": "motivational",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "What if your sneeze could start a pandemic? It's all about R0, the reproduction number. If each case infects more than one other person, outbreaks can spiral out of control. Imagine a single infection leading to dozens. Research shows that accurate tracking of R0 is crucial. Misleading data can cause panic. So, understanding R0 helps us prepare, not sensationalize. Knowledge is power. Stay informed, stay safe, and don't forget to follow for more science insights!",
+  "call_to_action": "Stay informed, stay safe, and don't forget to follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:11:48.028820+00:00",
+  "source": "ai"
+}

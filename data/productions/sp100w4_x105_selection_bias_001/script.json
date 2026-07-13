@@ -1,0 +1,74 @@
+{
+  "title": "Selection Bias",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Selection bias skews our understanding of research by favoring certain outcomes.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about selection bias.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Selection bias occurs when the sample in a study isn't representative of the whole population.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "This can lead to misleading conclusions, especially in health research.",
+      "emotion": "concern",
+      "delivery": "urgent",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "For example, if a study only gathers data from one demographic, it overlooks critical insight.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Recognizing this bias helps us interpret research more accurately.",
+      "emotion": "revelation",
+      "delivery": "clarifying",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more about biases in research? Hit that follow button!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about selection bias. Selection bias occurs when the sample in a study isn't representative of the whole population. This can lead to misleading conclusions, especially in health research. For example, if a study only gathers data from one demographic, it overlooks critical insight. Recognizing this bias helps us interpret research more accurately. Want to learn more about biases in research? Hit that follow button!",
+  "call_to_action": "Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:27:15.667823+00:00",
+  "source": "ai"
+}

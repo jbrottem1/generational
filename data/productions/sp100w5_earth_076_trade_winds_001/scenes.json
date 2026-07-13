@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science reveals secrets about trade winds that social media misses.",
+    "visual_description": "Hook visual: Science reveals secrets about trade winds that social media misses.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science reveals secrets about trade winds that social media misses.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science reveals secrets about trade winds that social media misses.",
+    "stock_footage_query": "",
+    "text_overlay": "Science reveals secrets about",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 9.0,
+    "narration": "Trade winds are consistent winds blowing from the east, crucial for climate and weather patterns.",
+    "visual_description": "Context visual: Trade winds are consistent winds blowing from the east, crucial for climate and weather patterns.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Trade winds are consistent winds blowing from the east, crucial for climate and weather patterns.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Trade winds are consistent winds blowing from the east, crucial for climate and weather patterns.",
+    "stock_footage_query": "",
+    "text_overlay": "Trade winds are consistent",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 11.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 9.0,
+    "narration": "They form due to Earth's rotation and the sun's heating, creating a dance of air currents.",
+    "visual_description": "Escalation visual: They form due to Earth's rotation and the sun's heating, creating a dance of air currents.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: They form due to Earth's rotation and the sun's heating, creating a dance of air currents.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: They form due to Earth's rotation and the sun's heating, creating a dance of air currents.",
+    "stock_footage_query": "",
+    "text_overlay": "They form due to",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 11.0,
+      "end_sec": 20.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 11.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 9.0,
+    "narration": "These winds influence ocean currents, weather systems, and even our climate. But there's still mystery.",
+    "visual_description": "Evidence visual: These winds influence ocean currents, weather systems, and even our climate. But there's still mystery.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: These winds influence ocean currents, weather systems, and even our climate. But there's still mystery.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: These winds influence ocean currents, weather systems, and even our climate. But there's still mystery.",
+    "stock_footage_query": "",
+    "text_overlay": "These winds influence ocean",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 20.0,
+      "end_sec": 29.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 20.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 16.0,
+    "narration": "Understanding trade winds helps scientists predict storms and climate changes, showing their vital role.",
+    "visual_description": "Payoff visual: Understanding trade winds helps scientists predict storms and climate changes, showing their vital role.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding trade winds helps scientists predict storms and climate changes, showing their vital role.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding trade winds helps scientists predict storms and climate changes, showing their vital role.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding trade winds helps",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 29.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 29.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "Curious about more scientific mysteries? Hit that follow button!",
+    "visual_description": "Cta visual: Curious about more scientific mysteries? Hit that follow button!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more scientific mysteries? Hit that follow button!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more scientific mysteries? Hit that follow button!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more scientific",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

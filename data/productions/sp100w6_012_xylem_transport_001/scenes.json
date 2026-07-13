@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Ever wondered how trees drink water?",
+    "visual_description": "Hook visual: Ever wondered how trees drink water?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever wondered how trees drink water?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever wondered how trees drink water?",
+    "stock_footage_query": "",
+    "text_overlay": "Ever wondered how trees",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Meet xylem, the plant's water highway. It moves water from roots to leaves.",
+    "visual_description": "Context visual: Meet xylem, the plant's water highway. It moves water from roots to leaves.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Meet xylem, the plant's water highway. It moves water from roots to leaves.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Meet xylem, the plant's water highway. It moves water from roots to leaves.",
+    "stock_footage_query": "",
+    "text_overlay": "Meet xylem, the plant's",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 7.0,
+    "narration": "But how does it defy gravity?",
+    "visual_description": "Escalation visual: But how does it defy gravity?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But how does it defy gravity?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But how does it defy gravity?",
+    "stock_footage_query": "",
+    "text_overlay": "But how does it",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 17.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Through cohesion and adhesion, water molecules stick together and to the xylem walls.",
+    "visual_description": "Evidence visual: Through cohesion and adhesion, water molecules stick together and to the xylem walls.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Through cohesion and adhesion, water molecules stick together and to the xylem walls.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Through cohesion and adhesion, water molecules stick together and to the xylem walls.",
+    "stock_footage_query": "",
+    "text_overlay": "Through cohesion and adhesion,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 17.0,
+      "end_sec": 25.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 17.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "This creates a continuous pull, drawing water upward. It's nature's magic!",
+    "visual_description": "Payoff visual: This creates a continuous pull, drawing water upward. It's nature's magic!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This creates a continuous pull, drawing water upward. It's nature's magic!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This creates a continuous pull, drawing water upward. It's nature's magic!",
+    "stock_footage_query": "",
+    "text_overlay": "This creates a continuous",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 25.0,
+      "end_sec": 35.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 25.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 25.0,
+    "narration": "Want more cool plant science? Hit subscribe and discover more!",
+    "visual_description": "Cta visual: Want more cool plant science? Hit subscribe and discover more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want more cool plant science? Hit subscribe and discover more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want more cool plant science? Hit subscribe and discover more!",
+    "stock_footage_query": "",
+    "text_overlay": "Want more cool plant",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 35.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 35.0
+    }
+  }
+]

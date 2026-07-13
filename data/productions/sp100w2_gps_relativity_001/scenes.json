@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Without relativity, your GPS would drift by kilometers every day!",
+    "visual_description": "Hook visual: Without relativity, your GPS would drift by kilometers every day!",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Without relativity, your GPS would drift by kilometers every day!",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Without relativity, your GPS would drift by kilometers every day!",
+    "stock_footage_query": "",
+    "text_overlay": "Without relativity, your GPS",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "GPS satellites move fast and are far from us, causing time to act differently.",
+    "visual_description": "Context visual: GPS satellites move fast and are far from us, causing time to act differently.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: GPS satellites move fast and are far from us, causing time to act differently.",
+    "ai_video_prompt": "Cinematic motion: Context visual: GPS satellites move fast and are far from us, causing time to act differently.",
+    "stock_footage_query": "",
+    "text_overlay": "GPS satellites move fast",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Special relativity says time slows down for moving objects\u2014like satellites.",
+    "visual_description": "Escalation visual: Special relativity says time slows down for moving objects\u2014like satellites.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Special relativity says time slows down for moving objects\u2014like satellites.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Special relativity says time slows down for moving objects\u2014like satellites.",
+    "stock_footage_query": "",
+    "text_overlay": "Special relativity says time",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Meanwhile, general relativity states gravity affects time too\u2014satellites are further from Earth's pull.",
+    "visual_description": "Evidence visual: Meanwhile, general relativity states gravity affects time too\u2014satellites are further from Earth's pull.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Meanwhile, general relativity states gravity affects time too\u2014satellites are further from Earth's pull.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Meanwhile, general relativity states gravity affects time too\u2014satellites are further from Earth's pull.",
+    "stock_footage_query": "",
+    "text_overlay": "Meanwhile, general relativity states",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 28.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Together, these effects cause GPS clocks to gain time\u2014up to 38 microseconds daily!",
+    "visual_description": "Payoff visual: Together, these effects cause GPS clocks to gain time\u2014up to 38 microseconds daily!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Together, these effects cause GPS clocks to gain time\u2014up to 38 microseconds daily!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Together, these effects cause GPS clocks to gain time\u2014up to 38 microseconds daily!",
+    "stock_footage_query": "",
+    "text_overlay": "Together, these effects cause",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 28.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 28.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "So next time you navigate, remember Einstein\u2019s theories keep you on track.",
+    "visual_description": "Cta visual: So next time you navigate, remember Einstein\u2019s theories keep you on track.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: So next time you navigate, remember Einstein\u2019s theories keep you on track.",
+    "ai_video_prompt": "Cinematic motion: Cta visual: So next time you navigate, remember Einstein\u2019s theories keep you on track.",
+    "stock_footage_query": "",
+    "text_overlay": "So next time you",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "version": "0.2-dash",
+  "status": "dash_foundation_locked",
+  "owner_agent": 18,
+  "aspect_ratio": "9:16",
+  "motion_default": "cinematic_intent_required",
+  "forbid_static_full_runtime": true,
+  "forbid_color_bed": true,
+  "max_static_frame_sec": 3.0,
+  "beat_change_interval_sec": [2.0, 4.0],
+  "flagship_series": "SERIES-DASH-SCIENCE",
+  "flagship_character": "CHAR-DASH",
+  "palette_families": {
+    "science_core": ["#0B1D36", "#1B6CA8", "#E8F1F8", "#F4A261"],
+    "space": ["#0A1628", "#7B2CBF", "#E0AAFF", "#F8F7FF"],
+    "ocean": ["#0D1B1E", "#2A9D8F", "#95D5B2", "#E9C46A"],
+    "lab": ["#101820", "#457B9D", "#A8DADC", "#F1FAEE"],
+    "dash_night": ["#0B1020", "#1B3A4B", "#F4D35E", "#E8F1F8"]
+  },
+  "character_tokens": {
+    "CHAR-DASH": {
+      "outline": "#000000",
+      "fill": "#FFFFFF",
+      "eye_emphasis": "oversized",
+      "stroke_weight_norm": 0.012,
+      "prompt_lock": "characters/CHAR-DASH/prompt_lock.json"
+    }
+  },
+  "lighting_recipes": {
+    "documentary_volumetric": "soft key + atmospheric haze + practical instrument glow",
+    "macro_science": "hard rim + shallow DOF + specular micro-detail",
+    "cosmic": "low-key with luminous subject isolation",
+    "dash_ocean_glow": "deep navy key + cyan bioluminescent practicals + soft particulate scatter",
+    "dash_lab_renewal": "cool teal key + soft grid bounce + organ-swap accent glows",
+    "dash_firefly_night": "dusk rim + yellow-green flash practicals + meadow silhouette fill"
+  },
+  "camera_verbs": [
+    "quick_punch_in",
+    "slow_push_in",
+    "ken_burns_drift",
+    "pan_reveal",
+    "orbit_hint",
+    "documentary_slow_zoom",
+    "follow_walk",
+    "punch_in_eyes",
+    "parallax_pan",
+    "reveal_pull_back",
+    "chase_handheld_energy",
+    "diagram_lockoff_with_drift"
+  ],
+  "animation_library": "ANIM-DASH-V1",
+  "character_rules_pending": false,
+  "environment_rules_pending": false,
+  "dash_rules": {
+    "on_screen_min_ratio": 0.7,
+    "no_flat_solid_full_background": true,
+    "reuse_components_only": true,
+    "redesign_requires_version_bump": true
+  }
+}

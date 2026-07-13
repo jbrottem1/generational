@@ -1,0 +1,74 @@
+{
+  "title": "Fermented foods evidence",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring scientific evidence on the benefits of fermented foods while noting areas needing further research.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about fermented foods evidence.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Fermented foods like yogurt and kimchi are praised for their health benefits.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But what does the evidence really show? More than a trend, some studies suggest gut health improvement.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Research indicates probiotics can boost digestion and immunity, yet some findings are preliminary.",
+      "emotion": "curiosity",
+      "delivery": "candid",
+      "retention_device": "retention hook"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "payoff",
+      "voiceover": "So, while fermented foods have potential, more rigorous studies are needed.",
+      "emotion": "curiosity",
+      "delivery": "reassuring",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about your favorite fermented food? Share it in the comments!",
+      "emotion": "engagement",
+      "delivery": "enthusiastic",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about fermented foods evidence. Fermented foods like yogurt and kimchi are praised for their health benefits. But what does the evidence really show? More than a trend, some studies suggest gut health improvement. Research indicates probiotics can boost digestion and immunity, yet some findings are preliminary. So, while fermented foods have potential, more rigorous studies are needed. Curious about your favorite fermented food? Share it in the comments!",
+  "call_to_action": "Curious about your favorite fermented food? Share it in the comments!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:20:28.192023+00:00",
+  "source": "ai"
+}

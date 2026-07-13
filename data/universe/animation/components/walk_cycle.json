@@ -1,0 +1,38 @@
+{
+  "id": "walk_cycle",
+  "loop": true,
+  "cycle_sec": 0.6,
+  "keyframes": [
+    {
+      "t": 0.0,
+      "pose": "contact_L",
+      "hips_y": 0.0,
+      "arm_swing": 0.3
+    },
+    {
+      "t": 0.15,
+      "pose": "passing",
+      "hips_y": 0.02,
+      "arm_swing": 0.0
+    },
+    {
+      "t": 0.3,
+      "pose": "contact_R",
+      "hips_y": 0.0,
+      "arm_swing": -0.3
+    },
+    {
+      "t": 0.45,
+      "pose": "passing",
+      "hips_y": 0.02,
+      "arm_swing": 0.0
+    },
+    {
+      "t": 0.6,
+      "pose": "contact_L",
+      "hips_y": 0.0,
+      "arm_swing": 0.3
+    }
+  ],
+  "notes": "Natural plant-push feet; head leads slightly; eyes look ahead."
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Biomagnification",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "This script unveils the concept of biomagnification, exploring its implications and uncertainties with engaging curiosity.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Ever wonder how a tiny fish can hold toxins more than a shark?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "This is biomagnification\u2014when toxins increase in concentration as they move up the food chain.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "intriguing fact"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Small organisms absorb pollutants. Then, larger predators eat them, amplifying the toxin levels.",
+      "emotion": "curiosity",
+      "delivery": "urgent",
+      "retention_device": "visual comparison"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that top predators can have toxin levels a thousand times higher than their prey.",
+      "emotion": "surprise",
+      "delivery": "matter-of-fact",
+      "retention_device": "statistic"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "This affects not just wildlife, but also human health through our seafood.",
+      "emotion": "concern",
+      "delivery": "serious",
+      "retention_device": "real-world impact"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 42.0,
+      "segment_type": "cta",
+      "voiceover": "Stay informed about what\u2019s on your plate. Knowledge is power!",
+      "emotion": "empowerment",
+      "delivery": "encouraging",
+      "retention_device": "final thought"
+    }
+  ],
+  "full_voiceover": "Ever wonder how a tiny fish can hold toxins more than a shark? This is biomagnification\u2014when toxins increase in concentration as they move up the food chain. Small organisms absorb pollutants. Then, larger predators eat them, amplifying the toxin levels. Studies show that top predators can have toxin levels a thousand times higher than their prey. This affects not just wildlife, but also human health through our seafood. Stay informed about what\u2019s on your plate. Knowledge is power!",
+  "call_to_action": "Like and follow for more mind-bending science!",
+  "estimated_word_count": 78,
+  "generated_at": "2026-07-10T18:03:56.804356+00:00",
+  "source": "ai"
+}

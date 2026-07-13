@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if I told you that not all species fit neatly into r or K categories?",
+    "visual_description": "Hook visual: What if I told you that not all species fit neatly into r or K categories?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you that not all species fit neatly into r or K categories?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you that not all species fit neatly into r or K categories?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "In ecology, r and K selection describe life strategies. R strategists reproduce quickly, while K strategists invest in fewer offspring.",
+    "visual_description": "Context visual: In ecology, r and K selection describe life strategies. R strategists reproduce quickly, while K strategists invest in f",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: In ecology, r and K selection describe life strategies. R strategists reproduce quickly, while K strategists invest in f",
+    "ai_video_prompt": "Cinematic motion: Context visual: In ecology, r and K selection describe life strategies. R strategists reproduce quickly, while K strategists invest in f",
+    "stock_footage_query": "",
+    "text_overlay": "In ecology, r and",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But there's more! Not all species strictly adhere to these labels. Some blend traits from both strategies.",
+    "visual_description": "Escalation visual: But there's more! Not all species strictly adhere to these labels. Some blend traits from both strategies.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But there's more! Not all species strictly adhere to these labels. Some blend traits from both strategies.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But there's more! Not all species strictly adhere to these labels. Some blend traits from both strategies.",
+    "stock_footage_query": "",
+    "text_overlay": "But there's more! Not",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Consider species like turtles and elephants; they show characteristics of both r and K selection, defying the simple definitions.",
+    "visual_description": "Evidence visual: Consider species like turtles and elephants; they show characteristics of both r and K selection, defying the simple def",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Consider species like turtles and elephants; they show characteristics of both r and K selection, defying the simple def",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Consider species like turtles and elephants; they show characteristics of both r and K selection, defying the simple def",
+    "stock_footage_query": "",
+    "text_overlay": "Consider species like turtles",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 24.0,
+    "narration": "Understanding these nuances helps us grasp the complexity of life. It\u2019s not black and white; nature is a spectrum.",
+    "visual_description": "Payoff visual: Understanding these nuances helps us grasp the complexity of life. It\u2019s not black and white; nature is a spectrum.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding these nuances helps us grasp the complexity of life. It\u2019s not black and white; nature is a spectrum.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding these nuances helps us grasp the complexity of life. It\u2019s not black and white; nature is a spectrum.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding these nuances helps",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Curious about more biology insights? Hit that follow for more science mysteries!",
+    "visual_description": "Cta visual: Curious about more biology insights? Hit that follow for more science mysteries!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more biology insights? Hit that follow for more science mysteries!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more biology insights? Hit that follow for more science mysteries!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more biology",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

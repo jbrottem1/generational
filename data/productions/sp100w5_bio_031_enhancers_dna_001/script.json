@@ -1,0 +1,74 @@
+{
+  "title": "Enhancers DNA",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A deep dive into enhancers DNA reveals its crucial yet misunderstood role in gene expression.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about enhancers DNA than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Enhancers are regions in DNA that boost the transcription of genes, but they often go overlooked.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Think of enhancers as the directors of a play, guiding when genes should be turned up or down.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show they can operate over long distances, interacting with genes far away on the DNA strand.",
+      "emotion": "curiosity",
+      "delivery": "factual",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "This means enhancers play a vital role in everything from development to disease, often with complex interactions.",
+      "emotion": "curiosity",
+      "delivery": "revealing",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into genetics? Follow for more mind-blowing science!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "natural CTA"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about enhancers DNA than social media does. Enhancers are regions in DNA that boost the transcription of genes, but they often go overlooked. Think of enhancers as the directors of a play, guiding when genes should be turned up or down. Studies show they can operate over long distances, interacting with genes far away on the DNA strand. This means enhancers play a vital role in everything from development to disease, often with complex interactions. Want to dive deeper into genetics? Follow for more mind-blowing science!",
+  "call_to_action": "Want to dive deeper into genetics? Follow for more mind-blowing science!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:37:38.483935+00:00",
+  "source": "ai"
+}

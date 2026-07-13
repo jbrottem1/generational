@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about Parker Solar Probe than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about Parker Solar Probe than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about Parker Solar Probe than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about Parker Solar Probe than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Launched in 2018, this mission dives into the Sun's outer atmosphere, revealing mysteries.",
+    "visual_description": "Context visual: Launched in 2018, this mission dives into the Sun's outer atmosphere, revealing mysteries.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Launched in 2018, this mission dives into the Sun's outer atmosphere, revealing mysteries.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Launched in 2018, this mission dives into the Sun's outer atmosphere, revealing mysteries.",
+    "stock_footage_query": "",
+    "text_overlay": "Launched in 2018, this",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "wonder",
+    "length_sec": 8.0,
+    "narration": "It\u2019s the fastest human-made object, reaching speeds over 430,000 miles per hour!",
+    "visual_description": "Escalation visual: It\u2019s the fastest human-made object, reaching speeds over 430,000 miles per hour!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: It\u2019s the fastest human-made object, reaching speeds over 430,000 miles per hour!",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: It\u2019s the fastest human-made object, reaching speeds over 430,000 miles per hour!",
+    "stock_footage_query": "",
+    "text_overlay": "It\u2019s the fastest human-made",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "By flying close, it studies solar winds and their impact on Earth.",
+    "visual_description": "Evidence visual: By flying close, it studies solar winds and their impact on Earth.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: By flying close, it studies solar winds and their impact on Earth.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: By flying close, it studies solar winds and their impact on Earth.",
+    "stock_footage_query": "",
+    "text_overlay": "By flying close, it",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "relief",
+    "length_sec": 8.0,
+    "narration": "Understanding the Sun could protect our technology and lives.",
+    "visual_description": "Payoff visual: Understanding the Sun could protect our technology and lives.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding the Sun could protect our technology and lives.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding the Sun could protect our technology and lives.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding the Sun could",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "enthusiasm",
+    "length_sec": 26.0,
+    "narration": "Curious about what else we\u2019re discovering in space? Hit follow for more!",
+    "visual_description": "Cta visual: Curious about what else we\u2019re discovering in space? Hit follow for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about what else we\u2019re discovering in space? Hit follow for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about what else we\u2019re discovering in space? Hit follow for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about what else",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

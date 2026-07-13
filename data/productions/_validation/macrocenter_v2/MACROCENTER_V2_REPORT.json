@@ -1,0 +1,31 @@
+{
+  "project": "MacroCenter V2",
+  "title": "The Cell Membrane: Your Body's Smart Security System",
+  "generated_at": "2026-07-11T03:13:47.670669+00:00",
+  "success": true,
+  "duration_sec": 30.288,
+  "target_range_sec": [
+    30,
+    45
+  ],
+  "in_target": true,
+  "render_time_sec": 19.11,
+  "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/MacroCenter_V2_Cell_Membrane.mp4",
+  "export_bytes": 1458505,
+  "qc": {
+    "passed": true,
+    "purposeful_gestures": true,
+    "idle_ratio": 0.36,
+    "walk_ratio": 0.06,
+    "gesture_counts": {
+      "idle": 240,
+      "point": 266,
+      "react": 26,
+      "push": 67,
+      "present": 67
+    }
+  },
+  "density_law": "every_second_earns_place",
+  "demo_id": "macro_cell_membrane_v2",
+  "teaching_method": "generational_method"
+}

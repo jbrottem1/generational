@@ -1,0 +1,21 @@
+{
+  "id": "question_tilt",
+  "loop": false,
+  "duration_sec": 0.55,
+  "expression": "confused",
+  "keyframes": [
+    {
+      "t": 0.0,
+      "tilt": 0
+    },
+    {
+      "t": 0.3,
+      "tilt": 12
+    },
+    {
+      "t": 0.55,
+      "tilt": 8
+    }
+  ],
+  "notes": "Optional floating '?' mograph."
+}

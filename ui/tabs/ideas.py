@@ -8,6 +8,7 @@ from core import state
 from core.constants import CANDIDATE_IDEAS, EXAMPLE_COMMANDS, IDEAS_PER_BATCH
 from services import ideation, pipeline
 from ui import components, notify
+from ui.project_state import queue_project_name_update
 
 
 def _fill_example(example: str) -> None:
@@ -49,7 +50,8 @@ def render() -> None:
             st.caption(
                 f"Top {len(result['ideas'])} of {CANDIDATE_IDEAS} candidates — "
                 "selected by the Psychology & Virality Engine (18-dimension ViralScore) and weighted "
-                "ranking, scripted, critiqued, auto-revised, and SEO-packaged."
+                "ranking, scripted, critiqued, auto-revised, SEO-packaged, and screened for "
+                "production risk (Threat Detection)."
             )
         for index, idea in enumerate(result["ideas"], start=1):
             components.idea_card(index, idea)
@@ -96,13 +98,16 @@ def _handle_run(command: str) -> None:
     state.add_token_usage(tokens_used)
 
     if not st.session_state.current_project_name:
-        st.session_state.project_name_input = result["niche"]
+        queue_project_name_update(result["niche"])
 
     idea_count = len(result["ideas"])
     publishable = result.get("quality_summary", {}).get("publishable", idea_count)
     produced = len(result.get("production_packages", []))
     if result["demo_mode"]:
-        st.info("🟡 Demo Mode — add an OpenAI API key in **Settings** to power the pipeline with real AI.")
+        st.info(
+            "🟡 Demo Mode — set `OPENAI_API_KEY` in the project `.env` "
+            "(or **Settings → API Keys**), then restart Streamlit."
+        )
     if error:
         st.warning(f"⚠️ One or more AI calls failed and used heuristic fallbacks: {error}")
     if result.get("production_error"):

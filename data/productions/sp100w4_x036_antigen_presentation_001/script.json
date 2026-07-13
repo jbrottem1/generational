@@ -1,0 +1,74 @@
+{
+  "title": "Antigen Presentation",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A deep dive into antigen presentation and its crucial role in immune response.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about antigen presentation.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Antigen presentation is how our immune system identifies threats.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Cells capture antigens, then display them on their surfaces.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "This interaction triggers T-cells, activating our immune response.",
+      "emotion": "curiosity",
+      "delivery": "assertive",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "Without this process, our bodies would struggle to recognize infections!",
+      "emotion": "curiosity",
+      "delivery": "dramatic",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how this impacts vaccines? Hit like and follow for more!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "strong CTA"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about antigen presentation. Antigen presentation is how our immune system identifies threats. Cells capture antigens, then display them on their surfaces. This interaction triggers T-cells, activating our immune response. Without this process, our bodies would struggle to recognize infections! Curious about how this impacts vaccines? Hit like and follow for more!",
+  "call_to_action": "Hit like and follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:19:02.373103+00:00",
+  "source": "ai"
+}

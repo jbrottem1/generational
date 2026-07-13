@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if I told you that not all research is peer-reviewed?",
+    "visual_description": "Hook visual: What if I told you that not all research is peer-reviewed?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you that not all research is peer-reviewed?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you that not all research is peer-reviewed?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "intrigue",
+    "length_sec": 8.0,
+    "narration": "Preprints are research papers shared before peer review. They spark debate and discovery.",
+    "visual_description": "Context visual: Preprints are research papers shared before peer review. They spark debate and discovery.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Preprints are research papers shared before peer review. They spark debate and discovery.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Preprints are research papers shared before peer review. They spark debate and discovery.",
+    "stock_footage_query": "",
+    "text_overlay": "Preprints are research papers",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "But why are they controversial? Some argue they spread misinformation.",
+    "visual_description": "Escalation visual: But why are they controversial? Some argue they spread misinformation.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But why are they controversial? Some argue they spread misinformation.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But why are they controversial? Some argue they spread misinformation.",
+    "stock_footage_query": "",
+    "text_overlay": "But why are they",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "hope",
+    "length_sec": 8.0,
+    "narration": "Yet, they accelerate scientific progress, allowing immediate feedback and collaboration.",
+    "visual_description": "Evidence visual: Yet, they accelerate scientific progress, allowing immediate feedback and collaboration.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Yet, they accelerate scientific progress, allowing immediate feedback and collaboration.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Yet, they accelerate scientific progress, allowing immediate feedback and collaboration.",
+    "stock_footage_query": "",
+    "text_overlay": "Yet, they accelerate scientific",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "revelation",
+    "length_sec": 8.0,
+    "narration": "So, preprints are a double-edged sword\u2014informative but needing caution.",
+    "visual_description": "Payoff visual: So, preprints are a double-edged sword\u2014informative but needing caution.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, preprints are a double-edged sword\u2014informative but needing caution.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, preprints are a double-edged sword\u2014informative but needing caution.",
+    "stock_footage_query": "",
+    "text_overlay": "So, preprints are a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "encouragement",
+    "length_sec": 26.0,
+    "narration": "Follow for more insights on science and stay informed!",
+    "visual_description": "Cta visual: Follow for more insights on science and stay informed!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Follow for more insights on science and stay informed!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Follow for more insights on science and stay informed!",
+    "stock_footage_query": "",
+    "text_overlay": "Follow for more insights",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

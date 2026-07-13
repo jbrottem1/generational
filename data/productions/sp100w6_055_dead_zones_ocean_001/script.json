@@ -1,0 +1,74 @@
+{
+  "title": "Dead Zones in the Ocean",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the phenomenon of ocean dead zones and their implications.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Ever heard of ocean dead zones? They're more mysterious than you think.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 12.0,
+      "segment_type": "context",
+      "voiceover": "These areas, where oxygen is so low that marine life can't survive, are spreading.",
+      "emotion": "concern",
+      "delivery": "steady and informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 12.0,
+      "end_time": 20.0,
+      "segment_type": "escalation",
+      "voiceover": "Causes include pollution, climate change, and over-fertilization. But it\u2019s not just the fish that suffer.",
+      "emotion": "urgency",
+      "delivery": "emphatic and direct",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 20.0,
+      "end_time": 28.0,
+      "segment_type": "evidence",
+      "voiceover": "Scientific studies show these dead zones are increasing, threatening ecosystems and economies.",
+      "emotion": "alarm",
+      "delivery": "serious and factual",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 28.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding them is crucial for our oceans' future. Will we act before it's too late?",
+      "emotion": "hopeful",
+      "delivery": "inspiring and passionate",
+      "retention_device": "suspenseful build-up"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how you can help? Like and subscribe for more insights on our oceans.",
+      "emotion": "engagement",
+      "delivery": "inviting and warm",
+      "retention_device": "clear action step"
+    }
+  ],
+  "full_voiceover": "Ever heard of ocean dead zones? They're more mysterious than you think. These areas, where oxygen is so low that marine life can't survive, are spreading. Causes include pollution, climate change, and over-fertilization. But it\u2019s not just the fish that suffer. Scientific studies show these dead zones are increasing, threatening ecosystems and economies. Understanding them is crucial for our oceans' future. Will we act before it's too late? Curious about how you can help? Like and subscribe for more insights on our oceans.",
+  "call_to_action": "Like and subscribe for more insights on our oceans.",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:03:37.740863+00:00",
+  "source": "ai"
+}

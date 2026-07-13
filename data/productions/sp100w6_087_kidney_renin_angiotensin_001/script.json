@@ -1,0 +1,74 @@
+{
+  "title": "Kidney Renin Angiotensin",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A deep dive into the kidney renin angiotensin system reveals how it regulates blood pressure.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you your kidneys play a secret role in your blood pressure?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Meet the renin-angiotensin system, a critical player in regulating blood flow and pressure.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "When blood pressure drops, kidneys release renin, triggering a cascade of reactions.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "This process produces angiotensin, which narrows blood vessels and raises pressure.",
+      "emotion": "curiosity",
+      "delivery": "explanatory",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 42.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding this system may help manage conditions like hypertension, but it\u2019s complex.",
+      "emotion": "curiosity",
+      "delivery": "thoughtful",
+      "retention_device": "call to ponder"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 42.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how your body keeps balance? Follow for more science insights!",
+      "emotion": "curiosity",
+      "delivery": "encouraging",
+      "retention_device": "direct prompt"
+    }
+  ],
+  "full_voiceover": "What if I told you your kidneys play a secret role in your blood pressure? Meet the renin-angiotensin system, a critical player in regulating blood flow and pressure. When blood pressure drops, kidneys release renin, triggering a cascade of reactions. This process produces angiotensin, which narrows blood vessels and raises pressure. Understanding this system may help manage conditions like hypertension, but it\u2019s complex. Curious about how your body keeps balance? Follow for more science insights!",
+  "call_to_action": "Follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:07:28.380217+00:00",
+  "source": "ai"
+}

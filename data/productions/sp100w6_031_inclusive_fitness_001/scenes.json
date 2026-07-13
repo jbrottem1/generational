@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if your genes care more about your family than you?",
+    "visual_description": "Hook visual: What if your genes care more about your family than you?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if your genes care more about your family than you?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if your genes care more about your family than you?",
+    "stock_footage_query": "",
+    "text_overlay": "What if your genes",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This is inclusive fitness, a key concept in evolutionary biology.",
+    "visual_description": "Context visual: This is inclusive fitness, a key concept in evolutionary biology.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This is inclusive fitness, a key concept in evolutionary biology.",
+    "ai_video_prompt": "Cinematic motion: Context visual: This is inclusive fitness, a key concept in evolutionary biology.",
+    "stock_footage_query": "",
+    "text_overlay": "This is inclusive fitness,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "It suggests that helping relatives can boost your own genetic success.",
+    "visual_description": "Escalation visual: It suggests that helping relatives can boost your own genetic success.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: It suggests that helping relatives can boost your own genetic success.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: It suggests that helping relatives can boost your own genetic success.",
+    "stock_footage_query": "",
+    "text_overlay": "It suggests that helping",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show animals often sacrifice for their kin, ensuring shared genes survive.",
+    "visual_description": "Evidence visual: Studies show animals often sacrifice for their kin, ensuring shared genes survive.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show animals often sacrifice for their kin, ensuring shared genes survive.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show animals often sacrifice for their kin, ensuring shared genes survive.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show animals often",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "But not all scientists agree. The debate is ongoing and complex.",
+    "visual_description": "Payoff visual: But not all scientists agree. The debate is ongoing and complex.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: But not all scientists agree. The debate is ongoing and complex.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: But not all scientists agree. The debate is ongoing and complex.",
+    "stock_footage_query": "",
+    "text_overlay": "But not all scientists",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "So, is it all about blood ties or something deeper?",
+    "visual_description": "Pattern Interrupt visual: So, is it all about blood ties or something deeper?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: So, is it all about blood ties or something deeper?",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: So, is it all about blood ties or something deeper?",
+    "stock_footage_query": "",
+    "text_overlay": "So, is it all",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Want to dive deeper? Hit like and follow for more science insights!",
+    "visual_description": "Cta visual: Want to dive deeper? Hit like and follow for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper? Hit like and follow for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper? Hit like and follow for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

@@ -1,0 +1,84 @@
+{
+  "title": "Probiotic Evidence Limits",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explores the limits of probiotic evidence through scientific insights.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about probiotic evidence limits.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Probiotics are often hailed as miracle workers for gut health.",
+      "emotion": "intrigue",
+      "delivery": "clear and engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But research shows the evidence is... mixed.",
+      "emotion": "concern",
+      "delivery": "emphatic",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Some studies report benefits, while others find minimal effects.",
+      "emotion": "uncertainty",
+      "delivery": "informative",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "And here's the kicker: many claims are based on preliminary research!",
+      "emotion": "shock",
+      "delivery": "energetic",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 46.0,
+      "segment_type": "payoff",
+      "voiceover": "So, before jumping on the probiotic bandwagon, do your homework.",
+      "emotion": "enlightenment",
+      "delivery": "encouraging",
+      "retention_device": "strong statement"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 46.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Hit follow for more science insights!",
+      "emotion": "enthusiasm",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about probiotic evidence limits. Probiotics are often hailed as miracle workers for gut health. But research shows the evidence is... mixed. Some studies report benefits, while others find minimal effects. And here's the kicker: many claims are based on preliminary research! So, before jumping on the probiotic bandwagon, do your homework. Hit follow for more science insights!",
+  "call_to_action": "Hit follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:20:30.359636+00:00",
+  "source": "ai"
+}

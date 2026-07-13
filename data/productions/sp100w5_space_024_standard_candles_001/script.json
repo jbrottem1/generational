@@ -1,0 +1,74 @@
+{
+  "title": "Standard Candles",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the concept of standard candles in astronomy and their role in understanding the universe.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about standard candles than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Standard candles are cosmic lighthouses that help astronomers measure vast distances.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Think of them as stars with a known brightness, allowing us to calculate how far away they are.",
+      "emotion": "curiosity",
+      "delivery": "steady and building",
+      "retention_device": "fact reveal"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Type Ia supernovae are perfect examples\u2014they shine consistently bright.",
+      "emotion": "curiosity",
+      "delivery": "informative and concise",
+      "retention_device": "example highlight"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Using these candles, we estimate the universe's expansion rate, revealing its mysterious nature.",
+      "emotion": "curiosity",
+      "delivery": "excited and insightful",
+      "retention_device": "reveal surprise"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about the universe? Hit follow for more mind-blowing science!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic and inviting",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about standard candles than social media does. Standard candles are cosmic lighthouses that help astronomers measure vast distances. Think of them as stars with a known brightness, allowing us to calculate how far away they are. Type Ia supernovae are perfect examples\u2014they shine consistently bright. Using these candles, we estimate the universe's expansion rate, revealing its mysterious nature. Curious about the universe? Hit follow for more mind-blowing science!",
+  "call_to_action": "Hit follow for more mind-blowing science!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:36:41.502586+00:00",
+  "source": "ai"
+}

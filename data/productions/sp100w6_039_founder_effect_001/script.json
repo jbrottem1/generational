@@ -1,0 +1,74 @@
+{
+  "title": "Founder effect",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explores the founder effect in genetics with clear and engaging examples.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if the future of a species depended on just a few individuals?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "This is the founder effect, a concept in genetics that describes how a small group can shape a population's traits.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Imagine a few settlers starting a new colony. Their genetic traits become dominant over generations.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "visualize scenario"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "In isolated populations like islands, the founder effect can lead to high frequencies of genetic disorders.",
+      "emotion": "concern",
+      "delivery": "serious",
+      "retention_device": "statistic drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "So, while a small sample can create diversity, it can also limit it drastically.",
+      "emotion": "realization",
+      "delivery": "thought-provoking",
+      "retention_device": "insight reveal"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about evolution? Tap subscribe for more fascinating science!",
+      "emotion": "engagement",
+      "delivery": "enthusiastic",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "What if the future of a species depended on just a few individuals? This is the founder effect, a concept in genetics that describes how a small group can shape a population's traits. Imagine a few settlers starting a new colony. Their genetic traits become dominant over generations. In isolated populations like islands, the founder effect can lead to high frequencies of genetic disorders. So, while a small sample can create diversity, it can also limit it drastically. Curious about evolution? Tap subscribe for more fascinating science!",
+  "call_to_action": "Tap subscribe for more fascinating science!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:01:54.228253+00:00",
+  "source": "ai"
+}

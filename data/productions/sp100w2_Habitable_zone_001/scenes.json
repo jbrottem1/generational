@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "The habitable zone: a circle of potential, but not a promise.",
+    "visual_description": "Hook visual: The habitable zone: a circle of potential, but not a promise.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: The habitable zone: a circle of potential, but not a promise.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: The habitable zone: a circle of potential, but not a promise.",
+    "stock_footage_query": "",
+    "text_overlay": "The habitable zone: a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This is the Goldilocks zone\u2014where liquid water might exist, nestled between too hot and too cold.",
+    "visual_description": "Context visual: This is the Goldilocks zone\u2014where liquid water might exist, nestled between too hot and too cold.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This is the Goldilocks zone\u2014where liquid water might exist, nestled between too hot and too cold.",
+    "ai_video_prompt": "Cinematic motion: Context visual: This is the Goldilocks zone\u2014where liquid water might exist, nestled between too hot and too cold.",
+    "stock_footage_query": "",
+    "text_overlay": "This is the Goldilocks",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But it doesn\u2019t guarantee life. Many planets sit in this zone, yet remain lifeless.",
+    "visual_description": "Escalation visual: But it doesn\u2019t guarantee life. Many planets sit in this zone, yet remain lifeless.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But it doesn\u2019t guarantee life. Many planets sit in this zone, yet remain lifeless.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But it doesn\u2019t guarantee life. Many planets sit in this zone, yet remain lifeless.",
+    "stock_footage_query": "",
+    "text_overlay": "But it doesn\u2019t guarantee",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "NASA explains that various factors, like atmosphere and geology, are crucial for habitability.",
+    "visual_description": "Evidence visual: NASA explains that various factors, like atmosphere and geology, are crucial for habitability.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: NASA explains that various factors, like atmosphere and geology, are crucial for habitability.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: NASA explains that various factors, like atmosphere and geology, are crucial for habitability.",
+    "stock_footage_query": "",
+    "text_overlay": "NASA explains that various",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 28.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "So, while a planet may lie in the habitable zone, many still lack the necessary conditions for life.",
+    "visual_description": "Payoff visual: So, while a planet may lie in the habitable zone, many still lack the necessary conditions for life.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, while a planet may lie in the habitable zone, many still lack the necessary conditions for life.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, while a planet may lie in the habitable zone, many still lack the necessary conditions for life.",
+    "stock_footage_query": "",
+    "text_overlay": "So, while a planet",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 28.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 28.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Curious about more cosmic mysteries? Like and follow for the latest in exoplanet exploration!",
+    "visual_description": "Cta visual: Curious about more cosmic mysteries? Like and follow for the latest in exoplanet exploration!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more cosmic mysteries? Like and follow for the latest in exoplanet exploration!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more cosmic mysteries? Like and follow for the latest in exoplanet exploration!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more cosmic",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

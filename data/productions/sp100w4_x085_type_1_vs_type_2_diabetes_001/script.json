@@ -1,0 +1,84 @@
+{
+  "title": "Type 1 vs type 2 diabetes",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A concise comparison of type 1 and type 2 diabetes based on scientific understanding.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about type 1 vs type 2 diabetes.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Type 1 diabetes is an autoimmune condition, where the body attacks insulin-producing cells.",
+      "emotion": "curiosity",
+      "delivery": "informative and engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "But type 2 diabetes? That's primarily about insulin resistance, not destruction.",
+      "emotion": "curiosity",
+      "delivery": "dramatic pause",
+      "retention_device": "contrast"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "escalation",
+      "voiceover": "Both conditions can lead to serious health issues, but the management differs greatly.",
+      "emotion": "curiosity",
+      "delivery": "steady and serious",
+      "retention_device": "impending consequence"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 42.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows that while type 1 is often diagnosed in childhood, type 2 is on the rise in adults and children alike.",
+      "emotion": "curiosity",
+      "delivery": "fact-driven",
+      "retention_device": "scientific authority"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 42.0,
+      "end_time": 52.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding these differences is crucial for prevention and treatment.",
+      "emotion": "curiosity",
+      "delivery": "affirmative",
+      "retention_device": "solution reveal"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 52.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious to learn more? Hit that follow button for more insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about type 1 vs type 2 diabetes. Type 1 diabetes is an autoimmune condition, where the body attacks insulin-producing cells. But type 2 diabetes? That's primarily about insulin resistance, not destruction. Both conditions can lead to serious health issues, but the management differs greatly. Research shows that while type 1 is often diagnosed in childhood, type 2 is on the rise in adults and children alike. Understanding these differences is crucial for prevention and treatment. Curious to learn more? Hit that follow button for more insights!",
+  "call_to_action": "Curious to learn more? Hit that follow button for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:25:09.892592+00:00",
+  "source": "ai"
+}

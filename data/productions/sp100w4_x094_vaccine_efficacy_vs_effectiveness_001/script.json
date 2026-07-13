@@ -1,0 +1,74 @@
+{
+  "title": "Vaccine Efficacy vs Effectiveness",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explores the difference between vaccine efficacy and effectiveness in a clear and engaging way.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about vaccine efficacy vs effectiveness.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Efficacy measures how well a vaccine works in controlled trials. Effectiveness? That's real-world performance.",
+      "emotion": "informative",
+      "delivery": "calm and clear",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Imagine a vaccine showing 95% efficacy in trials. But what about in everyday life? It may drop due to factors like behavior or virus variants.",
+      "emotion": "inquisitive",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 28.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that effectiveness can vary widely. For example, flu vaccines might be only 40% effective in a bad year.",
+      "emotion": "concerned",
+      "delivery": "serious",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 28.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding this difference helps us make informed choices about vaccinations and public health.",
+      "emotion": "satisfied",
+      "delivery": "confident",
+      "retention_device": "strong statement"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into science? Hit that follow button!",
+      "emotion": "inviting",
+      "delivery": "enthusiastic",
+      "retention_device": "engaging conclusion"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about vaccine efficacy vs effectiveness. Efficacy measures how well a vaccine works in controlled trials. Effectiveness? That's real-world performance. Imagine a vaccine showing 95% efficacy in trials. But what about in everyday life? It may drop due to factors like behavior or virus variants. Studies show that effectiveness can vary widely. For example, flu vaccines might be only 40% effective in a bad year. Understanding this difference helps us make informed choices about vaccinations and public health. Want to dive deeper into science? Hit that follow button!",
+  "call_to_action": "Want to dive deeper into science? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:26:13.359693+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if I told you your heart's power is measured in a mysterious number?",
+    "visual_description": "Hook visual: What if I told you your heart's power is measured in a mysterious number?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you your heart's power is measured in a mysterious number?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you your heart's power is measured in a mysterious number?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "That's cardiac output, the amount of blood your heart pumps each minute.",
+    "visual_description": "Context visual: That's cardiac output, the amount of blood your heart pumps each minute.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: That's cardiac output, the amount of blood your heart pumps each minute.",
+    "ai_video_prompt": "Cinematic motion: Context visual: That's cardiac output, the amount of blood your heart pumps each minute.",
+    "stock_footage_query": "",
+    "text_overlay": "That's cardiac output, the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Why does it matter? Because it tells us how well your body delivers oxygen.",
+    "visual_description": "Escalation visual: Why does it matter? Because it tells us how well your body delivers oxygen.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Why does it matter? Because it tells us how well your body delivers oxygen.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Why does it matter? Because it tells us how well your body delivers oxygen.",
+    "stock_footage_query": "",
+    "text_overlay": "Why does it matter?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "An average adult's cardiac output is about 5 to 6 liters per minute, but it can vary.",
+    "visual_description": "Evidence visual: An average adult's cardiac output is about 5 to 6 liters per minute, but it can vary.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: An average adult's cardiac output is about 5 to 6 liters per minute, but it can vary.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: An average adult's cardiac output is about 5 to 6 liters per minute, but it can vary.",
+    "stock_footage_query": "",
+    "text_overlay": "An average adult's cardiac",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Higher outputs can mean better fitness levels, but too much can signal health issues.",
+    "visual_description": "Payoff visual: Higher outputs can mean better fitness levels, but too much can signal health issues.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Higher outputs can mean better fitness levels, but too much can signal health issues.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Higher outputs can mean better fitness levels, but too much can signal health issues.",
+    "stock_footage_query": "",
+    "text_overlay": "Higher outputs can mean",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 22.0,
+    "narration": "Want to dive deeper into how your heart works? Hit that follow button for more intriguing science!",
+    "visual_description": "Cta visual: Want to dive deeper into how your heart works? Hit that follow button for more intriguing science!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into how your heart works? Hit that follow button for more intriguing science!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into how your heart works? Hit that follow button for more intriguing science!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

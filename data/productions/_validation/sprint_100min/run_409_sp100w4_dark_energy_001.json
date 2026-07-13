@@ -1,0 +1,116 @@
+{
+  "run_index": 409,
+  "topic": "Why Cosmologists Talk About Dark Energy",
+  "asset_id": "sp100w4_dark_energy_001",
+  "seo_score": 23.0,
+  "seo": {
+    "demand": 4,
+    "evergreen": 5,
+    "education": 5,
+    "interest": 5,
+    "short_form": 4
+  },
+  "runtime_sec": 19.34,
+  "production_ok": true,
+  "production_error": "",
+  "success": true,
+  "qc_score": 100,
+  "qc_passed": true,
+  "stages": [
+    {
+      "stage": "idea",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "script",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "scenes",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "visual_prompts",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "images",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "video_clips",
+      "status": "skipped",
+      "error": ""
+    },
+    {
+      "stage": "voice",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "music",
+      "status": "skipped",
+      "error": ""
+    },
+    {
+      "stage": "sfx",
+      "status": "skipped",
+      "error": ""
+    },
+    {
+      "stage": "captions",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "timeline",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "render",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "quality",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "export",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "publish",
+      "status": "skipped",
+      "error": ""
+    }
+  ],
+  "cost": {
+    "estimated_cost_usd": 0.0161,
+    "breakdown": {
+      "openai_tts_usd": 0.0061,
+      "openai_chat_usd": 0.01,
+      "openai_images_usd": 0.0
+    }
+  },
+  "mp4_path": "data/productions/sp100w4_dark_energy_001/render.mp4",
+  "mp4_bytes": 327672,
+  "mock_render": false,
+  "final_export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/test run generational/2026-07-10_12-12-34_Why_Cosmologists_Talk_About_Dark_Energy.mp4",
+  "title": "Why Cosmologists Talk About Dark Energy",
+  "description": "Cosmology. Emphasize unknown nature. Stay accurate. Flag preliminary research. No sensationalism.",
+  "hashtags": [
+    "#darkenergy",
+    "#cosmology",
+    "#shorts"
+  ],
+  "thumbnail_concept": "Educational visual: Why Cosmologists Talk About Dark Energy"
+}

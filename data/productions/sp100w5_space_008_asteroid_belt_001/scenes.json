@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about the asteroid belt than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about the asteroid belt than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about the asteroid belt than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about the asteroid belt than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Located between Mars and Jupiter, this region is filled with rocky remnants from our solar system's formation.",
+    "visual_description": "Context visual: Located between Mars and Jupiter, this region is filled with rocky remnants from our solar system's formation.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Located between Mars and Jupiter, this region is filled with rocky remnants from our solar system's formation.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Located between Mars and Jupiter, this region is filled with rocky remnants from our solar system's formation.",
+    "stock_footage_query": "",
+    "text_overlay": "Located between Mars and",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "excitement",
+    "length_sec": 8.0,
+    "narration": "But it\u2019s not just a chaotic mess. It\u2019s home to over a million asteroids, with sizes ranging from tiny pebbles to dwarf planets!",
+    "visual_description": "Escalation visual: But it\u2019s not just a chaotic mess. It\u2019s home to over a million asteroids, with sizes ranging from tiny pebbles to dwarf p",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But it\u2019s not just a chaotic mess. It\u2019s home to over a million asteroids, with sizes ranging from tiny pebbles to dwarf p",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But it\u2019s not just a chaotic mess. It\u2019s home to over a million asteroids, with sizes ranging from tiny pebbles to dwarf p",
+    "stock_footage_query": "",
+    "text_overlay": "But it\u2019s not just",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "intrigue",
+    "length_sec": 8.0,
+    "narration": "Some scientists believe the asteroid belt could have been a planet, but Jupiter's gravity disrupted that possibility.",
+    "visual_description": "Evidence visual: Some scientists believe the asteroid belt could have been a planet, but Jupiter's gravity disrupted that possibility.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Some scientists believe the asteroid belt could have been a planet, but Jupiter's gravity disrupted that possibility.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Some scientists believe the asteroid belt could have been a planet, but Jupiter's gravity disrupted that possibility.",
+    "stock_footage_query": "",
+    "text_overlay": "Some scientists believe the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "wonder",
+    "length_sec": 12.0,
+    "narration": "So, the asteroid belt isn\u2019t just a bunch of rocks; it\u2019s a window into our cosmic past.",
+    "visual_description": "Payoff visual: So, the asteroid belt isn\u2019t just a bunch of rocks; it\u2019s a window into our cosmic past.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, the asteroid belt isn\u2019t just a bunch of rocks; it\u2019s a window into our cosmic past.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, the asteroid belt isn\u2019t just a bunch of rocks; it\u2019s a window into our cosmic past.",
+    "stock_footage_query": "",
+    "text_overlay": "So, the asteroid belt",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "invitation",
+    "length_sec": 22.0,
+    "narration": "Want to discover more about space? Hit that follow button for more amazing facts!",
+    "visual_description": "Cta visual: Want to discover more about space? Hit that follow button for more amazing facts!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to discover more about space? Hit that follow button for more amazing facts!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to discover more about space? Hit that follow button for more amazing facts!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to discover more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

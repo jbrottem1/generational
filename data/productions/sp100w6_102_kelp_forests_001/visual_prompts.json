@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Kelp forests are one of nature's best-kept secrets.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: These underwater jungles support diverse marine life, but they're more than just beautiful landscapes.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Kelp absorbs CO2, helping fight climate change. But, the truth is, we don\u2019t fully understand their role.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Research shows they can disappear quickly due to warming waters and pollution. We need to act now.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Kelp forests are vital ecosystems, yet they're fragile. Protecting them is crucial for our oceans' health.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about more ocean mysteries? Hit that follow button for more!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Kelp forests are one of nature's best-kept secrets.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: These underwater jungles support diverse marine life, but they're more than just beautiful landscapes.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Kelp absorbs CO2, helping fight climate change. But, the truth is, we don\u2019t fully understand their role.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Research shows they can disappear quickly due to warming waters and pollution. We need to act now.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Kelp forests are vital ecosystems, yet they're fragile. Protecting them is crucial for our oceans' health.",
+      "duration_sec": 14.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about more ocean mysteries? Hit that follow button for more!",
+      "duration_sec": 10.0
+    }
+  ]
+}

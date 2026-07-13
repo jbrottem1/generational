@@ -1,0 +1,74 @@
+{
+  "title": "RNA interference",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explains the concept of RNA interference and its significance in genetics.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about RNA interference than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "RNA interference, or RNAi, is a process that regulates gene expression. But how does it work?",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "It uses small RNA molecules to silence specific genes, preventing the production of certain proteins.",
+      "emotion": "curiosity",
+      "delivery": "clear and direct",
+      "retention_device": "unexpected fact"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Scientists have harnessed RNAi for therapies, targeting diseases like cancer and viral infections.",
+      "emotion": "hope",
+      "delivery": "inspiring and optimistic",
+      "retention_device": "surprising application"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "The potential is huge, but research is ongoing, and we still have questions to answer.",
+      "emotion": "curiosity",
+      "delivery": "reflective and engaging",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more about how RNAi could change medicine? Hit that follow button!",
+      "emotion": "encouragement",
+      "delivery": "upbeat and inviting",
+      "retention_device": "invitation to engage"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about RNA interference than social media does. RNA interference, or RNAi, is a process that regulates gene expression. But how does it work? It uses small RNA molecules to silence specific genes, preventing the production of certain proteins. Scientists have harnessed RNAi for therapies, targeting diseases like cancer and viral infections. The potential is huge, but research is ongoing, and we still have questions to answer. Want to learn more about how RNAi could change medicine? Hit that follow button!",
+  "call_to_action": "Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:37:20.201310+00:00",
+  "source": "ai"
+}

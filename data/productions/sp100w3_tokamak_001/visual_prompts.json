@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Ever seen a doughnut that could change the world?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Introducing the tokamak\u2014a magnetic bottle designed to contain fusion plasma.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Fusion is the process that powers the sun, but harnessing it is incredibly challenging.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Tokamaks use powerful magnetic fields to keep plasma stable at extreme temperatures\u2014millions of degrees!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: If successful, tokamaks could lead to nearly limitless clean energy.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about how fusion energy could power our future? Follow for more insights!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Ever seen a doughnut that could change the world?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Introducing the tokamak\u2014a magnetic bottle designed to contain fusion plasma.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Fusion is the process that powers the sun, but harnessing it is incredibly challenging.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Tokamaks use powerful magnetic fields to keep plasma stable at extreme temperatures\u2014millions of degrees!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: If successful, tokamaks could lead to nearly limitless clean energy.",
+      "duration_sec": 10.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about how fusion energy could power our future? Follow for more insights!",
+      "duration_sec": 24.0
+    }
+  ]
+}

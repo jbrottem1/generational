@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Ever wondered if we can bring back extinct species? Think again.",
+    "visual_description": "Hook visual: Ever wondered if we can bring back extinct species? Think again.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever wondered if we can bring back extinct species? Think again.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever wondered if we can bring back extinct species? Think again.",
+    "stock_footage_query": "",
+    "text_overlay": "Ever wondered if we",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "De-extinction sounds like science fiction, but it's rooted in real biology.",
+    "visual_description": "Context visual: De-extinction sounds like science fiction, but it's rooted in real biology.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: De-extinction sounds like science fiction, but it's rooted in real biology.",
+    "ai_video_prompt": "Cinematic motion: Context visual: De-extinction sounds like science fiction, but it's rooted in real biology.",
+    "stock_footage_query": "",
+    "text_overlay": "De-extinction sounds like science",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But what if the DNA is too degraded? Or if the ecosystem can\u2019t support them?",
+    "visual_description": "Escalation visual: But what if the DNA is too degraded? Or if the ecosystem can\u2019t support them?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But what if the DNA is too degraded? Or if the ecosystem can\u2019t support them?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But what if the DNA is too degraded? Or if the ecosystem can\u2019t support them?",
+    "stock_footage_query": "",
+    "text_overlay": "But what if the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Scientists have limits for de-extinction, citing genetic and environmental factors.",
+    "visual_description": "Evidence visual: Scientists have limits for de-extinction, citing genetic and environmental factors.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Scientists have limits for de-extinction, citing genetic and environmental factors.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Scientists have limits for de-extinction, citing genetic and environmental factors.",
+    "stock_footage_query": "",
+    "text_overlay": "Scientists have limits for",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Reviving species could disrupt current ecosystems, creating unforeseen challenges.",
+    "visual_description": "Payoff visual: Reviving species could disrupt current ecosystems, creating unforeseen challenges.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Reviving species could disrupt current ecosystems, creating unforeseen challenges.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Reviving species could disrupt current ecosystems, creating unforeseen challenges.",
+    "stock_footage_query": "",
+    "text_overlay": "Reviving species could disrupt",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Curious about the future of de-extinction? Follow for more insights on science!",
+    "visual_description": "Cta visual: Curious about the future of de-extinction? Follow for more insights on science!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about the future of de-extinction? Follow for more insights on science!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about the future of de-extinction? Follow for more insights on science!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about the future",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

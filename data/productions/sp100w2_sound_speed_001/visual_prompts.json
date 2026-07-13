@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Ever wonder why you see lightning before you hear thunder?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Light travels at about 299,792 kilometers per second. That\u2019s way faster than sound, which is just 343 meters per second!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: So when lightning strikes, the light reaches you instantly. But sound? It takes its sweet time.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: For every five seconds between the flash and the boom, you're roughly one mile away from the strike.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: So next time you see lightning, count the seconds until you hear thunder. That\u2019s your distance check!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Like what you learned? Hit that follow button for more mind-blowing science facts!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Ever wonder why you see lightning before you hear thunder?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Light travels at about 299,792 kilometers per second. That\u2019s way faster than sound, which is just 343 meters per second!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: So when lightning strikes, the light reaches you instantly. But sound? It takes its sweet time.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: For every five seconds between the flash and the boom, you're roughly one mile away from the strike.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: So next time you see lightning, count the seconds until you hear thunder. That\u2019s your distance check!",
+      "duration_sec": 14.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Like what you learned? Hit that follow button for more mind-blowing science facts!",
+      "duration_sec": 20.0
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Why Thunder Comes After Lightning",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "This video explains why we see lightning before we hear thunder, focusing on the speed of light versus sound.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Ever wonder why you see lightning before you hear thunder?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Light travels at about 299,792 kilometers per second. That\u2019s way faster than sound, which is just 343 meters per second!",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "So when lightning strikes, the light reaches you instantly. But sound? It takes its sweet time.",
+      "emotion": "curiosity",
+      "delivery": "dramatic",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "For every five seconds between the flash and the boom, you're roughly one mile away from the strike.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "So next time you see lightning, count the seconds until you hear thunder. That\u2019s your distance check!",
+      "emotion": "curiosity",
+      "delivery": "excited",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Like what you learned? Hit that follow button for more mind-blowing science facts!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "strong CTA"
+    }
+  ],
+  "full_voiceover": "Ever wonder why you see lightning before you hear thunder? Light travels at about 299,792 kilometers per second. That\u2019s way faster than sound, which is just 343 meters per second! So when lightning strikes, the light reaches you instantly. But sound? It takes its sweet time. For every five seconds between the flash and the boom, you're roughly one mile away from the strike. So next time you see lightning, count the seconds until you hear thunder. That\u2019s your distance check! Like what you learned? Hit that follow button for more mind-blowing science facts!",
+  "call_to_action": "Hit that follow button for more mind-blowing science facts!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:51:13.165879+00:00",
+  "source": "ai"
+}

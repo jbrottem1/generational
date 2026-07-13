@@ -1,0 +1,74 @@
+{
+  "title": "CAR T cells idea",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the groundbreaking CAR T cells concept and its implications in cancer treatment.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about CAR T cells.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "CAR T cells are engineered immune cells designed to fight cancer by targeting specific tumor markers.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Imagine turning your own immune system into a cancer-fighting machine! Sounds revolutionary, right?",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Clinical trials show promising results, but it's still early days. Some patients see remarkable remissions.",
+      "emotion": "curiosity",
+      "delivery": "cautious optimism",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "However, not everyone responds, and risks exist, like severe side effects.",
+      "emotion": "curiosity",
+      "delivery": "serious tone",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 50.0,
+      "segment_type": "cta",
+      "voiceover": "So, could CAR T cells be the future of cancer treatment? Follow to stay updated on this groundbreaking science!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about CAR T cells. CAR T cells are engineered immune cells designed to fight cancer by targeting specific tumor markers. Imagine turning your own immune system into a cancer-fighting machine! Sounds revolutionary, right? Clinical trials show promising results, but it's still early days. Some patients see remarkable remissions. However, not everyone responds, and risks exist, like severe side effects. So, could CAR T cells be the future of cancer treatment? Follow to stay updated on this groundbreaking science!",
+  "call_to_action": "Follow to stay updated on this groundbreaking science!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:28:25.178694+00:00",
+  "source": "ai"
+}

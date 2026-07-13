@@ -1,0 +1,74 @@
+{
+  "title": "Cardiac Output",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A concise explanation of cardiac output that captivates and educates the audience.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you your heart's power is measured in a mysterious number?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "That's cardiac output, the amount of blood your heart pumps each minute.",
+      "emotion": "curiosity",
+      "delivery": "clear and engaging",
+      "retention_device": "anticipation"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Why does it matter? Because it tells us how well your body delivers oxygen.",
+      "emotion": "curiosity",
+      "delivery": "slightly urgent",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "An average adult's cardiac output is about 5 to 6 liters per minute, but it can vary.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "Higher outputs can mean better fitness levels, but too much can signal health issues.",
+      "emotion": "curiosity",
+      "delivery": "insightful",
+      "retention_device": "unexpected twist"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into how your heart works? Hit that follow button for more intriguing science!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "What if I told you your heart's power is measured in a mysterious number? That's cardiac output, the amount of blood your heart pumps each minute. Why does it matter? Because it tells us how well your body delivers oxygen. An average adult's cardiac output is about 5 to 6 liters per minute, but it can vary. Higher outputs can mean better fitness levels, but too much can signal health issues. Want to dive deeper into how your heart works? Hit that follow button for more intriguing science!",
+  "call_to_action": "Hit that follow button for more intriguing science!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:07:04.488892+00:00",
+  "source": "ai"
+}

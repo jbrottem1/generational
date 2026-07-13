@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Most exoplanets are invisible \u2014 we find them by watching stars wobble and dim.",
+    "visual_description": "Hook visual: Most exoplanets are invisible \u2014 we find them by watching stars wobble and dim.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Most exoplanets are invisible \u2014 we find them by watching stars wobble and dim.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Most exoplanets are invisible \u2014 we find them by watching stars wobble and dim.",
+    "stock_footage_query": "",
+    "text_overlay": "Most exoplanets are invisible",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Two main methods help us: the transit method and radial velocity.",
+    "visual_description": "Context visual: Two main methods help us: the transit method and radial velocity.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Two main methods help us: the transit method and radial velocity.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Two main methods help us: the transit method and radial velocity.",
+    "stock_footage_query": "",
+    "text_overlay": "Two main methods help",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "The transit method tracks a star's light, looking for dimming as a planet crosses.",
+    "visual_description": "Escalation visual: The transit method tracks a star's light, looking for dimming as a planet crosses.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: The transit method tracks a star's light, looking for dimming as a planet crosses.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: The transit method tracks a star's light, looking for dimming as a planet crosses.",
+    "stock_footage_query": "",
+    "text_overlay": "The transit method tracks",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Meanwhile, radial velocity detects tiny wobbles in a star's position caused by a planet's gravity.",
+    "visual_description": "Evidence visual: Meanwhile, radial velocity detects tiny wobbles in a star's position caused by a planet's gravity.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Meanwhile, radial velocity detects tiny wobbles in a star's position caused by a planet's gravity.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Meanwhile, radial velocity detects tiny wobbles in a star's position caused by a planet's gravity.",
+    "stock_footage_query": "",
+    "text_overlay": "Meanwhile, radial velocity detects",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "wonder",
+    "length_sec": 8.0,
+    "narration": "These methods have helped discover thousands of exoplanets, revealing a universe full of possibilities.",
+    "visual_description": "Payoff visual: These methods have helped discover thousands of exoplanets, revealing a universe full of possibilities.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: These methods have helped discover thousands of exoplanets, revealing a universe full of possibilities.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: These methods have helped discover thousands of exoplanets, revealing a universe full of possibilities.",
+    "stock_footage_query": "",
+    "text_overlay": "These methods have helped",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "excitement",
+    "length_sec": 26.0,
+    "narration": "Curious about our universe? Like and follow for more mind-bending space facts!",
+    "visual_description": "Cta visual: Curious about our universe? Like and follow for more mind-bending space facts!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about our universe? Like and follow for more mind-bending space facts!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about our universe? Like and follow for more mind-bending space facts!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about our universe?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

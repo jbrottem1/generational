@@ -1,0 +1,88 @@
+{
+  "version": "1.0.0",
+  "studio": "Generational Animation Studio",
+  "animation_director": 16,
+  "updated_at": "2026-07-11T01:30:00Z",
+  "characters": {
+    "CHAR-DASH": {
+      "name": "Dash",
+      "status": "locked",
+      "path": "data/universe/characters/CHAR-DASH/",
+      "motion_library": "ANIM-DASH-V1",
+      "motion_path": "data/universe/animation/",
+      "component_count": 23,
+      "required_cycles": [
+        "idle_breathe",
+        "walk_cycle",
+        "run_cycle",
+        "talk_bob",
+        "point_right",
+        "think_scratch",
+        "celebrate_jump",
+        "face_audience"
+      ]
+    }
+  },
+  "animation_cycles": {
+    "library_id": "ANIM-DASH-V1",
+    "components_index": "data/universe/animation/component_index.json",
+    "count": 23
+  },
+  "camera_presets": "library/camera_presets.json",
+  "lighting_presets": [
+    "documentary_volumetric",
+    "macro_science",
+    "cosmic",
+    "dash_ocean_glow",
+    "dash_lab_renewal",
+    "dash_firefly_night"
+  ],
+  "environments": [
+    "ENV-DASH-OCEAN-FLOOR",
+    "ENV-DASH-BODY-LAB",
+    "ENV-DASH-NIGHT-MEADOW"
+  ],
+  "environment_fx": [
+    "ENVFX-clouds-drift",
+    "ENVFX-tree-sway",
+    "ENVFX-grass-ripple",
+    "ENVFX-water-caustics",
+    "ENVFX-smoke-rise",
+    "ENVFX-fire-flicker",
+    "ENVFX-dust-motes",
+    "ENVFX-particle-field",
+    "ENVFX-fog-roll",
+    "ENVFX-animal-idle",
+    "ENVFX-machine-hum",
+    "ENVFX-light-pulse",
+    "ENVFX-weather-rain",
+    "ENVFX-ocean-current",
+    "ENVFX-star-twinkle",
+    "ENVFX-planet-spin",
+    "ENVFX-lab-screens",
+    "ENVFX-instrument-glow"
+  ],
+  "props": [
+    "PROP-MAGNIFIER",
+    "PROP-FLASHLIGHT",
+    "PROP-MICROSCOPE",
+    "PROP-FACT-CARD",
+    "PROP-SIGNAL-FLAG",
+    "PROP-CLOCK"
+  ],
+  "effects": [
+    "FX-BIO-SPARKS",
+    "FX-CELL-FLAKES",
+    "FX-FIREFLY-TRAILS",
+    "FX-DOOR-GLOW"
+  ],
+  "backgrounds": [],
+  "buildings": [],
+  "laboratories": ["ENV-DASH-BODY-LAB"],
+  "forests": [],
+  "vehicles": [],
+  "spacecraft": [],
+  "scientific_equipment": ["PROP-MICROSCOPE", "PROP-MAGNIFIER", "ENVFX-instrument-glow"],
+  "animals": ["CRT-FIREFLY", "CRT-GLOW-JELLY"],
+  "reuse_target_pct": 30
+}

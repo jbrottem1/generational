@@ -1,0 +1,74 @@
+{
+  "title": "Heat Death Isn't Tomorrow",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the concept of heat death and why it\u2019s not an immediate concern.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "The universe won't end tomorrow, but its future is chilling.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Heat death is a thermodynamic theory predicting a distant future where all energy is evenly distributed.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But don\u2019t worry\u2014this isn\u2019t a near-term forecast! We're talking billions of years.",
+      "emotion": "curiosity",
+      "delivery": "reassuring",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Current research shows the universe is still expanding, and stars are still forming.",
+      "emotion": "curiosity",
+      "delivery": "confident",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "The heat death theory helps us understand the universe's fate, but it\u2019s not an imminent threat.",
+      "emotion": "curiosity",
+      "delivery": "clearing misconception",
+      "retention_device": "strong conclusion"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into cosmic mysteries? Hit subscribe for more!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "The universe won't end tomorrow, but its future is chilling. Heat death is a thermodynamic theory predicting a distant future where all energy is evenly distributed. But don\u2019t worry\u2014this isn\u2019t a near-term forecast! We're talking billions of years. Current research shows the universe is still expanding, and stars are still forming. The heat death theory helps us understand the universe's fate, but it\u2019s not an imminent threat. Want to dive deeper into cosmic mysteries? Hit subscribe for more!",
+  "call_to_action": "Hit subscribe for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:08:17.950290+00:00",
+  "source": "ai"
+}

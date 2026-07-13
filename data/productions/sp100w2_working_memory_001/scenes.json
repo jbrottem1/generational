@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Your mental scratchpad is tiny \u2014 that's why phone numbers feel hard to keep.",
+    "visual_description": "Hook visual: Your mental scratchpad is tiny \u2014 that's why phone numbers feel hard to keep.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Your mental scratchpad is tiny \u2014 that's why phone numbers feel hard to keep.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Your mental scratchpad is tiny \u2014 that's why phone numbers feel hard to keep.",
+    "stock_footage_query": "",
+    "text_overlay": "Your mental scratchpad is",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Working memory can only hold about 7 items at once, a limit set by cognitive psychologist George Miller.",
+    "visual_description": "Context visual: Working memory can only hold about 7 items at once, a limit set by cognitive psychologist George Miller.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Working memory can only hold about 7 items at once, a limit set by cognitive psychologist George Miller.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Working memory can only hold about 7 items at once, a limit set by cognitive psychologist George Miller.",
+    "stock_footage_query": "",
+    "text_overlay": "Working memory can only",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "So, why do we struggle remembering longer numbers? It\u2019s all about chunking.",
+    "visual_description": "Escalation visual: So, why do we struggle remembering longer numbers? It\u2019s all about chunking.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: So, why do we struggle remembering longer numbers? It\u2019s all about chunking.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: So, why do we struggle remembering longer numbers? It\u2019s all about chunking.",
+    "stock_footage_query": "",
+    "text_overlay": "So, why do we",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Chunking means grouping information into manageable bits, like 555-1234 instead of 5551234.",
+    "visual_description": "Evidence visual: Chunking means grouping information into manageable bits, like 555-1234 instead of 5551234.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Chunking means grouping information into manageable bits, like 555-1234 instead of 5551234.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Chunking means grouping information into manageable bits, like 555-1234 instead of 5551234.",
+    "stock_footage_query": "",
+    "text_overlay": "Chunking means grouping information",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But did you know? Cowan suggests we can hold even fewer when distractions hit.",
+    "visual_description": "Pattern Interrupt visual: But did you know? Cowan suggests we can hold even fewer when distractions hit.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: But did you know? Cowan suggests we can hold even fewer when distractions hit.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: But did you know? Cowan suggests we can hold even fewer when distractions hit.",
+    "stock_footage_query": "",
+    "text_overlay": "But did you know?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "payoff",
+    "emotion": "positive",
+    "length_sec": 16.0,
+    "narration": "Mastering chunking can boost your memory \u2014 whether for studying, phone numbers, or daily tasks.",
+    "visual_description": "Payoff visual: Mastering chunking can boost your memory \u2014 whether for studying, phone numbers, or daily tasks.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Mastering chunking can boost your memory \u2014 whether for studying, phone numbers, or daily tasks.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Mastering chunking can boost your memory \u2014 whether for studying, phone numbers, or daily tasks.",
+    "stock_footage_query": "",
+    "text_overlay": "Mastering chunking can boost",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "enthusiastic",
+    "length_sec": 10.0,
+    "narration": "Want to unlock more memory tips? Follow for more science hacks!",
+    "visual_description": "Cta visual: Want to unlock more memory tips? Follow for more science hacks!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to unlock more memory tips? Follow for more science hacks!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to unlock more memory tips? Follow for more science hacks!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to unlock more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

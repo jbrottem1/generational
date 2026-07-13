@@ -1,0 +1,84 @@
+{
+  "title": "Cryopreservation wildlife",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the intriguing and uncertain science behind cryopreservation in wildlife.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if we could freeze time for endangered species?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Cryopreservation is the process of preserving cells and tissues at extremely low temperatures.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But can it really save wildlife? Let's dive into the science.",
+      "emotion": "anticipation",
+      "delivery": "engaging",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "While successes exist, like with certain frogs and fish, results are often mixed.",
+      "emotion": "uncertainty",
+      "delivery": "thoughtful",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "Some species might not survive thawing, leading to more questions than answers.",
+      "emotion": "realization",
+      "delivery": "reflective",
+      "retention_device": "clarifying statement"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 50.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "But here's the twist: ethical considerations complicate the issue.",
+      "emotion": "intrigue",
+      "delivery": "surprising",
+      "retention_device": "surprise"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about the future of wildlife preservation? Follow for more insights!",
+      "emotion": "inviting",
+      "delivery": "enthusiastic",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "What if we could freeze time for endangered species? Cryopreservation is the process of preserving cells and tissues at extremely low temperatures. But can it really save wildlife? Let's dive into the science. While successes exist, like with certain frogs and fish, results are often mixed. Some species might not survive thawing, leading to more questions than answers. But here's the twist: ethical considerations complicate the issue. Curious about the future of wildlife preservation? Follow for more insights!",
+  "call_to_action": "Follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:05:01.095361+00:00",
+  "source": "ai"
+}

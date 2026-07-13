@@ -1,0 +1,84 @@
+{
+  "title": "Bone Remodeling",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the fascinating science of bone remodeling.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about bone remodeling.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Every second, your bones are in a dance of destruction and creation.",
+      "emotion": "curiosity",
+      "delivery": "intriguing",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Bone remodeling is vital for maintaining strength, repairing damage, and adapting to stress.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Osteoclasts break down old bone while osteoblasts build new bone. It\u2019s a perfectly balanced cycle.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "But did you know that this process changes with age, diet, and even exercise?",
+      "emotion": "curiosity",
+      "delivery": "thought-provoking",
+      "retention_device": "payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 46.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "Preliminary research suggests new methods to enhance remodeling. Exciting, right?",
+      "emotion": "curiosity",
+      "delivery": "energetic",
+      "retention_device": "open question"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 46.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious to learn more about your own bones? Like and follow for more surprising science!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "strong CTA"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about bone remodeling. Every second, your bones are in a dance of destruction and creation. Bone remodeling is vital for maintaining strength, repairing damage, and adapting to stress. Osteoclasts break down old bone while osteoblasts build new bone. It\u2019s a perfectly balanced cycle. But did you know that this process changes with age, diet, and even exercise? Preliminary research suggests new methods to enhance remodeling. Exciting, right? Curious to learn more about your own bones? Like and follow for more surprising science!",
+  "call_to_action": "Like and follow for more surprising science!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:15:57.716603+00:00",
+  "source": "ai"
+}

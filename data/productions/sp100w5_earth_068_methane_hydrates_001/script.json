@@ -1,0 +1,74 @@
+{
+  "title": "Methane Hydrates",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A concise exploration of methane hydrates and their implications.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about methane hydrates than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Methane hydrates are icy structures where methane gas is trapped in water, found deep under the ocean and in permafrost.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "As climate change warms our planet, these hydrates may destabilize. What happens then?",
+      "emotion": "concern",
+      "delivery": "slow and dramatic",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Scientists warn that releasing methane could accelerate global warming\u2014it's 25 times more potent than CO2.",
+      "emotion": "shock",
+      "delivery": "urgent",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 46.0,
+      "segment_type": "payoff",
+      "voiceover": "But we still need research. Uncertainty remains about how much methane could be released and its effects.",
+      "emotion": "reassurance",
+      "delivery": "calm",
+      "retention_device": "reflective pause"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 46.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to know more about our planet? Hit like and follow for more science insights!",
+      "emotion": "encouragement",
+      "delivery": "enthusiastic",
+      "retention_device": "clear invitation"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about methane hydrates than social media does. Methane hydrates are icy structures where methane gas is trapped in water, found deep under the ocean and in permafrost. As climate change warms our planet, these hydrates may destabilize. What happens then? Scientists warn that releasing methane could accelerate global warming\u2014it's 25 times more potent than CO2. But we still need research. Uncertainty remains about how much methane could be released and its effects. Want to know more about our planet? Hit like and follow for more science insights!",
+  "call_to_action": "Hit like and follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:42:52.596130+00:00",
+  "source": "ai"
+}

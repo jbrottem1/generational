@@ -1,0 +1,74 @@
+{
+  "title": "Sauna Evidence Caution",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the caution surrounding scientific evidence on saunas.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if your sauna session isn\u2019t as safe as you think?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Recent studies hint at benefits, but they also warn us.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Some research is preliminary, raising red flags for certain users.",
+      "emotion": "curiosity",
+      "delivery": "intense",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 28.0,
+      "segment_type": "evidence",
+      "voiceover": "Experts caution against overuse, especially for those with heart conditions.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 28.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "So, while saunas can be relaxing, approach with awareness and consult your doctor.",
+      "emotion": "curiosity",
+      "delivery": "conclusive",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more health insights? Follow for the latest updates!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "What if your sauna session isn\u2019t as safe as you think? Recent studies hint at benefits, but they also warn us. Some research is preliminary, raising red flags for certain users. Experts caution against overuse, especially for those with heart conditions. So, while saunas can be relaxing, approach with awareness and consult your doctor. Curious about more health insights? Follow for the latest updates!",
+  "call_to_action": "Follow for the latest updates!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:24:30.257332+00:00",
+  "source": "ai"
+}

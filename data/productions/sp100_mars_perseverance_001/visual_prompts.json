@@ -1,0 +1,76 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: NASA's Perseverance isn't joyriding \u2014 it's hunting ancient signs of life.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Situated in Jezero Crater, this rover is on a mission to unveil the secrets of Mars' watery past.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Jezero was once a lake, and scientists believe it may hold clues to ancient microbial life.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Perseverance collects rock samples, caching them for future return missions to Earth.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Pattern Interrupt visual: What will these samples reveal? The answers could change everything we know about life beyond Earth.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Payoff visual: While no life has been found yet, Perseverance is paving the way for discovery.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cta visual: Follow along for more updates on this incredible journey to Mars!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: NASA's Perseverance isn't joyriding \u2014 it's hunting ancient signs of life.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Situated in Jezero Crater, this rover is on a mission to unveil the secrets of Mars' watery past.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Jezero was once a lake, and scientists believe it may hold clues to ancient microbial life.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Perseverance collects rock samples, caching them for future return missions to Earth.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Pattern Interrupt visual: What will these samples reveal? The answers could change everything we know about life beyond Earth.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Payoff visual: While no life has been found yet, Perseverance is paving the way for discovery.",
+      "duration_sec": 16.0
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cinematic motion: Cta visual: Follow along for more updates on this incredible journey to Mars!",
+      "duration_sec": 10.0
+    }
+  ]
+}

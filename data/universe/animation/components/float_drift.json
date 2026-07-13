@@ -1,0 +1,23 @@
+{
+  "id": "float_drift",
+  "loop": true,
+  "cycle_sec": 1.5,
+  "keyframes": [
+    {
+      "t": 0.0,
+      "y": 0,
+      "rot": -3
+    },
+    {
+      "t": 0.75,
+      "y": 0.04,
+      "rot": 3
+    },
+    {
+      "t": 1.5,
+      "y": 0,
+      "rot": -3
+    }
+  ],
+  "notes": "Underwater / zero-g; hairless so use scarf-of-bubbles optional FX."
+}

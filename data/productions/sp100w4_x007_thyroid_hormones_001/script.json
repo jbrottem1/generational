@@ -1,0 +1,84 @@
+{
+  "title": "Thyroid Hormones",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "An intriguing exploration of thyroid hormones and their impact on the body.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about thyroid hormones.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Thyroid hormones regulate metabolism, energy, and even mood.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But what happens if these hormones are out of balance?",
+      "emotion": "curiosity",
+      "delivery": "thought-provoking",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows low levels can lead to fatigue and depression.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "statistic"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "But here\u2019s the twist: too much can cause anxiety and weight loss!",
+      "emotion": "curiosity",
+      "delivery": "exciting",
+      "retention_device": "surprise"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding your thyroid can change your health journey dramatically.",
+      "emotion": "curiosity",
+      "delivery": "uplifting",
+      "retention_device": "insight"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more about your health? Follow for insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about thyroid hormones. Thyroid hormones regulate metabolism, energy, and even mood. But what happens if these hormones are out of balance? Research shows low levels can lead to fatigue and depression. But here\u2019s the twist: too much can cause anxiety and weight loss! Understanding your thyroid can change your health journey dramatically. Want to learn more about your health? Follow for insights!",
+  "call_to_action": "Want to learn more about your health? Follow for insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:15:59.075880+00:00",
+  "source": "ai"
+}

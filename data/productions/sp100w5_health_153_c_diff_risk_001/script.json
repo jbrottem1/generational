@@ -1,0 +1,74 @@
+{
+  "title": "C diff risk",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the scientific facts behind C diff risk and debunking social media myths.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about C diff risk than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "C diff is a dangerous bacteria that can cause severe diarrhea and more.",
+      "emotion": "serious",
+      "delivery": "calm and informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But what really increases your risk? Antibiotics play a huge role.",
+      "emotion": "concern",
+      "delivery": "urgent and clear",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that taking antibiotics disrupts gut health, allowing C diff to thrive.",
+      "emotion": "informative",
+      "delivery": "steady and factual",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Not everyone is at equal risk; age and underlying health matters too.",
+      "emotion": "relief",
+      "delivery": "reassuring",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay informed. Follow for more science-based health insights.",
+      "emotion": "encouraging",
+      "delivery": "motivational",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about C diff risk than social media does. C diff is a dangerous bacteria that can cause severe diarrhea and more. But what really increases your risk? Antibiotics play a huge role. Studies show that taking antibiotics disrupts gut health, allowing C diff to thrive. Not everyone is at equal risk; age and underlying health matters too. Stay informed. Follow for more science-based health insights.",
+  "call_to_action": "Stay informed. Follow for more science-based health insights.",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:55:21.787916+00:00",
+  "source": "ai"
+}

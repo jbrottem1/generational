@@ -1,0 +1,74 @@
+{
+  "title": "What the Hippocampus Does",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the crucial role of the hippocampus in memory formation.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "This seahorse-shaped brain region is key to your memories.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "The hippocampus is vital for forming new episodic memories.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Without it, we struggle to remember our past experiences.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Take the case of Henry Molaison, or HM, who lost his memory due to surgery affecting his hippocampus.",
+      "emotion": "curiosity",
+      "delivery": "clear and factual",
+      "retention_device": "emotional connection"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "payoff",
+      "voiceover": "Research, while still evolving, shows the hippocampus's role extends to spatial navigation and emotional responses.",
+      "emotion": "curiosity",
+      "delivery": "inspiring",
+      "retention_device": "reveal"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into your brain? Like and follow for more insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "prompt engagement"
+    }
+  ],
+  "full_voiceover": "This seahorse-shaped brain region is key to your memories. The hippocampus is vital for forming new episodic memories. Without it, we struggle to remember our past experiences. Take the case of Henry Molaison, or HM, who lost his memory due to surgery affecting his hippocampus. Research, while still evolving, shows the hippocampus's role extends to spatial navigation and emotional responses. Want to dive deeper into your brain? Like and follow for more insights!",
+  "call_to_action": "Want to dive deeper into your brain? Like and follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:00:41.620726+00:00",
+  "source": "ai"
+}

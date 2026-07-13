@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Most exoplanets are invisible \u2014 we find them by watching stars wobble and dim.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Two main methods help us: the transit method and radial velocity.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: The transit method tracks a star's light, looking for dimming as a planet crosses.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Meanwhile, radial velocity detects tiny wobbles in a star's position caused by a planet's gravity.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: These methods have helped discover thousands of exoplanets, revealing a universe full of possibilities.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about our universe? Like and follow for more mind-bending space facts!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Most exoplanets are invisible \u2014 we find them by watching stars wobble and dim.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Two main methods help us: the transit method and radial velocity.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: The transit method tracks a star's light, looking for dimming as a planet crosses.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Meanwhile, radial velocity detects tiny wobbles in a star's position caused by a planet's gravity.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: These methods have helped discover thousands of exoplanets, revealing a universe full of possibilities.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about our universe? Like and follow for more mind-bending space facts!",
+      "duration_sec": 26.0
+    }
+  ]
+}

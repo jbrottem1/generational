@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: In 2015, Earth felt spacetime ripple \u2014 and LIGO heard it.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: These ripples are called gravitational waves, caused by massive cosmic collisions.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: LIGO uses laser interferometry to detect them \u2014 a method that measures tiny changes in distance.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: The first detection was GW150914, a collision of black holes over a billion light-years away.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: This incredible technology lets us hear the universe's violent symphonies.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to dive deeper into the cosmos? Like and follow for more!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: In 2015, Earth felt spacetime ripple \u2014 and LIGO heard it.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: These ripples are called gravitational waves, caused by massive cosmic collisions.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: LIGO uses laser interferometry to detect them \u2014 a method that measures tiny changes in distance.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: The first detection was GW150914, a collision of black holes over a billion light-years away.",
+      "duration_sec": 9.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: This incredible technology lets us hear the universe's violent symphonies.",
+      "duration_sec": 10.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to dive deeper into the cosmos? Like and follow for more!",
+      "duration_sec": 23.0
+    }
+  ]
+}

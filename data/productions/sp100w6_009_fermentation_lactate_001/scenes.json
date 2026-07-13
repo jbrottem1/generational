@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if I told you lactate isn\u2019t just a byproduct?",
+    "visual_description": "Hook visual: What if I told you lactate isn\u2019t just a byproduct?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you lactate isn\u2019t just a byproduct?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you lactate isn\u2019t just a byproduct?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "intrigue",
+    "length_sec": 8.0,
+    "narration": "Lactate forms during fermentation, a critical process in cells for energy.",
+    "visual_description": "Context visual: Lactate forms during fermentation, a critical process in cells for energy.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Lactate forms during fermentation, a critical process in cells for energy.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Lactate forms during fermentation, a critical process in cells for energy.",
+    "stock_footage_query": "",
+    "text_overlay": "Lactate forms during fermentation,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But what does this mean for our bodies and performance?",
+    "visual_description": "Escalation visual: But what does this mean for our bodies and performance?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But what does this mean for our bodies and performance?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But what does this mean for our bodies and performance?",
+    "stock_footage_query": "",
+    "text_overlay": "But what does this",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "surprise",
+    "length_sec": 9.0,
+    "narration": "Lactate isn\u2019t the villain! It fuels muscle recovery and boosts endurance.",
+    "visual_description": "Evidence visual: Lactate isn\u2019t the villain! It fuels muscle recovery and boosts endurance.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Lactate isn\u2019t the villain! It fuels muscle recovery and boosts endurance.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Lactate isn\u2019t the villain! It fuels muscle recovery and boosts endurance.",
+    "stock_footage_query": "",
+    "text_overlay": "Lactate isn\u2019t the villain!",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 27.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "excitement",
+    "length_sec": 13.0,
+    "narration": "Understanding lactate helps optimize training\u2014science in action!",
+    "visual_description": "Payoff visual: Understanding lactate helps optimize training\u2014science in action!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding lactate helps optimize training\u2014science in action!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding lactate helps optimize training\u2014science in action!",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding lactate helps optimize",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 27.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 27.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "encouragement",
+    "length_sec": 20.0,
+    "narration": "Want more cool science insights? Hit that follow button!",
+    "visual_description": "Cta visual: Want more cool science insights? Hit that follow button!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want more cool science insights? Hit that follow button!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want more cool science insights? Hit that follow button!",
+    "stock_footage_query": "",
+    "text_overlay": "Want more cool science",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

@@ -1,0 +1,84 @@
+{
+  "title": "Ship Noise in the Ocean",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the impact of ship noise on ocean ecosystems reveals surprising consequences.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Ever wondered how ship noise affects ocean life?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "From cargo ships to cruise liners, vessels create a symphony of sounds underwater.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But this noise isn\u2019t just background music; it disrupts communication among marine animals.",
+      "emotion": "concern",
+      "delivery": "urgent and compelling",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that species like dolphins and whales rely on sound to navigate and find food.",
+      "emotion": "curiosity",
+      "delivery": "informative and revealing",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "Imagine trying to talk in a crowded room\u2014difficult, right? That\u2019s similar to what they face.",
+      "emotion": "surprise",
+      "delivery": "anecdotal and relatable",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "Reducing ship noise could restore balance, allowing these creatures to thrive again.",
+      "emotion": "hope",
+      "delivery": "uplifting and inspiring",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more ocean mysteries? Hit subscribe for deep dives into science!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic and inviting",
+      "retention_device": "none"
+    }
+  ],
+  "full_voiceover": "Ever wondered how ship noise affects ocean life? From cargo ships to cruise liners, vessels create a symphony of sounds underwater. But this noise isn\u2019t just background music; it disrupts communication among marine animals. Studies show that species like dolphins and whales rely on sound to navigate and find food. Imagine trying to talk in a crowded room\u2014difficult, right? That\u2019s similar to what they face. Reducing ship noise could restore balance, allowing these creatures to thrive again. Curious about more ocean mysteries? Hit subscribe for deep dives into science!",
+  "call_to_action": "Curious about more ocean mysteries? Hit subscribe for deep dives into science!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:14:47.633188+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: What if I told you seagrass meadows are vital yet often overlooked?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: These underwater gardens cover vast areas, providing homes for countless marine species.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: But they do more than house fish. They capture carbon\u2014helping fight climate change.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Studies show they can store up to 83 million tons of carbon yearly, but...",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: They\u2019re declining rapidly due to pollution and coastal development. What can we do?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Join the fight! Support seagrass conservation. Your actions matter.",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: What if I told you seagrass meadows are vital yet often overlooked?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: These underwater gardens cover vast areas, providing homes for countless marine species.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: But they do more than house fish. They capture carbon\u2014helping fight climate change.",
+      "duration_sec": 10.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Studies show they can store up to 83 million tons of carbon yearly, but...",
+      "duration_sec": 10.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: They\u2019re declining rapidly due to pollution and coastal development. What can we do?",
+      "duration_sec": 15.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Join the fight! Support seagrass conservation. Your actions matter.",
+      "duration_sec": 15.0
+    }
+  ]
+}

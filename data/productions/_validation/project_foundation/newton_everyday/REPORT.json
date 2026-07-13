@@ -1,0 +1,51 @@
+{
+  "id": "newton_everyday",
+  "title": "How Newton's Second Law Explains Everyday Life",
+  "demo_id": "foundation_newton_everyday",
+  "ok": true,
+  "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Physics_003_Newtons_Second_Law.mp4",
+  "duration_sec": 31.328,
+  "render_sec": 35.24,
+  "qc": {
+    "mouth_varies": true,
+    "has_silence_closed": true,
+    "has_speech_open": true,
+    "speaking_ratio": 0.706,
+    "idle_motion": true,
+    "blink_programmed": true,
+    "educator_mode": true,
+    "demo_id": "foundation_newton_everyday",
+    "duration_sec": 31.328,
+    "frame_count": 751,
+    "grounded": true,
+    "interactive_teaching": true,
+    "gesture_counts": {
+      "idle": 240,
+      "think": 45,
+      "write": 90,
+      "point": 240,
+      "present": 136
+    },
+    "idle_ratio": 0.32,
+    "walk_ratio": 0.06,
+    "purposeful_gestures": true,
+    "passed": true
+  },
+  "verify": {
+    "exists": true,
+    "bytes": 859030,
+    "has_video": true,
+    "has_audio": true,
+    "ok": true
+  },
+  "structure": [
+    "opening",
+    "question",
+    "whiteboard",
+    "real_world",
+    "summary",
+    "next_lesson"
+  ],
+  "next_tease": "In the next lesson, we'll build on force, mass, and acceleration together.",
+  "error": null
+}

@@ -28,52 +28,85 @@ class StepStatus:
 # directly to execute() as a list of engine keys).
 WORKFLOWS = {
     "ideation": ["ideation"],
+    # One-command studio entry (Executive Orchestrator coordinates subsystems;
+    # revision loops live in the service — this workflow is the thin adapter).
+    "executive": ["executive_orchestrator"],
     # The intelligence pipeline: trend discovery → opportunity ranking →
-    # research → 20 candidates → psychology scoring → script generation
-    # (multiple scored variants per candidate, immediately after psychology)
-    # → attention graph (12-dimension radar + recommendations, Phase 2) →
-    # weighted ranking (psychology + opportunity + script quality) →
-    # script fallback for anything unscripted → critic → revision →
-    # citation → SEO packaging → final quality scores + publish gate.
+    # trend forecasting → research → ideation → psychology → audience →
+    # AI Studio Director V5 (Production Blueprint + style library before
+    # any production engine) → script generation → attention graph →
+    # evidence → visual intelligence → cinematography → viewer retention →
+    # voice & audio → ranking → critic → revision → citation → SEO →
+    # threat detection → quality → studio render → optimization lab →
+    # Production QA.
     "intelligence": [
         "trend_discovery",
         "opportunity_ranking",
+        "trend_forecasting",
+        "market_intelligence",
         "research",
+        "continuous_learning",
         "ideation",
         "psychology",
+        "audience_intelligence",
+        "ai_director",
         "script_generation",
         "attention_graph",
+        "evidence_intelligence",
+        "visual_intelligence",
+        "cinematography",
+        "viewer_retention",
+        "voice_audio",
         "ranking",
         "script",
         "critic",
         "revision",
         "citation",
         "seo",
+        "threat_detection",
         "quality",
+        "studio_render",
+        "optimization_lab",
+        "production_qa",
     ],
     "full_content": [
         "trend_discovery",
         "opportunity_ranking",
+        "trend_forecasting",
+        "market_intelligence",
         "research",
+        "continuous_learning",
         "ideation",
         "psychology",
+        "audience_intelligence",
+        "ai_director",
         "script_generation",
         "attention_graph",
+        "evidence_intelligence",
+        "visual_intelligence",
+        "cinematography",
+        "viewer_retention",
+        "voice_audio",
         "ranking",
         "script",
         "critic",
         "revision",
         "citation",
         "seo",
+        "threat_detection",
         "quality",
         "voice",
         "image",
         "video",
+        "studio_render",
+        "optimization_lab",
+        "production_qa",
         "publishing",
     ],
     # v4.0 media production pipeline — runs on approved scripts only,
     # coordinated separately so the intelligence workflow stays untouched.
     "media_production": [
+        "ai_director",
         "scene_planning",
         "narration",
         "visual_planning",
@@ -81,6 +114,9 @@ WORKFLOWS = {
         "subtitle",
         "timeline",
         "render_package",
+        "studio_render",
+        "optimization_lab",
+        "production_qa",
         "publishing_queue",
     ],
 }
@@ -92,6 +128,7 @@ class StepResult:
     status: str
     error: str = ""
     duration_ms: int = 0
+    problems: list = field(default_factory=list)   # contract-validation findings
 
 
 @dataclass
@@ -114,10 +151,27 @@ class WorkflowRun:
                     "status": step.status,
                     "error": step.error,
                     "duration_ms": step.duration_ms,
+                    "problems": list(step.problems),
                 }
                 for step in self.steps
             ],
         }
+
+
+def _validate_contract(engine, method: str, payload: dict) -> list:
+    """Contract validation findings for one engine — never raises.
+
+    Classic engines have no contracts (no findings); ContractEngine
+    subclasses declare input/output keys and report what is missing. The
+    orchestrator surfaces findings as stage diagnostics, never failures.
+    """
+    validator = getattr(engine, method, None)
+    if validator is None:
+        return []
+    try:
+        return [f"{engine.key}: {problem}" for problem in (validator(payload) or [])]
+    except Exception as exc:  # noqa: BLE001 - validation must never break a run
+        return [f"{engine.key}: {method} raised {exc}"]
 
 
 class WorkflowEngine:
@@ -143,17 +197,21 @@ class WorkflowEngine:
                 log_event(logger, "workflow.step_skipped", workflow=name, engine=key)
                 continue
 
+            problems = _validate_contract(engine, "validate_input", context)
             started = time.time()
             try:
                 updates = engine.run(context) or {}
                 context.update(updates)
+                problems += _validate_contract(engine, "validate_output", updates)
                 duration = int((time.time() - started) * 1000)
-                run.steps.append(StepResult(engine_key=key, status=StepStatus.SUCCEEDED, duration_ms=duration))
+                run.steps.append(
+                    StepResult(engine_key=key, status=StepStatus.SUCCEEDED, duration_ms=duration, problems=problems)
+                )
                 log_event(logger, "workflow.step_succeeded", workflow=name, engine=key, duration_ms=duration)
             except Exception as exc:  # noqa: BLE001 - one bad step must not crash the app
                 duration = int((time.time() - started) * 1000)
                 run.steps.append(
-                    StepResult(engine_key=key, status=StepStatus.FAILED, error=str(exc), duration_ms=duration)
+                    StepResult(engine_key=key, status=StepStatus.FAILED, error=str(exc), duration_ms=duration, problems=problems)
                 )
                 log_event(logger, "workflow.step_failed", workflow=name, engine=key, error=str(exc))
                 break

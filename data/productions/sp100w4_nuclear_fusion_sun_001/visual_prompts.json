@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: The Sun fuses hydrogen into helium, releasing energy that becomes sunlight.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: But how does this fusion actually occur? It all starts deep within its core.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Intense pressure and temperature force hydrogen atoms to collide, overcoming repulsion.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: This collision creates helium and releases enormous energy in the form of light and heat.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: This energy travels 93 million miles to reach us, illuminating our days.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about more cosmic wonders? Like and follow for more stellar insights!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: The Sun fuses hydrogen into helium, releasing energy that becomes sunlight.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: But how does this fusion actually occur? It all starts deep within its core.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Intense pressure and temperature force hydrogen atoms to collide, overcoming repulsion.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: This collision creates helium and releases enormous energy in the form of light and heat.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: This energy travels 93 million miles to reach us, illuminating our days.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about more cosmic wonders? Like and follow for more stellar insights!",
+      "duration_sec": 26.0
+    }
+  ]
+}

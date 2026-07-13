@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Did you know that LEDs emit light when electrons leap across a semiconductor?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Inside an LED, a semiconductor creates a band gap. When electrons move down, they release energy as photons.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: But why does that matter? The color of light depends on the energy of those photons!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Different materials in the LED produce different colors. Blue LEDs, for instance, require a larger energy drop than red ",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: This technology allows for energy-efficient lighting that lasts longer than traditional bulbs.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about more cool science facts? Hit that follow button!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Did you know that LEDs emit light when electrons leap across a semiconductor?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Inside an LED, a semiconductor creates a band gap. When electrons move down, they release energy as photons.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: But why does that matter? The color of light depends on the energy of those photons!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Different materials in the LED produce different colors. Blue LEDs, for instance, require a larger energy drop than red ",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: This technology allows for energy-efficient lighting that lasts longer than traditional bulbs.",
+      "duration_sec": 14.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about more cool science facts? Hit that follow button!",
+      "duration_sec": 20.0
+    }
+  ]
+}

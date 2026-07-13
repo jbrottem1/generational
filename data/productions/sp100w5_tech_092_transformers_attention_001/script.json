@@ -1,0 +1,74 @@
+{
+  "title": "Transformers Attention",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explaining transformers attention through science for a general audience.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science reveals a clearer story about transformers attention than social media.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Transformers attention is a game-changer in AI, processing data in ways we barely understand.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Unlike traditional models, it focuses on relationships between data points, not just the data itself.",
+      "emotion": "curiosity",
+      "delivery": "building intensity",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that this approach achieves state-of-the-art results in fields like language processing and image recognition.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "payoff",
+      "voiceover": "But there's still uncertainty in how these models learn. Researchers are only beginning to unlock their full potential.",
+      "emotion": "curiosity",
+      "delivery": "thought-provoking",
+      "retention_device": "thought challenge"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about the future of AI? Like and subscribe for more insights!",
+      "emotion": "curiosity",
+      "delivery": "excited",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Science reveals a clearer story about transformers attention than social media. Transformers attention is a game-changer in AI, processing data in ways we barely understand. Unlike traditional models, it focuses on relationships between data points, not just the data itself. Studies show that this approach achieves state-of-the-art results in fields like language processing and image recognition. But there's still uncertainty in how these models learn. Researchers are only beginning to unlock their full potential. Curious about the future of AI? Like and subscribe for more insights!",
+  "call_to_action": "Like and subscribe for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:47:52.353977+00:00",
+  "source": "ai"
+}

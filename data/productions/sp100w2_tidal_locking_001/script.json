@@ -1,0 +1,74 @@
+{
+  "title": "Why We Only See One Side of the Moon",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "The Moon is tidally locked, revealing only one face to Earth.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Ever wonder why we only see one side of the Moon?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "It's not hiding. The Moon is tidally locked, spinning in perfect sync with its orbit around Earth.",
+      "emotion": "fascination",
+      "delivery": "engaging and clear",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "evidence",
+      "voiceover": "This means it takes the same time to rotate once as it does to orbit Earth \u2014 about 27.3 days.",
+      "emotion": "intrigue",
+      "delivery": "informative",
+      "retention_device": "visual imagery"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "escalation",
+      "voiceover": "So, while it may seem like the Moon's playing coy, it's just how physics works!",
+      "emotion": "surprise",
+      "delivery": "enthusiastic",
+      "retention_device": "unexpected twist"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "This tidal locking creates phases, making our Moon's appearance change over time.",
+      "emotion": "satisfaction",
+      "delivery": "satisfying",
+      "retention_device": "connective insight"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more cool science facts? Hit that follow button!",
+      "emotion": "enthusiasm",
+      "delivery": "encouraging",
+      "retention_device": "call to engage"
+    }
+  ],
+  "full_voiceover": "Ever wonder why we only see one side of the Moon? It's not hiding. The Moon is tidally locked, spinning in perfect sync with its orbit around Earth. This means it takes the same time to rotate once as it does to orbit Earth \u2014 about 27.3 days. So, while it may seem like the Moon's playing coy, it's just how physics works! This tidal locking creates phases, making our Moon's appearance change over time. Want to learn more cool science facts? Hit that follow button!",
+  "call_to_action": "Want to learn more cool science facts? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:48:36.235891+00:00",
+  "source": "ai"
+}

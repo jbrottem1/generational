@@ -9,9 +9,9 @@ that skip script generation — nothing downstream breaks either way.
 
 from __future__ import annotations
 
-from core.ai import get_provider
 from core.log import get_logger, log_event
 from engines.base import Engine
+from services.provider_runtime.engine_api import runtime_generate_json
 
 logger = get_logger(__name__)
 
@@ -48,7 +48,6 @@ class ScriptEngine(Engine):
         return {"selected_ideas": selected}
 
     def _provider_scripts(self, context: dict, selected: list) -> "list | None":
-        provider = get_provider()
         concept_lines = "\n".join(
             f'{i}. title: "{idea["title"]}" hook: "{idea["hook"]}"' for i, idea in enumerate(selected, 1)
         )
@@ -63,12 +62,15 @@ class ScriptEngine(Engine):
             'Respond with JSON: {"scripts": [{"script": "full script starting with the hook", '
             '"cta": "short call to action"}]}'
         )
-        data, tokens = provider.generate_json(system, user, context.get("model", ""))
+        data, tokens, provider_name = runtime_generate_json(
+            system, user, model=context.get("model", ""), operation="generate_script",
+        )
         if data is None:
-            if provider.name != "demo":
+            if provider_name and provider_name != "demo":
                 context["error"] = "AI script call failed; used heuristic fallback."
             return None
         context["tokens_used"] = context.get("tokens_used", 0) + tokens
+        context["provider_used"] = provider_name
         scripts = data.get("scripts", [])
         if len(scripts) < len(selected):
             return None

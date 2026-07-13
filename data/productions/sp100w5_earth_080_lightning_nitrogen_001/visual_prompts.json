@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Did you know lightning creates nitrogen?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: When lightning strikes, it generates extreme heat, breaking nitrogen molecules apart.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: This process forms nitrogen oxides, which then mix with rainwater.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Plants absorb this nitrogen, essential for growth. So, lightning helps feed the Earth!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Yet, climate change is affecting lightning frequency. Less lightning could mean less nitrogen for crops.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about more science secrets? Hit that follow button!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Did you know lightning creates nitrogen?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: When lightning strikes, it generates extreme heat, breaking nitrogen molecules apart.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: This process forms nitrogen oxides, which then mix with rainwater.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Plants absorb this nitrogen, essential for growth. So, lightning helps feed the Earth!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Yet, climate change is affecting lightning frequency. Less lightning could mean less nitrogen for crops.",
+      "duration_sec": 16.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about more science secrets? Hit that follow button!",
+      "duration_sec": 18.0
+    }
+  ]
+}

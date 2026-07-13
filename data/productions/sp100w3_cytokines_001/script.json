@@ -1,0 +1,74 @@
+{
+  "title": "Cytokines: Immune Text Messages",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Cytokines are chemical signals that help immune cells coordinate, but too many can cause chaos.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if your body sent messages that could start a storm?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Cytokines are like text messages for immune cells, guiding responses to infections.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But what happens when those messages go haywire?",
+      "emotion": "tension",
+      "delivery": "intriguing",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "In a cytokine storm, excessive signals can overwhelm the body, leading to severe inflammation.",
+      "emotion": "concern",
+      "delivery": "serious",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "This dysregulation may contribute to conditions like COVID-19, but research is ongoing.",
+      "emotion": "hopeful",
+      "delivery": "calm",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 44.0,
+      "segment_type": "cta",
+      "voiceover": "Want to understand your immunity better? Follow for more science insights!",
+      "emotion": "encouraging",
+      "delivery": "enthusiastic",
+      "retention_device": "none"
+    }
+  ],
+  "full_voiceover": "What if your body sent messages that could start a storm? Cytokines are like text messages for immune cells, guiding responses to infections. But what happens when those messages go haywire? In a cytokine storm, excessive signals can overwhelm the body, leading to severe inflammation. This dysregulation may contribute to conditions like COVID-19, but research is ongoing. Want to understand your immunity better? Follow for more science insights!",
+  "call_to_action": "Follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:07:38.084491+00:00",
+  "source": "ai"
+}

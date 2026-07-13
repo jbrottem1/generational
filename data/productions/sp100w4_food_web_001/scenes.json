@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if I told you ecosystems are more like webs than chains?",
+    "visual_description": "Hook visual: What if I told you ecosystems are more like webs than chains?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you ecosystems are more like webs than chains?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you ecosystems are more like webs than chains?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Food chains simplify relationships into a linear path. But nature is much messier.",
+    "visual_description": "Context visual: Food chains simplify relationships into a linear path. But nature is much messier.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Food chains simplify relationships into a linear path. But nature is much messier.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Food chains simplify relationships into a linear path. But nature is much messier.",
+    "stock_footage_query": "",
+    "text_overlay": "Food chains simplify relationships",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Picture this: a spider spins a web. Every strand connects to multiple insects, not just one.",
+    "visual_description": "Escalation visual: Picture this: a spider spins a web. Every strand connects to multiple insects, not just one.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Picture this: a spider spins a web. Every strand connects to multiple insects, not just one.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Picture this: a spider spins a web. Every strand connects to multiple insects, not just one.",
+    "stock_footage_query": "",
+    "text_overlay": "Picture this: a spider",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "In a food web, one animal can play multiple roles. A rabbit isn\u2019t just food; it can also be a pollinator.",
+    "visual_description": "Evidence visual: In a food web, one animal can play multiple roles. A rabbit isn\u2019t just food; it can also be a pollinator.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: In a food web, one animal can play multiple roles. A rabbit isn\u2019t just food; it can also be a pollinator.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: In a food web, one animal can play multiple roles. A rabbit isn\u2019t just food; it can also be a pollinator.",
+    "stock_footage_query": "",
+    "text_overlay": "In a food web,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "Understanding food webs helps us grasp ecosystem health. A stronger web means a healthier planet.",
+    "visual_description": "Payoff visual: Understanding food webs helps us grasp ecosystem health. A stronger web means a healthier planet.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding food webs helps us grasp ecosystem health. A stronger web means a healthier planet.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding food webs helps us grasp ecosystem health. A stronger web means a healthier planet.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding food webs helps",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Want to dive deeper into ecology? Like and follow for more insights!",
+    "visual_description": "Cta visual: Want to dive deeper into ecology? Like and follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into ecology? Like and follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into ecology? Like and follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "title": "Kidney Filtration",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "An exploration of how kidneys filter blood and maintain bodily balance.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about kidney filtration.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Your kidneys filter about 50 gallons of blood daily. But how do they do it?",
+      "emotion": "curiosity",
+      "delivery": "inquisitive",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "They use tiny structures called nephrons, about a million in each kidney.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "These nephrons filter waste and excess substances, balancing electrolytes.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact reveal"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "Research shows they also regulate blood pressure and red blood cell production.",
+      "emotion": "curiosity",
+      "delivery": "revealing",
+      "retention_device": "unexpected twist"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 50.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into kidney health? Follow for more!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about kidney filtration. Your kidneys filter about 50 gallons of blood daily. But how do they do it? They use tiny structures called nephrons, about a million in each kidney. These nephrons filter waste and excess substances, balancing electrolytes. Research shows they also regulate blood pressure and red blood cell production. Want to dive deeper into kidney health? Follow for more!",
+  "call_to_action": "Want to dive deeper into kidney health? Follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:15:39.299376+00:00",
+  "source": "ai"
+}

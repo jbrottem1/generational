@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about IQ.",
+    "visual_description": "Hook visual: Here's what science actually says about IQ.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about IQ.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about IQ.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "IQ tests measure a range of cognitive abilities, not just what you think.",
+    "visual_description": "Context visual: IQ tests measure a range of cognitive abilities, not just what you think.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: IQ tests measure a range of cognitive abilities, not just what you think.",
+    "ai_video_prompt": "Cinematic motion: Context visual: IQ tests measure a range of cognitive abilities, not just what you think.",
+    "stock_footage_query": "",
+    "text_overlay": "IQ tests measure a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "It includes problem-solving, reasoning, and even your ability to learn.",
+    "visual_description": "Escalation visual: It includes problem-solving, reasoning, and even your ability to learn.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: It includes problem-solving, reasoning, and even your ability to learn.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: It includes problem-solving, reasoning, and even your ability to learn.",
+    "stock_footage_query": "",
+    "text_overlay": "It includes problem-solving, reasoning,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Research shows that while IQ can predict academic success, it doesn't measure creativity or emotional intelligence.",
+    "visual_description": "Evidence visual: Research shows that while IQ can predict academic success, it doesn't measure creativity or emotional intelligence.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows that while IQ can predict academic success, it doesn't measure creativity or emotional intelligence.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows that while IQ can predict academic success, it doesn't measure creativity or emotional intelligence.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows that while",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "satisfaction",
+    "length_sec": 8.0,
+    "narration": "So, IQ is just one piece of a much bigger puzzle of intelligence.",
+    "visual_description": "Payoff visual: So, IQ is just one piece of a much bigger puzzle of intelligence.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, IQ is just one piece of a much bigger puzzle of intelligence.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, IQ is just one piece of a much bigger puzzle of intelligence.",
+    "stock_footage_query": "",
+    "text_overlay": "So, IQ is just",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "inspiring",
+    "length_sec": 26.0,
+    "narration": "Curious about your own IQ? Check your learning style next! Like and follow for more insights!",
+    "visual_description": "Cta visual: Curious about your own IQ? Check your learning style next! Like and follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about your own IQ? Check your learning style next! Like and follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about your own IQ? Check your learning style next! Like and follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about your own",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

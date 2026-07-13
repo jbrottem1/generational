@@ -1,0 +1,32 @@
+{
+  "library_id": "ANIM-DASH-V1",
+  "character_id": "CHAR-DASH",
+  "version": "1.0.0",
+  "retention_max_static_sec": 3.0,
+  "beat_change_interval_sec": [2.0, 4.0],
+  "components": [
+    {"id": "walk_cycle", "file": "components/walk_cycle.json", "loop": true, "tags": ["locomotion", "teach"]},
+    {"id": "run_cycle", "file": "components/run_cycle.json", "loop": true, "tags": ["locomotion", "chase"]},
+    {"id": "idle_breathe", "file": "components/idle_breathe.json", "loop": true, "tags": ["idle"]},
+    {"id": "talk_bob", "file": "components/talk_bob.json", "loop": true, "tags": ["dialogue"]},
+    {"id": "point_right", "file": "components/point_right.json", "loop": false, "tags": ["gesture", "diagram"]},
+    {"id": "point_up", "file": "components/point_up.json", "loop": false, "tags": ["gesture"]},
+    {"id": "celebrate_jump", "file": "components/celebrate_jump.json", "loop": false, "tags": ["emotion", "payoff"]},
+    {"id": "think_scratch", "file": "components/think_scratch.json", "loop": false, "tags": ["emotion"]},
+    {"id": "shock_recoil", "file": "components/shock_recoil.json", "loop": false, "tags": ["emotion"]},
+    {"id": "question_tilt", "file": "components/question_tilt.json", "loop": false, "tags": ["emotion"]},
+    {"id": "panic_flail", "file": "components/panic_flail.json", "loop": true, "tags": ["emotion", "comedy"]},
+    {"id": "turn_180", "file": "components/turn_180.json", "loop": false, "tags": ["reorient"]},
+    {"id": "face_audience", "file": "components/face_audience.json", "loop": false, "tags": ["cta"]},
+    {"id": "jump_onto", "file": "components/jump_onto.json", "loop": false, "tags": ["physical"]},
+    {"id": "hold_object", "file": "components/hold_object.json", "loop": true, "tags": ["prop"]},
+    {"id": "throw_fact", "file": "components/throw_fact.json", "loop": false, "tags": ["mograph"]},
+    {"id": "magnify_look", "file": "components/magnify_look.json", "loop": false, "tags": ["prop", "science"]},
+    {"id": "flashlight_sweep", "file": "components/flashlight_sweep.json", "loop": false, "tags": ["prop"]},
+    {"id": "microscope_peer", "file": "components/microscope_peer.json", "loop": false, "tags": ["prop"]},
+    {"id": "door_open_transition", "file": "components/door_open_transition.json", "loop": false, "tags": ["transition"]},
+    {"id": "climb_up", "file": "components/climb_up.json", "loop": false, "tags": ["physical"]},
+    {"id": "float_drift", "file": "components/float_drift.json", "loop": true, "tags": ["underwater", "space"]},
+    {"id": "fall_tumble", "file": "components/fall_tumble.json", "loop": false, "tags": ["comedy"]}
+  ]
+}

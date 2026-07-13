@@ -1,0 +1,74 @@
+{
+  "title": "Why Crows Gather Around Dead Crows",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Crows investigate dead crows to learn about potential threats.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Why do crows gather around their dead?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "It's not a funeral. It's a lesson in survival.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "When crows find a dead member, they investigate, alerting others.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research suggests this behavior helps them learn about dangers in their environment.",
+      "emotion": "curiosity",
+      "delivery": "steady",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "So next time you see crows gathered, remember, they're sharing survival tips\u2014not mourning.",
+      "emotion": "curiosity",
+      "delivery": "conclusive",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to uncover more animal mysteries? Follow for more!",
+      "emotion": "curiosity",
+      "delivery": "encouraging",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Why do crows gather around their dead? It's not a funeral. It's a lesson in survival. When crows find a dead member, they investigate, alerting others. Research suggests this behavior helps them learn about dangers in their environment. So next time you see crows gathered, remember, they're sharing survival tips\u2014not mourning. Want to uncover more animal mysteries? Follow for more!",
+  "call_to_action": "Want to uncover more animal mysteries? Follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:06:26.804144+00:00",
+  "source": "ai"
+}

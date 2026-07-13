@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "We broke the ozone layer, but guess what? It's healing.",
+    "visual_description": "Hook visual: We broke the ozone layer, but guess what? It's healing.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: We broke the ozone layer, but guess what? It's healing.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: We broke the ozone layer, but guess what? It's healing.",
+    "stock_footage_query": "",
+    "text_overlay": "We broke the ozone",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "CFCs, used in everything from fridges to aerosols, were the culprits behind the damage.",
+    "visual_description": "Context visual: CFCs, used in everything from fridges to aerosols, were the culprits behind the damage.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: CFCs, used in everything from fridges to aerosols, were the culprits behind the damage.",
+    "ai_video_prompt": "Cinematic motion: Context visual: CFCs, used in everything from fridges to aerosols, were the culprits behind the damage.",
+    "stock_footage_query": "",
+    "text_overlay": "CFCs, used in everything",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "optimism",
+    "length_sec": 8.0,
+    "narration": "But then came the Montreal Protocol, uniting countries to phase out these harmful chemicals.",
+    "visual_description": "Escalation visual: But then came the Montreal Protocol, uniting countries to phase out these harmful chemicals.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But then came the Montreal Protocol, uniting countries to phase out these harmful chemicals.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But then came the Montreal Protocol, uniting countries to phase out these harmful chemicals.",
+    "stock_footage_query": "",
+    "text_overlay": "But then came the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "hopefulness",
+    "length_sec": 8.0,
+    "narration": "NOAA and NASA now report that the ozone layer is on the mend, recovering at a surprising rate.",
+    "visual_description": "Evidence visual: NOAA and NASA now report that the ozone layer is on the mend, recovering at a surprising rate.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: NOAA and NASA now report that the ozone layer is on the mend, recovering at a surprising rate.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: NOAA and NASA now report that the ozone layer is on the mend, recovering at a surprising rate.",
+    "stock_footage_query": "",
+    "text_overlay": "NOAA and NASA now",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "hopefulness",
+    "length_sec": 8.0,
+    "narration": "In fact, we could see a fully healed ozone layer by 2060. Imagine that!",
+    "visual_description": "Payoff visual: In fact, we could see a fully healed ozone layer by 2060. Imagine that!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: In fact, we could see a fully healed ozone layer by 2060. Imagine that!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: In fact, we could see a fully healed ozone layer by 2060. Imagine that!",
+    "stock_footage_query": "",
+    "text_overlay": "In fact, we could",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Curious about our planet's recovery? Hit like and follow for more science insights!",
+    "visual_description": "Cta visual: Curious about our planet's recovery? Hit like and follow for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about our planet's recovery? Hit like and follow for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about our planet's recovery? Hit like and follow for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about our planet's",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

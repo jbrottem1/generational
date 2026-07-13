@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "The dimming of a star holds a secret about its planets.",
+    "visual_description": "Hook visual: The dimming of a star holds a secret about its planets.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: The dimming of a star holds a secret about its planets.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: The dimming of a star holds a secret about its planets.",
+    "stock_footage_query": "",
+    "text_overlay": "The dimming of a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "When a planet transits\u2014crosses in front of its star\u2014it causes a temporary dip in brightness.",
+    "visual_description": "Context visual: When a planet transits\u2014crosses in front of its star\u2014it causes a temporary dip in brightness.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: When a planet transits\u2014crosses in front of its star\u2014it causes a temporary dip in brightness.",
+    "ai_video_prompt": "Cinematic motion: Context visual: When a planet transits\u2014crosses in front of its star\u2014it causes a temporary dip in brightness.",
+    "stock_footage_query": "",
+    "text_overlay": "When a planet transits\u2014crosses",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But how much it dims reveals the planet's size compared to the star.",
+    "visual_description": "Escalation visual: But how much it dims reveals the planet's size compared to the star.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But how much it dims reveals the planet's size compared to the star.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But how much it dims reveals the planet's size compared to the star.",
+    "stock_footage_query": "",
+    "text_overlay": "But how much it",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "A larger planet blocks more light, creating a deeper transit signal.",
+    "visual_description": "Evidence visual: A larger planet blocks more light, creating a deeper transit signal.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: A larger planet blocks more light, creating a deeper transit signal.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: A larger planet blocks more light, creating a deeper transit signal.",
+    "stock_footage_query": "",
+    "text_overlay": "A larger planet blocks",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "This method helps astronomers estimate sizes without ever visiting those distant worlds.",
+    "visual_description": "Payoff visual: This method helps astronomers estimate sizes without ever visiting those distant worlds.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This method helps astronomers estimate sizes without ever visiting those distant worlds.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This method helps astronomers estimate sizes without ever visiting those distant worlds.",
+    "stock_footage_query": "",
+    "text_overlay": "This method helps astronomers",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "Curious about more cosmic mysteries? Like and follow for more insights!",
+    "visual_description": "Cta visual: Curious about more cosmic mysteries? Like and follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more cosmic mysteries? Like and follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more cosmic mysteries? Like and follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more cosmic",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

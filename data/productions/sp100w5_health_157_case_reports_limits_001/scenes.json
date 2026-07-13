@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about case reports limits than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about case reports limits than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about case reports limits than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about case reports limits than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Case reports are anecdotal. They tell a single story.",
+    "visual_description": "Context visual: Case reports are anecdotal. They tell a single story.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Case reports are anecdotal. They tell a single story.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Case reports are anecdotal. They tell a single story.",
+    "stock_footage_query": "",
+    "text_overlay": "Case reports are anecdotal.",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But can we generalize from one patient? What if it misleads us?",
+    "visual_description": "Escalation visual: But can we generalize from one patient? What if it misleads us?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But can we generalize from one patient? What if it misleads us?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But can we generalize from one patient? What if it misleads us?",
+    "stock_footage_query": "",
+    "text_overlay": "But can we generalize",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Research shows case reports lack rigorous testing. They can exaggerate outcomes.",
+    "visual_description": "Evidence visual: Research shows case reports lack rigorous testing. They can exaggerate outcomes.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows case reports lack rigorous testing. They can exaggerate outcomes.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows case reports lack rigorous testing. They can exaggerate outcomes.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows case reports",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Relying solely on them can lead to dangerous decisions.",
+    "visual_description": "Payoff visual: Relying solely on them can lead to dangerous decisions.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Relying solely on them can lead to dangerous decisions.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Relying solely on them can lead to dangerous decisions.",
+    "stock_footage_query": "",
+    "text_overlay": "Relying solely on them",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 36.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "Stay informed, trust science, and think critically. Follow for more insights!",
+    "visual_description": "Cta visual: Stay informed, trust science, and think critically. Follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Stay informed, trust science, and think critically. Follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Stay informed, trust science, and think critically. Follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Stay informed, trust science,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 36.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 36.0
+    }
+  }
+]

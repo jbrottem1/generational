@@ -1,0 +1,74 @@
+{
+  "title": "Heat pumps",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the science behind heat pumps and dispelling common myths.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about heat pumps than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Heat pumps don\u2019t create heat; they move it. Think of them as refrigerators in reverse.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But, is this technology efficient? It depends on your climate.",
+      "emotion": "curiosity",
+      "delivery": "thought-provoking",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show they can reduce energy costs by up to 50% in moderate climates.",
+      "emotion": "fascination",
+      "delivery": "enthusiastic",
+      "retention_device": "statistic"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "However, in extreme weather, they may struggle. So, know your environment.",
+      "emotion": "understanding",
+      "delivery": "reassuring",
+      "retention_device": "conclusion"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 50.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about other eco-friendly tech? Hit that follow and discover more!",
+      "emotion": "enthusiasm",
+      "delivery": "inviting",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about heat pumps than social media does. Heat pumps don\u2019t create heat; they move it. Think of them as refrigerators in reverse. But, is this technology efficient? It depends on your climate. Studies show they can reduce energy costs by up to 50% in moderate climates. However, in extreme weather, they may struggle. So, know your environment. Curious about other eco-friendly tech? Hit that follow and discover more!",
+  "call_to_action": "Hit that follow and discover more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:49:50.246049+00:00",
+  "source": "ai"
+}

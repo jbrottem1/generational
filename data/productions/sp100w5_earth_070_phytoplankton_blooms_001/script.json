@@ -1,0 +1,74 @@
+{
+  "title": "Phytoplankton Blooms",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the fascinating yet complex nature of phytoplankton blooms and their impact on our planet.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about phytoplankton blooms than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "These tiny organisms are the backbone of marine ecosystems, producing half of the world's oxygen.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But what happens when they bloom excessively? It's a double-edged sword.",
+      "emotion": "mysterious",
+      "delivery": "building tension",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "While blooms can boost fish populations, they can also deplete oxygen, leading to dead zones.",
+      "emotion": "curiosity",
+      "delivery": "matter-of-fact",
+      "retention_device": "contrast"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding these blooms helps us manage our oceans better and protect marine life.",
+      "emotion": "hope",
+      "delivery": "optimistic",
+      "retention_device": "insight"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more ocean mysteries? Hit that follow button!",
+      "emotion": "encouragement",
+      "delivery": "enthusiastic",
+      "retention_device": "direct invitation"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about phytoplankton blooms than social media does. These tiny organisms are the backbone of marine ecosystems, producing half of the world's oxygen. But what happens when they bloom excessively? It's a double-edged sword. While blooms can boost fish populations, they can also deplete oxygen, leading to dead zones. Understanding these blooms helps us manage our oceans better and protect marine life. Curious about more ocean mysteries? Hit that follow button!",
+  "call_to_action": "Curious about more ocean mysteries? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:43:12.797036+00:00",
+  "source": "ai"
+}

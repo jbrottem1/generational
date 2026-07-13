@@ -8,10 +8,10 @@ provider when available, with a deterministic angle-archetype fallback.
 from __future__ import annotations
 
 from core import parsing
-from core.ai import get_provider
 from core.constants import CANDIDATE_IDEAS
 from core.log import get_logger, log_event
 from engines.base import Engine
+from services.provider_runtime.engine_api import runtime_generate_json
 
 logger = get_logger(__name__)
 
@@ -65,7 +65,6 @@ class IdeationEngine(Engine):
     def _provider_candidates(
         self, context: dict, command: str, niche: str, subject: str, count: int
     ) -> "list | None":
-        provider = get_provider()
         system = (
             "You are a viral short-form content ideation expert. "
             "Respond with valid minified JSON only."
@@ -81,12 +80,15 @@ class IdeationEngine(Engine):
             '{"candidates": [{"title": "catchy title", "hook": "1-2 sentence opening hook",'
             ' "angle": "the angle archetype in 2-4 words"}]}'
         )
-        data, tokens = provider.generate_json(system, user, context.get("model", ""))
+        data, tokens, provider_name = runtime_generate_json(
+            system, user, model=context.get("model", ""), operation="generate_script",
+        )
         if data is None:
-            if provider.name != "demo":
+            if provider_name and provider_name != "demo":
                 context["error"] = "AI ideation call failed; used heuristic fallback."
             return None
         context["tokens_used"] = context.get("tokens_used", 0) + tokens
+        context["provider_used"] = provider_name
         candidates = [c for c in data.get("candidates", []) if c.get("title") and c.get("hook")]
         return candidates[:count] or None
 

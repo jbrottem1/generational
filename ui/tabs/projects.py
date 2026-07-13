@@ -1,4 +1,4 @@
-"""Projects tab — Create, Save, Open, and Delete projects via the storage facade."""
+"""Projects tab — Create, Save, Open, Delete, and Project Workspace."""
 
 from __future__ import annotations
 
@@ -6,14 +6,35 @@ import streamlit as st
 
 from core import storage
 from core.log import get_logger
-from core.models import project_from_result, result_from_project
+from core.models import project_from_result, project_widget_key
 from ui import notify
+from ui.project_state import queue_project_clear, queue_project_open
+from ui.project_workspace import render_workspace
 
 logger = get_logger(__name__)
 
 
 def render() -> None:
+    if st.session_state.get("projects_view") == "workspace":
+        render_workspace()
+        return
+
+    notice = st.session_state.pop("_projects_open_notice", None)
+    if notice:
+        notify.success(f"Opened '{notice}'")
+
+    if st.session_state.pop("_projects_studio_hint", None):
+        st.info("Project remains loaded in session. Switch to the **Studio** tab to continue.")
+
     st.subheader("📁 Projects")
+
+    # If a project is loaded but user is on the list, offer a shortcut back in.
+    if st.session_state.get("current_project_name") and st.session_state.get("opened_project_data"):
+        cols = st.columns([3, 1])
+        cols[0].caption(f"Currently loaded: **{st.session_state.current_project_name}**")
+        if cols[1].button("Open workspace", key="reopen_workspace_shortcut", use_container_width=True):
+            st.session_state.projects_view = "workspace"
+            st.rerun()
 
     _render_create_save_panel()
     st.divider()
@@ -89,31 +110,43 @@ def _render_project_list() -> None:
         return
 
     st.markdown("### 🗂️ Saved Projects")
-    for project in projects:
+    for index, project in enumerate(projects):
         with st.container(border=True):
             cols = st.columns([3, 1, 1])
             updated = (project.get("updated_at") or "")[:19].replace("T", " ")
+            idea_count = len(project.get("ideas") or project.get("generated_ideas") or [])
             cols[0].markdown(
                 f"**{project['name']}**  \n"
-                f"{project.get('niche', '—')} · {len(project.get('ideas', []))} ideas · updated {updated or '—'}"
+                f"{project.get('niche', '—')} · {idea_count} ideas · updated {updated or '—'}"
             )
-            if cols[1].button("📂 Open", key=f"open_{project['name']}", use_container_width=True):
+            if cols[1].button(
+                "📂 Open",
+                key=project_widget_key(project, "open", index),
+                use_container_width=True,
+            ):
                 _open_project(project)
-            if cols[2].button("🗑️ Delete", key=f"delete_{project['name']}", use_container_width=True):
-                _delete_project(project["name"])
+            if cols[2].button(
+                "🗑️ Delete",
+                key=project_widget_key(project, "delete", index),
+                use_container_width=True,
+            ):
+                _delete_project(project)
 
 
 def _open_project(project: dict) -> None:
-    st.session_state.current_result = result_from_project(project)
-    st.session_state.current_project_name = project["name"]
-    st.session_state.project_name_input = project["name"]
-    notify.success(f"Opened '{project['name']}'")
+    queue_project_open(project)
+    st.session_state.projects_view = "workspace"
     st.rerun()
 
 
-def _delete_project(name: str) -> None:
-    storage.delete_project(name)
-    if st.session_state.current_project_name == name:
-        st.session_state.current_project_name = None
-    notify.success(f"Deleted '{name}'")
+def _delete_project(project: dict) -> None:
+    project_id = project.get("project_id", "")
+    deleted = storage.delete_project_by_id(project_id) if project_id else storage.delete_project(project["name"])
+    if not deleted:
+        notify.error(f"Could not delete '{project['name']}'")
+        return
+    selected_id = st.session_state.get("selected_project_id")
+    if selected_id == project_id or st.session_state.current_project_name == project["name"]:
+        queue_project_clear(clear_result=True)
+    notify.success(f"Deleted '{project['name']}'")
     st.rerun()

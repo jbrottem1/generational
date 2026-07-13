@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Ever heard of the bends? It\u2019s more than just a diving term.",
+    "visual_description": "Hook visual: Ever heard of the bends? It\u2019s more than just a diving term.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever heard of the bends? It\u2019s more than just a diving term.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever heard of the bends? It\u2019s more than just a diving term.",
+    "stock_footage_query": "",
+    "text_overlay": "Ever heard of the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Decompression sickness happens when divers ascend too quickly, causing nitrogen bubbles to form in the bloodstream.",
+    "visual_description": "Context visual: Decompression sickness happens when divers ascend too quickly, causing nitrogen bubbles to form in the bloodstream.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Decompression sickness happens when divers ascend too quickly, causing nitrogen bubbles to form in the bloodstream.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Decompression sickness happens when divers ascend too quickly, causing nitrogen bubbles to form in the bloodstream.",
+    "stock_footage_query": "",
+    "text_overlay": "Decompression sickness happens when",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Symptoms can range from joint pain to life-threatening conditions. But did you know it can also affect surface athletes?",
+    "visual_description": "Escalation visual: Symptoms can range from joint pain to life-threatening conditions. But did you know it can also affect surface athletes?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Symptoms can range from joint pain to life-threatening conditions. But did you know it can also affect surface athletes?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Symptoms can range from joint pain to life-threatening conditions. But did you know it can also affect surface athletes?",
+    "stock_footage_query": "",
+    "text_overlay": "Symptoms can range from",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Nitrogen comes from our air, and when you dive, it dissolves in your tissues. Ascend slowly to avoid bubbles forming.",
+    "visual_description": "Evidence visual: Nitrogen comes from our air, and when you dive, it dissolves in your tissues. Ascend slowly to avoid bubbles forming.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Nitrogen comes from our air, and when you dive, it dissolves in your tissues. Ascend slowly to avoid bubbles forming.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Nitrogen comes from our air, and when you dive, it dissolves in your tissues. Ascend slowly to avoid bubbles forming.",
+    "stock_footage_query": "",
+    "text_overlay": "Nitrogen comes from our",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 18.0,
+    "narration": "Awareness is key. Know the risks and dive smart. Your life depends on it!",
+    "visual_description": "Payoff visual: Awareness is key. Know the risks and dive smart. Your life depends on it!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Awareness is key. Know the risks and dive smart. Your life depends on it!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Awareness is key. Know the risks and dive smart. Your life depends on it!",
+    "stock_footage_query": "",
+    "text_overlay": "Awareness is key. Know",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 48.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Want to dive deeper into science? Like and follow for more!",
+    "visual_description": "Cta visual: Want to dive deeper into science? Like and follow for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into science? Like and follow for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into science? Like and follow for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 48.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 48.0
+    }
+  }
+]

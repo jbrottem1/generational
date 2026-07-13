@@ -1,0 +1,74 @@
+{
+  "title": "Alcohol Sleep Quality",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the surprising effects of alcohol on sleep quality based on scientific research.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about alcohol sleep quality.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Many think alcohol helps them sleep, but the reality is more complex.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Research shows it can disrupt REM sleep, the phase crucial for restoration.",
+      "emotion": "curiosity",
+      "delivery": "intensifying",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies indicate that even low amounts can reduce overall sleep quality.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "surprise fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "So, while a drink may help you fall asleep, you'll likely wake up feeling worse.",
+      "emotion": "curiosity",
+      "delivery": "conclusive",
+      "retention_device": "satisfying resolution"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to improve your sleep? Consider cutting back on alcohol. Follow for more science insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "direct appeal"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about alcohol sleep quality. Many think alcohol helps them sleep, but the reality is more complex. Research shows it can disrupt REM sleep, the phase crucial for restoration. Studies indicate that even low amounts can reduce overall sleep quality. So, while a drink may help you fall asleep, you'll likely wake up feeling worse. Want to improve your sleep? Consider cutting back on alcohol. Follow for more science insights!",
+  "call_to_action": "Follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:23:52.497073+00:00",
+  "source": "ai"
+}

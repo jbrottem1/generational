@@ -1,0 +1,76 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Here's what science actually says about stroke types.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Strokes come mainly in two forms: ischemic and hemorrhagic. But what does that really mean?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Ischemic strokes occur when blood clots block blood flow to the brain.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: On the other hand, hemorrhagic strokes happen when a blood vessel bursts, leaking blood into the brain.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Pattern Interrupt visual: Did you know that symptoms can vary? Sudden weakness, confusion, and trouble speaking are key signs!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Payoff visual: Recognizing these signs can save lives. Early treatment is crucial.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cta visual: Stay informed and share this with someone who needs to know.",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Here's what science actually says about stroke types.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Strokes come mainly in two forms: ischemic and hemorrhagic. But what does that really mean?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Ischemic strokes occur when blood clots block blood flow to the brain.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: On the other hand, hemorrhagic strokes happen when a blood vessel bursts, leaking blood into the brain.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Pattern Interrupt visual: Did you know that symptoms can vary? Sudden weakness, confusion, and trouble speaking are key signs!",
+      "duration_sec": 11.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Payoff visual: Recognizing these signs can save lives. Early treatment is crucial.",
+      "duration_sec": 13.0
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cinematic motion: Cta visual: Stay informed and share this with someone who needs to know.",
+      "duration_sec": 10.0
+    }
+  ]
+}

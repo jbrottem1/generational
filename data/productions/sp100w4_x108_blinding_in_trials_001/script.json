@@ -1,0 +1,74 @@
+{
+  "title": "Blinding in trials",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the vital role of blinding in scientific trials and its impact on research integrity.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about blinding in trials.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Blinding is a method used to prevent bias in clinical trials.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Imagine participants knowing if they received the treatment or a placebo.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that unblinded trials often report more favorable outcomes.",
+      "emotion": "curiosity",
+      "delivery": "fact-based",
+      "retention_device": "retention hook"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Blinding helps ensure that the results are as accurate as possible.",
+      "emotion": "curiosity",
+      "delivery": "conclusive",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more about how science ensures reliability? Follow for more insights!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "natural CTA"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about blinding in trials. Blinding is a method used to prevent bias in clinical trials. Imagine participants knowing if they received the treatment or a placebo. Studies show that unblinded trials often report more favorable outcomes. Blinding helps ensure that the results are as accurate as possible. Want to learn more about how science ensures reliability? Follow for more insights!",
+  "call_to_action": "Follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:27:36.652742+00:00",
+  "source": "ai"
+}

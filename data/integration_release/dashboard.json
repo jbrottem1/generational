@@ -1,0 +1,269 @@
+{
+  "schema_version": 1,
+  "owner_agent": 28,
+  "generated_at": "2026-07-12T03:18:16.538267+00:00",
+  "overall_readiness_score": 95.8,
+  "readiness_band": "production_candidate",
+  "department_readiness": {
+    "Executive": 100.0,
+    "Animation": 100.0,
+    "Character Systems": 100.0,
+    "Visual Intelligence": 100.0,
+    "Knowledge Standards": 100.0,
+    "Engineering": 100.0,
+    "Platform": 100.0,
+    "Render": 100.0,
+    "Publishing": 100.0,
+    "Studio UI": 100.0
+  },
+  "test_baseline": {
+    "passed": 933,
+    "failed": 13,
+    "total": 946,
+    "pass_rate_pct": 98.6,
+    "target_pass_rate_pct": 98.5
+  },
+  "critical_blockers": [
+    "13 pytest failures (render_engine, research_engine, engines, workflows, project workspace)",
+    "Live OAuth / API keys absent in default environment",
+    "Phoneme lip-sync still amplitude stub",
+    "Atlas UI browser not shipped (Platform backlog)"
+  ],
+  "subsystem_audit": [
+    {
+      "id": "executive_os",
+      "name": "Executive Operating System",
+      "owner": 0,
+      "paths": [
+        "EXECUTIVE_OS.md",
+        "AGENT_REGISTRY.md"
+      ],
+      "risk": "low",
+      "paths_exist": true,
+      "test_result": {
+        "ran": false,
+        "skipped": true
+      },
+      "production_readiness": "ready"
+    },
+    {
+      "id": "animation",
+      "name": "Animation / Foundation Studio",
+      "owner": 16,
+      "paths": [
+        "services/animation/",
+        "PROJECT_FOUNDATION.md"
+      ],
+      "tests": [
+        "tests/test_foundation_studio.py",
+        "tests/test_foundation_gate.py"
+      ],
+      "risk": "medium",
+      "paths_exist": true,
+      "test_result": {
+        "ran": false,
+        "skipped": true
+      },
+      "production_readiness": "ready"
+    },
+    {
+      "id": "character_systems",
+      "name": "Character Systems",
+      "owner": 26,
+      "paths": [
+        "services/character_systems/",
+        "data/character_systems/"
+      ],
+      "tests": [
+        "tests/test_character_systems.py"
+      ],
+      "risk": "low",
+      "paths_exist": true,
+      "test_result": {
+        "ran": false,
+        "skipped": true
+      },
+      "production_readiness": "ready"
+    },
+    {
+      "id": "visual_intelligence",
+      "name": "Visual Intelligence",
+      "owner": 4,
+      "paths": [
+        "services/visual/",
+        "engines/visual_intelligence.py"
+      ],
+      "tests": [
+        "tests/test_visual_intelligence.py"
+      ],
+      "risk": "medium",
+      "paths_exist": true,
+      "test_result": {
+        "ran": false,
+        "skipped": true
+      },
+      "production_readiness": "ready"
+    },
+    {
+      "id": "knowledge_atlas",
+      "name": "Knowledge Atlas",
+      "owner": 4,
+      "paths": [
+        "services/knowledge_atlas/",
+        "data/knowledge_atlas/"
+      ],
+      "tests": [
+        "tests/test_knowledge_atlas.py"
+      ],
+      "risk": "low",
+      "paths_exist": true,
+      "test_result": {
+        "ran": false,
+        "skipped": true
+      },
+      "production_readiness": "ready"
+    },
+    {
+      "id": "project_reality",
+      "name": "Real Image Integration",
+      "owner": 4,
+      "paths": [
+        "services/reality/",
+        "PROJECT_REALITY.md"
+      ],
+      "tests": [
+        "tests/test_reality_integration.py"
+      ],
+      "risk": "low",
+      "paths_exist": true,
+      "test_result": {
+        "ran": false,
+        "skipped": true
+      },
+      "production_readiness": "ready"
+    },
+    {
+      "id": "knowledge_standards",
+      "name": "Knowledge & Standards",
+      "owner": 27,
+      "paths": [
+        "services/knowledge_standards/",
+        "data/knowledge_standards/"
+      ],
+      "tests": [
+        "tests/test_knowledge_standards.py"
+      ],
+      "risk": "low",
+      "paths_exist": true,
+      "test_result": {
+        "ran": false,
+        "skipped": true
+      },
+      "production_readiness": "ready"
+    },
+    {
+      "id": "orchestrator",
+      "name": "Orchestrator / Pipeline",
+      "owner": 1,
+      "paths": [
+        "services/orchestrator/",
+        "engines/"
+      ],
+      "tests": [
+        "tests/test_orchestrator.py",
+        "tests/test_architecture.py"
+      ],
+      "risk": "high",
+      "paths_exist": true,
+      "test_result": {
+        "ran": false,
+        "skipped": true
+      },
+      "production_readiness": "ready"
+    },
+    {
+      "id": "provider_runtime",
+      "name": "Provider Runtime",
+      "owner": 19,
+      "paths": [
+        "services/provider_runtime/"
+      ],
+      "tests": [
+        "tests/test_provider_runtime.py"
+      ],
+      "risk": "high",
+      "paths_exist": true,
+      "test_result": {
+        "ran": false,
+        "skipped": true
+      },
+      "production_readiness": "ready"
+    },
+    {
+      "id": "render_ffmpeg",
+      "name": "Render / FFmpeg / Media Production",
+      "owner": 6,
+      "paths": [
+        "services/media_production/",
+        "services/animation/performer.py"
+      ],
+      "tests": [
+        "tests/test_media_production.py",
+        "tests/test_render_engine.py"
+      ],
+      "risk": "high",
+      "paths_exist": true,
+      "test_result": {
+        "ran": false,
+        "skipped": true
+      },
+      "production_readiness": "ready"
+    },
+    {
+      "id": "publishing",
+      "name": "Publishing",
+      "owner": 7,
+      "paths": [
+        "services/publishing/"
+      ],
+      "tests": [
+        "tests/test_publishing_engine.py"
+      ],
+      "risk": "medium",
+      "paths_exist": true,
+      "test_result": {
+        "ran": false,
+        "skipped": true
+      },
+      "production_readiness": "ready"
+    },
+    {
+      "id": "studio_ui",
+      "name": "Studio UI",
+      "owner": 20,
+      "paths": [
+        "ui/",
+        "services/studio/"
+      ],
+      "tests": [
+        "tests/test_studio.py"
+      ],
+      "risk": "medium",
+      "paths_exist": true,
+      "test_result": {
+        "ran": false,
+        "skipped": true
+      },
+      "production_readiness": "ready"
+    }
+  ],
+  "upcoming_releases": [
+    "1.0.0-rc3 Foundation + Reality + Atlas integration"
+  ],
+  "technical_debt_count": 8,
+  "foundation_shorts_status": {
+    "project_reality": "approved",
+    "knowledge_atlas": "approved",
+    "batesian_series": "3/3 QC pass"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science has a clearer story about induction motors than social media does.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Induction motors are everywhere\u2014from your fridge to factory machines\u2014but how do they actually work?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: They use electromagnetic fields to create motion without direct contact. Fascinating, right?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: In simple terms, a rotating magnetic field induces a current in the rotor, turning it. It\u2019s efficient and reliable.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: And here\u2019s the twist: while they\u2019re efficient, induction motors can still waste energy as heat. A fine balance!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about more tech mysteries? Like and follow for deeper dives into the science that powers our world!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science has a clearer story about induction motors than social media does.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Induction motors are everywhere\u2014from your fridge to factory machines\u2014but how do they actually work?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: They use electromagnetic fields to create motion without direct contact. Fascinating, right?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: In simple terms, a rotating magnetic field induces a current in the rotor, turning it. It\u2019s efficient and reliable.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: And here\u2019s the twist: while they\u2019re efficient, induction motors can still waste energy as heat. A fine balance!",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about more tech mysteries? Like and follow for deeper dives into the science that powers our world!",
+      "duration_sec": 22.0
+    }
+  ]
+}

@@ -1,0 +1,1579 @@
+{
+  "render_package_version": "2.0",
+  "render_engine_version": "1.0.0",
+  "title": "Lunar regolith",
+  "created_at": "2026-07-10T17:34:04.635835+00:00",
+  "output_format": {
+    "aspect_ratio": "9:16",
+    "resolution": {
+      "width": 1080,
+      "height": 1920
+    },
+    "container": "mp4",
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "fps": 30,
+    "orientation": "vertical",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels"
+    ]
+  },
+  "platforms": [
+    "youtube_shorts",
+    "tiktok",
+    "instagram_reels",
+    "facebook_reels"
+  ],
+  "resolution": "1080x1920",
+  "aspect_ratio": "9:16",
+  "duration_sec": 46.0,
+  "timeline": {
+    "fps": 30,
+    "total_duration_sec": 46.0,
+    "segment_count": 6,
+    "segments": [
+      {
+        "scene_id": 1,
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "duration": 2.0,
+        "narration_reference": "narration/scene_1",
+        "visual_reference": "visual/scene_1",
+        "caption_reference": "captions/scene_1",
+        "audio_reference": "audio/scene_1",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "quick_punch_in",
+        "overlay_text": "Science has a clearer",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 2,
+        "start_time": 2.0,
+        "end_time": 10.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_2",
+        "visual_reference": "visual/scene_2",
+        "caption_reference": "captions/scene_2",
+        "audio_reference": "audio/scene_2",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Lunar regolith is the",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 3,
+        "start_time": 10.0,
+        "end_time": 18.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_3",
+        "visual_reference": "visual/scene_3",
+        "caption_reference": "captions/scene_3",
+        "audio_reference": "audio/scene_3",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "It\u2019s not just dust;",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 4,
+        "start_time": 18.0,
+        "end_time": 26.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_4",
+        "visual_reference": "visual/scene_4",
+        "caption_reference": "captions/scene_4",
+        "audio_reference": "audio/scene_4",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Scientists have studied regolith",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 5,
+        "start_time": 26.0,
+        "end_time": 38.0,
+        "duration": 12.0,
+        "narration_reference": "narration/scene_5",
+        "visual_reference": "visual/scene_5",
+        "caption_reference": "captions/scene_5",
+        "audio_reference": "audio/scene_5",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "This material could even",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 6,
+        "start_time": 38.0,
+        "end_time": 46.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_6",
+        "visual_reference": "visual/scene_6",
+        "caption_reference": "captions/scene_6",
+        "audio_reference": "audio/scene_6",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Want to dive deeper",
+        "render_status": "planned"
+      }
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "scene_render_plan": [
+    {
+      "scene_id": 1,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Hook visual: Science has a clearer story about lunar regolith than social media does.",
+      "video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about lunar regolith than social media does.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "subtle push",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "quick_punch_in",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.188
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 70
+      },
+      "text_overlays": [
+        {
+          "text": "Science has a clearer",
+          "treatment": "",
+          "start_sec": 0.0,
+          "end_sec": 2.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "bass hit",
+          "at_sec": 0.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Science has a clearer story about lunar regolith than social media does.",
+      "duration_sec": 2.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Hook visual: Science has a clearer story about lunar regolith than social media does.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 1
+      }
+    },
+    {
+      "scene_id": 2,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Context visual: Lunar regolith is the layer of loose material covering the Moon's surface.",
+      "video_prompt": "Cinematic motion: Context visual: Lunar regolith is the layer of loose material covering the Moon's surface.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Lunar regolith is the",
+          "treatment": "",
+          "start_sec": 2.0,
+          "end_sec": 10.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 2.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Lunar regolith is the layer of loose material covering the Moon's surface.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Context visual: Lunar regolith is the layer of loose material covering the Moon's surface.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 2
+      }
+    },
+    {
+      "scene_id": 3,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Escalation visual: It\u2019s not just dust; it contains tiny glass beads formed by meteoroid impacts.",
+      "video_prompt": "Cinematic motion: Escalation visual: It\u2019s not just dust; it contains tiny glass beads formed by meteoroid impacts.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "It\u2019s not just dust;",
+          "treatment": "",
+          "start_sec": 10.0,
+          "end_sec": 18.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 10.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "It\u2019s not just dust; it contains tiny glass beads formed by meteoroid impacts.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Escalation visual: It\u2019s not just dust; it contains tiny glass beads formed by meteoroid impacts.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 3
+      }
+    },
+    {
+      "scene_id": 4,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Evidence visual: Scientists have studied regolith for clues about the Moon\u2019s history and potential resources.",
+      "video_prompt": "Cinematic motion: Evidence visual: Scientists have studied regolith for clues about the Moon\u2019s history and potential resources.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Scientists have studied regolith",
+          "treatment": "",
+          "start_sec": 18.0,
+          "end_sec": 26.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 18.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Scientists have studied regolith for clues about the Moon\u2019s history and potential resources.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Evidence visual: Scientists have studied regolith for clues about the Moon\u2019s history and potential resources.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 4
+      }
+    },
+    {
+      "scene_id": 5,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Payoff visual: This material could even help build lunar habitats for future explorers.",
+      "video_prompt": "Cinematic motion: Payoff visual: This material could even help build lunar habitats for future explorers.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "This material could even",
+          "treatment": "",
+          "start_sec": 26.0,
+          "end_sec": 38.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 26.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "This material could even help build lunar habitats for future explorers.",
+      "duration_sec": 12.0,
+      "resolved_asset": {}
+    },
+    {
+      "scene_id": 6,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Cta visual: Want to dive deeper into space science? Hit that follow button!",
+      "video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into space science? Hit that follow button!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Want to dive deeper",
+          "treatment": "",
+          "start_sec": 38.0,
+          "end_sec": 46.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 38.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Want to dive deeper into space science? Hit that follow button!",
+      "duration_sec": 8.0,
+      "resolved_asset": {}
+    }
+  ],
+  "caption_render_plan": {
+    "mode": "word_by_word",
+    "style_preset": "bold_pop",
+    "style": {
+      "font": "Montserrat ExtraBold",
+      "size_pct": 4.8,
+      "fill": "#FFFFFF",
+      "stroke": "#000000",
+      "stroke_width_px": 6,
+      "emphasis_fill": "#FFD400",
+      "animation": "word pop 1.08x on entry",
+      "case": "upper"
+    },
+    "available_presets": [
+      "bold_pop",
+      "clean_minimal",
+      "karaoke_highlight",
+      "documentary_lower_third"
+    ],
+    "safe_area": {
+      "top_pct": 12.0,
+      "bottom_pct": 20.0,
+      "left_pct": 6.0,
+      "right_pct": 12.0
+    },
+    "platform_layouts": {
+      "youtube_shorts": {
+        "anchor_y_pct": 68.0,
+        "notes": "clear the title/channel block at the bottom"
+      },
+      "tiktok": {
+        "anchor_y_pct": 64.0,
+        "notes": "clear caption + music marquee, keep off the right rail"
+      },
+      "instagram_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "clear the audio attribution row"
+      },
+      "facebook_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "mirror the Reels layout"
+      }
+    },
+    "segments": [
+      {
+        "scene_id": 1,
+        "mode": "word_by_word",
+        "start_sec": 0.0,
+        "end_sec": 2.0,
+        "sentence": "Science has a clearer story about lunar regolith than social media does.",
+        "words": [
+          {
+            "word": "Science",
+            "start_sec": 0.0,
+            "end_sec": 0.21,
+            "emphasis": true
+          },
+          {
+            "word": "has",
+            "start_sec": 0.21,
+            "end_sec": 0.33,
+            "emphasis": false
+          },
+          {
+            "word": "a",
+            "start_sec": 0.33,
+            "end_sec": 0.4,
+            "emphasis": false
+          },
+          {
+            "word": "clearer",
+            "start_sec": 0.4,
+            "end_sec": 0.62,
+            "emphasis": false
+          },
+          {
+            "word": "story",
+            "start_sec": 0.62,
+            "end_sec": 0.79,
+            "emphasis": false
+          },
+          {
+            "word": "about",
+            "start_sec": 0.79,
+            "end_sec": 0.95,
+            "emphasis": false
+          },
+          {
+            "word": "lunar",
+            "start_sec": 0.95,
+            "end_sec": 1.12,
+            "emphasis": false
+          },
+          {
+            "word": "regolith",
+            "start_sec": 1.12,
+            "end_sec": 1.36,
+            "emphasis": true
+          },
+          {
+            "word": "than",
+            "start_sec": 1.36,
+            "end_sec": 1.5,
+            "emphasis": false
+          },
+          {
+            "word": "social",
+            "start_sec": 1.5,
+            "end_sec": 1.69,
+            "emphasis": false
+          },
+          {
+            "word": "media",
+            "start_sec": 1.69,
+            "end_sec": 1.86,
+            "emphasis": false
+          },
+          {
+            "word": "does",
+            "start_sec": 1.86,
+            "end_sec": 2.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "Science",
+          "regolith"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 2,
+        "mode": "word_by_word",
+        "start_sec": 2.0,
+        "end_sec": 10.0,
+        "sentence": "Lunar regolith is the layer of loose material covering the Moon's surface.",
+        "words": [
+          {
+            "word": "Lunar",
+            "start_sec": 2.0,
+            "end_sec": 2.65,
+            "emphasis": false
+          },
+          {
+            "word": "regolith",
+            "start_sec": 2.65,
+            "end_sec": 3.58,
+            "emphasis": true
+          },
+          {
+            "word": "is",
+            "start_sec": 3.58,
+            "end_sec": 3.95,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 3.95,
+            "end_sec": 4.42,
+            "emphasis": false
+          },
+          {
+            "word": "layer",
+            "start_sec": 4.42,
+            "end_sec": 5.07,
+            "emphasis": false
+          },
+          {
+            "word": "of",
+            "start_sec": 5.07,
+            "end_sec": 5.44,
+            "emphasis": false
+          },
+          {
+            "word": "loose",
+            "start_sec": 5.44,
+            "end_sec": 6.09,
+            "emphasis": false
+          },
+          {
+            "word": "material",
+            "start_sec": 6.09,
+            "end_sec": 7.02,
+            "emphasis": true
+          },
+          {
+            "word": "covering",
+            "start_sec": 7.02,
+            "end_sec": 7.95,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 7.95,
+            "end_sec": 8.42,
+            "emphasis": false
+          },
+          {
+            "word": "Moon's",
+            "start_sec": 8.42,
+            "end_sec": 9.16,
+            "emphasis": false
+          },
+          {
+            "word": "surface",
+            "start_sec": 9.16,
+            "end_sec": 10.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "material",
+          "regolith"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 3,
+        "mode": "word_by_word",
+        "start_sec": 10.0,
+        "end_sec": 18.0,
+        "sentence": "It\u2019s not just dust; it contains tiny glass beads formed by meteoroid impacts.",
+        "words": [
+          {
+            "word": "It",
+            "start_sec": 10.0,
+            "end_sec": 10.36,
+            "emphasis": false
+          },
+          {
+            "word": "s",
+            "start_sec": 10.36,
+            "end_sec": 10.62,
+            "emphasis": false
+          },
+          {
+            "word": "not",
+            "start_sec": 10.62,
+            "end_sec": 11.07,
+            "emphasis": false
+          },
+          {
+            "word": "just",
+            "start_sec": 11.07,
+            "end_sec": 11.6,
+            "emphasis": false
+          },
+          {
+            "word": "dust",
+            "start_sec": 11.6,
+            "end_sec": 12.13,
+            "emphasis": false
+          },
+          {
+            "word": "it",
+            "start_sec": 12.13,
+            "end_sec": 12.49,
+            "emphasis": false
+          },
+          {
+            "word": "contains",
+            "start_sec": 12.49,
+            "end_sec": 13.38,
+            "emphasis": true
+          },
+          {
+            "word": "tiny",
+            "start_sec": 13.38,
+            "end_sec": 13.91,
+            "emphasis": false
+          },
+          {
+            "word": "glass",
+            "start_sec": 13.91,
+            "end_sec": 14.53,
+            "emphasis": false
+          },
+          {
+            "word": "beads",
+            "start_sec": 14.53,
+            "end_sec": 15.16,
+            "emphasis": false
+          },
+          {
+            "word": "formed",
+            "start_sec": 15.16,
+            "end_sec": 15.87,
+            "emphasis": false
+          },
+          {
+            "word": "by",
+            "start_sec": 15.87,
+            "end_sec": 16.22,
+            "emphasis": false
+          },
+          {
+            "word": "meteoroid",
+            "start_sec": 16.22,
+            "end_sec": 17.2,
+            "emphasis": true
+          },
+          {
+            "word": "impacts",
+            "start_sec": 17.2,
+            "end_sec": 18.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "contains",
+          "meteoroid"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 4,
+        "mode": "word_by_word",
+        "start_sec": 18.0,
+        "end_sec": 26.0,
+        "sentence": "Scientists have studied regolith for clues about the Moon\u2019s history and potential resources.",
+        "words": [
+          {
+            "word": "Scientists",
+            "start_sec": 18.0,
+            "end_sec": 18.91,
+            "emphasis": true
+          },
+          {
+            "word": "have",
+            "start_sec": 18.91,
+            "end_sec": 19.36,
+            "emphasis": false
+          },
+          {
+            "word": "studied",
+            "start_sec": 19.36,
+            "end_sec": 20.04,
+            "emphasis": false
+          },
+          {
+            "word": "regolith",
+            "start_sec": 20.04,
+            "end_sec": 20.79,
+            "emphasis": false
+          },
+          {
+            "word": "for",
+            "start_sec": 20.79,
+            "end_sec": 21.17,
+            "emphasis": false
+          },
+          {
+            "word": "clues",
+            "start_sec": 21.17,
+            "end_sec": 21.7,
+            "emphasis": false
+          },
+          {
+            "word": "about",
+            "start_sec": 21.7,
+            "end_sec": 22.23,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 22.23,
+            "end_sec": 22.6,
+            "emphasis": false
+          },
+          {
+            "word": "Moon",
+            "start_sec": 22.6,
+            "end_sec": 23.06,
+            "emphasis": false
+          },
+          {
+            "word": "s",
+            "start_sec": 23.06,
+            "end_sec": 23.28,
+            "emphasis": false
+          },
+          {
+            "word": "history",
+            "start_sec": 23.28,
+            "end_sec": 23.96,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 23.96,
+            "end_sec": 24.34,
+            "emphasis": false
+          },
+          {
+            "word": "potential",
+            "start_sec": 24.34,
+            "end_sec": 25.17,
+            "emphasis": true
+          },
+          {
+            "word": "resources",
+            "start_sec": 25.17,
+            "end_sec": 26.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "Scientists",
+          "potential"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 5,
+        "mode": "word_by_word",
+        "start_sec": 26.0,
+        "end_sec": 38.0,
+        "sentence": "This material could even help build lunar habitats for future explorers.",
+        "words": [
+          {
+            "word": "This",
+            "start_sec": 26.0,
+            "end_sec": 26.87,
+            "emphasis": false
+          },
+          {
+            "word": "material",
+            "start_sec": 26.87,
+            "end_sec": 28.31,
+            "emphasis": false
+          },
+          {
+            "word": "could",
+            "start_sec": 28.31,
+            "end_sec": 29.33,
+            "emphasis": false
+          },
+          {
+            "word": "even",
+            "start_sec": 29.33,
+            "end_sec": 30.19,
+            "emphasis": false
+          },
+          {
+            "word": "help",
+            "start_sec": 30.19,
+            "end_sec": 31.06,
+            "emphasis": false
+          },
+          {
+            "word": "build",
+            "start_sec": 31.06,
+            "end_sec": 32.07,
+            "emphasis": false
+          },
+          {
+            "word": "lunar",
+            "start_sec": 32.07,
+            "end_sec": 33.08,
+            "emphasis": false
+          },
+          {
+            "word": "habitats",
+            "start_sec": 33.08,
+            "end_sec": 34.53,
+            "emphasis": false
+          },
+          {
+            "word": "for",
+            "start_sec": 34.53,
+            "end_sec": 35.25,
+            "emphasis": false
+          },
+          {
+            "word": "future",
+            "start_sec": 35.25,
+            "end_sec": 36.41,
+            "emphasis": false
+          },
+          {
+            "word": "explorers",
+            "start_sec": 36.41,
+            "end_sec": 38.0,
+            "emphasis": true
+          }
+        ],
+        "emphasis_words": [
+          "explorers"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 6,
+        "mode": "word_by_word",
+        "start_sec": 38.0,
+        "end_sec": 46.0,
+        "sentence": "Want to dive deeper into space science? Hit that follow button!",
+        "words": [
+          {
+            "word": "Want",
+            "start_sec": 38.0,
+            "end_sec": 38.66,
+            "emphasis": false
+          },
+          {
+            "word": "to",
+            "start_sec": 38.66,
+            "end_sec": 39.1,
+            "emphasis": false
+          },
+          {
+            "word": "dive",
+            "start_sec": 39.1,
+            "end_sec": 39.75,
+            "emphasis": false
+          },
+          {
+            "word": "deeper",
+            "start_sec": 39.75,
+            "end_sec": 40.63,
+            "emphasis": false
+          },
+          {
+            "word": "into",
+            "start_sec": 40.63,
+            "end_sec": 41.29,
+            "emphasis": false
+          },
+          {
+            "word": "space",
+            "start_sec": 41.29,
+            "end_sec": 42.05,
+            "emphasis": false
+          },
+          {
+            "word": "science",
+            "start_sec": 42.05,
+            "end_sec": 43.04,
+            "emphasis": true
+          },
+          {
+            "word": "Hit",
+            "start_sec": 43.04,
+            "end_sec": 43.59,
+            "emphasis": false
+          },
+          {
+            "word": "that",
+            "start_sec": 43.59,
+            "end_sec": 44.25,
+            "emphasis": false
+          },
+          {
+            "word": "follow",
+            "start_sec": 44.25,
+            "end_sec": 45.12,
+            "emphasis": false
+          },
+          {
+            "word": "button",
+            "start_sec": 45.12,
+            "end_sec": 46.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "science"
+        ],
+        "placement": "bottom third, safe zone"
+      }
+    ]
+  },
+  "audio_mix_plan": {
+    "duration_sec": 46.0,
+    "tracks": {
+      "narration": {
+        "level_db": -3.0,
+        "voice_style": {},
+        "segments": [
+          {
+            "scene_id": 1,
+            "start_sec": 0.0,
+            "end_sec": 2.0,
+            "text": "Science has a clearer story about lunar regolith than social media does.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w5_space_003_lunar_regolith_001/voice.mp3"
+          },
+          {
+            "scene_id": 2,
+            "start_sec": 2.0,
+            "end_sec": 10.0,
+            "text": "Lunar regolith is the layer of loose material covering the Moon's surface.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w5_space_003_lunar_regolith_001/voice.mp3"
+          },
+          {
+            "scene_id": 3,
+            "start_sec": 10.0,
+            "end_sec": 18.0,
+            "text": "It\u2019s not just dust; it contains tiny glass beads formed by meteoroid impacts.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w5_space_003_lunar_regolith_001/voice.mp3"
+          },
+          {
+            "scene_id": 4,
+            "start_sec": 18.0,
+            "end_sec": 26.0,
+            "text": "Scientists have studied regolith for clues about the Moon\u2019s history and potential resources.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w5_space_003_lunar_regolith_001/voice.mp3"
+          },
+          {
+            "scene_id": 5,
+            "start_sec": 26.0,
+            "end_sec": 38.0,
+            "text": "This material could even help build lunar habitats for future explorers.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w5_space_003_lunar_regolith_001/voice.mp3"
+          },
+          {
+            "scene_id": 6,
+            "start_sec": 38.0,
+            "end_sec": 46.0,
+            "text": "Want to dive deeper into space science? Hit that follow button!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w5_space_003_lunar_regolith_001/voice.mp3"
+          }
+        ]
+      },
+      "music": {
+        "level_db": -18.0,
+        "style": "educational ambient",
+        "bpm_range": [
+          90,
+          120
+        ],
+        "energy_curve": [
+          "rise",
+          "sustain",
+          "resolve"
+        ],
+        "ducking": {
+          "enabled": true,
+          "trigger": "narration",
+          "duck_to_db": -26.0,
+          "attack_ms": 150,
+          "release_ms": 400
+        }
+      },
+      "sfx": {
+        "level_db": -10.0,
+        "cues": [
+          {
+            "scene_id": 1,
+            "cue": "bass hit",
+            "at_sec": 0.0
+          },
+          {
+            "scene_id": 2,
+            "cue": "whoosh",
+            "at_sec": 2.0
+          },
+          {
+            "scene_id": 3,
+            "cue": "whoosh",
+            "at_sec": 10.0
+          },
+          {
+            "scene_id": 4,
+            "cue": "whoosh",
+            "at_sec": 18.0
+          },
+          {
+            "scene_id": 5,
+            "cue": "whoosh",
+            "at_sec": 26.0
+          },
+          {
+            "scene_id": 6,
+            "cue": "whoosh",
+            "at_sec": 38.0
+          }
+        ]
+      },
+      "transitions": {
+        "level_db": -12.0,
+        "cues": []
+      }
+    },
+    "silence_drops": [
+      {
+        "scene_id": 5,
+        "at_sec": 25.6,
+        "duration_sec": 0.4,
+        "reason": "drop the full mix before the payoff beat"
+      }
+    ],
+    "loudness_target": {
+      "standard": "platform_safe_placeholder",
+      "integrated_lufs": -14.0,
+      "true_peak_db": -1.0,
+      "notes": "Verify with a real loudness pass when actual audio is rendered."
+    }
+  },
+  "transition_plan": {
+    "supported_types": [
+      "cut",
+      "fade",
+      "push",
+      "zoom",
+      "whip_pan",
+      "glitch",
+      "flash",
+      "documentary_slow_zoom",
+      "cinematic_push_in",
+      "quick_cut"
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "motion_plan": [
+    {
+      "scene_id": 1,
+      "effect": "quick_punch_in",
+      "intensity": 70,
+      "duration_sec": 2.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.188
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_out"
+    },
+    {
+      "scene_id": 2,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 3,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 4,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 5,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 12.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 6,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    }
+  ],
+  "asset_requirements": [],
+  "missing_assets": [],
+  "render_warnings": [],
+  "estimated_render_duration_sec": 46.0,
+  "production_readiness_score": 100,
+  "validation": {
+    "status": "SUCCESS",
+    "checks": [
+      {
+        "check": "scenes_present",
+        "passed": true,
+        "detail": "6 scenes in the plan."
+      },
+      {
+        "check": "scenes_have_visuals",
+        "passed": true,
+        "detail": "Every scene has a visual asset or prompt."
+      },
+      {
+        "check": "scenes_have_narration",
+        "passed": true,
+        "detail": "Every scene has narration."
+      },
+      {
+        "check": "captions_exist",
+        "passed": true,
+        "detail": "6 caption segments planned."
+      },
+      {
+        "check": "audio_plan_exists",
+        "passed": true,
+        "detail": "Audio mix plan covers narration/music/SFX tracks."
+      },
+      {
+        "check": "runtime_reasonable",
+        "passed": true,
+        "detail": "Total runtime 46.0s is inside the 5.0-180.0s short-form window."
+      },
+      {
+        "check": "output_format_supported",
+        "passed": true,
+        "detail": "9:16 1080x1920 MP4 \u2014 supported."
+      },
+      {
+        "check": "assets_resolved",
+        "passed": true,
+        "detail": "All asset requests were fulfilled."
+      }
+    ],
+    "problems": [],
+    "production_readiness_score": 100
+  },
+  "render_status": "SUCCESS",
+  "mock_output_path": "data/productions/sp100w5_space_003_lunar_regolith_001/render.mp4",
+  "output_path": "data/productions/sp100w5_space_003_lunar_regolith_001/render.mp4",
+  "mp4_path": "data/productions/sp100w5_space_003_lunar_regolith_001/render.mp4",
+  "file_uri": "data/productions/sp100w5_space_003_lunar_regolith_001/render.mp4",
+  "render_log": [
+    "color_bed\u2192mp4 (no visual assets resolved)",
+    "ffmpeg_exit=0"
+  ],
+  "render_job": {},
+  "mock": false,
+  "assembly": {
+    "ok": true,
+    "mock": false,
+    "error": "",
+    "output_path": "data/productions/sp100w5_space_003_lunar_regolith_001/render.mp4",
+    "absolute_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w5_space_003_lunar_regolith_001/render.mp4",
+    "bytes": 355072,
+    "duration_sec": 46.0,
+    "resolution": "1080x1920",
+    "ffmpeg": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/venv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "log": [
+      "color_bed\u2192mp4 (no visual assets resolved)",
+      "ffmpeg_exit=0"
+    ],
+    "visual_count": 0,
+    "has_audio": true,
+    "manifest": {
+      "title": "Lunar regolith",
+      "format": {
+        "aspect_ratio": "9:16",
+        "resolution": {
+          "width": 1080,
+          "height": 1920
+        },
+        "container": "mp4",
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "fps": 30,
+        "orientation": "vertical",
+        "platforms": [
+          "youtube_shorts",
+          "tiktok",
+          "instagram_reels",
+          "facebook_reels"
+        ]
+      },
+      "visuals": [],
+      "audio": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w5_space_003_lunar_regolith_001/voice.mp3"
+    }
+  },
+  "render_manifest": {
+    "scenes": 6,
+    "timeline_segments": 6,
+    "caption_segments": 6,
+    "audio_tracks": [
+      "narration",
+      "music",
+      "sfx",
+      "transitions"
+    ],
+    "transitions": 5,
+    "assets_requested": 0,
+    "assets_missing": 0,
+    "warnings": 0,
+    "readiness": 100,
+    "ready_for_publishing": true,
+    "real_mp4": true
+  }
+}

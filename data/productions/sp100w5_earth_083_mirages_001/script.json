@@ -1,0 +1,74 @@
+{
+  "title": "Mirages",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the scientific explanations behind mirages and debunk common misconceptions.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about mirages than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Ever seen water on a hot road? That\u2019s a mirage, but it\u2019s not what it seems.",
+      "emotion": "curiosity",
+      "delivery": "engaging and fast-paced",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Mirages happen due to light bending through layers of air with different temperatures.",
+      "emotion": "curiosity",
+      "delivery": "informative and clear",
+      "retention_device": "scientific explanation"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "That\u2019s called refraction! It tricks our brains into seeing things that aren\u2019t really there.",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "science fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 36.0,
+      "segment_type": "payoff",
+      "voiceover": "So when you think you see water, it\u2019s actually an illusion shaped by the heat.",
+      "emotion": "curiosity",
+      "delivery": "intriguing",
+      "retention_device": "mind-blowing reveal"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 36.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about other amazing science facts? Hit that follow button for more!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about mirages than social media does. Ever seen water on a hot road? That\u2019s a mirage, but it\u2019s not what it seems. Mirages happen due to light bending through layers of air with different temperatures. That\u2019s called refraction! It tricks our brains into seeing things that aren\u2019t really there. So when you think you see water, it\u2019s actually an illusion shaped by the heat. Curious about other amazing science facts? Hit that follow button for more!",
+  "call_to_action": "Hit that follow button for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:46:30.836638+00:00",
+  "source": "ai"
+}

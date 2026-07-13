@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about direct air capture than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about direct air capture than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about direct air capture than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about direct air capture than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Direct air capture is a groundbreaking tech designed to remove carbon dioxide from our atmosphere.",
+    "visual_description": "Context visual: Direct air capture is a groundbreaking tech designed to remove carbon dioxide from our atmosphere.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Direct air capture is a groundbreaking tech designed to remove carbon dioxide from our atmosphere.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Direct air capture is a groundbreaking tech designed to remove carbon dioxide from our atmosphere.",
+    "stock_footage_query": "",
+    "text_overlay": "Direct air capture is",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But it\u2019s not a silver bullet. It\u2019s just one piece of a complex puzzle.",
+    "visual_description": "Escalation visual: But it\u2019s not a silver bullet. It\u2019s just one piece of a complex puzzle.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But it\u2019s not a silver bullet. It\u2019s just one piece of a complex puzzle.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But it\u2019s not a silver bullet. It\u2019s just one piece of a complex puzzle.",
+    "stock_footage_query": "",
+    "text_overlay": "But it\u2019s not a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show it could potentially capture millions of tons of CO2 annually\u2014but challenges remain.",
+    "visual_description": "Evidence visual: Studies show it could potentially capture millions of tons of CO2 annually\u2014but challenges remain.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show it could potentially capture millions of tons of CO2 annually\u2014but challenges remain.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show it could potentially capture millions of tons of CO2 annually\u2014but challenges remain.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show it could",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "hopeful",
+    "length_sec": 8.0,
+    "narration": "Imagine a world where we can actively reduce our carbon footprint.",
+    "visual_description": "Payoff visual: Imagine a world where we can actively reduce our carbon footprint.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Imagine a world where we can actively reduce our carbon footprint.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Imagine a world where we can actively reduce our carbon footprint.",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine a world where",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Want to learn more about how tech is shaping our future? Hit that follow for more!",
+    "visual_description": "Cta visual: Want to learn more about how tech is shaping our future? Hit that follow for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to learn more about how tech is shaping our future? Hit that follow for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to learn more about how tech is shaping our future? Hit that follow for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

@@ -1,0 +1,968 @@
+{
+  "generated_at": "2026-07-13T03:01:35.483336+00:00",
+  "status": "SUCCESS",
+  "examples": [
+    {
+      "narration": "The Earth tilts on its axis.",
+      "movement": "orbit"
+    },
+    {
+      "narration": "Notice this fossil in the limestone.",
+      "movement": "slow_push_in"
+    },
+    {
+      "narration": "This tiny transistor switches billions of times per second.",
+      "movement": "macro_push_in"
+    },
+    {
+      "narration": "Inside the factory, assembly robots build each camera body.",
+      "movement": "establishing_wide"
+    }
+  ],
+  "plan": {
+    "topic": "How the seasons work",
+    "scenes": [
+      {
+        "scene_id": "s1",
+        "scene_number": 1,
+        "narration": "The Earth tilts on its axis.",
+        "camera_angle": "eye_level",
+        "framing": "medium",
+        "zoom_direction": "none",
+        "pan_direction": "none",
+        "parallax_depth": 0.55,
+        "camera_speed": 0.408,
+        "easing": "ease_in_out",
+        "focus_point": {
+          "x": 0.485,
+          "y": 0.38,
+          "label": "emphasize Earth",
+          "reason": "Evidence annotation zoom target"
+        },
+        "focus_coordinates": {
+          "x": 0.485,
+          "y": 0.38
+        },
+        "transition": "fade",
+        "duration_sec": 3.0,
+        "movement": "orbit",
+        "movement_reason": "Narration describes tilt/orbit \u2014 camera orbits the subject.",
+        "motion_graph": [
+          {
+            "t": 0.0,
+            "zoom": 1.05,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": -8,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0.55
+          },
+          {
+            "t": 0.5,
+            "zoom": 1.08,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0.55
+          },
+          {
+            "t": 1.0,
+            "zoom": 1.05,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 8,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0.55
+          }
+        ],
+        "timeline": {
+          "start_sec": 0.0,
+          "end_sec": 3.0
+        },
+        "scene_pacing": "brisk",
+        "attention_score": 74,
+        "animation_effect": "handheld_drift",
+        "animation_camera": "orbit",
+        "camera_plan": {
+          "angle": "eye_level",
+          "framing": "medium",
+          "movement": "orbit",
+          "zoom_direction": "none",
+          "pan_direction": "none",
+          "speed": 0.408,
+          "easing": "ease_in_out",
+          "focus": {
+            "x": 0.485,
+            "y": 0.38,
+            "label": "emphasize Earth",
+            "reason": "Evidence annotation zoom target"
+          },
+          "parallax_depth": 0.55
+        }
+      },
+      {
+        "scene_id": "s2",
+        "scene_number": 2,
+        "narration": "Notice this fossil in the limestone.",
+        "camera_angle": "eye_level",
+        "framing": "close_up",
+        "zoom_direction": "in",
+        "pan_direction": "none",
+        "parallax_depth": 0.1,
+        "camera_speed": 0.345,
+        "easing": "ease_in_out_cubic",
+        "focus_point": {
+          "x": 0.485,
+          "y": 0.38,
+          "label": "emphasize fossil",
+          "reason": "Evidence annotation zoom target"
+        },
+        "focus_coordinates": {
+          "x": 0.485,
+          "y": 0.38
+        },
+        "transition": "l_cut",
+        "duration_sec": 3.0,
+        "movement": "slow_push_in",
+        "movement_reason": "Narration asks viewer to notice a detail \u2014 slow push-in toward focus.",
+        "motion_graph": [
+          {
+            "t": 0.0,
+            "zoom": 1.0,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0
+          },
+          {
+            "t": 0.5,
+            "zoom": 1.05577,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0.05
+          },
+          {
+            "t": 1.0,
+            "zoom": 1.1014,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0.1
+          }
+        ],
+        "timeline": {
+          "start_sec": 3.0,
+          "end_sec": 6.0
+        },
+        "scene_pacing": "brisk",
+        "attention_score": 72,
+        "animation_effect": "cinematic_push_in",
+        "animation_camera": "push_in",
+        "camera_plan": {
+          "angle": "eye_level",
+          "framing": "close_up",
+          "movement": "slow_push_in",
+          "zoom_direction": "in",
+          "pan_direction": "none",
+          "speed": 0.345,
+          "easing": "ease_in_out_cubic",
+          "focus": {
+            "x": 0.485,
+            "y": 0.38,
+            "label": "emphasize fossil",
+            "reason": "Evidence annotation zoom target"
+          },
+          "parallax_depth": 0.1
+        }
+      },
+      {
+        "scene_id": "s3",
+        "scene_number": 3,
+        "narration": "This tiny transistor switches billions of times per second.",
+        "camera_angle": "macro_close",
+        "framing": "extreme_close_up",
+        "zoom_direction": "in",
+        "pan_direction": "none",
+        "parallax_depth": 0.1,
+        "camera_speed": 0.302,
+        "easing": "ease_in_out_cubic",
+        "focus_point": {
+          "x": 0.5,
+          "y": 0.45,
+          "label": "subject",
+          "reason": "Default educational subject focus"
+        },
+        "focus_coordinates": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "transition": "cross_dissolve",
+        "duration_sec": 4.05,
+        "movement": "macro_push_in",
+        "movement_reason": "Narration emphasizes tiny scale \u2014 macro push-in.",
+        "motion_graph": [
+          {
+            "t": 0.0,
+            "zoom": 1.0,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.5,
+            "focus_y": 0.45,
+            "parallax": 0
+          },
+          {
+            "t": 0.5,
+            "zoom": 1.052932,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.5,
+            "focus_y": 0.45,
+            "parallax": 0.05
+          },
+          {
+            "t": 1.0,
+            "zoom": 1.0962399999999999,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.5,
+            "focus_y": 0.45,
+            "parallax": 0.1
+          }
+        ],
+        "timeline": {
+          "start_sec": 6.0,
+          "end_sec": 10.05
+        },
+        "scene_pacing": "measured",
+        "attention_score": 71,
+        "animation_effect": "documentary_slow_zoom",
+        "animation_camera": "push_in",
+        "camera_plan": {
+          "angle": "macro_close",
+          "framing": "extreme_close_up",
+          "movement": "macro_push_in",
+          "zoom_direction": "in",
+          "pan_direction": "none",
+          "speed": 0.302,
+          "easing": "ease_in_out_cubic",
+          "focus": {
+            "x": 0.5,
+            "y": 0.45,
+            "label": "subject",
+            "reason": "Default educational subject focus"
+          },
+          "parallax_depth": 0.1
+        }
+      },
+      {
+        "scene_id": "s4",
+        "scene_number": 4,
+        "narration": "Inside the factory, assembly robots build each camera body.",
+        "camera_angle": "high_angle",
+        "framing": "extreme_wide",
+        "zoom_direction": "out",
+        "pan_direction": "left",
+        "parallax_depth": 0.1,
+        "camera_speed": 0.368,
+        "easing": "ease_in_out",
+        "focus_point": {
+          "x": 0.485,
+          "y": 0.38,
+          "label": "emphasize factory",
+          "reason": "Evidence annotation zoom target"
+        },
+        "focus_coordinates": {
+          "x": 0.485,
+          "y": 0.38
+        },
+        "transition": "fade",
+        "duration_sec": 4.05,
+        "movement": "establishing_wide",
+        "movement_reason": "Narration establishes place \u2014 cinematic wide establishing move.",
+        "motion_graph": [
+          {
+            "t": 0.0,
+            "zoom": 1.10416,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0.0
+          },
+          {
+            "t": 1.0,
+            "zoom": 1.0,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.5,
+            "focus_y": 0.5,
+            "parallax": 0.1
+          }
+        ],
+        "timeline": {
+          "start_sec": 10.05,
+          "end_sec": 14.1
+        },
+        "scene_pacing": "measured",
+        "attention_score": 73,
+        "animation_effect": "slow_zoom_out",
+        "animation_camera": "pull_out",
+        "camera_plan": {
+          "angle": "high_angle",
+          "framing": "extreme_wide",
+          "movement": "establishing_wide",
+          "zoom_direction": "out",
+          "pan_direction": "left",
+          "speed": 0.368,
+          "easing": "ease_in_out",
+          "focus": {
+            "x": 0.485,
+            "y": 0.38,
+            "label": "emphasize factory",
+            "reason": "Evidence annotation zoom target"
+          },
+          "parallax_depth": 0.1
+        }
+      }
+    ],
+    "camera_plan": [
+      {
+        "angle": "eye_level",
+        "framing": "medium",
+        "movement": "orbit",
+        "zoom_direction": "none",
+        "pan_direction": "none",
+        "speed": 0.408,
+        "easing": "ease_in_out",
+        "focus": {
+          "x": 0.485,
+          "y": 0.38,
+          "label": "emphasize Earth",
+          "reason": "Evidence annotation zoom target"
+        },
+        "parallax_depth": 0.55
+      },
+      {
+        "angle": "eye_level",
+        "framing": "close_up",
+        "movement": "slow_push_in",
+        "zoom_direction": "in",
+        "pan_direction": "none",
+        "speed": 0.345,
+        "easing": "ease_in_out_cubic",
+        "focus": {
+          "x": 0.485,
+          "y": 0.38,
+          "label": "emphasize fossil",
+          "reason": "Evidence annotation zoom target"
+        },
+        "parallax_depth": 0.1
+      },
+      {
+        "angle": "macro_close",
+        "framing": "extreme_close_up",
+        "movement": "macro_push_in",
+        "zoom_direction": "in",
+        "pan_direction": "none",
+        "speed": 0.302,
+        "easing": "ease_in_out_cubic",
+        "focus": {
+          "x": 0.5,
+          "y": 0.45,
+          "label": "subject",
+          "reason": "Default educational subject focus"
+        },
+        "parallax_depth": 0.1
+      },
+      {
+        "angle": "high_angle",
+        "framing": "extreme_wide",
+        "movement": "establishing_wide",
+        "zoom_direction": "out",
+        "pan_direction": "left",
+        "speed": 0.368,
+        "easing": "ease_in_out",
+        "focus": {
+          "x": 0.485,
+          "y": 0.38,
+          "label": "emphasize factory",
+          "reason": "Evidence annotation zoom target"
+        },
+        "parallax_depth": 0.1
+      }
+    ],
+    "timeline": [
+      {
+        "scene_id": "s1",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "duration_sec": 3.0
+      },
+      {
+        "scene_id": "s2",
+        "start_sec": 3.0,
+        "end_sec": 6.0,
+        "duration_sec": 3.0
+      },
+      {
+        "scene_id": "s3",
+        "start_sec": 6.0,
+        "end_sec": 10.05,
+        "duration_sec": 4.05
+      },
+      {
+        "scene_id": "s4",
+        "start_sec": 10.05,
+        "end_sec": 14.1,
+        "duration_sec": 4.05
+      }
+    ],
+    "motion_graph": [
+      {
+        "scene_id": "s1",
+        "keyframes": [
+          {
+            "t": 0.0,
+            "zoom": 1.05,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": -8,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0.55
+          },
+          {
+            "t": 0.5,
+            "zoom": 1.08,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0.55
+          },
+          {
+            "t": 1.0,
+            "zoom": 1.05,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 8,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0.55
+          }
+        ]
+      },
+      {
+        "scene_id": "s2",
+        "keyframes": [
+          {
+            "t": 0.0,
+            "zoom": 1.0,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0
+          },
+          {
+            "t": 0.5,
+            "zoom": 1.05577,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0.05
+          },
+          {
+            "t": 1.0,
+            "zoom": 1.1014,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0.1
+          }
+        ]
+      },
+      {
+        "scene_id": "s3",
+        "keyframes": [
+          {
+            "t": 0.0,
+            "zoom": 1.0,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.5,
+            "focus_y": 0.45,
+            "parallax": 0
+          },
+          {
+            "t": 0.5,
+            "zoom": 1.052932,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.5,
+            "focus_y": 0.45,
+            "parallax": 0.05
+          },
+          {
+            "t": 1.0,
+            "zoom": 1.0962399999999999,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.5,
+            "focus_y": 0.45,
+            "parallax": 0.1
+          }
+        ]
+      },
+      {
+        "scene_id": "s4",
+        "keyframes": [
+          {
+            "t": 0.0,
+            "zoom": 1.10416,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0.0
+          },
+          {
+            "t": 1.0,
+            "zoom": 1.0,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.5,
+            "focus_y": 0.5,
+            "parallax": 0.1
+          }
+        ]
+      }
+    ],
+    "overall_attention_score": 72,
+    "scene_pacing": "brisk",
+    "reasoning": "Directed 4 scenes for 'How the seasons work'. Movements chosen to reinforce narration (1:orbit, 2:slow_push_in, 3:macro_push_in, 4:establishing_wide). Overall attention 72; pacing=brisk.",
+    "animation_handoff": {
+      "provider": "Cinematography Engine",
+      "scenes": [
+        {
+          "scene_id": "s1",
+          "scene_number": 1,
+          "duration_sec": 3.0,
+          "camera": "orbit",
+          "effect": "handheld_drift",
+          "easing": "ease_in_out",
+          "focus": {
+            "x": 0.485,
+            "y": 0.38,
+            "label": "emphasize Earth",
+            "reason": "Evidence annotation zoom target"
+          },
+          "motion_graph": [
+            {
+              "t": 0.0,
+              "zoom": 1.05,
+              "pan_x": 0.0,
+              "pan_y": 0.0,
+              "rotate_deg": -8,
+              "focus_x": 0.485,
+              "focus_y": 0.38,
+              "parallax": 0.55
+            },
+            {
+              "t": 0.5,
+              "zoom": 1.08,
+              "pan_x": 0.0,
+              "pan_y": 0.0,
+              "rotate_deg": 0,
+              "focus_x": 0.485,
+              "focus_y": 0.38,
+              "parallax": 0.55
+            },
+            {
+              "t": 1.0,
+              "zoom": 1.05,
+              "pan_x": 0.0,
+              "pan_y": 0.0,
+              "rotate_deg": 8,
+              "focus_x": 0.485,
+              "focus_y": 0.38,
+              "parallax": 0.55
+            }
+          ],
+          "transition": "fade",
+          "parallax_depth": 0.55,
+          "speed": 0.408,
+          "attention_score": 74
+        },
+        {
+          "scene_id": "s2",
+          "scene_number": 2,
+          "duration_sec": 3.0,
+          "camera": "push_in",
+          "effect": "cinematic_push_in",
+          "easing": "ease_in_out_cubic",
+          "focus": {
+            "x": 0.485,
+            "y": 0.38,
+            "label": "emphasize fossil",
+            "reason": "Evidence annotation zoom target"
+          },
+          "motion_graph": [
+            {
+              "t": 0.0,
+              "zoom": 1.0,
+              "pan_x": 0.0,
+              "pan_y": 0.0,
+              "rotate_deg": 0.0,
+              "focus_x": 0.485,
+              "focus_y": 0.38,
+              "parallax": 0
+            },
+            {
+              "t": 0.5,
+              "zoom": 1.05577,
+              "pan_x": 0.0,
+              "pan_y": 0.0,
+              "rotate_deg": 0.0,
+              "focus_x": 0.485,
+              "focus_y": 0.38,
+              "parallax": 0.05
+            },
+            {
+              "t": 1.0,
+              "zoom": 1.1014,
+              "pan_x": 0.0,
+              "pan_y": 0.0,
+              "rotate_deg": 0.0,
+              "focus_x": 0.485,
+              "focus_y": 0.38,
+              "parallax": 0.1
+            }
+          ],
+          "transition": "l_cut",
+          "parallax_depth": 0.1,
+          "speed": 0.345,
+          "attention_score": 72
+        },
+        {
+          "scene_id": "s3",
+          "scene_number": 3,
+          "duration_sec": 4.05,
+          "camera": "push_in",
+          "effect": "documentary_slow_zoom",
+          "easing": "ease_in_out_cubic",
+          "focus": {
+            "x": 0.5,
+            "y": 0.45,
+            "label": "subject",
+            "reason": "Default educational subject focus"
+          },
+          "motion_graph": [
+            {
+              "t": 0.0,
+              "zoom": 1.0,
+              "pan_x": 0.0,
+              "pan_y": 0.0,
+              "rotate_deg": 0.0,
+              "focus_x": 0.5,
+              "focus_y": 0.45,
+              "parallax": 0
+            },
+            {
+              "t": 0.5,
+              "zoom": 1.052932,
+              "pan_x": 0.0,
+              "pan_y": 0.0,
+              "rotate_deg": 0.0,
+              "focus_x": 0.5,
+              "focus_y": 0.45,
+              "parallax": 0.05
+            },
+            {
+              "t": 1.0,
+              "zoom": 1.0962399999999999,
+              "pan_x": 0.0,
+              "pan_y": 0.0,
+              "rotate_deg": 0.0,
+              "focus_x": 0.5,
+              "focus_y": 0.45,
+              "parallax": 0.1
+            }
+          ],
+          "transition": "cross_dissolve",
+          "parallax_depth": 0.1,
+          "speed": 0.302,
+          "attention_score": 71
+        },
+        {
+          "scene_id": "s4",
+          "scene_number": 4,
+          "duration_sec": 4.05,
+          "camera": "pull_out",
+          "effect": "slow_zoom_out",
+          "easing": "ease_in_out",
+          "focus": {
+            "x": 0.485,
+            "y": 0.38,
+            "label": "emphasize factory",
+            "reason": "Evidence annotation zoom target"
+          },
+          "motion_graph": [
+            {
+              "t": 0.0,
+              "zoom": 1.10416,
+              "pan_x": 0.0,
+              "pan_y": 0.0,
+              "rotate_deg": 0.0,
+              "focus_x": 0.485,
+              "focus_y": 0.38,
+              "parallax": 0.0
+            },
+            {
+              "t": 1.0,
+              "zoom": 1.0,
+              "pan_x": 0.0,
+              "pan_y": 0.0,
+              "rotate_deg": 0.0,
+              "focus_x": 0.5,
+              "focus_y": 0.5,
+              "parallax": 0.1
+            }
+          ],
+          "transition": "fade",
+          "parallax_depth": 0.1,
+          "speed": 0.368,
+          "attention_score": 73
+        }
+      ]
+    }
+  },
+  "animation_handoff": {
+    "provider": "Cinematography Engine",
+    "scenes": [
+      {
+        "scene_id": "s1",
+        "scene_number": 1,
+        "duration_sec": 3.0,
+        "camera": "orbit",
+        "effect": "handheld_drift",
+        "easing": "ease_in_out",
+        "focus": {
+          "x": 0.485,
+          "y": 0.38,
+          "label": "emphasize Earth",
+          "reason": "Evidence annotation zoom target"
+        },
+        "motion_graph": [
+          {
+            "t": 0.0,
+            "zoom": 1.05,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": -8,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0.55
+          },
+          {
+            "t": 0.5,
+            "zoom": 1.08,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0.55
+          },
+          {
+            "t": 1.0,
+            "zoom": 1.05,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 8,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0.55
+          }
+        ],
+        "transition": "fade",
+        "parallax_depth": 0.55,
+        "speed": 0.408,
+        "attention_score": 74
+      },
+      {
+        "scene_id": "s2",
+        "scene_number": 2,
+        "duration_sec": 3.0,
+        "camera": "push_in",
+        "effect": "cinematic_push_in",
+        "easing": "ease_in_out_cubic",
+        "focus": {
+          "x": 0.485,
+          "y": 0.38,
+          "label": "emphasize fossil",
+          "reason": "Evidence annotation zoom target"
+        },
+        "motion_graph": [
+          {
+            "t": 0.0,
+            "zoom": 1.0,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0
+          },
+          {
+            "t": 0.5,
+            "zoom": 1.05577,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0.05
+          },
+          {
+            "t": 1.0,
+            "zoom": 1.1014,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0.1
+          }
+        ],
+        "transition": "l_cut",
+        "parallax_depth": 0.1,
+        "speed": 0.345,
+        "attention_score": 72
+      },
+      {
+        "scene_id": "s3",
+        "scene_number": 3,
+        "duration_sec": 4.05,
+        "camera": "push_in",
+        "effect": "documentary_slow_zoom",
+        "easing": "ease_in_out_cubic",
+        "focus": {
+          "x": 0.5,
+          "y": 0.45,
+          "label": "subject",
+          "reason": "Default educational subject focus"
+        },
+        "motion_graph": [
+          {
+            "t": 0.0,
+            "zoom": 1.0,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.5,
+            "focus_y": 0.45,
+            "parallax": 0
+          },
+          {
+            "t": 0.5,
+            "zoom": 1.052932,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.5,
+            "focus_y": 0.45,
+            "parallax": 0.05
+          },
+          {
+            "t": 1.0,
+            "zoom": 1.0962399999999999,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.5,
+            "focus_y": 0.45,
+            "parallax": 0.1
+          }
+        ],
+        "transition": "cross_dissolve",
+        "parallax_depth": 0.1,
+        "speed": 0.302,
+        "attention_score": 71
+      },
+      {
+        "scene_id": "s4",
+        "scene_number": 4,
+        "duration_sec": 4.05,
+        "camera": "pull_out",
+        "effect": "slow_zoom_out",
+        "easing": "ease_in_out",
+        "focus": {
+          "x": 0.485,
+          "y": 0.38,
+          "label": "emphasize factory",
+          "reason": "Evidence annotation zoom target"
+        },
+        "motion_graph": [
+          {
+            "t": 0.0,
+            "zoom": 1.10416,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.485,
+            "focus_y": 0.38,
+            "parallax": 0.0
+          },
+          {
+            "t": 1.0,
+            "zoom": 1.0,
+            "pan_x": 0.0,
+            "pan_y": 0.0,
+            "rotate_deg": 0.0,
+            "focus_x": 0.5,
+            "focus_y": 0.5,
+            "parallax": 0.1
+          }
+        ],
+        "transition": "fade",
+        "parallax_depth": 0.1,
+        "speed": 0.368,
+        "attention_score": 73
+      }
+    ]
+  },
+  "summary": {
+    "candidates": 1,
+    "scenes_directed": 4,
+    "average_attention_score": 72,
+    "animation_ready": true
+  }
+}

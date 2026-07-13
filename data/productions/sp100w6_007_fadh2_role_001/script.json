@@ -1,0 +1,74 @@
+{
+  "title": "FADH2 role",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the crucial but often misunderstood role of FADH2 in cellular respiration.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you there\u2019s a molecule that powers your cells like a hidden battery?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Meet FADH2, a key player in cellular respiration, fueling energy production.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "It\u2019s not just a bystander; it carries electrons to the electron transport chain.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact reveal"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "This process releases ATP, our energy currency. But here\u2019s the twist...",
+      "emotion": "curiosity",
+      "delivery": "suspenseful",
+      "retention_device": "mystery"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 36.0,
+      "segment_type": "payoff",
+      "voiceover": "Without FADH2, our energy production would slow, affecting everything from muscles to brain function.",
+      "emotion": "curiosity",
+      "delivery": "urgent",
+      "retention_device": "reality check"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 36.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more about the molecules that power your body? Hit that follow for more!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "engaging question"
+    }
+  ],
+  "full_voiceover": "What if I told you there\u2019s a molecule that powers your cells like a hidden battery? Meet FADH2, a key player in cellular respiration, fueling energy production. It\u2019s not just a bystander; it carries electrons to the electron transport chain. This process releases ATP, our energy currency. But here\u2019s the twist... Without FADH2, our energy production would slow, affecting everything from muscles to brain function. Want to learn more about the molecules that power your body? Hit that follow for more!",
+  "call_to_action": "Hit that follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:58:10.537881+00:00",
+  "source": "ai"
+}

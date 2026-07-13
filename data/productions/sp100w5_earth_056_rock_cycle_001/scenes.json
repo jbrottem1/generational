@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science tells a clearer story about the rock cycle than social media ever could.",
+    "visual_description": "Hook visual: Science tells a clearer story about the rock cycle than social media ever could.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science tells a clearer story about the rock cycle than social media ever could.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science tells a clearer story about the rock cycle than social media ever could.",
+    "stock_footage_query": "",
+    "text_overlay": "Science tells a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "The rock cycle is nature's recycling system, transforming rocks from one type to another, endlessly.",
+    "visual_description": "Context visual: The rock cycle is nature's recycling system, transforming rocks from one type to another, endlessly.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: The rock cycle is nature's recycling system, transforming rocks from one type to another, endlessly.",
+    "ai_video_prompt": "Cinematic motion: Context visual: The rock cycle is nature's recycling system, transforming rocks from one type to another, endlessly.",
+    "stock_footage_query": "",
+    "text_overlay": "The rock cycle is",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "anticipation",
+    "length_sec": 8.0,
+    "narration": "It starts with igneous rocks, created by cooling magma. But wait, how do they change?",
+    "visual_description": "Escalation visual: It starts with igneous rocks, created by cooling magma. But wait, how do they change?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: It starts with igneous rocks, created by cooling magma. But wait, how do they change?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: It starts with igneous rocks, created by cooling magma. But wait, how do they change?",
+    "stock_footage_query": "",
+    "text_overlay": "It starts with igneous",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "engagement",
+    "length_sec": 8.0,
+    "narration": "Weathering and erosion break them down, turning them into sediment. Fascinating, right?",
+    "visual_description": "Evidence visual: Weathering and erosion break them down, turning them into sediment. Fascinating, right?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Weathering and erosion break them down, turning them into sediment. Fascinating, right?",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Weathering and erosion break them down, turning them into sediment. Fascinating, right?",
+    "stock_footage_query": "",
+    "text_overlay": "Weathering and erosion break",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "satisfaction",
+    "length_sec": 8.0,
+    "narration": "These sediments can finally compact and cement into sedimentary rocks, continuing the cycle.",
+    "visual_description": "Payoff visual: These sediments can finally compact and cement into sedimentary rocks, continuing the cycle.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: These sediments can finally compact and cement into sedimentary rocks, continuing the cycle.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: These sediments can finally compact and cement into sedimentary rocks, continuing the cycle.",
+    "stock_footage_query": "",
+    "text_overlay": "These sediments can finally",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "pattern_interrupt",
+    "emotion": "surprise",
+    "length_sec": 10.0,
+    "narration": "But here's the twist: Metamorphic rocks can melt back into magma, starting all over!",
+    "visual_description": "Pattern Interrupt visual: But here's the twist: Metamorphic rocks can melt back into magma, starting all over!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: But here's the twist: Metamorphic rocks can melt back into magma, starting all over!",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: But here's the twist: Metamorphic rocks can melt back into magma, starting all over!",
+    "stock_footage_query": "",
+    "text_overlay": "But here's the twist:",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 44.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "invitation",
+    "length_sec": 16.0,
+    "narration": "Curious about more rock secrets? Follow for more science wonders!",
+    "visual_description": "Cta visual: Curious about more rock secrets? Follow for more science wonders!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more rock secrets? Follow for more science wonders!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more rock secrets? Follow for more science wonders!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more rock",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 44.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 44.0
+    }
+  }
+]

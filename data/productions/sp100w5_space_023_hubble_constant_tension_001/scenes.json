@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about Hubble constant tension than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about Hubble constant tension than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about Hubble constant tension than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about Hubble constant tension than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "The Hubble constant is crucial for understanding the universe's expansion rate. But recent measurements are conflicting.",
+    "visual_description": "Context visual: The Hubble constant is crucial for understanding the universe's expansion rate. But recent measurements are conflicting.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: The Hubble constant is crucial for understanding the universe's expansion rate. But recent measurements are conflicting.",
+    "ai_video_prompt": "Cinematic motion: Context visual: The Hubble constant is crucial for understanding the universe's expansion rate. But recent measurements are conflicting.",
+    "stock_footage_query": "",
+    "text_overlay": "The Hubble constant is",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "intrigue",
+    "length_sec": 8.0,
+    "narration": "Some telescopes, like Hubble, suggest it's expanding faster than earlier models predicted. Why the discrepancy?",
+    "visual_description": "Escalation visual: Some telescopes, like Hubble, suggest it's expanding faster than earlier models predicted. Why the discrepancy?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Some telescopes, like Hubble, suggest it's expanding faster than earlier models predicted. Why the discrepancy?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Some telescopes, like Hubble, suggest it's expanding faster than earlier models predicted. Why the discrepancy?",
+    "stock_footage_query": "",
+    "text_overlay": "Some telescopes, like Hubble,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "suspense",
+    "length_sec": 12.0,
+    "narration": "Researchers think dark energy or new physics might explain this tension. But it's uncertain!",
+    "visual_description": "Evidence visual: Researchers think dark energy or new physics might explain this tension. But it's uncertain!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Researchers think dark energy or new physics might explain this tension. But it's uncertain!",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Researchers think dark energy or new physics might explain this tension. But it's uncertain!",
+    "stock_footage_query": "",
+    "text_overlay": "Researchers think dark energy",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "wonder",
+    "length_sec": 15.0,
+    "narration": "Ultimately, this tension challenges our understanding of the cosmos, pushing scientists to rethink everything.",
+    "visual_description": "Payoff visual: Ultimately, this tension challenges our understanding of the cosmos, pushing scientists to rethink everything.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Ultimately, this tension challenges our understanding of the cosmos, pushing scientists to rethink everything.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Ultimately, this tension challenges our understanding of the cosmos, pushing scientists to rethink everything.",
+    "stock_footage_query": "",
+    "text_overlay": "Ultimately, this tension challenges",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "enthusiasm",
+    "length_sec": 15.0,
+    "narration": "Want to explore more cosmic mysteries? Subscribe for more science insights!",
+    "visual_description": "Cta visual: Want to explore more cosmic mysteries? Subscribe for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to explore more cosmic mysteries? Subscribe for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to explore more cosmic mysteries? Subscribe for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to explore more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "title": "The Synaptic Cleft",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the fascinating world of the synaptic cleft where neurons communicate.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Neurons don\u2019t quite touch \u2014 they send signals across a tiny gap.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "This is the synaptic cleft. Just 20 nanometers wide, it\u2019s a chemical highway.",
+      "emotion": "curiosity",
+      "delivery": "informative and engaging",
+      "retention_device": "intriguing fact"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "When a neuron fires, it releases neurotransmitters into this gap, sending messages.",
+      "emotion": "curiosity",
+      "delivery": "steady and building excitement",
+      "retention_device": "visual change"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows this process is crucial for everything from movement to memory.",
+      "emotion": "curiosity",
+      "delivery": "confident and factual",
+      "retention_device": "scientific insight"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 43.0,
+      "segment_type": "payoff",
+      "voiceover": "So, next time you think, remember: your thoughts travel through this tiny gap.",
+      "emotion": "curiosity",
+      "delivery": "reflective and enlightening",
+      "retention_device": "conceptual revelation"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 43.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how your brain works? Hit the follow button for more!",
+      "emotion": "curiosity",
+      "delivery": "inviting and engaging",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Neurons don\u2019t quite touch \u2014 they send signals across a tiny gap. This is the synaptic cleft. Just 20 nanometers wide, it\u2019s a chemical highway. When a neuron fires, it releases neurotransmitters into this gap, sending messages. Research shows this process is crucial for everything from movement to memory. So, next time you think, remember: your thoughts travel through this tiny gap. Curious about how your brain works? Hit the follow button for more!",
+  "call_to_action": "Hit the follow button for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:32:43.045767+00:00",
+  "source": "ai"
+}

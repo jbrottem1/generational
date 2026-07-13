@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if sunlight could unlock your brain's potential?",
+    "visual_description": "Hook visual: What if sunlight could unlock your brain's potential?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if sunlight could unlock your brain's potential?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if sunlight could unlock your brain's potential?",
+    "stock_footage_query": "",
+    "text_overlay": "What if sunlight could",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Vitamin D, often called the sunshine vitamin, is crucial for brain health.",
+    "visual_description": "Context visual: Vitamin D, often called the sunshine vitamin, is crucial for brain health.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Vitamin D, often called the sunshine vitamin, is crucial for brain health.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Vitamin D, often called the sunshine vitamin, is crucial for brain health.",
+    "stock_footage_query": "",
+    "text_overlay": "Vitamin D, often called",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Yet, many of us are deficient, especially in winter. Why?",
+    "visual_description": "Escalation visual: Yet, many of us are deficient, especially in winter. Why?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Yet, many of us are deficient, especially in winter. Why?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Yet, many of us are deficient, especially in winter. Why?",
+    "stock_footage_query": "",
+    "text_overlay": "Yet, many of us",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Research shows sunlight exposure boosts serotonin, enhancing mood and cognition.",
+    "visual_description": "Evidence visual: Research shows sunlight exposure boosts serotonin, enhancing mood and cognition.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows sunlight exposure boosts serotonin, enhancing mood and cognition.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows sunlight exposure boosts serotonin, enhancing mood and cognition.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows sunlight exposure",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "retention_hook",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "But wait! Too much sun can lead to skin damage. Balance is key.",
+    "visual_description": "Retention Hook visual: But wait! Too much sun can lead to skin damage. Balance is key.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Retention Hook visual: But wait! Too much sun can lead to skin damage. Balance is key.",
+    "ai_video_prompt": "Cinematic motion: Retention Hook visual: But wait! Too much sun can lead to skin damage. Balance is key.",
+    "stock_footage_query": "",
+    "text_overlay": "But wait! Too much",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 36.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "So, soak in the sun wisely to fuel your brain and mood.",
+    "visual_description": "Payoff visual: So, soak in the sun wisely to fuel your brain and mood.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, soak in the sun wisely to fuel your brain and mood.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, soak in the sun wisely to fuel your brain and mood.",
+    "stock_footage_query": "",
+    "text_overlay": "So, soak in the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 36.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 36.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Curious about how sunlight affects you? Hit that follow button for more!",
+    "visual_description": "Cta visual: Curious about how sunlight affects you? Hit that follow button for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about how sunlight affects you? Hit that follow button for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about how sunlight affects you? Hit that follow button for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about how sunlight",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

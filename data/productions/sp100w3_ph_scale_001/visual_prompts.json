@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: What if I told you pH isn't just a number?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: pH tracks hydrogen ion activity in solutions. Acids donate, bases accept these ions.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: But did you know this affects everything from soil to our own bodies?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: A pH below 7 means more hydrogen ions, indicating acidity. Above 7, it\u2019s basic\u2014more hydroxide ions.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: So, next time you check pH, remember it\u2019s more than a scale\u2014it\u2019s a balance of ions.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about more science mysteries? Hit follow for more!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: What if I told you pH isn't just a number?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: pH tracks hydrogen ion activity in solutions. Acids donate, bases accept these ions.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: But did you know this affects everything from soil to our own bodies?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: A pH below 7 means more hydrogen ions, indicating acidity. Above 7, it\u2019s basic\u2014more hydroxide ions.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: So, next time you check pH, remember it\u2019s more than a scale\u2014it\u2019s a balance of ions.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about more science mysteries? Hit follow for more!",
+      "duration_sec": 26.0
+    }
+  ]
+}

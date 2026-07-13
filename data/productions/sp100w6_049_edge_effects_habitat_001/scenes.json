@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What happens when two ecosystems meet? It's more than just a boundary.",
+    "visual_description": "Hook visual: What happens when two ecosystems meet? It's more than just a boundary.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What happens when two ecosystems meet? It's more than just a boundary.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What happens when two ecosystems meet? It's more than just a boundary.",
+    "stock_footage_query": "",
+    "text_overlay": "What happens when two",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Edge effects occur at the borders where different habitats converge. Think forests next to fields.",
+    "visual_description": "Context visual: Edge effects occur at the borders where different habitats converge. Think forests next to fields.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Edge effects occur at the borders where different habitats converge. Think forests next to fields.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Edge effects occur at the borders where different habitats converge. Think forests next to fields.",
+    "stock_footage_query": "",
+    "text_overlay": "Edge effects occur at",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "These areas often host unique species and increased biodiversity, but they come with challenges.",
+    "visual_description": "Escalation visual: These areas often host unique species and increased biodiversity, but they come with challenges.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: These areas often host unique species and increased biodiversity, but they come with challenges.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: These areas often host unique species and increased biodiversity, but they come with challenges.",
+    "stock_footage_query": "",
+    "text_overlay": "These areas often host",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show that edge habitats can be more vulnerable to invasive species and climate change.",
+    "visual_description": "Evidence visual: Studies show that edge habitats can be more vulnerable to invasive species and climate change.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show that edge habitats can be more vulnerable to invasive species and climate change.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show that edge habitats can be more vulnerable to invasive species and climate change.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show that edge",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Understanding edge effects helps conservation efforts. Protecting these areas is crucial for ecosystem health.",
+    "visual_description": "Payoff visual: Understanding edge effects helps conservation efforts. Protecting these areas is crucial for ecosystem health.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding edge effects helps conservation efforts. Protecting these areas is crucial for ecosystem health.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding edge effects helps conservation efforts. Protecting these areas is crucial for ecosystem health.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding edge effects helps",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 22.0,
+    "narration": "Curious about ecosystems? Follow for more science insights!",
+    "visual_description": "Cta visual: Curious about ecosystems? Follow for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about ecosystems? Follow for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about ecosystems? Follow for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about ecosystems? Follow",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

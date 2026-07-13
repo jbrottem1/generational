@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about bolide explosions than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about bolide explosions than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about bolide explosions than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about bolide explosions than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "A bolide is a space rock that explodes in our atmosphere, creating a fireball.",
+    "visual_description": "Context visual: A bolide is a space rock that explodes in our atmosphere, creating a fireball.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: A bolide is a space rock that explodes in our atmosphere, creating a fireball.",
+    "ai_video_prompt": "Cinematic motion: Context visual: A bolide is a space rock that explodes in our atmosphere, creating a fireball.",
+    "stock_footage_query": "",
+    "text_overlay": "A bolide is a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But not all bolides are the same. Some are tiny, while others could wipe out a city.",
+    "visual_description": "Escalation visual: But not all bolides are the same. Some are tiny, while others could wipe out a city.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But not all bolides are the same. Some are tiny, while others could wipe out a city.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But not all bolides are the same. Some are tiny, while others could wipe out a city.",
+    "stock_footage_query": "",
+    "text_overlay": "But not all bolides",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "In 1908, the Tunguska event flattened 2,000 square kilometers in Siberia, likely from a small asteroid.",
+    "visual_description": "Evidence visual: In 1908, the Tunguska event flattened 2,000 square kilometers in Siberia, likely from a small asteroid.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: In 1908, the Tunguska event flattened 2,000 square kilometers in Siberia, likely from a small asteroid.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: In 1908, the Tunguska event flattened 2,000 square kilometers in Siberia, likely from a small asteroid.",
+    "stock_footage_query": "",
+    "text_overlay": "In 1908, the Tunguska",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Science shows these explosions can teach us about planetary defense and the origins of our solar system.",
+    "visual_description": "Payoff visual: Science shows these explosions can teach us about planetary defense and the origins of our solar system.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Science shows these explosions can teach us about planetary defense and the origins of our solar system.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Science shows these explosions can teach us about planetary defense and the origins of our solar system.",
+    "stock_footage_query": "",
+    "text_overlay": "Science shows these explosions",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Want to learn more about space? Hit that follow button and explore the universe with us!",
+    "visual_description": "Cta visual: Want to learn more about space? Hit that follow button and explore the universe with us!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to learn more about space? Hit that follow button and explore the universe with us!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to learn more about space? Hit that follow button and explore the universe with us!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

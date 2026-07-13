@@ -1,0 +1,1611 @@
+{
+  "render_package_version": "2.0",
+  "render_engine_version": "1.0.0",
+  "title": "Growth mindset nuance",
+  "created_at": "2026-07-10T17:22:56.480435+00:00",
+  "output_format": {
+    "aspect_ratio": "9:16",
+    "resolution": {
+      "width": 1080,
+      "height": 1920
+    },
+    "container": "mp4",
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "fps": 30,
+    "orientation": "vertical",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels"
+    ]
+  },
+  "platforms": [
+    "youtube_shorts",
+    "tiktok",
+    "instagram_reels",
+    "facebook_reels"
+  ],
+  "resolution": "1080x1920",
+  "aspect_ratio": "9:16",
+  "duration_sec": 60.0,
+  "timeline": {
+    "fps": 30,
+    "total_duration_sec": 60.0,
+    "segment_count": 6,
+    "segments": [
+      {
+        "scene_id": 1,
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "duration": 2.0,
+        "narration_reference": "narration/scene_1",
+        "visual_reference": "visual/scene_1",
+        "caption_reference": "captions/scene_1",
+        "audio_reference": "audio/scene_1",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "quick_punch_in",
+        "overlay_text": "Here's what science actually",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 2,
+        "start_time": 2.0,
+        "end_time": 10.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_2",
+        "visual_reference": "visual/scene_2",
+        "caption_reference": "captions/scene_2",
+        "audio_reference": "audio/scene_2",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Most think a growth",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 3,
+        "start_time": 10.0,
+        "end_time": 18.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_3",
+        "visual_reference": "visual/scene_3",
+        "caption_reference": "captions/scene_3",
+        "audio_reference": "audio/scene_3",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Research shows, it\u2019s also",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 4,
+        "start_time": 18.0,
+        "end_time": 30.0,
+        "duration": 12.0,
+        "narration_reference": "narration/scene_4",
+        "visual_reference": "visual/scene_4",
+        "caption_reference": "captions/scene_4",
+        "audio_reference": "audio/scene_4",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "A 2020 study highlighted",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 5,
+        "start_time": 30.0,
+        "end_time": 45.0,
+        "duration": 15.0,
+        "narration_reference": "narration/scene_5",
+        "visual_reference": "visual/scene_5",
+        "caption_reference": "captions/scene_5",
+        "audio_reference": "audio/scene_5",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Understanding this nuance can",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 6,
+        "start_time": 45.0,
+        "end_time": 60.0,
+        "duration": 15.0,
+        "narration_reference": "narration/scene_6",
+        "visual_reference": "visual/scene_6",
+        "caption_reference": "captions/scene_6",
+        "audio_reference": "audio/scene_6",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Want to dive deeper?",
+        "render_status": "planned"
+      }
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "scene_render_plan": [
+    {
+      "scene_id": 1,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Hook visual: Here's what science actually says about growth mindset nuance.",
+      "video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about growth mindset nuance.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "subtle push",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "quick_punch_in",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.188
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 70
+      },
+      "text_overlays": [
+        {
+          "text": "Here's what science actually",
+          "treatment": "",
+          "start_sec": 0.0,
+          "end_sec": 2.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "bass hit",
+          "at_sec": 0.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Here's what science actually says about growth mindset nuance.",
+      "duration_sec": 2.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Hook visual: Here's what science actually says about growth mindset nuance.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 1
+      }
+    },
+    {
+      "scene_id": 2,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Context visual: Most think a growth mindset means believing you can improve, but it\u2019s more layered.",
+      "video_prompt": "Cinematic motion: Context visual: Most think a growth mindset means believing you can improve, but it\u2019s more layered.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Most think a growth",
+          "treatment": "",
+          "start_sec": 2.0,
+          "end_sec": 10.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 2.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Most think a growth mindset means believing you can improve, but it\u2019s more layered.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Context visual: Most think a growth mindset means believing you can improve, but it\u2019s more layered.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 2
+      }
+    },
+    {
+      "scene_id": 3,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Escalation visual: Research shows, it\u2019s also about knowing when to apply effort versus when to pivot.",
+      "video_prompt": "Cinematic motion: Escalation visual: Research shows, it\u2019s also about knowing when to apply effort versus when to pivot.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Research shows, it\u2019s also",
+          "treatment": "",
+          "start_sec": 10.0,
+          "end_sec": 18.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 10.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Research shows, it\u2019s also about knowing when to apply effort versus when to pivot.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Escalation visual: Research shows, it\u2019s also about knowing when to apply effort versus when to pivot.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 3
+      }
+    },
+    {
+      "scene_id": 4,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Evidence visual: A 2020 study highlighted that flexibility in mindset can lead to better outcomes.",
+      "video_prompt": "Cinematic motion: Evidence visual: A 2020 study highlighted that flexibility in mindset can lead to better outcomes.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "A 2020 study highlighted",
+          "treatment": "",
+          "start_sec": 18.0,
+          "end_sec": 30.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 18.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "A 2020 study highlighted that flexibility in mindset can lead to better outcomes.",
+      "duration_sec": 12.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Evidence visual: A 2020 study highlighted that flexibility in mindset can lead to better outcomes.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 4
+      }
+    },
+    {
+      "scene_id": 5,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Payoff visual: Understanding this nuance can transform how you approach challenges. It\u2019s not just about grit!",
+      "video_prompt": "Cinematic motion: Payoff visual: Understanding this nuance can transform how you approach challenges. It\u2019s not just about grit!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Understanding this nuance can",
+          "treatment": "",
+          "start_sec": 30.0,
+          "end_sec": 45.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 30.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Understanding this nuance can transform how you approach challenges. It\u2019s not just about grit!",
+      "duration_sec": 15.0,
+      "resolved_asset": {}
+    },
+    {
+      "scene_id": 6,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Cta visual: Want to dive deeper? Follow for more insights on mindset and growth!",
+      "video_prompt": "Cinematic motion: Cta visual: Want to dive deeper? Follow for more insights on mindset and growth!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Want to dive deeper?",
+          "treatment": "",
+          "start_sec": 45.0,
+          "end_sec": 60.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 45.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Want to dive deeper? Follow for more insights on mindset and growth!",
+      "duration_sec": 15.0,
+      "resolved_asset": {}
+    }
+  ],
+  "caption_render_plan": {
+    "mode": "word_by_word",
+    "style_preset": "bold_pop",
+    "style": {
+      "font": "Montserrat ExtraBold",
+      "size_pct": 4.8,
+      "fill": "#FFFFFF",
+      "stroke": "#000000",
+      "stroke_width_px": 6,
+      "emphasis_fill": "#FFD400",
+      "animation": "word pop 1.08x on entry",
+      "case": "upper"
+    },
+    "available_presets": [
+      "bold_pop",
+      "clean_minimal",
+      "karaoke_highlight",
+      "documentary_lower_third"
+    ],
+    "safe_area": {
+      "top_pct": 12.0,
+      "bottom_pct": 20.0,
+      "left_pct": 6.0,
+      "right_pct": 12.0
+    },
+    "platform_layouts": {
+      "youtube_shorts": {
+        "anchor_y_pct": 68.0,
+        "notes": "clear the title/channel block at the bottom"
+      },
+      "tiktok": {
+        "anchor_y_pct": 64.0,
+        "notes": "clear caption + music marquee, keep off the right rail"
+      },
+      "instagram_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "clear the audio attribution row"
+      },
+      "facebook_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "mirror the Reels layout"
+      }
+    },
+    "segments": [
+      {
+        "scene_id": 1,
+        "mode": "word_by_word",
+        "start_sec": 0.0,
+        "end_sec": 2.0,
+        "sentence": "Here's what science actually says about growth mindset nuance.",
+        "words": [
+          {
+            "word": "Here's",
+            "start_sec": 0.0,
+            "end_sec": 0.23,
+            "emphasis": false
+          },
+          {
+            "word": "what",
+            "start_sec": 0.23,
+            "end_sec": 0.39,
+            "emphasis": false
+          },
+          {
+            "word": "science",
+            "start_sec": 0.39,
+            "end_sec": 0.65,
+            "emphasis": false
+          },
+          {
+            "word": "actually",
+            "start_sec": 0.65,
+            "end_sec": 0.93,
+            "emphasis": true
+          },
+          {
+            "word": "says",
+            "start_sec": 0.93,
+            "end_sec": 1.1,
+            "emphasis": false
+          },
+          {
+            "word": "about",
+            "start_sec": 1.1,
+            "end_sec": 1.3,
+            "emphasis": false
+          },
+          {
+            "word": "growth",
+            "start_sec": 1.3,
+            "end_sec": 1.52,
+            "emphasis": false
+          },
+          {
+            "word": "mindset",
+            "start_sec": 1.52,
+            "end_sec": 1.77,
+            "emphasis": false
+          },
+          {
+            "word": "nuance",
+            "start_sec": 1.77,
+            "end_sec": 2.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "actually"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 2,
+        "mode": "word_by_word",
+        "start_sec": 2.0,
+        "end_sec": 10.0,
+        "sentence": "Most think a growth mindset means believing you can improve, but it\u2019s more layered.",
+        "words": [
+          {
+            "word": "Most",
+            "start_sec": 2.0,
+            "end_sec": 2.49,
+            "emphasis": false
+          },
+          {
+            "word": "think",
+            "start_sec": 2.49,
+            "end_sec": 3.07,
+            "emphasis": false
+          },
+          {
+            "word": "a",
+            "start_sec": 3.07,
+            "end_sec": 3.32,
+            "emphasis": false
+          },
+          {
+            "word": "growth",
+            "start_sec": 3.32,
+            "end_sec": 3.98,
+            "emphasis": false
+          },
+          {
+            "word": "mindset",
+            "start_sec": 3.98,
+            "end_sec": 4.72,
+            "emphasis": true
+          },
+          {
+            "word": "means",
+            "start_sec": 4.72,
+            "end_sec": 5.3,
+            "emphasis": false
+          },
+          {
+            "word": "believing",
+            "start_sec": 5.3,
+            "end_sec": 6.21,
+            "emphasis": true
+          },
+          {
+            "word": "you",
+            "start_sec": 6.21,
+            "end_sec": 6.62,
+            "emphasis": false
+          },
+          {
+            "word": "can",
+            "start_sec": 6.62,
+            "end_sec": 7.03,
+            "emphasis": false
+          },
+          {
+            "word": "improve",
+            "start_sec": 7.03,
+            "end_sec": 7.77,
+            "emphasis": false
+          },
+          {
+            "word": "but",
+            "start_sec": 7.77,
+            "end_sec": 8.19,
+            "emphasis": false
+          },
+          {
+            "word": "it",
+            "start_sec": 8.19,
+            "end_sec": 8.52,
+            "emphasis": false
+          },
+          {
+            "word": "s",
+            "start_sec": 8.52,
+            "end_sec": 8.76,
+            "emphasis": false
+          },
+          {
+            "word": "more",
+            "start_sec": 8.76,
+            "end_sec": 9.26,
+            "emphasis": false
+          },
+          {
+            "word": "layered",
+            "start_sec": 9.26,
+            "end_sec": 10.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "believing",
+          "mindset"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 3,
+        "mode": "word_by_word",
+        "start_sec": 10.0,
+        "end_sec": 18.0,
+        "sentence": "Research shows, it\u2019s also about knowing when to apply effort versus when to pivot.",
+        "words": [
+          {
+            "word": "Research",
+            "start_sec": 10.0,
+            "end_sec": 10.83,
+            "emphasis": true
+          },
+          {
+            "word": "shows",
+            "start_sec": 10.83,
+            "end_sec": 11.42,
+            "emphasis": false
+          },
+          {
+            "word": "it",
+            "start_sec": 11.42,
+            "end_sec": 11.75,
+            "emphasis": false
+          },
+          {
+            "word": "s",
+            "start_sec": 11.75,
+            "end_sec": 12.0,
+            "emphasis": false
+          },
+          {
+            "word": "also",
+            "start_sec": 12.0,
+            "end_sec": 12.5,
+            "emphasis": false
+          },
+          {
+            "word": "about",
+            "start_sec": 12.5,
+            "end_sec": 13.08,
+            "emphasis": false
+          },
+          {
+            "word": "knowing",
+            "start_sec": 13.08,
+            "end_sec": 13.83,
+            "emphasis": true
+          },
+          {
+            "word": "when",
+            "start_sec": 13.83,
+            "end_sec": 14.33,
+            "emphasis": false
+          },
+          {
+            "word": "to",
+            "start_sec": 14.33,
+            "end_sec": 14.67,
+            "emphasis": false
+          },
+          {
+            "word": "apply",
+            "start_sec": 14.67,
+            "end_sec": 15.25,
+            "emphasis": false
+          },
+          {
+            "word": "effort",
+            "start_sec": 15.25,
+            "end_sec": 15.92,
+            "emphasis": false
+          },
+          {
+            "word": "versus",
+            "start_sec": 15.92,
+            "end_sec": 16.58,
+            "emphasis": false
+          },
+          {
+            "word": "when",
+            "start_sec": 16.58,
+            "end_sec": 17.08,
+            "emphasis": false
+          },
+          {
+            "word": "to",
+            "start_sec": 17.08,
+            "end_sec": 17.42,
+            "emphasis": false
+          },
+          {
+            "word": "pivot",
+            "start_sec": 17.42,
+            "end_sec": 18.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "Research",
+          "knowing"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 4,
+        "mode": "word_by_word",
+        "start_sec": 18.0,
+        "end_sec": 30.0,
+        "sentence": "A 2020 study highlighted that flexibility in mindset can lead to better outcomes.",
+        "words": [
+          {
+            "word": "A",
+            "start_sec": 18.0,
+            "end_sec": 18.38,
+            "emphasis": false
+          },
+          {
+            "word": "2020",
+            "start_sec": 18.38,
+            "end_sec": 19.15,
+            "emphasis": true
+          },
+          {
+            "word": "study",
+            "start_sec": 19.15,
+            "end_sec": 20.04,
+            "emphasis": false
+          },
+          {
+            "word": "highlighted",
+            "start_sec": 20.04,
+            "end_sec": 21.7,
+            "emphasis": true
+          },
+          {
+            "word": "that",
+            "start_sec": 21.7,
+            "end_sec": 22.47,
+            "emphasis": false
+          },
+          {
+            "word": "flexibility",
+            "start_sec": 22.47,
+            "end_sec": 24.13,
+            "emphasis": true
+          },
+          {
+            "word": "in",
+            "start_sec": 24.13,
+            "end_sec": 24.64,
+            "emphasis": false
+          },
+          {
+            "word": "mindset",
+            "start_sec": 24.64,
+            "end_sec": 25.79,
+            "emphasis": false
+          },
+          {
+            "word": "can",
+            "start_sec": 25.79,
+            "end_sec": 26.43,
+            "emphasis": false
+          },
+          {
+            "word": "lead",
+            "start_sec": 26.43,
+            "end_sec": 27.19,
+            "emphasis": false
+          },
+          {
+            "word": "to",
+            "start_sec": 27.19,
+            "end_sec": 27.7,
+            "emphasis": false
+          },
+          {
+            "word": "better",
+            "start_sec": 27.7,
+            "end_sec": 28.72,
+            "emphasis": false
+          },
+          {
+            "word": "outcomes",
+            "start_sec": 28.72,
+            "end_sec": 30.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "2020",
+          "flexibility",
+          "highlighted"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 5,
+        "mode": "word_by_word",
+        "start_sec": 30.0,
+        "end_sec": 45.0,
+        "sentence": "Understanding this nuance can transform how you approach challenges. It\u2019s not just about grit!",
+        "words": [
+          {
+            "word": "Understanding",
+            "start_sec": 30.0,
+            "end_sec": 32.08,
+            "emphasis": true
+          },
+          {
+            "word": "this",
+            "start_sec": 32.08,
+            "end_sec": 32.92,
+            "emphasis": false
+          },
+          {
+            "word": "nuance",
+            "start_sec": 32.92,
+            "end_sec": 34.03,
+            "emphasis": false
+          },
+          {
+            "word": "can",
+            "start_sec": 34.03,
+            "end_sec": 34.72,
+            "emphasis": false
+          },
+          {
+            "word": "transform",
+            "start_sec": 34.72,
+            "end_sec": 36.25,
+            "emphasis": false
+          },
+          {
+            "word": "how",
+            "start_sec": 36.25,
+            "end_sec": 36.94,
+            "emphasis": false
+          },
+          {
+            "word": "you",
+            "start_sec": 36.94,
+            "end_sec": 37.64,
+            "emphasis": false
+          },
+          {
+            "word": "approach",
+            "start_sec": 37.64,
+            "end_sec": 39.03,
+            "emphasis": false
+          },
+          {
+            "word": "challenges",
+            "start_sec": 39.03,
+            "end_sec": 40.69,
+            "emphasis": true
+          },
+          {
+            "word": "It",
+            "start_sec": 40.69,
+            "end_sec": 41.25,
+            "emphasis": false
+          },
+          {
+            "word": "s",
+            "start_sec": 41.25,
+            "end_sec": 41.67,
+            "emphasis": false
+          },
+          {
+            "word": "not",
+            "start_sec": 41.67,
+            "end_sec": 42.36,
+            "emphasis": false
+          },
+          {
+            "word": "just",
+            "start_sec": 42.36,
+            "end_sec": 43.19,
+            "emphasis": false
+          },
+          {
+            "word": "about",
+            "start_sec": 43.19,
+            "end_sec": 44.17,
+            "emphasis": false
+          },
+          {
+            "word": "grit",
+            "start_sec": 44.17,
+            "end_sec": 45.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "Understanding",
+          "challenges"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 6,
+        "mode": "word_by_word",
+        "start_sec": 45.0,
+        "end_sec": 60.0,
+        "sentence": "Want to dive deeper? Follow for more insights on mindset and growth!",
+        "words": [
+          {
+            "word": "Want",
+            "start_sec": 45.0,
+            "end_sec": 46.14,
+            "emphasis": false
+          },
+          {
+            "word": "to",
+            "start_sec": 46.14,
+            "end_sec": 46.9,
+            "emphasis": false
+          },
+          {
+            "word": "dive",
+            "start_sec": 46.9,
+            "end_sec": 48.04,
+            "emphasis": false
+          },
+          {
+            "word": "deeper",
+            "start_sec": 48.04,
+            "end_sec": 49.56,
+            "emphasis": false
+          },
+          {
+            "word": "Follow",
+            "start_sec": 49.56,
+            "end_sec": 51.08,
+            "emphasis": false
+          },
+          {
+            "word": "for",
+            "start_sec": 51.08,
+            "end_sec": 52.03,
+            "emphasis": false
+          },
+          {
+            "word": "more",
+            "start_sec": 52.03,
+            "end_sec": 53.16,
+            "emphasis": false
+          },
+          {
+            "word": "insights",
+            "start_sec": 53.16,
+            "end_sec": 55.06,
+            "emphasis": true
+          },
+          {
+            "word": "on",
+            "start_sec": 55.06,
+            "end_sec": 55.82,
+            "emphasis": false
+          },
+          {
+            "word": "mindset",
+            "start_sec": 55.82,
+            "end_sec": 57.53,
+            "emphasis": true
+          },
+          {
+            "word": "and",
+            "start_sec": 57.53,
+            "end_sec": 58.48,
+            "emphasis": false
+          },
+          {
+            "word": "growth",
+            "start_sec": 58.48,
+            "end_sec": 60.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "insights",
+          "mindset"
+        ],
+        "placement": "bottom third, safe zone"
+      }
+    ]
+  },
+  "audio_mix_plan": {
+    "duration_sec": 60.0,
+    "tracks": {
+      "narration": {
+        "level_db": -3.0,
+        "voice_style": {},
+        "segments": [
+          {
+            "scene_id": 1,
+            "start_sec": 0.0,
+            "end_sec": 2.0,
+            "text": "Here's what science actually says about growth mindset nuance.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_x065_growth_mindset_nuance_001/voice.mp3"
+          },
+          {
+            "scene_id": 2,
+            "start_sec": 2.0,
+            "end_sec": 10.0,
+            "text": "Most think a growth mindset means believing you can improve, but it\u2019s more layered.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_x065_growth_mindset_nuance_001/voice.mp3"
+          },
+          {
+            "scene_id": 3,
+            "start_sec": 10.0,
+            "end_sec": 18.0,
+            "text": "Research shows, it\u2019s also about knowing when to apply effort versus when to pivot.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_x065_growth_mindset_nuance_001/voice.mp3"
+          },
+          {
+            "scene_id": 4,
+            "start_sec": 18.0,
+            "end_sec": 30.0,
+            "text": "A 2020 study highlighted that flexibility in mindset can lead to better outcomes.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_x065_growth_mindset_nuance_001/voice.mp3"
+          },
+          {
+            "scene_id": 5,
+            "start_sec": 30.0,
+            "end_sec": 45.0,
+            "text": "Understanding this nuance can transform how you approach challenges. It\u2019s not just about grit!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_x065_growth_mindset_nuance_001/voice.mp3"
+          },
+          {
+            "scene_id": 6,
+            "start_sec": 45.0,
+            "end_sec": 60.0,
+            "text": "Want to dive deeper? Follow for more insights on mindset and growth!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_x065_growth_mindset_nuance_001/voice.mp3"
+          }
+        ]
+      },
+      "music": {
+        "level_db": -18.0,
+        "style": "educational ambient",
+        "bpm_range": [
+          90,
+          120
+        ],
+        "energy_curve": [
+          "rise",
+          "sustain",
+          "resolve"
+        ],
+        "ducking": {
+          "enabled": true,
+          "trigger": "narration",
+          "duck_to_db": -26.0,
+          "attack_ms": 150,
+          "release_ms": 400
+        }
+      },
+      "sfx": {
+        "level_db": -10.0,
+        "cues": [
+          {
+            "scene_id": 1,
+            "cue": "bass hit",
+            "at_sec": 0.0
+          },
+          {
+            "scene_id": 2,
+            "cue": "whoosh",
+            "at_sec": 2.0
+          },
+          {
+            "scene_id": 3,
+            "cue": "whoosh",
+            "at_sec": 10.0
+          },
+          {
+            "scene_id": 4,
+            "cue": "whoosh",
+            "at_sec": 18.0
+          },
+          {
+            "scene_id": 5,
+            "cue": "whoosh",
+            "at_sec": 30.0
+          },
+          {
+            "scene_id": 6,
+            "cue": "whoosh",
+            "at_sec": 45.0
+          }
+        ]
+      },
+      "transitions": {
+        "level_db": -12.0,
+        "cues": []
+      }
+    },
+    "silence_drops": [
+      {
+        "scene_id": 5,
+        "at_sec": 29.6,
+        "duration_sec": 0.4,
+        "reason": "drop the full mix before the payoff beat"
+      }
+    ],
+    "loudness_target": {
+      "standard": "platform_safe_placeholder",
+      "integrated_lufs": -14.0,
+      "true_peak_db": -1.0,
+      "notes": "Verify with a real loudness pass when actual audio is rendered."
+    }
+  },
+  "transition_plan": {
+    "supported_types": [
+      "cut",
+      "fade",
+      "push",
+      "zoom",
+      "whip_pan",
+      "glitch",
+      "flash",
+      "documentary_slow_zoom",
+      "cinematic_push_in",
+      "quick_cut"
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "motion_plan": [
+    {
+      "scene_id": 1,
+      "effect": "quick_punch_in",
+      "intensity": 70,
+      "duration_sec": 2.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.188
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_out"
+    },
+    {
+      "scene_id": 2,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 3,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 4,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 12.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 5,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 15.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 6,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 15.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    }
+  ],
+  "asset_requirements": [],
+  "missing_assets": [],
+  "render_warnings": [],
+  "estimated_render_duration_sec": 60.0,
+  "production_readiness_score": 100,
+  "validation": {
+    "status": "SUCCESS",
+    "checks": [
+      {
+        "check": "scenes_present",
+        "passed": true,
+        "detail": "6 scenes in the plan."
+      },
+      {
+        "check": "scenes_have_visuals",
+        "passed": true,
+        "detail": "Every scene has a visual asset or prompt."
+      },
+      {
+        "check": "scenes_have_narration",
+        "passed": true,
+        "detail": "Every scene has narration."
+      },
+      {
+        "check": "captions_exist",
+        "passed": true,
+        "detail": "6 caption segments planned."
+      },
+      {
+        "check": "audio_plan_exists",
+        "passed": true,
+        "detail": "Audio mix plan covers narration/music/SFX tracks."
+      },
+      {
+        "check": "runtime_reasonable",
+        "passed": true,
+        "detail": "Total runtime 60.0s is inside the 5.0-180.0s short-form window."
+      },
+      {
+        "check": "output_format_supported",
+        "passed": true,
+        "detail": "9:16 1080x1920 MP4 \u2014 supported."
+      },
+      {
+        "check": "assets_resolved",
+        "passed": true,
+        "detail": "All asset requests were fulfilled."
+      }
+    ],
+    "problems": [],
+    "production_readiness_score": 100
+  },
+  "render_status": "SUCCESS",
+  "mock_output_path": "data/productions/sp100w4_x065_growth_mindset_nuance_001/render.mp4",
+  "output_path": "data/productions/sp100w4_x065_growth_mindset_nuance_001/render.mp4",
+  "mp4_path": "data/productions/sp100w4_x065_growth_mindset_nuance_001/render.mp4",
+  "file_uri": "data/productions/sp100w4_x065_growth_mindset_nuance_001/render.mp4",
+  "render_log": [
+    "color_bed\u2192mp4 (no visual assets resolved)",
+    "ffmpeg_exit=0"
+  ],
+  "render_job": {},
+  "mock": false,
+  "assembly": {
+    "ok": true,
+    "mock": false,
+    "error": "",
+    "output_path": "data/productions/sp100w4_x065_growth_mindset_nuance_001/render.mp4",
+    "absolute_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w4_x065_growth_mindset_nuance_001/render.mp4",
+    "bytes": 375929,
+    "duration_sec": 60.0,
+    "resolution": "1080x1920",
+    "ffmpeg": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/venv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "log": [
+      "color_bed\u2192mp4 (no visual assets resolved)",
+      "ffmpeg_exit=0"
+    ],
+    "visual_count": 0,
+    "has_audio": true,
+    "manifest": {
+      "title": "Growth mindset nuance",
+      "format": {
+        "aspect_ratio": "9:16",
+        "resolution": {
+          "width": 1080,
+          "height": 1920
+        },
+        "container": "mp4",
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "fps": 30,
+        "orientation": "vertical",
+        "platforms": [
+          "youtube_shorts",
+          "tiktok",
+          "instagram_reels",
+          "facebook_reels"
+        ]
+      },
+      "visuals": [],
+      "audio": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w4_x065_growth_mindset_nuance_001/voice.mp3"
+    }
+  },
+  "render_manifest": {
+    "scenes": 6,
+    "timeline_segments": 6,
+    "caption_segments": 6,
+    "audio_tracks": [
+      "narration",
+      "music",
+      "sfx",
+      "transitions"
+    ],
+    "transitions": 5,
+    "assets_requested": 0,
+    "assets_missing": 0,
+    "warnings": 0,
+    "readiness": 100,
+    "ready_for_publishing": true,
+    "real_mp4": true
+  }
+}

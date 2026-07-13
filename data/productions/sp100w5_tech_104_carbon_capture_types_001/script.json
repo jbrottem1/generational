@@ -1,0 +1,84 @@
+{
+  "title": "Carbon Capture Types",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the various scientific methods of carbon capture.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about carbon capture types than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Carbon capture is how we trap CO2 emissions from the air or production processes.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "There are two main types: direct air capture and point source capture.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "comparison"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Direct air capture pulls CO2 directly from the atmosphere, while point source captures it from emission sources like factories.",
+      "emotion": "curiosity",
+      "delivery": "clear",
+      "retention_device": "contrast"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "But here\u2019s the twist\u2014each method has its own challenges and uncertainties.",
+      "emotion": "curiosity",
+      "delivery": "dramatic",
+      "retention_device": "surprise"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding these types helps us grasp how we might tackle climate change effectively.",
+      "emotion": "curiosity",
+      "delivery": "uplifting",
+      "retention_device": "resolution"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious to learn more about climate solutions? Follow for more insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about carbon capture types than social media does. Carbon capture is how we trap CO2 emissions from the air or production processes. There are two main types: direct air capture and point source capture. Direct air capture pulls CO2 directly from the atmosphere, while point source captures it from emission sources like factories. But here\u2019s the twist\u2014each method has its own challenges and uncertainties. Understanding these types helps us grasp how we might tackle climate change effectively. Curious to learn more about climate solutions? Follow for more insights!",
+  "call_to_action": "Curious to learn more about climate solutions? Follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:49:23.805410+00:00",
+  "source": "ai"
+}

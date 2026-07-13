@@ -1,0 +1,156 @@
+{
+  "series": "Generational Biology Academy",
+  "collection": "Biology Fundamentals Volume 1",
+  "series_id": "biology_academy_vol1",
+  "generated_at": "2026-07-11T02:51:44.207614+00:00",
+  "character_id": "CHAR-STICK-001",
+  "teaching_method": "generational_method",
+  "requested": 5,
+  "completed": 5,
+  "success": true,
+  "batch_runtime_sec": 86.99,
+  "export_directory": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Biology Academy Test Run",
+  "episodes": [
+    {
+      "ep": 1,
+      "title": "Why Every Living Thing Is Made of Cells",
+      "filename": "Biology_001_Cells.mp4",
+      "demo_id": "bio_cells",
+      "success": true,
+      "status": "READY",
+      "duration_sec": 23.616,
+      "speaking_ratio": 0.756,
+      "qc": {
+        "passed": true,
+        "purposeful_gestures": true,
+        "idle_ratio": 0.441,
+        "walk_ratio": 0.061,
+        "gesture_counts": {
+          "idle": 208,
+          "think": 14,
+          "point": 222,
+          "present": 28
+        },
+        "speaking_ratio": 0.756
+      },
+      "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Biology Academy Test Run/Biology_001_Cells.mp4",
+      "export_bytes": 612464,
+      "render_time_sec": 10.97,
+      "character_id": "CHAR-STICK-001",
+      "teaching_method": "generational_method"
+    },
+    {
+      "ep": 2,
+      "title": "DNA: The Instruction Manual of Life",
+      "filename": "Biology_002_DNA.mp4",
+      "demo_id": "bio_dna",
+      "success": true,
+      "status": "READY",
+      "duration_sec": 24.048,
+      "speaking_ratio": 0.769,
+      "qc": {
+        "passed": true,
+        "purposeful_gestures": true,
+        "idle_ratio": 0.44,
+        "walk_ratio": 0.06,
+        "gesture_counts": {
+          "idle": 211,
+          "think": 14,
+          "point": 226,
+          "present": 29
+        },
+        "speaking_ratio": 0.769
+      },
+      "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Biology Academy Test Run/Biology_002_DNA.mp4",
+      "export_bytes": 1262129,
+      "render_time_sec": 11.31,
+      "character_id": "CHAR-STICK-001",
+      "teaching_method": "generational_method"
+    },
+    {
+      "ep": 3,
+      "title": "How Your Immune System Finds Invaders",
+      "filename": "Biology_003_Immune_System.mp4",
+      "demo_id": "bio_immune",
+      "success": true,
+      "status": "READY",
+      "duration_sec": 22.536,
+      "speaking_ratio": 0.687,
+      "qc": {
+        "passed": true,
+        "purposeful_gestures": true,
+        "idle_ratio": 0.451,
+        "walk_ratio": 0.051,
+        "gesture_counts": {
+          "idle": 203,
+          "think": 13,
+          "point": 212,
+          "react": 22
+        },
+        "speaking_ratio": 0.687
+      },
+      "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Biology Academy Test Run/Biology_003_Immune_System.mp4",
+      "export_bytes": 585505,
+      "render_time_sec": 10.41,
+      "character_id": "CHAR-STICK-001",
+      "teaching_method": "generational_method"
+    },
+    {
+      "ep": 4,
+      "title": "Why Muscles Actually Grow",
+      "filename": "Biology_004_Muscle_Growth.mp4",
+      "demo_id": "bio_muscle",
+      "success": true,
+      "status": "READY",
+      "duration_sec": 21.312,
+      "speaking_ratio": 0.758,
+      "qc": {
+        "passed": true,
+        "purposeful_gestures": true,
+        "idle_ratio": 0.319,
+        "walk_ratio": 0.07,
+        "gesture_counts": {
+          "idle": 136,
+          "think": 13,
+          "push": 94,
+          "point": 98,
+          "present": 85
+        },
+        "speaking_ratio": 0.758
+      },
+      "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Biology Academy Test Run/Biology_004_Muscle_Growth.mp4",
+      "export_bytes": 542655,
+      "render_time_sec": 9.43,
+      "character_id": "CHAR-STICK-001",
+      "teaching_method": "generational_method"
+    },
+    {
+      "ep": 5,
+      "title": "The Amazing Journey of Oxygen Through Your Body",
+      "filename": "Biology_005_Oxygen_Journey.mp4",
+      "demo_id": "bio_oxygen",
+      "success": true,
+      "status": "READY",
+      "duration_sec": 19.728,
+      "speaking_ratio": 0.802,
+      "qc": {
+        "passed": true,
+        "purposeful_gestures": true,
+        "idle_ratio": 0.439,
+        "walk_ratio": 0.061,
+        "gesture_counts": {
+          "idle": 173,
+          "think": 12,
+          "point": 185,
+          "present": 24
+        },
+        "speaking_ratio": 0.802
+      },
+      "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Biology Academy Test Run/Biology_005_Oxygen_Journey.mp4",
+      "export_bytes": 518414,
+      "render_time_sec": 8.65,
+      "character_id": "CHAR-STICK-001",
+      "teaching_method": "generational_method"
+    }
+  ]
+}

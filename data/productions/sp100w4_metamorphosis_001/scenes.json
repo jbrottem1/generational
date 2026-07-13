@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Did you know butterflies undergo a dramatic reboot?",
+    "visual_description": "Hook visual: Did you know butterflies undergo a dramatic reboot?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Did you know butterflies undergo a dramatic reboot?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Did you know butterflies undergo a dramatic reboot?",
+    "stock_footage_query": "",
+    "text_overlay": "Did you know butterflies",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "From larva to adult, their transformation is nothing short of miraculous.",
+    "visual_description": "Context visual: From larva to adult, their transformation is nothing short of miraculous.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: From larva to adult, their transformation is nothing short of miraculous.",
+    "ai_video_prompt": "Cinematic motion: Context visual: From larva to adult, their transformation is nothing short of miraculous.",
+    "stock_footage_query": "",
+    "text_overlay": "From larva to adult,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "First, the caterpillar munches leaves, storing energy for the next phase.",
+    "visual_description": "Escalation visual: First, the caterpillar munches leaves, storing energy for the next phase.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: First, the caterpillar munches leaves, storing energy for the next phase.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: First, the caterpillar munches leaves, storing energy for the next phase.",
+    "stock_footage_query": "",
+    "text_overlay": "First, the caterpillar munches",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Then, it forms a chrysalis, entering a state of transformation.",
+    "visual_description": "Evidence visual: Then, it forms a chrysalis, entering a state of transformation.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Then, it forms a chrysalis, entering a state of transformation.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Then, it forms a chrysalis, entering a state of transformation.",
+    "stock_footage_query": "",
+    "text_overlay": "Then, it forms a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "wonder",
+    "length_sec": 14.0,
+    "narration": "Inside, its body dissolves, cells reconfiguring into a butterfly.",
+    "visual_description": "Payoff visual: Inside, its body dissolves, cells reconfiguring into a butterfly.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Inside, its body dissolves, cells reconfiguring into a butterfly.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Inside, its body dissolves, cells reconfiguring into a butterfly.",
+    "stock_footage_query": "",
+    "text_overlay": "Inside, its body dissolves,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "This process can take weeks, but the result? Stunning.",
+    "visual_description": "Pattern Interrupt visual: This process can take weeks, but the result? Stunning.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: This process can take weeks, but the result? Stunning.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: This process can take weeks, but the result? Stunning.",
+    "stock_footage_query": "",
+    "text_overlay": "This process can take",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 54.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 6.0,
+    "narration": "Curious about more science wonders? Like and follow for more!",
+    "visual_description": "Cta visual: Curious about more science wonders? Like and follow for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more science wonders? Like and follow for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more science wonders? Like and follow for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more science",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 54.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 54.0
+    }
+  }
+]

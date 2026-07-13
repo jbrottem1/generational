@@ -1,0 +1,74 @@
+{
+  "title": "Hand Hygiene Science",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the science behind proper hand hygiene.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about hand hygiene than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Most germs thrive on our hands. But how we wash them matters.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Simply running them under water? Not enough! You need soap.",
+      "emotion": "curiosity",
+      "delivery": "increasing intensity",
+      "retention_device": "surprise"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show washing for 20 seconds removes 99% of germs. So sing your favorite tune!",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "payoff",
+      "voiceover": "Neglecting this can lead to illness, especially for the vulnerable. It\u2019s simple but vital.",
+      "emotion": "urgency",
+      "delivery": "serious",
+      "retention_device": "urgency"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "So, wash your hands regularly. Stay safe and share this knowledge!",
+      "emotion": "motivational",
+      "delivery": "encouraging",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about hand hygiene than social media does. Most germs thrive on our hands. But how we wash them matters. Simply running them under water? Not enough! You need soap. Studies show washing for 20 seconds removes 99% of germs. So sing your favorite tune! Neglecting this can lead to illness, especially for the vulnerable. It\u2019s simple but vital. So, wash your hands regularly. Stay safe and share this knowledge!",
+  "call_to_action": "So, wash your hands regularly. Stay safe and share this knowledge!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:53:48.935649+00:00",
+  "source": "ai"
+}

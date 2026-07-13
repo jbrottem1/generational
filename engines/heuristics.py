@@ -92,6 +92,32 @@ VISUAL_NOVELTY_WORDS = [
     "visual proof", "side by side",
 ]
 
+# Word/phrase banks for Psychology Threat Detection (engines/threat_detection.py,
+# Phase 3). These flag production/attention failure modes rather than reward
+# viral potential — the inverse framing of the banks above.
+PAYOFF_WORDS = [
+    "here's why", "here's how", "the reason", "turns out", "the answer",
+    "because", "revealed", "here's what happened", "the truth is",
+    "explains why", "so here's", "which means",
+]
+
+GENERIC_OPENER_PHRASES = [
+    "in this video", "today we're going to", "let's talk about",
+    "so basically", "as we all know", "welcome back", "hey guys",
+    "without further ado", "let's get into it", "today i want to talk about",
+]
+
+POLICY_RISK_WORDS = [
+    "kill", "suicide", "self harm", "self-harm", "drugs", "weapon", "gun",
+    "violence", "hate", "nudity", "illegal", "explicit", "abuse", "terrorist",
+]
+
+MANIPULATIVE_WORDS = [
+    "you'll regret", "everyone is doing it", "don't miss out", "act now",
+    "only you", "before it's too late", "you need to", "you must",
+    "last chance", "or else", "you have to", "trust me",
+]
+
 STOPWORDS = {
     "the", "a", "an", "and", "or", "but", "about", "your", "you", "this",
     "that", "with", "for", "from", "into", "what", "when", "how", "why",
@@ -119,6 +145,20 @@ ABSOLUTE_CLAIMS = {
 
 def clamp(value: float, low: int = 5, high: int = 98) -> int:
     return int(max(low, min(high, value)))
+
+
+def weighted_blend(values: dict, weights: dict, low: int = 5, high: int = 98) -> int:
+    """Blend a dimension-score dict into one 0-100 score via weighted sum.
+
+    Every "many dimensions -> one headline score" engine (Psychology's
+    ViralScore, the Attention Graph's Attention Score, Threat Detection's
+    Threat Score) used to duplicate this exact `clamp(sum(values[k] * w ...))`
+    formula. It now lives here once; callers only supply their own
+    `values`/`weights` dicts and, if needed, their own clamp bounds (Threat
+    Detection blends to the full 0-100 range; Psychology/Attention Graph keep
+    the engine-wide default 5-98 range).
+    """
+    return clamp(sum(values[key] * weight for key, weight in weights.items()), low=low, high=high)
 
 
 def stable_jitter(text: str, span: int = 8) -> int:

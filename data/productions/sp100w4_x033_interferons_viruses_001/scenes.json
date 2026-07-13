@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about interferons versus viruses.",
+    "visual_description": "Hook visual: Here's what science actually says about interferons versus viruses.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about interferons versus viruses.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about interferons versus viruses.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Interferons are proteins produced by cells in response to viral infections.",
+    "visual_description": "Context visual: Interferons are proteins produced by cells in response to viral infections.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Interferons are proteins produced by cells in response to viral infections.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Interferons are proteins produced by cells in response to viral infections.",
+    "stock_footage_query": "",
+    "text_overlay": "Interferons are proteins produced",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "They signal neighboring cells to boost their defenses, creating a viral shield.",
+    "visual_description": "Escalation visual: They signal neighboring cells to boost their defenses, creating a viral shield.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: They signal neighboring cells to boost their defenses, creating a viral shield.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: They signal neighboring cells to boost their defenses, creating a viral shield.",
+    "stock_footage_query": "",
+    "text_overlay": "They signal neighboring cells",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show interferons can limit virus replication and enhance immune responses.",
+    "visual_description": "Evidence visual: Studies show interferons can limit virus replication and enhance immune responses.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show interferons can limit virus replication and enhance immune responses.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show interferons can limit virus replication and enhance immune responses.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show interferons can",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "pattern_interrupt",
+    "emotion": "surprise",
+    "length_sec": 8.0,
+    "narration": "But did you know? Some viruses have evolved to evade this defense!",
+    "visual_description": "Pattern Interrupt visual: But did you know? Some viruses have evolved to evade this defense!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: But did you know? Some viruses have evolved to evade this defense!",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: But did you know? Some viruses have evolved to evade this defense!",
+    "stock_footage_query": "",
+    "text_overlay": "But did you know?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Research is ongoing, revealing interferons' potential in treatments for diseases like COVID-19.",
+    "visual_description": "Payoff visual: Research is ongoing, revealing interferons' potential in treatments for diseases like COVID-19.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Research is ongoing, revealing interferons' potential in treatments for diseases like COVID-19.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Research is ongoing, revealing interferons' potential in treatments for diseases like COVID-19.",
+    "stock_footage_query": "",
+    "text_overlay": "Research is ongoing, revealing",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 44.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 16.0,
+    "narration": "Curious for more? Hit that follow button for the latest in science!",
+    "visual_description": "Cta visual: Curious for more? Hit that follow button for the latest in science!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious for more? Hit that follow button for the latest in science!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious for more? Hit that follow button for the latest in science!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious for more? Hit",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 44.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 44.0
+    }
+  }
+]

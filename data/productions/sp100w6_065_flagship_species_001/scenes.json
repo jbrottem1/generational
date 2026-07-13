@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Did you know some species can carry the weight of entire ecosystems?",
+    "visual_description": "Hook visual: Did you know some species can carry the weight of entire ecosystems?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Did you know some species can carry the weight of entire ecosystems?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Did you know some species can carry the weight of entire ecosystems?",
+    "stock_footage_query": "",
+    "text_overlay": "Did you know some",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "These are flagship species\u2014charismatic animals that symbolize conservation efforts.",
+    "visual_description": "Context visual: These are flagship species\u2014charismatic animals that symbolize conservation efforts.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: These are flagship species\u2014charismatic animals that symbolize conservation efforts.",
+    "ai_video_prompt": "Cinematic motion: Context visual: These are flagship species\u2014charismatic animals that symbolize conservation efforts.",
+    "stock_footage_query": "",
+    "text_overlay": "These are flagship species\u2014charismatic",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Think of lions, pandas, or sea turtles. Their survival impacts countless others.",
+    "visual_description": "Escalation visual: Think of lions, pandas, or sea turtles. Their survival impacts countless others.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Think of lions, pandas, or sea turtles. Their survival impacts countless others.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Think of lions, pandas, or sea turtles. Their survival impacts countless others.",
+    "stock_footage_query": "",
+    "text_overlay": "Think of lions, pandas,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Research shows that protecting these species can help entire ecosystems thrive.",
+    "visual_description": "Evidence visual: Research shows that protecting these species can help entire ecosystems thrive.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows that protecting these species can help entire ecosystems thrive.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows that protecting these species can help entire ecosystems thrive.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows that protecting",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But here's the twist\u2014conservation isn\u2019t just about them. It\u2019s about all of us.",
+    "visual_description": "Payoff visual: But here's the twist\u2014conservation isn\u2019t just about them. It\u2019s about all of us.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: But here's the twist\u2014conservation isn\u2019t just about them. It\u2019s about all of us.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: But here's the twist\u2014conservation isn\u2019t just about them. It\u2019s about all of us.",
+    "stock_footage_query": "",
+    "text_overlay": "But here's the twist\u2014conservation",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Want to dive deeper into our planet's mysteries? Hit follow and join the journey!",
+    "visual_description": "Cta visual: Want to dive deeper into our planet's mysteries? Hit follow and join the journey!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into our planet's mysteries? Hit follow and join the journey!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into our planet's mysteries? Hit follow and join the journey!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

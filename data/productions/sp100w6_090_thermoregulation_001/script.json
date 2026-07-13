@@ -1,0 +1,84 @@
+{
+  "title": "Thermoregulation",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "An engaging explanation of thermoregulation that balances curiosity with scientific accuracy.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "How does your body keep itself at the perfect temperature?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "It's called thermoregulation\u2014a process vital for survival.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But it's not just about sweating or shivering. There\u2019s so much more!",
+      "emotion": "curiosity",
+      "delivery": "excited",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Your body uses blood flow, hormones, and even behavior to maintain balance.",
+      "emotion": "curiosity",
+      "delivery": "confident",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Every choice, from what you wear to when you drink water, impacts this process.",
+      "emotion": "curiosity",
+      "delivery": "reveal",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 42.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "And there's still so much we don\u2019t fully understand!",
+      "emotion": "curiosity",
+      "delivery": "intriguing",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 42.0,
+      "end_time": 50.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into the science of your body? Hit follow!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "none"
+    }
+  ],
+  "full_voiceover": "How does your body keep itself at the perfect temperature? It's called thermoregulation\u2014a process vital for survival. But it's not just about sweating or shivering. There\u2019s so much more! Your body uses blood flow, hormones, and even behavior to maintain balance. Every choice, from what you wear to when you drink water, impacts this process. And there's still so much we don\u2019t fully understand! Want to dive deeper into the science of your body? Hit follow!",
+  "call_to_action": "Want to dive deeper into the science of your body? Hit follow!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:07:46.115457+00:00",
+  "source": "ai"
+}

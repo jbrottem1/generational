@@ -1,0 +1,74 @@
+{
+  "title": "The Stages of Sleep",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the fascinating stages of sleep and their unique roles in our health.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Did you know sleep isn\u2019t just resting? It\u2019s a dynamic process!",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Your sleep cycles through light, deep, and REM stages. Each plays a crucial role.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Light sleep? It helps you transition into deeper stages. But that\u2019s just the beginning.",
+      "emotion": "curiosity",
+      "delivery": "building excitement",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Deep sleep is when your body repairs itself, boosting immune function and growth.",
+      "emotion": "curiosity",
+      "delivery": "clear and factual",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "And then there\u2019s REM sleep\u2014where dreams happen and memory consolidation kicks in.",
+      "emotion": "curiosity",
+      "delivery": "conclusive and rewarding",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to unlock better sleep? Follow for more insights on health and biology!",
+      "emotion": "curiosity",
+      "delivery": "friendly and inviting",
+      "retention_device": "natural CTA"
+    }
+  ],
+  "full_voiceover": "Did you know sleep isn\u2019t just resting? It\u2019s a dynamic process! Your sleep cycles through light, deep, and REM stages. Each plays a crucial role. Light sleep? It helps you transition into deeper stages. But that\u2019s just the beginning. Deep sleep is when your body repairs itself, boosting immune function and growth. And then there\u2019s REM sleep\u2014where dreams happen and memory consolidation kicks in. Want to unlock better sleep? Follow for more insights on health and biology!",
+  "call_to_action": "Want to unlock better sleep? Follow for more insights on health and biology!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:53:33.742952+00:00",
+  "source": "ai"
+}

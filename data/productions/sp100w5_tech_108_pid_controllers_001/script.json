@@ -1,0 +1,74 @@
+{
+  "title": "PID Controllers Explained",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "An intriguing exploration of PID controllers and their significance in technology.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about PID controllers than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "PID stands for Proportional-Integral-Derivative. It's a control loop feedback mechanism.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Used in everything from drones to thermostats, PID controllers help systems maintain stability.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "The proportional component reacts to current errors, the integral to past errors, and the derivative predicts future errors.",
+      "emotion": "curiosity",
+      "delivery": "clear and concise",
+      "retention_device": "visual analogy"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "Together, they create a balance, ensuring smooth operation in complex systems. It\u2019s like a conductor leading an orchestra.",
+      "emotion": "curiosity",
+      "delivery": "thoughtful",
+      "retention_device": "satisfying conclusion"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how PID can affect your tech? Like and follow for more insights!",
+      "emotion": "curiosity",
+      "delivery": "motivational",
+      "retention_device": "direct audience engagement"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about PID controllers than social media does. PID stands for Proportional-Integral-Derivative. It's a control loop feedback mechanism. Used in everything from drones to thermostats, PID controllers help systems maintain stability. The proportional component reacts to current errors, the integral to past errors, and the derivative predicts future errors. Together, they create a balance, ensuring smooth operation in complex systems. It\u2019s like a conductor leading an orchestra. Curious about how PID can affect your tech? Like and follow for more insights!",
+  "call_to_action": "Like and follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:50:10.196458+00:00",
+  "source": "ai"
+}

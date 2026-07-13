@@ -1,0 +1,74 @@
+{
+  "title": "Sedimentary Rocks",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the fascinating formation and significance of sedimentary rocks.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you sedimentary rocks hold secrets about Earth\u2019s past?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Sedimentary rocks form from layers of sediments, like mud and sand, compacted over time.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "These layers can reveal stunning details about ancient environments and even past life forms.",
+      "emotion": "wonder",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Fossils, for instance, often found in sedimentary rocks, are key to understanding evolution.",
+      "emotion": "fascination",
+      "delivery": "enthusiastic",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "So next time you see a sedimentary rock, remember, it\u2019s a page from Earth\u2019s history waiting to be read.",
+      "emotion": "awe",
+      "delivery": "inspirational",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more Earth secrets? Hit that follow button!",
+      "emotion": "inviting",
+      "delivery": "friendly",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "What if I told you sedimentary rocks hold secrets about Earth\u2019s past? Sedimentary rocks form from layers of sediments, like mud and sand, compacted over time. These layers can reveal stunning details about ancient environments and even past life forms. Fossils, for instance, often found in sedimentary rocks, are key to understanding evolution. So next time you see a sedimentary rock, remember, it\u2019s a page from Earth\u2019s history waiting to be read. Curious about more Earth secrets? Hit that follow button!",
+  "call_to_action": "Curious about more Earth secrets? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:41:47.925460+00:00",
+  "source": "ai"
+}

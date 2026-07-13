@@ -1,0 +1,79 @@
+[
+  {
+    "see": "center-punched single subject, negative space above for text; subject: Did you know octopuses can rewrite their own genetic messages?; emotion: curiosity; educational documentary lighting",
+    "media_type": "scientific_illustration",
+    "camera_movement": "quick punch-in on key detail",
+    "motion_effects": "fast punch-in from 120% to 100% in the first 0.5s",
+    "transition": "hard cut",
+    "on_screen_text": "Did you know octopuses can",
+    "captions": "upper third \u2014 clear of the punch-in subject",
+    "supporting_graphics": "scientific_illustration",
+    "density_target_sec": 3.5
+  },
+  {
+    "see": "rule of thirds, subject leading the eye toward the next cut; subject: They can perform A-to-I RNA editing, transforming their neural transcripts on the fly.; emotion: curiosity; educational documentary lighting",
+    "media_type": "scientific_illustration",
+    "camera_movement": "ken burns drift right",
+    "motion_effects": "subtle 3% push on the key sentence",
+    "transition": "hard cut",
+    "on_screen_text": "They can perform A-to-I RNA",
+    "captions": "bottom third, safe zone",
+    "supporting_graphics": "scientific_illustration",
+    "density_target_sec": 3.5
+  },
+  {
+    "see": "off-center rule-of-thirds, tilted horizon; subject: But hold on, this isn't DNA rewriting!; emotion: shock; educational documentary lighting",
+    "media_type": "scientific_illustration",
+    "camera_movement": "slow zoom out reveal",
+    "motion_effects": "none \u2014 the whip carries the energy",
+    "transition": "whip cut",
+    "on_screen_text": "But hold on, this isn't",
+    "captions": "center \u2014 stamped with the interrupt word",
+    "supporting_graphics": "scientific_illustration",
+    "density_target_sec": 3.5
+  },
+  {
+    "see": "rule of thirds, subject leading the eye toward the next cut; subject: Research from scientists like Rosenthal and Liscovitch-Brauer shows these edits enhance their adaptability.; emotion: curiosity; educational documentary lighting",
+    "media_type": "real_world_photograph",
+    "camera_movement": "pan left across subject",
+    "motion_effects": "subtle 3% push on the key sentence",
+    "transition": "hard cut",
+    "on_screen_text": "Research from scientists like Rosenthal",
+    "captions": "bottom third, safe zone",
+    "supporting_graphics": "",
+    "density_target_sec": 3.5
+  },
+  {
+    "see": "layered foreground obscuring a partially visible subject; subject: This RNA editing helps octopuses thrive in different environments, reacting to challenges in real-time.; emotion: wonder; educational documentary lighting",
+    "media_type": "infographic",
+    "camera_movement": "documentary slow zoom",
+    "motion_effects": "creeping 100% to 108% push across the scene",
+    "transition": "match cut",
+    "on_screen_text": "This RNA editing helps octopuses",
+    "captions": "lower third \u2014 under the concealed reveal",
+    "supporting_graphics": "infographic",
+    "density_target_sec": 3.5
+  },
+  {
+    "see": "hero framing, shallow depth of field, clean background; subject: It\u2019s an evolutionary trade-off, balancing complexity with survival. Incredible, right?; emotion: awe; educational documentary lighting",
+    "media_type": "ai_cinematic_artwork",
+    "camera_movement": "subtle parallax push",
+    "motion_effects": "slow-motion settle from 105% to 100%",
+    "transition": "dissolve",
+    "on_screen_text": "It\u2019s an evolutionary trade-off, balancing",
+    "captions": "center \u2014 the takeaway IS the frame",
+    "supporting_graphics": "",
+    "density_target_sec": 3.5
+  },
+  {
+    "see": "centered, eye-level, symmetrical, direct eye contact with lens; subject: Curious about more weird science? Hit follow for more!; emotion: invitation; educational documentary lighting",
+    "media_type": "scientific_illustration",
+    "camera_movement": "slow cinematic push-in",
+    "motion_effects": "none \u2014 stability signals sincerity",
+    "transition": "fade out",
+    "on_screen_text": "Curious about more weird science?",
+    "captions": "lower third \u2014 beside the follow button mimic",
+    "supporting_graphics": "scientific_illustration",
+    "density_target_sec": 3.5
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Nothing escapes a black hole \u2014 except the truth about how they work.",
+    "visual_description": "Hook visual: Nothing escapes a black hole \u2014 except the truth about how they work.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Nothing escapes a black hole \u2014 except the truth about how they work.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Nothing escapes a black hole \u2014 except the truth about how they work.",
+    "stock_footage_query": "",
+    "text_overlay": "Nothing escapes a black",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Black holes are regions where gravity is so strong, not even light can escape.",
+    "visual_description": "Context visual: Black holes are regions where gravity is so strong, not even light can escape.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Black holes are regions where gravity is so strong, not even light can escape.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Black holes are regions where gravity is so strong, not even light can escape.",
+    "stock_footage_query": "",
+    "text_overlay": "Black holes are regions",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "They form when massive stars collapse, creating an event horizon \u2014 the point of no return.",
+    "visual_description": "Escalation visual: They form when massive stars collapse, creating an event horizon \u2014 the point of no return.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: They form when massive stars collapse, creating an event horizon \u2014 the point of no return.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: They form when massive stars collapse, creating an event horizon \u2014 the point of no return.",
+    "stock_footage_query": "",
+    "text_overlay": "They form when massive",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Inside, gravity distorts spacetime, creating bizarre effects. Imagine time slowing down.",
+    "visual_description": "Evidence visual: Inside, gravity distorts spacetime, creating bizarre effects. Imagine time slowing down.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Inside, gravity distorts spacetime, creating bizarre effects. Imagine time slowing down.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Inside, gravity distorts spacetime, creating bizarre effects. Imagine time slowing down.",
+    "stock_footage_query": "",
+    "text_overlay": "Inside, gravity distorts spacetime,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "wonder",
+    "length_sec": 10.0,
+    "narration": "So, while we can't escape a black hole, understanding them reveals the true wonders of the universe.",
+    "visual_description": "Payoff visual: So, while we can't escape a black hole, understanding them reveals the true wonders of the universe.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, while we can't escape a black hole, understanding them reveals the true wonders of the universe.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, while we can't escape a black hole, understanding them reveals the true wonders of the universe.",
+    "stock_footage_query": "",
+    "text_overlay": "So, while we can't",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 36.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 24.0,
+    "narration": "Curious for more cosmic mysteries? Hit that follow button!",
+    "visual_description": "Cta visual: Curious for more cosmic mysteries? Hit that follow button!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious for more cosmic mysteries? Hit that follow button!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious for more cosmic mysteries? Hit that follow button!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious for more cosmic",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 36.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 36.0
+    }
+  }
+]

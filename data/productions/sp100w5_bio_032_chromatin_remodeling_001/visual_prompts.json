@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science has a clearer story about chromatin remodeling than social media does.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Chromatin is a complex of DNA and protein that organizes genetic material. But how does it affect gene expression?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Chromatin remodeling alters the structure of this complex, making genes more or less accessible for transcription.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Research shows that enzymes and protein complexes are crucial in this process, but it\u2019s still not fully understood.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Understanding chromatin remodeling could unlock new treatments for diseases like cancer. It\u2019s a frontier in genetics!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious for more? Hit that follow button for the latest in science!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science has a clearer story about chromatin remodeling than social media does.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Chromatin is a complex of DNA and protein that organizes genetic material. But how does it affect gene expression?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Chromatin remodeling alters the structure of this complex, making genes more or less accessible for transcription.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Research shows that enzymes and protein complexes are crucial in this process, but it\u2019s still not fully understood.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Understanding chromatin remodeling could unlock new treatments for diseases like cancer. It\u2019s a frontier in genetics!",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious for more? Hit that follow button for the latest in science!",
+      "duration_sec": 22.0
+    }
+  ]
+}

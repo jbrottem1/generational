@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about Enceladus plumes than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about Enceladus plumes than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about Enceladus plumes than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about Enceladus plumes than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Enceladus, a moon of Saturn, shoots out icy plumes into space. But why?",
+    "visual_description": "Context visual: Enceladus, a moon of Saturn, shoots out icy plumes into space. But why?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Enceladus, a moon of Saturn, shoots out icy plumes into space. But why?",
+    "ai_video_prompt": "Cinematic motion: Context visual: Enceladus, a moon of Saturn, shoots out icy plumes into space. But why?",
+    "stock_footage_query": "",
+    "text_overlay": "Enceladus, a moon of",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "intrigue",
+    "length_sec": 8.0,
+    "narration": "Scientists believe these plumes come from a subsurface ocean, hinting at possible life.",
+    "visual_description": "Escalation visual: Scientists believe these plumes come from a subsurface ocean, hinting at possible life.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Scientists believe these plumes come from a subsurface ocean, hinting at possible life.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Scientists believe these plumes come from a subsurface ocean, hinting at possible life.",
+    "stock_footage_query": "",
+    "text_overlay": "Scientists believe these plumes",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "wonder",
+    "length_sec": 8.0,
+    "narration": "Data from the Cassini mission showed organic molecules in the plumes. Fascinating, right?",
+    "visual_description": "Evidence visual: Data from the Cassini mission showed organic molecules in the plumes. Fascinating, right?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Data from the Cassini mission showed organic molecules in the plumes. Fascinating, right?",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Data from the Cassini mission showed organic molecules in the plumes. Fascinating, right?",
+    "stock_footage_query": "",
+    "text_overlay": "Data from the Cassini",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "excitement",
+    "length_sec": 14.0,
+    "narration": "So, Enceladus isn't just a frozen moon. It holds clues about our universe's potential for life!",
+    "visual_description": "Payoff visual: So, Enceladus isn't just a frozen moon. It holds clues about our universe's potential for life!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, Enceladus isn't just a frozen moon. It holds clues about our universe's potential for life!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, Enceladus isn't just a frozen moon. It holds clues about our universe's potential for life!",
+    "stock_footage_query": "",
+    "text_overlay": "So, Enceladus isn't just",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "enthusiasm",
+    "length_sec": 20.0,
+    "narration": "Curious about other space mysteries? Like and follow for more discoveries!",
+    "visual_description": "Cta visual: Curious about other space mysteries? Like and follow for more discoveries!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about other space mysteries? Like and follow for more discoveries!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about other space mysteries? Like and follow for more discoveries!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about other space",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "title": "Basal Ganglia and Movement",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the vital role of the basal ganglia in movement control and its connection to Parkinson's research.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if a hidden brain circuit decides how you move?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Meet the basal ganglia, a deep brain structure crucial for movement.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "These circuits select and smooth our actions, making movement fluid.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research links basal ganglia dysfunction to Parkinson's disease, making it a key area of study.",
+      "emotion": "curiosity",
+      "delivery": "insightful",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding these circuits could unlock new treatments for movement disorders.",
+      "emotion": "curiosity",
+      "delivery": "hopeful",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how your brain controls movement? Follow for more insights!",
+      "emotion": "curiosity",
+      "delivery": "encouraging",
+      "retention_device": "none"
+    }
+  ],
+  "full_voiceover": "What if a hidden brain circuit decides how you move? Meet the basal ganglia, a deep brain structure crucial for movement. These circuits select and smooth our actions, making movement fluid. Research links basal ganglia dysfunction to Parkinson's disease, making it a key area of study. Understanding these circuits could unlock new treatments for movement disorders. Curious about how your brain controls movement? Follow for more insights!",
+  "call_to_action": "Follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:31:48.083815+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if your brain has a secret way to detox?",
+    "visual_description": "Hook visual: What if your brain has a secret way to detox?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if your brain has a secret way to detox?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if your brain has a secret way to detox?",
+    "stock_footage_query": "",
+    "text_overlay": "What if your brain",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Enter the glymphatic system, your brain's cleaning crew that works while you sleep.",
+    "visual_description": "Context visual: Enter the glymphatic system, your brain's cleaning crew that works while you sleep.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Enter the glymphatic system, your brain's cleaning crew that works while you sleep.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Enter the glymphatic system, your brain's cleaning crew that works while you sleep.",
+    "stock_footage_query": "",
+    "text_overlay": "Enter the glymphatic system,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This network of vessels removes waste like amyloid-beta, linked to Alzheimer\u2019s.",
+    "visual_description": "Escalation visual: This network of vessels removes waste like amyloid-beta, linked to Alzheimer\u2019s.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: This network of vessels removes waste like amyloid-beta, linked to Alzheimer\u2019s.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: This network of vessels removes waste like amyloid-beta, linked to Alzheimer\u2019s.",
+    "stock_footage_query": "",
+    "text_overlay": "This network of vessels",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Recent studies show sleep quality directly impacts this system's efficiency.",
+    "visual_description": "Evidence visual: Recent studies show sleep quality directly impacts this system's efficiency.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Recent studies show sleep quality directly impacts this system's efficiency.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Recent studies show sleep quality directly impacts this system's efficiency.",
+    "stock_footage_query": "",
+    "text_overlay": "Recent studies show sleep",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "So, better sleep means a healthier brain. Are you getting enough rest?",
+    "visual_description": "Payoff visual: So, better sleep means a healthier brain. Are you getting enough rest?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, better sleep means a healthier brain. Are you getting enough rest?",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, better sleep means a healthier brain. Are you getting enough rest?",
+    "stock_footage_query": "",
+    "text_overlay": "So, better sleep means",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Dive deeper into brain health\u2014like and follow for more science insights!",
+    "visual_description": "Cta visual: Dive deeper into brain health\u2014like and follow for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Dive deeper into brain health\u2014like and follow for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Dive deeper into brain health\u2014like and follow for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Dive deeper into brain",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

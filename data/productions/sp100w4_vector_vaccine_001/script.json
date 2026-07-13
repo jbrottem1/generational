@@ -1,0 +1,74 @@
+{
+  "title": "What Viral Vector Vaccines Are",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring how viral vector vaccines use harmless viruses to teach our immune system.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Imagine using a virus to fight a virus.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Viral vector vaccines use a harmless virus shell to deliver genetic instructions to our cells.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Once inside, these instructions help our immune system recognize and combat real threats.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "This method has been crucial in fighting diseases, including COVID-19.",
+      "emotion": "curiosity",
+      "delivery": "assertive",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "With ongoing research, viral vector vaccines may hold the key to future immunizations.",
+      "emotion": "curiosity",
+      "delivery": "hopeful",
+      "retention_device": "solution reveal"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how vaccines work? Like and follow for more science insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Imagine using a virus to fight a virus. Viral vector vaccines use a harmless virus shell to deliver genetic instructions to our cells. Once inside, these instructions help our immune system recognize and combat real threats. This method has been crucial in fighting diseases, including COVID-19. With ongoing research, viral vector vaccines may hold the key to future immunizations. Curious about how vaccines work? Like and follow for more science insights!",
+  "call_to_action": "Like and follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:32:25.329200+00:00",
+  "source": "ai"
+}

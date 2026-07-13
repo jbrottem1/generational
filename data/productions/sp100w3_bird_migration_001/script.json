@@ -1,0 +1,74 @@
+{
+  "title": "How Birds Navigate Migration",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explores the fascinating navigation methods birds use during migration.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Birds navigate using sunlight, stars, and even Earth's magnetic field.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Imagine flying thousands of miles with no map, just instincts guiding your way.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "They rely on the sun during the day and stars at night. But how do they know where to go?",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows many species also use Earth's magnetic field for orientation. It\u2019s called magnetoreception.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 36.0,
+      "segment_type": "payoff",
+      "voiceover": "Ongoing studies are exploring how birds actually sense these magnetic signals. Amazing, right?",
+      "emotion": "curiosity",
+      "delivery": "excited",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 36.0,
+      "end_time": 45.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more about birds? Hit that follow button for more incredible insights!",
+      "emotion": "curiosity",
+      "delivery": "encouraging",
+      "retention_device": "clear call to action"
+    }
+  ],
+  "full_voiceover": "Birds navigate using sunlight, stars, and even Earth's magnetic field. Imagine flying thousands of miles with no map, just instincts guiding your way. They rely on the sun during the day and stars at night. But how do they know where to go? Research shows many species also use Earth's magnetic field for orientation. It\u2019s called magnetoreception. Ongoing studies are exploring how birds actually sense these magnetic signals. Amazing, right? Want to learn more about birds? Hit that follow button for more incredible insights!",
+  "call_to_action": "Hit that follow button for more incredible insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:55:25.213951+00:00",
+  "source": "ai"
+}

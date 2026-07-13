@@ -1,0 +1,74 @@
+{
+  "title": "Production effect",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the production effect reveals surprising insights about memory.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Did you know how the way you produce information changes your memory?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "It's called the production effect, and it's more powerful than you think.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "When you read, write, or say information aloud, your brain locks it in better.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows that producing information enhances recall, especially in learning environments.",
+      "emotion": "curiosity",
+      "delivery": "authoritative",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "So next time you study, try saying it out loud. It could make all the difference.",
+      "emotion": "curiosity",
+      "delivery": "inspiring",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more about memory tricks? Follow for tips!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "natural CTA"
+    }
+  ],
+  "full_voiceover": "Did you know how the way you produce information changes your memory? It's called the production effect, and it's more powerful than you think. When you read, write, or say information aloud, your brain locks it in better. Research shows that producing information enhances recall, especially in learning environments. So next time you study, try saying it out loud. It could make all the difference. Want to learn more about memory tricks? Follow for tips!",
+  "call_to_action": "Want to learn more about memory tricks? Follow for tips!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:52:50.898848+00:00",
+  "source": "ai"
+}

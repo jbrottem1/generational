@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about PID controllers than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about PID controllers than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about PID controllers than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about PID controllers than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "PID stands for Proportional-Integral-Derivative. It's a control loop feedback mechanism.",
+    "visual_description": "Context visual: PID stands for Proportional-Integral-Derivative. It's a control loop feedback mechanism.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: PID stands for Proportional-Integral-Derivative. It's a control loop feedback mechanism.",
+    "ai_video_prompt": "Cinematic motion: Context visual: PID stands for Proportional-Integral-Derivative. It's a control loop feedback mechanism.",
+    "stock_footage_query": "",
+    "text_overlay": "PID stands for Proportional-Integral-Derivative.",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Used in everything from drones to thermostats, PID controllers help systems maintain stability.",
+    "visual_description": "Escalation visual: Used in everything from drones to thermostats, PID controllers help systems maintain stability.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Used in everything from drones to thermostats, PID controllers help systems maintain stability.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Used in everything from drones to thermostats, PID controllers help systems maintain stability.",
+    "stock_footage_query": "",
+    "text_overlay": "Used in everything from",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "The proportional component reacts to current errors, the integral to past errors, and the derivative predicts future errors.",
+    "visual_description": "Evidence visual: The proportional component reacts to current errors, the integral to past errors, and the derivative predicts future err",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: The proportional component reacts to current errors, the integral to past errors, and the derivative predicts future err",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: The proportional component reacts to current errors, the integral to past errors, and the derivative predicts future err",
+    "stock_footage_query": "",
+    "text_overlay": "The proportional component reacts",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "Together, they create a balance, ensuring smooth operation in complex systems. It\u2019s like a conductor leading an orchestra.",
+    "visual_description": "Payoff visual: Together, they create a balance, ensuring smooth operation in complex systems. It\u2019s like a conductor leading an orchestr",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Together, they create a balance, ensuring smooth operation in complex systems. It\u2019s like a conductor leading an orchestr",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Together, they create a balance, ensuring smooth operation in complex systems. It\u2019s like a conductor leading an orchestr",
+    "stock_footage_query": "",
+    "text_overlay": "Together, they create a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Curious about how PID can affect your tech? Like and follow for more insights!",
+    "visual_description": "Cta visual: Curious about how PID can affect your tech? Like and follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about how PID can affect your tech? Like and follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about how PID can affect your tech? Like and follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about how PID",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

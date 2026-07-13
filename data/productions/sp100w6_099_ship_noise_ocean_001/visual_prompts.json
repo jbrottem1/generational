@@ -1,0 +1,76 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Ever wondered how ship noise affects ocean life?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: From cargo ships to cruise liners, vessels create a symphony of sounds underwater.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: But this noise isn\u2019t just background music; it disrupts communication among marine animals.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Studies show that species like dolphins and whales rely on sound to navigate and find food.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Pattern Interrupt visual: Imagine trying to talk in a crowded room\u2014difficult, right? That\u2019s similar to what they face.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Payoff visual: Reducing ship noise could restore balance, allowing these creatures to thrive again.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cta visual: Curious about more ocean mysteries? Hit subscribe for deep dives into science!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Ever wondered how ship noise affects ocean life?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: From cargo ships to cruise liners, vessels create a symphony of sounds underwater.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: But this noise isn\u2019t just background music; it disrupts communication among marine animals.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Studies show that species like dolphins and whales rely on sound to navigate and find food.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Pattern Interrupt visual: Imagine trying to talk in a crowded room\u2014difficult, right? That\u2019s similar to what they face.",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Payoff visual: Reducing ship noise could restore balance, allowing these creatures to thrive again.",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cinematic motion: Cta visual: Curious about more ocean mysteries? Hit subscribe for deep dives into science!",
+      "duration_sec": 10.0
+    }
+  ]
+}

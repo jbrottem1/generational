@@ -1,0 +1,74 @@
+{
+  "title": "Minimal Genome",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the concept of minimal genome without sensationalism, highlighting its scientific basis and uncertainty.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if we could reduce life to its simplest form?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "The minimal genome is a living blueprint, stripped of excess.",
+      "emotion": "curiosity",
+      "delivery": "steady and engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Researchers have identified essential genes, but it isn\u2019t straightforward.",
+      "emotion": "curiosity",
+      "delivery": "slightly urgent",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Each organism has unique needs, making minimalism complex.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "The journey reveals not just simplicity but the essence of life itself.",
+      "emotion": "curiosity",
+      "delivery": "reflective",
+      "retention_device": "conclusion hint"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how this impacts biology? Follow for more insights!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "final hook"
+    }
+  ],
+  "full_voiceover": "What if we could reduce life to its simplest form? The minimal genome is a living blueprint, stripped of excess. Researchers have identified essential genes, but it isn\u2019t straightforward. Each organism has unique needs, making minimalism complex. The journey reveals not just simplicity but the essence of life itself. Curious about how this impacts biology? Follow for more insights!",
+  "call_to_action": "Follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:05:41.223529+00:00",
+  "source": "ai"
+}

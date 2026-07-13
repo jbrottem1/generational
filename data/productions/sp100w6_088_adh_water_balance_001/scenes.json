@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if your body had a secret to balance water? It does.",
+    "visual_description": "Hook visual: What if your body had a secret to balance water? It does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if your body had a secret to balance water? It does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if your body had a secret to balance water? It does.",
+    "stock_footage_query": "",
+    "text_overlay": "What if your body",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "ADH, or Antidiuretic Hormone, governs how your kidneys manage water.",
+    "visual_description": "Context visual: ADH, or Antidiuretic Hormone, governs how your kidneys manage water.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: ADH, or Antidiuretic Hormone, governs how your kidneys manage water.",
+    "ai_video_prompt": "Cinematic motion: Context visual: ADH, or Antidiuretic Hormone, governs how your kidneys manage water.",
+    "stock_footage_query": "",
+    "text_overlay": "ADH, or Antidiuretic Hormone,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "When you're dehydrated, ADH tells your body to hold onto water, preventing loss.",
+    "visual_description": "Escalation visual: When you're dehydrated, ADH tells your body to hold onto water, preventing loss.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: When you're dehydrated, ADH tells your body to hold onto water, preventing loss.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: When you're dehydrated, ADH tells your body to hold onto water, preventing loss.",
+    "stock_footage_query": "",
+    "text_overlay": "When you're dehydrated, ADH",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show that imbalances can lead to serious health issues, from dehydration to overhydration.",
+    "visual_description": "Evidence visual: Studies show that imbalances can lead to serious health issues, from dehydration to overhydration.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show that imbalances can lead to serious health issues, from dehydration to overhydration.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show that imbalances can lead to serious health issues, from dehydration to overhydration.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show that imbalances",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Understanding ADH helps us appreciate how our body strives for balance.",
+    "visual_description": "Payoff visual: Understanding ADH helps us appreciate how our body strives for balance.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding ADH helps us appreciate how our body strives for balance.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding ADH helps us appreciate how our body strives for balance.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding ADH helps us",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 16.0,
+    "narration": "Curious about your body\u2019s secrets? Hit like and follow for more science!",
+    "visual_description": "Cta visual: Curious about your body\u2019s secrets? Hit like and follow for more science!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about your body\u2019s secrets? Hit like and follow for more science!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about your body\u2019s secrets? Hit like and follow for more science!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about your body\u2019s",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 54.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

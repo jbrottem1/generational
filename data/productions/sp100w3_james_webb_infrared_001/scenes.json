@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Infrared wavelengths slip through dust clouds that block visible light.",
+    "visual_description": "Hook visual: Infrared wavelengths slip through dust clouds that block visible light.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Infrared wavelengths slip through dust clouds that block visible light.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Infrared wavelengths slip through dust clouds that block visible light.",
+    "stock_footage_query": "",
+    "text_overlay": "Infrared wavelengths slip through",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "In space, dust is everywhere. It hides stars, galaxies, and even entire star-forming regions.",
+    "visual_description": "Context visual: In space, dust is everywhere. It hides stars, galaxies, and even entire star-forming regions.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: In space, dust is everywhere. It hides stars, galaxies, and even entire star-forming regions.",
+    "ai_video_prompt": "Cinematic motion: Context visual: In space, dust is everywhere. It hides stars, galaxies, and even entire star-forming regions.",
+    "stock_footage_query": "",
+    "text_overlay": "In space, dust is",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Visible light gets absorbed or scattered, but infrared? It just passes through.",
+    "visual_description": "Escalation visual: Visible light gets absorbed or scattered, but infrared? It just passes through.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Visible light gets absorbed or scattered, but infrared? It just passes through.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Visible light gets absorbed or scattered, but infrared? It just passes through.",
+    "stock_footage_query": "",
+    "text_overlay": "Visible light gets absorbed",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "awe",
+    "length_sec": 8.0,
+    "narration": "Telescopes like the JWST use infrared to unveil the cosmos, revealing what we can\u2019t see with our eyes.",
+    "visual_description": "Evidence visual: Telescopes like the JWST use infrared to unveil the cosmos, revealing what we can\u2019t see with our eyes.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Telescopes like the JWST use infrared to unveil the cosmos, revealing what we can\u2019t see with our eyes.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Telescopes like the JWST use infrared to unveil the cosmos, revealing what we can\u2019t see with our eyes.",
+    "stock_footage_query": "",
+    "text_overlay": "Telescopes like the JWST",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "wonder",
+    "length_sec": 12.0,
+    "narration": "From ancient stellar nurseries to distant galaxies, infrared light expands our view of the universe.",
+    "visual_description": "Payoff visual: From ancient stellar nurseries to distant galaxies, infrared light expands our view of the universe.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: From ancient stellar nurseries to distant galaxies, infrared light expands our view of the universe.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: From ancient stellar nurseries to distant galaxies, infrared light expands our view of the universe.",
+    "stock_footage_query": "",
+    "text_overlay": "From ancient stellar nurseries",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "excitement",
+    "length_sec": 12.0,
+    "narration": "Want to unlock more cosmic secrets? Follow us for more amazing astronomy insights!",
+    "visual_description": "Cta visual: Want to unlock more cosmic secrets? Follow us for more amazing astronomy insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to unlock more cosmic secrets? Follow us for more amazing astronomy insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to unlock more cosmic secrets? Follow us for more amazing astronomy insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to unlock more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

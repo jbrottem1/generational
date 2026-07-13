@@ -1,0 +1,74 @@
+{
+  "title": "Cholesterol Nuance",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "This script explores the intricate truths about cholesterol from a scientific perspective.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about cholesterol nuance.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Cholesterol isn\u2019t just \u2018good\u2019 or \u2018bad\u2019. It\u2019s complex and essential for life.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Recent studies show different cholesterol types play unique roles. But it\u2019s not black and white.",
+      "emotion": "curiosity",
+      "delivery": "compelling",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "For instance, HDL cholesterol can actually protect your heart, while LDL isn\u2019t always harmful.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding the nuance helps us make better health choices. This science is evolving.",
+      "emotion": "curiosity",
+      "delivery": "inspiring",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 45.0,
+      "segment_type": "cta",
+      "voiceover": "Interested in more science insights? Hit that follow button!",
+      "emotion": "curiosity",
+      "delivery": "upbeat",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about cholesterol nuance. Cholesterol isn\u2019t just \u2018good\u2019 or \u2018bad\u2019. It\u2019s complex and essential for life. Recent studies show different cholesterol types play unique roles. But it\u2019s not black and white. For instance, HDL cholesterol can actually protect your heart, while LDL isn\u2019t always harmful. Understanding the nuance helps us make better health choices. This science is evolving. Interested in more science insights? Hit that follow button!",
+  "call_to_action": "Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:25:07.816582+00:00",
+  "source": "ai"
+}

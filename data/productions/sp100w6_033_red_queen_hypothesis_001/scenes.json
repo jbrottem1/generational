@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Ever wonder why species evolve just to survive?",
+    "visual_description": "Hook visual: Ever wonder why species evolve just to survive?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever wonder why species evolve just to survive?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever wonder why species evolve just to survive?",
+    "stock_footage_query": "",
+    "text_overlay": "Ever wonder why species",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Introducing the Red Queen hypothesis. It's about constant evolutionary pressure.",
+    "visual_description": "Context visual: Introducing the Red Queen hypothesis. It's about constant evolutionary pressure.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Introducing the Red Queen hypothesis. It's about constant evolutionary pressure.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Introducing the Red Queen hypothesis. It's about constant evolutionary pressure.",
+    "stock_footage_query": "",
+    "text_overlay": "Introducing the Red Queen",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Imagine running as fast as you can, but still going nowhere.",
+    "visual_description": "Escalation visual: Imagine running as fast as you can, but still going nowhere.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Imagine running as fast as you can, but still going nowhere.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Imagine running as fast as you can, but still going nowhere.",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine running as fast",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Species must adapt to survive predators, diseases, and rivals. It's a never-ending race.",
+    "visual_description": "Evidence visual: Species must adapt to survive predators, diseases, and rivals. It's a never-ending race.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Species must adapt to survive predators, diseases, and rivals. It's a never-ending race.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Species must adapt to survive predators, diseases, and rivals. It's a never-ending race.",
+    "stock_footage_query": "",
+    "text_overlay": "Species must adapt to",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 28.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "In this struggle, evolution is relentless. Sometimes, uncertainty prevails.",
+    "visual_description": "Payoff visual: In this struggle, evolution is relentless. Sometimes, uncertainty prevails.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: In this struggle, evolution is relentless. Sometimes, uncertainty prevails.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: In this struggle, evolution is relentless. Sometimes, uncertainty prevails.",
+    "stock_footage_query": "",
+    "text_overlay": "In this struggle, evolution",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 28.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 28.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 22.0,
+    "narration": "Curious to learn more about evolution? Like and follow for deeper insights!",
+    "visual_description": "Cta visual: Curious to learn more about evolution? Like and follow for deeper insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious to learn more about evolution? Like and follow for deeper insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious to learn more about evolution? Like and follow for deeper insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

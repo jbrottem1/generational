@@ -1,0 +1,74 @@
+{
+  "title": "How a Mars Robot Made Oxygen",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "MOXIE, NASA's groundbreaking experiment, creates oxygen from Mars' thin atmosphere.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 3.0,
+      "segment_type": "hook",
+      "voiceover": "Did you know a robot on Mars just made oxygen?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 3.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Meet MOXIE. It\u2019s NASA's experiment that turned carbon dioxide into oxygen.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "intriguing fact"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 17.0,
+      "segment_type": "escalation",
+      "voiceover": "This is a major step for future Mars missions. Imagine astronauts breathing on the Red Planet!",
+      "emotion": "curiosity",
+      "delivery": "excited and inspiring",
+      "retention_device": "future possibilities"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 17.0,
+      "end_time": 25.0,
+      "segment_type": "evidence",
+      "voiceover": "Using solid oxide electrolysis, MOXIE produces oxygen from the air, proving in-situ resource utilization is possible.",
+      "emotion": "curiosity",
+      "delivery": "clear and confident",
+      "retention_device": "technical breakthrough"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 25.0,
+      "end_time": 35.0,
+      "segment_type": "payoff",
+      "voiceover": "But remember, it's just a demo and not a full life-support system... yet!",
+      "emotion": "curiosity",
+      "delivery": "slightly dramatic",
+      "retention_device": "reveal"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 35.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about Mars? Hit like and follow for more mind-blowing science!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic and inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Did you know a robot on Mars just made oxygen? Meet MOXIE. It\u2019s NASA's experiment that turned carbon dioxide into oxygen. This is a major step for future Mars missions. Imagine astronauts breathing on the Red Planet! Using solid oxide electrolysis, MOXIE produces oxygen from the air, proving in-situ resource utilization is possible. But remember, it's just a demo and not a full life-support system... yet! Curious about Mars? Hit like and follow for more mind-blowing science!",
+  "call_to_action": "Curious about Mars? Hit like and follow for more mind-blowing science!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:52:00.679631+00:00",
+  "source": "ai"
+}

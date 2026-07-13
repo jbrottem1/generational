@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about iodine and your thyroid.",
+    "visual_description": "Hook visual: Here's what science actually says about iodine and your thyroid.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about iodine and your thyroid.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about iodine and your thyroid.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "informative",
+    "length_sec": 8.0,
+    "narration": "Iodine is essential for thyroid hormone production, vital for metabolism and energy regulation.",
+    "visual_description": "Context visual: Iodine is essential for thyroid hormone production, vital for metabolism and energy regulation.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Iodine is essential for thyroid hormone production, vital for metabolism and energy regulation.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Iodine is essential for thyroid hormone production, vital for metabolism and energy regulation.",
+    "stock_footage_query": "",
+    "text_overlay": "Iodine is essential for",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Yet, too much or too little can lead to serious health issues. Ever wonder why?",
+    "visual_description": "Escalation visual: Yet, too much or too little can lead to serious health issues. Ever wonder why?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Yet, too much or too little can lead to serious health issues. Ever wonder why?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Yet, too much or too little can lead to serious health issues. Ever wonder why?",
+    "stock_footage_query": "",
+    "text_overlay": "Yet, too much or",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "serious",
+    "length_sec": 8.0,
+    "narration": "Research shows iodine deficiency can cause goiter and hypothyroidism.",
+    "visual_description": "Evidence visual: Research shows iodine deficiency can cause goiter and hypothyroidism.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows iodine deficiency can cause goiter and hypothyroidism.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows iodine deficiency can cause goiter and hypothyroidism.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows iodine deficiency",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "pattern_interrupt",
+    "emotion": "alert",
+    "length_sec": 8.0,
+    "narration": "But don\u2019t be misled by supplements; excess iodine can also disrupt thyroid function!",
+    "visual_description": "Pattern Interrupt visual: But don\u2019t be misled by supplements; excess iodine can also disrupt thyroid function!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: But don\u2019t be misled by supplements; excess iodine can also disrupt thyroid function!",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: But don\u2019t be misled by supplements; excess iodine can also disrupt thyroid function!",
+    "stock_footage_query": "",
+    "text_overlay": "But don\u2019t be misled",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "payoff",
+    "emotion": "reassuring",
+    "length_sec": 12.0,
+    "narration": "Balance is key. Regular check-ups ensure your levels are just right.",
+    "visual_description": "Payoff visual: Balance is key. Regular check-ups ensure your levels are just right.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Balance is key. Regular check-ups ensure your levels are just right.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Balance is key. Regular check-ups ensure your levels are just right.",
+    "stock_footage_query": "",
+    "text_overlay": "Balance is key. Regular",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 46.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "inviting",
+    "length_sec": 14.0,
+    "narration": "Curious about your thyroid? Talk to a doctor today! Like and follow for more science insights.",
+    "visual_description": "Cta visual: Curious about your thyroid? Talk to a doctor today! Like and follow for more science insights.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about your thyroid? Talk to a doctor today! Like and follow for more science insights.",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about your thyroid? Talk to a doctor today! Like and follow for more science insights.",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about your thyroid?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 46.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 46.0
+    }
+  }
+]

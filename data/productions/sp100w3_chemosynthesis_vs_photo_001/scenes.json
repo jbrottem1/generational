@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "One harvests chemical energy; the other harvests light.",
+    "visual_description": "Hook visual: One harvests chemical energy; the other harvests light.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: One harvests chemical energy; the other harvests light.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: One harvests chemical energy; the other harvests light.",
+    "stock_footage_query": "",
+    "text_overlay": "One harvests chemical energy;",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Both processes are vital for life on Earth and beyond.",
+    "visual_description": "Context visual: Both processes are vital for life on Earth and beyond.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Both processes are vital for life on Earth and beyond.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Both processes are vital for life on Earth and beyond.",
+    "stock_footage_query": "",
+    "text_overlay": "Both processes are vital",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Photosynthesis converts sunlight into energy, fueling plants and, ultimately, animals.",
+    "visual_description": "Escalation visual: Photosynthesis converts sunlight into energy, fueling plants and, ultimately, animals.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Photosynthesis converts sunlight into energy, fueling plants and, ultimately, animals.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Photosynthesis converts sunlight into energy, fueling plants and, ultimately, animals.",
+    "stock_footage_query": "",
+    "text_overlay": "Photosynthesis converts sunlight into",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "On the flip side, chemosynthesis thrives in dark, extreme environments, like deep-sea vents.",
+    "visual_description": "Evidence visual: On the flip side, chemosynthesis thrives in dark, extreme environments, like deep-sea vents.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: On the flip side, chemosynthesis thrives in dark, extreme environments, like deep-sea vents.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: On the flip side, chemosynthesis thrives in dark, extreme environments, like deep-sea vents.",
+    "stock_footage_query": "",
+    "text_overlay": "On the flip side,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "Both processes create ecosystems, proving life can adapt in unimaginable ways.",
+    "visual_description": "Payoff visual: Both processes create ecosystems, proving life can adapt in unimaginable ways.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Both processes create ecosystems, proving life can adapt in unimaginable ways.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Both processes create ecosystems, proving life can adapt in unimaginable ways.",
+    "stock_footage_query": "",
+    "text_overlay": "Both processes create ecosystems,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Want to learn more about the science behind life? Hit subscribe!",
+    "visual_description": "Cta visual: Want to learn more about the science behind life? Hit subscribe!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to learn more about the science behind life? Hit subscribe!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to learn more about the science behind life? Hit subscribe!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

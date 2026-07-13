@@ -1,0 +1,74 @@
+{
+  "title": "Blood pressure regulation",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A deep dive into the complexities of blood pressure regulation without oversimplification.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "How does your body manage blood pressure? It\u2019s more complex than you think.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Blood pressure regulation involves your heart, blood vessels, and kidneys working together.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But what happens when this system is thrown off balance? Factors like stress and diet play a role.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show high blood pressure can lead to serious health issues. Yet many remain unaware.",
+      "emotion": "concern",
+      "delivery": "serious",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding this regulation can empower you to make better health choices.",
+      "emotion": "hope",
+      "delivery": "encouraging",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious to learn more about your health? Hit that follow button for more insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "clear CTA"
+    }
+  ],
+  "full_voiceover": "How does your body manage blood pressure? It\u2019s more complex than you think. Blood pressure regulation involves your heart, blood vessels, and kidneys working together. But what happens when this system is thrown off balance? Factors like stress and diet play a role. Studies show high blood pressure can lead to serious health issues. Yet many remain unaware. Understanding this regulation can empower you to make better health choices. Curious to learn more about your health? Hit that follow button for more insights!",
+  "call_to_action": "Hit that follow button for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:07:04.901387+00:00",
+  "source": "ai"
+}

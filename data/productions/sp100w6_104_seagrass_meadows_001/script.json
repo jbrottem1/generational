@@ -1,0 +1,74 @@
+{
+  "title": "Seagrass Meadows",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the vital role of seagrass meadows in our ecosystem and the uncertainties that surround them.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you seagrass meadows are vital yet often overlooked?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "These underwater gardens cover vast areas, providing homes for countless marine species.",
+      "emotion": "curiosity",
+      "delivery": "informative and engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 20.0,
+      "segment_type": "escalation",
+      "voiceover": "But they do more than house fish. They capture carbon\u2014helping fight climate change.",
+      "emotion": "curiosity",
+      "delivery": "building excitement",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 20.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show they can store up to 83 million tons of carbon yearly, but...",
+      "emotion": "curiosity",
+      "delivery": "slightly ominous",
+      "retention_device": "retention hook"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "payoff",
+      "voiceover": "They\u2019re declining rapidly due to pollution and coastal development. What can we do?",
+      "emotion": "concern",
+      "delivery": "urgent and motivating",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Join the fight! Support seagrass conservation. Your actions matter.",
+      "emotion": "determination",
+      "delivery": "inspiring",
+      "retention_device": "natural CTA"
+    }
+  ],
+  "full_voiceover": "What if I told you seagrass meadows are vital yet often overlooked? These underwater gardens cover vast areas, providing homes for countless marine species. But they do more than house fish. They capture carbon\u2014helping fight climate change. Studies show they can store up to 83 million tons of carbon yearly, but... They\u2019re declining rapidly due to pollution and coastal development. What can we do? Join the fight! Support seagrass conservation. Your actions matter.",
+  "call_to_action": "Join the fight! Support seagrass conservation. Your actions matter.",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:15:09.414910+00:00",
+  "source": "ai"
+}

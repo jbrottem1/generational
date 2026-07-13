@@ -1,0 +1,74 @@
+{
+  "title": "Comet vs Asteroid \u2014 What's the Difference?",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A concise comparison of comets and asteroids, highlighting their unique characteristics and differences.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Ever wondered why one space rock has a tail?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Comets and asteroids are remnants from the solar system's birth, but they\u2019re very different.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Comets are icy, with frozen gases. When they near the sun? They develop a glowing tail!",
+      "emotion": "awe",
+      "delivery": "enthusiastic",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Asteroids, on the other hand, are rocky and metallic. No ice, no tail.",
+      "emotion": "informative",
+      "delivery": "confident",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "So, next time you gaze at the sky, remember: one\u2019s a frosty wanderer, the other, a rugged remnant.",
+      "emotion": "satisfaction",
+      "delivery": "reflective",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more space mysteries? Hit that follow button!",
+      "emotion": "encouraging",
+      "delivery": "inviting",
+      "retention_device": "none"
+    }
+  ],
+  "full_voiceover": "Ever wondered why one space rock has a tail? Comets and asteroids are remnants from the solar system's birth, but they\u2019re very different. Comets are icy, with frozen gases. When they near the sun? They develop a glowing tail! Asteroids, on the other hand, are rocky and metallic. No ice, no tail. So, next time you gaze at the sky, remember: one\u2019s a frosty wanderer, the other, a rugged remnant. Curious about more space mysteries? Hit that follow button!",
+  "call_to_action": "Curious about more space mysteries? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:50:37.426922+00:00",
+  "source": "ai"
+}

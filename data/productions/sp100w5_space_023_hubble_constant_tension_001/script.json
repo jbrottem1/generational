@@ -1,0 +1,74 @@
+{
+  "title": "Hubble constant tension",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the Hubble constant tension reveals intriguing scientific insights and uncertainties.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about Hubble constant tension than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "The Hubble constant is crucial for understanding the universe's expansion rate. But recent measurements are conflicting.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Some telescopes, like Hubble, suggest it's expanding faster than earlier models predicted. Why the discrepancy?",
+      "emotion": "intrigue",
+      "delivery": "animated",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Researchers think dark energy or new physics might explain this tension. But it's uncertain!",
+      "emotion": "suspense",
+      "delivery": "thoughtful",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "payoff",
+      "voiceover": "Ultimately, this tension challenges our understanding of the cosmos, pushing scientists to rethink everything.",
+      "emotion": "wonder",
+      "delivery": "inspiring",
+      "retention_device": "strong conclusion"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to explore more cosmic mysteries? Subscribe for more science insights!",
+      "emotion": "enthusiasm",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about Hubble constant tension than social media does. The Hubble constant is crucial for understanding the universe's expansion rate. But recent measurements are conflicting. Some telescopes, like Hubble, suggest it's expanding faster than earlier models predicted. Why the discrepancy? Researchers think dark energy or new physics might explain this tension. But it's uncertain! Ultimately, this tension challenges our understanding of the cosmos, pushing scientists to rethink everything. Want to explore more cosmic mysteries? Subscribe for more science insights!",
+  "call_to_action": "Subscribe for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:36:22.385230+00:00",
+  "source": "ai"
+}

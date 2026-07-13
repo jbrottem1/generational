@@ -1,0 +1,74 @@
+{
+  "title": "Antibiotic Stewardship",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the critical role of antibiotic stewardship in modern medicine.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about antibiotic stewardship.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Antibiotics save lives, but misuse can lead to resistance. What does that mean?",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Every year, millions face infections that are harder to treat. Why?",
+      "emotion": "concern",
+      "delivery": "urgent",
+      "retention_device": "startling fact"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that responsible prescribing can reverse this trend. It\u2019s crucial!",
+      "emotion": "hope",
+      "delivery": "confident",
+      "retention_device": "solution-oriented"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "By choosing wisely, we safeguard future treatments. Simple actions, powerful outcomes.",
+      "emotion": "empowerment",
+      "delivery": "inspirational",
+      "retention_device": "reward"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Learn more about antibiotic stewardship and be part of the solution. Follow for more!",
+      "emotion": "encouragement",
+      "delivery": "inviting",
+      "retention_device": "engagement"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about antibiotic stewardship. Antibiotics save lives, but misuse can lead to resistance. What does that mean? Every year, millions face infections that are harder to treat. Why? Studies show that responsible prescribing can reverse this trend. It\u2019s crucial! By choosing wisely, we safeguard future treatments. Simple actions, powerful outcomes. Learn more about antibiotic stewardship and be part of the solution. Follow for more!",
+  "call_to_action": "Follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:30:32.969697+00:00",
+  "source": "ai"
+}

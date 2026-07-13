@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about microbiome antibiotics impact than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about microbiome antibiotics impact than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about microbiome antibiotics impact than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about microbiome antibiotics impact than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Antibiotics save lives but can disrupt gut bacteria, our microbiome's ecosystem.",
+    "visual_description": "Context visual: Antibiotics save lives but can disrupt gut bacteria, our microbiome's ecosystem.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Antibiotics save lives but can disrupt gut bacteria, our microbiome's ecosystem.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Antibiotics save lives but can disrupt gut bacteria, our microbiome's ecosystem.",
+    "stock_footage_query": "",
+    "text_overlay": "Antibiotics save lives but",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "This disruption may lead to digestive issues, allergies, and even obesity!",
+    "visual_description": "Escalation visual: This disruption may lead to digestive issues, allergies, and even obesity!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: This disruption may lead to digestive issues, allergies, and even obesity!",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: This disruption may lead to digestive issues, allergies, and even obesity!",
+    "stock_footage_query": "",
+    "text_overlay": "This disruption may lead",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "informative",
+    "length_sec": 8.0,
+    "narration": "Studies show a link between antibiotics and reduced diversity in gut bacteria.",
+    "visual_description": "Evidence visual: Studies show a link between antibiotics and reduced diversity in gut bacteria.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show a link between antibiotics and reduced diversity in gut bacteria.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show a link between antibiotics and reduced diversity in gut bacteria.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show a link",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "relief",
+    "length_sec": 8.0,
+    "narration": "But not all antibiotics affect everyone the same way\u2014individual responses vary.",
+    "visual_description": "Payoff visual: But not all antibiotics affect everyone the same way\u2014individual responses vary.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: But not all antibiotics affect everyone the same way\u2014individual responses vary.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: But not all antibiotics affect everyone the same way\u2014individual responses vary.",
+    "stock_footage_query": "",
+    "text_overlay": "But not all antibiotics",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "encouragement",
+    "length_sec": 8.0,
+    "narration": "Want to keep your microbiome healthy? Talk to your doctor about antibiotics.",
+    "visual_description": "Cta visual: Want to keep your microbiome healthy? Talk to your doctor about antibiotics.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to keep your microbiome healthy? Talk to your doctor about antibiotics.",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to keep your microbiome healthy? Talk to your doctor about antibiotics.",
+    "stock_footage_query": "",
+    "text_overlay": "Want to keep your",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 42.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

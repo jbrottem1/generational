@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Nearby stars shift as Earth moves\u2014this shift reveals their distance.",
+    "visual_description": "Hook visual: Nearby stars shift as Earth moves\u2014this shift reveals their distance.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Nearby stars shift as Earth moves\u2014this shift reveals their distance.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Nearby stars shift as Earth moves\u2014this shift reveals their distance.",
+    "stock_footage_query": "",
+    "text_overlay": "Nearby stars shift as",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This phenomenon is called stellar parallax. It's all about perspective.",
+    "visual_description": "Context visual: This phenomenon is called stellar parallax. It's all about perspective.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This phenomenon is called stellar parallax. It's all about perspective.",
+    "ai_video_prompt": "Cinematic motion: Context visual: This phenomenon is called stellar parallax. It's all about perspective.",
+    "stock_footage_query": "",
+    "text_overlay": "This phenomenon is called",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "As Earth orbits the Sun, stars appear to slightly shift against the background.",
+    "visual_description": "Escalation visual: As Earth orbits the Sun, stars appear to slightly shift against the background.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: As Earth orbits the Sun, stars appear to slightly shift against the background.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: As Earth orbits the Sun, stars appear to slightly shift against the background.",
+    "stock_footage_query": "",
+    "text_overlay": "As Earth orbits the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Using trigonometry, astronomers calculate distances based on this tiny shift.",
+    "visual_description": "Evidence visual: Using trigonometry, astronomers calculate distances based on this tiny shift.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Using trigonometry, astronomers calculate distances based on this tiny shift.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Using trigonometry, astronomers calculate distances based on this tiny shift.",
+    "stock_footage_query": "",
+    "text_overlay": "Using trigonometry, astronomers calculate",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "wonder",
+    "length_sec": 8.0,
+    "narration": "This method allows us to measure stars thousands of light-years away!",
+    "visual_description": "Payoff visual: This method allows us to measure stars thousands of light-years away!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This method allows us to measure stars thousands of light-years away!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This method allows us to measure stars thousands of light-years away!",
+    "stock_footage_query": "",
+    "text_overlay": "This method allows us",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Curious about more cosmic mysteries? Like and subscribe for more insights!",
+    "visual_description": "Cta visual: Curious about more cosmic mysteries? Like and subscribe for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more cosmic mysteries? Like and subscribe for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more cosmic mysteries? Like and subscribe for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more cosmic",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

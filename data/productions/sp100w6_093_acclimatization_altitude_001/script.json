@@ -1,0 +1,74 @@
+{
+  "title": "Acclimatization Altitude",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explaining the science of acclimatization altitude while flagging uncertainties.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What happens to your body at high altitudes? It\u2019s not what you think.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Acclimatization altitude is where your body struggles to adapt to lower oxygen levels.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "At 8,000 feet, many feel dizzy and fatigued. But why? Let\u2019s break it down.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "open question"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Your body increases red blood cells, but this takes time. Some adapt, some don\u2019t.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 46.0,
+      "segment_type": "payoff",
+      "voiceover": "Inconsistent outcomes create uncertainty. It\u2019s a complex process influenced by genetics and duration.",
+      "emotion": "curiosity",
+      "delivery": "thought-provoking",
+      "retention_device": "insight"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 46.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about your limits? Like and follow for more science insights!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "What happens to your body at high altitudes? It\u2019s not what you think. Acclimatization altitude is where your body struggles to adapt to lower oxygen levels. At 8,000 feet, many feel dizzy and fatigued. But why? Let\u2019s break it down. Your body increases red blood cells, but this takes time. Some adapt, some don\u2019t. Inconsistent outcomes create uncertainty. It\u2019s a complex process influenced by genetics and duration. Curious about your limits? Like and follow for more science insights!",
+  "call_to_action": "Like and follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:08:06.877588+00:00",
+  "source": "ai"
+}

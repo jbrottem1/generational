@@ -1,0 +1,74 @@
+{
+  "title": "Availability Heuristic",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explains the availability heuristic and its implications in decision-making.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about the availability heuristic than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 12.0,
+      "segment_type": "context",
+      "voiceover": "The availability heuristic is about how we judge the likelihood of events based on how easily examples come to mind.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 12.0,
+      "end_time": 20.0,
+      "segment_type": "escalation",
+      "voiceover": "Think about it: if you hear more about plane crashes, you start thinking flying is dangerous, even if statistics say otherwise.",
+      "emotion": "curiosity",
+      "delivery": "reflective",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 20.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show this bias affects decisions from health choices to politics, often leading us astray.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "retention hook"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "By recognizing this mental shortcut, we can make better decisions, relying on facts instead of feelings.",
+      "emotion": "insightful",
+      "delivery": "empowering",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to explore more about how your mind works? Hit follow for more!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "clear call to action"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about the availability heuristic than social media does. The availability heuristic is about how we judge the likelihood of events based on how easily examples come to mind. Think about it: if you hear more about plane crashes, you start thinking flying is dangerous, even if statistics say otherwise. Studies show this bias affects decisions from health choices to politics, often leading us astray. By recognizing this mental shortcut, we can make better decisions, relying on facts instead of feelings. Want to explore more about how your mind works? Hit follow for more!",
+  "call_to_action": "Want to explore more about how your mind works? Hit follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:50:28.960097+00:00",
+  "source": "ai"
+}

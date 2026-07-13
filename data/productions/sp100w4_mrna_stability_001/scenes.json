@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "mRNA is more fragile than you think.",
+    "visual_description": "Hook visual: mRNA is more fragile than you think.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: mRNA is more fragile than you think.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: mRNA is more fragile than you think.",
+    "stock_footage_query": "",
+    "text_overlay": "mRNA is more fragile",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "It carries essential instructions for our cells, but it breaks down easily.",
+    "visual_description": "Context visual: It carries essential instructions for our cells, but it breaks down easily.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: It carries essential instructions for our cells, but it breaks down easily.",
+    "ai_video_prompt": "Cinematic motion: Context visual: It carries essential instructions for our cells, but it breaks down easily.",
+    "stock_footage_query": "",
+    "text_overlay": "It carries essential instructions",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "So how does it survive long enough to do its job?",
+    "visual_description": "Escalation visual: So how does it survive long enough to do its job?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: So how does it survive long enough to do its job?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: So how does it survive long enough to do its job?",
+    "stock_footage_query": "",
+    "text_overlay": "So how does it",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Enter lipid nanoparticles\u2014a protective shell that keeps mRNA intact.",
+    "visual_description": "Evidence visual: Enter lipid nanoparticles\u2014a protective shell that keeps mRNA intact.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Enter lipid nanoparticles\u2014a protective shell that keeps mRNA intact.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Enter lipid nanoparticles\u2014a protective shell that keeps mRNA intact.",
+    "stock_footage_query": "",
+    "text_overlay": "Enter lipid nanoparticles\u2014a protective",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "They ensure mRNA reaches cells safely, letting them learn and adapt.",
+    "visual_description": "Payoff visual: They ensure mRNA reaches cells safely, letting them learn and adapt.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: They ensure mRNA reaches cells safely, letting them learn and adapt.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: They ensure mRNA reaches cells safely, letting them learn and adapt.",
+    "stock_footage_query": "",
+    "text_overlay": "They ensure mRNA reaches",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Want to dive deeper into biotech? Hit follow for more insights!",
+    "visual_description": "Cta visual: Want to dive deeper into biotech? Hit follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into biotech? Hit follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into biotech? Hit follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

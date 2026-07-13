@@ -1,0 +1,84 @@
+{
+  "title": "What fMRI Actually Measures",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "fMRI tracks blood-oxygen changes, not thoughts, revealing the complexity of brain imaging.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "fMRI doesn't watch thoughts \u2014 it tracks blood-oxygen changes linked to brain activity.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "This is called the BOLD signal. But what does BOLD really mean?",
+      "emotion": "curiosity",
+      "delivery": "engaging and inquisitive",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "When neurons fire, they need more oxygen... and that\u2019s where the blood comes in.",
+      "emotion": "intrigue",
+      "delivery": "slightly faster",
+      "retention_device": "visualization"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Researchers measure these changes, but interpreting them isn\u2019t straightforward.",
+      "emotion": "caution",
+      "delivery": "serious tone",
+      "retention_device": "data fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 36.0,
+      "segment_type": "payoff",
+      "voiceover": "That\u2019s why reverse inference can be misleading; it\u2019s not always what it seems.",
+      "emotion": "realization",
+      "delivery": "calm and reflective",
+      "retention_device": "revelation"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 36.0,
+      "end_time": 45.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "Imagine thinking you know what someone is feeling just by their scan... but it\u2019s far more complex.",
+      "emotion": "surprise",
+      "delivery": "dynamic and expressive",
+      "retention_device": "scenario"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into neuroscience? Hit that subscribe button for more!",
+      "emotion": "enthusiasm",
+      "delivery": "inviting and energetic",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "fMRI doesn't watch thoughts \u2014 it tracks blood-oxygen changes linked to brain activity. This is called the BOLD signal. But what does BOLD really mean? When neurons fire, they need more oxygen... and that\u2019s where the blood comes in. Researchers measure these changes, but interpreting them isn\u2019t straightforward. That\u2019s why reverse inference can be misleading; it\u2019s not always what it seems. Imagine thinking you know what someone is feeling just by their scan... but it\u2019s far more complex. Want to dive deeper into neuroscience? Hit that subscribe button for more!",
+  "call_to_action": "Hit that subscribe button for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:51:52.024509+00:00",
+  "source": "ai"
+}

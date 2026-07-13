@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about RLHF than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about RLHF than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about RLHF than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about RLHF than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "RLHF stands for Reinforcement Learning from Human Feedback.",
+    "visual_description": "Context visual: RLHF stands for Reinforcement Learning from Human Feedback.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: RLHF stands for Reinforcement Learning from Human Feedback.",
+    "ai_video_prompt": "Cinematic motion: Context visual: RLHF stands for Reinforcement Learning from Human Feedback.",
+    "stock_footage_query": "",
+    "text_overlay": "RLHF stands for Reinforcement",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "It\u2019s how AI learns from our preferences, improving its responses over time.",
+    "visual_description": "Escalation visual: It\u2019s how AI learns from our preferences, improving its responses over time.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: It\u2019s how AI learns from our preferences, improving its responses over time.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: It\u2019s how AI learns from our preferences, improving its responses over time.",
+    "stock_footage_query": "",
+    "text_overlay": "It\u2019s how AI learns",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Scientists are using RLHF to enhance algorithms, making them more aligned with human values.",
+    "visual_description": "Evidence visual: Scientists are using RLHF to enhance algorithms, making them more aligned with human values.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Scientists are using RLHF to enhance algorithms, making them more aligned with human values.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Scientists are using RLHF to enhance algorithms, making them more aligned with human values.",
+    "stock_footage_query": "",
+    "text_overlay": "Scientists are using RLHF",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "But there\u2019s uncertainty too\u2014how do we measure 'human values' accurately?",
+    "visual_description": "Payoff visual: But there\u2019s uncertainty too\u2014how do we measure 'human values' accurately?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: But there\u2019s uncertainty too\u2014how do we measure 'human values' accurately?",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: But there\u2019s uncertainty too\u2014how do we measure 'human values' accurately?",
+    "stock_footage_query": "",
+    "text_overlay": "But there\u2019s uncertainty too\u2014how",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 7.0,
+    "narration": "Imagine an AI that understands you better than your best friend!",
+    "visual_description": "Pattern Interrupt visual: Imagine an AI that understands you better than your best friend!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: Imagine an AI that understands you better than your best friend!",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: Imagine an AI that understands you better than your best friend!",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine an AI that",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "Curious about the future of AI? Hit like and follow for more insights!",
+    "visual_description": "Cta visual: Curious about the future of AI? Hit like and follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about the future of AI? Hit like and follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about the future of AI? Hit like and follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about the future",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

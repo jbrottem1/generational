@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Genes are read into messenger RNA before proteins are built.",
+    "visual_description": "Hook visual: Genes are read into messenger RNA before proteins are built.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Genes are read into messenger RNA before proteins are built.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Genes are read into messenger RNA before proteins are built.",
+    "stock_footage_query": "",
+    "text_overlay": "Genes are read into",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This process, called transcription, is the first step in protein synthesis.",
+    "visual_description": "Context visual: This process, called transcription, is the first step in protein synthesis.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This process, called transcription, is the first step in protein synthesis.",
+    "ai_video_prompt": "Cinematic motion: Context visual: This process, called transcription, is the first step in protein synthesis.",
+    "stock_footage_query": "",
+    "text_overlay": "This process, called transcription,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "pattern_interrupt",
+    "emotion": "surprise",
+    "length_sec": 8.0,
+    "narration": "But how does the DNA know what to say? It\u2019s all in the sequence!",
+    "visual_description": "Pattern Interrupt visual: But how does the DNA know what to say? It\u2019s all in the sequence!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: But how does the DNA know what to say? It\u2019s all in the sequence!",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: But how does the DNA know what to say? It\u2019s all in the sequence!",
+    "stock_footage_query": "",
+    "text_overlay": "But how does the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "RNA polymerase reads the DNA strand and builds a complementary RNA strand.",
+    "visual_description": "Escalation visual: RNA polymerase reads the DNA strand and builds a complementary RNA strand.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: RNA polymerase reads the DNA strand and builds a complementary RNA strand.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: RNA polymerase reads the DNA strand and builds a complementary RNA strand.",
+    "stock_footage_query": "",
+    "text_overlay": "RNA polymerase reads the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "evidence",
+    "emotion": "interest",
+    "length_sec": 12.0,
+    "narration": "This RNA strand carries the genetic instructions from the nucleus to the ribosomes.",
+    "visual_description": "Evidence visual: This RNA strand carries the genetic instructions from the nucleus to the ribosomes.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: This RNA strand carries the genetic instructions from the nucleus to the ribosomes.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: This RNA strand carries the genetic instructions from the nucleus to the ribosomes.",
+    "stock_footage_query": "",
+    "text_overlay": "This RNA strand carries",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "payoff",
+    "emotion": "satisfaction",
+    "length_sec": 12.0,
+    "narration": "And that's how your body reads its blueprints to create proteins!",
+    "visual_description": "Payoff visual: And that's how your body reads its blueprints to create proteins!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: And that's how your body reads its blueprints to create proteins!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: And that's how your body reads its blueprints to create proteins!",
+    "stock_footage_query": "",
+    "text_overlay": "And that's how your",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "encouragement",
+    "length_sec": 10.0,
+    "narration": "Want to dive deeper into genetics? Hit that follow button!",
+    "visual_description": "Cta visual: Want to dive deeper into genetics? Hit that follow button!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into genetics? Hit that follow button!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into genetics? Hit that follow button!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

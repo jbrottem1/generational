@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if your body had a memory that could save your life?",
+    "visual_description": "Hook visual: What if your body had a memory that could save your life?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if your body had a memory that could save your life?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if your body had a memory that could save your life?",
+    "stock_footage_query": "",
+    "text_overlay": "What if your body",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "After an infection or vaccine, your immune system creates memory cells.",
+    "visual_description": "Context visual: After an infection or vaccine, your immune system creates memory cells.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: After an infection or vaccine, your immune system creates memory cells.",
+    "ai_video_prompt": "Cinematic motion: Context visual: After an infection or vaccine, your immune system creates memory cells.",
+    "stock_footage_query": "",
+    "text_overlay": "After an infection or",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "These cells, like vigilant guards, remember past invaders.",
+    "visual_description": "Escalation visual: These cells, like vigilant guards, remember past invaders.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: These cells, like vigilant guards, remember past invaders.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: These cells, like vigilant guards, remember past invaders.",
+    "stock_footage_query": "",
+    "text_overlay": "These cells, like vigilant",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Memory B cells churn out antibodies, while memory T cells seek and destroy.",
+    "visual_description": "Evidence visual: Memory B cells churn out antibodies, while memory T cells seek and destroy.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Memory B cells churn out antibodies, while memory T cells seek and destroy.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Memory B cells churn out antibodies, while memory T cells seek and destroy.",
+    "stock_footage_query": "",
+    "text_overlay": "Memory B cells churn",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Together, they create a powerful defense, ready for the next attack.",
+    "visual_description": "Payoff visual: Together, they create a powerful defense, ready for the next attack.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Together, they create a powerful defense, ready for the next attack.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Together, they create a powerful defense, ready for the next attack.",
+    "stock_footage_query": "",
+    "text_overlay": "Together, they create a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Wondering how long this memory lasts? Months, years, even a lifetime!",
+    "visual_description": "Pattern Interrupt visual: Wondering how long this memory lasts? Months, years, even a lifetime!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: Wondering how long this memory lasts? Months, years, even a lifetime!",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: Wondering how long this memory lasts? Months, years, even a lifetime!",
+    "stock_footage_query": "",
+    "text_overlay": "Wondering how long this",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Curious about your immune system? Like and follow for more science secrets!",
+    "visual_description": "Cta visual: Curious about your immune system? Like and follow for more science secrets!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about your immune system? Like and follow for more science secrets!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about your immune system? Like and follow for more science secrets!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about your immune",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

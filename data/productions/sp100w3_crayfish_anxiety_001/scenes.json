@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Could crayfish feel anxiety? New studies say yes.",
+    "visual_description": "Hook visual: Could crayfish feel anxiety? New studies say yes.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Could crayfish feel anxiety? New studies say yes.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Could crayfish feel anxiety? New studies say yes.",
+    "stock_footage_query": "",
+    "text_overlay": "Could crayfish feel anxiety?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Researchers found crayfish showing signs of anxiety-like behavior when stressed.",
+    "visual_description": "Context visual: Researchers found crayfish showing signs of anxiety-like behavior when stressed.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Researchers found crayfish showing signs of anxiety-like behavior when stressed.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Researchers found crayfish showing signs of anxiety-like behavior when stressed.",
+    "stock_footage_query": "",
+    "text_overlay": "Researchers found crayfish showing",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "They responded to anti-anxiety drugs, similar to how humans do.",
+    "visual_description": "Escalation visual: They responded to anti-anxiety drugs, similar to how humans do.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: They responded to anti-anxiety drugs, similar to how humans do.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: They responded to anti-anxiety drugs, similar to how humans do.",
+    "stock_footage_query": "",
+    "text_overlay": "They responded to anti-anxiety",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "But remember, this research is preliminary and still needs careful interpretation.",
+    "visual_description": "Evidence visual: But remember, this research is preliminary and still needs careful interpretation.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: But remember, this research is preliminary and still needs careful interpretation.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: But remember, this research is preliminary and still needs careful interpretation.",
+    "stock_footage_query": "",
+    "text_overlay": "But remember, this research",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 28.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Understanding these behaviors helps us learn about the emotional lives of animals.",
+    "visual_description": "Payoff visual: Understanding these behaviors helps us learn about the emotional lives of animals.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding these behaviors helps us learn about the emotional lives of animals.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding these behaviors helps us learn about the emotional lives of animals.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding these behaviors helps",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 28.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 28.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "What do you think? Can crayfish really feel anxiety? Comment below!",
+    "visual_description": "Cta visual: What do you think? Can crayfish really feel anxiety? Comment below!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: What do you think? Can crayfish really feel anxiety? Comment below!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: What do you think? Can crayfish really feel anxiety? Comment below!",
+    "stock_footage_query": "",
+    "text_overlay": "What do you think?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

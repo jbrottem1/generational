@@ -1,0 +1,84 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "A 9:16 vertical cinematic frame: center-punched single subject, negative space above for text; subject: Imagine a fungus that turns ants into zombies.; emotion: curiosity; educational documentary lighting. Mood: curiosity. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: center-punched single subject, negative space above for text. Style: photorealistic scientific visualization, volumetric detail. macro detail, crisp laboratory aesthetic, shallow depth of field. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: ai cinematic artwork leave subtle title treatment space for: Imagine a fungus that turns",
+      "aspect_ratio": "9:16",
+      "media_type": "ai_cinematic_artwork",
+      "camera_motion": "quick punch-in on key detail",
+      "on_screen_text": "Imagine a fungus that turns"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "A 9:16 vertical cinematic frame: rule of thirds, subject leading the eye toward the next cut; subject: Meet Ophiocordyceps, a parasitic fungus that invades carpenter ants.; emotion: curiosity; educational documentary lighting. Mood: curiosity. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: rule of thirds, subject leading the eye toward the next cut. Style: photorealistic scientific visualization, volumetric detail. clean diagrammatic clarity blended with cinematic atmosphere. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: scientific illustration leave subtle title treatment space for: Meet Ophiocordyceps, a parasitic fungus",
+      "aspect_ratio": "9:16",
+      "media_type": "scientific_illustration",
+      "camera_motion": "ken burns drift right",
+      "on_screen_text": "Meet Ophiocordyceps, a parasitic fungus"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "A 9:16 vertical cinematic frame: layered foreground obscuring a partially visible subject; subject: Once infected, the ant's behavior changes dramatically, driven to climb vegetation.; emotion: curiosity; educational documentary lighting. Mood: curiosity. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: layered foreground obscuring a partially visible subject. Style: photorealistic scientific visualization, volumetric detail. NASA-grade photorealism, deep contrast, premium educational channel look. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: ai cinematic artwork leave subtle title treatment space for: Once infected, the ant's behavior",
+      "aspect_ratio": "9:16",
+      "media_type": "ai_cinematic_artwork",
+      "camera_motion": "slow zoom out reveal",
+      "on_screen_text": "Once infected, the ant's behavior"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "A 9:16 vertical cinematic frame: rule of thirds, subject leading the eye toward the next cut; subject: It grips the plant tightly, ensuring its body is ready for spore release.; emotion: curiosity; educational documentary lighting. Mood: curiosity. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: rule of thirds, subject leading the eye toward the next cut. Style: photorealistic scientific visualization, volumetric detail. scientific visualization, volumetric lighting, educational documentary style. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: real world photograph leave subtle title treatment space for: It grips the plant tightly,",
+      "aspect_ratio": "9:16",
+      "media_type": "real_world_photograph",
+      "camera_motion": "pan left across subject",
+      "on_screen_text": "It grips the plant tightly,"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "A 9:16 vertical cinematic frame: hero framing, shallow depth of field, clean background; subject: The fungus then erupts from the ant, spreading spores to continue its cycle.; emotion: curiosity; educational documentary lighting. Mood: curiosity. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: hero framing, shallow depth of field, clean background. Style: photorealistic scientific visualization, volumetric detail. macro detail, crisp laboratory aesthetic, shallow depth of field. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: ai cinematic artwork leave subtle title treatment space for: The fungus then erupts from",
+      "aspect_ratio": "9:16",
+      "media_type": "ai_cinematic_artwork",
+      "camera_motion": "documentary slow zoom",
+      "on_screen_text": "The fungus then erupts from"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "A 9:16 vertical cinematic frame: centered, eye-level, symmetrical, direct eye contact with lens; subject: Fascinated by nature\u2019s bizarre behaviors? Follow for more strange science!; emotion: curiosity; educational documentary lighting. Mood: curiosity. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: centered, eye-level, symmetrical, direct eye contact with lens. Style: photorealistic scientific visualization, volumetric detail. clean diagrammatic clarity blended with cinematic atmosphere. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: ai cinematic artwork leave subtle title treatment space for: Fascinated by nature\u2019s bizarre behaviors?",
+      "aspect_ratio": "9:16",
+      "media_type": "ai_cinematic_artwork",
+      "camera_motion": "slow cinematic push-in",
+      "on_screen_text": "Fascinated by nature\u2019s bizarre behaviors?"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion, quick punch-in on key detail: A 9:16 vertical cinematic frame: center-punched single subject, negative space above for text; subject: Imagine a fungus that turns ants into zombies.; emotion: curiosity; educational documentary lighting. Mood: curiosity. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: center-punched single subject, negative space above for text. Style: photorealistic scientif",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Scene: rule of thirds, subject leading the eye toward the next cut; subject: Meet Ophiocordyceps, a parasitic fungus that invades carpenter ants.; emotion: curiosity; educational documentary lighting Camera: ken burns drift right, 35mm prime, f/2.8. Action: subject demonstrates the narration's key action naturally. Lighting: cinematic volumetric lighting, educational documentary grade. Physics: natural weighted physics \u2014 believable momentum and settle. Mood: curiosity. Palette: . Duration: 8.0s, 9:16. Cinematic motion, consistent subject, no morphing artifacts.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Scene: layered foreground obscuring a partially visible subject; subject: Once infected, the ant's behavior changes dramatically, driven to climb vegetation.; emotion: curiosity; educational documentary lighting Camera: slow zoom out reveal, 35mm prime, f/2.8. Action: subject leans toward something just out of frame. Lighting: cinematic volumetric lighting, educational documentary grade. Physics: natural weighted physics \u2014 believable momentum and settle. Mood: curiosity. Palette: . Duration: 8.0s, 9:16. Cinematic motion, consistent subject, no morphing artifacts.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Scene: rule of thirds, subject leading the eye toward the next cut; subject: It grips the plant tightly, ensuring its body is ready for spore release.; emotion: curiosity; educational documentary lighting Camera: pan left across subject, 35mm prime, f/2.8. Action: subject demonstrates the narration's key action naturally. Lighting: cinematic volumetric lighting, educational documentary grade. Physics: natural weighted physics \u2014 believable momentum and settle. Mood: curiosity. Palette: . Duration: 8.0s, 9:16. Cinematic motion, consistent subject, no morphing artifacts.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Scene: hero framing, shallow depth of field, clean background; subject: The fungus then erupts from the ant, spreading spores to continue its cycle.; emotion: curiosity; educational documentary lighting Camera: documentary slow zoom, 35mm prime, f/2.8. Action: subject reacts with visible relief and recognition. Lighting: cinematic volumetric lighting, educational documentary grade. Physics: natural weighted physics \u2014 believable momentum and settle. Mood: curiosity. Palette: . Duration: 8.0s, 9:16. Cinematic motion, consistent subject, no morphing artifacts.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Scene: centered, eye-level, symmetrical, direct eye contact with lens; subject: Fascinated by nature\u2019s bizarre behaviors? Follow for more strange science!; emotion: curiosity; educational documentary lighting Camera: slow cinematic push-in, 35mm prime, f/2.8. Action: subject addresses the lens directly with an inviting gesture. Lighting: cinematic volumetric lighting, educational documentary grade. Physics: natural weighted physics \u2014 believable momentum and settle. Mood: curiosity. Palette: . Duration: 26.0s, 9:16. Cinematic motion, consistent subject, no morphing artifacts.",
+      "duration_sec": 26.0
+    }
+  ]
+}

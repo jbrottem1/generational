@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Neural networks may seem like brains, but they\u2019re just an imitation.",
+    "visual_description": "Hook visual: Neural networks may seem like brains, but they\u2019re just an imitation.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Neural networks may seem like brains, but they\u2019re just an imitation.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Neural networks may seem like brains, but they\u2019re just an imitation.",
+    "stock_footage_query": "",
+    "text_overlay": "Neural networks may seem",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "They borrow a metaphor, not a blueprint. Weights and layers mimic thought processes.",
+    "visual_description": "Context visual: They borrow a metaphor, not a blueprint. Weights and layers mimic thought processes.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: They borrow a metaphor, not a blueprint. Weights and layers mimic thought processes.",
+    "ai_video_prompt": "Cinematic motion: Context visual: They borrow a metaphor, not a blueprint. Weights and layers mimic thought processes.",
+    "stock_footage_query": "",
+    "text_overlay": "They borrow a metaphor,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "While your brain processes information through biological neurons, AI needs training data. That\u2019s a huge difference.",
+    "visual_description": "Escalation visual: While your brain processes information through biological neurons, AI needs training data. That\u2019s a huge difference.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: While your brain processes information through biological neurons, AI needs training data. That\u2019s a huge difference.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: While your brain processes information through biological neurons, AI needs training data. That\u2019s a huge difference.",
+    "stock_footage_query": "",
+    "text_overlay": "While your brain processes",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "In neural networks, each layer builds on the last, adjusting weights to refine predictions. But it\u2019s not sentience.",
+    "visual_description": "Evidence visual: In neural networks, each layer builds on the last, adjusting weights to refine predictions. But it\u2019s not sentience.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: In neural networks, each layer builds on the last, adjusting weights to refine predictions. But it\u2019s not sentience.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: In neural networks, each layer builds on the last, adjusting weights to refine predictions. But it\u2019s not sentience.",
+    "stock_footage_query": "",
+    "text_overlay": "In neural networks, each",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Understanding this helps dismantle the AGI hype. Neural networks are powerful, but they're not conscious.",
+    "visual_description": "Payoff visual: Understanding this helps dismantle the AGI hype. Neural networks are powerful, but they're not conscious.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding this helps dismantle the AGI hype. Neural networks are powerful, but they're not conscious.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding this helps dismantle the AGI hype. Neural networks are powerful, but they're not conscious.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding this helps dismantle",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 36.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 24.0,
+    "narration": "Curious about AI's true potential? Like and follow for more insights!",
+    "visual_description": "Cta visual: Curious about AI's true potential? Like and follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about AI's true potential? Like and follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about AI's true potential? Like and follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about AI's true",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 36.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 36.0
+    }
+  }
+]

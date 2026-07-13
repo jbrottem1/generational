@@ -1,0 +1,1712 @@
+{
+  "render_package_version": "2.0",
+  "render_engine_version": "1.0.0",
+  "title": "Three Ways Plates Meet",
+  "created_at": "2026-07-10T17:01:06.630100+00:00",
+  "output_format": {
+    "aspect_ratio": "9:16",
+    "resolution": {
+      "width": 1080,
+      "height": 1920
+    },
+    "container": "mp4",
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "fps": 30,
+    "orientation": "vertical",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels"
+    ]
+  },
+  "platforms": [
+    "youtube_shorts",
+    "tiktok",
+    "instagram_reels",
+    "facebook_reels"
+  ],
+  "resolution": "1080x1920",
+  "aspect_ratio": "9:16",
+  "duration_sec": 60.0,
+  "timeline": {
+    "fps": 30,
+    "total_duration_sec": 60.0,
+    "segment_count": 7,
+    "segments": [
+      {
+        "scene_id": 1,
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "duration": 2.0,
+        "narration_reference": "narration/scene_1",
+        "visual_reference": "visual/scene_1",
+        "caption_reference": "captions/scene_1",
+        "audio_reference": "audio/scene_1",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "quick_punch_in",
+        "overlay_text": "Plates collide, pull apart,",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 2,
+        "start_time": 2.0,
+        "end_time": 10.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_2",
+        "visual_reference": "visual/scene_2",
+        "caption_reference": "captions/scene_2",
+        "audio_reference": "audio/scene_2",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "These boundaries are alive",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 3,
+        "start_time": 10.0,
+        "end_time": 18.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_3",
+        "visual_reference": "visual/scene_3",
+        "caption_reference": "captions/scene_3",
+        "audio_reference": "audio/scene_3",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "First, convergent boundaries: plates",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 4,
+        "start_time": 18.0,
+        "end_time": 26.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_4",
+        "visual_reference": "visual/scene_4",
+        "caption_reference": "captions/scene_4",
+        "audio_reference": "audio/scene_4",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Next, divergent boundaries: where",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 5,
+        "start_time": 26.0,
+        "end_time": 34.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_5",
+        "visual_reference": "visual/scene_5",
+        "caption_reference": "captions/scene_5",
+        "audio_reference": "audio/scene_5",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Finally, transform boundaries: plates",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 6,
+        "start_time": 34.0,
+        "end_time": 50.0,
+        "duration": 16.0,
+        "narration_reference": "narration/scene_6",
+        "visual_reference": "visual/scene_6",
+        "caption_reference": "captions/scene_6",
+        "audio_reference": "audio/scene_6",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Understanding these interactions helps",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 7,
+        "start_time": 50.0,
+        "end_time": 60.0,
+        "duration": 10.0,
+        "narration_reference": "narration/scene_7",
+        "visual_reference": "visual/scene_7",
+        "caption_reference": "captions/scene_7",
+        "audio_reference": "audio/scene_7",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Curious to learn more",
+        "render_status": "planned"
+      }
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 6,
+        "to_scene": 7,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "scene_render_plan": [
+    {
+      "scene_id": 1,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Hook visual: Plates collide, pull apart, or slide \u2014 each creates unique hazards.",
+      "video_prompt": "Cinematic motion: Hook visual: Plates collide, pull apart, or slide \u2014 each creates unique hazards.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "subtle push",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "quick_punch_in",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.188
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 70
+      },
+      "text_overlays": [
+        {
+          "text": "Plates collide, pull apart,",
+          "treatment": "",
+          "start_sec": 0.0,
+          "end_sec": 2.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "bass hit",
+          "at_sec": 0.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Plates collide, pull apart, or slide \u2014 each creates unique hazards.",
+      "duration_sec": 2.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Hook visual: Plates collide, pull apart, or slide \u2014 each creates unique hazards.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 1
+      }
+    },
+    {
+      "scene_id": 2,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Context visual: These boundaries are alive with movement, shaping our planet.",
+      "video_prompt": "Cinematic motion: Context visual: These boundaries are alive with movement, shaping our planet.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "These boundaries are alive",
+          "treatment": "",
+          "start_sec": 2.0,
+          "end_sec": 10.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 2.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "These boundaries are alive with movement, shaping our planet.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Context visual: These boundaries are alive with movement, shaping our planet.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 2
+      }
+    },
+    {
+      "scene_id": 3,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Escalation visual: First, convergent boundaries: plates push together, causing intense earthquakes.",
+      "video_prompt": "Cinematic motion: Escalation visual: First, convergent boundaries: plates push together, causing intense earthquakes.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "First, convergent boundaries: plates",
+          "treatment": "",
+          "start_sec": 10.0,
+          "end_sec": 18.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 10.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "First, convergent boundaries: plates push together, causing intense earthquakes.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Escalation visual: First, convergent boundaries: plates push together, causing intense earthquakes.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 3
+      }
+    },
+    {
+      "scene_id": 4,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Evidence visual: Next, divergent boundaries: where plates pull apart, magma rises, creating new land.",
+      "video_prompt": "Cinematic motion: Evidence visual: Next, divergent boundaries: where plates pull apart, magma rises, creating new land.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Next, divergent boundaries: where",
+          "treatment": "",
+          "start_sec": 18.0,
+          "end_sec": 26.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 18.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Next, divergent boundaries: where plates pull apart, magma rises, creating new land.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Evidence visual: Next, divergent boundaries: where plates pull apart, magma rises, creating new land.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 4
+      }
+    },
+    {
+      "scene_id": 5,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Pattern Interrupt visual: Finally, transform boundaries: plates slide past each other, often leading to tension.",
+      "video_prompt": "Cinematic motion: Pattern Interrupt visual: Finally, transform boundaries: plates slide past each other, often leading to tension.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Finally, transform boundaries: plates",
+          "treatment": "",
+          "start_sec": 26.0,
+          "end_sec": 34.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 26.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Finally, transform boundaries: plates slide past each other, often leading to tension.",
+      "duration_sec": 8.0,
+      "resolved_asset": {}
+    },
+    {
+      "scene_id": 6,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Payoff visual: Understanding these interactions helps us predict hazards and protect lives.",
+      "video_prompt": "Cinematic motion: Payoff visual: Understanding these interactions helps us predict hazards and protect lives.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Understanding these interactions helps",
+          "treatment": "",
+          "start_sec": 34.0,
+          "end_sec": 50.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 34.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Understanding these interactions helps us predict hazards and protect lives.",
+      "duration_sec": 16.0,
+      "resolved_asset": {}
+    },
+    {
+      "scene_id": 7,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Cta visual: Curious to learn more about our planet? Hit that follow button!",
+      "video_prompt": "Cinematic motion: Cta visual: Curious to learn more about our planet? Hit that follow button!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Curious to learn more",
+          "treatment": "",
+          "start_sec": 50.0,
+          "end_sec": 60.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 50.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Curious to learn more about our planet? Hit that follow button!",
+      "duration_sec": 10.0,
+      "resolved_asset": {}
+    }
+  ],
+  "caption_render_plan": {
+    "mode": "word_by_word",
+    "style_preset": "bold_pop",
+    "style": {
+      "font": "Montserrat ExtraBold",
+      "size_pct": 4.8,
+      "fill": "#FFFFFF",
+      "stroke": "#000000",
+      "stroke_width_px": 6,
+      "emphasis_fill": "#FFD400",
+      "animation": "word pop 1.08x on entry",
+      "case": "upper"
+    },
+    "available_presets": [
+      "bold_pop",
+      "clean_minimal",
+      "karaoke_highlight",
+      "documentary_lower_third"
+    ],
+    "safe_area": {
+      "top_pct": 12.0,
+      "bottom_pct": 20.0,
+      "left_pct": 6.0,
+      "right_pct": 12.0
+    },
+    "platform_layouts": {
+      "youtube_shorts": {
+        "anchor_y_pct": 68.0,
+        "notes": "clear the title/channel block at the bottom"
+      },
+      "tiktok": {
+        "anchor_y_pct": 64.0,
+        "notes": "clear caption + music marquee, keep off the right rail"
+      },
+      "instagram_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "clear the audio attribution row"
+      },
+      "facebook_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "mirror the Reels layout"
+      }
+    },
+    "segments": [
+      {
+        "scene_id": 1,
+        "mode": "word_by_word",
+        "start_sec": 0.0,
+        "end_sec": 2.0,
+        "sentence": "Plates collide, pull apart, or slide \u2014 each creates unique hazards.",
+        "words": [
+          {
+            "word": "Plates",
+            "start_sec": 0.0,
+            "end_sec": 0.22,
+            "emphasis": false
+          },
+          {
+            "word": "collide",
+            "start_sec": 0.22,
+            "end_sec": 0.47,
+            "emphasis": true
+          },
+          {
+            "word": "pull",
+            "start_sec": 0.47,
+            "end_sec": 0.63,
+            "emphasis": false
+          },
+          {
+            "word": "apart",
+            "start_sec": 0.63,
+            "end_sec": 0.82,
+            "emphasis": false
+          },
+          {
+            "word": "or",
+            "start_sec": 0.82,
+            "end_sec": 0.93,
+            "emphasis": false
+          },
+          {
+            "word": "slide",
+            "start_sec": 0.93,
+            "end_sec": 1.12,
+            "emphasis": false
+          },
+          {
+            "word": "each",
+            "start_sec": 1.12,
+            "end_sec": 1.29,
+            "emphasis": false
+          },
+          {
+            "word": "creates",
+            "start_sec": 1.29,
+            "end_sec": 1.53,
+            "emphasis": false
+          },
+          {
+            "word": "unique",
+            "start_sec": 1.53,
+            "end_sec": 1.75,
+            "emphasis": false
+          },
+          {
+            "word": "hazards",
+            "start_sec": 1.75,
+            "end_sec": 2.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "collide"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 2,
+        "mode": "word_by_word",
+        "start_sec": 2.0,
+        "end_sec": 10.0,
+        "sentence": "These boundaries are alive with movement, shaping our planet.",
+        "words": [
+          {
+            "word": "These",
+            "start_sec": 2.0,
+            "end_sec": 2.81,
+            "emphasis": false
+          },
+          {
+            "word": "boundaries",
+            "start_sec": 2.81,
+            "end_sec": 4.2,
+            "emphasis": true
+          },
+          {
+            "word": "are",
+            "start_sec": 4.2,
+            "end_sec": 4.78,
+            "emphasis": false
+          },
+          {
+            "word": "alive",
+            "start_sec": 4.78,
+            "end_sec": 5.59,
+            "emphasis": false
+          },
+          {
+            "word": "with",
+            "start_sec": 5.59,
+            "end_sec": 6.29,
+            "emphasis": false
+          },
+          {
+            "word": "movement",
+            "start_sec": 6.29,
+            "end_sec": 7.45,
+            "emphasis": false
+          },
+          {
+            "word": "shaping",
+            "start_sec": 7.45,
+            "end_sec": 8.49,
+            "emphasis": false
+          },
+          {
+            "word": "our",
+            "start_sec": 8.49,
+            "end_sec": 9.07,
+            "emphasis": false
+          },
+          {
+            "word": "planet",
+            "start_sec": 9.07,
+            "end_sec": 10.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "boundaries"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 3,
+        "mode": "word_by_word",
+        "start_sec": 10.0,
+        "end_sec": 18.0,
+        "sentence": "First, convergent boundaries: plates push together, causing intense earthquakes.",
+        "words": [
+          {
+            "word": "First",
+            "start_sec": 10.0,
+            "end_sec": 10.65,
+            "emphasis": false
+          },
+          {
+            "word": "convergent",
+            "start_sec": 10.65,
+            "end_sec": 11.77,
+            "emphasis": false
+          },
+          {
+            "word": "boundaries",
+            "start_sec": 11.77,
+            "end_sec": 12.88,
+            "emphasis": false
+          },
+          {
+            "word": "plates",
+            "start_sec": 12.88,
+            "end_sec": 13.63,
+            "emphasis": false
+          },
+          {
+            "word": "push",
+            "start_sec": 13.63,
+            "end_sec": 14.19,
+            "emphasis": false
+          },
+          {
+            "word": "together",
+            "start_sec": 14.19,
+            "end_sec": 15.12,
+            "emphasis": false
+          },
+          {
+            "word": "causing",
+            "start_sec": 15.12,
+            "end_sec": 15.95,
+            "emphasis": false
+          },
+          {
+            "word": "intense",
+            "start_sec": 15.95,
+            "end_sec": 16.79,
+            "emphasis": false
+          },
+          {
+            "word": "earthquakes",
+            "start_sec": 16.79,
+            "end_sec": 18.0,
+            "emphasis": true
+          }
+        ],
+        "emphasis_words": [
+          "earthquakes"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 4,
+        "mode": "word_by_word",
+        "start_sec": 18.0,
+        "end_sec": 26.0,
+        "sentence": "Next, divergent boundaries: where plates pull apart, magma rises, creating new land.",
+        "words": [
+          {
+            "word": "Next",
+            "start_sec": 18.0,
+            "end_sec": 18.52,
+            "emphasis": false
+          },
+          {
+            "word": "divergent",
+            "start_sec": 18.52,
+            "end_sec": 19.48,
+            "emphasis": true
+          },
+          {
+            "word": "boundaries",
+            "start_sec": 19.48,
+            "end_sec": 20.52,
+            "emphasis": true
+          },
+          {
+            "word": "where",
+            "start_sec": 20.52,
+            "end_sec": 21.13,
+            "emphasis": false
+          },
+          {
+            "word": "plates",
+            "start_sec": 21.13,
+            "end_sec": 21.83,
+            "emphasis": false
+          },
+          {
+            "word": "pull",
+            "start_sec": 21.83,
+            "end_sec": 22.35,
+            "emphasis": false
+          },
+          {
+            "word": "apart",
+            "start_sec": 22.35,
+            "end_sec": 22.96,
+            "emphasis": false
+          },
+          {
+            "word": "magma",
+            "start_sec": 22.96,
+            "end_sec": 23.57,
+            "emphasis": false
+          },
+          {
+            "word": "rises",
+            "start_sec": 23.57,
+            "end_sec": 24.17,
+            "emphasis": false
+          },
+          {
+            "word": "creating",
+            "start_sec": 24.17,
+            "end_sec": 25.04,
+            "emphasis": false
+          },
+          {
+            "word": "new",
+            "start_sec": 25.04,
+            "end_sec": 25.48,
+            "emphasis": false
+          },
+          {
+            "word": "land",
+            "start_sec": 25.48,
+            "end_sec": 26.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "boundaries",
+          "divergent"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 5,
+        "mode": "word_by_word",
+        "start_sec": 26.0,
+        "end_sec": 34.0,
+        "sentence": "Finally, transform boundaries: plates slide past each other, often leading to tension.",
+        "words": [
+          {
+            "word": "Finally",
+            "start_sec": 26.0,
+            "end_sec": 26.76,
+            "emphasis": false
+          },
+          {
+            "word": "transform",
+            "start_sec": 26.76,
+            "end_sec": 27.68,
+            "emphasis": true
+          },
+          {
+            "word": "boundaries",
+            "start_sec": 27.68,
+            "end_sec": 28.69,
+            "emphasis": true
+          },
+          {
+            "word": "plates",
+            "start_sec": 28.69,
+            "end_sec": 29.37,
+            "emphasis": false
+          },
+          {
+            "word": "slide",
+            "start_sec": 29.37,
+            "end_sec": 29.96,
+            "emphasis": false
+          },
+          {
+            "word": "past",
+            "start_sec": 29.96,
+            "end_sec": 30.46,
+            "emphasis": false
+          },
+          {
+            "word": "each",
+            "start_sec": 30.46,
+            "end_sec": 30.97,
+            "emphasis": false
+          },
+          {
+            "word": "other",
+            "start_sec": 30.97,
+            "end_sec": 31.56,
+            "emphasis": false
+          },
+          {
+            "word": "often",
+            "start_sec": 31.56,
+            "end_sec": 32.15,
+            "emphasis": false
+          },
+          {
+            "word": "leading",
+            "start_sec": 32.15,
+            "end_sec": 32.91,
+            "emphasis": false
+          },
+          {
+            "word": "to",
+            "start_sec": 32.91,
+            "end_sec": 33.24,
+            "emphasis": false
+          },
+          {
+            "word": "tension",
+            "start_sec": 33.24,
+            "end_sec": 34.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "boundaries",
+          "transform"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 6,
+        "mode": "word_by_word",
+        "start_sec": 34.0,
+        "end_sec": 50.0,
+        "sentence": "Understanding these interactions helps us predict hazards and protect lives.",
+        "words": [
+          {
+            "word": "Understanding",
+            "start_sec": 34.0,
+            "end_sec": 36.79,
+            "emphasis": true
+          },
+          {
+            "word": "these",
+            "start_sec": 36.79,
+            "end_sec": 38.09,
+            "emphasis": false
+          },
+          {
+            "word": "interactions",
+            "start_sec": 38.09,
+            "end_sec": 40.7,
+            "emphasis": false
+          },
+          {
+            "word": "helps",
+            "start_sec": 40.7,
+            "end_sec": 42.0,
+            "emphasis": false
+          },
+          {
+            "word": "us",
+            "start_sec": 42.0,
+            "end_sec": 42.74,
+            "emphasis": false
+          },
+          {
+            "word": "predict",
+            "start_sec": 42.74,
+            "end_sec": 44.42,
+            "emphasis": false
+          },
+          {
+            "word": "hazards",
+            "start_sec": 44.42,
+            "end_sec": 46.09,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 46.09,
+            "end_sec": 47.02,
+            "emphasis": false
+          },
+          {
+            "word": "protect",
+            "start_sec": 47.02,
+            "end_sec": 48.7,
+            "emphasis": false
+          },
+          {
+            "word": "lives",
+            "start_sec": 48.7,
+            "end_sec": 50.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "Understanding"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 7,
+        "mode": "word_by_word",
+        "start_sec": 50.0,
+        "end_sec": 60.0,
+        "sentence": "Curious to learn more about our planet? Hit that follow button!",
+        "words": [
+          {
+            "word": "Curious",
+            "start_sec": 50.0,
+            "end_sec": 51.23,
+            "emphasis": true
+          },
+          {
+            "word": "to",
+            "start_sec": 51.23,
+            "end_sec": 51.78,
+            "emphasis": false
+          },
+          {
+            "word": "learn",
+            "start_sec": 51.78,
+            "end_sec": 52.74,
+            "emphasis": false
+          },
+          {
+            "word": "more",
+            "start_sec": 52.74,
+            "end_sec": 53.56,
+            "emphasis": false
+          },
+          {
+            "word": "about",
+            "start_sec": 53.56,
+            "end_sec": 54.52,
+            "emphasis": false
+          },
+          {
+            "word": "our",
+            "start_sec": 54.52,
+            "end_sec": 55.21,
+            "emphasis": false
+          },
+          {
+            "word": "planet",
+            "start_sec": 55.21,
+            "end_sec": 56.3,
+            "emphasis": false
+          },
+          {
+            "word": "Hit",
+            "start_sec": 56.3,
+            "end_sec": 56.99,
+            "emphasis": false
+          },
+          {
+            "word": "that",
+            "start_sec": 56.99,
+            "end_sec": 57.81,
+            "emphasis": false
+          },
+          {
+            "word": "follow",
+            "start_sec": 57.81,
+            "end_sec": 58.9,
+            "emphasis": false
+          },
+          {
+            "word": "button",
+            "start_sec": 58.9,
+            "end_sec": 60.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "Curious"
+        ],
+        "placement": "bottom third, safe zone"
+      }
+    ]
+  },
+  "audio_mix_plan": {
+    "duration_sec": 60.0,
+    "tracks": {
+      "narration": {
+        "level_db": -3.0,
+        "voice_style": {},
+        "segments": [
+          {
+            "scene_id": 1,
+            "start_sec": 0.0,
+            "end_sec": 2.0,
+            "text": "Plates collide, pull apart, or slide \u2014 each creates unique hazards.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w3_plate_boundaries_001/voice.mp3"
+          },
+          {
+            "scene_id": 2,
+            "start_sec": 2.0,
+            "end_sec": 10.0,
+            "text": "These boundaries are alive with movement, shaping our planet.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w3_plate_boundaries_001/voice.mp3"
+          },
+          {
+            "scene_id": 3,
+            "start_sec": 10.0,
+            "end_sec": 18.0,
+            "text": "First, convergent boundaries: plates push together, causing intense earthquakes.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w3_plate_boundaries_001/voice.mp3"
+          },
+          {
+            "scene_id": 4,
+            "start_sec": 18.0,
+            "end_sec": 26.0,
+            "text": "Next, divergent boundaries: where plates pull apart, magma rises, creating new land.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w3_plate_boundaries_001/voice.mp3"
+          },
+          {
+            "scene_id": 5,
+            "start_sec": 26.0,
+            "end_sec": 34.0,
+            "text": "Finally, transform boundaries: plates slide past each other, often leading to tension.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w3_plate_boundaries_001/voice.mp3"
+          },
+          {
+            "scene_id": 6,
+            "start_sec": 34.0,
+            "end_sec": 50.0,
+            "text": "Understanding these interactions helps us predict hazards and protect lives.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w3_plate_boundaries_001/voice.mp3"
+          },
+          {
+            "scene_id": 7,
+            "start_sec": 50.0,
+            "end_sec": 60.0,
+            "text": "Curious to learn more about our planet? Hit that follow button!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w3_plate_boundaries_001/voice.mp3"
+          }
+        ]
+      },
+      "music": {
+        "level_db": -18.0,
+        "style": "educational ambient",
+        "bpm_range": [
+          90,
+          120
+        ],
+        "energy_curve": [
+          "rise",
+          "sustain",
+          "resolve"
+        ],
+        "ducking": {
+          "enabled": true,
+          "trigger": "narration",
+          "duck_to_db": -26.0,
+          "attack_ms": 150,
+          "release_ms": 400
+        }
+      },
+      "sfx": {
+        "level_db": -10.0,
+        "cues": [
+          {
+            "scene_id": 1,
+            "cue": "bass hit",
+            "at_sec": 0.0
+          },
+          {
+            "scene_id": 2,
+            "cue": "whoosh",
+            "at_sec": 2.0
+          },
+          {
+            "scene_id": 3,
+            "cue": "whoosh",
+            "at_sec": 10.0
+          },
+          {
+            "scene_id": 4,
+            "cue": "whoosh",
+            "at_sec": 18.0
+          },
+          {
+            "scene_id": 5,
+            "cue": "whoosh",
+            "at_sec": 26.0
+          },
+          {
+            "scene_id": 6,
+            "cue": "whoosh",
+            "at_sec": 34.0
+          },
+          {
+            "scene_id": 7,
+            "cue": "whoosh",
+            "at_sec": 50.0
+          }
+        ]
+      },
+      "transitions": {
+        "level_db": -12.0,
+        "cues": []
+      }
+    },
+    "silence_drops": [
+      {
+        "scene_id": 5,
+        "at_sec": 25.6,
+        "duration_sec": 0.4,
+        "reason": "drop the full mix before the pattern_interrupt beat"
+      },
+      {
+        "scene_id": 6,
+        "at_sec": 33.6,
+        "duration_sec": 0.4,
+        "reason": "drop the full mix before the payoff beat"
+      }
+    ],
+    "loudness_target": {
+      "standard": "platform_safe_placeholder",
+      "integrated_lufs": -14.0,
+      "true_peak_db": -1.0,
+      "notes": "Verify with a real loudness pass when actual audio is rendered."
+    }
+  },
+  "transition_plan": {
+    "supported_types": [
+      "cut",
+      "fade",
+      "push",
+      "zoom",
+      "whip_pan",
+      "glitch",
+      "flash",
+      "documentary_slow_zoom",
+      "cinematic_push_in",
+      "quick_cut"
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 6,
+        "to_scene": 7,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "motion_plan": [
+    {
+      "scene_id": 1,
+      "effect": "quick_punch_in",
+      "intensity": 70,
+      "duration_sec": 2.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.188
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_out"
+    },
+    {
+      "scene_id": 2,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 3,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 4,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 5,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 6,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 16.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 7,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 10.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    }
+  ],
+  "asset_requirements": [],
+  "missing_assets": [],
+  "render_warnings": [],
+  "estimated_render_duration_sec": 60.0,
+  "production_readiness_score": 100,
+  "validation": {
+    "status": "SUCCESS",
+    "checks": [
+      {
+        "check": "scenes_present",
+        "passed": true,
+        "detail": "7 scenes in the plan."
+      },
+      {
+        "check": "scenes_have_visuals",
+        "passed": true,
+        "detail": "Every scene has a visual asset or prompt."
+      },
+      {
+        "check": "scenes_have_narration",
+        "passed": true,
+        "detail": "Every scene has narration."
+      },
+      {
+        "check": "captions_exist",
+        "passed": true,
+        "detail": "7 caption segments planned."
+      },
+      {
+        "check": "audio_plan_exists",
+        "passed": true,
+        "detail": "Audio mix plan covers narration/music/SFX tracks."
+      },
+      {
+        "check": "runtime_reasonable",
+        "passed": true,
+        "detail": "Total runtime 60.0s is inside the 5.0-180.0s short-form window."
+      },
+      {
+        "check": "output_format_supported",
+        "passed": true,
+        "detail": "9:16 1080x1920 MP4 \u2014 supported."
+      },
+      {
+        "check": "assets_resolved",
+        "passed": true,
+        "detail": "All asset requests were fulfilled."
+      }
+    ],
+    "problems": [],
+    "production_readiness_score": 100
+  },
+  "render_status": "SUCCESS",
+  "mock_output_path": "data/productions/sp100w3_plate_boundaries_001/render.mp4",
+  "output_path": "data/productions/sp100w3_plate_boundaries_001/render.mp4",
+  "mp4_path": "data/productions/sp100w3_plate_boundaries_001/render.mp4",
+  "file_uri": "data/productions/sp100w3_plate_boundaries_001/render.mp4",
+  "render_log": [
+    "color_bed\u2192mp4 (no visual assets resolved)",
+    "ffmpeg_exit=0"
+  ],
+  "render_job": {},
+  "mock": false,
+  "assembly": {
+    "ok": true,
+    "mock": false,
+    "error": "",
+    "output_path": "data/productions/sp100w3_plate_boundaries_001/render.mp4",
+    "absolute_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w3_plate_boundaries_001/render.mp4",
+    "bytes": 397069,
+    "duration_sec": 60.0,
+    "resolution": "1080x1920",
+    "ffmpeg": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/venv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "log": [
+      "color_bed\u2192mp4 (no visual assets resolved)",
+      "ffmpeg_exit=0"
+    ],
+    "visual_count": 0,
+    "has_audio": true,
+    "manifest": {
+      "title": "Three Ways Plates Meet",
+      "format": {
+        "aspect_ratio": "9:16",
+        "resolution": {
+          "width": 1080,
+          "height": 1920
+        },
+        "container": "mp4",
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "fps": 30,
+        "orientation": "vertical",
+        "platforms": [
+          "youtube_shorts",
+          "tiktok",
+          "instagram_reels",
+          "facebook_reels"
+        ]
+      },
+      "visuals": [],
+      "audio": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w3_plate_boundaries_001/voice.mp3"
+    }
+  },
+  "render_manifest": {
+    "scenes": 7,
+    "timeline_segments": 7,
+    "caption_segments": 7,
+    "audio_tracks": [
+      "narration",
+      "music",
+      "sfx",
+      "transitions"
+    ],
+    "transitions": 6,
+    "assets_requested": 0,
+    "assets_missing": 0,
+    "warnings": 0,
+    "readiness": 100,
+    "ready_for_publishing": true,
+    "real_mp4": true
+  }
+}

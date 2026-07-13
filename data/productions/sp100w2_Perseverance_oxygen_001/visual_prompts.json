@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Did you know a robot on Mars just made oxygen?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Meet MOXIE. It\u2019s NASA's experiment that turned carbon dioxide into oxygen.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: This is a major step for future Mars missions. Imagine astronauts breathing on the Red Planet!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Using solid oxide electrolysis, MOXIE produces oxygen from the air, proving in-situ resource utilization is possible.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: But remember, it's just a demo and not a full life-support system... yet!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about Mars? Hit like and follow for more mind-blowing science!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Did you know a robot on Mars just made oxygen?",
+      "duration_sec": 3.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Meet MOXIE. It\u2019s NASA's experiment that turned carbon dioxide into oxygen.",
+      "duration_sec": 7.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: This is a major step for future Mars missions. Imagine astronauts breathing on the Red Planet!",
+      "duration_sec": 7.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Using solid oxide electrolysis, MOXIE produces oxygen from the air, proving in-situ resource utilization is possible.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: But remember, it's just a demo and not a full life-support system... yet!",
+      "duration_sec": 10.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about Mars? Hit like and follow for more mind-blowing science!",
+      "duration_sec": 25.0
+    }
+  ]
+}

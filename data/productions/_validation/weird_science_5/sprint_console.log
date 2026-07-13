@@ -1,0 +1,482 @@
+2026-07-10 15:32:43.755 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-07-10 15:32:43.755 WARNING streamlit.runtime.state.session_state_proxy: Session state does not function when running a script without `streamlit run`
+2026-07-10 15:32:43,764 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=youtube_shorts label="YouTube Shorts"
+2026-07-10 15:32:43,764 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=instagram_reels label="Instagram Reels"
+2026-07-10 15:32:43,764 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=facebook_reels label="Facebook Reels"
+2026-07-10 15:32:43,764 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=tiktok label=TikTok
+2026-07-10 15:32:43,764 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=x label=X
+2026-07-10 15:32:43,764 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=linkedin label=LinkedIn
+2026-07-10 15:32:43,764 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=pinterest label=Pinterest
+2026-07-10 15:32:43,765 INFO generational.services.publishing.extensions: publishing.gate_registered | key=production_integrity
+=== WEIRD SCIENCE 5 PREFLIGHT ===
+ffmpeg True
+openai True
+export_dir /Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational
+
+=== WEIRD SCIENCE 1/5: The Fungus That Turns Ants Into Zombies ===
+  [1/5][started] Idea: Idea started
+  [1/5][running] Idea: Idea running
+  [1/5][completed] Idea: Idea completed
+  [1/5][started] Script: Script started
+  [1/5][running] Script: Script running
+  [1/5][running] Script: Preparing asset context
+2026-07-10 15:32:43.777 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-07-10 15:32:43.777 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+  [1/5][running] Script: Generating the opening hook
+2026-07-10 15:32:43.777 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-07-10 15:32:43.777 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+  [1/5][running] Script: Structuring retention segments
+  [1/5][running] Script: Validating script
+2026-07-10 15:32:53,257 INFO generational.services.script_generator: asset_script.generated | asset=ws5_zombie_ants_001 segments=6 words=130 attempt=1
+  [1/5][running] Script: Saving project
+  [1/5][completed] Script: Script completed
+  [1/5][started] Scenes: Scenes started
+  [1/5][running] Scenes: Scenes running
+  [1/5][completed] Scenes: Scenes completed
+  [1/5][started] Visual Prompts: Visual Prompts started
+  [1/5][running] Visual Prompts: Visual Prompts running
+  [1/5][completed] Visual Prompts: Visual Prompts completed
+  [1/5][started] Images: Images started
+  [1/5][running] Images: Images running
+2026-07-10 15:32:53,325 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:33:40,814 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=47488 cost_usd=0.02 error=
+2026-07-10 15:33:40,830 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:33:40,845 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 15:34:32,564 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=True latency_ms=51718 cost_usd=0.04 error=
+2026-07-10 15:34:32,574 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_images status=
+2026-07-10 15:34:32,582 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:34:54,923 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=22340 cost_usd=0.02 error=
+2026-07-10 15:34:54,931 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:34:54,940 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:35:19,803 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=24862 cost_usd=0.02 error=
+2026-07-10 15:35:19,812 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:35:19,820 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:36:17,539 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=57719 cost_usd=0.02 error=
+2026-07-10 15:36:17,548 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:36:17,556 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:37:05,520 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=47963 cost_usd=0.02 error=
+2026-07-10 15:37:05,531 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+  [1/5][completed] Images: Images completed
+  [1/5][started] Video Clips: Video Clips started
+  [1/5][running] Video Clips: Video Clips running
+  [1/5][skipped] Video Clips: Video Clips skipped
+  [1/5][started] Voice: Voice started
+  [1/5][running] Voice: Voice running
+2026-07-10 15:37:05,585 INFO generational.provider_runtime: provider.request_start | provider=openai_tts operation=generate_voice
+2026-07-10 15:37:14,624 INFO generational.provider_runtime: provider.request_end | provider=openai_tts operation=generate_voice success=True latency_ms=9039 cost_usd=0.015 error=
+2026-07-10 15:37:14,627 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_tts status=
+2026-07-10 15:37:14,629 INFO generational.services.media_production.voice: media_production.voice | provider=openai_tts placeholder=False duration=25.6
+  [1/5][completed] Voice: Voice completed
+  [1/5][started] Music: Music started
+  [1/5][running] Music: Music running
+  [1/5][skipped] Music: Music skipped
+  [1/5][started] SFX: SFX started
+  [1/5][running] SFX: SFX running
+  [1/5][skipped] SFX: SFX skipped
+  [1/5][started] Captions: Captions started
+  [1/5][running] Captions: Captions running
+  [1/5][completed] Captions: Captions completed
+  [1/5][started] Timeline: Timeline started
+  [1/5][running] Timeline: Timeline running
+  [1/5][completed] Timeline: Timeline completed
+  [1/5][started] FFmpeg Render: FFmpeg Render started
+  [1/5][running] FFmpeg Render: FFmpeg Render running
+  [1/5][completed] FFmpeg Render: FFmpeg Render completed
+  [1/5][started] Quality: Quality started
+  [1/5][running] Quality: Quality running
+2026-07-10 15:37:37,708 INFO generational.engines.registry: engine.registered | key=trend_discovery ready=True version=0.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=opportunity_ranking ready=True version=0.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=trend_forecasting ready=True version=1.0.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=market_intelligence ready=True version=1.0.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=ai_director ready=True version=1.0.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=asset_generation ready=True version=1.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=creative_studio ready=True version=1.0.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=post_production ready=True version=1.0.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=research ready=True version=0.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=ideation ready=True version=0.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=psychology ready=True version=0.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=script_generation ready=True version=0.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=visual_intelligence ready=True version=0.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=voice_audio ready=True version=0.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=attention_graph ready=True version=0.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=ranking ready=True version=0.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=script ready=True version=0.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=critic ready=True version=0.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=revision ready=True version=0.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=citation ready=True version=0.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=seo ready=True version=0.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=threat_detection ready=True version=0.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=quality ready=True version=0.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=scene_planning ready=True version=0.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=narration ready=True version=0.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=visual_planning ready=True version=0.1.0
+2026-07-10 15:37:37,709 INFO generational.engines.registry: engine.registered | key=asset_manager ready=True version=0.1.0
+2026-07-10 15:37:37,710 INFO generational.engines.registry: engine.registered | key=subtitle ready=True version=0.1.0
+2026-07-10 15:37:37,710 INFO generational.engines.registry: engine.registered | key=timeline ready=True version=0.1.0
+2026-07-10 15:37:37,710 INFO generational.engines.registry: engine.registered | key=render_package ready=True version=0.1.0
+2026-07-10 15:37:37,710 INFO generational.engines.registry: engine.registered | key=publishing_queue ready=True version=0.1.0
+2026-07-10 15:37:37,710 INFO generational.engines.registry: engine.registered | key=voice ready=True version=1.0.0
+2026-07-10 15:37:37,710 INFO generational.engines.registry: engine.registered | key=image ready=True version=1.0.0
+2026-07-10 15:37:37,710 INFO generational.engines.registry: engine.registered | key=video ready=True version=1.0.0
+2026-07-10 15:37:37,710 INFO generational.engines.registry: engine.registered | key=render ready=True version=1.0.0
+2026-07-10 15:37:37,710 INFO generational.engines.registry: engine.registered | key=publishing ready=True version=1.0.0
+2026-07-10 15:37:37,710 INFO generational.engines.registry: engine.registered | key=analytics ready=True version=1.0.0
+2026-07-10 15:37:37,710 INFO generational.engines.registry: engine.registered | key=learning ready=True version=1.0.0
+2026-07-10 15:37:37,710 INFO generational.engines.registry: engine.registered | key=seo_optimization ready=True version=1.0.0
+2026-07-10 15:37:37,710 INFO generational.engines.registry: engine.registered | key=scheduler ready=True version=1.0.0
+2026-07-10 15:37:37,710 INFO generational.engines.registry: engine.registered | key=brand_management ready=False version=0.1.0
+2026-07-10 15:37:37,710 INFO generational.engines.registry: engine.registered | key=optimization_lab ready=False version=0.1.0
+2026-07-10 15:37:37,710 INFO generational.engines.registry: engine.registered | key=character_universe ready=False version=0.1.0
+2026-07-10 15:37:37,710 INFO generational.engines.registry: engine.registered | key=animation ready=False version=0.1.0
+  [1/5][completed] Quality: Quality completed
+  [1/5][started] Export MP4: Export MP4 started
+  [1/5][running] Export MP4: Export MP4 running
+2026-07-10 15:37:37,790 INFO generational.services.asset_production.final_export: final_export.saved | title=The Fungus That Turns Ants Into Zombies dest=/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/2026-07-10_15-37-37_WeirdScienceFact_The_Fungus_That_Turns_Ants_Into_Zombies.mp4 bytes=8739612
+  [1/5][completed] Export MP4: Export MP4 completed
+  [1/5][started] Publish Prep: Publish Prep started
+  [1/5][running] Publish Prep: Publish Prep running
+  [1/5][skipped] Publish Prep: Publish Prep skipped
+2026-07-10 15:37:37,796 INFO generational.services.asset_production.executor: asset_production.complete | ok=True asset_id=ws5_zombie_ants_001 progress=100 error=
+  RESULT status=READY_TO_POST qc=100 visuals=6 export=True t=294.02s
+
+=== WEIRD SCIENCE 2/5: Octopuses Can Edit Their Own RNA ===
+  [2/5][started] Idea: Idea started
+  [2/5][running] Idea: Idea running
+  [2/5][completed] Idea: Idea completed
+  [2/5][started] Script: Script started
+  [2/5][running] Script: Script running
+  [2/5][running] Script: Preparing asset context
+2026-07-10 15:37:37.798 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-07-10 15:37:37.798 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+  [2/5][running] Script: Generating the opening hook
+2026-07-10 15:37:37.798 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-07-10 15:37:37.798 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+  [2/5][running] Script: Structuring retention segments
+  [2/5][running] Script: Validating script
+2026-07-10 15:38:07,412 INFO generational.services.script_generator: asset_script.generated | asset=ws5_octopus_rna_001 segments=7 words=130 attempt=1
+  [2/5][running] Script: Saving project
+  [2/5][completed] Script: Script completed
+  [2/5][started] Scenes: Scenes started
+  [2/5][running] Scenes: Scenes running
+  [2/5][completed] Scenes: Scenes completed
+  [2/5][started] Visual Prompts: Visual Prompts started
+  [2/5][running] Visual Prompts: Visual Prompts running
+  [2/5][completed] Visual Prompts: Visual Prompts completed
+  [2/5][started] Images: Images started
+  [2/5][running] Images: Images running
+2026-07-10 15:38:07,417 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:38:54,848 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=47430 cost_usd=0.02 error=
+2026-07-10 15:38:54,865 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:38:54,879 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:39:50,487 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=55607 cost_usd=0.02 error=
+2026-07-10 15:39:50,499 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:39:50,510 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:40:13,820 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=23308 cost_usd=0.02 error=
+2026-07-10 15:40:13,831 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:40:13,841 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:41:11,297 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=57455 cost_usd=0.02 error=
+2026-07-10 15:41:11,313 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:41:11,325 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:42:03,145 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=51819 cost_usd=0.02 error=
+2026-07-10 15:42:03,155 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:42:03,164 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:42:25,413 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=22248 cost_usd=0.02 error=
+2026-07-10 15:42:25,422 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:42:25,431 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:42:48,391 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=22959 cost_usd=0.02 error=
+2026-07-10 15:42:48,400 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+  [2/5][completed] Images: Images completed
+  [2/5][started] Video Clips: Video Clips started
+  [2/5][running] Video Clips: Video Clips running
+  [2/5][skipped] Video Clips: Video Clips skipped
+  [2/5][started] Voice: Voice started
+  [2/5][running] Voice: Voice running
+2026-07-10 15:42:48,459 INFO generational.provider_runtime: provider.request_start | provider=openai_tts operation=generate_voice
+2026-07-10 15:42:56,650 INFO generational.provider_runtime: provider.request_end | provider=openai_tts operation=generate_voice success=True latency_ms=8191 cost_usd=0.015 error=
+2026-07-10 15:42:56,655 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_tts status=
+2026-07-10 15:42:56,658 INFO generational.services.media_production.voice: media_production.voice | provider=openai_tts placeholder=False duration=30.4
+  [2/5][completed] Voice: Voice completed
+  [2/5][started] Music: Music started
+  [2/5][running] Music: Music running
+  [2/5][skipped] Music: Music skipped
+  [2/5][started] SFX: SFX started
+  [2/5][running] SFX: SFX running
+  [2/5][skipped] SFX: SFX skipped
+  [2/5][started] Captions: Captions started
+  [2/5][running] Captions: Captions running
+  [2/5][completed] Captions: Captions completed
+  [2/5][started] Timeline: Timeline started
+  [2/5][running] Timeline: Timeline running
+  [2/5][completed] Timeline: Timeline completed
+  [2/5][started] FFmpeg Render: FFmpeg Render started
+  [2/5][running] FFmpeg Render: FFmpeg Render running
+  [2/5][completed] FFmpeg Render: FFmpeg Render completed
+  [2/5][started] Quality: Quality started
+  [2/5][running] Quality: Quality running
+  [2/5][completed] Quality: Quality completed
+  [2/5][started] Export MP4: Export MP4 started
+  [2/5][running] Export MP4: Export MP4 running
+2026-07-10 15:43:21,914 INFO generational.services.asset_production.final_export: final_export.saved | title=Octopuses Can Edit Their Own RNA dest=/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/2026-07-10_15-43-21_WeirdScienceFact_Octopuses_Can_Edit_Their_Own_RNA.mp4 bytes=7803392
+  [2/5][completed] Export MP4: Export MP4 completed
+  [2/5][started] Publish Prep: Publish Prep started
+  [2/5][running] Publish Prep: Publish Prep running
+  [2/5][skipped] Publish Prep: Publish Prep skipped
+2026-07-10 15:43:21,919 INFO generational.services.asset_production.executor: asset_production.complete | ok=True asset_id=ws5_octopus_rna_001 progress=100 error=
+  RESULT status=READY_TO_POST qc=100 visuals=7 export=True t=344.12s
+
+=== WEIRD SCIENCE 3/5: Water Can Boil and Freeze at the Same Time ===
+  [3/5][started] Idea: Idea started
+  [3/5][running] Idea: Idea running
+  [3/5][completed] Idea: Idea completed
+  [3/5][started] Script: Script started
+  [3/5][running] Script: Script running
+  [3/5][running] Script: Preparing asset context
+2026-07-10 15:43:21.921 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-07-10 15:43:21.921 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+  [3/5][running] Script: Generating the opening hook
+2026-07-10 15:43:21.921 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-07-10 15:43:21.921 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+  [3/5][running] Script: Structuring retention segments
+  [3/5][running] Script: Validating script
+2026-07-10 15:43:30,671 INFO generational.services.script_generator: asset_script.generated | asset=ws5_triple_point_001 segments=6 words=130 attempt=1
+  [3/5][running] Script: Saving project
+  [3/5][completed] Script: Script completed
+  [3/5][started] Scenes: Scenes started
+  [3/5][running] Scenes: Scenes running
+  [3/5][completed] Scenes: Scenes completed
+  [3/5][started] Visual Prompts: Visual Prompts started
+  [3/5][running] Visual Prompts: Visual Prompts running
+  [3/5][completed] Visual Prompts: Visual Prompts completed
+  [3/5][started] Images: Images started
+  [3/5][running] Images: Images running
+2026-07-10 15:43:30,675 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:44:17,182 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=46506 cost_usd=0.02 error=
+2026-07-10 15:44:17,202 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:44:17,217 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:45:08,568 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=51351 cost_usd=0.02 error=
+2026-07-10 15:45:08,585 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:45:08,597 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:46:07,263 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=58665 cost_usd=0.02 error=
+2026-07-10 15:46:07,279 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:46:07,291 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:46:30,366 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=23075 cost_usd=0.02 error=
+2026-07-10 15:46:30,376 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:46:30,385 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:46:52,493 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=22107 cost_usd=0.02 error=
+2026-07-10 15:46:52,501 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:46:52,510 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:47:15,851 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=23341 cost_usd=0.02 error=
+2026-07-10 15:47:15,859 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+  [3/5][completed] Images: Images completed
+  [3/5][started] Video Clips: Video Clips started
+  [3/5][running] Video Clips: Video Clips running
+  [3/5][skipped] Video Clips: Video Clips skipped
+  [3/5][started] Voice: Voice started
+  [3/5][running] Voice: Voice running
+2026-07-10 15:47:15,904 INFO generational.provider_runtime: provider.request_start | provider=openai_tts operation=generate_voice
+2026-07-10 15:47:26,298 INFO generational.provider_runtime: provider.request_end | provider=openai_tts operation=generate_voice success=True latency_ms=10393 cost_usd=0.015 error=
+2026-07-10 15:47:26,302 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_tts status=
+2026-07-10 15:47:26,304 INFO generational.services.media_production.voice: media_production.voice | provider=openai_tts placeholder=False duration=31.6
+  [3/5][completed] Voice: Voice completed
+  [3/5][started] Music: Music started
+  [3/5][running] Music: Music running
+  [3/5][skipped] Music: Music skipped
+  [3/5][started] SFX: SFX started
+  [3/5][running] SFX: SFX running
+  [3/5][skipped] SFX: SFX skipped
+  [3/5][started] Captions: Captions started
+  [3/5][running] Captions: Captions running
+  [3/5][completed] Captions: Captions completed
+  [3/5][started] Timeline: Timeline started
+  [3/5][running] Timeline: Timeline running
+  [3/5][completed] Timeline: Timeline completed
+  [3/5][started] FFmpeg Render: FFmpeg Render started
+  [3/5][running] FFmpeg Render: FFmpeg Render running
+  [3/5][completed] FFmpeg Render: FFmpeg Render completed
+  [3/5][started] Quality: Quality started
+  [3/5][running] Quality: Quality running
+  [3/5][completed] Quality: Quality completed
+  [3/5][started] Export MP4: Export MP4 started
+  [3/5][running] Export MP4: Export MP4 running
+2026-07-10 15:47:49,997 INFO generational.services.asset_production.final_export: final_export.saved | title=Water Can Boil and Freeze at the Same Time dest=/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/2026-07-10_15-47-49_WeirdScienceFact_Water_Can_Boil_and_Freeze_at_the_Same_Time.mp4 bytes=8781123
+  [3/5][completed] Export MP4: Export MP4 completed
+  [3/5][started] Publish Prep: Publish Prep started
+  [3/5][running] Publish Prep: Publish Prep running
+  [3/5][skipped] Publish Prep: Publish Prep skipped
+2026-07-10 15:47:50,001 INFO generational.services.asset_production.executor: asset_production.complete | ok=True asset_id=ws5_triple_point_001 progress=100 error=
+  RESULT status=READY_TO_POST qc=100 visuals=6 export=True t=268.08s
+
+=== WEIRD SCIENCE 4/5: The Jellyfish That Can Reverse Aging ===
+  [4/5][started] Idea: Idea started
+  [4/5][running] Idea: Idea running
+  [4/5][completed] Idea: Idea completed
+  [4/5][started] Script: Script started
+  [4/5][running] Script: Script running
+  [4/5][running] Script: Preparing asset context
+2026-07-10 15:47:50.003 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-07-10 15:47:50.003 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+  [4/5][running] Script: Generating the opening hook
+2026-07-10 15:47:50.003 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-07-10 15:47:50.003 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+  [4/5][running] Script: Structuring retention segments
+  [4/5][running] Script: Validating script
+2026-07-10 15:47:59,228 INFO generational.services.script_generator: asset_script.generated | asset=ws5_immortal_jellyfish_001 segments=7 words=130 attempt=1
+  [4/5][running] Script: Saving project
+  [4/5][completed] Script: Script completed
+  [4/5][started] Scenes: Scenes started
+  [4/5][running] Scenes: Scenes running
+  [4/5][completed] Scenes: Scenes completed
+  [4/5][started] Visual Prompts: Visual Prompts started
+  [4/5][running] Visual Prompts: Visual Prompts running
+  [4/5][completed] Visual Prompts: Visual Prompts completed
+  [4/5][started] Images: Images started
+  [4/5][running] Images: Images running
+2026-07-10 15:47:59,231 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:48:48,449 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=49217 cost_usd=0.02 error=
+2026-07-10 15:48:48,461 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:48:48,472 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:49:51,862 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=63390 cost_usd=0.02 error=
+2026-07-10 15:49:51,871 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:49:51,880 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:50:15,790 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=23909 cost_usd=0.02 error=
+2026-07-10 15:50:15,800 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:50:15,810 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:51:12,238 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=56427 cost_usd=0.02 error=
+2026-07-10 15:51:12,250 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:51:12,259 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:51:57,814 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=45554 cost_usd=0.02 error=
+2026-07-10 15:51:57,823 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:51:57,832 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:52:51,979 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=54147 cost_usd=0.02 error=
+2026-07-10 15:52:51,988 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:52:51,997 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:53:44,519 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=52522 cost_usd=0.02 error=
+2026-07-10 15:53:44,536 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+  [4/5][completed] Images: Images completed
+  [4/5][started] Video Clips: Video Clips started
+  [4/5][running] Video Clips: Video Clips running
+  [4/5][skipped] Video Clips: Video Clips skipped
+  [4/5][started] Voice: Voice started
+  [4/5][running] Voice: Voice running
+2026-07-10 15:53:44,641 INFO generational.provider_runtime: provider.request_start | provider=openai_tts operation=generate_voice
+2026-07-10 15:53:52,532 INFO generational.provider_runtime: provider.request_end | provider=openai_tts operation=generate_voice success=True latency_ms=7890 cost_usd=0.015 error=
+2026-07-10 15:53:52,536 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_tts status=
+2026-07-10 15:53:52,539 INFO generational.services.media_production.voice: media_production.voice | provider=openai_tts placeholder=False duration=38.4
+  [4/5][completed] Voice: Voice completed
+  [4/5][started] Music: Music started
+  [4/5][running] Music: Music running
+  [4/5][skipped] Music: Music skipped
+  [4/5][started] SFX: SFX started
+  [4/5][running] SFX: SFX running
+  [4/5][skipped] SFX: SFX skipped
+  [4/5][started] Captions: Captions started
+  [4/5][running] Captions: Captions running
+  [4/5][completed] Captions: Captions completed
+  [4/5][started] Timeline: Timeline started
+  [4/5][running] Timeline: Timeline running
+  [4/5][completed] Timeline: Timeline completed
+  [4/5][started] FFmpeg Render: FFmpeg Render started
+  [4/5][running] FFmpeg Render: FFmpeg Render running
+  [4/5][completed] FFmpeg Render: FFmpeg Render completed
+  [4/5][started] Quality: Quality started
+  [4/5][running] Quality: Quality running
+  [4/5][completed] Quality: Quality completed
+  [4/5][started] Export MP4: Export MP4 started
+  [4/5][running] Export MP4: Export MP4 running
+2026-07-10 15:54:14,150 INFO generational.services.asset_production.final_export: final_export.saved | title=The Jellyfish That Can Reverse Aging dest=/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/2026-07-10_15-54-14_WeirdScienceFact_The_Jellyfish_That_Can_Reverse_Aging.mp4 bytes=6194015
+  [4/5][completed] Export MP4: Export MP4 completed
+  [4/5][started] Publish Prep: Publish Prep started
+  [4/5][running] Publish Prep: Publish Prep running
+  [4/5][skipped] Publish Prep: Publish Prep skipped
+2026-07-10 15:54:14,155 INFO generational.services.asset_production.executor: asset_production.complete | ok=True asset_id=ws5_immortal_jellyfish_001 progress=100 error=
+  RESULT status=READY_TO_POST qc=100 visuals=7 export=True t=384.14s
+
+=== WEIRD SCIENCE 5/5: Why Bananas Are Naturally Radioactive ===
+  [5/5][started] Idea: Idea started
+  [5/5][running] Idea: Idea running
+  [5/5][completed] Idea: Idea completed
+  [5/5][started] Script: Script started
+  [5/5][running] Script: Script running
+  [5/5][running] Script: Preparing asset context
+2026-07-10 15:54:14.156 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-07-10 15:54:14.157 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+  [5/5][running] Script: Generating the opening hook
+2026-07-10 15:54:14.157 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-07-10 15:54:14.157 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+  [5/5][running] Script: Structuring retention segments
+  [5/5][running] Script: Validating script
+2026-07-10 15:54:25,425 INFO generational.services.script_generator: asset_script.generated | asset=ws5_banana_radiation_001 segments=7 words=130 attempt=1
+  [5/5][running] Script: Saving project
+  [5/5][completed] Script: Script completed
+  [5/5][started] Scenes: Scenes started
+  [5/5][running] Scenes: Scenes running
+  [5/5][completed] Scenes: Scenes completed
+  [5/5][started] Visual Prompts: Visual Prompts started
+  [5/5][running] Visual Prompts: Visual Prompts running
+  [5/5][completed] Visual Prompts: Visual Prompts completed
+  [5/5][started] Images: Images started
+  [5/5][running] Images: Images running
+2026-07-10 15:54:25,431 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:54:44,713 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=19281 cost_usd=0.02 error=
+2026-07-10 15:54:44,722 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:54:44,730 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:55:37,020 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=52289 cost_usd=0.02 error=
+2026-07-10 15:55:37,032 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:55:37,042 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:55:58,603 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=21559 cost_usd=0.02 error=
+2026-07-10 15:55:58,616 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:55:58,626 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:56:20,120 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=21493 cost_usd=0.02 error=
+2026-07-10 15:56:20,129 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:56:20,137 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:57:11,492 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=51354 cost_usd=0.02 error=
+2026-07-10 15:57:11,505 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:57:11,515 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:58:03,631 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=52115 cost_usd=0.02 error=
+2026-07-10 15:58:03,644 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 15:58:03,653 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:58:24,977 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=21323 cost_usd=0.02 error=
+2026-07-10 15:58:24,988 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+  [5/5][completed] Images: Images completed
+  [5/5][started] Video Clips: Video Clips started
+  [5/5][running] Video Clips: Video Clips running
+  [5/5][skipped] Video Clips: Video Clips skipped
+  [5/5][started] Voice: Voice started
+  [5/5][running] Voice: Voice running
+2026-07-10 15:58:25,057 INFO generational.provider_runtime: provider.request_start | provider=openai_tts operation=generate_voice
+2026-07-10 15:58:33,556 INFO generational.provider_runtime: provider.request_end | provider=openai_tts operation=generate_voice success=True latency_ms=8498 cost_usd=0.015 error=
+2026-07-10 15:58:33,561 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_tts status=
+2026-07-10 15:58:33,564 INFO generational.services.media_production.voice: media_production.voice | provider=openai_tts placeholder=False duration=39.2
+  [5/5][completed] Voice: Voice completed
+  [5/5][started] Music: Music started
+  [5/5][running] Music: Music running
+  [5/5][skipped] Music: Music skipped
+  [5/5][started] SFX: SFX started
+  [5/5][running] SFX: SFX running
+  [5/5][skipped] SFX: SFX skipped
+  [5/5][started] Captions: Captions started
+  [5/5][running] Captions: Captions running
+  [5/5][completed] Captions: Captions completed
+  [5/5][started] Timeline: Timeline started
+  [5/5][running] Timeline: Timeline running
+  [5/5][completed] Timeline: Timeline completed
+  [5/5][started] FFmpeg Render: FFmpeg Render started
+  [5/5][running] FFmpeg Render: FFmpeg Render running
+  [5/5][completed] FFmpeg Render: FFmpeg Render completed
+  [5/5][started] Quality: Quality started
+  [5/5][running] Quality: Quality running
+  [5/5][completed] Quality: Quality completed
+  [5/5][started] Export MP4: Export MP4 started
+  [5/5][running] Export MP4: Export MP4 running
+2026-07-10 15:58:56,162 INFO generational.services.asset_production.final_export: final_export.saved | title=Why Bananas Are Naturally Radioactive dest=/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/2026-07-10_15-58-56_WeirdScienceFact_Why_Bananas_Are_Naturally_Radioactive.mp4 bytes=7461584
+  [5/5][completed] Export MP4: Export MP4 completed
+  [5/5][started] Publish Prep: Publish Prep started
+  [5/5][running] Publish Prep: Publish Prep running
+  [5/5][skipped] Publish Prep: Publish Prep skipped
+2026-07-10 15:58:56,167 INFO generational.services.asset_production.executor: asset_production.complete | ok=True asset_id=ws5_banana_radiation_001 progress=100 error=
+  RESULT status=READY_TO_POST qc=100 visuals=7 export=True t=282.01s
+
+=== WEIRD SCIENCE 5 COMPLETE ===
+ready_to_post 5 /5
+sprint_complete True
+report /Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/_validation/weird_science_5/WEIRD_SCIENCE_5_REPORT.json

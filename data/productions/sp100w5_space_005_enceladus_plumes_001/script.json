@@ -1,0 +1,74 @@
+{
+  "title": "Enceladus plumes",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the secrets of Enceladus plumes and what they reveal about our solar system.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about Enceladus plumes than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Enceladus, a moon of Saturn, shoots out icy plumes into space. But why?",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Scientists believe these plumes come from a subsurface ocean, hinting at possible life.",
+      "emotion": "intrigue",
+      "delivery": "animated",
+      "retention_device": "unexpected twist"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Data from the Cassini mission showed organic molecules in the plumes. Fascinating, right?",
+      "emotion": "wonder",
+      "delivery": "enthusiastic",
+      "retention_device": "engaging fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "So, Enceladus isn't just a frozen moon. It holds clues about our universe's potential for life!",
+      "emotion": "excitement",
+      "delivery": "inspiring",
+      "retention_device": "satisfying conclusion"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about other space mysteries? Like and follow for more discoveries!",
+      "emotion": "enthusiasm",
+      "delivery": "upbeat",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about Enceladus plumes than social media does. Enceladus, a moon of Saturn, shoots out icy plumes into space. But why? Scientists believe these plumes come from a subsurface ocean, hinting at possible life. Data from the Cassini mission showed organic molecules in the plumes. Fascinating, right? So, Enceladus isn't just a frozen moon. It holds clues about our universe's potential for life! Curious about other space mysteries? Like and follow for more discoveries!",
+  "call_to_action": "Curious about other space mysteries? Like and follow for more discoveries!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:34:01.297280+00:00",
+  "source": "ai"
+}

@@ -4,6 +4,7 @@ import streamlit as st
 
 from core import ai, storage
 from core.constants import APP_VERSION
+from core.env import env_file_path, startup_credential_report
 
 
 def render() -> None:
@@ -17,8 +18,11 @@ def render() -> None:
 
     demo_mode = ai.is_demo_mode()
     status_label = "🟡 Demo Mode" if demo_mode else "🟢 Connected"
+    report = startup_credential_report(("OPENAI_API_KEY",))
 
     st.markdown(f"**API Status**  \n{status_label}")
+    for line in report.get("lines") or []:
+        st.caption(line)
     st.markdown(f"**Model**  \n`{st.session_state.selected_model}`")
     st.markdown(f"**Version**  \nv{APP_VERSION}")
 
@@ -35,4 +39,10 @@ def render() -> None:
 
     if demo_mode:
         st.divider()
-        st.info("Add an OpenAI API key in **Settings** (or a `.env` file) to enable real AI generation.")
+        st.info(
+            f"**Demo Mode** because `OPENAI_API_KEY` is missing.\n\n"
+            f"1. Edit `{env_file_path()}`\n"
+            f"2. Set `OPENAI_API_KEY=sk-...`\n"
+            f"3. Restart Streamlit\n\n"
+            "Or paste the key under **Settings → API Keys** (writes `.env` + process env)."
+        )

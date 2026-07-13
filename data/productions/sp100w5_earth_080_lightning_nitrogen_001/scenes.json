@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Did you know lightning creates nitrogen?",
+    "visual_description": "Hook visual: Did you know lightning creates nitrogen?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Did you know lightning creates nitrogen?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Did you know lightning creates nitrogen?",
+    "stock_footage_query": "",
+    "text_overlay": "Did you know lightning",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "When lightning strikes, it generates extreme heat, breaking nitrogen molecules apart.",
+    "visual_description": "Context visual: When lightning strikes, it generates extreme heat, breaking nitrogen molecules apart.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: When lightning strikes, it generates extreme heat, breaking nitrogen molecules apart.",
+    "ai_video_prompt": "Cinematic motion: Context visual: When lightning strikes, it generates extreme heat, breaking nitrogen molecules apart.",
+    "stock_footage_query": "",
+    "text_overlay": "When lightning strikes, it",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This process forms nitrogen oxides, which then mix with rainwater.",
+    "visual_description": "Escalation visual: This process forms nitrogen oxides, which then mix with rainwater.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: This process forms nitrogen oxides, which then mix with rainwater.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: This process forms nitrogen oxides, which then mix with rainwater.",
+    "stock_footage_query": "",
+    "text_overlay": "This process forms nitrogen",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Plants absorb this nitrogen, essential for growth. So, lightning helps feed the Earth!",
+    "visual_description": "Evidence visual: Plants absorb this nitrogen, essential for growth. So, lightning helps feed the Earth!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Plants absorb this nitrogen, essential for growth. So, lightning helps feed the Earth!",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Plants absorb this nitrogen, essential for growth. So, lightning helps feed the Earth!",
+    "stock_footage_query": "",
+    "text_overlay": "Plants absorb this nitrogen,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 16.0,
+    "narration": "Yet, climate change is affecting lightning frequency. Less lightning could mean less nitrogen for crops.",
+    "visual_description": "Payoff visual: Yet, climate change is affecting lightning frequency. Less lightning could mean less nitrogen for crops.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Yet, climate change is affecting lightning frequency. Less lightning could mean less nitrogen for crops.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Yet, climate change is affecting lightning frequency. Less lightning could mean less nitrogen for crops.",
+    "stock_footage_query": "",
+    "text_overlay": "Yet, climate change is",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 42.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 18.0,
+    "narration": "Curious about more science secrets? Hit that follow button!",
+    "visual_description": "Cta visual: Curious about more science secrets? Hit that follow button!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more science secrets? Hit that follow button!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more science secrets? Hit that follow button!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more science",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 42.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 42.0
+    }
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Imagine losing your ability to speak, yet understanding words perfectly.",
+    "visual_description": "Hook visual: Imagine losing your ability to speak, yet understanding words perfectly.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Imagine losing your ability to speak, yet understanding words perfectly.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Imagine losing your ability to speak, yet understanding words perfectly.",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine losing your ability",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This can happen when Broca's area is damaged. It\u2019s located in the frontal lobe, crucial for speech production.",
+    "visual_description": "Context visual: This can happen when Broca's area is damaged. It\u2019s located in the frontal lobe, crucial for speech production.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This can happen when Broca's area is damaged. It\u2019s located in the frontal lobe, crucial for speech production.",
+    "ai_video_prompt": "Cinematic motion: Context visual: This can happen when Broca's area is damaged. It\u2019s located in the frontal lobe, crucial for speech production.",
+    "stock_footage_query": "",
+    "text_overlay": "This can happen when",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "surprise",
+    "length_sec": 8.0,
+    "narration": "But here's the twist: comprehension often stays intact, highlighting the complexity of our brain's language networks.",
+    "visual_description": "Escalation visual: But here's the twist: comprehension often stays intact, highlighting the complexity of our brain's language networks.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But here's the twist: comprehension often stays intact, highlighting the complexity of our brain's language networks.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But here's the twist: comprehension often stays intact, highlighting the complexity of our brain's language networks.",
+    "stock_footage_query": "",
+    "text_overlay": "But here's the twist:",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "intrigue",
+    "length_sec": 8.0,
+    "narration": "Research shows that language isn't just localized; it\u2019s distributed across various brain regions.",
+    "visual_description": "Evidence visual: Research shows that language isn't just localized; it\u2019s distributed across various brain regions.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows that language isn't just localized; it\u2019s distributed across various brain regions.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows that language isn't just localized; it\u2019s distributed across various brain regions.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows that language",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "hopeful",
+    "length_sec": 12.0,
+    "narration": "Understanding this helps researchers develop better therapies for those affected by language disorders.",
+    "visual_description": "Payoff visual: Understanding this helps researchers develop better therapies for those affected by language disorders.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding this helps researchers develop better therapies for those affected by language disorders.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding this helps researchers develop better therapies for those affected by language disorders.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding this helps researchers",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "encouragement",
+    "length_sec": 22.0,
+    "narration": "Curious about more brain mysteries? Hit that follow button!",
+    "visual_description": "Cta visual: Curious about more brain mysteries? Hit that follow button!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more brain mysteries? Hit that follow button!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more brain mysteries? Hit that follow button!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more brain",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

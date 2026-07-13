@@ -1,0 +1,21 @@
+{
+  "id": "jump_onto",
+  "loop": false,
+  "duration_sec": 0.7,
+  "keyframes": [
+    {
+      "t": 0.0,
+      "y": 0
+    },
+    {
+      "t": 0.35,
+      "y": 0.3
+    },
+    {
+      "t": 0.7,
+      "y": "target",
+      "squash": 1.12
+    }
+  ],
+  "notes": "Target can be text card, organ, rock."
+}

@@ -1,0 +1,84 @@
+{
+  "title": "Organs on Chips",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the fascinating concept of organs on chips and their implications in science.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if we could grow human organs on tiny chips?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Organs on chips mimic human organs, allowing scientists to study diseases and test drugs.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Imagine testing new medicines without risking real patients' lives.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "scenario visualization"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows these chips can predict human responses better than animal models.",
+      "emotion": "curiosity",
+      "delivery": "assertive",
+      "retention_device": "statistic reveal"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "But there\u2019s uncertainty. Not all organs can be replicated accurately yet. Why?",
+      "emotion": "curiosity",
+      "delivery": "questioning",
+      "retention_device": "open-ended question"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "Advancements in materials and technology could change that, opening doors to personalized medicine.",
+      "emotion": "curiosity",
+      "delivery": "hopeful",
+      "retention_device": "future implications"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more science breakthroughs? Follow for more insights!",
+      "emotion": "curiosity",
+      "delivery": "encouraging",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "What if we could grow human organs on tiny chips? Organs on chips mimic human organs, allowing scientists to study diseases and test drugs. Imagine testing new medicines without risking real patients' lives. Research shows these chips can predict human responses better than animal models. But there\u2019s uncertainty. Not all organs can be replicated accurately yet. Why? Advancements in materials and technology could change that, opening doors to personalized medicine. Curious about more science breakthroughs? Follow for more insights!",
+  "call_to_action": "Curious about more science breakthroughs? Follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:05:58.542194+00:00",
+  "source": "ai"
+}

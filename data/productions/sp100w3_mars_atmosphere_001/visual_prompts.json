@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Mars once thrived with a thick atmosphere... so what happened?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Unlike Earth, Mars has a weak magnetic shield. This made it vulnerable to solar winds.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Solar winds stripped away essential particles, leading to a thinning atmosphere over millions of years.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Adding to the problem, low gravity makes it hard for Mars to hold onto lighter gases.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: With these forces combined, Mars lost its thick atmosphere, leaving a barren landscape.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to dive deeper into space mysteries? Like and follow for more!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Mars once thrived with a thick atmosphere... so what happened?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Unlike Earth, Mars has a weak magnetic shield. This made it vulnerable to solar winds.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Solar winds stripped away essential particles, leading to a thinning atmosphere over millions of years.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Adding to the problem, low gravity makes it hard for Mars to hold onto lighter gases.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: With these forces combined, Mars lost its thick atmosphere, leaving a barren landscape.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to dive deeper into space mysteries? Like and follow for more!",
+      "duration_sec": 26.0
+    }
+  ]
+}

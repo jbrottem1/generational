@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Without relativity, your GPS would drift by kilometers every day!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: GPS satellites move fast and are far from us, causing time to act differently.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Special relativity says time slows down for moving objects\u2014like satellites.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Meanwhile, general relativity states gravity affects time too\u2014satellites are further from Earth's pull.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Together, these effects cause GPS clocks to gain time\u2014up to 38 microseconds daily!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: So next time you navigate, remember Einstein\u2019s theories keep you on track.",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Without relativity, your GPS would drift by kilometers every day!",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: GPS satellites move fast and are far from us, causing time to act differently.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Special relativity says time slows down for moving objects\u2014like satellites.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Meanwhile, general relativity states gravity affects time too\u2014satellites are further from Earth's pull.",
+      "duration_sec": 10.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Together, these effects cause GPS clocks to gain time\u2014up to 38 microseconds daily!",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: So next time you navigate, remember Einstein\u2019s theories keep you on track.",
+      "duration_sec": 10.0
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "What a Tokamak Is",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Uncover the fascinating design and purpose of tokamaks in fusion energy.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Ever seen a doughnut that could change the world?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Introducing the tokamak\u2014a magnetic bottle designed to contain fusion plasma.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Fusion is the process that powers the sun, but harnessing it is incredibly challenging.",
+      "emotion": "curiosity",
+      "delivery": "building excitement",
+      "retention_device": "statistic"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Tokamaks use powerful magnetic fields to keep plasma stable at extreme temperatures\u2014millions of degrees!",
+      "emotion": "curiosity",
+      "delivery": "emphatic",
+      "retention_device": "visual comparison"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 36.0,
+      "segment_type": "payoff",
+      "voiceover": "If successful, tokamaks could lead to nearly limitless clean energy.",
+      "emotion": "hope",
+      "delivery": "inspiring",
+      "retention_device": "visualization"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 36.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how fusion energy could power our future? Follow for more insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "next steps"
+    }
+  ],
+  "full_voiceover": "Ever seen a doughnut that could change the world? Introducing the tokamak\u2014a magnetic bottle designed to contain fusion plasma. Fusion is the process that powers the sun, but harnessing it is incredibly challenging. Tokamaks use powerful magnetic fields to keep plasma stable at extreme temperatures\u2014millions of degrees! If successful, tokamaks could lead to nearly limitless clean energy. Curious about how fusion energy could power our future? Follow for more insights!",
+  "call_to_action": "Curious about how fusion energy could power our future? Follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:09:31.608603+00:00",
+  "source": "ai"
+}

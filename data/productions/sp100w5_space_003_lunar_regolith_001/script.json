@@ -1,0 +1,74 @@
+{
+  "title": "Lunar Regolith",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the fascinating and complex nature of lunar regolith.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about lunar regolith than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Lunar regolith is the layer of loose material covering the Moon's surface.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "intriguing fact"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "It\u2019s not just dust; it contains tiny glass beads formed by meteoroid impacts.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "unexpected detail"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Scientists have studied regolith for clues about the Moon\u2019s history and potential resources.",
+      "emotion": "curiosity",
+      "delivery": "confident",
+      "retention_device": "evidence-based assertion"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "This material could even help build lunar habitats for future explorers.",
+      "emotion": "curiosity",
+      "delivery": "exciting",
+      "retention_device": "future implication"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 46.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into space science? Hit that follow button!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about lunar regolith than social media does. Lunar regolith is the layer of loose material covering the Moon's surface. It\u2019s not just dust; it contains tiny glass beads formed by meteoroid impacts. Scientists have studied regolith for clues about the Moon\u2019s history and potential resources. This material could even help build lunar habitats for future explorers. Want to dive deeper into space science? Hit that follow button!",
+  "call_to_action": "Want to dive deeper into space science? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:33:56.377981+00:00",
+  "source": "ai"
+}

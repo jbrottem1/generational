@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: One absorbs light, the other creates its own. Can you guess which is which?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Biofluorescence allows organisms to absorb light and re-emit it, often in vibrant colors.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: On the flip side, bioluminescence is a chemical reaction producing light without needing external sources.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Think jellyfish and fireflies\u2014bioluminescent marvels that light up the dark.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Both adaptations are vital for survival, attracting mates or evading predators.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Now you know the difference! Want to learn more about the ocean's secrets? Like and follow!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: One absorbs light, the other creates its own. Can you guess which is which?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Biofluorescence allows organisms to absorb light and re-emit it, often in vibrant colors.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: On the flip side, bioluminescence is a chemical reaction producing light without needing external sources.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Think jellyfish and fireflies\u2014bioluminescent marvels that light up the dark.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Both adaptations are vital for survival, attracting mates or evading predators.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Now you know the difference! Want to learn more about the ocean's secrets? Like and follow!",
+      "duration_sec": 26.0
+    }
+  ]
+}

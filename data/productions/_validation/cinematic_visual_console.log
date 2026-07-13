@@ -1,0 +1,239 @@
+2026-07-10 15:05:34.061 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-07-10 15:05:34.061 WARNING streamlit.runtime.state.session_state_proxy: Session state does not function when running a script without `streamlit run`
+2026-07-10 15:05:34,073 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=youtube_shorts label="YouTube Shorts"
+2026-07-10 15:05:34,074 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=instagram_reels label="Instagram Reels"
+2026-07-10 15:05:34,074 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=facebook_reels label="Facebook Reels"
+2026-07-10 15:05:34,074 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=tiktok label=TikTok
+2026-07-10 15:05:34,074 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=x label=X
+2026-07-10 15:05:34,074 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=linkedin label=LinkedIn
+2026-07-10 15:05:34,074 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=pinterest label=Pinterest
+2026-07-10 15:05:34,077 INFO generational.services.publishing.extensions: publishing.gate_registered | key=production_integrity
+[started] Idea: Idea started
+[running] Idea: Idea running
+[completed] Idea: Idea completed
+[started] Script: Script started
+[running] Script: Script running
+[running] Script: Preparing asset context
+2026-07-10 15:05:34.088 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-07-10 15:05:34.088 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+[running] Script: Generating the opening hook
+2026-07-10 15:05:34.088 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-07-10 15:05:34.088 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+[running] Script: Structuring retention segments
+[running] Script: Validating script
+2026-07-10 15:05:43,927 INFO generational.services.script_generator: asset_script.generated | asset=viz_crispr_cinematic_001 segments=6 words=130 attempt=1
+[running] Script: Saving project
+[completed] Script: Script completed
+[started] Scenes: Scenes started
+[running] Scenes: Scenes running
+[completed] Scenes: Scenes completed
+[started] Visual Prompts: Visual Prompts started
+[running] Visual Prompts: Visual Prompts running
+[completed] Visual Prompts: Visual Prompts completed
+[started] Images: Images started
+[running] Images: Images running
+2026-07-10 15:05:44,139 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:05:44,988 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=False latency_ms=849 cost_usd=0.02 error="OpenAI image error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:05:45,092 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:05:45,811 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=False latency_ms=718 cost_usd=0.02 error="OpenAI image error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:05:46,016 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:05:46,733 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=False latency_ms=716 cost_usd=0.02 error="OpenAI image error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:05:46,733 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 15:05:47,442 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=False latency_ms=708 cost_usd=0.04 error="OpenAI Images error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:05:47,542 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 15:05:47,969 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=False latency_ms=427 cost_usd=0.04 error="OpenAI Images error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:05:48,173 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 15:05:48,617 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=False latency_ms=443 cost_usd=0.04 error="OpenAI Images error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:05:48,618 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=demo status=
+[running] Images: Retrying image for scene 1
+2026-07-10 15:05:48,619 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=demo status=
+[running] Images: Cinematic fallback still for scene 1
+2026-07-10 15:05:48,954 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:05:49,646 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=False latency_ms=691 cost_usd=0.02 error="OpenAI image error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:05:49,751 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:05:51,466 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=False latency_ms=1714 cost_usd=0.02 error="OpenAI image error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:05:51,669 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:05:52,306 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=False latency_ms=637 cost_usd=0.02 error="OpenAI image error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:05:52,306 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 15:05:53,790 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=False latency_ms=1483 cost_usd=0.04 error="OpenAI Images error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:05:53,894 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 15:05:54,647 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=False latency_ms=753 cost_usd=0.04 error="OpenAI Images error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:05:54,852 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 15:05:55,311 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=False latency_ms=458 cost_usd=0.04 error="OpenAI Images error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:05:55,314 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=demo status=
+[running] Images: Retrying image for scene 2
+2026-07-10 15:05:55,316 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=demo status=
+[running] Images: Cinematic fallback still for scene 2
+2026-07-10 15:05:55,386 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:05:56,017 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=False latency_ms=630 cost_usd=0.02 error="OpenAI image error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:05:56,122 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:05:56,561 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=False latency_ms=438 cost_usd=0.02 error="OpenAI image error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:05:56,761 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:05:57,175 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=False latency_ms=413 cost_usd=0.02 error="OpenAI image error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:05:57,175 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 15:05:57,523 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=False latency_ms=347 cost_usd=0.04 error="OpenAI Images error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:05:57,628 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 15:05:58,187 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=False latency_ms=559 cost_usd=0.04 error="OpenAI Images error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:05:58,392 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 15:05:59,765 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=False latency_ms=1372 cost_usd=0.04 error="OpenAI Images error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:05:59,767 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=demo status=
+[running] Images: Retrying image for scene 3
+2026-07-10 15:05:59,767 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=demo status=
+[running] Images: Cinematic fallback still for scene 3
+2026-07-10 15:05:59,819 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:06:00,185 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=False latency_ms=365 cost_usd=0.02 error="OpenAI image error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:06:00,289 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:06:00,754 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=False latency_ms=464 cost_usd=0.02 error="OpenAI image error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:06:00,959 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:06:01,426 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=False latency_ms=466 cost_usd=0.02 error="OpenAI image error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:06:01,426 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 15:06:01,822 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=False latency_ms=396 cost_usd=0.04 error="OpenAI Images error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:06:01,926 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 15:06:02,362 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=False latency_ms=435 cost_usd=0.04 error="OpenAI Images error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:06:02,567 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 15:06:04,571 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=False latency_ms=2003 cost_usd=0.04 error="OpenAI Images error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:06:04,572 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=demo status=
+[running] Images: Retrying image for scene 4
+2026-07-10 15:06:04,573 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=demo status=
+[running] Images: Cinematic fallback still for scene 4
+2026-07-10 15:06:04,628 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:06:05,024 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=False latency_ms=396 cost_usd=0.02 error="OpenAI image error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:06:05,129 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:06:05,543 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=False latency_ms=414 cost_usd=0.02 error="OpenAI image error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:06:05,746 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 15:06:06,202 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=False latency_ms=456 cost_usd=0.02 error="OpenAI image error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:06:06,203 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 15:06:06,596 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=False latency_ms=393 cost_usd=0.04 error="OpenAI Images error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:06:06,698 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 15:06:07,076 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=False latency_ms=377 cost_usd=0.04 error="OpenAI Images error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:06:07,280 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 15:06:07,658 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=False latency_ms=377 cost_usd=0.04 error="OpenAI Images error: 400 {'error': {'message': "The model 'dall-e-2' does not exist.", 'type': 'image_generation_user_error', 'param': 'model', 'code': 'invalid_value'}}"
+2026-07-10 15:06:07,660 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=demo status=
+[running] Images: Retrying image for scene 5
+2026-07-10 15:06:07,660 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=demo status=
+[running] Images: Cinematic fallback still for scene 5
+2026-07-10 15:06:07,719 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=demo status=
+[running] Images: Retrying image for scene 6
+2026-07-10 15:06:07,720 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=demo status=
+[running] Images: Cinematic fallback still for scene 6
+[completed] Images: Images completed
+[started] Video Clips: Video Clips started
+[running] Video Clips: Video Clips running
+[skipped] Video Clips: Video Clips skipped
+[started] Voice: Voice started
+[running] Voice: Voice running
+2026-07-10 15:06:07,771 INFO generational.provider_runtime: provider.request_start | provider=openai_tts operation=generate_voice
+2026-07-10 15:06:13,412 INFO generational.provider_runtime: provider.request_end | provider=openai_tts operation=generate_voice success=True latency_ms=5640 cost_usd=0.015 error=
+2026-07-10 15:06:13,415 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_tts status=
+2026-07-10 15:06:13,417 INFO generational.services.media_production.voice: media_production.voice | provider=openai_tts placeholder=False duration=34.8
+[completed] Voice: Voice completed
+[started] Music: Music started
+[running] Music: Music running
+[skipped] Music: Music skipped
+[started] SFX: SFX started
+[running] SFX: SFX running
+[skipped] SFX: SFX skipped
+[started] Captions: Captions started
+[running] Captions: Captions running
+[completed] Captions: Captions completed
+[started] Timeline: Timeline started
+[running] Timeline: Timeline running
+[completed] Timeline: Timeline completed
+[started] FFmpeg Render: FFmpeg Render started
+[running] FFmpeg Render: FFmpeg Render running
+[completed] FFmpeg Render: FFmpeg Render completed
+[started] Quality: Quality started
+[running] Quality: Quality running
+2026-07-10 15:06:21,966 INFO generational.engines.registry: engine.registered | key=trend_discovery ready=True version=0.1.0
+2026-07-10 15:06:21,966 INFO generational.engines.registry: engine.registered | key=opportunity_ranking ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=trend_forecasting ready=True version=1.0.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=market_intelligence ready=True version=1.0.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=ai_director ready=True version=1.0.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=asset_generation ready=True version=1.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=creative_studio ready=True version=1.0.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=post_production ready=True version=1.0.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=research ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=ideation ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=psychology ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=script_generation ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=visual_intelligence ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=voice_audio ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=attention_graph ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=ranking ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=script ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=critic ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=revision ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=citation ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=seo ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=threat_detection ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=quality ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=scene_planning ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=narration ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=visual_planning ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=asset_manager ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=subtitle ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=timeline ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=render_package ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=publishing_queue ready=True version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=voice ready=True version=1.0.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=image ready=True version=1.0.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=video ready=True version=1.0.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=render ready=True version=1.0.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=publishing ready=True version=1.0.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=analytics ready=True version=1.0.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=learning ready=True version=1.0.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=seo_optimization ready=True version=1.0.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=scheduler ready=True version=1.0.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=brand_management ready=False version=0.1.0
+2026-07-10 15:06:21,967 INFO generational.engines.registry: engine.registered | key=optimization_lab ready=False version=0.1.0
+2026-07-10 15:06:21,968 INFO generational.engines.registry: engine.registered | key=character_universe ready=False version=0.1.0
+2026-07-10 15:06:21,968 INFO generational.engines.registry: engine.registered | key=animation ready=False version=0.1.0
+[completed] Quality: Quality completed
+[started] Export MP4: Export MP4 started
+[running] Export MP4: Export MP4 running
+2026-07-10 15:06:21,983 INFO generational.services.asset_production.final_export: final_export.saved | title=How CRISPR Edits DNA dest=/Users/jaredbrottem/Desktop/AI Start-up/videos/test run generational/2026-07-10_15-06-21_How_CRISPR_Edits_DNA.mp4 bytes=1115457
+[completed] Export MP4: Export MP4 completed
+[started] Publish Prep: Publish Prep started
+[running] Publish Prep: Publish Prep running
+[skipped] Publish Prep: Publish Prep skipped
+2026-07-10 15:06:21,986 INFO generational.services.asset_production.executor: asset_production.complete | ok=True asset_id=viz_crispr_cinematic_001 progress=100 error=
+{
+  "ok": true,
+  "elapsed_sec": 47.92,
+  "scenes": 6,
+  "real_images": 6,
+  "visual_count": 6,
+  "color_bed": false,
+  "assembly_log": [
+    "scene\u2192clip image_01_fallback.png effect=quick_punch_in d=2.00s",
+    "scene\u2192clip image_02_fallback.png effect=handheld_drift d=8.00s",
+    "scene\u2192clip image_03_fallback.png effect=slow_zoom_out d=8.00s",
+    "scene\u2192clip image_04_fallback.png effect=pan_left d=8.00s",
+    "scene\u2192clip image_05_fallback.png effect=documentary_slow_zoom d=8.00s",
+    "scene\u2192clip image_06_fallback.png effect=cinematic_push_in d=26.00s",
+    "concat_exit=0 scenes=6",
+    "multi_scene\u2192mp4 scenes=6 visuals=6",
+    "ffmpeg_exit=0"
+  ],
+  "qc_passed": true,
+  "qc_score": 100,
+  "mp4": "data/productions/viz_crispr_cinematic_001/render.mp4",
+  "final_export": "/Users/jaredbrottem/Desktop/AI Start-up/videos/test run generational/2026-07-10_15-06-21_How_CRISPR_Edits_DNA.mp4",
+  "error": null,
+  "media_types": [
+    "scientific_illustration",
+    "scientific_illustration",
+    "scientific_illustration",
+    "scientific_illustration",
+    "scientific_illustration",
+    "ai_cinematic_artwork"
+  ],
+  "motions": [
+    "quick punch-in on key detail",
+    "ken burns drift right",
+    "slow zoom out reveal",
+    "pan left across subject",
+    "documentary slow zoom",
+    "slow cinematic push-in"
+  ]
+}

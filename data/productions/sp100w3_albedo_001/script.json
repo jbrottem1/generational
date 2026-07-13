@@ -1,0 +1,74 @@
+{
+  "title": "Why Ice Melt Speeds Warming",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the albedo effect and how melting ice accelerates global warming.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Bright ice reflects sunlight; dark water absorbs it. What happens next?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "This is called the albedo effect. More ice means less absorption, keeping our planet cool.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But as ice melts, dark oceans emerge, soaking up heat. The cycle begins.",
+      "emotion": "curiosity",
+      "delivery": "urgent",
+      "retention_device": "visual imagery"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows that this albedo feedback accelerates warming. It\u2019s a tipping point.",
+      "emotion": "concern",
+      "delivery": "serious",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Melting ice isn't just a loss; it fuels a hotter future for all of us.",
+      "emotion": "urgency",
+      "delivery": "intense",
+      "retention_device": "revelation"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay informed and take action. Follow for more insights on climate science!",
+      "emotion": "hope",
+      "delivery": "motivational",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Bright ice reflects sunlight; dark water absorbs it. What happens next? This is called the albedo effect. More ice means less absorption, keeping our planet cool. But as ice melts, dark oceans emerge, soaking up heat. The cycle begins. Research shows that this albedo feedback accelerates warming. It\u2019s a tipping point. Melting ice isn't just a loss; it fuels a hotter future for all of us. Stay informed and take action. Follow for more insights on climate science!",
+  "call_to_action": "Stay informed and take action. Follow for more insights on climate science!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:02:00.187977+00:00",
+  "source": "ai"
+}

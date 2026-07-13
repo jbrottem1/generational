@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about Artemis than social media ever could.",
+    "visual_description": "Hook visual: Science has a clearer story about Artemis than social media ever could.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about Artemis than social media ever could.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about Artemis than social media ever could.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "The Artemis program aims to return humans to the Moon by 2024, paving the way for sustainable exploration.",
+    "visual_description": "Context visual: The Artemis program aims to return humans to the Moon by 2024, paving the way for sustainable exploration.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: The Artemis program aims to return humans to the Moon by 2024, paving the way for sustainable exploration.",
+    "ai_video_prompt": "Cinematic motion: Context visual: The Artemis program aims to return humans to the Moon by 2024, paving the way for sustainable exploration.",
+    "stock_footage_query": "",
+    "text_overlay": "The Artemis program aims",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But wait, it\u2019s not just about landing; it's about building a lunar base for future missions.",
+    "visual_description": "Escalation visual: But wait, it\u2019s not just about landing; it's about building a lunar base for future missions.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But wait, it\u2019s not just about landing; it's about building a lunar base for future missions.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But wait, it\u2019s not just about landing; it's about building a lunar base for future missions.",
+    "stock_footage_query": "",
+    "text_overlay": "But wait, it\u2019s not",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Artemis also focuses on testing technologies for Mars, making it a stepping stone for human exploration of the Red Planet.",
+    "visual_description": "Evidence visual: Artemis also focuses on testing technologies for Mars, making it a stepping stone for human exploration of the Red Plane",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Artemis also focuses on testing technologies for Mars, making it a stepping stone for human exploration of the Red Plane",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Artemis also focuses on testing technologies for Mars, making it a stepping stone for human exploration of the Red Plane",
+    "stock_footage_query": "",
+    "text_overlay": "Artemis also focuses on",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "In essence, Artemis is about collaboration, sustainability, and innovation in space science.",
+    "visual_description": "Payoff visual: In essence, Artemis is about collaboration, sustainability, and innovation in space science.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: In essence, Artemis is about collaboration, sustainability, and innovation in space science.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: In essence, Artemis is about collaboration, sustainability, and innovation in space science.",
+    "stock_footage_query": "",
+    "text_overlay": "In essence, Artemis is",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "Curious to learn more? Hit that follow button for updates on humanity's next giant leap!",
+    "visual_description": "Cta visual: Curious to learn more? Hit that follow button for updates on humanity's next giant leap!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious to learn more? Hit that follow button for updates on humanity's next giant leap!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious to learn more? Hit that follow button for updates on humanity's next giant leap!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious to learn more?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

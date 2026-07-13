@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Ever wonder why we resist change, even when it\u2019s better?",
+    "visual_description": "Hook visual: Ever wonder why we resist change, even when it\u2019s better?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever wonder why we resist change, even when it\u2019s better?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever wonder why we resist change, even when it\u2019s better?",
+    "stock_footage_query": "",
+    "text_overlay": "Ever wonder why we",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "This is status quo bias, a tendency to favor the familiar over the unknown.",
+    "visual_description": "Context visual: This is status quo bias, a tendency to favor the familiar over the unknown.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This is status quo bias, a tendency to favor the familiar over the unknown.",
+    "ai_video_prompt": "Cinematic motion: Context visual: This is status quo bias, a tendency to favor the familiar over the unknown.",
+    "stock_footage_query": "",
+    "text_overlay": "This is status quo",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 12.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show it\u2019s not just laziness; it\u2019s wired in our brains. We feel safer sticking with what we know.",
+    "visual_description": "Escalation visual: Studies show it\u2019s not just laziness; it\u2019s wired in our brains. We feel safer sticking with what we know.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Studies show it\u2019s not just laziness; it\u2019s wired in our brains. We feel safer sticking with what we know.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Studies show it\u2019s not just laziness; it\u2019s wired in our brains. We feel safer sticking with what we know.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show it\u2019s not",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 12.0,
+      "end_sec": 20.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 12.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "People often pay more for old habits than exploring new options. We fear loss more than we crave gain.",
+    "visual_description": "Evidence visual: People often pay more for old habits than exploring new options. We fear loss more than we crave gain.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: People often pay more for old habits than exploring new options. We fear loss more than we crave gain.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: People often pay more for old habits than exploring new options. We fear loss more than we crave gain.",
+    "stock_footage_query": "",
+    "text_overlay": "People often pay more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 20.0,
+      "end_sec": 28.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 20.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Recognizing this bias empowers us to make better choices and embrace change.",
+    "visual_description": "Payoff visual: Recognizing this bias empowers us to make better choices and embrace change.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Recognizing this bias empowers us to make better choices and embrace change.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Recognizing this bias empowers us to make better choices and embrace change.",
+    "stock_footage_query": "",
+    "text_overlay": "Recognizing this bias empowers",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 28.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 28.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 22.0,
+    "narration": "Ready to challenge your status quo? Hit like and follow for more insights!",
+    "visual_description": "Cta visual: Ready to challenge your status quo? Hit like and follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Ready to challenge your status quo? Hit like and follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Ready to challenge your status quo? Hit like and follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Ready to challenge your",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

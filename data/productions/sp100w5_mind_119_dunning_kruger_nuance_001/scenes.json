@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Did you know ignorance can breed overconfidence?",
+    "visual_description": "Hook visual: Did you know ignorance can breed overconfidence?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Did you know ignorance can breed overconfidence?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Did you know ignorance can breed overconfidence?",
+    "stock_footage_query": "",
+    "text_overlay": "Did you know ignorance",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "It's called the Dunning Kruger effect. People with low ability often overestimate their skills.",
+    "visual_description": "Context visual: It's called the Dunning Kruger effect. People with low ability often overestimate their skills.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: It's called the Dunning Kruger effect. People with low ability often overestimate their skills.",
+    "ai_video_prompt": "Cinematic motion: Context visual: It's called the Dunning Kruger effect. People with low ability often overestimate their skills.",
+    "stock_footage_query": "",
+    "text_overlay": "It's called the Dunning",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But here\u2019s the kicker: it\u2019s not just about intelligence. It\u2019s also about awareness.",
+    "visual_description": "Escalation visual: But here\u2019s the kicker: it\u2019s not just about intelligence. It\u2019s also about awareness.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But here\u2019s the kicker: it\u2019s not just about intelligence. It\u2019s also about awareness.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But here\u2019s the kicker: it\u2019s not just about intelligence. It\u2019s also about awareness.",
+    "stock_footage_query": "",
+    "text_overlay": "But here\u2019s the kicker:",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show that as people gain knowledge, their confidence drops. It\u2019s a paradox.",
+    "visual_description": "Evidence visual: Studies show that as people gain knowledge, their confidence drops. It\u2019s a paradox.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show that as people gain knowledge, their confidence drops. It\u2019s a paradox.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show that as people gain knowledge, their confidence drops. It\u2019s a paradox.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show that as",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Understanding this nuance helps us recognize our limits and pursue true growth.",
+    "visual_description": "Payoff visual: Understanding this nuance helps us recognize our limits and pursue true growth.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding this nuance helps us recognize our limits and pursue true growth.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding this nuance helps us recognize our limits and pursue true growth.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding this nuance helps",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 16.0,
+    "narration": "Want to learn more about your mind? Hit that follow button!",
+    "visual_description": "Cta visual: Want to learn more about your mind? Hit that follow button!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to learn more about your mind? Hit that follow button!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to learn more about your mind? Hit that follow button!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

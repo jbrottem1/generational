@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Here's what science actually says about sepsis basics.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Sepsis is a life-threatening response to infection. Think of it as the body going into overdrive.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Symptoms can escalate quickly\u2014fever, rapid heartbeat, confusion. Ignoring them? Risky.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Research shows that early treatment can significantly improve survival rates. Timing is everything.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: So, if you notice signs of sepsis, act fast! Knowledge could save a life\u2014yours or someone else's.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Stay informed. Share this video and help spread awareness about sepsis.",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Here's what science actually says about sepsis basics.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Sepsis is a life-threatening response to infection. Think of it as the body going into overdrive.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Symptoms can escalate quickly\u2014fever, rapid heartbeat, confusion. Ignoring them? Risky.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Research shows that early treatment can significantly improve survival rates. Timing is everything.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: So, if you notice signs of sepsis, act fast! Knowledge could save a life\u2014yours or someone else's.",
+      "duration_sec": 22.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Stay informed. Share this video and help spread awareness about sepsis.",
+      "duration_sec": 12.0
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Correlation vs Causation",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the difference between correlation and causation reveals critical insights into how we interpret data.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about correlation vs causation.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Just because two things happen together doesn't mean one causes the other.",
+      "emotion": "curiosity",
+      "delivery": "conversational",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Take ice cream sales and shark attacks. They both spike in summer. But do they cause each other?",
+      "emotion": "intrigue",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Researchers note that correlation merely highlights relationships, not causation. Random factors could be at play.",
+      "emotion": "pondering",
+      "delivery": "informative",
+      "retention_device": "data surprise"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding this helps prevent misleading conclusions about data, leading to better decisions.",
+      "emotion": "satisfaction",
+      "delivery": "clear and confident",
+      "retention_device": "revelatory insight"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into data science? Hit that follow button!",
+      "emotion": "encouragement",
+      "delivery": "inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about correlation vs causation. Just because two things happen together doesn't mean one causes the other. Take ice cream sales and shark attacks. They both spike in summer. But do they cause each other? Researchers note that correlation merely highlights relationships, not causation. Random factors could be at play. Understanding this helps prevent misleading conclusions about data, leading to better decisions. Want to dive deeper into data science? Hit that follow button!",
+  "call_to_action": "Want to dive deeper into data science? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:26:37.263828+00:00",
+  "source": "ai"
+}

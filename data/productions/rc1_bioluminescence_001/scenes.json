@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "The ocean sparkles with living light\u2014what\u2019s the secret?",
+    "visual_description": "Hook visual: The ocean sparkles with living light\u2014what\u2019s the secret?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: The ocean sparkles with living light\u2014what\u2019s the secret?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: The ocean sparkles with living light\u2014what\u2019s the secret?",
+    "stock_footage_query": "",
+    "text_overlay": "The ocean sparkles with",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "wonder",
+    "length_sec": 8.0,
+    "narration": "Bioluminescence is nature\u2019s glow-in-the-dark magic, found in creatures from jellyfish to deep-sea fish.",
+    "visual_description": "Context visual: Bioluminescence is nature\u2019s glow-in-the-dark magic, found in creatures from jellyfish to deep-sea fish.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Bioluminescence is nature\u2019s glow-in-the-dark magic, found in creatures from jellyfish to deep-sea fish.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Bioluminescence is nature\u2019s glow-in-the-dark magic, found in creatures from jellyfish to deep-sea fish.",
+    "stock_footage_query": "",
+    "text_overlay": "Bioluminescence is nature\u2019s glow-in-the-dark",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "intrigue",
+    "length_sec": 8.0,
+    "narration": "But why do they glow? Is it for defense, attracting prey, or something even more surprising?",
+    "visual_description": "Escalation visual: But why do they glow? Is it for defense, attracting prey, or something even more surprising?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But why do they glow? Is it for defense, attracting prey, or something even more surprising?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But why do they glow? Is it for defense, attracting prey, or something even more surprising?",
+    "stock_footage_query": "",
+    "text_overlay": "But why do they",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "fascination",
+    "length_sec": 8.0,
+    "narration": "Scientists discovered these creatures use chemical reactions that produce light without heat\u2014a phenomenon called chemiluminescence.",
+    "visual_description": "Evidence visual: Scientists discovered these creatures use chemical reactions that produce light without heat\u2014a phenomenon called chemilu",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Scientists discovered these creatures use chemical reactions that produce light without heat\u2014a phenomenon called chemilu",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Scientists discovered these creatures use chemical reactions that produce light without heat\u2014a phenomenon called chemilu",
+    "stock_footage_query": "",
+    "text_overlay": "Scientists discovered these creatures",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "awe",
+    "length_sec": 14.0,
+    "narration": "From dazzling displays to stealthy hunters, bioluminescence is a powerful survival tool in the dark depths of the ocean.",
+    "visual_description": "Payoff visual: From dazzling displays to stealthy hunters, bioluminescence is a powerful survival tool in the dark depths of the ocean.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: From dazzling displays to stealthy hunters, bioluminescence is a powerful survival tool in the dark depths of the ocean.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: From dazzling displays to stealthy hunters, bioluminescence is a powerful survival tool in the dark depths of the ocean.",
+    "stock_footage_query": "",
+    "text_overlay": "From dazzling displays to",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "encouragement",
+    "length_sec": 20.0,
+    "narration": "Want more ocean mysteries? Hit that like button and subscribe for more astonishing science!",
+    "visual_description": "Cta visual: Want more ocean mysteries? Hit that like button and subscribe for more astonishing science!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want more ocean mysteries? Hit that like button and subscribe for more astonishing science!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want more ocean mysteries? Hit that like button and subscribe for more astonishing science!",
+    "stock_footage_query": "",
+    "text_overlay": "Want more ocean mysteries?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

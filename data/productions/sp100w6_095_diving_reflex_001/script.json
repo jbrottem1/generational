@@ -1,0 +1,74 @@
+{
+  "title": "Diving Reflex",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the diving reflex and its fascinating science without exaggeration.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Ever wondered why your body holds its breath underwater?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "It's called the diving reflex, a survival mechanism in many animals, including humans.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "When submerged, your heart rate slows, and blood flow redirects to vital organs.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show this reflex is stronger in cold water and essential for survival.",
+      "emotion": "curiosity",
+      "delivery": "fact-based",
+      "retention_device": "statistic"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 36.0,
+      "segment_type": "payoff",
+      "voiceover": "But here's the catch\u2014our understanding of it is still evolving.",
+      "emotion": "curiosity",
+      "delivery": "insightful",
+      "retention_device": "revelation"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 36.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more science insights? Follow for more!",
+      "emotion": "curiosity",
+      "delivery": "encouraging",
+      "retention_device": "final hook"
+    }
+  ],
+  "full_voiceover": "Ever wondered why your body holds its breath underwater? It's called the diving reflex, a survival mechanism in many animals, including humans. When submerged, your heart rate slows, and blood flow redirects to vital organs. Studies show this reflex is stronger in cold water and essential for survival. But here's the catch\u2014our understanding of it is still evolving. Curious about more science insights? Follow for more!",
+  "call_to_action": "Curious about more science insights? Follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:08:07.944485+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science has a clearer story about solar flares than social media does.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Solar flares are massive bursts of energy from the sun. They can impact communication and power on Earth.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: But did you know they\u2019re caused by magnetic field lines snapping? This can release the energy of millions of atomic bomb",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: When these flares erupt, they can send bursts of solar particles towards Earth, affecting satellites.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: They can create stunning auroras, but also disrupt power grids, leading to blackouts. It\u2019s a cosmic balancing act!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about more cosmic wonders? Follow for the latest in space science!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science has a clearer story about solar flares than social media does.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Solar flares are massive bursts of energy from the sun. They can impact communication and power on Earth.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: But did you know they\u2019re caused by magnetic field lines snapping? This can release the energy of millions of atomic bomb",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: When these flares erupt, they can send bursts of solar particles towards Earth, affecting satellites.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: They can create stunning auroras, but also disrupt power grids, leading to blackouts. It\u2019s a cosmic balancing act!",
+      "duration_sec": 16.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about more cosmic wonders? Follow for the latest in space science!",
+      "duration_sec": 16.0
+    }
+  ]
+}

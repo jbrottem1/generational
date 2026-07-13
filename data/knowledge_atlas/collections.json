@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "collections": [
+    {
+      "id": "biology",
+      "name": "Biology",
+      "domain": "biology",
+      "asset_ids": [
+        "coral_snake"
+      ]
+    },
+    {
+      "id": "ecology",
+      "name": "Ecology",
+      "domain": "ecology",
+      "asset_ids": [
+        "monarch_adult"
+      ]
+    },
+    {
+      "id": "evolution",
+      "name": "Evolution",
+      "domain": "evolution",
+      "asset_ids": [
+        "hoverfly_lateral",
+        "wasp_lateral",
+        "scarlet_kingsnake",
+        "viceroy_adult"
+      ]
+    }
+  ]
+}

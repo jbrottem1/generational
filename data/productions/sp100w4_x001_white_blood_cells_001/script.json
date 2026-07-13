@@ -1,0 +1,84 @@
+{
+  "title": "White blood cells",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Discover the fascinating world of white blood cells and their critical role in our immune system.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about white blood cells.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "These tiny warriors of your body fight off infections and diseases, but there's more to the story.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Did you know there are different types? Neutrophils, lymphocytes, monocytes\u2014they all have unique missions.",
+      "emotion": "curiosity",
+      "delivery": "energetic",
+      "retention_device": "surprise"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows they adapt to threats, even learning from past infections. Imagine that!",
+      "emotion": "intrigue",
+      "delivery": "enthusiastic",
+      "retention_device": "fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "But not everything is perfect. Sometimes, these cells can mistakenly attack healthy tissues.",
+      "emotion": "concern",
+      "delivery": "serious",
+      "retention_device": "contrast"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 52.0,
+      "segment_type": "payoff",
+      "voiceover": "So, white blood cells are both protectors and potential troublemakers in our immune system.",
+      "emotion": "realization",
+      "delivery": "reflective",
+      "retention_device": "revelation"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 52.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into the science? Hit subscribe for more amazing facts!",
+      "emotion": "encouragement",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about white blood cells. These tiny warriors of your body fight off infections and diseases, but there's more to the story. Did you know there are different types? Neutrophils, lymphocytes, monocytes\u2014they all have unique missions. Research shows they adapt to threats, even learning from past infections. Imagine that! But not everything is perfect. Sometimes, these cells can mistakenly attack healthy tissues. So, white blood cells are both protectors and potential troublemakers in our immune system. Want to dive deeper into the science? Hit subscribe for more amazing facts!",
+  "call_to_action": "Want to dive deeper into the science? Hit subscribe for more amazing facts!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:15:20.171566+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Mast Cells",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "An exploration of mast cells and their significant roles in the human body.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about mast cells.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Mast cells are tiny defenders in your immune system, hidden in tissues like your skin and lungs.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "They release chemicals like histamine during allergic reactions \u2014 but that's just the beginning.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Recent studies show mast cells also play roles in wound healing and even cancer defense.",
+      "emotion": "curiosity",
+      "delivery": "factual",
+      "retention_device": "interesting fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding these cells could change how we treat allergies and inflammatory diseases.",
+      "emotion": "curiosity",
+      "delivery": "hopeful",
+      "retention_device": "conclusion"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how your body protects itself? Hit that follow for more science insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "strong CTA"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about mast cells. Mast cells are tiny defenders in your immune system, hidden in tissues like your skin and lungs. They release chemicals like histamine during allergic reactions \u2014 but that's just the beginning. Recent studies show mast cells also play roles in wound healing and even cancer defense. Understanding these cells could change how we treat allergies and inflammatory diseases. Curious about how your body protects itself? Hit that follow for more science insights!",
+  "call_to_action": "Hit that follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:18:42.108560+00:00",
+  "source": "ai"
+}
