@@ -1,0 +1,45 @@
+{
+  "character_id": "DOCTOR_001",
+  "skin": {
+    "type": "cinematic_skin",
+    "subsurface": true
+  },
+  "hair": {
+    "responds_to": [
+      "gravity",
+      "head_motion",
+      "accel",
+      "decel",
+      "wind",
+      "moisture",
+      "collision"
+    ],
+    "require": [
+      "root_stability",
+      "strand_grouping",
+      "secondary_motion",
+      "damping",
+      "follow_through"
+    ],
+    "forbid": [
+      "rigid_helmet",
+      "ignore_gravity",
+      "face_clipping",
+      "constant_exaggerated_wind"
+    ],
+    "shared_world_wind": true
+  },
+  "eyes": {
+    "wetness": true,
+    "catchlights": true,
+    "iris_detail": true
+  },
+  "metal_or_props": {
+    "primary": "#F4F7FA",
+    "titanium": "#8A939E",
+    "accent": "#3BA7E0",
+    "eyes": "#7FD4FF"
+  },
+  "wardrobe_materials_follow_outfit": true,
+  "reusable": true
+}

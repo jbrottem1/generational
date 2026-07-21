@@ -75,6 +75,16 @@ class VisualIntelligenceEngine(Engine):
         subject = context.get("subject", "")
         style_key = context.get("visual_style", "")  # optional operator/brand override
 
+        try:
+            from services.learning.api import for_visual
+
+            visual_guide = for_visual(str(subject))
+            context["visual_learning_guidance"] = visual_guide
+            if not style_key and visual_guide.get("winning_thumbnail_styles"):
+                style_key = str(visual_guide["winning_thumbnail_styles"][0])
+        except Exception:
+            visual_guide = {}
+
         for candidate in candidates:
             package = build_visual_package(
                 candidate,
@@ -84,11 +94,21 @@ class VisualIntelligenceEngine(Engine):
                 style_key=style_key,
                 attention=candidate.get("attention_graph"),
             )
+            # Prefer authentic evidence when Evidence Intelligence already ran
+            if candidate.get("evidence_package"):
+                try:
+                    from services.evidence_intelligence import bind_package_to_visual_scenes
+
+                    package = bind_package_to_visual_scenes(package, candidate["evidence_package"])
+                except Exception:  # noqa: BLE001
+                    pass
             candidate["visual_package"] = package
             candidate["visual_score"] = package["visual_score"]
             # Best thumbnail direction feeds packaging; SEO's later concept
             # text is never overwritten — this is the art-directed complement.
             candidate["thumbnail_concepts"] = package["thumbnails"]
+            if visual_guide:
+                candidate["visual_learning_guidance"] = visual_guide
 
         scores = [candidate["visual_score"] for candidate in candidates]
         avg_score = round(sum(scores) / len(scores), 1)

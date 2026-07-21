@@ -23,7 +23,7 @@ Every task has an owner. Every handoff is explicit. Every production is traceabl
 | **3 · Local Production** | Mac only | Verified MP4 + manifest | `services/generational_os/export.py` |
 | **4 · Post-Production** | Both | `READY_TO_PUBLISH/` | (Agent 18 / 28 — next phase) |
 
-Details: [EXECUTION_MODE.md](./EXECUTION_MODE.md) · [CLOUD_EXECUTION.md](./CLOUD_EXECUTION.md) · [LOCAL_EXECUTION.md](./LOCAL_EXECUTION.md)
+Details: [EXECUTION_MODE.md](./EXECUTION_MODE.md) · [LOCAL_EXECUTION.md](./LOCAL_EXECUTION.md)
 
 ---
 
@@ -136,10 +136,11 @@ Shows queues (research, script, render, QC, publish), metrics, asset cache healt
 
 All production agents must:
 
-1. Use `gate_production()` / `prepare_production()` before render
-2. Write `PRODUCTION_BRIEF.json` + `RENDER_PACKAGE.json` in cloud mode
+1. Use `gate_production()` / `prepare_production()` before render (local prep)
+2. Write `PRODUCTION_BRIEF.json` + `RENDER_PACKAGE.json` on the local Mac
 3. Use `export_verified_production()` for local export (manifest + DB)
-4. Never claim Desktop SUCCESS from cloud VM paths
+4. Never claim Desktop SUCCESS without a verified MP4 under `~/Desktop/AI Start-Up/Videos/`
+5. Never introduce a Cursor Cloud / remote production execution path
 
 Standards: [data/knowledge_standards/PRODUCTION_STANDARDS.md](./data/knowledge_standards/PRODUCTION_STANDARDS.md)
 
@@ -160,5 +161,5 @@ services/generational_os/
 ├── asset_registry.py
 ├── dashboard.py       # Executive dashboard
 ├── improvement.py     # Self-improvement
-└── orchestrator.py    # End-to-end cloud handoff
+└── orchestrator.py    # End-to-end local preparation
 ```

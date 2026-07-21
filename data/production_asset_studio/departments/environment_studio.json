@@ -1,0 +1,34 @@
+{
+  "department_id": "environment_studio",
+  "display_name": "Environment Studio",
+  "mission": "Replace greybox worlds with cinematic navigable locations",
+  "priority_worlds": [
+    "GENERATIONAL_MEDICAL_LAB"
+  ],
+  "requirements": [
+    "modern_architecture",
+    "cinematic_lighting",
+    "polished_floors",
+    "laboratory_equipment",
+    "holographic_displays",
+    "furniture",
+    "shelves",
+    "books",
+    "plants",
+    "windows",
+    "outdoor_scenery",
+    "atmospheric_depth",
+    "reflections",
+    "high_quality_materials",
+    "fully_navigable"
+  ],
+  "assets": [
+    {
+      "asset_id": "GENERATIONAL_MEDICAL_LAB",
+      "world_package_id": "WORLD-GMRI-MEDICAL-LAB",
+      "quality_tier": "phase_ii_production",
+      "runtime_path": "data/studio_assets/DOCTOR_001/RUNTIME/GENERATIONAL_MEDICAL_LAB.blend",
+      "flat_image_background": false
+    }
+  ]
+}

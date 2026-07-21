@@ -1,0 +1,63 @@
+{
+  "character_id": "CHAR-0001",
+  "personality_walk": "doctor_calm_authority",
+  "traits": [
+    "calm_authority",
+    "precise_foot_placement",
+    "balanced_posture",
+    "minimal_wasted_movement",
+    "approachable_not_militaristic"
+  ],
+  "true_motion_hint": "walk_explain",
+  "locomotion": {
+    "walk_phases": [
+      "heel_strike",
+      "foot_flattening",
+      "weight_acceptance",
+      "mid_stance",
+      "heel_rise",
+      "toe_off",
+      "swing",
+      "next_heel_strike"
+    ],
+    "walk_mechanics": [
+      "pelvis_rotates_tilts_subtly",
+      "shoulders_counter_rotate",
+      "arms_swing_opposite_legs",
+      "knees_flex_on_load",
+      "feet_roll_heel_to_toe",
+      "head_relatively_stable",
+      "gradual_accel_decel"
+    ],
+    "turn_sequence": [
+      "eyes",
+      "head",
+      "shoulders",
+      "pelvis",
+      "support_pivot",
+      "trailing_foot"
+    ],
+    "stop_sequence": [
+      "eyes_settle",
+      "decelerate",
+      "weight_center",
+      "secondary_cloth_hair_settle"
+    ],
+    "weight_transfer": [
+      "pelvis_leads",
+      "spine_compensates",
+      "feet_plant"
+    ],
+    "run": {
+      "includes_airborne_phase": true,
+      "increased_forward_lean": true,
+      "stronger_arm_drive": true,
+      "increased_breathing": true
+    },
+    "forbid": [
+      "rigid_body_spin",
+      "leg_cycle_only",
+      "instant_start_stop"
+    ]
+  }
+}

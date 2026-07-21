@@ -1,0 +1,462 @@
+{
+  "package_type": "CHARACTER_WORLD_STUDIO_PACKAGE",
+  "package_version": "1.0.0",
+  "engine_label": "Character & World Studio",
+  "generated_at": "2026-07-15T22:42:39.596130+00:00",
+  "topic": "Why Fire Hydrants Are Different Colors",
+  "production_id": "",
+  "visual_identity": {
+    "name": "Generational Cinematic Universe",
+    "character_style": "expressive_stylized",
+    "environment_style": "rich_cinematic_sets",
+    "forbid": [
+      "abstract_placeholder_shapes",
+      "generic_stick_figures",
+      "blank_backgrounds",
+      "static_faces",
+      "expressionless_characters",
+      "empty_environments",
+      "meaningless_motion"
+    ],
+    "require": [
+      "recognizable_characters",
+      "believable_environments",
+      "purposeful_acting",
+      "facial_expressions",
+      "emotional_storytelling",
+      "environmental_interaction"
+    ],
+    "palette_family": "vibrant_cohesive",
+    "silhouette_priority": true,
+    "hd_texture_intent": true
+  },
+  "cast": [
+    {
+      "id": "CHAR-NOVA",
+      "name": "Nova",
+      "short_name": "Nova",
+      "role": "curious_ai_assistant",
+      "biography": "Curious AI assistant who asks the questions viewers are thinking. Playful energy, precise recall, occasional mischievous spark.",
+      "personality": [
+        "playful",
+        "inquisitive",
+        "bright",
+        "loyal"
+      ],
+      "voice_profile": {
+        "voice": "nova",
+        "style": "bright_assistant",
+        "pace": "lively"
+      },
+      "movement_style": "light_bob_orbit",
+      "facial_range": [
+        "wide_eyes",
+        "grin",
+        "puzzled",
+        "awe"
+      ],
+      "favorite_gestures": [
+        "point_spark",
+        "tilt_head",
+        "hand_hologram"
+      ],
+      "signature_clothing": {
+        "coat": "violet_hoodie",
+        "shirt": "soft_white",
+        "accent": "cyan_circuit_trim",
+        "accessory": "ear_glow_band"
+      },
+      "silhouette": "hoodie_glow_band",
+      "palette": {
+        "skin": [
+          240,
+          220,
+          255
+        ],
+        "hair": [
+          120,
+          70,
+          220
+        ],
+        "coat": [
+          88,
+          52,
+          160
+        ],
+        "accent": [
+          80,
+          220,
+          255
+        ]
+      },
+      "true_motion_performance": "walk_explain",
+      "recurring_environments": [
+        "LOC-AI-LAB",
+        "LOC-SPACE-STATION",
+        "LOC-FUTURE-CITY"
+      ],
+      "domains": [
+        "ai",
+        "technology",
+        "space",
+        "computing",
+        "patterns"
+      ]
+    },
+    {
+      "id": "CHAR-PIPER",
+      "name": "Piper",
+      "short_name": "Piper",
+      "role": "engineer_inventor",
+      "biography": "Engineer and inventor who reverse-engineers how things work \u2014 hydrants, engines, gadgets. Hands always busy; explanations always concrete.",
+      "personality": [
+        "practical",
+        "clever",
+        "energetic",
+        "solving"
+      ],
+      "voice_profile": {
+        "voice": "shimmer",
+        "style": "hands_on_engineer",
+        "pace": "brisk"
+      },
+      "movement_style": "busy_hands_teach",
+      "facial_range": [
+        "focused",
+        "aha",
+        "skeptical",
+        "proud"
+      ],
+      "favorite_gestures": [
+        "wrench_point",
+        "sketch_air",
+        "thumbs_measure"
+      ],
+      "signature_clothing": {
+        "coat": "amber_workwear",
+        "shirt": "slate_tee",
+        "accent": "toolbelt",
+        "accessory": "goggles_forehead"
+      },
+      "silhouette": "goggles_toolbelt",
+      "palette": {
+        "skin": [
+          255,
+          210,
+          170
+        ],
+        "hair": [
+          180,
+          90,
+          40
+        ],
+        "coat": [
+          200,
+          120,
+          40
+        ],
+        "accent": [
+          60,
+          70,
+          80
+        ]
+      },
+      "true_motion_performance": "point_teach",
+      "recurring_environments": [
+        "LOC-ENGINEERING-WORKSHOP",
+        "LOC-FUTURE-CITY",
+        "LOC-SCIENCE-MUSEUM"
+      ],
+      "domains": [
+        "engineering",
+        "infrastructure",
+        "mechanics",
+        "invention",
+        "physics"
+      ]
+    }
+  ],
+  "primary_host": {
+    "id": "CHAR-NOVA",
+    "name": "Nova",
+    "short_name": "Nova",
+    "role": "curious_ai_assistant",
+    "biography": "Curious AI assistant who asks the questions viewers are thinking. Playful energy, precise recall, occasional mischievous spark.",
+    "personality": [
+      "playful",
+      "inquisitive",
+      "bright",
+      "loyal"
+    ],
+    "voice_profile": {
+      "voice": "nova",
+      "style": "bright_assistant",
+      "pace": "lively"
+    },
+    "movement_style": "light_bob_orbit",
+    "facial_range": [
+      "wide_eyes",
+      "grin",
+      "puzzled",
+      "awe"
+    ],
+    "favorite_gestures": [
+      "point_spark",
+      "tilt_head",
+      "hand_hologram"
+    ],
+    "signature_clothing": {
+      "coat": "violet_hoodie",
+      "shirt": "soft_white",
+      "accent": "cyan_circuit_trim",
+      "accessory": "ear_glow_band"
+    },
+    "silhouette": "hoodie_glow_band",
+    "palette": {
+      "skin": [
+        240,
+        220,
+        255
+      ],
+      "hair": [
+        120,
+        70,
+        220
+      ],
+      "coat": [
+        88,
+        52,
+        160
+      ],
+      "accent": [
+        80,
+        220,
+        255
+      ]
+    },
+    "true_motion_performance": "walk_explain",
+    "recurring_environments": [
+      "LOC-AI-LAB",
+      "LOC-SPACE-STATION",
+      "LOC-FUTURE-CITY"
+    ],
+    "domains": [
+      "ai",
+      "technology",
+      "space",
+      "computing",
+      "patterns"
+    ]
+  },
+  "location": {
+    "id": "LOC-FUTURE-CITY",
+    "name": "Future City",
+    "world_builder_hint": "WORLD-FUTURE_CITY",
+    "architecture": "vertical_plazas_and_transit_spines",
+    "lighting": "neon_rim + soft_daylight",
+    "palette_hint": "night",
+    "textures": [
+      "glass",
+      "composites",
+      "light_strips"
+    ],
+    "furniture": [
+      "plaza_seating",
+      "kiosks"
+    ],
+    "equipment": [
+      "transit_pods",
+      "holo_signs"
+    ],
+    "interactive_props": [
+      "public_info_pillar"
+    ],
+    "ambient_life": [
+      "traffic",
+      "pedestrians",
+      "drones"
+    ],
+    "weather": "clear_haze",
+    "environmental_animation": [
+      "traffic_band",
+      "sign_scroll",
+      "drone_pass"
+    ],
+    "background_characters": [
+      "citizens"
+    ],
+    "soundscape": [
+      "distant_transit",
+      "crowd_murmur"
+    ],
+    "detail_dressing": [
+      "billboards",
+      "planters",
+      "chargers"
+    ],
+    "domains": [
+      "technology",
+      "future",
+      "urban",
+      "society",
+      "ai"
+    ]
+  },
+  "character_plates": {
+    "CHAR-NOVA": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Why_Fire_Hydrants_Are_Different_Colors_20260715T224239Z/plates/char-nova_plate.png",
+    "CHAR-PIPER": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Why_Fire_Hydrants_Are_Different_Colors_20260715T224239Z/plates/char-piper_plate.png"
+  },
+  "scene_bindings": [
+    {
+      "scene_number": 1,
+      "purpose": "hook",
+      "length_sec": 3,
+      "narration": "These colors could determine whether firefighters save your house.",
+      "subject": "fire hydrants",
+      "studio_character_id": "CHAR-NOVA",
+      "studio_character_name": "Nova",
+      "studio_performance": "walk_explain",
+      "studio_gestures": [
+        "point_spark",
+        "tilt_head",
+        "hand_hologram"
+      ],
+      "studio_expression": "wide_eyes"
+    },
+    {
+      "scene_number": 2,
+      "purpose": "story_beat",
+      "length_sec": 3.5,
+      "narration": "Each color indicates a flow rating engineers read at a glance.",
+      "studio_character_id": "CHAR-PIPER",
+      "studio_character_name": "Piper",
+      "studio_performance": "point_teach",
+      "studio_gestures": [
+        "wrench_point",
+        "sketch_air",
+        "thumbs_measure"
+      ],
+      "studio_expression": "aha"
+    },
+    {
+      "scene_number": 3,
+      "purpose": "payoff",
+      "length_sec": 3,
+      "narration": "Flow rate matters when seconds decide if a house is saved.",
+      "studio_character_id": "CHAR-NOVA",
+      "studio_character_name": "Nova",
+      "studio_performance": "walk_explain",
+      "studio_gestures": [
+        "point_spark",
+        "tilt_head",
+        "hand_hologram"
+      ],
+      "studio_expression": "puzzled"
+    }
+  ],
+  "performance_library": [
+    "blink",
+    "breathe",
+    "shift_weight",
+    "look_around",
+    "eye_contact",
+    "gesture",
+    "walk",
+    "run",
+    "sit",
+    "pick_up",
+    "point",
+    "react",
+    "smile",
+    "frown",
+    "curiosity",
+    "excitement",
+    "concern",
+    "surprise"
+  ],
+  "continuity": {
+    "characters_prior_appearances": {
+      "CHAR-NOVA": 1,
+      "CHAR-PIPER": 1
+    },
+    "location_prior_uses": 1,
+    "rules": [
+      "Character silhouette and clothing remain locked per host bible",
+      "Location architecture and prop dressing remain consistent across visits",
+      "Do not invent alternate wardrobe without continuity update"
+    ]
+  },
+  "world_living_requirements": {
+    "continues_without_narration": true,
+    "ambient_life": [
+      "traffic",
+      "pedestrians",
+      "drones"
+    ],
+    "environmental_animation": [
+      "traffic_band",
+      "sign_scroll",
+      "drone_pass"
+    ],
+    "detail_dressing": [
+      "billboards",
+      "planters",
+      "chargers"
+    ],
+    "forbid_empty_sets": true
+  },
+  "camera_follow_characters": true,
+  "muted_storytelling": true,
+  "philosophy": {
+    "living_animated_universe": true,
+    "no_new_renderer": true,
+    "no_pipeline_redesign": true,
+    "does_not_replace_animation_engine": true
+  },
+  "quality_gate": {
+    "approved": true,
+    "decision": "APPROVE",
+    "failures": [],
+    "warnings": [],
+    "questions": {
+      "viewers_would_recognize_characters": true,
+      "audience_would_remember_world": true,
+      "want_another_episode_for_characters": true,
+      "every_scene_feels_alive": true,
+      "feels_like_original_series": true
+    },
+    "improve_scenes": [],
+    "reject_signals": [
+      "abstract_placeholder_shapes",
+      "generic_stick_figures",
+      "blank_backgrounds",
+      "static_faces",
+      "expressionless_characters",
+      "empty_environments",
+      "meaningless_motion"
+    ]
+  },
+  "summary": {
+    "primary_host": "Nova",
+    "cast_ids": [
+      "CHAR-NOVA",
+      "CHAR-PIPER"
+    ],
+    "location_id": "LOC-FUTURE-CITY",
+    "location_name": "Future City",
+    "plate_count": 2,
+    "quality_gate": "APPROVE",
+    "recognize_characters": true,
+    "feels_like_series": true
+  },
+  "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Why_Fire_Hydrants_Are_Different_Colors_20260715T224239Z/CHARACTER_WORLD_STUDIO_PACKAGE.json",
+  "out_dir": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Why_Fire_Hydrants_Are_Different_Colors_20260715T224239Z",
+  "artifacts": {
+    "CHARACTER_WORLD_STUDIO_PACKAGE.json": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Why_Fire_Hydrants_Are_Different_Colors_20260715T224239Z/CHARACTER_WORLD_STUDIO_PACKAGE.json",
+    "STUDIO_NOTES.md": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Why_Fire_Hydrants_Are_Different_Colors_20260715T224239Z/STUDIO_NOTES.md",
+    "plates": {
+      "CHAR-NOVA": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Why_Fire_Hydrants_Are_Different_Colors_20260715T224239Z/plates/char-nova_plate.png",
+      "CHAR-PIPER": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Why_Fire_Hydrants_Are_Different_Colors_20260715T224239Z/plates/char-piper_plate.png"
+    }
+  }
+}

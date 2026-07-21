@@ -1,0 +1,118 @@
+{
+  "department_id": "lighting_studio",
+  "display_name": "Lighting Studio",
+  "mission": "Reusable cinematic lighting presets",
+  "assets": [
+    {
+      "asset_id": "LIGHT_MORNING_LAB",
+      "preset_id": "morning_lab",
+      "includes": [
+        "key",
+        "fill",
+        "rim",
+        "practicals",
+        "exposure"
+      ]
+    },
+    {
+      "asset_id": "LIGHT_GOLDEN_HOUR",
+      "preset_id": "golden_hour",
+      "includes": [
+        "key",
+        "fill",
+        "rim",
+        "practicals",
+        "exposure"
+      ]
+    },
+    {
+      "asset_id": "LIGHT_SOFT_CLASSROOM",
+      "preset_id": "soft_classroom",
+      "includes": [
+        "key",
+        "fill",
+        "rim",
+        "practicals",
+        "exposure"
+      ]
+    },
+    {
+      "asset_id": "LIGHT_NIGHT_LABORATORY",
+      "preset_id": "night_laboratory",
+      "includes": [
+        "key",
+        "fill",
+        "rim",
+        "practicals",
+        "exposure"
+      ]
+    },
+    {
+      "asset_id": "LIGHT_HOSPITAL_EMERGENCY",
+      "preset_id": "hospital_emergency",
+      "includes": [
+        "key",
+        "fill",
+        "rim",
+        "practicals",
+        "exposure"
+      ]
+    },
+    {
+      "asset_id": "LIGHT_MUSEUM",
+      "preset_id": "museum",
+      "includes": [
+        "key",
+        "fill",
+        "rim",
+        "practicals",
+        "exposure"
+      ]
+    },
+    {
+      "asset_id": "LIGHT_FOREST",
+      "preset_id": "forest",
+      "includes": [
+        "key",
+        "fill",
+        "rim",
+        "practicals",
+        "exposure"
+      ]
+    },
+    {
+      "asset_id": "LIGHT_RAIN",
+      "preset_id": "rain",
+      "includes": [
+        "key",
+        "fill",
+        "rim",
+        "practicals",
+        "exposure"
+      ]
+    },
+    {
+      "asset_id": "LIGHT_SNOW",
+      "preset_id": "snow",
+      "includes": [
+        "key",
+        "fill",
+        "rim",
+        "practicals",
+        "exposure"
+      ]
+    },
+    {
+      "asset_id": "LIGHT_SUNSET",
+      "preset_id": "sunset",
+      "includes": [
+        "key",
+        "fill",
+        "rim",
+        "practicals",
+        "exposure"
+      ]
+    }
+  ],
+  "default_for_golden_motion": "morning_lab"
+}

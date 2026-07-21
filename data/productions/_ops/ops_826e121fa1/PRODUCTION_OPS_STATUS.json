@@ -1,0 +1,1032 @@
+{
+  "schema_version": "1.0",
+  "production_id": "ops_826e121fa1",
+  "brief": {
+    "topic": "Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters",
+    "platform": "youtube_shorts",
+    "length_sec": 50,
+    "style": "educational",
+    "narrator": "professor",
+    "voice": "default",
+    "quality_target": 98.0,
+    "constraints": {
+      "publishing_enabled": false,
+      "audience": "general audience ages 13+",
+      "category": "Folklore",
+      "domain": "History",
+      "hook_required": "What if I told you millions of people know the name 'leprechaun'\u2014but almost nobody knows where the legend actually came from?",
+      "enforce_hook": true,
+      "golden_production": true,
+      "preferred_voice_provider": "elevenlabs",
+      "visual_style": "cinematic mysterious documentary \u2014 Irish landscapes, castles, forests",
+      "thumbnail_style": "mysterious leprechaun silhouette + glowing pot of gold + Irish landscape + bold text THE TRUTH ABOUT LEPRECHAUNS",
+      "thumbnail_text": "THE TRUTH ABOUT LEPRECHAUNS",
+      "vsi_priority": [
+        "real Irish landscapes",
+        "ancient castles",
+        "forests",
+        "historical artwork",
+        "cinematic AI recreations",
+        "animated diagrams only if necessary"
+      ],
+      "sound_design": [
+        "celtic-inspired background music",
+        "ambient forest",
+        "cinematic risers",
+        "balanced mix"
+      ],
+      "world_type": "Irish misty countryside",
+      "world_objects": [
+        "rolling green hills",
+        "ancient stone castle ruin",
+        "dense forest path",
+        "rainbow mist",
+        "pot of gold motif",
+        "celtic knot detail"
+      ],
+      "world_continuity": [
+        "same Irish misty countryside world across scenes",
+        "cool overcast daylight into forest shade"
+      ]
+    },
+    "command": "Create a 50 second YouTube Short titled \"Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters\". Open in the first 3 seconds with a curiosity-gap cold open and the narration: \"What if I told you millions of people know the name 'leprechaun'\u2014but almost nobody knows where the legend actually came from?\" Cover: what a leprechaun is in Irish folklore; Celtic mythology origins; why they are associated with gold; why they wear green today; clearly distinguish folklore from historical evidence; end with one surprising memorable fact. Visual priority: real Irish landscapes, ancient castles, forests, historical artwork, cinematic AI recreations; animated diagrams only if necessary. Avoid slideshow. Cinematic camera movement throughout. Tone: curious, cinematic, mysterious, educational documentary. Thumbnail concept: mysterious leprechaun silhouette, glowing pot of gold, dramatic Irish landscape, bold text \"THE TRUTH ABOUT LEPRECHAUNS\". Sound: subtle Celtic-inspired underscore, forest ambience, light cinematic risers. Dynamic captions highlighting key words. Publishing disabled.",
+    "raw": {}
+  },
+  "current_stage": "export",
+  "current_agent": "export_and_validate",
+  "overall_progress_pct": 100,
+  "elapsed_ms": 54090,
+  "eta_ms": null,
+  "overall_status": "succeeded",
+  "pipeline_health": "degraded",
+  "warnings": [
+    "animation unavailable \u2014 continued",
+    "viewer_retention failed after retries \u2014 production continued",
+    "viewer_retention: degraded \u2014 continuing pipeline"
+  ],
+  "retry_count": 1,
+  "quality_scores": {
+    "research": 85.0,
+    "psychology": 90.0,
+    "studio_director": 95.0,
+    "script_generator": 95.0,
+    "scene_builder": 100.0,
+    "media_collection": 100.0,
+    "animation": 100.0,
+    "voice_generation": 100.0,
+    "music_sound": 90.0,
+    "captions": 95.0,
+    "rendering": 100.0,
+    "viewer_retention": 100.0,
+    "optimization_lab": 100.0,
+    "quality_assurance": 100.0,
+    "seo_package": 100.0,
+    "export": 95.0
+  },
+  "current_files": [
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/episode.mp4",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/captions.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/description.txt",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/seo_metadata.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/thumbnail.png"
+  ],
+  "started_at": "2026-07-14T13:40:44.579119+00:00",
+  "finished_at": "2026-07-14T13:41:38.670164+00:00",
+  "stages": [
+    {
+      "key": "research",
+      "label": "Research Engine",
+      "engines": [
+        "research",
+        "ideation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T13:40:44.580069+00:00",
+      "end_time": "2026-07-14T13:41:04.336791+00:00",
+      "duration_ms": 19755,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 85.0,
+      "output_files": [],
+      "current_agent": "research",
+      "engine_results": [
+        {
+          "engine": "research",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 11508,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 11508
+            }
+          ]
+        },
+        {
+          "engine": "ideation",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 8247,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 8247
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 2,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "psychology",
+      "label": "Psychology Engine",
+      "engines": [
+        "psychology"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T13:41:04.337447+00:00",
+      "end_time": "2026-07-14T13:41:04.376319+00:00",
+      "duration_ms": 38,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 90.0,
+      "output_files": [],
+      "current_agent": "psychology",
+      "engine_results": [
+        {
+          "engine": "psychology",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 38,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 38
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "studio_director",
+      "label": "AI Studio Director",
+      "engines": [
+        "ai_director"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T13:41:04.376955+00:00",
+      "end_time": "2026-07-14T13:41:04.409809+00:00",
+      "duration_ms": 32,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "ai_director",
+      "engine_results": [
+        {
+          "engine": "ai_director",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 32,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 32
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "script_generator",
+      "label": "Script Generator",
+      "engines": [
+        "script_generation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T13:41:04.410405+00:00",
+      "end_time": "2026-07-14T13:41:08.229267+00:00",
+      "duration_ms": 3818,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "script_generation",
+      "engine_results": [
+        {
+          "engine": "script_generation",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 3818,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 3818
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "scene_builder",
+      "label": "Scene Builder",
+      "engines": [
+        "visual_intelligence",
+        "scene_planning",
+        "visual_planning"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T13:41:08.229939+00:00",
+      "end_time": "2026-07-14T13:41:08.272362+00:00",
+      "duration_ms": 40,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "visual_intelligence",
+      "engine_results": [
+        {
+          "engine": "visual_intelligence",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 40,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 40
+            }
+          ]
+        },
+        {
+          "engine": "scene_planning",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 0,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 0
+            }
+          ]
+        },
+        {
+          "engine": "visual_planning",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 0,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 0
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 3,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "media_collection",
+      "label": "Media Collection",
+      "engines": [
+        "evidence_intelligence",
+        "image",
+        "asset_manager"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T13:41:09.057072+00:00",
+      "end_time": "2026-07-14T13:41:14.972616+00:00",
+      "duration_ms": 5913,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "evidence_intelligence",
+      "engine_results": [
+        {
+          "engine": "evidence_intelligence",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 3,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 3
+            }
+          ]
+        },
+        {
+          "engine": "image",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 5634,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 5634
+            }
+          ]
+        },
+        {
+          "engine": "asset_manager",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 276,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 276
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 3,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "animation",
+      "label": "Animation / Motion Graphics",
+      "engines": [
+        "cinematography",
+        "animation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T13:41:14.992032+00:00",
+      "end_time": "2026-07-14T13:41:14.996481+00:00",
+      "duration_ms": 3,
+      "warnings": [
+        "animation unavailable \u2014 continued"
+      ],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "cinematography",
+      "engine_results": [
+        {
+          "engine": "cinematography",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 3,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 3
+            }
+          ]
+        },
+        {
+          "engine": "animation",
+          "status": "skipped",
+          "attempts": 1,
+          "retries": 0,
+          "error": "not_registered_or_not_ready",
+          "warnings": [
+            "animation unavailable \u2014 continued"
+          ],
+          "duration_ms": 0,
+          "fallback": true
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "failure_reason": "animation unavailable \u2014 continued",
+      "dependency_health": {
+        "engine_count": 2,
+        "skipped": 1,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "voice_generation",
+      "label": "Voice Generation",
+      "engines": [
+        "voice_audio",
+        "narration",
+        "voice"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T13:41:14.997188+00:00",
+      "end_time": "2026-07-14T13:41:30.491658+00:00",
+      "duration_ms": 15492,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "voice_audio",
+      "engine_results": [
+        {
+          "engine": "voice_audio",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 0,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 0
+            }
+          ]
+        },
+        {
+          "engine": "narration",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 12338,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 12338
+            }
+          ]
+        },
+        {
+          "engine": "voice",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 3154,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 3154
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 3,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "music_sound",
+      "label": "Music & Sound Design",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-14T13:41:30.493355+00:00",
+      "end_time": "2026-07-14T13:41:30.494021+00:00",
+      "duration_ms": 0,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 90.0,
+      "output_files": [],
+      "current_agent": "apply_music_direction",
+      "engine_results": [
+        {
+          "engine": "apply_music_direction",
+          "status": "succeeded"
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "captions",
+      "label": "Captions",
+      "engines": [
+        "subtitle"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T13:41:30.494686+00:00",
+      "end_time": "2026-07-14T13:41:30.496137+00:00",
+      "duration_ms": 0,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "subtitle",
+      "engine_results": [
+        {
+          "engine": "subtitle",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 0,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 0
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "rendering",
+      "label": "Rendering",
+      "engines": [
+        "timeline",
+        "render_package",
+        "studio_render",
+        "video"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T13:41:30.496840+00:00",
+      "end_time": "2026-07-14T13:41:35.786082+00:00",
+      "duration_ms": 5286,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "timeline",
+      "engine_results": [
+        {
+          "engine": "timeline",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 0,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 0
+            }
+          ]
+        },
+        {
+          "engine": "render_package",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 1,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 1
+            }
+          ]
+        },
+        {
+          "engine": "studio_render",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 2,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 2
+            }
+          ]
+        },
+        {
+          "engine": "video",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 5283,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 5283
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 4,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "viewer_retention",
+      "label": "Viewer Retention Analysis",
+      "engines": [
+        "viewer_retention"
+      ],
+      "status": "degraded",
+      "start_time": "2026-07-14T13:41:35.787164+00:00",
+      "end_time": "2026-07-14T13:41:35.943722+00:00",
+      "duration_ms": 155,
+      "warnings": [
+        "viewer_retention failed after retries \u2014 production continued",
+        "viewer_retention: degraded \u2014 continuing pipeline"
+      ],
+      "errors": [
+        "viewer_retention: 'str' object has no attribute 'get'"
+      ],
+      "retry_attempts": 1,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "viewer_retention",
+      "engine_results": [
+        {
+          "engine": "viewer_retention",
+          "status": "failed_continued",
+          "attempts": 2,
+          "retries": 1,
+          "error": "'str' object has no attribute 'get'",
+          "warnings": [
+            "viewer_retention failed after retries \u2014 production continued"
+          ],
+          "duration_ms": 0,
+          "fallback": true,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "failed",
+              "duration_ms": 0,
+              "error": "'str' object has no attribute 'get'"
+            },
+            {
+              "attempt": 2,
+              "status": "failed",
+              "duration_ms": 0,
+              "error": "'str' object has no attribute 'get'"
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "failure_reason": "viewer_retention: 'str' object has no attribute 'get'",
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 1
+      }
+    },
+    {
+      "key": "optimization_lab",
+      "label": "Optimization Lab",
+      "engines": [
+        "optimization_lab"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T13:41:35.944746+00:00",
+      "end_time": "2026-07-14T13:41:36.050877+00:00",
+      "duration_ms": 105,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "optimization_lab",
+      "engine_results": [
+        {
+          "engine": "optimization_lab",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 105,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 105
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "quality_assurance",
+      "label": "Quality Assurance",
+      "engines": [
+        "quality",
+        "production_qa"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T13:41:36.051797+00:00",
+      "end_time": "2026-07-14T13:41:36.056247+00:00",
+      "duration_ms": 3,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "quality",
+      "engine_results": [
+        {
+          "engine": "quality",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 0,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 0
+            }
+          ]
+        },
+        {
+          "engine": "production_qa",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 3,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 3
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 2,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "seo_package",
+      "label": "SEO Package",
+      "engines": [
+        "seo",
+        "seo_optimization"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T13:41:36.057044+00:00",
+      "end_time": "2026-07-14T13:41:38.631333+00:00",
+      "duration_ms": 2572,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "seo",
+      "engine_results": [
+        {
+          "engine": "seo",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 2569,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 2569
+            }
+          ]
+        },
+        {
+          "engine": "seo_optimization",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 3,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 3
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 2,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "export",
+      "label": "Export",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-14T13:41:38.632782+00:00",
+      "end_time": "2026-07-14T13:41:38.668851+00:00",
+      "duration_ms": 35,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/episode.mp4",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/captions.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/description.txt",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/seo_metadata.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/thumbnail.png",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/episode.mp4"
+      ],
+      "current_agent": "export_and_validate",
+      "engine_results": [
+        {
+          "engine": "export_and_validate",
+          "status": "succeeded"
+        }
+      ],
+      "artifacts": [
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/episode.mp4",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/captions.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/description.txt",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/seo_metadata.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/thumbnail.png",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/episode.mp4"
+      ],
+      "outputs_produced": [
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/episode.mp4",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/captions.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/description.txt",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/seo_metadata.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/thumbnail.png",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_Tiny_Tricksters_ops_826e121fa1/episode.mp4"
+      ],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    }
+  ],
+  "updated_at": "2026-07-14T13:41:38.702835+00:00",
+  "validation_score": 96.6,
+  "video_exists": true,
+  "deliverable_ok": true,
+  "success": true
+}

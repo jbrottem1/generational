@@ -1,0 +1,24 @@
+{
+  "runs": [
+    {
+      "run_id": "acc_e062a2934c",
+      "mode": "smoke",
+      "version": "1.0.0",
+      "started_at": "2026-07-13T23:45:12.649912+00:00",
+      "finished_at": "2026-07-13T23:49:40.326111+00:00",
+      "total": 24,
+      "passed": 24,
+      "failed": 0,
+      "pass_pct": 100.0,
+      "failure_pct": 0.0,
+      "average_quality": 98.0,
+      "average_render_time_ms": 18151,
+      "fastest_render_ms": 0,
+      "slowest_render_ms": 50682,
+      "common_failures": [],
+      "recovery_success_pct": 100.0,
+      "ok": true
+    }
+  ],
+  "updated_at": "2026-07-13T23:49:40.327169+00:00"
+}

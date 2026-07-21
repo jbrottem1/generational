@@ -1,0 +1,361 @@
+{
+  "schema_version": "1.0",
+  "production_id": "gold_ai_20260714T005118_a2",
+  "brief": {
+    "topic": "What Artificial Intelligence Actually Is",
+    "platform": "youtube_shorts",
+    "length_sec": 45,
+    "style": "educational",
+    "narrator": "professor",
+    "voice": "default",
+    "quality_target": 95.0,
+    "constraints": {
+      "audience": "General Public",
+      "gold_standard": true,
+      "flagship": true,
+      "attempt": 2,
+      "improve_focus": "narration",
+      "single_improvement": true
+    },
+    "command": "",
+    "raw": {}
+  },
+  "current_stage": "export",
+  "current_agent": "export_and_validate",
+  "overall_progress_pct": 100,
+  "elapsed_ms": 8833,
+  "eta_ms": null,
+  "overall_status": "succeeded",
+  "pipeline_health": "healthy",
+  "warnings": [
+    "animation unavailable \u2014 continued",
+    "missing_audio"
+  ],
+  "retry_count": 0,
+  "quality_scores": {
+    "research": 85.0,
+    "psychology": 90.0,
+    "studio_director": 95.0,
+    "script_generator": 95.0,
+    "scene_builder": 100.0,
+    "media_collection": 100.0,
+    "animation": 100.0,
+    "voice_generation": 100.0,
+    "music_sound": 90.0,
+    "captions": 95.0,
+    "rendering": 100.0,
+    "viewer_retention": 100.0,
+    "optimization_lab": 100.0,
+    "quality_assurance": 100.0,
+    "seo_package": 100.0,
+    "export": 60.0
+  },
+  "current_files": [
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Artificial_Intelligence_Actually_Is_gold_ai_20260714T005118_a2",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/renders/cdeb14d234d9/the-hidden-truth-what-artificial-intelligence-actually-is-in_1080x1920.mp4",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Artificial_Intelligence_Actually_Is_gold_ai_20260714T005118_a2/captions.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Artificial_Intelligence_Actually_Is_gold_ai_20260714T005118_a2/description.txt",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Artificial_Intelligence_Actually_Is_gold_ai_20260714T005118_a2/seo_metadata.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Artificial_Intelligence_Actually_Is_gold_ai_20260714T005118_a2/thumbnail_plan.json"
+  ],
+  "started_at": "2026-07-14T00:51:18.123292+00:00",
+  "finished_at": "2026-07-14T00:51:26.957686+00:00",
+  "stages": [
+    {
+      "key": "research",
+      "label": "Research Engine",
+      "engines": [
+        "research",
+        "ideation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:51:18.123770+00:00",
+      "end_time": "2026-07-14T00:51:18.219946+00:00",
+      "duration_ms": 95,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 85.0,
+      "output_files": [],
+      "current_agent": "research"
+    },
+    {
+      "key": "psychology",
+      "label": "Psychology Engine",
+      "engines": [
+        "psychology"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:51:18.220492+00:00",
+      "end_time": "2026-07-14T00:51:18.236770+00:00",
+      "duration_ms": 15,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 90.0,
+      "output_files": [],
+      "current_agent": "psychology"
+    },
+    {
+      "key": "studio_director",
+      "label": "AI Studio Director",
+      "engines": [
+        "ai_director"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:51:18.237272+00:00",
+      "end_time": "2026-07-14T00:51:18.258796+00:00",
+      "duration_ms": 21,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "ai_director"
+    },
+    {
+      "key": "script_generator",
+      "label": "Script Generator",
+      "engines": [
+        "script_generation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:51:18.259549+00:00",
+      "end_time": "2026-07-14T00:51:18.370933+00:00",
+      "duration_ms": 110,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "script_generation"
+    },
+    {
+      "key": "scene_builder",
+      "label": "Scene Builder",
+      "engines": [
+        "visual_intelligence",
+        "scene_planning",
+        "visual_planning"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:51:18.371485+00:00",
+      "end_time": "2026-07-14T00:51:18.413668+00:00",
+      "duration_ms": 41,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "visual_intelligence"
+    },
+    {
+      "key": "media_collection",
+      "label": "Media Collection",
+      "engines": [
+        "evidence_intelligence",
+        "image",
+        "asset_manager"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:51:18.414247+00:00",
+      "end_time": "2026-07-14T00:51:19.251786+00:00",
+      "duration_ms": 835,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "evidence_intelligence"
+    },
+    {
+      "key": "animation",
+      "label": "Animation / Motion Graphics",
+      "engines": [
+        "cinematography",
+        "animation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:51:19.252309+00:00",
+      "end_time": "2026-07-14T00:51:19.255049+00:00",
+      "duration_ms": 2,
+      "warnings": [
+        "animation unavailable \u2014 continued"
+      ],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "cinematography"
+    },
+    {
+      "key": "voice_generation",
+      "label": "Voice Generation",
+      "engines": [
+        "voice_audio",
+        "narration",
+        "voice"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:51:19.255498+00:00",
+      "end_time": "2026-07-14T00:51:19.648969+00:00",
+      "duration_ms": 392,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "voice_audio"
+    },
+    {
+      "key": "music_sound",
+      "label": "Music & Sound Design",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:51:19.649487+00:00",
+      "end_time": "2026-07-14T00:51:19.649960+00:00",
+      "duration_ms": 0,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 90.0,
+      "output_files": [],
+      "current_agent": "apply_music_direction"
+    },
+    {
+      "key": "captions",
+      "label": "Captions",
+      "engines": [
+        "subtitle"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:51:19.650378+00:00",
+      "end_time": "2026-07-14T00:51:19.651579+00:00",
+      "duration_ms": 0,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "subtitle"
+    },
+    {
+      "key": "rendering",
+      "label": "Rendering",
+      "engines": [
+        "timeline",
+        "render_package",
+        "studio_render",
+        "video"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:51:19.652033+00:00",
+      "end_time": "2026-07-14T00:51:26.690934+00:00",
+      "duration_ms": 7036,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "timeline"
+    },
+    {
+      "key": "viewer_retention",
+      "label": "Viewer Retention Analysis",
+      "engines": [
+        "viewer_retention"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:51:26.704393+00:00",
+      "end_time": "2026-07-14T00:51:26.708214+00:00",
+      "duration_ms": 2,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "viewer_retention"
+    },
+    {
+      "key": "optimization_lab",
+      "label": "Optimization Lab",
+      "engines": [
+        "optimization_lab"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:51:26.708761+00:00",
+      "end_time": "2026-07-14T00:51:26.772788+00:00",
+      "duration_ms": 63,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "optimization_lab"
+    },
+    {
+      "key": "quality_assurance",
+      "label": "Quality Assurance",
+      "engines": [
+        "quality",
+        "production_qa"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:51:26.773413+00:00",
+      "end_time": "2026-07-14T00:51:26.776294+00:00",
+      "duration_ms": 2,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "quality"
+    },
+    {
+      "key": "seo_package",
+      "label": "SEO Package",
+      "engines": [
+        "seo",
+        "seo_optimization"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:51:26.776764+00:00",
+      "end_time": "2026-07-14T00:51:26.913467+00:00",
+      "duration_ms": 135,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "seo"
+    },
+    {
+      "key": "export",
+      "label": "Export",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:51:26.914047+00:00",
+      "end_time": "2026-07-14T00:51:26.956993+00:00",
+      "duration_ms": 42,
+      "warnings": [
+        "missing_audio"
+      ],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 60.0,
+      "output_files": [
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Artificial_Intelligence_Actually_Is_gold_ai_20260714T005118_a2",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/renders/cdeb14d234d9/the-hidden-truth-what-artificial-intelligence-actually-is-in_1080x1920.mp4",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Artificial_Intelligence_Actually_Is_gold_ai_20260714T005118_a2/captions.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Artificial_Intelligence_Actually_Is_gold_ai_20260714T005118_a2/description.txt",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Artificial_Intelligence_Actually_Is_gold_ai_20260714T005118_a2/seo_metadata.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Artificial_Intelligence_Actually_Is_gold_ai_20260714T005118_a2/thumbnail_plan.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/renders/cdeb14d234d9/the-hidden-truth-what-artificial-intelligence-actually-is-in_1080x1920.mp4"
+      ],
+      "current_agent": "export_and_validate"
+    }
+  ],
+  "updated_at": "2026-07-14T00:51:26.973315+00:00",
+  "success": true,
+  "validation_score": 94.4
+}

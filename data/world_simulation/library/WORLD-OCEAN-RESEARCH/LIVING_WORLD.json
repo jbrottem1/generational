@@ -1,0 +1,69 @@
+{
+  "world_id": "WORLD-OCEAN-RESEARCH",
+  "living": true,
+  "forbid_static_environment": true,
+  "channels": [
+    "ambient_particles",
+    "lighting_changes",
+    "flowing_water",
+    "clouds",
+    "birds",
+    "animated_screens",
+    "people_walking",
+    "steam"
+  ],
+  "tracks": [
+    {
+      "id": "ambient_particles",
+      "continuous": true,
+      "layer": "midground",
+      "amplitude": 0.4
+    },
+    {
+      "id": "lighting_changes",
+      "continuous": true,
+      "layer": "midground",
+      "amplitude": 0.4
+    },
+    {
+      "id": "flowing_water",
+      "continuous": true,
+      "layer": "midground",
+      "amplitude": 0.4
+    },
+    {
+      "id": "clouds",
+      "continuous": true,
+      "layer": "background",
+      "amplitude": 0.4
+    },
+    {
+      "id": "birds",
+      "continuous": true,
+      "layer": "background",
+      "amplitude": 0.4
+    },
+    {
+      "id": "animated_screens",
+      "continuous": true,
+      "layer": "midground",
+      "amplitude": 0.4
+    },
+    {
+      "id": "people_walking",
+      "continuous": true,
+      "layer": "midground",
+      "amplitude": 0.4
+    },
+    {
+      "id": "steam",
+      "continuous": true,
+      "layer": "midground",
+      "amplitude": 0.4
+    }
+  ],
+  "weather": "surface_swell_outside",
+  "lighting": "caustic_blue",
+  "lighting_dynamic": true,
+  "philosophy": "The environment is never static."
+}

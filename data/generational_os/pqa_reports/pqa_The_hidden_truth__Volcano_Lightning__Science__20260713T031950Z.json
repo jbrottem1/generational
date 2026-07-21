@@ -1,0 +1,445 @@
+{
+  "title": "The hidden truth: Volcano Lightning (Science)",
+  "idea_id": "",
+  "overall_score": 74,
+  "decision": "BLOCK_EXPORT",
+  "passed": false,
+  "categories": {
+    "research_accuracy": {
+      "key": "research_accuracy",
+      "label": "Research Accuracy",
+      "score": 91,
+      "confidence": 0.95,
+      "passed": true,
+      "details": {
+        "research_confidence": 66.8,
+        "citation_count": 5,
+        "unsupported_claims": 0,
+        "sources_checked": [
+          "https://pubmed.ncbi.nlm.nih.gov/1/",
+          "https://arxiv.org/abs/2401.00000",
+          "https://doi.org/10.1000/volcano-lightning.0",
+          "https://pubmed.ncbi.nlm.nih.gov/0/",
+          "https://en.wikipedia.org/wiki/volcano-lightning",
+          "https://arxiv.org/abs/2401.00001",
+          "https://doi.org/10.1000/volcano-lightning.1",
+          "https://news.example.com/volcano-lightning-report-1",
+          "https://en.wikipedia.org/wiki/volcano-lightning",
+          "https://news.example.com/volcano-lightning-report-0"
+        ]
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "evidence": {
+      "key": "evidence",
+      "label": "Evidence",
+      "score": 40,
+      "confidence": 0.75,
+      "passed": false,
+      "details": {
+        "real_image_pct": 0.0,
+        "ai_image_pct": 100.0,
+        "authentic_hit_count": 0,
+        "ai_fallback_count": 8,
+        "missing_evidence": [],
+        "scene_count": 8
+      },
+      "issues": [
+        "Real image share only 0.0%",
+        "AI imagery used more than necessary"
+      ],
+      "corrections_required": [
+        "Prefer Reality Catalog / Knowledge Atlas over AI",
+        "Replace AI fills with authentic media where possible"
+      ]
+    },
+    "visuals": {
+      "key": "visuals",
+      "label": "Visuals",
+      "score": 65,
+      "confidence": 0.8,
+      "passed": false,
+      "details": {
+        "visual_score": 65.0,
+        "scene_count": 9,
+        "empty_scenes": 0,
+        "qc_hard_fails": 0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "typography": {
+      "key": "typography",
+      "label": "Typography",
+      "score": 94,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "has_captions": true,
+        "layout": {}
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "annotations": {
+      "key": "annotations",
+      "label": "Annotations",
+      "score": 72,
+      "confidence": 0.45,
+      "passed": false,
+      "details": {
+        "annotation_count": 0,
+        "narration_tied": 0,
+        "untied": 0
+      },
+      "issues": [
+        "No narration-tied annotations found"
+      ],
+      "corrections_required": [
+        "Add purposeful annotations via Evidence Engine"
+      ]
+    },
+    "cinematography": {
+      "key": "cinematography",
+      "label": "Cinematography",
+      "score": 48,
+      "confidence": 0.8,
+      "passed": false,
+      "details": {
+        "attention_score": 48.0,
+        "scene_count": 8,
+        "has_animation_handoff": true,
+        "pacing": "measured"
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "audio": {
+      "key": "audio",
+      "label": "Audio",
+      "score": 84,
+      "confidence": 0.35,
+      "passed": false,
+      "details": {
+        "has_audio_file": false,
+        "music_balance": 0.5
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "narration": {
+      "key": "narration",
+      "label": "Narration",
+      "score": 74,
+      "confidence": 0.75,
+      "passed": false,
+      "details": {
+        "script_quality": 87.0,
+        "hook": 51.0,
+        "chars": 701
+      },
+      "issues": [
+        "Weak opening hook"
+      ],
+      "corrections_required": [
+        "Rewrite hook for stronger first 3 seconds"
+      ]
+    },
+    "synchronization": {
+      "key": "synchronization",
+      "label": "Synchronization",
+      "score": 90,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "segment_count": 8,
+        "missing_ann_timing": 0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "educational_value": {
+      "key": "educational_value",
+      "label": "Educational Value",
+      "score": 65,
+      "confidence": 0.7,
+      "passed": false,
+      "details": {
+        "clarity": 70.0,
+        "logical_progression": 70.0,
+        "engagement": 47.0,
+        "knowledge_density": 65.0,
+        "retention": 73.0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "psychology": {
+      "key": "psychology",
+      "label": "Psychology",
+      "score": 51,
+      "confidence": 0.75,
+      "passed": false,
+      "details": {
+        "predicted_metrics": {
+          "ctr": 4.0680000000000005,
+          "avg_watch_time_sec": 0.0,
+          "drop_off_risk": 27.0,
+          "shareability": 68.0,
+          "replay_probability": 69.0,
+          "subscriber_conversion": 40.0
+        },
+        "human_attention_score": 47.0
+      },
+      "issues": [
+        "Psychology score below documentary engagement bar"
+      ],
+      "corrections_required": [
+        "Re-run Audience / Psychology with stronger hooks"
+      ]
+    },
+    "seo": {
+      "key": "seo",
+      "label": "SEO",
+      "score": 100,
+      "confidence": 0.8,
+      "passed": true,
+      "details": {
+        "title_len": 45,
+        "description_len": 233,
+        "keyword_count": 8,
+        "hashtag_count": 4
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "platform_compliance": {
+      "key": "platform_compliance",
+      "label": "Platform Compliance",
+      "score": 100,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "ready_count": 8,
+        "aspect_ratio": "9:16",
+        "duration_sec": 0.0
+      },
+      "issues": [],
+      "corrections_required": []
+    }
+  },
+  "scores": {
+    "research_accuracy": 91,
+    "evidence": 40,
+    "visuals": 65,
+    "typography": 94,
+    "annotations": 72,
+    "cinematography": 48,
+    "audio": 84,
+    "narration": 74,
+    "synchronization": 90,
+    "educational_value": 65,
+    "psychology": 51,
+    "seo": 100,
+    "platform_compliance": 100
+  },
+  "platform_ready": {
+    "youtube": true,
+    "youtube_shorts": true,
+    "tiktok": true,
+    "instagram_reels": true,
+    "facebook": true,
+    "pinterest": true,
+    "linkedin": true,
+    "x": true
+  },
+  "platform_ready_detail": [
+    {
+      "platform": "youtube",
+      "ready": true,
+      "reasons": [
+        "Very short vertical may fit Shorts better"
+      ]
+    },
+    {
+      "platform": "youtube_shorts",
+      "ready": true,
+      "reasons": [
+        "Duration unknown"
+      ]
+    },
+    {
+      "platform": "tiktok",
+      "ready": true,
+      "reasons": [
+        "Duration unknown"
+      ]
+    },
+    {
+      "platform": "instagram_reels",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "facebook",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "pinterest",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "linkedin",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "x",
+      "ready": true,
+      "reasons": []
+    }
+  ],
+  "revision_requests": [
+    {
+      "category": "evidence",
+      "score": 40,
+      "target_engines": [
+        "evidence_intelligence",
+        "visual_intelligence"
+      ],
+      "severity": "block",
+      "message": "Real image share only 0.0%",
+      "corrections": [
+        "Prefer Reality Catalog / Knowledge Atlas over AI",
+        "Replace AI fills with authentic media where possible"
+      ]
+    },
+    {
+      "category": "visuals",
+      "score": 65,
+      "target_engines": [
+        "visual_intelligence",
+        "image",
+        "asset_manager"
+      ],
+      "severity": "block",
+      "message": "Visuals scored 65 (< 90)",
+      "corrections": []
+    },
+    {
+      "category": "annotations",
+      "score": 72,
+      "target_engines": [
+        "evidence_intelligence",
+        "animation",
+        "visual_intelligence"
+      ],
+      "severity": "revision",
+      "message": "No narration-tied annotations found",
+      "corrections": [
+        "Add purposeful annotations via Evidence Engine"
+      ]
+    },
+    {
+      "category": "cinematography",
+      "score": 48,
+      "target_engines": [
+        "cinematography",
+        "animation"
+      ],
+      "severity": "revision",
+      "message": "Cinematography scored 48 (< 90)",
+      "corrections": []
+    },
+    {
+      "category": "audio",
+      "score": 84,
+      "target_engines": [
+        "voice_audio",
+        "voice",
+        "narration"
+      ],
+      "severity": "revision",
+      "message": "Audio scored 84 (< 90)",
+      "corrections": []
+    },
+    {
+      "category": "narration",
+      "score": 74,
+      "target_engines": [
+        "script_generation",
+        "narration",
+        "script"
+      ],
+      "severity": "revision",
+      "message": "Weak opening hook",
+      "corrections": [
+        "Rewrite hook for stronger first 3 seconds"
+      ]
+    },
+    {
+      "category": "educational_value",
+      "score": 65,
+      "target_engines": [
+        "script_generation",
+        "critic",
+        "psychology"
+      ],
+      "severity": "block",
+      "message": "Educational Value scored 65 (< 90)",
+      "corrections": []
+    },
+    {
+      "category": "psychology",
+      "score": 51,
+      "target_engines": [
+        "psychology",
+        "audience_intelligence",
+        "attention_graph"
+      ],
+      "severity": "revision",
+      "message": "Psychology score below documentary engagement bar",
+      "corrections": [
+        "Re-run Audience / Psychology with stronger hooks"
+      ]
+    }
+  ],
+  "hard_fails": [
+    "Evidence critically low (40)",
+    "Visuals critically low (65)",
+    "Educational Value critically low (65)"
+  ],
+  "warnings": [
+    "Real image share only 0.0%",
+    "AI imagery used more than necessary",
+    "No narration-tied annotations found",
+    "Weak opening hook",
+    "Psychology score below documentary engagement bar"
+  ],
+  "predicted_metrics": {
+    "ctr": 4.0680000000000005,
+    "avg_watch_time_sec": 0.0,
+    "drop_off_risk": 27.0,
+    "shareability": 68.0,
+    "replay_probability": 69.0,
+    "subscriber_conversion": 40.0
+  },
+  "sources_checked": [
+    "https://pubmed.ncbi.nlm.nih.gov/1/",
+    "https://arxiv.org/abs/2401.00000",
+    "https://doi.org/10.1000/volcano-lightning.0",
+    "https://pubmed.ncbi.nlm.nih.gov/0/",
+    "https://en.wikipedia.org/wiki/volcano-lightning",
+    "https://arxiv.org/abs/2401.00001",
+    "https://doi.org/10.1000/volcano-lightning.1",
+    "https://news.example.com/volcano-lightning-report-1",
+    "https://en.wikipedia.org/wiki/volcano-lightning",
+    "https://news.example.com/volcano-lightning-report-0"
+  ],
+  "created_at": "2026-07-13T03:19:50.826216+00:00",
+  "version": "1.0.0",
+  "report_markdown": "# Production Quality Report\n\n**Overall Score:** 74\n**Decision:** BLOCK_EXPORT\n\n- Research Accuracy: 91\n- Evidence: 40\n- Visuals: 65\n- Typography: 94\n- Annotations: 72\n- Cinematography: 48\n- Audio: 84\n- Narration: 74\n- Synchronization: 90\n- Educational Value: 65\n- Psychology: 51\n- SEO: 100\n\n## Platform Ready\n- \u2713 youtube\n- \u2713 youtube_shorts\n- \u2713 tiktok\n- \u2713 instagram_reels\n- \u2713 facebook\n- \u2713 pinterest\n- \u2713 linkedin\n- \u2713 x\n\n## Revision Requests\n- [block] evidence (40) \u2192 evidence_intelligence, visual_intelligence: Real image share only 0.0%\n- [block] visuals (65) \u2192 visual_intelligence, image, asset_manager: Visuals scored 65 (< 90)\n- [revision] annotations (72) \u2192 evidence_intelligence, animation, visual_intelligence: No narration-tied annotations found\n- [revision] cinematography (48) \u2192 cinematography, animation: Cinematography scored 48 (< 90)\n- [revision] audio (84) \u2192 voice_audio, voice, narration: Audio scored 84 (< 90)\n- [revision] narration (74) \u2192 script_generation, narration, script: Weak opening hook\n- [block] educational_value (65) \u2192 script_generation, critic, psychology: Educational Value scored 65 (< 90)\n- [revision] psychology (51) \u2192 psychology, audience_intelligence, attention_graph: Psychology score below documentary engagement bar"
+}

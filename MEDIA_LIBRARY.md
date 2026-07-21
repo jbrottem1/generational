@@ -8,7 +8,7 @@
 
 ## Mission
 
-Every completed production is automatically exported to the user's **local Mac** as the permanent single source of truth. Cloud agents prepare packages only — they never claim a finished MP4 exists on Desktop.
+Every completed production is automatically exported to the user's **local Mac** as the permanent single source of truth. All renders and exports execute locally — never on Cursor Cloud.
 
 ---
 
@@ -115,7 +115,7 @@ python3 scripts/run_render_package.py --package RENDER_PACKAGE.json
 python3 scripts/foundation_v2_turtles.py --smoke   # benchmark
 ```
 
-Cloud agents return `"Production package prepared. Awaiting local render."` — never `"Video exported."`
+Never claim Desktop SUCCESS without a verified MP4 under this library root.
 
 ---
 

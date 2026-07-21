@@ -75,11 +75,11 @@ Do not invent conflicting rules. When GCIS and this doc differ, open a revision 
 | Status | Standard |
 |--------|----------|
 | LOCKED | **Generational OS V2.5** (`GENERATIONAL_OS_V2_5.md`): four-layer pipeline, manifest, classified export |
-| LOCKED | **Local-first execution** (`EXECUTION_MODE.md`): cloud prepares `RENDER_PACKAGE.json`; local Mac renders |
+| LOCKED | **Local-first execution** (`EXECUTION_MODE.md`): all renders/exports run on the local Mac |
 | LOCKED | **Permanent Media Library** (`MEDIA_LIBRARY.md`): `~/Desktop/AI Start-Up/Videos/{Category}/` |
 | LOCKED | File naming: `<Category>_<Series>_<Episode>_<Topic>.mp4` + companion folder per export |
 | LOCKED | Library index: `VIDEO_LIBRARY.json` with search, dedup via SHA-256 hash |
-| LOCKED | Cloud agents never report `"Video exported."` — use `"Production package prepared. Awaiting local render."` |
+| LOCKED | Never claim Desktop SUCCESS without a verified local MP4 under the media library |
 | LOCKED | SUCCESS only after verified MP4 + manifest + production DB update |
 | LOCKED | Foundation exports pass `foundation_gate` (idle/walk/wave/mouth/lipsync floors; overall target ≥78) |
 | LOCKED | `unique_path` / `_vN` — never overwrite finished exports (STD-EXPORT-001) |

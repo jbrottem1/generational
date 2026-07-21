@@ -10,8 +10,9 @@ Live engines that graduated out of this file:
 - `scheduler` → `engines/publishing/scheduler_engine.py` (Agent 7)
 
 Agents 12, 14, 17 are live on this branch (`creative_studio`,
-`asset_generation`, `post_production`). Agents 13, 15, 16 remain stubs
-until their feature branches merge.
+`asset_generation`, `post_production`). Agent 13 (`optimization_lab`)
+graduated to live V4.0 in `engines/optimization_lab.py`. Agents 15–16
+remain stubs until their feature branches merge.
 """
 
 from __future__ import annotations
@@ -33,27 +34,20 @@ class BrandManagementEngine(FutureEngine):
 
 
 class OptimizationLabEngine(FutureEngine):
-    """Agent 13 — Optimization Laboratory (variant experimentation).
+    """DEPRECATED STUB — live engine is engines/optimization_lab.py (V4.0).
 
-    Built on a feature worktree; reserved here so the `optimization` stage
-    is wired and skips cleanly until the live engine merges.
+    Kept only so older imports of future_stubs.OptimizationLabEngine do not
+    break; engines/__init__.py registers the live class instead.
     """
 
-    key = "optimization_lab"
-    label = "Optimization Lab"
+    key = "optimization_lab_stub_unused"
+    label = "Optimization Lab (stub)"
     icon = "🧪"
-    description = (
-        "Generate competing variants for every content decision, predict "
-        "performance, rank against historical winners, and recommend the "
-        "strongest version before publishing."
-    )
+    description = "Replaced by live OptimizationLabEngine V4.0"
     input_contract = ["ideas"]
-    output_contract = ["optimization_report", "optimization_recommendations"]
+    output_contract = ["optimization_report"]
     dependencies = ["quality"]
-    capabilities = [
-        "experimentation", "variant-generation", "scoring", "ranking",
-        "prediction", "recommendations", "ab-testing", "learning-loop",
-    ]
+    capabilities = ["experimentation"]
 
 
 class CharacterUniverseEngine(FutureEngine):
@@ -88,26 +82,20 @@ class CharacterUniverseEngine(FutureEngine):
     ]
 
 
-class AnimationEngine(FutureEngine):
-    """Agent 16 — Animation & Cinematic Production.
+class AnimationEngineStub(FutureEngine):
+    """Deprecated stub — live engine is engines.animation.AnimationEngine.
 
-    Plans motion (timeline, camera, lip sync, VFX) without rendering final
-    video. Built on a feature worktree; reserved so the stage is wired now.
+    Kept only so older imports of future_stubs.AnimationEngine do not crash.
     """
 
-    key = "animation"
-    label = "Animation & Cinematics"
+    key = "animation_stub_deprecated"
+    label = "Animation Stub (deprecated)"
     icon = "🎥"
-    description = (
-        "Transform creative assets into cinematic production plans — "
-        "timeline, camera, character motion, facial animation, lip sync, "
-        "VFX, and provider instructions — without rendering final video."
-    )
+    description = "Deprecated — use engines.animation.AnimationEngine"
     input_contract = ["unified_packages"]
-    output_contract = ["animation_summary", "animation_packages"]
-    dependencies = ["quality"]
-    capabilities = [
-        "animation-planning", "cinematics", "camera-planning", "timeline",
-        "character-motion", "facial-animation", "lip-sync", "visual-effects",
-        "provider-driven",
-    ]
+    output_contract = ["animation_summary"]
+    capabilities = ["deprecated"]
+
+
+# Back-compat alias (not registered)
+AnimationEngine = AnimationEngineStub

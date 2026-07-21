@@ -7,7 +7,7 @@ and dashboards read first.
 
 from __future__ import annotations
 
-from engines.heuristics import clamp, weighted_blend
+from core.heuristics import clamp, weighted_blend
 from services.seo.models import KEYWORD_CLASSES
 
 _EVERGREEN_ARCHETYPES = {"educational": 18, "scientific": 15, "question": 12, "story": 10}

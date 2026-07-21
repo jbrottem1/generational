@@ -62,12 +62,22 @@ def _collect_scene_visuals(scene_render_plan: list) -> list[dict[str, Any]]:
         )
         if not isinstance(asset, dict):
             asset = {}
-        if asset.get("placeholder"):
-            continue
         candidate = None
-        for key in ("path", "uri", "local_path", "image_path", "video_path"):
-            candidate = _abs(str(asset.get(key) or scene.get(key) or ""))
+        for key in (
+            "path",
+            "uri",
+            "local_path",
+            "image_path",
+            "video_path",
+            "approved_asset_path",
+            "image",
+        ):
+            raw = str(asset.get(key) or scene.get(key) or "")
+            if not raw or raw.startswith(("mock://", "runtime://")):
+                continue
+            candidate = _abs(raw)
             if candidate and candidate.suffix.lower() in (_STILL_EXTS | _VIDEO_EXTS):
+                # Prefer real files even when provider incorrectly left placeholder=True
                 break
             candidate = None
         if not candidate:
@@ -109,17 +119,25 @@ def _collect_audio(audio_mix_plan: dict, scene_render_plan: list) -> Path | None
 
 def _zoompan_filter(effect: dict, *, width: int, height: int, frames: int, fps: int) -> str:
     """Build a zoompan expression from MotionPlanner-style effect dict."""
-    name = str(effect.get("effect") or "ken_burns").lower()
+    name = str(effect.get("effect") or "cinematic_push_in").lower()
+    if name in {"", "static", "none", "ken_burns"}:
+        # Ken Burns is legacy slideshow default — prefer cinematic push unless forced
+        if name == "ken_burns" and effect.get("force_ken_burns"):
+            pass
+        else:
+            name = "cinematic_push_in"
+            effect = {**effect, "effect": name}
     zoom = effect.get("zoom") if isinstance(effect.get("zoom"), dict) else {}
     z0 = float(zoom.get("start_scale") or 1.0)
-    z1 = float(zoom.get("end_scale") or 1.08)
+    # V2 quality: stronger default drift so stills never read as slideshow
+    z1 = float(zoom.get("end_scale") or 1.12)
     pan = effect.get("pan") if isinstance(effect.get("pan"), dict) else {}
     direction = str(pan.get("direction") or "none")
-    amount = float(pan.get("amount_pct") or 8.0) / 100.0
+    amount = float(pan.get("amount_pct") or 10.0) / 100.0
 
     # zoom progresses across frames
     if abs(z1 - z0) < 0.001 and name not in ("pan_left", "pan_right", "whip_pan"):
-        z1 = z0 + 0.08  # never fully static
+        z1 = z0 + 0.10  # never fully static
 
     z_expr = f"'{z0}+({z1}-{z0})*on/{max(frames - 1, 1)}'"
 
@@ -183,7 +201,7 @@ def _render_scene_clip(
     proc = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout_sec, check=False)
     if proc.returncode != 0 or not out_path.exists() or out_path.stat().st_size < 100:
         return False, (proc.stderr or proc.stdout or "scene clip failed")[-500:]
-    return True, f"scene→clip {path.name} effect={effect.get('effect') or 'ken_burns'} d={duration:.2f}s"
+    return True, f"scene→clip {path.name} effect={effect.get('effect') or 'cinematic_push_in'} d={duration:.2f}s"
 
 
 def assemble_mp4(

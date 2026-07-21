@@ -1,0 +1,56 @@
+{
+  "title": "Renderer Capability Gap Report \u2014 Golden Motion",
+  "created_at": "2026-07-18T01:21:47.671473+00:00",
+  "golden_motion_passed": false,
+  "mp4_produced": false,
+  "current_renderer": {
+    "renderer_id": "true_motion",
+    "module": "services/media_production/true_motion.py",
+    "class": "ffmpeg_layered_still_compositor",
+    "supports": {
+      "skeletal_animation": false,
+      "joint_transforms": false,
+      "inverse_kinematics": false,
+      "facial_blendshapes_or_bones": false,
+      "lip_synchronization": false,
+      "object_constraints": false,
+      "collision_handling": false,
+      "foot_planting": false,
+      "character_locomotion": false,
+      "cloth_or_secondary_motion": false,
+      "animated_cameras": true,
+      "persistent_3d_environments": false
+    },
+    "mechanism": [
+      "PNG character plate overlay",
+      "environment plate zoompan or procedural lavfi background",
+      "ffmpeg overlay x/y expressions (sin drift / linear travel)",
+      "post-composite camera crop/scale"
+    ],
+    "insufficient_for_golden_motion": true,
+    "reason": "true_motion animates cameras and layered still images. It does not drive a skeletal rig, joints, IK, blendshapes, object constraints, or persistent 3D geometry."
+  },
+  "planning_stack_ready": true,
+  "planning_packages_composed": true,
+  "executable_animation_scene_built": true,
+  "blocking_gaps": [
+    "No skinned mesh / GLB / FBX / Blend asset for DOCTOR_001",
+    "No Blender / Godot / Unreal / Unity skeletal runtime installed or wired",
+    "true_motion is ffmpeg layered still compositing \u2014 insufficient",
+    "Animation clip JSON files are phase labels, not joint curves",
+    "RIG_SPECIFICATION is a contract, not an executable armature"
+  ],
+  "required_to_pass": {
+    "runtime_options": [
+      "Blender (bpy) headless + DOCTOR_001 skinned GLB/FBX",
+      "Godot 4 AnimationPlayer + GLTF character",
+      "Unreal Engine Sequencer / Control Rig",
+      "Unity Timeline + Humanoid Animator",
+      "Cloud skeletal provider (e.g. dedicated character animation API) returning mesh-deformed frame sequences"
+    ],
+    "asset_gap": "DOCTOR_001 needs a permanent skinned mesh + facial blendshapes/bones bound to CHARACTER_RIG_PACKAGE hierarchy \u2014 not plates alone.",
+    "architecture_note": "Frozen architecture keeps planning packages; this layer is the adapter. A new renderer product is not invented here \u2014 an external skeletal runtime must be selected and integrated via the adapter."
+  },
+  "adapter_status": "AnimationExecutionAdapter interface is implemented. InsufficientRuntimeAdapter correctly refuses fake MP4 success.",
+  "next_integration_step": "1) Author or import DOCTOR_001 skinned mesh + face blendshapes bound to CHARACTER_RIG_PACKAGE joints. 2) Install Blender (recommended) or Godot/Unreal/Unity. 3) Implement BlenderAdapter (or chosen runtime) behind services/animation_execution/adapter.py. 4) Re-run scripts/golden_motion_validation.py."
+}

@@ -10,7 +10,7 @@ ranked recommendation layer on top.
 
 from __future__ import annotations
 
-from engines.heuristics import CURIOSITY_WORDS, EMOTION_WORDS, clamp, count_hits, stable_jitter, weighted_blend
+from core.heuristics import CURIOSITY_WORDS, EMOTION_WORDS, clamp, count_hits, stable_jitter, weighted_blend
 
 _EVAL_WEIGHTS = {
     "curiosity": 0.22,

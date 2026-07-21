@@ -1,0 +1,950 @@
+{
+  "package_type": "CHARACTER_WORLD_STUDIO_PACKAGE",
+  "package_version": "1.0.0",
+  "engine_label": "Character & World Studio",
+  "generated_at": "2026-07-15T23:52:07.409972+00:00",
+  "topic": "Every Decision Matters",
+  "production_id": "",
+  "visual_identity": {
+    "name": "Generational Cinematic Universe",
+    "character_style": "expressive_stylized",
+    "environment_style": "rich_cinematic_sets",
+    "forbid": [
+      "abstract_placeholder_shapes",
+      "generic_stick_figures",
+      "blank_backgrounds",
+      "static_faces",
+      "expressionless_characters",
+      "empty_environments",
+      "meaningless_motion"
+    ],
+    "require": [
+      "recognizable_characters",
+      "believable_environments",
+      "purposeful_acting",
+      "facial_expressions",
+      "emotional_storytelling",
+      "environmental_interaction"
+    ],
+    "palette_family": "vibrant_cohesive",
+    "silhouette_priority": true,
+    "hd_texture_intent": true
+  },
+  "cast": [
+    {
+      "id": "CHAR-NOVA",
+      "name": "Nova",
+      "short_name": "Nova",
+      "role": "curious_ai_assistant",
+      "biography": "Curious AI assistant who asks the questions viewers are thinking. Playful energy, precise recall, occasional mischievous spark.",
+      "personality": [
+        "playful",
+        "inquisitive",
+        "bright",
+        "loyal"
+      ],
+      "voice_profile": {
+        "voice": "nova",
+        "style": "bright_assistant",
+        "pace": "lively"
+      },
+      "movement_style": "light_bob_orbit",
+      "facial_range": [
+        "wide_eyes",
+        "grin",
+        "puzzled",
+        "awe"
+      ],
+      "favorite_gestures": [
+        "point_spark",
+        "tilt_head",
+        "hand_hologram"
+      ],
+      "signature_clothing": {
+        "coat": "violet_hoodie",
+        "shirt": "soft_white",
+        "accent": "cyan_circuit_trim",
+        "accessory": "ear_glow_band"
+      },
+      "silhouette": "hoodie_glow_band",
+      "palette": {
+        "skin": [
+          240,
+          220,
+          255
+        ],
+        "hair": [
+          120,
+          70,
+          220
+        ],
+        "coat": [
+          88,
+          52,
+          160
+        ],
+        "accent": [
+          80,
+          220,
+          255
+        ]
+      },
+      "true_motion_performance": "walk_explain",
+      "recurring_environments": [
+        "LOC-AI-LAB",
+        "LOC-SPACE-STATION",
+        "LOC-FUTURE-CITY"
+      ],
+      "domains": [
+        "ai",
+        "technology",
+        "space",
+        "computing",
+        "patterns"
+      ]
+    },
+    {
+      "id": "CHAR-0001",
+      "name": "The Doctor",
+      "short_name": "Doctor",
+      "role": "lead_scientific_educator",
+      "asset_status": "permanent",
+      "studio_asset_path": "data/studio_assets/CHAR-0001-THE-DOCTOR/",
+      "version": "1.0.0",
+      "biography": "Permanent flagship face of scientific education in the Generational Universe. A humanoid cyborg physician-educator built for clarity, compassion, and evidence.",
+      "personality": [
+        "intelligent",
+        "patient",
+        "curious",
+        "optimistic",
+        "encouraging",
+        "evidence_driven"
+      ],
+      "voice_profile": {
+        "voice": "onyx",
+        "style": "warm_clinical_educator",
+        "pace": "natural_educational"
+      },
+      "movement_style": "calm_teach_demonstrate",
+      "facial_range": [
+        "teaching",
+        "curious",
+        "thinking",
+        "confident",
+        "concerned",
+        "excited",
+        "smiling",
+        "focused"
+      ],
+      "favorite_gestures": [
+        "open_palm_teach",
+        "hologram_pinch",
+        "clipboard_point",
+        "scanner_sweep",
+        "heart_hand"
+      ],
+      "signature_clothing": {
+        "coat": "white_medical_chassis_coat",
+        "shirt": "titanium_underplating",
+        "accent": "warm_blue_illumination",
+        "accessory": "medical_scanner_module"
+      },
+      "silhouette": "white_cyborg_doctor_blue_glow",
+      "palette": {
+        "skin": [
+          244,
+          247,
+          250
+        ],
+        "hair": [
+          138,
+          147,
+          158
+        ],
+        "coat": [
+          244,
+          247,
+          250
+        ],
+        "accent": [
+          59,
+          167,
+          224
+        ],
+        "titanium": [
+          138,
+          147,
+          158
+        ],
+        "eyes": [
+          127,
+          212,
+          255
+        ],
+        "shadow": [
+          44,
+          52,
+          61
+        ]
+      },
+      "true_motion_performance": "point_teach",
+      "recurring_environments": [
+        "LOC-GMRI",
+        "LOC-MEDICAL-RESEARCH",
+        "LOC-SCIENCE-MUSEUM"
+      ],
+      "domains": [
+        "science",
+        "biology",
+        "medicine",
+        "engineering",
+        "chemistry",
+        "anatomy",
+        "physics",
+        "technology",
+        "health"
+      ],
+      "permanent_ip": true,
+      "flagship_science_educator": true
+    }
+  ],
+  "primary_host": {
+    "id": "CHAR-NOVA",
+    "name": "Nova",
+    "short_name": "Nova",
+    "role": "curious_ai_assistant",
+    "biography": "Curious AI assistant who asks the questions viewers are thinking. Playful energy, precise recall, occasional mischievous spark.",
+    "personality": [
+      "playful",
+      "inquisitive",
+      "bright",
+      "loyal"
+    ],
+    "voice_profile": {
+      "voice": "nova",
+      "style": "bright_assistant",
+      "pace": "lively"
+    },
+    "movement_style": "light_bob_orbit",
+    "facial_range": [
+      "wide_eyes",
+      "grin",
+      "puzzled",
+      "awe"
+    ],
+    "favorite_gestures": [
+      "point_spark",
+      "tilt_head",
+      "hand_hologram"
+    ],
+    "signature_clothing": {
+      "coat": "violet_hoodie",
+      "shirt": "soft_white",
+      "accent": "cyan_circuit_trim",
+      "accessory": "ear_glow_band"
+    },
+    "silhouette": "hoodie_glow_band",
+    "palette": {
+      "skin": [
+        240,
+        220,
+        255
+      ],
+      "hair": [
+        120,
+        70,
+        220
+      ],
+      "coat": [
+        88,
+        52,
+        160
+      ],
+      "accent": [
+        80,
+        220,
+        255
+      ]
+    },
+    "true_motion_performance": "walk_explain",
+    "recurring_environments": [
+      "LOC-AI-LAB",
+      "LOC-SPACE-STATION",
+      "LOC-FUTURE-CITY"
+    ],
+    "domains": [
+      "ai",
+      "technology",
+      "space",
+      "computing",
+      "patterns"
+    ]
+  },
+  "location": {
+    "id": "LOC-FUTURE-CITY",
+    "name": "Future City",
+    "world_builder_hint": "WORLD-FUTURE_CITY",
+    "architecture": "vertical_plazas_and_transit_spines",
+    "lighting": "neon_rim + soft_daylight",
+    "palette_hint": "night",
+    "textures": [
+      "glass",
+      "composites",
+      "light_strips"
+    ],
+    "furniture": [
+      "plaza_seating",
+      "kiosks"
+    ],
+    "equipment": [
+      "transit_pods",
+      "holo_signs"
+    ],
+    "interactive_props": [
+      "public_info_pillar"
+    ],
+    "ambient_life": [
+      "traffic",
+      "pedestrians",
+      "drones"
+    ],
+    "weather": "clear_haze",
+    "environmental_animation": [
+      "traffic_band",
+      "sign_scroll",
+      "drone_pass"
+    ],
+    "background_characters": [
+      "citizens"
+    ],
+    "soundscape": [
+      "distant_transit",
+      "crowd_murmur"
+    ],
+    "detail_dressing": [
+      "billboards",
+      "planters",
+      "chargers"
+    ],
+    "domains": [
+      "technology",
+      "future",
+      "urban",
+      "society",
+      "ai"
+    ]
+  },
+  "character_plates": {
+    "CHAR-NOVA": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Every_Decision_Matters_20260715T235207Z/plates/char-nova_plate.png",
+    "CHAR-0001": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Every_Decision_Matters_20260715T235207Z/plates/char-0001_plate.png"
+  },
+  "scene_bindings": [
+    {
+      "scene_number": 1,
+      "purpose": "hook",
+      "length_sec": 3.0,
+      "narration": "Life is unforgiving.",
+      "subject": "The Founder traveler",
+      "approved_asset_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/env_fork_dawn.png",
+      "vfd_shot": {
+        "scene_number": 1,
+        "scene_id": "scene_00",
+        "scene_objective": "Advance hook: establish audience investment in The Founder traveler",
+        "primary_subject": "The Founder traveler",
+        "camera_angle": "eye_level",
+        "lens_style": "portrait_50mm",
+        "shot_size": "establishing_wide",
+        "shot_language": "reveal_shot",
+        "camera_movement": "reveal_shot",
+        "camera_begin": "Open in a framed read of The Founder traveler matching reveal_shot",
+        "camera_end": "Land on the beat's cinematic payoff for emotion=curiosity",
+        "character_blocking": null,
+        "environmental_motion": {
+          "environment": "generic",
+          "ambient_motion": [
+            "ambient_life",
+            "cloud_drift",
+            "light_drift"
+          ],
+          "dramatic_response": [],
+          "continues_without_narration": true,
+          "purpose": "Support story emotion \u2014 never decorative noise"
+        },
+        "lighting_mood": "soft_daylight",
+        "color_palette": {
+          "harmony": "natural",
+          "temperature": "neutral",
+          "subject_isolation": true
+        },
+        "transition_style": "hard_cut",
+        "emotional_beat": "curiosity",
+        "emotion": "curiosity",
+        "educational_goal": "Life is unforgiving.",
+        "estimated_duration_sec": 3.0,
+        "animation_priority": [
+          "environment_life",
+          "camera_storytelling",
+          "character_performance",
+          "object_physics"
+        ],
+        "director_questions": {
+          "answers": {
+            "why_scene_exists": "Advance hook: establish audience investment in The Founder traveler",
+            "what_viewer_learns": "Life is unforgiving.",
+            "emotion_to_feel": "curiosity",
+            "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+            "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+            "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+            "camera_begin": "Open in a framed read of The Founder traveler matching reveal_shot",
+            "camera_end": "Land on the beat's cinematic payoff for emotion=curiosity",
+            "cinematic_payoff": "Muted viewer still understands: Life is unforgiving."
+          },
+          "ready": true,
+          "unclear": [],
+          "scene_ready": true
+        },
+        "cinematic_payoff": "Muted viewer still understands: Life is unforgiving.",
+        "muted_story_test": "Muted viewer still understands: Life is unforgiving.",
+        "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+        "animation_seed": {
+          "true_motion_camera": "reveal",
+          "ae_camera_move": "reveal",
+          "shot_size": "establishing_wide",
+          "emotion": "curiosity",
+          "lighting_mood": "soft_daylight",
+          "forbid_purposeless_drift": true,
+          "narrative_purpose": "Advance hook: establish audience investment in The Founder traveler"
+        },
+        "composition": {
+          "rule_of_thirds": true,
+          "leading_lines": false,
+          "negative_space": false,
+          "fg_mg_bg": true,
+          "subject_hierarchy": "clear"
+        },
+        "ready": true
+      },
+      "shot_language": "reveal_shot",
+      "director_emotion": "curiosity",
+      "emotional_beat": "curiosity",
+      "lighting_mood": "soft_daylight",
+      "shot_size": "establishing_wide",
+      "camera_angle": "eye_level",
+      "lens_style": "portrait_50mm",
+      "transition_style": "hard_cut",
+      "scene_objective": "Advance hook: establish audience investment in The Founder traveler",
+      "cinematic_payoff": "Muted viewer still understands: Life is unforgiving.",
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "vfd_seed": {
+        "true_motion_camera": "reveal",
+        "ae_camera_move": "reveal",
+        "shot_size": "establishing_wide",
+        "emotion": "curiosity",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Advance hook: establish audience investment in The Founder traveler"
+      },
+      "animation_camera": "reveal",
+      "vfd_camera_move": "reveal",
+      "camera_narrative_purpose": "Advance hook: establish audience investment in The Founder traveler",
+      "emotion": "curiosity",
+      "studio_character_id": "CHAR-NOVA",
+      "studio_character_name": "Nova",
+      "studio_performance": "walk_explain",
+      "studio_gestures": [
+        "point_spark",
+        "tilt_head",
+        "hand_hologram"
+      ],
+      "studio_expression": "wide_eyes"
+    },
+    {
+      "scene_number": 2,
+      "purpose": "story_beat",
+      "length_sec": 3.5,
+      "narration": "Every decision leaves a mark. Every step shapes your future.",
+      "subject": "The Founder traveler",
+      "approved_asset_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/env_path_awakening.png",
+      "vfd_shot": {
+        "scene_number": 2,
+        "scene_id": "scene_01",
+        "scene_objective": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+        "primary_subject": "The Founder traveler",
+        "camera_angle": "eye_level",
+        "lens_style": "portrait_50mm",
+        "shot_size": "dynamic_medium",
+        "shot_language": "medium_dialogue",
+        "camera_movement": "medium_dialogue",
+        "camera_begin": "Open in a framed read of The Founder traveler matching medium_dialogue",
+        "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+        "character_blocking": null,
+        "environmental_motion": {
+          "environment": "generic",
+          "ambient_motion": [
+            "ambient_life",
+            "cloud_drift",
+            "light_drift"
+          ],
+          "dramatic_response": [],
+          "continues_without_narration": true,
+          "purpose": "Support story emotion \u2014 never decorative noise"
+        },
+        "lighting_mood": "soft_daylight",
+        "color_palette": {
+          "harmony": "natural",
+          "temperature": "neutral",
+          "subject_isolation": true
+        },
+        "transition_style": "lighting_continuity",
+        "emotional_beat": "explanation",
+        "emotion": "focus",
+        "educational_goal": "Every decision leaves a mark. Every step shapes your future.",
+        "estimated_duration_sec": 3.5,
+        "animation_priority": [
+          "environment_life",
+          "camera_storytelling",
+          "character_performance",
+          "object_physics"
+        ],
+        "director_questions": {
+          "answers": {
+            "why_scene_exists": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+            "what_viewer_learns": "Every decision leaves a mark. Every step shapes your future.",
+            "emotion_to_feel": "focus",
+            "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+            "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+            "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+            "camera_begin": "Open in a framed read of The Founder traveler matching medium_dialogue",
+            "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+            "cinematic_payoff": "Muted viewer still understands: Every decision leaves a mark. Every step shapes your future."
+          },
+          "ready": true,
+          "unclear": [],
+          "scene_ready": true
+        },
+        "cinematic_payoff": "Muted viewer still understands: Every decision leaves a mark. Every step shapes your future.",
+        "muted_story_test": "Muted viewer still understands: Every decision leaves a mark. Every step shapes your future.",
+        "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+        "animation_seed": {
+          "true_motion_camera": "push_in",
+          "ae_camera_move": "slow_cinematic_push",
+          "shot_size": "dynamic_medium",
+          "emotion": "focus",
+          "lighting_mood": "soft_daylight",
+          "forbid_purposeless_drift": true,
+          "narrative_purpose": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future."
+        },
+        "composition": {
+          "rule_of_thirds": true,
+          "leading_lines": false,
+          "negative_space": false,
+          "fg_mg_bg": true,
+          "subject_hierarchy": "clear"
+        },
+        "ready": true
+      },
+      "shot_language": "medium_dialogue",
+      "director_emotion": "focus",
+      "emotional_beat": "explanation",
+      "lighting_mood": "soft_daylight",
+      "shot_size": "dynamic_medium",
+      "camera_angle": "eye_level",
+      "lens_style": "portrait_50mm",
+      "transition_style": "lighting_continuity",
+      "scene_objective": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+      "cinematic_payoff": "Muted viewer still understands: Every decision leaves a mark. Every step shapes your future.",
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "vfd_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "slow_cinematic_push",
+        "shot_size": "dynamic_medium",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future."
+      },
+      "animation_camera": "push_in",
+      "vfd_camera_move": "slow_cinematic_push",
+      "camera_narrative_purpose": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+      "emotion": "focus",
+      "studio_character_id": "CHAR-0001",
+      "studio_character_name": "The Doctor",
+      "studio_performance": "point_teach",
+      "studio_gestures": [
+        "open_palm_teach",
+        "hologram_pinch",
+        "clipboard_point",
+        "scanner_sweep",
+        "heart_hand"
+      ],
+      "studio_expression": "curious"
+    },
+    {
+      "scene_number": 3,
+      "purpose": "story_beat",
+      "length_sec": 3.5,
+      "narration": "Small choices become great destinies.",
+      "subject": "The Founder traveler",
+      "approved_asset_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/env_living_forest.png",
+      "vfd_shot": {
+        "scene_number": 3,
+        "scene_id": "scene_02",
+        "scene_objective": "Demonstrate the idea so learning sticks: Small choices become great destinies.",
+        "primary_subject": "The Founder traveler",
+        "camera_angle": "eye_level",
+        "lens_style": "portrait_50mm",
+        "shot_size": "dynamic_medium",
+        "shot_language": "push_in",
+        "camera_movement": "push_in",
+        "camera_begin": "Open in a framed read of The Founder traveler matching push_in",
+        "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+        "character_blocking": null,
+        "environmental_motion": {
+          "environment": "generic",
+          "ambient_motion": [
+            "ambient_life",
+            "cloud_drift",
+            "light_drift"
+          ],
+          "dramatic_response": [],
+          "continues_without_narration": true,
+          "purpose": "Support story emotion \u2014 never decorative noise"
+        },
+        "lighting_mood": "soft_daylight",
+        "color_palette": {
+          "harmony": "natural",
+          "temperature": "neutral",
+          "subject_isolation": true
+        },
+        "transition_style": "lighting_continuity",
+        "emotional_beat": "wonder",
+        "emotion": "focus",
+        "educational_goal": "Small choices become great destinies.",
+        "estimated_duration_sec": 3.5,
+        "animation_priority": [
+          "environment_life",
+          "camera_storytelling",
+          "character_performance",
+          "object_physics"
+        ],
+        "director_questions": {
+          "answers": {
+            "why_scene_exists": "Demonstrate the idea so learning sticks: Small choices become great destinies.",
+            "what_viewer_learns": "Small choices become great destinies.",
+            "emotion_to_feel": "focus",
+            "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+            "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+            "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+            "camera_begin": "Open in a framed read of The Founder traveler matching push_in",
+            "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+            "cinematic_payoff": "Muted viewer still understands: Small choices become great destinies."
+          },
+          "ready": true,
+          "unclear": [],
+          "scene_ready": true
+        },
+        "cinematic_payoff": "Muted viewer still understands: Small choices become great destinies.",
+        "muted_story_test": "Muted viewer still understands: Small choices become great destinies.",
+        "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+        "animation_seed": {
+          "true_motion_camera": "push_in",
+          "ae_camera_move": "slow_cinematic_push",
+          "shot_size": "dynamic_medium",
+          "emotion": "focus",
+          "lighting_mood": "soft_daylight",
+          "forbid_purposeless_drift": true,
+          "narrative_purpose": "Demonstrate the idea so learning sticks: Small choices become great destinies."
+        },
+        "composition": {
+          "rule_of_thirds": true,
+          "leading_lines": false,
+          "negative_space": false,
+          "fg_mg_bg": true,
+          "subject_hierarchy": "clear"
+        },
+        "ready": true
+      },
+      "shot_language": "push_in",
+      "director_emotion": "focus",
+      "emotional_beat": "wonder",
+      "lighting_mood": "soft_daylight",
+      "shot_size": "dynamic_medium",
+      "camera_angle": "eye_level",
+      "lens_style": "portrait_50mm",
+      "transition_style": "lighting_continuity",
+      "scene_objective": "Demonstrate the idea so learning sticks: Small choices become great destinies.",
+      "cinematic_payoff": "Muted viewer still understands: Small choices become great destinies.",
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "vfd_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "slow_cinematic_push",
+        "shot_size": "dynamic_medium",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: Small choices become great destinies."
+      },
+      "animation_camera": "push_in",
+      "vfd_camera_move": "slow_cinematic_push",
+      "camera_narrative_purpose": "Demonstrate the idea so learning sticks: Small choices become great destinies.",
+      "emotion": "focus",
+      "studio_character_id": "CHAR-NOVA",
+      "studio_character_name": "Nova",
+      "studio_performance": "walk_explain",
+      "studio_gestures": [
+        "point_spark",
+        "tilt_head",
+        "hand_hologram"
+      ],
+      "studio_expression": "puzzled"
+    },
+    {
+      "scene_number": 4,
+      "purpose": "payoff",
+      "length_sec": 5.0,
+      "narration": "Choose discipline. Choose purpose. Choose wisely.",
+      "subject": "The Founder traveler",
+      "approved_asset_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/env_mountain_overlook.png",
+      "vfd_shot": {
+        "scene_number": 4,
+        "scene_id": "scene_03",
+        "scene_objective": "Deliver the takeaway on The Founder traveler",
+        "primary_subject": "The Founder traveler",
+        "camera_angle": "low_angle_hero",
+        "lens_style": "anamorphic_feel",
+        "shot_size": "hero_low_angle",
+        "shot_language": "hero_shot",
+        "camera_movement": "hero_shot",
+        "camera_begin": "Open in a framed read of The Founder traveler matching hero_shot",
+        "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+        "character_blocking": null,
+        "environmental_motion": {
+          "environment": "generic",
+          "ambient_motion": [
+            "ambient_life",
+            "cloud_drift",
+            "light_drift"
+          ],
+          "dramatic_response": [
+            "wind_increase",
+            "lighting_shift",
+            "fog_clear_on_reveal"
+          ],
+          "continues_without_narration": true,
+          "purpose": "Support story emotion \u2014 never decorative noise"
+        },
+        "lighting_mood": "soft_daylight",
+        "color_palette": {
+          "harmony": "natural",
+          "temperature": "neutral",
+          "subject_isolation": true
+        },
+        "transition_style": "lighting_continuity",
+        "emotional_beat": "payoff",
+        "emotion": "clarity",
+        "educational_goal": "Choose discipline. Choose purpose. Choose wisely.",
+        "estimated_duration_sec": 5.0,
+        "animation_priority": [
+          "environment_life",
+          "camera_storytelling",
+          "character_performance",
+          "object_physics"
+        ],
+        "director_questions": {
+          "answers": {
+            "why_scene_exists": "Deliver the takeaway on The Founder traveler",
+            "what_viewer_learns": "Choose discipline. Choose purpose. Choose wisely.",
+            "emotion_to_feel": "clarity",
+            "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+            "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+            "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+            "camera_begin": "Open in a framed read of The Founder traveler matching hero_shot",
+            "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+            "cinematic_payoff": "Muted viewer still understands: Choose discipline. Choose purpose. Choose wisely."
+          },
+          "ready": true,
+          "unclear": [],
+          "scene_ready": true
+        },
+        "cinematic_payoff": "Muted viewer still understands: Choose discipline. Choose purpose. Choose wisely.",
+        "muted_story_test": "Muted viewer still understands: Choose discipline. Choose purpose. Choose wisely.",
+        "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+        "animation_seed": {
+          "true_motion_camera": "push_in",
+          "ae_camera_move": "hero_low_angle_push",
+          "shot_size": "hero_low_angle",
+          "emotion": "clarity",
+          "lighting_mood": "soft_daylight",
+          "forbid_purposeless_drift": true,
+          "narrative_purpose": "Deliver the takeaway on The Founder traveler"
+        },
+        "composition": {
+          "rule_of_thirds": true,
+          "leading_lines": false,
+          "negative_space": true,
+          "fg_mg_bg": true,
+          "subject_hierarchy": "clear"
+        },
+        "ready": true
+      },
+      "shot_language": "hero_shot",
+      "director_emotion": "clarity",
+      "emotional_beat": "payoff",
+      "lighting_mood": "soft_daylight",
+      "shot_size": "hero_low_angle",
+      "camera_angle": "low_angle_hero",
+      "lens_style": "anamorphic_feel",
+      "transition_style": "lighting_continuity",
+      "scene_objective": "Deliver the takeaway on The Founder traveler",
+      "cinematic_payoff": "Muted viewer still understands: Choose discipline. Choose purpose. Choose wisely.",
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "vfd_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "hero_low_angle_push",
+        "shot_size": "hero_low_angle",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Deliver the takeaway on The Founder traveler"
+      },
+      "animation_camera": "push_in",
+      "vfd_camera_move": "hero_low_angle_push",
+      "camera_narrative_purpose": "Deliver the takeaway on The Founder traveler",
+      "emotion": "clarity",
+      "studio_character_id": "CHAR-NOVA",
+      "studio_character_name": "Nova",
+      "studio_performance": "walk_explain",
+      "studio_gestures": [
+        "point_spark",
+        "tilt_head",
+        "hand_hologram"
+      ],
+      "studio_expression": "awe"
+    }
+  ],
+  "performance_library": [
+    "blink",
+    "breathe",
+    "shift_weight",
+    "look_around",
+    "eye_contact",
+    "gesture",
+    "walk",
+    "run",
+    "sit",
+    "pick_up",
+    "point",
+    "react",
+    "smile",
+    "frown",
+    "curiosity",
+    "excitement",
+    "concern",
+    "surprise"
+  ],
+  "continuity": {
+    "characters_prior_appearances": {
+      "CHAR-NOVA": 2,
+      "CHAR-0001": 6
+    },
+    "location_prior_uses": 2,
+    "rules": [
+      "Character silhouette and clothing remain locked per host bible",
+      "Location architecture and prop dressing remain consistent across visits",
+      "Do not invent alternate wardrobe without continuity update"
+    ]
+  },
+  "world_living_requirements": {
+    "continues_without_narration": true,
+    "ambient_life": [
+      "traffic",
+      "pedestrians",
+      "drones"
+    ],
+    "environmental_animation": [
+      "traffic_band",
+      "sign_scroll",
+      "drone_pass"
+    ],
+    "detail_dressing": [
+      "billboards",
+      "planters",
+      "chargers"
+    ],
+    "forbid_empty_sets": true
+  },
+  "camera_follow_characters": true,
+  "muted_storytelling": true,
+  "philosophy": {
+    "living_animated_universe": true,
+    "no_new_renderer": true,
+    "no_pipeline_redesign": true,
+    "does_not_replace_animation_engine": true
+  },
+  "quality_gate": {
+    "approved": true,
+    "decision": "APPROVE",
+    "failures": [],
+    "warnings": [],
+    "questions": {
+      "viewers_would_recognize_characters": true,
+      "audience_would_remember_world": true,
+      "want_another_episode_for_characters": true,
+      "every_scene_feels_alive": true,
+      "feels_like_original_series": true
+    },
+    "improve_scenes": [],
+    "reject_signals": [
+      "abstract_placeholder_shapes",
+      "generic_stick_figures",
+      "blank_backgrounds",
+      "static_faces",
+      "expressionless_characters",
+      "empty_environments",
+      "meaningless_motion"
+    ]
+  },
+  "summary": {
+    "primary_host": "Nova",
+    "cast_ids": [
+      "CHAR-NOVA",
+      "CHAR-0001"
+    ],
+    "location_id": "LOC-FUTURE-CITY",
+    "location_name": "Future City",
+    "plate_count": 2,
+    "quality_gate": "APPROVE",
+    "recognize_characters": true,
+    "feels_like_series": true
+  },
+  "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Every_Decision_Matters_20260715T235207Z/CHARACTER_WORLD_STUDIO_PACKAGE.json",
+  "out_dir": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Every_Decision_Matters_20260715T235207Z",
+  "artifacts": {
+    "CHARACTER_WORLD_STUDIO_PACKAGE.json": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Every_Decision_Matters_20260715T235207Z/CHARACTER_WORLD_STUDIO_PACKAGE.json",
+    "STUDIO_NOTES.md": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Every_Decision_Matters_20260715T235207Z/STUDIO_NOTES.md",
+    "plates": {
+      "CHAR-NOVA": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Every_Decision_Matters_20260715T235207Z/plates/char-nova_plate.png",
+      "CHAR-0001": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Every_Decision_Matters_20260715T235207Z/plates/char-0001_plate.png"
+    }
+  }
+}

@@ -118,8 +118,11 @@ def request_json(
     last = HttpResponse(status=0, body={"error": "no attempt"})
     for attempt in range(max(1, retries + 1)):
         last = transport(req)
+        # Do not retry hard client errors; do retry throttling / server / network.
         if last.ok or last.status in (400, 401, 403, 404, 422):
             return last
         if attempt < retries:
-            time.sleep(min(0.2 * (attempt + 1), 1.5))
+            # Intelligent backoff — slower for rate limits (429) / quota pressure
+            factor = 1.5 if last.status == 429 else 0.2
+            time.sleep(min(factor * (attempt + 1), 3.0))
     return last

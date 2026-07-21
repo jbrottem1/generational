@@ -1,0 +1,289 @@
+{
+  "title": "How the seasons work",
+  "idea_id": "pqa_seasons_demo",
+  "overall_score": 96,
+  "decision": "APPROVE",
+  "passed": true,
+  "categories": {
+    "research_accuracy": {
+      "key": "research_accuracy",
+      "label": "Research Accuracy",
+      "score": 100,
+      "confidence": 0.95,
+      "passed": true,
+      "details": {
+        "research_confidence": 93.0,
+        "citation_count": 5,
+        "unsupported_claims": 0,
+        "sources_checked": [
+          "https://nasa.gov"
+        ]
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "evidence": {
+      "key": "evidence",
+      "label": "Evidence",
+      "score": 100,
+      "confidence": 0.75,
+      "passed": true,
+      "details": {
+        "real_image_pct": 100.0,
+        "ai_image_pct": 0.0,
+        "authentic_hit_count": 4,
+        "ai_fallback_count": 0,
+        "missing_evidence": [],
+        "scene_count": 1
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "visuals": {
+      "key": "visuals",
+      "label": "Visuals",
+      "score": 95,
+      "confidence": 0.8,
+      "passed": true,
+      "details": {
+        "visual_score": 95.0,
+        "scene_count": 1,
+        "empty_scenes": 0,
+        "qc_hard_fails": 0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "typography": {
+      "key": "typography",
+      "label": "Typography",
+      "score": 94,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "has_captions": true,
+        "layout": {}
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "annotations": {
+      "key": "annotations",
+      "label": "Annotations",
+      "score": 100,
+      "confidence": 0.75,
+      "passed": true,
+      "details": {
+        "annotation_count": 1,
+        "narration_tied": 1,
+        "untied": 0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "cinematography": {
+      "key": "cinematography",
+      "label": "Cinematography",
+      "score": 94,
+      "confidence": 0.8,
+      "passed": true,
+      "details": {
+        "attention_score": 94.0,
+        "scene_count": 1,
+        "has_animation_handoff": true,
+        "pacing": null
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "audio": {
+      "key": "audio",
+      "label": "Audio",
+      "score": 90,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "has_audio_file": true,
+        "music_balance": 0.3
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "narration": {
+      "key": "narration",
+      "label": "Narration",
+      "score": 95,
+      "confidence": 0.75,
+      "passed": true,
+      "details": {
+        "script_quality": 95.0,
+        "hook": 95.0,
+        "chars": 48
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "synchronization": {
+      "key": "synchronization",
+      "label": "Synchronization",
+      "score": 90,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "segment_count": 1,
+        "missing_ann_timing": 0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "educational_value": {
+      "key": "educational_value",
+      "label": "Educational Value",
+      "score": 93,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "clarity": 94.0,
+        "logical_progression": 93.0,
+        "engagement": 93.0,
+        "knowledge_density": 90.0,
+        "retention": 93.0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "psychology": {
+      "key": "psychology",
+      "label": "Psychology",
+      "score": 94,
+      "confidence": 0.75,
+      "passed": true,
+      "details": {
+        "predicted_metrics": {
+          "ctr": 8.0,
+          "avg_watch_time_sec": 0.0,
+          "drop_off_risk": 7.0,
+          "shareability": 90.0,
+          "replay_probability": 88.0,
+          "subscriber_conversion": 40.0
+        },
+        "human_attention_score": 93.0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "seo": {
+      "key": "seo",
+      "label": "SEO",
+      "score": 100,
+      "confidence": 0.8,
+      "passed": true,
+      "details": {
+        "title_len": 20,
+        "description_len": 39,
+        "keyword_count": 3,
+        "hashtag_count": 1
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "platform_compliance": {
+      "key": "platform_compliance",
+      "label": "Platform Compliance",
+      "score": 100,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "ready_count": 8,
+        "aspect_ratio": "9:16",
+        "duration_sec": 42.0
+      },
+      "issues": [],
+      "corrections_required": []
+    }
+  },
+  "scores": {
+    "research_accuracy": 100,
+    "evidence": 100,
+    "visuals": 95,
+    "typography": 94,
+    "annotations": 100,
+    "cinematography": 94,
+    "audio": 90,
+    "narration": 95,
+    "synchronization": 90,
+    "educational_value": 93,
+    "psychology": 94,
+    "seo": 100,
+    "platform_compliance": 100
+  },
+  "platform_ready": {
+    "youtube": true,
+    "youtube_shorts": true,
+    "tiktok": true,
+    "instagram_reels": true,
+    "facebook": true,
+    "pinterest": true,
+    "linkedin": true,
+    "x": true
+  },
+  "platform_ready_detail": [
+    {
+      "platform": "youtube",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "youtube_shorts",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "tiktok",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "instagram_reels",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "facebook",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "pinterest",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "linkedin",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "x",
+      "ready": true,
+      "reasons": []
+    }
+  ],
+  "revision_requests": [],
+  "hard_fails": [],
+  "warnings": [],
+  "predicted_metrics": {
+    "ctr": 8.0,
+    "avg_watch_time_sec": 0.0,
+    "drop_off_risk": 7.0,
+    "shareability": 90.0,
+    "replay_probability": 88.0,
+    "subscriber_conversion": 40.0
+  },
+  "sources_checked": [
+    "https://nasa.gov"
+  ],
+  "created_at": "2026-07-13T03:08:07.111071+00:00",
+  "version": "1.0.0",
+  "report_markdown": "# Production Quality Report\n\n**Overall Score:** 96\n**Decision:** APPROVE\n\n- Research Accuracy: 100\n- Evidence: 100\n- Visuals: 95\n- Typography: 94\n- Annotations: 100\n- Cinematography: 94\n- Audio: 90\n- Narration: 95\n- Synchronization: 90\n- Educational Value: 93\n- Psychology: 94\n- SEO: 100\n\n## Platform Ready\n- \u2713 youtube\n- \u2713 youtube_shorts\n- \u2713 tiktok\n- \u2713 instagram_reels\n- \u2713 facebook\n- \u2713 pinterest\n- \u2713 linkedin\n- \u2713 x"
+}

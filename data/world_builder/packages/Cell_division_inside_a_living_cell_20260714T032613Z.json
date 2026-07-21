@@ -1,0 +1,519 @@
+{
+  "package_version": "1.0.0",
+  "package_type": "world",
+  "generated_at": "2026-07-14T03:26:13.399258+00:00",
+  "topic": "Cell division inside a living cell",
+  "niche": "biology",
+  "world_id": "WORLD-AI_LABORATORY",
+  "world_type": "AI Laboratory",
+  "name": "AI Laboratory",
+  "theme": "synthetic cognition",
+  "scale": "server_hall",
+  "historical_accuracy": 50,
+  "world": {
+    "world_id": "WORLD-AI_LABORATORY",
+    "world_type": "AI Laboratory",
+    "name": "AI Laboratory",
+    "theme": "synthetic cognition",
+    "scale": "server_hall",
+    "historical_accuracy": 50,
+    "environment": {
+      "description": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor",
+      "continuity_key": "WORLD-AI_LABORATORY",
+      "do_not_replace_mid_episode": true
+    },
+    "lighting": {
+      "base": "low-key rack practicals + cyan holo glow",
+      "consistent_key": true
+    },
+    "architecture": [
+      "server aisles",
+      "hologram stage",
+      "observation glass"
+    ],
+    "weather": "indoors_cooled",
+    "objects": [
+      {
+        "name": "neural_holo",
+        "surface": "floor",
+        "anchored": true,
+        "position": {
+          "x": 0.5,
+          "y": 0.0,
+          "z": 0.45
+        },
+        "scale": 1.0
+      },
+      {
+        "name": "server_rack",
+        "surface": "floor",
+        "anchored": true,
+        "position": {
+          "x": 0.7,
+          "y": 0.0,
+          "z": 0.4
+        },
+        "scale": 1.0
+      }
+    ],
+    "furniture": [
+      {
+        "name": "ops_console",
+        "surface": "floor",
+        "anchored": true,
+        "position": {
+          "x": 0.35,
+          "y": 0.0,
+          "z": 0.55
+        },
+        "scale": 1.0
+      }
+    ],
+    "background_animations": [
+      "rack LED cascade",
+      "holo voxel churn",
+      "cooling fog"
+    ],
+    "sound_ambience": [
+      "server whine",
+      "soft UI beeps",
+      "coolant hiss"
+    ],
+    "camera_boundaries": {
+      "min_height": 0.4,
+      "max_height": 4.0,
+      "min_distance": 0.5,
+      "max_distance": 18.0
+    },
+    "color_palette": {
+      "family": "tech",
+      "primary": "#0A1628",
+      "accent": "#00F5D4",
+      "warn": "#7B2CBF"
+    },
+    "lighting_presets": [
+      {
+        "id": "boot",
+        "recipe": "cascade power-on practicals",
+        "mood": "ignition"
+      },
+      {
+        "id": "inference",
+        "recipe": "cyan volumetric holo",
+        "mood": "think"
+      },
+      {
+        "id": "alert",
+        "recipe": "magenta fault strobes",
+        "mood": "failure"
+      }
+    ],
+    "camera_anchors": [
+      {
+        "id": "hall_wide",
+        "position": "aisle_end",
+        "angle": "establishing",
+        "lens_hint": "24mm"
+      },
+      {
+        "id": "holo_orbit",
+        "position": "stage",
+        "angle": "orbit",
+        "lens_hint": "35mm"
+      },
+      {
+        "id": "console_macro",
+        "position": "ops",
+        "angle": "macro",
+        "lens_hint": "85mm"
+      }
+    ],
+    "animation_zones": [
+      {
+        "id": "holo_stage",
+        "region": "center"
+      }
+    ],
+    "transition_anchors": [
+      {
+        "id": "airlock_lab",
+        "to_compatible": [
+          "Research Center",
+          "Future City",
+          "Science Lab",
+          "Factory"
+        ]
+      }
+    ],
+    "design_rules": [
+      "Keep set geometry continuous across scenes",
+      "Vary camera and lighting, not the world itself",
+      "Every object must sit on a defined surface",
+      "No flat solid full-frame backgrounds"
+    ]
+  },
+  "environment": {
+    "description": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor",
+    "continuity_key": "WORLD-AI_LABORATORY",
+    "do_not_replace_mid_episode": true
+  },
+  "camera_anchors": [
+    {
+      "id": "hall_wide",
+      "position": "aisle_end",
+      "angle": "establishing",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "holo_orbit",
+      "position": "stage",
+      "angle": "orbit",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "console_macro",
+      "position": "ops",
+      "angle": "macro",
+      "lens_hint": "85mm"
+    }
+  ],
+  "lighting_presets": [
+    {
+      "id": "boot",
+      "recipe": "cascade power-on practicals",
+      "mood": "ignition"
+    },
+    {
+      "id": "inference",
+      "recipe": "cyan volumetric holo",
+      "mood": "think"
+    },
+    {
+      "id": "alert",
+      "recipe": "magenta fault strobes",
+      "mood": "failure"
+    }
+  ],
+  "object_placement": [
+    {
+      "name": "neural_holo",
+      "surface": "floor",
+      "anchored": true,
+      "position": {
+        "x": 0.5,
+        "y": 0.0,
+        "z": 0.45
+      },
+      "scale": 1.0
+    },
+    {
+      "name": "server_rack",
+      "surface": "floor",
+      "anchored": true,
+      "position": {
+        "x": 0.7,
+        "y": 0.0,
+        "z": 0.4
+      },
+      "scale": 1.0
+    },
+    {
+      "name": "ops_console",
+      "surface": "floor",
+      "anchored": true,
+      "position": {
+        "x": 0.35,
+        "y": 0.0,
+        "z": 0.55
+      },
+      "scale": 1.0
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "holo_stage",
+      "region": "center"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "airlock_lab",
+      "to_compatible": [
+        "Research Center",
+        "Future City",
+        "Science Lab",
+        "Factory"
+      ]
+    }
+  ],
+  "architecture": [
+    "server aisles",
+    "hologram stage",
+    "observation glass"
+  ],
+  "weather": "indoors_cooled",
+  "background_animations": [
+    "rack LED cascade",
+    "holo voxel churn",
+    "cooling fog"
+  ],
+  "sound_ambience": [
+    "server whine",
+    "soft UI beeps",
+    "coolant hiss"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.4,
+    "max_height": 4.0,
+    "min_distance": 0.5,
+    "max_distance": 18.0
+  },
+  "color_palette": {
+    "family": "tech",
+    "primary": "#0A1628",
+    "accent": "#00F5D4",
+    "warn": "#7B2CBF"
+  },
+  "continuity": {
+    "single_world": true,
+    "world_id": "WORLD-AI_LABORATORY",
+    "note": "Scenes share the same laboratory/set; only camera and lighting change",
+    "scene_bindings": [
+      {
+        "scene_id": "s1",
+        "world_id": "WORLD-AI_LABORATORY",
+        "world_type": "AI Laboratory",
+        "camera_anchor": "hall_wide",
+        "camera": {
+          "id": "hall_wide",
+          "position": "aisle_end",
+          "angle": "establishing",
+          "lens_hint": "24mm"
+        },
+        "lighting_preset": "boot",
+        "lighting": "cascade power-on practicals",
+        "environment": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor",
+        "background": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor; camera_anchor=hall_wide; angle=establishing; lens=24mm; lighting_preset=boot; SAME_WORLD continuity",
+        "color_palette": {
+          "family": "tech",
+          "primary": "#0A1628",
+          "accent": "#00F5D4",
+          "warn": "#7B2CBF"
+        },
+        "objects_in_frame": [
+          "neural_holo",
+          "server_rack"
+        ],
+        "narration_excerpt": "Cell division inside a living cell."
+      },
+      {
+        "scene_id": "s2",
+        "world_id": "WORLD-AI_LABORATORY",
+        "world_type": "AI Laboratory",
+        "camera_anchor": "holo_orbit",
+        "camera": {
+          "id": "holo_orbit",
+          "position": "stage",
+          "angle": "orbit",
+          "lens_hint": "35mm"
+        },
+        "lighting_preset": "inference",
+        "lighting": "cyan volumetric holo",
+        "environment": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor",
+        "background": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor; camera_anchor=holo_orbit; angle=orbit; lens=35mm; lighting_preset=inference; SAME_WORLD continuity",
+        "color_palette": {
+          "family": "tech",
+          "primary": "#0A1628",
+          "accent": "#00F5D4",
+          "warn": "#7B2CBF"
+        },
+        "objects_in_frame": [
+          "neural_holo",
+          "server_rack"
+        ],
+        "narration_excerpt": "We enter the space."
+      },
+      {
+        "scene_id": "s3",
+        "world_id": "WORLD-AI_LABORATORY",
+        "world_type": "AI Laboratory",
+        "camera_anchor": "console_macro",
+        "camera": {
+          "id": "console_macro",
+          "position": "ops",
+          "angle": "macro",
+          "lens_hint": "85mm"
+        },
+        "lighting_preset": "alert",
+        "lighting": "magenta fault strobes",
+        "environment": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor",
+        "background": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor; camera_anchor=console_macro; angle=macro; lens=85mm; lighting_preset=alert; SAME_WORLD continuity",
+        "color_palette": {
+          "family": "tech",
+          "primary": "#0A1628",
+          "accent": "#00F5D4",
+          "warn": "#7B2CBF"
+        },
+        "objects_in_frame": [
+          "neural_holo",
+          "server_rack"
+        ],
+        "narration_excerpt": "We reframe the same set from a tighter angle."
+      },
+      {
+        "scene_id": "s4",
+        "world_id": "WORLD-AI_LABORATORY",
+        "world_type": "AI Laboratory",
+        "camera_anchor": "hall_wide",
+        "camera": {
+          "id": "hall_wide",
+          "position": "aisle_end",
+          "angle": "establishing",
+          "lens_hint": "24mm"
+        },
+        "lighting_preset": "boot",
+        "lighting": "cascade power-on practicals",
+        "environment": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor",
+        "background": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor; camera_anchor=hall_wide; angle=establishing; lens=24mm; lighting_preset=boot; SAME_WORLD continuity",
+        "color_palette": {
+          "family": "tech",
+          "primary": "#0A1628",
+          "accent": "#00F5D4",
+          "warn": "#7B2CBF"
+        },
+        "objects_in_frame": [
+          "neural_holo",
+          "server_rack"
+        ],
+        "narration_excerpt": "A lighting shift reveals the detail."
+      }
+    ]
+  },
+  "scene_overrides": [
+    {
+      "scene_id": "s1",
+      "environment": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor",
+      "background": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor; camera_anchor=hall_wide; angle=establishing; lens=24mm; lighting_preset=boot; SAME_WORLD continuity",
+      "lighting": "cascade power-on practicals",
+      "color_palette": {
+        "family": "tech",
+        "primary": "#0A1628",
+        "accent": "#00F5D4",
+        "warn": "#7B2CBF"
+      },
+      "world_id": "WORLD-AI_LABORATORY",
+      "camera_anchor": "hall_wide"
+    },
+    {
+      "scene_id": "s2",
+      "environment": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor",
+      "background": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor; camera_anchor=holo_orbit; angle=orbit; lens=35mm; lighting_preset=inference; SAME_WORLD continuity",
+      "lighting": "cyan volumetric holo",
+      "color_palette": {
+        "family": "tech",
+        "primary": "#0A1628",
+        "accent": "#00F5D4",
+        "warn": "#7B2CBF"
+      },
+      "world_id": "WORLD-AI_LABORATORY",
+      "camera_anchor": "holo_orbit"
+    },
+    {
+      "scene_id": "s3",
+      "environment": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor",
+      "background": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor; camera_anchor=console_macro; angle=macro; lens=85mm; lighting_preset=alert; SAME_WORLD continuity",
+      "lighting": "magenta fault strobes",
+      "color_palette": {
+        "family": "tech",
+        "primary": "#0A1628",
+        "accent": "#00F5D4",
+        "warn": "#7B2CBF"
+      },
+      "world_id": "WORLD-AI_LABORATORY",
+      "camera_anchor": "console_macro"
+    },
+    {
+      "scene_id": "s4",
+      "environment": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor",
+      "background": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor; camera_anchor=hall_wide; angle=establishing; lens=24mm; lighting_preset=boot; SAME_WORLD continuity",
+      "lighting": "cascade power-on practicals",
+      "color_palette": {
+        "family": "tech",
+        "primary": "#0A1628",
+        "accent": "#00F5D4",
+        "warn": "#7B2CBF"
+      },
+      "world_id": "WORLD-AI_LABORATORY",
+      "camera_anchor": "hall_wide"
+    }
+  ],
+  "renderer_feed": {
+    "note": "Optional enrich of visual_package.scenes \u2014 does not modify production pipeline stages",
+    "scene_overrides": [
+      {
+        "scene_id": "s1",
+        "environment": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor",
+        "background": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor; camera_anchor=hall_wide; angle=establishing; lens=24mm; lighting_preset=boot; SAME_WORLD continuity",
+        "lighting": "cascade power-on practicals",
+        "color_palette": {
+          "family": "tech",
+          "primary": "#0A1628",
+          "accent": "#00F5D4",
+          "warn": "#7B2CBF"
+        },
+        "world_id": "WORLD-AI_LABORATORY",
+        "camera_anchor": "hall_wide"
+      },
+      {
+        "scene_id": "s2",
+        "environment": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor",
+        "background": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor; camera_anchor=holo_orbit; angle=orbit; lens=35mm; lighting_preset=inference; SAME_WORLD continuity",
+        "lighting": "cyan volumetric holo",
+        "color_palette": {
+          "family": "tech",
+          "primary": "#0A1628",
+          "accent": "#00F5D4",
+          "warn": "#7B2CBF"
+        },
+        "world_id": "WORLD-AI_LABORATORY",
+        "camera_anchor": "holo_orbit"
+      },
+      {
+        "scene_id": "s3",
+        "environment": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor",
+        "background": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor; camera_anchor=console_macro; angle=macro; lens=85mm; lighting_preset=alert; SAME_WORLD continuity",
+        "lighting": "magenta fault strobes",
+        "color_palette": {
+          "family": "tech",
+          "primary": "#0A1628",
+          "accent": "#00F5D4",
+          "warn": "#7B2CBF"
+        },
+        "world_id": "WORLD-AI_LABORATORY",
+        "camera_anchor": "console_macro"
+      },
+      {
+        "scene_id": "s4",
+        "environment": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor",
+        "background": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor; camera_anchor=hall_wide; angle=establishing; lens=24mm; lighting_preset=boot; SAME_WORLD continuity",
+        "lighting": "cascade power-on practicals",
+        "color_palette": {
+          "family": "tech",
+          "primary": "#0A1628",
+          "accent": "#00F5D4",
+          "warn": "#7B2CBF"
+        },
+        "world_id": "WORLD-AI_LABORATORY",
+        "camera_anchor": "hall_wide"
+      }
+    ]
+  },
+  "validation": {
+    "ok": true,
+    "passed": true,
+    "hard_fails": [],
+    "warnings": [],
+    "scene_binding_count": 4,
+    "object_count": 3
+  }
+}

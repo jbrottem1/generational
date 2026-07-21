@@ -125,6 +125,45 @@ class MockRenderer:
                 audio_mix_plan=audio_mix_plan,
                 output_format=fmt,
             )
+            # One recovery pass: materialize cinematic stills when visuals were mock
+            if not assembly.get("ok") and "visual" in str(assembly.get("error") or "").lower():
+                try:
+                    from engines.render.assets import ensure_renderable_still
+
+                    repaired_plan = []
+                    for scene in scene_render_plan or []:
+                        if not isinstance(scene, dict):
+                            repaired_plan.append(scene)
+                            continue
+                        plan = dict(scene)
+                        asset = dict(plan.get("resolved_asset") or {})
+                        asset.setdefault("scene_number", plan.get("scene_id") or 0)
+                        asset.setdefault("prompt", plan.get("image_prompt") or plan.get("narration") or title)
+                        asset.setdefault("title", title)
+                        plan["resolved_asset"] = ensure_renderable_still(
+                            asset,
+                            {
+                                "scene_number": asset.get("scene_number"),
+                                "prompt": asset.get("prompt"),
+                                "title": title,
+                            },
+                        )
+                        repaired_plan.append(plan)
+                    scene_render_plan = repaired_plan
+                    log("Recovery: cinematic stills applied — retrying assemble_mp4.")
+                    assembly = assemble_mp4(
+                        title=title,
+                        output_path=output_path,
+                        timeline=timeline,
+                        scene_render_plan=scene_render_plan,
+                        audio_mix_plan=audio_mix_plan,
+                        output_format=fmt,
+                    )
+                    assembly["recovery_attempted"] = True
+                except Exception as recover_exc:  # noqa: BLE001
+                    log(f"Recovery failed: {recover_exc}")
+                    assembly["recovery_attempted"] = True
+                    assembly["recovery_error"] = str(recover_exc)
             if assembly.get("ok"):
                 mock = False
                 output_path = assembly.get("output_path") or output_path

@@ -1,0 +1,47 @@
+{
+  "character_id": "HISTORIAN_001",
+  "architecture": "clothing_separated_from_body",
+  "default_outfit": "archive_coat",
+  "outfits": [
+    {
+      "id": "archive_coat",
+      "layers": [
+        "base_garment",
+        "archive_coat"
+      ],
+      "separated_from_body": true,
+      "cloth_sim": true
+    },
+    {
+      "id": "lecture_attire",
+      "layers": [
+        "base_garment",
+        "lecture_attire"
+      ],
+      "separated_from_body": true,
+      "cloth_sim": true
+    }
+  ],
+  "outfit_ids": [
+    "archive_coat",
+    "lecture_attire"
+  ],
+  "simulate_as_fabric": true,
+  "responds_to": [
+    "walk",
+    "run",
+    "arm_move",
+    "sit",
+    "wind",
+    "gravity",
+    "turn"
+  ],
+  "forbid": [
+    "frozen_fabric",
+    "fabric_leads_body",
+    "limb_clipping"
+  ],
+  "inheritable_architecture": true,
+  "existing_ref": null,
+  "reusable": true
+}

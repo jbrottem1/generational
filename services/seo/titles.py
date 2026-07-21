@@ -9,7 +9,7 @@ generation can slot in later without changing the contract.
 
 from __future__ import annotations
 
-from engines.heuristics import (
+from core.heuristics import (
     CURIOSITY_WORDS,
     EMOTION_WORDS,
     IDENTITY_WORDS,

@@ -1,0 +1,138 @@
+{
+  "world_id": "WORLD-RAINFOREST",
+  "world_type": "Rainforest",
+  "name": "Rainforest",
+  "theme": "living canopy",
+  "scale": "biome",
+  "historical_accuracy": 80,
+  "environment": {
+    "description": "Dense rainforest understory with filtered green light, mossy trunks, and layered canopy",
+    "continuity_key": "WORLD-RAINFOREST",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "dappled canopy key + cool understory fill",
+    "consistent_key": true
+  },
+  "architecture": [
+    "natural canopy vault",
+    "fallen-log corridors"
+  ],
+  "weather": "humid_mist",
+  "objects": [
+    {
+      "object_id": "obj_giant_fern",
+      "name": "giant_fern",
+      "surface": "ground",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.3,
+        "y": 0.0,
+        "z": 0.4
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_research_camera_trap",
+      "name": "research_camera_trap",
+      "surface": "ground",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.55,
+        "y": 0.0,
+        "z": 0.5
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [],
+  "background_animations": [
+    "leaf sway",
+    "mist drift",
+    "insect particulates"
+  ],
+  "sound_ambience": [
+    "insect chorus",
+    "distant rainfall",
+    "bird calls"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.2,
+    "max_height": 12.0,
+    "min_distance": 0.4,
+    "max_distance": 30.0
+  },
+  "color_palette": {
+    "family": "nature",
+    "primary": "#0D2818",
+    "accent": "#2D6A4F",
+    "highlight": "#95D5B2"
+  },
+  "lighting_presets": [
+    {
+      "id": "dawn",
+      "recipe": "golden shafts through canopy",
+      "mood": "hope"
+    },
+    {
+      "id": "storm",
+      "recipe": "cool diffuse under rain",
+      "mood": "tension"
+    },
+    {
+      "id": "night_bio",
+      "recipe": "bioluminescent accents",
+      "mood": "mystery"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "ground_crawl",
+      "position": "forest_floor",
+      "angle": "low",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "canopy_up",
+      "position": "mid_trunk",
+      "angle": "upward",
+      "lens_hint": "16mm"
+    },
+    {
+      "id": "creature_eye",
+      "position": "clearing",
+      "angle": "eye_level",
+      "lens_hint": "50mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "clearing",
+      "region": "center"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "trailhead",
+      "to_compatible": [
+        "Nature Preserve",
+        "Ocean Floor",
+        "Research Center"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.158020+00:00"
+}

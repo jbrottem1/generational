@@ -1,0 +1,66 @@
+{
+  "category": "science",
+  "top_25_count": 25,
+  "top_10_briefs": 10,
+  "top_5_high_confidence": [
+    {
+      "topic": "Why octopuses have three hearts",
+      "confidence": 0.8,
+      "score": 67.4
+    },
+    {
+      "topic": "Why the ocean is salty",
+      "confidence": 0.8,
+      "score": 67.2
+    },
+    {
+      "topic": "Why volcanoes erupt",
+      "confidence": 0.8,
+      "score": 66.2
+    },
+    {
+      "topic": "How black holes bend time",
+      "confidence": 0.8,
+      "score": 64.8
+    },
+    {
+      "topic": "How vaccines train the immune system",
+      "confidence": 0.8,
+      "score": 64.5
+    }
+  ],
+  "number_one": {
+    "topic": "Why octopuses have three hearts",
+    "score": 67.4,
+    "working_title": "Why octopuses have three hearts",
+    "manual_editing_required": false
+  },
+  "handoff": {
+    "ok": true,
+    "manual_editing_required": false,
+    "research_ok": true,
+    "studio_ok": true,
+    "verification": {
+      "ok": true,
+      "missing": [],
+      "manual_editing_required": false,
+      "command": "Create a 45 second youtube shorts video about Why octopuses have three hearts in a documentary educational style, narrator professor. Open with this hook: Stop \u2014 most people misunderstand Why. Here's what actually happens."
+    },
+    "enqueue": {
+      "job_id": "9afbfd232238",
+      "status": "pending",
+      "result": null
+    },
+    "executed_ops": false
+  },
+  "paths": {
+    "TOP_OPPORTUNITIES.json": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/trend_opportunity/reports/TOP_OPPORTUNITIES.json",
+    "OPPORTUNITY_REPORT.json": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/trend_opportunity/reports/OPPORTUNITY_REPORT.json",
+    "TREND_REPORT.md": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/trend_opportunity/reports/TREND_REPORT.md",
+    "PRODUCTION_BRIEF.md": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/trend_opportunity/reports/PRODUCTION_BRIEF.md",
+    "CONTENT_CALENDAR.json": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/trend_opportunity/reports/CONTENT_CALENDAR.json",
+    "TOP_OPPORTUNITIES_20260714T040802Z.json": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/trend_opportunity/reports/TOP_OPPORTUNITIES_20260714T040802Z.json",
+    "PRODUCTION_BRIEFS.json": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/trend_opportunity/reports/PRODUCTION_BRIEFS.json"
+  },
+  "db": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/trend_opportunity/OPPORTUNITY_LIBRARY.db"
+}

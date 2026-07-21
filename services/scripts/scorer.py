@@ -13,7 +13,7 @@ downstream adversarial review.
 
 from __future__ import annotations
 
-from engines.heuristics import (
+from core.heuristics import (
     CURIOSITY_WORDS,
     EMOTION_WORDS,
     SURPRISE_WORDS,

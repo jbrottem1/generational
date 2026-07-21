@@ -1,0 +1,55 @@
+{
+  "character_id": "DOCTOR_001",
+  "capabilities": [
+    "center_of_gravity",
+    "weight_transfer",
+    "momentum",
+    "acceleration",
+    "deceleration",
+    "balance_correction",
+    "body_rotation",
+    "secondary_motion"
+  ],
+  "mass_kg": 82.0,
+  "height_cm": 185.0,
+  "center_of_gravity": {
+    "default_offset_m": [
+      0.0,
+      0.925,
+      0.0
+    ],
+    "shifts_with_pose": true
+  },
+  "locomotion": {
+    "weight_transfer": true,
+    "momentum": true,
+    "acceleration": true,
+    "deceleration": true,
+    "max_walk_mps": 1.4,
+    "max_run_mps": 3.2,
+    "turn_rate_deg_s": 120.0
+  },
+  "balance": {
+    "correction": true,
+    "recovery_from_lean": true,
+    "forbid_weightless": true
+  },
+  "rotation": {
+    "hip_leads": true,
+    "spine_follows": true,
+    "head_stabilizes": true
+  },
+  "secondary_motion": [
+    "soft_tissue",
+    "coat_lag",
+    "hair_lag",
+    "arm_swing_inertia"
+  ],
+  "forbid": [
+    "float",
+    "teleport_pose",
+    "weightless_movement",
+    "broken_joints"
+  ],
+  "compose_character_rig_mechanics": true
+}

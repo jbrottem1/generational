@@ -1,0 +1,42 @@
+{
+  "character_id": "CHAR-ATLAS",
+  "simulate_as_fabric": true,
+  "responds_to": [
+    "walk",
+    "run",
+    "arm_move",
+    "sit",
+    "wind",
+    "gravity",
+    "contact",
+    "turn",
+    "stop"
+  ],
+  "fold_zones": [
+    "shoulders",
+    "elbows",
+    "waist",
+    "hips",
+    "knees",
+    "wrists",
+    "seated_contact"
+  ],
+  "forbid": [
+    "frozen_fabric",
+    "fabric_leads_body",
+    "identical_motion_all_garments",
+    "limb_clipping"
+  ],
+  "default_material": {
+    "thickness": "medium",
+    "weight": "medium",
+    "stiffness": "controlled_drape",
+    "stretch": "low",
+    "damping": "medium",
+    "wind_response": "moderate"
+  },
+  "default_outfit": "deep_navy_blazer",
+  "signature": "navy_blazer_teal_pocket_square_glasses",
+  "material_type": "structured_blazer_wool",
+  "stiffness": "higher"
+}

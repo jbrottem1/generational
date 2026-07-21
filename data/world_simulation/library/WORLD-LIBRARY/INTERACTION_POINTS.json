@@ -1,0 +1,212 @@
+{
+  "world_id": "WORLD-LIBRARY",
+  "points": [
+    {
+      "id": "interact_furn_reading_desk_0",
+      "target_id": "furn_reading_desk_0",
+      "target_type": "desk",
+      "position": [
+        -4.0,
+        0.0,
+        -3.0
+      ],
+      "actions": [
+        "lean",
+        "write",
+        "place_object"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_furn_chair_1",
+      "target_id": "furn_chair_1",
+      "target_type": "chair",
+      "position": [
+        -0.7999999999999998,
+        0.0,
+        -3.0
+      ],
+      "actions": [
+        "sit",
+        "stand"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_furn_study_carrel_2",
+      "target_id": "furn_study_carrel_2",
+      "target_type": "study_carrel",
+      "position": [
+        2.4000000000000004,
+        0.0,
+        -3.0
+      ],
+      "actions": [
+        "inspect",
+        "approach"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_prop_bookshelf_0",
+      "target_id": "prop_bookshelf_0",
+      "target_type": "bookshelf",
+      "position": [
+        -4.0,
+        0.0,
+        -1.8
+      ],
+      "actions": [
+        "browse",
+        "take_book",
+        "place_book"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_prop_door_1",
+      "target_id": "prop_door_1",
+      "target_type": "door",
+      "position": [
+        -0.7999999999999998,
+        0.0,
+        -1.8
+      ],
+      "actions": [
+        "open",
+        "close",
+        "enter",
+        "exit"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_prop_whiteboard_2",
+      "target_id": "prop_whiteboard_2",
+      "target_type": "whiteboard",
+      "position": [
+        2.4000000000000004,
+        0.0,
+        -1.8
+      ],
+      "actions": [
+        "write",
+        "erase",
+        "present"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_prop_open_book_3",
+      "target_id": "prop_open_book_3",
+      "target_type": "open_book",
+      "position": [
+        -4.0,
+        0.0,
+        -0.40000000000000013
+      ],
+      "actions": [
+        "inspect",
+        "approach"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_door_main",
+      "target_id": "door_main",
+      "target_type": "door",
+      "position": [
+        0.0,
+        0.0,
+        -9.9
+      ],
+      "actions": [
+        "open",
+        "close",
+        "enter",
+        "exit"
+      ],
+      "approach_radius_m": 0.8,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_virtual_microscope",
+      "target_id": "virtual_microscope",
+      "target_type": "microscope",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actions": [
+        "inspect",
+        "adjust",
+        "point"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true,
+      "virtual_until_dressed": true
+    }
+  ],
+  "count": 9,
+  "action_catalog": {
+    "chair": [
+      "sit",
+      "stand"
+    ],
+    "desk": [
+      "lean",
+      "write",
+      "place_object"
+    ],
+    "microscope": [
+      "inspect",
+      "adjust",
+      "point"
+    ],
+    "whiteboard": [
+      "write",
+      "erase",
+      "present"
+    ],
+    "door": [
+      "open",
+      "close",
+      "enter",
+      "exit"
+    ],
+    "hologram": [
+      "point",
+      "gesture",
+      "explain"
+    ],
+    "console": [
+      "type",
+      "touch",
+      "lean"
+    ],
+    "bookshelf": [
+      "browse",
+      "take_book",
+      "place_book"
+    ],
+    "bench": [
+      "sit",
+      "stand"
+    ],
+    "exhibit": [
+      "inspect",
+      "point",
+      "activate"
+    ]
+  },
+  "every_prop_advertises_interactions": true,
+  "forbid_non_interactive_set_dressing_as_primary": true
+}

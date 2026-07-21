@@ -13,7 +13,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import shutil
 import sys
 import time
 from datetime import datetime, timezone
@@ -28,7 +27,11 @@ load_application_env()
 
 from services.animation.communicator_delivery import build_paused_narration
 from services.animation.foundation_gate import evaluate_foundation_export
-from services.animation.foundation_studio import F_EQUALS_MA_ACTIONS
+from services.animation.foundation_studio import (
+    F_EQUALS_MA_ACTIONS,
+    FORCE_AND_MASS_ACTIONS,
+    NEWTON_EVERYDAY_ACTIONS,
+)
 from services.animation.performer import render_lip_sync_performance
 from services.animation.stick_figure import StickFigureSpec
 from services.animation.teaching_choreography import PLANS
@@ -37,11 +40,10 @@ from services.education.director_review import review_lesson
 from services.media_production.ffmpeg_assembler import find_ffmpeg
 from services.provider_runtime.config import has_credential
 from services.media_production.local_first import gate_production
-from services.media_production.verified_export import export_verified_mp4
+from services.generational_os.export import export_verified_production
 
 REPORT_DIR = ROOT / "data" / "productions" / "_validation" / "project_foundation"
 REPORT_DIR.mkdir(parents=True, exist_ok=True)
-EXPORT_DIR = Path.home() / "Desktop" / "AI Start-up" / "videos" / "Test run 2 generational"
 
 OPENING = "Welcome back to Generational."
 
@@ -167,22 +169,26 @@ def _board_meta(ep: dict) -> tuple[list[dict], dict[str, float]]:
     demo_id = ep["demo_id"]
     plan = PLANS.get(demo_id) or []
     write_win = write_window_from_plan(plan, label="write")
-    actions = []
-    if demo_id == "foundation_f_equals_ma":
-        actions = [
-            {
-                "kind": a.kind,
-                "text": a.text,
-                "start": a.start,
-                "end": a.end,
-                "row": a.row,
-            }
-            for a in F_EQUALS_MA_ACTIONS
-        ]
+    catalog = {
+        "foundation_f_equals_ma": F_EQUALS_MA_ACTIONS,
+        "foundation_force_mass": FORCE_AND_MASS_ACTIONS,
+        "foundation_newton_everyday": NEWTON_EVERYDAY_ACTIONS,
+    }
+    actions = [
+        {
+            "kind": a.kind,
+            "text": a.text,
+            "start": a.start,
+            "end": a.end,
+            "row": a.row,
+        }
+        for a in (catalog.get(demo_id) or [])
+    ]
     return actions, write_win
 
 
 def produce_episode(ep: dict, *, force: bool = False, allow_cloud_smoke: bool = False) -> dict:
+    _ = allow_cloud_smoke
     job_path = ROOT / "data" / "productions" / "local_jobs" / f"{ep['id']}_LOCAL_RENDER_JOB.json"
     gate = gate_production(
         job_id=ep["id"],
@@ -194,10 +200,9 @@ def produce_episode(ep: dict, *, force: bool = False, allow_cloud_smoke: bool = 
         main_concept=ep.get("main_concept") or ep["title"],
         beats=ep["beats"],
         job_output=job_path,
-        allow_cloud_smoke=allow_cloud_smoke,
     )
     if not gate.get("proceed"):
-        return {**gate, "ok": True, "id": ep["id"], "title": ep["title"]}
+        return {**gate, "ok": False, "id": ep["id"], "title": ep["title"]}
 
     work = REPORT_DIR / ep["id"]
     work.mkdir(parents=True, exist_ok=True)
@@ -208,8 +213,6 @@ def produce_episode(ep: dict, *, force: bool = False, allow_cloud_smoke: bool = 
         return {"ok": False, "error": "ffmpeg missing", "id": ep["id"]}
     if not has_credential("OPENAI_API_KEY"):
         return {"ok": False, "error": "openai credentials missing", "id": ep["id"]}
-
-    EXPORT_DIR.mkdir(parents=True, exist_ok=True)
 
     t0 = time.time()
     # Conversational, clear voice — nova + HD for natural pacing
@@ -238,17 +241,6 @@ def produce_episode(ep: dict, *, force: bool = False, allow_cloud_smoke: bool = 
     )
     render_sec = round(time.time() - t0, 2)
     qc = result.get("qc") or {}
-    export_result = export_verified_mp4(episode, filename=ep["filename"])
-    if not export_result.get("ok"):
-        return {
-            "ok": False,
-            "id": ep["id"],
-            "status": export_result.get("status"),
-            "error": export_result.get("error") or "export verification failed",
-        }
-    export_path = Path(str(export_result["export_path"]))
-    verify = export_result.get("verification") or {}
-
     script_text = " ".join(b["text"] for b in ep["beats"])
     edu = review_lesson(
         hook=ep.get("hook") or ep["title"],
@@ -259,16 +251,49 @@ def produce_episode(ep: dict, *, force: bool = False, allow_cloud_smoke: bool = 
         sources=["Newton's Second Law"],
     )
     board_actions, write_win = _board_meta(ep)
+    export_result = export_verified_production(
+        episode,
+        project_id=ep["id"],
+        filename=ep["filename"],
+        domain="Physics",
+        subject=ep["title"],
+        title=ep["title"],
+        series="Foundation Physics",
+        episode=ep.get("episode") or ep["id"],
+        topic=ep["title"],
+        demo_id=ep["demo_id"],
+        keywords=["newton", "force", "mass", "acceleration", "physics"],
+        sources=["Newton's Second Law"],
+        script_md="\n".join(f"- {b['text']}" for b in ep["beats"]),
+        render_duration_sec=result.get("duration_sec"),
+        reveal_finder=False,
+        print_completion=False,
+    )
+    if not export_result.get("ok"):
+        return {
+            "ok": False,
+            "id": ep["id"],
+            "status": export_result.get("status"),
+            "error": export_result.get("error") or "export verification failed",
+            "export_path": export_result.get("export_path"),
+        }
+    export_path = Path(str(export_result["export_path"]))
+    verify = export_result.get("verification") or {}
     production = {
         "id": ep["id"],
         "title": ep["title"],
         "demo_id": ep["demo_id"],
         "foundation": True,
-        "export_path": str(export_path),
-        "export_bytes": int(verify.get("bytes") or 0),
-        "bytes": int(verify.get("bytes") or 0),
+        "export_path": str(export_path.resolve()),
+        "export_bytes": int((verify.get("probe") or {}).get("bytes") or export_path.stat().st_size),
+        "bytes": int((verify.get("probe") or {}).get("bytes") or export_path.stat().st_size),
         "qc": qc,
-        "verify": verify,
+        "verify": {
+            "ok": bool(verify.get("ok")),
+            "has_audio": bool((verify.get("probe") or {}).get("has_audio")),
+            "has_video": bool((verify.get("probe") or {}).get("has_video")),
+            "bytes": int((verify.get("probe") or {}).get("bytes") or 0),
+        },
         "verification": verify,
         "hook": ep.get("hook") or ep["title"],
         "script": {

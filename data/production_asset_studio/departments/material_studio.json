@@ -1,0 +1,68 @@
+{
+  "department_id": "material_studio",
+  "display_name": "Material Studio",
+  "mission": "Production PBR materials replacing placeholders",
+  "workflow": "blender_principled_bsdf",
+  "assets": [
+    {
+      "asset_id": "MAT_CERAMIC",
+      "material_id": "ceramic",
+      "pbr": true
+    },
+    {
+      "asset_id": "MAT_GLASS",
+      "material_id": "glass",
+      "pbr": true
+    },
+    {
+      "asset_id": "MAT_STEEL",
+      "material_id": "steel",
+      "pbr": true
+    },
+    {
+      "asset_id": "MAT_CARBON_FIBER",
+      "material_id": "carbon_fiber",
+      "pbr": true
+    },
+    {
+      "asset_id": "MAT_PLASTIC",
+      "material_id": "plastic",
+      "pbr": true
+    },
+    {
+      "asset_id": "MAT_FABRIC",
+      "material_id": "fabric",
+      "pbr": true
+    },
+    {
+      "asset_id": "MAT_LEATHER",
+      "material_id": "leather",
+      "pbr": true
+    },
+    {
+      "asset_id": "MAT_WOOD",
+      "material_id": "wood",
+      "pbr": true
+    },
+    {
+      "asset_id": "MAT_PAINT",
+      "material_id": "paint",
+      "pbr": true
+    },
+    {
+      "asset_id": "MAT_CONCRETE",
+      "material_id": "concrete",
+      "pbr": true
+    },
+    {
+      "asset_id": "MAT_RUBBER",
+      "material_id": "rubber",
+      "pbr": true
+    },
+    {
+      "asset_id": "MAT_SKIN_COMPOSITE",
+      "material_id": "skin_composite",
+      "pbr": true
+    }
+  ]
+}

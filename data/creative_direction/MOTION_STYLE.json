@@ -1,0 +1,17 @@
+{
+  "require": [
+    "anticipation",
+    "follow_through",
+    "ease_in_out",
+    "breathing",
+    "head_micro_motion",
+    "eye_movement",
+    "weight",
+    "secondary_coat_motion"
+  ],
+  "forbid": [
+    "robotic_holds",
+    "instant_pose_snaps",
+    "image_plate_animation"
+  ]
+}

@@ -1,0 +1,636 @@
+{
+  "run_id": "acc_e062a2934c",
+  "mode": "smoke",
+  "version": "1.0.0",
+  "started_at": "2026-07-13T23:45:12.649912+00:00",
+  "finished_at": "2026-07-13T23:49:40.326111+00:00",
+  "total": 24,
+  "passed": 24,
+  "failed": 0,
+  "pass_pct": 100.0,
+  "failure_pct": 0.0,
+  "average_quality": 98.0,
+  "average_render_time_ms": 18151,
+  "fastest_render_ms": 0,
+  "slowest_render_ms": 50682,
+  "common_failures": [],
+  "recovery_success_pct": 100.0,
+  "ok": true,
+  "results": [
+    {
+      "category": "pipeline_integrity",
+      "name": "every_engine_loads",
+      "passed": true,
+      "duration_ms": 587,
+      "message": "missing=[] not_ready=[]",
+      "metrics": {
+        "missing": [],
+        "loaded": 14
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "pipeline_integrity",
+      "name": "dependency_graph_valid",
+      "passed": true,
+      "duration_ms": 0,
+      "message": "advisory_unresolved=0 critical=0",
+      "metrics": {
+        "unresolved": []
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "pipeline_integrity",
+      "name": "no_missing_imports",
+      "passed": true,
+      "duration_ms": 0,
+      "message": "all imports ok",
+      "metrics": {
+        "failed": []
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "pipeline_integrity",
+      "name": "no_broken_workflows",
+      "passed": true,
+      "duration_ms": 0,
+      "message": "missing=[] empty=[] ops_ok=True",
+      "metrics": {
+        "workflows": [
+          "ideation",
+          "executive",
+          "intelligence",
+          "full_content",
+          "media_production",
+          "production_pipeline",
+          "studio_ops"
+        ]
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "pipeline_integrity",
+      "name": "stage_ordering_correct",
+      "passed": true,
+      "duration_ms": 0,
+      "message": "got=['research', 'psychology', 'studio_director', 'script_generator', 'scene_builder']...",
+      "metrics": {
+        "expected": [
+          "research",
+          "psychology",
+          "studio_director",
+          "script_generator",
+          "scene_builder",
+          "media_collection",
+          "animation",
+          "voice_generation",
+          "music_sound",
+          "captions",
+          "rendering",
+          "viewer_retention",
+          "optimization_lab",
+          "quality_assurance",
+          "seo_package",
+          "export"
+        ],
+        "actual": [
+          "research",
+          "psychology",
+          "studio_director",
+          "script_generator",
+          "scene_builder",
+          "media_collection",
+          "animation",
+          "voice_generation",
+          "music_sound",
+          "captions",
+          "rendering",
+          "viewer_retention",
+          "optimization_lab",
+          "quality_assurance",
+          "seo_package",
+          "export"
+        ]
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "pipeline_integrity",
+      "name": "configuration_valid",
+      "passed": true,
+      "duration_ms": 0,
+      "message": "stages=16 categories=10 platforms=6",
+      "metrics": {
+        "supported_platforms": [
+          "youtube_shorts",
+          "tiktok",
+          "instagram_reels",
+          "facebook_reels",
+          "x",
+          "linkedin",
+          "youtube_long",
+          "podcast"
+        ]
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "video_generation",
+      "name": "educational:How Photosynthesis Works in 60 Seconds",
+      "passed": true,
+      "duration_ms": 36652,
+      "message": "APPROVE_FOR_PUBLISH",
+      "metrics": {
+        "overall_quality": 98.0,
+        "render_time_ms": 36645,
+        "production_id": "ops_06a9136223",
+        "category": "educational"
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "video_generation",
+      "name": "history:Why the Roman Empire Fell",
+      "passed": true,
+      "duration_ms": 23273,
+      "message": "APPROVE_FOR_PUBLISH",
+      "metrics": {
+        "overall_quality": 98.0,
+        "render_time_ms": 23263,
+        "production_id": "ops_9ab200bd2d",
+        "category": "history"
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "video_generation",
+      "name": "science:What Is Quantum Entanglement",
+      "passed": true,
+      "duration_ms": 9117,
+      "message": "APPROVE_FOR_PUBLISH",
+      "metrics": {
+        "overall_quality": 98.0,
+        "render_time_ms": 9107,
+        "production_id": "ops_6a8c36c0a7",
+        "category": "science"
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "duration",
+      "name": "duration_30s",
+      "passed": true,
+      "duration_ms": 9793,
+      "message": "requested=30 brief=30",
+      "metrics": {
+        "requested_sec": 30,
+        "brief_sec": 30,
+        "overall_quality": 98.0,
+        "render_time_ms": 9788
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "duration",
+      "name": "duration_60s",
+      "passed": true,
+      "duration_ms": 11088,
+      "message": "requested=60 brief=60",
+      "metrics": {
+        "requested_sec": 60,
+        "brief_sec": 60,
+        "overall_quality": 98.0,
+        "render_time_ms": 11077
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "platform",
+      "name": "platform_youtube_shorts",
+      "passed": true,
+      "duration_ms": 11993,
+      "message": "aspect=9:16 seo=True",
+      "metrics": {
+        "platform": "youtube_shorts",
+        "aspect": "9:16",
+        "caption_required": true,
+        "export_ok": true,
+        "seo_present": true,
+        "overall_quality": 98.0,
+        "render_time_ms": 11987,
+        "bitrate_probe": null,
+        "codec_probe": null
+      },
+      "warnings": [
+        "mp4_not_materialized_metadata_ok"
+      ],
+      "errors": []
+    },
+    {
+      "category": "platform",
+      "name": "platform_tiktok",
+      "passed": true,
+      "duration_ms": 13209,
+      "message": "aspect=9:16 seo=True",
+      "metrics": {
+        "platform": "tiktok",
+        "aspect": "9:16",
+        "caption_required": true,
+        "export_ok": true,
+        "seo_present": true,
+        "overall_quality": 98.0,
+        "render_time_ms": 13198,
+        "bitrate_probe": null,
+        "codec_probe": null
+      },
+      "warnings": [
+        "mp4_not_materialized_metadata_ok"
+      ],
+      "errors": []
+    },
+    {
+      "category": "stress",
+      "name": "generate_1_videos",
+      "passed": true,
+      "duration_ms": 14387,
+      "message": "ok=1/1",
+      "metrics": {
+        "count": 1,
+        "succeeded": 1,
+        "avg_render_time_ms": 14366,
+        "render_time_ms": 14366,
+        "resources_before": {
+          "pid": 23421,
+          "max_rss_kb": 269729792,
+          "user_time_sec": 68.248,
+          "system_time_sec": 2.99,
+          "disk_free_gb": 150.28,
+          "disk_total_gb": 460.43,
+          "gpu": "unavailable"
+        },
+        "resources_after": {
+          "pid": 23421,
+          "max_rss_kb": 269729792,
+          "user_time_sec": 81.81,
+          "system_time_sec": 3.491,
+          "disk_free_gb": 150.28,
+          "disk_total_gb": 460.43,
+          "gpu": "unavailable"
+        },
+        "rss_delta_kb": 0
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "stress",
+      "name": "queue_5_jobs",
+      "passed": true,
+      "duration_ms": 50682,
+      "message": "enqueued=5 summary=2/4",
+      "metrics": {
+        "queued": 5,
+        "job_ids": [
+          "721268afdf07",
+          "768d43e022ba",
+          "aa4496031d33",
+          "d9dd1ee7d2d2",
+          "33c697009dc6"
+        ],
+        "queue_summary": {
+          "pending": 2,
+          "running": 0,
+          "succeeded": 4,
+          "failed": 0,
+          "scheduled": 0,
+          "recent": [
+            {
+              "job_id": "721268afdf07",
+              "status": "succeeded",
+              "priority": 5,
+              "scheduled_at": "",
+              "batch_id": "",
+              "topic": "Queued acceptance job 0",
+              "platform": "youtube_shorts",
+              "created_at": "2026-07-13T23:47:22.773347+00:00",
+              "error": "",
+              "production_id": "ops_80e89a4a87",
+              "updated_at": "2026-07-13T23:47:38.262289+00:00"
+            },
+            {
+              "job_id": "768d43e022ba",
+              "status": "succeeded",
+              "priority": 4,
+              "scheduled_at": "",
+              "batch_id": "",
+              "topic": "Queued acceptance job 1",
+              "platform": "youtube_shorts",
+              "created_at": "2026-07-13T23:47:38.267379+00:00",
+              "error": "",
+              "production_id": "ops_74407e90bb",
+              "updated_at": "2026-07-13T23:47:54.936820+00:00"
+            },
+            {
+              "job_id": "01af1fd51ac8",
+              "status": "succeeded",
+              "priority": 3,
+              "scheduled_at": "",
+              "batch_id": "",
+              "topic": "Queue smoke topic about coral reefs",
+              "platform": "tiktok",
+              "created_at": "2026-07-13T23:34:24.672471+00:00",
+              "error": "",
+              "production_id": "ops_70befcfd13",
+              "updated_at": "2026-07-13T23:34:41.066856+00:00"
+            },
+            {
+              "job_id": "aa4496031d33",
+              "status": "succeeded",
+              "priority": 3,
+              "scheduled_at": "",
+              "batch_id": "",
+              "topic": "Queued acceptance job 2",
+              "platform": "youtube_shorts",
+              "created_at": "2026-07-13T23:47:54.936992+00:00",
+              "error": "",
+              "production_id": "ops_16b03d0536",
+              "updated_at": "2026-07-13T23:48:13.453857+00:00"
+            },
+            {
+              "job_id": "d9dd1ee7d2d2",
+              "status": "pending",
+              "priority": 2,
+              "scheduled_at": "",
+              "batch_id": "",
+              "topic": "Queued acceptance job 3",
+              "platform": "youtube_shorts",
+              "created_at": "2026-07-13T23:48:13.454278+00:00",
+              "resume_production_id": "",
+              "updated_at": "2026-07-13T23:48:13.454311+00:00"
+            },
+            {
+              "job_id": "33c697009dc6",
+              "status": "pending",
+              "priority": 1,
+              "scheduled_at": "",
+              "batch_id": "",
+              "topic": "Queued acceptance job 4",
+              "platform": "youtube_shorts",
+              "created_at": "2026-07-13T23:48:13.454718+00:00",
+              "resume_production_id": "",
+              "updated_at": "2026-07-13T23:48:13.454750+00:00"
+            }
+          ]
+        },
+        "render_time_ms": 50682
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "stress",
+      "name": "recovery_under_stress",
+      "passed": true,
+      "duration_ms": 0,
+      "message": "not_registered_or_not_ready",
+      "metrics": {
+        "engine": "does_not_exist_stress",
+        "status": "skipped",
+        "attempts": 1,
+        "retries": 0,
+        "error": "not_registered_or_not_ready",
+        "warnings": [
+          "does_not_exist_stress unavailable \u2014 continued"
+        ],
+        "duration_ms": 0,
+        "fallback": true
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "quality",
+      "name": "quality_dimensions_present",
+      "passed": true,
+      "duration_ms": 19555,
+      "message": "missing=[] below_floor=[]",
+      "metrics": {
+        "hook_score": 50.0,
+        "narration_score": 75.0,
+        "visual_score": 67.0,
+        "audio_score": 75.0,
+        "caption_score": 80.0,
+        "educational_accuracy": 80.0,
+        "retention_prediction": 80.0,
+        "ctr_prediction": 4.56,
+        "completion_prediction": 45.5,
+        "shareability": 50.0,
+        "overall_quality_score": 98.0,
+        "overall_quality": 98.0,
+        "render_time_ms": 19548,
+        "aliases": {
+          "hook_quality": true,
+          "visual_pacing": true,
+          "scene_quality": true,
+          "animation_quality": true,
+          "seo_quality": true
+        },
+        "recommendation": "APPROVE_FOR_PUBLISH"
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "recovery",
+      "name": "api_timeout",
+      "passed": true,
+      "duration_ms": 160,
+      "message": "timeout_retried_and_continued",
+      "metrics": {
+        "engine": "fake_timeout",
+        "status": "failed_continued",
+        "attempts": 2,
+        "retries": 1,
+        "error": "simulated API timeout",
+        "warnings": [
+          "fake_timeout failed after retries \u2014 production continued"
+        ],
+        "duration_ms": 0,
+        "fallback": true,
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "status": "failed",
+            "duration_ms": 0,
+            "error": "simulated API timeout"
+          },
+          {
+            "attempt": 2,
+            "status": "failed",
+            "duration_ms": 0,
+            "error": "simulated API timeout"
+          }
+        ]
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "recovery",
+      "name": "disk_full",
+      "passed": true,
+      "duration_ms": 2,
+      "message": "export_degraded_continued",
+      "metrics": {
+        "status": "succeeded",
+        "warnings": [
+          "mp4_not_yet_materialized \u2014 metadata package exported for smoke/plan modes"
+        ]
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "recovery",
+      "name": "corrupted_asset",
+      "passed": true,
+      "duration_ms": 82,
+      "message": "detected=['export_truncated', 'missing_video', 'missing_audio', 'invalid_duration', 'invalid_resolution']",
+      "metrics": {
+        "ok": false,
+        "hard_fails": [
+          "export_truncated",
+          "missing_video",
+          "missing_audio",
+          "invalid_duration",
+          "invalid_resolution"
+        ],
+        "warnings": [],
+        "probe": {
+          "ok": false,
+          "error": "",
+          "absolute_path": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/tmp1kyj0t2b/corrupt.mp4"
+        },
+        "is_placeholder": true,
+        "bit_rate": 0,
+        "bytes": 10,
+        "duration_sec": 0.0
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "recovery",
+      "name": "renderer_failure",
+      "passed": true,
+      "duration_ms": 315,
+      "message": "renderer_retries_exhausted_continued",
+      "metrics": {
+        "engine": "fake_renderer",
+        "status": "failed_continued",
+        "attempts": 3,
+        "retries": 2,
+        "error": "renderer crashed",
+        "warnings": [
+          "fake_renderer failed after retries \u2014 production continued"
+        ],
+        "duration_ms": 0,
+        "fallback": true,
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "status": "failed",
+            "duration_ms": 0,
+            "error": "renderer crashed"
+          },
+          {
+            "attempt": 2,
+            "status": "failed",
+            "duration_ms": 0,
+            "error": "renderer crashed"
+          },
+          {
+            "attempt": 3,
+            "status": "failed",
+            "duration_ms": 0,
+            "error": "renderer crashed"
+          }
+        ]
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "recovery",
+      "name": "missing_images",
+      "passed": true,
+      "duration_ms": 20642,
+      "message": "continued_without_images",
+      "metrics": {
+        "production_id": "ops_a5735e3083"
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "recovery",
+      "name": "network_interruption",
+      "passed": true,
+      "duration_ms": 21627,
+      "message": "offline_fallback",
+      "metrics": {
+        "production_id": "ops_e3ae46bf78"
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "category": "output_validation",
+      "name": "output_package_complete",
+      "passed": true,
+      "duration_ms": 24471,
+      "message": "files=6",
+      "metrics": {
+        "production_report_exists": true,
+        "production_report_md_exists": true,
+        "ops_status_exists": true,
+        "seo_package_exists": true,
+        "thumbnail_exists": true,
+        "captions_present": true,
+        "export_ok_flag": true,
+        "playable_mp4": true,
+        "correct_duration": true,
+        "audio_sync": true,
+        "no_blank_frames": true,
+        "output_files": [
+          "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Output_validation_package_for_acceptance_suite_ops_48e305c8e1",
+          "data/renders/48c02e19fcbc/the-hidden-truth-output-validation-package-for-acceptance-su_1080x1920.mp4",
+          "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Output_validation_package_for_acceptance_suite_ops_48e305c8e1/captions.json",
+          "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Output_validation_package_for_acceptance_suite_ops_48e305c8e1/description.txt",
+          "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Output_validation_package_for_acceptance_suite_ops_48e305c8e1/seo_metadata.json",
+          "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Output_validation_package_for_acceptance_suite_ops_48e305c8e1/thumbnail_plan.json"
+        ],
+        "folder": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/_ops/ops_48e305c8e1",
+        "overall_quality": 98.0,
+        "render_time_ms": 24463
+      },
+      "warnings": [
+        "mp4_absent_metadata_package_accepted_in_demo"
+      ],
+      "errors": []
+    }
+  ]
+}

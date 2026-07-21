@@ -13,7 +13,7 @@ never scoring code.
 
 from __future__ import annotations
 
-from engines.heuristics import (
+from core.heuristics import (
     CURIOSITY_WORDS,
     EMOTION_WORDS,
     clamp,
@@ -110,11 +110,16 @@ click_probability_pct = expected_ctr_pct
 
 
 def _title_overlay(idea: dict, archetype: dict) -> str:
-    source = idea.get("title") or idea.get("hook") or "The untold story"
+    # Prefer Director thumbnail_strategy claim_words_max (clarity > clutter)
+    strategy = (idea.get("production_blueprint") or {}).get("thumbnail_strategy") or {}
+    max_words = int(strategy.get("claim_words_max") or 5)
+    source = idea.get("hook") or idea.get("title") or "The untold story"
     words = source.split()
     if archetype["key"] == "bold_text_tease":
-        return " ".join(words[:3]).upper() + "…"
-    return " ".join(words[:4]).upper()
+        return " ".join(words[: min(3, max_words)]).upper() + "…"
+    if archetype["key"] == "mystery_object":
+        return ("WHAT IS THIS?" if max_words >= 3 else "WHAT?").upper()
+    return " ".join(words[:max_words]).upper()
 
 
 def score_thumbnail(archetype: dict, idea: dict) -> dict:
@@ -123,14 +128,21 @@ def score_thumbnail(archetype: dict, idea: dict) -> dict:
     jitter = stable_jitter(f"{archetype['key']}|{text}", span=6)
     curiosity_hits = count_hits(text, CURIOSITY_WORDS)
     emotion_hits = count_hits(text, EMOTION_WORDS)
+    strategy = (idea.get("production_blueprint") or {}).get("thumbnail_strategy") or {}
+    layout_boost = 6 if strategy.get("layout") == "question_overlay" else 0
+    contrast_boost = 5 if strategy.get("contrast") == "high" else 0
 
     scores = {}
     for key in THUMBNAIL_SCORE_KEYS:
         value = archetype["base"][key] + jitter
         if key == "curiosity":
-            value += 4 * min(curiosity_hits, 3)
+            value += 5 * min(curiosity_hits, 3) + layout_boost
         elif key == "emotion":
             value += 4 * min(emotion_hits, 3)
+        elif key == "contrast":
+            value += contrast_boost
+        elif key == "readability":
+            value += 4 if int(strategy.get("claim_words_max") or 6) <= 5 else 0
         scores[key] = clamp(value)
     return scores
 

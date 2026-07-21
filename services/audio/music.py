@@ -9,7 +9,7 @@ audio mood and its scene-by-scene progression.
 
 from __future__ import annotations
 
-from engines.heuristics import clamp
+from core.heuristics import clamp
 
 DEFAULT_MUSIC_STYLE = "understated cinematic underscore"
 
@@ -98,7 +98,10 @@ def build_music_direction(scenes: list, *, music_style: str = "") -> dict:
         "peak_energy": max(energies),
         "dynamic_range": max(energies) - min(energies),
         "sections": sections,
-        "ducking": "sidechain the bed -8 dB under narration; let it breathe back up in pauses",
+        "ducking": "sidechain the bed -10 dB under narration; -6 dB on hook sting; breathe back on pauses; never drown VO",
+        "hook_sting": "cold-open identity hit in first 0.4s then duck hard",
+        "transition_rule": "riser into payoff; thin bed under CTA",
+        "sfx_cues": "mark every pacing-label change with a light whoosh or click",
         "loop_note": "end the outro on an unresolved tail so replays feel seamless",
     }
 

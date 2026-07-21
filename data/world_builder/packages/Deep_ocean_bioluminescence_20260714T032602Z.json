@@ -1,0 +1,405 @@
+{
+  "package_version": "1.0.0",
+  "package_type": "world",
+  "generated_at": "2026-07-14T03:26:02.360039+00:00",
+  "topic": "Deep ocean bioluminescence",
+  "niche": "nature",
+  "world_id": "WORLD-NATURE_PRESERVE",
+  "world_type": "Nature Preserve",
+  "name": "Nature Preserve",
+  "theme": "protected wild",
+  "scale": "landscape",
+  "historical_accuracy": 85,
+  "world": {
+    "world_id": "WORLD-NATURE_PRESERVE",
+    "world_type": "Nature Preserve",
+    "name": "Nature Preserve",
+    "theme": "protected wild",
+    "scale": "landscape",
+    "historical_accuracy": 85,
+    "environment": {
+      "description": "Open grassland preserve with distant ridgeline, observation path, and golden hour fields",
+      "continuity_key": "WORLD-NATURE_PRESERVE",
+      "do_not_replace_mid_episode": true
+    },
+    "lighting": {
+      "base": "golden natural key + soft sky fill",
+      "consistent_key": true
+    },
+    "architecture": [
+      "boardwalk",
+      "observation hut"
+    ],
+    "weather": "clear_breeze",
+    "objects": [
+      {
+        "name": "viewing_scope",
+        "surface": "ground",
+        "anchored": true,
+        "position": {
+          "x": 0.45,
+          "y": 0.0,
+          "z": 0.45
+        },
+        "scale": 1.0
+      },
+      {
+        "name": "trail_marker",
+        "surface": "ground",
+        "anchored": true,
+        "position": {
+          "x": 0.35,
+          "y": 0.0,
+          "z": 0.55
+        },
+        "scale": 1.0
+      }
+    ],
+    "furniture": [
+      {
+        "name": "log_bench",
+        "surface": "ground",
+        "anchored": true,
+        "position": {
+          "x": 0.25,
+          "y": 0.0,
+          "z": 0.6
+        },
+        "scale": 1.0
+      }
+    ],
+    "background_animations": [
+      "grass sway",
+      "cloud drift",
+      "bird flock pass"
+    ],
+    "sound_ambience": [
+      "wind in grass",
+      "insect bed",
+      "distant wildlife"
+    ],
+    "camera_boundaries": {
+      "min_height": 0.3,
+      "max_height": 15.0,
+      "min_distance": 0.5,
+      "max_distance": 60.0
+    },
+    "color_palette": {
+      "family": "nature",
+      "primary": "#1B4332",
+      "accent": "#95D5B2",
+      "sky": "#A8DADC"
+    },
+    "lighting_presets": [
+      {
+        "id": "golden",
+        "recipe": "warm side light",
+        "mood": "serenity"
+      },
+      {
+        "id": "overcast",
+        "recipe": "soft diffuse",
+        "mood": "documentary"
+      },
+      {
+        "id": "storm_edge",
+        "recipe": "cool edge light",
+        "mood": "drama"
+      }
+    ],
+    "camera_anchors": [
+      {
+        "id": "ridge_wide",
+        "position": "overlook",
+        "angle": "establishing",
+        "lens_hint": "24mm"
+      },
+      {
+        "id": "trail_walk",
+        "position": "path",
+        "angle": "follow",
+        "lens_hint": "35mm"
+      },
+      {
+        "id": "flora_macro",
+        "position": "ground",
+        "angle": "macro",
+        "lens_hint": "100mm"
+      }
+    ],
+    "animation_zones": [
+      {
+        "id": "meadow",
+        "region": "center"
+      }
+    ],
+    "transition_anchors": [
+      {
+        "id": "trailhead",
+        "to_compatible": [
+          "Rainforest",
+          "University",
+          "Research Center"
+        ]
+      }
+    ],
+    "design_rules": [
+      "Keep set geometry continuous across scenes",
+      "Vary camera and lighting, not the world itself",
+      "Every object must sit on a defined surface",
+      "No flat solid full-frame backgrounds"
+    ]
+  },
+  "environment": {
+    "description": "Open grassland preserve with distant ridgeline, observation path, and golden hour fields",
+    "continuity_key": "WORLD-NATURE_PRESERVE",
+    "do_not_replace_mid_episode": true
+  },
+  "camera_anchors": [
+    {
+      "id": "ridge_wide",
+      "position": "overlook",
+      "angle": "establishing",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "trail_walk",
+      "position": "path",
+      "angle": "follow",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "flora_macro",
+      "position": "ground",
+      "angle": "macro",
+      "lens_hint": "100mm"
+    }
+  ],
+  "lighting_presets": [
+    {
+      "id": "golden",
+      "recipe": "warm side light",
+      "mood": "serenity"
+    },
+    {
+      "id": "overcast",
+      "recipe": "soft diffuse",
+      "mood": "documentary"
+    },
+    {
+      "id": "storm_edge",
+      "recipe": "cool edge light",
+      "mood": "drama"
+    }
+  ],
+  "object_placement": [
+    {
+      "name": "viewing_scope",
+      "surface": "ground",
+      "anchored": true,
+      "position": {
+        "x": 0.45,
+        "y": 0.0,
+        "z": 0.45
+      },
+      "scale": 1.0
+    },
+    {
+      "name": "trail_marker",
+      "surface": "ground",
+      "anchored": true,
+      "position": {
+        "x": 0.35,
+        "y": 0.0,
+        "z": 0.55
+      },
+      "scale": 1.0
+    },
+    {
+      "name": "log_bench",
+      "surface": "ground",
+      "anchored": true,
+      "position": {
+        "x": 0.25,
+        "y": 0.0,
+        "z": 0.6
+      },
+      "scale": 1.0
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "meadow",
+      "region": "center"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "trailhead",
+      "to_compatible": [
+        "Rainforest",
+        "University",
+        "Research Center"
+      ]
+    }
+  ],
+  "architecture": [
+    "boardwalk",
+    "observation hut"
+  ],
+  "weather": "clear_breeze",
+  "background_animations": [
+    "grass sway",
+    "cloud drift",
+    "bird flock pass"
+  ],
+  "sound_ambience": [
+    "wind in grass",
+    "insect bed",
+    "distant wildlife"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.3,
+    "max_height": 15.0,
+    "min_distance": 0.5,
+    "max_distance": 60.0
+  },
+  "color_palette": {
+    "family": "nature",
+    "primary": "#1B4332",
+    "accent": "#95D5B2",
+    "sky": "#A8DADC"
+  },
+  "continuity": {
+    "single_world": true,
+    "world_id": "WORLD-NATURE_PRESERVE",
+    "note": "Scenes share the same laboratory/set; only camera and lighting change",
+    "scene_bindings": [
+      {
+        "scene_id": "s1",
+        "world_id": "WORLD-NATURE_PRESERVE",
+        "world_type": "Nature Preserve",
+        "camera_anchor": "ridge_wide",
+        "camera": {
+          "id": "ridge_wide",
+          "position": "overlook",
+          "angle": "establishing",
+          "lens_hint": "24mm"
+        },
+        "lighting_preset": "golden",
+        "lighting": "warm side light",
+        "environment": "Open grassland preserve with distant ridgeline, observation path, and golden hour fields",
+        "background": "Open grassland preserve with distant ridgeline, observation path, and golden hour fields; camera_anchor=ridge_wide; angle=establishing; lens=24mm; lighting_preset=golden; SAME_WORLD continuity",
+        "color_palette": {
+          "family": "nature",
+          "primary": "#1B4332",
+          "accent": "#95D5B2",
+          "sky": "#A8DADC"
+        },
+        "objects_in_frame": [
+          "viewing_scope",
+          "trail_marker"
+        ],
+        "narration_excerpt": "Dark water"
+      },
+      {
+        "scene_id": "s2",
+        "world_id": "WORLD-NATURE_PRESERVE",
+        "world_type": "Nature Preserve",
+        "camera_anchor": "trail_walk",
+        "camera": {
+          "id": "trail_walk",
+          "position": "path",
+          "angle": "follow",
+          "lens_hint": "35mm"
+        },
+        "lighting_preset": "overcast",
+        "lighting": "soft diffuse",
+        "environment": "Open grassland preserve with distant ridgeline, observation path, and golden hour fields",
+        "background": "Open grassland preserve with distant ridgeline, observation path, and golden hour fields; camera_anchor=trail_walk; angle=follow; lens=35mm; lighting_preset=overcast; SAME_WORLD continuity",
+        "color_palette": {
+          "family": "nature",
+          "primary": "#1B4332",
+          "accent": "#95D5B2",
+          "sky": "#A8DADC"
+        },
+        "objects_in_frame": [
+          "viewing_scope",
+          "trail_marker"
+        ],
+        "narration_excerpt": "Glow appears"
+      }
+    ]
+  },
+  "scene_overrides": [
+    {
+      "scene_id": "s1",
+      "environment": "Open grassland preserve with distant ridgeline, observation path, and golden hour fields",
+      "background": "Open grassland preserve with distant ridgeline, observation path, and golden hour fields; camera_anchor=ridge_wide; angle=establishing; lens=24mm; lighting_preset=golden; SAME_WORLD continuity",
+      "lighting": "warm side light",
+      "color_palette": {
+        "family": "nature",
+        "primary": "#1B4332",
+        "accent": "#95D5B2",
+        "sky": "#A8DADC"
+      },
+      "world_id": "WORLD-NATURE_PRESERVE",
+      "camera_anchor": "ridge_wide"
+    },
+    {
+      "scene_id": "s2",
+      "environment": "Open grassland preserve with distant ridgeline, observation path, and golden hour fields",
+      "background": "Open grassland preserve with distant ridgeline, observation path, and golden hour fields; camera_anchor=trail_walk; angle=follow; lens=35mm; lighting_preset=overcast; SAME_WORLD continuity",
+      "lighting": "soft diffuse",
+      "color_palette": {
+        "family": "nature",
+        "primary": "#1B4332",
+        "accent": "#95D5B2",
+        "sky": "#A8DADC"
+      },
+      "world_id": "WORLD-NATURE_PRESERVE",
+      "camera_anchor": "trail_walk"
+    }
+  ],
+  "renderer_feed": {
+    "note": "Optional enrich of visual_package.scenes \u2014 does not modify production pipeline stages",
+    "scene_overrides": [
+      {
+        "scene_id": "s1",
+        "environment": "Open grassland preserve with distant ridgeline, observation path, and golden hour fields",
+        "background": "Open grassland preserve with distant ridgeline, observation path, and golden hour fields; camera_anchor=ridge_wide; angle=establishing; lens=24mm; lighting_preset=golden; SAME_WORLD continuity",
+        "lighting": "warm side light",
+        "color_palette": {
+          "family": "nature",
+          "primary": "#1B4332",
+          "accent": "#95D5B2",
+          "sky": "#A8DADC"
+        },
+        "world_id": "WORLD-NATURE_PRESERVE",
+        "camera_anchor": "ridge_wide"
+      },
+      {
+        "scene_id": "s2",
+        "environment": "Open grassland preserve with distant ridgeline, observation path, and golden hour fields",
+        "background": "Open grassland preserve with distant ridgeline, observation path, and golden hour fields; camera_anchor=trail_walk; angle=follow; lens=35mm; lighting_preset=overcast; SAME_WORLD continuity",
+        "lighting": "soft diffuse",
+        "color_palette": {
+          "family": "nature",
+          "primary": "#1B4332",
+          "accent": "#95D5B2",
+          "sky": "#A8DADC"
+        },
+        "world_id": "WORLD-NATURE_PRESERVE",
+        "camera_anchor": "trail_walk"
+      }
+    ]
+  },
+  "validation": {
+    "ok": true,
+    "passed": true,
+    "hard_fails": [],
+    "warnings": [],
+    "scene_binding_count": 2,
+    "object_count": 3
+  }
+}

@@ -7,6 +7,9 @@
 **Creative Director (accountable):** Agent 18 — AI Director  
 **Charter owner:** Executive Office  
 
+**Visual constitution (cinematic universe):** [`GENERATIONAL_VISUAL_FOUNDATION_V1.md`](GENERATIONAL_VISUAL_FOUNDATION_V1.md) — feature-film-quality cinematic realism.  
+**Dash Science style bible (separate locked IP):** `data/universe/STYLE_BIBLE.md`
+
 Companions: `EXECUTIVE_OS.md` · `AGENT_REGISTRY.md` · `CREATIVE_STUDIO.md` · `GENERATIONAL_ANIMATION_STUDIO.md` · cinematic visual upgrades in `services/asset_production/`
 
 **Motion ownership:** Animation Studio (Agent 16) directs motion; this charter owns visual identity / worlds / IP continuity.

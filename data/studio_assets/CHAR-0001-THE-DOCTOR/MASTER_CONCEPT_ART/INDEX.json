@@ -1,0 +1,55 @@
+{
+  "package": "MASTER_CONCEPT_ART",
+  "character_id": "DOCTOR_001",
+  "legacy_alias": "CHAR-0001",
+  "name": "The Doctor",
+  "status": "permanent_visual_identity_lock",
+  "style_target": [
+    "pixar",
+    "arcane",
+    "dreamworks",
+    "disney_feature",
+    "unreal_cinematic"
+  ],
+  "primary_recognition_keys": [
+    "doctor_001_06_hero_portrait.png",
+    "doctor_001_20_official_character_reference_sheet.png"
+  ],
+  "outputs": {
+    "01_front_view": "doctor_001_01_front_view.png",
+    "02_left_side_view": "doctor_001_02_left_side_view.png",
+    "03_right_side_view": "doctor_001_03_right_side_view.png",
+    "04_rear_view": "doctor_001_04_rear_view.png",
+    "05_three_quarter_view": "doctor_001_05_three_quarter_view.png",
+    "06_hero_portrait": "doctor_001_06_hero_portrait.png",
+    "07_neutral_expression": "doctor_001_07_neutral_expression.png",
+    "08_happy_expression": "doctor_001_08_happy_expression.png",
+    "09_concerned_expression": "doctor_001_09_concerned_expression.png",
+    "10_determined_expression": "doctor_001_10_determined_expression.png",
+    "11_laughing_expression": "doctor_001_11_laughing_expression.png",
+    "12_speaking_expression": "doctor_001_12_speaking_expression.png",
+    "13_walking_pose": "doctor_001_13_walking_pose.png",
+    "14_sitting_pose": "doctor_001_14_sitting_pose.png",
+    "15_hand_gesture_reference": "doctor_001_15_hand_gesture_reference.png",
+    "16_fullbody_turnaround": "doctor_001_16_fullbody_turnaround.png",
+    "17_closeup_facial_study": "doctor_001_17_closeup_facial_study.png",
+    "18_material_detail_study": "doctor_001_18_material_detail_study.png",
+    "19_color_palette_sheet": "doctor_001_19_color_palette_sheet.png",
+    "20_official_character_reference_sheet": "doctor_001_20_official_character_reference_sheet.png",
+    "bonus_expressions_sheet": "doctor_001_expressions_sheet.png"
+  },
+  "continuity": {
+    "never_regenerate_from_scratch": true,
+    "procedural_plates_do_not_supersede_master_art": true,
+    "faithful_reference_required_for_all_future_assets": true
+  },
+  "forbid": [
+    "generic_ai_faces",
+    "plastic_skin",
+    "clip_art",
+    "emoji_expressions",
+    "low_detail_robotics",
+    "random_sci_fi_armor",
+    "villain_eye_glow"
+  ]
+}

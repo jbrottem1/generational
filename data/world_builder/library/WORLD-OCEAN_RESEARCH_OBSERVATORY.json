@@ -1,0 +1,426 @@
+{
+  "world_id": "WORLD-OCEAN_RESEARCH_OBSERVATORY",
+  "world_type": "Ocean Research Observatory",
+  "name": "Ocean Research Observatory",
+  "theme": "marine science",
+  "scale": "facility",
+  "historical_accuracy": 80,
+  "environment": {
+    "description": "Coastal ocean research observatory with sealed viewing glass, wet-lab benches, and deep-blue water beyond",
+    "continuity_key": "WORLD-OCEAN_RESEARCH_OBSERVATORY",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "cool marine spill from viewport + warm console practicals",
+    "consistent_key": true
+  },
+  "architecture": [
+    "observation dome",
+    "pressure-glass wall",
+    "steel catwalk",
+    "display alcove"
+  ],
+  "weather": "indoors_coastal",
+  "objects": [
+    {
+      "object_id": "obj_aquarium_viewport",
+      "name": "main_aquarium_viewport",
+      "surface": "wall",
+      "anchored": true,
+      "temporary": false,
+      "zone": "underwater_viewing",
+      "position": {
+        "x": 0.5,
+        "y": 1.2,
+        "z": 0.05
+      },
+      "scale": 1.0,
+      "relationships": [
+        "specimen_label_panel"
+      ]
+    },
+    {
+      "object_id": "obj_octopus_marker",
+      "name": "octopus_specimen_tank_marker",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "underwater_viewing",
+      "position": {
+        "x": 0.55,
+        "y": 0.0,
+        "z": 0.35
+      },
+      "scale": 1.0,
+      "relationships": [],
+      "global": true
+    },
+    {
+      "object_id": "obj_anatomy_display",
+      "name": "holographic_anatomy_display",
+      "surface": "desk",
+      "anchored": true,
+      "temporary": false,
+      "zone": "scientific_display",
+      "position": {
+        "x": 0.4,
+        "y": 0.9,
+        "z": 0.5
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_heart_panel",
+      "name": "heart_diagram_panel",
+      "surface": "wall",
+      "anchored": true,
+      "temporary": false,
+      "zone": "scientific_display",
+      "position": {
+        "x": 0.65,
+        "y": 1.4,
+        "z": 0.1
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_research_console",
+      "name": "research_console",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "observation_chamber",
+      "position": {
+        "x": 0.35,
+        "y": 0.0,
+        "z": 0.55
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_diving_lock",
+      "name": "diving_lock_marker",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "observation_chamber",
+      "position": {
+        "x": 0.2,
+        "y": 0.0,
+        "z": 0.7
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "obj_obs_bench",
+      "name": "observation_bench",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "observation_chamber",
+      "position": {
+        "x": 0.3,
+        "y": 0.0,
+        "z": 0.6
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_display_table",
+      "name": "display_table",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "scientific_display",
+      "position": {
+        "x": 0.45,
+        "y": 0.0,
+        "z": 0.5
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "background_animations": [
+    "caustic water light on glass",
+    "bubble column",
+    "soft monitor waveforms"
+  ],
+  "sound_ambience": [
+    "ocean ambience through glass",
+    "laboratory hum",
+    "soft sonar ping"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.4,
+    "max_height": 4.0,
+    "min_distance": 0.5,
+    "max_distance": 16.0
+  },
+  "color_palette": {
+    "family": "ocean",
+    "primary": "#0D1B1E",
+    "accent": "#2A9D8F",
+    "glow": "#E9C46A"
+  },
+  "lighting_presets": [
+    {
+      "id": "observation",
+      "recipe": "viewport blue spill + soft fill",
+      "mood": "wonder"
+    },
+    {
+      "id": "display",
+      "recipe": "panel glow + cool ambient",
+      "mood": "teach"
+    },
+    {
+      "id": "deep_view",
+      "recipe": "caustic ripple strength up",
+      "mood": "immersion"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "chamber_wide",
+      "position": "observation_chamber",
+      "angle": "eye_level",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "glass_close",
+      "position": "underwater_viewing",
+      "angle": "toward_glass",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "display_detail",
+      "position": "scientific_display",
+      "angle": "macro",
+      "lens_hint": "85mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "viewport",
+      "region": "glass"
+    },
+    {
+      "id": "display",
+      "region": "station"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "wet_lab_door",
+      "to_compatible": [
+        "Ocean Floor",
+        "Research Center",
+        "Science Lab"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "category": "Ocean Research Observatory",
+  "applicable_topics": [
+    "octopus",
+    "marine biology",
+    "cephalopods",
+    "circulation",
+    "three hearts"
+  ],
+  "time_periods": [
+    "present"
+  ],
+  "audiences": [
+    "general_public"
+  ],
+  "visual_styles": [
+    "science_short",
+    "nature_doc"
+  ],
+  "scientific_accuracy": 88,
+  "scientific_constraints": [
+    "Octopus systemic + branchial hearts depiction must remain anatomically labeled as educational model",
+    "Viewport glass separates dry observatory from seawater",
+    "Equipment stays grounded on benches or floors"
+  ],
+  "historical_constraints": [],
+  "accuracy": {
+    "scientific": 88,
+    "geographic": "generic coastal observatory (not a named facility)",
+    "uncertainties": [
+      "Exact tank geometry is illustrative"
+    ],
+    "sources": [
+      "standard cephalopod circulatory education models"
+    ]
+  },
+  "aesthetic": {
+    "materials": [
+      "glass",
+      "brushed steel",
+      "wet-lab epoxy"
+    ],
+    "era": "present",
+    "design_language": "marine_research",
+    "brand_compatibility": "youtube_shorts_science"
+  },
+  "ambient_practicals": [
+    "viewport caustics",
+    "console LEDs",
+    "display panel glow"
+  ],
+  "allowed_subject_positions": [
+    {
+      "id": "console_side",
+      "zone": "observation_chamber",
+      "x": 0.35,
+      "z": 0.5
+    },
+    {
+      "id": "glass_front",
+      "zone": "underwater_viewing",
+      "x": 0.5,
+      "z": 0.35
+    },
+    {
+      "id": "display_presenter",
+      "zone": "scientific_display",
+      "x": 0.4,
+      "z": 0.55
+    }
+  ],
+  "restricted_areas": [
+    "inside_water_volume"
+  ],
+  "zones": [
+    {
+      "id": "observation_chamber",
+      "name": "Observation Chamber",
+      "description": "Dry observatory room with research console facing the facility",
+      "landmarks": [
+        "research_console",
+        "diving_lock_marker",
+        "observation_bench"
+      ],
+      "entrances": [
+        "facility_entry"
+      ],
+      "exits": [
+        "to_underwater_viewing"
+      ],
+      "connections": [
+        "underwater_viewing",
+        "scientific_display"
+      ],
+      "doors": [
+        "facility_entry",
+        "viewing_door"
+      ],
+      "allowed_subject_positions": [
+        {
+          "id": "console_side",
+          "x": 0.35,
+          "z": 0.5
+        }
+      ],
+      "restricted_areas": [],
+      "ambient_activity": [
+        "soft monitor waveforms"
+      ],
+      "ambience": [
+        "laboratory hum"
+      ]
+    },
+    {
+      "id": "underwater_viewing",
+      "name": "Underwater Viewing Area",
+      "description": "Pressure-glass wall looking into blue water with specimen markers",
+      "landmarks": [
+        "main_aquarium_viewport",
+        "octopus_specimen_tank_marker"
+      ],
+      "entrances": [
+        "from_observation_chamber"
+      ],
+      "exits": [
+        "to_scientific_display"
+      ],
+      "connections": [
+        "observation_chamber",
+        "scientific_display"
+      ],
+      "doors": [
+        "viewing_door"
+      ],
+      "allowed_subject_positions": [
+        {
+          "id": "glass_front",
+          "x": 0.5,
+          "z": 0.35
+        }
+      ],
+      "restricted_areas": [
+        "inside_water_volume"
+      ],
+      "ambient_activity": [
+        "caustic water light on glass",
+        "bubble column"
+      ],
+      "ambience": [
+        "ocean ambience through glass",
+        "soft sonar ping"
+      ]
+    },
+    {
+      "id": "scientific_display",
+      "name": "Scientific Display Station",
+      "description": "Anatomy display station with heart diagram and holographic model",
+      "landmarks": [
+        "holographic_anatomy_display",
+        "heart_diagram_panel",
+        "display_table"
+      ],
+      "entrances": [
+        "from_underwater_viewing"
+      ],
+      "exits": [
+        "to_observation_chamber"
+      ],
+      "connections": [
+        "underwater_viewing",
+        "observation_chamber"
+      ],
+      "doors": [],
+      "allowed_subject_positions": [
+        {
+          "id": "display_presenter",
+          "x": 0.4,
+          "z": 0.55
+        }
+      ],
+      "restricted_areas": [],
+      "ambient_activity": [
+        "display pulse"
+      ],
+      "ambience": [
+        "quiet room tone"
+      ]
+    }
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.160670+00:00"
+}

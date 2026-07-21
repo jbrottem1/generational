@@ -8,7 +8,7 @@ providers configured.
 
 from __future__ import annotations
 
-from engines.heuristics import content_words
+from core.heuristics import content_words
 from services.seo.models import KEYWORD_CLASSES, SEARCH_INTENTS
 
 _QUESTION_STARTERS = ("what", "how", "why", "is", "are", "can", "does", "should", "when", "where")

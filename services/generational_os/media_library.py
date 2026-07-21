@@ -13,7 +13,8 @@ from typing import Any
 from core.env import project_root
 
 # LOCKED default — user Mac local library root
-LIBRARY_ROOT_PARTS = ("Desktop", "AI Start-Up", "Videos")
+# Legacy tuple — prefer resolve via execution_mode.resolve_ai_startup_root()
+LIBRARY_ROOT_PARTS = ("Desktop", "AI Start-UP", "Videos")
 
 # Standard category folders (auto-created on demand)
 STANDARD_CATEGORIES: tuple[str, ...] = (
@@ -119,8 +120,10 @@ _LIBRARY_INDEX = project_root() / "data" / "generational_os" / "VIDEO_LIBRARY.js
 
 
 def library_root(*, create: bool = False) -> Path:
-    """~/Desktop/AI Start-Up/Videos/"""
-    path = Path.home().joinpath(*LIBRARY_ROOT_PARTS)
+    """~/Desktop/{AI Start-UP|AI Start-Up}/Videos/ — resolves existing spelling."""
+    from services.media_production.execution_mode import resolve_ai_startup_root
+
+    path = resolve_ai_startup_root() / "Videos"
     if create:
         path.mkdir(parents=True, exist_ok=True)
         for cat in STANDARD_CATEGORIES:

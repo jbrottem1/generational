@@ -1,0 +1,49 @@
+{
+  "world_id": "WORLD-HOSPITAL",
+  "modes": [
+    "tracking",
+    "follow",
+    "wide_establishing",
+    "medium_coverage",
+    "close_up_reaction",
+    "over_the_shoulder",
+    "motivated"
+  ],
+  "default_mode": "medium_coverage",
+  "follows_performance": true,
+  "camera_replaces_actor_motion": false,
+  "motivated_only": true,
+  "true_motion_map": {
+    "tracking": "tracking",
+    "follow": "tracking",
+    "wide_establishing": "pull_out",
+    "medium_coverage": "orbit",
+    "close_up_reaction": "push_in",
+    "over_the_shoulder": "handheld",
+    "motivated": "tracking"
+  },
+  "recommended_coverage": [
+    {
+      "beat": "enter",
+      "mode": "wide_establishing"
+    },
+    {
+      "beat": "walk_explain",
+      "mode": "tracking"
+    },
+    {
+      "beat": "interact_prop",
+      "mode": "over_the_shoulder"
+    },
+    {
+      "beat": "reaction",
+      "mode": "close_up_reaction"
+    },
+    {
+      "beat": "teach",
+      "mode": "medium_coverage"
+    }
+  ],
+  "forbid_ken_burns_as_performance": true,
+  "notes": "Camera records the stage performance. Actor locomotion is primary."
+}

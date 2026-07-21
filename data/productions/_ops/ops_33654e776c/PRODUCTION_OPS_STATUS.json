@@ -1,0 +1,363 @@
+{
+  "schema_version": "1.0",
+  "production_id": "ops_33654e776c",
+  "brief": {
+    "topic": "Why Blood Types Matter",
+    "platform": "youtube_shorts",
+    "length_sec": 45,
+    "style": "educational",
+    "narrator": "professor",
+    "voice": "professor",
+    "quality_target": 98.0,
+    "constraints": {
+      "audience": "medicine learners",
+      "publishing_enabled": false,
+      "v1_launch_pilot": true,
+      "category": "medicine"
+    },
+    "command": "",
+    "raw": {}
+  },
+  "current_stage": "export",
+  "current_agent": "export_and_validate",
+  "overall_progress_pct": 100,
+  "elapsed_ms": 25048,
+  "eta_ms": null,
+  "overall_status": "degraded_no_export",
+  "pipeline_health": "healthy",
+  "warnings": [
+    "animation unavailable \u2014 continued",
+    "mp4_not_yet_materialized \u2014 metadata package exported for smoke/plan modes"
+  ],
+  "retry_count": 0,
+  "quality_scores": {
+    "research": 85.0,
+    "psychology": 90.0,
+    "studio_director": 95.0,
+    "script_generator": 95.0,
+    "scene_builder": 100.0,
+    "media_collection": 100.0,
+    "animation": 100.0,
+    "voice_generation": 100.0,
+    "music_sound": 90.0,
+    "captions": 95.0,
+    "rendering": 100.0,
+    "viewer_retention": 100.0,
+    "optimization_lab": 100.0,
+    "quality_assurance": 100.0,
+    "seo_package": 100.0,
+    "export": 45.0
+  },
+  "current_files": [
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Blood_Types_Matter_ops_33654e776c",
+    "data/renders/fbcc6d65f998/your-blood-type-s-hidden-superpower_1080x1920.mp4",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Blood_Types_Matter_ops_33654e776c/captions.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Blood_Types_Matter_ops_33654e776c/description.txt",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Blood_Types_Matter_ops_33654e776c/seo_metadata.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Blood_Types_Matter_ops_33654e776c/thumbnail_plan.json"
+  ],
+  "started_at": "2026-07-14T04:59:09.568045+00:00",
+  "finished_at": "2026-07-14T04:59:34.616576+00:00",
+  "stages": [
+    {
+      "key": "research",
+      "label": "Research Engine",
+      "engines": [
+        "research",
+        "ideation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:59:09.568547+00:00",
+      "end_time": "2026-07-14T04:59:14.491392+00:00",
+      "duration_ms": 4921,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 85.0,
+      "output_files": [],
+      "current_agent": "research"
+    },
+    {
+      "key": "psychology",
+      "label": "Psychology Engine",
+      "engines": [
+        "psychology"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:59:14.491983+00:00",
+      "end_time": "2026-07-14T04:59:14.510021+00:00",
+      "duration_ms": 17,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 90.0,
+      "output_files": [],
+      "current_agent": "psychology"
+    },
+    {
+      "key": "studio_director",
+      "label": "AI Studio Director",
+      "engines": [
+        "ai_director"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:59:14.510547+00:00",
+      "end_time": "2026-07-14T04:59:14.534513+00:00",
+      "duration_ms": 23,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "ai_director"
+    },
+    {
+      "key": "script_generator",
+      "label": "Script Generator",
+      "engines": [
+        "script_generation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:59:14.534986+00:00",
+      "end_time": "2026-07-14T04:59:17.984156+00:00",
+      "duration_ms": 3448,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "script_generation"
+    },
+    {
+      "key": "scene_builder",
+      "label": "Scene Builder",
+      "engines": [
+        "visual_intelligence",
+        "scene_planning",
+        "visual_planning"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:59:17.984754+00:00",
+      "end_time": "2026-07-14T04:59:18.029504+00:00",
+      "duration_ms": 43,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "visual_intelligence"
+    },
+    {
+      "key": "media_collection",
+      "label": "Media Collection",
+      "engines": [
+        "evidence_intelligence",
+        "image",
+        "asset_manager"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:59:18.030130+00:00",
+      "end_time": "2026-07-14T04:59:18.973310+00:00",
+      "duration_ms": 941,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "evidence_intelligence"
+    },
+    {
+      "key": "animation",
+      "label": "Animation / Motion Graphics",
+      "engines": [
+        "cinematography",
+        "animation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:59:18.976511+00:00",
+      "end_time": "2026-07-14T04:59:18.979351+00:00",
+      "duration_ms": 2,
+      "warnings": [
+        "animation unavailable \u2014 continued"
+      ],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "cinematography"
+    },
+    {
+      "key": "voice_generation",
+      "label": "Voice Generation",
+      "engines": [
+        "voice_audio",
+        "narration",
+        "voice"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:59:18.979806+00:00",
+      "end_time": "2026-07-14T04:59:32.188660+00:00",
+      "duration_ms": 13207,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "voice_audio"
+    },
+    {
+      "key": "music_sound",
+      "label": "Music & Sound Design",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:59:32.189474+00:00",
+      "end_time": "2026-07-14T04:59:32.189974+00:00",
+      "duration_ms": 0,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 90.0,
+      "output_files": [],
+      "current_agent": "apply_music_direction"
+    },
+    {
+      "key": "captions",
+      "label": "Captions",
+      "engines": [
+        "subtitle"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:59:32.190619+00:00",
+      "end_time": "2026-07-14T04:59:32.191846+00:00",
+      "duration_ms": 0,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "subtitle"
+    },
+    {
+      "key": "rendering",
+      "label": "Rendering",
+      "engines": [
+        "timeline",
+        "render_package",
+        "studio_render",
+        "video"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:59:32.192286+00:00",
+      "end_time": "2026-07-14T04:59:32.198696+00:00",
+      "duration_ms": 3,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "timeline"
+    },
+    {
+      "key": "viewer_retention",
+      "label": "Viewer Retention Analysis",
+      "engines": [
+        "viewer_retention"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:59:32.199313+00:00",
+      "end_time": "2026-07-14T04:59:32.201462+00:00",
+      "duration_ms": 1,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "viewer_retention"
+    },
+    {
+      "key": "optimization_lab",
+      "label": "Optimization Lab",
+      "engines": [
+        "optimization_lab"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:59:32.201937+00:00",
+      "end_time": "2026-07-14T04:59:32.293092+00:00",
+      "duration_ms": 90,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "optimization_lab"
+    },
+    {
+      "key": "quality_assurance",
+      "label": "Quality Assurance",
+      "engines": [
+        "quality",
+        "production_qa"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:59:32.293675+00:00",
+      "end_time": "2026-07-14T04:59:32.296862+00:00",
+      "duration_ms": 2,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "quality"
+    },
+    {
+      "key": "seo_package",
+      "label": "SEO Package",
+      "engines": [
+        "seo",
+        "seo_optimization"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:59:32.297324+00:00",
+      "end_time": "2026-07-14T04:59:34.613678+00:00",
+      "duration_ms": 2315,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "seo"
+    },
+    {
+      "key": "export",
+      "label": "Export",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:59:34.614262+00:00",
+      "end_time": "2026-07-14T04:59:34.616130+00:00",
+      "duration_ms": 1,
+      "warnings": [
+        "mp4_not_yet_materialized \u2014 metadata package exported for smoke/plan modes"
+      ],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 45.0,
+      "output_files": [
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Blood_Types_Matter_ops_33654e776c",
+        "data/renders/fbcc6d65f998/your-blood-type-s-hidden-superpower_1080x1920.mp4",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Blood_Types_Matter_ops_33654e776c/captions.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Blood_Types_Matter_ops_33654e776c/description.txt",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Blood_Types_Matter_ops_33654e776c/seo_metadata.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Blood_Types_Matter_ops_33654e776c/thumbnail_plan.json"
+      ],
+      "current_agent": "export_and_validate"
+    }
+  ],
+  "updated_at": "2026-07-14T04:59:34.640828+00:00",
+  "validation_score": 93.4,
+  "video_exists": false,
+  "deliverable_ok": false,
+  "success": false,
+  "notes": [
+    "success_requires_mp4 \u2014 pipeline continued but deliverable missing"
+  ]
+}

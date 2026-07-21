@@ -11,7 +11,7 @@ Overall Visual Score (0-100) with a plain-English summary.
 
 from __future__ import annotations
 
-from engines.heuristics import clamp
+from core.heuristics import clamp
 from services.visual.hooks import build_hook_sequence
 from services.visual.prompts import build_image_prompts, build_video_prompts
 from services.visual.render_prep import build_render_package

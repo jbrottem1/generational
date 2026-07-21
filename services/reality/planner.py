@@ -67,27 +67,56 @@ TURTLE_202_PANELS: list[RealityPanel] = [
     RealityPanel(
         layout="board_inset",
         start=0.10,
-        end=0.28,
+        end=0.26,
         image_ids=["green_sea_turtle"],
         labels=["Modern sea turtle"],
         title="Living turtle",
     ),
     RealityPanel(
-        layout="split_compare",
-        start=0.28,
-        end=0.52,
-        image_ids=["turtle_fossil", "green_sea_turtle"],
-        labels=["Ancient fossil", "Today"],
-        tags=["200+ Ma", "Evolved shell"],
-        title="Deep time",
-    ),
-    RealityPanel(
         layout="board_inset",
-        start=0.55,
-        end=0.78,
+        start=0.54,
+        end=0.76,
         image_ids=["turtle_fossil"],
         labels=["Intermediate fossil form"],
         title="Fossil evidence",
+    ),
+]
+
+# Four Seasons — authentic Earth + seasonal landscape photographs
+SEASONS_001_PANELS: list[RealityPanel] = [
+    RealityPanel(
+        layout="board_inset",
+        start=0.08,
+        end=0.22,
+        image_ids=["earth_apollo17"],
+        labels=["Earth from space (NASA)"],
+        title="Our planet",
+    ),
+    RealityPanel(
+        layout="split_compare",
+        start=0.32,
+        end=0.48,
+        image_ids=["season_spring", "season_summer"],
+        labels=["Spring", "Summer"],
+        tags=["More sunlight", "Longer days"],
+        title="Spring · Summer",
+    ),
+    RealityPanel(
+        layout="split_compare",
+        start=0.48,
+        end=0.66,
+        image_ids=["season_autumn", "season_winter"],
+        labels=["Autumn", "Winter"],
+        tags=["Less sunlight", "Shorter days"],
+        title="Autumn · Winter",
+    ),
+    RealityPanel(
+        layout="board_inset",
+        start=0.70,
+        end=0.88,
+        image_ids=["earth_apollo17"],
+        labels=["Tilt shapes seasons"],
+        title="Takeaway",
     ),
 ]
 
@@ -96,6 +125,7 @@ PLANS: dict[str, list[RealityPanel]] = {
     "foundation_coral_102": CORAL_102_PANELS,
     "foundation_bluffing_103": BLUFFING_103_PANELS,
     "foundation_v2_turtle_202": TURTLE_202_PANELS,
+    "foundation_v2_seasons_001": SEASONS_001_PANELS,
 }
 
 

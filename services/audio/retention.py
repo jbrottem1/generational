@@ -9,7 +9,7 @@ retention notes plus a 0-100 retention-audio fitness score.
 
 from __future__ import annotations
 
-from engines.heuristics import clamp
+from core.heuristics import clamp
 
 # An audio change roughly every 3-6 seconds keeps short-form attention;
 # translated to events per 10 seconds.

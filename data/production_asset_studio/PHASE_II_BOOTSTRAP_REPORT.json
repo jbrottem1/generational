@@ -1,0 +1,73 @@
+{
+  "ok": true,
+  "phase": "II",
+  "timestamp": "2026-07-18T14:47:06.218889+00:00",
+  "catalog": {
+    "ok": true,
+    "phase": "II",
+    "library_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/production_asset_studio/ASSET_LIBRARY.json",
+    "package_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/production_asset_studio/PRODUCTION_ASSET_PACKAGE.json",
+    "asset_count": 56,
+    "department_count": 8
+  },
+  "blender_build": {
+    "ok": true,
+    "returncode": 0,
+    "log": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/production_asset_studio/library/_blender_build/BUILD_LOG.txt",
+    "report": {
+      "ok": true,
+      "phase": "III",
+      "creative_direction": "generational_v3",
+      "scene": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/production_asset_studio/library/_blender_build/PHASE_III_CREATIVE_SCENE.blend",
+      "runtime_dir": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/studio_assets/DOCTOR_001/RUNTIME",
+      "character": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/studio_assets/DOCTOR_001/RUNTIME/DOCTOR_001_SKINNED.blend",
+      "world": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/studio_assets/DOCTOR_001/RUNTIME/GENERATIONAL_MEDICAL_LAB.blend",
+      "prop": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/studio_assets/DOCTOR_001/RUNTIME/SAMPLE_CONTAINER_001.blend",
+      "lights": [
+        "KEY_SUN",
+        "FILL_LIGHT",
+        "RIM_LIGHT",
+        "WINDOW_PRACTICAL"
+      ],
+      "bones": 31,
+      "shape_keys": [
+        "Basis",
+        "jaw_open",
+        "smile",
+        "concern",
+        "blink_L",
+        "blink_R",
+        "brow_raise",
+        "lip_widen",
+        "cheek_raise",
+        "joy",
+        "curiosity",
+        "empathy",
+        "viseme_A",
+        "viseme_E",
+        "viseme_O",
+        "viseme_U",
+        "viseme_M",
+        "viseme_F"
+      ],
+      "lab_objects": [
+        "door",
+        "table",
+        "scanner",
+        "floor",
+        "window",
+        "holo",
+        "holo2",
+        "fog"
+      ],
+      "container": "SAMPLE_CONTAINER_001"
+    }
+  },
+  "runtime_export": {
+    "runtime_dir": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/studio_assets/DOCTOR_001/RUNTIME",
+    "character_exists": true,
+    "lab_exists": true,
+    "prop_exists": true,
+    "asset_origin": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/studio_assets/DOCTOR_001/RUNTIME/ASSET_ORIGIN.json"
+  }
+}

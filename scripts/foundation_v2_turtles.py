@@ -27,6 +27,9 @@ from services.animation.foundation_v2 import (
 )
 from services.animation.performer import render_lip_sync_performance
 from services.animation.stick_figure import StickFigureSpec
+from services.animation.teaching_choreography import PLANS
+from services.animation.turtle_demos import TURTLE_202_KEYWORDS
+from services.animation.whiteboard import write_window_from_plan
 from services.education.director_review import review_lesson
 from services.media_production.ffmpeg_assembler import find_ffmpeg
 from services.provider_runtime.config import has_credential
@@ -213,8 +216,9 @@ RECOMMENDATIONS = [
 
 
 def produce(*, smoke: bool = False, allow_cloud_smoke: bool = False) -> dict:
+    """Produce Origin of Turtles locally. ``allow_cloud_smoke`` is ignored."""
+    _ = allow_cloud_smoke
     ep = EPISODE
-    job_path = ROOT / "LOCAL_RENDER_JOB.json"
 
     gate = gate_production(
         job_id=ep["id"],
@@ -228,7 +232,6 @@ def produce(*, smoke: bool = False, allow_cloud_smoke: bool = False) -> dict:
         sources=SOURCES,
         render={"fps": 24, "smoke": smoke},
         job_output=ROOT / "RENDER_PACKAGE.json",
-        allow_cloud_smoke=allow_cloud_smoke,
         domain="Biology",
         subject=ep["title"],
         series=ep["series"],
@@ -237,7 +240,7 @@ def produce(*, smoke: bool = False, allow_cloud_smoke: bool = False) -> dict:
     if not gate.get("proceed"):
         return {
             **gate,
-            "ok": True,
+            "ok": False,
             "title": ep["title"],
             "demo_id": ep["demo_id"],
         }
@@ -288,6 +291,17 @@ def produce(*, smoke: bool = False, allow_cloud_smoke: bool = False) -> dict:
     )
     image_ids = collect_demo_image_ids(ep["demo_id"])
     reality_qc = evaluate_reality_export(image_ids=image_ids, demo_id=ep["demo_id"])
+    board_actions = [
+        {
+            "kind": a.kind,
+            "text": a.text,
+            "start": a.start,
+            "end": a.end,
+            "row": a.row,
+        }
+        for a in TURTLE_202_KEYWORDS
+    ]
+    write_win = write_window_from_plan(PLANS.get(ep["demo_id"]) or [], label="write")
     production = {
         "title": ep["title"],
         "demo_id": ep["demo_id"],
@@ -299,12 +313,9 @@ def produce(*, smoke: bool = False, allow_cloud_smoke: bool = False) -> dict:
         "qc": qc,
         "educational_review": edu.to_dict(),
         "framework": "generational_os_v2.5 + foundation_v2 + project_reality",
+        "board_actions": board_actions,
+        "write_gesture_window": write_win,
     }
-    foundation_gate = evaluate_foundation_export(
-        production,
-        script=production["script"],
-        educational=production["educational_review"],
-    )
     scores = score_foundation_v2(
         production=production,
         duration_sec=result.get("duration_sec"),
@@ -312,6 +323,7 @@ def produce(*, smoke: bool = False, allow_cloud_smoke: bool = False) -> dict:
         image_ids=image_ids,
     )
 
+    # Atomic export first — final QC / status must run against the destination MP4
     export_result = export_verified_production(
         episode,
         project_id=ep["id"],
@@ -328,33 +340,70 @@ def produce(*, smoke: bool = False, allow_cloud_smoke: bool = False) -> dict:
         keywords=["turtles", "evolution", "paleontology", "shell"],
         qc_score=scores.get("overall"),
         render_duration_sec=result.get("duration_sec"),
+        print_completion=False,
     )
     if not export_result.get("ok"):
         return {
             "ok": False,
+            "final_status": export_result.get("final_status") or "FAILED",
             "status": export_result.get("status"),
             "error": export_result.get("error") or "export verification failed",
+            "export_path": export_result.get("export_path"),
             "verification": export_result.get("verification"),
+            "completion": export_result.get("completion"),
         }
     export_path = Path(str(export_result["export_path"]))
     verify = export_result.get("verification") or {}
-    production["export_path"] = str(export_path)
-    production["path"] = str(export_path)
-    ok = (
-        bool(result.get("ok"))
-        and bool(qc.get("passed"))
-        and bool(verify.get("ok"))
-        and bool(reality_qc.passed)
+    production["export_path"] = str(export_path.resolve())
+    production["path"] = str(export_path.resolve())
+    production["export_bytes"] = int((verify.get("probe") or {}).get("bytes") or export_path.stat().st_size)
+    production["verification"] = verify
+    production["verify"] = {
+        "ok": bool(verify.get("ok")),
+        "has_audio": bool((verify.get("probe") or {}).get("has_audio")),
+        "has_video": bool((verify.get("probe") or {}).get("has_video")),
+        "bytes": production["export_bytes"],
+        "duration_sec": (verify.get("probe") or {}).get("duration_sec"),
+    }
+
+    # Final gate against destination file (never temp / never pre-export)
+    foundation_gate = evaluate_foundation_export(
+        production,
+        script=production["script"],
+        educational=production["educational_review"],
+    )
+
+    from services.generational_os.final_status import assign_final_status, print_completion_block
+
+    status_info = assign_final_status(
+        export_verified=bool(verify.get("ok")),
+        export_path=export_path,
+        hard_fails=list(foundation_gate.hard_fails or [])
+        + ([] if reality_qc.passed else list(reality_qc.hard_fails or ["reality_qc_failed"])),
+        warnings=list(foundation_gate.warnings or [])
+        + list(export_result.get("warnings") or []),
     )
     ctx = get_execution_context()
+    completion = print_completion_block(
+        final_status=status_info["final_status"],
+        export_path=export_path,
+        probe=verify.get("probe") or {},
+        warnings=status_info["warnings"],
+        hard_fails=status_info["hard_fails"],
+    )
     payload = {
-        "ok": ok,
-        "status": "export_verified" if ok else "verification_failed",
-        "message": "Video exported and verified on local Desktop." if ok else "Render completed but verification failed.",
+        "ok": status_info["ok"],
+        "final_status": status_info["final_status"],
+        "status": "export_verified" if status_info["ok"] else "verification_failed",
+        "message": (
+            "Video exported and verified on local Desktop."
+            if status_info["ok"]
+            else "Render completed but verification failed."
+        ),
         "execution_mode": ctx.mode.value,
         "os_version": "2.6",
         "domain_folder": export_result.get("domain_folder"),
-        "export_path": str(export_path),
+        "export_path": str(export_path.resolve()),
         "duration_sec": result.get("duration_sec"),
         "render_sec": round(time.time() - t0, 2),
         "qc": qc,
@@ -362,6 +411,9 @@ def produce(*, smoke: bool = False, allow_cloud_smoke: bool = False) -> dict:
         "foundation_gate": foundation_gate.to_dict(),
         "reality_qc": reality_qc.to_dict(),
         "scores": scores,
+        "warnings": status_info["warnings"],
+        "hard_fails": status_info["hard_fails"],
+        "completion": completion,
         "recommendations": RECOMMENDATIONS,
         "images_used": image_ids,
         "keyword_max_words": max(keyword_word_count(b["text"]) for b in ep["beats"]),
@@ -373,11 +425,8 @@ def produce(*, smoke: bool = False, allow_cloud_smoke: bool = False) -> dict:
 
 def main() -> int:
     smoke = "--smoke" in sys.argv
-    allow_cloud_smoke = "--allow-cloud-smoke" in sys.argv
-    payload = produce(smoke=smoke, allow_cloud_smoke=allow_cloud_smoke)
+    payload = produce(smoke=smoke)
     print(json.dumps(payload, indent=2))
-    if payload.get("status") == "awaiting_local_render":
-        return 0
     return 0 if payload.get("ok") else 1
 
 

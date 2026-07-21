@@ -1,0 +1,141 @@
+{
+  "world_id": "WORLD-DNA_INTERIOR",
+  "world_type": "DNA Interior",
+  "name": "DNA Interior",
+  "theme": "genetic architecture",
+  "scale": "molecular",
+  "historical_accuracy": 70,
+  "environment": {
+    "description": "Monumental DNA helix corridor with glowing base-pair rungs and molecular fog",
+    "continuity_key": "WORLD-DNA_INTERIOR",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "scientific rim + neon pair practicals",
+    "consistent_key": true
+  },
+  "architecture": [
+    "double helix rails",
+    "base-pair bridges"
+  ],
+  "weather": "molecular_haze",
+  "objects": [
+    {
+      "object_id": "obj_base_pair_rung",
+      "name": "base_pair_rung",
+      "surface": "helix",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.4
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_enzyme_motif",
+      "name": "enzyme_motif",
+      "surface": "helix",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.45,
+        "y": 0.55,
+        "z": 0.35
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [],
+  "background_animations": [
+    "helix slow rotate",
+    "charge sparkles along rails"
+  ],
+  "sound_ambience": [
+    "harmonic drone",
+    "soft click sequencing"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.0,
+    "max_height": 10.0,
+    "min_distance": 0.2,
+    "max_distance": 20.0
+  },
+  "color_palette": {
+    "family": "lab",
+    "primary": "#0B1D36",
+    "accent": "#E63946",
+    "pair": "#457B9D"
+  },
+  "lighting_presets": [
+    {
+      "id": "day_neutral",
+      "recipe": "bioluminescent helix key + soft bounce fill",
+      "mood": "neutral"
+    },
+    {
+      "id": "dramatic_rim",
+      "recipe": "bioluminescent helix key + hard rim + practical instrument glow",
+      "mood": "dramatic"
+    },
+    {
+      "id": "low_key_focus",
+      "recipe": "low-key with luminous subject isolation",
+      "mood": "focus"
+    },
+    {
+      "id": "bright_reveal",
+      "recipe": "bright key + lifted shadows for revelation",
+      "mood": "reveal"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "helix_flythrough",
+      "position": "axis",
+      "angle": "push_in",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "rung_orbit",
+      "position": "mid_helix",
+      "angle": "orbit",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "pair_macro",
+      "position": "rung_close",
+      "angle": "macro",
+      "lens_hint": "100mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "replication_fork",
+      "region": "mid"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "uncoil",
+      "to_compatible": [
+        "Human Cell",
+        "Science Lab",
+        "Research Center"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.158883+00:00"
+}

@@ -1,0 +1,137 @@
+{
+  "world_id": "WORLD-OUTER_SPACE",
+  "world_type": "Outer Space",
+  "name": "Outer Space",
+  "theme": "cosmic scale",
+  "scale": "orbital",
+  "historical_accuracy": 70,
+  "environment": {
+    "description": "Deep space field with nebula gradients, distant stars, and a framed planetary body",
+    "continuity_key": "WORLD-OUTER_SPACE",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "low-key with luminous subject isolation",
+    "consistent_key": true
+  },
+  "architecture": [
+    "orbital frame",
+    "station gantry silhouette"
+  ],
+  "weather": "vacuum",
+  "objects": [
+    {
+      "object_id": "obj_observation_module",
+      "name": "observation_module",
+      "surface": "orbit_plane",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.4
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_satellite",
+      "name": "satellite",
+      "surface": "orbit_plane",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.7,
+        "y": 0.6,
+        "z": 0.3
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [],
+  "background_animations": [
+    "starfield parallax",
+    "nebula drift",
+    "solar flare pulse"
+  ],
+  "sound_ambience": [
+    "low thruster rumble",
+    "radio static wash"
+  ],
+  "camera_boundaries": {
+    "min_height": -20.0,
+    "max_height": 20.0,
+    "min_distance": 2.0,
+    "max_distance": 200.0
+  },
+  "color_palette": {
+    "family": "space",
+    "primary": "#0A1628",
+    "accent": "#7B2CBF",
+    "highlight": "#E0AAFF"
+  },
+  "lighting_presets": [
+    {
+      "id": "cosmic",
+      "recipe": "cosmic low-key + rim on craft",
+      "mood": "awe"
+    },
+    {
+      "id": "sunlit",
+      "recipe": "hard solar key + deep black falloff",
+      "mood": "clarity"
+    },
+    {
+      "id": "nebula_glow",
+      "recipe": "magenta/cyan nebula fill",
+      "mood": "wonder"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "void_wide",
+      "position": "external",
+      "angle": "establishing",
+      "lens_hint": "14mm"
+    },
+    {
+      "id": "craft_orbit",
+      "position": "orbit_path",
+      "angle": "orbit",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "porthole",
+      "position": "viewport",
+      "angle": "internal",
+      "lens_hint": "50mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "void_drift",
+      "region": "open_space"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "airlock",
+      "to_compatible": [
+        "Mars Colony",
+        "Solar System",
+        "AI Laboratory"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.157788+00:00"
+}

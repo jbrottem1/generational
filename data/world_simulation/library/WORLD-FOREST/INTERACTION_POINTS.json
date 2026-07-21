@@ -1,0 +1,196 @@
+{
+  "world_id": "WORLD-FOREST",
+  "points": [
+    {
+      "id": "interact_furn_fallen_log_bench_0",
+      "target_id": "furn_fallen_log_bench_0",
+      "target_type": "bench",
+      "position": [
+        -10.0,
+        0.0,
+        -6.0
+      ],
+      "actions": [
+        "sit",
+        "stand"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_prop_moss_rock_0",
+      "target_id": "prop_moss_rock_0",
+      "target_type": "moss_rock",
+      "position": [
+        -10.0,
+        0.0,
+        -4.8
+      ],
+      "actions": [
+        "inspect",
+        "approach"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_prop_trail_marker_1",
+      "target_id": "prop_trail_marker_1",
+      "target_type": "trail_marker",
+      "position": [
+        -2.0,
+        0.0,
+        -4.8
+      ],
+      "actions": [
+        "inspect",
+        "approach"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_door_main",
+      "target_id": "door_main",
+      "target_type": "door",
+      "position": [
+        0.0,
+        0.0,
+        -19.9
+      ],
+      "actions": [
+        "open",
+        "close",
+        "enter",
+        "exit"
+      ],
+      "approach_radius_m": 0.8,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_virtual_chair",
+      "target_id": "virtual_chair",
+      "target_type": "chair",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actions": [
+        "sit",
+        "stand"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true,
+      "virtual_until_dressed": true
+    },
+    {
+      "id": "interact_virtual_desk",
+      "target_id": "virtual_desk",
+      "target_type": "desk",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actions": [
+        "lean",
+        "write",
+        "place_object"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true,
+      "virtual_until_dressed": true
+    },
+    {
+      "id": "interact_virtual_microscope",
+      "target_id": "virtual_microscope",
+      "target_type": "microscope",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actions": [
+        "inspect",
+        "adjust",
+        "point"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true,
+      "virtual_until_dressed": true
+    },
+    {
+      "id": "interact_virtual_whiteboard",
+      "target_id": "virtual_whiteboard",
+      "target_type": "whiteboard",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actions": [
+        "write",
+        "erase",
+        "present"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true,
+      "virtual_until_dressed": true
+    }
+  ],
+  "count": 8,
+  "action_catalog": {
+    "chair": [
+      "sit",
+      "stand"
+    ],
+    "desk": [
+      "lean",
+      "write",
+      "place_object"
+    ],
+    "microscope": [
+      "inspect",
+      "adjust",
+      "point"
+    ],
+    "whiteboard": [
+      "write",
+      "erase",
+      "present"
+    ],
+    "door": [
+      "open",
+      "close",
+      "enter",
+      "exit"
+    ],
+    "hologram": [
+      "point",
+      "gesture",
+      "explain"
+    ],
+    "console": [
+      "type",
+      "touch",
+      "lean"
+    ],
+    "bookshelf": [
+      "browse",
+      "take_book",
+      "place_book"
+    ],
+    "bench": [
+      "sit",
+      "stand"
+    ],
+    "exhibit": [
+      "inspect",
+      "point",
+      "activate"
+    ]
+  },
+  "every_prop_advertises_interactions": true,
+  "forbid_non_interactive_set_dressing_as_primary": true
+}

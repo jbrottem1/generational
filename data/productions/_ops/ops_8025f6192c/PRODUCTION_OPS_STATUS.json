@@ -1,0 +1,358 @@
+{
+  "schema_version": "1.0",
+  "production_id": "ops_8025f6192c",
+  "brief": {
+    "topic": "Platform validation for tiktok",
+    "platform": "tiktok",
+    "length_sec": 45,
+    "style": "educational",
+    "narrator": "professor",
+    "voice": "default",
+    "quality_target": 90.0,
+    "constraints": {},
+    "command": "",
+    "raw": {}
+  },
+  "current_stage": "export",
+  "current_agent": "export_and_validate",
+  "overall_progress_pct": 100,
+  "elapsed_ms": 13198,
+  "eta_ms": null,
+  "overall_status": "succeeded",
+  "pipeline_health": "degraded",
+  "warnings": [
+    "animation unavailable \u2014 continued",
+    "studio_render failed after retries \u2014 production continued",
+    "mp4_not_yet_materialized \u2014 metadata package exported for smoke/plan modes"
+  ],
+  "retry_count": 1,
+  "quality_scores": {
+    "research": 95.0,
+    "psychology": 100.0,
+    "studio_director": 100.0,
+    "script_generator": 100.0,
+    "scene_builder": 100.0,
+    "media_collection": 100.0,
+    "animation": 100.0,
+    "voice_generation": 100.0,
+    "music_sound": 85.0,
+    "captions": 100.0,
+    "rendering": 100.0,
+    "viewer_retention": 100.0,
+    "optimization_lab": 100.0,
+    "quality_assurance": 100.0,
+    "seo_package": 100.0,
+    "export": 80.0
+  },
+  "current_files": [
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Platform_validation_for_tiktok_ops_8025f6192c",
+    "data/renders/3f54efb759b1/the-hidden-truth-platform-validation-for-tiktok-in-a-educati_1080x1920.mp4",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Platform_validation_for_tiktok_ops_8025f6192c/captions.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Platform_validation_for_tiktok_ops_8025f6192c/description.txt",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Platform_validation_for_tiktok_ops_8025f6192c/seo_metadata.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Platform_validation_for_tiktok_ops_8025f6192c/thumbnail_plan.json"
+  ],
+  "started_at": "2026-07-13T23:46:55.170473+00:00",
+  "finished_at": "2026-07-13T23:47:08.369474+00:00",
+  "stages": [
+    {
+      "key": "research",
+      "label": "Research Engine",
+      "engines": [
+        "research",
+        "ideation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:46:55.171240+00:00",
+      "end_time": "2026-07-13T23:46:55.231034+00:00",
+      "duration_ms": 58,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "research"
+    },
+    {
+      "key": "psychology",
+      "label": "Psychology Engine",
+      "engines": [
+        "psychology"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:46:55.231821+00:00",
+      "end_time": "2026-07-13T23:46:55.240790+00:00",
+      "duration_ms": 7,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "psychology"
+    },
+    {
+      "key": "studio_director",
+      "label": "AI Studio Director",
+      "engines": [
+        "ai_director"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:46:55.241529+00:00",
+      "end_time": "2026-07-13T23:46:55.436252+00:00",
+      "duration_ms": 193,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "ai_director"
+    },
+    {
+      "key": "script_generator",
+      "label": "Script Generator",
+      "engines": [
+        "script_generation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:46:55.437020+00:00",
+      "end_time": "2026-07-13T23:46:55.506305+00:00",
+      "duration_ms": 68,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "script_generation"
+    },
+    {
+      "key": "scene_builder",
+      "label": "Scene Builder",
+      "engines": [
+        "visual_intelligence",
+        "scene_planning",
+        "visual_planning"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:46:55.507117+00:00",
+      "end_time": "2026-07-13T23:46:55.566611+00:00",
+      "duration_ms": 56,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "visual_intelligence"
+    },
+    {
+      "key": "media_collection",
+      "label": "Media Collection",
+      "engines": [
+        "evidence_intelligence",
+        "image",
+        "asset_manager"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:46:55.567430+00:00",
+      "end_time": "2026-07-13T23:47:03.705475+00:00",
+      "duration_ms": 8134,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "evidence_intelligence"
+    },
+    {
+      "key": "animation",
+      "label": "Animation / Motion Graphics",
+      "engines": [
+        "cinematography",
+        "animation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:47:03.706329+00:00",
+      "end_time": "2026-07-13T23:47:03.756620+00:00",
+      "duration_ms": 49,
+      "warnings": [
+        "animation unavailable \u2014 continued"
+      ],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "cinematography"
+    },
+    {
+      "key": "voice_generation",
+      "label": "Voice Generation",
+      "engines": [
+        "voice_audio",
+        "narration",
+        "voice"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:47:03.757492+00:00",
+      "end_time": "2026-07-13T23:47:07.337785+00:00",
+      "duration_ms": 3577,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "voice_audio"
+    },
+    {
+      "key": "music_sound",
+      "label": "Music & Sound Design",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:47:07.338656+00:00",
+      "end_time": "2026-07-13T23:47:07.339743+00:00",
+      "duration_ms": 0,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 85.0,
+      "output_files": [],
+      "current_agent": "apply_music_direction"
+    },
+    {
+      "key": "captions",
+      "label": "Captions",
+      "engines": [
+        "subtitle"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:47:07.340513+00:00",
+      "end_time": "2026-07-13T23:47:07.355853+00:00",
+      "duration_ms": 14,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "subtitle"
+    },
+    {
+      "key": "rendering",
+      "label": "Rendering",
+      "engines": [
+        "timeline",
+        "render_package",
+        "studio_render",
+        "video"
+      ],
+      "status": "partial",
+      "start_time": "2026-07-13T23:47:07.356654+00:00",
+      "end_time": "2026-07-13T23:47:07.569173+00:00",
+      "duration_ms": 50,
+      "warnings": [
+        "studio_render failed after retries \u2014 production continued"
+      ],
+      "errors": [
+        "studio_render: 'str' object has no attribute 'get'"
+      ],
+      "retry_attempts": 1,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "timeline"
+    },
+    {
+      "key": "viewer_retention",
+      "label": "Viewer Retention Analysis",
+      "engines": [
+        "viewer_retention"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:47:07.570089+00:00",
+      "end_time": "2026-07-13T23:47:07.602981+00:00",
+      "duration_ms": 31,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "viewer_retention"
+    },
+    {
+      "key": "optimization_lab",
+      "label": "Optimization Lab",
+      "engines": [
+        "optimization_lab"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:47:07.603864+00:00",
+      "end_time": "2026-07-13T23:47:08.282588+00:00",
+      "duration_ms": 677,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "optimization_lab"
+    },
+    {
+      "key": "quality_assurance",
+      "label": "Quality Assurance",
+      "engines": [
+        "quality",
+        "production_qa"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:47:08.284895+00:00",
+      "end_time": "2026-07-13T23:47:08.298856+00:00",
+      "duration_ms": 12,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "quality"
+    },
+    {
+      "key": "seo_package",
+      "label": "SEO Package",
+      "engines": [
+        "seo",
+        "seo_optimization"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:47:08.300079+00:00",
+      "end_time": "2026-07-13T23:47:08.364321+00:00",
+      "duration_ms": 62,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "seo"
+    },
+    {
+      "key": "export",
+      "label": "Export",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:47:08.365250+00:00",
+      "end_time": "2026-07-13T23:47:08.368667+00:00",
+      "duration_ms": 2,
+      "warnings": [
+        "mp4_not_yet_materialized \u2014 metadata package exported for smoke/plan modes"
+      ],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 80.0,
+      "output_files": [
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Platform_validation_for_tiktok_ops_8025f6192c",
+        "data/renders/3f54efb759b1/the-hidden-truth-platform-validation-for-tiktok-in-a-educati_1080x1920.mp4",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Platform_validation_for_tiktok_ops_8025f6192c/captions.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Platform_validation_for_tiktok_ops_8025f6192c/description.txt",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Platform_validation_for_tiktok_ops_8025f6192c/seo_metadata.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Platform_validation_for_tiktok_ops_8025f6192c/thumbnail_plan.json"
+      ],
+      "current_agent": "export_and_validate"
+    }
+  ],
+  "updated_at": "2026-07-13T23:47:08.373972+00:00",
+  "success": true,
+  "validation_score": 97.5
+}

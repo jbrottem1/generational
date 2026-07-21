@@ -1,0 +1,31 @@
+{
+  "weather": "interior_climate",
+  "outdoor": false,
+  "wind": {
+    "enabled": false,
+    "affects": [
+      "hair",
+      "clothing",
+      "trees",
+      "grass",
+      "flags",
+      "paper"
+    ],
+    "base_strength": 0.05,
+    "gusts": false
+  },
+  "rain": {
+    "enabled": false,
+    "affects": [
+      "surfaces",
+      "clothing",
+      "puddles",
+      "footprints"
+    ],
+    "wetness": 0.0,
+    "puddles": false,
+    "footprints": false
+  },
+  "interior_air": true,
+  "particles_drift": true
+}

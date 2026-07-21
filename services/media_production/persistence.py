@@ -92,7 +92,91 @@ def persist_audio_payload(data: dict[str, Any], *, name: str = "voice") -> dict[
             out["path"] = local
             out["audio_url"] = url
             out["placeholder"] = False
+            return out
+
+    # Local-first recovery when TTS providers return no bytes (quota / demo).
+    local = _synthesize_local_fallback_audio(
+        text=str(out.get("text") or out.get("plain_text") or ""),
+        duration_sec=float(out.get("duration_sec") or 0),
+        name=name,
+    )
+    if local:
+        out["path"] = local
+        out["format"] = "mp3"
+        out["provider"] = out.get("provider") or "local_tts_fallback"
+        out["local_fallback"] = True
     return out
+
+
+def _synthesize_local_fallback_audio(*, text: str, duration_sec: float, name: str) -> str:
+    """macOS `say` → mp3, else ffmpeg tone sized to narration duration."""
+    import shutil
+    import subprocess
+    import tempfile
+
+    words = max(1, len((text or "").split()))
+    duration = float(duration_sec) if duration_sec and duration_sec > 0 else round(words / 2.5, 2)
+    duration = max(2.0, min(duration, 90.0))
+    ffmpeg = shutil.which("ffmpeg")
+    folder = media_root() / "voice"
+    folder.mkdir(parents=True, exist_ok=True)
+    digest = content_hash((text or f"silence:{duration}").encode("utf-8"))
+    out = folder / f"{_safe_slug(name)}_{digest}_local.mp3"
+    if out.exists() and out.stat().st_size > 200:
+        try:
+            return str(out.relative_to(ROOT))
+        except ValueError:
+            return str(out)
+
+    try:
+        say = shutil.which("say")
+        if say and (text or "").strip():
+            with tempfile.TemporaryDirectory() as tmp:
+                aiff = Path(tmp) / "narration.aiff"
+                proc = subprocess.run(
+                    [say, "-o", str(aiff), text.strip()[:2500]],
+                    capture_output=True,
+                    text=True,
+                    timeout=120,
+                    check=False,
+                )
+                if proc.returncode == 0 and aiff.exists() and ffmpeg:
+                    enc = subprocess.run(
+                        [ffmpeg, "-y", "-i", str(aiff), "-codec:a", "libmp3lame", "-q:a", "4", str(out)],
+                        capture_output=True,
+                        text=True,
+                        timeout=120,
+                        check=False,
+                    )
+                    if enc.returncode == 0 and out.exists() and out.stat().st_size > 200:
+                        try:
+                            return str(out.relative_to(ROOT))
+                        except ValueError:
+                            return str(out)
+        if ffmpeg:
+            enc = subprocess.run(
+                [
+                    ffmpeg, "-y",
+                    "-f", "lavfi",
+                    "-i", f"sine=frequency=180:duration={duration}",
+                    "-af", "volume=0.15",
+                    "-codec:a", "libmp3lame",
+                    "-q:a", "6",
+                    str(out),
+                ],
+                capture_output=True,
+                text=True,
+                timeout=60,
+                check=False,
+            )
+            if enc.returncode == 0 and out.exists() and out.stat().st_size > 200:
+                try:
+                    return str(out.relative_to(ROOT))
+                except ValueError:
+                    return str(out)
+    except Exception as exc:  # noqa: BLE001
+        logger.warning("media.local_tts_fallback_failed | error=%s", exc)
+    return ""
 
 
 def persist_image_payload(data: dict[str, Any], *, name: str = "image") -> dict[str, Any]:

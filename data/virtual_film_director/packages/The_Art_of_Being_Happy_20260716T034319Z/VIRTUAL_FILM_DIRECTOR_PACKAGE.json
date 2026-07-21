@@ -1,0 +1,448 @@
+{
+  "package_type": "VIRTUAL_FILM_DIRECTOR_PACKAGE",
+  "package_version": "1.0.0",
+  "engine_label": "Virtual Film Director",
+  "generated_at": "2026-07-16T03:43:19.962115+00:00",
+  "topic": "The Art of Being Happy",
+  "production_id": "",
+  "shot_plan": [
+    {
+      "scene_number": 1,
+      "scene_id": "scene_00",
+      "scene_objective": "Advance hook: establish audience investment in sunrise_city_overlook",
+      "primary_subject": "sunrise_city_overlook",
+      "camera_angle": "eye_level",
+      "lens_style": "portrait_50mm",
+      "shot_size": "establishing_wide",
+      "shot_language": "reveal_shot",
+      "camera_movement": "reveal_shot",
+      "camera_begin": "Open in a framed read of sunrise_city_overlook matching reveal_shot",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=curiosity",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "city",
+        "ambient_motion": [
+          "traffic_band",
+          "window_glow",
+          "weather",
+          "pedestrian_life"
+        ],
+        "dramatic_response": [],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "soft_daylight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "hard_cut",
+      "emotional_beat": "curiosity",
+      "emotion": "curiosity",
+      "educational_goal": "The greatest secret about happiness...",
+      "estimated_duration_sec": 4.0,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Advance hook: establish audience investment in sunrise_city_overlook",
+          "what_viewer_learns": "The greatest secret about happiness...",
+          "emotion_to_feel": "curiosity",
+          "notice_first": "Primary subject first \u2014 sunrise_city_overlook \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of sunrise_city_overlook matching reveal_shot",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=curiosity",
+          "cinematic_payoff": "Muted viewer still understands: The greatest secret about happiness..."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: The greatest secret about happiness...",
+      "muted_story_test": "Muted viewer still understands: The greatest secret about happiness...",
+      "notice_first": "Primary subject first \u2014 sunrise_city_overlook \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "reveal",
+        "ae_camera_move": "reveal",
+        "shot_size": "establishing_wide",
+        "emotion": "curiosity",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Advance hook: establish audience investment in sunrise_city_overlook"
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": true,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 2,
+      "scene_id": "scene_01",
+      "scene_objective": "Demonstrate the idea so learning sticks: ...is that it isn't something you find...",
+      "primary_subject": "park_path",
+      "camera_angle": "low_angle_hero",
+      "lens_style": "portrait_50mm",
+      "shot_size": "dynamic_medium",
+      "shot_language": "medium_dialogue",
+      "camera_movement": "medium_dialogue",
+      "camera_begin": "Open in a framed read of park_path matching medium_dialogue",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "city",
+        "ambient_motion": [
+          "traffic_band",
+          "window_glow",
+          "weather",
+          "pedestrian_life"
+        ],
+        "dramatic_response": [],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "soft_daylight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "explanation",
+      "emotion": "clarity",
+      "educational_goal": "...is that it isn't something you find...",
+      "estimated_duration_sec": 4.5,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Demonstrate the idea so learning sticks: ...is that it isn't something you find...",
+          "what_viewer_learns": "...is that it isn't something you find...",
+          "emotion_to_feel": "clarity",
+          "notice_first": "Primary subject first \u2014 park_path \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of park_path matching medium_dialogue",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+          "cinematic_payoff": "Muted viewer still understands: ...is that it isn't something you find..."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: ...is that it isn't something you find...",
+      "muted_story_test": "Muted viewer still understands: ...is that it isn't something you find...",
+      "notice_first": "Primary subject first \u2014 park_path \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "slow_cinematic_push",
+        "shot_size": "dynamic_medium",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: ...is that it isn't something you find..."
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": true,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 3,
+      "scene_id": "scene_02",
+      "scene_objective": "Demonstrate the idea so learning sticks: ...it's something you create...",
+      "primary_subject": "helping_hand",
+      "camera_angle": "low_angle_hero",
+      "lens_style": "portrait_50mm",
+      "shot_size": "dynamic_medium",
+      "shot_language": "push_in",
+      "camera_movement": "push_in",
+      "camera_begin": "Open in a framed read of helping_hand matching push_in",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "city",
+        "ambient_motion": [
+          "traffic_band",
+          "window_glow",
+          "weather",
+          "pedestrian_life"
+        ],
+        "dramatic_response": [],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "soft_daylight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "wonder",
+      "emotion": "clarity",
+      "educational_goal": "...it's something you create...",
+      "estimated_duration_sec": 4.0,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Demonstrate the idea so learning sticks: ...it's something you create...",
+          "what_viewer_learns": "...it's something you create...",
+          "emotion_to_feel": "clarity",
+          "notice_first": "Primary subject first \u2014 helping_hand \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of helping_hand matching push_in",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+          "cinematic_payoff": "Muted viewer still understands: ...it's something you create..."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: ...it's something you create...",
+      "muted_story_test": "Muted viewer still understands: ...it's something you create...",
+      "notice_first": "Primary subject first \u2014 helping_hand \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "slow_cinematic_push",
+        "shot_size": "dynamic_medium",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: ...it's something you create..."
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": true,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 4,
+      "scene_id": "scene_03",
+      "scene_objective": "Deliver the takeaway on doctor_eyes",
+      "primary_subject": "doctor_eyes",
+      "camera_angle": "low_angle_hero",
+      "lens_style": "anamorphic_feel",
+      "shot_size": "hero_low_angle",
+      "shot_language": "hero_shot",
+      "camera_movement": "hero_shot",
+      "camera_begin": "Open in a framed read of doctor_eyes matching hero_shot",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+      "character_blocking": {
+        "enabled": true,
+        "characters": [
+          {
+            "name": "doctor",
+            "kind": "character",
+            "source": "keyword"
+          }
+        ],
+        "blocking": "primary subject holds rule-of-thirds; secondary clears look-space",
+        "performance": {
+          "eye_movement": "track subject of narration",
+          "facial_expression": "clarity",
+          "body_language": "weight_shift + posture settle",
+          "walking_speed": "measured",
+          "gestures": "point_or_demonstrate when teaching",
+          "reaction_timing": "anticipate beat then settle",
+          "cloth_hair": "subtle wind response"
+        },
+        "forbid_mannequin": true
+      },
+      "environmental_motion": {
+        "environment": "city",
+        "ambient_motion": [
+          "traffic_band",
+          "window_glow",
+          "weather",
+          "pedestrian_life"
+        ],
+        "dramatic_response": [
+          "wind_increase",
+          "lighting_shift",
+          "fog_clear_on_reveal"
+        ],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "soft_daylight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "payoff",
+      "emotion": "clarity",
+      "educational_goal": "...through the choices you make every single day.",
+      "estimated_duration_sec": 4.5,
+      "animation_priority": [
+        "character_performance",
+        "environment_life",
+        "camera_storytelling",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Deliver the takeaway on doctor_eyes",
+          "what_viewer_learns": "...through the choices you make every single day.",
+          "emotion_to_feel": "clarity",
+          "notice_first": "Primary subject first \u2014 doctor_eyes \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of doctor_eyes matching hero_shot",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+          "cinematic_payoff": "Muted viewer still understands: ...through the choices you make every single day."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: ...through the choices you make every single day.",
+      "muted_story_test": "Muted viewer still understands: ...through the choices you make every single day.",
+      "notice_first": "Primary subject first \u2014 doctor_eyes \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "hero_low_angle_push",
+        "shot_size": "hero_low_angle",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Deliver the takeaway on doctor_eyes"
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": true,
+        "negative_space": true,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    }
+  ],
+  "emotional_timeline": {
+    "total_duration_sec": 17.0,
+    "beats": [
+      {
+        "scene_number": 1,
+        "start_sec": 0.0,
+        "end_sec": 4.0,
+        "emotional_beat": "curiosity",
+        "emotion": "curiosity",
+        "lighting_mood": "soft_daylight",
+        "shot_language": "reveal_shot"
+      },
+      {
+        "scene_number": 2,
+        "start_sec": 4.0,
+        "end_sec": 8.5,
+        "emotional_beat": "explanation",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "shot_language": "medium_dialogue"
+      },
+      {
+        "scene_number": 3,
+        "start_sec": 8.5,
+        "end_sec": 12.5,
+        "emotional_beat": "wonder",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "shot_language": "push_in"
+      },
+      {
+        "scene_number": 4,
+        "start_sec": 12.5,
+        "end_sec": 17.0,
+        "emotional_beat": "payoff",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "shot_language": "hero_shot"
+      }
+    ],
+    "rhythm": [
+      "curiosity",
+      "explanation",
+      "wonder",
+      "payoff"
+    ],
+    "avoids_flatness": true
+  },
+  "director_review": {
+    "approved": true,
+    "decision": "APPROVE",
+    "failures": [],
+    "warnings": [],
+    "rewrite_scenes": [],
+    "questions": {
+      "professional_director_would_approve": true,
+      "every_scene_has_purpose": true,
+      "every_camera_communicates": true,
+      "pacing_feels_cinematic": true,
+      "visuals_alone_engaging": true
+    },
+    "metrics": {
+      "shot_count": 4,
+      "unique_shot_languages": 4,
+      "unique_emotional_beats": 4,
+      "known_shot_language_rate": 1.0
+    },
+    "rewritten": false
+  },
+  "philosophy": {
+    "directs_before_animates": true,
+    "animation_executes": true,
+    "no_new_renderer": true,
+    "no_pipeline_redesign": true,
+    "muted_story_test": true
+  },
+  "summary": {
+    "shot_count": 4,
+    "director_decision": "APPROVE",
+    "approved": true,
+    "emotional_rhythm": [
+      "curiosity",
+      "explanation",
+      "wonder",
+      "payoff"
+    ],
+    "rewrite_scenes": []
+  },
+  "artifacts": {
+    "SHOT_PLAN.json": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/The_Art_of_Being_Happy_20260716T034319Z/SHOT_PLAN.json",
+    "DIRECTOR_NOTES.md": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/The_Art_of_Being_Happy_20260716T034319Z/DIRECTOR_NOTES.md",
+    "CAMERA_SCRIPT.md": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/The_Art_of_Being_Happy_20260716T034319Z/CAMERA_SCRIPT.md",
+    "EMOTIONAL_TIMELINE.json": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/The_Art_of_Being_Happy_20260716T034319Z/EMOTIONAL_TIMELINE.json",
+    "VISUAL_STORYBOARD.md": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/The_Art_of_Being_Happy_20260716T034319Z/VISUAL_STORYBOARD.md",
+    "VIRTUAL_FILM_DIRECTOR_PACKAGE.json": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/The_Art_of_Being_Happy_20260716T034319Z/VIRTUAL_FILM_DIRECTOR_PACKAGE.json"
+  },
+  "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/The_Art_of_Being_Happy_20260716T034319Z/VIRTUAL_FILM_DIRECTOR_PACKAGE.json",
+  "out_dir": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/The_Art_of_Being_Happy_20260716T034319Z"
+}

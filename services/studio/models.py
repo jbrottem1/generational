@@ -36,12 +36,12 @@ STUDIO_PLATFORMS = [
 ]
 
 STUDIO_EXAMPLE_PROMPTS = [
+    "Create a 60 second YouTube Short explaining why cameras can see infrared.",
+    "Create a 12 minute documentary about black holes.",
+    "Create a TikTok about how seasons work",
     "Create a 12 minute documentary about ocean conservation",
     "Create ten TikTok videos about productivity hacks",
     "Generate a podcast series on startup psychology",
-    "Build a complete YouTube channel about space exploration",
-    "Produce an educational course on machine learning basics",
-    "Create a multi-platform marketing campaign for a SaaS product",
 ]
 
 DEFAULT_STUDIO_SETTINGS = {

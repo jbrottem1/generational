@@ -161,6 +161,40 @@ def run_learning(context: dict, memory: "HistoricalMemory | None" = None) -> dic
     recommendations = build_recommendations(insights)
     memory_added = grow_memory(insights, memory=memory) if insights else 0
 
+    # Permanent production archive + knowledge graph expansion
+    from services.learning.graph import get_knowledge_graph
+    from services.learning.productions import record_productions_from_context
+
+    saved = record_productions_from_context(
+        context,
+        pipeline_used=str(context.get("pipeline_used") or context.get("workflow") or "intelligence"),
+        run_id=str(context.get("executive_run_id") or context.get("run_id") or ""),
+    )
+    graph = get_knowledge_graph()
+    for prod in saved:
+        graph.expand_from_production(prod)
+    for insight in insights[:40]:
+        graph.expand_from_insight(insight)
+
+    # Bridge PQA predicted vs actual when analytics metrics exist
+    try:
+        from services.production_qa.learning import record_performance_feedback
+
+        for item in (
+            context.get("selected_ideas")
+            or context.get("ideas")
+            or context.get("candidates")
+            or []
+        ):
+            if not isinstance(item, dict):
+                continue
+            idea_id = str(item.get("id") or item.get("idea_id") or "")
+            metrics = item.get("analytics_metrics") or (item.get("analytics_package") or {}).get("metrics")
+            if idea_id and isinstance(metrics, dict) and metrics:
+                record_performance_feedback(idea_id, metrics, persist=True)
+    except Exception:
+        pass
+
     items, source_key = collect_learning_items(context)
     for item in items:
         item["learning_metadata"] = build_learning_metadata(
@@ -177,6 +211,8 @@ def run_learning(context: dict, memory: "HistoricalMemory | None" = None) -> dic
         "recommendations": recommendations,
         "platform_breakdown": platform_breakdown(records),
         "memory_entries_added": memory_added,
+        "productions_recorded": len(saved),
+        "knowledge_graph": graph.snapshot(),
         "confidence": int(round(sum(confidences) / len(confidences))) if confidences else 0,
         "generated_at": _now_iso(),
     }
@@ -185,12 +221,14 @@ def run_learning(context: dict, memory: "HistoricalMemory | None" = None) -> dic
         logger, "learning.completed",
         records=len(records), insights=len(insights),
         recommendations=len(recommendations), memory_added=memory_added,
+        productions=len(saved),
         items=len(items), source=source_key or "none",
     )
 
     updates = {
         "learning_report": report,
         "learning_recommendations": recommendations_by_engine(recommendations),
+        "production_memory_count": len(saved),
     }
     if source_key:
         updates[source_key] = context.get(source_key, [])

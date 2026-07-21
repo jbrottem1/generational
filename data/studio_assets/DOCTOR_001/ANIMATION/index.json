@@ -1,0 +1,32 @@
+{
+  "clips": {
+    "idle": "idle.json",
+    "breathing": "breathing.json",
+    "blinking": "blinking.json",
+    "walking_cycle": "walking_cycle.json",
+    "running_cycle": "running_cycle.json",
+    "talking": "talking.json",
+    "pointing": "pointing.json",
+    "teaching": "teaching.json",
+    "listening": "listening.json",
+    "turning": "turning.json",
+    "stopping": "stopping.json",
+    "greeting": "greeting.json",
+    "explaining": "explaining.json",
+    "looking_around": "looking_around.json",
+    "picking_up_objects": "picking_up_objects.json",
+    "interacting_with_equipment": "interacting_with_equipment.json",
+    "holding_medical_scanner": "holding_medical_scanner.json",
+    "using_holograms": "using_holograms.json",
+    "typing": "typing.json",
+    "reaction_curiosity": "reactions/reaction_curiosity.json",
+    "reaction_concern": "reactions/reaction_concern.json",
+    "reaction_delight": "reactions/reaction_delight.json",
+    "reaction_surprise": "reactions/reaction_surprise.json",
+    "reaction_compassion": "reactions/reaction_compassion.json",
+    "reaction_determination": "reactions/reaction_determination.json",
+    "reaction_amusement": "reactions/reaction_amusement.json",
+    "reaction_realization": "reactions/reaction_realization.json"
+  },
+  "count": 27
+}

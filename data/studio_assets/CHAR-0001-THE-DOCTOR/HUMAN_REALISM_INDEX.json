@@ -1,0 +1,20 @@
+{
+  "character_id": "CHAR-0001",
+  "framework_id": "HUMAN_REALISM_FRAMEWORK_V1",
+  "framework_version": "1.0.0",
+  "is_gold_standard": false,
+  "profiles": [
+    "CHARACTER_IDENTITY.json",
+    "SKELETON_PROFILE.json",
+    "MUSCLE_PROFILE.json",
+    "FACE_RIG_PROFILE.json",
+    "GAIT_PROFILE.json",
+    "GESTURE_LIBRARY.json",
+    "EMOTION_LIBRARY.json",
+    "HAIR_PROFILE.json",
+    "WARDROBE_PROFILE.json",
+    "ANIMATION_QUALITY_VALIDATION.json",
+    "RESOLVED_PACKAGE.json",
+    "CHARACTER_CONTINUITY_RULES.md"
+  ]
+}

@@ -19,7 +19,7 @@ class LayerSpec:
     owner: str
     responsibilities: tuple[str, ...]
     output_artifact: str
-    runs_on: str  # cloud | local | both
+    runs_on: str  # local (production is local-first)
 
 
 LAYER_SPECS: tuple[LayerSpec, ...] = (
@@ -41,7 +41,7 @@ LAYER_SPECS: tuple[LayerSpec, ...] = (
             "Source validation",
         ),
         output_artifact="PRODUCTION_BRIEF.json",
-        runs_on="cloud",
+        runs_on="local",
     ),
     LayerSpec(
         layer=ExecutionLayer.PRE_PRODUCTION,
@@ -60,7 +60,7 @@ LAYER_SPECS: tuple[LayerSpec, ...] = (
             "Sound design planning",
         ),
         output_artifact="RENDER_PACKAGE.json",
-        runs_on="cloud",
+        runs_on="local",
     ),
     LayerSpec(
         layer=ExecutionLayer.LOCAL_PRODUCTION,

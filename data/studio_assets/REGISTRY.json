@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "universe": "Generational",
+  "assets": [
+    {
+      "id": "CHAR-0001",
+      "canonical_id": "DOCTOR_001",
+      "name": "The Doctor",
+      "slug": "DOCTOR_001",
+      "version": "1.1.0",
+      "status": "permanent",
+      "role": "Canonical Medical Educator",
+      "path": "data/studio_assets/DOCTOR_001/",
+      "home_world": "LOC-GMRI",
+      "flagship_science_educator": true,
+      "alias_of": "DOCTOR_001"
+    },
+    {
+      "id": "VOICE-0001",
+      "asset_number": "0001",
+      "name": "Founder Voice",
+      "slug": "VOICE-0001-FOUNDER-VOICE",
+      "version": "1.0.0",
+      "status": "permanent",
+      "role": "default_narrator",
+      "provider": "elevenlabs",
+      "path": "data/studio_assets/VOICE-0001-FOUNDER-VOICE/",
+      "default": true,
+      "flagship_default_voice": true,
+      "manifest": "VOICE_ASSET.json"
+    },
+    {
+      "id": "DOCTOR_001",
+      "legacy_alias": "CHAR-0001",
+      "asset_number": "0001",
+      "name": "The Doctor",
+      "slug": "DOCTOR_001",
+      "version": "1.1.0",
+      "status": "permanent",
+      "role": "Canonical Medical Educator",
+      "path": "data/studio_assets/DOCTOR_001/",
+      "home_world": "LOC-GMRI",
+      "flagship_science_educator": true,
+      "manifest": "MANIFEST.json",
+      "package_type": "GENERATIONAL_STUDIO_CHARACTER",
+      "character_rig": true,
+      "character_rig_ref": "data/studio_assets/DOCTOR_001/CHARACTER_RIG/CHARACTER_RIG_PACKAGE.json",
+      "permanent_digital_actor": true
+    },
+    {
+      "id": "FOUNDER_001",
+      "name": "The Founder",
+      "slug": "FOUNDER_001",
+      "version": "1.0.0",
+      "status": "permanent",
+      "role": "inspiration_traveler_host",
+      "path": "data/studio_assets/FOUNDER_001/",
+      "character_rig": true,
+      "character_rig_ref": "data/studio_assets/FOUNDER_001/CHARACTER_RIG/CHARACTER_RIG_PACKAGE.json",
+      "permanent_digital_actor": true,
+      "package_type": "CHARACTER_RIG_PACKAGE"
+    }
+  ],
+  "flagship_science_educator": "DOCTOR_001",
+  "flagship_default_voice": "VOICE-0001"
+}

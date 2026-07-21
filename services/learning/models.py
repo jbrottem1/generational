@@ -24,6 +24,8 @@ PATTERN_DIMENSIONS = (
     "length_bucket",
     "title",
     "keyword",
+    "camera_movement",
+    "evidence_modality",
 )
 
 # One mined pattern — "content with this attribute performs like this".
@@ -59,23 +61,33 @@ TARGET_ENGINES = (
     "visual_intelligence",
     "voice_audio",
     "seo_optimization",
+    "seo",
     "publishing",
     "trend_discovery",
+    "discovery",
+    "evidence_intelligence",
+    "cinematography",
+    "viewer_retention",
+    "studio_render",
+    "optimization_lab",
+    "audience_intelligence",
 )
 
 # dimension → engines whose next-generation output should absorb it.
 DIMENSION_TARGETS = {
-    "hook": ("script_generation", "psychology"),
-    "psychology_strategy": ("psychology",),
-    "thumbnail_version": ("visual_intelligence", "seo_optimization"),
+    "hook": ("script_generation", "psychology", "viewer_retention"),
+    "psychology_strategy": ("psychology", "audience_intelligence", "viewer_retention"),
+    "thumbnail_version": ("visual_intelligence", "seo_optimization", "seo"),
     "voice_version": ("voice_audio",),
-    "posting_hour": ("publishing", "seo_optimization"),
-    "platform": ("publishing", "seo_optimization"),
-    "topic": ("trend_discovery", "script_generation"),
-    "niche": ("trend_discovery",),
-    "length_bucket": ("script_generation", "voice_audio"),
-    "title": ("seo_optimization",),
-    "keyword": ("seo_optimization",),
+    "posting_hour": ("publishing", "seo_optimization", "seo"),
+    "platform": ("publishing", "seo_optimization", "seo"),
+    "topic": ("trend_discovery", "discovery", "script_generation"),
+    "niche": ("trend_discovery", "discovery"),
+    "length_bucket": ("script_generation", "voice_audio", "cinematography", "viewer_retention"),
+    "title": ("seo_optimization", "seo"),
+    "keyword": ("seo_optimization", "seo"),
+    "camera_movement": ("cinematography", "viewer_retention", "visual_intelligence"),
+    "evidence_modality": ("evidence_intelligence", "visual_intelligence"),
 }
 
 # The ContentPackage `learning_metadata` slot (Agent 9's write zone).

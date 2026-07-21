@@ -642,6 +642,7 @@ def test_visual_intelligence_runs_after_attention_graph_and_before_voice_audio()
         assert (
             steps.index("script_generation")
             < steps.index("attention_graph")
+            < steps.index("evidence_intelligence")
             < steps.index("visual_intelligence")
             < steps.index("cinematography")
             < steps.index("voice_audio")

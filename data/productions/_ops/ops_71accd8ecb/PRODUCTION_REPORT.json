@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-07-14T00:28:14.228935+00:00",
+  "production_id": "ops_71accd8ecb",
+  "topic": "What Artificial Intelligence Actually Is",
+  "platform": "youtube_shorts",
+  "length_sec": 45,
+  "style": "educational",
+  "overall_quality_score": 98.0,
+  "quality_target": 98.0,
+  "hook_score": 100.0,
+  "narration_score": 87.0,
+  "visual_score": 93.1,
+  "animation_score": 98.0,
+  "audio_score": 86.0,
+  "caption_score": 88.0,
+  "educational_accuracy": 82.0,
+  "retention_prediction": 84.0,
+  "ctr_prediction": 7.5,
+  "completion_prediction": 86.0,
+  "shareability": 85.0,
+  "platform_readiness": false,
+  "export_validation": {
+    "video_exists": true,
+    "correct_duration": true,
+    "audio_synchronized": false,
+    "captions_burned_or_present": true,
+    "no_blank_frames": false,
+    "no_corrupt_media": false,
+    "no_missing_assets": true,
+    "target_resolution_met": true,
+    "frame_rate_correct": true,
+    "thumbnail_generated": true,
+    "metadata_generated": true,
+    "seo_generated": true,
+    "hard_fails": [
+      "missing_audio"
+    ],
+    "warnings": [],
+    "ok": false
+  },
+  "pipeline_health": "healthy",
+  "retry_count": 0,
+  "final_recommendation": "APPROVE_WITH_NOTES",
+  "stages_completed": 16,
+  "output_files": [
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Artificial_Intelligence_Actually_Is_ops_71accd8ecb",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/renders/48964ed33618/the-hidden-truth-what-artificial-intelligence-actually-is-in_1080x1920.mp4",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Artificial_Intelligence_Actually_Is_ops_71accd8ecb/captions.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Artificial_Intelligence_Actually_Is_ops_71accd8ecb/description.txt",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Artificial_Intelligence_Actually_Is_ops_71accd8ecb/seo_metadata.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Artificial_Intelligence_Actually_Is_ops_71accd8ecb/thumbnail_plan.json"
+  ]
+}

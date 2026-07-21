@@ -156,6 +156,24 @@ def _studio_context_extra(settings: dict, *, research_settings=None, project_nam
         extra["research_settings"] = research_settings
     if project_name:
         extra["project_name"] = project_name
+    # Always inject historical learning so the next video starts smarter
+    try:
+        from services.analytics.integration import learning_context_extra
+        from services.learning.consult import consult_context
+
+        topic = str(settings.get("topic") or project_name or "")
+        extra.update(learning_context_extra())
+        if topic:
+            extra.update(
+                consult_context(
+                    topic,
+                    niche=str(settings.get("target_audience") or ""),
+                    platform=str(platform),
+                    runtime_sec=int(settings.get("video_length_sec") or 60),
+                )
+            )
+    except Exception:
+        pass
     return extra
 
 
@@ -288,6 +306,55 @@ def run_studio_production(command: str, settings: dict, *, model: str = "gpt-4o-
     context_extra = _studio_context_extra(settings, research_settings=research_settings, project_name=project_name, threshold=threshold)
     run = get_workflow_executor().execute(command, config=config, context_extra=context_extra)
     return result_from_project_run(run, settings)
+
+
+def run_executive_production(
+    command: str,
+    settings: dict | None = None,
+    *,
+    plan_only: bool = False,
+    skip_publishing: bool = False,
+    publish_mode: str = "scheduled",
+    category: str = "science",
+) -> dict:
+    """One-command studio path via Executive Orchestrator."""
+    from services.executive_orchestrator import create_video, ensure_executive_handler
+
+    ensure_executive_handler()
+    settings = settings or {}
+    platform = str(settings.get("platform") or "")
+    extra = {}
+    if platform:
+        extra["target_platform"] = platform
+    result = create_video(
+        command,
+        category=category,
+        publish_mode=publish_mode,
+        plan_only=plan_only,
+        skip_publishing=skip_publishing,
+        context_extra=extra or None,
+    )
+    return {
+        "ok": result.get("status") == "completed",
+        "executive_run": result,
+        "ideas": [],
+        "command": command,
+        "demo_mode": True,
+        "pipeline_steps": [
+            {
+                "engine": stage.get("key"),
+                "status": stage.get("status"),
+                "error": stage.get("error") or "",
+            }
+            for stage in (result.get("stages") or {}).values()
+        ],
+        "quality_summary": {
+            "pqa_score": result.get("qa_score"),
+            "pqa_decision": result.get("qa_decision"),
+        },
+        "executive_export": result.get("export_paths"),
+        "error": result.get("error") or "",
+    }
 
 
 def submit_longform_job(command: str, settings: dict, *, model: str = "gpt-4o-mini", project_name: str = "", threshold: int = DEFAULT_PUBLISH_THRESHOLD, research_settings=None) -> dict:

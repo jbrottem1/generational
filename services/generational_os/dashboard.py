@@ -34,7 +34,7 @@ def _bucket(productions: list[dict[str, Any]], key: str, value: str) -> list[dic
     return [p for p in productions if p.get(key) == value]
 
 
-def build_operating_dashboard() -> dict[str, Any]:
+def build_operating_dashboard(*, include_genos: bool = True) -> dict[str, Any]:
     ctx = get_execution_context()
     productions = list_productions()
     qc_scores = [float(p["qc_score"]) for p in productions if p.get("qc_score") is not None]
@@ -46,20 +46,25 @@ def build_operating_dashboard() -> dict[str, Any]:
 
     verified = _bucket(productions, "local_render_status", "verified")
     failed = [p for p in productions if p.get("local_render_status") == "failed"]
-    awaiting = _bucket(productions, "local_render_status", "awaiting_local_render")
+    ready = _bucket(productions, "local_render_status", "ready_to_render")
+    # Historical cloud-handoff status still counted in the render queue
+    awaiting_legacy = _bucket(productions, "local_render_status", "awaiting_local_render")
+    render_queue = ready + awaiting_legacy
 
     dashboard = {
-        "schema_version": 1,
-        "os_version": "2.5",
+        "schema_version": 2,
+        "os_version": "2.6",
+        "policy": "local_first",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "execution_context": ctx.to_dict(),
         "queues": {
             "active_productions": len(productions),
             "research_queue": _bucket(productions, "pipeline_stage", "research"),
             "script_queue": _bucket(productions, "pipeline_stage", "script"),
-            "render_queue": awaiting,
+            "render_queue": render_queue,
             "local_render_status": {
-                "awaiting": len(awaiting),
+                "ready_to_render": len(ready),
+                "awaiting_legacy": len(awaiting_legacy),
                 "verified": len(verified),
                 "failed": len(failed),
             },
@@ -80,10 +85,49 @@ def build_operating_dashboard() -> dict[str, Any]:
             "asset_cache": _cache_health_inline(),
             "execution_mode": ctx.mode.value,
             "can_render_locally": ctx.can_render_media,
+            "canonical_export_dir": ctx.canonical_export_dir,
         },
         "improvements": analyze_improvements(productions),
         "productions": productions[:50],
     }
+    # GenOS board — optional to avoid recursion with build_system_state → dashboard
+    if include_genos:
+        try:
+            from services.generational_os.genos import build_genos_dashboard
+
+            dashboard["genos"] = build_genos_dashboard(publishing_enabled=False)
+            dashboard["os_version"] = "3.0-genos"
+        except Exception:  # noqa: BLE001
+            dashboard["genos"] = {"error": "unavailable"}
+    # Soft link to V1 Validation Program (composer — not a new engine)
+    try:
+        from services.validation_program.dashboard import build_executive_dashboard
+
+        val = build_executive_dashboard()
+        dashboard["validation_program"] = {
+            "videos_produced": val.get("videos_produced"),
+            "target_videos": val.get("target_videos"),
+            "average_program_score": val.get("average_program_score"),
+            "success_rate": val.get("success_rate"),
+            "highest_priority_improvement": val.get("highest_priority_improvement"),
+            "library_path": val.get("library_path"),
+        }
+    except Exception:  # noqa: BLE001
+        dashboard["validation_program"] = {"error": "unavailable"}
+    # Soft link to Multi-Channel Media OS
+    try:
+        from services.channel_os.dashboard import build_channel_dashboard
+
+        ch = build_channel_dashboard()
+        dashboard["channel_os"] = {
+            "active_channels": ch.get("active_channels"),
+            "videos_published": ch.get("videos_published"),
+            "average_creative_score": ch.get("average_creative_score"),
+            "channel_health": ch.get("channel_health"),
+            "estimated_revenue": ch.get("estimated_revenue"),
+        }
+    except Exception:  # noqa: BLE001
+        dashboard["channel_os"] = {"error": "unavailable"}
     return dashboard
 
 
@@ -102,7 +146,7 @@ def write_dashboard(path: Path | None = None) -> Path:
         "## Queues",
         "",
         f"- Active productions: **{dash['queues']['active_productions']}**",
-        f"- Awaiting local render: **{dash['queues']['local_render_status']['awaiting']}**",
+        f"- Ready to render: **{dash['queues']['local_render_status']['ready_to_render']}**",
         f"- Verified exports: **{dash['queues']['local_render_status']['verified']}**",
         f"- Ready for review: **{len(dash['queues']['ready_for_review'])}**",
         f"- Failed: **{len(dash['queues']['failed_productions'])}**",

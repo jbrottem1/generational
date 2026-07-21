@@ -21,8 +21,8 @@ blank page to fail on.
 
 from __future__ import annotations
 
-from engines.heuristics import content_words
-from services.scripts.hooks import generate_hook_candidates, rank_hooks
+from core.heuristics import content_words
+from services.scripts.hooks import choose_hook_strategy, generate_hook_candidates, rank_hooks
 from services.scripts.models import Locale, ScriptVariant
 from services.scripts.platforms import get_platform_spec
 from services.scripts.retention import build_retention_model
@@ -44,7 +44,7 @@ VARIANT_STYLES = [
         "loop": "In a moment you'll see the one detail about {subject} almost everyone misses. First, the setup.",
         "lens": "The experts saw this coming — the public version of the story just left it out.",
         "arc": ["curiosity", "tension", "revelation", "understanding", "resolve"],
-        "cta": "Follow for the next deep dive — tomorrow's video goes further into {subject}.",
+        "cta": "Share this with someone who still believes the myth — then follow for the next deep dive on {subject}.",
         "music": "cinematic tension build with a clean resolve",
         "sfx": ["whoosh on the opening cut", "deep sub-bass hit on the reveal", "soft riser under the payoff"],
     },
@@ -55,7 +55,7 @@ VARIANT_STYLES = [
         "loop": "Keep the last line of this story in mind, because it's the part that changes everything.",
         "lens": "Every detail of this story is real, and the people involved never expected it to matter.",
         "arc": ["intrigue", "empathy", "shock", "reflection", "connection"],
-        "cta": "Share this with someone who needs to hear it — then follow for the next story.",
+        "cta": "Tag someone who needs this story — share it before you scroll, then follow for the next one.",
         "music": "warm narrative underscore with a swelling finish",
         "sfx": ["vinyl stop before the twist", "heartbeat pulse in the middle act", "gentle chime on the closing line"],
     },
@@ -66,7 +66,7 @@ VARIANT_STYLES = [
         "loop": "By the end you'll know the one claim about {subject} that survives the evidence.",
         "lens": "The myth survives because it sounds right — the data says otherwise.",
         "arc": ["skepticism", "surprise", "vindication", "clarity", "confidence"],
-        "cta": "Comment the myth you believed the longest — and follow so the next one doesn't fool you.",
+        "cta": "Share the myth you believed longest — tag a friend, then follow so the next one doesn't fool you.",
         "music": "punchy percussive beat with hard stops on each myth",
         "sfx": ["record scratch on each myth", "buzzer on the debunk", "satisfying click on the correction"],
     },
@@ -77,7 +77,7 @@ VARIANT_STYLES = [
         "loop": "Number 1 is last for a reason. Don't skip ahead.",
         "lens": "Each item builds on the last, and the order is the whole point.",
         "arc": ["anticipation", "recognition", "tension", "surprise", "satisfaction"],
-        "cta": "Save this so you can check all 3 later — and follow for the extended list.",
+        "cta": "Save and share this list — check all 3 later, then follow for the extended cut.",
         "music": "ticking rhythmic build that drops at number one",
         "sfx": ["tick transition between items", "riser into number one", "impact hit on the final payoff"],
     },
@@ -343,9 +343,30 @@ def generate_variants(
     psychology = idea.get("psychology") or {}
     locale_dict = Locale.from_value(locale).to_dict()
 
+    # Director / competitor hook strategy biases which opening wins.
+    preferred = str(
+        (idea.get("hook_strategy") or {}).get("strategy")
+        or (idea.get("production_blueprint") or {}).get("hook_strategy", {}).get("strategy")
+        or ""
+    )
+    if not preferred:
+        competitor = (idea.get("competitor_analysis") or {}).get("preferred_hook_styles") or []
+        chosen = choose_hook_strategy(
+            topic=str(idea.get("title") or subject),
+            psychology=psychology if isinstance(psychology, dict) else {},
+            competitor_hook_styles=competitor,
+            niche=niche,
+        )
+        preferred = chosen["strategy"]
+        idea["hook_strategy"] = chosen
+
     # The Hook Engine writes and ranks the openings once per idea; variant N
     # takes the Nth-best primary hook so variants stay stylistically distinct.
-    ranked_hooks = rank_hooks(generate_hook_candidates(idea, subject, research), psychology)
+    ranked_hooks = rank_hooks(
+        generate_hook_candidates(idea, subject, research),
+        psychology,
+        preferred_strategy=preferred,
+    )
 
     variants = []
     for index, style in enumerate(VARIANT_STYLES[: max(1, variant_count)]):

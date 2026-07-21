@@ -1,0 +1,10 @@
+{
+  "id": "ANIM-DOCTOR_001-TEACHING",
+  "name": "teaching",
+  "character_id": "DOCTOR_001",
+  "loop": false,
+  "reusable": true,
+  "true_motion_hint": "point_teach",
+  "constraints_ref": "ANIMATION_CONSTRAINTS.json",
+  "rig_ref": "RIG_SPECIFICATION.json"
+}

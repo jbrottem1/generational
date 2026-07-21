@@ -272,6 +272,20 @@ PLANS: dict[str, list[dict[str, Any]]] = {
         {"start": 0.78, "end": 0.88, "gesture": "present", "walk": 0.0, "label": "connect"},
         {"start": 0.88, "end": 1.00, "gesture": "idle", "walk": 0.0, "label": "takeaway"},
     ],
+    # Foundation V2 — Four Seasons Short (45–60s)
+    "foundation_v2_seasons_001": [
+        {"start": 0.00, "end": 0.06, "gesture": "think", "walk": 0.0, "label": "hook"},
+        {"start": 0.06, "end": 0.12, "gesture": "present", "walk": 0.0, "label": "myth_bust"},
+        {"start": 0.12, "end": 0.18, "gesture": "idle", "walk": 0.40, "label": "walk_to_board"},
+        {"start": 0.18, "end": 0.28, "gesture": "point", "walk": 0.0, "label": "earth_orbit"},
+        {"start": 0.28, "end": 0.36, "gesture": "point", "walk": 0.0, "label": "tilt_angle"},
+        {"start": 0.36, "end": 0.46, "gesture": "point", "walk": 0.0, "label": "spring_summer"},
+        {"start": 0.46, "end": 0.56, "gesture": "present", "walk": 0.0, "label": "autumn_winter"},
+        {"start": 0.56, "end": 0.66, "gesture": "idle", "walk": 0.0, "label": "hold"},
+        {"start": 0.66, "end": 0.76, "gesture": "point", "walk": 0.0, "label": "zoom_earth"},
+        {"start": 0.76, "end": 0.86, "gesture": "present", "walk": 0.0, "label": "connect"},
+        {"start": 0.86, "end": 1.00, "gesture": "idle", "walk": 0.0, "label": "takeaway"},
+    ],
 }
 
 

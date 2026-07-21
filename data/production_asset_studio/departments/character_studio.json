@@ -1,0 +1,47 @@
+{
+  "department_id": "character_studio",
+  "display_name": "Character Studio",
+  "mission": "Production meshes, facial/body topology, clothing, materials \u2014 runtime-compatible",
+  "priority_actors": [
+    "DOCTOR_001",
+    "FOUNDER_001"
+  ],
+  "future_actors": [
+    "TEACHER_001",
+    "HISTORIAN_001",
+    "ENGINEER_001",
+    "NURSE_001",
+    "PATIENT_CHILD_001"
+  ],
+  "deliverables": [
+    "production_mesh",
+    "facial_topology",
+    "body_topology",
+    "skeletal_compatibility",
+    "facial_rig",
+    "clothing",
+    "hair",
+    "materials",
+    "textures",
+    "expressions",
+    "animation_compatibility"
+  ],
+  "assets": [
+    {
+      "asset_id": "DOCTOR_001",
+      "quality_tier": "phase_ii_production",
+      "runtime_path": "data/studio_assets/DOCTOR_001/RUNTIME/DOCTOR_001_SKINNED.blend",
+      "must_preserve": [
+        "armature",
+        "skinning",
+        "shape_keys",
+        "canonical_bones"
+      ]
+    }
+  ],
+  "forbidden": [
+    "image_plate_actors",
+    "ken_burns_characters",
+    "runtime_incompatible_rigs"
+  ]
+}

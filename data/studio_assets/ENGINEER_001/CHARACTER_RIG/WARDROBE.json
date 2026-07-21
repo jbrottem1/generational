@@ -1,0 +1,47 @@
+{
+  "character_id": "ENGINEER_001",
+  "architecture": "clothing_separated_from_body",
+  "default_outfit": "workshop_gear",
+  "outfits": [
+    {
+      "id": "workshop_gear",
+      "layers": [
+        "base_garment",
+        "workshop_gear"
+      ],
+      "separated_from_body": true,
+      "cloth_sim": true
+    },
+    {
+      "id": "presentation_blazer",
+      "layers": [
+        "base_garment",
+        "presentation_blazer"
+      ],
+      "separated_from_body": true,
+      "cloth_sim": true
+    }
+  ],
+  "outfit_ids": [
+    "workshop_gear",
+    "presentation_blazer"
+  ],
+  "simulate_as_fabric": true,
+  "responds_to": [
+    "walk",
+    "run",
+    "arm_move",
+    "sit",
+    "wind",
+    "gravity",
+    "turn"
+  ],
+  "forbid": [
+    "frozen_fabric",
+    "fabric_leads_body",
+    "limb_clipping"
+  ],
+  "inheritable_architecture": true,
+  "existing_ref": null,
+  "reusable": true
+}

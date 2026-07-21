@@ -49,7 +49,8 @@ def _educator_stage_x(width: int, t: float, duration: float, plan_id: str | None
                 local = (p - s) / span
                 done += w * span * smootherstep(local)
         progress = (done / total) if total > 1e-6 else 0.0
-        return int(width * (0.02 + 0.06 * min(1.0, progress)))
+        # Keep professor deep in the left zone — never approach content at x≥0.34
+        return int(width * (0.02 + 0.04 * min(1.0, progress)))
 
     plan = PLANS.get(plan_id or "default") or PLANS["default"]
     p = t / max(duration, 0.1)
@@ -321,6 +322,22 @@ def render_lip_sync_performance(
                 else:
                     x = _educator_stage_x(width, t, duration, plan_id)
                     y = floor_y - ch2 + int(ch2 * 0.06)
+                    if is_foundation_v2:
+                        # Hard clamp: professor AABB must stay left of content zone
+                        from services.animation.foundation_v2 import CONTENT_X_MIN, professor_zone_rect
+                        from services.animation.layout_engine import professor_fits_zone
+
+                        zone = professor_zone_rect(width, height)
+                        content_x = int(width * CONTENT_X_MIN)
+                        _x_fit, mul, _ = professor_fits_zone(cw2, ch2, zone, content_x_min=content_x)
+                        if mul < 0.999:
+                            cw2 = max(40, int(cw2 * mul))
+                            ch2 = max(40, int(ch2 * mul))
+                            char_r = char.resize((cw2, ch2), Image.Resampling.LANCZOS)
+                            y = floor_y - ch2 + int(ch2 * 0.06)
+                        max_right = content_x - 12
+                        if x + cw2 > max_right:
+                            x = max(zone[0], max_right - cw2)
             elif character_anchor == "left":
                 x = int(width * 0.02)
                 y = int(height * 0.38) + int(float(params["head_bob_y"]) * 6)

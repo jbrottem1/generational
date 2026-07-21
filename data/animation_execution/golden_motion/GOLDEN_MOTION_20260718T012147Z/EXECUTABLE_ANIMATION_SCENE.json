@@ -1,0 +1,5182 @@
+{
+  "package_type": "EXECUTABLE_ANIMATION_SCENE",
+  "package_version": "1.0.0",
+  "created_at": "2026-07-18T01:21:47.624359+00:00",
+  "character_id": "DOCTOR_001",
+  "world_id": "WORLD-GMRI-MEDICAL-LAB",
+  "duration_sec": 14.0,
+  "spoken_line": "Real discovery begins when we look a little closer.",
+  "props": [
+    {
+      "id": "door_main",
+      "type": "door"
+    },
+    {
+      "id": "worktable",
+      "type": "desk"
+    },
+    {
+      "id": "medical_scanner",
+      "type": "console"
+    },
+    {
+      "id": "sample_container",
+      "type": "tool",
+      "holdable": true
+    }
+  ],
+  "actor_transform": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": -2.5,
+    "yaw_deg": 0.0
+  },
+  "animation_clips": [
+    "walking_cycle",
+    "stopping",
+    "looking_around",
+    "picking_up_objects",
+    "explaining"
+  ],
+  "joint_tracks": [
+    {
+      "joint": "pelvis",
+      "channel": "translation",
+      "keys": [
+        {
+          "t": 0.0,
+          "value": [
+            0.0,
+            0.95,
+            -2.5
+          ]
+        },
+        {
+          "t": 3.0,
+          "value": [
+            0.0,
+            0.95,
+            0.2
+          ]
+        },
+        {
+          "t": 6.0,
+          "value": [
+            0.3,
+            0.95,
+            1.2
+          ]
+        },
+        {
+          "t": 10.0,
+          "value": [
+            0.35,
+            0.95,
+            1.25
+          ]
+        },
+        {
+          "t": 14.0,
+          "value": [
+            0.35,
+            0.95,
+            1.3
+          ]
+        }
+      ],
+      "evidence": "pelvis_translation"
+    },
+    {
+      "joint": "spine_01",
+      "channel": "rotation_euler",
+      "keys": [
+        {
+          "t": 0.0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 5.5,
+          "value": [
+            0,
+            25,
+            0
+          ]
+        },
+        {
+          "t": 8.0,
+          "value": [
+            8,
+            35,
+            0
+          ]
+        },
+        {
+          "t": 12.0,
+          "value": [
+            5,
+            180,
+            0
+          ]
+        }
+      ],
+      "evidence": "spine_rotation"
+    },
+    {
+      "joint": "shoulder_right",
+      "channel": "rotation_euler",
+      "keys": [
+        {
+          "t": 6.0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 7.5,
+          "value": [
+            35,
+            10,
+            -20
+          ]
+        },
+        {
+          "t": 9.0,
+          "value": [
+            55,
+            15,
+            -25
+          ]
+        },
+        {
+          "t": 12.0,
+          "value": [
+            70,
+            5,
+            -10
+          ]
+        }
+      ],
+      "evidence": "shoulder_movement"
+    },
+    {
+      "joint": "elbow_right",
+      "channel": "rotation_euler",
+      "keys": [
+        {
+          "t": 6.0,
+          "value": [
+            10,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 8.0,
+          "value": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 9.5,
+          "value": [
+            25,
+            0,
+            0
+          ]
+        }
+      ],
+      "evidence": "elbow_articulation"
+    },
+    {
+      "joint": "wrist_right",
+      "channel": "rotation_euler",
+      "keys": [
+        {
+          "t": 7.0,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 8.5,
+          "value": [
+            15,
+            -10,
+            0
+          ]
+        },
+        {
+          "t": 9.5,
+          "value": [
+            5,
+            0,
+            0
+          ]
+        }
+      ],
+      "evidence": "wrist_movement"
+    },
+    {
+      "joint": "hand_right_fingers",
+      "channel": "grasp",
+      "keys": [
+        {
+          "t": 7.2,
+          "value": 0.0,
+          "note": "fingers_open_before_contact"
+        },
+        {
+          "t": 8.2,
+          "value": 0.35
+        },
+        {
+          "t": 9.0,
+          "value": 0.85,
+          "note": "fingers_close_around_object"
+        },
+        {
+          "t": 14.0,
+          "value": 0.8
+        }
+      ],
+      "evidence": "finger_movement"
+    },
+    {
+      "joint": "hip_left",
+      "channel": "rotation_euler",
+      "keys": [
+        {
+          "t": 0.0,
+          "value": [
+            15,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 0.5,
+          "value": [
+            -10,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1.0,
+          "value": [
+            15,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1.5,
+          "value": [
+            -10,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 2.5,
+          "value": [
+            5,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 3.2,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "evidence": "hip_movement"
+    },
+    {
+      "joint": "knee_left",
+      "channel": "rotation_euler",
+      "keys": [
+        {
+          "t": 0.0,
+          "value": [
+            5,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 0.4,
+          "value": [
+            55,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 0.8,
+          "value": [
+            5,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1.2,
+          "value": [
+            55,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 3.0,
+          "value": [
+            5,
+            0,
+            0
+          ]
+        }
+      ],
+      "evidence": "knee_bending"
+    },
+    {
+      "joint": "knee_right",
+      "channel": "rotation_euler",
+      "keys": [
+        {
+          "t": 0.2,
+          "value": [
+            55,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 0.6,
+          "value": [
+            5,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1.0,
+          "value": [
+            55,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 1.4,
+          "value": [
+            5,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 3.0,
+          "value": [
+            5,
+            0,
+            0
+          ]
+        }
+      ],
+      "evidence": "knee_bending"
+    },
+    {
+      "joint": "ankle_left",
+      "channel": "rotation_euler",
+      "keys": [
+        {
+          "t": 0.35,
+          "value": [
+            12,
+            0,
+            0
+          ],
+          "note": "heel_strike"
+        },
+        {
+          "t": 0.55,
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "note": "toe_roll"
+        },
+        {
+          "t": 1.35,
+          "value": [
+            12,
+            0,
+            0
+          ]
+        }
+      ],
+      "evidence": "ankle_articulation"
+    },
+    {
+      "joint": "ankle_right",
+      "channel": "rotation_euler",
+      "keys": [
+        {
+          "t": 0.85,
+          "value": [
+            12,
+            0,
+            0
+          ],
+          "note": "heel_strike"
+        },
+        {
+          "t": 1.05,
+          "value": [
+            0,
+            0,
+            0
+          ],
+          "note": "toe_roll"
+        }
+      ],
+      "evidence": "ankle_articulation"
+    },
+    {
+      "joint": "foot_left",
+      "channel": "plant",
+      "keys": [
+        {
+          "t": 0.4,
+          "value": 1.0,
+          "contact": "floor"
+        },
+        {
+          "t": 0.9,
+          "value": 0.0
+        },
+        {
+          "t": 1.4,
+          "value": 1.0,
+          "contact": "floor"
+        },
+        {
+          "t": 3.2,
+          "value": 1.0,
+          "contact": "floor"
+        }
+      ],
+      "evidence": "planted_feet"
+    },
+    {
+      "joint": "foot_right",
+      "channel": "plant",
+      "keys": [
+        {
+          "t": 0.0,
+          "value": 1.0,
+          "contact": "floor"
+        },
+        {
+          "t": 0.5,
+          "value": 0.0
+        },
+        {
+          "t": 0.9,
+          "value": 1.0,
+          "contact": "floor"
+        },
+        {
+          "t": 3.2,
+          "value": 1.0,
+          "contact": "floor"
+        }
+      ],
+      "evidence": "planted_feet"
+    },
+    {
+      "joint": "head",
+      "channel": "rotation_euler",
+      "keys": [
+        {
+          "t": 4.5,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "t": 5.2,
+          "value": [
+            10,
+            20,
+            0
+          ],
+          "note": "look_to_sample"
+        },
+        {
+          "t": 11.0,
+          "value": [
+            0,
+            160,
+            0
+          ],
+          "note": "turn_to_viewer"
+        }
+      ],
+      "evidence": "head_turns"
+    },
+    {
+      "joint": "eye_left",
+      "channel": "gaze",
+      "keys": [
+        {
+          "t": 4.2,
+          "value": "sample_container",
+          "note": "eyes_before_head"
+        },
+        {
+          "t": 10.5,
+          "value": "camera"
+        }
+      ],
+      "evidence": "eye_movement"
+    },
+    {
+      "joint": "eye_right",
+      "channel": "gaze",
+      "keys": [
+        {
+          "t": 4.2,
+          "value": "sample_container"
+        },
+        {
+          "t": 10.5,
+          "value": "camera"
+        }
+      ],
+      "evidence": "eye_movement"
+    },
+    {
+      "joint": "eyelids",
+      "channel": "blink",
+      "keys": [
+        {
+          "t": 2.1,
+          "value": 1.0
+        },
+        {
+          "t": 2.2,
+          "value": 0.0
+        },
+        {
+          "t": 7.8,
+          "value": 1.0
+        },
+        {
+          "t": 7.9,
+          "value": 0.0
+        },
+        {
+          "t": 12.4,
+          "value": 1.0
+        },
+        {
+          "t": 12.5,
+          "value": 0.0
+        }
+      ],
+      "evidence": "blinking"
+    },
+    {
+      "joint": "jaw",
+      "channel": "speech",
+      "keys": [
+        {
+          "t": 10.5,
+          "value": 0.0
+        },
+        {
+          "t": 11.0,
+          "value": 0.4
+        },
+        {
+          "t": 13.5,
+          "value": 0.35
+        },
+        {
+          "t": 14.0,
+          "value": 0.0
+        }
+      ],
+      "evidence": "mouth_articulation",
+      "requires_phoneme_timeline": true
+    },
+    {
+      "joint": "mouth_corner_left",
+      "channel": "smile",
+      "keys": [
+        {
+          "t": 10.8,
+          "value": 0.0
+        },
+        {
+          "t": 11.5,
+          "value": 0.55
+        },
+        {
+          "t": 14.0,
+          "value": 0.45
+        }
+      ],
+      "evidence": "facial_expressions"
+    },
+    {
+      "joint": "mouth_corner_right",
+      "channel": "smile",
+      "keys": [
+        {
+          "t": 10.8,
+          "value": 0.0
+        },
+        {
+          "t": 11.5,
+          "value": 0.55
+        },
+        {
+          "t": 14.0,
+          "value": 0.45
+        }
+      ],
+      "evidence": "facial_expressions"
+    },
+    {
+      "joint": "chest",
+      "channel": "breath",
+      "keys": [
+        {
+          "t": 0.0,
+          "value": 0.0
+        },
+        {
+          "t": 1.6,
+          "value": 0.08
+        },
+        {
+          "t": 3.2,
+          "value": 0.0
+        },
+        {
+          "t": 6.4,
+          "value": 0.08
+        },
+        {
+          "t": 9.6,
+          "value": 0.0
+        },
+        {
+          "t": 12.8,
+          "value": 0.08
+        }
+      ],
+      "evidence": "subtle_breathing"
+    }
+  ],
+  "facial_tracks": {
+    "blinks": [
+      {
+        "joint": "eyelids",
+        "channel": "blink",
+        "keys": [
+          {
+            "t": 2.1,
+            "value": 1.0
+          },
+          {
+            "t": 2.2,
+            "value": 0.0
+          },
+          {
+            "t": 7.8,
+            "value": 1.0
+          },
+          {
+            "t": 7.9,
+            "value": 0.0
+          },
+          {
+            "t": 12.4,
+            "value": 1.0
+          },
+          {
+            "t": 12.5,
+            "value": 0.0
+          }
+        ],
+        "evidence": "blinking"
+      }
+    ],
+    "smile": [
+      {
+        "joint": "mouth_corner_left",
+        "channel": "smile",
+        "keys": [
+          {
+            "t": 10.8,
+            "value": 0.0
+          },
+          {
+            "t": 11.5,
+            "value": 0.55
+          },
+          {
+            "t": 14.0,
+            "value": 0.45
+          }
+        ],
+        "evidence": "facial_expressions"
+      },
+      {
+        "joint": "mouth_corner_right",
+        "channel": "smile",
+        "keys": [
+          {
+            "t": 10.8,
+            "value": 0.0
+          },
+          {
+            "t": 11.5,
+            "value": 0.55
+          },
+          {
+            "t": 14.0,
+            "value": 0.45
+          }
+        ],
+        "evidence": "facial_expressions"
+      }
+    ],
+    "gaze": [
+      {
+        "joint": "eye_left",
+        "channel": "gaze",
+        "keys": [
+          {
+            "t": 4.2,
+            "value": "sample_container",
+            "note": "eyes_before_head"
+          },
+          {
+            "t": 10.5,
+            "value": "camera"
+          }
+        ],
+        "evidence": "eye_movement"
+      },
+      {
+        "joint": "eye_right",
+        "channel": "gaze",
+        "keys": [
+          {
+            "t": 4.2,
+            "value": "sample_container"
+          },
+          {
+            "t": 10.5,
+            "value": "camera"
+          }
+        ],
+        "evidence": "eye_movement"
+      }
+    ],
+    "speech_driven": true
+  },
+  "gaze_target": {
+    "sequence": [
+      "sample_container",
+      "camera"
+    ]
+  },
+  "phoneme_timeline": [
+    {
+      "t": 10.5,
+      "t_end": 10.78,
+      "word": "Real",
+      "viseme": "R",
+      "source": "planned_syllable_map",
+      "requires_waveform_alignment": true
+    },
+    {
+      "t": 10.78,
+      "t_end": 11.35,
+      "word": "discovery",
+      "viseme": "E",
+      "source": "planned_syllable_map",
+      "requires_waveform_alignment": true
+    },
+    {
+      "t": 11.35,
+      "t_end": 11.75,
+      "word": "begins",
+      "viseme": "B",
+      "source": "planned_syllable_map",
+      "requires_waveform_alignment": true
+    },
+    {
+      "t": 11.75,
+      "t_end": 11.95,
+      "word": "when",
+      "viseme": "W",
+      "source": "planned_syllable_map",
+      "requires_waveform_alignment": true
+    },
+    {
+      "t": 11.95,
+      "t_end": 12.1,
+      "word": "we",
+      "viseme": "E",
+      "source": "planned_syllable_map",
+      "requires_waveform_alignment": true
+    },
+    {
+      "t": 12.1,
+      "t_end": 12.4,
+      "word": "look",
+      "viseme": "U",
+      "source": "planned_syllable_map",
+      "requires_waveform_alignment": true
+    },
+    {
+      "t": 12.4,
+      "t_end": 12.5,
+      "word": "a",
+      "viseme": "A",
+      "source": "planned_syllable_map",
+      "requires_waveform_alignment": true
+    },
+    {
+      "t": 12.5,
+      "t_end": 12.85,
+      "word": "little",
+      "viseme": "I",
+      "source": "planned_syllable_map",
+      "requires_waveform_alignment": true
+    },
+    {
+      "t": 12.85,
+      "t_end": 13.4,
+      "word": "closer",
+      "viseme": "O",
+      "source": "planned_syllable_map",
+      "requires_waveform_alignment": true
+    },
+    {
+      "line": "Real discovery begins when we look a little closer.",
+      "t0": 10.5,
+      "t_end": 13.4
+    }
+  ],
+  "attachments": [
+    {
+      "t": 9.0,
+      "hand": "hand_right",
+      "object_id": "sample_container"
+    }
+  ],
+  "interactions": [
+    {
+      "package_type": "INTERACTION_PACKAGE",
+      "package_version": "1.0.0",
+      "engine_id": "physics_interaction",
+      "created_at": "2026-07-18T01:21:47.624329+00:00",
+      "interaction_id": "gm_open_door",
+      "actor": "DOCTOR_001",
+      "target": "door_main",
+      "interaction_type": "opening_doors",
+      "contact_points": [
+        {
+          "id": "hand_right",
+          "required": true,
+          "must_reach": true
+        },
+        {
+          "id": "door_handle",
+          "required": true,
+          "must_reach": true
+        }
+      ],
+      "physics_state": "approaching",
+      "constraints": {
+        "no_float": true,
+        "no_clip": true,
+        "no_teleport": true,
+        "ground_contact_if_locomotion": false,
+        "hand_must_hit_target": true
+      },
+      "animation_requirements": [
+        "reach",
+        "grasp_handle",
+        "pull_or_push",
+        "release"
+      ],
+      "completion_state": {
+        "success_when": "physics_state==complete",
+        "required_final_state": "complete",
+        "failed_if": [
+          "hand_misses_target",
+          "foot_slide",
+          "clip_detected",
+          "actor_float"
+        ]
+      },
+      "timing": {
+        "t_start": 0.0,
+        "t_end": 1.2
+      },
+      "world_id": "WORLD-GMRI-MEDICAL-LAB",
+      "architecture": {
+        "frozen": true,
+        "no_new_renderer": true,
+        "not_a_world_builder": true
+      }
+    },
+    {
+      "package_type": "INTERACTION_PACKAGE",
+      "package_version": "1.0.0",
+      "engine_id": "physics_interaction",
+      "created_at": "2026-07-18T01:21:47.624334+00:00",
+      "interaction_id": "gm_grasp_sample",
+      "actor": "DOCTOR_001",
+      "target": "sample_container",
+      "interaction_type": "picking_up_objects",
+      "contact_points": [
+        {
+          "id": "hand_right",
+          "required": true,
+          "must_reach": true
+        },
+        {
+          "id": "object_grasp",
+          "required": true,
+          "must_reach": true
+        }
+      ],
+      "physics_state": "approaching",
+      "constraints": {
+        "no_float": true,
+        "no_clip": true,
+        "no_teleport": true,
+        "ground_contact_if_locomotion": false,
+        "hand_must_hit_target": true
+      },
+      "animation_requirements": [
+        "reach",
+        "grasp",
+        "lift"
+      ],
+      "completion_state": {
+        "success_when": "physics_state==complete",
+        "required_final_state": "complete",
+        "failed_if": [
+          "hand_misses_target",
+          "foot_slide",
+          "clip_detected",
+          "actor_float"
+        ]
+      },
+      "timing": {
+        "t_start": 6.5,
+        "t_end": 9.5
+      },
+      "world_id": "WORLD-GMRI-MEDICAL-LAB",
+      "architecture": {
+        "frozen": true,
+        "no_new_renderer": true,
+        "not_a_world_builder": true
+      }
+    }
+  ],
+  "physics_state": {
+    "no_float": true,
+    "no_clip": true,
+    "no_teleport": true,
+    "foot_planting": true,
+    "object_mass_kg": 0.12,
+    "arm_weight_reaction": true
+  },
+  "camera_plan": [
+    {
+      "shot": 1,
+      "t_start": 0.0,
+      "t_end": 3.0,
+      "framing": "wide_tracking",
+      "follow": "pelvis",
+      "purpose": "Doctor enters through doorway",
+      "forbid_conceal_missing_animation": true
+    },
+    {
+      "shot": 2,
+      "t_start": 3.0,
+      "t_end": 6.0,
+      "framing": "medium_three_quarter",
+      "follow": "chest",
+      "purpose": "Approach worktable / look to sample",
+      "forbid_conceal_missing_animation": true
+    },
+    {
+      "shot": 3,
+      "t_start": 6.0,
+      "t_end": 10.0,
+      "framing": "close_insert_hand",
+      "follow": "hand_right",
+      "purpose": "Grasp sample container",
+      "forbid_conceal_missing_animation": true
+    },
+    {
+      "shot": 4,
+      "t_start": 10.0,
+      "t_end": 14.0,
+      "framing": "medium_close_up",
+      "follow": "head",
+      "purpose": "Spoken line to viewer",
+      "forbid_conceal_missing_animation": true
+    }
+  ],
+  "lighting_plan": {
+    "intent": "scientific",
+    "mood": "clinical_warm",
+    "motivated": true
+  },
+  "source_packages": {
+    "director_package": true,
+    "character_performance_package": true,
+    "character_rig_package": true,
+    "world_package": true,
+    "interaction_packages": 2
+  },
+  "director_package": {
+    "package_type": "DIRECTOR_PACKAGE",
+    "package_version": "1.0.0",
+    "engine_id": "cinematic_direction_studio",
+    "created_at": "2026-07-18T01:21:47.623915+00:00",
+    "scene_number": 1,
+    "scene_id": "scene_001",
+    "topic": "Golden Motion Validation",
+    "philosophy": {
+      "not_an_animation_engine": true,
+      "not_a_renderer": true,
+      "rule": "Every shot has a purpose. Every movement supports the story."
+    },
+    "story_objective": "Real discovery begins when we look a little closer",
+    "emotional_objective": "curiosity",
+    "actor_objective": "Approach instrument, pause with intent, then teach to camera",
+    "camera_objective": "Camera supports curiosity \u2014 slow dolly",
+    "lighting_objective": "warm light supports curiosity",
+    "editing_objective": "Transition hold_then_cut with ending beat settle_then_cut",
+    "music_objective": "Music after_hook_line; exit resolve_hold",
+    "shot_type": "establishing",
+    "shot_purpose": "establishing serves curiosity: Real discovery begins when we look a little closer",
+    "camera_language": {
+      "emotion": "curiosity",
+      "movement": "slow_dolly",
+      "true_motion_camera": "pull_out",
+      "shot_type": "establishing",
+      "motivated": true,
+      "purpose": "Camera supports curiosity \u2014 slow dolly",
+      "forbid_purposeless_move": true,
+      "camera_replaces_actor_motion": false
+    },
+    "actor_direction": {
+      "character_id": "DOCTOR_001",
+      "objective": "Approach instrument, pause with intent, then teach to camera",
+      "emotion": "curiosity",
+      "beats": [
+        {
+          "t": 0.0,
+          "action": "walk_to_microscope",
+          "note": "Purposeful approach",
+          "motivated": true
+        },
+        {
+          "t": 3.08,
+          "action": "stop",
+          "note": "Plant feet",
+          "motivated": true
+        },
+        {
+          "t": 3.9200000000000004,
+          "action": "look_down",
+          "note": "Inspect eyepiece",
+          "motivated": true
+        },
+        {
+          "t": 5.32,
+          "action": "pause",
+          "note": "Let beat land",
+          "motivated": true
+        },
+        {
+          "t": 6.3,
+          "action": "breathe",
+          "note": "Human settle",
+          "motivated": true
+        },
+        {
+          "t": 7.700000000000001,
+          "action": "turn_to_viewer",
+          "note": "Camera address",
+          "motivated": true
+        },
+        {
+          "t": 8.68,
+          "action": "warm_focus",
+          "note": "Readable face",
+          "motivated": true
+        },
+        {
+          "t": 9.799999999999999,
+          "action": "explain",
+          "note": "Gesture + speech",
+          "motivated": true
+        },
+        {
+          "t": 12.6,
+          "action": "return_to_work",
+          "note": "Back to instrument",
+          "motivated": true
+        }
+      ],
+      "forbid_mechanical_loop": true,
+      "require_breath_and_pause": true,
+      "require_eye_intent": true,
+      "scene_index": 0,
+      "example_philosophy": "Doctor walks to microscope. Stops. Looks down. Pauses. Breathes. Turns toward viewer. Smiles. Explains. Returns to work."
+    },
+    "pacing": {
+      "shot_duration_sec": 14.0,
+      "pause_timing": [
+        {
+          "t": 3.08,
+          "duration_sec": 0.35
+        },
+        {
+          "t": 5.32,
+          "duration_sec": 0.35
+        },
+        {
+          "t": 6.3,
+          "duration_sec": 0.35
+        }
+      ],
+      "dialogue_spacing_sec": 0.22,
+      "camera_rhythm": "measured",
+      "movement_rhythm": "shared",
+      "scene_transition_hold_sec": 0.4,
+      "forbid_machine_gun_cuts": true,
+      "forbid_static_dead_air_over_sec": 3.0
+    },
+    "lighting_intent": {
+      "intent": "warm",
+      "lighting_mood": "golden_hour",
+      "emotion": "curiosity",
+      "motivated": true,
+      "purpose": "warm light supports curiosity",
+      "forbid_unmotivated_grade": true
+    },
+    "editing_plan": {
+      "cut_points": [
+        {
+          "t": 4.9,
+          "reason": "after_pause_or_look",
+          "type": "motivated"
+        },
+        {
+          "t": 9.1,
+          "reason": "into_explanation_or_gesture",
+          "type": "motivated"
+        }
+      ],
+      "transition_in": "establish",
+      "transition_style": "hold_then_cut",
+      "transition_out": "hold_then_cut",
+      "reaction_timing_sec": 0.3,
+      "music_timing": {
+        "enter": "after_hook_line",
+        "swell_at": null,
+        "exit": "resolve_hold"
+      },
+      "ending_beat": "settle_then_cut",
+      "forbid_random_cuts": true,
+      "motivated_only": true
+    },
+    "compose_vfd": false,
+    "architecture": {
+      "frozen": true,
+      "no_new_renderer": true,
+      "not_animation_engine": true,
+      "feeds": [
+        "virtual_film_director",
+        "animation_engine",
+        "character_performance_engine",
+        "true_motion",
+        "shot_assembly"
+      ]
+    },
+    "animation_seed": {
+      "emotion": "curiosity",
+      "shot_size": "establishing_wide",
+      "lighting_mood": "golden_hour",
+      "true_motion_camera": "pull_out",
+      "shot_language": "establishing",
+      "transition_style": "hold_then_cut",
+      "director_emotion": "curiosity",
+      "motivated": true,
+      "source": "cinematic_direction_studio"
+    },
+    "validation": {
+      "ok": true,
+      "score": 100,
+      "failures": [],
+      "rejects_hit": [],
+      "reject_catalog": [
+        "camera_moves_without_purpose",
+        "actors_move_mechanically",
+        "editing_feels_random",
+        "emotion_unclear",
+        "shots_repeat",
+        "identical_framing_every_scene"
+      ],
+      "success": "Feels directed by an experienced filmmaker \u2014 each shot supports story, emotion, and educational message.",
+      "mp4_required": true,
+      "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for intentional direction."
+    }
+  },
+  "character_performance_package": {
+    "package_type": "CHARACTER_PERFORMANCE_PACKAGE",
+    "package_version": "1.0.0",
+    "engine_id": "character_performance_engine",
+    "created_at": "2026-07-18T01:21:47.624253+00:00",
+    "character_id": "DOCTOR_001",
+    "scene_id": "scene_001",
+    "scene_number": 1,
+    "duration_sec": 14.0,
+    "philosophy": {
+      "not_a_renderer": true,
+      "not_an_image_generator": true,
+      "not_an_animation_filter": true,
+      "pipeline": [
+        "build_environment",
+        "place_character",
+        "assign_objectives",
+        "simulate_performance",
+        "animate_performance",
+        "then_render"
+      ],
+      "rule": "Every second must contain genuine character animation.",
+      "reject_if": "motion could be recreated by moving a still photograph"
+    },
+    "objective": {
+      "id": "point_to_evidence",
+      "statement": "Real discovery begins when we look a little closer",
+      "must_move": true,
+      "dramatic_hold_allowed": false
+    },
+    "blocking": {
+      "where_is_everyone": {
+        "primary_character": {
+          "start": {
+            "x": 0.18,
+            "y": 0.52,
+            "facing": "right"
+          },
+          "end": {
+            "x": 0.62,
+            "y": 0.5,
+            "facing": "camera"
+          },
+          "floor_contact": true,
+          "stage_depth": "midground"
+        },
+        "extras": [
+          {
+            "id": "lab_tech_pass",
+            "path": "bg_left_to_right",
+            "opacity": 0.35
+          }
+        ]
+      },
+      "where_walking": {
+        "path_name": "cross_lab_to_hologram",
+        "waypoints": [
+          {
+            "t": 0.0,
+            "x": 0.18,
+            "y": 0.52,
+            "facing": "right",
+            "action": "plant_and_depart"
+          },
+          {
+            "t": 6.3,
+            "x": 0.4,
+            "y": 0.51,
+            "facing": "path",
+            "action": "walk"
+          },
+          {
+            "t": 13.2,
+            "x": 0.62,
+            "y": 0.5,
+            "facing": "camera",
+            "action": "arrive_and_gesture"
+          }
+        ],
+        "never_teleport": true,
+        "never_slide": true,
+        "never_float": true
+      },
+      "where_looking": [
+        {
+          "t": 0.3,
+          "target": "hologram"
+        },
+        {
+          "t": 1.8,
+          "target": "equipment"
+        },
+        {
+          "t": 2.8,
+          "target": "camera"
+        }
+      ],
+      "what_touching": [
+        {
+          "t": 1.4,
+          "target": "microscope",
+          "verb": "touch"
+        },
+        {
+          "t": 2.2,
+          "target": "hologram",
+          "verb": "point"
+        }
+      ],
+      "what_reacting_to": [
+        "environment_life",
+        "interaction_target",
+        "narration_emphasis"
+      ],
+      "where_end_shot": {
+        "position": {
+          "x": 0.62,
+          "y": 0.5,
+          "facing": "camera"
+        },
+        "pose": "grounded_presence",
+        "hold_sec": 2.8
+      },
+      "shot_size_hint": "dynamic_medium",
+      "max_stationary_sec": 3.0,
+      "questions_answered": [
+        "where_is_everyone",
+        "where_walking",
+        "where_looking",
+        "what_touching",
+        "what_reacting_to",
+        "where_end_shot"
+      ]
+    },
+    "locomotion": {
+      "style": "grounded_walk_explain",
+      "waypoints": [
+        {
+          "t": 0.0,
+          "x": 0.18,
+          "y": 0.52,
+          "facing": "right",
+          "action": "plant_and_depart"
+        },
+        {
+          "t": 6.3,
+          "x": 0.4,
+          "y": 0.51,
+          "facing": "path",
+          "action": "walk"
+        },
+        {
+          "t": 14.0,
+          "x": 0.62,
+          "y": 0.5,
+          "facing": "camera",
+          "action": "arrive_and_gesture"
+        }
+      ],
+      "foot_plants": [
+        {
+          "t": 0.0,
+          "foot": "left",
+          "grounded": true,
+          "weight": 0.55
+        },
+        {
+          "t": 6.3,
+          "foot": "right",
+          "grounded": true,
+          "weight": 0.45
+        },
+        {
+          "t": 14.0,
+          "foot": "left",
+          "grounded": true,
+          "weight": 0.55
+        }
+      ],
+      "weight_transfer": true,
+      "hip_rotation": true,
+      "shoulder_counter": true,
+      "walk_bob_amp": 0.012,
+      "stride_sec": 0.48,
+      "path_distance_norm": 0.4405,
+      "never_float": true,
+      "never_slide": true,
+      "never_teleport": true,
+      "floor_y_band": [
+        0.48,
+        0.58
+      ],
+      "continuous": true
+    },
+    "body_performance": {
+      "continuous": true,
+      "duration_sec": 14.0,
+      "body_actions_required": [
+        "walk",
+        "turn",
+        "stop",
+        "weight_shift",
+        "breathe",
+        "look_around",
+        "head_turn",
+        "eye_track",
+        "blink",
+        "arm_gesture",
+        "finger_motion",
+        "shoulder_motion",
+        "hip_rotation",
+        "foot_plant",
+        "balance",
+        "momentum",
+        "secondary_motion"
+      ],
+      "body_actions_present": [
+        "walk",
+        "turn",
+        "stop",
+        "weight_shift",
+        "breathe",
+        "look_around",
+        "head_turn",
+        "eye_track",
+        "blink",
+        "arm_gesture",
+        "finger_motion",
+        "shoulder_motion",
+        "hip_rotation",
+        "foot_plant",
+        "balance",
+        "momentum",
+        "secondary_motion"
+      ],
+      "timeline": [
+        {
+          "t_start": 0.0,
+          "t_end": 2.4,
+          "primary_action": "walk",
+          "channels": {
+            "spine": "walk_balance",
+            "arms": "natural_swing",
+            "hands": "finger_articulation",
+            "head": "tracking_look",
+            "eyes": "active_scan",
+            "breath": "teaching_cycle",
+            "hips": "weight_transfer",
+            "feet": "planted_or_stepping"
+          },
+          "secondary_motion": [
+            "coat_sway",
+            "hair_micro",
+            "cloth_follow"
+          ]
+        },
+        {
+          "t_start": 2.4,
+          "t_end": 4.8,
+          "primary_action": "turn",
+          "channels": {
+            "spine": "walk_balance",
+            "arms": "natural_swing",
+            "hands": "finger_articulation",
+            "head": "tracking_look",
+            "eyes": "active_scan",
+            "breath": "teaching_cycle",
+            "hips": "weight_transfer",
+            "feet": "planted_or_stepping"
+          },
+          "secondary_motion": [
+            "coat_sway",
+            "hair_micro",
+            "cloth_follow"
+          ]
+        },
+        {
+          "t_start": 4.8,
+          "t_end": 7.2,
+          "primary_action": "point",
+          "channels": {
+            "spine": "upright_teach",
+            "arms": "point_teach",
+            "hands": "finger_articulation",
+            "head": "tracking_look",
+            "eyes": "active_scan",
+            "breath": "teaching_cycle",
+            "hips": "weight_transfer",
+            "feet": "planted_or_stepping"
+          },
+          "secondary_motion": [
+            "coat_sway",
+            "hair_micro",
+            "cloth_follow"
+          ]
+        },
+        {
+          "t_start": 7.2,
+          "t_end": 9.6,
+          "primary_action": "weight_shift",
+          "channels": {
+            "spine": "walk_balance",
+            "arms": "natural_swing",
+            "hands": "finger_articulation",
+            "head": "tracking_look",
+            "eyes": "active_scan",
+            "breath": "teaching_cycle",
+            "hips": "weight_transfer",
+            "feet": "planted_or_stepping"
+          },
+          "secondary_motion": [
+            "coat_sway",
+            "hair_micro",
+            "cloth_follow"
+          ]
+        },
+        {
+          "t_start": 9.6,
+          "t_end": 12.0,
+          "primary_action": "look_around",
+          "channels": {
+            "spine": "walk_balance",
+            "arms": "natural_swing",
+            "hands": "finger_articulation",
+            "head": "tracking_look",
+            "eyes": "active_scan",
+            "breath": "teaching_cycle",
+            "hips": "weight_transfer",
+            "feet": "planted_or_stepping"
+          },
+          "secondary_motion": [
+            "coat_sway",
+            "hair_micro",
+            "cloth_follow"
+          ]
+        },
+        {
+          "t_start": 12.0,
+          "t_end": 14.0,
+          "primary_action": "arm_gesture",
+          "channels": {
+            "spine": "walk_balance",
+            "arms": "natural_swing",
+            "hands": "finger_articulation",
+            "head": "tracking_look",
+            "eyes": "active_scan",
+            "breath": "teaching_cycle",
+            "hips": "weight_transfer",
+            "feet": "planted_or_stepping"
+          },
+          "secondary_motion": [
+            "coat_sway",
+            "hair_micro",
+            "cloth_follow"
+          ]
+        }
+      ],
+      "holds": [
+        {
+          "t_start": 12.8,
+          "t_end": 14.0,
+          "allowed": false,
+          "reason": "end_pose_settle",
+          "micro_motion_required": true
+        }
+      ],
+      "max_stationary_sec": 3.0,
+      "gesture_beats": [
+        {
+          "t": 0.5,
+          "type": "prepare",
+          "hand": "right"
+        },
+        {
+          "t": 1.2,
+          "type": "peak_point",
+          "hand": "right"
+        },
+        {
+          "t": 2.0,
+          "type": "secondary_left",
+          "hand": "left"
+        },
+        {
+          "t": 13.4,
+          "type": "settle",
+          "hand": "both"
+        }
+      ],
+      "look_beats": [
+        {
+          "t": 0.3,
+          "target": "hologram"
+        },
+        {
+          "t": 1.8,
+          "target": "equipment"
+        },
+        {
+          "t": 2.8,
+          "target": "camera"
+        }
+      ],
+      "locomotion_coupled": true,
+      "path_distance_norm": 0.4405,
+      "philosophy": "Animate the actor. Never animate a photograph."
+    },
+    "interactions": {
+      "events": [
+        {
+          "t": 1.4,
+          "verb": "touch",
+          "target": "microscope",
+          "hand": "right",
+          "requires_reach": true,
+          "requires_body_turn": true
+        },
+        {
+          "t": 2.2,
+          "verb": "point",
+          "target": "hologram",
+          "hand": "right",
+          "requires_reach": true,
+          "requires_body_turn": true
+        },
+        {
+          "t": 9.1,
+          "verb": "look_through_microscope",
+          "target": "microscope",
+          "hand": "both",
+          "requires_reach": true,
+          "requires_body_turn": true
+        }
+      ],
+      "allowed_verbs": [
+        "pick_up",
+        "point",
+        "touch_display",
+        "open_door",
+        "sit",
+        "stand",
+        "lean",
+        "use_whiteboard",
+        "look_through_microscope",
+        "approach_patient",
+        "walk_toward_camera",
+        "walk_away"
+      ],
+      "forbid_talking_head_only": true,
+      "must_use_world": true,
+      "count": 3
+    },
+    "environment_life": {
+      "living": true,
+      "forbid_static_background": true,
+      "channels": [
+        "machines_operate",
+        "screens_update",
+        "lights_flicker",
+        "steam_rise",
+        "people_walk",
+        "particles_drift"
+      ],
+      "tracks": [
+        {
+          "id": "machines_operate",
+          "t_start": 0.0,
+          "t_end": 14.0,
+          "continuous": true,
+          "layer": "background",
+          "amplitude": 0.35
+        },
+        {
+          "id": "screens_update",
+          "t_start": 0.0,
+          "t_end": 14.0,
+          "continuous": true,
+          "layer": "midground",
+          "amplitude": 0.39999999999999997
+        },
+        {
+          "id": "lights_flicker",
+          "t_start": 0.0,
+          "t_end": 14.0,
+          "continuous": true,
+          "layer": "background",
+          "amplitude": 0.44999999999999996
+        },
+        {
+          "id": "steam_rise",
+          "t_start": 0.0,
+          "t_end": 14.0,
+          "continuous": true,
+          "layer": "midground",
+          "amplitude": 0.35
+        },
+        {
+          "id": "people_walk",
+          "t_start": 0.0,
+          "t_end": 14.0,
+          "continuous": true,
+          "layer": "background",
+          "amplitude": 0.39999999999999997
+        },
+        {
+          "id": "particles_drift",
+          "t_start": 0.0,
+          "t_end": 14.0,
+          "continuous": true,
+          "layer": "midground",
+          "amplitude": 0.44999999999999996
+        }
+      ],
+      "doors_and_traffic": true,
+      "philosophy": "Nothing is frozen."
+    },
+    "camera_follow": {
+      "mode": "walk_and_talk",
+      "true_motion_camera": "tracking",
+      "follows_actor_path": true,
+      "camera_replaces_action": false,
+      "amplitude_scale": 0.55,
+      "notes": "Camera records the performance. Actor locomotion is primary; camera crop/track is secondary.",
+      "forbid_ken_burns_as_performance": true
+    },
+    "simulation": {
+      "duration_sec": 14.0,
+      "keyframes": [
+        {
+          "t": 0.0,
+          "x": 0.18,
+          "y": 0.52,
+          "scale": 0.644,
+          "facing": "right",
+          "action": "plant_and_depart",
+          "grounded": true
+        },
+        {
+          "t": 0.35,
+          "x": 0.1922,
+          "y": 0.5169,
+          "scale": 0.643,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 0.7,
+          "x": 0.2044,
+          "y": 0.5139,
+          "scale": 0.642,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 1.05,
+          "x": 0.2167,
+          "y": 0.5108,
+          "scale": 0.641,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 1.4,
+          "x": 0.22888888888888886,
+          "y": 0.5077777777777778,
+          "scale": 0.664,
+          "facing": "target",
+          "action": "touch",
+          "grounded": true,
+          "interaction": true
+        },
+        {
+          "t": 1.75,
+          "x": 0.2289,
+          "y": 0.5034,
+          "scale": 0.639,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 2.1,
+          "x": 0.2289,
+          "y": 0.499,
+          "scale": 0.637,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 2.2,
+          "x": 0.22888888888888886,
+          "y": 0.49777777777777776,
+          "scale": 0.66,
+          "facing": "target",
+          "action": "point",
+          "grounded": true,
+          "interaction": true
+        },
+        {
+          "t": 2.45,
+          "x": 0.2393,
+          "y": 0.4985,
+          "scale": 0.637,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 2.8,
+          "x": 0.2539,
+          "y": 0.4996,
+          "scale": 0.637,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 3.15,
+          "x": 0.2685,
+          "y": 0.5006,
+          "scale": 0.638,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 3.5,
+          "x": 0.2831,
+          "y": 0.5017,
+          "scale": 0.638,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 3.85,
+          "x": 0.2978,
+          "y": 0.5027,
+          "scale": 0.638,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 4.2,
+          "x": 0.3124,
+          "y": 0.5037,
+          "scale": 0.639,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 4.55,
+          "x": 0.327,
+          "y": 0.5048,
+          "scale": 0.639,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 4.9,
+          "x": 0.3416,
+          "y": 0.5058,
+          "scale": 0.64,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 5.25,
+          "x": 0.3562,
+          "y": 0.5069,
+          "scale": 0.64,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 5.6,
+          "x": 0.3708,
+          "y": 0.5079,
+          "scale": 0.64,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 5.95,
+          "x": 0.3854,
+          "y": 0.509,
+          "scale": 0.641,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 6.3,
+          "x": 0.4,
+          "y": 0.51,
+          "scale": 0.641,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 6.65,
+          "x": 0.3786,
+          "y": 0.5072,
+          "scale": 0.64,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 7.0,
+          "x": 0.3572,
+          "y": 0.5044,
+          "scale": 0.639,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 7.35,
+          "x": 0.3358,
+          "y": 0.5017,
+          "scale": 0.638,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 7.7,
+          "x": 0.3144,
+          "y": 0.4989,
+          "scale": 0.637,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 8.05,
+          "x": 0.2931,
+          "y": 0.4961,
+          "scale": 0.636,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 8.4,
+          "x": 0.2717,
+          "y": 0.4933,
+          "scale": 0.635,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 8.75,
+          "x": 0.2503,
+          "y": 0.4906,
+          "scale": 0.634,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 9.1,
+          "x": 0.22888888888888886,
+          "y": 0.48777777777777775,
+          "scale": 0.657,
+          "facing": "target",
+          "action": "look_through_microscope",
+          "grounded": true,
+          "interaction": true
+        },
+        {
+          "t": 9.45,
+          "x": 0.2568,
+          "y": 0.4887,
+          "scale": 0.634,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 9.8,
+          "x": 0.2848,
+          "y": 0.4895,
+          "scale": 0.634,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 10.15,
+          "x": 0.3127,
+          "y": 0.4904,
+          "scale": 0.634,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 10.5,
+          "x": 0.3406,
+          "y": 0.4913,
+          "scale": 0.634,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 10.85,
+          "x": 0.3686,
+          "y": 0.4921,
+          "scale": 0.635,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 11.2,
+          "x": 0.3965,
+          "y": 0.493,
+          "scale": 0.635,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 11.55,
+          "x": 0.4244,
+          "y": 0.4939,
+          "scale": 0.635,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 11.9,
+          "x": 0.4524,
+          "y": 0.4948,
+          "scale": 0.636,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 12.25,
+          "x": 0.4803,
+          "y": 0.4956,
+          "scale": 0.636,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 12.6,
+          "x": 0.5083,
+          "y": 0.4965,
+          "scale": 0.636,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 12.95,
+          "x": 0.5362,
+          "y": 0.4974,
+          "scale": 0.637,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 13.3,
+          "x": 0.5641,
+          "y": 0.4983,
+          "scale": 0.637,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 13.65,
+          "x": 0.5921,
+          "y": 0.4991,
+          "scale": 0.637,
+          "action": "continuous",
+          "grounded": true,
+          "walk_bob": true
+        },
+        {
+          "t": 14.0,
+          "x": 0.62,
+          "y": 0.5,
+          "scale": 0.637,
+          "facing": "camera",
+          "action": "arrive_and_gesture",
+          "grounded": true
+        }
+      ],
+      "path_summary": {
+        "start": {
+          "t": 0.0,
+          "x": 0.18,
+          "y": 0.52,
+          "scale": 0.644,
+          "facing": "right",
+          "action": "plant_and_depart",
+          "grounded": true
+        },
+        "end": {
+          "t": 14.0,
+          "x": 0.62,
+          "y": 0.5,
+          "scale": 0.637,
+          "facing": "camera",
+          "action": "arrive_and_gesture",
+          "grounded": true
+        },
+        "waypoint_count": 42,
+        "travel_norm": 0.4405
+      },
+      "true_motion_performance": "point_teach",
+      "emotion": "confidence",
+      "actor_driven": true,
+      "camera_follow_mode": "walk_and_talk",
+      "foot_contact_required": true,
+      "simulation": "blocking_locomotion_body_interaction"
+    },
+    "ken_burns": false,
+    "motion_class": "actor_performance",
+    "inherits_facial_plan": false,
+    "inherits_human_realism_plan": false,
+    "architecture": {
+      "frozen": true,
+      "no_new_renderer": true,
+      "no_pipeline_redesign": true,
+      "feeds": [
+        "animation_engine",
+        "true_motion",
+        "character_world_studio",
+        "shot_assembly"
+      ]
+    },
+    "true_motion": {
+      "performance": "point_teach",
+      "camera": "tracking",
+      "performance_path": {
+        "actor_driven": true,
+        "duration_sec": 14.0,
+        "performance": "point_teach",
+        "keyframes": [
+          {
+            "t": 0.0,
+            "x": 0.18,
+            "y": 0.52,
+            "scale": 0.644,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 0.35,
+            "x": 0.1922,
+            "y": 0.5169,
+            "scale": 0.643,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 0.7,
+            "x": 0.2044,
+            "y": 0.5139,
+            "scale": 0.642,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 1.05,
+            "x": 0.2167,
+            "y": 0.5108,
+            "scale": 0.641,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 1.4,
+            "x": 0.22888888888888886,
+            "y": 0.5077777777777778,
+            "scale": 0.664,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 1.75,
+            "x": 0.2289,
+            "y": 0.5034,
+            "scale": 0.639,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 2.1,
+            "x": 0.2289,
+            "y": 0.499,
+            "scale": 0.637,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 2.2,
+            "x": 0.22888888888888886,
+            "y": 0.49777777777777776,
+            "scale": 0.66,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 2.45,
+            "x": 0.2393,
+            "y": 0.4985,
+            "scale": 0.637,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 2.8,
+            "x": 0.2539,
+            "y": 0.4996,
+            "scale": 0.637,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 3.15,
+            "x": 0.2685,
+            "y": 0.5006,
+            "scale": 0.638,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 3.5,
+            "x": 0.2831,
+            "y": 0.5017,
+            "scale": 0.638,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 3.85,
+            "x": 0.2978,
+            "y": 0.5027,
+            "scale": 0.638,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 4.2,
+            "x": 0.3124,
+            "y": 0.5037,
+            "scale": 0.639,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 4.55,
+            "x": 0.327,
+            "y": 0.5048,
+            "scale": 0.639,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 4.9,
+            "x": 0.3416,
+            "y": 0.5058,
+            "scale": 0.64,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 5.25,
+            "x": 0.3562,
+            "y": 0.5069,
+            "scale": 0.64,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 5.6,
+            "x": 0.3708,
+            "y": 0.5079,
+            "scale": 0.64,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 5.95,
+            "x": 0.3854,
+            "y": 0.509,
+            "scale": 0.641,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 6.3,
+            "x": 0.4,
+            "y": 0.51,
+            "scale": 0.641,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 6.65,
+            "x": 0.3786,
+            "y": 0.5072,
+            "scale": 0.64,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 7.0,
+            "x": 0.3572,
+            "y": 0.5044,
+            "scale": 0.639,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 7.35,
+            "x": 0.3358,
+            "y": 0.5017,
+            "scale": 0.638,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 7.7,
+            "x": 0.3144,
+            "y": 0.4989,
+            "scale": 0.637,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 8.05,
+            "x": 0.2931,
+            "y": 0.4961,
+            "scale": 0.636,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 8.4,
+            "x": 0.2717,
+            "y": 0.4933,
+            "scale": 0.635,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 8.75,
+            "x": 0.2503,
+            "y": 0.4906,
+            "scale": 0.634,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 9.1,
+            "x": 0.22888888888888886,
+            "y": 0.48777777777777775,
+            "scale": 0.657,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 9.45,
+            "x": 0.2568,
+            "y": 0.4887,
+            "scale": 0.634,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 9.8,
+            "x": 0.2848,
+            "y": 0.4895,
+            "scale": 0.634,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 10.15,
+            "x": 0.3127,
+            "y": 0.4904,
+            "scale": 0.634,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 10.5,
+            "x": 0.3406,
+            "y": 0.4913,
+            "scale": 0.634,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 10.85,
+            "x": 0.3686,
+            "y": 0.4921,
+            "scale": 0.635,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 11.2,
+            "x": 0.3965,
+            "y": 0.493,
+            "scale": 0.635,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 11.55,
+            "x": 0.4244,
+            "y": 0.4939,
+            "scale": 0.635,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 11.9,
+            "x": 0.4524,
+            "y": 0.4948,
+            "scale": 0.636,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 12.25,
+            "x": 0.4803,
+            "y": 0.4956,
+            "scale": 0.636,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 12.6,
+            "x": 0.5083,
+            "y": 0.4965,
+            "scale": 0.636,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 12.95,
+            "x": 0.5362,
+            "y": 0.4974,
+            "scale": 0.637,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 13.3,
+            "x": 0.5641,
+            "y": 0.4983,
+            "scale": 0.637,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 13.65,
+            "x": 0.5921,
+            "y": 0.4991,
+            "scale": 0.637,
+            "walk_bob": true,
+            "grounded": true
+          },
+          {
+            "t": 14.0,
+            "x": 0.62,
+            "y": 0.5,
+            "scale": 0.637,
+            "walk_bob": true,
+            "grounded": true
+          }
+        ]
+      },
+      "actor_driven": true,
+      "not_ken_burns_only": true,
+      "camera_follow_mode": "walk_and_talk",
+      "character_performance_engine": true,
+      "environment_life_channels": [
+        "machines_operate",
+        "screens_update",
+        "lights_flicker",
+        "steam_rise",
+        "people_walk",
+        "particles_drift"
+      ]
+    },
+    "validation": {
+      "ok": true,
+      "score": 100,
+      "failures": [],
+      "rejects_hit": [],
+      "reject_catalog": [
+        "moving_still_image",
+        "camera_only_movement",
+        "ken_burns",
+        "floating_head",
+        "talking_photograph",
+        "static_background",
+        "minimal_body_movement",
+        "lifeless_performance",
+        "image_pan",
+        "image_zoom",
+        "photo_scale",
+        "photo_rotate",
+        "layer_slide_only"
+      ],
+      "quality_test": "Reject any shot that could be recreated by moving a still photograph.",
+      "success_standard": "Viewer believes: I'm watching an animated television show \u2014 not animated pictures.",
+      "mp4_required": true,
+      "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for genuine character animation."
+    },
+    "rendered_inspection": {
+      "inspect_mp4": true,
+      "checks": [
+        "character_walks_or_gestures_continuously",
+        "feet_contact_ground",
+        "no_ken_burns_only_feel",
+        "environment_elements_move",
+        "camera_follows_rather_than_replaces_action",
+        "interactions_with_props_or_set",
+        "no_floating_or_sliding",
+        "feels_like_animated_show_not_photos"
+      ],
+      "auto_pass_forbidden": true
+    }
+  },
+  "character_rig_package": {
+    "package_type": "CHARACTER_RIG_PACKAGE",
+    "package_version": "1.0.0",
+    "engine_id": "character_rig_studio",
+    "created_at": "2026-07-18T00:58:44.621629+00:00",
+    "character_id": "DOCTOR_001",
+    "philosophy": {
+      "not_a_renderer": true,
+      "not_an_image_generator": true,
+      "not_a_video_generator": true,
+      "rule": "Scenes reference the actor. Scenes never recreate the actor.",
+      "pipeline": [
+        "scene_director_chooses_actors",
+        "performance_engine_chooses_actions",
+        "character_rig_studio_executes_movement",
+        "renderer_records_performance"
+      ]
+    },
+    "identity": {
+      "character_id": "DOCTOR_001",
+      "canonical_name": "The Doctor",
+      "role": "canonical_medical_educator",
+      "age_appearance": "adult_ageless_cyborg",
+      "body_type": "athletic_approachable_humanoid",
+      "height_cm": 185.0,
+      "proportions": "hero_educator_canonical",
+      "continuity_version": "1.1.0",
+      "forbid_regenerate_per_scene": true,
+      "permanent_digital_actor": true,
+      "is_gold_standard": true,
+      "status": "permanent",
+      "studio_asset_path": "data/studio_assets/DOCTOR_001/",
+      "voice_ref": "VOICE-THE-DOCTOR-001",
+      "composed_from_existing": true
+    },
+    "body_rig": {
+      "character_id": "DOCTOR_001",
+      "rig_type": "generational_body_rig_v1",
+      "hierarchy": [
+        "root",
+        "pelvis",
+        "spine_01",
+        "spine_02",
+        "spine_03",
+        "chest",
+        "neck",
+        "head",
+        "jaw",
+        "tongue",
+        "eye_left",
+        "eye_right",
+        "eyelid_upper_left",
+        "eyelid_upper_right",
+        "eyelid_lower_left",
+        "eyelid_lower_right",
+        "clavicle_left",
+        "shoulder_left",
+        "upper_arm_left",
+        "elbow_left",
+        "forearm_left",
+        "wrist_left",
+        "hand_left",
+        "thumb_01_left",
+        "thumb_02_left",
+        "thumb_03_left",
+        "index_01_left",
+        "index_02_left",
+        "index_03_left",
+        "middle_01_left",
+        "middle_02_left",
+        "middle_03_left",
+        "ring_01_left",
+        "ring_02_left",
+        "ring_03_left",
+        "pinky_01_left",
+        "pinky_02_left",
+        "pinky_03_left",
+        "clavicle_right",
+        "shoulder_right",
+        "upper_arm_right",
+        "elbow_right",
+        "forearm_right",
+        "wrist_right",
+        "hand_right",
+        "thumb_01_right",
+        "thumb_02_right",
+        "thumb_03_right",
+        "index_01_right",
+        "index_02_right",
+        "index_03_right",
+        "middle_01_right",
+        "middle_02_right",
+        "middle_03_right",
+        "ring_01_right",
+        "ring_02_right",
+        "ring_03_right",
+        "pinky_01_right",
+        "pinky_02_right",
+        "pinky_03_right",
+        "hip_left",
+        "thigh_left",
+        "knee_left",
+        "shin_left",
+        "ankle_left",
+        "foot_left",
+        "toes_left",
+        "hip_right",
+        "thigh_right",
+        "knee_right",
+        "shin_right",
+        "ankle_right",
+        "foot_right",
+        "toes_right"
+      ],
+      "joint_count": 74,
+      "scale": 1.0571,
+      "height_cm": 185.0,
+      "capabilities": [
+        "walking",
+        "running",
+        "turning",
+        "sitting",
+        "standing",
+        "jumping",
+        "pointing",
+        "lifting",
+        "reaching",
+        "natural_balance",
+        "weight_shifting"
+      ],
+      "rules": [
+        "movement_originates_from_skeleton",
+        "weight_through_pelvis",
+        "head_stabilizes_via_spine",
+        "hands_never_float",
+        "feet_contact_ground",
+        "no_limb_length_drift"
+      ],
+      "joint_constraints_defaults": [
+        {
+          "joint": "elbow",
+          "rotation_min_deg": [
+            0,
+            -20,
+            -10
+          ],
+          "rotation_max_deg": [
+            145,
+            20,
+            10
+          ],
+          "preferred_axis": "local_x",
+          "soft_limit": true
+        },
+        {
+          "joint": "knee",
+          "rotation_min_deg": [
+            0,
+            -5,
+            -5
+          ],
+          "rotation_max_deg": [
+            140,
+            5,
+            5
+          ],
+          "preferred_axis": "local_x",
+          "soft_limit": true
+        },
+        {
+          "joint": "neck",
+          "rotation_min_deg": [
+            -35,
+            -45,
+            -25
+          ],
+          "rotation_max_deg": [
+            35,
+            45,
+            25
+          ],
+          "preferred_axis": "local_y",
+          "soft_limit": true
+        }
+      ],
+      "existing_skeleton_ref": "SKELETON_PROFILE.json",
+      "reusable": true,
+      "regenerate_per_scene": false
+    },
+    "facial_rig": {
+      "character_id": "DOCTOR_001",
+      "rig_version": "1.0.0",
+      "canonical": true,
+      "controls": {
+        "forehead_raise": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "brow_inner_left": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "brow_inner_right": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "brow_outer_left": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "brow_outer_right": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "upper_lid_left": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "upper_lid_right": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "lower_lid_left": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "lower_lid_right": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "eyeball_yaw_left": {
+          "min": -1.0,
+          "max": 1.0
+        },
+        "eyeball_yaw_right": {
+          "min": -1.0,
+          "max": 1.0
+        },
+        "eyeball_pitch_left": {
+          "min": -1.0,
+          "max": 1.0
+        },
+        "eyeball_pitch_right": {
+          "min": -1.0,
+          "max": 1.0
+        },
+        "pupil_dilate_left": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "pupil_dilate_right": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "cheek_raise_left": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "cheek_raise_right": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "nose_bridge_wrinkle": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "nostril_flare": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "upper_lip": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "lower_lip": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "lip_corner_left": {
+          "min": -1.0,
+          "max": 1.0
+        },
+        "lip_corner_right": {
+          "min": -1.0,
+          "max": 1.0
+        },
+        "jaw_open": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "chin_raise": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "neck_tension": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "ear_left": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "ear_right": {
+          "min": 0.0,
+          "max": 1.0
+        }
+      },
+      "regions": [
+        "forehead",
+        "inner_eyebrows",
+        "outer_eyebrows",
+        "upper_eyelids",
+        "lower_eyelids",
+        "eyeballs",
+        "pupils",
+        "cheeks",
+        "nose_bridge",
+        "nostrils",
+        "upper_lip",
+        "lower_lip",
+        "lip_corners",
+        "jaw",
+        "chin",
+        "neck_tension",
+        "ear_movement"
+      ],
+      "continuity_rule": "Same canonical facial rig across all scenes for this character.",
+      "pipeline": [
+        "scene_intent",
+        "emotional_state",
+        "attention_target",
+        "facial_performance_plan",
+        "eye_and_head_coordination",
+        "expression_blending",
+        "speech_and_viseme_animation",
+        "micro_expression_layer",
+        "rendered_performance_validation"
+      ],
+      "regions_supported": [
+        "eye_movement",
+        "eyelids",
+        "eyebrows",
+        "forehead",
+        "cheeks",
+        "nose",
+        "jaw",
+        "lips",
+        "tongue",
+        "neck_tension",
+        "micro_expressions"
+      ],
+      "emotions_supported": [
+        "smiles",
+        "frowns",
+        "concern",
+        "joy",
+        "curiosity",
+        "surprise",
+        "determination",
+        "empathy",
+        "speech"
+      ],
+      "reusable": true,
+      "source": "composed_existing_FACE_RIG_PROFILE"
+    },
+    "eye_system": {
+      "character_id": "DOCTOR_001",
+      "capabilities": [
+        "focus_targets",
+        "eye_tracking",
+        "attention_shifts",
+        "blink_timing",
+        "pupil_dilation",
+        "conversation_gaze",
+        "environment_scanning",
+        "reading",
+        "camera_awareness"
+      ],
+      "default_blink_interval_sec": [
+        2.2,
+        5.5
+      ],
+      "pupil_dilation_range": [
+        0.15,
+        0.95
+      ],
+      "gaze_modes": [
+        "conversation",
+        "environment_scan",
+        "reading",
+        "camera_address",
+        "task_focus"
+      ],
+      "saccade_enabled": true,
+      "vergence_enabled": true,
+      "forbid_dead_stare": true,
+      "forbid_unsynced_eyes": true,
+      "reusable": true
+    },
+    "hand_system": {
+      "character_id": "DOCTOR_001",
+      "capabilities": [
+        "individual_finger_movement",
+        "natural_grip",
+        "object_interaction",
+        "gesture_libraries",
+        "medical_demonstrations",
+        "writing",
+        "touching_holograms",
+        "holding_books",
+        "holding_tools"
+      ],
+      "fingers_per_hand": 5,
+      "joints_per_finger": 3,
+      "grip_presets": [
+        "relaxed",
+        "precision_pinch",
+        "power_grip",
+        "tool_grip",
+        "book_cradle",
+        "hologram_point",
+        "writing"
+      ],
+      "gesture_library": [
+        "open_palm_teach",
+        "point_index",
+        "ok_precision",
+        "hold_tool",
+        "hold_book",
+        "hologram_touch",
+        "writing_grip",
+        "medical_demo_pinch",
+        "reassure_rest",
+        "typing_home_row",
+        "open_palm_reassurance",
+        "hologram_pinch",
+        "clipboard_point",
+        "scanner_sweep",
+        "heart_hand",
+        "chin_think"
+      ],
+      "object_interaction": true,
+      "left_right_independent": true,
+      "forbid_mitten_hands": true,
+      "forbid_floating_props": true,
+      "reusable": true,
+      "existing_ref": "HAND_POSE_LIBRARY.json"
+    },
+    "body_mechanics": {
+      "character_id": "DOCTOR_001",
+      "forbid": [
+        "foot_sliding",
+        "floating",
+        "teleporting_poses",
+        "broken_joints",
+        "weightless_movement"
+      ],
+      "ensure": [
+        "foot_planting",
+        "hip_rotation",
+        "natural_momentum",
+        "secondary_motion",
+        "balanced_posture"
+      ],
+      "foot_ik": true,
+      "ground_contact_required": true,
+      "hip_leads_turns": true,
+      "secondary_motion": [
+        "coat_sway",
+        "hair_follow",
+        "soft_tissue_micro"
+      ],
+      "balance_solver": "pelvis_com_projection",
+      "no_pose_teleport": true
+    },
+    "wardrobe": {
+      "character_id": "DOCTOR_001",
+      "architecture": "clothing_separated_from_body",
+      "default_outfit": "lab_coat",
+      "outfits": [
+        {
+          "id": "lab_coat",
+          "layers": [
+            "base_chassis",
+            "undershirt",
+            "lab_coat",
+            "accent_trim"
+          ],
+          "separated_from_body": true,
+          "cloth_sim": true
+        },
+        {
+          "id": "research_attire",
+          "layers": [
+            "base",
+            "research_smock"
+          ],
+          "separated_from_body": true,
+          "cloth_sim": true
+        },
+        {
+          "id": "casual_clothing",
+          "layers": [
+            "base_garment",
+            "casual_clothing"
+          ],
+          "separated_from_body": true,
+          "cloth_sim": true
+        },
+        {
+          "id": "emergency_gear",
+          "layers": [
+            "base",
+            "utility_layer",
+            "emergency_vest"
+          ],
+          "separated_from_body": true,
+          "cloth_sim": true
+        }
+      ],
+      "outfit_ids": [
+        "lab_coat",
+        "research_attire",
+        "casual_clothing",
+        "emergency_gear"
+      ],
+      "simulate_as_fabric": true,
+      "responds_to": [
+        "walk",
+        "run",
+        "arm_move",
+        "sit",
+        "wind",
+        "gravity",
+        "contact",
+        "turn",
+        "stop"
+      ],
+      "forbid": [
+        "frozen_fabric",
+        "fabric_leads_body",
+        "identical_motion_all_garments",
+        "limb_clipping"
+      ],
+      "inheritable_architecture": true,
+      "existing_ref": "WARDROBE_PROFILE.json",
+      "reusable": true
+    },
+    "materials": {
+      "character_id": "DOCTOR_001",
+      "skin": {
+        "type": "cinematic_skin",
+        "subsurface": true
+      },
+      "hair": {
+        "responds_to": [
+          "gravity",
+          "head_motion",
+          "accel",
+          "decel",
+          "wind",
+          "moisture",
+          "collision"
+        ],
+        "require": [
+          "root_stability",
+          "strand_grouping",
+          "secondary_motion",
+          "damping",
+          "follow_through"
+        ],
+        "forbid": [
+          "rigid_helmet",
+          "ignore_gravity",
+          "face_clipping",
+          "constant_exaggerated_wind"
+        ],
+        "shared_world_wind": true
+      },
+      "eyes": {
+        "wetness": true,
+        "catchlights": true,
+        "iris_detail": true
+      },
+      "metal_or_props": {
+        "primary": "#F4F7FA",
+        "titanium": "#8A939E",
+        "accent": "#3BA7E0",
+        "eyes": "#7FD4FF"
+      },
+      "wardrobe_materials_follow_outfit": true,
+      "reusable": true
+    },
+    "performance_system": {
+      "character_id": "DOCTOR_001",
+      "clip_count": 18,
+      "required_clips": [
+        "idle",
+        "thinking",
+        "teaching",
+        "listening",
+        "greeting",
+        "walking",
+        "turning",
+        "explaining",
+        "laughing",
+        "typing",
+        "writing",
+        "pointing",
+        "looking_around",
+        "picking_up_objects",
+        "opening_doors",
+        "sitting",
+        "standing",
+        "reacting"
+      ],
+      "clips": {
+        "idle": {
+          "clip_id": "DOCTOR_001_idle",
+          "name": "idle",
+          "reusable": true,
+          "loop": true,
+          "rig_bound": true,
+          "source_file": "idle.json",
+          "status": "bound"
+        },
+        "thinking": {
+          "clip_id": "DOCTOR_001_thinking",
+          "name": "thinking",
+          "reusable": true,
+          "loop": false,
+          "rig_bound": true,
+          "source_file": "listening.json",
+          "status": "bound"
+        },
+        "teaching": {
+          "clip_id": "DOCTOR_001_teaching",
+          "name": "teaching",
+          "reusable": true,
+          "loop": false,
+          "rig_bound": true,
+          "source_file": "teaching.json",
+          "status": "bound"
+        },
+        "listening": {
+          "clip_id": "DOCTOR_001_listening",
+          "name": "listening",
+          "reusable": true,
+          "loop": true,
+          "rig_bound": true,
+          "source_file": "listening.json",
+          "status": "bound"
+        },
+        "greeting": {
+          "clip_id": "DOCTOR_001_greeting",
+          "name": "greeting",
+          "reusable": true,
+          "loop": false,
+          "rig_bound": true,
+          "source_file": "greeting.json",
+          "status": "bound"
+        },
+        "walking": {
+          "clip_id": "DOCTOR_001_walking",
+          "name": "walking",
+          "reusable": true,
+          "loop": true,
+          "rig_bound": true,
+          "source_file": "walking_cycle.json",
+          "status": "bound"
+        },
+        "turning": {
+          "clip_id": "DOCTOR_001_turning",
+          "name": "turning",
+          "reusable": true,
+          "loop": false,
+          "rig_bound": true,
+          "source_file": "turning.json",
+          "status": "bound"
+        },
+        "explaining": {
+          "clip_id": "DOCTOR_001_explaining",
+          "name": "explaining",
+          "reusable": true,
+          "loop": false,
+          "rig_bound": true,
+          "source_file": "explaining.json",
+          "status": "bound"
+        },
+        "laughing": {
+          "clip_id": "DOCTOR_001_laughing",
+          "name": "laughing",
+          "reusable": true,
+          "loop": false,
+          "rig_bound": true,
+          "source_file": "reactions/reaction_amusement.json",
+          "status": "bound"
+        },
+        "typing": {
+          "clip_id": "DOCTOR_001_typing",
+          "name": "typing",
+          "reusable": true,
+          "loop": true,
+          "rig_bound": true,
+          "source_file": "typing.json",
+          "status": "bound"
+        },
+        "writing": {
+          "clip_id": "DOCTOR_001_writing",
+          "name": "writing",
+          "reusable": true,
+          "loop": false,
+          "rig_bound": true,
+          "source_file": "typing.json",
+          "status": "bound"
+        },
+        "pointing": {
+          "clip_id": "DOCTOR_001_pointing",
+          "name": "pointing",
+          "reusable": true,
+          "loop": false,
+          "rig_bound": true,
+          "source_file": "pointing.json",
+          "status": "bound"
+        },
+        "looking_around": {
+          "clip_id": "DOCTOR_001_looking_around",
+          "name": "looking_around",
+          "reusable": true,
+          "loop": false,
+          "rig_bound": true,
+          "source_file": "looking_around.json",
+          "status": "bound"
+        },
+        "picking_up_objects": {
+          "clip_id": "DOCTOR_001_picking_up_objects",
+          "name": "picking_up_objects",
+          "reusable": true,
+          "loop": false,
+          "rig_bound": true,
+          "source_file": "picking_up_objects.json",
+          "status": "bound"
+        },
+        "opening_doors": {
+          "clip_id": "DOCTOR_001_opening_doors",
+          "name": "opening_doors",
+          "reusable": true,
+          "loop": false,
+          "rig_bound": true,
+          "source_file": "picking_up_objects.json",
+          "status": "bound"
+        },
+        "sitting": {
+          "clip_id": "DOCTOR_001_sitting",
+          "name": "sitting",
+          "reusable": true,
+          "loop": false,
+          "rig_bound": true,
+          "source_file": "idle.json",
+          "status": "bound"
+        },
+        "standing": {
+          "clip_id": "DOCTOR_001_standing",
+          "name": "standing",
+          "reusable": true,
+          "loop": false,
+          "rig_bound": true,
+          "source_file": "idle.json",
+          "status": "bound"
+        },
+        "reacting": {
+          "clip_id": "DOCTOR_001_reacting",
+          "name": "reacting",
+          "reusable": true,
+          "loop": false,
+          "rig_bound": true,
+          "source_file": "reactions/reaction_curiosity.json",
+          "status": "bound"
+        }
+      },
+      "animation_library_ref": "data/studio_assets/DOCTOR_001/ANIMATION/",
+      "existing_index": {
+        "clips": {
+          "idle": "idle.json",
+          "breathing": "breathing.json",
+          "blinking": "blinking.json",
+          "walking_cycle": "walking_cycle.json",
+          "running_cycle": "running_cycle.json",
+          "talking": "talking.json",
+          "pointing": "pointing.json",
+          "teaching": "teaching.json",
+          "listening": "listening.json",
+          "turning": "turning.json",
+          "stopping": "stopping.json",
+          "greeting": "greeting.json",
+          "explaining": "explaining.json",
+          "looking_around": "looking_around.json",
+          "picking_up_objects": "picking_up_objects.json",
+          "interacting_with_equipment": "interacting_with_equipment.json",
+          "holding_medical_scanner": "holding_medical_scanner.json",
+          "using_holograms": "using_holograms.json",
+          "typing": "typing.json",
+          "reaction_curiosity": "reactions/reaction_curiosity.json",
+          "reaction_concern": "reactions/reaction_concern.json",
+          "reaction_delight": "reactions/reaction_delight.json",
+          "reaction_surprise": "reactions/reaction_surprise.json",
+          "reaction_compassion": "reactions/reaction_compassion.json",
+          "reaction_determination": "reactions/reaction_determination.json",
+          "reaction_amusement": "reactions/reaction_amusement.json",
+          "reaction_realization": "reactions/reaction_realization.json"
+        },
+        "count": 27
+      },
+      "philosophy": "Actors own clips. Scenes choose actions. Never regenerate walks per episode.",
+      "reusable": true
+    },
+    "personality": {
+      "character_id": "DOCTOR_001",
+      "traits": [
+        "highly_intelligent",
+        "patient",
+        "curious",
+        "optimistic",
+        "encouraging",
+        "evidence_driven",
+        "compassionate"
+      ],
+      "default_performance_energy": "measured_teach",
+      "camera_awareness": true,
+      "reusable": true
+    },
+    "asset_refs": {
+      "studio_root": "data/studio_assets/DOCTOR_001/",
+      "skeleton": "SKELETON_PROFILE.json",
+      "face_rig": "FACE_RIG_PROFILE.json",
+      "wardrobe": "WARDROBE_PROFILE.json",
+      "animation": "ANIMATION/",
+      "character_rig_dir": "CHARACTER_RIG/"
+    },
+    "architecture": {
+      "frozen": true,
+      "no_new_renderer": true,
+      "no_pipeline_redesign": true,
+      "feeds": [
+        "character_world_studio",
+        "character_performance_engine",
+        "character_performance",
+        "animation_engine",
+        "true_motion"
+      ]
+    },
+    "validation": {
+      "ok": true,
+      "score": 100,
+      "failures": [],
+      "rejects_hit": [],
+      "reject_catalog": [
+        "appearance_changes_between_scenes",
+        "inconsistent_proportions",
+        "cannot_perform_natural_walking",
+        "cannot_perform_expressive_facial_acting",
+        "cannot_interact_with_objects",
+        "cannot_maintain_eye_contact",
+        "cannot_support_reusable_animation_clips"
+      ],
+      "rule": "Scenes reference the actor. Scenes never recreate the actor.",
+      "success": "Permanent cast of digital actors with reusable rigs, animations, personalities, and performances."
+    },
+    "scene_ref": {
+      "character_id": "DOCTOR_001",
+      "character_rig_ref": "data/studio_assets/DOCTOR_001/CHARACTER_RIG/CHARACTER_RIG_PACKAGE.json",
+      "continuity_version": "1.1.0",
+      "do_not_regenerate": true
+    }
+  },
+  "world_package": {
+    "package_type": "WORLD_PACKAGE",
+    "package_version": "1.0.0",
+    "engine_id": "stage_world_simulation",
+    "created_at": "2026-07-18T01:06:12.908528+00:00",
+    "world_id": "WORLD-GMRI-MEDICAL-LAB",
+    "display_name": "Generational Medical Lab",
+    "location_alias": "LOC-GMRI",
+    "persistent": true,
+    "flat_image_background": false,
+    "philosophy": {
+      "not_a_renderer": true,
+      "not_an_image_generator": true,
+      "rule": "Characters move through the world. They do not stand in front of photographs.",
+      "pipeline": [
+        "build_persistent_stage",
+        "place_digital_actors",
+        "navigate_and_interact",
+        "camera_follows_performance",
+        "renderer_records"
+      ]
+    },
+    "geometry": {
+      "world_id": "WORLD-GMRI-MEDICAL-LAB",
+      "elements_required": [
+        "floor",
+        "walls",
+        "ceilings",
+        "doors",
+        "windows",
+        "furniture",
+        "props"
+      ],
+      "dimensions_m": {
+        "x": 18.0,
+        "y": 4.2,
+        "z": 14.0
+      },
+      "floor": [
+        {
+          "id": "main_floor",
+          "bounds": [
+            [
+              -9.0,
+              0,
+              -7.0
+            ],
+            [
+              9.0,
+              0,
+              7.0
+            ]
+          ],
+          "walkable": true,
+          "material": "interior_floor"
+        }
+      ],
+      "walls": [
+        {
+          "id": "wall_n",
+          "plane": "north",
+          "openings": [
+            "window_n"
+          ]
+        },
+        {
+          "id": "wall_s",
+          "plane": "south",
+          "openings": [
+            "door_main"
+          ]
+        },
+        {
+          "id": "wall_e",
+          "plane": "east",
+          "openings": []
+        },
+        {
+          "id": "wall_w",
+          "plane": "west",
+          "openings": [
+            "window_w"
+          ]
+        }
+      ],
+      "ceilings": [
+        {
+          "id": "main_ceiling",
+          "height_m": 4.2,
+          "material": "acoustic_or_structural"
+        }
+      ],
+      "doors": [
+        {
+          "id": "door_main",
+          "position": [
+            0.0,
+            0.0,
+            -6.9
+          ],
+          "swing": "inward",
+          "interactable": true
+        }
+      ],
+      "windows": [
+        {
+          "id": "window_n",
+          "position": [
+            0.0,
+            2.3100000000000005,
+            6.95
+          ]
+        },
+        {
+          "id": "window_w",
+          "position": [
+            -8.95,
+            2.3100000000000005,
+            0.0
+          ]
+        }
+      ],
+      "furniture": [
+        {
+          "id": "furn_teaching_console_0",
+          "type": "console",
+          "position": [
+            -4.5,
+            0.0,
+            -2.1
+          ],
+          "collision": true,
+          "navigable_around": true
+        },
+        {
+          "id": "furn_analysis_desk_1",
+          "type": "desk",
+          "position": [
+            -0.8999999999999999,
+            0.0,
+            -2.1
+          ],
+          "collision": true,
+          "navigable_around": true
+        },
+        {
+          "id": "furn_stool_chair_2",
+          "type": "chair",
+          "position": [
+            2.7,
+            0.0,
+            -2.1
+          ],
+          "collision": true,
+          "navigable_around": true
+        },
+        {
+          "id": "furn_equipment_rack_3",
+          "type": "equipment_rack",
+          "position": [
+            -4.5,
+            0.0,
+            -0.7000000000000002
+          ],
+          "collision": true,
+          "navigable_around": true
+        }
+      ],
+      "props": [
+        {
+          "id": "prop_microscope_0",
+          "type": "microscope",
+          "position": [
+            -4.5,
+            0.0,
+            -0.9000000000000001
+          ],
+          "collision": true,
+          "interactable": true
+        },
+        {
+          "id": "prop_hologram_1",
+          "type": "hologram",
+          "position": [
+            -0.8999999999999999,
+            0.0,
+            -0.9000000000000001
+          ],
+          "collision": false,
+          "interactable": true
+        },
+        {
+          "id": "prop_whiteboard_2",
+          "type": "whiteboard",
+          "position": [
+            2.7,
+            0.0,
+            -0.9000000000000001
+          ],
+          "collision": true,
+          "interactable": true
+        },
+        {
+          "id": "prop_door_3",
+          "type": "door",
+          "position": [
+            -4.5,
+            0.0,
+            0.4999999999999998
+          ],
+          "collision": true,
+          "interactable": true
+        },
+        {
+          "id": "prop_medical_scanner_4",
+          "type": "medical_scanner",
+          "position": [
+            -0.8999999999999999,
+            0.0,
+            0.4999999999999998
+          ],
+          "collision": true,
+          "interactable": true
+        }
+      ],
+      "not_a_flat_image": true,
+      "explorable_volume": true,
+      "persistent": true
+    },
+    "navigation": {
+      "world_id": "WORLD-GMRI-MEDICAL-LAB",
+      "nav_mesh": {
+        "walkable": {
+          "polygon": [
+            [
+              -8.6,
+              0.0,
+              -6.6
+            ],
+            [
+              8.6,
+              0.0,
+              -6.6
+            ],
+            [
+              8.6,
+              0.0,
+              6.6
+            ],
+            [
+              -8.6,
+              0.0,
+              6.6
+            ]
+          ],
+          "agent_radius_m": 0.35,
+          "agent_height_m": 1.8
+        },
+        "obstacles": [
+          {
+            "id": "furn_teaching_console_0",
+            "center": [
+              -4.5,
+              0.0,
+              -2.1
+            ],
+            "radius_m": 0.55,
+            "navigable_around": true
+          },
+          {
+            "id": "furn_analysis_desk_1",
+            "center": [
+              -0.8999999999999999,
+              0.0,
+              -2.1
+            ],
+            "radius_m": 0.55,
+            "navigable_around": true
+          },
+          {
+            "id": "furn_stool_chair_2",
+            "center": [
+              2.7,
+              0.0,
+              -2.1
+            ],
+            "radius_m": 0.55,
+            "navigable_around": true
+          },
+          {
+            "id": "furn_equipment_rack_3",
+            "center": [
+              -4.5,
+              0.0,
+              -0.7000000000000002
+            ],
+            "radius_m": 0.55,
+            "navigable_around": true
+          },
+          {
+            "id": "prop_microscope_0",
+            "center": [
+              -4.5,
+              0.0,
+              -0.9000000000000001
+            ],
+            "radius_m": 0.55,
+            "navigable_around": true
+          },
+          {
+            "id": "prop_whiteboard_2",
+            "center": [
+              2.7,
+              0.0,
+              -0.9000000000000001
+            ],
+            "radius_m": 0.55,
+            "navigable_around": true
+          },
+          {
+            "id": "prop_door_3",
+            "center": [
+              -4.5,
+              0.0,
+              0.4999999999999998
+            ],
+            "radius_m": 0.55,
+            "navigable_around": true
+          },
+          {
+            "id": "prop_medical_scanner_4",
+            "center": [
+              -0.8999999999999999,
+              0.0,
+              0.4999999999999998
+            ],
+            "radius_m": 0.55,
+            "navigable_around": true
+          }
+        ],
+        "waypoints": [
+          {
+            "id": "spawn_entrance",
+            "position": [
+              0.0,
+              0.0,
+              -5.8
+            ],
+            "kind": "entrance"
+          },
+          {
+            "id": "center_stage",
+            "position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "kind": "performance"
+          },
+          {
+            "id": "teach_mark",
+            "position": [
+              2.6999999999999997,
+              0.0,
+              1.4000000000000001
+            ],
+            "kind": "performance"
+          },
+          {
+            "id": "prop_approach",
+            "position": [
+              3.6,
+              0.0,
+              2.1
+            ],
+            "kind": "interaction"
+          }
+        ],
+        "paths": [
+          {
+            "id": "enter_to_center",
+            "from": "spawn_entrance",
+            "to": "center_stage"
+          },
+          {
+            "id": "center_to_teach",
+            "from": "center_stage",
+            "to": "teach_mark"
+          },
+          {
+            "id": "teach_to_prop",
+            "from": "teach_mark",
+            "to": "prop_approach"
+          }
+        ],
+        "stairs": false,
+        "collision_avoidance": true
+      },
+      "capabilities": [
+        "walking",
+        "running",
+        "turning",
+        "stairs",
+        "sitting",
+        "opening_doors",
+        "approaching_objects",
+        "moving_around_furniture",
+        "avoiding_collisions"
+      ],
+      "forbid_teleport": true,
+      "forbid_slide_through_geometry": true,
+      "actors_navigate_world": true,
+      "not_photo_backdrop": true
+    },
+    "interaction_points": {
+      "world_id": "WORLD-GMRI-MEDICAL-LAB",
+      "points": [
+        {
+          "id": "interact_furn_teaching_console_0",
+          "target_id": "furn_teaching_console_0",
+          "target_type": "console",
+          "position": [
+            -4.5,
+            0.0,
+            -2.1
+          ],
+          "actions": [
+            "type",
+            "touch",
+            "lean"
+          ],
+          "approach_radius_m": 0.9,
+          "requires_navigation": true
+        },
+        {
+          "id": "interact_furn_analysis_desk_1",
+          "target_id": "furn_analysis_desk_1",
+          "target_type": "desk",
+          "position": [
+            -0.8999999999999999,
+            0.0,
+            -2.1
+          ],
+          "actions": [
+            "lean",
+            "write",
+            "place_object"
+          ],
+          "approach_radius_m": 0.9,
+          "requires_navigation": true
+        },
+        {
+          "id": "interact_furn_stool_chair_2",
+          "target_id": "furn_stool_chair_2",
+          "target_type": "chair",
+          "position": [
+            2.7,
+            0.0,
+            -2.1
+          ],
+          "actions": [
+            "sit",
+            "stand"
+          ],
+          "approach_radius_m": 0.9,
+          "requires_navigation": true
+        },
+        {
+          "id": "interact_furn_equipment_rack_3",
+          "target_id": "furn_equipment_rack_3",
+          "target_type": "equipment_rack",
+          "position": [
+            -4.5,
+            0.0,
+            -0.7000000000000002
+          ],
+          "actions": [
+            "inspect",
+            "approach"
+          ],
+          "approach_radius_m": 0.9,
+          "requires_navigation": true
+        },
+        {
+          "id": "interact_prop_microscope_0",
+          "target_id": "prop_microscope_0",
+          "target_type": "microscope",
+          "position": [
+            -4.5,
+            0.0,
+            -0.9000000000000001
+          ],
+          "actions": [
+            "inspect",
+            "adjust",
+            "point"
+          ],
+          "approach_radius_m": 0.9,
+          "requires_navigation": true
+        },
+        {
+          "id": "interact_prop_hologram_1",
+          "target_id": "prop_hologram_1",
+          "target_type": "hologram",
+          "position": [
+            -0.8999999999999999,
+            0.0,
+            -0.9000000000000001
+          ],
+          "actions": [
+            "point",
+            "gesture",
+            "explain"
+          ],
+          "approach_radius_m": 0.9,
+          "requires_navigation": true
+        },
+        {
+          "id": "interact_prop_whiteboard_2",
+          "target_id": "prop_whiteboard_2",
+          "target_type": "whiteboard",
+          "position": [
+            2.7,
+            0.0,
+            -0.9000000000000001
+          ],
+          "actions": [
+            "write",
+            "erase",
+            "present"
+          ],
+          "approach_radius_m": 0.9,
+          "requires_navigation": true
+        },
+        {
+          "id": "interact_prop_door_3",
+          "target_id": "prop_door_3",
+          "target_type": "door",
+          "position": [
+            -4.5,
+            0.0,
+            0.4999999999999998
+          ],
+          "actions": [
+            "open",
+            "close",
+            "enter",
+            "exit"
+          ],
+          "approach_radius_m": 0.9,
+          "requires_navigation": true
+        },
+        {
+          "id": "interact_prop_medical_scanner_4",
+          "target_id": "prop_medical_scanner_4",
+          "target_type": "medical_scanner",
+          "position": [
+            -0.8999999999999999,
+            0.0,
+            0.4999999999999998
+          ],
+          "actions": [
+            "inspect",
+            "approach"
+          ],
+          "approach_radius_m": 0.9,
+          "requires_navigation": true
+        },
+        {
+          "id": "interact_door_main",
+          "target_id": "door_main",
+          "target_type": "door",
+          "position": [
+            0.0,
+            0.0,
+            -6.9
+          ],
+          "actions": [
+            "open",
+            "close",
+            "enter",
+            "exit"
+          ],
+          "approach_radius_m": 0.8,
+          "requires_navigation": true
+        }
+      ],
+      "count": 10,
+      "action_catalog": {
+        "chair": [
+          "sit",
+          "stand"
+        ],
+        "desk": [
+          "lean",
+          "write",
+          "place_object"
+        ],
+        "microscope": [
+          "inspect",
+          "adjust",
+          "point"
+        ],
+        "whiteboard": [
+          "write",
+          "erase",
+          "present"
+        ],
+        "door": [
+          "open",
+          "close",
+          "enter",
+          "exit"
+        ],
+        "hologram": [
+          "point",
+          "gesture",
+          "explain"
+        ],
+        "console": [
+          "type",
+          "touch",
+          "lean"
+        ],
+        "bookshelf": [
+          "browse",
+          "take_book",
+          "place_book"
+        ],
+        "bench": [
+          "sit",
+          "stand"
+        ],
+        "exhibit": [
+          "inspect",
+          "point",
+          "activate"
+        ]
+      },
+      "every_prop_advertises_interactions": true,
+      "forbid_non_interactive_set_dressing_as_primary": true
+    },
+    "lighting": {
+      "mood": "clinical_warm",
+      "dynamic": true
+    },
+    "weather": "interior_climate",
+    "ambient_effects": [
+      "ambient_particles",
+      "lighting_changes",
+      "animated_screens",
+      "people_walking",
+      "steam"
+    ],
+    "living_world": {
+      "world_id": "WORLD-GMRI-MEDICAL-LAB",
+      "living": true,
+      "forbid_static_environment": true,
+      "channels": [
+        "ambient_particles",
+        "lighting_changes",
+        "animated_screens",
+        "people_walking",
+        "steam"
+      ],
+      "tracks": [
+        {
+          "id": "ambient_particles",
+          "continuous": true,
+          "layer": "midground",
+          "amplitude": 0.4
+        },
+        {
+          "id": "lighting_changes",
+          "continuous": true,
+          "layer": "midground",
+          "amplitude": 0.4
+        },
+        {
+          "id": "animated_screens",
+          "continuous": true,
+          "layer": "midground",
+          "amplitude": 0.4
+        },
+        {
+          "id": "people_walking",
+          "continuous": true,
+          "layer": "midground",
+          "amplitude": 0.4
+        },
+        {
+          "id": "steam",
+          "continuous": true,
+          "layer": "midground",
+          "amplitude": 0.4
+        }
+      ],
+      "weather": "interior_climate",
+      "lighting": "clinical_warm",
+      "lighting_dynamic": true,
+      "philosophy": "The environment is never static."
+    },
+    "camera": {
+      "world_id": "WORLD-GMRI-MEDICAL-LAB",
+      "modes": [
+        "tracking",
+        "follow",
+        "wide_establishing",
+        "medium_coverage",
+        "close_up_reaction",
+        "over_the_shoulder",
+        "motivated"
+      ],
+      "default_mode": "medium_coverage",
+      "follows_performance": true,
+      "camera_replaces_actor_motion": false,
+      "motivated_only": true,
+      "true_motion_map": {
+        "tracking": "tracking",
+        "follow": "tracking",
+        "wide_establishing": "pull_out",
+        "medium_coverage": "orbit",
+        "close_up_reaction": "push_in",
+        "over_the_shoulder": "handheld",
+        "motivated": "tracking"
+      },
+      "recommended_coverage": [
+        {
+          "beat": "enter",
+          "mode": "wide_establishing"
+        },
+        {
+          "beat": "walk_explain",
+          "mode": "tracking"
+        },
+        {
+          "beat": "interact_prop",
+          "mode": "over_the_shoulder"
+        },
+        {
+          "beat": "reaction",
+          "mode": "close_up_reaction"
+        },
+        {
+          "beat": "teach",
+          "mode": "medium_coverage"
+        }
+      ],
+      "forbid_ken_burns_as_performance": true,
+      "notes": "Camera records the stage performance. Actor locomotion is primary."
+    },
+    "environment_department_ref": {
+      "environment_id": "doctor_medical_institute_lab_a",
+      "composed": true
+    },
+    "environment_package": {
+      "environment_id": "doctor_medical_institute_lab_a",
+      "definition": {
+        "environment_id": "doctor_medical_institute_lab_a",
+        "name": "Primary Diagnostic Laboratory",
+        "world_id": "generational_medical_research_institute",
+        "function": "diagnosis_and_teaching",
+        "dimensions_meters": {
+          "width": 18.0,
+          "depth": 25.0,
+          "height": 6.0
+        },
+        "architectural_style": "cinematic_futurist_medical",
+        "time_of_day": "morning",
+        "weather": "clear",
+        "continuity_version": "1.0.0",
+        "forbid_regenerate_from_scratch": true,
+        "home_of": "DOCTOR_001",
+        "location_alias": "LOC-GMRI",
+        "memorable_feature": "warm-blue holographic teaching column at center",
+        "alias_of": "doctor_medical_institute_lab_a"
+      },
+      "layout": {
+        "environment_id": "doctor_medical_institute_lab_a",
+        "dimensions_meters": {
+          "width": 18.0,
+          "depth": 25.0,
+          "height": 6.0
+        },
+        "zones": [
+          {
+            "zone_id": "teaching_zone",
+            "bounds": [
+              [
+                -2,
+                0,
+                -2
+              ],
+              [
+                4,
+                3,
+                4
+              ]
+            ],
+            "function": "doctor_explanation",
+            "camera_access": true,
+            "character_access": true
+          },
+          {
+            "zone_id": "sterile_lab_zone",
+            "bounds": [
+              [
+                5,
+                0,
+                -4
+              ],
+              [
+                11,
+                3,
+                3
+              ]
+            ],
+            "function": "sample_analysis",
+            "camera_access": true,
+            "character_access": "authorized_only"
+          },
+          {
+            "zone_id": "circulation_path",
+            "bounds": [
+              [
+                -8,
+                0,
+                -1
+              ],
+              [
+                8,
+                3,
+                1
+              ]
+            ],
+            "function": "staff_movement",
+            "camera_access": true,
+            "character_access": true
+          }
+        ],
+        "paths": [
+          "main_circulation",
+          "sterile_access",
+          "emergency_exit_east"
+        ],
+        "entrances": [
+          "main_airlock"
+        ],
+        "exits": [
+          "main_airlock",
+          "emergency_exit_east"
+        ],
+        "camera_safe_zones": [
+          "teaching_zone"
+        ],
+        "character_movement_zones": [
+          "teaching_zone",
+          "circulation_path"
+        ],
+        "interaction_zones": [
+          "teaching_console",
+          "scanner_bay"
+        ],
+        "equipment_zones": [
+          "sterile_lab_zone"
+        ],
+        "collision_boundaries": true,
+        "visibility_zones": [
+          "teaching_zone_to_window"
+        ],
+        "lighting_zones": [
+          "clinical_key",
+          "holo_practical",
+          "window_fill"
+        ],
+        "sound_zones": [
+          "soft_hvac",
+          "holo_hum",
+          "distant_footsteps"
+        ],
+        "layered_spatial_design": {
+          "environment_id": "doctor_medical_institute_lab_a",
+          "require_three_layers": true,
+          "foreground": [
+            {
+              "id": "scanner_arm_edge",
+              "type": "prop",
+              "purpose": "depth_frame"
+            },
+            {
+              "id": "plant_edge",
+              "type": "vegetation",
+              "purpose": "life_and_parallax"
+            },
+            {
+              "id": "console_rail",
+              "type": "architecture",
+              "purpose": "camera_frame"
+            }
+          ],
+          "midground": [
+            {
+              "id": "primary_character",
+              "type": "character",
+              "purpose": "action"
+            },
+            {
+              "id": "diagnostic_hologram",
+              "type": "prop",
+              "purpose": "education_focus"
+            },
+            {
+              "id": "teaching_console",
+              "type": "prop",
+              "purpose": "function"
+            }
+          ],
+          "background": [
+            {
+              "id": "observation_window",
+              "type": "architecture",
+              "purpose": "depth"
+            },
+            {
+              "id": "researchers_working",
+              "type": "background_population",
+              "purpose": "inhabited_world"
+            },
+            {
+              "id": "secondary_lab_bays",
+              "type": "architecture",
+              "purpose": "function_history"
+            },
+            {
+              "id": "sky_or_courtyard",
+              "type": "exterior",
+              "purpose": "world_beyond_frame"
+            }
+          ],
+          "depth_tools": [
+            "focus",
+            "scale",
+            "contrast",
+            "lighting",
+            "atmospheric_haze",
+            "color_temperature",
+            "motion_speed",
+            "parallax"
+          ],
+          "reject": [
+            "flat_backdrop",
+            "empty_void",
+            "single_layer_only"
+          ]
+        },
+        "scene_graph": {
+          "environment_id": "doctor_medical_institute_lab_a",
+          "root": {
+            "node_id": "doctor_medical_institute_lab_a_root",
+            "node_type": "architecture",
+            "transform": {
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "material_id": null,
+            "children": [
+              {
+                "node_id": "floor",
+                "node_type": "architecture",
+                "transform": {
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "scale": [
+                    18,
+                    1,
+                    25
+                  ]
+                },
+                "material_id": "medical_floor_polymer",
+                "children": [],
+                "tags": [
+                  "floor",
+                  "contact"
+                ],
+                "animated": false,
+                "interaction_points": []
+              },
+              {
+                "node_id": "teaching_console",
+                "node_type": "prop",
+                "transform": {
+                  "position": [
+                    0,
+                    1.0,
+                    -1.5
+                  ],
+                  "rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                "material_id": "brushed_titanium_medical",
+                "children": [],
+                "tags": [
+                  "midground",
+                  "interaction"
+                ],
+                "animated": true,
+                "interaction_points": [
+                  "screen",
+                  "handle"
+                ]
+              },
+              {
+                "node_id": "plant_edge",
+                "node_type": "vegetation",
+                "transform": {
+                  "position": [
+                    -2.2,
+                    0.0,
+                    1.0
+                  ],
+                  "rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                "material_id": "leaf_translucent",
+                "children": [],
+                "tags": [
+                  "foreground"
+                ],
+                "animated": true,
+                "interaction_points": []
+              },
+              {
+                "node_id": "observation_window",
+                "node_type": "architecture",
+                "transform": {
+                  "position": [
+                    0,
+                    2.5,
+                    -12
+                  ],
+                  "rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                "material_id": "glass_clear",
+                "children": [],
+                "tags": [
+                  "background"
+                ],
+                "animated": false,
+                "interaction_points": []
+              },
+              {
+                "node_id": "key_sun",
+                "node_type": "light",
+                "transform": {
+                  "position": [
+                    -3,
+                    5,
+                    2
+                  ],
+                  "rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                "material_id": null,
+                "children": [],
+                "tags": [
+                  "key"
+                ],
+                "animated": false,
+                "interaction_points": []
+              }
+            ],
+            "tags": [
+              "root"
+            ],
+            "animated": false,
+            "interaction_points": []
+          },
+          "node_types": [
+            "architecture",
+            "terrain",
+            "prop",
+            "vegetation",
+            "vehicle",
+            "character",
+            "light",
+            "weather",
+            "particle_system",
+            "signage",
+            "path",
+            "water",
+            "background_population"
+          ]
+        }
+      },
+      "foreground": [
+        {
+          "id": "scanner_arm_edge",
+          "type": "prop",
+          "purpose": "depth_frame"
+        },
+        {
+          "id": "plant_edge",
+          "type": "vegetation",
+          "purpose": "life_and_parallax"
+        },
+        {
+          "id": "console_rail",
+          "type": "architecture",
+          "purpose": "camera_frame"
+        }
+      ],
+      "midground": [
+        {
+          "id": "primary_character",
+          "type": "character",
+          "purpose": "action"
+        },
+        {
+          "id": "diagnostic_hologram",
+          "type": "prop",
+          "purpose": "education_focus"
+        },
+        {
+          "id": "teaching_console",
+          "type": "prop",
+          "purpose": "function"
+        }
+      ],
+      "background": [
+        {
+          "id": "observation_window",
+          "type": "architecture",
+          "purpose": "depth"
+        },
+        {
+          "id": "researchers_working",
+          "type": "background_population",
+          "purpose": "inhabited_world"
+        },
+        {
+          "id": "secondary_lab_bays",
+          "type": "architecture",
+          "purpose": "function_history"
+        },
+        {
+          "id": "sky_or_courtyard",
+          "type": "exterior",
+          "purpose": "world_beyond_frame"
+        }
+      ],
+      "architecture": {
+        "environment_id": "doctor_medical_institute_lab_a",
+        "architectural_style": "cinematic_futurist_medical",
+        "function": "diagnosis_and_teaching",
+        "must_answer": [
+          "What is its function?",
+          "Who uses it?",
+          "How do they enter?",
+          "How do they move through it?",
+          "Where does equipment go?",
+          "Where does light enter?",
+          "What safety rules shape it?",
+          "What history is visible?"
+        ],
+        "required_systems": [
+          "functional_work_zones",
+          "circulation_paths",
+          "storage",
+          "equipment_access",
+          "safety_systems",
+          "readable_signage",
+          "ventilation",
+          "lighting_fixtures",
+          "doors_and_exits",
+          "service_areas"
+        ],
+        "reject": [
+          "decorative_shell_only",
+          "impossible_circulation",
+          "no_exits"
+        ]
+      },
+      "materials": {
+        "brushed_titanium_medical": {
+          "material_id": "brushed_titanium_medical",
+          "base_color": [
+            0.78,
+            0.81,
+            0.84
+          ],
+          "metallic": 0.92,
+          "roughness": 0.32,
+          "specular": 0.68,
+          "normal_strength": 0.18,
+          "wear": 0.06,
+          "fingerprint_visibility": 0.02
+        },
+        "medical_floor_polymer": {
+          "material_id": "medical_floor_polymer",
+          "base_color": [
+            0.88,
+            0.9,
+            0.92
+          ],
+          "metallic": 0.0,
+          "roughness": 0.45,
+          "wear": 0.12,
+          "wetness": 0.0
+        },
+        "glass_clear": {
+          "material_id": "glass_clear",
+          "base_color": [
+            0.95,
+            0.97,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.05,
+          "transmission": 0.92,
+          "opacity": 0.15
+        },
+        "leaf_translucent": {
+          "material_id": "leaf_translucent",
+          "base_color": [
+            0.25,
+            0.55,
+            0.28
+          ],
+          "roughness": 0.55,
+          "subsurface_scattering": 0.35,
+          "transmission": 0.2
+        },
+        "soft_white_polymer_skin": {
+          "material_id": "soft_white_polymer_skin",
+          "base_color": [
+            0.96,
+            0.97,
+            0.98
+          ],
+          "roughness": 0.45,
+          "subsurface_scattering": 0.12
+        }
+      },
+      "vegetation": {
+        "biome": "controlled_indoor_biophilic",
+        "season": "year_round",
+        "layers": [
+          "canopy_none_indoor",
+          "shrubs",
+          "grasses_potted",
+          "ground_cover",
+          "moss_accent"
+        ],
+        "plants": [
+          {
+            "species": "indoor_ficus",
+            "biome": "controlled_indoor_biophilic",
+            "season": "year_round",
+            "height_meters": 2.1,
+            "wind_response": 0.15,
+            "leaf_density": 0.78,
+            "health": 0.94,
+            "placement_reason": "biophilic_calm_near_teaching_zone"
+          },
+          {
+            "species": "herb_planter_wall",
+            "biome": "controlled_indoor_biophilic",
+            "season": "year_round",
+            "height_meters": 1.4,
+            "wind_response": 0.08,
+            "leaf_density": 0.7,
+            "health": 0.9,
+            "placement_reason": "living_wall_signature"
+          }
+        ],
+        "variation_required": [
+          "scale",
+          "rotation",
+          "density",
+          "health",
+          "color"
+        ],
+        "forbid_identical_clones": true
+      },
+      "props": [
+        {
+          "prop_id": "diagnostic_scanner_02",
+          "function": "cellular_scan",
+          "owner": "STAGE_WORLD",
+          "material": "white_ceramic_composite",
+          "default_location": [
+            2.4,
+            1.1,
+            -0.8
+          ],
+          "interaction_points": [
+            "screen",
+            "handle",
+            "sample_tray"
+          ],
+          "continuity_required": true
+        },
+        {
+          "prop_id": "holographic_interface_main",
+          "function": "teaching_display",
+          "owner": "STAGE_WORLD",
+          "material": "emissive_glass",
+          "default_location": [
+            0.0,
+            1.4,
+            -1.2
+          ],
+          "interaction_points": [
+            "volume",
+            "pinch_zone"
+          ],
+          "continuity_required": true
+        },
+        {
+          "prop_id": "research_notes_board",
+          "function": "environmental_storytelling",
+          "owner": "STAGE_WORLD",
+          "material": "matte_composite",
+          "default_location": [
+            -3.5,
+            1.6,
+            -4.0
+          ],
+          "continuity_required": true
+        }
+      ],
+      "set_dressing": {
+        "props": [
+          {
+            "prop_id": "diagnostic_scanner_02",
+            "function": "cellular_scan",
+            "owner": "STAGE_WORLD",
+            "material": "white_ceramic_composite",
+            "default_location": [
+              2.4,
+              1.1,
+              -0.8
+            ],
+            "interaction_points": [
+              "screen",
+              "handle",
+              "sample_tray"
+            ],
+            "continuity_required": true
+          },
+          {
+            "prop_id": "holographic_interface_main",
+            "function": "teaching_display",
+            "owner": "STAGE_WORLD",
+            "material": "emissive_glass",
+            "default_location": [
+              0.0,
+              1.4,
+              -1.2
+            ],
+            "interaction_points": [
+              "volume",
+              "pinch_zone"
+            ],
+            "continuity_required": true
+          },
+          {
+            "prop_id": "research_notes_board",
+            "function": "environmental_storytelling",
+            "owner": "STAGE_WORLD",
+            "material": "matte_composite",
+            "default_location": [
+              -3.5,
+              1.6,
+              -4.0
+            ],
+            "continuity_required": true
+          }
+        ],
+        "storytelling": [
+          "worn_floor_near_teaching_console",
+          "notes_pinned_beside_monitor",
+          "living_plant_wall",
+          "personal_care_token_on_desk",
+          "unfinished_sample_tray_labeled"
+        ],
+        "must_contain": [
+          "evidence_of_current_activity",
+          "evidence_of_past_activity",
+          "evidence_of_ownership",
+          "evidence_of_function",
+          "one_memorable_visual_feature"
+        ],
+        "ambient_motion": [
+          "researchers_working",
+          "screens_updating",
+          "soft_hvac_ripple",
+          "plant_micro_sway",
+          "holo_column_pulse"
+        ],
+        "prop_continuity_rule": "Props must not move between shots without explanation."
+      },
+      "weather": {
+        "type": "clear",
+        "intensity": 0.1,
+        "wind_direction": [
+          0.2,
+          0.0,
+          0.1
+        ],
+        "wind_speed_mps": 1.2,
+        "gust_strength": 0.1,
+        "humidity": 0.45,
+        "cloud_coverage": 0.15,
+        "surface_wetness": 0.0,
+        "visibility_meters": 2000,
+        "affects": [
+          "hair",
+          "clothing",
+          "plants",
+          "flags",
+          "water",
+          "particles",
+          "reflections",
+          "roads",
+          "windows",
+          "sound",
+          "lighting",
+          "character_behavior"
+        ]
+      },
+      "atmosphere": {
+        "density": 0.035,
+        "effects": [
+          "soft_haze",
+          "volumetric_window_light",
+          "subtle_dust"
+        ],
+        "near": {
+          "contrast": "high",
+          "detail": "sharp",
+          "saturation": "full"
+        },
+        "far": {
+          "contrast": "reduced",
+          "edges": "softer",
+          "haze": true,
+          "motion_amplitude": "reduced"
+        },
+        "falloff_samples": {
+          "2m": 0.0676,
+          "10m": 0.2953,
+          "25m": 0.5831
+        }
+      },
+      "lighting": {
+        "time_of_day": "morning",
+        "mood": "clinical_warm",
+        "key": {
+          "type": "sun",
+          "direction": [
+            -0.3,
+            -0.8,
+            -0.4
+          ],
+          "temperature_kelvin": 5200,
+          "intensity": 1.0
+        },
+        "fill": {
+          "type": "sky",
+          "temperature_kelvin": 7200,
+          "intensity": 0.28
+        },
+        "rim": {
+          "type": "window_bounce",
+          "temperature_kelvin": 6500,
+          "intensity": 0.22
+        },
+        "practicals": [
+          {
+            "id": "lab_panel_01",
+            "temperature_kelvin": 4300,
+            "intensity": 0.35
+          },
+          {
+            "id": "holo_column",
+            "temperature_kelvin": 7500,
+            "intensity": 0.4,
+            "emission": true
+          }
+        ],
+        "rules": [
+          "motivated_sources_only",
+          "avoid_flat_front_lighting",
+          "vary_by_time_weather_emotion_beat"
+        ]
+      },
+      "ambient_motion": [
+        "researchers_working",
+        "screens_updating",
+        "soft_hvac_ripple",
+        "plant_micro_sway",
+        "holo_column_pulse"
+      ],
+      "camera_boundaries": [
+        "teaching_zone"
+      ],
+      "character_zones": [
+        "teaching_zone",
+        "circulation_path"
+      ],
+      "continuity_rules": [
+        "Never regenerate doctor_medical_institute_lab_a from scratch.",
+        "Props keep default_location unless story explains move.",
+        "Architecture function remains readable across episodes.",
+        "Lighting sources remain motivated and consistent with time_of_day.",
+        "Weather is a shared world state affecting cloth, plants, and reflections.",
+        "Foreground / midground / background layers required every shot."
+      ],
+      "validation_rules": [
+        "foreground_presence",
+        "midground_readability",
+        "background_depth",
+        "architecture_coherence",
+        "material_quality",
+        "atmospheric_perspective",
+        "lighting_plausibility",
+        "weather_consistency",
+        "vegetation_fit",
+        "prop_continuity",
+        "spatial_continuity",
+        "character_ground_contact",
+        "motion_coherence",
+        "environment_identity_consistency",
+        "empty_space_ratio",
+        "placeholder_geometry_count"
+      ],
+      "pipeline": [
+        "story_requirement",
+        "environment_type",
+        "spatial_layout",
+        "foreground_midground_background",
+        "architecture",
+        "materials",
+        "vegetation",
+        "props_and_set_dressing",
+        "weather_and_atmosphere",
+        "lighting",
+        "ambient_motion",
+        "continuity_validation",
+        "rendered_environment_validation"
+      ],
+      "quality_caveat": "An Environment Package is an execution contract \u2014 not proof of quality. Final acceptance requires inspecting the rendered MP4 for depth, materials, weather response, lighting coherence, and environmental continuity."
+    },
+    "home_for": [
+      "DOCTOR_001"
+    ],
+    "architecture": {
+      "frozen": true,
+      "no_new_renderer": true,
+      "no_pipeline_redesign": true,
+      "feeds": [
+        "character_world_studio",
+        "character_performance_engine",
+        "environment_department",
+        "world_builder",
+        "shot_assembly",
+        "true_motion"
+      ]
+    },
+    "scene_ref": {
+      "world_id": "WORLD-GMRI-MEDICAL-LAB",
+      "world_package_ref": "data/world_simulation/library/WORLD-GMRI-MEDICAL-LAB/WORLD_PACKAGE.json",
+      "do_not_use_flat_photo_backdrop": true,
+      "persistent": true
+    },
+    "validation": {
+      "ok": true,
+      "score": 100,
+      "failures": [],
+      "rejects_hit": [],
+      "reject_catalog": [
+        "flat_image_background",
+        "actors_cannot_navigate",
+        "objects_not_interactable",
+        "environment_static",
+        "camera_replaces_character_movement"
+      ],
+      "success": "Persistent worlds populated by reusable digital actors \u2014 filmed on a real set, not assembled from disconnected images.",
+      "mp4_required": true,
+      "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4: actors must navigate living stages, not photos."
+    }
+  },
+  "true_motion_requirements": {
+    "rig_driven": true,
+    "evidence_required": [
+      "ankle_articulation",
+      "blinking",
+      "elbow_articulation",
+      "eye_movement",
+      "facial_expressions",
+      "finger_movement",
+      "head_turns",
+      "hip_movement",
+      "knee_bending",
+      "mouth_articulation",
+      "pelvis_translation",
+      "planted_feet",
+      "shoulder_movement",
+      "spine_rotation",
+      "subtle_breathing",
+      "wrist_movement"
+    ],
+    "camera_alone_does_not_count": true,
+    "moving_photograph_does_not_count": true
+  },
+  "auto_reject_if": [
+    "still_image_actor",
+    "image_translation_or_scaling_as_motion",
+    "flat_photo_background",
+    "foot_sliding",
+    "no_limb_articulation",
+    "failed_grasp",
+    "floating_object",
+    "absent_lip_sync",
+    "frozen_face",
+    "camera_conceals_missing_animation",
+    "false_capability_claim"
+  ]
+}

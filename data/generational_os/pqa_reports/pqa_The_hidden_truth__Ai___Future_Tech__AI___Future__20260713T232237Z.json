@@ -1,0 +1,606 @@
+{
+  "title": "The hidden truth: Ai & Future Tech (AI & Future Tech)",
+  "idea_id": "",
+  "overall_score": 73,
+  "decision": "BLOCK_EXPORT",
+  "passed": false,
+  "categories": {
+    "research_accuracy": {
+      "key": "research_accuracy",
+      "label": "Research Accuracy",
+      "score": 79,
+      "confidence": 0.65,
+      "passed": false,
+      "details": {
+        "research_confidence": 68.5,
+        "citation_count": 0,
+        "unsupported_claims": 0,
+        "sources_checked": [
+          "https://pubmed.ncbi.nlm.nih.gov/1/",
+          "https://doi.org/10.1000/ai-&-future-tech.1",
+          "https://arxiv.org/abs/2401.00000",
+          "https://en.wikipedia.org/wiki/ai-&-future-tech",
+          "https://pubmed.ncbi.nlm.nih.gov/0/",
+          "https://arxiv.org/abs/2401.00001",
+          "https://doi.org/10.1000/ai-&-future-tech.0",
+          "https://en.wikipedia.org/wiki/ai-&-future-tech",
+          "https://tiktok.com/tag/ai-&-future-tech",
+          "https://news.example.com/ai-&-future-tech-report-0"
+        ]
+      },
+      "issues": [
+        "No citations present"
+      ],
+      "corrections_required": [
+        "Attach trusted sources via Citation Engine"
+      ]
+    },
+    "evidence": {
+      "key": "evidence",
+      "label": "Evidence",
+      "score": 40,
+      "confidence": 0.4,
+      "passed": false,
+      "details": {
+        "real_image_pct": 0.0,
+        "ai_image_pct": 0.0,
+        "authentic_hit_count": 0,
+        "ai_fallback_count": 0,
+        "missing_evidence": [
+          "No evidence_package on production"
+        ],
+        "scene_count": 0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "visuals": {
+      "key": "visuals",
+      "label": "Visuals",
+      "score": 68,
+      "confidence": 0.8,
+      "passed": false,
+      "details": {
+        "visual_score": 68.0,
+        "scene_count": 9,
+        "empty_scenes": 0,
+        "qc_hard_fails": 0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "typography": {
+      "key": "typography",
+      "label": "Typography",
+      "score": 94,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "has_captions": true,
+        "layout": {}
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "annotations": {
+      "key": "annotations",
+      "label": "Annotations",
+      "score": 72,
+      "confidence": 0.45,
+      "passed": false,
+      "details": {
+        "annotation_count": 0,
+        "narration_tied": 0,
+        "untied": 0
+      },
+      "issues": [
+        "No narration-tied annotations found"
+      ],
+      "corrections_required": [
+        "Add purposeful annotations via Evidence Engine"
+      ]
+    },
+    "cinematography": {
+      "key": "cinematography",
+      "label": "Cinematography",
+      "score": 45,
+      "confidence": 0.35,
+      "passed": false,
+      "details": {
+        "attention_score": 0.0,
+        "scene_count": 0,
+        "has_animation_handoff": false,
+        "pacing": null
+      },
+      "issues": [
+        "No cinematography_plan scenes"
+      ],
+      "corrections_required": [
+        "Run Cinematography Engine before export"
+      ]
+    },
+    "retention": {
+      "key": "retention",
+      "label": "Viewer Retention",
+      "score": 77,
+      "confidence": 0.55,
+      "passed": false,
+      "details": {
+        "package_present": false,
+        "polish_rounds": null,
+        "predictions": {},
+        "legacy_fallback": true
+      },
+      "issues": [
+        "Viewer Retention package missing"
+      ],
+      "corrections_required": [
+        "Run viewer_retention before export"
+      ]
+    },
+    "render_quality": {
+      "key": "render_quality",
+      "label": "Render Quality",
+      "score": 99,
+      "confidence": 0.88,
+      "passed": true,
+      "details": {
+        "package_present": true,
+        "revision_rounds": 3,
+        "export_plan": {
+          "primary_preset": "youtube_shorts",
+          "primary": {
+            "preset": "youtube_shorts",
+            "aspect": "9:16",
+            "width": 1080,
+            "height": 1920,
+            "fps": 30,
+            "codec": "h264",
+            "bitrate_kbps": 12000,
+            "audio_bitrate_kbps": 192,
+            "hdr_ready": false
+          },
+          "variants": [
+            {
+              "preset": "tiktok",
+              "aspect": "9:16",
+              "width": 1080,
+              "height": 1920,
+              "fps": 30,
+              "codec": "h264",
+              "bitrate_kbps": 10000,
+              "audio_bitrate_kbps": 192,
+              "hdr_ready": false
+            },
+            {
+              "preset": "instagram_reels",
+              "aspect": "9:16",
+              "width": 1080,
+              "height": 1920,
+              "fps": 30,
+              "codec": "h264",
+              "bitrate_kbps": 10000,
+              "audio_bitrate_kbps": 192,
+              "hdr_ready": false
+            },
+            {
+              "preset": "facebook_reels",
+              "aspect": "9:16",
+              "width": 1080,
+              "height": 1920,
+              "fps": 30,
+              "codec": "h264",
+              "bitrate_kbps": 9000,
+              "audio_bitrate_kbps": 160,
+              "hdr_ready": false
+            }
+          ],
+          "auto_bitrate": true,
+          "auto_codec": true,
+          "hdr_pipeline": false,
+          "container": "mp4",
+          "reason": "Platform/aspect selected preset: youtube_shorts"
+        }
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "optimization": {
+      "key": "optimization",
+      "label": "Optimization",
+      "score": 99,
+      "confidence": 0.5,
+      "passed": true,
+      "details": {
+        "package_present": false,
+        "winner": {},
+        "experiment_id": "",
+        "variant_count": 0,
+        "legacy_fallback": true
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "audio": {
+      "key": "audio",
+      "label": "Audio",
+      "score": 84,
+      "confidence": 0.35,
+      "passed": false,
+      "details": {
+        "has_audio_file": false,
+        "music_balance": 0.5
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "narration": {
+      "key": "narration",
+      "label": "Narration",
+      "score": 74,
+      "confidence": 0.75,
+      "passed": false,
+      "details": {
+        "script_quality": 89.0,
+        "hook": 49.0,
+        "chars": 688
+      },
+      "issues": [
+        "Weak opening hook"
+      ],
+      "corrections_required": [
+        "Rewrite hook for stronger first 3 seconds"
+      ]
+    },
+    "synchronization": {
+      "key": "synchronization",
+      "label": "Synchronization",
+      "score": 90,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "segment_count": 9,
+        "missing_ann_timing": 0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "educational_value": {
+      "key": "educational_value",
+      "label": "Educational Value",
+      "score": 68,
+      "confidence": 0.7,
+      "passed": false,
+      "details": {
+        "clarity": 70.0,
+        "logical_progression": 70.0,
+        "engagement": 65.0,
+        "knowledge_density": 65.0,
+        "retention": 71.0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "psychology": {
+      "key": "psychology",
+      "label": "Psychology",
+      "score": 52,
+      "confidence": 0.75,
+      "passed": false,
+      "details": {
+        "predicted_metrics": {
+          "ctr": 4.16,
+          "avg_watch_time_sec": 0.0,
+          "drop_off_risk": 29.0,
+          "shareability": 66.0,
+          "replay_probability": 67.0,
+          "subscriber_conversion": 40.0
+        },
+        "human_attention_score": 0.0
+      },
+      "issues": [
+        "Psychology score below documentary engagement bar"
+      ],
+      "corrections_required": [
+        "Re-run Audience / Psychology with stronger hooks"
+      ]
+    },
+    "seo": {
+      "key": "seo",
+      "label": "SEO",
+      "score": 33,
+      "confidence": 0.4,
+      "passed": false,
+      "details": {
+        "title_len": 53,
+        "description_len": 0,
+        "keyword_count": 0,
+        "hashtag_count": 0
+      },
+      "issues": [
+        "Description missing",
+        "No keywords/hashtags"
+      ],
+      "corrections_required": [
+        "Write SEO description",
+        "Add keywords and platform hashtags"
+      ]
+    },
+    "platform_compliance": {
+      "key": "platform_compliance",
+      "label": "Platform Compliance",
+      "score": 100,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "ready_count": 8,
+        "aspect_ratio": "9:16",
+        "duration_sec": 60.0
+      },
+      "issues": [],
+      "corrections_required": []
+    }
+  },
+  "scores": {
+    "research_accuracy": 79,
+    "evidence": 40,
+    "visuals": 68,
+    "typography": 94,
+    "annotations": 72,
+    "cinematography": 45,
+    "retention": 77,
+    "render_quality": 99,
+    "optimization": 99,
+    "audio": 84,
+    "narration": 74,
+    "synchronization": 90,
+    "educational_value": 68,
+    "psychology": 52,
+    "seo": 33,
+    "platform_compliance": 100
+  },
+  "platform_ready": {
+    "youtube": true,
+    "youtube_shorts": true,
+    "tiktok": true,
+    "instagram_reels": true,
+    "facebook": true,
+    "pinterest": true,
+    "linkedin": true,
+    "x": true
+  },
+  "platform_ready_detail": [
+    {
+      "platform": "youtube",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "youtube_shorts",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "tiktok",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "instagram_reels",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "facebook",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "pinterest",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "linkedin",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "x",
+      "ready": true,
+      "reasons": []
+    }
+  ],
+  "revision_requests": [
+    {
+      "category": "research_accuracy",
+      "score": 79,
+      "target_engines": [
+        "research",
+        "citation",
+        "critic"
+      ],
+      "severity": "revision",
+      "message": "No citations present",
+      "corrections": [
+        "Attach trusted sources via Citation Engine"
+      ]
+    },
+    {
+      "category": "evidence",
+      "score": 40,
+      "target_engines": [
+        "evidence_intelligence",
+        "visual_intelligence"
+      ],
+      "severity": "block",
+      "message": "Evidence scored 40 (< 90)",
+      "corrections": []
+    },
+    {
+      "category": "visuals",
+      "score": 68,
+      "target_engines": [
+        "visual_intelligence",
+        "image",
+        "asset_manager",
+        "studio_render"
+      ],
+      "severity": "block",
+      "message": "Visuals scored 68 (< 90)",
+      "corrections": []
+    },
+    {
+      "category": "annotations",
+      "score": 72,
+      "target_engines": [
+        "evidence_intelligence",
+        "animation",
+        "visual_intelligence"
+      ],
+      "severity": "revision",
+      "message": "No narration-tied annotations found",
+      "corrections": [
+        "Add purposeful annotations via Evidence Engine"
+      ]
+    },
+    {
+      "category": "cinematography",
+      "score": 45,
+      "target_engines": [
+        "cinematography",
+        "viewer_retention",
+        "animation",
+        "studio_render"
+      ],
+      "severity": "revision",
+      "message": "No cinematography_plan scenes",
+      "corrections": [
+        "Run Cinematography Engine before export"
+      ]
+    },
+    {
+      "category": "retention",
+      "score": 77,
+      "target_engines": [
+        "viewer_retention",
+        "script_generation",
+        "cinematography",
+        "voice_audio"
+      ],
+      "severity": "revision",
+      "message": "Viewer Retention package missing",
+      "corrections": [
+        "Run viewer_retention before export"
+      ]
+    },
+    {
+      "category": "audio",
+      "score": 84,
+      "target_engines": [
+        "voice_audio",
+        "voice",
+        "narration",
+        "viewer_retention"
+      ],
+      "severity": "revision",
+      "message": "Audio scored 84 (< 90)",
+      "corrections": []
+    },
+    {
+      "category": "narration",
+      "score": 74,
+      "target_engines": [
+        "script_generation",
+        "narration",
+        "script",
+        "viewer_retention"
+      ],
+      "severity": "revision",
+      "message": "Weak opening hook",
+      "corrections": [
+        "Rewrite hook for stronger first 3 seconds"
+      ]
+    },
+    {
+      "category": "educational_value",
+      "score": 68,
+      "target_engines": [
+        "script_generation",
+        "critic",
+        "psychology"
+      ],
+      "severity": "block",
+      "message": "Educational Value scored 68 (< 90)",
+      "corrections": []
+    },
+    {
+      "category": "psychology",
+      "score": 52,
+      "target_engines": [
+        "psychology",
+        "audience_intelligence",
+        "attention_graph",
+        "viewer_retention"
+      ],
+      "severity": "revision",
+      "message": "Psychology score below documentary engagement bar",
+      "corrections": [
+        "Re-run Audience / Psychology with stronger hooks"
+      ]
+    },
+    {
+      "category": "seo",
+      "score": 33,
+      "target_engines": [
+        "seo",
+        "seo_optimization"
+      ],
+      "severity": "revision",
+      "message": "Description missing",
+      "corrections": [
+        "Write SEO description",
+        "Add keywords and platform hashtags"
+      ]
+    }
+  ],
+  "hard_fails": [
+    "Evidence critically low (40)",
+    "Visuals critically low (68)",
+    "Educational Value critically low (68)",
+    "QualityEngine publish gate failed: publish_score, claim_confidence, citation_required"
+  ],
+  "warnings": [
+    "No citations present",
+    "No narration-tied annotations found",
+    "No cinematography_plan scenes",
+    "Viewer Retention package missing",
+    "Weak opening hook",
+    "Psychology score below documentary engagement bar",
+    "Description missing",
+    "No keywords/hashtags"
+  ],
+  "predicted_metrics": {
+    "ctr": 4.16,
+    "avg_watch_time_sec": 0.0,
+    "drop_off_risk": 29.0,
+    "shareability": 66.0,
+    "replay_probability": 67.0,
+    "subscriber_conversion": 40.0
+  },
+  "sources_checked": [
+    "https://pubmed.ncbi.nlm.nih.gov/1/",
+    "https://doi.org/10.1000/ai-&-future-tech.1",
+    "https://arxiv.org/abs/2401.00000",
+    "https://en.wikipedia.org/wiki/ai-&-future-tech",
+    "https://pubmed.ncbi.nlm.nih.gov/0/",
+    "https://arxiv.org/abs/2401.00001",
+    "https://doi.org/10.1000/ai-&-future-tech.0",
+    "https://en.wikipedia.org/wiki/ai-&-future-tech",
+    "https://tiktok.com/tag/ai-&-future-tech",
+    "https://news.example.com/ai-&-future-tech-report-0"
+  ],
+  "created_at": "2026-07-13T23:22:37.476523+00:00",
+  "version": "1.0.0",
+  "report_markdown": "# Production Quality Report\n\n**Overall Score:** 73\n**Decision:** BLOCK_EXPORT\n\n- Research Accuracy: 79\n- Evidence: 40\n- Visuals: 68\n- Typography: 94\n- Annotations: 72\n- Cinematography: 45\n- Viewer Retention: 77\n- Render Quality: 99\n- Optimization: 99\n- Audio: 84\n- Narration: 74\n- Synchronization: 90\n- Educational Value: 68\n- Psychology: 52\n- SEO: 33\n\n## Platform Ready\n- \u2713 youtube\n- \u2713 youtube_shorts\n- \u2713 tiktok\n- \u2713 instagram_reels\n- \u2713 facebook\n- \u2713 pinterest\n- \u2713 linkedin\n- \u2713 x\n\n## Revision Requests\n- [revision] research_accuracy (79) \u2192 research, citation, critic: No citations present\n- [block] evidence (40) \u2192 evidence_intelligence, visual_intelligence: Evidence scored 40 (< 90)\n- [block] visuals (68) \u2192 visual_intelligence, image, asset_manager, studio_render: Visuals scored 68 (< 90)\n- [revision] annotations (72) \u2192 evidence_intelligence, animation, visual_intelligence: No narration-tied annotations found\n- [revision] cinematography (45) \u2192 cinematography, viewer_retention, animation, studio_render: No cinematography_plan scenes\n- [revision] retention (77) \u2192 viewer_retention, script_generation, cinematography, voice_audio: Viewer Retention package missing\n- [revision] audio (84) \u2192 voice_audio, voice, narration, viewer_retention: Audio scored 84 (< 90)\n- [revision] narration (74) \u2192 script_generation, narration, script, viewer_retention: Weak opening hook\n- [block] educational_value (68) \u2192 script_generation, critic, psychology: Educational Value scored 68 (< 90)\n- [revision] psychology (52) \u2192 psychology, audience_intelligence, attention_graph, viewer_retention: Psychology score below documentary engagement bar\n- [revision] seo (33) \u2192 seo, seo_optimization: Description missing"
+}

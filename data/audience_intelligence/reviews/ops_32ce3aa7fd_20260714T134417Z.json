@@ -1,0 +1,73 @@
+{
+  "package_type": "audience_intelligence_post_review",
+  "version": "2.0.0",
+  "generated_at": "2026-07-14T13:44:17.207190+00:00",
+  "topic": "Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters",
+  "niche": "",
+  "platform": "youtube_shorts",
+  "production_id": "ops_32ce3aa7fd",
+  "evaluations": {
+    "hook_effectiveness": 70.0,
+    "visual_engagement": 70.0,
+    "story_clarity": 70.0,
+    "audio_quality": 70.0,
+    "educational_value": 70.0,
+    "emotional_impact": 70.0,
+    "retention_prediction": 70.0,
+    "shareability_prediction": 65.0,
+    "overall": 79.4
+  },
+  "highest_impact_improvement": {
+    "statement": "Attach the idea to a personal stake (embarrassment, amazement, relief) before the first fact.",
+    "dimension": null,
+    "category": "subject_best_practices"
+  },
+  "lesson_recorded": {
+    "lesson_id": "ail_96feb7c455",
+    "statement": "Attach the idea to a personal stake (embarrassment, amazement, relief) before the first fact.",
+    "confidence": 1.0,
+    "category": "subject_best_practices",
+    "evidence_count": 20
+  },
+  "analytics_interfaces": [
+    {
+      "name": "youtube_analytics",
+      "platform": "youtube_shorts",
+      "available": true,
+      "methods": [
+        "fetch_video_metrics",
+        "fetch_retention_curve"
+      ]
+    },
+    {
+      "name": "tiktok_analytics",
+      "platform": "tiktok",
+      "available": false,
+      "methods": [
+        "fetch_video_metrics",
+        "fetch_retention_curve"
+      ]
+    },
+    {
+      "name": "instagram_insights",
+      "platform": "instagram_reels",
+      "available": false,
+      "methods": [
+        "fetch_video_metrics",
+        "fetch_retention_curve"
+      ]
+    },
+    {
+      "name": "ab_test_results",
+      "platform": "multi",
+      "available": true,
+      "methods": [
+        "fetch_video_metrics",
+        "fetch_retention_curve"
+      ]
+    }
+  ],
+  "analytics_snapshot": null,
+  "creative_excellence_score": 79.4,
+  "note": "Composes Creative Excellence + ops reports; does not replace Psychology/CPL/Publishing"
+}

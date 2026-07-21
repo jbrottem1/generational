@@ -1,0 +1,379 @@
+{
+  "package_version": "1.0.0",
+  "package_type": "asset_intelligence",
+  "generated_at": "2026-07-14T03:22:03.593305+00:00",
+  "topic": "Cell division",
+  "keywords": [
+    "biology",
+    "mitosis",
+    "DNA"
+  ],
+  "collection": "biology",
+  "platform": "youtube_shorts",
+  "audience": "general_public",
+  "channel": "",
+  "selected_media": [
+    {
+      "asset_id": "seed_topic_biology_animation",
+      "kind": "animation",
+      "topic": "Cell division mitosis",
+      "keywords": [
+        "cell",
+        "division",
+        "mitosis",
+        "biology"
+      ],
+      "category": "seed",
+      "collection": "biology",
+      "scientific_accuracy": 75,
+      "visual_quality": 70,
+      "animation_quality": 65,
+      "resolution": "1920x1080",
+      "orientation": "",
+      "duration_sec": 0,
+      "license": "internal_seed",
+      "color_palette": "",
+      "motion_score": 60,
+      "historical_performance": 0,
+      "reuse_count": 0,
+      "last_usage": "",
+      "creator": "system",
+      "uri": "",
+      "source_system": "asset_intelligence_seed",
+      "width": 1920,
+      "height": 1080,
+      "fingerprint": "",
+      "scores": {
+        "visual_score": 78.0,
+        "educational_score": 85.0,
+        "retention_score": 71.0,
+        "motion_score": 60.0,
+        "thumbnail_usefulness": 55.0,
+        "overall_score": 92.8,
+        "diversity_penalty": 0,
+        "query_overlap": 1.0
+      },
+      "rank_score": 92.8,
+      "selected_for_query": "Cell division"
+    },
+    {
+      "asset_id": "test_dna_diagram",
+      "kind": "scientific_diagram",
+      "topic": "DNA double helix",
+      "keywords": [
+        "dna",
+        "cell",
+        "biology",
+        "helix"
+      ],
+      "category": "",
+      "collection": "biology",
+      "scientific_accuracy": 90,
+      "visual_quality": 85,
+      "animation_quality": 70,
+      "resolution": "1920x1080",
+      "orientation": "",
+      "duration_sec": 0,
+      "license": "test",
+      "color_palette": "",
+      "motion_score": 0,
+      "historical_performance": 0,
+      "reuse_count": 0,
+      "last_usage": "",
+      "creator": "",
+      "uri": "memory://dna",
+      "source_system": "unit_test",
+      "width": 1920,
+      "height": 1080,
+      "fingerprint": "",
+      "scores": {
+        "visual_score": 93.0,
+        "educational_score": 95.0,
+        "retention_score": 84.2,
+        "motion_score": 70.0,
+        "thumbnail_usefulness": 55.0,
+        "overall_score": 90.9,
+        "diversity_penalty": 0,
+        "query_overlap": 0.0
+      },
+      "rank_score": 90.9,
+      "selected_for_query": "Cell division"
+    },
+    {
+      "asset_id": "asset_b1496eda7da1_001",
+      "kind": "vector_graphic",
+      "topic": "Laboratory: Want to know how and why some organisms glow? Let's break down the science behind bioluminescence! \u2014 none \u2014 pure flat surfaces",
+      "keywords": [],
+      "category": "generated",
+      "collection": "biology",
+      "scientific_accuracy": 0,
+      "visual_quality": 70,
+      "animation_quality": 0,
+      "resolution": "",
+      "orientation": "",
+      "duration_sec": 0.0,
+      "license": "placeholder",
+      "color_palette": "",
+      "motion_score": 0,
+      "historical_performance": 0,
+      "reuse_count": 0,
+      "last_usage": "",
+      "creator": "mock_generation",
+      "uri": "mock://assets/generated/vector_graphic/202dd1626d06a734.png",
+      "source_system": "asset_generation",
+      "width": 1920,
+      "height": 1080,
+      "fingerprint": "ee8b876358a3a6e58b5d5ab878d59d5bd7e559430c1c51b2a91988749242aecf",
+      "scores": {
+        "visual_score": 78.0,
+        "educational_score": 50.0,
+        "retention_score": 57.7,
+        "motion_score": 40.0,
+        "thumbnail_usefulness": 55.0,
+        "overall_score": 56.1,
+        "diversity_penalty": 0,
+        "query_overlap": 0.0
+      },
+      "rank_score": 56.1,
+      "selected_for_query": "Cell division"
+    },
+    {
+      "asset_id": "seed_biology_overlay",
+      "kind": "educational_graphic",
+      "topic": "biology",
+      "keywords": [
+        "biology",
+        "education",
+        "graphic"
+      ],
+      "category": "seed",
+      "collection": "biology",
+      "scientific_accuracy": 60,
+      "visual_quality": 55,
+      "animation_quality": 0,
+      "resolution": "",
+      "orientation": "",
+      "duration_sec": 0,
+      "license": "internal_seed",
+      "color_palette": "",
+      "motion_score": 0,
+      "historical_performance": 0,
+      "reuse_count": 0,
+      "last_usage": "",
+      "creator": "system",
+      "uri": "",
+      "source_system": "asset_intelligence_seed",
+      "width": 0,
+      "height": 0,
+      "fingerprint": "",
+      "scores": {
+        "visual_score": 55.0,
+        "educational_score": 60.0,
+        "retention_score": 51.0,
+        "motion_score": 40.0,
+        "thumbnail_usefulness": 70.0,
+        "overall_score": 55.2,
+        "diversity_penalty": 0,
+        "query_overlap": 0.0
+      },
+      "rank_score": 55.2,
+      "selected_for_query": "Cell division"
+    }
+  ],
+  "backup_choices": [],
+  "licensing": [
+    {
+      "asset_id": "seed_topic_biology_animation",
+      "license": "internal_seed",
+      "creator": "system",
+      "source_system": "asset_intelligence_seed"
+    },
+    {
+      "asset_id": "test_dna_diagram",
+      "license": "test",
+      "creator": "",
+      "source_system": "unit_test"
+    },
+    {
+      "asset_id": "asset_b1496eda7da1_001",
+      "license": "placeholder",
+      "creator": "mock_generation",
+      "source_system": "asset_generation"
+    },
+    {
+      "asset_id": "seed_biology_overlay",
+      "license": "internal_seed",
+      "creator": "system",
+      "source_system": "asset_intelligence_seed"
+    }
+  ],
+  "quality_scores": {
+    "seed_topic_biology_animation": {
+      "visual_score": 78.0,
+      "educational_score": 85.0,
+      "retention_score": 71.0,
+      "motion_score": 60.0,
+      "thumbnail_usefulness": 55.0,
+      "overall_score": 92.8,
+      "diversity_penalty": 0,
+      "query_overlap": 1.0
+    },
+    "test_dna_diagram": {
+      "visual_score": 93.0,
+      "educational_score": 95.0,
+      "retention_score": 84.2,
+      "motion_score": 70.0,
+      "thumbnail_usefulness": 55.0,
+      "overall_score": 90.9,
+      "diversity_penalty": 0,
+      "query_overlap": 0.0
+    },
+    "asset_b1496eda7da1_001": {
+      "visual_score": 78.0,
+      "educational_score": 50.0,
+      "retention_score": 57.7,
+      "motion_score": 40.0,
+      "thumbnail_usefulness": 55.0,
+      "overall_score": 56.1,
+      "diversity_penalty": 0,
+      "query_overlap": 0.0
+    },
+    "seed_biology_overlay": {
+      "visual_score": 55.0,
+      "educational_score": 60.0,
+      "retention_score": 51.0,
+      "motion_score": 40.0,
+      "thumbnail_usefulness": 70.0,
+      "overall_score": 55.2,
+      "diversity_penalty": 0,
+      "query_overlap": 0.0
+    }
+  },
+  "reuse_analysis": {
+    "seed_topic_biology_animation": {
+      "reuse_count": 0,
+      "last_usage": "",
+      "recent_72h": 0
+    },
+    "test_dna_diagram": {
+      "reuse_count": 0,
+      "last_usage": "",
+      "recent_72h": 0
+    },
+    "asset_b1496eda7da1_001": {
+      "reuse_count": 0,
+      "last_usage": "",
+      "recent_72h": 0
+    },
+    "seed_biology_overlay": {
+      "reuse_count": 0,
+      "last_usage": "",
+      "recent_72h": 0
+    }
+  },
+  "visual_diversity_score": 83.0,
+  "renderer_feed": {
+    "evidence_assets": [
+      {
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "path": "memory://dna",
+        "license": "test",
+        "concepts": [
+          "dna",
+          "cell",
+          "biology",
+          "helix"
+        ],
+        "topic": "DNA double helix",
+        "source": "unit_test",
+        "score": 90.9,
+        "kind": "scientific_diagram"
+      },
+      {
+        "asset_id": "seed_biology_overlay",
+        "uri": "",
+        "path": "",
+        "license": "internal_seed",
+        "concepts": [
+          "biology",
+          "education",
+          "graphic"
+        ],
+        "topic": "biology",
+        "source": "asset_intelligence_seed",
+        "score": 55.2,
+        "kind": "educational_graphic"
+      }
+    ],
+    "visual_assets": [
+      {
+        "asset_id": "seed_topic_biology_animation",
+        "uri": "",
+        "path": "",
+        "license": "internal_seed",
+        "concepts": [
+          "cell",
+          "division",
+          "mitosis",
+          "biology"
+        ],
+        "topic": "Cell division mitosis",
+        "source": "asset_intelligence_seed",
+        "score": 92.8,
+        "kind": "animation"
+      },
+      {
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "path": "memory://dna",
+        "license": "test",
+        "concepts": [
+          "dna",
+          "cell",
+          "biology",
+          "helix"
+        ],
+        "topic": "DNA double helix",
+        "source": "unit_test",
+        "score": 90.9,
+        "kind": "scientific_diagram"
+      },
+      {
+        "asset_id": "asset_b1496eda7da1_001",
+        "uri": "mock://assets/generated/vector_graphic/202dd1626d06a734.png",
+        "path": "mock://assets/generated/vector_graphic/202dd1626d06a734.png",
+        "license": "placeholder",
+        "concepts": [],
+        "topic": "Laboratory: Want to know how and why some organisms glow? Let's break down the science behind bioluminescence! \u2014 none \u2014 pure flat surfaces",
+        "source": "asset_generation",
+        "score": 56.1,
+        "kind": "vector_graphic"
+      },
+      {
+        "asset_id": "seed_biology_overlay",
+        "uri": "",
+        "path": "",
+        "license": "internal_seed",
+        "concepts": [
+          "biology",
+          "education",
+          "graphic"
+        ],
+        "topic": "biology",
+        "source": "asset_intelligence_seed",
+        "score": 55.2,
+        "kind": "educational_graphic"
+      }
+    ],
+    "note": "Optional attach to candidate \u2014 does not modify production pipeline stages"
+  },
+  "validation": {
+    "ok": true,
+    "passed": true,
+    "hard_fails": [],
+    "warnings": [],
+    "selected_count": 4,
+    "diversity_score": 83.0
+  }
+}

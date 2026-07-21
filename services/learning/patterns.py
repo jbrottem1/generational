@@ -56,6 +56,12 @@ def dimension_values(record: dict, dimension: str) -> list:
         return [str(v) for v in record.get("psychology_strategy", []) or []]
     if dimension == "keyword":
         return [str(k).lower() for k in record.get("keywords", []) or []][:8]
+    if dimension == "camera_movement":
+        value = record.get("camera_movement") or record.get("animation_style") or ""
+        return [str(value)] if value else []
+    if dimension == "evidence_modality":
+        value = record.get("evidence_modality") or record.get("visual_modality") or ""
+        return [str(value)] if value else []
     value = record.get(dimension, "")
     return [str(value)] if value else []
 

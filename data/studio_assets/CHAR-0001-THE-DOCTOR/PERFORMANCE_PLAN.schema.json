@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "generational://CHAR-0001/PERFORMANCE_PLAN.schema.json",
+  "title": "PerformancePlan",
+  "required": [
+    "character_id",
+    "scene_id",
+    "objective",
+    "emotion",
+    "gaze",
+    "body_language",
+    "gesture",
+    "walking_style",
+    "breathing",
+    "facial_performance",
+    "interaction_targets",
+    "camera_awareness",
+    "environmental_reactions",
+    "foot_contact_required"
+  ]
+}

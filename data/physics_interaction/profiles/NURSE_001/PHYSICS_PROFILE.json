@@ -1,0 +1,1051 @@
+{
+  "package_type": "PHYSICS_PROFILE",
+  "package_version": "1.0.0",
+  "engine_id": "physics_interaction",
+  "created_at": "2026-07-18T01:15:31.119574+00:00",
+  "character_id": "NURSE_001",
+  "world_id": "WORLD-GMRI-MEDICAL-LAB",
+  "philosophy": {
+    "not_a_renderer": true,
+    "not_an_image_generator": true,
+    "not_a_world_builder": true,
+    "rule": "Nothing floats. Nothing clips. Nothing teleports.",
+    "mission": "Everything has physical behavior. Actors obey physics. Objects obey physics. Interactions feel believable."
+  },
+  "supported_interactions": [
+    "walking",
+    "running",
+    "stopping",
+    "turning",
+    "jumping",
+    "sitting",
+    "standing",
+    "leaning",
+    "opening_doors",
+    "closing_doors",
+    "picking_up_objects",
+    "putting_objects_down",
+    "holding_objects",
+    "writing",
+    "typing",
+    "pointing",
+    "pressing_buttons",
+    "touching_screens",
+    "handshakes",
+    "hugging",
+    "medical_examinations",
+    "using_microscopes",
+    "using_tools",
+    "reading_books",
+    "turning_pages",
+    "looking_through_windows"
+  ],
+  "hand_physics": {
+    "character_id": "NURSE_001",
+    "capabilities": [
+      "finger_articulation",
+      "grasp_detection",
+      "object_grip",
+      "pressure",
+      "release",
+      "hand_object_alignment",
+      "dual_hand_interactions"
+    ],
+    "fingers": {
+      "per_hand": 5,
+      "joints_per_finger": 3,
+      "independent_articulation": true
+    },
+    "grasp": {
+      "detection": true,
+      "presets": [
+        "relaxed",
+        "precision_pinch",
+        "power_grip",
+        "tool_grip",
+        "book_cradle",
+        "stylus",
+        "handshake"
+      ],
+      "pressure_range": [
+        0.0,
+        1.0
+      ],
+      "release_required": true
+    },
+    "alignment": {
+      "hand_object_snap": true,
+      "max_miss_m": 0.02,
+      "forbid_missing_targets": true
+    },
+    "dual_hand": {
+      "enabled": true,
+      "modes": [
+        "symmetric",
+        "lead_support",
+        "stabilize_manipulate"
+      ]
+    },
+    "forbid": [
+      "mitten_hands",
+      "clipping_into_mesh",
+      "floating_grip"
+    ]
+  },
+  "foot_physics": {
+    "character_id": "NURSE_001",
+    "capabilities": [
+      "foot_planting",
+      "heel_strike",
+      "toe_roll",
+      "stairs",
+      "uneven_terrain",
+      "balance",
+      "friction"
+    ],
+    "gait_cycle": {
+      "heel_strike": true,
+      "midstance": true,
+      "toe_roll": true,
+      "push_off": true
+    },
+    "planting": {
+      "required": true,
+      "no_slide": true,
+      "no_float": true,
+      "ik_to_floor": true
+    },
+    "terrain": {
+      "flat": true,
+      "stairs": true,
+      "uneven": true,
+      "slope_max_deg": 28.0
+    },
+    "friction": {
+      "static": 0.75,
+      "kinetic": 0.55,
+      "forbid_ice_slide_default": true
+    },
+    "balance": {
+      "com_over_support_polygon": true,
+      "correction_enabled": true
+    },
+    "forbid": [
+      "sliding_feet",
+      "feet_below_floor",
+      "teleport_steps"
+    ]
+  },
+  "body_physics": {
+    "character_id": "NURSE_001",
+    "capabilities": [
+      "center_of_gravity",
+      "weight_transfer",
+      "momentum",
+      "acceleration",
+      "deceleration",
+      "balance_correction",
+      "body_rotation",
+      "secondary_motion"
+    ],
+    "mass_kg": 82.0,
+    "height_cm": 185.0,
+    "center_of_gravity": {
+      "default_offset_m": [
+        0.0,
+        0.925,
+        0.0
+      ],
+      "shifts_with_pose": true
+    },
+    "locomotion": {
+      "weight_transfer": true,
+      "momentum": true,
+      "acceleration": true,
+      "deceleration": true,
+      "max_walk_mps": 1.4,
+      "max_run_mps": 3.2,
+      "turn_rate_deg_s": 120.0
+    },
+    "balance": {
+      "correction": true,
+      "recovery_from_lean": true,
+      "forbid_weightless": true
+    },
+    "rotation": {
+      "hip_leads": true,
+      "spine_follows": true,
+      "head_stabilizes": true
+    },
+    "secondary_motion": [
+      "soft_tissue",
+      "coat_lag",
+      "hair_lag",
+      "arm_swing_inertia"
+    ],
+    "forbid": [
+      "float",
+      "teleport_pose",
+      "weightless_movement",
+      "broken_joints"
+    ],
+    "compose_character_rig_mechanics": true
+  },
+  "objects": [
+    {
+      "object_id": "furn_teaching_console_0",
+      "object_type": "console",
+      "properties_required": [
+        "mass",
+        "center_of_gravity",
+        "collision_volume",
+        "material",
+        "friction",
+        "interaction_zones"
+      ],
+      "mass_kg": 12.0,
+      "center_of_gravity": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "collision_volume": {
+        "shape": "box",
+        "enabled": true
+      },
+      "material": "metal_glass",
+      "friction": 0.6,
+      "interaction_zones": [
+        {
+          "id": "primary",
+          "radius_m": 0.15,
+          "actions": [
+            "touch",
+            "grasp",
+            "use"
+          ]
+        },
+        {
+          "id": "approach",
+          "radius_m": 0.9,
+          "actions": [
+            "approach"
+          ]
+        }
+      ],
+      "holdable": false,
+      "forbid_float": true,
+      "forbid_clip_through": true
+    },
+    {
+      "object_id": "furn_analysis_desk_1",
+      "object_type": "desk",
+      "properties_required": [
+        "mass",
+        "center_of_gravity",
+        "collision_volume",
+        "material",
+        "friction",
+        "interaction_zones"
+      ],
+      "mass_kg": 40.0,
+      "center_of_gravity": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "collision_volume": {
+        "shape": "box",
+        "enabled": true
+      },
+      "material": "wood_metal",
+      "friction": 0.75,
+      "interaction_zones": [
+        {
+          "id": "primary",
+          "radius_m": 0.15,
+          "actions": [
+            "touch",
+            "grasp",
+            "use"
+          ]
+        },
+        {
+          "id": "approach",
+          "radius_m": 0.9,
+          "actions": [
+            "approach"
+          ]
+        }
+      ],
+      "holdable": false,
+      "forbid_float": true,
+      "forbid_clip_through": true
+    },
+    {
+      "object_id": "furn_stool_chair_2",
+      "object_type": "chair",
+      "properties_required": [
+        "mass",
+        "center_of_gravity",
+        "collision_volume",
+        "material",
+        "friction",
+        "interaction_zones"
+      ],
+      "mass_kg": 8.0,
+      "center_of_gravity": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "collision_volume": {
+        "shape": "box",
+        "enabled": true
+      },
+      "material": "wood_fabric",
+      "friction": 0.7,
+      "interaction_zones": [
+        {
+          "id": "primary",
+          "radius_m": 0.15,
+          "actions": [
+            "touch",
+            "grasp",
+            "use"
+          ]
+        },
+        {
+          "id": "approach",
+          "radius_m": 0.9,
+          "actions": [
+            "approach"
+          ]
+        }
+      ],
+      "holdable": false,
+      "forbid_float": true,
+      "forbid_clip_through": true
+    },
+    {
+      "object_id": "furn_equipment_rack_3",
+      "object_type": "equipment_rack",
+      "properties_required": [
+        "mass",
+        "center_of_gravity",
+        "collision_volume",
+        "material",
+        "friction",
+        "interaction_zones"
+      ],
+      "mass_kg": 1.0,
+      "center_of_gravity": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "collision_volume": {
+        "shape": "box",
+        "enabled": true
+      },
+      "material": "generic",
+      "friction": 0.5,
+      "interaction_zones": [
+        {
+          "id": "primary",
+          "radius_m": 0.15,
+          "actions": [
+            "touch",
+            "grasp",
+            "use"
+          ]
+        },
+        {
+          "id": "approach",
+          "radius_m": 0.9,
+          "actions": [
+            "approach"
+          ]
+        }
+      ],
+      "holdable": true,
+      "forbid_float": true,
+      "forbid_clip_through": true
+    },
+    {
+      "object_id": "prop_microscope_0",
+      "object_type": "microscope",
+      "properties_required": [
+        "mass",
+        "center_of_gravity",
+        "collision_volume",
+        "material",
+        "friction",
+        "interaction_zones"
+      ],
+      "mass_kg": 4.5,
+      "center_of_gravity": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "collision_volume": {
+        "shape": "box",
+        "enabled": true
+      },
+      "material": "metal_glass",
+      "friction": 0.65,
+      "interaction_zones": [
+        {
+          "id": "primary",
+          "radius_m": 0.15,
+          "actions": [
+            "touch",
+            "grasp",
+            "use"
+          ]
+        },
+        {
+          "id": "approach",
+          "radius_m": 0.9,
+          "actions": [
+            "approach"
+          ]
+        }
+      ],
+      "holdable": false,
+      "forbid_float": true,
+      "forbid_clip_through": true
+    },
+    {
+      "object_id": "prop_hologram_1",
+      "object_type": "hologram",
+      "properties_required": [
+        "mass",
+        "center_of_gravity",
+        "collision_volume",
+        "material",
+        "friction",
+        "interaction_zones"
+      ],
+      "mass_kg": 0.0,
+      "center_of_gravity": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "collision_volume": {
+        "shape": "none",
+        "enabled": false
+      },
+      "material": "volumetric_light",
+      "friction": 0.0,
+      "interaction_zones": [
+        {
+          "id": "primary",
+          "radius_m": 0.15,
+          "actions": [
+            "touch",
+            "grasp",
+            "use"
+          ]
+        },
+        {
+          "id": "approach",
+          "radius_m": 0.9,
+          "actions": [
+            "approach"
+          ]
+        }
+      ],
+      "holdable": false,
+      "forbid_float": false,
+      "forbid_clip_through": false
+    },
+    {
+      "object_id": "prop_whiteboard_2",
+      "object_type": "whiteboard",
+      "properties_required": [
+        "mass",
+        "center_of_gravity",
+        "collision_volume",
+        "material",
+        "friction",
+        "interaction_zones"
+      ],
+      "mass_kg": 18.0,
+      "center_of_gravity": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "collision_volume": {
+        "shape": "box",
+        "enabled": true
+      },
+      "material": "composite",
+      "friction": 0.5,
+      "interaction_zones": [
+        {
+          "id": "primary",
+          "radius_m": 0.15,
+          "actions": [
+            "touch",
+            "grasp",
+            "use"
+          ]
+        },
+        {
+          "id": "approach",
+          "radius_m": 0.9,
+          "actions": [
+            "approach"
+          ]
+        }
+      ],
+      "holdable": false,
+      "forbid_float": true,
+      "forbid_clip_through": true
+    },
+    {
+      "object_id": "prop_door_3",
+      "object_type": "door",
+      "properties_required": [
+        "mass",
+        "center_of_gravity",
+        "collision_volume",
+        "material",
+        "friction",
+        "interaction_zones"
+      ],
+      "mass_kg": 35.0,
+      "center_of_gravity": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "collision_volume": {
+        "shape": "box",
+        "enabled": true
+      },
+      "material": "wood_metal",
+      "friction": 0.5,
+      "interaction_zones": [
+        {
+          "id": "primary",
+          "radius_m": 0.15,
+          "actions": [
+            "touch",
+            "grasp",
+            "use"
+          ]
+        },
+        {
+          "id": "approach",
+          "radius_m": 0.9,
+          "actions": [
+            "approach"
+          ]
+        }
+      ],
+      "holdable": false,
+      "forbid_float": true,
+      "forbid_clip_through": true
+    },
+    {
+      "object_id": "prop_medical_scanner_4",
+      "object_type": "medical_scanner",
+      "properties_required": [
+        "mass",
+        "center_of_gravity",
+        "collision_volume",
+        "material",
+        "friction",
+        "interaction_zones"
+      ],
+      "mass_kg": 1.0,
+      "center_of_gravity": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "collision_volume": {
+        "shape": "box",
+        "enabled": true
+      },
+      "material": "generic",
+      "friction": 0.5,
+      "interaction_zones": [
+        {
+          "id": "primary",
+          "radius_m": 0.15,
+          "actions": [
+            "touch",
+            "grasp",
+            "use"
+          ]
+        },
+        {
+          "id": "approach",
+          "radius_m": 0.9,
+          "actions": [
+            "approach"
+          ]
+        }
+      ],
+      "holdable": true,
+      "forbid_float": true,
+      "forbid_clip_through": true
+    },
+    {
+      "object_id": "door_main",
+      "object_type": "door",
+      "properties_required": [
+        "mass",
+        "center_of_gravity",
+        "collision_volume",
+        "material",
+        "friction",
+        "interaction_zones"
+      ],
+      "mass_kg": 35.0,
+      "center_of_gravity": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "collision_volume": {
+        "shape": "box",
+        "enabled": true
+      },
+      "material": "wood_metal",
+      "friction": 0.5,
+      "interaction_zones": [
+        {
+          "id": "primary",
+          "radius_m": 0.15,
+          "actions": [
+            "touch",
+            "grasp",
+            "use"
+          ]
+        },
+        {
+          "id": "approach",
+          "radius_m": 0.9,
+          "actions": [
+            "approach"
+          ]
+        }
+      ],
+      "holdable": false,
+      "forbid_float": true,
+      "forbid_clip_through": true
+    }
+  ],
+  "collision": {
+    "world_id": "WORLD-GMRI-MEDICAL-LAB",
+    "enabled": true,
+    "forbid": [
+      "walking_through_walls",
+      "hands_through_objects",
+      "feet_below_floors",
+      "floating_objects",
+      "body_clipping"
+    ],
+    "layers": {
+      "static_world": [
+        "walls",
+        "floors",
+        "ceilings",
+        "furniture"
+      ],
+      "dynamic_props": [
+        "holdables",
+        "doors"
+      ],
+      "characters": [
+        "body",
+        "hands",
+        "feet"
+      ],
+      "cloth_hair": [
+        "coat",
+        "hair"
+      ]
+    },
+    "rules": [
+      "characters_collide_with_static_world",
+      "hands_collide_with_interactables",
+      "feet_constrained_to_floor_plane",
+      "props_do_not_interpenetrate",
+      "no_body_self_clip_hard"
+    ],
+    "floor_clamp": true,
+    "wall_block": true,
+    "hand_penetration_max_m": 0.0,
+    "foot_penetration_max_m": 0.0
+  },
+  "clothing_physics": {
+    "character_id": "NURSE_001",
+    "forces": [
+      "coat_movement",
+      "shirt_folds",
+      "fabric_response",
+      "gravity",
+      "wind",
+      "body_collision"
+    ],
+    "simulate_as_fabric": true,
+    "layers": [
+      {
+        "id": "base",
+        "stiffness": 0.7,
+        "damping": 0.5
+      },
+      {
+        "id": "coat",
+        "stiffness": 0.45,
+        "damping": 0.4,
+        "wind_response": 0.65
+      },
+      {
+        "id": "sleeves",
+        "stiffness": 0.5,
+        "damping": 0.45,
+        "follows": "arms"
+      }
+    ],
+    "responds_to": [
+      "walk",
+      "run",
+      "turn",
+      "sit",
+      "wind",
+      "gravity",
+      "body_collision"
+    ],
+    "body_collision": true,
+    "forbid": [
+      "frozen_fabric",
+      "fabric_leads_body",
+      "clipping_into_limbs"
+    ],
+    "compose_wardrobe_profile": true
+  },
+  "hair_physics": {
+    "character_id": "NURSE_001",
+    "forces": [
+      "gravity",
+      "wind",
+      "head_motion",
+      "secondary_movement"
+    ],
+    "enabled": true,
+    "strands_or_guides": true,
+    "responds_to": [
+      "gravity",
+      "wind",
+      "head_yaw",
+      "head_pitch",
+      "locomotion"
+    ],
+    "secondary_movement": true,
+    "damping": 0.55,
+    "stiffness": 0.4,
+    "forbid": [
+      "static_helmet_hair",
+      "clipping_into_skull"
+    ],
+    "compose_hair_profile": true
+  },
+  "environmental_physics": {
+    "weather": "interior_climate",
+    "outdoor": false,
+    "wind": {
+      "enabled": false,
+      "affects": [
+        "hair",
+        "clothing",
+        "trees",
+        "grass",
+        "flags",
+        "paper"
+      ],
+      "base_strength": 0.05,
+      "gusts": false
+    },
+    "rain": {
+      "enabled": false,
+      "affects": [
+        "surfaces",
+        "clothing",
+        "puddles",
+        "footprints"
+      ],
+      "wetness": 0.0,
+      "puddles": false,
+      "footprints": false
+    },
+    "interior_air": true,
+    "particles_drift": true
+  },
+  "interactions": [
+    {
+      "package_type": "INTERACTION_PACKAGE",
+      "package_version": "1.0.0",
+      "engine_id": "physics_interaction",
+      "created_at": "2026-07-18T01:15:31.119125+00:00",
+      "interaction_id": "NURSE_001_microscope_demo",
+      "actor": "NURSE_001",
+      "target": "microscope",
+      "interaction_type": "using_microscopes",
+      "contact_points": [
+        {
+          "id": "hands_both",
+          "required": true,
+          "must_reach": true
+        },
+        {
+          "id": "eyepiece",
+          "required": true,
+          "must_reach": true
+        },
+        {
+          "id": "focus_knob",
+          "required": true,
+          "must_reach": true
+        }
+      ],
+      "physics_state": "manipulating",
+      "constraints": {
+        "no_float": true,
+        "no_clip": true,
+        "no_teleport": true,
+        "ground_contact_if_locomotion": false,
+        "hand_must_hit_target": true
+      },
+      "animation_requirements": [
+        "approach",
+        "adjust",
+        "look",
+        "focus"
+      ],
+      "completion_state": {
+        "success_when": "physics_state==complete",
+        "required_final_state": "complete",
+        "failed_if": [
+          "hand_misses_target",
+          "foot_slide",
+          "clip_detected",
+          "actor_float"
+        ]
+      },
+      "timing": {
+        "t_start": 0.0,
+        "t_end": 1.2
+      },
+      "world_id": "WORLD-GMRI-MEDICAL-LAB",
+      "architecture": {
+        "frozen": true,
+        "no_new_renderer": true,
+        "not_a_world_builder": true
+      }
+    },
+    {
+      "package_type": "INTERACTION_PACKAGE",
+      "package_version": "1.0.0",
+      "engine_id": "physics_interaction",
+      "created_at": "2026-07-18T01:15:31.119130+00:00",
+      "interaction_id": "NURSE_001_open_door",
+      "actor": "NURSE_001",
+      "target": "door_main",
+      "interaction_type": "opening_doors",
+      "contact_points": [
+        {
+          "id": "hand_right",
+          "required": true,
+          "must_reach": true
+        },
+        {
+          "id": "door_handle",
+          "required": true,
+          "must_reach": true
+        }
+      ],
+      "physics_state": "contacting",
+      "constraints": {
+        "no_float": true,
+        "no_clip": true,
+        "no_teleport": true,
+        "ground_contact_if_locomotion": false,
+        "hand_must_hit_target": true
+      },
+      "animation_requirements": [
+        "reach",
+        "grasp_handle",
+        "pull_or_push",
+        "release"
+      ],
+      "completion_state": {
+        "success_when": "physics_state==complete",
+        "required_final_state": "complete",
+        "failed_if": [
+          "hand_misses_target",
+          "foot_slide",
+          "clip_detected",
+          "actor_float"
+        ]
+      },
+      "timing": {
+        "t_start": 0.0,
+        "t_end": 1.2
+      },
+      "world_id": "WORLD-GMRI-MEDICAL-LAB",
+      "architecture": {
+        "frozen": true,
+        "no_new_renderer": true,
+        "not_a_world_builder": true
+      }
+    },
+    {
+      "package_type": "INTERACTION_PACKAGE",
+      "package_version": "1.0.0",
+      "engine_id": "physics_interaction",
+      "created_at": "2026-07-18T01:15:31.119134+00:00",
+      "interaction_id": "NURSE_001_walk",
+      "actor": "NURSE_001",
+      "target": "nav_mesh",
+      "interaction_type": "walking",
+      "contact_points": [
+        {
+          "id": "foot_left",
+          "required": true,
+          "must_reach": true
+        },
+        {
+          "id": "foot_right",
+          "required": true,
+          "must_reach": true
+        }
+      ],
+      "physics_state": "manipulating",
+      "constraints": {
+        "no_float": true,
+        "no_clip": true,
+        "no_teleport": true,
+        "ground_contact_if_locomotion": true,
+        "hand_must_hit_target": false
+      },
+      "animation_requirements": [
+        "walk_cycle",
+        "foot_plant",
+        "arm_swing"
+      ],
+      "completion_state": {
+        "success_when": "physics_state==complete",
+        "required_final_state": "complete",
+        "failed_if": [
+          "hand_misses_target",
+          "foot_slide",
+          "clip_detected",
+          "actor_float"
+        ]
+      },
+      "timing": {
+        "t_start": 0.0,
+        "t_end": 1.2
+      },
+      "world_id": "WORLD-GMRI-MEDICAL-LAB",
+      "architecture": {
+        "frozen": true,
+        "no_new_renderer": true,
+        "not_a_world_builder": true
+      }
+    }
+  ],
+  "architecture": {
+    "frozen": true,
+    "no_new_renderer": true,
+    "no_pipeline_redesign": true,
+    "feeds": [
+      "character_performance_engine",
+      "character_rig_studio",
+      "stage_world_simulation",
+      "shot_assembly",
+      "true_motion"
+    ]
+  },
+  "scene_ref": {
+    "character_id": "NURSE_001",
+    "physics_profile_ref": "data/physics_interaction/profiles/NURSE_001/PHYSICS_PROFILE.json",
+    "do_not_float": true,
+    "do_not_clip": true,
+    "do_not_teleport": true
+  },
+  "interaction_validations": [
+    {
+      "ok": true,
+      "score": 100,
+      "failures": [],
+      "rejects_hit": [],
+      "reject_catalog": [
+        "floating_actors",
+        "sliding_feet",
+        "object_clipping",
+        "broken_collisions",
+        "weightless_movement",
+        "hands_missing_targets",
+        "unrealistic_balance"
+      ]
+    },
+    {
+      "ok": true,
+      "score": 100,
+      "failures": [],
+      "rejects_hit": [],
+      "reject_catalog": [
+        "floating_actors",
+        "sliding_feet",
+        "object_clipping",
+        "broken_collisions",
+        "weightless_movement",
+        "hands_missing_targets",
+        "unrealistic_balance"
+      ]
+    },
+    {
+      "ok": true,
+      "score": 100,
+      "failures": [],
+      "rejects_hit": [],
+      "reject_catalog": [
+        "floating_actors",
+        "sliding_feet",
+        "object_clipping",
+        "broken_collisions",
+        "weightless_movement",
+        "hands_missing_targets",
+        "unrealistic_balance"
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "score": 100,
+    "failures": [],
+    "rejects_hit": [],
+    "reject_catalog": [
+      "floating_actors",
+      "sliding_feet",
+      "object_clipping",
+      "broken_collisions",
+      "weightless_movement",
+      "hands_missing_targets",
+      "unrealistic_balance"
+    ],
+    "success": "Every actor behaves like a physical being inside a physical world. Interactions appear believable and consistent across every production.",
+    "mp4_required": true,
+    "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for float, slide, clip, and missed hand targets."
+  }
+}

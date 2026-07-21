@@ -12,6 +12,7 @@ in the plan format changes when they arrive.
 from engines.render.assets import (
     AssetFulfiller,
     AssetResolver,
+    ensure_renderable_still,
     fulfiller_keys,
     get_fulfiller,
     register_fulfiller,
@@ -63,6 +64,7 @@ from engines.render.validator import CHECK_WEIGHTS, RenderValidator
 __all__ = [
     "AssetFulfiller",
     "AssetResolver",
+    "ensure_renderable_still",
     "AudioMixer",
     "CAPTION_MODES",
     "CAPTION_STYLE_PRESETS",

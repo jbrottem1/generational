@@ -1,0 +1,61 @@
+{
+  "iteration": "001",
+  "focus": "eyes_face_expressions",
+  "decision": "PASS",
+  "golden_motion": "data/animation_runtime/golden_motion/GOLDEN_MOTION_20260719T051310Z",
+  "final_mp4_ok": true,
+  "duration_s": 14.0,
+  "scores_before": {
+    "eyes": 3,
+    "facial_appeal": 3,
+    "expressions": 3,
+    "overall_appeal": 3.8,
+    "trust": 4,
+    "warmth": 3,
+    "educational_presence": 4,
+    "memorability": 3,
+    "eye_contact": 3,
+    "facial_readability": 3,
+    "costume": 2,
+    "silhouette": 4
+  },
+  "scores_after": {
+    "eyes": 5,
+    "facial_appeal": 5,
+    "expressions": 4,
+    "overall_appeal": 4.2,
+    "trust": 5,
+    "warmth": 4,
+    "educational_presence": 5,
+    "memorability": 3,
+    "eye_contact": 4,
+    "facial_readability": 5,
+    "costume": 2,
+    "silhouette": 4
+  },
+  "deltas": {
+    "eyes": 2,
+    "facial_appeal": 2,
+    "expressions": 1,
+    "overall_appeal": 0.4
+  },
+  "pass_conditions": {
+    "face_score_increased": true,
+    "eye_score_increased": true,
+    "overall_appeal_increased": true,
+    "no_regression_elsewhere": true
+  },
+  "recommendation": "ACCEPT Iteration 001. Proceed to Iteration 002 — Medical Coat / Costume only. Residual: some Golden Motion speak frames still favor rear cranial silhouette; address under later Animation Personality or facial head/cam polish without reopening coat work mid-pass.",
+  "what_improved": [
+    "Iris/pupil hierarchy visible; emission quieted from headlight to trust glow",
+    "Thicker lids + split brows",
+    "Smaller cheeks; mouth cavity cue; stronger smile/blink/brow shape-key deltas",
+    "Resting warmth (smile + squint + cheek_raise)",
+    "Asymmetric blink timing + eye-bone gaze during speak window"
+  ],
+  "what_remains": [
+    "Still procedural kitbash — not CU-hero organic face",
+    "Smile vs neutral still subtle in some stills",
+    "GM dialogue framing can miss front of face"
+  ]
+}

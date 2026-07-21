@@ -39,10 +39,10 @@ def main() -> int:
         "expected_filename": EXPECTED_FILENAME,
     }
 
-    if ctx.mode.value != "local":
+    if not ctx.can_claim_export_success:
         report["ok"] = False
-        report["status"] = "wrong_environment"
-        report["message"] = "Run this script on your Mac after local render."
+        report["status"] = "export_root_unreachable"
+        report["message"] = "Desktop media library unreachable. Expected ~/Desktop/AI Start-Up/Videos/."
         print(json.dumps(report, indent=2))
         return 1
 

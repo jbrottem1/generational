@@ -1,0 +1,26 @@
+{
+  "character_id": "DOCTOR_001",
+  "forces": [
+    "gravity",
+    "wind",
+    "head_motion",
+    "secondary_movement"
+  ],
+  "enabled": true,
+  "strands_or_guides": true,
+  "responds_to": [
+    "gravity",
+    "wind",
+    "head_yaw",
+    "head_pitch",
+    "locomotion"
+  ],
+  "secondary_movement": true,
+  "damping": 0.55,
+  "stiffness": 0.4,
+  "forbid": [
+    "static_helmet_hair",
+    "clipping_into_skull"
+  ],
+  "compose_hair_profile": true
+}

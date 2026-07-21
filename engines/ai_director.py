@@ -16,6 +16,10 @@ Failure policy: the Director NEVER crashes the pipeline. Empty context →
 Ownership: writes `director_package` (incl. production_blueprint) and
 additive direction fields on items; does not overwrite script/visual/audio
 package bodies.
+
+Import policy: services.ai_director is imported lazily inside run() so that
+`import engines` / `engines.heuristics` cannot circularly load this module
+while services.ai_director.blueprint is still initializing.
 """
 
 from __future__ import annotations
@@ -24,14 +28,11 @@ from datetime import datetime, timezone
 
 from core.log import get_logger, log_event
 from engines.contracts import ContractEngine
-from services.ai_director.consumers import apply_blueprint_to_candidate
-from services.ai_director.models import (
-    AI_DIRECTOR_ENGINE_VERSION,
-    DirectorStatus,
-)
-from services.ai_director.package import build_director_package, collect_director_items
 
 logger = get_logger(__name__)
+
+# Keep version string local — avoid importing services.ai_director at module load
+AI_DIRECTOR_ENGINE_VERSION = "5.0.0"
 
 
 def _now_iso() -> str:
@@ -69,6 +70,10 @@ class AiDirectorEngine(ContractEngine):
         return True
 
     def run(self, context: dict) -> dict:
+        from services.ai_director.consumers import apply_blueprint_to_candidate
+        from services.ai_director.models import DirectorStatus
+        from services.ai_director.package import build_director_package, collect_director_items
+
         items, source_key = collect_director_items(context)
 
         if not items:
@@ -118,6 +123,8 @@ class AiDirectorEngine(ContractEngine):
         return updates
 
     def _summary(self, packages: list, items: int) -> dict:
+        from services.ai_director.models import DirectorStatus
+
         validations = [pkg.get("validation", {}) for pkg in packages]
         statuses = [v.get("status", DirectorStatus.INCOMPLETE) for v in validations]
         confidences = [int(v.get("confidence", 0)) for v in validations]

@@ -1,0 +1,164 @@
+{
+  "world_id": "WORLD-MARS_COLONY",
+  "world_type": "Mars Colony",
+  "name": "Mars Colony",
+  "theme": "frontier survival",
+  "scale": "habitat",
+  "historical_accuracy": 65,
+  "environment": {
+    "description": "Pressurized Mars habitat with dusty copper terrain beyond sealed viewports",
+    "continuity_key": "WORLD-MARS_COLONY",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "warm interior key + cold Mars exterior spill",
+    "consistent_key": true
+  },
+  "architecture": [
+    "geodesic dome",
+    "airlock ring",
+    "solar array pylons"
+  ],
+  "weather": "thin_dust_haze",
+  "objects": [
+    {
+      "object_id": "obj_rover",
+      "name": "rover",
+      "surface": "ground",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.7,
+        "y": 0.0,
+        "z": 0.35
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_life_support_console",
+      "name": "life_support_console",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.4,
+        "y": 0.0,
+        "z": 0.5
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "obj_crew_bunk",
+      "name": "crew_bunk",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.2,
+        "y": 0.0,
+        "z": 0.7
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "background_animations": [
+    "dust devil distant",
+    "viewport frost pulse"
+  ],
+  "sound_ambience": [
+    "habitat fans",
+    "dust scratch on hull"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.4,
+    "max_height": 3.5,
+    "min_distance": 0.6,
+    "max_distance": 25.0
+  },
+  "color_palette": {
+    "family": "space",
+    "primary": "#2B1508",
+    "accent": "#C45C26",
+    "interior": "#1B3A4B"
+  },
+  "lighting_presets": [
+    {
+      "id": "day_neutral",
+      "recipe": "warm habitat key + soft bounce fill",
+      "mood": "neutral"
+    },
+    {
+      "id": "dramatic_rim",
+      "recipe": "warm habitat key + hard rim + practical instrument glow",
+      "mood": "dramatic"
+    },
+    {
+      "id": "low_key_focus",
+      "recipe": "low-key with luminous subject isolation",
+      "mood": "focus"
+    },
+    {
+      "id": "bright_reveal",
+      "recipe": "bright key + lifted shadows for revelation",
+      "mood": "reveal"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "wide_establish",
+      "position": "rear_center",
+      "angle": "eye_level",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "bench_medium",
+      "position": "workbench_front",
+      "angle": "slight_high",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "macro_detail",
+      "position": "instrument_close",
+      "angle": "macro",
+      "lens_hint": "85mm"
+    },
+    {
+      "id": "corner_observe",
+      "position": "room_corner",
+      "angle": "observational",
+      "lens_hint": "28mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "airlock",
+      "region": "entry"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "rover_bay",
+      "to_compatible": [
+        "Outer Space",
+        "Research Center",
+        "Factory"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.157899+00:00"
+}

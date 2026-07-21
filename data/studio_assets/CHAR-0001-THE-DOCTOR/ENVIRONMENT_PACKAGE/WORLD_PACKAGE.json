@@ -1,0 +1,185 @@
+{
+  "id": "LOC-GMRI",
+  "name": "The Generational Medical Research Institute",
+  "short_name": "GMRI",
+  "owner_character": "CHAR-0001",
+  "asset_status": [
+    "permanent",
+    "reusable",
+    "version_controlled"
+  ],
+  "style": {
+    "look": "high_end_cinematic_science_facility",
+    "feel": [
+      "warm",
+      "inviting",
+      "beautiful",
+      "futuristic",
+      "highly_detailed",
+      "filled_with_life"
+    ],
+    "forbid_empty": true
+  },
+  "architecture": "tiered_glass_and_titanium_medical_campus_with_gardens",
+  "lighting": "soft_warm_clinical + blue_practical_accents + skylight_volumetrics",
+  "palette_hint": "lab",
+  "textures": [
+    "medical_white",
+    "brushed_titanium",
+    "glass",
+    "warm_wood_accents",
+    "living_plant_walls"
+  ],
+  "furniture": [
+    "research_benches",
+    "teaching_amphitheater_seats",
+    "observation_consoles",
+    "cafe_tables"
+  ],
+  "equipment": [
+    "holographic_displays",
+    "microscopes",
+    "dna_sequencers",
+    "surgical_assist_arms",
+    "med_drones"
+  ],
+  "interactive_props": [
+    "clipboard",
+    "medical_scanner",
+    "holo_anatomy_model",
+    "specimen_tray",
+    "tablet"
+  ],
+  "ambient_life": [
+    "researchers_moving",
+    "robots_working",
+    "screens_active",
+    "plants_growing",
+    "medical_equipment_functioning",
+    "drones_passing"
+  ],
+  "weather": "interior_climate + garden_breeze_on_deck",
+  "environmental_animation": [
+    "monitor_waveforms",
+    "holo_spin",
+    "plant_sway",
+    "dust_motes_in_skylight",
+    "drone_approach",
+    "door_hiss"
+  ],
+  "background_characters": [
+    "clinicians",
+    "students",
+    "assist_robots",
+    "visiting_educators"
+  ],
+  "soundscape": [
+    "soft_beeps",
+    "distant_lectures",
+    "garden_birds",
+    "server_hum",
+    "shoe_squeaks"
+  ],
+  "detail_dressing": [
+    "notes_on_whiteboards",
+    "coffee_cups",
+    "books_on_shelves",
+    "running_computers",
+    "plants",
+    "reflection_on_glass",
+    "charts"
+  ],
+  "rooms": {
+    "reception": {
+      "reusable": true,
+      "living_set": true
+    },
+    "research_laboratories": {
+      "reusable": true,
+      "living_set": true
+    },
+    "medical_classrooms": {
+      "reusable": true,
+      "living_set": true
+    },
+    "ai_operating_room": {
+      "reusable": true,
+      "living_set": true
+    },
+    "dna_laboratory": {
+      "reusable": true,
+      "living_set": true
+    },
+    "microscope_room": {
+      "reusable": true,
+      "living_set": true
+    },
+    "robotics_lab": {
+      "reusable": true,
+      "living_set": true
+    },
+    "holographic_teaching_theater": {
+      "reusable": true,
+      "living_set": true
+    },
+    "lecture_hall": {
+      "reusable": true,
+      "living_set": true
+    },
+    "medical_museum": {
+      "reusable": true,
+      "living_set": true
+    },
+    "future_medical_archive": {
+      "reusable": true,
+      "living_set": true
+    },
+    "underground_research_center": {
+      "reusable": true,
+      "living_set": true
+    },
+    "observation_deck": {
+      "reusable": true,
+      "living_set": true
+    },
+    "drone_landing_area": {
+      "reusable": true,
+      "living_set": true
+    },
+    "garden": {
+      "reusable": true,
+      "living_set": true
+    },
+    "cafeteria": {
+      "reusable": true,
+      "living_set": true
+    },
+    "server_room": {
+      "reusable": true,
+      "living_set": true
+    },
+    "offices": {
+      "reusable": true,
+      "living_set": true
+    },
+    "living_quarters": {
+      "reusable": true,
+      "living_set": true
+    },
+    "emergency_response_center": {
+      "reusable": true,
+      "living_set": true
+    }
+  },
+  "domains": [
+    "medicine",
+    "biology",
+    "science",
+    "anatomy",
+    "chemistry",
+    "health",
+    "technology",
+    "physics"
+  ],
+  "world_builder_hint": "WORLD-HOSPITAL"
+}

@@ -1,0 +1,49 @@
+{
+  "framework_id": "HUMAN_REALISM_FRAMEWORK_V1",
+  "framework_version": "1.0.0",
+  "gold_standard": "DOCTOR_001",
+  "characters": [
+    {
+      "character_id": "DOCTOR_001",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/human_realism/characters/DOCTOR_001",
+      "is_gold_standard": true
+    },
+    {
+      "character_id": "CHAR-0001",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/human_realism/characters/CHAR-0001",
+      "is_gold_standard": false
+    },
+    {
+      "character_id": "CHAR-ATLAS",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/human_realism/characters/CHAR-ATLAS",
+      "is_gold_standard": false
+    },
+    {
+      "character_id": "CHAR-NOVA",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/human_realism/characters/CHAR-NOVA",
+      "is_gold_standard": false
+    },
+    {
+      "character_id": "CHAR-ORION",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/human_realism/characters/CHAR-ORION",
+      "is_gold_standard": false
+    },
+    {
+      "character_id": "CHAR-PIPER",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/human_realism/characters/CHAR-PIPER",
+      "is_gold_standard": false
+    },
+    {
+      "character_id": "CHAR-LUNA",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/human_realism/characters/CHAR-LUNA",
+      "is_gold_standard": false
+    }
+  ],
+  "updated_at": "2026-07-16T03:05:37.350088+00:00",
+  "inheritance": "BASE_HUMAN_REALISM <- character identity overrides",
+  "architecture": {
+    "no_new_renderer": true,
+    "no_pipeline_redesign": true,
+    "structured_data_and_soft_bindings_only": true
+  }
+}

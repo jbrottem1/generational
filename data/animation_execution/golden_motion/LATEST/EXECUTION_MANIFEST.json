@@ -1,0 +1,115 @@
+{
+  "test": "GOLDEN_MOTION_VALIDATION",
+  "created_at": "2026-07-18T01:21:48.393375+00:00",
+  "passed": false,
+  "refused_misleading_mp4": true,
+  "renderer_used": "insufficient_no_skeletal_runtime",
+  "supports_skeletal": false,
+  "actor_asset_loaded": false,
+  "actor_id": "DOCTOR_001",
+  "rig_version": "1.1.0",
+  "world_package": "WORLD-GMRI-MEDICAL-LAB",
+  "animation_clips": [
+    "walking_cycle",
+    "stopping",
+    "looking_around",
+    "picking_up_objects",
+    "explaining"
+  ],
+  "joint_tracks": [
+    "pelvis",
+    "spine_01",
+    "shoulder_right",
+    "elbow_right",
+    "wrist_right",
+    "hand_right_fingers",
+    "hip_left",
+    "knee_left",
+    "knee_right",
+    "ankle_left",
+    "ankle_right",
+    "foot_left",
+    "foot_right",
+    "head",
+    "eye_left",
+    "eye_right",
+    "eyelids",
+    "jaw",
+    "mouth_corner_left",
+    "mouth_corner_right",
+    "chest"
+  ],
+  "facial_tracks": [
+    "blinks",
+    "smile",
+    "gaze",
+    "speech_driven"
+  ],
+  "interaction_constraints": [
+    "gm_open_door",
+    "gm_grasp_sample"
+  ],
+  "physics_events": {
+    "no_float": true,
+    "no_clip": true,
+    "no_teleport": true,
+    "foot_planting": true,
+    "object_mass_kg": 0.12,
+    "arm_weight_reaction": true
+  },
+  "camera_tracks": [
+    "wide_tracking",
+    "medium_three_quarter",
+    "close_insert_hand",
+    "medium_close_up"
+  ],
+  "spoken_line": "Real discovery begins when we look a little closer.",
+  "voice_intent": "VOICE-0001 Founder ElevenLabs (or Doctor canonical if assigned)",
+  "lip_sync": "planned_phoneme_timeline_only \u2014 not waveform-aligned without runtime",
+  "execution": {
+    "ok": false,
+    "encode": {
+      "ok": false,
+      "op": "encode_mp4",
+      "executed_natively": false,
+      "mp4_path": null,
+      "refused": true,
+      "reason": "No skeletal animation runtime or skinned mesh is available. Refusing to encode a Ken Burns / layered-still MP4 as Golden Motion.",
+      "auto_rejection": [
+        "no_skeletal_runtime",
+        "no_skinned_mesh",
+        "true_motion_is_layered_stills_only",
+        "no_fallback_stills_permitted_for_golden_motion"
+      ]
+    },
+    "log_ops": [
+      "load_world",
+      "load_actor",
+      "place_actor",
+      "apply_animation_clip",
+      "apply_animation_clip",
+      "apply_animation_clip",
+      "apply_animation_clip",
+      "apply_animation_clip",
+      "apply_joint_keyframes",
+      "apply_facial_performance",
+      "apply_gaze_target",
+      "apply_lip_sync",
+      "attach_object",
+      "execute_interaction",
+      "execute_interaction",
+      "apply_physics",
+      "apply_camera",
+      "apply_camera",
+      "apply_camera",
+      "apply_camera",
+      "apply_lighting",
+      "render_frames",
+      "encode_mp4"
+    ]
+  },
+  "runtime_selection": {
+    "selected": "insufficient_no_skeletal_runtime",
+    "note": "No skeletal runtime/assets \u2014 Golden Motion MP4 refused"
+  }
+}

@@ -8,13 +8,17 @@ from typing import Any
 def analyze_improvements(productions: list[dict[str, Any]] | None = None) -> list[str]:
     """Ranked recommendations — quality and reliability over feature creep."""
     productions = productions or []
-    awaiting = sum(1 for p in productions if p.get("local_render_status") == "awaiting_local_render")
+    awaiting = sum(
+        1
+        for p in productions
+        if p.get("local_render_status") in ("ready_to_render", "awaiting_local_render", "pending")
+    )
     failed = sum(1 for p in productions if p.get("local_render_status") == "failed")
     recs: list[str] = []
 
     if awaiting > 0:
         recs.append(
-            f"Clear render backlog ({awaiting} awaiting local render) — run `run_render_package.py` on Mac batch."
+            f"Clear render backlog ({awaiting} ready/pending) — run local render on Mac."
         )
     if failed:
         recs.append(

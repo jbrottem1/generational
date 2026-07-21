@@ -1,0 +1,43 @@
+{
+  "world_id": "WORLD-GMRI-MEDICAL-LAB",
+  "enabled": true,
+  "forbid": [
+    "walking_through_walls",
+    "hands_through_objects",
+    "feet_below_floors",
+    "floating_objects",
+    "body_clipping"
+  ],
+  "layers": {
+    "static_world": [
+      "walls",
+      "floors",
+      "ceilings",
+      "furniture"
+    ],
+    "dynamic_props": [
+      "holdables",
+      "doors"
+    ],
+    "characters": [
+      "body",
+      "hands",
+      "feet"
+    ],
+    "cloth_hair": [
+      "coat",
+      "hair"
+    ]
+  },
+  "rules": [
+    "characters_collide_with_static_world",
+    "hands_collide_with_interactables",
+    "feet_constrained_to_floor_plane",
+    "props_do_not_interpenetrate",
+    "no_body_self_clip_hard"
+  ],
+  "floor_clamp": true,
+  "wall_block": true,
+  "hand_penetration_max_m": 0.0,
+  "foot_penetration_max_m": 0.0
+}

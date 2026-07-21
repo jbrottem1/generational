@@ -1,0 +1,360 @@
+{
+  "schema_version": "1.0",
+  "production_id": "ops_9003009684",
+  "brief": {
+    "topic": "What Gravity Really Does to Time",
+    "platform": "youtube_shorts",
+    "length_sec": 60,
+    "style": "educational",
+    "narrator": "professor",
+    "voice": "professor",
+    "quality_target": 98.0,
+    "constraints": {
+      "audience": "high-school and college learners"
+    },
+    "command": "",
+    "raw": {}
+  },
+  "current_stage": "export",
+  "current_agent": "export_and_validate",
+  "overall_progress_pct": 100,
+  "elapsed_ms": 3451,
+  "eta_ms": null,
+  "overall_status": "succeeded",
+  "pipeline_health": "degraded",
+  "warnings": [
+    "animation unavailable \u2014 continued",
+    "studio_render failed after retries \u2014 production continued",
+    "mp4_not_yet_materialized \u2014 metadata package exported for smoke/plan modes"
+  ],
+  "retry_count": 1,
+  "quality_scores": {
+    "research": 85.0,
+    "psychology": 90.0,
+    "studio_director": 95.0,
+    "script_generator": 95.0,
+    "scene_builder": 100.0,
+    "media_collection": 100.0,
+    "animation": 100.0,
+    "voice_generation": 100.0,
+    "music_sound": 90.0,
+    "captions": 95.0,
+    "rendering": 100.0,
+    "viewer_retention": 100.0,
+    "optimization_lab": 100.0,
+    "quality_assurance": 100.0,
+    "seo_package": 100.0,
+    "export": 80.0
+  },
+  "current_files": [
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Gravity_Really_Does_to_Time_ops_9003009684",
+    "data/renders/c4544001771b/the-hidden-truth-what-gravity-really-does-to-time-in-a-educa_1080x1920.mp4",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Gravity_Really_Does_to_Time_ops_9003009684/captions.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Gravity_Really_Does_to_Time_ops_9003009684/description.txt",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Gravity_Really_Does_to_Time_ops_9003009684/seo_metadata.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Gravity_Really_Does_to_Time_ops_9003009684/thumbnail_plan.json"
+  ],
+  "started_at": "2026-07-14T00:19:44.493008+00:00",
+  "finished_at": "2026-07-14T00:19:47.945280+00:00",
+  "stages": [
+    {
+      "key": "research",
+      "label": "Research Engine",
+      "engines": [
+        "research",
+        "ideation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:19:44.493494+00:00",
+      "end_time": "2026-07-14T00:19:44.603200+00:00",
+      "duration_ms": 109,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 85.0,
+      "output_files": [],
+      "current_agent": "research"
+    },
+    {
+      "key": "psychology",
+      "label": "Psychology Engine",
+      "engines": [
+        "psychology"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:19:44.603718+00:00",
+      "end_time": "2026-07-14T00:19:44.617710+00:00",
+      "duration_ms": 13,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 90.0,
+      "output_files": [],
+      "current_agent": "psychology"
+    },
+    {
+      "key": "studio_director",
+      "label": "AI Studio Director",
+      "engines": [
+        "ai_director"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:19:44.618198+00:00",
+      "end_time": "2026-07-14T00:19:44.635759+00:00",
+      "duration_ms": 17,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "ai_director"
+    },
+    {
+      "key": "script_generator",
+      "label": "Script Generator",
+      "engines": [
+        "script_generation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:19:44.636213+00:00",
+      "end_time": "2026-07-14T00:19:44.730071+00:00",
+      "duration_ms": 93,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "script_generation"
+    },
+    {
+      "key": "scene_builder",
+      "label": "Scene Builder",
+      "engines": [
+        "visual_intelligence",
+        "scene_planning",
+        "visual_planning"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:19:44.730681+00:00",
+      "end_time": "2026-07-14T00:19:44.746625+00:00",
+      "duration_ms": 15,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "visual_intelligence"
+    },
+    {
+      "key": "media_collection",
+      "label": "Media Collection",
+      "engines": [
+        "evidence_intelligence",
+        "image",
+        "asset_manager"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:19:44.747136+00:00",
+      "end_time": "2026-07-14T00:19:45.537970+00:00",
+      "duration_ms": 789,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "evidence_intelligence"
+    },
+    {
+      "key": "animation",
+      "label": "Animation / Motion Graphics",
+      "engines": [
+        "cinematography",
+        "animation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:19:45.538498+00:00",
+      "end_time": "2026-07-14T00:19:45.541147+00:00",
+      "duration_ms": 2,
+      "warnings": [
+        "animation unavailable \u2014 continued"
+      ],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "cinematography"
+    },
+    {
+      "key": "voice_generation",
+      "label": "Voice Generation",
+      "engines": [
+        "voice_audio",
+        "narration",
+        "voice"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:19:45.541600+00:00",
+      "end_time": "2026-07-14T00:19:45.966227+00:00",
+      "duration_ms": 422,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "voice_audio"
+    },
+    {
+      "key": "music_sound",
+      "label": "Music & Sound Design",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:19:45.966775+00:00",
+      "end_time": "2026-07-14T00:19:45.967236+00:00",
+      "duration_ms": 0,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 90.0,
+      "output_files": [],
+      "current_agent": "apply_music_direction"
+    },
+    {
+      "key": "captions",
+      "label": "Captions",
+      "engines": [
+        "subtitle"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:19:45.967686+00:00",
+      "end_time": "2026-07-14T00:19:45.968892+00:00",
+      "duration_ms": 0,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "subtitle"
+    },
+    {
+      "key": "rendering",
+      "label": "Rendering",
+      "engines": [
+        "timeline",
+        "render_package",
+        "studio_render",
+        "video"
+      ],
+      "status": "partial",
+      "start_time": "2026-07-14T00:19:45.969323+00:00",
+      "end_time": "2026-07-14T00:19:46.129714+00:00",
+      "duration_ms": 2,
+      "warnings": [
+        "studio_render failed after retries \u2014 production continued"
+      ],
+      "errors": [
+        "studio_render: 'str' object has no attribute 'get'"
+      ],
+      "retry_attempts": 1,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "timeline"
+    },
+    {
+      "key": "viewer_retention",
+      "label": "Viewer Retention Analysis",
+      "engines": [
+        "viewer_retention"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:19:46.130889+00:00",
+      "end_time": "2026-07-14T00:19:46.135030+00:00",
+      "duration_ms": 3,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "viewer_retention"
+    },
+    {
+      "key": "optimization_lab",
+      "label": "Optimization Lab",
+      "engines": [
+        "optimization_lab"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:19:46.135886+00:00",
+      "end_time": "2026-07-14T00:19:46.198994+00:00",
+      "duration_ms": 62,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "optimization_lab"
+    },
+    {
+      "key": "quality_assurance",
+      "label": "Quality Assurance",
+      "engines": [
+        "quality",
+        "production_qa"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:19:46.199606+00:00",
+      "end_time": "2026-07-14T00:19:46.202182+00:00",
+      "duration_ms": 1,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "quality"
+    },
+    {
+      "key": "seo_package",
+      "label": "SEO Package",
+      "engines": [
+        "seo",
+        "seo_optimization"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:19:46.202659+00:00",
+      "end_time": "2026-07-14T00:19:47.942327+00:00",
+      "duration_ms": 1738,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "seo"
+    },
+    {
+      "key": "export",
+      "label": "Export",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-14T00:19:47.942925+00:00",
+      "end_time": "2026-07-14T00:19:47.944832+00:00",
+      "duration_ms": 1,
+      "warnings": [
+        "mp4_not_yet_materialized \u2014 metadata package exported for smoke/plan modes"
+      ],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 80.0,
+      "output_files": [
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Gravity_Really_Does_to_Time_ops_9003009684",
+        "data/renders/c4544001771b/the-hidden-truth-what-gravity-really-does-to-time-in-a-educa_1080x1920.mp4",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Gravity_Really_Does_to_Time_ops_9003009684/captions.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Gravity_Really_Does_to_Time_ops_9003009684/description.txt",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Gravity_Really_Does_to_Time_ops_9003009684/seo_metadata.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Gravity_Really_Does_to_Time_ops_9003009684/thumbnail_plan.json"
+      ],
+      "current_agent": "export_and_validate"
+    }
+  ],
+  "updated_at": "2026-07-14T00:19:47.953299+00:00",
+  "success": true,
+  "validation_score": 95.6
+}

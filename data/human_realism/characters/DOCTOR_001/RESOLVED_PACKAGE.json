@@ -1,0 +1,799 @@
+{
+  "framework_id": "HUMAN_REALISM_FRAMEWORK_V1",
+  "framework_version": "1.0.0",
+  "style_mode": "cinematic_realism",
+  "anatomy_exaggeration": 0.0,
+  "facial_exaggeration": 0.1,
+  "motion_exaggeration": 0.1,
+  "visual_constitution": "GENERATIONAL_VISUAL_FOUNDATION_V1",
+  "goal": "Believable, emotionally readable, anatomically coherent performances. Feature-film cinematic realism \u2014 not uncanny photoreal, not clip-art.",
+  "anatomy": {
+    "default_proportions": "natural_humanoid",
+    "required_regions": [
+      "skull",
+      "jaw",
+      "neck",
+      "clavicles",
+      "rib_cage",
+      "spine",
+      "pelvis",
+      "arms",
+      "hands",
+      "fingers",
+      "legs",
+      "feet",
+      "toes"
+    ],
+    "rules": [
+      "head_size_consistent",
+      "limb_lengths_stable",
+      "hands_believable_scale",
+      "feet_support_balance",
+      "neck_head_stable"
+    ],
+    "reject": [
+      "stick_figures",
+      "geometric_mannequins",
+      "floating_heads",
+      "disconnected_body_parts",
+      "weightless_models",
+      "expressionless_dolls"
+    ]
+  },
+  "skeleton": {
+    "hierarchy": [
+      "root",
+      "pelvis",
+      "spine_01",
+      "spine_02",
+      "chest",
+      "neck",
+      "head",
+      "jaw",
+      "eye_left",
+      "eye_right",
+      "clavicle_left",
+      "upper_arm_left",
+      "forearm_left",
+      "hand_left",
+      "clavicle_right",
+      "upper_arm_right",
+      "forearm_right",
+      "hand_right",
+      "thigh_left",
+      "shin_left",
+      "foot_left",
+      "toes_left",
+      "thigh_right",
+      "shin_right",
+      "foot_right",
+      "toes_right"
+    ],
+    "rules": [
+      "movement_originates_from_skeleton",
+      "weight_through_pelvis",
+      "head_stabilizes_via_spine",
+      "hands_never_float",
+      "feet_contact_ground",
+      "no_limb_length_drift"
+    ],
+    "joint_constraints_defaults": [
+      {
+        "joint": "elbow",
+        "rotation_min_deg": [
+          0,
+          -20,
+          -10
+        ],
+        "rotation_max_deg": [
+          145,
+          20,
+          10
+        ],
+        "preferred_axis": "local_x",
+        "soft_limit": true
+      },
+      {
+        "joint": "knee",
+        "rotation_min_deg": [
+          0,
+          -5,
+          -5
+        ],
+        "rotation_max_deg": [
+          140,
+          5,
+          5
+        ],
+        "preferred_axis": "local_x",
+        "soft_limit": true
+      },
+      {
+        "joint": "neck",
+        "rotation_min_deg": [
+          -35,
+          -45,
+          -25
+        ],
+        "rotation_max_deg": [
+          35,
+          45,
+          25
+        ],
+        "preferred_axis": "local_y",
+        "soft_limit": true
+      }
+    ],
+    "ik_targets_required": [
+      "hand_left",
+      "hand_right",
+      "foot_left",
+      "foot_right"
+    ]
+  },
+  "muscles": {
+    "emphasis": "subtle_anatomical_readability_not_bodybuilder",
+    "regions": [
+      "facial",
+      "neck",
+      "trapezius",
+      "deltoids",
+      "pectorals",
+      "upper_back",
+      "abdominal_wall",
+      "obliques",
+      "biceps",
+      "triceps",
+      "forearm",
+      "gluteal",
+      "quadriceps",
+      "hamstrings",
+      "calves",
+      "intrinsic_hand"
+    ],
+    "response_drivers": [
+      "joint_flexion",
+      "joint_extension",
+      "compression",
+      "stretching",
+      "weight_bearing",
+      "tension",
+      "relaxation"
+    ]
+  },
+  "face": {
+    "primary_storytelling_tool": "eyes",
+    "regions": [
+      "forehead",
+      "inner_brow",
+      "outer_brow",
+      "upper_eyelids",
+      "lower_eyelids",
+      "eye_direction",
+      "cheek_raise",
+      "nose_wrinkle",
+      "nostril_flare",
+      "upper_lip",
+      "lower_lip",
+      "lip_corners",
+      "jaw",
+      "chin",
+      "neck_tension"
+    ],
+    "rules": [
+      "micro_expressions_before_dialogue",
+      "emotion_begins_in_eyes",
+      "blend_never_instant_switch",
+      "animate_more_than_mouth"
+    ],
+    "recipes": {
+      "happiness": {
+        "lip_corner_raise": 0.55,
+        "cheek_raise": 0.45,
+        "eye_soften": 0.5
+      },
+      "concern": {
+        "inner_brow_raise": 0.4,
+        "eyelid_tighten": 0.25,
+        "lips_press": 0.2
+      },
+      "surprise": {
+        "brow_lift": 0.65,
+        "eyelids_widen": 0.7,
+        "jaw_drop": 0.35
+      },
+      "determination": {
+        "brow_lower": 0.25,
+        "eye_focus": 0.7,
+        "jaw_stabilize": 0.4
+      },
+      "compassion": {
+        "eye_soften": 0.65,
+        "inner_brow_raise": 0.2,
+        "lip_corner_raise": 0.2
+      },
+      "curiosity": {
+        "brow_inner_raise": 0.35,
+        "head_tilt": 0.25,
+        "eye_focus": 0.6
+      },
+      "teaching": {
+        "eye_focus": 0.55,
+        "lip_corner_raise": 0.18,
+        "brow_neutral_engaged": 0.3
+      }
+    }
+  },
+  "eyes": {
+    "behaviors": [
+      "target_based_focus",
+      "smooth_saccades",
+      "anticipatory_glances",
+      "natural_fixation",
+      "head_eye_coordination",
+      "pupil_light_response",
+      "convergence_near",
+      "subtle_asymmetry"
+    ],
+    "rules": [
+      "eyes_move_before_head",
+      "no_lifeless_stare",
+      "no_camera_stare_unless_addressing_audience",
+      "gaze_responds_to_speakers_and_sound"
+    ],
+    "reject": [
+      "permanently_centered_eyes",
+      "cross_eyed_errors",
+      "eyes_outside_sockets",
+      "mechanical_sync_blink_only"
+    ]
+  },
+  "blinking": {
+    "interval_mode": "irregular",
+    "increase_on": [
+      "stress",
+      "transition",
+      "cognitive_load"
+    ],
+    "reduce_on": [
+      "intense_focus"
+    ],
+    "double_blink_on": [
+      "refocus",
+      "emotional_stress"
+    ],
+    "forbid_fixed_robotic_interval": true
+  },
+  "breathing": {
+    "affects": [
+      "upper_chest",
+      "lower_rib_cage",
+      "shoulders",
+      "abdomen",
+      "posture",
+      "neck_tension"
+    ],
+    "modes": {
+      "rest": {
+        "rate_bpm": 12,
+        "distribution": "chest_and_abdomen"
+      },
+      "speak": {
+        "rate_bpm": 14,
+        "distribution": "phrase_coordinated"
+      },
+      "walk": {
+        "rate_bpm": 16,
+        "distribution": "moderate"
+      },
+      "run": {
+        "rate_bpm": 28,
+        "distribution": "rapid_chest"
+      },
+      "fear": {
+        "rate_bpm": 22,
+        "distribution": "upper_chest_short"
+      },
+      "calm": {
+        "rate_bpm": 11,
+        "distribution": "diaphragmatic"
+      },
+      "teaching": {
+        "rate_bpm": 12,
+        "distribution": "calm_diaphragmatic"
+      }
+    },
+    "forbid_whole_torso_scale": true
+  },
+  "posture_balance": {
+    "require_center_of_mass": true,
+    "support_modes": [
+      "one_foot",
+      "both_feet",
+      "seated",
+      "supporting_hand",
+      "external_object"
+    ],
+    "checks": [
+      "center_of_mass_estimation",
+      "support_polygon",
+      "foot_contact_validation",
+      "pelvis_correction",
+      "spinal_counterbalance"
+    ],
+    "reject_unbalanced_unless_falling": true
+  },
+  "locomotion": {
+    "walk_phases": [
+      "heel_strike",
+      "foot_flattening",
+      "weight_acceptance",
+      "mid_stance",
+      "heel_rise",
+      "toe_off",
+      "swing",
+      "next_heel_strike"
+    ],
+    "walk_mechanics": [
+      "pelvis_rotates_tilts_subtly",
+      "shoulders_counter_rotate",
+      "arms_swing_opposite_legs",
+      "knees_flex_on_load",
+      "feet_roll_heel_to_toe",
+      "head_relatively_stable",
+      "gradual_accel_decel"
+    ],
+    "turn_sequence": [
+      "eyes",
+      "head",
+      "shoulders",
+      "pelvis",
+      "support_pivot",
+      "trailing_foot"
+    ],
+    "stop_sequence": [
+      "eyes_settle",
+      "decelerate",
+      "weight_center",
+      "secondary_cloth_hair_settle"
+    ],
+    "weight_transfer": [
+      "pelvis_leads",
+      "spine_compensates",
+      "feet_plant"
+    ],
+    "run": {
+      "includes_airborne_phase": true,
+      "increased_forward_lean": true,
+      "stronger_arm_drive": true,
+      "increased_breathing": true
+    },
+    "forbid": [
+      "rigid_body_spin",
+      "leg_cycle_only",
+      "instant_start_stop"
+    ]
+  },
+  "hands": {
+    "articulation": [
+      "wrist",
+      "palm",
+      "thumb",
+      "index",
+      "middle",
+      "ring",
+      "little"
+    ],
+    "must_show": [
+      "finger_curl",
+      "finger_spread",
+      "thumb_opposition",
+      "palm_cupping",
+      "grip_pressure",
+      "subtle_asymmetry"
+    ],
+    "forbid_permanently_flat": true
+  },
+  "gestures": {
+    "rules": [
+      "motivated_by_communication",
+      "begin_slightly_before_emphasized_word",
+      "return_to_natural_rest",
+      "vary_repeated_gestures",
+      "no_clip_into_torso_or_props"
+    ],
+    "categories": [
+      "teaching",
+      "explaining_scale",
+      "emphasizing",
+      "reassuring",
+      "warning",
+      "thinking",
+      "listening",
+      "object_interaction"
+    ],
+    "library": {
+      "open_palm_teach": {
+        "category": "teaching"
+      },
+      "open_palm_reassurance": {
+        "category": "reassuring"
+      },
+      "diagram_trace": {
+        "category": "teaching"
+      },
+      "scale_show": {
+        "category": "explaining_scale"
+      },
+      "emphasize": {
+        "category": "emphasizing"
+      },
+      "chin_think": {
+        "category": "thinking"
+      },
+      "listen_fold": {
+        "category": "listening"
+      },
+      "warning_focus": {
+        "category": "warning"
+      },
+      "hologram_pinch": {
+        "category": "object_interaction"
+      },
+      "clipboard_point": {
+        "category": "teaching"
+      },
+      "scanner_sweep": {
+        "category": "object_interaction"
+      },
+      "heart_hand": {
+        "category": "compassion"
+      }
+    },
+    "favorites": [
+      "open_palm_teach",
+      "open_palm_reassurance",
+      "hologram_pinch",
+      "clipboard_point",
+      "scanner_sweep",
+      "heart_hand",
+      "chin_think"
+    ],
+    "library_extra": {
+      "hologram_pinch": {
+        "category": "object_interaction"
+      },
+      "clipboard_point": {
+        "category": "teaching"
+      },
+      "scanner_sweep": {
+        "category": "object_interaction"
+      },
+      "heart_hand": {
+        "category": "compassion"
+      }
+    }
+  },
+  "clothing": {
+    "simulate_as_fabric": true,
+    "responds_to": [
+      "walk",
+      "run",
+      "arm_move",
+      "sit",
+      "wind",
+      "gravity",
+      "contact",
+      "turn",
+      "stop"
+    ],
+    "fold_zones": [
+      "shoulders",
+      "elbows",
+      "waist",
+      "hips",
+      "knees",
+      "wrists",
+      "seated_contact"
+    ],
+    "forbid": [
+      "frozen_fabric",
+      "fabric_leads_body",
+      "identical_motion_all_garments",
+      "limb_clipping"
+    ],
+    "default_material": {
+      "thickness": "medium",
+      "weight": "medium",
+      "stiffness": "controlled_drape",
+      "stretch": "low",
+      "damping": "medium",
+      "wind_response": "moderate"
+    },
+    "default_outfit": "primary_outfit",
+    "signature": "white_medical_chassis_coat",
+    "material_type": "medical_coat_polymer_weave",
+    "wind_response": "moderate_hem_and_sleeve"
+  },
+  "hair": {
+    "responds_to": [
+      "gravity",
+      "head_motion",
+      "accel",
+      "decel",
+      "wind",
+      "moisture",
+      "collision"
+    ],
+    "require": [
+      "root_stability",
+      "strand_grouping",
+      "secondary_motion",
+      "damping",
+      "follow_through"
+    ],
+    "forbid": [
+      "rigid_helmet",
+      "ignore_gravity",
+      "face_clipping",
+      "constant_exaggerated_wind"
+    ],
+    "shared_world_wind": true
+  },
+  "emotion": {
+    "transition_model": [
+      "anticipation",
+      "peak",
+      "recovery",
+      "emotional_residue"
+    ],
+    "affects": [
+      "gaze",
+      "face",
+      "breathing",
+      "posture",
+      "gesture",
+      "timing",
+      "walking_speed",
+      "interpersonal_distance",
+      "voice_sync"
+    ],
+    "emotions": [
+      "joy",
+      "sadness",
+      "fear",
+      "curiosity",
+      "confidence",
+      "compassion",
+      "concern",
+      "determination",
+      "anger",
+      "humor",
+      "contemplation",
+      "surprise",
+      "relief"
+    ],
+    "full_body_rule": true
+  },
+  "lipsync": {
+    "viseme_driven": true,
+    "coordinate_with": [
+      "jaw",
+      "lips",
+      "cheeks",
+      "breath",
+      "gesture_accents"
+    ],
+    "forbid_mouth_only_performance": true,
+    "emotion_modulates_articulation": true
+  },
+  "idle": {
+    "always_alive": true,
+    "include": [
+      "breathing",
+      "micro_weight_shift",
+      "soft_eye_motion",
+      "blink",
+      "subtle_posture"
+    ],
+    "forbid_perfect_stillness": true
+  },
+  "environment_interaction": {
+    "contact_surfaces": [
+      "floors",
+      "chairs",
+      "walls",
+      "tables",
+      "tools",
+      "characters",
+      "vehicles",
+      "equipment"
+    ],
+    "require": [
+      "foot_planting",
+      "hand_contact_locking",
+      "surface_normal_alignment",
+      "collision_checks",
+      "contact_shadows",
+      "weight_transfer_response"
+    ]
+  },
+  "object_interaction": {
+    "rules": [
+      "hands_align_to_contact",
+      "fingers_wrap_shape",
+      "grip_adapts_to_weight",
+      "torso_compensates",
+      "object_affects_com"
+    ],
+    "heavy_object": [
+      "slower_accel",
+      "brace",
+      "bent_knees",
+      "visible_effort"
+    ],
+    "light_object": [
+      "less_body_compensation"
+    ]
+  },
+  "camera_awareness": {
+    "default": "address_when_teaching",
+    "address_audience_only_when_declared": true,
+    "composition_supports_performance": true,
+    "eyes_rarely_lock_lens_unless_address": true,
+    "teaching_may_address_audience": true
+  },
+  "motion_timing": {
+    "require": [
+      "anticipation",
+      "acceleration",
+      "deceleration",
+      "follow_through",
+      "overlap",
+      "settling"
+    ],
+    "forbid": [
+      "instant_starts",
+      "instant_stops",
+      "linear_robotic",
+      "all_parts_simultaneous"
+    ]
+  },
+  "secondary_motion": {
+    "examples": [
+      "coat_hem",
+      "hair_settle",
+      "backpack_shift",
+      "jewelry",
+      "facial_tissue"
+    ],
+    "never_overpower_primary": true
+  },
+  "continuity": {
+    "never_regenerate_from_scratch": true,
+    "canonical_model_required": true,
+    "silhouette_stable": true,
+    "palette_stable": true,
+    "inherit_framework": true,
+    "override_only": [
+      "visual_identity",
+      "personality",
+      "voice",
+      "clothing",
+      "role",
+      "gait_personality",
+      "gesture_favorites",
+      "biography"
+    ]
+  },
+  "quality_validation": {
+    "score_dimensions": [
+      "anatomical_consistency",
+      "skeletal_motion",
+      "muscle_deformation",
+      "facial_readability",
+      "eye_behavior",
+      "blink_realism",
+      "breathing_realism",
+      "posture",
+      "balance",
+      "walking_mechanics",
+      "hand_gestures",
+      "object_interaction",
+      "emotional_performance",
+      "clothing_simulation",
+      "hair_simulation",
+      "contact_realism",
+      "character_continuity",
+      "overall_believability"
+    ],
+    "critical_failures_force_reject": [
+      "anatomy_drift",
+      "hand_deform",
+      "foot_slide",
+      "eyes_lose_focus",
+      "emotion_unreadable",
+      "clothing_clip",
+      "hair_ignore_physics",
+      "character_float",
+      "no_balance",
+      "purposeless_motion",
+      "identity_drift"
+    ],
+    "final_standard": "The character stated a believable performance \u2014 not merely that a figure moved."
+  },
+  "performance_plan_required_fields": [
+    "character_id",
+    "scene_id",
+    "objective",
+    "emotion",
+    "gaze",
+    "body_language",
+    "gesture",
+    "walking_style",
+    "breathing",
+    "facial_performance",
+    "interaction_targets",
+    "camera_awareness",
+    "environmental_reactions",
+    "foot_contact_required"
+  ],
+  "character_id": "DOCTOR_001",
+  "name": "The Doctor",
+  "role": "Canonical Medical Educator",
+  "is_gold_standard": true,
+  "inherits_from": "BASE_HUMAN_REALISM",
+  "reference_implementation": null,
+  "visual_identity": {
+    "archetype": "humanoid_cyborg_doctor",
+    "silhouette": "white_cyborg_doctor_blue_glow",
+    "canonical_height_cm": 185,
+    "body_mass_estimate_kg": 82,
+    "age_range": "adult_ageless_cyborg",
+    "biological_build": "athletic_approachable_humanoid",
+    "surface": "soft_white_polymer_over_titanium",
+    "palette": {
+      "primary": "#F4F7FA",
+      "titanium": "#8A939E",
+      "accent": "#3BA7E0",
+      "eyes": "#7FD4FF"
+    },
+    "hair": {
+      "type": "cranial_polymer_plating",
+      "has_organic_hair": false
+    }
+  },
+  "personality": [
+    "highly_intelligent",
+    "patient",
+    "curious",
+    "optimistic",
+    "encouraging",
+    "evidence_driven",
+    "compassionate"
+  ],
+  "voice": {
+    "id": "VOICE-THE-DOCTOR-001",
+    "style": "warm_clinical_educator",
+    "pace": "natural_educational"
+  },
+  "gait": {
+    "personality_walk": "doctor_calm_authority",
+    "traits": [
+      "calm_authority",
+      "precise_foot_placement",
+      "balanced_posture",
+      "minimal_wasted_movement",
+      "approachable_not_militaristic"
+    ],
+    "true_motion_hint": "walk_explain"
+  },
+  "emotion_bias": {
+    "default_primary": "compassion",
+    "teaching_primary": "confidence",
+    "clinical_primary": "concern"
+  },
+  "home_world_id": "LOC-GMRI",
+  "studio_asset_path": "data/studio_assets/DOCTOR_001/",
+  "resolved": true
+}

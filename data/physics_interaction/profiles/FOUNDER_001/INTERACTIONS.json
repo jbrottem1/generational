@@ -1,0 +1,176 @@
+{
+  "interactions": [
+    {
+      "package_type": "INTERACTION_PACKAGE",
+      "package_version": "1.0.0",
+      "engine_id": "physics_interaction",
+      "created_at": "2026-07-18T01:15:31.112884+00:00",
+      "interaction_id": "FOUNDER_001_microscope_demo",
+      "actor": "FOUNDER_001",
+      "target": "microscope",
+      "interaction_type": "using_microscopes",
+      "contact_points": [
+        {
+          "id": "hands_both",
+          "required": true,
+          "must_reach": true
+        },
+        {
+          "id": "eyepiece",
+          "required": true,
+          "must_reach": true
+        },
+        {
+          "id": "focus_knob",
+          "required": true,
+          "must_reach": true
+        }
+      ],
+      "physics_state": "manipulating",
+      "constraints": {
+        "no_float": true,
+        "no_clip": true,
+        "no_teleport": true,
+        "ground_contact_if_locomotion": false,
+        "hand_must_hit_target": true
+      },
+      "animation_requirements": [
+        "approach",
+        "adjust",
+        "look",
+        "focus"
+      ],
+      "completion_state": {
+        "success_when": "physics_state==complete",
+        "required_final_state": "complete",
+        "failed_if": [
+          "hand_misses_target",
+          "foot_slide",
+          "clip_detected",
+          "actor_float"
+        ]
+      },
+      "timing": {
+        "t_start": 0.0,
+        "t_end": 1.2
+      },
+      "world_id": "WORLD-GMRI-MEDICAL-LAB",
+      "architecture": {
+        "frozen": true,
+        "no_new_renderer": true,
+        "not_a_world_builder": true
+      }
+    },
+    {
+      "package_type": "INTERACTION_PACKAGE",
+      "package_version": "1.0.0",
+      "engine_id": "physics_interaction",
+      "created_at": "2026-07-18T01:15:31.112894+00:00",
+      "interaction_id": "FOUNDER_001_open_door",
+      "actor": "FOUNDER_001",
+      "target": "door_main",
+      "interaction_type": "opening_doors",
+      "contact_points": [
+        {
+          "id": "hand_right",
+          "required": true,
+          "must_reach": true
+        },
+        {
+          "id": "door_handle",
+          "required": true,
+          "must_reach": true
+        }
+      ],
+      "physics_state": "contacting",
+      "constraints": {
+        "no_float": true,
+        "no_clip": true,
+        "no_teleport": true,
+        "ground_contact_if_locomotion": false,
+        "hand_must_hit_target": true
+      },
+      "animation_requirements": [
+        "reach",
+        "grasp_handle",
+        "pull_or_push",
+        "release"
+      ],
+      "completion_state": {
+        "success_when": "physics_state==complete",
+        "required_final_state": "complete",
+        "failed_if": [
+          "hand_misses_target",
+          "foot_slide",
+          "clip_detected",
+          "actor_float"
+        ]
+      },
+      "timing": {
+        "t_start": 0.0,
+        "t_end": 1.2
+      },
+      "world_id": "WORLD-GMRI-MEDICAL-LAB",
+      "architecture": {
+        "frozen": true,
+        "no_new_renderer": true,
+        "not_a_world_builder": true
+      }
+    },
+    {
+      "package_type": "INTERACTION_PACKAGE",
+      "package_version": "1.0.0",
+      "engine_id": "physics_interaction",
+      "created_at": "2026-07-18T01:15:31.112898+00:00",
+      "interaction_id": "FOUNDER_001_walk",
+      "actor": "FOUNDER_001",
+      "target": "nav_mesh",
+      "interaction_type": "walking",
+      "contact_points": [
+        {
+          "id": "foot_left",
+          "required": true,
+          "must_reach": true
+        },
+        {
+          "id": "foot_right",
+          "required": true,
+          "must_reach": true
+        }
+      ],
+      "physics_state": "manipulating",
+      "constraints": {
+        "no_float": true,
+        "no_clip": true,
+        "no_teleport": true,
+        "ground_contact_if_locomotion": true,
+        "hand_must_hit_target": false
+      },
+      "animation_requirements": [
+        "walk_cycle",
+        "foot_plant",
+        "arm_swing"
+      ],
+      "completion_state": {
+        "success_when": "physics_state==complete",
+        "required_final_state": "complete",
+        "failed_if": [
+          "hand_misses_target",
+          "foot_slide",
+          "clip_detected",
+          "actor_float"
+        ]
+      },
+      "timing": {
+        "t_start": 0.0,
+        "t_end": 1.2
+      },
+      "world_id": "WORLD-GMRI-MEDICAL-LAB",
+      "architecture": {
+        "frozen": true,
+        "no_new_renderer": true,
+        "not_a_world_builder": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+{
+  "generated_at": "2026-07-14T04:28:01.043423+00:00",
+  "subject": "science education",
+  "category": "science",
+  "package_version": "1.0.0",
+  "signal_count": 66,
+  "sources": {
+    "academic_publications": 3,
+    "ai_research": 3,
+    "blog_feeds": 3,
+    "developer_communities": 3,
+    "facebook_trends": 3,
+    "github_trending": 3,
+    "google_news": 3,
+    "google_trends": 3,
+    "industry_publications": 3,
+    "instagram_trends": 3,
+    "internal_analytics": 3,
+    "keyword_api": 2,
+    "news_api": 2,
+    "podcast_rankings": 3,
+    "product_launches": 3,
+    "reddit_trends": 3,
+    "rss_feeds": 2,
+    "search_volume": 3,
+    "tiktok_trends": 3,
+    "wikipedia_trending": 3,
+    "x_trends": 3,
+    "youtube_search_trends": 3,
+    "youtube_trending": 3
+  },
+  "discovery": {
+    "error": null,
+    "queue_size": 22
+  },
+  "ranked_count": 25,
+  "accepted_count": 34,
+  "rejected_count": 12,
+  "top_opportunities": [
+    {
+      "topic": "Why octopuses have three hearts",
+      "overall_opportunity_score": 67.4,
+      "production_priority": 67,
+      "confidence": 0.8,
+      "working_title": "Why octopuses have three hearts",
+      "opportunity_id": "opp_44a5c197493c"
+    },
+    {
+      "topic": "Why the ocean is salty",
+      "overall_opportunity_score": 67.2,
+      "production_priority": 67,
+      "confidence": 0.8,
+      "working_title": "Why the ocean is salty",
+      "opportunity_id": "opp_9bf595481dbe"
+    },
+    {
+      "topic": "Why volcanoes erupt",
+      "overall_opportunity_score": 66.2,
+      "production_priority": 66,
+      "confidence": 0.8,
+      "working_title": "Why volcanoes erupt",
+      "opportunity_id": "opp_01ce432e4423"
+    },
+    {
+      "topic": "How black holes bend time",
+      "overall_opportunity_score": 64.8,
+      "production_priority": 65,
+      "confidence": 0.8,
+      "working_title": "How black holes bend time",
+      "opportunity_id": "opp_dcd10e40b702"
+    },
+    {
+      "topic": "How vaccines train the immune system",
+      "overall_opportunity_score": 64.5,
+      "production_priority": 65,
+      "confidence": 0.8,
+      "working_title": "How vaccines train the immune system",
+      "opportunity_id": "opp_f68026d05455"
+    },
+    {
+      "topic": "Why leaves change color in autumn",
+      "overall_opportunity_score": 64.4,
+      "production_priority": 65,
+      "confidence": 0.8,
+      "working_title": "Why leaves change color in autumn",
+      "opportunity_id": "opp_36d33fee38fb"
+    },
+    {
+      "topic": "How CRISPR edits genes",
+      "overall_opportunity_score": 64.3,
+      "production_priority": 65,
+      "confidence": 0.8,
+      "working_title": "How CRISPR edits genes",
+      "opportunity_id": "opp_a441d0d4eade"
+    },
+    {
+      "topic": "Why we dream",
+      "overall_opportunity_score": 64.2,
+      "production_priority": 65,
+      "confidence": 0.8,
+      "working_title": "Why we dream",
+      "opportunity_id": "opp_fde10a66d825"
+    },
+    {
+      "topic": "How plants make oxygen",
+      "overall_opportunity_score": 64.0,
+      "production_priority": 65,
+      "confidence": 0.8,
+      "working_title": "How plants make oxygen",
+      "opportunity_id": "opp_a855572ee319"
+    },
+    {
+      "topic": "Why the moon controls tides",
+      "overall_opportunity_score": 63.9,
+      "production_priority": 65,
+      "confidence": 0.8,
+      "working_title": "Why the moon controls tides",
+      "opportunity_id": "opp_706acb08a62a"
+    },
+    {
+      "topic": "Why sugar fuels cells",
+      "overall_opportunity_score": 63.9,
+      "production_priority": 65,
+      "confidence": 0.8,
+      "working_title": "Why sugar fuels cells",
+      "opportunity_id": "opp_cc60dc7a8ed4"
+    },
+    {
+      "topic": "How neural networks learn",
+      "overall_opportunity_score": 63.8,
+      "production_priority": 65,
+      "confidence": 0.8,
+      "working_title": "How neural networks learn",
+      "opportunity_id": "opp_d82a25a89f98"
+    },
+    {
+      "topic": "How GPS satellites measure time",
+      "overall_opportunity_score": 63.5,
+      "production_priority": 65,
+      "confidence": 0.8,
+      "working_title": "How GPS satellites measure time",
+      "opportunity_id": "opp_5e67221a5c45"
+    },
+    {
+      "topic": "Why bees are disappearing",
+      "overall_opportunity_score": 63.4,
+      "production_priority": 65,
+      "confidence": 0.8,
+      "working_title": "Why bees are disappearing",
+      "opportunity_id": "opp_cc0ddd84d637"
+    },
+    {
+      "topic": "How coral reefs bleach",
+      "overall_opportunity_score": 63.3,
+      "production_priority": 65,
+      "confidence": 0.8,
+      "working_title": "How coral reefs bleach",
+      "opportunity_id": "opp_84d8c1664013"
+    },
+    {
+      "topic": "Why quantum entanglement confuses physicists",
+      "overall_opportunity_score": 63.2,
+      "production_priority": 65,
+      "confidence": 0.8,
+      "working_title": "Why quantum entanglement confuses physicists",
+      "opportunity_id": "opp_33fc43eb2dba"
+    },
+    {
+      "topic": "Could You Charge Your Phone With Your Body? \ud83e\udd14",
+      "overall_opportunity_score": 65.6,
+      "production_priority": 64,
+      "confidence": 0.82,
+      "working_title": "Could You Charge Your Phone With Your Body? \ud83e\udd14",
+      "opportunity_id": "opp_b2b9cfbc169b"
+    },
+    {
+      "topic": "Fixing Screens Now vs. Back Then \ud83e\udea5",
+      "overall_opportunity_score": 65.4,
+      "production_priority": 64,
+      "confidence": 0.82,
+      "working_title": "Why Fixing Screens Now vs. Back Then \ud83e\udea5 Changes Everything",
+      "opportunity_id": "opp_9015fa74d98a"
+    },
+    {
+      "topic": "What your keyboard/monitor position says about you.. #carterpcs #gaming",
+      "overall_opportunity_score": 65.3,
+      "production_priority": 64,
+      "confidence": 0.82,
+      "working_title": "What your keyboard/monitor position says about you.. #carterpcs #gaming",
+      "opportunity_id": "opp_68d53b323ce5"
+    },
+    {
+      "topic": "How cameras capture light",
+      "overall_opportunity_score": 63.0,
+      "production_priority": 64,
+      "confidence": 0.8,
+      "working_title": "How cameras capture light",
+      "opportunity_id": "opp_5a7a4a2a75a1"
+    },
+    {
+      "topic": "Why magnets attract iron",
+      "overall_opportunity_score": 62.9,
+      "production_priority": 64,
+      "confidence": 0.8,
+      "working_title": "Why magnets attract iron",
+      "opportunity_id": "opp_ad52b94f8755"
+    },
+    {
+      "topic": "How the seasons work",
+      "overall_opportunity_score": 62.8,
+      "production_priority": 64,
+      "confidence": 0.8,
+      "working_title": "How the seasons work",
+      "opportunity_id": "opp_b29e86b4955d"
+    },
+    {
+      "topic": "Why octopuses are so smart",
+      "overall_opportunity_score": 62.7,
+      "production_priority": 64,
+      "confidence": 0.8,
+      "working_title": "Why octopuses are so smart",
+      "opportunity_id": "opp_f85bd3864a81"
+    },
+    {
+      "topic": "How memory forms in the brain",
+      "overall_opportunity_score": 62.5,
+      "production_priority": 64,
+      "confidence": 0.8,
+      "working_title": "How memory forms in the brain",
+      "opportunity_id": "opp_6da487bf322f"
+    },
+    {
+      "topic": "Why plastics last centuries",
+      "overall_opportunity_score": 62.4,
+      "production_priority": 64,
+      "confidence": 0.8,
+      "working_title": "Why plastics last centuries",
+      "opportunity_id": "opp_f29d8c96255b"
+    }
+  ],
+  "top_production_briefs": [
+    {
+      "topic": "Why octopuses have three hearts",
+      "working_title": "Why octopuses have three hearts",
+      "score": 67.4
+    },
+    {
+      "topic": "Why the ocean is salty",
+      "working_title": "Why the ocean is salty",
+      "score": 67.2
+    },
+    {
+      "topic": "Why volcanoes erupt",
+      "working_title": "Why volcanoes erupt",
+      "score": 66.2
+    },
+    {
+      "topic": "How black holes bend time",
+      "working_title": "How black holes bend time",
+      "score": 64.8
+    },
+    {
+      "topic": "How vaccines train the immune system",
+      "working_title": "How vaccines train the immune system",
+      "score": 64.5
+    },
+    {
+      "topic": "Why leaves change color in autumn",
+      "working_title": "Why leaves change color in autumn",
+      "score": 64.4
+    },
+    {
+      "topic": "How CRISPR edits genes",
+      "working_title": "How CRISPR edits genes",
+      "score": 64.3
+    },
+    {
+      "topic": "Why we dream",
+      "working_title": "Why we dream",
+      "score": 64.2
+    },
+    {
+      "topic": "How plants make oxygen",
+      "working_title": "How plants make oxygen",
+      "score": 64.0
+    },
+    {
+      "topic": "Why the moon controls tides",
+      "working_title": "Why the moon controls tides",
+      "score": 63.9
+    }
+  ],
+  "highest_confidence": [
+    {
+      "topic": "Why octopuses have three hearts",
+      "confidence": 0.8,
+      "score": 67.4
+    },
+    {
+      "topic": "Why the ocean is salty",
+      "confidence": 0.8,
+      "score": 67.2
+    },
+    {
+      "topic": "Why volcanoes erupt",
+      "confidence": 0.8,
+      "score": 66.2
+    },
+    {
+      "topic": "How black holes bend time",
+      "confidence": 0.8,
+      "score": 64.8
+    },
+    {
+      "topic": "How vaccines train the immune system",
+      "confidence": 0.8,
+      "score": 64.5
+    }
+  ],
+  "rejection_sample": [
+    {
+      "topic": "science education",
+      "reasons": [
+        "low_curiosity",
+        "oversaturated"
+      ]
+    },
+    {
+      "topic": "This is SO cool!",
+      "reasons": [
+        "low_curiosity",
+        "oversaturated",
+        "weak_educational_value"
+      ]
+    },
+    {
+      "topic": "Water defies gravity. But how?! \ud83d\udca7\ud83d\udc4d #shorts #DrTatiana #science",
+      "reasons": [
+        "oversaturated"
+      ]
+    },
+    {
+      "topic": "science education \u2014 myths debunked",
+      "reasons": [
+        "low_curiosity",
+        "oversaturated"
+      ]
+    },
+    {
+      "topic": "science education \u2014 hidden history of",
+      "reasons": [
+        "oversaturated"
+      ]
+    },
+    {
+      "topic": "Science is fun when you learn by doing. Water rocket made and launched by kids \ud83d\ude80  Girls in STEM",
+      "reasons": [
+        "low_curiosity",
+        "oversaturated"
+      ]
+    },
+    {
+      "topic": "science education \u2014 what nobody tells you",
+      "reasons": [
+        "low_curiosity",
+        "oversaturated"
+      ]
+    },
+    {
+      "topic": "science education \u2014 the science behind",
+      "reasons": [
+        "low_curiosity",
+        "oversaturated"
+      ]
+    },
+    {
+      "topic": "science education \u2014 future of",
+      "reasons": [
+        "low_curiosity",
+        "oversaturated"
+      ]
+    },
+    {
+      "topic": "science education \u2014 explained",
+      "reasons": [
+        "oversaturated"
+      ]
+    }
+  ],
+  "provider_interfaces": [
+    {
+      "mission_key": "youtube_trending",
+      "provider_key": "youtube_trending",
+      "label": "YouTube Trending",
+      "platform": "youtube_shorts",
+      "available": true,
+      "implemented": true,
+      "note": "Existing TrendSourceProvider"
+    },
+    {
+      "mission_key": "youtube_search",
+      "provider_key": "youtube_search_trends",
+      "label": "YouTube Search Intelligence",
+      "platform": "youtube",
+      "available": true,
+      "implemented": true,
+      "note": "Existing TrendSourceProvider"
+    },
+    {
+      "mission_key": "google_trends",
+      "provider_key": "google_trends",
+      "label": "Google Trends (placeholder)",
+      "platform": "google",
+      "available": true,
+      "implemented": true,
+      "note": "Existing TrendSourceProvider"
+    },
+    {
+      "mission_key": "google_news",
+      "provider_key": "google_news",
+      "label": "Google News",
+      "platform": "news",
+      "available": true,
+      "implemented": true,
+      "note": "Existing TrendSourceProvider"
+    },
+    {
+      "mission_key": "reddit",
+      "provider_key": "reddit_trends",
+      "label": "Reddit Rising (placeholder)",
+      "platform": "reddit",
+      "available": true,
+      "implemented": true,
+      "note": "Existing TrendSourceProvider"
+    },
+    {
+      "mission_key": "tiktok_trending",
+      "provider_key": "tiktok_trends",
+      "label": "TikTok Trends (placeholder)",
+      "platform": "tiktok",
+      "available": true,
+      "implemented": true,
+      "note": "Existing TrendSourceProvider"
+    },
+    {
+      "mission_key": "instagram_trends",
+      "provider_key": "instagram_trends",
+      "label": "Instagram Trends (placeholder)",
+      "platform": "instagram",
+      "available": true,
+      "implemented": true,
+      "note": "Existing TrendSourceProvider"
+    },
+    {
+      "mission_key": "x_twitter",
+      "provider_key": "x_trends",
+      "label": "X Trends (placeholder)",
+      "platform": "x",
+      "available": true,
+      "implemented": true,
+      "note": "Existing TrendSourceProvider"
+    },
+    {
+      "mission_key": "rss_feeds",
+      "provider_key": "rss_feeds",
+      "label": "RSS Feeds (placeholder)",
+      "platform": "rss",
+      "available": true,
+      "implemented": true,
+      "note": "Existing TrendSourceProvider"
+    }
+  ],
+  "opportunity_library_db": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/trend_opportunity/OPPORTUNITY_LIBRARY.db",
+  "composes": [
+    "discovery_engine",
+    "trend_sources",
+    "audience_intelligence",
+    "world_builder",
+    "visual_asset_director",
+    "production_operations"
+  ],
+  "does_not_replace": [
+    "research_engine",
+    "audience_intelligence",
+    "publishing_intelligence",
+    "renderer"
+  ]
+}

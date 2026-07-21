@@ -1,0 +1,465 @@
+{
+  "package_type": "CHARACTER_WORLD_STUDIO_PACKAGE",
+  "package_version": "1.0.0",
+  "engine_label": "Character & World Studio",
+  "generated_at": "2026-07-15T22:42:57.906310+00:00",
+  "topic": "Why Fire Hydrants Are Different Colors",
+  "production_id": "",
+  "visual_identity": {
+    "name": "Generational Cinematic Universe",
+    "character_style": "expressive_stylized",
+    "environment_style": "rich_cinematic_sets",
+    "forbid": [
+      "abstract_placeholder_shapes",
+      "generic_stick_figures",
+      "blank_backgrounds",
+      "static_faces",
+      "expressionless_characters",
+      "empty_environments",
+      "meaningless_motion"
+    ],
+    "require": [
+      "recognizable_characters",
+      "believable_environments",
+      "purposeful_acting",
+      "facial_expressions",
+      "emotional_storytelling",
+      "environmental_interaction"
+    ],
+    "palette_family": "vibrant_cohesive",
+    "silhouette_priority": true,
+    "hd_texture_intent": true
+  },
+  "cast": [
+    {
+      "id": "CHAR-PIPER",
+      "name": "Piper",
+      "short_name": "Piper",
+      "role": "engineer_inventor",
+      "biography": "Engineer and inventor who reverse-engineers how things work \u2014 hydrants, engines, gadgets. Hands always busy; explanations always concrete.",
+      "personality": [
+        "practical",
+        "clever",
+        "energetic",
+        "solving"
+      ],
+      "voice_profile": {
+        "voice": "shimmer",
+        "style": "hands_on_engineer",
+        "pace": "brisk"
+      },
+      "movement_style": "busy_hands_teach",
+      "facial_range": [
+        "focused",
+        "aha",
+        "skeptical",
+        "proud"
+      ],
+      "favorite_gestures": [
+        "wrench_point",
+        "sketch_air",
+        "thumbs_measure"
+      ],
+      "signature_clothing": {
+        "coat": "amber_workwear",
+        "shirt": "slate_tee",
+        "accent": "toolbelt",
+        "accessory": "goggles_forehead"
+      },
+      "silhouette": "goggles_toolbelt",
+      "palette": {
+        "skin": [
+          255,
+          210,
+          170
+        ],
+        "hair": [
+          180,
+          90,
+          40
+        ],
+        "coat": [
+          200,
+          120,
+          40
+        ],
+        "accent": [
+          60,
+          70,
+          80
+        ]
+      },
+      "true_motion_performance": "point_teach",
+      "recurring_environments": [
+        "LOC-ENGINEERING-WORKSHOP",
+        "LOC-FUTURE-CITY",
+        "LOC-SCIENCE-MUSEUM"
+      ],
+      "domains": [
+        "engineering",
+        "infrastructure",
+        "mechanics",
+        "invention",
+        "physics"
+      ]
+    },
+    {
+      "id": "CHAR-ATLAS",
+      "name": "Professor Atlas",
+      "short_name": "Atlas",
+      "role": "lead_educator",
+      "biography": "Lead educator of the Generational Universe. Calm, precise, endlessly curious. Turns hard science into journeys without ever talking down.",
+      "personality": [
+        "warm",
+        "authoritative",
+        "curious",
+        "patient"
+      ],
+      "voice_profile": {
+        "voice": "alloy",
+        "style": "documentary_host",
+        "pace": "measured"
+      },
+      "movement_style": "grounded_walk_explain",
+      "facial_range": [
+        "smile",
+        "raised_brow",
+        "concern",
+        "delight",
+        "focus"
+      ],
+      "favorite_gestures": [
+        "open_palm_teach",
+        "point_to_subject",
+        "chin_think"
+      ],
+      "signature_clothing": {
+        "coat": "deep_navy_blazer",
+        "shirt": "soft_cream",
+        "accent": "teal_pocket_square",
+        "accessory": "round_glasses"
+      },
+      "silhouette": "tall_blazer_glasses",
+      "palette": {
+        "skin": [
+          255,
+          214,
+          180
+        ],
+        "hair": [
+          40,
+          32,
+          28
+        ],
+        "coat": [
+          28,
+          48,
+          86
+        ],
+        "accent": [
+          48,
+          170,
+          160
+        ]
+      },
+      "true_motion_performance": "point_teach",
+      "recurring_environments": [
+        "LOC-AI-LAB",
+        "LOC-SCIENCE-MUSEUM",
+        "LOC-ANCIENT-LIBRARY"
+      ],
+      "domains": [
+        "science",
+        "infrastructure",
+        "general",
+        "history",
+        "psychology"
+      ]
+    }
+  ],
+  "primary_host": {
+    "id": "CHAR-PIPER",
+    "name": "Piper",
+    "short_name": "Piper",
+    "role": "engineer_inventor",
+    "biography": "Engineer and inventor who reverse-engineers how things work \u2014 hydrants, engines, gadgets. Hands always busy; explanations always concrete.",
+    "personality": [
+      "practical",
+      "clever",
+      "energetic",
+      "solving"
+    ],
+    "voice_profile": {
+      "voice": "shimmer",
+      "style": "hands_on_engineer",
+      "pace": "brisk"
+    },
+    "movement_style": "busy_hands_teach",
+    "facial_range": [
+      "focused",
+      "aha",
+      "skeptical",
+      "proud"
+    ],
+    "favorite_gestures": [
+      "wrench_point",
+      "sketch_air",
+      "thumbs_measure"
+    ],
+    "signature_clothing": {
+      "coat": "amber_workwear",
+      "shirt": "slate_tee",
+      "accent": "toolbelt",
+      "accessory": "goggles_forehead"
+    },
+    "silhouette": "goggles_toolbelt",
+    "palette": {
+      "skin": [
+        255,
+        210,
+        170
+      ],
+      "hair": [
+        180,
+        90,
+        40
+      ],
+      "coat": [
+        200,
+        120,
+        40
+      ],
+      "accent": [
+        60,
+        70,
+        80
+      ]
+    },
+    "true_motion_performance": "point_teach",
+    "recurring_environments": [
+      "LOC-ENGINEERING-WORKSHOP",
+      "LOC-FUTURE-CITY",
+      "LOC-SCIENCE-MUSEUM"
+    ],
+    "domains": [
+      "engineering",
+      "infrastructure",
+      "mechanics",
+      "invention",
+      "physics"
+    ]
+  },
+  "location": {
+    "id": "LOC-ENGINEERING-WORKSHOP",
+    "name": "Engineering Workshop",
+    "world_builder_hint": "WORLD-FACTORY",
+    "architecture": "open_bay_with_mezzanine",
+    "lighting": "practical_work_lamps + window_daylight",
+    "palette_hint": "gold",
+    "textures": [
+      "concrete",
+      "steel",
+      "wood_benches"
+    ],
+    "furniture": [
+      "workbenches",
+      "parts_bins"
+    ],
+    "equipment": [
+      "cnc",
+      "3d_printers",
+      "tool_walls"
+    ],
+    "interactive_props": [
+      "blueprint_rolls",
+      "prototype_parts"
+    ],
+    "ambient_life": [
+      "sparks",
+      "printers_moving"
+    ],
+    "weather": "interior_with_open_bay_breeze",
+    "environmental_animation": [
+      "belt_motion",
+      "printer_head",
+      "dust"
+    ],
+    "background_characters": [
+      "technicians"
+    ],
+    "soundscape": [
+      "tools",
+      "compressors"
+    ],
+    "detail_dressing": [
+      "blueprints",
+      "coffee_cups",
+      "labeled_bins",
+      "safety_posters"
+    ],
+    "domains": [
+      "engineering",
+      "infrastructure",
+      "mechanics",
+      "invention",
+      "physics"
+    ]
+  },
+  "character_plates": {
+    "CHAR-PIPER": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Why_Fire_Hydrants_Are_Different_Colors_20260715T224257Z/plates/char-piper_plate.png",
+    "CHAR-ATLAS": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Why_Fire_Hydrants_Are_Different_Colors_20260715T224257Z/plates/char-atlas_plate.png"
+  },
+  "scene_bindings": [
+    {
+      "scene_number": 1,
+      "purpose": "hook",
+      "length_sec": 3,
+      "narration": "These colors could determine whether firefighters save your house.",
+      "subject": "fire hydrants",
+      "studio_character_id": "CHAR-PIPER",
+      "studio_character_name": "Piper",
+      "studio_performance": "point_teach",
+      "studio_gestures": [
+        "wrench_point",
+        "sketch_air",
+        "thumbs_measure"
+      ],
+      "studio_expression": "focused"
+    },
+    {
+      "scene_number": 2,
+      "purpose": "story_beat",
+      "length_sec": 3.5,
+      "narration": "Each color indicates a flow rating engineers read at a glance.",
+      "studio_character_id": "CHAR-ATLAS",
+      "studio_character_name": "Professor Atlas",
+      "studio_performance": "point_teach",
+      "studio_gestures": [
+        "open_palm_teach",
+        "point_to_subject",
+        "chin_think"
+      ],
+      "studio_expression": "raised_brow"
+    },
+    {
+      "scene_number": 3,
+      "purpose": "payoff",
+      "length_sec": 3,
+      "narration": "Flow rate matters when seconds decide if a house is saved.",
+      "studio_character_id": "CHAR-PIPER",
+      "studio_character_name": "Piper",
+      "studio_performance": "point_teach",
+      "studio_gestures": [
+        "wrench_point",
+        "sketch_air",
+        "thumbs_measure"
+      ],
+      "studio_expression": "skeptical"
+    }
+  ],
+  "performance_library": [
+    "blink",
+    "breathe",
+    "shift_weight",
+    "look_around",
+    "eye_contact",
+    "gesture",
+    "walk",
+    "run",
+    "sit",
+    "pick_up",
+    "point",
+    "react",
+    "smile",
+    "frown",
+    "curiosity",
+    "excitement",
+    "concern",
+    "surprise"
+  ],
+  "continuity": {
+    "characters_prior_appearances": {
+      "CHAR-PIPER": 3,
+      "CHAR-ATLAS": 1
+    },
+    "location_prior_uses": 1,
+    "rules": [
+      "Character silhouette and clothing remain locked per host bible",
+      "Location architecture and prop dressing remain consistent across visits",
+      "Do not invent alternate wardrobe without continuity update"
+    ]
+  },
+  "world_living_requirements": {
+    "continues_without_narration": true,
+    "ambient_life": [
+      "sparks",
+      "printers_moving"
+    ],
+    "environmental_animation": [
+      "belt_motion",
+      "printer_head",
+      "dust"
+    ],
+    "detail_dressing": [
+      "blueprints",
+      "coffee_cups",
+      "labeled_bins",
+      "safety_posters"
+    ],
+    "forbid_empty_sets": true
+  },
+  "camera_follow_characters": true,
+  "muted_storytelling": true,
+  "philosophy": {
+    "living_animated_universe": true,
+    "no_new_renderer": true,
+    "no_pipeline_redesign": true,
+    "does_not_replace_animation_engine": true
+  },
+  "quality_gate": {
+    "approved": true,
+    "decision": "APPROVE",
+    "failures": [],
+    "warnings": [],
+    "questions": {
+      "viewers_would_recognize_characters": true,
+      "audience_would_remember_world": true,
+      "want_another_episode_for_characters": true,
+      "every_scene_feels_alive": true,
+      "feels_like_original_series": true
+    },
+    "improve_scenes": [],
+    "reject_signals": [
+      "abstract_placeholder_shapes",
+      "generic_stick_figures",
+      "blank_backgrounds",
+      "static_faces",
+      "expressionless_characters",
+      "empty_environments",
+      "meaningless_motion"
+    ]
+  },
+  "summary": {
+    "primary_host": "Piper",
+    "cast_ids": [
+      "CHAR-PIPER",
+      "CHAR-ATLAS"
+    ],
+    "location_id": "LOC-ENGINEERING-WORKSHOP",
+    "location_name": "Engineering Workshop",
+    "plate_count": 2,
+    "quality_gate": "APPROVE",
+    "recognize_characters": true,
+    "feels_like_series": true
+  },
+  "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Why_Fire_Hydrants_Are_Different_Colors_20260715T224257Z/CHARACTER_WORLD_STUDIO_PACKAGE.json",
+  "out_dir": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Why_Fire_Hydrants_Are_Different_Colors_20260715T224257Z",
+  "artifacts": {
+    "CHARACTER_WORLD_STUDIO_PACKAGE.json": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Why_Fire_Hydrants_Are_Different_Colors_20260715T224257Z/CHARACTER_WORLD_STUDIO_PACKAGE.json",
+    "STUDIO_NOTES.md": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Why_Fire_Hydrants_Are_Different_Colors_20260715T224257Z/STUDIO_NOTES.md",
+    "plates": {
+      "CHAR-PIPER": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Why_Fire_Hydrants_Are_Different_Colors_20260715T224257Z/plates/char-piper_plate.png",
+      "CHAR-ATLAS": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Why_Fire_Hydrants_Are_Different_Colors_20260715T224257Z/plates/char-atlas_plate.png"
+    }
+  }
+}

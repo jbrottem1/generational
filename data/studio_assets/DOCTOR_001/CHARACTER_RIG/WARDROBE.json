@@ -1,0 +1,73 @@
+{
+  "character_id": "DOCTOR_001",
+  "architecture": "clothing_separated_from_body",
+  "default_outfit": "lab_coat",
+  "outfits": [
+    {
+      "id": "lab_coat",
+      "layers": [
+        "base_chassis",
+        "undershirt",
+        "lab_coat",
+        "accent_trim"
+      ],
+      "separated_from_body": true,
+      "cloth_sim": true
+    },
+    {
+      "id": "research_attire",
+      "layers": [
+        "base",
+        "research_smock"
+      ],
+      "separated_from_body": true,
+      "cloth_sim": true
+    },
+    {
+      "id": "casual_clothing",
+      "layers": [
+        "base_garment",
+        "casual_clothing"
+      ],
+      "separated_from_body": true,
+      "cloth_sim": true
+    },
+    {
+      "id": "emergency_gear",
+      "layers": [
+        "base",
+        "utility_layer",
+        "emergency_vest"
+      ],
+      "separated_from_body": true,
+      "cloth_sim": true
+    }
+  ],
+  "outfit_ids": [
+    "lab_coat",
+    "research_attire",
+    "casual_clothing",
+    "emergency_gear"
+  ],
+  "simulate_as_fabric": true,
+  "responds_to": [
+    "walk",
+    "run",
+    "arm_move",
+    "sit",
+    "wind",
+    "gravity",
+    "contact",
+    "turn",
+    "stop"
+  ],
+  "forbid": [
+    "frozen_fabric",
+    "fabric_leads_body",
+    "identical_motion_all_garments",
+    "limb_clipping"
+  ],
+  "inheritable_architecture": true,
+  "existing_ref": "WARDROBE_PROFILE.json",
+  "reusable": true
+}

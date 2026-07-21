@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-07-14T00:51:26.957730+00:00",
+  "production_id": "gold_ai_20260714T005118_a2",
+  "topic": "What Artificial Intelligence Actually Is",
+  "platform": "youtube_shorts",
+  "length_sec": 45,
+  "style": "educational",
+  "overall_quality_score": 98.0,
+  "quality_target": 95.0,
+  "hook_score": 100.0,
+  "narration_score": 87.0,
+  "visual_score": 93.1,
+  "animation_score": 98.0,
+  "audio_score": 86.0,
+  "caption_score": 88.0,
+  "educational_accuracy": 90.0,
+  "retention_prediction": 88.0,
+  "ctr_prediction": 7.5,
+  "completion_prediction": 88.0,
+  "shareability": 88.0,
+  "platform_readiness": false,
+  "export_validation": {
+    "video_exists": true,
+    "correct_duration": true,
+    "audio_synchronized": false,
+    "captions_burned_or_present": true,
+    "no_blank_frames": false,
+    "no_corrupt_media": false,
+    "no_missing_assets": true,
+    "target_resolution_met": true,
+    "frame_rate_correct": true,
+    "thumbnail_generated": true,
+    "metadata_generated": true,
+    "seo_generated": true,
+    "hard_fails": [
+      "missing_audio"
+    ],
+    "warnings": [],
+    "ok": false
+  },
+  "pipeline_health": "healthy",
+  "retry_count": 0,
+  "final_recommendation": "APPROVE_WITH_NOTES",
+  "stages_completed": 16,
+  "output_files": [
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Artificial_Intelligence_Actually_Is_gold_ai_20260714T005118_a2",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/renders/cdeb14d234d9/the-hidden-truth-what-artificial-intelligence-actually-is-in_1080x1920.mp4",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Artificial_Intelligence_Actually_Is_gold_ai_20260714T005118_a2/captions.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Artificial_Intelligence_Actually_Is_gold_ai_20260714T005118_a2/description.txt",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Artificial_Intelligence_Actually_Is_gold_ai_20260714T005118_a2/seo_metadata.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/What_Artificial_Intelligence_Actually_Is_gold_ai_20260714T005118_a2/thumbnail_plan.json"
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "schema_version": "1.0",
+  "production_id": "ops_574f874115",
+  "brief": {
+    "topic": "Quality acceptance \u2014 curiosity gap in human attention",
+    "platform": "youtube_shorts",
+    "length_sec": 45,
+    "style": "psychology",
+    "narrator": "professor",
+    "voice": "default",
+    "quality_target": 90.0,
+    "constraints": {},
+    "command": "",
+    "raw": {}
+  },
+  "current_stage": "export",
+  "current_agent": "export_and_validate",
+  "overall_progress_pct": 100,
+  "elapsed_ms": 19548,
+  "eta_ms": null,
+  "overall_status": "succeeded",
+  "pipeline_health": "degraded",
+  "warnings": [
+    "animation unavailable \u2014 continued",
+    "studio_render failed after retries \u2014 production continued",
+    "mp4_not_yet_materialized \u2014 metadata package exported for smoke/plan modes"
+  ],
+  "retry_count": 1,
+  "quality_scores": {
+    "research": 95.0,
+    "psychology": 100.0,
+    "studio_director": 100.0,
+    "script_generator": 100.0,
+    "scene_builder": 100.0,
+    "media_collection": 100.0,
+    "animation": 100.0,
+    "voice_generation": 100.0,
+    "music_sound": 85.0,
+    "captions": 100.0,
+    "rendering": 100.0,
+    "viewer_retention": 100.0,
+    "optimization_lab": 100.0,
+    "quality_assurance": 100.0,
+    "seo_package": 100.0,
+    "export": 80.0
+  },
+  "current_files": [
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Quality_acceptance___curiosity_gap_in_human_attention_ops_574f874115",
+    "data/renders/9135c4d58a2e/the-timeline-quality-acceptance-curiosity-gap-in-human-atten_1080x1920.mp4",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Quality_acceptance___curiosity_gap_in_human_attention_ops_574f874115/captions.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Quality_acceptance___curiosity_gap_in_human_attention_ops_574f874115/description.txt",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Quality_acceptance___curiosity_gap_in_human_attention_ops_574f874115/seo_metadata.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Quality_acceptance___curiosity_gap_in_human_attention_ops_574f874115/thumbnail_plan.json"
+  ],
+  "started_at": "2026-07-13T23:48:13.455987+00:00",
+  "finished_at": "2026-07-13T23:48:33.005381+00:00",
+  "stages": [
+    {
+      "key": "research",
+      "label": "Research Engine",
+      "engines": [
+        "research",
+        "ideation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:48:13.456759+00:00",
+      "end_time": "2026-07-13T23:48:13.573087+00:00",
+      "duration_ms": 114,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "research"
+    },
+    {
+      "key": "psychology",
+      "label": "Psychology Engine",
+      "engines": [
+        "psychology"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:48:13.573865+00:00",
+      "end_time": "2026-07-13T23:48:13.586936+00:00",
+      "duration_ms": 12,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "psychology"
+    },
+    {
+      "key": "studio_director",
+      "label": "AI Studio Director",
+      "engines": [
+        "ai_director"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:48:13.587741+00:00",
+      "end_time": "2026-07-13T23:48:13.940302+00:00",
+      "duration_ms": 351,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "ai_director"
+    },
+    {
+      "key": "script_generator",
+      "label": "Script Generator",
+      "engines": [
+        "script_generation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:48:13.941145+00:00",
+      "end_time": "2026-07-13T23:48:14.035049+00:00",
+      "duration_ms": 92,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "script_generation"
+    },
+    {
+      "key": "scene_builder",
+      "label": "Scene Builder",
+      "engines": [
+        "visual_intelligence",
+        "scene_planning",
+        "visual_planning"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:48:14.035955+00:00",
+      "end_time": "2026-07-13T23:48:14.101460+00:00",
+      "duration_ms": 62,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "visual_intelligence"
+    },
+    {
+      "key": "media_collection",
+      "label": "Media Collection",
+      "engines": [
+        "evidence_intelligence",
+        "image",
+        "asset_manager"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:48:14.102410+00:00",
+      "end_time": "2026-07-13T23:48:26.032401+00:00",
+      "duration_ms": 11928,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "evidence_intelligence"
+    },
+    {
+      "key": "animation",
+      "label": "Animation / Motion Graphics",
+      "engines": [
+        "cinematography",
+        "animation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:48:26.033224+00:00",
+      "end_time": "2026-07-13T23:48:26.082154+00:00",
+      "duration_ms": 47,
+      "warnings": [
+        "animation unavailable \u2014 continued"
+      ],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "cinematography"
+    },
+    {
+      "key": "voice_generation",
+      "label": "Voice Generation",
+      "engines": [
+        "voice_audio",
+        "narration",
+        "voice"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:48:26.082926+00:00",
+      "end_time": "2026-07-13T23:48:31.630513+00:00",
+      "duration_ms": 5544,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "voice_audio"
+    },
+    {
+      "key": "music_sound",
+      "label": "Music & Sound Design",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:48:31.631318+00:00",
+      "end_time": "2026-07-13T23:48:31.632343+00:00",
+      "duration_ms": 0,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 85.0,
+      "output_files": [],
+      "current_agent": "apply_music_direction"
+    },
+    {
+      "key": "captions",
+      "label": "Captions",
+      "engines": [
+        "subtitle"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:48:31.633098+00:00",
+      "end_time": "2026-07-13T23:48:31.649875+00:00",
+      "duration_ms": 15,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "subtitle"
+    },
+    {
+      "key": "rendering",
+      "label": "Rendering",
+      "engines": [
+        "timeline",
+        "render_package",
+        "studio_render",
+        "video"
+      ],
+      "status": "partial",
+      "start_time": "2026-07-13T23:48:31.650656+00:00",
+      "end_time": "2026-07-13T23:48:31.881462+00:00",
+      "duration_ms": 69,
+      "warnings": [
+        "studio_render failed after retries \u2014 production continued"
+      ],
+      "errors": [
+        "studio_render: 'str' object has no attribute 'get'"
+      ],
+      "retry_attempts": 1,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "timeline"
+    },
+    {
+      "key": "viewer_retention",
+      "label": "Viewer Retention Analysis",
+      "engines": [
+        "viewer_retention"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:48:31.882883+00:00",
+      "end_time": "2026-07-13T23:48:31.922563+00:00",
+      "duration_ms": 38,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "viewer_retention"
+    },
+    {
+      "key": "optimization_lab",
+      "label": "Optimization Lab",
+      "engines": [
+        "optimization_lab"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:48:31.923466+00:00",
+      "end_time": "2026-07-13T23:48:32.899705+00:00",
+      "duration_ms": 975,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "optimization_lab"
+    },
+    {
+      "key": "quality_assurance",
+      "label": "Quality Assurance",
+      "engines": [
+        "quality",
+        "production_qa"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:48:32.901899+00:00",
+      "end_time": "2026-07-13T23:48:32.914042+00:00",
+      "duration_ms": 10,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "quality"
+    },
+    {
+      "key": "seo_package",
+      "label": "SEO Package",
+      "engines": [
+        "seo",
+        "seo_optimization"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:48:32.914808+00:00",
+      "end_time": "2026-07-13T23:48:33.000916+00:00",
+      "duration_ms": 84,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "seo"
+    },
+    {
+      "key": "export",
+      "label": "Export",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-13T23:48:33.001755+00:00",
+      "end_time": "2026-07-13T23:48:33.004580+00:00",
+      "duration_ms": 2,
+      "warnings": [
+        "mp4_not_yet_materialized \u2014 metadata package exported for smoke/plan modes"
+      ],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 80.0,
+      "output_files": [
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Quality_acceptance___curiosity_gap_in_human_attention_ops_574f874115",
+        "data/renders/9135c4d58a2e/the-timeline-quality-acceptance-curiosity-gap-in-human-atten_1080x1920.mp4",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Quality_acceptance___curiosity_gap_in_human_attention_ops_574f874115/captions.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Quality_acceptance___curiosity_gap_in_human_attention_ops_574f874115/description.txt",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Quality_acceptance___curiosity_gap_in_human_attention_ops_574f874115/seo_metadata.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Quality_acceptance___curiosity_gap_in_human_attention_ops_574f874115/thumbnail_plan.json"
+      ],
+      "current_agent": "export_and_validate"
+    }
+  ],
+  "updated_at": "2026-07-13T23:48:33.010962+00:00",
+  "success": true,
+  "validation_score": 97.5
+}

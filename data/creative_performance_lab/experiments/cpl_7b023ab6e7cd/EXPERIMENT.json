@@ -1,0 +1,39 @@
+{
+  "experiment_id": "cpl_7b023ab6e7cd",
+  "topic": "t",
+  "platform": "youtube_shorts",
+  "audience": "general_public",
+  "video_length_sec": 45,
+  "number_of_variants": 3,
+  "variables_tested": [
+    "hook_structure"
+  ],
+  "variables_held_constant": [
+    "core_factual_content",
+    "approximate_runtime",
+    "narrator_voice",
+    "music_style",
+    "caption_style",
+    "overall_visual_identity",
+    "call_to_action",
+    "export_settings"
+  ],
+  "hypothesis": "Changing hook_structure improves completion_rate_pct on youtube_shorts for 't'.",
+  "success_metric": "completion_rate_pct",
+  "minimum_observation_period_hours": 48,
+  "status": "insufficient_data",
+  "production_ids": [],
+  "publishing_ids": [],
+  "final_result": {
+    "status": "INSUFFICIENT_DATA",
+    "reason": "No analytics snapshots. Attach platform video IDs and refresh analytics.",
+    "sample_size": 0
+  },
+  "confidence_level": 0.0,
+  "exploratory": false,
+  "variants": [],
+  "predictions_label": "PREDICTION \u2014 not real audience results",
+  "created_at": "2026-07-14T02:04:18.872752+00:00",
+  "updated_at": "2026-07-14T02:04:18.872917+00:00",
+  "meta": {}
+}

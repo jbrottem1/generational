@@ -20,7 +20,7 @@ vision model later only requires changing `score_scene_visuals()` and
 
 from __future__ import annotations
 
-from engines.heuristics import (
+from core.heuristics import (
     CURIOSITY_WORDS,
     NOVELTY_WORDS,
     clamp,

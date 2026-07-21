@@ -1,0 +1,113 @@
+{
+  "experiment_id": "cpl_1b4ca08e8aba",
+  "topic": "Why Octopuses Have Three Hearts",
+  "disclaimer": "All scores and rankings below are INTERNAL PREDICTIONS, not real platform analytics.",
+  "variables_tested": [
+    "hook_structure"
+  ],
+  "variables_held_constant": [
+    "core_factual_content",
+    "approximate_runtime",
+    "narrator_voice",
+    "music_style",
+    "caption_style",
+    "overall_visual_identity",
+    "call_to_action",
+    "export_settings"
+  ],
+  "variants": [
+    {
+      "label": "B",
+      "hook_style": "counterintuitive_fact",
+      "what_changed": [
+        "hook_structure",
+        "hook_wording"
+      ],
+      "what_remained_constant": [
+        "core_factual_content",
+        "approximate_runtime",
+        "narrator_voice",
+        "music_style",
+        "caption_style",
+        "overall_visual_identity",
+        "call_to_action",
+        "export_settings"
+      ],
+      "overall_score": 76,
+      "hook_score": 90,
+      "predicted_ctr_pct": 6.18,
+      "predicted_completion_pct": 63.4,
+      "predicted_share_probability": 0.76,
+      "predicted_retention_proxy": 69,
+      "render_time_sec": 4.97,
+      "qa_failures": [],
+      "mp4_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_B/Final.mp4",
+      "prediction_label": "PREDICTION \u2014 not real audience results"
+    },
+    {
+      "label": "A",
+      "hook_style": "curiosity_gap",
+      "what_changed": [
+        "hook_structure",
+        "hook_wording"
+      ],
+      "what_remained_constant": [
+        "core_factual_content",
+        "approximate_runtime",
+        "narrator_voice",
+        "music_style",
+        "caption_style",
+        "overall_visual_identity",
+        "call_to_action",
+        "export_settings"
+      ],
+      "overall_score": 75,
+      "hook_score": 88,
+      "predicted_ctr_pct": 6.01,
+      "predicted_completion_pct": 62.2,
+      "predicted_share_probability": 0.734,
+      "predicted_retention_proxy": 68,
+      "render_time_sec": 5.35,
+      "qa_failures": [],
+      "mp4_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_A/Final.mp4",
+      "prediction_label": "PREDICTION \u2014 not real audience results"
+    },
+    {
+      "label": "C",
+      "hook_style": "immediate_visual_payoff",
+      "what_changed": [
+        "hook_structure",
+        "hook_wording"
+      ],
+      "what_remained_constant": [
+        "core_factual_content",
+        "approximate_runtime",
+        "narrator_voice",
+        "music_style",
+        "caption_style",
+        "overall_visual_identity",
+        "call_to_action",
+        "export_settings"
+      ],
+      "overall_score": 75,
+      "hook_score": 87,
+      "predicted_ctr_pct": 5.93,
+      "predicted_completion_pct": 62.2,
+      "predicted_share_probability": 0.73,
+      "predicted_retention_proxy": 68,
+      "render_time_sec": 4.93,
+      "qa_failures": [],
+      "mp4_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_C/Final.mp4",
+      "prediction_label": "PREDICTION \u2014 not real audience results"
+    }
+  ],
+  "predicted_winner": {
+    "label": "B",
+    "hook_style": "counterintuitive_fact",
+    "overall_score": 76,
+    "reason": "PREDICTION: variant B (counterintuitive_fact) leads on hook_score=90, predicted completion=63.4%. Await human review and real analytics before treating as proof.",
+    "status": "PREDICTION"
+  },
+  "recommended_variant": "B",
+  "publishing": "disabled"
+}

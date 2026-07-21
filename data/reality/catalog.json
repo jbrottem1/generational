@@ -135,6 +135,73 @@
       ],
       "width": 960,
       "height": 747
+    },
+    {
+      "image_id": "earth_apollo17",
+      "path": "images/earth_bluemarble.jpg",
+      "license": "NASA",
+      "source_url": "https://images.nasa.gov/details/as17-148-22727",
+      "credit": "NASA / Apollo 17",
+      "organism": "",
+      "scientific_name": "",
+      "concepts": [
+        "earth",
+        "seasons",
+        "axial_tilt",
+        "astronomy",
+        "orbit",
+        "planet"
+      ],
+      "width": 1280,
+      "height": 1280
+    },
+    {
+      "image_id": "season_spring",
+      "path": "images/season_spring.jpg",
+      "license": "Unsplash",
+      "source_url": "https://unsplash.com/photos/photo-1490750967868-88aa4486c946",
+      "credit": "Unsplash (educational use)",
+      "organism": "",
+      "scientific_name": "",
+      "concepts": ["spring", "seasons", "flowers", "sunlight"],
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "image_id": "season_summer",
+      "path": "images/season_summer.jpg",
+      "license": "Unsplash",
+      "source_url": "https://unsplash.com/photos/photo-1500382017468-9049fed747ef",
+      "credit": "Unsplash (educational use)",
+      "organism": "",
+      "scientific_name": "",
+      "concepts": ["summer", "seasons", "sunlight", "landscape"],
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "image_id": "season_autumn",
+      "path": "images/season_autumn.jpg",
+      "license": "Unsplash",
+      "source_url": "https://unsplash.com/photos/photo-1508193638397-1c4234db14d8",
+      "credit": "Unsplash (educational use)",
+      "organism": "",
+      "scientific_name": "",
+      "concepts": ["autumn", "fall", "seasons", "leaves"],
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "image_id": "season_winter",
+      "path": "images/season_winter.jpg",
+      "license": "CC-BY-SA",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Snowy_landscape.jpg",
+      "credit": "Wikimedia Commons",
+      "organism": "",
+      "scientific_name": "",
+      "concepts": ["winter", "seasons", "snow", "sunlight"],
+      "width": 1280,
+      "height": 960
     }
   ]
 }

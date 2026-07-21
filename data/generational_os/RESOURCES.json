@@ -1,0 +1,35 @@
+{
+  "api_calls": {},
+  "productions": [
+    {
+      "production_id": "ops_18fff5d4bd",
+      "at": "2026-07-14T04:29:41.754549+00:00",
+      "length_sec": 45,
+      "render_sec": null,
+      "storage_bytes": 0,
+      "processing_ms": 103272,
+      "elevenlabs": true,
+      "cost": {
+        "estimated_usd": 0.399,
+        "breakdown": {
+          "elevenlabs_usd": 0.189,
+          "images_usd": 0.2,
+          "compute_usd": 0.01
+        },
+        "assumptions": {
+          "length_sec": 45,
+          "narrator": "professor",
+          "el_chars": 630,
+          "used_images": 5,
+          "render_sec": 30.0
+        }
+      }
+    }
+  ],
+  "totals": {
+    "productions": 1,
+    "estimated_usd": 0.399,
+    "storage_bytes": 0
+  },
+  "updated_at": "2026-07-14T04:29:41.754588+00:00"
+}

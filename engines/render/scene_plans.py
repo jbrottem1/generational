@@ -35,7 +35,16 @@ class SceneRenderer:
         self._motion = motion_planner or MotionPlanner()
 
     def build_scene_plan(self, scene: dict, asset: "dict | None" = None, audio_cue: "dict | None" = None) -> dict:
-        asset = asset or {}
+        asset = dict(asset or {})
+        # Prefer scene-attached real paths (VAD / media collection) when resolver is mock
+        for key in ("approved_asset_path", "image", "path", "local_path", "image_path"):
+            scene_path = str(scene.get(key) or "").strip()
+            if scene_path and not scene_path.startswith(("mock://", "runtime://")):
+                if not asset.get("path") or str(asset.get("path")).startswith(("mock://", "runtime://")) or asset.get("placeholder"):
+                    asset["path"] = scene_path
+                    asset["local_path"] = scene_path
+                    asset["placeholder"] = False
+                break
         audio_cue = audio_cue or {}
         scene_id = scene.get("scene_number", 0)
         motion = self._motion.plan_scene(scene)

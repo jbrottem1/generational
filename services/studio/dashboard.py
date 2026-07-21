@@ -23,6 +23,7 @@ def get_executive_dashboard() -> dict:
     analytics = _analytics_summary()
     rendering = _rendering_queue_summary(projects)
     production = _production_dashboard(projects, provider_dashboard, publishing, rendering)
+    executive = _executive_studio_dashboard()
 
     return {
         "projects_total": len(projects),
@@ -38,7 +39,94 @@ def get_executive_dashboard() -> dict:
         "jobs_running": len(running_jobs),
         "jobs_pending": len(pending_jobs),
         "production_dashboard": production,
+        "executive_orchestrator": executive,
+        "continuous_learning": _continuous_learning_dashboard(),
+        "optimization_lab": _optimization_lab_dashboard(),
+        "production_operations": _production_operations_dashboard(),
+        "production_acceptance": _production_acceptance_dashboard(),
+        "publishing_intelligence": _publishing_intelligence_dashboard(),
+        "creative_performance_lab": _creative_performance_lab_dashboard(),
     }
+
+
+def _creative_performance_lab_dashboard() -> dict:
+    try:
+        from services.creative_performance_lab.dashboard import build_creative_performance_board
+
+        return build_creative_performance_board()
+    except Exception:  # noqa: BLE001
+        return {"error": "unavailable", "experiment_count": 0}
+
+
+def _publishing_intelligence_dashboard() -> dict:
+    try:
+        from services.publishing_intelligence.dashboard import build_studio_intelligence_dashboard
+
+        return build_studio_intelligence_dashboard()
+    except Exception:  # noqa: BLE001
+        return {"error": "unavailable", "confidence_score": 0}
+
+
+def _optimization_lab_dashboard() -> dict:
+    try:
+        from services.optimization_lab.dashboard import build_optimization_dashboard
+
+        return build_optimization_dashboard()
+    except Exception:  # noqa: BLE001
+        return {"error": "unavailable", "videos_optimized": 0}
+
+
+def _production_operations_dashboard() -> dict:
+    """Live Production Operations command-center board."""
+    try:
+        import json
+
+        from services.production_operations import build_live_dashboard, queue_summary
+        from services.production_operations.status import dashboard_path
+
+        path = dashboard_path()
+        if path.exists():
+            data = json.loads(path.read_text(encoding="utf-8"))
+            data["queue"] = queue_summary()
+            return data
+        return build_live_dashboard(queue_summary=queue_summary())
+    except Exception:  # noqa: BLE001
+        return {"error": "unavailable", "pipeline_health": "unknown", "overall_progress_pct": 0}
+
+
+def _production_acceptance_dashboard() -> dict:
+    try:
+        import json
+
+        from services.production_acceptance.models import DASHBOARD_PATH
+        from services.production_acceptance.dashboard import build_acceptance_dashboard
+
+        if DASHBOARD_PATH.exists():
+            return json.loads(DASHBOARD_PATH.read_text(encoding="utf-8"))
+        return build_acceptance_dashboard()
+    except Exception:  # noqa: BLE001
+        return {"error": "unavailable", "pass_pct": 0}
+
+
+def _executive_studio_dashboard() -> dict:
+    """Live Executive Orchestrator stage board (Discovery → Publishing)."""
+    try:
+        from services.executive_orchestrator import get_executive_orchestrator, stage_plan
+
+        dash = get_executive_orchestrator().dashboard()
+        dash["stage_plan"] = stage_plan()
+        return dash
+    except Exception:  # noqa: BLE001
+        return {"active_count": 0, "recent_runs": [], "stages": [], "error": "unavailable"}
+
+
+def _continuous_learning_dashboard() -> dict:
+    try:
+        from services.learning.dashboard import build_learning_dashboard
+
+        return build_learning_dashboard()
+    except Exception:  # noqa: BLE001
+        return {"error": "unavailable", "productions_recorded": 0}
 
 
 def _production_dashboard(projects: list, provider_dashboard: dict, publishing: dict, rendering: dict) -> dict:

@@ -52,8 +52,8 @@ def execute_job(job_path: Path, *, smoke: bool = False) -> dict:
     if not ctx.can_render_media:
         return {
             "ok": False,
-            "status": "awaiting_local_render",
-            "error": "This machine is in CLOUD mode. Run on your Mac locally.",
+            "status": "render_blocked",
+            "error": "Local render is not available on this machine.",
             "mode": ctx.mode.value,
         }
 
@@ -125,11 +125,14 @@ def execute_job(job_path: Path, *, smoke: bool = False) -> dict:
         sources=list(script.get("sources") or []),
         script_md="\n".join(f"- {b.get('text', '')}" for b in beats),
         render_duration_sec=result.get("duration_sec"),
+        print_completion=False,
     )
     if not export_result.get("ok"):
-        return {"ok": False, **export_result, "render": result}
+        return {"ok": False, "final_status": "FAILED", **export_result, "render": result}
 
     export_path = Path(str(export_result["export_path"]))
+    verify = export_result.get("verification") or {}
+    qc = result.get("qc") or {}
 
     edu = review_lesson(
         hook=str(script.get("hook") or ""),
@@ -143,23 +146,55 @@ def execute_job(job_path: Path, *, smoke: bool = False) -> dict:
     production = {
         "title": job.get("title"),
         "demo_id": demo_id,
-        "export_path": str(export_path),
+        "export_path": str(export_path.resolve()),
+        "export_bytes": int((verify.get("probe") or {}).get("bytes") or export_path.stat().st_size),
         "duration_sec": result.get("duration_sec"),
         "educational_review": edu.to_dict(),
+        "qc": qc,
+        "verification": verify,
+        "verify": {
+            "ok": bool(verify.get("ok")),
+            "has_audio": bool((verify.get("probe") or {}).get("has_audio")),
+            "has_video": bool((verify.get("probe") or {}).get("has_video")),
+            "bytes": int((verify.get("probe") or {}).get("bytes") or 0),
+        },
     }
     gate = evaluate_foundation_export(production, script=script, educational=edu.to_dict())
     reality_qc = evaluate_reality_export(image_ids=collect_demo_image_ids(demo_id), demo_id=demo_id)
 
+    from services.generational_os.final_status import assign_final_status, print_completion_block
+
+    status_info = assign_final_status(
+        export_verified=bool(verify.get("ok")),
+        export_path=export_path,
+        hard_fails=list(gate.hard_fails or [])
+        + ([] if reality_qc.passed else list(reality_qc.hard_fails or ["reality_qc_failed"])),
+        warnings=list(gate.warnings or []) + list(export_result.get("warnings") or []),
+    )
+    completion = print_completion_block(
+        final_status=status_info["final_status"],
+        export_path=export_path,
+        probe=verify.get("probe") or {},
+        warnings=status_info["warnings"],
+        hard_fails=status_info["hard_fails"],
+    )
+
     return {
-        "ok": True,
-        "status": "export_verified",
-        "message": "Video exported and verified on local Desktop.",
-        "export_path": str(export_path),
-        "verification": export_result.get("verification"),
+        "ok": status_info["ok"],
+        "final_status": status_info["final_status"],
+        "status": "export_verified" if status_info["ok"] else "verification_failed",
+        "message": "Video exported and verified on local Desktop."
+        if status_info["ok"]
+        else "Render completed but verification failed.",
+        "export_path": str(export_path.resolve()),
+        "verification": verify,
         "duration_sec": result.get("duration_sec"),
         "render_sec": round(time.time() - t0, 2),
         "foundation_gate": gate.to_dict(),
         "reality_qc": reality_qc.to_dict(),
+        "warnings": status_info["warnings"],
+        "hard_fails": status_info["hard_fails"],
+        "completion": completion,
         "mode": ctx.mode.value,
         "os_version": job.get("os_version") or "2.5",
         "domain_folder": export_result.get("domain_folder"),

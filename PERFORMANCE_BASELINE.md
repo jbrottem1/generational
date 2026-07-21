@@ -1,8 +1,8 @@
 # Performance Baseline
 
-**Owner:** Agent 28 · **Environment:** Linux CI / cloud agent pod · **Updated:** 2026-07-12
+**Owner:** Agent 28 · **Environment:** Local Mac / local CI · **Updated:** 2026-07-12
 
-Baselines are measured **locally** where possible. Cloud agents used for audit only.
+Baselines are measured **locally**. Production renders never run on Cursor Cloud.
 
 ---
 

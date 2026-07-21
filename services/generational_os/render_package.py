@@ -12,7 +12,7 @@ from services.generational_os.export_classifier import classified_export_dir
 from services.generational_os.media_library import build_library_filename, classify_production
 from services.generational_os.layers import ExecutionLayer
 from services.generational_os.manifest import load_manifest, save_manifest
-from services.media_production.execution_mode import cloud_status_message, get_execution_context
+from services.media_production.execution_mode import get_execution_context, local_status_message
 from services.reality.catalog import get_image
 from services.reality.planner import plan_reality_beats
 
@@ -90,8 +90,8 @@ def build_render_package(
         "job_id": project_id,
         "title": title,
         "episode": episode,
-        "status": "awaiting_local_render",
-        "message": cloud_status_message(),
+        "status": "ready_to_render",
+        "message": local_status_message(),
         "execution_mode": ctx.mode.value,
         "prepared_at": datetime.now(timezone.utc).isoformat(),
         "domain": folder,
@@ -188,7 +188,7 @@ def write_render_package(package: dict[str, Any], path: Path | None = None) -> P
             render_package_path=str(out),
             pipeline_stage="render_package",
             layer="pre_production",
-            local_render_status="awaiting_local_render",
+            local_render_status="ready_to_render",
             asset_registry=list((package.get("assets") or {}).get("asset_registry_ids") or []),
         )
         save_manifest(manifest)

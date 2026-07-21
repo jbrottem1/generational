@@ -1,0 +1,28 @@
+{
+  "character_id": "CHAR-ATLAS",
+  "responds_to": [
+    "gravity",
+    "head_motion",
+    "accel",
+    "decel",
+    "wind",
+    "moisture",
+    "collision"
+  ],
+  "require": [
+    "root_stability",
+    "strand_grouping",
+    "secondary_motion",
+    "damping",
+    "follow_through"
+  ],
+  "forbid": [
+    "rigid_helmet",
+    "ignore_gravity",
+    "face_clipping",
+    "constant_exaggerated_wind"
+  ],
+  "shared_world_wind": true,
+  "type": "short_styled",
+  "has_organic_hair": true
+}

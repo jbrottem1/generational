@@ -1,0 +1,164 @@
+{
+  "world_id": "WORLD-CITY-PARK",
+  "nav_mesh": {
+    "walkable": {
+      "polygon": [
+        [
+          -17.1,
+          0.0,
+          -13.6
+        ],
+        [
+          17.1,
+          0.0,
+          -13.6
+        ],
+        [
+          17.1,
+          0.0,
+          13.6
+        ],
+        [
+          -17.1,
+          0.0,
+          13.6
+        ]
+      ],
+      "agent_radius_m": 0.35,
+      "agent_height_m": 1.8
+    },
+    "obstacles": [
+      {
+        "id": "furn_park_bench_0",
+        "center": [
+          -8.75,
+          0.0,
+          -4.2
+        ],
+        "radius_m": 0.55,
+        "navigable_around": true
+      },
+      {
+        "id": "furn_picnic_table_1",
+        "center": [
+          -1.75,
+          0.0,
+          -4.2
+        ],
+        "radius_m": 0.55,
+        "navigable_around": true
+      },
+      {
+        "id": "prop_lamp_post_0",
+        "center": [
+          -8.75,
+          0.0,
+          -3.0
+        ],
+        "radius_m": 0.55,
+        "navigable_around": true
+      },
+      {
+        "id": "prop_fountain_1",
+        "center": [
+          -1.75,
+          0.0,
+          -3.0
+        ],
+        "radius_m": 0.55,
+        "navigable_around": true
+      },
+      {
+        "id": "prop_path_sign_2",
+        "center": [
+          5.25,
+          0.0,
+          -3.0
+        ],
+        "radius_m": 0.55,
+        "navigable_around": true
+      }
+    ],
+    "waypoints": [
+      {
+        "id": "spawn_entrance",
+        "position": [
+          0.0,
+          0.0,
+          -12.8
+        ],
+        "kind": "entrance"
+      },
+      {
+        "id": "center_stage",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "kind": "performance"
+      },
+      {
+        "id": "teach_mark",
+        "position": [
+          5.25,
+          0.0,
+          2.8000000000000003
+        ],
+        "kind": "performance"
+      },
+      {
+        "id": "prop_approach",
+        "position": [
+          7.0,
+          0.0,
+          4.2
+        ],
+        "kind": "interaction"
+      },
+      {
+        "id": "stair_landing",
+        "position": [
+          -10.5,
+          0.0,
+          7.0
+        ],
+        "kind": "stairs"
+      }
+    ],
+    "paths": [
+      {
+        "id": "enter_to_center",
+        "from": "spawn_entrance",
+        "to": "center_stage"
+      },
+      {
+        "id": "center_to_teach",
+        "from": "center_stage",
+        "to": "teach_mark"
+      },
+      {
+        "id": "teach_to_prop",
+        "from": "teach_mark",
+        "to": "prop_approach"
+      }
+    ],
+    "stairs": true,
+    "collision_avoidance": true
+  },
+  "capabilities": [
+    "walking",
+    "running",
+    "turning",
+    "stairs",
+    "sitting",
+    "opening_doors",
+    "approaching_objects",
+    "moving_around_furniture",
+    "avoiding_collisions"
+  ],
+  "forbid_teleport": true,
+  "forbid_slide_through_geometry": true,
+  "actors_navigate_world": true,
+  "not_photo_backdrop": true
+}

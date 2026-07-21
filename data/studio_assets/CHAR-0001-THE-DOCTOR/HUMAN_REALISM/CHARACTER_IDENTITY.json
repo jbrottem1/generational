@@ -1,0 +1,44 @@
+{
+  "character_id": "CHAR-0001",
+  "name": "The Doctor",
+  "role": "Canonical Medical Educator",
+  "style_mode": "cinematic_realism",
+  "is_gold_standard": false,
+  "inherits_from": "BASE_HUMAN_REALISM",
+  "reference_implementation": "DOCTOR_001",
+  "canonical_height_cm": 185,
+  "body_mass_estimate_kg": 82,
+  "age_range": "adult_ageless_cyborg",
+  "biological_build": "athletic_approachable_humanoid",
+  "silhouette": "white_cyborg_doctor_blue_glow",
+  "palette": {
+    "primary": "#F4F7FA",
+    "titanium": "#8A939E",
+    "accent": "#3BA7E0",
+    "eyes": "#7FD4FF"
+  },
+  "personality": [
+    "highly_intelligent",
+    "patient",
+    "curious",
+    "optimistic",
+    "encouraging",
+    "evidence_driven",
+    "compassionate"
+  ],
+  "voice": {
+    "id": "VOICE-THE-DOCTOR-001",
+    "style": "warm_clinical_educator",
+    "pace": "natural_educational"
+  },
+  "wardrobe_default": "primary_outfit",
+  "gait_characteristics": [
+    "calm_authority",
+    "precise_foot_placement",
+    "balanced_posture",
+    "minimal_wasted_movement",
+    "approachable_not_militaristic"
+  ],
+  "forbid_regenerate_from_scratch": true,
+  "framework_id": "HUMAN_REALISM_FRAMEWORK_V1"
+}

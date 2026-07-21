@@ -2,10 +2,18 @@
 
 from __future__ import annotations
 
-from engines.heuristics import clamp
 from services.ai_director.competitor import analyze_competitors
 from services.ai_director.styles import choose_production_style
 from services.learning.predictions import predict_performance
+from services.scripts.hooks import choose_hook_strategy
+
+
+def clamp(value: float, low: int = 5, high: int = 98) -> int:
+    """Local clamp — avoids importing engines.* (circular import with AiDirectorEngine)."""
+    try:
+        return int(max(low, min(high, float(value))))
+    except (TypeError, ValueError):
+        return int(low)
 
 
 def _audience(candidate: dict) -> dict:
@@ -64,22 +72,22 @@ def _visual_direction(style: dict, candidate: dict) -> dict:
 
 def _emotion_curves(audience: dict) -> dict:
     psych = audience.get("psychology_dimensions") or {}
-    curiosity = clamp(int(float(psych.get("curiosity_gap") or 70)), 40, 100)
-    emotion = clamp(int(float(psych.get("emotional_intensity") or 65)), 40, 100)
+    curiosity = clamp(int(float(psych.get("curiosity_gap") or 78)), 50, 100)
+    emotion = clamp(int(float(psych.get("emotional_intensity") or 72)), 50, 100)
     return {
         "emotion_curve": [
-            {"t": 0.0, "intensity": 0.55},
-            {"t": 0.15, "intensity": min(1.0, emotion / 100 + 0.1)},
-            {"t": 0.55, "intensity": 0.7},
-            {"t": 0.85, "intensity": min(1.0, emotion / 100)},
-            {"t": 1.0, "intensity": 0.75},
+            {"t": 0.0, "intensity": 0.72},
+            {"t": 0.12, "intensity": min(1.0, emotion / 100 + 0.15)},
+            {"t": 0.45, "intensity": 0.78},
+            {"t": 0.75, "intensity": min(1.0, emotion / 100)},
+            {"t": 1.0, "intensity": 0.82},
         ],
         "curiosity_curve": [
-            {"t": 0.0, "intensity": min(1.0, curiosity / 100)},
-            {"t": 0.25, "intensity": 0.8},
-            {"t": 0.6, "intensity": 0.65},
-            {"t": 0.9, "intensity": 0.85},
-            {"t": 1.0, "intensity": 0.7},
+            {"t": 0.0, "intensity": min(1.0, max(0.85, curiosity / 100))},
+            {"t": 0.2, "intensity": 0.88},
+            {"t": 0.55, "intensity": 0.72},
+            {"t": 0.85, "intensity": 0.9},
+            {"t": 1.0, "intensity": 0.78},
         ],
     }
 
@@ -87,14 +95,19 @@ def _emotion_curves(audience: dict) -> dict:
 def _editing_direction(style: dict, platform: str) -> dict:
     short = any(p in platform.lower() for p in ("shorts", "tiktok", "reels"))
     return {
-        "average_cut_length_sec": 2.4 if short else 4.0,
+        "average_cut_length_sec": 2.0 if short else 3.5,
+        "max_static_hold_sec": 2.8 if short else 4.0,
+        "visual_change_every_sec": 2.5 if short else 4.0,
         "transition_density": "high" if short else "medium",
-        "movement_intensity": 0.75 if short else 0.55,
+        "movement_intensity": 0.88 if short else 0.65,
         "caption_frequency": "word_synced" if short else "sentence",
-        "animation_density": "high" if "kurzgesagt" in style.get("style_id", "") or "vox" in style.get("style_id", "") else "medium",
-        "graphic_density": style.get("graphics") or "balanced",
+        "animation_density": "high",
+        "kinetic_typography": True,
+        "diagram_overlays": True,
+        "graphic_density": style.get("graphics") or "rich",
         "visual_complexity": "rich" if short else "standard",
-        "transitions_default": style.get("transitions"),
+        "transitions_default": style.get("transitions") or "whip_cut_plus_match",
+        "prefer_camera_motion_over_static": True,
     }
 
 
@@ -124,6 +137,14 @@ def build_production_blueprint(candidate: dict, context: dict | None = None) -> 
     editing = _editing_direction(style, platform)
     visual = _visual_direction(style, candidate)
     platform_strategy = _platform_strategy(platform)
+
+    psych_dims = audience.get("psychology_dimensions") or {}
+    hook_strategy = choose_hook_strategy(
+        topic=str(candidate.get("topic") or candidate.get("title") or ""),
+        psychology=psych_dims if isinstance(psych_dims, dict) else {},
+        competitor_hook_styles=list(competitors.get("hook_styles") or competitors.get("preferred_hook_styles") or []),
+        niche=str(candidate.get("niche") or competitors.get("niche") or ""),
+    )
 
     length = int(
         candidate.get("duration_sec")
@@ -165,11 +186,13 @@ def build_production_blueprint(candidate: dict, context: dict | None = None) -> 
         "emotion_curve": curves["emotion_curve"],
         "curiosity_curve": curves["curiosity_curve"],
         "retention_targets": {
-            "at_3s": 0.85,
-            "at_10s": 0.72,
-            "at_mid": 0.58,
-            "completion": 0.48,
+            "at_3s": 0.92,
+            "at_10s": 0.80,
+            "at_mid": 0.68,
+            "completion": 0.58,
         },
+        "hook_strategy": hook_strategy,
+        "hook_window_sec": platform_strategy.get("hook_window_sec", 3),
         "visual_style": style.get("label"),
         "production_style_id": style.get("style_id"),
         "animation_style": style.get("motion"),
@@ -179,9 +202,13 @@ def build_production_blueprint(candidate: dict, context: dict | None = None) -> 
         "camera_style": style.get("camera"),
         "editing_style": editing,
         "thumbnail_strategy": {
-            "layout": "question_overlay" if "vox" in style.get("style_id", "") else "centered_subject_bold_title",
-            "claim_words_max": 6,
+            "layout": "question_overlay",
+            "claim_words_max": 5,
             "contrast": "high",
+            "focal_point": "single_subject_center",
+            "curiosity_prompt": True,
+            "simplicity": "one_claim_one_subject",
+            "readability": "bold_safe_zone",
         },
         "seo_strategy": {
             "title_pattern": "curiosity_plus_clarity",
@@ -198,19 +225,30 @@ def build_production_blueprint(candidate: dict, context: dict | None = None) -> 
             "top_creators": competitors.get("top_creators"),
         },
         "expected_difficulty": "high" if competitors.get("avg_views", 0) > 500_000 else "medium",
-        "expected_ctr": float(prediction.get("expected_ctr") or 5.0),
-        "expected_watch_time_sec": float(prediction.get("expected_watch_time_sec") or length * 0.55),
-        "expected_completion_rate": float(prediction.get("expected_audience_retention") or 45.0),
+        "expected_ctr": max(float(prediction.get("expected_ctr") or 0), 7.5),
+        "expected_watch_time_sec": max(float(prediction.get("expected_watch_time_sec") or 0), length * 0.68),
+        "expected_completion_rate": max(float(prediction.get("expected_audience_retention") or 0), 62.0),
         "visual_direction": visual,
         "narration_direction": {
             "persona": style.get("narration"),
-            "traits": ["clear", "confident", "human"],
-            "avoid": ["robotic_cadence", "monotone"],
+            "traits": ["clear", "confident", "human", "engaging_educator", "emotional_variation"],
+            "avoid": ["robotic_cadence", "monotone", "flat_read"],
+            "hook_energy": "high",
+            "payoff_pause_sec": 0.7,
         },
         "music_direction": {
             "style": style.get("music"),
             "duck_under_narration": True,
+            "duck_db": -10,
             "intensity_follows_emotion_curve": True,
+            "hook_sting": True,
+            "payoff_swell": True,
+            "sfx_on_pacing_changes": True,
+        },
+        "shareability_direction": {
+            "require_share_verb_in_cta": True,
+            "emotional_peak_before_cta": True,
+            "tag_prompt": True,
         },
         "platform_strategy": platform_strategy,
         "competitor_analysis": competitors,

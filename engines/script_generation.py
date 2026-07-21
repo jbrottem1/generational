@@ -31,15 +31,12 @@ from core.constants import SCRIPT_VARIANTS_PER_IDEA
 from core.log import get_logger, log_event
 from engines.base import Engine
 from services.provider_runtime.engine_api import runtime_generate_json
-from services.scripts import (
-    DEFAULT_PLATFORM,
-    ScriptVariant,
-    build_structured_script,
-    finalize_variant,
-    generate_variants,
-    get_platform_spec,
-    rank_variants,
-)
+# Import submodules directly — avoids circular import via services.scripts package init
+from services.scripts.generator import finalize_variant, generate_variants
+from services.scripts.models import ScriptVariant
+from services.scripts.platforms import DEFAULT_PLATFORM, get_platform_spec
+from services.scripts.scorer import rank_variants
+from services.scripts.structure import build_structured_script
 
 logger = get_logger(__name__)
 
@@ -73,8 +70,29 @@ class ScriptGenerationEngine(Engine):
         research = context.get("research", {})
         locale = context.get("script_locale")  # language/region/dialect target
 
+        # Historical learning: winning hooks / lengths for this topic
+        try:
+            from services.learning.api import for_script
+            from services.learning.recommendations import script_guidance
+
+            learning = context.get("learning_recommendations") or {}
+            flat = []
+            if isinstance(learning, dict):
+                for vals in learning.values():
+                    if isinstance(vals, list):
+                        flat.extend(vals)
+            guidance = script_guidance(flat) if flat else for_script(str(subject))
+            context["script_learning_guidance"] = guidance
+            if guidance.get("winning_hooks"):
+                research = dict(research)
+                research["learning_winning_hooks"] = guidance["winning_hooks"][:5]
+        except Exception:
+            guidance = {}
+
         variants_by_candidate = []
         for candidate in candidates:
+            if guidance.get("winning_hooks") and not candidate.get("hook"):
+                candidate["hook"] = guidance["winning_hooks"][0]
             variants = generate_variants(
                 candidate,
                 platform=spec.key,
@@ -91,6 +109,8 @@ class ScriptGenerationEngine(Engine):
         for candidate, variants in zip(candidates, variants_by_candidate):
             ranked = rank_variants(variants)
             self._attach(context, candidate, ranked, spec)
+            if guidance:
+                candidate["script_learning_guidance"] = guidance
 
         best_scores = [c["script_score"] for c in candidates]
         summary = {
@@ -100,6 +120,7 @@ class ScriptGenerationEngine(Engine):
             "scripted": len(candidates),
             "ai_enhanced": enhanced_count,
             "average_best_score": round(sum(best_scores) / len(best_scores), 1) if best_scores else 0,
+            "learning_applied": bool(guidance),
         }
         log_event(
             logger,

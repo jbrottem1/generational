@@ -1,0 +1,16 @@
+{
+  "character_id": "DOCTOR_001",
+  "type": "soft_white_medical_polymer_over_titanium",
+  "albedo": "#F4F7FA",
+  "roughness": 0.45,
+  "specular": 0.35,
+  "subsurface_hint": 0.12,
+  "micro_detail": [
+    "soft_seam_lines",
+    "matte_clinical_finish"
+  ],
+  "forbid": [
+    "wet_horror_sheen",
+    "cheap_plastic_clipart"
+  ]
+}

@@ -36,6 +36,18 @@ EXPERIMENT_KINDS = (
     "posting_time",
     "caption",
     "voice",
+    "narration_style",
+    "music",
+    "sound_effects",
+    "video_length",
+    "animation_style",
+    "visual_pacing",
+    "caption_style",
+    "background_color",
+    "camera_movement",
+    "text_placement",
+    "intro_duration",
+    "outro_duration",
 )
 
 

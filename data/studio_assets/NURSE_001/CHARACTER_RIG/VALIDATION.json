@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "score": 100,
+  "failures": [],
+  "rejects_hit": [],
+  "reject_catalog": [
+    "appearance_changes_between_scenes",
+    "inconsistent_proportions",
+    "cannot_perform_natural_walking",
+    "cannot_perform_expressive_facial_acting",
+    "cannot_interact_with_objects",
+    "cannot_maintain_eye_contact",
+    "cannot_support_reusable_animation_clips"
+  ],
+  "rule": "Scenes reference the actor. Scenes never recreate the actor.",
+  "success": "Permanent cast of digital actors with reusable rigs, animations, personalities, and performances."
+}

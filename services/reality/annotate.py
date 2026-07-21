@@ -100,14 +100,26 @@ def apply_annotations(
     *,
     reveal: float = 1.0,
 ) -> None:
-    """Draw timed annotations when reveal fraction > 0."""
+    """Draw timed annotations when reveal fraction > 0.
+
+    Production rule: skip decorative marks. Circles/arrows/highlights require
+    ``purpose`` or ``narration_cue``. Prefer the semantic annotation engine.
+    """
     if reveal <= 0:
         return
     for ann in annotations:
         start = float(ann.get("start") or 0.0)
         if reveal < start:
             continue
+        purpose = str(ann.get("purpose") or ann.get("narration_cue") or "").strip()
+        target = str(ann.get("target") or "").strip()
         kind = str(ann.get("kind") or "")
+        # Empty placeholder stubs — skip
+        if not purpose and not target and not ann.get("text") and not ann.get("label"):
+            continue
+        # Circles/arrows/highlights without purpose are decorative — forbidden
+        if kind in ("circle", "arrow", "highlight", "point", "tap") and not purpose:
+            continue
         if kind == "highlight":
             draw_highlight_box(
                 d,

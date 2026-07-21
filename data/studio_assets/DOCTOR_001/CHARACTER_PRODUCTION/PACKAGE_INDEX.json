@@ -1,0 +1,14 @@
+{
+  "character_id": "DOCTOR_001",
+  "asset_version": "production_v1",
+  "updated": "2026-07-18T17:00:00Z",
+  "production_mesh": "data/studio_assets/DOCTOR_001/CHARACTER_PRODUCTION/DOCTOR_001_PRODUCTION.blend",
+  "runtime_mesh": "data/studio_assets/DOCTOR_001/RUNTIME/DOCTOR_001_SKINNED.blend",
+  "rig_map": "data/studio_assets/DOCTOR_001/RUNTIME/RIG_BONE_MAP.json",
+  "facial_channel_map": "data/studio_assets/DOCTOR_001/CHARACTER_PRODUCTION/FACIAL_CHANNEL_MAP.json",
+  "viseme_map": "data/studio_assets/DOCTOR_001/CHARACTER_PRODUCTION/VISEME_MAP.json",
+  "validation_renders": "data/studio_assets/DOCTOR_001/CHARACTER_PRODUCTION/VALIDATION_RENDERS/",
+  "quality_tier": "production_v1_procedural_hero",
+  "do_not_regenerate_per_scene": true,
+  "notes": "Permanent reusable actor. Golden Motion and all scenes must reference this canonical asset."
+}

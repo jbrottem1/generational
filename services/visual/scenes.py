@@ -20,7 +20,7 @@ future AI renderers a guaranteed-complete plan to execute.
 
 from __future__ import annotations
 
-from engines.heuristics import content_words, sentences
+from core.heuristics import content_words, sentences
 from services.visual.models import ScenePlan
 from services.visual.psychology import (
     attention_level_for,

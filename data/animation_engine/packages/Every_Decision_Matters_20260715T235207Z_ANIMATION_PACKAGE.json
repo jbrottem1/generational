@@ -1,0 +1,3317 @@
+{
+  "package_type": "ANIMATION_PACKAGE",
+  "package_version": "2.0.0",
+  "engine_label": "Cinematic Animation Engine V2",
+  "generated_at": "2026-07-15T23:52:07.411276+00:00",
+  "topic": "Every Decision Matters",
+  "production_id": "",
+  "scene_count": 4,
+  "scene_decisions": [
+    {
+      "scene_number": 1,
+      "scene_id": "scene_00",
+      "duration_sec": 3.0,
+      "pacing_note": "within_2_4s",
+      "cinematic": {
+        "version": "2.0",
+        "emotion": "curiosity",
+        "lighting_mood": "soft_daylight",
+        "shot_size": "establishing_wide",
+        "audience_understanding": "Advance hook: establish audience investment in The Founder traveler",
+        "visual_moment": "Muted viewer still understands: Life is unforgiving.",
+        "color_intent": {
+          "harmony": "natural",
+          "hierarchy": "subject_isolation",
+          "avoid": [
+            "oversaturated_randomness",
+            "neon_scatter"
+          ]
+        },
+        "forbid": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ],
+        "topic_hint": "Every Decision Matters",
+        "shot_language": "reveal_shot",
+        "directed_by_vfd": true
+      },
+      "vfd_seed": {
+        "true_motion_camera": "reveal",
+        "ae_camera_move": "reveal",
+        "shot_size": "establishing_wide",
+        "emotion": "curiosity",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Advance hook: establish audience investment in The Founder traveler"
+      },
+      "shot_language": "reveal_shot",
+      "layers": {
+        "cinematic": {
+          "version": "2.0",
+          "emotion": "curiosity",
+          "lighting_mood": "soft_daylight",
+          "shot_size": "establishing_wide",
+          "audience_understanding": "Advance hook: establish audience investment in The Founder traveler",
+          "visual_moment": "Muted viewer still understands: Life is unforgiving.",
+          "color_intent": {
+            "harmony": "natural",
+            "hierarchy": "subject_isolation",
+            "avoid": [
+              "oversaturated_randomness",
+              "neon_scatter"
+            ]
+          },
+          "forbid": [
+            "static_background",
+            "lifeless_environment",
+            "placeholder_asset",
+            "floating_icon",
+            "abstract_geometry",
+            "meaningless_movement",
+            "purposeless_camera_drift",
+            "poor_composition",
+            "empty_frame",
+            "low_resolution_asset",
+            "repeated_mechanical_loop",
+            "powerpoint_motion"
+          ],
+          "topic_hint": "Every Decision Matters",
+          "shot_language": "reveal_shot",
+          "directed_by_vfd": true
+        },
+        "camera": {
+          "camera_move": "reveal",
+          "motion_effect": "cinematic_push_in",
+          "true_motion_camera": "reveal",
+          "depth_of_field": false,
+          "rack_focus": false,
+          "shot_size": "establishing_wide",
+          "emotion": "curiosity",
+          "speed": "energized",
+          "narrative_purpose": "Advance hook: establish audience investment in The Founder traveler",
+          "storytelling_reason": "Advance hook: establish audience investment in The Founder traveler",
+          "forbid_static_lock": true,
+          "forbid_purposeless_drift": true,
+          "motivated": true,
+          "source": "virtual_film_director"
+        },
+        "character": {
+          "enabled": true,
+          "characters": [
+            {
+              "name": "The Founder",
+              "kind": "studio_host",
+              "id": "CHAR-FOUNDER-TRAVELER",
+              "source": "character_world_studio"
+            }
+          ],
+          "actions": [
+            "blink",
+            "head_turn",
+            "walk",
+            "gesture_while_speaking",
+            "point_at_object",
+            "emotional_react",
+            "lip_sync",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "anticipation",
+            "follow_through",
+            "cloth_sway"
+          ],
+          "micro_performance": [
+            "idle_breathe",
+            "soft_blink",
+            "gaze_shift",
+            "posture_settle",
+            "hand_settle",
+            "weight_transfer"
+          ],
+          "performance": "walk_explain",
+          "emotion": "curiosity",
+          "expression": "wide_eyes",
+          "gestures": [
+            "point_spark",
+            "tilt_head",
+            "hand_hologram"
+          ],
+          "character_plate_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/char_founder_traveler.png",
+          "alive_requirements": [
+            "blink_naturally",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "head_turn",
+            "gesture_while_speaking",
+            "facial_expression",
+            "anticipation_and_follow_through",
+            "visual_consistency_across_scenes",
+            "no_mannequin_behavior",
+            "no_abstract_placeholder"
+          ],
+          "primary": {
+            "name": "The Founder",
+            "id": "CHAR-FOUNDER-TRAVELER"
+          },
+          "forbid_mannequin": true,
+          "forbid_stick_placeholder": true,
+          "source": "character_world_studio"
+        },
+        "world": {
+          "enabled": true,
+          "environment": "generic",
+          "animations": [
+            "ambient_particles",
+            "subtle_parallax",
+            "light_drift",
+            "cloud_drift",
+            "wind"
+          ],
+          "depth_layers": {
+            "foreground": [
+              "near_parallax_band"
+            ],
+            "midground": [
+              "subject_stage"
+            ],
+            "background": [
+              "sky_or_wall",
+              "ambient_drift"
+            ]
+          },
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "allow_abstract_geometry": false,
+          "continues_without_narration": true,
+          "lighting_mood": "soft_daylight",
+          "atmospheric_perspective": true,
+          "volumetric_lighting": false,
+          "palette_hint": "ocean",
+          "environmental_storytelling": true
+        },
+        "object": {
+          "enabled": false,
+          "objects": [],
+          "physics_believable": true,
+          "note": "Objects obey weight and momentum \u2014 no mechanical teleport motion"
+        },
+        "fx": {
+          "particle_effects": [
+            "ambient_particles",
+            "dust_motes"
+          ],
+          "lighting_movement": [
+            "key_soft",
+            "fill_bounce",
+            "rim_soft"
+          ],
+          "lighting_mood": "soft_daylight",
+          "physics_animation": false,
+          "grounded_not_floating": true
+        },
+        "motion_graphics": {
+          "enabled": true,
+          "items": [
+            {
+              "type": "callout",
+              "reason": "Hook/payoff title \u2014 emotion=curiosity",
+              "story_role": "explain_not_decorate",
+              "forbid_floating_icon": true
+            }
+          ],
+          "animate_into_scene": true,
+          "integrated_not_powerpoint": true
+        },
+        "ui": {
+          "enabled": true,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "hard_cut",
+          "avoid_crossfade": true,
+          "motivated": true,
+          "reason": "VFD directed transition=hard_cut",
+          "source": "virtual_film_director"
+        },
+        "muted_comprehension": "Show The Founder traveler through visible motion so purpose=hook reads without audio.",
+        "visual_moment": "Muted viewer still understands: Life is unforgiving.",
+        "audience_understanding": "Advance hook: establish audience investment in The Founder traveler",
+        "active_motion_classes": [
+          "camera_movement",
+          "character_animation",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement",
+          "ui_animation",
+          "motion_graphics"
+        ],
+        "passes_motion_minimum": true,
+        "immersion": {
+          "questions": {
+            "world_feels_alive": true,
+            "camera_has_purpose": true,
+            "environments_believable": true,
+            "characters_feel_alive": true,
+            "visuals_engaging_muted": true,
+            "every_frame_advances_story": true,
+            "rejects_abstract_geometry": true
+          },
+          "passed": true,
+          "failing": [],
+          "re_render_required": false
+        },
+        "quality_rejects": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ]
+      },
+      "motion_effect": "cinematic_push_in",
+      "true_motion_camera": "reveal",
+      "true_motion_performance": "walk_explain",
+      "world_palette": "ocean",
+      "lighting_mood": "soft_daylight",
+      "emotion": "curiosity",
+      "shot_size": "establishing_wide",
+      "immersion": {
+        "questions": {
+          "world_feels_alive": true,
+          "camera_has_purpose": true,
+          "environments_believable": true,
+          "characters_feel_alive": true,
+          "visuals_engaging_muted": true,
+          "every_frame_advances_story": true,
+          "rejects_abstract_geometry": true
+        },
+        "passed": true,
+        "failing": [],
+        "re_render_required": false
+      },
+      "excellence": {
+        "scene_motion": 100.0,
+        "camera_quality": 100.0,
+        "character_realism": 96.0,
+        "world_activity": 98.0,
+        "pacing": 90.0,
+        "visual_storytelling": 100.0,
+        "transition_quality": 93.0,
+        "cinematic_feel": 98.5,
+        "immersion": 100.0,
+        "intentionality": 96.0,
+        "environmental_believability": 95.0,
+        "performance_life": 90.0
+      }
+    },
+    {
+      "scene_number": 2,
+      "scene_id": "scene_01",
+      "duration_sec": 3.5,
+      "pacing_note": "within_2_4s",
+      "cinematic": {
+        "version": "2.0",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "shot_size": "dynamic_medium",
+        "audience_understanding": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+        "visual_moment": "Muted viewer still understands: Every decision leaves a mark. Every step shapes your future.",
+        "color_intent": {
+          "harmony": "natural",
+          "hierarchy": "subject_isolation",
+          "avoid": [
+            "oversaturated_randomness",
+            "neon_scatter"
+          ]
+        },
+        "forbid": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ],
+        "topic_hint": "Every Decision Matters",
+        "shot_language": "medium_dialogue",
+        "directed_by_vfd": true
+      },
+      "vfd_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "slow_cinematic_push",
+        "shot_size": "dynamic_medium",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future."
+      },
+      "shot_language": "medium_dialogue",
+      "layers": {
+        "cinematic": {
+          "version": "2.0",
+          "emotion": "focus",
+          "lighting_mood": "soft_daylight",
+          "shot_size": "dynamic_medium",
+          "audience_understanding": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+          "visual_moment": "Muted viewer still understands: Every decision leaves a mark. Every step shapes your future.",
+          "color_intent": {
+            "harmony": "natural",
+            "hierarchy": "subject_isolation",
+            "avoid": [
+              "oversaturated_randomness",
+              "neon_scatter"
+            ]
+          },
+          "forbid": [
+            "static_background",
+            "lifeless_environment",
+            "placeholder_asset",
+            "floating_icon",
+            "abstract_geometry",
+            "meaningless_movement",
+            "purposeless_camera_drift",
+            "poor_composition",
+            "empty_frame",
+            "low_resolution_asset",
+            "repeated_mechanical_loop",
+            "powerpoint_motion"
+          ],
+          "topic_hint": "Every Decision Matters",
+          "shot_language": "medium_dialogue",
+          "directed_by_vfd": true
+        },
+        "camera": {
+          "camera_move": "slow_cinematic_push",
+          "motion_effect": "cinematic_push_in",
+          "true_motion_camera": "push_in",
+          "depth_of_field": true,
+          "rack_focus": false,
+          "shot_size": "dynamic_medium",
+          "emotion": "focus",
+          "speed": "measured",
+          "narrative_purpose": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+          "storytelling_reason": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+          "forbid_static_lock": true,
+          "forbid_purposeless_drift": true,
+          "motivated": true,
+          "source": "virtual_film_director"
+        },
+        "character": {
+          "enabled": true,
+          "characters": [
+            {
+              "name": "The Founder",
+              "kind": "studio_host",
+              "id": "CHAR-FOUNDER-TRAVELER",
+              "source": "character_world_studio"
+            }
+          ],
+          "actions": [
+            "blink",
+            "head_turn",
+            "walk",
+            "gesture_while_speaking",
+            "point_at_object",
+            "emotional_react",
+            "lip_sync",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "anticipation",
+            "follow_through",
+            "cloth_sway"
+          ],
+          "micro_performance": [
+            "idle_breathe",
+            "soft_blink",
+            "gaze_shift",
+            "posture_settle",
+            "hand_settle",
+            "weight_transfer"
+          ],
+          "performance": "point_teach",
+          "emotion": "focus",
+          "expression": "curious",
+          "gestures": [
+            "open_palm_teach",
+            "hologram_pinch",
+            "clipboard_point",
+            "scanner_sweep",
+            "heart_hand"
+          ],
+          "character_plate_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/char_founder_traveler.png",
+          "alive_requirements": [
+            "blink_naturally",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "head_turn",
+            "gesture_while_speaking",
+            "facial_expression",
+            "anticipation_and_follow_through",
+            "visual_consistency_across_scenes",
+            "no_mannequin_behavior",
+            "no_abstract_placeholder"
+          ],
+          "primary": {
+            "name": "The Founder",
+            "id": "CHAR-FOUNDER-TRAVELER"
+          },
+          "forbid_mannequin": true,
+          "forbid_stick_placeholder": true,
+          "source": "character_world_studio"
+        },
+        "world": {
+          "enabled": true,
+          "environment": "generic",
+          "animations": [
+            "ambient_particles",
+            "subtle_parallax",
+            "light_drift",
+            "cloud_drift",
+            "wind"
+          ],
+          "depth_layers": {
+            "foreground": [
+              "near_parallax_band"
+            ],
+            "midground": [
+              "subject_stage"
+            ],
+            "background": [
+              "sky_or_wall",
+              "ambient_drift"
+            ]
+          },
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "allow_abstract_geometry": false,
+          "continues_without_narration": true,
+          "lighting_mood": "soft_daylight",
+          "atmospheric_perspective": true,
+          "volumetric_lighting": false,
+          "palette_hint": "ocean",
+          "environmental_storytelling": true
+        },
+        "object": {
+          "enabled": false,
+          "objects": [],
+          "physics_believable": true,
+          "note": "Objects obey weight and momentum \u2014 no mechanical teleport motion"
+        },
+        "fx": {
+          "particle_effects": [
+            "ambient_particles",
+            "dust_motes"
+          ],
+          "lighting_movement": [
+            "key_soft",
+            "fill_bounce",
+            "rim_soft"
+          ],
+          "lighting_mood": "soft_daylight",
+          "physics_animation": false,
+          "grounded_not_floating": true
+        },
+        "motion_graphics": {
+          "enabled": false,
+          "items": [],
+          "animate_into_scene": true,
+          "integrated_not_powerpoint": true
+        },
+        "ui": {
+          "enabled": false,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "lighting_continuity",
+          "avoid_crossfade": true,
+          "motivated": true,
+          "reason": "VFD directed transition=lighting_continuity",
+          "source": "virtual_film_director"
+        },
+        "muted_comprehension": "Show The Founder traveler through visible motion so purpose=story_beat reads without audio.",
+        "visual_moment": "Muted viewer still understands: Every decision leaves a mark. Every step shapes your future.",
+        "audience_understanding": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+        "active_motion_classes": [
+          "camera_movement",
+          "character_animation",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement"
+        ],
+        "passes_motion_minimum": true,
+        "immersion": {
+          "questions": {
+            "world_feels_alive": true,
+            "camera_has_purpose": true,
+            "environments_believable": true,
+            "characters_feel_alive": true,
+            "visuals_engaging_muted": true,
+            "every_frame_advances_story": true,
+            "rejects_abstract_geometry": true
+          },
+          "passed": true,
+          "failing": [],
+          "re_render_required": false
+        },
+        "quality_rejects": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ]
+      },
+      "motion_effect": "cinematic_push_in",
+      "true_motion_camera": "push_in",
+      "true_motion_performance": "point_teach",
+      "world_palette": "ocean",
+      "lighting_mood": "soft_daylight",
+      "emotion": "focus",
+      "shot_size": "dynamic_medium",
+      "immersion": {
+        "questions": {
+          "world_feels_alive": true,
+          "camera_has_purpose": true,
+          "environments_believable": true,
+          "characters_feel_alive": true,
+          "visuals_engaging_muted": true,
+          "every_frame_advances_story": true,
+          "rejects_abstract_geometry": true
+        },
+        "passed": true,
+        "failing": [],
+        "re_render_required": false
+      },
+      "excellence": {
+        "scene_motion": 100.0,
+        "camera_quality": 100.0,
+        "character_realism": 96.0,
+        "world_activity": 98.0,
+        "pacing": 90.0,
+        "visual_storytelling": 96.0,
+        "transition_quality": 93.0,
+        "cinematic_feel": 98.5,
+        "immersion": 100.0,
+        "intentionality": 96.0,
+        "environmental_believability": 95.0,
+        "performance_life": 90.0
+      }
+    },
+    {
+      "scene_number": 3,
+      "scene_id": "scene_02",
+      "duration_sec": 3.5,
+      "pacing_note": "within_2_4s",
+      "cinematic": {
+        "version": "2.0",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "shot_size": "dynamic_medium",
+        "audience_understanding": "Demonstrate the idea so learning sticks: Small choices become great destinies.",
+        "visual_moment": "Muted viewer still understands: Small choices become great destinies.",
+        "color_intent": {
+          "harmony": "natural",
+          "hierarchy": "subject_isolation",
+          "avoid": [
+            "oversaturated_randomness",
+            "neon_scatter"
+          ]
+        },
+        "forbid": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ],
+        "topic_hint": "Every Decision Matters",
+        "shot_language": "push_in",
+        "directed_by_vfd": true
+      },
+      "vfd_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "slow_cinematic_push",
+        "shot_size": "dynamic_medium",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: Small choices become great destinies."
+      },
+      "shot_language": "push_in",
+      "layers": {
+        "cinematic": {
+          "version": "2.0",
+          "emotion": "focus",
+          "lighting_mood": "soft_daylight",
+          "shot_size": "dynamic_medium",
+          "audience_understanding": "Demonstrate the idea so learning sticks: Small choices become great destinies.",
+          "visual_moment": "Muted viewer still understands: Small choices become great destinies.",
+          "color_intent": {
+            "harmony": "natural",
+            "hierarchy": "subject_isolation",
+            "avoid": [
+              "oversaturated_randomness",
+              "neon_scatter"
+            ]
+          },
+          "forbid": [
+            "static_background",
+            "lifeless_environment",
+            "placeholder_asset",
+            "floating_icon",
+            "abstract_geometry",
+            "meaningless_movement",
+            "purposeless_camera_drift",
+            "poor_composition",
+            "empty_frame",
+            "low_resolution_asset",
+            "repeated_mechanical_loop",
+            "powerpoint_motion"
+          ],
+          "topic_hint": "Every Decision Matters",
+          "shot_language": "push_in",
+          "directed_by_vfd": true
+        },
+        "camera": {
+          "camera_move": "parallax",
+          "motion_effect": "pan_right",
+          "true_motion_camera": "parallax",
+          "depth_of_field": false,
+          "rack_focus": false,
+          "shot_size": "dynamic_medium",
+          "emotion": "focus",
+          "speed": "measured",
+          "narrative_purpose": "Advance comprehension of the beat while holding focus",
+          "storytelling_reason": "Advance comprehension of the beat while holding focus",
+          "forbid_static_lock": true,
+          "forbid_purposeless_drift": true,
+          "motivated": true,
+          "source": "animation_engine_v2"
+        },
+        "character": {
+          "enabled": true,
+          "characters": [
+            {
+              "name": "The Founder",
+              "kind": "studio_host",
+              "id": "CHAR-FOUNDER-TRAVELER",
+              "source": "character_world_studio"
+            }
+          ],
+          "actions": [
+            "blink",
+            "head_turn",
+            "walk",
+            "gesture_while_speaking",
+            "point_at_object",
+            "emotional_react",
+            "lip_sync",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "anticipation",
+            "follow_through",
+            "cloth_sway"
+          ],
+          "micro_performance": [
+            "idle_breathe",
+            "soft_blink",
+            "gaze_shift",
+            "posture_settle",
+            "hand_settle",
+            "weight_transfer"
+          ],
+          "performance": "walk_explain",
+          "emotion": "focus",
+          "expression": "puzzled",
+          "gestures": [
+            "point_spark",
+            "tilt_head",
+            "hand_hologram"
+          ],
+          "character_plate_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/char_founder_traveler.png",
+          "alive_requirements": [
+            "blink_naturally",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "head_turn",
+            "gesture_while_speaking",
+            "facial_expression",
+            "anticipation_and_follow_through",
+            "visual_consistency_across_scenes",
+            "no_mannequin_behavior",
+            "no_abstract_placeholder"
+          ],
+          "primary": {
+            "name": "The Founder",
+            "id": "CHAR-FOUNDER-TRAVELER"
+          },
+          "forbid_mannequin": true,
+          "forbid_stick_placeholder": true,
+          "source": "character_world_studio"
+        },
+        "world": {
+          "enabled": true,
+          "environment": "generic",
+          "animations": [
+            "ambient_particles",
+            "subtle_parallax",
+            "light_drift",
+            "cloud_drift",
+            "wind"
+          ],
+          "depth_layers": {
+            "foreground": [
+              "near_parallax_band"
+            ],
+            "midground": [
+              "subject_stage"
+            ],
+            "background": [
+              "sky_or_wall",
+              "ambient_drift"
+            ]
+          },
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "allow_abstract_geometry": false,
+          "continues_without_narration": true,
+          "lighting_mood": "soft_daylight",
+          "atmospheric_perspective": true,
+          "volumetric_lighting": false,
+          "palette_hint": "ocean",
+          "environmental_storytelling": true
+        },
+        "object": {
+          "enabled": false,
+          "objects": [],
+          "physics_believable": true,
+          "note": "Objects obey weight and momentum \u2014 no mechanical teleport motion"
+        },
+        "fx": {
+          "particle_effects": [
+            "ambient_particles",
+            "dust_motes"
+          ],
+          "lighting_movement": [
+            "key_soft",
+            "fill_bounce",
+            "rim_soft"
+          ],
+          "lighting_mood": "soft_daylight",
+          "physics_animation": false,
+          "grounded_not_floating": true
+        },
+        "motion_graphics": {
+          "enabled": false,
+          "items": [],
+          "animate_into_scene": true,
+          "integrated_not_powerpoint": true
+        },
+        "ui": {
+          "enabled": false,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "lighting_continuity",
+          "avoid_crossfade": true,
+          "motivated": true,
+          "reason": "VFD directed transition=lighting_continuity",
+          "source": "virtual_film_director"
+        },
+        "muted_comprehension": "Show The Founder traveler through visible motion so purpose=story_beat reads without audio.",
+        "visual_moment": "Muted viewer still understands: Small choices become great destinies.",
+        "audience_understanding": "Demonstrate the idea so learning sticks: Small choices become great destinies.",
+        "active_motion_classes": [
+          "camera_movement",
+          "character_animation",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement"
+        ],
+        "passes_motion_minimum": true,
+        "immersion": {
+          "questions": {
+            "world_feels_alive": true,
+            "camera_has_purpose": true,
+            "environments_believable": true,
+            "characters_feel_alive": true,
+            "visuals_engaging_muted": true,
+            "every_frame_advances_story": true,
+            "rejects_abstract_geometry": true
+          },
+          "passed": true,
+          "failing": [],
+          "re_render_required": false
+        },
+        "quality_rejects": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ]
+      },
+      "motion_effect": "pan_right",
+      "true_motion_camera": "parallax",
+      "true_motion_performance": "walk_explain",
+      "world_palette": "ocean",
+      "lighting_mood": "soft_daylight",
+      "emotion": "focus",
+      "shot_size": "dynamic_medium",
+      "immersion": {
+        "questions": {
+          "world_feels_alive": true,
+          "camera_has_purpose": true,
+          "environments_believable": true,
+          "characters_feel_alive": true,
+          "visuals_engaging_muted": true,
+          "every_frame_advances_story": true,
+          "rejects_abstract_geometry": true
+        },
+        "passed": true,
+        "failing": [],
+        "re_render_required": false
+      },
+      "excellence": {
+        "scene_motion": 100.0,
+        "camera_quality": 100.0,
+        "character_realism": 96.0,
+        "world_activity": 98.0,
+        "pacing": 90.0,
+        "visual_storytelling": 96.0,
+        "transition_quality": 93.0,
+        "cinematic_feel": 98.5,
+        "immersion": 100.0,
+        "intentionality": 96.0,
+        "environmental_believability": 95.0,
+        "performance_life": 90.0
+      }
+    },
+    {
+      "scene_number": 4,
+      "scene_id": "scene_03",
+      "duration_sec": 5.0,
+      "pacing_note": "long_beat_requires_multiphase_motion",
+      "cinematic": {
+        "version": "2.0",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "shot_size": "hero_low_angle",
+        "audience_understanding": "Deliver the takeaway on The Founder traveler",
+        "visual_moment": "Muted viewer still understands: Choose discipline. Choose purpose. Choose wisely.",
+        "color_intent": {
+          "harmony": "natural",
+          "hierarchy": "subject_isolation",
+          "avoid": [
+            "oversaturated_randomness",
+            "neon_scatter"
+          ]
+        },
+        "forbid": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ],
+        "topic_hint": "Every Decision Matters",
+        "shot_language": "hero_shot",
+        "directed_by_vfd": true
+      },
+      "vfd_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "hero_low_angle_push",
+        "shot_size": "hero_low_angle",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Deliver the takeaway on The Founder traveler"
+      },
+      "shot_language": "hero_shot",
+      "layers": {
+        "cinematic": {
+          "version": "2.0",
+          "emotion": "clarity",
+          "lighting_mood": "soft_daylight",
+          "shot_size": "hero_low_angle",
+          "audience_understanding": "Deliver the takeaway on The Founder traveler",
+          "visual_moment": "Muted viewer still understands: Choose discipline. Choose purpose. Choose wisely.",
+          "color_intent": {
+            "harmony": "natural",
+            "hierarchy": "subject_isolation",
+            "avoid": [
+              "oversaturated_randomness",
+              "neon_scatter"
+            ]
+          },
+          "forbid": [
+            "static_background",
+            "lifeless_environment",
+            "placeholder_asset",
+            "floating_icon",
+            "abstract_geometry",
+            "meaningless_movement",
+            "purposeless_camera_drift",
+            "poor_composition",
+            "empty_frame",
+            "low_resolution_asset",
+            "repeated_mechanical_loop",
+            "powerpoint_motion"
+          ],
+          "topic_hint": "Every Decision Matters",
+          "shot_language": "hero_shot",
+          "directed_by_vfd": true
+        },
+        "camera": {
+          "camera_move": "hero_low_angle_push",
+          "motion_effect": "cinematic_push_in",
+          "true_motion_camera": "push_in",
+          "depth_of_field": false,
+          "rack_focus": false,
+          "shot_size": "hero_low_angle",
+          "emotion": "clarity",
+          "speed": "resolved",
+          "narrative_purpose": "Deliver the takeaway on The Founder traveler",
+          "storytelling_reason": "Deliver the takeaway on The Founder traveler",
+          "forbid_static_lock": true,
+          "forbid_purposeless_drift": true,
+          "motivated": true,
+          "source": "virtual_film_director"
+        },
+        "character": {
+          "enabled": true,
+          "characters": [
+            {
+              "name": "The Founder",
+              "kind": "studio_host",
+              "id": "CHAR-FOUNDER-TRAVELER",
+              "source": "character_world_studio"
+            }
+          ],
+          "actions": [
+            "blink",
+            "head_turn",
+            "walk",
+            "gesture_while_speaking",
+            "point_at_object",
+            "emotional_react",
+            "lip_sync",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "anticipation",
+            "follow_through",
+            "cloth_sway"
+          ],
+          "micro_performance": [
+            "idle_breathe",
+            "soft_blink",
+            "gaze_shift",
+            "posture_settle",
+            "hand_settle",
+            "weight_transfer"
+          ],
+          "performance": "walk_explain",
+          "emotion": "clarity",
+          "expression": "awe",
+          "gestures": [
+            "point_spark",
+            "tilt_head",
+            "hand_hologram"
+          ],
+          "character_plate_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/char_founder_traveler.png",
+          "alive_requirements": [
+            "blink_naturally",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "head_turn",
+            "gesture_while_speaking",
+            "facial_expression",
+            "anticipation_and_follow_through",
+            "visual_consistency_across_scenes",
+            "no_mannequin_behavior",
+            "no_abstract_placeholder"
+          ],
+          "primary": {
+            "name": "The Founder",
+            "id": "CHAR-FOUNDER-TRAVELER"
+          },
+          "forbid_mannequin": true,
+          "forbid_stick_placeholder": true,
+          "source": "character_world_studio"
+        },
+        "world": {
+          "enabled": true,
+          "environment": "generic",
+          "animations": [
+            "ambient_particles",
+            "subtle_parallax",
+            "light_drift",
+            "cloud_drift",
+            "wind"
+          ],
+          "depth_layers": {
+            "foreground": [
+              "near_parallax_band"
+            ],
+            "midground": [
+              "subject_stage"
+            ],
+            "background": [
+              "sky_or_wall",
+              "ambient_drift"
+            ]
+          },
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "allow_abstract_geometry": false,
+          "continues_without_narration": true,
+          "lighting_mood": "soft_daylight",
+          "atmospheric_perspective": true,
+          "volumetric_lighting": false,
+          "palette_hint": "ocean",
+          "environmental_storytelling": true
+        },
+        "object": {
+          "enabled": false,
+          "objects": [],
+          "physics_believable": true,
+          "note": "Objects obey weight and momentum \u2014 no mechanical teleport motion"
+        },
+        "fx": {
+          "particle_effects": [
+            "ambient_particles",
+            "dust_motes"
+          ],
+          "lighting_movement": [
+            "key_soft",
+            "fill_bounce",
+            "rim_soft"
+          ],
+          "lighting_mood": "soft_daylight",
+          "physics_animation": false,
+          "grounded_not_floating": true
+        },
+        "motion_graphics": {
+          "enabled": true,
+          "items": [
+            {
+              "type": "callout",
+              "reason": "Hook/payoff title \u2014 emotion=clarity",
+              "story_role": "explain_not_decorate",
+              "forbid_floating_icon": true
+            }
+          ],
+          "animate_into_scene": true,
+          "integrated_not_powerpoint": true
+        },
+        "ui": {
+          "enabled": true,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "lighting_continuity",
+          "avoid_crossfade": true,
+          "motivated": true,
+          "reason": "VFD directed transition=lighting_continuity",
+          "source": "virtual_film_director"
+        },
+        "muted_comprehension": "Show The Founder traveler through visible motion so purpose=payoff reads without audio.",
+        "visual_moment": "Muted viewer still understands: Choose discipline. Choose purpose. Choose wisely.",
+        "audience_understanding": "Deliver the takeaway on The Founder traveler",
+        "active_motion_classes": [
+          "camera_movement",
+          "character_animation",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement",
+          "ui_animation",
+          "motion_graphics"
+        ],
+        "passes_motion_minimum": true,
+        "immersion": {
+          "questions": {
+            "world_feels_alive": true,
+            "camera_has_purpose": true,
+            "environments_believable": true,
+            "characters_feel_alive": true,
+            "visuals_engaging_muted": true,
+            "every_frame_advances_story": true,
+            "rejects_abstract_geometry": true
+          },
+          "passed": true,
+          "failing": [],
+          "re_render_required": false
+        },
+        "quality_rejects": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ]
+      },
+      "motion_effect": "cinematic_push_in",
+      "true_motion_camera": "push_in",
+      "true_motion_performance": "walk_explain",
+      "world_palette": "ocean",
+      "lighting_mood": "soft_daylight",
+      "emotion": "clarity",
+      "shot_size": "hero_low_angle",
+      "immersion": {
+        "questions": {
+          "world_feels_alive": true,
+          "camera_has_purpose": true,
+          "environments_believable": true,
+          "characters_feel_alive": true,
+          "visuals_engaging_muted": true,
+          "every_frame_advances_story": true,
+          "rejects_abstract_geometry": true
+        },
+        "passed": true,
+        "failing": [],
+        "re_render_required": false
+      },
+      "excellence": {
+        "scene_motion": 100.0,
+        "camera_quality": 100.0,
+        "character_realism": 96.0,
+        "world_activity": 98.0,
+        "pacing": 90.0,
+        "visual_storytelling": 100.0,
+        "transition_quality": 93.0,
+        "cinematic_feel": 98.5,
+        "immersion": 100.0,
+        "intentionality": 96.0,
+        "environmental_believability": 95.0,
+        "performance_life": 90.0
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "scene_number": 1,
+      "purpose": "hook",
+      "length_sec": 3.0,
+      "narration": "Life is unforgiving.",
+      "subject": "The Founder traveler",
+      "approved_asset_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/env_fork_dawn.png",
+      "vfd_shot": {
+        "scene_number": 1,
+        "scene_id": "scene_00",
+        "scene_objective": "Advance hook: establish audience investment in The Founder traveler",
+        "primary_subject": "The Founder traveler",
+        "camera_angle": "eye_level",
+        "lens_style": "portrait_50mm",
+        "shot_size": "establishing_wide",
+        "shot_language": "reveal_shot",
+        "camera_movement": "reveal_shot",
+        "camera_begin": "Open in a framed read of The Founder traveler matching reveal_shot",
+        "camera_end": "Land on the beat's cinematic payoff for emotion=curiosity",
+        "character_blocking": null,
+        "environmental_motion": {
+          "environment": "generic",
+          "ambient_motion": [
+            "ambient_life",
+            "cloud_drift",
+            "light_drift"
+          ],
+          "dramatic_response": [],
+          "continues_without_narration": true,
+          "purpose": "Support story emotion \u2014 never decorative noise"
+        },
+        "lighting_mood": "soft_daylight",
+        "color_palette": {
+          "harmony": "natural",
+          "temperature": "neutral",
+          "subject_isolation": true
+        },
+        "transition_style": "hard_cut",
+        "emotional_beat": "curiosity",
+        "emotion": "curiosity",
+        "educational_goal": "Life is unforgiving.",
+        "estimated_duration_sec": 3.0,
+        "animation_priority": [
+          "environment_life",
+          "camera_storytelling",
+          "character_performance",
+          "object_physics"
+        ],
+        "director_questions": {
+          "answers": {
+            "why_scene_exists": "Advance hook: establish audience investment in The Founder traveler",
+            "what_viewer_learns": "Life is unforgiving.",
+            "emotion_to_feel": "curiosity",
+            "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+            "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+            "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+            "camera_begin": "Open in a framed read of The Founder traveler matching reveal_shot",
+            "camera_end": "Land on the beat's cinematic payoff for emotion=curiosity",
+            "cinematic_payoff": "Muted viewer still understands: Life is unforgiving."
+          },
+          "ready": true,
+          "unclear": [],
+          "scene_ready": true
+        },
+        "cinematic_payoff": "Muted viewer still understands: Life is unforgiving.",
+        "muted_story_test": "Muted viewer still understands: Life is unforgiving.",
+        "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+        "animation_seed": {
+          "true_motion_camera": "reveal",
+          "ae_camera_move": "reveal",
+          "shot_size": "establishing_wide",
+          "emotion": "curiosity",
+          "lighting_mood": "soft_daylight",
+          "forbid_purposeless_drift": true,
+          "narrative_purpose": "Advance hook: establish audience investment in The Founder traveler"
+        },
+        "composition": {
+          "rule_of_thirds": true,
+          "leading_lines": false,
+          "negative_space": false,
+          "fg_mg_bg": true,
+          "subject_hierarchy": "clear"
+        },
+        "ready": true
+      },
+      "shot_language": "reveal_shot",
+      "director_emotion": "curiosity",
+      "emotional_beat": "curiosity",
+      "lighting_mood": "soft_daylight",
+      "shot_size": "establishing_wide",
+      "camera_angle": "eye_level",
+      "lens_style": "portrait_50mm",
+      "transition_style": "hard_cut",
+      "scene_objective": "Advance hook: establish audience investment in The Founder traveler",
+      "cinematic_payoff": "Muted viewer still understands: Life is unforgiving.",
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "vfd_seed": {
+        "true_motion_camera": "reveal",
+        "ae_camera_move": "reveal",
+        "shot_size": "establishing_wide",
+        "emotion": "curiosity",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Advance hook: establish audience investment in The Founder traveler"
+      },
+      "animation_camera": "reveal",
+      "vfd_camera_move": "reveal",
+      "camera_narrative_purpose": "Advance hook: establish audience investment in The Founder traveler",
+      "emotion": "curiosity",
+      "studio_character_id": "CHAR-FOUNDER-TRAVELER",
+      "studio_character_name": "The Founder",
+      "studio_performance": "walk_explain",
+      "studio_expression": "wide_eyes",
+      "studio_gestures": [
+        "point_spark",
+        "tilt_head",
+        "hand_hologram"
+      ],
+      "character_plate_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/char_founder_traveler.png",
+      "approved_character_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Every_Decision_Matters_20260715T235207Z/plates/char-nova_plate.png",
+      "studio_location_id": "LOC-FUTURE-CITY",
+      "environment_life": [
+        "traffic_band",
+        "sign_scroll",
+        "drone_pass"
+      ],
+      "environment_details": [
+        "billboards",
+        "planters",
+        "chargers"
+      ],
+      "palette_hint": "night",
+      "camera_motion": "reveal",
+      "animation_effect": "cinematic_push_in",
+      "effect": {
+        "effect": "cinematic_push_in",
+        "zoom": {
+          "start": 1.0,
+          "end": 1.12
+        },
+        "pan": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "intensity": 82,
+        "easing": "ease_in_out",
+        "source": "animation_engine_v2",
+        "narrative_purpose": "Advance hook: establish audience investment in The Founder traveler",
+        "emotion": "curiosity"
+      },
+      "ken_burns": false,
+      "forbid_static": true,
+      "max_still_sec": 2.0,
+      "transition_out": "hard_cut",
+      "animation_layers": {
+        "cinematic": {
+          "version": "2.0",
+          "emotion": "curiosity",
+          "lighting_mood": "soft_daylight",
+          "shot_size": "establishing_wide",
+          "audience_understanding": "Advance hook: establish audience investment in The Founder traveler",
+          "visual_moment": "Muted viewer still understands: Life is unforgiving.",
+          "color_intent": {
+            "harmony": "natural",
+            "hierarchy": "subject_isolation",
+            "avoid": [
+              "oversaturated_randomness",
+              "neon_scatter"
+            ]
+          },
+          "forbid": [
+            "static_background",
+            "lifeless_environment",
+            "placeholder_asset",
+            "floating_icon",
+            "abstract_geometry",
+            "meaningless_movement",
+            "purposeless_camera_drift",
+            "poor_composition",
+            "empty_frame",
+            "low_resolution_asset",
+            "repeated_mechanical_loop",
+            "powerpoint_motion"
+          ],
+          "topic_hint": "Every Decision Matters",
+          "shot_language": "reveal_shot",
+          "directed_by_vfd": true
+        },
+        "camera": {
+          "camera_move": "reveal",
+          "motion_effect": "cinematic_push_in",
+          "true_motion_camera": "reveal",
+          "depth_of_field": false,
+          "rack_focus": false,
+          "shot_size": "establishing_wide",
+          "emotion": "curiosity",
+          "speed": "energized",
+          "narrative_purpose": "Advance hook: establish audience investment in The Founder traveler",
+          "storytelling_reason": "Advance hook: establish audience investment in The Founder traveler",
+          "forbid_static_lock": true,
+          "forbid_purposeless_drift": true,
+          "motivated": true,
+          "source": "virtual_film_director"
+        },
+        "character": {
+          "enabled": true,
+          "characters": [
+            {
+              "name": "The Founder",
+              "kind": "studio_host",
+              "id": "CHAR-FOUNDER-TRAVELER",
+              "source": "character_world_studio"
+            }
+          ],
+          "actions": [
+            "blink",
+            "head_turn",
+            "walk",
+            "gesture_while_speaking",
+            "point_at_object",
+            "emotional_react",
+            "lip_sync",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "anticipation",
+            "follow_through",
+            "cloth_sway"
+          ],
+          "micro_performance": [
+            "idle_breathe",
+            "soft_blink",
+            "gaze_shift",
+            "posture_settle",
+            "hand_settle",
+            "weight_transfer"
+          ],
+          "performance": "walk_explain",
+          "emotion": "curiosity",
+          "expression": "wide_eyes",
+          "gestures": [
+            "point_spark",
+            "tilt_head",
+            "hand_hologram"
+          ],
+          "character_plate_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/char_founder_traveler.png",
+          "alive_requirements": [
+            "blink_naturally",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "head_turn",
+            "gesture_while_speaking",
+            "facial_expression",
+            "anticipation_and_follow_through",
+            "visual_consistency_across_scenes",
+            "no_mannequin_behavior",
+            "no_abstract_placeholder"
+          ],
+          "primary": {
+            "name": "The Founder",
+            "id": "CHAR-FOUNDER-TRAVELER"
+          },
+          "forbid_mannequin": true,
+          "forbid_stick_placeholder": true,
+          "source": "character_world_studio"
+        },
+        "world": {
+          "enabled": true,
+          "environment": "generic",
+          "animations": [
+            "ambient_particles",
+            "subtle_parallax",
+            "light_drift",
+            "cloud_drift",
+            "wind"
+          ],
+          "depth_layers": {
+            "foreground": [
+              "near_parallax_band"
+            ],
+            "midground": [
+              "subject_stage"
+            ],
+            "background": [
+              "sky_or_wall",
+              "ambient_drift"
+            ]
+          },
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "allow_abstract_geometry": false,
+          "continues_without_narration": true,
+          "lighting_mood": "soft_daylight",
+          "atmospheric_perspective": true,
+          "volumetric_lighting": false,
+          "palette_hint": "ocean",
+          "environmental_storytelling": true
+        },
+        "object": {
+          "enabled": false,
+          "objects": [],
+          "physics_believable": true,
+          "note": "Objects obey weight and momentum \u2014 no mechanical teleport motion"
+        },
+        "fx": {
+          "particle_effects": [
+            "ambient_particles",
+            "dust_motes"
+          ],
+          "lighting_movement": [
+            "key_soft",
+            "fill_bounce",
+            "rim_soft"
+          ],
+          "lighting_mood": "soft_daylight",
+          "physics_animation": false,
+          "grounded_not_floating": true
+        },
+        "motion_graphics": {
+          "enabled": true,
+          "items": [
+            {
+              "type": "callout",
+              "reason": "Hook/payoff title \u2014 emotion=curiosity",
+              "story_role": "explain_not_decorate",
+              "forbid_floating_icon": true
+            }
+          ],
+          "animate_into_scene": true,
+          "integrated_not_powerpoint": true
+        },
+        "ui": {
+          "enabled": true,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "hard_cut",
+          "avoid_crossfade": true,
+          "motivated": true,
+          "reason": "VFD directed transition=hard_cut",
+          "source": "virtual_film_director"
+        },
+        "muted_comprehension": "Show The Founder traveler through visible motion so purpose=hook reads without audio.",
+        "visual_moment": "Muted viewer still understands: Life is unforgiving.",
+        "audience_understanding": "Advance hook: establish audience investment in The Founder traveler",
+        "active_motion_classes": [
+          "camera_movement",
+          "character_animation",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement",
+          "ui_animation",
+          "motion_graphics"
+        ],
+        "passes_motion_minimum": true,
+        "immersion": {
+          "questions": {
+            "world_feels_alive": true,
+            "camera_has_purpose": true,
+            "environments_believable": true,
+            "characters_feel_alive": true,
+            "visuals_engaging_muted": true,
+            "every_frame_advances_story": true,
+            "rejects_abstract_geometry": true
+          },
+          "passed": true,
+          "failing": [],
+          "re_render_required": false
+        },
+        "quality_rejects": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ]
+      },
+      "cinematic_intent": {
+        "version": "2.0",
+        "emotion": "curiosity",
+        "lighting_mood": "soft_daylight",
+        "shot_size": "establishing_wide",
+        "audience_understanding": "Advance hook: establish audience investment in The Founder traveler",
+        "visual_moment": "Muted viewer still understands: Life is unforgiving.",
+        "color_intent": {
+          "harmony": "natural",
+          "hierarchy": "subject_isolation",
+          "avoid": [
+            "oversaturated_randomness",
+            "neon_scatter"
+          ]
+        },
+        "forbid": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ],
+        "topic_hint": "Every Decision Matters",
+        "shot_language": "reveal_shot",
+        "directed_by_vfd": true
+      },
+      "true_motion": {
+        "camera": "reveal",
+        "performance": "walk_explain",
+        "palette": "night",
+        "lighting_mood": "soft_daylight",
+        "shot_size": "establishing_wide",
+        "emotion": "curiosity",
+        "depth_layers": {
+          "foreground": [
+            "near_parallax_band"
+          ],
+          "midground": [
+            "subject_stage"
+          ],
+          "background": [
+            "sky_or_wall",
+            "ambient_drift"
+          ]
+        },
+        "character_plate_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/char_founder_traveler.png",
+        "studio_character_id": "CHAR-FOUNDER-TRAVELER",
+        "living_background": true,
+        "cinematic_v2": true,
+        "not_ken_burns_only": true,
+        "forbid_abstract_geometry": true,
+        "forbid_placeholder_characters": true
+      },
+      "environment_fx": [
+        "ambient_particles",
+        "subtle_parallax",
+        "light_drift",
+        "cloud_drift",
+        "wind"
+      ],
+      "motion_graphics_plan": [
+        {
+          "type": "callout",
+          "reason": "Hook/payoff title \u2014 emotion=curiosity",
+          "story_role": "explain_not_decorate",
+          "forbid_floating_icon": true
+        }
+      ],
+      "immersion": {
+        "questions": {
+          "world_feels_alive": true,
+          "camera_has_purpose": true,
+          "environments_believable": true,
+          "characters_feel_alive": true,
+          "visuals_engaging_muted": true,
+          "every_frame_advances_story": true,
+          "rejects_abstract_geometry": true
+        },
+        "passed": true,
+        "failing": [],
+        "re_render_required": false
+      }
+    },
+    {
+      "scene_number": 2,
+      "purpose": "story_beat",
+      "length_sec": 3.5,
+      "narration": "Every decision leaves a mark. Every step shapes your future.",
+      "subject": "The Founder traveler",
+      "approved_asset_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/env_path_awakening.png",
+      "vfd_shot": {
+        "scene_number": 2,
+        "scene_id": "scene_01",
+        "scene_objective": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+        "primary_subject": "The Founder traveler",
+        "camera_angle": "eye_level",
+        "lens_style": "portrait_50mm",
+        "shot_size": "dynamic_medium",
+        "shot_language": "medium_dialogue",
+        "camera_movement": "medium_dialogue",
+        "camera_begin": "Open in a framed read of The Founder traveler matching medium_dialogue",
+        "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+        "character_blocking": null,
+        "environmental_motion": {
+          "environment": "generic",
+          "ambient_motion": [
+            "ambient_life",
+            "cloud_drift",
+            "light_drift"
+          ],
+          "dramatic_response": [],
+          "continues_without_narration": true,
+          "purpose": "Support story emotion \u2014 never decorative noise"
+        },
+        "lighting_mood": "soft_daylight",
+        "color_palette": {
+          "harmony": "natural",
+          "temperature": "neutral",
+          "subject_isolation": true
+        },
+        "transition_style": "lighting_continuity",
+        "emotional_beat": "explanation",
+        "emotion": "focus",
+        "educational_goal": "Every decision leaves a mark. Every step shapes your future.",
+        "estimated_duration_sec": 3.5,
+        "animation_priority": [
+          "environment_life",
+          "camera_storytelling",
+          "character_performance",
+          "object_physics"
+        ],
+        "director_questions": {
+          "answers": {
+            "why_scene_exists": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+            "what_viewer_learns": "Every decision leaves a mark. Every step shapes your future.",
+            "emotion_to_feel": "focus",
+            "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+            "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+            "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+            "camera_begin": "Open in a framed read of The Founder traveler matching medium_dialogue",
+            "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+            "cinematic_payoff": "Muted viewer still understands: Every decision leaves a mark. Every step shapes your future."
+          },
+          "ready": true,
+          "unclear": [],
+          "scene_ready": true
+        },
+        "cinematic_payoff": "Muted viewer still understands: Every decision leaves a mark. Every step shapes your future.",
+        "muted_story_test": "Muted viewer still understands: Every decision leaves a mark. Every step shapes your future.",
+        "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+        "animation_seed": {
+          "true_motion_camera": "push_in",
+          "ae_camera_move": "slow_cinematic_push",
+          "shot_size": "dynamic_medium",
+          "emotion": "focus",
+          "lighting_mood": "soft_daylight",
+          "forbid_purposeless_drift": true,
+          "narrative_purpose": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future."
+        },
+        "composition": {
+          "rule_of_thirds": true,
+          "leading_lines": false,
+          "negative_space": false,
+          "fg_mg_bg": true,
+          "subject_hierarchy": "clear"
+        },
+        "ready": true
+      },
+      "shot_language": "medium_dialogue",
+      "director_emotion": "focus",
+      "emotional_beat": "explanation",
+      "lighting_mood": "soft_daylight",
+      "shot_size": "dynamic_medium",
+      "camera_angle": "eye_level",
+      "lens_style": "portrait_50mm",
+      "transition_style": "lighting_continuity",
+      "scene_objective": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+      "cinematic_payoff": "Muted viewer still understands: Every decision leaves a mark. Every step shapes your future.",
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "vfd_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "slow_cinematic_push",
+        "shot_size": "dynamic_medium",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future."
+      },
+      "animation_camera": "push_in",
+      "vfd_camera_move": "slow_cinematic_push",
+      "camera_narrative_purpose": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+      "emotion": "focus",
+      "studio_character_id": "CHAR-FOUNDER-TRAVELER",
+      "studio_character_name": "The Founder",
+      "studio_performance": "point_teach",
+      "studio_expression": "curious",
+      "studio_gestures": [
+        "open_palm_teach",
+        "hologram_pinch",
+        "clipboard_point",
+        "scanner_sweep",
+        "heart_hand"
+      ],
+      "character_plate_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/char_founder_traveler.png",
+      "approved_character_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Every_Decision_Matters_20260715T235207Z/plates/char-0001_plate.png",
+      "studio_location_id": "LOC-FUTURE-CITY",
+      "environment_life": [
+        "traffic_band",
+        "sign_scroll",
+        "drone_pass"
+      ],
+      "environment_details": [
+        "billboards",
+        "planters",
+        "chargers"
+      ],
+      "palette_hint": "night",
+      "camera_motion": "slow cinematic push",
+      "animation_effect": "cinematic_push_in",
+      "effect": {
+        "effect": "cinematic_push_in",
+        "zoom": {
+          "start": 1.0,
+          "end": 1.12
+        },
+        "pan": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "intensity": 72,
+        "easing": "ease_in_out",
+        "source": "animation_engine_v2",
+        "narrative_purpose": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+        "emotion": "focus"
+      },
+      "ken_burns": false,
+      "forbid_static": true,
+      "max_still_sec": 2.0,
+      "transition_out": "lighting_continuity",
+      "animation_layers": {
+        "cinematic": {
+          "version": "2.0",
+          "emotion": "focus",
+          "lighting_mood": "soft_daylight",
+          "shot_size": "dynamic_medium",
+          "audience_understanding": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+          "visual_moment": "Muted viewer still understands: Every decision leaves a mark. Every step shapes your future.",
+          "color_intent": {
+            "harmony": "natural",
+            "hierarchy": "subject_isolation",
+            "avoid": [
+              "oversaturated_randomness",
+              "neon_scatter"
+            ]
+          },
+          "forbid": [
+            "static_background",
+            "lifeless_environment",
+            "placeholder_asset",
+            "floating_icon",
+            "abstract_geometry",
+            "meaningless_movement",
+            "purposeless_camera_drift",
+            "poor_composition",
+            "empty_frame",
+            "low_resolution_asset",
+            "repeated_mechanical_loop",
+            "powerpoint_motion"
+          ],
+          "topic_hint": "Every Decision Matters",
+          "shot_language": "medium_dialogue",
+          "directed_by_vfd": true
+        },
+        "camera": {
+          "camera_move": "slow_cinematic_push",
+          "motion_effect": "cinematic_push_in",
+          "true_motion_camera": "push_in",
+          "depth_of_field": true,
+          "rack_focus": false,
+          "shot_size": "dynamic_medium",
+          "emotion": "focus",
+          "speed": "measured",
+          "narrative_purpose": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+          "storytelling_reason": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+          "forbid_static_lock": true,
+          "forbid_purposeless_drift": true,
+          "motivated": true,
+          "source": "virtual_film_director"
+        },
+        "character": {
+          "enabled": true,
+          "characters": [
+            {
+              "name": "The Founder",
+              "kind": "studio_host",
+              "id": "CHAR-FOUNDER-TRAVELER",
+              "source": "character_world_studio"
+            }
+          ],
+          "actions": [
+            "blink",
+            "head_turn",
+            "walk",
+            "gesture_while_speaking",
+            "point_at_object",
+            "emotional_react",
+            "lip_sync",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "anticipation",
+            "follow_through",
+            "cloth_sway"
+          ],
+          "micro_performance": [
+            "idle_breathe",
+            "soft_blink",
+            "gaze_shift",
+            "posture_settle",
+            "hand_settle",
+            "weight_transfer"
+          ],
+          "performance": "point_teach",
+          "emotion": "focus",
+          "expression": "curious",
+          "gestures": [
+            "open_palm_teach",
+            "hologram_pinch",
+            "clipboard_point",
+            "scanner_sweep",
+            "heart_hand"
+          ],
+          "character_plate_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/char_founder_traveler.png",
+          "alive_requirements": [
+            "blink_naturally",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "head_turn",
+            "gesture_while_speaking",
+            "facial_expression",
+            "anticipation_and_follow_through",
+            "visual_consistency_across_scenes",
+            "no_mannequin_behavior",
+            "no_abstract_placeholder"
+          ],
+          "primary": {
+            "name": "The Founder",
+            "id": "CHAR-FOUNDER-TRAVELER"
+          },
+          "forbid_mannequin": true,
+          "forbid_stick_placeholder": true,
+          "source": "character_world_studio"
+        },
+        "world": {
+          "enabled": true,
+          "environment": "generic",
+          "animations": [
+            "ambient_particles",
+            "subtle_parallax",
+            "light_drift",
+            "cloud_drift",
+            "wind"
+          ],
+          "depth_layers": {
+            "foreground": [
+              "near_parallax_band"
+            ],
+            "midground": [
+              "subject_stage"
+            ],
+            "background": [
+              "sky_or_wall",
+              "ambient_drift"
+            ]
+          },
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "allow_abstract_geometry": false,
+          "continues_without_narration": true,
+          "lighting_mood": "soft_daylight",
+          "atmospheric_perspective": true,
+          "volumetric_lighting": false,
+          "palette_hint": "ocean",
+          "environmental_storytelling": true
+        },
+        "object": {
+          "enabled": false,
+          "objects": [],
+          "physics_believable": true,
+          "note": "Objects obey weight and momentum \u2014 no mechanical teleport motion"
+        },
+        "fx": {
+          "particle_effects": [
+            "ambient_particles",
+            "dust_motes"
+          ],
+          "lighting_movement": [
+            "key_soft",
+            "fill_bounce",
+            "rim_soft"
+          ],
+          "lighting_mood": "soft_daylight",
+          "physics_animation": false,
+          "grounded_not_floating": true
+        },
+        "motion_graphics": {
+          "enabled": false,
+          "items": [],
+          "animate_into_scene": true,
+          "integrated_not_powerpoint": true
+        },
+        "ui": {
+          "enabled": false,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "lighting_continuity",
+          "avoid_crossfade": true,
+          "motivated": true,
+          "reason": "VFD directed transition=lighting_continuity",
+          "source": "virtual_film_director"
+        },
+        "muted_comprehension": "Show The Founder traveler through visible motion so purpose=story_beat reads without audio.",
+        "visual_moment": "Muted viewer still understands: Every decision leaves a mark. Every step shapes your future.",
+        "audience_understanding": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+        "active_motion_classes": [
+          "camera_movement",
+          "character_animation",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement"
+        ],
+        "passes_motion_minimum": true,
+        "immersion": {
+          "questions": {
+            "world_feels_alive": true,
+            "camera_has_purpose": true,
+            "environments_believable": true,
+            "characters_feel_alive": true,
+            "visuals_engaging_muted": true,
+            "every_frame_advances_story": true,
+            "rejects_abstract_geometry": true
+          },
+          "passed": true,
+          "failing": [],
+          "re_render_required": false
+        },
+        "quality_rejects": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ]
+      },
+      "cinematic_intent": {
+        "version": "2.0",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "shot_size": "dynamic_medium",
+        "audience_understanding": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+        "visual_moment": "Muted viewer still understands: Every decision leaves a mark. Every step shapes your future.",
+        "color_intent": {
+          "harmony": "natural",
+          "hierarchy": "subject_isolation",
+          "avoid": [
+            "oversaturated_randomness",
+            "neon_scatter"
+          ]
+        },
+        "forbid": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ],
+        "topic_hint": "Every Decision Matters",
+        "shot_language": "medium_dialogue",
+        "directed_by_vfd": true
+      },
+      "true_motion": {
+        "camera": "push_in",
+        "performance": "point_teach",
+        "palette": "night",
+        "lighting_mood": "soft_daylight",
+        "shot_size": "dynamic_medium",
+        "emotion": "focus",
+        "depth_layers": {
+          "foreground": [
+            "near_parallax_band"
+          ],
+          "midground": [
+            "subject_stage"
+          ],
+          "background": [
+            "sky_or_wall",
+            "ambient_drift"
+          ]
+        },
+        "character_plate_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/char_founder_traveler.png",
+        "studio_character_id": "CHAR-FOUNDER-TRAVELER",
+        "living_background": true,
+        "cinematic_v2": true,
+        "not_ken_burns_only": true,
+        "forbid_abstract_geometry": true,
+        "forbid_placeholder_characters": true
+      },
+      "environment_fx": [
+        "ambient_particles",
+        "subtle_parallax",
+        "light_drift",
+        "cloud_drift",
+        "wind"
+      ],
+      "motion_graphics_plan": [],
+      "immersion": {
+        "questions": {
+          "world_feels_alive": true,
+          "camera_has_purpose": true,
+          "environments_believable": true,
+          "characters_feel_alive": true,
+          "visuals_engaging_muted": true,
+          "every_frame_advances_story": true,
+          "rejects_abstract_geometry": true
+        },
+        "passed": true,
+        "failing": [],
+        "re_render_required": false
+      }
+    },
+    {
+      "scene_number": 3,
+      "purpose": "story_beat",
+      "length_sec": 3.5,
+      "narration": "Small choices become great destinies.",
+      "subject": "The Founder traveler",
+      "approved_asset_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/env_living_forest.png",
+      "vfd_shot": {
+        "scene_number": 3,
+        "scene_id": "scene_02",
+        "scene_objective": "Demonstrate the idea so learning sticks: Small choices become great destinies.",
+        "primary_subject": "The Founder traveler",
+        "camera_angle": "eye_level",
+        "lens_style": "portrait_50mm",
+        "shot_size": "dynamic_medium",
+        "shot_language": "push_in",
+        "camera_movement": "push_in",
+        "camera_begin": "Open in a framed read of The Founder traveler matching push_in",
+        "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+        "character_blocking": null,
+        "environmental_motion": {
+          "environment": "generic",
+          "ambient_motion": [
+            "ambient_life",
+            "cloud_drift",
+            "light_drift"
+          ],
+          "dramatic_response": [],
+          "continues_without_narration": true,
+          "purpose": "Support story emotion \u2014 never decorative noise"
+        },
+        "lighting_mood": "soft_daylight",
+        "color_palette": {
+          "harmony": "natural",
+          "temperature": "neutral",
+          "subject_isolation": true
+        },
+        "transition_style": "lighting_continuity",
+        "emotional_beat": "wonder",
+        "emotion": "focus",
+        "educational_goal": "Small choices become great destinies.",
+        "estimated_duration_sec": 3.5,
+        "animation_priority": [
+          "environment_life",
+          "camera_storytelling",
+          "character_performance",
+          "object_physics"
+        ],
+        "director_questions": {
+          "answers": {
+            "why_scene_exists": "Demonstrate the idea so learning sticks: Small choices become great destinies.",
+            "what_viewer_learns": "Small choices become great destinies.",
+            "emotion_to_feel": "focus",
+            "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+            "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+            "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+            "camera_begin": "Open in a framed read of The Founder traveler matching push_in",
+            "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+            "cinematic_payoff": "Muted viewer still understands: Small choices become great destinies."
+          },
+          "ready": true,
+          "unclear": [],
+          "scene_ready": true
+        },
+        "cinematic_payoff": "Muted viewer still understands: Small choices become great destinies.",
+        "muted_story_test": "Muted viewer still understands: Small choices become great destinies.",
+        "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+        "animation_seed": {
+          "true_motion_camera": "push_in",
+          "ae_camera_move": "slow_cinematic_push",
+          "shot_size": "dynamic_medium",
+          "emotion": "focus",
+          "lighting_mood": "soft_daylight",
+          "forbid_purposeless_drift": true,
+          "narrative_purpose": "Demonstrate the idea so learning sticks: Small choices become great destinies."
+        },
+        "composition": {
+          "rule_of_thirds": true,
+          "leading_lines": false,
+          "negative_space": false,
+          "fg_mg_bg": true,
+          "subject_hierarchy": "clear"
+        },
+        "ready": true
+      },
+      "shot_language": "push_in",
+      "director_emotion": "focus",
+      "emotional_beat": "wonder",
+      "lighting_mood": "soft_daylight",
+      "shot_size": "dynamic_medium",
+      "camera_angle": "eye_level",
+      "lens_style": "portrait_50mm",
+      "transition_style": "lighting_continuity",
+      "scene_objective": "Demonstrate the idea so learning sticks: Small choices become great destinies.",
+      "cinematic_payoff": "Muted viewer still understands: Small choices become great destinies.",
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "vfd_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "slow_cinematic_push",
+        "shot_size": "dynamic_medium",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: Small choices become great destinies."
+      },
+      "animation_camera": "parallax",
+      "vfd_camera_move": "slow_cinematic_push",
+      "camera_narrative_purpose": "Demonstrate the idea so learning sticks: Small choices become great destinies.",
+      "emotion": "focus",
+      "studio_character_id": "CHAR-FOUNDER-TRAVELER",
+      "studio_character_name": "The Founder",
+      "studio_performance": "walk_explain",
+      "studio_expression": "puzzled",
+      "studio_gestures": [
+        "point_spark",
+        "tilt_head",
+        "hand_hologram"
+      ],
+      "character_plate_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/char_founder_traveler.png",
+      "approved_character_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Every_Decision_Matters_20260715T235207Z/plates/char-nova_plate.png",
+      "studio_location_id": "LOC-FUTURE-CITY",
+      "environment_life": [
+        "traffic_band",
+        "sign_scroll",
+        "drone_pass"
+      ],
+      "environment_details": [
+        "billboards",
+        "planters",
+        "chargers"
+      ],
+      "palette_hint": "night",
+      "camera_motion": "parallax",
+      "animation_effect": "pan_right",
+      "effect": {
+        "effect": "pan_right",
+        "zoom": {
+          "start": 1.0,
+          "end": 1.12
+        },
+        "pan": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "intensity": 72,
+        "easing": "ease_in_out",
+        "source": "animation_engine_v2",
+        "narrative_purpose": "Advance comprehension of the beat while holding focus",
+        "emotion": "focus"
+      },
+      "ken_burns": false,
+      "forbid_static": true,
+      "max_still_sec": 2.0,
+      "transition_out": "lighting_continuity",
+      "animation_layers": {
+        "cinematic": {
+          "version": "2.0",
+          "emotion": "focus",
+          "lighting_mood": "soft_daylight",
+          "shot_size": "dynamic_medium",
+          "audience_understanding": "Demonstrate the idea so learning sticks: Small choices become great destinies.",
+          "visual_moment": "Muted viewer still understands: Small choices become great destinies.",
+          "color_intent": {
+            "harmony": "natural",
+            "hierarchy": "subject_isolation",
+            "avoid": [
+              "oversaturated_randomness",
+              "neon_scatter"
+            ]
+          },
+          "forbid": [
+            "static_background",
+            "lifeless_environment",
+            "placeholder_asset",
+            "floating_icon",
+            "abstract_geometry",
+            "meaningless_movement",
+            "purposeless_camera_drift",
+            "poor_composition",
+            "empty_frame",
+            "low_resolution_asset",
+            "repeated_mechanical_loop",
+            "powerpoint_motion"
+          ],
+          "topic_hint": "Every Decision Matters",
+          "shot_language": "push_in",
+          "directed_by_vfd": true
+        },
+        "camera": {
+          "camera_move": "parallax",
+          "motion_effect": "pan_right",
+          "true_motion_camera": "parallax",
+          "depth_of_field": false,
+          "rack_focus": false,
+          "shot_size": "dynamic_medium",
+          "emotion": "focus",
+          "speed": "measured",
+          "narrative_purpose": "Advance comprehension of the beat while holding focus",
+          "storytelling_reason": "Advance comprehension of the beat while holding focus",
+          "forbid_static_lock": true,
+          "forbid_purposeless_drift": true,
+          "motivated": true,
+          "source": "animation_engine_v2"
+        },
+        "character": {
+          "enabled": true,
+          "characters": [
+            {
+              "name": "The Founder",
+              "kind": "studio_host",
+              "id": "CHAR-FOUNDER-TRAVELER",
+              "source": "character_world_studio"
+            }
+          ],
+          "actions": [
+            "blink",
+            "head_turn",
+            "walk",
+            "gesture_while_speaking",
+            "point_at_object",
+            "emotional_react",
+            "lip_sync",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "anticipation",
+            "follow_through",
+            "cloth_sway"
+          ],
+          "micro_performance": [
+            "idle_breathe",
+            "soft_blink",
+            "gaze_shift",
+            "posture_settle",
+            "hand_settle",
+            "weight_transfer"
+          ],
+          "performance": "walk_explain",
+          "emotion": "focus",
+          "expression": "puzzled",
+          "gestures": [
+            "point_spark",
+            "tilt_head",
+            "hand_hologram"
+          ],
+          "character_plate_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/char_founder_traveler.png",
+          "alive_requirements": [
+            "blink_naturally",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "head_turn",
+            "gesture_while_speaking",
+            "facial_expression",
+            "anticipation_and_follow_through",
+            "visual_consistency_across_scenes",
+            "no_mannequin_behavior",
+            "no_abstract_placeholder"
+          ],
+          "primary": {
+            "name": "The Founder",
+            "id": "CHAR-FOUNDER-TRAVELER"
+          },
+          "forbid_mannequin": true,
+          "forbid_stick_placeholder": true,
+          "source": "character_world_studio"
+        },
+        "world": {
+          "enabled": true,
+          "environment": "generic",
+          "animations": [
+            "ambient_particles",
+            "subtle_parallax",
+            "light_drift",
+            "cloud_drift",
+            "wind"
+          ],
+          "depth_layers": {
+            "foreground": [
+              "near_parallax_band"
+            ],
+            "midground": [
+              "subject_stage"
+            ],
+            "background": [
+              "sky_or_wall",
+              "ambient_drift"
+            ]
+          },
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "allow_abstract_geometry": false,
+          "continues_without_narration": true,
+          "lighting_mood": "soft_daylight",
+          "atmospheric_perspective": true,
+          "volumetric_lighting": false,
+          "palette_hint": "ocean",
+          "environmental_storytelling": true
+        },
+        "object": {
+          "enabled": false,
+          "objects": [],
+          "physics_believable": true,
+          "note": "Objects obey weight and momentum \u2014 no mechanical teleport motion"
+        },
+        "fx": {
+          "particle_effects": [
+            "ambient_particles",
+            "dust_motes"
+          ],
+          "lighting_movement": [
+            "key_soft",
+            "fill_bounce",
+            "rim_soft"
+          ],
+          "lighting_mood": "soft_daylight",
+          "physics_animation": false,
+          "grounded_not_floating": true
+        },
+        "motion_graphics": {
+          "enabled": false,
+          "items": [],
+          "animate_into_scene": true,
+          "integrated_not_powerpoint": true
+        },
+        "ui": {
+          "enabled": false,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "lighting_continuity",
+          "avoid_crossfade": true,
+          "motivated": true,
+          "reason": "VFD directed transition=lighting_continuity",
+          "source": "virtual_film_director"
+        },
+        "muted_comprehension": "Show The Founder traveler through visible motion so purpose=story_beat reads without audio.",
+        "visual_moment": "Muted viewer still understands: Small choices become great destinies.",
+        "audience_understanding": "Demonstrate the idea so learning sticks: Small choices become great destinies.",
+        "active_motion_classes": [
+          "camera_movement",
+          "character_animation",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement"
+        ],
+        "passes_motion_minimum": true,
+        "immersion": {
+          "questions": {
+            "world_feels_alive": true,
+            "camera_has_purpose": true,
+            "environments_believable": true,
+            "characters_feel_alive": true,
+            "visuals_engaging_muted": true,
+            "every_frame_advances_story": true,
+            "rejects_abstract_geometry": true
+          },
+          "passed": true,
+          "failing": [],
+          "re_render_required": false
+        },
+        "quality_rejects": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ]
+      },
+      "cinematic_intent": {
+        "version": "2.0",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "shot_size": "dynamic_medium",
+        "audience_understanding": "Demonstrate the idea so learning sticks: Small choices become great destinies.",
+        "visual_moment": "Muted viewer still understands: Small choices become great destinies.",
+        "color_intent": {
+          "harmony": "natural",
+          "hierarchy": "subject_isolation",
+          "avoid": [
+            "oversaturated_randomness",
+            "neon_scatter"
+          ]
+        },
+        "forbid": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ],
+        "topic_hint": "Every Decision Matters",
+        "shot_language": "push_in",
+        "directed_by_vfd": true
+      },
+      "true_motion": {
+        "camera": "parallax",
+        "performance": "walk_explain",
+        "palette": "night",
+        "lighting_mood": "soft_daylight",
+        "shot_size": "dynamic_medium",
+        "emotion": "focus",
+        "depth_layers": {
+          "foreground": [
+            "near_parallax_band"
+          ],
+          "midground": [
+            "subject_stage"
+          ],
+          "background": [
+            "sky_or_wall",
+            "ambient_drift"
+          ]
+        },
+        "character_plate_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/char_founder_traveler.png",
+        "studio_character_id": "CHAR-FOUNDER-TRAVELER",
+        "living_background": true,
+        "cinematic_v2": true,
+        "not_ken_burns_only": true,
+        "forbid_abstract_geometry": true,
+        "forbid_placeholder_characters": true
+      },
+      "environment_fx": [
+        "ambient_particles",
+        "subtle_parallax",
+        "light_drift",
+        "cloud_drift",
+        "wind"
+      ],
+      "motion_graphics_plan": [],
+      "immersion": {
+        "questions": {
+          "world_feels_alive": true,
+          "camera_has_purpose": true,
+          "environments_believable": true,
+          "characters_feel_alive": true,
+          "visuals_engaging_muted": true,
+          "every_frame_advances_story": true,
+          "rejects_abstract_geometry": true
+        },
+        "passed": true,
+        "failing": [],
+        "re_render_required": false
+      }
+    },
+    {
+      "scene_number": 4,
+      "purpose": "payoff",
+      "length_sec": 5.0,
+      "narration": "Choose discipline. Choose purpose. Choose wisely.",
+      "subject": "The Founder traveler",
+      "approved_asset_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/env_mountain_overlook.png",
+      "vfd_shot": {
+        "scene_number": 4,
+        "scene_id": "scene_03",
+        "scene_objective": "Deliver the takeaway on The Founder traveler",
+        "primary_subject": "The Founder traveler",
+        "camera_angle": "low_angle_hero",
+        "lens_style": "anamorphic_feel",
+        "shot_size": "hero_low_angle",
+        "shot_language": "hero_shot",
+        "camera_movement": "hero_shot",
+        "camera_begin": "Open in a framed read of The Founder traveler matching hero_shot",
+        "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+        "character_blocking": null,
+        "environmental_motion": {
+          "environment": "generic",
+          "ambient_motion": [
+            "ambient_life",
+            "cloud_drift",
+            "light_drift"
+          ],
+          "dramatic_response": [
+            "wind_increase",
+            "lighting_shift",
+            "fog_clear_on_reveal"
+          ],
+          "continues_without_narration": true,
+          "purpose": "Support story emotion \u2014 never decorative noise"
+        },
+        "lighting_mood": "soft_daylight",
+        "color_palette": {
+          "harmony": "natural",
+          "temperature": "neutral",
+          "subject_isolation": true
+        },
+        "transition_style": "lighting_continuity",
+        "emotional_beat": "payoff",
+        "emotion": "clarity",
+        "educational_goal": "Choose discipline. Choose purpose. Choose wisely.",
+        "estimated_duration_sec": 5.0,
+        "animation_priority": [
+          "environment_life",
+          "camera_storytelling",
+          "character_performance",
+          "object_physics"
+        ],
+        "director_questions": {
+          "answers": {
+            "why_scene_exists": "Deliver the takeaway on The Founder traveler",
+            "what_viewer_learns": "Choose discipline. Choose purpose. Choose wisely.",
+            "emotion_to_feel": "clarity",
+            "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+            "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+            "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+            "camera_begin": "Open in a framed read of The Founder traveler matching hero_shot",
+            "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+            "cinematic_payoff": "Muted viewer still understands: Choose discipline. Choose purpose. Choose wisely."
+          },
+          "ready": true,
+          "unclear": [],
+          "scene_ready": true
+        },
+        "cinematic_payoff": "Muted viewer still understands: Choose discipline. Choose purpose. Choose wisely.",
+        "muted_story_test": "Muted viewer still understands: Choose discipline. Choose purpose. Choose wisely.",
+        "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+        "animation_seed": {
+          "true_motion_camera": "push_in",
+          "ae_camera_move": "hero_low_angle_push",
+          "shot_size": "hero_low_angle",
+          "emotion": "clarity",
+          "lighting_mood": "soft_daylight",
+          "forbid_purposeless_drift": true,
+          "narrative_purpose": "Deliver the takeaway on The Founder traveler"
+        },
+        "composition": {
+          "rule_of_thirds": true,
+          "leading_lines": false,
+          "negative_space": true,
+          "fg_mg_bg": true,
+          "subject_hierarchy": "clear"
+        },
+        "ready": true
+      },
+      "shot_language": "hero_shot",
+      "director_emotion": "clarity",
+      "emotional_beat": "payoff",
+      "lighting_mood": "soft_daylight",
+      "shot_size": "hero_low_angle",
+      "camera_angle": "low_angle_hero",
+      "lens_style": "anamorphic_feel",
+      "transition_style": "lighting_continuity",
+      "scene_objective": "Deliver the takeaway on The Founder traveler",
+      "cinematic_payoff": "Muted viewer still understands: Choose discipline. Choose purpose. Choose wisely.",
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "vfd_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "hero_low_angle_push",
+        "shot_size": "hero_low_angle",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Deliver the takeaway on The Founder traveler"
+      },
+      "animation_camera": "push_in",
+      "vfd_camera_move": "hero_low_angle_push",
+      "camera_narrative_purpose": "Deliver the takeaway on The Founder traveler",
+      "emotion": "clarity",
+      "studio_character_id": "CHAR-FOUNDER-TRAVELER",
+      "studio_character_name": "The Founder",
+      "studio_performance": "walk_explain",
+      "studio_expression": "awe",
+      "studio_gestures": [
+        "point_spark",
+        "tilt_head",
+        "hand_hologram"
+      ],
+      "character_plate_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/char_founder_traveler.png",
+      "approved_character_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/character_world_studio/packages/Every_Decision_Matters_20260715T235207Z/plates/char-nova_plate.png",
+      "studio_location_id": "LOC-FUTURE-CITY",
+      "environment_life": [
+        "traffic_band",
+        "sign_scroll",
+        "drone_pass"
+      ],
+      "environment_details": [
+        "billboards",
+        "planters",
+        "chargers"
+      ],
+      "palette_hint": "night",
+      "camera_motion": "hero low angle push",
+      "animation_effect": "cinematic_push_in",
+      "effect": {
+        "effect": "cinematic_push_in",
+        "zoom": {
+          "start": 1.0,
+          "end": 1.12
+        },
+        "pan": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "intensity": 70,
+        "easing": "ease_in_out",
+        "source": "animation_engine_v2",
+        "narrative_purpose": "Deliver the takeaway on The Founder traveler",
+        "emotion": "clarity"
+      },
+      "ken_burns": false,
+      "forbid_static": true,
+      "max_still_sec": 2.0,
+      "transition_out": "lighting_continuity",
+      "animation_layers": {
+        "cinematic": {
+          "version": "2.0",
+          "emotion": "clarity",
+          "lighting_mood": "soft_daylight",
+          "shot_size": "hero_low_angle",
+          "audience_understanding": "Deliver the takeaway on The Founder traveler",
+          "visual_moment": "Muted viewer still understands: Choose discipline. Choose purpose. Choose wisely.",
+          "color_intent": {
+            "harmony": "natural",
+            "hierarchy": "subject_isolation",
+            "avoid": [
+              "oversaturated_randomness",
+              "neon_scatter"
+            ]
+          },
+          "forbid": [
+            "static_background",
+            "lifeless_environment",
+            "placeholder_asset",
+            "floating_icon",
+            "abstract_geometry",
+            "meaningless_movement",
+            "purposeless_camera_drift",
+            "poor_composition",
+            "empty_frame",
+            "low_resolution_asset",
+            "repeated_mechanical_loop",
+            "powerpoint_motion"
+          ],
+          "topic_hint": "Every Decision Matters",
+          "shot_language": "hero_shot",
+          "directed_by_vfd": true
+        },
+        "camera": {
+          "camera_move": "hero_low_angle_push",
+          "motion_effect": "cinematic_push_in",
+          "true_motion_camera": "push_in",
+          "depth_of_field": false,
+          "rack_focus": false,
+          "shot_size": "hero_low_angle",
+          "emotion": "clarity",
+          "speed": "resolved",
+          "narrative_purpose": "Deliver the takeaway on The Founder traveler",
+          "storytelling_reason": "Deliver the takeaway on The Founder traveler",
+          "forbid_static_lock": true,
+          "forbid_purposeless_drift": true,
+          "motivated": true,
+          "source": "virtual_film_director"
+        },
+        "character": {
+          "enabled": true,
+          "characters": [
+            {
+              "name": "The Founder",
+              "kind": "studio_host",
+              "id": "CHAR-FOUNDER-TRAVELER",
+              "source": "character_world_studio"
+            }
+          ],
+          "actions": [
+            "blink",
+            "head_turn",
+            "walk",
+            "gesture_while_speaking",
+            "point_at_object",
+            "emotional_react",
+            "lip_sync",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "anticipation",
+            "follow_through",
+            "cloth_sway"
+          ],
+          "micro_performance": [
+            "idle_breathe",
+            "soft_blink",
+            "gaze_shift",
+            "posture_settle",
+            "hand_settle",
+            "weight_transfer"
+          ],
+          "performance": "walk_explain",
+          "emotion": "clarity",
+          "expression": "awe",
+          "gestures": [
+            "point_spark",
+            "tilt_head",
+            "hand_hologram"
+          ],
+          "character_plate_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/char_founder_traveler.png",
+          "alive_requirements": [
+            "blink_naturally",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "head_turn",
+            "gesture_while_speaking",
+            "facial_expression",
+            "anticipation_and_follow_through",
+            "visual_consistency_across_scenes",
+            "no_mannequin_behavior",
+            "no_abstract_placeholder"
+          ],
+          "primary": {
+            "name": "The Founder",
+            "id": "CHAR-FOUNDER-TRAVELER"
+          },
+          "forbid_mannequin": true,
+          "forbid_stick_placeholder": true,
+          "source": "character_world_studio"
+        },
+        "world": {
+          "enabled": true,
+          "environment": "generic",
+          "animations": [
+            "ambient_particles",
+            "subtle_parallax",
+            "light_drift",
+            "cloud_drift",
+            "wind"
+          ],
+          "depth_layers": {
+            "foreground": [
+              "near_parallax_band"
+            ],
+            "midground": [
+              "subject_stage"
+            ],
+            "background": [
+              "sky_or_wall",
+              "ambient_drift"
+            ]
+          },
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "allow_abstract_geometry": false,
+          "continues_without_narration": true,
+          "lighting_mood": "soft_daylight",
+          "atmospheric_perspective": true,
+          "volumetric_lighting": false,
+          "palette_hint": "ocean",
+          "environmental_storytelling": true
+        },
+        "object": {
+          "enabled": false,
+          "objects": [],
+          "physics_believable": true,
+          "note": "Objects obey weight and momentum \u2014 no mechanical teleport motion"
+        },
+        "fx": {
+          "particle_effects": [
+            "ambient_particles",
+            "dust_motes"
+          ],
+          "lighting_movement": [
+            "key_soft",
+            "fill_bounce",
+            "rim_soft"
+          ],
+          "lighting_mood": "soft_daylight",
+          "physics_animation": false,
+          "grounded_not_floating": true
+        },
+        "motion_graphics": {
+          "enabled": true,
+          "items": [
+            {
+              "type": "callout",
+              "reason": "Hook/payoff title \u2014 emotion=clarity",
+              "story_role": "explain_not_decorate",
+              "forbid_floating_icon": true
+            }
+          ],
+          "animate_into_scene": true,
+          "integrated_not_powerpoint": true
+        },
+        "ui": {
+          "enabled": true,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "lighting_continuity",
+          "avoid_crossfade": true,
+          "motivated": true,
+          "reason": "VFD directed transition=lighting_continuity",
+          "source": "virtual_film_director"
+        },
+        "muted_comprehension": "Show The Founder traveler through visible motion so purpose=payoff reads without audio.",
+        "visual_moment": "Muted viewer still understands: Choose discipline. Choose purpose. Choose wisely.",
+        "audience_understanding": "Deliver the takeaway on The Founder traveler",
+        "active_motion_classes": [
+          "camera_movement",
+          "character_animation",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement",
+          "ui_animation",
+          "motion_graphics"
+        ],
+        "passes_motion_minimum": true,
+        "immersion": {
+          "questions": {
+            "world_feels_alive": true,
+            "camera_has_purpose": true,
+            "environments_believable": true,
+            "characters_feel_alive": true,
+            "visuals_engaging_muted": true,
+            "every_frame_advances_story": true,
+            "rejects_abstract_geometry": true
+          },
+          "passed": true,
+          "failing": [],
+          "re_render_required": false
+        },
+        "quality_rejects": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ]
+      },
+      "cinematic_intent": {
+        "version": "2.0",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "shot_size": "hero_low_angle",
+        "audience_understanding": "Deliver the takeaway on The Founder traveler",
+        "visual_moment": "Muted viewer still understands: Choose discipline. Choose purpose. Choose wisely.",
+        "color_intent": {
+          "harmony": "natural",
+          "hierarchy": "subject_isolation",
+          "avoid": [
+            "oversaturated_randomness",
+            "neon_scatter"
+          ]
+        },
+        "forbid": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ],
+        "topic_hint": "Every Decision Matters",
+        "shot_language": "hero_shot",
+        "directed_by_vfd": true
+      },
+      "true_motion": {
+        "camera": "push_in",
+        "performance": "walk_explain",
+        "palette": "night",
+        "lighting_mood": "soft_daylight",
+        "shot_size": "hero_low_angle",
+        "emotion": "clarity",
+        "depth_layers": {
+          "foreground": [
+            "near_parallax_band"
+          ],
+          "midground": [
+            "subject_stage"
+          ],
+          "background": [
+            "sky_or_wall",
+            "ambient_drift"
+          ]
+        },
+        "character_plate_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Videos/Inspiration/Generational Inspiration/Every Decision Matters/Assets/char_founder_traveler.png",
+        "studio_character_id": "CHAR-FOUNDER-TRAVELER",
+        "living_background": true,
+        "cinematic_v2": true,
+        "not_ken_burns_only": true,
+        "forbid_abstract_geometry": true,
+        "forbid_placeholder_characters": true
+      },
+      "environment_fx": [
+        "ambient_particles",
+        "subtle_parallax",
+        "light_drift",
+        "cloud_drift",
+        "wind"
+      ],
+      "motion_graphics_plan": [
+        {
+          "type": "callout",
+          "reason": "Hook/payoff title \u2014 emotion=clarity",
+          "story_role": "explain_not_decorate",
+          "forbid_floating_icon": true
+        }
+      ],
+      "immersion": {
+        "questions": {
+          "world_feels_alive": true,
+          "camera_has_purpose": true,
+          "environments_believable": true,
+          "characters_feel_alive": true,
+          "visuals_engaging_muted": true,
+          "every_frame_advances_story": true,
+          "rejects_abstract_geometry": true
+        },
+        "passed": true,
+        "failing": [],
+        "re_render_required": false
+      }
+    }
+  ],
+  "true_motion_plan": [
+    {
+      "scene_number": 1,
+      "camera": "reveal",
+      "performance": "walk_explain",
+      "palette": "ocean",
+      "lighting_mood": "soft_daylight",
+      "emotion": "curiosity",
+      "shot_size": "establishing_wide",
+      "duration_sec": 3.0,
+      "cinematic_v2": true,
+      "not_ken_burns_only": true
+    },
+    {
+      "scene_number": 2,
+      "camera": "push_in",
+      "performance": "point_teach",
+      "palette": "ocean",
+      "lighting_mood": "soft_daylight",
+      "emotion": "focus",
+      "shot_size": "dynamic_medium",
+      "duration_sec": 3.5,
+      "cinematic_v2": true,
+      "not_ken_burns_only": true
+    },
+    {
+      "scene_number": 3,
+      "camera": "parallax",
+      "performance": "walk_explain",
+      "palette": "ocean",
+      "lighting_mood": "soft_daylight",
+      "emotion": "focus",
+      "shot_size": "dynamic_medium",
+      "duration_sec": 3.5,
+      "cinematic_v2": true,
+      "not_ken_burns_only": true
+    },
+    {
+      "scene_number": 4,
+      "camera": "push_in",
+      "performance": "walk_explain",
+      "palette": "ocean",
+      "lighting_mood": "soft_daylight",
+      "emotion": "clarity",
+      "shot_size": "hero_low_angle",
+      "duration_sec": 5.0,
+      "cinematic_v2": true,
+      "not_ken_burns_only": true
+    }
+  ],
+  "animation_excellence": {
+    "animation_excellence_score": 96.2,
+    "dimensions": {
+      "scene_motion": 100.0,
+      "camera_quality": 100.0,
+      "character_realism": 96.0,
+      "world_activity": 98.0,
+      "pacing": 90.0,
+      "visual_storytelling": 98.0,
+      "transition_quality": 93.0,
+      "cinematic_feel": 98.5,
+      "immersion": 100.0,
+      "intentionality": 96.0,
+      "environmental_believability": 95.0,
+      "performance_life": 90.0
+    },
+    "passed": true,
+    "target": 78.0,
+    "engine_version": "2.0.0"
+  },
+  "quality_gate": {
+    "passed": true,
+    "decision": "APPROVE",
+    "failures": [],
+    "warnings": [],
+    "engine_version": "2.0.0",
+    "re_render_scenes": [],
+    "metrics": {
+      "static_runtime_pct": 0.0,
+      "locked_camera_scenes": 0,
+      "frozen_background_scenes": 0,
+      "empty_motion_scenes": 0,
+      "purposeless_camera_scenes": 0,
+      "immersion_failures": 0,
+      "immersion_pass_ratio": 1.0,
+      "abstract_world_scenes": 0,
+      "unique_camera_moves": 4,
+      "scene_count": 4,
+      "runtime_sec": 15.0
+    }
+  },
+  "philosophy": {
+    "objective": "cinematic_educational_short_films",
+    "not": [
+      "more_animation_for_its_own_sake",
+      "powerpoint_motion",
+      "purposeless_drift"
+    ],
+    "every_frame_intentional": true,
+    "muted_story_test": true,
+    "immersion_test": true
+  },
+  "standards": {
+    "every_scene_must_move": true,
+    "every_move_must_have_purpose": true,
+    "max_still_without_motion_sec": 2.0,
+    "target_scene_duration_sec": [
+      2.0,
+      4.0
+    ],
+    "no_crossfade_default": true,
+    "no_frozen_backgrounds": true,
+    "no_abstract_geometry_worlds": true,
+    "no_mannequin_characters": true,
+    "re_render_immersion_failures": true
+  },
+  "summary": {
+    "animation_excellence_score": 96.2,
+    "quality_gate": "APPROVE",
+    "unique_cameras": 4,
+    "character_scenes": 4,
+    "motion_graphics_scenes": 2,
+    "immersion_pass_ratio": 1.0,
+    "re_render_scenes": [],
+    "emotions": [
+      "clarity",
+      "curiosity",
+      "focus"
+    ]
+  },
+  "upstream_cinematography_handoff": {
+    "provider": null,
+    "scene_count": 0
+  },
+  "upstream_virtual_film_director": {
+    "present": true,
+    "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/Every_Decision_Matters_20260715T235207Z/VIRTUAL_FILM_DIRECTOR_PACKAGE.json",
+    "director_decision": "APPROVE",
+    "honored_seeds": 4
+  }
+}

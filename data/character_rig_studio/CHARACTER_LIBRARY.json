@@ -1,0 +1,96 @@
+{
+  "version": "1.0.0",
+  "universe": "Generational",
+  "actors": [
+    {
+      "character_id": "DOCTOR_001",
+      "canonical_name": "The Doctor",
+      "role": "canonical_medical_educator",
+      "status": "permanent",
+      "continuity_version": "1.2.0",
+      "asset_version": "production_v1",
+      "asset_origin": "doctor_001_production_v1",
+      "studio_asset_path": "data/studio_assets/DOCTOR_001/",
+      "production_asset_path": "data/studio_assets/DOCTOR_001/CHARACTER_PRODUCTION/",
+      "runtime_asset_path": "data/studio_assets/DOCTOR_001/RUNTIME/DOCTOR_001_SKINNED.blend",
+      "character_rig_ref": "data/studio_assets/DOCTOR_001/CHARACTER_RIG/CHARACTER_RIG_PACKAGE.json",
+      "validation_ok": true,
+      "is_gold_standard": true,
+      "do_not_regenerate": true
+    },
+    {
+      "character_id": "FOUNDER_001",
+      "canonical_name": "The Founder",
+      "role": "inspiration_traveler_host",
+      "status": "permanent",
+      "continuity_version": "1.0.0",
+      "studio_asset_path": "data/studio_assets/FOUNDER_001/",
+      "character_rig_ref": "data/studio_assets/FOUNDER_001/CHARACTER_RIG/CHARACTER_RIG_PACKAGE.json",
+      "validation_ok": true,
+      "is_gold_standard": false,
+      "do_not_regenerate": true
+    },
+    {
+      "character_id": "TEACHER_001",
+      "canonical_name": "The Teacher",
+      "role": "classroom_educator",
+      "status": "reserved",
+      "continuity_version": "0.1.0",
+      "studio_asset_path": "data/studio_assets/TEACHER_001/",
+      "character_rig_ref": "data/studio_assets/TEACHER_001/CHARACTER_RIG/CHARACTER_RIG_PACKAGE.json",
+      "validation_ok": true,
+      "is_gold_standard": false,
+      "do_not_regenerate": true
+    },
+    {
+      "character_id": "HISTORIAN_001",
+      "canonical_name": "The Historian",
+      "role": "history_storyteller",
+      "status": "reserved",
+      "continuity_version": "0.1.0",
+      "studio_asset_path": "data/studio_assets/HISTORIAN_001/",
+      "character_rig_ref": "data/studio_assets/HISTORIAN_001/CHARACTER_RIG/CHARACTER_RIG_PACKAGE.json",
+      "validation_ok": true,
+      "is_gold_standard": false,
+      "do_not_regenerate": true
+    },
+    {
+      "character_id": "ENGINEER_001",
+      "canonical_name": "The Engineer",
+      "role": "systems_and_invention_host",
+      "status": "reserved",
+      "continuity_version": "0.1.0",
+      "studio_asset_path": "data/studio_assets/ENGINEER_001/",
+      "character_rig_ref": "data/studio_assets/ENGINEER_001/CHARACTER_RIG/CHARACTER_RIG_PACKAGE.json",
+      "validation_ok": true,
+      "is_gold_standard": false,
+      "do_not_regenerate": true
+    },
+    {
+      "character_id": "NURSE_001",
+      "canonical_name": "The Nurse",
+      "role": "care_partner_educator",
+      "status": "reserved",
+      "continuity_version": "0.1.0",
+      "studio_asset_path": "data/studio_assets/NURSE_001/",
+      "character_rig_ref": "data/studio_assets/NURSE_001/CHARACTER_RIG/CHARACTER_RIG_PACKAGE.json",
+      "validation_ok": true,
+      "is_gold_standard": false,
+      "do_not_regenerate": true
+    },
+    {
+      "character_id": "PATIENT_CHILD_001",
+      "canonical_name": "Patient Child",
+      "role": "pediatric_patient_presence",
+      "status": "reserved",
+      "continuity_version": "0.1.0",
+      "studio_asset_path": "data/studio_assets/PATIENT_CHILD_001/",
+      "character_rig_ref": "data/studio_assets/PATIENT_CHILD_001/CHARACTER_RIG/CHARACTER_RIG_PACKAGE.json",
+      "validation_ok": true,
+      "is_gold_standard": false,
+      "do_not_regenerate": true
+    }
+  ],
+  "rule": "Characters are permanent digital actors \u2014 never regenerated per scene.",
+  "count": 7
+}

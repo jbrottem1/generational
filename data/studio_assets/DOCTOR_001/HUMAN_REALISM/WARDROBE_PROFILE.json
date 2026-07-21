@@ -1,0 +1,42 @@
+{
+  "character_id": "DOCTOR_001",
+  "simulate_as_fabric": true,
+  "responds_to": [
+    "walk",
+    "run",
+    "arm_move",
+    "sit",
+    "wind",
+    "gravity",
+    "contact",
+    "turn",
+    "stop"
+  ],
+  "fold_zones": [
+    "shoulders",
+    "elbows",
+    "waist",
+    "hips",
+    "knees",
+    "wrists",
+    "seated_contact"
+  ],
+  "forbid": [
+    "frozen_fabric",
+    "fabric_leads_body",
+    "identical_motion_all_garments",
+    "limb_clipping"
+  ],
+  "default_material": {
+    "thickness": "medium",
+    "weight": "medium",
+    "stiffness": "controlled_drape",
+    "stretch": "low",
+    "damping": "medium",
+    "wind_response": "moderate"
+  },
+  "default_outfit": "primary_outfit",
+  "signature": "white_medical_chassis_coat",
+  "material_type": "medical_coat_polymer_weave",
+  "wind_response": "moderate_hem_and_sleeve"
+}

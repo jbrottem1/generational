@@ -1,0 +1,33 @@
+{
+  "department_id": "visual_storytelling",
+  "display_name": "Visual Storytelling",
+  "mission": "Depth, life, and atmosphere without changing execution engines",
+  "scene_layers": [
+    "foreground",
+    "midground",
+    "background"
+  ],
+  "requires": [
+    "depth",
+    "parallax",
+    "ambient_movement",
+    "weather",
+    "dust",
+    "fog",
+    "volumetric_light",
+    "moving_screens",
+    "people_or_life_cues"
+  ],
+  "assets": [
+    {
+      "asset_id": "STORY_LAB_ATMOSPHERE_001",
+      "world_id": "GENERATIONAL_MEDICAL_LAB",
+      "effects": [
+        "screen_pulse",
+        "window_parallax",
+        "soft_fog",
+        "dust_motes"
+      ]
+    }
+  ]
+}

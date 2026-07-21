@@ -1,0 +1,363 @@
+{
+  "schema_version": "1.0",
+  "production_id": "ops_3ae42c76ff",
+  "brief": {
+    "topic": "Why Antibiotics Fail Against Viruses",
+    "platform": "youtube_shorts",
+    "length_sec": 45,
+    "style": "educational",
+    "narrator": "professor",
+    "voice": "professor",
+    "quality_target": 98.0,
+    "constraints": {
+      "audience": "medicine learners",
+      "publishing_enabled": false,
+      "v1_launch_pilot": true,
+      "category": "medicine"
+    },
+    "command": "",
+    "raw": {}
+  },
+  "current_stage": "export",
+  "current_agent": "export_and_validate",
+  "overall_progress_pct": 100,
+  "elapsed_ms": 13480,
+  "eta_ms": null,
+  "overall_status": "degraded_no_export",
+  "pipeline_health": "healthy",
+  "warnings": [
+    "animation unavailable \u2014 continued",
+    "mp4_not_yet_materialized \u2014 metadata package exported for smoke/plan modes"
+  ],
+  "retry_count": 0,
+  "quality_scores": {
+    "research": 85.0,
+    "psychology": 90.0,
+    "studio_director": 95.0,
+    "script_generator": 95.0,
+    "scene_builder": 100.0,
+    "media_collection": 100.0,
+    "animation": 100.0,
+    "voice_generation": 100.0,
+    "music_sound": 90.0,
+    "captions": 95.0,
+    "rendering": 100.0,
+    "viewer_retention": 100.0,
+    "optimization_lab": 100.0,
+    "quality_assurance": 100.0,
+    "seo_package": 100.0,
+    "export": 45.0
+  },
+  "current_files": [
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Antibiotics_Fail_Against_Viruses_ops_3ae42c76ff",
+    "data/renders/d16980e0d3e9/why-your-antibiotics-are-useless-against-colds_1080x1920.mp4",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Antibiotics_Fail_Against_Viruses_ops_3ae42c76ff/captions.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Antibiotics_Fail_Against_Viruses_ops_3ae42c76ff/description.txt",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Antibiotics_Fail_Against_Viruses_ops_3ae42c76ff/seo_metadata.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Antibiotics_Fail_Against_Viruses_ops_3ae42c76ff/thumbnail_plan.json"
+  ],
+  "started_at": "2026-07-14T04:58:40.586591+00:00",
+  "finished_at": "2026-07-14T04:58:54.067262+00:00",
+  "stages": [
+    {
+      "key": "research",
+      "label": "Research Engine",
+      "engines": [
+        "research",
+        "ideation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:58:40.587094+00:00",
+      "end_time": "2026-07-14T04:58:44.178182+00:00",
+      "duration_ms": 3589,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 85.0,
+      "output_files": [],
+      "current_agent": "research"
+    },
+    {
+      "key": "psychology",
+      "label": "Psychology Engine",
+      "engines": [
+        "psychology"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:58:44.178746+00:00",
+      "end_time": "2026-07-14T04:58:44.197087+00:00",
+      "duration_ms": 17,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 90.0,
+      "output_files": [],
+      "current_agent": "psychology"
+    },
+    {
+      "key": "studio_director",
+      "label": "AI Studio Director",
+      "engines": [
+        "ai_director"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:58:44.197741+00:00",
+      "end_time": "2026-07-14T04:58:44.222140+00:00",
+      "duration_ms": 23,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "ai_director"
+    },
+    {
+      "key": "script_generator",
+      "label": "Script Generator",
+      "engines": [
+        "script_generation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:58:44.222620+00:00",
+      "end_time": "2026-07-14T04:58:47.656633+00:00",
+      "duration_ms": 3433,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "script_generation"
+    },
+    {
+      "key": "scene_builder",
+      "label": "Scene Builder",
+      "engines": [
+        "visual_intelligence",
+        "scene_planning",
+        "visual_planning"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:58:47.657204+00:00",
+      "end_time": "2026-07-14T04:58:47.700055+00:00",
+      "duration_ms": 42,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "visual_intelligence"
+    },
+    {
+      "key": "media_collection",
+      "label": "Media Collection",
+      "engines": [
+        "evidence_intelligence",
+        "image",
+        "asset_manager"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:58:47.700663+00:00",
+      "end_time": "2026-07-14T04:58:48.658012+00:00",
+      "duration_ms": 955,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "evidence_intelligence"
+    },
+    {
+      "key": "animation",
+      "label": "Animation / Motion Graphics",
+      "engines": [
+        "cinematography",
+        "animation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:58:48.661227+00:00",
+      "end_time": "2026-07-14T04:58:48.664170+00:00",
+      "duration_ms": 2,
+      "warnings": [
+        "animation unavailable \u2014 continued"
+      ],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "cinematography"
+    },
+    {
+      "key": "voice_generation",
+      "label": "Voice Generation",
+      "engines": [
+        "voice_audio",
+        "narration",
+        "voice"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:58:48.664651+00:00",
+      "end_time": "2026-07-14T04:58:51.641750+00:00",
+      "duration_ms": 2975,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "voice_audio"
+    },
+    {
+      "key": "music_sound",
+      "label": "Music & Sound Design",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:58:51.642505+00:00",
+      "end_time": "2026-07-14T04:58:51.643044+00:00",
+      "duration_ms": 0,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 90.0,
+      "output_files": [],
+      "current_agent": "apply_music_direction"
+    },
+    {
+      "key": "captions",
+      "label": "Captions",
+      "engines": [
+        "subtitle"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:58:51.643505+00:00",
+      "end_time": "2026-07-14T04:58:51.644863+00:00",
+      "duration_ms": 0,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "subtitle"
+    },
+    {
+      "key": "rendering",
+      "label": "Rendering",
+      "engines": [
+        "timeline",
+        "render_package",
+        "studio_render",
+        "video"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:58:51.645335+00:00",
+      "end_time": "2026-07-14T04:58:51.651960+00:00",
+      "duration_ms": 3,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "timeline"
+    },
+    {
+      "key": "viewer_retention",
+      "label": "Viewer Retention Analysis",
+      "engines": [
+        "viewer_retention"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:58:51.652454+00:00",
+      "end_time": "2026-07-14T04:58:51.654628+00:00",
+      "duration_ms": 1,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "viewer_retention"
+    },
+    {
+      "key": "optimization_lab",
+      "label": "Optimization Lab",
+      "engines": [
+        "optimization_lab"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:58:51.655108+00:00",
+      "end_time": "2026-07-14T04:58:51.742518+00:00",
+      "duration_ms": 86,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "optimization_lab"
+    },
+    {
+      "key": "quality_assurance",
+      "label": "Quality Assurance",
+      "engines": [
+        "quality",
+        "production_qa"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:58:51.743099+00:00",
+      "end_time": "2026-07-14T04:58:51.746212+00:00",
+      "duration_ms": 2,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "quality"
+    },
+    {
+      "key": "seo_package",
+      "label": "SEO Package",
+      "engines": [
+        "seo",
+        "seo_optimization"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:58:51.746680+00:00",
+      "end_time": "2026-07-14T04:58:54.063913+00:00",
+      "duration_ms": 2316,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "seo"
+    },
+    {
+      "key": "export",
+      "label": "Export",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:58:54.064875+00:00",
+      "end_time": "2026-07-14T04:58:54.066809+00:00",
+      "duration_ms": 1,
+      "warnings": [
+        "mp4_not_yet_materialized \u2014 metadata package exported for smoke/plan modes"
+      ],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 45.0,
+      "output_files": [
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Antibiotics_Fail_Against_Viruses_ops_3ae42c76ff",
+        "data/renders/d16980e0d3e9/why-your-antibiotics-are-useless-against-colds_1080x1920.mp4",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Antibiotics_Fail_Against_Viruses_ops_3ae42c76ff/captions.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Antibiotics_Fail_Against_Viruses_ops_3ae42c76ff/description.txt",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Antibiotics_Fail_Against_Viruses_ops_3ae42c76ff/seo_metadata.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Antibiotics_Fail_Against_Viruses_ops_3ae42c76ff/thumbnail_plan.json"
+      ],
+      "current_agent": "export_and_validate"
+    }
+  ],
+  "updated_at": "2026-07-14T04:58:54.092380+00:00",
+  "validation_score": 93.4,
+  "video_exists": false,
+  "deliverable_ok": false,
+  "success": false,
+  "notes": [
+    "success_requires_mp4 \u2014 pipeline continued but deliverable missing"
+  ]
+}

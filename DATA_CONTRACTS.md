@@ -347,6 +347,25 @@ See `AI_STUDIO_DIRECTOR.md` and `AI_DIRECTOR.md`.
 
 ---
 
+## 8.0b production_pipeline (Integration Layer) — `services/production_pipeline/`
+
+Thin orchestration that connects completed agents into:
+
+Research → Psychology → Studio Director → Script → Scenes → Media → Voice →
+Assembly → QC → Export.
+
+**Context keys** (additive): `production_pipeline_summary`,
+`pipeline_status`, `production_pipeline_result`.
+
+**On-disk status** (additive): `data/productions/{production_id}/PIPELINE_STATUS.json`
+with `current_stage`, `elapsed_ms`, success/failure, `output_location`,
+`validation_score`, and per-stage rows.
+
+Does not own package slots; bridges only sync aliases (`candidates` /
+`ideas` / `selected_ideas` / `approved_content`). See `PIPELINE.md`.
+
+---
+
 ## 8.1 asset_package (Agent 14) — `services/asset_generation/`
 
 The Universal Asset Generation Engine (`asset_generation` engine,

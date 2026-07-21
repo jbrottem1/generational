@@ -1,0 +1,134 @@
+{
+  "character_id": "CHAR-PIPER",
+  "primary_storytelling_tool": "eyes",
+  "regions": [
+    "forehead",
+    "inner_brow",
+    "outer_brow",
+    "upper_eyelids",
+    "lower_eyelids",
+    "eye_direction",
+    "cheek_raise",
+    "nose_wrinkle",
+    "nostril_flare",
+    "upper_lip",
+    "lower_lip",
+    "lip_corners",
+    "jaw",
+    "chin",
+    "neck_tension"
+  ],
+  "rules": [
+    "micro_expressions_before_dialogue",
+    "emotion_begins_in_eyes",
+    "blend_never_instant_switch",
+    "animate_more_than_mouth"
+  ],
+  "recipes": {
+    "happiness": {
+      "lip_corner_raise": 0.55,
+      "cheek_raise": 0.45,
+      "eye_soften": 0.5
+    },
+    "concern": {
+      "inner_brow_raise": 0.4,
+      "eyelid_tighten": 0.25,
+      "lips_press": 0.2
+    },
+    "surprise": {
+      "brow_lift": 0.65,
+      "eyelids_widen": 0.7,
+      "jaw_drop": 0.35
+    },
+    "determination": {
+      "brow_lower": 0.25,
+      "eye_focus": 0.7,
+      "jaw_stabilize": 0.4
+    },
+    "compassion": {
+      "eye_soften": 0.65,
+      "inner_brow_raise": 0.2,
+      "lip_corner_raise": 0.2
+    },
+    "curiosity": {
+      "brow_inner_raise": 0.35,
+      "head_tilt": 0.25,
+      "eye_focus": 0.6
+    },
+    "teaching": {
+      "eye_focus": 0.55,
+      "lip_corner_raise": 0.18,
+      "brow_neutral_engaged": 0.3
+    }
+  },
+  "eyes": {
+    "behaviors": [
+      "target_based_focus",
+      "smooth_saccades",
+      "anticipatory_glances",
+      "natural_fixation",
+      "head_eye_coordination",
+      "pupil_light_response",
+      "convergence_near",
+      "subtle_asymmetry"
+    ],
+    "rules": [
+      "eyes_move_before_head",
+      "no_lifeless_stare",
+      "no_camera_stare_unless_addressing_audience",
+      "gaze_responds_to_speakers_and_sound"
+    ],
+    "reject": [
+      "permanently_centered_eyes",
+      "cross_eyed_errors",
+      "eyes_outside_sockets",
+      "mechanical_sync_blink_only"
+    ]
+  },
+  "blinking": {
+    "interval_mode": "irregular",
+    "increase_on": [
+      "stress",
+      "transition",
+      "cognitive_load"
+    ],
+    "reduce_on": [
+      "intense_focus"
+    ],
+    "double_blink_on": [
+      "refocus",
+      "emotional_stress"
+    ],
+    "forbid_fixed_robotic_interval": true
+  },
+  "breathing_defaults": {
+    "rest": {
+      "rate_bpm": 12,
+      "distribution": "chest_and_abdomen"
+    },
+    "speak": {
+      "rate_bpm": 14,
+      "distribution": "phrase_coordinated"
+    },
+    "walk": {
+      "rate_bpm": 16,
+      "distribution": "moderate"
+    },
+    "run": {
+      "rate_bpm": 28,
+      "distribution": "rapid_chest"
+    },
+    "fear": {
+      "rate_bpm": 22,
+      "distribution": "upper_chest_short"
+    },
+    "calm": {
+      "rate_bpm": 11,
+      "distribution": "diaphragmatic"
+    },
+    "teaching": {
+      "rate_bpm": 12,
+      "distribution": "calm_diaphragmatic"
+    }
+  }
+}

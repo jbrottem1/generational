@@ -1,0 +1,166 @@
+{
+  "world_id": "WORLD-RESEARCH_CENTER",
+  "world_type": "Research Center",
+  "name": "Research Center",
+  "theme": "systematic discovery",
+  "scale": "campus_lab",
+  "historical_accuracy": 85,
+  "environment": {
+    "description": "Modern research atrium linking lab wings, glass bridges, and data walls",
+    "continuity_key": "WORLD-RESEARCH_CENTER",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "cool atrium daylight simulation + practical screens",
+    "consistent_key": true
+  },
+  "architecture": [
+    "glass atrium",
+    "bridge links",
+    "lab wing portals"
+  ],
+  "weather": "indoors",
+  "objects": [
+    {
+      "object_id": "obj_data_wall",
+      "name": "data_wall",
+      "surface": "wall",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.5,
+        "y": 1.6,
+        "z": 0.1
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_sample_cart",
+      "name": "sample_cart",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.4,
+        "y": 0.0,
+        "z": 0.5
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "obj_collaboration_table",
+      "name": "collaboration_table",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.5,
+        "y": 0.0,
+        "z": 0.55
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "background_animations": [
+    "data wall pulse",
+    "glass reflection drift"
+  ],
+  "sound_ambience": [
+    "atrium reverb",
+    "soft step",
+    "HVAC"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.5,
+    "max_height": 12.0,
+    "min_distance": 0.6,
+    "max_distance": 30.0
+  },
+  "color_palette": {
+    "family": "lab",
+    "primary": "#101820",
+    "accent": "#457B9D",
+    "glass": "#A8DADC"
+  },
+  "lighting_presets": [
+    {
+      "id": "day_neutral",
+      "recipe": "cool teal key + soft bounce fill",
+      "mood": "neutral"
+    },
+    {
+      "id": "dramatic_rim",
+      "recipe": "cool teal key + hard rim + practical instrument glow",
+      "mood": "dramatic"
+    },
+    {
+      "id": "low_key_focus",
+      "recipe": "low-key with luminous subject isolation",
+      "mood": "focus"
+    },
+    {
+      "id": "bright_reveal",
+      "recipe": "bright key + lifted shadows for revelation",
+      "mood": "reveal"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "wide_establish",
+      "position": "rear_center",
+      "angle": "eye_level",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "bench_medium",
+      "position": "workbench_front",
+      "angle": "slight_high",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "macro_detail",
+      "position": "instrument_close",
+      "angle": "macro",
+      "lens_hint": "85mm"
+    },
+    {
+      "id": "corner_observe",
+      "position": "room_corner",
+      "angle": "observational",
+      "lens_hint": "28mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "atrium",
+      "region": "center"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "lab_wing",
+      "to_compatible": [
+        "Science Lab",
+        "AI Laboratory",
+        "University",
+        "Hospital"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.160295+00:00"
+}

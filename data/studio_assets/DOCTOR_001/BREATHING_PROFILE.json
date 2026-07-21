@@ -1,0 +1,46 @@
+{
+  "character_id": "DOCTOR_001",
+  "affects": [
+    "upper_chest",
+    "lower_rib",
+    "shoulders",
+    "abdomen",
+    "coat_drape",
+    "neck_tension"
+  ],
+  "modes": {
+    "rest": {
+      "rate_bpm": 12,
+      "amplitude": 0.25
+    },
+    "teaching": {
+      "rate_bpm": 12,
+      "amplitude": 0.3,
+      "phrase_coordinated": true
+    },
+    "speak": {
+      "rate_bpm": 14,
+      "amplitude": 0.28,
+      "phrase_coordinated": true
+    },
+    "walk": {
+      "rate_bpm": 16,
+      "amplitude": 0.35
+    },
+    "run": {
+      "rate_bpm": 26,
+      "amplitude": 0.55
+    },
+    "concern": {
+      "rate_bpm": 15,
+      "amplitude": 0.32,
+      "bias": "upper_chest"
+    },
+    "calm_reassure": {
+      "rate_bpm": 11,
+      "amplitude": 0.22,
+      "bias": "diaphragmatic"
+    }
+  },
+  "forbid_whole_torso_scale": true
+}

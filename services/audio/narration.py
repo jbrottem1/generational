@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import re
 
-from engines.heuristics import (
+from core.heuristics import (
     CURIOSITY_WORDS,
     EMOTION_WORDS,
     SURPRISE_WORDS,
@@ -23,34 +23,34 @@ from engines.heuristics import (
 # services/visual/scenes.py).
 PURPOSE_DELIVERY = {
     "hook": {
-        "delivery": "urgent, leaning-in open — hit the first word hard and don't let the energy dip",
-        "wpm_factor": 1.10,
-        "pause": {"at": "after the opening line", "duration_sec": 0.3, "reason": "let the hook land before the next beat"},
+        "delivery": "engaging educator energy — hit the first word hard, smile in the voice, don't let the energy dip",
+        "wpm_factor": 1.14,
+        "pause": {"at": "after the opening line", "duration_sec": 0.35, "reason": "let the hook land before the next beat"},
     },
     "pattern_interrupt": {
-        "delivery": "sharp tonal swerve — drop pitch and flatten the read to sell the reversal",
-        "wpm_factor": 1.05,
-        "pause": {"at": "before the contradicting word", "duration_sec": 0.25, "reason": "set up the whiplash"},
+        "delivery": "sharp tonal swerve — drop pitch then rebound into excited clarity",
+        "wpm_factor": 1.08,
+        "pause": {"at": "before the contradicting word", "duration_sec": 0.3, "reason": "set up the whiplash"},
     },
     "curiosity_loop": {
-        "delivery": "hushed, conspiratorial tease — pull the volume down and slow slightly",
-        "wpm_factor": 0.95,
-        "pause": {"at": "before the tease line", "duration_sec": 0.4, "reason": "open the curiosity gap"},
+        "delivery": "warm conspiratorial tease — pull the volume down, then lift into the payoff promise",
+        "wpm_factor": 0.96,
+        "pause": {"at": "before the tease line", "duration_sec": 0.45, "reason": "open the curiosity gap"},
     },
     "story_beat": {
-        "delivery": "confident storytelling stride — ride the rhythm and lift on every number or stat",
-        "wpm_factor": 1.0,
-        "pause": {"at": "after the key fact", "duration_sec": 0.2, "reason": "let the fact register"},
+        "delivery": "confident storytelling stride — ride the rhythm, emphasize every number, sound like a great teacher not a teleprompter",
+        "wpm_factor": 1.02,
+        "pause": {"at": "after the key fact", "duration_sec": 0.28, "reason": "let the fact register"},
     },
     "payoff": {
-        "delivery": "slow down and let the reveal breathe — near-whisper into full-voice resolve",
-        "wpm_factor": 0.85,
-        "pause": {"at": "before the reveal line", "duration_sec": 0.7, "reason": "dramatic silence sells the payoff"},
+        "delivery": "slow into the reveal, then full-voice resolve — emotional variation sells understanding",
+        "wpm_factor": 0.84,
+        "pause": {"at": "before the reveal line", "duration_sec": 0.75, "reason": "dramatic silence sells the payoff"},
     },
     "cta": {
-        "delivery": "warm, direct, eye-contact sincerity — relaxed and unhurried",
-        "wpm_factor": 0.90,
-        "pause": {"at": "before the final word", "duration_sec": 0.3, "reason": "a settled close feels intentional"},
+        "delivery": "warm, direct, eye-contact sincerity — invite a share without sounding salesy",
+        "wpm_factor": 0.92,
+        "pause": {"at": "before the share ask", "duration_sec": 0.35, "reason": "a settled close feels intentional"},
     },
 }
 DEFAULT_DELIVERY = PURPOSE_DELIVERY["story_beat"]

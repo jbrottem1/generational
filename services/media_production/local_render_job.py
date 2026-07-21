@@ -1,4 +1,4 @@
-"""LOCAL_RENDER_JOB.json — cloud prepares, local executes."""
+"""LOCAL_RENDER_JOB.json — portable local render package (legacy schema v2)."""
 
 from __future__ import annotations
 
@@ -11,8 +11,8 @@ from core.env import project_root
 from services.media_production.execution_mode import (
     ExecutionMode,
     canonical_export_dir,
-    cloud_status_message,
     get_execution_context,
+    local_status_message,
 )
 from services.reality.catalog import get_image
 from services.reality.planner import plan_reality_beats
@@ -52,7 +52,7 @@ def build_render_job(
     local_command: str | None = None,
     output_path: Path | None = None,
 ) -> dict[str, Any]:
-    """Build a portable render job package for local execution."""
+    """Build a portable render job package for local Mac execution."""
     ctx = get_execution_context()
     export_dir = canonical_export_dir()
     ids = image_ids or []
@@ -76,9 +76,9 @@ def build_render_job(
         "schema_version": 2,
         "job_id": job_id,
         "title": title,
-        "status": "awaiting_local_render",
-        "message": cloud_status_message(),
-        "execution_mode": ExecutionMode.CLOUD.value,
+        "status": "ready_to_render",
+        "message": local_status_message(),
+        "execution_mode": ExecutionMode.LOCAL.value,
         "prepared_at": datetime.now(timezone.utc).isoformat(),
         "prepared_on": {
             "platform": ctx.platform,

@@ -1,0 +1,394 @@
+{
+  "schema_version": "1.0",
+  "production_id": "ops_a13166d67f",
+  "brief": {
+    "topic": "Why Leaves Change Color in Autumn",
+    "platform": "youtube_shorts",
+    "length_sec": 45,
+    "style": "reality_first",
+    "narrator": "science_educator",
+    "voice": "science_educator",
+    "quality_target": 98.0,
+    "constraints": {
+      "channel_id": "science_daily",
+      "brand_id": "science_daily",
+      "brand_name": "Science Daily",
+      "brand_voice": "curious, clear, wonder-led",
+      "audience": "curious generalists ages 18\u201335 who enjoy science shorts",
+      "niche": "biology, physics, astronomy, chemistry, nature",
+      "topic_categories": [
+        "biology",
+        "physics",
+        "astronomy",
+        "chemistry",
+        "nature"
+      ],
+      "visual_style": "clean educational motion with bold labels",
+      "thumbnail_style": "one subject, high contrast, max 5 claim words",
+      "world_preferences": {
+        "domains": [
+          "science",
+          "biology",
+          "physics"
+        ],
+        "style": "reality_first"
+      },
+      "hashtag_strategy": [
+        "#science",
+        "#facts",
+        "#shorts",
+        "#learnontiktok"
+      ],
+      "seo_rules": {
+        "title_pattern": "curiosity_hook",
+        "max_title_chars": 70
+      },
+      "intro_outro_rules": {
+        "intro_sec": 1.2,
+        "outro_cta": "Follow for daily science"
+      },
+      "style_profile": "reality_first",
+      "publishing_enabled": false,
+      "channel_os": true
+    },
+    "command": "",
+    "raw": {}
+  },
+  "current_stage": "export",
+  "current_agent": "export_and_validate",
+  "overall_progress_pct": 100,
+  "elapsed_ms": 44264,
+  "eta_ms": null,
+  "overall_status": "succeeded",
+  "pipeline_health": "healthy",
+  "warnings": [
+    "animation unavailable \u2014 continued",
+    "mp4_not_yet_materialized \u2014 metadata package exported for smoke/plan modes"
+  ],
+  "retry_count": 0,
+  "quality_scores": {
+    "research": 85.0,
+    "psychology": 90.0,
+    "studio_director": 95.0,
+    "script_generator": 95.0,
+    "scene_builder": 100.0,
+    "media_collection": 100.0,
+    "animation": 100.0,
+    "voice_generation": 100.0,
+    "music_sound": 90.0,
+    "captions": 95.0,
+    "rendering": 100.0,
+    "viewer_retention": 100.0,
+    "optimization_lab": 100.0,
+    "quality_assurance": 100.0,
+    "seo_package": 100.0,
+    "export": 80.0
+  },
+  "current_files": [
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Leaves_Change_Color_in_Autumn_ops_a13166d67f",
+    "data/renders/02bfff54effc/the-hidden-truth-why-leaves-change-color-in-autumn-in-a-real_1080x1920.mp4",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Leaves_Change_Color_in_Autumn_ops_a13166d67f/captions.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Leaves_Change_Color_in_Autumn_ops_a13166d67f/description.txt",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Leaves_Change_Color_in_Autumn_ops_a13166d67f/seo_metadata.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Leaves_Change_Color_in_Autumn_ops_a13166d67f/thumbnail_plan.json"
+  ],
+  "started_at": "2026-07-14T04:39:39.154981+00:00",
+  "finished_at": "2026-07-14T04:40:23.420471+00:00",
+  "stages": [
+    {
+      "key": "research",
+      "label": "Research Engine",
+      "engines": [
+        "research",
+        "ideation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:39:39.155538+00:00",
+      "end_time": "2026-07-14T04:39:50.066100+00:00",
+      "duration_ms": 10909,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 85.0,
+      "output_files": [],
+      "current_agent": "research"
+    },
+    {
+      "key": "psychology",
+      "label": "Psychology Engine",
+      "engines": [
+        "psychology"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:39:50.066746+00:00",
+      "end_time": "2026-07-14T04:39:50.084519+00:00",
+      "duration_ms": 17,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 90.0,
+      "output_files": [],
+      "current_agent": "psychology"
+    },
+    {
+      "key": "studio_director",
+      "label": "AI Studio Director",
+      "engines": [
+        "ai_director"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:39:50.085083+00:00",
+      "end_time": "2026-07-14T04:39:50.109086+00:00",
+      "duration_ms": 23,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "ai_director"
+    },
+    {
+      "key": "script_generator",
+      "label": "Script Generator",
+      "engines": [
+        "script_generation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:39:50.109675+00:00",
+      "end_time": "2026-07-14T04:39:57.715065+00:00",
+      "duration_ms": 7604,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "script_generation"
+    },
+    {
+      "key": "scene_builder",
+      "label": "Scene Builder",
+      "engines": [
+        "visual_intelligence",
+        "scene_planning",
+        "visual_planning"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:39:57.715974+00:00",
+      "end_time": "2026-07-14T04:39:57.765931+00:00",
+      "duration_ms": 49,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "visual_intelligence"
+    },
+    {
+      "key": "media_collection",
+      "label": "Media Collection",
+      "engines": [
+        "evidence_intelligence",
+        "image",
+        "asset_manager"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:39:57.766583+00:00",
+      "end_time": "2026-07-14T04:40:08.023616+00:00",
+      "duration_ms": 10255,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "evidence_intelligence"
+    },
+    {
+      "key": "animation",
+      "label": "Animation / Motion Graphics",
+      "engines": [
+        "cinematography",
+        "animation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:40:08.030197+00:00",
+      "end_time": "2026-07-14T04:40:08.035272+00:00",
+      "duration_ms": 4,
+      "warnings": [
+        "animation unavailable \u2014 continued"
+      ],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "cinematography"
+    },
+    {
+      "key": "voice_generation",
+      "label": "Voice Generation",
+      "engines": [
+        "voice_audio",
+        "narration",
+        "voice"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:40:08.035782+00:00",
+      "end_time": "2026-07-14T04:40:21.429965+00:00",
+      "duration_ms": 13392,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "voice_audio"
+    },
+    {
+      "key": "music_sound",
+      "label": "Music & Sound Design",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:40:21.430749+00:00",
+      "end_time": "2026-07-14T04:40:21.431296+00:00",
+      "duration_ms": 0,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 90.0,
+      "output_files": [],
+      "current_agent": "apply_music_direction"
+    },
+    {
+      "key": "captions",
+      "label": "Captions",
+      "engines": [
+        "subtitle"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:40:21.431770+00:00",
+      "end_time": "2026-07-14T04:40:21.433063+00:00",
+      "duration_ms": 0,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "subtitle"
+    },
+    {
+      "key": "rendering",
+      "label": "Rendering",
+      "engines": [
+        "timeline",
+        "render_package",
+        "studio_render",
+        "video"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:40:21.433542+00:00",
+      "end_time": "2026-07-14T04:40:21.440000+00:00",
+      "duration_ms": 3,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "timeline"
+    },
+    {
+      "key": "viewer_retention",
+      "label": "Viewer Retention Analysis",
+      "engines": [
+        "viewer_retention"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:40:21.440512+00:00",
+      "end_time": "2026-07-14T04:40:21.442769+00:00",
+      "duration_ms": 1,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "viewer_retention"
+    },
+    {
+      "key": "optimization_lab",
+      "label": "Optimization Lab",
+      "engines": [
+        "optimization_lab"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:40:21.443256+00:00",
+      "end_time": "2026-07-14T04:40:21.542576+00:00",
+      "duration_ms": 98,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "optimization_lab"
+    },
+    {
+      "key": "quality_assurance",
+      "label": "Quality Assurance",
+      "engines": [
+        "quality",
+        "production_qa"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:40:21.543193+00:00",
+      "end_time": "2026-07-14T04:40:21.547068+00:00",
+      "duration_ms": 3,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "quality"
+    },
+    {
+      "key": "seo_package",
+      "label": "SEO Package",
+      "engines": [
+        "seo",
+        "seo_optimization"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:40:21.547602+00:00",
+      "end_time": "2026-07-14T04:40:23.417335+00:00",
+      "duration_ms": 1868,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "seo"
+    },
+    {
+      "key": "export",
+      "label": "Export",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:40:23.417941+00:00",
+      "end_time": "2026-07-14T04:40:23.419986+00:00",
+      "duration_ms": 1,
+      "warnings": [
+        "mp4_not_yet_materialized \u2014 metadata package exported for smoke/plan modes"
+      ],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 80.0,
+      "output_files": [
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Leaves_Change_Color_in_Autumn_ops_a13166d67f",
+        "data/renders/02bfff54effc/the-hidden-truth-why-leaves-change-color-in-autumn-in-a-real_1080x1920.mp4",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Leaves_Change_Color_in_Autumn_ops_a13166d67f/captions.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Leaves_Change_Color_in_Autumn_ops_a13166d67f/description.txt",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Leaves_Change_Color_in_Autumn_ops_a13166d67f/seo_metadata.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_Leaves_Change_Color_in_Autumn_ops_a13166d67f/thumbnail_plan.json"
+      ],
+      "current_agent": "export_and_validate"
+    }
+  ],
+  "updated_at": "2026-07-14T04:40:23.440777+00:00",
+  "success": true,
+  "validation_score": 95.6
+}

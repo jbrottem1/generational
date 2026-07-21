@@ -8,7 +8,7 @@ tables later without changing the window contract.
 
 from __future__ import annotations
 
-from engines.heuristics import clamp, stable_jitter, weighted_blend
+from core.heuristics import clamp, stable_jitter, weighted_blend
 from services.seo.localization import LOCALIZATION_TARGETS
 
 # Platform → [(day, start_hour_local, end_hour_local, base engagement 0-100)].

@@ -1,0 +1,158 @@
+{
+  "world_id": "WORLD-FACTORY",
+  "world_type": "Factory",
+  "name": "Factory",
+  "theme": "industrial process",
+  "scale": "plant",
+  "historical_accuracy": 80,
+  "environment": {
+    "description": "High-bay factory floor with conveyor lines, safety markings, and sodium-tinged overheads",
+    "continuity_key": "WORLD-FACTORY",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "industrial sodium key + cool skylight spill",
+    "consistent_key": true
+  },
+  "architecture": [
+    "steel trusses",
+    "assembly lanes",
+    "catwalks"
+  ],
+  "weather": "indoors_industrial",
+  "objects": [
+    {
+      "object_id": "obj_conveyor",
+      "name": "conveyor",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.5,
+        "y": 0.0,
+        "z": 0.4
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_robot_arm",
+      "name": "robot_arm",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.65,
+        "y": 0.0,
+        "z": 0.45
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "obj_control_panel",
+      "name": "control_panel",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.25,
+        "y": 0.0,
+        "z": 0.55
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "background_animations": [
+    "sparks intermittent",
+    "conveyor motion"
+  ],
+  "sound_ambience": [
+    "machinery rhythm",
+    "safety alarm distant"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.5,
+    "max_height": 12.0,
+    "min_distance": 1.0,
+    "max_distance": 50.0
+  },
+  "color_palette": {
+    "family": "tech",
+    "primary": "#1A1A1A",
+    "accent": "#F4A261",
+    "safety": "#E9C46A"
+  },
+  "lighting_presets": [
+    {
+      "id": "day_neutral",
+      "recipe": "industrial hard key + soft bounce fill",
+      "mood": "neutral"
+    },
+    {
+      "id": "dramatic_rim",
+      "recipe": "industrial hard key + hard rim + practical instrument glow",
+      "mood": "dramatic"
+    },
+    {
+      "id": "low_key_focus",
+      "recipe": "low-key with luminous subject isolation",
+      "mood": "focus"
+    },
+    {
+      "id": "bright_reveal",
+      "recipe": "bright key + lifted shadows for revelation",
+      "mood": "reveal"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "bay_wide",
+      "position": "catwalk",
+      "angle": "high",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "line_track",
+      "position": "conveyor",
+      "angle": "tracking",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "machine_macro",
+      "position": "arm_close",
+      "angle": "macro",
+      "lens_hint": "85mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "assembly",
+      "region": "line"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "loading_dock",
+      "to_compatible": [
+        "Research Center",
+        "Future City",
+        "AI Laboratory"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.158749+00:00"
+}

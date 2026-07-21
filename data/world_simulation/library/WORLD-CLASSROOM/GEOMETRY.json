@@ -1,0 +1,185 @@
+{
+  "world_id": "WORLD-CLASSROOM",
+  "elements_required": [
+    "floor",
+    "walls",
+    "ceilings",
+    "doors",
+    "windows",
+    "furniture",
+    "props"
+  ],
+  "dimensions_m": {
+    "x": 12.0,
+    "y": 3.4,
+    "z": 10.0
+  },
+  "floor": [
+    {
+      "id": "main_floor",
+      "bounds": [
+        [
+          -6.0,
+          0,
+          -5.0
+        ],
+        [
+          6.0,
+          0,
+          5.0
+        ]
+      ],
+      "walkable": true,
+      "material": "interior_floor"
+    }
+  ],
+  "walls": [
+    {
+      "id": "wall_n",
+      "plane": "north",
+      "openings": [
+        "window_n"
+      ]
+    },
+    {
+      "id": "wall_s",
+      "plane": "south",
+      "openings": [
+        "door_main"
+      ]
+    },
+    {
+      "id": "wall_e",
+      "plane": "east",
+      "openings": []
+    },
+    {
+      "id": "wall_w",
+      "plane": "west",
+      "openings": [
+        "window_w"
+      ]
+    }
+  ],
+  "ceilings": [
+    {
+      "id": "main_ceiling",
+      "height_m": 3.4,
+      "material": "acoustic_or_structural"
+    }
+  ],
+  "doors": [
+    {
+      "id": "door_main",
+      "position": [
+        0.0,
+        0.0,
+        -4.9
+      ],
+      "swing": "inward",
+      "interactable": true
+    }
+  ],
+  "windows": [
+    {
+      "id": "window_n",
+      "position": [
+        0.0,
+        1.87,
+        4.95
+      ]
+    },
+    {
+      "id": "window_w",
+      "position": [
+        -5.95,
+        1.87,
+        0.0
+      ]
+    }
+  ],
+  "furniture": [
+    {
+      "id": "furn_teacher_desk_0",
+      "type": "desk",
+      "position": [
+        -3.0,
+        0.0,
+        -1.5
+      ],
+      "collision": true,
+      "navigable_around": true
+    },
+    {
+      "id": "furn_student_desks_1",
+      "type": "desk",
+      "position": [
+        -0.5999999999999996,
+        0.0,
+        -1.5
+      ],
+      "collision": true,
+      "navigable_around": true
+    },
+    {
+      "id": "furn_chair_2",
+      "type": "chair",
+      "position": [
+        1.8000000000000007,
+        0.0,
+        -1.5
+      ],
+      "collision": true,
+      "navigable_around": true
+    }
+  ],
+  "props": [
+    {
+      "id": "prop_whiteboard_0",
+      "type": "whiteboard",
+      "position": [
+        -3.0,
+        0.0,
+        -0.30000000000000004
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_door_1",
+      "type": "door",
+      "position": [
+        -0.5999999999999996,
+        0.0,
+        -0.30000000000000004
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_globe_2",
+      "type": "globe",
+      "position": [
+        1.8000000000000007,
+        0.0,
+        -0.30000000000000004
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_bookshelf_3",
+      "type": "bookshelf",
+      "position": [
+        -3.0,
+        0.0,
+        1.0999999999999999
+      ],
+      "collision": true,
+      "interactable": true
+    }
+  ],
+  "not_a_flat_image": true,
+  "explorable_volume": true,
+  "persistent": true
+}

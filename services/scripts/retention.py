@@ -17,7 +17,7 @@ replace any formula with a learned model without changing the dict shape.
 
 from __future__ import annotations
 
-from engines.heuristics import CURIOSITY_WORDS, SURPRISE_WORDS, clamp, count_hits, sentences
+from core.heuristics import CURIOSITY_WORDS, SURPRISE_WORDS, clamp, count_hits, sentences
 
 # Sections inside the critical opening window where drop-off is decided.
 OPENING_SECTIONS = ("primary_hook", "pattern_interrupt", "curiosity_hook")

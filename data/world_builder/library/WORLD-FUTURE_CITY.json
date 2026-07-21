@@ -1,0 +1,155 @@
+{
+  "world_id": "WORLD-FUTURE_CITY",
+  "world_type": "Future City",
+  "name": "Future City",
+  "theme": "speculative metro",
+  "scale": "metropolitan",
+  "historical_accuracy": 40,
+  "environment": {
+    "description": "Neon megacity terraces with maglev ribbons, holographic ads, and rain-slick glass",
+    "continuity_key": "WORLD-FUTURE_CITY",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "neon practicals + wet reflection bounce",
+    "consistent_key": true
+  },
+  "architecture": [
+    "spire towers",
+    "skybridges",
+    "vertical gardens"
+  ],
+  "weather": "neon_rain",
+  "objects": [
+    {
+      "object_id": "obj_holo_kiosk",
+      "name": "holo_kiosk",
+      "surface": "ground",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.4,
+        "y": 0.0,
+        "z": 0.45
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_drone_pad",
+      "name": "drone_pad",
+      "surface": "ground",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.6,
+        "y": 0.0,
+        "z": 0.5
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "obj_transit_bench",
+      "name": "transit_bench",
+      "surface": "ground",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.3,
+        "y": 0.0,
+        "z": 0.6
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "background_animations": [
+    "traffic light streaks",
+    "rain streaks",
+    "holo flicker"
+  ],
+  "sound_ambience": [
+    "rain on glass",
+    "distant transit hum",
+    "ad chatter wash"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.5,
+    "max_height": 80.0,
+    "min_distance": 1.0,
+    "max_distance": 120.0
+  },
+  "color_palette": {
+    "family": "tech",
+    "primary": "#0A1628",
+    "accent": "#7B2CBF",
+    "neon": "#00F5D4"
+  },
+  "lighting_presets": [
+    {
+      "id": "rain_night",
+      "recipe": "cyan/magenta neon + rain reflections",
+      "mood": "future"
+    },
+    {
+      "id": "dawn_clear",
+      "recipe": "cool blue hour on glass",
+      "mood": "hope"
+    },
+    {
+      "id": "alert",
+      "recipe": "red emergency beacons",
+      "mood": "crisis"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "skyline",
+      "position": "rooftop",
+      "angle": "wide",
+      "lens_hint": "16mm"
+    },
+    {
+      "id": "street_chase",
+      "position": "lane",
+      "angle": "handheld_energy",
+      "lens_hint": "28mm"
+    },
+    {
+      "id": "holo_macro",
+      "position": "kiosk",
+      "angle": "macro",
+      "lens_hint": "85mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "plaza",
+      "region": "terrace"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "transit_hub",
+      "to_compatible": [
+        "AI Laboratory",
+        "Stock Exchange",
+        "Factory"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.159759+00:00"
+}

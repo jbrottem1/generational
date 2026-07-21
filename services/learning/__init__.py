@@ -1,13 +1,23 @@
-"""Learning service — Agent 9's continuous-improvement layer.
+"""Learning service — Continuous Learning & Self-Improvement Engine.
 
 Public surface:
-    from services.learning import run_learning, mine_patterns
-    from services.learning import build_recommendations, guidance_for_engine
-    from services.learning import ExperimentManager, get_experiment_manager
-    from services.learning import HistoricalMemory, get_memory, MEMORY_CATEGORY
-    from services.learning import build_performance_report, render_report_text
+    from services.learning import run_learning, consult_context, get_optimization_api
+    from services.learning import build_learning_dashboard, predict_performance
 """
 
+from services.learning.api import (
+    SelfOptimizationAPI,
+    for_animation,
+    for_discovery,
+    for_psychology,
+    for_script,
+    for_seo,
+    for_visual,
+    for_voice,
+    get_optimization_api,
+)
+from services.learning.consult import build_learning_brief, consult_context
+from services.learning.dashboard import build_learning_dashboard
 from services.learning.experiments import (
     EXPERIMENT_FIELDS,
     EXPERIMENT_KINDS,
@@ -16,6 +26,7 @@ from services.learning.experiments import (
     compare_variants,
     get_experiment_manager,
 )
+from services.learning.graph import KnowledgeGraph, get_knowledge_graph
 from services.learning.loop import (
     build_learning_metadata,
     collect_learning_items,
@@ -46,6 +57,13 @@ from services.learning.patterns import (
     platform_breakdown,
     worst_performers,
 )
+from services.learning.predictions import predict_performance
+from services.learning.productions import (
+    PRODUCTION_RECORD_FIELDS,
+    ProductionMemory,
+    get_production_memory,
+    record_productions_from_context,
+)
 from services.learning.recommendations import (
     build_recommendations,
     guidance_for_engine,
@@ -67,6 +85,7 @@ __all__ = [
     "ExperimentStatus",
     "HistoricalMemory",
     "INSIGHT_FIELDS",
+    "KnowledgeGraph",
     "LEARNING_ENGINE_VERSION",
     "LEARNING_METADATA_FIELDS",
     "LEARNING_REPORT_FIELDS",
@@ -74,24 +93,42 @@ __all__ = [
     "MEMORY_ENTRY_FIELDS",
     "PATTERN_DIMENSIONS",
     "PERFORMANCE_REPORT_FIELDS",
+    "PRODUCTION_RECORD_FIELDS",
+    "ProductionMemory",
     "RECOMMENDATION_FIELDS",
     "REPORT_PERIODS",
+    "SelfOptimizationAPI",
     "TARGET_ENGINES",
     "best_performers",
+    "build_learning_brief",
+    "build_learning_dashboard",
     "build_learning_metadata",
     "build_performance_report",
     "build_recommendations",
     "collect_learning_items",
     "compare_variants",
+    "consult_context",
+    "for_animation",
+    "for_discovery",
+    "for_psychology",
+    "for_script",
+    "for_seo",
+    "for_visual",
+    "for_voice",
     "get_experiment_manager",
+    "get_knowledge_graph",
     "get_memory",
+    "get_optimization_api",
+    "get_production_memory",
     "grow_memory",
     "guidance_for_engine",
     "mine_patterns",
     "platform_breakdown",
+    "predict_performance",
     "psychology_guidance",
     "recommendations_by_engine",
     "recommendations_from_records",
+    "record_productions_from_context",
     "render_report_text",
     "run_learning",
     "script_guidance",

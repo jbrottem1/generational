@@ -171,7 +171,8 @@ def choose_movement(narration: str, *, evidence_motion: str = "") -> tuple[str, 
     if "pan" in ev:
         return "horizontal_pan", "eye_level", "wide", "none", "right", "Evidence motion suggested pan."
     if "static" in ev or "hold" in ev:
-        return "static_hold", "eye_level", "medium", "none", "none", "Evidence motion suggested static hold."
+        # Prefer subtle motion over true static — educational shorts die on still frames.
+        return "slow_push_in", "eye_level", "medium", "in", "none", "Replaced static hold with slow push-in for retention."
     if "push" in ev or "ken_burns_in" in ev or "zoom" in ev:
         return "slow_push_in", "eye_level", "medium_close", "in", "none", "Default teaching emphasis — slow push-in."
 
@@ -332,7 +333,7 @@ def _speed_for(movement: str, duration_sec: float, attention: int) -> float:
         "reveal": 0.36,
         "camera_3d_move": 0.44,
         "rack_focus": 0.25,
-        "static_hold": 0.10,
+        "static_hold": 0.18,
     }.get(movement, 0.35)
     # Longer scenes → slightly slower; high attention → slightly more energy
     adj = base - min(0.08, max(0, duration_sec - 4) * 0.01) + (attention - 50) * 0.001
@@ -354,16 +355,19 @@ def _attention_score(
     has_focus_label: bool,
 ) -> int:
     boost = {
-        "macro_push_in": 12,
-        "orbit": 10,
-        "reveal": 9,
-        "slow_push_in": 8,
-        "parallax": 7,
-        "tracking": 6,
-        "establishing_wide": 5,
-        "static_hold": -5,
-    }.get(movement, 4)
-    return _clamp(0.55 * evidence_attention + 0.25 * 60 + 0.20 * (50 + boost) + (4 if has_focus_label else 0))
+        "macro_push_in": 18,
+        "orbit": 16,
+        "reveal": 15,
+        "slow_push_in": 14,
+        "parallax": 13,
+        "tracking": 12,
+        "establishing_wide": 10,
+        "whip_transition": 12,
+        "camera_3d_move": 14,
+        "static_hold": -18,
+    }.get(movement, 10)
+    # Prefer cinematic motion: floor attention when moving (educational shorts).
+    return _clamp(0.45 * evidence_attention + 0.20 * 70 + 0.35 * (55 + boost) + (6 if has_focus_label else 0))
 
 
 def direct_scene(
@@ -397,7 +401,7 @@ def direct_scene(
     if duration <= 0:
         duration = 4.0
 
-    evidence_attention = int(scene.get("expected_attention_score") or scene.get("attention_score") or 50)
+    evidence_attention = int(scene.get("expected_attention_score") or scene.get("attention_score") or 72)
     speed = _speed_for(movement, duration, evidence_attention)
     parallax = 0.55 if movement in ("parallax", "camera_3d_move", "orbit") else (0.25 if movement == "tracking" else 0.1)
     easing = _easing_for(speed, movement)

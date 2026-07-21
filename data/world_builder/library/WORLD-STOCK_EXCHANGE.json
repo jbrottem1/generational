@@ -1,0 +1,154 @@
+{
+  "world_id": "WORLD-STOCK_EXCHANGE",
+  "world_type": "Stock Exchange",
+  "name": "Stock Exchange",
+  "theme": "market energy",
+  "scale": "trading_floor",
+  "historical_accuracy": 80,
+  "environment": {
+    "description": "Trading floor with ticker walls, pit geometry, and high-contrast screens",
+    "continuity_key": "WORLD-STOCK_EXCHANGE",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "cool screen spill + warm overheads",
+    "consistent_key": true
+  },
+  "architecture": [
+    "mezzanine ring",
+    "pit steps",
+    "LED ticker wall"
+  ],
+  "weather": "indoors",
+  "objects": [
+    {
+      "object_id": "obj_ticker_wall",
+      "name": "ticker_wall",
+      "surface": "wall",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.5,
+        "y": 1.5,
+        "z": 0.1
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_trader_terminal",
+      "name": "trader_terminal",
+      "surface": "desk",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.4,
+        "y": 0.9,
+        "z": 0.45
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "obj_pit_desk",
+      "name": "pit_desk",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.5,
+        "y": 0.0,
+        "z": 0.5
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "background_animations": [
+    "ticker scroll",
+    "crowd energy blur"
+  ],
+  "sound_ambience": [
+    "bell clamor",
+    "crowd shout wash",
+    "keyboard chatter"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.5,
+    "max_height": 8.0,
+    "min_distance": 0.6,
+    "max_distance": 25.0
+  },
+  "color_palette": {
+    "family": "finance",
+    "primary": "#0B1D36",
+    "accent": "#2A9D8F",
+    "alert": "#E63946"
+  },
+  "lighting_presets": [
+    {
+      "id": "open_bell",
+      "recipe": "bright high-energy key",
+      "mood": "surge"
+    },
+    {
+      "id": "after_hours",
+      "recipe": "low-key blue screens",
+      "mood": "aftermath"
+    },
+    {
+      "id": "crash",
+      "recipe": "red-biased practicals + hard contrast",
+      "mood": "panic"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "floor_wide",
+      "position": "mezzanine",
+      "angle": "high",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "pit_track",
+      "position": "pit",
+      "angle": "handheld_energy",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "ticker_macro",
+      "position": "wall",
+      "angle": "macro",
+      "lens_hint": "85mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "pit",
+      "region": "center"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "lobby",
+      "to_compatible": [
+        "Future City",
+        "Courtroom",
+        "University"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.159477+00:00"
+}

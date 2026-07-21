@@ -1,0 +1,437 @@
+{
+  "package_version": "1.0.0",
+  "package_type": "world",
+  "generated_at": "2026-07-14T03:27:28.459882+00:00",
+  "topic": "Pharaohs",
+  "niche": "history",
+  "world_id": "WORLD-ANCIENT_EGYPT",
+  "world_type": "Ancient Egypt",
+  "name": "Ancient Egypt",
+  "theme": "monumental myth",
+  "scale": "complex",
+  "historical_accuracy": 75,
+  "world": {
+    "world_id": "WORLD-ANCIENT_EGYPT",
+    "world_type": "Ancient Egypt",
+    "name": "Ancient Egypt",
+    "theme": "monumental myth",
+    "scale": "complex",
+    "historical_accuracy": 75,
+    "environment": {
+      "description": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette",
+      "continuity_key": "WORLD-ANCIENT_EGYPT",
+      "do_not_replace_mid_episode": true
+    },
+    "lighting": {
+      "base": "hard desert sun + warm stone bounce",
+      "consistent_key": true
+    },
+    "architecture": [
+      "pylon gates",
+      "obelisks",
+      "columned hypostyle"
+    ],
+    "weather": "desert_clear",
+    "objects": [
+      {
+        "name": "sphinx_fragment",
+        "surface": "ground",
+        "anchored": true,
+        "position": {
+          "x": 0.35,
+          "y": 0.0,
+          "z": 0.4
+        },
+        "scale": 1.0
+      },
+      {
+        "name": "offering_table",
+        "surface": "ground",
+        "anchored": true,
+        "position": {
+          "x": 0.5,
+          "y": 0.0,
+          "z": 0.5
+        },
+        "scale": 1.0
+      }
+    ],
+    "furniture": [],
+    "background_animations": [
+      "sand drift",
+      "heat shimmer",
+      "linen flap"
+    ],
+    "sound_ambience": [
+      "desert wind",
+      "distant drum"
+    ],
+    "camera_boundaries": {
+      "min_height": 0.4,
+      "max_height": 20.0,
+      "min_distance": 1.0,
+      "max_distance": 80.0
+    },
+    "color_palette": {
+      "family": "history",
+      "primary": "#3D2914",
+      "accent": "#C9A66B",
+      "sky": "#87CEEB"
+    },
+    "lighting_presets": [
+      {
+        "id": "noon",
+        "recipe": "hard sun short shadows",
+        "mood": "monumental"
+      },
+      {
+        "id": "dusk",
+        "recipe": "golden wash on sandstone",
+        "mood": "mythic"
+      },
+      {
+        "id": "torch_crypt",
+        "recipe": "torch practicals + cool blue fill",
+        "mood": "mystery"
+      }
+    ],
+    "camera_anchors": [
+      {
+        "id": "pylon_wide",
+        "position": "court",
+        "angle": "low_hero",
+        "lens_hint": "24mm"
+      },
+      {
+        "id": "column_track",
+        "position": "hypostyle",
+        "angle": "tracking",
+        "lens_hint": "35mm"
+      },
+      {
+        "id": "glyph_macro",
+        "position": "wall",
+        "angle": "macro",
+        "lens_hint": "85mm"
+      }
+    ],
+    "animation_zones": [
+      {
+        "id": "ritual_court",
+        "region": "center"
+      }
+    ],
+    "transition_anchors": [
+      {
+        "id": "nile_path",
+        "to_compatible": [
+          "Museum",
+          "Ancient Rome",
+          "Library"
+        ]
+      }
+    ],
+    "design_rules": [
+      "Keep set geometry continuous across scenes",
+      "Vary camera and lighting, not the world itself",
+      "Every object must sit on a defined surface",
+      "No flat solid full-frame backgrounds"
+    ]
+  },
+  "environment": {
+    "description": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette",
+    "continuity_key": "WORLD-ANCIENT_EGYPT",
+    "do_not_replace_mid_episode": true
+  },
+  "camera_anchors": [
+    {
+      "id": "pylon_wide",
+      "position": "court",
+      "angle": "low_hero",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "column_track",
+      "position": "hypostyle",
+      "angle": "tracking",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "glyph_macro",
+      "position": "wall",
+      "angle": "macro",
+      "lens_hint": "85mm"
+    }
+  ],
+  "lighting_presets": [
+    {
+      "id": "noon",
+      "recipe": "hard sun short shadows",
+      "mood": "monumental"
+    },
+    {
+      "id": "dusk",
+      "recipe": "golden wash on sandstone",
+      "mood": "mythic"
+    },
+    {
+      "id": "torch_crypt",
+      "recipe": "torch practicals + cool blue fill",
+      "mood": "mystery"
+    }
+  ],
+  "object_placement": [
+    {
+      "name": "sphinx_fragment",
+      "surface": "ground",
+      "anchored": true,
+      "position": {
+        "x": 0.35,
+        "y": 0.0,
+        "z": 0.4
+      },
+      "scale": 1.0
+    },
+    {
+      "name": "offering_table",
+      "surface": "ground",
+      "anchored": true,
+      "position": {
+        "x": 0.5,
+        "y": 0.0,
+        "z": 0.5
+      },
+      "scale": 1.0
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "ritual_court",
+      "region": "center"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "nile_path",
+      "to_compatible": [
+        "Museum",
+        "Ancient Rome",
+        "Library"
+      ]
+    }
+  ],
+  "architecture": [
+    "pylon gates",
+    "obelisks",
+    "columned hypostyle"
+  ],
+  "weather": "desert_clear",
+  "background_animations": [
+    "sand drift",
+    "heat shimmer",
+    "linen flap"
+  ],
+  "sound_ambience": [
+    "desert wind",
+    "distant drum"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.4,
+    "max_height": 20.0,
+    "min_distance": 1.0,
+    "max_distance": 80.0
+  },
+  "color_palette": {
+    "family": "history",
+    "primary": "#3D2914",
+    "accent": "#C9A66B",
+    "sky": "#87CEEB"
+  },
+  "continuity": {
+    "single_world": true,
+    "world_id": "WORLD-ANCIENT_EGYPT",
+    "note": "Scenes share the same laboratory/set; only camera and lighting change",
+    "scene_bindings": [
+      {
+        "scene_id": "s1",
+        "world_id": "WORLD-ANCIENT_EGYPT",
+        "world_type": "Ancient Egypt",
+        "camera_anchor": "pylon_wide",
+        "camera": {
+          "id": "pylon_wide",
+          "position": "court",
+          "angle": "low_hero",
+          "lens_hint": "24mm"
+        },
+        "lighting_preset": "noon",
+        "lighting": "hard sun short shadows",
+        "environment": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette",
+        "background": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette; camera_anchor=pylon_wide; angle=low_hero; lens=24mm; lighting_preset=noon; SAME_WORLD continuity",
+        "color_palette": {
+          "family": "history",
+          "primary": "#3D2914",
+          "accent": "#C9A66B",
+          "sky": "#87CEEB"
+        },
+        "objects_in_frame": [
+          "sphinx_fragment",
+          "offering_table"
+        ],
+        "narration_excerpt": "Scene"
+      },
+      {
+        "scene_id": "s2",
+        "world_id": "WORLD-ANCIENT_EGYPT",
+        "world_type": "Ancient Egypt",
+        "camera_anchor": "column_track",
+        "camera": {
+          "id": "column_track",
+          "position": "hypostyle",
+          "angle": "tracking",
+          "lens_hint": "35mm"
+        },
+        "lighting_preset": "dusk",
+        "lighting": "golden wash on sandstone",
+        "environment": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette",
+        "background": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette; camera_anchor=column_track; angle=tracking; lens=35mm; lighting_preset=dusk; SAME_WORLD continuity",
+        "color_palette": {
+          "family": "history",
+          "primary": "#3D2914",
+          "accent": "#C9A66B",
+          "sky": "#87CEEB"
+        },
+        "objects_in_frame": [
+          "sphinx_fragment",
+          "offering_table"
+        ],
+        "narration_excerpt": "Beat 1"
+      },
+      {
+        "scene_id": "s3",
+        "world_id": "WORLD-ANCIENT_EGYPT",
+        "world_type": "Ancient Egypt",
+        "camera_anchor": "glyph_macro",
+        "camera": {
+          "id": "glyph_macro",
+          "position": "wall",
+          "angle": "macro",
+          "lens_hint": "85mm"
+        },
+        "lighting_preset": "torch_crypt",
+        "lighting": "torch practicals + cool blue fill",
+        "environment": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette",
+        "background": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette; camera_anchor=glyph_macro; angle=macro; lens=85mm; lighting_preset=torch_crypt; SAME_WORLD continuity",
+        "color_palette": {
+          "family": "history",
+          "primary": "#3D2914",
+          "accent": "#C9A66B",
+          "sky": "#87CEEB"
+        },
+        "objects_in_frame": [
+          "sphinx_fragment",
+          "offering_table"
+        ],
+        "narration_excerpt": "Beat 2"
+      }
+    ]
+  },
+  "scene_overrides": [
+    {
+      "scene_id": "s1",
+      "environment": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette",
+      "background": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette; camera_anchor=pylon_wide; angle=low_hero; lens=24mm; lighting_preset=noon; SAME_WORLD continuity",
+      "lighting": "hard sun short shadows",
+      "color_palette": {
+        "family": "history",
+        "primary": "#3D2914",
+        "accent": "#C9A66B",
+        "sky": "#87CEEB"
+      },
+      "world_id": "WORLD-ANCIENT_EGYPT",
+      "camera_anchor": "pylon_wide"
+    },
+    {
+      "scene_id": "s2",
+      "environment": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette",
+      "background": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette; camera_anchor=column_track; angle=tracking; lens=35mm; lighting_preset=dusk; SAME_WORLD continuity",
+      "lighting": "golden wash on sandstone",
+      "color_palette": {
+        "family": "history",
+        "primary": "#3D2914",
+        "accent": "#C9A66B",
+        "sky": "#87CEEB"
+      },
+      "world_id": "WORLD-ANCIENT_EGYPT",
+      "camera_anchor": "column_track"
+    },
+    {
+      "scene_id": "s3",
+      "environment": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette",
+      "background": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette; camera_anchor=glyph_macro; angle=macro; lens=85mm; lighting_preset=torch_crypt; SAME_WORLD continuity",
+      "lighting": "torch practicals + cool blue fill",
+      "color_palette": {
+        "family": "history",
+        "primary": "#3D2914",
+        "accent": "#C9A66B",
+        "sky": "#87CEEB"
+      },
+      "world_id": "WORLD-ANCIENT_EGYPT",
+      "camera_anchor": "glyph_macro"
+    }
+  ],
+  "renderer_feed": {
+    "note": "Optional enrich of visual_package.scenes \u2014 does not modify production pipeline stages",
+    "scene_overrides": [
+      {
+        "scene_id": "s1",
+        "environment": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette",
+        "background": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette; camera_anchor=pylon_wide; angle=low_hero; lens=24mm; lighting_preset=noon; SAME_WORLD continuity",
+        "lighting": "hard sun short shadows",
+        "color_palette": {
+          "family": "history",
+          "primary": "#3D2914",
+          "accent": "#C9A66B",
+          "sky": "#87CEEB"
+        },
+        "world_id": "WORLD-ANCIENT_EGYPT",
+        "camera_anchor": "pylon_wide"
+      },
+      {
+        "scene_id": "s2",
+        "environment": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette",
+        "background": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette; camera_anchor=column_track; angle=tracking; lens=35mm; lighting_preset=dusk; SAME_WORLD continuity",
+        "lighting": "golden wash on sandstone",
+        "color_palette": {
+          "family": "history",
+          "primary": "#3D2914",
+          "accent": "#C9A66B",
+          "sky": "#87CEEB"
+        },
+        "world_id": "WORLD-ANCIENT_EGYPT",
+        "camera_anchor": "column_track"
+      },
+      {
+        "scene_id": "s3",
+        "environment": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette",
+        "background": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette; camera_anchor=glyph_macro; angle=macro; lens=85mm; lighting_preset=torch_crypt; SAME_WORLD continuity",
+        "lighting": "torch practicals + cool blue fill",
+        "color_palette": {
+          "family": "history",
+          "primary": "#3D2914",
+          "accent": "#C9A66B",
+          "sky": "#87CEEB"
+        },
+        "world_id": "WORLD-ANCIENT_EGYPT",
+        "camera_anchor": "glyph_macro"
+      }
+    ]
+  },
+  "validation": {
+    "ok": true,
+    "passed": true,
+    "hard_fails": [],
+    "warnings": [],
+    "scene_binding_count": 3,
+    "object_count": 2
+  }
+}

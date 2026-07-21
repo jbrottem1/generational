@@ -1,4 +1,4 @@
-"""Local-first production gate — Generational OS V2.5 handoff."""
+"""Local-first production gate — prepare package then always proceed to render."""
 
 from __future__ import annotations
 
@@ -7,12 +7,10 @@ from typing import Any
 
 from services.generational_os.orchestrator import prepare_production
 from services.media_production.execution_mode import (
-    cloud_status_message,
     get_execution_context,
-    should_render_media,
+    local_status_message,
     write_execution_snapshot,
 )
-from services.media_production.local_render_job import build_render_job, write_render_job
 
 
 def gate_production(
@@ -35,7 +33,11 @@ def gate_production(
     series: str = "",
     episode: str = "",
 ) -> dict[str, Any]:
-    """Cloud → PRODUCTION_BRIEF + RENDER_PACKAGE. Local → proceed to render."""
+    """Write PRODUCTION_BRIEF + RENDER_PACKAGE, then authorize local render.
+
+    ``allow_cloud_smoke`` is ignored (local-first — no cloud production path).
+    """
+    _ = (allow_cloud_smoke, render, image_ids)
     write_execution_snapshot()
     ctx = get_execution_context()
 
@@ -55,44 +57,19 @@ def gate_production(
         series=series,
         episode=episode,
         sources=sources,
-        package_path=package_path if str(package_path).endswith("RENDER_PACKAGE.json") else Path("RENDER_PACKAGE.json"),
+        package_path=package_path
+        if str(package_path).endswith("RENDER_PACKAGE.json")
+        else Path("RENDER_PACKAGE.json"),
     )
-
-    if should_render_media(allow_cloud_smoke=allow_cloud_smoke) or prep.get("proceed"):
-        return {
-            "proceed": True,
-            "mode": ctx.mode.value,
-            "message": "Local render authorized.",
-            "brief_path": prep.get("brief_path"),
-            "render_package_path": prep.get("render_package_path"),
-        }
-
-    # Backward compatibility — also write LOCAL_RENDER_JOB.json
-    legacy_job = build_render_job(
-        job_id=job_id,
-        title=title,
-        demo_id=demo_id,
-        filename=filename,
-        hook=hook,
-        takeaway=takeaway,
-        main_concept=main_concept,
-        beats=beats,
-        sources=sources,
-        render=render,
-        image_ids=image_ids,
-        output_path=Path("LOCAL_RENDER_JOB.json"),
-    )
-    legacy_path = write_render_job(legacy_job, Path("LOCAL_RENDER_JOB.json"))
 
     return {
-        "proceed": False,
+        "proceed": True,
         "ok": True,
-        "status": "awaiting_local_render",
-        "message": cloud_status_message(),
         "mode": ctx.mode.value,
+        "status": "ready_to_render",
+        "message": local_status_message(),
         "brief_path": prep.get("brief_path"),
         "render_package_path": prep.get("render_package_path"),
-        "job_path": str(legacy_path.resolve()),
-        "local_command": prep.get("local_command") or legacy_job.get("local_command"),
-        "export": prep.get("export") or legacy_job.get("export"),
+        "local_command": prep.get("local_command"),
+        "export": prep.get("export"),
     }

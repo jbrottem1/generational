@@ -1,0 +1,277 @@
+{
+  "id": "0e8da69f6765",
+  "topic": "a tides",
+  "command": "Create a TikTok about tides",
+  "runtime_sec": 60,
+  "platforms": [
+    "tiktok"
+  ],
+  "engines_used": [
+    "discovery",
+    "trend_discovery",
+    "opportunity_ranking",
+    "trend_forecasting",
+    "market_intelligence",
+    "research",
+    "ideation",
+    "psychology",
+    "audience_intelligence",
+    "script_generation",
+    "attention_graph",
+    "ranking",
+    "script",
+    "critic",
+    "revision",
+    "citation",
+    "seo",
+    "threat_detection",
+    "quality",
+    "evidence_intelligence",
+    "visual_intelligence",
+    "cinematography",
+    "animation",
+    "voice_audio",
+    "voice",
+    "image",
+    "video",
+    "scene_planning",
+    "narration",
+    "visual_planning",
+    "asset_manager",
+    "subtitle",
+    "timeline",
+    "render_package",
+    "production_qa",
+    "publishing_queue",
+    "scheduler",
+    "publishing"
+  ],
+  "generation_time_ms": 1,
+  "qa_score": null,
+  "qa_decision": "",
+  "revision_rounds": 0,
+  "export_size_bytes": 0,
+  "export_paths": {
+    "captions": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/a_tides_0e8da69f6765/captions.json",
+    "description": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/a_tides_0e8da69f6765/description.txt",
+    "seo_metadata": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/a_tides_0e8da69f6765/seo_metadata.json",
+    "thumbnail": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/a_tides_0e8da69f6765/thumbnail_plan.json",
+    "manifest": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/a_tides_0e8da69f6765/EXPORT_MANIFEST.json"
+  },
+  "publish_status": "plan_only",
+  "status": "completed",
+  "error": "",
+  "created_at": "2026-07-13T03:14:10.744988+00:00",
+  "finished_at": "2026-07-13T03:14:10.746184+00:00",
+  "stages": {
+    "discovery": {
+      "key": "discovery",
+      "label": "Discovery",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:10.745326+00:00",
+      "finished_at": "2026-07-13T03:14:10.745329+00:00",
+      "duration_ms": 0,
+      "eta_sec": 25,
+      "engines_used": [
+        "discovery"
+      ],
+      "message": "planned engines=['discovery']",
+      "error": ""
+    },
+    "research": {
+      "key": "research",
+      "label": "Research",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:10.745332+00:00",
+      "finished_at": "2026-07-13T03:14:10.745335+00:00",
+      "duration_ms": 0,
+      "eta_sec": 40,
+      "engines_used": [
+        "trend_discovery",
+        "opportunity_ranking",
+        "trend_forecasting",
+        "market_intelligence",
+        "research",
+        "ideation",
+        "psychology",
+        "audience_intelligence"
+      ],
+      "message": "planned engines=['trend_discovery', 'opportunity_ranking', 'trend_forecasting', 'market_intelligence', 'research', 'ideation', 'psychology', 'audience_intelligence']",
+      "error": ""
+    },
+    "script": {
+      "key": "script",
+      "label": "Script",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:10.745338+00:00",
+      "finished_at": "2026-07-13T03:14:10.745340+00:00",
+      "duration_ms": 0,
+      "eta_sec": 35,
+      "engines_used": [
+        "script_generation",
+        "attention_graph",
+        "ranking",
+        "script",
+        "critic",
+        "revision",
+        "citation",
+        "seo",
+        "threat_detection",
+        "quality"
+      ],
+      "message": "planned engines=['script_generation', 'attention_graph', 'ranking', 'script', 'critic', 'revision', 'citation', 'seo', 'threat_detection', 'quality']",
+      "error": ""
+    },
+    "evidence": {
+      "key": "evidence",
+      "label": "Evidence",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:10.745343+00:00",
+      "finished_at": "2026-07-13T03:14:10.745345+00:00",
+      "duration_ms": 0,
+      "eta_sec": 30,
+      "engines_used": [
+        "evidence_intelligence"
+      ],
+      "message": "planned engines=['evidence_intelligence']",
+      "error": ""
+    },
+    "visuals": {
+      "key": "visuals",
+      "label": "Visuals",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:10.745347+00:00",
+      "finished_at": "2026-07-13T03:14:10.745349+00:00",
+      "duration_ms": 0,
+      "eta_sec": 35,
+      "engines_used": [
+        "visual_intelligence"
+      ],
+      "message": "planned engines=['visual_intelligence']",
+      "error": ""
+    },
+    "animation": {
+      "key": "animation",
+      "label": "Animation",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:10.745351+00:00",
+      "finished_at": "2026-07-13T03:14:10.745353+00:00",
+      "duration_ms": 0,
+      "eta_sec": 40,
+      "engines_used": [
+        "cinematography",
+        "animation"
+      ],
+      "message": "planned engines=['cinematography', 'animation']",
+      "error": ""
+    },
+    "voice": {
+      "key": "voice",
+      "label": "Voice",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:10.745355+00:00",
+      "finished_at": "2026-07-13T03:14:10.745357+00:00",
+      "duration_ms": 0,
+      "eta_sec": 45,
+      "engines_used": [
+        "voice_audio",
+        "voice"
+      ],
+      "message": "planned engines=['voice_audio', 'voice']",
+      "error": ""
+    },
+    "assembly": {
+      "key": "assembly",
+      "label": "Assembly",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:10.745359+00:00",
+      "finished_at": "2026-07-13T03:14:10.745361+00:00",
+      "duration_ms": 0,
+      "eta_sec": 90,
+      "engines_used": [
+        "image",
+        "video",
+        "scene_planning",
+        "narration",
+        "visual_planning",
+        "asset_manager",
+        "subtitle",
+        "timeline",
+        "render_package"
+      ],
+      "message": "planned engines=['image', 'video', 'scene_planning', 'narration', 'visual_planning', 'asset_manager', 'subtitle', 'timeline', 'render_package']",
+      "error": ""
+    },
+    "qa": {
+      "key": "qa",
+      "label": "QA",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:10.745365+00:00",
+      "finished_at": "2026-07-13T03:14:10.745367+00:00",
+      "duration_ms": 0,
+      "eta_sec": 15,
+      "engines_used": [
+        "production_qa"
+      ],
+      "message": "planned engines=['production_qa']",
+      "error": ""
+    },
+    "export": {
+      "key": "export",
+      "label": "Export",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:10.745369+00:00",
+      "finished_at": "2026-07-13T03:14:10.745371+00:00",
+      "duration_ms": 0,
+      "eta_sec": 20,
+      "engines_used": [],
+      "message": "planned engines=[]",
+      "error": ""
+    },
+    "publishing": {
+      "key": "publishing",
+      "label": "Publishing",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:10.745372+00:00",
+      "finished_at": "2026-07-13T03:14:10.745375+00:00",
+      "duration_ms": 0,
+      "eta_sec": 15,
+      "engines_used": [
+        "publishing_queue",
+        "scheduler",
+        "publishing"
+      ],
+      "message": "planned engines=['publishing_queue', 'scheduler', 'publishing']",
+      "error": ""
+    }
+  },
+  "artifacts": {
+    "export": {
+      "run_id": "0e8da69f6765",
+      "topic": "a tides",
+      "paths": {
+        "captions": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/a_tides_0e8da69f6765/captions.json",
+        "description": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/a_tides_0e8da69f6765/description.txt",
+        "seo_metadata": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/a_tides_0e8da69f6765/seo_metadata.json",
+        "thumbnail": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/a_tides_0e8da69f6765/thumbnail_plan.json",
+        "manifest": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/a_tides_0e8da69f6765/EXPORT_MANIFEST.json"
+      },
+      "export_size_bytes": 0,
+      "qa_decision": null,
+      "qa_score": null
+    },
+    "brief": {
+      "raw_command": "Create a TikTok about tides",
+      "topic": "a tides",
+      "platforms": [
+        "tiktok"
+      ],
+      "primary_platform": "tiktok",
+      "runtime_sec": 60,
+      "format": "short",
+      "category": "science",
+      "goal": "educate",
+      "notes": []
+    }
+  }
+}

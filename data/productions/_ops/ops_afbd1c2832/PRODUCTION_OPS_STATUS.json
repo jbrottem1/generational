@@ -1,0 +1,984 @@
+{
+  "schema_version": "1.0",
+  "production_id": "ops_afbd1c2832",
+  "brief": {
+    "topic": "How neural networks learn from data",
+    "platform": "youtube_shorts",
+    "length_sec": 40,
+    "style": "explainer",
+    "narrator": "professor",
+    "voice": "default",
+    "quality_target": 98.0,
+    "constraints": {
+      "publishing_enabled": false,
+      "reliability_validation": true,
+      "category": "AI",
+      "audience": "tech curious"
+    },
+    "command": "",
+    "raw": {}
+  },
+  "current_stage": "export",
+  "current_agent": "export_and_validate",
+  "overall_progress_pct": 100,
+  "elapsed_ms": 24747,
+  "eta_ms": null,
+  "overall_status": "succeeded",
+  "pipeline_health": "healthy",
+  "warnings": [
+    "animation unavailable \u2014 continued",
+    "duration_mismatch"
+  ],
+  "retry_count": 0,
+  "quality_scores": {
+    "research": 85.0,
+    "psychology": 90.0,
+    "studio_director": 95.0,
+    "script_generator": 95.0,
+    "scene_builder": 100.0,
+    "media_collection": 100.0,
+    "animation": 100.0,
+    "voice_generation": 100.0,
+    "music_sound": 90.0,
+    "captions": 95.0,
+    "rendering": 100.0,
+    "viewer_retention": 100.0,
+    "optimization_lab": 100.0,
+    "quality_assurance": 100.0,
+    "seo_package": 100.0,
+    "export": 60.0
+  },
+  "current_files": [
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/episode.mp4",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/captions.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/description.txt",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/seo_metadata.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/thumbnail.png"
+  ],
+  "started_at": "2026-07-14T12:43:10.776378+00:00",
+  "finished_at": "2026-07-14T12:43:35.524368+00:00",
+  "stages": [
+    {
+      "key": "research",
+      "label": "Research Engine",
+      "engines": [
+        "research",
+        "ideation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T12:43:10.776920+00:00",
+      "end_time": "2026-07-14T12:43:16.599267+00:00",
+      "duration_ms": 5820,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 85.0,
+      "output_files": [],
+      "current_agent": "research",
+      "engine_results": [
+        {
+          "engine": "research",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 2490,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 2490
+            }
+          ]
+        },
+        {
+          "engine": "ideation",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 3330,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 3330
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 2,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "psychology",
+      "label": "Psychology Engine",
+      "engines": [
+        "psychology"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T12:43:16.599926+00:00",
+      "end_time": "2026-07-14T12:43:16.619227+00:00",
+      "duration_ms": 18,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 90.0,
+      "output_files": [],
+      "current_agent": "psychology",
+      "engine_results": [
+        {
+          "engine": "psychology",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 18,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 18
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "studio_director",
+      "label": "AI Studio Director",
+      "engines": [
+        "ai_director"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T12:43:16.619814+00:00",
+      "end_time": "2026-07-14T12:43:16.645453+00:00",
+      "duration_ms": 25,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "ai_director",
+      "engine_results": [
+        {
+          "engine": "ai_director",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 25,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 25
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "script_generator",
+      "label": "Script Generator",
+      "engines": [
+        "script_generation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T12:43:16.646015+00:00",
+      "end_time": "2026-07-14T12:43:19.908412+00:00",
+      "duration_ms": 3261,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "script_generation",
+      "engine_results": [
+        {
+          "engine": "script_generation",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 3261,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 3261
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "scene_builder",
+      "label": "Scene Builder",
+      "engines": [
+        "visual_intelligence",
+        "scene_planning",
+        "visual_planning"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T12:43:19.909091+00:00",
+      "end_time": "2026-07-14T12:43:19.952139+00:00",
+      "duration_ms": 42,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "visual_intelligence",
+      "engine_results": [
+        {
+          "engine": "visual_intelligence",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 42,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 42
+            }
+          ]
+        },
+        {
+          "engine": "scene_planning",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 0,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 0
+            }
+          ]
+        },
+        {
+          "engine": "visual_planning",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 0,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 0
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 3,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "media_collection",
+      "label": "Media Collection",
+      "engines": [
+        "evidence_intelligence",
+        "image",
+        "asset_manager"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T12:43:19.952835+00:00",
+      "end_time": "2026-07-14T12:43:21.822128+00:00",
+      "duration_ms": 1866,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "evidence_intelligence",
+      "engine_results": [
+        {
+          "engine": "evidence_intelligence",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 0,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 0
+            }
+          ]
+        },
+        {
+          "engine": "image",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 1598,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 1598
+            }
+          ]
+        },
+        {
+          "engine": "asset_manager",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 268,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 268
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 3,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "animation",
+      "label": "Animation / Motion Graphics",
+      "engines": [
+        "cinematography",
+        "animation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T12:43:21.825733+00:00",
+      "end_time": "2026-07-14T12:43:21.828844+00:00",
+      "duration_ms": 2,
+      "warnings": [
+        "animation unavailable \u2014 continued"
+      ],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "cinematography",
+      "engine_results": [
+        {
+          "engine": "cinematography",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 2,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 2
+            }
+          ]
+        },
+        {
+          "engine": "animation",
+          "status": "skipped",
+          "attempts": 1,
+          "retries": 0,
+          "error": "not_registered_or_not_ready",
+          "warnings": [
+            "animation unavailable \u2014 continued"
+          ],
+          "duration_ms": 0,
+          "fallback": true
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "failure_reason": "animation unavailable \u2014 continued",
+      "dependency_health": {
+        "engine_count": 2,
+        "skipped": 1,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "voice_generation",
+      "label": "Voice Generation",
+      "engines": [
+        "voice_audio",
+        "narration",
+        "voice"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T12:43:21.829508+00:00",
+      "end_time": "2026-07-14T12:43:25.055711+00:00",
+      "duration_ms": 3224,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "voice_audio",
+      "engine_results": [
+        {
+          "engine": "voice_audio",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 0,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 0
+            }
+          ]
+        },
+        {
+          "engine": "narration",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 2227,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 2227
+            }
+          ]
+        },
+        {
+          "engine": "voice",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 997,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 997
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 3,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "music_sound",
+      "label": "Music & Sound Design",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-14T12:43:25.057032+00:00",
+      "end_time": "2026-07-14T12:43:25.057808+00:00",
+      "duration_ms": 0,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 90.0,
+      "output_files": [],
+      "current_agent": "apply_music_direction",
+      "engine_results": [
+        {
+          "engine": "apply_music_direction",
+          "status": "succeeded"
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "captions",
+      "label": "Captions",
+      "engines": [
+        "subtitle"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T12:43:25.058524+00:00",
+      "end_time": "2026-07-14T12:43:25.060401+00:00",
+      "duration_ms": 1,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "subtitle",
+      "engine_results": [
+        {
+          "engine": "subtitle",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 1,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 1
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "rendering",
+      "label": "Rendering",
+      "engines": [
+        "timeline",
+        "render_package",
+        "studio_render",
+        "video"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T12:43:25.061304+00:00",
+      "end_time": "2026-07-14T12:43:31.267546+00:00",
+      "duration_ms": 6204,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "timeline",
+      "engine_results": [
+        {
+          "engine": "timeline",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 0,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 0
+            }
+          ]
+        },
+        {
+          "engine": "render_package",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 2,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 2
+            }
+          ]
+        },
+        {
+          "engine": "studio_render",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 3,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 3
+            }
+          ]
+        },
+        {
+          "engine": "video",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 6199,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 6199
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 4,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "viewer_retention",
+      "label": "Viewer Retention Analysis",
+      "engines": [
+        "viewer_retention"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T12:43:31.268779+00:00",
+      "end_time": "2026-07-14T12:43:31.271318+00:00",
+      "duration_ms": 1,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "viewer_retention",
+      "engine_results": [
+        {
+          "engine": "viewer_retention",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 1,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 1
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "optimization_lab",
+      "label": "Optimization Lab",
+      "engines": [
+        "optimization_lab"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T12:43:31.272361+00:00",
+      "end_time": "2026-07-14T12:43:31.341329+00:00",
+      "duration_ms": 68,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "optimization_lab",
+      "engine_results": [
+        {
+          "engine": "optimization_lab",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 68,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 68
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "quality_assurance",
+      "label": "Quality Assurance",
+      "engines": [
+        "quality",
+        "production_qa"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T12:43:31.342269+00:00",
+      "end_time": "2026-07-14T12:43:31.346181+00:00",
+      "duration_ms": 3,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "quality",
+      "engine_results": [
+        {
+          "engine": "quality",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 0,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 0
+            }
+          ]
+        },
+        {
+          "engine": "production_qa",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 3,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 3
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 2,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "seo_package",
+      "label": "SEO Package",
+      "engines": [
+        "seo",
+        "seo_optimization"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T12:43:31.346967+00:00",
+      "end_time": "2026-07-14T12:43:35.487488+00:00",
+      "duration_ms": 4138,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "seo",
+      "engine_results": [
+        {
+          "engine": "seo",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 4138,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 4138
+            }
+          ]
+        },
+        {
+          "engine": "seo_optimization",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 0,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 0
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 2,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "export",
+      "label": "Export",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-14T12:43:35.488436+00:00",
+      "end_time": "2026-07-14T12:43:35.523306+00:00",
+      "duration_ms": 34,
+      "warnings": [
+        "duration_mismatch"
+      ],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 60.0,
+      "output_files": [
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/episode.mp4",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/captions.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/description.txt",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/seo_metadata.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/thumbnail.png",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/episode.mp4"
+      ],
+      "current_agent": "export_and_validate",
+      "engine_results": [
+        {
+          "engine": "export_and_validate",
+          "status": "succeeded"
+        }
+      ],
+      "artifacts": [
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/episode.mp4",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/captions.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/description.txt",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/seo_metadata.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/thumbnail.png",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/episode.mp4"
+      ],
+      "outputs_produced": [
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/episode.mp4",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/captions.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/description.txt",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/seo_metadata.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/thumbnail.png",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/episode.mp4"
+      ],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    }
+  ],
+  "updated_at": "2026-07-14T12:43:35.551348+00:00",
+  "validation_score": 94.4,
+  "video_exists": true,
+  "deliverable_ok": true,
+  "success": true
+}

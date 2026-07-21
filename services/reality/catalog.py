@@ -12,7 +12,16 @@ ROOT = Path(__file__).resolve().parents[2]
 CATALOG_PATH = ROOT / "data" / "reality" / "catalog.json"
 IMAGES_ROOT = ROOT / "data" / "reality"
 
-ALLOWED_LICENSES = frozenset({"public_domain", "CC0", "CC-BY", "CC-BY-SA"})
+ALLOWED_LICENSES = frozenset({
+    "public_domain",
+    "CC0",
+    "CC-BY",
+    "CC-BY-SA",
+    "NASA",
+    "NOAA",
+    "US-Gov",
+    "Unsplash",
+})
 
 
 @dataclass(frozen=True)

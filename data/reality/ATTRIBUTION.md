@@ -12,3 +12,14 @@ Curated for **PROJECT REALITY** — Batesian Mimicry biology benchmark.
 | viceroy_adult | Limenitis archippus | CC-BY-SA | Cephas / Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Viceroy_Butterfly.jpg |
 
 Refresh images: `python3 scripts/fetch_reality_images.py`
+
+## Four Seasons / Earth (added 2026-07-12)
+
+| Asset | Source | License |
+|-------|--------|---------|
+| `earth_apollo17` / `earth_bluemarble.jpg` | NASA Apollo 17 (as17-148-22727) | NASA / US-Gov public domain |
+| `season_spring.jpg` | Unsplash | Unsplash License |
+| `season_summer.jpg` | Unsplash | Unsplash License |
+| `season_autumn.jpg` | Unsplash | Unsplash License |
+| `season_winter.jpg` | Wikimedia Commons (Snowy_landscape.jpg) | CC-BY-SA |
+

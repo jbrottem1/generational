@@ -1,0 +1,93 @@
+{
+  "character_id": "CHAR-NOVA",
+  "hierarchy": [
+    "root",
+    "pelvis",
+    "spine_01",
+    "spine_02",
+    "chest",
+    "neck",
+    "head",
+    "jaw",
+    "eye_left",
+    "eye_right",
+    "clavicle_left",
+    "upper_arm_left",
+    "forearm_left",
+    "hand_left",
+    "clavicle_right",
+    "upper_arm_right",
+    "forearm_right",
+    "hand_right",
+    "thigh_left",
+    "shin_left",
+    "foot_left",
+    "toes_left",
+    "thigh_right",
+    "shin_right",
+    "foot_right",
+    "toes_right"
+  ],
+  "rules": [
+    "movement_originates_from_skeleton",
+    "weight_through_pelvis",
+    "head_stabilizes_via_spine",
+    "hands_never_float",
+    "feet_contact_ground",
+    "no_limb_length_drift"
+  ],
+  "joint_constraints_defaults": [
+    {
+      "joint": "elbow",
+      "rotation_min_deg": [
+        0,
+        -20,
+        -10
+      ],
+      "rotation_max_deg": [
+        145,
+        20,
+        10
+      ],
+      "preferred_axis": "local_x",
+      "soft_limit": true
+    },
+    {
+      "joint": "knee",
+      "rotation_min_deg": [
+        0,
+        -5,
+        -5
+      ],
+      "rotation_max_deg": [
+        140,
+        5,
+        5
+      ],
+      "preferred_axis": "local_x",
+      "soft_limit": true
+    },
+    {
+      "joint": "neck",
+      "rotation_min_deg": [
+        -35,
+        -45,
+        -25
+      ],
+      "rotation_max_deg": [
+        35,
+        45,
+        25
+      ],
+      "preferred_axis": "local_y",
+      "soft_limit": true
+    }
+  ],
+  "ik_targets_required": [
+    "hand_left",
+    "hand_right",
+    "foot_left",
+    "foot_right"
+  ],
+  "proportions_from": "light_energetic"
+}

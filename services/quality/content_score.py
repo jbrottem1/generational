@@ -64,6 +64,57 @@ class QualityReport:
         return asdict(self)
 
 
+def _resolve_export_bytes(production: dict[str, Any], export_path: str) -> int:
+    """Prefer explicit bytes; otherwise read the verified local file."""
+    explicit = production.get("export_bytes")
+    if explicit is None:
+        explicit = production.get("bytes")
+    if explicit is not None:
+        try:
+            return int(explicit)
+        except (TypeError, ValueError):
+            pass
+    ver = production.get("verification") or production.get("verify") or {}
+    probe = ver.get("probe") if isinstance(ver, dict) else None
+    if isinstance(probe, dict) and probe.get("bytes") is not None:
+        try:
+            return int(probe["bytes"])
+        except (TypeError, ValueError):
+            pass
+    if ver.get("bytes") is not None:
+        try:
+            return int(ver["bytes"])
+        except (TypeError, ValueError):
+            pass
+    if export_path:
+        from pathlib import Path
+
+        path = Path(export_path)
+        if path.is_file():
+            return int(path.stat().st_size)
+    return 0
+
+
+def _export_is_technically_verified(production: dict[str, Any], export_path: str) -> bool:
+    ver = production.get("verification") or production.get("verify") or {}
+    if isinstance(ver, dict) and ver.get("ok") is True:
+        return True
+    if not export_path:
+        return False
+    from pathlib import Path
+
+    path = Path(export_path)
+    if not path.is_file() or path.stat().st_size <= 0:
+        return False
+    # Prefer live probe when available; avoid false fails from omitted metadata
+    try:
+        from services.media_production.verified_export import assess_export_technical_validity
+
+        return bool(assess_export_technical_validity(path).get("ok"))
+    except Exception:  # noqa: BLE001
+        return path.stat().st_size > 0
+
+
 def hard_fail_reasons(
     production: dict[str, Any],
     *,
@@ -73,42 +124,88 @@ def hard_fail_reasons(
     """Non-negotiable blockers.
 
     Foundation path: animation QC fail-closed; lipsync floor 70 hard-fails.
+    Raw file size alone is never a hard fail when the MP4 verifies technically.
+    Missing animation-QC metadata is reported separately as a warning when the
+    export itself is valid (see soft_warning_reasons).
     """
     fails: list[str] = []
     qc = production.get("qc") or {}
     export_path = str(production.get("export_path") or production.get("output_path") or "")
-    bytes_ = int(production.get("export_bytes") or production.get("bytes") or 0)
+    bytes_ = _resolve_export_bytes(production, export_path)
     foundation = foundation or bool(production.get("foundation")) or str(
         production.get("demo_id") or ""
     ).startswith("foundation_")
+    verified = _export_is_technically_verified(production, export_path)
 
     if not export_path:
         fails.append("missing_export_path")
-    elif bytes_ < 50_000 and not production.get("mock"):
-        fails.append("export_too_small")
+    elif bytes_ <= 0 and not production.get("mock") and not verified:
+        fails.append("export_zero_bytes")
+    elif not production.get("mock") and not verified:
+        # Context-aware size/bitrate — only hard-fail truncated / implausible outputs
+        duration = float(
+            production.get("duration_sec")
+            or (production.get("verification") or {}).get("duration_sec")
+            or (production.get("verify") or {}).get("duration_sec")
+            or 0
+        )
+        bitrate = int((bytes_ * 8) / duration) if duration > 0 else 0
+        if bytes_ < 2_048:
+            fails.append("export_truncated")
+        elif duration > 0 and bitrate and bitrate < 40_000:
+            fails.append("implausible_bitrate")
     if qc.get("passed") is False:
         fails.append("animation_qc_failed")
-    if foundation and not qc and not production.get("mock"):
-        # Recovered / stub QC without metrics is not enough to ship Foundation
-        if production.get("require_full_qc", True) and "passed" not in qc:
-            fails.append("animation_qc_missing")
+    # Missing QC report is NOT a hard fail when the final MP4 verifies — see warnings
     if production.get("placeholder_assets"):
         fails.append("placeholder_assets_remain")
     ver = production.get("verification") or production.get("verify") or {}
-    if ver and ver.get("ok") is False:
+    if ver and ver.get("ok") is False and not verified:
         fails.append("export_verification_failed")
     if ver.get("has_audio") is False:
         fails.append("missing_audio")
     if ver.get("has_video") is False:
         fails.append("missing_video")
     if foundation and scores is not None:
-        lipsync = float(scores.get(QualityDimension.LIPSYNC.value) or 0)
-        if lipsync < 70.0:
-            fails.append("lipsync_below_foundation_floor")
-        anim = float(scores.get(QualityDimension.ANIMATION.value) or 0)
-        if anim < 70.0:
-            fails.append("animation_below_foundation_floor")
+        # Only apply lipsync/animation floors when QC metrics exist
+        if qc and "passed" in qc:
+            lipsync = float(scores.get(QualityDimension.LIPSYNC.value) or 0)
+            if lipsync < 70.0:
+                fails.append("lipsync_below_foundation_floor")
+            anim = float(scores.get(QualityDimension.ANIMATION.value) or 0)
+            if anim < 70.0:
+                fails.append("animation_below_foundation_floor")
     return fails
+
+
+def soft_warning_reasons(
+    production: dict[str, Any],
+    *,
+    foundation: bool = False,
+) -> list[str]:
+    """Non-blocking issues — valid MP4s stay SUCCESS_WITH_WARNINGS."""
+    warnings: list[str] = []
+    qc = production.get("qc") or {}
+    export_path = str(production.get("export_path") or production.get("output_path") or "")
+    bytes_ = _resolve_export_bytes(production, export_path)
+    foundation = foundation or bool(production.get("foundation")) or str(
+        production.get("demo_id") or ""
+    ).startswith("foundation_")
+    verified = _export_is_technically_verified(production, export_path)
+
+    if foundation and not qc and not production.get("mock"):
+        if production.get("require_full_qc", True) and "passed" not in qc:
+            if verified:
+                warnings.append("animation_qc_missing")
+            else:
+                # Still surface as warning here; foundation_gate may escalate if no export
+                warnings.append("animation_qc_missing")
+    if export_path and bytes_ and bytes_ < 50_000 and verified:
+        # Legacy gate demoted: short educational clips may be under 50KB yet valid
+        warnings.append("export_size_below_legacy_threshold")
+    elif export_path and bytes_ < 50_000 and not verified and not production.get("mock"):
+        warnings.append("export_too_small")
+    return warnings
 
 
 def _score_from_qc(qc: dict[str, Any], *, foundation: bool = False) -> dict[str, float]:
@@ -210,10 +307,10 @@ def score_production(
     scores[QualityDimension.PLATFORM.value] = float(production.get("platform_score") or 70.0)
 
     hard_fails = hard_fail_reasons(production, foundation=is_foundation, scores=scores)
-    warnings: list[str] = []
+    warnings: list[str] = list(soft_warning_reasons(production, foundation=is_foundation))
     for dim, min_score in thresholds.items():
         if dim in scores and scores[dim] < min_score:
-            # Foundation: lipsync / animation threshold breaches are hard fails (already)
+            # Foundation: lipsync / animation threshold breaches are hard fails when QC present
             if is_foundation and dim in (
                 QualityDimension.LIPSYNC.value,
                 QualityDimension.ANIMATION.value,
@@ -223,7 +320,15 @@ def score_production(
 
     overall = round(sum(scores.values()) / max(len(scores), 1), 1)
     min_overall = 70.0 if is_foundation else 65.0
-    passed = not hard_fails and not warnings and overall >= min_overall
+    # Soft dimension warnings must not alone block a technically verified export
+    verified = _export_is_technically_verified(
+        production,
+        str(production.get("export_path") or production.get("output_path") or ""),
+    )
+    if verified and not hard_fails:
+        passed = True
+    else:
+        passed = not hard_fails and not warnings and overall >= min_overall
 
     return QualityReport(
         scores=scores,

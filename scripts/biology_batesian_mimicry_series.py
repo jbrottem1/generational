@@ -225,6 +225,7 @@ def verify_mp4(path: Path, ffmpeg: str) -> dict:
 
 
 def produce(ep: dict, *, smoke: bool = False, allow_cloud_smoke: bool = False) -> dict:
+    _ = allow_cloud_smoke
     job_path = ROOT / "data" / "productions" / "local_jobs" / f"{ep['id']}_LOCAL_RENDER_JOB.json"
     gate = gate_production(
         job_id=ep["id"],
@@ -237,10 +238,9 @@ def produce(ep: dict, *, smoke: bool = False, allow_cloud_smoke: bool = False) -
         beats=ep["beats"],
         sources=SOURCES,
         job_output=job_path,
-        allow_cloud_smoke=allow_cloud_smoke,
     )
     if not gate.get("proceed"):
-        return {**gate, "ok": True, "id": ep["id"], "title": ep["title"]}
+        return {**gate, "ok": False, "id": ep["id"], "title": ep["title"]}
 
     work = REPORT_DIR / ep["id"]
     work.mkdir(parents=True, exist_ok=True)
@@ -397,14 +397,11 @@ def main(argv: list[str] | None = None) -> int:
         r = produce(ep, smoke=args.smoke)
         results.append(r)
         status = "✓" if r.get("ok") else "✗"
-        if r.get("status") == "awaiting_local_render":
-            print(f"  📦 {r.get('message')} → {r.get('job_path')}", flush=True)
-        else:
-            print(
-                f"  {status} {r.get('export_path')} "
-                f"Q={r.get('quality_overall')} dur={r.get('duration_sec')}s",
-                flush=True,
-            )
+        print(
+            f"  {status} {r.get('export_path')} "
+            f"Q={r.get('quality_overall')} dur={r.get('duration_sec')}s",
+            flush=True,
+        )
     summary = {
         "series": "batesian_mimicry_biology_benchmark",
         "framework": "generational_curiosity_framework + project_reality",

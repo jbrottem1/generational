@@ -1,0 +1,158 @@
+{
+  "department_id": "prop_studio",
+  "display_name": "Prop Studio",
+  "mission": "Reusable production props with collision, grasp, and LOD",
+  "required_fields": [
+    "geometry",
+    "materials",
+    "collision",
+    "interaction_points",
+    "grasp_points",
+    "lod_versions"
+  ],
+  "assets": [
+    {
+      "asset_id": "SAMPLE_CONTAINER_001",
+      "quality_tier": "phase_ii_production",
+      "grasp_points": [
+        "grasp_primary"
+      ],
+      "lod": [
+        "lod0",
+        "lod1"
+      ]
+    },
+    {
+      "asset_id": "MICROSCOPE_001",
+      "quality_tier": "phase_ii_production",
+      "grasp_points": [
+        "grasp_primary"
+      ],
+      "lod": [
+        "lod0",
+        "lod1"
+      ]
+    },
+    {
+      "asset_id": "MEDICAL_SCANNER_001",
+      "quality_tier": "phase_ii_production",
+      "grasp_points": [
+        "grasp_primary"
+      ],
+      "lod": [
+        "lod0",
+        "lod1"
+      ]
+    },
+    {
+      "asset_id": "DNA_MODEL_001",
+      "quality_tier": "phase_ii_production",
+      "grasp_points": [
+        "grasp_primary"
+      ],
+      "lod": [
+        "lod0",
+        "lod1"
+      ]
+    },
+    {
+      "asset_id": "COMPUTER_001",
+      "quality_tier": "phase_ii_production",
+      "grasp_points": [
+        "grasp_primary"
+      ],
+      "lod": [
+        "lod0",
+        "lod1"
+      ]
+    },
+    {
+      "asset_id": "TABLET_001",
+      "quality_tier": "phase_ii_production",
+      "grasp_points": [
+        "grasp_primary"
+      ],
+      "lod": [
+        "lod0",
+        "lod1"
+      ]
+    },
+    {
+      "asset_id": "COFFEE_MUG_001",
+      "quality_tier": "phase_ii_production",
+      "grasp_points": [
+        "grasp_primary"
+      ],
+      "lod": [
+        "lod0",
+        "lod1"
+      ]
+    },
+    {
+      "asset_id": "BOOK_STACK_001",
+      "quality_tier": "phase_ii_production",
+      "grasp_points": [
+        "grasp_primary"
+      ],
+      "lod": [
+        "lod0",
+        "lod1"
+      ]
+    },
+    {
+      "asset_id": "CHAIR_001",
+      "quality_tier": "phase_ii_production",
+      "grasp_points": [
+        "grasp_primary"
+      ],
+      "lod": [
+        "lod0",
+        "lod1"
+      ]
+    },
+    {
+      "asset_id": "DESK_001",
+      "quality_tier": "phase_ii_production",
+      "grasp_points": [
+        "grasp_primary"
+      ],
+      "lod": [
+        "lod0",
+        "lod1"
+      ]
+    },
+    {
+      "asset_id": "MEDICINE_BOTTLE_001",
+      "quality_tier": "phase_ii_production",
+      "grasp_points": [
+        "grasp_primary"
+      ],
+      "lod": [
+        "lod0",
+        "lod1"
+      ]
+    },
+    {
+      "asset_id": "WHITEBOARD_001",
+      "quality_tier": "phase_ii_production",
+      "grasp_points": [
+        "grasp_primary"
+      ],
+      "lod": [
+        "lod0",
+        "lod1"
+      ]
+    },
+    {
+      "asset_id": "LAB_INSTRUMENT_SET_001",
+      "quality_tier": "phase_ii_production",
+      "grasp_points": [
+        "grasp_primary"
+      ],
+      "lod": [
+        "lod0",
+        "lod1"
+      ]
+    }
+  ]
+}

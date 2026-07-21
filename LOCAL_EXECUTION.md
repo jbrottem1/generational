@@ -1,19 +1,19 @@
 # Local Execution — Render, Verify, Export
 
-**Mode:** `ExecutionMode.LOCAL`  
-**Detection:** macOS with `~/Desktop/AI Start-up/` present, or `GENERATIONAL_EXECUTION_MODE=local`
+**Mode:** `ExecutionMode.LOCAL` (only mode)  
+**Export root:** `~/Desktop/AI Start-Up/Videos/{Category}/`
 
 ---
 
-## Local is responsible for
+## Local owns the full production pipeline
 
-- Image downloads (via cache)
-- OpenAI TTS / ElevenLabs narration
+- Script / brief / render package preparation
+- Image downloads (via local cache)
+- OpenAI TTS / narration
 - FFmpeg rendering
-- Lip-sync performance (`render_lip_sync_performance`)
-- Local asset caching
-- Video assembly and QC gates
-- **Final MP4** on Desktop
+- Lip-sync performance
+- QC gates
+- Verified MP4 export to the media library
 - Finder visibility
 
 ---
@@ -21,106 +21,63 @@
 ## Prerequisites (Mac)
 
 1. Generational repo cloned locally
-2. Python 3 + dependencies (`pip install -r requirements.txt` or project venv)
+2. Python 3 + dependencies
 3. **ffmpeg** installed (`brew install ffmpeg`)
 4. `.env` with `OPENAI_API_KEY` (or use `--smoke` for offline test)
-5. Reality catalog images present under `data/reality/images/` (or run `python3 scripts/fetch_reality_images.py`)
+5. Reality catalog images under `data/reality/images/` when needed
 
 ---
 
-## Render from job package (recommended)
-
-After a cloud agent prepares the job:
+## Recommended workflow
 
 ```bash
 cd /path/to/generational
-python3 scripts/run_local_render_job.py --job LOCAL_RENDER_JOB.json
+
+# Prepare + render a production script (local end-to-end)
+python3 scripts/foundation_v2_turtles.py --smoke
+
+# Or execute an existing render package / job
+python3 scripts/run_local_render_job.py --job RENDER_PACKAGE.json
+
+# Verify a known export
+python3 scripts/verify_local_export.py
 ```
-
-With real TTS (requires OpenAI key in `.env`):
-
-```bash
-python3 scripts/run_local_render_job.py --job LOCAL_RENDER_JOB.json
-```
-
-Offline smoke test:
-
-```bash
-python3 scripts/run_local_render_job.py --job LOCAL_RENDER_JOB.json --smoke
-```
-
-On success the script:
-
-1. Warms **local asset cache** (`data/local_cache/`)
-2. Builds narration
-3. Renders episode
-4. Copies to `~/Desktop/AI Start-up/videos/Test run 2 generational/`
-5. Runs ffprobe verification
-6. Reveals file in **Finder** (`open -R`)
 
 ---
 
-## Render from flagship script (direct)
+## Export standard
 
-When already on Mac in local mode, scripts render directly:
+Finished videos land under the classified media library:
 
-```bash
-python3 scripts/foundation_v2_turtles.py
+```
+~/Desktop/AI Start-Up/Videos/{Category}/{Category}_{Series}_{Episode}_{Topic}.mp4
 ```
 
-Gate detects local mode → full pipeline runs → verified Desktop export.
+Example:
+
+```
+~/Desktop/AI Start-Up/Videos/Biology/Biology_001_202_Origin_of_Turtles.mp4
+```
+
+Companion folder (script, sources, metadata, captions) sits beside the MP4.
 
 ---
 
-## Asset cache
+## Status vocabulary
 
-Location: `data/local_cache/`
+| Status | Meaning |
+|--------|---------|
+| `ready_to_render` | Package prepared; local render authorized |
+| `verified` | Destination MP4 verified |
+| `SUCCESS` / `SUCCESS_WITH_WARNINGS` / `FAILED` | Final production status (`FINAL_STATUS_SPEC.md`) |
 
-| Kind | Reuse |
-|------|-------|
-| `reality_image` | Catalog JPEGs by `image_id` |
-| `image` | Remote URL downloads by URL hash |
-
-Identical assets are not re-downloaded across renders.
-
-API: `services/media_production/local_cache.py`
+The legacy handoff status `awaiting_local_render` is retired (may appear only in historical JSON).
 
 ---
 
-## Export verification (required for SUCCESS)
+## Cloud usage policy
 
-All checks must pass (`verified_export.verify_canonical_export`):
+Cursor Cloud is **not** part of the production workflow.
 
-| Check | Requirement |
-|-------|-------------|
-| `file_exists` | Path is a file |
-| `size_gt_zero` | Bytes > 0 |
-| `video_stream` | h264 (typical) |
-| `audio_stream` | aac (typical) |
-| `playable` | ffprobe OK |
-| `duration` | > 0.5s |
-| `resolution` | width × height set |
-| `under_canonical_dir` | Under Test run 2 generational |
-| `local_execution` | Not cloud mode |
-
-Only then may status be `"export_verified"`.
-
----
-
-## Canonical destination
-
-```
-~/Desktop/AI Start-up/videos/Test run 2 generational/
-```
-
-Never overwrite — version suffix `_v2`, `_v3`, … when filename exists.
-
----
-
-## Open export folder
-
-```bash
-open ~/Desktop/AI\ Start-up/videos/Test\ run\ 2\ generational/
-```
-
-Or rely on `run_local_render_job.py` which calls Finder reveal automatically.
+It may be used manually for brainstorming or architecture **only when you explicitly request it**.  
+It must never render, export, or claim a Desktop MP4 exists.

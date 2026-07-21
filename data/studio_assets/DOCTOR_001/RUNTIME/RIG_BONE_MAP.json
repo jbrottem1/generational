@@ -1,0 +1,797 @@
+{
+  "actor_id": "DOCTOR_001",
+  "world_id": "GENERATIONAL_MEDICAL_LAB",
+  "prop_id": "SAMPLE_CONTAINER_001",
+  "bones": [
+    {
+      "canonical_bone_name": "root",
+      "runtime_bone_name": "root",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": null
+    },
+    {
+      "canonical_bone_name": "pelvis",
+      "runtime_bone_name": "pelvis",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "root"
+    },
+    {
+      "canonical_bone_name": "spine_01",
+      "runtime_bone_name": "spine_01",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "pelvis"
+    },
+    {
+      "canonical_bone_name": "spine_02",
+      "runtime_bone_name": "spine_02",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "spine_01"
+    },
+    {
+      "canonical_bone_name": "chest",
+      "runtime_bone_name": "chest",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "spine_02"
+    },
+    {
+      "canonical_bone_name": "neck",
+      "runtime_bone_name": "neck",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "chest"
+    },
+    {
+      "canonical_bone_name": "head",
+      "runtime_bone_name": "head",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "neck"
+    },
+    {
+      "canonical_bone_name": "jaw",
+      "runtime_bone_name": "jaw",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "head"
+    },
+    {
+      "canonical_bone_name": "eye_L",
+      "runtime_bone_name": "eye_L",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "head"
+    },
+    {
+      "canonical_bone_name": "eye_R",
+      "runtime_bone_name": "eye_R",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "head"
+    },
+    {
+      "canonical_bone_name": "lid_upper_L",
+      "runtime_bone_name": "lid_upper_L",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "head"
+    },
+    {
+      "canonical_bone_name": "lid_upper_R",
+      "runtime_bone_name": "lid_upper_R",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "head"
+    },
+    {
+      "canonical_bone_name": "lid_lower_L",
+      "runtime_bone_name": "lid_lower_L",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "head"
+    },
+    {
+      "canonical_bone_name": "lid_lower_R",
+      "runtime_bone_name": "lid_lower_R",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "head"
+    },
+    {
+      "canonical_bone_name": "clavicle_L",
+      "runtime_bone_name": "clavicle_L",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "chest"
+    },
+    {
+      "canonical_bone_name": "upper_arm_L",
+      "runtime_bone_name": "upper_arm_L",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "clavicle_L"
+    },
+    {
+      "canonical_bone_name": "forearm_L",
+      "runtime_bone_name": "forearm_L",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "upper_arm_L"
+    },
+    {
+      "canonical_bone_name": "hand_L",
+      "runtime_bone_name": "hand_L",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "forearm_L"
+    },
+    {
+      "canonical_bone_name": "thumb_L",
+      "runtime_bone_name": "thumb_L",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "hand_L"
+    },
+    {
+      "canonical_bone_name": "index_L",
+      "runtime_bone_name": "index_L",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "hand_L"
+    },
+    {
+      "canonical_bone_name": "middle_L",
+      "runtime_bone_name": "middle_L",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "hand_L"
+    },
+    {
+      "canonical_bone_name": "ring_L",
+      "runtime_bone_name": "ring_L",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "hand_L"
+    },
+    {
+      "canonical_bone_name": "clavicle_R",
+      "runtime_bone_name": "clavicle_R",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "chest"
+    },
+    {
+      "canonical_bone_name": "upper_arm_R",
+      "runtime_bone_name": "upper_arm_R",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "clavicle_R"
+    },
+    {
+      "canonical_bone_name": "forearm_R",
+      "runtime_bone_name": "forearm_R",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "upper_arm_R"
+    },
+    {
+      "canonical_bone_name": "hand_R",
+      "runtime_bone_name": "hand_R",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "forearm_R"
+    },
+    {
+      "canonical_bone_name": "thumb_R",
+      "runtime_bone_name": "thumb_R",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "hand_R"
+    },
+    {
+      "canonical_bone_name": "index_R",
+      "runtime_bone_name": "index_R",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "hand_R"
+    },
+    {
+      "canonical_bone_name": "middle_R",
+      "runtime_bone_name": "middle_R",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "hand_R"
+    },
+    {
+      "canonical_bone_name": "ring_R",
+      "runtime_bone_name": "ring_R",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "hand_R"
+    },
+    {
+      "canonical_bone_name": "thigh_L",
+      "runtime_bone_name": "thigh_L",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "pelvis"
+    },
+    {
+      "canonical_bone_name": "shin_L",
+      "runtime_bone_name": "shin_L",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "thigh_L"
+    },
+    {
+      "canonical_bone_name": "foot_L",
+      "runtime_bone_name": "foot_L",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "shin_L"
+    },
+    {
+      "canonical_bone_name": "toe_L",
+      "runtime_bone_name": "toe_L",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "foot_L"
+    },
+    {
+      "canonical_bone_name": "thigh_R",
+      "runtime_bone_name": "thigh_R",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "pelvis"
+    },
+    {
+      "canonical_bone_name": "shin_R",
+      "runtime_bone_name": "shin_R",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "thigh_R"
+    },
+    {
+      "canonical_bone_name": "foot_R",
+      "runtime_bone_name": "foot_R",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "shin_R"
+    },
+    {
+      "canonical_bone_name": "toe_R",
+      "runtime_bone_name": "toe_R",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "foot_R"
+    },
+    {
+      "canonical_bone_name": "coat_L",
+      "runtime_bone_name": "coat_L",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "chest"
+    },
+    {
+      "canonical_bone_name": "coat_R",
+      "runtime_bone_name": "coat_R",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "chest"
+    },
+    {
+      "canonical_bone_name": "coat_hem",
+      "runtime_bone_name": "coat_hem",
+      "rotation_offset": [
+        0,
+        0,
+        0
+      ],
+      "translation_offset": [
+        0,
+        0,
+        0
+      ],
+      "scale_factor": 1.0,
+      "axis_conversion": "blender_z_up",
+      "parent_validation": "chest"
+    }
+  ],
+  "count": 41,
+  "facial_shape_keys": [
+    "Basis",
+    "jaw_open",
+    "smile",
+    "concern",
+    "blink_L",
+    "blink_R",
+    "upper_lid_raise_L",
+    "upper_lid_raise_R",
+    "eye_squint",
+    "brow_raise",
+    "brow_inner_raise",
+    "brow_outer_raise",
+    "brow_lower",
+    "cheek_raise",
+    "nose_tension",
+    "lip_widen",
+    "lip_funnel",
+    "lip_pucker",
+    "lip_press",
+    "lip_roll",
+    "mouth_corners_up",
+    "mouth_corners_down",
+    "surprise",
+    "focus",
+    "empathy",
+    "joy",
+    "curiosity",
+    "determination",
+    "hope",
+    "amusement",
+    "sadness",
+    "viseme_REST",
+    "viseme_M",
+    "viseme_A",
+    "viseme_E",
+    "viseme_O",
+    "viseme_U",
+    "viseme_F",
+    "viseme_L",
+    "viseme_WQ",
+    "viseme_smile_speak",
+    "viseme_concern_speak"
+  ],
+  "facial_channels_expected": [
+    "jaw_open",
+    "smile",
+    "concern",
+    "blink_L",
+    "blink_R",
+    "upper_lid_raise_L",
+    "upper_lid_raise_R",
+    "eye_squint",
+    "brow_raise",
+    "brow_inner_raise",
+    "brow_outer_raise",
+    "brow_lower",
+    "cheek_raise",
+    "nose_tension",
+    "lip_widen",
+    "lip_funnel",
+    "lip_pucker",
+    "lip_press",
+    "lip_roll",
+    "mouth_corners_up",
+    "mouth_corners_down",
+    "surprise",
+    "focus",
+    "empathy",
+    "joy",
+    "curiosity",
+    "determination",
+    "hope",
+    "amusement",
+    "sadness",
+    "viseme_REST",
+    "viseme_M",
+    "viseme_A",
+    "viseme_E",
+    "viseme_O",
+    "viseme_U",
+    "viseme_F",
+    "viseme_L",
+    "viseme_WQ",
+    "viseme_smile_speak",
+    "viseme_concern_speak"
+  ],
+  "skinned": true,
+  "armature": true,
+  "asset_origin": "doctor_001_production_v1",
+  "quality_tier": "production_v1",
+  "creative_direction": "generational_v3"
+}

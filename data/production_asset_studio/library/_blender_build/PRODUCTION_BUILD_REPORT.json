@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "phase": "III",
+  "creative_direction": "generational_v3",
+  "scene": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/production_asset_studio/library/_blender_build/PHASE_III_CREATIVE_SCENE.blend",
+  "runtime_dir": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/studio_assets/DOCTOR_001/RUNTIME",
+  "character": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/studio_assets/DOCTOR_001/RUNTIME/DOCTOR_001_SKINNED.blend",
+  "world": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/studio_assets/DOCTOR_001/RUNTIME/GENERATIONAL_MEDICAL_LAB.blend",
+  "prop": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/studio_assets/DOCTOR_001/RUNTIME/SAMPLE_CONTAINER_001.blend",
+  "lights": [
+    "KEY_SUN",
+    "FILL_LIGHT",
+    "RIM_LIGHT",
+    "WINDOW_PRACTICAL"
+  ],
+  "bones": 31,
+  "shape_keys": [
+    "Basis",
+    "jaw_open",
+    "smile",
+    "concern",
+    "blink_L",
+    "blink_R",
+    "brow_raise",
+    "lip_widen",
+    "cheek_raise",
+    "joy",
+    "curiosity",
+    "empathy",
+    "viseme_A",
+    "viseme_E",
+    "viseme_O",
+    "viseme_U",
+    "viseme_M",
+    "viseme_F"
+  ],
+  "lab_objects": [
+    "door",
+    "table",
+    "scanner",
+    "floor",
+    "window",
+    "holo",
+    "holo2",
+    "fog"
+  ],
+  "container": "SAMPLE_CONTAINER_001"
+}

@@ -1,0 +1,20 @@
+{
+  "character_id": "DOCTOR_001",
+  "must_read_in_black_shape": true,
+  "keys": [
+    "tall_upright_medical_coat",
+    "rounded_cranial_module",
+    "chest_interface_block",
+    "open_professional_stance",
+    "no_spiky_menace_appendages"
+  ],
+  "tests": [
+    "silhouette_readability plate",
+    "backlit corridor",
+    "distant establishing"
+  ],
+  "reject_if": [
+    "unrecognizable_at_distance",
+    "confused_with_generic_robot"
+  ]
+}

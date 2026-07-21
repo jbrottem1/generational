@@ -1,0 +1,1454 @@
+{
+  "package_type": "WORLD_PACKAGE",
+  "package_version": "1.0.0",
+  "engine_id": "stage_world_simulation",
+  "created_at": "2026-07-18T01:06:12.919205+00:00",
+  "world_id": "WORLD-FOREST",
+  "display_name": "Forest",
+  "location_alias": "LOC-FOREST",
+  "persistent": true,
+  "flat_image_background": false,
+  "philosophy": {
+    "not_a_renderer": true,
+    "not_an_image_generator": true,
+    "rule": "Characters move through the world. They do not stand in front of photographs.",
+    "pipeline": [
+      "build_persistent_stage",
+      "place_digital_actors",
+      "navigate_and_interact",
+      "camera_follows_performance",
+      "renderer_records"
+    ]
+  },
+  "geometry": {
+    "world_id": "WORLD-FOREST",
+    "elements_required": [
+      "floor",
+      "walls",
+      "ceilings",
+      "doors",
+      "windows",
+      "furniture",
+      "props"
+    ],
+    "dimensions_m": {
+      "x": 40.0,
+      "y": 20.0,
+      "z": 40.0
+    },
+    "floor": [
+      {
+        "id": "main_floor",
+        "bounds": [
+          [
+            -20.0,
+            0,
+            -20.0
+          ],
+          [
+            20.0,
+            0,
+            20.0
+          ]
+        ],
+        "walkable": true,
+        "material": "exterior_ground"
+      }
+    ],
+    "walls": [],
+    "ceilings": [],
+    "doors": [
+      {
+        "id": "door_main",
+        "position": [
+          0.0,
+          0.0,
+          -19.9
+        ],
+        "swing": "inward",
+        "interactable": true
+      }
+    ],
+    "windows": [],
+    "furniture": [
+      {
+        "id": "furn_fallen_log_bench_0",
+        "type": "bench",
+        "position": [
+          -10.0,
+          0.0,
+          -6.0
+        ],
+        "collision": true,
+        "navigable_around": true
+      }
+    ],
+    "props": [
+      {
+        "id": "prop_moss_rock_0",
+        "type": "moss_rock",
+        "position": [
+          -10.0,
+          0.0,
+          -4.8
+        ],
+        "collision": true,
+        "interactable": true
+      },
+      {
+        "id": "prop_trail_marker_1",
+        "type": "trail_marker",
+        "position": [
+          -2.0,
+          0.0,
+          -4.8
+        ],
+        "collision": true,
+        "interactable": true
+      }
+    ],
+    "not_a_flat_image": true,
+    "explorable_volume": true,
+    "persistent": true
+  },
+  "navigation": {
+    "world_id": "WORLD-FOREST",
+    "nav_mesh": {
+      "walkable": {
+        "polygon": [
+          [
+            -19.6,
+            0.0,
+            -19.6
+          ],
+          [
+            19.6,
+            0.0,
+            -19.6
+          ],
+          [
+            19.6,
+            0.0,
+            19.6
+          ],
+          [
+            -19.6,
+            0.0,
+            19.6
+          ]
+        ],
+        "agent_radius_m": 0.35,
+        "agent_height_m": 1.8
+      },
+      "obstacles": [
+        {
+          "id": "furn_fallen_log_bench_0",
+          "center": [
+            -10.0,
+            0.0,
+            -6.0
+          ],
+          "radius_m": 0.55,
+          "navigable_around": true
+        },
+        {
+          "id": "prop_moss_rock_0",
+          "center": [
+            -10.0,
+            0.0,
+            -4.8
+          ],
+          "radius_m": 0.55,
+          "navigable_around": true
+        },
+        {
+          "id": "prop_trail_marker_1",
+          "center": [
+            -2.0,
+            0.0,
+            -4.8
+          ],
+          "radius_m": 0.55,
+          "navigable_around": true
+        }
+      ],
+      "waypoints": [
+        {
+          "id": "spawn_entrance",
+          "position": [
+            0.0,
+            0.0,
+            -18.8
+          ],
+          "kind": "entrance"
+        },
+        {
+          "id": "center_stage",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "kind": "performance"
+        },
+        {
+          "id": "teach_mark",
+          "position": [
+            6.0,
+            0.0,
+            4.0
+          ],
+          "kind": "performance"
+        },
+        {
+          "id": "prop_approach",
+          "position": [
+            8.0,
+            0.0,
+            6.0
+          ],
+          "kind": "interaction"
+        }
+      ],
+      "paths": [
+        {
+          "id": "enter_to_center",
+          "from": "spawn_entrance",
+          "to": "center_stage"
+        },
+        {
+          "id": "center_to_teach",
+          "from": "center_stage",
+          "to": "teach_mark"
+        },
+        {
+          "id": "teach_to_prop",
+          "from": "teach_mark",
+          "to": "prop_approach"
+        }
+      ],
+      "stairs": false,
+      "collision_avoidance": true
+    },
+    "capabilities": [
+      "walking",
+      "running",
+      "turning",
+      "stairs",
+      "sitting",
+      "opening_doors",
+      "approaching_objects",
+      "moving_around_furniture",
+      "avoiding_collisions"
+    ],
+    "forbid_teleport": true,
+    "forbid_slide_through_geometry": true,
+    "actors_navigate_world": true,
+    "not_photo_backdrop": true
+  },
+  "interaction_points": {
+    "world_id": "WORLD-FOREST",
+    "points": [
+      {
+        "id": "interact_furn_fallen_log_bench_0",
+        "target_id": "furn_fallen_log_bench_0",
+        "target_type": "bench",
+        "position": [
+          -10.0,
+          0.0,
+          -6.0
+        ],
+        "actions": [
+          "sit",
+          "stand"
+        ],
+        "approach_radius_m": 0.9,
+        "requires_navigation": true
+      },
+      {
+        "id": "interact_prop_moss_rock_0",
+        "target_id": "prop_moss_rock_0",
+        "target_type": "moss_rock",
+        "position": [
+          -10.0,
+          0.0,
+          -4.8
+        ],
+        "actions": [
+          "inspect",
+          "approach"
+        ],
+        "approach_radius_m": 0.9,
+        "requires_navigation": true
+      },
+      {
+        "id": "interact_prop_trail_marker_1",
+        "target_id": "prop_trail_marker_1",
+        "target_type": "trail_marker",
+        "position": [
+          -2.0,
+          0.0,
+          -4.8
+        ],
+        "actions": [
+          "inspect",
+          "approach"
+        ],
+        "approach_radius_m": 0.9,
+        "requires_navigation": true
+      },
+      {
+        "id": "interact_door_main",
+        "target_id": "door_main",
+        "target_type": "door",
+        "position": [
+          0.0,
+          0.0,
+          -19.9
+        ],
+        "actions": [
+          "open",
+          "close",
+          "enter",
+          "exit"
+        ],
+        "approach_radius_m": 0.8,
+        "requires_navigation": true
+      },
+      {
+        "id": "interact_virtual_chair",
+        "target_id": "virtual_chair",
+        "target_type": "chair",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actions": [
+          "sit",
+          "stand"
+        ],
+        "approach_radius_m": 0.9,
+        "requires_navigation": true,
+        "virtual_until_dressed": true
+      },
+      {
+        "id": "interact_virtual_desk",
+        "target_id": "virtual_desk",
+        "target_type": "desk",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actions": [
+          "lean",
+          "write",
+          "place_object"
+        ],
+        "approach_radius_m": 0.9,
+        "requires_navigation": true,
+        "virtual_until_dressed": true
+      },
+      {
+        "id": "interact_virtual_microscope",
+        "target_id": "virtual_microscope",
+        "target_type": "microscope",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actions": [
+          "inspect",
+          "adjust",
+          "point"
+        ],
+        "approach_radius_m": 0.9,
+        "requires_navigation": true,
+        "virtual_until_dressed": true
+      },
+      {
+        "id": "interact_virtual_whiteboard",
+        "target_id": "virtual_whiteboard",
+        "target_type": "whiteboard",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actions": [
+          "write",
+          "erase",
+          "present"
+        ],
+        "approach_radius_m": 0.9,
+        "requires_navigation": true,
+        "virtual_until_dressed": true
+      }
+    ],
+    "count": 8,
+    "action_catalog": {
+      "chair": [
+        "sit",
+        "stand"
+      ],
+      "desk": [
+        "lean",
+        "write",
+        "place_object"
+      ],
+      "microscope": [
+        "inspect",
+        "adjust",
+        "point"
+      ],
+      "whiteboard": [
+        "write",
+        "erase",
+        "present"
+      ],
+      "door": [
+        "open",
+        "close",
+        "enter",
+        "exit"
+      ],
+      "hologram": [
+        "point",
+        "gesture",
+        "explain"
+      ],
+      "console": [
+        "type",
+        "touch",
+        "lean"
+      ],
+      "bookshelf": [
+        "browse",
+        "take_book",
+        "place_book"
+      ],
+      "bench": [
+        "sit",
+        "stand"
+      ],
+      "exhibit": [
+        "inspect",
+        "point",
+        "activate"
+      ]
+    },
+    "every_prop_advertises_interactions": true,
+    "forbid_non_interactive_set_dressing_as_primary": true
+  },
+  "lighting": {
+    "mood": "god_rays",
+    "dynamic": true
+  },
+  "weather": "dappled_breeze",
+  "ambient_effects": [
+    "ambient_particles",
+    "lighting_changes",
+    "moving_trees",
+    "wind",
+    "birds",
+    "clouds"
+  ],
+  "living_world": {
+    "world_id": "WORLD-FOREST",
+    "living": true,
+    "forbid_static_environment": true,
+    "channels": [
+      "ambient_particles",
+      "lighting_changes",
+      "moving_trees",
+      "wind",
+      "birds",
+      "clouds"
+    ],
+    "tracks": [
+      {
+        "id": "ambient_particles",
+        "continuous": true,
+        "layer": "midground",
+        "amplitude": 0.4
+      },
+      {
+        "id": "lighting_changes",
+        "continuous": true,
+        "layer": "midground",
+        "amplitude": 0.4
+      },
+      {
+        "id": "moving_trees",
+        "continuous": true,
+        "layer": "background",
+        "amplitude": 0.4
+      },
+      {
+        "id": "wind",
+        "continuous": true,
+        "layer": "midground",
+        "amplitude": 0.4
+      },
+      {
+        "id": "birds",
+        "continuous": true,
+        "layer": "background",
+        "amplitude": 0.4
+      },
+      {
+        "id": "clouds",
+        "continuous": true,
+        "layer": "background",
+        "amplitude": 0.4
+      }
+    ],
+    "weather": "dappled_breeze",
+    "lighting": "god_rays",
+    "lighting_dynamic": true,
+    "philosophy": "The environment is never static."
+  },
+  "camera": {
+    "world_id": "WORLD-FOREST",
+    "modes": [
+      "tracking",
+      "follow",
+      "wide_establishing",
+      "medium_coverage",
+      "close_up_reaction",
+      "over_the_shoulder",
+      "motivated"
+    ],
+    "default_mode": "wide_establishing",
+    "follows_performance": true,
+    "camera_replaces_actor_motion": false,
+    "motivated_only": true,
+    "true_motion_map": {
+      "tracking": "tracking",
+      "follow": "tracking",
+      "wide_establishing": "pull_out",
+      "medium_coverage": "orbit",
+      "close_up_reaction": "push_in",
+      "over_the_shoulder": "handheld",
+      "motivated": "tracking"
+    },
+    "recommended_coverage": [
+      {
+        "beat": "enter",
+        "mode": "wide_establishing"
+      },
+      {
+        "beat": "walk_explain",
+        "mode": "tracking"
+      },
+      {
+        "beat": "interact_prop",
+        "mode": "over_the_shoulder"
+      },
+      {
+        "beat": "reaction",
+        "mode": "close_up_reaction"
+      },
+      {
+        "beat": "teach",
+        "mode": "medium_coverage"
+      }
+    ],
+    "forbid_ken_burns_as_performance": true,
+    "notes": "Camera records the stage performance. Actor locomotion is primary."
+  },
+  "environment_department_ref": {
+    "environment_id": "doctor_medical_institute_lab_a",
+    "composed": true
+  },
+  "environment_package": {
+    "environment_id": "doctor_medical_institute_lab_a",
+    "definition": {
+      "environment_id": "doctor_medical_institute_lab_a",
+      "name": "Primary Diagnostic Laboratory",
+      "world_id": "generational_medical_research_institute",
+      "function": "diagnosis_and_teaching",
+      "dimensions_meters": {
+        "width": 18.0,
+        "depth": 25.0,
+        "height": 6.0
+      },
+      "architectural_style": "cinematic_futurist_medical",
+      "time_of_day": "morning",
+      "weather": "clear",
+      "continuity_version": "1.0.0",
+      "forbid_regenerate_from_scratch": true,
+      "home_of": "DOCTOR_001",
+      "location_alias": "LOC-GMRI",
+      "memorable_feature": "warm-blue holographic teaching column at center"
+    },
+    "layout": {
+      "environment_id": "doctor_medical_institute_lab_a",
+      "dimensions_meters": {
+        "width": 18.0,
+        "depth": 25.0,
+        "height": 6.0
+      },
+      "zones": [
+        {
+          "zone_id": "teaching_zone",
+          "bounds": [
+            [
+              -2,
+              0,
+              -2
+            ],
+            [
+              4,
+              3,
+              4
+            ]
+          ],
+          "function": "doctor_explanation",
+          "camera_access": true,
+          "character_access": true
+        },
+        {
+          "zone_id": "sterile_lab_zone",
+          "bounds": [
+            [
+              5,
+              0,
+              -4
+            ],
+            [
+              11,
+              3,
+              3
+            ]
+          ],
+          "function": "sample_analysis",
+          "camera_access": true,
+          "character_access": "authorized_only"
+        },
+        {
+          "zone_id": "circulation_path",
+          "bounds": [
+            [
+              -8,
+              0,
+              -1
+            ],
+            [
+              8,
+              3,
+              1
+            ]
+          ],
+          "function": "staff_movement",
+          "camera_access": true,
+          "character_access": true
+        }
+      ],
+      "paths": [
+        "main_circulation",
+        "sterile_access",
+        "emergency_exit_east"
+      ],
+      "entrances": [
+        "main_airlock"
+      ],
+      "exits": [
+        "main_airlock",
+        "emergency_exit_east"
+      ],
+      "camera_safe_zones": [
+        "teaching_zone"
+      ],
+      "character_movement_zones": [
+        "teaching_zone",
+        "circulation_path"
+      ],
+      "interaction_zones": [
+        "teaching_console",
+        "scanner_bay"
+      ],
+      "equipment_zones": [
+        "sterile_lab_zone"
+      ],
+      "collision_boundaries": true,
+      "visibility_zones": [
+        "teaching_zone_to_window"
+      ],
+      "lighting_zones": [
+        "clinical_key",
+        "holo_practical",
+        "window_fill"
+      ],
+      "sound_zones": [
+        "soft_hvac",
+        "holo_hum",
+        "distant_footsteps"
+      ],
+      "layered_spatial_design": {
+        "environment_id": "doctor_medical_institute_lab_a",
+        "require_three_layers": true,
+        "foreground": [
+          {
+            "id": "scanner_arm_edge",
+            "type": "prop",
+            "purpose": "depth_frame"
+          },
+          {
+            "id": "plant_edge",
+            "type": "vegetation",
+            "purpose": "life_and_parallax"
+          },
+          {
+            "id": "console_rail",
+            "type": "architecture",
+            "purpose": "camera_frame"
+          }
+        ],
+        "midground": [
+          {
+            "id": "primary_character",
+            "type": "character",
+            "purpose": "action"
+          },
+          {
+            "id": "diagnostic_hologram",
+            "type": "prop",
+            "purpose": "education_focus"
+          },
+          {
+            "id": "teaching_console",
+            "type": "prop",
+            "purpose": "function"
+          }
+        ],
+        "background": [
+          {
+            "id": "observation_window",
+            "type": "architecture",
+            "purpose": "depth"
+          },
+          {
+            "id": "researchers_working",
+            "type": "background_population",
+            "purpose": "inhabited_world"
+          },
+          {
+            "id": "secondary_lab_bays",
+            "type": "architecture",
+            "purpose": "function_history"
+          },
+          {
+            "id": "sky_or_courtyard",
+            "type": "exterior",
+            "purpose": "world_beyond_frame"
+          }
+        ],
+        "depth_tools": [
+          "focus",
+          "scale",
+          "contrast",
+          "lighting",
+          "atmospheric_haze",
+          "color_temperature",
+          "motion_speed",
+          "parallax"
+        ],
+        "reject": [
+          "flat_backdrop",
+          "empty_void",
+          "single_layer_only"
+        ]
+      },
+      "scene_graph": {
+        "environment_id": "doctor_medical_institute_lab_a",
+        "root": {
+          "node_id": "doctor_medical_institute_lab_a_root",
+          "node_type": "architecture",
+          "transform": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "material_id": null,
+          "children": [
+            {
+              "node_id": "floor",
+              "node_type": "architecture",
+              "transform": {
+                "position": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "scale": [
+                  18,
+                  1,
+                  25
+                ]
+              },
+              "material_id": "medical_floor_polymer",
+              "children": [],
+              "tags": [
+                "floor",
+                "contact"
+              ],
+              "animated": false,
+              "interaction_points": []
+            },
+            {
+              "node_id": "teaching_console",
+              "node_type": "prop",
+              "transform": {
+                "position": [
+                  0,
+                  1.0,
+                  -1.5
+                ],
+                "rotation": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              },
+              "material_id": "brushed_titanium_medical",
+              "children": [],
+              "tags": [
+                "midground",
+                "interaction"
+              ],
+              "animated": true,
+              "interaction_points": [
+                "screen",
+                "handle"
+              ]
+            },
+            {
+              "node_id": "plant_edge",
+              "node_type": "vegetation",
+              "transform": {
+                "position": [
+                  -2.2,
+                  0.0,
+                  1.0
+                ],
+                "rotation": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              },
+              "material_id": "leaf_translucent",
+              "children": [],
+              "tags": [
+                "foreground"
+              ],
+              "animated": true,
+              "interaction_points": []
+            },
+            {
+              "node_id": "observation_window",
+              "node_type": "architecture",
+              "transform": {
+                "position": [
+                  0,
+                  2.5,
+                  -12
+                ],
+                "rotation": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              },
+              "material_id": "glass_clear",
+              "children": [],
+              "tags": [
+                "background"
+              ],
+              "animated": false,
+              "interaction_points": []
+            },
+            {
+              "node_id": "key_sun",
+              "node_type": "light",
+              "transform": {
+                "position": [
+                  -3,
+                  5,
+                  2
+                ],
+                "rotation": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              },
+              "material_id": null,
+              "children": [],
+              "tags": [
+                "key"
+              ],
+              "animated": false,
+              "interaction_points": []
+            }
+          ],
+          "tags": [
+            "root"
+          ],
+          "animated": false,
+          "interaction_points": []
+        },
+        "node_types": [
+          "architecture",
+          "terrain",
+          "prop",
+          "vegetation",
+          "vehicle",
+          "character",
+          "light",
+          "weather",
+          "particle_system",
+          "signage",
+          "path",
+          "water",
+          "background_population"
+        ]
+      }
+    },
+    "foreground": [
+      {
+        "id": "scanner_arm_edge",
+        "type": "prop",
+        "purpose": "depth_frame"
+      },
+      {
+        "id": "plant_edge",
+        "type": "vegetation",
+        "purpose": "life_and_parallax"
+      },
+      {
+        "id": "console_rail",
+        "type": "architecture",
+        "purpose": "camera_frame"
+      }
+    ],
+    "midground": [
+      {
+        "id": "primary_character",
+        "type": "character",
+        "purpose": "action"
+      },
+      {
+        "id": "diagnostic_hologram",
+        "type": "prop",
+        "purpose": "education_focus"
+      },
+      {
+        "id": "teaching_console",
+        "type": "prop",
+        "purpose": "function"
+      }
+    ],
+    "background": [
+      {
+        "id": "observation_window",
+        "type": "architecture",
+        "purpose": "depth"
+      },
+      {
+        "id": "researchers_working",
+        "type": "background_population",
+        "purpose": "inhabited_world"
+      },
+      {
+        "id": "secondary_lab_bays",
+        "type": "architecture",
+        "purpose": "function_history"
+      },
+      {
+        "id": "sky_or_courtyard",
+        "type": "exterior",
+        "purpose": "world_beyond_frame"
+      }
+    ],
+    "architecture": {
+      "environment_id": "doctor_medical_institute_lab_a",
+      "architectural_style": "cinematic_futurist_medical",
+      "function": "diagnosis_and_teaching",
+      "must_answer": [
+        "What is its function?",
+        "Who uses it?",
+        "How do they enter?",
+        "How do they move through it?",
+        "Where does equipment go?",
+        "Where does light enter?",
+        "What safety rules shape it?",
+        "What history is visible?"
+      ],
+      "required_systems": [
+        "functional_work_zones",
+        "circulation_paths",
+        "storage",
+        "equipment_access",
+        "safety_systems",
+        "readable_signage",
+        "ventilation",
+        "lighting_fixtures",
+        "doors_and_exits",
+        "service_areas"
+      ],
+      "reject": [
+        "decorative_shell_only",
+        "impossible_circulation",
+        "no_exits"
+      ]
+    },
+    "materials": {
+      "brushed_titanium_medical": {
+        "material_id": "brushed_titanium_medical",
+        "base_color": [
+          0.78,
+          0.81,
+          0.84
+        ],
+        "metallic": 0.92,
+        "roughness": 0.32,
+        "specular": 0.68,
+        "normal_strength": 0.18,
+        "wear": 0.06,
+        "fingerprint_visibility": 0.02
+      },
+      "medical_floor_polymer": {
+        "material_id": "medical_floor_polymer",
+        "base_color": [
+          0.88,
+          0.9,
+          0.92
+        ],
+        "metallic": 0.0,
+        "roughness": 0.45,
+        "wear": 0.12,
+        "wetness": 0.0
+      },
+      "glass_clear": {
+        "material_id": "glass_clear",
+        "base_color": [
+          0.95,
+          0.97,
+          1.0
+        ],
+        "metallic": 0.0,
+        "roughness": 0.05,
+        "transmission": 0.92,
+        "opacity": 0.15
+      },
+      "leaf_translucent": {
+        "material_id": "leaf_translucent",
+        "base_color": [
+          0.25,
+          0.55,
+          0.28
+        ],
+        "roughness": 0.55,
+        "subsurface_scattering": 0.35,
+        "transmission": 0.2
+      },
+      "soft_white_polymer_skin": {
+        "material_id": "soft_white_polymer_skin",
+        "base_color": [
+          0.96,
+          0.97,
+          0.98
+        ],
+        "roughness": 0.45,
+        "subsurface_scattering": 0.12
+      }
+    },
+    "vegetation": {
+      "biome": "controlled_indoor_biophilic",
+      "season": "year_round",
+      "layers": [
+        "canopy_none_indoor",
+        "shrubs",
+        "grasses_potted",
+        "ground_cover",
+        "moss_accent"
+      ],
+      "plants": [
+        {
+          "species": "indoor_ficus",
+          "biome": "controlled_indoor_biophilic",
+          "season": "year_round",
+          "height_meters": 2.1,
+          "wind_response": 0.15,
+          "leaf_density": 0.78,
+          "health": 0.94,
+          "placement_reason": "biophilic_calm_near_teaching_zone"
+        },
+        {
+          "species": "herb_planter_wall",
+          "biome": "controlled_indoor_biophilic",
+          "season": "year_round",
+          "height_meters": 1.4,
+          "wind_response": 0.08,
+          "leaf_density": 0.7,
+          "health": 0.9,
+          "placement_reason": "living_wall_signature"
+        }
+      ],
+      "variation_required": [
+        "scale",
+        "rotation",
+        "density",
+        "health",
+        "color"
+      ],
+      "forbid_identical_clones": true
+    },
+    "props": [
+      {
+        "prop_id": "diagnostic_scanner_02",
+        "function": "cellular_scan",
+        "owner": "STAGE_WORLD",
+        "material": "white_ceramic_composite",
+        "default_location": [
+          2.4,
+          1.1,
+          -0.8
+        ],
+        "interaction_points": [
+          "screen",
+          "handle",
+          "sample_tray"
+        ],
+        "continuity_required": true
+      },
+      {
+        "prop_id": "holographic_interface_main",
+        "function": "teaching_display",
+        "owner": "STAGE_WORLD",
+        "material": "emissive_glass",
+        "default_location": [
+          0.0,
+          1.4,
+          -1.2
+        ],
+        "interaction_points": [
+          "volume",
+          "pinch_zone"
+        ],
+        "continuity_required": true
+      },
+      {
+        "prop_id": "research_notes_board",
+        "function": "environmental_storytelling",
+        "owner": "STAGE_WORLD",
+        "material": "matte_composite",
+        "default_location": [
+          -3.5,
+          1.6,
+          -4.0
+        ],
+        "continuity_required": true
+      }
+    ],
+    "set_dressing": {
+      "props": [
+        {
+          "prop_id": "diagnostic_scanner_02",
+          "function": "cellular_scan",
+          "owner": "STAGE_WORLD",
+          "material": "white_ceramic_composite",
+          "default_location": [
+            2.4,
+            1.1,
+            -0.8
+          ],
+          "interaction_points": [
+            "screen",
+            "handle",
+            "sample_tray"
+          ],
+          "continuity_required": true
+        },
+        {
+          "prop_id": "holographic_interface_main",
+          "function": "teaching_display",
+          "owner": "STAGE_WORLD",
+          "material": "emissive_glass",
+          "default_location": [
+            0.0,
+            1.4,
+            -1.2
+          ],
+          "interaction_points": [
+            "volume",
+            "pinch_zone"
+          ],
+          "continuity_required": true
+        },
+        {
+          "prop_id": "research_notes_board",
+          "function": "environmental_storytelling",
+          "owner": "STAGE_WORLD",
+          "material": "matte_composite",
+          "default_location": [
+            -3.5,
+            1.6,
+            -4.0
+          ],
+          "continuity_required": true
+        }
+      ],
+      "storytelling": [
+        "worn_floor_near_teaching_console",
+        "notes_pinned_beside_monitor",
+        "living_plant_wall",
+        "personal_care_token_on_desk",
+        "unfinished_sample_tray_labeled"
+      ],
+      "must_contain": [
+        "evidence_of_current_activity",
+        "evidence_of_past_activity",
+        "evidence_of_ownership",
+        "evidence_of_function",
+        "one_memorable_visual_feature"
+      ],
+      "ambient_motion": [
+        "researchers_working",
+        "screens_updating",
+        "soft_hvac_ripple",
+        "plant_micro_sway",
+        "holo_column_pulse"
+      ],
+      "prop_continuity_rule": "Props must not move between shots without explanation."
+    },
+    "weather": {
+      "type": "clear",
+      "intensity": 0.1,
+      "wind_direction": [
+        0.2,
+        0.0,
+        0.1
+      ],
+      "wind_speed_mps": 1.2,
+      "gust_strength": 0.1,
+      "humidity": 0.45,
+      "cloud_coverage": 0.15,
+      "surface_wetness": 0.0,
+      "visibility_meters": 2000,
+      "affects": [
+        "hair",
+        "clothing",
+        "plants",
+        "flags",
+        "water",
+        "particles",
+        "reflections",
+        "roads",
+        "windows",
+        "sound",
+        "lighting",
+        "character_behavior"
+      ]
+    },
+    "atmosphere": {
+      "density": 0.035,
+      "effects": [
+        "soft_haze",
+        "volumetric_window_light",
+        "subtle_dust"
+      ],
+      "near": {
+        "contrast": "high",
+        "detail": "sharp",
+        "saturation": "full"
+      },
+      "far": {
+        "contrast": "reduced",
+        "edges": "softer",
+        "haze": true,
+        "motion_amplitude": "reduced"
+      },
+      "falloff_samples": {
+        "2m": 0.0676,
+        "10m": 0.2953,
+        "25m": 0.5831
+      }
+    },
+    "lighting": {
+      "time_of_day": "morning",
+      "mood": "clinical_warm",
+      "key": {
+        "type": "sun",
+        "direction": [
+          -0.3,
+          -0.8,
+          -0.4
+        ],
+        "temperature_kelvin": 5200,
+        "intensity": 1.0
+      },
+      "fill": {
+        "type": "sky",
+        "temperature_kelvin": 7200,
+        "intensity": 0.28
+      },
+      "rim": {
+        "type": "window_bounce",
+        "temperature_kelvin": 6500,
+        "intensity": 0.22
+      },
+      "practicals": [
+        {
+          "id": "lab_panel_01",
+          "temperature_kelvin": 4300,
+          "intensity": 0.35
+        },
+        {
+          "id": "holo_column",
+          "temperature_kelvin": 7500,
+          "intensity": 0.4,
+          "emission": true
+        }
+      ],
+      "rules": [
+        "motivated_sources_only",
+        "avoid_flat_front_lighting",
+        "vary_by_time_weather_emotion_beat"
+      ]
+    },
+    "ambient_motion": [
+      "researchers_working",
+      "screens_updating",
+      "soft_hvac_ripple",
+      "plant_micro_sway",
+      "holo_column_pulse"
+    ],
+    "camera_boundaries": [
+      "teaching_zone"
+    ],
+    "character_zones": [
+      "teaching_zone",
+      "circulation_path"
+    ],
+    "continuity_rules": [
+      "Never regenerate doctor_medical_institute_lab_a from scratch.",
+      "Props keep default_location unless story explains move.",
+      "Architecture function remains readable across episodes.",
+      "Lighting sources remain motivated and consistent with time_of_day.",
+      "Weather is a shared world state affecting cloth, plants, and reflections.",
+      "Foreground / midground / background layers required every shot."
+    ],
+    "validation_rules": [
+      "foreground_presence",
+      "midground_readability",
+      "background_depth",
+      "architecture_coherence",
+      "material_quality",
+      "atmospheric_perspective",
+      "lighting_plausibility",
+      "weather_consistency",
+      "vegetation_fit",
+      "prop_continuity",
+      "spatial_continuity",
+      "character_ground_contact",
+      "motion_coherence",
+      "environment_identity_consistency",
+      "empty_space_ratio",
+      "placeholder_geometry_count"
+    ],
+    "pipeline": [
+      "story_requirement",
+      "environment_type",
+      "spatial_layout",
+      "foreground_midground_background",
+      "architecture",
+      "materials",
+      "vegetation",
+      "props_and_set_dressing",
+      "weather_and_atmosphere",
+      "lighting",
+      "ambient_motion",
+      "continuity_validation",
+      "rendered_environment_validation"
+    ],
+    "quality_caveat": "An Environment Package is an execution contract \u2014 not proof of quality. Final acceptance requires inspecting the rendered MP4 for depth, materials, weather response, lighting coherence, and environmental continuity."
+  },
+  "home_for": [],
+  "architecture": {
+    "frozen": true,
+    "no_new_renderer": true,
+    "no_pipeline_redesign": true,
+    "feeds": [
+      "character_world_studio",
+      "character_performance_engine",
+      "environment_department",
+      "world_builder",
+      "shot_assembly",
+      "true_motion"
+    ]
+  },
+  "scene_ref": {
+    "world_id": "WORLD-FOREST",
+    "world_package_ref": "data/world_simulation/library/WORLD-FOREST/WORLD_PACKAGE.json",
+    "do_not_use_flat_photo_backdrop": true,
+    "persistent": true
+  },
+  "validation": {
+    "ok": true,
+    "score": 100,
+    "failures": [],
+    "rejects_hit": [],
+    "reject_catalog": [
+      "flat_image_background",
+      "actors_cannot_navigate",
+      "objects_not_interactable",
+      "environment_static",
+      "camera_replaces_character_movement"
+    ],
+    "success": "Persistent worlds populated by reusable digital actors \u2014 filmed on a real set, not assembled from disconnected images.",
+    "mp4_required": true,
+    "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4: actors must navigate living stages, not photos."
+  }
+}

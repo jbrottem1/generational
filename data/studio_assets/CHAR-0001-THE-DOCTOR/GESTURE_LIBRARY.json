@@ -1,0 +1,81 @@
+{
+  "character_id": "CHAR-0001",
+  "rules": [
+    "motivated_by_communication",
+    "begin_slightly_before_emphasized_word",
+    "return_to_natural_rest",
+    "vary_repeated_gestures",
+    "no_clip_into_torso_or_props"
+  ],
+  "categories": [
+    "teaching",
+    "explaining_scale",
+    "emphasizing",
+    "reassuring",
+    "warning",
+    "thinking",
+    "listening",
+    "object_interaction"
+  ],
+  "library": {
+    "open_palm_teach": {
+      "category": "teaching"
+    },
+    "open_palm_reassurance": {
+      "category": "reassuring"
+    },
+    "diagram_trace": {
+      "category": "teaching"
+    },
+    "scale_show": {
+      "category": "explaining_scale"
+    },
+    "emphasize": {
+      "category": "emphasizing"
+    },
+    "chin_think": {
+      "category": "thinking"
+    },
+    "listen_fold": {
+      "category": "listening"
+    },
+    "warning_focus": {
+      "category": "warning"
+    },
+    "hologram_pinch": {
+      "category": "object_interaction"
+    },
+    "clipboard_point": {
+      "category": "teaching"
+    },
+    "scanner_sweep": {
+      "category": "object_interaction"
+    },
+    "heart_hand": {
+      "category": "compassion"
+    }
+  },
+  "favorites": [
+    "open_palm_teach",
+    "open_palm_reassurance",
+    "hologram_pinch",
+    "clipboard_point",
+    "scanner_sweep",
+    "heart_hand",
+    "chin_think"
+  ],
+  "library_extra": {
+    "hologram_pinch": {
+      "category": "object_interaction"
+    },
+    "clipboard_point": {
+      "category": "teaching"
+    },
+    "scanner_sweep": {
+      "category": "object_interaction"
+    },
+    "heart_hand": {
+      "category": "compassion"
+    }
+  }
+}

@@ -184,12 +184,19 @@ def _render_create() -> None:
     preview = studio.build_settings_preview(command or "Preview command", st.session_state.studio_settings)
     components.settings_preview_card(preview)
 
+    use_executive = st.checkbox(
+        "Executive Orchestrator (one-command studio)",
+        value=True,
+        key="studio_use_executive",
+        help="Coordinates Discovery → Script → Evidence → Visuals → Cinematography → Voice → QA → Export → Publish",
+    )
+
     run_cols = st.columns(2)
     run_standard = run_cols[0].button("🚀 Run Production", type="primary", use_container_width=True)
     run_longform = run_cols[1].button("⏱️ Submit Long-form Job", use_container_width=True)
 
     if run_standard or run_longform:
-        _execute_production(command, longform=run_longform)
+        _execute_production(command, longform=run_longform, use_executive=use_executive and not run_longform)
 
 
 def _ensure_autosave_project(command: str) -> str:
@@ -207,7 +214,7 @@ def _ensure_autosave_project(command: str) -> str:
     return name
 
 
-def _execute_production(command: str, *, longform: bool = False) -> None:
+def _execute_production(command: str, *, longform: bool = False, use_executive: bool = False) -> None:
     if not command.strip():
         st.warning("Enter a production command.")
         return
@@ -225,6 +232,22 @@ def _execute_production(command: str, *, longform: bool = False) -> None:
         "max_unsupported_claims": st.session_state.max_unsupported_claims,
         "min_claim_confidence": st.session_state.min_claim_confidence,
     }
+
+    if use_executive and not longform:
+        with st.spinner("Executive Orchestrator coordinating production…"):
+            result = studio.run_executive_production(command, settings, skip_publishing=False)
+        er = result.get("executive_run") or {}
+        if result.get("ok") or er.get("status") == "completed":
+            notify.success(
+                f"Executive run `{er.get('id')}` · QA {er.get('qa_score')} ({er.get('qa_decision')}) · "
+                f"{er.get('generation_time_ms')}ms"
+            )
+            st.session_state["last_executive_run"] = er
+            if er.get("export_paths"):
+                st.json(er.get("export_paths"))
+        else:
+            notify.error(result.get("error") or er.get("error") or "Executive production failed")
+        return
 
     if longform or studio.is_longform_command(command):
         with st.spinner("Submitting long-form production job..."):

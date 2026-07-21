@@ -1,0 +1,207 @@
+{
+  "world_id": "WORLD-GMRI-MEDICAL-LAB",
+  "elements_required": [
+    "floor",
+    "walls",
+    "ceilings",
+    "doors",
+    "windows",
+    "furniture",
+    "props"
+  ],
+  "dimensions_m": {
+    "x": 18.0,
+    "y": 4.2,
+    "z": 14.0
+  },
+  "floor": [
+    {
+      "id": "main_floor",
+      "bounds": [
+        [
+          -9.0,
+          0,
+          -7.0
+        ],
+        [
+          9.0,
+          0,
+          7.0
+        ]
+      ],
+      "walkable": true,
+      "material": "interior_floor"
+    }
+  ],
+  "walls": [
+    {
+      "id": "wall_n",
+      "plane": "north",
+      "openings": [
+        "window_n"
+      ]
+    },
+    {
+      "id": "wall_s",
+      "plane": "south",
+      "openings": [
+        "door_main"
+      ]
+    },
+    {
+      "id": "wall_e",
+      "plane": "east",
+      "openings": []
+    },
+    {
+      "id": "wall_w",
+      "plane": "west",
+      "openings": [
+        "window_w"
+      ]
+    }
+  ],
+  "ceilings": [
+    {
+      "id": "main_ceiling",
+      "height_m": 4.2,
+      "material": "acoustic_or_structural"
+    }
+  ],
+  "doors": [
+    {
+      "id": "door_main",
+      "position": [
+        0.0,
+        0.0,
+        -6.9
+      ],
+      "swing": "inward",
+      "interactable": true
+    }
+  ],
+  "windows": [
+    {
+      "id": "window_n",
+      "position": [
+        0.0,
+        2.3100000000000005,
+        6.95
+      ]
+    },
+    {
+      "id": "window_w",
+      "position": [
+        -8.95,
+        2.3100000000000005,
+        0.0
+      ]
+    }
+  ],
+  "furniture": [
+    {
+      "id": "furn_teaching_console_0",
+      "type": "console",
+      "position": [
+        -4.5,
+        0.0,
+        -2.1
+      ],
+      "collision": true,
+      "navigable_around": true
+    },
+    {
+      "id": "furn_analysis_desk_1",
+      "type": "desk",
+      "position": [
+        -0.8999999999999999,
+        0.0,
+        -2.1
+      ],
+      "collision": true,
+      "navigable_around": true
+    },
+    {
+      "id": "furn_stool_chair_2",
+      "type": "chair",
+      "position": [
+        2.7,
+        0.0,
+        -2.1
+      ],
+      "collision": true,
+      "navigable_around": true
+    },
+    {
+      "id": "furn_equipment_rack_3",
+      "type": "equipment_rack",
+      "position": [
+        -4.5,
+        0.0,
+        -0.7000000000000002
+      ],
+      "collision": true,
+      "navigable_around": true
+    }
+  ],
+  "props": [
+    {
+      "id": "prop_microscope_0",
+      "type": "microscope",
+      "position": [
+        -4.5,
+        0.0,
+        -0.9000000000000001
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_hologram_1",
+      "type": "hologram",
+      "position": [
+        -0.8999999999999999,
+        0.0,
+        -0.9000000000000001
+      ],
+      "collision": false,
+      "interactable": true
+    },
+    {
+      "id": "prop_whiteboard_2",
+      "type": "whiteboard",
+      "position": [
+        2.7,
+        0.0,
+        -0.9000000000000001
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_door_3",
+      "type": "door",
+      "position": [
+        -4.5,
+        0.0,
+        0.4999999999999998
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_medical_scanner_4",
+      "type": "medical_scanner",
+      "position": [
+        -0.8999999999999999,
+        0.0,
+        0.4999999999999998
+      ],
+      "collision": true,
+      "interactable": true
+    }
+  ],
+  "not_a_flat_image": true,
+  "explorable_volume": true,
+  "persistent": true
+}

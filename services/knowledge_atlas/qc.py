@@ -16,6 +16,7 @@ ALLOWED_LICENSES = frozenset({
     "US-Gov",
     "NASA",
     "NOAA",
+    "Unsplash",
 })
 
 MIN_SHORT_SIDE = 400

@@ -1,0 +1,10 @@
+{
+  "id": "ANIM-DOCTOR_001-PICKING_UP_OBJECTS",
+  "name": "picking_up_objects",
+  "character_id": "DOCTOR_001",
+  "loop": false,
+  "reusable": true,
+  "true_motion_hint": "walk_explain",
+  "constraints_ref": "ANIMATION_CONSTRAINTS.json",
+  "rig_ref": "RIG_SPECIFICATION.json"
+}

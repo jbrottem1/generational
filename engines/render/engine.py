@@ -98,8 +98,84 @@ def normalize_scenes(idea: dict) -> "tuple[list, list]":
     return [], warnings
 
 
+def _best_voice_path(idea: dict) -> str:
+    """Resolve a real narration file path from voice / audio packages on the idea."""
+    for blob in (
+        idea.get("voice_package"),
+        idea.get("audio_package"),
+        idea.get("voice_assets"),
+        idea.get("narration_package"),
+    ):
+        if not isinstance(blob, dict):
+            continue
+        path = str(blob.get("path") or blob.get("audio_path") or blob.get("narration_path") or "").strip()
+        if path:
+            return path
+        for track in blob.get("tracks") or []:
+            if not isinstance(track, dict):
+                continue
+            if track.get("placeholder"):
+                continue
+            tpath = str(track.get("path") or "").strip()
+            if tpath:
+                return tpath
+        for track in blob.get("tracks") or []:
+            if isinstance(track, dict) and str(track.get("path") or "").strip():
+                return str(track.get("path")).strip()
+    for track in idea.get("narration_tracks") or []:
+        if isinstance(track, dict) and str(track.get("path") or "").strip():
+            return str(track.get("path")).strip()
+    return ""
+
+
 def _audio_package_of(idea: dict) -> dict:
-    return idea.get("audio_package") or idea.get("voice_assets") or idea.get("voice_package") or {}
+    """Prefer packages that include a resolvable narration path (for FFmpeg mux)."""
+    packages = [
+        idea.get("audio_package"),
+        idea.get("voice_assets"),
+        idea.get("voice_package"),
+        idea.get("narration_package"),
+    ]
+    for pkg in packages:
+        if isinstance(pkg, dict) and (
+            pkg.get("path") or pkg.get("audio_path") or pkg.get("narration_path")
+            or any(isinstance(t, dict) and t.get("path") for t in (pkg.get("tracks") or []))
+        ):
+            out = dict(pkg)
+            voice_path = _best_voice_path(idea)
+            if voice_path and not out.get("path"):
+                out["path"] = voice_path
+            return out
+    voice_path = _best_voice_path(idea)
+    if voice_path:
+        return {"path": voice_path, "package_version": "1.0"}
+    return {}
+
+
+def _inject_narration_path(audio_mix_plan: dict, voice_path: str, timeline: dict) -> dict:
+    """Ensure narration segments point at a real file (same pattern as asset_production)."""
+    if not voice_path:
+        return audio_mix_plan
+    plan = dict(audio_mix_plan or {})
+    tracks = dict(plan.get("tracks") or {})
+    narration = dict(tracks.get("narration") or {})
+    segments = list(narration.get("segments") or [])
+    for seg in segments:
+        if isinstance(seg, dict):
+            seg["path"] = voice_path
+    if not segments:
+        segments = [
+            {
+                "scene_id": 1,
+                "path": voice_path,
+                "start_sec": 0,
+                "end_sec": float(timeline.get("total_duration_sec") or plan.get("duration_sec") or 30),
+            }
+        ]
+    narration["segments"] = segments
+    tracks["narration"] = narration
+    plan["tracks"] = tracks
+    return plan
 
 
 def _output_format_for(idea: dict, context: "dict | None") -> dict:
@@ -217,13 +293,20 @@ def build_render_output(idea: dict, context: "dict | None" = None) -> dict:
         transition_plan = TransitionPlanner().plan(scenes)
         motion_plan = MotionPlanner().plan(scenes)
         audio_package = _audio_package_of(idea)
+        voice_path = str(audio_package.get("path") or _best_voice_path(idea) or "").strip()
         caption_render_plan = CaptionRenderer().build(scenes, timeline)
         audio_mix_plan = AudioMixer().build(
             scenes, audio_package, timeline, transition_plan["transitions"]
         )
+        audio_mix_plan = _inject_narration_path(audio_mix_plan, voice_path, timeline)
         scene_render_plan = SceneRenderer().build(
             scenes, assets.get("assets", []), audio_package.get("scene_cues", [])
         )
+        if voice_path:
+            for plan in scene_render_plan:
+                if isinstance(plan, dict) and not plan.get("narration_path"):
+                    plan["narration_path"] = voice_path
+
 
         validation = RenderValidator().validate(
             scenes=scenes,
@@ -321,6 +404,8 @@ def render_ideas(context: dict) -> dict:
 
     updates = {
         "ideas": ideas,
+        "candidates": ideas,
+        "selected_ideas": ideas[: max(1, min(5, len(ideas)))],
         "render_summary": {
             "status": status,
             "rendered": len(results),
@@ -330,6 +415,8 @@ def render_ideas(context: dict) -> dict:
                 )
             ),
             "results": results,
+            "mp4_count": sum(1 for r in results if r.get("render_status") == RenderStatus.SUCCESS),
+            "mock_count": sum(1 for idea in ideas if (idea.get("render_package") or {}).get("mock")),
         },
     }
     unified = _sync_unified_packages(context, ideas)

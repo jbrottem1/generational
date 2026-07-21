@@ -241,9 +241,33 @@ class PsychologyEngine(Engine):
         return True
 
     def run(self, context: dict) -> dict:
+        # Apply historical learning before scoring
+        learning = context.get("learning_recommendations") or {}
+        psych_recs = learning.get("psychology") if isinstance(learning, dict) else []
+        try:
+            from services.learning.recommendations import psychology_guidance
+            from services.learning.api import for_psychology
+
+            flat = []
+            if isinstance(learning, dict):
+                for vals in learning.values():
+                    if isinstance(vals, list):
+                        flat.extend(vals)
+            guidance = psychology_guidance(flat) if flat else for_psychology(str(context.get("subject") or ""))
+            context["psychology_learning_guidance"] = guidance
+        except Exception:
+            guidance = {}
+            psych_recs = psych_recs or []
+
         candidates = context.get("candidates", [])
         for candidate in candidates:
             text = f"{candidate.get('title', '')} {candidate.get('hook', '')}".strip()
+            # Prefer historically winning hooks when the candidate hook is empty/weak
+            if guidance.get("winning_hooks") and len(str(candidate.get("hook") or "")) < 12:
+                candidate["hook"] = guidance["winning_hooks"][0]
+                candidate["learning_hook_applied"] = True
+            if guidance.get("preferred_strategies"):
+                candidate["psychology_strategy"] = list(guidance["preferred_strategies"])[:3]
             dimensions = score_dimensions(text)
             score = viral_score(dimensions)
             report = build_report(dimensions, score, candidate.get("title", ""), candidate.get("hook", ""))
@@ -254,6 +278,7 @@ class PsychologyEngine(Engine):
             candidate["psychology_score"] = score
             candidate["viral_score"] = score
             candidate["psychology_report"] = report
+            candidate["learning_guidance"] = guidance or {"recommendations": psych_recs}
             # Behavioral Intelligence API (Phase 4): a standardized report any
             # engine can consume by attribute access. Available from this point
             # on for every downstream stage — Script Generation, Visual

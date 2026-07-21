@@ -1,0 +1,175 @@
+{
+  "world_id": "WORLD-CLASSROOM",
+  "nav_mesh": {
+    "walkable": {
+      "polygon": [
+        [
+          -5.6,
+          0.0,
+          -4.6
+        ],
+        [
+          5.6,
+          0.0,
+          -4.6
+        ],
+        [
+          5.6,
+          0.0,
+          4.6
+        ],
+        [
+          -5.6,
+          0.0,
+          4.6
+        ]
+      ],
+      "agent_radius_m": 0.35,
+      "agent_height_m": 1.8
+    },
+    "obstacles": [
+      {
+        "id": "furn_teacher_desk_0",
+        "center": [
+          -3.0,
+          0.0,
+          -1.5
+        ],
+        "radius_m": 0.55,
+        "navigable_around": true
+      },
+      {
+        "id": "furn_student_desks_1",
+        "center": [
+          -0.5999999999999996,
+          0.0,
+          -1.5
+        ],
+        "radius_m": 0.55,
+        "navigable_around": true
+      },
+      {
+        "id": "furn_chair_2",
+        "center": [
+          1.8000000000000007,
+          0.0,
+          -1.5
+        ],
+        "radius_m": 0.55,
+        "navigable_around": true
+      },
+      {
+        "id": "prop_whiteboard_0",
+        "center": [
+          -3.0,
+          0.0,
+          -0.30000000000000004
+        ],
+        "radius_m": 0.55,
+        "navigable_around": true
+      },
+      {
+        "id": "prop_door_1",
+        "center": [
+          -0.5999999999999996,
+          0.0,
+          -0.30000000000000004
+        ],
+        "radius_m": 0.55,
+        "navigable_around": true
+      },
+      {
+        "id": "prop_globe_2",
+        "center": [
+          1.8000000000000007,
+          0.0,
+          -0.30000000000000004
+        ],
+        "radius_m": 0.55,
+        "navigable_around": true
+      },
+      {
+        "id": "prop_bookshelf_3",
+        "center": [
+          -3.0,
+          0.0,
+          1.0999999999999999
+        ],
+        "radius_m": 0.55,
+        "navigable_around": true
+      }
+    ],
+    "waypoints": [
+      {
+        "id": "spawn_entrance",
+        "position": [
+          0.0,
+          0.0,
+          -3.8
+        ],
+        "kind": "entrance"
+      },
+      {
+        "id": "center_stage",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "kind": "performance"
+      },
+      {
+        "id": "teach_mark",
+        "position": [
+          1.7999999999999998,
+          0.0,
+          1.0
+        ],
+        "kind": "performance"
+      },
+      {
+        "id": "prop_approach",
+        "position": [
+          2.4000000000000004,
+          0.0,
+          1.5
+        ],
+        "kind": "interaction"
+      }
+    ],
+    "paths": [
+      {
+        "id": "enter_to_center",
+        "from": "spawn_entrance",
+        "to": "center_stage"
+      },
+      {
+        "id": "center_to_teach",
+        "from": "center_stage",
+        "to": "teach_mark"
+      },
+      {
+        "id": "teach_to_prop",
+        "from": "teach_mark",
+        "to": "prop_approach"
+      }
+    ],
+    "stairs": false,
+    "collision_avoidance": true
+  },
+  "capabilities": [
+    "walking",
+    "running",
+    "turning",
+    "stairs",
+    "sitting",
+    "opening_doors",
+    "approaching_objects",
+    "moving_around_furniture",
+    "avoiding_collisions"
+  ],
+  "forbid_teleport": true,
+  "forbid_slide_through_geometry": true,
+  "actors_navigate_world": true,
+  "not_photo_backdrop": true
+}

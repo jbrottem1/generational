@@ -1,0 +1,72 @@
+{
+  "character_id": "CHAR-NOVA",
+  "rules": [
+    "motivated_by_communication",
+    "begin_slightly_before_emphasized_word",
+    "return_to_natural_rest",
+    "vary_repeated_gestures",
+    "no_clip_into_torso_or_props"
+  ],
+  "categories": [
+    "teaching",
+    "explaining_scale",
+    "emphasizing",
+    "reassuring",
+    "warning",
+    "thinking",
+    "listening",
+    "object_interaction"
+  ],
+  "library": {
+    "open_palm_teach": {
+      "category": "teaching"
+    },
+    "open_palm_reassurance": {
+      "category": "reassuring"
+    },
+    "diagram_trace": {
+      "category": "teaching"
+    },
+    "scale_show": {
+      "category": "explaining_scale"
+    },
+    "emphasize": {
+      "category": "emphasizing"
+    },
+    "chin_think": {
+      "category": "thinking"
+    },
+    "listen_fold": {
+      "category": "listening"
+    },
+    "warning_focus": {
+      "category": "warning"
+    },
+    "point_spark": {
+      "category": "emphasizing"
+    },
+    "tilt_head": {
+      "category": "thinking"
+    },
+    "hand_hologram": {
+      "category": "object_interaction"
+    }
+  },
+  "favorites": [
+    "point_spark",
+    "tilt_head",
+    "hand_hologram",
+    "scale_show"
+  ],
+  "library_extra": {
+    "point_spark": {
+      "category": "emphasizing"
+    },
+    "tilt_head": {
+      "category": "thinking"
+    },
+    "hand_hologram": {
+      "category": "object_interaction"
+    }
+  }
+}

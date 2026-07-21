@@ -26,8 +26,11 @@ CORE_ENV_KEYS = (
     "GOOGLE_API_KEY",
     "XAI_API_KEY",
     "ELEVENLABS_API_KEY",
+    "ELEVENLABS_DEFAULT_VOICE_ID",
+    "ELEVENLABS_MODEL_ID",
     "RUNWAY_API_KEY",
     "BFL_API_KEY",
+    "YOUTUBE_API_KEY",
 )
 
 _DOTENV_LOADED = False
@@ -129,13 +132,31 @@ def startup_credential_report(keys: "tuple[str, ...] | None" = None) -> dict[str
     keys = keys or CORE_ENV_KEYS
     rows = [credential_status(key) for key in keys]
     openai = next((r for r in rows if r["env_var"] == "OPENAI_API_KEY"), None)
+    youtube = next((r for r in rows if r["env_var"] == "YOUTUBE_API_KEY"), None)
     lines = []
     for row in rows:
         mark = "✓" if row["present"] else "✗"
         detail = f"loaded ({row['source']})" if row["present"] else "missing"
         lines.append(f"{mark} {row['env_var']} {detail}")
+
+    youtube_validation: dict[str, Any] = {"skipped": True}
+    if youtube and youtube["present"]:
+        try:
+            from services.providers.youtube_provider import validate_youtube_startup
+
+            youtube_validation = validate_youtube_startup()
+            for yline in youtube_validation.get("lines") or []:
+                lines.append(yline)
+        except Exception as exc:  # noqa: BLE001
+            youtube_validation = {"ok": False, "error": str(exc)[:200]}
+            lines.append("✗ YouTube API validation error (see logs — key never printed)")
+    else:
+        lines.append("✗ YouTube API detected (YOUTUBE_API_KEY missing)")
+
     return {
         "openai_loaded": bool(openai and openai["present"]),
+        "youtube_loaded": bool(youtube and youtube["present"]),
+        "youtube_validation": youtube_validation,
         "demo_mode": not bool(openai and openai["present"]),
         "lines": lines,
         "rows": rows,

@@ -1,0 +1,217 @@
+{
+  "generated_at": "2026-07-15T23:08:59.181156+00:00",
+  "production_id": "ops_f9daa1da06",
+  "current_stage": "Export",
+  "current_stage_key": "export",
+  "overall_progress_pct": 100,
+  "elapsed_ms": 9383,
+  "estimated_time_remaining_ms": null,
+  "current_agent_working": "export_and_validate",
+  "current_files": [
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/episode.mp4",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/captions.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/description.txt",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/seo_metadata.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/thumbnail.png"
+  ],
+  "quality_scores": {
+    "research": 85.0,
+    "psychology": 90.0,
+    "studio_director": 95.0,
+    "script_generator": 95.0,
+    "scene_builder": 100.0,
+    "media_collection": 100.0,
+    "animation": 100.0,
+    "voice_generation": 100.0,
+    "music_sound": 90.0,
+    "captions": 95.0,
+    "rendering": 100.0,
+    "viewer_retention": 100.0,
+    "optimization_lab": 100.0,
+    "quality_assurance": 100.0,
+    "seo_package": 100.0,
+    "export": 60.0
+  },
+  "warnings": [
+    "viewer_retention failed after retries \u2014 production continued",
+    "viewer_retention: degraded \u2014 continuing pipeline",
+    "missing_audio",
+    "implausible_bitrate"
+  ],
+  "retry_count": 1,
+  "pipeline_health": "degraded",
+  "overall_status": "succeeded",
+  "stages": [
+    {
+      "key": "research",
+      "label": "Research Engine",
+      "status": "succeeded",
+      "duration_ms": 130,
+      "quality_score": 85.0,
+      "retries": 0,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "key": "psychology",
+      "label": "Psychology Engine",
+      "status": "succeeded",
+      "duration_ms": 21,
+      "quality_score": 90.0,
+      "retries": 0,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "key": "studio_director",
+      "label": "AI Studio Director",
+      "status": "succeeded",
+      "duration_ms": 31,
+      "quality_score": 95.0,
+      "retries": 0,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "key": "script_generator",
+      "label": "Script Generator",
+      "status": "succeeded",
+      "duration_ms": 166,
+      "quality_score": 95.0,
+      "retries": 0,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "key": "scene_builder",
+      "label": "Scene Builder",
+      "status": "succeeded",
+      "duration_ms": 23,
+      "quality_score": 100.0,
+      "retries": 0,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "key": "media_collection",
+      "label": "Media Collection",
+      "status": "succeeded",
+      "duration_ms": 2250,
+      "quality_score": 100.0,
+      "retries": 0,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "key": "animation",
+      "label": "Animation / Motion Graphics",
+      "status": "succeeded",
+      "duration_ms": 35,
+      "quality_score": 100.0,
+      "retries": 0,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "key": "voice_generation",
+      "label": "Voice Generation",
+      "status": "succeeded",
+      "duration_ms": 685,
+      "quality_score": 100.0,
+      "retries": 0,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "key": "music_sound",
+      "label": "Music & Sound Design",
+      "status": "succeeded",
+      "duration_ms": 0,
+      "quality_score": 90.0,
+      "retries": 0,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "key": "captions",
+      "label": "Captions",
+      "status": "succeeded",
+      "duration_ms": 0,
+      "quality_score": 95.0,
+      "retries": 0,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "key": "rendering",
+      "label": "Rendering",
+      "status": "succeeded",
+      "duration_ms": 4424,
+      "quality_score": 100.0,
+      "retries": 0,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "key": "viewer_retention",
+      "label": "Viewer Retention Analysis",
+      "status": "degraded",
+      "duration_ms": 157,
+      "quality_score": 100.0,
+      "retries": 1,
+      "warnings": [
+        "viewer_retention failed after retries \u2014 production continued",
+        "viewer_retention: degraded \u2014 continuing pipeline"
+      ],
+      "errors": [
+        "viewer_retention: 'str' object has no attribute 'get'"
+      ]
+    },
+    {
+      "key": "optimization_lab",
+      "label": "Optimization Lab",
+      "status": "succeeded",
+      "duration_ms": 121,
+      "quality_score": 100.0,
+      "retries": 0,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "key": "quality_assurance",
+      "label": "Quality Assurance",
+      "status": "succeeded",
+      "duration_ms": 3,
+      "quality_score": 100.0,
+      "retries": 0,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "key": "seo_package",
+      "label": "SEO Package",
+      "status": "succeeded",
+      "duration_ms": 146,
+      "quality_score": 100.0,
+      "retries": 0,
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "key": "export",
+      "label": "Export",
+      "status": "succeeded",
+      "duration_ms": 33,
+      "quality_score": 60.0,
+      "retries": 0,
+      "warnings": [
+        "missing_audio",
+        "implausible_bitrate"
+      ],
+      "errors": []
+    }
+  ],
+  "queue": {},
+  "stage_count": 16
+}

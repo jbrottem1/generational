@@ -1,0 +1,358 @@
+{
+  "schema_version": "1.0",
+  "production_id": "ops_ac9f777be9",
+  "brief": {
+    "topic": "Queue smoke topic about coral reefs",
+    "platform": "tiktok",
+    "length_sec": 30,
+    "style": "educational",
+    "narrator": "professor",
+    "voice": "default",
+    "quality_target": 98.0,
+    "constraints": {},
+    "command": "",
+    "raw": {}
+  },
+  "current_stage": "export",
+  "current_agent": "export_and_validate",
+  "overall_progress_pct": 100,
+  "elapsed_ms": 11928,
+  "eta_ms": null,
+  "overall_status": "degraded_no_export",
+  "pipeline_health": "healthy",
+  "warnings": [
+    "animation unavailable \u2014 continued",
+    "mp4_not_yet_materialized \u2014 metadata package exported for smoke/plan modes"
+  ],
+  "retry_count": 0,
+  "quality_scores": {
+    "research": 95.0,
+    "psychology": 100.0,
+    "studio_director": 100.0,
+    "script_generator": 100.0,
+    "scene_builder": 100.0,
+    "media_collection": 100.0,
+    "animation": 100.0,
+    "voice_generation": 100.0,
+    "music_sound": 90.0,
+    "captions": 100.0,
+    "rendering": 100.0,
+    "viewer_retention": 100.0,
+    "optimization_lab": 100.0,
+    "quality_assurance": 100.0,
+    "seo_package": 100.0,
+    "export": 45.0
+  },
+  "current_files": [
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Queue_smoke_topic_about_coral_reefs_ops_ac9f777be9",
+    "data/renders/e07c657524ec/the-hidden-truth-queue-smoke-topic-about-coral-reefs-in-a-ed_1080x1920.mp4",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Queue_smoke_topic_about_coral_reefs_ops_ac9f777be9/captions.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Queue_smoke_topic_about_coral_reefs_ops_ac9f777be9/description.txt",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Queue_smoke_topic_about_coral_reefs_ops_ac9f777be9/seo_metadata.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Queue_smoke_topic_about_coral_reefs_ops_ac9f777be9/thumbnail_plan.json"
+  ],
+  "started_at": "2026-07-14T04:50:41.949031+00:00",
+  "finished_at": "2026-07-14T04:50:53.878069+00:00",
+  "stages": [
+    {
+      "key": "research",
+      "label": "Research Engine",
+      "engines": [
+        "research",
+        "ideation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:50:41.949819+00:00",
+      "end_time": "2026-07-14T04:50:41.957552+00:00",
+      "duration_ms": 5,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "research"
+    },
+    {
+      "key": "psychology",
+      "label": "Psychology Engine",
+      "engines": [
+        "psychology"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:50:41.958314+00:00",
+      "end_time": "2026-07-14T04:50:41.962123+00:00",
+      "duration_ms": 2,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "psychology"
+    },
+    {
+      "key": "studio_director",
+      "label": "AI Studio Director",
+      "engines": [
+        "ai_director"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:50:41.962857+00:00",
+      "end_time": "2026-07-14T04:50:42.038804+00:00",
+      "duration_ms": 74,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "ai_director"
+    },
+    {
+      "key": "script_generator",
+      "label": "Script Generator",
+      "engines": [
+        "script_generation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:50:42.039576+00:00",
+      "end_time": "2026-07-14T04:50:42.069506+00:00",
+      "duration_ms": 28,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "script_generation"
+    },
+    {
+      "key": "scene_builder",
+      "label": "Scene Builder",
+      "engines": [
+        "visual_intelligence",
+        "scene_planning",
+        "visual_planning"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:50:42.070286+00:00",
+      "end_time": "2026-07-14T04:50:42.124711+00:00",
+      "duration_ms": 52,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "visual_intelligence"
+    },
+    {
+      "key": "media_collection",
+      "label": "Media Collection",
+      "engines": [
+        "evidence_intelligence",
+        "image",
+        "asset_manager"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:50:42.125563+00:00",
+      "end_time": "2026-07-14T04:50:47.355190+00:00",
+      "duration_ms": 5227,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "evidence_intelligence"
+    },
+    {
+      "key": "animation",
+      "label": "Animation / Motion Graphics",
+      "engines": [
+        "cinematography",
+        "animation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:50:47.358936+00:00",
+      "end_time": "2026-07-14T04:50:47.411039+00:00",
+      "duration_ms": 51,
+      "warnings": [
+        "animation unavailable \u2014 continued"
+      ],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "cinematography"
+    },
+    {
+      "key": "voice_generation",
+      "label": "Voice Generation",
+      "engines": [
+        "voice_audio",
+        "narration",
+        "voice"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:50:47.411859+00:00",
+      "end_time": "2026-07-14T04:50:52.771185+00:00",
+      "duration_ms": 5356,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "voice_audio"
+    },
+    {
+      "key": "music_sound",
+      "label": "Music & Sound Design",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:50:52.772670+00:00",
+      "end_time": "2026-07-14T04:50:52.774462+00:00",
+      "duration_ms": 0,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 90.0,
+      "output_files": [],
+      "current_agent": "apply_music_direction"
+    },
+    {
+      "key": "captions",
+      "label": "Captions",
+      "engines": [
+        "subtitle"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:50:52.775428+00:00",
+      "end_time": "2026-07-14T04:50:52.790709+00:00",
+      "duration_ms": 13,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "subtitle"
+    },
+    {
+      "key": "rendering",
+      "label": "Rendering",
+      "engines": [
+        "timeline",
+        "render_package",
+        "studio_render",
+        "video"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:50:52.792045+00:00",
+      "end_time": "2026-07-14T04:50:52.932106+00:00",
+      "duration_ms": 136,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "timeline"
+    },
+    {
+      "key": "viewer_retention",
+      "label": "Viewer Retention Analysis",
+      "engines": [
+        "viewer_retention"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:50:52.933044+00:00",
+      "end_time": "2026-07-14T04:50:52.965457+00:00",
+      "duration_ms": 31,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "viewer_retention"
+    },
+    {
+      "key": "optimization_lab",
+      "label": "Optimization Lab",
+      "engines": [
+        "optimization_lab"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:50:52.966332+00:00",
+      "end_time": "2026-07-14T04:50:53.832729+00:00",
+      "duration_ms": 865,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "optimization_lab"
+    },
+    {
+      "key": "quality_assurance",
+      "label": "Quality Assurance",
+      "engines": [
+        "quality",
+        "production_qa"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:50:53.834914+00:00",
+      "end_time": "2026-07-14T04:50:53.851364+00:00",
+      "duration_ms": 14,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "quality"
+    },
+    {
+      "key": "seo_package",
+      "label": "SEO Package",
+      "engines": [
+        "seo",
+        "seo_optimization"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:50:53.852165+00:00",
+      "end_time": "2026-07-14T04:50:53.873431+00:00",
+      "duration_ms": 19,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "seo"
+    },
+    {
+      "key": "export",
+      "label": "Export",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-14T04:50:53.874317+00:00",
+      "end_time": "2026-07-14T04:50:53.877270+00:00",
+      "duration_ms": 2,
+      "warnings": [
+        "mp4_not_yet_materialized \u2014 metadata package exported for smoke/plan modes"
+      ],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 45.0,
+      "output_files": [
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Queue_smoke_topic_about_coral_reefs_ops_ac9f777be9",
+        "data/renders/e07c657524ec/the-hidden-truth-queue-smoke-topic-about-coral-reefs-in-a-ed_1080x1920.mp4",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Queue_smoke_topic_about_coral_reefs_ops_ac9f777be9/captions.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Queue_smoke_topic_about_coral_reefs_ops_ac9f777be9/description.txt",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Queue_smoke_topic_about_coral_reefs_ops_ac9f777be9/seo_metadata.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Queue_smoke_topic_about_coral_reefs_ops_ac9f777be9/thumbnail_plan.json"
+      ],
+      "current_agent": "export_and_validate"
+    }
+  ],
+  "updated_at": "2026-07-14T04:50:53.900333+00:00",
+  "validation_score": 95.6,
+  "video_exists": false,
+  "deliverable_ok": false,
+  "success": false,
+  "notes": [
+    "success_requires_mp4 \u2014 pipeline continued but deliverable missing"
+  ]
+}

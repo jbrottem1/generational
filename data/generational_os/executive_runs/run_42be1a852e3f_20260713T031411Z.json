@@ -1,0 +1,277 @@
+{
+  "id": "42be1a852e3f",
+  "topic": "a gravity",
+  "command": "Create a Short about gravity",
+  "runtime_sec": 60,
+  "platforms": [
+    "youtube_shorts"
+  ],
+  "engines_used": [
+    "discovery",
+    "trend_discovery",
+    "opportunity_ranking",
+    "trend_forecasting",
+    "market_intelligence",
+    "research",
+    "ideation",
+    "psychology",
+    "audience_intelligence",
+    "script_generation",
+    "attention_graph",
+    "ranking",
+    "script",
+    "critic",
+    "revision",
+    "citation",
+    "seo",
+    "threat_detection",
+    "quality",
+    "evidence_intelligence",
+    "visual_intelligence",
+    "cinematography",
+    "animation",
+    "voice_audio",
+    "voice",
+    "image",
+    "video",
+    "scene_planning",
+    "narration",
+    "visual_planning",
+    "asset_manager",
+    "subtitle",
+    "timeline",
+    "render_package",
+    "production_qa",
+    "publishing_queue",
+    "scheduler",
+    "publishing"
+  ],
+  "generation_time_ms": 1,
+  "qa_score": null,
+  "qa_decision": "",
+  "revision_rounds": 0,
+  "export_size_bytes": 0,
+  "export_paths": {
+    "captions": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/a_gravity_42be1a852e3f/captions.json",
+    "description": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/a_gravity_42be1a852e3f/description.txt",
+    "seo_metadata": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/a_gravity_42be1a852e3f/seo_metadata.json",
+    "thumbnail": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/a_gravity_42be1a852e3f/thumbnail_plan.json",
+    "manifest": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/a_gravity_42be1a852e3f/EXPORT_MANIFEST.json"
+  },
+  "publish_status": "plan_only",
+  "status": "completed",
+  "error": "",
+  "created_at": "2026-07-13T03:14:11.809647+00:00",
+  "finished_at": "2026-07-13T03:14:11.811009+00:00",
+  "stages": {
+    "discovery": {
+      "key": "discovery",
+      "label": "Discovery",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:11.810071+00:00",
+      "finished_at": "2026-07-13T03:14:11.810076+00:00",
+      "duration_ms": 0,
+      "eta_sec": 25,
+      "engines_used": [
+        "discovery"
+      ],
+      "message": "planned engines=['discovery']",
+      "error": ""
+    },
+    "research": {
+      "key": "research",
+      "label": "Research",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:11.810078+00:00",
+      "finished_at": "2026-07-13T03:14:11.810081+00:00",
+      "duration_ms": 0,
+      "eta_sec": 40,
+      "engines_used": [
+        "trend_discovery",
+        "opportunity_ranking",
+        "trend_forecasting",
+        "market_intelligence",
+        "research",
+        "ideation",
+        "psychology",
+        "audience_intelligence"
+      ],
+      "message": "planned engines=['trend_discovery', 'opportunity_ranking', 'trend_forecasting', 'market_intelligence', 'research', 'ideation', 'psychology', 'audience_intelligence']",
+      "error": ""
+    },
+    "script": {
+      "key": "script",
+      "label": "Script",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:11.810084+00:00",
+      "finished_at": "2026-07-13T03:14:11.810088+00:00",
+      "duration_ms": 0,
+      "eta_sec": 35,
+      "engines_used": [
+        "script_generation",
+        "attention_graph",
+        "ranking",
+        "script",
+        "critic",
+        "revision",
+        "citation",
+        "seo",
+        "threat_detection",
+        "quality"
+      ],
+      "message": "planned engines=['script_generation', 'attention_graph', 'ranking', 'script', 'critic', 'revision', 'citation', 'seo', 'threat_detection', 'quality']",
+      "error": ""
+    },
+    "evidence": {
+      "key": "evidence",
+      "label": "Evidence",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:11.810091+00:00",
+      "finished_at": "2026-07-13T03:14:11.810093+00:00",
+      "duration_ms": 0,
+      "eta_sec": 30,
+      "engines_used": [
+        "evidence_intelligence"
+      ],
+      "message": "planned engines=['evidence_intelligence']",
+      "error": ""
+    },
+    "visuals": {
+      "key": "visuals",
+      "label": "Visuals",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:11.810095+00:00",
+      "finished_at": "2026-07-13T03:14:11.810096+00:00",
+      "duration_ms": 0,
+      "eta_sec": 35,
+      "engines_used": [
+        "visual_intelligence"
+      ],
+      "message": "planned engines=['visual_intelligence']",
+      "error": ""
+    },
+    "animation": {
+      "key": "animation",
+      "label": "Animation",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:11.810098+00:00",
+      "finished_at": "2026-07-13T03:14:11.810100+00:00",
+      "duration_ms": 0,
+      "eta_sec": 40,
+      "engines_used": [
+        "cinematography",
+        "animation"
+      ],
+      "message": "planned engines=['cinematography', 'animation']",
+      "error": ""
+    },
+    "voice": {
+      "key": "voice",
+      "label": "Voice",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:11.810102+00:00",
+      "finished_at": "2026-07-13T03:14:11.810104+00:00",
+      "duration_ms": 0,
+      "eta_sec": 45,
+      "engines_used": [
+        "voice_audio",
+        "voice"
+      ],
+      "message": "planned engines=['voice_audio', 'voice']",
+      "error": ""
+    },
+    "assembly": {
+      "key": "assembly",
+      "label": "Assembly",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:11.810106+00:00",
+      "finished_at": "2026-07-13T03:14:11.810108+00:00",
+      "duration_ms": 0,
+      "eta_sec": 90,
+      "engines_used": [
+        "image",
+        "video",
+        "scene_planning",
+        "narration",
+        "visual_planning",
+        "asset_manager",
+        "subtitle",
+        "timeline",
+        "render_package"
+      ],
+      "message": "planned engines=['image', 'video', 'scene_planning', 'narration', 'visual_planning', 'asset_manager', 'subtitle', 'timeline', 'render_package']",
+      "error": ""
+    },
+    "qa": {
+      "key": "qa",
+      "label": "QA",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:11.810112+00:00",
+      "finished_at": "2026-07-13T03:14:11.810113+00:00",
+      "duration_ms": 0,
+      "eta_sec": 15,
+      "engines_used": [
+        "production_qa"
+      ],
+      "message": "planned engines=['production_qa']",
+      "error": ""
+    },
+    "export": {
+      "key": "export",
+      "label": "Export",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:11.810115+00:00",
+      "finished_at": "2026-07-13T03:14:11.810117+00:00",
+      "duration_ms": 0,
+      "eta_sec": 20,
+      "engines_used": [],
+      "message": "planned engines=[]",
+      "error": ""
+    },
+    "publishing": {
+      "key": "publishing",
+      "label": "Publishing",
+      "status": "completed",
+      "started_at": "2026-07-13T03:14:11.810118+00:00",
+      "finished_at": "2026-07-13T03:14:11.810120+00:00",
+      "duration_ms": 0,
+      "eta_sec": 15,
+      "engines_used": [
+        "publishing_queue",
+        "scheduler",
+        "publishing"
+      ],
+      "message": "planned engines=['publishing_queue', 'scheduler', 'publishing']",
+      "error": ""
+    }
+  },
+  "artifacts": {
+    "export": {
+      "run_id": "42be1a852e3f",
+      "topic": "a gravity",
+      "paths": {
+        "captions": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/a_gravity_42be1a852e3f/captions.json",
+        "description": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/a_gravity_42be1a852e3f/description.txt",
+        "seo_metadata": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/a_gravity_42be1a852e3f/seo_metadata.json",
+        "thumbnail": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/a_gravity_42be1a852e3f/thumbnail_plan.json",
+        "manifest": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/a_gravity_42be1a852e3f/EXPORT_MANIFEST.json"
+      },
+      "export_size_bytes": 0,
+      "qa_decision": null,
+      "qa_score": null
+    },
+    "brief": {
+      "raw_command": "Create a Short about gravity",
+      "topic": "a gravity",
+      "platforms": [
+        "youtube_shorts"
+      ],
+      "primary_platform": "youtube_shorts",
+      "runtime_sec": 60,
+      "format": "short",
+      "category": "science",
+      "goal": "educate",
+      "notes": []
+    }
+  }
+}

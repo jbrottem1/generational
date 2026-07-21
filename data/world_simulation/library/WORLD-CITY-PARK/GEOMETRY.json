@@ -1,0 +1,113 @@
+{
+  "world_id": "WORLD-CITY-PARK",
+  "elements_required": [
+    "floor",
+    "walls",
+    "ceilings",
+    "doors",
+    "windows",
+    "furniture",
+    "props"
+  ],
+  "dimensions_m": {
+    "x": 35.0,
+    "y": 15.0,
+    "z": 28.0
+  },
+  "floor": [
+    {
+      "id": "main_floor",
+      "bounds": [
+        [
+          -17.5,
+          0,
+          -14.0
+        ],
+        [
+          17.5,
+          0,
+          14.0
+        ]
+      ],
+      "walkable": true,
+      "material": "exterior_ground"
+    }
+  ],
+  "walls": [],
+  "ceilings": [],
+  "doors": [
+    {
+      "id": "door_main",
+      "position": [
+        0.0,
+        0.0,
+        -13.9
+      ],
+      "swing": "inward",
+      "interactable": true
+    }
+  ],
+  "windows": [],
+  "furniture": [
+    {
+      "id": "furn_park_bench_0",
+      "type": "bench",
+      "position": [
+        -8.75,
+        0.0,
+        -4.2
+      ],
+      "collision": true,
+      "navigable_around": true
+    },
+    {
+      "id": "furn_picnic_table_1",
+      "type": "picnic_table",
+      "position": [
+        -1.75,
+        0.0,
+        -4.2
+      ],
+      "collision": true,
+      "navigable_around": true
+    }
+  ],
+  "props": [
+    {
+      "id": "prop_lamp_post_0",
+      "type": "lamp_post",
+      "position": [
+        -8.75,
+        0.0,
+        -3.0
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_fountain_1",
+      "type": "fountain",
+      "position": [
+        -1.75,
+        0.0,
+        -3.0
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_path_sign_2",
+      "type": "path_sign",
+      "position": [
+        5.25,
+        0.0,
+        -3.0
+      ],
+      "collision": true,
+      "interactable": true
+    }
+  ],
+  "not_a_flat_image": true,
+  "explorable_volume": true,
+  "persistent": true
+}

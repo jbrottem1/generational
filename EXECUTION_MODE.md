@@ -1,51 +1,55 @@
-# Execution Mode — Local-First Production Architecture V2
+# Execution Mode — Local-First Production
 
 **Owner:** Agent 0 · Executive Operating System  
-**Status:** LOCKED effective 2026-07-12
+**Status:** LOCKED — Local-First (cloud production execution removed 2026-07-12)
 
-Generational separates **thinking** (cloud) from **rendering** (local Mac).
+Generational renders, verifies, and exports **only on the user's local Mac**.
+
+Cursor Cloud may still be used manually for brainstorming or architecture when explicitly requested — **never** for rendering, exporting, or production execution.
 
 ---
 
-## Two modes
+## Single mode
 
 | Mode | Runtime | Media production |
 |------|---------|------------------|
-| **CLOUD** | Cursor cloud agents, CI, remote Linux VMs | Plans only — writes `LOCAL_RENDER_JOB.json` |
-| **LOCAL** | User's Mac (`Darwin` + Desktop path) | Full render, verify, Desktop export |
+| **LOCAL** | User's Mac — local Python, FFmpeg, filesystem | Full pipeline: plan → render → verify → Desktop export |
 
-Detection: `services/media_production/execution_mode.py` → `detect_execution_mode()`
+Detection: `services/media_production/execution_mode.py` → always `ExecutionMode.LOCAL`
 
-Override env vars:
-
-| Variable | Effect |
-|----------|--------|
-| `GENERATIONAL_EXECUTION_MODE=cloud` | Force cloud (plan only) |
-| `GENERATIONAL_EXECUTION_MODE=local` | Force local render |
-| `GENERATIONAL_FORCE_LOCAL=1` | Treat Linux as local (dev only) |
-| `GENERATIONAL_CLOUD_MODE=1` | Treat as cloud |
+There is no `ExecutionMode.CLOUD` and no automatic “Run in Cloud” path.
 
 ---
 
-## Execution gate
-
-Before any flagship render script runs FFmpeg/TTS:
+## Production gate
 
 ```python
 from services.media_production.local_first import gate_production
 
 gate = gate_production(job_id=..., title=..., demo_id=..., ...)
-if not gate.get("proceed"):
-    # Cloud: job written — return awaiting_local_render
-    return gate
-# Local: continue render pipeline
+# Always proceeds locally — writes brief + RENDER_PACKAGE, then authorizes render
+assert gate["proceed"] is True
+assert gate["status"] == "ready_to_render"
 ```
 
-**Cloud agents must never report:** `"Video exported."`  
-**Cloud agents must report:** `"Production package prepared. Awaiting local render."`
+**SUCCESS requires:** verified MP4 under:
 
-**Local SUCCESS requires:** verified MP4 at  
-`~/Desktop/AI Start-up/videos/Test run 2 generational/`
+```
+~/Desktop/AI Start-Up/Videos/{Category}/
+```
+
+via the media library classifier (`MEDIA_LIBRARY.md`).
+
+---
+
+## Assumptions for all future development
+
+- Local Python
+- Local FFmpeg
+- Local filesystem
+- Local render pipeline
+- Local testing
+- Local exports to `~/Desktop/AI Start-Up/Videos/`
 
 ---
 
@@ -54,53 +58,22 @@ if not gate.get("proceed"):
 | File | Purpose |
 |------|---------|
 | [EXECUTION_MODE.md](./EXECUTION_MODE.md) | This document |
-| [CLOUD_EXECUTION.md](./CLOUD_EXECUTION.md) | Cloud agent responsibilities |
 | [LOCAL_EXECUTION.md](./LOCAL_EXECUTION.md) | Mac workstation workflow |
-| [LOCAL_RENDER_JOB.json](./LOCAL_RENDER_JOB.json) | Portable render package |
-| `scripts/run_local_render_job.py` | Execute job on Mac |
-| `services/media_production/local_cache.py` | Reuse downloaded assets |
+| [MEDIA_LIBRARY.md](./MEDIA_LIBRARY.md) | Classified Desktop library |
+| `scripts/run_local_render_job.py` | Execute render package on Mac |
+| `services/media_production/execution_mode.py` | Local-only context helpers |
 
 ---
 
-## Export standard (V2.5 update)
+## Safety
 
-**Primary path (classified):**
-
-```
-~/Desktop/AI Start-up/Generational/Videos/{Domain}/{filename}.mp4
-```
-
-See [GENERATIONAL_OS_V2_5.md](./GENERATIONAL_OS_V2_5.md) for domain folders and manifest requirements.
-
-**Legacy path** (migration in progress):
-
-```
-~/Desktop/AI Start-up/videos/Test run 2 generational/
-```
-
-Verification checklist (all must pass for SUCCESS):
-
-- File exists
-- Size > 0
-- Video stream present
-- Audio stream present
-- Playable (ffprobe)
-- Duration recorded
-- Resolution recorded
-- Path under canonical Desktop folder
-- Local execution mode
-
-Implementation: `services/media_production/verified_export.py`
+Remote VM paths (`/home/ubuntu/`, `/workspace/`) are rejected as `stale_cloud_path` so a non-Mac filesystem can never be reported as a successful user Desktop export.
 
 ---
 
-## Agent compliance
+## Agent compliance (locked)
 
-All production agents and scripts that create MP4s must:
-
-1. Call `gate_production()` before render
-2. Respect `proceed=False` in cloud mode
-3. Use `export_verified_mp4()` for final copy
-4. Never treat cloud VM `Path.home()/Desktop` as the user's Mac
-
-See [data/knowledge_standards/PRODUCTION_STANDARDS.md](./data/knowledge_standards/PRODUCTION_STANDARDS.md) § Local-First.
+1. Call `gate_production()` / `prepare_production()` before render (local prep).
+2. Never claim Desktop SUCCESS without a verified local MP4 under the media library.
+3. Never introduce a Cursor Cloud / remote render or export execution path.
+4. Do not add `GENERATIONAL_CLOUD_*` / `CURSOR_CLOUD_*` production gates.

@@ -128,11 +128,13 @@ def test_variants_contain_all_required_components():
 # ---------------------------------------------------------------- hook engine
 
 def test_hook_engine_supports_ten_styles():
-    expected = {
+    # Catalog grew beyond the original ten; require the core educational styles remain.
+    required = {
         "curiosity", "shock", "question", "fomo", "statistics",
         "contrarian", "story", "mystery", "authority", "urgency",
     }
-    assert expected == set(HOOK_STYLES)
+    assert required.issubset(set(HOOK_STYLES))
+    assert len(HOOK_STYLES) >= 10
 
 
 def test_hook_candidates_are_generated_and_ranked():
@@ -307,10 +309,13 @@ def test_engine_attaches_scored_scripts_to_every_candidate():
     assert summary["platform"] == "youtube_shorts"
 
 
-def test_engine_runs_immediately_after_psychology_in_pipeline():
+def test_engine_runs_after_psychology_before_script():
     for workflow in ("intelligence", "full_content"):
         steps = WORKFLOWS[workflow]
-        assert steps.index("script_generation") == steps.index("psychology") + 1
+        # Frozen V5 order: Psychology → Audience Intelligence → AI Director → Script
+        assert steps.index("audience_intelligence") == steps.index("psychology") + 1
+        assert steps.index("ai_director") == steps.index("audience_intelligence") + 1
+        assert steps.index("script_generation") == steps.index("ai_director") + 1
 
 
 def test_ranking_blends_script_quality_into_rank_score():

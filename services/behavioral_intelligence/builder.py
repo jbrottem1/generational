@@ -26,7 +26,7 @@ Usage (any engine, no custom parsing):
 
 from __future__ import annotations
 
-from engines.heuristics import clamp
+from core.heuristics import clamp
 from services.behavioral_intelligence.models import BehavioralIntelligenceReport, SCORE_FIELDS
 
 # (field, low-score tip) — one concrete growth tip per scored field. Kept

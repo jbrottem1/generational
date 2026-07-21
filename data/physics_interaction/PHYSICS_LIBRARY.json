@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "universe": "Generational",
+  "profiles": [
+    {
+      "character_id": "DOCTOR_001",
+      "physics_profile_ref": "data/physics_interaction/profiles/DOCTOR_001/PHYSICS_PROFILE.json",
+      "validation_ok": true,
+      "supported_interaction_count": 26,
+      "do_not_float": true
+    },
+    {
+      "character_id": "FOUNDER_001",
+      "physics_profile_ref": "data/physics_interaction/profiles/FOUNDER_001/PHYSICS_PROFILE.json",
+      "validation_ok": true,
+      "supported_interaction_count": 26,
+      "do_not_float": true
+    },
+    {
+      "character_id": "TEACHER_001",
+      "physics_profile_ref": "data/physics_interaction/profiles/TEACHER_001/PHYSICS_PROFILE.json",
+      "validation_ok": true,
+      "supported_interaction_count": 26,
+      "do_not_float": true
+    },
+    {
+      "character_id": "NURSE_001",
+      "physics_profile_ref": "data/physics_interaction/profiles/NURSE_001/PHYSICS_PROFILE.json",
+      "validation_ok": true,
+      "supported_interaction_count": 26,
+      "do_not_float": true
+    }
+  ],
+  "rule": "Nothing floats. Nothing clips. Nothing teleports.",
+  "count": 4
+}

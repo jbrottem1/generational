@@ -1,0 +1,268 @@
+{
+  "schema_version": 3,
+  "os_version": "2.6",
+  "layer": "pre_production",
+  "project_id": "four_seasons_001",
+  "job_id": "four_seasons_001",
+  "title": "The Four Seasons Explained in 60 Seconds",
+  "episode": "001",
+  "status": "ready_to_render",
+  "message": "Local render authorized. Export to ~/Desktop/AI Start-Up/Videos/.",
+  "execution_mode": "local",
+  "prepared_at": "2026-07-12T23:44:28.884802+00:00",
+  "domain": "Earth Science",
+  "secondary_categories": [
+    "Ocean"
+  ],
+  "script": {
+    "hook": "Did you know Earth doesn't have seasons because it's closer to the Sun?",
+    "takeaway": "The tilt of our planet creates the changing seasons that shape life across Earth.",
+    "main_concept": "Earth's axial tilt (~23.5\u00b0) drives seasons \u2014 not distance from the Sun",
+    "beats": [
+      {
+        "text": "Did you know Earth doesn't have seasons because it's closer to the Sun?",
+        "pause_after_sec": 0.35,
+        "scene": "hook",
+        "visual": "Myth-bust keyword + professor direct address",
+        "annotation": "Tap NOT distance"
+      },
+      {
+        "text": "That's a myth \u2014 seasons come from axial tilt, not distance.",
+        "pause_after_sec": 0.4,
+        "scene": "tilt_reveal",
+        "visual": "Earth orbit diagram fades in",
+        "annotation": "Point to Earth in orbit"
+      },
+      {
+        "text": "Earth's axis tilts twenty-three point five degrees as we orbit the Sun.",
+        "pause_after_sec": 0.45,
+        "scene": "orbit",
+        "visual": "Animated orbit + tilt axis line",
+        "annotation": "Circle 23.5\u00b0 keyword"
+      },
+      {
+        "text": "Watch what that tilt does to sunlight.",
+        "pause_after_sec": 0.35,
+        "scene": "transition",
+        "visual": "Camera pan across diagram",
+        "annotation": "Trace sunlight direction"
+      },
+      {
+        "text": "Spring and summer: one hemisphere tilts toward the Sun \u2014 more direct rays, longer days.",
+        "pause_after_sec": 0.45,
+        "scene": "spring_summer",
+        "visual": "Spring flowers + summer sun panels",
+        "annotation": "Point spring and summer panels"
+      },
+      {
+        "text": "Flowers bloom. Heat builds. That's increasing sunlight \u2014 not a closer planet.",
+        "pause_after_sec": 0.4,
+        "scene": "spring_summer_detail",
+        "visual": "Season landscape motion",
+        "annotation": "Highlight summer panel"
+      },
+      {
+        "text": "Autumn and winter: the same hemisphere tilts away.",
+        "pause_after_sec": 0.38,
+        "scene": "autumn_winter",
+        "visual": "Autumn leaves + winter snow panels",
+        "annotation": "Point autumn panel"
+      },
+      {
+        "text": "Sunlight spreads thin. Days shorten. Leaves fall. Snow returns.",
+        "pause_after_sec": 0.42,
+        "scene": "autumn_winter_detail",
+        "visual": "Seasonal transformation",
+        "annotation": "Underline winter panel"
+      },
+      {
+        "text": "Less light \u2014 not a farther Sun.",
+        "pause_after_sec": 0.42,
+        "scene": "myth_close",
+        "visual": "Distance myth crossed out on board",
+        "annotation": "Tap NOT distance again"
+      },
+      {
+        "text": "Same planet. Same Sun. Different angle \u2014 that's four seasons.",
+        "pause_after_sec": 0.45,
+        "scene": "bridge",
+        "visual": "Season icons across tray",
+        "annotation": "Pan across all four panels"
+      },
+      {
+        "text": "Zoom out: one tilted Earth, one Sun, four seasons every year.",
+        "pause_after_sec": 0.42,
+        "scene": "zoom_out",
+        "visual": "Full orbit diagram returns",
+        "annotation": "Point Earth in orbit"
+      },
+      {
+        "text": "The tilt of our planet creates the changing seasons that shape life across Earth.",
+        "pause_after_sec": 0.6,
+        "scene": "takeaway",
+        "visual": "Four seasons keyword + professor present",
+        "annotation": "Circle takeaway keyword"
+      }
+    ],
+    "sources": [
+      "https://spaceplace.nasa.gov/seasons/en/",
+      "https://scijinks.gov/seasons/"
+    ]
+  },
+  "timing": {
+    "beats": [
+      {
+        "text": "Did you know Earth doesn't have seasons because it's closer to the Sun?",
+        "pause_after_sec": 0.35,
+        "scene": "hook",
+        "visual": "Myth-bust keyword + professor direct address",
+        "annotation": "Tap NOT distance"
+      },
+      {
+        "text": "That's a myth \u2014 seasons come from axial tilt, not distance.",
+        "pause_after_sec": 0.4,
+        "scene": "tilt_reveal",
+        "visual": "Earth orbit diagram fades in",
+        "annotation": "Point to Earth in orbit"
+      },
+      {
+        "text": "Earth's axis tilts twenty-three point five degrees as we orbit the Sun.",
+        "pause_after_sec": 0.45,
+        "scene": "orbit",
+        "visual": "Animated orbit + tilt axis line",
+        "annotation": "Circle 23.5\u00b0 keyword"
+      },
+      {
+        "text": "Watch what that tilt does to sunlight.",
+        "pause_after_sec": 0.35,
+        "scene": "transition",
+        "visual": "Camera pan across diagram",
+        "annotation": "Trace sunlight direction"
+      },
+      {
+        "text": "Spring and summer: one hemisphere tilts toward the Sun \u2014 more direct rays, longer days.",
+        "pause_after_sec": 0.45,
+        "scene": "spring_summer",
+        "visual": "Spring flowers + summer sun panels",
+        "annotation": "Point spring and summer panels"
+      },
+      {
+        "text": "Flowers bloom. Heat builds. That's increasing sunlight \u2014 not a closer planet.",
+        "pause_after_sec": 0.4,
+        "scene": "spring_summer_detail",
+        "visual": "Season landscape motion",
+        "annotation": "Highlight summer panel"
+      },
+      {
+        "text": "Autumn and winter: the same hemisphere tilts away.",
+        "pause_after_sec": 0.38,
+        "scene": "autumn_winter",
+        "visual": "Autumn leaves + winter snow panels",
+        "annotation": "Point autumn panel"
+      },
+      {
+        "text": "Sunlight spreads thin. Days shorten. Leaves fall. Snow returns.",
+        "pause_after_sec": 0.42,
+        "scene": "autumn_winter_detail",
+        "visual": "Seasonal transformation",
+        "annotation": "Underline winter panel"
+      },
+      {
+        "text": "Less light \u2014 not a farther Sun.",
+        "pause_after_sec": 0.42,
+        "scene": "myth_close",
+        "visual": "Distance myth crossed out on board",
+        "annotation": "Tap NOT distance again"
+      },
+      {
+        "text": "Same planet. Same Sun. Different angle \u2014 that's four seasons.",
+        "pause_after_sec": 0.45,
+        "scene": "bridge",
+        "visual": "Season icons across tray",
+        "annotation": "Pan across all four panels"
+      },
+      {
+        "text": "Zoom out: one tilted Earth, one Sun, four seasons every year.",
+        "pause_after_sec": 0.42,
+        "scene": "zoom_out",
+        "visual": "Full orbit diagram returns",
+        "annotation": "Point Earth in orbit"
+      },
+      {
+        "text": "The tilt of our planet creates the changing seasons that shape life across Earth.",
+        "pause_after_sec": 0.6,
+        "scene": "takeaway",
+        "visual": "Four seasons keyword + professor present",
+        "annotation": "Circle takeaway keyword"
+      }
+    ],
+    "target_duration_sec": {
+      "min": 15,
+      "max": 32
+    },
+    "fps": 24
+  },
+  "assets": {
+    "images": [],
+    "catalog_root": "data/reality",
+    "cache_root": "data/local_cache",
+    "asset_registry_ids": []
+  },
+  "narration": {
+    "provider": "openai",
+    "voice": "nova",
+    "model": "tts-1-hd",
+    "builder": "services.animation.communicator_delivery.build_paused_narration",
+    "smoke_fallback": "services.reality.smoke_narration.build_smoke_narration"
+  },
+  "animations": {
+    "demo_id": "foundation_v2_seasons_001",
+    "educator_mode": true,
+    "renderer": "services.animation.performer.render_lip_sync_performance"
+  },
+  "choreography": {
+    "plan_id": "foundation_v2_seasons_001"
+  },
+  "transitions": [],
+  "export": {
+    "filename": "Earth_Science_001_001_Four_Seasons_Explained.mp4",
+    "library_filename": "Earth_Science_001_001_Four_Seasons_Explained.mp4",
+    "domain_folder": "Earth Science",
+    "secondary_categories": [
+      "Ocean"
+    ],
+    "directory": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Earth Science",
+    "directory_expanded": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Earth Science",
+    "library_root": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos",
+    "legacy_directory": "/Users/jaredbrottem/Desktop/AI Start-Up/videos/Test run 2 generational",
+    "companion_files": [
+      "script.md",
+      "sources.json",
+      "captions.srt",
+      "thumbnail.png",
+      "metadata.json",
+      "production_report.md",
+      "render_manifest.json"
+    ],
+    "verify": [
+      "file_exists",
+      "size_gt_zero",
+      "video_stream",
+      "audio_stream",
+      "playable",
+      "duration",
+      "resolution",
+      "correct_category_folder",
+      "companion_files",
+      "library_index_updated",
+      "manifest_updated",
+      "production_db_updated"
+    ]
+  },
+  "local_command": "python3 scripts/run_render_package.py --package RENDER_PACKAGE.json",
+  "handoff": {
+    "from_layer": "pre_production",
+    "to_layer": "local_production",
+    "owner": "Local Workstation"
+  }
+}

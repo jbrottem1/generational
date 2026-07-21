@@ -1,0 +1,595 @@
+{
+  "package_version": "1.0.0",
+  "package_type": "world",
+  "generated_at": "2026-07-14T03:26:14.664313+00:00",
+  "topic": "Same laboratory continuity demo",
+  "niche": "science",
+  "world_id": "WORLD-SCIENCE_LAB",
+  "world_type": "Science Lab",
+  "name": "Science Lab",
+  "theme": "empirical discovery",
+  "scale": "room",
+  "historical_accuracy": 85,
+  "world": {
+    "world_id": "WORLD-SCIENCE_LAB",
+    "world_type": "Science Lab",
+    "name": "Science Lab",
+    "theme": "empirical discovery",
+    "scale": "room",
+    "historical_accuracy": 85,
+    "environment": {
+      "description": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels",
+      "continuity_key": "WORLD-SCIENCE_LAB",
+      "do_not_replace_mid_episode": true
+    },
+    "lighting": {
+      "base": "cool teal key + soft grid bounce",
+      "consistent_key": true
+    },
+    "architecture": [
+      "steel beam grid",
+      "glass partitions",
+      "overhead service rails"
+    ],
+    "weather": "indoors_climate_controlled",
+    "objects": [
+      {
+        "name": "microscope",
+        "surface": "desk",
+        "anchored": true,
+        "position": {
+          "x": 0.35,
+          "y": 0.85,
+          "z": 0.4
+        },
+        "scale": 1.0
+      },
+      {
+        "name": "reagent_rack",
+        "surface": "desk",
+        "anchored": true,
+        "position": {
+          "x": 0.55,
+          "y": 0.85,
+          "z": 0.42
+        },
+        "scale": 1.0
+      },
+      {
+        "name": "holographic_board",
+        "surface": "wall",
+        "anchored": true,
+        "position": {
+          "x": 0.5,
+          "y": 1.4,
+          "z": 0.1
+        },
+        "scale": 1.0
+      }
+    ],
+    "furniture": [
+      {
+        "name": "lab_bench",
+        "surface": "floor",
+        "anchored": true,
+        "position": {
+          "x": 0.45,
+          "y": 0.0,
+          "z": 0.45
+        },
+        "scale": 1.0
+      },
+      {
+        "name": "stool",
+        "surface": "floor",
+        "anchored": true,
+        "position": {
+          "x": 0.3,
+          "y": 0.0,
+          "z": 0.55
+        },
+        "scale": 1.0
+      }
+    ],
+    "background_animations": [
+      "particle dust drift",
+      "soft monitor flicker",
+      "vent heat shimmer"
+    ],
+    "sound_ambience": [
+      "HVAC hum",
+      "distant centrifuge",
+      "soft beep"
+    ],
+    "camera_boundaries": {
+      "min_height": 0.4,
+      "max_height": 2.2,
+      "min_distance": 0.5,
+      "max_distance": 8.0
+    },
+    "color_palette": {
+      "family": "lab",
+      "primary": "#101820",
+      "accent": "#A8DADC",
+      "practical": "#F1FAEE"
+    },
+    "lighting_presets": [
+      {
+        "id": "day_neutral",
+        "recipe": "cool teal key + soft bounce fill",
+        "mood": "neutral"
+      },
+      {
+        "id": "dramatic_rim",
+        "recipe": "cool teal key + hard rim + practical instrument glow",
+        "mood": "dramatic"
+      },
+      {
+        "id": "low_key_focus",
+        "recipe": "low-key with luminous subject isolation",
+        "mood": "focus"
+      },
+      {
+        "id": "bright_reveal",
+        "recipe": "bright key + lifted shadows for revelation",
+        "mood": "reveal"
+      }
+    ],
+    "camera_anchors": [
+      {
+        "id": "wide_establish",
+        "position": "rear_center",
+        "angle": "eye_level",
+        "lens_hint": "24mm"
+      },
+      {
+        "id": "bench_medium",
+        "position": "workbench_front",
+        "angle": "slight_high",
+        "lens_hint": "35mm"
+      },
+      {
+        "id": "macro_detail",
+        "position": "instrument_close",
+        "angle": "macro",
+        "lens_hint": "85mm"
+      },
+      {
+        "id": "corner_observe",
+        "position": "room_corner",
+        "angle": "observational",
+        "lens_hint": "28mm"
+      }
+    ],
+    "animation_zones": [
+      {
+        "id": "bench_work",
+        "region": "center_bench"
+      },
+      {
+        "id": "board_explain",
+        "region": "wall_screen"
+      }
+    ],
+    "transition_anchors": [
+      {
+        "id": "doorway",
+        "to_compatible": [
+          "Research Center",
+          "AI Laboratory",
+          "University"
+        ]
+      }
+    ],
+    "design_rules": [
+      "Keep set geometry continuous across scenes",
+      "Vary camera and lighting, not the world itself",
+      "Every object must sit on a defined surface",
+      "No flat solid full-frame backgrounds"
+    ]
+  },
+  "environment": {
+    "description": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels",
+    "continuity_key": "WORLD-SCIENCE_LAB",
+    "do_not_replace_mid_episode": true
+  },
+  "camera_anchors": [
+    {
+      "id": "wide_establish",
+      "position": "rear_center",
+      "angle": "eye_level",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "bench_medium",
+      "position": "workbench_front",
+      "angle": "slight_high",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "macro_detail",
+      "position": "instrument_close",
+      "angle": "macro",
+      "lens_hint": "85mm"
+    },
+    {
+      "id": "corner_observe",
+      "position": "room_corner",
+      "angle": "observational",
+      "lens_hint": "28mm"
+    }
+  ],
+  "lighting_presets": [
+    {
+      "id": "day_neutral",
+      "recipe": "cool teal key + soft bounce fill",
+      "mood": "neutral"
+    },
+    {
+      "id": "dramatic_rim",
+      "recipe": "cool teal key + hard rim + practical instrument glow",
+      "mood": "dramatic"
+    },
+    {
+      "id": "low_key_focus",
+      "recipe": "low-key with luminous subject isolation",
+      "mood": "focus"
+    },
+    {
+      "id": "bright_reveal",
+      "recipe": "bright key + lifted shadows for revelation",
+      "mood": "reveal"
+    }
+  ],
+  "object_placement": [
+    {
+      "name": "microscope",
+      "surface": "desk",
+      "anchored": true,
+      "position": {
+        "x": 0.35,
+        "y": 0.85,
+        "z": 0.4
+      },
+      "scale": 1.0
+    },
+    {
+      "name": "reagent_rack",
+      "surface": "desk",
+      "anchored": true,
+      "position": {
+        "x": 0.55,
+        "y": 0.85,
+        "z": 0.42
+      },
+      "scale": 1.0
+    },
+    {
+      "name": "holographic_board",
+      "surface": "wall",
+      "anchored": true,
+      "position": {
+        "x": 0.5,
+        "y": 1.4,
+        "z": 0.1
+      },
+      "scale": 1.0
+    },
+    {
+      "name": "lab_bench",
+      "surface": "floor",
+      "anchored": true,
+      "position": {
+        "x": 0.45,
+        "y": 0.0,
+        "z": 0.45
+      },
+      "scale": 1.0
+    },
+    {
+      "name": "stool",
+      "surface": "floor",
+      "anchored": true,
+      "position": {
+        "x": 0.3,
+        "y": 0.0,
+        "z": 0.55
+      },
+      "scale": 1.0
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "bench_work",
+      "region": "center_bench"
+    },
+    {
+      "id": "board_explain",
+      "region": "wall_screen"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "doorway",
+      "to_compatible": [
+        "Research Center",
+        "AI Laboratory",
+        "University"
+      ]
+    }
+  ],
+  "architecture": [
+    "steel beam grid",
+    "glass partitions",
+    "overhead service rails"
+  ],
+  "weather": "indoors_climate_controlled",
+  "background_animations": [
+    "particle dust drift",
+    "soft monitor flicker",
+    "vent heat shimmer"
+  ],
+  "sound_ambience": [
+    "HVAC hum",
+    "distant centrifuge",
+    "soft beep"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.4,
+    "max_height": 2.2,
+    "min_distance": 0.5,
+    "max_distance": 8.0
+  },
+  "color_palette": {
+    "family": "lab",
+    "primary": "#101820",
+    "accent": "#A8DADC",
+    "practical": "#F1FAEE"
+  },
+  "continuity": {
+    "single_world": true,
+    "world_id": "WORLD-SCIENCE_LAB",
+    "note": "Scenes share the same laboratory/set; only camera and lighting change",
+    "scene_bindings": [
+      {
+        "scene_id": "s1",
+        "world_id": "WORLD-SCIENCE_LAB",
+        "world_type": "Science Lab",
+        "camera_anchor": "wide_establish",
+        "camera": {
+          "id": "wide_establish",
+          "position": "rear_center",
+          "angle": "eye_level",
+          "lens_hint": "24mm"
+        },
+        "lighting_preset": "day_neutral",
+        "lighting": "cool teal key + soft bounce fill",
+        "environment": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels",
+        "background": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels; camera_anchor=wide_establish; angle=eye_level; lens=24mm; lighting_preset=day_neutral; SAME_WORLD continuity",
+        "color_palette": {
+          "family": "lab",
+          "primary": "#101820",
+          "accent": "#A8DADC",
+          "practical": "#F1FAEE"
+        },
+        "objects_in_frame": [
+          "microscope",
+          "reagent_rack",
+          "holographic_board"
+        ],
+        "narration_excerpt": "Same laboratory continuity demo."
+      },
+      {
+        "scene_id": "s2",
+        "world_id": "WORLD-SCIENCE_LAB",
+        "world_type": "Science Lab",
+        "camera_anchor": "bench_medium",
+        "camera": {
+          "id": "bench_medium",
+          "position": "workbench_front",
+          "angle": "slight_high",
+          "lens_hint": "35mm"
+        },
+        "lighting_preset": "dramatic_rim",
+        "lighting": "cool teal key + hard rim + practical instrument glow",
+        "environment": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels",
+        "background": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels; camera_anchor=bench_medium; angle=slight_high; lens=35mm; lighting_preset=dramatic_rim; SAME_WORLD continuity",
+        "color_palette": {
+          "family": "lab",
+          "primary": "#101820",
+          "accent": "#A8DADC",
+          "practical": "#F1FAEE"
+        },
+        "objects_in_frame": [
+          "microscope",
+          "reagent_rack",
+          "holographic_board"
+        ],
+        "narration_excerpt": "We enter the space."
+      },
+      {
+        "scene_id": "s3",
+        "world_id": "WORLD-SCIENCE_LAB",
+        "world_type": "Science Lab",
+        "camera_anchor": "macro_detail",
+        "camera": {
+          "id": "macro_detail",
+          "position": "instrument_close",
+          "angle": "macro",
+          "lens_hint": "85mm"
+        },
+        "lighting_preset": "low_key_focus",
+        "lighting": "low-key with luminous subject isolation",
+        "environment": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels",
+        "background": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels; camera_anchor=macro_detail; angle=macro; lens=85mm; lighting_preset=low_key_focus; SAME_WORLD continuity",
+        "color_palette": {
+          "family": "lab",
+          "primary": "#101820",
+          "accent": "#A8DADC",
+          "practical": "#F1FAEE"
+        },
+        "objects_in_frame": [
+          "microscope",
+          "reagent_rack",
+          "holographic_board"
+        ],
+        "narration_excerpt": "We reframe the same set from a tighter angle."
+      },
+      {
+        "scene_id": "s4",
+        "world_id": "WORLD-SCIENCE_LAB",
+        "world_type": "Science Lab",
+        "camera_anchor": "corner_observe",
+        "camera": {
+          "id": "corner_observe",
+          "position": "room_corner",
+          "angle": "observational",
+          "lens_hint": "28mm"
+        },
+        "lighting_preset": "bright_reveal",
+        "lighting": "bright key + lifted shadows for revelation",
+        "environment": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels",
+        "background": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels; camera_anchor=corner_observe; angle=observational; lens=28mm; lighting_preset=bright_reveal; SAME_WORLD continuity",
+        "color_palette": {
+          "family": "lab",
+          "primary": "#101820",
+          "accent": "#A8DADC",
+          "practical": "#F1FAEE"
+        },
+        "objects_in_frame": [
+          "microscope",
+          "reagent_rack",
+          "holographic_board"
+        ],
+        "narration_excerpt": "A lighting shift reveals the detail."
+      }
+    ]
+  },
+  "scene_overrides": [
+    {
+      "scene_id": "s1",
+      "environment": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels",
+      "background": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels; camera_anchor=wide_establish; angle=eye_level; lens=24mm; lighting_preset=day_neutral; SAME_WORLD continuity",
+      "lighting": "cool teal key + soft bounce fill",
+      "color_palette": {
+        "family": "lab",
+        "primary": "#101820",
+        "accent": "#A8DADC",
+        "practical": "#F1FAEE"
+      },
+      "world_id": "WORLD-SCIENCE_LAB",
+      "camera_anchor": "wide_establish"
+    },
+    {
+      "scene_id": "s2",
+      "environment": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels",
+      "background": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels; camera_anchor=bench_medium; angle=slight_high; lens=35mm; lighting_preset=dramatic_rim; SAME_WORLD continuity",
+      "lighting": "cool teal key + hard rim + practical instrument glow",
+      "color_palette": {
+        "family": "lab",
+        "primary": "#101820",
+        "accent": "#A8DADC",
+        "practical": "#F1FAEE"
+      },
+      "world_id": "WORLD-SCIENCE_LAB",
+      "camera_anchor": "bench_medium"
+    },
+    {
+      "scene_id": "s3",
+      "environment": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels",
+      "background": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels; camera_anchor=macro_detail; angle=macro; lens=85mm; lighting_preset=low_key_focus; SAME_WORLD continuity",
+      "lighting": "low-key with luminous subject isolation",
+      "color_palette": {
+        "family": "lab",
+        "primary": "#101820",
+        "accent": "#A8DADC",
+        "practical": "#F1FAEE"
+      },
+      "world_id": "WORLD-SCIENCE_LAB",
+      "camera_anchor": "macro_detail"
+    },
+    {
+      "scene_id": "s4",
+      "environment": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels",
+      "background": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels; camera_anchor=corner_observe; angle=observational; lens=28mm; lighting_preset=bright_reveal; SAME_WORLD continuity",
+      "lighting": "bright key + lifted shadows for revelation",
+      "color_palette": {
+        "family": "lab",
+        "primary": "#101820",
+        "accent": "#A8DADC",
+        "practical": "#F1FAEE"
+      },
+      "world_id": "WORLD-SCIENCE_LAB",
+      "camera_anchor": "corner_observe"
+    }
+  ],
+  "renderer_feed": {
+    "note": "Optional enrich of visual_package.scenes \u2014 does not modify production pipeline stages",
+    "scene_overrides": [
+      {
+        "scene_id": "s1",
+        "environment": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels",
+        "background": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels; camera_anchor=wide_establish; angle=eye_level; lens=24mm; lighting_preset=day_neutral; SAME_WORLD continuity",
+        "lighting": "cool teal key + soft bounce fill",
+        "color_palette": {
+          "family": "lab",
+          "primary": "#101820",
+          "accent": "#A8DADC",
+          "practical": "#F1FAEE"
+        },
+        "world_id": "WORLD-SCIENCE_LAB",
+        "camera_anchor": "wide_establish"
+      },
+      {
+        "scene_id": "s2",
+        "environment": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels",
+        "background": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels; camera_anchor=bench_medium; angle=slight_high; lens=35mm; lighting_preset=dramatic_rim; SAME_WORLD continuity",
+        "lighting": "cool teal key + hard rim + practical instrument glow",
+        "color_palette": {
+          "family": "lab",
+          "primary": "#101820",
+          "accent": "#A8DADC",
+          "practical": "#F1FAEE"
+        },
+        "world_id": "WORLD-SCIENCE_LAB",
+        "camera_anchor": "bench_medium"
+      },
+      {
+        "scene_id": "s3",
+        "environment": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels",
+        "background": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels; camera_anchor=macro_detail; angle=macro; lens=85mm; lighting_preset=low_key_focus; SAME_WORLD continuity",
+        "lighting": "low-key with luminous subject isolation",
+        "color_palette": {
+          "family": "lab",
+          "primary": "#101820",
+          "accent": "#A8DADC",
+          "practical": "#F1FAEE"
+        },
+        "world_id": "WORLD-SCIENCE_LAB",
+        "camera_anchor": "macro_detail"
+      },
+      {
+        "scene_id": "s4",
+        "environment": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels",
+        "background": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels; camera_anchor=corner_observe; angle=observational; lens=28mm; lighting_preset=bright_reveal; SAME_WORLD continuity",
+        "lighting": "bright key + lifted shadows for revelation",
+        "color_palette": {
+          "family": "lab",
+          "primary": "#101820",
+          "accent": "#A8DADC",
+          "practical": "#F1FAEE"
+        },
+        "world_id": "WORLD-SCIENCE_LAB",
+        "camera_anchor": "corner_observe"
+      }
+    ]
+  },
+  "validation": {
+    "ok": true,
+    "passed": true,
+    "hard_fails": [],
+    "warnings": [],
+    "scene_binding_count": 4,
+    "object_count": 5
+  }
+}

@@ -70,6 +70,23 @@ if _credential_report.get("demo_mode"):
 else:
     st.success("OpenAI API key loaded — live generation enabled.")
 
+# YouTube Data API status (Agent 0 startup checks — never prints the key)
+_yt = _credential_report.get("youtube_validation") or {}
+if _credential_report.get("youtube_loaded") and _yt.get("ok"):
+    st.success("YouTube Data API connected — discovery can use live trends.")
+elif _credential_report.get("youtube_loaded") and not _yt.get("ok"):
+    st.warning(
+        "**YouTube API key present but validation failed.** "
+        f"{_yt.get('error') or 'Check quota / key permissions.'} "
+        "Key value is never shown."
+    )
+elif not _credential_report.get("youtube_loaded"):
+    with st.expander("YouTube Data API (optional for live trend discovery)", expanded=False):
+        st.caption(
+            f"Add `YOUTUBE_API_KEY=` to `{_credential_report.get('env_path')}` "
+            "to enable live YouTube trending & search for the Discovery Engine."
+        )
+
 tab_labels = ["🎬 Studio", "💡 Ideas", "📝 Scripts", "📁 Projects", "📤 Publishing", "📊 Analytics", "⚙️ Settings"]
 studio_tab, ideas_tab, scripts_tab, projects_tab, publishing_tab, analytics_tab, settings_tab = st.tabs(tab_labels)
 

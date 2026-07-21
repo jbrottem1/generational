@@ -1,0 +1,29 @@
+{
+  "report_type": "HonestLimitationsReport",
+  "native": [
+    "Blender armature skeletal animation",
+    "Skinned mesh (ARMATURE_AUTO weights)",
+    "Shape-key facial / viseme channels",
+    "ChildOf hand-object constraint",
+    "Animated camera + lights",
+    "Persistent 3D lab geometry (not a background plate)",
+    "Eevee/Cycles headless render + FFmpeg encode"
+  ],
+  "approximated": [
+    "Coat uses secondary bones rather than full cloth solver",
+    "Eye gaze via head aiming (no independent eyeball aim bones)",
+    "Viseme schedule is syllable-timed; waveform alignment validated by speech-window audio energy",
+    "Pixel contact metrics use luminance diversity proxy + authored constraints",
+    "Doctor voice falls back to Founder ElevenLabs when Doctor ElevenLabs ID absent"
+  ],
+  "unavailable": [
+    "UnrealRuntime / UnityRuntime / GodotRuntime / ExternalAIRuntime (stubs only)",
+    "Photoreal MetaHuman-grade facial topology",
+    "Full physics cloth destruction-safe sim (intentionally baked)"
+  ],
+  "failed": [],
+  "not_done": [
+    "Did not use Ken Burns / moving photographs",
+    "Did not report success without MP4 + motion proof"
+  ]
+}

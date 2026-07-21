@@ -119,6 +119,35 @@ WORKFLOWS = {
         "production_qa",
         "publishing_queue",
     ],
+    # Integration layer — 10 conceptual stages wired to existing engines.
+    # Prefer the `production_pipeline` engine (writes PIPELINE_STATUS.json)
+    # or run the flattened engine list via WorkflowEngine.
+    "production_pipeline": [
+        "research",
+        "ideation",
+        "psychology",
+        "ai_director",
+        "script_generation",
+        "visual_intelligence",
+        "scene_planning",
+        "visual_planning",
+        "image",
+        "asset_manager",
+        "voice_audio",
+        "narration",
+        "voice",
+        "subtitle",
+        "timeline",
+        "render_package",
+        "studio_render",
+        "video",
+        "quality",
+        "production_qa",
+        "optimization_lab",
+    ],
+    # Agent 0 command center — prefer production_operations engine for
+    # monitored 16-stage runs with retries, dashboard, and production report.
+    "studio_ops": ["production_operations"],
 }
 
 

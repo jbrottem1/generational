@@ -7,6 +7,7 @@ from typing import Any
 from services.knowledge_atlas.catalog import load_atlas
 from services.knowledge_atlas.evaluator import score_asset
 from services.knowledge_atlas.models import AtlasAsset
+from services.quality.visual_priority import prefer_authentic, priority_boost, priority_rank
 
 
 def _tokenize(text: str) -> set[str]:
@@ -20,8 +21,13 @@ def search_visuals(
     domain: str | None = None,
     visual_type: str | None = None,
     limit: int = 12,
+    prefer_photos: bool = True,
 ) -> list[dict[str, Any]]:
-    """Search Atlas assets; returns ranked hits with scores."""
+    """Search Atlas assets; returns ranked hits with scores.
+
+    When ``prefer_photos`` is True (default), authentic photographs outrank
+    diagrams, illustrations, and AI/synthetic assets at equal relevance.
+    """
     concepts = concepts or []
     wanted = _tokenize(query) | _tokenize(" ".join(concepts))
     hits: list[tuple[float, AtlasAsset]] = []
@@ -52,28 +58,38 @@ def search_visuals(
         if not wanted and not concepts:
             relevance = score_asset(asset)
         else:
-            relevance = concept_hits * 0.45 + text_hits * 0.25 + score_asset(asset) * 0.30
+            relevance = concept_hits * 0.40 + text_hits * 0.22 + score_asset(asset) * 0.28
+            if prefer_photos:
+                relevance += priority_boost(asset.visual_type)
 
         if relevance <= 0 and (wanted or concepts):
             continue
         hits.append((relevance, asset))
 
-    hits.sort(key=lambda x: (-x[0], -x[1].reuse_count, x[1].asset_id))
+    if prefer_photos:
+        # Sort by priority rank first, then relevance
+        hits.sort(key=lambda x: (priority_rank(x[1].visual_type), -x[0], -x[1].reuse_count, x[1].asset_id))
+    else:
+        hits.sort(key=lambda x: (-x[0], -x[1].reuse_count, x[1].asset_id))
+
     out: list[dict[str, Any]] = []
-    for rel, asset in hits[:limit]:
+    for rel, asset in hits[: max(limit * 2, limit)]:
         out.append(
             {
                 "asset_id": asset.asset_id,
                 "relevance": round(rel, 3),
                 "quality_score": asset.quality_score,
                 "visual_type": asset.visual_type,
+                "priority_rank": priority_rank(asset.visual_type),
                 "category": asset.category,
                 "topic": asset.topic,
                 "path": asset.path,
                 "suggested_layout": _suggest_layout(asset),
             }
         )
-    return out
+    if prefer_photos:
+        out = prefer_authentic(out, limit=limit)
+    return out[:limit]
 
 
 def _suggest_layout(asset: AtlasAsset) -> str:

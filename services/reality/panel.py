@@ -30,11 +30,10 @@ def _load_rgb(path) -> Image.Image:
 
 
 def _reveal_fraction(p: float, start: float, end: float) -> float:
-    if p < start:
-        return 0.0
-    if p >= end:
-        return 1.0
-    return (p - start) / max(1e-6, end - start)
+    """Visibility with fade-out — panels must not persist forever after end."""
+    from services.animation.layout_engine import visibility_envelope
+
+    return visibility_envelope(p, start, end, fade_in=0.02, fade_out=0.035)
 
 
 def _ease(f: float) -> float:

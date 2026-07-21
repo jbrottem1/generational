@@ -823,9 +823,9 @@
       "asset_id": "thumb_hook_frame",
       "asset_type": "thumbnail",
       "asset_class": "image",
-      "scene_id": "cs_3d7184760f50_001",
-      "project_id": "3d7184760f50",
-      "uri": "mock://assets/generated/thumbnail/a5fb8df02cb0bb64.png",
+      "scene_id": "cs_367c0572501b_001",
+      "project_id": "367c0572501b",
+      "uri": "mock://assets/generated/thumbnail/64e0667883ed9a88.png",
       "provider": "mock_generation",
       "model": "mock-deterministic-v1",
       "format": "png",
@@ -833,31 +833,31 @@
       "height": 720,
       "duration_sec": 0.0,
       "prompt_spec": {
-        "prompt": "The hook moment: Laboratory: Everyone tells you the same thing about bioluminescence for youtube shorts. Everyone is wrong. \u2014 subtle grad, bold text overlay: \"Nobody talks about this: glow to survive\", navy, white, corporate accent blue, confident corporate design, navy and white palette, bright high-key lighting, glass panels, clear hierarchy, bright, clean, high-key, navy, white, corporate accent blue, confident, curiosity, featuring The Narrator: voice-only narrator \u2014 no on-screen depiction, Agent1 Master Pipeline Dry Run brand style",
-        "negative_prompt": "low quality, blurry, distorted anatomy, watermark, text artifacts, grunge, chaotic composition",
-        "style": "corporate",
-        "lighting": "bright, clean, high-key",
+        "prompt": "The hook moment: Laboratory: Stop scrolling \u2014 the clearest explanation of The #1 mistake: Volcano Lightning (Science) starts now. \u2014 parti, bold text overlay: \"Stop scrolling \u2014 the clearest explanatio\", deep space blue, cyan, white highlights, scientific, directional with volumetric glow, deep space blue, cyan, white highlights, wonder, curiosity, featuring The Narrator: voice-only narrator \u2014 no on-screen depiction, Science brand style",
+        "negative_prompt": "low quality, blurry, distorted anatomy, watermark, text artifacts",
+        "style": "scientific",
+        "lighting": "directional with volumetric glow",
         "camera": "",
         "lens": "",
         "composition": "",
-        "mood": "confident",
+        "mood": "wonder",
         "emotion": "curiosity",
-        "color_palette": "navy, white, corporate accent blue",
+        "color_palette": "deep space blue, cyan, white highlights",
         "aspect_ratio": "16:9",
         "resolution": "1280x720",
         "character_references": [
           "The Narrator: voice-only narrator \u2014 no on-screen depiction"
         ],
         "environment_references": [],
-        "brand_style": "Agent1 Master Pipeline Dry Run brand style",
+        "brand_style": "Science brand style",
         "provider": "mock_generation",
         "provider_hints": {
           "dialect": "plain",
           "supports_negative_prompt": true
         }
       },
-      "fingerprint": "49b7e57fb46f40e4204cc10dce633549ce2236cdd8bdabca30c7e07070575430",
-      "version": 59,
+      "fingerprint": "5c5e7278d0f54d6311e14e86d24cc49817857f378b26bd29c3b468989de6ed09",
+      "version": 61,
       "status": "placeholder",
       "placeholder": true,
       "cached": false,
@@ -884,11 +884,11 @@
       "priority": "required",
       "category": "thumbnail",
       "metadata": {
-        "title": "The hook moment: Laboratory: Everyone tells you the same thing about bioluminescence for youtube shorts. Everyone is wrong. \u2014 subtle grad",
-        "description": "The hook moment: Laboratory: Everyone tells you the same thing about bioluminescence for youtube shorts. Everyone is wrong. \u2014 subtle grad",
+        "title": "The hook moment: Laboratory: Stop scrolling \u2014 the clearest explanation of The #1 mistake: Volcano Lightning (Science) starts now. \u2014 parti",
+        "description": "The hook moment: Laboratory: Stop scrolling \u2014 the clearest explanation of The #1 mistake: Volcano Lightning (Science) starts now. \u2014 parti",
         "tags": [],
-        "brand_id": "Agent1 Master Pipeline Dry Run",
-        "style": "corporate",
+        "brand_id": "Science",
+        "style": "scientific",
         "character_ids": [
           "char_narrator_house"
         ],
@@ -898,7 +898,7 @@
         "file_size_bytes": 0,
         "extra": {}
       },
-      "created_at": "2026-07-10T14:44:29.250562+00:00",
+      "created_at": "2026-07-13T03:20:43.739835+00:00",
       "versions": [
         {
           "version": 1,
@@ -1371,6 +1371,22 @@
           "provider": "mock_generation",
           "status": "placeholder",
           "created_at": "2026-07-10T14:44:29.250562+00:00"
+        },
+        {
+          "version": 60,
+          "fingerprint": "5e5e9b71b38caa83273ef51c74005ad13b6796ba0ba939c5ca82c024fb4a05ae",
+          "uri": "mock://assets/generated/thumbnail/035e333c7e82b323.png",
+          "provider": "mock_generation",
+          "status": "placeholder",
+          "created_at": "2026-07-13T03:20:42.837125+00:00"
+        },
+        {
+          "version": 61,
+          "fingerprint": "5c5e7278d0f54d6311e14e86d24cc49817857f378b26bd29c3b468989de6ed09",
+          "uri": "mock://assets/generated/thumbnail/64e0667883ed9a88.png",
+          "provider": "mock_generation",
+          "status": "placeholder",
+          "created_at": "2026-07-13T03:20:43.739835+00:00"
         }
       ]
     },
@@ -1378,9 +1394,9 @@
       "asset_id": "thumb_payoff_frame",
       "asset_type": "thumbnail",
       "asset_class": "image",
-      "scene_id": "cs_3d7184760f50_009",
-      "project_id": "3d7184760f50",
-      "uri": "mock://assets/generated/thumbnail/d1526d831d24cc00.png",
+      "scene_id": "cs_367c0572501b_009",
+      "project_id": "367c0572501b",
+      "uri": "mock://assets/generated/thumbnail/1c9bca6d05090297.png",
       "provider": "mock_generation",
       "model": "mock-deterministic-v1",
       "format": "png",
@@ -1388,31 +1404,31 @@
       "height": 720,
       "duration_sec": 0.0,
       "prompt_spec": {
-        "prompt": "The payoff hero shot: Laboratory: Follow for the next deep dive \u2014 tomorrow's video goes further into bioluminescence for youtube shorts. \u2014 sub, bold text overlay: \"Bioluminescence: A Survival Strategy\", navy, white, corporate accent blue, confident corporate design, navy and white palette, bright high-key lighting, glass panels, clear hierarchy, bright, clean, high-key, navy, white, corporate accent blue, confident, satisfaction, featuring The Narrator: voice-only narrator \u2014 no on-screen depiction, Agent1 Master Pipeline Dry Run brand style",
-        "negative_prompt": "low quality, blurry, distorted anatomy, watermark, text artifacts, grunge, chaotic composition",
-        "style": "corporate",
-        "lighting": "bright, clean, high-key",
+        "prompt": "The payoff hero shot: Laboratory: Comment the myth you believed the longest \u2014 and follow so the next one doesn't fool you. \u2014 particles, fields, bold text overlay: \"The #1 mistake: Volcano Lightning (Scien\", deep space blue, cyan, white highlights, scientific, directional with volumetric glow, deep space blue, cyan, white highlights, wonder, satisfaction, featuring The Narrator: voice-only narrator \u2014 no on-screen depiction, Science brand style",
+        "negative_prompt": "low quality, blurry, distorted anatomy, watermark, text artifacts",
+        "style": "scientific",
+        "lighting": "directional with volumetric glow",
         "camera": "",
         "lens": "",
         "composition": "",
-        "mood": "confident",
+        "mood": "wonder",
         "emotion": "satisfaction",
-        "color_palette": "navy, white, corporate accent blue",
+        "color_palette": "deep space blue, cyan, white highlights",
         "aspect_ratio": "16:9",
         "resolution": "1280x720",
         "character_references": [
           "The Narrator: voice-only narrator \u2014 no on-screen depiction"
         ],
         "environment_references": [],
-        "brand_style": "Agent1 Master Pipeline Dry Run brand style",
+        "brand_style": "Science brand style",
         "provider": "mock_generation",
         "provider_hints": {
           "dialect": "plain",
           "supports_negative_prompt": true
         }
       },
-      "fingerprint": "d3bcb8045f7edc003aeb52ea430adbdae4bd2a5718dbd973631d87472dfb91f6",
-      "version": 60,
+      "fingerprint": "31948862114fb5b94220e2c07cc3b2d611508d4bb8fc29c6d2bc41d53bf48334",
+      "version": 62,
       "status": "placeholder",
       "placeholder": true,
       "cached": false,
@@ -1439,11 +1455,11 @@
       "priority": "required",
       "category": "thumbnail",
       "metadata": {
-        "title": "The payoff hero shot: Laboratory: Follow for the next deep dive \u2014 tomorrow's video goes further into bioluminescence for youtube shorts. \u2014 sub",
-        "description": "The payoff hero shot: Laboratory: Follow for the next deep dive \u2014 tomorrow's video goes further into bioluminescence for youtube shorts. \u2014 sub",
+        "title": "The payoff hero shot: Laboratory: Comment the myth you believed the longest \u2014 and follow so the next one doesn't fool you. \u2014 particles, fields",
+        "description": "The payoff hero shot: Laboratory: Comment the myth you believed the longest \u2014 and follow so the next one doesn't fool you. \u2014 particles, fields",
         "tags": [],
-        "brand_id": "Agent1 Master Pipeline Dry Run",
-        "style": "corporate",
+        "brand_id": "Science",
+        "style": "scientific",
         "character_ids": [
           "char_narrator_house"
         ],
@@ -1453,7 +1469,7 @@
         "file_size_bytes": 0,
         "extra": {}
       },
-      "created_at": "2026-07-10T14:44:29.342767+00:00",
+      "created_at": "2026-07-13T03:20:43.857804+00:00",
       "versions": [
         {
           "version": 1,
@@ -1934,6 +1950,22 @@
           "provider": "mock_generation",
           "status": "placeholder",
           "created_at": "2026-07-10T14:44:29.342767+00:00"
+        },
+        {
+          "version": 61,
+          "fingerprint": "a81ee25436690297705b5197ba4a43861403fbe42ab6c7946df3442ad91c9c3c",
+          "uri": "mock://assets/generated/thumbnail/4211f7668dd0c745.png",
+          "provider": "mock_generation",
+          "status": "placeholder",
+          "created_at": "2026-07-13T03:20:42.966936+00:00"
+        },
+        {
+          "version": 62,
+          "fingerprint": "31948862114fb5b94220e2c07cc3b2d611508d4bb8fc29c6d2bc41d53bf48334",
+          "uri": "mock://assets/generated/thumbnail/1c9bca6d05090297.png",
+          "provider": "mock_generation",
+          "status": "placeholder",
+          "created_at": "2026-07-13T03:20:43.857804+00:00"
         }
       ]
     },
@@ -1941,9 +1973,9 @@
       "asset_id": "thumb_character_focus",
       "asset_type": "thumbnail",
       "asset_class": "image",
-      "scene_id": "cs_098c2015d2ed_001",
-      "project_id": "098c2015d2ed",
-      "uri": "mock://assets/generated/thumbnail/350a57464973e864.png",
+      "scene_id": "cs_3b5df8ac6e85_001",
+      "project_id": "3b5df8ac6e85",
+      "uri": "mock://assets/generated/thumbnail/b773e23784ea016d.png",
       "provider": "mock_generation",
       "model": "mock-deterministic-v1",
       "format": "png",
@@ -1951,31 +1983,31 @@
       "height": 720,
       "duration_sec": 0.0,
       "prompt_spec": {
-        "prompt": "Lead character close-up with high-contrast emotional expression, true-to-life with lifted shadows, documentary, available light, practical sources, true-to-life with lifted shadows, authentic, curiosity, featuring The Narrator: voice-only narrator \u2014 no on-screen depiction, Agent1 Master Pipeline Dry Run brand style",
+        "prompt": "Lead character close-up with high-contrast emotional expression, deep space blue, cyan, white highlights, scientific, directional with volumetric glow, deep space blue, cyan, white highlights, wonder, curiosity, featuring The Narrator: voice-only narrator \u2014 no on-screen depiction, Science brand style",
         "negative_prompt": "low quality, blurry, distorted anatomy, watermark, text artifacts",
-        "style": "documentary",
-        "lighting": "available light, practical sources",
+        "style": "scientific",
+        "lighting": "directional with volumetric glow",
         "camera": "",
         "lens": "",
         "composition": "",
-        "mood": "authentic",
+        "mood": "wonder",
         "emotion": "curiosity",
-        "color_palette": "true-to-life with lifted shadows",
+        "color_palette": "deep space blue, cyan, white highlights",
         "aspect_ratio": "16:9",
         "resolution": "1280x720",
         "character_references": [
           "The Narrator: voice-only narrator \u2014 no on-screen depiction"
         ],
         "environment_references": [],
-        "brand_style": "Agent1 Master Pipeline Dry Run brand style",
+        "brand_style": "Science brand style",
         "provider": "mock_generation",
         "provider_hints": {
           "dialect": "plain",
           "supports_negative_prompt": true
         }
       },
-      "fingerprint": "94639e7bdd24b45b9c4c693eb3244e9cc347d5dc104ad06ab351045d106ea3d2",
-      "version": 16,
+      "fingerprint": "e1c86f2bfc3ff39779acf794094dcb83bb24a2a34e09b69935fd3a92795e19d2",
+      "version": 17,
       "status": "placeholder",
       "placeholder": true,
       "cached": false,
@@ -2005,8 +2037,8 @@
         "title": "Lead character close-up with high-contrast emotional expression",
         "description": "Lead character close-up with high-contrast emotional expression",
         "tags": [],
-        "brand_id": "Agent1 Master Pipeline Dry Run",
-        "style": "documentary",
+        "brand_id": "Science",
+        "style": "scientific",
         "character_ids": [
           "char_narrator_house"
         ],
@@ -2016,7 +2048,7 @@
         "file_size_bytes": 0,
         "extra": {}
       },
-      "created_at": "2026-07-10T14:44:22.018239+00:00",
+      "created_at": "2026-07-13T03:20:43.079342+00:00",
       "versions": [
         {
           "version": 1,
@@ -2145,6 +2177,14 @@
           "provider": "mock_generation",
           "status": "placeholder",
           "created_at": "2026-07-10T14:44:22.018239+00:00"
+        },
+        {
+          "version": 17,
+          "fingerprint": "e1c86f2bfc3ff39779acf794094dcb83bb24a2a34e09b69935fd3a92795e19d2",
+          "uri": "mock://assets/generated/thumbnail/b773e23784ea016d.png",
+          "provider": "mock_generation",
+          "status": "placeholder",
+          "created_at": "2026-07-13T03:20:43.079342+00:00"
         }
       ]
     },
@@ -35150,6 +35190,916 @@
           "created_at": "2026-07-10T14:44:29.163228+00:00"
         }
       ]
+    },
+    "asset_3b5df8ac6e85_001": {
+      "asset_id": "asset_3b5df8ac6e85_001",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "scene_id": "cs_3b5df8ac6e85_001",
+      "project_id": "3b5df8ac6e85",
+      "uri": "mock://assets/generated/ai_image/510e6936dda36395.png",
+      "provider": "mock_generation",
+      "model": "mock-deterministic-v1",
+      "format": "png",
+      "width": 1080,
+      "height": 1920,
+      "duration_sec": 0.0,
+      "prompt_spec": {
+        "prompt": "Laboratory: There's one detail about volcano lightning that changes everything \u2014 and almost nobody mentions it. \u2014 particles, fields, translucent structures, directional with volumetric glow, deep space blue, cyan, white highlights, dramatic close-up, scientific, directional with volumetric glow, deep space blue, cyan, white highlights, wonder, curiosity, dramatic close-up, fast push-in, featuring The Narrator: voice-only narrator \u2014 no on-screen depiction, Science brand style",
+        "negative_prompt": "low quality, blurry, distorted anatomy, watermark, text artifacts",
+        "style": "scientific",
+        "lighting": "directional with volumetric glow",
+        "camera": "dramatic close-up, fast push-in",
+        "lens": "",
+        "composition": "",
+        "mood": "wonder",
+        "emotion": "curiosity",
+        "color_palette": "deep space blue, cyan, white highlights",
+        "aspect_ratio": "9:16",
+        "resolution": "1080x1920",
+        "character_references": [
+          "The Narrator: voice-only narrator \u2014 no on-screen depiction"
+        ],
+        "environment_references": [],
+        "brand_style": "Science brand style",
+        "provider": "mock_generation",
+        "provider_hints": {
+          "dialect": "plain",
+          "supports_negative_prompt": true
+        }
+      },
+      "fingerprint": "f4158dc4efca9a09967c91848f9317674993912064f14920bb148f9dbfa828f7",
+      "version": 1,
+      "status": "placeholder",
+      "placeholder": true,
+      "cached": false,
+      "quality": {
+        "status": "warning",
+        "confidence": 75,
+        "checks": {
+          "provider_ok": true,
+          "resolution_ok": true,
+          "aspect_ratio_ok": true,
+          "brand_ok": true,
+          "prompt_complete": true,
+          "safety_ok": true,
+          "unique": true
+        },
+        "warnings": [
+          "placeholder output (Demo Mode provider)"
+        ],
+        "blockers": [],
+        "safety_flags": [],
+        "duplicate_of": ""
+      },
+      "reusable": false,
+      "priority": "required",
+      "category": "",
+      "metadata": {
+        "title": "Laboratory: There's one detail about volcano lightning that changes everything \u2014 and almost nobody mentions it. \u2014 particles, fields, translucent structures",
+        "description": "Laboratory: There's one detail about volcano lightning that changes everything \u2014 and almost nobody mentions it. \u2014 particles, fields, translucent structures",
+        "tags": [],
+        "brand_id": "Science",
+        "style": "scientific",
+        "character_ids": [
+          "char_narrator_house"
+        ],
+        "source": "creative_studio",
+        "license": "placeholder",
+        "mime_type": "image/png",
+        "file_size_bytes": 0,
+        "extra": {}
+      },
+      "created_at": "2026-07-13T03:20:41.992147+00:00",
+      "versions": [
+        {
+          "version": 1,
+          "fingerprint": "f4158dc4efca9a09967c91848f9317674993912064f14920bb148f9dbfa828f7",
+          "uri": "mock://assets/generated/ai_image/510e6936dda36395.png",
+          "provider": "mock_generation",
+          "status": "placeholder",
+          "created_at": "2026-07-13T03:20:41.992147+00:00"
+        }
+      ]
+    },
+    "asset_3b5df8ac6e85_002": {
+      "asset_id": "asset_3b5df8ac6e85_002",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "scene_id": "cs_3b5df8ac6e85_002",
+      "project_id": "3b5df8ac6e85",
+      "uri": "mock://assets/generated/ai_image/5cde3cf1eed3639d.png",
+      "provider": "mock_generation",
+      "model": "mock-deterministic-v1",
+      "format": "png",
+      "width": 1080,
+      "height": 1920,
+      "duration_sec": 0.0,
+      "prompt_spec": {
+        "prompt": "Laboratory: Wait \u2014 before you disagree, look at the actual data. \u2014 particles, fields, translucent structures, directional with volumetric glow, deep space blue, cyan, white highlights, wide establishing, scientific, directional with volumetric glow, deep space blue, cyan, white highlights, wonder, interest, wide establishing, slow push-in, featuring The Narrator: voice-only narrator \u2014 no on-screen depiction, Science brand style",
+        "negative_prompt": "low quality, blurry, distorted anatomy, watermark, text artifacts",
+        "style": "scientific",
+        "lighting": "directional with volumetric glow",
+        "camera": "wide establishing, slow push-in",
+        "lens": "",
+        "composition": "",
+        "mood": "wonder",
+        "emotion": "interest",
+        "color_palette": "deep space blue, cyan, white highlights",
+        "aspect_ratio": "9:16",
+        "resolution": "1080x1920",
+        "character_references": [
+          "The Narrator: voice-only narrator \u2014 no on-screen depiction"
+        ],
+        "environment_references": [],
+        "brand_style": "Science brand style",
+        "provider": "mock_generation",
+        "provider_hints": {
+          "dialect": "plain",
+          "supports_negative_prompt": true
+        }
+      },
+      "fingerprint": "88e9c4eca710175235dea4aed55f53686699b3a929d6e4eef9d8b57752e45692",
+      "version": 1,
+      "status": "placeholder",
+      "placeholder": true,
+      "cached": false,
+      "quality": {
+        "status": "warning",
+        "confidence": 75,
+        "checks": {
+          "provider_ok": true,
+          "resolution_ok": true,
+          "aspect_ratio_ok": true,
+          "brand_ok": true,
+          "prompt_complete": true,
+          "safety_ok": true,
+          "unique": true
+        },
+        "warnings": [
+          "placeholder output (Demo Mode provider)"
+        ],
+        "blockers": [],
+        "safety_flags": [],
+        "duplicate_of": ""
+      },
+      "reusable": false,
+      "priority": "required",
+      "category": "",
+      "metadata": {
+        "title": "Laboratory: Wait \u2014 before you disagree, look at the actual data. \u2014 particles, fields, translucent structures",
+        "description": "Laboratory: Wait \u2014 before you disagree, look at the actual data. \u2014 particles, fields, translucent structures",
+        "tags": [],
+        "brand_id": "Science",
+        "style": "scientific",
+        "character_ids": [
+          "char_narrator_house"
+        ],
+        "source": "creative_studio",
+        "license": "placeholder",
+        "mime_type": "image/png",
+        "file_size_bytes": 0,
+        "extra": {}
+      },
+      "created_at": "2026-07-13T03:20:42.084304+00:00",
+      "versions": [
+        {
+          "version": 1,
+          "fingerprint": "88e9c4eca710175235dea4aed55f53686699b3a929d6e4eef9d8b57752e45692",
+          "uri": "mock://assets/generated/ai_image/5cde3cf1eed3639d.png",
+          "provider": "mock_generation",
+          "status": "placeholder",
+          "created_at": "2026-07-13T03:20:42.084304+00:00"
+        }
+      ]
+    },
+    "asset_3b5df8ac6e85_003": {
+      "asset_id": "asset_3b5df8ac6e85_003",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "scene_id": "cs_3b5df8ac6e85_003",
+      "project_id": "3b5df8ac6e85",
+      "uri": "mock://assets/generated/ai_image/afc2f51ef08f9ff6.png",
+      "provider": "mock_generation",
+      "model": "mock-deterministic-v1",
+      "format": "png",
+      "width": 1080,
+      "height": 1920,
+      "duration_sec": 0.0,
+      "prompt_spec": {
+        "prompt": "Laboratory: By the end you'll know the one claim about volcano lightning that survives the evidence. \u2014 particles, fields, translucent structures, directional with volumetric glow, deep space blue, cyan, white highlights, medium, scientific, directional with volumetric glow, deep space blue, cyan, white highlights, wonder, interest, medium, static with subtle drift, featuring The Narrator: voice-only narrator \u2014 no on-screen depiction, Science brand style",
+        "negative_prompt": "low quality, blurry, distorted anatomy, watermark, text artifacts",
+        "style": "scientific",
+        "lighting": "directional with volumetric glow",
+        "camera": "medium, static with subtle drift",
+        "lens": "",
+        "composition": "",
+        "mood": "wonder",
+        "emotion": "interest",
+        "color_palette": "deep space blue, cyan, white highlights",
+        "aspect_ratio": "9:16",
+        "resolution": "1080x1920",
+        "character_references": [
+          "The Narrator: voice-only narrator \u2014 no on-screen depiction"
+        ],
+        "environment_references": [],
+        "brand_style": "Science brand style",
+        "provider": "mock_generation",
+        "provider_hints": {
+          "dialect": "plain",
+          "supports_negative_prompt": true
+        }
+      },
+      "fingerprint": "a81b5ca2412b3cfc7958e66a88fc6ebc21ff496148554f9f76b3d1a9b1294e19",
+      "version": 1,
+      "status": "placeholder",
+      "placeholder": true,
+      "cached": false,
+      "quality": {
+        "status": "warning",
+        "confidence": 75,
+        "checks": {
+          "provider_ok": true,
+          "resolution_ok": true,
+          "aspect_ratio_ok": true,
+          "brand_ok": true,
+          "prompt_complete": true,
+          "safety_ok": true,
+          "unique": true
+        },
+        "warnings": [
+          "placeholder output (Demo Mode provider)"
+        ],
+        "blockers": [],
+        "safety_flags": [],
+        "duplicate_of": ""
+      },
+      "reusable": false,
+      "priority": "required",
+      "category": "",
+      "metadata": {
+        "title": "Laboratory: By the end you'll know the one claim about volcano lightning that survives the evidence. \u2014 particles, fields, translucent structures",
+        "description": "Laboratory: By the end you'll know the one claim about volcano lightning that survives the evidence. \u2014 particles, fields, translucent structures",
+        "tags": [],
+        "brand_id": "Science",
+        "style": "scientific",
+        "character_ids": [
+          "char_narrator_house"
+        ],
+        "source": "creative_studio",
+        "license": "placeholder",
+        "mime_type": "image/png",
+        "file_size_bytes": 0,
+        "extra": {}
+      },
+      "created_at": "2026-07-13T03:20:42.195613+00:00",
+      "versions": [
+        {
+          "version": 1,
+          "fingerprint": "a81b5ca2412b3cfc7958e66a88fc6ebc21ff496148554f9f76b3d1a9b1294e19",
+          "uri": "mock://assets/generated/ai_image/afc2f51ef08f9ff6.png",
+          "provider": "mock_generation",
+          "status": "placeholder",
+          "created_at": "2026-07-13T03:20:42.195613+00:00"
+        }
+      ]
+    },
+    "asset_3b5df8ac6e85_004": {
+      "asset_id": "asset_3b5df8ac6e85_004",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "scene_id": "cs_3b5df8ac6e85_004",
+      "project_id": "3b5df8ac6e85",
+      "uri": "mock://assets/generated/ai_image/0388b6adf59d915d.png",
+      "provider": "mock_generation",
+      "model": "mock-deterministic-v1",
+      "format": "png",
+      "width": 1080,
+      "height": 1920,
+      "duration_sec": 0.0,
+      "prompt_spec": {
+        "prompt": "Laboratory: Here's the context most videos skip. \u2014 particles, fields, translucent structures, directional with volumetric glow, deep space blue, cyan, white highlights, close-up, scientific, directional with volumetric glow, deep space blue, cyan, white highlights, wonder, engagement, close-up, slow push-in, featuring The Narrator: voice-only narrator \u2014 no on-screen depiction, Science brand style",
+        "negative_prompt": "low quality, blurry, distorted anatomy, watermark, text artifacts",
+        "style": "scientific",
+        "lighting": "directional with volumetric glow",
+        "camera": "close-up, slow push-in",
+        "lens": "",
+        "composition": "",
+        "mood": "wonder",
+        "emotion": "engagement",
+        "color_palette": "deep space blue, cyan, white highlights",
+        "aspect_ratio": "9:16",
+        "resolution": "1080x1920",
+        "character_references": [
+          "The Narrator: voice-only narrator \u2014 no on-screen depiction"
+        ],
+        "environment_references": [],
+        "brand_style": "Science brand style",
+        "provider": "mock_generation",
+        "provider_hints": {
+          "dialect": "plain",
+          "supports_negative_prompt": true
+        }
+      },
+      "fingerprint": "8e500d05e21d5a81435600e098dfc798ebb97c7f4c7118e1a411a3660d9cda9c",
+      "version": 1,
+      "status": "placeholder",
+      "placeholder": true,
+      "cached": false,
+      "quality": {
+        "status": "warning",
+        "confidence": 75,
+        "checks": {
+          "provider_ok": true,
+          "resolution_ok": true,
+          "aspect_ratio_ok": true,
+          "brand_ok": true,
+          "prompt_complete": true,
+          "safety_ok": true,
+          "unique": true
+        },
+        "warnings": [
+          "placeholder output (Demo Mode provider)"
+        ],
+        "blockers": [],
+        "safety_flags": [],
+        "duplicate_of": ""
+      },
+      "reusable": false,
+      "priority": "required",
+      "category": "",
+      "metadata": {
+        "title": "Laboratory: Here's the context most videos skip. \u2014 particles, fields, translucent structures",
+        "description": "Laboratory: Here's the context most videos skip. \u2014 particles, fields, translucent structures",
+        "tags": [],
+        "brand_id": "Science",
+        "style": "scientific",
+        "character_ids": [
+          "char_narrator_house"
+        ],
+        "source": "creative_studio",
+        "license": "placeholder",
+        "mime_type": "image/png",
+        "file_size_bytes": 0,
+        "extra": {}
+      },
+      "created_at": "2026-07-13T03:20:42.280919+00:00",
+      "versions": [
+        {
+          "version": 1,
+          "fingerprint": "8e500d05e21d5a81435600e098dfc798ebb97c7f4c7118e1a411a3660d9cda9c",
+          "uri": "mock://assets/generated/ai_image/0388b6adf59d915d.png",
+          "provider": "mock_generation",
+          "status": "placeholder",
+          "created_at": "2026-07-13T03:20:42.280919+00:00"
+        }
+      ]
+    },
+    "asset_3b5df8ac6e85_005": {
+      "asset_id": "asset_3b5df8ac6e85_005",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "scene_id": "cs_3b5df8ac6e85_005",
+      "project_id": "3b5df8ac6e85",
+      "uri": "mock://assets/generated/ai_image/7debee7bcbeec027.png",
+      "provider": "mock_generation",
+      "model": "mock-deterministic-v1",
+      "format": "png",
+      "width": 1080,
+      "height": 1920,
+      "duration_sec": 0.0,
+      "prompt_spec": {
+        "prompt": "Laboratory: Then it escalates: Research on volcano lightning from PubMed highlights important patterns relevant to short-form conten \u2014 particles, fields, translucent structures, directional with volumetric glow, deep space blue, cyan, white highlights, medium over-shoulder, scientific, directional with volumetric glow, deep space blue, cyan, white highlights, wonder, engagement, medium over-shoulder, lateral track, featuring The Narrator: voice-only narrator \u2014 no on-screen depiction, Science brand style",
+        "negative_prompt": "low quality, blurry, distorted anatomy, watermark, text artifacts",
+        "style": "scientific",
+        "lighting": "directional with volumetric glow",
+        "camera": "medium over-shoulder, lateral track",
+        "lens": "",
+        "composition": "",
+        "mood": "wonder",
+        "emotion": "engagement",
+        "color_palette": "deep space blue, cyan, white highlights",
+        "aspect_ratio": "9:16",
+        "resolution": "1080x1920",
+        "character_references": [
+          "The Narrator: voice-only narrator \u2014 no on-screen depiction"
+        ],
+        "environment_references": [],
+        "brand_style": "Science brand style",
+        "provider": "mock_generation",
+        "provider_hints": {
+          "dialect": "plain",
+          "supports_negative_prompt": true
+        }
+      },
+      "fingerprint": "91ab7ca6376dcf570a401afd882f3343a132651f52ad9996e569861ffb4db88f",
+      "version": 1,
+      "status": "placeholder",
+      "placeholder": true,
+      "cached": false,
+      "quality": {
+        "status": "warning",
+        "confidence": 75,
+        "checks": {
+          "provider_ok": true,
+          "resolution_ok": true,
+          "aspect_ratio_ok": true,
+          "brand_ok": true,
+          "prompt_complete": true,
+          "safety_ok": true,
+          "unique": true
+        },
+        "warnings": [
+          "placeholder output (Demo Mode provider)"
+        ],
+        "blockers": [],
+        "safety_flags": [],
+        "duplicate_of": ""
+      },
+      "reusable": false,
+      "priority": "required",
+      "category": "",
+      "metadata": {
+        "title": "Laboratory: Then it escalates: Research on volcano lightning from PubMed highlights important patterns relevant to short-form conten \u2014 particles, fields, translucent structures",
+        "description": "Laboratory: Then it escalates: Research on volcano lightning from PubMed highlights important patterns relevant to short-form conten \u2014 particles, fields, translucent structures",
+        "tags": [],
+        "brand_id": "Science",
+        "style": "scientific",
+        "character_ids": [
+          "char_narrator_house"
+        ],
+        "source": "creative_studio",
+        "license": "placeholder",
+        "mime_type": "image/png",
+        "file_size_bytes": 0,
+        "extra": {}
+      },
+      "created_at": "2026-07-13T03:20:42.368553+00:00",
+      "versions": [
+        {
+          "version": 1,
+          "fingerprint": "91ab7ca6376dcf570a401afd882f3343a132651f52ad9996e569861ffb4db88f",
+          "uri": "mock://assets/generated/ai_image/7debee7bcbeec027.png",
+          "provider": "mock_generation",
+          "status": "placeholder",
+          "created_at": "2026-07-13T03:20:42.368553+00:00"
+        }
+      ]
+    },
+    "asset_3b5df8ac6e85_006": {
+      "asset_id": "asset_3b5df8ac6e85_006",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "scene_id": "cs_3b5df8ac6e85_006",
+      "project_id": "3b5df8ac6e85",
+      "uri": "mock://assets/generated/ai_image/8df090ef2c32d10c.png",
+      "provider": "mock_generation",
+      "model": "mock-deterministic-v1",
+      "format": "png",
+      "width": 1080,
+      "height": 1920,
+      "duration_sec": 0.0,
+      "prompt_spec": {
+        "prompt": "Laboratory: The evidence: Research on volcano lightning from arXiv highlights important patterns relevant to short-form content. \u2014 particles, fields, translucent structures, directional with volumetric glow, deep space blue, cyan, white highlights, detail insert, scientific, directional with volumetric glow, deep space blue, cyan, white highlights, wonder, engagement, detail insert, static macro, featuring The Narrator: voice-only narrator \u2014 no on-screen depiction, Science brand style",
+        "negative_prompt": "low quality, blurry, distorted anatomy, watermark, text artifacts",
+        "style": "scientific",
+        "lighting": "directional with volumetric glow",
+        "camera": "detail insert, static macro",
+        "lens": "",
+        "composition": "",
+        "mood": "wonder",
+        "emotion": "engagement",
+        "color_palette": "deep space blue, cyan, white highlights",
+        "aspect_ratio": "9:16",
+        "resolution": "1080x1920",
+        "character_references": [
+          "The Narrator: voice-only narrator \u2014 no on-screen depiction"
+        ],
+        "environment_references": [],
+        "brand_style": "Science brand style",
+        "provider": "mock_generation",
+        "provider_hints": {
+          "dialect": "plain",
+          "supports_negative_prompt": true
+        }
+      },
+      "fingerprint": "9cef34a0f972ed6d3249a72181f053666234b587db7fc76ca5429046ea4a0e4e",
+      "version": 1,
+      "status": "placeholder",
+      "placeholder": true,
+      "cached": false,
+      "quality": {
+        "status": "warning",
+        "confidence": 75,
+        "checks": {
+          "provider_ok": true,
+          "resolution_ok": true,
+          "aspect_ratio_ok": true,
+          "brand_ok": true,
+          "prompt_complete": true,
+          "safety_ok": true,
+          "unique": true
+        },
+        "warnings": [
+          "placeholder output (Demo Mode provider)"
+        ],
+        "blockers": [],
+        "safety_flags": [],
+        "duplicate_of": ""
+      },
+      "reusable": false,
+      "priority": "required",
+      "category": "",
+      "metadata": {
+        "title": "Laboratory: The evidence: Research on volcano lightning from arXiv highlights important patterns relevant to short-form content. \u2014 particles, fields, translucent structures",
+        "description": "Laboratory: The evidence: Research on volcano lightning from arXiv highlights important patterns relevant to short-form content. \u2014 particles, fields, translucent structures",
+        "tags": [],
+        "brand_id": "Science",
+        "style": "scientific",
+        "character_ids": [
+          "char_narrator_house"
+        ],
+        "source": "creative_studio",
+        "license": "placeholder",
+        "mime_type": "image/png",
+        "file_size_bytes": 0,
+        "extra": {}
+      },
+      "created_at": "2026-07-13T03:20:42.456327+00:00",
+      "versions": [
+        {
+          "version": 1,
+          "fingerprint": "9cef34a0f972ed6d3249a72181f053666234b587db7fc76ca5429046ea4a0e4e",
+          "uri": "mock://assets/generated/ai_image/8df090ef2c32d10c.png",
+          "provider": "mock_generation",
+          "status": "placeholder",
+          "created_at": "2026-07-13T03:20:42.456327+00:00"
+        }
+      ]
+    },
+    "asset_3b5df8ac6e85_007": {
+      "asset_id": "asset_3b5df8ac6e85_007",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "scene_id": "cs_3b5df8ac6e85_007",
+      "project_id": "3b5df8ac6e85",
+      "uri": "mock://assets/generated/ai_image/b246492258170a25.png",
+      "provider": "mock_generation",
+      "model": "mock-deterministic-v1",
+      "format": "png",
+      "width": 1080,
+      "height": 1920,
+      "duration_sec": 0.0,
+      "prompt_spec": {
+        "prompt": "Laboratory: This is the part that stops people. \u2014 particles, fields, translucent structures, directional with volumetric glow, deep space blue, cyan, white highlights, wide establishing, scientific, directional with volumetric glow, deep space blue, cyan, white highlights, wonder, tension, wide establishing, slow push-in, featuring The Narrator: voice-only narrator \u2014 no on-screen depiction, Science brand style",
+        "negative_prompt": "low quality, blurry, distorted anatomy, watermark, text artifacts",
+        "style": "scientific",
+        "lighting": "directional with volumetric glow",
+        "camera": "wide establishing, slow push-in",
+        "lens": "",
+        "composition": "",
+        "mood": "wonder",
+        "emotion": "tension",
+        "color_palette": "deep space blue, cyan, white highlights",
+        "aspect_ratio": "9:16",
+        "resolution": "1080x1920",
+        "character_references": [
+          "The Narrator: voice-only narrator \u2014 no on-screen depiction"
+        ],
+        "environment_references": [],
+        "brand_style": "Science brand style",
+        "provider": "mock_generation",
+        "provider_hints": {
+          "dialect": "plain",
+          "supports_negative_prompt": true
+        }
+      },
+      "fingerprint": "e99127aea29a34c65799c489bdde095a02ec19d06603fffd1210018fa32d1ecd",
+      "version": 1,
+      "status": "placeholder",
+      "placeholder": true,
+      "cached": false,
+      "quality": {
+        "status": "warning",
+        "confidence": 75,
+        "checks": {
+          "provider_ok": true,
+          "resolution_ok": true,
+          "aspect_ratio_ok": true,
+          "brand_ok": true,
+          "prompt_complete": true,
+          "safety_ok": true,
+          "unique": true
+        },
+        "warnings": [
+          "placeholder output (Demo Mode provider)"
+        ],
+        "blockers": [],
+        "safety_flags": [],
+        "duplicate_of": ""
+      },
+      "reusable": false,
+      "priority": "required",
+      "category": "",
+      "metadata": {
+        "title": "Laboratory: This is the part that stops people. \u2014 particles, fields, translucent structures",
+        "description": "Laboratory: This is the part that stops people. \u2014 particles, fields, translucent structures",
+        "tags": [],
+        "brand_id": "Science",
+        "style": "scientific",
+        "character_ids": [
+          "char_narrator_house"
+        ],
+        "source": "creative_studio",
+        "license": "placeholder",
+        "mime_type": "image/png",
+        "file_size_bytes": 0,
+        "extra": {}
+      },
+      "created_at": "2026-07-13T03:20:42.567654+00:00",
+      "versions": [
+        {
+          "version": 1,
+          "fingerprint": "e99127aea29a34c65799c489bdde095a02ec19d06603fffd1210018fa32d1ecd",
+          "uri": "mock://assets/generated/ai_image/b246492258170a25.png",
+          "provider": "mock_generation",
+          "status": "placeholder",
+          "created_at": "2026-07-13T03:20:42.567654+00:00"
+        }
+      ]
+    },
+    "asset_3b5df8ac6e85_008": {
+      "asset_id": "asset_3b5df8ac6e85_008",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "scene_id": "cs_3b5df8ac6e85_008",
+      "project_id": "3b5df8ac6e85",
+      "uri": "mock://assets/generated/ai_image/72e1a86259a282fa.png",
+      "provider": "mock_generation",
+      "model": "mock-deterministic-v1",
+      "format": "png",
+      "width": 1080,
+      "height": 1920,
+      "duration_sec": 0.0,
+      "prompt_spec": {
+        "prompt": "Laboratory: The fix: change one small input around volcano lightning. \u2014 particles, fields, translucent structures, directional with volumetric glow, deep space blue, cyan, white highlights, medium, scientific, directional with volumetric glow, deep space blue, cyan, white highlights, wonder, surprise, medium, static with subtle drift, featuring The Narrator: voice-only narrator \u2014 no on-screen depiction, Science brand style",
+        "negative_prompt": "low quality, blurry, distorted anatomy, watermark, text artifacts",
+        "style": "scientific",
+        "lighting": "directional with volumetric glow",
+        "camera": "medium, static with subtle drift",
+        "lens": "",
+        "composition": "",
+        "mood": "wonder",
+        "emotion": "surprise",
+        "color_palette": "deep space blue, cyan, white highlights",
+        "aspect_ratio": "9:16",
+        "resolution": "1080x1920",
+        "character_references": [
+          "The Narrator: voice-only narrator \u2014 no on-screen depiction"
+        ],
+        "environment_references": [],
+        "brand_style": "Science brand style",
+        "provider": "mock_generation",
+        "provider_hints": {
+          "dialect": "plain",
+          "supports_negative_prompt": true
+        }
+      },
+      "fingerprint": "5e336071c74981c6e3842e2140936f9f8f0824b22c824f98768b21bfb9b9bfd6",
+      "version": 1,
+      "status": "placeholder",
+      "placeholder": true,
+      "cached": false,
+      "quality": {
+        "status": "warning",
+        "confidence": 75,
+        "checks": {
+          "provider_ok": true,
+          "resolution_ok": true,
+          "aspect_ratio_ok": true,
+          "brand_ok": true,
+          "prompt_complete": true,
+          "safety_ok": true,
+          "unique": true
+        },
+        "warnings": [
+          "placeholder output (Demo Mode provider)"
+        ],
+        "blockers": [],
+        "safety_flags": [],
+        "duplicate_of": ""
+      },
+      "reusable": false,
+      "priority": "required",
+      "category": "",
+      "metadata": {
+        "title": "Laboratory: The fix: change one small input around volcano lightning. \u2014 particles, fields, translucent structures",
+        "description": "Laboratory: The fix: change one small input around volcano lightning. \u2014 particles, fields, translucent structures",
+        "tags": [],
+        "brand_id": "Science",
+        "style": "scientific",
+        "character_ids": [
+          "char_narrator_house"
+        ],
+        "source": "creative_studio",
+        "license": "placeholder",
+        "mime_type": "image/png",
+        "file_size_bytes": 0,
+        "extra": {}
+      },
+      "created_at": "2026-07-13T03:20:42.655275+00:00",
+      "versions": [
+        {
+          "version": 1,
+          "fingerprint": "5e336071c74981c6e3842e2140936f9f8f0824b22c824f98768b21bfb9b9bfd6",
+          "uri": "mock://assets/generated/ai_image/72e1a86259a282fa.png",
+          "provider": "mock_generation",
+          "status": "placeholder",
+          "created_at": "2026-07-13T03:20:42.655275+00:00"
+        }
+      ]
+    },
+    "asset_3b5df8ac6e85_009": {
+      "asset_id": "asset_3b5df8ac6e85_009",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "scene_id": "cs_3b5df8ac6e85_009",
+      "project_id": "3b5df8ac6e85",
+      "uri": "mock://assets/generated/ai_image/932886d9161ae3d0.png",
+      "provider": "mock_generation",
+      "model": "mock-deterministic-v1",
+      "format": "png",
+      "width": 1080,
+      "height": 1920,
+      "duration_sec": 0.0,
+      "prompt_spec": {
+        "prompt": "Laboratory: Comment the myth you believed the longest \u2014 and follow so the next one doesn't fool you. \u2014 particles, fields, translucent structures, directional with volumetric glow, deep space blue, cyan, white highlights, wide hero shot, scientific, directional with volumetric glow, deep space blue, cyan, white highlights, wonder, satisfaction, wide hero shot, slow pull-back, featuring The Narrator: voice-only narrator \u2014 no on-screen depiction, Science brand style",
+        "negative_prompt": "low quality, blurry, distorted anatomy, watermark, text artifacts",
+        "style": "scientific",
+        "lighting": "directional with volumetric glow",
+        "camera": "wide hero shot, slow pull-back",
+        "lens": "",
+        "composition": "",
+        "mood": "wonder",
+        "emotion": "satisfaction",
+        "color_palette": "deep space blue, cyan, white highlights",
+        "aspect_ratio": "9:16",
+        "resolution": "1080x1920",
+        "character_references": [
+          "The Narrator: voice-only narrator \u2014 no on-screen depiction"
+        ],
+        "environment_references": [],
+        "brand_style": "Science brand style",
+        "provider": "mock_generation",
+        "provider_hints": {
+          "dialect": "plain",
+          "supports_negative_prompt": true
+        }
+      },
+      "fingerprint": "cbd6e117fead041f996ddeafdd3f4617f782060ed2f3b0898a0b9f897fda9c6d",
+      "version": 1,
+      "status": "placeholder",
+      "placeholder": true,
+      "cached": false,
+      "quality": {
+        "status": "warning",
+        "confidence": 75,
+        "checks": {
+          "provider_ok": true,
+          "resolution_ok": true,
+          "aspect_ratio_ok": true,
+          "brand_ok": true,
+          "prompt_complete": true,
+          "safety_ok": true,
+          "unique": true
+        },
+        "warnings": [
+          "placeholder output (Demo Mode provider)"
+        ],
+        "blockers": [],
+        "safety_flags": [],
+        "duplicate_of": ""
+      },
+      "reusable": false,
+      "priority": "required",
+      "category": "",
+      "metadata": {
+        "title": "Laboratory: Comment the myth you believed the longest \u2014 and follow so the next one doesn't fool you. \u2014 particles, fields, translucent structures",
+        "description": "Laboratory: Comment the myth you believed the longest \u2014 and follow so the next one doesn't fool you. \u2014 particles, fields, translucent structures",
+        "tags": [],
+        "brand_id": "Science",
+        "style": "scientific",
+        "character_ids": [
+          "char_narrator_house"
+        ],
+        "source": "creative_studio",
+        "license": "placeholder",
+        "mime_type": "image/png",
+        "file_size_bytes": 0,
+        "extra": {}
+      },
+      "created_at": "2026-07-13T03:20:42.741217+00:00",
+      "versions": [
+        {
+          "version": 1,
+          "fingerprint": "cbd6e117fead041f996ddeafdd3f4617f782060ed2f3b0898a0b9f897fda9c6d",
+          "uri": "mock://assets/generated/ai_image/932886d9161ae3d0.png",
+          "provider": "mock_generation",
+          "status": "placeholder",
+          "created_at": "2026-07-13T03:20:42.741217+00:00"
+        }
+      ]
+    },
+    "asset_367c0572501b_001": {
+      "asset_id": "asset_367c0572501b_001",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "scene_id": "cs_367c0572501b_001",
+      "project_id": "367c0572501b",
+      "uri": "mock://assets/generated/ai_image/cc3edf51d75ac3a8.png",
+      "provider": "mock_generation",
+      "model": "mock-deterministic-v1",
+      "format": "png",
+      "width": 1080,
+      "height": 1920,
+      "duration_sec": 0.0,
+      "prompt_spec": {
+        "prompt": "Laboratory: Stop scrolling \u2014 the clearest explanation of The #1 mistake: Volcano Lightning (Science) starts now. \u2014 particles, fields, translucent structures, directional with volumetric glow, deep space blue, cyan, white highlights, dramatic close-up, scientific, directional with volumetric glow, deep space blue, cyan, white highlights, wonder, curiosity, dramatic close-up, fast push-in, featuring The Narrator: voice-only narrator \u2014 no on-screen depiction, Science brand style",
+        "negative_prompt": "low quality, blurry, distorted anatomy, watermark, text artifacts",
+        "style": "scientific",
+        "lighting": "directional with volumetric glow",
+        "camera": "dramatic close-up, fast push-in",
+        "lens": "",
+        "composition": "",
+        "mood": "wonder",
+        "emotion": "curiosity",
+        "color_palette": "deep space blue, cyan, white highlights",
+        "aspect_ratio": "9:16",
+        "resolution": "1080x1920",
+        "character_references": [
+          "The Narrator: voice-only narrator \u2014 no on-screen depiction"
+        ],
+        "environment_references": [],
+        "brand_style": "Science brand style",
+        "provider": "mock_generation",
+        "provider_hints": {
+          "dialect": "plain",
+          "supports_negative_prompt": true
+        }
+      },
+      "fingerprint": "824a9c3e09ac47d08ea533f8321b7520e77a9d6456dde432843eef70de44a852",
+      "version": 1,
+      "status": "placeholder",
+      "placeholder": true,
+      "cached": false,
+      "quality": {
+        "status": "warning",
+        "confidence": 75,
+        "checks": {
+          "provider_ok": true,
+          "resolution_ok": true,
+          "aspect_ratio_ok": true,
+          "brand_ok": true,
+          "prompt_complete": true,
+          "safety_ok": true,
+          "unique": true
+        },
+        "warnings": [
+          "placeholder output (Demo Mode provider)"
+        ],
+        "blockers": [],
+        "safety_flags": [],
+        "duplicate_of": ""
+      },
+      "reusable": false,
+      "priority": "required",
+      "category": "",
+      "metadata": {
+        "title": "Laboratory: Stop scrolling \u2014 the clearest explanation of The #1 mistake: Volcano Lightning (Science) starts now. \u2014 particles, fields, translucent structures",
+        "description": "Laboratory: Stop scrolling \u2014 the clearest explanation of The #1 mistake: Volcano Lightning (Science) starts now. \u2014 particles, fields, translucent structures",
+        "tags": [],
+        "brand_id": "Science",
+        "style": "scientific",
+        "character_ids": [
+          "char_narrator_house"
+        ],
+        "source": "creative_studio",
+        "license": "placeholder",
+        "mime_type": "image/png",
+        "file_size_bytes": 0,
+        "extra": {}
+      },
+      "created_at": "2026-07-13T03:20:43.174707+00:00",
+      "versions": [
+        {
+          "version": 1,
+          "fingerprint": "824a9c3e09ac47d08ea533f8321b7520e77a9d6456dde432843eef70de44a852",
+          "uri": "mock://assets/generated/ai_image/cc3edf51d75ac3a8.png",
+          "provider": "mock_generation",
+          "status": "placeholder",
+          "created_at": "2026-07-13T03:20:43.174707+00:00"
+        }
+      ]
     }
   },
   "jobs": [
@@ -50067,6 +51017,411 @@
       "latency_ms": 0,
       "error": "",
       "created_at": "2026-07-10T14:44:29.427780+00:00"
+    },
+    {
+      "job_id": "genjob_091d820aaf",
+      "asset_id": "asset_3b5df8ac6e85_001",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [
+        "openai_images",
+        "mock_generation"
+      ],
+      "attempts": 3,
+      "status": "succeeded",
+      "cache_hit": false,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:41.985413+00:00"
+    },
+    {
+      "job_id": "genjob_9465ab9c76",
+      "asset_id": "asset_3b5df8ac6e85_002",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [
+        "openai_images",
+        "mock_generation"
+      ],
+      "attempts": 3,
+      "status": "succeeded",
+      "cache_hit": false,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:42.078455+00:00"
+    },
+    {
+      "job_id": "genjob_8f765dac26",
+      "asset_id": "asset_3b5df8ac6e85_003",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [
+        "openai_images",
+        "mock_generation"
+      ],
+      "attempts": 3,
+      "status": "succeeded",
+      "cache_hit": false,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:42.189620+00:00"
+    },
+    {
+      "job_id": "genjob_e37d4dba3c",
+      "asset_id": "asset_3b5df8ac6e85_004",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [
+        "openai_images",
+        "mock_generation"
+      ],
+      "attempts": 3,
+      "status": "succeeded",
+      "cache_hit": false,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:42.275383+00:00"
+    },
+    {
+      "job_id": "genjob_a927e177ab",
+      "asset_id": "asset_3b5df8ac6e85_005",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [
+        "openai_images",
+        "mock_generation"
+      ],
+      "attempts": 3,
+      "status": "succeeded",
+      "cache_hit": false,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:42.362755+00:00"
+    },
+    {
+      "job_id": "genjob_e7ad059faf",
+      "asset_id": "asset_3b5df8ac6e85_006",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [
+        "openai_images",
+        "mock_generation"
+      ],
+      "attempts": 3,
+      "status": "succeeded",
+      "cache_hit": false,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:42.450651+00:00"
+    },
+    {
+      "job_id": "genjob_673edf5739",
+      "asset_id": "asset_3b5df8ac6e85_007",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [
+        "openai_images",
+        "mock_generation"
+      ],
+      "attempts": 3,
+      "status": "succeeded",
+      "cache_hit": false,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:42.561666+00:00"
+    },
+    {
+      "job_id": "genjob_cae8ae9ca3",
+      "asset_id": "asset_3b5df8ac6e85_008",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [
+        "openai_images",
+        "mock_generation"
+      ],
+      "attempts": 3,
+      "status": "succeeded",
+      "cache_hit": false,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:42.649562+00:00"
+    },
+    {
+      "job_id": "genjob_ca24b3f3d5",
+      "asset_id": "asset_3b5df8ac6e85_009",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [
+        "openai_images",
+        "mock_generation"
+      ],
+      "attempts": 3,
+      "status": "succeeded",
+      "cache_hit": false,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:42.735439+00:00"
+    },
+    {
+      "job_id": "genjob_4bb0b80f25",
+      "asset_id": "thumb_hook_frame",
+      "asset_type": "thumbnail",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [
+        "openai_images",
+        "mock_generation"
+      ],
+      "attempts": 3,
+      "status": "succeeded",
+      "cache_hit": false,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:42.830522+00:00"
+    },
+    {
+      "job_id": "genjob_0bd1d5d966",
+      "asset_id": "thumb_payoff_frame",
+      "asset_type": "thumbnail",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [
+        "openai_images",
+        "mock_generation"
+      ],
+      "attempts": 3,
+      "status": "succeeded",
+      "cache_hit": false,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:42.960443+00:00"
+    },
+    {
+      "job_id": "genjob_cb360d7fa9",
+      "asset_id": "thumb_character_focus",
+      "asset_type": "thumbnail",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [
+        "openai_images",
+        "mock_generation"
+      ],
+      "attempts": 3,
+      "status": "succeeded",
+      "cache_hit": false,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:43.073027+00:00"
+    },
+    {
+      "job_id": "genjob_dbca12225a",
+      "asset_id": "asset_367c0572501b_001",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [
+        "openai_images",
+        "mock_generation"
+      ],
+      "attempts": 3,
+      "status": "succeeded",
+      "cache_hit": false,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:43.168392+00:00"
+    },
+    {
+      "job_id": "genjob_8ac7f03f39",
+      "asset_id": "asset_367c0572501b_002",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [],
+      "attempts": 0,
+      "status": "cache_hit",
+      "cache_hit": true,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:43.283801+00:00"
+    },
+    {
+      "job_id": "genjob_412a1e9a86",
+      "asset_id": "asset_367c0572501b_003",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [],
+      "attempts": 0,
+      "status": "cache_hit",
+      "cache_hit": true,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:43.368424+00:00"
+    },
+    {
+      "job_id": "genjob_182a1e4a06",
+      "asset_id": "asset_367c0572501b_004",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [],
+      "attempts": 0,
+      "status": "cache_hit",
+      "cache_hit": true,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:43.421833+00:00"
+    },
+    {
+      "job_id": "genjob_4c5cefff6b",
+      "asset_id": "asset_367c0572501b_005",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [],
+      "attempts": 0,
+      "status": "cache_hit",
+      "cache_hit": true,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:43.476933+00:00"
+    },
+    {
+      "job_id": "genjob_0186c0e128",
+      "asset_id": "asset_367c0572501b_006",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [],
+      "attempts": 0,
+      "status": "cache_hit",
+      "cache_hit": true,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:43.528181+00:00"
+    },
+    {
+      "job_id": "genjob_0f35d33191",
+      "asset_id": "asset_367c0572501b_007",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [],
+      "attempts": 0,
+      "status": "cache_hit",
+      "cache_hit": true,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:43.580496+00:00"
+    },
+    {
+      "job_id": "genjob_5ca79c81c8",
+      "asset_id": "asset_367c0572501b_008",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [],
+      "attempts": 0,
+      "status": "cache_hit",
+      "cache_hit": true,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:43.630838+00:00"
+    },
+    {
+      "job_id": "genjob_478c695180",
+      "asset_id": "asset_367c0572501b_009",
+      "asset_type": "ai_image",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [],
+      "attempts": 0,
+      "status": "cache_hit",
+      "cache_hit": true,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:43.683006+00:00"
+    },
+    {
+      "job_id": "genjob_e81c330c9e",
+      "asset_id": "thumb_hook_frame",
+      "asset_type": "thumbnail",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [
+        "openai_images",
+        "mock_generation"
+      ],
+      "attempts": 3,
+      "status": "succeeded",
+      "cache_hit": false,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:43.733705+00:00"
+    },
+    {
+      "job_id": "genjob_192aa4d687",
+      "asset_id": "thumb_payoff_frame",
+      "asset_type": "thumbnail",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [
+        "openai_images",
+        "mock_generation"
+      ],
+      "attempts": 3,
+      "status": "succeeded",
+      "cache_hit": false,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:43.851447+00:00"
+    },
+    {
+      "job_id": "genjob_72ac446371",
+      "asset_id": "thumb_character_focus",
+      "asset_type": "thumbnail",
+      "asset_class": "image",
+      "provider": "mock_generation",
+      "providers_tried": [],
+      "attempts": 0,
+      "status": "cache_hit",
+      "cache_hit": true,
+      "cost_estimate": 0.0,
+      "latency_ms": 0,
+      "error": "",
+      "created_at": "2026-07-13T03:20:43.947508+00:00"
     }
   ],
   "collections": {},
@@ -50576,6 +51931,21 @@
     "8b4ccec42847eb8d750ec1e5b61391ed3354845d298d79f5bfc1847b37021154": "asset_3d7184760f50_008",
     "2c3c665ad1b1fb8ee6fc75ff01d63525589c93f07bc89082f2a9cdfca5a4e61b": "asset_3d7184760f50_009",
     "49b7e57fb46f40e4204cc10dce633549ce2236cdd8bdabca30c7e07070575430": "thumb_hook_frame",
-    "d3bcb8045f7edc003aeb52ea430adbdae4bd2a5718dbd973631d87472dfb91f6": "thumb_payoff_frame"
+    "d3bcb8045f7edc003aeb52ea430adbdae4bd2a5718dbd973631d87472dfb91f6": "thumb_payoff_frame",
+    "f4158dc4efca9a09967c91848f9317674993912064f14920bb148f9dbfa828f7": "asset_3b5df8ac6e85_001",
+    "88e9c4eca710175235dea4aed55f53686699b3a929d6e4eef9d8b57752e45692": "asset_3b5df8ac6e85_002",
+    "a81b5ca2412b3cfc7958e66a88fc6ebc21ff496148554f9f76b3d1a9b1294e19": "asset_3b5df8ac6e85_003",
+    "8e500d05e21d5a81435600e098dfc798ebb97c7f4c7118e1a411a3660d9cda9c": "asset_3b5df8ac6e85_004",
+    "91ab7ca6376dcf570a401afd882f3343a132651f52ad9996e569861ffb4db88f": "asset_3b5df8ac6e85_005",
+    "9cef34a0f972ed6d3249a72181f053666234b587db7fc76ca5429046ea4a0e4e": "asset_3b5df8ac6e85_006",
+    "e99127aea29a34c65799c489bdde095a02ec19d06603fffd1210018fa32d1ecd": "asset_3b5df8ac6e85_007",
+    "5e336071c74981c6e3842e2140936f9f8f0824b22c824f98768b21bfb9b9bfd6": "asset_3b5df8ac6e85_008",
+    "cbd6e117fead041f996ddeafdd3f4617f782060ed2f3b0898a0b9f897fda9c6d": "asset_3b5df8ac6e85_009",
+    "5e5e9b71b38caa83273ef51c74005ad13b6796ba0ba939c5ca82c024fb4a05ae": "thumb_hook_frame",
+    "a81ee25436690297705b5197ba4a43861403fbe42ab6c7946df3442ad91c9c3c": "thumb_payoff_frame",
+    "e1c86f2bfc3ff39779acf794094dcb83bb24a2a34e09b69935fd3a92795e19d2": "thumb_character_focus",
+    "824a9c3e09ac47d08ea533f8321b7520e77a9d6456dde432843eef70de44a852": "asset_367c0572501b_001",
+    "5c5e7278d0f54d6311e14e86d24cc49817857f378b26bd29c3b468989de6ed09": "thumb_hook_frame",
+    "31948862114fb5b94220e2c07cc3b2d611508d4bb8fc29c6d2bc41d53bf48334": "thumb_payoff_frame"
   }
 }

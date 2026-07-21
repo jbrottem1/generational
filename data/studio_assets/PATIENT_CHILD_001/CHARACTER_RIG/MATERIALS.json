@@ -1,0 +1,19 @@
+{
+  "character_id": "PATIENT_CHILD_001",
+  "skin": {
+    "type": "cinematic_skin",
+    "subsurface": true
+  },
+  "hair": {
+    "type": "organic_or_styled",
+    "secondary_motion": true
+  },
+  "eyes": {
+    "wetness": true,
+    "catchlights": true,
+    "iris_detail": true
+  },
+  "metal_or_props": {},
+  "wardrobe_materials_follow_outfit": true,
+  "reusable": true
+}

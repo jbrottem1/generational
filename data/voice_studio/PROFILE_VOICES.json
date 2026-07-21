@@ -1,0 +1,74 @@
+{
+  "version": "1.0",
+  "description": "Narrator profile \u2192 ElevenLabs voice_id mapping. Edit this file or set ELEVENLABS_VOICE_* env vars. Never commit real API keys.",
+  "default_voice_id": "3tjayB0V8cEeXFHiD3SP",
+  "profiles": {
+    "professor": {
+      "voice_id": "3tjayB0V8cEeXFHiD3SP",
+      "label": "Professor",
+      "studio_asset_id": "VOICE-0001"
+    },
+    "documentary": {
+      "voice_id": "3tjayB0V8cEeXFHiD3SP",
+      "label": "Documentary",
+      "studio_asset_id": "VOICE-0001"
+    },
+    "storyteller": {
+      "voice_id": "3tjayB0V8cEeXFHiD3SP",
+      "label": "Storyteller",
+      "studio_asset_id": "VOICE-0001"
+    },
+    "science_educator": {
+      "voice_id": "3tjayB0V8cEeXFHiD3SP",
+      "label": "Science Educator",
+      "studio_asset_id": "VOICE-0001"
+    },
+    "technology_explainer": {
+      "voice_id": "3tjayB0V8cEeXFHiD3SP",
+      "label": "Technology Explainer",
+      "studio_asset_id": "VOICE-0001"
+    },
+    "history_narrator": {
+      "voice_id": "3tjayB0V8cEeXFHiD3SP",
+      "label": "History Narrator",
+      "studio_asset_id": "VOICE-0001"
+    },
+    "calm_instructor": {
+      "voice_id": "3tjayB0V8cEeXFHiD3SP",
+      "label": "Calm Instructor",
+      "studio_asset_id": "VOICE-0001"
+    },
+    "energetic_presenter": {
+      "voice_id": "3tjayB0V8cEeXFHiD3SP",
+      "label": "Energetic Presenter",
+      "studio_asset_id": "VOICE-0001"
+    },
+    "energetic_explainer": {
+      "voice_id": "3tjayB0V8cEeXFHiD3SP",
+      "label": "Energetic Explainer",
+      "studio_asset_id": "VOICE-0001"
+    },
+    "calm_educator": {
+      "voice_id": "3tjayB0V8cEeXFHiD3SP",
+      "label": "Calm Educator",
+      "studio_asset_id": "VOICE-0001"
+    },
+    "founder": {
+      "voice_id": "3tjayB0V8cEeXFHiD3SP",
+      "label": "Founder Voice",
+      "studio_asset_id": "VOICE-0001",
+      "default": true
+    },
+    "default": {
+      "voice_id": "3tjayB0V8cEeXFHiD3SP",
+      "studio_asset_id": "VOICE-0001",
+      "label": "Founder Voice"
+    },
+    "doctor": {
+      "voice_id": "3tjayB0V8cEeXFHiD3SP",
+      "studio_asset_id": "VOICE-0001",
+      "label": "Doctor"
+    }
+  },
+  "default_voice_asset_id": "VOICE-0001"
+}

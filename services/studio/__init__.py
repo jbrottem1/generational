@@ -20,6 +20,7 @@ from services.studio.production import (
     build_settings_preview,
     is_longform_command,
     result_from_project_run,
+    run_executive_production,
     run_studio_production,
     submit_longform_job,
 )
@@ -54,6 +55,7 @@ __all__ = [
     "list_studio_projects",
     "map_stage_status",
     "result_from_project_run",
+    "run_executive_production",
     "run_studio_production",
     "submit_longform_job",
     "unarchive_project",

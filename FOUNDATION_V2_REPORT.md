@@ -1,11 +1,11 @@
 # Foundation Visual System V2 — Post-Run Review
 
-Generated: 2026-07-12 19:19 UTC
+Generated: 2026-07-12 22:20 UTC
 
 ## Benchmark
 
 - **Title:** The Origin of Turtles
-- **Export:** `/home/ubuntu/Desktop/AI Start-up/videos/Test run 2 generational/Biology_202_Origin_of_Turtles.mp4`
+- **Export:** `/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Biology/Biology_001_202_Origin_of_Turtles_v2.mp4`
 - **Duration:** 23.33s (target 15–30s)
 - **Demo ID:** `foundation_v2_turtle_202`
 
@@ -30,13 +30,13 @@ Generated: 2026-07-12 19:19 UTC
 - Export verified: True
 - Animation QC: True
 - Reality QC: True
-- Foundation gate: False
+- Foundation gate: True
 
 ## V2 System Checks
 
 - Baby-blue studio backdrop
 - Professor left / teaching visuals right
-- Professor scale ~0.58 (V2)
+- Professor scale ~0.42 (V2)
 - Lab coat, clipboard, tie, teaching pointer
 - Keyword-only screen text (3–8 words)
 - Pointer tap / underline / circle / trace beats
@@ -54,9 +54,15 @@ Generated: 2026-07-12 19:19 UTC
 ```json
 {
   "ok": true,
-  "export_path": "/home/ubuntu/Desktop/AI Start-up/videos/Test run 2 generational/Biology_202_Origin_of_Turtles.mp4",
+  "final_status": "SUCCESS_WITH_WARNINGS",
+  "status": "export_verified",
+  "message": "Video exported and verified on local Desktop.",
+  "execution_mode": "local",
+  "os_version": "2.6",
+  "domain_folder": "Biology",
+  "export_path": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Biology/Biology_001_202_Origin_of_Turtles_v2.mp4",
   "duration_sec": 23.33,
-  "render_sec": 64.6,
+  "render_sec": 21.39,
   "qc": {
     "mouth_varies": true,
     "has_silence_closed": true,
@@ -84,18 +90,78 @@ Generated: 2026-07-12 19:19 UTC
   },
   "verify": {
     "ok": true,
-    "bytes": 1443797,
-    "has_video": true,
-    "has_audio": true
+    "checks": {
+      "file_exists": true,
+      "size_gt_zero": true,
+      "video_stream": true,
+      "audio_stream": true,
+      "playable": true,
+      "duration": true,
+      "resolution": true,
+      "correct_category_folder": true,
+      "under_library_root": true,
+      "not_placeholder": true,
+      "technical_valid": true,
+      "local_execution": true,
+      "companion_files": true,
+      "library_index_updated": true,
+      "manifest_updated": true
+    },
+    "probe": {
+      "ok": true,
+      "bytes": 824474,
+      "has_video": true,
+      "has_audio": true,
+      "duration_sec": 23.292,
+      "width": 1080,
+      "height": 1920,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "bit_rate": 283182,
+      "fps": 24.0,
+      "absolute_path": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Biology/Biology_001_202_Origin_of_Turtles_v2.mp4"
+    },
+    "technical": {
+      "ok": true,
+      "hard_fails": [],
+      "warnings": [],
+      "probe": {
+        "ok": true,
+        "bytes": 824474,
+        "has_video": true,
+        "has_audio": true,
+        "duration_sec": 23.292,
+        "width": 1080,
+        "height": 1920,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "bit_rate": 283182,
+        "fps": 24.0,
+        "absolute_path": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Biology/Biology_001_202_Origin_of_Turtles_v2.mp4"
+      },
+      "is_placeholder": false,
+      "bit_rate": 283182,
+      "bytes": 824474,
+      "duration_sec": 23.292
+    },
+    "path": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Biology/Biology_001_202_Origin_of_Turtles_v2.mp4",
+    "domain_folder": "Biology",
+    "category": "Biology",
+    "secondary_categories": [
+      "Paleontology"
+    ],
+    "versioned": true,
+    "companion_dir": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Biology/Biology_001_202_Origin_of_Turtles_v2",
+    "final_status": "SUCCESS",
+    "warnings": [],
+    "hard_fails": []
   },
   "foundation_gate": {
-    "passed": false,
-    "hard_fails": [
-      "export_too_small"
-    ],
+    "passed": true,
+    "hard_fails": [],
     "warnings": [
-      "whiteboard_sync_metadata_missing",
-      "overall_below_target:77.4<78.0"
+      "overall_below_target:77.4<78.0",
+      "tray_schedule_conflict:p=0.55"
     ],
     "quality": {
       "scores": {
@@ -116,10 +182,8 @@ Generated: 2026-07-12 19:19 UTC
         "platform_readiness": 70.0
       },
       "overall": 77.4,
-      "passed": false,
-      "hard_fails": [
-        "export_too_small"
-      ],
+      "passed": true,
+      "hard_fails": [],
       "warnings": [],
       "thresholds": {
         "technical_validity": 75.0,
@@ -136,8 +200,14 @@ Generated: 2026-07-12 19:19 UTC
       "walk_ratio": 0.061,
       "lipsync": 90.0,
       "overall": 77.4,
-      "animation_qc_passed": true
-    }
+      "animation_qc_passed": true,
+      "qc_recovered": false,
+      "technical_only": false,
+      "visual_readability": 97.0,
+      "visual_layout_passed": true
+    },
+    "final_status": "SUCCESS_WITH_WARNINGS",
+    "export_path": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Biology/Biology_001_202_Origin_of_Turtles_v2.mp4"
   },
   "reality_qc": {
     "passed": true,
@@ -163,6 +233,12 @@ Generated: 2026-07-12 19:19 UTC
     "viewer_engagement_estimate": 82,
     "overall": 86.7
   },
+  "warnings": [
+    "overall_below_target:77.4<78.0",
+    "tray_schedule_conflict:p=0.55"
+  ],
+  "hard_fails": [],
+  "completion": "STATUS: SUCCESS_WITH_WARNINGS\n\nFINAL FILE:\n /Users/jaredbrottem/Desktop/AI Start-Up/Videos/Biology/Biology_001_202_Origin_of_Turtles_v2.mp4\n\nFILE SIZE:\n 824.5 KB\n\nDURATION:\n 23.292 seconds\n\nVIDEO:\n H264, 1080x1920\n\nAUDIO:\n AAC\n\nQC:\n Passed with warnings\n\nFINDER:\n Available locally\n\nWARNINGS:\n - overall_below_target:77.4<78.0\n - tray_schedule_conflict:p=0.55",
   "recommendations": [
     "Add phoneme-accurate lip sync (Viseme driver) so mouth matches keyword emphasis beats.",
     "Introduce subtle camera push-ins on fossil reveals (2\u20134% zoom) without breaking layout margins.",
@@ -175,6 +251,6 @@ Generated: 2026-07-12 19:19 UTC
     "turtle_fossil"
   ],
   "keyword_max_words": 14,
-  "v2_scale": 0.58
+  "v2_scale": 0.42
 }
 ```

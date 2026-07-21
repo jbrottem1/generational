@@ -1,0 +1,47 @@
+{
+  "character_id": "TEACHER_001",
+  "forces": [
+    "coat_movement",
+    "shirt_folds",
+    "fabric_response",
+    "gravity",
+    "wind",
+    "body_collision"
+  ],
+  "simulate_as_fabric": true,
+  "layers": [
+    {
+      "id": "base",
+      "stiffness": 0.7,
+      "damping": 0.5
+    },
+    {
+      "id": "coat",
+      "stiffness": 0.45,
+      "damping": 0.4,
+      "wind_response": 0.65
+    },
+    {
+      "id": "sleeves",
+      "stiffness": 0.5,
+      "damping": 0.45,
+      "follows": "arms"
+    }
+  ],
+  "responds_to": [
+    "walk",
+    "run",
+    "turn",
+    "sit",
+    "wind",
+    "gravity",
+    "body_collision"
+  ],
+  "body_collision": true,
+  "forbid": [
+    "frozen_fabric",
+    "fabric_leads_body",
+    "clipping_into_limbs"
+  ],
+  "compose_wardrobe_profile": true
+}

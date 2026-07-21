@@ -1,0 +1,192 @@
+{
+  "world_id": "WORLD-OCEAN_RESEARCH_OBSERVATORY",
+  "production_id": "ops_826e121fa1",
+  "object_positions": {
+    "obj_aquarium_viewport": {
+      "position": {
+        "x": 0.5,
+        "y": 1.2,
+        "z": 0.05
+      },
+      "zone": "underwater_viewing",
+      "surface": "wall",
+      "anchored": true
+    },
+    "obj_octopus_marker": {
+      "position": {
+        "x": 0.55,
+        "y": 0.0,
+        "z": 0.35
+      },
+      "zone": "underwater_viewing",
+      "surface": "floor",
+      "anchored": true
+    },
+    "obj_anatomy_display": {
+      "position": {
+        "x": 0.4,
+        "y": 0.9,
+        "z": 0.5
+      },
+      "zone": "scientific_display",
+      "surface": "desk",
+      "anchored": true
+    },
+    "obj_heart_panel": {
+      "position": {
+        "x": 0.65,
+        "y": 1.4,
+        "z": 0.1
+      },
+      "zone": "scientific_display",
+      "surface": "wall",
+      "anchored": true
+    },
+    "obj_research_console": {
+      "position": {
+        "x": 0.35,
+        "y": 0.0,
+        "z": 0.55
+      },
+      "zone": "observation_chamber",
+      "surface": "floor",
+      "anchored": true
+    },
+    "obj_diving_lock": {
+      "position": {
+        "x": 0.2,
+        "y": 0.0,
+        "z": 0.7
+      },
+      "zone": "observation_chamber",
+      "surface": "floor",
+      "anchored": true
+    },
+    "obj_obs_bench": {
+      "position": {
+        "x": 0.3,
+        "y": 0.0,
+        "z": 0.6
+      },
+      "zone": "observation_chamber",
+      "surface": "floor",
+      "anchored": true
+    },
+    "obj_display_table": {
+      "position": {
+        "x": 0.45,
+        "y": 0.0,
+        "z": 0.5
+      },
+      "zone": "scientific_display",
+      "surface": "floor",
+      "anchored": true
+    }
+  },
+  "environment_state": {
+    "architecture": [
+      "observation dome",
+      "pressure-glass wall",
+      "steel catwalk",
+      "display alcove"
+    ],
+    "scale": "facility",
+    "zones": [
+      "observation_chamber",
+      "underwater_viewing",
+      "scientific_display"
+    ]
+  },
+  "time_of_day": "day",
+  "weather": "indoors_coastal",
+  "damage": {},
+  "introduced_objects": [],
+  "visited_zones": [
+    "observation_chamber",
+    "underwater_viewing",
+    "scientific_display"
+  ],
+  "doors": {
+    "facility_entry": "closed",
+    "viewing_door": "closed"
+  },
+  "displays": {},
+  "characters_present": [
+    "talent"
+  ],
+  "events": [
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T13:41:08.289333+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "observation_chamber"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T13:41:08.346156+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "underwater_viewing"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T13:41:08.400273+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "scientific_display"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T13:41:08.454962+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "observation_chamber"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T13:41:08.509503+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "underwater_viewing"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T13:41:08.563927+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "scientific_display"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T13:41:08.618237+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "observation_chamber"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T13:41:08.672264+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "underwater_viewing"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T13:41:08.726767+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "scientific_display"
+      }
+    }
+  ],
+  "version": 10
+}

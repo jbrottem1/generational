@@ -1,0 +1,174 @@
+{
+  "world_id": "WORLD-SPACE-STATION",
+  "elements_required": [
+    "floor",
+    "walls",
+    "ceilings",
+    "doors",
+    "windows",
+    "furniture",
+    "props"
+  ],
+  "dimensions_m": {
+    "x": 14.0,
+    "y": 3.2,
+    "z": 28.0
+  },
+  "floor": [
+    {
+      "id": "main_floor",
+      "bounds": [
+        [
+          -7.0,
+          0,
+          -14.0
+        ],
+        [
+          7.0,
+          0,
+          14.0
+        ]
+      ],
+      "walkable": true,
+      "material": "interior_floor"
+    }
+  ],
+  "walls": [
+    {
+      "id": "wall_n",
+      "plane": "north",
+      "openings": [
+        "window_n"
+      ]
+    },
+    {
+      "id": "wall_s",
+      "plane": "south",
+      "openings": [
+        "door_main"
+      ]
+    },
+    {
+      "id": "wall_e",
+      "plane": "east",
+      "openings": []
+    },
+    {
+      "id": "wall_w",
+      "plane": "west",
+      "openings": [
+        "window_w"
+      ]
+    }
+  ],
+  "ceilings": [
+    {
+      "id": "main_ceiling",
+      "height_m": 3.2,
+      "material": "acoustic_or_structural"
+    }
+  ],
+  "doors": [
+    {
+      "id": "door_main",
+      "position": [
+        0.0,
+        0.0,
+        -13.9
+      ],
+      "swing": "inward",
+      "interactable": true
+    }
+  ],
+  "windows": [
+    {
+      "id": "window_n",
+      "position": [
+        0.0,
+        1.7600000000000002,
+        13.95
+      ]
+    },
+    {
+      "id": "window_w",
+      "position": [
+        -6.95,
+        1.7600000000000002,
+        0.0
+      ]
+    }
+  ],
+  "furniture": [
+    {
+      "id": "furn_console_bay_0",
+      "type": "console",
+      "position": [
+        -3.5,
+        0.0,
+        -4.2
+      ],
+      "collision": true,
+      "navigable_around": true
+    },
+    {
+      "id": "furn_observation_seat_1",
+      "type": "chair",
+      "position": [
+        -0.6999999999999997,
+        0.0,
+        -4.2
+      ],
+      "collision": true,
+      "navigable_around": true
+    }
+  ],
+  "props": [
+    {
+      "id": "prop_console_0",
+      "type": "console",
+      "position": [
+        -3.5,
+        0.0,
+        -3.0
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_door_1",
+      "type": "door",
+      "position": [
+        -0.6999999999999997,
+        0.0,
+        -3.0
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_viewport_2",
+      "type": "viewport",
+      "position": [
+        2.1000000000000005,
+        0.0,
+        -3.0
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_handhold_3",
+      "type": "handhold",
+      "position": [
+        -3.5,
+        0.0,
+        -1.6000000000000003
+      ],
+      "collision": true,
+      "interactable": true
+    }
+  ],
+  "not_a_flat_image": true,
+  "explorable_volume": true,
+  "persistent": true
+}

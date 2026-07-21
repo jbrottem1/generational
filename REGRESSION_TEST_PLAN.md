@@ -84,7 +84,7 @@ python3 -m pytest tests/ -q --tb=no | tail -5
 python3 -c "from services.integration_release import run_integration_audit; run_integration_audit()"
 ```
 
-Cloud agents: run Tier 1 + audit only; **delegate renders to local**.
+Local Mac: run Tier 1 + local render/export verification. Cursor Cloud is not used for production execution.
 
 ---
 

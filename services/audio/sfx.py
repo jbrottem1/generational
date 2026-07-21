@@ -9,7 +9,7 @@ future audio renderer — no audio is generated here.
 
 from __future__ import annotations
 
-from engines.heuristics import clamp
+from core.heuristics import clamp
 
 # Support layers per scene purpose, on top of the scene's primary effect.
 # Data, not code — sound-design changes are edits to this table.

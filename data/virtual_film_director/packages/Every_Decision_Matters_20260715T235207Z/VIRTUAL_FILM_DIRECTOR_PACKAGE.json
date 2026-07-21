@@ -1,0 +1,424 @@
+{
+  "package_type": "VIRTUAL_FILM_DIRECTOR_PACKAGE",
+  "package_version": "1.0.0",
+  "engine_label": "Virtual Film Director",
+  "generated_at": "2026-07-15T23:52:07.397274+00:00",
+  "topic": "Every Decision Matters",
+  "production_id": "",
+  "shot_plan": [
+    {
+      "scene_number": 1,
+      "scene_id": "scene_00",
+      "scene_objective": "Advance hook: establish audience investment in The Founder traveler",
+      "primary_subject": "The Founder traveler",
+      "camera_angle": "eye_level",
+      "lens_style": "portrait_50mm",
+      "shot_size": "establishing_wide",
+      "shot_language": "reveal_shot",
+      "camera_movement": "reveal_shot",
+      "camera_begin": "Open in a framed read of The Founder traveler matching reveal_shot",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=curiosity",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "generic",
+        "ambient_motion": [
+          "ambient_life",
+          "cloud_drift",
+          "light_drift"
+        ],
+        "dramatic_response": [],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "soft_daylight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "hard_cut",
+      "emotional_beat": "curiosity",
+      "emotion": "curiosity",
+      "educational_goal": "Life is unforgiving.",
+      "estimated_duration_sec": 3.0,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Advance hook: establish audience investment in The Founder traveler",
+          "what_viewer_learns": "Life is unforgiving.",
+          "emotion_to_feel": "curiosity",
+          "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of The Founder traveler matching reveal_shot",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=curiosity",
+          "cinematic_payoff": "Muted viewer still understands: Life is unforgiving."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: Life is unforgiving.",
+      "muted_story_test": "Muted viewer still understands: Life is unforgiving.",
+      "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "reveal",
+        "ae_camera_move": "reveal",
+        "shot_size": "establishing_wide",
+        "emotion": "curiosity",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Advance hook: establish audience investment in The Founder traveler"
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 2,
+      "scene_id": "scene_01",
+      "scene_objective": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+      "primary_subject": "The Founder traveler",
+      "camera_angle": "eye_level",
+      "lens_style": "portrait_50mm",
+      "shot_size": "dynamic_medium",
+      "shot_language": "medium_dialogue",
+      "camera_movement": "medium_dialogue",
+      "camera_begin": "Open in a framed read of The Founder traveler matching medium_dialogue",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "generic",
+        "ambient_motion": [
+          "ambient_life",
+          "cloud_drift",
+          "light_drift"
+        ],
+        "dramatic_response": [],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "soft_daylight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "explanation",
+      "emotion": "focus",
+      "educational_goal": "Every decision leaves a mark. Every step shapes your future.",
+      "estimated_duration_sec": 3.5,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future.",
+          "what_viewer_learns": "Every decision leaves a mark. Every step shapes your future.",
+          "emotion_to_feel": "focus",
+          "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of The Founder traveler matching medium_dialogue",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+          "cinematic_payoff": "Muted viewer still understands: Every decision leaves a mark. Every step shapes your future."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: Every decision leaves a mark. Every step shapes your future.",
+      "muted_story_test": "Muted viewer still understands: Every decision leaves a mark. Every step shapes your future.",
+      "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "slow_cinematic_push",
+        "shot_size": "dynamic_medium",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: Every decision leaves a mark. Every step shapes your future."
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 3,
+      "scene_id": "scene_02",
+      "scene_objective": "Demonstrate the idea so learning sticks: Small choices become great destinies.",
+      "primary_subject": "The Founder traveler",
+      "camera_angle": "eye_level",
+      "lens_style": "portrait_50mm",
+      "shot_size": "dynamic_medium",
+      "shot_language": "push_in",
+      "camera_movement": "push_in",
+      "camera_begin": "Open in a framed read of The Founder traveler matching push_in",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "generic",
+        "ambient_motion": [
+          "ambient_life",
+          "cloud_drift",
+          "light_drift"
+        ],
+        "dramatic_response": [],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "soft_daylight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "wonder",
+      "emotion": "focus",
+      "educational_goal": "Small choices become great destinies.",
+      "estimated_duration_sec": 3.5,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Demonstrate the idea so learning sticks: Small choices become great destinies.",
+          "what_viewer_learns": "Small choices become great destinies.",
+          "emotion_to_feel": "focus",
+          "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of The Founder traveler matching push_in",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+          "cinematic_payoff": "Muted viewer still understands: Small choices become great destinies."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: Small choices become great destinies.",
+      "muted_story_test": "Muted viewer still understands: Small choices become great destinies.",
+      "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "slow_cinematic_push",
+        "shot_size": "dynamic_medium",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: Small choices become great destinies."
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 4,
+      "scene_id": "scene_03",
+      "scene_objective": "Deliver the takeaway on The Founder traveler",
+      "primary_subject": "The Founder traveler",
+      "camera_angle": "low_angle_hero",
+      "lens_style": "anamorphic_feel",
+      "shot_size": "hero_low_angle",
+      "shot_language": "hero_shot",
+      "camera_movement": "hero_shot",
+      "camera_begin": "Open in a framed read of The Founder traveler matching hero_shot",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "generic",
+        "ambient_motion": [
+          "ambient_life",
+          "cloud_drift",
+          "light_drift"
+        ],
+        "dramatic_response": [
+          "wind_increase",
+          "lighting_shift",
+          "fog_clear_on_reveal"
+        ],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "soft_daylight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "payoff",
+      "emotion": "clarity",
+      "educational_goal": "Choose discipline. Choose purpose. Choose wisely.",
+      "estimated_duration_sec": 5.0,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Deliver the takeaway on The Founder traveler",
+          "what_viewer_learns": "Choose discipline. Choose purpose. Choose wisely.",
+          "emotion_to_feel": "clarity",
+          "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of The Founder traveler matching hero_shot",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+          "cinematic_payoff": "Muted viewer still understands: Choose discipline. Choose purpose. Choose wisely."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: Choose discipline. Choose purpose. Choose wisely.",
+      "muted_story_test": "Muted viewer still understands: Choose discipline. Choose purpose. Choose wisely.",
+      "notice_first": "Primary subject first \u2014 The Founder traveler \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "hero_low_angle_push",
+        "shot_size": "hero_low_angle",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Deliver the takeaway on The Founder traveler"
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": true,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    }
+  ],
+  "emotional_timeline": {
+    "total_duration_sec": 15.0,
+    "beats": [
+      {
+        "scene_number": 1,
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "emotional_beat": "curiosity",
+        "emotion": "curiosity",
+        "lighting_mood": "soft_daylight",
+        "shot_language": "reveal_shot"
+      },
+      {
+        "scene_number": 2,
+        "start_sec": 3.0,
+        "end_sec": 6.5,
+        "emotional_beat": "explanation",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "shot_language": "medium_dialogue"
+      },
+      {
+        "scene_number": 3,
+        "start_sec": 6.5,
+        "end_sec": 10.0,
+        "emotional_beat": "wonder",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "shot_language": "push_in"
+      },
+      {
+        "scene_number": 4,
+        "start_sec": 10.0,
+        "end_sec": 15.0,
+        "emotional_beat": "payoff",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "shot_language": "hero_shot"
+      }
+    ],
+    "rhythm": [
+      "curiosity",
+      "explanation",
+      "wonder",
+      "payoff"
+    ],
+    "avoids_flatness": true
+  },
+  "director_review": {
+    "approved": true,
+    "decision": "APPROVE",
+    "failures": [],
+    "warnings": [],
+    "rewrite_scenes": [],
+    "questions": {
+      "professional_director_would_approve": true,
+      "every_scene_has_purpose": true,
+      "every_camera_communicates": true,
+      "pacing_feels_cinematic": true,
+      "visuals_alone_engaging": true
+    },
+    "metrics": {
+      "shot_count": 4,
+      "unique_shot_languages": 4,
+      "unique_emotional_beats": 4,
+      "known_shot_language_rate": 1.0
+    },
+    "rewritten": false
+  },
+  "philosophy": {
+    "directs_before_animates": true,
+    "animation_executes": true,
+    "no_new_renderer": true,
+    "no_pipeline_redesign": true,
+    "muted_story_test": true
+  },
+  "summary": {
+    "shot_count": 4,
+    "director_decision": "APPROVE",
+    "approved": true,
+    "emotional_rhythm": [
+      "curiosity",
+      "explanation",
+      "wonder",
+      "payoff"
+    ],
+    "rewrite_scenes": []
+  },
+  "artifacts": {
+    "SHOT_PLAN.json": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/Every_Decision_Matters_20260715T235207Z/SHOT_PLAN.json",
+    "DIRECTOR_NOTES.md": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/Every_Decision_Matters_20260715T235207Z/DIRECTOR_NOTES.md",
+    "CAMERA_SCRIPT.md": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/Every_Decision_Matters_20260715T235207Z/CAMERA_SCRIPT.md",
+    "EMOTIONAL_TIMELINE.json": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/Every_Decision_Matters_20260715T235207Z/EMOTIONAL_TIMELINE.json",
+    "VISUAL_STORYBOARD.md": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/Every_Decision_Matters_20260715T235207Z/VISUAL_STORYBOARD.md",
+    "VIRTUAL_FILM_DIRECTOR_PACKAGE.json": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/Every_Decision_Matters_20260715T235207Z/VIRTUAL_FILM_DIRECTOR_PACKAGE.json"
+  },
+  "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/Every_Decision_Matters_20260715T235207Z/VIRTUAL_FILM_DIRECTOR_PACKAGE.json",
+  "out_dir": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/Every_Decision_Matters_20260715T235207Z"
+}

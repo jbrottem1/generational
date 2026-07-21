@@ -1,0 +1,1122 @@
+{
+  "schema_version": "1.0",
+  "production_id": "ops_f9daa1da06",
+  "brief": {
+    "topic": "The Parasite You May Never Know You Have",
+    "platform": "youtube_shorts",
+    "length_sec": 55,
+    "style": "educational",
+    "narrator": "doctor",
+    "voice": "default",
+    "quality_target": 98.0,
+    "constraints": {
+      "publishing_enabled": false,
+      "audience": "general public high school and above",
+      "category": "Infectious Diseases",
+      "domain": "Medicine",
+      "world_id": "LOC-GMRI",
+      "world_type": "Generational Medical Research Institute",
+      "hook_required": "Millions of people carry this parasite\u2026 and many never realize it.",
+      "enforce_hook": true,
+      "preferred_voice_provider": "elevenlabs",
+      "forbid_placeholder_voice": true,
+      "forbid_voice_fallback": true,
+      "studio_character_id": "CHAR-0001",
+      "permanent_studio_asset": "CHAR-0001",
+      "script_override": {
+        "title": "The Parasite You May Never Know You Have",
+        "hook": "Millions of people carry this parasite\u2026 and many never realize it.",
+        "primary_hook": "Millions of people carry this parasite\u2026 and many never realize it.",
+        "narration": "Millions of people carry this parasite\u2026 and many never realize it. I'm The Doctor, at the Generational Medical Research Institute. The organism is Trichomonas vaginalis \u2014 a microscopic, single-celled parasite, not a bacterium or a virus. It spreads primarily through sexual contact. Here's what matters for stigma-free understanding: many infected people have no symptoms at all, so you can carry it without knowing. When symptoms do appear, they can include unusual discharge, itching or irritation, and discomfort with urination \u2014 though experience varies. That's why testing matters. A simple clinical test can find it. And effective treatment is available through healthcare providers \u2014 usually a short course of prescription medication for you and often partners too. Knowledge replaces fear. If you're unsure, talk with a clinician \u2014 curiosity is courage.",
+        "full_script": "Millions of people carry this parasite\u2026 and many never realize it. I'm The Doctor, at the Generational Medical Research Institute. The organism is Trichomonas vaginalis \u2014 a microscopic, single-celled parasite, not a bacterium or a virus. It spreads primarily through sexual contact. Here's what matters for stigma-free understanding: many infected people have no symptoms at all, so you can carry it without knowing. When symptoms do appear, they can include unusual discharge, itching or irritation, and discomfort with urination \u2014 though experience varies. That's why testing matters. A simple clinical test can find it. And effective treatment is available through healthcare providers \u2014 usually a short course of prescription medication for you and often partners too. Knowledge replaces fear. If you're unsure, talk with a clinician \u2014 curiosity is courage.",
+        "scene_breakdown": [
+          {
+            "scene": 1,
+            "purpose": "hook",
+            "narration": "Millions of people carry this parasite\u2026 and many never realize it.",
+            "length_sec": 4,
+            "visual": "The Doctor eye contact + GMRI wide; holograms activate; slow push-in",
+            "expression": "serious",
+            "camera": "push_in"
+          },
+          {
+            "scene": 2,
+            "purpose": "introduce",
+            "narration": "I'm The Doctor, at the Generational Medical Research Institute. The organism is Trichomonas vaginalis \u2014 a microscopic, single-celled parasite, not a bacterium or a virus.",
+            "length_sec": 9,
+            "visual": "Medium teaching shot; stylized T. vaginalis hologram labeled educational visualization",
+            "expression": "teaching",
+            "camera": "medium_teach"
+          },
+          {
+            "scene": 3,
+            "purpose": "story_beat",
+            "narration": "It spreads primarily through sexual contact.",
+            "length_sec": 5,
+            "visual": "Simple respectful diagram + scanning overlay \u2014 no graphic imagery",
+            "expression": "focused",
+            "camera": "orbit_holo"
+          },
+          {
+            "scene": 4,
+            "purpose": "story_beat",
+            "narration": "Here's what matters for stigma-free understanding: many infected people have no symptoms at all, so you can carry it without knowing.",
+            "length_sec": 8,
+            "visual": "Macro transition into microscopic scene; parasite vs human cell scale comparison",
+            "expression": "concerned",
+            "camera": "macro_transition"
+          },
+          {
+            "scene": 5,
+            "purpose": "story_beat",
+            "narration": "When symptoms do appear, they can include unusual discharge, itching or irritation, and discomfort with urination \u2014 though experience varies.",
+            "length_sec": 8,
+            "visual": "Close-up Doctor pointing at symptom icons animated on hologram",
+            "expression": "listening",
+            "camera": "close_up"
+          },
+          {
+            "scene": 6,
+            "purpose": "story_beat",
+            "narration": "That's why testing matters. A simple clinical test can find it. And effective treatment is available through healthcare providers \u2014 usually a short course of prescription medication for you and often partners too.",
+            "length_sec": 10,
+            "visual": "Lab screens update; clipboard / treatment pathway hologram; researchers ambient",
+            "expression": "confident",
+            "camera": "tracking"
+          },
+          {
+            "scene": 7,
+            "purpose": "payoff",
+            "narration": "Knowledge replaces fear. If you're unsure, talk with a clinician \u2014 curiosity is courage.",
+            "length_sec": 6,
+            "visual": "Warm close-up Doctor; GMRI garden/light soft; hope without stigma",
+            "expression": "smiling",
+            "camera": "push_in"
+          }
+        ],
+        "estimated_runtime_sec": 55,
+        "sections": [
+          {
+            "key": "primary_hook",
+            "label": "Primary Hook",
+            "narration": "Millions of people carry this parasite\u2026 and many never realize it."
+          },
+          {
+            "key": "core",
+            "label": "Core",
+            "narration": "I'm The Doctor, at the Generational Medical Research Institute. The organism is Trichomonas vaginalis \u2014 a microscopic, single-celled parasite, not a bacterium or a virus. It spreads primarily through sexual contact. Here's what matters for stigma-free understanding: many infected people have no symptoms at all, so you can carry it without knowing. When symptoms do appear, they can include unusual discharge, itching or irritation, and discomfort with urination \u2014 though experience varies. That's why testing matters. A simple clinical test can find it. And effective treatment is available through healthcare providers \u2014 usually a short course of prescription medication for you and often partners too. Knowledge replaces fear. If you're unsure, talk with a clinician \u2014 curiosity is courage."
+          }
+        ],
+        "medical_accuracy_notes": [
+          "T. vaginalis is a protozoan parasite (not bacteria/virus).",
+          "Primary transmission: sexual contact.",
+          "Asymptomatic carriage is common.",
+          "Treatment is available via clinicians (typically nitroimidazoles) \u2014 avoid self-diagnosis language.",
+          "Educational visualization must be labeled as stylized, not literal microscopy footage."
+        ],
+        "tone": [
+          "professional",
+          "curious",
+          "respectful",
+          "evidence-based",
+          "reassuring",
+          "cinematic"
+        ],
+        "cast": {
+          "primary": "CHAR-0001",
+          "name": "The Doctor"
+        },
+        "location": "LOC-GMRI"
+      },
+      "visual_style": "cinematic medical education \u2014 living laboratory",
+      "target_channel": "Medical",
+      "medical_episode": true,
+      "stigma_safe": true
+    },
+    "command": "Create a 55 second YouTube Short titled \"The Parasite You May Never Know You Have\". Cast permanent character The Doctor (CHAR-0001) only \u2014 do not invent a presenter. Location: Generational Medical Research Institute. Open in the first 3 seconds with eye contact and narration \"Millions of people carry this parasite\u2026 and many never realize it.\" Then explain Trichomonas vaginalis as a microscopic parasite, sexual transmission, frequent lack of symptoms, possible symptoms, why testing matters, and that effective treatment is available through healthcare providers. Tone: professional, curious, respectful, evidence-based, reassuring, cinematic. Reduce stigma. Use medical holograms, living lab backgrounds, stylized parasite animation clearly labeled as educational visualization. ElevenLabs voice as The Doctor.",
+    "raw": {}
+  },
+  "current_stage": "export",
+  "current_agent": "export_and_validate",
+  "overall_progress_pct": 100,
+  "elapsed_ms": 9383,
+  "eta_ms": null,
+  "overall_status": "succeeded",
+  "pipeline_health": "degraded",
+  "warnings": [
+    "viewer_retention failed after retries \u2014 production continued",
+    "viewer_retention: degraded \u2014 continuing pipeline",
+    "missing_audio",
+    "implausible_bitrate"
+  ],
+  "retry_count": 1,
+  "quality_scores": {
+    "research": 85.0,
+    "psychology": 90.0,
+    "studio_director": 95.0,
+    "script_generator": 95.0,
+    "scene_builder": 100.0,
+    "media_collection": 100.0,
+    "animation": 100.0,
+    "voice_generation": 100.0,
+    "music_sound": 90.0,
+    "captions": 95.0,
+    "rendering": 100.0,
+    "viewer_retention": 100.0,
+    "optimization_lab": 100.0,
+    "quality_assurance": 100.0,
+    "seo_package": 100.0,
+    "export": 60.0
+  },
+  "current_files": [
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/episode.mp4",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/captions.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/description.txt",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/seo_metadata.json",
+    "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/thumbnail.png"
+  ],
+  "started_at": "2026-07-15T23:08:49.761710+00:00",
+  "finished_at": "2026-07-15T23:08:59.146934+00:00",
+  "stages": [
+    {
+      "key": "research",
+      "label": "Research Engine",
+      "engines": [
+        "research",
+        "ideation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-15T23:08:49.763127+00:00",
+      "end_time": "2026-07-15T23:08:49.895495+00:00",
+      "duration_ms": 130,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 85.0,
+      "output_files": [],
+      "current_agent": "research",
+      "engine_results": [
+        {
+          "engine": "research",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 10,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 10
+            }
+          ]
+        },
+        {
+          "engine": "ideation",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 120,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 120
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 2,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "psychology",
+      "label": "Psychology Engine",
+      "engines": [
+        "psychology"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-15T23:08:49.896172+00:00",
+      "end_time": "2026-07-15T23:08:49.918164+00:00",
+      "duration_ms": 21,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 90.0,
+      "output_files": [],
+      "current_agent": "psychology",
+      "engine_results": [
+        {
+          "engine": "psychology",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 21,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 21
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "studio_director",
+      "label": "AI Studio Director",
+      "engines": [
+        "ai_director"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-15T23:08:49.919370+00:00",
+      "end_time": "2026-07-15T23:08:49.951826+00:00",
+      "duration_ms": 31,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "ai_director",
+      "engine_results": [
+        {
+          "engine": "ai_director",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 31,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 31
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "script_generator",
+      "label": "Script Generator",
+      "engines": [
+        "script_generation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-15T23:08:49.953077+00:00",
+      "end_time": "2026-07-15T23:08:50.121056+00:00",
+      "duration_ms": 166,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "script_generation",
+      "engine_results": [
+        {
+          "engine": "script_generation",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 166,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 166
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "scene_builder",
+      "label": "Scene Builder",
+      "engines": [
+        "visual_intelligence",
+        "scene_planning",
+        "visual_planning"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-15T23:08:50.123285+00:00",
+      "end_time": "2026-07-15T23:08:50.147909+00:00",
+      "duration_ms": 23,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "visual_intelligence",
+      "engine_results": [
+        {
+          "engine": "visual_intelligence",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 23,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 23
+            }
+          ]
+        },
+        {
+          "engine": "scene_planning",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 0,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 0
+            }
+          ]
+        },
+        {
+          "engine": "visual_planning",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 0,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 0
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 3,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "media_collection",
+      "label": "Media Collection",
+      "engines": [
+        "evidence_intelligence",
+        "image",
+        "asset_manager"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-15T23:08:51.241730+00:00",
+      "end_time": "2026-07-15T23:08:53.494293+00:00",
+      "duration_ms": 2250,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "evidence_intelligence",
+      "engine_results": [
+        {
+          "engine": "evidence_intelligence",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 4,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 4
+            }
+          ]
+        },
+        {
+          "engine": "image",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 1969,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 1969
+            }
+          ]
+        },
+        {
+          "engine": "asset_manager",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 277,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 277
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 3,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "animation",
+      "label": "Animation / Motion Graphics",
+      "engines": [
+        "cinematography",
+        "animation"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-15T23:08:53.513266+00:00",
+      "end_time": "2026-07-15T23:08:53.550373+00:00",
+      "duration_ms": 35,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "cinematography",
+      "engine_results": [
+        {
+          "engine": "cinematography",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 28,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 28
+            }
+          ]
+        },
+        {
+          "engine": "animation",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 7,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 7
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 2,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "voice_generation",
+      "label": "Voice Generation",
+      "engines": [
+        "voice_audio",
+        "narration",
+        "voice"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-15T23:08:53.551117+00:00",
+      "end_time": "2026-07-15T23:08:54.239004+00:00",
+      "duration_ms": 685,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "voice_audio",
+      "engine_results": [
+        {
+          "engine": "voice_audio",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 0,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 0
+            }
+          ]
+        },
+        {
+          "engine": "narration",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 565,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 565
+            }
+          ]
+        },
+        {
+          "engine": "voice",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 120,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 120
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 3,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "music_sound",
+      "label": "Music & Sound Design",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-15T23:08:54.240063+00:00",
+      "end_time": "2026-07-15T23:08:54.241544+00:00",
+      "duration_ms": 0,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 90.0,
+      "output_files": [],
+      "current_agent": "apply_music_direction",
+      "engine_results": [
+        {
+          "engine": "apply_music_direction",
+          "status": "succeeded"
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "captions",
+      "label": "Captions",
+      "engines": [
+        "subtitle"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-15T23:08:54.242247+00:00",
+      "end_time": "2026-07-15T23:08:54.243550+00:00",
+      "duration_ms": 0,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 95.0,
+      "output_files": [],
+      "current_agent": "subtitle",
+      "engine_results": [
+        {
+          "engine": "subtitle",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 0,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 0
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "rendering",
+      "label": "Rendering",
+      "engines": [
+        "timeline",
+        "render_package",
+        "studio_render",
+        "video"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-15T23:08:54.244347+00:00",
+      "end_time": "2026-07-15T23:08:58.671287+00:00",
+      "duration_ms": 4424,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "timeline",
+      "engine_results": [
+        {
+          "engine": "timeline",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 0,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 0
+            }
+          ]
+        },
+        {
+          "engine": "render_package",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 0,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 0
+            }
+          ]
+        },
+        {
+          "engine": "studio_render",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 2,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 2
+            }
+          ]
+        },
+        {
+          "engine": "video",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 4422,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 4422
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 4,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "viewer_retention",
+      "label": "Viewer Retention Analysis",
+      "engines": [
+        "viewer_retention"
+      ],
+      "status": "degraded",
+      "start_time": "2026-07-15T23:08:58.672419+00:00",
+      "end_time": "2026-07-15T23:08:58.830668+00:00",
+      "duration_ms": 157,
+      "warnings": [
+        "viewer_retention failed after retries \u2014 production continued",
+        "viewer_retention: degraded \u2014 continuing pipeline"
+      ],
+      "errors": [
+        "viewer_retention: 'str' object has no attribute 'get'"
+      ],
+      "retry_attempts": 1,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "viewer_retention",
+      "engine_results": [
+        {
+          "engine": "viewer_retention",
+          "status": "failed_continued",
+          "attempts": 2,
+          "retries": 1,
+          "error": "'str' object has no attribute 'get'",
+          "warnings": [
+            "viewer_retention failed after retries \u2014 production continued"
+          ],
+          "duration_ms": 0,
+          "fallback": true,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "failed",
+              "duration_ms": 0,
+              "error": "'str' object has no attribute 'get'"
+            },
+            {
+              "attempt": 2,
+              "status": "failed",
+              "duration_ms": 0,
+              "error": "'str' object has no attribute 'get'"
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "failure_reason": "viewer_retention: 'str' object has no attribute 'get'",
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 1
+      }
+    },
+    {
+      "key": "optimization_lab",
+      "label": "Optimization Lab",
+      "engines": [
+        "optimization_lab"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-15T23:08:58.833217+00:00",
+      "end_time": "2026-07-15T23:08:58.957065+00:00",
+      "duration_ms": 121,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "optimization_lab",
+      "engine_results": [
+        {
+          "engine": "optimization_lab",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 121,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 121
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "quality_assurance",
+      "label": "Quality Assurance",
+      "engines": [
+        "quality",
+        "production_qa"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-15T23:08:58.958066+00:00",
+      "end_time": "2026-07-15T23:08:58.962242+00:00",
+      "duration_ms": 3,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "quality",
+      "engine_results": [
+        {
+          "engine": "quality",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 0,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 0
+            }
+          ]
+        },
+        {
+          "engine": "production_qa",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 3,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 3
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 2,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "seo_package",
+      "label": "SEO Package",
+      "engines": [
+        "seo",
+        "seo_optimization"
+      ],
+      "status": "succeeded",
+      "start_time": "2026-07-15T23:08:58.963153+00:00",
+      "end_time": "2026-07-15T23:08:59.110898+00:00",
+      "duration_ms": 146,
+      "warnings": [],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 100.0,
+      "output_files": [],
+      "current_agent": "seo",
+      "engine_results": [
+        {
+          "engine": "seo",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 142,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 142
+            }
+          ]
+        },
+        {
+          "engine": "seo_optimization",
+          "status": "succeeded",
+          "attempts": 1,
+          "retries": 0,
+          "error": "",
+          "warnings": [],
+          "duration_ms": 4,
+          "fallback": false,
+          "attempt_log": [
+            {
+              "attempt": 1,
+              "status": "succeeded",
+              "duration_ms": 4
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "outputs_produced": [],
+      "dependency_health": {
+        "engine_count": 2,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    },
+    {
+      "key": "export",
+      "label": "Export",
+      "engines": [],
+      "status": "succeeded",
+      "start_time": "2026-07-15T23:08:59.111824+00:00",
+      "end_time": "2026-07-15T23:08:59.145830+00:00",
+      "duration_ms": 33,
+      "warnings": [
+        "missing_audio",
+        "implausible_bitrate"
+      ],
+      "errors": [],
+      "retry_attempts": 0,
+      "quality_score": 60.0,
+      "output_files": [
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/episode.mp4",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/captions.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/description.txt",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/seo_metadata.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/thumbnail.png",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/episode.mp4"
+      ],
+      "current_agent": "export_and_validate",
+      "engine_results": [
+        {
+          "engine": "export_and_validate",
+          "status": "succeeded"
+        }
+      ],
+      "artifacts": [
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/episode.mp4",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/captions.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/description.txt",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/seo_metadata.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/thumbnail.png",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/episode.mp4"
+      ],
+      "outputs_produced": [
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/episode.mp4",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/captions.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/description.txt",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/seo_metadata.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/thumbnail.png",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/The_Parasite_You_May_Never_Know_You_Have_ops_f9daa1da06/episode.mp4"
+      ],
+      "dependency_health": {
+        "engine_count": 1,
+        "skipped": 0,
+        "failed_continued": 0
+      }
+    }
+  ],
+  "updated_at": "2026-07-15T23:08:59.180424+00:00",
+  "validation_score": 94.4,
+  "video_exists": true,
+  "deliverable_ok": true,
+  "success": true
+}

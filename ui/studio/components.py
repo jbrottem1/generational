@@ -191,6 +191,159 @@ def executive_dashboard_view(dashboard: dict) -> None:
         acols[0].metric("Total Views", analytics.get("total_views", 0))
         acols[1].metric("Avg Engagement", f"{analytics.get('avg_engagement', 0)}%")
 
+    executive_orchestrator_board(dashboard.get("executive_orchestrator") or {})
+    continuous_learning_dashboard_view(dashboard.get("continuous_learning") or {})
+    optimization_lab_board(dashboard.get("optimization_lab") or {})
+    creative_performance_lab_board(dashboard.get("creative_performance_lab") or {})
+    publishing_intelligence_board(dashboard.get("publishing_intelligence") or {})
+
+
+def optimization_lab_board(board: dict) -> None:
+    """Autonomous Optimization & Experimentation V4 board."""
+    if not board or board.get("error") == "unavailable":
+        return
+    st.markdown("#### Optimization Lab")
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("Videos optimized", board.get("videos_optimized", 0))
+    c2.metric("Avg QA score", board.get("average_qa_score", 0))
+    c3.metric("Avg predicted CTR", f"{board.get('average_predicted_ctr', 0)}%")
+    c4.metric("Avg retention proxy", f"{board.get('average_retention_proxy', 0)}%")
+
+    st.caption(
+        f"System health · {board.get('system_health', 'unknown')} · "
+        f"Experiments recorded={(board.get('learning_progress') or {}).get('experiments_recorded', 0)}"
+    )
+
+    col_a, col_b = st.columns(2)
+    with col_a:
+        st.markdown("**Top performing topics**")
+        for row in (board.get("top_performing_topics") or [])[:5]:
+            st.caption(f"· {row.get('topic')} — avg {row.get('avg_score')} (n={row.get('n')})")
+        st.markdown("**Best hooks**")
+        for hook in (board.get("best_hooks") or [])[:5]:
+            st.caption(f"· {hook}")
+    with col_b:
+        st.markdown("**Best narration styles**")
+        for style in (board.get("best_narration_styles") or [])[:5]:
+            st.caption(f"· {style}")
+        st.markdown("**Recent experiments**")
+        for exp in (board.get("recent_experiments") or [])[:5]:
+            w = exp.get("winning_version") or {}
+            st.caption(
+                f"· {exp.get('topic', '')[:40]} → v{w.get('label')} ({exp.get('production_score')})"
+            )
+
+
+def creative_performance_lab_board(board: dict) -> None:
+    """Creative Performance Lab — evidence loop board."""
+    if not board or board.get("error") == "unavailable":
+        return
+    st.markdown("#### Creative Performance Lab")
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("Experiments", board.get("experiment_count", 0))
+    c2.metric("Awaiting review", len(board.get("awaiting_human_review") or []))
+    c3.metric("Awaiting analytics", len(board.get("awaiting_analytics") or []))
+    c4.metric("Validated learnings", board.get("validated_learnings_count", 0))
+    st.caption(board.get("prediction_note") or "")
+    col_a, col_b = st.columns(2)
+    with col_a:
+        st.markdown("**Recent experiments**")
+        for exp in (board.get("recent_experiments") or [])[:6]:
+            st.caption(f"· {exp.get('experiment_id')} — {str(exp.get('topic') or '')[:36]} [{exp.get('status')}]")
+    with col_b:
+        st.markdown("**Recent learnings**")
+        for L in (board.get("recent_learnings") or [])[:6]:
+            st.caption(f"· {L.get('creative_variable')}: {str(L.get('winning_pattern') or '')[:48]}")
+
+
+def publishing_intelligence_board(board: dict) -> None:
+    """Publishing Intelligence summary (already fetched by dashboard)."""
+    if not board or board.get("error") == "unavailable":
+        return
+    st.markdown("#### Publishing Intelligence")
+    c1, c2 = st.columns(2)
+    c1.metric("Confidence", board.get("confidence_score", 0))
+    cal = board.get("calibration")
+    c2.metric("Calibration", str(cal.get("status") if isinstance(cal, dict) else (cal or "n/a"))[:24])
+
+
+def continuous_learning_dashboard_view(board: dict) -> None:
+    """Continuous Learning Dashboard — topics, CTR, retention, improvements."""
+    if not board or board.get("error") == "unavailable":
+        return
+    st.markdown("#### Continuous Learning")
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("Productions recorded", board.get("productions_recorded", 0))
+    c2.metric("Analytics records", board.get("analytics_records", 0))
+    c3.metric("Insights", board.get("insights_count", 0))
+    c4.metric("Recommendations", board.get("recommendations_count", 0))
+
+    graph = board.get("knowledge_graph") or {}
+    st.caption(
+        f"Knowledge graph · {graph.get('node_count', 0)} nodes · {graph.get('edge_count', 0)} edges · "
+        f"Experiments running={(board.get('experiments') or {}).get('running', 0)}"
+    )
+
+    col_a, col_b = st.columns(2)
+    with col_a:
+        st.markdown("**Top topics**")
+        for row in (board.get("top_performing_topics") or [])[:5]:
+            st.caption(f"· {row.get('value')} (lift {row.get('lift')})")
+        st.markdown("**Best hooks**")
+        for row in (board.get("best_hooks") or [])[:5]:
+            st.caption(f"· {str(row.get('value') or '')[:80]}")
+    with col_b:
+        st.markdown("**Highest CTR**")
+        for row in (board.get("highest_ctr") or [])[:5]:
+            st.caption(f"· {row.get('title') or row.get('topic')} — CTR {row.get('ctr')}")
+        st.markdown("**Suggested improvements**")
+        for tip in (board.get("suggested_improvements") or [])[:6]:
+            st.caption(f"· {tip}")
+
+    if board.get("viral_opportunity_queue"):
+        with st.expander("Viral opportunity queue"):
+            for row in board["viral_opportunity_queue"][:10]:
+                st.markdown(f"- `{row.get('dimension')}` **{row.get('topic')}** · lift {row.get('lift')}")
+
+
+def executive_orchestrator_board(board: dict) -> None:
+    """Live Production Dashboard: Discovery → … → Publishing."""
+    if not board:
+        return
+    st.markdown("#### Live Production (Executive Orchestrator)")
+    m1, m2, m3, m4 = st.columns(4)
+    m1.metric("Active runs", board.get("active_count", 0))
+    m2.metric("Pending", board.get("pending_count", 0))
+    m3.metric("Completed", board.get("completed_count", 0))
+    m4.metric("Failed", board.get("failed_count", 0))
+
+    stages = board.get("stages") or []
+    if stages:
+        cols = st.columns(min(4, len(stages)))
+        for i, stage in enumerate(stages):
+            col = cols[i % len(cols)]
+            label = stage.get("label") or stage.get("key")
+            running = int(stage.get("running") or 0)
+            completed = int(stage.get("completed") or 0)
+            failed = int(stage.get("failed") or 0)
+            pending = int(stage.get("pending") or 0)
+            status = "Running" if running else ("Failed" if failed else ("Completed" if completed and not pending else "Pending"))
+            col.metric(label, status, delta=f"η {stage.get('eta_sec', '—')}s")
+
+    for run in (board.get("active_runs") or board.get("recent_runs") or [])[:5]:
+        topic = run.get("topic") or run.get("command") or run.get("id")
+        with st.expander(f"{run.get('status', '?').upper()} · {topic}"):
+            st.caption(
+                f"Runtime {run.get('runtime_sec')}s · QA {run.get('qa_score')} ({run.get('qa_decision')}) · "
+                f"ETA remaining {run.get('estimated_remaining_sec')}s"
+            )
+            for key, stage in (run.get("stages") or {}).items():
+                st.markdown(
+                    f"- **{stage.get('label') or key}**: `{stage.get('status')}`"
+                    + (f" — {stage.get('message')}" if stage.get("message") else "")
+                    + (f" · err: {stage.get('error')}" if stage.get("error") else "")
+                )
+
 
 def production_readiness_view(report: dict) -> None:
     """Production Readiness Dashboard — overall + area scores + blockers."""

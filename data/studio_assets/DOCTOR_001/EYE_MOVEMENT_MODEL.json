@@ -1,0 +1,31 @@
+{
+  "character_id": "DOCTOR_001",
+  "behaviors": [
+    "target_based_focus",
+    "smooth_saccades",
+    "anticipatory_glances",
+    "natural_fixation_duration",
+    "head_eye_coordination",
+    "pupil_response_to_lighting",
+    "convergence_near",
+    "subtle_asymmetry"
+  ],
+  "rules": [
+    "eyes_move_before_head",
+    "blink_irregular",
+    "no_lifeless_stare",
+    "camera_lock_only_when_addressing_audience",
+    "track_holograms_and_speakers"
+  ],
+  "default_targets": [
+    "audience",
+    "subject",
+    "scanner_readout",
+    "co_host"
+  ],
+  "reject": [
+    "cross_eyed",
+    "eyes_outside_sockets",
+    "mechanical_sync_only"
+  ]
+}

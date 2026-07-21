@@ -1,0 +1,3219 @@
+{
+  "package_version": "2.0.0",
+  "package_type": "world_production",
+  "generated_at": "2026-07-14T03:31:38.984761+00:00",
+  "topic": "How Artificial Intelligence Learns Patterns",
+  "niche": "",
+  "platform": "youtube_shorts",
+  "audience": "general_public",
+  "production_id": "ai_learns_patterns",
+  "world_id": "WORLD-AI_LABORATORY",
+  "world_version": "2.0.0",
+  "world_type": "AI Laboratory",
+  "name": "AI Laboratory",
+  "selection": {
+    "best": {
+      "world_id": "WORLD-AI_LABORATORY",
+      "name": "AI Laboratory",
+      "world_type": "AI Laboratory",
+      "category": "AI Research Laboratory",
+      "topics": [
+        "artificial intelligence",
+        "machine learning",
+        "pattern recognition",
+        "neural networks"
+      ],
+      "time_periods": [
+        "near_future",
+        "present"
+      ],
+      "audiences": [
+        "general_public",
+        "students"
+      ],
+      "visual_styles": [
+        "documentary_lab",
+        "tech_explainer"
+      ],
+      "scientific_accuracy": 75,
+      "historical_accuracy": 50,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-AI_LABORATORY.json",
+      "zones": [
+        "holo_stage",
+        "workstation",
+        "server_aisle"
+      ],
+      "channel_identity": "",
+      "selection_score": 58.0,
+      "query_overlap": 0.4
+    },
+    "alternatives": [
+      {
+        "world_id": "WORLD-OCEAN_RESEARCH_OBSERVATORY",
+        "name": "Ocean Research Observatory",
+        "world_type": "Ocean Research Observatory",
+        "category": "Ocean Research Observatory",
+        "topics": [
+          "octopus",
+          "marine biology",
+          "cephalopods",
+          "circulation",
+          "three hearts"
+        ],
+        "time_periods": [
+          "present"
+        ],
+        "audiences": [
+          "general_public"
+        ],
+        "visual_styles": [
+          "science_short",
+          "nature_doc"
+        ],
+        "scientific_accuracy": 88,
+        "historical_accuracy": 80,
+        "reuse_count": 0,
+        "last_usage": "",
+        "source": "catalog_template",
+        "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-OCEAN_RESEARCH_OBSERVATORY.json",
+        "zones": [
+          "observation_chamber",
+          "underwater_viewing",
+          "scientific_display"
+        ],
+        "channel_identity": "",
+        "selection_score": 17.6,
+        "query_overlap": 0.0
+      },
+      {
+        "world_id": "WORLD-SCIENCE_LAB",
+        "name": "Science Lab",
+        "world_type": "Science Lab",
+        "category": "Science Lab",
+        "topics": [],
+        "time_periods": [],
+        "audiences": [
+          "general_public"
+        ],
+        "visual_styles": [],
+        "scientific_accuracy": 85,
+        "historical_accuracy": 85,
+        "reuse_count": 0,
+        "last_usage": "",
+        "source": "catalog_template",
+        "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-SCIENCE_LAB.json",
+        "zones": [],
+        "channel_identity": "",
+        "selection_score": 17.0,
+        "query_overlap": 0.0
+      },
+      {
+        "world_id": "WORLD-HOSPITAL",
+        "name": "Hospital",
+        "world_type": "Hospital",
+        "category": "Hospital",
+        "topics": [],
+        "time_periods": [],
+        "audiences": [
+          "general_public"
+        ],
+        "visual_styles": [],
+        "scientific_accuracy": 85,
+        "historical_accuracy": 85,
+        "reuse_count": 0,
+        "last_usage": "",
+        "source": "catalog_template",
+        "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-HOSPITAL.json",
+        "zones": [],
+        "channel_identity": "",
+        "selection_score": 17.0,
+        "query_overlap": 0.0
+      }
+    ],
+    "selection_reasoning": "Selected WORLD-AI_LABORATORY (AI Laboratory) for topic='How Artificial Intelligence Learns Patterns' via semantic overlap=0.4 and accuracy=75",
+    "reuse_score": 100.0,
+    "continuity_compatibility": 1.0,
+    "required_adaptations": []
+  },
+  "world": {
+    "world_id": "WORLD-AI_LABORATORY",
+    "world_type": "AI Laboratory",
+    "name": "AI Laboratory",
+    "theme": "synthetic cognition",
+    "scale": "server_hall",
+    "historical_accuracy": 50,
+    "environment": {
+      "description": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor",
+      "continuity_key": "WORLD-AI_LABORATORY",
+      "do_not_replace_mid_episode": true
+    },
+    "lighting": {
+      "base": "low-key rack practicals + cyan holo glow",
+      "consistent_key": true
+    },
+    "architecture": [
+      "server aisles",
+      "hologram stage",
+      "observation glass"
+    ],
+    "weather": "indoors_cooled",
+    "objects": [
+      {
+        "object_id": "obj_neural_holo",
+        "name": "neural_holo",
+        "surface": "floor",
+        "anchored": true,
+        "temporary": false,
+        "zone": "holo_stage",
+        "position": {
+          "x": 0.5,
+          "y": 0.0,
+          "z": 0.45
+        },
+        "scale": 1.0,
+        "relationships": [
+          "ops_console"
+        ]
+      },
+      {
+        "object_id": "obj_server_rack",
+        "name": "server_rack",
+        "surface": "floor",
+        "anchored": true,
+        "temporary": false,
+        "zone": "server_aisle",
+        "position": {
+          "x": 0.7,
+          "y": 0.0,
+          "z": 0.4
+        },
+        "scale": 1.0,
+        "relationships": []
+      },
+      {
+        "object_id": "obj_training_monitor",
+        "name": "training_monitor",
+        "surface": "desk",
+        "anchored": true,
+        "temporary": false,
+        "zone": "workstation",
+        "position": {
+          "x": 0.4,
+          "y": 0.9,
+          "z": 0.5
+        },
+        "scale": 1.0,
+        "relationships": []
+      }
+    ],
+    "furniture": [
+      {
+        "object_id": "obj_ops_console",
+        "name": "ops_console",
+        "surface": "floor",
+        "anchored": true,
+        "temporary": false,
+        "zone": "holo_stage",
+        "position": {
+          "x": 0.35,
+          "y": 0.0,
+          "z": 0.55
+        },
+        "scale": 1.0,
+        "relationships": []
+      },
+      {
+        "object_id": "obj_workstation_desk",
+        "name": "workstation_desk",
+        "surface": "floor",
+        "anchored": true,
+        "temporary": false,
+        "zone": "workstation",
+        "position": {
+          "x": 0.25,
+          "y": 0.0,
+          "z": 0.6
+        },
+        "scale": 1.0,
+        "relationships": []
+      }
+    ],
+    "background_animations": [
+      "rack LED cascade",
+      "holo voxel churn",
+      "cooling fog"
+    ],
+    "sound_ambience": [
+      "server whine",
+      "soft UI beeps",
+      "coolant hiss",
+      "AI laboratory hum"
+    ],
+    "camera_boundaries": {
+      "min_height": 0.4,
+      "max_height": 4.0,
+      "min_distance": 0.5,
+      "max_distance": 18.0
+    },
+    "color_palette": {
+      "family": "tech",
+      "primary": "#0A1628",
+      "accent": "#00F5D4",
+      "warn": "#7B2CBF"
+    },
+    "lighting_presets": [
+      {
+        "id": "boot",
+        "recipe": "cascade power-on practicals",
+        "mood": "ignition"
+      },
+      {
+        "id": "inference",
+        "recipe": "cyan volumetric holo",
+        "mood": "think"
+      },
+      {
+        "id": "alert",
+        "recipe": "magenta fault strobes",
+        "mood": "failure"
+      }
+    ],
+    "camera_anchors": [
+      {
+        "id": "hall_wide",
+        "position": "aisle_end",
+        "angle": "establishing",
+        "lens_hint": "24mm"
+      },
+      {
+        "id": "holo_orbit",
+        "position": "stage",
+        "angle": "orbit",
+        "lens_hint": "35mm"
+      },
+      {
+        "id": "console_macro",
+        "position": "ops",
+        "angle": "macro",
+        "lens_hint": "85mm"
+      }
+    ],
+    "animation_zones": [
+      {
+        "id": "holo_stage",
+        "region": "center"
+      }
+    ],
+    "transition_anchors": [
+      {
+        "id": "airlock_lab",
+        "to_compatible": [
+          "Research Center",
+          "Future City",
+          "Science Lab",
+          "Factory"
+        ]
+      }
+    ],
+    "design_rules": [
+      "Keep set geometry continuous across scenes",
+      "Vary camera and lighting, not the world itself",
+      "Every object must sit on a defined surface",
+      "No flat solid full-frame backgrounds"
+    ],
+    "category": "AI Research Laboratory",
+    "applicable_topics": [
+      "artificial intelligence",
+      "machine learning",
+      "pattern recognition",
+      "neural networks"
+    ],
+    "time_periods": [
+      "near_future",
+      "present"
+    ],
+    "audiences": [
+      "general_public",
+      "students"
+    ],
+    "visual_styles": [
+      "documentary_lab",
+      "tech_explainer"
+    ],
+    "scientific_accuracy": 75,
+    "scientific_constraints": [
+      "Compute racks remain grounded",
+      "Hologram volume stays at stage center unless moved by state event"
+    ],
+    "historical_constraints": [],
+    "accuracy": {
+      "scientific": 75,
+      "uncertainties": [
+        "Holographic UI is illustrative"
+      ]
+    },
+    "aesthetic": {
+      "materials": [
+        "matte black metal",
+        "glass",
+        "LED arrays"
+      ],
+      "era": "near_future",
+      "design_language": "clean-tech"
+    },
+    "ambient_practicals": [
+      "rack LEDs",
+      "holo glow",
+      "console screens"
+    ],
+    "allowed_subject_positions": [
+      {
+        "id": "beside_holo",
+        "zone": "holo_stage",
+        "x": 0.4,
+        "z": 0.5
+      },
+      {
+        "id": "at_workstation",
+        "zone": "workstation",
+        "x": 0.3,
+        "z": 0.55
+      },
+      {
+        "id": "aisle_observe",
+        "zone": "server_aisle",
+        "x": 0.55,
+        "z": 0.4
+      }
+    ],
+    "zones": [
+      {
+        "id": "holo_stage",
+        "name": "Holographic Model Stage",
+        "description": "Central stage with luminous neural volume",
+        "landmarks": [
+          "neural_holo",
+          "ops_console"
+        ],
+        "entrances": [
+          "from_aisle"
+        ],
+        "exits": [
+          "to_workstation"
+        ],
+        "connections": [
+          "workstation",
+          "server_aisle"
+        ],
+        "doors": [
+          "stage_glass"
+        ],
+        "allowed_subject_positions": [
+          {
+            "id": "beside_holo",
+            "x": 0.4,
+            "z": 0.5
+          }
+        ],
+        "restricted_areas": [
+          "inside_holo_volume"
+        ],
+        "ambient_activity": [
+          "holo voxel churn"
+        ],
+        "ambience": [
+          "soft UI beeps"
+        ]
+      },
+      {
+        "id": "workstation",
+        "name": "Training Workstation",
+        "description": "Operator desk with training monitors",
+        "landmarks": [
+          "workstation_desk",
+          "training_monitor"
+        ],
+        "entrances": [
+          "from_holo_stage"
+        ],
+        "exits": [
+          "to_server_aisle"
+        ],
+        "connections": [
+          "holo_stage",
+          "server_aisle"
+        ],
+        "allowed_subject_positions": [
+          {
+            "id": "at_workstation",
+            "x": 0.3,
+            "z": 0.55
+          }
+        ],
+        "restricted_areas": [],
+        "ambient_activity": [
+          "monitor scroll"
+        ],
+        "ambience": [
+          "keyboard soft"
+        ]
+      },
+      {
+        "id": "server_aisle",
+        "name": "Server Aisle",
+        "description": "Cooled rack corridor with LED cascade",
+        "landmarks": [
+          "server_rack"
+        ],
+        "entrances": [
+          "from_workstation"
+        ],
+        "exits": [
+          "to_holo_stage"
+        ],
+        "connections": [
+          "holo_stage",
+          "workstation"
+        ],
+        "allowed_subject_positions": [
+          {
+            "id": "aisle_observe",
+            "x": 0.55,
+            "z": 0.4
+          }
+        ],
+        "restricted_areas": [
+          "rack_interior"
+        ],
+        "ambient_activity": [
+          "rack LED cascade",
+          "cooling fog"
+        ],
+        "ambience": [
+          "server whine",
+          "coolant hiss"
+        ]
+      }
+    ],
+    "schema_version": "2.0.0",
+    "saved_at": "2026-07-14T03:31:38.867043+00:00"
+  },
+  "continuity": {
+    "single_world": true,
+    "world_id": "WORLD-AI_LABORATORY",
+    "state": {
+      "version": 4,
+      "time_of_day": "day",
+      "weather": "indoors_cooled",
+      "object_positions": {
+        "obj_neural_holo": {
+          "position": {
+            "x": 0.5,
+            "y": 0.0,
+            "z": 0.45
+          },
+          "zone": "holo_stage",
+          "surface": "floor",
+          "anchored": true
+        },
+        "obj_server_rack": {
+          "position": {
+            "x": 0.7,
+            "y": 0.0,
+            "z": 0.4
+          },
+          "zone": "server_aisle",
+          "surface": "floor",
+          "anchored": true
+        },
+        "obj_training_monitor": {
+          "position": {
+            "x": 0.4,
+            "y": 0.9,
+            "z": 0.5
+          },
+          "zone": "workstation",
+          "surface": "desk",
+          "anchored": true
+        },
+        "obj_ops_console": {
+          "position": {
+            "x": 0.35,
+            "y": 0.0,
+            "z": 0.55
+          },
+          "zone": "holo_stage",
+          "surface": "floor",
+          "anchored": true
+        },
+        "obj_workstation_desk": {
+          "position": {
+            "x": 0.25,
+            "y": 0.0,
+            "z": 0.6
+          },
+          "zone": "workstation",
+          "surface": "floor",
+          "anchored": true
+        }
+      },
+      "visited_zones": [
+        "holo_stage",
+        "workstation",
+        "server_aisle"
+      ],
+      "doors": {
+        "stage_glass": "closed"
+      },
+      "displays": {},
+      "introduced_objects": [],
+      "characters_present": [
+        "talent"
+      ],
+      "event_count": 3
+    },
+    "scene_bindings": [
+      {
+        "scene_id": "s1",
+        "world_id": "WORLD-AI_LABORATORY",
+        "zone_id": "holo_stage",
+        "environment_name": "AI Laboratory",
+        "spatial_fingerprint": "WORLD-AI_LABORATORY:holo_stage",
+        "persistent_object_ids": [
+          "obj_neural_holo",
+          "obj_ops_console"
+        ],
+        "background_identity": "WORLD-AI_LABORATORY|holo_stage|scale=server_hall",
+        "narration_excerpt": "Scene"
+      },
+      {
+        "scene_id": "s2",
+        "world_id": "WORLD-AI_LABORATORY",
+        "zone_id": "workstation",
+        "environment_name": "AI Laboratory",
+        "spatial_fingerprint": "WORLD-AI_LABORATORY:workstation",
+        "persistent_object_ids": [
+          "obj_training_monitor",
+          "obj_workstation_desk"
+        ],
+        "background_identity": "WORLD-AI_LABORATORY|workstation|scale=server_hall",
+        "narration_excerpt": "Beat 1"
+      },
+      {
+        "scene_id": "s3",
+        "world_id": "WORLD-AI_LABORATORY",
+        "zone_id": "server_aisle",
+        "environment_name": "AI Laboratory",
+        "spatial_fingerprint": "WORLD-AI_LABORATORY:server_aisle",
+        "persistent_object_ids": [
+          "obj_server_rack"
+        ],
+        "background_identity": "WORLD-AI_LABORATORY|server_aisle|scale=server_hall",
+        "narration_excerpt": "Beat 2"
+      }
+    ],
+    "note": "Same world across scenes; zone may change; object positions inherited from state"
+  },
+  "environment_packages": [
+    {
+      "package_version": "2.0.0",
+      "package_type": "environment",
+      "world_id": "WORLD-AI_LABORATORY",
+      "world_version": "2.0.0",
+      "environment_name": "AI Laboratory",
+      "selected_zone": "holo_stage",
+      "zone": {
+        "id": "holo_stage",
+        "name": "Holographic Model Stage",
+        "description": "Central stage with luminous neural volume",
+        "landmarks": [
+          "neural_holo",
+          "ops_console"
+        ],
+        "entrances": [
+          "from_aisle"
+        ],
+        "exits": [
+          "to_workstation"
+        ],
+        "connections": [
+          "workstation",
+          "server_aisle"
+        ],
+        "doors": [
+          "stage_glass"
+        ],
+        "allowed_subject_positions": [
+          {
+            "id": "beside_holo",
+            "x": 0.4,
+            "z": 0.5
+          }
+        ],
+        "restricted_areas": [
+          "inside_holo_volume"
+        ],
+        "ambient_activity": [
+          "holo voxel churn"
+        ],
+        "ambience": [
+          "soft UI beeps"
+        ]
+      },
+      "scene_id": "s1",
+      "spatial_layout": {
+        "zone_id": "holo_stage",
+        "zone_name": "Holographic Model Stage",
+        "description": "Central stage with luminous neural volume",
+        "landmarks": [
+          "neural_holo",
+          "ops_console"
+        ],
+        "entrances": [
+          "from_aisle"
+        ],
+        "exits": [
+          "to_workstation"
+        ],
+        "connections": [
+          "workstation",
+          "server_aisle"
+        ],
+        "scale": "server_hall"
+      },
+      "required_persistent_objects": [
+        {
+          "object_id": "obj_neural_holo",
+          "name": "neural_holo",
+          "surface": "floor",
+          "anchored": true,
+          "temporary": false,
+          "zone": "holo_stage",
+          "position": {
+            "x": 0.5,
+            "y": 0.0,
+            "z": 0.45
+          },
+          "scale": 1.0,
+          "relationships": [
+            "ops_console"
+          ]
+        },
+        {
+          "object_id": "obj_ops_console",
+          "name": "ops_console",
+          "surface": "floor",
+          "anchored": true,
+          "temporary": false,
+          "zone": "holo_stage",
+          "position": {
+            "x": 0.35,
+            "y": 0.0,
+            "z": 0.55
+          },
+          "scale": 1.0,
+          "relationships": []
+        }
+      ],
+      "required_temporary_objects": [],
+      "background_activity": [
+        "holo voxel churn"
+      ],
+      "environmental_ambience": {
+        "labels": [
+          "server whine",
+          "soft UI beeps",
+          "coolant hiss",
+          "AI laboratory hum"
+        ],
+        "zone_ambience": [
+          "soft UI beeps"
+        ],
+        "handoff_to": "sound_design",
+        "note": "Environmental context only \u2014 not final audio mix"
+      },
+      "scale": "server_hall",
+      "continuity_state": {
+        "version": 2,
+        "time_of_day": "day",
+        "weather": "indoors_cooled",
+        "object_positions": {
+          "obj_neural_holo": {
+            "position": {
+              "x": 0.5,
+              "y": 0.0,
+              "z": 0.45
+            },
+            "zone": "holo_stage",
+            "surface": "floor",
+            "anchored": true
+          },
+          "obj_server_rack": {
+            "position": {
+              "x": 0.7,
+              "y": 0.0,
+              "z": 0.4
+            },
+            "zone": "server_aisle",
+            "surface": "floor",
+            "anchored": true
+          },
+          "obj_training_monitor": {
+            "position": {
+              "x": 0.4,
+              "y": 0.9,
+              "z": 0.5
+            },
+            "zone": "workstation",
+            "surface": "desk",
+            "anchored": true
+          },
+          "obj_ops_console": {
+            "position": {
+              "x": 0.35,
+              "y": 0.0,
+              "z": 0.55
+            },
+            "zone": "holo_stage",
+            "surface": "floor",
+            "anchored": true
+          },
+          "obj_workstation_desk": {
+            "position": {
+              "x": 0.25,
+              "y": 0.0,
+              "z": 0.6
+            },
+            "zone": "workstation",
+            "surface": "floor",
+            "anchored": true
+          }
+        },
+        "visited_zones": [
+          "holo_stage"
+        ],
+        "doors": {
+          "stage_glass": "closed"
+        },
+        "displays": {},
+        "introduced_objects": [],
+        "characters_present": [
+          "talent"
+        ],
+        "event_count": 1
+      },
+      "scientific_constraints": [
+        "Compute racks remain grounded",
+        "Hologram volume stays at stage center unless moved by state event"
+      ],
+      "historical_constraints": [],
+      "accuracy": {
+        "scientific": 75,
+        "uncertainties": [
+          "Holographic UI is illustrative"
+        ]
+      },
+      "allowed_subject_positions": [
+        {
+          "id": "beside_holo",
+          "x": 0.4,
+          "z": 0.5
+        }
+      ],
+      "restricted_areas": [
+        "inside_holo_volume"
+      ],
+      "recommended_transition_destination": "workstation",
+      "asset_requirements": {
+        "world_id": "WORLD-AI_LABORATORY",
+        "requirements": [
+          {
+            "kind": "background_loop",
+            "purpose": "environment_plate",
+            "query": "AI Laboratory holo_stage",
+            "world_id": "WORLD-AI_LABORATORY",
+            "zone": "holo_stage"
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "server whine",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system"
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "soft UI beeps",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system"
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "coolant hiss",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system"
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "AI laboratory hum",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system"
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "neural_holo",
+            "object_id": "obj_neural_holo"
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "server_rack",
+            "object_id": "obj_server_rack"
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "training_monitor",
+            "object_id": "obj_training_monitor"
+          }
+        ],
+        "resolved": [
+          {
+            "kind": "background_loop",
+            "purpose": "environment_plate",
+            "query": "AI Laboratory holo_stage",
+            "world_id": "WORLD-AI_LABORATORY",
+            "zone": "holo_stage",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "server whine",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "soft UI beeps",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "coolant hiss",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "AI laboratory hum",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "neural_holo",
+            "object_id": "obj_neural_holo",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "server_rack",
+            "object_id": "obj_server_rack",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "training_monitor",
+            "object_id": "obj_training_monitor",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          }
+        ],
+        "missing": [],
+        "note": "Does not duplicate Asset Intelligence \u2014 references or requests only"
+      },
+      "aesthetic_context": {
+        "base_palette": {
+          "family": "tech",
+          "primary": "#0A1628",
+          "accent": "#00F5D4",
+          "warn": "#7B2CBF"
+        },
+        "materials": [
+          "matte black metal",
+          "glass",
+          "LED arrays"
+        ],
+        "textures": [],
+        "era": "near_future",
+        "design_language": "clean-tech",
+        "brand_compatibility": "",
+        "ambient_practicals": [
+          "rack LEDs",
+          "holo glow",
+          "console screens"
+        ],
+        "note": "Context for Cinematic Director \u2014 final lighting/camera owned elsewhere"
+      },
+      "cinematic_prescriptions": null,
+      "ownership": {
+        "world_builder": "environment_continuity_spatial_objects",
+        "scene_builder": "scene_purpose_subjects_actions_duration",
+        "cinematic_director": "camera_framing_lighting_treatment_motion_pacing",
+        "renderer": "technical_render"
+      },
+      "world_validation": {
+        "ok": true,
+        "passed": true,
+        "hard_failures": [],
+        "hard_fails": [],
+        "repairable_continuity_issues": [],
+        "accuracy_warnings": [],
+        "creative_recommendations": []
+      }
+    },
+    {
+      "package_version": "2.0.0",
+      "package_type": "environment",
+      "world_id": "WORLD-AI_LABORATORY",
+      "world_version": "2.0.0",
+      "environment_name": "AI Laboratory",
+      "selected_zone": "workstation",
+      "zone": {
+        "id": "workstation",
+        "name": "Training Workstation",
+        "description": "Operator desk with training monitors",
+        "landmarks": [
+          "workstation_desk",
+          "training_monitor"
+        ],
+        "entrances": [
+          "from_holo_stage"
+        ],
+        "exits": [
+          "to_server_aisle"
+        ],
+        "connections": [
+          "holo_stage",
+          "server_aisle"
+        ],
+        "allowed_subject_positions": [
+          {
+            "id": "at_workstation",
+            "x": 0.3,
+            "z": 0.55
+          }
+        ],
+        "restricted_areas": [],
+        "ambient_activity": [
+          "monitor scroll"
+        ],
+        "ambience": [
+          "keyboard soft"
+        ]
+      },
+      "scene_id": "s2",
+      "spatial_layout": {
+        "zone_id": "workstation",
+        "zone_name": "Training Workstation",
+        "description": "Operator desk with training monitors",
+        "landmarks": [
+          "workstation_desk",
+          "training_monitor"
+        ],
+        "entrances": [
+          "from_holo_stage"
+        ],
+        "exits": [
+          "to_server_aisle"
+        ],
+        "connections": [
+          "holo_stage",
+          "server_aisle"
+        ],
+        "scale": "server_hall"
+      },
+      "required_persistent_objects": [
+        {
+          "object_id": "obj_training_monitor",
+          "name": "training_monitor",
+          "surface": "desk",
+          "anchored": true,
+          "temporary": false,
+          "zone": "workstation",
+          "position": {
+            "x": 0.4,
+            "y": 0.9,
+            "z": 0.5
+          },
+          "scale": 1.0,
+          "relationships": []
+        },
+        {
+          "object_id": "obj_workstation_desk",
+          "name": "workstation_desk",
+          "surface": "floor",
+          "anchored": true,
+          "temporary": false,
+          "zone": "workstation",
+          "position": {
+            "x": 0.25,
+            "y": 0.0,
+            "z": 0.6
+          },
+          "scale": 1.0,
+          "relationships": []
+        }
+      ],
+      "required_temporary_objects": [],
+      "background_activity": [
+        "monitor scroll"
+      ],
+      "environmental_ambience": {
+        "labels": [
+          "server whine",
+          "soft UI beeps",
+          "coolant hiss",
+          "AI laboratory hum"
+        ],
+        "zone_ambience": [
+          "keyboard soft"
+        ],
+        "handoff_to": "sound_design",
+        "note": "Environmental context only \u2014 not final audio mix"
+      },
+      "scale": "server_hall",
+      "continuity_state": {
+        "version": 3,
+        "time_of_day": "day",
+        "weather": "indoors_cooled",
+        "object_positions": {
+          "obj_neural_holo": {
+            "position": {
+              "x": 0.5,
+              "y": 0.0,
+              "z": 0.45
+            },
+            "zone": "holo_stage",
+            "surface": "floor",
+            "anchored": true
+          },
+          "obj_server_rack": {
+            "position": {
+              "x": 0.7,
+              "y": 0.0,
+              "z": 0.4
+            },
+            "zone": "server_aisle",
+            "surface": "floor",
+            "anchored": true
+          },
+          "obj_training_monitor": {
+            "position": {
+              "x": 0.4,
+              "y": 0.9,
+              "z": 0.5
+            },
+            "zone": "workstation",
+            "surface": "desk",
+            "anchored": true
+          },
+          "obj_ops_console": {
+            "position": {
+              "x": 0.35,
+              "y": 0.0,
+              "z": 0.55
+            },
+            "zone": "holo_stage",
+            "surface": "floor",
+            "anchored": true
+          },
+          "obj_workstation_desk": {
+            "position": {
+              "x": 0.25,
+              "y": 0.0,
+              "z": 0.6
+            },
+            "zone": "workstation",
+            "surface": "floor",
+            "anchored": true
+          }
+        },
+        "visited_zones": [
+          "holo_stage",
+          "workstation"
+        ],
+        "doors": {
+          "stage_glass": "closed"
+        },
+        "displays": {},
+        "introduced_objects": [],
+        "characters_present": [
+          "talent"
+        ],
+        "event_count": 2
+      },
+      "scientific_constraints": [
+        "Compute racks remain grounded",
+        "Hologram volume stays at stage center unless moved by state event"
+      ],
+      "historical_constraints": [],
+      "accuracy": {
+        "scientific": 75,
+        "uncertainties": [
+          "Holographic UI is illustrative"
+        ]
+      },
+      "allowed_subject_positions": [
+        {
+          "id": "at_workstation",
+          "x": 0.3,
+          "z": 0.55
+        }
+      ],
+      "restricted_areas": [],
+      "recommended_transition_destination": "holo_stage",
+      "asset_requirements": {
+        "world_id": "WORLD-AI_LABORATORY",
+        "requirements": [
+          {
+            "kind": "background_loop",
+            "purpose": "environment_plate",
+            "query": "AI Laboratory workstation",
+            "world_id": "WORLD-AI_LABORATORY",
+            "zone": "workstation"
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "server whine",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system"
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "soft UI beeps",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system"
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "coolant hiss",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system"
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "AI laboratory hum",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system"
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "neural_holo",
+            "object_id": "obj_neural_holo"
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "server_rack",
+            "object_id": "obj_server_rack"
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "training_monitor",
+            "object_id": "obj_training_monitor"
+          }
+        ],
+        "resolved": [
+          {
+            "kind": "background_loop",
+            "purpose": "environment_plate",
+            "query": "AI Laboratory workstation",
+            "world_id": "WORLD-AI_LABORATORY",
+            "zone": "workstation",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "server whine",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "soft UI beeps",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "coolant hiss",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "AI laboratory hum",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "neural_holo",
+            "object_id": "obj_neural_holo",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "server_rack",
+            "object_id": "obj_server_rack",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "training_monitor",
+            "object_id": "obj_training_monitor",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          }
+        ],
+        "missing": [],
+        "note": "Does not duplicate Asset Intelligence \u2014 references or requests only"
+      },
+      "aesthetic_context": {
+        "base_palette": {
+          "family": "tech",
+          "primary": "#0A1628",
+          "accent": "#00F5D4",
+          "warn": "#7B2CBF"
+        },
+        "materials": [
+          "matte black metal",
+          "glass",
+          "LED arrays"
+        ],
+        "textures": [],
+        "era": "near_future",
+        "design_language": "clean-tech",
+        "brand_compatibility": "",
+        "ambient_practicals": [
+          "rack LEDs",
+          "holo glow",
+          "console screens"
+        ],
+        "note": "Context for Cinematic Director \u2014 final lighting/camera owned elsewhere"
+      },
+      "cinematic_prescriptions": null,
+      "ownership": {
+        "world_builder": "environment_continuity_spatial_objects",
+        "scene_builder": "scene_purpose_subjects_actions_duration",
+        "cinematic_director": "camera_framing_lighting_treatment_motion_pacing",
+        "renderer": "technical_render"
+      },
+      "world_validation": {
+        "ok": true,
+        "passed": true,
+        "hard_failures": [],
+        "hard_fails": [],
+        "repairable_continuity_issues": [],
+        "accuracy_warnings": [],
+        "creative_recommendations": []
+      }
+    },
+    {
+      "package_version": "2.0.0",
+      "package_type": "environment",
+      "world_id": "WORLD-AI_LABORATORY",
+      "world_version": "2.0.0",
+      "environment_name": "AI Laboratory",
+      "selected_zone": "server_aisle",
+      "zone": {
+        "id": "server_aisle",
+        "name": "Server Aisle",
+        "description": "Cooled rack corridor with LED cascade",
+        "landmarks": [
+          "server_rack"
+        ],
+        "entrances": [
+          "from_workstation"
+        ],
+        "exits": [
+          "to_holo_stage"
+        ],
+        "connections": [
+          "holo_stage",
+          "workstation"
+        ],
+        "allowed_subject_positions": [
+          {
+            "id": "aisle_observe",
+            "x": 0.55,
+            "z": 0.4
+          }
+        ],
+        "restricted_areas": [
+          "rack_interior"
+        ],
+        "ambient_activity": [
+          "rack LED cascade",
+          "cooling fog"
+        ],
+        "ambience": [
+          "server whine",
+          "coolant hiss"
+        ]
+      },
+      "scene_id": "s3",
+      "spatial_layout": {
+        "zone_id": "server_aisle",
+        "zone_name": "Server Aisle",
+        "description": "Cooled rack corridor with LED cascade",
+        "landmarks": [
+          "server_rack"
+        ],
+        "entrances": [
+          "from_workstation"
+        ],
+        "exits": [
+          "to_holo_stage"
+        ],
+        "connections": [
+          "holo_stage",
+          "workstation"
+        ],
+        "scale": "server_hall"
+      },
+      "required_persistent_objects": [
+        {
+          "object_id": "obj_server_rack",
+          "name": "server_rack",
+          "surface": "floor",
+          "anchored": true,
+          "temporary": false,
+          "zone": "server_aisle",
+          "position": {
+            "x": 0.7,
+            "y": 0.0,
+            "z": 0.4
+          },
+          "scale": 1.0,
+          "relationships": []
+        }
+      ],
+      "required_temporary_objects": [],
+      "background_activity": [
+        "rack LED cascade",
+        "cooling fog"
+      ],
+      "environmental_ambience": {
+        "labels": [
+          "server whine",
+          "soft UI beeps",
+          "coolant hiss",
+          "AI laboratory hum"
+        ],
+        "zone_ambience": [
+          "server whine",
+          "coolant hiss"
+        ],
+        "handoff_to": "sound_design",
+        "note": "Environmental context only \u2014 not final audio mix"
+      },
+      "scale": "server_hall",
+      "continuity_state": {
+        "version": 4,
+        "time_of_day": "day",
+        "weather": "indoors_cooled",
+        "object_positions": {
+          "obj_neural_holo": {
+            "position": {
+              "x": 0.5,
+              "y": 0.0,
+              "z": 0.45
+            },
+            "zone": "holo_stage",
+            "surface": "floor",
+            "anchored": true
+          },
+          "obj_server_rack": {
+            "position": {
+              "x": 0.7,
+              "y": 0.0,
+              "z": 0.4
+            },
+            "zone": "server_aisle",
+            "surface": "floor",
+            "anchored": true
+          },
+          "obj_training_monitor": {
+            "position": {
+              "x": 0.4,
+              "y": 0.9,
+              "z": 0.5
+            },
+            "zone": "workstation",
+            "surface": "desk",
+            "anchored": true
+          },
+          "obj_ops_console": {
+            "position": {
+              "x": 0.35,
+              "y": 0.0,
+              "z": 0.55
+            },
+            "zone": "holo_stage",
+            "surface": "floor",
+            "anchored": true
+          },
+          "obj_workstation_desk": {
+            "position": {
+              "x": 0.25,
+              "y": 0.0,
+              "z": 0.6
+            },
+            "zone": "workstation",
+            "surface": "floor",
+            "anchored": true
+          }
+        },
+        "visited_zones": [
+          "holo_stage",
+          "workstation",
+          "server_aisle"
+        ],
+        "doors": {
+          "stage_glass": "closed"
+        },
+        "displays": {},
+        "introduced_objects": [],
+        "characters_present": [
+          "talent"
+        ],
+        "event_count": 3
+      },
+      "scientific_constraints": [
+        "Compute racks remain grounded",
+        "Hologram volume stays at stage center unless moved by state event"
+      ],
+      "historical_constraints": [],
+      "accuracy": {
+        "scientific": 75,
+        "uncertainties": [
+          "Holographic UI is illustrative"
+        ]
+      },
+      "allowed_subject_positions": [
+        {
+          "id": "aisle_observe",
+          "x": 0.55,
+          "z": 0.4
+        }
+      ],
+      "restricted_areas": [
+        "rack_interior"
+      ],
+      "recommended_transition_destination": "holo_stage",
+      "asset_requirements": {
+        "world_id": "WORLD-AI_LABORATORY",
+        "requirements": [
+          {
+            "kind": "background_loop",
+            "purpose": "environment_plate",
+            "query": "AI Laboratory server_aisle",
+            "world_id": "WORLD-AI_LABORATORY",
+            "zone": "server_aisle"
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "server whine",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system"
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "soft UI beeps",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system"
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "coolant hiss",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system"
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "AI laboratory hum",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system"
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "neural_holo",
+            "object_id": "obj_neural_holo"
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "server_rack",
+            "object_id": "obj_server_rack"
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "training_monitor",
+            "object_id": "obj_training_monitor"
+          }
+        ],
+        "resolved": [
+          {
+            "kind": "background_loop",
+            "purpose": "environment_plate",
+            "query": "AI Laboratory server_aisle",
+            "world_id": "WORLD-AI_LABORATORY",
+            "zone": "server_aisle",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "server whine",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "soft UI beeps",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "coolant hiss",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "AI laboratory hum",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "neural_holo",
+            "object_id": "obj_neural_holo",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "server_rack",
+            "object_id": "obj_server_rack",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "training_monitor",
+            "object_id": "obj_training_monitor",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          }
+        ],
+        "missing": [],
+        "note": "Does not duplicate Asset Intelligence \u2014 references or requests only"
+      },
+      "aesthetic_context": {
+        "base_palette": {
+          "family": "tech",
+          "primary": "#0A1628",
+          "accent": "#00F5D4",
+          "warn": "#7B2CBF"
+        },
+        "materials": [
+          "matte black metal",
+          "glass",
+          "LED arrays"
+        ],
+        "textures": [],
+        "era": "near_future",
+        "design_language": "clean-tech",
+        "brand_compatibility": "",
+        "ambient_practicals": [
+          "rack LEDs",
+          "holo glow",
+          "console screens"
+        ],
+        "note": "Context for Cinematic Director \u2014 final lighting/camera owned elsewhere"
+      },
+      "cinematic_prescriptions": null,
+      "ownership": {
+        "world_builder": "environment_continuity_spatial_objects",
+        "scene_builder": "scene_purpose_subjects_actions_duration",
+        "cinematic_director": "camera_framing_lighting_treatment_motion_pacing",
+        "renderer": "technical_render"
+      },
+      "world_validation": {
+        "ok": true,
+        "passed": true,
+        "hard_failures": [],
+        "hard_fails": [],
+        "repairable_continuity_issues": [],
+        "accuracy_warnings": [],
+        "creative_recommendations": []
+      }
+    }
+  ],
+  "ambience_handoff": {
+    "labels": [
+      "server whine",
+      "soft UI beeps",
+      "coolant hiss",
+      "AI laboratory hum"
+    ],
+    "target": "sound_design"
+  },
+  "asset_requirements_summary": {
+    "resolved_count": 24,
+    "missing_count": 0,
+    "missing": [],
+    "resolved": [
+      {
+        "kind": "background_loop",
+        "purpose": "environment_plate",
+        "query": "AI Laboratory holo_stage",
+        "world_id": "WORLD-AI_LABORATORY",
+        "zone": "holo_stage",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "music",
+        "purpose": "environmental_ambience",
+        "query": "server whine",
+        "handoff_to": "sound_design",
+        "note": "World specifies context only \u2014 final mix is sound system",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "music",
+        "purpose": "environmental_ambience",
+        "query": "soft UI beeps",
+        "handoff_to": "sound_design",
+        "note": "World specifies context only \u2014 final mix is sound system",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "music",
+        "purpose": "environmental_ambience",
+        "query": "coolant hiss",
+        "handoff_to": "sound_design",
+        "note": "World specifies context only \u2014 final mix is sound system",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "music",
+        "purpose": "environmental_ambience",
+        "query": "AI laboratory hum",
+        "handoff_to": "sound_design",
+        "note": "World specifies context only \u2014 final mix is sound system",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "image",
+        "purpose": "prop",
+        "query": "neural_holo",
+        "object_id": "obj_neural_holo",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "image",
+        "purpose": "prop",
+        "query": "server_rack",
+        "object_id": "obj_server_rack",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "image",
+        "purpose": "prop",
+        "query": "training_monitor",
+        "object_id": "obj_training_monitor",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "background_loop",
+        "purpose": "environment_plate",
+        "query": "AI Laboratory workstation",
+        "world_id": "WORLD-AI_LABORATORY",
+        "zone": "workstation",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "music",
+        "purpose": "environmental_ambience",
+        "query": "server whine",
+        "handoff_to": "sound_design",
+        "note": "World specifies context only \u2014 final mix is sound system",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "music",
+        "purpose": "environmental_ambience",
+        "query": "soft UI beeps",
+        "handoff_to": "sound_design",
+        "note": "World specifies context only \u2014 final mix is sound system",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "music",
+        "purpose": "environmental_ambience",
+        "query": "coolant hiss",
+        "handoff_to": "sound_design",
+        "note": "World specifies context only \u2014 final mix is sound system",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "music",
+        "purpose": "environmental_ambience",
+        "query": "AI laboratory hum",
+        "handoff_to": "sound_design",
+        "note": "World specifies context only \u2014 final mix is sound system",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "image",
+        "purpose": "prop",
+        "query": "neural_holo",
+        "object_id": "obj_neural_holo",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "image",
+        "purpose": "prop",
+        "query": "server_rack",
+        "object_id": "obj_server_rack",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "image",
+        "purpose": "prop",
+        "query": "training_monitor",
+        "object_id": "obj_training_monitor",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "background_loop",
+        "purpose": "environment_plate",
+        "query": "AI Laboratory server_aisle",
+        "world_id": "WORLD-AI_LABORATORY",
+        "zone": "server_aisle",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "music",
+        "purpose": "environmental_ambience",
+        "query": "server whine",
+        "handoff_to": "sound_design",
+        "note": "World specifies context only \u2014 final mix is sound system",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "music",
+        "purpose": "environmental_ambience",
+        "query": "soft UI beeps",
+        "handoff_to": "sound_design",
+        "note": "World specifies context only \u2014 final mix is sound system",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "music",
+        "purpose": "environmental_ambience",
+        "query": "coolant hiss",
+        "handoff_to": "sound_design",
+        "note": "World specifies context only \u2014 final mix is sound system",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      }
+    ]
+  },
+  "continuity_validation": {
+    "ok": true,
+    "passed": true,
+    "hard_failures": [],
+    "hard_fails": [],
+    "accuracy_warnings": [],
+    "binding_count": 3,
+    "state_version": 4
+  },
+  "renderer_feed": {
+    "note": "Separate from cinematic_direction_package \u2014 spatial/environment only",
+    "environment_packages": [
+      {
+        "package_version": "2.0.0",
+        "package_type": "environment",
+        "world_id": "WORLD-AI_LABORATORY",
+        "world_version": "2.0.0",
+        "environment_name": "AI Laboratory",
+        "selected_zone": "holo_stage",
+        "zone": {
+          "id": "holo_stage",
+          "name": "Holographic Model Stage",
+          "description": "Central stage with luminous neural volume",
+          "landmarks": [
+            "neural_holo",
+            "ops_console"
+          ],
+          "entrances": [
+            "from_aisle"
+          ],
+          "exits": [
+            "to_workstation"
+          ],
+          "connections": [
+            "workstation",
+            "server_aisle"
+          ],
+          "doors": [
+            "stage_glass"
+          ],
+          "allowed_subject_positions": [
+            {
+              "id": "beside_holo",
+              "x": 0.4,
+              "z": 0.5
+            }
+          ],
+          "restricted_areas": [
+            "inside_holo_volume"
+          ],
+          "ambient_activity": [
+            "holo voxel churn"
+          ],
+          "ambience": [
+            "soft UI beeps"
+          ]
+        },
+        "scene_id": "s1",
+        "spatial_layout": {
+          "zone_id": "holo_stage",
+          "zone_name": "Holographic Model Stage",
+          "description": "Central stage with luminous neural volume",
+          "landmarks": [
+            "neural_holo",
+            "ops_console"
+          ],
+          "entrances": [
+            "from_aisle"
+          ],
+          "exits": [
+            "to_workstation"
+          ],
+          "connections": [
+            "workstation",
+            "server_aisle"
+          ],
+          "scale": "server_hall"
+        },
+        "required_persistent_objects": [
+          {
+            "object_id": "obj_neural_holo",
+            "name": "neural_holo",
+            "surface": "floor",
+            "anchored": true,
+            "temporary": false,
+            "zone": "holo_stage",
+            "position": {
+              "x": 0.5,
+              "y": 0.0,
+              "z": 0.45
+            },
+            "scale": 1.0,
+            "relationships": [
+              "ops_console"
+            ]
+          },
+          {
+            "object_id": "obj_ops_console",
+            "name": "ops_console",
+            "surface": "floor",
+            "anchored": true,
+            "temporary": false,
+            "zone": "holo_stage",
+            "position": {
+              "x": 0.35,
+              "y": 0.0,
+              "z": 0.55
+            },
+            "scale": 1.0,
+            "relationships": []
+          }
+        ],
+        "required_temporary_objects": [],
+        "background_activity": [
+          "holo voxel churn"
+        ],
+        "environmental_ambience": {
+          "labels": [
+            "server whine",
+            "soft UI beeps",
+            "coolant hiss",
+            "AI laboratory hum"
+          ],
+          "zone_ambience": [
+            "soft UI beeps"
+          ],
+          "handoff_to": "sound_design",
+          "note": "Environmental context only \u2014 not final audio mix"
+        },
+        "scale": "server_hall",
+        "continuity_state": {
+          "version": 2,
+          "time_of_day": "day",
+          "weather": "indoors_cooled",
+          "object_positions": {
+            "obj_neural_holo": {
+              "position": {
+                "x": 0.5,
+                "y": 0.0,
+                "z": 0.45
+              },
+              "zone": "holo_stage",
+              "surface": "floor",
+              "anchored": true
+            },
+            "obj_server_rack": {
+              "position": {
+                "x": 0.7,
+                "y": 0.0,
+                "z": 0.4
+              },
+              "zone": "server_aisle",
+              "surface": "floor",
+              "anchored": true
+            },
+            "obj_training_monitor": {
+              "position": {
+                "x": 0.4,
+                "y": 0.9,
+                "z": 0.5
+              },
+              "zone": "workstation",
+              "surface": "desk",
+              "anchored": true
+            },
+            "obj_ops_console": {
+              "position": {
+                "x": 0.35,
+                "y": 0.0,
+                "z": 0.55
+              },
+              "zone": "holo_stage",
+              "surface": "floor",
+              "anchored": true
+            },
+            "obj_workstation_desk": {
+              "position": {
+                "x": 0.25,
+                "y": 0.0,
+                "z": 0.6
+              },
+              "zone": "workstation",
+              "surface": "floor",
+              "anchored": true
+            }
+          },
+          "visited_zones": [
+            "holo_stage"
+          ],
+          "doors": {
+            "stage_glass": "closed"
+          },
+          "displays": {},
+          "introduced_objects": [],
+          "characters_present": [
+            "talent"
+          ],
+          "event_count": 1
+        },
+        "scientific_constraints": [
+          "Compute racks remain grounded",
+          "Hologram volume stays at stage center unless moved by state event"
+        ],
+        "historical_constraints": [],
+        "accuracy": {
+          "scientific": 75,
+          "uncertainties": [
+            "Holographic UI is illustrative"
+          ]
+        },
+        "allowed_subject_positions": [
+          {
+            "id": "beside_holo",
+            "x": 0.4,
+            "z": 0.5
+          }
+        ],
+        "restricted_areas": [
+          "inside_holo_volume"
+        ],
+        "recommended_transition_destination": "workstation",
+        "asset_requirements": {
+          "world_id": "WORLD-AI_LABORATORY",
+          "requirements": [
+            {
+              "kind": "background_loop",
+              "purpose": "environment_plate",
+              "query": "AI Laboratory holo_stage",
+              "world_id": "WORLD-AI_LABORATORY",
+              "zone": "holo_stage"
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "server whine",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system"
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "soft UI beeps",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system"
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "coolant hiss",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system"
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "AI laboratory hum",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system"
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "neural_holo",
+              "object_id": "obj_neural_holo"
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "server_rack",
+              "object_id": "obj_server_rack"
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "training_monitor",
+              "object_id": "obj_training_monitor"
+            }
+          ],
+          "resolved": [
+            {
+              "kind": "background_loop",
+              "purpose": "environment_plate",
+              "query": "AI Laboratory holo_stage",
+              "world_id": "WORLD-AI_LABORATORY",
+              "zone": "holo_stage",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "server whine",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "soft UI beeps",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "coolant hiss",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "AI laboratory hum",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "neural_holo",
+              "object_id": "obj_neural_holo",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "server_rack",
+              "object_id": "obj_server_rack",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "training_monitor",
+              "object_id": "obj_training_monitor",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            }
+          ],
+          "missing": [],
+          "note": "Does not duplicate Asset Intelligence \u2014 references or requests only"
+        },
+        "aesthetic_context": {
+          "base_palette": {
+            "family": "tech",
+            "primary": "#0A1628",
+            "accent": "#00F5D4",
+            "warn": "#7B2CBF"
+          },
+          "materials": [
+            "matte black metal",
+            "glass",
+            "LED arrays"
+          ],
+          "textures": [],
+          "era": "near_future",
+          "design_language": "clean-tech",
+          "brand_compatibility": "",
+          "ambient_practicals": [
+            "rack LEDs",
+            "holo glow",
+            "console screens"
+          ],
+          "note": "Context for Cinematic Director \u2014 final lighting/camera owned elsewhere"
+        },
+        "cinematic_prescriptions": null,
+        "ownership": {
+          "world_builder": "environment_continuity_spatial_objects",
+          "scene_builder": "scene_purpose_subjects_actions_duration",
+          "cinematic_director": "camera_framing_lighting_treatment_motion_pacing",
+          "renderer": "technical_render"
+        },
+        "world_validation": {
+          "ok": true,
+          "passed": true,
+          "hard_failures": [],
+          "hard_fails": [],
+          "repairable_continuity_issues": [],
+          "accuracy_warnings": [],
+          "creative_recommendations": []
+        }
+      },
+      {
+        "package_version": "2.0.0",
+        "package_type": "environment",
+        "world_id": "WORLD-AI_LABORATORY",
+        "world_version": "2.0.0",
+        "environment_name": "AI Laboratory",
+        "selected_zone": "workstation",
+        "zone": {
+          "id": "workstation",
+          "name": "Training Workstation",
+          "description": "Operator desk with training monitors",
+          "landmarks": [
+            "workstation_desk",
+            "training_monitor"
+          ],
+          "entrances": [
+            "from_holo_stage"
+          ],
+          "exits": [
+            "to_server_aisle"
+          ],
+          "connections": [
+            "holo_stage",
+            "server_aisle"
+          ],
+          "allowed_subject_positions": [
+            {
+              "id": "at_workstation",
+              "x": 0.3,
+              "z": 0.55
+            }
+          ],
+          "restricted_areas": [],
+          "ambient_activity": [
+            "monitor scroll"
+          ],
+          "ambience": [
+            "keyboard soft"
+          ]
+        },
+        "scene_id": "s2",
+        "spatial_layout": {
+          "zone_id": "workstation",
+          "zone_name": "Training Workstation",
+          "description": "Operator desk with training monitors",
+          "landmarks": [
+            "workstation_desk",
+            "training_monitor"
+          ],
+          "entrances": [
+            "from_holo_stage"
+          ],
+          "exits": [
+            "to_server_aisle"
+          ],
+          "connections": [
+            "holo_stage",
+            "server_aisle"
+          ],
+          "scale": "server_hall"
+        },
+        "required_persistent_objects": [
+          {
+            "object_id": "obj_training_monitor",
+            "name": "training_monitor",
+            "surface": "desk",
+            "anchored": true,
+            "temporary": false,
+            "zone": "workstation",
+            "position": {
+              "x": 0.4,
+              "y": 0.9,
+              "z": 0.5
+            },
+            "scale": 1.0,
+            "relationships": []
+          },
+          {
+            "object_id": "obj_workstation_desk",
+            "name": "workstation_desk",
+            "surface": "floor",
+            "anchored": true,
+            "temporary": false,
+            "zone": "workstation",
+            "position": {
+              "x": 0.25,
+              "y": 0.0,
+              "z": 0.6
+            },
+            "scale": 1.0,
+            "relationships": []
+          }
+        ],
+        "required_temporary_objects": [],
+        "background_activity": [
+          "monitor scroll"
+        ],
+        "environmental_ambience": {
+          "labels": [
+            "server whine",
+            "soft UI beeps",
+            "coolant hiss",
+            "AI laboratory hum"
+          ],
+          "zone_ambience": [
+            "keyboard soft"
+          ],
+          "handoff_to": "sound_design",
+          "note": "Environmental context only \u2014 not final audio mix"
+        },
+        "scale": "server_hall",
+        "continuity_state": {
+          "version": 3,
+          "time_of_day": "day",
+          "weather": "indoors_cooled",
+          "object_positions": {
+            "obj_neural_holo": {
+              "position": {
+                "x": 0.5,
+                "y": 0.0,
+                "z": 0.45
+              },
+              "zone": "holo_stage",
+              "surface": "floor",
+              "anchored": true
+            },
+            "obj_server_rack": {
+              "position": {
+                "x": 0.7,
+                "y": 0.0,
+                "z": 0.4
+              },
+              "zone": "server_aisle",
+              "surface": "floor",
+              "anchored": true
+            },
+            "obj_training_monitor": {
+              "position": {
+                "x": 0.4,
+                "y": 0.9,
+                "z": 0.5
+              },
+              "zone": "workstation",
+              "surface": "desk",
+              "anchored": true
+            },
+            "obj_ops_console": {
+              "position": {
+                "x": 0.35,
+                "y": 0.0,
+                "z": 0.55
+              },
+              "zone": "holo_stage",
+              "surface": "floor",
+              "anchored": true
+            },
+            "obj_workstation_desk": {
+              "position": {
+                "x": 0.25,
+                "y": 0.0,
+                "z": 0.6
+              },
+              "zone": "workstation",
+              "surface": "floor",
+              "anchored": true
+            }
+          },
+          "visited_zones": [
+            "holo_stage",
+            "workstation"
+          ],
+          "doors": {
+            "stage_glass": "closed"
+          },
+          "displays": {},
+          "introduced_objects": [],
+          "characters_present": [
+            "talent"
+          ],
+          "event_count": 2
+        },
+        "scientific_constraints": [
+          "Compute racks remain grounded",
+          "Hologram volume stays at stage center unless moved by state event"
+        ],
+        "historical_constraints": [],
+        "accuracy": {
+          "scientific": 75,
+          "uncertainties": [
+            "Holographic UI is illustrative"
+          ]
+        },
+        "allowed_subject_positions": [
+          {
+            "id": "at_workstation",
+            "x": 0.3,
+            "z": 0.55
+          }
+        ],
+        "restricted_areas": [],
+        "recommended_transition_destination": "holo_stage",
+        "asset_requirements": {
+          "world_id": "WORLD-AI_LABORATORY",
+          "requirements": [
+            {
+              "kind": "background_loop",
+              "purpose": "environment_plate",
+              "query": "AI Laboratory workstation",
+              "world_id": "WORLD-AI_LABORATORY",
+              "zone": "workstation"
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "server whine",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system"
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "soft UI beeps",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system"
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "coolant hiss",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system"
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "AI laboratory hum",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system"
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "neural_holo",
+              "object_id": "obj_neural_holo"
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "server_rack",
+              "object_id": "obj_server_rack"
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "training_monitor",
+              "object_id": "obj_training_monitor"
+            }
+          ],
+          "resolved": [
+            {
+              "kind": "background_loop",
+              "purpose": "environment_plate",
+              "query": "AI Laboratory workstation",
+              "world_id": "WORLD-AI_LABORATORY",
+              "zone": "workstation",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "server whine",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "soft UI beeps",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "coolant hiss",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "AI laboratory hum",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "neural_holo",
+              "object_id": "obj_neural_holo",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "server_rack",
+              "object_id": "obj_server_rack",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "training_monitor",
+              "object_id": "obj_training_monitor",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            }
+          ],
+          "missing": [],
+          "note": "Does not duplicate Asset Intelligence \u2014 references or requests only"
+        },
+        "aesthetic_context": {
+          "base_palette": {
+            "family": "tech",
+            "primary": "#0A1628",
+            "accent": "#00F5D4",
+            "warn": "#7B2CBF"
+          },
+          "materials": [
+            "matte black metal",
+            "glass",
+            "LED arrays"
+          ],
+          "textures": [],
+          "era": "near_future",
+          "design_language": "clean-tech",
+          "brand_compatibility": "",
+          "ambient_practicals": [
+            "rack LEDs",
+            "holo glow",
+            "console screens"
+          ],
+          "note": "Context for Cinematic Director \u2014 final lighting/camera owned elsewhere"
+        },
+        "cinematic_prescriptions": null,
+        "ownership": {
+          "world_builder": "environment_continuity_spatial_objects",
+          "scene_builder": "scene_purpose_subjects_actions_duration",
+          "cinematic_director": "camera_framing_lighting_treatment_motion_pacing",
+          "renderer": "technical_render"
+        },
+        "world_validation": {
+          "ok": true,
+          "passed": true,
+          "hard_failures": [],
+          "hard_fails": [],
+          "repairable_continuity_issues": [],
+          "accuracy_warnings": [],
+          "creative_recommendations": []
+        }
+      },
+      {
+        "package_version": "2.0.0",
+        "package_type": "environment",
+        "world_id": "WORLD-AI_LABORATORY",
+        "world_version": "2.0.0",
+        "environment_name": "AI Laboratory",
+        "selected_zone": "server_aisle",
+        "zone": {
+          "id": "server_aisle",
+          "name": "Server Aisle",
+          "description": "Cooled rack corridor with LED cascade",
+          "landmarks": [
+            "server_rack"
+          ],
+          "entrances": [
+            "from_workstation"
+          ],
+          "exits": [
+            "to_holo_stage"
+          ],
+          "connections": [
+            "holo_stage",
+            "workstation"
+          ],
+          "allowed_subject_positions": [
+            {
+              "id": "aisle_observe",
+              "x": 0.55,
+              "z": 0.4
+            }
+          ],
+          "restricted_areas": [
+            "rack_interior"
+          ],
+          "ambient_activity": [
+            "rack LED cascade",
+            "cooling fog"
+          ],
+          "ambience": [
+            "server whine",
+            "coolant hiss"
+          ]
+        },
+        "scene_id": "s3",
+        "spatial_layout": {
+          "zone_id": "server_aisle",
+          "zone_name": "Server Aisle",
+          "description": "Cooled rack corridor with LED cascade",
+          "landmarks": [
+            "server_rack"
+          ],
+          "entrances": [
+            "from_workstation"
+          ],
+          "exits": [
+            "to_holo_stage"
+          ],
+          "connections": [
+            "holo_stage",
+            "workstation"
+          ],
+          "scale": "server_hall"
+        },
+        "required_persistent_objects": [
+          {
+            "object_id": "obj_server_rack",
+            "name": "server_rack",
+            "surface": "floor",
+            "anchored": true,
+            "temporary": false,
+            "zone": "server_aisle",
+            "position": {
+              "x": 0.7,
+              "y": 0.0,
+              "z": 0.4
+            },
+            "scale": 1.0,
+            "relationships": []
+          }
+        ],
+        "required_temporary_objects": [],
+        "background_activity": [
+          "rack LED cascade",
+          "cooling fog"
+        ],
+        "environmental_ambience": {
+          "labels": [
+            "server whine",
+            "soft UI beeps",
+            "coolant hiss",
+            "AI laboratory hum"
+          ],
+          "zone_ambience": [
+            "server whine",
+            "coolant hiss"
+          ],
+          "handoff_to": "sound_design",
+          "note": "Environmental context only \u2014 not final audio mix"
+        },
+        "scale": "server_hall",
+        "continuity_state": {
+          "version": 4,
+          "time_of_day": "day",
+          "weather": "indoors_cooled",
+          "object_positions": {
+            "obj_neural_holo": {
+              "position": {
+                "x": 0.5,
+                "y": 0.0,
+                "z": 0.45
+              },
+              "zone": "holo_stage",
+              "surface": "floor",
+              "anchored": true
+            },
+            "obj_server_rack": {
+              "position": {
+                "x": 0.7,
+                "y": 0.0,
+                "z": 0.4
+              },
+              "zone": "server_aisle",
+              "surface": "floor",
+              "anchored": true
+            },
+            "obj_training_monitor": {
+              "position": {
+                "x": 0.4,
+                "y": 0.9,
+                "z": 0.5
+              },
+              "zone": "workstation",
+              "surface": "desk",
+              "anchored": true
+            },
+            "obj_ops_console": {
+              "position": {
+                "x": 0.35,
+                "y": 0.0,
+                "z": 0.55
+              },
+              "zone": "holo_stage",
+              "surface": "floor",
+              "anchored": true
+            },
+            "obj_workstation_desk": {
+              "position": {
+                "x": 0.25,
+                "y": 0.0,
+                "z": 0.6
+              },
+              "zone": "workstation",
+              "surface": "floor",
+              "anchored": true
+            }
+          },
+          "visited_zones": [
+            "holo_stage",
+            "workstation",
+            "server_aisle"
+          ],
+          "doors": {
+            "stage_glass": "closed"
+          },
+          "displays": {},
+          "introduced_objects": [],
+          "characters_present": [
+            "talent"
+          ],
+          "event_count": 3
+        },
+        "scientific_constraints": [
+          "Compute racks remain grounded",
+          "Hologram volume stays at stage center unless moved by state event"
+        ],
+        "historical_constraints": [],
+        "accuracy": {
+          "scientific": 75,
+          "uncertainties": [
+            "Holographic UI is illustrative"
+          ]
+        },
+        "allowed_subject_positions": [
+          {
+            "id": "aisle_observe",
+            "x": 0.55,
+            "z": 0.4
+          }
+        ],
+        "restricted_areas": [
+          "rack_interior"
+        ],
+        "recommended_transition_destination": "holo_stage",
+        "asset_requirements": {
+          "world_id": "WORLD-AI_LABORATORY",
+          "requirements": [
+            {
+              "kind": "background_loop",
+              "purpose": "environment_plate",
+              "query": "AI Laboratory server_aisle",
+              "world_id": "WORLD-AI_LABORATORY",
+              "zone": "server_aisle"
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "server whine",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system"
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "soft UI beeps",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system"
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "coolant hiss",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system"
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "AI laboratory hum",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system"
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "neural_holo",
+              "object_id": "obj_neural_holo"
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "server_rack",
+              "object_id": "obj_server_rack"
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "training_monitor",
+              "object_id": "obj_training_monitor"
+            }
+          ],
+          "resolved": [
+            {
+              "kind": "background_loop",
+              "purpose": "environment_plate",
+              "query": "AI Laboratory server_aisle",
+              "world_id": "WORLD-AI_LABORATORY",
+              "zone": "server_aisle",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "server whine",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "soft UI beeps",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "coolant hiss",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "AI laboratory hum",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "neural_holo",
+              "object_id": "obj_neural_holo",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "server_rack",
+              "object_id": "obj_server_rack",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "training_monitor",
+              "object_id": "obj_training_monitor",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            }
+          ],
+          "missing": [],
+          "note": "Does not duplicate Asset Intelligence \u2014 references or requests only"
+        },
+        "aesthetic_context": {
+          "base_palette": {
+            "family": "tech",
+            "primary": "#0A1628",
+            "accent": "#00F5D4",
+            "warn": "#7B2CBF"
+          },
+          "materials": [
+            "matte black metal",
+            "glass",
+            "LED arrays"
+          ],
+          "textures": [],
+          "era": "near_future",
+          "design_language": "clean-tech",
+          "brand_compatibility": "",
+          "ambient_practicals": [
+            "rack LEDs",
+            "holo glow",
+            "console screens"
+          ],
+          "note": "Context for Cinematic Director \u2014 final lighting/camera owned elsewhere"
+        },
+        "cinematic_prescriptions": null,
+        "ownership": {
+          "world_builder": "environment_continuity_spatial_objects",
+          "scene_builder": "scene_purpose_subjects_actions_duration",
+          "cinematic_director": "camera_framing_lighting_treatment_motion_pacing",
+          "renderer": "technical_render"
+        },
+        "world_validation": {
+          "ok": true,
+          "passed": true,
+          "hard_failures": [],
+          "hard_fails": [],
+          "repairable_continuity_issues": [],
+          "accuracy_warnings": [],
+          "creative_recommendations": []
+        }
+      }
+    ],
+    "world_id": "WORLD-AI_LABORATORY"
+  },
+  "contracts": {
+    "environment_package": "services.world_builder",
+    "cinematic_direction_package": "services.cinematic_director",
+    "separation": "renderer receives both; they must not overwrite each other"
+  },
+  "validation": {
+    "ok": true,
+    "passed": true,
+    "hard_failures": [],
+    "hard_fails": [],
+    "repairable_continuity_issues": [],
+    "accuracy_warnings": [],
+    "creative_recommendations": [],
+    "scene_count": 3,
+    "continuity": {
+      "ok": true,
+      "passed": true,
+      "hard_failures": [],
+      "hard_fails": [],
+      "accuracy_warnings": [],
+      "binding_count": 3,
+      "state_version": 4
+    }
+  }
+}

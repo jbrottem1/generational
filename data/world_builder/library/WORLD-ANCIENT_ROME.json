@@ -1,0 +1,154 @@
+{
+  "world_id": "WORLD-ANCIENT_ROME",
+  "world_type": "Ancient Rome",
+  "name": "Ancient Rome",
+  "theme": "imperial power",
+  "scale": "forum",
+  "historical_accuracy": 75,
+  "environment": {
+    "description": "Sunlit Roman forum with marble columns, mosaic floor, and distant amphitheatre silhouette",
+    "continuity_key": "WORLD-ANCIENT_ROME",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "harsh mediterranean sun + cool shadow fill",
+    "consistent_key": true
+  },
+  "architecture": [
+    "doric columns",
+    "forum pavement",
+    "arched aqueduct silhouette"
+  ],
+  "weather": "mediterranean_clear",
+  "objects": [
+    {
+      "object_id": "obj_statue",
+      "name": "statue",
+      "surface": "ground",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.6,
+        "y": 0.0,
+        "z": 0.3
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_scroll_table",
+      "name": "scroll_table",
+      "surface": "ground",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.4,
+        "y": 0.0,
+        "z": 0.5
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "obj_stone_bench",
+      "name": "stone_bench",
+      "surface": "ground",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.25,
+        "y": 0.0,
+        "z": 0.6
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "background_animations": [
+    "cloth banner ripple",
+    "heat haze",
+    "distant crowd blur"
+  ],
+  "sound_ambience": [
+    "forum crowd",
+    "wind through columns"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.5,
+    "max_height": 8.0,
+    "min_distance": 1.0,
+    "max_distance": 40.0
+  },
+  "color_palette": {
+    "family": "history",
+    "primary": "#3D2914",
+    "accent": "#C9A66B",
+    "sky": "#87A8C7"
+  },
+  "lighting_presets": [
+    {
+      "id": "noon",
+      "recipe": "hard sun + short shadows",
+      "mood": "power"
+    },
+    {
+      "id": "golden",
+      "recipe": "golden hour rim on marble",
+      "mood": "nostalgia"
+    },
+    {
+      "id": "torch_night",
+      "recipe": "torch practicals + cool moonlight",
+      "mood": "drama"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "forum_wide",
+      "position": "plaza_center",
+      "angle": "low_hero",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "column_track",
+      "position": "colonnade",
+      "angle": "eye_level",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "statue_detail",
+      "position": "plinth_close",
+      "angle": "macro",
+      "lens_hint": "85mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "oratory",
+      "region": "forum_stage"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "forum_gate",
+      "to_compatible": [
+        "Medieval Village",
+        "Ancient Egypt",
+        "Museum"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.157671+00:00"
+}

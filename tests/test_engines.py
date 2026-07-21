@@ -20,7 +20,8 @@ PRODUCTION_LIVE = {
 RENDER_LIVE = {"image", "video", "render"}
 
 # Agent 8 — the Global Content Optimization Engine is live.
-OPTIMIZATION_LIVE = {"seo_optimization"}
+# Agent 13 — Autonomous Optimization & Experimentation Engine V4 is live.
+OPTIMIZATION_LIVE = {"seo_optimization", "optimization_lab"}
 
 # Agent 7 — the Publishing & Distribution Engine (+ scheduler) is live.
 PUBLISHING_LIVE = {"publishing", "scheduler"}
@@ -44,10 +45,8 @@ LIVE_KEYS = (
 )
 
 PLANNED_KEYS = {
-    "voice",
     # Contract stubs — light up when feature branches merge
     "brand_management",
-    "optimization_lab",      # Agent 13
     "character_universe",    # Agent 15
     "animation",             # Agent 16
 }
@@ -67,8 +66,9 @@ def test_intelligence_engines_ready_and_planned_engines_not():
 
 
 def test_planned_engines_return_not_implemented():
-    result = registry.get_engine("voice").run({})
-    assert result == {"voice_status": "not_implemented"}
+    result = registry.get_engine("animation").run({})
+    assert result == {"animation_status": "NOT_IMPLEMENTED"}
+    assert registry.get_engine("animation").is_ready() is False
 
 
 def test_new_engine_can_register_and_replace():

@@ -1,0 +1,31 @@
+{
+  "character_id": "CHAR-LUNA",
+  "emphasis": "subtle_anatomical_readability_not_bodybuilder",
+  "regions": [
+    "facial",
+    "neck",
+    "trapezius",
+    "deltoids",
+    "pectorals",
+    "upper_back",
+    "abdominal_wall",
+    "obliques",
+    "biceps",
+    "triceps",
+    "forearm",
+    "gluteal",
+    "quadriceps",
+    "hamstrings",
+    "calves",
+    "intrinsic_hand"
+  ],
+  "response_drivers": [
+    "joint_flexion",
+    "joint_extension",
+    "compression",
+    "stretching",
+    "weight_bearing",
+    "tension",
+    "relaxation"
+  ]
+}

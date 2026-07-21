@@ -13,17 +13,16 @@ idea for a different platform):
 
 Supported platforms: YouTube Shorts, TikTok, Instagram Reels, Facebook
 Reels, X video, and long-form YouTube (`services/scripts/platforms.py`).
+
+Import policy: heavy `generator` symbols are lazy-loaded so that
+`import engines` / AI Director / hooks cannot circularly initialize this
+package while `engines.script_generation` is still importing.
 """
 
 from __future__ import annotations
 
-from services.scripts.generator import (
-    DEFAULT_VARIANT_COUNT,
-    VARIANT_STYLES,
-    estimate_runtime_sec,
-    finalize_variant,
-    generate_variants,
-)
+from typing import Any
+
 from services.scripts.hooks import HOOK_STYLES, generate_hook_candidates, rank_hooks
 from services.scripts.models import (
     DEFAULT_LOCALE,
@@ -45,6 +44,9 @@ from services.scripts.retention import build_retention_model
 from services.scripts.scorer import VARIANT_SCORE_WEIGHTS, rank_variants, score_variant
 from services.scripts.sections import SECTION_SPECS, build_section
 from services.scripts.structure import STRUCTURED_SCRIPT_FIELDS, build_structured_script
+
+# Keep package-level default aligned with generator.DEFAULT_VARIANT_COUNT without importing it.
+DEFAULT_VARIANT_COUNT = 3
 
 __all__ = [
     "DEFAULT_LOCALE",
@@ -78,6 +80,23 @@ __all__ = [
     "score_variant",
 ]
 
+_GENERATOR_EXPORTS = frozenset(
+    {
+        "VARIANT_STYLES",
+        "estimate_runtime_sec",
+        "finalize_variant",
+        "generate_variants",
+    }
+)
+
+
+def __getattr__(name: str) -> Any:
+    if name in _GENERATOR_EXPORTS:
+        from services.scripts import generator as _generator
+
+        return getattr(_generator, name)
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
+
 
 def generate_script_package(
     idea: dict,
@@ -90,6 +109,8 @@ def generate_script_package(
     locale: "Locale | dict | None" = None,
 ) -> dict:
     """Generate + score script variants for one idea; return a JSON-safe package."""
+    from services.scripts.generator import generate_variants
+
     variants = generate_variants(
         idea,
         platform=platform,

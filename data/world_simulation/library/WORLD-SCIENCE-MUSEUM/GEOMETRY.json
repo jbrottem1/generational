@@ -1,0 +1,174 @@
+{
+  "world_id": "WORLD-SCIENCE-MUSEUM",
+  "elements_required": [
+    "floor",
+    "walls",
+    "ceilings",
+    "doors",
+    "windows",
+    "furniture",
+    "props"
+  ],
+  "dimensions_m": {
+    "x": 30.0,
+    "y": 12.0,
+    "z": 24.0
+  },
+  "floor": [
+    {
+      "id": "main_floor",
+      "bounds": [
+        [
+          -15.0,
+          0,
+          -12.0
+        ],
+        [
+          15.0,
+          0,
+          12.0
+        ]
+      ],
+      "walkable": true,
+      "material": "interior_floor"
+    }
+  ],
+  "walls": [
+    {
+      "id": "wall_n",
+      "plane": "north",
+      "openings": [
+        "window_n"
+      ]
+    },
+    {
+      "id": "wall_s",
+      "plane": "south",
+      "openings": [
+        "door_main"
+      ]
+    },
+    {
+      "id": "wall_e",
+      "plane": "east",
+      "openings": []
+    },
+    {
+      "id": "wall_w",
+      "plane": "west",
+      "openings": [
+        "window_w"
+      ]
+    }
+  ],
+  "ceilings": [
+    {
+      "id": "main_ceiling",
+      "height_m": 12.0,
+      "material": "acoustic_or_structural"
+    }
+  ],
+  "doors": [
+    {
+      "id": "door_main",
+      "position": [
+        0.0,
+        0.0,
+        -11.9
+      ],
+      "swing": "inward",
+      "interactable": true
+    }
+  ],
+  "windows": [
+    {
+      "id": "window_n",
+      "position": [
+        0.0,
+        6.6000000000000005,
+        11.95
+      ]
+    },
+    {
+      "id": "window_w",
+      "position": [
+        -14.95,
+        6.6000000000000005,
+        0.0
+      ]
+    }
+  ],
+  "furniture": [
+    {
+      "id": "furn_exhibit_plinths_0",
+      "type": "exhibit",
+      "position": [
+        -7.5,
+        0.0,
+        -3.5999999999999996
+      ],
+      "collision": true,
+      "navigable_around": true
+    },
+    {
+      "id": "furn_benches_1",
+      "type": "bench",
+      "position": [
+        -1.5,
+        0.0,
+        -3.5999999999999996
+      ],
+      "collision": true,
+      "navigable_around": true
+    }
+  ],
+  "props": [
+    {
+      "id": "prop_exhibit_0",
+      "type": "exhibit",
+      "position": [
+        -7.5,
+        0.0,
+        -2.3999999999999995
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_hologram_1",
+      "type": "hologram",
+      "position": [
+        -1.5,
+        0.0,
+        -2.3999999999999995
+      ],
+      "collision": false,
+      "interactable": true
+    },
+    {
+      "id": "prop_door_2",
+      "type": "door",
+      "position": [
+        4.5,
+        0.0,
+        -2.3999999999999995
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_rotating_globe_3",
+      "type": "rotating_globe",
+      "position": [
+        -7.5,
+        0.0,
+        -0.9999999999999998
+      ],
+      "collision": true,
+      "interactable": true
+    }
+  ],
+  "not_a_flat_image": true,
+  "explorable_volume": true,
+  "persistent": true
+}

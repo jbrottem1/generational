@@ -1,0 +1,454 @@
+{
+  "objects": [
+    {
+      "object_id": "furn_teaching_console_0",
+      "object_type": "console",
+      "properties_required": [
+        "mass",
+        "center_of_gravity",
+        "collision_volume",
+        "material",
+        "friction",
+        "interaction_zones"
+      ],
+      "mass_kg": 12.0,
+      "center_of_gravity": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "collision_volume": {
+        "shape": "box",
+        "enabled": true
+      },
+      "material": "metal_glass",
+      "friction": 0.6,
+      "interaction_zones": [
+        {
+          "id": "primary",
+          "radius_m": 0.15,
+          "actions": [
+            "touch",
+            "grasp",
+            "use"
+          ]
+        },
+        {
+          "id": "approach",
+          "radius_m": 0.9,
+          "actions": [
+            "approach"
+          ]
+        }
+      ],
+      "holdable": false,
+      "forbid_float": true,
+      "forbid_clip_through": true
+    },
+    {
+      "object_id": "furn_analysis_desk_1",
+      "object_type": "desk",
+      "properties_required": [
+        "mass",
+        "center_of_gravity",
+        "collision_volume",
+        "material",
+        "friction",
+        "interaction_zones"
+      ],
+      "mass_kg": 40.0,
+      "center_of_gravity": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "collision_volume": {
+        "shape": "box",
+        "enabled": true
+      },
+      "material": "wood_metal",
+      "friction": 0.75,
+      "interaction_zones": [
+        {
+          "id": "primary",
+          "radius_m": 0.15,
+          "actions": [
+            "touch",
+            "grasp",
+            "use"
+          ]
+        },
+        {
+          "id": "approach",
+          "radius_m": 0.9,
+          "actions": [
+            "approach"
+          ]
+        }
+      ],
+      "holdable": false,
+      "forbid_float": true,
+      "forbid_clip_through": true
+    },
+    {
+      "object_id": "furn_stool_chair_2",
+      "object_type": "chair",
+      "properties_required": [
+        "mass",
+        "center_of_gravity",
+        "collision_volume",
+        "material",
+        "friction",
+        "interaction_zones"
+      ],
+      "mass_kg": 8.0,
+      "center_of_gravity": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "collision_volume": {
+        "shape": "box",
+        "enabled": true
+      },
+      "material": "wood_fabric",
+      "friction": 0.7,
+      "interaction_zones": [
+        {
+          "id": "primary",
+          "radius_m": 0.15,
+          "actions": [
+            "touch",
+            "grasp",
+            "use"
+          ]
+        },
+        {
+          "id": "approach",
+          "radius_m": 0.9,
+          "actions": [
+            "approach"
+          ]
+        }
+      ],
+      "holdable": false,
+      "forbid_float": true,
+      "forbid_clip_through": true
+    },
+    {
+      "object_id": "furn_equipment_rack_3",
+      "object_type": "equipment_rack",
+      "properties_required": [
+        "mass",
+        "center_of_gravity",
+        "collision_volume",
+        "material",
+        "friction",
+        "interaction_zones"
+      ],
+      "mass_kg": 1.0,
+      "center_of_gravity": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "collision_volume": {
+        "shape": "box",
+        "enabled": true
+      },
+      "material": "generic",
+      "friction": 0.5,
+      "interaction_zones": [
+        {
+          "id": "primary",
+          "radius_m": 0.15,
+          "actions": [
+            "touch",
+            "grasp",
+            "use"
+          ]
+        },
+        {
+          "id": "approach",
+          "radius_m": 0.9,
+          "actions": [
+            "approach"
+          ]
+        }
+      ],
+      "holdable": true,
+      "forbid_float": true,
+      "forbid_clip_through": true
+    },
+    {
+      "object_id": "prop_microscope_0",
+      "object_type": "microscope",
+      "properties_required": [
+        "mass",
+        "center_of_gravity",
+        "collision_volume",
+        "material",
+        "friction",
+        "interaction_zones"
+      ],
+      "mass_kg": 4.5,
+      "center_of_gravity": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "collision_volume": {
+        "shape": "box",
+        "enabled": true
+      },
+      "material": "metal_glass",
+      "friction": 0.65,
+      "interaction_zones": [
+        {
+          "id": "primary",
+          "radius_m": 0.15,
+          "actions": [
+            "touch",
+            "grasp",
+            "use"
+          ]
+        },
+        {
+          "id": "approach",
+          "radius_m": 0.9,
+          "actions": [
+            "approach"
+          ]
+        }
+      ],
+      "holdable": false,
+      "forbid_float": true,
+      "forbid_clip_through": true
+    },
+    {
+      "object_id": "prop_hologram_1",
+      "object_type": "hologram",
+      "properties_required": [
+        "mass",
+        "center_of_gravity",
+        "collision_volume",
+        "material",
+        "friction",
+        "interaction_zones"
+      ],
+      "mass_kg": 0.0,
+      "center_of_gravity": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "collision_volume": {
+        "shape": "none",
+        "enabled": false
+      },
+      "material": "volumetric_light",
+      "friction": 0.0,
+      "interaction_zones": [
+        {
+          "id": "primary",
+          "radius_m": 0.15,
+          "actions": [
+            "touch",
+            "grasp",
+            "use"
+          ]
+        },
+        {
+          "id": "approach",
+          "radius_m": 0.9,
+          "actions": [
+            "approach"
+          ]
+        }
+      ],
+      "holdable": false,
+      "forbid_float": false,
+      "forbid_clip_through": false
+    },
+    {
+      "object_id": "prop_whiteboard_2",
+      "object_type": "whiteboard",
+      "properties_required": [
+        "mass",
+        "center_of_gravity",
+        "collision_volume",
+        "material",
+        "friction",
+        "interaction_zones"
+      ],
+      "mass_kg": 18.0,
+      "center_of_gravity": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "collision_volume": {
+        "shape": "box",
+        "enabled": true
+      },
+      "material": "composite",
+      "friction": 0.5,
+      "interaction_zones": [
+        {
+          "id": "primary",
+          "radius_m": 0.15,
+          "actions": [
+            "touch",
+            "grasp",
+            "use"
+          ]
+        },
+        {
+          "id": "approach",
+          "radius_m": 0.9,
+          "actions": [
+            "approach"
+          ]
+        }
+      ],
+      "holdable": false,
+      "forbid_float": true,
+      "forbid_clip_through": true
+    },
+    {
+      "object_id": "prop_door_3",
+      "object_type": "door",
+      "properties_required": [
+        "mass",
+        "center_of_gravity",
+        "collision_volume",
+        "material",
+        "friction",
+        "interaction_zones"
+      ],
+      "mass_kg": 35.0,
+      "center_of_gravity": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "collision_volume": {
+        "shape": "box",
+        "enabled": true
+      },
+      "material": "wood_metal",
+      "friction": 0.5,
+      "interaction_zones": [
+        {
+          "id": "primary",
+          "radius_m": 0.15,
+          "actions": [
+            "touch",
+            "grasp",
+            "use"
+          ]
+        },
+        {
+          "id": "approach",
+          "radius_m": 0.9,
+          "actions": [
+            "approach"
+          ]
+        }
+      ],
+      "holdable": false,
+      "forbid_float": true,
+      "forbid_clip_through": true
+    },
+    {
+      "object_id": "prop_medical_scanner_4",
+      "object_type": "medical_scanner",
+      "properties_required": [
+        "mass",
+        "center_of_gravity",
+        "collision_volume",
+        "material",
+        "friction",
+        "interaction_zones"
+      ],
+      "mass_kg": 1.0,
+      "center_of_gravity": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "collision_volume": {
+        "shape": "box",
+        "enabled": true
+      },
+      "material": "generic",
+      "friction": 0.5,
+      "interaction_zones": [
+        {
+          "id": "primary",
+          "radius_m": 0.15,
+          "actions": [
+            "touch",
+            "grasp",
+            "use"
+          ]
+        },
+        {
+          "id": "approach",
+          "radius_m": 0.9,
+          "actions": [
+            "approach"
+          ]
+        }
+      ],
+      "holdable": true,
+      "forbid_float": true,
+      "forbid_clip_through": true
+    },
+    {
+      "object_id": "door_main",
+      "object_type": "door",
+      "properties_required": [
+        "mass",
+        "center_of_gravity",
+        "collision_volume",
+        "material",
+        "friction",
+        "interaction_zones"
+      ],
+      "mass_kg": 35.0,
+      "center_of_gravity": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "collision_volume": {
+        "shape": "box",
+        "enabled": true
+      },
+      "material": "wood_metal",
+      "friction": 0.5,
+      "interaction_zones": [
+        {
+          "id": "primary",
+          "radius_m": 0.15,
+          "actions": [
+            "touch",
+            "grasp",
+            "use"
+          ]
+        },
+        {
+          "id": "approach",
+          "radius_m": 0.9,
+          "actions": [
+            "approach"
+          ]
+        }
+      ],
+      "holdable": false,
+      "forbid_float": true,
+      "forbid_clip_through": true
+    }
+  ]
+}

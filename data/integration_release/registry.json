@@ -32,7 +32,7 @@
       "id": "GATE-EXECUTION",
       "name": "Local-first execution gate",
       "path": "services/media_production/execution_mode.py",
-      "target": "cloud plan-only; local verified Desktop export"
+      "target": "local-only render + verified Desktop export under media library"
     },
     {
       "id": "GATE-OS",

@@ -10,25 +10,33 @@ from __future__ import annotations
 from engines import registry
 from engines.ai_director import AiDirectorEngine
 from engines.analytics import AnalyticsEngine
+from engines.animation import AnimationEngine
 from engines.asset_manager import AssetManagerEngine
 from engines.attention_graph import AttentionGraphEngine
+from engines.audience_intelligence import AudienceIntelligenceEngine
 from engines.base import Engine, PlannedEngine
 from engines.citation import CitationEngine
 from engines.cinematography import CinematographyEngine
+from engines.continuous_learning import ContinuousLearningEngine
 from engines.contracts import ContractEngine, FutureEngine
 from engines.future_stubs import (
-    AnimationEngine,
     BrandManagementEngine,
     CharacterUniverseEngine,
-    OptimizationLabEngine,
 )
 from engines.critic import CriticEngine
+from engines.discovery_engine import DiscoveryEngine
+from engines.evidence_intelligence import EvidenceIntelligenceEngine
+from engines.executive_orchestrator import ExecutiveOrchestratorEngine
 from engines.ideation import IdeationEngine
 from engines.image import ImageEngine
 from engines.learning import LearningEngine
 from engines.narration import NarrationEngine
 from engines.opportunity_ranking import OpportunityRankingEngine
+from engines.optimization_lab import OptimizationLabEngine
+from engines.production_pipeline import ProductionPipelineEngine
+from engines.production_operations import ProductionOperationsEngine
 from engines.psychology import PsychologyEngine
+from engines.production_qa import ProductionQAEngine
 from engines.publishing import PublishingEngine, SchedulerEngine
 from engines.publishing_queue import PublishingQueueEngine
 from engines.quality import QualityEngine
@@ -52,6 +60,8 @@ from engines.post_production import PostProductionEngine
 from engines.trend_discovery import TrendDiscoveryEngine
 from engines.trend_forecasting import TrendForecastingEngine
 from engines.video import VideoEngine
+from engines.viewer_retention import ViewerRetentionEngine
+from engines.studio_render import StudioRenderEngine
 from engines.visual_intelligence import VisualIntelligenceEngine
 from engines.visual_planning import VisualPlanningEngine
 from engines.voice import VoiceEngine
@@ -60,7 +70,12 @@ from engines.voice_audio import VoiceAudioEngine
 __all__ = ["Engine", "PlannedEngine", "ContractEngine", "FutureEngine", "registry"]
 
 for _engine_class in (
+    ExecutiveOrchestratorEngine,
+    ProductionPipelineEngine,
+    ProductionOperationsEngine,
+    ContinuousLearningEngine,
     TrendDiscoveryEngine,
+    DiscoveryEngine,
     OpportunityRankingEngine,
     TrendForecastingEngine,
     MarketIntelligenceEngine,
@@ -71,9 +86,12 @@ for _engine_class in (
     ResearchEngine,
     IdeationEngine,
     PsychologyEngine,
+    AudienceIntelligenceEngine,
     ScriptGenerationEngine,
+    EvidenceIntelligenceEngine,
     VisualIntelligenceEngine,
     CinematographyEngine,
+    ViewerRetentionEngine,
     VoiceAudioEngine,
     AttentionGraphEngine,
     RankingEngine,
@@ -84,6 +102,7 @@ for _engine_class in (
     SeoEngine,
     ThreatDetectionEngine,
     QualityEngine,
+    ProductionQAEngine,
     ScenePlanningEngine,
     NarrationEngine,
     VisualPlanningEngine,
@@ -91,6 +110,7 @@ for _engine_class in (
     SubtitleEngine,
     TimelineEngine,
     RenderPackageEngine,
+    StudioRenderEngine,
     PublishingQueueEngine,
     VoiceEngine,
     ImageEngine,

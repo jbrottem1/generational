@@ -1,0 +1,171 @@
+{
+  "audit_version": "1.0.0",
+  "sufficient_for_golden_motion": false,
+  "skeletal_runtime_ready": false,
+  "required_features": [
+    "skeletal_animation",
+    "joint_transforms",
+    "inverse_kinematics",
+    "facial_blendshapes_or_bones",
+    "lip_synchronization",
+    "object_constraints",
+    "collision_handling",
+    "foot_planting",
+    "character_locomotion",
+    "cloth_or_secondary_motion",
+    "animated_cameras",
+    "persistent_3d_environments"
+  ],
+  "feature_matrix": {
+    "skeletal_animation": {
+      "true_motion": false,
+      "external_runtime_available": false,
+      "skinned_asset_available": false,
+      "status": "unavailable",
+      "native_execution": false
+    },
+    "joint_transforms": {
+      "true_motion": false,
+      "external_runtime_available": false,
+      "skinned_asset_available": false,
+      "status": "unavailable",
+      "native_execution": false
+    },
+    "inverse_kinematics": {
+      "true_motion": false,
+      "external_runtime_available": false,
+      "skinned_asset_available": false,
+      "status": "unavailable",
+      "native_execution": false
+    },
+    "facial_blendshapes_or_bones": {
+      "true_motion": false,
+      "external_runtime_available": false,
+      "skinned_asset_available": false,
+      "status": "unavailable",
+      "native_execution": false
+    },
+    "lip_synchronization": {
+      "true_motion": false,
+      "external_runtime_available": false,
+      "skinned_asset_available": false,
+      "status": "unavailable",
+      "native_execution": false
+    },
+    "object_constraints": {
+      "true_motion": false,
+      "external_runtime_available": false,
+      "skinned_asset_available": false,
+      "status": "unavailable",
+      "native_execution": false
+    },
+    "collision_handling": {
+      "true_motion": false,
+      "external_runtime_available": false,
+      "skinned_asset_available": false,
+      "status": "unavailable",
+      "native_execution": false
+    },
+    "foot_planting": {
+      "true_motion": false,
+      "external_runtime_available": false,
+      "skinned_asset_available": false,
+      "status": "unavailable",
+      "native_execution": false
+    },
+    "character_locomotion": {
+      "true_motion": false,
+      "external_runtime_available": false,
+      "skinned_asset_available": false,
+      "status": "unavailable",
+      "native_execution": false
+    },
+    "cloth_or_secondary_motion": {
+      "true_motion": false,
+      "external_runtime_available": false,
+      "skinned_asset_available": false,
+      "status": "unavailable",
+      "native_execution": false
+    },
+    "animated_cameras": {
+      "true_motion": true,
+      "external_runtime_available": false,
+      "skinned_asset_available": false,
+      "status": "approximated_only",
+      "native_execution": false
+    },
+    "persistent_3d_environments": {
+      "true_motion": false,
+      "external_runtime_available": false,
+      "skinned_asset_available": false,
+      "status": "unavailable",
+      "native_execution": false
+    }
+  },
+  "true_motion": {
+    "renderer_id": "true_motion",
+    "module": "services/media_production/true_motion.py",
+    "class": "ffmpeg_layered_still_compositor",
+    "supports": {
+      "skeletal_animation": false,
+      "joint_transforms": false,
+      "inverse_kinematics": false,
+      "facial_blendshapes_or_bones": false,
+      "lip_synchronization": false,
+      "object_constraints": false,
+      "collision_handling": false,
+      "foot_planting": false,
+      "character_locomotion": false,
+      "cloth_or_secondary_motion": false,
+      "animated_cameras": true,
+      "persistent_3d_environments": false
+    },
+    "mechanism": [
+      "PNG character plate overlay",
+      "environment plate zoompan or procedural lavfi background",
+      "ffmpeg overlay x/y expressions (sin drift / linear travel)",
+      "post-composite camera crop/scale"
+    ],
+    "insufficient_for_golden_motion": true,
+    "reason": "true_motion animates cameras and layered still images. It does not drive a skeletal rig, joints, IK, blendshapes, object constraints, or persistent 3D geometry."
+  },
+  "planning_packages": {
+    "director_package": "services/cinematic_direction_studio (plans)",
+    "character_performance_package": "services/character_performance_engine (plans)",
+    "character_rig_package": "services/character_rig_studio (JSON hierarchy/spec)",
+    "world_package": "services/stage_world_simulation (nav/interaction contracts)",
+    "interaction_package": "services/physics_interaction (contracts)",
+    "doctor_animation_clips": "JSON phase labels \u2014 not joint keyframe curves",
+    "doctor_rig_specification": "humanoid_ik_fk_hybrid_spec \u2014 specification only",
+    "executable_skinned_mesh": false
+  },
+  "skeletal_assets": {
+    "found": [],
+    "count": 0,
+    "has_skinned_mesh": false
+  },
+  "external_runtimes": {
+    "cli": {
+      "blender": false,
+      "godot": false,
+      "ffmpeg": true
+    },
+    "cli_paths": {
+      "ffmpeg": "/opt/homebrew/bin/ffmpeg"
+    },
+    "applications": [],
+    "python_bpy": false
+  },
+  "verdict": "INSUFFICIENT \u2014 no skeletal animation runtime and no skinned mesh assets are available. true_motion is an ffmpeg layered still compositor. Do not produce a Golden Motion MP4 that fakes skeletal performance.",
+  "required_integration": {
+    "runtime_options": [
+      "Blender (bpy) headless + DOCTOR_001 skinned GLB/FBX",
+      "Godot 4 AnimationPlayer + GLTF character",
+      "Unreal Engine Sequencer / Control Rig",
+      "Unity Timeline + Humanoid Animator",
+      "Cloud skeletal provider (e.g. dedicated character animation API) returning mesh-deformed frame sequences"
+    ],
+    "asset_gap": "DOCTOR_001 needs a permanent skinned mesh + facial blendshapes/bones bound to CHARACTER_RIG_PACKAGE hierarchy \u2014 not plates alone.",
+    "architecture_note": "Frozen architecture keeps planning packages; this layer is the adapter. A new renderer product is not invented here \u2014 an external skeletal runtime must be selected and integrated via the adapter."
+  }
+}

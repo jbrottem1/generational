@@ -50,6 +50,7 @@ class ProductionManifest:
     brief_path: str = ""
     render_package_path: str = ""
     local_render_status: str = "pending"
+    final_status: str = "PENDING"
     verification: dict[str, Any] = field(default_factory=dict)
 
     def touch(self, **updates: Any) -> None:
@@ -100,12 +101,26 @@ def update_manifest_from_export(
     file_hash: str = "",
     companion_path: str = "",
     library_filename: str = "",
+    final_status: str | None = None,
+    publishing_status: str | None = None,
+    local_render_status: str | None = None,
 ) -> ProductionManifest:
     manifest = load_manifest(project_id) or ProductionManifest(project_id=project_id)
+    absolute = str(Path(export_path).resolve())
+    verified_ok = bool(verification.get("ok"))
+    resolved_final = final_status or (
+        "SUCCESS" if verified_ok else "FAILED"
+    )
+    resolved_publishing = publishing_status or (
+        "ready_for_review" if verified_ok else "qc_failed"
+    )
+    resolved_local = local_render_status or (
+        "verified" if verified_ok else "failed"
+    )
     manifest.touch(
         title=title or manifest.title or manifest.subject,
         topic=topic or manifest.topic or manifest.subject,
-        export_path=str(export_path),
+        export_path=absolute,
         export_domain_folder=domain_folder,
         library_filename=library_filename,
         secondary_categories=list(secondary_categories or []),
@@ -117,8 +132,9 @@ def update_manifest_from_export(
         render_duration_sec=render_duration_sec,
         pipeline_stage="export",
         layer="local_production",
-        local_render_status="verified" if verification.get("ok") else "failed",
-        publishing_status="ready_for_review" if verification.get("ok") else "qc_failed",
+        local_render_status=resolved_local,
+        publishing_status=resolved_publishing,
+        final_status=resolved_final,
     )
     save_manifest(manifest)
     return manifest

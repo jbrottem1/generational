@@ -13,7 +13,7 @@ and video.
 
 from __future__ import annotations
 
-from engines.heuristics import clamp
+from core.heuristics import clamp
 from services.audio.models import AudioSceneCue
 from services.audio.music import build_audio_mood, build_music_direction
 from services.audio.narration import build_narration_plan

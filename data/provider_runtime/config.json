@@ -6,7 +6,7 @@
   "cache_ttl_sec": 3600,
   "versions": {
     "openai": {"model": "gpt-4o-mini", "api_version": "v1"},
-    "anthropic": {"model": "claude-3-5-sonnet-20241022", "api_version": "2023-06-01"},
+    "anthropic": {"model": "claude-haiku-4-5-20251001", "api_version": "2023-06-01"},
     "google_gemini": {"model": "gemini-1.5-flash", "api_version": "v1beta"}
   },
   "providers": {

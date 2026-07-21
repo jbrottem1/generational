@@ -1,0 +1,73 @@
+{
+  "world_id": "WORLD-DNA_INTERIOR",
+  "production_id": "dna_t",
+  "object_positions": {
+    "obj_base_pair_rung": {
+      "position": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.4
+      },
+      "zone": "",
+      "surface": "helix",
+      "anchored": true
+    },
+    "obj_enzyme_motif": {
+      "position": {
+        "x": 0.45,
+        "y": 0.55,
+        "z": 0.35
+      },
+      "zone": "",
+      "surface": "helix",
+      "anchored": true
+    }
+  },
+  "environment_state": {
+    "architecture": [
+      "double helix rails",
+      "base-pair bridges"
+    ],
+    "scale": "molecular",
+    "zones": []
+  },
+  "time_of_day": "day",
+  "weather": "molecular_haze",
+  "damage": {},
+  "introduced_objects": [],
+  "visited_zones": [
+    "main"
+  ],
+  "doors": {},
+  "displays": {},
+  "characters_present": [
+    "talent"
+  ],
+  "events": [
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T03:31:27.416626+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "main"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T03:31:40.021524+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "main"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T03:44:18.671447+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "main"
+      }
+    }
+  ],
+  "version": 4
+}

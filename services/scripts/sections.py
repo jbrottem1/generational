@@ -16,7 +16,7 @@ charged concept gets a hotter emotional curve than a data-driven one.
 
 from __future__ import annotations
 
-from engines.heuristics import clamp
+from core.heuristics import clamp
 from services.scripts.models import SCRIPT_SECTION_KEYS
 
 # Per-section production direction. `share` is the fraction of the body

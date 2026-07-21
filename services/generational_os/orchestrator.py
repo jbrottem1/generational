@@ -1,4 +1,4 @@
-"""Generational OS orchestrator — brief → package → local handoff."""
+"""Generational OS orchestrator — brief → package → local render."""
 
 from __future__ import annotations
 
@@ -8,7 +8,7 @@ from typing import Any
 from services.generational_os.brief import build_production_brief, write_production_brief
 from services.generational_os.dashboard import write_dashboard
 from services.generational_os.render_package import build_render_package, write_render_package
-from services.media_production.execution_mode import get_execution_context, should_render_media
+from services.media_production.execution_mode import get_execution_context, local_status_message
 
 
 def prepare_production(
@@ -30,7 +30,7 @@ def prepare_production(
     brief_path: Path | None = None,
     package_path: Path | None = None,
 ) -> dict[str, Any]:
-    """Cloud path: Intelligence + Pre-Production artifacts. Local: signals proceed."""
+    """Write Intelligence + Pre-Production artifacts and authorize local render."""
     brief = build_production_brief(
         project_id=project_id,
         title=title,
@@ -65,23 +65,14 @@ def prepare_production(
     write_dashboard()
 
     ctx = get_execution_context()
-    if should_render_media():
-        return {
-            "proceed": True,
-            "mode": ctx.mode.value,
-            "brief_path": str(brief_out),
-            "render_package_path": str(package_out),
-            "message": "Local render authorized.",
-        }
-
     return {
-        "proceed": False,
+        "proceed": True,
         "ok": True,
-        "status": "awaiting_local_render",
-        "message": "Production package prepared. Awaiting local render.",
+        "status": "ready_to_render",
         "mode": ctx.mode.value,
         "brief_path": str(brief_out),
         "render_package_path": str(package_out),
+        "message": local_status_message(),
         "local_command": package.get("local_command"),
         "export": package.get("export"),
     }
