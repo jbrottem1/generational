@@ -19,18 +19,19 @@ from engines.render.models import (
 
 # Readiness weight per check — blockers weigh more than polish. Sum == 1.0.
 CHECK_WEIGHTS = {
-    "scenes_present": 0.15,
-    "scenes_have_visuals": 0.20,
-    "scenes_have_narration": 0.20,
-    "captions_exist": 0.10,
-    "audio_plan_exists": 0.10,
-    "runtime_reasonable": 0.10,
+    "scenes_present": 0.10,
+    "scenes_have_visuals": 0.10,
+    "scenes_have_validated_media": 0.25,
+    "scenes_have_narration": 0.15,
+    "captions_exist": 0.08,
+    "audio_plan_exists": 0.08,
+    "runtime_reasonable": 0.07,
     "output_format_supported": 0.05,
-    "assets_resolved": 0.10,
+    "assets_resolved": 0.12,
 }
 
 # Checks that FAIL the package outright (nothing to render without them).
-_BLOCKING_CHECKS = ("scenes_present",)
+_BLOCKING_CHECKS = ("scenes_present", "scenes_have_validated_media", "assets_resolved")
 
 
 class RenderValidator:
@@ -89,6 +90,23 @@ class RenderValidator:
             else f"Scenes without any visual source: {without_visuals}.",
         )
 
+        # Hard media gate — prompts alone are insufficient; refuse blank renders.
+        try:
+            from services.media_production.visual_qa import validate_scene_visuals
+
+            qa = validate_scene_visuals(scene_render_plan, require_all=True)
+            record(
+                "scenes_have_validated_media",
+                bool(qa.get("ok")),
+                (
+                    f"Validated on-disk media for {qa.get('passed', 0)}/{qa.get('total_scenes', 0)} scenes."
+                    if qa.get("ok")
+                    else qa.get("error") or "One or more scenes lack validated media files."
+                ),
+            )
+        except Exception as exc:  # noqa: BLE001
+            record("scenes_have_validated_media", False, f"Visual QA crashed: {exc}")
+
         without_narration = [
             plan["scene_id"] for plan in scene_render_plan if not plan.get("narration", "").strip()
         ]
@@ -144,9 +162,9 @@ class RenderValidator:
         record(
             "assets_resolved",
             not missing_assets,
-            "All asset requests were fulfilled."
+            "All asset requests were fulfilled with on-disk media."
             if not missing_assets
-            else f"{len(missing_assets)} asset(s) missing (placeholders in use): "
+            else f"{len(missing_assets)} asset(s) missing — refusing placeholder/color-bed success: "
             + ", ".join(
                 f"scene {item.get('scene_number', 0)} ({item.get('source', '?')})"
                 for item in missing_assets

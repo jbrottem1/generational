@@ -64,7 +64,7 @@ def test_mock_renderer_empty_timeline():
     assert result["mock_output_path"] == ""
 
 
-def test_mock_renderer_reserves_path_without_ffmpeg(monkeypatch):
+def test_mock_renderer_fails_closed_without_real_media(monkeypatch):
     monkeypatch.setattr(
         "services.media_production.ffmpeg_assembler.find_ffmpeg",
         lambda: "",
@@ -75,14 +75,16 @@ def test_mock_renderer_reserves_path_without_ffmpeg(monkeypatch):
             "segments": [{"scene_id": 1, "start_time": 0, "end_time": 5, "duration": 5}],
             "total_duration_sec": 5.0,
         },
-        scene_render_plan=[{"scene_id": 1, "resolved_asset": {"path": "mock://x.png"}}],
+        scene_render_plan=[{"scene_id": 1, "resolved_asset": {"path": "mock://x.png", "placeholder": True}}],
         caption_render_plan={"segments": [{"text": "hi"}]},
         audio_mix_plan={"tracks": {"narration": {"segments": []}, "sfx": {"cues": []}, "transitions": {"cues": []}, "music": {"ducking": {"enabled": True}}}},
         missing_assets=[],
     )
+    # Visual Pipeline V2: mock:// placeholders must not reserve a fake success path.
     assert result["mock"] is True
-    assert result["mock_output_path"].endswith(".mp4")
-    assert "1080x1920" in result["mock_output_path"] or "x" in result["mock_output_path"]
+    assert result["render_status"] == "FAILED"
+    assert result["mp4_path"] == ""
+    assert result["mock_output_path"] == ""
 
 
 def test_ffmpeg_assembler_writes_real_mp4_when_ffmpeg_present(tmp_path):

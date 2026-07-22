@@ -54,7 +54,12 @@ class OpenAIImagesConnector(ProductionConnector):
                 "n": 1,
                 "size": size,
             }
-            # gpt-image models may require response_format differently; keep minimal body
+            # Prefer durable bytes so persistence never depends on expiring CDN URLs.
+            # gpt-image models return b64 by default; dall-e accepts response_format.
+            if model.startswith("dall-e"):
+                body["response_format"] = str(
+                    request.payload.get("response_format") or "b64_json"
+                )
             resp = self.http("POST", "/images/generations", json_body=body, timeout_sec=request.timeout_sec)
             if not resp.ok:
                 last_error = f"OpenAI Images error ({model}/{size}): {resp.status} {resp.body}"

@@ -230,6 +230,8 @@ def assemble_mp4(
     log: list[str] = []
 
     if not visuals:
+        # Production default: never synthesize blank colored frames.
+        # allow_color_bed remains only for explicit legacy/test callers.
         if not allow_color_bed:
             return {
                 "ok": False,
@@ -239,6 +241,10 @@ def assemble_mp4(
                 "log": ["rejected_color_bed"],
                 "visual_count": 0,
             }
+        logger.error(
+            "ffmpeg.color_bed_used | title=%s — legacy allow_color_bed=True path",
+            title,
+        )
         cmd = [
             ffmpeg, "-y",
             "-f", "lavfi",
@@ -249,7 +255,7 @@ def assemble_mp4(
         else:
             cmd += ["-an"]
         cmd += ["-c:v", "libx264", "-pix_fmt", "yuv420p", str(out)]
-        log.append("color_bed→mp4 (no visual assets resolved)")
+        log.append("color_bed→mp4 (explicit allow_color_bed=True only)")
         return _run_ffmpeg(cmd, out, output_path, duration, width, height, fps, ffmpeg, log, visuals, audio, timeout_sec)
 
     # Distribute timeline duration across scenes proportionally
