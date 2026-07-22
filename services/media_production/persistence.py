@@ -116,10 +116,19 @@ def persist_image_payload(data: dict[str, Any], *, name: str = "image") -> dict[
             out["placeholder"] = False
             out["status"] = "generated"
             return out
-        if Path(url).exists():
-            out["path"] = url
+        candidate = Path(url)
+        if not candidate.is_absolute():
+            candidate = ROOT / url
+        if candidate.exists() and candidate.stat().st_size >= 1024:
+            out["path"] = str(candidate if candidate.is_absolute() else url)
             out["placeholder"] = False
             out["status"] = "generated"
+            return out
+    # Explicitly clear fake URIs so downstream never treats them as files.
+    if str(out.get("path") or "").startswith(("mock://", "runtime://")):
+        out["path"] = ""
+        out["placeholder"] = True
+        out["status"] = "failed"
     return out
 
 

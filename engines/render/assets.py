@@ -52,20 +52,73 @@ class AssetFulfiller(ABC):
         }
 
 
+def _has_real_file(asset: dict) -> bool:
+    from pathlib import Path
+
+    from services.media_production.persistence import absolute_media_path
+
+    raw = str(asset.get("path") or asset.get("local_path") or "")
+    if not raw or raw.startswith(("mock://", "runtime://", "http://", "https://")):
+        return False
+    if asset.get("placeholder") and not asset.get("approved_fallback_visual"):
+        return False
+    path = absolute_media_path(raw)
+    if path is None:
+        candidate = Path(raw)
+        path = candidate if candidate.exists() else None
+    return bool(path and path.exists() and path.stat().st_size >= 1024)
+
+
 class AIImageFulfiller(AssetFulfiller):
     source = "ai_image"
     asset_kind = "image"
 
     def fulfil(self, request: dict) -> dict:
         asset = self._base_asset(request)
+        prompt = request.get("prompt", "") or request.get("query", "")
         generated = runtime_generate_image(
-            request.get("prompt", ""), {"width": 1080, "height": 1920}
+            prompt, {"width": 1080, "height": 1920, "name": f"scene_{request.get('scene_number', 0)}"}
         ) or {}
         asset.update(generated)
         asset["source"] = self.source
-        if generated.get("path") and not str(generated.get("path")).startswith(("mock://", "runtime://")):
-            asset["placeholder"] = bool(generated.get("placeholder", False))
+        if _has_real_file(asset):
+            asset["placeholder"] = False
             asset["status"] = generated.get("status") or "generated"
+            return asset
+
+        # Approved photographic fallback (Wikimedia / Reality catalog) — never color beds.
+        try:
+            from services.media_production.photographic_fallback import fetch_photographic_fallback
+
+            fallback = fetch_photographic_fallback(
+                prompt,
+                name=f"scene_{request.get('scene_number', 0)}",
+            )
+        except Exception as exc:  # noqa: BLE001
+            fallback = {"placeholder": True, "status": "failed", "error": str(exc), "path": ""}
+        if _has_real_file(fallback):
+            # Preserve fallback_for if AssetResolver already set it for an
+            # unavailable source (avatar/reaction/...). Do not invent one for
+            # native ai_image requests — photographic recovery is not a source swap.
+            preserved = asset.get("fallback_for")
+            asset.update(fallback)
+            asset["source"] = self.source
+            if preserved:
+                asset["fallback_for"] = preserved
+            else:
+                asset.pop("fallback_for", None)
+            asset["placeholder"] = False
+            asset["status"] = "approved_fallback"
+            return asset
+
+        asset["path"] = ""
+        asset["placeholder"] = True
+        asset["status"] = "failed"
+        asset["error"] = (
+            generated.get("error")
+            or fallback.get("error")
+            or "image_generation_and_photographic_fallback_failed"
+        )
         return asset
 
 
@@ -188,7 +241,7 @@ for _fulfiller_class in (
 
 
 class AssetResolver:
-    """Fulfils every asset request; unavailable sources degrade safely."""
+    """Fulfils every asset request; fails closed when no real media exists."""
 
     fallback_source = "ai_image"
 
@@ -201,17 +254,9 @@ class AssetResolver:
             source = request.get("source", self.fallback_source)
             fulfiller = get_fulfiller(source)
             if fulfiller is None or not fulfiller.is_available():
-                missing.append(
-                    {
-                        "scene_number": request.get("scene_number", 0),
-                        "source": source,
-                        "reason": "no provider available for this source yet",
-                        "fallback": self.fallback_source,
-                    }
-                )
                 warnings.append(
                     f"Scene {request.get('scene_number', 0)}: {source} unavailable — "
-                    f"filled with {self.fallback_source} placeholder."
+                    f"attempting {self.fallback_source} with photographic fallback."
                 )
                 fallback_request = dict(request)
                 fallback_request.setdefault("prompt", request.get("query", ""))
@@ -219,5 +264,22 @@ class AssetResolver:
                 asset["fallback_for"] = source
             else:
                 asset = fulfiller.fulfil(request)
+
+            if not _has_real_file(asset):
+                missing.append(
+                    {
+                        "scene_number": request.get("scene_number", 0),
+                        "source": source,
+                        "reason": asset.get("error")
+                        or "no validated on-disk image/video for scene",
+                        "fallback": self.fallback_source,
+                    }
+                )
+                warnings.append(
+                    f"Scene {request.get('scene_number', 0)}: visual media missing — "
+                    "production must stop before render."
+                )
+                asset["placeholder"] = True
+                asset["status"] = "failed"
             assets.append(asset)
         return {"assets": assets, "missing_assets": missing, "warnings": warnings}

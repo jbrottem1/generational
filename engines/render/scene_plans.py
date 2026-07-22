@@ -103,11 +103,16 @@ class SceneRenderer:
         cues_by_scene = {
             cue.get("scene_number", 0): cue for cue in (audio_cues or [])
         }
-        return [
-            self.build_scene_plan(
-                scene,
-                asset=assets_by_scene.get(scene.get("scene_number", 0)),
-                audio_cue=cues_by_scene.get(scene.get("scene_number", 0)),
+        plans = []
+        for scene in scenes:
+            scene_no = scene.get("scene_number", 0)
+            # Prefer an asset already attached on the scene (asset_production path).
+            asset = scene.get("resolved_asset") or assets_by_scene.get(scene_no)
+            plans.append(
+                self.build_scene_plan(
+                    scene,
+                    asset=asset,
+                    audio_cue=cues_by_scene.get(scene_no),
+                )
             )
-            for scene in scenes
-        ]
+        return plans

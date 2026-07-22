@@ -86,38 +86,66 @@ def _parse_json_response(response: ProviderResponse) -> "tuple[dict | None, int,
 
 
 def runtime_generate_image(prompt: str, metadata: "dict | None" = None) -> dict:
-    """Image generation via ProviderRuntime — returns legacy-compatible asset dict."""
+    """Image generation via ProviderRuntime — returns legacy-compatible asset dict.
+
+    Production contract: never report success for demo/mock URIs. A usable
+    asset must persist real bytes to disk. Callers may then apply an approved
+    photographic fallback; this helper itself does not invent color beds.
+    """
     meta = metadata or {}
+    # Prefer real image connectors; do not silently accept demo as success.
+    allow_fallback = bool(meta.get("allow_fallback", False))
     runtime = get_provider_runtime()
     response = runtime.generate_image(
         {
             "prompt": prompt,
             "width": meta.get("width", 1080),
             "height": meta.get("height", 1920),
-            **{k: v for k, v in meta.items() if k not in ("width", "height")},
+            "response_format": "b64_json",
+            **{k: v for k, v in meta.items() if k not in ("width", "height", "allow_fallback")},
         },
-        allow_fallback=True,
+        allow_fallback=allow_fallback,
     )
     data = dict(response.data or {})
+    demo_or_placeholder = bool(response.demo_mode or data.get("placeholder"))
+    raw_path = data.get("image_url") or data.get("uri") or data.get("path") or ""
+    if demo_or_placeholder and not data.get("b64_json"):
+        raw_path = ""
     asset = {
-        "path": data.get("image_url") or data.get("uri") or data.get("path") or f"runtime://image/{response.provider}",
+        "path": raw_path,
         "uri": data.get("image_url") or data.get("uri") or "",
         "image_url": data.get("image_url") or "",
         "b64_json": data.get("b64_json") or "",
         "provider": response.provider,
-        "placeholder": bool(response.demo_mode or data.get("placeholder")),
-        "status": "generated" if response.success and not response.demo_mode else "mock",
+        "placeholder": demo_or_placeholder or not response.success,
+        "status": "generated" if response.success and not demo_or_placeholder else "failed",
         "prompt": prompt,
         "width": meta.get("width", 1080),
         "height": meta.get("height", 1920),
-        "error": response.error,
+        "error": response.error
+        or ("demo_image_rejected" if demo_or_placeholder else ""),
     }
     try:
-        from services.media_production.persistence import persist_image_payload
+        from services.media_production.persistence import absolute_media_path, persist_image_payload
 
-        asset = persist_image_payload(asset, name="scene")
-    except Exception:  # noqa: BLE001 — persistence must never break engines
-        pass
+        asset = persist_image_payload(asset, name=str(meta.get("name") or "scene"))
+        local = absolute_media_path(str(asset.get("path") or ""))
+        if local is None or local.stat().st_size < 1024:
+            # Refuse fake success — clear non-file URIs so assemblers cannot treat them as media.
+            if str(asset.get("path") or "").startswith(("mock://", "runtime://", "http://", "https://")):
+                asset["path"] = ""
+            asset["placeholder"] = True
+            asset["status"] = "failed"
+            asset["error"] = asset.get("error") or "image_bytes_not_persisted"
+        else:
+            asset["placeholder"] = False
+            asset["status"] = "generated"
+            asset["path"] = str(local) if local.is_absolute() else asset.get("path")
+            asset["file_size"] = local.stat().st_size
+    except Exception as exc:  # noqa: BLE001 — persistence must never break engines
+        asset["placeholder"] = True
+        asset["status"] = "failed"
+        asset["error"] = asset.get("error") or f"persist_failed:{exc}"
     return asset
 
 

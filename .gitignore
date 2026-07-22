@@ -22,3 +22,8 @@ data/projects/*/knowledge/
 
 # ProviderRuntime response cache (local)
 data/provider_runtime/cache/
+
+# Generated media / renders (local production artifacts)
+data/media/
+data/renders/
+data/outputs/

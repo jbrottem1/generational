@@ -462,36 +462,64 @@ def run_asset_production(
                 copied = art.copy_into(asset_id, str(result["path"]), f"image_{index + 1:02d}.png")
                 if copied:
                     result = {**result, "path": copied, "local_path": copied, "placeholder": False}
-            # Hierarchy fallback: cinematic still (real PNG) — never leave empty
+            # Hierarchy fallback: photographic educational still — never color beds / mock URIs.
             path_ok = bool(
                 result
                 and result.get("path")
                 and not result.get("placeholder")
                 and not str(result.get("path")).startswith(("mock://", "runtime://"))
                 and Path(str(result["path"])).exists()
+                and Path(str(result["path"])).stat().st_size >= 1024
             )
             if not path_ok:
-                fallback_path = art.production_dir(asset_id) / f"image_{index + 1:02d}_fallback.png"
-                fallback = generate_cinematic_fallback_still(
-                    output_path=fallback_path,
-                    title=str(asset.get("title") or "Science"),
-                    overlay=str(scene.get("on_screen_text") or scene.get("text_overlay") or asset.get("title") or f"Scene {index + 1}"),
-                    scene_number=int(scene.get("scene_number") or index + 1),
-                    seed=f"{asset_id}-{index}-{prompt[:40]}",
+                from services.media_production.photographic_fallback import fetch_photographic_fallback
+
+                fallback = fetch_photographic_fallback(
+                    prompt,
+                    name=f"{asset_id}_image_{index + 1:02d}",
                 )
                 if fallback.get("path") and not fallback.get("placeholder"):
+                    copied = art.copy_into(asset_id, str(fallback["path"]), f"image_{index + 1:02d}.png")
+                    if copied:
+                        fallback = {**fallback, "path": copied, "local_path": copied}
                     result = {
                         **(result or {}),
                         **fallback,
                         "prompt": prompt,
                         "fallback_from": (result or {}).get("error") or "ai_image_unavailable",
                     }
-                    _emit(on_progress, asset, "images", f"Cinematic fallback still for scene {index + 1}")
+                    _emit(on_progress, asset, "images", f"Photographic fallback still for scene {index + 1}")
                 else:
-                    raise RuntimeError(
-                        f"Image generation failed for scene {index + 1} and cinematic fallback unavailable: "
-                        f"{(result or {}).get('error') or (fallback or {}).get('error') or 'unknown'}"
-                    )
+                    # Optional last resort only when explicitly enabled — defaults OFF for production.
+                    allow_cinematic = bool((asset.get("settings") or {}).get("allow_cinematic_fallback"))
+                    if allow_cinematic:
+                        fallback_path = art.production_dir(asset_id) / f"image_{index + 1:02d}_fallback.png"
+                        cinematic = generate_cinematic_fallback_still(
+                            output_path=fallback_path,
+                            title=str(asset.get("title") or "Science"),
+                            overlay=str(scene.get("on_screen_text") or scene.get("text_overlay") or asset.get("title") or f"Scene {index + 1}"),
+                            scene_number=int(scene.get("scene_number") or index + 1),
+                            seed=f"{asset_id}-{index}-{prompt[:40]}",
+                        )
+                        if cinematic.get("path") and not cinematic.get("placeholder"):
+                            result = {
+                                **(result or {}),
+                                **cinematic,
+                                "prompt": prompt,
+                                "fallback_from": (result or {}).get("error") or "ai_image_unavailable",
+                            }
+                            _emit(on_progress, asset, "images", f"Cinematic fallback still for scene {index + 1}")
+                        else:
+                            raise RuntimeError(
+                                f"Image generation failed for scene {index + 1}; photographic and cinematic fallbacks unavailable: "
+                                f"{(result or {}).get('error') or (fallback or {}).get('error') or 'unknown'}"
+                            )
+                    else:
+                        raise RuntimeError(
+                            f"Image generation failed for scene {index + 1} and photographic fallback unavailable — "
+                            f"refusing blank/color placeholder. "
+                            f"{(result or {}).get('error') or (fallback or {}).get('error') or 'unknown'}"
+                        )
             generated.append({**(result or {}), "scene_number": scene.get("scene_number", index + 1), "prompt": prompt})
             scene["resolved_asset"] = generated[-1]
         for scene in scenes:
