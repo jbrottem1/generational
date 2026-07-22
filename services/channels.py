@@ -37,6 +37,10 @@ def build_channel(
     platforms: "list | None" = None,
     posting_schedule: "dict | None" = None,
     credentials: "dict | None" = None,
+    content_pillars: "list | None" = None,
+    editorial_philosophy: str = "",
+    youtube_strategy: "dict | None" = None,
+    visual_identity: "dict | None" = None,
 ) -> dict:
     return {
         "name": name.strip(),
@@ -48,7 +52,49 @@ def build_channel(
         "credentials": credentials or {},
         "status": ChannelStatus.ACTIVE,
         "metrics": {"videos_published": 0, "total_views": 0, "followers": 0},
+        # Motivational Media Studio extensions (additive — older channels omit these).
+        "content_pillars": content_pillars or [],
+        "editorial_philosophy": editorial_philosophy,
+        "youtube_strategy": youtube_strategy
+        or {
+            "objective": "trusted educational motivational brand",
+            "optimize_for": ["trust", "authority", "craftsmanship", "wisdom", "loyalty"],
+            "not_optimize_for": ["empty viral clicks", "hype"],
+            "formats": ["youtube_shorts", "youtube_long"],
+        },
+        "visual_identity": visual_identity
+        or {
+            "palette": "steel blue dawn, charcoal, warm horizon",
+            "motion": ["slow push-in", "pan", "parallax", "camera drift"],
+            "forbid": ["blank frames", "solid-color placeholders", "promo stickers on hero"],
+        },
+        "autonomous_publishing_enabled": False,
     }
+
+
+def default_motivational_channel() -> dict:
+    """Seed config for the flagship Generational Motivation property."""
+    from services.editorial import DEFAULT_MOTIVATION_PILLARS, EDITORIAL_PHILOSOPHY, MISSION_STATEMENT
+
+    return build_channel(
+        name="Generational Motivation",
+        niche="Motivation",
+        brand_voice=(
+            "confident, calm, intelligent, warm, thoughtful, emotionally sincere — "
+            "transformation over entertainment"
+        ),
+        platforms=["youtube_shorts", "youtube_long"],
+        posting_schedule={"youtube": "review queue daily — never auto-post until gates pass"},
+        content_pillars=list(DEFAULT_MOTIVATION_PILLARS),
+        editorial_philosophy=MISSION_STATEMENT,
+        youtube_strategy={
+            "objective": "become one of the most respected motivational channels on YouTube",
+            "optimize_for": ["trust", "authority", "craftsmanship", "wisdom", "educational value", "loyalty"],
+            "not_optimize_for": ["empty viral clicks", "loud hype"],
+            "formats": ["youtube_shorts", "youtube_long"],
+            "editorial": EDITORIAL_PHILOSOPHY,
+        },
+    )
 
 
 class ChannelManager:

@@ -20,9 +20,12 @@ PLATFORM_SPECS = {
         min_runtime_sec=20,
         max_runtime_sec=58,
         words_per_minute=160,
-        tone="high-energy educational — punchy facts, fast cuts",
+        tone=(
+            "calm, intelligent motivational storytelling — struggle to action, "
+            "no empty hype, every line earns the next"
+        ),
         hook_window_sec=3,
-        cta_style="subscribe + tease the next video",
+        cta_style="invite one concrete action today + subscribe for the next lesson",
     ),
     "tiktok": PlatformSpec(
         key="tiktok",
@@ -75,9 +78,12 @@ PLATFORM_SPECS = {
         min_runtime_sec=300,
         max_runtime_sec=720,
         words_per_minute=150,
-        tone="documentary depth — chaptered narrative with evidence and payoffs",
+        tone=(
+            "documentary-depth motivational essay — verified examples, "
+            "psychology, and a practical application the viewer can start today"
+        ),
         hook_window_sec=15,
-        cta_style="subscribe + comment prompt + end-screen video",
+        cta_style="subscribe + comment one action you'll take + end-screen next lesson",
     ),
 }
 

@@ -74,6 +74,9 @@ def run_media_production(context: dict) -> dict:
         "voice_mode": context.get("voice_mode", "ai"),
         "voice_profile_id": context.get("voice_profile_id", ""),
         "target_platform": context.get("target_platform", "youtube_shorts"),
+        "autonomous_publishing_enabled": bool(
+            context.get("autonomous_publishing_enabled", False)
+        ),
     }
 
     queue = get_queue()
@@ -118,6 +121,7 @@ def _attach_packages_to_ideas(ideas: list, packages: list) -> None:
                 "duration_sec": pkg.get("timeline", {}).get("duration_sec", 0),
                 "render_package_id": pkg.get("render_package", {}).get("package_id", ""),
                 "queue_status": pkg.get("queue_status", ""),
+                "hold_reason": pkg.get("hold_reason", ""),
                 "assets": len(pkg.get("assets", [])),
             }
 

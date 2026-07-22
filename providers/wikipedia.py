@@ -18,7 +18,7 @@ class WikipediaProvider(ResearchSourceProvider):
         return True
 
     def search(self, topic: str, niche: str = "", limit: int = 3) -> list:
-        docs = self._live_search(topic, limit)
+        docs = self._live_search(topic, niche=niche, limit=limit)
         if docs:
             return docs
         return [
@@ -31,7 +31,7 @@ class WikipediaProvider(ResearchSourceProvider):
             for i in range(min(limit, 3))
         ]
 
-    def _live_search(self, topic: str, limit: int) -> list:
+    def _live_search(self, topic: str, niche: str = "", limit: int = 3) -> list:
         search_url = (
             "https://en.wikipedia.org/w/api.php?"
             f"action=query&list=search&srsearch={quote(topic)}&format=json&utf8=1&srlimit={limit}"

@@ -4,6 +4,45 @@
 
 Generational is an AI-powered faceless content operating system designed to help creators generate, produce, and distribute content at scale.
 
+## Version 7.4 — Motivational Media Studio
+
+The flagship **Motivational Channel** specialization: Generational becomes a
+production-grade AI motivational media studio for YouTube Shorts and long-form
+content aimed at real transformation — discipline, resilience, responsibility,
+courage — not empty hype.
+
+Emotional outcome of every production: *"I am getting off this couch and taking action."*
+
+### Editorial OS (`services/editorial/`)
+
+- **22 content pillars** (discipline → legacy)
+- **Story structure:** Hook → Struggle → Real-life example → Lesson → Application → Memorable ending
+- **Viewer psychology:** Curiosity → Recognition → Reflection → Hope → Determination → Immediate Action
+- Quotation / history integrity helpers (never invent facts or quotes)
+- Philosophy + writing standards consumed by scripts, critic, and quality gates
+
+### Pipeline extensions (no duplicate systems)
+
+| System | Extension |
+|---|---|
+| Script Generation | New **Struggle to Action** archetype; `story_beats` on every motivational variant |
+| Script Scorer | `story_structure` + `action_drive` factors |
+| Psychology | Viewer-progression report attached beside ViralScore |
+| Citation / Critic | Unverified quotation & fabricated-history flags |
+| Quality Gate | `story_structure`, `psychology_progression`, `quote_integrity` (auto-on for Motivation) |
+| Scene / Visual / Voice | Beat-aligned scenes, cinematic motivational palette, storytelling voice default |
+| Publishing Queue | **Fail-closed:** packages are `held` unless autonomous publishing is explicitly enabled and gates pass |
+
+Autonomous public publishing remains **DISABLED** (`AUTONOMOUS_PUBLISHING_ENABLED = False`).
+Enqueue ≠ publish.
+
+### Motivation niche + channel seed
+
+`Motivation` is a first-class niche. `default_motivational_channel()` seeds the
+**Generational Motivation** brand (pillars, YouTube strategy, visual identity).
+Settings tab exposes pillars, structure/progression gates, and the autonomous
+publish kill-switch.
+
 ## Version 7.3 — Attention Intelligence (Attention Graph)
 
 Phase 2 of the attention-engineering stack. Every idea now gets an

@@ -85,6 +85,13 @@ def _handle_run(command: str) -> None:
                 "max_unsupported_claims": st.session_state.max_unsupported_claims,
                 "min_claim_confidence": st.session_state.min_claim_confidence,
             },
+            editorial_settings={
+                "content_pillars": st.session_state.content_pillars,
+                "require_story_structure": st.session_state.require_story_structure,
+                "require_psychology_progression": st.session_state.require_psychology_progression,
+                "require_quote_integrity": st.session_state.require_quote_integrity,
+                "autonomous_publishing_enabled": st.session_state.autonomous_publishing_enabled,
+            },
             project_name=st.session_state.current_project_name,
         )
 

@@ -90,7 +90,20 @@ class PublishingQueue:
         with open(self._queue_path(), "w", encoding="utf-8") as f:
             json.dump(items, f, indent=2)
 
-    def enqueue(self, content_id: str, title: str, render_package: dict, niche: str, publish_score: int) -> dict:
+    def enqueue(
+        self,
+        content_id: str,
+        title: str,
+        render_package: dict,
+        niche: str,
+        publish_score: int,
+        *,
+        status: str = "queued",
+        hold_reason: str = "",
+        autonomous_publishing_enabled: bool = False,
+    ) -> dict:
+        # Enqueue ≠ publish. Default path holds packages until autonomous
+        # publishing is explicitly enabled AND every quality gate passes.
         entry = {
             "queue_id": f"q_{uuid.uuid4().hex[:10]}",
             "content_id": content_id,
@@ -98,17 +111,28 @@ class PublishingQueue:
             "niche": niche,
             "publish_score": publish_score,
             "render_package_id": render_package.get("package_id", ""),
-            "status": "queued",
+            "status": status,
+            "hold_reason": hold_reason,
+            "autonomous_publishing_enabled": bool(autonomous_publishing_enabled),
             "queued_at": datetime.now(timezone.utc).isoformat(),
         }
         items = self._load()
         items.append(entry)
         self._save(items)
-        log_event(logger, "publishing_queue.enqueued", queue_id=entry["queue_id"], title=title[:40])
+        log_event(
+            logger,
+            "publishing_queue.enqueued",
+            queue_id=entry["queue_id"],
+            title=title[:40],
+            status=status,
+        )
         return entry
 
     def list_pending(self) -> list:
-        return [i for i in self._load() if i.get("status") == "queued"]
+        return [i for i in self._load() if i.get("status") in {"queued", "held"}]
+
+    def list_held(self) -> list:
+        return [i for i in self._load() if i.get("status") == "held"]
 
     def count(self) -> int:
         return len(self.list_pending())

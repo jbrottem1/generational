@@ -86,6 +86,10 @@ class ScriptVariant:
     score: int = 0
     score_breakdown: dict = field(default_factory=dict)
     source: str = "heuristic"  # "heuristic" or "ai"
+    # Motivational story arc (Hook → Struggle → Example → Lesson → Application → Ending).
+    # Optional for non-motivational niches; required by quality gates when enabled.
+    story_beats: dict = field(default_factory=dict)
+    content_pillar: str = ""
 
     def to_dict(self) -> dict:
         return asdict(self)

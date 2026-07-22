@@ -1,7 +1,7 @@
 # Generational — Master Architecture
 
-**Current version:** v7.3.0  
-**Status:** Source-backed research platform with an 18-dimension Psychology & Virality Engine, a multi-variant multi-platform Script Generation Engine, a 12-dimension Attention Graph, citation engine, and multi-factor quality gate  
+**Current version:** v7.4.0  
+**Status:** Motivational Media Studio specialization on top of the source-backed research platform — 18-dimension Psychology & Virality Engine, multi-variant Script Generation (including Struggle→Action), Attention Graph, citation + quote integrity, story-structure / psychology-progression quality gates, and fail-closed publishing  
 **Entry point:** `app.py` (Streamlit shell only — no business logic)
 
 This document is the canonical architecture reference for Generational. It describes how the system is built today, how to extend it safely, and how the team develops using ChatGPT, Claude, and Cursor.
@@ -37,9 +37,20 @@ The system as a whole must be capable of: discovering profitable opportunities, 
 
 The goal is not to automate one YouTube channel. The goal is software that operates an entire portfolio of AI media companies.
 
+### Motivational Media Studio (flagship)
+
+The **Motivation** niche is the flagship media property. Editorial standards live in
+`services/editorial/` (pillars, story beats, viewer progression, philosophy, integrity)
+and are consumed by existing engines — never a parallel pipeline.
+
+- Story: Hook → Struggle → Real-life example → Lesson → Application → Memorable ending
+- Viewer psychology: Curiosity → Recognition → Reflection → Hope → Determination → Immediate Action
+- Autonomous public publishing: **DISABLED** until gates consistently pass (`AUTONOMOUS_PUBLISHING_ENABLED`)
+- Queue status `held` means review-ready; it is never a public post
+
 ### What exists today
 
-Generational v7.3 is a modular platform with:
+Generational v7.4 is a modular platform with:
 
 - A **Trend Discovery Engine** — the front door: auto-discovered trend providers, a universal Trend model, and 0-100 Opportunity Scoring that gates what enters the pipeline
 - A **Psychology & Virality Engine** — scores every candidate idea across 18 attention-science dimensions, blends them into a weighted 0-100 ViralScore, and produces a plain-English psychology report explaining why
@@ -618,6 +629,7 @@ The Streamlit UI is intentionally stable across versions. Major releases add **c
 | **v7.1** | Psychology & Virality Engine | 18-dimension attention scoring, weighted ViralScore, per-idea psychology report, virality-aware Quality Gate |
 | **v7.2** | Script Generation Engine | Multi-variant multi-style scripts for 6 platforms, 13 storytelling components per script, 6-factor variant scoring, runs immediately after Psychology, script quality feeds ranking |
 | **v7.3** | Attention Graph (Attention Intelligence) | 12-dimension attention scoring, weighted Attention Score, radar-chart payload + Plotly visualization, per-dimension recommendations, runs after Script Generation and before Ranking |
+| **v7.4** | Motivational Media Studio | Editorial OS (`services/editorial/`), Motivation niche + pillars, Struggle→Action scripts, story/progression/quote gates, beat-aware scenes/visuals, fail-closed publishing kill-switch |
 
 *(v3.0 was skipped in release numbering.)*
 
@@ -707,7 +719,7 @@ python -m pytest
 
 ### Current Baseline
 
-**132 tests passing** (as of v7.3.0).
+**140+ tests passing** (as of v7.4.0).
 
 ---
 
@@ -871,4 +883,4 @@ generational/
 
 ---
 
-*Last updated: v7.3.0 — Attention Graph (Attention Intelligence)*
+*Last updated: v7.4.0 — Motivational Media Studio*

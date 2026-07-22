@@ -46,6 +46,7 @@ from engines.heuristics import (
     sentences,
     stable_jitter,
 )
+from services.editorial import MOTIVATIONAL_PROGRESSION, score_viewer_progression
 
 logger = get_logger(__name__)
 
@@ -315,6 +316,8 @@ def build_report(dimensions: dict, score: int, title: str = "", hook: str = "") 
         f"\"{label}\" scores {score}/100 ({tier}). "
         f"Strongest levers: {top_names}. Weakest levers: {weak_names}."
     )
+    # Preliminary viewer-progression score from title/hook (full arc scored after scripts).
+    progression = score_viewer_progression(text=f"{title} {hook}".strip())
     return {
         "viral_score": score,
         "tier": tier,
@@ -322,6 +325,8 @@ def build_report(dimensions: dict, score: int, title: str = "", hook: str = "") 
         "weaknesses": weaknesses,
         "dimension_notes": {key: _explain(key, value) for key, value in dimensions.items()},
         "summary": summary,
+        "viewer_progression": progression,
+        "target_progression": list(MOTIVATIONAL_PROGRESSION),
     }
 
 

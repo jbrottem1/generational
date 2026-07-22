@@ -1,6 +1,6 @@
 """Shared constants for Generational."""
 
-APP_VERSION = "7.3.0"
+APP_VERSION = "7.4.0"
 
 MODEL_OPTIONS = ["gpt-4o-mini", "gpt-4o", "gpt-3.5-turbo"]
 DEFAULT_MODEL = "gpt-4o-mini"
@@ -9,6 +9,13 @@ IDEAS_PER_BATCH = 10
 CANDIDATE_IDEAS = 20  # candidates generated before ranking selects the best
 SCRIPT_VARIANTS_PER_IDEA = 3  # stylistic script variants generated per candidate
 DEFAULT_PUBLISH_THRESHOLD = 70
+
+# Autonomous public publishing stays OFF until quality gates consistently pass.
+# Queueing a render package is never the same as posting to YouTube.
+AUTONOMOUS_PUBLISHING_ENABLED = False
+
+# Production quality floor for motivational / media packages before queue release.
+DEFAULT_PRODUCTION_QUALITY_THRESHOLD = 70
 
 RESEARCH_PROVIDERS = [
     "wikipedia",
@@ -50,6 +57,18 @@ DEFAULT_RESEARCH_SETTINGS = {
 }
 
 NICHE_KEYWORDS = {
+    "Motivation": [
+        "motivation",
+        "motivational",
+        "discipline",
+        "resilience",
+        "mental toughness",
+        "self-improvement",
+        "habits",
+        "courage",
+        "character",
+        "responsibility",
+    ],
     "Psychology": ["psychology", "psychological", "mindset", "mind", "behavior"],
     "AI & Future Tech": ["ai ", " ai", "future tech", "technology", "tech ", "robot", "artificial intelligence"],
     "Dark History": ["dark history", "history", "historical", "war", "ancient"],
@@ -74,6 +93,9 @@ WORD_NUMBERS = {
 }
 
 EXAMPLE_COMMANDS = [
+    "Create 10 motivational shorts about discipline",
+    "Create 5 motivational shorts about resilience and responsibility",
+    "Generate a long-form motivational video about building habits",
     "Create 10 psychology shorts about procrastination",
     "Generate 5 AI future tech video ideas",
     "Make a week of content for dark history",

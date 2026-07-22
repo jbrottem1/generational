@@ -20,6 +20,7 @@ _RECORDINGS_DIR = os.path.join(
 )
 
 NICHE_DEFAULT_STYLE = {
+    "Motivation": "storytelling",  # confident, calm, warm, sincere — not hype
     "Science": "science",
     "Finance": "finance",
     "Psychology": "educational",
