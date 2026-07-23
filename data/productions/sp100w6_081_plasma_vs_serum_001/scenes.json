@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What\u2019s the difference between plasma and serum? It\u2019s more fascinating than you think.",
+    "visual_description": "Hook visual: What\u2019s the difference between plasma and serum? It\u2019s more fascinating than you think.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What\u2019s the difference between plasma and serum? It\u2019s more fascinating than you think.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What\u2019s the difference between plasma and serum? It\u2019s more fascinating than you think.",
+    "stock_footage_query": "",
+    "text_overlay": "What\u2019s the difference between",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Both are derived from blood, but they serve different purposes.",
+    "visual_description": "Context visual: Both are derived from blood, but they serve different purposes.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Both are derived from blood, but they serve different purposes.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Both are derived from blood, but they serve different purposes.",
+    "stock_footage_query": "",
+    "text_overlay": "Both are derived from",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Plasma is the liquid component, rich in proteins and nutrients, keeping your blood flowing.",
+    "visual_description": "Escalation visual: Plasma is the liquid component, rich in proteins and nutrients, keeping your blood flowing.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Plasma is the liquid component, rich in proteins and nutrients, keeping your blood flowing.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Plasma is the liquid component, rich in proteins and nutrients, keeping your blood flowing.",
+    "stock_footage_query": "",
+    "text_overlay": "Plasma is the liquid",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Serum? It\u2019s what\u2019s left when you remove the clotting factors from plasma. Surprised?",
+    "visual_description": "Evidence visual: Serum? It\u2019s what\u2019s left when you remove the clotting factors from plasma. Surprised?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Serum? It\u2019s what\u2019s left when you remove the clotting factors from plasma. Surprised?",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Serum? It\u2019s what\u2019s left when you remove the clotting factors from plasma. Surprised?",
+    "stock_footage_query": "",
+    "text_overlay": "Serum? It\u2019s what\u2019s left",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "So, while plasma supports circulation, serum is key for testing and treatments. Both vital, yet different.",
+    "visual_description": "Payoff visual: So, while plasma supports circulation, serum is key for testing and treatments. Both vital, yet different.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, while plasma supports circulation, serum is key for testing and treatments. Both vital, yet different.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, while plasma supports circulation, serum is key for testing and treatments. Both vital, yet different.",
+    "stock_footage_query": "",
+    "text_overlay": "So, while plasma supports",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Want to dive deeper into science? Hit that follow for more fascinating insights!",
+    "visual_description": "Cta visual: Want to dive deeper into science? Hit that follow for more fascinating insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into science? Hit that follow for more fascinating insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into science? Hit that follow for more fascinating insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

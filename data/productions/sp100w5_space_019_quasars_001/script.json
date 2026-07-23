@@ -1,0 +1,74 @@
+{
+  "title": "Quasars",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "This script explains the fascinating nature of quasars while keeping the audience engaged with curiosity and wonder.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about quasars than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Quasars are incredibly bright objects powered by supermassive black holes at the centers of distant galaxies.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "They can outshine entire galaxies, emitting more energy than a trillion suns combined!",
+      "emotion": "wonder",
+      "delivery": "enthusiastic",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "But here's the twist: we\u2019re not entirely sure how they form or evolve over time.",
+      "emotion": "curiosity",
+      "delivery": "serious",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 42.0,
+      "segment_type": "payoff",
+      "voiceover": "Their light takes billions of years to reach us, meaning we\u2019re seeing them as they were in the early universe.",
+      "emotion": "awe",
+      "delivery": "inspired",
+      "retention_device": "big picture reveal"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 42.0,
+      "end_time": 56.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into the mysteries of space? Hit that follow button for more!",
+      "emotion": "engagement",
+      "delivery": "excited",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about quasars than social media does. Quasars are incredibly bright objects powered by supermassive black holes at the centers of distant galaxies. They can outshine entire galaxies, emitting more energy than a trillion suns combined! But here's the twist: we\u2019re not entirely sure how they form or evolve over time. Their light takes billions of years to reach us, meaning we\u2019re seeing them as they were in the early universe. Want to dive deeper into the mysteries of space? Hit that follow button for more!",
+  "call_to_action": "Hit that follow button for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:35:46.278779+00:00",
+  "source": "ai"
+}

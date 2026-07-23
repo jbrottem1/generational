@@ -1,0 +1,191 @@
+{
+  "experiment_id": "cpl_1b4ca08e8aba",
+  "topic": "Why Octopuses Have Three Hearts",
+  "platform": "youtube_shorts",
+  "audience": "general_public",
+  "video_length_sec": 45,
+  "number_of_variants": 3,
+  "variables_tested": [
+    "hook_structure"
+  ],
+  "variables_held_constant": [
+    "core_factual_content",
+    "approximate_runtime",
+    "narrator_voice",
+    "music_style",
+    "caption_style",
+    "overall_visual_identity",
+    "call_to_action",
+    "export_settings"
+  ],
+  "hypothesis": "Hook structure changes will shift predicted early retention; real winner requires publish analytics.",
+  "success_metric": "completion_rate_pct",
+  "minimum_observation_period_hours": 48,
+  "status": "awaiting_human_review",
+  "production_ids": [
+    "cpl_1b4ca08e8aba_A",
+    "cpl_1b4ca08e8aba_B",
+    "cpl_1b4ca08e8aba_C"
+  ],
+  "publishing_ids": [],
+  "final_result": {},
+  "confidence_level": 0.0,
+  "exploratory": false,
+  "variants": [
+    {
+      "label": "A",
+      "variant_id": "cpl_1b4ca08e8aba_A",
+      "production_id": "cpl_1b4ca08e8aba_A",
+      "hook_style": "curiosity_gap",
+      "hook": "You've seen an octopus move \u2014 but almost nobody asks why its blood system is built like this.",
+      "title": "Why Octopuses Have Three Hearts",
+      "script_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_A/SCRIPT.md",
+      "narration_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_A/narration.mp3",
+      "captions_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_A/captions.srt",
+      "thumbnail_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_A/thumbnail.png",
+      "mp4_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_A/Final.mp4",
+      "duration_sec": 26.331429,
+      "provider": "elevenlabs",
+      "placeholder": false,
+      "audio_qa_ok": true,
+      "mux_ok": true,
+      "render_time_sec": 5.35,
+      "scores": {
+        "hook_quality": 88,
+        "psychology": 76,
+        "retention": 68,
+        "educational_value": 78,
+        "entertainment": 64,
+        "seo": 72,
+        "visual_quality": 70,
+        "narration": 82,
+        "professional_appearance": 75,
+        "platform_readiness": 80,
+        "overall": 75
+      },
+      "overall_score": 75,
+      "prediction": {
+        "ctr_pct": 6.01,
+        "average_view_duration_sec": 28.0,
+        "completion_rate_pct": 62.2,
+        "share_probability": 0.734,
+        "confidence": 95.0,
+        "reasons": [
+          "PREDICTION from internal heuristic scores \u2014 not real audience results",
+          "Hook style curiosity_gap influences predicted retention"
+        ],
+        "_label": "PREDICTION \u2014 not real audience results"
+      },
+      "quality_report_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_A/QUALITY_REPORT.json",
+      "package_dir": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_A",
+      "publishing": "disabled"
+    },
+    {
+      "label": "B",
+      "variant_id": "cpl_1b4ca08e8aba_B",
+      "production_id": "cpl_1b4ca08e8aba_B",
+      "hook_style": "counterintuitive_fact",
+      "hook": "Stop. An octopus has three hearts \u2014 and one of them basically shuts down when it swims.",
+      "title": "An Octopus Has Three Hearts \u2014 Here's Why",
+      "script_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_B/SCRIPT.md",
+      "narration_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_B/narration.mp3",
+      "captions_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_B/captions.srt",
+      "thumbnail_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_B/thumbnail.png",
+      "mp4_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_B/Final.mp4",
+      "duration_sec": 26.145669,
+      "provider": "elevenlabs",
+      "placeholder": false,
+      "audio_qa_ok": true,
+      "mux_ok": true,
+      "render_time_sec": 4.97,
+      "scores": {
+        "hook_quality": 90,
+        "psychology": 77,
+        "retention": 69,
+        "educational_value": 78,
+        "entertainment": 68,
+        "seo": 72,
+        "visual_quality": 70,
+        "narration": 82,
+        "professional_appearance": 75,
+        "platform_readiness": 80,
+        "overall": 76
+      },
+      "overall_score": 76,
+      "prediction": {
+        "ctr_pct": 6.18,
+        "average_view_duration_sec": 28.0,
+        "completion_rate_pct": 63.4,
+        "share_probability": 0.76,
+        "confidence": 95.0,
+        "reasons": [
+          "PREDICTION from internal heuristic scores \u2014 not real audience results",
+          "Hook style counterintuitive_fact influences predicted retention"
+        ],
+        "_label": "PREDICTION \u2014 not real audience results"
+      },
+      "quality_report_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_B/QUALITY_REPORT.json",
+      "package_dir": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_B",
+      "publishing": "disabled"
+    },
+    {
+      "label": "C",
+      "variant_id": "cpl_1b4ca08e8aba_C",
+      "production_id": "cpl_1b4ca08e8aba_C",
+      "hook_style": "immediate_visual_payoff",
+      "hook": "Watch this: three hearts, blue blood, and a body that thinks with its arms.",
+      "title": "Three Hearts. Blue Blood. One Octopus.",
+      "script_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_C/SCRIPT.md",
+      "narration_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_C/narration.mp3",
+      "captions_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_C/captions.srt",
+      "thumbnail_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_C/thumbnail.png",
+      "mp4_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_C/Final.mp4",
+      "duration_sec": 24.102313,
+      "provider": "elevenlabs",
+      "placeholder": false,
+      "audio_qa_ok": true,
+      "mux_ok": true,
+      "render_time_sec": 4.93,
+      "scores": {
+        "hook_quality": 87,
+        "psychology": 76,
+        "retention": 68,
+        "educational_value": 78,
+        "entertainment": 64,
+        "seo": 72,
+        "visual_quality": 70,
+        "narration": 82,
+        "professional_appearance": 75,
+        "platform_readiness": 80,
+        "overall": 75
+      },
+      "overall_score": 75,
+      "prediction": {
+        "ctr_pct": 5.93,
+        "average_view_duration_sec": 28.0,
+        "completion_rate_pct": 62.2,
+        "share_probability": 0.73,
+        "confidence": 95.0,
+        "reasons": [
+          "PREDICTION from internal heuristic scores \u2014 not real audience results",
+          "Hook style immediate_visual_payoff influences predicted retention"
+        ],
+        "_label": "PREDICTION \u2014 not real audience results"
+      },
+      "quality_report_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_C/QUALITY_REPORT.json",
+      "package_dir": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_C",
+      "publishing": "disabled"
+    }
+  ],
+  "predictions_label": "PREDICTION \u2014 not real audience results",
+  "created_at": "2026-07-14T02:04:19.480790+00:00",
+  "updated_at": "2026-07-14T02:04:19.480962+00:00",
+  "meta": {
+    "narrator_profile": "professor",
+    "style": "educational",
+    "category": "biology",
+    "comparison_path": "data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/COMPARISON_REPORT.json",
+    "human_review_path": "data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/HUMAN_REVIEW.json",
+    "predicted_winner_label": "B"
+  }
+}

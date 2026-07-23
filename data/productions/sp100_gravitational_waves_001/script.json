@@ -1,0 +1,74 @@
+{
+  "title": "How LIGO Hears Colliding Black Holes",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explains how LIGO detects gravitational waves from colliding black holes using laser interferometry.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "In 2015, Earth felt spacetime ripple \u2014 and LIGO heard it.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "These ripples are called gravitational waves, caused by massive cosmic collisions.",
+      "emotion": "curiosity",
+      "delivery": "engaging and clear",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "LIGO uses laser interferometry to detect them \u2014 a method that measures tiny changes in distance.",
+      "emotion": "curiosity",
+      "delivery": "building excitement",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 27.0,
+      "segment_type": "evidence",
+      "voiceover": "The first detection was GW150914, a collision of black holes over a billion light-years away.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact reveal"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 27.0,
+      "end_time": 37.0,
+      "segment_type": "payoff",
+      "voiceover": "This incredible technology lets us hear the universe's violent symphonies.",
+      "emotion": "wonder",
+      "delivery": "inspiring",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 37.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into the cosmos? Like and follow for more!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "In 2015, Earth felt spacetime ripple \u2014 and LIGO heard it. These ripples are called gravitational waves, caused by massive cosmic collisions. LIGO uses laser interferometry to detect them \u2014 a method that measures tiny changes in distance. The first detection was GW150914, a collision of black holes over a billion light-years away. This incredible technology lets us hear the universe's violent symphonies. Want to dive deeper into the cosmos? Like and follow for more!",
+  "call_to_action": "Like and follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:43:19.301598+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,84 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "A 9:16 vertical cinematic frame: center-punched single subject, negative space above for text; subject: Imagine water boiling and freezing at the same time!; emotion: curiosity; educational documentary lighting. Mood: curiosity. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: center-punched single subject, negative space above for text. Style: photorealistic scientific visualization, volumetric detail. macro detail, crisp laboratory aesthetic, shallow depth of field. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: ai cinematic artwork leave subtle title treatment space for: Imagine water boiling and freezing",
+      "aspect_ratio": "9:16",
+      "media_type": "ai_cinematic_artwork",
+      "camera_motion": "quick punch-in on key detail",
+      "on_screen_text": "Imagine water boiling and freezing"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "A 9:16 vertical cinematic frame: rule of thirds, subject leading the eye toward the next cut; subject: This happens at the triple point, a unique state where ice, liquid, and vapor coexist perfectly.; emotion: curiosity; educational documentary lighting. Mood: curiosity. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: rule of thirds, subject leading the eye toward the next cut. Style: photorealistic scientific visualization, volumetric detail. clean diagrammatic clarity blended with cinematic atmosphere. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: scientific illustration leave subtle title treatment space for: This happens at the triple",
+      "aspect_ratio": "9:16",
+      "media_type": "scientific_illustration",
+      "camera_motion": "ken burns drift right",
+      "on_screen_text": "This happens at the triple"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "A 9:16 vertical cinematic frame: layered foreground obscuring a partially visible subject; subject: At about 273.16 Kelvin and 611.657 Pascals, this equilibrium occurs. Sounds wild, right?; emotion: curiosity; educational documentary lighting. Mood: curiosity. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: layered foreground obscuring a partially visible subject. Style: photorealistic scientific visualization, volumetric detail. NASA-grade photorealism, deep contrast, premium educational channel look. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: ai cinematic artwork leave subtle title treatment space for: At about 273.16 Kelvin and",
+      "aspect_ratio": "9:16",
+      "media_type": "ai_cinematic_artwork",
+      "camera_motion": "slow zoom out reveal",
+      "on_screen_text": "At about 273.16 Kelvin and"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "A 9:16 vertical cinematic frame: rule of thirds, subject leading the eye toward the next cut; subject: This isn\u2019t just a kitchen trick. It\u2019s grounded in standard thermodynamics and backed by science.; emotion: curiosity; educational documentary lighting. Mood: curiosity. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: rule of thirds, subject leading the eye toward the next cut. Style: photorealistic scientific visualization, volumetric detail. scientific visualization, volumetric lighting, educational documentary style. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: real world photograph leave subtle title treatment space for: This isn\u2019t just a kitchen",
+      "aspect_ratio": "9:16",
+      "media_type": "real_world_photograph",
+      "camera_motion": "pan left across subject",
+      "on_screen_text": "This isn\u2019t just a kitchen"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "A 9:16 vertical cinematic frame: hero framing, shallow depth of field, clean background; subject: This fascinating phenomenon showcases nature\u2019s complexity and the beauty of phase transitions.; emotion: wonder; educational documentary lighting. Mood: wonder. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: hero framing, shallow depth of field, clean background. Style: photorealistic scientific visualization, volumetric detail. macro detail, crisp laboratory aesthetic, shallow depth of field. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: ai cinematic artwork leave subtle title treatment space for: This fascinating phenomenon showcases nature\u2019s",
+      "aspect_ratio": "9:16",
+      "media_type": "ai_cinematic_artwork",
+      "camera_motion": "documentary slow zoom",
+      "on_screen_text": "This fascinating phenomenon showcases nature\u2019s"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "A 9:16 vertical cinematic frame: centered, eye-level, symmetrical, direct eye contact with lens; subject: Curious about more amazing science secrets? Hit that like button and follow for more!; emotion: encouragement; educational documentary lighting. Mood: encouragement. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: centered, eye-level, symmetrical, direct eye contact with lens. Style: photorealistic scientific visualization, volumetric detail. clean diagrammatic clarity blended with cinematic atmosphere. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: ai cinematic artwork leave subtle title treatment space for: Curious about more amazing science",
+      "aspect_ratio": "9:16",
+      "media_type": "ai_cinematic_artwork",
+      "camera_motion": "slow cinematic push-in",
+      "on_screen_text": "Curious about more amazing science"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Scene: center-punched single subject, negative space above for text; subject: Imagine water boiling and freezing at the same time!; emotion: curiosity; educational documentary lighting Camera: quick punch-in on key detail, 35mm prime, f/2.8. Action: subject snaps toward camera mid-realization. Lighting: cinematic volumetric lighting, educational documentary grade. Physics: fast dynamic physics \u2014 debris, hair, and fabric react to rapid movement. Mood: curiosity. Palette: . Duration: 2.0s, 9:16. Cinematic motion, consistent subject, no morphing artifacts.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Scene: rule of thirds, subject leading the eye toward the next cut; subject: This happens at the triple point, a unique state where ice, liquid, and vapor coexist perfectly.; emotion: curiosity; educational documentary lighting Camera: ken burns drift right, 35mm prime, f/2.8. Action: subject demonstrates the narration's key action naturally. Lighting: cinematic volumetric lighting, educational documentary grade. Physics: natural weighted physics \u2014 believable momentum and settle. Mood: curiosity. Palette: . Duration: 8.0s, 9:16. Cinematic motion, consistent subject, no morphing artifacts.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Scene: layered foreground obscuring a partially visible subject; subject: At about 273.16 Kelvin and 611.657 Pascals, this equilibrium occurs. Sounds wild, right?; emotion: curiosity; educational documentary lighting Camera: slow zoom out reveal, 35mm prime, f/2.8. Action: subject leans toward something just out of frame. Lighting: cinematic volumetric lighting, educational documentary grade. Physics: natural weighted physics \u2014 believable momentum and settle. Mood: curiosity. Palette: . Duration: 8.0s, 9:16. Cinematic motion, consistent subject, no morphing artifacts.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Scene: rule of thirds, subject leading the eye toward the next cut; subject: This isn\u2019t just a kitchen trick. It\u2019s grounded in standard thermodynamics and backed by science.; emotion: curiosity; educational documentary lighting Camera: pan left across subject, 35mm prime, f/2.8. Action: subject demonstrates the narration's key action naturally. Lighting: cinematic volumetric lighting, educational documentary grade. Physics: natural weighted physics \u2014 believable momentum and settle. Mood: curiosity. Palette: . Duration: 8.0s, 9:16. Cinematic motion, consistent subject, no morphing artifacts.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Scene: hero framing, shallow depth of field, clean background; subject: This fascinating phenomenon showcases nature\u2019s complexity and the beauty of phase transitions.; emotion: wonder; educational documentary lighting Camera: documentary slow zoom, 35mm prime, f/2.8. Action: subject reacts with visible relief and recognition. Lighting: cinematic volumetric lighting, educational documentary grade. Physics: natural weighted physics \u2014 believable momentum and settle. Mood: wonder. Palette: . Duration: 8.0s, 9:16. Cinematic motion, consistent subject, no morphing artifacts.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Scene: centered, eye-level, symmetrical, direct eye contact with lens; subject: Curious about more amazing science secrets? Hit that like button and follow for more!; emotion: encouragement; educational documentary lighting Camera: slow cinematic push-in, 35mm prime, f/2.8. Action: subject addresses the lens directly with an inviting gesture. Lighting: cinematic volumetric lighting, educational documentary grade. Physics: natural weighted physics \u2014 believable momentum and settle. Mood: encouragement. Palette: . Duration: 26.0s, 9:16. Cinematic motion, consistent subject, no morphing artifacts.",
+      "duration_sec": 26.0
+    }
+  ]
+}

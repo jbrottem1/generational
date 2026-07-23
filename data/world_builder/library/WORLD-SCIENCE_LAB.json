@@ -1,0 +1,200 @@
+{
+  "world_id": "WORLD-SCIENCE_LAB",
+  "world_type": "Science Lab",
+  "name": "Science Lab",
+  "theme": "empirical discovery",
+  "scale": "room",
+  "historical_accuracy": 85,
+  "environment": {
+    "description": "Glass-walled research laboratory with instrument benches, polished epoxy floor, and ambient HUD panels",
+    "continuity_key": "WORLD-SCIENCE_LAB",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "cool teal key + soft grid bounce",
+    "consistent_key": true
+  },
+  "architecture": [
+    "steel beam grid",
+    "glass partitions",
+    "overhead service rails"
+  ],
+  "weather": "indoors_climate_controlled",
+  "objects": [
+    {
+      "object_id": "obj_microscope",
+      "name": "microscope",
+      "surface": "desk",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.35,
+        "y": 0.85,
+        "z": 0.4
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_reagent_rack",
+      "name": "reagent_rack",
+      "surface": "desk",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.55,
+        "y": 0.85,
+        "z": 0.42
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_holographic_board",
+      "name": "holographic_board",
+      "surface": "wall",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.5,
+        "y": 1.4,
+        "z": 0.1
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "obj_lab_bench",
+      "name": "lab_bench",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.45,
+        "y": 0.0,
+        "z": 0.45
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_stool",
+      "name": "stool",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.3,
+        "y": 0.0,
+        "z": 0.55
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "background_animations": [
+    "particle dust drift",
+    "soft monitor flicker",
+    "vent heat shimmer"
+  ],
+  "sound_ambience": [
+    "HVAC hum",
+    "distant centrifuge",
+    "soft beep"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.4,
+    "max_height": 2.2,
+    "min_distance": 0.5,
+    "max_distance": 8.0
+  },
+  "color_palette": {
+    "family": "lab",
+    "primary": "#101820",
+    "accent": "#A8DADC",
+    "practical": "#F1FAEE"
+  },
+  "lighting_presets": [
+    {
+      "id": "day_neutral",
+      "recipe": "cool teal key + soft bounce fill",
+      "mood": "neutral"
+    },
+    {
+      "id": "dramatic_rim",
+      "recipe": "cool teal key + hard rim + practical instrument glow",
+      "mood": "dramatic"
+    },
+    {
+      "id": "low_key_focus",
+      "recipe": "low-key with luminous subject isolation",
+      "mood": "focus"
+    },
+    {
+      "id": "bright_reveal",
+      "recipe": "bright key + lifted shadows for revelation",
+      "mood": "reveal"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "wide_establish",
+      "position": "rear_center",
+      "angle": "eye_level",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "bench_medium",
+      "position": "workbench_front",
+      "angle": "slight_high",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "macro_detail",
+      "position": "instrument_close",
+      "angle": "macro",
+      "lens_hint": "85mm"
+    },
+    {
+      "id": "corner_observe",
+      "position": "room_corner",
+      "angle": "observational",
+      "lens_hint": "28mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "bench_work",
+      "region": "center_bench"
+    },
+    {
+      "id": "board_explain",
+      "region": "wall_screen"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "doorway",
+      "to_compatible": [
+        "Research Center",
+        "AI Laboratory",
+        "University"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.157347+00:00"
+}

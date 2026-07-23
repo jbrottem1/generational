@@ -1,0 +1,74 @@
+{
+  "title": "Pancreas Insulin Explained",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "This script unveils the crucial role of insulin produced by the pancreas while highlighting ongoing research.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about pancreas insulin.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Insulin, produced by the pancreas, regulates blood sugar, a vital process for our energy.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But what happens when insulin production falters? That's linked to diabetes.",
+      "emotion": "curiosity",
+      "delivery": "urgent",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Recent studies suggest the pancreas can adapt, but this is still being explored. Science is evolving.",
+      "emotion": "curiosity",
+      "delivery": "conversational",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding insulin is crucial for health management and future treatments.",
+      "emotion": "curiosity",
+      "delivery": "hopeful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more science facts? Hit that follow button for more insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "none"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about pancreas insulin. Insulin, produced by the pancreas, regulates blood sugar, a vital process for our energy. But what happens when insulin production falters? That's linked to diabetes. Recent studies suggest the pancreas can adapt, but this is still being explored. Science is evolving. Understanding insulin is crucial for health management and future treatments. Curious about more science facts? Hit that follow button for more insights!",
+  "call_to_action": "Hit that follow button for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:15:39.592948+00:00",
+  "source": "ai"
+}

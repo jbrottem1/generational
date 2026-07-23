@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Did you know Earth is closest to the Sun in January?",
+    "visual_description": "Hook visual: Did you know Earth is closest to the Sun in January?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Did you know Earth is closest to the Sun in January?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Did you know Earth is closest to the Sun in January?",
+    "stock_footage_query": "",
+    "text_overlay": "Did you know Earth",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "So why are we freezing in winter?",
+    "visual_description": "Context visual: So why are we freezing in winter?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: So why are we freezing in winter?",
+    "ai_video_prompt": "Cinematic motion: Context visual: So why are we freezing in winter?",
+    "stock_footage_query": "",
+    "text_overlay": "So why are we",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "It's all about axial tilt\u2014not distance. Earth's axis is tilted at 23.5 degrees.",
+    "visual_description": "Escalation visual: It's all about axial tilt\u2014not distance. Earth's axis is tilted at 23.5 degrees.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: It's all about axial tilt\u2014not distance. Earth's axis is tilted at 23.5 degrees.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: It's all about axial tilt\u2014not distance. Earth's axis is tilted at 23.5 degrees.",
+    "stock_footage_query": "",
+    "text_overlay": "It's all about axial",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This tilt causes different parts of Earth to receive varying sunlight throughout the year.",
+    "visual_description": "Evidence visual: This tilt causes different parts of Earth to receive varying sunlight throughout the year.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: This tilt causes different parts of Earth to receive varying sunlight throughout the year.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: This tilt causes different parts of Earth to receive varying sunlight throughout the year.",
+    "stock_footage_query": "",
+    "text_overlay": "This tilt causes different",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "satisfying",
+    "length_sec": 8.0,
+    "narration": "In summer, the Northern Hemisphere tilts toward the Sun, heating things up!",
+    "visual_description": "Payoff visual: In summer, the Northern Hemisphere tilts toward the Sun, heating things up!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: In summer, the Northern Hemisphere tilts toward the Sun, heating things up!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: In summer, the Northern Hemisphere tilts toward the Sun, heating things up!",
+    "stock_footage_query": "",
+    "text_overlay": "In summer, the Northern",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 16.0,
+    "narration": "So, the next time you enjoy the sun, remember\u2014it\u2019s not about how close we are.",
+    "visual_description": "Pattern Interrupt visual: So, the next time you enjoy the sun, remember\u2014it\u2019s not about how close we are.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: So, the next time you enjoy the sun, remember\u2014it\u2019s not about how close we are.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: So, the next time you enjoy the sun, remember\u2014it\u2019s not about how close we are.",
+    "stock_footage_query": "",
+    "text_overlay": "So, the next time",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Follow for more mind-blowing science facts!",
+    "visual_description": "Cta visual: Follow for more mind-blowing science facts!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Follow for more mind-blowing science facts!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Follow for more mind-blowing science facts!",
+    "stock_footage_query": "",
+    "text_overlay": "Follow for more mind-blowing",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

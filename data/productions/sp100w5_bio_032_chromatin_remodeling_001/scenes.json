@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about chromatin remodeling than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about chromatin remodeling than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about chromatin remodeling than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about chromatin remodeling than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Chromatin is a complex of DNA and protein that organizes genetic material. But how does it affect gene expression?",
+    "visual_description": "Context visual: Chromatin is a complex of DNA and protein that organizes genetic material. But how does it affect gene expression?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Chromatin is a complex of DNA and protein that organizes genetic material. But how does it affect gene expression?",
+    "ai_video_prompt": "Cinematic motion: Context visual: Chromatin is a complex of DNA and protein that organizes genetic material. But how does it affect gene expression?",
+    "stock_footage_query": "",
+    "text_overlay": "Chromatin is a complex",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Chromatin remodeling alters the structure of this complex, making genes more or less accessible for transcription.",
+    "visual_description": "Escalation visual: Chromatin remodeling alters the structure of this complex, making genes more or less accessible for transcription.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Chromatin remodeling alters the structure of this complex, making genes more or less accessible for transcription.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Chromatin remodeling alters the structure of this complex, making genes more or less accessible for transcription.",
+    "stock_footage_query": "",
+    "text_overlay": "Chromatin remodeling alters the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Research shows that enzymes and protein complexes are crucial in this process, but it\u2019s still not fully understood.",
+    "visual_description": "Evidence visual: Research shows that enzymes and protein complexes are crucial in this process, but it\u2019s still not fully understood.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows that enzymes and protein complexes are crucial in this process, but it\u2019s still not fully understood.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows that enzymes and protein complexes are crucial in this process, but it\u2019s still not fully understood.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows that enzymes",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "excitement",
+    "length_sec": 12.0,
+    "narration": "Understanding chromatin remodeling could unlock new treatments for diseases like cancer. It\u2019s a frontier in genetics!",
+    "visual_description": "Payoff visual: Understanding chromatin remodeling could unlock new treatments for diseases like cancer. It\u2019s a frontier in genetics!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding chromatin remodeling could unlock new treatments for diseases like cancer. It\u2019s a frontier in genetics!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding chromatin remodeling could unlock new treatments for diseases like cancer. It\u2019s a frontier in genetics!",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding chromatin remodeling could",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 22.0,
+    "narration": "Curious for more? Hit that follow button for the latest in science!",
+    "visual_description": "Cta visual: Curious for more? Hit that follow button for the latest in science!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious for more? Hit that follow button for the latest in science!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious for more? Hit that follow button for the latest in science!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious for more? Hit",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

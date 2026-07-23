@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: A tiny device that changed everything: the transistor.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Transistors amplify and switch electrical signals, forming the backbone of digital computing.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Before transistors, computers were massive and unreliable. Now? They're in your pocket!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Invented in 1947, it marked the dawn of the electronics age, sparking a revolution.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: From smartphones to supercomputers, the transistor is everywhere. Imagine a world without it!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about more tech marvels? Hit follow and explore with us!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: A tiny device that changed everything: the transistor.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Transistors amplify and switch electrical signals, forming the backbone of digital computing.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Before transistors, computers were massive and unreliable. Now? They're in your pocket!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Invented in 1947, it marked the dawn of the electronics age, sparking a revolution.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: From smartphones to supercomputers, the transistor is everywhere. Imagine a world without it!",
+      "duration_sec": 14.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about more tech marvels? Hit follow and explore with us!",
+      "duration_sec": 20.0
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "character_id": "CHAR-LUNA",
+  "rules": [
+    "motivated_by_communication",
+    "begin_slightly_before_emphasized_word",
+    "return_to_natural_rest",
+    "vary_repeated_gestures",
+    "no_clip_into_torso_or_props"
+  ],
+  "categories": [
+    "teaching",
+    "explaining_scale",
+    "emphasizing",
+    "reassuring",
+    "warning",
+    "thinking",
+    "listening",
+    "object_interaction"
+  ],
+  "library": {
+    "open_palm_teach": {
+      "category": "teaching"
+    },
+    "open_palm_reassurance": {
+      "category": "reassuring"
+    },
+    "diagram_trace": {
+      "category": "teaching"
+    },
+    "scale_show": {
+      "category": "explaining_scale"
+    },
+    "emphasize": {
+      "category": "emphasizing"
+    },
+    "chin_think": {
+      "category": "thinking"
+    },
+    "listen_fold": {
+      "category": "listening"
+    },
+    "warning_focus": {
+      "category": "warning"
+    },
+    "cup_hands": {
+      "category": "reassuring"
+    },
+    "trace_leaf": {
+      "category": "teaching"
+    },
+    "quiet_point": {
+      "category": "teaching"
+    }
+  },
+  "favorites": [
+    "cup_hands",
+    "trace_leaf",
+    "quiet_point",
+    "open_palm_reassurance"
+  ],
+  "library_extra": {
+    "cup_hands": {
+      "category": "reassuring"
+    },
+    "trace_leaf": {
+      "category": "teaching"
+    },
+    "quiet_point": {
+      "category": "teaching"
+    }
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "world_id": "WORLD-HOSPITAL",
+  "elements_required": [
+    "floor",
+    "walls",
+    "ceilings",
+    "doors",
+    "windows",
+    "furniture",
+    "props"
+  ],
+  "dimensions_m": {
+    "x": 20.0,
+    "y": 3.6,
+    "z": 12.0
+  },
+  "floor": [
+    {
+      "id": "main_floor",
+      "bounds": [
+        [
+          -10.0,
+          0,
+          -6.0
+        ],
+        [
+          10.0,
+          0,
+          6.0
+        ]
+      ],
+      "walkable": true,
+      "material": "interior_floor"
+    }
+  ],
+  "walls": [
+    {
+      "id": "wall_n",
+      "plane": "north",
+      "openings": [
+        "window_n"
+      ]
+    },
+    {
+      "id": "wall_s",
+      "plane": "south",
+      "openings": [
+        "door_main"
+      ]
+    },
+    {
+      "id": "wall_e",
+      "plane": "east",
+      "openings": []
+    },
+    {
+      "id": "wall_w",
+      "plane": "west",
+      "openings": [
+        "window_w"
+      ]
+    }
+  ],
+  "ceilings": [
+    {
+      "id": "main_ceiling",
+      "height_m": 3.6,
+      "material": "acoustic_or_structural"
+    }
+  ],
+  "doors": [
+    {
+      "id": "door_main",
+      "position": [
+        0.0,
+        0.0,
+        -5.9
+      ],
+      "swing": "inward",
+      "interactable": true
+    }
+  ],
+  "windows": [
+    {
+      "id": "window_n",
+      "position": [
+        0.0,
+        1.9800000000000002,
+        5.95
+      ]
+    },
+    {
+      "id": "window_w",
+      "position": [
+        -9.95,
+        1.9800000000000002,
+        0.0
+      ]
+    }
+  ],
+  "furniture": [
+    {
+      "id": "furn_nurse_desk_0",
+      "type": "desk",
+      "position": [
+        -5.0,
+        0.0,
+        -1.7999999999999998
+      ],
+      "collision": true,
+      "navigable_around": true
+    },
+    {
+      "id": "furn_waiting_chair_1",
+      "type": "chair",
+      "position": [
+        -1.0,
+        0.0,
+        -1.7999999999999998
+      ],
+      "collision": true,
+      "navigable_around": true
+    },
+    {
+      "id": "furn_gurney_bay_2",
+      "type": "gurney_bay",
+      "position": [
+        3.0,
+        0.0,
+        -1.7999999999999998
+      ],
+      "collision": true,
+      "navigable_around": true
+    }
+  ],
+  "props": [
+    {
+      "id": "prop_door_0",
+      "type": "door",
+      "position": [
+        -5.0,
+        0.0,
+        -0.5999999999999999
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_monitor_screen_1",
+      "type": "console",
+      "position": [
+        -1.0,
+        0.0,
+        -0.5999999999999999
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_chart_board_2",
+      "type": "chart_board",
+      "position": [
+        3.0,
+        0.0,
+        -0.5999999999999999
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_hand_sanitizer_3",
+      "type": "hand_sanitizer",
+      "position": [
+        -5.0,
+        0.0,
+        0.8
+      ],
+      "collision": true,
+      "interactable": true
+    }
+  ],
+  "not_a_flat_image": true,
+  "explorable_volume": true,
+  "persistent": true
+}

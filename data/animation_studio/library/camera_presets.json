@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "presets": {
+    "tracking": {"description": "Follow subject through environment", "max_static_sec": 0},
+    "push_in": {"description": "Move toward subject for emphasis", "max_static_sec": 0},
+    "pull_out": {"description": "Reveal scale or context", "max_static_sec": 0},
+    "orbit": {"description": "Arc around subject", "max_static_sec": 0},
+    "crane": {"description": "Vertical discovery move", "max_static_sec": 0},
+    "parallax": {"description": "Layered depth drift", "max_static_sec": 0},
+    "handheld_energy": {"description": "Subtle chase energy", "max_static_sec": 0},
+    "establishing_wide": {"description": "Wide world entry", "max_static_sec": 1.0},
+    "close_up": {"description": "Face or detail emphasis", "max_static_sec": 0.5},
+    "macro": {"description": "Microscopic / surface detail", "max_static_sec": 0},
+    "overhead": {"description": "Top-down diagram or process", "max_static_sec": 0.5},
+    "reveal": {"description": "Information or world reveal", "max_static_sec": 0}
+  },
+  "default_for_purpose": {
+    "hook": "push_in",
+    "story_beat": "tracking",
+    "curiosity_loop": "parallax",
+    "payoff": "pull_out",
+    "cta": "close_up",
+    "pattern_interrupt": "handheld_energy"
+  }
+}

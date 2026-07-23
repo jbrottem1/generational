@@ -1,0 +1,770 @@
+{
+  "package_type": "VISUAL_SOURCE_INTELLIGENCE",
+  "package_version": "1.0.0",
+  "generated_at": "2026-07-14T13:36:30.247742+00:00",
+  "topic": "Why Fire Hydrants Are Different Colors",
+  "production_id": "",
+  "scene_count": 4,
+  "scene_decisions": [
+    {
+      "scene_number": 1,
+      "scene_id": "scene_00",
+      "intent": {
+        "viewer_understanding": "Something surprising about Three differently colored fire hydrants on one corner that earns the next few seconds of attention.",
+        "ideal_visual": "High-motion establishing or close trio of contrasting subjects filling the frame in the first seconds \u2014 not a title card.",
+        "prefers_diagram": false,
+        "prefers_motion": true,
+        "purpose": "hook",
+        "narration": "These colors could determine whether firefighters save your house."
+      },
+      "selected": {
+        "source_key": "ai_video",
+        "label": "AI-generated video",
+        "rank": 2,
+        "path": null,
+        "available": true,
+        "relevance": 0.7,
+        "motion_score": 0.95,
+        "explains_narration": 0.7,
+        "reason": "Motivated camera/subject motion when stock video is unavailable",
+        "meta": {
+          "prompt": "cinematic push toward three painted fire hydrants"
+        },
+        "reject_flags": [],
+        "selection_score": 160.0
+      },
+      "alternatives": [
+        {
+          "source_key": "ai_video",
+          "label": "AI-generated video",
+          "rank": 2,
+          "path": null,
+          "available": true,
+          "relevance": 0.7,
+          "motion_score": 0.95,
+          "explains_narration": 0.7,
+          "reason": "Motivated camera/subject motion when stock video is unavailable",
+          "meta": {
+            "prompt": "cinematic push toward three painted fire hydrants"
+          },
+          "reject_flags": [],
+          "selection_score": 160.0
+        },
+        {
+          "source_key": "animated_diagram",
+          "label": "Animated diagram / motion graphics",
+          "rank": 3,
+          "path": null,
+          "available": true,
+          "relevance": 0.35,
+          "motion_score": 0.75,
+          "explains_narration": 0.4,
+          "reason": "Labeled diagram or motion graphic best teaches comparison/rate/legend beats",
+          "meta": {
+            "media_type": "infographic",
+            "overlay_plan": "callouts for narrated keywords"
+          },
+          "reject_flags": [],
+          "selection_score": 91.05
+        },
+        {
+          "source_key": "ai_still_motion",
+          "label": "AI-generated still with meaningful motion",
+          "rank": 4,
+          "path": null,
+          "available": true,
+          "relevance": 0.65,
+          "motion_score": 0.6,
+          "explains_narration": 0.6,
+          "reason": "Generative still with non-repeating camera move when video/diagram unavailable",
+          "meta": {
+            "prompt": "three fire hydrants red yellow green"
+          },
+          "reject_flags": [],
+          "selection_score": 80.25
+        },
+        {
+          "source_key": "static_image",
+          "label": "Static image (last resort)",
+          "rank": 5,
+          "path": null,
+          "available": true,
+          "relevance": 0.4,
+          "motion_score": 0.1,
+          "explains_narration": 0.35,
+          "reason": "Static generative plate only when no stronger option can be fulfilled",
+          "meta": {},
+          "reject_flags": [
+            "feels_like_slideshow",
+            "lacks_cinematic_interest"
+          ],
+          "selection_score": 14.5
+        },
+        {
+          "source_key": "stock_video",
+          "label": "Licensed / library stock video",
+          "rank": 1,
+          "path": null,
+          "available": false,
+          "relevance": 0.35,
+          "motion_score": 0.9,
+          "explains_narration": 0.4,
+          "reason": "Existing library video matched scene query",
+          "meta": {
+            "asset_id": "test_space_orbit",
+            "license": "test"
+          },
+          "reject_flags": [],
+          "selection_score": -1.0
+        }
+      ],
+      "asset_type": "ai_video",
+      "tier": 2,
+      "tier_label": "ai_generated_video",
+      "fallback_used": true,
+      "fallback_reason": "Motivated camera/subject motion when stock video is unavailable",
+      "camera_motion": "slow cinematic push-in",
+      "media_type": "video",
+      "scene": {
+        "scene_number": 1,
+        "approved_asset_path": null,
+        "asset_type": "ai_video"
+      }
+    },
+    {
+      "scene_number": 2,
+      "scene_id": "scene_01",
+      "intent": {
+        "viewer_understanding": "Each major color indicates a flow rating firefighters use.",
+        "ideal_visual": "Animated diagram or labeled close-up with callouts that map narration keywords to visible elements.",
+        "prefers_diagram": true,
+        "prefers_motion": true,
+        "purpose": "story_beat",
+        "narration": "Each major color indicates a flow rating firefighters use."
+      },
+      "selected": {
+        "source_key": "animated_diagram",
+        "label": "Animated diagram / motion graphics",
+        "rank": 3,
+        "path": null,
+        "available": true,
+        "relevance": 0.9,
+        "motion_score": 0.75,
+        "explains_narration": 0.92,
+        "reason": "Labeled diagram or motion graphic best teaches comparison/rate/legend beats",
+        "meta": {
+          "media_type": "motion_graphics",
+          "overlay_plan": "callouts for narrated keywords"
+        },
+        "reject_flags": [],
+        "selection_score": 156.24
+      },
+      "alternatives": [
+        {
+          "source_key": "animated_diagram",
+          "label": "Animated diagram / motion graphics",
+          "rank": 3,
+          "path": null,
+          "available": true,
+          "relevance": 0.9,
+          "motion_score": 0.75,
+          "explains_narration": 0.92,
+          "reason": "Labeled diagram or motion graphic best teaches comparison/rate/legend beats",
+          "meta": {
+            "media_type": "motion_graphics",
+            "overlay_plan": "callouts for narrated keywords"
+          },
+          "reject_flags": [],
+          "selection_score": 156.24
+        },
+        {
+          "source_key": "ai_video",
+          "label": "AI-generated video",
+          "rank": 2,
+          "path": null,
+          "available": true,
+          "relevance": 0.7,
+          "motion_score": 0.95,
+          "explains_narration": 0.7,
+          "reason": "Motivated camera/subject motion when stock video is unavailable",
+          "meta": {
+            "prompt": "Animated diagram or labeled close-up with callouts that map narration keywords to visible elements."
+          },
+          "reject_flags": [],
+          "selection_score": 132.0
+        },
+        {
+          "source_key": "ai_still_motion",
+          "label": "AI-generated still with meaningful motion",
+          "rank": 4,
+          "path": null,
+          "available": true,
+          "relevance": 0.65,
+          "motion_score": 0.6,
+          "explains_narration": 0.6,
+          "reason": "Generative still with non-repeating camera move when video/diagram unavailable",
+          "meta": {
+            "prompt": "Animated diagram or labeled close-up with callouts that map narration keywords to visible elements."
+          },
+          "reject_flags": [],
+          "selection_score": 68.25
+        },
+        {
+          "source_key": "static_image",
+          "label": "Static image (last resort)",
+          "rank": 5,
+          "path": null,
+          "available": true,
+          "relevance": 0.4,
+          "motion_score": 0.1,
+          "explains_narration": 0.35,
+          "reason": "Static generative plate only when no stronger option can be fulfilled",
+          "meta": {},
+          "reject_flags": [
+            "feels_like_slideshow",
+            "lacks_cinematic_interest"
+          ],
+          "selection_score": 14.5
+        },
+        {
+          "source_key": "stock_video",
+          "label": "Licensed / library stock video",
+          "rank": 1,
+          "path": null,
+          "available": false,
+          "relevance": 0.35,
+          "motion_score": 0.9,
+          "explains_narration": 0.4,
+          "reason": "Existing library video matched scene query",
+          "meta": {
+            "asset_id": "test_space_orbit",
+            "license": "test"
+          },
+          "reject_flags": [],
+          "selection_score": -1.0
+        }
+      ],
+      "asset_type": "ai_image",
+      "tier": 3,
+      "tier_label": "animated_diagram",
+      "fallback_used": true,
+      "fallback_reason": "Labeled diagram or motion graphic best teaches comparison/rate/legend beats",
+      "camera_motion": "drone establish then settle",
+      "media_type": "motion_graphics",
+      "scene": {
+        "scene_number": 2,
+        "approved_asset_path": null,
+        "asset_type": "ai_image"
+      }
+    },
+    {
+      "scene_number": 3,
+      "scene_id": "scene_02",
+      "intent": {
+        "viewer_understanding": "Flow rate matters when water supply decides whether a house is saved.",
+        "ideal_visual": "Animated diagram or labeled close-up with callouts that map narration keywords to visible elements.",
+        "prefers_diagram": true,
+        "prefers_motion": true,
+        "purpose": "story_beat",
+        "narration": "Flow rate matters when water supply decides whether a house is saved."
+      },
+      "selected": {
+        "source_key": "animated_diagram",
+        "label": "Animated diagram / motion graphics",
+        "rank": 3,
+        "path": null,
+        "available": true,
+        "relevance": 0.9,
+        "motion_score": 0.75,
+        "explains_narration": 0.92,
+        "reason": "Labeled diagram or motion graphic best teaches comparison/rate/legend beats",
+        "meta": {
+          "media_type": "motion_graphics",
+          "overlay_plan": "callouts for narrated keywords"
+        },
+        "reject_flags": [],
+        "selection_score": 156.24
+      },
+      "alternatives": [
+        {
+          "source_key": "animated_diagram",
+          "label": "Animated diagram / motion graphics",
+          "rank": 3,
+          "path": null,
+          "available": true,
+          "relevance": 0.9,
+          "motion_score": 0.75,
+          "explains_narration": 0.92,
+          "reason": "Labeled diagram or motion graphic best teaches comparison/rate/legend beats",
+          "meta": {
+            "media_type": "motion_graphics",
+            "overlay_plan": "callouts for narrated keywords"
+          },
+          "reject_flags": [],
+          "selection_score": 156.24
+        },
+        {
+          "source_key": "ai_video",
+          "label": "AI-generated video",
+          "rank": 2,
+          "path": null,
+          "available": true,
+          "relevance": 0.7,
+          "motion_score": 0.95,
+          "explains_narration": 0.7,
+          "reason": "Motivated camera/subject motion when stock video is unavailable",
+          "meta": {
+            "prompt": "water flow visualization from hydrant"
+          },
+          "reject_flags": [],
+          "selection_score": 132.0
+        },
+        {
+          "source_key": "ai_still_motion",
+          "label": "AI-generated still with meaningful motion",
+          "rank": 4,
+          "path": null,
+          "available": true,
+          "relevance": 0.65,
+          "motion_score": 0.6,
+          "explains_narration": 0.6,
+          "reason": "Generative still with non-repeating camera move when video/diagram unavailable",
+          "meta": {
+            "prompt": "Animated diagram or labeled close-up with callouts that map narration keywords to visible elements."
+          },
+          "reject_flags": [],
+          "selection_score": 68.25
+        },
+        {
+          "source_key": "static_image",
+          "label": "Static image (last resort)",
+          "rank": 5,
+          "path": null,
+          "available": true,
+          "relevance": 0.4,
+          "motion_score": 0.1,
+          "explains_narration": 0.35,
+          "reason": "Static generative plate only when no stronger option can be fulfilled",
+          "meta": {},
+          "reject_flags": [
+            "feels_like_slideshow",
+            "lacks_cinematic_interest"
+          ],
+          "selection_score": 14.5
+        },
+        {
+          "source_key": "stock_video",
+          "label": "Licensed / library stock video",
+          "rank": 1,
+          "path": null,
+          "available": false,
+          "relevance": 0.35,
+          "motion_score": 0.9,
+          "explains_narration": 0.4,
+          "reason": "Existing library video matched scene query",
+          "meta": {
+            "asset_id": "test_space_orbit",
+            "license": "test"
+          },
+          "reject_flags": [],
+          "selection_score": -1.0
+        }
+      ],
+      "asset_type": "ai_image",
+      "tier": 3,
+      "tier_label": "animated_diagram",
+      "fallback_used": true,
+      "fallback_reason": "Labeled diagram or motion graphic best teaches comparison/rate/legend beats",
+      "camera_motion": "close-up detail reveal",
+      "media_type": "motion_graphics",
+      "scene": {
+        "scene_number": 3,
+        "approved_asset_path": null,
+        "asset_type": "ai_image"
+      }
+    },
+    {
+      "scene_number": 4,
+      "scene_id": "scene_03",
+      "intent": {
+        "viewer_understanding": "The clear takeaway about map of water main between hydrants.",
+        "ideal_visual": "Animated diagram or labeled close-up with callouts that map narration keywords to visible elements.",
+        "prefers_diagram": true,
+        "prefers_motion": true,
+        "purpose": "payoff",
+        "narration": "Two nearby hydrants can carry different ratings on the same street."
+      },
+      "selected": {
+        "source_key": "animated_diagram",
+        "label": "Animated diagram / motion graphics",
+        "rank": 3,
+        "path": null,
+        "available": true,
+        "relevance": 0.9,
+        "motion_score": 0.75,
+        "explains_narration": 0.92,
+        "reason": "Labeled diagram or motion graphic best teaches comparison/rate/legend beats",
+        "meta": {
+          "media_type": "motion_graphics",
+          "overlay_plan": "callouts for narrated keywords"
+        },
+        "reject_flags": [],
+        "selection_score": 156.24
+      },
+      "alternatives": [
+        {
+          "source_key": "animated_diagram",
+          "label": "Animated diagram / motion graphics",
+          "rank": 3,
+          "path": null,
+          "available": true,
+          "relevance": 0.9,
+          "motion_score": 0.75,
+          "explains_narration": 0.92,
+          "reason": "Labeled diagram or motion graphic best teaches comparison/rate/legend beats",
+          "meta": {
+            "media_type": "motion_graphics",
+            "overlay_plan": "callouts for narrated keywords"
+          },
+          "reject_flags": [],
+          "selection_score": 156.24
+        },
+        {
+          "source_key": "ai_video",
+          "label": "AI-generated video",
+          "rank": 2,
+          "path": null,
+          "available": true,
+          "relevance": 0.7,
+          "motion_score": 0.95,
+          "explains_narration": 0.7,
+          "reason": "Motivated camera/subject motion when stock video is unavailable",
+          "meta": {
+            "prompt": "Animated diagram or labeled close-up with callouts that map narration keywords to visible elements."
+          },
+          "reject_flags": [],
+          "selection_score": 132.0
+        },
+        {
+          "source_key": "ai_still_motion",
+          "label": "AI-generated still with meaningful motion",
+          "rank": 4,
+          "path": null,
+          "available": true,
+          "relevance": 0.65,
+          "motion_score": 0.6,
+          "explains_narration": 0.6,
+          "reason": "Generative still with non-repeating camera move when video/diagram unavailable",
+          "meta": {
+            "prompt": "Animated diagram or labeled close-up with callouts that map narration keywords to visible elements."
+          },
+          "reject_flags": [],
+          "selection_score": 68.25
+        },
+        {
+          "source_key": "static_image",
+          "label": "Static image (last resort)",
+          "rank": 5,
+          "path": null,
+          "available": true,
+          "relevance": 0.4,
+          "motion_score": 0.1,
+          "explains_narration": 0.35,
+          "reason": "Static generative plate only when no stronger option can be fulfilled",
+          "meta": {},
+          "reject_flags": [
+            "feels_like_slideshow",
+            "lacks_cinematic_interest"
+          ],
+          "selection_score": 14.5
+        },
+        {
+          "source_key": "stock_video",
+          "label": "Licensed / library stock video",
+          "rank": 1,
+          "path": null,
+          "available": false,
+          "relevance": 0.35,
+          "motion_score": 0.9,
+          "explains_narration": 0.4,
+          "reason": "Existing library video matched scene query",
+          "meta": {
+            "asset_id": "test_space_orbit",
+            "license": "test"
+          },
+          "reject_flags": [],
+          "selection_score": -1.0
+        }
+      ],
+      "asset_type": "ai_image",
+      "tier": 3,
+      "tier_label": "animated_diagram",
+      "fallback_used": true,
+      "fallback_reason": "Labeled diagram or motion graphic best teaches comparison/rate/legend beats",
+      "camera_motion": "pan left across subject",
+      "media_type": "motion_graphics",
+      "scene": {
+        "scene_number": 4,
+        "approved_asset_path": null,
+        "asset_type": "ai_image"
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "scene_number": 1,
+      "purpose": "hook",
+      "narration": "These colors could determine whether firefighters save your house.",
+      "visual_description": "Three differently colored fire hydrants on one corner",
+      "stock_footage_query": "suburban fire hydrants different colors",
+      "ai_video_prompt": "cinematic push toward three painted fire hydrants",
+      "ai_image_prompt": "three fire hydrants red yellow green",
+      "asset_type": "ai_video",
+      "vsi_source": "ai_video",
+      "vsi_tier": 2,
+      "vsi_tier_label": "ai_generated_video",
+      "vsi_fallback_used": true,
+      "vsi_fallback_reason": "Motivated camera/subject motion when stock video is unavailable",
+      "viewer_understanding": "Something surprising about Three differently colored fire hydrants on one corner that earns the next few seconds of attention.",
+      "ideal_visual": "High-motion establishing or close trio of contrasting subjects filling the frame in the first seconds \u2014 not a title card.",
+      "media_type": "video",
+      "camera_motion": "slow cinematic push-in",
+      "required_motion": "slow cinematic push-in"
+    },
+    {
+      "scene_number": 2,
+      "purpose": "story_beat",
+      "narration": "Each major color indicates a flow rating firefighters use.",
+      "visual_description": "color legend diagram",
+      "stock_footage_query": "fire hydrant color code chart",
+      "asset_type": "ai_image",
+      "vsi_source": "animated_diagram",
+      "vsi_tier": 3,
+      "vsi_tier_label": "animated_diagram",
+      "vsi_fallback_used": true,
+      "vsi_fallback_reason": "Labeled diagram or motion graphic best teaches comparison/rate/legend beats",
+      "viewer_understanding": "Each major color indicates a flow rating firefighters use.",
+      "ideal_visual": "Animated diagram or labeled close-up with callouts that map narration keywords to visible elements.",
+      "media_type": "motion_graphics",
+      "camera_motion": "drone establish then settle",
+      "required_motion": "drone establish then settle",
+      "overlay_style": "annotated diagram callouts, data labels",
+      "annotation_plan": "callouts for narrated keywords",
+      "motion_plan": "diagram build-on / reveal aligned to narration clauses"
+    },
+    {
+      "scene_number": 3,
+      "purpose": "story_beat",
+      "narration": "Flow rate matters when water supply decides whether a house is saved.",
+      "ai_video_prompt": "water flow visualization from hydrant",
+      "stock_footage_query": "fire hose water flow",
+      "asset_type": "ai_image",
+      "vsi_source": "animated_diagram",
+      "vsi_tier": 3,
+      "vsi_tier_label": "animated_diagram",
+      "vsi_fallback_used": true,
+      "vsi_fallback_reason": "Labeled diagram or motion graphic best teaches comparison/rate/legend beats",
+      "viewer_understanding": "Flow rate matters when water supply decides whether a house is saved.",
+      "ideal_visual": "Animated diagram or labeled close-up with callouts that map narration keywords to visible elements.",
+      "media_type": "motion_graphics",
+      "camera_motion": "close-up detail reveal",
+      "required_motion": "close-up detail reveal",
+      "overlay_style": "annotated diagram callouts, data labels",
+      "annotation_plan": "callouts for narrated keywords",
+      "motion_plan": "diagram build-on / reveal aligned to narration clauses"
+    },
+    {
+      "scene_number": 4,
+      "purpose": "payoff",
+      "narration": "Two nearby hydrants can carry different ratings on the same street.",
+      "visual_description": "map of water main between hydrants",
+      "asset_type": "ai_image",
+      "vsi_source": "animated_diagram",
+      "vsi_tier": 3,
+      "vsi_tier_label": "animated_diagram",
+      "vsi_fallback_used": true,
+      "vsi_fallback_reason": "Labeled diagram or motion graphic best teaches comparison/rate/legend beats",
+      "viewer_understanding": "The clear takeaway about map of water main between hydrants.",
+      "ideal_visual": "Animated diagram or labeled close-up with callouts that map narration keywords to visible elements.",
+      "media_type": "motion_graphics",
+      "camera_motion": "pan left across subject",
+      "required_motion": "pan left across subject",
+      "overlay_style": "annotated diagram callouts, data labels",
+      "annotation_plan": "callouts for narrated keywords",
+      "motion_plan": "diagram build-on / reveal aligned to narration clauses"
+    }
+  ],
+  "asset_requests": [
+    {
+      "source": "ai_video",
+      "asset_kind": "video",
+      "scene_number": 1,
+      "duration_sec": 0,
+      "aspect_ratio": "9:16",
+      "prompt": "cinematic push toward three painted fire hydrants",
+      "camera_motion": "slow cinematic push-in",
+      "style": "cinematic",
+      "vsi_tier": 2,
+      "vsi_source": "ai_video",
+      "vsi_fallback_reason": "Motivated camera/subject motion when stock video is unavailable"
+    },
+    {
+      "source": "ai_image",
+      "asset_kind": "image",
+      "scene_number": 2,
+      "duration_sec": 0,
+      "aspect_ratio": "9:16",
+      "prompt": "",
+      "style": "cinematic",
+      "vsi_tier": 3,
+      "vsi_source": "animated_diagram",
+      "vsi_fallback_reason": "Labeled diagram or motion graphic best teaches comparison/rate/legend beats"
+    },
+    {
+      "source": "ai_image",
+      "asset_kind": "image",
+      "scene_number": 3,
+      "duration_sec": 0,
+      "aspect_ratio": "9:16",
+      "prompt": "",
+      "style": "cinematic",
+      "vsi_tier": 3,
+      "vsi_source": "animated_diagram",
+      "vsi_fallback_reason": "Labeled diagram or motion graphic best teaches comparison/rate/legend beats"
+    },
+    {
+      "source": "ai_image",
+      "asset_kind": "image",
+      "scene_number": 4,
+      "duration_sec": 0,
+      "aspect_ratio": "9:16",
+      "prompt": "",
+      "style": "cinematic",
+      "vsi_tier": 3,
+      "vsi_source": "animated_diagram",
+      "vsi_fallback_reason": "Labeled diagram or motion graphic best teaches comparison/rate/legend beats"
+    }
+  ],
+  "fallback_summary": {
+    "by_tier": {
+      "ai_generated_video": 1,
+      "animated_diagram": 3
+    },
+    "fallback_count": 4,
+    "stock_video_count": 0,
+    "ai_video_count": 1,
+    "diagram_count": 3,
+    "still_motion_count": 0,
+    "static_count": 0
+  },
+  "updated_scenes": [
+    {
+      "scene_number": 1,
+      "purpose": "hook",
+      "narration": "These colors could determine whether firefighters save your house.",
+      "visual_description": "Three differently colored fire hydrants on one corner",
+      "stock_footage_query": "suburban fire hydrants different colors",
+      "ai_video_prompt": "cinematic push toward three painted fire hydrants",
+      "ai_image_prompt": "three fire hydrants red yellow green",
+      "asset_type": "ai_video",
+      "vsi_source": "ai_video",
+      "vsi_tier": 2,
+      "vsi_tier_label": "ai_generated_video",
+      "vsi_fallback_used": true,
+      "vsi_fallback_reason": "Motivated camera/subject motion when stock video is unavailable",
+      "viewer_understanding": "Something surprising about Three differently colored fire hydrants on one corner that earns the next few seconds of attention.",
+      "ideal_visual": "High-motion establishing or close trio of contrasting subjects filling the frame in the first seconds \u2014 not a title card.",
+      "media_type": "video",
+      "camera_motion": "slow cinematic push-in",
+      "required_motion": "slow cinematic push-in"
+    },
+    {
+      "scene_number": 2,
+      "purpose": "story_beat",
+      "narration": "Each major color indicates a flow rating firefighters use.",
+      "visual_description": "color legend diagram",
+      "stock_footage_query": "fire hydrant color code chart",
+      "asset_type": "ai_image",
+      "vsi_source": "animated_diagram",
+      "vsi_tier": 3,
+      "vsi_tier_label": "animated_diagram",
+      "vsi_fallback_used": true,
+      "vsi_fallback_reason": "Labeled diagram or motion graphic best teaches comparison/rate/legend beats",
+      "viewer_understanding": "Each major color indicates a flow rating firefighters use.",
+      "ideal_visual": "Animated diagram or labeled close-up with callouts that map narration keywords to visible elements.",
+      "media_type": "motion_graphics",
+      "camera_motion": "drone establish then settle",
+      "required_motion": "drone establish then settle",
+      "overlay_style": "annotated diagram callouts, data labels",
+      "annotation_plan": "callouts for narrated keywords",
+      "motion_plan": "diagram build-on / reveal aligned to narration clauses"
+    },
+    {
+      "scene_number": 3,
+      "purpose": "story_beat",
+      "narration": "Flow rate matters when water supply decides whether a house is saved.",
+      "ai_video_prompt": "water flow visualization from hydrant",
+      "stock_footage_query": "fire hose water flow",
+      "asset_type": "ai_image",
+      "vsi_source": "animated_diagram",
+      "vsi_tier": 3,
+      "vsi_tier_label": "animated_diagram",
+      "vsi_fallback_used": true,
+      "vsi_fallback_reason": "Labeled diagram or motion graphic best teaches comparison/rate/legend beats",
+      "viewer_understanding": "Flow rate matters when water supply decides whether a house is saved.",
+      "ideal_visual": "Animated diagram or labeled close-up with callouts that map narration keywords to visible elements.",
+      "media_type": "motion_graphics",
+      "camera_motion": "close-up detail reveal",
+      "required_motion": "close-up detail reveal",
+      "overlay_style": "annotated diagram callouts, data labels",
+      "annotation_plan": "callouts for narrated keywords",
+      "motion_plan": "diagram build-on / reveal aligned to narration clauses"
+    },
+    {
+      "scene_number": 4,
+      "purpose": "payoff",
+      "narration": "Two nearby hydrants can carry different ratings on the same street.",
+      "visual_description": "map of water main between hydrants",
+      "asset_type": "ai_image",
+      "vsi_source": "animated_diagram",
+      "vsi_tier": 3,
+      "vsi_tier_label": "animated_diagram",
+      "vsi_fallback_used": true,
+      "vsi_fallback_reason": "Labeled diagram or motion graphic best teaches comparison/rate/legend beats",
+      "viewer_understanding": "The clear takeaway about map of water main between hydrants.",
+      "ideal_visual": "Animated diagram or labeled close-up with callouts that map narration keywords to visible elements.",
+      "media_type": "motion_graphics",
+      "camera_motion": "pan left across subject",
+      "required_motion": "pan left across subject",
+      "overlay_style": "annotated diagram callouts, data labels",
+      "annotation_plan": "callouts for narrated keywords",
+      "motion_plan": "diagram build-on / reveal aligned to narration clauses"
+    }
+  ],
+  "creative_review": {
+    "answers": {
+      "every_scene_explains_narration": "YES",
+      "human_editor_would_keep_shots": "YES",
+      "opening_visually_compelling": "YES",
+      "visual_quality_justifies_publishing": "YES",
+      "weakest_scene": {
+        "scene_index": 1,
+        "scene_number": 2,
+        "tier": 3,
+        "source": "animated_diagram",
+        "reason": "Labeled diagram or motion graphic best teaches comparison/rate/legend beats",
+        "viewer_understanding": "Each major color indicates a flow rating firefighters use."
+      }
+    },
+    "metrics": {
+      "scene_count": 4,
+      "explain_ratio": 1.0,
+      "editor_keep_ratio": 1.0,
+      "static_last_resort_count": 0,
+      "mean_tier": 2.75,
+      "opening_tier": 2
+    },
+    "publish_justified": true,
+    "markdown": "# Visual Source Intelligence \u2014 Creative Review\n\n- Every scene visually explains narration: **YES** (4/4)\n- Human editor would keep these shots: **YES** (4/4)\n- Opening visually compelling: **YES**\n- Visual quality justifies publishing: **YES**\n\n## Weakest scene (not auto-rebuilt)\n\n- Scene: `2`\n- Source / tier: `animated_diagram` / `3`\n- Why: Labeled diagram or motion graphic best teaches comparison/rate/legend beats\n\n_Do not automatically rebuild from this review._\n"
+  }
+}

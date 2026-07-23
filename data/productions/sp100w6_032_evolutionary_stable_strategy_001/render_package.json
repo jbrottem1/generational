@@ -1,0 +1,1553 @@
+{
+  "render_package_version": "2.0",
+  "render_engine_version": "1.0.0",
+  "title": "Evolutionary stable strategy",
+  "created_at": "2026-07-10T18:01:05.000991+00:00",
+  "output_format": {
+    "aspect_ratio": "9:16",
+    "resolution": {
+      "width": 1080,
+      "height": 1920
+    },
+    "container": "mp4",
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "fps": 30,
+    "orientation": "vertical",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels"
+    ]
+  },
+  "platforms": [
+    "youtube_shorts",
+    "tiktok",
+    "instagram_reels",
+    "facebook_reels"
+  ],
+  "resolution": "1080x1920",
+  "aspect_ratio": "9:16",
+  "duration_sec": 60.0,
+  "timeline": {
+    "fps": 30,
+    "total_duration_sec": 60.0,
+    "segment_count": 6,
+    "segments": [
+      {
+        "scene_id": 1,
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "duration": 2.0,
+        "narration_reference": "narration/scene_1",
+        "visual_reference": "visual/scene_1",
+        "caption_reference": "captions/scene_1",
+        "audio_reference": "audio/scene_1",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "quick_punch_in",
+        "overlay_text": "What if the key",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 2,
+        "start_time": 2.0,
+        "end_time": 10.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_2",
+        "visual_reference": "visual/scene_2",
+        "caption_reference": "captions/scene_2",
+        "audio_reference": "audio/scene_2",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Evolutionary stable strategy explains",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 3,
+        "start_time": 10.0,
+        "end_time": 18.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_3",
+        "visual_reference": "visual/scene_3",
+        "caption_reference": "captions/scene_3",
+        "audio_reference": "audio/scene_3",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Imagine a strategy that,",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 4,
+        "start_time": 18.0,
+        "end_time": 26.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_4",
+        "visual_reference": "visual/scene_4",
+        "caption_reference": "captions/scene_4",
+        "audio_reference": "audio/scene_4",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Take the hawk-dove game.",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 5,
+        "start_time": 26.0,
+        "end_time": 34.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_5",
+        "visual_reference": "visual/scene_5",
+        "caption_reference": "captions/scene_5",
+        "audio_reference": "audio/scene_5",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Strategies evolve, but uncertainty",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 6,
+        "start_time": 34.0,
+        "end_time": 60.0,
+        "duration": 26.0,
+        "narration_reference": "narration/scene_6",
+        "visual_reference": "visual/scene_6",
+        "caption_reference": "captions/scene_6",
+        "audio_reference": "audio/scene_6",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Curious about how strategies",
+        "render_status": "planned"
+      }
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "scene_render_plan": [
+    {
+      "scene_id": 1,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Hook visual: What if the key to survival lies in strategy, not strength?",
+      "video_prompt": "Cinematic motion: Hook visual: What if the key to survival lies in strategy, not strength?",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "subtle push",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "quick_punch_in",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.188
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 70
+      },
+      "text_overlays": [
+        {
+          "text": "What if the key",
+          "treatment": "",
+          "start_sec": 0.0,
+          "end_sec": 2.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "bass hit",
+          "at_sec": 0.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "What if the key to survival lies in strategy, not strength?",
+      "duration_sec": 2.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Hook visual: What if the key to survival lies in strategy, not strength?",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 1
+      }
+    },
+    {
+      "scene_id": 2,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Context visual: Evolutionary stable strategy explains how species adapt and thrive in competition.",
+      "video_prompt": "Cinematic motion: Context visual: Evolutionary stable strategy explains how species adapt and thrive in competition.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Evolutionary stable strategy explains",
+          "treatment": "",
+          "start_sec": 2.0,
+          "end_sec": 10.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 2.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Evolutionary stable strategy explains how species adapt and thrive in competition.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Context visual: Evolutionary stable strategy explains how species adapt and thrive in competition.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 2
+      }
+    },
+    {
+      "scene_id": 3,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Escalation visual: Imagine a strategy that, once adopted, cannot be outcompeted.",
+      "video_prompt": "Cinematic motion: Escalation visual: Imagine a strategy that, once adopted, cannot be outcompeted.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Imagine a strategy that,",
+          "treatment": "",
+          "start_sec": 10.0,
+          "end_sec": 18.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 10.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Imagine a strategy that, once adopted, cannot be outcompeted.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Escalation visual: Imagine a strategy that, once adopted, cannot be outcompeted.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 3
+      }
+    },
+    {
+      "scene_id": 4,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Evidence visual: Take the hawk-dove game. Hawks fight for resources, doves avoid conflict. The balance determines survival.",
+      "video_prompt": "Cinematic motion: Evidence visual: Take the hawk-dove game. Hawks fight for resources, doves avoid conflict. The balance determines survival.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Take the hawk-dove game.",
+          "treatment": "",
+          "start_sec": 18.0,
+          "end_sec": 26.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 18.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Take the hawk-dove game. Hawks fight for resources, doves avoid conflict. The balance determines survival.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Evidence visual: Take the hawk-dove game. Hawks fight for resources, doves avoid conflict. The balance determines survival.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 4
+      }
+    },
+    {
+      "scene_id": 5,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Payoff visual: Strategies evolve, but uncertainty remains. Are we just playing a game?",
+      "video_prompt": "Cinematic motion: Payoff visual: Strategies evolve, but uncertainty remains. Are we just playing a game?",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Strategies evolve, but uncertainty",
+          "treatment": "",
+          "start_sec": 26.0,
+          "end_sec": 34.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 26.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Strategies evolve, but uncertainty remains. Are we just playing a game?",
+      "duration_sec": 8.0,
+      "resolved_asset": {}
+    },
+    {
+      "scene_id": 6,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Cta visual: Curious about how strategies shape our world? Hit that follow for more insights!",
+      "video_prompt": "Cinematic motion: Cta visual: Curious about how strategies shape our world? Hit that follow for more insights!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Curious about how strategies",
+          "treatment": "",
+          "start_sec": 34.0,
+          "end_sec": 60.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 34.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Curious about how strategies shape our world? Hit that follow for more insights!",
+      "duration_sec": 26.0,
+      "resolved_asset": {}
+    }
+  ],
+  "caption_render_plan": {
+    "mode": "word_by_word",
+    "style_preset": "bold_pop",
+    "style": {
+      "font": "Montserrat ExtraBold",
+      "size_pct": 4.8,
+      "fill": "#FFFFFF",
+      "stroke": "#000000",
+      "stroke_width_px": 6,
+      "emphasis_fill": "#FFD400",
+      "animation": "word pop 1.08x on entry",
+      "case": "upper"
+    },
+    "available_presets": [
+      "bold_pop",
+      "clean_minimal",
+      "karaoke_highlight",
+      "documentary_lower_third"
+    ],
+    "safe_area": {
+      "top_pct": 12.0,
+      "bottom_pct": 20.0,
+      "left_pct": 6.0,
+      "right_pct": 12.0
+    },
+    "platform_layouts": {
+      "youtube_shorts": {
+        "anchor_y_pct": 68.0,
+        "notes": "clear the title/channel block at the bottom"
+      },
+      "tiktok": {
+        "anchor_y_pct": 64.0,
+        "notes": "clear caption + music marquee, keep off the right rail"
+      },
+      "instagram_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "clear the audio attribution row"
+      },
+      "facebook_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "mirror the Reels layout"
+      }
+    },
+    "segments": [
+      {
+        "scene_id": 1,
+        "mode": "word_by_word",
+        "start_sec": 0.0,
+        "end_sec": 2.0,
+        "sentence": "What if the key to survival lies in strategy, not strength?",
+        "words": [
+          {
+            "word": "What",
+            "start_sec": 0.0,
+            "end_sec": 0.17,
+            "emphasis": false
+          },
+          {
+            "word": "if",
+            "start_sec": 0.17,
+            "end_sec": 0.29,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 0.29,
+            "end_sec": 0.43,
+            "emphasis": false
+          },
+          {
+            "word": "key",
+            "start_sec": 0.43,
+            "end_sec": 0.58,
+            "emphasis": false
+          },
+          {
+            "word": "to",
+            "start_sec": 0.58,
+            "end_sec": 0.7,
+            "emphasis": false
+          },
+          {
+            "word": "survival",
+            "start_sec": 0.7,
+            "end_sec": 0.99,
+            "emphasis": true
+          },
+          {
+            "word": "lies",
+            "start_sec": 0.99,
+            "end_sec": 1.16,
+            "emphasis": false
+          },
+          {
+            "word": "in",
+            "start_sec": 1.16,
+            "end_sec": 1.28,
+            "emphasis": false
+          },
+          {
+            "word": "strategy",
+            "start_sec": 1.28,
+            "end_sec": 1.57,
+            "emphasis": false
+          },
+          {
+            "word": "not",
+            "start_sec": 1.57,
+            "end_sec": 1.71,
+            "emphasis": false
+          },
+          {
+            "word": "strength",
+            "start_sec": 1.71,
+            "end_sec": 2.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "survival"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 2,
+        "mode": "word_by_word",
+        "start_sec": 2.0,
+        "end_sec": 10.0,
+        "sentence": "Evolutionary stable strategy explains how species adapt and thrive in competition.",
+        "words": [
+          {
+            "word": "Evolutionary",
+            "start_sec": 2.0,
+            "end_sec": 3.2,
+            "emphasis": true
+          },
+          {
+            "word": "stable",
+            "start_sec": 3.2,
+            "end_sec": 3.89,
+            "emphasis": false
+          },
+          {
+            "word": "strategy",
+            "start_sec": 3.89,
+            "end_sec": 4.75,
+            "emphasis": false
+          },
+          {
+            "word": "explains",
+            "start_sec": 4.75,
+            "end_sec": 5.61,
+            "emphasis": false
+          },
+          {
+            "word": "how",
+            "start_sec": 5.61,
+            "end_sec": 6.04,
+            "emphasis": false
+          },
+          {
+            "word": "species",
+            "start_sec": 6.04,
+            "end_sec": 6.82,
+            "emphasis": false
+          },
+          {
+            "word": "adapt",
+            "start_sec": 6.82,
+            "end_sec": 7.42,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 7.42,
+            "end_sec": 7.85,
+            "emphasis": false
+          },
+          {
+            "word": "thrive",
+            "start_sec": 7.85,
+            "end_sec": 8.54,
+            "emphasis": false
+          },
+          {
+            "word": "in",
+            "start_sec": 8.54,
+            "end_sec": 8.88,
+            "emphasis": false
+          },
+          {
+            "word": "competition",
+            "start_sec": 8.88,
+            "end_sec": 10.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "Evolutionary"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 3,
+        "mode": "word_by_word",
+        "start_sec": 10.0,
+        "end_sec": 18.0,
+        "sentence": "Imagine a strategy that, once adopted, cannot be outcompeted.",
+        "words": [
+          {
+            "word": "Imagine",
+            "start_sec": 10.0,
+            "end_sec": 11.06,
+            "emphasis": false
+          },
+          {
+            "word": "a",
+            "start_sec": 11.06,
+            "end_sec": 11.41,
+            "emphasis": false
+          },
+          {
+            "word": "strategy",
+            "start_sec": 11.41,
+            "end_sec": 12.59,
+            "emphasis": false
+          },
+          {
+            "word": "that",
+            "start_sec": 12.59,
+            "end_sec": 13.29,
+            "emphasis": false
+          },
+          {
+            "word": "once",
+            "start_sec": 13.29,
+            "end_sec": 14.0,
+            "emphasis": false
+          },
+          {
+            "word": "adopted",
+            "start_sec": 14.0,
+            "end_sec": 15.06,
+            "emphasis": false
+          },
+          {
+            "word": "cannot",
+            "start_sec": 15.06,
+            "end_sec": 16.0,
+            "emphasis": false
+          },
+          {
+            "word": "be",
+            "start_sec": 16.0,
+            "end_sec": 16.47,
+            "emphasis": false
+          },
+          {
+            "word": "outcompeted",
+            "start_sec": 16.47,
+            "end_sec": 18.0,
+            "emphasis": true
+          }
+        ],
+        "emphasis_words": [
+          "outcompeted"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 4,
+        "mode": "word_by_word",
+        "start_sec": 18.0,
+        "end_sec": 26.0,
+        "sentence": "Take the hawk-dove game. Hawks fight for resources, doves avoid conflict. The balance determines survival.",
+        "words": [
+          {
+            "word": "Take",
+            "start_sec": 18.0,
+            "end_sec": 18.41,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 18.41,
+            "end_sec": 18.75,
+            "emphasis": false
+          },
+          {
+            "word": "hawk-dove",
+            "start_sec": 18.75,
+            "end_sec": 19.49,
+            "emphasis": true
+          },
+          {
+            "word": "game",
+            "start_sec": 19.49,
+            "end_sec": 19.9,
+            "emphasis": false
+          },
+          {
+            "word": "Hawks",
+            "start_sec": 19.9,
+            "end_sec": 20.37,
+            "emphasis": false
+          },
+          {
+            "word": "fight",
+            "start_sec": 20.37,
+            "end_sec": 20.85,
+            "emphasis": false
+          },
+          {
+            "word": "for",
+            "start_sec": 20.85,
+            "end_sec": 21.19,
+            "emphasis": false
+          },
+          {
+            "word": "resources",
+            "start_sec": 21.19,
+            "end_sec": 21.93,
+            "emphasis": false
+          },
+          {
+            "word": "doves",
+            "start_sec": 21.93,
+            "end_sec": 22.41,
+            "emphasis": false
+          },
+          {
+            "word": "avoid",
+            "start_sec": 22.41,
+            "end_sec": 22.88,
+            "emphasis": false
+          },
+          {
+            "word": "conflict",
+            "start_sec": 22.88,
+            "end_sec": 23.56,
+            "emphasis": false
+          },
+          {
+            "word": "The",
+            "start_sec": 23.56,
+            "end_sec": 23.9,
+            "emphasis": false
+          },
+          {
+            "word": "balance",
+            "start_sec": 23.9,
+            "end_sec": 24.51,
+            "emphasis": false
+          },
+          {
+            "word": "determines",
+            "start_sec": 24.51,
+            "end_sec": 25.32,
+            "emphasis": true
+          },
+          {
+            "word": "survival",
+            "start_sec": 25.32,
+            "end_sec": 26.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "determines",
+          "hawk-dove"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 5,
+        "mode": "word_by_word",
+        "start_sec": 26.0,
+        "end_sec": 34.0,
+        "sentence": "Strategies evolve, but uncertainty remains. Are we just playing a game?",
+        "words": [
+          {
+            "word": "Strategies",
+            "start_sec": 26.0,
+            "end_sec": 27.2,
+            "emphasis": false
+          },
+          {
+            "word": "evolve",
+            "start_sec": 27.2,
+            "end_sec": 28.0,
+            "emphasis": false
+          },
+          {
+            "word": "but",
+            "start_sec": 28.0,
+            "end_sec": 28.5,
+            "emphasis": false
+          },
+          {
+            "word": "uncertainty",
+            "start_sec": 28.5,
+            "end_sec": 29.8,
+            "emphasis": true
+          },
+          {
+            "word": "remains",
+            "start_sec": 29.8,
+            "end_sec": 30.7,
+            "emphasis": false
+          },
+          {
+            "word": "Are",
+            "start_sec": 30.7,
+            "end_sec": 31.2,
+            "emphasis": false
+          },
+          {
+            "word": "we",
+            "start_sec": 31.2,
+            "end_sec": 31.6,
+            "emphasis": false
+          },
+          {
+            "word": "just",
+            "start_sec": 31.6,
+            "end_sec": 32.2,
+            "emphasis": false
+          },
+          {
+            "word": "playing",
+            "start_sec": 32.2,
+            "end_sec": 33.1,
+            "emphasis": false
+          },
+          {
+            "word": "a",
+            "start_sec": 33.1,
+            "end_sec": 33.4,
+            "emphasis": false
+          },
+          {
+            "word": "game",
+            "start_sec": 33.4,
+            "end_sec": 34.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "uncertainty"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 6,
+        "mode": "word_by_word",
+        "start_sec": 34.0,
+        "end_sec": 60.0,
+        "sentence": "Curious about how strategies shape our world? Hit that follow for more insights!",
+        "words": [
+          {
+            "word": "Curious",
+            "start_sec": 34.0,
+            "end_sec": 36.54,
+            "emphasis": false
+          },
+          {
+            "word": "about",
+            "start_sec": 36.54,
+            "end_sec": 38.52,
+            "emphasis": false
+          },
+          {
+            "word": "how",
+            "start_sec": 38.52,
+            "end_sec": 39.93,
+            "emphasis": false
+          },
+          {
+            "word": "strategies",
+            "start_sec": 39.93,
+            "end_sec": 43.33,
+            "emphasis": true
+          },
+          {
+            "word": "shape",
+            "start_sec": 43.33,
+            "end_sec": 45.3,
+            "emphasis": false
+          },
+          {
+            "word": "our",
+            "start_sec": 45.3,
+            "end_sec": 46.72,
+            "emphasis": false
+          },
+          {
+            "word": "world",
+            "start_sec": 46.72,
+            "end_sec": 48.7,
+            "emphasis": false
+          },
+          {
+            "word": "Hit",
+            "start_sec": 48.7,
+            "end_sec": 50.11,
+            "emphasis": false
+          },
+          {
+            "word": "that",
+            "start_sec": 50.11,
+            "end_sec": 51.8,
+            "emphasis": false
+          },
+          {
+            "word": "follow",
+            "start_sec": 51.8,
+            "end_sec": 54.07,
+            "emphasis": false
+          },
+          {
+            "word": "for",
+            "start_sec": 54.07,
+            "end_sec": 55.48,
+            "emphasis": false
+          },
+          {
+            "word": "more",
+            "start_sec": 55.48,
+            "end_sec": 57.17,
+            "emphasis": false
+          },
+          {
+            "word": "insights",
+            "start_sec": 57.17,
+            "end_sec": 60.0,
+            "emphasis": true
+          }
+        ],
+        "emphasis_words": [
+          "insights",
+          "strategies"
+        ],
+        "placement": "bottom third, safe zone"
+      }
+    ]
+  },
+  "audio_mix_plan": {
+    "duration_sec": 60.0,
+    "tracks": {
+      "narration": {
+        "level_db": -3.0,
+        "voice_style": {},
+        "segments": [
+          {
+            "scene_id": 1,
+            "start_sec": 0.0,
+            "end_sec": 2.0,
+            "text": "What if the key to survival lies in strategy, not strength?",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w6_032_evolutionary_stable_strategy_001/voice.mp3"
+          },
+          {
+            "scene_id": 2,
+            "start_sec": 2.0,
+            "end_sec": 10.0,
+            "text": "Evolutionary stable strategy explains how species adapt and thrive in competition.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w6_032_evolutionary_stable_strategy_001/voice.mp3"
+          },
+          {
+            "scene_id": 3,
+            "start_sec": 10.0,
+            "end_sec": 18.0,
+            "text": "Imagine a strategy that, once adopted, cannot be outcompeted.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w6_032_evolutionary_stable_strategy_001/voice.mp3"
+          },
+          {
+            "scene_id": 4,
+            "start_sec": 18.0,
+            "end_sec": 26.0,
+            "text": "Take the hawk-dove game. Hawks fight for resources, doves avoid conflict. The balance determines survival.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w6_032_evolutionary_stable_strategy_001/voice.mp3"
+          },
+          {
+            "scene_id": 5,
+            "start_sec": 26.0,
+            "end_sec": 34.0,
+            "text": "Strategies evolve, but uncertainty remains. Are we just playing a game?",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w6_032_evolutionary_stable_strategy_001/voice.mp3"
+          },
+          {
+            "scene_id": 6,
+            "start_sec": 34.0,
+            "end_sec": 60.0,
+            "text": "Curious about how strategies shape our world? Hit that follow for more insights!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w6_032_evolutionary_stable_strategy_001/voice.mp3"
+          }
+        ]
+      },
+      "music": {
+        "level_db": -18.0,
+        "style": "educational ambient",
+        "bpm_range": [
+          90,
+          120
+        ],
+        "energy_curve": [
+          "rise",
+          "sustain",
+          "resolve"
+        ],
+        "ducking": {
+          "enabled": true,
+          "trigger": "narration",
+          "duck_to_db": -26.0,
+          "attack_ms": 150,
+          "release_ms": 400
+        }
+      },
+      "sfx": {
+        "level_db": -10.0,
+        "cues": [
+          {
+            "scene_id": 1,
+            "cue": "bass hit",
+            "at_sec": 0.0
+          },
+          {
+            "scene_id": 2,
+            "cue": "whoosh",
+            "at_sec": 2.0
+          },
+          {
+            "scene_id": 3,
+            "cue": "whoosh",
+            "at_sec": 10.0
+          },
+          {
+            "scene_id": 4,
+            "cue": "whoosh",
+            "at_sec": 18.0
+          },
+          {
+            "scene_id": 5,
+            "cue": "whoosh",
+            "at_sec": 26.0
+          },
+          {
+            "scene_id": 6,
+            "cue": "whoosh",
+            "at_sec": 34.0
+          }
+        ]
+      },
+      "transitions": {
+        "level_db": -12.0,
+        "cues": []
+      }
+    },
+    "silence_drops": [
+      {
+        "scene_id": 5,
+        "at_sec": 25.6,
+        "duration_sec": 0.4,
+        "reason": "drop the full mix before the payoff beat"
+      }
+    ],
+    "loudness_target": {
+      "standard": "platform_safe_placeholder",
+      "integrated_lufs": -14.0,
+      "true_peak_db": -1.0,
+      "notes": "Verify with a real loudness pass when actual audio is rendered."
+    }
+  },
+  "transition_plan": {
+    "supported_types": [
+      "cut",
+      "fade",
+      "push",
+      "zoom",
+      "whip_pan",
+      "glitch",
+      "flash",
+      "documentary_slow_zoom",
+      "cinematic_push_in",
+      "quick_cut"
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "motion_plan": [
+    {
+      "scene_id": 1,
+      "effect": "quick_punch_in",
+      "intensity": 70,
+      "duration_sec": 2.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.188
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_out"
+    },
+    {
+      "scene_id": 2,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 3,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 4,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 5,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 6,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 26.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    }
+  ],
+  "asset_requirements": [],
+  "missing_assets": [],
+  "render_warnings": [],
+  "estimated_render_duration_sec": 60.0,
+  "production_readiness_score": 100,
+  "validation": {
+    "status": "SUCCESS",
+    "checks": [
+      {
+        "check": "scenes_present",
+        "passed": true,
+        "detail": "6 scenes in the plan."
+      },
+      {
+        "check": "scenes_have_visuals",
+        "passed": true,
+        "detail": "Every scene has a visual asset or prompt."
+      },
+      {
+        "check": "scenes_have_narration",
+        "passed": true,
+        "detail": "Every scene has narration."
+      },
+      {
+        "check": "captions_exist",
+        "passed": true,
+        "detail": "6 caption segments planned."
+      },
+      {
+        "check": "audio_plan_exists",
+        "passed": true,
+        "detail": "Audio mix plan covers narration/music/SFX tracks."
+      },
+      {
+        "check": "runtime_reasonable",
+        "passed": true,
+        "detail": "Total runtime 60.0s is inside the 5.0-180.0s short-form window."
+      },
+      {
+        "check": "output_format_supported",
+        "passed": true,
+        "detail": "9:16 1080x1920 MP4 \u2014 supported."
+      },
+      {
+        "check": "assets_resolved",
+        "passed": true,
+        "detail": "All asset requests were fulfilled."
+      }
+    ],
+    "problems": [],
+    "production_readiness_score": 100
+  },
+  "render_status": "SUCCESS",
+  "mock_output_path": "data/productions/sp100w6_032_evolutionary_stable_strategy_001/render.mp4",
+  "output_path": "data/productions/sp100w6_032_evolutionary_stable_strategy_001/render.mp4",
+  "mp4_path": "data/productions/sp100w6_032_evolutionary_stable_strategy_001/render.mp4",
+  "file_uri": "data/productions/sp100w6_032_evolutionary_stable_strategy_001/render.mp4",
+  "render_log": [
+    "color_bed\u2192mp4 (no visual assets resolved)",
+    "ffmpeg_exit=0"
+  ],
+  "render_job": {},
+  "mock": false,
+  "assembly": {
+    "ok": true,
+    "mock": false,
+    "error": "",
+    "output_path": "data/productions/sp100w6_032_evolutionary_stable_strategy_001/render.mp4",
+    "absolute_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w6_032_evolutionary_stable_strategy_001/render.mp4",
+    "bytes": 367121,
+    "duration_sec": 60.0,
+    "resolution": "1080x1920",
+    "ffmpeg": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/venv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "log": [
+      "color_bed\u2192mp4 (no visual assets resolved)",
+      "ffmpeg_exit=0"
+    ],
+    "visual_count": 0,
+    "has_audio": true,
+    "manifest": {
+      "title": "Evolutionary stable strategy",
+      "format": {
+        "aspect_ratio": "9:16",
+        "resolution": {
+          "width": 1080,
+          "height": 1920
+        },
+        "container": "mp4",
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "fps": 30,
+        "orientation": "vertical",
+        "platforms": [
+          "youtube_shorts",
+          "tiktok",
+          "instagram_reels",
+          "facebook_reels"
+        ]
+      },
+      "visuals": [],
+      "audio": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w6_032_evolutionary_stable_strategy_001/voice.mp3"
+    }
+  },
+  "render_manifest": {
+    "scenes": 6,
+    "timeline_segments": 6,
+    "caption_segments": 6,
+    "audio_tracks": [
+      "narration",
+      "music",
+      "sfx",
+      "transitions"
+    ],
+    "transitions": 5,
+    "assets_requested": 0,
+    "assets_missing": 0,
+    "warnings": 0,
+    "readiness": 100,
+    "ready_for_publishing": true,
+    "real_mp4": true
+  }
+}

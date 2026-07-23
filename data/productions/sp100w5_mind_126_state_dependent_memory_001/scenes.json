@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about state dependent memory than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about state dependent memory than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about state dependent memory than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about state dependent memory than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "State dependent memory suggests our recall is tied to our emotional or physical state.",
+    "visual_description": "Context visual: State dependent memory suggests our recall is tied to our emotional or physical state.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: State dependent memory suggests our recall is tied to our emotional or physical state.",
+    "ai_video_prompt": "Cinematic motion: Context visual: State dependent memory suggests our recall is tied to our emotional or physical state.",
+    "stock_footage_query": "",
+    "text_overlay": "State dependent memory suggests",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Ever wondered why you remember things better when you\u2019re in the same mood?",
+    "visual_description": "Escalation visual: Ever wondered why you remember things better when you\u2019re in the same mood?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Ever wondered why you remember things better when you\u2019re in the same mood?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Ever wondered why you remember things better when you\u2019re in the same mood?",
+    "stock_footage_query": "",
+    "text_overlay": "Ever wondered why you",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Research shows that if you learn something while happy, you're more likely to recall it when you\u2019re happy.",
+    "visual_description": "Evidence visual: Research shows that if you learn something while happy, you're more likely to recall it when you\u2019re happy.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows that if you learn something while happy, you're more likely to recall it when you\u2019re happy.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows that if you learn something while happy, you're more likely to recall it when you\u2019re happy.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows that if",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "So, your mood isn\u2019t just a feeling; it's a key to unlocking memories.",
+    "visual_description": "Payoff visual: So, your mood isn\u2019t just a feeling; it's a key to unlocking memories.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, your mood isn\u2019t just a feeling; it's a key to unlocking memories.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, your mood isn\u2019t just a feeling; it's a key to unlocking memories.",
+    "stock_footage_query": "",
+    "text_overlay": "So, your mood isn\u2019t",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "Curious to learn more about your mind? Follow for deeper insights!",
+    "visual_description": "Cta visual: Curious to learn more about your mind? Follow for deeper insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious to learn more about your mind? Follow for deeper insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious to learn more about your mind? Follow for deeper insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

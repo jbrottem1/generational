@@ -1,0 +1,46 @@
+{
+  "character_id": "PATIENT_CHILD_001",
+  "architecture": "clothing_separated_from_body",
+  "default_outfit": "hospital_gown_soft",
+  "outfits": [
+    {
+      "id": "hospital_gown_soft",
+      "layers": [
+        "soft_gown"
+      ],
+      "separated_from_body": true,
+      "cloth_sim": true
+    },
+    {
+      "id": "everyday_clothes",
+      "layers": [
+        "base_garment",
+        "everyday_clothes"
+      ],
+      "separated_from_body": true,
+      "cloth_sim": true
+    }
+  ],
+  "outfit_ids": [
+    "hospital_gown_soft",
+    "everyday_clothes"
+  ],
+  "simulate_as_fabric": true,
+  "responds_to": [
+    "walk",
+    "run",
+    "arm_move",
+    "sit",
+    "wind",
+    "gravity",
+    "turn"
+  ],
+  "forbid": [
+    "frozen_fabric",
+    "fabric_leads_body",
+    "limb_clipping"
+  ],
+  "inheritable_architecture": true,
+  "existing_ref": null,
+  "reusable": true
+}

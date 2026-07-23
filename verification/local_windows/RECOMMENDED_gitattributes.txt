@@ -1,0 +1,35 @@
+# Recommended Git LFS attributes for Generational 3D production
+#
+# STATUS: PROPOSAL ONLY - not applied automatically.
+# Applying this will not migrate existing history. Large binaries already in Git
+# would need a separate, explicitly approved migration (git lfs migrate).
+#
+# Current finding (migration/windows-workstation):
+# - No .blend/.fbx/.glb/.gltf/.exr/.hdr files exist in the Git tree
+# - DOCTOR_001 exists as JSON/metadata packages under data/, not as Blender binaries
+# - Therefore missing .blend files are an asset-sync / external-store issue, not an LFS checkout issue
+#
+# If you approve enabling LFS going forward, copy these lines into a root .gitattributes:
+
+*.blend filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.glb filter=lfs diff=lfs merge=lfs -text
+*.gltf filter=lfs diff=lfs merge=lfs -text
+*.abc filter=lfs diff=lfs merge=lfs -text
+*.usd filter=lfs diff=lfs merge=lfs -text
+*.usda filter=lfs diff=lfs merge=lfs -text
+*.usdc filter=lfs diff=lfs merge=lfs -text
+*.exr filter=lfs diff=lfs merge=lfs -text
+*.hdr filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.tiff filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+*.wav filter=lfs diff=lfs merge=lfs -text
+
+# After creating .gitattributes on a clean branch:
+#   git lfs install
+#   git add .gitattributes
+#   git commit -m "Track 3D/media binaries with Git LFS"
+# Then add new binary assets as usual. Do NOT run git lfs migrate without approval.

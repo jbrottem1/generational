@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "The iron in your blood? It was forged in a dying star.",
+    "visual_description": "Hook visual: The iron in your blood? It was forged in a dying star.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: The iron in your blood? It was forged in a dying star.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: The iron in your blood? It was forged in a dying star.",
+    "stock_footage_query": "",
+    "text_overlay": "The iron in your",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Stellar nucleosynthesis happens inside stars, where lighter elements fuse into heavier ones.",
+    "visual_description": "Context visual: Stellar nucleosynthesis happens inside stars, where lighter elements fuse into heavier ones.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Stellar nucleosynthesis happens inside stars, where lighter elements fuse into heavier ones.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Stellar nucleosynthesis happens inside stars, where lighter elements fuse into heavier ones.",
+    "stock_footage_query": "",
+    "text_overlay": "Stellar nucleosynthesis happens inside",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "awe",
+    "length_sec": 8.0,
+    "narration": "But when these stars explode as supernovae, they scatter these elements across the universe.",
+    "visual_description": "Escalation visual: But when these stars explode as supernovae, they scatter these elements across the universe.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But when these stars explode as supernovae, they scatter these elements across the universe.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But when these stars explode as supernovae, they scatter these elements across the universe.",
+    "stock_footage_query": "",
+    "text_overlay": "But when these stars",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "wonder",
+    "length_sec": 8.0,
+    "narration": "That\u2019s right! Elements like iron, carbon, and oxygen all originate from these cosmic events.",
+    "visual_description": "Evidence visual: That\u2019s right! Elements like iron, carbon, and oxygen all originate from these cosmic events.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: That\u2019s right! Elements like iron, carbon, and oxygen all originate from these cosmic events.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: That\u2019s right! Elements like iron, carbon, and oxygen all originate from these cosmic events.",
+    "stock_footage_query": "",
+    "text_overlay": "That\u2019s right! Elements like",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "pride",
+    "length_sec": 12.0,
+    "narration": "So next time you look at the night sky, remember: you\u2019re made of stardust!",
+    "visual_description": "Payoff visual: So next time you look at the night sky, remember: you\u2019re made of stardust!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So next time you look at the night sky, remember: you\u2019re made of stardust!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So next time you look at the night sky, remember: you\u2019re made of stardust!",
+    "stock_footage_query": "",
+    "text_overlay": "So next time you",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "excitement",
+    "length_sec": 22.0,
+    "narration": "Curious for more cosmic secrets? Like and follow for a journey through the universe!",
+    "visual_description": "Cta visual: Curious for more cosmic secrets? Like and follow for a journey through the universe!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious for more cosmic secrets? Like and follow for a journey through the universe!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious for more cosmic secrets? Like and follow for a journey through the universe!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious for more cosmic",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

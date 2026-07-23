@@ -1,0 +1,84 @@
+{
+  "title": "Stroke Types Overview",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "An engaging overview of the different types of strokes, revealing their complexities.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about stroke types.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Strokes come mainly in two forms: ischemic and hemorrhagic. But what does that really mean?",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Ischemic strokes occur when blood clots block blood flow to the brain.",
+      "emotion": "curiosity",
+      "delivery": "serious",
+      "retention_device": "visual contrast"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "On the other hand, hemorrhagic strokes happen when a blood vessel bursts, leaking blood into the brain.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "visual aid"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 37.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "Did you know that symptoms can vary? Sudden weakness, confusion, and trouble speaking are key signs!",
+      "emotion": "urgency",
+      "delivery": "urgent",
+      "retention_device": "statistic"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 37.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "Recognizing these signs can save lives. Early treatment is crucial.",
+      "emotion": "seriousness",
+      "delivery": "impactful",
+      "retention_device": "call to action"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay informed and share this with someone who needs to know.",
+      "emotion": "encouragement",
+      "delivery": "motivational",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about stroke types. Strokes come mainly in two forms: ischemic and hemorrhagic. But what does that really mean? Ischemic strokes occur when blood clots block blood flow to the brain. On the other hand, hemorrhagic strokes happen when a blood vessel bursts, leaking blood into the brain. Did you know that symptoms can vary? Sudden weakness, confusion, and trouble speaking are key signs! Recognizing these signs can save lives. Early treatment is crucial. Stay informed and share this with someone who needs to know.",
+  "call_to_action": "Stay informed and share this with someone who needs to know.",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:21:18.784252+00:00",
+  "source": "ai"
+}

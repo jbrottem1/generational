@@ -1,0 +1,1555 @@
+{
+  "render_package_version": "2.0",
+  "render_engine_version": "1.0.0",
+  "title": "Bigger Wings Aren't Always Better",
+  "created_at": "2026-07-10T17:11:02.783709+00:00",
+  "output_format": {
+    "aspect_ratio": "9:16",
+    "resolution": {
+      "width": 1080,
+      "height": 1920
+    },
+    "container": "mp4",
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "fps": 30,
+    "orientation": "vertical",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels"
+    ]
+  },
+  "platforms": [
+    "youtube_shorts",
+    "tiktok",
+    "instagram_reels",
+    "facebook_reels"
+  ],
+  "resolution": "1080x1920",
+  "aspect_ratio": "9:16",
+  "duration_sec": 60.0,
+  "timeline": {
+    "fps": 30,
+    "total_duration_sec": 60.0,
+    "segment_count": 6,
+    "segments": [
+      {
+        "scene_id": 1,
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "duration": 2.0,
+        "narration_reference": "narration/scene_1",
+        "visual_reference": "visual/scene_1",
+        "caption_reference": "captions/scene_1",
+        "audio_reference": "audio/scene_1",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "quick_punch_in",
+        "overlay_text": "What if bigger wings",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 2,
+        "start_time": 2.0,
+        "end_time": 10.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_2",
+        "visual_reference": "visual/scene_2",
+        "caption_reference": "captions/scene_2",
+        "audio_reference": "audio/scene_2",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Aircraft design is a",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 3,
+        "start_time": 10.0,
+        "end_time": 18.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_3",
+        "visual_reference": "visual/scene_3",
+        "caption_reference": "captions/scene_3",
+        "audio_reference": "audio/scene_3",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "As wings get bigger,",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 4,
+        "start_time": 18.0,
+        "end_time": 26.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_4",
+        "visual_reference": "visual/scene_4",
+        "caption_reference": "captions/scene_4",
+        "audio_reference": "audio/scene_4",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Engineers find optimal wing",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 5,
+        "start_time": 26.0,
+        "end_time": 38.0,
+        "duration": 12.0,
+        "narration_reference": "narration/scene_5",
+        "visual_reference": "visual/scene_5",
+        "caption_reference": "captions/scene_5",
+        "audio_reference": "audio/scene_5",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "So, next time you",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 6,
+        "start_time": 38.0,
+        "end_time": 60.0,
+        "duration": 22.0,
+        "narration_reference": "narration/scene_6",
+        "visual_reference": "visual/scene_6",
+        "caption_reference": "captions/scene_6",
+        "audio_reference": "audio/scene_6",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Curious about more aviation",
+        "render_status": "planned"
+      }
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "scene_render_plan": [
+    {
+      "scene_id": 1,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Hook visual: What if bigger wings could actually hinder flight?",
+      "video_prompt": "Cinematic motion: Hook visual: What if bigger wings could actually hinder flight?",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "subtle push",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "quick_punch_in",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.188
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 70
+      },
+      "text_overlays": [
+        {
+          "text": "What if bigger wings",
+          "treatment": "",
+          "start_sec": 0.0,
+          "end_sec": 2.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "bass hit",
+          "at_sec": 0.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "What if bigger wings could actually hinder flight?",
+      "duration_sec": 2.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Hook visual: What if bigger wings could actually hinder flight?",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 1
+      }
+    },
+    {
+      "scene_id": 2,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Context visual: Aircraft design is a delicate balance of lift, drag, weight, and power.",
+      "video_prompt": "Cinematic motion: Context visual: Aircraft design is a delicate balance of lift, drag, weight, and power.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Aircraft design is a",
+          "treatment": "",
+          "start_sec": 2.0,
+          "end_sec": 10.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 2.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Aircraft design is a delicate balance of lift, drag, weight, and power.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Context visual: Aircraft design is a delicate balance of lift, drag, weight, and power.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 2
+      }
+    },
+    {
+      "scene_id": 3,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Escalation visual: As wings get bigger, drag increases. It\u2019s not just about size!",
+      "video_prompt": "Cinematic motion: Escalation visual: As wings get bigger, drag increases. It\u2019s not just about size!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "As wings get bigger,",
+          "treatment": "",
+          "start_sec": 10.0,
+          "end_sec": 18.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 10.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "As wings get bigger, drag increases. It\u2019s not just about size!",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Escalation visual: As wings get bigger, drag increases. It\u2019s not just about size!",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 3
+      }
+    },
+    {
+      "scene_id": 4,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Evidence visual: Engineers find optimal wing sizes that minimize drag while maximizing lift.",
+      "video_prompt": "Cinematic motion: Evidence visual: Engineers find optimal wing sizes that minimize drag while maximizing lift.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Engineers find optimal wing",
+          "treatment": "",
+          "start_sec": 18.0,
+          "end_sec": 26.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 18.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Engineers find optimal wing sizes that minimize drag while maximizing lift.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Evidence visual: Engineers find optimal wing sizes that minimize drag while maximizing lift.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 4
+      }
+    },
+    {
+      "scene_id": 5,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Payoff visual: So, next time you think bigger is better, remember: efficiency is key in aircraft design.",
+      "video_prompt": "Cinematic motion: Payoff visual: So, next time you think bigger is better, remember: efficiency is key in aircraft design.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "So, next time you",
+          "treatment": "",
+          "start_sec": 26.0,
+          "end_sec": 38.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 26.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "So, next time you think bigger is better, remember: efficiency is key in aircraft design.",
+      "duration_sec": 12.0,
+      "resolved_asset": {}
+    },
+    {
+      "scene_id": 6,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Cta visual: Curious about more aviation insights? Hit that follow for more science discoveries!",
+      "video_prompt": "Cinematic motion: Cta visual: Curious about more aviation insights? Hit that follow for more science discoveries!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Curious about more aviation",
+          "treatment": "",
+          "start_sec": 38.0,
+          "end_sec": 60.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 38.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Curious about more aviation insights? Hit that follow for more science discoveries!",
+      "duration_sec": 22.0,
+      "resolved_asset": {}
+    }
+  ],
+  "caption_render_plan": {
+    "mode": "word_by_word",
+    "style_preset": "bold_pop",
+    "style": {
+      "font": "Montserrat ExtraBold",
+      "size_pct": 4.8,
+      "fill": "#FFFFFF",
+      "stroke": "#000000",
+      "stroke_width_px": 6,
+      "emphasis_fill": "#FFD400",
+      "animation": "word pop 1.08x on entry",
+      "case": "upper"
+    },
+    "available_presets": [
+      "bold_pop",
+      "clean_minimal",
+      "karaoke_highlight",
+      "documentary_lower_third"
+    ],
+    "safe_area": {
+      "top_pct": 12.0,
+      "bottom_pct": 20.0,
+      "left_pct": 6.0,
+      "right_pct": 12.0
+    },
+    "platform_layouts": {
+      "youtube_shorts": {
+        "anchor_y_pct": 68.0,
+        "notes": "clear the title/channel block at the bottom"
+      },
+      "tiktok": {
+        "anchor_y_pct": 64.0,
+        "notes": "clear caption + music marquee, keep off the right rail"
+      },
+      "instagram_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "clear the audio attribution row"
+      },
+      "facebook_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "mirror the Reels layout"
+      }
+    },
+    "segments": [
+      {
+        "scene_id": 1,
+        "mode": "word_by_word",
+        "start_sec": 0.0,
+        "end_sec": 2.0,
+        "sentence": "What if bigger wings could actually hinder flight?",
+        "words": [
+          {
+            "word": "What",
+            "start_sec": 0.0,
+            "end_sec": 0.21,
+            "emphasis": false
+          },
+          {
+            "word": "if",
+            "start_sec": 0.21,
+            "end_sec": 0.34,
+            "emphasis": false
+          },
+          {
+            "word": "bigger",
+            "start_sec": 0.34,
+            "end_sec": 0.62,
+            "emphasis": false
+          },
+          {
+            "word": "wings",
+            "start_sec": 0.62,
+            "end_sec": 0.86,
+            "emphasis": false
+          },
+          {
+            "word": "could",
+            "start_sec": 0.86,
+            "end_sec": 1.1,
+            "emphasis": false
+          },
+          {
+            "word": "actually",
+            "start_sec": 1.1,
+            "end_sec": 1.45,
+            "emphasis": true
+          },
+          {
+            "word": "hinder",
+            "start_sec": 1.45,
+            "end_sec": 1.72,
+            "emphasis": false
+          },
+          {
+            "word": "flight",
+            "start_sec": 1.72,
+            "end_sec": 2.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "actually"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 2,
+        "mode": "word_by_word",
+        "start_sec": 2.0,
+        "end_sec": 10.0,
+        "sentence": "Aircraft design is a delicate balance of lift, drag, weight, and power.",
+        "words": [
+          {
+            "word": "Aircraft",
+            "start_sec": 2.0,
+            "end_sec": 3.0,
+            "emphasis": true
+          },
+          {
+            "word": "design",
+            "start_sec": 3.0,
+            "end_sec": 3.8,
+            "emphasis": false
+          },
+          {
+            "word": "is",
+            "start_sec": 3.8,
+            "end_sec": 4.2,
+            "emphasis": false
+          },
+          {
+            "word": "a",
+            "start_sec": 4.2,
+            "end_sec": 4.5,
+            "emphasis": false
+          },
+          {
+            "word": "delicate",
+            "start_sec": 4.5,
+            "end_sec": 5.5,
+            "emphasis": true
+          },
+          {
+            "word": "balance",
+            "start_sec": 5.5,
+            "end_sec": 6.4,
+            "emphasis": false
+          },
+          {
+            "word": "of",
+            "start_sec": 6.4,
+            "end_sec": 6.8,
+            "emphasis": false
+          },
+          {
+            "word": "lift",
+            "start_sec": 6.8,
+            "end_sec": 7.4,
+            "emphasis": false
+          },
+          {
+            "word": "drag",
+            "start_sec": 7.4,
+            "end_sec": 8.0,
+            "emphasis": false
+          },
+          {
+            "word": "weight",
+            "start_sec": 8.0,
+            "end_sec": 8.8,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 8.8,
+            "end_sec": 9.3,
+            "emphasis": false
+          },
+          {
+            "word": "power",
+            "start_sec": 9.3,
+            "end_sec": 10.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "Aircraft",
+          "delicate"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 3,
+        "mode": "word_by_word",
+        "start_sec": 10.0,
+        "end_sec": 18.0,
+        "sentence": "As wings get bigger, drag increases. It\u2019s not just about size!",
+        "words": [
+          {
+            "word": "As",
+            "start_sec": 10.0,
+            "end_sec": 10.44,
+            "emphasis": false
+          },
+          {
+            "word": "wings",
+            "start_sec": 10.44,
+            "end_sec": 11.22,
+            "emphasis": false
+          },
+          {
+            "word": "get",
+            "start_sec": 11.22,
+            "end_sec": 11.78,
+            "emphasis": false
+          },
+          {
+            "word": "bigger",
+            "start_sec": 11.78,
+            "end_sec": 12.67,
+            "emphasis": true
+          },
+          {
+            "word": "drag",
+            "start_sec": 12.67,
+            "end_sec": 13.33,
+            "emphasis": false
+          },
+          {
+            "word": "increases",
+            "start_sec": 13.33,
+            "end_sec": 14.56,
+            "emphasis": true
+          },
+          {
+            "word": "It",
+            "start_sec": 14.56,
+            "end_sec": 15.0,
+            "emphasis": false
+          },
+          {
+            "word": "s",
+            "start_sec": 15.0,
+            "end_sec": 15.33,
+            "emphasis": false
+          },
+          {
+            "word": "not",
+            "start_sec": 15.33,
+            "end_sec": 15.89,
+            "emphasis": false
+          },
+          {
+            "word": "just",
+            "start_sec": 15.89,
+            "end_sec": 16.56,
+            "emphasis": false
+          },
+          {
+            "word": "about",
+            "start_sec": 16.56,
+            "end_sec": 17.33,
+            "emphasis": false
+          },
+          {
+            "word": "size",
+            "start_sec": 17.33,
+            "end_sec": 18.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "bigger",
+          "increases"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 4,
+        "mode": "word_by_word",
+        "start_sec": 18.0,
+        "end_sec": 26.0,
+        "sentence": "Engineers find optimal wing sizes that minimize drag while maximizing lift.",
+        "words": [
+          {
+            "word": "Engineers",
+            "start_sec": 18.0,
+            "end_sec": 19.02,
+            "emphasis": false
+          },
+          {
+            "word": "find",
+            "start_sec": 19.02,
+            "end_sec": 19.58,
+            "emphasis": false
+          },
+          {
+            "word": "optimal",
+            "start_sec": 19.58,
+            "end_sec": 20.42,
+            "emphasis": false
+          },
+          {
+            "word": "wing",
+            "start_sec": 20.42,
+            "end_sec": 20.98,
+            "emphasis": false
+          },
+          {
+            "word": "sizes",
+            "start_sec": 20.98,
+            "end_sec": 21.63,
+            "emphasis": false
+          },
+          {
+            "word": "that",
+            "start_sec": 21.63,
+            "end_sec": 22.19,
+            "emphasis": false
+          },
+          {
+            "word": "minimize",
+            "start_sec": 22.19,
+            "end_sec": 23.12,
+            "emphasis": false
+          },
+          {
+            "word": "drag",
+            "start_sec": 23.12,
+            "end_sec": 23.67,
+            "emphasis": false
+          },
+          {
+            "word": "while",
+            "start_sec": 23.67,
+            "end_sec": 24.33,
+            "emphasis": false
+          },
+          {
+            "word": "maximizing",
+            "start_sec": 24.33,
+            "end_sec": 25.44,
+            "emphasis": true
+          },
+          {
+            "word": "lift",
+            "start_sec": 25.44,
+            "end_sec": 26.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "maximizing"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 5,
+        "mode": "word_by_word",
+        "start_sec": 26.0,
+        "end_sec": 38.0,
+        "sentence": "So, next time you think bigger is better, remember: efficiency is key in aircraft design.",
+        "words": [
+          {
+            "word": "So",
+            "start_sec": 26.0,
+            "end_sec": 26.48,
+            "emphasis": false
+          },
+          {
+            "word": "next",
+            "start_sec": 26.48,
+            "end_sec": 27.19,
+            "emphasis": false
+          },
+          {
+            "word": "time",
+            "start_sec": 27.19,
+            "end_sec": 27.9,
+            "emphasis": false
+          },
+          {
+            "word": "you",
+            "start_sec": 27.9,
+            "end_sec": 28.5,
+            "emphasis": false
+          },
+          {
+            "word": "think",
+            "start_sec": 28.5,
+            "end_sec": 29.33,
+            "emphasis": false
+          },
+          {
+            "word": "bigger",
+            "start_sec": 29.33,
+            "end_sec": 30.28,
+            "emphasis": false
+          },
+          {
+            "word": "is",
+            "start_sec": 30.28,
+            "end_sec": 30.75,
+            "emphasis": false
+          },
+          {
+            "word": "better",
+            "start_sec": 30.75,
+            "end_sec": 31.7,
+            "emphasis": false
+          },
+          {
+            "word": "remember",
+            "start_sec": 31.7,
+            "end_sec": 32.89,
+            "emphasis": true
+          },
+          {
+            "word": "efficiency",
+            "start_sec": 32.89,
+            "end_sec": 34.32,
+            "emphasis": true
+          },
+          {
+            "word": "is",
+            "start_sec": 34.32,
+            "end_sec": 34.79,
+            "emphasis": false
+          },
+          {
+            "word": "key",
+            "start_sec": 34.79,
+            "end_sec": 35.39,
+            "emphasis": false
+          },
+          {
+            "word": "in",
+            "start_sec": 35.39,
+            "end_sec": 35.86,
+            "emphasis": false
+          },
+          {
+            "word": "aircraft",
+            "start_sec": 35.86,
+            "end_sec": 37.05,
+            "emphasis": false
+          },
+          {
+            "word": "design",
+            "start_sec": 37.05,
+            "end_sec": 38.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "efficiency",
+          "remember"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 6,
+        "mode": "word_by_word",
+        "start_sec": 38.0,
+        "end_sec": 60.0,
+        "sentence": "Curious about more aviation insights? Hit that follow for more science discoveries!",
+        "words": [
+          {
+            "word": "Curious",
+            "start_sec": 38.0,
+            "end_sec": 40.11,
+            "emphasis": false
+          },
+          {
+            "word": "about",
+            "start_sec": 40.11,
+            "end_sec": 41.74,
+            "emphasis": false
+          },
+          {
+            "word": "more",
+            "start_sec": 41.74,
+            "end_sec": 43.15,
+            "emphasis": false
+          },
+          {
+            "word": "aviation",
+            "start_sec": 43.15,
+            "end_sec": 45.49,
+            "emphasis": true
+          },
+          {
+            "word": "insights",
+            "start_sec": 45.49,
+            "end_sec": 47.83,
+            "emphasis": false
+          },
+          {
+            "word": "Hit",
+            "start_sec": 47.83,
+            "end_sec": 49.0,
+            "emphasis": false
+          },
+          {
+            "word": "that",
+            "start_sec": 49.0,
+            "end_sec": 50.4,
+            "emphasis": false
+          },
+          {
+            "word": "follow",
+            "start_sec": 50.4,
+            "end_sec": 52.28,
+            "emphasis": false
+          },
+          {
+            "word": "for",
+            "start_sec": 52.28,
+            "end_sec": 53.45,
+            "emphasis": false
+          },
+          {
+            "word": "more",
+            "start_sec": 53.45,
+            "end_sec": 54.85,
+            "emphasis": false
+          },
+          {
+            "word": "science",
+            "start_sec": 54.85,
+            "end_sec": 56.96,
+            "emphasis": false
+          },
+          {
+            "word": "discoveries",
+            "start_sec": 56.96,
+            "end_sec": 60.0,
+            "emphasis": true
+          }
+        ],
+        "emphasis_words": [
+          "aviation",
+          "discoveries"
+        ],
+        "placement": "bottom third, safe zone"
+      }
+    ]
+  },
+  "audio_mix_plan": {
+    "duration_sec": 60.0,
+    "tracks": {
+      "narration": {
+        "level_db": -3.0,
+        "voice_style": {},
+        "segments": [
+          {
+            "scene_id": 1,
+            "start_sec": 0.0,
+            "end_sec": 2.0,
+            "text": "What if bigger wings could actually hinder flight?",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w3_spruce_goose_myth_001/voice.mp3"
+          },
+          {
+            "scene_id": 2,
+            "start_sec": 2.0,
+            "end_sec": 10.0,
+            "text": "Aircraft design is a delicate balance of lift, drag, weight, and power.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w3_spruce_goose_myth_001/voice.mp3"
+          },
+          {
+            "scene_id": 3,
+            "start_sec": 10.0,
+            "end_sec": 18.0,
+            "text": "As wings get bigger, drag increases. It\u2019s not just about size!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w3_spruce_goose_myth_001/voice.mp3"
+          },
+          {
+            "scene_id": 4,
+            "start_sec": 18.0,
+            "end_sec": 26.0,
+            "text": "Engineers find optimal wing sizes that minimize drag while maximizing lift.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w3_spruce_goose_myth_001/voice.mp3"
+          },
+          {
+            "scene_id": 5,
+            "start_sec": 26.0,
+            "end_sec": 38.0,
+            "text": "So, next time you think bigger is better, remember: efficiency is key in aircraft design.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w3_spruce_goose_myth_001/voice.mp3"
+          },
+          {
+            "scene_id": 6,
+            "start_sec": 38.0,
+            "end_sec": 60.0,
+            "text": "Curious about more aviation insights? Hit that follow for more science discoveries!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w3_spruce_goose_myth_001/voice.mp3"
+          }
+        ]
+      },
+      "music": {
+        "level_db": -18.0,
+        "style": "educational ambient",
+        "bpm_range": [
+          90,
+          120
+        ],
+        "energy_curve": [
+          "rise",
+          "sustain",
+          "resolve"
+        ],
+        "ducking": {
+          "enabled": true,
+          "trigger": "narration",
+          "duck_to_db": -26.0,
+          "attack_ms": 150,
+          "release_ms": 400
+        }
+      },
+      "sfx": {
+        "level_db": -10.0,
+        "cues": [
+          {
+            "scene_id": 1,
+            "cue": "bass hit",
+            "at_sec": 0.0
+          },
+          {
+            "scene_id": 2,
+            "cue": "whoosh",
+            "at_sec": 2.0
+          },
+          {
+            "scene_id": 3,
+            "cue": "whoosh",
+            "at_sec": 10.0
+          },
+          {
+            "scene_id": 4,
+            "cue": "whoosh",
+            "at_sec": 18.0
+          },
+          {
+            "scene_id": 5,
+            "cue": "whoosh",
+            "at_sec": 26.0
+          },
+          {
+            "scene_id": 6,
+            "cue": "whoosh",
+            "at_sec": 38.0
+          }
+        ]
+      },
+      "transitions": {
+        "level_db": -12.0,
+        "cues": []
+      }
+    },
+    "silence_drops": [
+      {
+        "scene_id": 5,
+        "at_sec": 25.6,
+        "duration_sec": 0.4,
+        "reason": "drop the full mix before the payoff beat"
+      }
+    ],
+    "loudness_target": {
+      "standard": "platform_safe_placeholder",
+      "integrated_lufs": -14.0,
+      "true_peak_db": -1.0,
+      "notes": "Verify with a real loudness pass when actual audio is rendered."
+    }
+  },
+  "transition_plan": {
+    "supported_types": [
+      "cut",
+      "fade",
+      "push",
+      "zoom",
+      "whip_pan",
+      "glitch",
+      "flash",
+      "documentary_slow_zoom",
+      "cinematic_push_in",
+      "quick_cut"
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "motion_plan": [
+    {
+      "scene_id": 1,
+      "effect": "quick_punch_in",
+      "intensity": 70,
+      "duration_sec": 2.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.188
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_out"
+    },
+    {
+      "scene_id": 2,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 3,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 4,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 5,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 12.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 6,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 22.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    }
+  ],
+  "asset_requirements": [],
+  "missing_assets": [],
+  "render_warnings": [],
+  "estimated_render_duration_sec": 60.0,
+  "production_readiness_score": 100,
+  "validation": {
+    "status": "SUCCESS",
+    "checks": [
+      {
+        "check": "scenes_present",
+        "passed": true,
+        "detail": "6 scenes in the plan."
+      },
+      {
+        "check": "scenes_have_visuals",
+        "passed": true,
+        "detail": "Every scene has a visual asset or prompt."
+      },
+      {
+        "check": "scenes_have_narration",
+        "passed": true,
+        "detail": "Every scene has narration."
+      },
+      {
+        "check": "captions_exist",
+        "passed": true,
+        "detail": "6 caption segments planned."
+      },
+      {
+        "check": "audio_plan_exists",
+        "passed": true,
+        "detail": "Audio mix plan covers narration/music/SFX tracks."
+      },
+      {
+        "check": "runtime_reasonable",
+        "passed": true,
+        "detail": "Total runtime 60.0s is inside the 5.0-180.0s short-form window."
+      },
+      {
+        "check": "output_format_supported",
+        "passed": true,
+        "detail": "9:16 1080x1920 MP4 \u2014 supported."
+      },
+      {
+        "check": "assets_resolved",
+        "passed": true,
+        "detail": "All asset requests were fulfilled."
+      }
+    ],
+    "problems": [],
+    "production_readiness_score": 100
+  },
+  "render_status": "SUCCESS",
+  "mock_output_path": "data/productions/sp100w3_spruce_goose_myth_001/render.mp4",
+  "output_path": "data/productions/sp100w3_spruce_goose_myth_001/render.mp4",
+  "mp4_path": "data/productions/sp100w3_spruce_goose_myth_001/render.mp4",
+  "file_uri": "data/productions/sp100w3_spruce_goose_myth_001/render.mp4",
+  "render_log": [
+    "color_bed\u2192mp4 (no visual assets resolved)",
+    "ffmpeg_exit=0"
+  ],
+  "render_job": {},
+  "mock": false,
+  "assembly": {
+    "ok": true,
+    "mock": false,
+    "error": "",
+    "output_path": "data/productions/sp100w3_spruce_goose_myth_001/render.mp4",
+    "absolute_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w3_spruce_goose_myth_001/render.mp4",
+    "bytes": 345302,
+    "duration_sec": 60.0,
+    "resolution": "1080x1920",
+    "ffmpeg": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/venv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "log": [
+      "color_bed\u2192mp4 (no visual assets resolved)",
+      "ffmpeg_exit=0"
+    ],
+    "visual_count": 0,
+    "has_audio": true,
+    "manifest": {
+      "title": "Bigger Wings Aren't Always Better",
+      "format": {
+        "aspect_ratio": "9:16",
+        "resolution": {
+          "width": 1080,
+          "height": 1920
+        },
+        "container": "mp4",
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "fps": 30,
+        "orientation": "vertical",
+        "platforms": [
+          "youtube_shorts",
+          "tiktok",
+          "instagram_reels",
+          "facebook_reels"
+        ]
+      },
+      "visuals": [],
+      "audio": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w3_spruce_goose_myth_001/voice.mp3"
+    }
+  },
+  "render_manifest": {
+    "scenes": 6,
+    "timeline_segments": 6,
+    "caption_segments": 6,
+    "audio_tracks": [
+      "narration",
+      "music",
+      "sfx",
+      "transitions"
+    ],
+    "transitions": 5,
+    "assets_requested": 0,
+    "assets_missing": 0,
+    "warnings": 0,
+    "readiness": 100,
+    "ready_for_publishing": true,
+    "real_mp4": true
+  }
+}

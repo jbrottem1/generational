@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Ever heard of ocean dead zones? They're more mysterious than you think.",
+    "visual_description": "Hook visual: Ever heard of ocean dead zones? They're more mysterious than you think.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever heard of ocean dead zones? They're more mysterious than you think.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever heard of ocean dead zones? They're more mysterious than you think.",
+    "stock_footage_query": "",
+    "text_overlay": "Ever heard of ocean",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "concern",
+    "length_sec": 10.0,
+    "narration": "These areas, where oxygen is so low that marine life can't survive, are spreading.",
+    "visual_description": "Context visual: These areas, where oxygen is so low that marine life can't survive, are spreading.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: These areas, where oxygen is so low that marine life can't survive, are spreading.",
+    "ai_video_prompt": "Cinematic motion: Context visual: These areas, where oxygen is so low that marine life can't survive, are spreading.",
+    "stock_footage_query": "",
+    "text_overlay": "These areas, where oxygen",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 12.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "urgency",
+    "length_sec": 8.0,
+    "narration": "Causes include pollution, climate change, and over-fertilization. But it\u2019s not just the fish that suffer.",
+    "visual_description": "Escalation visual: Causes include pollution, climate change, and over-fertilization. But it\u2019s not just the fish that suffer.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Causes include pollution, climate change, and over-fertilization. But it\u2019s not just the fish that suffer.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Causes include pollution, climate change, and over-fertilization. But it\u2019s not just the fish that suffer.",
+    "stock_footage_query": "",
+    "text_overlay": "Causes include pollution, climate",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 12.0,
+      "end_sec": 20.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 12.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "alarm",
+    "length_sec": 8.0,
+    "narration": "Scientific studies show these dead zones are increasing, threatening ecosystems and economies.",
+    "visual_description": "Evidence visual: Scientific studies show these dead zones are increasing, threatening ecosystems and economies.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Scientific studies show these dead zones are increasing, threatening ecosystems and economies.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Scientific studies show these dead zones are increasing, threatening ecosystems and economies.",
+    "stock_footage_query": "",
+    "text_overlay": "Scientific studies show these",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 20.0,
+      "end_sec": 28.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 20.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "hopeful",
+    "length_sec": 12.0,
+    "narration": "Understanding them is crucial for our oceans' future. Will we act before it's too late?",
+    "visual_description": "Payoff visual: Understanding them is crucial for our oceans' future. Will we act before it's too late?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding them is crucial for our oceans' future. Will we act before it's too late?",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding them is crucial for our oceans' future. Will we act before it's too late?",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding them is crucial",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 28.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 28.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "engagement",
+    "length_sec": 20.0,
+    "narration": "Curious about how you can help? Like and subscribe for more insights on our oceans.",
+    "visual_description": "Cta visual: Curious about how you can help? Like and subscribe for more insights on our oceans.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about how you can help? Like and subscribe for more insights on our oceans.",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about how you can help? Like and subscribe for more insights on our oceans.",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about how you",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

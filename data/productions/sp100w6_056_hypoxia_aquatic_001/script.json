@@ -1,0 +1,74 @@
+{
+  "title": "Hypoxia Aquatic",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explores the reality of aquatic hypoxia and its implications.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if the ocean is holding its breath?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Hypoxia aquatic refers to low oxygen levels in water, affecting marine life drastically.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "This condition can lead to fish kills and the collapse of ecosystems.",
+      "emotion": "concern",
+      "delivery": "serious",
+      "retention_device": "statistic"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows areas like the Gulf of Mexico face severe hypoxia due to nutrient runoff.",
+      "emotion": "curiosity",
+      "delivery": "fact-based",
+      "retention_device": "visual cue"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding hypoxia can help us protect our oceans for future generations.",
+      "emotion": "hope",
+      "delivery": "inspiring",
+      "retention_device": "future focus"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how you can help? Follow for more ways to save our seas!",
+      "emotion": "engagement",
+      "delivery": "inviting",
+      "retention_device": "direct appeal"
+    }
+  ],
+  "full_voiceover": "What if the ocean is holding its breath? Hypoxia aquatic refers to low oxygen levels in water, affecting marine life drastically. This condition can lead to fish kills and the collapse of ecosystems. Research shows areas like the Gulf of Mexico face severe hypoxia due to nutrient runoff. Understanding hypoxia can help us protect our oceans for future generations. Curious about how you can help? Follow for more ways to save our seas!",
+  "call_to_action": "Follow for more ways to save our seas!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:03:39.533332+00:00",
+  "source": "ai"
+}

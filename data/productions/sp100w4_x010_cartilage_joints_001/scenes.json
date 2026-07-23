@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about cartilage joints.",
+    "visual_description": "Hook visual: Here's what science actually says about cartilage joints.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about cartilage joints.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about cartilage joints.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 6.0,
+    "narration": "Cartilage joints are crucial for movement, acting like shock absorbers in your body.",
+    "visual_description": "Context visual: Cartilage joints are crucial for movement, acting like shock absorbers in your body.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Cartilage joints are crucial for movement, acting like shock absorbers in your body.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Cartilage joints are crucial for movement, acting like shock absorbers in your body.",
+    "stock_footage_query": "",
+    "text_overlay": "Cartilage joints are crucial",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 8.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Without them, bones would grind against each other, causing pain.",
+    "visual_description": "Escalation visual: Without them, bones would grind against each other, causing pain.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Without them, bones would grind against each other, causing pain.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Without them, bones would grind against each other, causing pain.",
+    "stock_footage_query": "",
+    "text_overlay": "Without them, bones would",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 8.0,
+      "end_sec": 16.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 8.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Research shows healthy cartilage can adapt under pressure, ensuring longevity.",
+    "visual_description": "Evidence visual: Research shows healthy cartilage can adapt under pressure, ensuring longevity.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows healthy cartilage can adapt under pressure, ensuring longevity.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows healthy cartilage can adapt under pressure, ensuring longevity.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows healthy cartilage",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 16.0,
+      "end_sec": 24.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 16.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But did you know that cartilage has no blood supply? It relies on joint movement for nourishment.",
+    "visual_description": "Pattern Interrupt visual: But did you know that cartilage has no blood supply? It relies on joint movement for nourishment.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: But did you know that cartilage has no blood supply? It relies on joint movement for nourishment.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: But did you know that cartilage has no blood supply? It relies on joint movement for nourishment.",
+    "stock_footage_query": "",
+    "text_overlay": "But did you know",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 24.0,
+      "end_sec": 32.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 24.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This means staying active is vital for maintaining healthy cartilage.",
+    "visual_description": "Payoff visual: This means staying active is vital for maintaining healthy cartilage.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This means staying active is vital for maintaining healthy cartilage.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This means staying active is vital for maintaining healthy cartilage.",
+    "stock_footage_query": "",
+    "text_overlay": "This means staying active",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 32.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 32.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Want to learn more about your body? Hit that follow button!",
+    "visual_description": "Cta visual: Want to learn more about your body? Hit that follow button!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to learn more about your body? Hit that follow button!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to learn more about your body? Hit that follow button!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 48.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

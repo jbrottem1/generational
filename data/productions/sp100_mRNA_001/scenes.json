@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "mRNA vaccines don\u2019t rewrite your DNA \u2014 they deliver temporary instructions.",
+    "visual_description": "Hook visual: mRNA vaccines don\u2019t rewrite your DNA \u2014 they deliver temporary instructions.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: mRNA vaccines don\u2019t rewrite your DNA \u2014 they deliver temporary instructions.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: mRNA vaccines don\u2019t rewrite your DNA \u2014 they deliver temporary instructions.",
+    "stock_footage_query": "",
+    "text_overlay": "mRNA vaccines don\u2019t rewrite",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Inside your body, tiny lipid nanoparticles act like delivery trucks, bringing mRNA straight to your cells.",
+    "visual_description": "Context visual: Inside your body, tiny lipid nanoparticles act like delivery trucks, bringing mRNA straight to your cells.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Inside your body, tiny lipid nanoparticles act like delivery trucks, bringing mRNA straight to your cells.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Inside your body, tiny lipid nanoparticles act like delivery trucks, bringing mRNA straight to your cells.",
+    "stock_footage_query": "",
+    "text_overlay": "Inside your body, tiny",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "These mRNA strands provide instructions to make a harmless piece of the virus \u2014 just enough to train your immune system.",
+    "visual_description": "Escalation visual: These mRNA strands provide instructions to make a harmless piece of the virus \u2014 just enough to train your immune system.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: These mRNA strands provide instructions to make a harmless piece of the virus \u2014 just enough to train your immune system.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: These mRNA strands provide instructions to make a harmless piece of the virus \u2014 just enough to train your immune system.",
+    "stock_footage_query": "",
+    "text_overlay": "These mRNA strands provide",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Research shows these instructions never integrate into your DNA, ensuring your genetic code remains untouched.",
+    "visual_description": "Evidence visual: Research shows these instructions never integrate into your DNA, ensuring your genetic code remains untouched.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows these instructions never integrate into your DNA, ensuring your genetic code remains untouched.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows these instructions never integrate into your DNA, ensuring your genetic code remains untouched.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows these instructions",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Instead, they teach your immune system to recognize the virus, preparing it for a real encounter.",
+    "visual_description": "Payoff visual: Instead, they teach your immune system to recognize the virus, preparing it for a real encounter.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Instead, they teach your immune system to recognize the virus, preparing it for a real encounter.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Instead, they teach your immune system to recognize the virus, preparing it for a real encounter.",
+    "stock_footage_query": "",
+    "text_overlay": "Instead, they teach your",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Curious about how else vaccines work? Hit that follow button for more science insights!",
+    "visual_description": "Cta visual: Curious about how else vaccines work? Hit that follow button for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about how else vaccines work? Hit that follow button for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about how else vaccines work? Hit that follow button for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about how else",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

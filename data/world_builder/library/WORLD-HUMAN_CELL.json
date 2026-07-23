@@ -1,0 +1,141 @@
+{
+  "world_id": "WORLD-HUMAN_CELL",
+  "world_type": "Human Cell",
+  "name": "Human Cell",
+  "theme": "microscopic life",
+  "scale": "cellular",
+  "historical_accuracy": 70,
+  "environment": {
+    "description": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow",
+    "continuity_key": "WORLD-HUMAN_CELL",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "macro_science hard rim + shallow DOF",
+    "consistent_key": true
+  },
+  "architecture": [
+    "lipid membrane dome",
+    "cytoskeleton lattice"
+  ],
+  "weather": "cytoplasmic_flow",
+  "objects": [
+    {
+      "object_id": "obj_mitochondrion",
+      "name": "mitochondrion",
+      "surface": "cytoplasm",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.4,
+        "y": 0.3,
+        "z": 0.4
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_nucleus",
+      "name": "nucleus",
+      "surface": "cytoplasm",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.5,
+        "y": 0.4,
+        "z": 0.45
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [],
+  "background_animations": [
+    "vesicle transport",
+    "membrane undulation"
+  ],
+  "sound_ambience": [
+    "soft organic pulse",
+    "microscopic whoosh"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.0,
+    "max_height": 2.0,
+    "min_distance": 0.1,
+    "max_distance": 5.0
+  },
+  "color_palette": {
+    "family": "lab",
+    "primary": "#1B3A4B",
+    "accent": "#F4A261",
+    "membrane": "#A8DADC"
+  },
+  "lighting_presets": [
+    {
+      "id": "day_neutral",
+      "recipe": "warm organelle key + soft bounce fill",
+      "mood": "neutral"
+    },
+    {
+      "id": "dramatic_rim",
+      "recipe": "warm organelle key + hard rim + practical instrument glow",
+      "mood": "dramatic"
+    },
+    {
+      "id": "low_key_focus",
+      "recipe": "low-key with luminous subject isolation",
+      "mood": "focus"
+    },
+    {
+      "id": "bright_reveal",
+      "recipe": "bright key + lifted shadows for revelation",
+      "mood": "reveal"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "membrane_entry",
+      "position": "boundary",
+      "angle": "push_in",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "nucleus_orbit",
+      "position": "core",
+      "angle": "orbit",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "organelle_macro",
+      "position": "mito_close",
+      "angle": "macro",
+      "lens_hint": "100mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "transport",
+      "region": "cytoplasm"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "membrane_gate",
+      "to_compatible": [
+        "DNA Interior",
+        "Science Lab",
+        "Hospital"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.158312+00:00"
+}

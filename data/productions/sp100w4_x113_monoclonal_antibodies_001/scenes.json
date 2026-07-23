@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about monoclonal antibodies.",
+    "visual_description": "Hook visual: Here's what science actually says about monoclonal antibodies.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about monoclonal antibodies.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about monoclonal antibodies.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Monoclonal antibodies are lab-made proteins designed to mimic immune system functions.",
+    "visual_description": "Context visual: Monoclonal antibodies are lab-made proteins designed to mimic immune system functions.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Monoclonal antibodies are lab-made proteins designed to mimic immune system functions.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Monoclonal antibodies are lab-made proteins designed to mimic immune system functions.",
+    "stock_footage_query": "",
+    "text_overlay": "Monoclonal antibodies are lab-made",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "They target specific pathogens, making them powerful tools against diseases.",
+    "visual_description": "Escalation visual: They target specific pathogens, making them powerful tools against diseases.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: They target specific pathogens, making them powerful tools against diseases.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: They target specific pathogens, making them powerful tools against diseases.",
+    "stock_footage_query": "",
+    "text_overlay": "They target specific pathogens,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Recent studies show their effectiveness in treating conditions like COVID-19 and cancer.",
+    "visual_description": "Evidence visual: Recent studies show their effectiveness in treating conditions like COVID-19 and cancer.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Recent studies show their effectiveness in treating conditions like COVID-19 and cancer.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Recent studies show their effectiveness in treating conditions like COVID-19 and cancer.",
+    "stock_footage_query": "",
+    "text_overlay": "Recent studies show their",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "However, ongoing research is crucial; outcomes aren\u2019t guaranteed for everyone.",
+    "visual_description": "Payoff visual: However, ongoing research is crucial; outcomes aren\u2019t guaranteed for everyone.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: However, ongoing research is crucial; outcomes aren\u2019t guaranteed for everyone.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: However, ongoing research is crucial; outcomes aren\u2019t guaranteed for everyone.",
+    "stock_footage_query": "",
+    "text_overlay": "However, ongoing research is",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Stay curious and follow for more science insights!",
+    "visual_description": "Cta visual: Stay curious and follow for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Stay curious and follow for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Stay curious and follow for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Stay curious and follow",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "SAMPLE_CONTAINER_001": {
+    "grasp_point": [
+      0,
+      0,
+      0.04
+    ],
+    "mass_kg": 0.12,
+    "collision": "cylinder"
+  },
+  "MICROSCOPE_001": {
+    "grasp_point": [
+      0,
+      0,
+      0.1
+    ],
+    "mass_kg": 2.4,
+    "collision": "box"
+  },
+  "MEDICAL_SCANNER_001": {
+    "grasp_point": [
+      0,
+      0,
+      0.2
+    ],
+    "mass_kg": 8.0,
+    "collision": "box"
+  },
+  "COFFEE_MUG_001": {
+    "grasp_point": [
+      0.04,
+      0,
+      0.04
+    ],
+    "mass_kg": 0.25,
+    "collision": "cylinder"
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "schema_version": "1.0",
+  "production_id": "pipeline_integration_test",
+  "command": "Artificial Intelligence explained in 60 seconds",
+  "platform": "youtube_shorts",
+  "current_stage": "export",
+  "overall_status": "succeeded",
+  "started_at": "2026-07-13T23:22:08.686843+00:00",
+  "finished_at": "2026-07-13T23:22:37.699556+00:00",
+  "elapsed_ms": 29012,
+  "success": true,
+  "output_location": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/pipeline_integration_test",
+  "validation_score": 99.5,
+  "stages": [
+    {
+      "key": "research",
+      "label": "Research",
+      "engines": [
+        "research",
+        "ideation"
+      ],
+      "status": "succeeded",
+      "elapsed_ms": 7039,
+      "started_at": "2026-07-13T23:22:08.687532+00:00",
+      "finished_at": "2026-07-13T23:22:15.727719+00:00",
+      "success": true,
+      "error": "",
+      "output_location": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/pipeline_integration_test",
+      "validation_score": 95.0,
+      "engine_results": [
+        {
+          "engine": "research",
+          "status": "succeeded",
+          "duration_ms": 107,
+          "error": "",
+          "problems": []
+        },
+        {
+          "engine": "ideation",
+          "status": "succeeded",
+          "duration_ms": 6929,
+          "error": "",
+          "problems": []
+        }
+      ]
+    },
+    {
+      "key": "psychology",
+      "label": "Psychology",
+      "engines": [
+        "psychology"
+      ],
+      "status": "succeeded",
+      "elapsed_ms": 6,
+      "started_at": "2026-07-13T23:22:15.730823+00:00",
+      "finished_at": "2026-07-13T23:22:15.739584+00:00",
+      "success": true,
+      "error": "",
+      "output_location": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/pipeline_integration_test",
+      "validation_score": 100.0,
+      "engine_results": [
+        {
+          "engine": "psychology",
+          "status": "succeeded",
+          "duration_ms": 5,
+          "error": "",
+          "problems": []
+        }
+      ]
+    },
+    {
+      "key": "studio_director",
+      "label": "Studio Director",
+      "engines": [
+        "ai_director"
+      ],
+      "status": "succeeded",
+      "elapsed_ms": 21,
+      "started_at": "2026-07-13T23:22:15.740819+00:00",
+      "finished_at": "2026-07-13T23:22:15.763777+00:00",
+      "success": true,
+      "error": "",
+      "output_location": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/pipeline_integration_test",
+      "validation_score": 100.0,
+      "engine_results": [
+        {
+          "engine": "ai_director",
+          "status": "succeeded",
+          "duration_ms": 20,
+          "error": "",
+          "problems": []
+        }
+      ]
+    },
+    {
+      "key": "script_generator",
+      "label": "Script Generator",
+      "engines": [
+        "script_generation"
+      ],
+      "status": "succeeded",
+      "elapsed_ms": 6607,
+      "started_at": "2026-07-13T23:22:15.764495+00:00",
+      "finished_at": "2026-07-13T23:22:22.372814+00:00",
+      "success": true,
+      "error": "",
+      "output_location": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/pipeline_integration_test",
+      "validation_score": 100.0,
+      "engine_results": [
+        {
+          "engine": "script_generation",
+          "status": "succeeded",
+          "duration_ms": 6606,
+          "error": "",
+          "problems": []
+        }
+      ]
+    },
+    {
+      "key": "scene_builder",
+      "label": "Scene Builder",
+      "engines": [
+        "visual_intelligence",
+        "scene_planning",
+        "visual_planning"
+      ],
+      "status": "succeeded",
+      "elapsed_ms": 53,
+      "started_at": "2026-07-13T23:22:22.373571+00:00",
+      "finished_at": "2026-07-13T23:22:22.427584+00:00",
+      "success": true,
+      "error": "",
+      "output_location": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/pipeline_integration_test",
+      "validation_score": 100.0,
+      "engine_results": [
+        {
+          "engine": "visual_intelligence",
+          "status": "succeeded",
+          "duration_ms": 49,
+          "error": "",
+          "problems": []
+        },
+        {
+          "engine": "scene_planning",
+          "status": "succeeded",
+          "duration_ms": 2,
+          "error": "",
+          "problems": []
+        },
+        {
+          "engine": "visual_planning",
+          "status": "succeeded",
+          "duration_ms": 0,
+          "error": "",
+          "problems": []
+        }
+      ]
+    },
+    {
+      "key": "media_generation",
+      "label": "Media Generation",
+      "engines": [
+        "image",
+        "asset_manager"
+      ],
+      "status": "succeeded",
+      "elapsed_ms": 9600,
+      "started_at": "2026-07-13T23:22:22.428165+00:00",
+      "finished_at": "2026-07-13T23:22:32.029256+00:00",
+      "success": true,
+      "error": "",
+      "output_location": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/pipeline_integration_test",
+      "validation_score": 100.0,
+      "engine_results": [
+        {
+          "engine": "image",
+          "status": "succeeded",
+          "duration_ms": 8273,
+          "error": "",
+          "problems": []
+        },
+        {
+          "engine": "asset_manager",
+          "status": "succeeded",
+          "duration_ms": 1325,
+          "error": "",
+          "problems": []
+        }
+      ]
+    },
+    {
+      "key": "voice_generation",
+      "label": "Voice Generation",
+      "engines": [
+        "voice_audio",
+        "narration",
+        "voice"
+      ],
+      "status": "succeeded",
+      "elapsed_ms": 5340,
+      "started_at": "2026-07-13T23:22:32.029805+00:00",
+      "finished_at": "2026-07-13T23:22:37.370991+00:00",
+      "success": true,
+      "error": "",
+      "output_location": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/pipeline_integration_test",
+      "validation_score": 100.0,
+      "engine_results": [
+        {
+          "engine": "voice_audio",
+          "status": "succeeded",
+          "duration_ms": 9,
+          "error": "",
+          "problems": []
+        },
+        {
+          "engine": "narration",
+          "status": "succeeded",
+          "duration_ms": 5249,
+          "error": "",
+          "problems": []
+        },
+        {
+          "engine": "voice",
+          "status": "succeeded",
+          "duration_ms": 80,
+          "error": "",
+          "problems": []
+        }
+      ]
+    },
+    {
+      "key": "video_assembly",
+      "label": "Video Assembly",
+      "engines": [
+        "subtitle",
+        "timeline",
+        "render_package",
+        "studio_render",
+        "video"
+      ],
+      "status": "succeeded",
+      "elapsed_ms": 102,
+      "started_at": "2026-07-13T23:22:37.371548+00:00",
+      "finished_at": "2026-07-13T23:22:37.474438+00:00",
+      "success": true,
+      "error": "",
+      "output_location": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/pipeline_integration_test",
+      "validation_score": 100.0,
+      "engine_results": [
+        {
+          "engine": "subtitle",
+          "status": "succeeded",
+          "duration_ms": 11,
+          "error": "",
+          "problems": []
+        },
+        {
+          "engine": "timeline",
+          "status": "succeeded",
+          "duration_ms": 3,
+          "error": "",
+          "problems": []
+        },
+        {
+          "engine": "render_package",
+          "status": "succeeded",
+          "duration_ms": 29,
+          "error": "",
+          "problems": []
+        },
+        {
+          "engine": "studio_render",
+          "status": "succeeded",
+          "duration_ms": 43,
+          "error": "",
+          "problems": []
+        },
+        {
+          "engine": "video",
+          "status": "succeeded",
+          "duration_ms": 12,
+          "error": "",
+          "problems": []
+        }
+      ]
+    },
+    {
+      "key": "quality_control",
+      "label": "Quality Control",
+      "engines": [
+        "quality",
+        "production_qa"
+      ],
+      "status": "succeeded",
+      "elapsed_ms": 41,
+      "started_at": "2026-07-13T23:22:37.475068+00:00",
+      "finished_at": "2026-07-13T23:22:37.517156+00:00",
+      "success": true,
+      "error": "",
+      "output_location": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/pipeline_integration_test",
+      "validation_score": 100.0,
+      "engine_results": [
+        {
+          "engine": "quality",
+          "status": "succeeded",
+          "duration_ms": 0,
+          "error": "",
+          "problems": []
+        },
+        {
+          "engine": "production_qa",
+          "status": "succeeded",
+          "duration_ms": 40,
+          "error": "",
+          "problems": []
+        }
+      ]
+    },
+    {
+      "key": "export",
+      "label": "Export",
+      "engines": [
+        "optimization_lab"
+      ],
+      "status": "succeeded",
+      "elapsed_ms": 181,
+      "started_at": "2026-07-13T23:22:37.517765+00:00",
+      "finished_at": "2026-07-13T23:22:37.699547+00:00",
+      "success": true,
+      "error": "",
+      "output_location": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/pipeline_integration_test",
+      "validation_score": 100.0,
+      "engine_results": [
+        {
+          "engine": "optimization_lab",
+          "status": "succeeded",
+          "duration_ms": 180,
+          "error": "",
+          "problems": []
+        }
+      ]
+    }
+  ],
+  "updated_at": "2026-07-13T23:22:37.700163+00:00"
+}

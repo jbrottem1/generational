@@ -1,0 +1,74 @@
+{
+  "title": "Permafrost Thaw",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the science behind permafrost thaw and its implications.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about permafrost thaw than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Permafrost is frozen ground that holds massive amounts of carbon. As it thaws, surprising things happen.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "When permafrost thaws, it releases methane\u2014a potent greenhouse gas. This can accelerate climate change.",
+      "emotion": "concern",
+      "delivery": "urgent",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that this process is already underway, but scientists are still mapping its full impact.",
+      "emotion": "curiosity",
+      "delivery": "matter-of-fact",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 42.0,
+      "segment_type": "payoff",
+      "voiceover": "In short, permafrost thaw is a complex issue. It brings risks, but also opportunities for innovation in climate solutions.",
+      "emotion": "hope",
+      "delivery": "optimistic",
+      "retention_device": "clear takeaway"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 42.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more science insights? Hit like, share, and follow for more! #earth #science",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about permafrost thaw than social media does. Permafrost is frozen ground that holds massive amounts of carbon. As it thaws, surprising things happen. When permafrost thaws, it releases methane\u2014a potent greenhouse gas. This can accelerate climate change. Studies show that this process is already underway, but scientists are still mapping its full impact. In short, permafrost thaw is a complex issue. It brings risks, but also opportunities for innovation in climate solutions. Curious about more science insights? Hit like, share, and follow for more! #earth #science",
+  "call_to_action": "Curious about more science insights? Hit like, share, and follow for more! #earth #science",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:42:51.823825+00:00",
+  "source": "ai"
+}

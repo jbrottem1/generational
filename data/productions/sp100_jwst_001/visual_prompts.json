@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: The James Webb Space Telescope sees a universe Hubble never could.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: While Hubble captures stunning optical images, JWST dives into infrared, revealing hidden cosmic secrets.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Infrared light penetrates cosmic dust, unveiling stars and galaxies forming over 13 billion years ago.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: NASA reports JWST's ability to peer further back in time surpasses anything Hubble could achieve.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: This means we can witness the birth of galaxies, not just their present form.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Dive deeper into the mysteries of the universe\u2014follow for more amazing space discoveries!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: The James Webb Space Telescope sees a universe Hubble never could.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: While Hubble captures stunning optical images, JWST dives into infrared, revealing hidden cosmic secrets.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Infrared light penetrates cosmic dust, unveiling stars and galaxies forming over 13 billion years ago.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: NASA reports JWST's ability to peer further back in time surpasses anything Hubble could achieve.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: This means we can witness the birth of galaxies, not just their present form.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Dive deeper into the mysteries of the universe\u2014follow for more amazing space discoveries!",
+      "duration_sec": 26.0
+    }
+  ]
+}

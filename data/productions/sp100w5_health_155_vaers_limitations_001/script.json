@@ -1,0 +1,74 @@
+{
+  "title": "VAERS limitations",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the limitations of VAERS reveals a more complex truth than social media suggests.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about VAERS limitations than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "VAERS, or the Vaccine Adverse Event Reporting System, collects data on vaccine side effects.",
+      "emotion": "neutral",
+      "delivery": "informative",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But here\u2019s the catch: VAERS reports can be incomplete and unverified.",
+      "emotion": "concern",
+      "delivery": "slightly urgent",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that many reports are coincidental, not causal. Context matters.",
+      "emotion": "neutral",
+      "delivery": "clear and factual",
+      "retention_device": "surprising statistic"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding these limitations helps us see the bigger picture\u2014vaccines are still safe and effective.",
+      "emotion": "reassurance",
+      "delivery": "confident",
+      "retention_device": "resolution"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay informed. Like and share for more insights on health and science.",
+      "emotion": "encouragement",
+      "delivery": "inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about VAERS limitations than social media does. VAERS, or the Vaccine Adverse Event Reporting System, collects data on vaccine side effects. But here\u2019s the catch: VAERS reports can be incomplete and unverified. Studies show that many reports are coincidental, not causal. Context matters. Understanding these limitations helps us see the bigger picture\u2014vaccines are still safe and effective. Stay informed. Like and share for more insights on health and science.",
+  "call_to_action": "Stay informed. Like and share for more insights on health and science.",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:55:20.448390+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Your brain has a limit\u2014overload it, and you forget everything.",
+    "visual_description": "Hook visual: Your brain has a limit\u2014overload it, and you forget everything.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Your brain has a limit\u2014overload it, and you forget everything.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Your brain has a limit\u2014overload it, and you forget everything.",
+    "stock_footage_query": "",
+    "text_overlay": "Your brain has a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This is Cognitive Load Theory. It explains how our working memory handles information.",
+    "visual_description": "Context visual: This is Cognitive Load Theory. It explains how our working memory handles information.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This is Cognitive Load Theory. It explains how our working memory handles information.",
+    "ai_video_prompt": "Cinematic motion: Context visual: This is Cognitive Load Theory. It explains how our working memory handles information.",
+    "stock_footage_query": "",
+    "text_overlay": "This is Cognitive Load",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Too much info? Your brain might just shut down. Imagine trying to learn when your mind's overwhelmed.",
+    "visual_description": "Escalation visual: Too much info? Your brain might just shut down. Imagine trying to learn when your mind's overwhelmed.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Too much info? Your brain might just shut down. Imagine trying to learn when your mind's overwhelmed.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Too much info? Your brain might just shut down. Imagine trying to learn when your mind's overwhelmed.",
+    "stock_footage_query": "",
+    "text_overlay": "Too much info? Your",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Research shows optimal learning happens when cognitive load is balanced. Less is often more.",
+    "visual_description": "Evidence visual: Research shows optimal learning happens when cognitive load is balanced. Less is often more.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows optimal learning happens when cognitive load is balanced. Less is often more.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows optimal learning happens when cognitive load is balanced. Less is often more.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows optimal learning",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "By minimizing distractions and focusing, you can boost retention. Your brain will thank you.",
+    "visual_description": "Payoff visual: By minimizing distractions and focusing, you can boost retention. Your brain will thank you.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: By minimizing distractions and focusing, you can boost retention. Your brain will thank you.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: By minimizing distractions and focusing, you can boost retention. Your brain will thank you.",
+    "stock_footage_query": "",
+    "text_overlay": "By minimizing distractions and",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "Want to learn more about how to optimize your learning? Hit that follow button!",
+    "visual_description": "Cta visual: Want to learn more about how to optimize your learning? Hit that follow button!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to learn more about how to optimize your learning? Hit that follow button!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to learn more about how to optimize your learning? Hit that follow button!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

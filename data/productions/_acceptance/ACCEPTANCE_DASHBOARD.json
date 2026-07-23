@@ -1,0 +1,84 @@
+{
+  "generated_at": "2026-07-13T23:49:40.327353+00:00",
+  "version": "1.0.0",
+  "pass_pct": 100.0,
+  "failure_pct": 0.0,
+  "average_quality": 98.0,
+  "average_render_time": 18151,
+  "fastest_render": 0,
+  "slowest_render": 50682,
+  "common_failures": [],
+  "recovery_success": 100.0,
+  "latest_run_id": "acc_e062a2934c",
+  "latest_mode": "smoke",
+  "latest_ok": true,
+  "history_count": 1,
+  "trends": {
+    "pass_pct": [
+      {
+        "run_id": "acc_e062a2934c",
+        "at": "2026-07-13T23:49:40.326111+00:00",
+        "pass_pct": 100.0
+      }
+    ],
+    "quality": [
+      {
+        "run_id": "acc_e062a2934c",
+        "at": "2026-07-13T23:49:40.326111+00:00",
+        "average_quality": 98.0,
+        "average_render_time_ms": 18151
+      }
+    ],
+    "improvement_vs_previous": null
+  },
+  "category_breakdown": {
+    "pipeline_integrity": {
+      "passed": 6,
+      "failed": 0,
+      "total": 6,
+      "pass_pct": 100.0
+    },
+    "video_generation": {
+      "passed": 3,
+      "failed": 0,
+      "total": 3,
+      "pass_pct": 100.0
+    },
+    "duration": {
+      "passed": 2,
+      "failed": 0,
+      "total": 2,
+      "pass_pct": 100.0
+    },
+    "platform": {
+      "passed": 2,
+      "failed": 0,
+      "total": 2,
+      "pass_pct": 100.0
+    },
+    "stress": {
+      "passed": 3,
+      "failed": 0,
+      "total": 3,
+      "pass_pct": 100.0
+    },
+    "quality": {
+      "passed": 1,
+      "failed": 0,
+      "total": 1,
+      "pass_pct": 100.0
+    },
+    "recovery": {
+      "passed": 6,
+      "failed": 0,
+      "total": 6,
+      "pass_pct": 100.0
+    },
+    "output_validation": {
+      "passed": 1,
+      "failed": 0,
+      "total": 1,
+      "pass_pct": 100.0
+    }
+  }
+}

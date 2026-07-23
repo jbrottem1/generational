@@ -1,0 +1,28 @@
+# EXPORT PIPELINE REPORT
+
+Generated: `2026-07-14T12:45:03.547663+00:00`
+
+## Chain
+
+Renderer MP4 → `export_and_validate` → `package_export_artifacts` → `data/productions/executive_exports/{topic}_{ops_id}/` → ops library / reports
+
+## Behavior
+
+- Copies `episode.mp4` into export folder when renderer wrote a real file
+- Writes `captions.json` + `captions.srt` when segments exist
+- Copies narration audio when present
+- Copies first scene still as thumbnail when no dedicated thumbnail exists
+- Marks export stage **degraded** if MP4 missing (pipeline continues; production `success=false`)
+
+## Batch export outcomes
+
+- **rel_01_biology**: mp4=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_mitochondria_make_ATP_ops_08bbac8a7d/episode.mp4` caps=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_mitochondria_make_ATP_ops_08bbac8a7d/captions.json` thumb=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_mitochondria_make_ATP_ops_08bbac8a7d/thumbnail.png`
+- **rel_02_physics**: mp4=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_light_bends_in_water_ops_b59d8d0896/episode.mp4` caps=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_light_bends_in_water_ops_b59d8d0896/captions.json` thumb=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_light_bends_in_water_ops_b59d8d0896/thumbnail.png`
+- **rel_03_astronomy**: mp4=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_black_holes_bend_spacetime_ops_f3affb9340/episode.mp4` caps=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_black_holes_bend_spacetime_ops_f3affb9340/captions.json` thumb=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_black_holes_bend_spacetime_ops_f3affb9340/thumbnail.png`
+- **rel_04_history**: mp4=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_the_printing_press_changed_Europe_ops_9d648346bc/episode.mp4` caps=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_the_printing_press_changed_Europe_ops_9d648346bc/captions.json` thumb=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_the_printing_press_changed_Europe_ops_9d648346bc/thumbnail.png`
+- **rel_05_medicine**: mp4=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_vaccines_teach_the_immune_system_ops_589237007d/episode.mp4` caps=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_vaccines_teach_the_immune_system_ops_589237007d/captions.json` thumb=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_vaccines_teach_the_immune_system_ops_589237007d/thumbnail.png`
+- **rel_06_ai**: mp4=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/episode.mp4` caps=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/captions.json` thumb=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_neural_networks_learn_from_data_ops_afbd1c2832/thumbnail.png`
+- **rel_07_nature**: mp4=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_forests_create_their_own_rain_ops_c960f7b632/episode.mp4` caps=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_forests_create_their_own_rain_ops_c960f7b632/captions.json` thumb=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_forests_create_their_own_rain_ops_c960f7b632/thumbnail.png`
+- **rel_08_engineering**: mp4=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_suspension_bridges_distribute_force_ops_d1f22a422b/episode.mp4` caps=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_suspension_bridges_distribute_force_ops_d1f22a422b/captions.json` thumb=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_suspension_bridges_distribute_force_ops_d1f22a422b/thumbnail.png`
+- **rel_09_psychology**: mp4=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_habits_form_in_the_brain_ops_1a03ee06e1/episode.mp4` caps=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_habits_form_in_the_brain_ops_1a03ee06e1/captions.json` thumb=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_habits_form_in_the_brain_ops_1a03ee06e1/thumbnail.png`
+- **rel_10_ocean**: mp4=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_deep_ocean_currents_move_heat_ops_6fb4fdfd3b/episode.mp4` caps=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_deep_ocean_currents_move_heat_ops_6fb4fdfd3b/captions.json` thumb=`/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/How_deep_ocean_currents_move_heat_ops_6fb4fdfd3b/thumbnail.png`

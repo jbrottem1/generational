@@ -1,0 +1,74 @@
+{
+  "title": "Hospital acquired infection",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explores the reality of hospital acquired infections through scientific insights.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about hospital acquired infections.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "These infections happen to patients during their stay, often from bacteria present in healthcare settings.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Over 1 in 30 hospitalized patients experience one. Surprised?",
+      "emotion": "surprise",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Common culprits include MRSA and C. difficile, which thrive in sterile environments.",
+      "emotion": "curiosity",
+      "delivery": "concise",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Researchers are racing to find new methods to combat these infections.",
+      "emotion": "hope",
+      "delivery": "optimistic",
+      "retention_device": "solution reveal"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay informed! Hit that like button for more science insights.",
+      "emotion": "encouragement",
+      "delivery": "enthusiastic",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about hospital acquired infections. These infections happen to patients during their stay, often from bacteria present in healthcare settings. Over 1 in 30 hospitalized patients experience one. Surprised? Common culprits include MRSA and C. difficile, which thrive in sterile environments. Researchers are racing to find new methods to combat these infections. Stay informed! Hit that like button for more science insights.",
+  "call_to_action": "Hit that like button for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:30:29.455745+00:00",
+  "source": "ai"
+}

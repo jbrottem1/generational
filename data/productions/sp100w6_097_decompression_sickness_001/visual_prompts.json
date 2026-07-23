@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Ever heard of the bends? It\u2019s more than just a diving term.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Decompression sickness happens when divers ascend too quickly, causing nitrogen bubbles to form in the bloodstream.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Symptoms can range from joint pain to life-threatening conditions. But did you know it can also affect surface athletes?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Nitrogen comes from our air, and when you dive, it dissolves in your tissues. Ascend slowly to avoid bubbles forming.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Awareness is key. Know the risks and dive smart. Your life depends on it!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to dive deeper into science? Like and follow for more!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Ever heard of the bends? It\u2019s more than just a diving term.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Decompression sickness happens when divers ascend too quickly, causing nitrogen bubbles to form in the bloodstream.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Symptoms can range from joint pain to life-threatening conditions. But did you know it can also affect surface athletes?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Nitrogen comes from our air, and when you dive, it dissolves in your tissues. Ascend slowly to avoid bubbles forming.",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Awareness is key. Know the risks and dive smart. Your life depends on it!",
+      "duration_sec": 18.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to dive deeper into science? Like and follow for more!",
+      "duration_sec": 12.0
+    }
+  ]
+}

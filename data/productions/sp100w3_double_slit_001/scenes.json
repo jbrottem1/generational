@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Light travels like a wave...until you watch it.",
+    "visual_description": "Hook visual: Light travels like a wave...until you watch it.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Light travels like a wave...until you watch it.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Light travels like a wave...until you watch it.",
+    "stock_footage_query": "",
+    "text_overlay": "Light travels like a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "The Double-Slit Experiment reveals how light behaves unpredictably.",
+    "visual_description": "Context visual: The Double-Slit Experiment reveals how light behaves unpredictably.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: The Double-Slit Experiment reveals how light behaves unpredictably.",
+    "ai_video_prompt": "Cinematic motion: Context visual: The Double-Slit Experiment reveals how light behaves unpredictably.",
+    "stock_footage_query": "",
+    "text_overlay": "The Double-Slit Experiment reveals",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "In one scenario, light creates a pattern. But watch it closely...",
+    "visual_description": "Escalation visual: In one scenario, light creates a pattern. But watch it closely...",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: In one scenario, light creates a pattern. But watch it closely...",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: In one scenario, light creates a pattern. But watch it closely...",
+    "stock_footage_query": "",
+    "text_overlay": "In one scenario, light",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 9.0,
+    "narration": "When observed, it acts like particles, collapsing the wave function.",
+    "visual_description": "Evidence visual: When observed, it acts like particles, collapsing the wave function.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: When observed, it acts like particles, collapsing the wave function.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: When observed, it acts like particles, collapsing the wave function.",
+    "stock_footage_query": "",
+    "text_overlay": "When observed, it acts",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 27.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 18.0,
+    "narration": "This challenges our understanding of reality. Are we changing what we observe?",
+    "visual_description": "Payoff visual: This challenges our understanding of reality. Are we changing what we observe?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This challenges our understanding of reality. Are we changing what we observe?",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This challenges our understanding of reality. Are we changing what we observe?",
+    "stock_footage_query": "",
+    "text_overlay": "This challenges our understanding",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 27.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 27.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "Curious to learn more? Hit that follow button for more science wonders!",
+    "visual_description": "Cta visual: Curious to learn more? Hit that follow button for more science wonders!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious to learn more? Hit that follow button for more science wonders!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious to learn more? Hit that follow button for more science wonders!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious to learn more?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

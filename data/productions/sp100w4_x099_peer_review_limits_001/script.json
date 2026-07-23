@@ -1,0 +1,74 @@
+{
+  "title": "Peer Review Limits",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the intriguing limitations of peer review in science.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about peer review limits.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Peer review is essential, but it's not infallible. Errors can slip through.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Preliminary research often gets published without rigorous review, leading to misleading conclusions.",
+      "emotion": "curiosity",
+      "delivery": "slightly urgent",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that only 30% of peer-reviewed articles are truly reliable.",
+      "emotion": "curiosity",
+      "delivery": "fact-driven",
+      "retention_device": "unexpected statistic"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding these limits helps you navigate scientific claims more critically.",
+      "emotion": "curiosity",
+      "delivery": "empowering",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how to discern reliable science? Follow for more insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "engaging question"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about peer review limits. Peer review is essential, but it's not infallible. Errors can slip through. Preliminary research often gets published without rigorous review, leading to misleading conclusions. Studies show that only 30% of peer-reviewed articles are truly reliable. Understanding these limits helps you navigate scientific claims more critically. Curious about how to discern reliable science? Follow for more insights!",
+  "call_to_action": "Follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:26:36.947119+00:00",
+  "source": "ai"
+}

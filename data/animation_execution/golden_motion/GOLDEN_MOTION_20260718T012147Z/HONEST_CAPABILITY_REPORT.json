@@ -1,0 +1,33 @@
+{
+  "features_executed_natively": [],
+  "features_approximated": [],
+  "features_unavailable": [
+    "skeletal_animation",
+    "joint_transforms",
+    "inverse_kinematics",
+    "facial_blendshapes_or_bones",
+    "lip_synchronization",
+    "object_constraints",
+    "collision_handling",
+    "foot_planting",
+    "character_locomotion",
+    "cloth_or_secondary_motion",
+    "animated_cameras",
+    "persistent_3d_environments"
+  ],
+  "fallback_used": null,
+  "fallback_forbidden_for_golden_motion": true,
+  "true_motion_explicitly_not_used": true,
+  "verdict": "INSUFFICIENT \u2014 no skeletal animation runtime and no skinned mesh assets are available. true_motion is an ffmpeg layered still compositor. Do not produce a Golden Motion MP4 that fakes skeletal performance.",
+  "required_integration": {
+    "runtime_options": [
+      "Blender (bpy) headless + DOCTOR_001 skinned GLB/FBX",
+      "Godot 4 AnimationPlayer + GLTF character",
+      "Unreal Engine Sequencer / Control Rig",
+      "Unity Timeline + Humanoid Animator",
+      "Cloud skeletal provider (e.g. dedicated character animation API) returning mesh-deformed frame sequences"
+    ],
+    "asset_gap": "DOCTOR_001 needs a permanent skinned mesh + facial blendshapes/bones bound to CHARACTER_RIG_PACKAGE hierarchy \u2014 not plates alone.",
+    "architecture_note": "Frozen architecture keeps planning packages; this layer is the adapter. A new renderer product is not invented here \u2014 an external skeletal runtime must be selected and integrated via the adapter."
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "world_id": "WORLD-HOSPITAL",
+  "world_type": "Hospital",
+  "name": "Hospital",
+  "theme": "clinical care",
+  "scale": "wing",
+  "historical_accuracy": 85,
+  "environment": {
+    "description": "Modern hospital corridor with nurse station glow, polished linoleum, and soft fluorescents",
+    "continuity_key": "WORLD-HOSPITAL",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "soft clinical fluorescents + practical monitor glow",
+    "consistent_key": true
+  },
+  "architecture": [
+    "corridor modules",
+    "glass nurse station",
+    "ceiling track lights"
+  ],
+  "weather": "indoors",
+  "objects": [
+    {
+      "object_id": "obj_vital_monitor",
+      "name": "vital_monitor",
+      "surface": "desk",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.5,
+        "y": 0.9,
+        "z": 0.35
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_crash_cart",
+      "name": "crash_cart",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.3,
+        "y": 0.0,
+        "z": 0.55
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "obj_waiting_chair",
+      "name": "waiting_chair",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.2,
+        "y": 0.0,
+        "z": 0.7
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "background_animations": [
+    "monitor waveform crawl",
+    "soft door traffic blur"
+  ],
+  "sound_ambience": [
+    "distant page",
+    "soft shoe squeak",
+    "equipment hum"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.5,
+    "max_height": 2.5,
+    "min_distance": 0.5,
+    "max_distance": 15.0
+  },
+  "color_palette": {
+    "family": "lab",
+    "primary": "#F1FAEE",
+    "accent": "#457B9D",
+    "warn": "#E63946"
+  },
+  "lighting_presets": [
+    {
+      "id": "day_neutral",
+      "recipe": "clinical soft key + soft bounce fill",
+      "mood": "neutral"
+    },
+    {
+      "id": "dramatic_rim",
+      "recipe": "clinical soft key + hard rim + practical instrument glow",
+      "mood": "dramatic"
+    },
+    {
+      "id": "low_key_focus",
+      "recipe": "low-key with luminous subject isolation",
+      "mood": "focus"
+    },
+    {
+      "id": "bright_reveal",
+      "recipe": "bright key + lifted shadows for revelation",
+      "mood": "reveal"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "wide_establish",
+      "position": "rear_center",
+      "angle": "eye_level",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "bench_medium",
+      "position": "workbench_front",
+      "angle": "slight_high",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "macro_detail",
+      "position": "instrument_close",
+      "angle": "macro",
+      "lens_hint": "85mm"
+    },
+    {
+      "id": "corner_observe",
+      "position": "room_corner",
+      "angle": "observational",
+      "lens_hint": "28mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "nurse_desk",
+      "region": "station"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "or_doors",
+      "to_compatible": [
+        "Operating Room",
+        "Research Center",
+        "University"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.158456+00:00"
+}

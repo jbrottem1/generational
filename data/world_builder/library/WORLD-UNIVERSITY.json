@@ -1,0 +1,165 @@
+{
+  "world_id": "WORLD-UNIVERSITY",
+  "world_type": "University",
+  "name": "University",
+  "theme": "academic inquiry",
+  "scale": "campus",
+  "historical_accuracy": 85,
+  "environment": {
+    "description": "Campus quad with lecture hall facade, lawn paths, and warm stone fa\u00e7ades",
+    "continuity_key": "WORLD-UNIVERSITY",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "soft daylight + warm stone bounce",
+    "consistent_key": true
+  },
+  "architecture": [
+    "lecture hall",
+    "colonnade",
+    "library wing link"
+  ],
+  "weather": "clear_mild",
+  "objects": [
+    {
+      "object_id": "obj_quad_statue",
+      "name": "quad_statue",
+      "surface": "ground",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.5,
+        "y": 0.0,
+        "z": 0.4
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_bike_rack",
+      "name": "bike_rack",
+      "surface": "ground",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.3,
+        "y": 0.0,
+        "z": 0.55
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "obj_outdoor_table",
+      "name": "outdoor_table",
+      "surface": "ground",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.4,
+        "y": 0.0,
+        "z": 0.6
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "background_animations": [
+    "leaf fall light",
+    "student traffic soft"
+  ],
+  "sound_ambience": [
+    "distant bell",
+    "foot traffic",
+    "birds"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.5,
+    "max_height": 10.0,
+    "min_distance": 0.8,
+    "max_distance": 40.0
+  },
+  "color_palette": {
+    "family": "science_core",
+    "primary": "#0B1D36",
+    "accent": "#F4A261",
+    "stone": "#E8F1F8"
+  },
+  "lighting_presets": [
+    {
+      "id": "day_neutral",
+      "recipe": "campus daylight + soft bounce fill",
+      "mood": "neutral"
+    },
+    {
+      "id": "dramatic_rim",
+      "recipe": "campus daylight + hard rim + practical instrument glow",
+      "mood": "dramatic"
+    },
+    {
+      "id": "low_key_focus",
+      "recipe": "low-key with luminous subject isolation",
+      "mood": "focus"
+    },
+    {
+      "id": "bright_reveal",
+      "recipe": "bright key + lifted shadows for revelation",
+      "mood": "reveal"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "wide_establish",
+      "position": "rear_center",
+      "angle": "eye_level",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "bench_medium",
+      "position": "workbench_front",
+      "angle": "slight_high",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "macro_detail",
+      "position": "instrument_close",
+      "angle": "macro",
+      "lens_hint": "85mm"
+    },
+    {
+      "id": "corner_observe",
+      "position": "room_corner",
+      "angle": "observational",
+      "lens_hint": "28mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "quad",
+      "region": "lawn"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "hall_doors",
+      "to_compatible": [
+        "Library",
+        "Research Center",
+        "Science Lab"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.160034+00:00"
+}

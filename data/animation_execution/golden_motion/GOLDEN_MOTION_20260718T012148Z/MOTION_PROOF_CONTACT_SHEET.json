@@ -1,0 +1,14 @@
+{
+  "ok": false,
+  "reason": "No frame buffer \u2014 contact sheet not generated",
+  "required_frames": [
+    "left_foot_plant",
+    "right_foot_plant",
+    "reach",
+    "grasp",
+    "object_lift",
+    "facial_expression",
+    "speaking_pose"
+  ],
+  "frames": []
+}

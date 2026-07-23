@@ -7,10 +7,10 @@ available, deterministic heuristics otherwise.
 
 from __future__ import annotations
 
-from core.ai import get_provider
 from core.log import get_logger, log_event
 from engines.base import Engine
 from engines.heuristics import CURIOSITY_WORDS, clamp, content_words, count_hits, stable_jitter
+from services.provider_runtime.engine_api import runtime_generate_json
 
 logger = get_logger(__name__)
 
@@ -42,25 +42,42 @@ class SeoEngine(Engine):
         if not selected:
             return {}
 
+        try:
+            from services.learning.api import for_seo
+
+            seo_guide = for_seo(str(context.get("subject") or ""))
+            context["seo_learning_guidance"] = seo_guide
+        except Exception:
+            seo_guide = {}
+
         seo_items = self._provider_seo(context, selected)
         if seo_items is None:
             seo_items = [self._heuristic_seo(context, idea) for idea in selected]
 
         all_keywords = []
         for idea, seo in zip(selected, seo_items):
+            # Prefer historically winning titles/keywords when available
+            if seo_guide.get("winning_titles") and len(str(seo.get("title") or "")) < 12:
+                seo["title"] = seo_guide["winning_titles"][0][:60]
+            if seo_guide.get("winning_keywords"):
+                merged = list(seo.get("keywords") or [])
+                for kw in seo_guide["winning_keywords"][:5]:
+                    if kw not in merged:
+                        merged.append(kw)
+                seo["keywords"] = merged[:12]
             idea["title"] = seo["title"]
             idea["hashtags"] = seo["hashtags"]
             idea["keywords"] = seo["keywords"]
             idea["description"] = seo["description"]
             idea["thumbnail_concept"] = seo["thumbnail_concept"]
             idea["seo_score"] = seo_score(seo["title"], seo["keywords"], seo["hashtags"], seo["description"])
+            idea["seo_learning_guidance"] = seo_guide
             all_keywords.extend(seo["keywords"])
 
         log_event(logger, "seo.optimized", items=len(selected))
         return {"selected_ideas": selected, "seo_keywords": sorted(set(all_keywords))}
 
     def _provider_seo(self, context: dict, selected: list) -> "list | None":
-        provider = get_provider()
         items = "\n".join(f'{i}. "{idea["title"]}" — {idea["hook"]}' for i, idea in enumerate(selected, 1))
         system = "You are a short-form SEO and packaging expert. Respond with valid minified JSON only."
         user = (
@@ -71,12 +88,15 @@ class SeoEngine(Engine):
             '"description": "1-2 sentence description", '
             '"thumbnail_concept": "one sentence thumbnail concept"}]}'
         )
-        data, tokens = provider.generate_json(system, user, context.get("model", ""))
+        data, tokens, provider_name = runtime_generate_json(
+            system, user, model=context.get("model", ""), operation="generate_metadata",
+        )
         if data is None:
-            if provider.name != "demo":
+            if provider_name and provider_name != "demo":
                 context["error"] = "AI SEO call failed; used heuristic fallback."
             return None
         context["tokens_used"] = context.get("tokens_used", 0) + tokens
+        context["provider_used"] = provider_name
         items_out = data.get("items", [])
         if len(items_out) < len(selected):
             return None

@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Did you know plants have their own secret trade network?",
+    "visual_description": "Hook visual: Did you know plants have their own secret trade network?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Did you know plants have their own secret trade network?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Did you know plants have their own secret trade network?",
+    "stock_footage_query": "",
+    "text_overlay": "Did you know plants",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "It's called mycorrhizae, a partnership between fungi and plant roots.",
+    "visual_description": "Context visual: It's called mycorrhizae, a partnership between fungi and plant roots.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: It's called mycorrhizae, a partnership between fungi and plant roots.",
+    "ai_video_prompt": "Cinematic motion: Context visual: It's called mycorrhizae, a partnership between fungi and plant roots.",
+    "stock_footage_query": "",
+    "text_overlay": "It's called mycorrhizae, a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "These fungi extend roots, increasing water and nutrient absorption.",
+    "visual_description": "Escalation visual: These fungi extend roots, increasing water and nutrient absorption.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: These fungi extend roots, increasing water and nutrient absorption.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: These fungi extend roots, increasing water and nutrient absorption.",
+    "stock_footage_query": "",
+    "text_overlay": "These fungi extend roots,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "In return, plants share sugars produced during photosynthesis.",
+    "visual_description": "Evidence visual: In return, plants share sugars produced during photosynthesis.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: In return, plants share sugars produced during photosynthesis.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: In return, plants share sugars produced during photosynthesis.",
+    "stock_footage_query": "",
+    "text_overlay": "In return, plants share",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "But what happens when this trade goes wrong?",
+    "visual_description": "Pattern Interrupt visual: But what happens when this trade goes wrong?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: But what happens when this trade goes wrong?",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: But what happens when this trade goes wrong?",
+    "stock_footage_query": "",
+    "text_overlay": "But what happens when",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "payoff",
+    "emotion": "concern",
+    "length_sec": 12.0,
+    "narration": "Unhealthy soils or pollution can disrupt this balance, affecting plant health.",
+    "visual_description": "Payoff visual: Unhealthy soils or pollution can disrupt this balance, affecting plant health.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Unhealthy soils or pollution can disrupt this balance, affecting plant health.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Unhealthy soils or pollution can disrupt this balance, affecting plant health.",
+    "stock_footage_query": "",
+    "text_overlay": "Unhealthy soils or pollution",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "inviting",
+    "length_sec": 10.0,
+    "narration": "Curious to learn more about nature's secrets? Hit subscribe!",
+    "visual_description": "Cta visual: Curious to learn more about nature's secrets? Hit subscribe!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious to learn more about nature's secrets? Hit subscribe!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious to learn more about nature's secrets? Hit subscribe!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

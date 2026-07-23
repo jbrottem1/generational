@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if we could grow human organs on tiny chips?",
+    "visual_description": "Hook visual: What if we could grow human organs on tiny chips?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if we could grow human organs on tiny chips?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if we could grow human organs on tiny chips?",
+    "stock_footage_query": "",
+    "text_overlay": "What if we could",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Organs on chips mimic human organs, allowing scientists to study diseases and test drugs.",
+    "visual_description": "Context visual: Organs on chips mimic human organs, allowing scientists to study diseases and test drugs.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Organs on chips mimic human organs, allowing scientists to study diseases and test drugs.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Organs on chips mimic human organs, allowing scientists to study diseases and test drugs.",
+    "stock_footage_query": "",
+    "text_overlay": "Organs on chips mimic",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Imagine testing new medicines without risking real patients' lives.",
+    "visual_description": "Escalation visual: Imagine testing new medicines without risking real patients' lives.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Imagine testing new medicines without risking real patients' lives.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Imagine testing new medicines without risking real patients' lives.",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine testing new medicines",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Research shows these chips can predict human responses better than animal models.",
+    "visual_description": "Evidence visual: Research shows these chips can predict human responses better than animal models.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows these chips can predict human responses better than animal models.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows these chips can predict human responses better than animal models.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows these chips",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But there\u2019s uncertainty. Not all organs can be replicated accurately yet. Why?",
+    "visual_description": "Pattern Interrupt visual: But there\u2019s uncertainty. Not all organs can be replicated accurately yet. Why?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: But there\u2019s uncertainty. Not all organs can be replicated accurately yet. Why?",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: But there\u2019s uncertainty. Not all organs can be replicated accurately yet. Why?",
+    "stock_footage_query": "",
+    "text_overlay": "But there\u2019s uncertainty. Not",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 16.0,
+    "narration": "Advancements in materials and technology could change that, opening doors to personalized medicine.",
+    "visual_description": "Payoff visual: Advancements in materials and technology could change that, opening doors to personalized medicine.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Advancements in materials and technology could change that, opening doors to personalized medicine.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Advancements in materials and technology could change that, opening doors to personalized medicine.",
+    "stock_footage_query": "",
+    "text_overlay": "Advancements in materials and",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Curious about more science breakthroughs? Follow for more insights!",
+    "visual_description": "Cta visual: Curious about more science breakthroughs? Follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more science breakthroughs? Follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more science breakthroughs? Follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more science",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

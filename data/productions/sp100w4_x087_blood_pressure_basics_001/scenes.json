@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about blood pressure basics.",
+    "visual_description": "Hook visual: Here's what science actually says about blood pressure basics.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about blood pressure basics.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about blood pressure basics.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Blood pressure measures the force of blood against your arteries.",
+    "visual_description": "Context visual: Blood pressure measures the force of blood against your arteries.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Blood pressure measures the force of blood against your arteries.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Blood pressure measures the force of blood against your arteries.",
+    "stock_footage_query": "",
+    "text_overlay": "Blood pressure measures the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "High blood pressure can lead to serious health issues\u2014think heart attacks.",
+    "visual_description": "Escalation visual: High blood pressure can lead to serious health issues\u2014think heart attacks.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: High blood pressure can lead to serious health issues\u2014think heart attacks.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: High blood pressure can lead to serious health issues\u2014think heart attacks.",
+    "stock_footage_query": "",
+    "text_overlay": "High blood pressure can",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "surprise",
+    "length_sec": 9.0,
+    "narration": "Studies show that reducing salt intake significantly lowers blood pressure.",
+    "visual_description": "Evidence visual: Studies show that reducing salt intake significantly lowers blood pressure.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show that reducing salt intake significantly lowers blood pressure.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show that reducing salt intake significantly lowers blood pressure.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show that reducing",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 27.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "optimism",
+    "length_sec": 8.0,
+    "narration": "Managing stress and regular exercise also play crucial roles.",
+    "visual_description": "Payoff visual: Managing stress and regular exercise also play crucial roles.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Managing stress and regular exercise also play crucial roles.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Managing stress and regular exercise also play crucial roles.",
+    "stock_footage_query": "",
+    "text_overlay": "Managing stress and regular",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 27.0,
+      "end_sec": 35.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 27.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Curious about your blood pressure? Check with a doctor today!",
+    "visual_description": "Cta visual: Curious about your blood pressure? Check with a doctor today!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about your blood pressure? Check with a doctor today!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about your blood pressure? Check with a doctor today!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about your blood",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 35.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 35.0
+    }
+  }
+]

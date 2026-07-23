@@ -1,0 +1,74 @@
+{
+  "title": "Hydrogen Fuel Cells",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A deep dive into the science of hydrogen fuel cells and their potential.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about hydrogen fuel cells than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Hydrogen fuel cells convert hydrogen and oxygen into electricity, emitting only water vapor.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But why isn't everyone using them? The answer lies in the technology and infrastructure.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Fuel cells are efficient, but costly to produce and require significant energy for hydrogen extraction.",
+      "emotion": "curiosity",
+      "delivery": "fact-based",
+      "retention_device": "data point"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "As technology advances, hydrogen could power our future\u2014clean and sustainable.",
+      "emotion": "curiosity",
+      "delivery": "optimistic",
+      "retention_device": "vision of the future"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how it works? Hit that follow button for more science insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about hydrogen fuel cells than social media does. Hydrogen fuel cells convert hydrogen and oxygen into electricity, emitting only water vapor. But why isn't everyone using them? The answer lies in the technology and infrastructure. Fuel cells are efficient, but costly to produce and require significant energy for hydrogen extraction. As technology advances, hydrogen could power our future\u2014clean and sustainable. Curious about how it works? Hit that follow button for more science insights!",
+  "call_to_action": "Hit that follow button for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:49:27.127928+00:00",
+  "source": "ai"
+}

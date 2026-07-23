@@ -1,0 +1,55 @@
+{
+  "world_id": "WORLD-CITY-PARK",
+  "living": true,
+  "forbid_static_environment": true,
+  "channels": [
+    "ambient_particles",
+    "lighting_changes",
+    "moving_trees",
+    "wind",
+    "birds",
+    "clouds"
+  ],
+  "tracks": [
+    {
+      "id": "ambient_particles",
+      "continuous": true,
+      "layer": "midground",
+      "amplitude": 0.4
+    },
+    {
+      "id": "lighting_changes",
+      "continuous": true,
+      "layer": "midground",
+      "amplitude": 0.4
+    },
+    {
+      "id": "moving_trees",
+      "continuous": true,
+      "layer": "background",
+      "amplitude": 0.4
+    },
+    {
+      "id": "wind",
+      "continuous": true,
+      "layer": "midground",
+      "amplitude": 0.4
+    },
+    {
+      "id": "birds",
+      "continuous": true,
+      "layer": "background",
+      "amplitude": 0.4
+    },
+    {
+      "id": "clouds",
+      "continuous": true,
+      "layer": "background",
+      "amplitude": 0.4
+    }
+  ],
+  "weather": "clear_breeze",
+  "lighting": "golden_hour",
+  "lighting_dynamic": true,
+  "philosophy": "The environment is never static."
+}

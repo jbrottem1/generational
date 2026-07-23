@@ -1,0 +1,1555 @@
+{
+  "render_package_version": "2.0",
+  "render_engine_version": "1.0.0",
+  "title": "The Coriolis Effect Explained",
+  "created_at": "2026-07-10T17:12:13.445149+00:00",
+  "output_format": {
+    "aspect_ratio": "9:16",
+    "resolution": {
+      "width": 1080,
+      "height": 1920
+    },
+    "container": "mp4",
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "fps": 30,
+    "orientation": "vertical",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels"
+    ]
+  },
+  "platforms": [
+    "youtube_shorts",
+    "tiktok",
+    "instagram_reels",
+    "facebook_reels"
+  ],
+  "resolution": "1080x1920",
+  "aspect_ratio": "9:16",
+  "duration_sec": 60.0,
+  "timeline": {
+    "fps": 30,
+    "total_duration_sec": 60.0,
+    "segment_count": 6,
+    "segments": [
+      {
+        "scene_id": 1,
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "duration": 2.0,
+        "narration_reference": "narration/scene_1",
+        "visual_reference": "visual/scene_1",
+        "caption_reference": "captions/scene_1",
+        "audio_reference": "audio/scene_1",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "quick_punch_in",
+        "overlay_text": "Ever wonder why hurricanes",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 2,
+        "start_time": 2.0,
+        "end_time": 10.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_2",
+        "visual_reference": "visual/scene_2",
+        "caption_reference": "captions/scene_2",
+        "audio_reference": "audio/scene_2",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "The Coriolis effect deflects",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 3,
+        "start_time": 10.0,
+        "end_time": 18.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_3",
+        "visual_reference": "visual/scene_3",
+        "caption_reference": "captions/scene_3",
+        "audio_reference": "audio/scene_3",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "It\u2019s not just hurricanes;",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 4,
+        "start_time": 18.0,
+        "end_time": 26.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_4",
+        "visual_reference": "visual/scene_4",
+        "caption_reference": "captions/scene_4",
+        "audio_reference": "audio/scene_4",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "And no, toilets don\u2019t",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 5,
+        "start_time": 26.0,
+        "end_time": 38.0,
+        "duration": 12.0,
+        "narration_reference": "narration/scene_5",
+        "visual_reference": "visual/scene_5",
+        "caption_reference": "captions/scene_5",
+        "audio_reference": "audio/scene_5",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "The Coriolis effect is",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 6,
+        "start_time": 38.0,
+        "end_time": 60.0,
+        "duration": 22.0,
+        "narration_reference": "narration/scene_6",
+        "visual_reference": "visual/scene_6",
+        "caption_reference": "captions/scene_6",
+        "audio_reference": "audio/scene_6",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Want to dive deeper",
+        "render_status": "planned"
+      }
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "scene_render_plan": [
+    {
+      "scene_id": 1,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Hook visual: Ever wonder why hurricanes spin? It's Earth's rotation!",
+      "video_prompt": "Cinematic motion: Hook visual: Ever wonder why hurricanes spin? It's Earth's rotation!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "subtle push",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "quick_punch_in",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.188
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 70
+      },
+      "text_overlays": [
+        {
+          "text": "Ever wonder why hurricanes",
+          "treatment": "",
+          "start_sec": 0.0,
+          "end_sec": 2.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "bass hit",
+          "at_sec": 0.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Ever wonder why hurricanes spin? It's Earth's rotation!",
+      "duration_sec": 2.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Hook visual: Ever wonder why hurricanes spin? It's Earth's rotation!",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 1
+      }
+    },
+    {
+      "scene_id": 2,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Context visual: The Coriolis effect deflects air and water, shaping weather across the globe.",
+      "video_prompt": "Cinematic motion: Context visual: The Coriolis effect deflects air and water, shaping weather across the globe.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "The Coriolis effect deflects",
+          "treatment": "",
+          "start_sec": 2.0,
+          "end_sec": 10.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 2.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "The Coriolis effect deflects air and water, shaping weather across the globe.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Context visual: The Coriolis effect deflects air and water, shaping weather across the globe.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 2
+      }
+    },
+    {
+      "scene_id": 3,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Escalation visual: It\u2019s not just hurricanes; everything from ocean currents to wind patterns is influenced.",
+      "video_prompt": "Cinematic motion: Escalation visual: It\u2019s not just hurricanes; everything from ocean currents to wind patterns is influenced.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "It\u2019s not just hurricanes;",
+          "treatment": "",
+          "start_sec": 10.0,
+          "end_sec": 18.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 10.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "It\u2019s not just hurricanes; everything from ocean currents to wind patterns is influenced.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Escalation visual: It\u2019s not just hurricanes; everything from ocean currents to wind patterns is influenced.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 3
+      }
+    },
+    {
+      "scene_id": 4,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Evidence visual: And no, toilets don\u2019t swirl differently in different hemispheres. That's a myth!",
+      "video_prompt": "Cinematic motion: Evidence visual: And no, toilets don\u2019t swirl differently in different hemispheres. That's a myth!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "And no, toilets don\u2019t",
+          "treatment": "",
+          "start_sec": 18.0,
+          "end_sec": 26.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 18.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "And no, toilets don\u2019t swirl differently in different hemispheres. That's a myth!",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Evidence visual: And no, toilets don\u2019t swirl differently in different hemispheres. That's a myth!",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 4
+      }
+    },
+    {
+      "scene_id": 5,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Payoff visual: The Coriolis effect is vital for predicting weather and understanding our planet's mechanics.",
+      "video_prompt": "Cinematic motion: Payoff visual: The Coriolis effect is vital for predicting weather and understanding our planet's mechanics.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "The Coriolis effect is",
+          "treatment": "",
+          "start_sec": 26.0,
+          "end_sec": 38.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 26.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "The Coriolis effect is vital for predicting weather and understanding our planet's mechanics.",
+      "duration_sec": 12.0,
+      "resolved_asset": {}
+    },
+    {
+      "scene_id": 6,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Cta visual: Want to dive deeper into science? Hit that follow button!",
+      "video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into science? Hit that follow button!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Want to dive deeper",
+          "treatment": "",
+          "start_sec": 38.0,
+          "end_sec": 60.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 38.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Want to dive deeper into science? Hit that follow button!",
+      "duration_sec": 22.0,
+      "resolved_asset": {}
+    }
+  ],
+  "caption_render_plan": {
+    "mode": "word_by_word",
+    "style_preset": "bold_pop",
+    "style": {
+      "font": "Montserrat ExtraBold",
+      "size_pct": 4.8,
+      "fill": "#FFFFFF",
+      "stroke": "#000000",
+      "stroke_width_px": 6,
+      "emphasis_fill": "#FFD400",
+      "animation": "word pop 1.08x on entry",
+      "case": "upper"
+    },
+    "available_presets": [
+      "bold_pop",
+      "clean_minimal",
+      "karaoke_highlight",
+      "documentary_lower_third"
+    ],
+    "safe_area": {
+      "top_pct": 12.0,
+      "bottom_pct": 20.0,
+      "left_pct": 6.0,
+      "right_pct": 12.0
+    },
+    "platform_layouts": {
+      "youtube_shorts": {
+        "anchor_y_pct": 68.0,
+        "notes": "clear the title/channel block at the bottom"
+      },
+      "tiktok": {
+        "anchor_y_pct": 64.0,
+        "notes": "clear caption + music marquee, keep off the right rail"
+      },
+      "instagram_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "clear the audio attribution row"
+      },
+      "facebook_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "mirror the Reels layout"
+      }
+    },
+    "segments": [
+      {
+        "scene_id": 1,
+        "mode": "word_by_word",
+        "start_sec": 0.0,
+        "end_sec": 2.0,
+        "sentence": "Ever wonder why hurricanes spin? It's Earth's rotation!",
+        "words": [
+          {
+            "word": "Ever",
+            "start_sec": 0.0,
+            "end_sec": 0.19,
+            "emphasis": false
+          },
+          {
+            "word": "wonder",
+            "start_sec": 0.19,
+            "end_sec": 0.45,
+            "emphasis": false
+          },
+          {
+            "word": "why",
+            "start_sec": 0.45,
+            "end_sec": 0.61,
+            "emphasis": false
+          },
+          {
+            "word": "hurricanes",
+            "start_sec": 0.61,
+            "end_sec": 1.0,
+            "emphasis": true
+          },
+          {
+            "word": "spin",
+            "start_sec": 1.0,
+            "end_sec": 1.19,
+            "emphasis": false
+          },
+          {
+            "word": "It's",
+            "start_sec": 1.19,
+            "end_sec": 1.39,
+            "emphasis": false
+          },
+          {
+            "word": "Earth's",
+            "start_sec": 1.39,
+            "end_sec": 1.68,
+            "emphasis": false
+          },
+          {
+            "word": "rotation",
+            "start_sec": 1.68,
+            "end_sec": 2.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "hurricanes"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 2,
+        "mode": "word_by_word",
+        "start_sec": 2.0,
+        "end_sec": 10.0,
+        "sentence": "The Coriolis effect deflects air and water, shaping weather across the globe.",
+        "words": [
+          {
+            "word": "The",
+            "start_sec": 2.0,
+            "end_sec": 2.45,
+            "emphasis": false
+          },
+          {
+            "word": "Coriolis",
+            "start_sec": 2.45,
+            "end_sec": 3.36,
+            "emphasis": true
+          },
+          {
+            "word": "effect",
+            "start_sec": 3.36,
+            "end_sec": 4.09,
+            "emphasis": false
+          },
+          {
+            "word": "deflects",
+            "start_sec": 4.09,
+            "end_sec": 5.0,
+            "emphasis": true
+          },
+          {
+            "word": "air",
+            "start_sec": 5.0,
+            "end_sec": 5.45,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 5.45,
+            "end_sec": 5.91,
+            "emphasis": false
+          },
+          {
+            "word": "water",
+            "start_sec": 5.91,
+            "end_sec": 6.55,
+            "emphasis": false
+          },
+          {
+            "word": "shaping",
+            "start_sec": 6.55,
+            "end_sec": 7.36,
+            "emphasis": false
+          },
+          {
+            "word": "weather",
+            "start_sec": 7.36,
+            "end_sec": 8.18,
+            "emphasis": false
+          },
+          {
+            "word": "across",
+            "start_sec": 8.18,
+            "end_sec": 8.91,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 8.91,
+            "end_sec": 9.36,
+            "emphasis": false
+          },
+          {
+            "word": "globe",
+            "start_sec": 9.36,
+            "end_sec": 10.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "Coriolis",
+          "deflects"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 3,
+        "mode": "word_by_word",
+        "start_sec": 10.0,
+        "end_sec": 18.0,
+        "sentence": "It\u2019s not just hurricanes; everything from ocean currents to wind patterns is influenced.",
+        "words": [
+          {
+            "word": "It",
+            "start_sec": 10.0,
+            "end_sec": 10.32,
+            "emphasis": false
+          },
+          {
+            "word": "s",
+            "start_sec": 10.32,
+            "end_sec": 10.55,
+            "emphasis": false
+          },
+          {
+            "word": "not",
+            "start_sec": 10.55,
+            "end_sec": 10.95,
+            "emphasis": false
+          },
+          {
+            "word": "just",
+            "start_sec": 10.95,
+            "end_sec": 11.43,
+            "emphasis": false
+          },
+          {
+            "word": "hurricanes",
+            "start_sec": 11.43,
+            "end_sec": 12.38,
+            "emphasis": true
+          },
+          {
+            "word": "everything",
+            "start_sec": 12.38,
+            "end_sec": 13.33,
+            "emphasis": true
+          },
+          {
+            "word": "from",
+            "start_sec": 13.33,
+            "end_sec": 13.8,
+            "emphasis": false
+          },
+          {
+            "word": "ocean",
+            "start_sec": 13.8,
+            "end_sec": 14.36,
+            "emphasis": false
+          },
+          {
+            "word": "currents",
+            "start_sec": 14.36,
+            "end_sec": 15.15,
+            "emphasis": false
+          },
+          {
+            "word": "to",
+            "start_sec": 15.15,
+            "end_sec": 15.47,
+            "emphasis": false
+          },
+          {
+            "word": "wind",
+            "start_sec": 15.47,
+            "end_sec": 15.94,
+            "emphasis": false
+          },
+          {
+            "word": "patterns",
+            "start_sec": 15.94,
+            "end_sec": 16.73,
+            "emphasis": false
+          },
+          {
+            "word": "is",
+            "start_sec": 16.73,
+            "end_sec": 17.05,
+            "emphasis": false
+          },
+          {
+            "word": "influenced",
+            "start_sec": 17.05,
+            "end_sec": 18.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "everything",
+          "hurricanes"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 4,
+        "mode": "word_by_word",
+        "start_sec": 18.0,
+        "end_sec": 26.0,
+        "sentence": "And no, toilets don\u2019t swirl differently in different hemispheres. That's a myth!",
+        "words": [
+          {
+            "word": "And",
+            "start_sec": 18.0,
+            "end_sec": 18.44,
+            "emphasis": false
+          },
+          {
+            "word": "no",
+            "start_sec": 18.44,
+            "end_sec": 18.79,
+            "emphasis": false
+          },
+          {
+            "word": "toilets",
+            "start_sec": 18.79,
+            "end_sec": 19.58,
+            "emphasis": false
+          },
+          {
+            "word": "don",
+            "start_sec": 19.58,
+            "end_sec": 20.02,
+            "emphasis": false
+          },
+          {
+            "word": "t",
+            "start_sec": 20.02,
+            "end_sec": 20.29,
+            "emphasis": false
+          },
+          {
+            "word": "swirl",
+            "start_sec": 20.29,
+            "end_sec": 20.9,
+            "emphasis": false
+          },
+          {
+            "word": "differently",
+            "start_sec": 20.9,
+            "end_sec": 22.04,
+            "emphasis": true
+          },
+          {
+            "word": "in",
+            "start_sec": 22.04,
+            "end_sec": 22.4,
+            "emphasis": false
+          },
+          {
+            "word": "different",
+            "start_sec": 22.4,
+            "end_sec": 23.36,
+            "emphasis": false
+          },
+          {
+            "word": "hemispheres",
+            "start_sec": 23.36,
+            "end_sec": 24.51,
+            "emphasis": true
+          },
+          {
+            "word": "That's",
+            "start_sec": 24.51,
+            "end_sec": 25.21,
+            "emphasis": false
+          },
+          {
+            "word": "a",
+            "start_sec": 25.21,
+            "end_sec": 25.47,
+            "emphasis": false
+          },
+          {
+            "word": "myth",
+            "start_sec": 25.47,
+            "end_sec": 26.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "differently",
+          "hemispheres"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 5,
+        "mode": "word_by_word",
+        "start_sec": 26.0,
+        "end_sec": 38.0,
+        "sentence": "The Coriolis effect is vital for predicting weather and understanding our planet's mechanics.",
+        "words": [
+          {
+            "word": "The",
+            "start_sec": 26.0,
+            "end_sec": 26.57,
+            "emphasis": false
+          },
+          {
+            "word": "Coriolis",
+            "start_sec": 26.57,
+            "end_sec": 27.7,
+            "emphasis": false
+          },
+          {
+            "word": "effect",
+            "start_sec": 27.7,
+            "end_sec": 28.6,
+            "emphasis": false
+          },
+          {
+            "word": "is",
+            "start_sec": 28.6,
+            "end_sec": 29.06,
+            "emphasis": false
+          },
+          {
+            "word": "vital",
+            "start_sec": 29.06,
+            "end_sec": 29.85,
+            "emphasis": false
+          },
+          {
+            "word": "for",
+            "start_sec": 29.85,
+            "end_sec": 30.42,
+            "emphasis": false
+          },
+          {
+            "word": "predicting",
+            "start_sec": 30.42,
+            "end_sec": 31.77,
+            "emphasis": true
+          },
+          {
+            "word": "weather",
+            "start_sec": 31.77,
+            "end_sec": 32.79,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 32.79,
+            "end_sec": 33.36,
+            "emphasis": false
+          },
+          {
+            "word": "understanding",
+            "start_sec": 33.36,
+            "end_sec": 35.06,
+            "emphasis": true
+          },
+          {
+            "word": "our",
+            "start_sec": 35.06,
+            "end_sec": 35.62,
+            "emphasis": false
+          },
+          {
+            "word": "planet's",
+            "start_sec": 35.62,
+            "end_sec": 36.75,
+            "emphasis": false
+          },
+          {
+            "word": "mechanics",
+            "start_sec": 36.75,
+            "end_sec": 38.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "predicting",
+          "understanding"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 6,
+        "mode": "word_by_word",
+        "start_sec": 38.0,
+        "end_sec": 60.0,
+        "sentence": "Want to dive deeper into science? Hit that follow button!",
+        "words": [
+          {
+            "word": "Want",
+            "start_sec": 38.0,
+            "end_sec": 40.0,
+            "emphasis": false
+          },
+          {
+            "word": "to",
+            "start_sec": 40.0,
+            "end_sec": 41.33,
+            "emphasis": false
+          },
+          {
+            "word": "dive",
+            "start_sec": 41.33,
+            "end_sec": 43.33,
+            "emphasis": false
+          },
+          {
+            "word": "deeper",
+            "start_sec": 43.33,
+            "end_sec": 46.0,
+            "emphasis": false
+          },
+          {
+            "word": "into",
+            "start_sec": 46.0,
+            "end_sec": 48.0,
+            "emphasis": false
+          },
+          {
+            "word": "science",
+            "start_sec": 48.0,
+            "end_sec": 51.0,
+            "emphasis": true
+          },
+          {
+            "word": "Hit",
+            "start_sec": 51.0,
+            "end_sec": 52.67,
+            "emphasis": false
+          },
+          {
+            "word": "that",
+            "start_sec": 52.67,
+            "end_sec": 54.67,
+            "emphasis": false
+          },
+          {
+            "word": "follow",
+            "start_sec": 54.67,
+            "end_sec": 57.33,
+            "emphasis": false
+          },
+          {
+            "word": "button",
+            "start_sec": 57.33,
+            "end_sec": 60.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "science"
+        ],
+        "placement": "bottom third, safe zone"
+      }
+    ]
+  },
+  "audio_mix_plan": {
+    "duration_sec": 60.0,
+    "tracks": {
+      "narration": {
+        "level_db": -3.0,
+        "voice_style": {},
+        "segments": [
+          {
+            "scene_id": 1,
+            "start_sec": 0.0,
+            "end_sec": 2.0,
+            "text": "Ever wonder why hurricanes spin? It's Earth's rotation!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_coriolis_001/voice.mp3"
+          },
+          {
+            "scene_id": 2,
+            "start_sec": 2.0,
+            "end_sec": 10.0,
+            "text": "The Coriolis effect deflects air and water, shaping weather across the globe.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_coriolis_001/voice.mp3"
+          },
+          {
+            "scene_id": 3,
+            "start_sec": 10.0,
+            "end_sec": 18.0,
+            "text": "It\u2019s not just hurricanes; everything from ocean currents to wind patterns is influenced.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_coriolis_001/voice.mp3"
+          },
+          {
+            "scene_id": 4,
+            "start_sec": 18.0,
+            "end_sec": 26.0,
+            "text": "And no, toilets don\u2019t swirl differently in different hemispheres. That's a myth!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_coriolis_001/voice.mp3"
+          },
+          {
+            "scene_id": 5,
+            "start_sec": 26.0,
+            "end_sec": 38.0,
+            "text": "The Coriolis effect is vital for predicting weather and understanding our planet's mechanics.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_coriolis_001/voice.mp3"
+          },
+          {
+            "scene_id": 6,
+            "start_sec": 38.0,
+            "end_sec": 60.0,
+            "text": "Want to dive deeper into science? Hit that follow button!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w4_coriolis_001/voice.mp3"
+          }
+        ]
+      },
+      "music": {
+        "level_db": -18.0,
+        "style": "educational ambient",
+        "bpm_range": [
+          90,
+          120
+        ],
+        "energy_curve": [
+          "rise",
+          "sustain",
+          "resolve"
+        ],
+        "ducking": {
+          "enabled": true,
+          "trigger": "narration",
+          "duck_to_db": -26.0,
+          "attack_ms": 150,
+          "release_ms": 400
+        }
+      },
+      "sfx": {
+        "level_db": -10.0,
+        "cues": [
+          {
+            "scene_id": 1,
+            "cue": "bass hit",
+            "at_sec": 0.0
+          },
+          {
+            "scene_id": 2,
+            "cue": "whoosh",
+            "at_sec": 2.0
+          },
+          {
+            "scene_id": 3,
+            "cue": "whoosh",
+            "at_sec": 10.0
+          },
+          {
+            "scene_id": 4,
+            "cue": "whoosh",
+            "at_sec": 18.0
+          },
+          {
+            "scene_id": 5,
+            "cue": "whoosh",
+            "at_sec": 26.0
+          },
+          {
+            "scene_id": 6,
+            "cue": "whoosh",
+            "at_sec": 38.0
+          }
+        ]
+      },
+      "transitions": {
+        "level_db": -12.0,
+        "cues": []
+      }
+    },
+    "silence_drops": [
+      {
+        "scene_id": 5,
+        "at_sec": 25.6,
+        "duration_sec": 0.4,
+        "reason": "drop the full mix before the payoff beat"
+      }
+    ],
+    "loudness_target": {
+      "standard": "platform_safe_placeholder",
+      "integrated_lufs": -14.0,
+      "true_peak_db": -1.0,
+      "notes": "Verify with a real loudness pass when actual audio is rendered."
+    }
+  },
+  "transition_plan": {
+    "supported_types": [
+      "cut",
+      "fade",
+      "push",
+      "zoom",
+      "whip_pan",
+      "glitch",
+      "flash",
+      "documentary_slow_zoom",
+      "cinematic_push_in",
+      "quick_cut"
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "motion_plan": [
+    {
+      "scene_id": 1,
+      "effect": "quick_punch_in",
+      "intensity": 70,
+      "duration_sec": 2.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.188
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_out"
+    },
+    {
+      "scene_id": 2,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 3,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 4,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 5,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 12.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 6,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 22.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    }
+  ],
+  "asset_requirements": [],
+  "missing_assets": [],
+  "render_warnings": [],
+  "estimated_render_duration_sec": 60.0,
+  "production_readiness_score": 100,
+  "validation": {
+    "status": "SUCCESS",
+    "checks": [
+      {
+        "check": "scenes_present",
+        "passed": true,
+        "detail": "6 scenes in the plan."
+      },
+      {
+        "check": "scenes_have_visuals",
+        "passed": true,
+        "detail": "Every scene has a visual asset or prompt."
+      },
+      {
+        "check": "scenes_have_narration",
+        "passed": true,
+        "detail": "Every scene has narration."
+      },
+      {
+        "check": "captions_exist",
+        "passed": true,
+        "detail": "6 caption segments planned."
+      },
+      {
+        "check": "audio_plan_exists",
+        "passed": true,
+        "detail": "Audio mix plan covers narration/music/SFX tracks."
+      },
+      {
+        "check": "runtime_reasonable",
+        "passed": true,
+        "detail": "Total runtime 60.0s is inside the 5.0-180.0s short-form window."
+      },
+      {
+        "check": "output_format_supported",
+        "passed": true,
+        "detail": "9:16 1080x1920 MP4 \u2014 supported."
+      },
+      {
+        "check": "assets_resolved",
+        "passed": true,
+        "detail": "All asset requests were fulfilled."
+      }
+    ],
+    "problems": [],
+    "production_readiness_score": 100
+  },
+  "render_status": "SUCCESS",
+  "mock_output_path": "data/productions/sp100w4_coriolis_001/render.mp4",
+  "output_path": "data/productions/sp100w4_coriolis_001/render.mp4",
+  "mp4_path": "data/productions/sp100w4_coriolis_001/render.mp4",
+  "file_uri": "data/productions/sp100w4_coriolis_001/render.mp4",
+  "render_log": [
+    "color_bed\u2192mp4 (no visual assets resolved)",
+    "ffmpeg_exit=0"
+  ],
+  "render_job": {},
+  "mock": false,
+  "assembly": {
+    "ok": true,
+    "mock": false,
+    "error": "",
+    "output_path": "data/productions/sp100w4_coriolis_001/render.mp4",
+    "absolute_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w4_coriolis_001/render.mp4",
+    "bytes": 359809,
+    "duration_sec": 60.0,
+    "resolution": "1080x1920",
+    "ffmpeg": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/venv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "log": [
+      "color_bed\u2192mp4 (no visual assets resolved)",
+      "ffmpeg_exit=0"
+    ],
+    "visual_count": 0,
+    "has_audio": true,
+    "manifest": {
+      "title": "The Coriolis Effect Explained",
+      "format": {
+        "aspect_ratio": "9:16",
+        "resolution": {
+          "width": 1080,
+          "height": 1920
+        },
+        "container": "mp4",
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "fps": 30,
+        "orientation": "vertical",
+        "platforms": [
+          "youtube_shorts",
+          "tiktok",
+          "instagram_reels",
+          "facebook_reels"
+        ]
+      },
+      "visuals": [],
+      "audio": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w4_coriolis_001/voice.mp3"
+    }
+  },
+  "render_manifest": {
+    "scenes": 6,
+    "timeline_segments": 6,
+    "caption_segments": 6,
+    "audio_tracks": [
+      "narration",
+      "music",
+      "sfx",
+      "transitions"
+    ],
+    "transitions": 5,
+    "assets_requested": 0,
+    "assets_missing": 0,
+    "warnings": 0,
+    "readiness": 100,
+    "ready_for_publishing": true,
+    "real_mp4": true
+  }
+}

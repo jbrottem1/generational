@@ -1,0 +1,793 @@
+{
+  "shot_plan": [
+    {
+      "scene_number": 1,
+      "scene_id": "scene_00",
+      "scene_objective": "Advance hook: establish audience investment in The Parasite You May Never Know You Have",
+      "primary_subject": "The Parasite You May Never Know You Have",
+      "camera_angle": "eye_level",
+      "lens_style": "portrait_50mm",
+      "shot_size": "establishing_wide",
+      "shot_language": "reveal_shot",
+      "camera_movement": "reveal_shot",
+      "camera_begin": "Open in a framed read of The Parasite You May Never Know You Have matching reveal_shot",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=curiosity",
+      "character_blocking": {
+        "enabled": true,
+        "characters": [
+          {
+            "name": "man",
+            "kind": "character",
+            "source": "keyword"
+          },
+          {
+            "name": "people",
+            "kind": "character",
+            "source": "keyword"
+          }
+        ],
+        "blocking": "primary subject holds rule-of-thirds; secondary clears look-space",
+        "performance": {
+          "eye_movement": "track subject of narration",
+          "facial_expression": "curiosity",
+          "body_language": "weight_shift + posture settle",
+          "walking_speed": "measured",
+          "gestures": "point_or_demonstrate when teaching",
+          "reaction_timing": "anticipate beat then settle",
+          "cloth_hair": "subtle wind response"
+        },
+        "forbid_mannequin": true
+      },
+      "environmental_motion": {
+        "environment": "ocean",
+        "ambient_motion": [
+          "wave_set",
+          "spray",
+          "horizon_haze",
+          "light_caustics"
+        ],
+        "dramatic_response": [],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "volumetric_sunlight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "warm_neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "hard_cut",
+      "emotional_beat": "curiosity",
+      "emotion": "curiosity",
+      "educational_goal": "Millions of people carry this parasite\u2026 and many never realize it.",
+      "estimated_duration_sec": 3.0,
+      "animation_priority": [
+        "character_performance",
+        "environment_life",
+        "camera_storytelling",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Advance hook: establish audience investment in The Parasite You May Never Know You Have",
+          "what_viewer_learns": "Millions of people carry this parasite\u2026 and many never realize it.",
+          "emotion_to_feel": "curiosity",
+          "notice_first": "Primary subject first \u2014 The Parasite You May Never Know You Have \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of The Parasite You May Never Know You Have matching reveal_shot",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=curiosity",
+          "cinematic_payoff": "Muted viewer still understands: Millions of people carry this parasite\u2026 and many never realize it."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: Millions of people carry this parasite\u2026 and many never realize it.",
+      "muted_story_test": "Muted viewer still understands: Millions of people carry this parasite\u2026 and many never realize it.",
+      "notice_first": "Primary subject first \u2014 The Parasite You May Never Know You Have \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "reveal",
+        "ae_camera_move": "reveal",
+        "shot_size": "establishing_wide",
+        "emotion": "curiosity",
+        "lighting_mood": "volumetric_sunlight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Advance hook: establish audience investment in The Parasite You May Never Know You Have"
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 2,
+      "scene_id": "scene_01",
+      "scene_objective": "Demonstrate the idea so learning sticks: Stop scrolling \u2014 this is not what you were taught about health.",
+      "primary_subject": "The Parasite You May Never Know You Have",
+      "camera_angle": "eye_level",
+      "lens_style": "portrait_50mm",
+      "shot_size": "dynamic_medium",
+      "shot_language": "orbit_shot",
+      "camera_movement": "orbit_shot",
+      "camera_begin": "Open in a framed read of The Parasite You May Never Know You Have matching orbit_shot",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=curiosity",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "ocean",
+        "ambient_motion": [
+          "wave_set",
+          "spray",
+          "horizon_haze",
+          "light_caustics"
+        ],
+        "dramatic_response": [],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "volumetric_sunlight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "warm_neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "explanation",
+      "emotion": "curiosity",
+      "educational_goal": "Stop scrolling \u2014 this is not what you were taught about health.",
+      "estimated_duration_sec": 4.5,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Demonstrate the idea so learning sticks: Stop scrolling \u2014 this is not what you were taught about health.",
+          "what_viewer_learns": "Stop scrolling \u2014 this is not what you were taught about health.",
+          "emotion_to_feel": "curiosity",
+          "notice_first": "Primary subject first \u2014 The Parasite You May Never Know You Have \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of The Parasite You May Never Know You Have matching orbit_shot",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=curiosity",
+          "cinematic_payoff": "Muted viewer still understands: Stop scrolling \u2014 this is not what you were taught about health."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: Stop scrolling \u2014 this is not what you were taught about health.",
+      "muted_story_test": "Muted viewer still understands: Stop scrolling \u2014 this is not what you were taught about health.",
+      "notice_first": "Primary subject first \u2014 The Parasite You May Never Know You Have \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "orbit",
+        "ae_camera_move": "orbit",
+        "shot_size": "dynamic_medium",
+        "emotion": "curiosity",
+        "lighting_mood": "volumetric_sunlight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: Stop scrolling \u2014 this is not what you were taught about health."
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 3,
+      "scene_id": "scene_02",
+      "scene_objective": "Demonstrate the idea so learning sticks: In a moment you'll see the one detail about health almost everyone misses. First, the setup.",
+      "primary_subject": "The Parasite You May Never Know You Have",
+      "camera_angle": "eye_level",
+      "lens_style": "close_85mm",
+      "shot_size": "intimate_close_up",
+      "shot_language": "extreme_close_up",
+      "camera_movement": "extreme_close_up",
+      "camera_begin": "Open in a framed read of The Parasite You May Never Know You Have matching extreme_close_up",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=curiosity",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "ocean",
+        "ambient_motion": [
+          "wave_set",
+          "spray",
+          "horizon_haze",
+          "light_caustics"
+        ],
+        "dramatic_response": [],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "volumetric_sunlight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "warm_neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "wonder",
+      "emotion": "curiosity",
+      "educational_goal": "In a moment you'll see the one detail about health almost everyone misses. First, the setup.",
+      "estimated_duration_sec": 6.0,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Demonstrate the idea so learning sticks: In a moment you'll see the one detail about health almost everyone misses. First, the setup.",
+          "what_viewer_learns": "In a moment you'll see the one detail about health almost everyone misses. First, the setup.",
+          "emotion_to_feel": "curiosity",
+          "notice_first": "Primary subject first \u2014 The Parasite You May Never Know You Have \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of The Parasite You May Never Know You Have matching extreme_close_up",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=curiosity",
+          "cinematic_payoff": "Muted viewer still understands: In a moment you'll see the one detail about health almost everyone misses. First, the setup."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: In a moment you'll see the one detail about health almost everyone misses. First, the setup.",
+      "muted_story_test": "Muted viewer still understands: In a moment you'll see the one detail about health almost everyone misses. First, the setup.",
+      "notice_first": "Primary subject first \u2014 The Parasite You May Never Know You Have \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "punch_in",
+        "ae_camera_move": "dynamic_zoom",
+        "shot_size": "intimate_close_up",
+        "emotion": "curiosity",
+        "lighting_mood": "volumetric_sunlight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: In a moment you'll see the one detail about health almost everyone misses. First, the setup."
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": true,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 4,
+      "scene_id": "scene_03",
+      "scene_objective": "Demonstrate the idea so learning sticks: Here's the context most videos skip.",
+      "primary_subject": "The Parasite You May Never Know You Have",
+      "camera_angle": "eye_level",
+      "lens_style": "portrait_50mm",
+      "shot_size": "dynamic_medium",
+      "shot_language": "medium_dialogue",
+      "camera_movement": "medium_dialogue",
+      "camera_begin": "Open in a framed read of The Parasite You May Never Know You Have matching medium_dialogue",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "ocean",
+        "ambient_motion": [
+          "wave_set",
+          "spray",
+          "horizon_haze",
+          "light_caustics"
+        ],
+        "dramatic_response": [
+          "wind_increase",
+          "lighting_shift",
+          "fog_clear_on_reveal"
+        ],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "soft_daylight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "natural_reveal",
+      "emotional_beat": "scale",
+      "emotion": "focus",
+      "educational_goal": "Here's the context most videos skip.",
+      "estimated_duration_sec": 2.2,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Demonstrate the idea so learning sticks: Here's the context most videos skip.",
+          "what_viewer_learns": "Here's the context most videos skip.",
+          "emotion_to_feel": "focus",
+          "notice_first": "Primary subject first \u2014 The Parasite You May Never Know You Have \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of The Parasite You May Never Know You Have matching medium_dialogue",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+          "cinematic_payoff": "Muted viewer still understands: Here's the context most videos skip."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: Here's the context most videos skip.",
+      "muted_story_test": "Muted viewer still understands: Here's the context most videos skip.",
+      "notice_first": "Primary subject first \u2014 The Parasite You May Never Know You Have \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "slow_cinematic_push",
+        "shot_size": "dynamic_medium",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: Here's the context most videos skip."
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 5,
+      "scene_id": "scene_04",
+      "scene_objective": "Demonstrate the idea so learning sticks: Then it escalates: PubMed indexed study on health.",
+      "primary_subject": "The Parasite You May Never Know You Have",
+      "camera_angle": "eye_level",
+      "lens_style": "portrait_50mm",
+      "shot_size": "dynamic_medium",
+      "shot_language": "push_in",
+      "camera_movement": "push_in",
+      "camera_begin": "Open in a framed read of The Parasite You May Never Know You Have matching push_in",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "ocean",
+        "ambient_motion": [
+          "wave_set",
+          "spray",
+          "horizon_haze",
+          "light_caustics"
+        ],
+        "dramatic_response": [
+          "wind_increase",
+          "lighting_shift",
+          "fog_clear_on_reveal"
+        ],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "soft_daylight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "surprise",
+      "emotion": "focus",
+      "educational_goal": "Then it escalates: PubMed indexed study on health.",
+      "estimated_duration_sec": 3.0,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Demonstrate the idea so learning sticks: Then it escalates: PubMed indexed study on health.",
+          "what_viewer_learns": "Then it escalates: PubMed indexed study on health.",
+          "emotion_to_feel": "focus",
+          "notice_first": "Primary subject first \u2014 The Parasite You May Never Know You Have \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of The Parasite You May Never Know You Have matching push_in",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+          "cinematic_payoff": "Muted viewer still understands: Then it escalates: PubMed indexed study on health."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: Then it escalates: PubMed indexed study on health.",
+      "muted_story_test": "Muted viewer still understands: Then it escalates: PubMed indexed study on health.",
+      "notice_first": "Primary subject first \u2014 The Parasite You May Never Know You Have \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "slow_cinematic_push",
+        "shot_size": "dynamic_medium",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: Then it escalates: PubMed indexed study on health."
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 6,
+      "scene_id": "scene_05",
+      "scene_objective": "Demonstrate the idea so learning sticks: The evidence: Mobile health has the potential to revolutionize health care delivery and patient engagement.",
+      "primary_subject": "The Parasite You May Never Know You Have",
+      "camera_angle": "eye_level",
+      "lens_style": "portrait_50mm",
+      "shot_size": "dynamic_medium",
+      "shot_language": "parallax",
+      "camera_movement": "parallax",
+      "camera_begin": "Open in a framed read of The Parasite You May Never Know You Have matching parallax",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "ocean",
+        "ambient_motion": [
+          "wave_set",
+          "spray",
+          "horizon_haze",
+          "light_caustics"
+        ],
+        "dramatic_response": [],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "soft_daylight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "relief",
+      "emotion": "focus",
+      "educational_goal": "The evidence: Mobile health has the potential to revolutionize health care delivery and patient engagement.",
+      "estimated_duration_sec": 5.6,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Demonstrate the idea so learning sticks: The evidence: Mobile health has the potential to revolutionize health care delivery and patient engagement.",
+          "what_viewer_learns": "The evidence: Mobile health has the potential to revolutionize health care delivery and patient engagement.",
+          "emotion_to_feel": "focus",
+          "notice_first": "Primary subject first \u2014 The Parasite You May Never Know You Have \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of The Parasite You May Never Know You Have matching parallax",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+          "cinematic_payoff": "Muted viewer still understands: The evidence: Mobile health has the potential to revolutionize health care delivery and patient engagement."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: The evidence: Mobile health has the potential to revolutionize health care delivery and patient engagement.",
+      "muted_story_test": "Muted viewer still understands: The evidence: Mobile health has the potential to revolutionize health care delivery and patient engagement.",
+      "notice_first": "Primary subject first \u2014 The Parasite You May Never Know You Have \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "parallax",
+        "ae_camera_move": "parallax",
+        "shot_size": "dynamic_medium",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: The evidence: Mobile health has the potential to revolutionize health care delivery and patient engagement."
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 7,
+      "scene_id": "scene_06",
+      "scene_objective": "Deliver the takeaway on The Parasite You May Never Know You Have",
+      "primary_subject": "The Parasite You May Never Know You Have",
+      "camera_angle": "low_angle_hero",
+      "lens_style": "anamorphic_feel",
+      "shot_size": "hero_low_angle",
+      "shot_language": "hero_shot",
+      "camera_movement": "hero_shot",
+      "camera_begin": "Open in a framed read of The Parasite You May Never Know You Have matching hero_shot",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+      "character_blocking": {
+        "enabled": true,
+        "characters": [
+          {
+            "name": "people",
+            "kind": "character",
+            "source": "keyword"
+          }
+        ],
+        "blocking": "primary subject holds rule-of-thirds; secondary clears look-space",
+        "performance": {
+          "eye_movement": "track subject of narration",
+          "facial_expression": "clarity",
+          "body_language": "weight_shift + posture settle",
+          "walking_speed": "measured",
+          "gestures": "point_or_demonstrate when teaching",
+          "reaction_timing": "anticipate beat then settle",
+          "cloth_hair": "subtle wind response"
+        },
+        "forbid_mannequin": true
+      },
+      "environmental_motion": {
+        "environment": "ocean",
+        "ambient_motion": [
+          "wave_set",
+          "spray",
+          "horizon_haze",
+          "light_caustics"
+        ],
+        "dramatic_response": [
+          "wind_increase",
+          "lighting_shift",
+          "fog_clear_on_reveal"
+        ],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "soft_daylight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "payoff",
+      "emotion": "clarity",
+      "educational_goal": "This is the part that stops people.",
+      "estimated_duration_sec": 2.6,
+      "animation_priority": [
+        "character_performance",
+        "environment_life",
+        "camera_storytelling",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Deliver the takeaway on The Parasite You May Never Know You Have",
+          "what_viewer_learns": "This is the part that stops people.",
+          "emotion_to_feel": "clarity",
+          "notice_first": "Primary subject first \u2014 The Parasite You May Never Know You Have \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of The Parasite You May Never Know You Have matching hero_shot",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+          "cinematic_payoff": "Muted viewer still understands: This is the part that stops people."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: This is the part that stops people.",
+      "muted_story_test": "Muted viewer still understands: This is the part that stops people.",
+      "notice_first": "Primary subject first \u2014 The Parasite You May Never Know You Have \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "hero_low_angle_push",
+        "shot_size": "hero_low_angle",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Deliver the takeaway on The Parasite You May Never Know You Have"
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": true,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 8,
+      "scene_id": "scene_07",
+      "scene_objective": "Demonstrate the idea so learning sticks: The fix: change one small input around health.",
+      "primary_subject": "The Parasite You May Never Know You Have",
+      "camera_angle": "eye_level",
+      "lens_style": "portrait_50mm",
+      "shot_size": "dynamic_medium",
+      "shot_language": "tracking_shot",
+      "camera_movement": "tracking_shot",
+      "camera_begin": "Open in a framed read of The Parasite You May Never Know You Have matching tracking_shot",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "ocean",
+        "ambient_motion": [
+          "wave_set",
+          "spray",
+          "horizon_haze",
+          "light_caustics"
+        ],
+        "dramatic_response": [],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "soft_daylight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "explanation",
+      "emotion": "focus",
+      "educational_goal": "The fix: change one small input around health.",
+      "estimated_duration_sec": 3.0,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Demonstrate the idea so learning sticks: The fix: change one small input around health.",
+          "what_viewer_learns": "The fix: change one small input around health.",
+          "emotion_to_feel": "focus",
+          "notice_first": "Primary subject first \u2014 The Parasite You May Never Know You Have \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of The Parasite You May Never Know You Have matching tracking_shot",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+          "cinematic_payoff": "Muted viewer still understands: The fix: change one small input around health."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: The fix: change one small input around health.",
+      "muted_story_test": "Muted viewer still understands: The fix: change one small input around health.",
+      "notice_first": "Primary subject first \u2014 The Parasite You May Never Know You Have \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "tracking",
+        "ae_camera_move": "tracking",
+        "shot_size": "dynamic_medium",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: The fix: change one small input around health."
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 9,
+      "scene_id": "scene_08",
+      "scene_objective": "Demonstrate the idea so learning sticks: Share this with someone who still believes the myth \u2014 then follow for the next deep",
+      "primary_subject": "The Parasite You May Never Know You Have",
+      "camera_angle": "low_angle_hero",
+      "lens_style": "wide_24mm",
+      "shot_size": "establishing_wide",
+      "shot_language": "epic_establishing",
+      "camera_movement": "epic_establishing",
+      "camera_begin": "Open in a framed read of The Parasite You May Never Know You Have matching epic_establishing",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "ocean",
+        "ambient_motion": [
+          "wave_set",
+          "spray",
+          "horizon_haze",
+          "light_caustics"
+        ],
+        "dramatic_response": [
+          "wind_increase",
+          "lighting_shift",
+          "fog_clear_on_reveal"
+        ],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "soft_daylight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "payoff",
+      "emotion": "clarity",
+      "educational_goal": "Share this with someone who still believes the myth \u2014 then follow for the next deep",
+      "estimated_duration_sec": 7.1,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Demonstrate the idea so learning sticks: Share this with someone who still believes the myth \u2014 then follow for the next deep",
+          "what_viewer_learns": "Share this with someone who still believes the myth \u2014 then follow for the next deep",
+          "emotion_to_feel": "clarity",
+          "notice_first": "Primary subject first \u2014 The Parasite You May Never Know You Have \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of The Parasite You May Never Know You Have matching epic_establishing",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+          "cinematic_payoff": "Muted viewer still understands: Share this with someone who still believes the myth \u2014 then follow for the next deep"
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: Share this with someone who still believes the myth \u2014 then follow for the next deep",
+      "muted_story_test": "Muted viewer still understands: Share this with someone who still believes the myth \u2014 then follow for the next deep",
+      "notice_first": "Primary subject first \u2014 The Parasite You May Never Know You Have \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "pull_out",
+        "ae_camera_move": "crane",
+        "shot_size": "establishing_wide",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: Share this with someone who still believes the myth \u2014 then follow for the next deep"
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    }
+  ],
+  "summary": {
+    "shot_count": 9,
+    "director_decision": "APPROVE",
+    "approved": true,
+    "emotional_rhythm": [
+      "curiosity",
+      "explanation",
+      "wonder",
+      "scale",
+      "surprise",
+      "relief",
+      "payoff",
+      "explanation",
+      "payoff"
+    ],
+    "rewrite_scenes": []
+  }
+}

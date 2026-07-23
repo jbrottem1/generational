@@ -1,0 +1,37 @@
+{
+  "character_id": "CHAR-PIPER",
+  "score_dimensions": [
+    "anatomical_consistency",
+    "skeletal_motion",
+    "muscle_deformation",
+    "facial_readability",
+    "eye_behavior",
+    "blink_realism",
+    "breathing_realism",
+    "posture",
+    "balance",
+    "walking_mechanics",
+    "hand_gestures",
+    "object_interaction",
+    "emotional_performance",
+    "clothing_simulation",
+    "hair_simulation",
+    "contact_realism",
+    "character_continuity",
+    "overall_believability"
+  ],
+  "critical_failures_force_reject": [
+    "anatomy_drift",
+    "hand_deform",
+    "foot_slide",
+    "eyes_lose_focus",
+    "emotion_unreadable",
+    "clothing_clip",
+    "hair_ignore_physics",
+    "character_float",
+    "no_balance",
+    "purposeless_motion",
+    "identity_drift"
+  ],
+  "final_standard": "The character stated a believable performance \u2014 not merely that a figure moved."
+}

@@ -1,0 +1,39 @@
+{
+  "character_id": "CHAR-LUNA",
+  "name": "Luna",
+  "role": "biologist_nature_expert",
+  "style_mode": "cinematic_realism",
+  "is_gold_standard": false,
+  "inherits_from": "BASE_HUMAN_REALISM",
+  "reference_implementation": "DOCTOR_001",
+  "canonical_height_cm": 172,
+  "body_mass_estimate_kg": 64,
+  "age_range": "adult",
+  "biological_build": "soft_precise",
+  "silhouette": "lab_coat_leaf_pin",
+  "palette": {
+    "skin": "#EBBEA0",
+    "hair": "#5A3228",
+    "coat": "#C8DCBE",
+    "accent": "#3C8C50"
+  },
+  "personality": [
+    "gentle",
+    "wonderstruck",
+    "precise",
+    "empathetic"
+  ],
+  "voice": {
+    "voice": "nova",
+    "style": "nature_guide",
+    "pace": "soft"
+  },
+  "wardrobe_default": "sage_lab_coat",
+  "gait_characteristics": [
+    "quiet_steps",
+    "observant",
+    "reduced_force"
+  ],
+  "forbid_regenerate_from_scratch": true,
+  "framework_id": "HUMAN_REALISM_FRAMEWORK_V1"
+}

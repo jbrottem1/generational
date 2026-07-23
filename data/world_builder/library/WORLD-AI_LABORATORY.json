@@ -1,0 +1,363 @@
+{
+  "world_id": "WORLD-AI_LABORATORY",
+  "world_type": "AI Laboratory",
+  "name": "AI Laboratory",
+  "theme": "synthetic cognition",
+  "scale": "server_hall",
+  "historical_accuracy": 50,
+  "environment": {
+    "description": "Dim AI lab with rack glow, holographic neural volumes, and black reflective floor",
+    "continuity_key": "WORLD-AI_LABORATORY",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "low-key rack practicals + cyan holo glow",
+    "consistent_key": true
+  },
+  "architecture": [
+    "server aisles",
+    "hologram stage",
+    "observation glass"
+  ],
+  "weather": "indoors_cooled",
+  "objects": [
+    {
+      "object_id": "obj_neural_holo",
+      "name": "neural_holo",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "holo_stage",
+      "position": {
+        "x": 0.5,
+        "y": 0.0,
+        "z": 0.45
+      },
+      "scale": 1.0,
+      "relationships": [
+        "ops_console"
+      ]
+    },
+    {
+      "object_id": "obj_server_rack",
+      "name": "server_rack",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "server_aisle",
+      "position": {
+        "x": 0.7,
+        "y": 0.0,
+        "z": 0.4
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_training_monitor",
+      "name": "training_monitor",
+      "surface": "desk",
+      "anchored": true,
+      "temporary": false,
+      "zone": "workstation",
+      "position": {
+        "x": 0.4,
+        "y": 0.9,
+        "z": 0.5
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "obj_ops_console",
+      "name": "ops_console",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "holo_stage",
+      "position": {
+        "x": 0.35,
+        "y": 0.0,
+        "z": 0.55
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_workstation_desk",
+      "name": "workstation_desk",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "workstation",
+      "position": {
+        "x": 0.25,
+        "y": 0.0,
+        "z": 0.6
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "background_animations": [
+    "rack LED cascade",
+    "holo voxel churn",
+    "cooling fog"
+  ],
+  "sound_ambience": [
+    "server whine",
+    "soft UI beeps",
+    "coolant hiss",
+    "AI laboratory hum"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.4,
+    "max_height": 4.0,
+    "min_distance": 0.5,
+    "max_distance": 18.0
+  },
+  "color_palette": {
+    "family": "tech",
+    "primary": "#0A1628",
+    "accent": "#00F5D4",
+    "warn": "#7B2CBF"
+  },
+  "lighting_presets": [
+    {
+      "id": "boot",
+      "recipe": "cascade power-on practicals",
+      "mood": "ignition"
+    },
+    {
+      "id": "inference",
+      "recipe": "cyan volumetric holo",
+      "mood": "think"
+    },
+    {
+      "id": "alert",
+      "recipe": "magenta fault strobes",
+      "mood": "failure"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "hall_wide",
+      "position": "aisle_end",
+      "angle": "establishing",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "holo_orbit",
+      "position": "stage",
+      "angle": "orbit",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "console_macro",
+      "position": "ops",
+      "angle": "macro",
+      "lens_hint": "85mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "holo_stage",
+      "region": "center"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "airlock_lab",
+      "to_compatible": [
+        "Research Center",
+        "Future City",
+        "Science Lab",
+        "Factory"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "category": "AI Research Laboratory",
+  "applicable_topics": [
+    "artificial intelligence",
+    "machine learning",
+    "pattern recognition",
+    "neural networks"
+  ],
+  "time_periods": [
+    "near_future",
+    "present"
+  ],
+  "audiences": [
+    "general_public",
+    "students"
+  ],
+  "visual_styles": [
+    "documentary_lab",
+    "tech_explainer"
+  ],
+  "scientific_accuracy": 75,
+  "scientific_constraints": [
+    "Compute racks remain grounded",
+    "Hologram volume stays at stage center unless moved by state event"
+  ],
+  "historical_constraints": [],
+  "accuracy": {
+    "scientific": 75,
+    "uncertainties": [
+      "Holographic UI is illustrative"
+    ]
+  },
+  "aesthetic": {
+    "materials": [
+      "matte black metal",
+      "glass",
+      "LED arrays"
+    ],
+    "era": "near_future",
+    "design_language": "clean-tech"
+  },
+  "ambient_practicals": [
+    "rack LEDs",
+    "holo glow",
+    "console screens"
+  ],
+  "allowed_subject_positions": [
+    {
+      "id": "beside_holo",
+      "zone": "holo_stage",
+      "x": 0.4,
+      "z": 0.5
+    },
+    {
+      "id": "at_workstation",
+      "zone": "workstation",
+      "x": 0.3,
+      "z": 0.55
+    },
+    {
+      "id": "aisle_observe",
+      "zone": "server_aisle",
+      "x": 0.55,
+      "z": 0.4
+    }
+  ],
+  "zones": [
+    {
+      "id": "holo_stage",
+      "name": "Holographic Model Stage",
+      "description": "Central stage with luminous neural volume",
+      "landmarks": [
+        "neural_holo",
+        "ops_console"
+      ],
+      "entrances": [
+        "from_aisle"
+      ],
+      "exits": [
+        "to_workstation"
+      ],
+      "connections": [
+        "workstation",
+        "server_aisle"
+      ],
+      "doors": [
+        "stage_glass"
+      ],
+      "allowed_subject_positions": [
+        {
+          "id": "beside_holo",
+          "x": 0.4,
+          "z": 0.5
+        }
+      ],
+      "restricted_areas": [
+        "inside_holo_volume"
+      ],
+      "ambient_activity": [
+        "holo voxel churn"
+      ],
+      "ambience": [
+        "soft UI beeps"
+      ]
+    },
+    {
+      "id": "workstation",
+      "name": "Training Workstation",
+      "description": "Operator desk with training monitors",
+      "landmarks": [
+        "workstation_desk",
+        "training_monitor"
+      ],
+      "entrances": [
+        "from_holo_stage"
+      ],
+      "exits": [
+        "to_server_aisle"
+      ],
+      "connections": [
+        "holo_stage",
+        "server_aisle"
+      ],
+      "allowed_subject_positions": [
+        {
+          "id": "at_workstation",
+          "x": 0.3,
+          "z": 0.55
+        }
+      ],
+      "restricted_areas": [],
+      "ambient_activity": [
+        "monitor scroll"
+      ],
+      "ambience": [
+        "keyboard soft"
+      ]
+    },
+    {
+      "id": "server_aisle",
+      "name": "Server Aisle",
+      "description": "Cooled rack corridor with LED cascade",
+      "landmarks": [
+        "server_rack"
+      ],
+      "entrances": [
+        "from_workstation"
+      ],
+      "exits": [
+        "to_holo_stage"
+      ],
+      "connections": [
+        "holo_stage",
+        "workstation"
+      ],
+      "allowed_subject_positions": [
+        {
+          "id": "aisle_observe",
+          "x": 0.55,
+          "z": 0.4
+        }
+      ],
+      "restricted_areas": [
+        "rack_interior"
+      ],
+      "ambient_activity": [
+        "rack LED cascade",
+        "cooling fog"
+      ],
+      "ambience": [
+        "server whine",
+        "coolant hiss"
+      ]
+    }
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.160417+00:00"
+}

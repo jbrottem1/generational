@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science has a clearer story about PID controllers than social media does.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: PID stands for Proportional-Integral-Derivative. It's a control loop feedback mechanism.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Used in everything from drones to thermostats, PID controllers help systems maintain stability.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: The proportional component reacts to current errors, the integral to past errors, and the derivative predicts future err",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Together, they create a balance, ensuring smooth operation in complex systems. It\u2019s like a conductor leading an orchestr",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about how PID can affect your tech? Like and follow for more insights!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science has a clearer story about PID controllers than social media does.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: PID stands for Proportional-Integral-Derivative. It's a control loop feedback mechanism.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Used in everything from drones to thermostats, PID controllers help systems maintain stability.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: The proportional component reacts to current errors, the integral to past errors, and the derivative predicts future err",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Together, they create a balance, ensuring smooth operation in complex systems. It\u2019s like a conductor leading an orchestr",
+      "duration_sec": 14.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about how PID can affect your tech? Like and follow for more insights!",
+      "duration_sec": 20.0
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "libraries": {
+    "characters": {
+      "CHAR-PROFESSOR-V2-001": {
+        "path": "services/animation/stick_figure.py",
+        "version": "2.0",
+        "meta": {"name": "Professor Gen", "attire": "lab_coat"}
+      }
+    },
+    "real_images": {},
+    "backgrounds": {},
+    "whiteboard": {},
+    "motion_templates": {},
+    "fonts": {},
+    "music": {},
+    "sound_effects": {},
+    "camera_presets": {},
+    "props": {},
+    "icons": {},
+    "diagrams": {}
+  }
+}

@@ -1,0 +1,565 @@
+{
+  "version": "1.0",
+  "worlds": {
+    "WORLD-SCIENCE_LAB": {
+      "world_id": "WORLD-SCIENCE_LAB",
+      "name": "Science Lab",
+      "world_type": "Science Lab",
+      "category": "Science Lab",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 85,
+      "historical_accuracy": 85,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-SCIENCE_LAB.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-MUSEUM": {
+      "world_id": "WORLD-MUSEUM",
+      "name": "Museum",
+      "world_type": "Museum",
+      "category": "Museum",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 80,
+      "historical_accuracy": 80,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-MUSEUM.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-ANCIENT_ROME": {
+      "world_id": "WORLD-ANCIENT_ROME",
+      "name": "Ancient Rome",
+      "world_type": "Ancient Rome",
+      "category": "Ancient Rome",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 75,
+      "historical_accuracy": 75,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-ANCIENT_ROME.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-OUTER_SPACE": {
+      "world_id": "WORLD-OUTER_SPACE",
+      "name": "Outer Space",
+      "world_type": "Outer Space",
+      "category": "Outer Space",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 70,
+      "historical_accuracy": 70,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-OUTER_SPACE.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-MARS_COLONY": {
+      "world_id": "WORLD-MARS_COLONY",
+      "name": "Mars Colony",
+      "world_type": "Mars Colony",
+      "category": "Mars Colony",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 65,
+      "historical_accuracy": 65,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-MARS_COLONY.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-RAINFOREST": {
+      "world_id": "WORLD-RAINFOREST",
+      "name": "Rainforest",
+      "world_type": "Rainforest",
+      "category": "Rainforest",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 80,
+      "historical_accuracy": 80,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-RAINFOREST.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-OCEAN_FLOOR": {
+      "world_id": "WORLD-OCEAN_FLOOR",
+      "name": "Ocean Floor",
+      "world_type": "Ocean Floor",
+      "category": "Ocean Floor",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 75,
+      "historical_accuracy": 75,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-OCEAN_FLOOR.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-HUMAN_CELL": {
+      "world_id": "WORLD-HUMAN_CELL",
+      "name": "Human Cell",
+      "world_type": "Human Cell",
+      "category": "Human Cell",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 70,
+      "historical_accuracy": 70,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-HUMAN_CELL.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-HOSPITAL": {
+      "world_id": "WORLD-HOSPITAL",
+      "name": "Hospital",
+      "world_type": "Hospital",
+      "category": "Hospital",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 85,
+      "historical_accuracy": 85,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-HOSPITAL.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-OPERATING_ROOM": {
+      "world_id": "WORLD-OPERATING_ROOM",
+      "name": "Operating Room",
+      "world_type": "Operating Room",
+      "category": "Operating Room",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 85,
+      "historical_accuracy": 85,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-OPERATING_ROOM.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-FACTORY": {
+      "world_id": "WORLD-FACTORY",
+      "name": "Factory",
+      "world_type": "Factory",
+      "category": "Factory",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 80,
+      "historical_accuracy": 80,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-FACTORY.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-DNA_INTERIOR": {
+      "world_id": "WORLD-DNA_INTERIOR",
+      "name": "DNA Interior",
+      "world_type": "DNA Interior",
+      "category": "DNA Interior",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 70,
+      "historical_accuracy": 70,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-DNA_INTERIOR.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-SOLAR_SYSTEM": {
+      "world_id": "WORLD-SOLAR_SYSTEM",
+      "name": "Solar System",
+      "world_type": "Solar System",
+      "category": "Solar System",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 80,
+      "historical_accuracy": 80,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-SOLAR_SYSTEM.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-MEDIEVAL_VILLAGE": {
+      "world_id": "WORLD-MEDIEVAL_VILLAGE",
+      "name": "Medieval Village",
+      "world_type": "Medieval Village",
+      "category": "Medieval Village",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 75,
+      "historical_accuracy": 75,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-MEDIEVAL_VILLAGE.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-COURTROOM": {
+      "world_id": "WORLD-COURTROOM",
+      "name": "Courtroom",
+      "world_type": "Courtroom",
+      "category": "Courtroom",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 85,
+      "historical_accuracy": 85,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-COURTROOM.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-STOCK_EXCHANGE": {
+      "world_id": "WORLD-STOCK_EXCHANGE",
+      "name": "Stock Exchange",
+      "world_type": "Stock Exchange",
+      "category": "Stock Exchange",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 80,
+      "historical_accuracy": 80,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-STOCK_EXCHANGE.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-ANCIENT_EGYPT": {
+      "world_id": "WORLD-ANCIENT_EGYPT",
+      "name": "Ancient Egypt",
+      "world_type": "Ancient Egypt",
+      "category": "Ancient Egypt",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 75,
+      "historical_accuracy": 75,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-ANCIENT_EGYPT.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-FUTURE_CITY": {
+      "world_id": "WORLD-FUTURE_CITY",
+      "name": "Future City",
+      "world_type": "Future City",
+      "category": "Future City",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 40,
+      "historical_accuracy": 40,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-FUTURE_CITY.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-NATURE_PRESERVE": {
+      "world_id": "WORLD-NATURE_PRESERVE",
+      "name": "Nature Preserve",
+      "world_type": "Nature Preserve",
+      "category": "Nature Preserve",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 85,
+      "historical_accuracy": 85,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-NATURE_PRESERVE.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-UNIVERSITY": {
+      "world_id": "WORLD-UNIVERSITY",
+      "name": "University",
+      "world_type": "University",
+      "category": "University",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 85,
+      "historical_accuracy": 85,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-UNIVERSITY.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-LIBRARY": {
+      "world_id": "WORLD-LIBRARY",
+      "name": "Library",
+      "world_type": "Library",
+      "category": "Library",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 85,
+      "historical_accuracy": 85,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-LIBRARY.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-RESEARCH_CENTER": {
+      "world_id": "WORLD-RESEARCH_CENTER",
+      "name": "Research Center",
+      "world_type": "Research Center",
+      "category": "Research Center",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 85,
+      "historical_accuracy": 85,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-RESEARCH_CENTER.json",
+      "zones": [],
+      "channel_identity": ""
+    },
+    "WORLD-AI_LABORATORY": {
+      "world_id": "WORLD-AI_LABORATORY",
+      "name": "AI Laboratory",
+      "world_type": "AI Laboratory",
+      "category": "AI Research Laboratory",
+      "topics": [
+        "artificial intelligence",
+        "machine learning",
+        "pattern recognition",
+        "neural networks"
+      ],
+      "time_periods": [
+        "near_future",
+        "present"
+      ],
+      "audiences": [
+        "general_public",
+        "students"
+      ],
+      "visual_styles": [
+        "documentary_lab",
+        "tech_explainer"
+      ],
+      "scientific_accuracy": 75,
+      "historical_accuracy": 50,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-AI_LABORATORY.json",
+      "zones": [
+        "holo_stage",
+        "workstation",
+        "server_aisle"
+      ],
+      "channel_identity": ""
+    },
+    "WORLD-OCEAN_RESEARCH_OBSERVATORY": {
+      "world_id": "WORLD-OCEAN_RESEARCH_OBSERVATORY",
+      "name": "Ocean Research Observatory",
+      "world_type": "Ocean Research Observatory",
+      "category": "Ocean Research Observatory",
+      "topics": [
+        "octopus",
+        "marine biology",
+        "cephalopods",
+        "circulation",
+        "three hearts"
+      ],
+      "time_periods": [
+        "present"
+      ],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [
+        "science_short",
+        "nature_doc"
+      ],
+      "scientific_accuracy": 88,
+      "historical_accuracy": 80,
+      "reuse_count": 1,
+      "last_usage": "2026-07-15T23:08:50.929672+00:00",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-OCEAN_RESEARCH_OBSERVATORY.json",
+      "zones": [
+        "observation_chamber",
+        "underwater_viewing",
+        "scientific_display"
+      ],
+      "channel_identity": ""
+    },
+    "WORLD-MICROSCOPIC_BIOLOGICAL_ENVIRONMENT": {
+      "world_id": "WORLD-MICROSCOPIC_BIOLOGICAL_ENVIRONMENT",
+      "name": "Microscopic Biological Environment",
+      "world_type": "Microscopic Biological Environment",
+      "category": "Microscopic Biological Environment",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 70,
+      "historical_accuracy": 70,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-MICROSCOPIC_BIOLOGICAL_ENVIRONMENT.json",
+      "zones": [
+        "field_center"
+      ],
+      "channel_identity": ""
+    },
+    "WORLD_SUBURBAN_NEIGHBORHOOD": {
+      "world_id": "WORLD_SUBURBAN_NEIGHBORHOOD",
+      "name": "Persistent Suburban Neighborhood",
+      "world_type": "Suburban Neighborhood",
+      "category": "Suburban Neighborhood",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 80,
+      "historical_accuracy": 80,
+      "reuse_count": 2,
+      "last_usage": "2026-07-14T13:29:13.268016+00:00",
+      "source": "golden_production",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD_SUBURBAN_NEIGHBORHOOD.json",
+      "zones": [
+        "street_corner",
+        "sidewalk_hydrant",
+        "park_edge",
+        "fire_station",
+        "utility_map"
+      ],
+      "channel_identity": ""
+    }
+  },
+  "updated_at": "2026-07-15T23:08:50.929680+00:00"
+}

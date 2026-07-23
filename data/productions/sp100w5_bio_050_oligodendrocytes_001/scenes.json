@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about oligodendrocytes than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about oligodendrocytes than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about oligodendrocytes than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about oligodendrocytes than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "These cells are vital for insulating nerve fibers, helping signals travel faster.",
+    "visual_description": "Context visual: These cells are vital for insulating nerve fibers, helping signals travel faster.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: These cells are vital for insulating nerve fibers, helping signals travel faster.",
+    "ai_video_prompt": "Cinematic motion: Context visual: These cells are vital for insulating nerve fibers, helping signals travel faster.",
+    "stock_footage_query": "",
+    "text_overlay": "These cells are vital",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But did you know they also support the survival of neurons?",
+    "visual_description": "Escalation visual: But did you know they also support the survival of neurons?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But did you know they also support the survival of neurons?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But did you know they also support the survival of neurons?",
+    "stock_footage_query": "",
+    "text_overlay": "But did you know",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Research shows oligodendrocytes can regenerate, yet this ability decreases with age.",
+    "visual_description": "Evidence visual: Research shows oligodendrocytes can regenerate, yet this ability decreases with age.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows oligodendrocytes can regenerate, yet this ability decreases with age.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows oligodendrocytes can regenerate, yet this ability decreases with age.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows oligodendrocytes can",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Understanding them could unlock treatments for conditions like MS.",
+    "visual_description": "Payoff visual: Understanding them could unlock treatments for conditions like MS.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding them could unlock treatments for conditions like MS.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding them could unlock treatments for conditions like MS.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding them could unlock",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Curious about more fascinating science? Like and follow for deeper dives!",
+    "visual_description": "Cta visual: Curious about more fascinating science? Like and follow for deeper dives!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more fascinating science? Like and follow for deeper dives!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more fascinating science? Like and follow for deeper dives!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more fascinating",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

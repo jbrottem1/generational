@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if I told you the key to energy production lies in a cycle hidden in your cells?",
+    "visual_description": "Hook visual: What if I told you the key to energy production lies in a cycle hidden in your cells?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you the key to energy production lies in a cycle hidden in your cells?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you the key to energy production lies in a cycle hidden in your cells?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "intrigue",
+    "length_sec": 8.0,
+    "narration": "Introducing the Krebs cycle, a series of reactions critical for generating ATP, the energy currency of life.",
+    "visual_description": "Context visual: Introducing the Krebs cycle, a series of reactions critical for generating ATP, the energy currency of life.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Introducing the Krebs cycle, a series of reactions critical for generating ATP, the energy currency of life.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Introducing the Krebs cycle, a series of reactions critical for generating ATP, the energy currency of life.",
+    "stock_footage_query": "",
+    "text_overlay": "Introducing the Krebs cycle,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "excitement",
+    "length_sec": 8.0,
+    "narration": "It all starts with acetyl-CoA, but where does it come from? Think fats, carbs, and proteins.",
+    "visual_description": "Escalation visual: It all starts with acetyl-CoA, but where does it come from? Think fats, carbs, and proteins.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: It all starts with acetyl-CoA, but where does it come from? Think fats, carbs, and proteins.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: It all starts with acetyl-CoA, but where does it come from? Think fats, carbs, and proteins.",
+    "stock_footage_query": "",
+    "text_overlay": "It all starts with",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "fascination",
+    "length_sec": 8.0,
+    "narration": "As it enters the cycle, it\u2019s transformed through eight steps, releasing carbon dioxide and energy-rich molecules.",
+    "visual_description": "Evidence visual: As it enters the cycle, it\u2019s transformed through eight steps, releasing carbon dioxide and energy-rich molecules.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: As it enters the cycle, it\u2019s transformed through eight steps, releasing carbon dioxide and energy-rich molecules.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: As it enters the cycle, it\u2019s transformed through eight steps, releasing carbon dioxide and energy-rich molecules.",
+    "stock_footage_query": "",
+    "text_overlay": "As it enters the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "wonder",
+    "length_sec": 14.0,
+    "narration": "This intricate dance fuels everything from muscle movement to brain function. But there's still more we don't fully understand.",
+    "visual_description": "Payoff visual: This intricate dance fuels everything from muscle movement to brain function. But there's still more we don't fully unde",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This intricate dance fuels everything from muscle movement to brain function. But there's still more we don't fully unde",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This intricate dance fuels everything from muscle movement to brain function. But there's still more we don't fully unde",
+    "stock_footage_query": "",
+    "text_overlay": "This intricate dance fuels",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "encouragement",
+    "length_sec": 20.0,
+    "narration": "Curious about how cellular processes impact your life? Follow for more science insights!",
+    "visual_description": "Cta visual: Curious about how cellular processes impact your life? Follow for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about how cellular processes impact your life? Follow for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about how cellular processes impact your life? Follow for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about how cellular",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

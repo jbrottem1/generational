@@ -1,0 +1,22 @@
+{
+  "system": "GCIS",
+  "slug": "2026-07-10_macrocenter_cell_membrane",
+  "production": "MacroCenter Biology 001 \u2014 Cell Membrane",
+  "ship_decision": "PASS",
+  "duration_sec": 58.152,
+  "qc": {
+    "passed": true,
+    "purposeful_gestures": true,
+    "idle_ratio": 0.361,
+    "walk_ratio": 0.06,
+    "gesture_counts": {
+      "idle": 420,
+      "present": 139,
+      "think": 47,
+      "point": 418,
+      "push": 139
+    }
+  },
+  "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/MacroCenter_Biology_001_Cell_Membrane.mp4",
+  "project": "PROJECT_MACROCENTER"
+}

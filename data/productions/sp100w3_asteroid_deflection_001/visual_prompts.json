@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: What if we could change the path of an asteroid?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: NASA's DART mission did just that, slamming into Dimorphos at 14,000 miles per hour.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: But why target Dimorphos? It\u2019s a moonlet of a much larger asteroid, Didymos.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: The results? DART changed Dimorphos\u2019 orbit by 33 minutes, a significant achievement in planetary defense.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: This test shows we can protect Earth from potential asteroid threats in the future.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to learn more about space missions? Follow for updates!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: What if we could change the path of an asteroid?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: NASA's DART mission did just that, slamming into Dimorphos at 14,000 miles per hour.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: But why target Dimorphos? It\u2019s a moonlet of a much larger asteroid, Didymos.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: The results? DART changed Dimorphos\u2019 orbit by 33 minutes, a significant achievement in planetary defense.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: This test shows we can protect Earth from potential asteroid threats in the future.",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to learn more about space missions? Follow for updates!",
+      "duration_sec": 22.0
+    }
+  ]
+}

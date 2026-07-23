@@ -1,0 +1,74 @@
+{
+  "title": "Why Thresholds Differ by Disease",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring how different diseases require varying levels of immunity to control their spread.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Did you know that more contagious diseases need higher immunity coverage?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Herd immunity thresholds aren't one-size-fits-all. They vary based on the disease.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "For example, measles needs about 95% immunity to halt outbreaks. Why so high?",
+      "emotion": "curiosity",
+      "delivery": "intensifying tone",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "More transmissible viruses like COVID-19 require similar thresholds. The data is clear.",
+      "emotion": "curiosity",
+      "delivery": "assertive and clear",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding these thresholds helps us prepare and protect ourselves better.",
+      "emotion": "curiosity",
+      "delivery": "optimistic and enlightening",
+      "retention_device": "reward insight"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay informed about vaccines and herd immunity. Follow for more insights.",
+      "emotion": "curiosity",
+      "delivery": "inviting and friendly",
+      "retention_device": "clear call to action"
+    }
+  ],
+  "full_voiceover": "Did you know that more contagious diseases need higher immunity coverage? Herd immunity thresholds aren't one-size-fits-all. They vary based on the disease. For example, measles needs about 95% immunity to halt outbreaks. Why so high? More transmissible viruses like COVID-19 require similar thresholds. The data is clear. Understanding these thresholds helps us prepare and protect ourselves better. Stay informed about vaccines and herd immunity. Follow for more insights.",
+  "call_to_action": "Stay informed about vaccines and herd immunity. Follow for more insights.",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:12:04.437533+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,74 @@
+{
+  "title": "La Nina basics",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "An engaging explanation of La Nina that highlights its scientific principles and uncertainties.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about La Nina than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "La Nina is a climate pattern that cools ocean temperatures in the Pacific. But how does it affect us?",
+      "emotion": "intrigue",
+      "delivery": "engaging",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "While it can bring heavy rains to some areas, others may experience drought. It\u2019s a mixed bag!",
+      "emotion": "surprise",
+      "delivery": "dynamic",
+      "retention_device": "contrast"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Scientists predict patterns, but there\u2019s always uncertainty. Predictions can shift as new data comes in.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding La Nina helps us prepare for extreme weather, whether you're in the storm's path or not.",
+      "emotion": "satisfaction",
+      "delivery": "positive",
+      "retention_device": "relevance"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more weather science? Hit that follow button and stay informed!",
+      "emotion": "inviting",
+      "delivery": "enthusiastic",
+      "retention_device": "engagement"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about La Nina than social media does. La Nina is a climate pattern that cools ocean temperatures in the Pacific. But how does it affect us? While it can bring heavy rains to some areas, others may experience drought. It\u2019s a mixed bag! Scientists predict patterns, but there\u2019s always uncertainty. Predictions can shift as new data comes in. Understanding La Nina helps us prepare for extreme weather, whether you're in the storm's path or not. Curious about more weather science? Hit that follow button and stay informed!",
+  "call_to_action": "Curious about more weather science? Hit that follow button and stay informed!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:43:31.996605+00:00",
+  "source": "ai"
+}

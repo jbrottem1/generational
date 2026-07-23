@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: What happens to your body at high altitudes? It\u2019s not what you think.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Acclimatization altitude is where your body struggles to adapt to lower oxygen levels.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: At 8,000 feet, many feel dizzy and fatigued. But why? Let\u2019s break it down.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Your body increases red blood cells, but this takes time. Some adapt, some don\u2019t.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Inconsistent outcomes create uncertainty. It\u2019s a complex process influenced by genetics and duration.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about your limits? Like and follow for more science insights!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: What happens to your body at high altitudes? It\u2019s not what you think.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Acclimatization altitude is where your body struggles to adapt to lower oxygen levels.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: At 8,000 feet, many feel dizzy and fatigued. But why? Let\u2019s break it down.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Your body increases red blood cells, but this takes time. Some adapt, some don\u2019t.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Inconsistent outcomes create uncertainty. It\u2019s a complex process influenced by genetics and duration.",
+      "duration_sec": 20.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about your limits? Like and follow for more science insights!",
+      "duration_sec": 14.0
+    }
+  ]
+}

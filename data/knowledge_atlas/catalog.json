@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "project": "generational_knowledge_atlas",
+  "updated": "2026-07-12",
+  "assets": [
+    {
+      "asset_id": "coral_snake",
+      "topic": "Eastern coral snake",
+      "keywords": [
+        "coral snake",
+        "venomous",
+        "elapidae",
+        "warning bands"
+      ],
+      "species": "Eastern coral snake",
+      "scientific_name": "Micrurus fulvius",
+      "description": "Photograph of an eastern coral snake \u2014 venomous aposematic model.",
+      "source": "https://commons.wikimedia.org/wiki/File:Coral_009.jpg",
+      "license": "CC-BY",
+      "resolution": {
+        "width": 960,
+        "height": 854
+      },
+      "path": "data/reality/images/coral_snake.jpg",
+      "category": "biology",
+      "visual_type": "photograph",
+      "quality_score": 0.87,
+      "suggested_uses": [
+        "snake_id_warning",
+        "dangerous_model"
+      ],
+      "date_added": "2026-07-12",
+      "reuse_count": 0,
+      "reuse_history": [],
+      "concepts": [
+        "coral_snake",
+        "warning_coloration",
+        "venomous",
+        "model"
+      ],
+      "credit": "Dawson / Wikimedia Commons",
+      "compare_with": [
+        "scarlet_kingsnake"
+      ],
+      "demo_ids": [
+        "foundation_coral_102"
+      ],
+      "fingerprint": "7bccac2b3b62def5"
+    },
+    {
+      "asset_id": "hoverfly_lateral",
+      "topic": "Hoverfly Batesian mimic",
+      "keywords": [
+        "hoverfly",
+        "syrphid",
+        "mimicry",
+        "insect",
+        "pollinator"
+      ],
+      "species": "Hoverfly",
+      "scientific_name": "Episyrphus balteatus",
+      "description": "Lateral photograph of a hoverfly (Syrphid) \u2014 harmless Batesian mimic of wasps.",
+      "source": "https://commons.wikimedia.org/wiki/File:Episyrphus_balteatus_2.jpg",
+      "license": "CC-BY-SA",
+      "resolution": {
+        "width": 960,
+        "height": 720
+      },
+      "path": "data/reality/images/hoverfly_lateral.jpg",
+      "category": "evolution",
+      "visual_type": "photograph",
+      "quality_score": 0.87,
+      "suggested_uses": [
+        "model_vs_mimic_intro",
+        "insect_comparison"
+      ],
+      "date_added": "2026-07-12",
+      "reuse_count": 0,
+      "reuse_history": [],
+      "concepts": [
+        "batesian_mimicry",
+        "hoverfly",
+        "mimic",
+        "insect"
+      ],
+      "credit": "Alvesgaspar / Wikimedia Commons",
+      "compare_with": [
+        "wasp_lateral"
+      ],
+      "demo_ids": [
+        "foundation_batesian_101",
+        "foundation_bluffing_103"
+      ],
+      "fingerprint": "a907b85e22f95d38"
+    },
+    {
+      "asset_id": "monarch_adult",
+      "topic": "Monarch butterfly",
+      "keywords": [
+        "monarch",
+        "danaus",
+        "milkweed",
+        "warning"
+      ],
+      "species": "Monarch butterfly",
+      "scientific_name": "Danaus plexippus",
+      "description": "Photograph of adult monarch butterfly \u2014 aposematic coloration.",
+      "source": "https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg",
+      "license": "CC-BY-SA",
+      "resolution": {
+        "width": 960,
+        "height": 720
+      },
+      "path": "data/reality/images/monarch_adult.jpg",
+      "category": "ecology",
+      "visual_type": "photograph",
+      "quality_score": 0.87,
+      "suggested_uses": [
+        "monarch_viceroy_case",
+        "butterfly_comparison"
+      ],
+      "date_added": "2026-07-12",
+      "reuse_count": 0,
+      "reuse_history": [],
+      "concepts": [
+        "monarch",
+        "warning_coloration",
+        "butterfly"
+      ],
+      "credit": "D. Gordon E. Robertson / Wikimedia Commons",
+      "compare_with": [
+        "viceroy_adult"
+      ],
+      "demo_ids": [
+        "foundation_bluffing_103"
+      ],
+      "fingerprint": "a6e0b34c8b7cabcc"
+    },
+    {
+      "asset_id": "scarlet_kingsnake",
+      "topic": "Scarlet kingsnake mimic",
+      "keywords": [
+        "kingsnake",
+        "lampropeltis",
+        "harmless",
+        "mimic"
+      ],
+      "species": "Scarlet kingsnake",
+      "scientific_name": "Lampropeltis elapsoides",
+      "description": "Photograph of scarlet kingsnake \u2014 harmless mimic of coral snake banding.",
+      "source": "https://commons.wikimedia.org/wiki/File:Lampropeltis_triangulum_elapsoides.jpg",
+      "license": "CC-BY-SA",
+      "resolution": {
+        "width": 600,
+        "height": 466
+      },
+      "path": "data/reality/images/scarlet_kingsnake.jpg",
+      "category": "evolution",
+      "visual_type": "photograph",
+      "quality_score": 0.8,
+      "suggested_uses": [
+        "harmless_mimic",
+        "split_compare"
+      ],
+      "date_added": "2026-07-12",
+      "reuse_count": 0,
+      "reuse_history": [],
+      "concepts": [
+        "kingsnake",
+        "mimic",
+        "harmless",
+        "batesian_mimicry"
+      ],
+      "credit": "Patrick Coin / Wikimedia Commons",
+      "compare_with": [
+        "coral_snake"
+      ],
+      "demo_ids": [
+        "foundation_coral_102"
+      ],
+      "fingerprint": "42720b359309f8ef"
+    },
+    {
+      "asset_id": "viceroy_adult",
+      "topic": "Viceroy butterfly",
+      "keywords": [
+        "viceroy",
+        "limenitis",
+        "mimic",
+        "butterfly"
+      ],
+      "species": "Viceroy butterfly",
+      "scientific_name": "Limenitis archippus",
+      "description": "Photograph of viceroy butterfly \u2014 historically taught as monarch mimic; relationship is complex.",
+      "source": "https://commons.wikimedia.org/wiki/File:Viceroy_Butterfly.jpg",
+      "license": "CC-BY-SA",
+      "resolution": {
+        "width": 960,
+        "height": 743
+      },
+      "path": "data/reality/images/viceroy_adult.jpg",
+      "category": "evolution",
+      "visual_type": "photograph",
+      "quality_score": 0.87,
+      "suggested_uses": [
+        "monarch_viceroy_case",
+        "complex_mimicry"
+      ],
+      "date_added": "2026-07-12",
+      "reuse_count": 0,
+      "reuse_history": [],
+      "concepts": [
+        "viceroy",
+        "mimic",
+        "butterfly"
+      ],
+      "credit": "Cephas / Wikimedia Commons",
+      "compare_with": [
+        "monarch_adult"
+      ],
+      "demo_ids": [
+        "foundation_bluffing_103"
+      ],
+      "fingerprint": "1b48b9b2ace3630f"
+    },
+    {
+      "asset_id": "wasp_lateral",
+      "topic": "German wasp warning model",
+      "keywords": [
+        "wasp",
+        "vespula",
+        "sting",
+        "warning coloration"
+      ],
+      "species": "German wasp",
+      "scientific_name": "Vespula germanica",
+      "description": "Photograph of a German wasp \u2014 harmful model for Batesian mimicry lessons.",
+      "source": "https://commons.wikimedia.org/wiki/File:Vespula_germanica.jpg",
+      "license": "CC-BY-SA",
+      "resolution": {
+        "width": 569,
+        "height": 569
+      },
+      "path": "data/reality/images/wasp_lateral.jpg",
+      "category": "evolution",
+      "visual_type": "photograph",
+      "quality_score": 0.8,
+      "suggested_uses": [
+        "harmful_model",
+        "split_compare"
+      ],
+      "date_added": "2026-07-12",
+      "reuse_count": 0,
+      "reuse_history": [],
+      "concepts": [
+        "batesian_mimicry",
+        "wasp",
+        "model",
+        "warning_coloration"
+      ],
+      "credit": "Richard Bartz / Wikimedia Commons",
+      "compare_with": [
+        "hoverfly_lateral"
+      ],
+      "demo_ids": [
+        "foundation_batesian_101",
+        "foundation_bluffing_103"
+      ],
+      "fingerprint": "b6cb4eaef9e7ab38"
+    }
+  ]
+}

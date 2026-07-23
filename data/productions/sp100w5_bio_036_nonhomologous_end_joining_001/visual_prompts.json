@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science has a clearer story about nonhomologous end joining than social media does.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Nonhomologous end joining is a crucial DNA repair process that fixes breaks without needing a template.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Imagine your DNA is like a book. Sometimes, pages tear. Nonhomologous end joining just glues them back, but not always p",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: This method is fast but can lead to mutations. It's like rushing to fix that page without reading what was lost.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Understanding this process helps scientists grasp cancer development and genetic disorders, revealing how our cells adap",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about how your body repairs itself? Hit subscribe for more science insights!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science has a clearer story about nonhomologous end joining than social media does.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Nonhomologous end joining is a crucial DNA repair process that fixes breaks without needing a template.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Imagine your DNA is like a book. Sometimes, pages tear. Nonhomologous end joining just glues them back, but not always p",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: This method is fast but can lead to mutations. It's like rushing to fix that page without reading what was lost.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Understanding this process helps scientists grasp cancer development and genetic disorders, revealing how our cells adap",
+      "duration_sec": 14.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about how your body repairs itself? Hit subscribe for more science insights!",
+      "duration_sec": 20.0
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Influenza Shift Drift Explained",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Unravel the science behind influenza shift drift in a concise manner.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 3.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about influenza shift drift.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 3.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Influenza viruses constantly change through two main processes: shift and drift.",
+      "emotion": "curiosity",
+      "delivery": "explaining",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 17.0,
+      "segment_type": "escalation",
+      "voiceover": "Drift is a gradual change, while shift leads to major mutations, creating new strains.",
+      "emotion": "curiosity",
+      "delivery": "escalating tone",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 17.0,
+      "end_time": 25.0,
+      "segment_type": "evidence",
+      "voiceover": "Research indicates that drift can affect vaccine effectiveness each year.",
+      "emotion": "curiosity",
+      "delivery": "factual and confident",
+      "retention_device": "new information"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 25.0,
+      "end_time": 35.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding this helps scientists predict outbreaks and improve vaccines.",
+      "emotion": "curiosity",
+      "delivery": "satisfying resolution",
+      "retention_device": "surprising conclusion"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 35.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to stay updated on science? Hit follow and explore more!",
+      "emotion": "curiosity",
+      "delivery": "inviting and engaging",
+      "retention_device": "clear call to action"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about influenza shift drift. Influenza viruses constantly change through two main processes: shift and drift. Drift is a gradual change, while shift leads to major mutations, creating new strains. Research indicates that drift can affect vaccine effectiveness each year. Understanding this helps scientists predict outbreaks and improve vaccines. Want to stay updated on science? Hit follow and explore more!",
+  "call_to_action": "Hit follow and explore more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:25:58.910467+00:00",
+  "source": "ai"
+}

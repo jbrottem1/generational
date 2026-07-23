@@ -1,0 +1,57 @@
+{
+  "production_quality": {
+    "audio_qa": {
+      "ok": true,
+      "file_exists": true,
+      "format_ok": true,
+      "non_zero_duration": true,
+      "renderer_compatible": true,
+      "synchronization_metadata": true,
+      "caption_timing_compatible": true,
+      "not_silent": true,
+      "loudness_ok": true,
+      "duration_sec": 24.102313,
+      "bytes": 386656,
+      "hard_fails": [],
+      "warnings": [],
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_C/narration.mp3",
+      "mean_volume_db": -17.5,
+      "max_volume_db": -1.1
+    },
+    "elevenlabs_provider": "elevenlabs",
+    "placeholder": false,
+    "audible_narration": true
+  },
+  "creative_quality": {
+    "hook_quality": 87,
+    "psychology": 76,
+    "retention": 68,
+    "educational_value": 78,
+    "entertainment": 64,
+    "seo": 72,
+    "visual_quality": 70,
+    "narration": 82,
+    "professional_appearance": 75,
+    "platform_readiness": 80,
+    "overall": 75
+  },
+  "hook_score": 87,
+  "completion_prediction_pct": 62.2,
+  "shareability_prediction": 0.73,
+  "visual_score": 70,
+  "narration_score": 82,
+  "audio_score": 100,
+  "thumbnail_score": 75,
+  "prediction": {
+    "ctr_pct": 5.93,
+    "average_view_duration_sec": 28.0,
+    "completion_rate_pct": 62.2,
+    "share_probability": 0.73,
+    "confidence": 95.0,
+    "reasons": [
+      "PREDICTION from internal heuristic scores \u2014 not real audience results",
+      "Hook style immediate_visual_payoff influences predicted retention"
+    ],
+    "_label": "PREDICTION \u2014 not real audience results"
+  }
+}

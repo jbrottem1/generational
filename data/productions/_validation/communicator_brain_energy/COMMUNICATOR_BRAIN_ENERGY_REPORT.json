@@ -1,0 +1,31 @@
+{
+  "project": "Generational Professor \u2014 Communicator Upgrade",
+  "title": "Why Your Brain Uses So Much Energy",
+  "generated_at": "2026-07-11T03:49:39.474497+00:00",
+  "success": true,
+  "duration_sec": 30.168,
+  "in_target_30_45": true,
+  "render_time_sec": 20.42,
+  "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Generational_Benchmark_Brain_Energy.mp4",
+  "export_bytes": 1234891,
+  "delivery": {
+    "voice": "nova",
+    "model": "tts-1-hd",
+    "paused_beats": 10,
+    "structure": "curiosity\u2192show\u2192reveal\u2192explain\u2192punchline"
+  },
+  "qc": {
+    "passed": true,
+    "purposeful_gestures": true,
+    "idle_ratio": 0.54,
+    "walk_ratio": 0.059,
+    "gesture_counts": {
+      "idle": 391,
+      "think": 29,
+      "point": 202,
+      "react": 58,
+      "present": 44
+    }
+  },
+  "science_note": "Brain ~2% body mass, ~20% resting metabolic rate (oxygen/glucose for neural signaling)"
+}

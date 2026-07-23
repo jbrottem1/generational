@@ -1,0 +1,116 @@
+{
+  "run_index": 402,
+  "topic": "Blue Light and Circadian Timing",
+  "asset_id": "sp100w4_circadian_blue_light_001",
+  "seo_score": 24.0,
+  "seo": {
+    "demand": 5,
+    "evergreen": 4,
+    "education": 5,
+    "interest": 5,
+    "short_form": 5
+  },
+  "runtime_sec": 20.91,
+  "production_ok": true,
+  "production_error": "",
+  "success": true,
+  "qc_score": 100,
+  "qc_passed": true,
+  "stages": [
+    {
+      "stage": "idea",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "script",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "scenes",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "visual_prompts",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "images",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "video_clips",
+      "status": "skipped",
+      "error": ""
+    },
+    {
+      "stage": "voice",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "music",
+      "status": "skipped",
+      "error": ""
+    },
+    {
+      "stage": "sfx",
+      "status": "skipped",
+      "error": ""
+    },
+    {
+      "stage": "captions",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "timeline",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "render",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "quality",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "export",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "publish",
+      "status": "skipped",
+      "error": ""
+    }
+  ],
+  "cost": {
+    "estimated_cost_usd": 0.0173,
+    "breakdown": {
+      "openai_tts_usd": 0.0073,
+      "openai_chat_usd": 0.01,
+      "openai_images_usd": 0.0
+    }
+  },
+  "mp4_path": "data/productions/sp100w4_circadian_blue_light_001/render.mp4",
+  "mp4_bytes": 388308,
+  "mock_render": false,
+  "final_export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/test run generational/2026-07-10_12-11-36_Blue_Light_and_Circadian_Timing.mp4",
+  "title": "Blue Light and Circadian Timing",
+  "description": "Chronobiology. Avoid extreme screen panic. Stay accurate. Flag preliminary research. No sensationalism.",
+  "hashtags": [
+    "#circadian",
+    "#sleep",
+    "#shorts"
+  ],
+  "thumbnail_concept": "Educational visual: Blue Light and Circadian Timing"
+}

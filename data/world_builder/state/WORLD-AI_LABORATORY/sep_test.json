@@ -1,0 +1,135 @@
+{
+  "world_id": "WORLD-AI_LABORATORY",
+  "production_id": "sep_test",
+  "object_positions": {
+    "obj_neural_holo": {
+      "position": {
+        "x": 0.5,
+        "y": 0.0,
+        "z": 0.45
+      },
+      "zone": "holo_stage",
+      "surface": "floor",
+      "anchored": true
+    },
+    "obj_server_rack": {
+      "position": {
+        "x": 0.7,
+        "y": 0.0,
+        "z": 0.4
+      },
+      "zone": "server_aisle",
+      "surface": "floor",
+      "anchored": true
+    },
+    "obj_training_monitor": {
+      "position": {
+        "x": 0.4,
+        "y": 0.9,
+        "z": 0.5
+      },
+      "zone": "workstation",
+      "surface": "desk",
+      "anchored": true
+    },
+    "obj_ops_console": {
+      "position": {
+        "x": 0.35,
+        "y": 0.0,
+        "z": 0.55
+      },
+      "zone": "holo_stage",
+      "surface": "floor",
+      "anchored": true
+    },
+    "obj_workstation_desk": {
+      "position": {
+        "x": 0.25,
+        "y": 0.0,
+        "z": 0.6
+      },
+      "zone": "workstation",
+      "surface": "floor",
+      "anchored": true
+    }
+  },
+  "environment_state": {
+    "architecture": [
+      "server aisles",
+      "hologram stage",
+      "observation glass"
+    ],
+    "scale": "server_hall",
+    "zones": [
+      "holo_stage",
+      "workstation",
+      "server_aisle"
+    ]
+  },
+  "time_of_day": "day",
+  "weather": "indoors_cooled",
+  "damage": {},
+  "introduced_objects": [],
+  "visited_zones": [
+    "holo_stage",
+    "workstation"
+  ],
+  "doors": {
+    "stage_glass": "closed"
+  },
+  "displays": {},
+  "characters_present": [
+    "talent"
+  ],
+  "events": [
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T03:31:27.234627+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "holo_stage"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T03:31:27.267700+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "workstation"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T03:31:39.820192+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "holo_stage"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T03:31:39.853237+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "workstation"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T03:44:18.460429+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "holo_stage"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T03:44:18.495472+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "workstation"
+      }
+    }
+  ],
+  "version": 7
+}

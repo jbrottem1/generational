@@ -1,0 +1,39 @@
+{
+  "character_id": "CHAR-NOVA",
+  "name": "Nova",
+  "role": "curious_ai_assistant",
+  "style_mode": "cinematic_realism",
+  "is_gold_standard": false,
+  "inherits_from": "BASE_HUMAN_REALISM",
+  "reference_implementation": "DOCTOR_001",
+  "canonical_height_cm": 168,
+  "body_mass_estimate_kg": 58,
+  "age_range": "youthful_ageless",
+  "biological_build": "light_energetic",
+  "silhouette": "hoodie_glow_band",
+  "palette": {
+    "skin": "#F0DCFF",
+    "hair": "#7846DC",
+    "coat": "#5834A0",
+    "accent": "#50DCFF"
+  },
+  "personality": [
+    "playful",
+    "inquisitive",
+    "bright",
+    "loyal"
+  ],
+  "voice": {
+    "voice": "nova",
+    "style": "bright_assistant",
+    "pace": "lively"
+  },
+  "wardrobe_default": "violet_hoodie",
+  "gait_characteristics": [
+    "lighter_steps",
+    "curious_glances",
+    "forward_energy"
+  ],
+  "forbid_regenerate_from_scratch": true,
+  "framework_id": "HUMAN_REALISM_FRAMEWORK_V1"
+}

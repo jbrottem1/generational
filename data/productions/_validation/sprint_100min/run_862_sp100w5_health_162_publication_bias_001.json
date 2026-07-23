@@ -1,0 +1,117 @@
+{
+  "run_index": 862,
+  "topic": "Publication bias",
+  "asset_id": "sp100w5_health_162_publication_bias_001",
+  "seo_score": 21.0,
+  "seo": {
+    "demand": 3,
+    "evergreen": 5,
+    "education": 5,
+    "interest": 3,
+    "short_form": 5
+  },
+  "runtime_sec": 19.98,
+  "production_ok": true,
+  "production_error": "",
+  "success": true,
+  "qc_score": 100,
+  "qc_passed": true,
+  "stages": [
+    {
+      "stage": "idea",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "script",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "scenes",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "visual_prompts",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "images",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "video_clips",
+      "status": "skipped",
+      "error": ""
+    },
+    {
+      "stage": "voice",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "music",
+      "status": "skipped",
+      "error": ""
+    },
+    {
+      "stage": "sfx",
+      "status": "skipped",
+      "error": ""
+    },
+    {
+      "stage": "captions",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "timeline",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "render",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "quality",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "export",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "publish",
+      "status": "skipped",
+      "error": ""
+    }
+  ],
+  "cost": {
+    "estimated_cost_usd": 0.0178,
+    "breakdown": {
+      "openai_tts_usd": 0.0078,
+      "openai_chat_usd": 0.01,
+      "openai_images_usd": 0.0
+    }
+  },
+  "mp4_path": "data/productions/sp100w5_health_162_publication_bias_001/render.mp4",
+  "mp4_bytes": 413414,
+  "mock_render": false,
+  "final_export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/test run generational/2026-07-10_12-56-30_Publication_bias.mp4",
+  "title": "Publication bias",
+  "description": "Explain publication bias accurately for a general audience. Use established science; mark uncertainty. No sensationalism.",
+  "hashtags": [
+    "#health",
+    "#science",
+    "#education",
+    "#shorts"
+  ],
+  "thumbnail_concept": "Educational: Publication bias"
+}

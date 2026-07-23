@@ -1,0 +1,88 @@
+{
+  "title": "Why Do You Only Notice Evidence That Agrees With You?",
+  "topic": "human_psychology",
+  "concept": "confirmation_bias",
+  "ok": true,
+  "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Psychology_001_Confirmation_Bias_v2.mp4",
+  "duration_sec": 25.598,
+  "render_sec": 16.33,
+  "qc": {
+    "mouth_varies": true,
+    "has_silence_closed": true,
+    "has_speech_open": true,
+    "speaking_ratio": 0.66,
+    "idle_motion": true,
+    "blink_programmed": true,
+    "educator_mode": true,
+    "demo_id": "foundation_confirmation_bias",
+    "duration_sec": 25.598,
+    "frame_count": 614,
+    "grounded": true,
+    "interactive_teaching": true,
+    "gesture_counts": {
+      "idle": 196,
+      "think": 37,
+      "write": 123,
+      "point": 172,
+      "present": 86
+    },
+    "idle_ratio": 0.319,
+    "walk_ratio": 0.08,
+    "purposeful_gestures": true,
+    "passed": true
+  },
+  "foundation_gate": {
+    "passed": true,
+    "hard_fails": [],
+    "warnings": [
+      "whiteboard_sync_metadata_missing",
+      "overall_below_target:77.5<78.0"
+    ],
+    "quality": {
+      "scores": {
+        "animation_quality": 93.0,
+        "lip_synchronization": 88.2,
+        "character_consistency": 78.0,
+        "technical_validity": 88.0,
+        "hook_quality": 75.0,
+        "ending_quality": 70.0,
+        "story_structure": 68.0,
+        "educational_clarity": 86.2,
+        "factual_accuracy": 75.0,
+        "visual_clarity": 78.0,
+        "audio_quality": 72.0,
+        "pacing": 72.0,
+        "emotional_delivery": 74.0,
+        "brand_consistency": 75.0,
+        "platform_readiness": 70.0
+      },
+      "overall": 77.5,
+      "passed": true,
+      "hard_fails": [],
+      "warnings": [],
+      "thresholds": {
+        "technical_validity": 75.0,
+        "educational_clarity": 70.0,
+        "factual_accuracy": 70.0,
+        "animation_quality": 70.0,
+        "lip_synchronization": 70.0,
+        "hook_quality": 55.0,
+        "ending_quality": 55.0
+      }
+    },
+    "qc_checks": {
+      "idle_ratio": 0.319,
+      "walk_ratio": 0.08,
+      "lipsync": 88.2,
+      "overall": 77.5,
+      "animation_qc_passed": true
+    }
+  },
+  "verify": {
+    "ok": true,
+    "bytes": 668535,
+    "has_video": true,
+    "has_audio": true
+  },
+  "error": null
+}

@@ -1,0 +1,44 @@
+{
+  "character_id": "FOUNDER_001",
+  "capabilities": [
+    "foot_planting",
+    "heel_strike",
+    "toe_roll",
+    "stairs",
+    "uneven_terrain",
+    "balance",
+    "friction"
+  ],
+  "gait_cycle": {
+    "heel_strike": true,
+    "midstance": true,
+    "toe_roll": true,
+    "push_off": true
+  },
+  "planting": {
+    "required": true,
+    "no_slide": true,
+    "no_float": true,
+    "ik_to_floor": true
+  },
+  "terrain": {
+    "flat": true,
+    "stairs": true,
+    "uneven": true,
+    "slope_max_deg": 28.0
+  },
+  "friction": {
+    "static": 0.75,
+    "kinetic": 0.55,
+    "forbid_ice_slide_default": true
+  },
+  "balance": {
+    "com_over_support_polygon": true,
+    "correction_enabled": true
+  },
+  "forbid": [
+    "sliding_feet",
+    "feet_below_floor",
+    "teleport_steps"
+  ]
+}

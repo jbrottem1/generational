@@ -1,0 +1,187 @@
+{
+  "episode_id": "dash_ocean_glow_001",
+  "series_id": "SERIES-DASH-SCIENCE",
+  "character_id": "CHAR-DASH",
+  "status": "mock_complete",
+  "duration_target_sec": 40,
+  "duration_planned_sec": 40,
+  "seo_title": "The Ocean Is Secretly Glowing",
+  "description": "Dash walks the ocean floor as bioluminescent creatures light up the dark. A 40-second explainer on how living light works in the deep sea — and why the ocean glows.",
+  "hashtags": ["#DashScience", "#Bioluminescence", "#Ocean", "#WeirdScience", "#Shorts", "#ScienceFacts", "#MarineBiology"],
+  "thumbnail_concept": "Dash mid-stride on dark blue seafloor, oversized eyes reflecting cyan glow; behind him a trail of glowing plankton and a soft jelly silhouette; bold title text top-third: 'THE OCEAN IS GLOWING'; high contrast, 9:16.",
+  "voice_direction": "Energetic, curious, slightly hushed wonder under water metaphor — fast but clear; smile on discovery lines; never robotic.",
+  "music_direction": "Soft aquatic pulse, low synth pads, gentle sparkle motifs on glow reveals; duck under VO; swell on final wide glow shot.",
+  "scientific_notes": [
+    "Bioluminescence = light produced by living organisms via chemical reactions (often luciferin + luciferase).",
+    "Common in marine environments; functions include predation, defense, communication.",
+    "Keep claims general; avoid overstating specific species behavior without naming them carefully."
+  ],
+  "script": {
+    "hook": "The ocean is secretly glowing — and most of that light is alive.",
+    "body": [
+      "Down here, sunlight barely reaches… so life makes its own.",
+      "Tiny plankton flash like blue sparks when the water moves.",
+      "Jellies and deep-sea fish use chemical light — a reaction that turns energy into a glow.",
+      "Some use it to hunt. Some use it to escape. Some use it to talk.",
+      "It's called bioluminescence — living light."
+    ],
+    "payoff": "So next time you hear the ocean is dark… remember: it's also a night sky underwater.",
+    "full_text": "The ocean is secretly glowing — and most of that light is alive. Down here, sunlight barely reaches… so life makes its own. Tiny plankton flash like blue sparks when the water moves. Jellies and deep-sea fish use chemical light — a reaction that turns energy into a glow. Some use it to hunt. Some use it to escape. Some use it to talk. It's called bioluminescence — living light. So next time you hear the ocean is dark… remember: it's also a night sky underwater."
+  },
+  "scenes": [
+    {
+      "scene_id": "S1_hook",
+      "t_start": 0.0,
+      "t_end": 3.0,
+      "narration": "The ocean is secretly glowing — and most of that light is alive.",
+      "background": {
+        "palette": "ocean",
+        "design": "Deep navy-to-teal vertical gradient, soft volumetric shafts, sparse floating particles, distant silhouette of a ridge — no flat solid."
+      },
+      "camera": "slow_push_in + slight parallax_pan left",
+      "dash_animation": ["float_drift", "talk_bob"],
+      "expression": "curious",
+      "character_movement": "Dash floats into frame from left, feet gently paddling, eyes widen toward camera then toward glow ahead.",
+      "visuals": ["first cyan spark appears near Dash's hand", "particle twinkles"],
+      "image_prompt": "Dash stick figure floating in deep ocean, white body black outline oversized eyes, navy teal gradient water, first bioluminescent cyan spark near hand, volumetric light, 9:16 cinematic 2D animation still",
+      "sfx": ["soft underwater whoosh", "single spark chime"]
+    },
+    {
+      "scene_id": "S2_dark_descent",
+      "t_start": 3.0,
+      "t_end": 7.0,
+      "narration": "Down here, sunlight barely reaches… so life makes its own.",
+      "background": {
+        "palette": "ocean",
+        "design": "Darker lower third, faint surface light far above, geometric soft shapes suggesting seafloor dunes."
+      },
+      "camera": "follow_walk downward tilt",
+      "dash_animation": ["walk_cycle", "flashlight_sweep"],
+      "expression": "thinking",
+      "character_movement": "Dash walks right across seafloor holding flashlight; beam sweeps and reveals more sparks.",
+      "visuals": ["flashlight beam cone", "fading sunlight shaft above"],
+      "image_prompt": "Dash walking ocean floor with flashlight beam revealing cyan sparks, dark gradient sea, educational animation, stick figure mascot locked design",
+      "sfx": ["foot soft sand taps", "flashlight click", "low rumble"]
+    },
+    {
+      "scene_id": "S3_plankton",
+      "t_start": 7.0,
+      "t_end": 12.0,
+      "narration": "Tiny plankton flash like blue sparks when the water moves.",
+      "background": {
+        "palette": "ocean",
+        "design": "Mid-water field; animated particle cloud reacts to Dash motion."
+      },
+      "camera": "punch_in_eyes then pull to particles",
+      "dash_animation": ["run_cycle", "shock_recoil"],
+      "expression": "excited",
+      "character_movement": "Dash runs through plankton cloud; recoils happily as flashes burst around him.",
+      "visuals": ["plankton flash field", "motion-triggered glow"],
+      "image_prompt": "Dash running through bioluminescent plankton sparks, cyan blue flashes, deep ocean gradient, energetic stick figure animation frame",
+      "sfx": ["cluster sparkles", "quick run steps"]
+    },
+    {
+      "scene_id": "S4_chemistry",
+      "t_start": 12.0,
+      "t_end": 18.0,
+      "narration": "Jellies and deep-sea fish use chemical light — a reaction that turns energy into a glow.",
+      "background": {
+        "palette": "ocean",
+        "design": "Soft lab-like diagram floats in water: molecule icons + arrow → glow; jelly silhouette midground."
+      },
+      "camera": "diagram_lockoff_with_drift",
+      "dash_animation": ["point_right", "throw_fact", "talk_bob"],
+      "expression": "neutral",
+      "character_movement": "Dash points at floating diagram, throws a fact card labeled 'CHEMICAL LIGHT'.",
+      "visuals": ["simple luciferin/luciferase style diagram (simplified)", "jelly glow pulse", "fact card"],
+      "image_prompt": "Dash pointing at floating simplified chemical light diagram beside glowing jellyfish silhouette underwater, stick figure educational animation",
+      "sfx": ["diagram pop", "soft jelly wobble"]
+    },
+    {
+      "scene_id": "S5_functions",
+      "t_start": 18.0,
+      "t_end": 26.0,
+      "narration": "Some use it to hunt. Some use it to escape. Some use it to talk.",
+      "background": {
+        "palette": "ocean",
+        "design": "Three quick zones wipe in: lure glow, ink-burst escape flash, paired signal pulses."
+      },
+      "camera": "parallax_pan across three micro-scenes",
+      "dash_animation": ["door_open_transition", "point_up", "question_tilt"],
+      "expression": "curious",
+      "character_movement": "Dash opens glowing door frames into each function vignette; points; tilts head on 'talk'.",
+      "visuals": ["hunt lure", "escape flash", "signal pulses", "labels HUNT / ESCAPE / TALK"],
+      "image_prompt": "Dash opening glowing underwater doorways into hunt escape communicate bioluminescence vignettes, stick figure host, cinematic 2D",
+      "sfx": ["door shimmer", "three distinct blips"]
+    },
+    {
+      "scene_id": "S6_name",
+      "t_start": 26.0,
+      "t_end": 32.0,
+      "narration": "It's called bioluminescence — living light.",
+      "background": {
+        "palette": "ocean",
+        "design": "Word BIO LUMINESCENCE assembles from sparks; soft radial glow behind Dash."
+      },
+      "camera": "reveal_pull_back",
+      "dash_animation": ["jump_onto", "celebrate_jump"],
+      "expression": "excited",
+      "character_movement": "Dash jumps onto the floating word, lands, small celebrate hop.",
+      "visuals": ["kinetic typography", "living light subtitle"],
+      "image_prompt": "Dash jumping onto glowing typography BIO LUMINESCENCE in deep ocean, sparks, stick figure mascot, 9:16",
+      "sfx": ["type assemble", "land thup", "bright chime"]
+    },
+    {
+      "scene_id": "S7_payoff",
+      "t_start": 32.0,
+      "t_end": 40.0,
+      "narration": "So next time you hear the ocean is dark… remember: it's also a night sky underwater.",
+      "background": {
+        "palette": "ocean",
+        "design": "Wide seafloor vista; dense starfield of bioluminescence; subtle animated lighting."
+      },
+      "camera": "slow_push_in to Dash then wide reveal",
+      "dash_animation": ["face_audience", "float_drift", "talk_bob"],
+      "expression": "audience",
+      "character_movement": "Dash faces camera, then turns to look at glowing 'night sky', soft smile.",
+      "visuals": ["galaxy-like glow field", "CTA soft: Follow for more Dash Science"],
+      "image_prompt": "Dash facing camera then gazing at bioluminescent ocean night-sky of sparks, wide cinematic underwater gradient, stick figure educational short final frame",
+      "sfx": ["ambient swell", "soft outro sparkle"]
+    }
+  ],
+  "transition_plan": [
+    {"from": "S1", "to": "S2", "type": "match_cut_glow_trail", "sec": 0.25},
+    {"from": "S2", "to": "S3", "type": "whip_pan_with_particles", "sec": 0.3},
+    {"from": "S3", "to": "S4", "type": "door_open_transition", "sec": 0.5},
+    {"from": "S4", "to": "S5", "type": "parallax_slide", "sec": 0.35},
+    {"from": "S5", "to": "S6", "type": "spark_assemble", "sec": 0.4},
+    {"from": "S6", "to": "S7", "type": "pull_back_reveal", "sec": 0.45}
+  ],
+  "caption_cues": [
+    {"t": 0.0, "text": "The ocean is secretly glowing"},
+    {"t": 1.6, "text": "— and most of that light is alive."},
+    {"t": 3.0, "text": "Sunlight barely reaches…"},
+    {"t": 5.0, "text": "so life makes its own."},
+    {"t": 7.0, "text": "Plankton flash like blue sparks"},
+    {"t": 12.0, "text": "Chemical light → a glow"},
+    {"t": 18.0, "text": "Hunt. Escape. Talk."},
+    {"t": 26.0, "text": "Bioluminescence = living light"},
+    {"t": 32.0, "text": "A night sky underwater"}
+  ],
+  "sfx_plan": [
+    "underwater whoosh bed (low)",
+    "spark chimes on glow events",
+    "soft footsteps on sand",
+    "flashlight click",
+    "diagram pop",
+    "door shimmer",
+    "outro swell"
+  ],
+  "music_cues": [
+    {"t": 0.0, "action": "enter pad"},
+    {"t": 7.0, "action": "add sparkle motif"},
+    {"t": 26.0, "action": "lift for title word"},
+    {"t": 32.0, "action": "wide emotional swell"},
+    {"t": 38.5, "action": "resolve"}
+  ]
+}

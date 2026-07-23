@@ -1,0 +1,155 @@
+{
+  "world_id": "WORLD-MEDIEVAL_VILLAGE",
+  "world_type": "Medieval Village",
+  "name": "Medieval Village",
+  "theme": "pre-industrial life",
+  "scale": "village",
+  "historical_accuracy": 75,
+  "environment": {
+    "description": "Timber-framed village square with thatched roofs, dirt road, and hearth smoke",
+    "continuity_key": "WORLD-MEDIEVAL_VILLAGE",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "soft overcast key + warm hearth practicals",
+    "consistent_key": true
+  },
+  "architecture": [
+    "timber frames",
+    "stone well",
+    "market stalls"
+  ],
+  "weather": "overcast_cool",
+  "objects": [
+    {
+      "object_id": "obj_market_cart",
+      "name": "market_cart",
+      "surface": "ground",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.4,
+        "y": 0.0,
+        "z": 0.45
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_well",
+      "name": "well",
+      "surface": "ground",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.55,
+        "y": 0.0,
+        "z": 0.5
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "obj_barrel",
+      "name": "barrel",
+      "surface": "ground",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.3,
+        "y": 0.0,
+        "z": 0.55
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "background_animations": [
+    "smoke drift",
+    "banner flap",
+    "chicken flock hint"
+  ],
+  "sound_ambience": [
+    "blacksmith distant",
+    "crowd murmur",
+    "wind"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.4,
+    "max_height": 6.0,
+    "min_distance": 0.6,
+    "max_distance": 30.0
+  },
+  "color_palette": {
+    "family": "history",
+    "primary": "#2C1810",
+    "accent": "#8B5E34",
+    "sky": "#6B7C8A"
+  },
+  "lighting_presets": [
+    {
+      "id": "day",
+      "recipe": "diffuse sky light",
+      "mood": "everyday"
+    },
+    {
+      "id": "dusk",
+      "recipe": "warm hearth + cool blue fill",
+      "mood": "story"
+    },
+    {
+      "id": "storm",
+      "recipe": "cool low-key + wet reflections",
+      "mood": "tension"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "square_wide",
+      "position": "plaza",
+      "angle": "eye_level",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "street_track",
+      "position": "lane",
+      "angle": "tracking",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "craft_detail",
+      "position": "stall",
+      "angle": "macro",
+      "lens_hint": "85mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "market",
+      "region": "square"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "village_gate",
+      "to_compatible": [
+        "Ancient Rome",
+        "Courtroom",
+        "Nature Preserve"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.159124+00:00"
+}

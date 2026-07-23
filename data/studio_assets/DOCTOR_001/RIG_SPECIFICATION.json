@@ -1,0 +1,61 @@
+{
+  "character_id": "DOCTOR_001",
+  "rig_type": "humanoid_ik_fk_hybrid_spec",
+  "note": "Specification for Animation Engine / future-compatible motion \u2014 not a new renderer.",
+  "spine_controls": [
+    "pelvis",
+    "spine_01",
+    "spine_02",
+    "chest",
+    "neck",
+    "head"
+  ],
+  "face_controls": [
+    "brow_inner_l",
+    "brow_inner_r",
+    "brow_outer_l",
+    "brow_outer_r",
+    "lid_upper_l",
+    "lid_upper_r",
+    "lid_lower_l",
+    "lid_lower_r",
+    "eye_aim_l",
+    "eye_aim_r",
+    "cheek_l",
+    "cheek_r",
+    "mouth_corner_l",
+    "mouth_corner_r",
+    "jaw_open",
+    "lips_press"
+  ],
+  "hand_controls": [
+    "relaxed_open",
+    "soft_fist",
+    "point_index",
+    "point_two_finger",
+    "open_palm_up",
+    "open_palm_forward",
+    "pinch_precision",
+    "grip_scanner",
+    "grip_clipboard",
+    "thumbs_measure",
+    "cup_hands",
+    "heart_height_open",
+    "ok_reassure",
+    "stop_gentle",
+    "diagram_trace",
+    "hologram_pinch",
+    "typing_rest",
+    "behind_back"
+  ],
+  "ik": {
+    "hands": true,
+    "feet": true,
+    "pole_vectors": true
+  },
+  "space_switches": [
+    "world",
+    "body",
+    "prop"
+  ]
+}

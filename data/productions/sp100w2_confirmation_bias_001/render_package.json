@@ -1,0 +1,1549 @@
+{
+  "render_package_version": "2.0",
+  "render_engine_version": "1.0.0",
+  "title": "Confirmation Bias Hijacks Your Brain",
+  "created_at": "2026-07-10T16:46:45.281098+00:00",
+  "output_format": {
+    "aspect_ratio": "9:16",
+    "resolution": {
+      "width": 1080,
+      "height": 1920
+    },
+    "container": "mp4",
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "fps": 30,
+    "orientation": "vertical",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels"
+    ]
+  },
+  "platforms": [
+    "youtube_shorts",
+    "tiktok",
+    "instagram_reels",
+    "facebook_reels"
+  ],
+  "resolution": "1080x1920",
+  "aspect_ratio": "9:16",
+  "duration_sec": 50.0,
+  "timeline": {
+    "fps": 30,
+    "total_duration_sec": 50.0,
+    "segment_count": 6,
+    "segments": [
+      {
+        "scene_id": 1,
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "duration": 2.0,
+        "narration_reference": "narration/scene_1",
+        "visual_reference": "visual/scene_1",
+        "caption_reference": "captions/scene_1",
+        "audio_reference": "audio/scene_1",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "quick_punch_in",
+        "overlay_text": "Your brain loves evidence",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 2,
+        "start_time": 2.0,
+        "end_time": 10.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_2",
+        "visual_reference": "visual/scene_2",
+        "caption_reference": "captions/scene_2",
+        "audio_reference": "audio/scene_2",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "This is called confirmation",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 3,
+        "start_time": 10.0,
+        "end_time": 18.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_3",
+        "visual_reference": "visual/scene_3",
+        "caption_reference": "captions/scene_3",
+        "audio_reference": "audio/scene_3",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Imagine you\u2019re reading reviews",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 4,
+        "start_time": 18.0,
+        "end_time": 26.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_4",
+        "visual_reference": "visual/scene_4",
+        "caption_reference": "captions/scene_4",
+        "audio_reference": "audio/scene_4",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "You only focus on",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 5,
+        "start_time": 26.0,
+        "end_time": 40.0,
+        "duration": 14.0,
+        "narration_reference": "narration/scene_5",
+        "visual_reference": "visual/scene_5",
+        "caption_reference": "captions/scene_5",
+        "audio_reference": "audio/scene_5",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "This skews your perception,",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 6,
+        "start_time": 40.0,
+        "end_time": 50.0,
+        "duration": 10.0,
+        "narration_reference": "narration/scene_6",
+        "visual_reference": "visual/scene_6",
+        "caption_reference": "captions/scene_6",
+        "audio_reference": "audio/scene_6",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Next time, challenge your",
+        "render_status": "planned"
+      }
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "scene_render_plan": [
+    {
+      "scene_id": 1,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Hook visual: Your brain loves evidence that agrees with you\u2014and quietly ignores the rest.",
+      "video_prompt": "Cinematic motion: Hook visual: Your brain loves evidence that agrees with you\u2014and quietly ignores the rest.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "subtle push",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "quick_punch_in",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.188
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 70
+      },
+      "text_overlays": [
+        {
+          "text": "Your brain loves evidence",
+          "treatment": "",
+          "start_sec": 0.0,
+          "end_sec": 2.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "bass hit",
+          "at_sec": 0.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Your brain loves evidence that agrees with you\u2014and quietly ignores the rest.",
+      "duration_sec": 2.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Hook visual: Your brain loves evidence that agrees with you\u2014and quietly ignores the rest.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 1
+      }
+    },
+    {
+      "scene_id": 2,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Context visual: This is called confirmation bias, a cognitive trap we all fall into.",
+      "video_prompt": "Cinematic motion: Context visual: This is called confirmation bias, a cognitive trap we all fall into.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "This is called confirmation",
+          "treatment": "",
+          "start_sec": 2.0,
+          "end_sec": 10.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 2.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "This is called confirmation bias, a cognitive trap we all fall into.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Context visual: This is called confirmation bias, a cognitive trap we all fall into.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 2
+      }
+    },
+    {
+      "scene_id": 3,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Escalation visual: Imagine you\u2019re reading reviews for a new phone. You love brand X.",
+      "video_prompt": "Cinematic motion: Escalation visual: Imagine you\u2019re reading reviews for a new phone. You love brand X.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Imagine you\u2019re reading reviews",
+          "treatment": "",
+          "start_sec": 10.0,
+          "end_sec": 18.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 10.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Imagine you\u2019re reading reviews for a new phone. You love brand X.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Escalation visual: Imagine you\u2019re reading reviews for a new phone. You love brand X.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 3
+      }
+    },
+    {
+      "scene_id": 4,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Evidence visual: You only focus on the glowing reviews and ignore any negative ones.",
+      "video_prompt": "Cinematic motion: Evidence visual: You only focus on the glowing reviews and ignore any negative ones.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "You only focus on",
+          "treatment": "",
+          "start_sec": 18.0,
+          "end_sec": 26.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 18.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "You only focus on the glowing reviews and ignore any negative ones.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Evidence visual: You only focus on the glowing reviews and ignore any negative ones.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 4
+      }
+    },
+    {
+      "scene_id": 5,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Payoff visual: This skews your perception, making you think the phone is flawless.",
+      "video_prompt": "Cinematic motion: Payoff visual: This skews your perception, making you think the phone is flawless.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "This skews your perception,",
+          "treatment": "",
+          "start_sec": 26.0,
+          "end_sec": 40.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 26.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "This skews your perception, making you think the phone is flawless.",
+      "duration_sec": 14.0,
+      "resolved_asset": {}
+    },
+    {
+      "scene_id": 6,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Cta visual: Next time, challenge your views. Seek opposing evidence!",
+      "video_prompt": "Cinematic motion: Cta visual: Next time, challenge your views. Seek opposing evidence!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Next time, challenge your",
+          "treatment": "",
+          "start_sec": 40.0,
+          "end_sec": 50.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 40.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Next time, challenge your views. Seek opposing evidence!",
+      "duration_sec": 10.0,
+      "resolved_asset": {}
+    }
+  ],
+  "caption_render_plan": {
+    "mode": "word_by_word",
+    "style_preset": "bold_pop",
+    "style": {
+      "font": "Montserrat ExtraBold",
+      "size_pct": 4.8,
+      "fill": "#FFFFFF",
+      "stroke": "#000000",
+      "stroke_width_px": 6,
+      "emphasis_fill": "#FFD400",
+      "animation": "word pop 1.08x on entry",
+      "case": "upper"
+    },
+    "available_presets": [
+      "bold_pop",
+      "clean_minimal",
+      "karaoke_highlight",
+      "documentary_lower_third"
+    ],
+    "safe_area": {
+      "top_pct": 12.0,
+      "bottom_pct": 20.0,
+      "left_pct": 6.0,
+      "right_pct": 12.0
+    },
+    "platform_layouts": {
+      "youtube_shorts": {
+        "anchor_y_pct": 68.0,
+        "notes": "clear the title/channel block at the bottom"
+      },
+      "tiktok": {
+        "anchor_y_pct": 64.0,
+        "notes": "clear caption + music marquee, keep off the right rail"
+      },
+      "instagram_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "clear the audio attribution row"
+      },
+      "facebook_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "mirror the Reels layout"
+      }
+    },
+    "segments": [
+      {
+        "scene_id": 1,
+        "mode": "word_by_word",
+        "start_sec": 0.0,
+        "end_sec": 2.0,
+        "sentence": "Your brain loves evidence that agrees with you\u2014and quietly ignores the rest.",
+        "words": [
+          {
+            "word": "Your",
+            "start_sec": 0.0,
+            "end_sec": 0.13,
+            "emphasis": false
+          },
+          {
+            "word": "brain",
+            "start_sec": 0.13,
+            "end_sec": 0.29,
+            "emphasis": false
+          },
+          {
+            "word": "loves",
+            "start_sec": 0.29,
+            "end_sec": 0.45,
+            "emphasis": false
+          },
+          {
+            "word": "evidence",
+            "start_sec": 0.45,
+            "end_sec": 0.67,
+            "emphasis": true
+          },
+          {
+            "word": "that",
+            "start_sec": 0.67,
+            "end_sec": 0.81,
+            "emphasis": false
+          },
+          {
+            "word": "agrees",
+            "start_sec": 0.81,
+            "end_sec": 0.99,
+            "emphasis": false
+          },
+          {
+            "word": "with",
+            "start_sec": 0.99,
+            "end_sec": 1.12,
+            "emphasis": false
+          },
+          {
+            "word": "you",
+            "start_sec": 1.12,
+            "end_sec": 1.24,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 1.24,
+            "end_sec": 1.35,
+            "emphasis": false
+          },
+          {
+            "word": "quietly",
+            "start_sec": 1.35,
+            "end_sec": 1.55,
+            "emphasis": true
+          },
+          {
+            "word": "ignores",
+            "start_sec": 1.55,
+            "end_sec": 1.75,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 1.75,
+            "end_sec": 1.87,
+            "emphasis": false
+          },
+          {
+            "word": "rest",
+            "start_sec": 1.87,
+            "end_sec": 2.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "evidence",
+          "quietly"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 2,
+        "mode": "word_by_word",
+        "start_sec": 2.0,
+        "end_sec": 10.0,
+        "sentence": "This is called confirmation bias, a cognitive trap we all fall into.",
+        "words": [
+          {
+            "word": "This",
+            "start_sec": 2.0,
+            "end_sec": 2.61,
+            "emphasis": false
+          },
+          {
+            "word": "is",
+            "start_sec": 2.61,
+            "end_sec": 3.01,
+            "emphasis": false
+          },
+          {
+            "word": "called",
+            "start_sec": 3.01,
+            "end_sec": 3.82,
+            "emphasis": false
+          },
+          {
+            "word": "confirmation",
+            "start_sec": 3.82,
+            "end_sec": 5.24,
+            "emphasis": true
+          },
+          {
+            "word": "bias",
+            "start_sec": 5.24,
+            "end_sec": 5.85,
+            "emphasis": false
+          },
+          {
+            "word": "a",
+            "start_sec": 5.85,
+            "end_sec": 6.15,
+            "emphasis": false
+          },
+          {
+            "word": "cognitive",
+            "start_sec": 6.15,
+            "end_sec": 7.27,
+            "emphasis": true
+          },
+          {
+            "word": "trap",
+            "start_sec": 7.27,
+            "end_sec": 7.87,
+            "emphasis": false
+          },
+          {
+            "word": "we",
+            "start_sec": 7.87,
+            "end_sec": 8.28,
+            "emphasis": false
+          },
+          {
+            "word": "all",
+            "start_sec": 8.28,
+            "end_sec": 8.78,
+            "emphasis": false
+          },
+          {
+            "word": "fall",
+            "start_sec": 8.78,
+            "end_sec": 9.39,
+            "emphasis": false
+          },
+          {
+            "word": "into",
+            "start_sec": 9.39,
+            "end_sec": 10.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "cognitive",
+          "confirmation"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 3,
+        "mode": "word_by_word",
+        "start_sec": 10.0,
+        "end_sec": 18.0,
+        "sentence": "Imagine you\u2019re reading reviews for a new phone. You love brand X.",
+        "words": [
+          {
+            "word": "Imagine",
+            "start_sec": 10.0,
+            "end_sec": 10.94,
+            "emphasis": true
+          },
+          {
+            "word": "you",
+            "start_sec": 10.94,
+            "end_sec": 11.45,
+            "emphasis": false
+          },
+          {
+            "word": "re",
+            "start_sec": 11.45,
+            "end_sec": 11.87,
+            "emphasis": false
+          },
+          {
+            "word": "reading",
+            "start_sec": 11.87,
+            "end_sec": 12.81,
+            "emphasis": true
+          },
+          {
+            "word": "reviews",
+            "start_sec": 12.81,
+            "end_sec": 13.74,
+            "emphasis": false
+          },
+          {
+            "word": "for",
+            "start_sec": 13.74,
+            "end_sec": 14.26,
+            "emphasis": false
+          },
+          {
+            "word": "a",
+            "start_sec": 14.26,
+            "end_sec": 14.57,
+            "emphasis": false
+          },
+          {
+            "word": "new",
+            "start_sec": 14.57,
+            "end_sec": 15.09,
+            "emphasis": false
+          },
+          {
+            "word": "phone",
+            "start_sec": 15.09,
+            "end_sec": 15.82,
+            "emphasis": false
+          },
+          {
+            "word": "You",
+            "start_sec": 15.82,
+            "end_sec": 16.34,
+            "emphasis": false
+          },
+          {
+            "word": "love",
+            "start_sec": 16.34,
+            "end_sec": 16.96,
+            "emphasis": false
+          },
+          {
+            "word": "brand",
+            "start_sec": 16.96,
+            "end_sec": 17.69,
+            "emphasis": false
+          },
+          {
+            "word": "X",
+            "start_sec": 17.69,
+            "end_sec": 18.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "Imagine",
+          "reading"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 4,
+        "mode": "word_by_word",
+        "start_sec": 18.0,
+        "end_sec": 26.0,
+        "sentence": "You only focus on the glowing reviews and ignore any negative ones.",
+        "words": [
+          {
+            "word": "You",
+            "start_sec": 18.0,
+            "end_sec": 18.51,
+            "emphasis": false
+          },
+          {
+            "word": "only",
+            "start_sec": 18.51,
+            "end_sec": 19.11,
+            "emphasis": false
+          },
+          {
+            "word": "focus",
+            "start_sec": 19.11,
+            "end_sec": 19.82,
+            "emphasis": false
+          },
+          {
+            "word": "on",
+            "start_sec": 19.82,
+            "end_sec": 20.23,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 20.23,
+            "end_sec": 20.73,
+            "emphasis": false
+          },
+          {
+            "word": "glowing",
+            "start_sec": 20.73,
+            "end_sec": 21.65,
+            "emphasis": true
+          },
+          {
+            "word": "reviews",
+            "start_sec": 21.65,
+            "end_sec": 22.56,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 22.56,
+            "end_sec": 23.06,
+            "emphasis": false
+          },
+          {
+            "word": "ignore",
+            "start_sec": 23.06,
+            "end_sec": 23.87,
+            "emphasis": false
+          },
+          {
+            "word": "any",
+            "start_sec": 23.87,
+            "end_sec": 24.38,
+            "emphasis": false
+          },
+          {
+            "word": "negative",
+            "start_sec": 24.38,
+            "end_sec": 25.39,
+            "emphasis": true
+          },
+          {
+            "word": "ones",
+            "start_sec": 25.39,
+            "end_sec": 26.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "glowing",
+          "negative"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 5,
+        "mode": "word_by_word",
+        "start_sec": 26.0,
+        "end_sec": 40.0,
+        "sentence": "This skews your perception, making you think the phone is flawless.",
+        "words": [
+          {
+            "word": "This",
+            "start_sec": 26.0,
+            "end_sec": 27.09,
+            "emphasis": false
+          },
+          {
+            "word": "skews",
+            "start_sec": 27.09,
+            "end_sec": 28.36,
+            "emphasis": false
+          },
+          {
+            "word": "your",
+            "start_sec": 28.36,
+            "end_sec": 29.45,
+            "emphasis": false
+          },
+          {
+            "word": "perception",
+            "start_sec": 29.45,
+            "end_sec": 31.64,
+            "emphasis": true
+          },
+          {
+            "word": "making",
+            "start_sec": 31.64,
+            "end_sec": 33.09,
+            "emphasis": false
+          },
+          {
+            "word": "you",
+            "start_sec": 33.09,
+            "end_sec": 34.0,
+            "emphasis": false
+          },
+          {
+            "word": "think",
+            "start_sec": 34.0,
+            "end_sec": 35.27,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 35.27,
+            "end_sec": 36.18,
+            "emphasis": false
+          },
+          {
+            "word": "phone",
+            "start_sec": 36.18,
+            "end_sec": 37.45,
+            "emphasis": false
+          },
+          {
+            "word": "is",
+            "start_sec": 37.45,
+            "end_sec": 38.18,
+            "emphasis": false
+          },
+          {
+            "word": "flawless",
+            "start_sec": 38.18,
+            "end_sec": 40.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "perception"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 6,
+        "mode": "word_by_word",
+        "start_sec": 40.0,
+        "end_sec": 50.0,
+        "sentence": "Next time, challenge your views. Seek opposing evidence!",
+        "words": [
+          {
+            "word": "Next",
+            "start_sec": 40.0,
+            "end_sec": 40.97,
+            "emphasis": false
+          },
+          {
+            "word": "time",
+            "start_sec": 40.97,
+            "end_sec": 41.94,
+            "emphasis": false
+          },
+          {
+            "word": "challenge",
+            "start_sec": 41.94,
+            "end_sec": 43.71,
+            "emphasis": true
+          },
+          {
+            "word": "your",
+            "start_sec": 43.71,
+            "end_sec": 44.68,
+            "emphasis": false
+          },
+          {
+            "word": "views",
+            "start_sec": 44.68,
+            "end_sec": 45.81,
+            "emphasis": false
+          },
+          {
+            "word": "Seek",
+            "start_sec": 45.81,
+            "end_sec": 46.77,
+            "emphasis": false
+          },
+          {
+            "word": "opposing",
+            "start_sec": 46.77,
+            "end_sec": 48.39,
+            "emphasis": false
+          },
+          {
+            "word": "evidence",
+            "start_sec": 48.39,
+            "end_sec": 50.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "challenge"
+        ],
+        "placement": "bottom third, safe zone"
+      }
+    ]
+  },
+  "audio_mix_plan": {
+    "duration_sec": 50.0,
+    "tracks": {
+      "narration": {
+        "level_db": -3.0,
+        "voice_style": {},
+        "segments": [
+          {
+            "scene_id": 1,
+            "start_sec": 0.0,
+            "end_sec": 2.0,
+            "text": "Your brain loves evidence that agrees with you\u2014and quietly ignores the rest.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w2_confirmation_bias_001/voice.mp3"
+          },
+          {
+            "scene_id": 2,
+            "start_sec": 2.0,
+            "end_sec": 10.0,
+            "text": "This is called confirmation bias, a cognitive trap we all fall into.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w2_confirmation_bias_001/voice.mp3"
+          },
+          {
+            "scene_id": 3,
+            "start_sec": 10.0,
+            "end_sec": 18.0,
+            "text": "Imagine you\u2019re reading reviews for a new phone. You love brand X.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w2_confirmation_bias_001/voice.mp3"
+          },
+          {
+            "scene_id": 4,
+            "start_sec": 18.0,
+            "end_sec": 26.0,
+            "text": "You only focus on the glowing reviews and ignore any negative ones.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w2_confirmation_bias_001/voice.mp3"
+          },
+          {
+            "scene_id": 5,
+            "start_sec": 26.0,
+            "end_sec": 40.0,
+            "text": "This skews your perception, making you think the phone is flawless.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w2_confirmation_bias_001/voice.mp3"
+          },
+          {
+            "scene_id": 6,
+            "start_sec": 40.0,
+            "end_sec": 50.0,
+            "text": "Next time, challenge your views. Seek opposing evidence!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w2_confirmation_bias_001/voice.mp3"
+          }
+        ]
+      },
+      "music": {
+        "level_db": -18.0,
+        "style": "thoughtful underscore",
+        "bpm_range": [
+          90,
+          120
+        ],
+        "energy_curve": [
+          "rise",
+          "sustain",
+          "resolve"
+        ],
+        "ducking": {
+          "enabled": true,
+          "trigger": "narration",
+          "duck_to_db": -26.0,
+          "attack_ms": 150,
+          "release_ms": 400
+        }
+      },
+      "sfx": {
+        "level_db": -10.0,
+        "cues": [
+          {
+            "scene_id": 1,
+            "cue": "bass hit",
+            "at_sec": 0.0
+          },
+          {
+            "scene_id": 2,
+            "cue": "whoosh",
+            "at_sec": 2.0
+          },
+          {
+            "scene_id": 3,
+            "cue": "whoosh",
+            "at_sec": 10.0
+          },
+          {
+            "scene_id": 4,
+            "cue": "whoosh",
+            "at_sec": 18.0
+          },
+          {
+            "scene_id": 5,
+            "cue": "whoosh",
+            "at_sec": 26.0
+          },
+          {
+            "scene_id": 6,
+            "cue": "whoosh",
+            "at_sec": 40.0
+          }
+        ]
+      },
+      "transitions": {
+        "level_db": -12.0,
+        "cues": []
+      }
+    },
+    "silence_drops": [
+      {
+        "scene_id": 5,
+        "at_sec": 25.6,
+        "duration_sec": 0.4,
+        "reason": "drop the full mix before the payoff beat"
+      }
+    ],
+    "loudness_target": {
+      "standard": "platform_safe_placeholder",
+      "integrated_lufs": -14.0,
+      "true_peak_db": -1.0,
+      "notes": "Verify with a real loudness pass when actual audio is rendered."
+    }
+  },
+  "transition_plan": {
+    "supported_types": [
+      "cut",
+      "fade",
+      "push",
+      "zoom",
+      "whip_pan",
+      "glitch",
+      "flash",
+      "documentary_slow_zoom",
+      "cinematic_push_in",
+      "quick_cut"
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "motion_plan": [
+    {
+      "scene_id": 1,
+      "effect": "quick_punch_in",
+      "intensity": 70,
+      "duration_sec": 2.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.188
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_out"
+    },
+    {
+      "scene_id": 2,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 3,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 4,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 5,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 14.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 6,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 10.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    }
+  ],
+  "asset_requirements": [],
+  "missing_assets": [],
+  "render_warnings": [],
+  "estimated_render_duration_sec": 50.0,
+  "production_readiness_score": 100,
+  "validation": {
+    "status": "SUCCESS",
+    "checks": [
+      {
+        "check": "scenes_present",
+        "passed": true,
+        "detail": "6 scenes in the plan."
+      },
+      {
+        "check": "scenes_have_visuals",
+        "passed": true,
+        "detail": "Every scene has a visual asset or prompt."
+      },
+      {
+        "check": "scenes_have_narration",
+        "passed": true,
+        "detail": "Every scene has narration."
+      },
+      {
+        "check": "captions_exist",
+        "passed": true,
+        "detail": "6 caption segments planned."
+      },
+      {
+        "check": "audio_plan_exists",
+        "passed": true,
+        "detail": "Audio mix plan covers narration/music/SFX tracks."
+      },
+      {
+        "check": "runtime_reasonable",
+        "passed": true,
+        "detail": "Total runtime 50.0s is inside the 5.0-180.0s short-form window."
+      },
+      {
+        "check": "output_format_supported",
+        "passed": true,
+        "detail": "9:16 1080x1920 MP4 \u2014 supported."
+      },
+      {
+        "check": "assets_resolved",
+        "passed": true,
+        "detail": "All asset requests were fulfilled."
+      }
+    ],
+    "problems": [],
+    "production_readiness_score": 100
+  },
+  "render_status": "SUCCESS",
+  "mock_output_path": "data/productions/sp100w2_confirmation_bias_001/render.mp4",
+  "output_path": "data/productions/sp100w2_confirmation_bias_001/render.mp4",
+  "mp4_path": "data/productions/sp100w2_confirmation_bias_001/render.mp4",
+  "file_uri": "data/productions/sp100w2_confirmation_bias_001/render.mp4",
+  "render_log": [
+    "color_bed\u2192mp4 (no visual assets resolved)",
+    "ffmpeg_exit=0"
+  ],
+  "render_job": {},
+  "mock": false,
+  "assembly": {
+    "ok": true,
+    "mock": false,
+    "error": "",
+    "output_path": "data/productions/sp100w2_confirmation_bias_001/render.mp4",
+    "absolute_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w2_confirmation_bias_001/render.mp4",
+    "bytes": 319977,
+    "duration_sec": 50.0,
+    "resolution": "1080x1920",
+    "ffmpeg": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/venv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "log": [
+      "color_bed\u2192mp4 (no visual assets resolved)",
+      "ffmpeg_exit=0"
+    ],
+    "visual_count": 0,
+    "has_audio": true,
+    "manifest": {
+      "title": "Confirmation Bias Hijacks Your Brain",
+      "format": {
+        "aspect_ratio": "9:16",
+        "resolution": {
+          "width": 1080,
+          "height": 1920
+        },
+        "container": "mp4",
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "fps": 30,
+        "orientation": "vertical",
+        "platforms": [
+          "youtube_shorts",
+          "tiktok",
+          "instagram_reels",
+          "facebook_reels"
+        ]
+      },
+      "visuals": [],
+      "audio": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w2_confirmation_bias_001/voice.mp3"
+    }
+  },
+  "render_manifest": {
+    "scenes": 6,
+    "timeline_segments": 6,
+    "caption_segments": 6,
+    "audio_tracks": [
+      "narration",
+      "music",
+      "sfx",
+      "transitions"
+    ],
+    "transitions": 5,
+    "assets_requested": 0,
+    "assets_missing": 0,
+    "warnings": 0,
+    "readiness": 100,
+    "ready_for_publishing": true,
+    "real_mp4": true
+  }
+}

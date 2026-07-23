@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Countless icy particles orbiting in a thin disk \u2014 not solid hoops.",
+    "visual_description": "Hook visual: Countless icy particles orbiting in a thin disk \u2014 not solid hoops.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Countless icy particles orbiting in a thin disk \u2014 not solid hoops.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Countless icy particles orbiting in a thin disk \u2014 not solid hoops.",
+    "stock_footage_query": "",
+    "text_overlay": "Countless icy particles orbiting",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Saturn\u2019s rings are a breathtaking sight, but what are they really made of?",
+    "visual_description": "Context visual: Saturn\u2019s rings are a breathtaking sight, but what are they really made of?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Saturn\u2019s rings are a breathtaking sight, but what are they really made of?",
+    "ai_video_prompt": "Cinematic motion: Context visual: Saturn\u2019s rings are a breathtaking sight, but what are they really made of?",
+    "stock_footage_query": "",
+    "text_overlay": "Saturn\u2019s rings are a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "fascination",
+    "length_sec": 8.0,
+    "narration": "The rings stretch over 175,000 miles wide, composed mostly of ice and rock.",
+    "visual_description": "Escalation visual: The rings stretch over 175,000 miles wide, composed mostly of ice and rock.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: The rings stretch over 175,000 miles wide, composed mostly of ice and rock.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: The rings stretch over 175,000 miles wide, composed mostly of ice and rock.",
+    "stock_footage_query": "",
+    "text_overlay": "The rings stretch over",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "awe",
+    "length_sec": 8.0,
+    "narration": "Some particles are as small as grains of sand, while others can be as big as mountains!",
+    "visual_description": "Evidence visual: Some particles are as small as grains of sand, while others can be as big as mountains!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Some particles are as small as grains of sand, while others can be as big as mountains!",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Some particles are as small as grains of sand, while others can be as big as mountains!",
+    "stock_footage_query": "",
+    "text_overlay": "Some particles are as",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "wonder",
+    "length_sec": 8.0,
+    "narration": "These icy bodies create a stunning spectacle, reflecting sunlight in a dazzling display.",
+    "visual_description": "Payoff visual: These icy bodies create a stunning spectacle, reflecting sunlight in a dazzling display.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: These icy bodies create a stunning spectacle, reflecting sunlight in a dazzling display.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: These icy bodies create a stunning spectacle, reflecting sunlight in a dazzling display.",
+    "stock_footage_query": "",
+    "text_overlay": "These icy bodies create",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "inviting",
+    "length_sec": 26.0,
+    "narration": "Curious about more cosmic wonders? Like and follow for more!",
+    "visual_description": "Cta visual: Curious about more cosmic wonders? Like and follow for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more cosmic wonders? Like and follow for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more cosmic wonders? Like and follow for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more cosmic",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

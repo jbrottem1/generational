@@ -20,11 +20,19 @@ logger = get_logger(__name__)
 
 
 def get_api_key() -> str:
-    """Session override takes precedence over the environment variable."""
-    session_key = (st.session_state.get("openai_api_key_override") or "").strip()
-    if session_key:
-        return session_key
-    return (os.getenv("OPENAI_API_KEY") or "").strip()
+    """Resolve OpenAI key: session override → env / .env / SecretManager."""
+    try:
+        session_key = (st.session_state.get("openai_api_key_override") or "").strip()
+        if session_key:
+            return session_key
+    except Exception:  # noqa: BLE001 — session_state unavailable outside Streamlit
+        pass
+    try:
+        from services.provider_runtime.config import get_credential
+
+        return (get_credential("OPENAI_API_KEY") or "").strip()
+    except Exception:  # noqa: BLE001
+        return (os.getenv("OPENAI_API_KEY") or "").strip()
 
 
 def _build_prompt(request: GenerationRequest) -> "tuple[str, str]":

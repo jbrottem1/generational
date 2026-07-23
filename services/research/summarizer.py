@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from engines.heuristics import clamp, stable_jitter
+from core.heuristics import clamp, stable_jitter
 from services.research.models import ResearchDocument, ResearchIntent, ResearchSummary
 
 

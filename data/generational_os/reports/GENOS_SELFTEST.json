@@ -1,0 +1,403 @@
+{
+  "ok": true,
+  "publishing_enabled": false,
+  "opportunities_ranked": 25,
+  "queued_ok_count": 5,
+  "execution": {
+    "production_id": "ops_18fff5d4bd",
+    "success": true,
+    "status": {
+      "schema_version": "1.0",
+      "production_id": "ops_18fff5d4bd",
+      "brief": {
+        "topic": "Why octopuses have three hearts",
+        "platform": "youtube_shorts",
+        "length_sec": 45,
+        "style": "educational",
+        "narrator": "professor",
+        "voice": "default",
+        "quality_target": 98.0,
+        "constraints": {
+          "world": "Ocean Research Observatory",
+          "style_profile": "documentary",
+          "from_trend_opportunity": true,
+          "opportunity_score": 67.4,
+          "publishing_enabled": false,
+          "from_genos": true
+        },
+        "command": "Create a 45 second youtube shorts video about Why octopuses have three hearts in a documentary educational style, narrator professor. Open with this hook: Stop \u2014 why octopuses have three hearts? The answer is stranger than it sounds.",
+        "raw": {}
+      },
+      "current_stage": "export",
+      "current_agent": "export_and_validate",
+      "overall_progress_pct": 100,
+      "elapsed_ms": 100672,
+      "eta_ms": null,
+      "overall_status": "succeeded",
+      "pipeline_health": "healthy",
+      "warnings": [
+        "animation unavailable \u2014 continued",
+        "mp4_not_yet_materialized \u2014 metadata package exported for smoke/plan modes"
+      ],
+      "retry_count": 0,
+      "quality_scores": {
+        "research": 95.0,
+        "psychology": 100.0,
+        "studio_director": 100.0,
+        "script_generator": 100.0,
+        "scene_builder": 100.0,
+        "media_collection": 100.0,
+        "animation": 100.0,
+        "voice_generation": 100.0,
+        "music_sound": 90.0,
+        "captions": 100.0,
+        "rendering": 100.0,
+        "viewer_retention": 100.0,
+        "optimization_lab": 100.0,
+        "quality_assurance": 100.0,
+        "seo_package": 100.0,
+        "export": 80.0
+      },
+      "current_files": [
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_octopuses_have_three_hearts_ops_18fff5d4bd",
+        "data/renders/aedcd1b8cc71/the-hidden-truth-why-octopuses-have-three-hearts-in-a-docume_1080x1920.mp4",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_octopuses_have_three_hearts_ops_18fff5d4bd/captions.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_octopuses_have_three_hearts_ops_18fff5d4bd/description.txt",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_octopuses_have_three_hearts_ops_18fff5d4bd/seo_metadata.json",
+        "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_octopuses_have_three_hearts_ops_18fff5d4bd/thumbnail_plan.json"
+      ],
+      "started_at": "2026-07-14T04:28:01.057345+00:00",
+      "finished_at": "2026-07-14T04:29:41.729911+00:00",
+      "stages": [
+        {
+          "key": "research",
+          "label": "Research Engine",
+          "engines": [
+            "research",
+            "ideation"
+          ],
+          "status": "succeeded",
+          "start_time": "2026-07-14T04:28:01.057871+00:00",
+          "end_time": "2026-07-14T04:28:14.796234+00:00",
+          "duration_ms": 13737,
+          "warnings": [],
+          "errors": [],
+          "retry_attempts": 0,
+          "quality_score": 95.0,
+          "output_files": [],
+          "current_agent": "research"
+        },
+        {
+          "key": "psychology",
+          "label": "Psychology Engine",
+          "engines": [
+            "psychology"
+          ],
+          "status": "succeeded",
+          "start_time": "2026-07-14T04:28:14.797145+00:00",
+          "end_time": "2026-07-14T04:28:14.820456+00:00",
+          "duration_ms": 22,
+          "warnings": [],
+          "errors": [],
+          "retry_attempts": 0,
+          "quality_score": 100.0,
+          "output_files": [],
+          "current_agent": "psychology"
+        },
+        {
+          "key": "studio_director",
+          "label": "AI Studio Director",
+          "engines": [
+            "ai_director"
+          ],
+          "status": "succeeded",
+          "start_time": "2026-07-14T04:28:14.821084+00:00",
+          "end_time": "2026-07-14T04:28:15.435580+00:00",
+          "duration_ms": 613,
+          "warnings": [],
+          "errors": [],
+          "retry_attempts": 0,
+          "quality_score": 100.0,
+          "output_files": [],
+          "current_agent": "ai_director"
+        },
+        {
+          "key": "script_generator",
+          "label": "Script Generator",
+          "engines": [
+            "script_generation"
+          ],
+          "status": "succeeded",
+          "start_time": "2026-07-14T04:28:15.436424+00:00",
+          "end_time": "2026-07-14T04:28:24.184565+00:00",
+          "duration_ms": 8747,
+          "warnings": [],
+          "errors": [],
+          "retry_attempts": 0,
+          "quality_score": 100.0,
+          "output_files": [],
+          "current_agent": "script_generation"
+        },
+        {
+          "key": "scene_builder",
+          "label": "Scene Builder",
+          "engines": [
+            "visual_intelligence",
+            "scene_planning",
+            "visual_planning"
+          ],
+          "status": "succeeded",
+          "start_time": "2026-07-14T04:28:24.185230+00:00",
+          "end_time": "2026-07-14T04:28:24.266777+00:00",
+          "duration_ms": 79,
+          "warnings": [],
+          "errors": [],
+          "retry_attempts": 0,
+          "quality_score": 100.0,
+          "output_files": [],
+          "current_agent": "visual_intelligence"
+        },
+        {
+          "key": "media_collection",
+          "label": "Media Collection",
+          "engines": [
+            "evidence_intelligence",
+            "image",
+            "asset_manager"
+          ],
+          "status": "succeeded",
+          "start_time": "2026-07-14T04:28:24.267403+00:00",
+          "end_time": "2026-07-14T04:28:57.719794+00:00",
+          "duration_ms": 33450,
+          "warnings": [],
+          "errors": [],
+          "retry_attempts": 0,
+          "quality_score": 100.0,
+          "output_files": [],
+          "current_agent": "evidence_intelligence"
+        },
+        {
+          "key": "animation",
+          "label": "Animation / Motion Graphics",
+          "engines": [
+            "cinematography",
+            "animation"
+          ],
+          "status": "succeeded",
+          "start_time": "2026-07-14T04:28:57.724194+00:00",
+          "end_time": "2026-07-14T04:28:57.774280+00:00",
+          "duration_ms": 49,
+          "warnings": [
+            "animation unavailable \u2014 continued"
+          ],
+          "errors": [],
+          "retry_attempts": 0,
+          "quality_score": 100.0,
+          "output_files": [],
+          "current_agent": "cinematography"
+        },
+        {
+          "key": "voice_generation",
+          "label": "Voice Generation",
+          "engines": [
+            "voice_audio",
+            "narration",
+            "voice"
+          ],
+          "status": "succeeded",
+          "start_time": "2026-07-14T04:28:57.774939+00:00",
+          "end_time": "2026-07-14T04:29:37.895397+00:00",
+          "duration_ms": 40118,
+          "warnings": [],
+          "errors": [],
+          "retry_attempts": 0,
+          "quality_score": 100.0,
+          "output_files": [],
+          "current_agent": "voice_audio"
+        },
+        {
+          "key": "music_sound",
+          "label": "Music & Sound Design",
+          "engines": [],
+          "status": "succeeded",
+          "start_time": "2026-07-14T04:29:37.897842+00:00",
+          "end_time": "2026-07-14T04:29:37.898651+00:00",
+          "duration_ms": 0,
+          "warnings": [],
+          "errors": [],
+          "retry_attempts": 0,
+          "quality_score": 90.0,
+          "output_files": [],
+          "current_agent": "apply_music_direction"
+        },
+        {
+          "key": "captions",
+          "label": "Captions",
+          "engines": [
+            "subtitle"
+          ],
+          "status": "succeeded",
+          "start_time": "2026-07-14T04:29:37.899173+00:00",
+          "end_time": "2026-07-14T04:29:37.914924+00:00",
+          "duration_ms": 15,
+          "warnings": [],
+          "errors": [],
+          "retry_attempts": 0,
+          "quality_score": 100.0,
+          "output_files": [],
+          "current_agent": "subtitle"
+        },
+        {
+          "key": "rendering",
+          "label": "Rendering",
+          "engines": [
+            "timeline",
+            "render_package",
+            "studio_render",
+            "video"
+          ],
+          "status": "succeeded",
+          "start_time": "2026-07-14T04:29:37.915688+00:00",
+          "end_time": "2026-07-14T04:29:38.044754+00:00",
+          "duration_ms": 126,
+          "warnings": [],
+          "errors": [],
+          "retry_attempts": 0,
+          "quality_score": 100.0,
+          "output_files": [],
+          "current_agent": "timeline"
+        },
+        {
+          "key": "viewer_retention",
+          "label": "Viewer Retention Analysis",
+          "engines": [
+            "viewer_retention"
+          ],
+          "status": "succeeded",
+          "start_time": "2026-07-14T04:29:38.045446+00:00",
+          "end_time": "2026-07-14T04:29:38.081257+00:00",
+          "duration_ms": 35,
+          "warnings": [],
+          "errors": [],
+          "retry_attempts": 0,
+          "quality_score": 100.0,
+          "output_files": [],
+          "current_agent": "viewer_retention"
+        },
+        {
+          "key": "optimization_lab",
+          "label": "Optimization Lab",
+          "engines": [
+            "optimization_lab"
+          ],
+          "status": "succeeded",
+          "start_time": "2026-07-14T04:29:38.082006+00:00",
+          "end_time": "2026-07-14T04:29:39.664156+00:00",
+          "duration_ms": 1581,
+          "warnings": [],
+          "errors": [],
+          "retry_attempts": 0,
+          "quality_score": 100.0,
+          "output_files": [],
+          "current_agent": "optimization_lab"
+        },
+        {
+          "key": "quality_assurance",
+          "label": "Quality Assurance",
+          "engines": [
+            "quality",
+            "production_qa"
+          ],
+          "status": "succeeded",
+          "start_time": "2026-07-14T04:29:39.666371+00:00",
+          "end_time": "2026-07-14T04:29:39.681319+00:00",
+          "duration_ms": 14,
+          "warnings": [],
+          "errors": [],
+          "retry_attempts": 0,
+          "quality_score": 100.0,
+          "output_files": [],
+          "current_agent": "quality"
+        },
+        {
+          "key": "seo_package",
+          "label": "SEO Package",
+          "engines": [
+            "seo",
+            "seo_optimization"
+          ],
+          "status": "succeeded",
+          "start_time": "2026-07-14T04:29:39.681875+00:00",
+          "end_time": "2026-07-14T04:29:41.726008+00:00",
+          "duration_ms": 2043,
+          "warnings": [],
+          "errors": [],
+          "retry_attempts": 0,
+          "quality_score": 100.0,
+          "output_files": [],
+          "current_agent": "seo"
+        },
+        {
+          "key": "export",
+          "label": "Export",
+          "engines": [],
+          "status": "succeeded",
+          "start_time": "2026-07-14T04:29:41.726813+00:00",
+          "end_time": "2026-07-14T04:29:41.729373+00:00",
+          "duration_ms": 2,
+          "warnings": [
+            "mp4_not_yet_materialized \u2014 metadata package exported for smoke/plan modes"
+          ],
+          "errors": [],
+          "retry_attempts": 0,
+          "quality_score": 80.0,
+          "output_files": [
+            "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_octopuses_have_three_hearts_ops_18fff5d4bd",
+            "data/renders/aedcd1b8cc71/the-hidden-truth-why-octopuses-have-three-hearts-in-a-docume_1080x1920.mp4",
+            "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_octopuses_have_three_hearts_ops_18fff5d4bd/captions.json",
+            "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_octopuses_have_three_hearts_ops_18fff5d4bd/description.txt",
+            "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_octopuses_have_three_hearts_ops_18fff5d4bd/seo_metadata.json",
+            "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/Why_octopuses_have_three_hearts_ops_18fff5d4bd/thumbnail_plan.json"
+          ],
+          "current_agent": "export_and_validate"
+        }
+      ],
+      "updated_at": "2026-07-14T04:28:01.057347+00:00",
+      "success": true,
+      "validation_score": 97.8
+    },
+    "report_keys": [
+      "generated_at",
+      "production_id",
+      "topic",
+      "platform",
+      "length_sec",
+      "style",
+      "overall_quality_score",
+      "quality_target",
+      "hook_score",
+      "narration_score",
+      "visual_score",
+      "animation_score",
+      "audio_score",
+      "caption_score",
+      "educational_accuracy",
+      "retention_prediction",
+      "ctr_prediction",
+      "completion_prediction",
+      "shareability",
+      "platform_readiness"
+    ]
+  },
+  "lesson": "Attach the idea to a personal stake (embarrassment, amazement, relief) before the first fact.",
+  "report_paths": {
+    "DAILY_REPORT.md": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/DAILY_REPORT.md",
+    "WEEKLY_REPORT.md": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/WEEKLY_REPORT.md",
+    "MONTHLY_REPORT.md": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/MONTHLY_REPORT.md",
+    "SYSTEM_HEALTH.md": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/SYSTEM_HEALTH.md",
+    "SYSTEM_STATE.json": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/SYSTEM_STATE.json",
+    "PRODUCTION_QUEUE.json": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/PRODUCTION_QUEUE.json"
+  },
+  "system_state_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/SYSTEM_STATE.json",
+  "elapsed_ms": 103590
+}

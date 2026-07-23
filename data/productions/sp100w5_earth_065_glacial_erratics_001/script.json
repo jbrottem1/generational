@@ -1,0 +1,74 @@
+{
+  "title": "Glacial Erratics",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the fascinating science behind glacial erratics and their journey.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about glacial erratics than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "These massive boulders, carried by glaciers, are puzzle pieces of Earth\u2019s history.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "They can be found far from their origin, creating a mystery\u2014how did they get there?",
+      "emotion": "curiosity",
+      "delivery": "building tension",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "As glaciers advanced and retreated, they scooped up rocks, dropping them miles away.",
+      "emotion": "excitement",
+      "delivery": "informative",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 36.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding glacial erratics reveals how our planet has transformed over eons.",
+      "emotion": "satisfaction",
+      "delivery": "conclusive",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 36.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious to learn more about Earth's wonders? Hit that follow button!",
+      "emotion": "encouragement",
+      "delivery": "enthusiastic",
+      "retention_device": "none"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about glacial erratics than social media does. These massive boulders, carried by glaciers, are puzzle pieces of Earth\u2019s history. They can be found far from their origin, creating a mystery\u2014how did they get there? As glaciers advanced and retreated, they scooped up rocks, dropping them miles away. Understanding glacial erratics reveals how our planet has transformed over eons. Curious to learn more about Earth's wonders? Hit that follow button!",
+  "call_to_action": "Curious to learn more about Earth's wonders? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:42:29.065534+00:00",
+  "source": "ai"
+}

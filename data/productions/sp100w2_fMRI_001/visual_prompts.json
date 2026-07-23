@@ -1,0 +1,76 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: fMRI doesn't watch thoughts \u2014 it tracks blood-oxygen changes linked to brain activity.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: This is called the BOLD signal. But what does BOLD really mean?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: When neurons fire, they need more oxygen... and that\u2019s where the blood comes in.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Researchers measure these changes, but interpreting them isn\u2019t straightforward.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: That\u2019s why reverse inference can be misleading; it\u2019s not always what it seems.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Pattern Interrupt visual: Imagine thinking you know what someone is feeling just by their scan... but it\u2019s far more complex.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cta visual: Want to dive deeper into neuroscience? Hit that subscribe button for more!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: fMRI doesn't watch thoughts \u2014 it tracks blood-oxygen changes linked to brain activity.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: This is called the BOLD signal. But what does BOLD really mean?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: When neurons fire, they need more oxygen... and that\u2019s where the blood comes in.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Researchers measure these changes, but interpreting them isn\u2019t straightforward.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: That\u2019s why reverse inference can be misleading; it\u2019s not always what it seems.",
+      "duration_sec": 10.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Pattern Interrupt visual: Imagine thinking you know what someone is feeling just by their scan... but it\u2019s far more complex.",
+      "duration_sec": 9.0
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cinematic motion: Cta visual: Want to dive deeper into neuroscience? Hit that subscribe button for more!",
+      "duration_sec": 15.0
+    }
+  ]
+}

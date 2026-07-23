@@ -1,0 +1,140 @@
+{
+  "document": "GENERATIONAL_VISUAL_FOUNDATION_V1",
+  "version": "1.0.0",
+  "status": "permanent",
+  "architecture": {
+    "no_new_renderer": true,
+    "no_pipeline_redesign": true,
+    "frozen": true
+  },
+  "visual_target": "feature_film_quality_cinematic_realism",
+  "not_target": ["uncanny_photoreal_real_life", "clip_art", "powerpoint", "placeholder_geometry"],
+  "default_style_mode": "cinematic_realism",
+  "style_modes": [
+    "realistic",
+    "cinematic_realism",
+    "stylized_realism",
+    "anime_influenced",
+    "cartoon"
+  ],
+  "separate_brand_worlds": {
+    "dash_science": "data/universe/STYLE_BIBLE.md",
+    "note": "Dash stick IP remains locked and separate from cinematic humanoid hosts"
+  },
+  "philosophy": [
+    "world_exists_independently_of_narrator",
+    "characters_have_lives",
+    "cities_function_when_unseen",
+    "weather_and_lighting_evolve",
+    "nothing_exists_only_because_script_asked",
+    "every_object_belongs"
+  ],
+  "priorities": [
+    "believable_anatomy",
+    "expressive_faces",
+    "cinematic_composition",
+    "physically_plausible_lighting",
+    "detailed_environments",
+    "coherent_architecture",
+    "consistent_character_identity",
+    "emotionally_readable_performances"
+  ],
+  "reject": [
+    "clip_art",
+    "vector_kitsch",
+    "powerpoint",
+    "geometric_placeholders",
+    "stick_figures_outside_dash_ip",
+    "floating_icons",
+    "disconnected_motion_graphics",
+    "blank_environments",
+    "flat_color_backdrops",
+    "placeholder_geometry",
+    "lifeless_faces",
+    "purposeless_camera",
+    "flat_lighting",
+    "obvious_ai_artifacts",
+    "repetitive_idle_loops"
+  ],
+  "quality_gates": {
+    "reject_if": [
+      "blank_environments",
+      "floating_unexplained_objects",
+      "placeholder_assets",
+      "inconsistent_character_appearance",
+      "unnatural_anatomy",
+      "lifeless_facial_expressions",
+      "purposeless_camera_movement",
+      "flat_lighting",
+      "obvious_ai_artifacts",
+      "repetitive_animation_loops"
+    ],
+    "self_review": [
+      "viewers_would_recognize_characters",
+      "audience_would_remember_world",
+      "every_scene_feels_alive",
+      "feels_like_original_series",
+      "want_another_episode_for_world"
+    ]
+  },
+  "camera": {
+    "role": "invisible_storyteller",
+    "allowed": [
+      "dolly",
+      "crane",
+      "tracking",
+      "justified_handheld",
+      "wide_establish",
+      "close_emotional",
+      "over_the_shoulder",
+      "depth_of_field",
+      "rack_focus",
+      "parallax"
+    ],
+    "forbid": ["arbitrary_random_camera"]
+  },
+  "lighting": {
+    "principles": [
+      "motivated_sources",
+      "global_illumination_feel",
+      "volumetric",
+      "soft_shadows",
+      "bounce",
+      "rim",
+      "practicals",
+      "reflections",
+      "color_temperature_consistency"
+    ]
+  },
+  "environments": {
+    "require": [
+      "layered_foreground",
+      "detailed_midground",
+      "deep_background",
+      "atmospheric_perspective",
+      "weather",
+      "environmental_storytelling",
+      "props",
+      "lighting_variation",
+      "materials"
+    ],
+    "forbid_empty": true
+  },
+  "character_consistency": {
+    "permanent_assets_required": true,
+    "never_regenerate_from_scratch": true,
+    "silhouette_test": true
+  },
+  "human_character_realism": {
+    "spec": "HUMAN_CHARACTER_REALISM_V1.md",
+    "default_natural_proportions": true,
+    "stylization_only_when_declared": true
+  },
+  "integrations": [
+    "services/character_world_studio",
+    "services/animation_engine",
+    "services/virtual_film_director",
+    "services/studio_assets",
+    "services/media_production/true_motion"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "How Carbon Dating Works",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "An intriguing explanation of carbon dating and its limitations.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you a tiny atom can unlock the secrets of the past?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Meet Carbon-14, a radioactive isotope formed in the atmosphere.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "intriguing fact"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "It decays at a known rate. This decay acts like a clock for once-living materials.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "But it only works for items up to about 50,000 years old. Beyond that? It\u2019s a mystery.",
+      "emotion": "curiosity",
+      "delivery": "fact-based",
+      "retention_device": "surprising limitation"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Archaeologists and physicists rely on this method to uncover our history.",
+      "emotion": "curiosity",
+      "delivery": "satisfying conclusion",
+      "retention_device": "reveal connection"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 42.0,
+      "segment_type": "cta",
+      "voiceover": "Want to explore more science mysteries? Hit that follow button!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "What if I told you a tiny atom can unlock the secrets of the past? Meet Carbon-14, a radioactive isotope formed in the atmosphere. It decays at a known rate. This decay acts like a clock for once-living materials. But it only works for items up to about 50,000 years old. Beyond that? It\u2019s a mystery. Archaeologists and physicists rely on this method to uncover our history. Want to explore more science mysteries? Hit that follow button!",
+  "call_to_action": "Want to explore more science mysteries? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:12:48.725345+00:00",
+  "source": "ai"
+}

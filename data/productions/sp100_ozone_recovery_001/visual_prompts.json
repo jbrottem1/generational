@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: We broke the ozone layer, but guess what? It's healing.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: CFCs, used in everything from fridges to aerosols, were the culprits behind the damage.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: But then came the Montreal Protocol, uniting countries to phase out these harmful chemicals.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: NOAA and NASA now report that the ozone layer is on the mend, recovering at a surprising rate.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: In fact, we could see a fully healed ozone layer by 2060. Imagine that!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about our planet's recovery? Hit like and follow for more science insights!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: We broke the ozone layer, but guess what? It's healing.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: CFCs, used in everything from fridges to aerosols, were the culprits behind the damage.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: But then came the Montreal Protocol, uniting countries to phase out these harmful chemicals.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: NOAA and NASA now report that the ozone layer is on the mend, recovering at a surprising rate.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: In fact, we could see a fully healed ozone layer by 2060. Imagine that!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about our planet's recovery? Hit like and follow for more science insights!",
+      "duration_sec": 26.0
+    }
+  ]
+}

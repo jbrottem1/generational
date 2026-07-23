@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if we could change the path of an asteroid?",
+    "visual_description": "Hook visual: What if we could change the path of an asteroid?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if we could change the path of an asteroid?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if we could change the path of an asteroid?",
+    "stock_footage_query": "",
+    "text_overlay": "What if we could",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "NASA's DART mission did just that, slamming into Dimorphos at 14,000 miles per hour.",
+    "visual_description": "Context visual: NASA's DART mission did just that, slamming into Dimorphos at 14,000 miles per hour.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: NASA's DART mission did just that, slamming into Dimorphos at 14,000 miles per hour.",
+    "ai_video_prompt": "Cinematic motion: Context visual: NASA's DART mission did just that, slamming into Dimorphos at 14,000 miles per hour.",
+    "stock_footage_query": "",
+    "text_overlay": "NASA's DART mission did",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But why target Dimorphos? It\u2019s a moonlet of a much larger asteroid, Didymos.",
+    "visual_description": "Escalation visual: But why target Dimorphos? It\u2019s a moonlet of a much larger asteroid, Didymos.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But why target Dimorphos? It\u2019s a moonlet of a much larger asteroid, Didymos.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But why target Dimorphos? It\u2019s a moonlet of a much larger asteroid, Didymos.",
+    "stock_footage_query": "",
+    "text_overlay": "But why target Dimorphos?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "The results? DART changed Dimorphos\u2019 orbit by 33 minutes, a significant achievement in planetary defense.",
+    "visual_description": "Evidence visual: The results? DART changed Dimorphos\u2019 orbit by 33 minutes, a significant achievement in planetary defense.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: The results? DART changed Dimorphos\u2019 orbit by 33 minutes, a significant achievement in planetary defense.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: The results? DART changed Dimorphos\u2019 orbit by 33 minutes, a significant achievement in planetary defense.",
+    "stock_footage_query": "",
+    "text_overlay": "The results? DART changed",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "This test shows we can protect Earth from potential asteroid threats in the future.",
+    "visual_description": "Payoff visual: This test shows we can protect Earth from potential asteroid threats in the future.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This test shows we can protect Earth from potential asteroid threats in the future.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This test shows we can protect Earth from potential asteroid threats in the future.",
+    "stock_footage_query": "",
+    "text_overlay": "This test shows we",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 22.0,
+    "narration": "Want to learn more about space missions? Follow for updates!",
+    "visual_description": "Cta visual: Want to learn more about space missions? Follow for updates!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to learn more about space missions? Follow for updates!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to learn more about space missions? Follow for updates!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

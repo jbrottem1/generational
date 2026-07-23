@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Bright ice reflects sunlight; dark water absorbs it. What happens next?",
+    "visual_description": "Hook visual: Bright ice reflects sunlight; dark water absorbs it. What happens next?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Bright ice reflects sunlight; dark water absorbs it. What happens next?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Bright ice reflects sunlight; dark water absorbs it. What happens next?",
+    "stock_footage_query": "",
+    "text_overlay": "Bright ice reflects sunlight;",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This is called the albedo effect. More ice means less absorption, keeping our planet cool.",
+    "visual_description": "Context visual: This is called the albedo effect. More ice means less absorption, keeping our planet cool.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This is called the albedo effect. More ice means less absorption, keeping our planet cool.",
+    "ai_video_prompt": "Cinematic motion: Context visual: This is called the albedo effect. More ice means less absorption, keeping our planet cool.",
+    "stock_footage_query": "",
+    "text_overlay": "This is called the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But as ice melts, dark oceans emerge, soaking up heat. The cycle begins.",
+    "visual_description": "Escalation visual: But as ice melts, dark oceans emerge, soaking up heat. The cycle begins.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But as ice melts, dark oceans emerge, soaking up heat. The cycle begins.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But as ice melts, dark oceans emerge, soaking up heat. The cycle begins.",
+    "stock_footage_query": "",
+    "text_overlay": "But as ice melts,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "Research shows that this albedo feedback accelerates warming. It\u2019s a tipping point.",
+    "visual_description": "Evidence visual: Research shows that this albedo feedback accelerates warming. It\u2019s a tipping point.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows that this albedo feedback accelerates warming. It\u2019s a tipping point.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows that this albedo feedback accelerates warming. It\u2019s a tipping point.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows that this",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "urgency",
+    "length_sec": 8.0,
+    "narration": "Melting ice isn't just a loss; it fuels a hotter future for all of us.",
+    "visual_description": "Payoff visual: Melting ice isn't just a loss; it fuels a hotter future for all of us.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Melting ice isn't just a loss; it fuels a hotter future for all of us.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Melting ice isn't just a loss; it fuels a hotter future for all of us.",
+    "stock_footage_query": "",
+    "text_overlay": "Melting ice isn't just",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "hope",
+    "length_sec": 26.0,
+    "narration": "Stay informed and take action. Follow for more insights on climate science!",
+    "visual_description": "Cta visual: Stay informed and take action. Follow for more insights on climate science!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Stay informed and take action. Follow for more insights on climate science!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Stay informed and take action. Follow for more insights on climate science!",
+    "stock_footage_query": "",
+    "text_overlay": "Stay informed and take",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

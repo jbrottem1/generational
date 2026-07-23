@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What happens when water gets too much fertilizer?",
+    "visual_description": "Hook visual: What happens when water gets too much fertilizer?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What happens when water gets too much fertilizer?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What happens when water gets too much fertilizer?",
+    "stock_footage_query": "",
+    "text_overlay": "What happens when water",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Eutrophication occurs when nutrient runoff boosts algae growth in lakes and rivers.",
+    "visual_description": "Context visual: Eutrophication occurs when nutrient runoff boosts algae growth in lakes and rivers.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Eutrophication occurs when nutrient runoff boosts algae growth in lakes and rivers.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Eutrophication occurs when nutrient runoff boosts algae growth in lakes and rivers.",
+    "stock_footage_query": "",
+    "text_overlay": "Eutrophication occurs when nutrient",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But here's the catch: too much algae blocks sunlight and oxygen for other life forms.",
+    "visual_description": "Escalation visual: But here's the catch: too much algae blocks sunlight and oxygen for other life forms.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But here's the catch: too much algae blocks sunlight and oxygen for other life forms.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But here's the catch: too much algae blocks sunlight and oxygen for other life forms.",
+    "stock_footage_query": "",
+    "text_overlay": "But here's the catch:",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "This leads to dead zones where fish and plants can\u2019t survive, impacting entire ecosystems.",
+    "visual_description": "Evidence visual: This leads to dead zones where fish and plants can\u2019t survive, impacting entire ecosystems.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: This leads to dead zones where fish and plants can\u2019t survive, impacting entire ecosystems.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: This leads to dead zones where fish and plants can\u2019t survive, impacting entire ecosystems.",
+    "stock_footage_query": "",
+    "text_overlay": "This leads to dead",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Understanding eutrophication helps us combat water pollution and protect our water bodies.",
+    "visual_description": "Payoff visual: Understanding eutrophication helps us combat water pollution and protect our water bodies.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding eutrophication helps us combat water pollution and protect our water bodies.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding eutrophication helps us combat water pollution and protect our water bodies.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding eutrophication helps us",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Want to learn more about our planet? Follow for more scientific insights!",
+    "visual_description": "Cta visual: Want to learn more about our planet? Follow for more scientific insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to learn more about our planet? Follow for more scientific insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to learn more about our planet? Follow for more scientific insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "title": "Lidar mapping",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Unveil the fascinating science behind lidar mapping and its real-world applications.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about lidar mapping than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Lidar mapping uses lasers to measure distances, creating precise 3D models of our world.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "facts"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But, did you know it can reveal hidden structures beneath dense forests?",
+      "emotion": "wonder",
+      "delivery": "excited",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows lidar mapping uncovers ancient ruins, even in the Amazon!",
+      "emotion": "amazement",
+      "delivery": "enthusiastic",
+      "retention_device": "surprise"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 42.0,
+      "segment_type": "payoff",
+      "voiceover": "This technology helps us see the unseen, reshaping archaeology and conservation efforts.",
+      "emotion": "inspiration",
+      "delivery": "confident",
+      "retention_device": "reveal"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 42.0,
+      "end_time": 56.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more tech innovations? Hit that like button and subscribe!",
+      "emotion": "encouragement",
+      "delivery": "inviting",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about lidar mapping than social media does. Lidar mapping uses lasers to measure distances, creating precise 3D models of our world. But, did you know it can reveal hidden structures beneath dense forests? Research shows lidar mapping uncovers ancient ruins, even in the Amazon! This technology helps us see the unseen, reshaping archaeology and conservation efforts. Curious about more tech innovations? Hit that like button and subscribe!",
+  "call_to_action": "Curious about more tech innovations? Hit that like button and subscribe!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:47:32.915910+00:00",
+  "source": "ai"
+}

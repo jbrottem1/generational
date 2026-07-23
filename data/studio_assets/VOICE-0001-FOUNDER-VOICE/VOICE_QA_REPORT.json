@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-07-15T23:45:16.691546+00:00",
+  "asset_id": "VOICE-0001",
+  "voice_id_suffix": "\u2026HiD3SP",
+  "checks": [
+    {
+      "id": "elevenlabs_api_key_loaded",
+      "ok": true,
+      "detail": "ELEVENLABS_API_KEY"
+    },
+    {
+      "id": "elevenlabs_api_connected",
+      "ok": true,
+      "detail": "AUTHENTICATED"
+    },
+    {
+      "id": "api_healthy",
+      "ok": true,
+      "detail": "voices/live narration ready"
+    },
+    {
+      "id": "voice_id_exists",
+      "ok": true,
+      "detail": "id_suffix=\u2026HiD3SP"
+    },
+    {
+      "id": "voice_available",
+      "ok": true,
+      "detail": "cloned Founder Voice listed"
+    },
+    {
+      "id": "audio_generated_successfully",
+      "ok": true,
+      "detail": "provider=elevenlabs"
+    },
+    {
+      "id": "quota_available",
+      "ok": true,
+      "detail": "tts_probe"
+    },
+    {
+      "id": "reject_fallback_when_available",
+      "ok": true,
+      "detail": "ELEVENLABS_ALLOW_FALLBACK=0 recommended"
+    }
+  ],
+  "passed": true,
+  "production_ready": true,
+  "blockers": []
+}

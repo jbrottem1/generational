@@ -13,7 +13,7 @@ downstream adversarial review.
 
 from __future__ import annotations
 
-from engines.heuristics import (
+from core.heuristics import (
     CURIOSITY_WORDS,
     EMOTION_WORDS,
     SURPRISE_WORDS,
@@ -64,6 +64,11 @@ def _retention_engineering(variant: ScriptVariant) -> int:
     long_sentences = [s for s in sentences(variant.core_story) if len(s.split()) > 28]
     if long_sentences:
         score -= 10 * min(len(long_sentences), 2)
+    # Blend in the variant's own retention model when it has been built —
+    # predicted watch-through is the best signal we have for this factor.
+    model = variant.retention_model or {}
+    if "retention_score" in model:
+        score = round(0.6 * score + 0.4 * model["retention_score"])
     return clamp(score)
 
 

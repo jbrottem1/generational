@@ -1,0 +1,291 @@
+{
+  "title": "How the seasons work",
+  "idea_id": "seasons-001",
+  "overall_score": 95,
+  "decision": "APPROVE",
+  "passed": true,
+  "categories": {
+    "research_accuracy": {
+      "key": "research_accuracy",
+      "label": "Research Accuracy",
+      "score": 99,
+      "confidence": 0.95,
+      "passed": true,
+      "details": {
+        "research_confidence": 92.0,
+        "citation_count": 4,
+        "unsupported_claims": 0,
+        "sources_checked": [
+          "https://earthobservatory.nasa.gov/",
+          "NOAA Climate"
+        ]
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "evidence": {
+      "key": "evidence",
+      "label": "Evidence",
+      "score": 100,
+      "confidence": 0.75,
+      "passed": true,
+      "details": {
+        "real_image_pct": 100.0,
+        "ai_image_pct": 0.0,
+        "authentic_hit_count": 5,
+        "ai_fallback_count": 0,
+        "missing_evidence": [],
+        "scene_count": 2
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "visuals": {
+      "key": "visuals",
+      "label": "Visuals",
+      "score": 95,
+      "confidence": 0.8,
+      "passed": true,
+      "details": {
+        "visual_score": 95.0,
+        "scene_count": 2,
+        "empty_scenes": 0,
+        "qc_hard_fails": 0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "typography": {
+      "key": "typography",
+      "label": "Typography",
+      "score": 94,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "has_captions": true,
+        "layout": {}
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "annotations": {
+      "key": "annotations",
+      "label": "Annotations",
+      "score": 100,
+      "confidence": 0.75,
+      "passed": true,
+      "details": {
+        "annotation_count": 2,
+        "narration_tied": 2,
+        "untied": 0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "cinematography": {
+      "key": "cinematography",
+      "label": "Cinematography",
+      "score": 93,
+      "confidence": 0.8,
+      "passed": true,
+      "details": {
+        "attention_score": 93.0,
+        "scene_count": 2,
+        "has_animation_handoff": true,
+        "pacing": "brisk"
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "audio": {
+      "key": "audio",
+      "label": "Audio",
+      "score": 90,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "has_audio_file": true,
+        "music_balance": 0.35
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "narration": {
+      "key": "narration",
+      "label": "Narration",
+      "score": 94,
+      "confidence": 0.75,
+      "passed": true,
+      "details": {
+        "script_quality": 94.0,
+        "hook": 94.0,
+        "chars": 61
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "synchronization": {
+      "key": "synchronization",
+      "label": "Synchronization",
+      "score": 90,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "segment_count": 2,
+        "missing_ann_timing": 0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "educational_value": {
+      "key": "educational_value",
+      "label": "Educational Value",
+      "score": 91,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "clarity": 93.0,
+        "logical_progression": 92.0,
+        "engagement": 92.0,
+        "knowledge_density": 88.0,
+        "retention": 91.0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "psychology": {
+      "key": "psychology",
+      "label": "Psychology",
+      "score": 93,
+      "confidence": 0.75,
+      "passed": true,
+      "details": {
+        "predicted_metrics": {
+          "ctr": 7.5,
+          "avg_watch_time_sec": 48.0,
+          "drop_off_risk": 9.0,
+          "shareability": 88.0,
+          "replay_probability": 86.0,
+          "subscriber_conversion": 40.0
+        },
+        "human_attention_score": 92.0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "seo": {
+      "key": "seo",
+      "label": "SEO",
+      "score": 100,
+      "confidence": 0.8,
+      "passed": true,
+      "details": {
+        "title_len": 43,
+        "description_len": 52,
+        "keyword_count": 4,
+        "hashtag_count": 2
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "platform_compliance": {
+      "key": "platform_compliance",
+      "label": "Platform Compliance",
+      "score": 100,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "ready_count": 8,
+        "aspect_ratio": "9:16",
+        "duration_sec": 45.0
+      },
+      "issues": [],
+      "corrections_required": []
+    }
+  },
+  "scores": {
+    "research_accuracy": 99,
+    "evidence": 100,
+    "visuals": 95,
+    "typography": 94,
+    "annotations": 100,
+    "cinematography": 93,
+    "audio": 90,
+    "narration": 94,
+    "synchronization": 90,
+    "educational_value": 91,
+    "psychology": 93,
+    "seo": 100,
+    "platform_compliance": 100
+  },
+  "platform_ready": {
+    "youtube": true,
+    "youtube_shorts": true,
+    "tiktok": true,
+    "instagram_reels": true,
+    "facebook": true,
+    "pinterest": true,
+    "linkedin": true,
+    "x": true
+  },
+  "platform_ready_detail": [
+    {
+      "platform": "youtube",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "youtube_shorts",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "tiktok",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "instagram_reels",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "facebook",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "pinterest",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "linkedin",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "x",
+      "ready": true,
+      "reasons": []
+    }
+  ],
+  "revision_requests": [],
+  "hard_fails": [],
+  "warnings": [],
+  "predicted_metrics": {
+    "ctr": 7.5,
+    "avg_watch_time_sec": 48.0,
+    "drop_off_risk": 9.0,
+    "shareability": 88.0,
+    "replay_probability": 86.0,
+    "subscriber_conversion": 40.0
+  },
+  "sources_checked": [
+    "https://earthobservatory.nasa.gov/",
+    "NOAA Climate"
+  ],
+  "created_at": "2026-07-13T03:20:32.992609+00:00",
+  "version": "1.0.0",
+  "report_markdown": "# Production Quality Report\n\n**Overall Score:** 95\n**Decision:** APPROVE\n\n- Research Accuracy: 99\n- Evidence: 100\n- Visuals: 95\n- Typography: 94\n- Annotations: 100\n- Cinematography: 93\n- Audio: 90\n- Narration: 94\n- Synchronization: 90\n- Educational Value: 91\n- Psychology: 93\n- SEO: 100\n\n## Platform Ready\n- \u2713 youtube\n- \u2713 youtube_shorts\n- \u2713 tiktok\n- \u2713 instagram_reels\n- \u2713 facebook\n- \u2713 pinterest\n- \u2713 linkedin\n- \u2713 x"
+}

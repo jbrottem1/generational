@@ -1,0 +1,84 @@
+{
+  "title": "mRNA vs Traditional Vaccines",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the key differences between mRNA and traditional vaccines.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "One delivers instructions; the other delivers a piece of the pathogen.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "mRNA vaccines teach our cells how to fight an infection by delivering genetic instructions.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Traditional vaccines, however, often use weakened or inactivated parts of the virus.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "comparison"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies suggest mRNA could be faster to develop than traditional methods.",
+      "emotion": "intrigue",
+      "delivery": "clear and direct",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "But both types can effectively train our immune systems.",
+      "emotion": "curiosity",
+      "delivery": "insightful",
+      "retention_device": "reversal"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "Ultimately, each platform has its advantages. Understanding them helps us make informed choices.",
+      "emotion": "clarity",
+      "delivery": "concise",
+      "retention_device": "key takeaway"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about vaccines? Like and follow for more science insights!",
+      "emotion": "encouragement",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "One delivers instructions; the other delivers a piece of the pathogen. mRNA vaccines teach our cells how to fight an infection by delivering genetic instructions. Traditional vaccines, however, often use weakened or inactivated parts of the virus. Studies suggest mRNA could be faster to develop than traditional methods. But both types can effectively train our immune systems. Ultimately, each platform has its advantages. Understanding them helps us make informed choices. Curious about vaccines? Like and follow for more science insights!",
+  "call_to_action": "Curious about vaccines? Like and follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:00:18.442274+00:00",
+  "source": "ai"
+}

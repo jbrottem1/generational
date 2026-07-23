@@ -1,0 +1,74 @@
+{
+  "title": "Forest plots idea",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the intriguing concept of forest plots and their significance in science.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about forest plots.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Forest plots are visual tools for comparing the results of multiple studies.",
+      "emotion": "intrigue",
+      "delivery": "conversational",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "They show the effect sizes and confidence intervals, almost like a scientific scoreboard.",
+      "emotion": "engagement",
+      "delivery": "enthusiastic",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 28.0,
+      "segment_type": "evidence",
+      "voiceover": "But be cautious\u2014preliminary research can skew these visuals.",
+      "emotion": "alertness",
+      "delivery": "serious",
+      "retention_device": "pause for thought"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 28.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding forest plots helps us make sense of complex data, guiding better decisions in science.",
+      "emotion": "satisfaction",
+      "delivery": "clear and confident",
+      "retention_device": "insight revelation"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more science insights? Hit subscribe for more!",
+      "emotion": "inviting",
+      "delivery": "upbeat",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about forest plots. Forest plots are visual tools for comparing the results of multiple studies. They show the effect sizes and confidence intervals, almost like a scientific scoreboard. But be cautious\u2014preliminary research can skew these visuals. Understanding forest plots helps us make sense of complex data, guiding better decisions in science. Curious about more science insights? Hit subscribe for more!",
+  "call_to_action": "Hit subscribe for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:26:56.539447+00:00",
+  "source": "ai"
+}

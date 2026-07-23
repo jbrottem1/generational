@@ -1,0 +1,74 @@
+{
+  "title": "Ribosomes Build Your Proteins",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore how ribosomes work as molecular factories to assemble proteins.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Did you know your cells have tiny factories? They're called ribosomes!",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "These molecular machines read RNA, the instructions for building proteins.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "They grab amino acids, the building blocks of life, and piece them together.",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "visual cue"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Each ribosome can create a protein in just minutes, crucial for cell function.",
+      "emotion": "curiosity",
+      "delivery": "serious",
+      "retention_device": "fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 36.0,
+      "segment_type": "payoff",
+      "voiceover": "Without ribosomes, our cells would be lifeless, unable to perform essential tasks.",
+      "emotion": "curiosity",
+      "delivery": "impactful",
+      "retention_device": "revelation"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 36.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into cell biology? Hit that follow button!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Did you know your cells have tiny factories? They're called ribosomes! These molecular machines read RNA, the instructions for building proteins. They grab amino acids, the building blocks of life, and piece them together. Each ribosome can create a protein in just minutes, crucial for cell function. Without ribosomes, our cells would be lifeless, unable to perform essential tasks. Want to dive deeper into cell biology? Hit that follow button!",
+  "call_to_action": "Want to dive deeper into cell biology? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:08:37.415680+00:00",
+  "source": "ai"
+}

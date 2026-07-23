@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "The amygdala is more than just a fear button.",
+    "visual_description": "Hook visual: The amygdala is more than just a fear button.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: The amygdala is more than just a fear button.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: The amygdala is more than just a fear button.",
+    "stock_footage_query": "",
+    "text_overlay": "The amygdala is more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "It helps process threats and emotions, playing a key role in our survival.",
+    "visual_description": "Context visual: It helps process threats and emotions, playing a key role in our survival.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: It helps process threats and emotions, playing a key role in our survival.",
+    "ai_video_prompt": "Cinematic motion: Context visual: It helps process threats and emotions, playing a key role in our survival.",
+    "stock_footage_query": "",
+    "text_overlay": "It helps process threats",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But what about joy, sadness, or even excitement? The amygdala is involved.",
+    "visual_description": "Escalation visual: But what about joy, sadness, or even excitement? The amygdala is involved.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But what about joy, sadness, or even excitement? The amygdala is involved.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But what about joy, sadness, or even excitement? The amygdala is involved.",
+    "stock_footage_query": "",
+    "text_overlay": "But what about joy,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show it interacts with the prefrontal cortex to assess emotional responses.",
+    "visual_description": "Evidence visual: Studies show it interacts with the prefrontal cortex to assess emotional responses.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show it interacts with the prefrontal cortex to assess emotional responses.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show it interacts with the prefrontal cortex to assess emotional responses.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show it interacts",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Understanding this can change how we perceive our own emotions.",
+    "visual_description": "Payoff visual: Understanding this can change how we perceive our own emotions.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding this can change how we perceive our own emotions.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding this can change how we perceive our own emotions.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding this can change",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 22.0,
+    "narration": "Curious about your brain? Hit follow for more insights!",
+    "visual_description": "Cta visual: Curious about your brain? Hit follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about your brain? Hit follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about your brain? Hit follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about your brain?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

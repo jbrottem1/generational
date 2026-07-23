@@ -1,0 +1,117 @@
+{
+  "run_index": 119,
+  "topic": "What Herd Immunity Actually Means",
+  "asset_id": "sp100w2_vaccines_herd_001",
+  "seo_score": 22.0,
+  "seo": {
+    "demand": 4,
+    "evergreen": 4,
+    "education": 5,
+    "interest": 4,
+    "short_form": 5
+  },
+  "runtime_sec": 19.85,
+  "production_ok": true,
+  "production_error": "",
+  "success": true,
+  "qc_score": 100,
+  "qc_passed": true,
+  "stages": [
+    {
+      "stage": "idea",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "script",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "scenes",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "visual_prompts",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "images",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "video_clips",
+      "status": "skipped",
+      "error": ""
+    },
+    {
+      "stage": "voice",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "music",
+      "status": "skipped",
+      "error": ""
+    },
+    {
+      "stage": "sfx",
+      "status": "skipped",
+      "error": ""
+    },
+    {
+      "stage": "captions",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "timeline",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "render",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "quality",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "export",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "publish",
+      "status": "skipped",
+      "error": ""
+    }
+  ],
+  "cost": {
+    "estimated_cost_usd": 0.0175,
+    "breakdown": {
+      "openai_tts_usd": 0.0075,
+      "openai_chat_usd": 0.01,
+      "openai_images_usd": 0.0
+    }
+  },
+  "mp4_path": "data/productions/sp100w2_vaccines_herd_001/render.mp4",
+  "mp4_bytes": 409295,
+  "mock_render": false,
+  "final_export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/test run generational/2026-07-10_11-49-44_What_Herd_Immunity_Actually_Means.mp4",
+  "title": "What Herd Immunity Actually Means",
+  "description": "Explain basic reproduction number and coverage thresholds. Ground in epidemiology/CDC education. Avoid politicization.",
+  "hashtags": [
+    "#vaccines",
+    "#epidemiology",
+    "#science",
+    "#shorts"
+  ],
+  "thumbnail_concept": "community shield protecting vulnerable"
+}

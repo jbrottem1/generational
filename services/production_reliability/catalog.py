@@ -1,0 +1,86 @@
+"""Ten distinct validation productions across categories (architecture frozen)."""
+
+from __future__ import annotations
+
+RELIABILITY_CATALOG: tuple[dict, ...] = (
+    {
+        "reliability_id": "rel_01_biology",
+        "category": "Biology",
+        "topic": "How mitochondria make ATP",
+        "length_sec": 40,
+        "style": "educational",
+        "audience": "curious adults",
+    },
+    {
+        "reliability_id": "rel_02_physics",
+        "category": "Physics",
+        "topic": "Why light bends in water",
+        "length_sec": 40,
+        "style": "educational",
+        "audience": "students",
+    },
+    {
+        "reliability_id": "rel_03_astronomy",
+        "category": "Astronomy",
+        "topic": "How black holes bend spacetime",
+        "length_sec": 45,
+        "style": "documentary",
+        "audience": "general",
+    },
+    {
+        "reliability_id": "rel_04_history",
+        "category": "History",
+        "topic": "How the printing press changed Europe",
+        "length_sec": 45,
+        "style": "educational",
+        "audience": "general",
+    },
+    {
+        "reliability_id": "rel_05_medicine",
+        "category": "Medicine",
+        "topic": "How vaccines teach the immune system",
+        "length_sec": 40,
+        "style": "educational",
+        "audience": "curious adults",
+    },
+    {
+        "reliability_id": "rel_06_ai",
+        "category": "AI",
+        "topic": "How neural networks learn from data",
+        "length_sec": 40,
+        "style": "explainer",
+        "audience": "tech curious",
+    },
+    {
+        "reliability_id": "rel_07_nature",
+        "category": "Nature",
+        "topic": "Why forests create their own rain",
+        "length_sec": 40,
+        "style": "documentary",
+        "audience": "general",
+    },
+    {
+        "reliability_id": "rel_08_engineering",
+        "category": "Engineering",
+        "topic": "How suspension bridges distribute force",
+        "length_sec": 40,
+        "style": "educational",
+        "audience": "students",
+    },
+    {
+        "reliability_id": "rel_09_psychology",
+        "category": "Psychology",
+        "topic": "How habits form in the brain",
+        "length_sec": 40,
+        "style": "explainer",
+        "audience": "curious adults",
+    },
+    {
+        "reliability_id": "rel_10_ocean",
+        "category": "Ocean Science",
+        "topic": "How deep ocean currents move heat",
+        "length_sec": 45,
+        "style": "documentary",
+        "audience": "general",
+    },
+)

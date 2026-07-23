@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "score": 100,
+  "failures": [],
+  "rejects_hit": [],
+  "reject_catalog": [
+    "floating_actors",
+    "sliding_feet",
+    "object_clipping",
+    "broken_collisions",
+    "weightless_movement",
+    "hands_missing_targets",
+    "unrealistic_balance"
+  ],
+  "success": "Every actor behaves like a physical being inside a physical world. Interactions appear believable and consistent across every production.",
+  "mp4_required": true,
+  "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for float, slide, clip, and missed hand targets."
+}

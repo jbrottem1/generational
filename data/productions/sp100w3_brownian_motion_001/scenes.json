@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 3.0,
+    "narration": "Ever wonder why pollen dances in water? It's not magic\u2014it's atoms!",
+    "visual_description": "Hook visual: Ever wonder why pollen dances in water? It's not magic\u2014it's atoms!",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever wonder why pollen dances in water? It's not magic\u2014it's atoms!",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever wonder why pollen dances in water? It's not magic\u2014it's atoms!",
+    "stock_footage_query": "",
+    "text_overlay": "Ever wonder why pollen",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 3.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 7.0,
+    "narration": "This jittery movement is called Brownian motion, named after botanist Robert Brown.",
+    "visual_description": "Context visual: This jittery movement is called Brownian motion, named after botanist Robert Brown.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This jittery movement is called Brownian motion, named after botanist Robert Brown.",
+    "ai_video_prompt": "Cinematic motion: Context visual: This jittery movement is called Brownian motion, named after botanist Robert Brown.",
+    "stock_footage_query": "",
+    "text_overlay": "This jittery movement is",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 3.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 3.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Brown noticed that pollen grains zigzagged due to tiny, invisible water molecules colliding with them.",
+    "visual_description": "Escalation visual: Brown noticed that pollen grains zigzagged due to tiny, invisible water molecules colliding with them.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Brown noticed that pollen grains zigzagged due to tiny, invisible water molecules colliding with them.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Brown noticed that pollen grains zigzagged due to tiny, invisible water molecules colliding with them.",
+    "stock_footage_query": "",
+    "text_overlay": "Brown noticed that pollen",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This was some of the first evidence for atoms, changing how we understand matter!",
+    "visual_description": "Evidence visual: This was some of the first evidence for atoms, changing how we understand matter!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: This was some of the first evidence for atoms, changing how we understand matter!",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: This was some of the first evidence for atoms, changing how we understand matter!",
+    "stock_footage_query": "",
+    "text_overlay": "This was some of",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "Brownian motion proves that even the smallest particles can have a big impact!",
+    "visual_description": "Payoff visual: Brownian motion proves that even the smallest particles can have a big impact!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Brownian motion proves that even the smallest particles can have a big impact!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Brownian motion proves that even the smallest particles can have a big impact!",
+    "stock_footage_query": "",
+    "text_overlay": "Brownian motion proves that",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Curious about more scientific wonders? Like and subscribe for more!",
+    "visual_description": "Cta visual: Curious about more scientific wonders? Like and subscribe for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more scientific wonders? Like and subscribe for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more scientific wonders? Like and subscribe for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more scientific",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

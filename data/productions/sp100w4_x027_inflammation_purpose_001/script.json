@@ -1,0 +1,74 @@
+{
+  "title": "Inflammation Purpose",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the essential role of inflammation in our bodies and its implications.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about inflammation purpose.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Inflammation is often seen as a villain, but it\u2019s actually vital for healing.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "When you get injured, inflammation kicks in to protect and repair damaged tissue.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show this process can prevent infections and promote recovery.",
+      "emotion": "curiosity",
+      "delivery": "authoritative",
+      "retention_device": "retention hook"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "However, chronic inflammation can lead to serious health issues, hinting at a double-edged sword.",
+      "emotion": "curiosity",
+      "delivery": "dramatic",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 50.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more about how to manage inflammation? Follow for insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "closing inquiry"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about inflammation purpose. Inflammation is often seen as a villain, but it\u2019s actually vital for healing. When you get injured, inflammation kicks in to protect and repair damaged tissue. Studies show this process can prevent infections and promote recovery. However, chronic inflammation can lead to serious health issues, hinting at a double-edged sword. Want to learn more about how to manage inflammation? Follow for insights!",
+  "call_to_action": "Follow for insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:17:57.319874+00:00",
+  "source": "ai"
+}

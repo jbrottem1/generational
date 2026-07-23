@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: What if we could sniff the air of distant planets?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: When an exoplanet crosses its star, starlight filters through its atmosphere.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Evidence visual: This process, called transmission spectroscopy, helps us detect molecules like water and methane.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Escalation visual: Each molecule absorbs specific wavelengths, acting like a cosmic fingerprint.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: This groundbreaking method could reveal the potential for life beyond Earth.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about what else we can discover in the cosmos? Hit like and follow for more insights!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: What if we could sniff the air of distant planets?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: When an exoplanet crosses its star, starlight filters through its atmosphere.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Evidence visual: This process, called transmission spectroscopy, helps us detect molecules like water and methane.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Escalation visual: Each molecule absorbs specific wavelengths, acting like a cosmic fingerprint.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: This groundbreaking method could reveal the potential for life beyond Earth.",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about what else we can discover in the cosmos? Hit like and follow for more insights!",
+      "duration_sec": 22.0
+    }
+  ]
+}

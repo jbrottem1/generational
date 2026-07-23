@@ -1,0 +1,58 @@
+{
+  "character_id": "FOUNDER_001",
+  "architecture": "clothing_separated_from_body",
+  "default_outfit": "travel_coat",
+  "outfits": [
+    {
+      "id": "travel_coat",
+      "layers": [
+        "base_layer",
+        "travel_coat",
+        "boots"
+      ],
+      "separated_from_body": true,
+      "cloth_sim": true
+    },
+    {
+      "id": "casual_layer",
+      "layers": [
+        "base_garment",
+        "casual_layer"
+      ],
+      "separated_from_body": true,
+      "cloth_sim": true
+    },
+    {
+      "id": "formal_address",
+      "layers": [
+        "base_garment",
+        "formal_address"
+      ],
+      "separated_from_body": true,
+      "cloth_sim": true
+    }
+  ],
+  "outfit_ids": [
+    "travel_coat",
+    "casual_layer",
+    "formal_address"
+  ],
+  "simulate_as_fabric": true,
+  "responds_to": [
+    "walk",
+    "run",
+    "arm_move",
+    "sit",
+    "wind",
+    "gravity",
+    "turn"
+  ],
+  "forbid": [
+    "frozen_fabric",
+    "fabric_leads_body",
+    "limb_clipping"
+  ],
+  "inheritable_architecture": true,
+  "existing_ref": null,
+  "reusable": true
+}

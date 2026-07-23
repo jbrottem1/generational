@@ -1,0 +1,94 @@
+{
+  "primary": {
+    "name": "Medical White",
+    "hex": "#F4F7FA",
+    "rgb": [
+      244,
+      247,
+      250
+    ]
+  },
+  "secondary": {
+    "name": "Premium Titanium",
+    "hex": "#8A939E",
+    "rgb": [
+      138,
+      147,
+      158
+    ]
+  },
+  "navy_underlayer": {
+    "name": "Deep Navy",
+    "hex": "#1B2A4A",
+    "rgb": [
+      27,
+      42,
+      74
+    ]
+  },
+  "accent": {
+    "name": "Warm Trust Cyan",
+    "hex": "#3BA7E0",
+    "rgb": [
+      59,
+      167,
+      224
+    ]
+  },
+  "deep_accent": {
+    "name": "Deep Clinical Blue",
+    "hex": "#1A5F8A",
+    "rgb": [
+      26,
+      95,
+      138
+    ]
+  },
+  "chassis_shadow": {
+    "name": "Chassis Shadow",
+    "hex": "#2C343D",
+    "rgb": [
+      44,
+      52,
+      61
+    ]
+  },
+  "eye_core": {
+    "name": "Intelligent Eye Core",
+    "hex": "#7FD4FF",
+    "rgb": [
+      127,
+      212,
+      255
+    ]
+  },
+  "interface_ok": {
+    "name": "Vitals OK",
+    "hex": "#3DDC97",
+    "rgb": [
+      61,
+      220,
+      151
+    ]
+  },
+  "interface_warn": {
+    "name": "Caution",
+    "hex": "#F0C040",
+    "rgb": [
+      240,
+      192,
+      64
+    ]
+  },
+  "emergency": {
+    "name": "Alert",
+    "hex": "#E85D4C",
+    "rgb": [
+      232,
+      93,
+      76
+    ]
+  },
+  "forbid_random_palette_drift": true,
+  "master_concept_art": "data/studio_assets/DOCTOR_001/MASTER_CONCEPT_ART/"
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Xenotransplantation Progress",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A deep dive into the latest advancements in xenotransplantation and its implications.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if animal organs could save human lives?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Xenotransplantation is the transplantation of animal organs into humans. It sounds sci-fi, but science is making strides.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Researchers are using gene editing to make organs from pigs more compatible, reducing rejection risks.",
+      "emotion": "curiosity",
+      "delivery": "building intensity",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Recent trials have shown promise, but uncertainties remain\u2014like potential viral transmissions.",
+      "emotion": "curiosity",
+      "delivery": "serious tone",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "So, while we\u2019re close to breakthroughs, caution is key. Reliable solutions take time.",
+      "emotion": "curiosity",
+      "delivery": "hopeful yet cautious",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about the future of organ transplants? Like and follow for more insights!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "natural CTA"
+    }
+  ],
+  "full_voiceover": "What if animal organs could save human lives? Xenotransplantation is the transplantation of animal organs into humans. It sounds sci-fi, but science is making strides. Researchers are using gene editing to make organs from pigs more compatible, reducing rejection risks. Recent trials have shown promise, but uncertainties remain\u2014like potential viral transmissions. So, while we\u2019re close to breakthroughs, caution is key. Reliable solutions take time. Curious about the future of organ transplants? Like and follow for more insights!",
+  "call_to_action": "Like and follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:06:02.072761+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Did you know your brain is super active while you sleep?",
+    "visual_description": "Hook visual: Did you know your brain is super active while you sleep?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Did you know your brain is super active while you sleep?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Did you know your brain is super active while you sleep?",
+    "stock_footage_query": "",
+    "text_overlay": "Did you know your",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "These bursts of activity, called sleep spindles, are crucial for memory.",
+    "visual_description": "Context visual: These bursts of activity, called sleep spindles, are crucial for memory.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: These bursts of activity, called sleep spindles, are crucial for memory.",
+    "ai_video_prompt": "Cinematic motion: Context visual: These bursts of activity, called sleep spindles, are crucial for memory.",
+    "stock_footage_query": "",
+    "text_overlay": "These bursts of activity,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Recent studies suggest they help strengthen what we learn while awake.",
+    "visual_description": "Escalation visual: Recent studies suggest they help strengthen what we learn while awake.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Recent studies suggest they help strengthen what we learn while awake.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Recent studies suggest they help strengthen what we learn while awake.",
+    "stock_footage_query": "",
+    "text_overlay": "Recent studies suggest they",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Research shows a clear link: more sleep spindles equal better memory retention.",
+    "visual_description": "Evidence visual: Research shows a clear link: more sleep spindles equal better memory retention.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows a clear link: more sleep spindles equal better memory retention.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows a clear link: more sleep spindles equal better memory retention.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows a clear",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Imagine harnessing this power for learning!",
+    "visual_description": "Payoff visual: Imagine harnessing this power for learning!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Imagine harnessing this power for learning!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Imagine harnessing this power for learning!",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine harnessing this power",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Want to boost your memory? Prioritize your sleep! Follow for more insights.",
+    "visual_description": "Cta visual: Want to boost your memory? Prioritize your sleep! Follow for more insights.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to boost your memory? Prioritize your sleep! Follow for more insights.",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to boost your memory? Prioritize your sleep! Follow for more insights.",
+    "stock_footage_query": "",
+    "text_overlay": "Want to boost your",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

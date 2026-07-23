@@ -1,0 +1,16 @@
+{
+  "ok": false,
+  "reason": "No skeletal frames rendered \u2014 contact checks not executable",
+  "required_checks": [
+    "foot_floor_contact",
+    "hand_object_contact",
+    "object_attachment",
+    "collision_results"
+  ],
+  "results": {
+    "foot_floor_contact": "unavailable",
+    "hand_object_contact": "unavailable",
+    "object_attachment": "unavailable",
+    "collision_results": "unavailable"
+  }
+}

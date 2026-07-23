@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "DDT: A chemical that changed everything. But at what cost?",
+    "visual_description": "Hook visual: DDT: A chemical that changed everything. But at what cost?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: DDT: A chemical that changed everything. But at what cost?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: DDT: A chemical that changed everything. But at what cost?",
+    "stock_footage_query": "",
+    "text_overlay": "DDT: A chemical that",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "intrigue",
+    "length_sec": 8.0,
+    "narration": "In the 1940s, DDT was hailed as a miracle pesticide, eliminating pests and saving crops.",
+    "visual_description": "Context visual: In the 1940s, DDT was hailed as a miracle pesticide, eliminating pests and saving crops.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: In the 1940s, DDT was hailed as a miracle pesticide, eliminating pests and saving crops.",
+    "ai_video_prompt": "Cinematic motion: Context visual: In the 1940s, DDT was hailed as a miracle pesticide, eliminating pests and saving crops.",
+    "stock_footage_query": "",
+    "text_overlay": "In the 1940s, DDT",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "But soon, reports emerged linking DDT to environmental harm and health issues.",
+    "visual_description": "Escalation visual: But soon, reports emerged linking DDT to environmental harm and health issues.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But soon, reports emerged linking DDT to environmental harm and health issues.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But soon, reports emerged linking DDT to environmental harm and health issues.",
+    "stock_footage_query": "",
+    "text_overlay": "But soon, reports emerged",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "alarm",
+    "length_sec": 10.0,
+    "narration": "Studies showed DDT's persistence in the environment, affecting wildlife and ecosystems.",
+    "visual_description": "Evidence visual: Studies showed DDT's persistence in the environment, affecting wildlife and ecosystems.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies showed DDT's persistence in the environment, affecting wildlife and ecosystems.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies showed DDT's persistence in the environment, affecting wildlife and ecosystems.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies showed DDT's persistence",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 28.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "satisfaction",
+    "length_sec": 20.0,
+    "narration": "In 1972, the U.S. banned DDT, reflecting a shift in science and policy, balancing pest control and health.",
+    "visual_description": "Payoff visual: In 1972, the U.S. banned DDT, reflecting a shift in science and policy, balancing pest control and health.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: In 1972, the U.S. banned DDT, reflecting a shift in science and policy, balancing pest control and health.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: In 1972, the U.S. banned DDT, reflecting a shift in science and policy, balancing pest control and health.",
+    "stock_footage_query": "",
+    "text_overlay": "In 1972, the U.S.",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 28.0,
+      "end_sec": 48.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 28.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "enthusiasm",
+    "length_sec": 12.0,
+    "narration": "Want to dive deeper into science? Like and follow for more insights!",
+    "visual_description": "Cta visual: Want to dive deeper into science? Like and follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into science? Like and follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into science? Like and follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 48.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 48.0
+    }
+  }
+]

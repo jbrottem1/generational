@@ -1,0 +1,40 @@
+{
+  "character_id": "DOCTOR_001",
+  "surfaces": {
+    "polymer_shell": {
+      "character_id": "DOCTOR_001",
+      "type": "soft_white_medical_polymer_over_titanium",
+      "albedo": "#F4F7FA",
+      "roughness": 0.45,
+      "specular": 0.35,
+      "subsurface_hint": 0.12,
+      "micro_detail": [
+        "soft_seam_lines",
+        "matte_clinical_finish"
+      ],
+      "forbid": [
+        "wet_horror_sheen",
+        "cheap_plastic_clipart"
+      ]
+    },
+    "titanium_trim": {
+      "albedo": "#8A939E",
+      "roughness": 0.35,
+      "metalness": 0.75
+    },
+    "eye_core_glass": {
+      "albedo": "#7FD4FF",
+      "roughness": 0.15,
+      "emission": 0.55
+    },
+    "coat_weave": {
+      "albedo": "#F4F7FA",
+      "roughness": 0.55,
+      "fabric": true
+    },
+    "led_accent": {
+      "albedo": "#3BA7E0",
+      "emission": 0.7
+    }
+  }
+}

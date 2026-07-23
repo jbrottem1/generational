@@ -1,0 +1,157 @@
+{
+  "schema_version": 3,
+  "os_version": "2.6",
+  "layer": "pre_production",
+  "project_id": "turtle_202",
+  "job_id": "turtle_202",
+  "title": "The Origin of Turtles",
+  "episode": "202",
+  "status": "ready_to_render",
+  "message": "Local render authorized. Export to ~/Desktop/AI Start-Up/Videos/.",
+  "execution_mode": "local",
+  "prepared_at": "2026-07-12T22:20:24.979131+00:00",
+  "domain": "Biology",
+  "secondary_categories": [],
+  "script": {
+    "hook": "Have you ever wondered where turtles came from?",
+    "takeaway": "The turtle's shell evolved step by step over millions of years.",
+    "main_concept": "Turtle shell evolution from early reptiles; fossil intermediates",
+    "beats": [
+      {
+        "text": "Have you ever wondered where turtles came from?",
+        "pause_after_sec": 0.45
+      },
+      {
+        "text": "Turtles evolved from early reptiles over two hundred million years ago.",
+        "pause_after_sec": 0.4
+      },
+      {
+        "text": "Their shells didn't appear all at once \u2014 they developed gradually through evolution.",
+        "pause_after_sec": 0.45
+      },
+      {
+        "text": "Fossils show intermediate forms that help scientists trace the transition.",
+        "pause_after_sec": 0.4
+      },
+      {
+        "text": "The turtle's shell wasn't invented overnight\u2014it evolved step by step over millions of years.",
+        "pause_after_sec": 0.35
+      }
+    ],
+    "sources": [
+      "Benton & Donoghue (2007) \u2014 calibrating turtle origins in deep time",
+      "Lyson et al. \u2014 fossil intermediates in shell evolution (Eunotosaurus / Proganochelys lineage)",
+      "Modern paleontology consensus: shells assembled gradually over tens of millions of years"
+    ]
+  },
+  "timing": {
+    "beats": [
+      {
+        "text": "Have you ever wondered where turtles came from?",
+        "pause_after_sec": 0.45
+      },
+      {
+        "text": "Turtles evolved from early reptiles over two hundred million years ago.",
+        "pause_after_sec": 0.4
+      },
+      {
+        "text": "Their shells didn't appear all at once \u2014 they developed gradually through evolution.",
+        "pause_after_sec": 0.45
+      },
+      {
+        "text": "Fossils show intermediate forms that help scientists trace the transition.",
+        "pause_after_sec": 0.4
+      },
+      {
+        "text": "The turtle's shell wasn't invented overnight\u2014it evolved step by step over millions of years.",
+        "pause_after_sec": 0.35
+      }
+    ],
+    "target_duration_sec": {
+      "min": 15,
+      "max": 32
+    },
+    "fps": 24
+  },
+  "assets": {
+    "images": [
+      {
+        "image_id": "green_sea_turtle",
+        "path": "data/reality/images/green_sea_turtle.jpg",
+        "license": "CC-BY-SA",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Chelonia_mydas_is_going_for_the_air_edit.jpg",
+        "credit": "Wikimedia Commons",
+        "organism": "Green sea turtle"
+      },
+      {
+        "image_id": "turtle_fossil",
+        "path": "data/reality/images/turtle_fossil.jpg",
+        "license": "CC-BY-SA",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Eunotosaurus_africanus.jpg",
+        "credit": "Wikimedia Commons",
+        "organism": "Eunotosaurus (fossil reptile)"
+      }
+    ],
+    "catalog_root": "data/reality",
+    "cache_root": "data/local_cache",
+    "asset_registry_ids": [
+      "green_sea_turtle",
+      "turtle_fossil"
+    ]
+  },
+  "narration": {
+    "provider": "openai",
+    "voice": "nova",
+    "model": "tts-1-hd",
+    "builder": "services.animation.communicator_delivery.build_paused_narration",
+    "smoke_fallback": "services.reality.smoke_narration.build_smoke_narration"
+  },
+  "animations": {
+    "demo_id": "foundation_v2_turtle_202",
+    "educator_mode": true,
+    "renderer": "services.animation.performer.render_lip_sync_performance"
+  },
+  "choreography": {
+    "plan_id": "foundation_v2_turtle_202"
+  },
+  "transitions": [],
+  "export": {
+    "filename": "Biology_001_202_Origin_of_Turtles.mp4",
+    "library_filename": "Biology_001_202_Origin_of_Turtles.mp4",
+    "domain_folder": "Biology",
+    "secondary_categories": [],
+    "directory": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Biology",
+    "directory_expanded": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Biology",
+    "library_root": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos",
+    "legacy_directory": "/Users/jaredbrottem/Desktop/AI Start-Up/videos/Test run 2 generational",
+    "companion_files": [
+      "script.md",
+      "sources.json",
+      "captions.srt",
+      "thumbnail.png",
+      "metadata.json",
+      "production_report.md",
+      "render_manifest.json"
+    ],
+    "verify": [
+      "file_exists",
+      "size_gt_zero",
+      "video_stream",
+      "audio_stream",
+      "playable",
+      "duration",
+      "resolution",
+      "correct_category_folder",
+      "companion_files",
+      "library_index_updated",
+      "manifest_updated",
+      "production_db_updated"
+    ]
+  },
+  "local_command": "python3 scripts/run_render_package.py --package RENDER_PACKAGE.json",
+  "handoff": {
+    "from_layer": "pre_production",
+    "to_layer": "local_production",
+    "owner": "Local Workstation"
+  }
+}

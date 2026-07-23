@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Ever wondered why comets have dazzling tails?",
+    "visual_description": "Hook visual: Ever wondered why comets have dazzling tails?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever wondered why comets have dazzling tails?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever wondered why comets have dazzling tails?",
+    "stock_footage_query": "",
+    "text_overlay": "Ever wondered why comets",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Comets are icy wanderers, but their journey through the solar system reveals their true beauty.",
+    "visual_description": "Context visual: Comets are icy wanderers, but their journey through the solar system reveals their true beauty.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Comets are icy wanderers, but their journey through the solar system reveals their true beauty.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Comets are icy wanderers, but their journey through the solar system reveals their true beauty.",
+    "stock_footage_query": "",
+    "text_overlay": "Comets are icy wanderers,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "As they approach the Sun, solar energy heats up the nucleus, releasing gas and dust.",
+    "visual_description": "Escalation visual: As they approach the Sun, solar energy heats up the nucleus, releasing gas and dust.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: As they approach the Sun, solar energy heats up the nucleus, releasing gas and dust.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: As they approach the Sun, solar energy heats up the nucleus, releasing gas and dust.",
+    "stock_footage_query": "",
+    "text_overlay": "As they approach the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Sunlight and solar wind push this material away, forming bright, glowing tails that always point away from the Sun.",
+    "visual_description": "Evidence visual: Sunlight and solar wind push this material away, forming bright, glowing tails that always point away from the Sun.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Sunlight and solar wind push this material away, forming bright, glowing tails that always point away from the Sun.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Sunlight and solar wind push this material away, forming bright, glowing tails that always point away from the Sun.",
+    "stock_footage_query": "",
+    "text_overlay": "Sunlight and solar wind",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "wonder",
+    "length_sec": 14.0,
+    "narration": "So, a comet's tail isn't just a pretty sight\u2014it's a cosmic dance between ice and solar power.",
+    "visual_description": "Payoff visual: So, a comet's tail isn't just a pretty sight\u2014it's a cosmic dance between ice and solar power.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, a comet's tail isn't just a pretty sight\u2014it's a cosmic dance between ice and solar power.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, a comet's tail isn't just a pretty sight\u2014it's a cosmic dance between ice and solar power.",
+    "stock_footage_query": "",
+    "text_overlay": "So, a comet's tail",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "enthusiasm",
+    "length_sec": 20.0,
+    "narration": "Curious for more cosmic wonders? Like and follow for more fascinating space facts!",
+    "visual_description": "Cta visual: Curious for more cosmic wonders? Like and follow for more fascinating space facts!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious for more cosmic wonders? Like and follow for more fascinating space facts!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious for more cosmic wonders? Like and follow for more fascinating space facts!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious for more cosmic",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

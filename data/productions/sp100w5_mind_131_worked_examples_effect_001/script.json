@@ -1,0 +1,74 @@
+{
+  "title": "Worked Examples Effect",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the science behind the worked examples effect and its impact on learning.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about the worked examples effect than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "The worked examples effect suggests people learn better from guided examples than from solving problems alone.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "It\u2019s like having a map versus wandering aimlessly. Which would you choose?",
+      "emotion": "curiosity",
+      "delivery": "animated and thought-provoking",
+      "retention_device": "visualization"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show worked examples not only save time but reduce cognitive load, making learning easier.",
+      "emotion": "curiosity",
+      "delivery": "assured and factual",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "So, if you want to learn effectively, start with examples. It\u2019s science!",
+      "emotion": "satisfaction",
+      "delivery": "confident and inspiring",
+      "retention_device": "insight"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious for more science insights? Follow for more!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic and inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about the worked examples effect than social media does. The worked examples effect suggests people learn better from guided examples than from solving problems alone. It\u2019s like having a map versus wandering aimlessly. Which would you choose? Studies show worked examples not only save time but reduce cognitive load, making learning easier. So, if you want to learn effectively, start with examples. It\u2019s science! Curious for more science insights? Follow for more!",
+  "call_to_action": "Curious for more science insights? Follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:52:29.704419+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,48 @@
+{
+  "world_id": "WORLD-GMRI-MEDICAL-LAB",
+  "living": true,
+  "forbid_static_environment": true,
+  "channels": [
+    "ambient_particles",
+    "lighting_changes",
+    "animated_screens",
+    "people_walking",
+    "steam"
+  ],
+  "tracks": [
+    {
+      "id": "ambient_particles",
+      "continuous": true,
+      "layer": "midground",
+      "amplitude": 0.4
+    },
+    {
+      "id": "lighting_changes",
+      "continuous": true,
+      "layer": "midground",
+      "amplitude": 0.4
+    },
+    {
+      "id": "animated_screens",
+      "continuous": true,
+      "layer": "midground",
+      "amplitude": 0.4
+    },
+    {
+      "id": "people_walking",
+      "continuous": true,
+      "layer": "midground",
+      "amplitude": 0.4
+    },
+    {
+      "id": "steam",
+      "continuous": true,
+      "layer": "midground",
+      "amplitude": 0.4
+    }
+  ],
+  "weather": "interior_climate",
+  "lighting": "clinical_warm",
+  "lighting_dynamic": true,
+  "philosophy": "The environment is never static."
+}

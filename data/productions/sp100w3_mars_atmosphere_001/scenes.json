@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Mars once thrived with a thick atmosphere... so what happened?",
+    "visual_description": "Hook visual: Mars once thrived with a thick atmosphere... so what happened?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Mars once thrived with a thick atmosphere... so what happened?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Mars once thrived with a thick atmosphere... so what happened?",
+    "stock_footage_query": "",
+    "text_overlay": "Mars once thrived with",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Unlike Earth, Mars has a weak magnetic shield. This made it vulnerable to solar winds.",
+    "visual_description": "Context visual: Unlike Earth, Mars has a weak magnetic shield. This made it vulnerable to solar winds.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Unlike Earth, Mars has a weak magnetic shield. This made it vulnerable to solar winds.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Unlike Earth, Mars has a weak magnetic shield. This made it vulnerable to solar winds.",
+    "stock_footage_query": "",
+    "text_overlay": "Unlike Earth, Mars has",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Solar winds stripped away essential particles, leading to a thinning atmosphere over millions of years.",
+    "visual_description": "Escalation visual: Solar winds stripped away essential particles, leading to a thinning atmosphere over millions of years.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Solar winds stripped away essential particles, leading to a thinning atmosphere over millions of years.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Solar winds stripped away essential particles, leading to a thinning atmosphere over millions of years.",
+    "stock_footage_query": "",
+    "text_overlay": "Solar winds stripped away",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Adding to the problem, low gravity makes it hard for Mars to hold onto lighter gases.",
+    "visual_description": "Evidence visual: Adding to the problem, low gravity makes it hard for Mars to hold onto lighter gases.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Adding to the problem, low gravity makes it hard for Mars to hold onto lighter gases.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Adding to the problem, low gravity makes it hard for Mars to hold onto lighter gases.",
+    "stock_footage_query": "",
+    "text_overlay": "Adding to the problem,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "With these forces combined, Mars lost its thick atmosphere, leaving a barren landscape.",
+    "visual_description": "Payoff visual: With these forces combined, Mars lost its thick atmosphere, leaving a barren landscape.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: With these forces combined, Mars lost its thick atmosphere, leaving a barren landscape.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: With these forces combined, Mars lost its thick atmosphere, leaving a barren landscape.",
+    "stock_footage_query": "",
+    "text_overlay": "With these forces combined,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Want to dive deeper into space mysteries? Like and follow for more!",
+    "visual_description": "Cta visual: Want to dive deeper into space mysteries? Like and follow for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into space mysteries? Like and follow for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into space mysteries? Like and follow for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

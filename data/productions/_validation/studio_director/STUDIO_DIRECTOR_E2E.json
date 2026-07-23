@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-07-13T04:09:52.591089+00:00",
+  "version": "5.0.0",
+  "engine_version": "5.0.0",
+  "style_library_size": 12,
+  "workflow_order": {
+    "audience_before_director": true,
+    "director_before_script": true,
+    "director_first_in_media_production": true,
+    "executive_direction_stage": true
+  },
+  "blueprints": [
+    {
+      "title": "Artificial Intelligence Explained in 60 Seconds",
+      "style_id": "technology_review",
+      "visual_style": "Technology Review",
+      "narration_style": "engineer",
+      "music_style": "technology",
+      "platform": "youtube_shorts",
+      "expected_ctr": 4.63,
+      "expected_completion_rate": 46.1,
+      "competitor_niche": "artificial intelligence",
+      "differentiation": [
+        "Open with a sharper curiosity gap than category average hooks",
+        "Use authentic government/NASA imagery where competitors lean stock"
+      ]
+    },
+    {
+      "title": "How the James Webb Telescope Sees the Universe",
+      "style_id": "space_documentary",
+      "visual_style": "Space Documentary",
+      "narration_style": "scientist",
+      "music_style": "space",
+      "platform": "youtube_shorts",
+      "expected_ctr": 4.63,
+      "expected_completion_rate": 46.1,
+      "competitor_niche": "science",
+      "differentiation": [
+        "Open with a sharper curiosity gap than category average hooks",
+        "Use authentic government/NASA imagery where competitors lean stock"
+      ]
+    },
+    {
+      "title": "The Fall of the Roman Empire in 60 Seconds",
+      "style_id": "history_channel",
+      "visual_style": "History Channel",
+      "narration_style": "documentary_host",
+      "music_style": "cinematic_orchestra",
+      "platform": "youtube_longform",
+      "expected_ctr": 4.63,
+      "expected_completion_rate": 46.1,
+      "competitor_niche": "default",
+      "differentiation": [
+        "Open with a sharper curiosity gap than category average hooks",
+        "Use authentic government/NASA imagery where competitors lean stock"
+      ]
+    }
+  ],
+  "unique_styles": [
+    "history_channel",
+    "space_documentary",
+    "technology_review"
+  ],
+  "consistency": {
+    "undirected": {
+      "score": 0,
+      "unique_styles": 0,
+      "has_blueprints": 0,
+      "total": 3,
+      "unified_vision": false
+    },
+    "directed": {
+      "score": 100,
+      "unique_styles": 3,
+      "has_blueprints": 3,
+      "total": 3,
+      "unified_vision": true
+    }
+  },
+  "engine_summary": {
+    "status": "degraded",
+    "blueprints": 1,
+    "production_styles": [
+      "technology_review"
+    ],
+    "average_confidence": 90
+  },
+  "planning_before_production_improves_consistency": true,
+  "passed": true
+}

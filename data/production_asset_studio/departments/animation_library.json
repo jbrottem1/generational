@@ -1,0 +1,93 @@
+{
+  "department_id": "animation_library",
+  "display_name": "Animation Library",
+  "mission": "Reusable skeletal animation clips \u2014 never image animation",
+  "clip_format": "blender_action_or_joint_tracks",
+  "assets": [
+    {
+      "asset_id": "CLIP_WALKING",
+      "clip_id": "walking",
+      "skeletal": true
+    },
+    {
+      "asset_id": "CLIP_RUNNING",
+      "clip_id": "running",
+      "skeletal": true
+    },
+    {
+      "asset_id": "CLIP_IDLE",
+      "clip_id": "idle",
+      "skeletal": true
+    },
+    {
+      "asset_id": "CLIP_TEACHING",
+      "clip_id": "teaching",
+      "skeletal": true
+    },
+    {
+      "asset_id": "CLIP_LISTENING",
+      "clip_id": "listening",
+      "skeletal": true
+    },
+    {
+      "asset_id": "CLIP_THINKING",
+      "clip_id": "thinking",
+      "skeletal": true
+    },
+    {
+      "asset_id": "CLIP_GREETING",
+      "clip_id": "greeting",
+      "skeletal": true
+    },
+    {
+      "asset_id": "CLIP_WRITING",
+      "clip_id": "writing",
+      "skeletal": true
+    },
+    {
+      "asset_id": "CLIP_TYPING",
+      "clip_id": "typing",
+      "skeletal": true
+    },
+    {
+      "asset_id": "CLIP_POINTING",
+      "clip_id": "pointing",
+      "skeletal": true
+    },
+    {
+      "asset_id": "CLIP_PICKING_UP_OBJECTS",
+      "clip_id": "picking_up_objects",
+      "skeletal": true
+    },
+    {
+      "asset_id": "CLIP_HOLDING_OBJECTS",
+      "clip_id": "holding_objects",
+      "skeletal": true
+    },
+    {
+      "asset_id": "CLIP_SITTING",
+      "clip_id": "sitting",
+      "skeletal": true
+    },
+    {
+      "asset_id": "CLIP_STANDING",
+      "clip_id": "standing",
+      "skeletal": true
+    },
+    {
+      "asset_id": "CLIP_LAUGHING",
+      "clip_id": "laughing",
+      "skeletal": true
+    },
+    {
+      "asset_id": "CLIP_LOOKING_AROUND",
+      "clip_id": "looking_around",
+      "skeletal": true
+    },
+    {
+      "asset_id": "CLIP_MEDICAL_EXAMINATION",
+      "clip_id": "medical_examination",
+      "skeletal": true
+    }
+  ]
+}

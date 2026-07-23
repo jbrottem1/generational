@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "layer": "intelligence",
+  "project_id": "four_seasons_001",
+  "title": "The Four Seasons Explained in 60 Seconds",
+  "series": "001",
+  "episode": "001",
+  "subject": "The Four Seasons Explained in 60 Seconds",
+  "domain": "Earth Science",
+  "hook": "Did you know Earth doesn't have seasons because it's closer to the Sun?",
+  "takeaway": "The tilt of our planet creates the changing seasons that shape life across Earth.",
+  "main_concept": "Earth's axial tilt (~23.5\u00b0) drives seasons \u2014 not distance from the Sun",
+  "educational_objective": "Earth's axial tilt (~23.5\u00b0) drives seasons \u2014 not distance from the Sun",
+  "target_audience": "curious learners 13\u201335",
+  "platform": "youtube_shorts",
+  "scientific_sources": [
+    "https://spaceplace.nasa.gov/seasons/en/",
+    "https://scijinks.gov/seasons/"
+  ],
+  "scientific_verified": true,
+  "seo_keywords": [],
+  "retention_notes": [],
+  "target_duration_sec": {
+    "min": 15,
+    "max": 32
+  },
+  "thumbnail_plan": "",
+  "prepared_at": "2026-07-12T23:44:28.884030+00:00",
+  "next_handoff": "pre_production \u2192 RENDER_PACKAGE.json"
+}

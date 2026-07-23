@@ -58,6 +58,11 @@ class ChannelManager:
     def create_channel(self, name: str, niche: str, **kwargs) -> dict:
         if self._store.load(name):
             raise ValueError(f"Channel '{name}' already exists.")
+        # Do not persist plaintext secrets in local channel JSON
+        creds = kwargs.get("credentials")
+        if isinstance(creds, dict) and any(str(v).strip() for v in creds.values() if v is not None):
+            log_event(logger, "channel.credentials_stripped", level=30, name=name)
+            kwargs["credentials"] = {}
         channel = build_channel(name, niche, **kwargs)
         self._store.save(channel)
         log_event(logger, "channel.created", name=name, niche=niche)
@@ -77,6 +82,11 @@ class ChannelManager:
         if channel is None:
             raise ValueError(f"Channel '{name}' does not exist.")
         updates.pop("name", None)  # renames would orphan the record file
+        if "credentials" in updates:
+            creds = updates.get("credentials")
+            if isinstance(creds, dict) and any(str(v).strip() for v in creds.values() if v is not None):
+                log_event(logger, "channel.credentials_stripped", level=30, name=name)
+            updates["credentials"] = {}
         channel.update(updates)
         self._store.save(channel)
         log_event(logger, "channel.updated", name=name, fields=",".join(updates.keys()))

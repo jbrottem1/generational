@@ -1,0 +1,192 @@
+{
+  "character_id": "NURSE_001",
+  "clip_count": 18,
+  "required_clips": [
+    "idle",
+    "thinking",
+    "teaching",
+    "listening",
+    "greeting",
+    "walking",
+    "turning",
+    "explaining",
+    "laughing",
+    "typing",
+    "writing",
+    "pointing",
+    "looking_around",
+    "picking_up_objects",
+    "opening_doors",
+    "sitting",
+    "standing",
+    "reacting"
+  ],
+  "clips": {
+    "idle": {
+      "clip_id": "NURSE_001_idle",
+      "name": "idle",
+      "reusable": true,
+      "loop": true,
+      "rig_bound": true,
+      "source_file": null,
+      "status": "template"
+    },
+    "thinking": {
+      "clip_id": "NURSE_001_thinking",
+      "name": "thinking",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": null,
+      "status": "template"
+    },
+    "teaching": {
+      "clip_id": "NURSE_001_teaching",
+      "name": "teaching",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": null,
+      "status": "template"
+    },
+    "listening": {
+      "clip_id": "NURSE_001_listening",
+      "name": "listening",
+      "reusable": true,
+      "loop": true,
+      "rig_bound": true,
+      "source_file": null,
+      "status": "template"
+    },
+    "greeting": {
+      "clip_id": "NURSE_001_greeting",
+      "name": "greeting",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": null,
+      "status": "template"
+    },
+    "walking": {
+      "clip_id": "NURSE_001_walking",
+      "name": "walking",
+      "reusable": true,
+      "loop": true,
+      "rig_bound": true,
+      "source_file": null,
+      "status": "template"
+    },
+    "turning": {
+      "clip_id": "NURSE_001_turning",
+      "name": "turning",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": null,
+      "status": "template"
+    },
+    "explaining": {
+      "clip_id": "NURSE_001_explaining",
+      "name": "explaining",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": null,
+      "status": "template"
+    },
+    "laughing": {
+      "clip_id": "NURSE_001_laughing",
+      "name": "laughing",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": null,
+      "status": "template"
+    },
+    "typing": {
+      "clip_id": "NURSE_001_typing",
+      "name": "typing",
+      "reusable": true,
+      "loop": true,
+      "rig_bound": true,
+      "source_file": null,
+      "status": "template"
+    },
+    "writing": {
+      "clip_id": "NURSE_001_writing",
+      "name": "writing",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": null,
+      "status": "template"
+    },
+    "pointing": {
+      "clip_id": "NURSE_001_pointing",
+      "name": "pointing",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": null,
+      "status": "template"
+    },
+    "looking_around": {
+      "clip_id": "NURSE_001_looking_around",
+      "name": "looking_around",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": null,
+      "status": "template"
+    },
+    "picking_up_objects": {
+      "clip_id": "NURSE_001_picking_up_objects",
+      "name": "picking_up_objects",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": null,
+      "status": "template"
+    },
+    "opening_doors": {
+      "clip_id": "NURSE_001_opening_doors",
+      "name": "opening_doors",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": null,
+      "status": "template"
+    },
+    "sitting": {
+      "clip_id": "NURSE_001_sitting",
+      "name": "sitting",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": null,
+      "status": "template"
+    },
+    "standing": {
+      "clip_id": "NURSE_001_standing",
+      "name": "standing",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": null,
+      "status": "template"
+    },
+    "reacting": {
+      "clip_id": "NURSE_001_reacting",
+      "name": "reacting",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": null,
+      "status": "template"
+    }
+  },
+  "animation_library_ref": "data/studio_assets/NURSE_001/ANIMATION/",
+  "existing_index": null,
+  "philosophy": "Actors own clips. Scenes choose actions. Never regenerate walks per episode.",
+  "reusable": true
+}

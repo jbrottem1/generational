@@ -1,0 +1,147 @@
+2026-07-10 20:50:57.755 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-07-10 20:50:57.755 WARNING streamlit.runtime.state.session_state_proxy: Session state does not function when running a script without `streamlit run`
+2026-07-10 20:50:57,766 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=youtube_shorts label="YouTube Shorts"
+2026-07-10 20:50:57,766 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=instagram_reels label="Instagram Reels"
+2026-07-10 20:50:57,766 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=facebook_reels label="Facebook Reels"
+2026-07-10 20:50:57,766 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=tiktok label=TikTok
+2026-07-10 20:50:57,766 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=x label=X
+2026-07-10 20:50:57,766 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=linkedin label=LinkedIn
+2026-07-10 20:50:57,766 INFO generational.providers.publishing.registry: publishing.provider_registered | platform=pinterest label=Pinterest
+2026-07-10 20:50:57,768 INFO generational.services.publishing.extensions: publishing.gate_registered | key=production_integrity
+=== GENERATIONAL BENCHMARK V1 PREFLIGHT ===
+ffmpeg True
+openai True
+export_dir /Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational
+
+=== BENCHMARK V1 PRODUCTION: The Immortal Jellyfish ===
+  [BM][started] Idea: Idea started
+  [BM][running] Idea: Idea running
+  [BM][completed] Idea: Idea completed
+  [BM][started] Script: Script started
+  [BM][running] Script: Script running
+  [BM][completed] Script: Script completed
+  [BM][started] Scenes: Scenes started
+  [BM][running] Scenes: Scenes running
+  [BM][completed] Scenes: Scenes completed
+  [BM][started] Visual Prompts: Visual Prompts started
+  [BM][running] Visual Prompts: Visual Prompts running
+  [BM][completed] Visual Prompts: Visual Prompts completed
+  [BM][started] Images: Images started
+  [BM][running] Images: Images running
+2026-07-10 20:50:57,841 INFO generational.provider_runtime: provider.request_start | provider=openai operation=generate_image
+2026-07-10 20:51:49,132 INFO generational.provider_runtime: provider.request_end | provider=openai operation=generate_image success=True latency_ms=51291 cost_usd=0.02 error=
+2026-07-10 20:51:49,150 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai status=
+2026-07-10 20:51:49,162 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 20:52:37,607 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=True latency_ms=48445 cost_usd=0.04 error=
+2026-07-10 20:52:37,625 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_images status=
+2026-07-10 20:52:37,637 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 20:53:27,780 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=True latency_ms=50142 cost_usd=0.04 error=
+2026-07-10 20:53:27,797 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_images status=
+2026-07-10 20:53:27,809 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 20:54:13,621 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=True latency_ms=45812 cost_usd=0.04 error=
+2026-07-10 20:54:13,639 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_images status=
+2026-07-10 20:54:13,652 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 20:55:04,108 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=True latency_ms=50455 cost_usd=0.04 error=
+2026-07-10 20:55:04,120 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_images status=
+2026-07-10 20:55:04,130 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 20:55:54,849 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=True latency_ms=50719 cost_usd=0.04 error=
+2026-07-10 20:55:54,862 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_images status=
+2026-07-10 20:55:54,874 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 20:56:45,162 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=True latency_ms=50288 cost_usd=0.04 error=
+2026-07-10 20:56:45,173 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_images status=
+2026-07-10 20:56:45,183 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 20:57:34,146 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=True latency_ms=48963 cost_usd=0.04 error=
+2026-07-10 20:57:34,163 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_images status=
+2026-07-10 20:57:34,175 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 20:58:28,551 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=True latency_ms=54375 cost_usd=0.04 error=
+2026-07-10 20:58:28,561 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_images status=
+2026-07-10 20:58:28,571 INFO generational.provider_runtime: provider.request_start | provider=openai_images operation=generate_image
+2026-07-10 20:59:13,003 INFO generational.provider_runtime: provider.request_end | provider=openai_images operation=generate_image success=True latency_ms=44431 cost_usd=0.04 error=
+2026-07-10 20:59:13,019 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_images status=
+  [BM][completed] Images: Images completed
+  [BM][started] Video Clips: Video Clips started
+  [BM][running] Video Clips: Video Clips running
+  [BM][skipped] Video Clips: Video Clips skipped
+  [BM][started] Voice: Voice started
+  [BM][running] Voice: Voice running
+2026-07-10 20:59:13,093 INFO generational.provider_runtime: provider.request_start | provider=openai_tts operation=generate_voice
+2026-07-10 20:59:24,652 INFO generational.provider_runtime: provider.request_end | provider=openai_tts operation=generate_voice success=True latency_ms=11558 cost_usd=0.015 error=
+2026-07-10 20:59:24,665 INFO generational.services.analytics.store: analytics.record_added | record_id= platform=openai_tts status=
+2026-07-10 20:59:24,672 INFO generational.services.media_production.voice: media_production.voice | provider=openai_tts placeholder=False duration=55.2
+  [BM][completed] Voice: Voice completed
+  [BM][started] Music: Music started
+  [BM][running] Music: Music running
+  [BM][skipped] Music: Music skipped
+  [BM][started] SFX: SFX started
+  [BM][running] SFX: SFX running
+  [BM][skipped] SFX: SFX skipped
+  [BM][started] Captions: Captions started
+  [BM][running] Captions: Captions running
+  [BM][completed] Captions: Captions completed
+  [BM][started] Timeline: Timeline started
+  [BM][running] Timeline: Timeline running
+  [BM][completed] Timeline: Timeline completed
+  [BM][started] FFmpeg Render: FFmpeg Render started
+  [BM][running] FFmpeg Render: FFmpeg Render running
+  [BM][completed] FFmpeg Render: FFmpeg Render completed
+  [BM][started] Quality: Quality started
+  [BM][running] Quality: Quality running
+2026-07-10 20:59:45,915 INFO generational.engines.registry: engine.registered | key=trend_discovery ready=True version=0.1.0
+2026-07-10 20:59:45,915 INFO generational.engines.registry: engine.registered | key=opportunity_ranking ready=True version=0.1.0
+2026-07-10 20:59:45,915 INFO generational.engines.registry: engine.registered | key=trend_forecasting ready=True version=1.0.0
+2026-07-10 20:59:45,915 INFO generational.engines.registry: engine.registered | key=market_intelligence ready=True version=1.0.0
+2026-07-10 20:59:45,915 INFO generational.engines.registry: engine.registered | key=ai_director ready=True version=1.0.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=asset_generation ready=True version=1.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=creative_studio ready=True version=1.0.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=post_production ready=True version=1.0.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=research ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=ideation ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=psychology ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=script_generation ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=visual_intelligence ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=voice_audio ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=attention_graph ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=ranking ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=script ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=critic ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=revision ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=citation ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=seo ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=threat_detection ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=quality ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=scene_planning ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=narration ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=visual_planning ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=asset_manager ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=subtitle ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=timeline ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=render_package ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=publishing_queue ready=True version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=voice ready=True version=1.0.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=image ready=True version=1.0.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=video ready=True version=1.0.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=render ready=True version=1.0.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=publishing ready=True version=1.0.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=analytics ready=True version=1.0.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=learning ready=True version=1.0.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=seo_optimization ready=True version=1.0.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=scheduler ready=True version=1.0.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=brand_management ready=False version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=optimization_lab ready=False version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=character_universe ready=False version=0.1.0
+2026-07-10 20:59:45,916 INFO generational.engines.registry: engine.registered | key=animation ready=False version=0.1.0
+  [BM][completed] Quality: Quality completed
+  [BM][started] Export MP4: Export MP4 started
+  [BM][running] Export MP4: Export MP4 running
+2026-07-10 20:59:46,010 INFO generational.services.asset_production.final_export: final_export.saved | title=The Immortal Jellyfish dest=/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Generational_Benchmark_V1_The_Immortal_Jellyfish.mp4 bytes=9007742
+  [BM][completed] Export MP4: Export MP4 completed
+  [BM][started] Publish Prep: Publish Prep started
+  [BM][running] Publish Prep: Publish Prep running
+  [BM][skipped] Publish Prep: Publish Prep skipped
+2026-07-10 20:59:46,012 INFO generational.services.asset_production.executor: asset_production.complete | ok=True asset_id=benchmark_v1_immortal_jellyfish progress=100 error=
+
+=== BENCHMARK V1 COMPLETE ===
+status BENCHMARK_PASSED
+overall 92.3
+export /Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Generational_Benchmark_V1_The_Immortal_Jellyfish.mp4
+report /Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/_validation/benchmark_v1/BENCHMARK_V1_REPORT.json

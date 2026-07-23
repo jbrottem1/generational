@@ -1,0 +1,31 @@
+{
+  "character_id": "DOCTOR_001",
+  "interval_mode": "irregular",
+  "base_interval_seconds": [
+    2.2,
+    5.8
+  ],
+  "lid_weights": {
+    "upper": 0.85,
+    "lower": 0.15
+  },
+  "duration_seconds": [
+    0.08,
+    0.16
+  ],
+  "increase_on": [
+    "stress",
+    "transition",
+    "cognitive_load",
+    "sentence_end"
+  ],
+  "reduce_on": [
+    "intense_focus",
+    "demonstrating_detail"
+  ],
+  "double_blink_on": [
+    "refocus",
+    "emotional_softening"
+  ],
+  "forbid_fixed_robotic_interval": true
+}

@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science has a clearer story about Type Ia supernovae than social media does.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: These explosions occur in binary star systems when a white dwarf siphons material from its companion.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Once it reaches a critical mass, boom! A supernova erupts, shining brighter than entire galaxies.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Type Ia supernovae are crucial for measuring cosmic distances, acting as reliable 'standard candles'.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: But there\u2019s still uncertainty! Variations in their brightness can puzzle scientists.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about more cosmic mysteries? Hit that follow button to explore the universe with us!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science has a clearer story about Type Ia supernovae than social media does.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: These explosions occur in binary star systems when a white dwarf siphons material from its companion.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Once it reaches a critical mass, boom! A supernova erupts, shining brighter than entire galaxies.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Type Ia supernovae are crucial for measuring cosmic distances, acting as reliable 'standard candles'.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: But there\u2019s still uncertainty! Variations in their brightness can puzzle scientists.",
+      "duration_sec": 10.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about more cosmic mysteries? Hit that follow button to explore the universe with us!",
+      "duration_sec": 24.0
+    }
+  ]
+}

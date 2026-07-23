@@ -1,0 +1,27 @@
+{
+  "character_id": "NURSE_001",
+  "forbid": [
+    "foot_sliding",
+    "floating",
+    "teleporting_poses",
+    "broken_joints",
+    "weightless_movement"
+  ],
+  "ensure": [
+    "foot_planting",
+    "hip_rotation",
+    "natural_momentum",
+    "secondary_motion",
+    "balanced_posture"
+  ],
+  "foot_ik": true,
+  "ground_contact_required": true,
+  "hip_leads_turns": true,
+  "secondary_motion": [
+    "coat_sway",
+    "hair_follow",
+    "soft_tissue_micro"
+  ],
+  "balance_solver": "pelvis_com_projection",
+  "no_pose_teleport": true
+}

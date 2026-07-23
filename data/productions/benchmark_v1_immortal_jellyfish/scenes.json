@@ -1,0 +1,882 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 4.0,
+    "narration": "What if aging could run backwards?",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 4.0
+    },
+    "shot_composition": "center-punched single subject, negative space above for text",
+    "subject_placement": "dead center, filling 60% of frame",
+    "lighting": "cinematic volumetric lighting, educational documentary grade",
+    "transition_out": "hard cut",
+    "visual_description": "center-punched single subject, negative space above for text; subject: What if aging could run backwards?; emotion: curiosity; educational documentary lighting",
+    "camera_motion": "quick punch-in on key detail",
+    "zoom": "fast punch-in from 120% to 100% in the first 0.5s",
+    "motion_intensity": 75,
+    "media_type": "ai_cinematic_artwork",
+    "media_hierarchy": [
+      "ai_animation",
+      "ai_cinematic_artwork",
+      "scientific_illustration",
+      "motion_graphics",
+      "real_world_photograph",
+      "archival_reference",
+      "map",
+      "chart",
+      "infographic",
+      "animated_text",
+      "cinematic_fallback_still"
+    ],
+    "asset_type": "ai_image",
+    "text_overlay": "What if aging could run",
+    "overlay": "bold 3-4 word headline, top third, high-contrast stroke",
+    "caption_placement": "upper third \u2014 clear of the punch-in subject",
+    "on_screen_text": "What if aging could run",
+    "supporting_graphics": "",
+    "ai_image_prompt": "Original educational stick-figure mascot named Dash: clean uniform black outline, pure white body fill, oversized round head, huge expressive oval eyes with tracking pupils, thick expressive eyebrows, simple mouth, stick torso arms and legs, round mitt hands that can point, small oval feet, vertical 9:16 composition, smooth modern 2D animation still, high clarity, no clothing, no hair, no logos, not a copy of any existing creator character. Flagship Generational Animation Studio frame. Dash the stick-figure explorer is on screen, expressive and kinetic, action=float_drift. Camera intent=push_in. Living ocean environment FX=ENVFX-ocean-current,ENVFX-particle-field. Turritopsis dohrnii immortal jellyfish lifecycle educational visualization. Soft navy-teal gradients, volumetric underwater light, particles, depth layers, smooth modern 2D animation still \u2014 never slideshow, never flat solid background. Scene: A 9:16 vertical cinematic frame: center-punched single subject, negative space above for text; subject: What if aging could run backwards?; emotion: curiosity; educational documentary lighting. Mood: curiosity. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: center-punched single subject, negative space above for text. Style: Generational Animation Studio flagship style: Dash stick-figure host, clean black outline white fill oversized eyes, ethereal ocean educational animation, rich lighting atmospheric particles cinematic depth, (photorealistic scientific visualization, volumetric detail). macro detail, crisp laboratory aesthetic, shallow depth of field. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: ai cinematic artwork leave subtle title treatment space for: What if aging could run Avoid: photorealistic, 3D render, shaded limbs, clothing, hair, logo, watermark, Kurzgesagt bird, XKCD comic panel, Alan Becker stick fight, messy linework, flat solid color full background, talking-head static pose, blurry, extra fingers, colored body",
+    "ai_video_prompt": "Cinematic motion, quick punch-in on key detail: Original educational stick-figure mascot named Dash: clean uniform black outline, pure white body fill, oversized round head, huge expressive oval eyes with tracking pupils, thick expressive eyebrows, simple mouth, stick torso arms and legs, round mitt hands that can point, small oval feet, vertical 9:16 composition, smooth modern 2D animation still, high clarity, no clothing, no hair, no logos, n",
+    "visual_story_plan": {
+      "see": "center-punched single subject, negative space above for text; subject: What if aging could run backwards?; emotion: curiosity; educational documentary lighting",
+      "media_type": "ai_cinematic_artwork",
+      "camera_movement": "quick punch-in on key detail",
+      "motion_effects": "fast punch-in from 120% to 100% in the first 0.5s",
+      "transition": "hard cut",
+      "on_screen_text": "What if aging could run",
+      "captions": "upper third \u2014 clear of the punch-in subject",
+      "supporting_graphics": "",
+      "density_target_sec": 3.5
+    },
+    "storyboard_beat": {
+      "beat_id": "B1",
+      "scene_number": 1,
+      "t_start": 0.0,
+      "t_end": 4.0,
+      "duration_sec": 4.0,
+      "narration": "What if aging could run backwards?",
+      "who": [
+        "CHAR-DASH"
+      ],
+      "action": "walk_cycle",
+      "doing": "walk_cycle",
+      "moving": [
+        "character",
+        "ENVFX-particle-field"
+      ],
+      "camera": "push_in",
+      "emotion": "curiosity",
+      "transition_out": "hard cut",
+      "environment_fx": [
+        "ENVFX-particle-field"
+      ],
+      "animation_components": [
+        "walk_cycle",
+        "talk_bob"
+      ],
+      "purpose": "hook"
+    },
+    "camera_preset": "push_in",
+    "environment_fx": [
+      "ENVFX-particle-field"
+    ],
+    "animation_components": [
+      "walk_cycle",
+      "talk_bob"
+    ]
+  },
+  {
+    "scene_number": 2,
+    "purpose": "story_beat",
+    "emotion": "wonder",
+    "length_sec": 6.0,
+    "narration": "Meet Turritopsis dohrnii \u2014 a jellyfish smaller than your fingernail, found in oceans around the world.",
+    "caption_timing": {
+      "start_sec": 4.0,
+      "end_sec": 10.0
+    },
+    "shot_composition": "rule of thirds, subject leading the eye toward the next cut",
+    "subject_placement": "alternating thirds each beat to reset attention",
+    "lighting": "cinematic volumetric lighting, educational documentary grade",
+    "transition_out": "hard cut",
+    "visual_description": "rule of thirds, subject leading the eye toward the next cut; subject: Meet Turritopsis dohrnii \u2014 a jellyfish smaller than your fingernail, found in oceans around the world.; emotion: wonder; educational documentary lighting",
+    "camera_motion": "ken burns drift right",
+    "zoom": "subtle 3% push on the key sentence",
+    "motion_intensity": 55,
+    "media_type": "scientific_illustration",
+    "media_hierarchy": [
+      "ai_animation",
+      "ai_cinematic_artwork",
+      "scientific_illustration",
+      "motion_graphics",
+      "real_world_photograph",
+      "archival_reference",
+      "map",
+      "chart",
+      "infographic",
+      "animated_text",
+      "cinematic_fallback_still"
+    ],
+    "asset_type": "ai_image",
+    "text_overlay": "Meet Turritopsis dohrnii \u2014 a",
+    "overlay": "keyword text synced to every number or stat",
+    "caption_placement": "bottom third, safe zone",
+    "on_screen_text": "Meet Turritopsis dohrnii \u2014 a",
+    "supporting_graphics": "scientific_illustration",
+    "ai_image_prompt": "Original educational stick-figure mascot named Dash: clean uniform black outline, pure white body fill, oversized round head, huge expressive oval eyes with tracking pupils, thick expressive eyebrows, simple mouth, stick torso arms and legs, round mitt hands that can point, small oval feet, vertical 9:16 composition, smooth modern 2D animation still, high clarity, no clothing, no hair, no logos, not a copy of any existing creator character. Flagship Generational Animation Studio frame. Dash the stick-figure explorer is on screen, expressive and kinetic, action=float_drift. Camera intent=push_in. Living ocean environment FX=ENVFX-ocean-current,ENVFX-particle-field. Turritopsis dohrnii immortal jellyfish lifecycle educational visualization. Soft navy-teal gradients, volumetric underwater light, particles, depth layers, smooth modern 2D animation still \u2014 never slideshow, never flat solid background. Scene: A 9:16 vertical cinematic frame: rule of thirds, subject leading the eye toward the next cut; subject: Meet Turritopsis dohrnii \u2014 a jellyfish smaller than your fingernail, found in oceans around the world.; emotion: wonder; educational documentary lighting. Mood: wonder. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: rule of thirds, subject leading the eye toward the next cut. Style: Generational Animation Studio flagship style: Dash stick-figure host, clean black outline white fill oversized eyes, ethereal ocean educational animation, rich lighting atmospheric particles cinematic depth, (photorealistic scientific visualization, volumetric detail). clean diagrammatic clarity blended with cinematic atmosphere. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: scientific illustration leave subtle title treatment space for: Meet Turritopsis dohrnii \u2014 a Avoid: photorealistic, 3D render, shaded limbs, clothing, hair, logo, watermark, Kurzgesagt bird, XKCD comic panel, Alan Becker stick fight, messy linework, flat solid color full background, talking-head static pose, blurry, extra fingers, colored body",
+    "ai_video_prompt": "Cinematic motion, ken burns drift right: Original educational stick-figure mascot named Dash: clean uniform black outline, pure white body fill, oversized round head, huge expressive oval eyes with tracking pupils, thick expressive eyebrows, simple mouth, stick torso arms and legs, round mitt hands that can point, small oval feet, vertical 9:16 composition, smooth modern 2D animation still, high clarity, no clothing, no hair, no logos, n",
+    "visual_story_plan": {
+      "see": "rule of thirds, subject leading the eye toward the next cut; subject: Meet Turritopsis dohrnii \u2014 a jellyfish smaller than your fingernail, found in oceans around the world.; emotion: wonder; educational documentary lighting",
+      "media_type": "scientific_illustration",
+      "camera_movement": "ken burns drift right",
+      "motion_effects": "subtle 3% push on the key sentence",
+      "transition": "hard cut",
+      "on_screen_text": "Meet Turritopsis dohrnii \u2014 a",
+      "captions": "bottom third, safe zone",
+      "supporting_graphics": "scientific_illustration",
+      "density_target_sec": 3.5
+    },
+    "storyboard_beat": {
+      "beat_id": "B2",
+      "scene_number": 2,
+      "t_start": 4.0,
+      "t_end": 10.0,
+      "duration_sec": 6.0,
+      "narration": "Meet Turritopsis dohrnii \u2014 a jellyfish smaller than your fingernail, found in oceans around the world.",
+      "who": [
+        "CHAR-DASH"
+      ],
+      "action": "talk_bob",
+      "doing": "talk_bob",
+      "moving": [
+        "character",
+        "ENVFX-light-pulse"
+      ],
+      "camera": "ken burns drift right",
+      "emotion": "wonder",
+      "transition_out": "hard cut",
+      "environment_fx": [
+        "ENVFX-light-pulse"
+      ],
+      "animation_components": [
+        "talk_bob",
+        "talk_bob"
+      ],
+      "purpose": "story_beat"
+    },
+    "camera_preset": "ken burns drift right",
+    "environment_fx": [
+      "ENVFX-light-pulse"
+    ],
+    "animation_components": [
+      "talk_bob",
+      "talk_bob"
+    ]
+  },
+  {
+    "scene_number": 3,
+    "purpose": "curiosity_loop",
+    "emotion": "tension",
+    "length_sec": 6.0,
+    "narration": "When it's injured, starving, or growing old, it doesn't simply fade away.",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 16.0
+    },
+    "shot_composition": "layered foreground obscuring a partially visible subject",
+    "subject_placement": "background center, half-hidden by foreground element",
+    "lighting": "cinematic volumetric lighting, educational documentary grade",
+    "transition_out": "match cut",
+    "visual_description": "layered foreground obscuring a partially visible subject; subject: When it's injured, starving, or growing old, it doesn't simply fade away.; emotion: tension; educational documentary lighting",
+    "camera_motion": "slow zoom out reveal",
+    "zoom": "creeping 100% to 108% push across the scene",
+    "motion_intensity": 55,
+    "media_type": "ai_cinematic_artwork",
+    "media_hierarchy": [
+      "ai_animation",
+      "ai_cinematic_artwork",
+      "scientific_illustration",
+      "motion_graphics",
+      "real_world_photograph",
+      "archival_reference",
+      "map",
+      "chart",
+      "infographic",
+      "animated_text",
+      "cinematic_fallback_still"
+    ],
+    "asset_type": "ai_image",
+    "text_overlay": "When it's injured, starving, or",
+    "overlay": "teaser text lower third",
+    "caption_placement": "lower third \u2014 under the concealed reveal",
+    "on_screen_text": "When it's injured, starving, or",
+    "supporting_graphics": "",
+    "ai_image_prompt": "Original educational stick-figure mascot named Dash: clean uniform black outline, pure white body fill, oversized round head, huge expressive oval eyes with tracking pupils, thick expressive eyebrows, simple mouth, stick torso arms and legs, round mitt hands that can point, small oval feet, vertical 9:16 composition, smooth modern 2D animation still, high clarity, no clothing, no hair, no logos, not a copy of any existing creator character. Flagship Generational Animation Studio frame. Dash the stick-figure explorer is on screen, expressive and kinetic, action=float_drift. Camera intent=push_in. Living ocean environment FX=ENVFX-ocean-current,ENVFX-particle-field. Turritopsis dohrnii immortal jellyfish lifecycle educational visualization. Soft navy-teal gradients, volumetric underwater light, particles, depth layers, smooth modern 2D animation still \u2014 never slideshow, never flat solid background. Scene: A 9:16 vertical cinematic frame: layered foreground obscuring a partially visible subject; subject: When it's injured, starving, or growing old, it doesn't simply fade away.; emotion: tension; educational documentary lighting. Mood: tension. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: layered foreground obscuring a partially visible subject. Style: Generational Animation Studio flagship style: Dash stick-figure host, clean black outline white fill oversized eyes, ethereal ocean educational animation, rich lighting atmospheric particles cinematic depth, (photorealistic scientific visualization, volumetric detail). NASA-grade photorealism, deep contrast, premium educational channel look. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: ai cinematic artwork leave subtle title treatment space for: When it's injured, starving, or Avoid: photorealistic, 3D render, shaded limbs, clothing, hair, logo, watermark, Kurzgesagt bird, XKCD comic panel, Alan Becker stick fight, messy linework, flat solid color full background, talking-head static pose, blurry, extra fingers, colored body",
+    "ai_video_prompt": "Cinematic motion, slow zoom out reveal: Original educational stick-figure mascot named Dash: clean uniform black outline, pure white body fill, oversized round head, huge expressive oval eyes with tracking pupils, thick expressive eyebrows, simple mouth, stick torso arms and legs, round mitt hands that can point, small oval feet, vertical 9:16 composition, smooth modern 2D animation still, high clarity, no clothing, no hair, no logos, n",
+    "visual_story_plan": {
+      "see": "layered foreground obscuring a partially visible subject; subject: When it's injured, starving, or growing old, it doesn't simply fade away.; emotion: tension; educational documentary lighting",
+      "media_type": "ai_cinematic_artwork",
+      "camera_movement": "slow zoom out reveal",
+      "motion_effects": "creeping 100% to 108% push across the scene",
+      "transition": "match cut",
+      "on_screen_text": "When it's injured, starving, or",
+      "captions": "lower third \u2014 under the concealed reveal",
+      "supporting_graphics": "",
+      "density_target_sec": 3.5
+    },
+    "storyboard_beat": {
+      "beat_id": "B3",
+      "scene_number": 3,
+      "t_start": 8.0,
+      "t_end": 14.0,
+      "duration_sec": 6.0,
+      "narration": "When it's injured, starving, or growing old, it doesn't simply fade away.",
+      "who": [
+        "CHAR-DASH"
+      ],
+      "action": "point_right",
+      "doing": "point_right",
+      "moving": [
+        "character",
+        "ENVFX-dust-motes"
+      ],
+      "camera": "reveal",
+      "emotion": "tension",
+      "transition_out": "match cut",
+      "environment_fx": [
+        "ENVFX-dust-motes"
+      ],
+      "animation_components": [
+        "point_right",
+        "talk_bob"
+      ],
+      "purpose": "curiosity_loop"
+    },
+    "camera_preset": "reveal",
+    "environment_fx": [
+      "ENVFX-dust-motes"
+    ],
+    "animation_components": [
+      "point_right",
+      "talk_bob"
+    ]
+  },
+  {
+    "scene_number": 4,
+    "purpose": "story_beat",
+    "emotion": "awe",
+    "length_sec": 8.0,
+    "narration": "It sinks, collapses into a soft cyst\u2026 and then rebuilds itself as a polyp \u2014 the juvenile stage of its life.",
+    "caption_timing": {
+      "start_sec": 16.0,
+      "end_sec": 24.0
+    },
+    "shot_composition": "rule of thirds, subject leading the eye toward the next cut",
+    "subject_placement": "alternating thirds each beat to reset attention",
+    "lighting": "cinematic volumetric lighting, educational documentary grade",
+    "transition_out": "hard cut",
+    "visual_description": "rule of thirds, subject leading the eye toward the next cut; subject: It sinks, collapses into a soft cyst\u2026 and then rebuilds itself as a polyp \u2014 the juvenile stage of its life.; emotion: awe; educational documentary lighting",
+    "camera_motion": "pan left across subject",
+    "zoom": "subtle 3% push on the key sentence",
+    "motion_intensity": 55,
+    "media_type": "real_world_photograph",
+    "media_hierarchy": [
+      "ai_animation",
+      "ai_cinematic_artwork",
+      "scientific_illustration",
+      "motion_graphics",
+      "real_world_photograph",
+      "archival_reference",
+      "map",
+      "chart",
+      "infographic",
+      "animated_text",
+      "cinematic_fallback_still"
+    ],
+    "asset_type": "ai_image",
+    "text_overlay": "It sinks, collapses into a",
+    "overlay": "keyword text synced to every number or stat",
+    "caption_placement": "bottom third, safe zone",
+    "on_screen_text": "It sinks, collapses into a",
+    "supporting_graphics": "",
+    "ai_image_prompt": "Original educational stick-figure mascot named Dash: clean uniform black outline, pure white body fill, oversized round head, huge expressive oval eyes with tracking pupils, thick expressive eyebrows, simple mouth, stick torso arms and legs, round mitt hands that can point, small oval feet, vertical 9:16 composition, smooth modern 2D animation still, high clarity, no clothing, no hair, no logos, not a copy of any existing creator character. Flagship Generational Animation Studio frame. Dash the stick-figure explorer is on screen, expressive and kinetic, action=float_drift. Camera intent=push_in. Living ocean environment FX=ENVFX-ocean-current,ENVFX-particle-field. Turritopsis dohrnii immortal jellyfish lifecycle educational visualization. Soft navy-teal gradients, volumetric underwater light, particles, depth layers, smooth modern 2D animation still \u2014 never slideshow, never flat solid background. Scene: A 9:16 vertical cinematic frame: rule of thirds, subject leading the eye toward the next cut; subject: It sinks, collapses into a soft cyst\u2026 and then rebuilds itself as a polyp \u2014 the juvenile stage of its life.; emotion: awe; educational documentary lighting. Mood: awe. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: rule of thirds, subject leading the eye toward the next cut. Style: Generational Animation Studio flagship style: Dash stick-figure host, clean black outline white fill oversized eyes, ethereal ocean educational animation, rich lighting atmospheric particles cinematic depth, (photorealistic scientific visualization, volumetric detail). scientific visualization, volumetric lighting, educational documentary style. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: real world photograph leave subtle title treatment space for: It sinks, collapses into a Avoid: photorealistic, 3D render, shaded limbs, clothing, hair, logo, watermark, Kurzgesagt bird, XKCD comic panel, Alan Becker stick fight, messy linework, flat solid color full background, talking-head static pose, blurry, extra fingers, colored body",
+    "ai_video_prompt": "Cinematic motion, pan left across subject: Original educational stick-figure mascot named Dash: clean uniform black outline, pure white body fill, oversized round head, huge expressive oval eyes with tracking pupils, thick expressive eyebrows, simple mouth, stick torso arms and legs, round mitt hands that can point, small oval feet, vertical 9:16 composition, smooth modern 2D animation still, high clarity, no clothing, no hair, no logos, n",
+    "visual_story_plan": {
+      "see": "rule of thirds, subject leading the eye toward the next cut; subject: It sinks, collapses into a soft cyst\u2026 and then rebuilds itself as a polyp \u2014 the juvenile stage of its life.; emotion: awe; educational documentary lighting",
+      "media_type": "real_world_photograph",
+      "camera_movement": "pan left across subject",
+      "motion_effects": "subtle 3% push on the key sentence",
+      "transition": "hard cut",
+      "on_screen_text": "It sinks, collapses into a",
+      "captions": "bottom third, safe zone",
+      "supporting_graphics": "",
+      "density_target_sec": 3.5
+    },
+    "storyboard_beat": {
+      "beat_id": "B4",
+      "scene_number": 4,
+      "t_start": 12.0,
+      "t_end": 20.0,
+      "duration_sec": 8.0,
+      "narration": "It sinks, collapses into a soft cyst\u2026 and then rebuilds itself as a polyp \u2014 the juvenile stage of its life.",
+      "who": [
+        "CHAR-DASH"
+      ],
+      "action": "think_scratch",
+      "doing": "think_scratch",
+      "moving": [
+        "character",
+        "ENVFX-instrument-glow"
+      ],
+      "camera": "parallax",
+      "emotion": "awe",
+      "transition_out": "hard cut",
+      "environment_fx": [
+        "ENVFX-instrument-glow"
+      ],
+      "animation_components": [
+        "think_scratch",
+        "talk_bob"
+      ],
+      "purpose": "story_beat"
+    },
+    "camera_preset": "parallax",
+    "environment_fx": [
+      "ENVFX-instrument-glow"
+    ],
+    "animation_components": [
+      "think_scratch",
+      "talk_bob"
+    ]
+  },
+  {
+    "scene_number": 5,
+    "purpose": "story_beat",
+    "emotion": "focus",
+    "length_sec": 8.0,
+    "narration": "Peer-reviewed research shows this life-cycle reversal is powered by rare cellular reprogramming called transdifferentiation.",
+    "caption_timing": {
+      "start_sec": 24.0,
+      "end_sec": 32.0
+    },
+    "shot_composition": "rule of thirds, subject leading the eye toward the next cut",
+    "subject_placement": "alternating thirds each beat to reset attention",
+    "lighting": "cinematic volumetric lighting, educational documentary grade",
+    "transition_out": "hard cut",
+    "visual_description": "rule of thirds, subject leading the eye toward the next cut; subject: Peer-reviewed research shows this life-cycle reversal is powered by rare cellular reprogramming called transdifferentiation.; emotion: focus; educational documentary lighting",
+    "camera_motion": "documentary slow zoom",
+    "zoom": "subtle 3% push on the key sentence",
+    "motion_intensity": 55,
+    "media_type": "scientific_illustration",
+    "media_hierarchy": [
+      "ai_animation",
+      "ai_cinematic_artwork",
+      "scientific_illustration",
+      "motion_graphics",
+      "real_world_photograph",
+      "archival_reference",
+      "map",
+      "chart",
+      "infographic",
+      "animated_text",
+      "cinematic_fallback_still"
+    ],
+    "asset_type": "ai_image",
+    "text_overlay": "Peer-reviewed research shows this life-cycle",
+    "overlay": "keyword text synced to every number or stat",
+    "caption_placement": "bottom third, safe zone",
+    "on_screen_text": "Peer-reviewed research shows this life-cycle",
+    "supporting_graphics": "scientific_illustration",
+    "ai_image_prompt": "Original educational stick-figure mascot named Dash: clean uniform black outline, pure white body fill, oversized round head, huge expressive oval eyes with tracking pupils, thick expressive eyebrows, simple mouth, stick torso arms and legs, round mitt hands that can point, small oval feet, vertical 9:16 composition, smooth modern 2D animation still, high clarity, no clothing, no hair, no logos, not a copy of any existing creator character. Flagship Generational Animation Studio frame. Dash the stick-figure explorer is on screen, expressive and kinetic, action=float_drift. Camera intent=push_in. Living ocean environment FX=ENVFX-ocean-current,ENVFX-particle-field. Turritopsis dohrnii immortal jellyfish lifecycle educational visualization. Soft navy-teal gradients, volumetric underwater light, particles, depth layers, smooth modern 2D animation still \u2014 never slideshow, never flat solid background. Scene: A 9:16 vertical cinematic frame: rule of thirds, subject leading the eye toward the next cut; subject: Peer-reviewed research shows this life-cycle reversal is powered by rare cellular reprogramming called transdifferentiation.; emotion: focus; educational documentary lighting. Mood: focus. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: rule of thirds, subject leading the eye toward the next cut. Style: Generational Animation Studio flagship style: Dash stick-figure host, clean black outline white fill oversized eyes, ethereal ocean educational animation, rich lighting atmospheric particles cinematic depth, (photorealistic scientific visualization, volumetric detail). macro detail, crisp laboratory aesthetic, shallow depth of field. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: scientific illustration leave subtle title treatment space for: Peer-reviewed research shows this life-cycle Avoid: photorealistic, 3D render, shaded limbs, clothing, hair, logo, watermark, Kurzgesagt bird, XKCD comic panel, Alan Becker stick fight, messy linework, flat solid color full background, talking-head static pose, blurry, extra fingers, colored body",
+    "ai_video_prompt": "Cinematic motion, documentary slow zoom: Original educational stick-figure mascot named Dash: clean uniform black outline, pure white body fill, oversized round head, huge expressive oval eyes with tracking pupils, thick expressive eyebrows, simple mouth, stick torso arms and legs, round mitt hands that can point, small oval feet, vertical 9:16 composition, smooth modern 2D animation still, high clarity, no clothing, no hair, no logos, n",
+    "visual_story_plan": {
+      "see": "rule of thirds, subject leading the eye toward the next cut; subject: Peer-reviewed research shows this life-cycle reversal is powered by rare cellular reprogramming called transdifferentiation.; emotion: focus; educational documentary lighting",
+      "media_type": "scientific_illustration",
+      "camera_movement": "documentary slow zoom",
+      "motion_effects": "subtle 3% push on the key sentence",
+      "transition": "hard cut",
+      "on_screen_text": "Peer-reviewed research shows this life-cycle",
+      "captions": "bottom third, safe zone",
+      "supporting_graphics": "scientific_illustration",
+      "density_target_sec": 3.5
+    },
+    "storyboard_beat": {
+      "beat_id": "B5",
+      "scene_number": 5,
+      "t_start": 16.0,
+      "t_end": 24.0,
+      "duration_sec": 8.0,
+      "narration": "Peer-reviewed research shows this life-cycle reversal is powered by rare cellular reprogramming called transdifferentiation.",
+      "who": [
+        "CHAR-DASH"
+      ],
+      "action": "shock_recoil",
+      "doing": "shock_recoil",
+      "moving": [
+        "character",
+        "ENVFX-ocean-current"
+      ],
+      "camera": "documentary slow zoom",
+      "emotion": "focus",
+      "transition_out": "hard cut",
+      "environment_fx": [
+        "ENVFX-ocean-current"
+      ],
+      "animation_components": [
+        "shock_recoil",
+        "talk_bob"
+      ],
+      "purpose": "story_beat"
+    },
+    "camera_preset": "documentary slow zoom",
+    "environment_fx": [
+      "ENVFX-ocean-current"
+    ],
+    "animation_components": [
+      "shock_recoil",
+      "talk_bob"
+    ]
+  },
+  {
+    "scene_number": 6,
+    "purpose": "story_beat",
+    "emotion": "wonder",
+    "length_sec": 6.0,
+    "narration": "Specialized cells change their identity \u2014 adult tissue becomes young tissue again.",
+    "caption_timing": {
+      "start_sec": 32.0,
+      "end_sec": 38.0
+    },
+    "shot_composition": "rule of thirds, subject leading the eye toward the next cut",
+    "subject_placement": "alternating thirds each beat to reset attention",
+    "lighting": "cinematic volumetric lighting, educational documentary grade",
+    "transition_out": "hard cut",
+    "visual_description": "rule of thirds, subject leading the eye toward the next cut; subject: Specialized cells change their identity \u2014 adult tissue becomes young tissue again.; emotion: wonder; educational documentary lighting",
+    "camera_motion": "subtle parallax push",
+    "zoom": "subtle 3% push on the key sentence",
+    "motion_intensity": 55,
+    "media_type": "scientific_illustration",
+    "media_hierarchy": [
+      "ai_animation",
+      "ai_cinematic_artwork",
+      "scientific_illustration",
+      "motion_graphics",
+      "real_world_photograph",
+      "archival_reference",
+      "map",
+      "chart",
+      "infographic",
+      "animated_text",
+      "cinematic_fallback_still"
+    ],
+    "asset_type": "ai_image",
+    "text_overlay": "Specialized cells change their identity",
+    "overlay": "keyword text synced to every number or stat",
+    "caption_placement": "bottom third, safe zone",
+    "on_screen_text": "Specialized cells change their identity",
+    "supporting_graphics": "scientific_illustration",
+    "ai_image_prompt": "Original educational stick-figure mascot named Dash: clean uniform black outline, pure white body fill, oversized round head, huge expressive oval eyes with tracking pupils, thick expressive eyebrows, simple mouth, stick torso arms and legs, round mitt hands that can point, small oval feet, vertical 9:16 composition, smooth modern 2D animation still, high clarity, no clothing, no hair, no logos, not a copy of any existing creator character. Flagship Generational Animation Studio frame. Dash the stick-figure explorer is on screen, expressive and kinetic, action=float_drift. Camera intent=push_in. Living ocean environment FX=ENVFX-ocean-current,ENVFX-particle-field. Turritopsis dohrnii immortal jellyfish lifecycle educational visualization. Soft navy-teal gradients, volumetric underwater light, particles, depth layers, smooth modern 2D animation still \u2014 never slideshow, never flat solid background. Scene: A 9:16 vertical cinematic frame: rule of thirds, subject leading the eye toward the next cut; subject: Specialized cells change their identity \u2014 adult tissue becomes young tissue again.; emotion: wonder; educational documentary lighting. Mood: wonder. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: rule of thirds, subject leading the eye toward the next cut. Style: Generational Animation Studio flagship style: Dash stick-figure host, clean black outline white fill oversized eyes, ethereal ocean educational animation, rich lighting atmospheric particles cinematic depth, (photorealistic scientific visualization, volumetric detail). clean diagrammatic clarity blended with cinematic atmosphere. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: scientific illustration leave subtle title treatment space for: Specialized cells change their identity Avoid: photorealistic, 3D render, shaded limbs, clothing, hair, logo, watermark, Kurzgesagt bird, XKCD comic panel, Alan Becker stick fight, messy linework, flat solid color full background, talking-head static pose, blurry, extra fingers, colored body",
+    "ai_video_prompt": "Cinematic motion, subtle parallax push: Original educational stick-figure mascot named Dash: clean uniform black outline, pure white body fill, oversized round head, huge expressive oval eyes with tracking pupils, thick expressive eyebrows, simple mouth, stick torso arms and legs, round mitt hands that can point, small oval feet, vertical 9:16 composition, smooth modern 2D animation still, high clarity, no clothing, no hair, no logos, n",
+    "visual_story_plan": {
+      "see": "rule of thirds, subject leading the eye toward the next cut; subject: Specialized cells change their identity \u2014 adult tissue becomes young tissue again.; emotion: wonder; educational documentary lighting",
+      "media_type": "scientific_illustration",
+      "camera_movement": "subtle parallax push",
+      "motion_effects": "subtle 3% push on the key sentence",
+      "transition": "hard cut",
+      "on_screen_text": "Specialized cells change their identity",
+      "captions": "bottom third, safe zone",
+      "supporting_graphics": "scientific_illustration",
+      "density_target_sec": 3.5
+    },
+    "storyboard_beat": {
+      "beat_id": "B6",
+      "scene_number": 6,
+      "t_start": 20.0,
+      "t_end": 26.0,
+      "duration_sec": 6.0,
+      "narration": "Specialized cells change their identity \u2014 adult tissue becomes young tissue again.",
+      "who": [
+        "CHAR-DASH"
+      ],
+      "action": "celebrate_jump",
+      "doing": "celebrate_jump",
+      "moving": [
+        "character",
+        "ENVFX-star-twinkle"
+      ],
+      "camera": "push_in",
+      "emotion": "wonder",
+      "transition_out": "hard cut",
+      "environment_fx": [
+        "ENVFX-star-twinkle"
+      ],
+      "animation_components": [
+        "celebrate_jump",
+        "talk_bob"
+      ],
+      "purpose": "story_beat"
+    },
+    "camera_preset": "push_in",
+    "environment_fx": [
+      "ENVFX-star-twinkle"
+    ],
+    "animation_components": [
+      "celebrate_jump",
+      "talk_bob"
+    ]
+  },
+  {
+    "scene_number": 7,
+    "purpose": "curiosity_loop",
+    "emotion": "excitement",
+    "length_sec": 6.0,
+    "narration": "Lab studies show it can reverse repeatedly under stress. That is why it's called the immortal jellyfish.",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 44.0
+    },
+    "shot_composition": "layered foreground obscuring a partially visible subject",
+    "subject_placement": "background center, half-hidden by foreground element",
+    "lighting": "cinematic volumetric lighting, educational documentary grade",
+    "transition_out": "match cut",
+    "visual_description": "layered foreground obscuring a partially visible subject; subject: Lab studies show it can reverse repeatedly under stress. That is why it's called the immortal jellyfish.; emotion: excitement; educational documentary lighting",
+    "camera_motion": "quick punch-in on key detail",
+    "zoom": "creeping 100% to 108% push across the scene",
+    "motion_intensity": 55,
+    "media_type": "scientific_illustration",
+    "media_hierarchy": [
+      "ai_animation",
+      "ai_cinematic_artwork",
+      "scientific_illustration",
+      "motion_graphics",
+      "real_world_photograph",
+      "archival_reference",
+      "map",
+      "chart",
+      "infographic",
+      "animated_text",
+      "cinematic_fallback_still"
+    ],
+    "asset_type": "ai_image",
+    "text_overlay": "Lab studies show it can",
+    "overlay": "teaser text lower third",
+    "caption_placement": "lower third \u2014 under the concealed reveal",
+    "on_screen_text": "Lab studies show it can",
+    "supporting_graphics": "scientific_illustration",
+    "ai_image_prompt": "Original educational stick-figure mascot named Dash: clean uniform black outline, pure white body fill, oversized round head, huge expressive oval eyes with tracking pupils, thick expressive eyebrows, simple mouth, stick torso arms and legs, round mitt hands that can point, small oval feet, vertical 9:16 composition, smooth modern 2D animation still, high clarity, no clothing, no hair, no logos, not a copy of any existing creator character. Flagship Generational Animation Studio frame. Dash the stick-figure explorer is on screen, expressive and kinetic, action=float_drift. Camera intent=push_in. Living ocean environment FX=ENVFX-ocean-current,ENVFX-particle-field. Turritopsis dohrnii immortal jellyfish lifecycle educational visualization. Soft navy-teal gradients, volumetric underwater light, particles, depth layers, smooth modern 2D animation still \u2014 never slideshow, never flat solid background. Scene: A 9:16 vertical cinematic frame: layered foreground obscuring a partially visible subject; subject: Lab studies show it can reverse repeatedly under stress. That is why it's called the immortal jellyfish.; emotion: excitement; educational documentary lighting. Mood: excitement. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: layered foreground obscuring a partially visible subject. Style: Generational Animation Studio flagship style: Dash stick-figure host, clean black outline white fill oversized eyes, ethereal ocean educational animation, rich lighting atmospheric particles cinematic depth, (photorealistic scientific visualization, volumetric detail). NASA-grade photorealism, deep contrast, premium educational channel look. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: scientific illustration leave subtle title treatment space for: Lab studies show it can Avoid: photorealistic, 3D render, shaded limbs, clothing, hair, logo, watermark, Kurzgesagt bird, XKCD comic panel, Alan Becker stick fight, messy linework, flat solid color full background, talking-head static pose, blurry, extra fingers, colored body",
+    "ai_video_prompt": "Cinematic motion, quick punch-in on key detail: Original educational stick-figure mascot named Dash: clean uniform black outline, pure white body fill, oversized round head, huge expressive oval eyes with tracking pupils, thick expressive eyebrows, simple mouth, stick torso arms and legs, round mitt hands that can point, small oval feet, vertical 9:16 composition, smooth modern 2D animation still, high clarity, no clothing, no hair, no logos, n",
+    "visual_story_plan": {
+      "see": "layered foreground obscuring a partially visible subject; subject: Lab studies show it can reverse repeatedly under stress. That is why it's called the immortal jellyfish.; emotion: excitement; educational documentary lighting",
+      "media_type": "scientific_illustration",
+      "camera_movement": "quick punch-in on key detail",
+      "motion_effects": "creeping 100% to 108% push across the scene",
+      "transition": "match cut",
+      "on_screen_text": "Lab studies show it can",
+      "captions": "lower third \u2014 under the concealed reveal",
+      "supporting_graphics": "scientific_illustration",
+      "density_target_sec": 3.5
+    },
+    "storyboard_beat": {
+      "beat_id": "B7",
+      "scene_number": 7,
+      "t_start": 24.0,
+      "t_end": 30.0,
+      "duration_sec": 6.0,
+      "narration": "Lab studies show it can reverse repeatedly under stress. That is why it's called the immortal jellyfish.",
+      "who": [
+        "CHAR-DASH"
+      ],
+      "action": "face_audience",
+      "doing": "face_audience",
+      "moving": [
+        "character",
+        "ENVFX-particle-field"
+      ],
+      "camera": "push_in",
+      "emotion": "excitement",
+      "transition_out": "match cut",
+      "environment_fx": [
+        "ENVFX-particle-field"
+      ],
+      "animation_components": [
+        "face_audience",
+        "talk_bob"
+      ],
+      "purpose": "curiosity_loop"
+    },
+    "camera_preset": "push_in",
+    "environment_fx": [
+      "ENVFX-particle-field"
+    ],
+    "animation_components": [
+      "face_audience",
+      "talk_bob"
+    ]
+  },
+  {
+    "scene_number": 8,
+    "purpose": "story_beat",
+    "emotion": "clarity",
+    "length_sec": 6.0,
+    "narration": "But be careful with the myth: predators and disease can still kill individuals.",
+    "caption_timing": {
+      "start_sec": 44.0,
+      "end_sec": 50.0
+    },
+    "shot_composition": "rule of thirds, subject leading the eye toward the next cut",
+    "subject_placement": "alternating thirds each beat to reset attention",
+    "lighting": "cinematic volumetric lighting, educational documentary grade",
+    "transition_out": "hard cut",
+    "visual_description": "rule of thirds, subject leading the eye toward the next cut; subject: But be careful with the myth: predators and disease can still kill individuals.; emotion: clarity; educational documentary lighting",
+    "camera_motion": "slow cinematic push-in",
+    "zoom": "subtle 3% push on the key sentence",
+    "motion_intensity": 55,
+    "media_type": "ai_cinematic_artwork",
+    "media_hierarchy": [
+      "ai_animation",
+      "ai_cinematic_artwork",
+      "scientific_illustration",
+      "motion_graphics",
+      "real_world_photograph",
+      "archival_reference",
+      "map",
+      "chart",
+      "infographic",
+      "animated_text",
+      "cinematic_fallback_still"
+    ],
+    "asset_type": "ai_image",
+    "text_overlay": "But be careful with the",
+    "overlay": "keyword text synced to every number or stat",
+    "caption_placement": "bottom third, safe zone",
+    "on_screen_text": "But be careful with the",
+    "supporting_graphics": "",
+    "ai_image_prompt": "Original educational stick-figure mascot named Dash: clean uniform black outline, pure white body fill, oversized round head, huge expressive oval eyes with tracking pupils, thick expressive eyebrows, simple mouth, stick torso arms and legs, round mitt hands that can point, small oval feet, vertical 9:16 composition, smooth modern 2D animation still, high clarity, no clothing, no hair, no logos, not a copy of any existing creator character. Flagship Generational Animation Studio frame. Dash the stick-figure explorer is on screen, expressive and kinetic, action=float_drift. Camera intent=push_in. Living ocean environment FX=ENVFX-ocean-current,ENVFX-particle-field. Turritopsis dohrnii immortal jellyfish lifecycle educational visualization. Soft navy-teal gradients, volumetric underwater light, particles, depth layers, smooth modern 2D animation still \u2014 never slideshow, never flat solid background. Scene: A 9:16 vertical cinematic frame: rule of thirds, subject leading the eye toward the next cut; subject: But be careful with the myth: predators and disease can still kill individuals.; emotion: clarity; educational documentary lighting. Mood: clarity. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: rule of thirds, subject leading the eye toward the next cut. Style: Generational Animation Studio flagship style: Dash stick-figure host, clean black outline white fill oversized eyes, ethereal ocean educational animation, rich lighting atmospheric particles cinematic depth, (photorealistic scientific visualization, volumetric detail). scientific visualization, volumetric lighting, educational documentary style. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: ai cinematic artwork leave subtle title treatment space for: But be careful with the Avoid: photorealistic, 3D render, shaded limbs, clothing, hair, logo, watermark, Kurzgesagt bird, XKCD comic panel, Alan Becker stick fight, messy linework, flat solid color full background, talking-head static pose, blurry, extra fingers, colored body",
+    "ai_video_prompt": "Cinematic motion, slow cinematic push-in: Original educational stick-figure mascot named Dash: clean uniform black outline, pure white body fill, oversized round head, huge expressive oval eyes with tracking pupils, thick expressive eyebrows, simple mouth, stick torso arms and legs, round mitt hands that can point, small oval feet, vertical 9:16 composition, smooth modern 2D animation still, high clarity, no clothing, no hair, no logos, n",
+    "visual_story_plan": {
+      "see": "rule of thirds, subject leading the eye toward the next cut; subject: But be careful with the myth: predators and disease can still kill individuals.; emotion: clarity; educational documentary lighting",
+      "media_type": "ai_cinematic_artwork",
+      "camera_movement": "slow cinematic push-in",
+      "motion_effects": "subtle 3% push on the key sentence",
+      "transition": "hard cut",
+      "on_screen_text": "But be careful with the",
+      "captions": "bottom third, safe zone",
+      "supporting_graphics": "",
+      "density_target_sec": 3.5
+    },
+    "storyboard_beat": {
+      "beat_id": "B8",
+      "scene_number": 8,
+      "t_start": 28.0,
+      "t_end": 34.0,
+      "duration_sec": 6.0,
+      "narration": "But be careful with the myth: predators and disease can still kill individuals.",
+      "who": [
+        "CHAR-DASH"
+      ],
+      "action": "walk_cycle",
+      "doing": "walk_cycle",
+      "moving": [
+        "character",
+        "ENVFX-light-pulse"
+      ],
+      "camera": "push_in",
+      "emotion": "clarity",
+      "transition_out": "hard cut",
+      "environment_fx": [
+        "ENVFX-light-pulse"
+      ],
+      "animation_components": [
+        "walk_cycle",
+        "talk_bob"
+      ],
+      "purpose": "story_beat"
+    },
+    "camera_preset": "push_in",
+    "environment_fx": [
+      "ENVFX-light-pulse"
+    ],
+    "animation_components": [
+      "walk_cycle",
+      "talk_bob"
+    ]
+  },
+  {
+    "scene_number": 9,
+    "purpose": "payoff",
+    "emotion": "insight",
+    "length_sec": 4.0,
+    "narration": "Immortal here means the life cycle can reset \u2014 not that nothing can harm it.",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 54.0
+    },
+    "shot_composition": "hero framing, shallow depth of field, clean background",
+    "subject_placement": "center, isolated against defocused backdrop",
+    "lighting": "cinematic volumetric lighting, educational documentary grade",
+    "transition_out": "dissolve",
+    "visual_description": "hero framing, shallow depth of field, clean background; subject: Immortal here means the life cycle can reset \u2014 not that nothing can harm it.; emotion: insight; educational documentary lighting",
+    "camera_motion": "ken burns drift right",
+    "zoom": "slow-motion settle from 105% to 100%",
+    "motion_intensity": 55,
+    "media_type": "ai_cinematic_artwork",
+    "media_hierarchy": [
+      "ai_animation",
+      "ai_cinematic_artwork",
+      "scientific_illustration",
+      "motion_graphics",
+      "real_world_photograph",
+      "archival_reference",
+      "map",
+      "chart",
+      "infographic",
+      "animated_text",
+      "cinematic_fallback_still"
+    ],
+    "asset_type": "ai_image",
+    "text_overlay": "Immortal here means the life",
+    "overlay": "the single takeaway line, large, centered",
+    "caption_placement": "center \u2014 the takeaway IS the frame",
+    "on_screen_text": "Immortal here means the life",
+    "supporting_graphics": "",
+    "ai_image_prompt": "Original educational stick-figure mascot named Dash: clean uniform black outline, pure white body fill, oversized round head, huge expressive oval eyes with tracking pupils, thick expressive eyebrows, simple mouth, stick torso arms and legs, round mitt hands that can point, small oval feet, vertical 9:16 composition, smooth modern 2D animation still, high clarity, no clothing, no hair, no logos, not a copy of any existing creator character. Flagship Generational Animation Studio frame. Dash the stick-figure explorer is on screen, expressive and kinetic, action=float_drift. Camera intent=push_in. Living ocean environment FX=ENVFX-ocean-current,ENVFX-particle-field. Turritopsis dohrnii immortal jellyfish lifecycle educational visualization. Soft navy-teal gradients, volumetric underwater light, particles, depth layers, smooth modern 2D animation still \u2014 never slideshow, never flat solid background. Scene: A 9:16 vertical cinematic frame: hero framing, shallow depth of field, clean background; subject: Immortal here means the life cycle can reset \u2014 not that nothing can harm it.; emotion: insight; educational documentary lighting. Mood: insight. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: hero framing, shallow depth of field, clean background. Style: Generational Animation Studio flagship style: Dash stick-figure host, clean black outline white fill oversized eyes, ethereal ocean educational animation, rich lighting atmospheric particles cinematic depth, (photorealistic scientific visualization, volumetric detail). macro detail, crisp laboratory aesthetic, shallow depth of field. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: ai cinematic artwork leave subtle title treatment space for: Immortal here means the life Avoid: photorealistic, 3D render, shaded limbs, clothing, hair, logo, watermark, Kurzgesagt bird, XKCD comic panel, Alan Becker stick fight, messy linework, flat solid color full background, talking-head static pose, blurry, extra fingers, colored body",
+    "ai_video_prompt": "Cinematic motion, ken burns drift right: Original educational stick-figure mascot named Dash: clean uniform black outline, pure white body fill, oversized round head, huge expressive oval eyes with tracking pupils, thick expressive eyebrows, simple mouth, stick torso arms and legs, round mitt hands that can point, small oval feet, vertical 9:16 composition, smooth modern 2D animation still, high clarity, no clothing, no hair, no logos, n",
+    "visual_story_plan": {
+      "see": "hero framing, shallow depth of field, clean background; subject: Immortal here means the life cycle can reset \u2014 not that nothing can harm it.; emotion: insight; educational documentary lighting",
+      "media_type": "ai_cinematic_artwork",
+      "camera_movement": "ken burns drift right",
+      "motion_effects": "slow-motion settle from 105% to 100%",
+      "transition": "dissolve",
+      "on_screen_text": "Immortal here means the life",
+      "captions": "center \u2014 the takeaway IS the frame",
+      "supporting_graphics": "",
+      "density_target_sec": 3.5
+    },
+    "storyboard_beat": {
+      "beat_id": "B9",
+      "scene_number": 9,
+      "t_start": 32.0,
+      "t_end": 36.0,
+      "duration_sec": 4.0,
+      "narration": "Immortal here means the life cycle can reset \u2014 not that nothing can harm it.",
+      "who": [
+        "CHAR-DASH"
+      ],
+      "action": "talk_bob",
+      "doing": "talk_bob",
+      "moving": [
+        "character",
+        "ENVFX-dust-motes"
+      ],
+      "camera": "ken burns drift right",
+      "emotion": "insight",
+      "transition_out": "dissolve",
+      "environment_fx": [
+        "ENVFX-dust-motes"
+      ],
+      "animation_components": [
+        "talk_bob",
+        "talk_bob"
+      ],
+      "purpose": "payoff"
+    },
+    "camera_preset": "ken burns drift right",
+    "environment_fx": [
+      "ENVFX-dust-motes"
+    ],
+    "animation_components": [
+      "talk_bob",
+      "talk_bob"
+    ]
+  },
+  {
+    "scene_number": 10,
+    "purpose": "cta",
+    "emotion": "awe",
+    "length_sec": 4.0,
+    "narration": "In one of the ocean's smallest bodies\u2026 evolution found a reset button.",
+    "caption_timing": {
+      "start_sec": 54.0,
+      "end_sec": 58.0
+    },
+    "shot_composition": "centered, eye-level, symmetrical, direct eye contact with lens",
+    "subject_placement": "center, direct eye contact with lens",
+    "lighting": "cinematic volumetric lighting, educational documentary grade",
+    "transition_out": "fade out",
+    "visual_description": "centered, eye-level, symmetrical, direct eye contact with lens; subject: In one of the ocean's smallest bodies\u2026 evolution found a reset button.; emotion: awe; educational documentary lighting",
+    "camera_motion": "slow cinematic push-in",
+    "zoom": "none \u2014 stability signals sincerity",
+    "motion_intensity": 55,
+    "media_type": "infographic",
+    "media_hierarchy": [
+      "ai_animation",
+      "ai_cinematic_artwork",
+      "scientific_illustration",
+      "motion_graphics",
+      "real_world_photograph",
+      "archival_reference",
+      "map",
+      "chart",
+      "infographic",
+      "animated_text",
+      "cinematic_fallback_still"
+    ],
+    "asset_type": "ai_image",
+    "text_overlay": "In one of the ocean's",
+    "overlay": "animated follow/save button mimic, lower third",
+    "caption_placement": "lower third \u2014 beside the follow button mimic",
+    "on_screen_text": "In one of the ocean's",
+    "supporting_graphics": "infographic",
+    "ai_image_prompt": "Original educational stick-figure mascot named Dash: clean uniform black outline, pure white body fill, oversized round head, huge expressive oval eyes with tracking pupils, thick expressive eyebrows, simple mouth, stick torso arms and legs, round mitt hands that can point, small oval feet, vertical 9:16 composition, smooth modern 2D animation still, high clarity, no clothing, no hair, no logos, not a copy of any existing creator character. Flagship Generational Animation Studio frame. Dash the stick-figure explorer is on screen, expressive and kinetic, action=float_drift. Camera intent=push_in. Living ocean environment FX=ENVFX-ocean-current,ENVFX-particle-field. Turritopsis dohrnii immortal jellyfish lifecycle educational visualization. Soft navy-teal gradients, volumetric underwater light, particles, depth layers, smooth modern 2D animation still \u2014 never slideshow, never flat solid background. Scene: A 9:16 vertical cinematic frame: centered, eye-level, symmetrical, direct eye contact with lens; subject: In one of the ocean's smallest bodies\u2026 evolution found a reset button.; emotion: awe; educational documentary lighting. Mood: awe. Lighting: cinematic volumetric lighting, educational documentary grade. Composition: centered, eye-level, symmetrical, direct eye contact with lens. Style: Generational Animation Studio flagship style: Dash stick-figure host, clean black outline white fill oversized eyes, ethereal ocean educational animation, rich lighting atmospheric particles cinematic depth, (photorealistic scientific visualization, volumetric detail). clean diagrammatic clarity blended with cinematic atmosphere. ultra-detailed, sharp focus, professional color grade, 8k cinematic educational short, no watermark, no UI chrome rich detail filling the entire frame \u2014 never blank or flat color media intent: infographic leave subtle title treatment space for: In one of the ocean's Avoid: photorealistic, 3D render, shaded limbs, clothing, hair, logo, watermark, Kurzgesagt bird, XKCD comic panel, Alan Becker stick fight, messy linework, flat solid color full background, talking-head static pose, blurry, extra fingers, colored body",
+    "ai_video_prompt": "Cinematic motion, slow cinematic push-in: Original educational stick-figure mascot named Dash: clean uniform black outline, pure white body fill, oversized round head, huge expressive oval eyes with tracking pupils, thick expressive eyebrows, simple mouth, stick torso arms and legs, round mitt hands that can point, small oval feet, vertical 9:16 composition, smooth modern 2D animation still, high clarity, no clothing, no hair, no logos, n",
+    "visual_story_plan": {
+      "see": "centered, eye-level, symmetrical, direct eye contact with lens; subject: In one of the ocean's smallest bodies\u2026 evolution found a reset button.; emotion: awe; educational documentary lighting",
+      "media_type": "infographic",
+      "camera_movement": "slow cinematic push-in",
+      "motion_effects": "none \u2014 stability signals sincerity",
+      "transition": "fade out",
+      "on_screen_text": "In one of the ocean's",
+      "captions": "lower third \u2014 beside the follow button mimic",
+      "supporting_graphics": "infographic",
+      "density_target_sec": 3.5
+    },
+    "storyboard_beat": {
+      "beat_id": "B10",
+      "scene_number": 10,
+      "t_start": 36.0,
+      "t_end": 40.0,
+      "duration_sec": 4.0,
+      "narration": "In one of the ocean's smallest bodies\u2026 evolution found a reset button.",
+      "who": [
+        "CHAR-DASH"
+      ],
+      "action": "point_right",
+      "doing": "point_right",
+      "moving": [
+        "character",
+        "ENVFX-instrument-glow"
+      ],
+      "camera": "push_in",
+      "emotion": "awe",
+      "transition_out": "fade out",
+      "environment_fx": [
+        "ENVFX-instrument-glow"
+      ],
+      "animation_components": [
+        "point_right",
+        "talk_bob"
+      ],
+      "purpose": "cta"
+    },
+    "camera_preset": "push_in",
+    "environment_fx": [
+      "ENVFX-instrument-glow"
+    ],
+    "animation_components": [
+      "point_right",
+      "talk_bob"
+    ]
+  }
+]

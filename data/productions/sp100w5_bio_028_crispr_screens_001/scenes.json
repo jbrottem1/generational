@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about CRISPR screens than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about CRISPR screens than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about CRISPR screens than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about CRISPR screens than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "CRISPR screens let scientists explore the roles of thousands of genes at once.",
+    "visual_description": "Context visual: CRISPR screens let scientists explore the roles of thousands of genes at once.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: CRISPR screens let scientists explore the roles of thousands of genes at once.",
+    "ai_video_prompt": "Cinematic motion: Context visual: CRISPR screens let scientists explore the roles of thousands of genes at once.",
+    "stock_footage_query": "",
+    "text_overlay": "CRISPR screens let scientists",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But they aren't magic. Results can vary, and context matters.",
+    "visual_description": "Escalation visual: But they aren't magic. Results can vary, and context matters.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But they aren't magic. Results can vary, and context matters.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But they aren't magic. Results can vary, and context matters.",
+    "stock_footage_query": "",
+    "text_overlay": "But they aren't magic.",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "In studies, CRISPR screens can pinpoint critical pathways in diseases, giving hope for targeted therapies.",
+    "visual_description": "Evidence visual: In studies, CRISPR screens can pinpoint critical pathways in diseases, giving hope for targeted therapies.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: In studies, CRISPR screens can pinpoint critical pathways in diseases, giving hope for targeted therapies.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: In studies, CRISPR screens can pinpoint critical pathways in diseases, giving hope for targeted therapies.",
+    "stock_footage_query": "",
+    "text_overlay": "In studies, CRISPR screens",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Yet, there\u2019s still much to learn about potential off-target effects and ethical concerns.",
+    "visual_description": "Payoff visual: Yet, there\u2019s still much to learn about potential off-target effects and ethical concerns.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Yet, there\u2019s still much to learn about potential off-target effects and ethical concerns.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Yet, there\u2019s still much to learn about potential off-target effects and ethical concerns.",
+    "stock_footage_query": "",
+    "text_overlay": "Yet, there\u2019s still much",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Curious about CRISPR and its future? Like and follow for more science insights!",
+    "visual_description": "Cta visual: Curious about CRISPR and its future? Like and follow for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about CRISPR and its future? Like and follow for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about CRISPR and its future? Like and follow for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about CRISPR and",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

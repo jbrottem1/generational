@@ -1,0 +1,91 @@
+{
+  "world_id": "WORLD-FOREST",
+  "elements_required": [
+    "floor",
+    "walls",
+    "ceilings",
+    "doors",
+    "windows",
+    "furniture",
+    "props"
+  ],
+  "dimensions_m": {
+    "x": 40.0,
+    "y": 20.0,
+    "z": 40.0
+  },
+  "floor": [
+    {
+      "id": "main_floor",
+      "bounds": [
+        [
+          -20.0,
+          0,
+          -20.0
+        ],
+        [
+          20.0,
+          0,
+          20.0
+        ]
+      ],
+      "walkable": true,
+      "material": "exterior_ground"
+    }
+  ],
+  "walls": [],
+  "ceilings": [],
+  "doors": [
+    {
+      "id": "door_main",
+      "position": [
+        0.0,
+        0.0,
+        -19.9
+      ],
+      "swing": "inward",
+      "interactable": true
+    }
+  ],
+  "windows": [],
+  "furniture": [
+    {
+      "id": "furn_fallen_log_bench_0",
+      "type": "bench",
+      "position": [
+        -10.0,
+        0.0,
+        -6.0
+      ],
+      "collision": true,
+      "navigable_around": true
+    }
+  ],
+  "props": [
+    {
+      "id": "prop_moss_rock_0",
+      "type": "moss_rock",
+      "position": [
+        -10.0,
+        0.0,
+        -4.8
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_trail_marker_1",
+      "type": "trail_marker",
+      "position": [
+        -2.0,
+        0.0,
+        -4.8
+      ],
+      "collision": true,
+      "interactable": true
+    }
+  ],
+  "not_a_flat_image": true,
+  "explorable_volume": true,
+  "persistent": true
+}

@@ -1,0 +1,164 @@
+{
+  "episode_id": "dash_fireflies_001",
+  "series_id": "SERIES-DASH-SCIENCE",
+  "character_id": "CHAR-DASH",
+  "status": "mock_complete",
+  "duration_target_sec": 38,
+  "duration_planned_sec": 38,
+  "seo_title": "Why Fireflies Glow",
+  "description": "Dash chases fireflies through a summer night while explaining bioluminescence and why flashing is a signal — not just a pretty light.",
+  "hashtags": ["#DashScience", "#Fireflies", "#Bioluminescence", "#Nature", "#Insects", "#ScienceShorts", "#Shorts"],
+  "thumbnail_concept": "Night meadow gradient; Dash mid-run reaching for a bright firefly; trails of yellow-green dashes; title: 'WHY FIREFLIES GLOW'; high readability, 9:16.",
+  "voice_direction": "Playful chase energy, whisper-wonder on chemistry line, clear on 'signaling'; smile audible without being childish.",
+  "music_direction": "Light nocturnal pizzicato + soft pads; twinkle motifs synced to flashes; playful chase percussion under run; gentle settle on payoff.",
+  "scientific_notes": [
+    "Firefly light is bioluminescence (luciferin/luciferase chemistry in light organs).",
+    "Flashing patterns often function in mating signaling; also discussed in warning/communication contexts depending on species.",
+    "Do not claim all fireflies use identical codes — keep general."
+  ],
+  "script": {
+    "hook": "Fireflies don't just glow for decoration — they're sending messages.",
+    "body": [
+      "That light is chemistry: a tiny reaction in their bodies that releases energy as a flash.",
+      "Different patterns can mean different signals — like a secret code in the dark.",
+      "Often, it's about finding a mate.",
+      "Sometimes the glow also says: I'm here… pay attention."
+    ],
+    "payoff": "So every flash is more than pretty — it's a conversation written in light.",
+    "full_text": "Fireflies don't just glow for decoration — they're sending messages. That light is chemistry: a tiny reaction in their bodies that releases energy as a flash. Different patterns can mean different signals — like a secret code in the dark. Often, it's about finding a mate. Sometimes the glow also says: I'm here… pay attention. So every flash is more than pretty — it's a conversation written in light."
+  },
+  "scenes": [
+    {
+      "scene_id": "S1_hook",
+      "t_start": 0.0,
+      "t_end": 3.5,
+      "narration": "Fireflies don't just glow for decoration — they're sending messages.",
+      "background": {
+        "palette": "science_core",
+        "design": "Dusk-to-night vertical gradient, soft meadow silhouettes, floating geometric firefly dots — animated lighting pulses."
+      },
+      "camera": "chase_handheld_energy",
+      "dash_animation": ["run_cycle", "talk_bob"],
+      "expression": "excited",
+      "character_movement": "Dash sprints into frame chasing a bright firefly; glances at camera on 'messages'.",
+      "visuals": ["firefly trails", "message glyph briefly above bug"],
+      "image_prompt": "Dash stick figure running through night meadow chasing glowing firefly, dusk gradient, oversized eyes excited, 9:16 educational animation",
+      "sfx": ["night ambience", "quick footsteps", "firefly blip"]
+    },
+    {
+      "scene_id": "S2_chemistry",
+      "t_start": 3.5,
+      "t_end": 11.0,
+      "narration": "That light is chemistry: a tiny reaction in their bodies that releases energy as a flash.",
+      "background": {
+        "palette": "science_core",
+        "design": "Night field remains; floating simplified reaction diagram appears mid-air with glow output."
+      },
+      "camera": "diagram_lockoff_with_drift",
+      "dash_animation": ["magnify_look", "point_right", "throw_fact"],
+      "expression": "curious",
+      "character_movement": "Dash catches up, peeks with magnifier at firefly abdomen glow, throws fact card 'CHEMICAL FLASH'.",
+      "visuals": ["simplified reaction arrows", "abdomen glow inset", "fact card"],
+      "image_prompt": "Dash using magnifying glass on glowing firefly with floating simplified chemistry diagram, night gradient meadow, stick figure mascot",
+      "sfx": ["magnifier ting", "chem pop", "card whoosh"]
+    },
+    {
+      "scene_id": "S3_code",
+      "t_start": 11.0,
+      "t_end": 18.0,
+      "narration": "Different patterns can mean different signals — like a secret code in the dark.",
+      "background": {
+        "palette": "science_core",
+        "design": "Multiple fireflies flash in distinct rhythms; Morse-like dashed light patterns in sky."
+      },
+      "camera": "parallax_pan across flash patterns",
+      "dash_animation": ["question_tilt", "point_up", "talk_bob"],
+      "expression": "confused",
+      "character_movement": "Dash tilts head comparing two flash patterns; points up at dashed code.",
+      "visuals": ["pattern A vs B labels", "secret code dashes"],
+      "image_prompt": "Dash looking confused at two different firefly flash patterns with dashed light code in night sky, stick figure educational",
+      "sfx": ["two distinct blink rhythms", "curious boop"]
+    },
+    {
+      "scene_id": "S4_mate",
+      "t_start": 18.0,
+      "t_end": 24.0,
+      "narration": "Often, it's about finding a mate.",
+      "background": {
+        "palette": "science_core",
+        "design": "Two fireflies sync flash; heart is forbidden — use soft signal link line instead."
+      },
+      "camera": "slow_push_in on pair",
+      "dash_animation": ["walk_cycle", "hold_object", "face_audience"],
+      "expression": "neutral",
+      "character_movement": "Dash walks between pair holding a tiny signal flag prop; briefly faces audience.",
+      "visuals": ["sync flashes", "signal link line", "label SIGNAL"],
+      "image_prompt": "Dash walking between two syncing fireflies with signal link line, night meadow gradient, clean educational stick figure",
+      "sfx": ["synced double blip", "soft warm pad hit"]
+    },
+    {
+      "scene_id": "S5_attention",
+      "t_start": 24.0,
+      "t_end": 30.0,
+      "narration": "Sometimes the glow also says: I'm here… pay attention.",
+      "background": {
+        "palette": "science_core",
+        "design": "Single bright flash illuminates Dash; subtle particle burst; animated lighting key change."
+      },
+      "camera": "punch_in_eyes on flash",
+      "dash_animation": ["shock_recoil", "panic_flail", "idle_breathe"],
+      "expression": "shock",
+      "character_movement": "Big flash blinds Dash briefly; panic flail then settle breathing.",
+      "visuals": ["attention flash", "I'm here label"],
+      "image_prompt": "Dash recoiling from bright firefly flash with attention label, night scene, comedy timing, stick figure mascot",
+      "sfx": ["bright flash", "comic recoil"]
+    },
+    {
+      "scene_id": "S6_payoff",
+      "t_start": 30.0,
+      "t_end": 38.0,
+      "narration": "So every flash is more than pretty — it's a conversation written in light.",
+      "background": {
+        "palette": "science_core",
+        "design": "Wide meadow night sky filled with conversational flash network; soft gradients + particles."
+      },
+      "camera": "reveal_pull_back then slow_push_in to Dash",
+      "dash_animation": ["float_drift", "celebrate_jump", "face_audience"],
+      "expression": "celebrate",
+      "character_movement": "Dash hops celebrate among flashes, then faces audience for CTA.",
+      "visuals": ["conversation network lines between flashes", "CTA: Follow Dash Science"],
+      "image_prompt": "Dash celebrating in a field of fireflies connected by soft light conversation lines, night gradient, stick figure finale 9:16",
+      "sfx": ["network of soft blips", "celebrate chime", "outro night bed"]
+    }
+  ],
+  "transition_plan": [
+    {"from": "S1", "to": "S2", "type": "firefly_trail_match_cut", "sec": 0.25},
+    {"from": "S2", "to": "S3", "type": "blink_wipe", "sec": 0.3},
+    {"from": "S3", "to": "S4", "type": "pan_to_pair", "sec": 0.35},
+    {"from": "S4", "to": "S5", "type": "hard_flash_cut", "sec": 0.2},
+    {"from": "S5", "to": "S6", "type": "pull_back_reveal", "sec": 0.45}
+  ],
+  "caption_cues": [
+    {"t": 0.0, "text": "Not decoration — messages"},
+    {"t": 3.5, "text": "Glow = chemistry"},
+    {"t": 11.0, "text": "Patterns = secret code"},
+    {"t": 18.0, "text": "Often: finding a mate"},
+    {"t": 24.0, "text": "I'm here — pay attention"},
+    {"t": 30.0, "text": "A conversation written in light"}
+  ],
+  "sfx_plan": [
+    "night cricket bed (low)",
+    "footsteps chase",
+    "firefly blips patterned",
+    "magnifier ting",
+    "bright flash",
+    "celebrate chime"
+  ],
+  "music_cues": [
+    {"t": 0.0, "action": "chase pizzicato"},
+    {"t": 3.5, "action": "add pad for teach"},
+    {"t": 18.0, "action": "warm motif"},
+    {"t": 24.0, "action": "sting on flash"},
+    {"t": 30.0, "action": "wide resolve"}
+  ]
+}

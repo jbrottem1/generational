@@ -1,0 +1,76 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science has a clearer story about river deltas than social media does.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: River deltas form where rivers meet the sea, creating unique ecosystems.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: But did you know they're also vital for human life?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Deltas provide fertile land for agriculture and act as natural buffers against storms.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Pattern Interrupt visual: Yet, climate change threatens these delicate areas. Why should we care?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Payoff visual: By protecting deltas, we sustain biodiversity, secure food sources, and mitigate flooding.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cta visual: Follow for more fascinating science insights!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science has a clearer story about river deltas than social media does.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: River deltas form where rivers meet the sea, creating unique ecosystems.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: But did you know they're also vital for human life?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Deltas provide fertile land for agriculture and act as natural buffers against storms.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Pattern Interrupt visual: Yet, climate change threatens these delicate areas. Why should we care?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Payoff visual: By protecting deltas, we sustain biodiversity, secure food sources, and mitigate flooding.",
+      "duration_sec": 16.0
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cinematic motion: Cta visual: Follow for more fascinating science insights!",
+      "duration_sec": 10.0
+    }
+  ]
+}

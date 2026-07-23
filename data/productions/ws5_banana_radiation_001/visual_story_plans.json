@@ -1,0 +1,79 @@
+[
+  {
+    "see": "center-punched single subject, negative space above for text; subject: Every banana emits a tiny bit of radiation \u2014 and that is completely normal.; emotion: curiosity; educational documentary lighting",
+    "media_type": "ai_cinematic_artwork",
+    "camera_movement": "quick punch-in on key detail",
+    "motion_effects": "fast punch-in from 120% to 100% in the first 0.5s",
+    "transition": "hard cut",
+    "on_screen_text": "Every banana emits a tiny",
+    "captions": "upper third \u2014 clear of the punch-in subject",
+    "supporting_graphics": "",
+    "density_target_sec": 3.5
+  },
+  {
+    "see": "rule of thirds, subject leading the eye toward the next cut; subject: What you\u2019re tasting is potassium-40, a naturally occurring isotope. Yes, it's radioactive.; emotion: curiosity; educational documentary lighting",
+    "media_type": "scientific_illustration",
+    "camera_movement": "ken burns drift right",
+    "motion_effects": "subtle 3% push on the key sentence",
+    "transition": "hard cut",
+    "on_screen_text": "What you\u2019re tasting is potassium-40,",
+    "captions": "bottom third, safe zone",
+    "supporting_graphics": "scientific_illustration",
+    "density_target_sec": 3.5
+  },
+  {
+    "see": "layered foreground obscuring a partially visible subject; subject: But don\u2019t worry! The levels are tiny \u2014 so tiny, they're harmless.; emotion: relief; educational documentary lighting",
+    "media_type": "ai_cinematic_artwork",
+    "camera_movement": "slow zoom out reveal",
+    "motion_effects": "creeping 100% to 108% push across the scene",
+    "transition": "match cut",
+    "on_screen_text": "But don\u2019t worry! The levels",
+    "captions": "lower third \u2014 under the concealed reveal",
+    "supporting_graphics": "",
+    "density_target_sec": 3.5
+  },
+  {
+    "see": "rule of thirds, subject leading the eye toward the next cut; subject: In fact, you\u2019d need to eat about 10,000 bananas in one sitting to feel any effect!; emotion: surprise; educational documentary lighting",
+    "media_type": "real_world_photograph",
+    "camera_movement": "pan left across subject",
+    "motion_effects": "subtle 3% push on the key sentence",
+    "transition": "hard cut",
+    "on_screen_text": "In fact, you\u2019d need to",
+    "captions": "bottom third, safe zone",
+    "supporting_graphics": "",
+    "density_target_sec": 3.5
+  },
+  {
+    "see": "hero framing, shallow depth of field, clean background; subject: That\u2019s why scientists developed the 'banana equivalent dose' \u2014 a fun way to measure radiation!; emotion: enthusiasm; educational documentary lighting",
+    "media_type": "ai_cinematic_artwork",
+    "camera_movement": "documentary slow zoom",
+    "motion_effects": "slow-motion settle from 105% to 100%",
+    "transition": "dissolve",
+    "on_screen_text": "That\u2019s why scientists developed the",
+    "captions": "center \u2014 the takeaway IS the frame",
+    "supporting_graphics": "",
+    "density_target_sec": 3.5
+  },
+  {
+    "see": "off-center rule-of-thirds, tilted horizon; subject: Remember, everything around us has some level of radioactivity. It\u2019s perfectly natural.; emotion: calm; educational documentary lighting",
+    "media_type": "motion_graphics",
+    "camera_movement": "subtle parallax push",
+    "motion_effects": "none \u2014 the whip carries the energy",
+    "transition": "whip cut",
+    "on_screen_text": "Remember, everything around us has",
+    "captions": "center \u2014 stamped with the interrupt word",
+    "supporting_graphics": "",
+    "density_target_sec": 3.5
+  },
+  {
+    "see": "centered, eye-level, symmetrical, direct eye contact with lens; subject: Next time you enjoy a banana, appreciate its unique quirks! Like and follow for more weird science!; emotion: engagement; educational documentary lighting",
+    "media_type": "scientific_illustration",
+    "camera_movement": "slow cinematic push-in",
+    "motion_effects": "none \u2014 stability signals sincerity",
+    "transition": "fade out",
+    "on_screen_text": "Next time you enjoy a",
+    "captions": "lower third \u2014 beside the follow button mimic",
+    "supporting_graphics": "scientific_illustration",
+    "density_target_sec": 3.5
+  }
+]

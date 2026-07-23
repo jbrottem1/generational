@@ -1,0 +1,21 @@
+{
+  "id": "think_scratch",
+  "loop": false,
+  "duration_sec": 0.8,
+  "expression": "thinking",
+  "keyframes": [
+    {
+      "t": 0.0,
+      "hand": "side"
+    },
+    {
+      "t": 0.4,
+      "hand": "chin"
+    },
+    {
+      "t": 0.8,
+      "hand": "chin_tap"
+    }
+  ],
+  "notes": "Look up-left; slight body lean."
+}

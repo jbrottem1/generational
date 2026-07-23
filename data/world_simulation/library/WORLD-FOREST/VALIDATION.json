@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "score": 100,
+  "failures": [],
+  "rejects_hit": [],
+  "reject_catalog": [
+    "flat_image_background",
+    "actors_cannot_navigate",
+    "objects_not_interactable",
+    "environment_static",
+    "camera_replaces_character_movement"
+  ],
+  "success": "Persistent worlds populated by reusable digital actors \u2014 filmed on a real set, not assembled from disconnected images.",
+  "mp4_required": true,
+  "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4: actors must navigate living stages, not photos."
+}

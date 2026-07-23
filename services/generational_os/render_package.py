@@ -1,0 +1,199 @@
+"""Layer 2 output — RENDER_PACKAGE.json (successor to LOCAL_RENDER_JOB.json)."""
+
+from __future__ import annotations
+
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+from core.env import project_root
+from services.generational_os.export_classifier import classified_export_dir
+from services.generational_os.media_library import build_library_filename, classify_production
+from services.generational_os.layers import ExecutionLayer
+from services.generational_os.manifest import load_manifest, save_manifest
+from services.media_production.execution_mode import get_execution_context, local_status_message
+from services.reality.catalog import get_image
+from services.reality.planner import plan_reality_beats
+
+
+def _image_asset_entry(image_id: str) -> dict[str, Any]:
+    entry = get_image(image_id)
+    if entry is None:
+        return {"image_id": image_id, "missing": True}
+    root = project_root()
+    path = entry.path
+    try:
+        path_str = str(path.relative_to(root))
+    except ValueError:
+        path_str = str(path)
+    return {
+        "image_id": image_id,
+        "path": path_str,
+        "license": entry.license,
+        "source_url": entry.source_url,
+        "credit": entry.credit,
+        "organism": entry.organism,
+    }
+
+
+def build_render_package(
+    *,
+    project_id: str,
+    title: str,
+    demo_id: str,
+    filename: str,
+    hook: str,
+    takeaway: str,
+    main_concept: str,
+    beats: list[dict[str, Any]],
+    domain: str = "",
+    subject: str = "",
+    series: str = "",
+    episode: str = "",
+    sources: list[str] | None = None,
+    narration: dict[str, Any] | None = None,
+    render: dict[str, Any] | None = None,
+    animations: dict[str, Any] | None = None,
+    choreography: dict[str, Any] | None = None,
+    image_ids: list[str] | None = None,
+) -> dict[str, Any]:
+    ctx = get_execution_context()
+    classification = classify_production(
+        subject=subject or title,
+        title=title,
+        series=series,
+        domain=domain,
+        filename=filename,
+        demo_id=demo_id,
+    )
+    folder = classification["primary"]
+    secondary = classification["secondary"]
+    library_filename = filename or build_library_filename(
+        category=folder,
+        series=series or "001",
+        episode=episode or project_id,
+        topic=title,
+    )
+    export_dir = classified_export_dir(domain=folder, create=False)
+
+    ids = list(image_ids or [])
+    for panel in plan_reality_beats(demo_id):
+        ids.extend(panel.image_ids)
+    ids = list(dict.fromkeys(ids))
+
+    return {
+        "schema_version": 3,
+        "os_version": "2.6",
+        "layer": ExecutionLayer.PRE_PRODUCTION.value,
+        "project_id": project_id,
+        "job_id": project_id,
+        "title": title,
+        "episode": episode,
+        "status": "ready_to_render",
+        "message": local_status_message(),
+        "execution_mode": ctx.mode.value,
+        "prepared_at": datetime.now(timezone.utc).isoformat(),
+        "domain": folder,
+        "secondary_categories": secondary,
+        "script": {
+            "hook": hook,
+            "takeaway": takeaway,
+            "main_concept": main_concept,
+            "beats": beats,
+            "sources": sources or [],
+        },
+        "timing": {
+            "beats": beats,
+            "target_duration_sec": {"min": 15, "max": 32},
+            "fps": int((render or {}).get("fps") or 24),
+        },
+        "assets": {
+            "images": [_image_asset_entry(i) for i in ids],
+            "catalog_root": "data/reality",
+            "cache_root": "data/local_cache",
+            "asset_registry_ids": ids,
+        },
+        "narration": narration
+        or {
+            "provider": "openai",
+            "voice": "nova",
+            "model": "tts-1-hd",
+            "builder": "services.animation.communicator_delivery.build_paused_narration",
+            "smoke_fallback": "services.reality.smoke_narration.build_smoke_narration",
+        },
+        "animations": animations
+        or {
+            "demo_id": demo_id,
+            "educator_mode": True,
+            "renderer": "services.animation.performer.render_lip_sync_performance",
+        },
+        "choreography": choreography or {"plan_id": demo_id},
+        "transitions": [],
+        "export": {
+            "filename": library_filename,
+            "library_filename": library_filename,
+            "domain_folder": folder,
+            "secondary_categories": secondary,
+            "directory": str(export_dir),
+            "directory_expanded": str(export_dir.expanduser()),
+            "library_root": str(export_dir.parent),
+            "legacy_directory": str(Path.home() / "Desktop" / "AI Start-Up" / "videos" / "Test run 2 generational"),
+            "companion_files": [
+                "script.md",
+                "sources.json",
+                "captions.srt",
+                "thumbnail.png",
+                "metadata.json",
+                "production_report.md",
+                "render_manifest.json",
+            ],
+            "verify": [
+                "file_exists",
+                "size_gt_zero",
+                "video_stream",
+                "audio_stream",
+                "playable",
+                "duration",
+                "resolution",
+                "correct_category_folder",
+                "companion_files",
+                "library_index_updated",
+                "manifest_updated",
+                "production_db_updated",
+            ],
+        },
+        "local_command": f"python3 scripts/run_render_package.py --package RENDER_PACKAGE.json",
+        "handoff": {
+            "from_layer": ExecutionLayer.PRE_PRODUCTION.value,
+            "to_layer": ExecutionLayer.LOCAL_PRODUCTION.value,
+            "owner": "Local Workstation",
+        },
+    }
+
+
+def write_render_package(package: dict[str, Any], path: Path | None = None) -> Path:
+    pid = str(package.get("project_id") or package.get("job_id") or "unknown")
+    out = path or (project_root() / "RENDER_PACKAGE.json")
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(package, indent=2), encoding="utf-8")
+
+    per_project = project_root() / "data" / "generational_os" / "productions" / pid / "RENDER_PACKAGE.json"
+    per_project.parent.mkdir(parents=True, exist_ok=True)
+    per_project.write_text(json.dumps(package, indent=2), encoding="utf-8")
+
+    manifest = load_manifest(pid)
+    if manifest:
+        manifest.touch(
+            render_package_path=str(out),
+            pipeline_stage="render_package",
+            layer="pre_production",
+            local_render_status="ready_to_render",
+            asset_registry=list((package.get("assets") or {}).get("asset_registry_ids") or []),
+        )
+        save_manifest(manifest)
+    return out
+
+
+def load_render_package(path: Path) -> dict[str, Any]:
+    return json.loads(path.read_text(encoding="utf-8"))

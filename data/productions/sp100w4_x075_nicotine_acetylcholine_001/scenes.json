@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about nicotine acetylcholine.",
+    "visual_description": "Hook visual: Here's what science actually says about nicotine acetylcholine.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about nicotine acetylcholine.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about nicotine acetylcholine.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Nicotine interacts with acetylcholine receptors, influencing brain functions.",
+    "visual_description": "Context visual: Nicotine interacts with acetylcholine receptors, influencing brain functions.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Nicotine interacts with acetylcholine receptors, influencing brain functions.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Nicotine interacts with acetylcholine receptors, influencing brain functions.",
+    "stock_footage_query": "",
+    "text_overlay": "Nicotine interacts with acetylcholine",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But did you know that this interaction can enhance attention and memory?",
+    "visual_description": "Escalation visual: But did you know that this interaction can enhance attention and memory?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But did you know that this interaction can enhance attention and memory?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But did you know that this interaction can enhance attention and memory?",
+    "stock_footage_query": "",
+    "text_overlay": "But did you know",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Research indicates that nicotine may temporarily boost cognitive functions.",
+    "visual_description": "Evidence visual: Research indicates that nicotine may temporarily boost cognitive functions.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research indicates that nicotine may temporarily boost cognitive functions.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research indicates that nicotine may temporarily boost cognitive functions.",
+    "stock_footage_query": "",
+    "text_overlay": "Research indicates that nicotine",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But here's the catch: long-term effects are still being studied.",
+    "visual_description": "Pattern Interrupt visual: But here's the catch: long-term effects are still being studied.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: But here's the catch: long-term effects are still being studied.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: But here's the catch: long-term effects are still being studied.",
+    "stock_footage_query": "",
+    "text_overlay": "But here's the catch:",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 16.0,
+    "narration": "So while nicotine can enhance, it also complicates brain chemistry.",
+    "visual_description": "Payoff visual: So while nicotine can enhance, it also complicates brain chemistry.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So while nicotine can enhance, it also complicates brain chemistry.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So while nicotine can enhance, it also complicates brain chemistry.",
+    "stock_footage_query": "",
+    "text_overlay": "So while nicotine can",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Want to dive deeper into neuroscience? Hit that follow for more!",
+    "visual_description": "Cta visual: Want to dive deeper into neuroscience? Hit that follow for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into neuroscience? Hit that follow for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into neuroscience? Hit that follow for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

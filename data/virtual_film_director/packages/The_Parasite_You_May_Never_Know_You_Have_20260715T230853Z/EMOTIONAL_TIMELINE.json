@@ -1,0 +1,98 @@
+{
+  "total_duration_sec": 37.0,
+  "beats": [
+    {
+      "scene_number": 1,
+      "start_sec": 0.0,
+      "end_sec": 3.0,
+      "emotional_beat": "curiosity",
+      "emotion": "curiosity",
+      "lighting_mood": "volumetric_sunlight",
+      "shot_language": "reveal_shot"
+    },
+    {
+      "scene_number": 2,
+      "start_sec": 3.0,
+      "end_sec": 7.5,
+      "emotional_beat": "explanation",
+      "emotion": "curiosity",
+      "lighting_mood": "volumetric_sunlight",
+      "shot_language": "orbit_shot"
+    },
+    {
+      "scene_number": 3,
+      "start_sec": 7.5,
+      "end_sec": 13.5,
+      "emotional_beat": "wonder",
+      "emotion": "curiosity",
+      "lighting_mood": "volumetric_sunlight",
+      "shot_language": "extreme_close_up"
+    },
+    {
+      "scene_number": 4,
+      "start_sec": 13.5,
+      "end_sec": 15.7,
+      "emotional_beat": "scale",
+      "emotion": "focus",
+      "lighting_mood": "soft_daylight",
+      "shot_language": "medium_dialogue"
+    },
+    {
+      "scene_number": 5,
+      "start_sec": 15.7,
+      "end_sec": 18.7,
+      "emotional_beat": "surprise",
+      "emotion": "focus",
+      "lighting_mood": "soft_daylight",
+      "shot_language": "push_in"
+    },
+    {
+      "scene_number": 6,
+      "start_sec": 18.7,
+      "end_sec": 24.3,
+      "emotional_beat": "relief",
+      "emotion": "focus",
+      "lighting_mood": "soft_daylight",
+      "shot_language": "parallax"
+    },
+    {
+      "scene_number": 7,
+      "start_sec": 24.3,
+      "end_sec": 26.9,
+      "emotional_beat": "payoff",
+      "emotion": "clarity",
+      "lighting_mood": "soft_daylight",
+      "shot_language": "hero_shot"
+    },
+    {
+      "scene_number": 8,
+      "start_sec": 26.9,
+      "end_sec": 29.9,
+      "emotional_beat": "explanation",
+      "emotion": "focus",
+      "lighting_mood": "soft_daylight",
+      "shot_language": "tracking_shot"
+    },
+    {
+      "scene_number": 9,
+      "start_sec": 29.9,
+      "end_sec": 37.0,
+      "emotional_beat": "payoff",
+      "emotion": "clarity",
+      "lighting_mood": "soft_daylight",
+      "shot_language": "epic_establishing"
+    }
+  ],
+  "rhythm": [
+    "curiosity",
+    "explanation",
+    "wonder",
+    "scale",
+    "surprise",
+    "relief",
+    "payoff",
+    "explanation",
+    "payoff"
+  ],
+  "avoids_flatness": true
+}

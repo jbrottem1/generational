@@ -1,0 +1,74 @@
+{
+  "title": "CRISPR screens",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "CRISPR screens reveal powerful insights into gene function, but their implications are often misunderstood.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about CRISPR screens than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "CRISPR screens let scientists explore the roles of thousands of genes at once.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But they aren't magic. Results can vary, and context matters.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "In studies, CRISPR screens can pinpoint critical pathways in diseases, giving hope for targeted therapies.",
+      "emotion": "curiosity",
+      "delivery": "inspirational",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "Yet, there\u2019s still much to learn about potential off-target effects and ethical concerns.",
+      "emotion": "curiosity",
+      "delivery": "serious",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about CRISPR and its future? Like and follow for more science insights!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "none"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about CRISPR screens than social media does. CRISPR screens let scientists explore the roles of thousands of genes at once. But they aren't magic. Results can vary, and context matters. In studies, CRISPR screens can pinpoint critical pathways in diseases, giving hope for targeted therapies. Yet, there\u2019s still much to learn about potential off-target effects and ethical concerns. Curious about CRISPR and its future? Like and follow for more science insights!",
+  "call_to_action": "Like and follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:37:17.184752+00:00",
+  "source": "ai"
+}

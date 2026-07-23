@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Here's what science actually says about Helicobacter pylori ulcers.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Most believe ulcers are caused by stress or spicy foods, but surprise! It's often a bacterial infection.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Helicobacter pylori, a sneaky bacterium, can live in your stomach lining, causing inflammation.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Research shows that up to 80% of gastric ulcers are linked to this bacterium. How wild is that?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Antibiotics can eliminate it, but not everyone with H. pylori has ulcers. It's a complex dance of factors.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about more science secrets? Like and follow for your next mind-bending fact!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Here's what science actually says about Helicobacter pylori ulcers.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Most believe ulcers are caused by stress or spicy foods, but surprise! It's often a bacterial infection.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Helicobacter pylori, a sneaky bacterium, can live in your stomach lining, causing inflammation.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Research shows that up to 80% of gastric ulcers are linked to this bacterium. How wild is that?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Antibiotics can eliminate it, but not everyone with H. pylori has ulcers. It's a complex dance of factors.",
+      "duration_sec": 18.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about more science secrets? Like and follow for your next mind-bending fact!",
+      "duration_sec": 16.0
+    }
+  ]
+}

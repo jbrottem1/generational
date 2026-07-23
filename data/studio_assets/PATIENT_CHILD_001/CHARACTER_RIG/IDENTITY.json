@@ -1,0 +1,17 @@
+{
+  "character_id": "PATIENT_CHILD_001",
+  "canonical_name": "Patient Child",
+  "role": "pediatric_patient_presence",
+  "age_appearance": "child_8_to_10",
+  "body_type": "child_proportions",
+  "height_cm": 132.0,
+  "proportions": "child_canonical",
+  "continuity_version": "0.1.0",
+  "forbid_regenerate_per_scene": true,
+  "permanent_digital_actor": true,
+  "is_gold_standard": false,
+  "status": "reserved",
+  "studio_asset_path": "data/studio_assets/PATIENT_CHILD_001/",
+  "voice_ref": null,
+  "composed_from_existing": false
+}

@@ -1,0 +1,17 @@
+{
+  "id": "face_audience",
+  "loop": false,
+  "duration_sec": 0.4,
+  "expression": "audience",
+  "keyframes": [
+    {
+      "t": 0.0,
+      "gaze": "scene"
+    },
+    {
+      "t": 0.4,
+      "gaze": "camera"
+    }
+  ],
+  "notes": "Punch-in optional for CTA."
+}

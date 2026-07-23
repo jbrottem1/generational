@@ -3,11 +3,12 @@ from engines import registry
 from engines.base import PlannedEngine
 
 INTELLIGENCE_LIVE = {
-    "trend_discovery", "opportunity_ranking",
+    "trend_discovery", "opportunity_ranking", "trend_forecasting",
+    "market_intelligence",
     "research", "ideation", "psychology", "script_generation",
-    "attention_graph",
+    "visual_intelligence", "voice_audio", "attention_graph",
     "ranking", "script",
-    "critic", "revision", "citation", "seo", "quality",
+    "critic", "revision", "citation", "seo", "threat_detection", "quality",
 }
 
 PRODUCTION_LIVE = {
@@ -15,9 +16,40 @@ PRODUCTION_LIVE = {
     "subtitle", "timeline", "render_package", "publishing_queue",
 }
 
-LIVE_KEYS = INTELLIGENCE_LIVE | PRODUCTION_LIVE
+# Agent 6 — the render stage engines are live (mock providers, real plans).
+RENDER_LIVE = {"image", "video", "render"}
 
-PLANNED_KEYS = {"voice", "image", "video", "publishing", "analytics", "learning"}
+# Agent 8 — the Global Content Optimization Engine is live.
+# Agent 13 — Autonomous Optimization & Experimentation Engine V4 is live.
+OPTIMIZATION_LIVE = {"seo_optimization", "optimization_lab"}
+
+# Agent 7 — the Publishing & Distribution Engine (+ scheduler) is live.
+PUBLISHING_LIVE = {"publishing", "scheduler"}
+
+# Agent 9 — the Analytics & Continuous Learning Engine is live.
+ANALYTICS_LIVE = {"analytics", "learning"}
+
+# Agent 14 — the Universal Asset Generation Engine is live.
+ASSET_GENERATION_LIVE = {"asset_generation"}
+
+# Agent 12 — the Creative Studio Engine is live.
+CREATIVE_STUDIO_LIVE = {"creative_studio"}
+
+# Agent 17 — the Post-Production & Intelligent Editing Engine is live.
+POST_PRODUCTION_LIVE = {"post_production"}
+
+LIVE_KEYS = (
+    INTELLIGENCE_LIVE | PRODUCTION_LIVE | RENDER_LIVE
+    | OPTIMIZATION_LIVE | PUBLISHING_LIVE | ANALYTICS_LIVE
+    | ASSET_GENERATION_LIVE | CREATIVE_STUDIO_LIVE | POST_PRODUCTION_LIVE
+)
+
+PLANNED_KEYS = {
+    # Contract stubs — light up when feature branches merge
+    "brand_management",
+    "character_universe",    # Agent 15
+    "animation",             # Agent 16
+}
 
 EXPECTED_KEYS = LIVE_KEYS | PLANNED_KEYS
 
@@ -34,8 +66,9 @@ def test_intelligence_engines_ready_and_planned_engines_not():
 
 
 def test_planned_engines_return_not_implemented():
-    result = registry.get_engine("voice").run({})
-    assert result == {"voice_status": "not_implemented"}
+    result = registry.get_engine("animation").run({})
+    assert result == {"animation_status": "NOT_IMPLEMENTED"}
+    assert registry.get_engine("animation").is_ready() is False
 
 
 def test_new_engine_can_register_and_replace():

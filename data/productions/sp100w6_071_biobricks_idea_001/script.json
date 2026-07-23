@@ -1,0 +1,74 @@
+{
+  "title": "Biobricks Idea",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the intriguing concept of biobricks and their potential in sustainable building.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if bricks could grow like plants?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Meet biobricks\u2014a sustainable alternative made from living organisms.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "These bricks can self-repair, reducing waste and energy costs!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Scientists are experimenting, but results vary. Success is not guaranteed.",
+      "emotion": "curiosity",
+      "delivery": "cautionary",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 42.0,
+      "segment_type": "payoff",
+      "voiceover": "If perfected, biobricks could revolutionize construction and combat climate change.",
+      "emotion": "hope",
+      "delivery": "inspiring",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 42.0,
+      "end_time": 58.0,
+      "segment_type": "cta",
+      "voiceover": "Interested in the future of building? Like and follow for more science insights!",
+      "emotion": "inviting",
+      "delivery": "upbeat",
+      "retention_device": "none"
+    }
+  ],
+  "full_voiceover": "What if bricks could grow like plants? Meet biobricks\u2014a sustainable alternative made from living organisms. These bricks can self-repair, reducing waste and energy costs! Scientists are experimenting, but results vary. Success is not guaranteed. If perfected, biobricks could revolutionize construction and combat climate change. Interested in the future of building? Like and follow for more science insights!",
+  "call_to_action": "Like and follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:05:23.201734+00:00",
+  "source": "ai"
+}

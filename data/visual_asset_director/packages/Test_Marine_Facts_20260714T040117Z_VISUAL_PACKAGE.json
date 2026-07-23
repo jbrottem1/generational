@@ -1,0 +1,756 @@
+{
+  "package_type": "VISUAL_PACKAGE",
+  "package_version": "1.0.0",
+  "production_id": "",
+  "topic": "Test Marine Facts",
+  "niche": "biology",
+  "platform": "youtube_shorts",
+  "style_profile": {
+    "style_key": "documentary",
+    "label": "Documentary",
+    "palette_bias": "natural_desaturated",
+    "lighting": "motivated_practical",
+    "motion": "observational_push_orbit",
+    "notes": "Authentic environments, restrained grade, evidence-forward framing",
+    "inferred": false,
+    "niche": "biology",
+    "topic": "Test Marine Facts",
+    "world_type": "ocean_research_observatory"
+  },
+  "approved_assets": [
+    {
+      "scene_id": "scene_00",
+      "path": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/00_hook.png",
+      "scorecard": {
+        "resolution": 95.0,
+        "lighting": 87.9,
+        "composition": 73.4,
+        "continuity": 71.5,
+        "character_consistency": 85.0,
+        "environment_consistency": 88.0,
+        "educational_clarity": 70.0,
+        "motion_potential": 82.0,
+        "thumbnail_appeal": 83.2,
+        "style_fit": 70.0,
+        "overall_professional_quality": 77.3
+      },
+      "composition": {
+        "rule_of_thirds": 87.8,
+        "subject_clarity": 56.3,
+        "eye_direction": 78.0,
+        "leading_lines": 52.6,
+        "depth": 82.4,
+        "layering": 77.4,
+        "background_separation": 64.0,
+        "visual_hierarchy": 71.1,
+        "negative_space": 94.8,
+        "educational_clarity": 70.0,
+        "composition_mean": 73.4,
+        "frame_aspect_fit": 90.0,
+        "pixel_area": 2073600.0
+      },
+      "source": "scene_field"
+    },
+    {
+      "scene_id": "scene_01",
+      "path": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/01b_alt.png",
+      "scorecard": {
+        "resolution": 95.0,
+        "lighting": 87.9,
+        "composition": 72.2,
+        "continuity": 71.5,
+        "character_consistency": 85.0,
+        "environment_consistency": 88.0,
+        "educational_clarity": 70.0,
+        "motion_potential": 82.0,
+        "thumbnail_appeal": 82.9,
+        "style_fit": 70.0,
+        "overall_professional_quality": 77.1
+      },
+      "composition": {
+        "rule_of_thirds": 87.8,
+        "subject_clarity": 56.3,
+        "eye_direction": 68.0,
+        "leading_lines": 52.6,
+        "depth": 82.4,
+        "layering": 77.4,
+        "background_separation": 64.0,
+        "visual_hierarchy": 68.6,
+        "negative_space": 94.8,
+        "educational_clarity": 70.0,
+        "composition_mean": 72.2,
+        "frame_aspect_fit": 90.0,
+        "pixel_area": 2073600.0
+      },
+      "source": "scene_dir_pool"
+    },
+    {
+      "scene_id": "scene_02",
+      "path": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/01b_alt.png",
+      "scorecard": {
+        "resolution": 95.0,
+        "lighting": 87.9,
+        "composition": 72.2,
+        "continuity": 71.5,
+        "character_consistency": 85.0,
+        "environment_consistency": 88.0,
+        "educational_clarity": 70.0,
+        "motion_potential": 82.0,
+        "thumbnail_appeal": 82.9,
+        "style_fit": 70.0,
+        "overall_professional_quality": 77.1
+      },
+      "composition": {
+        "rule_of_thirds": 87.8,
+        "subject_clarity": 56.3,
+        "eye_direction": 68.0,
+        "leading_lines": 52.6,
+        "depth": 82.4,
+        "layering": 77.4,
+        "background_separation": 64.0,
+        "visual_hierarchy": 68.6,
+        "negative_space": 94.8,
+        "educational_clarity": 70.0,
+        "composition_mean": 72.2,
+        "frame_aspect_fit": 90.0,
+        "pixel_area": 2073600.0
+      },
+      "source": "scene_field"
+    }
+  ],
+  "rejected_assets": [],
+  "rejection_reasons_summary": {},
+  "visual_scores": {
+    "per_scene": {
+      "scene_00": {
+        "resolution": 95.0,
+        "lighting": 87.9,
+        "composition": 73.4,
+        "continuity": 71.5,
+        "character_consistency": 85.0,
+        "environment_consistency": 88.0,
+        "educational_clarity": 70.0,
+        "motion_potential": 82.0,
+        "thumbnail_appeal": 83.2,
+        "style_fit": 70.0,
+        "overall_professional_quality": 77.3
+      },
+      "scene_01": {
+        "resolution": 95.0,
+        "lighting": 87.9,
+        "composition": 72.2,
+        "continuity": 71.5,
+        "character_consistency": 85.0,
+        "environment_consistency": 88.0,
+        "educational_clarity": 70.0,
+        "motion_potential": 82.0,
+        "thumbnail_appeal": 82.9,
+        "style_fit": 70.0,
+        "overall_professional_quality": 77.1
+      },
+      "scene_02": {
+        "resolution": 95.0,
+        "lighting": 87.9,
+        "composition": 72.2,
+        "continuity": 71.5,
+        "character_consistency": 85.0,
+        "environment_consistency": 88.0,
+        "educational_clarity": 70.0,
+        "motion_potential": 82.0,
+        "thumbnail_appeal": 82.9,
+        "style_fit": 70.0,
+        "overall_professional_quality": 77.1
+      }
+    },
+    "mean_overall_professional_quality": 77.2,
+    "approved_count": 3,
+    "rejected_count": 0,
+    "approval_rate": 1.0
+  },
+  "continuity_report": {
+    "world_id": "WORLD-TEST",
+    "world_type": "ocean_research_observatory",
+    "environment_ids": [],
+    "character_references": [
+      {
+        "name": "Professor",
+        "continuity_lock": true
+      }
+    ],
+    "palette_consistency": 100.0,
+    "environment_consistency": 88.0,
+    "character_consistency": 85.0,
+    "style_consistency": 70.0,
+    "style_profile": "documentary",
+    "average_palette_drift": 0.0,
+    "repeated_asset_count": 1,
+    "continuity_issues": [],
+    "continuity_score": 71.5,
+    "preserves": [
+      "character_appearance",
+      "clothing",
+      "hair",
+      "facial_structure",
+      "age",
+      "color_palette",
+      "lighting_direction",
+      "time_of_day",
+      "environment",
+      "props",
+      "camera_orientation",
+      "scale",
+      "perspective",
+      "artistic_style"
+    ],
+    "note": "Professor / Observatory / Lab continuity enforced via world + character refs"
+  },
+  "thumbnail_candidate": {
+    "path": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/00_hook.png",
+    "scene_id": "scene_00",
+    "thumbnail_appeal": 83.2,
+    "scorecard": {
+      "resolution": 95.0,
+      "lighting": 87.9,
+      "composition": 73.4,
+      "continuity": 71.5,
+      "character_consistency": 85.0,
+      "environment_consistency": 88.0,
+      "educational_clarity": 70.0,
+      "motion_potential": 82.0,
+      "thumbnail_appeal": 83.2,
+      "style_fit": 70.0,
+      "overall_professional_quality": 77.3
+    }
+  },
+  "character_references": [
+    {
+      "name": "Professor",
+      "continuity_lock": true
+    }
+  ],
+  "environment_references": [],
+  "asset_manifest": [
+    {
+      "scene_id": "scene_00",
+      "path": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/00_hook.png",
+      "approved": true,
+      "cinematic_ready": true,
+      "overall": 77.3
+    },
+    {
+      "scene_id": "scene_01",
+      "path": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/01b_alt.png",
+      "approved": true,
+      "cinematic_ready": true,
+      "overall": 77.1
+    },
+    {
+      "scene_id": "scene_02",
+      "path": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/01b_alt.png",
+      "approved": true,
+      "cinematic_ready": true,
+      "overall": 77.1
+    }
+  ],
+  "scene_direction": [
+    {
+      "scene_id": "scene_00",
+      "scene": {
+        "scene_id": "scene_00",
+        "purpose": "00_hook",
+        "image": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/00_hook.png",
+        "approved_asset_path": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/00_hook.png",
+        "visual_asset_scorecard": {
+          "resolution": 95.0,
+          "lighting": 87.9,
+          "composition": 73.4,
+          "continuity": 71.5,
+          "character_consistency": 85.0,
+          "environment_consistency": 88.0,
+          "educational_clarity": 70.0,
+          "motion_potential": 82.0,
+          "thumbnail_appeal": 83.2,
+          "style_fit": 70.0,
+          "overall_professional_quality": 77.3
+        },
+        "visual_asset_approved": true,
+        "cinematic_ready": true,
+        "style_profile": "documentary"
+      },
+      "approved": true,
+      "selected_path": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/00_hook.png",
+      "provisional_path": null,
+      "scorecard": {
+        "resolution": 95.0,
+        "lighting": 87.9,
+        "composition": 73.4,
+        "continuity": 71.5,
+        "character_consistency": 85.0,
+        "environment_consistency": 88.0,
+        "educational_clarity": 70.0,
+        "motion_potential": 82.0,
+        "thumbnail_appeal": 83.2,
+        "style_fit": 70.0,
+        "overall_professional_quality": 77.3
+      },
+      "composition": {
+        "rule_of_thirds": 87.8,
+        "subject_clarity": 56.3,
+        "eye_direction": 78.0,
+        "leading_lines": 52.6,
+        "depth": 82.4,
+        "layering": 77.4,
+        "background_separation": 64.0,
+        "visual_hierarchy": 71.1,
+        "negative_space": 94.8,
+        "educational_clarity": 70.0,
+        "composition_mean": 73.4,
+        "frame_aspect_fit": 90.0,
+        "pixel_area": 2073600.0
+      },
+      "inspection": {
+        "ok": true,
+        "approved": true,
+        "reject_reasons": [],
+        "warnings": [],
+        "metrics": {
+          "path": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/00_hook.png",
+          "exists": true,
+          "kind": "image",
+          "width": 1080,
+          "height": 1920,
+          "megapixels": 2.074,
+          "file_bytes": 15732,
+          "aspect": {
+            "ok": true,
+            "ratio": 0.5625,
+            "target": "9:16",
+            "delta": 0.0
+          },
+          "laplacian_variance": 352.37,
+          "luminance_mean": 69.7,
+          "luminance_std": 47.24,
+          "saturation_mean": 0.747,
+          "edge_density": 0.0327,
+          "watermark_risk": 0.231,
+          "center_luminance_std": 30.83,
+          "palette": [
+            [
+              20,
+              40,
+              70
+            ],
+            [
+              30,
+              160,
+              200
+            ],
+            [
+              30,
+              161,
+              201
+            ],
+            [
+              20,
+              38,
+              68
+            ],
+            [
+              220,
+              180,
+              60
+            ]
+          ]
+        },
+        "meta": {
+          "from": "image"
+        },
+        "palette": [
+          [
+            20,
+            40,
+            70
+          ],
+          [
+            30,
+            160,
+            200
+          ],
+          [
+            30,
+            161,
+            201
+          ],
+          [
+            20,
+            38,
+            68
+          ],
+          [
+            220,
+            180,
+            60
+          ]
+        ]
+      },
+      "reject_reasons": [],
+      "rejected": [
+        {
+          "path": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/01_body.png",
+          "reject_reasons": [
+            "blurry_details",
+            "empty_compositions",
+            "low_contrast",
+            "low_educational_clarity"
+          ],
+          "overall": 41.6,
+          "warnings": []
+        }
+      ],
+      "style_compatibility": 70.0,
+      "cinematic_ready": true
+    },
+    {
+      "scene_id": "scene_01",
+      "scene": {
+        "scene_id": "scene_01",
+        "purpose": "01_body",
+        "image": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/01_body.png",
+        "approved_asset_path": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/01b_alt.png",
+        "visual_asset_scorecard": {
+          "resolution": 95.0,
+          "lighting": 87.9,
+          "composition": 72.2,
+          "continuity": 71.5,
+          "character_consistency": 85.0,
+          "environment_consistency": 88.0,
+          "educational_clarity": 70.0,
+          "motion_potential": 82.0,
+          "thumbnail_appeal": 82.9,
+          "style_fit": 70.0,
+          "overall_professional_quality": 77.1
+        },
+        "visual_asset_approved": true,
+        "cinematic_ready": true,
+        "style_profile": "documentary"
+      },
+      "approved": true,
+      "selected_path": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/01b_alt.png",
+      "provisional_path": null,
+      "scorecard": {
+        "resolution": 95.0,
+        "lighting": 87.9,
+        "composition": 72.2,
+        "continuity": 71.5,
+        "character_consistency": 85.0,
+        "environment_consistency": 88.0,
+        "educational_clarity": 70.0,
+        "motion_potential": 82.0,
+        "thumbnail_appeal": 82.9,
+        "style_fit": 70.0,
+        "overall_professional_quality": 77.1
+      },
+      "composition": {
+        "rule_of_thirds": 87.8,
+        "subject_clarity": 56.3,
+        "eye_direction": 68.0,
+        "leading_lines": 52.6,
+        "depth": 82.4,
+        "layering": 77.4,
+        "background_separation": 64.0,
+        "visual_hierarchy": 68.6,
+        "negative_space": 94.8,
+        "educational_clarity": 70.0,
+        "composition_mean": 72.2,
+        "frame_aspect_fit": 90.0,
+        "pixel_area": 2073600.0
+      },
+      "inspection": {
+        "ok": true,
+        "approved": true,
+        "reject_reasons": [],
+        "warnings": [],
+        "metrics": {
+          "path": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/01b_alt.png",
+          "exists": true,
+          "kind": "image",
+          "width": 1080,
+          "height": 1920,
+          "megapixels": 2.074,
+          "file_bytes": 15732,
+          "aspect": {
+            "ok": true,
+            "ratio": 0.5625,
+            "target": "9:16",
+            "delta": 0.0
+          },
+          "laplacian_variance": 352.37,
+          "luminance_mean": 69.7,
+          "luminance_std": 47.24,
+          "saturation_mean": 0.747,
+          "edge_density": 0.0327,
+          "watermark_risk": 0.231,
+          "center_luminance_std": 30.83,
+          "palette": [
+            [
+              20,
+              40,
+              70
+            ],
+            [
+              30,
+              160,
+              200
+            ],
+            [
+              30,
+              161,
+              201
+            ],
+            [
+              20,
+              38,
+              68
+            ],
+            [
+              220,
+              180,
+              60
+            ]
+          ]
+        },
+        "meta": {
+          "filename": "01b_alt.png"
+        },
+        "palette": [
+          [
+            20,
+            40,
+            70
+          ],
+          [
+            30,
+            160,
+            200
+          ],
+          [
+            30,
+            161,
+            201
+          ],
+          [
+            20,
+            38,
+            68
+          ],
+          [
+            220,
+            180,
+            60
+          ]
+        ]
+      },
+      "reject_reasons": [],
+      "rejected": [
+        {
+          "path": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/01_body.png",
+          "reject_reasons": [
+            "blurry_details",
+            "empty_compositions",
+            "low_contrast",
+            "low_educational_clarity"
+          ],
+          "overall": 41.5,
+          "warnings": []
+        }
+      ],
+      "style_compatibility": 70.0,
+      "cinematic_ready": true
+    },
+    {
+      "scene_id": "scene_02",
+      "scene": {
+        "scene_id": "scene_02",
+        "purpose": "01b_alt",
+        "image": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/01b_alt.png",
+        "approved_asset_path": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/01b_alt.png",
+        "visual_asset_scorecard": {
+          "resolution": 95.0,
+          "lighting": 87.9,
+          "composition": 72.2,
+          "continuity": 71.5,
+          "character_consistency": 85.0,
+          "environment_consistency": 88.0,
+          "educational_clarity": 70.0,
+          "motion_potential": 82.0,
+          "thumbnail_appeal": 82.9,
+          "style_fit": 70.0,
+          "overall_professional_quality": 77.1
+        },
+        "visual_asset_approved": true,
+        "cinematic_ready": true,
+        "style_profile": "documentary"
+      },
+      "approved": true,
+      "selected_path": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/01b_alt.png",
+      "provisional_path": null,
+      "scorecard": {
+        "resolution": 95.0,
+        "lighting": 87.9,
+        "composition": 72.2,
+        "continuity": 71.5,
+        "character_consistency": 85.0,
+        "environment_consistency": 88.0,
+        "educational_clarity": 70.0,
+        "motion_potential": 82.0,
+        "thumbnail_appeal": 82.9,
+        "style_fit": 70.0,
+        "overall_professional_quality": 77.1
+      },
+      "composition": {
+        "rule_of_thirds": 87.8,
+        "subject_clarity": 56.3,
+        "eye_direction": 68.0,
+        "leading_lines": 52.6,
+        "depth": 82.4,
+        "layering": 77.4,
+        "background_separation": 64.0,
+        "visual_hierarchy": 68.6,
+        "negative_space": 94.8,
+        "educational_clarity": 70.0,
+        "composition_mean": 72.2,
+        "frame_aspect_fit": 90.0,
+        "pixel_area": 2073600.0
+      },
+      "inspection": {
+        "ok": true,
+        "approved": true,
+        "reject_reasons": [],
+        "warnings": [],
+        "metrics": {
+          "path": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/01b_alt.png",
+          "exists": true,
+          "kind": "image",
+          "width": 1080,
+          "height": 1920,
+          "megapixels": 2.074,
+          "file_bytes": 15732,
+          "aspect": {
+            "ok": true,
+            "ratio": 0.5625,
+            "target": "9:16",
+            "delta": 0.0
+          },
+          "laplacian_variance": 352.37,
+          "luminance_mean": 69.7,
+          "luminance_std": 47.24,
+          "saturation_mean": 0.747,
+          "edge_density": 0.0327,
+          "watermark_risk": 0.231,
+          "center_luminance_std": 30.83,
+          "palette": [
+            [
+              20,
+              40,
+              70
+            ],
+            [
+              30,
+              160,
+              200
+            ],
+            [
+              30,
+              161,
+              201
+            ],
+            [
+              20,
+              38,
+              68
+            ],
+            [
+              220,
+              180,
+              60
+            ]
+          ]
+        },
+        "meta": {
+          "from": "image"
+        },
+        "palette": [
+          [
+            20,
+            40,
+            70
+          ],
+          [
+            30,
+            160,
+            200
+          ],
+          [
+            30,
+            161,
+            201
+          ],
+          [
+            20,
+            38,
+            68
+          ],
+          [
+            220,
+            180,
+            60
+          ]
+        ]
+      },
+      "reject_reasons": [],
+      "rejected": [
+        {
+          "path": "/private/var/folders/l5/bbc158_92_99550g7t3gmjvm0000gn/T/pytest-of-jaredbrottem/pytest-407/test_direct_selects_strongest0/scenes/01_body.png",
+          "reject_reasons": [
+            "blurry_details",
+            "empty_compositions",
+            "low_contrast",
+            "low_educational_clarity"
+          ],
+          "overall": 41.5,
+          "warnings": []
+        }
+      ],
+      "style_compatibility": 70.0,
+      "cinematic_ready": true
+    }
+  ],
+  "cinematic_hints": {
+    "note": "Does not replace AI Cinematic Director \u2014 prepares approved stills only",
+    "preferred_motion": "observational_push_orbit",
+    "preferred_lighting": "motivated_practical",
+    "has_cinematic_package": false
+  },
+  "composes": [
+    "world_builder",
+    "scene_builder",
+    "asset_intelligence",
+    "cinematic_director",
+    "audience_intelligence",
+    "creative_performance_lab"
+  ],
+  "does_not_replace": [
+    "scene_builder",
+    "cinematic_director",
+    "renderer",
+    "world_builder"
+  ],
+  "fingerprint": "6e4d6044617f1987",
+  "validation": {
+    "ok": true,
+    "passed": true,
+    "hard_fails": [],
+    "warnings": []
+  },
+  "generated_at": "2026-07-14T04:01:17.905537+00:00"
+}

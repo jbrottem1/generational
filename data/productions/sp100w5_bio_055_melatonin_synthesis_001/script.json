@@ -1,0 +1,74 @@
+{
+  "title": "Melatonin synthesis",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A brief exploration of how melatonin is synthesized in our bodies and its importance.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about melatonin synthesis than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Melatonin is the hormone that regulates sleep, but how does our body make it?",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "unanswered question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "It all starts in the pineal gland, a tiny organ in your brain that senses light.",
+      "emotion": "curiosity",
+      "delivery": "building anticipation",
+      "retention_device": "visual transition"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "As darkness falls, the gland converts serotonin into melatonin through a series of steps.",
+      "emotion": "curiosity",
+      "delivery": "clear and concise",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 36.0,
+      "segment_type": "payoff",
+      "voiceover": "This process tells your body it's time to rest, helping you sleep better and feel refreshed.",
+      "emotion": "satisfaction",
+      "delivery": "uplifting and informative",
+      "retention_device": "reveal"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 36.0,
+      "end_time": 45.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more science secrets? Hit that follow for more!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic and inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about melatonin synthesis than social media does. Melatonin is the hormone that regulates sleep, but how does our body make it? It all starts in the pineal gland, a tiny organ in your brain that senses light. As darkness falls, the gland converts serotonin into melatonin through a series of steps. This process tells your body it's time to rest, helping you sleep better and feel refreshed. Curious about more science secrets? Hit that follow for more!",
+  "call_to_action": "Curious about more science secrets? Hit that follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:41:26.093662+00:00",
+  "source": "ai"
+}

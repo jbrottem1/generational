@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if I told you sponge reefs hold secrets of the ocean?",
+    "visual_description": "Hook visual: What if I told you sponge reefs hold secrets of the ocean?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you sponge reefs hold secrets of the ocean?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you sponge reefs hold secrets of the ocean?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "These incredible structures are formed by living sponges, and they play a vital role in marine ecosystems.",
+    "visual_description": "Context visual: These incredible structures are formed by living sponges, and they play a vital role in marine ecosystems.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: These incredible structures are formed by living sponges, and they play a vital role in marine ecosystems.",
+    "ai_video_prompt": "Cinematic motion: Context visual: These incredible structures are formed by living sponges, and they play a vital role in marine ecosystems.",
+    "stock_footage_query": "",
+    "text_overlay": "These incredible structures are",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "But as climate change accelerates, these reefs face serious threats, leaving scientists worried.",
+    "visual_description": "Escalation visual: But as climate change accelerates, these reefs face serious threats, leaving scientists worried.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But as climate change accelerates, these reefs face serious threats, leaving scientists worried.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But as climate change accelerates, these reefs face serious threats, leaving scientists worried.",
+    "stock_footage_query": "",
+    "text_overlay": "But as climate change",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "awe",
+    "length_sec": 8.0,
+    "narration": "Research shows sponge reefs filter water, provide habitat, and even support fisheries. They're more than just sponges.",
+    "visual_description": "Evidence visual: Research shows sponge reefs filter water, provide habitat, and even support fisheries. They're more than just sponges.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows sponge reefs filter water, provide habitat, and even support fisheries. They're more than just sponges.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows sponge reefs filter water, provide habitat, and even support fisheries. They're more than just sponges.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows sponge reefs",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "intrigue",
+    "length_sec": 14.0,
+    "narration": "If sponge reefs collapse, it could unravel entire marine ecosystems. What happens next? We still don\u2019t know.",
+    "visual_description": "Payoff visual: If sponge reefs collapse, it could unravel entire marine ecosystems. What happens next? We still don\u2019t know.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: If sponge reefs collapse, it could unravel entire marine ecosystems. What happens next? We still don\u2019t know.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: If sponge reefs collapse, it could unravel entire marine ecosystems. What happens next? We still don\u2019t know.",
+    "stock_footage_query": "",
+    "text_overlay": "If sponge reefs collapse,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "engagement",
+    "length_sec": 20.0,
+    "narration": "Curious about marine mysteries? Like and follow for more deep dives into science!",
+    "visual_description": "Cta visual: Curious about marine mysteries? Like and follow for more deep dives into science!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about marine mysteries? Like and follow for more deep dives into science!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about marine mysteries? Like and follow for more deep dives into science!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about marine mysteries?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

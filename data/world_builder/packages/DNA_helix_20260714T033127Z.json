@@ -1,0 +1,911 @@
+{
+  "package_version": "2.0.0",
+  "package_type": "world_production",
+  "generated_at": "2026-07-14T03:31:27.437492+00:00",
+  "topic": "DNA helix",
+  "niche": "biology",
+  "platform": "",
+  "audience": "general_public",
+  "production_id": "dna_t",
+  "world_id": "WORLD-DNA_INTERIOR",
+  "world_version": "2.0.0",
+  "world_type": "DNA Interior",
+  "name": "DNA Interior",
+  "selection": {
+    "best": {
+      "world_id": "WORLD-DNA_INTERIOR",
+      "name": "DNA Interior",
+      "world_type": "DNA Interior",
+      "category": "DNA Interior",
+      "topics": [],
+      "time_periods": [],
+      "audiences": [
+        "general_public"
+      ],
+      "visual_styles": [],
+      "scientific_accuracy": 70,
+      "historical_accuracy": 70,
+      "reuse_count": 0,
+      "last_usage": "",
+      "source": "catalog_template",
+      "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-DNA_INTERIOR.json",
+      "zones": [],
+      "channel_identity": "",
+      "selection_score": 64.0,
+      "query_overlap": 0.5
+    },
+    "alternatives": [
+      {
+        "world_id": "WORLD-OCEAN_RESEARCH_OBSERVATORY",
+        "name": "Ocean Research Observatory",
+        "world_type": "Ocean Research Observatory",
+        "category": "Ocean Research Observatory",
+        "topics": [
+          "octopus",
+          "marine biology",
+          "cephalopods",
+          "circulation",
+          "three hearts"
+        ],
+        "time_periods": [
+          "present"
+        ],
+        "audiences": [
+          "general_public"
+        ],
+        "visual_styles": [
+          "science_short",
+          "nature_doc"
+        ],
+        "scientific_accuracy": 88,
+        "historical_accuracy": 80,
+        "reuse_count": 0,
+        "last_usage": "",
+        "source": "catalog_template",
+        "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-OCEAN_RESEARCH_OBSERVATORY.json",
+        "zones": [
+          "observation_chamber",
+          "underwater_viewing",
+          "scientific_display"
+        ],
+        "channel_identity": "",
+        "selection_score": 17.6,
+        "query_overlap": 0.0
+      },
+      {
+        "world_id": "WORLD-SCIENCE_LAB",
+        "name": "Science Lab",
+        "world_type": "Science Lab",
+        "category": "Science Lab",
+        "topics": [],
+        "time_periods": [],
+        "audiences": [
+          "general_public"
+        ],
+        "visual_styles": [],
+        "scientific_accuracy": 85,
+        "historical_accuracy": 85,
+        "reuse_count": 0,
+        "last_usage": "",
+        "source": "catalog_template",
+        "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-SCIENCE_LAB.json",
+        "zones": [],
+        "channel_identity": "",
+        "selection_score": 17.0,
+        "query_overlap": 0.0
+      },
+      {
+        "world_id": "WORLD-HOSPITAL",
+        "name": "Hospital",
+        "world_type": "Hospital",
+        "category": "Hospital",
+        "topics": [],
+        "time_periods": [],
+        "audiences": [
+          "general_public"
+        ],
+        "visual_styles": [],
+        "scientific_accuracy": 85,
+        "historical_accuracy": 85,
+        "reuse_count": 0,
+        "last_usage": "",
+        "source": "catalog_template",
+        "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/world_builder/library/WORLD-HOSPITAL.json",
+        "zones": [],
+        "channel_identity": "",
+        "selection_score": 17.0,
+        "query_overlap": 0.0
+      }
+    ],
+    "selection_reasoning": "Selected WORLD-DNA_INTERIOR (DNA Interior) for topic='DNA helix' via semantic overlap=0.5 and accuracy=70",
+    "reuse_score": 100.0,
+    "continuity_compatibility": 1.0,
+    "required_adaptations": []
+  },
+  "world": {
+    "world_id": "WORLD-DNA_INTERIOR",
+    "world_type": "DNA Interior",
+    "name": "DNA Interior",
+    "theme": "genetic architecture",
+    "scale": "molecular",
+    "historical_accuracy": 70,
+    "environment": {
+      "description": "Monumental DNA helix corridor with glowing base-pair rungs and molecular fog",
+      "continuity_key": "WORLD-DNA_INTERIOR",
+      "do_not_replace_mid_episode": true
+    },
+    "lighting": {
+      "base": "scientific rim + neon pair practicals",
+      "consistent_key": true
+    },
+    "architecture": [
+      "double helix rails",
+      "base-pair bridges"
+    ],
+    "weather": "molecular_haze",
+    "objects": [
+      {
+        "object_id": "obj_base_pair_rung",
+        "name": "base_pair_rung",
+        "surface": "helix",
+        "anchored": true,
+        "temporary": false,
+        "zone": "",
+        "position": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.4
+        },
+        "scale": 1.0,
+        "relationships": []
+      },
+      {
+        "object_id": "obj_enzyme_motif",
+        "name": "enzyme_motif",
+        "surface": "helix",
+        "anchored": true,
+        "temporary": false,
+        "zone": "",
+        "position": {
+          "x": 0.45,
+          "y": 0.55,
+          "z": 0.35
+        },
+        "scale": 1.0,
+        "relationships": []
+      }
+    ],
+    "furniture": [],
+    "background_animations": [
+      "helix slow rotate",
+      "charge sparkles along rails"
+    ],
+    "sound_ambience": [
+      "harmonic drone",
+      "soft click sequencing"
+    ],
+    "camera_boundaries": {
+      "min_height": 0.0,
+      "max_height": 10.0,
+      "min_distance": 0.2,
+      "max_distance": 20.0
+    },
+    "color_palette": {
+      "family": "lab",
+      "primary": "#0B1D36",
+      "accent": "#E63946",
+      "pair": "#457B9D"
+    },
+    "lighting_presets": [
+      {
+        "id": "day_neutral",
+        "recipe": "bioluminescent helix key + soft bounce fill",
+        "mood": "neutral"
+      },
+      {
+        "id": "dramatic_rim",
+        "recipe": "bioluminescent helix key + hard rim + practical instrument glow",
+        "mood": "dramatic"
+      },
+      {
+        "id": "low_key_focus",
+        "recipe": "low-key with luminous subject isolation",
+        "mood": "focus"
+      },
+      {
+        "id": "bright_reveal",
+        "recipe": "bright key + lifted shadows for revelation",
+        "mood": "reveal"
+      }
+    ],
+    "camera_anchors": [
+      {
+        "id": "helix_flythrough",
+        "position": "axis",
+        "angle": "push_in",
+        "lens_hint": "24mm"
+      },
+      {
+        "id": "rung_orbit",
+        "position": "mid_helix",
+        "angle": "orbit",
+        "lens_hint": "35mm"
+      },
+      {
+        "id": "pair_macro",
+        "position": "rung_close",
+        "angle": "macro",
+        "lens_hint": "100mm"
+      }
+    ],
+    "animation_zones": [
+      {
+        "id": "replication_fork",
+        "region": "mid"
+      }
+    ],
+    "transition_anchors": [
+      {
+        "id": "uncoil",
+        "to_compatible": [
+          "Human Cell",
+          "Science Lab",
+          "Research Center"
+        ]
+      }
+    ],
+    "design_rules": [
+      "Keep set geometry continuous across scenes",
+      "Vary camera and lighting, not the world itself",
+      "Every object must sit on a defined surface",
+      "No flat solid full-frame backgrounds"
+    ],
+    "schema_version": "2.0.0",
+    "saved_at": "2026-07-14T03:31:27.413218+00:00"
+  },
+  "continuity": {
+    "single_world": true,
+    "world_id": "WORLD-DNA_INTERIOR",
+    "state": {
+      "version": 2,
+      "time_of_day": "day",
+      "weather": "molecular_haze",
+      "object_positions": {
+        "obj_base_pair_rung": {
+          "position": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.4
+          },
+          "zone": "",
+          "surface": "helix",
+          "anchored": true
+        },
+        "obj_enzyme_motif": {
+          "position": {
+            "x": 0.45,
+            "y": 0.55,
+            "z": 0.35
+          },
+          "zone": "",
+          "surface": "helix",
+          "anchored": true
+        }
+      },
+      "visited_zones": [
+        "main"
+      ],
+      "doors": {},
+      "displays": {},
+      "introduced_objects": [],
+      "characters_present": [
+        "talent"
+      ],
+      "event_count": 1
+    },
+    "scene_bindings": [
+      {
+        "scene_id": "s1",
+        "world_id": "WORLD-DNA_INTERIOR",
+        "zone_id": "main",
+        "environment_name": "DNA Interior",
+        "spatial_fingerprint": "WORLD-DNA_INTERIOR:main",
+        "persistent_object_ids": [
+          "obj_base_pair_rung",
+          "obj_enzyme_motif"
+        ],
+        "background_identity": "WORLD-DNA_INTERIOR|main|scale=molecular",
+        "narration_excerpt": "Scene"
+      }
+    ],
+    "note": "Same world across scenes; zone may change; object positions inherited from state"
+  },
+  "environment_packages": [
+    {
+      "package_version": "2.0.0",
+      "package_type": "environment",
+      "world_id": "WORLD-DNA_INTERIOR",
+      "world_version": "2.0.0",
+      "environment_name": "DNA Interior",
+      "selected_zone": "main",
+      "zone": {
+        "id": "main",
+        "name": "Primary zone",
+        "description": "Monumental DNA helix corridor with glowing base-pair rungs and molecular fog"
+      },
+      "scene_id": "s1",
+      "spatial_layout": {
+        "zone_id": "main",
+        "zone_name": "Primary zone",
+        "description": "Monumental DNA helix corridor with glowing base-pair rungs and molecular fog",
+        "landmarks": [],
+        "entrances": [],
+        "exits": [],
+        "connections": [],
+        "scale": "molecular"
+      },
+      "required_persistent_objects": [
+        {
+          "object_id": "obj_base_pair_rung",
+          "name": "base_pair_rung",
+          "surface": "helix",
+          "anchored": true,
+          "temporary": false,
+          "zone": "",
+          "position": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.4
+          },
+          "scale": 1.0,
+          "relationships": []
+        },
+        {
+          "object_id": "obj_enzyme_motif",
+          "name": "enzyme_motif",
+          "surface": "helix",
+          "anchored": true,
+          "temporary": false,
+          "zone": "",
+          "position": {
+            "x": 0.45,
+            "y": 0.55,
+            "z": 0.35
+          },
+          "scale": 1.0,
+          "relationships": []
+        }
+      ],
+      "required_temporary_objects": [],
+      "background_activity": [
+        "helix slow rotate",
+        "charge sparkles along rails"
+      ],
+      "environmental_ambience": {
+        "labels": [
+          "harmonic drone",
+          "soft click sequencing"
+        ],
+        "zone_ambience": [],
+        "handoff_to": "sound_design",
+        "note": "Environmental context only \u2014 not final audio mix"
+      },
+      "scale": "molecular",
+      "continuity_state": {
+        "version": 2,
+        "time_of_day": "day",
+        "weather": "molecular_haze",
+        "object_positions": {
+          "obj_base_pair_rung": {
+            "position": {
+              "x": 0.5,
+              "y": 0.5,
+              "z": 0.4
+            },
+            "zone": "",
+            "surface": "helix",
+            "anchored": true
+          },
+          "obj_enzyme_motif": {
+            "position": {
+              "x": 0.45,
+              "y": 0.55,
+              "z": 0.35
+            },
+            "zone": "",
+            "surface": "helix",
+            "anchored": true
+          }
+        },
+        "visited_zones": [
+          "main"
+        ],
+        "doors": {},
+        "displays": {},
+        "introduced_objects": [],
+        "characters_present": [
+          "talent"
+        ],
+        "event_count": 1
+      },
+      "scientific_constraints": [],
+      "historical_constraints": [],
+      "accuracy": {},
+      "allowed_subject_positions": [],
+      "restricted_areas": [],
+      "recommended_transition_destination": "main",
+      "asset_requirements": {
+        "world_id": "WORLD-DNA_INTERIOR",
+        "requirements": [
+          {
+            "kind": "background_loop",
+            "purpose": "environment_plate",
+            "query": "DNA Interior main",
+            "world_id": "WORLD-DNA_INTERIOR",
+            "zone": "main"
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "harmonic drone",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system"
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "soft click sequencing",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system"
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "base_pair_rung",
+            "object_id": "obj_base_pair_rung"
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "enzyme_motif",
+            "object_id": "obj_enzyme_motif"
+          }
+        ],
+        "resolved": [
+          {
+            "kind": "background_loop",
+            "purpose": "environment_plate",
+            "query": "DNA Interior main",
+            "world_id": "WORLD-DNA_INTERIOR",
+            "zone": "main",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 84.0
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "harmonic drone",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "music",
+            "purpose": "environmental_ambience",
+            "query": "soft click sequencing",
+            "handoff_to": "sound_design",
+            "note": "World specifies context only \u2014 final mix is sound system",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "base_pair_rung",
+            "object_id": "obj_base_pair_rung",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          },
+          {
+            "kind": "image",
+            "purpose": "prop",
+            "query": "enzyme_motif",
+            "object_id": "obj_enzyme_motif",
+            "resolved": true,
+            "asset_id": "test_dna_diagram",
+            "uri": "memory://dna",
+            "score": 75.6
+          }
+        ],
+        "missing": [],
+        "note": "Does not duplicate Asset Intelligence \u2014 references or requests only"
+      },
+      "aesthetic_context": {
+        "base_palette": {
+          "family": "lab",
+          "primary": "#0B1D36",
+          "accent": "#E63946",
+          "pair": "#457B9D"
+        },
+        "materials": [],
+        "textures": [],
+        "era": "",
+        "design_language": "genetic architecture",
+        "brand_compatibility": "",
+        "ambient_practicals": [],
+        "note": "Context for Cinematic Director \u2014 final lighting/camera owned elsewhere"
+      },
+      "cinematic_prescriptions": null,
+      "ownership": {
+        "world_builder": "environment_continuity_spatial_objects",
+        "scene_builder": "scene_purpose_subjects_actions_duration",
+        "cinematic_director": "camera_framing_lighting_treatment_motion_pacing",
+        "renderer": "technical_render"
+      },
+      "world_validation": {
+        "ok": true,
+        "passed": true,
+        "hard_failures": [],
+        "hard_fails": [],
+        "repairable_continuity_issues": [],
+        "accuracy_warnings": [],
+        "creative_recommendations": []
+      }
+    }
+  ],
+  "ambience_handoff": {
+    "labels": [
+      "harmonic drone",
+      "soft click sequencing"
+    ],
+    "target": "sound_design"
+  },
+  "asset_requirements_summary": {
+    "resolved_count": 5,
+    "missing_count": 0,
+    "missing": [],
+    "resolved": [
+      {
+        "kind": "background_loop",
+        "purpose": "environment_plate",
+        "query": "DNA Interior main",
+        "world_id": "WORLD-DNA_INTERIOR",
+        "zone": "main",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 84.0
+      },
+      {
+        "kind": "music",
+        "purpose": "environmental_ambience",
+        "query": "harmonic drone",
+        "handoff_to": "sound_design",
+        "note": "World specifies context only \u2014 final mix is sound system",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "music",
+        "purpose": "environmental_ambience",
+        "query": "soft click sequencing",
+        "handoff_to": "sound_design",
+        "note": "World specifies context only \u2014 final mix is sound system",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "image",
+        "purpose": "prop",
+        "query": "base_pair_rung",
+        "object_id": "obj_base_pair_rung",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      },
+      {
+        "kind": "image",
+        "purpose": "prop",
+        "query": "enzyme_motif",
+        "object_id": "obj_enzyme_motif",
+        "resolved": true,
+        "asset_id": "test_dna_diagram",
+        "uri": "memory://dna",
+        "score": 75.6
+      }
+    ]
+  },
+  "continuity_validation": {
+    "ok": true,
+    "passed": true,
+    "hard_failures": [],
+    "hard_fails": [],
+    "accuracy_warnings": [],
+    "binding_count": 1,
+    "state_version": 2
+  },
+  "renderer_feed": {
+    "note": "Separate from cinematic_direction_package \u2014 spatial/environment only",
+    "environment_packages": [
+      {
+        "package_version": "2.0.0",
+        "package_type": "environment",
+        "world_id": "WORLD-DNA_INTERIOR",
+        "world_version": "2.0.0",
+        "environment_name": "DNA Interior",
+        "selected_zone": "main",
+        "zone": {
+          "id": "main",
+          "name": "Primary zone",
+          "description": "Monumental DNA helix corridor with glowing base-pair rungs and molecular fog"
+        },
+        "scene_id": "s1",
+        "spatial_layout": {
+          "zone_id": "main",
+          "zone_name": "Primary zone",
+          "description": "Monumental DNA helix corridor with glowing base-pair rungs and molecular fog",
+          "landmarks": [],
+          "entrances": [],
+          "exits": [],
+          "connections": [],
+          "scale": "molecular"
+        },
+        "required_persistent_objects": [
+          {
+            "object_id": "obj_base_pair_rung",
+            "name": "base_pair_rung",
+            "surface": "helix",
+            "anchored": true,
+            "temporary": false,
+            "zone": "",
+            "position": {
+              "x": 0.5,
+              "y": 0.5,
+              "z": 0.4
+            },
+            "scale": 1.0,
+            "relationships": []
+          },
+          {
+            "object_id": "obj_enzyme_motif",
+            "name": "enzyme_motif",
+            "surface": "helix",
+            "anchored": true,
+            "temporary": false,
+            "zone": "",
+            "position": {
+              "x": 0.45,
+              "y": 0.55,
+              "z": 0.35
+            },
+            "scale": 1.0,
+            "relationships": []
+          }
+        ],
+        "required_temporary_objects": [],
+        "background_activity": [
+          "helix slow rotate",
+          "charge sparkles along rails"
+        ],
+        "environmental_ambience": {
+          "labels": [
+            "harmonic drone",
+            "soft click sequencing"
+          ],
+          "zone_ambience": [],
+          "handoff_to": "sound_design",
+          "note": "Environmental context only \u2014 not final audio mix"
+        },
+        "scale": "molecular",
+        "continuity_state": {
+          "version": 2,
+          "time_of_day": "day",
+          "weather": "molecular_haze",
+          "object_positions": {
+            "obj_base_pair_rung": {
+              "position": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 0.4
+              },
+              "zone": "",
+              "surface": "helix",
+              "anchored": true
+            },
+            "obj_enzyme_motif": {
+              "position": {
+                "x": 0.45,
+                "y": 0.55,
+                "z": 0.35
+              },
+              "zone": "",
+              "surface": "helix",
+              "anchored": true
+            }
+          },
+          "visited_zones": [
+            "main"
+          ],
+          "doors": {},
+          "displays": {},
+          "introduced_objects": [],
+          "characters_present": [
+            "talent"
+          ],
+          "event_count": 1
+        },
+        "scientific_constraints": [],
+        "historical_constraints": [],
+        "accuracy": {},
+        "allowed_subject_positions": [],
+        "restricted_areas": [],
+        "recommended_transition_destination": "main",
+        "asset_requirements": {
+          "world_id": "WORLD-DNA_INTERIOR",
+          "requirements": [
+            {
+              "kind": "background_loop",
+              "purpose": "environment_plate",
+              "query": "DNA Interior main",
+              "world_id": "WORLD-DNA_INTERIOR",
+              "zone": "main"
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "harmonic drone",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system"
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "soft click sequencing",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system"
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "base_pair_rung",
+              "object_id": "obj_base_pair_rung"
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "enzyme_motif",
+              "object_id": "obj_enzyme_motif"
+            }
+          ],
+          "resolved": [
+            {
+              "kind": "background_loop",
+              "purpose": "environment_plate",
+              "query": "DNA Interior main",
+              "world_id": "WORLD-DNA_INTERIOR",
+              "zone": "main",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 84.0
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "harmonic drone",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "music",
+              "purpose": "environmental_ambience",
+              "query": "soft click sequencing",
+              "handoff_to": "sound_design",
+              "note": "World specifies context only \u2014 final mix is sound system",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "base_pair_rung",
+              "object_id": "obj_base_pair_rung",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            },
+            {
+              "kind": "image",
+              "purpose": "prop",
+              "query": "enzyme_motif",
+              "object_id": "obj_enzyme_motif",
+              "resolved": true,
+              "asset_id": "test_dna_diagram",
+              "uri": "memory://dna",
+              "score": 75.6
+            }
+          ],
+          "missing": [],
+          "note": "Does not duplicate Asset Intelligence \u2014 references or requests only"
+        },
+        "aesthetic_context": {
+          "base_palette": {
+            "family": "lab",
+            "primary": "#0B1D36",
+            "accent": "#E63946",
+            "pair": "#457B9D"
+          },
+          "materials": [],
+          "textures": [],
+          "era": "",
+          "design_language": "genetic architecture",
+          "brand_compatibility": "",
+          "ambient_practicals": [],
+          "note": "Context for Cinematic Director \u2014 final lighting/camera owned elsewhere"
+        },
+        "cinematic_prescriptions": null,
+        "ownership": {
+          "world_builder": "environment_continuity_spatial_objects",
+          "scene_builder": "scene_purpose_subjects_actions_duration",
+          "cinematic_director": "camera_framing_lighting_treatment_motion_pacing",
+          "renderer": "technical_render"
+        },
+        "world_validation": {
+          "ok": true,
+          "passed": true,
+          "hard_failures": [],
+          "hard_fails": [],
+          "repairable_continuity_issues": [],
+          "accuracy_warnings": [],
+          "creative_recommendations": []
+        }
+      }
+    ],
+    "world_id": "WORLD-DNA_INTERIOR"
+  },
+  "contracts": {
+    "environment_package": "services.world_builder",
+    "cinematic_direction_package": "services.cinematic_director",
+    "separation": "renderer receives both; they must not overwrite each other"
+  },
+  "validation": {
+    "ok": true,
+    "passed": true,
+    "hard_failures": [],
+    "hard_fails": [],
+    "repairable_continuity_issues": [],
+    "accuracy_warnings": [],
+    "creative_recommendations": [],
+    "scene_count": 1,
+    "continuity": {
+      "ok": true,
+      "passed": true,
+      "hard_failures": [],
+      "hard_fails": [],
+      "accuracy_warnings": [],
+      "binding_count": 1,
+      "state_version": 2
+    }
+  }
+}

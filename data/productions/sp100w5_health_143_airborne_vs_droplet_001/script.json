@@ -1,0 +1,74 @@
+{
+  "title": "Airborne vs Droplet",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explains the differences between airborne and droplet transmission scientifically.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about airborne vs droplet than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Airborne transmission involves tiny particles lingering in the air for hours. Think of aerosols.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Droplet transmission, on the other hand, is larger, heavier droplets that fall quickly\u2014think sneezes and coughs.",
+      "emotion": "curiosity",
+      "delivery": "clear and precise",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show airborne viruses can travel distances over 6 feet, while droplets typically travel less.",
+      "emotion": "curiosity",
+      "delivery": "informative and slightly suspenseful",
+      "retention_device": "fact reveal"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding this helps us make better choices about masks and ventilation.",
+      "emotion": "curiosity",
+      "delivery": "conclusive and empowering",
+      "retention_device": "anticipation of practical advice"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay informed! Like and follow for more science insights.",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic and inviting",
+      "retention_device": "engaging closure"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about airborne vs droplet than social media does. Airborne transmission involves tiny particles lingering in the air for hours. Think of aerosols. Droplet transmission, on the other hand, is larger, heavier droplets that fall quickly\u2014think sneezes and coughs. Studies show airborne viruses can travel distances over 6 feet, while droplets typically travel less. Understanding this helps us make better choices about masks and ventilation. Stay informed! Like and follow for more science insights.",
+  "call_to_action": "Stay informed! Like and follow for more science insights.",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:53:48.502444+00:00",
+  "source": "ai"
+}

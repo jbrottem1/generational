@@ -1,0 +1,59 @@
+{
+  "character_id": "DOCTOR_001",
+  "baseline": "calm_compassionate_focus",
+  "easy_access": [
+    "curiosity",
+    "compassion",
+    "confidence",
+    "concern",
+    "delight"
+  ],
+  "rare": [
+    "anger",
+    "panic"
+  ],
+  "forbidden_performance": [
+    "cruelty",
+    "mockery",
+    "horror_uncanny"
+  ],
+  "transition_model": [
+    "anticipation",
+    "peak",
+    "recovery",
+    "emotional_residue"
+  ],
+  "full_body_rule": true,
+  "emotion_to_body": {
+    "compassion": {
+      "gaze": "soft",
+      "posture": "open",
+      "gesture": "open_palm_reassurance"
+    },
+    "curiosity": {
+      "gaze": "forward",
+      "posture": "slight_lean",
+      "gesture": "chin_think"
+    },
+    "concern": {
+      "gaze": "topic_then_audience",
+      "posture": "attentive",
+      "gesture": "restrained"
+    },
+    "confidence": {
+      "gaze": "direct",
+      "posture": "upright",
+      "gesture": "open_palm_teach"
+    },
+    "determination": {
+      "gaze": "locked",
+      "posture": "stable",
+      "gesture": "precise_point"
+    },
+    "delight": {
+      "gaze": "bright",
+      "posture": "open",
+      "gesture": "heart_hand"
+    }
+  }
+}

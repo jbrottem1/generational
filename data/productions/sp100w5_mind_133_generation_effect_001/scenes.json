@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if you could remember more just by creating it yourself?",
+    "visual_description": "Hook visual: What if you could remember more just by creating it yourself?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if you could remember more just by creating it yourself?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if you could remember more just by creating it yourself?",
+    "stock_footage_query": "",
+    "text_overlay": "What if you could",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This is the generation effect, a powerful concept in psychology.",
+    "visual_description": "Context visual: This is the generation effect, a powerful concept in psychology.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This is the generation effect, a powerful concept in psychology.",
+    "ai_video_prompt": "Cinematic motion: Context visual: This is the generation effect, a powerful concept in psychology.",
+    "stock_footage_query": "",
+    "text_overlay": "This is the generation",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "When you generate info\u2014like writing or drawing\u2014your brain retains it better.",
+    "visual_description": "Escalation visual: When you generate info\u2014like writing or drawing\u2014your brain retains it better.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: When you generate info\u2014like writing or drawing\u2014your brain retains it better.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: When you generate info\u2014like writing or drawing\u2014your brain retains it better.",
+    "stock_footage_query": "",
+    "text_overlay": "When you generate info\u2014like",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Studies show this effect is stronger than just reading or passively learning.",
+    "visual_description": "Evidence visual: Studies show this effect is stronger than just reading or passively learning.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show this effect is stronger than just reading or passively learning.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show this effect is stronger than just reading or passively learning.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show this effect",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 28.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "So next time you need to remember something, try creating it yourself!",
+    "visual_description": "Payoff visual: So next time you need to remember something, try creating it yourself!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So next time you need to remember something, try creating it yourself!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So next time you need to remember something, try creating it yourself!",
+    "stock_footage_query": "",
+    "text_overlay": "So next time you",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 28.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 28.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Curious about more mind hacks? Like and follow for more!",
+    "visual_description": "Cta visual: Curious about more mind hacks? Like and follow for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more mind hacks? Like and follow for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more mind hacks? Like and follow for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more mind",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

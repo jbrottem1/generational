@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science has a clearer story about EUV lithography than social media does.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: EUV lithography, or extreme ultraviolet lithography, is a cutting-edge technology used in semiconductor manufacturing.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: It uses shorter wavelengths of light to create smaller, more complex microchips.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: These chips power everything from smartphones to advanced AI systems, making them essential in today's tech.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: However, EUV lithography is still evolving, facing challenges like cost and efficiency. But its potential is huge\u2014imagin",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious to learn more about tech shaping our future? Hit that follow button!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science has a clearer story about EUV lithography than social media does.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: EUV lithography, or extreme ultraviolet lithography, is a cutting-edge technology used in semiconductor manufacturing.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: It uses shorter wavelengths of light to create smaller, more complex microchips.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: These chips power everything from smartphones to advanced AI systems, making them essential in today's tech.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: However, EUV lithography is still evolving, facing challenges like cost and efficiency. But its potential is huge\u2014imagin",
+      "duration_sec": 24.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious to learn more about tech shaping our future? Hit that follow button!",
+      "duration_sec": 10.0
+    }
+  ]
+}

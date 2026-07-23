@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if your body is a master of balance?",
+    "visual_description": "Hook visual: What if your body is a master of balance?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if your body is a master of balance?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if your body is a master of balance?",
+    "stock_footage_query": "",
+    "text_overlay": "What if your body",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Homeostasis is how your body keeps everything in check\u2014temperature, blood sugar, even pH levels.",
+    "visual_description": "Context visual: Homeostasis is how your body keeps everything in check\u2014temperature, blood sugar, even pH levels.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Homeostasis is how your body keeps everything in check\u2014temperature, blood sugar, even pH levels.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Homeostasis is how your body keeps everything in check\u2014temperature, blood sugar, even pH levels.",
+    "stock_footage_query": "",
+    "text_overlay": "Homeostasis is how your",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "When you\u2019re too hot, you sweat. When you\u2019re low on sugar, your body craves food. It\u2019s a constant dance.",
+    "visual_description": "Escalation visual: When you\u2019re too hot, you sweat. When you\u2019re low on sugar, your body craves food. It\u2019s a constant dance.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: When you\u2019re too hot, you sweat. When you\u2019re low on sugar, your body craves food. It\u2019s a constant dance.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: When you\u2019re too hot, you sweat. When you\u2019re low on sugar, your body craves food. It\u2019s a constant dance.",
+    "stock_footage_query": "",
+    "text_overlay": "When you\u2019re too hot,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "Studies show that disruptions in homeostasis can lead to serious health issues like diabetes or hypothermia.",
+    "visual_description": "Evidence visual: Studies show that disruptions in homeostasis can lead to serious health issues like diabetes or hypothermia.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show that disruptions in homeostasis can lead to serious health issues like diabetes or hypothermia.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show that disruptions in homeostasis can lead to serious health issues like diabetes or hypothermia.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show that disruptions",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "reassurance",
+    "length_sec": 14.0,
+    "narration": "So the next time you feel off, remember, your body is fighting to bring you back to balance.",
+    "visual_description": "Payoff visual: So the next time you feel off, remember, your body is fighting to bring you back to balance.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So the next time you feel off, remember, your body is fighting to bring you back to balance.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So the next time you feel off, remember, your body is fighting to bring you back to balance.",
+    "stock_footage_query": "",
+    "text_overlay": "So the next time",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Curious about other wonders of your body? Hit subscribe for more!",
+    "visual_description": "Cta visual: Curious about other wonders of your body? Hit subscribe for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about other wonders of your body? Hit subscribe for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about other wonders of your body? Hit subscribe for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about other wonders",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "title": "Your Attention Is a Limited Battery",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring how your brain manages attention like a limited battery.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Your attention is a limited battery.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Just like your phone, your brain has a finite amount of focus.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "This concept is called selective attention. It\u2019s how you prioritize information.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "statistic"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Cognitive load affects how much you can focus. More distractions? More mental drain.",
+      "emotion": "curiosity",
+      "delivery": "concerned",
+      "retention_device": "fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "So, if you feel drained, it\u2019s not your fault. You\u2019re just managing your brain\u2019s battery.",
+      "emotion": "relief",
+      "delivery": "reassuring",
+      "retention_device": "personal connection"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to save your brain's battery? Follow for more tips!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "invitation"
+    }
+  ],
+  "full_voiceover": "Your attention is a limited battery. Just like your phone, your brain has a finite amount of focus. This concept is called selective attention. It\u2019s how you prioritize information. Cognitive load affects how much you can focus. More distractions? More mental drain. So, if you feel drained, it\u2019s not your fault. You\u2019re just managing your brain\u2019s battery. Want to save your brain's battery? Follow for more tips!",
+  "call_to_action": "Follow for more tips!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:43:38.111565+00:00",
+  "source": "ai"
+}

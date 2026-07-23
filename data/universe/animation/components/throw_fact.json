@@ -1,0 +1,20 @@
+{
+  "id": "throw_fact",
+  "loop": false,
+  "duration_sec": 0.6,
+  "keyframes": [
+    {
+      "t": 0.0,
+      "card": "in_hand"
+    },
+    {
+      "t": 0.25,
+      "card": "arc"
+    },
+    {
+      "t": 0.6,
+      "card": "screen_settle"
+    }
+  ],
+  "notes": "Fact cards are brand mograph: rounded rect, bold label, soft shadow."
+}

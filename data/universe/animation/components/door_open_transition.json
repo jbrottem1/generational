@@ -1,0 +1,22 @@
+{
+  "id": "door_open_transition",
+  "loop": false,
+  "duration_sec": 1.1,
+  "keyframes": [
+    {
+      "t": 0.0,
+      "door": 0
+    },
+    {
+      "t": 0.5,
+      "door": 0.7,
+      "dash": "push"
+    },
+    {
+      "t": 1.1,
+      "door": 1,
+      "scene": "B"
+    }
+  ],
+  "notes": "Primary scene transition motif for the series."
+}

@@ -1,0 +1,260 @@
+{
+  "asset_number": "0001",
+  "id": "CHAR-0001",
+  "slug": "CHAR-0001-THE-DOCTOR",
+  "name": "The Doctor",
+  "role": "Lead Scientific Educator",
+  "universe": "Generational",
+  "asset_status": [
+    "permanent",
+    "reusable",
+    "version_controlled"
+  ],
+  "version": "1.1.0",
+  "design": {
+    "archetype": "humanoid_cyborg_doctor",
+    "chassis": "clean_white_medical",
+    "materials": [
+      "premium_titanium",
+      "soft_white_polymer",
+      "warm_blue_illumination"
+    ],
+    "proportions": "human_athletic_approachable",
+    "posture": "professional_open",
+    "face": "friendly_expressive_intelligent",
+    "avoid": [
+      "generic_robot",
+      "uncanny_horror",
+      "cold_industrial_only"
+    ],
+    "communicate": [
+      "trust",
+      "intelligence",
+      "curiosity",
+      "compassion"
+    ]
+  },
+  "color_system": {
+    "primary": {
+      "name": "Medical White",
+      "hex": "#F4F7FA",
+      "rgb": [
+        244,
+        247,
+        250
+      ]
+    },
+    "secondary": {
+      "name": "Premium Titanium",
+      "hex": "#8A939E",
+      "rgb": [
+        138,
+        147,
+        158
+      ]
+    },
+    "accent": {
+      "name": "Warm Trust Blue",
+      "hex": "#3BA7E0",
+      "rgb": [
+        59,
+        167,
+        224
+      ]
+    },
+    "deep_accent": {
+      "name": "Deep Clinical Blue",
+      "hex": "#1A5F8A",
+      "rgb": [
+        26,
+        95,
+        138
+      ]
+    },
+    "chassis_shadow": {
+      "name": "Chassis Shadow",
+      "hex": "#2C343D",
+      "rgb": [
+        44,
+        52,
+        61
+      ]
+    },
+    "visors": {
+      "name": "Intelligent Eye Core",
+      "hex": "#7FD4FF",
+      "rgb": [
+        127,
+        212,
+        255
+      ]
+    },
+    "lighting": {
+      "key": "soft_warm_clinical",
+      "fill": "cool_rim_blue",
+      "practical": "blue_edge_leds"
+    },
+    "medical_interface": {
+      "ok": "#3DDC97",
+      "info": "#3BA7E0",
+      "warn": "#F0C040"
+    },
+    "emergency": {
+      "alert": "#E85D4C",
+      "critical": "#B42318"
+    }
+  },
+  "facial_system": {
+    "expressions": [
+      "neutral",
+      "happy",
+      "curious",
+      "thinking",
+      "concerned",
+      "excited",
+      "surprised",
+      "confident",
+      "smiling",
+      "teaching",
+      "listening",
+      "laughing",
+      "serious",
+      "focused",
+      "blink"
+    ],
+    "features": [
+      "blink_animation",
+      "eye_tracking",
+      "eyebrow_movement",
+      "mouth_shapes",
+      "talking_visemes",
+      "micro_expressions"
+    ],
+    "visemes": [
+      "REST",
+      "AA",
+      "E",
+      "I",
+      "O",
+      "U",
+      "MBP",
+      "FV",
+      "L",
+      "WQ",
+      "AI"
+    ]
+  },
+  "body_system": {
+    "poses": [
+      "front_view",
+      "rear_view",
+      "left_side",
+      "right_side",
+      "three_quarter",
+      "hero",
+      "neutral",
+      "medical_demonstration",
+      "pointing",
+      "teaching",
+      "walking",
+      "running",
+      "sitting",
+      "standing",
+      "hands_behind_back",
+      "clipboard",
+      "hologram_interaction"
+    ]
+  },
+  "movement_library": [
+    "idle",
+    "breathing",
+    "blinking",
+    "thinking",
+    "walking",
+    "jogging",
+    "turning",
+    "pointing",
+    "teaching",
+    "typing",
+    "holding_medical_scanner",
+    "using_holograms",
+    "greeting",
+    "listening",
+    "explaining",
+    "looking_around",
+    "picking_up_objects",
+    "interacting_with_equipment",
+    "reaction_curiosity",
+    "reaction_concern",
+    "reaction_delight"
+  ],
+  "wardrobe": [
+    "primary_outfit",
+    "formal_laboratory",
+    "research",
+    "field_expedition",
+    "space_exploration",
+    "medical_examination",
+    "winter",
+    "protective_equipment"
+  ],
+  "voice_profile": {
+    "id": "VOICE-THE-DOCTOR-001",
+    "character": "The Doctor",
+    "traits": [
+      "professional",
+      "calm",
+      "confident",
+      "friendly",
+      "curious",
+      "educational",
+      "encouraging",
+      "warm"
+    ],
+    "pacing": "natural_educational",
+    "tts_hint": {
+      "voice": "onyx",
+      "model": "tts-1-hd",
+      "style": "warm_clinical_educator"
+    },
+    "sync": "designed_for_high_quality_ai_narration_synchronization"
+  },
+  "personality": [
+    "highly_intelligent",
+    "patient",
+    "curious",
+    "optimistic",
+    "encouraging",
+    "evidence_driven",
+    "never_arrogant",
+    "never_condescending",
+    "passionate_about_helping_people_understand_science"
+  ],
+  "home_world_id": "LOC-GMRI",
+  "home_world_name": "The Generational Medical Research Institute",
+  "recurring_cast_relationships": {
+    "CHAR-ATLAS": "Colleague educator \u2014 collaborative lectures; mutual respect.",
+    "CHAR-NOVA": "Frequently co-teaches tech topics; Nova asks, The Doctor grounds answers.",
+    "CHAR-ORION": "Field joint missions \u2014 Doctor handles bioscience, Orion logistics.",
+    "CHAR-PIPER": "Lab partners on medical devices and engineering explainers.",
+    "CHAR-LUNA": "Closest peer on biology / ecology; warm professional friendship.",
+    "CHAR-DASH": "Separate brand universe stick host \u2014 may cameo, never redesign either.",
+    "CHAR-PROFESSOR-001": "Foundation peer \u2014 respect locked stick IP boundaries."
+  },
+  "continuity": {
+    "rule": "Always reference this permanent Studio Asset. Never regenerate from scratch.",
+    "changes": "Only via intentional version upgrades (VERSION.json).",
+    "visual_identity_locked": true
+  },
+  "domains": [
+    "science",
+    "biology",
+    "medicine",
+    "engineering",
+    "chemistry",
+    "anatomy",
+    "physics",
+    "technology",
+    "health"
+  ]
+}

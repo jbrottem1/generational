@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Ever wonder why you see lightning before you hear thunder?",
+    "visual_description": "Hook visual: Ever wonder why you see lightning before you hear thunder?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever wonder why you see lightning before you hear thunder?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever wonder why you see lightning before you hear thunder?",
+    "stock_footage_query": "",
+    "text_overlay": "Ever wonder why you",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Light travels at about 299,792 kilometers per second. That\u2019s way faster than sound, which is just 343 meters per second!",
+    "visual_description": "Context visual: Light travels at about 299,792 kilometers per second. That\u2019s way faster than sound, which is just 343 meters per second!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Light travels at about 299,792 kilometers per second. That\u2019s way faster than sound, which is just 343 meters per second!",
+    "ai_video_prompt": "Cinematic motion: Context visual: Light travels at about 299,792 kilometers per second. That\u2019s way faster than sound, which is just 343 meters per second!",
+    "stock_footage_query": "",
+    "text_overlay": "Light travels at about",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "So when lightning strikes, the light reaches you instantly. But sound? It takes its sweet time.",
+    "visual_description": "Escalation visual: So when lightning strikes, the light reaches you instantly. But sound? It takes its sweet time.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: So when lightning strikes, the light reaches you instantly. But sound? It takes its sweet time.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: So when lightning strikes, the light reaches you instantly. But sound? It takes its sweet time.",
+    "stock_footage_query": "",
+    "text_overlay": "So when lightning strikes,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "For every five seconds between the flash and the boom, you're roughly one mile away from the strike.",
+    "visual_description": "Evidence visual: For every five seconds between the flash and the boom, you're roughly one mile away from the strike.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: For every five seconds between the flash and the boom, you're roughly one mile away from the strike.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: For every five seconds between the flash and the boom, you're roughly one mile away from the strike.",
+    "stock_footage_query": "",
+    "text_overlay": "For every five seconds",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "So next time you see lightning, count the seconds until you hear thunder. That\u2019s your distance check!",
+    "visual_description": "Payoff visual: So next time you see lightning, count the seconds until you hear thunder. That\u2019s your distance check!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So next time you see lightning, count the seconds until you hear thunder. That\u2019s your distance check!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So next time you see lightning, count the seconds until you hear thunder. That\u2019s your distance check!",
+    "stock_footage_query": "",
+    "text_overlay": "So next time you",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Like what you learned? Hit that follow button for more mind-blowing science facts!",
+    "visual_description": "Cta visual: Like what you learned? Hit that follow button for more mind-blowing science facts!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Like what you learned? Hit that follow button for more mind-blowing science facts!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Like what you learned? Hit that follow button for more mind-blowing science facts!",
+    "stock_footage_query": "",
+    "text_overlay": "Like what you learned?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

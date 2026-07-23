@@ -1,0 +1,138 @@
+{
+  "world_id": "WORLD-ANCIENT_EGYPT",
+  "world_type": "Ancient Egypt",
+  "name": "Ancient Egypt",
+  "theme": "monumental myth",
+  "scale": "complex",
+  "historical_accuracy": 75,
+  "environment": {
+    "description": "Sun-baked temple court with hieroglyph columns, sand floor, and pyramid silhouette",
+    "continuity_key": "WORLD-ANCIENT_EGYPT",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "hard desert sun + warm stone bounce",
+    "consistent_key": true
+  },
+  "architecture": [
+    "pylon gates",
+    "obelisks",
+    "columned hypostyle"
+  ],
+  "weather": "desert_clear",
+  "objects": [
+    {
+      "object_id": "obj_sphinx_fragment",
+      "name": "sphinx_fragment",
+      "surface": "ground",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.35,
+        "y": 0.0,
+        "z": 0.4
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_offering_table",
+      "name": "offering_table",
+      "surface": "ground",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.5,
+        "y": 0.0,
+        "z": 0.5
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [],
+  "background_animations": [
+    "sand drift",
+    "heat shimmer",
+    "linen flap"
+  ],
+  "sound_ambience": [
+    "desert wind",
+    "distant drum"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.4,
+    "max_height": 20.0,
+    "min_distance": 1.0,
+    "max_distance": 80.0
+  },
+  "color_palette": {
+    "family": "history",
+    "primary": "#3D2914",
+    "accent": "#C9A66B",
+    "sky": "#87CEEB"
+  },
+  "lighting_presets": [
+    {
+      "id": "noon",
+      "recipe": "hard sun short shadows",
+      "mood": "monumental"
+    },
+    {
+      "id": "dusk",
+      "recipe": "golden wash on sandstone",
+      "mood": "mythic"
+    },
+    {
+      "id": "torch_crypt",
+      "recipe": "torch practicals + cool blue fill",
+      "mood": "mystery"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "pylon_wide",
+      "position": "court",
+      "angle": "low_hero",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "column_track",
+      "position": "hypostyle",
+      "angle": "tracking",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "glyph_macro",
+      "position": "wall",
+      "angle": "macro",
+      "lens_hint": "85mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "ritual_court",
+      "region": "center"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "nile_path",
+      "to_compatible": [
+        "Museum",
+        "Ancient Rome",
+        "Library"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.159625+00:00"
+}

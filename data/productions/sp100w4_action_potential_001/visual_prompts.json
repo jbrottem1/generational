@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: What if I told you nerves communicate through a traveling spike of electricity?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: This electric spike, known as the action potential, is essential for sending signals in your body.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Imagine billions of these spikes racing down neurons, orchestrating everything from a twitch to a thought.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: When a neuron fires, it opens ion channels, allowing sodium to rush in, creating that spike. Then, potassium flows out t",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: This rapid ion exchange travels down the neuron at lightning speed, relaying vital information throughout your body \u2014 al",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about more brain mysteries? Hit that follow for more science secrets!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: What if I told you nerves communicate through a traveling spike of electricity?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: This electric spike, known as the action potential, is essential for sending signals in your body.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Imagine billions of these spikes racing down neurons, orchestrating everything from a twitch to a thought.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: When a neuron fires, it opens ion channels, allowing sodium to rush in, creating that spike. Then, potassium flows out t",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: This rapid ion exchange travels down the neuron at lightning speed, relaying vital information throughout your body \u2014 al",
+      "duration_sec": 20.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about more brain mysteries? Hit that follow for more science secrets!",
+      "duration_sec": 10.0
+    }
+  ]
+}

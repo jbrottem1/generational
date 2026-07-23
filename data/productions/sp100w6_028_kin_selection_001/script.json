@@ -1,0 +1,74 @@
+{
+  "title": "Kin selection",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the science of kin selection and its implications for behavior.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Ever wondered why we sometimes put family first? It's deeper than you think.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Kin selection explains that we\u2019re wired to help our relatives, boosting shared genes' survival.",
+      "emotion": "curiosity",
+      "delivery": "clear and engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But it\u2019s not that simple. What about those who sacrifice for strangers? What drives that?",
+      "emotion": "curiosity",
+      "delivery": "thought-provoking",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that altruistic behavior can extend beyond family to friends and community members. It\u2019s a complex web.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "engagement hook"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding kin selection helps explain social bonds and how we navigate relationships. It's not just survival; it's connection.",
+      "emotion": "curiosity",
+      "delivery": "inspiring",
+      "retention_device": "satisfying conclusion"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more science insights? Hit subscribe and unravel the mysteries with me!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "engaging call to action"
+    }
+  ],
+  "full_voiceover": "Ever wondered why we sometimes put family first? It's deeper than you think. Kin selection explains that we\u2019re wired to help our relatives, boosting shared genes' survival. But it\u2019s not that simple. What about those who sacrifice for strangers? What drives that? Studies show that altruistic behavior can extend beyond family to friends and community members. It\u2019s a complex web. Understanding kin selection helps explain social bonds and how we navigate relationships. It's not just survival; it's connection. Curious about more science insights? Hit subscribe and unravel the mysteries with me!",
+  "call_to_action": "Hit subscribe and unravel the mysteries with me!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:00:35.067966+00:00",
+  "source": "ai"
+}

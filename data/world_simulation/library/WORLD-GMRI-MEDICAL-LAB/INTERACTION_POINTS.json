@@ -1,0 +1,228 @@
+{
+  "world_id": "WORLD-GMRI-MEDICAL-LAB",
+  "points": [
+    {
+      "id": "interact_furn_teaching_console_0",
+      "target_id": "furn_teaching_console_0",
+      "target_type": "console",
+      "position": [
+        -4.5,
+        0.0,
+        -2.1
+      ],
+      "actions": [
+        "type",
+        "touch",
+        "lean"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_furn_analysis_desk_1",
+      "target_id": "furn_analysis_desk_1",
+      "target_type": "desk",
+      "position": [
+        -0.8999999999999999,
+        0.0,
+        -2.1
+      ],
+      "actions": [
+        "lean",
+        "write",
+        "place_object"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_furn_stool_chair_2",
+      "target_id": "furn_stool_chair_2",
+      "target_type": "chair",
+      "position": [
+        2.7,
+        0.0,
+        -2.1
+      ],
+      "actions": [
+        "sit",
+        "stand"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_furn_equipment_rack_3",
+      "target_id": "furn_equipment_rack_3",
+      "target_type": "equipment_rack",
+      "position": [
+        -4.5,
+        0.0,
+        -0.7000000000000002
+      ],
+      "actions": [
+        "inspect",
+        "approach"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_prop_microscope_0",
+      "target_id": "prop_microscope_0",
+      "target_type": "microscope",
+      "position": [
+        -4.5,
+        0.0,
+        -0.9000000000000001
+      ],
+      "actions": [
+        "inspect",
+        "adjust",
+        "point"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_prop_hologram_1",
+      "target_id": "prop_hologram_1",
+      "target_type": "hologram",
+      "position": [
+        -0.8999999999999999,
+        0.0,
+        -0.9000000000000001
+      ],
+      "actions": [
+        "point",
+        "gesture",
+        "explain"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_prop_whiteboard_2",
+      "target_id": "prop_whiteboard_2",
+      "target_type": "whiteboard",
+      "position": [
+        2.7,
+        0.0,
+        -0.9000000000000001
+      ],
+      "actions": [
+        "write",
+        "erase",
+        "present"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_prop_door_3",
+      "target_id": "prop_door_3",
+      "target_type": "door",
+      "position": [
+        -4.5,
+        0.0,
+        0.4999999999999998
+      ],
+      "actions": [
+        "open",
+        "close",
+        "enter",
+        "exit"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_prop_medical_scanner_4",
+      "target_id": "prop_medical_scanner_4",
+      "target_type": "medical_scanner",
+      "position": [
+        -0.8999999999999999,
+        0.0,
+        0.4999999999999998
+      ],
+      "actions": [
+        "inspect",
+        "approach"
+      ],
+      "approach_radius_m": 0.9,
+      "requires_navigation": true
+    },
+    {
+      "id": "interact_door_main",
+      "target_id": "door_main",
+      "target_type": "door",
+      "position": [
+        0.0,
+        0.0,
+        -6.9
+      ],
+      "actions": [
+        "open",
+        "close",
+        "enter",
+        "exit"
+      ],
+      "approach_radius_m": 0.8,
+      "requires_navigation": true
+    }
+  ],
+  "count": 10,
+  "action_catalog": {
+    "chair": [
+      "sit",
+      "stand"
+    ],
+    "desk": [
+      "lean",
+      "write",
+      "place_object"
+    ],
+    "microscope": [
+      "inspect",
+      "adjust",
+      "point"
+    ],
+    "whiteboard": [
+      "write",
+      "erase",
+      "present"
+    ],
+    "door": [
+      "open",
+      "close",
+      "enter",
+      "exit"
+    ],
+    "hologram": [
+      "point",
+      "gesture",
+      "explain"
+    ],
+    "console": [
+      "type",
+      "touch",
+      "lean"
+    ],
+    "bookshelf": [
+      "browse",
+      "take_book",
+      "place_book"
+    ],
+    "bench": [
+      "sit",
+      "stand"
+    ],
+    "exhibit": [
+      "inspect",
+      "point",
+      "activate"
+    ]
+  },
+  "every_prop_advertises_interactions": true,
+  "forbid_non_interactive_set_dressing_as_primary": true
+}

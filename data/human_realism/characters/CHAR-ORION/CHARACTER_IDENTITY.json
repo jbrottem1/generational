@@ -1,0 +1,39 @@
+{
+  "character_id": "CHAR-ORION",
+  "name": "Orion",
+  "role": "explorer_adventurer",
+  "style_mode": "cinematic_realism",
+  "is_gold_standard": false,
+  "inherits_from": "BASE_HUMAN_REALISM",
+  "reference_implementation": "DOCTOR_001",
+  "canonical_height_cm": 182,
+  "body_mass_estimate_kg": 86,
+  "age_range": "adult",
+  "biological_build": "athletic_field",
+  "silhouette": "field_jacket_compass",
+  "palette": {
+    "skin": "#D2A078",
+    "hair": "#1E1612",
+    "coat": "#465A30",
+    "accent": "#B46E3C"
+  },
+  "personality": [
+    "bold",
+    "adventurous",
+    "steady",
+    "observant"
+  ],
+  "voice": {
+    "voice": "onyx",
+    "style": "field_narrator",
+    "pace": "adventurous"
+  },
+  "wardrobe_default": "olive_field_jacket",
+  "gait_characteristics": [
+    "longer_stride",
+    "terrain_aware",
+    "alert_head"
+  ],
+  "forbid_regenerate_from_scratch": true,
+  "framework_id": "HUMAN_REALISM_FRAMEWORK_V1"
+}

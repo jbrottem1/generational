@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Ever wondered why comets have dazzling tails?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Comets are icy wanderers, but their journey through the solar system reveals their true beauty.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: As they approach the Sun, solar energy heats up the nucleus, releasing gas and dust.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Sunlight and solar wind push this material away, forming bright, glowing tails that always point away from the Sun.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: So, a comet's tail isn't just a pretty sight\u2014it's a cosmic dance between ice and solar power.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious for more cosmic wonders? Like and follow for more fascinating space facts!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Ever wondered why comets have dazzling tails?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Comets are icy wanderers, but their journey through the solar system reveals their true beauty.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: As they approach the Sun, solar energy heats up the nucleus, releasing gas and dust.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Sunlight and solar wind push this material away, forming bright, glowing tails that always point away from the Sun.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: So, a comet's tail isn't just a pretty sight\u2014it's a cosmic dance between ice and solar power.",
+      "duration_sec": 14.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious for more cosmic wonders? Like and follow for more fascinating space facts!",
+      "duration_sec": 20.0
+    }
+  ]
+}

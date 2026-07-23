@@ -1,0 +1,74 @@
+{
+  "title": "How CRISPR Edits DNA",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A brief, engaging overview of how CRISPR technology enables precise DNA editing.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Scientists can cut DNA like text \u2014 this is how CRISPR works.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "CRISPR is like a molecular scissors, targeting specific DNA sequences.",
+      "emotion": "curiosity",
+      "delivery": "informative and engaging",
+      "retention_device": "question prompt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Imagine fixing genetic errors to prevent diseases. Sounds like sci-fi, right?",
+      "emotion": "curiosity",
+      "delivery": "excited and dramatic",
+      "retention_device": "visual surprise"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "With CRISPR-Cas9, scientists guide RNA to the target DNA, making precise cuts.",
+      "emotion": "curiosity",
+      "delivery": "clear and confident",
+      "retention_device": "illustrative example"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 36.0,
+      "segment_type": "payoff",
+      "voiceover": "This breakthrough can revolutionize medicine, agriculture, and more!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic and hopeful",
+      "retention_device": "anticipation of future impact"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 36.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about CRISPR? Hit like and follow for more science secrets!",
+      "emotion": "curiosity",
+      "delivery": "inviting and energetic",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "Scientists can cut DNA like text \u2014 this is how CRISPR works. CRISPR is like a molecular scissors, targeting specific DNA sequences. Imagine fixing genetic errors to prevent diseases. Sounds like sci-fi, right? With CRISPR-Cas9, scientists guide RNA to the target DNA, making precise cuts. This breakthrough can revolutionize medicine, agriculture, and more! Curious about CRISPR? Hit like and follow for more science secrets!",
+  "call_to_action": "Hit like and follow for more science secrets!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T20:07:32.957059+00:00",
+  "source": "ai"
+}

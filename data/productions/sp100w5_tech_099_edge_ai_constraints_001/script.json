@@ -1,0 +1,74 @@
+{
+  "title": "Edge AI Constraints",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the scientific limitations of edge AI.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about edge AI constraints than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Edge AI brings computing power closer to data sources, but it has its limits.",
+      "emotion": "curiosity",
+      "delivery": "engaging and concise",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Processing speed, energy consumption, and data privacy are key hurdles.",
+      "emotion": "curiosity",
+      "delivery": "dynamic and informative",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that real-time processing can drain battery life significantly.",
+      "emotion": "curiosity",
+      "delivery": "fact-based and compelling",
+      "retention_device": "surprise element"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 42.0,
+      "segment_type": "payoff",
+      "voiceover": "So, while edge AI is revolutionary, we must tread carefully with its expectations.",
+      "emotion": "curiosity",
+      "delivery": "resolute and reflective",
+      "retention_device": "conclusion link"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 42.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay informed! Like and follow for more tech insights.",
+      "emotion": "curiosity",
+      "delivery": "encouraging and friendly",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about edge AI constraints than social media does. Edge AI brings computing power closer to data sources, but it has its limits. Processing speed, energy consumption, and data privacy are key hurdles. Studies show that real-time processing can drain battery life significantly. So, while edge AI is revolutionary, we must tread carefully with its expectations. Stay informed! Like and follow for more tech insights.",
+  "call_to_action": "Stay informed! Like and follow for more tech insights.",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:49:01.998564+00:00",
+  "source": "ai"
+}

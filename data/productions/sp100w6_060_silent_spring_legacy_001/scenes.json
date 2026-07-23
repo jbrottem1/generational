@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if a book changed how we see nature forever?",
+    "visual_description": "Hook visual: What if a book changed how we see nature forever?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if a book changed how we see nature forever?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if a book changed how we see nature forever?",
+    "stock_footage_query": "",
+    "text_overlay": "What if a book",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 6.0,
+    "narration": "In 1962, Rachel Carson's 'Silent Spring' revealed the dangers of pesticides.",
+    "visual_description": "Context visual: In 1962, Rachel Carson's 'Silent Spring' revealed the dangers of pesticides.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: In 1962, Rachel Carson's 'Silent Spring' revealed the dangers of pesticides.",
+    "ai_video_prompt": "Cinematic motion: Context visual: In 1962, Rachel Carson's 'Silent Spring' revealed the dangers of pesticides.",
+    "stock_footage_query": "",
+    "text_overlay": "In 1962, Rachel Carson's",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 8.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But not all scientists agreed. Controversy sparked heated debates.",
+    "visual_description": "Escalation visual: But not all scientists agreed. Controversy sparked heated debates.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But not all scientists agreed. Controversy sparked heated debates.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But not all scientists agreed. Controversy sparked heated debates.",
+    "stock_footage_query": "",
+    "text_overlay": "But not all scientists",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 8.0,
+      "end_sec": 16.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 8.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Some argued Carson exaggerated risks, labeling her a fearmonger.",
+    "visual_description": "Evidence visual: Some argued Carson exaggerated risks, labeling her a fearmonger.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Some argued Carson exaggerated risks, labeling her a fearmonger.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Some argued Carson exaggerated risks, labeling her a fearmonger.",
+    "stock_footage_query": "",
+    "text_overlay": "Some argued Carson exaggerated",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 16.0,
+      "end_sec": 24.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 16.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Yet, her work led to the U.S. banning DDT and sparked the environmental movement.",
+    "visual_description": "Payoff visual: Yet, her work led to the U.S. banning DDT and sparked the environmental movement.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Yet, her work led to the U.S. banning DDT and sparked the environmental movement.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Yet, her work led to the U.S. banning DDT and sparked the environmental movement.",
+    "stock_footage_query": "",
+    "text_overlay": "Yet, her work led",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 24.0,
+      "end_sec": 36.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 24.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "But here's the catch: many questions still linger.",
+    "visual_description": "Pattern Interrupt visual: But here's the catch: many questions still linger.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: But here's the catch: many questions still linger.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: But here's the catch: many questions still linger.",
+    "stock_footage_query": "",
+    "text_overlay": "But here's the catch:",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 36.0,
+      "end_sec": 48.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 36.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Curious about the lasting impact? Hit follow for more science insights!",
+    "visual_description": "Cta visual: Curious about the lasting impact? Hit follow for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about the lasting impact? Hit follow for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about the lasting impact? Hit follow for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about the lasting",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 48.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 48.0
+    }
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science has a clearer story about the availability heuristic than social media does.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: The availability heuristic is about how we judge the likelihood of events based on how easily examples come to mind.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Think about it: if you hear more about plane crashes, you start thinking flying is dangerous, even if statistics say oth",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Studies show this bias affects decisions from health choices to politics, often leading us astray.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: By recognizing this mental shortcut, we can make better decisions, relying on facts instead of feelings.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to explore more about how your mind works? Hit follow for more!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science has a clearer story about the availability heuristic than social media does.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: The availability heuristic is about how we judge the likelihood of events based on how easily examples come to mind.",
+      "duration_sec": 10.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Think about it: if you hear more about plane crashes, you start thinking flying is dangerous, even if statistics say oth",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Studies show this bias affects decisions from health choices to politics, often leading us astray.",
+      "duration_sec": 10.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: By recognizing this mental shortcut, we can make better decisions, relying on facts instead of feelings.",
+      "duration_sec": 20.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to explore more about how your mind works? Hit follow for more!",
+      "duration_sec": 10.0
+    }
+  ]
+}

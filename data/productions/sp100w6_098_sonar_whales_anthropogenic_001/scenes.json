@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Ever wondered how human activities affect whale communication?",
+    "visual_description": "Hook visual: Ever wondered how human activities affect whale communication?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever wondered how human activities affect whale communication?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever wondered how human activities affect whale communication?",
+    "stock_footage_query": "",
+    "text_overlay": "Ever wondered how human",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Sonar whales rely on sound for navigation and hunting. But what happens when our noise disrupts this delicate balance?",
+    "visual_description": "Context visual: Sonar whales rely on sound for navigation and hunting. But what happens when our noise disrupts this delicate balance?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Sonar whales rely on sound for navigation and hunting. But what happens when our noise disrupts this delicate balance?",
+    "ai_video_prompt": "Cinematic motion: Context visual: Sonar whales rely on sound for navigation and hunting. But what happens when our noise disrupts this delicate balance?",
+    "stock_footage_query": "",
+    "text_overlay": "Sonar whales rely on",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "pattern_interrupt",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "Studies show increased shipping traffic and naval exercises can interfere with their echolocation.",
+    "visual_description": "Pattern Interrupt visual: Studies show increased shipping traffic and naval exercises can interfere with their echolocation.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: Studies show increased shipping traffic and naval exercises can interfere with their echolocation.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: Studies show increased shipping traffic and naval exercises can interfere with their echolocation.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show increased shipping",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "Research indicates that whales exposed to loud sounds can become disoriented, affecting their feeding and breeding.",
+    "visual_description": "Evidence visual: Research indicates that whales exposed to loud sounds can become disoriented, affecting their feeding and breeding.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research indicates that whales exposed to loud sounds can become disoriented, affecting their feeding and breeding.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research indicates that whales exposed to loud sounds can become disoriented, affecting their feeding and breeding.",
+    "stock_footage_query": "",
+    "text_overlay": "Research indicates that whales",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "escalation",
+    "emotion": "seriousness",
+    "length_sec": 14.0,
+    "narration": "This disruption not only harms individual whales but can impact entire populations, leaving lasting consequences.",
+    "visual_description": "Escalation visual: This disruption not only harms individual whales but can impact entire populations, leaving lasting consequences.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: This disruption not only harms individual whales but can impact entire populations, leaving lasting consequences.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: This disruption not only harms individual whales but can impact entire populations, leaving lasting consequences.",
+    "stock_footage_query": "",
+    "text_overlay": "This disruption not only",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "payoff",
+    "emotion": "hopeful",
+    "length_sec": 10.0,
+    "narration": "Understanding these effects is crucial. Knowing the facts helps us protect these magnificent creatures.",
+    "visual_description": "Payoff visual: Understanding these effects is crucial. Knowing the facts helps us protect these magnificent creatures.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding these effects is crucial. Knowing the facts helps us protect these magnificent creatures.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding these effects is crucial. Knowing the facts helps us protect these magnificent creatures.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding these effects is",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "encouraging",
+    "length_sec": 10.0,
+    "narration": "Curious to learn more about marine life? Like and follow for more insights!",
+    "visual_description": "Cta visual: Curious to learn more about marine life? Like and follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious to learn more about marine life? Like and follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious to learn more about marine life? Like and follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

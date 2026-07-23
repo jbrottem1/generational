@@ -1,0 +1,74 @@
+{
+  "title": "Metastasis Basics",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A concise explanation of metastasis, revealing its critical role in cancer progression.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about metastasis basics.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Metastasis is how cancer spreads from one part of the body to another. But how does that happen?",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "It starts when cancer cells break away from a tumor. They then enter the bloodstream or lymphatic system!",
+      "emotion": "curiosity",
+      "delivery": "animated",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Once circulating, these cells can find new locations, creating secondary tumors. This process is complex and still not fully understood.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "data point"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding metastasis is crucial for developing effective cancer treatments. Scientists are making strides, but much remains to be discovered!",
+      "emotion": "curiosity",
+      "delivery": "motivational",
+      "retention_device": "strong conclusion"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more about cancer research? Hit the follow button now!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about metastasis basics. Metastasis is how cancer spreads from one part of the body to another. But how does that happen? It starts when cancer cells break away from a tumor. They then enter the bloodstream or lymphatic system! Once circulating, these cells can find new locations, creating secondary tumors. This process is complex and still not fully understood. Understanding metastasis is crucial for developing effective cancer treatments. Scientists are making strides, but much remains to be discovered! Want to learn more about cancer research? Hit the follow button now!",
+  "call_to_action": "Want to learn more about cancer research? Hit the follow button now!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:28:44.943115+00:00",
+  "source": "ai"
+}

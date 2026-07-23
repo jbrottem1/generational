@@ -1,0 +1,152 @@
+{
+  "world_id": "WORLD-OPERATING_ROOM",
+  "world_type": "Operating Room",
+  "name": "Operating Room",
+  "theme": "precision under pressure",
+  "scale": "suite",
+  "historical_accuracy": 85,
+  "environment": {
+    "description": "Sterile OR with overhead surgical lights, instrument trays, and green drapes",
+    "continuity_key": "WORLD-OPERATING_ROOM",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "hard surgical key + cool ambient",
+    "consistent_key": true
+  },
+  "architecture": [
+    "sealed suite",
+    "boom arms",
+    "laminar flow ceiling"
+  ],
+  "weather": "indoors_sterile",
+  "objects": [
+    {
+      "object_id": "obj_surgical_light",
+      "name": "surgical_light",
+      "surface": "ceiling",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.5,
+        "y": 2.4,
+        "z": 0.45
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_instrument_tray",
+      "name": "instrument_tray",
+      "surface": "desk",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.35,
+        "y": 1.0,
+        "z": 0.4
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "obj_operating_table",
+      "name": "operating_table",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.5,
+        "y": 0.0,
+        "z": 0.45
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "background_animations": [
+    "light boom micro-adjust",
+    "steam sterilizer haze"
+  ],
+  "sound_ambience": [
+    "monitor beep",
+    "suction hiss"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.6,
+    "max_height": 2.8,
+    "min_distance": 0.4,
+    "max_distance": 6.0
+  },
+  "color_palette": {
+    "family": "lab",
+    "primary": "#0D1B1E",
+    "accent": "#2A9D8F",
+    "cloth": "#1B4332"
+  },
+  "lighting_presets": [
+    {
+      "id": "surgery_focus",
+      "recipe": "concentrated overhead pool",
+      "mood": "precision"
+    },
+    {
+      "id": "wide_sterile",
+      "recipe": "even clinical fill",
+      "mood": "calm"
+    },
+    {
+      "id": "crisis",
+      "recipe": "high contrast red-biased practicals",
+      "mood": "urgency"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "overhead",
+      "position": "light_boom",
+      "angle": "top_down",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "surgeon_pov",
+      "position": "table_side",
+      "angle": "eye_level",
+      "lens_hint": "50mm"
+    },
+    {
+      "id": "tray_detail",
+      "position": "instruments",
+      "angle": "macro",
+      "lens_hint": "85mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "table",
+      "region": "center"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "scrub_door",
+      "to_compatible": [
+        "Hospital",
+        "Science Lab"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.158612+00:00"
+}

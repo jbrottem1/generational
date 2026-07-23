@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Kelp forests are one of nature's best-kept secrets.",
+    "visual_description": "Hook visual: Kelp forests are one of nature's best-kept secrets.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Kelp forests are one of nature's best-kept secrets.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Kelp forests are one of nature's best-kept secrets.",
+    "stock_footage_query": "",
+    "text_overlay": "Kelp forests are one",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "These underwater jungles support diverse marine life, but they're more than just beautiful landscapes.",
+    "visual_description": "Context visual: These underwater jungles support diverse marine life, but they're more than just beautiful landscapes.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: These underwater jungles support diverse marine life, but they're more than just beautiful landscapes.",
+    "ai_video_prompt": "Cinematic motion: Context visual: These underwater jungles support diverse marine life, but they're more than just beautiful landscapes.",
+    "stock_footage_query": "",
+    "text_overlay": "These underwater jungles support",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Kelp absorbs CO2, helping fight climate change. But, the truth is, we don\u2019t fully understand their role.",
+    "visual_description": "Escalation visual: Kelp absorbs CO2, helping fight climate change. But, the truth is, we don\u2019t fully understand their role.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Kelp absorbs CO2, helping fight climate change. But, the truth is, we don\u2019t fully understand their role.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Kelp absorbs CO2, helping fight climate change. But, the truth is, we don\u2019t fully understand their role.",
+    "stock_footage_query": "",
+    "text_overlay": "Kelp absorbs CO2, helping",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "urgency",
+    "length_sec": 8.0,
+    "narration": "Research shows they can disappear quickly due to warming waters and pollution. We need to act now.",
+    "visual_description": "Evidence visual: Research shows they can disappear quickly due to warming waters and pollution. We need to act now.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows they can disappear quickly due to warming waters and pollution. We need to act now.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows they can disappear quickly due to warming waters and pollution. We need to act now.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows they can",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "hopefulness",
+    "length_sec": 14.0,
+    "narration": "Kelp forests are vital ecosystems, yet they're fragile. Protecting them is crucial for our oceans' health.",
+    "visual_description": "Payoff visual: Kelp forests are vital ecosystems, yet they're fragile. Protecting them is crucial for our oceans' health.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Kelp forests are vital ecosystems, yet they're fragile. Protecting them is crucial for our oceans' health.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Kelp forests are vital ecosystems, yet they're fragile. Protecting them is crucial for our oceans' health.",
+    "stock_footage_query": "",
+    "text_overlay": "Kelp forests are vital",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "encouragement",
+    "length_sec": 10.0,
+    "narration": "Curious about more ocean mysteries? Hit that follow button for more!",
+    "visual_description": "Cta visual: Curious about more ocean mysteries? Hit that follow button for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more ocean mysteries? Hit that follow button for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more ocean mysteries? Hit that follow button for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more ocean",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "title": "Hurricane Formation",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "This video unpacks the scientific process behind hurricane formation.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about hurricane formation than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Hurricanes form over warm ocean waters, fueled by heat and moisture.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "As warm air rises, it creates low pressure, pulling in more air.",
+      "emotion": "curiosity",
+      "delivery": "building tension",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "This cycle continues, causing winds to spiral and intensify.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact reveal"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "The result? A powerful storm that can devastate coastlines.",
+      "emotion": "curiosity",
+      "delivery": "dramatic",
+      "retention_device": "strong conclusion"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more about nature's wonders? Hit like and follow for more!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "engaging CTA"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about hurricane formation than social media does. Hurricanes form over warm ocean waters, fueled by heat and moisture. As warm air rises, it creates low pressure, pulling in more air. This cycle continues, causing winds to spiral and intensify. The result? A powerful storm that can devastate coastlines. Want to learn more about nature's wonders? Hit like and follow for more!",
+  "call_to_action": "Hit like and follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:45:43.412347+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Rh factor",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A deep dive into the Rh factor reveals its complexities and significance in human biology.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Did you know your blood type could hold secrets about your health?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "The Rh factor determines if your blood is Rh positive or negative. It\u2019s all about a tiny protein on red blood cells.",
+      "emotion": "curiosity",
+      "delivery": "neutral",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But here's the twist: not everyone knows their Rh status. This can lead to serious health risks.",
+      "emotion": "concern",
+      "delivery": "slightly urgent",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "In pregnancy, for example, an Rh-negative mother and Rh-positive baby can cause complications. Awareness is crucial.",
+      "emotion": "urgency",
+      "delivery": "direct",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding your Rh factor isn't just trivia; it can save lives.",
+      "emotion": "relief",
+      "delivery": "reassuring",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about your blood type? Get tested and stay informed. Follow for more science insights!",
+      "emotion": "encouragement",
+      "delivery": "energetic",
+      "retention_device": "none"
+    }
+  ],
+  "full_voiceover": "Did you know your blood type could hold secrets about your health? The Rh factor determines if your blood is Rh positive or negative. It\u2019s all about a tiny protein on red blood cells. But here's the twist: not everyone knows their Rh status. This can lead to serious health risks. In pregnancy, for example, an Rh-negative mother and Rh-positive baby can cause complications. Awareness is crucial. Understanding your Rh factor isn't just trivia; it can save lives. Curious about your blood type? Get tested and stay informed. Follow for more science insights!",
+  "call_to_action": "Curious about your blood type? Get tested and stay informed. Follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:06:23.738389+00:00",
+  "source": "ai"
+}

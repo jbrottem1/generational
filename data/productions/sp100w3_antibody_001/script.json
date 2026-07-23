@@ -1,0 +1,84 @@
+{
+  "title": "What Antibodies Actually Do",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the crucial role of antibodies in our immune system.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Antibodies are Y-shaped proteins that tag threats for your immune system.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "But what exactly do they do?",
+      "emotion": "curiosity",
+      "delivery": "inquisitive tone",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "When a virus or bacteria invades, antibodies spring into action.",
+      "emotion": "urgency",
+      "delivery": "dynamic and engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "They bind to the invaders, marking them for destruction.",
+      "emotion": "confidence",
+      "delivery": "clear and informative",
+      "retention_device": "visualize the process"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "This helps our immune cells identify and eliminate them.",
+      "emotion": "relief",
+      "delivery": "satisfying conclusion",
+      "retention_device": "rewarding information"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 54.0,
+      "segment_type": "story_beat",
+      "voiceover": "Think of antibodies as the 'CSI agents' of your body, uncovering and tagging threats.",
+      "emotion": "engagement",
+      "delivery": "engaging narrative style",
+      "retention_device": "relatable analogy"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 54.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about your immune system? Hit follow for more insights!",
+      "emotion": "inviting",
+      "delivery": "friendly and encouraging",
+      "retention_device": "prompt for action"
+    }
+  ],
+  "full_voiceover": "Antibodies are Y-shaped proteins that tag threats for your immune system. But what exactly do they do? When a virus or bacteria invades, antibodies spring into action. They bind to the invaders, marking them for destruction. This helps our immune cells identify and eliminate them. Think of antibodies as the 'CSI agents' of your body, uncovering and tagging threats. Curious about your immune system? Hit follow for more insights!",
+  "call_to_action": "Hit follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:54:49.597279+00:00",
+  "source": "ai"
+}

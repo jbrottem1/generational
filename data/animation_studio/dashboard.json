@@ -1,0 +1,68 @@
+{
+  "department": "Animation Studio",
+  "updated_at": "2026-07-11T02:10:00Z",
+  "status": "true_motion_active",
+  "animation_director": 16,
+  "creative_veto": 18,
+  "pmo": 0,
+  "charter": "GENERATIONAL_ANIMATION_STUDIO.md",
+  "transition": "TRUE_ANIMATION_TRANSITION.md",
+  "identity": "true_animation_not_slideshow",
+  "metrics": {
+    "characters_registered": 1,
+    "animation_cycles": 23,
+    "camera_presets": 12,
+    "environment_fx": 18,
+    "props_registered": 6,
+    "series_flagship": "SERIES-DASH-SCIENCE",
+    "animation_qc_wired": true,
+    "storyboard_auto_build": true,
+    "true_motion_compositor": true,
+    "ken_burns_only_rejected": true,
+    "motion_reuse_pct": 0,
+    "reuse_target_pct": 30,
+    "true_animation_benchmark": {
+      "status": "PASSED",
+      "motion_score": 100,
+      "motion_class": "true_layered_animation",
+      "export": "True_Animation_Benchmark_V1_Dash_Ocean_Discovery.mp4"
+    },
+    "lip_sync_benchmark_001": {
+      "status": "PASSED",
+      "character_id": "CHAR-STICK-001",
+      "duration_sec": 10.056,
+      "mouth_driver": "AmplitudeMouthDriver",
+      "speaking_ratio": 0.797,
+      "export": "Animation_Benchmark_001_LipSync_Test.mp4"
+    },
+    "benchmark_v1": {
+      "status": "BENCHMARK_PASSED",
+      "topic": "The Immortal Jellyfish",
+      "overall_score": 92.3,
+      "note": "Flagship stills+drift — superseded as motion standard by true_motion"
+    }
+  },
+  "milestones": {
+    "GAS-001": "done",
+    "GAS-002": "done",
+    "GAS-003": "done",
+    "GAS-004": "done",
+    "GAS-005": "done",
+    "GAS-006": "done",
+    "GAS-007": "done_benchmark_v1",
+    "GAS-010_true_motion": "done",
+    "GAS-011_image_to_video": "ready_when_keys",
+    "GAS-008": "planned",
+    "GAS-009": "planned"
+  },
+  "active_tracks": [
+    "true_layered_animation",
+    "animation_first_workflow",
+    "dash_science_series",
+    "library_growth",
+    "image_to_video_integration"
+  ],
+  "tech_stack_now": "layered_ffmpeg_true_motion",
+  "tech_stack_next": ["runway", "kling", "luma", "fal_video"],
+  "tech_stack_quarter": ["rive_or_lottie_dash_cycles"]
+}

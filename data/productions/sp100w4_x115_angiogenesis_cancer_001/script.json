@@ -1,0 +1,74 @@
+{
+  "title": "Angiogenesis Cancer Explained",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A concise explanation of how angiogenesis plays a critical role in cancer development.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about angiogenesis cancer.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Angiogenesis is the process where new blood vessels form. It's crucial for tumors.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "As tumors grow, they need more nutrients. This is where angiogenesis comes into play.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows that targeting angiogenesis can slow cancer progression. But results are still being explored.",
+      "emotion": "curiosity",
+      "delivery": "assertive",
+      "retention_device": "data point"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 42.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding this process opens doors to new treatments, potentially saving lives. Exciting, right?",
+      "emotion": "curiosity",
+      "delivery": "optimistic",
+      "retention_device": "promise of more"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 42.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more about cancer research? Hit that follow button!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "direct appeal"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about angiogenesis cancer. Angiogenesis is the process where new blood vessels form. It's crucial for tumors. As tumors grow, they need more nutrients. This is where angiogenesis comes into play. Research shows that targeting angiogenesis can slow cancer progression. But results are still being explored. Understanding this process opens doors to new treatments, potentially saving lives. Exciting, right? Want to learn more about cancer research? Hit that follow button!",
+  "call_to_action": "Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:28:43.212413+00:00",
+  "source": "ai"
+}

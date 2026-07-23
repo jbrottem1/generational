@@ -1,0 +1,136 @@
+{
+  "world_id": "WORLD-SOLAR_SYSTEM",
+  "world_type": "Solar System",
+  "name": "Solar System",
+  "theme": "orbital order",
+  "scale": "system",
+  "historical_accuracy": 80,
+  "environment": {
+    "description": "Scaled solar system diorama with sun core, planetary orbits, and soft dust plane",
+    "continuity_key": "WORLD-SOLAR_SYSTEM",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "sun-centered key with falloff by distance",
+    "consistent_key": true
+  },
+  "architecture": [
+    "orbital rings",
+    "sun pedestal"
+  ],
+  "weather": "vacuum_dust",
+  "objects": [
+    {
+      "object_id": "obj_sun",
+      "name": "sun",
+      "surface": "orbit_plane",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_earth",
+      "name": "earth",
+      "surface": "orbit_plane",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.65,
+        "y": 0.5,
+        "z": 0.45
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [],
+  "background_animations": [
+    "orbit paths rotate",
+    "sun prominence flicker"
+  ],
+  "sound_ambience": [
+    "deep tonal bed",
+    "soft whoosh"
+  ],
+  "camera_boundaries": {
+    "min_height": -5.0,
+    "max_height": 5.0,
+    "min_distance": 1.0,
+    "max_distance": 80.0
+  },
+  "color_palette": {
+    "family": "space",
+    "primary": "#0A1628",
+    "accent": "#F4A261",
+    "ice": "#E0AAFF"
+  },
+  "lighting_presets": [
+    {
+      "id": "system_wide",
+      "recipe": "even soft fill on orbits",
+      "mood": "overview"
+    },
+    {
+      "id": "sun_flare",
+      "recipe": "lens flare solar punch",
+      "mood": "energy"
+    },
+    {
+      "id": "planet_night",
+      "recipe": "terminator light on globe",
+      "mood": "focus"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "top_down_system",
+      "position": "above_ecliptic",
+      "angle": "overhead",
+      "lens_hint": "16mm"
+    },
+    {
+      "id": "earth_approach",
+      "position": "orbit",
+      "angle": "push_in",
+      "lens_hint": "50mm"
+    },
+    {
+      "id": "sun_side",
+      "position": "corona",
+      "angle": "side",
+      "lens_hint": "35mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "ecliptic",
+      "region": "plane"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "jump_gate",
+      "to_compatible": [
+        "Outer Space",
+        "Mars Colony",
+        "Museum"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.159008+00:00"
+}

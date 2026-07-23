@@ -19,6 +19,57 @@ from services.channels import ChannelManager  # noqa: E402
 from services.knowledge import KnowledgeBase  # noqa: E402
 
 
+@pytest.fixture(scope="session", autouse=True)
+def isolated_publishing_queue(tmp_path_factory):
+    """The full pipeline now runs the publish stage, which persists jobs —
+    point the default queue directory at a temp dir for the whole session
+    so tests never write to the real data/publishing_queue store."""
+    import services.publishing.queue as publishing_queue
+
+    original = publishing_queue._DEFAULT_DIR
+    publishing_queue._DEFAULT_DIR = str(tmp_path_factory.mktemp("publishing_queue"))
+    yield
+    publishing_queue._DEFAULT_DIR = original
+
+
+@pytest.fixture(scope="session", autouse=True)
+def isolated_analytics_data(tmp_path_factory):
+    """Agent 9's analytics/learning stages persist records, memory, and
+    experiments (data/analytics) and mirror performance rows into the
+    Knowledge Base — point both at temp dirs for the whole session so
+    tests never write to the real data/ stores."""
+    import services.analytics.store as analytics_store
+    import services.knowledge as knowledge
+
+    original_dir = analytics_store._DEFAULT_DIR
+    original_kb = knowledge._kb
+    analytics_store._DEFAULT_DIR = str(tmp_path_factory.mktemp("analytics"))
+    knowledge._kb = knowledge.KnowledgeBase(str(tmp_path_factory.mktemp("knowledge")))
+    yield
+    analytics_store._DEFAULT_DIR = original_dir
+    knowledge._kb = original_kb
+
+
+@pytest.fixture(scope="session", autouse=True)
+def isolated_asset_generation_data(tmp_path_factory):
+    """Agent 14's asset registry + usage store persist under data/
+    asset_generation — point both at a temp dir for the whole session so
+    tests never write to the real store."""
+    import services.asset_generation.registry as asset_registry
+    import services.asset_generation.usage as asset_usage
+
+    original_registry = asset_registry._DEFAULT_DIR
+    original_usage = asset_usage._DEFAULT_DIR
+    temp_dir = str(tmp_path_factory.mktemp("asset_generation"))
+    asset_registry._DEFAULT_DIR = temp_dir
+    asset_usage._DEFAULT_DIR = temp_dir
+    asset_usage.reset_usage_tracker()
+    yield
+    asset_registry._DEFAULT_DIR = original_registry
+    asset_usage._DEFAULT_DIR = original_usage
+    asset_usage.reset_usage_tracker()
+
+
 @pytest.fixture
 def project_store(tmp_path):
     return JsonProjectStore(directory=str(tmp_path / "projects"))

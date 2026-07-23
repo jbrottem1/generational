@@ -1,0 +1,74 @@
+{
+  "title": "Lactate not just waste",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Lactate is a misunderstood molecule with vital roles beyond being mere waste.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Lactate isn\u2019t just waste; it\u2019s a key player in our bodies.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "For years, scientists viewed lactate as a byproduct of exercise. But new research is challenging that idea.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Lactate actually fuels our muscles and brain, helping us adapt and recover.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "interesting fact"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that lactate can improve endurance and even enhance cognitive function. It\u2019s not just a waste product!",
+      "emotion": "curiosity",
+      "delivery": "assertive",
+      "retention_device": "statistic"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "So next time you hear \u2018lactic acid\u2019, remember it\u2019s more of a fuel than a waste.",
+      "emotion": "curiosity",
+      "delivery": "enlightening",
+      "retention_device": "reversal of expectation"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more science myths? Follow for more insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "engaging question"
+    }
+  ],
+  "full_voiceover": "Lactate isn\u2019t just waste; it\u2019s a key player in our bodies. For years, scientists viewed lactate as a byproduct of exercise. But new research is challenging that idea. Lactate actually fuels our muscles and brain, helping us adapt and recover. Studies show that lactate can improve endurance and even enhance cognitive function. It\u2019s not just a waste product! So next time you hear \u2018lactic acid\u2019, remember it\u2019s more of a fuel than a waste. Curious about more science myths? Follow for more insights!",
+  "call_to_action": "Curious about more science myths? Follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:16:32.362677+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,84 @@
+{
+  "title": "Sonar Whales Anthropogenic",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "An exploration of how anthropogenic factors affect sonar whales and their communication.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Ever wondered how human activities affect whale communication?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Sonar whales rely on sound for navigation and hunting. But what happens when our noise disrupts this delicate balance?",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "Studies show increased shipping traffic and naval exercises can interfere with their echolocation.",
+      "emotion": "concern",
+      "delivery": "urgent",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research indicates that whales exposed to loud sounds can become disoriented, affecting their feeding and breeding.",
+      "emotion": "concern",
+      "delivery": "serious",
+      "retention_device": "alarming fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "escalation",
+      "voiceover": "This disruption not only harms individual whales but can impact entire populations, leaving lasting consequences.",
+      "emotion": "seriousness",
+      "delivery": "gravitas",
+      "retention_device": "escalation of stakes"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding these effects is crucial. Knowing the facts helps us protect these magnificent creatures.",
+      "emotion": "hopeful",
+      "delivery": "inspiring",
+      "retention_device": "positive resolution"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious to learn more about marine life? Like and follow for more insights!",
+      "emotion": "encouraging",
+      "delivery": "enthusiastic",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Ever wondered how human activities affect whale communication? Sonar whales rely on sound for navigation and hunting. But what happens when our noise disrupts this delicate balance? Studies show increased shipping traffic and naval exercises can interfere with their echolocation. Research indicates that whales exposed to loud sounds can become disoriented, affecting their feeding and breeding. This disruption not only harms individual whales but can impact entire populations, leaving lasting consequences. Understanding these effects is crucial. Knowing the facts helps us protect these magnificent creatures. Curious to learn more about marine life? Like and follow for more insights!",
+  "call_to_action": "Curious to learn more about marine life? Like and follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:08:26.936551+00:00",
+  "source": "ai"
+}

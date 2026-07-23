@@ -1,0 +1,404 @@
+{
+  "package_version": "1.0.0",
+  "package_type": "asset_intelligence",
+  "generated_at": "2026-07-14T03:22:01.369325+00:00",
+  "topic": "Space",
+  "keywords": [
+    "astronomy",
+    "nebula"
+  ],
+  "collection": "astronomy",
+  "platform": "youtube_shorts",
+  "audience": "general_public",
+  "channel": "",
+  "selected_media": [
+    {
+      "asset_id": "test_space_orbit",
+      "kind": "animation",
+      "topic": "Orbital motion",
+      "keywords": [
+        "space",
+        "orbit",
+        "physics"
+      ],
+      "category": "",
+      "collection": "astronomy",
+      "scientific_accuracy": 85,
+      "visual_quality": 80,
+      "animation_quality": 75,
+      "resolution": "1920x1080",
+      "orientation": "",
+      "duration_sec": 0,
+      "license": "test",
+      "color_palette": "",
+      "motion_score": 80,
+      "historical_performance": 0,
+      "reuse_count": 0,
+      "last_usage": "",
+      "creator": "",
+      "uri": "memory://orbit",
+      "source_system": "unit_test",
+      "width": 1920,
+      "height": 1080,
+      "fingerprint": "",
+      "scores": {
+        "visual_score": 88.0,
+        "educational_score": 95.0,
+        "retention_score": 84.5,
+        "motion_score": 80.0,
+        "thumbnail_usefulness": 55.0,
+        "overall_score": 100,
+        "diversity_penalty": 0,
+        "query_overlap": 0.0
+      },
+      "rank_score": 100,
+      "selected_for_query": "Space"
+    },
+    {
+      "asset_id": "test_space_nebula",
+      "kind": "image",
+      "topic": "Space nebula",
+      "keywords": [
+        "space",
+        "nebula",
+        "astronomy"
+      ],
+      "category": "",
+      "collection": "astronomy",
+      "scientific_accuracy": 80,
+      "visual_quality": 88,
+      "animation_quality": 0,
+      "resolution": "1920x1080",
+      "orientation": "",
+      "duration_sec": 0,
+      "license": "test",
+      "color_palette": "",
+      "motion_score": 0,
+      "historical_performance": 0,
+      "reuse_count": 0,
+      "last_usage": "",
+      "creator": "",
+      "uri": "memory://space",
+      "source_system": "unit_test",
+      "width": 1920,
+      "height": 1080,
+      "fingerprint": "",
+      "scores": {
+        "visual_score": 96.0,
+        "educational_score": 90.0,
+        "retention_score": 72.4,
+        "motion_score": 40.0,
+        "thumbnail_usefulness": 85.0,
+        "overall_score": 99.7,
+        "diversity_penalty": 0,
+        "query_overlap": 1.0
+      },
+      "rank_score": 99.7,
+      "selected_for_query": "Space"
+    },
+    {
+      "asset_id": "seed_topic_astronomy_image",
+      "kind": "image",
+      "topic": "Deep space nebula",
+      "keywords": [
+        "space",
+        "nebula",
+        "astronomy",
+        "galaxy"
+      ],
+      "category": "seed",
+      "collection": "astronomy",
+      "scientific_accuracy": 75,
+      "visual_quality": 70,
+      "animation_quality": 40,
+      "resolution": "1920x1080",
+      "orientation": "",
+      "duration_sec": 0,
+      "license": "internal_seed",
+      "color_palette": "",
+      "motion_score": 35,
+      "historical_performance": 0,
+      "reuse_count": 0,
+      "last_usage": "",
+      "creator": "system",
+      "uri": "",
+      "source_system": "asset_intelligence_seed",
+      "width": 1920,
+      "height": 1080,
+      "fingerprint": "",
+      "scores": {
+        "visual_score": 78.0,
+        "educational_score": 85.0,
+        "retention_score": 62.2,
+        "motion_score": 35.0,
+        "thumbnail_usefulness": 85.0,
+        "overall_score": 92.0,
+        "diversity_penalty": 0,
+        "query_overlap": 1.0
+      },
+      "rank_score": 92.0,
+      "selected_for_query": "Space"
+    }
+  ],
+  "backup_choices": [
+    {
+      "asset_id": "seed_topic_astronomy_render_3d",
+      "kind": "render_3d",
+      "topic": "Earth orbit",
+      "keywords": [
+        "space",
+        "earth",
+        "orbit",
+        "astronomy"
+      ],
+      "category": "seed",
+      "collection": "astronomy",
+      "scientific_accuracy": 75,
+      "visual_quality": 70,
+      "animation_quality": 40,
+      "resolution": "1920x1080",
+      "orientation": "",
+      "duration_sec": 0,
+      "license": "internal_seed",
+      "color_palette": "",
+      "motion_score": 35,
+      "historical_performance": 0,
+      "reuse_count": 0,
+      "last_usage": "",
+      "creator": "system",
+      "uri": "",
+      "source_system": "asset_intelligence_seed",
+      "width": 1920,
+      "height": 1080,
+      "fingerprint": "",
+      "scores": {
+        "visual_score": 78.0,
+        "educational_score": 85.0,
+        "retention_score": 62.2,
+        "motion_score": 35.0,
+        "thumbnail_usefulness": 55.0,
+        "overall_score": 86.0,
+        "diversity_penalty": 0,
+        "query_overlap": 0.0
+      },
+      "rank_score": 86.0,
+      "selected_for_query": "Space"
+    },
+    {
+      "asset_id": "seed_astronomy_overlay",
+      "kind": "educational_graphic",
+      "topic": "astronomy",
+      "keywords": [
+        "astronomy",
+        "education",
+        "graphic"
+      ],
+      "category": "seed",
+      "collection": "astronomy",
+      "scientific_accuracy": 60,
+      "visual_quality": 55,
+      "animation_quality": 0,
+      "resolution": "",
+      "orientation": "",
+      "duration_sec": 0,
+      "license": "internal_seed",
+      "color_palette": "",
+      "motion_score": 0,
+      "historical_performance": 0,
+      "reuse_count": 0,
+      "last_usage": "",
+      "creator": "system",
+      "uri": "",
+      "source_system": "asset_intelligence_seed",
+      "width": 0,
+      "height": 0,
+      "fingerprint": "",
+      "scores": {
+        "visual_score": 55.0,
+        "educational_score": 60.0,
+        "retention_score": 51.0,
+        "motion_score": 40.0,
+        "thumbnail_usefulness": 70.0,
+        "overall_score": 55.2,
+        "diversity_penalty": 0,
+        "query_overlap": 0.0
+      },
+      "rank_score": 55.2,
+      "selected_for_query": "Space"
+    }
+  ],
+  "licensing": [
+    {
+      "asset_id": "test_space_orbit",
+      "license": "test",
+      "creator": "",
+      "source_system": "unit_test"
+    },
+    {
+      "asset_id": "test_space_nebula",
+      "license": "test",
+      "creator": "",
+      "source_system": "unit_test"
+    },
+    {
+      "asset_id": "seed_topic_astronomy_image",
+      "license": "internal_seed",
+      "creator": "system",
+      "source_system": "asset_intelligence_seed"
+    },
+    {
+      "asset_id": "seed_topic_astronomy_render_3d",
+      "license": "internal_seed",
+      "creator": "system",
+      "source_system": "asset_intelligence_seed"
+    },
+    {
+      "asset_id": "seed_astronomy_overlay",
+      "license": "internal_seed",
+      "creator": "system",
+      "source_system": "asset_intelligence_seed"
+    }
+  ],
+  "quality_scores": {
+    "test_space_orbit": {
+      "visual_score": 88.0,
+      "educational_score": 95.0,
+      "retention_score": 84.5,
+      "motion_score": 80.0,
+      "thumbnail_usefulness": 55.0,
+      "overall_score": 100,
+      "diversity_penalty": 0,
+      "query_overlap": 0.0
+    },
+    "test_space_nebula": {
+      "visual_score": 96.0,
+      "educational_score": 90.0,
+      "retention_score": 72.4,
+      "motion_score": 40.0,
+      "thumbnail_usefulness": 85.0,
+      "overall_score": 99.7,
+      "diversity_penalty": 0,
+      "query_overlap": 1.0
+    },
+    "seed_topic_astronomy_image": {
+      "visual_score": 78.0,
+      "educational_score": 85.0,
+      "retention_score": 62.2,
+      "motion_score": 35.0,
+      "thumbnail_usefulness": 85.0,
+      "overall_score": 92.0,
+      "diversity_penalty": 0,
+      "query_overlap": 1.0
+    }
+  },
+  "reuse_analysis": {
+    "test_space_orbit": {
+      "reuse_count": 0,
+      "last_usage": "",
+      "recent_72h": 0
+    },
+    "test_space_nebula": {
+      "reuse_count": 0,
+      "last_usage": "",
+      "recent_72h": 0
+    },
+    "seed_topic_astronomy_image": {
+      "reuse_count": 0,
+      "last_usage": "",
+      "recent_72h": 0
+    }
+  },
+  "visual_diversity_score": 57.0,
+  "renderer_feed": {
+    "evidence_assets": [
+      {
+        "asset_id": "test_space_nebula",
+        "uri": "memory://space",
+        "path": "memory://space",
+        "license": "test",
+        "concepts": [
+          "space",
+          "nebula",
+          "astronomy"
+        ],
+        "topic": "Space nebula",
+        "source": "unit_test",
+        "score": 99.7,
+        "kind": "image"
+      },
+      {
+        "asset_id": "seed_topic_astronomy_image",
+        "uri": "",
+        "path": "",
+        "license": "internal_seed",
+        "concepts": [
+          "space",
+          "nebula",
+          "astronomy",
+          "galaxy"
+        ],
+        "topic": "Deep space nebula",
+        "source": "asset_intelligence_seed",
+        "score": 92.0,
+        "kind": "image"
+      }
+    ],
+    "visual_assets": [
+      {
+        "asset_id": "test_space_orbit",
+        "uri": "memory://orbit",
+        "path": "memory://orbit",
+        "license": "test",
+        "concepts": [
+          "space",
+          "orbit",
+          "physics"
+        ],
+        "topic": "Orbital motion",
+        "source": "unit_test",
+        "score": 100,
+        "kind": "animation"
+      },
+      {
+        "asset_id": "test_space_nebula",
+        "uri": "memory://space",
+        "path": "memory://space",
+        "license": "test",
+        "concepts": [
+          "space",
+          "nebula",
+          "astronomy"
+        ],
+        "topic": "Space nebula",
+        "source": "unit_test",
+        "score": 99.7,
+        "kind": "image"
+      },
+      {
+        "asset_id": "seed_topic_astronomy_image",
+        "uri": "",
+        "path": "",
+        "license": "internal_seed",
+        "concepts": [
+          "space",
+          "nebula",
+          "astronomy",
+          "galaxy"
+        ],
+        "topic": "Deep space nebula",
+        "source": "asset_intelligence_seed",
+        "score": 92.0,
+        "kind": "image"
+      }
+    ],
+    "note": "Optional attach to candidate \u2014 does not modify production pipeline stages"
+  },
+  "validation": {
+    "ok": true,
+    "passed": true,
+    "hard_fails": [],
+    "warnings": [],
+    "selected_count": 3,
+    "diversity_score": 57.0
+  }
+}

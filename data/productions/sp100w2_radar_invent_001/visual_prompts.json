@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Radar doesn't need light \u2014 it listens for radio echoes bouncing off objects.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: How does it work? Radar sends out pulses of radio waves, like invisible messengers.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: When these waves hit an object, they bounce back, creating echoes.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: By measuring the time it takes for echoes to return, radar calculates distance.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: This means radar can see through fog, revealing what\u2019s ahead, even in zero visibility.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to dive deeper into radar tech? Hit subscribe for more science secrets!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Radar doesn't need light \u2014 it listens for radio echoes bouncing off objects.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: How does it work? Radar sends out pulses of radio waves, like invisible messengers.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: When these waves hit an object, they bounce back, creating echoes.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: By measuring the time it takes for echoes to return, radar calculates distance.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: This means radar can see through fog, revealing what\u2019s ahead, even in zero visibility.",
+      "duration_sec": 10.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to dive deeper into radar tech? Hit subscribe for more science secrets!",
+      "duration_sec": 24.0
+    }
+  ]
+}

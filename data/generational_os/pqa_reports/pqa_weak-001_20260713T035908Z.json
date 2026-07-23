@@ -1,0 +1,643 @@
+{
+  "title": "Vague clip",
+  "idea_id": "weak-001",
+  "overall_score": 53,
+  "decision": "BLOCK_EXPORT",
+  "passed": false,
+  "categories": {
+    "research_accuracy": {
+      "key": "research_accuracy",
+      "label": "Research Accuracy",
+      "score": 28,
+      "confidence": 0.45,
+      "passed": false,
+      "details": {
+        "research_confidence": 20.0,
+        "citation_count": 0,
+        "unsupported_claims": 3,
+        "sources_checked": []
+      },
+      "issues": [
+        "3 unsupported claim(s)",
+        "No citations present",
+        "Low research confidence"
+      ],
+      "corrections_required": [
+        "Add citations or remove unsupported claims",
+        "Attach trusted sources via Citation Engine",
+        "Re-run Research with stronger sources"
+      ]
+    },
+    "evidence": {
+      "key": "evidence",
+      "label": "Evidence",
+      "score": 42,
+      "confidence": 0.4,
+      "passed": false,
+      "details": {
+        "real_image_pct": 0.0,
+        "ai_image_pct": 100.0,
+        "authentic_hit_count": 0,
+        "ai_fallback_count": 3,
+        "missing_evidence": [],
+        "scene_count": 0
+      },
+      "issues": [
+        "AI imagery used more than necessary"
+      ],
+      "corrections_required": [
+        "Replace AI fills with authentic media where possible"
+      ]
+    },
+    "visuals": {
+      "key": "visuals",
+      "label": "Visuals",
+      "score": 62,
+      "confidence": 0.35,
+      "passed": false,
+      "details": {
+        "visual_score": 0.0,
+        "scene_count": 0,
+        "empty_scenes": 0,
+        "qc_hard_fails": 0
+      },
+      "issues": [
+        "No visual_package to inspect"
+      ],
+      "corrections_required": [
+        "Run Visual Intelligence before PQA"
+      ]
+    },
+    "typography": {
+      "key": "typography",
+      "label": "Typography",
+      "score": 70,
+      "confidence": 0.4,
+      "passed": false,
+      "details": {
+        "has_captions": false,
+        "layout": {}
+      },
+      "issues": [
+        "Captions / subtitle plan missing"
+      ],
+      "corrections_required": [
+        "Generate captions via Subtitle Engine"
+      ]
+    },
+    "annotations": {
+      "key": "annotations",
+      "label": "Annotations",
+      "score": 78,
+      "confidence": 0.45,
+      "passed": false,
+      "details": {
+        "annotation_count": 0,
+        "narration_tied": 0,
+        "untied": 0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "cinematography": {
+      "key": "cinematography",
+      "label": "Cinematography",
+      "score": 45,
+      "confidence": 0.35,
+      "passed": false,
+      "details": {
+        "attention_score": 0.0,
+        "scene_count": 0,
+        "has_animation_handoff": false,
+        "pacing": null
+      },
+      "issues": [
+        "No cinematography_plan scenes"
+      ],
+      "corrections_required": [
+        "Run Cinematography Engine before export"
+      ]
+    },
+    "retention": {
+      "key": "retention",
+      "label": "Viewer Retention",
+      "score": 40,
+      "confidence": 0.55,
+      "passed": false,
+      "details": {
+        "package_present": false,
+        "polish_rounds": null,
+        "predictions": {},
+        "legacy_fallback": true
+      },
+      "issues": [
+        "Viewer Retention package missing"
+      ],
+      "corrections_required": [
+        "Run viewer_retention before export"
+      ]
+    },
+    "render_quality": {
+      "key": "render_quality",
+      "label": "Render Quality",
+      "score": 70,
+      "confidence": 0.5,
+      "passed": false,
+      "details": {
+        "package_present": false,
+        "revision_rounds": null,
+        "export_plan": {},
+        "legacy_fallback": true
+      },
+      "issues": [
+        "Studio Render package missing"
+      ],
+      "corrections_required": [
+        "Run studio_render before export"
+      ]
+    },
+    "audio": {
+      "key": "audio",
+      "label": "Audio",
+      "score": 60,
+      "confidence": 0.35,
+      "passed": false,
+      "details": {
+        "has_audio_file": false,
+        "music_balance": 0.5
+      },
+      "issues": [
+        "No voice/audio package"
+      ],
+      "corrections_required": [
+        "Generate narration via Voice / Voice Audio Engine"
+      ]
+    },
+    "narration": {
+      "key": "narration",
+      "label": "Narration",
+      "score": 50,
+      "confidence": 0.4,
+      "passed": false,
+      "details": {
+        "script_quality": 0.0,
+        "hook": 60.0,
+        "chars": 0
+      },
+      "issues": [
+        "Narration / script text missing"
+      ],
+      "corrections_required": [
+        "Run Script Generation"
+      ]
+    },
+    "synchronization": {
+      "key": "synchronization",
+      "label": "Synchronization",
+      "score": 67,
+      "confidence": 0.4,
+      "passed": false,
+      "details": {
+        "segment_count": 0,
+        "missing_ann_timing": 0
+      },
+      "issues": [
+        "No timeline / sync segments"
+      ],
+      "corrections_required": [
+        "Build timeline before export"
+      ]
+    },
+    "educational_value": {
+      "key": "educational_value",
+      "label": "Educational Value",
+      "score": 67,
+      "confidence": 0.7,
+      "passed": false,
+      "details": {
+        "clarity": 70.0,
+        "logical_progression": 70.0,
+        "engagement": 65.0,
+        "knowledge_density": 65.0,
+        "retention": 65.0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "psychology": {
+      "key": "psychology",
+      "label": "Psychology",
+      "score": 40,
+      "confidence": 0.4,
+      "passed": false,
+      "details": {
+        "predicted_metrics": {
+          "ctr": 3.2,
+          "avg_watch_time_sec": 0.0,
+          "drop_off_risk": 40.0,
+          "shareability": 50.0,
+          "replay_probability": 50.0,
+          "subscriber_conversion": 40.0
+        },
+        "human_attention_score": 0.0
+      },
+      "issues": [
+        "Psychology score below documentary engagement bar"
+      ],
+      "corrections_required": [
+        "Re-run Audience / Psychology with stronger hooks"
+      ]
+    },
+    "seo": {
+      "key": "seo",
+      "label": "SEO",
+      "score": 25,
+      "confidence": 0.4,
+      "passed": false,
+      "details": {
+        "title_len": 10,
+        "description_len": 0,
+        "keyword_count": 0,
+        "hashtag_count": 0
+      },
+      "issues": [
+        "Title too short",
+        "Description missing",
+        "No keywords/hashtags"
+      ],
+      "corrections_required": [
+        "Expand title for search intent",
+        "Write SEO description",
+        "Add keywords and platform hashtags"
+      ]
+    },
+    "platform_compliance": {
+      "key": "platform_compliance",
+      "label": "Platform Compliance",
+      "score": 55,
+      "confidence": 0.7,
+      "passed": false,
+      "details": {
+        "ready_count": 2,
+        "aspect_ratio": "16:9",
+        "duration_sec": 0.0
+      },
+      "issues": [
+        "youtube: Captions required, Thumbnail missing",
+        "youtube_shorts: Captions required, Duration unknown",
+        "tiktok: Captions required, Duration unknown",
+        "instagram_reels: Captions required",
+        "pinterest: Thumbnail missing",
+        "linkedin: Thumbnail missing"
+      ],
+      "corrections_required": [
+        "Fix platform packaging (aspect, captions, thumbnail, SEO) for failed platforms"
+      ]
+    }
+  },
+  "scores": {
+    "research_accuracy": 28,
+    "evidence": 42,
+    "visuals": 62,
+    "typography": 70,
+    "annotations": 78,
+    "cinematography": 45,
+    "retention": 40,
+    "render_quality": 70,
+    "audio": 60,
+    "narration": 50,
+    "synchronization": 67,
+    "educational_value": 67,
+    "psychology": 40,
+    "seo": 25,
+    "platform_compliance": 55
+  },
+  "platform_ready": {
+    "youtube": false,
+    "youtube_shorts": false,
+    "tiktok": false,
+    "instagram_reels": false,
+    "facebook": true,
+    "pinterest": false,
+    "linkedin": false,
+    "x": true
+  },
+  "platform_ready_detail": [
+    {
+      "platform": "youtube",
+      "ready": false,
+      "reasons": [
+        "Captions required",
+        "Thumbnail missing"
+      ]
+    },
+    {
+      "platform": "youtube_shorts",
+      "ready": false,
+      "reasons": [
+        "Captions required",
+        "Duration unknown"
+      ]
+    },
+    {
+      "platform": "tiktok",
+      "ready": false,
+      "reasons": [
+        "Captions required",
+        "Duration unknown"
+      ]
+    },
+    {
+      "platform": "instagram_reels",
+      "ready": false,
+      "reasons": [
+        "Captions required"
+      ]
+    },
+    {
+      "platform": "facebook",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "pinterest",
+      "ready": false,
+      "reasons": [
+        "Thumbnail missing"
+      ]
+    },
+    {
+      "platform": "linkedin",
+      "ready": false,
+      "reasons": [
+        "Thumbnail missing"
+      ]
+    },
+    {
+      "platform": "x",
+      "ready": true,
+      "reasons": []
+    }
+  ],
+  "revision_requests": [
+    {
+      "category": "research_accuracy",
+      "score": 28,
+      "target_engines": [
+        "research",
+        "citation",
+        "critic"
+      ],
+      "severity": "block",
+      "message": "3 unsupported claim(s)",
+      "corrections": [
+        "Add citations or remove unsupported claims",
+        "Attach trusted sources via Citation Engine",
+        "Re-run Research with stronger sources"
+      ]
+    },
+    {
+      "category": "evidence",
+      "score": 42,
+      "target_engines": [
+        "evidence_intelligence",
+        "visual_intelligence"
+      ],
+      "severity": "block",
+      "message": "AI imagery used more than necessary",
+      "corrections": [
+        "Replace AI fills with authentic media where possible"
+      ]
+    },
+    {
+      "category": "visuals",
+      "score": 62,
+      "target_engines": [
+        "visual_intelligence",
+        "image",
+        "asset_manager",
+        "studio_render"
+      ],
+      "severity": "block",
+      "message": "No visual_package to inspect",
+      "corrections": [
+        "Run Visual Intelligence before PQA"
+      ]
+    },
+    {
+      "category": "typography",
+      "score": 70,
+      "target_engines": [
+        "subtitle",
+        "visual_planning",
+        "render_package",
+        "studio_render"
+      ],
+      "severity": "revision",
+      "message": "Captions / subtitle plan missing",
+      "corrections": [
+        "Generate captions via Subtitle Engine"
+      ]
+    },
+    {
+      "category": "annotations",
+      "score": 78,
+      "target_engines": [
+        "evidence_intelligence",
+        "animation",
+        "visual_intelligence"
+      ],
+      "severity": "revision",
+      "message": "Annotations scored 78 (< 90)",
+      "corrections": []
+    },
+    {
+      "category": "cinematography",
+      "score": 45,
+      "target_engines": [
+        "cinematography",
+        "viewer_retention",
+        "animation",
+        "studio_render"
+      ],
+      "severity": "revision",
+      "message": "No cinematography_plan scenes",
+      "corrections": [
+        "Run Cinematography Engine before export"
+      ]
+    },
+    {
+      "category": "retention",
+      "score": 40,
+      "target_engines": [
+        "viewer_retention",
+        "script_generation",
+        "cinematography",
+        "voice_audio"
+      ],
+      "severity": "revision",
+      "message": "Viewer Retention package missing",
+      "corrections": [
+        "Run viewer_retention before export"
+      ]
+    },
+    {
+      "category": "render_quality",
+      "score": 70,
+      "target_engines": [
+        "studio_render",
+        "render_package",
+        "timeline",
+        "cinematography"
+      ],
+      "severity": "revision",
+      "message": "Studio Render package missing",
+      "corrections": [
+        "Run studio_render before export"
+      ]
+    },
+    {
+      "category": "audio",
+      "score": 60,
+      "target_engines": [
+        "voice_audio",
+        "voice",
+        "narration",
+        "viewer_retention"
+      ],
+      "severity": "revision",
+      "message": "No voice/audio package",
+      "corrections": [
+        "Generate narration via Voice / Voice Audio Engine"
+      ]
+    },
+    {
+      "category": "narration",
+      "score": 50,
+      "target_engines": [
+        "script_generation",
+        "narration",
+        "script",
+        "viewer_retention"
+      ],
+      "severity": "revision",
+      "message": "Narration / script text missing",
+      "corrections": [
+        "Run Script Generation"
+      ]
+    },
+    {
+      "category": "synchronization",
+      "score": 67,
+      "target_engines": [
+        "timeline",
+        "subtitle",
+        "animation",
+        "studio_render"
+      ],
+      "severity": "revision",
+      "message": "No timeline / sync segments",
+      "corrections": [
+        "Build timeline before export"
+      ]
+    },
+    {
+      "category": "educational_value",
+      "score": 67,
+      "target_engines": [
+        "script_generation",
+        "critic",
+        "psychology"
+      ],
+      "severity": "block",
+      "message": "Educational Value scored 67 (< 90)",
+      "corrections": []
+    },
+    {
+      "category": "psychology",
+      "score": 40,
+      "target_engines": [
+        "psychology",
+        "audience_intelligence",
+        "attention_graph",
+        "viewer_retention"
+      ],
+      "severity": "revision",
+      "message": "Psychology score below documentary engagement bar",
+      "corrections": [
+        "Re-run Audience / Psychology with stronger hooks"
+      ]
+    },
+    {
+      "category": "seo",
+      "score": 25,
+      "target_engines": [
+        "seo",
+        "seo_optimization"
+      ],
+      "severity": "revision",
+      "message": "Title too short",
+      "corrections": [
+        "Expand title for search intent",
+        "Write SEO description",
+        "Add keywords and platform hashtags"
+      ]
+    },
+    {
+      "category": "platform_compliance",
+      "score": 55,
+      "target_engines": [
+        "seo",
+        "publishing",
+        "render_package"
+      ],
+      "severity": "revision",
+      "message": "youtube: Captions required, Thumbnail missing",
+      "corrections": [
+        "Fix platform packaging (aspect, captions, thumbnail, SEO) for failed platforms"
+      ]
+    }
+  ],
+  "hard_fails": [
+    "Research Accuracy critically low (28)",
+    "Evidence critically low (42)",
+    "Visuals critically low (62)",
+    "Educational Value critically low (67)"
+  ],
+  "warnings": [
+    "3 unsupported claim(s)",
+    "No citations present",
+    "Low research confidence",
+    "AI imagery used more than necessary",
+    "No visual_package to inspect",
+    "Captions / subtitle plan missing",
+    "No cinematography_plan scenes",
+    "Viewer Retention package missing",
+    "Studio Render package missing",
+    "No voice/audio package",
+    "Narration / script text missing",
+    "No timeline / sync segments",
+    "Psychology score below documentary engagement bar",
+    "Title too short",
+    "Description missing",
+    "No keywords/hashtags",
+    "youtube: Captions required, Thumbnail missing",
+    "youtube_shorts: Captions required, Duration unknown",
+    "tiktok: Captions required, Duration unknown",
+    "instagram_reels: Captions required",
+    "pinterest: Thumbnail missing",
+    "linkedin: Thumbnail missing"
+  ],
+  "predicted_metrics": {
+    "ctr": 3.2,
+    "avg_watch_time_sec": 0.0,
+    "drop_off_risk": 40.0,
+    "shareability": 50.0,
+    "replay_probability": 50.0,
+    "subscriber_conversion": 40.0
+  },
+  "sources_checked": [],
+  "created_at": "2026-07-13T03:59:08.968437+00:00",
+  "version": "1.0.0",
+  "report_markdown": "# Production Quality Report\n\n**Overall Score:** 53\n**Decision:** BLOCK_EXPORT\n\n- Research Accuracy: 28\n- Evidence: 42\n- Visuals: 62\n- Typography: 70\n- Annotations: 78\n- Cinematography: 45\n- Viewer Retention: 40\n- Render Quality: 70\n- Audio: 60\n- Narration: 50\n- Synchronization: 67\n- Educational Value: 67\n- Psychology: 40\n- SEO: 25\n\n## Platform Ready\n- \u2717 youtube\n- \u2717 youtube_shorts\n- \u2717 tiktok\n- \u2717 instagram_reels\n- \u2713 facebook\n- \u2717 pinterest\n- \u2717 linkedin\n- \u2713 x\n\n## Revision Requests\n- [block] research_accuracy (28) \u2192 research, citation, critic: 3 unsupported claim(s)\n- [block] evidence (42) \u2192 evidence_intelligence, visual_intelligence: AI imagery used more than necessary\n- [block] visuals (62) \u2192 visual_intelligence, image, asset_manager, studio_render: No visual_package to inspect\n- [revision] typography (70) \u2192 subtitle, visual_planning, render_package, studio_render: Captions / subtitle plan missing\n- [revision] annotations (78) \u2192 evidence_intelligence, animation, visual_intelligence: Annotations scored 78 (< 90)\n- [revision] cinematography (45) \u2192 cinematography, viewer_retention, animation, studio_render: No cinematography_plan scenes\n- [revision] retention (40) \u2192 viewer_retention, script_generation, cinematography, voice_audio: Viewer Retention package missing\n- [revision] render_quality (70) \u2192 studio_render, render_package, timeline, cinematography: Studio Render package missing\n- [revision] audio (60) \u2192 voice_audio, voice, narration, viewer_retention: No voice/audio package\n- [revision] narration (50) \u2192 script_generation, narration, script, viewer_retention: Narration / script text missing\n- [revision] synchronization (67) \u2192 timeline, subtitle, animation, studio_render: No timeline / sync segments\n- [block] educational_value (67) \u2192 script_generation, critic, psychology: Educational Value scored 67 (< 90)\n- [revision] psychology (40) \u2192 psychology, audience_intelligence, attention_graph, viewer_retention: Psychology score below documentary engagement bar\n- [revision] seo (25) \u2192 seo, seo_optimization: Title too short\n- [revision] platform_compliance (55) \u2192 seo, publishing, render_package: youtube: Captions required, Thumbnail missing"
+}

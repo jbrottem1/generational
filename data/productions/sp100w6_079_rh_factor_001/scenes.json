@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Did you know your blood type could hold secrets about your health?",
+    "visual_description": "Hook visual: Did you know your blood type could hold secrets about your health?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Did you know your blood type could hold secrets about your health?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Did you know your blood type could hold secrets about your health?",
+    "stock_footage_query": "",
+    "text_overlay": "Did you know your",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "The Rh factor determines if your blood is Rh positive or negative. It\u2019s all about a tiny protein on red blood cells.",
+    "visual_description": "Context visual: The Rh factor determines if your blood is Rh positive or negative. It\u2019s all about a tiny protein on red blood cells.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: The Rh factor determines if your blood is Rh positive or negative. It\u2019s all about a tiny protein on red blood cells.",
+    "ai_video_prompt": "Cinematic motion: Context visual: The Rh factor determines if your blood is Rh positive or negative. It\u2019s all about a tiny protein on red blood cells.",
+    "stock_footage_query": "",
+    "text_overlay": "The Rh factor determines",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "But here's the twist: not everyone knows their Rh status. This can lead to serious health risks.",
+    "visual_description": "Escalation visual: But here's the twist: not everyone knows their Rh status. This can lead to serious health risks.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But here's the twist: not everyone knows their Rh status. This can lead to serious health risks.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But here's the twist: not everyone knows their Rh status. This can lead to serious health risks.",
+    "stock_footage_query": "",
+    "text_overlay": "But here's the twist:",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "urgency",
+    "length_sec": 8.0,
+    "narration": "In pregnancy, for example, an Rh-negative mother and Rh-positive baby can cause complications. Awareness is crucial.",
+    "visual_description": "Evidence visual: In pregnancy, for example, an Rh-negative mother and Rh-positive baby can cause complications. Awareness is crucial.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: In pregnancy, for example, an Rh-negative mother and Rh-positive baby can cause complications. Awareness is crucial.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: In pregnancy, for example, an Rh-negative mother and Rh-positive baby can cause complications. Awareness is crucial.",
+    "stock_footage_query": "",
+    "text_overlay": "In pregnancy, for example,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "relief",
+    "length_sec": 8.0,
+    "narration": "Understanding your Rh factor isn't just trivia; it can save lives.",
+    "visual_description": "Payoff visual: Understanding your Rh factor isn't just trivia; it can save lives.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding your Rh factor isn't just trivia; it can save lives.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding your Rh factor isn't just trivia; it can save lives.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding your Rh factor",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "encouragement",
+    "length_sec": 26.0,
+    "narration": "Curious about your blood type? Get tested and stay informed. Follow for more science insights!",
+    "visual_description": "Cta visual: Curious about your blood type? Get tested and stay informed. Follow for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about your blood type? Get tested and stay informed. Follow for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about your blood type? Get tested and stay informed. Follow for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about your blood",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

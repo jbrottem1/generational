@@ -1,0 +1,41 @@
+{
+  "character_id": "DOCTOR_001",
+  "default_outfit": "primary_medical_coat",
+  "garments": {
+    "primary_medical_coat": {
+      "material_type": "medical_coat_polymer_weave",
+      "thickness": "medium",
+      "weight": "medium",
+      "stiffness": "controlled_drape",
+      "wind_response": "moderate_hem_and_sleeve",
+      "fold_zones": [
+        "shoulders",
+        "elbows",
+        "waist",
+        "hem"
+      ],
+      "collision_layers": [
+        "arms",
+        "torso",
+        "thighs"
+      ]
+    }
+  },
+  "rules": [
+    "fabric_not_painted_still",
+    "responds_to_walk_turn_stop",
+    "no_limb_clipping",
+    "preserve_silhouette",
+    "secondary_motion_never_overpowers_performance"
+  ],
+  "variants": [
+    "primary_outfit",
+    "formal_laboratory",
+    "research",
+    "field_expedition",
+    "space_exploration",
+    "medical_examination",
+    "winter",
+    "protective_equipment"
+  ]
+}

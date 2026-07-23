@@ -1,0 +1,81 @@
+{
+  "sprint": "ES001",
+  "agent": "24",
+  "role": "AELS",
+  "episode_id": "f_equals_ma",
+  "demo_id": "foundation_f_equals_ma",
+  "hook_text": "What does F equals m a actually mean \u2014 and why is it strange?",
+  "takeaway": "Force causes acceleration.",
+  "duration_sec_assumed": 28.9,
+  "beat_count": 9,
+  "beats": [
+    {
+      "text": "Welcome back to Generational.",
+      "pause_after_sec": 0.35
+    },
+    {
+      "text": "What does F equals m a actually mean \u2014 and why is it strange?",
+      "pause_after_sec": 0.6
+    },
+    {
+      "text": "Watch the board.",
+      "pause_after_sec": 0.45
+    },
+    {
+      "text": "F is force. M is mass. A is acceleration.",
+      "pause_after_sec": 0.5
+    },
+    {
+      "text": "Force equals mass times acceleration.",
+      "pause_after_sec": 0.6
+    },
+    {
+      "text": "Push an empty shopping cart \u2014 it speeds up easily. Same push on a loaded cart \u2014 much less acceleration.",
+      "pause_after_sec": 0.55
+    },
+    {
+      "text": "Same force. Different mass. Different acceleration.",
+      "pause_after_sec": 0.5
+    },
+    {
+      "text": "Force causes acceleration.",
+      "pause_after_sec": 0.55
+    },
+    {
+      "text": "In the next lesson, why a heavy object needs more force.",
+      "pause_after_sec": 0.4
+    }
+  ],
+  "aels": {
+    "passed": true,
+    "engagement_score": 89.0,
+    "retention_score": 81.7,
+    "cognitive_load_score": 70.0,
+    "hook_score": 97.0,
+    "pacing_score": 75.0,
+    "demonstration_score": 95.0,
+    "ending_score": 80.0,
+    "recommendations": [],
+    "strengths": [
+      "strong_hook_pattern",
+      "intentional_silence",
+      "show_before_tell",
+      "clear_takeaway",
+      "purposeful_motion",
+      "calm_teaching_presence"
+    ],
+    "weaknesses": [],
+    "self_review": {
+      "hook_captured_attention": true,
+      "lesson_clear": true,
+      "visuals_synchronized": true,
+      "animation_natural": true,
+      "ending_satisfying": true,
+      "could_be_shorter": false,
+      "could_be_more_memorable": false,
+      "would_watch_next": true
+    }
+  },
+  "recommendation": "ACCEPT",
+  "notes": "Teaching-side review only. Brand opening and next-lesson tease preserved. No scenery advice."
+}

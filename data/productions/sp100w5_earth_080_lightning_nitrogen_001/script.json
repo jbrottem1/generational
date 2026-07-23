@@ -1,0 +1,74 @@
+{
+  "title": "Lightning Nitrogen",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explaining the fascinating role of lightning in nitrogen fixation.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Did you know lightning creates nitrogen?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "When lightning strikes, it generates extreme heat, breaking nitrogen molecules apart.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "This process forms nitrogen oxides, which then mix with rainwater.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Plants absorb this nitrogen, essential for growth. So, lightning helps feed the Earth!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "fact reveal"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 42.0,
+      "segment_type": "payoff",
+      "voiceover": "Yet, climate change is affecting lightning frequency. Less lightning could mean less nitrogen for crops.",
+      "emotion": "curiosity",
+      "delivery": "serious",
+      "retention_device": "dramatic pause"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 42.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more science secrets? Hit that follow button!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "encouragement"
+    }
+  ],
+  "full_voiceover": "Did you know lightning creates nitrogen? When lightning strikes, it generates extreme heat, breaking nitrogen molecules apart. This process forms nitrogen oxides, which then mix with rainwater. Plants absorb this nitrogen, essential for growth. So, lightning helps feed the Earth! Yet, climate change is affecting lightning frequency. Less lightning could mean less nitrogen for crops. Curious about more science secrets? Hit that follow button!",
+  "call_to_action": "Curious about more science secrets? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:45:13.108017+00:00",
+  "source": "ai"
+}

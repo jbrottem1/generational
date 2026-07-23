@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if 10,000 hours of practice isn\u2019t the key to expertise?",
+    "visual_description": "Hook visual: What if 10,000 hours of practice isn\u2019t the key to expertise?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if 10,000 hours of practice isn\u2019t the key to expertise?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if 10,000 hours of practice isn\u2019t the key to expertise?",
+    "stock_footage_query": "",
+    "text_overlay": "What if 10,000 hours",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "The popular myth claims mastery comes from sheer repetition, but science paints a different picture.",
+    "visual_description": "Context visual: The popular myth claims mastery comes from sheer repetition, but science paints a different picture.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: The popular myth claims mastery comes from sheer repetition, but science paints a different picture.",
+    "ai_video_prompt": "Cinematic motion: Context visual: The popular myth claims mastery comes from sheer repetition, but science paints a different picture.",
+    "stock_footage_query": "",
+    "text_overlay": "The popular myth claims",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show quality of practice matters more than quantity\u2014think deliberate, focused efforts.",
+    "visual_description": "Escalation visual: Studies show quality of practice matters more than quantity\u2014think deliberate, focused efforts.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Studies show quality of practice matters more than quantity\u2014think deliberate, focused efforts.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Studies show quality of practice matters more than quantity\u2014think deliberate, focused efforts.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show quality of",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Experts recommend feedback and reflection over mindless hours spent grinding.",
+    "visual_description": "Evidence visual: Experts recommend feedback and reflection over mindless hours spent grinding.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Experts recommend feedback and reflection over mindless hours spent grinding.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Experts recommend feedback and reflection over mindless hours spent grinding.",
+    "stock_footage_query": "",
+    "text_overlay": "Experts recommend feedback and",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 16.0,
+    "narration": "So, don\u2019t just count the hours\u2014make each one meaningful. That\u2019s the real secret to mastery.",
+    "visual_description": "Payoff visual: So, don\u2019t just count the hours\u2014make each one meaningful. That\u2019s the real secret to mastery.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: So, don\u2019t just count the hours\u2014make each one meaningful. That\u2019s the real secret to mastery.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: So, don\u2019t just count the hours\u2014make each one meaningful. That\u2019s the real secret to mastery.",
+    "stock_footage_query": "",
+    "text_overlay": "So, don\u2019t just count",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 42.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 18.0,
+    "narration": "Curious about more myths in learning? Hit like and subscribe!",
+    "visual_description": "Cta visual: Curious about more myths in learning? Hit like and subscribe!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more myths in learning? Hit like and subscribe!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more myths in learning? Hit like and subscribe!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more myths",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 42.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 42.0
+    }
+  }
+]

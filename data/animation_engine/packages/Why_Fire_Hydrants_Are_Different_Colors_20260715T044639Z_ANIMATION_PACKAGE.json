@@ -1,0 +1,2686 @@
+{
+  "package_type": "ANIMATION_PACKAGE",
+  "package_version": "2.0.0",
+  "engine_label": "Cinematic Animation Engine V2",
+  "generated_at": "2026-07-15T04:46:39.338988+00:00",
+  "topic": "Why Fire Hydrants Are Different Colors",
+  "production_id": "",
+  "scene_count": 4,
+  "scene_decisions": [
+    {
+      "scene_number": 1,
+      "scene_id": "scene_00",
+      "duration_sec": 3.0,
+      "pacing_note": "within_2_4s",
+      "cinematic": {
+        "version": "2.0",
+        "emotion": "curiosity",
+        "lighting_mood": "firelight",
+        "shot_size": "intimate_close_up",
+        "audience_understanding": "Audience should understand: These colors could determine whether firefighters save your house. (subject=fire hydrants, purpose=hook)",
+        "visual_moment": "Show meaning through labeled fire hydrants with motivated callout, not abstract shapes",
+        "color_intent": {
+          "harmony": "natural",
+          "hierarchy": "subject_isolation",
+          "avoid": [
+            "oversaturated_randomness",
+            "neon_scatter"
+          ]
+        },
+        "forbid": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ],
+        "topic_hint": "Why Fire Hydrants Are Different Colors"
+      },
+      "layers": {
+        "cinematic": {
+          "version": "2.0",
+          "emotion": "curiosity",
+          "lighting_mood": "firelight",
+          "shot_size": "intimate_close_up",
+          "audience_understanding": "Audience should understand: These colors could determine whether firefighters save your house. (subject=fire hydrants, purpose=hook)",
+          "visual_moment": "Show meaning through labeled fire hydrants with motivated callout, not abstract shapes",
+          "color_intent": {
+            "harmony": "natural",
+            "hierarchy": "subject_isolation",
+            "avoid": [
+              "oversaturated_randomness",
+              "neon_scatter"
+            ]
+          },
+          "forbid": [
+            "static_background",
+            "lifeless_environment",
+            "placeholder_asset",
+            "floating_icon",
+            "abstract_geometry",
+            "meaningless_movement",
+            "purposeless_camera_drift",
+            "poor_composition",
+            "empty_frame",
+            "low_resolution_asset",
+            "repeated_mechanical_loop",
+            "powerpoint_motion"
+          ],
+          "topic_hint": "Why Fire Hydrants Are Different Colors"
+        },
+        "camera": {
+          "camera_move": "rack_focus",
+          "motion_effect": "documentary_slow_zoom",
+          "true_motion_camera": "rack_focus",
+          "depth_of_field": true,
+          "rack_focus": true,
+          "shot_size": "intimate_close_up",
+          "emotion": "curiosity",
+          "speed": "energized",
+          "narrative_purpose": "Interrupt pattern with motivated energy (curiosity)",
+          "storytelling_reason": "Interrupt pattern with motivated energy (curiosity)",
+          "forbid_static_lock": true,
+          "forbid_purposeless_drift": true,
+          "motivated": true
+        },
+        "character": {
+          "enabled": true,
+          "characters": [
+            {
+              "name": "firefighter",
+              "kind": "character",
+              "source": "keyword"
+            }
+          ],
+          "actions": [
+            "blink",
+            "head_turn",
+            "walk",
+            "gesture_while_speaking",
+            "point_at_object",
+            "emotional_react",
+            "lip_sync",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "anticipation",
+            "follow_through",
+            "cloth_sway"
+          ],
+          "micro_performance": [
+            "idle_breathe",
+            "soft_blink",
+            "gaze_shift",
+            "posture_settle",
+            "hand_settle",
+            "weight_transfer"
+          ],
+          "performance": "celebrate",
+          "emotion": "curiosity",
+          "alive_requirements": [
+            "blink_naturally",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "head_turn",
+            "gesture_while_speaking",
+            "anticipation_and_follow_through",
+            "lip_sync_with_narration",
+            "visual_consistency_across_scenes",
+            "no_mannequin_behavior"
+          ],
+          "primary": {
+            "name": "firefighter",
+            "kind": "character",
+            "source": "keyword"
+          },
+          "forbid_mannequin": true
+        },
+        "world": {
+          "enabled": true,
+          "environment": "city",
+          "animations": [
+            "traffic",
+            "pedestrians",
+            "lights",
+            "smoke",
+            "weather",
+            "window_glow"
+          ],
+          "depth_layers": {
+            "foreground": [
+              "street_edge",
+              "signage_glow"
+            ],
+            "midground": [
+              "traffic_band",
+              "storefronts"
+            ],
+            "background": [
+              "skyline_parallax",
+              "sky"
+            ]
+          },
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "allow_abstract_geometry": false,
+          "continues_without_narration": true,
+          "lighting_mood": "firelight",
+          "atmospheric_perspective": true,
+          "volumetric_lighting": true,
+          "palette_hint": "night",
+          "environmental_storytelling": true
+        },
+        "object": {
+          "enabled": true,
+          "objects": [
+            {
+              "object": "hydrant",
+              "animations": [
+                "flowing_water",
+                "valves_turning",
+                "cutaway",
+                "pressure_visualization"
+              ],
+              "reason": "Narration discusses hydrant"
+            },
+            {
+              "object": "fire",
+              "animations": [
+                "flame_react",
+                "embers",
+                "smoke_drift"
+              ],
+              "reason": "Narration discusses fire"
+            }
+          ],
+          "physics_believable": true,
+          "note": "Objects obey weight and momentum \u2014 no mechanical teleport motion"
+        },
+        "fx": {
+          "particle_effects": [
+            "rain_or_heat_haze",
+            "headlight_streaks"
+          ],
+          "lighting_movement": [
+            "warm_flicker",
+            "ember_rise",
+            "practical_bounce"
+          ],
+          "lighting_mood": "firelight",
+          "physics_animation": true,
+          "grounded_not_floating": true
+        },
+        "motion_graphics": {
+          "enabled": true,
+          "items": [
+            {
+              "type": "animated_label",
+              "reason": "Clarify meaning with callouts",
+              "story_role": "explain_not_decorate",
+              "forbid_floating_icon": true
+            },
+            {
+              "type": "arrow",
+              "reason": "Direct eye to the subject",
+              "story_role": "explain_not_decorate",
+              "forbid_floating_icon": true
+            }
+          ],
+          "animate_into_scene": true,
+          "integrated_not_powerpoint": true
+        },
+        "ui": {
+          "enabled": true,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "hard_cut",
+          "avoid_crossfade": true,
+          "motivated": true,
+          "reason": "Clean entry \u2014 no decorative fade into the hook"
+        },
+        "muted_comprehension": "Show fire hydrants through visible motion so purpose=hook reads without audio.",
+        "visual_moment": "Show meaning through labeled fire hydrants with motivated callout, not abstract shapes",
+        "audience_understanding": "Audience should understand: These colors could determine whether firefighters save your house. (subject=fire hydrants, purpose=hook)",
+        "active_motion_classes": [
+          "camera_movement",
+          "character_animation",
+          "object_movement",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement",
+          "physics_animation",
+          "ui_animation",
+          "motion_graphics"
+        ],
+        "passes_motion_minimum": true,
+        "immersion": {
+          "questions": {
+            "world_feels_alive": true,
+            "camera_has_purpose": true,
+            "environments_believable": true,
+            "characters_feel_alive": true,
+            "visuals_engaging_muted": true,
+            "every_frame_advances_story": true,
+            "rejects_abstract_geometry": true
+          },
+          "passed": true,
+          "failing": [],
+          "re_render_required": false
+        },
+        "quality_rejects": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ]
+      },
+      "motion_effect": "documentary_slow_zoom",
+      "true_motion_camera": "rack_focus",
+      "true_motion_performance": "celebrate",
+      "world_palette": "night",
+      "lighting_mood": "firelight",
+      "emotion": "curiosity",
+      "shot_size": "intimate_close_up",
+      "immersion": {
+        "questions": {
+          "world_feels_alive": true,
+          "camera_has_purpose": true,
+          "environments_believable": true,
+          "characters_feel_alive": true,
+          "visuals_engaging_muted": true,
+          "every_frame_advances_story": true,
+          "rejects_abstract_geometry": true
+        },
+        "passed": true,
+        "failing": [],
+        "re_render_required": false
+      },
+      "excellence": {
+        "scene_motion": 100.0,
+        "camera_quality": 100.0,
+        "character_realism": 96.0,
+        "world_activity": 98.0,
+        "pacing": 90.0,
+        "visual_storytelling": 100.0,
+        "transition_quality": 93.0,
+        "cinematic_feel": 98.5,
+        "immersion": 100.0,
+        "intentionality": 96.0,
+        "environmental_believability": 95.0,
+        "performance_life": 90.0
+      }
+    },
+    {
+      "scene_number": 2,
+      "scene_id": "scene_01",
+      "duration_sec": 3.5,
+      "pacing_note": "within_2_4s",
+      "cinematic": {
+        "version": "2.0",
+        "emotion": "focus",
+        "lighting_mood": "firelight",
+        "shot_size": "intimate_close_up",
+        "audience_understanding": "Audience should understand: Each color indicates a flow rating firefighters read at a glance. (subject=the core idea, purpose=story_beat)",
+        "visual_moment": "Show meaning through labeled the subject with motivated callout, not abstract shapes",
+        "color_intent": {
+          "harmony": "natural",
+          "hierarchy": "subject_isolation",
+          "avoid": [
+            "oversaturated_randomness",
+            "neon_scatter"
+          ]
+        },
+        "forbid": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ],
+        "topic_hint": "Why Fire Hydrants Are Different Colors"
+      },
+      "layers": {
+        "cinematic": {
+          "version": "2.0",
+          "emotion": "focus",
+          "lighting_mood": "firelight",
+          "shot_size": "intimate_close_up",
+          "audience_understanding": "Audience should understand: Each color indicates a flow rating firefighters read at a glance. (subject=the core idea, purpose=story_beat)",
+          "visual_moment": "Show meaning through labeled the subject with motivated callout, not abstract shapes",
+          "color_intent": {
+            "harmony": "natural",
+            "hierarchy": "subject_isolation",
+            "avoid": [
+              "oversaturated_randomness",
+              "neon_scatter"
+            ]
+          },
+          "forbid": [
+            "static_background",
+            "lifeless_environment",
+            "placeholder_asset",
+            "floating_icon",
+            "abstract_geometry",
+            "meaningless_movement",
+            "purposeless_camera_drift",
+            "poor_composition",
+            "empty_frame",
+            "low_resolution_asset",
+            "repeated_mechanical_loop",
+            "powerpoint_motion"
+          ],
+          "topic_hint": "Why Fire Hydrants Are Different Colors"
+        },
+        "camera": {
+          "camera_move": "depth_of_field",
+          "motion_effect": "documentary_slow_zoom",
+          "true_motion_camera": "push_in",
+          "depth_of_field": true,
+          "rack_focus": false,
+          "shot_size": "intimate_close_up",
+          "emotion": "focus",
+          "speed": "measured",
+          "narrative_purpose": "Advance comprehension of the beat while holding focus",
+          "storytelling_reason": "Advance comprehension of the beat while holding focus",
+          "forbid_static_lock": true,
+          "forbid_purposeless_drift": true,
+          "motivated": true
+        },
+        "character": {
+          "enabled": true,
+          "characters": [
+            {
+              "name": "firefighter",
+              "kind": "character",
+              "source": "keyword"
+            }
+          ],
+          "actions": [
+            "blink",
+            "head_turn",
+            "walk",
+            "gesture_while_speaking",
+            "point_at_object",
+            "emotional_react",
+            "lip_sync",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "anticipation",
+            "follow_through",
+            "cloth_sway"
+          ],
+          "micro_performance": [
+            "idle_breathe",
+            "soft_blink",
+            "gaze_shift",
+            "posture_settle",
+            "hand_settle",
+            "weight_transfer"
+          ],
+          "performance": "walk_explain",
+          "emotion": "focus",
+          "alive_requirements": [
+            "blink_naturally",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "head_turn",
+            "gesture_while_speaking",
+            "anticipation_and_follow_through",
+            "lip_sync_with_narration",
+            "visual_consistency_across_scenes",
+            "no_mannequin_behavior"
+          ],
+          "primary": {
+            "name": "firefighter",
+            "kind": "character",
+            "source": "keyword"
+          },
+          "forbid_mannequin": true
+        },
+        "world": {
+          "enabled": true,
+          "environment": "city",
+          "animations": [
+            "traffic",
+            "pedestrians",
+            "lights",
+            "smoke",
+            "weather",
+            "window_glow"
+          ],
+          "depth_layers": {
+            "foreground": [
+              "street_edge",
+              "signage_glow"
+            ],
+            "midground": [
+              "traffic_band",
+              "storefronts"
+            ],
+            "background": [
+              "skyline_parallax",
+              "sky"
+            ]
+          },
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "allow_abstract_geometry": false,
+          "continues_without_narration": true,
+          "lighting_mood": "firelight",
+          "atmospheric_perspective": true,
+          "volumetric_lighting": true,
+          "palette_hint": "night",
+          "environmental_storytelling": true
+        },
+        "object": {
+          "enabled": true,
+          "objects": [
+            {
+              "object": "hydrant",
+              "animations": [
+                "flowing_water",
+                "valves_turning",
+                "cutaway",
+                "pressure_visualization"
+              ],
+              "reason": "Narration discusses hydrant"
+            },
+            {
+              "object": "fire",
+              "animations": [
+                "flame_react",
+                "embers",
+                "smoke_drift"
+              ],
+              "reason": "Narration discusses fire"
+            }
+          ],
+          "physics_believable": true,
+          "note": "Objects obey weight and momentum \u2014 no mechanical teleport motion"
+        },
+        "fx": {
+          "particle_effects": [
+            "rain_or_heat_haze",
+            "headlight_streaks"
+          ],
+          "lighting_movement": [
+            "warm_flicker",
+            "ember_rise",
+            "practical_bounce"
+          ],
+          "lighting_mood": "firelight",
+          "physics_animation": true,
+          "grounded_not_floating": true
+        },
+        "motion_graphics": {
+          "enabled": true,
+          "items": [
+            {
+              "type": "animated_label",
+              "reason": "Clarify meaning with callouts",
+              "story_role": "explain_not_decorate",
+              "forbid_floating_icon": true
+            },
+            {
+              "type": "arrow",
+              "reason": "Direct eye to the subject",
+              "story_role": "explain_not_decorate",
+              "forbid_floating_icon": true
+            }
+          ],
+          "animate_into_scene": true,
+          "integrated_not_powerpoint": true
+        },
+        "ui": {
+          "enabled": false,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "light_transition",
+          "avoid_crossfade": true,
+          "motivated": true,
+          "reason": "Carry lighting mood across the cut"
+        },
+        "muted_comprehension": "Show the idea through visible motion so purpose=story_beat reads without audio.",
+        "visual_moment": "Show meaning through labeled the subject with motivated callout, not abstract shapes",
+        "audience_understanding": "Audience should understand: Each color indicates a flow rating firefighters read at a glance. (subject=the core idea, purpose=story_beat)",
+        "active_motion_classes": [
+          "camera_movement",
+          "character_animation",
+          "object_movement",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement",
+          "physics_animation",
+          "motion_graphics"
+        ],
+        "passes_motion_minimum": true,
+        "immersion": {
+          "questions": {
+            "world_feels_alive": true,
+            "camera_has_purpose": true,
+            "environments_believable": true,
+            "characters_feel_alive": true,
+            "visuals_engaging_muted": true,
+            "every_frame_advances_story": true,
+            "rejects_abstract_geometry": true
+          },
+          "passed": true,
+          "failing": [],
+          "re_render_required": false
+        },
+        "quality_rejects": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ]
+      },
+      "motion_effect": "documentary_slow_zoom",
+      "true_motion_camera": "push_in",
+      "true_motion_performance": "walk_explain",
+      "world_palette": "night",
+      "lighting_mood": "firelight",
+      "emotion": "focus",
+      "shot_size": "intimate_close_up",
+      "immersion": {
+        "questions": {
+          "world_feels_alive": true,
+          "camera_has_purpose": true,
+          "environments_believable": true,
+          "characters_feel_alive": true,
+          "visuals_engaging_muted": true,
+          "every_frame_advances_story": true,
+          "rejects_abstract_geometry": true
+        },
+        "passed": true,
+        "failing": [],
+        "re_render_required": false
+      },
+      "excellence": {
+        "scene_motion": 100.0,
+        "camera_quality": 100.0,
+        "character_realism": 96.0,
+        "world_activity": 98.0,
+        "pacing": 90.0,
+        "visual_storytelling": 100.0,
+        "transition_quality": 93.0,
+        "cinematic_feel": 98.5,
+        "immersion": 100.0,
+        "intentionality": 96.0,
+        "environmental_believability": 95.0,
+        "performance_life": 90.0
+      }
+    },
+    {
+      "scene_number": 3,
+      "scene_id": "scene_02",
+      "duration_sec": 4.0,
+      "pacing_note": "within_2_4s",
+      "cinematic": {
+        "version": "2.0",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "shot_size": "establishing_wide",
+        "audience_understanding": "Audience should understand: A forest of pipes under the street feeds two nearby hydrants differently. (subject=the core idea, purpose=story_beat)",
+        "visual_moment": "Advance story by showing the subject in action (focus/establishing_wide)",
+        "color_intent": {
+          "harmony": "natural",
+          "hierarchy": "subject_isolation",
+          "avoid": [
+            "oversaturated_randomness",
+            "neon_scatter"
+          ]
+        },
+        "forbid": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ],
+        "topic_hint": "Why Fire Hydrants Are Different Colors"
+      },
+      "layers": {
+        "cinematic": {
+          "version": "2.0",
+          "emotion": "focus",
+          "lighting_mood": "soft_daylight",
+          "shot_size": "establishing_wide",
+          "audience_understanding": "Audience should understand: A forest of pipes under the street feeds two nearby hydrants differently. (subject=the core idea, purpose=story_beat)",
+          "visual_moment": "Advance story by showing the subject in action (focus/establishing_wide)",
+          "color_intent": {
+            "harmony": "natural",
+            "hierarchy": "subject_isolation",
+            "avoid": [
+              "oversaturated_randomness",
+              "neon_scatter"
+            ]
+          },
+          "forbid": [
+            "static_background",
+            "lifeless_environment",
+            "placeholder_asset",
+            "floating_icon",
+            "abstract_geometry",
+            "meaningless_movement",
+            "purposeless_camera_drift",
+            "poor_composition",
+            "empty_frame",
+            "low_resolution_asset",
+            "repeated_mechanical_loop",
+            "powerpoint_motion"
+          ],
+          "topic_hint": "Why Fire Hydrants Are Different Colors"
+        },
+        "camera": {
+          "camera_move": "crane",
+          "motion_effect": "slow_zoom_out",
+          "true_motion_camera": "pull_out",
+          "depth_of_field": false,
+          "rack_focus": false,
+          "shot_size": "establishing_wide",
+          "emotion": "focus",
+          "speed": "measured",
+          "narrative_purpose": "Advance comprehension of the beat while holding focus",
+          "storytelling_reason": "Advance comprehension of the beat while holding focus",
+          "forbid_static_lock": true,
+          "forbid_purposeless_drift": true,
+          "motivated": true
+        },
+        "character": null,
+        "world": {
+          "enabled": true,
+          "environment": "forest",
+          "animations": [
+            "leaves_moving",
+            "wind",
+            "birds",
+            "sunlight_shifting",
+            "fog_drift",
+            "branch_sway",
+            "dust_motes"
+          ],
+          "depth_layers": {
+            "foreground": [
+              "near_fern_sway",
+              "leaf_litter"
+            ],
+            "midground": [
+              "tree_trunks",
+              "path_haze"
+            ],
+            "background": [
+              "canopy_parallax",
+              "sky_clouds"
+            ]
+          },
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "allow_abstract_geometry": false,
+          "continues_without_narration": true,
+          "lighting_mood": "soft_daylight",
+          "atmospheric_perspective": true,
+          "volumetric_lighting": false,
+          "palette_hint": "forest",
+          "environmental_storytelling": true
+        },
+        "object": {
+          "enabled": true,
+          "objects": [
+            {
+              "object": "hydrant",
+              "animations": [
+                "flowing_water",
+                "valves_turning",
+                "cutaway",
+                "pressure_visualization"
+              ],
+              "reason": "Narration discusses hydrant"
+            },
+            {
+              "object": "fire",
+              "animations": [
+                "flame_react",
+                "embers",
+                "smoke_drift"
+              ],
+              "reason": "Narration discusses fire"
+            }
+          ],
+          "physics_believable": true,
+          "note": "Objects obey weight and momentum \u2014 no mechanical teleport motion"
+        },
+        "fx": {
+          "particle_effects": [
+            "pollen",
+            "leaf_specks",
+            "god_ray_motes"
+          ],
+          "lighting_movement": [
+            "key_soft",
+            "fill_bounce",
+            "rim_soft"
+          ],
+          "lighting_mood": "soft_daylight",
+          "physics_animation": true,
+          "grounded_not_floating": true
+        },
+        "motion_graphics": {
+          "enabled": true,
+          "items": [
+            {
+              "type": "map",
+              "ease_in": "ease_out",
+              "reason": "Location/context beat",
+              "story_role": "explain_not_decorate",
+              "forbid_floating_icon": true
+            }
+          ],
+          "animate_into_scene": true,
+          "integrated_not_powerpoint": true
+        },
+        "ui": {
+          "enabled": false,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "motion_continue",
+          "avoid_crossfade": true,
+          "motivated": true,
+          "reason": "Same beat type \u2014 continue camera energy"
+        },
+        "muted_comprehension": "Show the idea through visible motion so purpose=story_beat reads without audio.",
+        "visual_moment": "Advance story by showing the subject in action (focus/establishing_wide)",
+        "audience_understanding": "Audience should understand: A forest of pipes under the street feeds two nearby hydrants differently. (subject=the core idea, purpose=story_beat)",
+        "active_motion_classes": [
+          "camera_movement",
+          "object_movement",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement",
+          "physics_animation",
+          "motion_graphics"
+        ],
+        "passes_motion_minimum": true,
+        "immersion": {
+          "questions": {
+            "world_feels_alive": true,
+            "camera_has_purpose": true,
+            "environments_believable": true,
+            "characters_feel_alive": true,
+            "visuals_engaging_muted": true,
+            "every_frame_advances_story": true,
+            "rejects_abstract_geometry": true
+          },
+          "passed": true,
+          "failing": [],
+          "re_render_required": false
+        },
+        "quality_rejects": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ]
+      },
+      "motion_effect": "slow_zoom_out",
+      "true_motion_camera": "pull_out",
+      "true_motion_performance": null,
+      "world_palette": "forest",
+      "lighting_mood": "soft_daylight",
+      "emotion": "focus",
+      "shot_size": "establishing_wide",
+      "immersion": {
+        "questions": {
+          "world_feels_alive": true,
+          "camera_has_purpose": true,
+          "environments_believable": true,
+          "characters_feel_alive": true,
+          "visuals_engaging_muted": true,
+          "every_frame_advances_story": true,
+          "rejects_abstract_geometry": true
+        },
+        "passed": true,
+        "failing": [],
+        "re_render_required": false
+      },
+      "excellence": {
+        "scene_motion": 100.0,
+        "camera_quality": 100.0,
+        "character_realism": 72.0,
+        "world_activity": 98.0,
+        "pacing": 90.0,
+        "visual_storytelling": 100.0,
+        "transition_quality": 93.0,
+        "cinematic_feel": 98.5,
+        "immersion": 100.0,
+        "intentionality": 96.0,
+        "environmental_believability": 95.0,
+        "performance_life": 75.0
+      }
+    },
+    {
+      "scene_number": 4,
+      "scene_id": "scene_03",
+      "duration_sec": 3.0,
+      "pacing_note": "within_2_4s",
+      "cinematic": {
+        "version": "2.0",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "shot_size": "hero_low_angle",
+        "audience_understanding": "Audience should understand: Flow rate matters when seconds decide if a house is saved. (subject=the core idea, purpose=payoff)",
+        "visual_moment": "Advance story by showing the subject in action (clarity/hero_low_angle)",
+        "color_intent": {
+          "harmony": "natural",
+          "hierarchy": "subject_isolation",
+          "avoid": [
+            "oversaturated_randomness",
+            "neon_scatter"
+          ]
+        },
+        "forbid": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ],
+        "topic_hint": "Why Fire Hydrants Are Different Colors"
+      },
+      "layers": {
+        "cinematic": {
+          "version": "2.0",
+          "emotion": "clarity",
+          "lighting_mood": "soft_daylight",
+          "shot_size": "hero_low_angle",
+          "audience_understanding": "Audience should understand: Flow rate matters when seconds decide if a house is saved. (subject=the core idea, purpose=payoff)",
+          "visual_moment": "Advance story by showing the subject in action (clarity/hero_low_angle)",
+          "color_intent": {
+            "harmony": "natural",
+            "hierarchy": "subject_isolation",
+            "avoid": [
+              "oversaturated_randomness",
+              "neon_scatter"
+            ]
+          },
+          "forbid": [
+            "static_background",
+            "lifeless_environment",
+            "placeholder_asset",
+            "floating_icon",
+            "abstract_geometry",
+            "meaningless_movement",
+            "purposeless_camera_drift",
+            "poor_composition",
+            "empty_frame",
+            "low_resolution_asset",
+            "repeated_mechanical_loop",
+            "powerpoint_motion"
+          ],
+          "topic_hint": "Why Fire Hydrants Are Different Colors"
+        },
+        "camera": {
+          "camera_move": "hero_low_angle_push",
+          "motion_effect": "cinematic_push_in",
+          "true_motion_camera": "push_in",
+          "depth_of_field": false,
+          "rack_focus": false,
+          "shot_size": "hero_low_angle",
+          "emotion": "clarity",
+          "speed": "resolved",
+          "narrative_purpose": "Land the takeaway with a decisive, emotionally settled move (clarity)",
+          "storytelling_reason": "Land the takeaway with a decisive, emotionally settled move (clarity)",
+          "forbid_static_lock": true,
+          "forbid_purposeless_drift": true,
+          "motivated": true
+        },
+        "character": null,
+        "world": {
+          "enabled": true,
+          "environment": "city",
+          "animations": [
+            "traffic",
+            "pedestrians",
+            "lights",
+            "smoke",
+            "weather",
+            "window_glow"
+          ],
+          "depth_layers": {
+            "foreground": [
+              "street_edge",
+              "signage_glow"
+            ],
+            "midground": [
+              "traffic_band",
+              "storefronts"
+            ],
+            "background": [
+              "skyline_parallax",
+              "sky"
+            ]
+          },
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "allow_abstract_geometry": false,
+          "continues_without_narration": true,
+          "lighting_mood": "soft_daylight",
+          "atmospheric_perspective": true,
+          "volumetric_lighting": false,
+          "palette_hint": "night",
+          "environmental_storytelling": true
+        },
+        "object": {
+          "enabled": true,
+          "objects": [
+            {
+              "object": "hydrant",
+              "animations": [
+                "flowing_water",
+                "valves_turning",
+                "cutaway",
+                "pressure_visualization"
+              ],
+              "reason": "Narration discusses hydrant"
+            },
+            {
+              "object": "fire",
+              "animations": [
+                "flame_react",
+                "embers",
+                "smoke_drift"
+              ],
+              "reason": "Narration discusses fire"
+            }
+          ],
+          "physics_believable": true,
+          "note": "Objects obey weight and momentum \u2014 no mechanical teleport motion"
+        },
+        "fx": {
+          "particle_effects": [
+            "rain_or_heat_haze",
+            "headlight_streaks"
+          ],
+          "lighting_movement": [
+            "key_soft",
+            "fill_bounce",
+            "rim_soft"
+          ],
+          "lighting_mood": "soft_daylight",
+          "physics_animation": false,
+          "grounded_not_floating": true
+        },
+        "motion_graphics": {
+          "enabled": true,
+          "items": [
+            {
+              "type": "kinetic_typography",
+              "reason": "Numeric / claim emphasis",
+              "story_role": "explain_not_decorate",
+              "forbid_floating_icon": true
+            }
+          ],
+          "animate_into_scene": true,
+          "integrated_not_powerpoint": true
+        },
+        "ui": {
+          "enabled": true,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "zoom_transition",
+          "avoid_crossfade": true,
+          "motivated": true,
+          "reason": "Resolve into the takeaway"
+        },
+        "muted_comprehension": "Show the idea through visible motion so purpose=payoff reads without audio.",
+        "visual_moment": "Advance story by showing the subject in action (clarity/hero_low_angle)",
+        "audience_understanding": "Audience should understand: Flow rate matters when seconds decide if a house is saved. (subject=the core idea, purpose=payoff)",
+        "active_motion_classes": [
+          "camera_movement",
+          "object_movement",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement",
+          "ui_animation",
+          "motion_graphics"
+        ],
+        "passes_motion_minimum": true,
+        "immersion": {
+          "questions": {
+            "world_feels_alive": true,
+            "camera_has_purpose": true,
+            "environments_believable": true,
+            "characters_feel_alive": true,
+            "visuals_engaging_muted": true,
+            "every_frame_advances_story": true,
+            "rejects_abstract_geometry": true
+          },
+          "passed": true,
+          "failing": [],
+          "re_render_required": false
+        },
+        "quality_rejects": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ]
+      },
+      "motion_effect": "cinematic_push_in",
+      "true_motion_camera": "push_in",
+      "true_motion_performance": null,
+      "world_palette": "night",
+      "lighting_mood": "soft_daylight",
+      "emotion": "clarity",
+      "shot_size": "hero_low_angle",
+      "immersion": {
+        "questions": {
+          "world_feels_alive": true,
+          "camera_has_purpose": true,
+          "environments_believable": true,
+          "characters_feel_alive": true,
+          "visuals_engaging_muted": true,
+          "every_frame_advances_story": true,
+          "rejects_abstract_geometry": true
+        },
+        "passed": true,
+        "failing": [],
+        "re_render_required": false
+      },
+      "excellence": {
+        "scene_motion": 100.0,
+        "camera_quality": 100.0,
+        "character_realism": 72.0,
+        "world_activity": 98.0,
+        "pacing": 90.0,
+        "visual_storytelling": 100.0,
+        "transition_quality": 93.0,
+        "cinematic_feel": 98.5,
+        "immersion": 100.0,
+        "intentionality": 96.0,
+        "environmental_believability": 95.0,
+        "performance_life": 75.0
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "scene_number": 1,
+      "purpose": "hook",
+      "length_sec": 3.0,
+      "narration": "These colors could determine whether firefighters save your house.",
+      "subject": "fire hydrants",
+      "camera_motion": "rack focus",
+      "animation_camera": "rack_focus",
+      "animation_effect": "documentary_slow_zoom",
+      "effect": {
+        "effect": "documentary_slow_zoom",
+        "zoom": {
+          "start": 1.0,
+          "end": 1.12
+        },
+        "pan": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "intensity": 82,
+        "easing": "ease_in_out",
+        "source": "animation_engine_v2",
+        "narrative_purpose": "Interrupt pattern with motivated energy (curiosity)",
+        "emotion": "curiosity"
+      },
+      "ken_burns": false,
+      "forbid_static": true,
+      "max_still_sec": 2.0,
+      "transition_out": "hard_cut",
+      "animation_layers": {
+        "cinematic": {
+          "version": "2.0",
+          "emotion": "curiosity",
+          "lighting_mood": "firelight",
+          "shot_size": "intimate_close_up",
+          "audience_understanding": "Audience should understand: These colors could determine whether firefighters save your house. (subject=fire hydrants, purpose=hook)",
+          "visual_moment": "Show meaning through labeled fire hydrants with motivated callout, not abstract shapes",
+          "color_intent": {
+            "harmony": "natural",
+            "hierarchy": "subject_isolation",
+            "avoid": [
+              "oversaturated_randomness",
+              "neon_scatter"
+            ]
+          },
+          "forbid": [
+            "static_background",
+            "lifeless_environment",
+            "placeholder_asset",
+            "floating_icon",
+            "abstract_geometry",
+            "meaningless_movement",
+            "purposeless_camera_drift",
+            "poor_composition",
+            "empty_frame",
+            "low_resolution_asset",
+            "repeated_mechanical_loop",
+            "powerpoint_motion"
+          ],
+          "topic_hint": "Why Fire Hydrants Are Different Colors"
+        },
+        "camera": {
+          "camera_move": "rack_focus",
+          "motion_effect": "documentary_slow_zoom",
+          "true_motion_camera": "rack_focus",
+          "depth_of_field": true,
+          "rack_focus": true,
+          "shot_size": "intimate_close_up",
+          "emotion": "curiosity",
+          "speed": "energized",
+          "narrative_purpose": "Interrupt pattern with motivated energy (curiosity)",
+          "storytelling_reason": "Interrupt pattern with motivated energy (curiosity)",
+          "forbid_static_lock": true,
+          "forbid_purposeless_drift": true,
+          "motivated": true
+        },
+        "character": {
+          "enabled": true,
+          "characters": [
+            {
+              "name": "firefighter",
+              "kind": "character",
+              "source": "keyword"
+            }
+          ],
+          "actions": [
+            "blink",
+            "head_turn",
+            "walk",
+            "gesture_while_speaking",
+            "point_at_object",
+            "emotional_react",
+            "lip_sync",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "anticipation",
+            "follow_through",
+            "cloth_sway"
+          ],
+          "micro_performance": [
+            "idle_breathe",
+            "soft_blink",
+            "gaze_shift",
+            "posture_settle",
+            "hand_settle",
+            "weight_transfer"
+          ],
+          "performance": "celebrate",
+          "emotion": "curiosity",
+          "alive_requirements": [
+            "blink_naturally",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "head_turn",
+            "gesture_while_speaking",
+            "anticipation_and_follow_through",
+            "lip_sync_with_narration",
+            "visual_consistency_across_scenes",
+            "no_mannequin_behavior"
+          ],
+          "primary": {
+            "name": "firefighter",
+            "kind": "character",
+            "source": "keyword"
+          },
+          "forbid_mannequin": true
+        },
+        "world": {
+          "enabled": true,
+          "environment": "city",
+          "animations": [
+            "traffic",
+            "pedestrians",
+            "lights",
+            "smoke",
+            "weather",
+            "window_glow"
+          ],
+          "depth_layers": {
+            "foreground": [
+              "street_edge",
+              "signage_glow"
+            ],
+            "midground": [
+              "traffic_band",
+              "storefronts"
+            ],
+            "background": [
+              "skyline_parallax",
+              "sky"
+            ]
+          },
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "allow_abstract_geometry": false,
+          "continues_without_narration": true,
+          "lighting_mood": "firelight",
+          "atmospheric_perspective": true,
+          "volumetric_lighting": true,
+          "palette_hint": "night",
+          "environmental_storytelling": true
+        },
+        "object": {
+          "enabled": true,
+          "objects": [
+            {
+              "object": "hydrant",
+              "animations": [
+                "flowing_water",
+                "valves_turning",
+                "cutaway",
+                "pressure_visualization"
+              ],
+              "reason": "Narration discusses hydrant"
+            },
+            {
+              "object": "fire",
+              "animations": [
+                "flame_react",
+                "embers",
+                "smoke_drift"
+              ],
+              "reason": "Narration discusses fire"
+            }
+          ],
+          "physics_believable": true,
+          "note": "Objects obey weight and momentum \u2014 no mechanical teleport motion"
+        },
+        "fx": {
+          "particle_effects": [
+            "rain_or_heat_haze",
+            "headlight_streaks"
+          ],
+          "lighting_movement": [
+            "warm_flicker",
+            "ember_rise",
+            "practical_bounce"
+          ],
+          "lighting_mood": "firelight",
+          "physics_animation": true,
+          "grounded_not_floating": true
+        },
+        "motion_graphics": {
+          "enabled": true,
+          "items": [
+            {
+              "type": "animated_label",
+              "reason": "Clarify meaning with callouts",
+              "story_role": "explain_not_decorate",
+              "forbid_floating_icon": true
+            },
+            {
+              "type": "arrow",
+              "reason": "Direct eye to the subject",
+              "story_role": "explain_not_decorate",
+              "forbid_floating_icon": true
+            }
+          ],
+          "animate_into_scene": true,
+          "integrated_not_powerpoint": true
+        },
+        "ui": {
+          "enabled": true,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "hard_cut",
+          "avoid_crossfade": true,
+          "motivated": true,
+          "reason": "Clean entry \u2014 no decorative fade into the hook"
+        },
+        "muted_comprehension": "Show fire hydrants through visible motion so purpose=hook reads without audio.",
+        "visual_moment": "Show meaning through labeled fire hydrants with motivated callout, not abstract shapes",
+        "audience_understanding": "Audience should understand: These colors could determine whether firefighters save your house. (subject=fire hydrants, purpose=hook)",
+        "active_motion_classes": [
+          "camera_movement",
+          "character_animation",
+          "object_movement",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement",
+          "physics_animation",
+          "ui_animation",
+          "motion_graphics"
+        ],
+        "passes_motion_minimum": true,
+        "immersion": {
+          "questions": {
+            "world_feels_alive": true,
+            "camera_has_purpose": true,
+            "environments_believable": true,
+            "characters_feel_alive": true,
+            "visuals_engaging_muted": true,
+            "every_frame_advances_story": true,
+            "rejects_abstract_geometry": true
+          },
+          "passed": true,
+          "failing": [],
+          "re_render_required": false
+        },
+        "quality_rejects": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ]
+      },
+      "cinematic_intent": {
+        "version": "2.0",
+        "emotion": "curiosity",
+        "lighting_mood": "firelight",
+        "shot_size": "intimate_close_up",
+        "audience_understanding": "Audience should understand: These colors could determine whether firefighters save your house. (subject=fire hydrants, purpose=hook)",
+        "visual_moment": "Show meaning through labeled fire hydrants with motivated callout, not abstract shapes",
+        "color_intent": {
+          "harmony": "natural",
+          "hierarchy": "subject_isolation",
+          "avoid": [
+            "oversaturated_randomness",
+            "neon_scatter"
+          ]
+        },
+        "forbid": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ],
+        "topic_hint": "Why Fire Hydrants Are Different Colors"
+      },
+      "true_motion": {
+        "camera": "rack_focus",
+        "performance": "celebrate",
+        "palette": "night",
+        "lighting_mood": "firelight",
+        "shot_size": "intimate_close_up",
+        "emotion": "curiosity",
+        "depth_layers": {
+          "foreground": [
+            "street_edge",
+            "signage_glow"
+          ],
+          "midground": [
+            "traffic_band",
+            "storefronts"
+          ],
+          "background": [
+            "skyline_parallax",
+            "sky"
+          ]
+        },
+        "living_background": true,
+        "cinematic_v2": true,
+        "not_ken_burns_only": true,
+        "forbid_abstract_geometry": true
+      },
+      "environment_fx": [
+        "traffic",
+        "pedestrians",
+        "lights",
+        "smoke",
+        "weather",
+        "window_glow"
+      ],
+      "motion_graphics_plan": [
+        {
+          "type": "animated_label",
+          "reason": "Clarify meaning with callouts",
+          "story_role": "explain_not_decorate",
+          "forbid_floating_icon": true
+        },
+        {
+          "type": "arrow",
+          "reason": "Direct eye to the subject",
+          "story_role": "explain_not_decorate",
+          "forbid_floating_icon": true
+        }
+      ],
+      "immersion": {
+        "questions": {
+          "world_feels_alive": true,
+          "camera_has_purpose": true,
+          "environments_believable": true,
+          "characters_feel_alive": true,
+          "visuals_engaging_muted": true,
+          "every_frame_advances_story": true,
+          "rejects_abstract_geometry": true
+        },
+        "passed": true,
+        "failing": [],
+        "re_render_required": false
+      }
+    },
+    {
+      "scene_number": 2,
+      "purpose": "story_beat",
+      "length_sec": 3.5,
+      "narration": "Each color indicates a flow rating firefighters read at a glance.",
+      "camera_motion": "depth of field",
+      "animation_camera": "push_in",
+      "animation_effect": "documentary_slow_zoom",
+      "effect": {
+        "effect": "documentary_slow_zoom",
+        "zoom": {
+          "start": 1.0,
+          "end": 1.12
+        },
+        "pan": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "intensity": 72,
+        "easing": "ease_in_out",
+        "source": "animation_engine_v2",
+        "narrative_purpose": "Advance comprehension of the beat while holding focus",
+        "emotion": "focus"
+      },
+      "ken_burns": false,
+      "forbid_static": true,
+      "max_still_sec": 2.0,
+      "transition_out": "light_transition",
+      "animation_layers": {
+        "cinematic": {
+          "version": "2.0",
+          "emotion": "focus",
+          "lighting_mood": "firelight",
+          "shot_size": "intimate_close_up",
+          "audience_understanding": "Audience should understand: Each color indicates a flow rating firefighters read at a glance. (subject=the core idea, purpose=story_beat)",
+          "visual_moment": "Show meaning through labeled the subject with motivated callout, not abstract shapes",
+          "color_intent": {
+            "harmony": "natural",
+            "hierarchy": "subject_isolation",
+            "avoid": [
+              "oversaturated_randomness",
+              "neon_scatter"
+            ]
+          },
+          "forbid": [
+            "static_background",
+            "lifeless_environment",
+            "placeholder_asset",
+            "floating_icon",
+            "abstract_geometry",
+            "meaningless_movement",
+            "purposeless_camera_drift",
+            "poor_composition",
+            "empty_frame",
+            "low_resolution_asset",
+            "repeated_mechanical_loop",
+            "powerpoint_motion"
+          ],
+          "topic_hint": "Why Fire Hydrants Are Different Colors"
+        },
+        "camera": {
+          "camera_move": "depth_of_field",
+          "motion_effect": "documentary_slow_zoom",
+          "true_motion_camera": "push_in",
+          "depth_of_field": true,
+          "rack_focus": false,
+          "shot_size": "intimate_close_up",
+          "emotion": "focus",
+          "speed": "measured",
+          "narrative_purpose": "Advance comprehension of the beat while holding focus",
+          "storytelling_reason": "Advance comprehension of the beat while holding focus",
+          "forbid_static_lock": true,
+          "forbid_purposeless_drift": true,
+          "motivated": true
+        },
+        "character": {
+          "enabled": true,
+          "characters": [
+            {
+              "name": "firefighter",
+              "kind": "character",
+              "source": "keyword"
+            }
+          ],
+          "actions": [
+            "blink",
+            "head_turn",
+            "walk",
+            "gesture_while_speaking",
+            "point_at_object",
+            "emotional_react",
+            "lip_sync",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "anticipation",
+            "follow_through",
+            "cloth_sway"
+          ],
+          "micro_performance": [
+            "idle_breathe",
+            "soft_blink",
+            "gaze_shift",
+            "posture_settle",
+            "hand_settle",
+            "weight_transfer"
+          ],
+          "performance": "walk_explain",
+          "emotion": "focus",
+          "alive_requirements": [
+            "blink_naturally",
+            "breathe",
+            "weight_shift",
+            "eye_focus",
+            "head_turn",
+            "gesture_while_speaking",
+            "anticipation_and_follow_through",
+            "lip_sync_with_narration",
+            "visual_consistency_across_scenes",
+            "no_mannequin_behavior"
+          ],
+          "primary": {
+            "name": "firefighter",
+            "kind": "character",
+            "source": "keyword"
+          },
+          "forbid_mannequin": true
+        },
+        "world": {
+          "enabled": true,
+          "environment": "city",
+          "animations": [
+            "traffic",
+            "pedestrians",
+            "lights",
+            "smoke",
+            "weather",
+            "window_glow"
+          ],
+          "depth_layers": {
+            "foreground": [
+              "street_edge",
+              "signage_glow"
+            ],
+            "midground": [
+              "traffic_band",
+              "storefronts"
+            ],
+            "background": [
+              "skyline_parallax",
+              "sky"
+            ]
+          },
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "allow_abstract_geometry": false,
+          "continues_without_narration": true,
+          "lighting_mood": "firelight",
+          "atmospheric_perspective": true,
+          "volumetric_lighting": true,
+          "palette_hint": "night",
+          "environmental_storytelling": true
+        },
+        "object": {
+          "enabled": true,
+          "objects": [
+            {
+              "object": "hydrant",
+              "animations": [
+                "flowing_water",
+                "valves_turning",
+                "cutaway",
+                "pressure_visualization"
+              ],
+              "reason": "Narration discusses hydrant"
+            },
+            {
+              "object": "fire",
+              "animations": [
+                "flame_react",
+                "embers",
+                "smoke_drift"
+              ],
+              "reason": "Narration discusses fire"
+            }
+          ],
+          "physics_believable": true,
+          "note": "Objects obey weight and momentum \u2014 no mechanical teleport motion"
+        },
+        "fx": {
+          "particle_effects": [
+            "rain_or_heat_haze",
+            "headlight_streaks"
+          ],
+          "lighting_movement": [
+            "warm_flicker",
+            "ember_rise",
+            "practical_bounce"
+          ],
+          "lighting_mood": "firelight",
+          "physics_animation": true,
+          "grounded_not_floating": true
+        },
+        "motion_graphics": {
+          "enabled": true,
+          "items": [
+            {
+              "type": "animated_label",
+              "reason": "Clarify meaning with callouts",
+              "story_role": "explain_not_decorate",
+              "forbid_floating_icon": true
+            },
+            {
+              "type": "arrow",
+              "reason": "Direct eye to the subject",
+              "story_role": "explain_not_decorate",
+              "forbid_floating_icon": true
+            }
+          ],
+          "animate_into_scene": true,
+          "integrated_not_powerpoint": true
+        },
+        "ui": {
+          "enabled": false,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "light_transition",
+          "avoid_crossfade": true,
+          "motivated": true,
+          "reason": "Carry lighting mood across the cut"
+        },
+        "muted_comprehension": "Show the idea through visible motion so purpose=story_beat reads without audio.",
+        "visual_moment": "Show meaning through labeled the subject with motivated callout, not abstract shapes",
+        "audience_understanding": "Audience should understand: Each color indicates a flow rating firefighters read at a glance. (subject=the core idea, purpose=story_beat)",
+        "active_motion_classes": [
+          "camera_movement",
+          "character_animation",
+          "object_movement",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement",
+          "physics_animation",
+          "motion_graphics"
+        ],
+        "passes_motion_minimum": true,
+        "immersion": {
+          "questions": {
+            "world_feels_alive": true,
+            "camera_has_purpose": true,
+            "environments_believable": true,
+            "characters_feel_alive": true,
+            "visuals_engaging_muted": true,
+            "every_frame_advances_story": true,
+            "rejects_abstract_geometry": true
+          },
+          "passed": true,
+          "failing": [],
+          "re_render_required": false
+        },
+        "quality_rejects": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ]
+      },
+      "cinematic_intent": {
+        "version": "2.0",
+        "emotion": "focus",
+        "lighting_mood": "firelight",
+        "shot_size": "intimate_close_up",
+        "audience_understanding": "Audience should understand: Each color indicates a flow rating firefighters read at a glance. (subject=the core idea, purpose=story_beat)",
+        "visual_moment": "Show meaning through labeled the subject with motivated callout, not abstract shapes",
+        "color_intent": {
+          "harmony": "natural",
+          "hierarchy": "subject_isolation",
+          "avoid": [
+            "oversaturated_randomness",
+            "neon_scatter"
+          ]
+        },
+        "forbid": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ],
+        "topic_hint": "Why Fire Hydrants Are Different Colors"
+      },
+      "true_motion": {
+        "camera": "push_in",
+        "performance": "walk_explain",
+        "palette": "night",
+        "lighting_mood": "firelight",
+        "shot_size": "intimate_close_up",
+        "emotion": "focus",
+        "depth_layers": {
+          "foreground": [
+            "street_edge",
+            "signage_glow"
+          ],
+          "midground": [
+            "traffic_band",
+            "storefronts"
+          ],
+          "background": [
+            "skyline_parallax",
+            "sky"
+          ]
+        },
+        "living_background": true,
+        "cinematic_v2": true,
+        "not_ken_burns_only": true,
+        "forbid_abstract_geometry": true
+      },
+      "environment_fx": [
+        "traffic",
+        "pedestrians",
+        "lights",
+        "smoke",
+        "weather",
+        "window_glow"
+      ],
+      "motion_graphics_plan": [
+        {
+          "type": "animated_label",
+          "reason": "Clarify meaning with callouts",
+          "story_role": "explain_not_decorate",
+          "forbid_floating_icon": true
+        },
+        {
+          "type": "arrow",
+          "reason": "Direct eye to the subject",
+          "story_role": "explain_not_decorate",
+          "forbid_floating_icon": true
+        }
+      ],
+      "immersion": {
+        "questions": {
+          "world_feels_alive": true,
+          "camera_has_purpose": true,
+          "environments_believable": true,
+          "characters_feel_alive": true,
+          "visuals_engaging_muted": true,
+          "every_frame_advances_story": true,
+          "rejects_abstract_geometry": true
+        },
+        "passed": true,
+        "failing": [],
+        "re_render_required": false
+      }
+    },
+    {
+      "scene_number": 3,
+      "purpose": "story_beat",
+      "length_sec": 4.0,
+      "narration": "A forest of pipes under the street feeds two nearby hydrants differently.",
+      "camera_motion": "crane",
+      "animation_camera": "pull_out",
+      "animation_effect": "slow_zoom_out",
+      "effect": {
+        "effect": "slow_zoom_out",
+        "zoom": {
+          "start": 1.0,
+          "end": 1.12
+        },
+        "pan": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "intensity": 72,
+        "easing": "ease_in_out",
+        "source": "animation_engine_v2",
+        "narrative_purpose": "Advance comprehension of the beat while holding focus",
+        "emotion": "focus"
+      },
+      "ken_burns": false,
+      "forbid_static": true,
+      "max_still_sec": 2.0,
+      "transition_out": "motion_continue",
+      "animation_layers": {
+        "cinematic": {
+          "version": "2.0",
+          "emotion": "focus",
+          "lighting_mood": "soft_daylight",
+          "shot_size": "establishing_wide",
+          "audience_understanding": "Audience should understand: A forest of pipes under the street feeds two nearby hydrants differently. (subject=the core idea, purpose=story_beat)",
+          "visual_moment": "Advance story by showing the subject in action (focus/establishing_wide)",
+          "color_intent": {
+            "harmony": "natural",
+            "hierarchy": "subject_isolation",
+            "avoid": [
+              "oversaturated_randomness",
+              "neon_scatter"
+            ]
+          },
+          "forbid": [
+            "static_background",
+            "lifeless_environment",
+            "placeholder_asset",
+            "floating_icon",
+            "abstract_geometry",
+            "meaningless_movement",
+            "purposeless_camera_drift",
+            "poor_composition",
+            "empty_frame",
+            "low_resolution_asset",
+            "repeated_mechanical_loop",
+            "powerpoint_motion"
+          ],
+          "topic_hint": "Why Fire Hydrants Are Different Colors"
+        },
+        "camera": {
+          "camera_move": "crane",
+          "motion_effect": "slow_zoom_out",
+          "true_motion_camera": "pull_out",
+          "depth_of_field": false,
+          "rack_focus": false,
+          "shot_size": "establishing_wide",
+          "emotion": "focus",
+          "speed": "measured",
+          "narrative_purpose": "Advance comprehension of the beat while holding focus",
+          "storytelling_reason": "Advance comprehension of the beat while holding focus",
+          "forbid_static_lock": true,
+          "forbid_purposeless_drift": true,
+          "motivated": true
+        },
+        "character": null,
+        "world": {
+          "enabled": true,
+          "environment": "forest",
+          "animations": [
+            "leaves_moving",
+            "wind",
+            "birds",
+            "sunlight_shifting",
+            "fog_drift",
+            "branch_sway",
+            "dust_motes"
+          ],
+          "depth_layers": {
+            "foreground": [
+              "near_fern_sway",
+              "leaf_litter"
+            ],
+            "midground": [
+              "tree_trunks",
+              "path_haze"
+            ],
+            "background": [
+              "canopy_parallax",
+              "sky_clouds"
+            ]
+          },
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "allow_abstract_geometry": false,
+          "continues_without_narration": true,
+          "lighting_mood": "soft_daylight",
+          "atmospheric_perspective": true,
+          "volumetric_lighting": false,
+          "palette_hint": "forest",
+          "environmental_storytelling": true
+        },
+        "object": {
+          "enabled": true,
+          "objects": [
+            {
+              "object": "hydrant",
+              "animations": [
+                "flowing_water",
+                "valves_turning",
+                "cutaway",
+                "pressure_visualization"
+              ],
+              "reason": "Narration discusses hydrant"
+            },
+            {
+              "object": "fire",
+              "animations": [
+                "flame_react",
+                "embers",
+                "smoke_drift"
+              ],
+              "reason": "Narration discusses fire"
+            }
+          ],
+          "physics_believable": true,
+          "note": "Objects obey weight and momentum \u2014 no mechanical teleport motion"
+        },
+        "fx": {
+          "particle_effects": [
+            "pollen",
+            "leaf_specks",
+            "god_ray_motes"
+          ],
+          "lighting_movement": [
+            "key_soft",
+            "fill_bounce",
+            "rim_soft"
+          ],
+          "lighting_mood": "soft_daylight",
+          "physics_animation": true,
+          "grounded_not_floating": true
+        },
+        "motion_graphics": {
+          "enabled": true,
+          "items": [
+            {
+              "type": "map",
+              "ease_in": "ease_out",
+              "reason": "Location/context beat",
+              "story_role": "explain_not_decorate",
+              "forbid_floating_icon": true
+            }
+          ],
+          "animate_into_scene": true,
+          "integrated_not_powerpoint": true
+        },
+        "ui": {
+          "enabled": false,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "motion_continue",
+          "avoid_crossfade": true,
+          "motivated": true,
+          "reason": "Same beat type \u2014 continue camera energy"
+        },
+        "muted_comprehension": "Show the idea through visible motion so purpose=story_beat reads without audio.",
+        "visual_moment": "Advance story by showing the subject in action (focus/establishing_wide)",
+        "audience_understanding": "Audience should understand: A forest of pipes under the street feeds two nearby hydrants differently. (subject=the core idea, purpose=story_beat)",
+        "active_motion_classes": [
+          "camera_movement",
+          "object_movement",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement",
+          "physics_animation",
+          "motion_graphics"
+        ],
+        "passes_motion_minimum": true,
+        "immersion": {
+          "questions": {
+            "world_feels_alive": true,
+            "camera_has_purpose": true,
+            "environments_believable": true,
+            "characters_feel_alive": true,
+            "visuals_engaging_muted": true,
+            "every_frame_advances_story": true,
+            "rejects_abstract_geometry": true
+          },
+          "passed": true,
+          "failing": [],
+          "re_render_required": false
+        },
+        "quality_rejects": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ]
+      },
+      "cinematic_intent": {
+        "version": "2.0",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "shot_size": "establishing_wide",
+        "audience_understanding": "Audience should understand: A forest of pipes under the street feeds two nearby hydrants differently. (subject=the core idea, purpose=story_beat)",
+        "visual_moment": "Advance story by showing the subject in action (focus/establishing_wide)",
+        "color_intent": {
+          "harmony": "natural",
+          "hierarchy": "subject_isolation",
+          "avoid": [
+            "oversaturated_randomness",
+            "neon_scatter"
+          ]
+        },
+        "forbid": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ],
+        "topic_hint": "Why Fire Hydrants Are Different Colors"
+      },
+      "true_motion": {
+        "camera": "pull_out",
+        "performance": "walk_explain",
+        "palette": "forest",
+        "lighting_mood": "soft_daylight",
+        "shot_size": "establishing_wide",
+        "emotion": "focus",
+        "depth_layers": {
+          "foreground": [
+            "near_fern_sway",
+            "leaf_litter"
+          ],
+          "midground": [
+            "tree_trunks",
+            "path_haze"
+          ],
+          "background": [
+            "canopy_parallax",
+            "sky_clouds"
+          ]
+        },
+        "living_background": true,
+        "cinematic_v2": true,
+        "not_ken_burns_only": true,
+        "forbid_abstract_geometry": true
+      },
+      "environment_fx": [
+        "leaves_moving",
+        "wind",
+        "birds",
+        "sunlight_shifting",
+        "fog_drift",
+        "branch_sway",
+        "dust_motes"
+      ],
+      "motion_graphics_plan": [
+        {
+          "type": "map",
+          "ease_in": "ease_out",
+          "reason": "Location/context beat",
+          "story_role": "explain_not_decorate",
+          "forbid_floating_icon": true
+        }
+      ],
+      "immersion": {
+        "questions": {
+          "world_feels_alive": true,
+          "camera_has_purpose": true,
+          "environments_believable": true,
+          "characters_feel_alive": true,
+          "visuals_engaging_muted": true,
+          "every_frame_advances_story": true,
+          "rejects_abstract_geometry": true
+        },
+        "passed": true,
+        "failing": [],
+        "re_render_required": false
+      }
+    },
+    {
+      "scene_number": 4,
+      "purpose": "payoff",
+      "length_sec": 3.0,
+      "narration": "Flow rate matters when seconds decide if a house is saved.",
+      "camera_motion": "hero low angle push",
+      "animation_camera": "push_in",
+      "animation_effect": "cinematic_push_in",
+      "effect": {
+        "effect": "cinematic_push_in",
+        "zoom": {
+          "start": 1.0,
+          "end": 1.12
+        },
+        "pan": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "intensity": 70,
+        "easing": "ease_in_out",
+        "source": "animation_engine_v2",
+        "narrative_purpose": "Land the takeaway with a decisive, emotionally settled move (clarity)",
+        "emotion": "clarity"
+      },
+      "ken_burns": false,
+      "forbid_static": true,
+      "max_still_sec": 2.0,
+      "transition_out": "zoom_transition",
+      "animation_layers": {
+        "cinematic": {
+          "version": "2.0",
+          "emotion": "clarity",
+          "lighting_mood": "soft_daylight",
+          "shot_size": "hero_low_angle",
+          "audience_understanding": "Audience should understand: Flow rate matters when seconds decide if a house is saved. (subject=the core idea, purpose=payoff)",
+          "visual_moment": "Advance story by showing the subject in action (clarity/hero_low_angle)",
+          "color_intent": {
+            "harmony": "natural",
+            "hierarchy": "subject_isolation",
+            "avoid": [
+              "oversaturated_randomness",
+              "neon_scatter"
+            ]
+          },
+          "forbid": [
+            "static_background",
+            "lifeless_environment",
+            "placeholder_asset",
+            "floating_icon",
+            "abstract_geometry",
+            "meaningless_movement",
+            "purposeless_camera_drift",
+            "poor_composition",
+            "empty_frame",
+            "low_resolution_asset",
+            "repeated_mechanical_loop",
+            "powerpoint_motion"
+          ],
+          "topic_hint": "Why Fire Hydrants Are Different Colors"
+        },
+        "camera": {
+          "camera_move": "hero_low_angle_push",
+          "motion_effect": "cinematic_push_in",
+          "true_motion_camera": "push_in",
+          "depth_of_field": false,
+          "rack_focus": false,
+          "shot_size": "hero_low_angle",
+          "emotion": "clarity",
+          "speed": "resolved",
+          "narrative_purpose": "Land the takeaway with a decisive, emotionally settled move (clarity)",
+          "storytelling_reason": "Land the takeaway with a decisive, emotionally settled move (clarity)",
+          "forbid_static_lock": true,
+          "forbid_purposeless_drift": true,
+          "motivated": true
+        },
+        "character": null,
+        "world": {
+          "enabled": true,
+          "environment": "city",
+          "animations": [
+            "traffic",
+            "pedestrians",
+            "lights",
+            "smoke",
+            "weather",
+            "window_glow"
+          ],
+          "depth_layers": {
+            "foreground": [
+              "street_edge",
+              "signage_glow"
+            ],
+            "midground": [
+              "traffic_band",
+              "storefronts"
+            ],
+            "background": [
+              "skyline_parallax",
+              "sky"
+            ]
+          },
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "allow_abstract_geometry": false,
+          "continues_without_narration": true,
+          "lighting_mood": "soft_daylight",
+          "atmospheric_perspective": true,
+          "volumetric_lighting": false,
+          "palette_hint": "night",
+          "environmental_storytelling": true
+        },
+        "object": {
+          "enabled": true,
+          "objects": [
+            {
+              "object": "hydrant",
+              "animations": [
+                "flowing_water",
+                "valves_turning",
+                "cutaway",
+                "pressure_visualization"
+              ],
+              "reason": "Narration discusses hydrant"
+            },
+            {
+              "object": "fire",
+              "animations": [
+                "flame_react",
+                "embers",
+                "smoke_drift"
+              ],
+              "reason": "Narration discusses fire"
+            }
+          ],
+          "physics_believable": true,
+          "note": "Objects obey weight and momentum \u2014 no mechanical teleport motion"
+        },
+        "fx": {
+          "particle_effects": [
+            "rain_or_heat_haze",
+            "headlight_streaks"
+          ],
+          "lighting_movement": [
+            "key_soft",
+            "fill_bounce",
+            "rim_soft"
+          ],
+          "lighting_mood": "soft_daylight",
+          "physics_animation": false,
+          "grounded_not_floating": true
+        },
+        "motion_graphics": {
+          "enabled": true,
+          "items": [
+            {
+              "type": "kinetic_typography",
+              "reason": "Numeric / claim emphasis",
+              "story_role": "explain_not_decorate",
+              "forbid_floating_icon": true
+            }
+          ],
+          "animate_into_scene": true,
+          "integrated_not_powerpoint": true
+        },
+        "ui": {
+          "enabled": true,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "zoom_transition",
+          "avoid_crossfade": true,
+          "motivated": true,
+          "reason": "Resolve into the takeaway"
+        },
+        "muted_comprehension": "Show the idea through visible motion so purpose=payoff reads without audio.",
+        "visual_moment": "Advance story by showing the subject in action (clarity/hero_low_angle)",
+        "audience_understanding": "Audience should understand: Flow rate matters when seconds decide if a house is saved. (subject=the core idea, purpose=payoff)",
+        "active_motion_classes": [
+          "camera_movement",
+          "object_movement",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement",
+          "ui_animation",
+          "motion_graphics"
+        ],
+        "passes_motion_minimum": true,
+        "immersion": {
+          "questions": {
+            "world_feels_alive": true,
+            "camera_has_purpose": true,
+            "environments_believable": true,
+            "characters_feel_alive": true,
+            "visuals_engaging_muted": true,
+            "every_frame_advances_story": true,
+            "rejects_abstract_geometry": true
+          },
+          "passed": true,
+          "failing": [],
+          "re_render_required": false
+        },
+        "quality_rejects": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ]
+      },
+      "cinematic_intent": {
+        "version": "2.0",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "shot_size": "hero_low_angle",
+        "audience_understanding": "Audience should understand: Flow rate matters when seconds decide if a house is saved. (subject=the core idea, purpose=payoff)",
+        "visual_moment": "Advance story by showing the subject in action (clarity/hero_low_angle)",
+        "color_intent": {
+          "harmony": "natural",
+          "hierarchy": "subject_isolation",
+          "avoid": [
+            "oversaturated_randomness",
+            "neon_scatter"
+          ]
+        },
+        "forbid": [
+          "static_background",
+          "lifeless_environment",
+          "placeholder_asset",
+          "floating_icon",
+          "abstract_geometry",
+          "meaningless_movement",
+          "purposeless_camera_drift",
+          "poor_composition",
+          "empty_frame",
+          "low_resolution_asset",
+          "repeated_mechanical_loop",
+          "powerpoint_motion"
+        ],
+        "topic_hint": "Why Fire Hydrants Are Different Colors"
+      },
+      "true_motion": {
+        "camera": "push_in",
+        "performance": "walk_explain",
+        "palette": "night",
+        "lighting_mood": "soft_daylight",
+        "shot_size": "hero_low_angle",
+        "emotion": "clarity",
+        "depth_layers": {
+          "foreground": [
+            "street_edge",
+            "signage_glow"
+          ],
+          "midground": [
+            "traffic_band",
+            "storefronts"
+          ],
+          "background": [
+            "skyline_parallax",
+            "sky"
+          ]
+        },
+        "living_background": true,
+        "cinematic_v2": true,
+        "not_ken_burns_only": true,
+        "forbid_abstract_geometry": true
+      },
+      "environment_fx": [
+        "traffic",
+        "pedestrians",
+        "lights",
+        "smoke",
+        "weather",
+        "window_glow"
+      ],
+      "motion_graphics_plan": [
+        {
+          "type": "kinetic_typography",
+          "reason": "Numeric / claim emphasis",
+          "story_role": "explain_not_decorate",
+          "forbid_floating_icon": true
+        }
+      ],
+      "immersion": {
+        "questions": {
+          "world_feels_alive": true,
+          "camera_has_purpose": true,
+          "environments_believable": true,
+          "characters_feel_alive": true,
+          "visuals_engaging_muted": true,
+          "every_frame_advances_story": true,
+          "rejects_abstract_geometry": true
+        },
+        "passed": true,
+        "failing": [],
+        "re_render_required": false
+      }
+    }
+  ],
+  "true_motion_plan": [
+    {
+      "scene_number": 1,
+      "camera": "rack_focus",
+      "performance": "celebrate",
+      "palette": "night",
+      "lighting_mood": "firelight",
+      "emotion": "curiosity",
+      "shot_size": "intimate_close_up",
+      "duration_sec": 3.0,
+      "cinematic_v2": true,
+      "not_ken_burns_only": true
+    },
+    {
+      "scene_number": 2,
+      "camera": "push_in",
+      "performance": "walk_explain",
+      "palette": "night",
+      "lighting_mood": "firelight",
+      "emotion": "focus",
+      "shot_size": "intimate_close_up",
+      "duration_sec": 3.5,
+      "cinematic_v2": true,
+      "not_ken_burns_only": true
+    },
+    {
+      "scene_number": 3,
+      "camera": "pull_out",
+      "performance": null,
+      "palette": "forest",
+      "lighting_mood": "soft_daylight",
+      "emotion": "focus",
+      "shot_size": "establishing_wide",
+      "duration_sec": 4.0,
+      "cinematic_v2": true,
+      "not_ken_burns_only": true
+    },
+    {
+      "scene_number": 4,
+      "camera": "push_in",
+      "performance": null,
+      "palette": "night",
+      "lighting_mood": "soft_daylight",
+      "emotion": "clarity",
+      "shot_size": "hero_low_angle",
+      "duration_sec": 3.0,
+      "cinematic_v2": true,
+      "not_ken_burns_only": true
+    }
+  ],
+  "animation_excellence": {
+    "animation_excellence_score": 94.8,
+    "dimensions": {
+      "scene_motion": 100.0,
+      "camera_quality": 100.0,
+      "character_realism": 84.0,
+      "world_activity": 98.0,
+      "pacing": 90.0,
+      "visual_storytelling": 100.0,
+      "transition_quality": 93.0,
+      "cinematic_feel": 98.5,
+      "immersion": 100.0,
+      "intentionality": 96.0,
+      "environmental_believability": 95.0,
+      "performance_life": 82.5
+    },
+    "passed": true,
+    "target": 78.0,
+    "engine_version": "2.0.0"
+  },
+  "quality_gate": {
+    "passed": true,
+    "decision": "APPROVE",
+    "failures": [],
+    "warnings": [],
+    "engine_version": "2.0.0",
+    "re_render_scenes": [],
+    "metrics": {
+      "static_runtime_pct": 0.0,
+      "locked_camera_scenes": 0,
+      "frozen_background_scenes": 0,
+      "empty_motion_scenes": 0,
+      "purposeless_camera_scenes": 0,
+      "immersion_failures": 0,
+      "immersion_pass_ratio": 1.0,
+      "abstract_world_scenes": 0,
+      "unique_camera_moves": 4,
+      "scene_count": 4,
+      "runtime_sec": 13.5
+    }
+  },
+  "philosophy": {
+    "objective": "cinematic_educational_short_films",
+    "not": [
+      "more_animation_for_its_own_sake",
+      "powerpoint_motion",
+      "purposeless_drift"
+    ],
+    "every_frame_intentional": true,
+    "muted_story_test": true,
+    "immersion_test": true
+  },
+  "standards": {
+    "every_scene_must_move": true,
+    "every_move_must_have_purpose": true,
+    "max_still_without_motion_sec": 2.0,
+    "target_scene_duration_sec": [
+      2.0,
+      4.0
+    ],
+    "no_crossfade_default": true,
+    "no_frozen_backgrounds": true,
+    "no_abstract_geometry_worlds": true,
+    "no_mannequin_characters": true,
+    "re_render_immersion_failures": true
+  },
+  "summary": {
+    "animation_excellence_score": 94.8,
+    "quality_gate": "APPROVE",
+    "unique_cameras": 4,
+    "character_scenes": 2,
+    "motion_graphics_scenes": 4,
+    "immersion_pass_ratio": 1.0,
+    "re_render_scenes": [],
+    "emotions": [
+      "clarity",
+      "curiosity",
+      "focus"
+    ]
+  },
+  "upstream_cinematography_handoff": {
+    "provider": "Cinematography Engine",
+    "scene_count": 0
+  }
+}

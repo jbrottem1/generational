@@ -1,0 +1,74 @@
+{
+  "title": "Case Control Studies",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A concise explanation of case control studies, revealing their significance in science.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about case control studies than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Case control studies look backward to find causes of outcomes by comparing those with a condition to those without.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But do they always tell us the whole story? Not quite. There are limits.",
+      "emotion": "curiosity",
+      "delivery": "thoughtful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "These studies rely on memory and data from the past, which can lead to biases.",
+      "emotion": "curiosity",
+      "delivery": "serious",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "So while they help us understand risks, they\u2019re not foolproof.",
+      "emotion": "curiosity",
+      "delivery": "revealing",
+      "retention_device": "sudden insight"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper? Hit subscribe for more science insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "conclusion"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about case control studies than social media does. Case control studies look backward to find causes of outcomes by comparing those with a condition to those without. But do they always tell us the whole story? Not quite. There are limits. These studies rely on memory and data from the past, which can lead to biases. So while they help us understand risks, they\u2019re not foolproof. Want to dive deeper? Hit subscribe for more science insights!",
+  "call_to_action": "Hit subscribe for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:55:58.208999+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "idle_breathe",
+  "loop": true,
+  "cycle_sec": 1.2,
+  "keyframes": [
+    {
+      "t": 0.0,
+      "scale_y": 1.0,
+      "eye_dart": "center"
+    },
+    {
+      "t": 0.6,
+      "scale_y": 1.015,
+      "eye_dart": "right"
+    },
+    {
+      "t": 1.2,
+      "scale_y": 1.0,
+      "eye_dart": "center"
+    }
+  ],
+  "notes": "Never fully freeze; combine with talk_bob when VO active."
+}

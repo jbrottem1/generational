@@ -1,0 +1,25 @@
+{
+  "default_voice_asset_id": "VOICE-0001",
+  "default": true,
+  "provider": "elevenlabs",
+  "voice_id": "3tjayB0V8cEeXFHiD3SP",
+  "model_id": "eleven_multilingual_v2",
+  "stability": 0.52,
+  "similarity_boost": 0.8,
+  "style": 0.35,
+  "speaking_rate": 1.0,
+  "output_format": "mp3_44100_128",
+  "sample_rate": 44100,
+  "language": "en",
+  "normalization": "on",
+  "reject_fallback_when_elevenlabs_available": true,
+  "assign_when_narrator_unspecified": true,
+  "env_keys": {
+    "default_voice": "ELEVENLABS_DEFAULT_VOICE_ID",
+    "founder_voice": "ELEVENLABS_VOICE_FOUNDER",
+    "allow_fallback": "ELEVENLABS_ALLOW_FALLBACK"
+  },
+  "recommended_env": {
+    "ELEVENLABS_ALLOW_FALLBACK": "0"
+  }
+}

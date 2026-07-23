@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Photons knock electrons loose in silicon \u2014 that's the photovoltaic effect.",
+    "visual_description": "Hook visual: Photons knock electrons loose in silicon \u2014 that's the photovoltaic effect.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Photons knock electrons loose in silicon \u2014 that's the photovoltaic effect.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Photons knock electrons loose in silicon \u2014 that's the photovoltaic effect.",
+    "stock_footage_query": "",
+    "text_overlay": "Photons knock electrons loose",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 6.0,
+    "narration": "But what does that really mean for energy generation?",
+    "visual_description": "Context visual: But what does that really mean for energy generation?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: But what does that really mean for energy generation?",
+    "ai_video_prompt": "Cinematic motion: Context visual: But what does that really mean for energy generation?",
+    "stock_footage_query": "",
+    "text_overlay": "But what does that",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 8.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "In a solar panel, sunlight hits silicon cells, exciting electrons.",
+    "visual_description": "Escalation visual: In a solar panel, sunlight hits silicon cells, exciting electrons.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: In a solar panel, sunlight hits silicon cells, exciting electrons.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: In a solar panel, sunlight hits silicon cells, exciting electrons.",
+    "stock_footage_query": "",
+    "text_overlay": "In a solar panel,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 8.0,
+      "end_sec": 16.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 8.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "These moving electrons create an electric current.",
+    "visual_description": "Evidence visual: These moving electrons create an electric current.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: These moving electrons create an electric current.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: These moving electrons create an electric current.",
+    "stock_footage_query": "",
+    "text_overlay": "These moving electrons create",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 16.0,
+      "end_sec": 24.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 16.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "pattern_interrupt",
+    "emotion": "surprise",
+    "length_sec": 8.0,
+    "narration": "And here\u2019s the kicker: it\u2019s all about the material!",
+    "visual_description": "Pattern Interrupt visual: And here\u2019s the kicker: it\u2019s all about the material!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: And here\u2019s the kicker: it\u2019s all about the material!",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: And here\u2019s the kicker: it\u2019s all about the material!",
+    "stock_footage_query": "",
+    "text_overlay": "And here\u2019s the kicker:",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 24.0,
+      "end_sec": 32.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 24.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "payoff",
+    "emotion": "enthusiasm",
+    "length_sec": 12.0,
+    "narration": "Silicon\u2019s unique properties make it a superstar in solar tech.",
+    "visual_description": "Payoff visual: Silicon\u2019s unique properties make it a superstar in solar tech.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Silicon\u2019s unique properties make it a superstar in solar tech.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Silicon\u2019s unique properties make it a superstar in solar tech.",
+    "stock_footage_query": "",
+    "text_overlay": "Silicon\u2019s unique properties make",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 32.0,
+      "end_sec": 44.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 32.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "inviting",
+    "length_sec": 16.0,
+    "narration": "Curious about renewable energy? Hit follow for more!",
+    "visual_description": "Cta visual: Curious about renewable energy? Hit follow for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about renewable energy? Hit follow for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about renewable energy? Hit follow for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about renewable energy?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 44.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 44.0
+    }
+  }
+]

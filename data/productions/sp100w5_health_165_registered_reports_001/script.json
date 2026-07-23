@@ -1,0 +1,74 @@
+{
+  "title": "Registered Reports Explained",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A concise explanation of registered reports in science, highlighting their significance and how they differ from common misunderstandings.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about registered reports than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Registered reports are research plans peer-reviewed before data collection.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "This means results aren't cherry-picked. Transparency is key.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show registered reports can reduce bias and improve reproducibility.",
+      "emotion": "curiosity",
+      "delivery": "assertive",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 36.0,
+      "segment_type": "payoff",
+      "voiceover": "In a world full of misinformation, registered reports shine a light on rigorous science.",
+      "emotion": "curiosity",
+      "delivery": "inspirational",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 36.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to explore more about how science works? Like and follow for truth in research!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "clear call to action"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about registered reports than social media does. Registered reports are research plans peer-reviewed before data collection. This means results aren't cherry-picked. Transparency is key. Studies show registered reports can reduce bias and improve reproducibility. In a world full of misinformation, registered reports shine a light on rigorous science. Want to explore more about how science works? Like and follow for truth in research!",
+  "call_to_action": "Like and follow for truth in research!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:56:36.887661+00:00",
+  "source": "ai"
+}

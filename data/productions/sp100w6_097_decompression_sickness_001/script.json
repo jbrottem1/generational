@@ -1,0 +1,74 @@
+{
+  "title": "Decompression sickness",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A concise explanation of decompression sickness and its implications.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Ever heard of the bends? It\u2019s more than just a diving term.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Decompression sickness happens when divers ascend too quickly, causing nitrogen bubbles to form in the bloodstream.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Symptoms can range from joint pain to life-threatening conditions. But did you know it can also affect surface athletes?",
+      "emotion": "curiosity",
+      "delivery": "slightly urgent",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Nitrogen comes from our air, and when you dive, it dissolves in your tissues. Ascend slowly to avoid bubbles forming.",
+      "emotion": "curiosity",
+      "delivery": "clear and factual",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 48.0,
+      "segment_type": "payoff",
+      "voiceover": "Awareness is key. Know the risks and dive smart. Your life depends on it!",
+      "emotion": "curiosity",
+      "delivery": "motivational",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 48.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into science? Like and follow for more!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "natural CTA"
+    }
+  ],
+  "full_voiceover": "Ever heard of the bends? It\u2019s more than just a diving term. Decompression sickness happens when divers ascend too quickly, causing nitrogen bubbles to form in the bloodstream. Symptoms can range from joint pain to life-threatening conditions. But did you know it can also affect surface athletes? Nitrogen comes from our air, and when you dive, it dissolves in your tissues. Ascend slowly to avoid bubbles forming. Awareness is key. Know the risks and dive smart. Your life depends on it! Want to dive deeper into science? Like and follow for more!",
+  "call_to_action": "Like and follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:08:27.736828+00:00",
+  "source": "ai"
+}

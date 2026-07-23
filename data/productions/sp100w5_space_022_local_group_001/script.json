@@ -1,0 +1,74 @@
+{
+  "title": "Local Group",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the cosmic neighborhood of the Local Group with surprising insights.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about the Local Group than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "The Local Group is our cosmic neighborhood, home to galaxies like the Milky Way and Andromeda.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But did you know it stretches about 10 million light-years across? That's mind-boggling!",
+      "emotion": "wonder",
+      "delivery": "excited",
+      "retention_device": "visualize the distance"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "There are over 54 galaxies in the Local Group, including small dwarf galaxies.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "unexpected detail"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "Most of these galaxies are gravitationally bound, racing through space together.",
+      "emotion": "awe",
+      "delivery": "captivating",
+      "retention_device": "imagine the speed"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 50.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about our cosmic neighbors? Follow for more space science insights!",
+      "emotion": "inviting",
+      "delivery": "encouraging",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about the Local Group than social media does. The Local Group is our cosmic neighborhood, home to galaxies like the Milky Way and Andromeda. But did you know it stretches about 10 million light-years across? That's mind-boggling! There are over 54 galaxies in the Local Group, including small dwarf galaxies. Most of these galaxies are gravitationally bound, racing through space together. Curious about our cosmic neighbors? Follow for more space science insights!",
+  "call_to_action": "Follow for more space science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:36:11.694578+00:00",
+  "source": "ai"
+}

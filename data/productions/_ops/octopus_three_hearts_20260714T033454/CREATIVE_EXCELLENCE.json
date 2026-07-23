@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-07-14T03:36:54.825190+00:00",
+  "version": "1.0.0",
+  "production_id": "octopus_three_hearts_20260714T033454",
+  "topic": "Why Octopuses Have Three Hearts",
+  "lens": [
+    "Pixar",
+    "Kurzgesagt",
+    "Veritasium",
+    "Mark Rober",
+    "MrBeast retention"
+  ],
+  "scorecard": {
+    "version": "1.0.0",
+    "creative_excellence_score": 79.1,
+    "dimensions": {
+      "engineering_quality": 99.0,
+      "creative_quality": 89.9,
+      "viewer_retention": 90.7,
+      "educational_value": 90.0,
+      "entertainment": 76.2,
+      "shareability": 88.0,
+      "emotional_impact": 44.0,
+      "curiosity": 75.0
+    },
+    "timeline": {
+      "first_3_seconds": 93.0,
+      "first_6_seconds": 92.8,
+      "first_15_seconds": 89.9,
+      "middle_pacing": 88.4,
+      "ending": 89.0
+    },
+    "craft": {
+      "viewer_emotion": 44.0,
+      "curiosity": 75.0,
+      "payoff": 89.5,
+      "visual_movement": 97.6,
+      "narration_energy": 80.0
+    },
+    "timeline_notes": {
+      "first_3_seconds": "Scroll-stop window \u2014 concrete contradiction beats definition.",
+      "first_6_seconds": "Must prove the open with a visual argument.",
+      "first_15_seconds": "Promise locked or viewer exits.",
+      "middle_pacing": "Cut density / pattern interrupt against mid-drop.",
+      "ending": "Payoff clarity + share seed.",
+      "meta_leak_detected": true,
+      "scene_count": 9,
+      "curiosity_hits": 6,
+      "share_cta_detected": true
+    },
+    "viewer_outcomes": {
+      "would_stop_scrolling": 0.93,
+      "would_finish_watching": 0.898,
+      "would_share": 0.839,
+      "would_subscribe": 0.406,
+      "judgments": {
+        "would_stop_scrolling": true,
+        "would_finish_watching": true,
+        "would_share": true,
+        "would_subscribe": true
+      }
+    },
+    "engineering_vs_creative": {
+      "engineering_quality": 99.0,
+      "creative_excellence_score": 79.1,
+      "note": "High engineering does not equal stop-scroll creative power."
+    }
+  },
+  "single_recommendation": {
+    "element": "viewer_emotion",
+    "current_score": 44.0,
+    "excellence_floor": 92.0,
+    "gap": 48.0,
+    "impact_weight": 75,
+    "expected_retention_gain": 36.0,
+    "why_this_ranks_first": "Emotion is the share / subscribe conversion fuel.",
+    "recommendation": "Attach the idea to a personal stake (embarrassment, amazement, relief) before the first fact.",
+    "mode": "improve",
+    "do_not_touch": [
+      "curiosity",
+      "narration_energy",
+      "middle_pacing",
+      "ending",
+      "payoff"
+    ],
+    "principle": "Never suggest 20 improvements. Ship one highest-impact creative change.",
+    "runner_ups": [
+      {
+        "element": "curiosity",
+        "expected_retention_gain": 14.45
+      },
+      {
+        "element": "narration_energy",
+        "expected_retention_gain": 8.4
+      },
+      {
+        "element": "middle_pacing",
+        "expected_retention_gain": 2.59
+      }
+    ]
+  },
+  "vs_previous": {
+    "previous_score": 91.4,
+    "delta": -12.3,
+    "more_engaging_than_previous": false
+  },
+  "mission": {
+    "measure": [
+      "stop_scroll",
+      "finish",
+      "share",
+      "subscribe"
+    ],
+    "do_not_measure": [
+      "code_quality",
+      "architecture",
+      "engine_count"
+    ],
+    "rule": "Exactly ONE creative recommendation per video."
+  },
+  "artifact_dir": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/_validation/creative_excellence/octopus_three_hearts_20260714T033454",
+  "markdown_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/_validation/creative_excellence/octopus_three_hearts_20260714T033454/CREATIVE_EXCELLENCE.md"
+}

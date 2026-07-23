@@ -1,0 +1,12 @@
+{
+  "id": "ANIM-DOCTOR_001-RUNNING_CYCLE",
+  "name": "running_cycle",
+  "character_id": "DOCTOR_001",
+  "loop": true,
+  "reusable": true,
+  "true_motion_hint": "walk_explain",
+  "constraints_ref": "ANIMATION_CONSTRAINTS.json",
+  "rig_ref": "RIG_SPECIFICATION.json",
+  "includes_airborne_phase": true,
+  "style": "controlled_urgent_clinical"
+}

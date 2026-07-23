@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Your DNA sequence isn\u2019t the whole story.",
+    "visual_description": "Hook visual: Your DNA sequence isn\u2019t the whole story.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Your DNA sequence isn\u2019t the whole story.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Your DNA sequence isn\u2019t the whole story.",
+    "stock_footage_query": "",
+    "text_overlay": "Your DNA sequence isn\u2019t",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Chemical switches called epigenetics decide what genes actually do.",
+    "visual_description": "Context visual: Chemical switches called epigenetics decide what genes actually do.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Chemical switches called epigenetics decide what genes actually do.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Chemical switches called epigenetics decide what genes actually do.",
+    "stock_footage_query": "",
+    "text_overlay": "Chemical switches called epigenetics",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "intrigue",
+    "length_sec": 8.0,
+    "narration": "Think of methylation and histone marks as tiny on/off switches for your genes.",
+    "visual_description": "Escalation visual: Think of methylation and histone marks as tiny on/off switches for your genes.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Think of methylation and histone marks as tiny on/off switches for your genes.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Think of methylation and histone marks as tiny on/off switches for your genes.",
+    "stock_footage_query": "",
+    "text_overlay": "Think of methylation and",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "insight",
+    "length_sec": 8.0,
+    "narration": "Your environment can influence these switches, changing gene expression without altering DNA.",
+    "visual_description": "Evidence visual: Your environment can influence these switches, changing gene expression without altering DNA.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Your environment can influence these switches, changing gene expression without altering DNA.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Your environment can influence these switches, changing gene expression without altering DNA.",
+    "stock_footage_query": "",
+    "text_overlay": "Your environment can influence",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "hope",
+    "length_sec": 12.0,
+    "narration": "But remember, inherited traits through epigenetics are still being studied.",
+    "visual_description": "Payoff visual: But remember, inherited traits through epigenetics are still being studied.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: But remember, inherited traits through epigenetics are still being studied.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: But remember, inherited traits through epigenetics are still being studied.",
+    "stock_footage_query": "",
+    "text_overlay": "But remember, inherited traits",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "enthusiasm",
+    "length_sec": 22.0,
+    "narration": "Curious about how your genes can be influenced? Follow for more scientific insights!",
+    "visual_description": "Cta visual: Curious about how your genes can be influenced? Follow for more scientific insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about how your genes can be influenced? Follow for more scientific insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about how your genes can be influenced? Follow for more scientific insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about how your",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

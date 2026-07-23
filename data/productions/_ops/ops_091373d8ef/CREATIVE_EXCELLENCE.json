@@ -1,0 +1,170 @@
+{
+  "generated_at": "2026-07-14T04:55:51.075019+00:00",
+  "version": "2.0.0",
+  "initiative": "generational_v2_creative_quality",
+  "production_id": "ops_091373d8ef",
+  "topic": "How Training Data Shapes AI Behavior",
+  "lens": [
+    "Pixar",
+    "Kurzgesagt",
+    "Veritasium",
+    "Mark Rober",
+    "MrBeast retention",
+    "NatGeo Shorts"
+  ],
+  "scorecard": {
+    "version": "2.0.0",
+    "creative_excellence_score": 79.4,
+    "dimensions": {
+      "engineering_quality": 69.0,
+      "creative_quality": 90.5,
+      "viewer_retention": 90.8,
+      "educational_value": 90.0,
+      "entertainment": 75.2,
+      "shareability": 88.0,
+      "emotional_impact": 41.0,
+      "curiosity": 80.0
+    },
+    "v2_quality": {
+      "version": "2.0.0",
+      "initiative": "generational_v2_creative_quality",
+      "scores": {
+        "visual_quality": 100.0,
+        "motion_quality": 96.1,
+        "storytelling": 90.6,
+        "educational_clarity": 90.0,
+        "hook": 94.0,
+        "viewer_retention": 88.0,
+        "audio_quality": 86.0,
+        "overall_professionalism": 93.6
+      },
+      "documentary_standard": {
+        "animated_or_layered_environments": true,
+        "foreground_background_motion": true,
+        "cinematic_depth": true,
+        "motivated_camera_moves": true,
+        "realistic_or_motivated_lighting": true,
+        "environmental_effects": false,
+        "object_or_subject_interaction": false,
+        "believable_persistent_world": false,
+        "no_slideshow_lock": true
+      },
+      "documentary_standard_passed": 6,
+      "documentary_standard_total": 9,
+      "resembles_documentary_not_slideshow": true,
+      "weakest_craft": {
+        "dimension": "audio_quality",
+        "score": 86.0
+      },
+      "targets": {
+        "watch_time": "raise via hook + motion + payoff",
+        "viewer_retention": "raise via first 3/15s + mid pacing",
+        "visual_appeal": "raise via world continuity + lighting + depth",
+        "professional_polish": "raise via audio sync + captions + transitions",
+        "educational_clarity": "raise via display zones + one-idea-per-beat"
+      }
+    },
+    "timeline": {
+      "first_3_seconds": 93.0,
+      "first_6_seconds": 92.8,
+      "first_15_seconds": 90.1,
+      "middle_pacing": 88.4,
+      "ending": 89.0
+    },
+    "craft": {
+      "viewer_emotion": 41.0,
+      "curiosity": 80.0,
+      "payoff": 89.5,
+      "visual_movement": 97.6,
+      "narration_energy": 81.0
+    },
+    "timeline_notes": {
+      "first_3_seconds": "Scroll-stop window \u2014 concrete contradiction beats definition.",
+      "first_6_seconds": "Must prove the open with a visual argument.",
+      "first_15_seconds": "Promise locked or viewer exits.",
+      "middle_pacing": "Cut density / pattern interrupt against mid-drop.",
+      "ending": "Payoff clarity + share seed.",
+      "meta_leak_detected": true,
+      "scene_count": 9,
+      "curiosity_hits": 6,
+      "share_cta_detected": true
+    },
+    "viewer_outcomes": {
+      "would_stop_scrolling": 0.93,
+      "would_finish_watching": 0.898,
+      "would_share": 0.84,
+      "would_subscribe": 0.4,
+      "judgments": {
+        "would_stop_scrolling": true,
+        "would_finish_watching": true,
+        "would_share": true,
+        "would_subscribe": true
+      }
+    },
+    "engineering_vs_creative": {
+      "engineering_quality": 69.0,
+      "creative_excellence_score": 79.4,
+      "v2_overall_professionalism": 93.6,
+      "note": "High engineering does not equal stop-scroll creative power."
+    }
+  },
+  "single_recommendation": {
+    "element": "viewer_emotion",
+    "current_score": 41.0,
+    "excellence_floor": 92.0,
+    "gap": 51.0,
+    "impact_weight": 75,
+    "expected_retention_gain": 38.25,
+    "why_this_ranks_first": "Emotion is the share / subscribe conversion fuel.",
+    "recommendation": "Attach the idea to a personal stake (embarrassment, amazement, relief) before the first fact.",
+    "mode": "improve",
+    "do_not_touch": [
+      "curiosity",
+      "narration_energy",
+      "middle_pacing",
+      "ending",
+      "payoff"
+    ],
+    "principle": "Never suggest 20 improvements. Ship one highest-impact creative change.",
+    "runner_ups": [
+      {
+        "element": "curiosity",
+        "expected_retention_gain": 10.2
+      },
+      {
+        "element": "narration_energy",
+        "expected_retention_gain": 7.7
+      },
+      {
+        "element": "middle_pacing",
+        "expected_retention_gain": 2.59
+      }
+    ]
+  },
+  "vs_previous": {
+    "previous_score": 78.5,
+    "delta": 0.9,
+    "more_engaging_than_previous": true
+  },
+  "mission": {
+    "measure": [
+      "stop_scroll",
+      "finish",
+      "share",
+      "subscribe",
+      "watch_time",
+      "visual_appeal",
+      "professional_polish",
+      "educational_clarity"
+    ],
+    "do_not_measure": [
+      "code_quality",
+      "architecture",
+      "engine_count"
+    ],
+    "rule": "Exactly ONE creative recommendation per video. Do not auto-rebuild.",
+    "visual_standard": "educational_documentary_not_slideshow"
+  },
+  "artifact_dir": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/_validation/creative_excellence/ops_091373d8ef",
+  "markdown_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/_validation/creative_excellence/ops_091373d8ef/CREATIVE_EXCELLENCE.md"
+}

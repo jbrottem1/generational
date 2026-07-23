@@ -1,0 +1,739 @@
+{
+  "package_type": "CHARACTER_RIG_PACKAGE",
+  "package_version": "1.0.0",
+  "engine_id": "character_rig_studio",
+  "created_at": "2026-07-18T00:58:44.627282+00:00",
+  "character_id": "TEACHER_001",
+  "philosophy": {
+    "not_a_renderer": true,
+    "not_an_image_generator": true,
+    "not_a_video_generator": true,
+    "rule": "Scenes reference the actor. Scenes never recreate the actor.",
+    "pipeline": [
+      "scene_director_chooses_actors",
+      "performance_engine_chooses_actions",
+      "character_rig_studio_executes_movement",
+      "renderer_records_performance"
+    ]
+  },
+  "identity": {
+    "character_id": "TEACHER_001",
+    "canonical_name": "The Teacher",
+    "role": "classroom_educator",
+    "age_appearance": "adult_forties",
+    "body_type": "approachable_average",
+    "height_cm": 172.0,
+    "proportions": "warm_educator",
+    "continuity_version": "0.1.0",
+    "forbid_regenerate_per_scene": true,
+    "permanent_digital_actor": true,
+    "is_gold_standard": false,
+    "status": "reserved",
+    "studio_asset_path": "data/studio_assets/TEACHER_001/",
+    "voice_ref": null,
+    "composed_from_existing": false
+  },
+  "body_rig": {
+    "character_id": "TEACHER_001",
+    "rig_type": "generational_body_rig_v1",
+    "hierarchy": [
+      "root",
+      "pelvis",
+      "spine_01",
+      "spine_02",
+      "spine_03",
+      "chest",
+      "neck",
+      "head",
+      "jaw",
+      "tongue",
+      "eye_left",
+      "eye_right",
+      "eyelid_upper_left",
+      "eyelid_upper_right",
+      "eyelid_lower_left",
+      "eyelid_lower_right",
+      "clavicle_left",
+      "shoulder_left",
+      "upper_arm_left",
+      "elbow_left",
+      "forearm_left",
+      "wrist_left",
+      "hand_left",
+      "thumb_01_left",
+      "thumb_02_left",
+      "thumb_03_left",
+      "index_01_left",
+      "index_02_left",
+      "index_03_left",
+      "middle_01_left",
+      "middle_02_left",
+      "middle_03_left",
+      "ring_01_left",
+      "ring_02_left",
+      "ring_03_left",
+      "pinky_01_left",
+      "pinky_02_left",
+      "pinky_03_left",
+      "clavicle_right",
+      "shoulder_right",
+      "upper_arm_right",
+      "elbow_right",
+      "forearm_right",
+      "wrist_right",
+      "hand_right",
+      "thumb_01_right",
+      "thumb_02_right",
+      "thumb_03_right",
+      "index_01_right",
+      "index_02_right",
+      "index_03_right",
+      "middle_01_right",
+      "middle_02_right",
+      "middle_03_right",
+      "ring_01_right",
+      "ring_02_right",
+      "ring_03_right",
+      "pinky_01_right",
+      "pinky_02_right",
+      "pinky_03_right",
+      "hip_left",
+      "thigh_left",
+      "knee_left",
+      "shin_left",
+      "ankle_left",
+      "foot_left",
+      "toes_left",
+      "hip_right",
+      "thigh_right",
+      "knee_right",
+      "shin_right",
+      "ankle_right",
+      "foot_right",
+      "toes_right"
+    ],
+    "joint_count": 74,
+    "scale": 0.9829,
+    "height_cm": 172.0,
+    "capabilities": [
+      "walking",
+      "running",
+      "turning",
+      "sitting",
+      "standing",
+      "jumping",
+      "pointing",
+      "lifting",
+      "reaching",
+      "natural_balance",
+      "weight_shifting"
+    ],
+    "rules": [
+      "movement_originates_from_skeleton",
+      "weight_through_pelvis",
+      "head_stabilizes_via_spine",
+      "hands_never_float",
+      "feet_contact_ground",
+      "no_limb_length_drift"
+    ],
+    "joint_constraints_defaults": [],
+    "existing_skeleton_ref": null,
+    "reusable": true,
+    "regenerate_per_scene": false
+  },
+  "facial_rig": {
+    "character_id": "TEACHER_001",
+    "rig_version": "1.0.0",
+    "canonical": true,
+    "controls": {
+      "forehead_raise": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "brow_inner_left": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "brow_inner_right": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "brow_outer_left": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "brow_outer_right": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "upper_lid_left": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "upper_lid_right": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "lower_lid_left": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "lower_lid_right": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "eyeball_yaw_left": {
+        "min": -1.0,
+        "max": 1.0
+      },
+      "eyeball_yaw_right": {
+        "min": -1.0,
+        "max": 1.0
+      },
+      "eyeball_pitch_left": {
+        "min": -1.0,
+        "max": 1.0
+      },
+      "eyeball_pitch_right": {
+        "min": -1.0,
+        "max": 1.0
+      },
+      "pupil_dilate_left": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "pupil_dilate_right": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "cheek_raise_left": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "cheek_raise_right": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "nose_bridge_wrinkle": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "nostril_flare": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "upper_lip": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "lower_lip": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "lip_corner_left": {
+        "min": -1.0,
+        "max": 1.0
+      },
+      "lip_corner_right": {
+        "min": -1.0,
+        "max": 1.0
+      },
+      "jaw_open": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "chin_raise": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "neck_tension": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "ear_left": {
+        "min": 0.0,
+        "max": 1.0
+      },
+      "ear_right": {
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "regions": [
+      "forehead",
+      "inner_eyebrows",
+      "outer_eyebrows",
+      "upper_eyelids",
+      "lower_eyelids",
+      "eyeballs",
+      "pupils",
+      "cheeks",
+      "nose_bridge",
+      "nostrils",
+      "upper_lip",
+      "lower_lip",
+      "lip_corners",
+      "jaw",
+      "chin",
+      "neck_tension",
+      "ear_movement"
+    ],
+    "continuity_rule": "Same canonical facial rig across all scenes for this character.",
+    "pipeline": [
+      "scene_intent",
+      "emotional_state",
+      "attention_target",
+      "facial_performance_plan",
+      "eye_and_head_coordination",
+      "expression_blending",
+      "speech_and_viseme_animation",
+      "micro_expression_layer",
+      "rendered_performance_validation"
+    ],
+    "regions_supported": [
+      "eye_movement",
+      "eyelids",
+      "eyebrows",
+      "forehead",
+      "cheeks",
+      "nose",
+      "jaw",
+      "lips",
+      "tongue",
+      "neck_tension",
+      "micro_expressions"
+    ],
+    "emotions_supported": [
+      "smiles",
+      "frowns",
+      "concern",
+      "joy",
+      "curiosity",
+      "surprise",
+      "determination",
+      "empathy",
+      "speech"
+    ],
+    "micro_expressions": true,
+    "speech_ready": true,
+    "reusable": true,
+    "source": "character_performance.face_rig_profile"
+  },
+  "eye_system": {
+    "character_id": "TEACHER_001",
+    "capabilities": [
+      "focus_targets",
+      "eye_tracking",
+      "attention_shifts",
+      "blink_timing",
+      "pupil_dilation",
+      "conversation_gaze",
+      "environment_scanning",
+      "reading",
+      "camera_awareness"
+    ],
+    "default_blink_interval_sec": [
+      2.2,
+      5.5
+    ],
+    "pupil_dilation_range": [
+      0.15,
+      0.95
+    ],
+    "gaze_modes": [
+      "conversation",
+      "environment_scan",
+      "reading",
+      "camera_address",
+      "task_focus"
+    ],
+    "saccade_enabled": true,
+    "vergence_enabled": true,
+    "forbid_dead_stare": true,
+    "forbid_unsynced_eyes": true,
+    "reusable": true
+  },
+  "hand_system": {
+    "character_id": "TEACHER_001",
+    "capabilities": [
+      "individual_finger_movement",
+      "natural_grip",
+      "object_interaction",
+      "gesture_libraries",
+      "medical_demonstrations",
+      "writing",
+      "touching_holograms",
+      "holding_books",
+      "holding_tools"
+    ],
+    "fingers_per_hand": 5,
+    "joints_per_finger": 3,
+    "grip_presets": [
+      "relaxed",
+      "precision_pinch",
+      "power_grip",
+      "tool_grip",
+      "book_cradle",
+      "hologram_point",
+      "writing"
+    ],
+    "gesture_library": [
+      "open_palm_teach",
+      "point_index",
+      "ok_precision",
+      "hold_tool",
+      "hold_book",
+      "hologram_touch",
+      "writing_grip",
+      "medical_demo_pinch",
+      "reassure_rest",
+      "typing_home_row"
+    ],
+    "object_interaction": true,
+    "left_right_independent": true,
+    "forbid_mitten_hands": true,
+    "forbid_floating_props": true,
+    "reusable": true,
+    "existing_ref": null
+  },
+  "body_mechanics": {
+    "character_id": "TEACHER_001",
+    "forbid": [
+      "foot_sliding",
+      "floating",
+      "teleporting_poses",
+      "broken_joints",
+      "weightless_movement"
+    ],
+    "ensure": [
+      "foot_planting",
+      "hip_rotation",
+      "natural_momentum",
+      "secondary_motion",
+      "balanced_posture"
+    ],
+    "foot_ik": true,
+    "ground_contact_required": true,
+    "hip_leads_turns": true,
+    "secondary_motion": [
+      "coat_sway",
+      "hair_follow",
+      "soft_tissue_micro"
+    ],
+    "balance_solver": "pelvis_com_projection",
+    "no_pose_teleport": true
+  },
+  "wardrobe": {
+    "character_id": "TEACHER_001",
+    "architecture": "clothing_separated_from_body",
+    "default_outfit": "classroom_attire",
+    "outfits": [
+      {
+        "id": "classroom_attire",
+        "layers": [
+          "base_garment",
+          "classroom_attire"
+        ],
+        "separated_from_body": true,
+        "cloth_sim": true
+      },
+      {
+        "id": "field_trip_layers",
+        "layers": [
+          "base_garment",
+          "field_trip_layers"
+        ],
+        "separated_from_body": true,
+        "cloth_sim": true
+      }
+    ],
+    "outfit_ids": [
+      "classroom_attire",
+      "field_trip_layers"
+    ],
+    "simulate_as_fabric": true,
+    "responds_to": [
+      "walk",
+      "run",
+      "arm_move",
+      "sit",
+      "wind",
+      "gravity",
+      "turn"
+    ],
+    "forbid": [
+      "frozen_fabric",
+      "fabric_leads_body",
+      "limb_clipping"
+    ],
+    "inheritable_architecture": true,
+    "existing_ref": null,
+    "reusable": true
+  },
+  "materials": {
+    "character_id": "TEACHER_001",
+    "skin": {
+      "type": "cinematic_skin",
+      "subsurface": true
+    },
+    "hair": {
+      "type": "organic_or_styled",
+      "secondary_motion": true
+    },
+    "eyes": {
+      "wetness": true,
+      "catchlights": true,
+      "iris_detail": true
+    },
+    "metal_or_props": {},
+    "wardrobe_materials_follow_outfit": true,
+    "reusable": true
+  },
+  "performance_system": {
+    "character_id": "TEACHER_001",
+    "clip_count": 18,
+    "required_clips": [
+      "idle",
+      "thinking",
+      "teaching",
+      "listening",
+      "greeting",
+      "walking",
+      "turning",
+      "explaining",
+      "laughing",
+      "typing",
+      "writing",
+      "pointing",
+      "looking_around",
+      "picking_up_objects",
+      "opening_doors",
+      "sitting",
+      "standing",
+      "reacting"
+    ],
+    "clips": {
+      "idle": {
+        "clip_id": "TEACHER_001_idle",
+        "name": "idle",
+        "reusable": true,
+        "loop": true,
+        "rig_bound": true,
+        "source_file": null,
+        "status": "template"
+      },
+      "thinking": {
+        "clip_id": "TEACHER_001_thinking",
+        "name": "thinking",
+        "reusable": true,
+        "loop": false,
+        "rig_bound": true,
+        "source_file": null,
+        "status": "template"
+      },
+      "teaching": {
+        "clip_id": "TEACHER_001_teaching",
+        "name": "teaching",
+        "reusable": true,
+        "loop": false,
+        "rig_bound": true,
+        "source_file": null,
+        "status": "template"
+      },
+      "listening": {
+        "clip_id": "TEACHER_001_listening",
+        "name": "listening",
+        "reusable": true,
+        "loop": true,
+        "rig_bound": true,
+        "source_file": null,
+        "status": "template"
+      },
+      "greeting": {
+        "clip_id": "TEACHER_001_greeting",
+        "name": "greeting",
+        "reusable": true,
+        "loop": false,
+        "rig_bound": true,
+        "source_file": null,
+        "status": "template"
+      },
+      "walking": {
+        "clip_id": "TEACHER_001_walking",
+        "name": "walking",
+        "reusable": true,
+        "loop": true,
+        "rig_bound": true,
+        "source_file": null,
+        "status": "template"
+      },
+      "turning": {
+        "clip_id": "TEACHER_001_turning",
+        "name": "turning",
+        "reusable": true,
+        "loop": false,
+        "rig_bound": true,
+        "source_file": null,
+        "status": "template"
+      },
+      "explaining": {
+        "clip_id": "TEACHER_001_explaining",
+        "name": "explaining",
+        "reusable": true,
+        "loop": false,
+        "rig_bound": true,
+        "source_file": null,
+        "status": "template"
+      },
+      "laughing": {
+        "clip_id": "TEACHER_001_laughing",
+        "name": "laughing",
+        "reusable": true,
+        "loop": false,
+        "rig_bound": true,
+        "source_file": null,
+        "status": "template"
+      },
+      "typing": {
+        "clip_id": "TEACHER_001_typing",
+        "name": "typing",
+        "reusable": true,
+        "loop": true,
+        "rig_bound": true,
+        "source_file": null,
+        "status": "template"
+      },
+      "writing": {
+        "clip_id": "TEACHER_001_writing",
+        "name": "writing",
+        "reusable": true,
+        "loop": false,
+        "rig_bound": true,
+        "source_file": null,
+        "status": "template"
+      },
+      "pointing": {
+        "clip_id": "TEACHER_001_pointing",
+        "name": "pointing",
+        "reusable": true,
+        "loop": false,
+        "rig_bound": true,
+        "source_file": null,
+        "status": "template"
+      },
+      "looking_around": {
+        "clip_id": "TEACHER_001_looking_around",
+        "name": "looking_around",
+        "reusable": true,
+        "loop": false,
+        "rig_bound": true,
+        "source_file": null,
+        "status": "template"
+      },
+      "picking_up_objects": {
+        "clip_id": "TEACHER_001_picking_up_objects",
+        "name": "picking_up_objects",
+        "reusable": true,
+        "loop": false,
+        "rig_bound": true,
+        "source_file": null,
+        "status": "template"
+      },
+      "opening_doors": {
+        "clip_id": "TEACHER_001_opening_doors",
+        "name": "opening_doors",
+        "reusable": true,
+        "loop": false,
+        "rig_bound": true,
+        "source_file": null,
+        "status": "template"
+      },
+      "sitting": {
+        "clip_id": "TEACHER_001_sitting",
+        "name": "sitting",
+        "reusable": true,
+        "loop": false,
+        "rig_bound": true,
+        "source_file": null,
+        "status": "template"
+      },
+      "standing": {
+        "clip_id": "TEACHER_001_standing",
+        "name": "standing",
+        "reusable": true,
+        "loop": false,
+        "rig_bound": true,
+        "source_file": null,
+        "status": "template"
+      },
+      "reacting": {
+        "clip_id": "TEACHER_001_reacting",
+        "name": "reacting",
+        "reusable": true,
+        "loop": false,
+        "rig_bound": true,
+        "source_file": null,
+        "status": "template"
+      }
+    },
+    "animation_library_ref": "data/studio_assets/TEACHER_001/ANIMATION/",
+    "existing_index": null,
+    "philosophy": "Actors own clips. Scenes choose actions. Never regenerate walks per episode.",
+    "reusable": true
+  },
+  "personality": {
+    "character_id": "TEACHER_001",
+    "traits": [
+      "patient",
+      "clear",
+      "encouraging",
+      "curious"
+    ],
+    "default_performance_energy": "measured_teach",
+    "camera_awareness": true,
+    "reusable": true
+  },
+  "asset_refs": {
+    "studio_root": "data/studio_assets/TEACHER_001/",
+    "skeleton": null,
+    "face_rig": null,
+    "wardrobe": null,
+    "animation": null,
+    "character_rig_dir": "CHARACTER_RIG/"
+  },
+  "architecture": {
+    "frozen": true,
+    "no_new_renderer": true,
+    "no_pipeline_redesign": true,
+    "feeds": [
+      "character_world_studio",
+      "character_performance_engine",
+      "character_performance",
+      "animation_engine",
+      "true_motion"
+    ]
+  },
+  "validation": {
+    "ok": true,
+    "score": 100,
+    "failures": [],
+    "rejects_hit": [],
+    "reject_catalog": [
+      "appearance_changes_between_scenes",
+      "inconsistent_proportions",
+      "cannot_perform_natural_walking",
+      "cannot_perform_expressive_facial_acting",
+      "cannot_interact_with_objects",
+      "cannot_maintain_eye_contact",
+      "cannot_support_reusable_animation_clips"
+    ],
+    "rule": "Scenes reference the actor. Scenes never recreate the actor.",
+    "success": "Permanent cast of digital actors with reusable rigs, animations, personalities, and performances."
+  },
+  "scene_ref": {
+    "character_id": "TEACHER_001",
+    "character_rig_ref": "data/studio_assets/TEACHER_001/CHARACTER_RIG/CHARACTER_RIG_PACKAGE.json",
+    "continuity_version": "0.1.0",
+    "do_not_regenerate": true
+  }
+}

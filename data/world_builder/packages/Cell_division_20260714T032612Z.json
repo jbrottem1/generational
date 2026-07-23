@@ -1,0 +1,498 @@
+{
+  "package_version": "1.0.0",
+  "package_type": "world",
+  "generated_at": "2026-07-14T03:26:12.782392+00:00",
+  "topic": "Cell division",
+  "niche": "biology",
+  "world_id": "WORLD-HUMAN_CELL",
+  "world_type": "Human Cell",
+  "name": "Human Cell",
+  "theme": "microscopic life",
+  "scale": "cellular",
+  "historical_accuracy": 70,
+  "world": {
+    "world_id": "WORLD-HUMAN_CELL",
+    "world_type": "Human Cell",
+    "name": "Human Cell",
+    "theme": "microscopic life",
+    "scale": "cellular",
+    "historical_accuracy": 70,
+    "environment": {
+      "description": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow",
+      "continuity_key": "WORLD-HUMAN_CELL",
+      "do_not_replace_mid_episode": true
+    },
+    "lighting": {
+      "base": "macro_science hard rim + shallow DOF",
+      "consistent_key": true
+    },
+    "architecture": [
+      "lipid membrane dome",
+      "cytoskeleton lattice"
+    ],
+    "weather": "cytoplasmic_flow",
+    "objects": [
+      {
+        "name": "mitochondrion",
+        "surface": "cytoplasm",
+        "anchored": true,
+        "position": {
+          "x": 0.4,
+          "y": 0.3,
+          "z": 0.4
+        },
+        "scale": 1.0
+      },
+      {
+        "name": "nucleus",
+        "surface": "cytoplasm",
+        "anchored": true,
+        "position": {
+          "x": 0.5,
+          "y": 0.4,
+          "z": 0.45
+        },
+        "scale": 1.0
+      }
+    ],
+    "furniture": [],
+    "background_animations": [
+      "vesicle transport",
+      "membrane undulation"
+    ],
+    "sound_ambience": [
+      "soft organic pulse",
+      "microscopic whoosh"
+    ],
+    "camera_boundaries": {
+      "min_height": 0.0,
+      "max_height": 2.0,
+      "min_distance": 0.1,
+      "max_distance": 5.0
+    },
+    "color_palette": {
+      "family": "lab",
+      "primary": "#1B3A4B",
+      "accent": "#F4A261",
+      "membrane": "#A8DADC"
+    },
+    "lighting_presets": [
+      {
+        "id": "day_neutral",
+        "recipe": "warm organelle key + soft bounce fill",
+        "mood": "neutral"
+      },
+      {
+        "id": "dramatic_rim",
+        "recipe": "warm organelle key + hard rim + practical instrument glow",
+        "mood": "dramatic"
+      },
+      {
+        "id": "low_key_focus",
+        "recipe": "low-key with luminous subject isolation",
+        "mood": "focus"
+      },
+      {
+        "id": "bright_reveal",
+        "recipe": "bright key + lifted shadows for revelation",
+        "mood": "reveal"
+      }
+    ],
+    "camera_anchors": [
+      {
+        "id": "membrane_entry",
+        "position": "boundary",
+        "angle": "push_in",
+        "lens_hint": "24mm"
+      },
+      {
+        "id": "nucleus_orbit",
+        "position": "core",
+        "angle": "orbit",
+        "lens_hint": "35mm"
+      },
+      {
+        "id": "organelle_macro",
+        "position": "mito_close",
+        "angle": "macro",
+        "lens_hint": "100mm"
+      }
+    ],
+    "animation_zones": [
+      {
+        "id": "transport",
+        "region": "cytoplasm"
+      }
+    ],
+    "transition_anchors": [
+      {
+        "id": "membrane_gate",
+        "to_compatible": [
+          "DNA Interior",
+          "Science Lab",
+          "Hospital"
+        ]
+      }
+    ],
+    "design_rules": [
+      "Keep set geometry continuous across scenes",
+      "Vary camera and lighting, not the world itself",
+      "Every object must sit on a defined surface",
+      "No flat solid full-frame backgrounds"
+    ]
+  },
+  "environment": {
+    "description": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow",
+    "continuity_key": "WORLD-HUMAN_CELL",
+    "do_not_replace_mid_episode": true
+  },
+  "camera_anchors": [
+    {
+      "id": "membrane_entry",
+      "position": "boundary",
+      "angle": "push_in",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "nucleus_orbit",
+      "position": "core",
+      "angle": "orbit",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "organelle_macro",
+      "position": "mito_close",
+      "angle": "macro",
+      "lens_hint": "100mm"
+    }
+  ],
+  "lighting_presets": [
+    {
+      "id": "day_neutral",
+      "recipe": "warm organelle key + soft bounce fill",
+      "mood": "neutral"
+    },
+    {
+      "id": "dramatic_rim",
+      "recipe": "warm organelle key + hard rim + practical instrument glow",
+      "mood": "dramatic"
+    },
+    {
+      "id": "low_key_focus",
+      "recipe": "low-key with luminous subject isolation",
+      "mood": "focus"
+    },
+    {
+      "id": "bright_reveal",
+      "recipe": "bright key + lifted shadows for revelation",
+      "mood": "reveal"
+    }
+  ],
+  "object_placement": [
+    {
+      "name": "mitochondrion",
+      "surface": "cytoplasm",
+      "anchored": true,
+      "position": {
+        "x": 0.4,
+        "y": 0.3,
+        "z": 0.4
+      },
+      "scale": 1.0
+    },
+    {
+      "name": "nucleus",
+      "surface": "cytoplasm",
+      "anchored": true,
+      "position": {
+        "x": 0.5,
+        "y": 0.4,
+        "z": 0.45
+      },
+      "scale": 1.0
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "transport",
+      "region": "cytoplasm"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "membrane_gate",
+      "to_compatible": [
+        "DNA Interior",
+        "Science Lab",
+        "Hospital"
+      ]
+    }
+  ],
+  "architecture": [
+    "lipid membrane dome",
+    "cytoskeleton lattice"
+  ],
+  "weather": "cytoplasmic_flow",
+  "background_animations": [
+    "vesicle transport",
+    "membrane undulation"
+  ],
+  "sound_ambience": [
+    "soft organic pulse",
+    "microscopic whoosh"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.0,
+    "max_height": 2.0,
+    "min_distance": 0.1,
+    "max_distance": 5.0
+  },
+  "color_palette": {
+    "family": "lab",
+    "primary": "#1B3A4B",
+    "accent": "#F4A261",
+    "membrane": "#A8DADC"
+  },
+  "continuity": {
+    "single_world": true,
+    "world_id": "WORLD-HUMAN_CELL",
+    "note": "Scenes share the same laboratory/set; only camera and lighting change",
+    "scene_bindings": [
+      {
+        "scene_id": "s1",
+        "world_id": "WORLD-HUMAN_CELL",
+        "world_type": "Human Cell",
+        "camera_anchor": "membrane_entry",
+        "camera": {
+          "id": "membrane_entry",
+          "position": "boundary",
+          "angle": "push_in",
+          "lens_hint": "24mm"
+        },
+        "lighting_preset": "day_neutral",
+        "lighting": "warm organelle key + soft bounce fill",
+        "environment": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow",
+        "background": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow; camera_anchor=membrane_entry; angle=push_in; lens=24mm; lighting_preset=day_neutral; SAME_WORLD continuity",
+        "color_palette": {
+          "family": "lab",
+          "primary": "#1B3A4B",
+          "accent": "#F4A261",
+          "membrane": "#A8DADC"
+        },
+        "objects_in_frame": [
+          "mitochondrion",
+          "nucleus"
+        ],
+        "narration_excerpt": "Stop."
+      },
+      {
+        "scene_id": "s2",
+        "world_id": "WORLD-HUMAN_CELL",
+        "world_type": "Human Cell",
+        "camera_anchor": "nucleus_orbit",
+        "camera": {
+          "id": "nucleus_orbit",
+          "position": "core",
+          "angle": "orbit",
+          "lens_hint": "35mm"
+        },
+        "lighting_preset": "dramatic_rim",
+        "lighting": "warm organelle key + hard rim + practical instrument glow",
+        "environment": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow",
+        "background": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow; camera_anchor=nucleus_orbit; angle=orbit; lens=35mm; lighting_preset=dramatic_rim; SAME_WORLD continuity",
+        "color_palette": {
+          "family": "lab",
+          "primary": "#1B3A4B",
+          "accent": "#F4A261",
+          "membrane": "#A8DADC"
+        },
+        "objects_in_frame": [
+          "mitochondrion",
+          "nucleus"
+        ],
+        "narration_excerpt": "Cells divide."
+      },
+      {
+        "scene_id": "s3",
+        "world_id": "WORLD-HUMAN_CELL",
+        "world_type": "Human Cell",
+        "camera_anchor": "organelle_macro",
+        "camera": {
+          "id": "organelle_macro",
+          "position": "mito_close",
+          "angle": "macro",
+          "lens_hint": "100mm"
+        },
+        "lighting_preset": "low_key_focus",
+        "lighting": "low-key with luminous subject isolation",
+        "environment": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow",
+        "background": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow; camera_anchor=organelle_macro; angle=macro; lens=100mm; lighting_preset=low_key_focus; SAME_WORLD continuity",
+        "color_palette": {
+          "family": "lab",
+          "primary": "#1B3A4B",
+          "accent": "#F4A261",
+          "membrane": "#A8DADC"
+        },
+        "objects_in_frame": [
+          "mitochondrion",
+          "nucleus"
+        ],
+        "narration_excerpt": "Look closer."
+      },
+      {
+        "scene_id": "s4",
+        "world_id": "WORLD-HUMAN_CELL",
+        "world_type": "Human Cell",
+        "camera_anchor": "membrane_entry",
+        "camera": {
+          "id": "membrane_entry",
+          "position": "boundary",
+          "angle": "push_in",
+          "lens_hint": "24mm"
+        },
+        "lighting_preset": "bright_reveal",
+        "lighting": "bright key + lifted shadows for revelation",
+        "environment": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow",
+        "background": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow; camera_anchor=membrane_entry; angle=push_in; lens=24mm; lighting_preset=bright_reveal; SAME_WORLD continuity",
+        "color_palette": {
+          "family": "lab",
+          "primary": "#1B3A4B",
+          "accent": "#F4A261",
+          "membrane": "#A8DADC"
+        },
+        "objects_in_frame": [
+          "mitochondrion",
+          "nucleus"
+        ],
+        "narration_excerpt": "The machinery appears."
+      }
+    ]
+  },
+  "scene_overrides": [
+    {
+      "scene_id": "s1",
+      "environment": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow",
+      "background": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow; camera_anchor=membrane_entry; angle=push_in; lens=24mm; lighting_preset=day_neutral; SAME_WORLD continuity",
+      "lighting": "warm organelle key + soft bounce fill",
+      "color_palette": {
+        "family": "lab",
+        "primary": "#1B3A4B",
+        "accent": "#F4A261",
+        "membrane": "#A8DADC"
+      },
+      "world_id": "WORLD-HUMAN_CELL",
+      "camera_anchor": "membrane_entry"
+    },
+    {
+      "scene_id": "s2",
+      "environment": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow",
+      "background": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow; camera_anchor=nucleus_orbit; angle=orbit; lens=35mm; lighting_preset=dramatic_rim; SAME_WORLD continuity",
+      "lighting": "warm organelle key + hard rim + practical instrument glow",
+      "color_palette": {
+        "family": "lab",
+        "primary": "#1B3A4B",
+        "accent": "#F4A261",
+        "membrane": "#A8DADC"
+      },
+      "world_id": "WORLD-HUMAN_CELL",
+      "camera_anchor": "nucleus_orbit"
+    },
+    {
+      "scene_id": "s3",
+      "environment": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow",
+      "background": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow; camera_anchor=organelle_macro; angle=macro; lens=100mm; lighting_preset=low_key_focus; SAME_WORLD continuity",
+      "lighting": "low-key with luminous subject isolation",
+      "color_palette": {
+        "family": "lab",
+        "primary": "#1B3A4B",
+        "accent": "#F4A261",
+        "membrane": "#A8DADC"
+      },
+      "world_id": "WORLD-HUMAN_CELL",
+      "camera_anchor": "organelle_macro"
+    },
+    {
+      "scene_id": "s4",
+      "environment": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow",
+      "background": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow; camera_anchor=membrane_entry; angle=push_in; lens=24mm; lighting_preset=bright_reveal; SAME_WORLD continuity",
+      "lighting": "bright key + lifted shadows for revelation",
+      "color_palette": {
+        "family": "lab",
+        "primary": "#1B3A4B",
+        "accent": "#F4A261",
+        "membrane": "#A8DADC"
+      },
+      "world_id": "WORLD-HUMAN_CELL",
+      "camera_anchor": "membrane_entry"
+    }
+  ],
+  "renderer_feed": {
+    "note": "Optional enrich of visual_package.scenes \u2014 does not modify production pipeline stages",
+    "scene_overrides": [
+      {
+        "scene_id": "s1",
+        "environment": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow",
+        "background": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow; camera_anchor=membrane_entry; angle=push_in; lens=24mm; lighting_preset=day_neutral; SAME_WORLD continuity",
+        "lighting": "warm organelle key + soft bounce fill",
+        "color_palette": {
+          "family": "lab",
+          "primary": "#1B3A4B",
+          "accent": "#F4A261",
+          "membrane": "#A8DADC"
+        },
+        "world_id": "WORLD-HUMAN_CELL",
+        "camera_anchor": "membrane_entry"
+      },
+      {
+        "scene_id": "s2",
+        "environment": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow",
+        "background": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow; camera_anchor=nucleus_orbit; angle=orbit; lens=35mm; lighting_preset=dramatic_rim; SAME_WORLD continuity",
+        "lighting": "warm organelle key + hard rim + practical instrument glow",
+        "color_palette": {
+          "family": "lab",
+          "primary": "#1B3A4B",
+          "accent": "#F4A261",
+          "membrane": "#A8DADC"
+        },
+        "world_id": "WORLD-HUMAN_CELL",
+        "camera_anchor": "nucleus_orbit"
+      },
+      {
+        "scene_id": "s3",
+        "environment": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow",
+        "background": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow; camera_anchor=organelle_macro; angle=macro; lens=100mm; lighting_preset=low_key_focus; SAME_WORLD continuity",
+        "lighting": "low-key with luminous subject isolation",
+        "color_palette": {
+          "family": "lab",
+          "primary": "#1B3A4B",
+          "accent": "#F4A261",
+          "membrane": "#A8DADC"
+        },
+        "world_id": "WORLD-HUMAN_CELL",
+        "camera_anchor": "organelle_macro"
+      },
+      {
+        "scene_id": "s4",
+        "environment": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow",
+        "background": "Semi-transparent cell interior with organelles, membrane boundary, and cytoplasmic flow; camera_anchor=membrane_entry; angle=push_in; lens=24mm; lighting_preset=bright_reveal; SAME_WORLD continuity",
+        "lighting": "bright key + lifted shadows for revelation",
+        "color_palette": {
+          "family": "lab",
+          "primary": "#1B3A4B",
+          "accent": "#F4A261",
+          "membrane": "#A8DADC"
+        },
+        "world_id": "WORLD-HUMAN_CELL",
+        "camera_anchor": "membrane_entry"
+      }
+    ]
+  },
+  "validation": {
+    "ok": true,
+    "passed": true,
+    "hard_fails": [],
+    "warnings": [],
+    "scene_binding_count": 4,
+    "object_count": 2
+  }
+}

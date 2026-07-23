@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: When oceans get too warm, corals evict their partners \u2014 and turn ghostly white.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Corals rely on tiny algae called zooxanthellae, which live inside them. This relationship is crucial for their survival.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: But when temperatures rise, corals stress out and kick out these vital partners, leading to bleaching.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: According to NOAA, while some corals can recover, repeated heat stress increases mortality.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: The fate of coral reefs rests on our actions. Protecting our oceans is essential for their survival.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to learn more about ocean health? Follow for more insights on climate change!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: When oceans get too warm, corals evict their partners \u2014 and turn ghostly white.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Corals rely on tiny algae called zooxanthellae, which live inside them. This relationship is crucial for their survival.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: But when temperatures rise, corals stress out and kick out these vital partners, leading to bleaching.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: According to NOAA, while some corals can recover, repeated heat stress increases mortality.",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: The fate of coral reefs rests on our actions. Protecting our oceans is essential for their survival.",
+      "duration_sec": 15.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to learn more about ocean health? Follow for more insights on climate change!",
+      "duration_sec": 15.0
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "world_id": "WORLD-COURTROOM",
+  "world_type": "Courtroom",
+  "name": "Courtroom",
+  "theme": "civic judgment",
+  "scale": "chamber",
+  "historical_accuracy": 85,
+  "environment": {
+    "description": "Formal courtroom with wood paneling, elevated bench, and seal emblem",
+    "continuity_key": "WORLD-COURTROOM",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "window soft key + warm wood bounce",
+    "consistent_key": true
+  },
+  "architecture": [
+    "raised bench",
+    "jury box",
+    "aisle columns"
+  ],
+  "weather": "indoors",
+  "objects": [
+    {
+      "object_id": "obj_gavel_block",
+      "name": "gavel_block",
+      "surface": "desk",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.5,
+        "y": 1.1,
+        "z": 0.3
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_evidence_table",
+      "name": "evidence_table",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.45,
+        "y": 0.0,
+        "z": 0.5
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "obj_witness_stand",
+      "name": "witness_stand",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.35,
+        "y": 0.0,
+        "z": 0.4
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_gallery_pews",
+      "name": "gallery_pews",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.5,
+        "y": 0.0,
+        "z": 0.75
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "background_animations": [
+    "dust in window light",
+    "flag micro-sway"
+  ],
+  "sound_ambience": [
+    "room tone",
+    "soft cough",
+    "pen scratch"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.5,
+    "max_height": 3.0,
+    "min_distance": 0.8,
+    "max_distance": 12.0
+  },
+  "color_palette": {
+    "family": "history",
+    "primary": "#1A120B",
+    "accent": "#C9A66B",
+    "cloth": "#4A0000"
+  },
+  "lighting_presets": [
+    {
+      "id": "day_neutral",
+      "recipe": "formal soft key + soft bounce fill",
+      "mood": "neutral"
+    },
+    {
+      "id": "dramatic_rim",
+      "recipe": "formal soft key + hard rim + practical instrument glow",
+      "mood": "dramatic"
+    },
+    {
+      "id": "low_key_focus",
+      "recipe": "low-key with luminous subject isolation",
+      "mood": "focus"
+    },
+    {
+      "id": "bright_reveal",
+      "recipe": "bright key + lifted shadows for revelation",
+      "mood": "reveal"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "bench_hero",
+      "position": "aisle",
+      "angle": "low",
+      "lens_hint": "28mm"
+    },
+    {
+      "id": "jury_side",
+      "position": "jury",
+      "angle": "side",
+      "lens_hint": "50mm"
+    },
+    {
+      "id": "gavel_macro",
+      "position": "bench",
+      "angle": "macro",
+      "lens_hint": "85mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "arguments",
+      "region": "center_aisle"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "courthouse_door",
+      "to_compatible": [
+        "Library",
+        "University",
+        "Stock Exchange"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.159254+00:00"
+}

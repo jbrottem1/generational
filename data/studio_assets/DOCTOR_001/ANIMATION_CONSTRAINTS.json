@@ -1,0 +1,37 @@
+{
+  "character_id": "DOCTOR_001",
+  "joint_limits_soft": true,
+  "forbid": [
+    "limb_length_drift",
+    "foot_slide",
+    "hand_intersection",
+    "clothing_penetration",
+    "weightless_float",
+    "rigid_spin_turns",
+    "instant_expression_switch",
+    "purposeless_motion"
+  ],
+  "require": [
+    "anticipation",
+    "overlap",
+    "follow_through",
+    "foot_contact",
+    "eye_led_turns",
+    "breath_alive_idle"
+  ],
+  "walk_phases": [
+    "heel_strike",
+    "flatten",
+    "weight_accept",
+    "mid_stance",
+    "heel_rise",
+    "toe_off",
+    "swing"
+  ],
+  "doctor_walk_traits": [
+    "calm_authority",
+    "precise_foot_placement",
+    "minimal_waste",
+    "approachable_not_militaristic"
+  ]
+}

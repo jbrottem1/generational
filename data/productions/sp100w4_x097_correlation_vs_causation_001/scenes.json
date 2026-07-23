@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about correlation vs causation.",
+    "visual_description": "Hook visual: Here's what science actually says about correlation vs causation.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about correlation vs causation.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about correlation vs causation.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Just because two things happen together doesn't mean one causes the other.",
+    "visual_description": "Context visual: Just because two things happen together doesn't mean one causes the other.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Just because two things happen together doesn't mean one causes the other.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Just because two things happen together doesn't mean one causes the other.",
+    "stock_footage_query": "",
+    "text_overlay": "Just because two things",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "intrigue",
+    "length_sec": 8.0,
+    "narration": "Take ice cream sales and shark attacks. They both spike in summer. But do they cause each other?",
+    "visual_description": "Escalation visual: Take ice cream sales and shark attacks. They both spike in summer. But do they cause each other?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Take ice cream sales and shark attacks. They both spike in summer. But do they cause each other?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Take ice cream sales and shark attacks. They both spike in summer. But do they cause each other?",
+    "stock_footage_query": "",
+    "text_overlay": "Take ice cream sales",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "pondering",
+    "length_sec": 12.0,
+    "narration": "Researchers note that correlation merely highlights relationships, not causation. Random factors could be at play.",
+    "visual_description": "Evidence visual: Researchers note that correlation merely highlights relationships, not causation. Random factors could be at play.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Researchers note that correlation merely highlights relationships, not causation. Random factors could be at play.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Researchers note that correlation merely highlights relationships, not causation. Random factors could be at play.",
+    "stock_footage_query": "",
+    "text_overlay": "Researchers note that correlation",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "satisfaction",
+    "length_sec": 15.0,
+    "narration": "Understanding this helps prevent misleading conclusions about data, leading to better decisions.",
+    "visual_description": "Payoff visual: Understanding this helps prevent misleading conclusions about data, leading to better decisions.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding this helps prevent misleading conclusions about data, leading to better decisions.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding this helps prevent misleading conclusions about data, leading to better decisions.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding this helps prevent",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "encouragement",
+    "length_sec": 15.0,
+    "narration": "Want to dive deeper into data science? Hit that follow button!",
+    "visual_description": "Cta visual: Want to dive deeper into data science? Hit that follow button!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into data science? Hit that follow button!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into data science? Hit that follow button!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

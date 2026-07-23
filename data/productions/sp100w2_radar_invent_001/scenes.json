@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Radar doesn't need light \u2014 it listens for radio echoes bouncing off objects.",
+    "visual_description": "Hook visual: Radar doesn't need light \u2014 it listens for radio echoes bouncing off objects.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Radar doesn't need light \u2014 it listens for radio echoes bouncing off objects.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Radar doesn't need light \u2014 it listens for radio echoes bouncing off objects.",
+    "stock_footage_query": "",
+    "text_overlay": "Radar doesn't need light",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "How does it work? Radar sends out pulses of radio waves, like invisible messengers.",
+    "visual_description": "Context visual: How does it work? Radar sends out pulses of radio waves, like invisible messengers.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: How does it work? Radar sends out pulses of radio waves, like invisible messengers.",
+    "ai_video_prompt": "Cinematic motion: Context visual: How does it work? Radar sends out pulses of radio waves, like invisible messengers.",
+    "stock_footage_query": "",
+    "text_overlay": "How does it work?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "When these waves hit an object, they bounce back, creating echoes.",
+    "visual_description": "Escalation visual: When these waves hit an object, they bounce back, creating echoes.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: When these waves hit an object, they bounce back, creating echoes.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: When these waves hit an object, they bounce back, creating echoes.",
+    "stock_footage_query": "",
+    "text_overlay": "When these waves hit",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "By measuring the time it takes for echoes to return, radar calculates distance.",
+    "visual_description": "Evidence visual: By measuring the time it takes for echoes to return, radar calculates distance.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: By measuring the time it takes for echoes to return, radar calculates distance.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: By measuring the time it takes for echoes to return, radar calculates distance.",
+    "stock_footage_query": "",
+    "text_overlay": "By measuring the time",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "This means radar can see through fog, revealing what\u2019s ahead, even in zero visibility.",
+    "visual_description": "Payoff visual: This means radar can see through fog, revealing what\u2019s ahead, even in zero visibility.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This means radar can see through fog, revealing what\u2019s ahead, even in zero visibility.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This means radar can see through fog, revealing what\u2019s ahead, even in zero visibility.",
+    "stock_footage_query": "",
+    "text_overlay": "This means radar can",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 36.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 24.0,
+    "narration": "Want to dive deeper into radar tech? Hit subscribe for more science secrets!",
+    "visual_description": "Cta visual: Want to dive deeper into radar tech? Hit subscribe for more science secrets!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into radar tech? Hit subscribe for more science secrets!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into radar tech? Hit subscribe for more science secrets!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 36.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 36.0
+    }
+  }
+]

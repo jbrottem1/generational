@@ -1,0 +1,76 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Genes are read into messenger RNA before proteins are built.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: This process, called transcription, is the first step in protein synthesis.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Pattern Interrupt visual: But how does the DNA know what to say? It\u2019s all in the sequence!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Escalation visual: RNA polymerase reads the DNA strand and builds a complementary RNA strand.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Evidence visual: This RNA strand carries the genetic instructions from the nucleus to the ribosomes.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Payoff visual: And that's how your body reads its blueprints to create proteins!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cta visual: Want to dive deeper into genetics? Hit that follow button!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Genes are read into messenger RNA before proteins are built.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: This process, called transcription, is the first step in protein synthesis.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Pattern Interrupt visual: But how does the DNA know what to say? It\u2019s all in the sequence!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Escalation visual: RNA polymerase reads the DNA strand and builds a complementary RNA strand.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Evidence visual: This RNA strand carries the genetic instructions from the nucleus to the ribosomes.",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Payoff visual: And that's how your body reads its blueprints to create proteins!",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cinematic motion: Cta visual: Want to dive deeper into genetics? Hit that follow button!",
+      "duration_sec": 10.0
+    }
+  ]
+}

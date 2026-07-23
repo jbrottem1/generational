@@ -1,0 +1,94 @@
+{
+  "title": "Oncogenes Basics",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "A concise exploration of oncogenes and their roles in cancer development.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about oncogenes.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Oncogenes are mutated versions of normal genes that can lead to cancer.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "retention_hook",
+      "voiceover": "But how do they actually cause cells to go rogue?",
+      "emotion": "curiosity",
+      "delivery": "slightly intense",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "escalation",
+      "voiceover": "They can promote uncontrolled cell division and inhibit normal cell death.",
+      "emotion": "curiosity",
+      "delivery": "urgent",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows that targeting oncogenes can slow cancer progression.",
+      "emotion": "curiosity",
+      "delivery": "optimistic",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 42.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "And here's the twist: not all oncogenes are equal.",
+      "emotion": "curiosity",
+      "delivery": "surprising",
+      "retention_device": "surprise factor"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 42.0,
+      "end_time": 54.0,
+      "segment_type": "payoff",
+      "voiceover": "Some might even protect against cancer in specific contexts.",
+      "emotion": "curiosity",
+      "delivery": "revelatory",
+      "retention_device": "none"
+    },
+    {
+      "segment_number": 8,
+      "start_time": 54.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more genetic mysteries? Hit that follow!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "none"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about oncogenes. Oncogenes are mutated versions of normal genes that can lead to cancer. But how do they actually cause cells to go rogue? They can promote uncontrolled cell division and inhibit normal cell death. Research shows that targeting oncogenes can slow cancer progression. And here's the twist: not all oncogenes are equal. Some might even protect against cancer in specific contexts. Curious about more genetic mysteries? Hit that follow!",
+  "call_to_action": "Hit that follow!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:29:09.212850+00:00",
+  "source": "ai"
+}

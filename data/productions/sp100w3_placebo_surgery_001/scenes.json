@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if I told you fake surgery can actually ease pain?",
+    "visual_description": "Hook visual: What if I told you fake surgery can actually ease pain?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you fake surgery can actually ease pain?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you fake surgery can actually ease pain?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "In clinical trials, sham procedures are showing surprising results.",
+    "visual_description": "Context visual: In clinical trials, sham procedures are showing surprising results.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: In clinical trials, sham procedures are showing surprising results.",
+    "ai_video_prompt": "Cinematic motion: Context visual: In clinical trials, sham procedures are showing surprising results.",
+    "stock_footage_query": "",
+    "text_overlay": "In clinical trials, sham",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Patients experiencing real symptom changes\u2014just from believing they had surgery.",
+    "visual_description": "Escalation visual: Patients experiencing real symptom changes\u2014just from believing they had surgery.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Patients experiencing real symptom changes\u2014just from believing they had surgery.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Patients experiencing real symptom changes\u2014just from believing they had surgery.",
+    "stock_footage_query": "",
+    "text_overlay": "Patients experiencing real symptom",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This \u2018placebo effect\u2019 reveals how powerful our expectations can be.",
+    "visual_description": "Evidence visual: This \u2018placebo effect\u2019 reveals how powerful our expectations can be.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: This \u2018placebo effect\u2019 reveals how powerful our expectations can be.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: This \u2018placebo effect\u2019 reveals how powerful our expectations can be.",
+    "stock_footage_query": "",
+    "text_overlay": "This \u2018placebo effect\u2019 reveals",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Understanding this could reshape how we approach pain management.",
+    "visual_description": "Payoff visual: Understanding this could reshape how we approach pain management.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding this could reshape how we approach pain management.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding this could reshape how we approach pain management.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding this could reshape",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 22.0,
+    "narration": "Curious about the mind-body connection? Like and follow for more insights!",
+    "visual_description": "Cta visual: Curious about the mind-body connection? Like and follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about the mind-body connection? Like and follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about the mind-body connection? Like and follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about the mind-body",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

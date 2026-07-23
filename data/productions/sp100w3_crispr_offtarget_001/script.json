@@ -1,0 +1,74 @@
+{
+  "title": "CRISPR Off-Target Effects",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the off-target effects of CRISPR technology and the ongoing research for more precise gene editing.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Did you know CRISPR can cut the wrong genes?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "This happens when gene editors target unintended DNA locations.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Imagine the consequences: unintended mutations could lead to serious issues.",
+      "emotion": "concern",
+      "delivery": "urgent",
+      "retention_device": "visual imagery"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Researchers are actively testing and engineering CRISPR for higher specificity.",
+      "emotion": "hope",
+      "delivery": "confident",
+      "retention_device": "interesting fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "payoff",
+      "voiceover": "With advancements, we can reduce these off-target effects, making CRISPR safer.",
+      "emotion": "optimism",
+      "delivery": "inspiring",
+      "retention_device": "satisfying conclusion"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay updated on CRISPR's journey. Like and follow for more science insights!",
+      "emotion": "encouragement",
+      "delivery": "enthusiastic",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Did you know CRISPR can cut the wrong genes? This happens when gene editors target unintended DNA locations. Imagine the consequences: unintended mutations could lead to serious issues. Researchers are actively testing and engineering CRISPR for higher specificity. With advancements, we can reduce these off-target effects, making CRISPR safer. Stay updated on CRISPR's journey. Like and follow for more science insights!",
+  "call_to_action": "Like and follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:10:08.267578+00:00",
+  "source": "ai"
+}

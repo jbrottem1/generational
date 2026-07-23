@@ -1,0 +1,51 @@
+{
+  "package_type": "GENERATIONAL_STUDIO_ASSET",
+  "asset_number": "0001",
+  "id": "CHAR-0001",
+  "slug": "CHAR-0001-THE-DOCTOR",
+  "name": "The Doctor",
+  "version": "1.1.0",
+  "status": "permanent",
+  "generated_at": "2026-07-16T00:52:57.226095+00:00",
+  "root": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/studio_assets/CHAR-0001-THE-DOCTOR",
+  "style_mode": "cinematic_realism",
+  "outputs": {
+    "CHARACTER_PROFILE.json": true,
+    "CHARACTER_MODEL_GUIDE.pdf": true,
+    "CHARACTER_EXPRESSIONS": 15,
+    "POSE_LIBRARY": 17,
+    "ANIMATION_LIBRARY": 21,
+    "VOICE_PROFILE.json": true,
+    "PERSONALITY_GUIDE.md": true,
+    "BIOGRAPHY.md": true,
+    "WORLD_GUIDE.md": true,
+    "ENVIRONMENT_PACKAGE": true,
+    "LIGHTING_PRESETS": true,
+    "COLOR_GUIDE.md": true,
+    "PROP_LIBRARY": true,
+    "REUSABLE_OBJECTS": true,
+    "CONTINUITY_RULES.md": true,
+    "HUMAN_REALISM": true,
+    "CHARACTER_IDENTITY.json": true,
+    "SKELETON_PROFILE.json": true,
+    "FACE_RIG_PROFILE.json": true,
+    "GAIT_PROFILE.json": true,
+    "GESTURE_LIBRARY.json": true,
+    "EMOTION_LIBRARY.json": true,
+    "WARDROBE_PROFILE.json": true,
+    "CHARACTER_CONTINUITY_RULES.md": true,
+    "PERFORMANCE_PLAN.schema.json": false
+  },
+  "philosophy": {
+    "no_new_renderer": true,
+    "no_pipeline_redesign": true,
+    "permanent_ip": true,
+    "cast_do_not_regenerate": true,
+    "human_character_realism_v1": true
+  },
+  "prior": {
+    "version": "1.1.0",
+    "generated_at": "2026-07-16T00:52:57.170982+00:00",
+    "status": "permanent"
+  }
+}

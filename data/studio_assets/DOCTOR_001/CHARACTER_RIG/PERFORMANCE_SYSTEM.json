@@ -1,0 +1,223 @@
+{
+  "character_id": "DOCTOR_001",
+  "clip_count": 18,
+  "required_clips": [
+    "idle",
+    "thinking",
+    "teaching",
+    "listening",
+    "greeting",
+    "walking",
+    "turning",
+    "explaining",
+    "laughing",
+    "typing",
+    "writing",
+    "pointing",
+    "looking_around",
+    "picking_up_objects",
+    "opening_doors",
+    "sitting",
+    "standing",
+    "reacting"
+  ],
+  "clips": {
+    "idle": {
+      "clip_id": "DOCTOR_001_idle",
+      "name": "idle",
+      "reusable": true,
+      "loop": true,
+      "rig_bound": true,
+      "source_file": "idle.json",
+      "status": "bound"
+    },
+    "thinking": {
+      "clip_id": "DOCTOR_001_thinking",
+      "name": "thinking",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": "listening.json",
+      "status": "bound"
+    },
+    "teaching": {
+      "clip_id": "DOCTOR_001_teaching",
+      "name": "teaching",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": "teaching.json",
+      "status": "bound"
+    },
+    "listening": {
+      "clip_id": "DOCTOR_001_listening",
+      "name": "listening",
+      "reusable": true,
+      "loop": true,
+      "rig_bound": true,
+      "source_file": "listening.json",
+      "status": "bound"
+    },
+    "greeting": {
+      "clip_id": "DOCTOR_001_greeting",
+      "name": "greeting",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": "greeting.json",
+      "status": "bound"
+    },
+    "walking": {
+      "clip_id": "DOCTOR_001_walking",
+      "name": "walking",
+      "reusable": true,
+      "loop": true,
+      "rig_bound": true,
+      "source_file": "walking_cycle.json",
+      "status": "bound"
+    },
+    "turning": {
+      "clip_id": "DOCTOR_001_turning",
+      "name": "turning",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": "turning.json",
+      "status": "bound"
+    },
+    "explaining": {
+      "clip_id": "DOCTOR_001_explaining",
+      "name": "explaining",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": "explaining.json",
+      "status": "bound"
+    },
+    "laughing": {
+      "clip_id": "DOCTOR_001_laughing",
+      "name": "laughing",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": "reactions/reaction_amusement.json",
+      "status": "bound"
+    },
+    "typing": {
+      "clip_id": "DOCTOR_001_typing",
+      "name": "typing",
+      "reusable": true,
+      "loop": true,
+      "rig_bound": true,
+      "source_file": "typing.json",
+      "status": "bound"
+    },
+    "writing": {
+      "clip_id": "DOCTOR_001_writing",
+      "name": "writing",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": "typing.json",
+      "status": "bound"
+    },
+    "pointing": {
+      "clip_id": "DOCTOR_001_pointing",
+      "name": "pointing",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": "pointing.json",
+      "status": "bound"
+    },
+    "looking_around": {
+      "clip_id": "DOCTOR_001_looking_around",
+      "name": "looking_around",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": "looking_around.json",
+      "status": "bound"
+    },
+    "picking_up_objects": {
+      "clip_id": "DOCTOR_001_picking_up_objects",
+      "name": "picking_up_objects",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": "picking_up_objects.json",
+      "status": "bound"
+    },
+    "opening_doors": {
+      "clip_id": "DOCTOR_001_opening_doors",
+      "name": "opening_doors",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": "picking_up_objects.json",
+      "status": "bound"
+    },
+    "sitting": {
+      "clip_id": "DOCTOR_001_sitting",
+      "name": "sitting",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": "idle.json",
+      "status": "bound"
+    },
+    "standing": {
+      "clip_id": "DOCTOR_001_standing",
+      "name": "standing",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": "idle.json",
+      "status": "bound"
+    },
+    "reacting": {
+      "clip_id": "DOCTOR_001_reacting",
+      "name": "reacting",
+      "reusable": true,
+      "loop": false,
+      "rig_bound": true,
+      "source_file": "reactions/reaction_curiosity.json",
+      "status": "bound"
+    }
+  },
+  "animation_library_ref": "data/studio_assets/DOCTOR_001/ANIMATION/",
+  "existing_index": {
+    "clips": {
+      "idle": "idle.json",
+      "breathing": "breathing.json",
+      "blinking": "blinking.json",
+      "walking_cycle": "walking_cycle.json",
+      "running_cycle": "running_cycle.json",
+      "talking": "talking.json",
+      "pointing": "pointing.json",
+      "teaching": "teaching.json",
+      "listening": "listening.json",
+      "turning": "turning.json",
+      "stopping": "stopping.json",
+      "greeting": "greeting.json",
+      "explaining": "explaining.json",
+      "looking_around": "looking_around.json",
+      "picking_up_objects": "picking_up_objects.json",
+      "interacting_with_equipment": "interacting_with_equipment.json",
+      "holding_medical_scanner": "holding_medical_scanner.json",
+      "using_holograms": "using_holograms.json",
+      "typing": "typing.json",
+      "reaction_curiosity": "reactions/reaction_curiosity.json",
+      "reaction_concern": "reactions/reaction_concern.json",
+      "reaction_delight": "reactions/reaction_delight.json",
+      "reaction_surprise": "reactions/reaction_surprise.json",
+      "reaction_compassion": "reactions/reaction_compassion.json",
+      "reaction_determination": "reactions/reaction_determination.json",
+      "reaction_amusement": "reactions/reaction_amusement.json",
+      "reaction_realization": "reactions/reaction_realization.json"
+    },
+    "count": 27
+  },
+  "philosophy": "Actors own clips. Scenes choose actions. Never regenerate walks per episode.",
+  "reusable": true
+}

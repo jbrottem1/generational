@@ -1,0 +1,84 @@
+{
+  "title": "Omega-3 Evidence",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the complex evidence surrounding omega-3 and its health benefits.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about omega-3 evidence.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Omega-3 fatty acids are often hailed for their health benefits, but what's the real evidence?",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Some studies suggest they reduce heart disease risk, but results vary.",
+      "emotion": "curiosity",
+      "delivery": "steady and clear",
+      "retention_device": "contrast"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Recent research shows mixed results: while some trials indicate benefits, others don\u2019t support that claim.",
+      "emotion": "curiosity",
+      "delivery": "inquisitive and thoughtful",
+      "retention_device": "surprise"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "And here's a twist\u2014some evidence is still preliminary.",
+      "emotion": "curiosity",
+      "delivery": "excited and engaging",
+      "retention_device": "unexpected insight"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "So, while omega-3s might be beneficial, approach claims with caution. Science is still unfolding.",
+      "emotion": "curiosity",
+      "delivery": "confident and conclusive",
+      "retention_device": "resolution"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want more insights? Like and follow for the latest in science!",
+      "emotion": "curiosity",
+      "delivery": "inviting and encouraging",
+      "retention_device": "engagement"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about omega-3 evidence. Omega-3 fatty acids are often hailed for their health benefits, but what's the real evidence? Some studies suggest they reduce heart disease risk, but results vary. Recent research shows mixed results: while some trials indicate benefits, others don\u2019t support that claim. And here's a twist\u2014some evidence is still preliminary. So, while omega-3s might be beneficial, approach claims with caution. Science is still unfolding. Want more insights? Like and follow for the latest in science!",
+  "call_to_action": "Want more insights? Like and follow for the latest in science!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:17:42.505293+00:00",
+  "source": "ai"
+}

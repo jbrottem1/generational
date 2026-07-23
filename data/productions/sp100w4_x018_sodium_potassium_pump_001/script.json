@@ -1,0 +1,84 @@
+{
+  "title": "Sodium Potassium Pump",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "An exploration of the sodium potassium pump's critical role in cellular function.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about the sodium potassium pump.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "This tiny protein moves sodium and potassium ions across the cell membrane.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But why is this so crucial for our cells?",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "suspense"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "It helps maintain the electrochemical gradient, essential for nerve impulses and muscle contractions.",
+      "emotion": "curiosity",
+      "delivery": "clear and precise",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Without it, our bodies would struggle to function.",
+      "emotion": "curiosity",
+      "delivery": "dramatic",
+      "retention_device": "reveal"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 45.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "And here\u2019s the kicker: recent studies suggest we barely understand all its potential!",
+      "emotion": "curiosity",
+      "delivery": "intriguing",
+      "retention_device": "shocking fact"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into cellular science? Hit that like button and follow for more!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about the sodium potassium pump. This tiny protein moves sodium and potassium ions across the cell membrane. But why is this so crucial for our cells? It helps maintain the electrochemical gradient, essential for nerve impulses and muscle contractions. Without it, our bodies would struggle to function. And here\u2019s the kicker: recent studies suggest we barely understand all its potential! Want to dive deeper into cellular science? Hit that like button and follow for more!",
+  "call_to_action": "Hit that like button and follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:16:56.642653+00:00",
+  "source": "ai"
+}

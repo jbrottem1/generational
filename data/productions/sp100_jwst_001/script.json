@@ -1,0 +1,74 @@
+{
+  "title": "What JWST Sees That Hubble Can't",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the unique capabilities of the James Webb Space Telescope compared to Hubble.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "The James Webb Space Telescope sees a universe Hubble never could.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "While Hubble captures stunning optical images, JWST dives into infrared, revealing hidden cosmic secrets.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Infrared light penetrates cosmic dust, unveiling stars and galaxies forming over 13 billion years ago.",
+      "emotion": "curiosity",
+      "delivery": "building excitement",
+      "retention_device": "visual imagery"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "NASA reports JWST's ability to peer further back in time surpasses anything Hubble could achieve.",
+      "emotion": "curiosity",
+      "delivery": "confident and authoritative",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "This means we can witness the birth of galaxies, not just their present form.",
+      "emotion": "wonder",
+      "delivery": "awe-inspiring",
+      "retention_device": "revelation"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Dive deeper into the mysteries of the universe\u2014follow for more amazing space discoveries!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic and inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "The James Webb Space Telescope sees a universe Hubble never could. While Hubble captures stunning optical images, JWST dives into infrared, revealing hidden cosmic secrets. Infrared light penetrates cosmic dust, unveiling stars and galaxies forming over 13 billion years ago. NASA reports JWST's ability to peer further back in time surpasses anything Hubble could achieve. This means we can witness the birth of galaxies, not just their present form. Dive deeper into the mysteries of the universe\u2014follow for more amazing space discoveries!",
+  "call_to_action": "Dive deeper into the mysteries of the universe\u2014follow for more amazing space discoveries!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:40:20.171526+00:00",
+  "source": "ai"
+}

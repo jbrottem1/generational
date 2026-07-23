@@ -1,0 +1,32 @@
+{
+  "project": "Project Fluid Motion",
+  "title": "You Are Made of Cells",
+  "generated_at": "2026-07-11T04:00:53.216826+00:00",
+  "success": true,
+  "duration_sec": 20.546,
+  "in_target_20_30": true,
+  "render_time_sec": 11.7,
+  "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Fluid_Motion_Benchmark_You_Are_Made_Of_Cells.mp4",
+  "export_bytes": 537415,
+  "demo_id": "fluid_cells",
+  "motion_engine": "fluid_motion",
+  "qc": {
+    "passed": true,
+    "purposeful_gestures": true,
+    "idle_ratio": 0.521,
+    "walk_ratio": 0.079,
+    "gesture_counts": {
+      "idle": 257,
+      "think": 29,
+      "point": 168,
+      "present": 39
+    }
+  },
+  "judge": [
+    "animation",
+    "flow",
+    "performance",
+    "teaching",
+    "synchronization"
+  ]
+}

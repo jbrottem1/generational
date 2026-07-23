@@ -1,0 +1,74 @@
+{
+  "title": "Sniffing Exoplanet Atmospheres",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring how starlight reveals the composition of distant exoplanet atmospheres.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if we could sniff the air of distant planets?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "When an exoplanet crosses its star, starlight filters through its atmosphere.",
+      "emotion": "intrigue",
+      "delivery": "steady and engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "evidence",
+      "voiceover": "This process, called transmission spectroscopy, helps us detect molecules like water and methane.",
+      "emotion": "wonder",
+      "delivery": "enthusiastic",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "escalation",
+      "voiceover": "Each molecule absorbs specific wavelengths, acting like a cosmic fingerprint.",
+      "emotion": "excitement",
+      "delivery": "dynamic and fast-paced",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "This groundbreaking method could reveal the potential for life beyond Earth.",
+      "emotion": "hope",
+      "delivery": "uplifting and inspiring",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about what else we can discover in the cosmos? Hit like and follow for more insights!",
+      "emotion": "encouragement",
+      "delivery": "enthusiastic and inviting",
+      "retention_device": "natural CTA"
+    }
+  ],
+  "full_voiceover": "What if we could sniff the air of distant planets? When an exoplanet crosses its star, starlight filters through its atmosphere. This process, called transmission spectroscopy, helps us detect molecules like water and methane. Each molecule absorbs specific wavelengths, acting like a cosmic fingerprint. This groundbreaking method could reveal the potential for life beyond Earth. Curious about what else we can discover in the cosmos? Hit like and follow for more insights!",
+  "call_to_action": "Hit like and follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:02:23.168846+00:00",
+  "source": "ai"
+}

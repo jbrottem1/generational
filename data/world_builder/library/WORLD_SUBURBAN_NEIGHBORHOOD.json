@@ -1,0 +1,163 @@
+{
+  "world_id": "WORLD_SUBURBAN_NEIGHBORHOOD",
+  "world_type": "Suburban Neighborhood",
+  "name": "Persistent Suburban Neighborhood",
+  "theme": "quiet daytime residential street with municipal fire infrastructure",
+  "scale": "neighborhood",
+  "historical_accuracy": 80,
+  "environment": {
+    "description": "Sunlit American suburban street: asphalt road, concrete sidewalks, parked cars, oak trees, lawns, painted fire hydrants, utility spray marks, a small park corner, and a fire station two blocks down.",
+    "continuity_key": "WORLD_SUBURBAN_NEIGHBORHOOD",
+    "do_not_replace_mid_episode": true,
+    "time_of_day": "daytime",
+    "lighting": "bright midday sun with soft tree-shadow dapples"
+  },
+  "architecture": [
+    "single-family houses",
+    "concrete sidewalks",
+    "asphalt residential street",
+    "neighborhood park",
+    "municipal fire station facade"
+  ],
+  "weather": "clear mild day",
+  "zones": [
+    {
+      "id": "street_corner",
+      "name": "Residential Street Corner",
+      "description": "Three differently colored hydrants visible on one corner; sidewalk + curb",
+      "ambient_activity": [
+        "distant lawn mower",
+        "leaf shimmer",
+        "parked mail truck idle"
+      ]
+    },
+    {
+      "id": "sidewalk_hydrant",
+      "name": "Sidewalk Hydrant Close-Up",
+      "description": "Painted hydrant with flow-rate color bands and utility marks nearby",
+      "ambient_activity": [
+        "foot traffic shadow",
+        "sprinkler hiss distant"
+      ]
+    },
+    {
+      "id": "park_edge",
+      "name": "Neighborhood Park Edge",
+      "description": "Park lawn framing a second hydrant; playground distant soft focus",
+      "ambient_activity": [
+        "birds",
+        "kids distant",
+        "breeze in trees"
+      ]
+    },
+    {
+      "id": "fire_station",
+      "name": "Fire Station Approach",
+      "description": "Bay doors, apparatus bay, hydrant training plaque",
+      "ambient_activity": [
+        "radio chatter soft",
+        "bay door glint"
+      ]
+    },
+    {
+      "id": "utility_map",
+      "name": "Utility Markings Overlay Zone",
+      "description": "Spray-painted utility marks on sidewalk for water main diagram overlay",
+      "ambient_activity": [
+        "survey stake shadow"
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "hydrant_red",
+      "name": "Red fire hydrant",
+      "zone": "street_corner",
+      "persistent": true
+    },
+    {
+      "object_id": "hydrant_yellow",
+      "name": "Yellow fire hydrant",
+      "zone": "street_corner",
+      "persistent": true
+    },
+    {
+      "object_id": "hydrant_green",
+      "name": "Green fire hydrant",
+      "zone": "sidewalk_hydrant",
+      "persistent": true
+    },
+    {
+      "object_id": "hydrant_blue",
+      "name": "Blue fire hydrant",
+      "zone": "park_edge",
+      "persistent": true
+    },
+    {
+      "object_id": "sidewalk",
+      "name": "Concrete sidewalk",
+      "zone": "sidewalk_hydrant",
+      "persistent": true
+    },
+    {
+      "object_id": "trees",
+      "name": "Street trees",
+      "zone": "street_corner",
+      "persistent": true
+    },
+    {
+      "object_id": "park",
+      "name": "Neighborhood park",
+      "zone": "park_edge",
+      "persistent": true
+    },
+    {
+      "object_id": "fire_station",
+      "name": "Fire station",
+      "zone": "fire_station",
+      "persistent": true
+    },
+    {
+      "object_id": "utility_marks",
+      "name": "Blue utility spray markings",
+      "zone": "utility_map",
+      "persistent": true
+    }
+  ],
+  "furniture": [],
+  "background_animations": [
+    "tree leaves",
+    "heat haze soft",
+    "parked car reflections"
+  ],
+  "sound_ambience": [
+    "suburban daytime",
+    "distant birds",
+    "light traffic",
+    "lawn ambient"
+  ],
+  "color_palette": {
+    "sky": "#87CEEB",
+    "asphalt": "#3A3A3A",
+    "lawn": "#4F8A3D",
+    "hydrant_accents": [
+      "#C41E3A",
+      "#F5C400",
+      "#2E8B57",
+      "#1E90FF"
+    ]
+  },
+  "lighting": {
+    "base": "daytime sunlight",
+    "consistent_key": true
+  },
+  "design_rules": [
+    "Keep the same street geometry, trees, and hydrant placements across every scene",
+    "Vary camera (drone establish, push-in, close-up) \u2014 never replace the neighborhood",
+    "Hydrant paint colors must remain consistent with flow-rate meaning",
+    "Daytime lighting only \u2014 no night swap mid-episode"
+  ],
+  "source": "golden_production",
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-14T13:25:16.107544+00:00"
+}

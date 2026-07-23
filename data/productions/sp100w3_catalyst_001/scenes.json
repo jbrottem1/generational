@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Catalysts speed up reactions without being used up. How do they do it?",
+    "visual_description": "Hook visual: Catalysts speed up reactions without being used up. How do they do it?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Catalysts speed up reactions without being used up. How do they do it?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Catalysts speed up reactions without being used up. How do they do it?",
+    "stock_footage_query": "",
+    "text_overlay": "Catalysts speed up reactions",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "intrigue",
+    "length_sec": 8.0,
+    "narration": "In both industry and biology, they\u2019re essential. Think of them as secret agents in chemical reactions.",
+    "visual_description": "Context visual: In both industry and biology, they\u2019re essential. Think of them as secret agents in chemical reactions.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: In both industry and biology, they\u2019re essential. Think of them as secret agents in chemical reactions.",
+    "ai_video_prompt": "Cinematic motion: Context visual: In both industry and biology, they\u2019re essential. Think of them as secret agents in chemical reactions.",
+    "stock_footage_query": "",
+    "text_overlay": "In both industry and",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "excitement",
+    "length_sec": 8.0,
+    "narration": "Without catalysts, many reactions would take ages. They lower the energy needed to start, speeding up processes.",
+    "visual_description": "Escalation visual: Without catalysts, many reactions would take ages. They lower the energy needed to start, speeding up processes.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Without catalysts, many reactions would take ages. They lower the energy needed to start, speeding up processes.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Without catalysts, many reactions would take ages. They lower the energy needed to start, speeding up processes.",
+    "stock_footage_query": "",
+    "text_overlay": "Without catalysts, many reactions",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "awe",
+    "length_sec": 9.0,
+    "narration": "For example, enzymes are biological catalysts vital for digestion. Without them, we couldn\u2019t break down food.",
+    "visual_description": "Evidence visual: For example, enzymes are biological catalysts vital for digestion. Without them, we couldn\u2019t break down food.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: For example, enzymes are biological catalysts vital for digestion. Without them, we couldn\u2019t break down food.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: For example, enzymes are biological catalysts vital for digestion. Without them, we couldn\u2019t break down food.",
+    "stock_footage_query": "",
+    "text_overlay": "For example, enzymes are",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 27.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "empowerment",
+    "length_sec": 13.0,
+    "narration": "Catalysts are everywhere! They\u2019re not just in labs; they shape our world by making reactions efficient.",
+    "visual_description": "Payoff visual: Catalysts are everywhere! They\u2019re not just in labs; they shape our world by making reactions efficient.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Catalysts are everywhere! They\u2019re not just in labs; they shape our world by making reactions efficient.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Catalysts are everywhere! They\u2019re not just in labs; they shape our world by making reactions efficient.",
+    "stock_footage_query": "",
+    "text_overlay": "Catalysts are everywhere! They\u2019re",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 27.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 27.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "enthusiasm",
+    "length_sec": 20.0,
+    "narration": "Curious to learn more about chemistry? Hit that follow button for more fascinating science!",
+    "visual_description": "Cta visual: Curious to learn more about chemistry? Hit that follow button for more fascinating science!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious to learn more about chemistry? Hit that follow button for more fascinating science!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious to learn more about chemistry? Hit that follow button for more fascinating science!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

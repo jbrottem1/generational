@@ -1,0 +1,1603 @@
+{
+  "render_package_version": "2.0",
+  "render_engine_version": "1.0.0",
+  "title": "How a Mars Robot Made Oxygen",
+  "created_at": "2026-07-10T16:52:11.957014+00:00",
+  "output_format": {
+    "aspect_ratio": "9:16",
+    "resolution": {
+      "width": 1080,
+      "height": 1920
+    },
+    "container": "mp4",
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "fps": 30,
+    "orientation": "vertical",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels"
+    ]
+  },
+  "platforms": [
+    "youtube_shorts",
+    "tiktok",
+    "instagram_reels",
+    "facebook_reels"
+  ],
+  "resolution": "1080x1920",
+  "aspect_ratio": "9:16",
+  "duration_sec": 60.0,
+  "timeline": {
+    "fps": 30,
+    "total_duration_sec": 60.0,
+    "segment_count": 6,
+    "segments": [
+      {
+        "scene_id": 1,
+        "start_time": 0.0,
+        "end_time": 3.0,
+        "duration": 3.0,
+        "narration_reference": "narration/scene_1",
+        "visual_reference": "visual/scene_1",
+        "caption_reference": "captions/scene_1",
+        "audio_reference": "audio/scene_1",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "quick_punch_in",
+        "overlay_text": "Did you know a",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 2,
+        "start_time": 3.0,
+        "end_time": 10.0,
+        "duration": 7.0,
+        "narration_reference": "narration/scene_2",
+        "visual_reference": "visual/scene_2",
+        "caption_reference": "captions/scene_2",
+        "audio_reference": "audio/scene_2",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Meet MOXIE. It\u2019s NASA's",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 3,
+        "start_time": 10.0,
+        "end_time": 17.0,
+        "duration": 7.0,
+        "narration_reference": "narration/scene_3",
+        "visual_reference": "visual/scene_3",
+        "caption_reference": "captions/scene_3",
+        "audio_reference": "audio/scene_3",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "This is a major",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 4,
+        "start_time": 17.0,
+        "end_time": 25.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_4",
+        "visual_reference": "visual/scene_4",
+        "caption_reference": "captions/scene_4",
+        "audio_reference": "audio/scene_4",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Using solid oxide electrolysis,",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 5,
+        "start_time": 25.0,
+        "end_time": 35.0,
+        "duration": 10.0,
+        "narration_reference": "narration/scene_5",
+        "visual_reference": "visual/scene_5",
+        "caption_reference": "captions/scene_5",
+        "audio_reference": "audio/scene_5",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "But remember, it's just",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 6,
+        "start_time": 35.0,
+        "end_time": 60.0,
+        "duration": 25.0,
+        "narration_reference": "narration/scene_6",
+        "visual_reference": "visual/scene_6",
+        "caption_reference": "captions/scene_6",
+        "audio_reference": "audio/scene_6",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Curious about Mars? Hit",
+        "render_status": "planned"
+      }
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "scene_render_plan": [
+    {
+      "scene_id": 1,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Hook visual: Did you know a robot on Mars just made oxygen?",
+      "video_prompt": "Cinematic motion: Hook visual: Did you know a robot on Mars just made oxygen?",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "subtle push",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "quick_punch_in",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.188
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 70
+      },
+      "text_overlays": [
+        {
+          "text": "Did you know a",
+          "treatment": "",
+          "start_sec": 0.0,
+          "end_sec": 3.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "bass hit",
+          "at_sec": 0.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Did you know a robot on Mars just made oxygen?",
+      "duration_sec": 3.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Hook visual: Did you know a robot on Mars just made oxygen?",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 1
+      }
+    },
+    {
+      "scene_id": 2,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Context visual: Meet MOXIE. It\u2019s NASA's experiment that turned carbon dioxide into oxygen.",
+      "video_prompt": "Cinematic motion: Context visual: Meet MOXIE. It\u2019s NASA's experiment that turned carbon dioxide into oxygen.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Meet MOXIE. It\u2019s NASA's",
+          "treatment": "",
+          "start_sec": 3.0,
+          "end_sec": 10.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 3.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Meet MOXIE. It\u2019s NASA's experiment that turned carbon dioxide into oxygen.",
+      "duration_sec": 7.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Context visual: Meet MOXIE. It\u2019s NASA's experiment that turned carbon dioxide into oxygen.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 2
+      }
+    },
+    {
+      "scene_id": 3,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Escalation visual: This is a major step for future Mars missions. Imagine astronauts breathing on the Red Planet!",
+      "video_prompt": "Cinematic motion: Escalation visual: This is a major step for future Mars missions. Imagine astronauts breathing on the Red Planet!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "This is a major",
+          "treatment": "",
+          "start_sec": 10.0,
+          "end_sec": 17.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 10.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "This is a major step for future Mars missions. Imagine astronauts breathing on the Red Planet!",
+      "duration_sec": 7.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Escalation visual: This is a major step for future Mars missions. Imagine astronauts breathing on the Red Planet!",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 3
+      }
+    },
+    {
+      "scene_id": 4,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Evidence visual: Using solid oxide electrolysis, MOXIE produces oxygen from the air, proving in-situ resource utilization is possible.",
+      "video_prompt": "Cinematic motion: Evidence visual: Using solid oxide electrolysis, MOXIE produces oxygen from the air, proving in-situ resource utilization is possible.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Using solid oxide electrolysis,",
+          "treatment": "",
+          "start_sec": 17.0,
+          "end_sec": 25.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 17.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Using solid oxide electrolysis, MOXIE produces oxygen from the air, proving in-situ resource utilization is possible.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Evidence visual: Using solid oxide electrolysis, MOXIE produces oxygen from the air, proving in-situ resource utilization is possible.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 4
+      }
+    },
+    {
+      "scene_id": 5,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Payoff visual: But remember, it's just a demo and not a full life-support system... yet!",
+      "video_prompt": "Cinematic motion: Payoff visual: But remember, it's just a demo and not a full life-support system... yet!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "But remember, it's just",
+          "treatment": "",
+          "start_sec": 25.0,
+          "end_sec": 35.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 25.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "But remember, it's just a demo and not a full life-support system... yet!",
+      "duration_sec": 10.0,
+      "resolved_asset": {}
+    },
+    {
+      "scene_id": 6,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Cta visual: Curious about Mars? Hit like and follow for more mind-blowing science!",
+      "video_prompt": "Cinematic motion: Cta visual: Curious about Mars? Hit like and follow for more mind-blowing science!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Curious about Mars? Hit",
+          "treatment": "",
+          "start_sec": 35.0,
+          "end_sec": 60.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 35.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Curious about Mars? Hit like and follow for more mind-blowing science!",
+      "duration_sec": 25.0,
+      "resolved_asset": {}
+    }
+  ],
+  "caption_render_plan": {
+    "mode": "word_by_word",
+    "style_preset": "bold_pop",
+    "style": {
+      "font": "Montserrat ExtraBold",
+      "size_pct": 4.8,
+      "fill": "#FFFFFF",
+      "stroke": "#000000",
+      "stroke_width_px": 6,
+      "emphasis_fill": "#FFD400",
+      "animation": "word pop 1.08x on entry",
+      "case": "upper"
+    },
+    "available_presets": [
+      "bold_pop",
+      "clean_minimal",
+      "karaoke_highlight",
+      "documentary_lower_third"
+    ],
+    "safe_area": {
+      "top_pct": 12.0,
+      "bottom_pct": 20.0,
+      "left_pct": 6.0,
+      "right_pct": 12.0
+    },
+    "platform_layouts": {
+      "youtube_shorts": {
+        "anchor_y_pct": 68.0,
+        "notes": "clear the title/channel block at the bottom"
+      },
+      "tiktok": {
+        "anchor_y_pct": 64.0,
+        "notes": "clear caption + music marquee, keep off the right rail"
+      },
+      "instagram_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "clear the audio attribution row"
+      },
+      "facebook_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "mirror the Reels layout"
+      }
+    },
+    "segments": [
+      {
+        "scene_id": 1,
+        "mode": "word_by_word",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "sentence": "Did you know a robot on Mars just made oxygen?",
+        "words": [
+          {
+            "word": "Did",
+            "start_sec": 0.0,
+            "end_sec": 0.27,
+            "emphasis": false
+          },
+          {
+            "word": "you",
+            "start_sec": 0.27,
+            "end_sec": 0.54,
+            "emphasis": false
+          },
+          {
+            "word": "know",
+            "start_sec": 0.54,
+            "end_sec": 0.86,
+            "emphasis": false
+          },
+          {
+            "word": "a",
+            "start_sec": 0.86,
+            "end_sec": 1.02,
+            "emphasis": false
+          },
+          {
+            "word": "robot",
+            "start_sec": 1.02,
+            "end_sec": 1.39,
+            "emphasis": false
+          },
+          {
+            "word": "on",
+            "start_sec": 1.39,
+            "end_sec": 1.61,
+            "emphasis": false
+          },
+          {
+            "word": "Mars",
+            "start_sec": 1.61,
+            "end_sec": 1.93,
+            "emphasis": false
+          },
+          {
+            "word": "just",
+            "start_sec": 1.93,
+            "end_sec": 2.25,
+            "emphasis": false
+          },
+          {
+            "word": "made",
+            "start_sec": 2.25,
+            "end_sec": 2.57,
+            "emphasis": false
+          },
+          {
+            "word": "oxygen",
+            "start_sec": 2.57,
+            "end_sec": 3.0,
+            "emphasis": true
+          }
+        ],
+        "emphasis_words": [
+          "oxygen"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 2,
+        "mode": "word_by_word",
+        "start_sec": 3.0,
+        "end_sec": 10.0,
+        "sentence": "Meet MOXIE. It\u2019s NASA's experiment that turned carbon dioxide into oxygen.",
+        "words": [
+          {
+            "word": "Meet",
+            "start_sec": 3.0,
+            "end_sec": 3.49,
+            "emphasis": false
+          },
+          {
+            "word": "MOXIE",
+            "start_sec": 3.49,
+            "end_sec": 4.07,
+            "emphasis": false
+          },
+          {
+            "word": "It",
+            "start_sec": 4.07,
+            "end_sec": 4.4,
+            "emphasis": false
+          },
+          {
+            "word": "s",
+            "start_sec": 4.4,
+            "end_sec": 4.65,
+            "emphasis": false
+          },
+          {
+            "word": "NASA's",
+            "start_sec": 4.65,
+            "end_sec": 5.31,
+            "emphasis": false
+          },
+          {
+            "word": "experiment",
+            "start_sec": 5.31,
+            "end_sec": 6.29,
+            "emphasis": true
+          },
+          {
+            "word": "that",
+            "start_sec": 6.29,
+            "end_sec": 6.79,
+            "emphasis": false
+          },
+          {
+            "word": "turned",
+            "start_sec": 6.79,
+            "end_sec": 7.45,
+            "emphasis": false
+          },
+          {
+            "word": "carbon",
+            "start_sec": 7.45,
+            "end_sec": 8.11,
+            "emphasis": false
+          },
+          {
+            "word": "dioxide",
+            "start_sec": 8.11,
+            "end_sec": 8.85,
+            "emphasis": true
+          },
+          {
+            "word": "into",
+            "start_sec": 8.85,
+            "end_sec": 9.34,
+            "emphasis": false
+          },
+          {
+            "word": "oxygen",
+            "start_sec": 9.34,
+            "end_sec": 10.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "dioxide",
+          "experiment"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 3,
+        "mode": "word_by_word",
+        "start_sec": 10.0,
+        "end_sec": 17.0,
+        "sentence": "This is a major step for future Mars missions. Imagine astronauts breathing on the Red Planet!",
+        "words": [
+          {
+            "word": "This",
+            "start_sec": 10.0,
+            "end_sec": 10.39,
+            "emphasis": false
+          },
+          {
+            "word": "is",
+            "start_sec": 10.39,
+            "end_sec": 10.64,
+            "emphasis": false
+          },
+          {
+            "word": "a",
+            "start_sec": 10.64,
+            "end_sec": 10.83,
+            "emphasis": false
+          },
+          {
+            "word": "major",
+            "start_sec": 10.83,
+            "end_sec": 11.28,
+            "emphasis": false
+          },
+          {
+            "word": "step",
+            "start_sec": 11.28,
+            "end_sec": 11.67,
+            "emphasis": false
+          },
+          {
+            "word": "for",
+            "start_sec": 11.67,
+            "end_sec": 11.99,
+            "emphasis": false
+          },
+          {
+            "word": "future",
+            "start_sec": 11.99,
+            "end_sec": 12.5,
+            "emphasis": false
+          },
+          {
+            "word": "Mars",
+            "start_sec": 12.5,
+            "end_sec": 12.89,
+            "emphasis": false
+          },
+          {
+            "word": "missions",
+            "start_sec": 12.89,
+            "end_sec": 13.53,
+            "emphasis": false
+          },
+          {
+            "word": "Imagine",
+            "start_sec": 13.53,
+            "end_sec": 14.11,
+            "emphasis": false
+          },
+          {
+            "word": "astronauts",
+            "start_sec": 14.11,
+            "end_sec": 14.88,
+            "emphasis": true
+          },
+          {
+            "word": "breathing",
+            "start_sec": 14.88,
+            "end_sec": 15.59,
+            "emphasis": true
+          },
+          {
+            "word": "on",
+            "start_sec": 15.59,
+            "end_sec": 15.84,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 15.84,
+            "end_sec": 16.17,
+            "emphasis": false
+          },
+          {
+            "word": "Red",
+            "start_sec": 16.17,
+            "end_sec": 16.49,
+            "emphasis": false
+          },
+          {
+            "word": "Planet",
+            "start_sec": 16.49,
+            "end_sec": 17.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "astronauts",
+          "breathing"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 4,
+        "mode": "word_by_word",
+        "start_sec": 17.0,
+        "end_sec": 25.0,
+        "sentence": "Using solid oxide electrolysis, MOXIE produces oxygen from the air, proving in-situ resource utilization is possible.",
+        "words": [
+          {
+            "word": "Using",
+            "start_sec": 17.0,
+            "end_sec": 17.43,
+            "emphasis": false
+          },
+          {
+            "word": "solid",
+            "start_sec": 17.43,
+            "end_sec": 17.85,
+            "emphasis": false
+          },
+          {
+            "word": "oxide",
+            "start_sec": 17.85,
+            "end_sec": 18.28,
+            "emphasis": false
+          },
+          {
+            "word": "electrolysis",
+            "start_sec": 18.28,
+            "end_sec": 19.14,
+            "emphasis": true
+          },
+          {
+            "word": "MOXIE",
+            "start_sec": 19.14,
+            "end_sec": 19.56,
+            "emphasis": false
+          },
+          {
+            "word": "produces",
+            "start_sec": 19.56,
+            "end_sec": 20.18,
+            "emphasis": false
+          },
+          {
+            "word": "oxygen",
+            "start_sec": 20.18,
+            "end_sec": 20.66,
+            "emphasis": false
+          },
+          {
+            "word": "from",
+            "start_sec": 20.66,
+            "end_sec": 21.03,
+            "emphasis": false
+          },
+          {
+            "word": "the",
+            "start_sec": 21.03,
+            "end_sec": 21.34,
+            "emphasis": false
+          },
+          {
+            "word": "air",
+            "start_sec": 21.34,
+            "end_sec": 21.64,
+            "emphasis": false
+          },
+          {
+            "word": "proving",
+            "start_sec": 21.64,
+            "end_sec": 22.19,
+            "emphasis": false
+          },
+          {
+            "word": "in-situ",
+            "start_sec": 22.19,
+            "end_sec": 22.74,
+            "emphasis": false
+          },
+          {
+            "word": "resource",
+            "start_sec": 22.74,
+            "end_sec": 23.35,
+            "emphasis": false
+          },
+          {
+            "word": "utilization",
+            "start_sec": 23.35,
+            "end_sec": 24.15,
+            "emphasis": true
+          },
+          {
+            "word": "is",
+            "start_sec": 24.15,
+            "end_sec": 24.39,
+            "emphasis": false
+          },
+          {
+            "word": "possible",
+            "start_sec": 24.39,
+            "end_sec": 25.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "electrolysis",
+          "utilization"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 5,
+        "mode": "word_by_word",
+        "start_sec": 25.0,
+        "end_sec": 35.0,
+        "sentence": "But remember, it's just a demo and not a full life-support system... yet!",
+        "words": [
+          {
+            "word": "But",
+            "start_sec": 25.0,
+            "end_sec": 25.61,
+            "emphasis": false
+          },
+          {
+            "word": "remember",
+            "start_sec": 25.61,
+            "end_sec": 26.83,
+            "emphasis": true
+          },
+          {
+            "word": "it's",
+            "start_sec": 26.83,
+            "end_sec": 27.56,
+            "emphasis": false
+          },
+          {
+            "word": "just",
+            "start_sec": 27.56,
+            "end_sec": 28.29,
+            "emphasis": false
+          },
+          {
+            "word": "a",
+            "start_sec": 28.29,
+            "end_sec": 28.66,
+            "emphasis": false
+          },
+          {
+            "word": "demo",
+            "start_sec": 28.66,
+            "end_sec": 29.39,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 29.39,
+            "end_sec": 30.0,
+            "emphasis": false
+          },
+          {
+            "word": "not",
+            "start_sec": 30.0,
+            "end_sec": 30.61,
+            "emphasis": false
+          },
+          {
+            "word": "a",
+            "start_sec": 30.61,
+            "end_sec": 30.98,
+            "emphasis": false
+          },
+          {
+            "word": "full",
+            "start_sec": 30.98,
+            "end_sec": 31.71,
+            "emphasis": false
+          },
+          {
+            "word": "life-support",
+            "start_sec": 31.71,
+            "end_sec": 33.41,
+            "emphasis": true
+          },
+          {
+            "word": "system",
+            "start_sec": 33.41,
+            "end_sec": 34.39,
+            "emphasis": false
+          },
+          {
+            "word": "yet",
+            "start_sec": 34.39,
+            "end_sec": 35.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "life-support",
+          "remember"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 6,
+        "mode": "word_by_word",
+        "start_sec": 35.0,
+        "end_sec": 60.0,
+        "sentence": "Curious about Mars? Hit like and follow for more mind-blowing science!",
+        "words": [
+          {
+            "word": "Curious",
+            "start_sec": 35.0,
+            "end_sec": 37.81,
+            "emphasis": false
+          },
+          {
+            "word": "about",
+            "start_sec": 37.81,
+            "end_sec": 40.0,
+            "emphasis": false
+          },
+          {
+            "word": "Mars",
+            "start_sec": 40.0,
+            "end_sec": 41.88,
+            "emphasis": false
+          },
+          {
+            "word": "Hit",
+            "start_sec": 41.88,
+            "end_sec": 43.44,
+            "emphasis": false
+          },
+          {
+            "word": "like",
+            "start_sec": 43.44,
+            "end_sec": 45.31,
+            "emphasis": false
+          },
+          {
+            "word": "and",
+            "start_sec": 45.31,
+            "end_sec": 46.88,
+            "emphasis": false
+          },
+          {
+            "word": "follow",
+            "start_sec": 46.88,
+            "end_sec": 49.38,
+            "emphasis": false
+          },
+          {
+            "word": "for",
+            "start_sec": 49.38,
+            "end_sec": 50.94,
+            "emphasis": false
+          },
+          {
+            "word": "more",
+            "start_sec": 50.94,
+            "end_sec": 52.81,
+            "emphasis": false
+          },
+          {
+            "word": "mind-blowing",
+            "start_sec": 52.81,
+            "end_sec": 57.19,
+            "emphasis": true
+          },
+          {
+            "word": "science",
+            "start_sec": 57.19,
+            "end_sec": 60.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "mind-blowing"
+        ],
+        "placement": "bottom third, safe zone"
+      }
+    ]
+  },
+  "audio_mix_plan": {
+    "duration_sec": 60.0,
+    "tracks": {
+      "narration": {
+        "level_db": -3.0,
+        "voice_style": {},
+        "segments": [
+          {
+            "scene_id": 1,
+            "start_sec": 0.0,
+            "end_sec": 3.0,
+            "text": "Did you know a robot on Mars just made oxygen?",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w2_Perseverance_oxygen_001/voice.mp3"
+          },
+          {
+            "scene_id": 2,
+            "start_sec": 3.0,
+            "end_sec": 10.0,
+            "text": "Meet MOXIE. It\u2019s NASA's experiment that turned carbon dioxide into oxygen.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w2_Perseverance_oxygen_001/voice.mp3"
+          },
+          {
+            "scene_id": 3,
+            "start_sec": 10.0,
+            "end_sec": 17.0,
+            "text": "This is a major step for future Mars missions. Imagine astronauts breathing on the Red Planet!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w2_Perseverance_oxygen_001/voice.mp3"
+          },
+          {
+            "scene_id": 4,
+            "start_sec": 17.0,
+            "end_sec": 25.0,
+            "text": "Using solid oxide electrolysis, MOXIE produces oxygen from the air, proving in-situ resource utilization is possible.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w2_Perseverance_oxygen_001/voice.mp3"
+          },
+          {
+            "scene_id": 5,
+            "start_sec": 25.0,
+            "end_sec": 35.0,
+            "text": "But remember, it's just a demo and not a full life-support system... yet!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w2_Perseverance_oxygen_001/voice.mp3"
+          },
+          {
+            "scene_id": 6,
+            "start_sec": 35.0,
+            "end_sec": 60.0,
+            "text": "Curious about Mars? Hit like and follow for more mind-blowing science!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/sp100w2_Perseverance_oxygen_001/voice.mp3"
+          }
+        ]
+      },
+      "music": {
+        "level_db": -18.0,
+        "style": "mission engineering",
+        "bpm_range": [
+          90,
+          120
+        ],
+        "energy_curve": [
+          "rise",
+          "sustain",
+          "resolve"
+        ],
+        "ducking": {
+          "enabled": true,
+          "trigger": "narration",
+          "duck_to_db": -26.0,
+          "attack_ms": 150,
+          "release_ms": 400
+        }
+      },
+      "sfx": {
+        "level_db": -10.0,
+        "cues": [
+          {
+            "scene_id": 1,
+            "cue": "bass hit",
+            "at_sec": 0.0
+          },
+          {
+            "scene_id": 2,
+            "cue": "whoosh",
+            "at_sec": 3.0
+          },
+          {
+            "scene_id": 3,
+            "cue": "whoosh",
+            "at_sec": 10.0
+          },
+          {
+            "scene_id": 4,
+            "cue": "whoosh",
+            "at_sec": 17.0
+          },
+          {
+            "scene_id": 5,
+            "cue": "whoosh",
+            "at_sec": 25.0
+          },
+          {
+            "scene_id": 6,
+            "cue": "whoosh",
+            "at_sec": 35.0
+          }
+        ]
+      },
+      "transitions": {
+        "level_db": -12.0,
+        "cues": []
+      }
+    },
+    "silence_drops": [
+      {
+        "scene_id": 5,
+        "at_sec": 24.6,
+        "duration_sec": 0.4,
+        "reason": "drop the full mix before the payoff beat"
+      }
+    ],
+    "loudness_target": {
+      "standard": "platform_safe_placeholder",
+      "integrated_lufs": -14.0,
+      "true_peak_db": -1.0,
+      "notes": "Verify with a real loudness pass when actual audio is rendered."
+    }
+  },
+  "transition_plan": {
+    "supported_types": [
+      "cut",
+      "fade",
+      "push",
+      "zoom",
+      "whip_pan",
+      "glitch",
+      "flash",
+      "documentary_slow_zoom",
+      "cinematic_push_in",
+      "quick_cut"
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "motion_plan": [
+    {
+      "scene_id": 1,
+      "effect": "quick_punch_in",
+      "intensity": 70,
+      "duration_sec": 3.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.188
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_out"
+    },
+    {
+      "scene_id": 2,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 7.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 3,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 7.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 4,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 5,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 10.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 6,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 25.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    }
+  ],
+  "asset_requirements": [],
+  "missing_assets": [],
+  "render_warnings": [],
+  "estimated_render_duration_sec": 60.0,
+  "production_readiness_score": 100,
+  "validation": {
+    "status": "SUCCESS",
+    "checks": [
+      {
+        "check": "scenes_present",
+        "passed": true,
+        "detail": "6 scenes in the plan."
+      },
+      {
+        "check": "scenes_have_visuals",
+        "passed": true,
+        "detail": "Every scene has a visual asset or prompt."
+      },
+      {
+        "check": "scenes_have_narration",
+        "passed": true,
+        "detail": "Every scene has narration."
+      },
+      {
+        "check": "captions_exist",
+        "passed": true,
+        "detail": "6 caption segments planned."
+      },
+      {
+        "check": "audio_plan_exists",
+        "passed": true,
+        "detail": "Audio mix plan covers narration/music/SFX tracks."
+      },
+      {
+        "check": "runtime_reasonable",
+        "passed": true,
+        "detail": "Total runtime 60.0s is inside the 5.0-180.0s short-form window."
+      },
+      {
+        "check": "output_format_supported",
+        "passed": true,
+        "detail": "9:16 1080x1920 MP4 \u2014 supported."
+      },
+      {
+        "check": "assets_resolved",
+        "passed": true,
+        "detail": "All asset requests were fulfilled."
+      }
+    ],
+    "problems": [],
+    "production_readiness_score": 100
+  },
+  "render_status": "SUCCESS",
+  "mock_output_path": "data/productions/sp100w2_Perseverance_oxygen_001/render.mp4",
+  "output_path": "data/productions/sp100w2_Perseverance_oxygen_001/render.mp4",
+  "mp4_path": "data/productions/sp100w2_Perseverance_oxygen_001/render.mp4",
+  "file_uri": "data/productions/sp100w2_Perseverance_oxygen_001/render.mp4",
+  "render_log": [
+    "color_bed\u2192mp4 (no visual assets resolved)",
+    "ffmpeg_exit=0"
+  ],
+  "render_job": {},
+  "mock": false,
+  "assembly": {
+    "ok": true,
+    "mock": false,
+    "error": "",
+    "output_path": "data/productions/sp100w2_Perseverance_oxygen_001/render.mp4",
+    "absolute_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w2_Perseverance_oxygen_001/render.mp4",
+    "bytes": 374564,
+    "duration_sec": 60.0,
+    "resolution": "1080x1920",
+    "ffmpeg": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/venv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "log": [
+      "color_bed\u2192mp4 (no visual assets resolved)",
+      "ffmpeg_exit=0"
+    ],
+    "visual_count": 0,
+    "has_audio": true,
+    "manifest": {
+      "title": "How a Mars Robot Made Oxygen",
+      "format": {
+        "aspect_ratio": "9:16",
+        "resolution": {
+          "width": 1080,
+          "height": 1920
+        },
+        "container": "mp4",
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "fps": 30,
+        "orientation": "vertical",
+        "platforms": [
+          "youtube_shorts",
+          "tiktok",
+          "instagram_reels",
+          "facebook_reels"
+        ]
+      },
+      "visuals": [],
+      "audio": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/sp100w2_Perseverance_oxygen_001/voice.mp3"
+    }
+  },
+  "render_manifest": {
+    "scenes": 6,
+    "timeline_segments": 6,
+    "caption_segments": 6,
+    "audio_tracks": [
+      "narration",
+      "music",
+      "sfx",
+      "transitions"
+    ],
+    "transitions": 5,
+    "assets_requested": 0,
+    "assets_missing": 0,
+    "warnings": 0,
+    "readiness": 100,
+    "ready_for_publishing": true,
+    "real_mp4": true
+  }
+}

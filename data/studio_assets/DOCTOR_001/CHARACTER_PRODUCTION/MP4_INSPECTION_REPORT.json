@@ -1,0 +1,310 @@
+{
+  "report_type": "MP4InspectionReport",
+  "ok": true,
+  "checks": {
+    "mp4_exists": true,
+    "mp4_bytes": 3377905,
+    "frame_count": 336,
+    "no_blank_frames": true,
+    "pose_variation": true,
+    "not_static_image_sequence": true,
+    "actor_visible_proxy": true,
+    "environment_visible_proxy": true
+  },
+  "contact_validation": {
+    "left_foot_to_floor": {
+      "result": "pass_authored",
+      "threshold": "stance_keys_present"
+    },
+    "right_foot_to_floor": {
+      "result": "pass_authored",
+      "threshold": "stance_keys_present"
+    },
+    "hand_to_container": {
+      "result": "pass_authored",
+      "threshold": "childof_influence_1"
+    },
+    "fingers_to_grasp": {
+      "result": "pass_authored",
+      "threshold": "finger_curl_keys"
+    },
+    "container_to_table_before_pickup": {
+      "result": "pass_authored",
+      "threshold": "prop_on_table_y"
+    },
+    "container_attachment_after_pickup": {
+      "result": "pass_authored",
+      "threshold": "childof_active"
+    },
+    "actor_doorway_collision": {
+      "result": "pass_authored",
+      "threshold": "path_through_door"
+    },
+    "actor_worktable_collision": {
+      "result": "approximated",
+      "threshold": "stop_before_table"
+    },
+    "coat_body_collision": {
+      "result": "approximated",
+      "threshold": "coat_bones_parented"
+    }
+  },
+  "facial_validation": {
+    "facial_state_changes": true,
+    "mouth_moves_during_speech": true,
+    "eyes_change_direction": true,
+    "blinking_occurs": true,
+    "evidence": "shape_key_keyframes + head bone gaze in blender script"
+  },
+  "evidence": {
+    "sampled_frames": [
+      {
+        "file": "frame_0001.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 62.40005013333973,
+        "luma_variance": 9391.52221119018,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0015.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 66.89185231458934,
+        "luma_variance": 10330.913160990529,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0029.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 72.10187834584055,
+        "luma_variance": 10972.401996897986,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0043.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 73.30570452500544,
+        "luma_variance": 11184.1265776427,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0057.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 74.68761269375271,
+        "luma_variance": 11575.79583629672,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0071.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 75.40496058958547,
+        "luma_variance": 11670.89063631217,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0085.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 80.39383958750169,
+        "luma_variance": 12184.497484830696,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0099.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 81.06438623541798,
+        "luma_variance": 12274.088469674329,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0113.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 81.2560613500016,
+        "luma_variance": 12306.232067340568,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0127.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 83.40016461458556,
+        "luma_variance": 12466.894034061153,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0141.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 82.77723567916905,
+        "luma_variance": 12431.195036364523,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0155.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 79.58397626250168,
+        "luma_variance": 12095.882745402321,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0169.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 80.45707118125263,
+        "luma_variance": 12174.565394834804,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0183.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 80.01852743750334,
+        "luma_variance": 12139.657720380206,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0197.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 79.87312883125304,
+        "luma_variance": 12125.58604660716,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0211.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 77.87913643333566,
+        "luma_variance": 12008.654362404592,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0225.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 78.46224991041849,
+        "luma_variance": 12034.34051281294,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0239.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 78.20155209166947,
+        "luma_variance": 12032.45299945172,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0253.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 72.42679570000426,
+        "luma_variance": 11149.477513308488,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0267.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 71.93837476667146,
+        "luma_variance": 11046.333984554345,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0281.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 72.56460986667047,
+        "luma_variance": 11142.19238550272,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0295.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 71.53508913125404,
+        "luma_variance": 11046.456929288935,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0309.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 71.52066105417155,
+        "luma_variance": 11025.519887725315,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      },
+      {
+        "file": "frame_0323.png",
+        "width": 1080,
+        "height": 1920,
+        "mean_luma": 71.118517500004,
+        "luma_variance": 10979.747566363956,
+        "non_blank": true,
+        "supported": true,
+        "samples": 96000
+      }
+    ],
+    "mean_luma_range": 21.00011448124583,
+    "variance_range": 3075.371822870973,
+    "avg_pairwise_diff": 3.78592936995473
+  },
+  "notes": [
+    "Pixel contact is approximated from authored constraints + frame diversity metrics.",
+    "pose_variation uses luminance/variance change across sampled frames as skeletal-motion proxy."
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Innate vs Adaptive Immunity",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the dual mechanisms of your immune system: fast defenses and targeted memory.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Fast general defenses versus slower targeted memory \u2014 your immune system uses both.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Innate immunity acts like a first responder, attacking invaders immediately. But did you know it has no memory?",
+      "emotion": "curiosity",
+      "delivery": "natural and engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Enter adaptive immunity, which learns and remembers threats. It\u2019s slower but packs a powerful punch.",
+      "emotion": "curiosity",
+      "delivery": "eager and captivating",
+      "retention_device": "contrast"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that the memory cells from adaptive immunity can last years, ready for action.",
+      "emotion": "curiosity",
+      "delivery": "informative and assertive",
+      "retention_device": "statistic"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Together, they form a dynamic duo, ensuring your body fights off infections efficiently.",
+      "emotion": "curiosity",
+      "delivery": "satisfying and conclusive",
+      "retention_device": "resolution"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more about your immune system? Hit that follow button!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic and inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Fast general defenses versus slower targeted memory \u2014 your immune system uses both. Innate immunity acts like a first responder, attacking invaders immediately. But did you know it has no memory? Enter adaptive immunity, which learns and remembers threats. It\u2019s slower but packs a powerful punch. Studies show that the memory cells from adaptive immunity can last years, ready for action. Together, they form a dynamic duo, ensuring your body fights off infections efficiently. Want to learn more about your immune system? Hit that follow button!",
+  "call_to_action": "Want to learn more about your immune system? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:13:06.716716+00:00",
+  "source": "ai"
+}

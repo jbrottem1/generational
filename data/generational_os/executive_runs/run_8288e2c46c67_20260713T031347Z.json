@@ -1,0 +1,277 @@
+{
+  "id": "8288e2c46c67",
+  "topic": "coral reefs",
+  "command": "Create a 45 second Short about coral reefs",
+  "runtime_sec": 45,
+  "platforms": [
+    "youtube_shorts"
+  ],
+  "engines_used": [
+    "discovery",
+    "trend_discovery",
+    "opportunity_ranking",
+    "trend_forecasting",
+    "market_intelligence",
+    "research",
+    "ideation",
+    "psychology",
+    "audience_intelligence",
+    "script_generation",
+    "attention_graph",
+    "ranking",
+    "script",
+    "critic",
+    "revision",
+    "citation",
+    "seo",
+    "threat_detection",
+    "quality",
+    "evidence_intelligence",
+    "visual_intelligence",
+    "cinematography",
+    "animation",
+    "voice_audio",
+    "voice",
+    "image",
+    "video",
+    "scene_planning",
+    "narration",
+    "visual_planning",
+    "asset_manager",
+    "subtitle",
+    "timeline",
+    "render_package",
+    "production_qa",
+    "publishing_queue",
+    "scheduler",
+    "publishing"
+  ],
+  "generation_time_ms": 1,
+  "qa_score": null,
+  "qa_decision": "",
+  "revision_rounds": 0,
+  "export_size_bytes": 0,
+  "export_paths": {
+    "captions": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/coral_reefs_8288e2c46c67/captions.json",
+    "description": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/coral_reefs_8288e2c46c67/description.txt",
+    "seo_metadata": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/coral_reefs_8288e2c46c67/seo_metadata.json",
+    "thumbnail": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/coral_reefs_8288e2c46c67/thumbnail_plan.json",
+    "manifest": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/coral_reefs_8288e2c46c67/EXPORT_MANIFEST.json"
+  },
+  "publish_status": "plan_only",
+  "status": "completed",
+  "error": "",
+  "created_at": "2026-07-13T03:13:47.416832+00:00",
+  "finished_at": "2026-07-13T03:13:47.418037+00:00",
+  "stages": {
+    "discovery": {
+      "key": "discovery",
+      "label": "Discovery",
+      "status": "completed",
+      "started_at": "2026-07-13T03:13:47.417123+00:00",
+      "finished_at": "2026-07-13T03:13:47.417126+00:00",
+      "duration_ms": 0,
+      "eta_sec": 25,
+      "engines_used": [
+        "discovery"
+      ],
+      "message": "planned engines=['discovery']",
+      "error": ""
+    },
+    "research": {
+      "key": "research",
+      "label": "Research",
+      "status": "completed",
+      "started_at": "2026-07-13T03:13:47.417128+00:00",
+      "finished_at": "2026-07-13T03:13:47.417130+00:00",
+      "duration_ms": 0,
+      "eta_sec": 40,
+      "engines_used": [
+        "trend_discovery",
+        "opportunity_ranking",
+        "trend_forecasting",
+        "market_intelligence",
+        "research",
+        "ideation",
+        "psychology",
+        "audience_intelligence"
+      ],
+      "message": "planned engines=['trend_discovery', 'opportunity_ranking', 'trend_forecasting', 'market_intelligence', 'research', 'ideation', 'psychology', 'audience_intelligence']",
+      "error": ""
+    },
+    "script": {
+      "key": "script",
+      "label": "Script",
+      "status": "completed",
+      "started_at": "2026-07-13T03:13:47.417133+00:00",
+      "finished_at": "2026-07-13T03:13:47.417135+00:00",
+      "duration_ms": 0,
+      "eta_sec": 35,
+      "engines_used": [
+        "script_generation",
+        "attention_graph",
+        "ranking",
+        "script",
+        "critic",
+        "revision",
+        "citation",
+        "seo",
+        "threat_detection",
+        "quality"
+      ],
+      "message": "planned engines=['script_generation', 'attention_graph', 'ranking', 'script', 'critic', 'revision', 'citation', 'seo', 'threat_detection', 'quality']",
+      "error": ""
+    },
+    "evidence": {
+      "key": "evidence",
+      "label": "Evidence",
+      "status": "completed",
+      "started_at": "2026-07-13T03:13:47.417138+00:00",
+      "finished_at": "2026-07-13T03:13:47.417140+00:00",
+      "duration_ms": 0,
+      "eta_sec": 30,
+      "engines_used": [
+        "evidence_intelligence"
+      ],
+      "message": "planned engines=['evidence_intelligence']",
+      "error": ""
+    },
+    "visuals": {
+      "key": "visuals",
+      "label": "Visuals",
+      "status": "completed",
+      "started_at": "2026-07-13T03:13:47.417142+00:00",
+      "finished_at": "2026-07-13T03:13:47.417143+00:00",
+      "duration_ms": 0,
+      "eta_sec": 35,
+      "engines_used": [
+        "visual_intelligence"
+      ],
+      "message": "planned engines=['visual_intelligence']",
+      "error": ""
+    },
+    "animation": {
+      "key": "animation",
+      "label": "Animation",
+      "status": "completed",
+      "started_at": "2026-07-13T03:13:47.417145+00:00",
+      "finished_at": "2026-07-13T03:13:47.417147+00:00",
+      "duration_ms": 0,
+      "eta_sec": 40,
+      "engines_used": [
+        "cinematography",
+        "animation"
+      ],
+      "message": "planned engines=['cinematography', 'animation']",
+      "error": ""
+    },
+    "voice": {
+      "key": "voice",
+      "label": "Voice",
+      "status": "completed",
+      "started_at": "2026-07-13T03:13:47.417149+00:00",
+      "finished_at": "2026-07-13T03:13:47.417150+00:00",
+      "duration_ms": 0,
+      "eta_sec": 45,
+      "engines_used": [
+        "voice_audio",
+        "voice"
+      ],
+      "message": "planned engines=['voice_audio', 'voice']",
+      "error": ""
+    },
+    "assembly": {
+      "key": "assembly",
+      "label": "Assembly",
+      "status": "completed",
+      "started_at": "2026-07-13T03:13:47.417152+00:00",
+      "finished_at": "2026-07-13T03:13:47.417154+00:00",
+      "duration_ms": 0,
+      "eta_sec": 90,
+      "engines_used": [
+        "image",
+        "video",
+        "scene_planning",
+        "narration",
+        "visual_planning",
+        "asset_manager",
+        "subtitle",
+        "timeline",
+        "render_package"
+      ],
+      "message": "planned engines=['image', 'video', 'scene_planning', 'narration', 'visual_planning', 'asset_manager', 'subtitle', 'timeline', 'render_package']",
+      "error": ""
+    },
+    "qa": {
+      "key": "qa",
+      "label": "QA",
+      "status": "completed",
+      "started_at": "2026-07-13T03:13:47.417158+00:00",
+      "finished_at": "2026-07-13T03:13:47.417159+00:00",
+      "duration_ms": 0,
+      "eta_sec": 15,
+      "engines_used": [
+        "production_qa"
+      ],
+      "message": "planned engines=['production_qa']",
+      "error": ""
+    },
+    "export": {
+      "key": "export",
+      "label": "Export",
+      "status": "completed",
+      "started_at": "2026-07-13T03:13:47.417161+00:00",
+      "finished_at": "2026-07-13T03:13:47.417163+00:00",
+      "duration_ms": 0,
+      "eta_sec": 20,
+      "engines_used": [],
+      "message": "planned engines=[]",
+      "error": ""
+    },
+    "publishing": {
+      "key": "publishing",
+      "label": "Publishing",
+      "status": "completed",
+      "started_at": "2026-07-13T03:13:47.417164+00:00",
+      "finished_at": "2026-07-13T03:13:47.417166+00:00",
+      "duration_ms": 0,
+      "eta_sec": 15,
+      "engines_used": [
+        "publishing_queue",
+        "scheduler",
+        "publishing"
+      ],
+      "message": "planned engines=['publishing_queue', 'scheduler', 'publishing']",
+      "error": ""
+    }
+  },
+  "artifacts": {
+    "export": {
+      "run_id": "8288e2c46c67",
+      "topic": "coral reefs",
+      "paths": {
+        "captions": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/coral_reefs_8288e2c46c67/captions.json",
+        "description": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/coral_reefs_8288e2c46c67/description.txt",
+        "seo_metadata": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/coral_reefs_8288e2c46c67/seo_metadata.json",
+        "thumbnail": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/coral_reefs_8288e2c46c67/thumbnail_plan.json",
+        "manifest": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/coral_reefs_8288e2c46c67/EXPORT_MANIFEST.json"
+      },
+      "export_size_bytes": 0,
+      "qa_decision": null,
+      "qa_score": null
+    },
+    "brief": {
+      "raw_command": "Create a 45 second Short about coral reefs",
+      "topic": "coral reefs",
+      "platforms": [
+        "youtube_shorts"
+      ],
+      "primary_platform": "youtube_shorts",
+      "runtime_sec": 45,
+      "format": "short",
+      "category": "science",
+      "goal": "educate",
+      "notes": []
+    }
+  }
+}

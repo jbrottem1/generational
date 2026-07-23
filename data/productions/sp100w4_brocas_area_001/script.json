@@ -1,0 +1,74 @@
+{
+  "title": "Broca's Area and Speech",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring how damage to Broca's area affects speech production and comprehension.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Imagine losing your ability to speak, yet understanding words perfectly.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "This can happen when Broca's area is damaged. It\u2019s located in the frontal lobe, crucial for speech production.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But here's the twist: comprehension often stays intact, highlighting the complexity of our brain's language networks.",
+      "emotion": "surprise",
+      "delivery": "engaging",
+      "retention_device": "unexpected detail"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows that language isn't just localized; it\u2019s distributed across various brain regions.",
+      "emotion": "intrigue",
+      "delivery": "insightful",
+      "retention_device": "new information"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding this helps researchers develop better therapies for those affected by language disorders.",
+      "emotion": "hopeful",
+      "delivery": "optimistic",
+      "retention_device": "benefit highlight"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more brain mysteries? Hit that follow button!",
+      "emotion": "encouragement",
+      "delivery": "friendly",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Imagine losing your ability to speak, yet understanding words perfectly. This can happen when Broca's area is damaged. It\u2019s located in the frontal lobe, crucial for speech production. But here's the twist: comprehension often stays intact, highlighting the complexity of our brain's language networks. Research shows that language isn't just localized; it\u2019s distributed across various brain regions. Understanding this helps researchers develop better therapies for those affected by language disorders. Curious about more brain mysteries? Hit that follow button!",
+  "call_to_action": "Curious about more brain mysteries? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:31:29.435384+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Asteroid Belt",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the true nature of the asteroid belt reveals surprising facts about our solar system.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about the asteroid belt than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Located between Mars and Jupiter, this region is filled with rocky remnants from our solar system's formation.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But it\u2019s not just a chaotic mess. It\u2019s home to over a million asteroids, with sizes ranging from tiny pebbles to dwarf planets!",
+      "emotion": "excitement",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Some scientists believe the asteroid belt could have been a planet, but Jupiter's gravity disrupted that possibility.",
+      "emotion": "intrigue",
+      "delivery": "thoughtful",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "So, the asteroid belt isn\u2019t just a bunch of rocks; it\u2019s a window into our cosmic past.",
+      "emotion": "wonder",
+      "delivery": "reflective",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to discover more about space? Hit that follow button for more amazing facts!",
+      "emotion": "invitation",
+      "delivery": "enthusiastic",
+      "retention_device": "clear CTA"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about the asteroid belt than social media does. Located between Mars and Jupiter, this region is filled with rocky remnants from our solar system's formation. But it\u2019s not just a chaotic mess. It\u2019s home to over a million asteroids, with sizes ranging from tiny pebbles to dwarf planets! Some scientists believe the asteroid belt could have been a planet, but Jupiter's gravity disrupted that possibility. So, the asteroid belt isn\u2019t just a bunch of rocks; it\u2019s a window into our cosmic past. Want to discover more about space? Hit that follow button for more amazing facts!",
+  "call_to_action": "Hit that follow button for more amazing facts!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:34:21.856259+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,620 @@
+{
+  "title": "Unpacking Artificial Intelligence",
+  "idea_id": "",
+  "overall_score": 73,
+  "decision": "BLOCK_EXPORT",
+  "passed": false,
+  "categories": {
+    "research_accuracy": {
+      "key": "research_accuracy",
+      "label": "Research Accuracy",
+      "score": 78,
+      "confidence": 0.65,
+      "passed": false,
+      "details": {
+        "research_confidence": 65.8,
+        "citation_count": 0,
+        "unsupported_claims": 0,
+        "sources_checked": [
+          "https://pubmed.ncbi.nlm.nih.gov/1/",
+          "https://doi.org/10.1016/j.caeai.2026.100554",
+          "https://news.example.com/what-artificial-intelligence-actually-is-in-a-educational-style,-narrator-professor-report-0",
+          "https://pubmed.ncbi.nlm.nih.gov/0/",
+          "https://tiktok.com/tag/what-artificial-intelligence-actually-is-in-a-educational-style,-narrator-professor",
+          "https://doi.org/10.64628/aa.vjdpacahx",
+          "https://arxiv.org/abs/1411.4413v2",
+          "https://arxiv.org/abs/0901.0512v4",
+          "https://youtube.com/watch?v=what-artificial-intelligence-actually-is-in-a-educational-style,-narrator-professor0",
+          "https://reddit.com/r/what-artificial-intelligence-actually-is-in-a-educational-style,-narrator-professor/comments/1"
+        ]
+      },
+      "issues": [
+        "No citations present"
+      ],
+      "corrections_required": [
+        "Attach trusted sources via Citation Engine"
+      ]
+    },
+    "evidence": {
+      "key": "evidence",
+      "label": "Evidence",
+      "score": 40,
+      "confidence": 0.75,
+      "passed": false,
+      "details": {
+        "real_image_pct": 0.0,
+        "ai_image_pct": 100.0,
+        "authentic_hit_count": 0,
+        "ai_fallback_count": 8,
+        "missing_evidence": [],
+        "scene_count": 8
+      },
+      "issues": [
+        "Real image share only 0.0%",
+        "AI imagery used more than necessary"
+      ],
+      "corrections_required": [
+        "Prefer Reality Catalog / Knowledge Atlas over AI",
+        "Replace AI fills with authentic media where possible"
+      ]
+    },
+    "visuals": {
+      "key": "visuals",
+      "label": "Visuals",
+      "score": 68,
+      "confidence": 0.8,
+      "passed": false,
+      "details": {
+        "visual_score": 68.0,
+        "scene_count": 9,
+        "empty_scenes": 0,
+        "qc_hard_fails": 0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "typography": {
+      "key": "typography",
+      "label": "Typography",
+      "score": 94,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "has_captions": true,
+        "layout": {}
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "annotations": {
+      "key": "annotations",
+      "label": "Annotations",
+      "score": 72,
+      "confidence": 0.45,
+      "passed": false,
+      "details": {
+        "annotation_count": 0,
+        "narration_tied": 0,
+        "untied": 0
+      },
+      "issues": [
+        "No narration-tied annotations found"
+      ],
+      "corrections_required": [
+        "Add purposeful annotations via Evidence Engine"
+      ]
+    },
+    "cinematography": {
+      "key": "cinematography",
+      "label": "Cinematography",
+      "score": 48,
+      "confidence": 0.8,
+      "passed": false,
+      "details": {
+        "attention_score": 48.0,
+        "scene_count": 8,
+        "has_animation_handoff": true,
+        "pacing": "brisk"
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "retention": {
+      "key": "retention",
+      "label": "Viewer Retention",
+      "score": 81,
+      "confidence": 0.85,
+      "passed": false,
+      "details": {
+        "package_present": true,
+        "polish_rounds": 4,
+        "predictions": {
+          "ctr_pct": 9,
+          "average_view_duration_pct": 78,
+          "completion_rate_pct": 62,
+          "share_probability": 0.74,
+          "subscribe_probability": 0.54
+        }
+      },
+      "issues": [],
+      "corrections_required": [
+        "Auto-polish until cinematic excellence \u2265 98"
+      ]
+    },
+    "render_quality": {
+      "key": "render_quality",
+      "label": "Render Quality",
+      "score": 70,
+      "confidence": 0.5,
+      "passed": false,
+      "details": {
+        "package_present": false,
+        "revision_rounds": null,
+        "export_plan": {},
+        "legacy_fallback": true
+      },
+      "issues": [
+        "Studio Render package missing"
+      ],
+      "corrections_required": [
+        "Run studio_render before export"
+      ]
+    },
+    "optimization": {
+      "key": "optimization",
+      "label": "Optimization",
+      "score": 98,
+      "confidence": 0.86,
+      "passed": true,
+      "details": {
+        "package_present": true,
+        "winner": {
+          "variant_id": "a070125fe7_A",
+          "label": "A",
+          "axes": {
+            "hook": "There's one detail about Unpacking Artificial Intelligence that changes everything \u2014 stay with me.",
+            "narration": "authoritative_educator",
+            "scene_order": [
+              "s1",
+              "s2",
+              "s3",
+              "s4",
+              "s5",
+              "s6",
+              "s7",
+              "s8",
+              "s9"
+            ],
+            "visual_style": "science_documentary",
+            "music": "soft_pulse",
+            "camera_movement": [
+              "orbit",
+              "macro_push",
+              "reveal"
+            ],
+            "caption_style": "highlight_pop",
+            "thumbnail": "face_left_text_right",
+            "title": "Unpacking Artificial Intelligence",
+            "description": "Researchers measured something nobody expected. \u2014 and that number is rewriting how we understand Unpacking Artificial Intelligence. Learn Unpacking Artificial Intelligence with clear visuals and a memorable payoff.",
+            "seo": {
+              "title": "Unpacking Artificial Intelligence",
+              "tags": [
+                "unpacking artificial intelligence",
+                "shorts",
+                "explained",
+                "va"
+              ],
+              "hashtags": [
+                "#UnpackingArtificialIntelligence",
+                "#shorts",
+                "#education"
+              ]
+            }
+          },
+          "source_candidate_id": "Unpacking Artificial Intelligence",
+          "baseline": true,
+          "scores": {
+            "hook_quality": 98,
+            "psychology": 98,
+            "retention": 98,
+            "educational_value": 98,
+            "entertainment": 98,
+            "seo": 98,
+            "visual_quality": 98,
+            "narration": 98,
+            "professional_appearance": 98,
+            "platform_readiness": 98,
+            "overall": 98
+          },
+          "overall_score": 98,
+          "rank": 1,
+          "revision_round": 4
+        },
+        "experiment_id": "opt_656216f529bd",
+        "variant_count": 5
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "audio": {
+      "key": "audio",
+      "label": "Audio",
+      "score": 84,
+      "confidence": 0.35,
+      "passed": false,
+      "details": {
+        "has_audio_file": false,
+        "music_balance": 0.5
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "narration": {
+      "key": "narration",
+      "label": "Narration",
+      "score": 77,
+      "confidence": 0.75,
+      "passed": false,
+      "details": {
+        "script_quality": 84.0,
+        "hook": 71.0,
+        "chars": 800
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "synchronization": {
+      "key": "synchronization",
+      "label": "Synchronization",
+      "score": 90,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "segment_count": 9,
+        "missing_ann_timing": 0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "educational_value": {
+      "key": "educational_value",
+      "label": "Educational Value",
+      "score": 66,
+      "confidence": 0.7,
+      "passed": false,
+      "details": {
+        "clarity": 70.0,
+        "logical_progression": 70.0,
+        "engagement": 65.0,
+        "knowledge_density": 65.0,
+        "retention": 61.0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "psychology": {
+      "key": "psychology",
+      "label": "Psychology",
+      "score": 53,
+      "confidence": 0.75,
+      "passed": false,
+      "details": {
+        "predicted_metrics": {
+          "ctr": 4.24,
+          "avg_watch_time_sec": 0.0,
+          "drop_off_risk": 39.0,
+          "shareability": 45.0,
+          "replay_probability": 57.0,
+          "subscriber_conversion": 40.0
+        },
+        "human_attention_score": 0.0
+      },
+      "issues": [
+        "Psychology score below documentary engagement bar"
+      ],
+      "corrections_required": [
+        "Re-run Audience / Psychology with stronger hooks"
+      ]
+    },
+    "seo": {
+      "key": "seo",
+      "label": "SEO",
+      "score": 63,
+      "confidence": 0.8,
+      "passed": false,
+      "details": {
+        "title_len": 33,
+        "description_len": 214,
+        "keyword_count": 4,
+        "hashtag_count": 3
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "platform_compliance": {
+      "key": "platform_compliance",
+      "label": "Platform Compliance",
+      "score": 100,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "ready_count": 8,
+        "aspect_ratio": "9:16",
+        "duration_sec": 60.0
+      },
+      "issues": [],
+      "corrections_required": []
+    }
+  },
+  "scores": {
+    "research_accuracy": 78,
+    "evidence": 40,
+    "visuals": 68,
+    "typography": 94,
+    "annotations": 72,
+    "cinematography": 48,
+    "retention": 81,
+    "render_quality": 70,
+    "optimization": 98,
+    "audio": 84,
+    "narration": 77,
+    "synchronization": 90,
+    "educational_value": 66,
+    "psychology": 53,
+    "seo": 63,
+    "platform_compliance": 100
+  },
+  "platform_ready": {
+    "youtube": true,
+    "youtube_shorts": true,
+    "tiktok": true,
+    "instagram_reels": true,
+    "facebook": true,
+    "pinterest": true,
+    "linkedin": true,
+    "x": true
+  },
+  "platform_ready_detail": [
+    {
+      "platform": "youtube",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "youtube_shorts",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "tiktok",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "instagram_reels",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "facebook",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "pinterest",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "linkedin",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "x",
+      "ready": true,
+      "reasons": []
+    }
+  ],
+  "revision_requests": [
+    {
+      "category": "research_accuracy",
+      "score": 78,
+      "target_engines": [
+        "research",
+        "citation",
+        "critic"
+      ],
+      "severity": "revision",
+      "message": "No citations present",
+      "corrections": [
+        "Attach trusted sources via Citation Engine"
+      ]
+    },
+    {
+      "category": "evidence",
+      "score": 40,
+      "target_engines": [
+        "evidence_intelligence",
+        "visual_intelligence"
+      ],
+      "severity": "block",
+      "message": "Real image share only 0.0%",
+      "corrections": [
+        "Prefer Reality Catalog / Knowledge Atlas over AI",
+        "Replace AI fills with authentic media where possible"
+      ]
+    },
+    {
+      "category": "visuals",
+      "score": 68,
+      "target_engines": [
+        "visual_intelligence",
+        "image",
+        "asset_manager",
+        "studio_render"
+      ],
+      "severity": "block",
+      "message": "Visuals scored 68 (< 90)",
+      "corrections": []
+    },
+    {
+      "category": "annotations",
+      "score": 72,
+      "target_engines": [
+        "evidence_intelligence",
+        "animation",
+        "visual_intelligence"
+      ],
+      "severity": "revision",
+      "message": "No narration-tied annotations found",
+      "corrections": [
+        "Add purposeful annotations via Evidence Engine"
+      ]
+    },
+    {
+      "category": "cinematography",
+      "score": 48,
+      "target_engines": [
+        "cinematography",
+        "viewer_retention",
+        "animation",
+        "studio_render"
+      ],
+      "severity": "revision",
+      "message": "Cinematography scored 48 (< 90)",
+      "corrections": []
+    },
+    {
+      "category": "retention",
+      "score": 81,
+      "target_engines": [
+        "viewer_retention",
+        "script_generation",
+        "cinematography",
+        "voice_audio"
+      ],
+      "severity": "revision",
+      "message": "Viewer Retention scored 81 (< 90)",
+      "corrections": [
+        "Auto-polish until cinematic excellence \u2265 98"
+      ]
+    },
+    {
+      "category": "render_quality",
+      "score": 70,
+      "target_engines": [
+        "studio_render",
+        "render_package",
+        "timeline",
+        "cinematography"
+      ],
+      "severity": "revision",
+      "message": "Studio Render package missing",
+      "corrections": [
+        "Run studio_render before export"
+      ]
+    },
+    {
+      "category": "audio",
+      "score": 84,
+      "target_engines": [
+        "voice_audio",
+        "voice",
+        "narration",
+        "viewer_retention"
+      ],
+      "severity": "revision",
+      "message": "Audio scored 84 (< 90)",
+      "corrections": []
+    },
+    {
+      "category": "narration",
+      "score": 77,
+      "target_engines": [
+        "script_generation",
+        "narration",
+        "script",
+        "viewer_retention"
+      ],
+      "severity": "revision",
+      "message": "Narration scored 77 (< 90)",
+      "corrections": []
+    },
+    {
+      "category": "educational_value",
+      "score": 66,
+      "target_engines": [
+        "script_generation",
+        "critic",
+        "psychology"
+      ],
+      "severity": "block",
+      "message": "Educational Value scored 66 (< 90)",
+      "corrections": []
+    },
+    {
+      "category": "psychology",
+      "score": 53,
+      "target_engines": [
+        "psychology",
+        "audience_intelligence",
+        "attention_graph",
+        "viewer_retention"
+      ],
+      "severity": "revision",
+      "message": "Psychology score below documentary engagement bar",
+      "corrections": [
+        "Re-run Audience / Psychology with stronger hooks"
+      ]
+    },
+    {
+      "category": "seo",
+      "score": 63,
+      "target_engines": [
+        "seo",
+        "seo_optimization"
+      ],
+      "severity": "revision",
+      "message": "SEO scored 63 (< 90)",
+      "corrections": []
+    }
+  ],
+  "hard_fails": [
+    "Evidence critically low (40)",
+    "Visuals critically low (68)",
+    "Educational Value critically low (66)",
+    "QualityEngine publish gate failed: publish_score, claim_confidence, citation_required"
+  ],
+  "warnings": [
+    "No citations present",
+    "Real image share only 0.0%",
+    "AI imagery used more than necessary",
+    "No narration-tied annotations found",
+    "Studio Render package missing",
+    "Psychology score below documentary engagement bar"
+  ],
+  "predicted_metrics": {
+    "ctr": 4.24,
+    "avg_watch_time_sec": 0.0,
+    "drop_off_risk": 39.0,
+    "shareability": 45.0,
+    "replay_probability": 57.0,
+    "subscriber_conversion": 40.0
+  },
+  "sources_checked": [
+    "https://pubmed.ncbi.nlm.nih.gov/1/",
+    "https://doi.org/10.1016/j.caeai.2026.100554",
+    "https://news.example.com/what-artificial-intelligence-actually-is-in-a-educational-style,-narrator-professor-report-0",
+    "https://pubmed.ncbi.nlm.nih.gov/0/",
+    "https://tiktok.com/tag/what-artificial-intelligence-actually-is-in-a-educational-style,-narrator-professor",
+    "https://doi.org/10.64628/aa.vjdpacahx",
+    "https://arxiv.org/abs/1411.4413v2",
+    "https://arxiv.org/abs/0901.0512v4",
+    "https://youtube.com/watch?v=what-artificial-intelligence-actually-is-in-a-educational-style,-narrator-professor0",
+    "https://reddit.com/r/what-artificial-intelligence-actually-is-in-a-educational-style,-narrator-professor/comments/1"
+  ],
+  "created_at": "2026-07-14T00:08:29.354032+00:00",
+  "version": "1.0.0",
+  "report_markdown": "# Production Quality Report\n\n**Overall Score:** 73\n**Decision:** BLOCK_EXPORT\n\n- Research Accuracy: 78\n- Evidence: 40\n- Visuals: 68\n- Typography: 94\n- Annotations: 72\n- Cinematography: 48\n- Viewer Retention: 81\n- Render Quality: 70\n- Optimization: 98\n- Audio: 84\n- Narration: 77\n- Synchronization: 90\n- Educational Value: 66\n- Psychology: 53\n- SEO: 63\n\n## Platform Ready\n- \u2713 youtube\n- \u2713 youtube_shorts\n- \u2713 tiktok\n- \u2713 instagram_reels\n- \u2713 facebook\n- \u2713 pinterest\n- \u2713 linkedin\n- \u2713 x\n\n## Revision Requests\n- [revision] research_accuracy (78) \u2192 research, citation, critic: No citations present\n- [block] evidence (40) \u2192 evidence_intelligence, visual_intelligence: Real image share only 0.0%\n- [block] visuals (68) \u2192 visual_intelligence, image, asset_manager, studio_render: Visuals scored 68 (< 90)\n- [revision] annotations (72) \u2192 evidence_intelligence, animation, visual_intelligence: No narration-tied annotations found\n- [revision] cinematography (48) \u2192 cinematography, viewer_retention, animation, studio_render: Cinematography scored 48 (< 90)\n- [revision] retention (81) \u2192 viewer_retention, script_generation, cinematography, voice_audio: Viewer Retention scored 81 (< 90)\n- [revision] render_quality (70) \u2192 studio_render, render_package, timeline, cinematography: Studio Render package missing\n- [revision] audio (84) \u2192 voice_audio, voice, narration, viewer_retention: Audio scored 84 (< 90)\n- [revision] narration (77) \u2192 script_generation, narration, script, viewer_retention: Narration scored 77 (< 90)\n- [block] educational_value (66) \u2192 script_generation, critic, psychology: Educational Value scored 66 (< 90)\n- [revision] psychology (53) \u2192 psychology, audience_intelligence, attention_graph, viewer_retention: Psychology score below documentary engagement bar\n- [revision] seo (63) \u2192 seo, seo_optimization: SEO scored 63 (< 90)"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if tiny labs inside our bodies could unlock the secrets of life?",
+    "visual_description": "Hook visual: What if tiny labs inside our bodies could unlock the secrets of life?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if tiny labs inside our bodies could unlock the secrets of life?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if tiny labs inside our bodies could unlock the secrets of life?",
+    "stock_footage_query": "",
+    "text_overlay": "What if tiny labs",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Organoids are miniaturized organs grown from stem cells, mimicking real-life functions.",
+    "visual_description": "Context visual: Organoids are miniaturized organs grown from stem cells, mimicking real-life functions.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Organoids are miniaturized organs grown from stem cells, mimicking real-life functions.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Organoids are miniaturized organs grown from stem cells, mimicking real-life functions.",
+    "stock_footage_query": "",
+    "text_overlay": "Organoids are miniaturized organs",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This research could revolutionize medicine, from drug testing to disease modeling.",
+    "visual_description": "Escalation visual: This research could revolutionize medicine, from drug testing to disease modeling.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: This research could revolutionize medicine, from drug testing to disease modeling.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: This research could revolutionize medicine, from drug testing to disease modeling.",
+    "stock_footage_query": "",
+    "text_overlay": "This research could revolutionize",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Yet, challenges remain: organoid maturity and complexity can vary wildly.",
+    "visual_description": "Evidence visual: Yet, challenges remain: organoid maturity and complexity can vary wildly.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Yet, challenges remain: organoid maturity and complexity can vary wildly.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Yet, challenges remain: organoid maturity and complexity can vary wildly.",
+    "stock_footage_query": "",
+    "text_overlay": "Yet, challenges remain: organoid",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "The potential is immense, but we're only scratching the surface of what's possible.",
+    "visual_description": "Payoff visual: The potential is immense, but we're only scratching the surface of what's possible.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: The potential is immense, but we're only scratching the surface of what's possible.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: The potential is immense, but we're only scratching the surface of what's possible.",
+    "stock_footage_query": "",
+    "text_overlay": "The potential is immense,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Curious about the future of organoids? Follow for more scientific insights!",
+    "visual_description": "Cta visual: Curious about the future of organoids? Follow for more scientific insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about the future of organoids? Follow for more scientific insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about the future of organoids? Follow for more scientific insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about the future",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Here's what science actually says about checkpoint inhibitors.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Checkpoint inhibitors are a groundbreaking approach in immunotherapy, designed to unleash the body's immune system again",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: But how do they work? They block proteins that keep immune cells in check, allowing them to attack tumors more effective",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Research shows promising results, yet many patients don\u2019t respond, raising questions about why some do and others don\u2019t.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Ongoing studies aim to uncover these mysteries, potentially leading to more effective treatments.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to learn more about how our bodies fight cancer? Hit that follow for more science insights!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Here's what science actually says about checkpoint inhibitors.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Checkpoint inhibitors are a groundbreaking approach in immunotherapy, designed to unleash the body's immune system again",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: But how do they work? They block proteins that keep immune cells in check, allowing them to attack tumors more effective",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Research shows promising results, yet many patients don\u2019t respond, raising questions about why some do and others don\u2019t.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Ongoing studies aim to uncover these mysteries, potentially leading to more effective treatments.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to learn more about how our bodies fight cancer? Hit that follow for more science insights!",
+      "duration_sec": 8.0
+    }
+  ]
+}

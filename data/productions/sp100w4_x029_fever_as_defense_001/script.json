@@ -1,0 +1,74 @@
+{
+  "title": "Fever as Defense",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explores the scientific understanding of fever as a defense mechanism against illness.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if your fever is your body\u2019s secret weapon?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Fever isn\u2019t just discomfort; it\u2019s a natural response to infection.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "When your body heats up, it\u2019s fighting back\u2014activating immune cells and slowing down pathogens.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that a higher body temperature can enhance your immune response. But beware! Not all fevers are helpful.",
+      "emotion": "curiosity",
+      "delivery": "emphatic",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 44.0,
+      "segment_type": "payoff",
+      "voiceover": "Fever can be a double-edged sword\u2014it's crucial to monitor its intensity.",
+      "emotion": "curiosity",
+      "delivery": "urgent",
+      "retention_device": "strong conclusion"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 44.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more about your body\u2019s defense mechanisms? Hit like and follow!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "natural CTA"
+    }
+  ],
+  "full_voiceover": "What if your fever is your body\u2019s secret weapon? Fever isn\u2019t just discomfort; it\u2019s a natural response to infection. When your body heats up, it\u2019s fighting back\u2014activating immune cells and slowing down pathogens. Studies show that a higher body temperature can enhance your immune response. But beware! Not all fevers are helpful. Fever can be a double-edged sword\u2014it's crucial to monitor its intensity. Want to learn more about your body\u2019s defense mechanisms? Hit like and follow!",
+  "call_to_action": "Hit like and follow!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:18:23.776257+00:00",
+  "source": "ai"
+}

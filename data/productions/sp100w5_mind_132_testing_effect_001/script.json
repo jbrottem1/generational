@@ -1,0 +1,84 @@
+{
+  "title": "Testing Effect",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the testing effect reveals surprising insights about learning and memory.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if testing could actually enhance your learning?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "The testing effect shows that retrieving information strengthens memory more than just re-reading.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "retention_hook",
+      "voiceover": "But how does it really work?",
+      "emotion": "curiosity",
+      "delivery": "intriguing",
+      "retention_device": "questions"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show testing creates stronger neural connections, making recall easier later.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 40.0,
+      "segment_type": "escalation",
+      "voiceover": "Retrieving info challenges your brain, leading to deeper understanding. It\u2019s like a workout for your memory!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "analogy"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 40.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "So, next time you\u2019re studying, consider testing yourself more often. It could boost your learning dramatically!",
+      "emotion": "satisfaction",
+      "delivery": "motivational",
+      "retention_device": "practical advice"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Like this? Follow for more science insights!",
+      "emotion": "satisfaction",
+      "delivery": "inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "What if testing could actually enhance your learning? The testing effect shows that retrieving information strengthens memory more than just re-reading. But how does it really work? Studies show testing creates stronger neural connections, making recall easier later. Retrieving info challenges your brain, leading to deeper understanding. It\u2019s like a workout for your memory! So, next time you\u2019re studying, consider testing yourself more often. It could boost your learning dramatically! Like this? Follow for more science insights!",
+  "call_to_action": "Like this? Follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:52:49.526653+00:00",
+  "source": "ai"
+}

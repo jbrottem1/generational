@@ -1,0 +1,16 @@
+{
+  "id": "turn_180",
+  "loop": false,
+  "duration_sec": 0.55,
+  "keyframes": [
+    {
+      "t": 0.0,
+      "yaw": 0
+    },
+    {
+      "t": 0.55,
+      "yaw": 180
+    }
+  ],
+  "notes": "Silhouette readable mid-turn."
+}

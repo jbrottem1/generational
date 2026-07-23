@@ -1,0 +1,74 @@
+{
+  "title": "Hardy Weinberg idea",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "An engaging breakdown of the Hardy Weinberg idea and its implications in genetics.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Ever wondered how genes stay balanced in a population?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "The Hardy Weinberg idea explains this balance using simple math and assumptions.",
+      "emotion": "neutral",
+      "delivery": "clear and informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "It assumes no mutations, random mating, no migration, large populations, and no selection.",
+      "emotion": "neutral",
+      "delivery": "steady and engaging",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "In real life, these conditions are rarely met. Yet, it\u2019s a powerful tool!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding Hardy Weinberg helps us grasp how evolution impacts genetic diversity.",
+      "emotion": "satisfaction",
+      "delivery": "confident and uplifting",
+      "retention_device": "resolution"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about genetics? Hit like and follow for more science insights!",
+      "emotion": "excited",
+      "delivery": "enthusiastic and inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Ever wondered how genes stay balanced in a population? The Hardy Weinberg idea explains this balance using simple math and assumptions. It assumes no mutations, random mating, no migration, large populations, and no selection. In real life, these conditions are rarely met. Yet, it\u2019s a powerful tool! Understanding Hardy Weinberg helps us grasp how evolution impacts genetic diversity. Curious about genetics? Hit like and follow for more science insights!",
+  "call_to_action": "Curious about genetics? Hit like and follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:02:13.164486+00:00",
+  "source": "ai"
+}

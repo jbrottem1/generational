@@ -1,0 +1,80 @@
+{
+  "channel_id": "science_daily",
+  "template_id": "science_daily",
+  "brand_name": "Science Daily",
+  "name": "Science Daily",
+  "niche": "biology, physics, astronomy, chemistry, nature",
+  "brand_voice": "curious, clear, wonder-led",
+  "description": "Bite-sized science facts that reframe everyday curiosity.",
+  "platforms": [
+    "youtube_shorts",
+    "tiktok",
+    "instagram_reels"
+  ],
+  "target_audience": "curious generalists ages 18\u201335 who enjoy science shorts",
+  "topic_categories": [
+    "biology",
+    "physics",
+    "astronomy",
+    "chemistry",
+    "nature"
+  ],
+  "tone": "curious, clear, wonder-led",
+  "narrator_profile": "science_educator",
+  "voice_profile": "science_educator",
+  "visual_style": "clean educational motion with bold labels",
+  "world_preferences": {
+    "domains": [
+      "science",
+      "biology",
+      "physics"
+    ],
+    "style": "reality_first"
+  },
+  "thumbnail_style": "one subject, high contrast, max 5 claim words",
+  "intro_outro_rules": {
+    "intro_sec": 1.2,
+    "outro_cta": "Follow for daily science"
+  },
+  "upload_schedule": {
+    "youtube_shorts": "daily 18:00",
+    "tiktok": "daily 12:00"
+  },
+  "posting_schedule": {
+    "youtube_shorts": "daily 18:00",
+    "tiktok": "daily 12:00"
+  },
+  "hashtag_strategy": [
+    "#science",
+    "#facts",
+    "#shorts",
+    "#learnontiktok"
+  ],
+  "seo_rules": {
+    "title_pattern": "curiosity_hook",
+    "max_title_chars": 70
+  },
+  "monetization_status": "not_monetized",
+  "publishing_status": "manual_review",
+  "analytics_history": [
+    {
+      "at": "2026-07-14T04:40:23.444132+00:00",
+      "production_id": "ops_a13166d67f",
+      "topic": "Why Leaves Change Color in Autumn",
+      "creative_score": 82.6,
+      "success": false
+    }
+  ],
+  "status": "active",
+  "metrics": {
+    "videos_published": 1,
+    "videos_scheduled": 0,
+    "total_views": 0,
+    "followers": 0,
+    "estimated_revenue": 0.0,
+    "average_creative_score": 82.6
+  },
+  "credentials": {},
+  "updated_at": "2026-07-14T04:41:08.788158+00:00",
+  "created_at": "2026-07-14T04:39:38.706608+00:00"
+}

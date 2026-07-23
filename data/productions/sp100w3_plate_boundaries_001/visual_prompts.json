@@ -1,0 +1,76 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Plates collide, pull apart, or slide \u2014 each creates unique hazards.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: These boundaries are alive with movement, shaping our planet.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: First, convergent boundaries: plates push together, causing intense earthquakes.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Next, divergent boundaries: where plates pull apart, magma rises, creating new land.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Pattern Interrupt visual: Finally, transform boundaries: plates slide past each other, often leading to tension.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Payoff visual: Understanding these interactions helps us predict hazards and protect lives.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cta visual: Curious to learn more about our planet? Hit that follow button!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Plates collide, pull apart, or slide \u2014 each creates unique hazards.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: These boundaries are alive with movement, shaping our planet.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: First, convergent boundaries: plates push together, causing intense earthquakes.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Next, divergent boundaries: where plates pull apart, magma rises, creating new land.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Pattern Interrupt visual: Finally, transform boundaries: plates slide past each other, often leading to tension.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Payoff visual: Understanding these interactions helps us predict hazards and protect lives.",
+      "duration_sec": 16.0
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cinematic motion: Cta visual: Curious to learn more about our planet? Hit that follow button!",
+      "duration_sec": 10.0
+    }
+  ]
+}

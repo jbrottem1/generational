@@ -1,0 +1,52 @@
+{
+  "character_id": "TEACHER_001",
+  "capabilities": [
+    "finger_articulation",
+    "grasp_detection",
+    "object_grip",
+    "pressure",
+    "release",
+    "hand_object_alignment",
+    "dual_hand_interactions"
+  ],
+  "fingers": {
+    "per_hand": 5,
+    "joints_per_finger": 3,
+    "independent_articulation": true
+  },
+  "grasp": {
+    "detection": true,
+    "presets": [
+      "relaxed",
+      "precision_pinch",
+      "power_grip",
+      "tool_grip",
+      "book_cradle",
+      "stylus",
+      "handshake"
+    ],
+    "pressure_range": [
+      0.0,
+      1.0
+    ],
+    "release_required": true
+  },
+  "alignment": {
+    "hand_object_snap": true,
+    "max_miss_m": 0.02,
+    "forbid_missing_targets": true
+  },
+  "dual_hand": {
+    "enabled": true,
+    "modes": [
+      "symmetric",
+      "lead_support",
+      "stabilize_manipulate"
+    ]
+  },
+  "forbid": [
+    "mitten_hands",
+    "clipping_into_mesh",
+    "floating_grip"
+  ]
+}

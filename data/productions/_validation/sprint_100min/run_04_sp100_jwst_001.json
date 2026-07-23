@@ -1,0 +1,117 @@
+{
+  "run_index": 4,
+  "topic": "What JWST Sees That Hubble Can't",
+  "asset_id": "sp100_jwst_001",
+  "seo_score": 24.0,
+  "seo": {
+    "demand": 5,
+    "evergreen": 4,
+    "education": 5,
+    "interest": 5,
+    "short_form": 5
+  },
+  "runtime_sec": 22.5,
+  "production_ok": true,
+  "production_error": "",
+  "success": true,
+  "qc_score": 100,
+  "qc_passed": true,
+  "stages": [
+    {
+      "stage": "idea",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "script",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "scenes",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "visual_prompts",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "images",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "video_clips",
+      "status": "skipped",
+      "error": ""
+    },
+    {
+      "stage": "voice",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "music",
+      "status": "skipped",
+      "error": ""
+    },
+    {
+      "stage": "sfx",
+      "status": "skipped",
+      "error": ""
+    },
+    {
+      "stage": "captions",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "timeline",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "render",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "quality",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "export",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "stage": "publish",
+      "status": "skipped",
+      "error": ""
+    }
+  ],
+  "cost": {
+    "estimated_cost_usd": 0.0181,
+    "breakdown": {
+      "openai_tts_usd": 0.0081,
+      "openai_chat_usd": 0.01,
+      "openai_images_usd": 0.0
+    }
+  },
+  "mp4_path": "data/productions/sp100_jwst_001/render.mp4",
+  "mp4_bytes": 431822,
+  "mock_render": false,
+  "final_export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/test run generational/2026-07-10_11-40-33_What_JWST_Sees_That_Hubble_Can't.mp4",
+  "title": "What JWST Sees That Hubble Can't",
+  "description": "Explain infrared astronomy: JWST sees through dust and looks farther back in time than Hubble's optical view. Cite NASA/ESA/CSA JWST mission science. Avoid claiming it 'proved' contested theories \u2014 stick to what infrared imaging enables.",
+  "hashtags": [
+    "#JWST",
+    "#space",
+    "#NASA",
+    "#shorts"
+  ],
+  "thumbnail_concept": "JWST golden mirrors vs deep-field galaxies"
+}

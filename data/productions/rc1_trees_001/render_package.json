@@ -1,0 +1,1579 @@
+{
+  "render_package_version": "2.0",
+  "render_engine_version": "1.0.0",
+  "title": "How Trees Communicate Underground",
+  "created_at": "2026-07-10T16:06:14.484567+00:00",
+  "output_format": {
+    "aspect_ratio": "9:16",
+    "resolution": {
+      "width": 1080,
+      "height": 1920
+    },
+    "container": "mp4",
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "fps": 30,
+    "orientation": "vertical",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels"
+    ]
+  },
+  "platforms": [
+    "youtube_shorts",
+    "tiktok",
+    "instagram_reels",
+    "facebook_reels"
+  ],
+  "resolution": "1080x1920",
+  "aspect_ratio": "9:16",
+  "duration_sec": 60.0,
+  "timeline": {
+    "fps": 30,
+    "total_duration_sec": 60.0,
+    "segment_count": 6,
+    "segments": [
+      {
+        "scene_id": 1,
+        "start_time": 0.0,
+        "end_time": 2.0,
+        "duration": 2.0,
+        "narration_reference": "narration/scene_1",
+        "visual_reference": "visual/scene_1",
+        "caption_reference": "captions/scene_1",
+        "audio_reference": "audio/scene_1",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "quick_punch_in",
+        "overlay_text": "Forests talk \u2014 through",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 2,
+        "start_time": 2.0,
+        "end_time": 10.0,
+        "duration": 8.0,
+        "narration_reference": "narration/scene_2",
+        "visual_reference": "visual/scene_2",
+        "caption_reference": "captions/scene_2",
+        "audio_reference": "audio/scene_2",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "This isn\u2019t magic; it\u2019s",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 3,
+        "start_time": 10.0,
+        "end_time": 20.0,
+        "duration": 10.0,
+        "narration_reference": "narration/scene_3",
+        "visual_reference": "visual/scene_3",
+        "caption_reference": "captions/scene_3",
+        "audio_reference": "audio/scene_3",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Trees share nutrients and",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 4,
+        "start_time": 20.0,
+        "end_time": 30.0,
+        "duration": 10.0,
+        "narration_reference": "narration/scene_4",
+        "visual_reference": "visual/scene_4",
+        "caption_reference": "captions/scene_4",
+        "audio_reference": "audio/scene_4",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Studies show that trees",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 5,
+        "start_time": 30.0,
+        "end_time": 45.0,
+        "duration": 15.0,
+        "narration_reference": "narration/scene_5",
+        "visual_reference": "visual/scene_5",
+        "caption_reference": "captions/scene_5",
+        "audio_reference": "audio/scene_5",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "This \u2018wood-wide web\u2019 is",
+        "render_status": "planned"
+      },
+      {
+        "scene_id": 6,
+        "start_time": 45.0,
+        "end_time": 60.0,
+        "duration": 15.0,
+        "narration_reference": "narration/scene_6",
+        "visual_reference": "visual/scene_6",
+        "caption_reference": "captions/scene_6",
+        "audio_reference": "audio/scene_6",
+        "transition_in": "cut",
+        "transition_out": "cut",
+        "motion_effect": "static",
+        "overlay_text": "Want to learn more",
+        "render_status": "planned"
+      }
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "scene_render_plan": [
+    {
+      "scene_id": 1,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Hook visual: Forests talk \u2014 through a hidden fungal internet under your feet.",
+      "video_prompt": "Cinematic motion: Hook visual: Forests talk \u2014 through a hidden fungal internet under your feet.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "subtle push",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "quick_punch_in",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.188
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 70
+      },
+      "text_overlays": [
+        {
+          "text": "Forests talk \u2014 through",
+          "treatment": "",
+          "start_sec": 0.0,
+          "end_sec": 2.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "bass hit",
+          "at_sec": 0.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Forests talk \u2014 through a hidden fungal internet under your feet.",
+      "duration_sec": 2.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Hook visual: Forests talk \u2014 through a hidden fungal internet under your feet.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 1
+      }
+    },
+    {
+      "scene_id": 2,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Context visual: This isn\u2019t magic; it\u2019s mycelium, a network of fungi connecting tree roots.",
+      "video_prompt": "Cinematic motion: Context visual: This isn\u2019t magic; it\u2019s mycelium, a network of fungi connecting tree roots.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "This isn\u2019t magic; it\u2019s",
+          "treatment": "",
+          "start_sec": 2.0,
+          "end_sec": 10.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 2.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "This isn\u2019t magic; it\u2019s mycelium, a network of fungi connecting tree roots.",
+      "duration_sec": 8.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Context visual: This isn\u2019t magic; it\u2019s mycelium, a network of fungi connecting tree roots.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 2
+      }
+    },
+    {
+      "scene_id": 3,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Escalation visual: Trees share nutrients and even send distress signals when they\u2019re under threat.",
+      "video_prompt": "Cinematic motion: Escalation visual: Trees share nutrients and even send distress signals when they\u2019re under threat.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Trees share nutrients and",
+          "treatment": "",
+          "start_sec": 10.0,
+          "end_sec": 20.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 10.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Trees share nutrients and even send distress signals when they\u2019re under threat.",
+      "duration_sec": 10.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Escalation visual: Trees share nutrients and even send distress signals when they\u2019re under threat.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 3
+      }
+    },
+    {
+      "scene_id": 4,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Evidence visual: Studies show that trees can warn each other about pests through this underground network.",
+      "video_prompt": "Cinematic motion: Evidence visual: Studies show that trees can warn each other about pests through this underground network.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Studies show that trees",
+          "treatment": "",
+          "start_sec": 20.0,
+          "end_sec": 30.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 20.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Studies show that trees can warn each other about pests through this underground network.",
+      "duration_sec": 10.0,
+      "resolved_asset": {
+        "path": "runtime://image/demo",
+        "uri": "",
+        "image_url": "",
+        "b64_json": "",
+        "provider": "demo",
+        "placeholder": true,
+        "status": "mock",
+        "prompt": "Evidence visual: Studies show that trees can warn each other about pests through this underground network.",
+        "width": 1080,
+        "height": 1920,
+        "error": "",
+        "scene_number": 4
+      }
+    },
+    {
+      "scene_id": 5,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Payoff visual: This \u2018wood-wide web\u2019 is essential for forest survival, fostering cooperation over competition.",
+      "video_prompt": "Cinematic motion: Payoff visual: This \u2018wood-wide web\u2019 is essential for forest survival, fostering cooperation over competition.",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "This \u2018wood-wide web\u2019 is",
+          "treatment": "",
+          "start_sec": 30.0,
+          "end_sec": 45.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 30.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "This \u2018wood-wide web\u2019 is essential for forest survival, fostering cooperation over competition.",
+      "duration_sec": 15.0,
+      "resolved_asset": {}
+    },
+    {
+      "scene_id": 6,
+      "visual_asset_type": "ai_image",
+      "image_prompt": "Cta visual: Want to learn more about nature's secrets? Hit that follow button!",
+      "video_prompt": "Cinematic motion: Cta visual: Want to learn more about nature's secrets? Hit that follow button!",
+      "stock_footage_query": "",
+      "user_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "avatar_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "reaction_footage_slot": {
+        "reserved": false,
+        "status": "empty",
+        "notes": ""
+      },
+      "camera_movement": {
+        "motion": "static",
+        "angle": "",
+        "shot_type": "medium"
+      },
+      "effect": {
+        "name": "static",
+        "zoom": {
+          "start_scale": 1.0,
+          "end_scale": 1.0
+        },
+        "pan": {
+          "direction": "none",
+          "amount_pct": 0.0
+        },
+        "ken_burns": false,
+        "intensity": 45
+      },
+      "text_overlays": [
+        {
+          "text": "Want to learn more",
+          "treatment": "",
+          "start_sec": 45.0,
+          "end_sec": 60.0
+        }
+      ],
+      "caption_placement": "bottom third, safe zone",
+      "sound_cues": [
+        {
+          "cue": "whoosh",
+          "at_sec": 45.0,
+          "track": "sfx"
+        }
+      ],
+      "narration": "Want to learn more about nature's secrets? Hit that follow button!",
+      "duration_sec": 15.0,
+      "resolved_asset": {}
+    }
+  ],
+  "caption_render_plan": {
+    "mode": "word_by_word",
+    "style_preset": "bold_pop",
+    "style": {
+      "font": "Montserrat ExtraBold",
+      "size_pct": 4.8,
+      "fill": "#FFFFFF",
+      "stroke": "#000000",
+      "stroke_width_px": 6,
+      "emphasis_fill": "#FFD400",
+      "animation": "word pop 1.08x on entry",
+      "case": "upper"
+    },
+    "available_presets": [
+      "bold_pop",
+      "clean_minimal",
+      "karaoke_highlight",
+      "documentary_lower_third"
+    ],
+    "safe_area": {
+      "top_pct": 12.0,
+      "bottom_pct": 20.0,
+      "left_pct": 6.0,
+      "right_pct": 12.0
+    },
+    "platform_layouts": {
+      "youtube_shorts": {
+        "anchor_y_pct": 68.0,
+        "notes": "clear the title/channel block at the bottom"
+      },
+      "tiktok": {
+        "anchor_y_pct": 64.0,
+        "notes": "clear caption + music marquee, keep off the right rail"
+      },
+      "instagram_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "clear the audio attribution row"
+      },
+      "facebook_reels": {
+        "anchor_y_pct": 66.0,
+        "notes": "mirror the Reels layout"
+      }
+    },
+    "segments": [
+      {
+        "scene_id": 1,
+        "mode": "word_by_word",
+        "start_sec": 0.0,
+        "end_sec": 2.0,
+        "sentence": "Forests talk \u2014 through a hidden fungal internet under your feet.",
+        "words": [
+          {
+            "word": "Forests",
+            "start_sec": 0.0,
+            "end_sec": 0.25,
+            "emphasis": false
+          },
+          {
+            "word": "talk",
+            "start_sec": 0.25,
+            "end_sec": 0.42,
+            "emphasis": false
+          },
+          {
+            "word": "through",
+            "start_sec": 0.42,
+            "end_sec": 0.67,
+            "emphasis": false
+          },
+          {
+            "word": "a",
+            "start_sec": 0.67,
+            "end_sec": 0.75,
+            "emphasis": false
+          },
+          {
+            "word": "hidden",
+            "start_sec": 0.75,
+            "end_sec": 0.97,
+            "emphasis": false
+          },
+          {
+            "word": "fungal",
+            "start_sec": 0.97,
+            "end_sec": 1.19,
+            "emphasis": false
+          },
+          {
+            "word": "internet",
+            "start_sec": 1.19,
+            "end_sec": 1.47,
+            "emphasis": true
+          },
+          {
+            "word": "under",
+            "start_sec": 1.47,
+            "end_sec": 1.67,
+            "emphasis": false
+          },
+          {
+            "word": "your",
+            "start_sec": 1.67,
+            "end_sec": 1.83,
+            "emphasis": false
+          },
+          {
+            "word": "feet",
+            "start_sec": 1.83,
+            "end_sec": 2.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "internet"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 2,
+        "mode": "word_by_word",
+        "start_sec": 2.0,
+        "end_sec": 10.0,
+        "sentence": "This isn\u2019t magic; it\u2019s mycelium, a network of fungi connecting tree roots.",
+        "words": [
+          {
+            "word": "This",
+            "start_sec": 2.0,
+            "end_sec": 2.56,
+            "emphasis": false
+          },
+          {
+            "word": "isn",
+            "start_sec": 2.56,
+            "end_sec": 3.02,
+            "emphasis": false
+          },
+          {
+            "word": "t",
+            "start_sec": 3.02,
+            "end_sec": 3.3,
+            "emphasis": false
+          },
+          {
+            "word": "magic",
+            "start_sec": 3.3,
+            "end_sec": 3.95,
+            "emphasis": false
+          },
+          {
+            "word": "it",
+            "start_sec": 3.95,
+            "end_sec": 4.33,
+            "emphasis": false
+          },
+          {
+            "word": "s",
+            "start_sec": 4.33,
+            "end_sec": 4.6,
+            "emphasis": false
+          },
+          {
+            "word": "mycelium",
+            "start_sec": 4.6,
+            "end_sec": 5.53,
+            "emphasis": true
+          },
+          {
+            "word": "a",
+            "start_sec": 5.53,
+            "end_sec": 5.81,
+            "emphasis": false
+          },
+          {
+            "word": "network",
+            "start_sec": 5.81,
+            "end_sec": 6.65,
+            "emphasis": false
+          },
+          {
+            "word": "of",
+            "start_sec": 6.65,
+            "end_sec": 7.02,
+            "emphasis": false
+          },
+          {
+            "word": "fungi",
+            "start_sec": 7.02,
+            "end_sec": 7.67,
+            "emphasis": false
+          },
+          {
+            "word": "connecting",
+            "start_sec": 7.67,
+            "end_sec": 8.79,
+            "emphasis": true
+          },
+          {
+            "word": "tree",
+            "start_sec": 8.79,
+            "end_sec": 9.35,
+            "emphasis": false
+          },
+          {
+            "word": "roots",
+            "start_sec": 9.35,
+            "end_sec": 10.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "connecting",
+          "mycelium"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 3,
+        "mode": "word_by_word",
+        "start_sec": 10.0,
+        "end_sec": 20.0,
+        "sentence": "Trees share nutrients and even send distress signals when they\u2019re under threat.",
+        "words": [
+          {
+            "word": "Trees",
+            "start_sec": 10.0,
+            "end_sec": 10.76,
+            "emphasis": false
+          },
+          {
+            "word": "share",
+            "start_sec": 10.76,
+            "end_sec": 11.52,
+            "emphasis": false
+          },
+          {
+            "word": "nutrients",
+            "start_sec": 11.52,
+            "end_sec": 12.72,
+            "emphasis": true
+          },
+          {
+            "word": "and",
+            "start_sec": 12.72,
+            "end_sec": 13.26,
+            "emphasis": false
+          },
+          {
+            "word": "even",
+            "start_sec": 13.26,
+            "end_sec": 13.91,
+            "emphasis": false
+          },
+          {
+            "word": "send",
+            "start_sec": 13.91,
+            "end_sec": 14.57,
+            "emphasis": false
+          },
+          {
+            "word": "distress",
+            "start_sec": 14.57,
+            "end_sec": 15.65,
+            "emphasis": true
+          },
+          {
+            "word": "signals",
+            "start_sec": 15.65,
+            "end_sec": 16.63,
+            "emphasis": false
+          },
+          {
+            "word": "when",
+            "start_sec": 16.63,
+            "end_sec": 17.28,
+            "emphasis": false
+          },
+          {
+            "word": "they",
+            "start_sec": 17.28,
+            "end_sec": 17.93,
+            "emphasis": false
+          },
+          {
+            "word": "re",
+            "start_sec": 17.93,
+            "end_sec": 18.37,
+            "emphasis": false
+          },
+          {
+            "word": "under",
+            "start_sec": 18.37,
+            "end_sec": 19.13,
+            "emphasis": false
+          },
+          {
+            "word": "threat",
+            "start_sec": 19.13,
+            "end_sec": 20.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "distress",
+          "nutrients"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 4,
+        "mode": "word_by_word",
+        "start_sec": 20.0,
+        "end_sec": 30.0,
+        "sentence": "Studies show that trees can warn each other about pests through this underground network.",
+        "words": [
+          {
+            "word": "Studies",
+            "start_sec": 20.0,
+            "end_sec": 20.87,
+            "emphasis": true
+          },
+          {
+            "word": "show",
+            "start_sec": 20.87,
+            "end_sec": 21.46,
+            "emphasis": false
+          },
+          {
+            "word": "that",
+            "start_sec": 21.46,
+            "end_sec": 22.04,
+            "emphasis": false
+          },
+          {
+            "word": "trees",
+            "start_sec": 22.04,
+            "end_sec": 22.72,
+            "emphasis": false
+          },
+          {
+            "word": "can",
+            "start_sec": 22.72,
+            "end_sec": 23.2,
+            "emphasis": false
+          },
+          {
+            "word": "warn",
+            "start_sec": 23.2,
+            "end_sec": 23.79,
+            "emphasis": false
+          },
+          {
+            "word": "each",
+            "start_sec": 23.79,
+            "end_sec": 24.37,
+            "emphasis": false
+          },
+          {
+            "word": "other",
+            "start_sec": 24.37,
+            "end_sec": 25.05,
+            "emphasis": false
+          },
+          {
+            "word": "about",
+            "start_sec": 25.05,
+            "end_sec": 25.73,
+            "emphasis": false
+          },
+          {
+            "word": "pests",
+            "start_sec": 25.73,
+            "end_sec": 26.41,
+            "emphasis": false
+          },
+          {
+            "word": "through",
+            "start_sec": 26.41,
+            "end_sec": 27.28,
+            "emphasis": false
+          },
+          {
+            "word": "this",
+            "start_sec": 27.28,
+            "end_sec": 27.86,
+            "emphasis": false
+          },
+          {
+            "word": "underground",
+            "start_sec": 27.86,
+            "end_sec": 29.13,
+            "emphasis": true
+          },
+          {
+            "word": "network",
+            "start_sec": 29.13,
+            "end_sec": 30.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "Studies",
+          "underground"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 5,
+        "mode": "word_by_word",
+        "start_sec": 30.0,
+        "end_sec": 45.0,
+        "sentence": "This \u2018wood-wide web\u2019 is essential for forest survival, fostering cooperation over competition.",
+        "words": [
+          {
+            "word": "This",
+            "start_sec": 30.0,
+            "end_sec": 30.87,
+            "emphasis": false
+          },
+          {
+            "word": "wood-wide",
+            "start_sec": 30.87,
+            "end_sec": 32.48,
+            "emphasis": false
+          },
+          {
+            "word": "web",
+            "start_sec": 32.48,
+            "end_sec": 33.2,
+            "emphasis": false
+          },
+          {
+            "word": "is",
+            "start_sec": 33.2,
+            "end_sec": 33.79,
+            "emphasis": false
+          },
+          {
+            "word": "essential",
+            "start_sec": 33.79,
+            "end_sec": 35.39,
+            "emphasis": false
+          },
+          {
+            "word": "for",
+            "start_sec": 35.39,
+            "end_sec": 36.12,
+            "emphasis": false
+          },
+          {
+            "word": "forest",
+            "start_sec": 36.12,
+            "end_sec": 37.28,
+            "emphasis": false
+          },
+          {
+            "word": "survival",
+            "start_sec": 37.28,
+            "end_sec": 38.74,
+            "emphasis": false
+          },
+          {
+            "word": "fostering",
+            "start_sec": 38.74,
+            "end_sec": 40.34,
+            "emphasis": false
+          },
+          {
+            "word": "cooperation",
+            "start_sec": 40.34,
+            "end_sec": 42.23,
+            "emphasis": true
+          },
+          {
+            "word": "over",
+            "start_sec": 42.23,
+            "end_sec": 43.11,
+            "emphasis": false
+          },
+          {
+            "word": "competition",
+            "start_sec": 43.11,
+            "end_sec": 45.0,
+            "emphasis": true
+          }
+        ],
+        "emphasis_words": [
+          "competition",
+          "cooperation"
+        ],
+        "placement": "bottom third, safe zone"
+      },
+      {
+        "scene_id": 6,
+        "mode": "word_by_word",
+        "start_sec": 45.0,
+        "end_sec": 60.0,
+        "sentence": "Want to learn more about nature's secrets? Hit that follow button!",
+        "words": [
+          {
+            "word": "Want",
+            "start_sec": 45.0,
+            "end_sec": 46.18,
+            "emphasis": false
+          },
+          {
+            "word": "to",
+            "start_sec": 46.18,
+            "end_sec": 46.97,
+            "emphasis": false
+          },
+          {
+            "word": "learn",
+            "start_sec": 46.97,
+            "end_sec": 48.36,
+            "emphasis": false
+          },
+          {
+            "word": "more",
+            "start_sec": 48.36,
+            "end_sec": 49.54,
+            "emphasis": false
+          },
+          {
+            "word": "about",
+            "start_sec": 49.54,
+            "end_sec": 50.92,
+            "emphasis": false
+          },
+          {
+            "word": "nature's",
+            "start_sec": 50.92,
+            "end_sec": 52.89,
+            "emphasis": true
+          },
+          {
+            "word": "secrets",
+            "start_sec": 52.89,
+            "end_sec": 54.67,
+            "emphasis": false
+          },
+          {
+            "word": "Hit",
+            "start_sec": 54.67,
+            "end_sec": 55.66,
+            "emphasis": false
+          },
+          {
+            "word": "that",
+            "start_sec": 55.66,
+            "end_sec": 56.84,
+            "emphasis": false
+          },
+          {
+            "word": "follow",
+            "start_sec": 56.84,
+            "end_sec": 58.42,
+            "emphasis": false
+          },
+          {
+            "word": "button",
+            "start_sec": 58.42,
+            "end_sec": 60.0,
+            "emphasis": false
+          }
+        ],
+        "emphasis_words": [
+          "nature's"
+        ],
+        "placement": "bottom third, safe zone"
+      }
+    ]
+  },
+  "audio_mix_plan": {
+    "duration_sec": 60.0,
+    "tracks": {
+      "narration": {
+        "level_db": -3.0,
+        "voice_style": {},
+        "segments": [
+          {
+            "scene_id": 1,
+            "start_sec": 0.0,
+            "end_sec": 2.0,
+            "text": "Forests talk \u2014 through a hidden fungal internet under your feet.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/rc1_trees_001/voice.mp3"
+          },
+          {
+            "scene_id": 2,
+            "start_sec": 2.0,
+            "end_sec": 10.0,
+            "text": "This isn\u2019t magic; it\u2019s mycelium, a network of fungi connecting tree roots.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/rc1_trees_001/voice.mp3"
+          },
+          {
+            "scene_id": 3,
+            "start_sec": 10.0,
+            "end_sec": 20.0,
+            "text": "Trees share nutrients and even send distress signals when they\u2019re under threat.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/rc1_trees_001/voice.mp3"
+          },
+          {
+            "scene_id": 4,
+            "start_sec": 20.0,
+            "end_sec": 30.0,
+            "text": "Studies show that trees can warn each other about pests through this underground network.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/rc1_trees_001/voice.mp3"
+          },
+          {
+            "scene_id": 5,
+            "start_sec": 30.0,
+            "end_sec": 45.0,
+            "text": "This \u2018wood-wide web\u2019 is essential for forest survival, fostering cooperation over competition.",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/rc1_trees_001/voice.mp3"
+          },
+          {
+            "scene_id": 6,
+            "start_sec": 45.0,
+            "end_sec": 60.0,
+            "text": "Want to learn more about nature's secrets? Hit that follow button!",
+            "delivery": "",
+            "target_wpm": 0,
+            "pauses": [],
+            "emphasis": [],
+            "path": "data/productions/rc1_trees_001/voice.mp3"
+          }
+        ]
+      },
+      "music": {
+        "level_db": -18.0,
+        "style": "forest ambient",
+        "bpm_range": [
+          90,
+          120
+        ],
+        "energy_curve": [
+          "rise",
+          "sustain",
+          "resolve"
+        ],
+        "ducking": {
+          "enabled": true,
+          "trigger": "narration",
+          "duck_to_db": -26.0,
+          "attack_ms": 150,
+          "release_ms": 400
+        }
+      },
+      "sfx": {
+        "level_db": -10.0,
+        "cues": [
+          {
+            "scene_id": 1,
+            "cue": "bass hit",
+            "at_sec": 0.0
+          },
+          {
+            "scene_id": 2,
+            "cue": "whoosh",
+            "at_sec": 2.0
+          },
+          {
+            "scene_id": 3,
+            "cue": "whoosh",
+            "at_sec": 10.0
+          },
+          {
+            "scene_id": 4,
+            "cue": "whoosh",
+            "at_sec": 20.0
+          },
+          {
+            "scene_id": 5,
+            "cue": "whoosh",
+            "at_sec": 30.0
+          },
+          {
+            "scene_id": 6,
+            "cue": "whoosh",
+            "at_sec": 45.0
+          }
+        ]
+      },
+      "transitions": {
+        "level_db": -12.0,
+        "cues": []
+      }
+    },
+    "silence_drops": [
+      {
+        "scene_id": 5,
+        "at_sec": 29.6,
+        "duration_sec": 0.4,
+        "reason": "drop the full mix before the payoff beat"
+      }
+    ],
+    "loudness_target": {
+      "standard": "platform_safe_placeholder",
+      "integrated_lufs": -14.0,
+      "true_peak_db": -1.0,
+      "notes": "Verify with a real loudness pass when actual audio is rendered."
+    }
+  },
+  "transition_plan": {
+    "supported_types": [
+      "cut",
+      "fade",
+      "push",
+      "zoom",
+      "whip_pan",
+      "glitch",
+      "flash",
+      "documentary_slow_zoom",
+      "cinematic_push_in",
+      "quick_cut"
+    ],
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "cut",
+        "duration_sec": 0.0,
+        "sound_cue": "",
+        "source_language": "hard cut"
+      }
+    ],
+    "warnings": []
+  },
+  "motion_plan": [
+    {
+      "scene_id": 1,
+      "effect": "quick_punch_in",
+      "intensity": 70,
+      "duration_sec": 2.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.188
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_out"
+    },
+    {
+      "scene_id": 2,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 8.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 3,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 10.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 4,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 10.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 5,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 15.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    },
+    {
+      "scene_id": 6,
+      "effect": "static",
+      "intensity": 45,
+      "duration_sec": 15.0,
+      "zoom": {
+        "start_scale": 1.0,
+        "end_scale": 1.0
+      },
+      "pan": {
+        "direction": "none",
+        "amount_pct": 0.0
+      },
+      "ken_burns": false,
+      "easing": "ease_in_out"
+    }
+  ],
+  "asset_requirements": [],
+  "missing_assets": [],
+  "render_warnings": [],
+  "estimated_render_duration_sec": 60.0,
+  "production_readiness_score": 100,
+  "validation": {
+    "status": "SUCCESS",
+    "checks": [
+      {
+        "check": "scenes_present",
+        "passed": true,
+        "detail": "6 scenes in the plan."
+      },
+      {
+        "check": "scenes_have_visuals",
+        "passed": true,
+        "detail": "Every scene has a visual asset or prompt."
+      },
+      {
+        "check": "scenes_have_narration",
+        "passed": true,
+        "detail": "Every scene has narration."
+      },
+      {
+        "check": "captions_exist",
+        "passed": true,
+        "detail": "6 caption segments planned."
+      },
+      {
+        "check": "audio_plan_exists",
+        "passed": true,
+        "detail": "Audio mix plan covers narration/music/SFX tracks."
+      },
+      {
+        "check": "runtime_reasonable",
+        "passed": true,
+        "detail": "Total runtime 60.0s is inside the 5.0-180.0s short-form window."
+      },
+      {
+        "check": "output_format_supported",
+        "passed": true,
+        "detail": "9:16 1080x1920 MP4 \u2014 supported."
+      },
+      {
+        "check": "assets_resolved",
+        "passed": true,
+        "detail": "All asset requests were fulfilled."
+      }
+    ],
+    "problems": [],
+    "production_readiness_score": 100
+  },
+  "render_status": "SUCCESS",
+  "mock_output_path": "data/productions/rc1_trees_001/render.mp4",
+  "output_path": "data/productions/rc1_trees_001/render.mp4",
+  "mp4_path": "data/productions/rc1_trees_001/render.mp4",
+  "file_uri": "data/productions/rc1_trees_001/render.mp4",
+  "render_log": [
+    "color_bed\u2192mp4 (no visual assets resolved)",
+    "ffmpeg_exit=0"
+  ],
+  "render_job": {},
+  "mock": false,
+  "assembly": {
+    "ok": true,
+    "mock": false,
+    "error": "",
+    "output_path": "data/productions/rc1_trees_001/render.mp4",
+    "absolute_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/rc1_trees_001/render.mp4",
+    "bytes": 372720,
+    "duration_sec": 60.0,
+    "resolution": "1080x1920",
+    "ffmpeg": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/venv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "log": [
+      "color_bed\u2192mp4 (no visual assets resolved)",
+      "ffmpeg_exit=0"
+    ],
+    "visual_count": 0,
+    "has_audio": true,
+    "manifest": {
+      "title": "How Trees Communicate Underground",
+      "format": {
+        "aspect_ratio": "9:16",
+        "resolution": {
+          "width": 1080,
+          "height": 1920
+        },
+        "container": "mp4",
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "fps": 30,
+        "orientation": "vertical",
+        "platforms": [
+          "youtube_shorts",
+          "tiktok",
+          "instagram_reels",
+          "facebook_reels"
+        ]
+      },
+      "visuals": [],
+      "audio": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/rc1_trees_001/voice.mp3"
+    }
+  },
+  "render_manifest": {
+    "scenes": 6,
+    "timeline_segments": 6,
+    "caption_segments": 6,
+    "audio_tracks": [
+      "narration",
+      "music",
+      "sfx",
+      "transitions"
+    ],
+    "transitions": 5,
+    "assets_requested": 0,
+    "assets_missing": 0,
+    "warnings": 0,
+    "readiness": 100,
+    "ready_for_publishing": true,
+    "real_mp4": true
+  }
+}

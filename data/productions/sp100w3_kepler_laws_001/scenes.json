@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Planets don't orbit in perfect circles \u2014 they dance in ellipses.",
+    "visual_description": "Hook visual: Planets don't orbit in perfect circles \u2014 they dance in ellipses.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Planets don't orbit in perfect circles \u2014 they dance in ellipses.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Planets don't orbit in perfect circles \u2014 they dance in ellipses.",
+    "stock_footage_query": "",
+    "text_overlay": "Planets don't orbit in",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "In the early 1600s, Johannes Kepler cracked the code of planetary movement.",
+    "visual_description": "Context visual: In the early 1600s, Johannes Kepler cracked the code of planetary movement.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: In the early 1600s, Johannes Kepler cracked the code of planetary movement.",
+    "ai_video_prompt": "Cinematic motion: Context visual: In the early 1600s, Johannes Kepler cracked the code of planetary movement.",
+    "stock_footage_query": "",
+    "text_overlay": "In the early 1600s,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "He discovered that planets sweep out equal areas in equal times.",
+    "visual_description": "Escalation visual: He discovered that planets sweep out equal areas in equal times.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: He discovered that planets sweep out equal areas in equal times.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: He discovered that planets sweep out equal areas in equal times.",
+    "stock_footage_query": "",
+    "text_overlay": "He discovered that planets",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Imagine a line from the sun to a planet. It covers the same area in a given time, whether it\u2019s close or far.",
+    "visual_description": "Evidence visual: Imagine a line from the sun to a planet. It covers the same area in a given time, whether it\u2019s close or far.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Imagine a line from the sun to a planet. It covers the same area in a given time, whether it\u2019s close or far.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Imagine a line from the sun to a planet. It covers the same area in a given time, whether it\u2019s close or far.",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine a line from",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "This means planets move faster when they're nearer to the sun \u2014 gravity really is a game changer!",
+    "visual_description": "Payoff visual: This means planets move faster when they're nearer to the sun \u2014 gravity really is a game changer!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This means planets move faster when they're nearer to the sun \u2014 gravity really is a game changer!",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This means planets move faster when they're nearer to the sun \u2014 gravity really is a game changer!",
+    "stock_footage_query": "",
+    "text_overlay": "This means planets move",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "Curious about more cosmic mysteries? Like and follow for more!",
+    "visual_description": "Cta visual: Curious about more cosmic mysteries? Like and follow for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more cosmic mysteries? Like and follow for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more cosmic mysteries? Like and follow for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more cosmic",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

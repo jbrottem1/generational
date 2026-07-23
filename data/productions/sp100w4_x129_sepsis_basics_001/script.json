@@ -1,0 +1,74 @@
+{
+  "title": "Sepsis basics",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the crucial and often misunderstood basics of sepsis.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about sepsis basics.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Sepsis is a life-threatening response to infection. Think of it as the body going into overdrive.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Symptoms can escalate quickly\u2014fever, rapid heartbeat, confusion. Ignoring them? Risky.",
+      "emotion": "urgency",
+      "delivery": "intense",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows that early treatment can significantly improve survival rates. Timing is everything.",
+      "emotion": "hope",
+      "delivery": "assured",
+      "retention_device": "statistic"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 48.0,
+      "segment_type": "payoff",
+      "voiceover": "So, if you notice signs of sepsis, act fast! Knowledge could save a life\u2014yours or someone else's.",
+      "emotion": "empowerment",
+      "delivery": "encouraging",
+      "retention_device": "strong statement"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 48.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay informed. Share this video and help spread awareness about sepsis.",
+      "emotion": "determination",
+      "delivery": "motivational",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about sepsis basics. Sepsis is a life-threatening response to infection. Think of it as the body going into overdrive. Symptoms can escalate quickly\u2014fever, rapid heartbeat, confusion. Ignoring them? Risky. Research shows that early treatment can significantly improve survival rates. Timing is everything. So, if you notice signs of sepsis, act fast! Knowledge could save a life\u2014yours or someone else's. Stay informed. Share this video and help spread awareness about sepsis.",
+  "call_to_action": "Stay informed. Share this video and help spread awareness about sepsis.",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:30:40.551760+00:00",
+  "source": "ai"
+}

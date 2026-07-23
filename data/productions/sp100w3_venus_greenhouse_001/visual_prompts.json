@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: A runaway greenhouse turned Venus into a crushing, scorching world.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Imagine a planet where the temperature reaches 900 degrees Fahrenheit. That's Venus.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Once similar to Earth, Venus underwent a dramatic change, trapping heat like a furnace.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Its thick atmosphere, rich in carbon dioxide, creates extreme pressure\u2014over 90 times that of Earth.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: This runaway greenhouse effect not only scorched the surface but also created sulfuric acid clouds.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about more planetary mysteries? Hit that follow button!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: A runaway greenhouse turned Venus into a crushing, scorching world.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Imagine a planet where the temperature reaches 900 degrees Fahrenheit. That's Venus.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Once similar to Earth, Venus underwent a dramatic change, trapping heat like a furnace.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Its thick atmosphere, rich in carbon dioxide, creates extreme pressure\u2014over 90 times that of Earth.",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: This runaway greenhouse effect not only scorched the surface but also created sulfuric acid clouds.",
+      "duration_sec": 15.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about more planetary mysteries? Hit that follow button!",
+      "duration_sec": 15.0
+    }
+  ]
+}

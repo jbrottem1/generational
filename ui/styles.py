@@ -89,6 +89,14 @@ div[data-testid="stVerticalBlockBorderWrapper"] {
 section[data-testid="stSidebar"] div[data-testid="stMetric"] {
     padding: 10px 8px;
 }
+
+.studio-header {
+    background: linear-gradient(135deg, #1a1d27 0%, #262a36 100%);
+    border: 1px solid #333748;
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+}
 </style>
 """
 

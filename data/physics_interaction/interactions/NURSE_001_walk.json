@@ -1,0 +1,55 @@
+{
+  "package_type": "INTERACTION_PACKAGE",
+  "package_version": "1.0.0",
+  "engine_id": "physics_interaction",
+  "created_at": "2026-07-18T01:15:31.119134+00:00",
+  "interaction_id": "NURSE_001_walk",
+  "actor": "NURSE_001",
+  "target": "nav_mesh",
+  "interaction_type": "walking",
+  "contact_points": [
+    {
+      "id": "foot_left",
+      "required": true,
+      "must_reach": true
+    },
+    {
+      "id": "foot_right",
+      "required": true,
+      "must_reach": true
+    }
+  ],
+  "physics_state": "manipulating",
+  "constraints": {
+    "no_float": true,
+    "no_clip": true,
+    "no_teleport": true,
+    "ground_contact_if_locomotion": true,
+    "hand_must_hit_target": false
+  },
+  "animation_requirements": [
+    "walk_cycle",
+    "foot_plant",
+    "arm_swing"
+  ],
+  "completion_state": {
+    "success_when": "physics_state==complete",
+    "required_final_state": "complete",
+    "failed_if": [
+      "hand_misses_target",
+      "foot_slide",
+      "clip_detected",
+      "actor_float"
+    ]
+  },
+  "timing": {
+    "t_start": 0.0,
+    "t_end": 1.2
+  },
+  "world_id": "WORLD-GMRI-MEDICAL-LAB",
+  "architecture": {
+    "frozen": true,
+    "no_new_renderer": true,
+    "not_a_world_builder": true
+  }
+}

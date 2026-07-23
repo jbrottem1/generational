@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if you could rewrite the rules of inheritance?",
+    "visual_description": "Hook visual: What if you could rewrite the rules of inheritance?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if you could rewrite the rules of inheritance?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if you could rewrite the rules of inheritance?",
+    "stock_footage_query": "",
+    "text_overlay": "What if you could",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Gene drives are techniques that bias inheritance, ensuring specific traits spread rapidly through populations.",
+    "visual_description": "Context visual: Gene drives are techniques that bias inheritance, ensuring specific traits spread rapidly through populations.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Gene drives are techniques that bias inheritance, ensuring specific traits spread rapidly through populations.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Gene drives are techniques that bias inheritance, ensuring specific traits spread rapidly through populations.",
+    "stock_footage_query": "",
+    "text_overlay": "Gene drives are techniques",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "Imagine eradicating diseases or modifying crops for resilience, but at what cost?",
+    "visual_description": "Escalation visual: Imagine eradicating diseases or modifying crops for resilience, but at what cost?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Imagine eradicating diseases or modifying crops for resilience, but at what cost?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Imagine eradicating diseases or modifying crops for resilience, but at what cost?",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine eradicating diseases or",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Current research, though promising, raises ethical questions about biodiversity and unintended consequences.",
+    "visual_description": "Evidence visual: Current research, though promising, raises ethical questions about biodiversity and unintended consequences.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Current research, though promising, raises ethical questions about biodiversity and unintended consequences.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Current research, though promising, raises ethical questions about biodiversity and unintended consequences.",
+    "stock_footage_query": "",
+    "text_overlay": "Current research, though promising,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "serious",
+    "length_sec": 20.0,
+    "narration": "Gene drives could transform biotechnology, but responsible regulation is crucial to prevent potential chaos.",
+    "visual_description": "Payoff visual: Gene drives could transform biotechnology, but responsible regulation is crucial to prevent potential chaos.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Gene drives could transform biotechnology, but responsible regulation is crucial to prevent potential chaos.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Gene drives could transform biotechnology, but responsible regulation is crucial to prevent potential chaos.",
+    "stock_footage_query": "",
+    "text_overlay": "Gene drives could transform",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Curious about the future of gene drives? Follow for more insights.",
+    "visual_description": "Cta visual: Curious about the future of gene drives? Follow for more insights.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about the future of gene drives? Follow for more insights.",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about the future of gene drives? Follow for more insights.",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about the future",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

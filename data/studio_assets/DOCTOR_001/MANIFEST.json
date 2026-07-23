@@ -1,0 +1,69 @@
+{
+  "package_type": "GENERATIONAL_STUDIO_CHARACTER",
+  "character_id": "DOCTOR_001",
+  "legacy_alias": "CHAR-0001",
+  "name": "The Doctor",
+  "version": "1.1.0",
+  "status": "permanent",
+  "generated_at": "2026-07-16T03:43:17.034873+00:00",
+  "root": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/studio_assets/DOCTOR_001",
+  "counts": {
+    "orthographic": 5,
+    "expressions": 70,
+    "hand_poses": 18,
+    "animations": 27,
+    "lighting_refs": 6,
+    "camera_tests": 10,
+    "environment_interactions": 8
+  },
+  "libraries": {
+    "ORTHOGRAPHIC": true,
+    "EXPRESSIONS": 70,
+    "HAND_POSES": 18,
+    "ANIMATION": 27,
+    "LIGHTING_REFERENCE": true,
+    "CAMERA_TESTS": 10,
+    "ENVIRONMENT_INTERACTIONS": 8,
+    "CLOSEUP_REFERENCE": true,
+    "FULLBODY_REFERENCE": true,
+    "SCALE_REFERENCE": true,
+    "MASTER_CONCEPT_ART": true
+  },
+  "master_concept_art": {
+    "path": "MASTER_CONCEPT_ART/",
+    "bible": "MASTER_CONCEPT_ART/MASTER_CONCEPT_BIBLE.md",
+    "primary_keys": [
+      "MASTER_CONCEPT_ART/doctor_001_06_hero_portrait.png",
+      "MASTER_CONCEPT_ART/doctor_001_20_official_character_reference_sheet.png"
+    ],
+    "status": "permanent_visual_identity_lock"
+  },
+  "specs": [
+    "FACIAL_TOPOLOGY.json",
+    "EYE_MOVEMENT_MODEL.json",
+    "BLINKING_MODEL.json",
+    "BREATHING_PROFILE.json",
+    "SKELETAL_PROPORTIONS.json",
+    "MUSCLE_DEFINITION.json",
+    "SKIN_MATERIAL.json",
+    "HAIR_PROFILE.json",
+    "MATERIALS.json",
+    "CLOTHING_SIMULATION.json",
+    "SILHOUETTE_RULES.json",
+    "RIG_SPECIFICATION.json",
+    "ANIMATION_CONSTRAINTS.json",
+    "GESTURE_LIBRARY.json",
+    "HAND_POSE_LIBRARY.json",
+    "VOICE_IDENTITY.json",
+    "PERSONALITY_PROFILE.json",
+    "EMOTIONAL_PROFILE.json"
+  ],
+  "philosophy": {
+    "not_episode_sheet": true,
+    "permanent_reusable_ip": true,
+    "visually_identical_across_videos": true,
+    "no_new_renderer": true,
+    "no_pipeline_redesign": true,
+    "cinematic_realism": true
+  }
+}

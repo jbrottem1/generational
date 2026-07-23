@@ -1,0 +1,68 @@
+{
+  "project": "True Animation Benchmark V1",
+  "generated_at": "2026-07-11T02:09:01.293012+00:00",
+  "status": "PASSED",
+  "duration_sec": 18.0,
+  "attempts": 1,
+  "winning_performance": "swim_float",
+  "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/True_Animation_Benchmark_V1_Dash_Ocean_Discovery.mp4",
+  "export_confirmed": true,
+  "render_time_sec": 37.45,
+  "evaluation": {
+    "exceeds_slideshow": true,
+    "motion_score": 100,
+    "motion_class": "true_layered_animation",
+    "layers": [
+      "environment",
+      "character_performance",
+      "camera_path",
+      "particles_noise",
+      "lighting_vignette"
+    ],
+    "ken_burns_only": false,
+    "bytes": 546565
+  },
+  "motion_manifest": {
+    "ok": true,
+    "mock": false,
+    "motion_class": "true_layered_animation",
+    "not_ken_burns_only": true,
+    "layers": [
+      "environment",
+      "character_performance",
+      "camera_path",
+      "particles_noise",
+      "lighting_vignette"
+    ],
+    "performance": "swim_float",
+    "camera": "push_in",
+    "palette": "ocean",
+    "duration_sec": 18.0,
+    "output_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/_validation/true_animation_benchmark/attempt_1.mp4",
+    "bytes": 546565,
+    "log": [
+      "living_background",
+      "character_performance=swim_float",
+      "composite_ok",
+      "audio_mux"
+    ]
+  },
+  "pipeline": [
+    "research",
+    "script",
+    "storyboard_intent",
+    "character_blocking",
+    "environment_blocking",
+    "animation_planning",
+    "character_animation",
+    "environment_animation",
+    "camera_animation",
+    "vfx_particles",
+    "lighting",
+    "scene_rendering",
+    "final_film"
+  ],
+  "tech_decision": "Layered FFmpeg true_motion now; image-to-video providers next when keys present",
+  "slideshow_rejected": true,
+  "ken_burns_only_check": true
+}

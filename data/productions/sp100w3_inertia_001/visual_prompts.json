@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Objects resist changes in motion \u2014 that's why seatbelts matter.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: This resistance is known as inertia, the tendency of objects to keep doing what they're doing.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: When you're in a car and it suddenly stops, your body wants to keep moving. That's why seatbelts save lives.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Inertia is everywhere \u2014 from riding a bike to playing sports. Don't underestimate its power!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Understanding inertia helps you make safe choices every day, especially on the road.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to learn more surprising science? Hit that follow button!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Objects resist changes in motion \u2014 that's why seatbelts matter.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: This resistance is known as inertia, the tendency of objects to keep doing what they're doing.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: When you're in a car and it suddenly stops, your body wants to keep moving. That's why seatbelts save lives.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Inertia is everywhere \u2014 from riding a bike to playing sports. Don't underestimate its power!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Understanding inertia helps you make safe choices every day, especially on the road.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to learn more surprising science? Hit that follow button!",
+      "duration_sec": 26.0
+    }
+  ]
+}

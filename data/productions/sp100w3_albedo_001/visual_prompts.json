@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Bright ice reflects sunlight; dark water absorbs it. What happens next?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: This is called the albedo effect. More ice means less absorption, keeping our planet cool.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: But as ice melts, dark oceans emerge, soaking up heat. The cycle begins.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Research shows that this albedo feedback accelerates warming. It\u2019s a tipping point.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Melting ice isn't just a loss; it fuels a hotter future for all of us.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Stay informed and take action. Follow for more insights on climate science!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Bright ice reflects sunlight; dark water absorbs it. What happens next?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: This is called the albedo effect. More ice means less absorption, keeping our planet cool.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: But as ice melts, dark oceans emerge, soaking up heat. The cycle begins.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Research shows that this albedo feedback accelerates warming. It\u2019s a tipping point.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Melting ice isn't just a loss; it fuels a hotter future for all of us.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Stay informed and take action. Follow for more insights on climate science!",
+      "duration_sec": 26.0
+    }
+  ]
+}

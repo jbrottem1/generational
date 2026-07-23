@@ -1,0 +1,64 @@
+{
+  "character_id": "CHAR-PROFESSOR-001",
+  "name": "Professor Gen",
+  "short_name": "Gen",
+  "version": "1.0.0",
+  "status": "locked",
+  "role": "foundation_flagship_host",
+  "aspect_safe": "9:16",
+  "voice_profile": {
+    "voice": "nova",
+    "model": "tts-1-hd"
+  },
+  "stick_figure": {
+    "outline": [0, 0, 0, 255],
+    "face_fill": [255, 255, 255, 255],
+    "stroke": 7,
+    "head_ratio": 0.34,
+    "attire": "none"
+  },
+  "attire": "none",
+  "attire_note": "Lab coat forbidden for Gen v1; optional future variant needs version bump (coat=True / attire=lab_coat).",
+  "silhouette": {
+    "outline_color": "#000000",
+    "fill_color": "#FFFFFF",
+    "stroke_weight_norm": 0.012,
+    "head_ratio_of_height": 0.34,
+    "limb_style": "single_stroke_sticks",
+    "hand_style": "round_mitt",
+    "foot_style": "small_oval"
+  },
+  "proportions": {
+    "total_height_units": 1.0,
+    "head_diameter": 0.34,
+    "stroke": 7
+  },
+  "studio": {
+    "background": [255, 255, 255],
+    "mode": "foundation_white_studio",
+    "scenery": "none"
+  },
+  "forbidden": [
+    "colored_body_fill",
+    "logos_on_body",
+    "hair",
+    "3d_limb_shading",
+    "wave_spam_professor_mode",
+    "macrocenter_scenery_in_foundation",
+    "lab_coat_in_foundation",
+    "redesign_without_version_bump",
+    "sarcasm_at_learner"
+  ],
+  "forbidden_gestures_professor": ["wave", "react"],
+  "preferred_gestures": ["idle", "write", "point", "think", "present"],
+  "recognition_keys": [
+    "clean_black_stick",
+    "white_face",
+    "calm_tutor_presence",
+    "purposeful_teaching_gestures"
+  ],
+  "relationships": {
+    "predecessor_plate": "CHAR-STICK-001",
+    "separate_brand_mascot": "CHAR-DASH"
+  }
+}

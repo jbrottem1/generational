@@ -1,0 +1,39 @@
+{
+  "character_id": "CHAR-ATLAS",
+  "name": "Professor Atlas",
+  "role": "lead_educator",
+  "style_mode": "cinematic_realism",
+  "is_gold_standard": false,
+  "inherits_from": "BASE_HUMAN_REALISM",
+  "reference_implementation": "DOCTOR_001",
+  "canonical_height_cm": 188,
+  "body_mass_estimate_kg": 84,
+  "age_range": "adult_mid",
+  "biological_build": "tall_lean_scholar",
+  "silhouette": "tall_blazer_glasses",
+  "palette": {
+    "skin": "#FFD6B4",
+    "hair": "#28201C",
+    "coat": "#1C3056",
+    "accent": "#30AAA0"
+  },
+  "personality": [
+    "warm",
+    "authoritative",
+    "curious",
+    "patient"
+  ],
+  "voice": {
+    "voice": "alloy",
+    "style": "documentary_host",
+    "pace": "measured"
+  },
+  "wardrobe_default": "deep_navy_blazer",
+  "gait_characteristics": [
+    "measured_pace",
+    "stable_posture",
+    "direct_gaze"
+  ],
+  "forbid_regenerate_from_scratch": true,
+  "framework_id": "HUMAN_REALISM_FRAMEWORK_V1"
+}

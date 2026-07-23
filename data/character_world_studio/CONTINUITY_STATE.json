@@ -1,0 +1,236 @@
+{
+  "version": 1,
+  "characters_seen": {
+    "CHAR-NOVA": {
+      "id": "CHAR-NOVA",
+      "name": "Nova",
+      "appearances": 3,
+      "last_seen": "2026-07-15T23:52:07.410631+00:00",
+      "last_topic": "Every Decision Matters",
+      "signature_clothing": {
+        "coat": "violet_hoodie",
+        "shirt": "soft_white",
+        "accent": "cyan_circuit_trim",
+        "accessory": "ear_glow_band"
+      },
+      "silhouette": "hoodie_glow_band"
+    },
+    "CHAR-PIPER": {
+      "id": "CHAR-PIPER",
+      "name": "Piper",
+      "appearances": 10,
+      "last_seen": "2026-07-16T03:05:37.230217+00:00",
+      "last_topic": "Why Fire Hydrants Are Different Colors",
+      "signature_clothing": {
+        "coat": "amber_workwear",
+        "shirt": "slate_tee",
+        "accent": "toolbelt",
+        "accessory": "goggles_forehead"
+      },
+      "silhouette": "goggles_toolbelt"
+    },
+    "CHAR-ATLAS": {
+      "id": "CHAR-ATLAS",
+      "name": "Professor Atlas",
+      "appearances": 4,
+      "last_seen": "2026-07-16T03:05:37.230221+00:00",
+      "last_topic": "Why Fire Hydrants Are Different Colors",
+      "signature_clothing": {
+        "coat": "deep_navy_blazer",
+        "shirt": "soft_cream",
+        "accent": "teal_pocket_square",
+        "accessory": "round_glasses"
+      },
+      "silhouette": "tall_blazer_glasses"
+    },
+    "CHAR-0001": {
+      "id": "CHAR-0001",
+      "name": "The Doctor",
+      "appearances": 10,
+      "last_seen": "2026-07-16T00:24:09.911186+00:00",
+      "last_topic": "Why Fire Hydrants Are Different Colors",
+      "signature_clothing": {
+        "coat": "white_medical_chassis_coat",
+        "shirt": "titanium_underplating",
+        "accent": "warm_blue_illumination",
+        "accessory": "medical_scanner_module"
+      },
+      "silhouette": "white_cyborg_doctor_blue_glow"
+    },
+    "CHAR-LUNA": {
+      "id": "CHAR-LUNA",
+      "name": "Luna",
+      "appearances": 7,
+      "last_seen": "2026-07-16T03:43:19.999382+00:00",
+      "last_topic": "The Art of Being Happy",
+      "signature_clothing": {
+        "coat": "sage_lab_coat",
+        "shirt": "moss_green",
+        "accent": "leaf_pin",
+        "accessory": "sample_pouch"
+      },
+      "silhouette": "lab_coat_leaf_pin"
+    },
+    "DOCTOR_001": {
+      "id": "DOCTOR_001",
+      "name": "The Doctor",
+      "appearances": 2,
+      "last_seen": "2026-07-16T03:43:19.999376+00:00",
+      "last_topic": "The Art of Being Happy",
+      "signature_clothing": {
+        "coat": "white_medical_chassis_coat",
+        "shirt": "titanium_underplating",
+        "accent": "warm_blue_illumination",
+        "accessory": "medical_scanner_module"
+      },
+      "silhouette": "white_cyborg_doctor_blue_glow"
+    }
+  },
+  "locations_seen": {
+    "LOC-FUTURE-CITY": {
+      "id": "LOC-FUTURE-CITY",
+      "name": "Future City",
+      "uses": 3,
+      "last_seen": "2026-07-15T23:52:07.410636+00:00",
+      "architecture": "vertical_plazas_and_transit_spines",
+      "detail_dressing": [
+        "billboards",
+        "planters",
+        "chargers"
+      ]
+    },
+    "LOC-ENGINEERING-WORKSHOP": {
+      "id": "LOC-ENGINEERING-WORKSHOP",
+      "name": "Engineering Workshop",
+      "uses": 8,
+      "last_seen": "2026-07-16T03:05:37.230223+00:00",
+      "architecture": "open_bay_with_mezzanine",
+      "detail_dressing": [
+        "blueprints",
+        "coffee_cups",
+        "labeled_bins",
+        "safety_posters"
+      ]
+    },
+    "LOC-OCEAN-OBSERVATORY": {
+      "id": "LOC-OCEAN-OBSERVATORY",
+      "name": "Ocean Observatory",
+      "uses": 5,
+      "last_seen": "2026-07-15T23:08:59.200291+00:00",
+      "architecture": "glass_sphere_over_reef",
+      "detail_dressing": [
+        "tide_charts",
+        "wetsuits_on_hooks",
+        "seaweed_samples"
+      ]
+    },
+    "LOC-GMRI": {
+      "id": "LOC-GMRI",
+      "name": "The Generational Medical Research Institute",
+      "uses": 2,
+      "last_seen": "2026-07-16T03:43:19.999384+00:00",
+      "architecture": "tiered_glass_and_titanium_medical_campus_with_gardens",
+      "detail_dressing": [
+        "notes_on_whiteboards",
+        "coffee_cups",
+        "books_on_shelves",
+        "running_computers",
+        "plants",
+        "reflection_on_glass",
+        "charts"
+      ]
+    }
+  },
+  "productions": [
+    {
+      "topic": "The Art of Being Happy",
+      "production_id": "local",
+      "at": "2026-07-16T03:43:19.999386+00:00"
+    },
+    {
+      "topic": "The Art of Being Happy",
+      "production_id": "local",
+      "at": "2026-07-16T03:42:30.393709+00:00"
+    },
+    {
+      "topic": "Why Fire Hydrants Are Different Colors",
+      "production_id": "local",
+      "at": "2026-07-16T03:05:37.230224+00:00"
+    },
+    {
+      "topic": "Why Fire Hydrants Are Different Colors",
+      "production_id": "local",
+      "at": "2026-07-16T00:52:57.323929+00:00"
+    },
+    {
+      "topic": "Why Fire Hydrants Are Different Colors",
+      "production_id": "local",
+      "at": "2026-07-16T00:24:09.911189+00:00"
+    },
+    {
+      "topic": "Why Fire Hydrants Are Different Colors",
+      "production_id": "local",
+      "at": "2026-07-16T00:13:54.836255+00:00"
+    },
+    {
+      "topic": "Why Fire Hydrants Are Different Colors",
+      "production_id": "local",
+      "at": "2026-07-16T00:13:43.914073+00:00"
+    },
+    {
+      "topic": "Every Decision Matters",
+      "production_id": "local",
+      "at": "2026-07-15T23:52:07.410637+00:00"
+    },
+    {
+      "topic": "The Parasite You May Never Know You Have",
+      "production_id": "local",
+      "at": "2026-07-15T23:08:59.200292+00:00"
+    },
+    {
+      "topic": "The Parasite You May Never Know You Have",
+      "production_id": "ops_f9daa1da06",
+      "at": "2026-07-15T23:08:53.542129+00:00"
+    },
+    {
+      "topic": "The Parasite You May Never Know You Have",
+      "production_id": "ops_82b47c10aa",
+      "at": "2026-07-15T23:07:38.071425+00:00"
+    },
+    {
+      "topic": "The Parasite You May Never Know You Have",
+      "production_id": "local",
+      "at": "2026-07-15T23:03:52.008913+00:00"
+    },
+    {
+      "topic": "The Parasite You May Never Know You Have",
+      "production_id": "ops_d571a6407f",
+      "at": "2026-07-15T23:03:24.021045+00:00"
+    },
+    {
+      "topic": "Why Fire Hydrants Are Different Colors",
+      "production_id": "local",
+      "at": "2026-07-15T22:53:01.072141+00:00"
+    },
+    {
+      "topic": "Why Fire Hydrants Are Different Colors",
+      "production_id": "local",
+      "at": "2026-07-15T22:42:57.907084+00:00"
+    },
+    {
+      "topic": "Why Fire Hydrants Are Different Colors",
+      "production_id": "local",
+      "at": "2026-07-15T22:42:57.562415+00:00"
+    },
+    {
+      "topic": "Why Fire Hydrants Are Different Colors",
+      "production_id": "local",
+      "at": "2026-07-15T22:42:39.596726+00:00"
+    },
+    {
+      "topic": "Why Fire Hydrants Are Different Colors",
+      "production_id": "local",
+      "at": "2026-07-15T22:42:39.302891+00:00"
+    }
+  ]
+}

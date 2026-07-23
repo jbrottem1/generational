@@ -1,0 +1,16 @@
+{
+  "character_id": "CHAR-DASH",
+  "version": "1.0.0",
+  "expressions": {
+    "neutral": {"brows": "soft_arch", "eyes": "forward", "mouth": "slight_smile", "energy": 0.4},
+    "curious": {"brows": "raised", "eyes": "wide_lean", "mouth": "small_o", "energy": 0.6},
+    "excited": {"brows": "high", "eyes": "bright_up", "mouth": "big_smile", "energy": 0.85},
+    "confused": {"brows": "asymmetric", "eyes": "one_squint", "mouth": "wavy", "energy": 0.5},
+    "shock": {"brows": "max_raise", "eyes": "huge_pupils", "mouth": "open_o", "energy": 0.9},
+    "panic": {"brows": "angled_in", "eyes": "darting", "mouth": "open", "energy": 1.0},
+    "celebrate": {"brows": "high", "eyes": "happy_arcs", "mouth": "grin", "energy": 0.95},
+    "thinking": {"brows": "one_up", "eyes": "up_left", "mouth": "flat", "energy": 0.35},
+    "audience": {"brows": "soft", "eyes": "to_camera", "mouth": "smile", "energy": 0.55}
+  },
+  "blend_rule": "Crossfade expressions in <=180ms; never hold a face static >3s without body motion."
+}

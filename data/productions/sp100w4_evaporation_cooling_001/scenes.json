@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Ever wonder why you sweat? It's your body's secret weapon against heat.",
+    "visual_description": "Hook visual: Ever wonder why you sweat? It's your body's secret weapon against heat.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever wonder why you sweat? It's your body's secret weapon against heat.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever wonder why you sweat? It's your body's secret weapon against heat.",
+    "stock_footage_query": "",
+    "text_overlay": "Ever wonder why you",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 7.0,
+    "narration": "When your body heats up, it triggers sweat glands to release moisture onto your skin.",
+    "visual_description": "Context visual: When your body heats up, it triggers sweat glands to release moisture onto your skin.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: When your body heats up, it triggers sweat glands to release moisture onto your skin.",
+    "ai_video_prompt": "Cinematic motion: Context visual: When your body heats up, it triggers sweat glands to release moisture onto your skin.",
+    "stock_footage_query": "",
+    "text_overlay": "When your body heats",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 9.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 7.0,
+    "narration": "But here's the twist: that sweat doesn't cool you directly.",
+    "visual_description": "Escalation visual: But here's the twist: that sweat doesn't cool you directly.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But here's the twist: that sweat doesn't cool you directly.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But here's the twist: that sweat doesn't cool you directly.",
+    "stock_footage_query": "",
+    "text_overlay": "But here's the twist:",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 9.0,
+      "end_sec": 16.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 9.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 7.0,
+    "narration": "It's all about evaporation. As sweat evaporates, it takes heat away from your skin.",
+    "visual_description": "Evidence visual: It's all about evaporation. As sweat evaporates, it takes heat away from your skin.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: It's all about evaporation. As sweat evaporates, it takes heat away from your skin.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: It's all about evaporation. As sweat evaporates, it takes heat away from your skin.",
+    "stock_footage_query": "",
+    "text_overlay": "It's all about evaporation.",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 16.0,
+      "end_sec": 23.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 16.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "satisfaction",
+    "length_sec": 7.0,
+    "narration": "This process is called evaporative cooling, and it keeps your body temperature just right.",
+    "visual_description": "Payoff visual: This process is called evaporative cooling, and it keeps your body temperature just right.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This process is called evaporative cooling, and it keeps your body temperature just right.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This process is called evaporative cooling, and it keeps your body temperature just right.",
+    "stock_footage_query": "",
+    "text_overlay": "This process is called",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 23.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 23.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 30.0,
+    "narration": "Next time you sweat, remember: it's your body\u2019s way of keeping cool. Tap to learn more about your amazing biology!",
+    "visual_description": "Cta visual: Next time you sweat, remember: it's your body\u2019s way of keeping cool. Tap to learn more about your amazing biology!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Next time you sweat, remember: it's your body\u2019s way of keeping cool. Tap to learn more about your amazing biology!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Next time you sweat, remember: it's your body\u2019s way of keeping cool. Tap to learn more about your amazing biology!",
+    "stock_footage_query": "",
+    "text_overlay": "Next time you sweat,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  }
+]

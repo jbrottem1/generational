@@ -1,0 +1,84 @@
+{
+  "title": "Neurogenesis Adult Limits",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the boundaries of neurogenesis in adults reveals unexpected insights.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about neurogenesis adult limits.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Neurogenesis is the process of forming new neurons, mostly studied in young brains. But what about adults?",
+      "emotion": "curiosity",
+      "delivery": "exploratory",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Research shows that neurogenesis occurs mainly in the hippocampus, essential for learning and memory.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "fact reveal"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "However, the rate declines with age and factors like stress can inhibit it. That's where things get interesting.",
+      "emotion": "curiosity",
+      "delivery": "intrigued",
+      "retention_device": "unexpected twist"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "But preliminary studies suggest lifestyle choices like exercise and learning could boost neurogenesis.",
+      "emotion": "curiosity",
+      "delivery": "hopeful",
+      "retention_device": "new possibility"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 46.0,
+      "segment_type": "payoff",
+      "voiceover": "So, while there are limits, the potential for growth exists. It's about how we nurture our brains.",
+      "emotion": "curiosity",
+      "delivery": "inspiring",
+      "retention_device": "positive affirmation"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 46.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to learn more about your brain? Hit follow for more science insights!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about neurogenesis adult limits. Neurogenesis is the process of forming new neurons, mostly studied in young brains. But what about adults? Research shows that neurogenesis occurs mainly in the hippocampus, essential for learning and memory. However, the rate declines with age and factors like stress can inhibit it. That's where things get interesting. But preliminary studies suggest lifestyle choices like exercise and learning could boost neurogenesis. So, while there are limits, the potential for growth exists. It's about how we nurture our brains. Want to learn more about your brain? Hit follow for more science insights!",
+  "call_to_action": "Hit follow for more science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:21:11.129724+00:00",
+  "source": "ai"
+}

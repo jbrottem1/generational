@@ -1,0 +1,43 @@
+{
+  "department_id": "facial_performance_studio",
+  "display_name": "Facial Performance Studio",
+  "mission": "Upgrade DOCTOR_001 facial realism while preserving shape-key contract",
+  "supports": [
+    "eye_moisture",
+    "iris_detail",
+    "independent_eyeballs",
+    "micro_expressions",
+    "natural_blinking",
+    "brow_movement",
+    "cheeks",
+    "jaw",
+    "lips",
+    "visemes",
+    "smiles",
+    "concern",
+    "joy",
+    "curiosity",
+    "empathy"
+  ],
+  "required_shape_keys": [
+    "jaw_open",
+    "smile",
+    "concern",
+    "blink_L",
+    "blink_R",
+    "brow_raise",
+    "lip_widen",
+    "viseme_A",
+    "viseme_E",
+    "viseme_O",
+    "viseme_U",
+    "viseme_M",
+    "viseme_F"
+  ],
+  "assets": [
+    {
+      "asset_id": "DOCTOR_001_FACE",
+      "actor_id": "DOCTOR_001"
+    }
+  ]
+}

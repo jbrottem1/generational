@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about baryon acoustic oscillations than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about baryon acoustic oscillations than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about baryon acoustic oscillations than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about baryon acoustic oscillations than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "These oscillations are sound waves from the early universe, shaping how galaxies formed.",
+    "visual_description": "Context visual: These oscillations are sound waves from the early universe, shaping how galaxies formed.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: These oscillations are sound waves from the early universe, shaping how galaxies formed.",
+    "ai_video_prompt": "Cinematic motion: Context visual: These oscillations are sound waves from the early universe, shaping how galaxies formed.",
+    "stock_footage_query": "",
+    "text_overlay": "These oscillations are sound",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "wonder",
+    "length_sec": 8.0,
+    "narration": "As the universe expanded, these pressure waves created ripples in the cosmic microwave background.",
+    "visual_description": "Escalation visual: As the universe expanded, these pressure waves created ripples in the cosmic microwave background.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: As the universe expanded, these pressure waves created ripples in the cosmic microwave background.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: As the universe expanded, these pressure waves created ripples in the cosmic microwave background.",
+    "stock_footage_query": "",
+    "text_overlay": "As the universe expanded,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "intrigue",
+    "length_sec": 8.0,
+    "narration": "Astronomers measure these ripples to understand dark matter and the universe's expansion.",
+    "visual_description": "Evidence visual: Astronomers measure these ripples to understand dark matter and the universe's expansion.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Astronomers measure these ripples to understand dark matter and the universe's expansion.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Astronomers measure these ripples to understand dark matter and the universe's expansion.",
+    "stock_footage_query": "",
+    "text_overlay": "Astronomers measure these ripples",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "awe",
+    "length_sec": 8.0,
+    "narration": "They reveal a universe balanced on the edge of chaos, perfectly structured yet endlessly expanding.",
+    "visual_description": "Payoff visual: They reveal a universe balanced on the edge of chaos, perfectly structured yet endlessly expanding.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: They reveal a universe balanced on the edge of chaos, perfectly structured yet endlessly expanding.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: They reveal a universe balanced on the edge of chaos, perfectly structured yet endlessly expanding.",
+    "stock_footage_query": "",
+    "text_overlay": "They reveal a universe",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "engagement",
+    "length_sec": 26.0,
+    "narration": "Curious about more cosmic mysteries? Hit like and stay tuned for the next discovery!",
+    "visual_description": "Cta visual: Curious about more cosmic mysteries? Hit like and stay tuned for the next discovery!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more cosmic mysteries? Hit like and stay tuned for the next discovery!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more cosmic mysteries? Hit like and stay tuned for the next discovery!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more cosmic",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

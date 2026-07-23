@@ -1,0 +1,56 @@
+{
+  "character_id": "DOCTOR_001",
+  "topology_style": "cinematic_humanoid_medical_chassis",
+  "regions": {
+    "forehead_plate": {
+      "edges": "soft_rounded",
+      "seam": "subtle_titanium"
+    },
+    "brow_ridge": {
+      "controllable": true,
+      "range": "human_readable"
+    },
+    "orbital_sockets": {
+      "eye_cores": "warm_blue_intelligent",
+      "lid_planes": 2
+    },
+    "cheek_plates": {
+      "soft_polymer_over_titanium": true
+    },
+    "nose_bridge": {
+      "subtle_ridge": true
+    },
+    "philtrum_zone": {
+      "present_for_speech_read": true
+    },
+    "mouth_aperture": {
+      "viseme_capable": true,
+      "never_horror_gape": true
+    },
+    "jaw": {
+      "hinge": "natural",
+      "side_shift_soft_limit": true
+    },
+    "chin_glow": {
+      "signature_accent": true,
+      "color": "#3BA7E0"
+    },
+    "ear_modules": {
+      "flush_medical_sensors": true
+    },
+    "neck_collar": {
+      "titanium_transition_to_torso": true
+    }
+  },
+  "edge_flow_goals": [
+    "deformation_around_mouth",
+    "lid_fold_readability",
+    "cheek_raise_support",
+    "stable_silhouette_in_profile"
+  ],
+  "forbid": [
+    "uncanny_asymmetry_drift",
+    "melting_topology",
+    "random_regen_mesh"
+  ]
+}

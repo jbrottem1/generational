@@ -1,0 +1,84 @@
+{
+  "title": "Tornado Alley Dynamics",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "This script unveils the true dynamics of Tornado Alley using established science.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about tornadoes than social media.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Tornado Alley is a region in the central United States, notorious for its frequent tornadoes.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But why does this happen? It\u2019s all about the clash of warm, moist air and cold, dry air.",
+      "emotion": "curiosity",
+      "delivery": "building tension",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "This clash creates instability, leading to severe storms and tornadoes.",
+      "emotion": "curiosity",
+      "delivery": "clear and factual",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "However, not every storm produces a tornado, showing the uncertainty in weather prediction.",
+      "emotion": "curiosity",
+      "delivery": "revelatory",
+      "retention_device": "surprise"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 45.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "And what about those viral videos? They often exaggerate or misinterpret the facts!",
+      "emotion": "curiosity",
+      "delivery": "urgent",
+      "retention_device": "surprise"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay tuned for more real science and insights. Like and follow for more!",
+      "emotion": "curiosity",
+      "delivery": "encouraging",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about tornadoes than social media. Tornado Alley is a region in the central United States, notorious for its frequent tornadoes. But why does this happen? It\u2019s all about the clash of warm, moist air and cold, dry air. This clash creates instability, leading to severe storms and tornadoes. However, not every storm produces a tornado, showing the uncertainty in weather prediction. And what about those viral videos? They often exaggerate or misinterpret the facts! Stay tuned for more real science and insights. Like and follow for more!",
+  "call_to_action": "Like and follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:46:09.310074+00:00",
+  "source": "ai"
+}

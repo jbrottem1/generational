@@ -1,0 +1,382 @@
+{
+  "package_version": "1.0.0",
+  "package_type": "world",
+  "generated_at": "2026-07-14T03:27:28.457284+00:00",
+  "topic": "Deep ocean bioluminescence",
+  "niche": "nature",
+  "world_id": "WORLD-OCEAN_FLOOR",
+  "world_type": "Ocean Floor",
+  "name": "Ocean Floor",
+  "theme": "abyssal wonder",
+  "scale": "seafloor",
+  "historical_accuracy": 75,
+  "world": {
+    "world_id": "WORLD-OCEAN_FLOOR",
+    "world_type": "Ocean Floor",
+    "name": "Ocean Floor",
+    "theme": "abyssal wonder",
+    "scale": "seafloor",
+    "historical_accuracy": 75,
+    "environment": {
+      "description": "Bioluminescent ocean floor with coral ridges, particulate water column, and soft blue falloff",
+      "continuity_key": "WORLD-OCEAN_FLOOR",
+      "do_not_replace_mid_episode": true
+    },
+    "lighting": {
+      "base": "deep navy key + cyan bioluminescent practicals",
+      "consistent_key": true
+    },
+    "architecture": [
+      "coral reef shelves",
+      "rocky trench walls"
+    ],
+    "weather": "underwater_current",
+    "objects": [
+      {
+        "name": "coral_cluster",
+        "surface": "waterbed",
+        "anchored": true,
+        "position": {
+          "x": 0.45,
+          "y": 0.0,
+          "z": 0.4
+        },
+        "scale": 1.0
+      },
+      {
+        "name": "research_sub_pod",
+        "surface": "waterbed",
+        "anchored": true,
+        "position": {
+          "x": 0.65,
+          "y": 0.0,
+          "z": 0.5
+        },
+        "scale": 1.0
+      }
+    ],
+    "furniture": [],
+    "background_animations": [
+      "particulate drift",
+      "caustic light ripples",
+      "fish school wisp"
+    ],
+    "sound_ambience": [
+      "muffled water",
+      "sonar ping",
+      "whale-range rumble"
+    ],
+    "camera_boundaries": {
+      "min_height": 0.2,
+      "max_height": 15.0,
+      "min_distance": 0.5,
+      "max_distance": 40.0
+    },
+    "color_palette": {
+      "family": "ocean",
+      "primary": "#0D1B1E",
+      "accent": "#2A9D8F",
+      "glow": "#E9C46A"
+    },
+    "lighting_presets": [
+      {
+        "id": "abyss",
+        "recipe": "dash_ocean_glow",
+        "mood": "awe"
+      },
+      {
+        "id": "shaft",
+        "recipe": "surface light shaft + particulate",
+        "mood": "reveal"
+      },
+      {
+        "id": "macro_life",
+        "recipe": "hard rim on organism + soft haze",
+        "mood": "curiosity"
+      }
+    ],
+    "camera_anchors": [
+      {
+        "id": "reef_wide",
+        "position": "open_water",
+        "angle": "establishing",
+        "lens_hint": "16mm"
+      },
+      {
+        "id": "coral_orbit",
+        "position": "reef_edge",
+        "angle": "orbit",
+        "lens_hint": "35mm"
+      },
+      {
+        "id": "creature_macro",
+        "position": "substrate_close",
+        "angle": "macro",
+        "lens_hint": "100mm"
+      }
+    ],
+    "animation_zones": [
+      {
+        "id": "reef_pass",
+        "region": "coral_lane"
+      }
+    ],
+    "transition_anchors": [
+      {
+        "id": "upwell",
+        "to_compatible": [
+          "Rainforest",
+          "Human Cell",
+          "Research Center"
+        ]
+      }
+    ],
+    "design_rules": [
+      "Keep set geometry continuous across scenes",
+      "Vary camera and lighting, not the world itself",
+      "Every object must sit on a defined surface",
+      "No flat solid full-frame backgrounds"
+    ]
+  },
+  "environment": {
+    "description": "Bioluminescent ocean floor with coral ridges, particulate water column, and soft blue falloff",
+    "continuity_key": "WORLD-OCEAN_FLOOR",
+    "do_not_replace_mid_episode": true
+  },
+  "camera_anchors": [
+    {
+      "id": "reef_wide",
+      "position": "open_water",
+      "angle": "establishing",
+      "lens_hint": "16mm"
+    },
+    {
+      "id": "coral_orbit",
+      "position": "reef_edge",
+      "angle": "orbit",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "creature_macro",
+      "position": "substrate_close",
+      "angle": "macro",
+      "lens_hint": "100mm"
+    }
+  ],
+  "lighting_presets": [
+    {
+      "id": "abyss",
+      "recipe": "dash_ocean_glow",
+      "mood": "awe"
+    },
+    {
+      "id": "shaft",
+      "recipe": "surface light shaft + particulate",
+      "mood": "reveal"
+    },
+    {
+      "id": "macro_life",
+      "recipe": "hard rim on organism + soft haze",
+      "mood": "curiosity"
+    }
+  ],
+  "object_placement": [
+    {
+      "name": "coral_cluster",
+      "surface": "waterbed",
+      "anchored": true,
+      "position": {
+        "x": 0.45,
+        "y": 0.0,
+        "z": 0.4
+      },
+      "scale": 1.0
+    },
+    {
+      "name": "research_sub_pod",
+      "surface": "waterbed",
+      "anchored": true,
+      "position": {
+        "x": 0.65,
+        "y": 0.0,
+        "z": 0.5
+      },
+      "scale": 1.0
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "reef_pass",
+      "region": "coral_lane"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "upwell",
+      "to_compatible": [
+        "Rainforest",
+        "Human Cell",
+        "Research Center"
+      ]
+    }
+  ],
+  "architecture": [
+    "coral reef shelves",
+    "rocky trench walls"
+  ],
+  "weather": "underwater_current",
+  "background_animations": [
+    "particulate drift",
+    "caustic light ripples",
+    "fish school wisp"
+  ],
+  "sound_ambience": [
+    "muffled water",
+    "sonar ping",
+    "whale-range rumble"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.2,
+    "max_height": 15.0,
+    "min_distance": 0.5,
+    "max_distance": 40.0
+  },
+  "color_palette": {
+    "family": "ocean",
+    "primary": "#0D1B1E",
+    "accent": "#2A9D8F",
+    "glow": "#E9C46A"
+  },
+  "continuity": {
+    "single_world": true,
+    "world_id": "WORLD-OCEAN_FLOOR",
+    "note": "Scenes share the same laboratory/set; only camera and lighting change",
+    "scene_bindings": [
+      {
+        "scene_id": "s1",
+        "world_id": "WORLD-OCEAN_FLOOR",
+        "world_type": "Ocean Floor",
+        "camera_anchor": "reef_wide",
+        "camera": {
+          "id": "reef_wide",
+          "position": "open_water",
+          "angle": "establishing",
+          "lens_hint": "16mm"
+        },
+        "lighting_preset": "abyss",
+        "lighting": "dash_ocean_glow",
+        "environment": "Bioluminescent ocean floor with coral ridges, particulate water column, and soft blue falloff",
+        "background": "Bioluminescent ocean floor with coral ridges, particulate water column, and soft blue falloff; camera_anchor=reef_wide; angle=establishing; lens=16mm; lighting_preset=abyss; SAME_WORLD continuity",
+        "color_palette": {
+          "family": "ocean",
+          "primary": "#0D1B1E",
+          "accent": "#2A9D8F",
+          "glow": "#E9C46A"
+        },
+        "objects_in_frame": [
+          "coral_cluster",
+          "research_sub_pod"
+        ],
+        "narration_excerpt": "Dark water"
+      },
+      {
+        "scene_id": "s2",
+        "world_id": "WORLD-OCEAN_FLOOR",
+        "world_type": "Ocean Floor",
+        "camera_anchor": "coral_orbit",
+        "camera": {
+          "id": "coral_orbit",
+          "position": "reef_edge",
+          "angle": "orbit",
+          "lens_hint": "35mm"
+        },
+        "lighting_preset": "shaft",
+        "lighting": "surface light shaft + particulate",
+        "environment": "Bioluminescent ocean floor with coral ridges, particulate water column, and soft blue falloff",
+        "background": "Bioluminescent ocean floor with coral ridges, particulate water column, and soft blue falloff; camera_anchor=coral_orbit; angle=orbit; lens=35mm; lighting_preset=shaft; SAME_WORLD continuity",
+        "color_palette": {
+          "family": "ocean",
+          "primary": "#0D1B1E",
+          "accent": "#2A9D8F",
+          "glow": "#E9C46A"
+        },
+        "objects_in_frame": [
+          "coral_cluster",
+          "research_sub_pod"
+        ],
+        "narration_excerpt": "Glow appears"
+      }
+    ]
+  },
+  "scene_overrides": [
+    {
+      "scene_id": "s1",
+      "environment": "Bioluminescent ocean floor with coral ridges, particulate water column, and soft blue falloff",
+      "background": "Bioluminescent ocean floor with coral ridges, particulate water column, and soft blue falloff; camera_anchor=reef_wide; angle=establishing; lens=16mm; lighting_preset=abyss; SAME_WORLD continuity",
+      "lighting": "dash_ocean_glow",
+      "color_palette": {
+        "family": "ocean",
+        "primary": "#0D1B1E",
+        "accent": "#2A9D8F",
+        "glow": "#E9C46A"
+      },
+      "world_id": "WORLD-OCEAN_FLOOR",
+      "camera_anchor": "reef_wide"
+    },
+    {
+      "scene_id": "s2",
+      "environment": "Bioluminescent ocean floor with coral ridges, particulate water column, and soft blue falloff",
+      "background": "Bioluminescent ocean floor with coral ridges, particulate water column, and soft blue falloff; camera_anchor=coral_orbit; angle=orbit; lens=35mm; lighting_preset=shaft; SAME_WORLD continuity",
+      "lighting": "surface light shaft + particulate",
+      "color_palette": {
+        "family": "ocean",
+        "primary": "#0D1B1E",
+        "accent": "#2A9D8F",
+        "glow": "#E9C46A"
+      },
+      "world_id": "WORLD-OCEAN_FLOOR",
+      "camera_anchor": "coral_orbit"
+    }
+  ],
+  "renderer_feed": {
+    "note": "Optional enrich of visual_package.scenes \u2014 does not modify production pipeline stages",
+    "scene_overrides": [
+      {
+        "scene_id": "s1",
+        "environment": "Bioluminescent ocean floor with coral ridges, particulate water column, and soft blue falloff",
+        "background": "Bioluminescent ocean floor with coral ridges, particulate water column, and soft blue falloff; camera_anchor=reef_wide; angle=establishing; lens=16mm; lighting_preset=abyss; SAME_WORLD continuity",
+        "lighting": "dash_ocean_glow",
+        "color_palette": {
+          "family": "ocean",
+          "primary": "#0D1B1E",
+          "accent": "#2A9D8F",
+          "glow": "#E9C46A"
+        },
+        "world_id": "WORLD-OCEAN_FLOOR",
+        "camera_anchor": "reef_wide"
+      },
+      {
+        "scene_id": "s2",
+        "environment": "Bioluminescent ocean floor with coral ridges, particulate water column, and soft blue falloff",
+        "background": "Bioluminescent ocean floor with coral ridges, particulate water column, and soft blue falloff; camera_anchor=coral_orbit; angle=orbit; lens=35mm; lighting_preset=shaft; SAME_WORLD continuity",
+        "lighting": "surface light shaft + particulate",
+        "color_palette": {
+          "family": "ocean",
+          "primary": "#0D1B1E",
+          "accent": "#2A9D8F",
+          "glow": "#E9C46A"
+        },
+        "world_id": "WORLD-OCEAN_FLOOR",
+        "camera_anchor": "coral_orbit"
+      }
+    ]
+  },
+  "validation": {
+    "ok": true,
+    "passed": true,
+    "hard_fails": [],
+    "warnings": [],
+    "scene_binding_count": 2,
+    "object_count": 2
+  }
+}

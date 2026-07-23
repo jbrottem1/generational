@@ -1,0 +1,74 @@
+{
+  "title": "Organoids Research",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the fascinating yet uncertain world of organoids research.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if tiny labs inside our bodies could unlock the secrets of life?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Organoids are miniaturized organs grown from stem cells, mimicking real-life functions.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "This research could revolutionize medicine, from drug testing to disease modeling.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Yet, challenges remain: organoid maturity and complexity can vary wildly.",
+      "emotion": "curiosity",
+      "delivery": "cautionary",
+      "retention_device": "surprise factor"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "The potential is immense, but we're only scratching the surface of what's possible.",
+      "emotion": "curiosity",
+      "delivery": "hopeful",
+      "retention_device": "rewarding insight"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about the future of organoids? Follow for more scientific insights!",
+      "emotion": "curiosity",
+      "delivery": "encouraging",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "What if tiny labs inside our bodies could unlock the secrets of life? Organoids are miniaturized organs grown from stem cells, mimicking real-life functions. This research could revolutionize medicine, from drug testing to disease modeling. Yet, challenges remain: organoid maturity and complexity can vary wildly. The potential is immense, but we're only scratching the surface of what's possible. Curious about the future of organoids? Follow for more scientific insights!",
+  "call_to_action": "Follow for more scientific insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:05:40.515150+00:00",
+  "source": "ai"
+}

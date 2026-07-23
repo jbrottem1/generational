@@ -1,0 +1,185 @@
+{
+  "world_id": "WORLD-LIBRARY",
+  "elements_required": [
+    "floor",
+    "walls",
+    "ceilings",
+    "doors",
+    "windows",
+    "furniture",
+    "props"
+  ],
+  "dimensions_m": {
+    "x": 16.0,
+    "y": 5.5,
+    "z": 20.0
+  },
+  "floor": [
+    {
+      "id": "main_floor",
+      "bounds": [
+        [
+          -8.0,
+          0,
+          -10.0
+        ],
+        [
+          8.0,
+          0,
+          10.0
+        ]
+      ],
+      "walkable": true,
+      "material": "interior_floor"
+    }
+  ],
+  "walls": [
+    {
+      "id": "wall_n",
+      "plane": "north",
+      "openings": [
+        "window_n"
+      ]
+    },
+    {
+      "id": "wall_s",
+      "plane": "south",
+      "openings": [
+        "door_main"
+      ]
+    },
+    {
+      "id": "wall_e",
+      "plane": "east",
+      "openings": []
+    },
+    {
+      "id": "wall_w",
+      "plane": "west",
+      "openings": [
+        "window_w"
+      ]
+    }
+  ],
+  "ceilings": [
+    {
+      "id": "main_ceiling",
+      "height_m": 5.5,
+      "material": "acoustic_or_structural"
+    }
+  ],
+  "doors": [
+    {
+      "id": "door_main",
+      "position": [
+        0.0,
+        0.0,
+        -9.9
+      ],
+      "swing": "inward",
+      "interactable": true
+    }
+  ],
+  "windows": [
+    {
+      "id": "window_n",
+      "position": [
+        0.0,
+        3.0250000000000004,
+        9.95
+      ]
+    },
+    {
+      "id": "window_w",
+      "position": [
+        -7.95,
+        3.0250000000000004,
+        0.0
+      ]
+    }
+  ],
+  "furniture": [
+    {
+      "id": "furn_reading_desk_0",
+      "type": "desk",
+      "position": [
+        -4.0,
+        0.0,
+        -3.0
+      ],
+      "collision": true,
+      "navigable_around": true
+    },
+    {
+      "id": "furn_chair_1",
+      "type": "chair",
+      "position": [
+        -0.7999999999999998,
+        0.0,
+        -3.0
+      ],
+      "collision": true,
+      "navigable_around": true
+    },
+    {
+      "id": "furn_study_carrel_2",
+      "type": "study_carrel",
+      "position": [
+        2.4000000000000004,
+        0.0,
+        -3.0
+      ],
+      "collision": true,
+      "navigable_around": true
+    }
+  ],
+  "props": [
+    {
+      "id": "prop_bookshelf_0",
+      "type": "bookshelf",
+      "position": [
+        -4.0,
+        0.0,
+        -1.8
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_door_1",
+      "type": "door",
+      "position": [
+        -0.7999999999999998,
+        0.0,
+        -1.8
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_whiteboard_2",
+      "type": "whiteboard",
+      "position": [
+        2.4000000000000004,
+        0.0,
+        -1.8
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_open_book_3",
+      "type": "open_book",
+      "position": [
+        -4.0,
+        0.0,
+        -0.40000000000000013
+      ],
+      "collision": true,
+      "interactable": true
+    }
+  ],
+  "not_a_flat_image": true,
+  "explorable_volume": true,
+  "persistent": true
+}

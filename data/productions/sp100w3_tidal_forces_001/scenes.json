@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Did you know the Moon pulls on our oceans?",
+    "visual_description": "Hook visual: Did you know the Moon pulls on our oceans?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Did you know the Moon pulls on our oceans?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Did you know the Moon pulls on our oceans?",
+    "stock_footage_query": "",
+    "text_overlay": "Did you know the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Its gravity stretches Earth, creating bulges in the water.",
+    "visual_description": "Context visual: Its gravity stretches Earth, creating bulges in the water.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Its gravity stretches Earth, creating bulges in the water.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Its gravity stretches Earth, creating bulges in the water.",
+    "stock_footage_query": "",
+    "text_overlay": "Its gravity stretches Earth,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "These bulges mean high tides where the pull is strongest.",
+    "visual_description": "Escalation visual: These bulges mean high tides where the pull is strongest.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: These bulges mean high tides where the pull is strongest.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: These bulges mean high tides where the pull is strongest.",
+    "stock_footage_query": "",
+    "text_overlay": "These bulges mean high",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But there's another bulge on the opposite side of Earth, too.",
+    "visual_description": "Evidence visual: But there's another bulge on the opposite side of Earth, too.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: But there's another bulge on the opposite side of Earth, too.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: But there's another bulge on the opposite side of Earth, too.",
+    "stock_footage_query": "",
+    "text_overlay": "But there's another bulge",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "satisfaction",
+    "length_sec": 8.0,
+    "narration": "This creates two high tides each day, every day.",
+    "visual_description": "Payoff visual: This creates two high tides each day, every day.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This creates two high tides each day, every day.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This creates two high tides each day, every day.",
+    "stock_footage_query": "",
+    "text_overlay": "This creates two high",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Curious about more cosmic wonders? Hit subscribe for more!",
+    "visual_description": "Cta visual: Curious about more cosmic wonders? Hit subscribe for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more cosmic wonders? Hit subscribe for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more cosmic wonders? Hit subscribe for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more cosmic",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

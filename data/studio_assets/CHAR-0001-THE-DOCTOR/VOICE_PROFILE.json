@@ -1,0 +1,21 @@
+{
+  "id": "VOICE-THE-DOCTOR-001",
+  "character": "The Doctor",
+  "traits": [
+    "professional",
+    "calm",
+    "confident",
+    "friendly",
+    "curious",
+    "educational",
+    "encouraging",
+    "warm"
+  ],
+  "pacing": "natural_educational",
+  "tts_hint": {
+    "voice": "onyx",
+    "model": "tts-1-hd",
+    "style": "warm_clinical_educator"
+  },
+  "sync": "designed_for_high_quality_ai_narration_synchronization"
+}

@@ -1,0 +1,246 @@
+{
+  "package_type": "CREATIVE_DIRECTION_PACKAGE",
+  "phase": "III",
+  "created_at": "2026-07-19T16:49:19.638441+00:00",
+  "constitution": {
+    "constitution_type": "GENERATIONAL_STYLE_CONSTITUTION",
+    "phase": "III",
+    "version": "3.0.0",
+    "title": "Generational Creative Direction",
+    "north_star": "hopeful_educational_cinema",
+    "north_star_phrase": "Hopeful Educational Cinema",
+    "universe_bible": "GENERATIONAL_UNIVERSE/00_ART_BIBLE.md",
+    "emotions_every_frame": [
+      "curiosity",
+      "trust",
+      "hope",
+      "discovery",
+      "intelligence",
+      "compassion",
+      "wonder"
+    ],
+    "medium_is": "cinematic_educational_storytelling",
+    "medium_is_not": [
+      "childrens_cartoon",
+      "clinical_documentary",
+      "science_fiction_spectacle"
+    ],
+    "architecture": {
+      "frozen": true,
+      "does_not_replace": [
+        "Scene Director",
+        "Character Performance Engine",
+        "Character Rig Studio",
+        "Stage & World Simulation",
+        "Physics & Interaction",
+        "Cinematic Direction Studio",
+        "Animation Runtime",
+        "BlenderRuntime",
+        "Golden Motion Pipeline",
+        "Production Asset Studio"
+      ],
+      "evolves_via": "creative_identity_and_assets_only"
+    },
+    "shape_language": {
+      "trust": "soft_rounds_gentle_ovals",
+      "intelligence": "clean_verticals_calm_rectangles",
+      "discovery": "soft_arcs_open_curves",
+      "technology": "rounded_rectangles",
+      "forbid": [
+        "aggressive_spikes",
+        "toy_perfect_spheres",
+        "uncanny_hyperdetail"
+      ]
+    },
+    "palette": {
+      "dawn_white": "#F7F4EF",
+      "warm_sand": "#E8DFD2",
+      "generational_teal": "#2F9EBC",
+      "midnight_navy": "#1B2A4A",
+      "leaf_green": "#4F8F5B",
+      "window_gold": "#F2D4A5",
+      "soft_sky": "#A9D4E8",
+      "ember_coral": "#E07A5F"
+    },
+    "color_script": {
+      "curiosity": [
+        "soft_sky",
+        "generational_teal",
+        "warm_sand"
+      ],
+      "discovery": [
+        "generational_teal",
+        "window_gold",
+        "dawn_white"
+      ],
+      "hope": [
+        "window_gold",
+        "leaf_green",
+        "dawn_white"
+      ],
+      "reflection": [
+        "midnight_navy",
+        "warm_sand",
+        "generational_teal"
+      ],
+      "celebration": [
+        "window_gold",
+        "generational_teal",
+        "leaf_green"
+      ],
+      "urgency": [
+        "ember_coral",
+        "midnight_navy"
+      ],
+      "comfort": [
+        "warm_sand",
+        "dawn_white",
+        "generational_teal"
+      ],
+      "scientific_precision": [
+        "generational_teal",
+        "dawn_white",
+        "midnight_navy"
+      ]
+    },
+    "doctor_001": {
+      "communicates": [
+        "intelligence",
+        "warmth",
+        "kindness",
+        "curiosity",
+        "confidence",
+        "professionalism",
+        "optimism"
+      ],
+      "never": [
+        "threatening",
+        "emotionless",
+        "generic",
+        "overly_mechanical",
+        "toy_like",
+        "uncanny"
+      ],
+      "silhouette": "tall_approachable_soft_coat_flare",
+      "appeal_head_scale": 1.08,
+      "resting_expression": "soft_smile",
+      "coat_trim": "generational_teal",
+      "eye_design": "large_warm_clear_focus",
+      "walk": "easy_weight_transfer_gentle_arm_swing_breathing_always"
+    },
+    "lab": {
+      "world_id": "GENERATIONAL_MEDICAL_LAB",
+      "feeling": "inspirational_teaching_sanctuary",
+      "must_include": [
+        "warm_natural_window_light",
+        "wood_fabric_furniture",
+        "plants",
+        "books_research",
+        "soft_holographic_displays",
+        "organized_medical_tech",
+        "subtle_brand_marks"
+      ],
+      "forbid": [
+        "empty_grey_room",
+        "horror_clinical",
+        "fluorescent_only"
+      ]
+    },
+    "lighting": {
+      "signature": "warm_key_soft_fill_teal_rim_controlled_reflections",
+      "golden_motion_default": "morning_discovery",
+      "emotion_drives_exposure": true
+    },
+    "camera": {
+      "primary_format": "1080x1920",
+      "philosophy": "eye_level_empathy_never_hide_missing_performance"
+    },
+    "motion": {
+      "require": [
+        "anticipation",
+        "follow_through",
+        "ease_in_out",
+        "breathing",
+        "head_micro_motion",
+        "eye_movement",
+        "weight",
+        "secondary_coat_motion"
+      ],
+      "forbid": [
+        "robotic_holds",
+        "instant_pose_snaps",
+        "image_plate_animation"
+      ]
+    },
+    "quality_review": [
+      "visual_appeal",
+      "emotional_connection",
+      "recognizability",
+      "animation_quality",
+      "educational_clarity",
+      "brand_consistency",
+      "runtime_compatibility"
+    ],
+    "guide_path": "CREATIVE_DIRECTION_GUIDE.md"
+  },
+  "guide": "CREATIVE_DIRECTION_GUIDE.md",
+  "reviews": {
+    "DOCTOR_001": {
+      "report_type": "CreativeDirectionReview",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "scores": {
+        "visual_appeal": "pass_constitution_aligned",
+        "emotional_connection": "pass_constitution_aligned",
+        "recognizability": "pass_constitution_aligned",
+        "animation_quality": "pass_skeletal_preserved",
+        "educational_clarity": "pass_constitution_aligned",
+        "brand_consistency": "pass_constitution_aligned",
+        "runtime_compatibility": "pass"
+      },
+      "criteria": [
+        "visual_appeal",
+        "emotional_connection",
+        "recognizability",
+        "animation_quality",
+        "educational_clarity",
+        "brand_consistency",
+        "runtime_compatibility"
+      ],
+      "constitution_version": "3.0.0",
+      "reviewed_at": "2026-07-19T16:49:19.638450+00:00",
+      "asset_id": "DOCTOR_001"
+    },
+    "GENERATIONAL_MEDICAL_LAB": {
+      "report_type": "CreativeDirectionReview",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "scores": {
+        "visual_appeal": "pass_constitution_aligned",
+        "emotional_connection": "pass_constitution_aligned",
+        "recognizability": "pass_constitution_aligned",
+        "animation_quality": "pass_skeletal_preserved",
+        "educational_clarity": "pass_constitution_aligned",
+        "brand_consistency": "pass_constitution_aligned",
+        "runtime_compatibility": "pass"
+      },
+      "criteria": [
+        "visual_appeal",
+        "emotional_connection",
+        "recognizability",
+        "animation_quality",
+        "educational_clarity",
+        "brand_consistency",
+        "runtime_compatibility"
+      ],
+      "constitution_version": "3.0.0",
+      "reviewed_at": "2026-07-19T16:49:19.638454+00:00",
+      "asset_id": "GENERATIONAL_MEDICAL_LAB"
+    }
+  },
+  "architecture_note": "Creative identity only. Execution engines remain frozen."
+}

@@ -1,0 +1,42 @@
+{
+  "character_id": "CHAR-DASH",
+  "name": "Dash",
+  "version": "1.0.0",
+  "status": "locked",
+  "aspect_safe": "9:16",
+  "silhouette": {
+    "outline_color": "#000000",
+    "fill_color": "#FFFFFF",
+    "stroke_weight_norm": 0.012,
+    "head_ratio_of_height": 0.34,
+    "eye_scale": "oversized",
+    "limb_style": "single_stroke_sticks",
+    "hand_style": "round_mitt_with_point_pose",
+    "foot_style": "small_oval"
+  },
+  "proportions": {
+    "total_height_units": 1.0,
+    "head_diameter": 0.34,
+    "torso_length": 0.28,
+    "arm_length": 0.26,
+    "leg_length": 0.32,
+    "eye_width": 0.11,
+    "eye_height": 0.13,
+    "pupil_ratio": 0.45
+  },
+  "forbidden": [
+    "colored_body_fill",
+    "clothing",
+    "hair",
+    "logos_on_body",
+    "3d_limb_shading",
+    "realistic_hands",
+    "redesign_without_version_bump"
+  ],
+  "recognition_keys": [
+    "oversized_expressive_eyes",
+    "thick_expressive_eyebrows",
+    "white_body_black_outline",
+    "kinetic_teaching_motion"
+  ]
+}

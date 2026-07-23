@@ -1,0 +1,49 @@
+{
+  "character_id": "DOCTOR_001",
+  "capabilities": [
+    "individual_finger_movement",
+    "natural_grip",
+    "object_interaction",
+    "gesture_libraries",
+    "medical_demonstrations",
+    "writing",
+    "touching_holograms",
+    "holding_books",
+    "holding_tools"
+  ],
+  "fingers_per_hand": 5,
+  "joints_per_finger": 3,
+  "grip_presets": [
+    "relaxed",
+    "precision_pinch",
+    "power_grip",
+    "tool_grip",
+    "book_cradle",
+    "hologram_point",
+    "writing"
+  ],
+  "gesture_library": [
+    "open_palm_teach",
+    "point_index",
+    "ok_precision",
+    "hold_tool",
+    "hold_book",
+    "hologram_touch",
+    "writing_grip",
+    "medical_demo_pinch",
+    "reassure_rest",
+    "typing_home_row",
+    "open_palm_reassurance",
+    "hologram_pinch",
+    "clipboard_point",
+    "scanner_sweep",
+    "heart_hand",
+    "chin_think"
+  ],
+  "object_interaction": true,
+  "left_right_independent": true,
+  "forbid_mitten_hands": true,
+  "forbid_floating_props": true,
+  "reusable": true,
+  "existing_ref": "HAND_POSE_LIBRARY.json"
+}

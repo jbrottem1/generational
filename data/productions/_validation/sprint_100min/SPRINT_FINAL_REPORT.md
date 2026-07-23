@@ -1,0 +1,667 @@
+# 100-Minute Sprint — Executive Final Report
+
+**Generated:** 2026-07-10T18:16:12.364974+00:00  
+**Elapsed:** 96.6 / 100 minutes  
+**Completed ready-to-post:** **621/621 (100.0%)**  
+**Estimated cost:** $10.8127  
+**Throughput:** 6.43 videos/min  
+**Desktop folder:** `/Users/jaredbrottem/Desktop/AI Start-up/videos/test run generational`  
+**Sprint MP4 exports:** 621 (folder total 626)
+
+## Wave breakdown
+
+| Wave | Completed | Attempted | Cost | Runtime |
+|---|---|---|---|---|
+| 1 | 30 | 30 | $0.5291 | 331.59s |
+| 2 | 36 | 36 | $0.6281 | 367.02s |
+| 3 | 100 | 100 | $1.7077 | 1060.03s |
+| 4 | 181 | 181 | $3.1322 | 1319.68s |
+| 5 | 168 | 168 | $2.9613 | 1404.56s |
+| 6 | 106 | 106 | $1.8543 | 1122.82s |
+
+## Videos still in production
+None — queue drained within sprint waves.
+
+## Remaining blockers
+- YouTube OAuth required for live publish
+- ElevenLabs missing for premium TTS
+- Runway/Fal missing for generative video clips
+- OpenAI image model dall-e-3 began returning "model does not exist" mid-sprint — later videos may use fallback visuals; investigate image model routing
+
+## High-performing opportunities
+- Gene editing / CRISPR explainers (evergreen + high demand)
+- Neuroscience myth-busting (dopamine, sleep, placebo, attention)
+- Space science (JWST, black holes, LIGO, Mars)
+- AI literacy (tokens, hallucinations, neural nets)
+- Climate/ocean systems with accurate nuance
+
+## Recommended next sprint
+- P0: Configure YouTube OAuth and publish top 10 SEO Shorts live
+- P0: Fix OpenAI image model routing (dall-e-3 failure observed late sprint)
+- P1: Rank exported catalog by SEO score and create a 30-day publish calendar
+- P1: Optional ElevenLabs uplift on top performers
+- P2: Add generative video only for top evergreen titles
+
+## Completed topics (621)
+
+- How CRISPR Actually Edits DNA
+- Your Brain Rewires Itself
+- What JWST Sees That Hubble Can't
+- Why Sleep Locks In Your Memories
+- Quantum Entanglement in Plain English
+- Life Without Sunlight at Deep Sea Vents
+- The Gut-Brain Axis Explained
+- How We Photographed a Black Hole
+- The Placebo Effect Is Real Biology
+- How Octopuses Change Color Instantly
+- How mRNA Vaccines Teach Your Cells
+- How Tardigrades Survive the Impossible
+- Why Antibiotics Stop Working
+- Photosynthesis Is a Solar Power Plant
+- How AI Models Predict the Next Word
+- Earth's Crust Is Moving Under You
+- Why Fusion Energy Is So Hard
+- Why Physicists Think Dark Matter Exists
+- How Bees Tell Each Other Where Food Is
+- How LIGO Hears Colliding Black Holes
+- Why Coral Reefs Turn White
+- Your Attention Is a Limited Battery
+- Epigenetics: Switches on Your Genes
+- What Perseverance Is Hunting on Mars
+- How Robots Learn by Trial and Error
+- Ancient DNA Is Rewriting Human History
+- Does Water Have Memory? Science Says No
+- The Ozone Hole Is Healing
+- Base Editing: CRISPR Without the Double Cut
+- Do Mirror Neurons Explain Empathy?
+- Confirmation Bias Hijacks Your Brain
+- Your Body Clock Runs on Light
+- Dopamine Is Not the Pleasure Molecule
+- How We Find Planets We Can't See
+- What Causes the Northern Lights
+- GPS Needs Einstein to Work
+- How a Star's Death Makes Your Atoms
+- Mycelium: The Living Network Under Forests
+- What the Habitable Zone Really Means
+- Why Mitochondria Are the Powerhouses
+- Neural Nets Are Not Digital Brains
+- How Your Immune System Remembers
+- The Carbon Cycle in 60 Seconds
+- Why We Only See One Side of the Moon
+- Teen Brains Prune Extra Connections
+- Serotonin Is More Than Mood
+- Crows Make and Use Tools
+- Neutrinos Pass Through You Every Second
+- Working Memory Holds Only a Few Items
+- What Herd Immunity Actually Means
+- Why Humpback Whales Sing
+- Entropy: Why Mess Spreads
+- Why Rubbing a Hurt Spot Can Help
+- Did Life Start at Ocean Vents?
+- How Radar Sees Through Fog
+- Comet vs Asteroid — What's the Difference?
+- How Lithium-Ion Batteries Store Energy
+- What Is a Photon, Really?
+- What Microplastics Are Doing in Oceans
+- Why Thunder Comes After Lightning
+- Bacteria Build Cities Called Biofilms
+- What Stem Cells Can and Can't Do
+- How a Mars Robot Made Oxygen
+- What fMRI Actually Measures
+- Telomeres: The Caps on Your Chromosomes
+- CRISPR Crops Are Not the Same as GMOs of the 90s
+- Chimpanzees Use Tools Too
+- The Stages of Sleep
+- The Double-Slit Experiment
+- Antibiotics Don't Kill Viruses
+- Why Europa Might Have an Ocean
+- What an Event Horizon Is
+- Why You See Faces in Toast
+- Deep Learning vs Machine Learning
+- How Solar Panels Make Electricity
+- What Antibodies Actually Do
+- How Rewards Shape Behavior
+- How Tides Really Work
+- Action and Reaction Explained
+- How Birds Navigate Migration
+- How Neurons Talk With Chemicals
+- Why Silicon Runs the Modern World
+- Fusion vs Fission
+- Chunking Supercharges Memory
+- Neurons That Fire Together Wire Together
+- The Mirror Test for Self-Recognition
+- Why Seasons Aren't About Distance
+- Quantum Tunneling Explained
+- How Bats See With Sound
+- How Ant Colonies Decide Without a Boss
+- How PCR Finds Tiny DNA Traces
+- Why Venus Is an Inferno
+- What Saturn's Rings Are Made Of
+- What Neutron Stars Are
+- Interleaving Beats Blocked Practice
+- Why Mars Lost Its Thick Air
+- What T Cells Do
+- Why Space Is Silent
+- Homeostasis Keeps You Alive
+- Why AI Hallucinates
+- Gravity Can Bend Light
+- Why Infrared Sees Through Dust
+- Cognitive Load Theory Basics
+- What Redshift Tells Astronomers
+- Ocean Acidification Explained
+- mRNA vs Traditional Vaccines
+- What the Hippocampus Does
+- Shield vs Stratovolcano
+- Corals Are Animals, Not Plants
+- Three Ways Plates Meet
+- Earth's Invisible Shield
+- Why Octopuses Squirt Ink
+- Why Microbiome Diversity Matters
+- The Universe's Baby Picture
+- Why Ice Melt Speeds Warming
+- Black Smokers Explained
+- Why Straws Look Bent in Water
+- Sniffing Exoplanet Atmospheres
+- Biofluorescence vs Bioluminescence
+- How We Deflected an Asteroid
+- What Is the Kuiper Belt?
+- Oxytocin Is Not Just the Love Hormone
+- Chemosynthesis vs Photosynthesis
+- What the Polar Vortex Is
+- fMRI Can't Read Your Thoughts
+- Why Comets Have Tails
+- The Hard Ethics of Editing Embryos
+- CRISPR and Sickle Cell Therapy
+- Diffusion Moves Life's Molecules
+- Why Graphene Is Special
+- Even Fake Surgery Can Reduce Pain
+- Enzymes Are Molecular Machines
+- Do Crayfish Feel Anxiety-Like States?
+- What Are Lagrange Points?
+- What pH Actually Measures
+- Your Brain's Default Mode Network
+- What Lymph Nodes Are Doing
+- How LEDs Make Light
+- Your Skin Has an Ecosystem
+- Myside Bias vs Confirmation Bias
+- Inertia in Everyday Life
+- Why Crows Gather Around Dead Crows
+- How Your Retina Detects Light
+- What Catalysts Do
+- Why Hot Metal Glows
+- Kepler's Laws in Plain English
+- How Parallax Measures Star Distance
+- Cytokines: Immune Text Messages
+- What Radioactive Half-Life Means
+- Programmed Cell Death Is Healthy
+- DNA to RNA: Transcription
+- Heat Death Isn't Tomorrow
+- Ribosomes Build Your Proteins
+- Long-Term Potentiation Explained
+- What Isotopes Are
+- Brownian Motion Explained
+- What a Tokamak Is
+- Milankovitch Cycles Explained
+- What Plasmids Are
+- CRISPR Can Also Detect Disease
+- CRISPR Off-Target Effects
+- What Gene Drives Are
+- Epigenetic Clocks Estimate Biological Age
+- Sleep Spindles and Memory
+- Learning Isn't a Strict Pyramid
+- Bigger Wings Aren't Always Better
+- The Greenhouse Effect Explained
+- Why REM Comes With Paralysis
+- Blue Light and Circadian Timing
+- How Dolphins Echolocate
+- Ozone Hole vs Climate Change
+- R0 and Outbreak Math
+- How the Sun Makes Energy
+- The Coriolis Effect Explained
+- Why Thresholds Differ by Disease
+- The Transistor Switch
+- Why Cosmologists Talk About Dark Energy
+- Meiosis vs Mitosis
+- Complete Metamorphosis Explained
+- What the Amygdala Is Known For
+- How Carbon Dating Works
+- Innate vs Adaptive Immunity
+- What Physicists Mean by Spacetime
+- What Keystone Species Are
+- Why Some Bays Glow at Night
+- Infrared Is Heat You Can Sense
+- What ATP Does in Your Cells
+- Spring Tides vs Neap Tides
+- What Causes Acid Rain
+- Why Water Resists Temperature Change
+- Bacteriophages Hunt Bacteria
+- What Capacitors Do
+- Convection Moves Heat
+- What Prions Are
+- How Lasers Differ From Flashlights
+- Why Sweating Cools You
+- P Waves vs S Waves
+- Synaptic vesicles recycling
+- Food Chains vs Food Webs
+- Platelets clotting
+- Red blood cells oxygen
+- White blood cells
+- Kidney filtration
+- Pancreas insulin
+- Liver detox myths
+- Thyroid hormones
+- Bone remodeling
+- Adrenal stress response
+- Cartilage joints
+- Tendons vs ligaments
+- Fast twitch muscle
+- Slow twitch muscle
+- VO2 max basics
+- Lactate not just waste
+- Sodium potassium pump
+- Creatine in muscles
+- Electrolytes nerve signals
+- B12 nerve health
+- Calcium muscle contraction
+- Vitamin D sunlight
+- Iron hemoglobin
+- Iodine thyroid
+- Omega-3 evidence
+- Inflammation purpose
+- Antioxidant nuance
+- Free radicals biology
+- Histamine allergies
+- Fever as defense
+- Chronic inflammation
+- Mast cells
+- Complement system
+- Interferons viruses
+- Antigen presentation
+- Natural killer cells
+- Dendritic cells
+- Affinity maturation
+- MHC proteins
+- Clonal selection
+- Mucosal immunity
+- Sterilizing immunity
+- Booster dose logic
+- Short chain fatty acids
+- Microbiome metabolites
+- Fiber and microbes
+- Fermented foods evidence
+- Prebiotics explained
+- Probiotic evidence limits
+- Cerebrospinal fluid
+- Blood brain barrier
+- Meninges basics
+- Critical periods learning
+- Neurogenesis adult limits
+- Stroke types overview
+- Sensitive periods development
+- Classical conditioning
+- Attachment theory basics
+- False memories science
+- Reconsolidation memory
+- Extinction learning
+- Retrieval practice
+- Eyewitness memory limits
+- Spaced repetition
+- Growth mindset nuance
+- Grit evidence limits
+- Desirable difficulties
+- IQ what it measures
+- Multiple intelligences critique
+- Emotional intelligence evidence
+- Sleep hygiene evidence
+- Exposure therapy idea
+- Cognitive behavioral idea
+- Nicotine acetylcholine
+- Alcohol sleep quality
+- Caffeine adenosine
+- Cannabis evidence caution
+- Nootropics evidence gap
+- Microdosing evidence gap
+- Intermittent fasting evidence
+- Sauna evidence caution
+- Cold plunge evidence
+- Ketosis basics
+- Gluconeogenesis
+- Insulin resistance basics
+- Cholesterol nuance
+- Type 1 vs type 2 diabetes
+- Blood pressure basics
+- Atherosclerosis basics
+- Retrovirus reverse transcriptase
+- MRNA vs DNA viruses
+- Herpes latency
+- Antiviral vs antibiotic
+- Influenza shift drift
+- P values nuance
+- Vaccine efficacy vs effectiveness
+- Randomized controlled trials
+- Peer review limits
+- Replication crisis overview
+- Correlation vs causation
+- Preprints explained
+- Forest plots idea
+- Meta analysis basics
+- Bayesian thinking intro
+- Selection bias
+- Survivorship bias
+- Blinding in trials
+- Confounding variables
+- Placebo control why
+- FAIR data principles
+- Open science movement
+- CRISPR prime editing
+- Monoclonal antibodies
+- Checkpoint inhibitors idea
+- CAR T cells idea
+- Angiogenesis cancer
+- Metastasis basics
+- Tumor suppressor genes
+- Helicobacter pylori ulcers
+- Oncogenes basics
+- HPV and cancer
+- Leaky gut evidence caution
+- Gut barrier myth nuance
+- Autoimmunity basics
+- Hygiene hypothesis nuance
+- Old friends hypothesis
+- Molecular mimicry
+- Hospital acquired infection
+- Antibiotic stewardship
+- Sepsis basics
+- Sepsis early signs education
+- How Nerves Fire
+- From Continental Drift to Plate Tectonics
+- Why Myelin Speeds Signals
+- Uranium Dating Deep Time
+- Broca's Area and Speech
+- Why Hydrogen Bonds Matter
+- Basal Ganglia and Movement
+- What Reuptake Means
+- Glia Are Not Just Glue
+- Cas12 and Cas13 Are Different Tools
+- What Transit Depth Reveals
+- How Buffers Stabilize pH
+- Why mRNA Needs Careful Delivery
+- What Viral Vector Vaccines Are
+- Hooke's Law in Everyday Life
+- The Synaptic Cleft
+- What Dendrites Do
+- Gene Editing Against Crop Disease
+- Solar flares
+- Van Allen belts
+- Coronal mass ejections
+- Lunar regolith
+- Enceladus plumes
+- Mars dust storms
+- Titan methane lakes
+- Io volcanism
+- Asteroid belt
+- Meteor vs meteorite
+- Oort cloud
+- Bolide explosions
+- Parker Solar Probe
+- Heliosphere
+- Solar wind pressure
+- Artemis program goals
+- Radio astronomy
+- Sample return missions
+- Pulsars
+- Quasars
+- Galaxy collisions
+- Local Group
+- Andromeda approach
+- Hubble constant tension
+- Standard candles
+- Cosmic distance ladder
+- Type Ia supernovae
+- CRISPR screens
+- Baryon acoustic oscillations
+- RNA interference
+- Transcription factors
+- Chromatin remodeling
+- Enhancers DNA
+- Histone acetylation
+- Homologous recombination
+- DNA repair pathways
+- Hayflick limit
+- Telomerase cancer link
+- Nonhomologous end joining
+- Ubiquitin proteasome
+- Autophagy basics
+- Senescent cells
+- Chaperone proteins
+- Protein folding diseases
+- Prion-like proteins
+- Amyloid plaques nuance
+- Tau protein
+- Neuroinflammation
+- Astrocytes roles
+- Oligodendrocytes
+- Microglia roles
+- Circadian genes clock
+- Glymphatic system
+- Blood brain barrier transport
+- Melatonin synthesis
+- Clock genes PER
+- Rock cycle
+- Sedimentary rocks
+- Metamorphic rocks
+- Igneous rocks
+- Aquifers
+- Soil horizons
+- Weathering erosion
+- Glacial erratics
+- Water table
+- River deltas
+- Moraines
+- Permafrost thaw
+- Methane hydrates
+- Upwelling nutrients
+- Phytoplankton blooms
+- Carbon sinks oceans
+- La Nina basics
+- Jet stream
+- El Nino basics
+- Hadley cells
+- Trade winds
+- Monsoons
+- Lightning nitrogen
+- Hurricane formation
+- Tornado alley dynamics
+- Thunder distance estimate
+- Mirages
+- Rainbow physics
+- Moore's law nuance
+- Photolithography chips
+- EUV lithography
+- Lidar mapping
+- OLED vs LCD
+- Quantum dots displays
+- Computer vision basics
+- Convolutional nets idea
+- Transformers attention
+- Tokenization BPE
+- RAG retrieval idea
+- Embeddings vectors
+- RLHF idea
+- Fine tuning vs prompting
+- Model distillation
+- Edge AI constraints
+- Solid state batteries
+- Battery energy density
+- Hydrogen fuel cells
+- Carbon capture types
+- Electrolysis green hydrogen
+- Direct air capture
+- Heat pumps
+- Induction motors
+- Feedback loops engineering
+- Nyquist sampling
+- PID controllers
+- Availability heuristic
+- Fourier transform idea
+- System 1 System 2
+- Sunk cost fallacy
+- Anchoring bias
+- Loss aversion
+- Dunning Kruger nuance
+- Status quo bias
+- Prospect theory idea
+- Flow state research
+- Imposter phenomenon
+- Deliberate practice
+- Transfer of learning
+- Context dependent memory
+- Expertise hours myth
+- Encoding specificity
+- State dependent memory
+- Levels of processing
+- Dual coding theory
+- Worked examples effect
+- Multimedia learning
+- Generation effect
+- Production effect
+- Testing effect
+- Spacing effect
+- Forgetting curve
+- Overlearning
+- Interleaving math
+- Blocked practice limits
+- Vaccine cold chain
+- Sterile technique idea
+- Hand hygiene science
+- Airborne vs droplet
+- Fomite transmission nuance
+- R effective
+- Serial interval
+- Latent TB idea
+- Antiviral windows
+- Incubation period
+- Narrow vs broad antibiotics
+- Antibiotic spectrum
+- Microbiome antibiotics impact
+- Vaccine myocarditis rarity context
+- C diff risk
+- VAERS limitations
+- Case reports limits
+- Evidence hierarchy
+- Cohort studies
+- Confounding by indication
+- Case control studies
+- Healthy user bias
+- P hacking
+- Publication bias
+- HARKing
+- Registered reports
+- Open data replication
+- Clinical equipoise
+- Photosystem II
+- Calvin cycle
+- Krebs cycle
+- Electron transport chain
+- Chemiosmosis
+- Glycolysis basics
+- Oxidative phosphorylation
+- FADH2 role
+- NADH role
+- Alcoholic fermentation
+- Stomata gas exchange
+- Fermentation lactate
+- Xylem transport
+- Transpiration pull
+- Phloem transport
+- Root nodules nitrogen
+- Capillary action plants
+- Nitrogen fixation bacteria
+- Pollination syndromes
+- Lichen symbiosis
+- Mycorrhizae nutrient trade
+- Camouflage evolution
+- Aposematism warning colors
+- Seed dispersal strategies
+- Batesian mimicry
+- Mullerian mimicry
+- Sexual selection peacocks
+- Reciprocal altruism
+- Handicap principle
+- Kin selection
+- Evolutionary stable strategy
+- Inclusive fitness
+- Hamilton rule idea
+- Red Queen hypothesis
+- Punctuated equilibrium
+- Gradualism evolution
+- Ring species
+- Speciation allopatric
+- Sympatric speciation debate
+- Bottleneck effect
+- Founder effect
+- Genetic drift
+- Hardy Weinberg idea
+- Sexual dimorphism
+- Assortative mating
+- Life history tradeoffs
+- R vs K selection nuance
+- Parental investment theory
+- Island biogeography
+- Trophic cascades
+- Edge effects habitat
+- Apex predators role
+- Invasive species dynamics
+- Mesopredator release
+- Dead zones ocean
+- Eutrophication
+- Hypoxia aquatic
+- Bioaccumulation
+- Biomagnification
+- DDT history lesson
+- Conservation triage
+- Silent Spring legacy
+- Rewilding debates
+- Umbrella species
+- Corridor ecology
+- Flagship species
+- Ex situ conservation
+- Seed banks
+- Cryopreservation wildlife
+- Synthetic biology intro
+- Biobricks idea
+- De-extinction limits
+- Organoids research
+- Xenobiology caution
+- Minimal genome
+- Organs on chips
+- 3D bioprinting limits
+- Xenotransplantation progress
+- Rh factor
+- Universal donor myth nuance
+- Blood type genetics
+- ECG basics
+- Plasma vs serum
+- Heart valves
+- Blood pressure regulation
+- Cardiac output
+- Baroreceptors
+- ADH water balance
+- Aldosterone sodium
+- Kidney renin angiotensin
+- Thermoregulation
+- Shivering thermogenesis
+- Brown fat
+- EPO altitude
+- Diving reflex
+- Acclimatization altitude
+- Nitrogen narcosis
+- Decompression sickness
+- Sonar whales anthropogenic
+- Ship noise ocean
+- Sponge reefs
+- Coral microbiome
+- Kelp forests
+- Seagrass meadows
+- Mangrove carbon
+- Blue carbon

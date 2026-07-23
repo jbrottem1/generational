@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Here's what science actually says about caffeine and adenosine.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Caffeine blocks adenosine, a neurotransmitter that makes you feel tired. But why is that important?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: When we drink coffee, it competes with adenosine. This boosts alertness, but what else happens?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Research shows chronic caffeine use can lead to tolerance. You might need more to achieve the same effect!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: But here\u2019s the catch\u2014too much caffeine can disrupt sleep. Balance is key.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want more insights on caffeine? Like and follow for more science facts!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Here's what science actually says about caffeine and adenosine.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Caffeine blocks adenosine, a neurotransmitter that makes you feel tired. But why is that important?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: When we drink coffee, it competes with adenosine. This boosts alertness, but what else happens?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Research shows chronic caffeine use can lead to tolerance. You might need more to achieve the same effect!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: But here\u2019s the catch\u2014too much caffeine can disrupt sleep. Balance is key.",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want more insights on caffeine? Like and follow for more science facts!",
+      "duration_sec": 12.0
+    }
+  ]
+}

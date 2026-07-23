@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Ever wondered why people often pair with others like themselves?",
+    "visual_description": "Hook visual: Ever wondered why people often pair with others like themselves?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever wondered why people often pair with others like themselves?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever wondered why people often pair with others like themselves?",
+    "stock_footage_query": "",
+    "text_overlay": "Ever wondered why people",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This phenomenon is called assortative mating, where individuals choose partners with similar traits.",
+    "visual_description": "Context visual: This phenomenon is called assortative mating, where individuals choose partners with similar traits.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: This phenomenon is called assortative mating, where individuals choose partners with similar traits.",
+    "ai_video_prompt": "Cinematic motion: Context visual: This phenomenon is called assortative mating, where individuals choose partners with similar traits.",
+    "stock_footage_query": "",
+    "text_overlay": "This phenomenon is called",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But why does this happen? Is it nature, nurture, or a mix of both?",
+    "visual_description": "Escalation visual: But why does this happen? Is it nature, nurture, or a mix of both?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But why does this happen? Is it nature, nurture, or a mix of both?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But why does this happen? Is it nature, nurture, or a mix of both?",
+    "stock_footage_query": "",
+    "text_overlay": "But why does this",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show that similarities in education, interests, and even values play a big role.",
+    "visual_description": "Evidence visual: Studies show that similarities in education, interests, and even values play a big role.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show that similarities in education, interests, and even values play a big role.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show that similarities in education, interests, and even values play a big role.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show that similarities",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But here's the twist: it can lead to unexpected consequences in genetics and society.",
+    "visual_description": "Pattern Interrupt visual: But here's the twist: it can lead to unexpected consequences in genetics and society.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: But here's the twist: it can lead to unexpected consequences in genetics and society.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: But here's the twist: it can lead to unexpected consequences in genetics and society.",
+    "stock_footage_query": "",
+    "text_overlay": "But here's the twist:",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "In a world craving diversity, assortative mating might limit it. Think about that.",
+    "visual_description": "Payoff visual: In a world craving diversity, assortative mating might limit it. Think about that.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: In a world craving diversity, assortative mating might limit it. Think about that.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: In a world craving diversity, assortative mating might limit it. Think about that.",
+    "stock_footage_query": "",
+    "text_overlay": "In a world craving",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 42.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 18.0,
+    "narration": "Want to dive deeper? Follow for more fascinating insights into science!",
+    "visual_description": "Cta visual: Want to dive deeper? Follow for more fascinating insights into science!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper? Follow for more fascinating insights into science!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper? Follow for more fascinating insights into science!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 42.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 42.0
+    }
+  }
+]

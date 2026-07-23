@@ -1,0 +1,74 @@
+{
+  "title": "HPV and cancer",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the link between HPV and cancer through scientific insights.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about HPV and cancer.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Human Papillomavirus, or HPV, is a virus affecting millions, but its connection to cancer is crucial.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Certain HPV types can lead to cancers, notably cervical cancer, but that\u2019s not the whole story.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "intriguing fact"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows that most HPV infections clear on their own, but persistent infections can be dangerous.",
+      "emotion": "curiosity",
+      "delivery": "clear and factual",
+      "retention_device": "fact reveal"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "Vaccination is key in preventing HPV-related cancers, and early screening saves lives.",
+      "emotion": "hopeful",
+      "delivery": "optimistic",
+      "retention_device": "solution offered"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay informed, get vaccinated, and don't forget to check out more facts about HPV and cancer!",
+      "emotion": "curiosity",
+      "delivery": "encouraging",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about HPV and cancer. Human Papillomavirus, or HPV, is a virus affecting millions, but its connection to cancer is crucial. Certain HPV types can lead to cancers, notably cervical cancer, but that\u2019s not the whole story. Research shows that most HPV infections clear on their own, but persistent infections can be dangerous. Vaccination is key in preventing HPV-related cancers, and early screening saves lives. Stay informed, get vaccinated, and don't forget to check out more facts about HPV and cancer!",
+  "call_to_action": "Stay informed, get vaccinated, and don't forget to check out more facts about HPV and cancer!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:29:20.201621+00:00",
+  "source": "ai"
+}

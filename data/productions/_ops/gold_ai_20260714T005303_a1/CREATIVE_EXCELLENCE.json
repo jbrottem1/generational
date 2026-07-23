@@ -1,0 +1,122 @@
+{
+  "generated_at": "2026-07-14T00:58:52.081726+00:00",
+  "version": "1.0.0",
+  "production_id": "gold_ai_20260714T005303_a1",
+  "topic": "What Artificial Intelligence Actually Is",
+  "lens": [
+    "Pixar",
+    "Kurzgesagt",
+    "Veritasium",
+    "Mark Rober",
+    "MrBeast retention"
+  ],
+  "scorecard": {
+    "version": "1.0.0",
+    "creative_excellence_score": 91.4,
+    "dimensions": {
+      "engineering_quality": 99.0,
+      "creative_quality": 92.1,
+      "viewer_retention": 91.9,
+      "educational_value": 90.0,
+      "entertainment": 93.7,
+      "shareability": 88.0,
+      "emotional_impact": 94.0,
+      "curiosity": 90.0
+    },
+    "timeline": {
+      "first_3_seconds": 93.0,
+      "first_6_seconds": 92.8,
+      "first_15_seconds": 89.9,
+      "middle_pacing": 94.4,
+      "ending": 89.0
+    },
+    "craft": {
+      "viewer_emotion": 94.0,
+      "curiosity": 90.0,
+      "payoff": 89.5,
+      "visual_movement": 97.6,
+      "narration_energy": 85.0
+    },
+    "timeline_notes": {
+      "first_3_seconds": "Scroll-stop window \u2014 concrete contradiction beats definition.",
+      "first_6_seconds": "Must prove the open with a visual argument.",
+      "first_15_seconds": "Promise locked or viewer exits.",
+      "middle_pacing": "Cut density / pattern interrupt against mid-drop.",
+      "ending": "Payoff clarity + share seed.",
+      "meta_leak_detected": true,
+      "scene_count": 9,
+      "curiosity_hits": 10,
+      "share_cta_detected": true
+    },
+    "viewer_outcomes": {
+      "would_stop_scrolling": 0.93,
+      "would_finish_watching": 0.909,
+      "would_share": 0.844,
+      "would_subscribe": 0.504,
+      "judgments": {
+        "would_stop_scrolling": true,
+        "would_finish_watching": true,
+        "would_share": true,
+        "would_subscribe": true
+      }
+    },
+    "engineering_vs_creative": {
+      "engineering_quality": 99.0,
+      "creative_excellence_score": 91.4,
+      "note": "High engineering does not equal stop-scroll creative power."
+    }
+  },
+  "single_recommendation": {
+    "element": "narration_energy",
+    "current_score": 85.0,
+    "excellence_floor": 92.0,
+    "gap": 7.0,
+    "impact_weight": 70,
+    "expected_retention_gain": 4.9,
+    "why_this_ranks_first": "Human contour on hook/punchline lifts finish rate.",
+    "recommendation": "Stress only the hook and punchline lines; keep body copy calmer to create human contour.",
+    "mode": "improve",
+    "do_not_touch": [
+      "ending",
+      "curiosity",
+      "payoff",
+      "first_15_seconds"
+    ],
+    "principle": "Never suggest 20 improvements. Ship one highest-impact creative change.",
+    "runner_ups": [
+      {
+        "element": "ending",
+        "expected_retention_gain": 1.8
+      },
+      {
+        "element": "curiosity",
+        "expected_retention_gain": 1.7
+      },
+      {
+        "element": "payoff",
+        "expected_retention_gain": 1.7
+      }
+    ]
+  },
+  "vs_previous": {
+    "previous_score": 91.0,
+    "delta": 0.4,
+    "more_engaging_than_previous": true
+  },
+  "mission": {
+    "measure": [
+      "stop_scroll",
+      "finish",
+      "share",
+      "subscribe"
+    ],
+    "do_not_measure": [
+      "code_quality",
+      "architecture",
+      "engine_count"
+    ],
+    "rule": "Exactly ONE creative recommendation per video."
+  },
+  "artifact_dir": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/_validation/creative_excellence/gold_ai_20260714T005303_a1",
+  "markdown_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/_validation/creative_excellence/gold_ai_20260714T005303_a1/CREATIVE_EXCELLENCE.md"
+}

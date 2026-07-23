@@ -1,0 +1,1692 @@
+{
+  "package_type": "PRODUCTION_ASSET_PACKAGE",
+  "package_version": "2.0.0",
+  "engine_id": "production_asset_studio",
+  "phase": "II",
+  "focus": "golden_motion_phase_ii",
+  "created_at": "2026-07-18T14:47:06.217442+00:00",
+  "runtime_contract": {
+    "character_blend": "DOCTOR_001_SKINNED.blend",
+    "world_blend": "GENERATIONAL_MEDICAL_LAB.blend",
+    "prop_blend": "SAMPLE_CONTAINER_001.blend",
+    "rig_map": "RIG_BONE_MAP.json",
+    "asset_origin": "ASSET_ORIGIN.json"
+  },
+  "departments": [
+    {
+      "department_id": "character_studio",
+      "display_name": "Character Studio",
+      "mission": "Production meshes, facial/body topology, clothing, materials \u2014 runtime-compatible",
+      "priority_actors": [
+        "DOCTOR_001",
+        "FOUNDER_001"
+      ],
+      "future_actors": [
+        "TEACHER_001",
+        "HISTORIAN_001",
+        "ENGINEER_001",
+        "NURSE_001",
+        "PATIENT_CHILD_001"
+      ],
+      "deliverables": [
+        "production_mesh",
+        "facial_topology",
+        "body_topology",
+        "skeletal_compatibility",
+        "facial_rig",
+        "clothing",
+        "hair",
+        "materials",
+        "textures",
+        "expressions",
+        "animation_compatibility"
+      ],
+      "assets": [
+        {
+          "asset_id": "DOCTOR_001",
+          "quality_tier": "phase_ii_production",
+          "runtime_path": "data/studio_assets/DOCTOR_001/RUNTIME/DOCTOR_001_SKINNED.blend",
+          "must_preserve": [
+            "armature",
+            "skinning",
+            "shape_keys",
+            "canonical_bones"
+          ]
+        }
+      ],
+      "forbidden": [
+        "image_plate_actors",
+        "ken_burns_characters",
+        "runtime_incompatible_rigs"
+      ]
+    },
+    {
+      "department_id": "environment_studio",
+      "display_name": "Environment Studio",
+      "mission": "Replace greybox worlds with cinematic navigable locations",
+      "priority_worlds": [
+        "GENERATIONAL_MEDICAL_LAB"
+      ],
+      "requirements": [
+        "modern_architecture",
+        "cinematic_lighting",
+        "polished_floors",
+        "laboratory_equipment",
+        "holographic_displays",
+        "furniture",
+        "shelves",
+        "books",
+        "plants",
+        "windows",
+        "outdoor_scenery",
+        "atmospheric_depth",
+        "reflections",
+        "high_quality_materials",
+        "fully_navigable"
+      ],
+      "assets": [
+        {
+          "asset_id": "GENERATIONAL_MEDICAL_LAB",
+          "world_package_id": "WORLD-GMRI-MEDICAL-LAB",
+          "quality_tier": "phase_ii_production",
+          "runtime_path": "data/studio_assets/DOCTOR_001/RUNTIME/GENERATIONAL_MEDICAL_LAB.blend",
+          "flat_image_background": false
+        }
+      ]
+    },
+    {
+      "department_id": "prop_studio",
+      "display_name": "Prop Studio",
+      "mission": "Reusable production props with collision, grasp, and LOD",
+      "required_fields": [
+        "geometry",
+        "materials",
+        "collision",
+        "interaction_points",
+        "grasp_points",
+        "lod_versions"
+      ],
+      "assets": [
+        {
+          "asset_id": "SAMPLE_CONTAINER_001",
+          "quality_tier": "phase_ii_production",
+          "grasp_points": [
+            "grasp_primary"
+          ],
+          "lod": [
+            "lod0",
+            "lod1"
+          ]
+        },
+        {
+          "asset_id": "MICROSCOPE_001",
+          "quality_tier": "phase_ii_production",
+          "grasp_points": [
+            "grasp_primary"
+          ],
+          "lod": [
+            "lod0",
+            "lod1"
+          ]
+        },
+        {
+          "asset_id": "MEDICAL_SCANNER_001",
+          "quality_tier": "phase_ii_production",
+          "grasp_points": [
+            "grasp_primary"
+          ],
+          "lod": [
+            "lod0",
+            "lod1"
+          ]
+        },
+        {
+          "asset_id": "DNA_MODEL_001",
+          "quality_tier": "phase_ii_production",
+          "grasp_points": [
+            "grasp_primary"
+          ],
+          "lod": [
+            "lod0",
+            "lod1"
+          ]
+        },
+        {
+          "asset_id": "COMPUTER_001",
+          "quality_tier": "phase_ii_production",
+          "grasp_points": [
+            "grasp_primary"
+          ],
+          "lod": [
+            "lod0",
+            "lod1"
+          ]
+        },
+        {
+          "asset_id": "TABLET_001",
+          "quality_tier": "phase_ii_production",
+          "grasp_points": [
+            "grasp_primary"
+          ],
+          "lod": [
+            "lod0",
+            "lod1"
+          ]
+        },
+        {
+          "asset_id": "COFFEE_MUG_001",
+          "quality_tier": "phase_ii_production",
+          "grasp_points": [
+            "grasp_primary"
+          ],
+          "lod": [
+            "lod0",
+            "lod1"
+          ]
+        },
+        {
+          "asset_id": "BOOK_STACK_001",
+          "quality_tier": "phase_ii_production",
+          "grasp_points": [
+            "grasp_primary"
+          ],
+          "lod": [
+            "lod0",
+            "lod1"
+          ]
+        },
+        {
+          "asset_id": "CHAIR_001",
+          "quality_tier": "phase_ii_production",
+          "grasp_points": [
+            "grasp_primary"
+          ],
+          "lod": [
+            "lod0",
+            "lod1"
+          ]
+        },
+        {
+          "asset_id": "DESK_001",
+          "quality_tier": "phase_ii_production",
+          "grasp_points": [
+            "grasp_primary"
+          ],
+          "lod": [
+            "lod0",
+            "lod1"
+          ]
+        },
+        {
+          "asset_id": "MEDICINE_BOTTLE_001",
+          "quality_tier": "phase_ii_production",
+          "grasp_points": [
+            "grasp_primary"
+          ],
+          "lod": [
+            "lod0",
+            "lod1"
+          ]
+        },
+        {
+          "asset_id": "WHITEBOARD_001",
+          "quality_tier": "phase_ii_production",
+          "grasp_points": [
+            "grasp_primary"
+          ],
+          "lod": [
+            "lod0",
+            "lod1"
+          ]
+        },
+        {
+          "asset_id": "LAB_INSTRUMENT_SET_001",
+          "quality_tier": "phase_ii_production",
+          "grasp_points": [
+            "grasp_primary"
+          ],
+          "lod": [
+            "lod0",
+            "lod1"
+          ]
+        }
+      ]
+    },
+    {
+      "department_id": "material_studio",
+      "display_name": "Material Studio",
+      "mission": "Production PBR materials replacing placeholders",
+      "workflow": "blender_principled_bsdf",
+      "assets": [
+        {
+          "asset_id": "MAT_CERAMIC",
+          "material_id": "ceramic",
+          "pbr": true
+        },
+        {
+          "asset_id": "MAT_GLASS",
+          "material_id": "glass",
+          "pbr": true
+        },
+        {
+          "asset_id": "MAT_STEEL",
+          "material_id": "steel",
+          "pbr": true
+        },
+        {
+          "asset_id": "MAT_CARBON_FIBER",
+          "material_id": "carbon_fiber",
+          "pbr": true
+        },
+        {
+          "asset_id": "MAT_PLASTIC",
+          "material_id": "plastic",
+          "pbr": true
+        },
+        {
+          "asset_id": "MAT_FABRIC",
+          "material_id": "fabric",
+          "pbr": true
+        },
+        {
+          "asset_id": "MAT_LEATHER",
+          "material_id": "leather",
+          "pbr": true
+        },
+        {
+          "asset_id": "MAT_WOOD",
+          "material_id": "wood",
+          "pbr": true
+        },
+        {
+          "asset_id": "MAT_PAINT",
+          "material_id": "paint",
+          "pbr": true
+        },
+        {
+          "asset_id": "MAT_CONCRETE",
+          "material_id": "concrete",
+          "pbr": true
+        },
+        {
+          "asset_id": "MAT_RUBBER",
+          "material_id": "rubber",
+          "pbr": true
+        },
+        {
+          "asset_id": "MAT_SKIN_COMPOSITE",
+          "material_id": "skin_composite",
+          "pbr": true
+        }
+      ]
+    },
+    {
+      "department_id": "lighting_studio",
+      "display_name": "Lighting Studio",
+      "mission": "Reusable cinematic lighting presets",
+      "assets": [
+        {
+          "asset_id": "LIGHT_MORNING_LAB",
+          "preset_id": "morning_lab",
+          "includes": [
+            "key",
+            "fill",
+            "rim",
+            "practicals",
+            "exposure"
+          ]
+        },
+        {
+          "asset_id": "LIGHT_GOLDEN_HOUR",
+          "preset_id": "golden_hour",
+          "includes": [
+            "key",
+            "fill",
+            "rim",
+            "practicals",
+            "exposure"
+          ]
+        },
+        {
+          "asset_id": "LIGHT_SOFT_CLASSROOM",
+          "preset_id": "soft_classroom",
+          "includes": [
+            "key",
+            "fill",
+            "rim",
+            "practicals",
+            "exposure"
+          ]
+        },
+        {
+          "asset_id": "LIGHT_NIGHT_LABORATORY",
+          "preset_id": "night_laboratory",
+          "includes": [
+            "key",
+            "fill",
+            "rim",
+            "practicals",
+            "exposure"
+          ]
+        },
+        {
+          "asset_id": "LIGHT_HOSPITAL_EMERGENCY",
+          "preset_id": "hospital_emergency",
+          "includes": [
+            "key",
+            "fill",
+            "rim",
+            "practicals",
+            "exposure"
+          ]
+        },
+        {
+          "asset_id": "LIGHT_MUSEUM",
+          "preset_id": "museum",
+          "includes": [
+            "key",
+            "fill",
+            "rim",
+            "practicals",
+            "exposure"
+          ]
+        },
+        {
+          "asset_id": "LIGHT_FOREST",
+          "preset_id": "forest",
+          "includes": [
+            "key",
+            "fill",
+            "rim",
+            "practicals",
+            "exposure"
+          ]
+        },
+        {
+          "asset_id": "LIGHT_RAIN",
+          "preset_id": "rain",
+          "includes": [
+            "key",
+            "fill",
+            "rim",
+            "practicals",
+            "exposure"
+          ]
+        },
+        {
+          "asset_id": "LIGHT_SNOW",
+          "preset_id": "snow",
+          "includes": [
+            "key",
+            "fill",
+            "rim",
+            "practicals",
+            "exposure"
+          ]
+        },
+        {
+          "asset_id": "LIGHT_SUNSET",
+          "preset_id": "sunset",
+          "includes": [
+            "key",
+            "fill",
+            "rim",
+            "practicals",
+            "exposure"
+          ]
+        }
+      ],
+      "default_for_golden_motion": "morning_lab"
+    },
+    {
+      "department_id": "facial_performance_studio",
+      "display_name": "Facial Performance Studio",
+      "mission": "Upgrade DOCTOR_001 facial realism while preserving shape-key contract",
+      "supports": [
+        "eye_moisture",
+        "iris_detail",
+        "independent_eyeballs",
+        "micro_expressions",
+        "natural_blinking",
+        "brow_movement",
+        "cheeks",
+        "jaw",
+        "lips",
+        "visemes",
+        "smiles",
+        "concern",
+        "joy",
+        "curiosity",
+        "empathy"
+      ],
+      "required_shape_keys": [
+        "jaw_open",
+        "smile",
+        "concern",
+        "blink_L",
+        "blink_R",
+        "brow_raise",
+        "lip_widen",
+        "viseme_A",
+        "viseme_E",
+        "viseme_O",
+        "viseme_U",
+        "viseme_M",
+        "viseme_F"
+      ],
+      "assets": [
+        {
+          "asset_id": "DOCTOR_001_FACE",
+          "actor_id": "DOCTOR_001"
+        }
+      ]
+    },
+    {
+      "department_id": "animation_library",
+      "display_name": "Animation Library",
+      "mission": "Reusable skeletal animation clips \u2014 never image animation",
+      "clip_format": "blender_action_or_joint_tracks",
+      "assets": [
+        {
+          "asset_id": "CLIP_WALKING",
+          "clip_id": "walking",
+          "skeletal": true
+        },
+        {
+          "asset_id": "CLIP_RUNNING",
+          "clip_id": "running",
+          "skeletal": true
+        },
+        {
+          "asset_id": "CLIP_IDLE",
+          "clip_id": "idle",
+          "skeletal": true
+        },
+        {
+          "asset_id": "CLIP_TEACHING",
+          "clip_id": "teaching",
+          "skeletal": true
+        },
+        {
+          "asset_id": "CLIP_LISTENING",
+          "clip_id": "listening",
+          "skeletal": true
+        },
+        {
+          "asset_id": "CLIP_THINKING",
+          "clip_id": "thinking",
+          "skeletal": true
+        },
+        {
+          "asset_id": "CLIP_GREETING",
+          "clip_id": "greeting",
+          "skeletal": true
+        },
+        {
+          "asset_id": "CLIP_WRITING",
+          "clip_id": "writing",
+          "skeletal": true
+        },
+        {
+          "asset_id": "CLIP_TYPING",
+          "clip_id": "typing",
+          "skeletal": true
+        },
+        {
+          "asset_id": "CLIP_POINTING",
+          "clip_id": "pointing",
+          "skeletal": true
+        },
+        {
+          "asset_id": "CLIP_PICKING_UP_OBJECTS",
+          "clip_id": "picking_up_objects",
+          "skeletal": true
+        },
+        {
+          "asset_id": "CLIP_HOLDING_OBJECTS",
+          "clip_id": "holding_objects",
+          "skeletal": true
+        },
+        {
+          "asset_id": "CLIP_SITTING",
+          "clip_id": "sitting",
+          "skeletal": true
+        },
+        {
+          "asset_id": "CLIP_STANDING",
+          "clip_id": "standing",
+          "skeletal": true
+        },
+        {
+          "asset_id": "CLIP_LAUGHING",
+          "clip_id": "laughing",
+          "skeletal": true
+        },
+        {
+          "asset_id": "CLIP_LOOKING_AROUND",
+          "clip_id": "looking_around",
+          "skeletal": true
+        },
+        {
+          "asset_id": "CLIP_MEDICAL_EXAMINATION",
+          "clip_id": "medical_examination",
+          "skeletal": true
+        }
+      ]
+    },
+    {
+      "department_id": "visual_storytelling",
+      "display_name": "Visual Storytelling",
+      "mission": "Depth, life, and atmosphere without changing execution engines",
+      "scene_layers": [
+        "foreground",
+        "midground",
+        "background"
+      ],
+      "requires": [
+        "depth",
+        "parallax",
+        "ambient_movement",
+        "weather",
+        "dust",
+        "fog",
+        "volumetric_light",
+        "moving_screens",
+        "people_or_life_cues"
+      ],
+      "assets": [
+        {
+          "asset_id": "STORY_LAB_ATMOSPHERE_001",
+          "world_id": "GENERATIONAL_MEDICAL_LAB",
+          "effects": [
+            "screen_pulse",
+            "window_parallax",
+            "soft_fog",
+            "dust_motes"
+          ]
+        }
+      ]
+    }
+  ],
+  "validation_summary": {
+    "checked": 56,
+    "rejected": 0,
+    "ok": true
+  },
+  "asset_validations": [
+    {
+      "asset_id": "DOCTOR_001",
+      "department_id": "character_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "GENERATIONAL_MEDICAL_LAB",
+      "department_id": "environment_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "SAMPLE_CONTAINER_001",
+      "department_id": "prop_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "MICROSCOPE_001",
+      "department_id": "prop_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "MEDICAL_SCANNER_001",
+      "department_id": "prop_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "DNA_MODEL_001",
+      "department_id": "prop_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "COMPUTER_001",
+      "department_id": "prop_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "TABLET_001",
+      "department_id": "prop_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "COFFEE_MUG_001",
+      "department_id": "prop_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "BOOK_STACK_001",
+      "department_id": "prop_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "CHAIR_001",
+      "department_id": "prop_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "DESK_001",
+      "department_id": "prop_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "MEDICINE_BOTTLE_001",
+      "department_id": "prop_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "WHITEBOARD_001",
+      "department_id": "prop_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "LAB_INSTRUMENT_SET_001",
+      "department_id": "prop_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "MAT_CERAMIC",
+      "department_id": "material_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "MAT_GLASS",
+      "department_id": "material_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "MAT_STEEL",
+      "department_id": "material_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "MAT_CARBON_FIBER",
+      "department_id": "material_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "MAT_PLASTIC",
+      "department_id": "material_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "MAT_FABRIC",
+      "department_id": "material_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "MAT_LEATHER",
+      "department_id": "material_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "MAT_WOOD",
+      "department_id": "material_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "MAT_PAINT",
+      "department_id": "material_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "MAT_CONCRETE",
+      "department_id": "material_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "MAT_RUBBER",
+      "department_id": "material_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "MAT_SKIN_COMPOSITE",
+      "department_id": "material_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "LIGHT_MORNING_LAB",
+      "department_id": "lighting_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "LIGHT_GOLDEN_HOUR",
+      "department_id": "lighting_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "LIGHT_SOFT_CLASSROOM",
+      "department_id": "lighting_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "LIGHT_NIGHT_LABORATORY",
+      "department_id": "lighting_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "LIGHT_HOSPITAL_EMERGENCY",
+      "department_id": "lighting_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "LIGHT_MUSEUM",
+      "department_id": "lighting_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "LIGHT_FOREST",
+      "department_id": "lighting_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "LIGHT_RAIN",
+      "department_id": "lighting_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "LIGHT_SNOW",
+      "department_id": "lighting_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "LIGHT_SUNSET",
+      "department_id": "lighting_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "DOCTOR_001_FACE",
+      "department_id": "facial_performance_studio",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "CLIP_WALKING",
+      "department_id": "animation_library",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "CLIP_RUNNING",
+      "department_id": "animation_library",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "CLIP_IDLE",
+      "department_id": "animation_library",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "CLIP_TEACHING",
+      "department_id": "animation_library",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "CLIP_LISTENING",
+      "department_id": "animation_library",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "CLIP_THINKING",
+      "department_id": "animation_library",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "CLIP_GREETING",
+      "department_id": "animation_library",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "CLIP_WRITING",
+      "department_id": "animation_library",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "CLIP_TYPING",
+      "department_id": "animation_library",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "CLIP_POINTING",
+      "department_id": "animation_library",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "CLIP_PICKING_UP_OBJECTS",
+      "department_id": "animation_library",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "CLIP_HOLDING_OBJECTS",
+      "department_id": "animation_library",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "CLIP_SITTING",
+      "department_id": "animation_library",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "CLIP_STANDING",
+      "department_id": "animation_library",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "CLIP_LAUGHING",
+      "department_id": "animation_library",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "CLIP_LOOKING_AROUND",
+      "department_id": "animation_library",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "CLIP_MEDICAL_EXAMINATION",
+      "department_id": "animation_library",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    },
+    {
+      "asset_id": "STORY_LAB_ATMOSPHERE_001",
+      "department_id": "visual_storytelling",
+      "ok": true,
+      "rejected": false,
+      "rejection_reasons": [],
+      "warnings": [],
+      "runtime_compatible": true,
+      "rig_compatible": true,
+      "skeletal_animation_preserved": true,
+      "rules": [
+        "breaks_runtime",
+        "breaks_rig",
+        "breaks_animation_compatibility",
+        "requires_new_architecture",
+        "reduces_performance_unacceptably",
+        "replaces_skeletal_with_image_animation"
+      ]
+    }
+  ],
+  "quality_standard": [
+    "visual_realism",
+    "animation_quality",
+    "facial_performance",
+    "lighting",
+    "materials",
+    "storytelling",
+    "runtime_unchanged"
+  ],
+  "architecture_note": "Assets upgrade only. Execution engines remain frozen."
+}

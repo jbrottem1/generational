@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Ever wondered how genes stay balanced in a population?",
+    "visual_description": "Hook visual: Ever wondered how genes stay balanced in a population?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever wondered how genes stay balanced in a population?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever wondered how genes stay balanced in a population?",
+    "stock_footage_query": "",
+    "text_overlay": "Ever wondered how genes",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "neutral",
+    "length_sec": 8.0,
+    "narration": "The Hardy Weinberg idea explains this balance using simple math and assumptions.",
+    "visual_description": "Context visual: The Hardy Weinberg idea explains this balance using simple math and assumptions.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: The Hardy Weinberg idea explains this balance using simple math and assumptions.",
+    "ai_video_prompt": "Cinematic motion: Context visual: The Hardy Weinberg idea explains this balance using simple math and assumptions.",
+    "stock_footage_query": "",
+    "text_overlay": "The Hardy Weinberg idea",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "neutral",
+    "length_sec": 8.0,
+    "narration": "It assumes no mutations, random mating, no migration, large populations, and no selection.",
+    "visual_description": "Escalation visual: It assumes no mutations, random mating, no migration, large populations, and no selection.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: It assumes no mutations, random mating, no migration, large populations, and no selection.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: It assumes no mutations, random mating, no migration, large populations, and no selection.",
+    "stock_footage_query": "",
+    "text_overlay": "It assumes no mutations,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "In real life, these conditions are rarely met. Yet, it\u2019s a powerful tool!",
+    "visual_description": "Evidence visual: In real life, these conditions are rarely met. Yet, it\u2019s a powerful tool!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: In real life, these conditions are rarely met. Yet, it\u2019s a powerful tool!",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: In real life, these conditions are rarely met. Yet, it\u2019s a powerful tool!",
+    "stock_footage_query": "",
+    "text_overlay": "In real life, these",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "satisfaction",
+    "length_sec": 12.0,
+    "narration": "Understanding Hardy Weinberg helps us grasp how evolution impacts genetic diversity.",
+    "visual_description": "Payoff visual: Understanding Hardy Weinberg helps us grasp how evolution impacts genetic diversity.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding Hardy Weinberg helps us grasp how evolution impacts genetic diversity.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding Hardy Weinberg helps us grasp how evolution impacts genetic diversity.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding Hardy Weinberg helps",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "excited",
+    "length_sec": 22.0,
+    "narration": "Curious about genetics? Hit like and follow for more science insights!",
+    "visual_description": "Cta visual: Curious about genetics? Hit like and follow for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about genetics? Hit like and follow for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about genetics? Hit like and follow for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about genetics? Hit",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

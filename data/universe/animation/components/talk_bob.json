@@ -1,0 +1,21 @@
+{
+  "id": "talk_bob",
+  "loop": true,
+  "cycle_sec": 0.35,
+  "sync": "vo_amplitude",
+  "keyframes": [
+    {
+      "t": 0.0,
+      "head_y": 0.0
+    },
+    {
+      "t": 0.12,
+      "head_y": 0.012
+    },
+    {
+      "t": 0.35,
+      "head_y": 0.0
+    }
+  ],
+  "notes": "Amplitude scales with narration energy; mouth shapes from expression sheet."
+}

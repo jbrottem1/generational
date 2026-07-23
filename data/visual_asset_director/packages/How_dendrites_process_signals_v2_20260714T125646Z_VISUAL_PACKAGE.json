@@ -1,0 +1,1042 @@
+{
+  "package_type": "VISUAL_PACKAGE",
+  "package_version": "1.0.0",
+  "production_id": "ops_eed8fd1cd4",
+  "topic": "How dendrites process signals v2",
+  "niche": "",
+  "platform": "youtube_shorts",
+  "style_profile": {
+    "style_key": "documentary",
+    "label": "Documentary",
+    "palette_bias": "natural_desaturated",
+    "lighting": "motivated_practical",
+    "motion": "observational_push_orbit",
+    "notes": "Authentic environments, restrained grade, evidence-forward framing",
+    "inferred": true,
+    "niche": "",
+    "topic": "How dendrites process signals v2",
+    "world_type": ""
+  },
+  "approved_assets": [],
+  "rejected_assets": [
+    {
+      "scene_id": "scene_00",
+      "path": null,
+      "reject_reasons": [
+        "no_candidate_assets"
+      ],
+      "overall": 0
+    },
+    {
+      "scene_id": "scene_01",
+      "path": null,
+      "reject_reasons": [
+        "no_candidate_assets"
+      ],
+      "overall": 0
+    },
+    {
+      "scene_id": "scene_02",
+      "path": null,
+      "reject_reasons": [
+        "no_candidate_assets"
+      ],
+      "overall": 0
+    },
+    {
+      "scene_id": "scene_03",
+      "path": null,
+      "reject_reasons": [
+        "no_candidate_assets"
+      ],
+      "overall": 0
+    },
+    {
+      "scene_id": "scene_04",
+      "path": null,
+      "reject_reasons": [
+        "no_candidate_assets"
+      ],
+      "overall": 0
+    },
+    {
+      "scene_id": "scene_05",
+      "path": null,
+      "reject_reasons": [
+        "no_candidate_assets"
+      ],
+      "overall": 0
+    },
+    {
+      "scene_id": "scene_06",
+      "path": null,
+      "reject_reasons": [
+        "no_candidate_assets"
+      ],
+      "overall": 0
+    },
+    {
+      "scene_id": "scene_07",
+      "path": null,
+      "reject_reasons": [
+        "no_candidate_assets"
+      ],
+      "overall": 0
+    },
+    {
+      "scene_id": "scene_08",
+      "path": null,
+      "reject_reasons": [
+        "no_candidate_assets"
+      ],
+      "overall": 0
+    }
+  ],
+  "rejection_reasons_summary": {
+    "no_candidate_assets": 9
+  },
+  "visual_scores": {
+    "per_scene": {},
+    "mean_overall_professional_quality": 0.0,
+    "mean_approved_professional_quality": 0.0,
+    "approved_count": 0,
+    "rejected_count": 9,
+    "approval_rate": 0.0,
+    "cinematic_ready_count": 0
+  },
+  "continuity_report": {
+    "world_id": null,
+    "world_type": null,
+    "environment_ids": [],
+    "character_references": [
+      {
+        "name": "Professor",
+        "role": "educator",
+        "continuity_lock": true
+      }
+    ],
+    "palette_consistency": 51.0,
+    "environment_consistency": 70.0,
+    "character_consistency": 85.0,
+    "style_consistency": 0.0,
+    "style_profile": "documentary",
+    "average_palette_drift": 0.35,
+    "repeated_asset_count": 0,
+    "continuity_issues": [
+      {
+        "scene_id": "*",
+        "reason": "style_drift"
+      }
+    ],
+    "continuity_score": 49.8,
+    "preserves": [
+      "character_appearance",
+      "clothing",
+      "hair",
+      "facial_structure",
+      "age",
+      "color_palette",
+      "lighting_direction",
+      "time_of_day",
+      "environment",
+      "props",
+      "camera_orientation",
+      "scale",
+      "perspective",
+      "artistic_style"
+    ],
+    "note": "Professor / Observatory / Lab continuity enforced via world + character refs"
+  },
+  "thumbnail_candidate": null,
+  "character_references": [
+    {
+      "name": "Professor",
+      "role": "educator",
+      "continuity_lock": true
+    }
+  ],
+  "environment_references": [],
+  "asset_manifest": [
+    {
+      "scene_id": "scene_00",
+      "path": null,
+      "approved": false,
+      "provisional": false,
+      "cinematic_ready": false,
+      "overall": null,
+      "reject_reasons": [
+        "no_approvable_candidate"
+      ]
+    },
+    {
+      "scene_id": "scene_01",
+      "path": null,
+      "approved": false,
+      "provisional": false,
+      "cinematic_ready": false,
+      "overall": null,
+      "reject_reasons": [
+        "no_approvable_candidate"
+      ]
+    },
+    {
+      "scene_id": "scene_02",
+      "path": null,
+      "approved": false,
+      "provisional": false,
+      "cinematic_ready": false,
+      "overall": null,
+      "reject_reasons": [
+        "no_approvable_candidate"
+      ]
+    },
+    {
+      "scene_id": "scene_03",
+      "path": null,
+      "approved": false,
+      "provisional": false,
+      "cinematic_ready": false,
+      "overall": null,
+      "reject_reasons": [
+        "no_approvable_candidate"
+      ]
+    },
+    {
+      "scene_id": "scene_04",
+      "path": null,
+      "approved": false,
+      "provisional": false,
+      "cinematic_ready": false,
+      "overall": null,
+      "reject_reasons": [
+        "no_approvable_candidate"
+      ]
+    },
+    {
+      "scene_id": "scene_05",
+      "path": null,
+      "approved": false,
+      "provisional": false,
+      "cinematic_ready": false,
+      "overall": null,
+      "reject_reasons": [
+        "no_approvable_candidate"
+      ]
+    },
+    {
+      "scene_id": "scene_06",
+      "path": null,
+      "approved": false,
+      "provisional": false,
+      "cinematic_ready": false,
+      "overall": null,
+      "reject_reasons": [
+        "no_approvable_candidate"
+      ]
+    },
+    {
+      "scene_id": "scene_07",
+      "path": null,
+      "approved": false,
+      "provisional": false,
+      "cinematic_ready": false,
+      "overall": null,
+      "reject_reasons": [
+        "no_approvable_candidate"
+      ]
+    },
+    {
+      "scene_id": "scene_08",
+      "path": null,
+      "approved": false,
+      "provisional": false,
+      "cinematic_ready": false,
+      "overall": null,
+      "reject_reasons": [
+        "no_approvable_candidate"
+      ]
+    }
+  ],
+  "scene_direction": [
+    {
+      "scene_id": "scene_00",
+      "scene": {
+        "scene_number": 1,
+        "purpose": "hook",
+        "emotion": "intrigue",
+        "length_sec": 5.2,
+        "attention_level": "high",
+        "visual_style": "cinematic",
+        "narration": "Everyone repeats the same story about how dendrites process signals v2 in. They're wrong.",
+        "visual_description": "Scroll-stopping opening frame of how dendrites process signals v2 in a educational style, narrator professor. moody interior, practical lights in background. center-punched single subject, negative space above for text.",
+        "shot_type": "extreme_close_up",
+        "camera_angle": "extreme close-up",
+        "camera_motion": "crash zoom",
+        "lens_recommendation": "100mm macro, f/2.8",
+        "depth_of_field": "razor thin \u2014 single detail in focus",
+        "shot_composition": "center-punched single subject, negative space above for text",
+        "subject_placement": "dead center, filling 60% of frame",
+        "lighting": "low-key split lighting, half the face in shadow; style bias: motivated three-point with rim accent",
+        "environment": "moody interior, practical lights in background",
+        "color_palette": "teal and orange, filmic contrast",
+        "transition_in": "none",
+        "transition_out": "hard cut",
+        "motion_intensity": 85,
+        "motion_recommendation": "arresting \u2014 crash zoom at intensity 85/100",
+        "zoom": "fast punch-in from 120% to 100% in the first 0.5s",
+        "background": "moody interior, practical lights in background, rendered in teal and orange, filmic contrast",
+        "asset_type": "ai_video",
+        "ai_image_prompt": "Scroll-stopping opening frame of how dendrites process signals v2 in a educational style, narrator professor. moody interior, practical lights in background. center-punched single subject, negative space above for text. Lighting: low-key split lighting, half the face in shadow. Style: anamorphic film still, shallow depth. Palette: teal and orange, filmic contrast. Grade: film emulation, halation on highlights.",
+        "ai_video_prompt": "Scroll-stopping opening frame of how dendrites process signals v2 in a educational style, narrator professor. moody interior, practical lights in background. center-punched single subject, negative space above for text. Camera: crash zoom, 100mm macro, f/2.8. Mood: intrigue. Style: anamorphic film still, shallow depth. Duration: 5.2s.",
+        "stock_footage_query": "how dendrites process signals educational style,",
+        "overlay": "bold 3-4 word headline, top third, high-contrast stroke (letterboxed title cards)",
+        "text_overlay": "EVERYONE REPEATS THE SAME STORY\u2026",
+        "caption_placement": "upper third \u2014 clear of the punch-in subject",
+        "caption_timing": {
+          "start_sec": 0.0,
+          "end_sec": 5.2
+        },
+        "sound_effect": "vinyl stop before the twist",
+        "sfx_timing": {
+          "at_sec": 0.0,
+          "cue": "vinyl stop before the twist"
+        },
+        "music_style": "warm narrative underscore with a swelling finish (high-energy educational \u2014 punchy facts, fast cuts)",
+        "broll": [
+          "Close-up macro shots relating to how dendrites process signals v2 in a educational style, narrator professor"
+        ],
+        "thumbnail_candidate": true,
+        "visual_scores": {
+          "curiosity": 43,
+          "pattern_interrupt": 53,
+          "contrast": 54,
+          "novelty": 41,
+          "human_faces": 48,
+          "eye_contact": 31,
+          "motion": 91,
+          "scale": 37,
+          "speed": 46,
+          "emotional_color": 52,
+          "negative_space": 67,
+          "visual_hierarchy": 52
+        },
+        "visual_score": 51,
+        "predicted_retention": 98,
+        "visual_asset_approved": false,
+        "cinematic_ready": false,
+        "visual_asset_reject_reasons": [
+          "no_approvable_candidate"
+        ]
+      },
+      "approved": false,
+      "selected_path": null,
+      "provisional_path": null,
+      "scorecard": null,
+      "composition": null,
+      "inspection": null,
+      "reject_reasons": [
+        "no_approvable_candidate"
+      ],
+      "rejected": [],
+      "style_compatibility": 0,
+      "cinematic_ready": false
+    },
+    {
+      "scene_id": "scene_01",
+      "scene": {
+        "scene_number": 2,
+        "purpose": "pattern_interrupt",
+        "emotion": "empathy",
+        "length_sec": 3.8,
+        "attention_level": "high",
+        "visual_style": "cinematic",
+        "narration": "And no \u2014 it doesn't end the way you think.",
+        "visual_description": "Jarring visual reversal around how dendrites process signals v2 in a educational style, narrator professor. lived-in room with personal objects. off-center rule-of-thirds, tilted horizon.",
+        "shot_type": "pov",
+        "camera_angle": "pov",
+        "camera_motion": "first-person handheld",
+        "lens_recommendation": "21mm wide, f/4",
+        "depth_of_field": "natural \u2014 mimics human vision",
+        "shot_composition": "off-center rule-of-thirds, tilted horizon",
+        "subject_placement": "left third, facing into empty space",
+        "lighting": "soft window light, warm bounce fill; style bias: motivated three-point with rim accent",
+        "environment": "lived-in room with personal objects",
+        "color_palette": "teal and orange, filmic contrast",
+        "transition_in": "hard cut",
+        "transition_out": "whip cut",
+        "motion_intensity": 65,
+        "motion_recommendation": "immersive \u2014 first-person handheld at intensity 65/100",
+        "zoom": "none \u2014 the whip carries the energy",
+        "background": "lived-in room with personal objects, rendered in teal and orange, filmic contrast",
+        "asset_type": "ai_video",
+        "ai_image_prompt": "Jarring visual reversal around how dendrites process signals v2 in a educational style, narrator professor. lived-in room with personal objects. off-center rule-of-thirds, tilted horizon. Lighting: soft window light, warm bounce fill. Style: anamorphic film still, shallow depth. Palette: teal and orange, filmic contrast. Grade: film emulation, halation on highlights.",
+        "ai_video_prompt": "Jarring visual reversal around how dendrites process signals v2 in a educational style, narrator professor. lived-in room with personal objects. off-center rule-of-thirds, tilted horizon. Camera: first-person handheld, 21mm wide, f/4. Mood: empathy. Style: anamorphic film still, shallow depth. Duration: 3.8s.",
+        "stock_footage_query": "how dendrites process signals educational style,",
+        "overlay": "single contradicting word stamped over the frame (letterboxed title cards)",
+        "text_overlay": "AND NO \u2014 IT DOESN'T\u2026",
+        "caption_placement": "center \u2014 stamped with the interrupt word",
+        "caption_timing": {
+          "start_sec": 5.2,
+          "end_sec": 9.0
+        },
+        "sound_effect": "heartbeat pulse in the middle act",
+        "sfx_timing": {
+          "at_sec": 5.4,
+          "cue": "heartbeat pulse in the middle act"
+        },
+        "music_style": "warm narrative underscore with a swelling finish (high-energy educational \u2014 punchy facts, fast cuts)",
+        "broll": [
+          "Archival / documentary footage that grounds the general content claim"
+        ],
+        "thumbnail_candidate": false,
+        "visual_scores": {
+          "curiosity": 43,
+          "pattern_interrupt": 95,
+          "contrast": 39,
+          "novelty": 41,
+          "human_faces": 33,
+          "eye_contact": 31,
+          "motion": 73,
+          "scale": 53,
+          "speed": 42,
+          "emotional_color": 67,
+          "negative_space": 51,
+          "visual_hierarchy": 52
+        },
+        "visual_score": 52,
+        "predicted_retention": 95,
+        "visual_asset_approved": false,
+        "cinematic_ready": false,
+        "visual_asset_reject_reasons": [
+          "no_approvable_candidate"
+        ]
+      },
+      "approved": false,
+      "selected_path": null,
+      "provisional_path": null,
+      "scorecard": null,
+      "composition": null,
+      "inspection": null,
+      "reject_reasons": [
+        "no_approvable_candidate"
+      ],
+      "rejected": [],
+      "style_compatibility": 0,
+      "cinematic_ready": false
+    },
+    {
+      "scene_id": "scene_02",
+      "scene": {
+        "scene_number": 3,
+        "purpose": "curiosity_loop",
+        "emotion": "shock",
+        "length_sec": 6.0,
+        "attention_level": "high",
+        "visual_style": "cinematic",
+        "narration": "Keep the last line of this story in mind, because it's the part that changes everything.",
+        "visual_description": "Partially concealed reveal of how dendrites process signals v2 in a educational style, narrator professor. stark empty space, subject isolated. layered foreground obscuring a partially visible subject.",
+        "shot_type": "push_in",
+        "camera_angle": "push-in",
+        "camera_motion": "slow push-in",
+        "lens_recommendation": "40mm prime, f/2.2",
+        "depth_of_field": "tightening \u2014 focus narrows as camera closes",
+        "shot_composition": "layered foreground obscuring a partially visible subject",
+        "subject_placement": "background center, half-hidden by foreground element",
+        "lighting": "harsh strobe-adjacent key, blown highlights; style bias: motivated three-point with rim accent",
+        "environment": "stark empty space, subject isolated",
+        "color_palette": "teal and orange, filmic contrast",
+        "transition_in": "whip cut",
+        "transition_out": "match cut",
+        "motion_intensity": 45,
+        "motion_recommendation": "building tension \u2014 slow push-in at intensity 45/100",
+        "zoom": "creeping 100% to 108% push across the scene",
+        "background": "stark empty space, subject isolated, rendered in teal and orange, filmic contrast",
+        "asset_type": "ai_image",
+        "ai_image_prompt": "Partially concealed reveal of how dendrites process signals v2 in a educational style, narrator professor. stark empty space, subject isolated. layered foreground obscuring a partially visible subject. Lighting: harsh strobe-adjacent key, blown highlights. Style: anamorphic film still, shallow depth. Palette: teal and orange, filmic contrast. Grade: film emulation, halation on highlights.",
+        "ai_video_prompt": "Partially concealed reveal of how dendrites process signals v2 in a educational style, narrator professor. stark empty space, subject isolated. layered foreground obscuring a partially visible subject. Camera: slow push-in, 40mm prime, f/2.2. Mood: shock. Style: anamorphic film still, shallow depth. Duration: 6.0s.",
+        "stock_footage_query": "how dendrites process signals educational style,",
+        "overlay": "teaser text: 'wait for it\u2026' style, lower third (letterboxed title cards)",
+        "text_overlay": "KEEP THE LAST LINE OF\u2026",
+        "caption_placement": "lower third \u2014 under the concealed reveal",
+        "caption_timing": {
+          "start_sec": 9.0,
+          "end_sec": 15.0
+        },
+        "sound_effect": "gentle chime on the closing line",
+        "sfx_timing": {
+          "at_sec": 9.5,
+          "cue": "gentle chime on the closing line"
+        },
+        "music_style": "warm narrative underscore with a swelling finish (high-energy educational \u2014 punchy facts, fast cuts)",
+        "broll": [
+          "Slow push-in on a person reacting (realization moment)"
+        ],
+        "thumbnail_candidate": false,
+        "visual_scores": {
+          "curiosity": 61,
+          "pattern_interrupt": 37,
+          "contrast": 43,
+          "novelty": 45,
+          "human_faces": 37,
+          "eye_contact": 35,
+          "motion": 59,
+          "scale": 41,
+          "speed": 42,
+          "emotional_color": 56,
+          "negative_space": 71,
+          "visual_hierarchy": 86
+        },
+        "visual_score": 49,
+        "predicted_retention": 87,
+        "visual_asset_approved": false,
+        "cinematic_ready": false,
+        "visual_asset_reject_reasons": [
+          "no_approvable_candidate"
+        ]
+      },
+      "approved": false,
+      "selected_path": null,
+      "provisional_path": null,
+      "scorecard": null,
+      "composition": null,
+      "inspection": null,
+      "reject_reasons": [
+        "no_approvable_candidate"
+      ],
+      "rejected": [],
+      "style_compatibility": 0,
+      "cinematic_ready": false
+    },
+    {
+      "scene_id": "scene_03",
+      "scene": {
+        "scene_number": 4,
+        "purpose": "story_beat",
+        "emotion": "reflection",
+        "length_sec": 2.2,
+        "attention_level": "high",
+        "visual_style": "cinematic",
+        "narration": "Here's the context most videos skip.",
+        "visual_description": "Narrative beat visualizing: Here's the context most videos skip.. quiet room, long shadows. rule of thirds, subject leading the eye toward the next cut.",
+        "shot_type": "medium",
+        "camera_angle": "medium",
+        "camera_motion": "handheld drift",
+        "lens_recommendation": "35mm prime, f/2.8",
+        "depth_of_field": "moderate \u2014 subject sharp, background readable",
+        "shot_composition": "rule of thirds, subject leading the eye toward the next cut",
+        "subject_placement": "alternating thirds each beat to reset attention",
+        "lighting": "dusk ambience, blue hour window light; style bias: motivated three-point with rim accent",
+        "environment": "quiet room, long shadows",
+        "color_palette": "teal and orange, filmic contrast",
+        "transition_in": "match cut",
+        "transition_out": "hard cut",
+        "motion_intensity": 45,
+        "motion_recommendation": "conversational \u2014 handheld drift at intensity 45/100",
+        "zoom": "subtle 3% push on the key sentence",
+        "background": "quiet room, long shadows, rendered in teal and orange, filmic contrast",
+        "asset_type": "ai_image",
+        "ai_image_prompt": "Narrative beat visualizing: Here's the context most videos skip.. quiet room, long shadows. rule of thirds, subject leading the eye toward the next cut. Lighting: dusk ambience, blue hour window light. Style: anamorphic film still, shallow depth. Palette: teal and orange, filmic contrast. Grade: film emulation, halation on highlights.",
+        "ai_video_prompt": "Narrative beat visualizing: Here's the context most videos skip.. quiet room, long shadows. rule of thirds, subject leading the eye toward the next cut. Camera: handheld drift, 35mm prime, f/2.8. Mood: reflection. Style: anamorphic film still, shallow depth. Duration: 2.2s.",
+        "stock_footage_query": "how dendrites process signals educational style,",
+        "overlay": "keyword text synced to every number or stat (letterboxed title cards)",
+        "text_overlay": "HERE'S THE CONTEXT MOST VIDEOS\u2026",
+        "caption_placement": "bottom third, safe zone",
+        "caption_timing": {
+          "start_sec": 15.0,
+          "end_sec": 17.2
+        },
+        "sound_effect": "vinyl stop before the twist",
+        "sfx_timing": {
+          "at_sec": 15.0,
+          "cue": "vinyl stop before the twist"
+        },
+        "music_style": "warm narrative underscore with a swelling finish (high-energy educational \u2014 punchy facts, fast cuts)",
+        "broll": [
+          "Overhead time-lapse to compress the 'before and after'"
+        ],
+        "thumbnail_candidate": false,
+        "visual_scores": {
+          "curiosity": 43,
+          "pattern_interrupt": 33,
+          "contrast": 39,
+          "novelty": 41,
+          "human_faces": 33,
+          "eye_contact": 31,
+          "motion": 59,
+          "scale": 37,
+          "speed": 38,
+          "emotional_color": 52,
+          "negative_space": 35,
+          "visual_hierarchy": 82
+        },
+        "visual_score": 42,
+        "predicted_retention": 82,
+        "visual_asset_approved": false,
+        "cinematic_ready": false,
+        "visual_asset_reject_reasons": [
+          "no_approvable_candidate"
+        ]
+      },
+      "approved": false,
+      "selected_path": null,
+      "provisional_path": null,
+      "scorecard": null,
+      "composition": null,
+      "inspection": null,
+      "reject_reasons": [
+        "no_approvable_candidate"
+      ],
+      "rejected": [],
+      "style_compatibility": 0,
+      "cinematic_ready": false
+    },
+    {
+      "scene_id": "scene_04",
+      "scene": {
+        "scene_number": 5,
+        "purpose": "story_beat",
+        "emotion": "connection",
+        "length_sec": 9.4,
+        "attention_level": "high",
+        "visual_style": "cinematic",
+        "narration": "Then it escalates: Research on how dendrites process signals v2 in a educational style, narrator professor from PubMed highlights important patterns relevant to short-form content.",
+        "visual_description": "Narrative beat visualizing: Then it escalates: Research on how dendrites process signals v2 in a educational style, na. shared table, two mugs, close quarters. rule of thirds, subject leading the eye toward the next cut.",
+        "shot_type": "tracking",
+        "camera_angle": "tracking",
+        "camera_motion": "tracking",
+        "lens_recommendation": "35mm anamorphic, f/2.8",
+        "depth_of_field": "moderate \u2014 subject locked, world streaking past",
+        "shot_composition": "rule of thirds, subject leading the eye toward the next cut",
+        "subject_placement": "alternating thirds each beat to reset attention",
+        "lighting": "warm tungsten practicals; style bias: motivated three-point with rim accent",
+        "environment": "shared table, two mugs, close quarters",
+        "color_palette": "teal and orange, filmic contrast",
+        "transition_in": "hard cut",
+        "transition_out": "hard cut",
+        "motion_intensity": 65,
+        "motion_recommendation": "propulsive \u2014 tracking at intensity 65/100",
+        "zoom": "subtle 3% push on the key sentence",
+        "background": "shared table, two mugs, close quarters, rendered in teal and orange, filmic contrast",
+        "asset_type": "stock_footage",
+        "ai_image_prompt": "Narrative beat visualizing: Then it escalates: Research on how dendrites process signals v2 in a educational style, na. shared table, two mugs, close quarters. rule of thirds, subject leading the eye toward the next cut. Lighting: warm tungsten practicals. Style: anamorphic film still, shallow depth. Palette: teal and orange, filmic contrast. Grade: film emulation, halation on highlights.",
+        "ai_video_prompt": "Narrative beat visualizing: Then it escalates: Research on how dendrites process signals v2 in a educational style, na. shared table, two mugs, close quarters. rule of thirds, subject leading the eye toward the next cut. Camera: tracking, 35mm anamorphic, f/2.8. Mood: connection. Style: anamorphic film still, shallow depth. Duration: 9.4s.",
+        "stock_footage_query": "how dendrites process signals educational style,",
+        "overlay": "keyword text synced to every number or stat (letterboxed title cards)",
+        "text_overlay": "THEN IT ESCALATES: RESEARCH ON\u2026",
+        "caption_placement": "bottom third, safe zone",
+        "caption_timing": {
+          "start_sec": 17.2,
+          "end_sec": 26.6
+        },
+        "sound_effect": "heartbeat pulse in the middle act",
+        "sfx_timing": {
+          "at_sec": 17.2,
+          "cue": "heartbeat pulse in the middle act"
+        },
+        "music_style": "warm narrative underscore with a swelling finish (high-energy educational \u2014 punchy facts, fast cuts)",
+        "broll": [
+          "Text-on-screen inserts for every number or statistic"
+        ],
+        "thumbnail_candidate": false,
+        "visual_scores": {
+          "curiosity": 40,
+          "pattern_interrupt": 30,
+          "contrast": 36,
+          "novelty": 38,
+          "human_faces": 30,
+          "eye_contact": 28,
+          "motion": 72,
+          "scale": 34,
+          "speed": 39,
+          "emotional_color": 64,
+          "negative_space": 32,
+          "visual_hierarchy": 79
+        },
+        "visual_score": 42,
+        "predicted_retention": 77,
+        "visual_asset_approved": false,
+        "cinematic_ready": false,
+        "visual_asset_reject_reasons": [
+          "no_approvable_candidate"
+        ]
+      },
+      "approved": false,
+      "selected_path": null,
+      "provisional_path": null,
+      "scorecard": null,
+      "composition": null,
+      "inspection": null,
+      "reject_reasons": [
+        "no_approvable_candidate"
+      ],
+      "rejected": [],
+      "style_compatibility": 0,
+      "cinematic_ready": false
+    },
+    {
+      "scene_id": "scene_05",
+      "scene": {
+        "scene_number": 6,
+        "purpose": "story_beat",
+        "emotion": "intrigue",
+        "length_sec": 9.0,
+        "attention_level": "high",
+        "visual_style": "cinematic",
+        "narration": "The evidence: Research on how dendrites process signals v2 in a educational style, narrator professor from PubMed highlights important patterns relevant to short-form content.",
+        "visual_description": "Narrative beat visualizing: The evidence: Research on how dendrites process signals v2 in a educational style, narrato. moody interior, practical lights in background. rule of thirds, subject leading the eye toward the next cut.",
+        "shot_type": "drone",
+        "camera_angle": "drone",
+        "camera_motion": "drone rise",
+        "lens_recommendation": "24mm aerial, f/5.6",
+        "depth_of_field": "deep focus \u2014 full landscape sharp",
+        "shot_composition": "rule of thirds, subject leading the eye toward the next cut",
+        "subject_placement": "alternating thirds each beat to reset attention",
+        "lighting": "low-key split lighting, half the face in shadow; style bias: motivated three-point with rim accent",
+        "environment": "moody interior, practical lights in background",
+        "color_palette": "teal and orange, filmic contrast",
+        "transition_in": "hard cut",
+        "transition_out": "hard cut",
+        "motion_intensity": 70,
+        "motion_recommendation": "scale reveal \u2014 drone rise at intensity 70/100",
+        "zoom": "subtle 3% push on the key sentence",
+        "background": "moody interior, practical lights in background, rendered in teal and orange, filmic contrast",
+        "asset_type": "ai_video",
+        "ai_image_prompt": "Narrative beat visualizing: The evidence: Research on how dendrites process signals v2 in a educational style, narrato. moody interior, practical lights in background. rule of thirds, subject leading the eye toward the next cut. Lighting: low-key split lighting, half the face in shadow. Style: anamorphic film still, shallow depth. Palette: teal and orange, filmic contrast. Grade: film emulation, halation on highlights.",
+        "ai_video_prompt": "Narrative beat visualizing: The evidence: Research on how dendrites process signals v2 in a educational style, narrato. moody interior, practical lights in background. rule of thirds, subject leading the eye toward the next cut. Camera: drone rise, 24mm aerial, f/5.6. Mood: intrigue. Style: anamorphic film still, shallow depth. Duration: 9.0s.",
+        "stock_footage_query": "how dendrites process signals educational style,",
+        "overlay": "keyword text synced to every number or stat (letterboxed title cards)",
+        "text_overlay": "THE EVIDENCE: RESEARCH ON HOW\u2026",
+        "caption_placement": "bottom third, safe zone",
+        "caption_timing": {
+          "start_sec": 26.6,
+          "end_sec": 35.6
+        },
+        "sound_effect": "gentle chime on the closing line",
+        "sfx_timing": {
+          "at_sec": 26.6,
+          "cue": "gentle chime on the closing line"
+        },
+        "music_style": "warm narrative underscore with a swelling finish (high-energy educational \u2014 punchy facts, fast cuts)",
+        "broll": [
+          "Close-up macro shots relating to how dendrites process signals v2 in a educational style, narrator professor"
+        ],
+        "thumbnail_candidate": false,
+        "visual_scores": {
+          "curiosity": 44,
+          "pattern_interrupt": 34,
+          "contrast": 55,
+          "novelty": 42,
+          "human_faces": 49,
+          "eye_contact": 32,
+          "motion": 80,
+          "scale": 54,
+          "speed": 44,
+          "emotional_color": 53,
+          "negative_space": 36,
+          "visual_hierarchy": 83
+        },
+        "visual_score": 50,
+        "predicted_retention": 76,
+        "visual_asset_approved": false,
+        "cinematic_ready": false,
+        "visual_asset_reject_reasons": [
+          "no_approvable_candidate"
+        ]
+      },
+      "approved": false,
+      "selected_path": null,
+      "provisional_path": null,
+      "scorecard": null,
+      "composition": null,
+      "inspection": null,
+      "reject_reasons": [
+        "no_approvable_candidate"
+      ],
+      "rejected": [],
+      "style_compatibility": 0,
+      "cinematic_ready": false
+    },
+    {
+      "scene_id": "scene_06",
+      "scene": {
+        "scene_number": 7,
+        "purpose": "payoff",
+        "emotion": "empathy",
+        "length_sec": 2.6,
+        "attention_level": "medium",
+        "visual_style": "cinematic",
+        "narration": "This is the part that stops people.",
+        "visual_description": "The satisfying reveal moment for how dendrites process signals v2 in a educational style, narrator professor. lived-in room with personal objects. hero framing, shallow depth of field, clean background.",
+        "shot_type": "slow_motion",
+        "camera_angle": "slow motion",
+        "camera_motion": "slow-motion settle",
+        "lens_recommendation": "85mm prime at 120fps, f/1.4",
+        "depth_of_field": "shallow \u2014 every particle visible",
+        "shot_composition": "hero framing, shallow depth of field, clean background",
+        "subject_placement": "center, isolated against defocused backdrop",
+        "lighting": "soft window light, warm bounce fill; style bias: motivated three-point with rim accent",
+        "environment": "lived-in room with personal objects",
+        "color_palette": "teal and orange, filmic contrast",
+        "transition_in": "hard cut",
+        "transition_out": "dissolve",
+        "motion_intensity": 55,
+        "motion_recommendation": "suspended payoff \u2014 slow-motion settle at intensity 55/100",
+        "zoom": "slow-motion settle from 105% to 100%",
+        "background": "lived-in room with personal objects, rendered in teal and orange, filmic contrast",
+        "asset_type": "ai_video",
+        "ai_image_prompt": "The satisfying reveal moment for how dendrites process signals v2 in a educational style, narrator professor. lived-in room with personal objects. hero framing, shallow depth of field, clean background. Lighting: soft window light, warm bounce fill. Style: anamorphic film still, shallow depth. Palette: teal and orange, filmic contrast. Grade: film emulation, halation on highlights.",
+        "ai_video_prompt": "The satisfying reveal moment for how dendrites process signals v2 in a educational style, narrator professor. lived-in room with personal objects. hero framing, shallow depth of field, clean background. Camera: slow-motion settle, 85mm prime at 120fps, f/1.4. Mood: empathy. Style: anamorphic film still, shallow depth. Duration: 2.6s.",
+        "stock_footage_query": "how dendrites process signals educational style,",
+        "overlay": "the single takeaway line, large, centered (letterboxed title cards)",
+        "text_overlay": "THIS IS THE PART THAT\u2026",
+        "caption_placement": "center \u2014 the takeaway IS the frame",
+        "caption_timing": {
+          "start_sec": 35.6,
+          "end_sec": 38.2
+        },
+        "sound_effect": "vinyl stop before the twist",
+        "sfx_timing": {
+          "at_sec": 35.9,
+          "cue": "vinyl stop before the twist"
+        },
+        "music_style": "warm narrative underscore with a swelling finish (high-energy educational \u2014 punchy facts, fast cuts)",
+        "broll": [
+          "Archival / documentary footage that grounds the general content claim"
+        ],
+        "thumbnail_candidate": true,
+        "visual_scores": {
+          "curiosity": 44,
+          "pattern_interrupt": 34,
+          "contrast": 55,
+          "novelty": 42,
+          "human_faces": 34,
+          "eye_contact": 32,
+          "motion": 74,
+          "scale": 38,
+          "speed": 41,
+          "emotional_color": 68,
+          "negative_space": 84,
+          "visual_hierarchy": 83
+        },
+        "visual_score": 50,
+        "predicted_retention": 72,
+        "visual_asset_approved": false,
+        "cinematic_ready": false,
+        "visual_asset_reject_reasons": [
+          "no_approvable_candidate"
+        ]
+      },
+      "approved": false,
+      "selected_path": null,
+      "provisional_path": null,
+      "scorecard": null,
+      "composition": null,
+      "inspection": null,
+      "reject_reasons": [
+        "no_approvable_candidate"
+      ],
+      "rejected": [],
+      "style_compatibility": 0,
+      "cinematic_ready": false
+    },
+    {
+      "scene_id": "scene_07",
+      "scene": {
+        "scene_number": 8,
+        "purpose": "story_beat",
+        "emotion": "shock",
+        "length_sec": 6.8,
+        "attention_level": "medium",
+        "visual_style": "cinematic",
+        "narration": "The fix: change one small input around how dendrites process signals v2 in a educational style, narrator professor.",
+        "visual_description": "Narrative beat visualizing: The fix: change one small input around how dendrites process signals v2 in a educational s. stark empty space, subject isolated. rule of thirds, subject leading the eye toward the next cut.",
+        "shot_type": "macro",
+        "camera_angle": "macro",
+        "camera_motion": "micro slider",
+        "lens_recommendation": "100mm macro, f/4",
+        "depth_of_field": "paper thin \u2014 texture becomes landscape",
+        "shot_composition": "rule of thirds, subject leading the eye toward the next cut",
+        "subject_placement": "alternating thirds each beat to reset attention",
+        "lighting": "harsh strobe-adjacent key, blown highlights; style bias: motivated three-point with rim accent",
+        "environment": "stark empty space, subject isolated",
+        "color_palette": "teal and orange, filmic contrast",
+        "transition_in": "dissolve",
+        "transition_out": "hard cut",
+        "motion_intensity": 35,
+        "motion_recommendation": "hypnotic detail \u2014 micro slider at intensity 35/100",
+        "zoom": "subtle 3% push on the key sentence",
+        "background": "stark empty space, subject isolated, rendered in teal and orange, filmic contrast",
+        "asset_type": "stock_footage",
+        "ai_image_prompt": "Narrative beat visualizing: The fix: change one small input around how dendrites process signals v2 in a educational s. stark empty space, subject isolated. rule of thirds, subject leading the eye toward the next cut. Lighting: harsh strobe-adjacent key, blown highlights. Style: anamorphic film still, shallow depth. Palette: teal and orange, filmic contrast. Grade: film emulation, halation on highlights.",
+        "ai_video_prompt": "Narrative beat visualizing: The fix: change one small input around how dendrites process signals v2 in a educational s. stark empty space, subject isolated. rule of thirds, subject leading the eye toward the next cut. Camera: micro slider, 100mm macro, f/4. Mood: shock. Style: anamorphic film still, shallow depth. Duration: 6.8s.",
+        "stock_footage_query": "how dendrites process signals educational style,",
+        "overlay": "keyword text synced to every number or stat (letterboxed title cards)",
+        "text_overlay": "THE FIX: CHANGE ONE SMALL\u2026",
+        "caption_placement": "bottom third, safe zone",
+        "caption_timing": {
+          "start_sec": 38.2,
+          "end_sec": 45.0
+        },
+        "sound_effect": "heartbeat pulse in the middle act",
+        "sfx_timing": {
+          "at_sec": 38.2,
+          "cue": "heartbeat pulse in the middle act"
+        },
+        "music_style": "warm narrative underscore with a swelling finish (high-energy educational \u2014 punchy facts, fast cuts)",
+        "broll": [
+          "Slow push-in on a person reacting (realization moment)"
+        ],
+        "thumbnail_candidate": false,
+        "visual_scores": {
+          "curiosity": 40,
+          "pattern_interrupt": 30,
+          "contrast": 36,
+          "novelty": 38,
+          "human_faces": 30,
+          "eye_contact": 28,
+          "motion": 46,
+          "scale": 34,
+          "speed": 33,
+          "emotional_color": 49,
+          "negative_space": 64,
+          "visual_hierarchy": 79
+        },
+        "visual_score": 40,
+        "predicted_retention": 65,
+        "visual_asset_approved": false,
+        "cinematic_ready": false,
+        "visual_asset_reject_reasons": [
+          "no_approvable_candidate"
+        ]
+      },
+      "approved": false,
+      "selected_path": null,
+      "provisional_path": null,
+      "scorecard": null,
+      "composition": null,
+      "inspection": null,
+      "reject_reasons": [
+        "no_approvable_candidate"
+      ],
+      "rejected": [],
+      "style_compatibility": 0,
+      "cinematic_ready": false
+    },
+    {
+      "scene_id": "scene_08",
+      "scene": {
+        "scene_number": 9,
+        "purpose": "cta",
+        "emotion": "reflection",
+        "length_sec": 7.0,
+        "attention_level": "medium",
+        "visual_style": "cinematic",
+        "narration": "Tag someone who needs this story \u2014 share it before you scroll, then follow for the next one.",
+        "visual_description": "Direct-to-camera closing address. quiet room, long shadows. centered, eye-level, symmetrical, direct eye contact with lens.",
+        "shot_type": "static",
+        "camera_angle": "static",
+        "camera_motion": "locked-off",
+        "lens_recommendation": "50mm prime, f/2.0",
+        "depth_of_field": "moderate \u2014 composed and stable",
+        "shot_composition": "centered, eye-level, symmetrical, direct eye contact with lens",
+        "subject_placement": "center, direct eye contact with lens",
+        "lighting": "dusk ambience, blue hour window light; style bias: motivated three-point with rim accent",
+        "environment": "quiet room, long shadows",
+        "color_palette": "teal and orange, filmic contrast",
+        "transition_in": "hard cut",
+        "transition_out": "fade out",
+        "motion_intensity": 15,
+        "motion_recommendation": "sincere \u2014 locked-off at intensity 15/100",
+        "zoom": "none \u2014 stability signals sincerity",
+        "background": "quiet room, long shadows, rendered in teal and orange, filmic contrast",
+        "asset_type": "ai_image",
+        "ai_image_prompt": "Direct-to-camera closing address. quiet room, long shadows. centered, eye-level, symmetrical, direct eye contact with lens. Lighting: dusk ambience, blue hour window light. Style: anamorphic film still, shallow depth. Palette: teal and orange, filmic contrast. Grade: film emulation, halation on highlights.",
+        "ai_video_prompt": "Direct-to-camera closing address. quiet room, long shadows. centered, eye-level, symmetrical, direct eye contact with lens. Camera: locked-off, 50mm prime, f/2.0. Mood: reflection. Style: anamorphic film still, shallow depth. Duration: 7.0s.",
+        "stock_footage_query": "how dendrites process signals educational style,",
+        "overlay": "animated follow/save button mimic, lower third (letterboxed title cards)",
+        "text_overlay": "TAG SOMEONE WHO NEEDS THIS\u2026",
+        "caption_placement": "lower third \u2014 beside the follow button mimic",
+        "caption_timing": {
+          "start_sec": 45.0,
+          "end_sec": 52.0
+        },
+        "sound_effect": "gentle chime on the closing line",
+        "sfx_timing": {
+          "at_sec": 45.5,
+          "cue": "gentle chime on the closing line"
+        },
+        "music_style": "warm narrative underscore with a swelling finish (high-energy educational \u2014 punchy facts, fast cuts)",
+        "broll": [
+          "Overhead time-lapse to compress the 'before and after'"
+        ],
+        "thumbnail_candidate": false,
+        "visual_scores": {
+          "curiosity": 42,
+          "pattern_interrupt": 32,
+          "contrast": 38,
+          "novelty": 40,
+          "human_faces": 32,
+          "eye_contact": 84,
+          "motion": 34,
+          "scale": 36,
+          "speed": 31,
+          "emotional_color": 51,
+          "negative_space": 34,
+          "visual_hierarchy": 66
+        },
+        "visual_score": 41,
+        "predicted_retention": 61,
+        "visual_asset_approved": false,
+        "cinematic_ready": false,
+        "visual_asset_reject_reasons": [
+          "no_approvable_candidate"
+        ]
+      },
+      "approved": false,
+      "selected_path": null,
+      "provisional_path": null,
+      "scorecard": null,
+      "composition": null,
+      "inspection": null,
+      "reject_reasons": [
+        "no_approvable_candidate"
+      ],
+      "rejected": [],
+      "style_compatibility": 0,
+      "cinematic_ready": false
+    }
+  ],
+  "cinematic_hints": {
+    "note": "Does not replace AI Cinematic Director \u2014 prepares approved stills only",
+    "preferred_motion": "observational_push_orbit",
+    "preferred_lighting": "motivated_practical",
+    "has_cinematic_package": false
+  },
+  "composes": [
+    "world_builder",
+    "scene_builder",
+    "asset_intelligence",
+    "cinematic_director",
+    "audience_intelligence",
+    "creative_performance_lab"
+  ],
+  "does_not_replace": [
+    "scene_builder",
+    "cinematic_director",
+    "renderer",
+    "world_builder"
+  ],
+  "fingerprint": "e3b0c44298fc1c14",
+  "validation": {
+    "ok": false,
+    "passed": false,
+    "hard_fails": [
+      "no_approved_assets",
+      "style_drift"
+    ],
+    "warnings": [
+      "low_mean_professional_quality"
+    ]
+  },
+  "generated_at": "2026-07-14T12:56:46.682390+00:00"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if I told you your cells have a ticking clock?",
+    "visual_description": "Hook visual: What if I told you your cells have a ticking clock?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you your cells have a ticking clock?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you your cells have a ticking clock?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Meet telomeres \u2014 the protective caps at the ends of your chromosomes.",
+    "visual_description": "Context visual: Meet telomeres \u2014 the protective caps at the ends of your chromosomes.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Meet telomeres \u2014 the protective caps at the ends of your chromosomes.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Meet telomeres \u2014 the protective caps at the ends of your chromosomes.",
+    "stock_footage_query": "",
+    "text_overlay": "Meet telomeres \u2014 the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "Every time a cell divides, these caps wear down, shortening your lifespan.",
+    "visual_description": "Escalation visual: Every time a cell divides, these caps wear down, shortening your lifespan.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Every time a cell divides, these caps wear down, shortening your lifespan.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Every time a cell divides, these caps wear down, shortening your lifespan.",
+    "stock_footage_query": "",
+    "text_overlay": "Every time a cell",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "intrigue",
+    "length_sec": 8.0,
+    "narration": "Telomerase is an enzyme that can rebuild these caps, but it\u2019s not a cure-all.",
+    "visual_description": "Evidence visual: Telomerase is an enzyme that can rebuild these caps, but it\u2019s not a cure-all.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Telomerase is an enzyme that can rebuild these caps, but it\u2019s not a cure-all.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Telomerase is an enzyme that can rebuild these caps, but it\u2019s not a cure-all.",
+    "stock_footage_query": "",
+    "text_overlay": "Telomerase is an enzyme",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "wonder",
+    "length_sec": 14.0,
+    "narration": "Understanding telomeres gives us a glimpse into the biology of aging.",
+    "visual_description": "Payoff visual: Understanding telomeres gives us a glimpse into the biology of aging.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding telomeres gives us a glimpse into the biology of aging.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding telomeres gives us a glimpse into the biology of aging.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding telomeres gives us",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "encouragement",
+    "length_sec": 10.0,
+    "narration": "Curious about how this affects you? Like and follow for more insights!",
+    "visual_description": "Cta visual: Curious about how this affects you? Like and follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about how this affects you? Like and follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about how this affects you? Like and follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about how this",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

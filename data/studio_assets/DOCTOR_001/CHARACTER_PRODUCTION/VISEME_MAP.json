@@ -1,0 +1,25 @@
+{
+  "actor_id": "DOCTOR_001",
+  "mapping": {
+    "rest": "viseme_REST",
+    "closed_lips": "viseme_M",
+    "wide_vowel": "viseme_E",
+    "open_vowel": "viseme_A",
+    "rounded_vowel": "viseme_O",
+    "teeth_lip_contact": "viseme_F",
+    "tongue_teeth_contact": "viseme_L",
+    "consonant_closure": "viseme_M",
+    "smile_speaking": "viseme_smile_speak",
+    "concerned_speaking": "viseme_concern_speak",
+    "U": "viseme_U",
+    "WQ": "viseme_WQ"
+  },
+  "legacy_aliases": {
+    "viseme_A": "viseme_A",
+    "viseme_E": "viseme_E",
+    "viseme_O": "viseme_O",
+    "viseme_U": "viseme_U",
+    "viseme_M": "viseme_M",
+    "viseme_F": "viseme_F"
+  }
+}

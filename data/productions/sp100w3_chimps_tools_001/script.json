@@ -1,0 +1,74 @@
+{
+  "title": "Chimpanzees Use Tools Too",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Chimpanzees demonstrate tool use that challenges our understanding of animal cognition.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Did you know tool use isn't just for humans?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Chimpanzees are our closest relatives. They fish for termites using sticks.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "This behavior reveals their deep understanding of cause and effect.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows chimps select the right tools, adjusting them for efficiency. Amazing, right?",
+      "emotion": "curiosity",
+      "delivery": "excited",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "payoff",
+      "voiceover": "This suggests a level of cognitive complexity that we once thought was uniquely human.",
+      "emotion": "curiosity",
+      "delivery": "reflective",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more animal intelligence? Hit like and follow for more amazing insights!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic",
+      "retention_device": "natural CTA"
+    }
+  ],
+  "full_voiceover": "Did you know tool use isn't just for humans? Chimpanzees are our closest relatives. They fish for termites using sticks. This behavior reveals their deep understanding of cause and effect. Research shows chimps select the right tools, adjusting them for efficiency. Amazing, right? This suggests a level of cognitive complexity that we once thought was uniquely human. Curious about more animal intelligence? Hit like and follow for more amazing insights!",
+  "call_to_action": "Hit like and follow for more amazing insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:53:30.704049+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,1063 @@
+{
+  "schema_version": 1,
+  "os_name": "GenOS",
+  "os_version": "1.0.0",
+  "generated_at": "2026-07-14T04:29:42.071406+00:00",
+  "publishing_enabled": false,
+  "system_health": "healthy",
+  "departments": [
+    {
+      "key": "trend_opportunity",
+      "label": "Trend & Opportunity Intelligence",
+      "service": "services.trend_opportunity",
+      "role": "decide_what_to_create",
+      "entrypoint": "run_trend_opportunity"
+    },
+    {
+      "key": "research",
+      "label": "Research Engine",
+      "service": "services.research",
+      "role": "facts_and_sources",
+      "engine": "research"
+    },
+    {
+      "key": "psychology",
+      "label": "Psychology Engine",
+      "service": "engines.psychology",
+      "role": "viewer_psychology",
+      "engine": "psychology"
+    },
+    {
+      "key": "studio_director",
+      "label": "Studio Director",
+      "service": "services.ai_director",
+      "role": "creative_direction",
+      "engine": "ai_director"
+    },
+    {
+      "key": "script",
+      "label": "Script Generator",
+      "service": "engines.script_generation",
+      "role": "script",
+      "engine": "script_generation"
+    },
+    {
+      "key": "scene_builder",
+      "label": "Scene Builder",
+      "service": "services.visual",
+      "role": "scenes",
+      "engine": "visual_intelligence"
+    },
+    {
+      "key": "world_builder",
+      "label": "Persistent World Builder",
+      "service": "services.world_builder",
+      "role": "world_continuity"
+    },
+    {
+      "key": "visual_asset_director",
+      "label": "Visual Asset Director",
+      "service": "services.visual_asset_director",
+      "role": "visual_qc_gate"
+    },
+    {
+      "key": "cinematic_director",
+      "label": "AI Cinematic Director",
+      "service": "services.cinematic_director",
+      "role": "camera_lighting_motion"
+    },
+    {
+      "key": "voice_studio",
+      "label": "ElevenLabs Voice Studio",
+      "service": "services.voice_studio",
+      "role": "narration",
+      "engine": "voice_audio"
+    },
+    {
+      "key": "renderer",
+      "label": "Existing Renderer",
+      "service": "services.studio_render",
+      "role": "render",
+      "engine": "studio_render"
+    },
+    {
+      "key": "creative_performance_lab",
+      "label": "Creative Performance Lab",
+      "service": "services.creative_performance_lab",
+      "role": "creative_experiments"
+    },
+    {
+      "key": "creative_excellence",
+      "label": "Creative Excellence / QA",
+      "service": "services.creative_excellence",
+      "role": "creative_qa"
+    },
+    {
+      "key": "audience_intelligence",
+      "label": "Audience Intelligence",
+      "service": "services.audience_intelligence",
+      "role": "audience_review_and_briefs"
+    },
+    {
+      "key": "publishing_intelligence",
+      "label": "Publishing Intelligence",
+      "service": "services.publishing_intelligence",
+      "role": "publish_strategy"
+    },
+    {
+      "key": "production_operations",
+      "label": "Production Operations (Agent 0 Studio)",
+      "service": "services.production_operations",
+      "role": "execute_studio_pipeline",
+      "entrypoint": "run_studio_ops"
+    }
+  ],
+  "department_health": {
+    "departments": [
+      {
+        "key": "trend_opportunity",
+        "label": "Trend & Opportunity Intelligence",
+        "available": true,
+        "error": ""
+      },
+      {
+        "key": "research",
+        "label": "Research Engine",
+        "available": true,
+        "error": ""
+      },
+      {
+        "key": "psychology",
+        "label": "Psychology Engine",
+        "available": true,
+        "error": ""
+      },
+      {
+        "key": "studio_director",
+        "label": "Studio Director",
+        "available": true,
+        "error": ""
+      },
+      {
+        "key": "script",
+        "label": "Script Generator",
+        "available": true,
+        "error": ""
+      },
+      {
+        "key": "scene_builder",
+        "label": "Scene Builder",
+        "available": true,
+        "error": ""
+      },
+      {
+        "key": "world_builder",
+        "label": "Persistent World Builder",
+        "available": true,
+        "error": ""
+      },
+      {
+        "key": "visual_asset_director",
+        "label": "Visual Asset Director",
+        "available": true,
+        "error": ""
+      },
+      {
+        "key": "cinematic_director",
+        "label": "AI Cinematic Director",
+        "available": true,
+        "error": ""
+      },
+      {
+        "key": "voice_studio",
+        "label": "ElevenLabs Voice Studio",
+        "available": true,
+        "error": ""
+      },
+      {
+        "key": "renderer",
+        "label": "Existing Renderer",
+        "available": true,
+        "error": ""
+      },
+      {
+        "key": "creative_performance_lab",
+        "label": "Creative Performance Lab",
+        "available": true,
+        "error": ""
+      },
+      {
+        "key": "creative_excellence",
+        "label": "Creative Excellence / QA",
+        "available": true,
+        "error": ""
+      },
+      {
+        "key": "audience_intelligence",
+        "label": "Audience Intelligence",
+        "available": true,
+        "error": ""
+      },
+      {
+        "key": "publishing_intelligence",
+        "label": "Publishing Intelligence",
+        "available": true,
+        "error": ""
+      },
+      {
+        "key": "production_operations",
+        "label": "Production Operations (Agent 0 Studio)",
+        "available": true,
+        "error": ""
+      }
+    ],
+    "available_count": 16,
+    "total": 16
+  },
+  "operating_loop": [
+    {
+      "step": "check_trend_intelligence",
+      "department": "trend_opportunity"
+    },
+    {
+      "step": "select_opportunity",
+      "department": "trend_opportunity"
+    },
+    {
+      "step": "generate_production_brief",
+      "department": "trend_opportunity"
+    },
+    {
+      "step": "launch_research",
+      "department": "research"
+    },
+    {
+      "step": "launch_psychology",
+      "department": "psychology"
+    },
+    {
+      "step": "generate_script",
+      "department": "script"
+    },
+    {
+      "step": "build_world",
+      "department": "world_builder"
+    },
+    {
+      "step": "generate_scenes",
+      "department": "scene_builder"
+    },
+    {
+      "step": "validate_visual_assets",
+      "department": "visual_asset_director"
+    },
+    {
+      "step": "apply_cinematic_direction",
+      "department": "cinematic_director"
+    },
+    {
+      "step": "generate_narration",
+      "department": "voice_studio"
+    },
+    {
+      "step": "render_final_video",
+      "department": "renderer"
+    },
+    {
+      "step": "run_creative_qa",
+      "department": "creative_excellence"
+    },
+    {
+      "step": "package_production",
+      "department": "production_operations"
+    },
+    {
+      "step": "publish_when_enabled",
+      "department": "publishing_intelligence"
+    },
+    {
+      "step": "collect_analytics",
+      "department": "audience_intelligence"
+    },
+    {
+      "step": "audience_review",
+      "department": "audience_intelligence"
+    },
+    {
+      "step": "update_opportunity_library",
+      "department": "trend_opportunity"
+    },
+    {
+      "step": "store_lessons_learned",
+      "department": "creative_excellence"
+    }
+  ],
+  "jobs": {
+    "current": [],
+    "queued": [
+      {
+        "job_id": "efcc2d932dc0",
+        "priority": 67,
+        "status": "pending",
+        "creation_time": "2026-07-14T04:28:01.051171+00:00",
+        "completion_time": null,
+        "current_stage": "queued",
+        "estimated_time_remaining_sec": 360,
+        "topic": "Why octopuses have three hearts",
+        "platform": "youtube_shorts",
+        "length_sec": 45,
+        "fingerprint": "6062b5c8050d11c2",
+        "production_id": null,
+        "error": null,
+        "publishing_enabled": false
+      },
+      {
+        "job_id": "0a7f179a50b6",
+        "priority": 67,
+        "status": "pending",
+        "creation_time": "2026-07-14T04:28:01.051689+00:00",
+        "completion_time": null,
+        "current_stage": "queued",
+        "estimated_time_remaining_sec": 360,
+        "topic": "Why the ocean is salty",
+        "platform": "youtube_shorts",
+        "length_sec": 45,
+        "fingerprint": "4fc0367810eecea8",
+        "production_id": null,
+        "error": null,
+        "publishing_enabled": false
+      },
+      {
+        "job_id": "38e7a747b998",
+        "priority": 66,
+        "status": "pending",
+        "creation_time": "2026-07-14T04:28:01.052106+00:00",
+        "completion_time": null,
+        "current_stage": "queued",
+        "estimated_time_remaining_sec": 360,
+        "topic": "Why volcanoes erupt",
+        "platform": "youtube_shorts",
+        "length_sec": 45,
+        "fingerprint": "056e75d104ed7202",
+        "production_id": null,
+        "error": null,
+        "publishing_enabled": false
+      },
+      {
+        "job_id": "dabe425fcc90",
+        "priority": 65,
+        "status": "pending",
+        "creation_time": "2026-07-14T04:28:01.052522+00:00",
+        "completion_time": null,
+        "current_stage": "queued",
+        "estimated_time_remaining_sec": 360,
+        "topic": "How black holes bend time",
+        "platform": "youtube_shorts",
+        "length_sec": 45,
+        "fingerprint": "47efcd85b45d6132",
+        "production_id": null,
+        "error": null,
+        "publishing_enabled": false
+      },
+      {
+        "job_id": "5bf57d036fa5",
+        "priority": 65,
+        "status": "pending",
+        "creation_time": "2026-07-14T04:28:01.052952+00:00",
+        "completion_time": null,
+        "current_stage": "queued",
+        "estimated_time_remaining_sec": 360,
+        "topic": "How vaccines train the immune system",
+        "platform": "youtube_shorts",
+        "length_sec": 45,
+        "fingerprint": "7ded9b5e5b0d1978",
+        "production_id": null,
+        "error": null,
+        "publishing_enabled": false
+      }
+    ],
+    "completed": [],
+    "failed": []
+  },
+  "trending_opportunities": [
+    {
+      "topic": "Why octopuses have three hearts",
+      "score": 67.4,
+      "status": "in_production",
+      "priority": 67
+    },
+    {
+      "topic": "Why the ocean is salty",
+      "score": 67.2,
+      "status": "brief_ready",
+      "priority": 67
+    },
+    {
+      "topic": "Why volcanoes erupt",
+      "score": 66.2,
+      "status": "brief_ready",
+      "priority": 66
+    },
+    {
+      "topic": "How black holes bend time",
+      "score": 64.8,
+      "status": "brief_ready",
+      "priority": 65
+    },
+    {
+      "topic": "How vaccines train the immune system",
+      "score": 64.5,
+      "status": "brief_ready",
+      "priority": 65
+    },
+    {
+      "topic": "Why leaves change color in autumn",
+      "score": 64.4,
+      "status": "brief_ready",
+      "priority": 65
+    },
+    {
+      "topic": "How CRISPR edits genes",
+      "score": 64.3,
+      "status": "brief_ready",
+      "priority": 65
+    },
+    {
+      "topic": "Why we dream",
+      "score": 64.2,
+      "status": "brief_ready",
+      "priority": 65
+    },
+    {
+      "topic": "How plants make oxygen",
+      "score": 64.0,
+      "status": "brief_ready",
+      "priority": 65
+    },
+    {
+      "topic": "Why the moon controls tides",
+      "score": 63.9,
+      "status": "brief_ready",
+      "priority": 65
+    }
+  ],
+  "publishing_queue": {
+    "publishing_enabled": false,
+    "ops": {
+      "pending": 13,
+      "running": 0,
+      "succeeded": 4,
+      "failed": 0,
+      "scheduled": 0,
+      "recent": [
+        {
+          "job_id": "4d77bc17dbee",
+          "status": "pending",
+          "priority": 65,
+          "scheduled_at": "",
+          "batch_id": "",
+          "topic": "How vaccines train the immune system",
+          "platform": "youtube_shorts",
+          "created_at": "2026-07-14T04:27:26.157902+00:00",
+          "resume_production_id": "",
+          "updated_at": "2026-07-14T04:27:26.157948+00:00"
+        },
+        {
+          "job_id": "dabe425fcc90",
+          "status": "pending",
+          "priority": 65,
+          "scheduled_at": "",
+          "batch_id": "",
+          "topic": "How black holes bend time",
+          "platform": "youtube_shorts",
+          "created_at": "2026-07-14T04:28:01.052312+00:00",
+          "resume_production_id": "",
+          "updated_at": "2026-07-14T04:28:01.052360+00:00"
+        },
+        {
+          "job_id": "5bf57d036fa5",
+          "status": "pending",
+          "priority": 65,
+          "scheduled_at": "",
+          "batch_id": "",
+          "topic": "How vaccines train the immune system",
+          "platform": "youtube_shorts",
+          "created_at": "2026-07-14T04:28:01.052737+00:00",
+          "resume_production_id": "",
+          "updated_at": "2026-07-14T04:28:01.052785+00:00"
+        },
+        {
+          "job_id": "721268afdf07",
+          "status": "succeeded",
+          "priority": 5,
+          "scheduled_at": "",
+          "batch_id": "",
+          "topic": "Queued acceptance job 0",
+          "platform": "youtube_shorts",
+          "created_at": "2026-07-13T23:47:22.773347+00:00",
+          "error": "",
+          "production_id": "ops_80e89a4a87",
+          "updated_at": "2026-07-13T23:47:38.262289+00:00"
+        },
+        {
+          "job_id": "768d43e022ba",
+          "status": "succeeded",
+          "priority": 4,
+          "scheduled_at": "",
+          "batch_id": "",
+          "topic": "Queued acceptance job 1",
+          "platform": "youtube_shorts",
+          "created_at": "2026-07-13T23:47:38.267379+00:00",
+          "error": "",
+          "production_id": "ops_74407e90bb",
+          "updated_at": "2026-07-13T23:47:54.936820+00:00"
+        },
+        {
+          "job_id": "01af1fd51ac8",
+          "status": "succeeded",
+          "priority": 3,
+          "scheduled_at": "",
+          "batch_id": "",
+          "topic": "Queue smoke topic about coral reefs",
+          "platform": "tiktok",
+          "created_at": "2026-07-13T23:34:24.672471+00:00",
+          "error": "",
+          "production_id": "ops_70befcfd13",
+          "updated_at": "2026-07-13T23:34:41.066856+00:00"
+        },
+        {
+          "job_id": "aa4496031d33",
+          "status": "succeeded",
+          "priority": 3,
+          "scheduled_at": "",
+          "batch_id": "",
+          "topic": "Queued acceptance job 2",
+          "platform": "youtube_shorts",
+          "created_at": "2026-07-13T23:47:54.936992+00:00",
+          "error": "",
+          "production_id": "ops_16b03d0536",
+          "updated_at": "2026-07-13T23:48:13.453857+00:00"
+        },
+        {
+          "job_id": "d9dd1ee7d2d2",
+          "status": "pending",
+          "priority": 2,
+          "scheduled_at": "",
+          "batch_id": "",
+          "topic": "Queued acceptance job 3",
+          "platform": "youtube_shorts",
+          "created_at": "2026-07-13T23:48:13.454278+00:00",
+          "resume_production_id": "",
+          "updated_at": "2026-07-13T23:48:13.454311+00:00"
+        },
+        {
+          "job_id": "33c697009dc6",
+          "status": "pending",
+          "priority": 1,
+          "scheduled_at": "",
+          "batch_id": "",
+          "topic": "Queued acceptance job 4",
+          "platform": "youtube_shorts",
+          "created_at": "2026-07-13T23:48:13.454718+00:00",
+          "resume_production_id": "",
+          "updated_at": "2026-07-13T23:48:13.454750+00:00"
+        },
+        {
+          "job_id": "9afbfd232238",
+          "status": "pending",
+          "priority": 0,
+          "scheduled_at": "",
+          "batch_id": "",
+          "topic": "Why octopuses have three hearts",
+          "platform": "youtube_shorts",
+          "created_at": "2026-07-14T04:08:02.335658+00:00",
+          "resume_production_id": "",
+          "updated_at": "2026-07-14T04:08:02.335705+00:00"
+        }
+      ]
+    }
+  },
+  "platform_status": {
+    "youtube_shorts": "ready",
+    "publishing_enabled": false
+  },
+  "provider_status": [
+    {
+      "mission_key": "youtube_trending",
+      "provider_key": "youtube_trending",
+      "label": "YouTube Trending",
+      "platform": "youtube_shorts",
+      "available": true,
+      "implemented": true,
+      "note": "Existing TrendSourceProvider"
+    },
+    {
+      "mission_key": "youtube_search",
+      "provider_key": "youtube_search_trends",
+      "label": "YouTube Search Intelligence",
+      "platform": "youtube",
+      "available": true,
+      "implemented": true,
+      "note": "Existing TrendSourceProvider"
+    },
+    {
+      "mission_key": "google_trends",
+      "provider_key": "google_trends",
+      "label": "Google Trends (placeholder)",
+      "platform": "google",
+      "available": true,
+      "implemented": true,
+      "note": "Existing TrendSourceProvider"
+    },
+    {
+      "mission_key": "google_news",
+      "provider_key": "google_news",
+      "label": "Google News",
+      "platform": "news",
+      "available": true,
+      "implemented": true,
+      "note": "Existing TrendSourceProvider"
+    },
+    {
+      "mission_key": "reddit",
+      "provider_key": "reddit_trends",
+      "label": "Reddit Rising (placeholder)",
+      "platform": "reddit",
+      "available": true,
+      "implemented": true,
+      "note": "Existing TrendSourceProvider"
+    },
+    {
+      "mission_key": "tiktok_trending",
+      "provider_key": "tiktok_trends",
+      "label": "TikTok Trends (placeholder)",
+      "platform": "tiktok",
+      "available": true,
+      "implemented": true,
+      "note": "Existing TrendSourceProvider"
+    },
+    {
+      "mission_key": "instagram_trends",
+      "provider_key": "instagram_trends",
+      "label": "Instagram Trends (placeholder)",
+      "platform": "instagram",
+      "available": true,
+      "implemented": true,
+      "note": "Existing TrendSourceProvider"
+    },
+    {
+      "mission_key": "x_twitter",
+      "provider_key": "x_trends",
+      "label": "X Trends (placeholder)",
+      "platform": "x",
+      "available": true,
+      "implemented": true,
+      "note": "Existing TrendSourceProvider"
+    },
+    {
+      "mission_key": "rss_feeds",
+      "provider_key": "rss_feeds",
+      "label": "RSS Feeds (placeholder)",
+      "platform": "rss",
+      "available": true,
+      "implemented": true,
+      "note": "Existing TrendSourceProvider"
+    }
+  ],
+  "analytics_summary": {
+    "creative_excellence_average": 80.0,
+    "os_qc_average": 91.5,
+    "production_success_rate": 1.0
+  },
+  "creative_excellence_average": 80.0,
+  "resources": {
+    "generated_at": "2026-07-14T04:29:42.070037+00:00",
+    "api_usage": {},
+    "elevenlabs": {
+      "configured": true,
+      "note": "credits not queried live",
+      "key_present": true
+    },
+    "model_usage": {},
+    "storage_bytes": 7089737,
+    "storage_mb": 6.76,
+    "queue_utilization": {
+      "pending": 13,
+      "running": 0,
+      "succeeded": 4,
+      "failed": 0,
+      "scheduled": 0,
+      "recent": [
+        {
+          "job_id": "4d77bc17dbee",
+          "status": "pending",
+          "priority": 65,
+          "scheduled_at": "",
+          "batch_id": "",
+          "topic": "How vaccines train the immune system",
+          "platform": "youtube_shorts",
+          "created_at": "2026-07-14T04:27:26.157902+00:00",
+          "resume_production_id": "",
+          "updated_at": "2026-07-14T04:27:26.157948+00:00"
+        },
+        {
+          "job_id": "dabe425fcc90",
+          "status": "pending",
+          "priority": 65,
+          "scheduled_at": "",
+          "batch_id": "",
+          "topic": "How black holes bend time",
+          "platform": "youtube_shorts",
+          "created_at": "2026-07-14T04:28:01.052312+00:00",
+          "resume_production_id": "",
+          "updated_at": "2026-07-14T04:28:01.052360+00:00"
+        },
+        {
+          "job_id": "5bf57d036fa5",
+          "status": "pending",
+          "priority": 65,
+          "scheduled_at": "",
+          "batch_id": "",
+          "topic": "How vaccines train the immune system",
+          "platform": "youtube_shorts",
+          "created_at": "2026-07-14T04:28:01.052737+00:00",
+          "resume_production_id": "",
+          "updated_at": "2026-07-14T04:28:01.052785+00:00"
+        },
+        {
+          "job_id": "721268afdf07",
+          "status": "succeeded",
+          "priority": 5,
+          "scheduled_at": "",
+          "batch_id": "",
+          "topic": "Queued acceptance job 0",
+          "platform": "youtube_shorts",
+          "created_at": "2026-07-13T23:47:22.773347+00:00",
+          "error": "",
+          "production_id": "ops_80e89a4a87",
+          "updated_at": "2026-07-13T23:47:38.262289+00:00"
+        },
+        {
+          "job_id": "768d43e022ba",
+          "status": "succeeded",
+          "priority": 4,
+          "scheduled_at": "",
+          "batch_id": "",
+          "topic": "Queued acceptance job 1",
+          "platform": "youtube_shorts",
+          "created_at": "2026-07-13T23:47:38.267379+00:00",
+          "error": "",
+          "production_id": "ops_74407e90bb",
+          "updated_at": "2026-07-13T23:47:54.936820+00:00"
+        },
+        {
+          "job_id": "01af1fd51ac8",
+          "status": "succeeded",
+          "priority": 3,
+          "scheduled_at": "",
+          "batch_id": "",
+          "topic": "Queue smoke topic about coral reefs",
+          "platform": "tiktok",
+          "created_at": "2026-07-13T23:34:24.672471+00:00",
+          "error": "",
+          "production_id": "ops_70befcfd13",
+          "updated_at": "2026-07-13T23:34:41.066856+00:00"
+        },
+        {
+          "job_id": "aa4496031d33",
+          "status": "succeeded",
+          "priority": 3,
+          "scheduled_at": "",
+          "batch_id": "",
+          "topic": "Queued acceptance job 2",
+          "platform": "youtube_shorts",
+          "created_at": "2026-07-13T23:47:54.936992+00:00",
+          "error": "",
+          "production_id": "ops_16b03d0536",
+          "updated_at": "2026-07-13T23:48:13.453857+00:00"
+        },
+        {
+          "job_id": "d9dd1ee7d2d2",
+          "status": "pending",
+          "priority": 2,
+          "scheduled_at": "",
+          "batch_id": "",
+          "topic": "Queued acceptance job 3",
+          "platform": "youtube_shorts",
+          "created_at": "2026-07-13T23:48:13.454278+00:00",
+          "resume_production_id": "",
+          "updated_at": "2026-07-13T23:48:13.454311+00:00"
+        },
+        {
+          "job_id": "33c697009dc6",
+          "status": "pending",
+          "priority": 1,
+          "scheduled_at": "",
+          "batch_id": "",
+          "topic": "Queued acceptance job 4",
+          "platform": "youtube_shorts",
+          "created_at": "2026-07-13T23:48:13.454718+00:00",
+          "resume_production_id": "",
+          "updated_at": "2026-07-13T23:48:13.454750+00:00"
+        },
+        {
+          "job_id": "9afbfd232238",
+          "status": "pending",
+          "priority": 0,
+          "scheduled_at": "",
+          "batch_id": "",
+          "topic": "Why octopuses have three hearts",
+          "platform": "youtube_shorts",
+          "created_at": "2026-07-14T04:08:02.335658+00:00",
+          "resume_production_id": "",
+          "updated_at": "2026-07-14T04:08:02.335705+00:00"
+        }
+      ]
+    },
+    "totals": {
+      "productions": 1,
+      "estimated_usd": 0.399,
+      "storage_bytes": 0
+    },
+    "recent_production_costs": [
+      {
+        "production_id": "ops_18fff5d4bd",
+        "at": "2026-07-14T04:29:41.754549+00:00",
+        "length_sec": 45,
+        "render_sec": null,
+        "storage_bytes": 0,
+        "processing_ms": 103272,
+        "elevenlabs": true,
+        "cost": {
+          "estimated_usd": 0.399,
+          "breakdown": {
+            "elevenlabs_usd": 0.189,
+            "images_usd": 0.2,
+            "compute_usd": 0.01
+          },
+          "assumptions": {
+            "length_sec": 45,
+            "narrator": "professor",
+            "el_chars": 630,
+            "used_images": 5,
+            "render_sec": 30.0
+          }
+        }
+      }
+    ],
+    "estimated_cost_per_production_usd": 0.399,
+    "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/RESOURCES.json"
+  },
+  "estimated_throughput": {
+    "completed_jobs": 0,
+    "queued_jobs": 5,
+    "estimated_productions_per_day": 2
+  },
+  "legacy_os_dashboard": {
+    "queues": {
+      "active_productions": 11,
+      "research_queue": [],
+      "script_queue": [],
+      "render_queue": [],
+      "local_render_status": {
+        "ready_to_render": 0,
+        "awaiting_legacy": 0,
+        "verified": 11,
+        "failed": 0
+      },
+      "qc_status": [],
+      "ready_for_review": [
+        {
+          "title": "ai_explained_60s",
+          "series": "",
+          "domain": "Artificial Intelligence",
+          "pipeline_stage": "export",
+          "publishing_status": "ready_for_review",
+          "local_render_status": "verified",
+          "export_path": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Artificial Intelligence/Artificial_Intelligence_001_001_AI_Explained_in_60_Seconds.mp4",
+          "qc_score": null,
+          "manifest_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/productions/ai_explained_60s/PRODUCTION_MANIFEST.json",
+          "project_id": "ai_explained_60s",
+          "updated_at": "2026-07-13T03:28:54.906852+00:00",
+          "final_status": "SUCCESS"
+        },
+        {
+          "title": "collab_benchmark_seasons",
+          "series": "",
+          "domain": "Earth Science",
+          "pipeline_stage": "export",
+          "publishing_status": "ready_for_review",
+          "local_render_status": "verified",
+          "export_path": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Earth Science/Earth_Science_001_001_Four_Seasons_Explained.mp4",
+          "qc_score": 100.0,
+          "manifest_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/productions/collab_benchmark_seasons/PRODUCTION_MANIFEST.json",
+          "project_id": "collab_benchmark_seasons",
+          "updated_at": "2026-07-12T23:45:07.776616+00:00",
+          "final_status": "SUCCESS"
+        },
+        {
+          "title": "benchmark_002_popsicles",
+          "series": "",
+          "domain": "Food Science",
+          "pipeline_stage": "export",
+          "publishing_status": "ready_for_review",
+          "local_render_status": "verified",
+          "export_path": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Food Science/FoodScience_002_How_Popsicles_Are_Made.mp4",
+          "qc_score": 100.0,
+          "manifest_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/productions/benchmark_002_popsicles/PRODUCTION_MANIFEST.json",
+          "project_id": "benchmark_002_popsicles",
+          "updated_at": "2026-07-12T22:37:40.104553+00:00",
+          "final_status": "SUCCESS"
+        },
+        {
+          "title": "The Origin of Turtles",
+          "series": "001",
+          "domain": "Biology",
+          "pipeline_stage": "export",
+          "publishing_status": "ready_for_review",
+          "local_render_status": "verified",
+          "export_path": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Biology/Biology_001_202_Origin_of_Turtles_v2.mp4",
+          "qc_score": 86.7,
+          "manifest_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/productions/turtle_202/PRODUCTION_MANIFEST.json",
+          "project_id": "turtle_202",
+          "updated_at": "2026-07-12T22:20:46.341673+00:00",
+          "final_status": "SUCCESS"
+        },
+        {
+          "title": "confirmation_bias",
+          "series": "",
+          "domain": "Psychology",
+          "pipeline_stage": "export",
+          "publishing_status": "ready_for_review",
+          "local_render_status": "verified",
+          "export_path": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Psychology/Psychology_001_Confirmation_Bias.mp4",
+          "qc_score": null,
+          "manifest_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/productions/confirmation_bias/PRODUCTION_MANIFEST.json",
+          "project_id": "confirmation_bias",
+          "updated_at": "2026-07-12T22:11:33.001549+00:00",
+          "final_status": "SUCCESS"
+        },
+        {
+          "title": "bluffing_103",
+          "series": "",
+          "domain": "Biology",
+          "pipeline_stage": "export",
+          "publishing_status": "ready_for_review",
+          "local_render_status": "verified",
+          "export_path": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Biology/Biology_103_Masters_of_Bluffing.mp4",
+          "qc_score": null,
+          "manifest_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/productions/bluffing_103/PRODUCTION_MANIFEST.json",
+          "project_id": "bluffing_103",
+          "updated_at": "2026-07-12T22:11:32.689173+00:00",
+          "final_status": "SUCCESS"
+        },
+        {
+          "title": "coral_102",
+          "series": "",
+          "domain": "Biology",
+          "pipeline_stage": "export",
+          "publishing_status": "ready_for_review",
+          "local_render_status": "verified",
+          "export_path": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Biology/Biology_102_Coral_Snake_Imposters.mp4",
+          "qc_score": null,
+          "manifest_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/productions/coral_102/PRODUCTION_MANIFEST.json",
+          "project_id": "coral_102",
+          "updated_at": "2026-07-12T22:11:32.382536+00:00",
+          "final_status": "SUCCESS"
+        },
+        {
+          "title": "batesian_101",
+          "series": "",
+          "domain": "Biology",
+          "pipeline_stage": "export",
+          "publishing_status": "ready_for_review",
+          "local_render_status": "verified",
+          "export_path": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Biology/Biology_101_Batesian_Mimicry.mp4",
+          "qc_score": null,
+          "manifest_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/productions/batesian_101/PRODUCTION_MANIFEST.json",
+          "project_id": "batesian_101",
+          "updated_at": "2026-07-12T22:11:32.100822+00:00",
+          "final_status": "SUCCESS"
+        },
+        {
+          "title": "newton_everyday",
+          "series": "",
+          "domain": "Physics",
+          "pipeline_stage": "export",
+          "publishing_status": "ready_for_review",
+          "local_render_status": "verified",
+          "export_path": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Physics/Physics_003_Newtons_Second_Law.mp4",
+          "qc_score": null,
+          "manifest_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/productions/newton_everyday/PRODUCTION_MANIFEST.json",
+          "project_id": "newton_everyday",
+          "updated_at": "2026-07-12T22:11:31.819532+00:00",
+          "final_status": "SUCCESS"
+        },
+        {
+          "title": "force_mass",
+          "series": "",
+          "domain": "Physics",
+          "pipeline_stage": "export",
+          "publishing_status": "ready_for_review",
+          "local_render_status": "verified",
+          "export_path": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Physics/Physics_002_Force_and_Mass.mp4",
+          "qc_score": null,
+          "manifest_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/productions/force_mass/PRODUCTION_MANIFEST.json",
+          "project_id": "force_mass",
+          "updated_at": "2026-07-12T22:11:31.534878+00:00",
+          "final_status": "SUCCESS"
+        },
+        {
+          "title": "f_equals_ma",
+          "series": "",
+          "domain": "Physics",
+          "pipeline_stage": "export",
+          "publishing_status": "ready_for_review",
+          "local_render_status": "verified",
+          "export_path": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos/Physics/Physics_001_F_Equals_MA_ES001b.mp4",
+          "qc_score": 79.3,
+          "manifest_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/productions/f_equals_ma/PRODUCTION_MANIFEST.json",
+          "project_id": "f_equals_ma",
+          "updated_at": "2026-07-12T22:11:31.228973+00:00",
+          "final_status": "SUCCESS"
+        }
+      ],
+      "ready_to_publish": [],
+      "published": [],
+      "failed_productions": [],
+      "experimental": []
+    },
+    "metrics": {
+      "average_qc_score": 91.5,
+      "average_render_sec": null,
+      "production_success_rate": 1.0,
+      "total_productions": 11
+    },
+    "system_health": {
+      "asset_cache": {
+        "cached_assets": 2,
+        "registry_libraries": {
+          "characters": 1,
+          "real_images": 0,
+          "backgrounds": 0,
+          "whiteboard": 0,
+          "motion_templates": 0,
+          "fonts": 0,
+          "music": 0,
+          "sound_effects": 0,
+          "camera_presets": 0,
+          "props": 0,
+          "icons": 0,
+          "diagrams": 0
+        }
+      },
+      "execution_mode": "local",
+      "can_render_locally": true,
+      "canonical_export_dir": "/Users/jaredbrottem/Desktop/AI Start-Up/Videos"
+    }
+  },
+  "paths": {
+    "system_state": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/SYSTEM_STATE.json",
+    "production_queue": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/generational_os/PRODUCTION_QUEUE.json"
+  }
+}

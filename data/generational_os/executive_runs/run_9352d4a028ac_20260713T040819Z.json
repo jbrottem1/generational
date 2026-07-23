@@ -1,0 +1,305 @@
+{
+  "id": "9352d4a028ac",
+  "topic": "why cameras can see infrared",
+  "command": "Create a 60 second YouTube Short explaining why cameras can see infrared.",
+  "runtime_sec": 60,
+  "platforms": [
+    "youtube_shorts",
+    "youtube",
+    "x"
+  ],
+  "engines_used": [
+    "discovery",
+    "continuous_learning",
+    "trend_discovery",
+    "opportunity_ranking",
+    "trend_forecasting",
+    "market_intelligence",
+    "research",
+    "ideation",
+    "psychology",
+    "audience_intelligence",
+    "ai_director",
+    "script_generation",
+    "attention_graph",
+    "ranking",
+    "script",
+    "critic",
+    "revision",
+    "citation",
+    "seo",
+    "threat_detection",
+    "quality",
+    "evidence_intelligence",
+    "visual_intelligence",
+    "cinematography",
+    "viewer_retention",
+    "animation",
+    "voice_audio",
+    "voice",
+    "image",
+    "video",
+    "scene_planning",
+    "narration",
+    "visual_planning",
+    "asset_manager",
+    "subtitle",
+    "timeline",
+    "render_package",
+    "studio_render",
+    "production_qa",
+    "optimization_lab",
+    "publishing_queue",
+    "scheduler",
+    "publishing"
+  ],
+  "generation_time_ms": 1,
+  "qa_score": null,
+  "qa_decision": "",
+  "revision_rounds": 0,
+  "export_size_bytes": 0,
+  "export_paths": {
+    "captions": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/why_cameras_can_see_infrared_9352d4a028ac/captions.json",
+    "description": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/why_cameras_can_see_infrared_9352d4a028ac/description.txt",
+    "seo_metadata": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/why_cameras_can_see_infrared_9352d4a028ac/seo_metadata.json",
+    "thumbnail": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/why_cameras_can_see_infrared_9352d4a028ac/thumbnail_plan.json",
+    "manifest": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/why_cameras_can_see_infrared_9352d4a028ac/EXPORT_MANIFEST.json"
+  },
+  "publish_status": "plan_only",
+  "status": "completed",
+  "error": "",
+  "created_at": "2026-07-13T04:08:19.637495+00:00",
+  "finished_at": "2026-07-13T04:08:19.639186+00:00",
+  "stages": {
+    "discovery": {
+      "key": "discovery",
+      "label": "Discovery",
+      "status": "completed",
+      "started_at": "2026-07-13T04:08:19.638142+00:00",
+      "finished_at": "2026-07-13T04:08:19.638146+00:00",
+      "duration_ms": 0,
+      "eta_sec": 25,
+      "engines_used": [
+        "discovery"
+      ],
+      "message": "planned engines=['discovery']",
+      "error": ""
+    },
+    "research": {
+      "key": "research",
+      "label": "Research",
+      "status": "completed",
+      "started_at": "2026-07-13T04:08:19.638149+00:00",
+      "finished_at": "2026-07-13T04:08:19.638152+00:00",
+      "duration_ms": 0,
+      "eta_sec": 40,
+      "engines_used": [
+        "continuous_learning",
+        "trend_discovery",
+        "opportunity_ranking",
+        "trend_forecasting",
+        "market_intelligence",
+        "research",
+        "ideation",
+        "psychology",
+        "audience_intelligence"
+      ],
+      "message": "planned engines=['continuous_learning', 'trend_discovery', 'opportunity_ranking', 'trend_forecasting', 'market_intelligence', 'research', 'ideation', 'psychology', 'audience_intelligence']",
+      "error": ""
+    },
+    "direction": {
+      "key": "direction",
+      "label": "Direction",
+      "status": "completed",
+      "started_at": "2026-07-13T04:08:19.638155+00:00",
+      "finished_at": "2026-07-13T04:08:19.638157+00:00",
+      "duration_ms": 0,
+      "eta_sec": 20,
+      "engines_used": [
+        "ai_director"
+      ],
+      "message": "planned engines=['ai_director']",
+      "error": ""
+    },
+    "script": {
+      "key": "script",
+      "label": "Script",
+      "status": "completed",
+      "started_at": "2026-07-13T04:08:19.638159+00:00",
+      "finished_at": "2026-07-13T04:08:19.638162+00:00",
+      "duration_ms": 0,
+      "eta_sec": 35,
+      "engines_used": [
+        "script_generation",
+        "attention_graph",
+        "ranking",
+        "script",
+        "critic",
+        "revision",
+        "citation",
+        "seo",
+        "threat_detection",
+        "quality"
+      ],
+      "message": "planned engines=['script_generation', 'attention_graph', 'ranking', 'script', 'critic', 'revision', 'citation', 'seo', 'threat_detection', 'quality']",
+      "error": ""
+    },
+    "evidence": {
+      "key": "evidence",
+      "label": "Evidence",
+      "status": "completed",
+      "started_at": "2026-07-13T04:08:19.638165+00:00",
+      "finished_at": "2026-07-13T04:08:19.638167+00:00",
+      "duration_ms": 0,
+      "eta_sec": 30,
+      "engines_used": [
+        "evidence_intelligence"
+      ],
+      "message": "planned engines=['evidence_intelligence']",
+      "error": ""
+    },
+    "visuals": {
+      "key": "visuals",
+      "label": "Visuals",
+      "status": "completed",
+      "started_at": "2026-07-13T04:08:19.638169+00:00",
+      "finished_at": "2026-07-13T04:08:19.638171+00:00",
+      "duration_ms": 0,
+      "eta_sec": 35,
+      "engines_used": [
+        "visual_intelligence"
+      ],
+      "message": "planned engines=['visual_intelligence']",
+      "error": ""
+    },
+    "animation": {
+      "key": "animation",
+      "label": "Animation",
+      "status": "completed",
+      "started_at": "2026-07-13T04:08:19.638173+00:00",
+      "finished_at": "2026-07-13T04:08:19.638175+00:00",
+      "duration_ms": 0,
+      "eta_sec": 40,
+      "engines_used": [
+        "cinematography",
+        "viewer_retention",
+        "animation"
+      ],
+      "message": "planned engines=['cinematography', 'viewer_retention', 'animation']",
+      "error": ""
+    },
+    "voice": {
+      "key": "voice",
+      "label": "Voice",
+      "status": "completed",
+      "started_at": "2026-07-13T04:08:19.638177+00:00",
+      "finished_at": "2026-07-13T04:08:19.638179+00:00",
+      "duration_ms": 0,
+      "eta_sec": 45,
+      "engines_used": [
+        "voice_audio",
+        "voice"
+      ],
+      "message": "planned engines=['voice_audio', 'voice']",
+      "error": ""
+    },
+    "assembly": {
+      "key": "assembly",
+      "label": "Assembly",
+      "status": "completed",
+      "started_at": "2026-07-13T04:08:19.638181+00:00",
+      "finished_at": "2026-07-13T04:08:19.638184+00:00",
+      "duration_ms": 0,
+      "eta_sec": 90,
+      "engines_used": [
+        "image",
+        "video",
+        "scene_planning",
+        "narration",
+        "visual_planning",
+        "asset_manager",
+        "subtitle",
+        "timeline",
+        "render_package",
+        "studio_render"
+      ],
+      "message": "planned engines=['image', 'video', 'scene_planning', 'narration', 'visual_planning', 'asset_manager', 'subtitle', 'timeline', 'render_package', 'studio_render']",
+      "error": ""
+    },
+    "qa": {
+      "key": "qa",
+      "label": "QA",
+      "status": "completed",
+      "started_at": "2026-07-13T04:08:19.638188+00:00",
+      "finished_at": "2026-07-13T04:08:19.638190+00:00",
+      "duration_ms": 0,
+      "eta_sec": 15,
+      "engines_used": [
+        "production_qa"
+      ],
+      "message": "planned engines=['production_qa']",
+      "error": ""
+    },
+    "export": {
+      "key": "export",
+      "label": "Export",
+      "status": "completed",
+      "started_at": "2026-07-13T04:08:19.638192+00:00",
+      "finished_at": "2026-07-13T04:08:19.638194+00:00",
+      "duration_ms": 0,
+      "eta_sec": 20,
+      "engines_used": [
+        "optimization_lab"
+      ],
+      "message": "planned engines=['optimization_lab']",
+      "error": ""
+    },
+    "publishing": {
+      "key": "publishing",
+      "label": "Publishing",
+      "status": "completed",
+      "started_at": "2026-07-13T04:08:19.638196+00:00",
+      "finished_at": "2026-07-13T04:08:19.638198+00:00",
+      "duration_ms": 0,
+      "eta_sec": 15,
+      "engines_used": [
+        "publishing_queue",
+        "scheduler",
+        "publishing"
+      ],
+      "message": "planned engines=['publishing_queue', 'scheduler', 'publishing']",
+      "error": ""
+    }
+  },
+  "artifacts": {
+    "export": {
+      "run_id": "9352d4a028ac",
+      "topic": "why cameras can see infrared",
+      "paths": {
+        "captions": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/why_cameras_can_see_infrared_9352d4a028ac/captions.json",
+        "description": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/why_cameras_can_see_infrared_9352d4a028ac/description.txt",
+        "seo_metadata": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/why_cameras_can_see_infrared_9352d4a028ac/seo_metadata.json",
+        "thumbnail": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/why_cameras_can_see_infrared_9352d4a028ac/thumbnail_plan.json",
+        "manifest": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/executive_exports/why_cameras_can_see_infrared_9352d4a028ac/EXPORT_MANIFEST.json"
+      },
+      "export_size_bytes": 0,
+      "qa_decision": null,
+      "qa_score": null
+    },
+    "brief": {
+      "raw_command": "Create a 60 second YouTube Short explaining why cameras can see infrared.",
+      "topic": "why cameras can see infrared",
+      "platforms": [
+        "youtube_shorts",
+        "youtube",
+        "x"
+      ],
+      "primary_platform": "youtube_shorts",
+      "runtime_sec": 60,
+      "format": "short",
+      "category": "science",
+      "goal": "educate",
+      "notes": []
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Bacteriophages Hunt Bacteria",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring how bacteriophages can target and eliminate antibiotic-resistant bacteria.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if viruses could save us from superbugs?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Meet bacteriophages. Tiny viruses that hunt bacteria, potentially revolutionizing infection treatment.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "As antibiotic resistance rises, these phages could be our last line of defense.",
+      "emotion": "tension",
+      "delivery": "urgent and impactful",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Preliminary studies show phages effectively target pathogens without harming us.",
+      "emotion": "hope",
+      "delivery": "confident and encouraging",
+      "retention_device": "factual insight"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "While research is still emerging, the potential is enormous!",
+      "emotion": "excitement",
+      "delivery": "enthusiastic and uplifting",
+      "retention_device": "strong conclusion"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Stay curious! Follow for more fascinating science insights!",
+      "emotion": "inviting",
+      "delivery": "friendly and motivational",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "What if viruses could save us from superbugs? Meet bacteriophages. Tiny viruses that hunt bacteria, potentially revolutionizing infection treatment. As antibiotic resistance rises, these phages could be our last line of defense. Preliminary studies show phages effectively target pathogens without harming us. While research is still emerging, the potential is enormous! Stay curious! Follow for more fascinating science insights!",
+  "call_to_action": "Stay curious! Follow for more fascinating science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:14:16.766988+00:00",
+  "source": "ai"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about antibiotic spectrum than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about antibiotic spectrum than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about antibiotic spectrum than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about antibiotic spectrum than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Antibiotic spectrum refers to the range of bacteria an antibiotic can affect.",
+    "visual_description": "Context visual: Antibiotic spectrum refers to the range of bacteria an antibiotic can affect.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Antibiotic spectrum refers to the range of bacteria an antibiotic can affect.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Antibiotic spectrum refers to the range of bacteria an antibiotic can affect.",
+    "stock_footage_query": "",
+    "text_overlay": "Antibiotic spectrum refers to",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Broad-spectrum antibiotics target many bacteria, but narrow-spectrum ones zero in on specific types. Why does it matter?",
+    "visual_description": "Escalation visual: Broad-spectrum antibiotics target many bacteria, but narrow-spectrum ones zero in on specific types. Why does it matter?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Broad-spectrum antibiotics target many bacteria, but narrow-spectrum ones zero in on specific types. Why does it matter?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Broad-spectrum antibiotics target many bacteria, but narrow-spectrum ones zero in on specific types. Why does it matter?",
+    "stock_footage_query": "",
+    "text_overlay": "Broad-spectrum antibiotics target many",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "Overusing broad-spectrum antibiotics can lead to resistance. This could make future infections harder to treat.",
+    "visual_description": "Evidence visual: Overusing broad-spectrum antibiotics can lead to resistance. This could make future infections harder to treat.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Overusing broad-spectrum antibiotics can lead to resistance. This could make future infections harder to treat.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Overusing broad-spectrum antibiotics can lead to resistance. This could make future infections harder to treat.",
+    "stock_footage_query": "",
+    "text_overlay": "Overusing broad-spectrum antibiotics can",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "empowerment",
+    "length_sec": 12.0,
+    "narration": "Understanding antibiotic spectrum helps us use them wisely. It\u2019s about preserving their power.",
+    "visual_description": "Payoff visual: Understanding antibiotic spectrum helps us use them wisely. It\u2019s about preserving their power.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding antibiotic spectrum helps us use them wisely. It\u2019s about preserving their power.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding antibiotic spectrum helps us use them wisely. It\u2019s about preserving their power.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding antibiotic spectrum helps",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "encouragement",
+    "length_sec": 22.0,
+    "narration": "Stay informed and share this knowledge! Follow for more science insights.",
+    "visual_description": "Cta visual: Stay informed and share this knowledge! Follow for more science insights.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Stay informed and share this knowledge! Follow for more science insights.",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Stay informed and share this knowledge! Follow for more science insights.",
+    "stock_footage_query": "",
+    "text_overlay": "Stay informed and share",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

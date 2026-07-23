@@ -1,0 +1,76 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Science has a clearer story about Mars dust storms than social media does.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: These storms can blanket the entire planet, reducing visibility for months.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: But how do they form? It starts with temperature differences.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Warm air rises, creating winds that lift dust high into the atmosphere.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Pattern Interrupt visual: But here\u2019s the twist\u2014these storms can actually change the climate on Mars!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Payoff visual: While scientists study how these storms affect Martian weather, we\u2019re left with more questions than answers.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cta visual: Curious about more Mars mysteries? Smash that follow for more!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Science has a clearer story about Mars dust storms than social media does.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: These storms can blanket the entire planet, reducing visibility for months.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: But how do they form? It starts with temperature differences.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Warm air rises, creating winds that lift dust high into the atmosphere.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Pattern Interrupt visual: But here\u2019s the twist\u2014these storms can actually change the climate on Mars!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Payoff visual: While scientists study how these storms affect Martian weather, we\u2019re left with more questions than answers.",
+      "duration_sec": 16.0
+    },
+    {
+      "scene_number": 7,
+      "prompt": "Cinematic motion: Cta visual: Curious about more Mars mysteries? Smash that follow for more!",
+      "duration_sec": 10.0
+    }
+  ]
+}

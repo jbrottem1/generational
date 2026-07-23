@@ -1,0 +1,74 @@
+{
+  "title": "Island Biogeography",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explore the intriguing concepts of island biogeography and its implications for biodiversity.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Ever wondered why islands are biodiversity hotspots?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Island biogeography studies how species thrive or struggle in isolated ecosystems.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "More species? Bigger islands! But, why is that?",
+      "emotion": "curiosity",
+      "delivery": "dynamic and intriguing",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows larger islands support greater diversity due to resources and habitat variety.",
+      "emotion": "curiosity",
+      "delivery": "clear and confident",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Yet, isolation can lead to unique adaptations\u2014think giant tortoises on the Galapagos!",
+      "emotion": "curiosity",
+      "delivery": "excited and uplifting",
+      "retention_device": "visual payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more science mysteries? Like and follow for more!",
+      "emotion": "curiosity",
+      "delivery": "friendly and inviting",
+      "retention_device": "engaging conclusion"
+    }
+  ],
+  "full_voiceover": "Ever wondered why islands are biodiversity hotspots? Island biogeography studies how species thrive or struggle in isolated ecosystems. More species? Bigger islands! But, why is that? Research shows larger islands support greater diversity due to resources and habitat variety. Yet, isolation can lead to unique adaptations\u2014think giant tortoises on the Galapagos! Curious about more science mysteries? Like and follow for more!",
+  "call_to_action": "Curious about more science mysteries? Like and follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T18:02:59.196258+00:00",
+  "source": "ai"
+}

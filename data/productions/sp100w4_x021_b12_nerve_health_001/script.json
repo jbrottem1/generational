@@ -1,0 +1,74 @@
+{
+  "title": "B12 Nerve Health",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the surprising truths about B12's role in nerve health.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about B12 nerve health.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Vitamin B12 is crucial for nerve function. But why?",
+      "emotion": "curiosity",
+      "delivery": "inquisitive",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Deficiency can lead to nerve damage, causing tingling and weakness.",
+      "emotion": "concern",
+      "delivery": "urgent",
+      "retention_device": "visual cue"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show B12 helps produce myelin, the nerve's protective sheath.",
+      "emotion": "informative",
+      "delivery": "confident",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "But recent research is ongoing. Not all findings are conclusive yet.",
+      "emotion": "cautious optimism",
+      "delivery": "thoughtful",
+      "retention_device": "anticipation"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 54.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about how B12 affects your health? Follow for more insights!",
+      "emotion": "encouraging",
+      "delivery": "friendly",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about B12 nerve health. Vitamin B12 is crucial for nerve function. But why? Deficiency can lead to nerve damage, causing tingling and weakness. Studies show B12 helps produce myelin, the nerve's protective sheath. But recent research is ongoing. Not all findings are conclusive yet. Curious about how B12 affects your health? Follow for more insights!",
+  "call_to_action": "Follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:17:18.532327+00:00",
+  "source": "ai"
+}

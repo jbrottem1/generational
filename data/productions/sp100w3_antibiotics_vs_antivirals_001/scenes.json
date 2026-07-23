@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Using antibiotics for viruses? That's a dangerous myth.",
+    "visual_description": "Hook visual: Using antibiotics for viruses? That's a dangerous myth.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Using antibiotics for viruses? That's a dangerous myth.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Using antibiotics for viruses? That's a dangerous myth.",
+    "stock_footage_query": "",
+    "text_overlay": "Using antibiotics for viruses?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Antibiotics are designed to fight bacteria, not viruses like the flu or COVID.",
+    "visual_description": "Context visual: Antibiotics are designed to fight bacteria, not viruses like the flu or COVID.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Antibiotics are designed to fight bacteria, not viruses like the flu or COVID.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Antibiotics are designed to fight bacteria, not viruses like the flu or COVID.",
+    "stock_footage_query": "",
+    "text_overlay": "Antibiotics are designed to",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "When we misuse antibiotics, we fuel antibiotic resistance, making infections harder to treat.",
+    "visual_description": "Escalation visual: When we misuse antibiotics, we fuel antibiotic resistance, making infections harder to treat.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: When we misuse antibiotics, we fuel antibiotic resistance, making infections harder to treat.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: When we misuse antibiotics, we fuel antibiotic resistance, making infections harder to treat.",
+    "stock_footage_query": "",
+    "text_overlay": "When we misuse antibiotics,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "serious",
+    "length_sec": 8.0,
+    "narration": "The CDC warns that resisting this trend is crucial for public health.",
+    "visual_description": "Evidence visual: The CDC warns that resisting this trend is crucial for public health.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: The CDC warns that resisting this trend is crucial for public health.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: The CDC warns that resisting this trend is crucial for public health.",
+    "stock_footage_query": "",
+    "text_overlay": "The CDC warns that",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "empowerment",
+    "length_sec": 8.0,
+    "narration": "Using antibiotics correctly saves lives. Let's keep them effective.",
+    "visual_description": "Payoff visual: Using antibiotics correctly saves lives. Let's keep them effective.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Using antibiotics correctly saves lives. Let's keep them effective.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Using antibiotics correctly saves lives. Let's keep them effective.",
+    "stock_footage_query": "",
+    "text_overlay": "Using antibiotics correctly saves",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "enthusiasm",
+    "length_sec": 11.0,
+    "narration": "Share this to spread the word about antibiotic use! #antibiotics #viruses",
+    "visual_description": "Cta visual: Share this to spread the word about antibiotic use! #antibiotics #viruses",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Share this to spread the word about antibiotic use! #antibiotics #viruses",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Share this to spread the word about antibiotic use! #antibiotics #viruses",
+    "stock_footage_query": "",
+    "text_overlay": "Share this to spread",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

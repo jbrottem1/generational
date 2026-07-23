@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Did researchers just fake their findings?",
+    "visual_description": "Hook visual: Did researchers just fake their findings?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Did researchers just fake their findings?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Did researchers just fake their findings?",
+    "stock_footage_query": "",
+    "text_overlay": "Did researchers just fake",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "HARKing stands for Hypothesizing After Results are Known. It\u2019s a sneaky way some scientists may distort truth.",
+    "visual_description": "Context visual: HARKing stands for Hypothesizing After Results are Known. It\u2019s a sneaky way some scientists may distort truth.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: HARKing stands for Hypothesizing After Results are Known. It\u2019s a sneaky way some scientists may distort truth.",
+    "ai_video_prompt": "Cinematic motion: Context visual: HARKing stands for Hypothesizing After Results are Known. It\u2019s a sneaky way some scientists may distort truth.",
+    "stock_footage_query": "",
+    "text_overlay": "HARKing stands for Hypothesizing",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Imagine running an experiment, seeing unexpected results, and then changing your hypothesis to match. Sounds fishy, right?",
+    "visual_description": "Escalation visual: Imagine running an experiment, seeing unexpected results, and then changing your hypothesis to match. Sounds fishy, righ",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Imagine running an experiment, seeing unexpected results, and then changing your hypothesis to match. Sounds fishy, righ",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Imagine running an experiment, seeing unexpected results, and then changing your hypothesis to match. Sounds fishy, righ",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine running an experiment,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "Studies show HARKing leads to inflated results and misinformed conclusions. The integrity of science hangs in the balance.",
+    "visual_description": "Evidence visual: Studies show HARKing leads to inflated results and misinformed conclusions. The integrity of science hangs in the balanc",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show HARKing leads to inflated results and misinformed conclusions. The integrity of science hangs in the balanc",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show HARKing leads to inflated results and misinformed conclusions. The integrity of science hangs in the balanc",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show HARKing leads",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "hope",
+    "length_sec": 12.0,
+    "narration": "Understanding HARKing helps us question research better and promotes genuine scientific inquiry.",
+    "visual_description": "Payoff visual: Understanding HARKing helps us question research better and promotes genuine scientific inquiry.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding HARKing helps us question research better and promotes genuine scientific inquiry.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding HARKing helps us question research better and promotes genuine scientific inquiry.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding HARKing helps us",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "enthusiasm",
+    "length_sec": 22.0,
+    "narration": "Stay curious! Share this video and learn more about science\u2019s hidden truths.",
+    "visual_description": "Cta visual: Stay curious! Share this video and learn more about science\u2019s hidden truths.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Stay curious! Share this video and learn more about science\u2019s hidden truths.",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Stay curious! Share this video and learn more about science\u2019s hidden truths.",
+    "stock_footage_query": "",
+    "text_overlay": "Stay curious! Share this",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

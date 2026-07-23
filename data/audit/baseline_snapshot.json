@@ -1,0 +1,172 @@
+{
+  "captured_at": "2026-07-11T04:21:44.895300+00:00",
+  "git": {
+    "branch": "release/1.0.0-rc2",
+    "commit": "142b22c80bd944c0d3234b45f42308012fae70ff",
+    "commit_short": "142b22c Add Dash Science stick-figure universe foundation with three mock packages."
+  },
+  "tests": {
+    "exit_code": 1,
+    "passed": 0,
+    "failed": 0,
+    "duration_sec": 133.74,
+    "summary_tail": [
+      "FAILED tests/test_render_engine.py::test_render_output_is_additive_over_production_seed",
+      "FAILED tests/test_workflows.py::test_unready_engines_are_skipped - AssertionE...",
+      "10 failed, 890 passed in 133.30s (0:02:13)"
+    ]
+  },
+  "readiness": {
+    "engines_ready": null,
+    "engines_total": null,
+    "readiness_pct": null,
+    "publishing": {
+      "dry_run_supported": true,
+      "modes": [
+        "immediate",
+        "scheduled",
+        "dry_run"
+      ],
+      "youtube_credentials": false,
+      "default_mode": "scheduled"
+    },
+    "credentials_configured": 0
+  },
+  "credentials_present": {
+    "OPENAI_API_KEY": true,
+    "ANTHROPIC_API_KEY": true,
+    "YOUTUBE_ACCESS_TOKEN": false,
+    "ELEVENLABS_API_KEY": false
+  },
+  "validation_reports": [
+    {
+      "path": "data/productions/_validation/communicator_brain_energy/COMMUNICATOR_BRAIN_ENERGY_REPORT.json",
+      "success": true,
+      "duration_sec": 30.168,
+      "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Generational_Benchmark_Brain_Energy.mp4"
+    },
+    {
+      "path": "data/productions/_validation/educator_benchmarks/EDUCATOR_BENCHMARK_REPORT.json",
+      "success": true,
+      "duration_sec": null,
+      "export_path": null
+    },
+    {
+      "path": "data/productions/_validation/fluid_motion/FLUID_MOTION_REPORT.json",
+      "success": true,
+      "duration_sec": 20.546,
+      "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Fluid_Motion_Benchmark_You_Are_Made_Of_Cells.mp4"
+    },
+    {
+      "path": "data/productions/_validation/full_system_benchmark/FULL_SYSTEM_BENCHMARK_REPORT.json",
+      "success": true,
+      "duration_sec": null,
+      "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Full_System_Benchmark_Mitochondria_Powerhouse.mp4"
+    },
+    {
+      "path": "data/productions/_validation/macrocenter_benchmark_001/MACROCENTER_BENCHMARK_001_REPORT.json",
+      "success": true,
+      "duration_sec": 58.152,
+      "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/MacroCenter_Biology_001_Cell_Membrane.mp4"
+    },
+    {
+      "path": "data/productions/_validation/macrocenter_v2/MACROCENTER_V2_REPORT.json",
+      "success": true,
+      "duration_sec": 30.288,
+      "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/MacroCenter_V2_Cell_Membrane.mp4"
+    },
+    {
+      "path": "data/productions/_validation/physics_academy_vol1/PHYSICS_ACADEMY_VOL1_REPORT.json",
+      "success": true,
+      "duration_sec": 145.47,
+      "export_path": null
+    },
+    {
+      "path": "data/productions/_validation/project_excellence/PROJECT_EXCELLENCE_REPORT.json",
+      "success": true,
+      "duration_sec": 30.336,
+      "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Project_Excellence_Stomach_Acid.mp4"
+    },
+    {
+      "path": "data/productions/_validation/rc1/RC1_RELEASE_CANDIDATE_REPORT.json",
+      "success": null,
+      "duration_sec": 106.35,
+      "export_path": null
+    },
+    {
+      "path": "data/productions/_validation/skydive_stomach/SKYDIVE_STOMACH_REPORT.json",
+      "success": true,
+      "duration_sec": 30.182,
+      "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/SkyDive_Benchmark_Why_Your_Stomach_Doesnt_Digest_Itself.mp4"
+    },
+    {
+      "path": "data/productions/_validation/sprint_100min/SPRINT_100MIN_REPORT.json",
+      "success": null,
+      "duration_sec": 331.59,
+      "export_path": null
+    },
+    {
+      "path": "data/productions/_validation/sprint_100min/SPRINT_FINAL_REPORT.json",
+      "success": null,
+      "duration_sec": null,
+      "export_path": null
+    },
+    {
+      "path": "data/productions/_validation/sprint_100min/SPRINT_WAVE2_REPORT.json",
+      "success": null,
+      "duration_sec": 367.02,
+      "export_path": null
+    },
+    {
+      "path": "data/productions/_validation/sprint_100min/SPRINT_WAVE3_REPORT.json",
+      "success": null,
+      "duration_sec": 1060.03,
+      "export_path": null
+    },
+    {
+      "path": "data/productions/_validation/sprint_100min/SPRINT_WAVE4_REPORT.json",
+      "success": null,
+      "duration_sec": 1319.68,
+      "export_path": null
+    },
+    {
+      "path": "data/productions/_validation/sprint_100min/SPRINT_WAVE5_REPORT.json",
+      "success": null,
+      "duration_sec": 1404.56,
+      "export_path": null
+    },
+    {
+      "path": "data/productions/_validation/sprint_100min/SPRINT_WAVE6_REPORT.json",
+      "success": null,
+      "duration_sec": 1122.82,
+      "export_path": null
+    },
+    {
+      "path": "data/productions/_validation/stick_experiments_3/STICK_EXPERIMENTS_3_REPORT.json",
+      "success": null,
+      "duration_sec": 1009.36,
+      "export_path": null
+    },
+    {
+      "path": "data/productions/_validation/true_animation_benchmark/TRUE_ANIMATION_BENCHMARK_REPORT.json",
+      "success": null,
+      "duration_sec": 18.0,
+      "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/True_Animation_Benchmark_V1_Dash_Ocean_Discovery.mp4"
+    },
+    {
+      "path": "data/productions/_validation/weird_science_5/WEIRD_SCIENCE_5_REPORT.json",
+      "success": null,
+      "duration_sec": 1572.38,
+      "export_path": null
+    }
+  ],
+  "active_tracks": [
+    "Distribution",
+    "Visual Universe",
+    "Animation Studio",
+    "GCIS",
+    "MacroCenter",
+    "Project Excellence",
+    "Project Fluid Motion"
+  ]
+}

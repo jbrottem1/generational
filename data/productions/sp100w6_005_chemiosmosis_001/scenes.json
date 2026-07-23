@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if I told you energy production in cells is like a secret dance?",
+    "visual_description": "Hook visual: What if I told you energy production in cells is like a secret dance?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you energy production in cells is like a secret dance?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you energy production in cells is like a secret dance?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Enter chemiosmosis, the process powering ATP, your body's energy currency.",
+    "visual_description": "Context visual: Enter chemiosmosis, the process powering ATP, your body's energy currency.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Enter chemiosmosis, the process powering ATP, your body's energy currency.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Enter chemiosmosis, the process powering ATP, your body's energy currency.",
+    "stock_footage_query": "",
+    "text_overlay": "Enter chemiosmosis, the process",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "It all happens in mitochondria, where protons flow through a membrane, creating energy.",
+    "visual_description": "Escalation visual: It all happens in mitochondria, where protons flow through a membrane, creating energy.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: It all happens in mitochondria, where protons flow through a membrane, creating energy.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: It all happens in mitochondria, where protons flow through a membrane, creating energy.",
+    "stock_footage_query": "",
+    "text_overlay": "It all happens in",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This movement generates a gradient, triggering ATP synthase to produce ATP.",
+    "visual_description": "Evidence visual: This movement generates a gradient, triggering ATP synthase to produce ATP.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: This movement generates a gradient, triggering ATP synthase to produce ATP.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: This movement generates a gradient, triggering ATP synthase to produce ATP.",
+    "stock_footage_query": "",
+    "text_overlay": "This movement generates a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "realization",
+    "length_sec": 10.0,
+    "narration": "Without chemiosmosis, no energy. No life as we know it.",
+    "visual_description": "Payoff visual: Without chemiosmosis, no energy. No life as we know it.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Without chemiosmosis, no energy. No life as we know it.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Without chemiosmosis, no energy. No life as we know it.",
+    "stock_footage_query": "",
+    "text_overlay": "Without chemiosmosis, no energy.",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 36.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "inviting",
+    "length_sec": 24.0,
+    "narration": "Curious about more science secrets? Hit that follow for more!",
+    "visual_description": "Cta visual: Curious about more science secrets? Hit that follow for more!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more science secrets? Hit that follow for more!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more science secrets? Hit that follow for more!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more science",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 36.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 36.0
+    }
+  }
+]

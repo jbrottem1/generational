@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "generational://human_realism/PERFORMANCE_PLAN.schema.json",
+  "title": "PerformancePlan",
+  "type": "object",
+  "required": [
+    "character_id",
+    "scene_id",
+    "objective",
+    "emotion",
+    "gaze",
+    "body_language",
+    "gesture",
+    "walking_style",
+    "breathing",
+    "facial_performance",
+    "interaction_targets",
+    "camera_awareness",
+    "environmental_reactions",
+    "foot_contact_required"
+  ],
+  "properties": {
+    "character_id": {
+      "type": "string"
+    },
+    "scene_id": {
+      "type": "string"
+    },
+    "objective": {
+      "type": "string"
+    },
+    "emotion": {
+      "type": "object"
+    },
+    "gaze": {
+      "type": "object"
+    },
+    "body_language": {
+      "type": "object"
+    },
+    "gesture": {
+      "type": "object"
+    },
+    "walking_style": {
+      "type": "string"
+    },
+    "breathing": {
+      "type": "object"
+    },
+    "facial_performance": {
+      "type": "object"
+    },
+    "interaction_targets": {
+      "type": "array"
+    },
+    "camera_awareness": {
+      "type": "object"
+    },
+    "environmental_reactions": {
+      "type": "object"
+    },
+    "foot_contact_required": {
+      "type": "boolean"
+    }
+  }
+}

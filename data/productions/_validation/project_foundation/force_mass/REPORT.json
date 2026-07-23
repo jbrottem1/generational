@@ -1,0 +1,51 @@
+{
+  "id": "force_mass",
+  "title": "Why Does a Heavy Object Need More Force?",
+  "demo_id": "foundation_force_mass",
+  "ok": true,
+  "export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/Test run 2 generational/Physics_002_Force_and_Mass.mp4",
+  "duration_sec": 32.918,
+  "render_sec": 40.0,
+  "qc": {
+    "mouth_varies": true,
+    "has_silence_closed": true,
+    "has_speech_open": true,
+    "speaking_ratio": 0.703,
+    "idle_motion": true,
+    "blink_programmed": true,
+    "educator_mode": true,
+    "demo_id": "foundation_force_mass",
+    "duration_sec": 32.918,
+    "frame_count": 790,
+    "grounded": true,
+    "interactive_teaching": true,
+    "gesture_counts": {
+      "idle": 253,
+      "think": 47,
+      "write": 253,
+      "point": 118,
+      "push": 119
+    },
+    "idle_ratio": 0.32,
+    "walk_ratio": 0.08,
+    "purposeful_gestures": true,
+    "passed": true
+  },
+  "verify": {
+    "exists": true,
+    "bytes": 902125,
+    "has_video": true,
+    "has_audio": true,
+    "ok": true
+  },
+  "structure": [
+    "opening",
+    "question",
+    "whiteboard",
+    "real_world",
+    "summary",
+    "next_lesson"
+  ],
+  "next_tease": "In the next lesson, how Newton's second law explains everyday life.",
+  "error": null
+}

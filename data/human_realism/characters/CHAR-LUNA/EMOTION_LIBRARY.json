@@ -1,0 +1,42 @@
+{
+  "character_id": "CHAR-LUNA",
+  "emotion": {
+    "transition_model": [
+      "anticipation",
+      "peak",
+      "recovery",
+      "emotional_residue"
+    ],
+    "affects": [
+      "gaze",
+      "face",
+      "breathing",
+      "posture",
+      "gesture",
+      "timing",
+      "walking_speed",
+      "interpersonal_distance",
+      "voice_sync"
+    ],
+    "emotions": [
+      "joy",
+      "sadness",
+      "fear",
+      "curiosity",
+      "confidence",
+      "compassion",
+      "concern",
+      "determination",
+      "anger",
+      "humor",
+      "contemplation",
+      "surprise",
+      "relief"
+    ],
+    "full_body_rule": true
+  },
+  "emotion_bias": {
+    "default_primary": "compassion",
+    "teaching_primary": "curiosity"
+  }
+}

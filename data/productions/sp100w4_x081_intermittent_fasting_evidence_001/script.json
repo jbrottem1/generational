@@ -1,0 +1,74 @@
+{
+  "title": "Intermittent Fasting Evidence",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explores the scientific evidence surrounding intermittent fasting and its implications.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about intermittent fasting evidence.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Intermittent fasting is more than just a trend; it\u2019s backed by research.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies suggest it can boost metabolism and improve health markers.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "escalation",
+      "voiceover": "But not all findings are conclusive. Some results are still preliminary.",
+      "emotion": "curiosity",
+      "delivery": "cautionary",
+      "retention_device": "retention hook"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "So, while intermittent fasting shows promise, more research is needed.",
+      "emotion": "curiosity",
+      "delivery": "calm",
+      "retention_device": "thought-provoking"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about trying it? Research and consult a pro before diving in.",
+      "emotion": "curiosity",
+      "delivery": "encouraging",
+      "retention_device": "strong CTA"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about intermittent fasting evidence. Intermittent fasting is more than just a trend; it\u2019s backed by research. Studies suggest it can boost metabolism and improve health markers. But not all findings are conclusive. Some results are still preliminary. So, while intermittent fasting shows promise, more research is needed. Curious about trying it? Research and consult a pro before diving in.",
+  "call_to_action": "Curious about trying it? Research and consult a pro before diving in.",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:24:30.331358+00:00",
+  "source": "ai"
+}

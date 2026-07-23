@@ -1,0 +1,84 @@
+{
+  "title": "Working Memory Holds Only a Few Items",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the limits of working memory and the power of chunking.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Your mental scratchpad is tiny \u2014 that's why phone numbers feel hard to keep.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Working memory can only hold about 7 items at once, a limit set by cognitive psychologist George Miller.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "So, why do we struggle remembering longer numbers? It\u2019s all about chunking.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Chunking means grouping information into manageable bits, like 555-1234 instead of 5551234.",
+      "emotion": "curiosity",
+      "delivery": "explanatory",
+      "retention_device": "visualization"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "But did you know? Cowan suggests we can hold even fewer when distractions hit.",
+      "emotion": "curiosity",
+      "delivery": "surprising",
+      "retention_device": "fact"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "Mastering chunking can boost your memory \u2014 whether for studying, phone numbers, or daily tasks.",
+      "emotion": "positive",
+      "delivery": "motivational",
+      "retention_device": "solution"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to unlock more memory tips? Follow for more science hacks!",
+      "emotion": "enthusiastic",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Your mental scratchpad is tiny \u2014 that's why phone numbers feel hard to keep. Working memory can only hold about 7 items at once, a limit set by cognitive psychologist George Miller. So, why do we struggle remembering longer numbers? It\u2019s all about chunking. Chunking means grouping information into manageable bits, like 555-1234 instead of 5551234. But did you know? Cowan suggests we can hold even fewer when distractions hit. Mastering chunking can boost your memory \u2014 whether for studying, phone numbers, or daily tasks. Want to unlock more memory tips? Follow for more science hacks!",
+  "call_to_action": "Want to unlock more memory tips? Follow for more science hacks!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:49:35.032726+00:00",
+  "source": "ai"
+}

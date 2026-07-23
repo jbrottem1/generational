@@ -1,0 +1,74 @@
+{
+  "title": "What Are Lagrange Points?",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the intriguing balance of gravity at Lagrange points, where satellites like JWST thrive.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "What if I told you there are special parking spots in space?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "These are Lagrange points, where gravity from two massive bodies balances perfectly.",
+      "emotion": "curiosity",
+      "delivery": "engaging and clear",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 20.0,
+      "segment_type": "escalation",
+      "voiceover": "Imagine a spot where a satellite can hover indefinitely without using fuel.",
+      "emotion": "curiosity",
+      "delivery": "expressive and vivid",
+      "retention_device": "visualization"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 20.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "NASA's James Webb Space Telescope resides at L2, the second Lagrange point.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "payoff",
+      "voiceover": "Here, Webb can observe the universe without Earth\u2019s interference, fulfilling its cosmic mission.",
+      "emotion": "curiosity",
+      "delivery": "dramatic and impactful",
+      "retention_device": "revelation"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more cosmic wonders? Hit that follow button!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "What if I told you there are special parking spots in space? These are Lagrange points, where gravity from two massive bodies balances perfectly. Imagine a spot where a satellite can hover indefinitely without using fuel. NASA's James Webb Space Telescope resides at L2, the second Lagrange point. Here, Webb can observe the universe without Earth\u2019s interference, fulfilling its cosmic mission. Curious about more cosmic wonders? Hit that follow button!",
+  "call_to_action": "Curious about more cosmic wonders? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:05:01.501968+00:00",
+  "source": "ai"
+}

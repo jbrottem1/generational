@@ -1,0 +1,227 @@
+{
+  "updated_at": "2026-07-14T04:50:53.915187+00:00",
+  "count": 3,
+  "profiles": [
+    {
+      "channel_id": "ai_explained",
+      "template_id": "ai_explained",
+      "brand_name": "AI Explained",
+      "name": "AI Explained",
+      "niche": "artificial_intelligence, technology, engineering",
+      "brand_voice": "modern, precise, demystifying",
+      "description": "Plain-language explainers for AI concepts without hype.",
+      "platforms": [
+        "youtube_shorts",
+        "tiktok",
+        "instagram_reels"
+      ],
+      "target_audience": "tech-curious beginners and professionals learning AI",
+      "topic_categories": [
+        "artificial_intelligence",
+        "technology",
+        "engineering"
+      ],
+      "tone": "modern, precise, demystifying",
+      "narrator_profile": "technology_explainer",
+      "voice_profile": "technology_explainer",
+      "visual_style": "diagram-forward tech explainer with neon accents sparingly",
+      "world_preferences": {
+        "domains": [
+          "ai",
+          "technology"
+        ],
+        "style": "diagram_world"
+      },
+      "thumbnail_style": "bold concept word + simple icon metaphor",
+      "intro_outro_rules": {
+        "intro_sec": 1.0,
+        "outro_cta": "AI, explained simply"
+      },
+      "upload_schedule": {
+        "youtube_shorts": "mon/wed/fri 17:00"
+      },
+      "posting_schedule": {
+        "youtube_shorts": "mon/wed/fri 17:00"
+      },
+      "hashtag_strategy": [
+        "#ai",
+        "#machinelearning",
+        "#tech",
+        "#explainers"
+      ],
+      "seo_rules": {
+        "title_pattern": "what_is_x",
+        "max_title_chars": 65
+      },
+      "monetization_status": "not_monetized",
+      "publishing_status": "manual_review",
+      "analytics_history": [
+        {
+          "at": "2026-07-14T04:40:40.905730+00:00",
+          "production_id": "ops_3f4ce6fe0a",
+          "topic": "How Neural Networks Learn",
+          "creative_score": 77.7,
+          "success": false
+        }
+      ],
+      "status": "active",
+      "metrics": {
+        "videos_published": 1,
+        "videos_scheduled": 0,
+        "total_views": 0,
+        "followers": 0,
+        "estimated_revenue": 0.0,
+        "average_creative_score": 77.7
+      },
+      "credentials": {},
+      "updated_at": "2026-07-14T04:41:08.785543+00:00",
+      "created_at": "2026-07-14T04:39:38.708321+00:00"
+    },
+    {
+      "channel_id": "science_daily",
+      "template_id": "science_daily",
+      "brand_name": "Science Daily",
+      "name": "Science Daily",
+      "niche": "biology, physics, astronomy, chemistry, nature",
+      "brand_voice": "curious, clear, wonder-led",
+      "description": "Bite-sized science facts that reframe everyday curiosity.",
+      "platforms": [
+        "youtube_shorts",
+        "tiktok",
+        "instagram_reels"
+      ],
+      "target_audience": "curious generalists ages 18\u201335 who enjoy science shorts",
+      "topic_categories": [
+        "biology",
+        "physics",
+        "astronomy",
+        "chemistry",
+        "nature"
+      ],
+      "tone": "curious, clear, wonder-led",
+      "narrator_profile": "science_educator",
+      "voice_profile": "science_educator",
+      "visual_style": "clean educational motion with bold labels",
+      "world_preferences": {
+        "domains": [
+          "science",
+          "biology",
+          "physics"
+        ],
+        "style": "reality_first"
+      },
+      "thumbnail_style": "one subject, high contrast, max 5 claim words",
+      "intro_outro_rules": {
+        "intro_sec": 1.2,
+        "outro_cta": "Follow for daily science"
+      },
+      "upload_schedule": {
+        "youtube_shorts": "daily 18:00",
+        "tiktok": "daily 12:00"
+      },
+      "posting_schedule": {
+        "youtube_shorts": "daily 18:00",
+        "tiktok": "daily 12:00"
+      },
+      "hashtag_strategy": [
+        "#science",
+        "#facts",
+        "#shorts",
+        "#learnontiktok"
+      ],
+      "seo_rules": {
+        "title_pattern": "curiosity_hook",
+        "max_title_chars": 70
+      },
+      "monetization_status": "not_monetized",
+      "publishing_status": "manual_review",
+      "analytics_history": [
+        {
+          "at": "2026-07-14T04:40:23.444132+00:00",
+          "production_id": "ops_a13166d67f",
+          "topic": "Why Leaves Change Color in Autumn",
+          "creative_score": 82.6,
+          "success": false
+        }
+      ],
+      "status": "active",
+      "metrics": {
+        "videos_published": 1,
+        "videos_scheduled": 0,
+        "total_views": 0,
+        "followers": 0,
+        "estimated_revenue": 0.0,
+        "average_creative_score": 82.6
+      },
+      "credentials": {},
+      "updated_at": "2026-07-14T04:41:08.788158+00:00",
+      "created_at": "2026-07-14T04:39:38.706608+00:00"
+    },
+    {
+      "channel_id": "space_explorer",
+      "template_id": "space_explorer",
+      "brand_name": "Space Explorer",
+      "name": "Space Explorer",
+      "niche": "astronomy, physics, engineering",
+      "brand_voice": "awe, cinematic, documentary-adjacent",
+      "description": "Cosmic wonder through clear astronomy storytelling.",
+      "platforms": [
+        "youtube_shorts",
+        "instagram_reels"
+      ],
+      "target_audience": "space enthusiasts and STEM learners",
+      "topic_categories": [
+        "astronomy",
+        "physics",
+        "engineering"
+      ],
+      "tone": "awe, cinematic, documentary-adjacent",
+      "narrator_profile": "documentary",
+      "voice_profile": "documentary",
+      "visual_style": "cinematic space imagery with soft motion pans",
+      "world_preferences": {
+        "domains": [
+          "astronomy",
+          "space"
+        ],
+        "style": "cinematic_cosmos"
+      },
+      "thumbnail_style": "cosmic subject + scale cue",
+      "intro_outro_rules": {
+        "intro_sec": 1.5,
+        "outro_cta": "Explore the cosmos with us"
+      },
+      "upload_schedule": {
+        "youtube_shorts": "tue/thu/sat 19:00"
+      },
+      "posting_schedule": {
+        "youtube_shorts": "tue/thu/sat 19:00"
+      },
+      "hashtag_strategy": [
+        "#space",
+        "#astronomy",
+        "#nasa",
+        "#jwst"
+      ],
+      "seo_rules": {
+        "title_pattern": "cosmic_wonder",
+        "max_title_chars": 70
+      },
+      "monetization_status": "not_monetized",
+      "publishing_status": "manual_review",
+      "analytics_history": [],
+      "status": "active",
+      "metrics": {
+        "videos_published": 0,
+        "videos_scheduled": 0,
+        "total_views": 0,
+        "followers": 0,
+        "estimated_revenue": 0.0,
+        "average_creative_score": null
+      },
+      "credentials": {},
+      "updated_at": "2026-07-14T04:50:53.914709+00:00",
+      "created_at": "2026-07-14T04:50:53.914709+00:00"
+    }
+  ]
+}

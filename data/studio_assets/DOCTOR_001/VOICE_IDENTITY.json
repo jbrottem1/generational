@@ -1,0 +1,27 @@
+{
+  "character_id": "DOCTOR_001",
+  "voice_profile_id": "VOICE-THE-DOCTOR-001",
+  "traits": [
+    "professional",
+    "calm",
+    "confident",
+    "friendly",
+    "curious",
+    "educational",
+    "encouraging",
+    "warm"
+  ],
+  "pacing": "natural_educational",
+  "tts_hint": {
+    "voice": "onyx",
+    "model": "tts-1-hd",
+    "style": "warm_clinical_educator"
+  },
+  "prosody": {
+    "pitch": "mid_warm",
+    "emphasis": "key_medical_terms",
+    "pauses": "after_definitions"
+  },
+  "sync": "designed_for_high_quality_ai_narration_synchronization",
+  "failover": "pause_production_do_not_silent_demo_when_configured"
+}

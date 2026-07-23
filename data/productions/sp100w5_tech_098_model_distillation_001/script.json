@@ -1,0 +1,74 @@
+{
+  "title": "Model Distillation Explained",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the science behind model distillation and its significance.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story about model distillation than social media does.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Model distillation simplifies complex AI models, making them faster and more efficient.",
+      "emotion": "curiosity",
+      "delivery": "clear and engaging",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Imagine taking a giant, slow beast and turning it into a nimble, agile creature.",
+      "emotion": "curiosity",
+      "delivery": "excited",
+      "retention_device": "visualization"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Researchers use techniques like \u2018teacher-student\u2019 training, where a simpler model learns from a complex one.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "fact drop"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "The result? Models that retain key insights but run faster with less power!",
+      "emotion": "satisfaction",
+      "delivery": "enthusiastic",
+      "retention_device": "promise fulfilled"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into AI concepts? Hit that follow button for more!",
+      "emotion": "encouragement",
+      "delivery": "inviting",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story about model distillation than social media does. Model distillation simplifies complex AI models, making them faster and more efficient. Imagine taking a giant, slow beast and turning it into a nimble, agile creature. Researchers use techniques like \u2018teacher-student\u2019 training, where a simpler model learns from a complex one. The result? Models that retain key insights but run faster with less power! Want to dive deeper into AI concepts? Hit that follow button for more!",
+  "call_to_action": "Hit that follow button for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:48:45.229050+00:00",
+  "source": "ai"
+}

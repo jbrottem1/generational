@@ -1,0 +1,74 @@
+{
+  "title": "Why Space Is Silent",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring why sound cannot travel in the vacuum of space due to the lack of a medium.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Ever wondered why space is silent?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Sound needs a medium to travel. Think air, water, or even solid objects.",
+      "emotion": "informative",
+      "delivery": "clear and engaging",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "In space, there's a vacuum. No air, no medium.",
+      "emotion": "building tension",
+      "delivery": "slightly more intense",
+      "retention_device": "pause for effect"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Without pressure waves, sound simply can\u2019t exist.",
+      "emotion": "clarifying",
+      "delivery": "assertive",
+      "retention_device": "visual cue"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 36.0,
+      "segment_type": "payoff",
+      "voiceover": "So, the next time you look at the stars, remember: silence reigns in the cosmos.",
+      "emotion": "satisfying",
+      "delivery": "philosophical",
+      "retention_device": "thought-provoking statement"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 36.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more science myths? Hit that follow button!",
+      "emotion": "encouraging",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Ever wondered why space is silent? Sound needs a medium to travel. Think air, water, or even solid objects. In space, there's a vacuum. No air, no medium. Without pressure waves, sound simply can\u2019t exist. So, the next time you look at the stars, remember: silence reigns in the cosmos. Curious about more science myths? Hit that follow button!",
+  "call_to_action": "Curious about more science myths? Hit that follow button!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:58:49.483267+00:00",
+  "source": "ai"
+}

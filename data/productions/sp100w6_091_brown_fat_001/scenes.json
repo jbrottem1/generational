@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if I told you some fat is actually good for you?",
+    "visual_description": "Hook visual: What if I told you some fat is actually good for you?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if I told you some fat is actually good for you?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if I told you some fat is actually good for you?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Brown fat is a special type of fat that burns calories instead of storing them.",
+    "visual_description": "Context visual: Brown fat is a special type of fat that burns calories instead of storing them.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Brown fat is a special type of fat that burns calories instead of storing them.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Brown fat is a special type of fat that burns calories instead of storing them.",
+    "stock_footage_query": "",
+    "text_overlay": "Brown fat is a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Unlike white fat, which can lead to health issues, brown fat can help keep you warm and maintain body weight.",
+    "visual_description": "Escalation visual: Unlike white fat, which can lead to health issues, brown fat can help keep you warm and maintain body weight.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Unlike white fat, which can lead to health issues, brown fat can help keep you warm and maintain body weight.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Unlike white fat, which can lead to health issues, brown fat can help keep you warm and maintain body weight.",
+    "stock_footage_query": "",
+    "text_overlay": "Unlike white fat, which",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show that people with more brown fat tend to have improved metabolic health.",
+    "visual_description": "Evidence visual: Studies show that people with more brown fat tend to have improved metabolic health.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show that people with more brown fat tend to have improved metabolic health.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show that people with more brown fat tend to have improved metabolic health.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show that people",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "But don\u2019t get too excited; not everyone has enough brown fat to reap the benefits.",
+    "visual_description": "Pattern Interrupt visual: But don\u2019t get too excited; not everyone has enough brown fat to reap the benefits.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: But don\u2019t get too excited; not everyone has enough brown fat to reap the benefits.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: But don\u2019t get too excited; not everyone has enough brown fat to reap the benefits.",
+    "stock_footage_query": "",
+    "text_overlay": "But don\u2019t get too",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "The science is still unfolding, and while brown fat may aid weight loss, it\u2019s not a magic solution.",
+    "visual_description": "Payoff visual: The science is still unfolding, and while brown fat may aid weight loss, it\u2019s not a magic solution.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: The science is still unfolding, and while brown fat may aid weight loss, it\u2019s not a magic solution.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: The science is still unfolding, and while brown fat may aid weight loss, it\u2019s not a magic solution.",
+    "stock_footage_query": "",
+    "text_overlay": "The science is still",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Curious to learn more? Hit like and follow for the latest in science!",
+    "visual_description": "Cta visual: Curious to learn more? Hit like and follow for the latest in science!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious to learn more? Hit like and follow for the latest in science!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious to learn more? Hit like and follow for the latest in science!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious to learn more?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

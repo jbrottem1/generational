@@ -1,0 +1,48 @@
+{
+  "total_duration_sec": 17.0,
+  "beats": [
+    {
+      "scene_number": 1,
+      "start_sec": 0.0,
+      "end_sec": 4.0,
+      "emotional_beat": "curiosity",
+      "emotion": "curiosity",
+      "lighting_mood": "soft_daylight",
+      "shot_language": "reveal_shot"
+    },
+    {
+      "scene_number": 2,
+      "start_sec": 4.0,
+      "end_sec": 8.5,
+      "emotional_beat": "explanation",
+      "emotion": "clarity",
+      "lighting_mood": "soft_daylight",
+      "shot_language": "medium_dialogue"
+    },
+    {
+      "scene_number": 3,
+      "start_sec": 8.5,
+      "end_sec": 12.5,
+      "emotional_beat": "wonder",
+      "emotion": "clarity",
+      "lighting_mood": "soft_daylight",
+      "shot_language": "push_in"
+    },
+    {
+      "scene_number": 4,
+      "start_sec": 12.5,
+      "end_sec": 17.0,
+      "emotional_beat": "payoff",
+      "emotion": "clarity",
+      "lighting_mood": "soft_daylight",
+      "shot_language": "hero_shot"
+    }
+  ],
+  "rhythm": [
+    "curiosity",
+    "explanation",
+    "wonder",
+    "payoff"
+  ],
+  "avoids_flatness": true
+}

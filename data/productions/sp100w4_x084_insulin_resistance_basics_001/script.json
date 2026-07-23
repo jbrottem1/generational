@@ -1,0 +1,74 @@
+{
+  "title": "Insulin Resistance Basics",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the fundamentals of insulin resistance with scientific insights.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about insulin resistance.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Insulin resistance is when your cells stop responding to insulin effectively. This can lead to high blood sugar.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But it\u2019s not just about sugar. It can affect your energy, mood, and even weight gain.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "surprise"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show that lifestyle changes can improve insulin sensitivity. Exercise and diet are key.",
+      "emotion": "curiosity",
+      "delivery": "confident",
+      "retention_device": "fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding this can help you take control of your health. Are you ready to make a change?",
+      "emotion": "empowerment",
+      "delivery": "motivational",
+      "retention_device": "call to action"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Follow for more science-backed health insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "direct appeal"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about insulin resistance. Insulin resistance is when your cells stop responding to insulin effectively. This can lead to high blood sugar. But it\u2019s not just about sugar. It can affect your energy, mood, and even weight gain. Studies show that lifestyle changes can improve insulin sensitivity. Exercise and diet are key. Understanding this can help you take control of your health. Are you ready to make a change? Follow for more science-backed health insights!",
+  "call_to_action": "Follow for more science-backed health insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:24:48.999469+00:00",
+  "source": "ai"
+}

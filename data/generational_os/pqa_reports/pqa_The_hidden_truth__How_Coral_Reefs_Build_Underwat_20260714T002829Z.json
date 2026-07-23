@@ -1,0 +1,640 @@
+{
+  "title": "The hidden truth: How Coral Reefs Build Underwater Cities In A Nature Style, Narrator Storyteller (General Content)",
+  "idea_id": "",
+  "overall_score": 77,
+  "decision": "BLOCK_EXPORT",
+  "passed": false,
+  "categories": {
+    "research_accuracy": {
+      "key": "research_accuracy",
+      "label": "Research Accuracy",
+      "score": 78,
+      "confidence": 0.65,
+      "passed": false,
+      "details": {
+        "research_confidence": 66.3,
+        "citation_count": 0,
+        "unsupported_claims": 0,
+        "sources_checked": [
+          "https://pubmed.ncbi.nlm.nih.gov/1/",
+          "https://pubmed.ncbi.nlm.nih.gov/0/",
+          "https://en.wikipedia.org/wiki/how-coral-reefs-build-underwater-cities-in-a-nature-style,-narrator-storyteller",
+          "https://en.wikipedia.org/wiki/how-coral-reefs-build-underwater-cities-in-a-nature-style,-narrator-storyteller",
+          "https://news.example.com/how-coral-reefs-build-underwater-cities-in-a-nature-style,-narrator-storyteller-report-1",
+          "https://news.example.com/how-coral-reefs-build-underwater-cities-in-a-nature-style,-narrator-storyteller-report-0",
+          "https://doi.org/10.1038/d41586-018-05355-y",
+          "https://arxiv.org/abs/1411.4413v2",
+          "https://arxiv.org/abs/0901.0512v4",
+          "https://youtube.com/watch?v=how-coral-reefs-build-underwater-cities-in-a-nature-style,-narrator-storyteller1"
+        ]
+      },
+      "issues": [
+        "No citations present"
+      ],
+      "corrections_required": [
+        "Attach trusted sources via Citation Engine"
+      ]
+    },
+    "evidence": {
+      "key": "evidence",
+      "label": "Evidence",
+      "score": 40,
+      "confidence": 0.75,
+      "passed": false,
+      "details": {
+        "real_image_pct": 0.0,
+        "ai_image_pct": 100.0,
+        "authentic_hit_count": 0,
+        "ai_fallback_count": 8,
+        "missing_evidence": [],
+        "scene_count": 8
+      },
+      "issues": [
+        "Real image share only 0.0%",
+        "AI imagery used more than necessary"
+      ],
+      "corrections_required": [
+        "Prefer Reality Catalog / Knowledge Atlas over AI",
+        "Replace AI fills with authentic media where possible"
+      ]
+    },
+    "visuals": {
+      "key": "visuals",
+      "label": "Visuals",
+      "score": 66,
+      "confidence": 0.8,
+      "passed": false,
+      "details": {
+        "visual_score": 66.0,
+        "scene_count": 9,
+        "empty_scenes": 0,
+        "qc_hard_fails": 0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "typography": {
+      "key": "typography",
+      "label": "Typography",
+      "score": 94,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "has_captions": true,
+        "layout": {}
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "annotations": {
+      "key": "annotations",
+      "label": "Annotations",
+      "score": 100,
+      "confidence": 0.75,
+      "passed": true,
+      "details": {
+        "annotation_count": 4,
+        "narration_tied": 4,
+        "untied": 0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "cinematography": {
+      "key": "cinematography",
+      "label": "Cinematography",
+      "score": 59,
+      "confidence": 0.8,
+      "passed": false,
+      "details": {
+        "attention_score": 59.0,
+        "scene_count": 8,
+        "has_animation_handoff": true,
+        "pacing": "brisk"
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "retention": {
+      "key": "retention",
+      "label": "Viewer Retention",
+      "score": 83,
+      "confidence": 0.85,
+      "passed": false,
+      "details": {
+        "package_present": true,
+        "polish_rounds": 4,
+        "predictions": {
+          "ctr_pct": 9,
+          "average_view_duration_pct": 92,
+          "completion_rate_pct": 85,
+          "share_probability": 0.77,
+          "subscribe_probability": 0.64
+        }
+      },
+      "issues": [],
+      "corrections_required": [
+        "Auto-polish until cinematic excellence \u2265 98"
+      ]
+    },
+    "render_quality": {
+      "key": "render_quality",
+      "label": "Render Quality",
+      "score": 98,
+      "confidence": 0.88,
+      "passed": true,
+      "details": {
+        "package_present": true,
+        "revision_rounds": 0,
+        "export_plan": {
+          "primary_preset": "youtube_shorts",
+          "primary": {
+            "preset": "youtube_shorts",
+            "aspect": "9:16",
+            "width": 1080,
+            "height": 1920,
+            "fps": 30,
+            "codec": "h264",
+            "bitrate_kbps": 12000,
+            "audio_bitrate_kbps": 192,
+            "hdr_ready": false
+          },
+          "variants": [
+            {
+              "preset": "tiktok",
+              "aspect": "9:16",
+              "width": 1080,
+              "height": 1920,
+              "fps": 30,
+              "codec": "h264",
+              "bitrate_kbps": 10000,
+              "audio_bitrate_kbps": 192,
+              "hdr_ready": false
+            },
+            {
+              "preset": "instagram_reels",
+              "aspect": "9:16",
+              "width": 1080,
+              "height": 1920,
+              "fps": 30,
+              "codec": "h264",
+              "bitrate_kbps": 10000,
+              "audio_bitrate_kbps": 192,
+              "hdr_ready": false
+            },
+            {
+              "preset": "facebook_reels",
+              "aspect": "9:16",
+              "width": 1080,
+              "height": 1920,
+              "fps": 30,
+              "codec": "h264",
+              "bitrate_kbps": 9000,
+              "audio_bitrate_kbps": 160,
+              "hdr_ready": false
+            }
+          ],
+          "auto_bitrate": true,
+          "auto_codec": true,
+          "hdr_pipeline": false,
+          "container": "mp4",
+          "reason": "Platform/aspect selected preset: youtube_shorts"
+        }
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "optimization": {
+      "key": "optimization",
+      "label": "Optimization",
+      "score": 98,
+      "confidence": 0.86,
+      "passed": true,
+      "details": {
+        "package_present": true,
+        "winner": {
+          "variant_id": "fd87201a92_A",
+          "label": "A",
+          "axes": {
+            "hook": "What if everything you think you know about The hidden truth: How Coral Reefs is incomplete?",
+            "narration": "authoritative_educator",
+            "scene_order": [
+              "s1",
+              "s2",
+              "s3",
+              "s4",
+              "s5",
+              "s6",
+              "s7",
+              "s8",
+              "s9"
+            ],
+            "visual_style": "science_documentary",
+            "music": "soft_pulse",
+            "camera_movement": [
+              "slow_push",
+              "orbit",
+              "whip_pan"
+            ],
+            "caption_style": "highlight_pop",
+            "thumbnail": "face_left_text_right",
+            "title": "The hidden truth: How Coral Reefs Build Underwater Cities In A Nature Style, Narrator Storyteller (General Content)",
+            "description": "What if everything you think you know about The hidden truth: How Coral Reefs is incomplete? Learn The hidden truth: How Coral Reefs Build Underwater Cities In A Nature Style, Narrator Storyteller (General Content) with clear visuals and a memorable payoff.",
+            "seo": {
+              "title": "The hidden truth: How Coral Reefs Build Underwater Cities In A Nature Style, Narrator Storyteller (General Content)",
+              "tags": [
+                "the hidden truth: how coral reefs build underwater cities in a nature style, narrator storyteller (general content)",
+                "shorts",
+                "explained",
+                "va"
+              ],
+              "hashtags": [
+                "#Thehiddentruth:HowCoralReefsBuildUnderwaterCitiesInANatureStyle,NarratorStoryteller(GeneralContent)",
+                "#shorts",
+                "#education"
+              ]
+            }
+          },
+          "source_candidate_id": "The hidden truth: How Coral Reefs Build Underwater Cities In A Nature Style, Narrator Storyteller (General Content)",
+          "baseline": true,
+          "scores": {
+            "hook_quality": 98,
+            "psychology": 98,
+            "retention": 98,
+            "educational_value": 98,
+            "entertainment": 98,
+            "seo": 98,
+            "visual_quality": 100,
+            "narration": 98,
+            "professional_appearance": 98,
+            "platform_readiness": 98,
+            "overall": 98
+          },
+          "overall_score": 98,
+          "rank": 1,
+          "revision_round": 1
+        },
+        "experiment_id": "opt_8c9618310b8e",
+        "variant_count": 5
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "audio": {
+      "key": "audio",
+      "label": "Audio",
+      "score": 84,
+      "confidence": 0.35,
+      "passed": false,
+      "details": {
+        "has_audio_file": false,
+        "music_balance": 0.5
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "narration": {
+      "key": "narration",
+      "label": "Narration",
+      "score": 73,
+      "confidence": 0.75,
+      "passed": false,
+      "details": {
+        "script_quality": 86.0,
+        "hook": 49.0,
+        "chars": 953
+      },
+      "issues": [
+        "Weak opening hook"
+      ],
+      "corrections_required": [
+        "Rewrite hook for stronger first 3 seconds"
+      ]
+    },
+    "synchronization": {
+      "key": "synchronization",
+      "label": "Synchronization",
+      "score": 90,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "segment_count": 9,
+        "missing_ann_timing": 0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "educational_value": {
+      "key": "educational_value",
+      "label": "Educational Value",
+      "score": 66,
+      "confidence": 0.7,
+      "passed": false,
+      "details": {
+        "clarity": 70.0,
+        "logical_progression": 70.0,
+        "engagement": 65.0,
+        "knowledge_density": 65.0,
+        "retention": 61.0
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "psychology": {
+      "key": "psychology",
+      "label": "Psychology",
+      "score": 50,
+      "confidence": 0.75,
+      "passed": false,
+      "details": {
+        "predicted_metrics": {
+          "ctr": 4.0,
+          "avg_watch_time_sec": 0.0,
+          "drop_off_risk": 39.0,
+          "shareability": 66.0,
+          "replay_probability": 67.0,
+          "subscriber_conversion": 40.0
+        },
+        "human_attention_score": 0.0
+      },
+      "issues": [
+        "Psychology score below documentary engagement bar"
+      ],
+      "corrections_required": [
+        "Re-run Audience / Psychology with stronger hooks"
+      ]
+    },
+    "seo": {
+      "key": "seo",
+      "label": "SEO",
+      "score": 63,
+      "confidence": 0.8,
+      "passed": false,
+      "details": {
+        "title_len": 115,
+        "description_len": 257,
+        "keyword_count": 4,
+        "hashtag_count": 3
+      },
+      "issues": [],
+      "corrections_required": []
+    },
+    "platform_compliance": {
+      "key": "platform_compliance",
+      "label": "Platform Compliance",
+      "score": 100,
+      "confidence": 0.7,
+      "passed": true,
+      "details": {
+        "ready_count": 8,
+        "aspect_ratio": "9:16",
+        "duration_sec": 60.0
+      },
+      "issues": [],
+      "corrections_required": []
+    }
+  },
+  "scores": {
+    "research_accuracy": 78,
+    "evidence": 40,
+    "visuals": 66,
+    "typography": 94,
+    "annotations": 100,
+    "cinematography": 59,
+    "retention": 83,
+    "render_quality": 98,
+    "optimization": 98,
+    "audio": 84,
+    "narration": 73,
+    "synchronization": 90,
+    "educational_value": 66,
+    "psychology": 50,
+    "seo": 63,
+    "platform_compliance": 100
+  },
+  "platform_ready": {
+    "youtube": true,
+    "youtube_shorts": true,
+    "tiktok": true,
+    "instagram_reels": true,
+    "facebook": true,
+    "pinterest": true,
+    "linkedin": true,
+    "x": true
+  },
+  "platform_ready_detail": [
+    {
+      "platform": "youtube",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "youtube_shorts",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "tiktok",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "instagram_reels",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "facebook",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "pinterest",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "linkedin",
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "platform": "x",
+      "ready": true,
+      "reasons": []
+    }
+  ],
+  "revision_requests": [
+    {
+      "category": "research_accuracy",
+      "score": 78,
+      "target_engines": [
+        "research",
+        "citation",
+        "critic"
+      ],
+      "severity": "revision",
+      "message": "No citations present",
+      "corrections": [
+        "Attach trusted sources via Citation Engine"
+      ]
+    },
+    {
+      "category": "evidence",
+      "score": 40,
+      "target_engines": [
+        "evidence_intelligence",
+        "visual_intelligence"
+      ],
+      "severity": "block",
+      "message": "Real image share only 0.0%",
+      "corrections": [
+        "Prefer Reality Catalog / Knowledge Atlas over AI",
+        "Replace AI fills with authentic media where possible"
+      ]
+    },
+    {
+      "category": "visuals",
+      "score": 66,
+      "target_engines": [
+        "visual_intelligence",
+        "image",
+        "asset_manager",
+        "studio_render"
+      ],
+      "severity": "block",
+      "message": "Visuals scored 66 (< 90)",
+      "corrections": []
+    },
+    {
+      "category": "cinematography",
+      "score": 59,
+      "target_engines": [
+        "cinematography",
+        "viewer_retention",
+        "animation",
+        "studio_render"
+      ],
+      "severity": "revision",
+      "message": "Cinematography scored 59 (< 90)",
+      "corrections": []
+    },
+    {
+      "category": "retention",
+      "score": 83,
+      "target_engines": [
+        "viewer_retention",
+        "script_generation",
+        "cinematography",
+        "voice_audio"
+      ],
+      "severity": "revision",
+      "message": "Viewer Retention scored 83 (< 90)",
+      "corrections": [
+        "Auto-polish until cinematic excellence \u2265 98"
+      ]
+    },
+    {
+      "category": "audio",
+      "score": 84,
+      "target_engines": [
+        "voice_audio",
+        "voice",
+        "narration",
+        "viewer_retention"
+      ],
+      "severity": "revision",
+      "message": "Audio scored 84 (< 90)",
+      "corrections": []
+    },
+    {
+      "category": "narration",
+      "score": 73,
+      "target_engines": [
+        "script_generation",
+        "narration",
+        "script",
+        "viewer_retention"
+      ],
+      "severity": "revision",
+      "message": "Weak opening hook",
+      "corrections": [
+        "Rewrite hook for stronger first 3 seconds"
+      ]
+    },
+    {
+      "category": "educational_value",
+      "score": 66,
+      "target_engines": [
+        "script_generation",
+        "critic",
+        "psychology"
+      ],
+      "severity": "block",
+      "message": "Educational Value scored 66 (< 90)",
+      "corrections": []
+    },
+    {
+      "category": "psychology",
+      "score": 50,
+      "target_engines": [
+        "psychology",
+        "audience_intelligence",
+        "attention_graph",
+        "viewer_retention"
+      ],
+      "severity": "revision",
+      "message": "Psychology score below documentary engagement bar",
+      "corrections": [
+        "Re-run Audience / Psychology with stronger hooks"
+      ]
+    },
+    {
+      "category": "seo",
+      "score": 63,
+      "target_engines": [
+        "seo",
+        "seo_optimization"
+      ],
+      "severity": "revision",
+      "message": "SEO scored 63 (< 90)",
+      "corrections": []
+    }
+  ],
+  "hard_fails": [
+    "Evidence critically low (40)",
+    "Visuals critically low (66)",
+    "Educational Value critically low (66)",
+    "QualityEngine publish gate failed: publish_score, claim_confidence, citation_required"
+  ],
+  "warnings": [
+    "No citations present",
+    "Real image share only 0.0%",
+    "AI imagery used more than necessary",
+    "Weak opening hook",
+    "Psychology score below documentary engagement bar"
+  ],
+  "predicted_metrics": {
+    "ctr": 4.0,
+    "avg_watch_time_sec": 0.0,
+    "drop_off_risk": 39.0,
+    "shareability": 66.0,
+    "replay_probability": 67.0,
+    "subscriber_conversion": 40.0
+  },
+  "sources_checked": [
+    "https://pubmed.ncbi.nlm.nih.gov/1/",
+    "https://pubmed.ncbi.nlm.nih.gov/0/",
+    "https://en.wikipedia.org/wiki/how-coral-reefs-build-underwater-cities-in-a-nature-style,-narrator-storyteller",
+    "https://en.wikipedia.org/wiki/how-coral-reefs-build-underwater-cities-in-a-nature-style,-narrator-storyteller",
+    "https://news.example.com/how-coral-reefs-build-underwater-cities-in-a-nature-style,-narrator-storyteller-report-1",
+    "https://news.example.com/how-coral-reefs-build-underwater-cities-in-a-nature-style,-narrator-storyteller-report-0",
+    "https://doi.org/10.1038/d41586-018-05355-y",
+    "https://arxiv.org/abs/1411.4413v2",
+    "https://arxiv.org/abs/0901.0512v4",
+    "https://youtube.com/watch?v=how-coral-reefs-build-underwater-cities-in-a-nature-style,-narrator-storyteller1"
+  ],
+  "created_at": "2026-07-14T00:28:29.588154+00:00",
+  "version": "1.0.0",
+  "report_markdown": "# Production Quality Report\n\n**Overall Score:** 77\n**Decision:** BLOCK_EXPORT\n\n- Research Accuracy: 78\n- Evidence: 40\n- Visuals: 66\n- Typography: 94\n- Annotations: 100\n- Cinematography: 59\n- Viewer Retention: 83\n- Render Quality: 98\n- Optimization: 98\n- Audio: 84\n- Narration: 73\n- Synchronization: 90\n- Educational Value: 66\n- Psychology: 50\n- SEO: 63\n\n## Platform Ready\n- \u2713 youtube\n- \u2713 youtube_shorts\n- \u2713 tiktok\n- \u2713 instagram_reels\n- \u2713 facebook\n- \u2713 pinterest\n- \u2713 linkedin\n- \u2713 x\n\n## Revision Requests\n- [revision] research_accuracy (78) \u2192 research, citation, critic: No citations present\n- [block] evidence (40) \u2192 evidence_intelligence, visual_intelligence: Real image share only 0.0%\n- [block] visuals (66) \u2192 visual_intelligence, image, asset_manager, studio_render: Visuals scored 66 (< 90)\n- [revision] cinematography (59) \u2192 cinematography, viewer_retention, animation, studio_render: Cinematography scored 59 (< 90)\n- [revision] retention (83) \u2192 viewer_retention, script_generation, cinematography, voice_audio: Viewer Retention scored 83 (< 90)\n- [revision] audio (84) \u2192 voice_audio, voice, narration, viewer_retention: Audio scored 84 (< 90)\n- [revision] narration (73) \u2192 script_generation, narration, script, viewer_retention: Weak opening hook\n- [block] educational_value (66) \u2192 script_generation, critic, psychology: Educational Value scored 66 (< 90)\n- [revision] psychology (50) \u2192 psychology, audience_intelligence, attention_graph, viewer_retention: Psychology score below documentary engagement bar\n- [revision] seo (63) \u2192 seo, seo_optimization: SEO scored 63 (< 90)"
+}

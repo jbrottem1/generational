@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "What if the future of our food is locked away in a vault?",
+    "visual_description": "Hook visual: What if the future of our food is locked away in a vault?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: What if the future of our food is locked away in a vault?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: What if the future of our food is locked away in a vault?",
+    "stock_footage_query": "",
+    "text_overlay": "What if the future",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Seed banks are like time capsules, preserving plant diversity for generations.",
+    "visual_description": "Context visual: Seed banks are like time capsules, preserving plant diversity for generations.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Seed banks are like time capsules, preserving plant diversity for generations.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Seed banks are like time capsules, preserving plant diversity for generations.",
+    "stock_footage_query": "",
+    "text_overlay": "Seed banks are like",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But, did you know many seeds may not stay viable for long?",
+    "visual_description": "Escalation visual: But, did you know many seeds may not stay viable for long?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But, did you know many seeds may not stay viable for long?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But, did you know many seeds may not stay viable for long?",
+    "stock_footage_query": "",
+    "text_overlay": "But, did you know",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Scientists debate how long seeds can truly last, some say decades, others worry about just years.",
+    "visual_description": "Evidence visual: Scientists debate how long seeds can truly last, some say decades, others worry about just years.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Scientists debate how long seeds can truly last, some say decades, others worry about just years.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Scientists debate how long seeds can truly last, some say decades, others worry about just years.",
+    "stock_footage_query": "",
+    "text_overlay": "Scientists debate how long",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "Seed banks hold our agricultural heritage, but questions remain about their effectiveness. Are we doing enough?",
+    "visual_description": "Payoff visual: Seed banks hold our agricultural heritage, but questions remain about their effectiveness. Are we doing enough?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Seed banks hold our agricultural heritage, but questions remain about their effectiveness. Are we doing enough?",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Seed banks hold our agricultural heritage, but questions remain about their effectiveness. Are we doing enough?",
+    "stock_footage_query": "",
+    "text_overlay": "Seed banks hold our",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Want to learn more about how to protect our planet's future? Follow for more insights!",
+    "visual_description": "Cta visual: Want to learn more about how to protect our planet's future? Follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to learn more about how to protect our planet's future? Follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to learn more about how to protect our planet's future? Follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to learn more",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "mock": false,
+  "error": "",
+  "output_path": "data/productions/stick_elephant_toothpaste_001/render.mp4",
+  "absolute_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/stick_elephant_toothpaste_001/render.mp4",
+  "bytes": 8715847,
+  "duration_sec": 55.0,
+  "resolution": "1080x1920",
+  "ffmpeg": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/venv/lib/python3.9/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+  "log": [
+    "scene\u2192clip image_01.png effect=quick_punch_in d=2.00s",
+    "scene\u2192clip image_02.png effect=handheld_drift d=8.00s",
+    "scene\u2192clip image_03.png effect=slow_zoom_out d=8.00s",
+    "scene\u2192clip image_04.png effect=pan_left d=8.00s",
+    "scene\u2192clip image_05.png effect=documentary_slow_zoom d=14.00s",
+    "scene\u2192clip image_06.png effect=cinematic_push_in d=15.00s",
+    "concat_exit=0 scenes=6",
+    "multi_scene\u2192mp4 scenes=6 visuals=6",
+    "ffmpeg_exit=0"
+  ],
+  "visual_count": 6,
+  "has_audio": true,
+  "color_bed": false,
+  "manifest": {
+    "title": "",
+    "format": {
+      "fps": 30,
+      "resolution": {
+        "width": 1080,
+        "height": 1920
+      }
+    },
+    "visuals": [
+      "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/stick_elephant_toothpaste_001/image_01.png",
+      "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/stick_elephant_toothpaste_001/image_02.png",
+      "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/stick_elephant_toothpaste_001/image_03.png",
+      "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/stick_elephant_toothpaste_001/image_04.png",
+      "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/stick_elephant_toothpaste_001/image_05.png",
+      "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/stick_elephant_toothpaste_001/image_06.png"
+    ],
+    "audio": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/productions/stick_elephant_toothpaste_001/voice.mp3",
+    "scene_count": 6
+  }
+}

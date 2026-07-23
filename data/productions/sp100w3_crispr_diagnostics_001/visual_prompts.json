@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Imagine a tool that not only edits genes but can also spot diseases.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: CRISPR, famous for gene editing, is being repurposed for diagnostics.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: Researchers are developing CRISPR systems that detect viruses in minutes.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: These tests could revolutionize how we address outbreaks, but many are still in early stages.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: Imagine diagnosing an illness faster than ever, thanks to CRISPR's precision.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Curious about the future of biotech? Hit follow for more cutting-edge updates!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Imagine a tool that not only edits genes but can also spot diseases.",
+      "duration_sec": 3.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: CRISPR, famous for gene editing, is being repurposed for diagnostics.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: Researchers are developing CRISPR systems that detect viruses in minutes.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: These tests could revolutionize how we address outbreaks, but many are still in early stages.",
+      "duration_sec": 9.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: Imagine diagnosing an illness faster than ever, thanks to CRISPR's precision.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Curious about the future of biotech? Hit follow for more cutting-edge updates!",
+      "duration_sec": 14.0
+    }
+  ]
+}

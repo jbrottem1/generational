@@ -1,0 +1,47 @@
+{
+  "workflow_id": "animation_first_v1",
+  "version": "1.0.0",
+  "department": "Animation Studio",
+  "animation_director": 16,
+  "constraint": "Does not redesign Orchestrator; additive packages and QC only",
+  "stages": [
+    {"id": "script", "existing": true, "owner": 3, "output": "script_package"},
+    {
+      "id": "storyboard",
+      "existing": false,
+      "additive": true,
+      "owner": 16,
+      "output": "storyboard_package",
+      "module": "services.asset_production.storyboard",
+      "required_questions": ["who", "doing", "moving", "camera", "emotion", "transition"]
+    },
+    {"id": "visual_story_plan", "existing": true, "owner": 4, "output": "enriched scenes"},
+    {
+      "id": "animation_direction",
+      "existing": "optional orch stage animation",
+      "additive": true,
+      "owner": 16,
+      "output": "animation_package",
+      "uses": ["library/registry.json", "data/universe/animation/"]
+    },
+    {"id": "asset_generation", "existing": true, "owner": 14},
+    {"id": "voice_audio", "existing": true, "owner": 5},
+    {"id": "cinematic_assembly", "existing": true, "owner": 6},
+    {"id": "production_qc", "existing": true, "owner": 17},
+    {
+      "id": "animation_qc",
+      "existing": false,
+      "additive": true,
+      "owner": 16,
+      "enforcer": 17,
+      "module": "services.asset_production.animation_qc",
+      "wired_into": "asset_production quality stage"
+    },
+    {"id": "export", "existing": true, "owner": 9}
+  ],
+  "retention": {
+    "beat_change_sec": [2.0, 4.0],
+    "max_static_frame_sec": 3.0,
+    "host_on_screen_min_ratio": 0.7
+  }
+}

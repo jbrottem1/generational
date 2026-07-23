@@ -1,0 +1,232 @@
+{
+  "run_index": 3,
+  "topic": "Why Octopuses Are So Intelligent",
+  "asset_id": "rc1_octopuses_001",
+  "runtime_sec": 17.3,
+  "production_ok": true,
+  "production_error": "",
+  "certification_success": true,
+  "core_stages_ok": true,
+  "core_stages_completed": true,
+  "qc_score": 100,
+  "qc_passed": true,
+  "retry_count_total": 0,
+  "failed_stages": [],
+  "recovery_events": [],
+  "stages": [
+    {
+      "stage": "idea",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 0,
+      "artifacts": [
+        "data/productions/rc1_octopuses_001/idea.json"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "script",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 9.427,
+      "artifacts": [
+        "data/productions/rc1_octopuses_001/script.json"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "scenes",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 0.001,
+      "artifacts": [
+        "data/productions/rc1_octopuses_001/scenes.json"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "visual_prompts",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 0,
+      "artifacts": [
+        "data/productions/rc1_octopuses_001/visual_prompts.json"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "images",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 0.054,
+      "artifacts": [
+        "data/productions/rc1_octopuses_001/images.json"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "video_clips",
+      "status": "skipped",
+      "retry_count": 0,
+      "execution_time_sec": 0,
+      "artifacts": [
+        "data/productions/rc1_octopuses_001/video_clips.json"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "voice",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 6.609,
+      "artifacts": [
+        "data/productions/rc1_octopuses_001/voice.json",
+        "data/productions/rc1_octopuses_001/voice.mp3"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "music",
+      "status": "skipped",
+      "retry_count": 0,
+      "execution_time_sec": 0,
+      "artifacts": [
+        "data/productions/rc1_octopuses_001/music.json"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "sfx",
+      "status": "skipped",
+      "retry_count": 0,
+      "execution_time_sec": 0,
+      "artifacts": [
+        "data/productions/rc1_octopuses_001/sfx.json"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "captions",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 0,
+      "artifacts": [
+        "data/productions/rc1_octopuses_001/captions.srt",
+        "data/productions/rc1_octopuses_001/captions.json"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "timeline",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 0,
+      "artifacts": [
+        "data/productions/rc1_octopuses_001/timeline.json"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "render",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 1.203,
+      "artifacts": [
+        "data/productions/rc1_octopuses_001/render_package.json",
+        "data/productions/rc1_octopuses_001/render.mp4"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "quality",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 0.001,
+      "artifacts": [
+        "data/productions/rc1_octopuses_001/production_report.json"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "export",
+      "status": "completed",
+      "retry_count": 0,
+      "execution_time_sec": 0.001,
+      "artifacts": [
+        "data/productions/rc1_octopuses_001/metadata.json",
+        "data/productions/rc1_octopuses_001/render.mp4",
+        "data/productions/rc1_octopuses_001/export_manifest.json"
+      ],
+      "error": ""
+    },
+    {
+      "stage": "publish",
+      "status": "skipped",
+      "retry_count": 0,
+      "execution_time_sec": 0,
+      "artifacts": [
+        "data/productions/rc1_octopuses_001/publish_package.json"
+      ],
+      "error": ""
+    }
+  ],
+  "apis_called": [
+    "openai_chat",
+    "openai_tts"
+  ],
+  "cost": {
+    "estimated_cost_usd": 0.0171,
+    "breakdown": {
+      "openai_tts_usd": 0.0071,
+      "openai_chat_usd": 0.01,
+      "openai_images_usd": 0.0
+    },
+    "note": "Estimate from public list prices; ledger may be empty for direct connectors."
+  },
+  "mp4_path": "data/productions/rc1_octopuses_001/render.mp4",
+  "mp4_bytes": 373185,
+  "mock_render": false,
+  "voice_path": "data/productions/rc1_octopuses_001/voice.mp3",
+  "captions": "data/productions/rc1_octopuses_001/captions.srt",
+  "thumbnail": "",
+  "artifacts": {
+    "present": [
+      "idea.json",
+      "script.json",
+      "scenes.json",
+      "visual_prompts.json",
+      "voice.mp3",
+      "captions.srt",
+      "timeline.json",
+      "render.mp4",
+      "metadata.json",
+      "production_report.json"
+    ],
+    "missing": [],
+    "files": [
+      "data/productions/rc1_octopuses_001/captions.json",
+      "data/productions/rc1_octopuses_001/captions.srt",
+      "data/productions/rc1_octopuses_001/export_manifest.json",
+      "data/productions/rc1_octopuses_001/idea.json",
+      "data/productions/rc1_octopuses_001/images.json",
+      "data/productions/rc1_octopuses_001/metadata.json",
+      "data/productions/rc1_octopuses_001/music.json",
+      "data/productions/rc1_octopuses_001/production_report.json",
+      "data/productions/rc1_octopuses_001/publish_package.json",
+      "data/productions/rc1_octopuses_001/render.assembly.json",
+      "data/productions/rc1_octopuses_001/render.mp4",
+      "data/productions/rc1_octopuses_001/render_package.json",
+      "data/productions/rc1_octopuses_001/scenes.json",
+      "data/productions/rc1_octopuses_001/script.json",
+      "data/productions/rc1_octopuses_001/sfx.json",
+      "data/productions/rc1_octopuses_001/timeline.json",
+      "data/productions/rc1_octopuses_001/video_clips.json",
+      "data/productions/rc1_octopuses_001/visual_prompts.json",
+      "data/productions/rc1_octopuses_001/voice.json",
+      "data/productions/rc1_octopuses_001/voice.mp3"
+    ],
+    "file_count": 20
+  },
+  "progress_event_count": 50,
+  "publish_status": "awaiting_oauth"
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Molecular Mimicry Explained",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "An intriguing look at molecular mimicry and its implications in science.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about molecular mimicry.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Molecular mimicry is when one molecule resembles another, tricking the immune system.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "This can lead to autoimmune diseases when the body attacks itself, mistaking its own cells for invaders.",
+      "emotion": "curiosity",
+      "delivery": "concerned",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show links between infections and autoimmune disorders, but research is ongoing.",
+      "emotion": "curiosity",
+      "delivery": "insightful",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "Understanding this could revolutionize how we treat these diseases.",
+      "emotion": "hopeful",
+      "delivery": "inspiring",
+      "retention_device": "strong payoff"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into science? Like and follow for more intriguing insights!",
+      "emotion": "curiosity",
+      "delivery": "encouraging",
+      "retention_device": "engagement prompt"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about molecular mimicry. Molecular mimicry is when one molecule resembles another, tricking the immune system. This can lead to autoimmune diseases when the body attacks itself, mistaking its own cells for invaders. Studies show links between infections and autoimmune disorders, but research is ongoing. Understanding this could revolutionize how we treat these diseases. Want to dive deeper into science? Like and follow for more intriguing insights!",
+  "call_to_action": "Like and follow for more intriguing insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:30:10.504258+00:00",
+  "source": "ai"
+}

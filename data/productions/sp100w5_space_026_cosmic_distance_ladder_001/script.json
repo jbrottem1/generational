@@ -1,0 +1,74 @@
+{
+  "title": "Cosmic Distance Ladder",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Explains the cosmic distance ladder and its significance in understanding the universe.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science tells a clearer story about the cosmos than social media ever will.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "The cosmic distance ladder measures distances in space, using a series of methods, each building on the previous one.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "questions"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "First, we use parallax to gauge nearby stars. But what about those millions of light-years away?",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Next, we rely on standard candles, like Cepheid variables, to measure further distances. They light the way!",
+      "emotion": "curiosity",
+      "delivery": "exciting",
+      "retention_device": "visualization prompt"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "payoff",
+      "voiceover": "Each rung of the ladder leads us to understanding galaxies, dark energy, and the universe\u2019s expansion. But uncertainty lurks.",
+      "emotion": "curiosity",
+      "delivery": "dramatic",
+      "retention_device": "cliffhanger"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to dive deeper into the mysteries of the universe? Like and follow for more cosmic insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "encouragement"
+    }
+  ],
+  "full_voiceover": "Science tells a clearer story about the cosmos than social media ever will. The cosmic distance ladder measures distances in space, using a series of methods, each building on the previous one. First, we use parallax to gauge nearby stars. But what about those millions of light-years away? Next, we rely on standard candles, like Cepheid variables, to measure further distances. They light the way! Each rung of the ladder leads us to understanding galaxies, dark energy, and the universe\u2019s expansion. But uncertainty lurks. Want to dive deeper into the mysteries of the universe? Like and follow for more cosmic insights!",
+  "call_to_action": "Like and follow for more cosmic insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:36:39.748147+00:00",
+  "source": "ai"
+}

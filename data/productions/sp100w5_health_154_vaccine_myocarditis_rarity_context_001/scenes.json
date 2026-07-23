@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about vaccine myocarditis than social media.",
+    "visual_description": "Hook visual: Science has a clearer story about vaccine myocarditis than social media.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about vaccine myocarditis than social media.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about vaccine myocarditis than social media.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Vaccine myocarditis is rare, especially compared to the risk of COVID-19.",
+    "visual_description": "Context visual: Vaccine myocarditis is rare, especially compared to the risk of COVID-19.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Vaccine myocarditis is rare, especially compared to the risk of COVID-19.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Vaccine myocarditis is rare, especially compared to the risk of COVID-19.",
+    "stock_footage_query": "",
+    "text_overlay": "Vaccine myocarditis is rare,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Data shows higher rates in young males, but cases are still infrequent.",
+    "visual_description": "Escalation visual: Data shows higher rates in young males, but cases are still infrequent.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Data shows higher rates in young males, but cases are still infrequent.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Data shows higher rates in young males, but cases are still infrequent.",
+    "stock_footage_query": "",
+    "text_overlay": "Data shows higher rates",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Studies reveal myocarditis rates are much lower than risks of severe COVID.",
+    "visual_description": "Evidence visual: Studies reveal myocarditis rates are much lower than risks of severe COVID.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies reveal myocarditis rates are much lower than risks of severe COVID.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies reveal myocarditis rates are much lower than risks of severe COVID.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies reveal myocarditis rates",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "Informed choices protect us. Understanding risks empowers us.",
+    "visual_description": "Payoff visual: Informed choices protect us. Understanding risks empowers us.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Informed choices protect us. Understanding risks empowers us.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Informed choices protect us. Understanding risks empowers us.",
+    "stock_footage_query": "",
+    "text_overlay": "Informed choices protect us.",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "Stay curious. Follow for more science insights!",
+    "visual_description": "Cta visual: Stay curious. Follow for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Stay curious. Follow for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Stay curious. Follow for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Stay curious. Follow for",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

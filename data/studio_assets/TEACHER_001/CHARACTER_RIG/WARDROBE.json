@@ -1,0 +1,47 @@
+{
+  "character_id": "TEACHER_001",
+  "architecture": "clothing_separated_from_body",
+  "default_outfit": "classroom_attire",
+  "outfits": [
+    {
+      "id": "classroom_attire",
+      "layers": [
+        "base_garment",
+        "classroom_attire"
+      ],
+      "separated_from_body": true,
+      "cloth_sim": true
+    },
+    {
+      "id": "field_trip_layers",
+      "layers": [
+        "base_garment",
+        "field_trip_layers"
+      ],
+      "separated_from_body": true,
+      "cloth_sim": true
+    }
+  ],
+  "outfit_ids": [
+    "classroom_attire",
+    "field_trip_layers"
+  ],
+  "simulate_as_fabric": true,
+  "responds_to": [
+    "walk",
+    "run",
+    "arm_move",
+    "sit",
+    "wind",
+    "gravity",
+    "turn"
+  ],
+  "forbid": [
+    "frozen_fabric",
+    "fabric_leads_body",
+    "limb_clipping"
+  ],
+  "inheritable_architecture": true,
+  "existing_ref": null,
+  "reusable": true
+}

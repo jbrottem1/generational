@@ -1,0 +1,74 @@
+{
+  "title": "Fine Tuning vs Prompting",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "This script explores the scientific distinctions between fine tuning and prompting in AI, revealing their implications.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Science has a clearer story than you think.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Fine tuning adjusts models to perform better on specific tasks, while prompting guides them with specific inputs.",
+      "emotion": "curiosity",
+      "delivery": "engaging and informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Imagine fine tuning as setting the stage, while prompting sparks the action.",
+      "emotion": "curiosity",
+      "delivery": "building suspense",
+      "retention_device": "visual contrast"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show fine-tuned models can exceed original capabilities, yet prompting can unleash unexpected creativity.",
+      "emotion": "curiosity",
+      "delivery": "assertive and impactful",
+      "retention_device": "statistical reveal"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Both methods are crucial, but understanding their roles can redefine how we interact with AI.",
+      "emotion": "curiosity",
+      "delivery": "resolute and enlightening",
+      "retention_device": "takeaway insight"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about AI's evolution? Like and subscribe for more insights!",
+      "emotion": "curiosity",
+      "delivery": "enthusiastic and inviting",
+      "retention_device": "future engagement"
+    }
+  ],
+  "full_voiceover": "Science has a clearer story than you think. Fine tuning adjusts models to perform better on specific tasks, while prompting guides them with specific inputs. Imagine fine tuning as setting the stage, while prompting sparks the action. Studies show fine-tuned models can exceed original capabilities, yet prompting can unleash unexpected creativity. Both methods are crucial, but understanding their roles can redefine how we interact with AI. Curious about AI's evolution? Like and subscribe for more insights!",
+  "call_to_action": "Like and subscribe for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:48:32.023780+00:00",
+  "source": "ai"
+}

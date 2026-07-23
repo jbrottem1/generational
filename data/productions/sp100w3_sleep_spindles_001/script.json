@@ -1,0 +1,74 @@
+{
+  "title": "Sleep Spindles and Memory",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the connection between sleep spindles and memory consolidation.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Did you know your brain is super active while you sleep?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "These bursts of activity, called sleep spindles, are crucial for memory.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "curiosity gap"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Recent studies suggest they help strengthen what we learn while awake.",
+      "emotion": "curiosity",
+      "delivery": "building intrigue",
+      "retention_device": "pattern interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Research shows a clear link: more sleep spindles equal better memory retention.",
+      "emotion": "curiosity",
+      "delivery": "evidence-based",
+      "retention_device": "surprise factor"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "Imagine harnessing this power for learning!",
+      "emotion": "curiosity",
+      "delivery": "excited",
+      "retention_device": "engagement"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Want to boost your memory? Prioritize your sleep! Follow for more insights.",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "call to action"
+    }
+  ],
+  "full_voiceover": "Did you know your brain is super active while you sleep? These bursts of activity, called sleep spindles, are crucial for memory. Recent studies suggest they help strengthen what we learn while awake. Research shows a clear link: more sleep spindles equal better memory retention. Imagine harnessing this power for learning! Want to boost your memory? Prioritize your sleep! Follow for more insights.",
+  "call_to_action": "Follow for more insights.",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:10:33.254415+00:00",
+  "source": "ai"
+}

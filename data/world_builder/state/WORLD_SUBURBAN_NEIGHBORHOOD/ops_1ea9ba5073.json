@@ -1,0 +1,184 @@
+{
+  "world_id": "WORLD_SUBURBAN_NEIGHBORHOOD",
+  "production_id": "ops_1ea9ba5073",
+  "object_positions": {
+    "hydrant_red": {
+      "position": {},
+      "zone": "street_corner",
+      "surface": "floor",
+      "anchored": true
+    },
+    "hydrant_yellow": {
+      "position": {},
+      "zone": "street_corner",
+      "surface": "floor",
+      "anchored": true
+    },
+    "hydrant_green": {
+      "position": {},
+      "zone": "sidewalk_hydrant",
+      "surface": "floor",
+      "anchored": true
+    },
+    "hydrant_blue": {
+      "position": {},
+      "zone": "park_edge",
+      "surface": "floor",
+      "anchored": true
+    },
+    "sidewalk": {
+      "position": {},
+      "zone": "sidewalk_hydrant",
+      "surface": "floor",
+      "anchored": true
+    },
+    "trees": {
+      "position": {},
+      "zone": "street_corner",
+      "surface": "floor",
+      "anchored": true
+    },
+    "park": {
+      "position": {},
+      "zone": "park_edge",
+      "surface": "floor",
+      "anchored": true
+    },
+    "fire_station": {
+      "position": {},
+      "zone": "fire_station",
+      "surface": "floor",
+      "anchored": true
+    },
+    "utility_marks": {
+      "position": {},
+      "zone": "utility_map",
+      "surface": "floor",
+      "anchored": true
+    }
+  },
+  "environment_state": {
+    "architecture": [
+      "single-family houses",
+      "concrete sidewalks",
+      "asphalt residential street",
+      "neighborhood park",
+      "municipal fire station facade"
+    ],
+    "scale": "neighborhood",
+    "zones": [
+      "street_corner",
+      "sidewalk_hydrant",
+      "park_edge",
+      "fire_station",
+      "utility_map"
+    ]
+  },
+  "time_of_day": "day",
+  "weather": "clear mild day",
+  "damage": {},
+  "introduced_objects": [],
+  "visited_zones": [
+    "street_corner",
+    "sidewalk_hydrant",
+    "park_edge",
+    "fire_station",
+    "utility_map"
+  ],
+  "doors": {},
+  "displays": {},
+  "characters_present": [
+    "talent"
+  ],
+  "events": [
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T13:29:12.671162+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "street_corner"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T13:29:12.727571+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "sidewalk_hydrant"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T13:29:12.780882+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "park_edge"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T13:29:12.835670+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "fire_station"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T13:29:12.889132+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "utility_map"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T13:29:12.943374+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "street_corner"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T13:29:12.996341+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "sidewalk_hydrant"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T13:29:13.049331+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "park_edge"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T13:29:13.102565+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "fire_station"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T13:29:13.155647+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "utility_map"
+      }
+    },
+    {
+      "type": "character_entered",
+      "at": "2026-07-14T13:29:13.208695+00:00",
+      "payload": {
+        "character": "talent",
+        "zone": "street_corner"
+      }
+    }
+  ],
+  "version": 12
+}

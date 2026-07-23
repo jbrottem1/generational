@@ -1,0 +1,47 @@
+{
+  "character_id": "NURSE_001",
+  "architecture": "clothing_separated_from_body",
+  "default_outfit": "clinical_scrubs",
+  "outfits": [
+    {
+      "id": "clinical_scrubs",
+      "layers": [
+        "scrubs_top",
+        "scrubs_bottom"
+      ],
+      "separated_from_body": true,
+      "cloth_sim": true
+    },
+    {
+      "id": "education_coat",
+      "layers": [
+        "base_garment",
+        "education_coat"
+      ],
+      "separated_from_body": true,
+      "cloth_sim": true
+    }
+  ],
+  "outfit_ids": [
+    "clinical_scrubs",
+    "education_coat"
+  ],
+  "simulate_as_fabric": true,
+  "responds_to": [
+    "walk",
+    "run",
+    "arm_move",
+    "sit",
+    "wind",
+    "gravity",
+    "turn"
+  ],
+  "forbid": [
+    "frozen_fabric",
+    "fabric_leads_body",
+    "limb_clipping"
+  ],
+  "inheritable_architecture": true,
+  "existing_ref": null,
+  "reusable": true
+}

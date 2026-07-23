@@ -1,0 +1,174 @@
+{
+  "world_id": "WORLD-OCEAN-RESEARCH",
+  "elements_required": [
+    "floor",
+    "walls",
+    "ceilings",
+    "doors",
+    "windows",
+    "furniture",
+    "props"
+  ],
+  "dimensions_m": {
+    "x": 16.0,
+    "y": 5.0,
+    "z": 14.0
+  },
+  "floor": [
+    {
+      "id": "main_floor",
+      "bounds": [
+        [
+          -8.0,
+          0,
+          -7.0
+        ],
+        [
+          8.0,
+          0,
+          7.0
+        ]
+      ],
+      "walkable": true,
+      "material": "interior_floor"
+    }
+  ],
+  "walls": [
+    {
+      "id": "wall_n",
+      "plane": "north",
+      "openings": [
+        "window_n"
+      ]
+    },
+    {
+      "id": "wall_s",
+      "plane": "south",
+      "openings": [
+        "door_main"
+      ]
+    },
+    {
+      "id": "wall_e",
+      "plane": "east",
+      "openings": []
+    },
+    {
+      "id": "wall_w",
+      "plane": "west",
+      "openings": [
+        "window_w"
+      ]
+    }
+  ],
+  "ceilings": [
+    {
+      "id": "main_ceiling",
+      "height_m": 5.0,
+      "material": "acoustic_or_structural"
+    }
+  ],
+  "doors": [
+    {
+      "id": "door_main",
+      "position": [
+        0.0,
+        0.0,
+        -6.9
+      ],
+      "swing": "inward",
+      "interactable": true
+    }
+  ],
+  "windows": [
+    {
+      "id": "window_n",
+      "position": [
+        0.0,
+        2.75,
+        6.95
+      ]
+    },
+    {
+      "id": "window_w",
+      "position": [
+        -7.95,
+        2.75,
+        0.0
+      ]
+    }
+  ],
+  "furniture": [
+    {
+      "id": "furn_observation_bench_0",
+      "type": "bench",
+      "position": [
+        -4.0,
+        0.0,
+        -2.1
+      ],
+      "collision": true,
+      "navigable_around": true
+    },
+    {
+      "id": "furn_instrument_console_1",
+      "type": "console",
+      "position": [
+        -0.7999999999999998,
+        0.0,
+        -2.1
+      ],
+      "collision": true,
+      "navigable_around": true
+    }
+  ],
+  "props": [
+    {
+      "id": "prop_console_0",
+      "type": "console",
+      "position": [
+        -4.0,
+        0.0,
+        -0.9000000000000001
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_door_1",
+      "type": "door",
+      "position": [
+        -0.7999999999999998,
+        0.0,
+        -0.9000000000000001
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_specimen_tray_2",
+      "type": "specimen_tray",
+      "position": [
+        2.4000000000000004,
+        0.0,
+        -0.9000000000000001
+      ],
+      "collision": true,
+      "interactable": true
+    },
+    {
+      "id": "prop_binocular_station_3",
+      "type": "binocular_station",
+      "position": [
+        -4.0,
+        0.0,
+        0.4999999999999998
+      ],
+      "collision": true,
+      "interactable": true
+    }
+  ],
+  "not_a_flat_image": true,
+  "explorable_volume": true,
+  "persistent": true
+}

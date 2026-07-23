@@ -1,0 +1,74 @@
+{
+  "title": "Iron Hemoglobin",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the critical role of iron in hemoglobin and its significance in human health.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Here's what science actually says about iron hemoglobin.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "Hemoglobin is the protein in red blood cells transporting oxygen. But did you know iron is its secret weapon?",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Without iron, hemoglobin can't bind oxygen. Low iron means low oxygen in your body's cells.",
+      "emotion": "concern",
+      "delivery": "urgent",
+      "retention_device": "visual cue"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "Studies show iron deficiency can lead to fatigue, weakness, and even cognitive issues. Crazy, right?",
+      "emotion": "surprise",
+      "delivery": "emphatic",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "So, ensuring adequate iron intake is vital for your health. What\u2019s your iron source?",
+      "emotion": "empowerment",
+      "delivery": "inspiring",
+      "retention_device": "call to action"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Like and follow for more fascinating science insights!",
+      "emotion": "inviting",
+      "delivery": "cheerful",
+      "retention_device": "direct appeal"
+    }
+  ],
+  "full_voiceover": "Here's what science actually says about iron hemoglobin. Hemoglobin is the protein in red blood cells transporting oxygen. But did you know iron is its secret weapon? Without iron, hemoglobin can't bind oxygen. Low iron means low oxygen in your body's cells. Studies show iron deficiency can lead to fatigue, weakness, and even cognitive issues. Crazy, right? So, ensuring adequate iron intake is vital for your health. What\u2019s your iron source? Like and follow for more fascinating science insights!",
+  "call_to_action": "Like and follow for more fascinating science insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:17:38.178083+00:00",
+  "source": "ai"
+}

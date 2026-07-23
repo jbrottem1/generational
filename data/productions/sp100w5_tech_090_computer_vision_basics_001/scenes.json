@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science tells a clearer story about computer vision than social media ever could.",
+    "visual_description": "Hook visual: Science tells a clearer story about computer vision than social media ever could.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science tells a clearer story about computer vision than social media ever could.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science tells a clearer story about computer vision than social media ever could.",
+    "stock_footage_query": "",
+    "text_overlay": "Science tells a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Computer vision is how machines interpret images, mimicking human sight.",
+    "visual_description": "Context visual: Computer vision is how machines interpret images, mimicking human sight.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Computer vision is how machines interpret images, mimicking human sight.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Computer vision is how machines interpret images, mimicking human sight.",
+    "stock_footage_query": "",
+    "text_overlay": "Computer vision is how",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "It uses algorithms to analyze pixels, recognizing patterns and objects.",
+    "visual_description": "Escalation visual: It uses algorithms to analyze pixels, recognizing patterns and objects.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: It uses algorithms to analyze pixels, recognizing patterns and objects.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: It uses algorithms to analyze pixels, recognizing patterns and objects.",
+    "stock_footage_query": "",
+    "text_overlay": "It uses algorithms to",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "From self-driving cars to facial recognition, its applications are vast.",
+    "visual_description": "Evidence visual: From self-driving cars to facial recognition, its applications are vast.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: From self-driving cars to facial recognition, its applications are vast.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: From self-driving cars to facial recognition, its applications are vast.",
+    "stock_footage_query": "",
+    "text_overlay": "From self-driving cars to",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Yet, uncertainty remains in understanding context, emotions, and intent.",
+    "visual_description": "Payoff visual: Yet, uncertainty remains in understanding context, emotions, and intent.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Yet, uncertainty remains in understanding context, emotions, and intent.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Yet, uncertainty remains in understanding context, emotions, and intent.",
+    "stock_footage_query": "",
+    "text_overlay": "Yet, uncertainty remains in",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "What if machines could see and feel like us? Imagine the possibilities.",
+    "visual_description": "Pattern Interrupt visual: What if machines could see and feel like us? Imagine the possibilities.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: What if machines could see and feel like us? Imagine the possibilities.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: What if machines could see and feel like us? Imagine the possibilities.",
+    "stock_footage_query": "",
+    "text_overlay": "What if machines could",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Curious about the future of computer vision? Follow for more insights!",
+    "visual_description": "Cta visual: Curious about the future of computer vision? Follow for more insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about the future of computer vision? Follow for more insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about the future of computer vision? Follow for more insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about the future",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

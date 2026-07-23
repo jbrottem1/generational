@@ -1,0 +1,98 @@
+{
+  "version": "1.0.0",
+  "universe": "Generational",
+  "worlds": [
+    {
+      "world_id": "WORLD-GMRI-MEDICAL-LAB",
+      "display_name": "Generational Medical Lab",
+      "location_alias": "LOC-GMRI",
+      "persistent": true,
+      "world_package_ref": "data/world_simulation/library/WORLD-GMRI-MEDICAL-LAB/WORLD_PACKAGE.json",
+      "validation_ok": true,
+      "do_not_use_flat_photo_backdrop": true
+    },
+    {
+      "world_id": "WORLD-LECTURE-HALL",
+      "display_name": "Lecture Hall",
+      "location_alias": "LOC-LECTURE-HALL",
+      "persistent": true,
+      "world_package_ref": "data/world_simulation/library/WORLD-LECTURE-HALL/WORLD_PACKAGE.json",
+      "validation_ok": true,
+      "do_not_use_flat_photo_backdrop": true
+    },
+    {
+      "world_id": "WORLD-SCIENCE-MUSEUM",
+      "display_name": "Science Museum",
+      "location_alias": "LOC-SCIENCE-MUSEUM",
+      "persistent": true,
+      "world_package_ref": "data/world_simulation/library/WORLD-SCIENCE-MUSEUM/WORLD_PACKAGE.json",
+      "validation_ok": true,
+      "do_not_use_flat_photo_backdrop": true
+    },
+    {
+      "world_id": "WORLD-LIBRARY",
+      "display_name": "Library",
+      "location_alias": "LOC-ANCIENT-LIBRARY",
+      "persistent": true,
+      "world_package_ref": "data/world_simulation/library/WORLD-LIBRARY/WORLD_PACKAGE.json",
+      "validation_ok": true,
+      "do_not_use_flat_photo_backdrop": true
+    },
+    {
+      "world_id": "WORLD-FOREST",
+      "display_name": "Forest",
+      "location_alias": "LOC-FOREST",
+      "persistent": true,
+      "world_package_ref": "data/world_simulation/library/WORLD-FOREST/WORLD_PACKAGE.json",
+      "validation_ok": true,
+      "do_not_use_flat_photo_backdrop": true
+    },
+    {
+      "world_id": "WORLD-CITY-PARK",
+      "display_name": "City Park",
+      "location_alias": "LOC-CITY-PARK",
+      "persistent": true,
+      "world_package_ref": "data/world_simulation/library/WORLD-CITY-PARK/WORLD_PACKAGE.json",
+      "validation_ok": true,
+      "do_not_use_flat_photo_backdrop": true
+    },
+    {
+      "world_id": "WORLD-SPACE-STATION",
+      "display_name": "Space Station",
+      "location_alias": "LOC-SPACE-STATION",
+      "persistent": true,
+      "world_package_ref": "data/world_simulation/library/WORLD-SPACE-STATION/WORLD_PACKAGE.json",
+      "validation_ok": true,
+      "do_not_use_flat_photo_backdrop": true
+    },
+    {
+      "world_id": "WORLD-HOSPITAL",
+      "display_name": "Hospital",
+      "location_alias": "LOC-HOSPITAL",
+      "persistent": true,
+      "world_package_ref": "data/world_simulation/library/WORLD-HOSPITAL/WORLD_PACKAGE.json",
+      "validation_ok": true,
+      "do_not_use_flat_photo_backdrop": true
+    },
+    {
+      "world_id": "WORLD-CLASSROOM",
+      "display_name": "Classroom",
+      "location_alias": "LOC-CLASSROOM",
+      "persistent": true,
+      "world_package_ref": "data/world_simulation/library/WORLD-CLASSROOM/WORLD_PACKAGE.json",
+      "validation_ok": true,
+      "do_not_use_flat_photo_backdrop": true
+    },
+    {
+      "world_id": "WORLD-OCEAN-RESEARCH",
+      "display_name": "Ocean Research Center",
+      "location_alias": "LOC-OCEAN-OBSERVATORY",
+      "persistent": true,
+      "world_package_ref": "data/world_simulation/library/WORLD-OCEAN-RESEARCH/WORLD_PACKAGE.json",
+      "validation_ok": true,
+      "do_not_use_flat_photo_backdrop": true
+    }
+  ],
+  "rule": "Every scene takes place inside a persistent world.",
+  "count": 10
+}

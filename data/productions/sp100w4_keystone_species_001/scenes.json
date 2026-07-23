@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Some species punch above their weight \u2014 remove them and ecosystems unravel.",
+    "visual_description": "Hook visual: Some species punch above their weight \u2014 remove them and ecosystems unravel.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Some species punch above their weight \u2014 remove them and ecosystems unravel.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Some species punch above their weight \u2014 remove them and ecosystems unravel.",
+    "stock_footage_query": "",
+    "text_overlay": "Some species punch above",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "These are called keystone species, vital to their habitats\u2019 health.",
+    "visual_description": "Context visual: These are called keystone species, vital to their habitats\u2019 health.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: These are called keystone species, vital to their habitats\u2019 health.",
+    "ai_video_prompt": "Cinematic motion: Context visual: These are called keystone species, vital to their habitats\u2019 health.",
+    "stock_footage_query": "",
+    "text_overlay": "These are called keystone",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Take the sea otter; without it, urchin populations explode and kelp forests vanish.",
+    "visual_description": "Escalation visual: Take the sea otter; without it, urchin populations explode and kelp forests vanish.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Take the sea otter; without it, urchin populations explode and kelp forests vanish.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Take the sea otter; without it, urchin populations explode and kelp forests vanish.",
+    "stock_footage_query": "",
+    "text_overlay": "Take the sea otter;",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Or consider wolves in Yellowstone. Their presence balances elk populations, promoting plant diversity.",
+    "visual_description": "Evidence visual: Or consider wolves in Yellowstone. Their presence balances elk populations, promoting plant diversity.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Or consider wolves in Yellowstone. Their presence balances elk populations, promoting plant diversity.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Or consider wolves in Yellowstone. Their presence balances elk populations, promoting plant diversity.",
+    "stock_footage_query": "",
+    "text_overlay": "Or consider wolves in",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Removing keystone species can lead to domino effects, collapsing entire ecosystems.",
+    "visual_description": "Payoff visual: Removing keystone species can lead to domino effects, collapsing entire ecosystems.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Removing keystone species can lead to domino effects, collapsing entire ecosystems.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Removing keystone species can lead to domino effects, collapsing entire ecosystems.",
+    "stock_footage_query": "",
+    "text_overlay": "Removing keystone species can",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "But it\u2019s not just about animals. Plants can be keystone too. Think of the mighty fig tree, supporting countless species.",
+    "visual_description": "Pattern Interrupt visual: But it\u2019s not just about animals. Plants can be keystone too. Think of the mighty fig tree, supporting countless species.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: But it\u2019s not just about animals. Plants can be keystone too. Think of the mighty fig tree, supporting countless species.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: But it\u2019s not just about animals. Plants can be keystone too. Think of the mighty fig tree, supporting countless species.",
+    "stock_footage_query": "",
+    "text_overlay": "But it\u2019s not just",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Curious about more ecological wonders? Hit that follow button!",
+    "visual_description": "Cta visual: Curious about more ecological wonders? Hit that follow button!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more ecological wonders? Hit that follow button!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more ecological wonders? Hit that follow button!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more ecological",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

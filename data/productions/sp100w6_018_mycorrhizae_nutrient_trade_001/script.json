@@ -1,0 +1,84 @@
+{
+  "title": "Mycorrhizae Nutrient Trade",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the fascinating and complex nutrient exchange between mycorrhizae and plants.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Did you know plants have their own secret trade network?",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "It's called mycorrhizae, a partnership between fungi and plant roots.",
+      "emotion": "curiosity",
+      "delivery": "informative",
+      "retention_device": "question"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "These fungi extend roots, increasing water and nutrient absorption.",
+      "emotion": "curiosity",
+      "delivery": "engaging",
+      "retention_device": "visual cue"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "In return, plants share sugars produced during photosynthesis.",
+      "emotion": "curiosity",
+      "delivery": "factual",
+      "retention_device": "surprising fact"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 38.0,
+      "segment_type": "pattern_interrupt",
+      "voiceover": "But what happens when this trade goes wrong?",
+      "emotion": "curiosity",
+      "delivery": "intriguing",
+      "retention_device": "open question"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 38.0,
+      "end_time": 50.0,
+      "segment_type": "payoff",
+      "voiceover": "Unhealthy soils or pollution can disrupt this balance, affecting plant health.",
+      "emotion": "concern",
+      "delivery": "serious",
+      "retention_device": "reveal"
+    },
+    {
+      "segment_number": 7,
+      "start_time": 50.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious to learn more about nature's secrets? Hit subscribe!",
+      "emotion": "inviting",
+      "delivery": "enthusiastic",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "Did you know plants have their own secret trade network? It's called mycorrhizae, a partnership between fungi and plant roots. These fungi extend roots, increasing water and nutrient absorption. In return, plants share sugars produced during photosynthesis. But what happens when this trade goes wrong? Unhealthy soils or pollution can disrupt this balance, affecting plant health. Curious to learn more about nature's secrets? Hit subscribe!",
+  "call_to_action": "Curious to learn more about nature's secrets? Hit subscribe!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:59:39.046114+00:00",
+  "source": "ai"
+}

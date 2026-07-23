@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Ink is a smoke screen \u2014 and sometimes a decoy \u2014 for escape.",
+    "visual_description": "Hook visual: Ink is a smoke screen \u2014 and sometimes a decoy \u2014 for escape.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ink is a smoke screen \u2014 and sometimes a decoy \u2014 for escape.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ink is a smoke screen \u2014 and sometimes a decoy \u2014 for escape.",
+    "stock_footage_query": "",
+    "text_overlay": "Ink is a smoke",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Octopuses face predators like sharks and eels. Their ink gives them a fighting chance.",
+    "visual_description": "Context visual: Octopuses face predators like sharks and eels. Their ink gives them a fighting chance.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Octopuses face predators like sharks and eels. Their ink gives them a fighting chance.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Octopuses face predators like sharks and eels. Their ink gives them a fighting chance.",
+    "stock_footage_query": "",
+    "text_overlay": "Octopuses face predators like",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "When threatened, they release ink that clouds the water.",
+    "visual_description": "Escalation visual: When threatened, they release ink that clouds the water.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: When threatened, they release ink that clouds the water.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: When threatened, they release ink that clouds the water.",
+    "stock_footage_query": "",
+    "text_overlay": "When threatened, they release",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This ink contains a chemical that can even dull a predator\u2019s sense of smell.",
+    "visual_description": "Evidence visual: This ink contains a chemical that can even dull a predator\u2019s sense of smell.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: This ink contains a chemical that can even dull a predator\u2019s sense of smell.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: This ink contains a chemical that can even dull a predator\u2019s sense of smell.",
+    "stock_footage_query": "",
+    "text_overlay": "This ink contains a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "It's not just a getaway tactic; it can also confuse attackers, allowing for a clean escape.",
+    "visual_description": "Payoff visual: It's not just a getaway tactic; it can also confuse attackers, allowing for a clean escape.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: It's not just a getaway tactic; it can also confuse attackers, allowing for a clean escape.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: It's not just a getaway tactic; it can also confuse attackers, allowing for a clean escape.",
+    "stock_footage_query": "",
+    "text_overlay": "It's not just a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 34.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 26.0,
+    "narration": "Want to dive deeper into ocean mysteries? Hit subscribe and explore with us!",
+    "visual_description": "Cta visual: Want to dive deeper into ocean mysteries? Hit subscribe and explore with us!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into ocean mysteries? Hit subscribe and explore with us!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into ocean mysteries? Hit subscribe and explore with us!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 34.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 34.0
+    }
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Some creatures deceive to survive. How?",
+    "visual_description": "Hook visual: Some creatures deceive to survive. How?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Some creatures deceive to survive. How?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Some creatures deceive to survive. How?",
+    "stock_footage_query": "",
+    "text_overlay": "Some creatures deceive to",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Meet Batesian mimicry, where harmless species imitate dangerous ones.",
+    "visual_description": "Context visual: Meet Batesian mimicry, where harmless species imitate dangerous ones.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Meet Batesian mimicry, where harmless species imitate dangerous ones.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Meet Batesian mimicry, where harmless species imitate dangerous ones.",
+    "stock_footage_query": "",
+    "text_overlay": "Meet Batesian mimicry, where",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "This strategy confuses predators, increasing survival chances.",
+    "visual_description": "Escalation visual: This strategy confuses predators, increasing survival chances.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: This strategy confuses predators, increasing survival chances.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: This strategy confuses predators, increasing survival chances.",
+    "stock_footage_query": "",
+    "text_overlay": "This strategy confuses predators,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Take the viceroy butterfly; it resembles the toxic monarch, tricking birds.",
+    "visual_description": "Evidence visual: Take the viceroy butterfly; it resembles the toxic monarch, tricking birds.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Take the viceroy butterfly; it resembles the toxic monarch, tricking birds.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Take the viceroy butterfly; it resembles the toxic monarch, tricking birds.",
+    "stock_footage_query": "",
+    "text_overlay": "Take the viceroy butterfly;",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 30.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "But is all mimicry effective? Not always\u2014environment plays a key role.",
+    "visual_description": "Payoff visual: But is all mimicry effective? Not always\u2014environment plays a key role.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: But is all mimicry effective? Not always\u2014environment plays a key role.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: But is all mimicry effective? Not always\u2014environment plays a key role.",
+    "stock_footage_query": "",
+    "text_overlay": "But is all mimicry",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 30.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 30.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "Want more mind-bending nature facts? Hit follow!",
+    "visual_description": "Cta visual: Want more mind-bending nature facts? Hit follow!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want more mind-bending nature facts? Hit follow!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want more mind-bending nature facts? Hit follow!",
+    "stock_footage_query": "",
+    "text_overlay": "Want more mind-bending nature",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

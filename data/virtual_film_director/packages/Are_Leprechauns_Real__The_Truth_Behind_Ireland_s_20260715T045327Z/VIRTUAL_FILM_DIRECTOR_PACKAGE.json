@@ -1,0 +1,532 @@
+{
+  "package_type": "VIRTUAL_FILM_DIRECTOR_PACKAGE",
+  "package_version": "1.0.0",
+  "engine_label": "Virtual Film Director",
+  "generated_at": "2026-07-15T04:53:27.533525+00:00",
+  "topic": "Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters",
+  "production_id": "",
+  "shot_plan": [
+    {
+      "scene_number": 1,
+      "scene_id": "scene_00",
+      "scene_objective": "Advance hook: establish audience investment in leprechaun legend",
+      "primary_subject": "leprechaun legend",
+      "camera_angle": "eye_level",
+      "lens_style": "portrait_50mm",
+      "shot_size": "establishing_wide",
+      "shot_language": "reveal_shot",
+      "camera_movement": "reveal_shot",
+      "camera_begin": "Open in a framed read of leprechaun legend matching reveal_shot",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=curiosity",
+      "character_blocking": {
+        "enabled": true,
+        "characters": [
+          {
+            "name": "leprechaun",
+            "kind": "character",
+            "source": "keyword"
+          }
+        ],
+        "blocking": "primary subject holds rule-of-thirds; secondary clears look-space",
+        "performance": {
+          "eye_movement": "track subject of narration",
+          "facial_expression": "curiosity",
+          "body_language": "weight_shift + posture settle",
+          "walking_speed": "measured",
+          "gestures": "point_or_demonstrate when teaching",
+          "reaction_timing": "anticipate beat then settle",
+          "cloth_hair": "subtle wind response"
+        },
+        "forbid_mannequin": true
+      },
+      "environmental_motion": {
+        "environment": "countryside",
+        "ambient_motion": [
+          "grass_sway",
+          "cloud_drift",
+          "birds",
+          "mist",
+          "wind"
+        ],
+        "dramatic_response": [],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "volumetric_sunlight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "warm_neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "hard_cut",
+      "emotional_beat": "curiosity",
+      "emotion": "curiosity",
+      "educational_goal": "What if I told you millions know the name leprechaun?",
+      "estimated_duration_sec": 3.0,
+      "animation_priority": [
+        "character_performance",
+        "environment_life",
+        "camera_storytelling",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Advance hook: establish audience investment in leprechaun legend",
+          "what_viewer_learns": "What if I told you millions know the name leprechaun?",
+          "emotion_to_feel": "curiosity",
+          "notice_first": "Primary subject first \u2014 leprechaun legend \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of leprechaun legend matching reveal_shot",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=curiosity",
+          "cinematic_payoff": "Muted viewer still understands: What if I told you millions know the name leprechaun?"
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: What if I told you millions know the name leprechaun?",
+      "muted_story_test": "Muted viewer still understands: What if I told you millions know the name leprechaun?",
+      "notice_first": "Primary subject first \u2014 leprechaun legend \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "reveal",
+        "ae_camera_move": "reveal",
+        "shot_size": "establishing_wide",
+        "emotion": "curiosity",
+        "lighting_mood": "volumetric_sunlight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Advance hook: establish audience investment in leprechaun legend"
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": true,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 2,
+      "scene_id": "scene_01",
+      "scene_objective": "Demonstrate the idea so learning sticks: In Irish folklore a solitary fairy often works as a shoemaker.",
+      "primary_subject": "Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters",
+      "camera_angle": "low_angle_hero",
+      "lens_style": "portrait_50mm",
+      "shot_size": "dynamic_medium",
+      "shot_language": "medium_dialogue",
+      "camera_movement": "medium_dialogue",
+      "camera_begin": "Open in a framed read of Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters matching medium_dialogue",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+      "character_blocking": {
+        "enabled": true,
+        "characters": [
+          {
+            "name": "irish",
+            "kind": "character",
+            "source": "keyword"
+          },
+          {
+            "name": "leprechaun",
+            "kind": "character",
+            "source": "keyword"
+          },
+          {
+            "name": "fairy",
+            "kind": "character",
+            "source": "keyword"
+          }
+        ],
+        "blocking": "primary subject holds rule-of-thirds; secondary clears look-space",
+        "performance": {
+          "eye_movement": "track subject of narration",
+          "facial_expression": "clarity",
+          "body_language": "weight_shift + posture settle",
+          "walking_speed": "measured",
+          "gestures": "point_or_demonstrate when teaching",
+          "reaction_timing": "anticipate beat then settle",
+          "cloth_hair": "subtle wind response"
+        },
+        "forbid_mannequin": true
+      },
+      "environmental_motion": {
+        "environment": "countryside",
+        "ambient_motion": [
+          "grass_sway",
+          "cloud_drift",
+          "birds",
+          "mist",
+          "wind"
+        ],
+        "dramatic_response": [],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "soft_daylight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "environmental_continuation",
+      "emotional_beat": "explanation",
+      "emotion": "clarity",
+      "educational_goal": "In Irish folklore a solitary fairy often works as a shoemaker.",
+      "estimated_duration_sec": 3.5,
+      "animation_priority": [
+        "character_performance",
+        "environment_life",
+        "camera_storytelling",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Demonstrate the idea so learning sticks: In Irish folklore a solitary fairy often works as a shoemaker.",
+          "what_viewer_learns": "In Irish folklore a solitary fairy often works as a shoemaker.",
+          "emotion_to_feel": "clarity",
+          "notice_first": "Primary subject first \u2014 Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters matching medium_dialogue",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+          "cinematic_payoff": "Muted viewer still understands: In Irish folklore a solitary fairy often works as a shoemaker."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: In Irish folklore a solitary fairy often works as a shoemaker.",
+      "muted_story_test": "Muted viewer still understands: In Irish folklore a solitary fairy often works as a shoemaker.",
+      "notice_first": "Primary subject first \u2014 Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "slow_cinematic_push",
+        "shot_size": "dynamic_medium",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: In Irish folklore a solitary fairy often works as a shoemaker."
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": true,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 3,
+      "scene_id": "scene_02",
+      "scene_objective": "Demonstrate the idea so learning sticks: Celtic traditions place otherworld beings among the mounds of the forest.",
+      "primary_subject": "Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters",
+      "camera_angle": "eye_level",
+      "lens_style": "wide_24mm",
+      "shot_size": "establishing_wide",
+      "shot_language": "epic_establishing",
+      "camera_movement": "epic_establishing",
+      "camera_begin": "Open in a framed read of Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters matching epic_establishing",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+      "character_blocking": {
+        "enabled": true,
+        "characters": [
+          {
+            "name": "celt",
+            "kind": "character",
+            "source": "keyword"
+          },
+          {
+            "name": "leprechaun",
+            "kind": "character",
+            "source": "keyword"
+          }
+        ],
+        "blocking": "primary subject holds rule-of-thirds; secondary clears look-space",
+        "performance": {
+          "eye_movement": "track subject of narration",
+          "facial_expression": "focus",
+          "body_language": "weight_shift + posture settle",
+          "walking_speed": "measured",
+          "gestures": "point_or_demonstrate when teaching",
+          "reaction_timing": "anticipate beat then settle",
+          "cloth_hair": "subtle wind response"
+        },
+        "forbid_mannequin": true
+      },
+      "environmental_motion": {
+        "environment": "forest",
+        "ambient_motion": [
+          "canopy_sway",
+          "mist_roll",
+          "birds_overhead",
+          "insect_near_ground",
+          "wet_rock_sheen"
+        ],
+        "dramatic_response": [],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "soft_daylight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "wonder",
+      "emotion": "focus",
+      "educational_goal": "Celtic traditions place otherworld beings among the mounds of the forest.",
+      "estimated_duration_sec": 3.5,
+      "animation_priority": [
+        "character_performance",
+        "environment_life",
+        "camera_storytelling",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Demonstrate the idea so learning sticks: Celtic traditions place otherworld beings among the mounds of the forest.",
+          "what_viewer_learns": "Celtic traditions place otherworld beings among the mounds of the forest.",
+          "emotion_to_feel": "focus",
+          "notice_first": "Primary subject first \u2014 Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters matching epic_establishing",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+          "cinematic_payoff": "Muted viewer still understands: Celtic traditions place otherworld beings among the mounds of the forest."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: Celtic traditions place otherworld beings among the mounds of the forest.",
+      "muted_story_test": "Muted viewer still understands: Celtic traditions place otherworld beings among the mounds of the forest.",
+      "notice_first": "Primary subject first \u2014 Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "pull_out",
+        "ae_camera_move": "crane",
+        "shot_size": "establishing_wide",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: Celtic traditions place otherworld beings among the mounds of the forest."
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": true,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 4,
+      "scene_id": "scene_03",
+      "scene_objective": "Deliver the takeaway on Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters",
+      "primary_subject": "Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters",
+      "camera_angle": "low_angle_hero",
+      "lens_style": "anamorphic_feel",
+      "shot_size": "hero_low_angle",
+      "shot_language": "hero_shot",
+      "camera_movement": "hero_shot",
+      "camera_begin": "Open in a framed read of Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters matching hero_shot",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+      "character_blocking": {
+        "enabled": true,
+        "characters": [
+          {
+            "name": "irish",
+            "kind": "character",
+            "source": "keyword"
+          },
+          {
+            "name": "leprechaun",
+            "kind": "character",
+            "source": "keyword"
+          }
+        ],
+        "blocking": "primary subject holds rule-of-thirds; secondary clears look-space",
+        "performance": {
+          "eye_movement": "track subject of narration",
+          "facial_expression": "clarity",
+          "body_language": "weight_shift + posture settle",
+          "walking_speed": "measured",
+          "gestures": "point_or_demonstrate when teaching",
+          "reaction_timing": "anticipate beat then settle",
+          "cloth_hair": "subtle wind response"
+        },
+        "forbid_mannequin": true
+      },
+      "environmental_motion": {
+        "environment": "countryside",
+        "ambient_motion": [
+          "grass_sway",
+          "cloud_drift",
+          "birds",
+          "mist",
+          "wind"
+        ],
+        "dramatic_response": [
+          "wind_increase",
+          "lighting_shift",
+          "fog_clear_on_reveal"
+        ],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "soft_daylight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "payoff",
+      "emotion": "clarity",
+      "educational_goal": "The word likely comes from Old Irish luchorp\u00e1n \u2014 a little body.",
+      "estimated_duration_sec": 3.0,
+      "animation_priority": [
+        "character_performance",
+        "environment_life",
+        "camera_storytelling",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Deliver the takeaway on Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters",
+          "what_viewer_learns": "The word likely comes from Old Irish luchorp\u00e1n \u2014 a little body.",
+          "emotion_to_feel": "clarity",
+          "notice_first": "Primary subject first \u2014 Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters matching hero_shot",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+          "cinematic_payoff": "Muted viewer still understands: The word likely comes from Old Irish luchorp\u00e1n \u2014 a little body."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: The word likely comes from Old Irish luchorp\u00e1n \u2014 a little body.",
+      "muted_story_test": "Muted viewer still understands: The word likely comes from Old Irish luchorp\u00e1n \u2014 a little body.",
+      "notice_first": "Primary subject first \u2014 Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "hero_low_angle_push",
+        "shot_size": "hero_low_angle",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Deliver the takeaway on Are Leprechauns Real? The Truth Behind Ireland's Tiny Tricksters"
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": true,
+        "negative_space": true,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    }
+  ],
+  "emotional_timeline": {
+    "total_duration_sec": 13.0,
+    "beats": [
+      {
+        "scene_number": 1,
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "emotional_beat": "curiosity",
+        "emotion": "curiosity",
+        "lighting_mood": "volumetric_sunlight",
+        "shot_language": "reveal_shot"
+      },
+      {
+        "scene_number": 2,
+        "start_sec": 3.0,
+        "end_sec": 6.5,
+        "emotional_beat": "explanation",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "shot_language": "medium_dialogue"
+      },
+      {
+        "scene_number": 3,
+        "start_sec": 6.5,
+        "end_sec": 10.0,
+        "emotional_beat": "wonder",
+        "emotion": "focus",
+        "lighting_mood": "soft_daylight",
+        "shot_language": "epic_establishing"
+      },
+      {
+        "scene_number": 4,
+        "start_sec": 10.0,
+        "end_sec": 13.0,
+        "emotional_beat": "payoff",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "shot_language": "hero_shot"
+      }
+    ],
+    "rhythm": [
+      "curiosity",
+      "explanation",
+      "wonder",
+      "payoff"
+    ],
+    "avoids_flatness": true
+  },
+  "director_review": {
+    "approved": true,
+    "decision": "APPROVE",
+    "failures": [],
+    "warnings": [],
+    "rewrite_scenes": [],
+    "questions": {
+      "professional_director_would_approve": true,
+      "every_scene_has_purpose": true,
+      "every_camera_communicates": true,
+      "pacing_feels_cinematic": true,
+      "visuals_alone_engaging": true
+    },
+    "metrics": {
+      "shot_count": 4,
+      "unique_shot_languages": 4,
+      "unique_emotional_beats": 4,
+      "known_shot_language_rate": 1.0
+    },
+    "rewritten": false
+  },
+  "philosophy": {
+    "directs_before_animates": true,
+    "animation_executes": true,
+    "no_new_renderer": true,
+    "no_pipeline_redesign": true,
+    "muted_story_test": true
+  },
+  "summary": {
+    "shot_count": 4,
+    "director_decision": "APPROVE",
+    "approved": true,
+    "emotional_rhythm": [
+      "curiosity",
+      "explanation",
+      "wonder",
+      "payoff"
+    ],
+    "rewrite_scenes": []
+  },
+  "artifacts": {
+    "SHOT_PLAN.json": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_20260715T045327Z/SHOT_PLAN.json",
+    "DIRECTOR_NOTES.md": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_20260715T045327Z/DIRECTOR_NOTES.md",
+    "CAMERA_SCRIPT.md": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_20260715T045327Z/CAMERA_SCRIPT.md",
+    "EMOTIONAL_TIMELINE.json": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_20260715T045327Z/EMOTIONAL_TIMELINE.json",
+    "VISUAL_STORYBOARD.md": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_20260715T045327Z/VISUAL_STORYBOARD.md",
+    "VIRTUAL_FILM_DIRECTOR_PACKAGE.json": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_20260715T045327Z/VIRTUAL_FILM_DIRECTOR_PACKAGE.json"
+  },
+  "path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_20260715T045327Z/VIRTUAL_FILM_DIRECTOR_PACKAGE.json",
+  "out_dir": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/virtual_film_director/packages/Are_Leprechauns_Real__The_Truth_Behind_Ireland_s_20260715T045327Z"
+}

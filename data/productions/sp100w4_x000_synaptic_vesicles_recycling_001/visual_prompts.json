@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: Here's what science actually says about synaptic vesicles recycling.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: Synaptic vesicles are tiny bubbles that store neurotransmitters, the brain's chemical messengers.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: But did you know these vesicles recycle after each signal? It\u2019s like a relay race in your brain!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Research shows vesicles are reused, saving energy and resources\u2014vital for efficient brain function.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: This recycling process is crucial. Disruptions can lead to neurological issues. Imagine that!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to dive deeper into neuroscience? Hit that follow button for more intriguing facts!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: Here's what science actually says about synaptic vesicles recycling.",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: Synaptic vesicles are tiny bubbles that store neurotransmitters, the brain's chemical messengers.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: But did you know these vesicles recycle after each signal? It\u2019s like a relay race in your brain!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Research shows vesicles are reused, saving energy and resources\u2014vital for efficient brain function.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: This recycling process is crucial. Disruptions can lead to neurological issues. Imagine that!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to dive deeper into neuroscience? Hit that follow button for more intriguing facts!",
+      "duration_sec": 26.0
+    }
+  ]
+}

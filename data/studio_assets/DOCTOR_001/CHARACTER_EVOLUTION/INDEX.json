@@ -1,0 +1,28 @@
+{
+  "phase": "VI",
+  "character_id": "DOCTOR_001",
+  "current_iteration": "003",
+  "production_status": "NOT_READY",
+  "baseline_overall": 3.8,
+  "after_iter_001_overall": 4.2,
+  "after_iter_002_overall": 4.5,
+  "iterations": [
+    {
+      "id": "001",
+      "focus": "eyes_face_expressions",
+      "status": "pass",
+      "overall_after": 4.2
+    },
+    {
+      "id": "002",
+      "focus": "costume_medical_coat",
+      "status": "pass",
+      "overall_after": 4.5
+    },
+    {
+      "id": "003",
+      "focus": "silhouette",
+      "status": "queued"
+    }
+  ]
+}

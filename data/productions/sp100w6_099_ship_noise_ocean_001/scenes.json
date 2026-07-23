@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Ever wondered how ship noise affects ocean life?",
+    "visual_description": "Hook visual: Ever wondered how ship noise affects ocean life?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Ever wondered how ship noise affects ocean life?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Ever wondered how ship noise affects ocean life?",
+    "stock_footage_query": "",
+    "text_overlay": "Ever wondered how ship",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "From cargo ships to cruise liners, vessels create a symphony of sounds underwater.",
+    "visual_description": "Context visual: From cargo ships to cruise liners, vessels create a symphony of sounds underwater.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: From cargo ships to cruise liners, vessels create a symphony of sounds underwater.",
+    "ai_video_prompt": "Cinematic motion: Context visual: From cargo ships to cruise liners, vessels create a symphony of sounds underwater.",
+    "stock_footage_query": "",
+    "text_overlay": "From cargo ships to",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "But this noise isn\u2019t just background music; it disrupts communication among marine animals.",
+    "visual_description": "Escalation visual: But this noise isn\u2019t just background music; it disrupts communication among marine animals.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: But this noise isn\u2019t just background music; it disrupts communication among marine animals.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: But this noise isn\u2019t just background music; it disrupts communication among marine animals.",
+    "stock_footage_query": "",
+    "text_overlay": "But this noise isn\u2019t",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show that species like dolphins and whales rely on sound to navigate and find food.",
+    "visual_description": "Evidence visual: Studies show that species like dolphins and whales rely on sound to navigate and find food.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show that species like dolphins and whales rely on sound to navigate and find food.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show that species like dolphins and whales rely on sound to navigate and find food.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show that species",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "pattern_interrupt",
+    "emotion": "surprise",
+    "length_sec": 12.0,
+    "narration": "Imagine trying to talk in a crowded room\u2014difficult, right? That\u2019s similar to what they face.",
+    "visual_description": "Pattern Interrupt visual: Imagine trying to talk in a crowded room\u2014difficult, right? That\u2019s similar to what they face.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: Imagine trying to talk in a crowded room\u2014difficult, right? That\u2019s similar to what they face.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: Imagine trying to talk in a crowded room\u2014difficult, right? That\u2019s similar to what they face.",
+    "stock_footage_query": "",
+    "text_overlay": "Imagine trying to talk",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "payoff",
+    "emotion": "hope",
+    "length_sec": 12.0,
+    "narration": "Reducing ship noise could restore balance, allowing these creatures to thrive again.",
+    "visual_description": "Payoff visual: Reducing ship noise could restore balance, allowing these creatures to thrive again.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Reducing ship noise could restore balance, allowing these creatures to thrive again.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Reducing ship noise could restore balance, allowing these creatures to thrive again.",
+    "stock_footage_query": "",
+    "text_overlay": "Reducing ship noise could",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Curious about more ocean mysteries? Hit subscribe for deep dives into science!",
+    "visual_description": "Cta visual: Curious about more ocean mysteries? Hit subscribe for deep dives into science!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more ocean mysteries? Hit subscribe for deep dives into science!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more ocean mysteries? Hit subscribe for deep dives into science!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more ocean",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

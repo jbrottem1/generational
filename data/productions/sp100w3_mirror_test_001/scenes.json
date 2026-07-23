@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Can animals recognize themselves in a mirror?",
+    "visual_description": "Hook visual: Can animals recognize themselves in a mirror?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Can animals recognize themselves in a mirror?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Can animals recognize themselves in a mirror?",
+    "stock_footage_query": "",
+    "text_overlay": "Can animals recognize themselves",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "The mirror test is a fascinating experiment that reveals self-recognition in certain species.",
+    "visual_description": "Context visual: The mirror test is a fascinating experiment that reveals self-recognition in certain species.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: The mirror test is a fascinating experiment that reveals self-recognition in certain species.",
+    "ai_video_prompt": "Cinematic motion: Context visual: The mirror test is a fascinating experiment that reveals self-recognition in certain species.",
+    "stock_footage_query": "",
+    "text_overlay": "The mirror test is",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Some animals, like great apes and dolphins, pass this test, suggesting a level of self-awareness.",
+    "visual_description": "Escalation visual: Some animals, like great apes and dolphins, pass this test, suggesting a level of self-awareness.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Some animals, like great apes and dolphins, pass this test, suggesting a level of self-awareness.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Some animals, like great apes and dolphins, pass this test, suggesting a level of self-awareness.",
+    "stock_footage_query": "",
+    "text_overlay": "Some animals, like great",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "But passing the mirror test isn\u2019t a full sign of a theory of mind, just self-recognition.",
+    "visual_description": "Evidence visual: But passing the mirror test isn\u2019t a full sign of a theory of mind, just self-recognition.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: But passing the mirror test isn\u2019t a full sign of a theory of mind, just self-recognition.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: But passing the mirror test isn\u2019t a full sign of a theory of mind, just self-recognition.",
+    "stock_footage_query": "",
+    "text_overlay": "But passing the mirror",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "This sparks debates in comparative psychology about consciousness and cognition in animals.",
+    "visual_description": "Payoff visual: This sparks debates in comparative psychology about consciousness and cognition in animals.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This sparks debates in comparative psychology about consciousness and cognition in animals.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This sparks debates in comparative psychology about consciousness and cognition in animals.",
+    "stock_footage_query": "",
+    "text_overlay": "This sparks debates in",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "What do you think? Can self-awareness exist without a theory of mind? Comment below!",
+    "visual_description": "Cta visual: What do you think? Can self-awareness exist without a theory of mind? Comment below!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: What do you think? Can self-awareness exist without a theory of mind? Comment below!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: What do you think? Can self-awareness exist without a theory of mind? Comment below!",
+    "stock_footage_query": "",
+    "text_overlay": "What do you think?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

@@ -1,0 +1,73 @@
+{
+  "package_type": "audience_intelligence_post_review",
+  "version": "2.0.0",
+  "generated_at": "2026-07-14T03:49:28.119339+00:00",
+  "topic": "Why Octopuses Have Three Hearts",
+  "niche": "biology",
+  "platform": "youtube_shorts",
+  "production_id": "octopus_three_hearts_20260714T033454",
+  "evaluations": {
+    "hook_effectiveness": 75.0,
+    "visual_engagement": 70.0,
+    "story_clarity": 70.0,
+    "audio_quality": 70.0,
+    "educational_value": 90.0,
+    "emotional_impact": 94.0,
+    "retention_prediction": 70.0,
+    "shareability_prediction": 88.0,
+    "overall": 88.5
+  },
+  "highest_impact_improvement": {
+    "statement": "Replace explanatory open with a wrong-belief confrontation the viewer feels compelled to resolve.",
+    "dimension": null,
+    "category": "curiosity_gaps"
+  },
+  "lesson_recorded": {
+    "lesson_id": "ail_b4727d62a7",
+    "statement": "Replace explanatory open with a wrong-belief confrontation the viewer feels compelled to resolve.",
+    "confidence": 0.81,
+    "category": "curiosity_gaps",
+    "evidence_count": 2
+  },
+  "analytics_interfaces": [
+    {
+      "name": "youtube_analytics",
+      "platform": "youtube_shorts",
+      "available": true,
+      "methods": [
+        "fetch_video_metrics",
+        "fetch_retention_curve"
+      ]
+    },
+    {
+      "name": "tiktok_analytics",
+      "platform": "tiktok",
+      "available": false,
+      "methods": [
+        "fetch_video_metrics",
+        "fetch_retention_curve"
+      ]
+    },
+    {
+      "name": "instagram_insights",
+      "platform": "instagram_reels",
+      "available": false,
+      "methods": [
+        "fetch_video_metrics",
+        "fetch_retention_curve"
+      ]
+    },
+    {
+      "name": "ab_test_results",
+      "platform": "multi",
+      "available": true,
+      "methods": [
+        "fetch_video_metrics",
+        "fetch_retention_curve"
+      ]
+    }
+  ],
+  "analytics_snapshot": null,
+  "creative_excellence_score": 88.5,
+  "note": "Composes Creative Excellence + ops reports; does not replace Psychology/CPL/Publishing"
+}

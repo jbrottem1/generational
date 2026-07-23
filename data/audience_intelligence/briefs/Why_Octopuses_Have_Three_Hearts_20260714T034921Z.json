@@ -1,0 +1,87 @@
+{
+  "package_type": "audience_intelligence_creative_brief",
+  "version": "2.0.0",
+  "generated_at": "2026-07-14T03:49:21.980390+00:00",
+  "topic": "Why Octopuses Have Three Hearts",
+  "niche": "biology",
+  "platform": "youtube_shorts",
+  "audience": "general_public",
+  "length_sec": 45,
+  "production_id": "octopus_three_hearts_20260714T033454",
+  "recommended_opening_hook": "Stop scrolling \u2014 the clearest explanation of Why Octopuses Have Three Hearts starts now.",
+  "ideal_pacing": "aggressive_cut_rate_first_15s",
+  "recommended_visual_density": "medium_high_documentary_layers",
+  "suggested_camera_style": "fast_push_in_on_hook_then_orbit_reveal",
+  "narration_recommendations": "Professor / science narration profile outperforms generic default for educational science Shorts. (confidence=0.69)",
+  "caption_recommendations": "Punch hook keywords in first 3s; keep lines \u22642 on-screen",
+  "thumbnail_strategy": "bold_text_over_visual",
+  "predicted_viewer_expectations": {
+    "human_attention_score": 40,
+    "retention_probability": 46,
+    "shareability": 38,
+    "format": "short",
+    "length_sec": {
+      "min": 30,
+      "max": 55
+    },
+    "persona": "18-34 viewers seeking learn; general sophistication; beginner difficulty."
+  },
+  "potential_weak_points": [
+    "Curiosity gap may be weak \u2014 confront a wrong belief in 0\u20133s",
+    "Retention risk mid-video \u2014 schedule a pattern interrupt ~40\u201350%"
+  ],
+  "psychological_hooks": [
+    "curiosity_gap"
+  ],
+  "supporting_lessons": [
+    {
+      "lesson_id": "ail_62bc2e99e6",
+      "statement": "Three-beat openings (stop / reframe / promise) consistently improve curiosity on science Shorts.",
+      "confidence": 0.67,
+      "category": "hook_patterns",
+      "evidence_count": 2
+    },
+    {
+      "lesson_id": "ail_51948a775b",
+      "statement": "Professor / science narration profile outperforms generic default for educational science Shorts.",
+      "confidence": 0.69,
+      "category": "narration_styles",
+      "evidence_count": 2
+    },
+    {
+      "lesson_id": "ail_20f159f788",
+      "statement": "Fast push-in / zoom on the first biology hook beat lifts early retention vs static establishing.",
+      "confidence": 0.65,
+      "category": "camera_movement_styles",
+      "evidence_count": 2
+    },
+    {
+      "lesson_id": "ail_182d2e5e05",
+      "statement": "Ocean / observatory environments outperform flat blue or solid color beds for marine topics.",
+      "confidence": 0.63,
+      "category": "visual_pacing",
+      "evidence_count": 2
+    }
+  ],
+  "audience_intelligence_report": {
+    "human_attention_score": 40,
+    "confidence": 0.53,
+    "reasoning": "Human Attention Score 40/100. Top drivers: curiosity=62, education=38, emotion=38. CTR\u224849, retention\u224846, share\u224838. Format=short; hook='Stop scrolling \u2014 the clearest explanation of Why Octopuses Have Three Hearts starts now.'. Cross-ref sources=0."
+  },
+  "guides_systems": [
+    "script_generation",
+    "scene_builder",
+    "world_builder",
+    "cinematic_director",
+    "voice_studio",
+    "publishing_intelligence"
+  ],
+  "does_not_replace": [
+    "psychology_engine",
+    "research_engine",
+    "creative_performance_lab",
+    "publishing_intelligence",
+    "renderer"
+  ],
+  "note": "Advisory brief only \u2014 existing production systems remain authoritative"
+}

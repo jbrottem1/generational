@@ -1,0 +1,74 @@
+{
+  "title": "What Transit Depth Reveals",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Transit depth offers vital clues about exoplanets and their sizes.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "The dimming of a star holds a secret about its planets.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "When a planet transits\u2014crosses in front of its star\u2014it causes a temporary dip in brightness.",
+      "emotion": "curiosity",
+      "delivery": "informative and engaging",
+      "retention_device": "retention_hook"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "But how much it dims reveals the planet's size compared to the star.",
+      "emotion": "curiosity",
+      "delivery": "building anticipation",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 30.0,
+      "segment_type": "evidence",
+      "voiceover": "A larger planet blocks more light, creating a deeper transit signal.",
+      "emotion": "curiosity",
+      "delivery": "clear and precise",
+      "retention_device": "retention_hook"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 30.0,
+      "end_time": 45.0,
+      "segment_type": "payoff",
+      "voiceover": "This method helps astronomers estimate sizes without ever visiting those distant worlds.",
+      "emotion": "curiosity",
+      "delivery": "satisfying and enlightening",
+      "retention_device": "pattern_interrupt"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 45.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more cosmic mysteries? Like and follow for more insights!",
+      "emotion": "curiosity",
+      "delivery": "inviting and engaging",
+      "retention_device": "none"
+    }
+  ],
+  "full_voiceover": "The dimming of a star holds a secret about its planets. When a planet transits\u2014crosses in front of its star\u2014it causes a temporary dip in brightness. But how much it dims reveals the planet's size compared to the star. A larger planet blocks more light, creating a deeper transit signal. This method helps astronomers estimate sizes without ever visiting those distant worlds. Curious about more cosmic mysteries? Like and follow for more insights!",
+  "call_to_action": "Like and follow for more insights!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T17:32:08.280127+00:00",
+  "source": "ai"
+}

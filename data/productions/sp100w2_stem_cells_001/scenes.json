@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Stem cells can transform into any cell type \u2014 but they're not magic.",
+    "visual_description": "Hook visual: Stem cells can transform into any cell type \u2014 but they're not magic.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Stem cells can transform into any cell type \u2014 but they're not magic.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Stem cells can transform into any cell type \u2014 but they're not magic.",
+    "stock_footage_query": "",
+    "text_overlay": "Stem cells can transform",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Pluripotent stem cells have endless potential, while adult stem cells are more limited.",
+    "visual_description": "Context visual: Pluripotent stem cells have endless potential, while adult stem cells are more limited.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Pluripotent stem cells have endless potential, while adult stem cells are more limited.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Pluripotent stem cells have endless potential, while adult stem cells are more limited.",
+    "stock_footage_query": "",
+    "text_overlay": "Pluripotent stem cells have",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Approved uses include blood and bone marrow regeneration. But many applications are still experimental.",
+    "visual_description": "Escalation visual: Approved uses include blood and bone marrow regeneration. But many applications are still experimental.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Approved uses include blood and bone marrow regeneration. But many applications are still experimental.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Approved uses include blood and bone marrow regeneration. But many applications are still experimental.",
+    "stock_footage_query": "",
+    "text_overlay": "Approved uses include blood",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "concern",
+    "length_sec": 8.0,
+    "narration": "The NIH emphasizes caution. Unproven clinics may promise miracles, but often deliver disappointment.",
+    "visual_description": "Evidence visual: The NIH emphasizes caution. Unproven clinics may promise miracles, but often deliver disappointment.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: The NIH emphasizes caution. Unproven clinics may promise miracles, but often deliver disappointment.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: The NIH emphasizes caution. Unproven clinics may promise miracles, but often deliver disappointment.",
+    "stock_footage_query": "",
+    "text_overlay": "The NIH emphasizes caution.",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "enlightenment",
+    "length_sec": 14.0,
+    "narration": "Understanding stem cells means recognizing their power, but also their limits. They\u2019re tools for healing, not silver bullets.",
+    "visual_description": "Payoff visual: Understanding stem cells means recognizing their power, but also their limits. They\u2019re tools for healing, not silver bul",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding stem cells means recognizing their power, but also their limits. They\u2019re tools for healing, not silver bul",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding stem cells means recognizing their power, but also their limits. They\u2019re tools for healing, not silver bul",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding stem cells means",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "enthusiasm",
+    "length_sec": 20.0,
+    "narration": "Curious about stem cells? Hit like and follow for more science insights!",
+    "visual_description": "Cta visual: Curious about stem cells? Hit like and follow for more science insights!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about stem cells? Hit like and follow for more science insights!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about stem cells? Hit like and follow for more science insights!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about stem cells?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

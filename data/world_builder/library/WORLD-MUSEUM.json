@@ -1,0 +1,163 @@
+{
+  "world_id": "WORLD-MUSEUM",
+  "world_type": "Museum",
+  "name": "Museum",
+  "theme": "curated wonder",
+  "scale": "hall",
+  "historical_accuracy": 80,
+  "environment": {
+    "description": "Grand museum gallery with spotlighted vitrines, marble floor, and vaulted ceiling",
+    "continuity_key": "WORLD-MUSEUM",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "spotlight key on artifacts + soft ambient fill",
+    "consistent_key": true
+  },
+  "architecture": [
+    "column arcade",
+    "glass vitrines",
+    "vaulted skylight"
+  ],
+  "weather": "indoors",
+  "objects": [
+    {
+      "object_id": "obj_centerpiece_artifact",
+      "name": "centerpiece_artifact",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.5,
+        "y": 0.0,
+        "z": 0.45
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_info_plinth",
+      "name": "info_plinth",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.35,
+        "y": 0.0,
+        "z": 0.55
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "obj_bench",
+      "name": "bench",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.2,
+        "y": 0.0,
+        "z": 0.7
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "background_animations": [
+    "dust motes in sunbeams",
+    "soft spotlight sweep"
+  ],
+  "sound_ambience": [
+    "quiet footsteps",
+    "hushed hall reverb"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.5,
+    "max_height": 4.0,
+    "min_distance": 1.0,
+    "max_distance": 20.0
+  },
+  "color_palette": {
+    "family": "science_core",
+    "primary": "#0B1D36",
+    "accent": "#F4A261"
+  },
+  "lighting_presets": [
+    {
+      "id": "day_neutral",
+      "recipe": "warm gallery key + soft bounce fill",
+      "mood": "neutral"
+    },
+    {
+      "id": "dramatic_rim",
+      "recipe": "warm gallery key + hard rim + practical instrument glow",
+      "mood": "dramatic"
+    },
+    {
+      "id": "low_key_focus",
+      "recipe": "low-key with luminous subject isolation",
+      "mood": "focus"
+    },
+    {
+      "id": "bright_reveal",
+      "recipe": "bright key + lifted shadows for revelation",
+      "mood": "reveal"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "wide_establish",
+      "position": "rear_center",
+      "angle": "eye_level",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "bench_medium",
+      "position": "workbench_front",
+      "angle": "slight_high",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "macro_detail",
+      "position": "instrument_close",
+      "angle": "macro",
+      "lens_hint": "85mm"
+    },
+    {
+      "id": "corner_observe",
+      "position": "room_corner",
+      "angle": "observational",
+      "lens_hint": "28mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "vitrine_focus",
+      "region": "center_hall"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "gallery_arch",
+      "to_compatible": [
+        "Library",
+        "Ancient Egypt",
+        "Ancient Rome"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.157536+00:00"
+}

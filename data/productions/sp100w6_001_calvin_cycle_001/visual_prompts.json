@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: What if I told you that plants have a hidden power?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: This is the Calvin cycle, a crucial process in photosynthesis. It transforms carbon dioxide into energy.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: First up, carbon fixation. Carbon dioxide combines with a five-carbon molecule. Sounds simple, right?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Then, energy molecules from the light reactions help convert that into sugars. This is where plants make their food!",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: But here\u2019s the twist: this process can be influenced by temperature and light. It\u2019s not always perfect.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Want to dive deeper into the secrets of plants? Hit that subscribe button for more science!",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: What if I told you that plants have a hidden power?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: This is the Calvin cycle, a crucial process in photosynthesis. It transforms carbon dioxide into energy.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: First up, carbon fixation. Carbon dioxide combines with a five-carbon molecule. Sounds simple, right?",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Then, energy molecules from the light reactions help convert that into sugars. This is where plants make their food!",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: But here\u2019s the twist: this process can be influenced by temperature and light. It\u2019s not always perfect.",
+      "duration_sec": 9.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Want to dive deeper into the secrets of plants? Hit that subscribe button for more science!",
+      "duration_sec": 25.0
+    }
+  ]
+}

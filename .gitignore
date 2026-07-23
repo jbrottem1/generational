@@ -1,10 +1,85 @@
-venv/
-__pycache__/
-*.pyc
+# =============================================================================
+# Generational — production .gitignore
+# Keep source, docs, config, tests, and reusable metadata.
+# Exclude secrets, caches, renders, and generated media.
+# =============================================================================
+
+# --- Secrets (never commit) -------------------------------------------------
 .env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.key
+secrets.enc.json
+**/secrets.enc.json
+
+# --- Python -----------------------------------------------------------------
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# --- Node (mock packages / tooling) -----------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Build / dist -----------------------------------------------------------
+dist/
+build/
+*.egg
+*.whl
+
+# --- OS / editor ------------------------------------------------------------
 .DS_Store
-data/projects/*.json
-!data/projects/.gitkeep
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.worktrees/
+
+# --- Logs / local databases -------------------------------------------------
+*.log
+logs/
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Generated / binary media (do not ship in git) --------------------------
+*.mp4
+*.mov
+*.avi
+*.webm
+*.mkv
+*.m4v
+*.blend
+*.blend1
+*.fbx
+*.glb
+*.gltf
+*.obj
+*.usd
+*.usda
+*.usdc
+
+# --- Local runtime data -----------------------------------------------------
 data/logs/
 data/channels/
 data/knowledge/
@@ -13,6 +88,50 @@ data/voice_profiles/
 data/voice_recordings/
 data/publishing_queue/
 data/research_cache/
+data/analytics/
+data/workflow_runs/
+data/animation_runtime/
+data/renders/
+data/media/
+data/local_cache/
+data/provider_runtime/cache/
+data/voice_studio/comparisons/
+data/productions/_validation/
+data/productions/executive_exports/
+data/projects/*.json
+!data/projects/.gitkeep
 data/projects/*/knowledge/
-.pytest_cache/
-.DS_Store
+
+# Regenerated stills / previews under studio assets (JSON/MD retained)
+data/studio_assets/**/*.png
+data/studio_assets/**/*.jpg
+data/studio_assets/**/*.jpeg
+data/studio_assets/**/*.webp
+
+# Generated production package media (JSON/MD metadata retained)
+data/character_world_studio/packages/**/plates/
+data/character_world_studio/packages/**/*.png
+data/character_world_studio/packages/**/*.jpg
+data/character_world_studio/packages/**/*.jpeg
+data/character_world_studio/packages/**/*.webp
+data/character_world_studio/packages/**/*.mp3
+data/character_world_studio/packages/**/*.mp4
+data/character_world_studio/packages/**/*.wav
+data/creative_performance_lab/experiments/**/*.png
+data/creative_performance_lab/experiments/**/*.jpg
+data/creative_performance_lab/experiments/**/*.jpeg
+data/creative_performance_lab/experiments/**/*.webp
+data/creative_performance_lab/experiments/**/*.mp3
+data/creative_performance_lab/experiments/**/*.mp4
+data/creative_performance_lab/experiments/**/*.wav
+data/creative_performance_lab/experiments/**/narration.mp3
+data/creative_performance_lab/experiments/**/thumbnail.png
+
+# Timestamped experiment / package run outputs (keep schemas & libraries)
+data/animation_engine/runs/
+data/animation_execution/runs/
+data/world_builder/runs/
+data/visual_asset_director/runs/
+
+# Streamlit / local caches
+.streamlit/secrets.toml

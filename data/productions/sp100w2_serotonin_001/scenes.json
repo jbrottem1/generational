@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Most of your serotonin isn't in your brain.",
+    "visual_description": "Hook visual: Most of your serotonin isn't in your brain.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Most of your serotonin isn't in your brain.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Most of your serotonin isn't in your brain.",
+    "stock_footage_query": "",
+    "text_overlay": "Most of your serotonin",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Did you know that over 90% is produced in your gut? It's not just about happiness.",
+    "visual_description": "Context visual: Did you know that over 90% is produced in your gut? It's not just about happiness.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Did you know that over 90% is produced in your gut? It's not just about happiness.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Did you know that over 90% is produced in your gut? It's not just about happiness.",
+    "stock_footage_query": "",
+    "text_overlay": "Did you know that",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Serotonin regulates digestion, mood, and even sleep cycles. It's a powerhouse.",
+    "visual_description": "Escalation visual: Serotonin regulates digestion, mood, and even sleep cycles. It's a powerhouse.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: Serotonin regulates digestion, mood, and even sleep cycles. It's a powerhouse.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: Serotonin regulates digestion, mood, and even sleep cycles. It's a powerhouse.",
+    "stock_footage_query": "",
+    "text_overlay": "Serotonin regulates digestion, mood,",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Research shows gut serotonin influences brain function, impacting mental health far beyond what's been discussed.",
+    "visual_description": "Evidence visual: Research shows gut serotonin influences brain function, impacting mental health far beyond what's been discussed.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Research shows gut serotonin influences brain function, impacting mental health far beyond what's been discussed.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Research shows gut serotonin influences brain function, impacting mental health far beyond what's been discussed.",
+    "stock_footage_query": "",
+    "text_overlay": "Research shows gut serotonin",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "SSRI medications target serotonin to help treat depression, but that\u2019s only part of the story.",
+    "visual_description": "Payoff visual: SSRI medications target serotonin to help treat depression, but that\u2019s only part of the story.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: SSRI medications target serotonin to help treat depression, but that\u2019s only part of the story.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: SSRI medications target serotonin to help treat depression, but that\u2019s only part of the story.",
+    "stock_footage_query": "",
+    "text_overlay": "SSRI medications target serotonin",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "Feeling down? It might not just be your brain at play. Your gut could be sending signals too.",
+    "visual_description": "Pattern Interrupt visual: Feeling down? It might not just be your brain at play. Your gut could be sending signals too.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: Feeling down? It might not just be your brain at play. Your gut could be sending signals too.",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: Feeling down? It might not just be your brain at play. Your gut could be sending signals too.",
+    "stock_footage_query": "",
+    "text_overlay": "Feeling down? It might",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 50.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "Want to dive deeper? Hit that follow button for more insights on serotonin!",
+    "visual_description": "Cta visual: Want to dive deeper? Hit that follow button for more insights on serotonin!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper? Hit that follow button for more insights on serotonin!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper? Hit that follow button for more insights on serotonin!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper?",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 50.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 50.0
+    }
+  }
+]

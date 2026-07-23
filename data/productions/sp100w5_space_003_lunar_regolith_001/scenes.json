@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Science has a clearer story about lunar regolith than social media does.",
+    "visual_description": "Hook visual: Science has a clearer story about lunar regolith than social media does.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Science has a clearer story about lunar regolith than social media does.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Science has a clearer story about lunar regolith than social media does.",
+    "stock_footage_query": "",
+    "text_overlay": "Science has a clearer",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Lunar regolith is the layer of loose material covering the Moon's surface.",
+    "visual_description": "Context visual: Lunar regolith is the layer of loose material covering the Moon's surface.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Lunar regolith is the layer of loose material covering the Moon's surface.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Lunar regolith is the layer of loose material covering the Moon's surface.",
+    "stock_footage_query": "",
+    "text_overlay": "Lunar regolith is the",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "It\u2019s not just dust; it contains tiny glass beads formed by meteoroid impacts.",
+    "visual_description": "Escalation visual: It\u2019s not just dust; it contains tiny glass beads formed by meteoroid impacts.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: It\u2019s not just dust; it contains tiny glass beads formed by meteoroid impacts.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: It\u2019s not just dust; it contains tiny glass beads formed by meteoroid impacts.",
+    "stock_footage_query": "",
+    "text_overlay": "It\u2019s not just dust;",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Scientists have studied regolith for clues about the Moon\u2019s history and potential resources.",
+    "visual_description": "Evidence visual: Scientists have studied regolith for clues about the Moon\u2019s history and potential resources.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Scientists have studied regolith for clues about the Moon\u2019s history and potential resources.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Scientists have studied regolith for clues about the Moon\u2019s history and potential resources.",
+    "stock_footage_query": "",
+    "text_overlay": "Scientists have studied regolith",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 12.0,
+    "narration": "This material could even help build lunar habitats for future explorers.",
+    "visual_description": "Payoff visual: This material could even help build lunar habitats for future explorers.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: This material could even help build lunar habitats for future explorers.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: This material could even help build lunar habitats for future explorers.",
+    "stock_footage_query": "",
+    "text_overlay": "This material could even",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 38.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Want to dive deeper into space science? Hit that follow button!",
+    "visual_description": "Cta visual: Want to dive deeper into space science? Hit that follow button!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Want to dive deeper into space science? Hit that follow button!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Want to dive deeper into space science? Hit that follow button!",
+    "stock_footage_query": "",
+    "text_overlay": "Want to dive deeper",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 38.0,
+      "end_sec": 46.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 38.0
+    }
+  }
+]

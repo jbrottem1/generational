@@ -1,0 +1,178 @@
+{
+  "character_id": "FOUNDER_001",
+  "rig_version": "1.0.0",
+  "canonical": true,
+  "controls": {
+    "forehead_raise": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "brow_inner_left": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "brow_inner_right": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "brow_outer_left": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "brow_outer_right": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "upper_lid_left": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "upper_lid_right": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "lower_lid_left": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "lower_lid_right": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "eyeball_yaw_left": {
+      "min": -1.0,
+      "max": 1.0
+    },
+    "eyeball_yaw_right": {
+      "min": -1.0,
+      "max": 1.0
+    },
+    "eyeball_pitch_left": {
+      "min": -1.0,
+      "max": 1.0
+    },
+    "eyeball_pitch_right": {
+      "min": -1.0,
+      "max": 1.0
+    },
+    "pupil_dilate_left": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "pupil_dilate_right": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "cheek_raise_left": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "cheek_raise_right": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "nose_bridge_wrinkle": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "nostril_flare": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "upper_lip": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "lower_lip": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "lip_corner_left": {
+      "min": -1.0,
+      "max": 1.0
+    },
+    "lip_corner_right": {
+      "min": -1.0,
+      "max": 1.0
+    },
+    "jaw_open": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "chin_raise": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "neck_tension": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "ear_left": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "ear_right": {
+      "min": 0.0,
+      "max": 1.0
+    }
+  },
+  "regions": [
+    "forehead",
+    "inner_eyebrows",
+    "outer_eyebrows",
+    "upper_eyelids",
+    "lower_eyelids",
+    "eyeballs",
+    "pupils",
+    "cheeks",
+    "nose_bridge",
+    "nostrils",
+    "upper_lip",
+    "lower_lip",
+    "lip_corners",
+    "jaw",
+    "chin",
+    "neck_tension",
+    "ear_movement"
+  ],
+  "continuity_rule": "Same canonical facial rig across all scenes for this character.",
+  "pipeline": [
+    "scene_intent",
+    "emotional_state",
+    "attention_target",
+    "facial_performance_plan",
+    "eye_and_head_coordination",
+    "expression_blending",
+    "speech_and_viseme_animation",
+    "micro_expression_layer",
+    "rendered_performance_validation"
+  ],
+  "regions_supported": [
+    "eye_movement",
+    "eyelids",
+    "eyebrows",
+    "forehead",
+    "cheeks",
+    "nose",
+    "jaw",
+    "lips",
+    "tongue",
+    "neck_tension",
+    "micro_expressions"
+  ],
+  "emotions_supported": [
+    "smiles",
+    "frowns",
+    "concern",
+    "joy",
+    "curiosity",
+    "surprise",
+    "determination",
+    "empathy",
+    "speech"
+  ],
+  "micro_expressions": true,
+  "speech_ready": true,
+  "reusable": true,
+  "source": "character_performance.face_rig_profile"
+}

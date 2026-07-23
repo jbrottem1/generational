@@ -1,0 +1,39 @@
+{
+  "character_id": "DOCTOR_001",
+  "legacy_alias": "CHAR-0001",
+  "name": "The Doctor",
+  "version": "1.1.0",
+  "status": "permanent",
+  "role": "Canonical Medical Educator \u2014 Generational Universe",
+  "universe": "Generational",
+  "style_mode": "cinematic_realism",
+  "archetype": "humanoid_cyborg_physician_educator",
+  "home_world_id": "LOC-GMRI",
+  "home_world_name": "The Generational Medical Research Institute",
+  "continuity_law": "Visually identical across every future video. Never regenerate from scratch.",
+  "human_realism_framework": "HUMAN_REALISM_FRAMEWORK_V1",
+  "is_gold_standard": true,
+  "proportions": {
+    "height_cm": 185,
+    "head_height_ratio": 0.125,
+    "shoulder_width_ratio": 0.26,
+    "arm_span_to_height": 1.0,
+    "leg_length_ratio": 0.48,
+    "build": "athletic_approachable_humanoid"
+  },
+  "silhouette_keys": [
+    "white_medical_chassis",
+    "warm_blue_chest_interface",
+    "intelligent_eye_cores",
+    "rounded_friendly_cranial_form",
+    "professional_open_posture"
+  ],
+  "forbid": [
+    "generic_robot",
+    "uncanny_horror",
+    "stick_figure",
+    "palette_drift",
+    "regenerate_per_episode",
+    "episode_only_redesign"
+  ]
+}

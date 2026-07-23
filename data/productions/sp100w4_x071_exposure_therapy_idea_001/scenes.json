@@ -1,0 +1,212 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Here's what science actually says about exposure therapy.",
+    "visual_description": "Hook visual: Here's what science actually says about exposure therapy.",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Here's what science actually says about exposure therapy.",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Here's what science actually says about exposure therapy.",
+    "stock_footage_query": "",
+    "text_overlay": "Here's what science actually",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Exposure therapy is a technique to help people face their fears. But how does it work?",
+    "visual_description": "Context visual: Exposure therapy is a technique to help people face their fears. But how does it work?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Exposure therapy is a technique to help people face their fears. But how does it work?",
+    "ai_video_prompt": "Cinematic motion: Context visual: Exposure therapy is a technique to help people face their fears. But how does it work?",
+    "stock_footage_query": "",
+    "text_overlay": "Exposure therapy is a",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "It involves gradual exposure to the fear, allowing the brain to process it safely.",
+    "visual_description": "Escalation visual: It involves gradual exposure to the fear, allowing the brain to process it safely.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: It involves gradual exposure to the fear, allowing the brain to process it safely.",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: It involves gradual exposure to the fear, allowing the brain to process it safely.",
+    "stock_footage_query": "",
+    "text_overlay": "It involves gradual exposure",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Studies show this can reduce anxiety, but new research indicates it\u2019s not one-size-fits-all.",
+    "visual_description": "Evidence visual: Studies show this can reduce anxiety, but new research indicates it\u2019s not one-size-fits-all.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: Studies show this can reduce anxiety, but new research indicates it\u2019s not one-size-fits-all.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: Studies show this can reduce anxiety, but new research indicates it\u2019s not one-size-fits-all.",
+    "stock_footage_query": "",
+    "text_overlay": "Studies show this can",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "pattern_interrupt",
+    "emotion": "curiosity",
+    "length_sec": 10.0,
+    "narration": "What if I told you some people might not respond well?",
+    "visual_description": "Pattern Interrupt visual: What if I told you some people might not respond well?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Pattern Interrupt visual: What if I told you some people might not respond well?",
+    "ai_video_prompt": "Cinematic motion: Pattern Interrupt visual: What if I told you some people might not respond well?",
+    "stock_footage_query": "",
+    "text_overlay": "What if I told",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 36.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 9.0,
+    "narration": "Understanding this can lead to more tailored therapies, potentially helping more individuals.",
+    "visual_description": "Payoff visual: Understanding this can lead to more tailored therapies, potentially helping more individuals.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding this can lead to more tailored therapies, potentially helping more individuals.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding this can lead to more tailored therapies, potentially helping more individuals.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding this can lead",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 36.0,
+      "end_sec": 45.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 36.0
+    }
+  },
+  {
+    "scene_number": 7,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 15.0,
+    "narration": "Curious about more science insights? Hit that follow button!",
+    "visual_description": "Cta visual: Curious about more science insights? Hit that follow button!",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Curious about more science insights? Hit that follow button!",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Curious about more science insights? Hit that follow button!",
+    "stock_footage_query": "",
+    "text_overlay": "Curious about more science",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 45.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 45.0
+    }
+  }
+]

@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "score": 100,
+  "checks": [
+    {
+      "name": "stage_integrity",
+      "ok": true,
+      "detail": "no stage reports",
+      "level": "warn"
+    },
+    {
+      "name": "ideas_present",
+      "ok": true,
+      "detail": "1 ideas",
+      "level": "error"
+    },
+    {
+      "name": "packages_present",
+      "ok": true,
+      "detail": "1 packages",
+      "level": "warn"
+    },
+    {
+      "name": "script_timing",
+      "ok": true,
+      "detail": "script content present",
+      "level": "warn"
+    },
+    {
+      "name": "scene_timing",
+      "ok": true,
+      "detail": "visual/scene plan present",
+      "level": "warn"
+    },
+    {
+      "name": "voice_synchronization",
+      "ok": true,
+      "detail": "audio plan metadata only \u2014 real TTS not required for dry-run",
+      "level": "info"
+    },
+    {
+      "name": "subtitle_synchronization",
+      "ok": true,
+      "detail": "caption plan optional in dry-run",
+      "level": "warn"
+    },
+    {
+      "name": "music_levels",
+      "ok": true,
+      "detail": "music direction is planning metadata in dry-run",
+      "level": "info"
+    },
+    {
+      "name": "transition_timing",
+      "ok": true,
+      "detail": "transition plan is metadata in dry-run",
+      "level": "info"
+    },
+    {
+      "name": "render_integrity",
+      "ok": true,
+      "detail": "real MP4 referenced",
+      "level": "error"
+    },
+    {
+      "name": "voice_exists",
+      "ok": true,
+      "detail": "real voice assets present",
+      "level": "info"
+    },
+    {
+      "name": "duplicate_assets",
+      "ok": true,
+      "detail": "no duplicate titles",
+      "level": "warn"
+    },
+    {
+      "name": "missing_assets",
+      "ok": true,
+      "detail": "ideas present",
+      "level": "error"
+    },
+    {
+      "name": "provider_failures",
+      "ok": true,
+      "detail": "no provider error recorded",
+      "level": "warn"
+    },
+    {
+      "name": "real_mp4",
+      "ok": true,
+      "detail": "data/productions/sp100w3_red_shift_001/render.mp4",
+      "level": "info"
+    },
+    {
+      "name": "voice_file",
+      "ok": true,
+      "detail": "data/productions/sp100w3_red_shift_001/voice.mp3",
+      "level": "info"
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "mock_render": false,
+  "final_export_path": "/Users/jaredbrottem/Desktop/AI Start-up/videos/test run generational/2026-07-10_11-59-57_What_Redshift_Tells_Astronomers.mp4",
+  "final_export_dir": "/Users/jaredbrottem/Desktop/AI Start-up/videos/test run generational",
+  "ready_to_post_message": "Ready-to-post video saved successfully."
+}

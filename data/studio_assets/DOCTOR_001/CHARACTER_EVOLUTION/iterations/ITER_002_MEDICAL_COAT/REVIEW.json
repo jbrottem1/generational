@@ -1,0 +1,35 @@
+{
+  "iteration": "002",
+  "focus": "costume_medical_coat",
+  "decision": "PASS",
+  "golden_motion": "data/animation_runtime/golden_motion/GOLDEN_MOTION_20260719T053520Z",
+  "scores_before": {
+    "costume": 2,
+    "silhouette": 4,
+    "eyes": 5,
+    "facial_appeal": 5,
+    "overall_appeal": 4.2
+  },
+  "scores_after": {
+    "costume": 4,
+    "silhouette": 5,
+    "eyes": 5,
+    "facial_appeal": 5,
+    "overall_appeal": 4.5,
+    "memorability": 4,
+    "trust": 5
+  },
+  "pass_conditions": {
+    "costume_increased": true,
+    "overall_increased": true,
+    "eyes_face_held": true,
+    "no_hard_regression": true
+  },
+  "recommendation": "ACCEPT. Coat now has collar, hem flare, sleeve stubs, cuffs, pin, thin piping \u2014 improved over floating cyan slabs, but still not clothing-alone iconic. Iteration 003 should lock silhouette (coat + body continuous read) without reopening facial topology.",
+  "notes": [
+    "Piping can still read as teal plates in some angles \u2014 keep thin in 003",
+    "Face/eye scores from 001 held in control closeup",
+    "Not yet identifiable as doctor from blackout silhouette alone"
+  ],
+  "final_mp4_ok": true
+}

@@ -1,0 +1,175 @@
+{
+  "world_id": "WORLD-LIBRARY",
+  "world_type": "Library",
+  "name": "Library",
+  "theme": "quiet knowledge",
+  "scale": "reading_room",
+  "historical_accuracy": 85,
+  "environment": {
+    "description": "Multi-level library with oak stacks, reading lamps, and dust-mote sunbeams",
+    "continuity_key": "WORLD-LIBRARY",
+    "do_not_replace_mid_episode": true
+  },
+  "lighting": {
+    "base": "warm lamp practicals + cool window shafts",
+    "consistent_key": true
+  },
+  "architecture": [
+    "mezzanine stacks",
+    "vaulted reading room",
+    "iron spiral stair"
+  ],
+  "weather": "indoors",
+  "objects": [
+    {
+      "object_id": "obj_atlas_stand",
+      "name": "atlas_stand",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.45,
+        "y": 0.0,
+        "z": 0.45
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_card_catalog",
+      "name": "card_catalog",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.3,
+        "y": 0.0,
+        "z": 0.5
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "furniture": [
+    {
+      "object_id": "obj_reading_table",
+      "name": "reading_table",
+      "surface": "floor",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.5,
+        "y": 0.0,
+        "z": 0.55
+      },
+      "scale": 1.0,
+      "relationships": []
+    },
+    {
+      "object_id": "obj_lamp",
+      "name": "lamp",
+      "surface": "desk",
+      "anchored": true,
+      "temporary": false,
+      "zone": "",
+      "position": {
+        "x": 0.5,
+        "y": 0.9,
+        "z": 0.5
+      },
+      "scale": 1.0,
+      "relationships": []
+    }
+  ],
+  "background_animations": [
+    "dust motes",
+    "page turn hint",
+    "lamp flicker soft"
+  ],
+  "sound_ambience": [
+    "quiet room tone",
+    "distant page",
+    "clock soft"
+  ],
+  "camera_boundaries": {
+    "min_height": 0.5,
+    "max_height": 6.0,
+    "min_distance": 0.5,
+    "max_distance": 20.0
+  },
+  "color_palette": {
+    "family": "history",
+    "primary": "#2C1810",
+    "accent": "#C9A66B",
+    "paper": "#F1FAEE"
+  },
+  "lighting_presets": [
+    {
+      "id": "day_neutral",
+      "recipe": "warm reading key + soft bounce fill",
+      "mood": "neutral"
+    },
+    {
+      "id": "dramatic_rim",
+      "recipe": "warm reading key + hard rim + practical instrument glow",
+      "mood": "dramatic"
+    },
+    {
+      "id": "low_key_focus",
+      "recipe": "low-key with luminous subject isolation",
+      "mood": "focus"
+    },
+    {
+      "id": "bright_reveal",
+      "recipe": "bright key + lifted shadows for revelation",
+      "mood": "reveal"
+    }
+  ],
+  "camera_anchors": [
+    {
+      "id": "stacks_wide",
+      "position": "aisle",
+      "angle": "eye_level",
+      "lens_hint": "24mm"
+    },
+    {
+      "id": "table_medium",
+      "position": "reading",
+      "angle": "slight_high",
+      "lens_hint": "35mm"
+    },
+    {
+      "id": "book_macro",
+      "position": "table",
+      "angle": "macro",
+      "lens_hint": "85mm"
+    }
+  ],
+  "animation_zones": [
+    {
+      "id": "reading",
+      "region": "tables"
+    }
+  ],
+  "transition_anchors": [
+    {
+      "id": "archive_door",
+      "to_compatible": [
+        "University",
+        "Museum",
+        "Research Center"
+      ]
+    }
+  ],
+  "design_rules": [
+    "Keep set geometry continuous across scenes",
+    "Vary camera and lighting, not the world itself",
+    "Every object must sit on a defined surface",
+    "No flat solid full-frame backgrounds"
+  ],
+  "schema_version": "2.0.0",
+  "saved_at": "2026-07-15T23:08:50.160168+00:00"
+}

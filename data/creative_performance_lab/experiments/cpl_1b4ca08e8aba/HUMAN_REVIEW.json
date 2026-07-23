@@ -1,0 +1,107 @@
+{
+  "mode": "optional_human_review",
+  "status": "pending_review",
+  "recommended_winner": {
+    "label": "B",
+    "overall": 76,
+    "hook_style": "counterintuitive_fact",
+    "status": "PREDICTION"
+  },
+  "leaderboard": [
+    {
+      "label": "A",
+      "variant_id": "cpl_1b4ca08e8aba_A",
+      "overall_score": 75,
+      "hook_style": "curiosity_gap",
+      "mp4_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_A/Final.mp4",
+      "narration_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_A/narration.mp3"
+    },
+    {
+      "label": "B",
+      "variant_id": "cpl_1b4ca08e8aba_B",
+      "overall_score": 76,
+      "hook_style": "counterintuitive_fact",
+      "mp4_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_B/Final.mp4",
+      "narration_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_B/narration.mp3"
+    },
+    {
+      "label": "C",
+      "variant_id": "cpl_1b4ca08e8aba_C",
+      "overall_score": 75,
+      "hook_style": "immediate_visual_payoff",
+      "mp4_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_C/Final.mp4",
+      "narration_path": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_C/narration.mp3"
+    }
+  ],
+  "predicted_performance": {
+    "note": "PREDICTION \u2014 not real audience results",
+    "by_variant": {
+      "A": {
+        "ctr_pct": 6.01,
+        "average_view_duration_sec": 28.0,
+        "completion_rate_pct": 62.2,
+        "share_probability": 0.734,
+        "confidence": 95.0,
+        "reasons": [
+          "PREDICTION from internal heuristic scores \u2014 not real audience results",
+          "Hook style curiosity_gap influences predicted retention"
+        ],
+        "_label": "PREDICTION \u2014 not real audience results"
+      },
+      "B": {
+        "ctr_pct": 6.18,
+        "average_view_duration_sec": 28.0,
+        "completion_rate_pct": 63.4,
+        "share_probability": 0.76,
+        "confidence": 95.0,
+        "reasons": [
+          "PREDICTION from internal heuristic scores \u2014 not real audience results",
+          "Hook style counterintuitive_fact influences predicted retention"
+        ],
+        "_label": "PREDICTION \u2014 not real audience results"
+      },
+      "C": {
+        "ctr_pct": 5.93,
+        "average_view_duration_sec": 28.0,
+        "completion_rate_pct": 62.2,
+        "share_probability": 0.73,
+        "confidence": 95.0,
+        "reasons": [
+          "PREDICTION from internal heuristic scores \u2014 not real audience results",
+          "Hook style immediate_visual_payoff influences predicted retention"
+        ],
+        "_label": "PREDICTION \u2014 not real audience results"
+      }
+    }
+  },
+  "critique_summary": "PREDICTION: variant B (counterintuitive_fact) leads on hook_score=90, predicted completion=63.4%. Await human review and real analytics before treating as proof.",
+  "actions": [
+    "approve",
+    "reject",
+    "edit_custom"
+  ],
+  "experiment_id": "cpl_1b4ca08e8aba",
+  "topic": "Why Octopuses Have Three Hearts",
+  "human_scores": {},
+  "human_notes": {},
+  "human_issues": {},
+  "preferred_winner": "",
+  "override_system_prediction": false,
+  "playable_paths": {
+    "A": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_A/Final.mp4",
+    "B": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_B/Final.mp4",
+    "C": "/Users/jaredbrottem/Desktop/AI Start-UP/Apps/generational/data/creative_performance_lab/experiments/cpl_1b4ca08e8aba/variant_C/Final.mp4"
+  },
+  "allowed_issue_tags": [
+    "weak_first_three_seconds",
+    "robotic_narration",
+    "static_visuals",
+    "confusing_explanation",
+    "weak_payoff",
+    "caption_problems",
+    "poor_music_choice",
+    "thumbnail_weakness"
+  ],
+  "storage": "human_review \u2014 separate from automated scoring",
+  "updated_at": "2026-07-14T02:04:34.826075+00:00"
+}

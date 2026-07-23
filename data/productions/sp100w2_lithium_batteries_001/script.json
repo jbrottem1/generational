@@ -1,0 +1,74 @@
+{
+  "title": "How Lithium-Ion Batteries Store Energy",
+  "target_duration_seconds": 60,
+  "tone": "mysterious",
+  "primary_emotion": "curiosity",
+  "script_summary": "Exploring the energy storage process of lithium-ion batteries through ion movement.",
+  "segments": [
+    {
+      "segment_number": 1,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "segment_type": "hook",
+      "voiceover": "Your phone battery works by shuttling lithium ions between two electrodes.",
+      "emotion": "curiosity",
+      "delivery": "quiet and suspenseful",
+      "retention_device": "open loop"
+    },
+    {
+      "segment_number": 2,
+      "start_time": 2.0,
+      "end_time": 10.0,
+      "segment_type": "context",
+      "voiceover": "When charging, lithium ions move from the positive electrode to the negative one.",
+      "emotion": "curiosity",
+      "delivery": "calm and explanatory",
+      "retention_device": "visual diagram of ion movement"
+    },
+    {
+      "segment_number": 3,
+      "start_time": 10.0,
+      "end_time": 18.0,
+      "segment_type": "escalation",
+      "voiceover": "Discharging? The process flips! Ions travel back to release energy.",
+      "emotion": "excitement",
+      "delivery": "enthusiastic",
+      "retention_device": "dramatic pause"
+    },
+    {
+      "segment_number": 4,
+      "start_time": 18.0,
+      "end_time": 26.0,
+      "segment_type": "evidence",
+      "voiceover": "This movement creates a flow of electrons, powering your device!",
+      "emotion": "wonder",
+      "delivery": "inspiring",
+      "retention_device": "quick visual of powered device"
+    },
+    {
+      "segment_number": 5,
+      "start_time": 26.0,
+      "end_time": 34.0,
+      "segment_type": "payoff",
+      "voiceover": "So, next time you charge, remember those tiny ions at work.",
+      "emotion": "satisfaction",
+      "delivery": "reflective",
+      "retention_device": "thoughtful pause"
+    },
+    {
+      "segment_number": 6,
+      "start_time": 34.0,
+      "end_time": 60.0,
+      "segment_type": "cta",
+      "voiceover": "Curious about more tech secrets? Like and follow for more!",
+      "emotion": "curiosity",
+      "delivery": "inviting",
+      "retention_device": "direct engagement"
+    }
+  ],
+  "full_voiceover": "Your phone battery works by shuttling lithium ions between two electrodes. When charging, lithium ions move from the positive electrode to the negative one. Discharging? The process flips! Ions travel back to release energy. This movement creates a flow of electrons, powering your device! So, next time you charge, remember those tiny ions at work. Curious about more tech secrets? Like and follow for more!",
+  "call_to_action": "Like and follow for more!",
+  "estimated_word_count": 130,
+  "generated_at": "2026-07-10T16:50:54.322803+00:00",
+  "source": "ai"
+}

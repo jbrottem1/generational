@@ -1,0 +1,182 @@
+[
+  {
+    "scene_number": 1,
+    "purpose": "hook",
+    "emotion": "curiosity",
+    "length_sec": 2.0,
+    "narration": "Did you know that more contagious diseases need higher immunity coverage?",
+    "visual_description": "Hook visual: Did you know that more contagious diseases need higher immunity coverage?",
+    "camera_motion": "subtle push",
+    "zoom": "punch-in",
+    "motion_intensity": 70,
+    "transition_in": "none",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Hook visual: Did you know that more contagious diseases need higher immunity coverage?",
+    "ai_video_prompt": "Cinematic motion: Hook visual: Did you know that more contagious diseases need higher immunity coverage?",
+    "stock_footage_query": "",
+    "text_overlay": "Did you know that",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 0.0,
+      "end_sec": 2.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "bass hit",
+    "sfx_timing": {
+      "cue": "bass hit",
+      "at_sec": 0.0
+    }
+  },
+  {
+    "scene_number": 2,
+    "purpose": "context",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "Herd immunity thresholds aren't one-size-fits-all. They vary based on the disease.",
+    "visual_description": "Context visual: Herd immunity thresholds aren't one-size-fits-all. They vary based on the disease.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Context visual: Herd immunity thresholds aren't one-size-fits-all. They vary based on the disease.",
+    "ai_video_prompt": "Cinematic motion: Context visual: Herd immunity thresholds aren't one-size-fits-all. They vary based on the disease.",
+    "stock_footage_query": "",
+    "text_overlay": "Herd immunity thresholds aren't",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 2.0,
+      "end_sec": 10.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 2.0
+    }
+  },
+  {
+    "scene_number": 3,
+    "purpose": "escalation",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "For example, measles needs about 95% immunity to halt outbreaks. Why so high?",
+    "visual_description": "Escalation visual: For example, measles needs about 95% immunity to halt outbreaks. Why so high?",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Escalation visual: For example, measles needs about 95% immunity to halt outbreaks. Why so high?",
+    "ai_video_prompt": "Cinematic motion: Escalation visual: For example, measles needs about 95% immunity to halt outbreaks. Why so high?",
+    "stock_footage_query": "",
+    "text_overlay": "For example, measles needs",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 10.0,
+      "end_sec": 18.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 10.0
+    }
+  },
+  {
+    "scene_number": 4,
+    "purpose": "evidence",
+    "emotion": "curiosity",
+    "length_sec": 8.0,
+    "narration": "More transmissible viruses like COVID-19 require similar thresholds. The data is clear.",
+    "visual_description": "Evidence visual: More transmissible viruses like COVID-19 require similar thresholds. The data is clear.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Evidence visual: More transmissible viruses like COVID-19 require similar thresholds. The data is clear.",
+    "ai_video_prompt": "Cinematic motion: Evidence visual: More transmissible viruses like COVID-19 require similar thresholds. The data is clear.",
+    "stock_footage_query": "",
+    "text_overlay": "More transmissible viruses like",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 18.0,
+      "end_sec": 26.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 18.0
+    }
+  },
+  {
+    "scene_number": 5,
+    "purpose": "payoff",
+    "emotion": "curiosity",
+    "length_sec": 14.0,
+    "narration": "Understanding these thresholds helps us prepare and protect ourselves better.",
+    "visual_description": "Payoff visual: Understanding these thresholds helps us prepare and protect ourselves better.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Payoff visual: Understanding these thresholds helps us prepare and protect ourselves better.",
+    "ai_video_prompt": "Cinematic motion: Payoff visual: Understanding these thresholds helps us prepare and protect ourselves better.",
+    "stock_footage_query": "",
+    "text_overlay": "Understanding these thresholds helps",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 26.0,
+      "end_sec": 40.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 26.0
+    }
+  },
+  {
+    "scene_number": 6,
+    "purpose": "cta",
+    "emotion": "curiosity",
+    "length_sec": 20.0,
+    "narration": "Stay informed about vaccines and herd immunity. Follow for more insights.",
+    "visual_description": "Cta visual: Stay informed about vaccines and herd immunity. Follow for more insights.",
+    "camera_motion": "static",
+    "zoom": "",
+    "motion_intensity": 45,
+    "transition_in": "cut",
+    "transition_out": "hard cut",
+    "asset_type": "ai_image",
+    "ai_image_prompt": "Cta visual: Stay informed about vaccines and herd immunity. Follow for more insights.",
+    "ai_video_prompt": "Cinematic motion: Cta visual: Stay informed about vaccines and herd immunity. Follow for more insights.",
+    "stock_footage_query": "",
+    "text_overlay": "Stay informed about vaccines",
+    "overlay": "",
+    "caption_placement": "bottom third, safe zone",
+    "caption_timing": {
+      "start_sec": 40.0,
+      "end_sec": 60.0
+    },
+    "caption_emphasis": [],
+    "sound_effect": "whoosh",
+    "sfx_timing": {
+      "cue": "whoosh",
+      "at_sec": 40.0
+    }
+  }
+]

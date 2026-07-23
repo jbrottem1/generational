@@ -1,0 +1,66 @@
+{
+  "image_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Hook visual: What if deep-sea diving could make you feel drunk?",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Context visual: This phenomenon is called nitrogen narcosis \u2014 a potential risk for divers.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Escalation visual: As divers descend, pressure increases. More nitrogen enters the bloodstream. Things get... hazy.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Evidence visual: Symptoms range from euphoria to impaired judgment. Some even report hallucinations.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Payoff visual: But here's the twist: not everyone reacts the same way. It remains unpredictable.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cta visual: Stay informed about diving safety! Like and follow for more science insights.",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "video_prompts": [
+    {
+      "scene_number": 1,
+      "prompt": "Cinematic motion: Hook visual: What if deep-sea diving could make you feel drunk?",
+      "duration_sec": 2.0
+    },
+    {
+      "scene_number": 2,
+      "prompt": "Cinematic motion: Context visual: This phenomenon is called nitrogen narcosis \u2014 a potential risk for divers.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 3,
+      "prompt": "Cinematic motion: Escalation visual: As divers descend, pressure increases. More nitrogen enters the bloodstream. Things get... hazy.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 4,
+      "prompt": "Cinematic motion: Evidence visual: Symptoms range from euphoria to impaired judgment. Some even report hallucinations.",
+      "duration_sec": 8.0
+    },
+    {
+      "scene_number": 5,
+      "prompt": "Cinematic motion: Payoff visual: But here's the twist: not everyone reacts the same way. It remains unpredictable.",
+      "duration_sec": 12.0
+    },
+    {
+      "scene_number": 6,
+      "prompt": "Cinematic motion: Cta visual: Stay informed about diving safety! Like and follow for more science insights.",
+      "duration_sec": 12.0
+    }
+  ]
+}

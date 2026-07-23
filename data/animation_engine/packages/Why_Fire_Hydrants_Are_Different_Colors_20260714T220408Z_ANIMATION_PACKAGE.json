@@ -1,0 +1,1219 @@
+{
+  "package_type": "ANIMATION_PACKAGE",
+  "package_version": "1.0.0",
+  "generated_at": "2026-07-14T22:04:08.839612+00:00",
+  "topic": "Why Fire Hydrants Are Different Colors",
+  "production_id": "",
+  "scene_count": 4,
+  "scene_decisions": [
+    {
+      "scene_number": 1,
+      "scene_id": "scene_00",
+      "duration_sec": 3.0,
+      "pacing_note": "within_2_4s",
+      "layers": {
+        "camera": {
+          "camera_move": "dynamic_zoom",
+          "motion_effect": "quick_punch_in",
+          "true_motion_camera": "punch_in",
+          "depth_of_field": false,
+          "rack_focus": false,
+          "storytelling_reason": "Pattern-interrupt with motivated energy in the first seconds",
+          "forbid_static_lock": true
+        },
+        "character": {
+          "enabled": true,
+          "characters": [
+            {
+              "name": "firefighter",
+              "kind": "character",
+              "source": "keyword"
+            }
+          ],
+          "actions": [
+            "blink",
+            "head_turn",
+            "walk",
+            "gesture_while_speaking",
+            "point_at_object",
+            "emotional_react",
+            "lip_sync"
+          ],
+          "performance": "celebrate",
+          "alive_requirements": [
+            "blink_naturally",
+            "head_turn",
+            "gesture_while_speaking",
+            "lip_sync_with_narration",
+            "visual_consistency_across_scenes"
+          ],
+          "primary": {
+            "name": "firefighter",
+            "kind": "character",
+            "source": "keyword"
+          }
+        },
+        "world": {
+          "enabled": true,
+          "environment": "city",
+          "animations": [
+            "traffic",
+            "pedestrians",
+            "lights",
+            "smoke",
+            "weather"
+          ],
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "palette_hint": "night"
+        },
+        "object": {
+          "enabled": true,
+          "objects": [
+            {
+              "object": "hydrant",
+              "animations": [
+                "flowing_water",
+                "valves_turning",
+                "cutaway",
+                "pressure_visualization"
+              ],
+              "reason": "Narration discusses hydrant"
+            }
+          ],
+          "note": "Animate discussed objects \u2014 cutaways, flow, valves, physics"
+        },
+        "fx": {
+          "particle_effects": [
+            "rain_or_heat_haze",
+            "headlight_streaks"
+          ],
+          "lighting_movement": [
+            "key_drift",
+            "rim_pulse",
+            "practical_flicker"
+          ],
+          "physics_animation": true
+        },
+        "motion_graphics": {
+          "enabled": true,
+          "items": [
+            {
+              "type": "animated_label",
+              "reason": "Clarify meaning with callouts"
+            },
+            {
+              "type": "arrow",
+              "reason": "Direct eye to the subject"
+            }
+          ],
+          "animate_into_scene": true
+        },
+        "ui": {
+          "enabled": true,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "hard_cut",
+          "avoid_crossfade": true,
+          "reason": "Introduce a visually new beat for purpose=hook"
+        },
+        "muted_comprehension": "Show fire hydrants through visible motion so purpose=hook reads without audio.",
+        "active_motion_classes": [
+          "camera_movement",
+          "character_animation",
+          "object_movement",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement",
+          "physics_animation",
+          "ui_animation",
+          "motion_graphics"
+        ],
+        "passes_motion_minimum": true
+      },
+      "motion_effect": "quick_punch_in",
+      "true_motion_camera": "punch_in",
+      "true_motion_performance": "celebrate",
+      "world_palette": "night",
+      "excellence": {
+        "scene_motion": 100.0,
+        "camera_quality": 92.0,
+        "character_realism": 88.0,
+        "world_activity": 90.0,
+        "pacing": 90.0,
+        "visual_storytelling": 96.0,
+        "transition_quality": 85.0,
+        "cinematic_feel": 94.0,
+        "immersion": 97.7
+      }
+    },
+    {
+      "scene_number": 2,
+      "scene_id": "scene_01",
+      "duration_sec": 3.5,
+      "pacing_note": "within_2_4s",
+      "layers": {
+        "camera": {
+          "camera_move": "rack_focus",
+          "motion_effect": "documentary_slow_zoom",
+          "true_motion_camera": "rack_focus",
+          "depth_of_field": true,
+          "rack_focus": true,
+          "storytelling_reason": "Advance eye interest while the concept is demonstrated",
+          "forbid_static_lock": true
+        },
+        "character": {
+          "enabled": true,
+          "characters": [
+            {
+              "name": "firefighter",
+              "kind": "character",
+              "source": "keyword"
+            }
+          ],
+          "actions": [
+            "blink",
+            "head_turn",
+            "walk",
+            "gesture_while_speaking",
+            "point_at_object",
+            "emotional_react",
+            "lip_sync"
+          ],
+          "performance": "walk_explain",
+          "alive_requirements": [
+            "blink_naturally",
+            "head_turn",
+            "gesture_while_speaking",
+            "lip_sync_with_narration",
+            "visual_consistency_across_scenes"
+          ],
+          "primary": {
+            "name": "firefighter",
+            "kind": "character",
+            "source": "keyword"
+          }
+        },
+        "world": {
+          "enabled": true,
+          "environment": "city",
+          "animations": [
+            "traffic",
+            "pedestrians",
+            "lights",
+            "smoke",
+            "weather"
+          ],
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "palette_hint": "night"
+        },
+        "object": {
+          "enabled": true,
+          "objects": [
+            {
+              "object": "hydrant",
+              "animations": [
+                "flowing_water",
+                "valves_turning",
+                "cutaway",
+                "pressure_visualization"
+              ],
+              "reason": "Narration discusses hydrant"
+            }
+          ],
+          "note": "Animate discussed objects \u2014 cutaways, flow, valves, physics"
+        },
+        "fx": {
+          "particle_effects": [
+            "rain_or_heat_haze",
+            "headlight_streaks"
+          ],
+          "lighting_movement": [
+            "key_drift",
+            "rim_pulse",
+            "practical_flicker"
+          ],
+          "physics_animation": false
+        },
+        "motion_graphics": {
+          "enabled": true,
+          "items": [
+            {
+              "type": "animated_label",
+              "reason": "Clarify meaning with callouts"
+            },
+            {
+              "type": "arrow",
+              "reason": "Direct eye to the subject"
+            }
+          ],
+          "animate_into_scene": true
+        },
+        "ui": {
+          "enabled": false,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "whip_pan",
+          "avoid_crossfade": true,
+          "reason": "Introduce a visually new beat for purpose=story_beat"
+        },
+        "muted_comprehension": "Show the idea through visible motion so purpose=story_beat reads without audio.",
+        "active_motion_classes": [
+          "camera_movement",
+          "character_animation",
+          "object_movement",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement",
+          "motion_graphics"
+        ],
+        "passes_motion_minimum": true
+      },
+      "motion_effect": "documentary_slow_zoom",
+      "true_motion_camera": "rack_focus",
+      "true_motion_performance": "walk_explain",
+      "world_palette": "night",
+      "excellence": {
+        "scene_motion": 100.0,
+        "camera_quality": 92.0,
+        "character_realism": 88.0,
+        "world_activity": 90.0,
+        "pacing": 90.0,
+        "visual_storytelling": 96.0,
+        "transition_quality": 85.0,
+        "cinematic_feel": 94.0,
+        "immersion": 97.7
+      }
+    },
+    {
+      "scene_number": 3,
+      "scene_id": "scene_02",
+      "duration_sec": 4.0,
+      "pacing_note": "within_2_4s",
+      "layers": {
+        "camera": {
+          "camera_move": "crane",
+          "motion_effect": "slow_zoom_out",
+          "true_motion_camera": "pull_out",
+          "depth_of_field": false,
+          "rack_focus": false,
+          "storytelling_reason": "Advance eye interest while the concept is demonstrated",
+          "forbid_static_lock": true
+        },
+        "character": null,
+        "world": {
+          "enabled": true,
+          "environment": "forest",
+          "animations": [
+            "leaves_moving",
+            "wind",
+            "birds",
+            "sunlight_shifting"
+          ],
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "palette_hint": "forest"
+        },
+        "object": {
+          "enabled": true,
+          "objects": [
+            {
+              "object": "hydrant",
+              "animations": [
+                "flowing_water",
+                "valves_turning",
+                "cutaway",
+                "pressure_visualization"
+              ],
+              "reason": "Narration discusses hydrant"
+            }
+          ],
+          "note": "Animate discussed objects \u2014 cutaways, flow, valves, physics"
+        },
+        "fx": {
+          "particle_effects": [
+            "pollen",
+            "leaf_specks"
+          ],
+          "lighting_movement": [
+            "key_drift",
+            "rim_pulse",
+            "practical_flicker"
+          ],
+          "physics_animation": true
+        },
+        "motion_graphics": {
+          "enabled": true,
+          "items": [
+            {
+              "type": "map",
+              "ease_in": "ease_out",
+              "reason": "Location/context beat"
+            }
+          ],
+          "animate_into_scene": true
+        },
+        "ui": {
+          "enabled": false,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "seamless_camera_continuation",
+          "avoid_crossfade": true,
+          "reason": "Introduce a visually new beat for purpose=story_beat"
+        },
+        "muted_comprehension": "Show the idea through visible motion so purpose=story_beat reads without audio.",
+        "active_motion_classes": [
+          "camera_movement",
+          "object_movement",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement",
+          "physics_animation",
+          "motion_graphics"
+        ],
+        "passes_motion_minimum": true
+      },
+      "motion_effect": "slow_zoom_out",
+      "true_motion_camera": "pull_out",
+      "true_motion_performance": null,
+      "world_palette": "forest",
+      "excellence": {
+        "scene_motion": 100.0,
+        "camera_quality": 92.0,
+        "character_realism": 70.0,
+        "world_activity": 90.0,
+        "pacing": 90.0,
+        "visual_storytelling": 96.0,
+        "transition_quality": 85.0,
+        "cinematic_feel": 94.0,
+        "immersion": 91.7
+      }
+    },
+    {
+      "scene_number": 4,
+      "scene_id": "scene_03",
+      "duration_sec": 3.0,
+      "pacing_note": "within_2_4s",
+      "layers": {
+        "camera": {
+          "camera_move": "slow_cinematic_push",
+          "motion_effect": "cinematic_push_in",
+          "true_motion_camera": "push_in",
+          "depth_of_field": true,
+          "rack_focus": false,
+          "storytelling_reason": "Settle on the takeaway with a decisive push",
+          "forbid_static_lock": true
+        },
+        "character": null,
+        "world": {
+          "enabled": true,
+          "environment": "city",
+          "animations": [
+            "traffic",
+            "pedestrians",
+            "lights",
+            "smoke",
+            "weather"
+          ],
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "palette_hint": "night"
+        },
+        "object": {
+          "enabled": true,
+          "objects": [
+            {
+              "object": "hydrant",
+              "animations": [
+                "flowing_water",
+                "valves_turning",
+                "cutaway",
+                "pressure_visualization"
+              ],
+              "reason": "Narration discusses hydrant"
+            }
+          ],
+          "note": "Animate discussed objects \u2014 cutaways, flow, valves, physics"
+        },
+        "fx": {
+          "particle_effects": [
+            "rain_or_heat_haze",
+            "headlight_streaks"
+          ],
+          "lighting_movement": [
+            "key_drift",
+            "rim_pulse",
+            "practical_flicker"
+          ],
+          "physics_animation": false
+        },
+        "motion_graphics": {
+          "enabled": true,
+          "items": [
+            {
+              "type": "kinetic_typography",
+              "reason": "Numeric / claim emphasis"
+            }
+          ],
+          "animate_into_scene": true
+        },
+        "ui": {
+          "enabled": true,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "zoom_transition",
+          "avoid_crossfade": true,
+          "reason": "Introduce a visually new beat for purpose=payoff"
+        },
+        "muted_comprehension": "Show the idea through visible motion so purpose=payoff reads without audio.",
+        "active_motion_classes": [
+          "camera_movement",
+          "object_movement",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement",
+          "ui_animation",
+          "motion_graphics"
+        ],
+        "passes_motion_minimum": true
+      },
+      "motion_effect": "cinematic_push_in",
+      "true_motion_camera": "push_in",
+      "true_motion_performance": null,
+      "world_palette": "night",
+      "excellence": {
+        "scene_motion": 100.0,
+        "camera_quality": 92.0,
+        "character_realism": 70.0,
+        "world_activity": 90.0,
+        "pacing": 90.0,
+        "visual_storytelling": 96.0,
+        "transition_quality": 85.0,
+        "cinematic_feel": 94.0,
+        "immersion": 91.7
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "scene_number": 1,
+      "purpose": "hook",
+      "length_sec": 3.0,
+      "narration": "These colors could determine whether firefighters save your house.",
+      "subject": "fire hydrants",
+      "camera_motion": "dynamic zoom",
+      "animation_camera": "punch_in",
+      "animation_effect": "quick_punch_in",
+      "effect": {
+        "effect": "quick_punch_in",
+        "zoom": {
+          "start": 1.0,
+          "end": 1.12
+        },
+        "pan": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "intensity": 72,
+        "easing": "ease_in_out",
+        "source": "animation_engine_v1"
+      },
+      "ken_burns": false,
+      "forbid_static": true,
+      "max_still_sec": 2.0,
+      "transition_out": "hard_cut",
+      "animation_layers": {
+        "camera": {
+          "camera_move": "dynamic_zoom",
+          "motion_effect": "quick_punch_in",
+          "true_motion_camera": "punch_in",
+          "depth_of_field": false,
+          "rack_focus": false,
+          "storytelling_reason": "Pattern-interrupt with motivated energy in the first seconds",
+          "forbid_static_lock": true
+        },
+        "character": {
+          "enabled": true,
+          "characters": [
+            {
+              "name": "firefighter",
+              "kind": "character",
+              "source": "keyword"
+            }
+          ],
+          "actions": [
+            "blink",
+            "head_turn",
+            "walk",
+            "gesture_while_speaking",
+            "point_at_object",
+            "emotional_react",
+            "lip_sync"
+          ],
+          "performance": "celebrate",
+          "alive_requirements": [
+            "blink_naturally",
+            "head_turn",
+            "gesture_while_speaking",
+            "lip_sync_with_narration",
+            "visual_consistency_across_scenes"
+          ],
+          "primary": {
+            "name": "firefighter",
+            "kind": "character",
+            "source": "keyword"
+          }
+        },
+        "world": {
+          "enabled": true,
+          "environment": "city",
+          "animations": [
+            "traffic",
+            "pedestrians",
+            "lights",
+            "smoke",
+            "weather"
+          ],
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "palette_hint": "night"
+        },
+        "object": {
+          "enabled": true,
+          "objects": [
+            {
+              "object": "hydrant",
+              "animations": [
+                "flowing_water",
+                "valves_turning",
+                "cutaway",
+                "pressure_visualization"
+              ],
+              "reason": "Narration discusses hydrant"
+            }
+          ],
+          "note": "Animate discussed objects \u2014 cutaways, flow, valves, physics"
+        },
+        "fx": {
+          "particle_effects": [
+            "rain_or_heat_haze",
+            "headlight_streaks"
+          ],
+          "lighting_movement": [
+            "key_drift",
+            "rim_pulse",
+            "practical_flicker"
+          ],
+          "physics_animation": true
+        },
+        "motion_graphics": {
+          "enabled": true,
+          "items": [
+            {
+              "type": "animated_label",
+              "reason": "Clarify meaning with callouts"
+            },
+            {
+              "type": "arrow",
+              "reason": "Direct eye to the subject"
+            }
+          ],
+          "animate_into_scene": true
+        },
+        "ui": {
+          "enabled": true,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "hard_cut",
+          "avoid_crossfade": true,
+          "reason": "Introduce a visually new beat for purpose=hook"
+        },
+        "muted_comprehension": "Show fire hydrants through visible motion so purpose=hook reads without audio.",
+        "active_motion_classes": [
+          "camera_movement",
+          "character_animation",
+          "object_movement",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement",
+          "physics_animation",
+          "ui_animation",
+          "motion_graphics"
+        ],
+        "passes_motion_minimum": true
+      },
+      "true_motion": {
+        "camera": "punch_in",
+        "performance": "celebrate",
+        "palette": "night",
+        "living_background": true,
+        "not_ken_burns_only": true
+      },
+      "environment_fx": [
+        "traffic",
+        "pedestrians",
+        "lights",
+        "smoke",
+        "weather"
+      ],
+      "motion_graphics_plan": [
+        {
+          "type": "animated_label",
+          "reason": "Clarify meaning with callouts"
+        },
+        {
+          "type": "arrow",
+          "reason": "Direct eye to the subject"
+        }
+      ]
+    },
+    {
+      "scene_number": 2,
+      "purpose": "story_beat",
+      "length_sec": 3.5,
+      "narration": "Each color indicates a flow rating firefighters read at a glance.",
+      "camera_motion": "rack focus",
+      "animation_camera": "rack_focus",
+      "animation_effect": "documentary_slow_zoom",
+      "effect": {
+        "effect": "documentary_slow_zoom",
+        "zoom": {
+          "start": 1.0,
+          "end": 1.12
+        },
+        "pan": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "intensity": 72,
+        "easing": "ease_in_out",
+        "source": "animation_engine_v1"
+      },
+      "ken_burns": false,
+      "forbid_static": true,
+      "max_still_sec": 2.0,
+      "transition_out": "whip_pan",
+      "animation_layers": {
+        "camera": {
+          "camera_move": "rack_focus",
+          "motion_effect": "documentary_slow_zoom",
+          "true_motion_camera": "rack_focus",
+          "depth_of_field": true,
+          "rack_focus": true,
+          "storytelling_reason": "Advance eye interest while the concept is demonstrated",
+          "forbid_static_lock": true
+        },
+        "character": {
+          "enabled": true,
+          "characters": [
+            {
+              "name": "firefighter",
+              "kind": "character",
+              "source": "keyword"
+            }
+          ],
+          "actions": [
+            "blink",
+            "head_turn",
+            "walk",
+            "gesture_while_speaking",
+            "point_at_object",
+            "emotional_react",
+            "lip_sync"
+          ],
+          "performance": "walk_explain",
+          "alive_requirements": [
+            "blink_naturally",
+            "head_turn",
+            "gesture_while_speaking",
+            "lip_sync_with_narration",
+            "visual_consistency_across_scenes"
+          ],
+          "primary": {
+            "name": "firefighter",
+            "kind": "character",
+            "source": "keyword"
+          }
+        },
+        "world": {
+          "enabled": true,
+          "environment": "city",
+          "animations": [
+            "traffic",
+            "pedestrians",
+            "lights",
+            "smoke",
+            "weather"
+          ],
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "palette_hint": "night"
+        },
+        "object": {
+          "enabled": true,
+          "objects": [
+            {
+              "object": "hydrant",
+              "animations": [
+                "flowing_water",
+                "valves_turning",
+                "cutaway",
+                "pressure_visualization"
+              ],
+              "reason": "Narration discusses hydrant"
+            }
+          ],
+          "note": "Animate discussed objects \u2014 cutaways, flow, valves, physics"
+        },
+        "fx": {
+          "particle_effects": [
+            "rain_or_heat_haze",
+            "headlight_streaks"
+          ],
+          "lighting_movement": [
+            "key_drift",
+            "rim_pulse",
+            "practical_flicker"
+          ],
+          "physics_animation": false
+        },
+        "motion_graphics": {
+          "enabled": true,
+          "items": [
+            {
+              "type": "animated_label",
+              "reason": "Clarify meaning with callouts"
+            },
+            {
+              "type": "arrow",
+              "reason": "Direct eye to the subject"
+            }
+          ],
+          "animate_into_scene": true
+        },
+        "ui": {
+          "enabled": false,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "whip_pan",
+          "avoid_crossfade": true,
+          "reason": "Introduce a visually new beat for purpose=story_beat"
+        },
+        "muted_comprehension": "Show the idea through visible motion so purpose=story_beat reads without audio.",
+        "active_motion_classes": [
+          "camera_movement",
+          "character_animation",
+          "object_movement",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement",
+          "motion_graphics"
+        ],
+        "passes_motion_minimum": true
+      },
+      "true_motion": {
+        "camera": "rack_focus",
+        "performance": "walk_explain",
+        "palette": "night",
+        "living_background": true,
+        "not_ken_burns_only": true
+      },
+      "environment_fx": [
+        "traffic",
+        "pedestrians",
+        "lights",
+        "smoke",
+        "weather"
+      ],
+      "motion_graphics_plan": [
+        {
+          "type": "animated_label",
+          "reason": "Clarify meaning with callouts"
+        },
+        {
+          "type": "arrow",
+          "reason": "Direct eye to the subject"
+        }
+      ]
+    },
+    {
+      "scene_number": 3,
+      "purpose": "story_beat",
+      "length_sec": 4.0,
+      "narration": "A forest of pipes under the street feeds two nearby hydrants differently.",
+      "camera_motion": "crane",
+      "animation_camera": "pull_out",
+      "animation_effect": "slow_zoom_out",
+      "effect": {
+        "effect": "slow_zoom_out",
+        "zoom": {
+          "start": 1.0,
+          "end": 1.12
+        },
+        "pan": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "intensity": 72,
+        "easing": "ease_in_out",
+        "source": "animation_engine_v1"
+      },
+      "ken_burns": false,
+      "forbid_static": true,
+      "max_still_sec": 2.0,
+      "transition_out": "seamless_camera_continuation",
+      "animation_layers": {
+        "camera": {
+          "camera_move": "crane",
+          "motion_effect": "slow_zoom_out",
+          "true_motion_camera": "pull_out",
+          "depth_of_field": false,
+          "rack_focus": false,
+          "storytelling_reason": "Advance eye interest while the concept is demonstrated",
+          "forbid_static_lock": true
+        },
+        "character": null,
+        "world": {
+          "enabled": true,
+          "environment": "forest",
+          "animations": [
+            "leaves_moving",
+            "wind",
+            "birds",
+            "sunlight_shifting"
+          ],
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "palette_hint": "forest"
+        },
+        "object": {
+          "enabled": true,
+          "objects": [
+            {
+              "object": "hydrant",
+              "animations": [
+                "flowing_water",
+                "valves_turning",
+                "cutaway",
+                "pressure_visualization"
+              ],
+              "reason": "Narration discusses hydrant"
+            }
+          ],
+          "note": "Animate discussed objects \u2014 cutaways, flow, valves, physics"
+        },
+        "fx": {
+          "particle_effects": [
+            "pollen",
+            "leaf_specks"
+          ],
+          "lighting_movement": [
+            "key_drift",
+            "rim_pulse",
+            "practical_flicker"
+          ],
+          "physics_animation": true
+        },
+        "motion_graphics": {
+          "enabled": true,
+          "items": [
+            {
+              "type": "map",
+              "ease_in": "ease_out",
+              "reason": "Location/context beat"
+            }
+          ],
+          "animate_into_scene": true
+        },
+        "ui": {
+          "enabled": false,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "seamless_camera_continuation",
+          "avoid_crossfade": true,
+          "reason": "Introduce a visually new beat for purpose=story_beat"
+        },
+        "muted_comprehension": "Show the idea through visible motion so purpose=story_beat reads without audio.",
+        "active_motion_classes": [
+          "camera_movement",
+          "object_movement",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement",
+          "physics_animation",
+          "motion_graphics"
+        ],
+        "passes_motion_minimum": true
+      },
+      "true_motion": {
+        "camera": "pull_out",
+        "performance": "walk_explain",
+        "palette": "forest",
+        "living_background": true,
+        "not_ken_burns_only": true
+      },
+      "environment_fx": [
+        "leaves_moving",
+        "wind",
+        "birds",
+        "sunlight_shifting"
+      ],
+      "motion_graphics_plan": [
+        {
+          "type": "map",
+          "ease_in": "ease_out",
+          "reason": "Location/context beat"
+        }
+      ]
+    },
+    {
+      "scene_number": 4,
+      "purpose": "payoff",
+      "length_sec": 3.0,
+      "narration": "Flow rate matters when seconds decide if a house is saved.",
+      "camera_motion": "slow cinematic push",
+      "animation_camera": "push_in",
+      "animation_effect": "cinematic_push_in",
+      "effect": {
+        "effect": "cinematic_push_in",
+        "zoom": {
+          "start": 1.0,
+          "end": 1.12
+        },
+        "pan": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "intensity": 72,
+        "easing": "ease_in_out",
+        "source": "animation_engine_v1"
+      },
+      "ken_burns": false,
+      "forbid_static": true,
+      "max_still_sec": 2.0,
+      "transition_out": "zoom_transition",
+      "animation_layers": {
+        "camera": {
+          "camera_move": "slow_cinematic_push",
+          "motion_effect": "cinematic_push_in",
+          "true_motion_camera": "push_in",
+          "depth_of_field": true,
+          "rack_focus": false,
+          "storytelling_reason": "Settle on the takeaway with a decisive push",
+          "forbid_static_lock": true
+        },
+        "character": null,
+        "world": {
+          "enabled": true,
+          "environment": "city",
+          "animations": [
+            "traffic",
+            "pedestrians",
+            "lights",
+            "smoke",
+            "weather"
+          ],
+          "living_background": true,
+          "forbid_frozen_background": true,
+          "palette_hint": "night"
+        },
+        "object": {
+          "enabled": true,
+          "objects": [
+            {
+              "object": "hydrant",
+              "animations": [
+                "flowing_water",
+                "valves_turning",
+                "cutaway",
+                "pressure_visualization"
+              ],
+              "reason": "Narration discusses hydrant"
+            }
+          ],
+          "note": "Animate discussed objects \u2014 cutaways, flow, valves, physics"
+        },
+        "fx": {
+          "particle_effects": [
+            "rain_or_heat_haze",
+            "headlight_streaks"
+          ],
+          "lighting_movement": [
+            "key_drift",
+            "rim_pulse",
+            "practical_flicker"
+          ],
+          "physics_animation": false
+        },
+        "motion_graphics": {
+          "enabled": true,
+          "items": [
+            {
+              "type": "kinetic_typography",
+              "reason": "Numeric / claim emphasis"
+            }
+          ],
+          "animate_into_scene": true
+        },
+        "ui": {
+          "enabled": true,
+          "animations": [
+            "caption_pop",
+            "lower_third_slide"
+          ]
+        },
+        "transition_in": {
+          "transition": "zoom_transition",
+          "avoid_crossfade": true,
+          "reason": "Introduce a visually new beat for purpose=payoff"
+        },
+        "muted_comprehension": "Show the idea through visible motion so purpose=payoff reads without audio.",
+        "active_motion_classes": [
+          "camera_movement",
+          "object_movement",
+          "environmental_movement",
+          "particle_effects",
+          "lighting_movement",
+          "ui_animation",
+          "motion_graphics"
+        ],
+        "passes_motion_minimum": true
+      },
+      "true_motion": {
+        "camera": "push_in",
+        "performance": "walk_explain",
+        "palette": "night",
+        "living_background": true,
+        "not_ken_burns_only": true
+      },
+      "environment_fx": [
+        "traffic",
+        "pedestrians",
+        "lights",
+        "smoke",
+        "weather"
+      ],
+      "motion_graphics_plan": [
+        {
+          "type": "kinetic_typography",
+          "reason": "Numeric / claim emphasis"
+        }
+      ]
+    }
+  ],
+  "true_motion_plan": [
+    {
+      "scene_number": 1,
+      "camera": "punch_in",
+      "performance": "celebrate",
+      "palette": "night",
+      "duration_sec": 3.0,
+      "not_ken_burns_only": true
+    },
+    {
+      "scene_number": 2,
+      "camera": "rack_focus",
+      "performance": "walk_explain",
+      "palette": "night",
+      "duration_sec": 3.5,
+      "not_ken_burns_only": true
+    },
+    {
+      "scene_number": 3,
+      "camera": "pull_out",
+      "performance": null,
+      "palette": "forest",
+      "duration_sec": 4.0,
+      "not_ken_burns_only": true
+    },
+    {
+      "scene_number": 4,
+      "camera": "push_in",
+      "performance": null,
+      "palette": "night",
+      "duration_sec": 3.0,
+      "not_ken_burns_only": true
+    }
+  ],
+  "animation_excellence": {
+    "animation_excellence_score": 91.2,
+    "dimensions": {
+      "scene_motion": 100.0,
+      "camera_quality": 92.0,
+      "character_realism": 79.0,
+      "world_activity": 90.0,
+      "pacing": 90.0,
+      "visual_storytelling": 96.0,
+      "transition_quality": 85.0,
+      "cinematic_feel": 94.0,
+      "immersion": 94.7
+    },
+    "passed": true,
+    "target": 75.0
+  },
+  "quality_gate": {
+    "passed": true,
+    "decision": "APPROVE",
+    "failures": [],
+    "warnings": [],
+    "metrics": {
+      "static_runtime_pct": 0.0,
+      "locked_camera_scenes": 0,
+      "frozen_background_scenes": 0,
+      "empty_motion_scenes": 0,
+      "unique_camera_moves": 4,
+      "scene_count": 4,
+      "runtime_sec": 13.5
+    }
+  },
+  "standards": {
+    "every_scene_must_move": true,
+    "max_still_without_motion_sec": 2.0,
+    "target_scene_duration_sec": [
+      2.0,
+      4.0
+    ],
+    "no_crossfade_default": true,
+    "no_frozen_backgrounds": true
+  },
+  "summary": {
+    "animation_excellence_score": 91.2,
+    "quality_gate": "APPROVE",
+    "unique_cameras": 4,
+    "character_scenes": 2,
+    "motion_graphics_scenes": 4
+  },
+  "upstream_cinematography_handoff": {
+    "provider": "Cinematography Engine",
+    "scene_count": 0
+  }
+}
