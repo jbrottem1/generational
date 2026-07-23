@@ -1,13 +1,24 @@
-# Generational — Local Windows Workstation Certification
+# Generational - Local Windows Workstation Certification
 
 **Run this on your Windows PC only.**  
-Do **not** run it inside the Cursor cloud VM.
+Do **not** run it inside a Cursor cloud VM.
 
-## One command
+## Recommended one command (install Blender if needed + certify)
 
-From File Explorer: double-click `CERTIFY.bat`
+```bat
+git pull origin migration/windows-workstation
+cd verification\local_windows
+INSTALL_AND_CERTIFY.bat
+```
 
-Or from CMD / PowerShell (in this folder):
+This will:
+1. Detect existing Blender installs
+2. Install official `BlenderFoundation.Blender` via winget if missing
+3. Add Blender to the user PATH when needed
+4. Run real Blender scene render probes (mesh + camera + light + PNG + short anim)
+5. Write `WORKSTATION_CERTIFICATION_REPORT.md`
+
+## Certification only (Blender already installed)
 
 ```bat
 CERTIFY.bat
@@ -23,44 +34,29 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\certify_workstation.ps1
 
 | Domain | Checks |
 |---|---|
-| Windows | OS version, build, architecture |
-| CPU / RAM | Model, cores, total memory |
-| GPU | NVIDIA model, VRAM, driver |
-| Accelerators | CUDA, OptiX, Vulkan, OpenGL |
-| Blender | Install path, version, `-b` render, `bpy`, Cycles, Eevee, GPU devices |
-| Python | Version, Generational venv, pip packages |
-| Git | Version, remote, auth, LFS, push/pull dry checks |
-| Generational | Repo layout, production folders, Blender/character/environment assets, output dirs |
+| Windows | OS, CPU, RAM |
+| GPU | WMI + `nvidia-smi` (supported fields only) |
+| Blender | exe path, version, background, `bpy`, Eevee, Cycles, FFmpeg, devices |
+| Render | Real one-frame PNG + short Blender animation under `certification_artifacts\` |
+| Python / Git / LFS / FFmpeg | Presence and basic health |
+| Generational assets | `.blend` inventory + DOCTOR_001 metadata; sync diagnosis if missing |
+
+## Probe scripts
+
+- `probe_bpy.py` - background/`bpy`/engine/device JSON probe
+- `probe_scene_render.py` - real scene render probe (not FFmpeg-only graphics)
+- `probe_render.py` - legacy helper retained for compatibility
 
 ## Output
 
-Companion probe scripts (used by the auditor, do not edit):
-
-- `probe_bpy.py`
-- `probe_render.py`
-
-Creates in this folder:
-
-- `WORKSTATION_CERTIFICATION_REPORT.md` — full report with **PASS** or **FAIL**
-- `certification_artifacts\` — probe logs, sample Blender render if Blender is present
+- `WORKSTATION_CERTIFICATION_REPORT.md`
+- `certification_artifacts\` (PNG, MP4 or PNG sequence, probe JSON, logs)
 
 Exit codes:
+- `0` = certified
+- `2` = certification failed (blockers listed in report)
 
-- `0` = **PASS** (certified)
-- `1` = **FAIL** (fixes listed in the report)
+## Asset sync note
 
-## Optional arguments
-
-```powershell
-.\certify_workstation.ps1 -RepoRoot "C:\AI\Projects\Generational"
-.\certify_workstation.ps1 -BlenderExe "C:\Program Files\Blender Foundation\Blender 4.2\blender.exe"
-.\certify_workstation.ps1 -SkipNetwork
-```
-
-## After a FAIL
-
-Install the fixes listed at the bottom of the report, then re-run `CERTIFY.bat` until it prints:
-
-```text
-✅ WORKSTATION CERTIFIED FOR GENERATIONAL PRODUCTION
-```
+Production `.blend` files are currently **absent from Git** (not an LFS checkout failure).  
+See `ASSET_SYNC_FINDINGS.md` and `RECOMMENDED_gitattributes.txt` (proposal only; not applied).

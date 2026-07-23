@@ -1,53 +1,104 @@
 # Blender/bpy probe for Generational workstation certification.
-# Invoked as: blender -b --python probe_bpy.py
+# Usage:
+#   blender --background --python probe_bpy.py -- <output.json>
 import json
+import sys
 
 import bpy
 
-info = {
-    "version": bpy.app.version_string,
-    "version_cycle": getattr(bpy.app, "version_cycle", ""),
-    "binary_path": bpy.app.binary_path,
-    "build_platform": str(getattr(bpy.app, "build_platform", "")),
-}
 
-engine_ids = []
-try:
-    rna = bpy.context.scene.render.bl_rna.properties.get("engine")
-    if rna and hasattr(rna, "enum_items"):
-        engine_ids = [i.identifier for i in rna.enum_items]
-except Exception as ex:  # noqa: BLE001
-    engine_ids = ["error:" + str(ex)]
+def main() -> int:
+    out_path = ""
+    if "--" in sys.argv:
+        idx = sys.argv.index("--")
+        if idx + 1 < len(sys.argv):
+            out_path = sys.argv[idx + 1]
 
-joined = ",".join(engine_ids).upper()
-info["render_engines"] = engine_ids
-info["has_cycles"] = "CYCLES" in joined
-info["has_eevee"] = "EEVEE" in joined
+    engine_ids = []
+    try:
+        rna = bpy.context.scene.render.bl_rna.properties.get("engine")
+        if rna and hasattr(rna, "enum_items"):
+            engine_ids = [i.identifier for i in rna.enum_items]
+    except Exception as ex:  # noqa: BLE001
+        engine_ids = ["error:" + str(ex)]
 
-devices = []
-try:
-    cycles_prefs = bpy.context.preferences.addons["cycles"].preferences
-    for dtype in ("CUDA", "OPTIX", "HIP", "ONEAPI", "METAL", "CPU"):
+    joined = ",".join(engine_ids).upper()
+    eevee = ("EEVEE" in joined)
+    cycles = ("CYCLES" in joined)
+
+    ffmpeg_support = False
+    try:
+        fmt_prop = bpy.context.scene.render.image_settings.bl_rna.properties.get("file_format")
+        if fmt_prop and hasattr(fmt_prop, "enum_items"):
+            formats = [i.identifier.upper() for i in fmt_prop.enum_items]
+            ffmpeg_support = "FFMPEG" in formats
+    except Exception:  # noqa: BLE001
+        ffmpeg_support = False
+
+    devices = []
+    optix = cuda = hip = oneapi = metal = False
+    device_summary = "none"
+    try:
+        prefs = bpy.context.preferences.addons["cycles"].preferences
+        for dtype in ("OPTIX", "CUDA", "HIP", "ONEAPI", "METAL", "CPU"):
+            try:
+                prefs.get_devices_for_type(dtype)
+            except Exception:  # noqa: BLE001
+                pass
         try:
-            cycles_prefs.get_devices_for_type(dtype)
+            prefs.get_devices()
         except Exception:  # noqa: BLE001
             pass
-    try:
-        cycles_prefs.get_devices()
-    except Exception:  # noqa: BLE001
-        pass
-    for d in getattr(cycles_prefs, "devices", []):
-        devices.append(
-            {
-                "name": getattr(d, "name", ""),
-                "type": getattr(d, "type", ""),
-                "use": bool(getattr(d, "use", False)),
-            }
-        )
-    info["cycles_devices"] = devices
-    info["cycles_compute_device"] = str(getattr(cycles_prefs, "compute_device_type", ""))
-except Exception as ex:  # noqa: BLE001
-    info["cycles_devices"] = []
-    info["cycles_devices_error"] = str(ex)
+        for d in list(getattr(prefs, "devices", [])):
+            dtype = str(getattr(d, "type", "")).upper()
+            name = str(getattr(d, "name", ""))
+            devices.append({"name": name, "type": dtype, "use": bool(getattr(d, "use", False))})
+            if dtype == "OPTIX":
+                optix = True
+            elif dtype == "CUDA":
+                cuda = True
+            elif dtype == "HIP":
+                hip = True
+            elif dtype == "ONEAPI":
+                oneapi = True
+            elif dtype == "METAL":
+                metal = True
+        if devices:
+            device_summary = "; ".join("%s:%s" % (d["type"], d["name"]) for d in devices)
+        else:
+            device_summary = "CPU (no GPU devices enumerated)"
+    except Exception as ex:  # noqa: BLE001
+        device_summary = "cycles prefs error: %s" % ex
 
-print("GENERATIONAL_BLENDER_PROBE=" + json.dumps(info))
+    cpu_only = not (optix or cuda or hip or oneapi or metal)
+
+    info = {
+        "background_ok": True,
+        "bpy_ok": True,
+        "version": bpy.app.version_string,
+        "binary_path": bpy.app.binary_path,
+        "render_engines": engine_ids,
+        "eevee_available": eevee,
+        "cycles_available": cycles,
+        "ffmpeg_support": ffmpeg_support,
+        "optix": optix,
+        "cuda": cuda,
+        "hip": hip,
+        "oneapi": oneapi,
+        "metal": metal,
+        "cpu_only": cpu_only,
+        "device_summary": device_summary,
+        "cycles_devices": devices,
+    }
+
+    text = json.dumps(info, indent=2)
+    print("GENERATIONAL_BLENDER_PROBE=" + json.dumps(info))
+    if out_path:
+        with open(out_path, "w", encoding="utf-8") as fh:
+            fh.write(text)
+            fh.write("\n")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
