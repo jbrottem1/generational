@@ -317,7 +317,7 @@ else {
 
     # Background + bpy
     $bpyPy = Join-Path $ArtifactDir "probe_bpy.py"
-    @"
+    @'
 import bpy, sys, json
 info = {
     "version": bpy.app.version_string,
@@ -325,46 +325,46 @@ info = {
     "binary_path": bpy.app.binary_path,
     "build_platform": getattr(bpy.app, "build_platform", ""),
 }
-# Engines
-engines = []
-try:
-    for e in bpy.types.RenderEngine.__subclasses__():
-        pass
-except Exception:
-    pass
 engine_ids = []
 try:
-    # Prefer render.engines enum if available
     rna = bpy.context.scene.render.bl_rna.properties.get("engine")
     if rna and hasattr(rna, "enum_items"):
         engine_ids = [i.identifier for i in rna.enum_items]
 except Exception as ex:
     engine_ids = ["error:" + str(ex)]
+# Fallback known engines
+joined = ",".join(engine_ids).upper()
 info["render_engines"] = engine_ids
-info["has_cycles"] = any("CYCLES" == e or e.endswith("CYCLES") for e in engine_ids) or "CYCLES" in engine_ids
-info["has_eevee"] = any("EEVEE" in e for e in engine_ids)
+info["has_cycles"] = ("CYCLES" in joined) or ("CYCLES" in engine_ids)
+info["has_eevee"] = ("EEVEE" in joined)
 
-# Cycles devices
 devices = []
 try:
     cycles_prefs = bpy.context.preferences.addons["cycles"].preferences
+    # Refresh device list for CUDA/OptiX/HIP
+    for dtype in ("CUDA", "OPTIX", "HIP", "ONEAPI", "METAL", "CPU"):
+        try:
+            cycles_prefs.get_devices_for_type(dtype)
+        except Exception:
+            pass
     try:
         cycles_prefs.get_devices()
     except Exception:
         pass
     for d in getattr(cycles_prefs, "devices", []):
         devices.append({
-            "name": d.name,
-            "type": d.type,
+            "name": getattr(d, "name", ""),
+            "type": getattr(d, "type", ""),
             "use": bool(getattr(d, "use", False)),
         })
     info["cycles_devices"] = devices
-    info["cycles_compute_device"] = getattr(cycles_prefs, "compute_device_type", "")
+    info["cycles_compute_device"] = str(getattr(cycles_prefs, "compute_device_type", ""))
 except Exception as ex:
+    info["cycles_devices"] = []
     info["cycles_devices_error"] = str(ex)
 
 print("GENERATIONAL_BLENDER_PROBE=" + json.dumps(info))
-"@ | Set-Content -Encoding UTF8 $bpyPy
+'@ | Set-Content -Encoding UTF8 $bpyPy
 
     $probe = Invoke-Capture -FilePath $blender -ArgumentList @("-b", "--python", $bpyPy) -TimeoutSec 120
     $probeJsonLine = ($probe.Combined -split "`n" | Where-Object { $_ -match "^GENERATIONAL_BLENDER_PROBE=" } | Select-Object -Last 1)
@@ -427,25 +427,37 @@ print("GENERATIONAL_BLENDER_PROBE=" + json.dumps(info))
     # One-frame background render (empty scene — verifies render pipeline)
     if ($blenderOk) {
         $frameOut = Join-Path $ArtifactDir "blender_verification_frame.png"
+        $frameOutUnix = $frameOut -replace "\\", "/"
         $renderPy = Join-Path $ArtifactDir "probe_render.py"
-        @"
+        $renderPyContent = @"
 import bpy, os
-out = r"$($frameOut -replace '\\','\\')"
+out = r'$frameOutUnix'
 bpy.ops.wm.read_factory_settings(use_empty=False)
 scene = bpy.context.scene
-scene.render.engine = "CYCLES"
+scene.render.engine = 'CYCLES'
 try:
-    scene.cycles.device = "GPU"
+    prefs = bpy.context.preferences.addons['cycles'].preferences
+    # Prefer OptiX then CUDA then HIP
+    for compute in ('OPTIX', 'CUDA', 'HIP', 'ONEAPI'):
+        try:
+            prefs.compute_device_type = compute
+            prefs.get_devices()
+            break
+        except Exception:
+            continue
+    scene.cycles.device = 'GPU'
 except Exception:
     pass
 scene.cycles.samples = 16
 scene.render.resolution_x = 640
 scene.render.resolution_y = 360
+scene.render.image_settings.file_format = 'PNG'
 scene.render.filepath = out
 bpy.ops.render.render(write_still=True)
-print("GENERATIONAL_RENDER_OK=" + out)
-print("GENERATIONAL_RENDER_EXISTS=" + str(os.path.exists(out)))
-"@ | Set-Content -Encoding UTF8 $renderPy
+print('GENERATIONAL_RENDER_OK=' + out)
+print('GENERATIONAL_RENDER_EXISTS=' + str(os.path.exists(out)))
+"@
+        Set-Content -Encoding UTF8 -Path $renderPy -Value $renderPyContent
         $rr = Invoke-Capture -FilePath $blender -ArgumentList @("-b", "--python", $renderPy) -TimeoutSec 300
         if ((Test-Path $frameOut) -and ($rr.Combined -match "GENERATIONAL_RENDER_EXISTS=True")) {
             $Checks.Add((New-Check "Blender" "Background one-frame render" "PASS" $frameOut))
