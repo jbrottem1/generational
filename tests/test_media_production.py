@@ -59,7 +59,9 @@ def test_full_production_builds_render_package():
     rp = pkg.get("render_package", {})
     assert rp.get("package_id")
     assert rp.get("metadata", {}).get("ready_for_render")
-    assert pkg.get("queue_status") == "queued"
+    # Autonomous publishing is disabled by default — packages are held, not posted.
+    assert pkg.get("queue_status") == "held"
+    assert pkg.get("hold_reason") == "autonomous_publishing_disabled"
 
 
 def test_run_media_production_from_intelligence_context():

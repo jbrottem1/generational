@@ -17,10 +17,34 @@ blank page to fail on.
 from __future__ import annotations
 
 from engines.heuristics import content_words
+from services.editorial import (
+    MOTIVATIONAL_PROGRESSION,
+    empty_story_beats,
+    is_motivational_niche,
+)
+from services.editorial.pillars import DEFAULT_MOTIVATION_PILLARS
 from services.scripts.models import ScriptVariant
 from services.scripts.platforms import get_platform_spec
 
 DEFAULT_VARIANT_COUNT = 3
+
+# Flagship motivational archetype — Hook → Struggle → Example → Lesson → Application → Ending.
+STRUGGLE_TO_ACTION_STYLE = {
+    "key": "struggle_to_action",
+    "label": "Struggle to Action",
+    "hook": "{hook}",
+    "interrupt": "If you've been stuck with {subject}, stay with this — the struggle is the point.",
+    "loop": "By the end you'll have one concrete action for {subject} you can take today.",
+    "arc": list(MOTIVATIONAL_PROGRESSION),
+    "cta": "Do one hard thing for {subject} today. Then follow for the next lesson that builds on this.",
+    "music": "low cinematic pulse that rises into quiet resolve — never overpowering speech",
+    "sfx": [
+        "soft ambient swell under the struggle",
+        "distant storm or ocean under the example",
+        "clean resolve hit on the final line",
+    ],
+    "motivational": True,
+}
 
 # Narrative archetypes. Each produces a structurally different telling of the
 # same idea so the scorer has real alternatives to choose between.
@@ -69,7 +93,36 @@ VARIANT_STYLES = [
         "music": "ticking rhythmic build that drops at number one",
         "sfx": ["tick transition between items", "riser into number one", "impact hit on the final payoff"],
     },
+    STRUGGLE_TO_ACTION_STYLE,
 ]
+
+# For Motivation niche: lead with Struggle to Action, then Story First / Authority.
+MOTIVATIONAL_VARIANT_ORDER = (
+    "struggle_to_action",
+    "story_first",
+    "authority_reveal",
+    "myth_bust",
+    "countdown_payoff",
+)
+
+
+def _styles_for_niche(niche: str, variant_count: int) -> list:
+    """Select archetype order — motivational niche prioritizes Struggle to Action."""
+    by_key = {style["key"]: style for style in VARIANT_STYLES}
+    if is_motivational_niche(niche):
+        ordered = [by_key[key] for key in MOTIVATIONAL_VARIANT_ORDER if key in by_key]
+    else:
+        ordered = list(VARIANT_STYLES)
+    return ordered[: max(1, variant_count)]
+
+
+def _pick_pillar(idea: dict, niche: str) -> str:
+    pillars = idea.get("content_pillars") or idea.get("pillars") or []
+    if pillars:
+        return str(pillars[0])
+    if is_motivational_niche(niche):
+        return DEFAULT_MOTIVATION_PILLARS[0]
+    return ""
 
 
 def _fact_lines(research: dict, niche: str) -> list:
@@ -82,6 +135,87 @@ def _fact_lines(research: dict, niche: str) -> list:
             "The pattern shows up again and again once you know what to look for.",
         ]
     return lines
+
+
+def _trim_to_words(text: str, target_words: int) -> str:
+    words = text.split()
+    if len(words) <= target_words:
+        return text
+    trimmed = " ".join(words[:target_words])
+    if "." in trimmed:
+        return trimmed[: trimmed.rfind(".") + 1]
+    return trimmed
+
+
+def _motivational_story_beats(
+    idea: dict,
+    subject: str,
+    facts: list,
+    hook: str,
+    pillar: str,
+) -> dict:
+    """Build the six required motivational beats from research-backed facts only."""
+    angle = idea.get("angle", "the real work")
+    fact = facts[0] if facts else (
+        f"People who improve at {subject} do it through repeated, uncomfortable practice — not slogans."
+    )
+    fact2 = facts[1] if len(facts) > 1 else ""
+    pillar_label = pillar.replace("_", " ") if pillar else subject
+    beats = empty_story_beats()
+    beats["hook"] = hook
+    beats["struggle"] = (
+        f"You've probably felt this with {subject}: you know what you should do, "
+        f"and you still freeze. The struggle isn't a lack of information — it's the "
+        f"weight of starting when nobody is watching."
+    )
+    beats["real_life_example"] = (
+        f"{fact} "
+        + (f"{fact2} " if fact2 else "")
+        + f"That is not a motivational slogan. It is a documented pattern around {subject}."
+    )
+    beats["lesson"] = (
+        f"The lesson behind {angle.lower()} is simple: {pillar_label} is built in private, "
+        f"through responsibility you choose when it would be easier to quit."
+    )
+    beats["application"] = (
+        f"Today, take one concrete action on {subject} that takes less than ten minutes — "
+        f"then repeat it tomorrow before you negotiate with your mood."
+    )
+    beats["memorable_ending"] = (
+        "You don't need a new personality. You need the next honest action. "
+        "Get off the couch. Begin."
+    )
+    return beats
+
+
+def _story_from_beats(beats: dict) -> str:
+    order = (
+        "struggle",
+        "real_life_example",
+        "lesson",
+        "application",
+        "memorable_ending",
+    )
+    return " ".join(str(beats.get(key, "")).strip() for key in order if beats.get(key))
+
+
+def _infer_story_beats(hook: str, core_story: str, cta: str) -> dict:
+    """Best-effort beat map for non-motivational archetypes (quality scoring)."""
+    beats = empty_story_beats()
+    sentences = [s.strip() for s in core_story.replace("?", ".").split(".") if s.strip()]
+    beats["hook"] = hook
+    if sentences:
+        beats["struggle"] = sentences[0] + "."
+    if len(sentences) > 1:
+        beats["real_life_example"] = sentences[1] + "."
+    if len(sentences) > 2:
+        beats["lesson"] = sentences[2] + "."
+    if len(sentences) > 3:
+        beats["application"] = sentences[3] + "."
+    else:
+        beats["application"] = cta
+    beats["memorable_ending"] = (sentences[-1] + ".") if sentences else cta
+    return beats
 
 
 def _core_story(idea: dict, subject: str, facts: list, target_words: int, style: dict) -> str:
@@ -114,14 +248,35 @@ def _core_story(idea: dict, subject: str, facts: list, target_words: int, style:
         beats.insert(-1, expanders[index % len(expanders)])
         index += 1
 
-    story = " ".join(beats)
-    words = story.split()
-    if len(words) > target_words:
-        # Trim on a sentence boundary near the budget, keeping the takeaway.
-        story = " ".join(words[:target_words])
-        if "." in story:
-            story = story[: story.rfind(".") + 1]
-    return story
+    return _trim_to_words(" ".join(beats), target_words)
+
+
+def _motivational_broll(subject: str) -> list:
+    return [
+        f"Cinematic landscape under changing weather — metaphor for {subject}",
+        "Slow pan across mountains, oceans, or storm clouds with subtle camera drift",
+        "Documentary footage of craftsmen, athletes, or builders at work — no faces required",
+        "Time-lapse of a city waking / a path being walked — progress through effort",
+        "Symbolic close-ups: worn tools, training shoes, notebooks, unfinished work",
+    ]
+
+
+def _motivational_visual_prompts(subject: str, pillar: str) -> list:
+    pillar_label = pillar.replace("_", " ") if pillar else subject
+    return [
+        (
+            f"Edge-to-edge cinematic landscape at dawn, atmosphere of quiet resolve about {pillar_label}, "
+            f"subtle push-in, photorealistic, 9:16 vertical, no text overlays"
+        ),
+        (
+            f"Documentary-style shot of disciplined practice related to {subject}, "
+            f"natural light, shallow depth of field, slow pan, no faces"
+        ),
+        (
+            f"Symbolic imagery of responsibility and action — worn path, storm clearing over mountains, "
+            f"cinematic color grade, parallax drift, ultra-detailed"
+        ),
+    ]
 
 
 def _retention_checkpoints(runtime_sec: int, subject: str) -> list:
@@ -222,11 +377,17 @@ def generate_variants(
     spec = get_platform_spec(platform)
     facts = _fact_lines(research or {}, niche)
     subject = subject or "this topic"
+    pillar = _pick_pillar(idea, niche)
+    motivational = is_motivational_niche(niche) or bool(idea.get("content_pillars"))
     variants = []
 
-    for index, style in enumerate(VARIANT_STYLES[: max(1, variant_count)]):
+    for index, style in enumerate(_styles_for_niche(niche, variant_count)):
         hook = style["hook"].format(hook=idea.get("hook", ""), subject=subject).strip()
-        hook = hook or f"What nobody tells you about {subject}."
+        hook = hook or (
+            f"The hardest part of {subject} is not knowing what to do — it's doing it when you don't feel ready."
+            if style.get("motivational") or motivational
+            else f"What nobody tells you about {subject}."
+        )
         interrupt = style["interrupt"].format(subject=subject)
         loop = style["loop"].format(subject=subject)
         cta = style["cta"].format(subject=subject)
@@ -234,6 +395,27 @@ def generate_variants(
         # so total spoken words land near the platform's target runtime.
         overhead = len(" ".join((hook, interrupt, loop, cta)).split())
         story_budget = max(40, spec.target_words - overhead)
+
+        if style.get("motivational") or (motivational and style["key"] == "struggle_to_action"):
+            story_beats = _motivational_story_beats(idea, subject, facts, hook, pillar)
+            core_story = _trim_to_words(_story_from_beats(story_beats), story_budget)
+            broll = _motivational_broll(subject)
+            visuals = _motivational_visual_prompts(subject, pillar)
+        else:
+            core_story = _core_story(idea, subject, facts, story_budget, style)
+            story_beats = _infer_story_beats(hook, core_story, cta) if motivational else empty_story_beats()
+            if motivational and story_beats:
+                # Keep application concrete even on non-flagship archetypes.
+                story_beats["application"] = story_beats.get("application") or (
+                    f"Today, take one concrete step on {subject} before the day ends."
+                )
+            broll = _motivational_broll(subject) if motivational else _broll_suggestions(subject, niche)
+            visuals = (
+                _motivational_visual_prompts(subject, pillar)
+                if motivational
+                else _visual_prompts(subject, niche, style)
+            )
+
         variant = ScriptVariant(
             variant_id=f"{style['key']}_{index + 1}",
             style=style["key"],
@@ -242,15 +424,17 @@ def generate_variants(
             hook=hook,
             pattern_interrupt=interrupt,
             curiosity_loop=loop,
-            core_story=_core_story(idea, subject, facts, story_budget, style),
+            core_story=core_story,
             emotional_progression=list(style["arc"]),
             call_to_action=cta,
             seo_keywords=_seo_keywords(idea, subject, niche),
-            broll_suggestions=_broll_suggestions(subject, niche),
-            visual_prompts=_visual_prompts(subject, niche, style),
+            broll_suggestions=broll,
+            visual_prompts=visuals,
             sound_effects=list(style["sfx"]),
             music_style=f"{style['music']} ({spec.tone})",
             source="heuristic",
+            story_beats=story_beats,
+            content_pillar=pillar,
         )
         variant.retention_checkpoints = _retention_checkpoints(spec.target_runtime_sec, subject)
         finalize_variant(variant, spec.words_per_minute)

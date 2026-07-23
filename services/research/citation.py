@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from engines.critic import analyze_script
 from engines.heuristics import ABSOLUTE_CLAIMS, AUTHORITY_WORDS, clamp, count_hits, has_digit
+from services.editorial.integrity import quote_integrity_flags
 from services.research.models import ResearchDocument
 
 
@@ -59,6 +60,11 @@ def analyze_citations(
 
     supporting = _match_sources(f"{hook} {script}", documents)
     unsupported = _unsupported_claims(script)
+    quote_flags = quote_integrity_flags(script, research)
+    # Quote/history integrity failures count as unsupported for the publish gate.
+    for flag in quote_flags:
+        if flag not in unsupported:
+            unsupported.append(flag)
     has_sources = bool(supporting)
     base_confidence = research.get("research_confidence", 0.4)
 
@@ -82,6 +88,8 @@ def analyze_citations(
         notes.append("No direct source overlap detected — claims rely on general research brief.")
     if unsupported:
         notes.append(f"{len(unsupported)} unsupported claim warning(s) detected.")
+    if quote_flags:
+        notes.append(f"{len(quote_flags)} quotation/history integrity flag(s) — verify before publish.")
     if research.get("fallback"):
         notes.append("Research ran in demo/fallback mode — verify facts before publishing.")
 
@@ -104,6 +112,7 @@ def analyze_citations(
         "supporting_sources": supporting,
         "claim_confidence": claim_confidence,
         "unsupported_claims": unsupported,
+        "quote_integrity_flags": quote_flags,
         "fact_check_notes": notes,
         "citation_list": citation_list,
         "citation_count": len(citation_list),

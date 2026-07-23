@@ -23,16 +23,19 @@ from engines.heuristics import (
     sentences,
     stable_jitter,
 )
+from services.editorial import score_story_structure, score_viewer_progression
 from services.scripts.models import ScriptVariant
 from services.scripts.platforms import get_platform_spec
 
 VARIANT_SCORE_WEIGHTS = {
-    "hook_power": 0.24,
-    "retention_engineering": 0.22,
-    "emotional_arc": 0.14,
-    "story_substance": 0.16,
-    "platform_fit": 0.14,
-    "cta_strength": 0.10,
+    "hook_power": 0.20,
+    "retention_engineering": 0.18,
+    "emotional_arc": 0.12,
+    "story_substance": 0.12,
+    "story_structure": 0.12,
+    "action_drive": 0.08,
+    "platform_fit": 0.10,
+    "cta_strength": 0.08,
 }
 
 
@@ -108,11 +111,28 @@ def _cta_strength(variant: ScriptVariant) -> int:
     score = 40
     if cta.strip():
         score += 15
-    action_verbs = ["follow", "subscribe", "share", "comment", "save", "repost", "tag"]
+    action_verbs = ["follow", "subscribe", "share", "comment", "save", "repost", "tag", "start", "do"]
     score += min(count_hits(cta, action_verbs), 2) * 12
     if len(cta.split()) <= 22:
         score += 8
     return clamp(score)
+
+
+def _story_structure(variant: ScriptVariant) -> int:
+    result = score_story_structure(variant.story_beats, variant.full_script)
+    return result["score"]
+
+
+def _action_drive(variant: ScriptVariant) -> int:
+    """Reward concrete application + immediate-action close (transformation, not hype)."""
+    progression = score_viewer_progression(variant.emotional_progression, variant.full_script)
+    score = progression["score"]
+    application = (variant.story_beats or {}).get("application", "")
+    if any(word in application.lower() for word in ("today", "this week", "start", "first step")):
+        score = clamp(score + 8)
+    if "couch" in variant.full_script.lower() or "begin" in variant.full_script.lower():
+        score = clamp(score + 4)
+    return score
 
 
 def score_variant(variant: ScriptVariant) -> ScriptVariant:
@@ -122,6 +142,8 @@ def score_variant(variant: ScriptVariant) -> ScriptVariant:
         "retention_engineering": _retention_engineering(variant),
         "emotional_arc": _emotional_arc(variant),
         "story_substance": _story_substance(variant),
+        "story_structure": _story_structure(variant),
+        "action_drive": _action_drive(variant),
         "platform_fit": _platform_fit(variant),
         "cta_strength": _cta_strength(variant),
     }

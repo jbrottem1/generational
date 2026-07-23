@@ -1,0 +1,125 @@
+{
+  "production": "flagship_you_are_being_built",
+  "topic": "You are not behind in life—you are being built.",
+  "thesis": "Feeling behind is often the invisible construction phase — progress compounds in private before the world can see it.",
+  "mp4_path": "/workspace/productions/flagship_you_are_being_built/render/you_are_being_built_short.mp4",
+  "duration_sec": 37.92,
+  "file_size_bytes": 4818652,
+  "audio_duration_sec": 37.92,
+  "voice": "en-US-AndrewNeural",
+  "video_streams": [
+    {
+      "codec_name": "h264",
+      "codec_type": "video",
+      "width": 1080,
+      "height": 1920,
+      "avg_frame_rate": "30/1",
+      "nb_frames": "1137"
+    }
+  ],
+  "audio_streams": [
+    {
+      "codec_name": "aac",
+      "codec_type": "audio",
+      "sample_rate": "44100",
+      "channels": 1,
+      "avg_frame_rate": "0/0",
+      "nb_frames": "1635"
+    }
+  ],
+  "frame_samples": [
+    {
+      "t": 0.5,
+      "path": "/workspace/productions/flagship_you_are_being_built/validation/frames/frame_0.jpg",
+      "luma_range": [
+        0,
+        255
+      ],
+      "blank": false
+    },
+    {
+      "t": 9.48,
+      "path": "/workspace/productions/flagship_you_are_being_built/validation/frames/frame_1.jpg",
+      "luma_range": [
+        0,
+        255
+      ],
+      "blank": false
+    },
+    {
+      "t": 18.96,
+      "path": "/workspace/productions/flagship_you_are_being_built/validation/frames/frame_2.jpg",
+      "luma_range": [
+        0,
+        255
+      ],
+      "blank": false
+    },
+    {
+      "t": 28.44,
+      "path": "/workspace/productions/flagship_you_are_being_built/validation/frames/frame_3.jpg",
+      "luma_range": [
+        0,
+        255
+      ],
+      "blank": false
+    },
+    {
+      "t": 37.42,
+      "path": "/workspace/productions/flagship_you_are_being_built/validation/frames/frame_4.jpg",
+      "luma_range": [
+        0,
+        255
+      ],
+      "blank": false
+    }
+  ],
+  "story_structure": {
+    "score": 98,
+    "complete": true,
+    "missing_beats": [],
+    "note": "Complete Hook → Struggle → Example → Lesson → Application → Ending arc."
+  },
+  "psychology_progression": {
+    "score": 98,
+    "stages": [
+      "curiosity",
+      "recognition",
+      "reflection",
+      "hope",
+      "determination",
+      "immediate_action"
+    ],
+    "present": [
+      "curiosity",
+      "recognition",
+      "reflection",
+      "hope",
+      "determination",
+      "immediate_action"
+    ],
+    "missing": [],
+    "order_hits": 6,
+    "note": "Viewer feels understood first, then leaves determined to act."
+  },
+  "critique": {
+    "issues": [],
+    "score": 100
+  },
+  "quote_integrity_flags": [],
+  "checks": {
+    "narration_exists": true,
+    "audio_present_in_mp4": true,
+    "visuals_exist": true,
+    "no_blank_frames": true,
+    "no_placeholder_frames": true,
+    "captions_align_with_narration": true,
+    "script_passes_coherence_review": true,
+    "runtime_30_to_40_sec": true,
+    "vertical_1080x1920": true,
+    "not_uploaded": true,
+    "not_published": true
+  },
+  "all_passed": true,
+  "generated_at": "2026-07-22T15:27:13.336220+00:00"
+}

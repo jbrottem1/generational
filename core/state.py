@@ -2,7 +2,14 @@
 
 import streamlit as st
 
-from core.constants import DEFAULT_MODEL, DEFAULT_PUBLISH_THRESHOLD, DEFAULT_RESEARCH_SETTINGS
+from core.constants import (
+    AUTONOMOUS_PUBLISHING_ENABLED,
+    DEFAULT_MODEL,
+    DEFAULT_PRODUCTION_QUALITY_THRESHOLD,
+    DEFAULT_PUBLISH_THRESHOLD,
+    DEFAULT_RESEARCH_SETTINGS,
+)
+from services.editorial import DEFAULT_MOTIVATION_PILLARS
 
 DEFAULTS = {
     "command_text": "",
@@ -15,7 +22,7 @@ DEFAULTS = {
     "selected_model": DEFAULT_MODEL,
     "publish_threshold": DEFAULT_PUBLISH_THRESHOLD,
     "voice_mode": "ai",
-    "voice_style": "documentary",
+    "voice_style": "storytelling",
     "research_enabled_providers": list(DEFAULT_RESEARCH_SETTINGS["enabled_providers"]),
     "research_cache_hours": DEFAULT_RESEARCH_SETTINGS["cache_ttl_hours"],
     "research_max_sources": DEFAULT_RESEARCH_SETTINGS["max_sources"],
@@ -26,6 +33,15 @@ DEFAULTS = {
     "research_confidence_threshold": DEFAULT_RESEARCH_SETTINGS["research_confidence_threshold"],
     "max_unsupported_claims": DEFAULT_RESEARCH_SETTINGS["max_unsupported_claims"],
     "min_claim_confidence": DEFAULT_RESEARCH_SETTINGS["min_claim_confidence"],
+    # Motivational Media Studio controls. Autonomous publishing is always off
+    # until explicitly enabled after gates pass. Story/progression gates auto-on
+    # for the Motivation niche inside QualityEngine when not overridden.
+    "autonomous_publishing_enabled": AUTONOMOUS_PUBLISHING_ENABLED,
+    "require_story_structure": False,
+    "require_psychology_progression": False,
+    "require_quote_integrity": False,
+    "production_quality_threshold": DEFAULT_PRODUCTION_QUALITY_THRESHOLD,
+    "content_pillars": list(DEFAULT_MOTIVATION_PILLARS),
 }
 
 

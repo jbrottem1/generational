@@ -27,6 +27,7 @@ def run_command(
     voice_profile_id: str = "",
     research_settings: "dict | None" = None,
     project_name: str | None = None,
+    editorial_settings: "dict | None" = None,
 ) -> dict:
     """Run the intelligence pipeline for a command.
 
@@ -37,18 +38,33 @@ def run_command(
     queue = get_queue()
     ensure_workflow_handler(queue)
 
+    editorial = editorial_settings or {}
+    # Only inject True gate overrides — False/missing lets QualityEngine use
+    # Motivation-niche defaults (fail closed for motivational productions).
+    workflow_context = {
+        "command": command,
+        "count": count,
+        "model": model,
+        "threshold": threshold,
+        "research_settings": research_settings,
+        "project_name": project_name,
+        "content_pillars": editorial.get("content_pillars"),
+        "autonomous_publishing_enabled": bool(
+            editorial.get("autonomous_publishing_enabled", False)
+        ),
+    }
+    for gate_key in (
+        "require_story_structure",
+        "require_psychology_progression",
+        "require_quote_integrity",
+    ):
+        if editorial.get(gate_key):
+            workflow_context[gate_key] = True
     job = queue.submit(
         WORKFLOW_JOB_TYPE,
         {
             "workflow": "intelligence",
-            "context": {
-                "command": command,
-                "count": count,
-                "model": model,
-                "threshold": threshold,
-                "research_settings": research_settings,
-                "project_name": project_name,
-            },
+            "context": workflow_context,
         },
     )
     job = queue.run(job.id)
@@ -60,6 +76,9 @@ def run_command(
     context = job.result["context"]
     context["voice_mode"] = voice_mode
     context["voice_profile_id"] = voice_profile_id
+    context["autonomous_publishing_enabled"] = bool(
+        editorial.get("autonomous_publishing_enabled", False)
+    )
     result = build_result(
         command=command,
         niche=context["niche"],

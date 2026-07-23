@@ -132,6 +132,54 @@ def render() -> None:
     )
 
     st.divider()
+    st.markdown("### 🔥 Motivational Media Studio")
+    from services.editorial import CONTENT_PILLARS, EMOTIONAL_OUTCOME, MISSION_STATEMENT
+
+    st.caption(MISSION_STATEMENT)
+    st.caption(f"Emotional outcome: “{EMOTIONAL_OUTCOME}”")
+    st.multiselect(
+        "Content pillars",
+        options=list(CONTENT_PILLARS),
+        key="content_pillars",
+        help="Productions bias toward these character and discipline themes.",
+    )
+    st.checkbox(
+        "Require story structure (Hook→Struggle→Example→Lesson→Application→Ending)",
+        key="require_story_structure",
+        help="Auto-enabled for the Motivation niche even when unchecked.",
+    )
+    st.checkbox(
+        "Require psychology progression (Curiosity→…→Immediate Action)",
+        key="require_psychology_progression",
+        help="Auto-enabled for the Motivation niche even when unchecked.",
+    )
+    st.checkbox(
+        "Require quotation / history integrity",
+        key="require_quote_integrity",
+        help="Hold scripts with unverified attributed quotations.",
+    )
+    st.slider(
+        "Production quality threshold",
+        min_value=0,
+        max_value=100,
+        step=5,
+        key="production_quality_threshold",
+        help="Media packages below this score stay held in the publishing queue.",
+    )
+    st.checkbox(
+        "Enable autonomous public publishing",
+        key="autonomous_publishing_enabled",
+        help=(
+            "FAIL-CLOSED kill-switch. Leave OFF until every quality gate consistently passes. "
+            "Queueing a render package is never the same as posting to YouTube."
+        ),
+    )
+    if st.session_state.autonomous_publishing_enabled:
+        st.error("Autonomous publishing is ON — public posts may go live when providers are connected.")
+    else:
+        st.success("Autonomous publishing is DISABLED. Packages remain held for review.")
+
+    st.divider()
     st.markdown("### ℹ️ App Info")
     st.write(f"**Version:** v{APP_VERSION}")
     st.write(f"**Projects saved:** {storage.project_count()}")

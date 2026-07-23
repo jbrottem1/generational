@@ -16,3 +16,9 @@ data/research_cache/
 data/projects/*/knowledge/
 .pytest_cache/
 .DS_Store
+
+# Production intermediates (keep final package outputs)
+productions/**/render/clips/
+productions/**/render/video_silent.mp4
+productions/**/validation/frames/
+

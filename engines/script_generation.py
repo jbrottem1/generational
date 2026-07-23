@@ -27,6 +27,8 @@ from core.ai import get_provider
 from core.constants import SCRIPT_VARIANTS_PER_IDEA
 from core.log import get_logger, log_event
 from engines.base import Engine
+from services.editorial import is_motivational_niche
+from services.editorial.philosophy import ai_editorial_system_prompt
 from services.scripts import (
     DEFAULT_PLATFORM,
     ScriptVariant,
@@ -121,6 +123,8 @@ class ScriptGenerationEngine(Engine):
         candidate["sound_effects"] = best.sound_effects
         candidate["music_style"] = best.music_style
         candidate["suggested_seo_keywords"] = best.seo_keywords
+        candidate["story_beats"] = best.story_beats
+        candidate["content_pillar"] = best.content_pillar
         refs = context.get("research_references")
         if refs:
             candidate["references"] = refs
@@ -143,21 +147,35 @@ class ScriptGenerationEngine(Engine):
             for n, i in enumerate(top, 1)
         )
         facts = context.get("research", {}).get("important_facts", [])
-        system = (
-            "You are an elite viral video scriptwriter and storytelling architect. "
-            "Respond with valid minified JSON only."
-        )
+        niche = context.get("niche", "")
+        if is_motivational_niche(niche):
+            system = ai_editorial_system_prompt() + " Respond with valid minified JSON only."
+            structure_note = (
+                "Every script must follow Hook → Struggle → Real-life example → Lesson → "
+                "Application → Memorable ending. Use only the research facts provided — "
+                "never invent history, biographies, statistics, or quotations. "
+                "End with one immediate action."
+            )
+        else:
+            system = (
+                "You are an elite viral video scriptwriter and storytelling architect. "
+                "Respond with valid minified JSON only. Never invent statistics or quotations."
+            )
+            structure_note = (
+                f"Every script needs: an attention hook (first {spec.hook_window_sec}s), "
+                "a pattern interrupt, an open curiosity loop, a fact-grounded core story, "
+                f"and a call to action ({spec.cta_style})."
+            )
         user = (
             f"Platform: {spec.label} ({spec.min_runtime_sec}-{spec.max_runtime_sec}s, tone: {spec.tone})\n"
-            f"Niche: {context.get('niche', '')}\nSubject: {context.get('subject', '')}\n"
+            f"Niche: {niche}\nSubject: {context.get('subject', '')}\n"
             f"Research facts: {facts}\n\n"
             f"Write one complete voiceover script for each concept, in order:\n{concept_lines}\n\n"
-            f"Target roughly {spec.target_words} spoken words each. Every script needs: an "
-            f"attention hook (first {spec.hook_window_sec}s), a pattern interrupt, an open "
-            "curiosity loop, a fact-grounded core story, and a call to action "
-            f"({spec.cta_style}).\n"
+            f"Target roughly {spec.target_words} spoken words each. {structure_note}\n"
             'Respond with JSON: {"scripts": [{"hook": "...", "pattern_interrupt": "...", '
-            '"curiosity_loop": "...", "core_story": "...", "call_to_action": "..."}]}'
+            '"curiosity_loop": "...", "core_story": "...", "call_to_action": "...", '
+            '"story_beats": {"hook": "...", "struggle": "...", "real_life_example": "...", '
+            '"lesson": "...", "application": "...", "memorable_ending": "..."}}]}'
         )
         data, tokens = provider.generate_json(system, user, context.get("model", ""))
         if data is None:
@@ -176,6 +194,7 @@ class ScriptGenerationEngine(Engine):
             if not script_data.get("core_story"):
                 continue
             base = variants_by_candidate[i][0]
+            ai_beats = script_data.get("story_beats") or base.story_beats
             variant = ScriptVariant(
                 variant_id="ai_enhanced",
                 style="ai_enhanced",
@@ -193,6 +212,8 @@ class ScriptGenerationEngine(Engine):
                 sound_effects=base.sound_effects,
                 music_style=base.music_style,
                 source="ai",
+                story_beats=ai_beats if isinstance(ai_beats, dict) else base.story_beats,
+                content_pillar=base.content_pillar,
             )
             finalize_variant(variant, spec.words_per_minute)
             variants_by_candidate[i].append(variant)

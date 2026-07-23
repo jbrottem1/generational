@@ -29,9 +29,9 @@ Agent 1 also acts as the reviewer for changes to shared files (see §2.3).
 
 | Agent | Owned paths |
 |---|---|
-| **Agent 1** | `services/trends/` · `providers/trend_sources/` · `engines/trend_discovery.py` · `engines/opportunity_ranking.py` · `tests/test_trend_discovery.py` · `MASTER_ARCHITECTURE.md` · `AGENT_WORKFLOW.md` |
+| **Agent 1** | `services/trends/` · `providers/trend_sources/` · `engines/trend_discovery.py` · `engines/opportunity_ranking.py` · `tests/test_trend_discovery.py` · `MASTER_ARCHITECTURE.md` · `AGENT_WORKFLOW.md` · `services/editorial/` |
 | **Agent 2** | `engines/psychology.py` · `engines/ranking.py` · `tests/test_psychology_engine.py` |
-| **Agent 3** | `engines/script.py` · `engines/critic.py` · `engines/revision.py` · script-related tests |
+| **Agent 3** | `engines/script.py` · `engines/critic.py` · `engines/revision.py` · `services/scripts/` · script-related tests |
 
 ### 2.2 Shared — edit with caution, keep diffs minimal, mention in commit body
 
