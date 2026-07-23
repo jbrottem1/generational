@@ -1,6 +1,6 @@
 @echo off
 REM =============================================================================
-REM Generational — ONE-COMMAND Local Windows Workstation Certification
+REM Generational - ONE-COMMAND Local Windows Workstation Certification
 REM Run this on your PC (PowerShell / CMD). Do NOT run in Cursor cloud.
 REM =============================================================================
 setlocal
@@ -8,7 +8,7 @@ cd /d "%~dp0"
 
 echo.
 echo  GENERATIONAL WORKSTATION CERTIFICATION
-echo  Local Windows audit only — not the Cursor cloud VM
+echo  Local Windows audit only - not the Cursor cloud VM
 echo.
 
 where powershell >nul 2>&1

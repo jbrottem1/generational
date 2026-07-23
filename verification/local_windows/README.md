@@ -34,6 +34,11 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\certify_workstation.ps1
 
 ## Output
 
+Companion probe scripts (used by the auditor, do not edit):
+
+- `probe_bpy.py`
+- `probe_render.py`
+
 Creates in this folder:
 
 - `WORKSTATION_CERTIFICATION_REPORT.md` — full report with **PASS** or **FAIL**
