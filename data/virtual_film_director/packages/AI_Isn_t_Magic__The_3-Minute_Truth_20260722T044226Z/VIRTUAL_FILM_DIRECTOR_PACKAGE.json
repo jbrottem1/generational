@@ -1,0 +1,906 @@
+{
+  "package_type": "VIRTUAL_FILM_DIRECTOR_PACKAGE",
+  "package_version": "1.0.0",
+  "engine_label": "Virtual Film Director",
+  "generated_at": "2026-07-22T04:42:26.578296+00:00",
+  "topic": "AI Isn't Magic: The 3-Minute Truth",
+  "production_id": "gold_ai_20260722T044206_a1",
+  "shot_plan": [
+    {
+      "scene_number": 1,
+      "scene_id": "scene_00",
+      "scene_objective": "Advance hook: establish audience investment in AI Isn't Magic: The 3-Minute Truth",
+      "primary_subject": "AI Isn't Magic: The 3-Minute Truth",
+      "camera_angle": "eye_level",
+      "lens_style": "portrait_50mm",
+      "shot_size": "establishing_wide",
+      "shot_language": "reveal_shot",
+      "camera_movement": "reveal_shot",
+      "camera_begin": "Open in a framed read of AI Isn't Magic: The 3-Minute Truth matching reveal_shot",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=curiosity",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "laboratory",
+        "ambient_motion": [
+          "monitor_pulse",
+          "dust_motes",
+          "practical_glow"
+        ],
+        "dramatic_response": [],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "practical_interior",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "hard_cut",
+      "emotional_beat": "curiosity",
+      "emotion": "curiosity",
+      "educational_goal": "Stop \u2014 what you were taught about what artificial intelligence actually is in is incomplete.",
+      "estimated_duration_sec": 5.6,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Advance hook: establish audience investment in AI Isn't Magic: The 3-Minute Truth",
+          "what_viewer_learns": "Stop \u2014 what you were taught about what artificial intelligence actually is in is incomplete.",
+          "emotion_to_feel": "curiosity",
+          "notice_first": "Primary subject first \u2014 AI Isn't Magic: The 3-Minute Truth \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of AI Isn't Magic: The 3-Minute Truth matching reveal_shot",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=curiosity",
+          "cinematic_payoff": "Muted viewer still understands: Stop \u2014 what you were taught about what artificial intelligence actually is in is incomplete."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: Stop \u2014 what you were taught about what artificial intelligence actually is in is incomplete.",
+      "muted_story_test": "Muted viewer still understands: Stop \u2014 what you were taught about what artificial intelligence actually is in is incomplete.",
+      "notice_first": "Primary subject first \u2014 AI Isn't Magic: The 3-Minute Truth \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "reveal",
+        "ae_camera_move": "reveal",
+        "shot_size": "establishing_wide",
+        "emotion": "curiosity",
+        "lighting_mood": "practical_interior",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Advance hook: establish audience investment in AI Isn't Magic: The 3-Minute Truth"
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 2,
+      "scene_id": "scene_01",
+      "scene_objective": "Demonstrate the idea so learning sticks: Wait \u2014 before you disagree, look at the actual data.",
+      "primary_subject": "AI Isn't Magic: The 3-Minute Truth",
+      "camera_angle": "eye_level",
+      "lens_style": "close_85mm",
+      "shot_size": "intimate_close_up",
+      "shot_language": "extreme_close_up",
+      "camera_movement": "extreme_close_up",
+      "camera_begin": "Open in a framed read of AI Isn't Magic: The 3-Minute Truth matching extreme_close_up",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=curiosity",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "laboratory",
+        "ambient_motion": [
+          "monitor_pulse",
+          "dust_motes",
+          "practical_glow"
+        ],
+        "dramatic_response": [],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "practical_interior",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "explanation",
+      "emotion": "curiosity",
+      "educational_goal": "Wait \u2014 before you disagree, look at the actual data.",
+      "estimated_duration_sec": 3.8,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Demonstrate the idea so learning sticks: Wait \u2014 before you disagree, look at the actual data.",
+          "what_viewer_learns": "Wait \u2014 before you disagree, look at the actual data.",
+          "emotion_to_feel": "curiosity",
+          "notice_first": "Primary subject first \u2014 AI Isn't Magic: The 3-Minute Truth \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of AI Isn't Magic: The 3-Minute Truth matching extreme_close_up",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=curiosity",
+          "cinematic_payoff": "Muted viewer still understands: Wait \u2014 before you disagree, look at the actual data."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: Wait \u2014 before you disagree, look at the actual data.",
+      "muted_story_test": "Muted viewer still understands: Wait \u2014 before you disagree, look at the actual data.",
+      "notice_first": "Primary subject first \u2014 AI Isn't Magic: The 3-Minute Truth \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "punch_in",
+        "ae_camera_move": "dynamic_zoom",
+        "shot_size": "intimate_close_up",
+        "emotion": "curiosity",
+        "lighting_mood": "practical_interior",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: Wait \u2014 before you disagree, look at the actual data."
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": true,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 3,
+      "scene_id": "scene_02",
+      "scene_objective": "Demonstrate the idea so learning sticks: By the end you'll know the one claim about what artificial intelligence actually is in a",
+      "primary_subject": "AI Isn't Magic: The 3-Minute Truth",
+      "camera_angle": "low_angle_hero",
+      "lens_style": "portrait_50mm",
+      "shot_size": "dynamic_medium",
+      "shot_language": "medium_dialogue",
+      "camera_movement": "medium_dialogue",
+      "camera_begin": "Open in a framed read of AI Isn't Magic: The 3-Minute Truth matching medium_dialogue",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "laboratory",
+        "ambient_motion": [
+          "monitor_pulse",
+          "dust_motes",
+          "practical_glow"
+        ],
+        "dramatic_response": [],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "practical_interior",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "wonder",
+      "emotion": "clarity",
+      "educational_goal": "By the end you'll know the one claim about what artificial intelligence actually is in a",
+      "estimated_duration_sec": 8.9,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Demonstrate the idea so learning sticks: By the end you'll know the one claim about what artificial intelligence actually is in a",
+          "what_viewer_learns": "By the end you'll know the one claim about what artificial intelligence actually is in a",
+          "emotion_to_feel": "clarity",
+          "notice_first": "Primary subject first \u2014 AI Isn't Magic: The 3-Minute Truth \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of AI Isn't Magic: The 3-Minute Truth matching medium_dialogue",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+          "cinematic_payoff": "Muted viewer still understands: By the end you'll know the one claim about what artificial intelligence actually is in a"
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: By the end you'll know the one claim about what artificial intelligence actually is in a",
+      "muted_story_test": "Muted viewer still understands: By the end you'll know the one claim about what artificial intelligence actually is in a",
+      "notice_first": "Primary subject first \u2014 AI Isn't Magic: The 3-Minute Truth \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "slow_cinematic_push",
+        "shot_size": "dynamic_medium",
+        "emotion": "clarity",
+        "lighting_mood": "practical_interior",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: By the end you'll know the one claim about what artificial intelligence actually is in a"
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 4,
+      "scene_id": "scene_03",
+      "scene_objective": "Demonstrate the idea so learning sticks: Here's the context most videos skip.",
+      "primary_subject": "AI Isn't Magic: The 3-Minute Truth",
+      "camera_angle": "eye_level",
+      "lens_style": "portrait_50mm",
+      "shot_size": "dynamic_medium",
+      "shot_language": "push_in",
+      "camera_movement": "push_in",
+      "camera_begin": "Open in a framed read of AI Isn't Magic: The 3-Minute Truth matching push_in",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "laboratory",
+        "ambient_motion": [
+          "monitor_pulse",
+          "dust_motes",
+          "practical_glow"
+        ],
+        "dramatic_response": [
+          "wind_increase",
+          "lighting_shift",
+          "fog_clear_on_reveal"
+        ],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "practical_interior",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "scale",
+      "emotion": "focus",
+      "educational_goal": "Here's the context most videos skip.",
+      "estimated_duration_sec": 2.2,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Demonstrate the idea so learning sticks: Here's the context most videos skip.",
+          "what_viewer_learns": "Here's the context most videos skip.",
+          "emotion_to_feel": "focus",
+          "notice_first": "Primary subject first \u2014 AI Isn't Magic: The 3-Minute Truth \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of AI Isn't Magic: The 3-Minute Truth matching push_in",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=focus",
+          "cinematic_payoff": "Muted viewer still understands: Here's the context most videos skip."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: Here's the context most videos skip.",
+      "muted_story_test": "Muted viewer still understands: Here's the context most videos skip.",
+      "notice_first": "Primary subject first \u2014 AI Isn't Magic: The 3-Minute Truth \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "slow_cinematic_push",
+        "shot_size": "dynamic_medium",
+        "emotion": "focus",
+        "lighting_mood": "practical_interior",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: Here's the context most videos skip."
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 5,
+      "scene_id": "scene_04",
+      "scene_objective": "Demonstrate the idea so learning sticks: Then it escalates: Research on what artificial intelligence actually is in a educational style, narrator professor",
+      "primary_subject": "AI Isn't Magic: The 3-Minute Truth",
+      "camera_angle": "low_angle_hero",
+      "lens_style": "portrait_50mm",
+      "shot_size": "dynamic_medium",
+      "shot_language": "parallax",
+      "camera_movement": "parallax",
+      "camera_begin": "Open in a framed read of AI Isn't Magic: The 3-Minute Truth matching parallax",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "ocean",
+        "ambient_motion": [
+          "wave_set",
+          "spray",
+          "horizon_haze",
+          "light_caustics"
+        ],
+        "dramatic_response": [
+          "wind_increase",
+          "lighting_shift",
+          "fog_clear_on_reveal"
+        ],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "soft_daylight",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "motion_match_cut",
+      "emotional_beat": "surprise",
+      "emotion": "clarity",
+      "educational_goal": "Then it escalates: Research on what artificial intelligence actually is in a educational style, narrator professor",
+      "estimated_duration_sec": 9.3,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Demonstrate the idea so learning sticks: Then it escalates: Research on what artificial intelligence actually is in a educational style, narrator professor",
+          "what_viewer_learns": "Then it escalates: Research on what artificial intelligence actually is in a educational style, narrator professor",
+          "emotion_to_feel": "clarity",
+          "notice_first": "Primary subject first \u2014 AI Isn't Magic: The 3-Minute Truth \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of AI Isn't Magic: The 3-Minute Truth matching parallax",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+          "cinematic_payoff": "Muted viewer still understands: Then it escalates: Research on what artificial intelligence actually is in a educational style, narrator professor"
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: Then it escalates: Research on what artificial intelligence actually is in a educational style, narrator professor",
+      "muted_story_test": "Muted viewer still understands: Then it escalates: Research on what artificial intelligence actually is in a educational style, narrator professor",
+      "notice_first": "Primary subject first \u2014 AI Isn't Magic: The 3-Minute Truth \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "parallax",
+        "ae_camera_move": "parallax",
+        "shot_size": "dynamic_medium",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: Then it escalates: Research on what artificial intelligence actually is in a educational style, narrator professor"
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 6,
+      "scene_id": "scene_05",
+      "scene_objective": "Demonstrate the idea so learning sticks: The evidence: Crossref indexed work related to what artificial intelligence actually is in a educational style,",
+      "primary_subject": "AI Isn't Magic: The 3-Minute Truth",
+      "camera_angle": "low_angle_hero",
+      "lens_style": "portrait_50mm",
+      "shot_size": "dynamic_medium",
+      "shot_language": "tracking_shot",
+      "camera_movement": "tracking_shot",
+      "camera_begin": "Open in a framed read of AI Isn't Magic: The 3-Minute Truth matching tracking_shot",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "laboratory",
+        "ambient_motion": [
+          "monitor_pulse",
+          "dust_motes",
+          "practical_glow"
+        ],
+        "dramatic_response": [],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "practical_interior",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "environmental_continuation",
+      "emotional_beat": "relief",
+      "emotion": "clarity",
+      "educational_goal": "The evidence: Crossref indexed work related to what artificial intelligence actually is in a educational style,",
+      "estimated_duration_sec": 6.8,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Demonstrate the idea so learning sticks: The evidence: Crossref indexed work related to what artificial intelligence actually is in a educational style,",
+          "what_viewer_learns": "The evidence: Crossref indexed work related to what artificial intelligence actually is in a educational style,",
+          "emotion_to_feel": "clarity",
+          "notice_first": "Primary subject first \u2014 AI Isn't Magic: The 3-Minute Truth \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of AI Isn't Magic: The 3-Minute Truth matching tracking_shot",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+          "cinematic_payoff": "Muted viewer still understands: The evidence: Crossref indexed work related to what artificial intelligence actually is in a educational style,"
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: The evidence: Crossref indexed work related to what artificial intelligence actually is in a educational style,",
+      "muted_story_test": "Muted viewer still understands: The evidence: Crossref indexed work related to what artificial intelligence actually is in a educational style,",
+      "notice_first": "Primary subject first \u2014 AI Isn't Magic: The 3-Minute Truth \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "tracking",
+        "ae_camera_move": "tracking",
+        "shot_size": "dynamic_medium",
+        "emotion": "clarity",
+        "lighting_mood": "practical_interior",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: The evidence: Crossref indexed work related to what artificial intelligence actually is in a educational style,"
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 7,
+      "scene_id": "scene_06",
+      "scene_objective": "Deliver the takeaway on AI Isn't Magic: The 3-Minute Truth",
+      "primary_subject": "AI Isn't Magic: The 3-Minute Truth",
+      "camera_angle": "low_angle_hero",
+      "lens_style": "anamorphic_feel",
+      "shot_size": "hero_low_angle",
+      "shot_language": "hero_shot",
+      "camera_movement": "hero_shot",
+      "camera_begin": "Open in a framed read of AI Isn't Magic: The 3-Minute Truth matching hero_shot",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+      "character_blocking": {
+        "enabled": true,
+        "characters": [
+          {
+            "name": "people",
+            "kind": "character",
+            "source": "keyword"
+          }
+        ],
+        "blocking": "primary subject holds rule-of-thirds; secondary clears look-space",
+        "performance": {
+          "eye_movement": "track subject of narration",
+          "facial_expression": "clarity",
+          "body_language": "weight_shift + posture settle",
+          "walking_speed": "measured",
+          "gestures": "point_or_demonstrate when teaching",
+          "reaction_timing": "anticipate beat then settle",
+          "cloth_hair": "subtle wind response"
+        },
+        "forbid_mannequin": true
+      },
+      "environmental_motion": {
+        "environment": "laboratory",
+        "ambient_motion": [
+          "monitor_pulse",
+          "dust_motes",
+          "practical_glow"
+        ],
+        "dramatic_response": [
+          "wind_increase",
+          "lighting_shift",
+          "fog_clear_on_reveal"
+        ],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "practical_interior",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "payoff",
+      "emotion": "clarity",
+      "educational_goal": "This is the part that stops people.",
+      "estimated_duration_sec": 2.6,
+      "animation_priority": [
+        "character_performance",
+        "environment_life",
+        "camera_storytelling",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Deliver the takeaway on AI Isn't Magic: The 3-Minute Truth",
+          "what_viewer_learns": "This is the part that stops people.",
+          "emotion_to_feel": "clarity",
+          "notice_first": "Primary subject first \u2014 AI Isn't Magic: The 3-Minute Truth \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of AI Isn't Magic: The 3-Minute Truth matching hero_shot",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+          "cinematic_payoff": "Muted viewer still understands: This is the part that stops people."
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: This is the part that stops people.",
+      "muted_story_test": "Muted viewer still understands: This is the part that stops people.",
+      "notice_first": "Primary subject first \u2014 AI Isn't Magic: The 3-Minute Truth \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "push_in",
+        "ae_camera_move": "hero_low_angle_push",
+        "shot_size": "hero_low_angle",
+        "emotion": "clarity",
+        "lighting_mood": "practical_interior",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Deliver the takeaway on AI Isn't Magic: The 3-Minute Truth"
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": true,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 8,
+      "scene_id": "scene_07",
+      "scene_objective": "Demonstrate the idea so learning sticks: The fix: change one small input around what artificial intelligence actually is in a educational style,",
+      "primary_subject": "AI Isn't Magic: The 3-Minute Truth",
+      "camera_angle": "low_angle_hero",
+      "lens_style": "standard_35mm",
+      "shot_size": "intimate_close_up",
+      "shot_language": "pov",
+      "camera_movement": "pov",
+      "camera_begin": "Open in a framed read of AI Isn't Magic: The 3-Minute Truth matching pov",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "laboratory",
+        "ambient_motion": [
+          "monitor_pulse",
+          "dust_motes",
+          "practical_glow"
+        ],
+        "dramatic_response": [],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "practical_interior",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "explanation",
+      "emotion": "clarity",
+      "educational_goal": "The fix: change one small input around what artificial intelligence actually is in a educational style,",
+      "estimated_duration_sec": 6.8,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Demonstrate the idea so learning sticks: The fix: change one small input around what artificial intelligence actually is in a educational style,",
+          "what_viewer_learns": "The fix: change one small input around what artificial intelligence actually is in a educational style,",
+          "emotion_to_feel": "clarity",
+          "notice_first": "Primary subject first \u2014 AI Isn't Magic: The 3-Minute Truth \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of AI Isn't Magic: The 3-Minute Truth matching pov",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+          "cinematic_payoff": "Muted viewer still understands: The fix: change one small input around what artificial intelligence actually is in a educational style,"
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: The fix: change one small input around what artificial intelligence actually is in a educational style,",
+      "muted_story_test": "Muted viewer still understands: The fix: change one small input around what artificial intelligence actually is in a educational style,",
+      "notice_first": "Primary subject first \u2014 AI Isn't Magic: The 3-Minute Truth \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "handheld",
+        "ae_camera_move": "handheld_documentary",
+        "shot_size": "intimate_close_up",
+        "emotion": "clarity",
+        "lighting_mood": "practical_interior",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: The fix: change one small input around what artificial intelligence actually is in a educational style,"
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    },
+    {
+      "scene_number": 9,
+      "scene_id": "scene_08",
+      "scene_objective": "Demonstrate the idea so learning sticks: Share the myth you believed longest \u2014 tag a friend, then follow so the next one",
+      "primary_subject": "AI Isn't Magic: The 3-Minute Truth",
+      "camera_angle": "low_angle_hero",
+      "lens_style": "wide_24mm",
+      "shot_size": "establishing_wide",
+      "shot_language": "epic_establishing",
+      "camera_movement": "epic_establishing",
+      "camera_begin": "Open in a framed read of AI Isn't Magic: The 3-Minute Truth matching epic_establishing",
+      "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+      "character_blocking": null,
+      "environmental_motion": {
+        "environment": "laboratory",
+        "ambient_motion": [
+          "monitor_pulse",
+          "dust_motes",
+          "practical_glow"
+        ],
+        "dramatic_response": [
+          "wind_increase",
+          "lighting_shift",
+          "fog_clear_on_reveal"
+        ],
+        "continues_without_narration": true,
+        "purpose": "Support story emotion \u2014 never decorative noise"
+      },
+      "lighting_mood": "practical_interior",
+      "color_palette": {
+        "harmony": "natural",
+        "temperature": "neutral",
+        "subject_isolation": true
+      },
+      "transition_style": "lighting_continuity",
+      "emotional_beat": "payoff",
+      "emotion": "clarity",
+      "educational_goal": "Share the myth you believed longest \u2014 tag a friend, then follow so the next one",
+      "estimated_duration_sec": 7.0,
+      "animation_priority": [
+        "environment_life",
+        "camera_storytelling",
+        "character_performance",
+        "object_physics"
+      ],
+      "director_questions": {
+        "answers": {
+          "why_scene_exists": "Demonstrate the idea so learning sticks: Share the myth you believed longest \u2014 tag a friend, then follow so the next one",
+          "what_viewer_learns": "Share the myth you believed longest \u2014 tag a friend, then follow so the next one",
+          "emotion_to_feel": "clarity",
+          "notice_first": "Primary subject first \u2014 AI Isn't Magic: The 3-Minute Truth \u2014 then supporting world",
+          "what_should_move": "Camera + living environment + character performance when present; object physics when narration discusses a mechanism",
+          "what_should_remain_still": "Composition anchors (horizon / practical light sources) \u2014 never freeze the whole world",
+          "camera_begin": "Open in a framed read of AI Isn't Magic: The 3-Minute Truth matching epic_establishing",
+          "camera_end": "Land on the beat's cinematic payoff for emotion=clarity",
+          "cinematic_payoff": "Muted viewer still understands: Share the myth you believed longest \u2014 tag a friend, then follow so the next one"
+        },
+        "ready": true,
+        "unclear": [],
+        "scene_ready": true
+      },
+      "cinematic_payoff": "Muted viewer still understands: Share the myth you believed longest \u2014 tag a friend, then follow so the next one",
+      "muted_story_test": "Muted viewer still understands: Share the myth you believed longest \u2014 tag a friend, then follow so the next one",
+      "notice_first": "Primary subject first \u2014 AI Isn't Magic: The 3-Minute Truth \u2014 then supporting world",
+      "animation_seed": {
+        "true_motion_camera": "pull_out",
+        "ae_camera_move": "crane",
+        "shot_size": "establishing_wide",
+        "emotion": "clarity",
+        "lighting_mood": "practical_interior",
+        "forbid_purposeless_drift": true,
+        "narrative_purpose": "Demonstrate the idea so learning sticks: Share the myth you believed longest \u2014 tag a friend, then follow so the next one"
+      },
+      "composition": {
+        "rule_of_thirds": true,
+        "leading_lines": false,
+        "negative_space": false,
+        "fg_mg_bg": true,
+        "subject_hierarchy": "clear"
+      },
+      "ready": true
+    }
+  ],
+  "emotional_timeline": {
+    "total_duration_sec": 53.0,
+    "beats": [
+      {
+        "scene_number": 1,
+        "start_sec": 0.0,
+        "end_sec": 5.6,
+        "emotional_beat": "curiosity",
+        "emotion": "curiosity",
+        "lighting_mood": "practical_interior",
+        "shot_language": "reveal_shot"
+      },
+      {
+        "scene_number": 2,
+        "start_sec": 5.6,
+        "end_sec": 9.4,
+        "emotional_beat": "explanation",
+        "emotion": "curiosity",
+        "lighting_mood": "practical_interior",
+        "shot_language": "extreme_close_up"
+      },
+      {
+        "scene_number": 3,
+        "start_sec": 9.4,
+        "end_sec": 18.3,
+        "emotional_beat": "wonder",
+        "emotion": "clarity",
+        "lighting_mood": "practical_interior",
+        "shot_language": "medium_dialogue"
+      },
+      {
+        "scene_number": 4,
+        "start_sec": 18.3,
+        "end_sec": 20.5,
+        "emotional_beat": "scale",
+        "emotion": "focus",
+        "lighting_mood": "practical_interior",
+        "shot_language": "push_in"
+      },
+      {
+        "scene_number": 5,
+        "start_sec": 20.5,
+        "end_sec": 29.8,
+        "emotional_beat": "surprise",
+        "emotion": "clarity",
+        "lighting_mood": "soft_daylight",
+        "shot_language": "parallax"
+      },
+      {
+        "scene_number": 6,
+        "start_sec": 29.8,
+        "end_sec": 36.6,
+        "emotional_beat": "relief",
+        "emotion": "clarity",
+        "lighting_mood": "practical_interior",
+        "shot_language": "tracking_shot"
+      },
+      {
+        "scene_number": 7,
+        "start_sec": 36.6,
+        "end_sec": 39.2,
+        "emotional_beat": "payoff",
+        "emotion": "clarity",
+        "lighting_mood": "practical_interior",
+        "shot_language": "hero_shot"
+      },
+      {
+        "scene_number": 8,
+        "start_sec": 39.2,
+        "end_sec": 46.0,
+        "emotional_beat": "explanation",
+        "emotion": "clarity",
+        "lighting_mood": "practical_interior",
+        "shot_language": "pov"
+      },
+      {
+        "scene_number": 9,
+        "start_sec": 46.0,
+        "end_sec": 53.0,
+        "emotional_beat": "payoff",
+        "emotion": "clarity",
+        "lighting_mood": "practical_interior",
+        "shot_language": "epic_establishing"
+      }
+    ],
+    "rhythm": [
+      "curiosity",
+      "explanation",
+      "wonder",
+      "scale",
+      "surprise",
+      "relief",
+      "payoff",
+      "explanation",
+      "payoff"
+    ],
+    "avoids_flatness": true
+  },
+  "director_review": {
+    "approved": true,
+    "decision": "APPROVE",
+    "failures": [],
+    "warnings": [],
+    "rewrite_scenes": [],
+    "questions": {
+      "professional_director_would_approve": true,
+      "every_scene_has_purpose": true,
+      "every_camera_communicates": true,
+      "pacing_feels_cinematic": true,
+      "visuals_alone_engaging": true
+    },
+    "metrics": {
+      "shot_count": 9,
+      "unique_shot_languages": 9,
+      "unique_emotional_beats": 7,
+      "known_shot_language_rate": 1.0
+    },
+    "rewritten": false
+  },
+  "philosophy": {
+    "directs_before_animates": true,
+    "animation_executes": true,
+    "no_new_renderer": true,
+    "no_pipeline_redesign": true,
+    "muted_story_test": true
+  },
+  "summary": {
+    "shot_count": 9,
+    "director_decision": "APPROVE",
+    "approved": true,
+    "emotional_rhythm": [
+      "curiosity",
+      "explanation",
+      "wonder",
+      "scale",
+      "surprise",
+      "relief",
+      "payoff",
+      "explanation",
+      "payoff"
+    ],
+    "rewrite_scenes": []
+  },
+  "upstream_cinematic_director": {
+    "present": true,
+    "version": "1.0.0"
+  },
+  "artifacts": {
+    "SHOT_PLAN.json": "C:\\AI\\Projects\\Generational\\data\\virtual_film_director\\packages\\AI_Isn_t_Magic__The_3-Minute_Truth_20260722T044226Z\\SHOT_PLAN.json",
+    "DIRECTOR_NOTES.md": "C:\\AI\\Projects\\Generational\\data\\virtual_film_director\\packages\\AI_Isn_t_Magic__The_3-Minute_Truth_20260722T044226Z\\DIRECTOR_NOTES.md",
+    "CAMERA_SCRIPT.md": "C:\\AI\\Projects\\Generational\\data\\virtual_film_director\\packages\\AI_Isn_t_Magic__The_3-Minute_Truth_20260722T044226Z\\CAMERA_SCRIPT.md",
+    "EMOTIONAL_TIMELINE.json": "C:\\AI\\Projects\\Generational\\data\\virtual_film_director\\packages\\AI_Isn_t_Magic__The_3-Minute_Truth_20260722T044226Z\\EMOTIONAL_TIMELINE.json",
+    "VISUAL_STORYBOARD.md": "C:\\AI\\Projects\\Generational\\data\\virtual_film_director\\packages\\AI_Isn_t_Magic__The_3-Minute_Truth_20260722T044226Z\\VISUAL_STORYBOARD.md",
+    "VIRTUAL_FILM_DIRECTOR_PACKAGE.json": "C:\\AI\\Projects\\Generational\\data\\virtual_film_director\\packages\\AI_Isn_t_Magic__The_3-Minute_Truth_20260722T044226Z\\VIRTUAL_FILM_DIRECTOR_PACKAGE.json"
+  },
+  "path": "C:\\AI\\Projects\\Generational\\data\\virtual_film_director\\packages\\AI_Isn_t_Magic__The_3-Minute_Truth_20260722T044226Z\\VIRTUAL_FILM_DIRECTOR_PACKAGE.json",
+  "out_dir": "C:\\AI\\Projects\\Generational\\data\\virtual_film_director\\packages\\AI_Isn_t_Magic__The_3-Minute_Truth_20260722T044226Z"
+}

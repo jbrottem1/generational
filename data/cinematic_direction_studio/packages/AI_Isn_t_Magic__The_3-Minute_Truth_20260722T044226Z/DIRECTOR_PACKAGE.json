@@ -1,0 +1,1825 @@
+{
+  "package_type": "EPISODE_DIRECTOR_PACKAGE",
+  "package_version": "1.0.0",
+  "engine_id": "cinematic_direction_studio",
+  "created_at": "2026-07-22T04:42:26.604063+00:00",
+  "topic": "AI Isn't Magic: The 3-Minute Truth",
+  "production_id": "",
+  "scene_count": 9,
+  "scenes": [
+    {
+      "package_type": "DIRECTOR_PACKAGE",
+      "package_version": "1.0.0",
+      "engine_id": "cinematic_direction_studio",
+      "created_at": "2026-07-22T04:42:26.603914+00:00",
+      "scene_number": 1,
+      "scene_id": "scene_001",
+      "topic": "AI Isn't Magic: The 3-Minute Truth",
+      "philosophy": {
+        "not_an_animation_engine": true,
+        "not_a_renderer": true,
+        "rule": "Every shot has a purpose. Every movement supports the story."
+      },
+      "story_objective": "Stop \u2014 what you were taught about what artificial intelligence actually is in is incomplete",
+      "emotional_objective": "curiosity",
+      "actor_objective": "Grounded teaching performance with breath and gesture",
+      "camera_objective": "Camera supports curiosity \u2014 orbit reveal",
+      "lighting_objective": "scientific light supports curiosity",
+      "editing_objective": "Transition hold_then_cut with ending beat settle_then_cut",
+      "music_objective": "Music after_hook_line; exit tail_into_next",
+      "shot_type": "orbit",
+      "shot_purpose": "orbit serves curiosity: Stop \u2014 what you were taught about what artificial intelligence actually is in is incomp...",
+      "camera_language": {
+        "emotion": "curiosity",
+        "movement": "orbit_reveal",
+        "true_motion_camera": "reveal",
+        "shot_type": "orbit",
+        "motivated": true,
+        "purpose": "Camera supports curiosity \u2014 orbit reveal",
+        "forbid_purposeless_move": true,
+        "camera_replaces_actor_motion": false
+      },
+      "actor_direction": {
+        "character_id": "DOCTOR_001",
+        "objective": "Grounded teaching performance with breath and gesture",
+        "emotion": "curiosity",
+        "beats": [
+          {
+            "t": 0.0,
+            "action": "plant_and_presence",
+            "note": "Arrive in frame",
+            "motivated": true
+          },
+          {
+            "t": 1.1199999999999999,
+            "action": "breathe",
+            "note": "Settle",
+            "motivated": true
+          },
+          {
+            "t": 1.9599999999999997,
+            "action": "gesture_prepare",
+            "note": "Thought becomes motion",
+            "motivated": true
+          },
+          {
+            "t": 2.8,
+            "action": "explain",
+            "note": "Core teaching",
+            "motivated": true
+          },
+          {
+            "t": 4.199999999999999,
+            "action": "point_or_indicate",
+            "note": "Evidence beat",
+            "motivated": true
+          },
+          {
+            "t": 5.04,
+            "action": "soft_smile_or_resolve",
+            "note": "Emotional close",
+            "motivated": true
+          }
+        ],
+        "forbid_mechanical_loop": true,
+        "require_breath_and_pause": true,
+        "require_eye_intent": true,
+        "scene_index": 0,
+        "example_philosophy": "Doctor walks to microscope. Stops. Looks down. Pauses. Breathes. Turns toward viewer. Smiles. Explains. Returns to work."
+      },
+      "pacing": {
+        "shot_duration_sec": 5.6,
+        "pause_timing": [
+          {
+            "t": 1.1199999999999999,
+            "duration_sec": 0.35
+          }
+        ],
+        "dialogue_spacing_sec": 0.22,
+        "camera_rhythm": "measured",
+        "movement_rhythm": "shared",
+        "scene_transition_hold_sec": 0.4,
+        "forbid_machine_gun_cuts": true,
+        "forbid_static_dead_air_over_sec": 3.0
+      },
+      "lighting_intent": {
+        "intent": "scientific",
+        "lighting_mood": "practical_interior",
+        "emotion": "curiosity",
+        "motivated": true,
+        "purpose": "scientific light supports curiosity",
+        "forbid_unmotivated_grade": true
+      },
+      "editing_plan": {
+        "cut_points": [
+          {
+            "t": 1.96,
+            "reason": "after_pause_or_look",
+            "type": "motivated"
+          },
+          {
+            "t": 3.64,
+            "reason": "into_explanation_or_gesture",
+            "type": "motivated"
+          }
+        ],
+        "transition_in": "establish",
+        "transition_style": "hold_then_cut",
+        "transition_out": "hold_then_cut",
+        "reaction_timing_sec": 0.3,
+        "music_timing": {
+          "enter": "after_hook_line",
+          "swell_at": null,
+          "exit": "tail_into_next"
+        },
+        "ending_beat": "settle_then_cut",
+        "forbid_random_cuts": true,
+        "motivated_only": true
+      },
+      "compose_vfd": true,
+      "architecture": {
+        "frozen": true,
+        "no_new_renderer": true,
+        "not_animation_engine": true,
+        "feeds": [
+          "virtual_film_director",
+          "animation_engine",
+          "character_performance_engine",
+          "true_motion",
+          "shot_assembly"
+        ]
+      },
+      "animation_seed": {
+        "emotion": "curiosity",
+        "shot_size": "dynamic_medium",
+        "lighting_mood": "practical_interior",
+        "true_motion_camera": "reveal",
+        "shot_language": "orbit",
+        "transition_style": "hold_then_cut",
+        "director_emotion": "curiosity",
+        "motivated": true,
+        "source": "cinematic_direction_studio"
+      },
+      "validation": {
+        "ok": true,
+        "score": 100,
+        "failures": [],
+        "rejects_hit": [],
+        "reject_catalog": [
+          "camera_moves_without_purpose",
+          "actors_move_mechanically",
+          "editing_feels_random",
+          "emotion_unclear",
+          "shots_repeat",
+          "identical_framing_every_scene"
+        ],
+        "success": "Feels directed by an experienced filmmaker \u2014 each shot supports story, emotion, and educational message.",
+        "mp4_required": true,
+        "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for intentional direction."
+      }
+    },
+    {
+      "package_type": "DIRECTOR_PACKAGE",
+      "package_version": "1.0.0",
+      "engine_id": "cinematic_direction_studio",
+      "created_at": "2026-07-22T04:42:26.603935+00:00",
+      "scene_number": 2,
+      "scene_id": "scene_002",
+      "topic": "AI Isn't Magic: The 3-Minute Truth",
+      "philosophy": {
+        "not_an_animation_engine": true,
+        "not_a_renderer": true,
+        "rule": "Every shot has a purpose. Every movement supports the story."
+      },
+      "story_objective": "Wait \u2014 before you disagree, look at the actual data",
+      "emotional_objective": "curiosity",
+      "actor_objective": "Approach instrument, pause with intent, then teach to camera",
+      "camera_objective": "Camera supports curiosity \u2014 slow push in",
+      "lighting_objective": "scientific light supports curiosity",
+      "editing_objective": "Transition cut with ending beat settle_then_cut",
+      "music_objective": "Music under_narration; exit tail_into_next",
+      "shot_type": "extreme_close_up",
+      "shot_purpose": "extreme close up serves curiosity: Wait \u2014 before you disagree, look at the actual data",
+      "camera_language": {
+        "emotion": "curiosity",
+        "movement": "slow_push_in",
+        "true_motion_camera": "punch_in",
+        "shot_type": "extreme_close_up",
+        "motivated": true,
+        "purpose": "Camera supports curiosity \u2014 slow push in",
+        "forbid_purposeless_move": true,
+        "camera_replaces_actor_motion": false
+      },
+      "actor_direction": {
+        "character_id": "DOCTOR_001",
+        "objective": "Approach instrument, pause with intent, then teach to camera",
+        "emotion": "curiosity",
+        "beats": [
+          {
+            "t": 0.0,
+            "action": "walk_to_microscope",
+            "note": "Purposeful approach",
+            "motivated": true
+          },
+          {
+            "t": 0.836,
+            "action": "stop",
+            "note": "Plant feet",
+            "motivated": true
+          },
+          {
+            "t": 1.064,
+            "action": "look_down",
+            "note": "Inspect eyepiece",
+            "motivated": true
+          },
+          {
+            "t": 1.444,
+            "action": "pause",
+            "note": "Let beat land",
+            "motivated": true
+          },
+          {
+            "t": 1.71,
+            "action": "breathe",
+            "note": "Human settle",
+            "motivated": true
+          },
+          {
+            "t": 2.09,
+            "action": "turn_to_viewer",
+            "note": "Camera address",
+            "motivated": true
+          },
+          {
+            "t": 2.356,
+            "action": "warm_focus",
+            "note": "Readable face",
+            "motivated": true
+          },
+          {
+            "t": 2.6599999999999997,
+            "action": "explain",
+            "note": "Gesture + speech",
+            "motivated": true
+          },
+          {
+            "t": 3.42,
+            "action": "return_to_work",
+            "note": "Back to instrument",
+            "motivated": true
+          }
+        ],
+        "forbid_mechanical_loop": true,
+        "require_breath_and_pause": true,
+        "require_eye_intent": true,
+        "scene_index": 1,
+        "example_philosophy": "Doctor walks to microscope. Stops. Looks down. Pauses. Breathes. Turns toward viewer. Smiles. Explains. Returns to work."
+      },
+      "pacing": {
+        "shot_duration_sec": 3.8,
+        "pause_timing": [
+          {
+            "t": 0.836,
+            "duration_sec": 0.35
+          },
+          {
+            "t": 1.444,
+            "duration_sec": 0.35
+          },
+          {
+            "t": 1.71,
+            "duration_sec": 0.35
+          }
+        ],
+        "dialogue_spacing_sec": 0.22,
+        "camera_rhythm": "measured",
+        "movement_rhythm": "shared",
+        "scene_transition_hold_sec": 0.304,
+        "forbid_machine_gun_cuts": true,
+        "forbid_static_dead_air_over_sec": 3.0
+      },
+      "lighting_intent": {
+        "intent": "scientific",
+        "lighting_mood": "practical_interior",
+        "emotion": "curiosity",
+        "motivated": true,
+        "purpose": "scientific light supports curiosity",
+        "forbid_unmotivated_grade": true
+      },
+      "editing_plan": {
+        "cut_points": [
+          {
+            "t": 1.33,
+            "reason": "after_pause_or_look",
+            "type": "motivated"
+          },
+          {
+            "t": 2.47,
+            "reason": "into_explanation_or_gesture",
+            "type": "motivated"
+          }
+        ],
+        "transition_in": "cut",
+        "transition_style": "cut",
+        "transition_out": "cut",
+        "reaction_timing_sec": 0.3,
+        "music_timing": {
+          "enter": "under_narration",
+          "swell_at": null,
+          "exit": "tail_into_next"
+        },
+        "ending_beat": "settle_then_cut",
+        "forbid_random_cuts": true,
+        "motivated_only": true
+      },
+      "compose_vfd": true,
+      "architecture": {
+        "frozen": true,
+        "no_new_renderer": true,
+        "not_animation_engine": true,
+        "feeds": [
+          "virtual_film_director",
+          "animation_engine",
+          "character_performance_engine",
+          "true_motion",
+          "shot_assembly"
+        ]
+      },
+      "animation_seed": {
+        "emotion": "curiosity",
+        "shot_size": "intimate_close_up",
+        "lighting_mood": "practical_interior",
+        "true_motion_camera": "punch_in",
+        "shot_language": "extreme_close_up",
+        "transition_style": "cut",
+        "director_emotion": "curiosity",
+        "motivated": true,
+        "source": "cinematic_direction_studio"
+      },
+      "validation": {
+        "ok": true,
+        "score": 100,
+        "failures": [],
+        "rejects_hit": [],
+        "reject_catalog": [
+          "camera_moves_without_purpose",
+          "actors_move_mechanically",
+          "editing_feels_random",
+          "emotion_unclear",
+          "shots_repeat",
+          "identical_framing_every_scene"
+        ],
+        "success": "Feels directed by an experienced filmmaker \u2014 each shot supports story, emotion, and educational message.",
+        "mp4_required": true,
+        "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for intentional direction."
+      }
+    },
+    {
+      "package_type": "DIRECTOR_PACKAGE",
+      "package_version": "1.0.0",
+      "engine_id": "cinematic_direction_studio",
+      "created_at": "2026-07-22T04:42:26.603954+00:00",
+      "scene_number": 3,
+      "scene_id": "scene_003",
+      "topic": "AI Isn't Magic: The 3-Minute Truth",
+      "philosophy": {
+        "not_an_animation_engine": true,
+        "not_a_renderer": true,
+        "rule": "Every shot has a purpose. Every movement supports the story."
+      },
+      "story_objective": "By the end you'll know the one claim about what artificial intelligence actually is in a educational style, narrator ...",
+      "emotional_objective": "understanding",
+      "actor_objective": "Grounded teaching performance with breath and gesture",
+      "camera_objective": "Camera supports understanding \u2014 slow push in",
+      "lighting_objective": "comforting light supports understanding",
+      "editing_objective": "Transition cut with ending beat settle_then_cut",
+      "music_objective": "Music under_narration; exit tail_into_next",
+      "shot_type": "medium",
+      "shot_purpose": "medium serves understanding: By the end you'll know the one claim about what artificial intelligence actually is in ...",
+      "camera_language": {
+        "emotion": "understanding",
+        "movement": "slow_push_in",
+        "true_motion_camera": "push_in",
+        "shot_type": "medium",
+        "motivated": true,
+        "purpose": "Camera supports understanding \u2014 slow push in",
+        "forbid_purposeless_move": true,
+        "camera_replaces_actor_motion": false
+      },
+      "actor_direction": {
+        "character_id": "DOCTOR_001",
+        "objective": "Grounded teaching performance with breath and gesture",
+        "emotion": "understanding",
+        "beats": [
+          {
+            "t": 0.0,
+            "action": "plant_and_presence",
+            "note": "Arrive in frame",
+            "motivated": true
+          },
+          {
+            "t": 1.7800000000000002,
+            "action": "breathe",
+            "note": "Settle",
+            "motivated": true
+          },
+          {
+            "t": 3.1149999999999998,
+            "action": "gesture_prepare",
+            "note": "Thought becomes motion",
+            "motivated": true
+          },
+          {
+            "t": 4.45,
+            "action": "explain",
+            "note": "Core teaching",
+            "motivated": true
+          },
+          {
+            "t": 6.675000000000001,
+            "action": "point_or_indicate",
+            "note": "Evidence beat",
+            "motivated": true
+          },
+          {
+            "t": 8.01,
+            "action": "soft_smile_or_resolve",
+            "note": "Emotional close",
+            "motivated": true
+          }
+        ],
+        "forbid_mechanical_loop": true,
+        "require_breath_and_pause": true,
+        "require_eye_intent": true,
+        "scene_index": 2,
+        "example_philosophy": "Doctor walks to microscope. Stops. Looks down. Pauses. Breathes. Turns toward viewer. Smiles. Explains. Returns to work."
+      },
+      "pacing": {
+        "shot_duration_sec": 8.9,
+        "pause_timing": [
+          {
+            "t": 1.7800000000000002,
+            "duration_sec": 0.3675
+          }
+        ],
+        "dialogue_spacing_sec": 0.231,
+        "camera_rhythm": "measured",
+        "movement_rhythm": "shared",
+        "scene_transition_hold_sec": 0.4,
+        "forbid_machine_gun_cuts": true,
+        "forbid_static_dead_air_over_sec": 3.0
+      },
+      "lighting_intent": {
+        "intent": "comforting",
+        "lighting_mood": "practical_interior",
+        "emotion": "understanding",
+        "motivated": true,
+        "purpose": "comforting light supports understanding",
+        "forbid_unmotivated_grade": true
+      },
+      "editing_plan": {
+        "cut_points": [
+          {
+            "t": 3.11,
+            "reason": "after_pause_or_look",
+            "type": "motivated"
+          },
+          {
+            "t": 5.79,
+            "reason": "into_explanation_or_gesture",
+            "type": "motivated"
+          }
+        ],
+        "transition_in": "cut",
+        "transition_style": "cut",
+        "transition_out": "cut",
+        "reaction_timing_sec": 0.3,
+        "music_timing": {
+          "enter": "under_narration",
+          "swell_at": null,
+          "exit": "tail_into_next"
+        },
+        "ending_beat": "settle_then_cut",
+        "forbid_random_cuts": true,
+        "motivated_only": true
+      },
+      "compose_vfd": true,
+      "architecture": {
+        "frozen": true,
+        "no_new_renderer": true,
+        "not_animation_engine": true,
+        "feeds": [
+          "virtual_film_director",
+          "animation_engine",
+          "character_performance_engine",
+          "true_motion",
+          "shot_assembly"
+        ]
+      },
+      "animation_seed": {
+        "emotion": "understanding",
+        "shot_size": "dynamic_medium",
+        "lighting_mood": "practical_interior",
+        "true_motion_camera": "push_in",
+        "shot_language": "medium",
+        "transition_style": "cut",
+        "director_emotion": "understanding",
+        "motivated": true,
+        "source": "cinematic_direction_studio"
+      },
+      "validation": {
+        "ok": true,
+        "score": 100,
+        "failures": [],
+        "rejects_hit": [],
+        "reject_catalog": [
+          "camera_moves_without_purpose",
+          "actors_move_mechanically",
+          "editing_feels_random",
+          "emotion_unclear",
+          "shots_repeat",
+          "identical_framing_every_scene"
+        ],
+        "success": "Feels directed by an experienced filmmaker \u2014 each shot supports story, emotion, and educational message.",
+        "mp4_required": true,
+        "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for intentional direction."
+      }
+    },
+    {
+      "package_type": "DIRECTOR_PACKAGE",
+      "package_version": "1.0.0",
+      "engine_id": "cinematic_direction_studio",
+      "created_at": "2026-07-22T04:42:26.603971+00:00",
+      "scene_number": 4,
+      "scene_id": "scene_004",
+      "topic": "AI Isn't Magic: The 3-Minute Truth",
+      "philosophy": {
+        "not_an_animation_engine": true,
+        "not_a_renderer": true,
+        "rule": "Every shot has a purpose. Every movement supports the story."
+      },
+      "story_objective": "Here's the context most videos skip",
+      "emotional_objective": "understanding",
+      "actor_objective": "Grounded teaching performance with breath and gesture",
+      "camera_objective": "Camera supports understanding \u2014 slow push in",
+      "lighting_objective": "comforting light supports understanding",
+      "editing_objective": "Transition cut with ending beat settle_then_cut",
+      "music_objective": "Music under_narration; exit tail_into_next",
+      "shot_type": "close_up",
+      "shot_purpose": "close up serves understanding: Here's the context most videos skip",
+      "camera_language": {
+        "emotion": "understanding",
+        "movement": "slow_push_in",
+        "true_motion_camera": "push_in",
+        "shot_type": "close_up",
+        "motivated": true,
+        "purpose": "Camera supports understanding \u2014 slow push in",
+        "forbid_purposeless_move": true,
+        "camera_replaces_actor_motion": false
+      },
+      "actor_direction": {
+        "character_id": "DOCTOR_001",
+        "objective": "Grounded teaching performance with breath and gesture",
+        "emotion": "understanding",
+        "beats": [
+          {
+            "t": 0.0,
+            "action": "plant_and_presence",
+            "note": "Arrive in frame",
+            "motivated": true
+          },
+          {
+            "t": 0.44000000000000006,
+            "action": "breathe",
+            "note": "Settle",
+            "motivated": true
+          },
+          {
+            "t": 0.77,
+            "action": "gesture_prepare",
+            "note": "Thought becomes motion",
+            "motivated": true
+          },
+          {
+            "t": 1.1,
+            "action": "explain",
+            "note": "Core teaching",
+            "motivated": true
+          },
+          {
+            "t": 1.6500000000000001,
+            "action": "point_or_indicate",
+            "note": "Evidence beat",
+            "motivated": true
+          },
+          {
+            "t": 1.9800000000000002,
+            "action": "soft_smile_or_resolve",
+            "note": "Emotional close",
+            "motivated": true
+          }
+        ],
+        "forbid_mechanical_loop": true,
+        "require_breath_and_pause": true,
+        "require_eye_intent": true,
+        "scene_index": 3,
+        "example_philosophy": "Doctor walks to microscope. Stops. Looks down. Pauses. Breathes. Turns toward viewer. Smiles. Explains. Returns to work."
+      },
+      "pacing": {
+        "shot_duration_sec": 2.2,
+        "pause_timing": [
+          {
+            "t": 0.44000000000000006,
+            "duration_sec": 0.3675
+          }
+        ],
+        "dialogue_spacing_sec": 0.231,
+        "camera_rhythm": "measured",
+        "movement_rhythm": "shared",
+        "scene_transition_hold_sec": 0.176,
+        "forbid_machine_gun_cuts": true,
+        "forbid_static_dead_air_over_sec": 3.0
+      },
+      "lighting_intent": {
+        "intent": "comforting",
+        "lighting_mood": "practical_interior",
+        "emotion": "understanding",
+        "motivated": true,
+        "purpose": "comforting light supports understanding",
+        "forbid_unmotivated_grade": true
+      },
+      "editing_plan": {
+        "cut_points": [
+          {
+            "t": 1.1,
+            "reason": "mid_beat_emphasis",
+            "type": "motivated"
+          }
+        ],
+        "transition_in": "cut",
+        "transition_style": "cut",
+        "transition_out": "cut",
+        "reaction_timing_sec": 0.3,
+        "music_timing": {
+          "enter": "under_narration",
+          "swell_at": null,
+          "exit": "tail_into_next"
+        },
+        "ending_beat": "settle_then_cut",
+        "forbid_random_cuts": true,
+        "motivated_only": true
+      },
+      "compose_vfd": true,
+      "architecture": {
+        "frozen": true,
+        "no_new_renderer": true,
+        "not_animation_engine": true,
+        "feeds": [
+          "virtual_film_director",
+          "animation_engine",
+          "character_performance_engine",
+          "true_motion",
+          "shot_assembly"
+        ]
+      },
+      "animation_seed": {
+        "emotion": "understanding",
+        "shot_size": "intimate_close_up",
+        "lighting_mood": "practical_interior",
+        "true_motion_camera": "push_in",
+        "shot_language": "close_up",
+        "transition_style": "cut",
+        "director_emotion": "understanding",
+        "motivated": true,
+        "source": "cinematic_direction_studio"
+      },
+      "validation": {
+        "ok": true,
+        "score": 100,
+        "failures": [],
+        "rejects_hit": [],
+        "reject_catalog": [
+          "camera_moves_without_purpose",
+          "actors_move_mechanically",
+          "editing_feels_random",
+          "emotion_unclear",
+          "shots_repeat",
+          "identical_framing_every_scene"
+        ],
+        "success": "Feels directed by an experienced filmmaker \u2014 each shot supports story, emotion, and educational message.",
+        "mp4_required": true,
+        "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for intentional direction."
+      }
+    },
+    {
+      "package_type": "DIRECTOR_PACKAGE",
+      "package_version": "1.0.0",
+      "engine_id": "cinematic_direction_studio",
+      "created_at": "2026-07-22T04:42:26.603990+00:00",
+      "scene_number": 5,
+      "scene_id": "scene_005",
+      "topic": "AI Isn't Magic: The 3-Minute Truth",
+      "philosophy": {
+        "not_an_animation_engine": true,
+        "not_a_renderer": true,
+        "rule": "Every shot has a purpose. Every movement supports the story."
+      },
+      "story_objective": "Then it escalates: Research on what artificial intelligence actually is in a educational style, narrator professor fr...",
+      "emotional_objective": "understanding",
+      "actor_objective": "Grounded teaching performance with breath and gesture",
+      "camera_objective": "Camera supports understanding \u2014 tracking walk and talk",
+      "lighting_objective": "comforting light supports understanding",
+      "editing_objective": "Transition cut with ending beat settle_then_cut",
+      "music_objective": "Music under_narration; exit tail_into_next",
+      "shot_type": "tracking",
+      "shot_purpose": "tracking serves understanding: Then it escalates: Research on what artificial intelligence actually is in a educationa...",
+      "camera_language": {
+        "emotion": "understanding",
+        "movement": "tracking_walk_and_talk",
+        "true_motion_camera": "parallax",
+        "shot_type": "tracking",
+        "motivated": true,
+        "purpose": "Camera supports understanding \u2014 tracking walk and talk",
+        "forbid_purposeless_move": true,
+        "camera_replaces_actor_motion": false
+      },
+      "actor_direction": {
+        "character_id": "DOCTOR_001",
+        "objective": "Grounded teaching performance with breath and gesture",
+        "emotion": "understanding",
+        "beats": [
+          {
+            "t": 0.0,
+            "action": "plant_and_presence",
+            "note": "Arrive in frame",
+            "motivated": true
+          },
+          {
+            "t": 1.8600000000000003,
+            "action": "breathe",
+            "note": "Settle",
+            "motivated": true
+          },
+          {
+            "t": 3.255,
+            "action": "gesture_prepare",
+            "note": "Thought becomes motion",
+            "motivated": true
+          },
+          {
+            "t": 4.65,
+            "action": "explain",
+            "note": "Core teaching",
+            "motivated": true
+          },
+          {
+            "t": 6.9750000000000005,
+            "action": "point_or_indicate",
+            "note": "Evidence beat",
+            "motivated": true
+          },
+          {
+            "t": 8.370000000000001,
+            "action": "soft_smile_or_resolve",
+            "note": "Emotional close",
+            "motivated": true
+          }
+        ],
+        "forbid_mechanical_loop": true,
+        "require_breath_and_pause": true,
+        "require_eye_intent": true,
+        "scene_index": 4,
+        "example_philosophy": "Doctor walks to microscope. Stops. Looks down. Pauses. Breathes. Turns toward viewer. Smiles. Explains. Returns to work."
+      },
+      "pacing": {
+        "shot_duration_sec": 9.3,
+        "pause_timing": [
+          {
+            "t": 1.8600000000000003,
+            "duration_sec": 0.3675
+          }
+        ],
+        "dialogue_spacing_sec": 0.231,
+        "camera_rhythm": "walking_tempo",
+        "movement_rhythm": "actor_leads",
+        "scene_transition_hold_sec": 0.4,
+        "forbid_machine_gun_cuts": true,
+        "forbid_static_dead_air_over_sec": 3.0
+      },
+      "lighting_intent": {
+        "intent": "comforting",
+        "lighting_mood": "soft_daylight",
+        "emotion": "understanding",
+        "motivated": true,
+        "purpose": "comforting light supports understanding",
+        "forbid_unmotivated_grade": true
+      },
+      "editing_plan": {
+        "cut_points": [
+          {
+            "t": 3.25,
+            "reason": "after_pause_or_look",
+            "type": "motivated"
+          },
+          {
+            "t": 6.05,
+            "reason": "into_explanation_or_gesture",
+            "type": "motivated"
+          }
+        ],
+        "transition_in": "cut",
+        "transition_style": "cut",
+        "transition_out": "cut",
+        "reaction_timing_sec": 0.3,
+        "music_timing": {
+          "enter": "under_narration",
+          "swell_at": null,
+          "exit": "tail_into_next"
+        },
+        "ending_beat": "settle_then_cut",
+        "forbid_random_cuts": true,
+        "motivated_only": true
+      },
+      "compose_vfd": true,
+      "architecture": {
+        "frozen": true,
+        "no_new_renderer": true,
+        "not_animation_engine": true,
+        "feeds": [
+          "virtual_film_director",
+          "animation_engine",
+          "character_performance_engine",
+          "true_motion",
+          "shot_assembly"
+        ]
+      },
+      "animation_seed": {
+        "emotion": "understanding",
+        "shot_size": "dynamic_medium",
+        "lighting_mood": "soft_daylight",
+        "true_motion_camera": "parallax",
+        "shot_language": "tracking",
+        "transition_style": "cut",
+        "director_emotion": "understanding",
+        "motivated": true,
+        "source": "cinematic_direction_studio"
+      },
+      "validation": {
+        "ok": true,
+        "score": 100,
+        "failures": [],
+        "rejects_hit": [],
+        "reject_catalog": [
+          "camera_moves_without_purpose",
+          "actors_move_mechanically",
+          "editing_feels_random",
+          "emotion_unclear",
+          "shots_repeat",
+          "identical_framing_every_scene"
+        ],
+        "success": "Feels directed by an experienced filmmaker \u2014 each shot supports story, emotion, and educational message.",
+        "mp4_required": true,
+        "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for intentional direction."
+      }
+    },
+    {
+      "package_type": "DIRECTOR_PACKAGE",
+      "package_version": "1.0.0",
+      "engine_id": "cinematic_direction_studio",
+      "created_at": "2026-07-22T04:42:26.604007+00:00",
+      "scene_number": 6,
+      "scene_id": "scene_006",
+      "topic": "AI Isn't Magic: The 3-Minute Truth",
+      "philosophy": {
+        "not_an_animation_engine": true,
+        "not_a_renderer": true,
+        "rule": "Every shot has a purpose. Every movement supports the story."
+      },
+      "story_objective": "The evidence: Crossref indexed work related to what artificial intelligence actually is in a educational style, narra...",
+      "emotional_objective": "understanding",
+      "actor_objective": "Grounded teaching performance with breath and gesture",
+      "camera_objective": "Camera supports understanding \u2014 over the shoulder",
+      "lighting_objective": "comforting light supports understanding",
+      "editing_objective": "Transition cut with ending beat settle_then_cut",
+      "music_objective": "Music under_narration; exit tail_into_next",
+      "shot_type": "over_the_shoulder",
+      "shot_purpose": "over the shoulder serves understanding: The evidence: Crossref indexed work related to what artificial intelligence actually is...",
+      "camera_language": {
+        "emotion": "understanding",
+        "movement": "over_the_shoulder",
+        "true_motion_camera": "tracking",
+        "shot_type": "over_the_shoulder",
+        "motivated": true,
+        "purpose": "Camera supports understanding \u2014 over the shoulder",
+        "forbid_purposeless_move": true,
+        "camera_replaces_actor_motion": false
+      },
+      "actor_direction": {
+        "character_id": "DOCTOR_001",
+        "objective": "Grounded teaching performance with breath and gesture",
+        "emotion": "understanding",
+        "beats": [
+          {
+            "t": 0.0,
+            "action": "plant_and_presence",
+            "note": "Arrive in frame",
+            "motivated": true
+          },
+          {
+            "t": 1.36,
+            "action": "breathe",
+            "note": "Settle",
+            "motivated": true
+          },
+          {
+            "t": 2.38,
+            "action": "gesture_prepare",
+            "note": "Thought becomes motion",
+            "motivated": true
+          },
+          {
+            "t": 3.4,
+            "action": "explain",
+            "note": "Core teaching",
+            "motivated": true
+          },
+          {
+            "t": 5.1,
+            "action": "point_or_indicate",
+            "note": "Evidence beat",
+            "motivated": true
+          },
+          {
+            "t": 6.12,
+            "action": "soft_smile_or_resolve",
+            "note": "Emotional close",
+            "motivated": true
+          }
+        ],
+        "forbid_mechanical_loop": true,
+        "require_breath_and_pause": true,
+        "require_eye_intent": true,
+        "scene_index": 5,
+        "example_philosophy": "Doctor walks to microscope. Stops. Looks down. Pauses. Breathes. Turns toward viewer. Smiles. Explains. Returns to work."
+      },
+      "pacing": {
+        "shot_duration_sec": 6.8,
+        "pause_timing": [
+          {
+            "t": 1.36,
+            "duration_sec": 0.3675
+          }
+        ],
+        "dialogue_spacing_sec": 0.231,
+        "camera_rhythm": "measured",
+        "movement_rhythm": "shared",
+        "scene_transition_hold_sec": 0.4,
+        "forbid_machine_gun_cuts": true,
+        "forbid_static_dead_air_over_sec": 3.0
+      },
+      "lighting_intent": {
+        "intent": "comforting",
+        "lighting_mood": "practical_interior",
+        "emotion": "understanding",
+        "motivated": true,
+        "purpose": "comforting light supports understanding",
+        "forbid_unmotivated_grade": true
+      },
+      "editing_plan": {
+        "cut_points": [
+          {
+            "t": 2.38,
+            "reason": "after_pause_or_look",
+            "type": "motivated"
+          },
+          {
+            "t": 4.42,
+            "reason": "into_explanation_or_gesture",
+            "type": "motivated"
+          }
+        ],
+        "transition_in": "cut",
+        "transition_style": "cut",
+        "transition_out": "cut",
+        "reaction_timing_sec": 0.3,
+        "music_timing": {
+          "enter": "under_narration",
+          "swell_at": null,
+          "exit": "tail_into_next"
+        },
+        "ending_beat": "settle_then_cut",
+        "forbid_random_cuts": true,
+        "motivated_only": true
+      },
+      "compose_vfd": true,
+      "architecture": {
+        "frozen": true,
+        "no_new_renderer": true,
+        "not_animation_engine": true,
+        "feeds": [
+          "virtual_film_director",
+          "animation_engine",
+          "character_performance_engine",
+          "true_motion",
+          "shot_assembly"
+        ]
+      },
+      "animation_seed": {
+        "emotion": "understanding",
+        "shot_size": "dynamic_medium",
+        "lighting_mood": "practical_interior",
+        "true_motion_camera": "tracking",
+        "shot_language": "over_the_shoulder",
+        "transition_style": "cut",
+        "director_emotion": "understanding",
+        "motivated": true,
+        "source": "cinematic_direction_studio"
+      },
+      "validation": {
+        "ok": true,
+        "score": 100,
+        "failures": [],
+        "rejects_hit": [],
+        "reject_catalog": [
+          "camera_moves_without_purpose",
+          "actors_move_mechanically",
+          "editing_feels_random",
+          "emotion_unclear",
+          "shots_repeat",
+          "identical_framing_every_scene"
+        ],
+        "success": "Feels directed by an experienced filmmaker \u2014 each shot supports story, emotion, and educational message.",
+        "mp4_required": true,
+        "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for intentional direction."
+      }
+    },
+    {
+      "package_type": "DIRECTOR_PACKAGE",
+      "package_version": "1.0.0",
+      "engine_id": "cinematic_direction_studio",
+      "created_at": "2026-07-22T04:42:26.604021+00:00",
+      "scene_number": 7,
+      "scene_id": "scene_007",
+      "topic": "AI Isn't Magic: The 3-Minute Truth",
+      "philosophy": {
+        "not_an_animation_engine": true,
+        "not_a_renderer": true,
+        "rule": "Every shot has a purpose. Every movement supports the story."
+      },
+      "story_objective": "This is the part that stops people",
+      "emotional_objective": "understanding",
+      "actor_objective": "Grounded teaching performance with breath and gesture",
+      "camera_objective": "Camera supports understanding \u2014 slow push in",
+      "lighting_objective": "comforting light supports understanding",
+      "editing_objective": "Transition dissolve with ending beat settle_then_cut",
+      "music_objective": "Music under_narration; exit tail_into_next",
+      "shot_type": "reaction",
+      "shot_purpose": "reaction serves understanding: This is the part that stops people",
+      "camera_language": {
+        "emotion": "understanding",
+        "movement": "slow_push_in",
+        "true_motion_camera": "push_in",
+        "shot_type": "reaction",
+        "motivated": true,
+        "purpose": "Camera supports understanding \u2014 slow push in",
+        "forbid_purposeless_move": true,
+        "camera_replaces_actor_motion": false
+      },
+      "actor_direction": {
+        "character_id": "DOCTOR_001",
+        "objective": "Grounded teaching performance with breath and gesture",
+        "emotion": "understanding",
+        "beats": [
+          {
+            "t": 0.0,
+            "action": "plant_and_presence",
+            "note": "Arrive in frame",
+            "motivated": true
+          },
+          {
+            "t": 0.52,
+            "action": "breathe",
+            "note": "Settle",
+            "motivated": true
+          },
+          {
+            "t": 0.9099999999999999,
+            "action": "gesture_prepare",
+            "note": "Thought becomes motion",
+            "motivated": true
+          },
+          {
+            "t": 1.3,
+            "action": "explain",
+            "note": "Core teaching",
+            "motivated": true
+          },
+          {
+            "t": 1.9500000000000002,
+            "action": "point_or_indicate",
+            "note": "Evidence beat",
+            "motivated": true
+          },
+          {
+            "t": 2.3400000000000003,
+            "action": "soft_smile_or_resolve",
+            "note": "Emotional close",
+            "motivated": true
+          }
+        ],
+        "forbid_mechanical_loop": true,
+        "require_breath_and_pause": true,
+        "require_eye_intent": true,
+        "scene_index": 6,
+        "example_philosophy": "Doctor walks to microscope. Stops. Looks down. Pauses. Breathes. Turns toward viewer. Smiles. Explains. Returns to work."
+      },
+      "pacing": {
+        "shot_duration_sec": 2.6,
+        "pause_timing": [
+          {
+            "t": 0.52,
+            "duration_sec": 0.3675
+          }
+        ],
+        "dialogue_spacing_sec": 0.231,
+        "camera_rhythm": "measured",
+        "movement_rhythm": "shared",
+        "scene_transition_hold_sec": 0.208,
+        "forbid_machine_gun_cuts": true,
+        "forbid_static_dead_air_over_sec": 3.0
+      },
+      "lighting_intent": {
+        "intent": "comforting",
+        "lighting_mood": "practical_interior",
+        "emotion": "understanding",
+        "motivated": true,
+        "purpose": "comforting light supports understanding",
+        "forbid_unmotivated_grade": true
+      },
+      "editing_plan": {
+        "cut_points": [
+          {
+            "t": 0.91,
+            "reason": "after_pause_or_look",
+            "type": "motivated"
+          },
+          {
+            "t": 1.69,
+            "reason": "into_explanation_or_gesture",
+            "type": "motivated"
+          }
+        ],
+        "transition_in": "J_cut",
+        "transition_style": "dissolve",
+        "transition_out": "dissolve",
+        "reaction_timing_sec": 0.3,
+        "music_timing": {
+          "enter": "under_narration",
+          "swell_at": null,
+          "exit": "tail_into_next"
+        },
+        "ending_beat": "settle_then_cut",
+        "forbid_random_cuts": true,
+        "motivated_only": true
+      },
+      "compose_vfd": true,
+      "architecture": {
+        "frozen": true,
+        "no_new_renderer": true,
+        "not_animation_engine": true,
+        "feeds": [
+          "virtual_film_director",
+          "animation_engine",
+          "character_performance_engine",
+          "true_motion",
+          "shot_assembly"
+        ]
+      },
+      "animation_seed": {
+        "emotion": "understanding",
+        "shot_size": "intimate_close_up",
+        "lighting_mood": "practical_interior",
+        "true_motion_camera": "push_in",
+        "shot_language": "reaction",
+        "transition_style": "dissolve",
+        "director_emotion": "understanding",
+        "motivated": true,
+        "source": "cinematic_direction_studio"
+      },
+      "validation": {
+        "ok": true,
+        "score": 100,
+        "failures": [],
+        "rejects_hit": [],
+        "reject_catalog": [
+          "camera_moves_without_purpose",
+          "actors_move_mechanically",
+          "editing_feels_random",
+          "emotion_unclear",
+          "shots_repeat",
+          "identical_framing_every_scene"
+        ],
+        "success": "Feels directed by an experienced filmmaker \u2014 each shot supports story, emotion, and educational message.",
+        "mp4_required": true,
+        "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for intentional direction."
+      }
+    },
+    {
+      "package_type": "DIRECTOR_PACKAGE",
+      "package_version": "1.0.0",
+      "engine_id": "cinematic_direction_studio",
+      "created_at": "2026-07-22T04:42:26.604037+00:00",
+      "scene_number": 8,
+      "scene_id": "scene_008",
+      "topic": "AI Isn't Magic: The 3-Minute Truth",
+      "philosophy": {
+        "not_an_animation_engine": true,
+        "not_a_renderer": true,
+        "rule": "Every shot has a purpose. Every movement supports the story."
+      },
+      "story_objective": "The fix: change one small input around what artificial intelligence actually is in a educational style, narrator prof...",
+      "emotional_objective": "understanding",
+      "actor_objective": "Grounded teaching performance with breath and gesture",
+      "camera_objective": "Camera supports understanding \u2014 slow push in",
+      "lighting_objective": "comforting light supports understanding",
+      "editing_objective": "Transition cut with ending beat settle_then_cut",
+      "music_objective": "Music under_narration; exit tail_into_next",
+      "shot_type": "pov",
+      "shot_purpose": "pov serves understanding: The fix: change one small input around what artificial intelligence actually is in a ed...",
+      "camera_language": {
+        "emotion": "understanding",
+        "movement": "slow_push_in",
+        "true_motion_camera": "handheld",
+        "shot_type": "pov",
+        "motivated": true,
+        "purpose": "Camera supports understanding \u2014 slow push in",
+        "forbid_purposeless_move": true,
+        "camera_replaces_actor_motion": false
+      },
+      "actor_direction": {
+        "character_id": "DOCTOR_001",
+        "objective": "Grounded teaching performance with breath and gesture",
+        "emotion": "understanding",
+        "beats": [
+          {
+            "t": 0.0,
+            "action": "plant_and_presence",
+            "note": "Arrive in frame",
+            "motivated": true
+          },
+          {
+            "t": 1.36,
+            "action": "breathe",
+            "note": "Settle",
+            "motivated": true
+          },
+          {
+            "t": 2.38,
+            "action": "gesture_prepare",
+            "note": "Thought becomes motion",
+            "motivated": true
+          },
+          {
+            "t": 3.4,
+            "action": "explain",
+            "note": "Core teaching",
+            "motivated": true
+          },
+          {
+            "t": 5.1,
+            "action": "point_or_indicate",
+            "note": "Evidence beat",
+            "motivated": true
+          },
+          {
+            "t": 6.12,
+            "action": "soft_smile_or_resolve",
+            "note": "Emotional close",
+            "motivated": true
+          }
+        ],
+        "forbid_mechanical_loop": true,
+        "require_breath_and_pause": true,
+        "require_eye_intent": true,
+        "scene_index": 7,
+        "example_philosophy": "Doctor walks to microscope. Stops. Looks down. Pauses. Breathes. Turns toward viewer. Smiles. Explains. Returns to work."
+      },
+      "pacing": {
+        "shot_duration_sec": 6.8,
+        "pause_timing": [
+          {
+            "t": 1.36,
+            "duration_sec": 0.3675
+          }
+        ],
+        "dialogue_spacing_sec": 0.231,
+        "camera_rhythm": "measured",
+        "movement_rhythm": "shared",
+        "scene_transition_hold_sec": 0.4,
+        "forbid_machine_gun_cuts": true,
+        "forbid_static_dead_air_over_sec": 3.0
+      },
+      "lighting_intent": {
+        "intent": "comforting",
+        "lighting_mood": "practical_interior",
+        "emotion": "understanding",
+        "motivated": true,
+        "purpose": "comforting light supports understanding",
+        "forbid_unmotivated_grade": true
+      },
+      "editing_plan": {
+        "cut_points": [
+          {
+            "t": 2.38,
+            "reason": "after_pause_or_look",
+            "type": "motivated"
+          },
+          {
+            "t": 4.42,
+            "reason": "into_explanation_or_gesture",
+            "type": "motivated"
+          }
+        ],
+        "transition_in": "cut",
+        "transition_style": "cut",
+        "transition_out": "cut",
+        "reaction_timing_sec": 0.3,
+        "music_timing": {
+          "enter": "under_narration",
+          "swell_at": null,
+          "exit": "tail_into_next"
+        },
+        "ending_beat": "settle_then_cut",
+        "forbid_random_cuts": true,
+        "motivated_only": true
+      },
+      "compose_vfd": true,
+      "architecture": {
+        "frozen": true,
+        "no_new_renderer": true,
+        "not_animation_engine": true,
+        "feeds": [
+          "virtual_film_director",
+          "animation_engine",
+          "character_performance_engine",
+          "true_motion",
+          "shot_assembly"
+        ]
+      },
+      "animation_seed": {
+        "emotion": "understanding",
+        "shot_size": "dynamic_medium",
+        "lighting_mood": "practical_interior",
+        "true_motion_camera": "handheld",
+        "shot_language": "pov",
+        "transition_style": "cut",
+        "director_emotion": "understanding",
+        "motivated": true,
+        "source": "cinematic_direction_studio"
+      },
+      "validation": {
+        "ok": true,
+        "score": 100,
+        "failures": [],
+        "rejects_hit": [],
+        "reject_catalog": [
+          "camera_moves_without_purpose",
+          "actors_move_mechanically",
+          "editing_feels_random",
+          "emotion_unclear",
+          "shots_repeat",
+          "identical_framing_every_scene"
+        ],
+        "success": "Feels directed by an experienced filmmaker \u2014 each shot supports story, emotion, and educational message.",
+        "mp4_required": true,
+        "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for intentional direction."
+      }
+    },
+    {
+      "package_type": "DIRECTOR_PACKAGE",
+      "package_version": "1.0.0",
+      "engine_id": "cinematic_direction_studio",
+      "created_at": "2026-07-22T04:42:26.604052+00:00",
+      "scene_number": 9,
+      "scene_id": "scene_009",
+      "topic": "AI Isn't Magic: The 3-Minute Truth",
+      "philosophy": {
+        "not_an_animation_engine": true,
+        "not_a_renderer": true,
+        "rule": "Every shot has a purpose. Every movement supports the story."
+      },
+      "story_objective": "Share the myth you believed longest \u2014 tag a friend, then follow so the next one doesn't fool you",
+      "emotional_objective": "understanding",
+      "actor_objective": "Grounded teaching performance with breath and gesture",
+      "camera_objective": "Camera supports understanding \u2014 slow dolly",
+      "lighting_objective": "comforting light supports understanding",
+      "editing_objective": "Transition dissolve with ending beat settle_then_cut",
+      "music_objective": "Music under_narration; exit resolve_hold",
+      "shot_type": "establishing",
+      "shot_purpose": "establishing serves understanding: Share the myth you believed longest \u2014 tag a friend, then follow so the next one doesn't...",
+      "camera_language": {
+        "emotion": "understanding",
+        "movement": "slow_dolly",
+        "true_motion_camera": "pull_out",
+        "shot_type": "establishing",
+        "motivated": true,
+        "purpose": "Camera supports understanding \u2014 slow dolly",
+        "forbid_purposeless_move": true,
+        "camera_replaces_actor_motion": false
+      },
+      "actor_direction": {
+        "character_id": "DOCTOR_001",
+        "objective": "Grounded teaching performance with breath and gesture",
+        "emotion": "understanding",
+        "beats": [
+          {
+            "t": 0.0,
+            "action": "plant_and_presence",
+            "note": "Arrive in frame",
+            "motivated": true
+          },
+          {
+            "t": 1.4000000000000001,
+            "action": "breathe",
+            "note": "Settle",
+            "motivated": true
+          },
+          {
+            "t": 2.4499999999999997,
+            "action": "gesture_prepare",
+            "note": "Thought becomes motion",
+            "motivated": true
+          },
+          {
+            "t": 3.5,
+            "action": "explain",
+            "note": "Core teaching",
+            "motivated": true
+          },
+          {
+            "t": 5.25,
+            "action": "point_or_indicate",
+            "note": "Evidence beat",
+            "motivated": true
+          },
+          {
+            "t": 6.3,
+            "action": "soft_smile_or_resolve",
+            "note": "Emotional close",
+            "motivated": true
+          }
+        ],
+        "forbid_mechanical_loop": true,
+        "require_breath_and_pause": true,
+        "require_eye_intent": true,
+        "scene_index": 8,
+        "example_philosophy": "Doctor walks to microscope. Stops. Looks down. Pauses. Breathes. Turns toward viewer. Smiles. Explains. Returns to work."
+      },
+      "pacing": {
+        "shot_duration_sec": 7.0,
+        "pause_timing": [
+          {
+            "t": 1.4000000000000001,
+            "duration_sec": 0.3675
+          }
+        ],
+        "dialogue_spacing_sec": 0.231,
+        "camera_rhythm": "measured",
+        "movement_rhythm": "shared",
+        "scene_transition_hold_sec": 0.4,
+        "forbid_machine_gun_cuts": true,
+        "forbid_static_dead_air_over_sec": 3.0
+      },
+      "lighting_intent": {
+        "intent": "comforting",
+        "lighting_mood": "practical_interior",
+        "emotion": "understanding",
+        "motivated": true,
+        "purpose": "comforting light supports understanding",
+        "forbid_unmotivated_grade": true
+      },
+      "editing_plan": {
+        "cut_points": [
+          {
+            "t": 2.45,
+            "reason": "after_pause_or_look",
+            "type": "motivated"
+          },
+          {
+            "t": 4.55,
+            "reason": "into_explanation_or_gesture",
+            "type": "motivated"
+          }
+        ],
+        "transition_in": "J_cut",
+        "transition_style": "dissolve",
+        "transition_out": "dissolve",
+        "reaction_timing_sec": 0.3,
+        "music_timing": {
+          "enter": "under_narration",
+          "swell_at": null,
+          "exit": "resolve_hold"
+        },
+        "ending_beat": "settle_then_cut",
+        "forbid_random_cuts": true,
+        "motivated_only": true
+      },
+      "compose_vfd": true,
+      "architecture": {
+        "frozen": true,
+        "no_new_renderer": true,
+        "not_animation_engine": true,
+        "feeds": [
+          "virtual_film_director",
+          "animation_engine",
+          "character_performance_engine",
+          "true_motion",
+          "shot_assembly"
+        ]
+      },
+      "animation_seed": {
+        "emotion": "understanding",
+        "shot_size": "establishing_wide",
+        "lighting_mood": "practical_interior",
+        "true_motion_camera": "pull_out",
+        "shot_language": "establishing",
+        "transition_style": "dissolve",
+        "director_emotion": "understanding",
+        "motivated": true,
+        "source": "cinematic_direction_studio"
+      },
+      "validation": {
+        "ok": true,
+        "score": 100,
+        "failures": [],
+        "rejects_hit": [],
+        "reject_catalog": [
+          "camera_moves_without_purpose",
+          "actors_move_mechanically",
+          "editing_feels_random",
+          "emotion_unclear",
+          "shots_repeat",
+          "identical_framing_every_scene"
+        ],
+        "success": "Feels directed by an experienced filmmaker \u2014 each shot supports story, emotion, and educational message.",
+        "mp4_required": true,
+        "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for intentional direction."
+      }
+    }
+  ],
+  "emotional_timeline": {
+    "beats": [
+      {
+        "scene_number": 1,
+        "audience_emotion": "curiosity",
+        "shot_type": "orbit",
+        "arc_position": "curiosity"
+      },
+      {
+        "scene_number": 2,
+        "audience_emotion": "curiosity",
+        "shot_type": "extreme_close_up",
+        "arc_position": "curiosity"
+      },
+      {
+        "scene_number": 3,
+        "audience_emotion": "understanding",
+        "shot_type": "medium",
+        "arc_position": "understanding"
+      },
+      {
+        "scene_number": 4,
+        "audience_emotion": "understanding",
+        "shot_type": "close_up",
+        "arc_position": "understanding"
+      },
+      {
+        "scene_number": 5,
+        "audience_emotion": "understanding",
+        "shot_type": "tracking",
+        "arc_position": "understanding"
+      },
+      {
+        "scene_number": 6,
+        "audience_emotion": "understanding",
+        "shot_type": "over_the_shoulder",
+        "arc_position": "understanding"
+      },
+      {
+        "scene_number": 7,
+        "audience_emotion": "understanding",
+        "shot_type": "reaction",
+        "arc_position": "understanding"
+      },
+      {
+        "scene_number": 8,
+        "audience_emotion": "understanding",
+        "shot_type": "pov",
+        "arc_position": "understanding"
+      },
+      {
+        "scene_number": 9,
+        "audience_emotion": "understanding",
+        "shot_type": "establishing",
+        "arc_position": "understanding"
+      }
+    ],
+    "required_arc": [
+      "curiosity",
+      "understanding",
+      "wonder",
+      "reflection",
+      "inspiration",
+      "resolution"
+    ],
+    "covered": [
+      "curiosity",
+      "understanding"
+    ],
+    "has_arc": false,
+    "philosophy": "Every scene should have an emotional arc for the audience."
+  },
+  "philosophy": {
+    "not_an_animation_engine": true,
+    "not_a_renderer": true,
+    "rule": "Every scene must feel intentionally directed."
+  },
+  "architecture": {
+    "frozen": true,
+    "composes_virtual_film_director": true
+  },
+  "validation": {
+    "ok": false,
+    "score": 88,
+    "failures": [
+      "emotional_arc_weak"
+    ],
+    "rejects_hit": [
+      "emotion_unclear"
+    ],
+    "scene_reviews": [
+      {
+        "ok": true,
+        "score": 100,
+        "failures": [],
+        "rejects_hit": [],
+        "reject_catalog": [
+          "camera_moves_without_purpose",
+          "actors_move_mechanically",
+          "editing_feels_random",
+          "emotion_unclear",
+          "shots_repeat",
+          "identical_framing_every_scene"
+        ],
+        "success": "Feels directed by an experienced filmmaker \u2014 each shot supports story, emotion, and educational message.",
+        "mp4_required": true,
+        "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for intentional direction."
+      },
+      {
+        "ok": true,
+        "score": 100,
+        "failures": [],
+        "rejects_hit": [],
+        "reject_catalog": [
+          "camera_moves_without_purpose",
+          "actors_move_mechanically",
+          "editing_feels_random",
+          "emotion_unclear",
+          "shots_repeat",
+          "identical_framing_every_scene"
+        ],
+        "success": "Feels directed by an experienced filmmaker \u2014 each shot supports story, emotion, and educational message.",
+        "mp4_required": true,
+        "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for intentional direction."
+      },
+      {
+        "ok": true,
+        "score": 100,
+        "failures": [],
+        "rejects_hit": [],
+        "reject_catalog": [
+          "camera_moves_without_purpose",
+          "actors_move_mechanically",
+          "editing_feels_random",
+          "emotion_unclear",
+          "shots_repeat",
+          "identical_framing_every_scene"
+        ],
+        "success": "Feels directed by an experienced filmmaker \u2014 each shot supports story, emotion, and educational message.",
+        "mp4_required": true,
+        "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for intentional direction."
+      },
+      {
+        "ok": true,
+        "score": 100,
+        "failures": [],
+        "rejects_hit": [],
+        "reject_catalog": [
+          "camera_moves_without_purpose",
+          "actors_move_mechanically",
+          "editing_feels_random",
+          "emotion_unclear",
+          "shots_repeat",
+          "identical_framing_every_scene"
+        ],
+        "success": "Feels directed by an experienced filmmaker \u2014 each shot supports story, emotion, and educational message.",
+        "mp4_required": true,
+        "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for intentional direction."
+      },
+      {
+        "ok": true,
+        "score": 100,
+        "failures": [],
+        "rejects_hit": [],
+        "reject_catalog": [
+          "camera_moves_without_purpose",
+          "actors_move_mechanically",
+          "editing_feels_random",
+          "emotion_unclear",
+          "shots_repeat",
+          "identical_framing_every_scene"
+        ],
+        "success": "Feels directed by an experienced filmmaker \u2014 each shot supports story, emotion, and educational message.",
+        "mp4_required": true,
+        "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for intentional direction."
+      },
+      {
+        "ok": true,
+        "score": 100,
+        "failures": [],
+        "rejects_hit": [],
+        "reject_catalog": [
+          "camera_moves_without_purpose",
+          "actors_move_mechanically",
+          "editing_feels_random",
+          "emotion_unclear",
+          "shots_repeat",
+          "identical_framing_every_scene"
+        ],
+        "success": "Feels directed by an experienced filmmaker \u2014 each shot supports story, emotion, and educational message.",
+        "mp4_required": true,
+        "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for intentional direction."
+      },
+      {
+        "ok": true,
+        "score": 100,
+        "failures": [],
+        "rejects_hit": [],
+        "reject_catalog": [
+          "camera_moves_without_purpose",
+          "actors_move_mechanically",
+          "editing_feels_random",
+          "emotion_unclear",
+          "shots_repeat",
+          "identical_framing_every_scene"
+        ],
+        "success": "Feels directed by an experienced filmmaker \u2014 each shot supports story, emotion, and educational message.",
+        "mp4_required": true,
+        "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for intentional direction."
+      },
+      {
+        "ok": true,
+        "score": 100,
+        "failures": [],
+        "rejects_hit": [],
+        "reject_catalog": [
+          "camera_moves_without_purpose",
+          "actors_move_mechanically",
+          "editing_feels_random",
+          "emotion_unclear",
+          "shots_repeat",
+          "identical_framing_every_scene"
+        ],
+        "success": "Feels directed by an experienced filmmaker \u2014 each shot supports story, emotion, and educational message.",
+        "mp4_required": true,
+        "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for intentional direction."
+      },
+      {
+        "ok": true,
+        "score": 100,
+        "failures": [],
+        "rejects_hit": [],
+        "reject_catalog": [
+          "camera_moves_without_purpose",
+          "actors_move_mechanically",
+          "editing_feels_random",
+          "emotion_unclear",
+          "shots_repeat",
+          "identical_framing_every_scene"
+        ],
+        "success": "Feels directed by an experienced filmmaker \u2014 each shot supports story, emotion, and educational message.",
+        "mp4_required": true,
+        "note": "Passing this plan gate is necessary but not sufficient. Inspect the final MP4 for intentional direction."
+      }
+    ],
+    "reject_catalog": [
+      "camera_moves_without_purpose",
+      "actors_move_mechanically",
+      "editing_feels_random",
+      "emotion_unclear",
+      "shots_repeat",
+      "identical_framing_every_scene"
+    ]
+  }
+}

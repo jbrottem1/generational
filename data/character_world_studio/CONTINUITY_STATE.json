@@ -4,9 +4,9 @@
     "CHAR-NOVA": {
       "id": "CHAR-NOVA",
       "name": "Nova",
-      "appearances": 3,
-      "last_seen": "2026-07-15T23:52:07.410631+00:00",
-      "last_topic": "Every Decision Matters",
+      "appearances": 4,
+      "last_seen": "2026-07-22T04:42:26.842577+00:00",
+      "last_topic": "AI Isn't Magic: The 3-Minute Truth",
       "signature_clothing": {
         "coat": "violet_hoodie",
         "shirt": "soft_white",
@@ -32,9 +32,9 @@
     "CHAR-ATLAS": {
       "id": "CHAR-ATLAS",
       "name": "Professor Atlas",
-      "appearances": 4,
-      "last_seen": "2026-07-16T03:05:37.230221+00:00",
-      "last_topic": "Why Fire Hydrants Are Different Colors",
+      "appearances": 5,
+      "last_seen": "2026-07-22T04:42:26.842591+00:00",
+      "last_topic": "AI Isn't Magic: The 3-Minute Truth",
       "signature_clothing": {
         "coat": "deep_navy_blazer",
         "shirt": "soft_cream",
@@ -139,9 +139,27 @@
         "reflection_on_glass",
         "charts"
       ]
+    },
+    "LOC-AI-LAB": {
+      "id": "LOC-AI-LAB",
+      "name": "AI Research Laboratory",
+      "uses": 1,
+      "last_seen": "2026-07-22T04:42:26.842595+00:00",
+      "architecture": "glass_and_matte_steel_lab_bays",
+      "detail_dressing": [
+        "notes_on_whiteboard",
+        "plant_on_shelf",
+        "running_computers",
+        "sticky_notes"
+      ]
     }
   },
   "productions": [
+    {
+      "topic": "AI Isn't Magic: The 3-Minute Truth",
+      "production_id": "gold_ai_20260722T044206_a1",
+      "at": "2026-07-22T04:42:26.842597+00:00"
+    },
     {
       "topic": "The Art of Being Happy",
       "production_id": "local",

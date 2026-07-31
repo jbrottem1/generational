@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-15T23:08:59.156851+00:00",
+  "updated_at": "2026-07-22T04:42:51.498712+00:00",
   "productions": [
     {
       "production_id": "ops_156cb163d5",
@@ -7314,6 +7314,60 @@
       "recommendation": "APPROVE_WITH_NOTES",
       "pipeline_health": "degraded",
       "stored_at": "2026-07-15T23:08:59.155757+00:00"
+    },
+    {
+      "production_id": "gold_ai_20260722T044206_a1",
+      "topic": "What Artificial Intelligence Actually Is",
+      "runtime_sec": 45,
+      "platform": "youtube_shorts",
+      "style": "educational",
+      "narrator": "professor",
+      "scores": {
+        "overall": 98.0,
+        "hook": 100.0,
+        "narration": 87.0,
+        "visual": 93.1,
+        "audio": 86.0,
+        "caption": 88.0,
+        "educational": 90.0,
+        "retention": 88.0
+      },
+      "assets_used": [
+        "C:\\AI\\Projects\\Generational\\data\\productions\\executive_exports\\What_Artificial_Intelligence_Actually_Is_gold_ai_20260722T044206_a1",
+        "C:\\AI\\Projects\\Generational\\data\\productions\\executive_exports\\What_Artificial_Intelligence_Actually_Is_gold_ai_20260722T044206_a1\\episode.mp4",
+        "C:\\AI\\Projects\\Generational\\data\\productions\\executive_exports\\What_Artificial_Intelligence_Actually_Is_gold_ai_20260722T044206_a1\\captions.json",
+        "C:\\AI\\Projects\\Generational\\data\\productions\\executive_exports\\What_Artificial_Intelligence_Actually_Is_gold_ai_20260722T044206_a1\\description.txt",
+        "C:\\AI\\Projects\\Generational\\data\\productions\\executive_exports\\What_Artificial_Intelligence_Actually_Is_gold_ai_20260722T044206_a1\\seo_metadata.json",
+        "C:\\AI\\Projects\\Generational\\data\\productions\\executive_exports\\What_Artificial_Intelligence_Actually_Is_gold_ai_20260722T044206_a1\\thumbnail.png",
+        "C:\\AI\\Projects\\Generational\\data\\productions\\executive_exports\\What_Artificial_Intelligence_Actually_Is_gold_ai_20260722T044206_a1\\episode.mp4"
+      ],
+      "prompt_used": "What Artificial Intelligence Actually Is",
+      "thumbnail": null,
+      "upload_package": {
+        "run_id": "gold_ai_20260722T044206_a1",
+        "topic": "What Artificial Intelligence Actually Is",
+        "paths": {
+          "mp4": "C:\\AI\\Projects\\Generational\\data\\productions\\executive_exports\\What_Artificial_Intelligence_Actually_Is_gold_ai_20260722T044206_a1\\episode.mp4",
+          "captions": "C:\\AI\\Projects\\Generational\\data\\productions\\executive_exports\\What_Artificial_Intelligence_Actually_Is_gold_ai_20260722T044206_a1\\captions.json",
+          "audio": "C:\\AI\\Projects\\Generational\\data\\productions\\executive_exports\\What_Artificial_Intelligence_Actually_Is_gold_ai_20260722T044206_a1\\narration.mp3",
+          "description": "C:\\AI\\Projects\\Generational\\data\\productions\\executive_exports\\What_Artificial_Intelligence_Actually_Is_gold_ai_20260722T044206_a1\\description.txt",
+          "seo_metadata": "C:\\AI\\Projects\\Generational\\data\\productions\\executive_exports\\What_Artificial_Intelligence_Actually_Is_gold_ai_20260722T044206_a1\\seo_metadata.json",
+          "thumbnail": "C:\\AI\\Projects\\Generational\\data\\productions\\executive_exports\\What_Artificial_Intelligence_Actually_Is_gold_ai_20260722T044206_a1\\thumbnail.png",
+          "manifest": "C:\\AI\\Projects\\Generational\\data\\productions\\executive_exports\\What_Artificial_Intelligence_Actually_Is_gold_ai_20260722T044206_a1\\EXPORT_MANIFEST.json"
+        },
+        "export_size_bytes": 641208,
+        "qa_decision": "BLOCK_EXPORT",
+        "qa_score": 77,
+        "mp4_materialized": true
+      },
+      "performance_predictions": {
+        "ctr": 7.5,
+        "completion": 88.0,
+        "shareability": 88.0
+      },
+      "recommendation": "APPROVE_FOR_PUBLISH",
+      "pipeline_health": "healthy",
+      "stored_at": "2026-07-22T04:42:51.497394+00:00"
     }
   ]
 }

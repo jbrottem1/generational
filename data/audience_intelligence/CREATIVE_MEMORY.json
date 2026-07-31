@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "updated_at": "2026-07-15T23:08:59.151851+00:00",
+  "updated_at": "2026-07-22T04:42:51.494748+00:00",
   "lessons": [
     {
       "lesson_id": "ail_96feb7c455",
@@ -8,55 +8,6 @@
       "category": "subject_best_practices",
       "confidence": 1.0,
       "evidence": [
-        {
-          "type": "creative_excellence",
-          "production_id": "ops_87fb01757a",
-          "overall": 77.4,
-          "scores": {
-            "hook_effectiveness": 70.0,
-            "visual_engagement": 70.0,
-            "story_clarity": 70.0,
-            "audio_quality": 70.0,
-            "educational_value": 70.0,
-            "emotional_impact": 70.0,
-            "retention_prediction": 70.0,
-            "shareability_prediction": 65.0,
-            "overall": 77.4
-          },
-          "single_recommendation": {
-            "element": "viewer_emotion",
-            "current_score": 45.0,
-            "excellence_floor": 92.0,
-            "gap": 47.0,
-            "impact_weight": 75,
-            "expected_retention_gain": 35.25,
-            "why_this_ranks_first": "Emotion is the share / subscribe conversion fuel.",
-            "recommendation": "Attach the idea to a personal stake (embarrassment, amazement, relief) before the first fact.",
-            "mode": "improve",
-            "do_not_touch": [
-              "curiosity",
-              "narration_energy",
-              "middle_pacing",
-              "ending",
-              "payoff"
-            ],
-            "principle": "Never suggest 20 improvements. Ship one highest-impact creative change.",
-            "runner_ups": [
-              {
-                "element": "curiosity",
-                "expected_retention_gain": 24.65
-              },
-              {
-                "element": "narration_energy",
-                "expected_retention_gain": 8.4
-              },
-              {
-                "element": "middle_pacing",
-                "expected_retention_gain": 2.59
-              }
-            ]
-          }
-        },
         {
           "type": "creative_excellence",
           "production_id": "ops_f309a9c023",
@@ -987,12 +938,61 @@
               }
             ]
           }
+        },
+        {
+          "type": "creative_excellence",
+          "production_id": "gold_ai_20260722T044206_a1",
+          "overall": 77.9,
+          "scores": {
+            "hook_effectiveness": 70.0,
+            "visual_engagement": 70.0,
+            "story_clarity": 70.0,
+            "audio_quality": 70.0,
+            "educational_value": 70.0,
+            "emotional_impact": 70.0,
+            "retention_prediction": 70.0,
+            "shareability_prediction": 65.0,
+            "overall": 77.9
+          },
+          "single_recommendation": {
+            "element": "viewer_emotion",
+            "current_score": 46.0,
+            "excellence_floor": 92.0,
+            "gap": 46.0,
+            "impact_weight": 75,
+            "expected_retention_gain": 34.5,
+            "why_this_ranks_first": "Emotion is the share / subscribe conversion fuel.",
+            "recommendation": "Attach the idea to a personal stake (embarrassment, amazement, relief) before the first fact.",
+            "mode": "improve",
+            "do_not_touch": [
+              "curiosity",
+              "narration_energy",
+              "middle_pacing",
+              "ending",
+              "payoff"
+            ],
+            "principle": "Never suggest 20 improvements. Ship one highest-impact creative change.",
+            "runner_ups": [
+              {
+                "element": "curiosity",
+                "expected_retention_gain": 23.8
+              },
+              {
+                "element": "narration_energy",
+                "expected_retention_gain": 4.9
+              },
+              {
+                "element": "middle_pacing",
+                "expected_retention_gain": 2.59
+              }
+            ]
+          }
         }
       ],
       "platform": "youtube_shorts",
       "niche": "",
       "topic": "Why octopuses have three hearts",
-      "production_id": "ops_f9daa1da06",
+      "production_id": "gold_ai_20260722T044206_a1",
       "source": "post_production_review",
       "tags": [
         "youtube",
@@ -1000,7 +1000,7 @@
       ],
       "created_at": "2026-07-14T04:29:41.733402+00:00",
       "active": true,
-      "last_corroborated_at": "2026-07-15T23:08:59.151837+00:00"
+      "last_corroborated_at": "2026-07-22T04:42:51.494567+00:00"
     },
     {
       "lesson_id": "ail_b4727d62a7",
